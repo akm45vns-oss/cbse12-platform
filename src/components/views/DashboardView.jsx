@@ -38,7 +38,7 @@ export function DashboardView({ stats, overallPct, subject, setSubject, nav, cur
           const st = stats.bySubject[s];
           const pct = Math.round((st.n + st.q) / (st.t * 2) * 100);
           return (
-            <button key={s} className="card hover-lift" onClick={() => { setSubject(s); nav("subject"); }}
+            <button key={s} className="card hover-lift" onClick={() => nav.navigateToSubject(s)}
               style={{ textAlign: "left", border: "none", width: "100%", padding: 0, overflow: "hidden" }}>
               <div style={{ background: d.gradient, padding: "20px 20px 16px", color: "white" }}>
                 <div style={{ fontSize: 32, marginBottom: 6 }}>{d.emoji}</div>
