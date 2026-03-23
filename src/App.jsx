@@ -570,10 +570,8 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
       <div className="auth-wrap">
       {/* ===== LEFT PANEL ===== */}
       <div className="auth-left">
-        <div style={{ position: "absolute", top: -100, left: -100, width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(236,72,153,0.18) 0%, transparent 70%)", animation: "glow 4s ease-in-out infinite" }} />
-        <div style={{ position: "absolute", bottom: -80, right: -80, width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(244,114,182,0.14) 0%, transparent 70%)", animation: "glow 5s ease-in-out infinite 1s" }} />
-
-        {/* Developer pill */}
+        <div style={{ pointerEvents: "none", position: "absolute", top: -100, left: -100, width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(236,72,153,0.18) 0%, transparent 70%)", animation: "glow 4s ease-in-out infinite" }} />
+<div style={{ pointerEvents: "none", position: "absolute", bottom: -80, right: -80, width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(244,114,182,0.14) 0%, transparent 70%)", animation: "glow 5s ease-in-out infinite 1s" }} />
         <div style={{ marginBottom: 44 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(236,72,153,0.08)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 99, padding: "7px 18px", marginBottom: 10 }}>
             <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#ec4899", display: "inline-block", boxShadow: "0 0 8px #ec4899" }} />
