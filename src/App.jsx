@@ -71,7 +71,7 @@ async function callClaude(prompt, maxTokens = 2000) {
   const GEMINI_KEY = import.meta.env.VITE_GEMINI_KEY;
   if (!GEMINI_KEY) throw new Error("GEMINI API KEY MISSING — Add VITE_GEMINI_KEY to .env and Vercel");
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_KEY}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
