@@ -6,9 +6,20 @@ export function useNavigation() {
   const [chapter, setChapter] = useState(null);
   const [viewStack, setViewStack] = useState(["auth"]);
 
-  const nav = (v) => {
+  const navigate = (v) => {
     setView(v);
     setViewStack(s => [...s, v]);
+  };
+
+  const navigateToSubject = (subj) => {
+    setSubject(subj);
+    setChapter(null);
+    navigate("subject");
+  };
+
+  const navigateToChapter = (chap) => {
+    setChapter(chap);
+    navigate("chapter");
   };
 
   const goBack = () => {
@@ -16,13 +27,6 @@ export function useNavigation() {
     const newStack = viewStack.slice(0, -1);
     setViewStack(newStack);
     setView(newStack[newStack.length - 1]);
-  };
-
-  const resetNav = () => {
-    setView("auth");
-    setViewStack(["auth"]);
-    setSubject(null);
-    setChapter(null);
   };
 
   const goToDashboard = () => {
@@ -34,15 +38,13 @@ export function useNavigation() {
 
   return {
     view,
-    setView,
     subject,
-    setSubject,
     chapter,
-    setChapter,
     viewStack,
-    nav,
+    navigate,
+    navigateToSubject,
+    navigateToChapter,
     goBack,
-    resetNav,
     goToDashboard,
     canGoBack: viewStack.length > 2,
   };

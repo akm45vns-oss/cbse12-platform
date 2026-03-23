@@ -5,78 +5,60 @@ import { loginUser, registerUser } from "../utils/supabase";
 export function useAuth() {
   const [currentUser, setCurrentUser] = useState(null);
   const [authTab, setAuthTab] = useState("login");
-  const [uname, setUname] = useState("");
-  const [pass, setPass] = useState("");
-  const [pass2, setPass2] = useState("");
-  const [authErr, setAuthErr] = useState("");
-  const [showPass, setShowPass] = useState(false);
+  const [credentials, setCredentials] = useState({ username: "", password: "", confirmPassword: "" });
+  const [error, setError] = useState("");
 
   const doLogin = async () => {
-    setAuthErr("");
+    setError("");
+    const u = credentials.username.trim().toLowerCase();
+    const usernameErr = validateUsername(u);
+    if (usernameErr) return setError(usernameErr);
     
-    const usernameErr = validateUsername(uname);
-    if (usernameErr) return setAuthErr(usernameErr);
+    const passwordErr = validatePassword(credentials.password);
+    if (passwordErr) return setError(passwordErr);
     
-    const passwordErr = validatePassword(pass);
-    if (passwordErr) return setAuthErr(passwordErr);
+    const hashed = await hashPassword(credentials.password);
+    const loginErr = await loginUser(u, hashed);
     
-    const u = uname.trim().toLowerCase();
-    const hashed = await hashPassword(pass);
-    const { error } = await loginUser(u, hashed);
-    
-    if (error) return setAuthErr("❌ " + error);
+    if (loginErr) return setError("❌ " + loginErr);
     
     setCurrentUser(u);
-    setUname("");
-    setPass("");
-    setPass2("");
+    setCredentials({ username: "", password: "", confirmPassword: "" });
   };
 
   const doRegister = async () => {
-    setAuthErr("");
+    setError("");
+    const u = credentials.username.trim().toLowerCase();
     
-    const usernameErr = validateUsername(uname);
-    if (usernameErr) return setAuthErr(usernameErr);
+    const usernameErr = validateUsername(u);
+    if (usernameErr) return setError(usernameErr);
     
-    const passwordErr = validatePassword(pass, pass2);
-    if (passwordErr) return setAuthErr(passwordErr);
+    const passwordErr = validatePassword(credentials.password, credentials.confirmPassword);
+    if (passwordErr) return setError(passwordErr);
     
-    const u = uname.trim().toLowerCase();
-    const hashed = await hashPassword(pass);
-    const { error } = await registerUser(u, hashed);
+    const hashed = await hashPassword(credentials.password);
+    const registerErr = await registerUser(u, hashed);
     
-    if (error) return setAuthErr("⚠️ " + error);
+    if (registerErr) return setError("⚠️ " + registerErr);
     
     setCurrentUser(u);
-    setUname("");
-    setPass("");
-    setPass2("");
+    setCredentials({ username: "", password: "", confirmPassword: "" });
   };
 
   const doLogout = () => {
     setCurrentUser(null);
-    setUname("");
-    setPass("");
-    setPass2("");
-    setAuthErr("");
+    setCredentials({ username: "", password: "", confirmPassword: "" });
+    setError("");
     setAuthTab("login");
   };
 
   return {
     currentUser,
-    setCurrentUser,
     authTab,
+    credentials,
+    error,
     setAuthTab,
-    uname,
-    setUname,
-    pass,
-    setPass,
-    pass2,
-    setPass2,
-    authErr,
-    setAuthErr,
-    showPass,
-    setShowPass,
+    setCredentials,
     doLogin,
     doRegister,
     doLogout,

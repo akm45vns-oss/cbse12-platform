@@ -1,29 +1,26 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { loadProgress, saveProgressItem } from "../utils/supabase";
 import { CURRICULUM, totalChapters } from "../constants/curriculum";
 
-export function useProgress(currentUser) {
-  const [progress, setProgress] = useState({});
+export function useProgress() {
+  const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(false);
+  const [currentUser, setCurrentUser] = useState(null);
 
-  useEffect(() => {
-    if (currentUser) {
-      loadUserProgress();
-    }
-  }, [currentUser]);
-
-  const loadUserProgress = async () => {
-    if (!currentUser) return;
+  const load = async (username) => {
+    setCurrentUser(username);
+    if (!username) return;
     setIsLoading(true);
-    const data = await loadProgress(currentUser);
-    setProgress(data);
+    const loadedData = await loadProgress(username);
+    setData(loadedData);
     setIsLoading(false);
   };
 
-  const saveProgress = async (key, val) => {
-    const newProgress = { ...progress, [key]: val };
-    setProgress(newProgress);
+  const save = async (key, val) => {
+    const newData = { ...data, [key]: val };
+    setData(newData);
     
+    if (!currentUser) return;
     const [subject, chapter, type] = key.split("||");
     await saveProgressItem(currentUser, subject, chapter, type, val);
   };
@@ -37,11 +34,11 @@ export function useProgress(currentUser) {
       d.units.forEach(u =>
         u.chapters.forEach(ch => {
           sT++;
-          if (progress[`${s}||${ch}||notes`]?.read) {
+          if (data[`${s}||${ch}||notes`]?.read) {
             notesRead++;
             sN++;
           }
-          if ((progress[`${s}||${ch}||quiz`]?.attempts?.length || 0) > 0) {
+          if ((data[`${s}||${ch}||quiz`]?.attempts?.length || 0) > 0) {
             quizDone++;
             sQ++;
           }
@@ -53,14 +50,17 @@ export function useProgress(currentUser) {
     return { notesRead, quizDone, bySubject };
   };
 
-  const stats = getStats();
+  const getOverallPercentage = () => {
+    const stats = getStats();
+    return Math.round((stats.notesRead + stats.quizDone) / (totalChapters * 2) * 100);
+  };
 
   return {
-    progress,
-    setProgress,
-    saveProgress,
-    stats,
+    data,
+    load,
+    save,
+    getStats,
+    getOverallPercentage,
     isLoading,
-    overallPct: Math.round((stats.notesRead + stats.quizDone) / (totalChapters * 2) * 100),
   };
 }
