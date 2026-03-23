@@ -1,7 +1,7 @@
 import { CURRICULUM } from "../../constants/curriculum";
 
-export function ChapterView({ subject, chapter, nav, progress, genNotes, genQuiz, genPaper }) {
-  const S = CURRICULUM[subject];
+export function ChapterView({ subject, chapter, curriculumData, notesRead, quizBest, onStartNotes, onStartQuiz, onStartPaper }) {
+  const S = curriculumData;
   
   return (
     <div style={{ maxWidth: 700, margin: "0 auto" }}>
@@ -12,14 +12,14 @@ export function ChapterView({ subject, chapter, nav, progress, genNotes, genQuiz
       </div>
       <div className="chapter-hub-grid">
         {[
-          { mode: "notes", emoji: "📝", title: "Detailed Notes", desc: "AI-generated comprehensive NCERT notes", color: "#3b82f6", bg: "#eff6ff", done: progress[`${subject}||${chapter}||notes`]?.read, extra: "Notes read ✓" },
-          { mode: "quiz", emoji: "🧠", title: "50 MCQ Quiz", desc: "Board-level practice questions + explanations", color: "#16a34a", bg: "#f0fdf4", done: (progress[`${subject}||${chapter}||quiz`]?.attempts?.length || 0) > 0, extra: `Best: ${progress[`${subject}||${chapter}||quiz`]?.best ?? "—"}/50` },
+          { mode: "notes", emoji: "📝", title: "Detailed Notes", desc: "AI-generated comprehensive NCERT notes", color: "#3b82f6", bg: "#eff6ff", done: notesRead, extra: "Notes read ✓" },
+          { mode: "quiz", emoji: "🧠", title: "50 MCQ Quiz", desc: "Board-level practice questions + explanations", color: "#16a34a", bg: "#f0fdf4", done: quizBest !== undefined, extra: `Best: ${quizBest ?? "—"}/50` },
           { mode: "paper", emoji: "📄", title: "Sample Paper", desc: `Full ${subject} CBSE board exam paper`, color: "#7c3aed", bg: "#f5f3ff", done: false, extra: "Full subject paper" }
         ].map(({ mode, emoji, title, desc, color, bg, done, extra }) => (
           <button key={mode} onClick={() => {
-            if (mode === "paper") { genPaper(subject); nav("paper"); }
-            else if (mode === "notes") { nav("notes"); genNotes(subject, chapter); }
-            else { nav("quiz"); genQuiz(subject, chapter); }
+            if (mode === "paper") onStartPaper();
+            else if (mode === "notes") onStartNotes();
+            else onStartQuiz();
           }}
             style={{ background: "white", border: `2px solid ${done ? color + "44" : "#fce7f3"}`, borderRadius: 18, padding: 22, textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, transition: "all 0.15s" }}
             onMouseEnter={e => { e.currentTarget.style.borderColor = color; e.currentTarget.style.background = bg; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = `0 8px 25px ${color}25`; }}

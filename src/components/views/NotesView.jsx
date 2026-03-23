@@ -1,8 +1,8 @@
 import { Badge, LoadingScreen } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
 
-export function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji, genNotes, setView, genQuiz, setQuiz, setAnswers, setSubmitted, setQIdx }) {
-  const S = CURRICULUM[subject];
+export function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji, onRegenerateNotes, onStartQuiz, curriculumData }) {
+  const S = curriculumData;
   
   return (
     <div style={{ maxWidth: 860, margin: "0 auto" }}>
@@ -17,8 +17,8 @@ export function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji
             </div>
             <div style={{ display: "flex", gap: 10 }}>
               <button onClick={() => window.print()} style={{ background: "#f8fafc", border: "1px solid #cbd5e1", borderRadius: 10, padding: "9px 16px", color: "#334155", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>📥 PDF</button>
-              <button onClick={() => genNotes(subject, chapter)} style={{ background: "#fce7f3", border: "1px solid #fbcfe8", borderRadius: 10, padding: "9px 18px", color: "#be185d", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>🔄 Regenerate</button>
-              <button onClick={() => { setQuiz([]); setAnswers({}); setSubmitted(false); setQIdx(0); setView("quiz"); genQuiz(subject, chapter); }}
+              <button onClick={onRegenerateNotes} style={{ background: "#fce7f3", border: "1px solid #fbcfe8", borderRadius: 10, padding: "9px 18px", color: "#be185d", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>🔄 Regenerate</button>
+              <button onClick={onStartQuiz}
                 style={{ background: "linear-gradient(135deg,#ec4899,#db2777)", border: "none", borderRadius: 10, padding: "9px 20px", color: "white", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6, boxShadow: "0 4px 14px rgba(236,72,153,0.35)" }}>🧠 Take Quiz →</button>
             </div>
           </div>
@@ -47,8 +47,8 @@ export function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji
           </div>
           {/* Bottom action bar */}
           <div style={{ display: "flex", justifyContent: "center", gap: 14, marginTop: 24, paddingBottom: 32 }}>
-            <button onClick={() => genNotes(subject, chapter)} style={{ background: "white", border: "1px solid #fce7f3", borderRadius: 12, padding: "11px 24px", color: "#be185d", fontSize: 14, fontWeight: 700 }}>🔄 Regenerate Notes</button>
-            <button onClick={() => { setQuiz([]); setAnswers({}); setSubmitted(false); setQIdx(0); setView("quiz"); genQuiz(subject, chapter); }}
+            <button onClick={onRegenerateNotes} style={{ background: "white", border: "1px solid #fce7f3", borderRadius: 12, padding: "11px 24px", color: "#be185d", fontSize: 14, fontWeight: 700 }}>🔄 Regenerate Notes</button>
+            <button onClick={onStartQuiz}
               style={{ background: "linear-gradient(135deg,#ec4899,#db2777)", border: "none", borderRadius: 12, padding: "11px 28px", color: "white", fontSize: 14, fontWeight: 700, boxShadow: "0 4px 14px rgba(236,72,153,0.35)" }}>🧠 Start Quiz →</button>
           </div>
         </div>

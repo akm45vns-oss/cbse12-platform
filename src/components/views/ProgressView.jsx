@@ -1,7 +1,7 @@
 import { ProgressBar } from "../common";
 import { CURRICULUM, totalChapters } from "../../constants/curriculum";
 
-export function ProgressView({ stats, overallPct, progress }) {
+export function ProgressView({ stats, overallPct, totalChapters, curriculum, progressData }) {
   return (
     <div>
       <h1 style={{ fontSize: 24, fontWeight: 800, color: "#0f172a", marginBottom: 8 }}>📊 My Progress</h1>
@@ -24,7 +24,7 @@ export function ProgressView({ stats, overallPct, progress }) {
       </div>
 
       {/* Per Subject */}
-      {Object.entries(CURRICULUM).map(([s, d]) => {
+      {Object.entries(curriculum).map(([s, d]) => {
         const st = stats.bySubject[s];
         const pct = Math.round((st.n + st.q) / (st.t * 2) * 100);
         return (

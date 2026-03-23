@@ -1,8 +1,8 @@
 import { Badge, LoadingScreen, ExamTimer } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
 
-export function PaperView({ subject, paper, loading, loadMsg, loadEmoji, genPaper }) {
-  const S = CURRICULUM[subject];
+export function PaperView({ subject, paper, loading, loadMsg, loadEmoji, curriculumData, onRegenerate }) {
+  const S = curriculumData;
   
   return (
     <div style={{ maxWidth: 860, margin: "0 auto", width: "100%" }}>
@@ -18,7 +18,7 @@ export function PaperView({ subject, paper, loading, loadMsg, loadEmoji, genPape
             </div>
             <div style={{ display: "flex", gap: 10 }}>
               <button onClick={() => window.print()} style={{ background: "#f8fafc", border: "1px solid #cbd5e1", borderRadius: 9, padding: "8px 16px", color: "#334155", fontSize: 13, fontWeight: 600 }}>📥 Save PDF</button>
-              <button onClick={() => genPaper(subject)} style={{ background: "#fce7f3", border: "none", borderRadius: 9, padding: "8px 16px", color: "#be185d", fontSize: 13, fontWeight: 600 }}>🔄 Regenerate</button>
+              <button onClick={onRegenerate} style={{ background: "#fce7f3", border: "none", borderRadius: 9, padding: "8px 16px", color: "#be185d", fontSize: 13, fontWeight: 600 }}>🔄 Regenerate</button>
             </div>
           </div>
           {/* Professionally Formatted Paper */}

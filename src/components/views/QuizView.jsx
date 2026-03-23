@@ -9,21 +9,18 @@ export function QuizView({
   loadEmoji, 
   quiz, 
   quizErr, 
-  genQuiz, 
   qIdx, 
   setQIdx, 
   answers, 
   setAnswers, 
   submitted, 
-  submitQuiz, 
   score,
-  setView,
-  genNotes,
-  notes,
-  setQuiz,
-  setSubmitted
+  curriculumData,
+  onSubmit,
+  onRetry,
+  onReviewNotes
 }) {
-  const S = CURRICULUM[subject];
+  const S = curriculumData;
   
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", width: "100%" }}>
@@ -31,7 +28,7 @@ export function QuizView({
         <div style={{ textAlign: "center", padding: 60 }}>
           <div style={{ fontSize: 48, marginBottom: 16 }}>⚠️</div>
           <div style={{ color: "#475569", fontSize: 16, marginBottom: 20 }}>{quizErr || "Failed to load quiz. Please try again."}</div>
-          <button onClick={() => { setQuiz([]); genQuiz(subject, chapter); }} style={{ background: "#ec4899", border: "none", borderRadius: 10, padding: "12px 28px", color: "white", fontWeight: 700, fontSize: 15 }}>🔄 Try Again</button>
+          <button onClick={onRetry} style={{ background: "#ec4899", border: "none", borderRadius: 10, padding: "12px 28px", color: "white", fontWeight: 700, fontSize: 15 }}>🔄 Try Again</button>
         </div>
       ) : submitted ? (
         /* RESULTS */
@@ -43,9 +40,9 @@ export function QuizView({
               {Math.round(score / quiz.length * 100)}% — {score >= 40 ? "Excellent! Board Ready! 🎉" : score >= 25 ? "Good! Keep Practicing! 💪" : "Needs More Study. Review Notes! 📖"}
             </div>
             <div style={{ display: "flex", gap: 12, justifyContent: "center", marginTop: 20 }}>
-              <button onClick={() => { setQuiz([]); setAnswers({}); setSubmitted(false); setQIdx(0); genQuiz(subject, chapter); }}
+              <button onClick={onRetry}
                 style={{ background: "#ec4899", border: "none", borderRadius: 10, padding: "11px 24px", color: "white", fontWeight: 700, fontSize: 14 }}>🔄 Retry Quiz</button>
-              <button onClick={() => { setView("notes"); if (!notes) genNotes(subject, chapter); }}
+              <button onClick={onReviewNotes}
                 style={{ background: S?.accent || "#6366f1", border: "none", borderRadius: 10, padding: "11px 24px", color: "white", fontWeight: 700, fontSize: 14 }}>📝 Review Notes</button>
             </div>
           </div>
@@ -82,10 +79,7 @@ export function QuizView({
                 <span style={{ fontSize: 12, color: "#94a3b8", marginLeft: 12 }}>{Object.keys(answers).length} answered</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                <ExamTimer initialSeconds={1500} onExpire={() => {
-                  alert("⏱️ Time is up! Auto-submitting your quiz.");
-                  submitQuiz();
-                }} />
+                <ExamTimer initialSeconds={1500} onExpire={onSubmit} />
                 <Badge color={S?.accent || "#6366f1"}>{subject}</Badge>
               </div>
             </div>
@@ -118,7 +112,7 @@ export function QuizView({
                 Next →
               </button>
             ) : (
-              <button onClick={submitQuiz} style={{ flex: 1, padding: "11px", background: "#16a34a", border: "none", borderRadius: 10, color: "white", fontWeight: 700, fontSize: 14 }}>
+              <button onClick={onSubmit} style={{ flex: 1, padding: "11px", background: "#16a34a", border: "none", borderRadius: 10, color: "white", fontWeight: 700, fontSize: 14 }}>
                 Submit Quiz ({Object.keys(answers).length}/{quiz.length}) ✓
               </button>
             )}
