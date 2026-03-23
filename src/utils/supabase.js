@@ -15,12 +15,12 @@ export async function loginUser(username, passwordHash) {
     .eq("password_hash", passwordHash)
     .single();
   
-  if (error || !data) return { error: "Invalid username or password" };
+  if (error || !data) return "Invalid username or password";
   
   // Update last login
   await supabase.from("users").update({ last_login: new Date().toISOString() }).eq("username", username);
   
-  return { data };
+  return null;
 }
 
 export async function registerUser(username, passwordHash) {
@@ -31,7 +31,7 @@ export async function registerUser(username, passwordHash) {
     .eq("username", username)
     .single();
   
-  if (existing) return { error: "Username already taken" };
+  if (existing) return "Username already taken";
   
   const { error } = await supabase.from("users").insert({
     username,
@@ -40,9 +40,9 @@ export async function registerUser(username, passwordHash) {
     last_login: new Date().toISOString()
   });
   
-  if (error) return { error: "Registration failed" };
+  if (error) return "Registration failed";
   
-  return { success: true };
+  return null;
 }
 
 export async function loadProgress(username) {
