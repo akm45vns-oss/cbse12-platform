@@ -431,7 +431,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
 
   // ---- AUTH VIEW ----
   if (view === "auth") return (
-    <div style={{ minHeight: "100vh", width: "100%", background: "#fff0f5", display: "flex", fontFamily: "'Segoe UI', system-ui, sans-serif", overflow: "hidden" }}>
+    <div style={{ minHeight: "100vh", width: "100%", background: "#fff0f5", fontFamily: "'Segoe UI', system-ui, sans-serif" }}>
       <style>{`
         * { box-sizing: border-box; }
         input { font-family: inherit; }
@@ -445,10 +445,31 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
         .tab-btn { flex: 1; padding: 9px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; transition: all 0.2s; }
         @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
         @keyframes glow { 0%,100%{opacity:0.4} 50%{opacity:0.9} }
+        .auth-wrap { display: flex; flex-direction: row; min-height: 100vh; }
+        .auth-left { flex: 1; background: linear-gradient(140deg, #fce4ec 0%, #fdf2f8 55%, #fce4ec 100%); display: flex; flex-direction: column; justify-content: center; padding: 56px 60px; position: relative; overflow: hidden; min-width: 0; }
+        .auth-right { width: 440px; flex-shrink: 0; background: #fce4ec; display: flex; flex-direction: column; justify-content: center; padding: 48px 40px; border-left: 1px solid #fbcfe8; overflow-y: auto; }
+        .auth-title { font-size: 44px; }
+        .auth-desc { display: block; }
+        .auth-subjects { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 40px; max-width: 460px; }
+        .auth-features { display: flex; flex-direction: column; gap: 10px; }
+        @media (max-width: 860px) {
+          .auth-wrap { flex-direction: column; }
+          .auth-left { padding: 36px 24px 24px; justify-content: flex-start; }
+          .auth-right { width: 100%; border-left: none; border-top: 1px solid #fbcfe8; padding: 28px 24px 40px; }
+          .auth-title { font-size: 30px; }
+          .auth-subjects { margin-bottom: 20px; }
+          .auth-features { display: none; }
+        }
+        @media (max-width: 480px) {
+          .auth-left { padding: 24px 16px 16px; }
+          .auth-right { padding: 20px 16px 32px; }
+          .auth-title { font-size: 24px; }
+          .auth-subjects { grid-template-columns: 1fr 1fr; gap: 8px; max-width: 100%; }
+        }
       `}</style>
-
+      <div className="auth-wrap">
       {/* ===== LEFT PANEL ===== */}
-      <div style={{ flex: 1, background: "linear-gradient(140deg, #fce4ec 0%, #fdf2f8 55%, #fce4ec 100%)", display: "flex", flexDirection: "column", justifyContent: "center", padding: "56px 60px", position: "relative", overflow: "hidden", minWidth: 0 }}>
+      <div className="auth-left">
         <div style={{ position: "absolute", top: -100, left: -100, width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(236,72,153,0.18) 0%, transparent 70%)", animation: "glow 4s ease-in-out infinite" }} />
         <div style={{ position: "absolute", bottom: -80, right: -80, width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(244,114,182,0.14) 0%, transparent 70%)", animation: "glow 5s ease-in-out infinite 1s" }} />
 
@@ -479,7 +500,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
         <div style={{ animation: "float 6s ease-in-out infinite", marginBottom: 10 }}>
           <span style={{ fontSize: 60 }}>🎓</span>
         </div>
-        <h1 style={{ color: "#831843", fontSize: 44, fontWeight: 900, margin: "0 0 14px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
+        <h1 className="auth-title" style={{ color: "#831843", fontWeight: 900, margin: "0 0 14px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
           CBSE Class 12<br/>
           <span style={{ background: "linear-gradient(135deg, #ec4899, #f472b4, #f9a8d4)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>AI Study Platform</span>
         </h1>
@@ -487,7 +508,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
           Complete NCERT-based preparation for Board Exams 2025–26. AI-generated notes, 50 MCQs per chapter, sample papers and progress tracking.
         </p>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 40, maxWidth: 460 }}>
+        <div className="auth-subjects">
           {[
             { emoji: "⚛️", name: "Physics", units: "9 Units · 15 Chapters", bg: "rgba(236,72,153,0.07)", border: "rgba(236,72,153,0.25)" },
             { emoji: "🧪", name: "Chemistry", units: "8 Units · 16 Chapters", bg: "rgba(244,114,182,0.07)", border: "rgba(244,114,182,0.25)" },
@@ -502,7 +523,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
           ))}
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        <div className="auth-features">
           {[
             { icon: "📝", text: "AI-Generated Detailed Notes per Chapter" },
             { icon: "🧠", text: "50 Board-Level MCQs with Explanations" },
@@ -518,7 +539,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
       </div>
 
       {/* ===== RIGHT PANEL — LOGIN FORM ===== */}
-      <div style={{ width: 440, flexShrink: 0, background: "#fce4ec", display: "flex", flexDirection: "column", justifyContent: "center", padding: "48px 40px", borderLeft: "1px solid #fbcfe8", overflowY: "auto" }}>
+      <div className="auth-right">
         <div style={{ width: "100%" }}>
 
           <h2 style={{ color: "#831843", fontSize: 22, fontWeight: 800, margin: "0 0 4px", letterSpacing: "-0.02em" }}>
@@ -579,6 +600,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
           <p style={{ textAlign: "center", color: "#1e293b", fontSize: 11, marginTop: 28 }}>NCERT • CBSE Board 2025–26 • Class XII • All Subjects</p>
         </div>
       </div>
+      </div>
     </div>
   );
 
@@ -594,15 +616,53 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
         .card { background: white; border-radius: 16px; border: 1px solid #fce7f3; padding: 20px; transition: box-shadow 0.2s, transform 0.2s; }
         .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
         .hover-lift:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
-        .opt-btn { width: 100%; text-align: left; padding: 14px 18px; border-radius: 12px; border: 2px solid #fce7f3; background: white; color: #1e293b; fontSize: 14px; lineHeight: 1.5; transition: all 0.15s; }
+        .opt-btn { width: 100%; text-align: left; padding: 14px 18px; border-radius: 12px; border: 2px solid #fce7f3; background: white; color: #1e293b; font-size: 14px; line-height: 1.5; transition: all 0.15s; }
         .opt-btn:hover { border-color: #f472b4; background: #fff0f5; }
         .opt-selected { border-color: #ec4899 !important; background: #fdf2f8 !important; color: #be185d !important; font-weight: 600; }
         .opt-correct { border-color: #16a34a !important; background: #f0fdf4 !important; color: #15803d !important; }
         .opt-wrong { border-color: #dc2626 !important; background: #fef2f2 !important; color: #dc2626 !important; }
-        .qnum { width: 30px; height: 30px; border-radius: 8px; border: none; font-size: 11px; font-weight: 700; cursor: pointer; transition: all 0.1s; }
+        .qnum { width: 32px; height: 32px; border-radius: 8px; border: none; font-size: 11px; font-weight: 700; cursor: pointer; transition: all 0.1s; touch-action: manipulation; }
         .qnum:hover { transform: scale(1.1); }
+        @media (max-width: 480px) { .qnum { width: 36px; height: 36px; font-size: 12px; } }
+        /* ---- RESPONSIVE ---- */
+        .main-content { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+        .dash-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 16px; }
+        .subj-ch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 10px; }
+        .chapter-hub-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); gap: 14px; }
+        .prog-summary-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(180px,1fr)); gap: 14px; margin-bottom: 28px; }
+        .prog-ch-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap: 6px; }
+        .nav-bar { max-width: 1100px; margin: 0 auto; padding: 0 16px; height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+        .nav-username { display: block; }
+        .dash-overall { background: linear-gradient(135deg, #831843 0%, #9d174d 100%); border-radius: 20px; padding: 24px; margin-bottom: 24px; color: white; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; }
+        .dash-overall-stats { display: flex; gap: 16px; flex-wrap: wrap; }
+        .notes-content-pad { padding: 40px 48px; }
+        @media (max-width: 768px) {
+          .main-content { padding: 16px 12px; }
+          .dash-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+          .subj-ch-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+          .chapter-hub-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+          .prog-summary-grid { grid-template-columns: 1fr 1fr; }
+          .prog-ch-grid { grid-template-columns: 1fr; }
+          .nav-username { display: none; }
+          .dash-overall { flex-direction: column; align-items: flex-start; gap: 14px; padding: 18px; }
+          .dash-overall-stats { gap: 10px; }
+          .notes-content-pad { padding: 20px 18px; }
+        }
+        @media (max-width: 480px) {
+          .main-content { padding: 12px 10px; }
+          .dash-grid { grid-template-columns: 1fr; }
+          .subj-ch-grid { grid-template-columns: 1fr; }
+          .chapter-hub-grid { grid-template-columns: 1fr; }
+          .prog-summary-grid { grid-template-columns: 1fr 1fr; }
+          .dash-overall-stats { width: 100%; justify-content: space-between; }
+          .notes-content-pad { padding: 16px 14px; }
+          .opt-btn { padding: 11px 14px; font-size: 13px; }
+        }
+        @media (min-width: 600px) {
+          .breadcrumb-chapter { display: inline !important; }
+        }
         .prose-notes { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.85; color: #2d1832; font-size: 15px; }
-        .prose-notes-block { background: linear-gradient(135deg, #fff8fb 0%, #fff0f5 100%); border-radius: 18px; border: 1px solid #fce7f3; padding: 40px 48px; box-shadow: 0 4px 32px rgba(236,72,153,0.07), 0 1px 4px rgba(0,0,0,0.04); }
+        .prose-notes-block { background: linear-gradient(135deg, #fff8fb 0%, #fff0f5 100%); border-radius: 18px; border: 1px solid #fce7f3; padding: 40px 48px; box-shadow: 0 4px 32px rgba(236,72,153,0.07), 0 1px 4px rgba(0,0,0,0.04); overflow-x: auto; }
         .prose-notes h1 { font-family: 'Georgia', serif; font-size: 26px; font-weight: 900; color: #831843; margin: 0 0 4px; letter-spacing: -0.02em; line-height: 1.2; }
         .prose-notes h2 { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; font-weight: 800; color: #be185d; margin: 32px 0 12px; padding: 10px 16px; background: linear-gradient(90deg, #fce7f3, #fff0f5); border-left: 4px solid #ec4899; border-radius: 0 10px 10px 0; text-transform: uppercase; letter-spacing: 0.06em; }
         .prose-notes h3 { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; font-weight: 700; color: #9d174d; margin: 20px 0 6px; }
@@ -618,7 +678,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
 
       {/* TOP NAV */}
       <nav style={{ background: "white", borderBottom: "1px solid #fce7f3", position: "sticky", top: 0, zIndex: 100, boxShadow: "0 1px 8px rgba(0,0,0,0.06)" }}>
-        <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 16px", height: 60, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
+        <div className="nav-bar">
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
             {canGoBack && (
               <button onClick={goBack} style={{ background: "#fce7f3", border: "none", borderRadius: 8, padding: "6px 12px", color: "#be185d", fontWeight: 600, fontSize: 13, display: "flex", alignItems: "center", gap: 4 }}>
@@ -629,7 +689,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
               🎓 <span style={{ letterSpacing: "-0.02em" }}>CBSE12</span>
             </button>
             {subject && <span style={{ color: "#94a3b8", fontSize: 13 }}>/ {S.emoji} {subject}</span>}
-            {chapter && <span style={{ color: "#94a3b8", fontSize: 12, maxWidth: 180, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>/ {chapter}</span>}
+            {chapter && <span style={{ color: "#94a3b8", fontSize: 12, maxWidth: 140, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", display: "none" }} className="breadcrumb-chapter">/ {chapter}</span>}
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <button onClick={() => { setView("progress"); setViewStack(s => [...s, "progress"]); }}
@@ -640,31 +700,31 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
               <div style={{ width: 34, height: 34, borderRadius: "50%", background: "linear-gradient(135deg,#ec4899,#db2777)", color: "white", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontSize: 15 }}>
                 {currentUser?.[0]?.toUpperCase()}
               </div>
-              <span style={{ fontSize: 13, fontWeight: 600, color: "#334155", display: window.innerWidth > 600 ? "block" : "none" }}>{currentUser}</span>
+              <span className="nav-username" style={{ fontSize: 13, fontWeight: 600, color: "#334155" }}>{currentUser}</span>
             </div>
             <button onClick={doLogout} style={{ background: "none", border: "1px solid #fce7f3", borderRadius: 8, padding: "6px 12px", color: "#f472b4", fontSize: 13 }}>Logout</button>
           </div>
         </div>
       </nav>
 
-      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "24px 16px" }}>
+      <div className="main-content">
 
         {/* ===== DASHBOARD ===== */}
         {view === "dashboard" && (
           <div>
             <div style={{ marginBottom: 28 }}>
-              <h1 style={{ fontSize: 26, fontWeight: 800, color: "#831843", margin: 0 }}>Welcome back, {currentUser}! 👋</h1>
-              <p style={{ color: "#be185d", marginTop: 4, fontSize: 15 }}>CBSE Class 12 Board Exam Preparation — All Subjects</p>
+              <h1 style={{ fontSize: "clamp(20px,4vw,26px)", fontWeight: 800, color: "#831843", margin: 0 }}>Welcome back, {currentUser}! 👋</h1>
+              <p style={{ color: "#be185d", marginTop: 4, fontSize: "clamp(13px,2vw,15px)" }}>CBSE Class 12 Board Exam Preparation — All Subjects</p>
             </div>
 
             {/* Overall Progress */}
-            <div style={{ background: "linear-gradient(135deg, #831843 0%, #9d174d 100%)", borderRadius: 20, padding: 24, marginBottom: 24, color: "white", display: "flex", flexWrap: "wrap", gap: 20, alignItems: "center", justifyContent: "space-between" }}>
+            <div className="dash-overall">
               <div>
                 <div style={{ fontSize: 13, color: "#94a3b8", marginBottom: 4 }}>Overall Progress</div>
                 <div style={{ fontSize: 40, fontWeight: 900 }}>{overallPct}%</div>
                 <div style={{ fontSize: 13, color: "#6366f1", marginTop: 2 }}>Towards Board Exam Readiness</div>
               </div>
-              <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
+              <div className="dash-overall-stats">
                 {[
                   { v: stats.notesRead, t: "Notes Read", emoji: "📝", c: "#818cf8" },
                   { v: stats.quizDone, t: "Quizzes Done", emoji: "✅", c: "#34d399" },
@@ -681,7 +741,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
 
             {/* Subject Cards */}
             <h2 style={{ fontSize: 16, fontWeight: 700, color: "#475569", marginBottom: 16, textTransform: "uppercase", letterSpacing: "0.06em" }}>📚 Select a Subject</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px,1fr))", gap: 16 }}>
+            <div className="dash-grid">
               {Object.entries(CURRICULUM).map(([s, d]) => {
                 const st = stats.bySubject[s];
                 const pct = Math.round((st.n + st.q) / (st.t * 2) * 100);
@@ -713,7 +773,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
         {/* ===== SUBJECT VIEW ===== */}
         {view === "subject" && subject && (
           <div>
-            <div style={{ background: S.gradient, borderRadius: 20, padding: 28, marginBottom: 24, color: "white" }}>
+            <div style={{ background: S.gradient, borderRadius: 20, padding: "clamp(16px,4vw,28px)", marginBottom: 24, color: "white" }}>
               <div style={{ fontSize: 44, marginBottom: 8 }}>{S.emoji}</div>
               <h1 style={{ fontSize: 28, fontWeight: 900, margin: 0, letterSpacing: "-0.02em" }}>{subject}</h1>
               <p style={{ opacity: 0.8, marginTop: 6, fontSize: 14 }}>NCERT Class 12 CBSE · {S.units.length} Units · {stats.bySubject[subject].t} Chapters</p>
@@ -728,7 +788,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
                 <h3 style={{ fontSize: 13, fontWeight: 700, color: S.text, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 10, display: "flex", alignItems: "center", gap: 8 }}>
                   <span style={{ background: S.light, border: `1px solid ${S.border}`, borderRadius: 6, padding: "2px 10px" }}>{unit.name}</span>
                 </h3>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px,1fr))", gap: 10 }}>
+                <div className="subj-ch-grid">
                   {unit.chapters.map((ch, ci) => {
                     const nk = `${subject}||${ch}||notes`;
                     const qk = `${subject}||${ch}||quiz`;
@@ -768,7 +828,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
               <h1 style={{ fontSize: 22, fontWeight: 800, color: "#0f172a", margin: "0 0 8px" }}>{chapter}</h1>
               <p style={{ color: "#64748b", fontSize: 13, margin: 0 }}>NCERT Class 12 CBSE — Select what to study</p>
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(200px,1fr))", gap: 14 }}>
+            <div className="chapter-hub-grid">
               {[
                 { mode: "notes", emoji: "📝", title: "Detailed Notes", desc: "AI-generated comprehensive NCERT notes", color: "#3b82f6", bg: "#eff6ff", done: progress[`${subject}||${chapter}||notes`]?.read, extra: "Notes read ✓" },
                 { mode: "quiz", emoji: "🧠", title: "50 MCQ Quiz", desc: "Board-level practice questions + explanations", color: "#16a34a", bg: "#f0fdf4", done: (progress[`${subject}||${chapter}||quiz`]?.attempts?.length || 0) > 0, extra: `Best: ${progress[`${subject}||${chapter}||quiz`]?.best ?? "—"}/50` },
@@ -798,7 +858,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
             {loading ? <LoadingScreen message={loadMsg} emoji={loadEmoji} /> : (
               <div>
                 {/* Notes Header Card */}
-                <div style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "22px 32px", boxShadow: "0 2px 12px rgba(236,72,153,0.07)", marginBottom: 20, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
+                <div style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "clamp(14px,3vw,22px) clamp(16px,4vw,32px)", boxShadow: "0 2px 12px rgba(236,72,153,0.07)", marginBottom: 20, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
                   <div>
                     <Badge color={S?.accent || "#ec4899"}>{subject}</Badge>
                     <h2 style={{ fontSize: 22, fontWeight: 900, color: "#831843", margin: "6px 0 2px", letterSpacing: "-0.02em" }}>{chapter}</h2>
@@ -846,7 +906,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
 
         {/* ===== QUIZ VIEW ===== */}
         {view === "quiz" && (
-          <div style={{ maxWidth: 720, margin: "0 auto" }}>
+          <div style={{ maxWidth: 720, margin: "0 auto", width: "100%" }}>
             {loading ? <LoadingScreen message={loadMsg} emoji={loadEmoji} /> : quiz.length === 0 ? (
               <div style={{ textAlign: "center", padding: 60 }}>
                 <div style={{ fontSize: 48, marginBottom: 16 }}>⚠️</div>
@@ -962,9 +1022,9 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
 
         {/* ===== SAMPLE PAPER ===== */}
         {view === "paper" && (
-          <div style={{ maxWidth: 860, margin: "0 auto" }}>
+          <div style={{ maxWidth: 860, margin: "0 auto", width: "100%" }}>
             {loading ? <LoadingScreen message={loadMsg} emoji={loadEmoji} /> : (
-              <div style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "28px 32px" }}>
+              <div style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "clamp(16px, 4vw, 32px)" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, paddingBottom: 20, borderBottom: "1px solid #fce7f3", flexWrap: "wrap", gap: 12 }}>
                   <div>
                     <Badge color={S?.accent || "#6366f1"}>{subject}</Badge>
@@ -972,7 +1032,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
                   </div>
                   <button onClick={() => genPaper(subject)} style={{ background: "#fce7f3", border: "none", borderRadius: 9, padding: "8px 16px", color: "#be185d", fontSize: 13, fontWeight: 600 }}>🔄 Regenerate</button>
                 </div>
-                <pre style={{ whiteSpace: "pre-wrap", fontFamily: "'Courier New', monospace", fontSize: 13, color: "#334155", lineHeight: 1.8, margin: 0 }}>{paper}</pre>
+                <pre style={{ whiteSpace: "pre-wrap", fontFamily: "'Courier New', monospace", fontSize: "clamp(11px, 2vw, 13px)", color: "#334155", lineHeight: 1.8, margin: 0, overflowX: "auto" }}>{paper}</pre>
               </div>
             )}
           </div>
@@ -985,7 +1045,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
             <p style={{ color: "#64748b", fontSize: 14, marginBottom: 24 }}>Tracking your preparation across all subjects</p>
 
             {/* Summary */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(180px,1fr))", gap: 14, marginBottom: 28 }}>
+            <div className="prog-summary-grid">
               {[
                 { v: overallPct + "%", label: "Overall Completion", c: "linear-gradient(135deg,#ec4899,#db2777)", emoji: "🎯" },
                 { v: stats.notesRead, label: "Notes Read", c: "linear-gradient(135deg,#0ea5e9,#3b82f6)", emoji: "📝" },
@@ -1023,7 +1083,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
                         <div style={{ fontSize: 11, fontWeight: 700, color: d.text, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: 8, background: d.light, display: "inline-block", padding: "2px 10px", borderRadius: 6 }}>
                           {unit.name}
                         </div>
-                        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(220px,1fr))", gap: 6 }}>
+                        <div className="prog-ch-grid">
                           {unit.chapters.map((ch, ci) => {
                             const nk = `${s}||${ch}||notes`;
                             const qk = `${s}||${ch}||quiz`;
@@ -1055,8 +1115,8 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
       </div>
 
       {/* ===== DEVELOPER FOOTER ===== */}
-      <footer style={{ marginTop: 24, background: "#831843", borderTop: "1px solid #9d174d", padding: "10px 20px" }}>
-        <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", alignItems: "center", gap: 14, flexWrap: "wrap" }}>
+      <footer style={{ marginTop: 24, background: "#831843", borderTop: "1px solid #9d174d", padding: "12px 16px" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap", justifyContent: "center" }}>
           <span style={{ fontSize: 9, color: "#fce7f3", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em" }}>Built by</span>
           <span style={{ color: "white", fontWeight: 700, fontSize: 12 }}>Ayush Kumar Maurya</span>
           <span style={{ color: "#1e293b", fontSize: 14 }}>|</span>
@@ -1072,7 +1132,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
               {label}
             </a>
           ))}
-          <span style={{ marginLeft: "auto", fontSize: 10, color: "#334155" }}>© 2025 · CBSE Class 12 AI Platform</span>
+          <span style={{ fontSize: 10, color: "#fce7f3", opacity: 0.7 }}>© 2025 · CBSE Class 12 AI Platform</span>
         </div>
       </footer>
     </div>
