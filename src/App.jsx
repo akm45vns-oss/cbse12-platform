@@ -533,9 +533,10 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
   const canGoBack = viewStack.length > 2;
 
   return (
-    <div style={{ minHeight: "100vh", background: "#f8fafc", fontFamily: "'Segoe UI', system-ui, sans-serif" }}>
+    <div style={{ minHeight: "100vh", width: "100%", background: "#f8fafc", fontFamily: "'Segoe UI', system-ui, sans-serif" }}>
       <style>{`
-        * { box-sizing: border-box; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body, #root { width: 100%; min-height: 100vh; background: #f8fafc; }
         button { cursor: pointer; font-family: inherit; }
         .card { background: white; border-radius: 16px; border: 1px solid #e2e8f0; padding: 20px; transition: box-shadow 0.2s, transform 0.2s; }
         .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
