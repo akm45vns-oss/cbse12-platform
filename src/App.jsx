@@ -68,17 +68,24 @@ const totalChapters = Object.values(CURRICULUM).reduce((a, s) => a + s.units.red
 
 // ===== API HELPERS =====
 async function callClaude(prompt, maxTokens = 2000) {
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model: "claude-sonnet-4-20250514",
-      max_tokens: maxTokens,
-      messages: [{ role: "user", content: prompt }]
-    })
-  });
+  const GEMINI_KEY = import.meta.env.VITE_GEMINI_KEY;
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_KEY}`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: {
+          maxOutputTokens: maxTokens,
+          temperature: 0.7,
+        }
+      })
+    }
+  );
   const data = await res.json();
-  return data.content?.[0]?.text || "";
+  if (data.error) throw new Error(data.error.message);
+  return data.candidates?.[0]?.content?.parts?.[0]?.text || "";
 }
 
 // ===== SUPABASE HELPERS =====
