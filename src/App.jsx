@@ -401,44 +401,60 @@ Format the notes as follows:
 ## 🔁 Quick Revision Summary
 [10-15 bullet point summary for last-minute revision]
 
-Be thorough, use clear formatting, and cover ALL NCERT content for this chapter. Make it board-exam focused.`, 2000);
+Be thorough, use clear formatting, and cover ALL NCERT content for this chapter. Make it board-exam focused.`, 3500);
       setNotes(text);
       await saveProgress(`${subj}||${chap}||notes`, { read: true, date: Date.now() });
     } catch(e) { setNotes("❌ Error: " + e.message); }
     setLoading(false);
   };
 
+  // Robust JSON extractor — repairs truncated arrays
+  const extractJSON = (text) => {
+    let cleaned = text.trim().replace(/```json\n?|```\n?/g, "").trim();
+    const start = cleaned.indexOf("[");
+    if (start === -1) throw new Error("No JSON array found in response");
+    cleaned = cleaned.slice(start);
+    // Try parsing as-is first
+    try { const r = JSON.parse(cleaned); if (Array.isArray(r) && r.length > 0) return r; } catch {}
+    // Repair: find last complete object ending with }
+    const lastGood = cleaned.lastIndexOf("},");
+    if (lastGood === -1) {
+      const onlyOne = cleaned.lastIndexOf("}");
+      if (onlyOne === -1) throw new Error("Could not find any complete JSON objects");
+      cleaned = cleaned.slice(0, onlyOne + 1) + "]";
+    } else {
+      cleaned = cleaned.slice(0, lastGood + 1) + "]";
+    }
+    const r = JSON.parse(cleaned);
+    if (!Array.isArray(r) || r.length === 0) throw new Error("Parsed array is empty");
+    return r;
+  };
+
   const genQuiz = async (subj, chap) => {
-    setLoading(true); setLoadMsg(`Generating 50 MCQs for "${chap}"`); setLoadEmoji("🧠");
+    setLoading(true); setLoadMsg(`Generating Quiz for "${chap}"`); setLoadEmoji("🧠");
     setQuiz([]); setAnswers({}); setSubmitted(false); setQIdx(0); setQuizErr("");
-    try {
-      const text = await callClaude(`Generate exactly 50 CBSE Class 12 board-level MCQ questions for the chapter "${chap}" from ${subj}.
+    const prompt = (batch) => `Generate exactly 25 CBSE Class 12 board-level MCQ questions for "${chap}" from ${subj}. This is batch ${batch} of 2 — generate questions ${batch === 1 ? "1–25" : "26–50"}, covering ${batch === 1 ? "the first half" : "the second half"} of the chapter topics.
 
-CRITICAL: Return ONLY a valid JSON array. No markdown, no backticks, no explanation. Just the raw JSON array.
+CRITICAL: Return ONLY a valid JSON array. No markdown, no backticks, no explanation. Start with [ and end with ].
 
-Format:
-[{"q":"Full question text?","opts":["A. option one","B. option two","C. option three","D. option four"],"ans":0,"exp":"Explanation of why this answer is correct"}]
+Format: [{"q":"Question text?","opts":["A. option","B. option","C. option","D. option"],"ans":0,"exp":"Brief explanation"}]
 
 Rules:
-- "ans" is 0-based index (0=A, 1=B, 2=C, 3=D)
-- Cover ALL subtopics of this chapter proportionally
+- "ans" is 0-based index (0=A,1=B,2=C,3=D)
+- NCERT Class 12 content only
 - Difficulty: 30% easy, 50% medium, 20% hard
-- Base strictly on NCERT Class 12 textbook content
-- Include numerical/formula-based questions where applicable
-- Make distractors plausible and educational
-- Generate ALL 50 questions
-
-Start your response with [ and end with ]`, 7000);
-
-      let cleaned = text.trim();
-      cleaned = cleaned.replace(/```json\n?|```\n?/g, "").trim();
-      const start = cleaned.indexOf("[");
-      const end = cleaned.lastIndexOf("]");
-      if (start === -1 || end === -1) throw new Error("No JSON array found");
-      cleaned = cleaned.slice(start, end + 1);
-      const parsed = JSON.parse(cleaned);
-      if (!Array.isArray(parsed) || parsed.length === 0) throw new Error("Empty quiz");
-      setQuiz(parsed);
+- Include formula/numerical questions where applicable
+- Generate all 25 questions, no placeholders`;
+    try {
+      setLoadMsg(`Generating Part 1 of 2...`);
+      const text1 = await callClaude(prompt(1), 4000);
+      const batch1 = extractJSON(text1);
+      setLoadMsg(`Generating Part 2 of 2...`);
+      const text2 = await callClaude(prompt(2), 4000);
+      const batch2 = extractJSON(text2);
+      const all = [...batch1, ...batch2];
+      if (all.length === 0) throw new Error("No questions generated");
+      setQuiz(all);
     } catch (e) {
       setQuizErr("Failed to generate quiz: " + e.message);
     }
