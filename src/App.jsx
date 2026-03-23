@@ -68,30 +68,29 @@ const totalChapters = Object.values(CURRICULUM).reduce((a, s) => a + s.units.red
 
 // ===== API HELPERS =====
 async function callClaude(prompt, maxTokens = 2000) {
-  const GEMINI_KEY = import.meta.env.VITE_GEMINI_KEY;
-  if (!GEMINI_KEY) throw new Error("GEMINI API KEY MISSING — Add VITE_GEMINI_KEY to .env and Vercel");
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: {
-          maxOutputTokens: maxTokens,
-          temperature: 0.7,
-        }
-      })
-    }
-  );
+  const GROQ_KEY = import.meta.env.VITE_GROQ_KEY;
+  if (!GROQ_KEY) throw new Error("GROQ API KEY MISSING — Add VITE_GROQ_KEY to .env and Vercel");
+  const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${GROQ_KEY}`
+    },
+    body: JSON.stringify({
+      model: "llama-3.3-70b-versatile",
+      max_tokens: maxTokens,
+      temperature: 0.7,
+      messages: [{ role: "user", content: prompt }]
+    })
+  });
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
-    throw new Error(`Gemini API Error ${res.status}: ${err?.error?.message || res.statusText}`);
+    throw new Error(`Groq API Error ${res.status}: ${err?.error?.message || res.statusText}`);
   }
   const data = await res.json();
   if (data.error) throw new Error(data.error.message);
-  const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
-  if (!text) throw new Error("Empty response from Gemini");
+  const text = data.choices?.[0]?.message?.content || "";
+  if (!text) throw new Error("Empty response from Groq");
   return text;
 }
 
