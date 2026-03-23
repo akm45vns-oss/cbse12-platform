@@ -1,4 +1,10 @@
 import { useState, useEffect, useRef } from "react";
+import { createClient } from "@supabase/supabase-js";
+
+// ===== SUPABASE CONFIG — Replace with your own keys =====
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // ===== CURRICULUM DATA =====
 const CURRICULUM = {
@@ -75,14 +81,12 @@ async function callClaude(prompt, maxTokens = 2000) {
   return data.content?.[0]?.text || "";
 }
 
-// ===== STORAGE HELPERS =====
-async function getStorage(key, shared = false) {
-  try { const r = await window.storage.get(key, shared); return r ? JSON.parse(r.value) : null; }
-  catch { return null; }
-}
-async function setStorage(key, value, shared = false) {
-  try { await window.storage.set(key, JSON.stringify(value), shared); return true; }
-  catch { return false; }
+// ===== SUPABASE HELPERS =====
+// Hash password (simple SHA-256 via Web Crypto)
+async function hashPassword(password) {
+  const enc = new TextEncoder();
+  const buf = await crypto.subtle.digest("SHA-256", enc.encode(password));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,"0")).join("");
 }
 
 // ===== COMPONENTS =====
@@ -174,25 +178,50 @@ export default function App() {
   }, [currentUser]);
 
   const loadProgress = async () => {
-    const p = await getStorage(`cbse_prog_${currentUser}`);
-    if (p) setProgress(p);
+    if (!currentUser) return;
+    const { data, error } = await supabase
+      .from("progress")
+      .select("*")
+      .eq("username", currentUser);
+    if (error) { console.error("Load progress error:", error); return; }
+    const p = {};
+    (data || []).forEach(row => {
+      const key = `${row.subject}||${row.chapter}||${row.type}`;
+      p[key] = row.data;
+    });
+    setProgress(p);
   };
 
   const saveProgress = async (key, val) => {
     const newP = { ...progress, [key]: val };
     setProgress(newP);
-    await setStorage(`cbse_prog_${currentUser}`, newP);
+    const [subject, chapter, type] = key.split("||");
+    await supabase.from("progress").upsert({
+      username: currentUser,
+      subject,
+      chapter,
+      type,
+      data: val,
+      updated_at: new Date().toISOString()
+    }, { onConflict: "username,subject,chapter,type" });
   };
 
   // ---- AUTH ----
   const doLogin = async () => {
     setAuthErr("");
     if (!uname.trim() || !pass.trim()) return setAuthErr("Please fill in all fields.");
-    const users = await getStorage("cbse_users_v2", true) || {};
-    const key = uname.trim().toLowerCase();
-    if (!users[key]) return setAuthErr("❌ Username not found. Please register first.");
-    if (users[key].pw !== btoa(pass)) return setAuthErr("❌ Incorrect password. Try again.");
-    setCurrentUser(key);
+    const u = uname.trim().toLowerCase();
+    const hashed = await hashPassword(pass);
+    const { data, error } = await supabase
+      .from("users")
+      .select("username")
+      .eq("username", u)
+      .eq("password_hash", hashed)
+      .single();
+    if (error || !data) return setAuthErr("❌ Invalid username or password. Try again.");
+    // Update last login
+    await supabase.from("users").update({ last_login: new Date().toISOString() }).eq("username", u);
+    setCurrentUser(u);
     setUname(""); setPass(""); setPass2("");
     nav("dashboard");
   };
@@ -205,10 +234,21 @@ export default function App() {
     if (!/^[a-z0-9_]+$/.test(u)) return setAuthErr("Username: only letters, numbers, underscores.");
     if (pass.length < 6) return setAuthErr("Password must be at least 6 characters.");
     if (pass !== pass2) return setAuthErr("Passwords do not match.");
-    const users = await getStorage("cbse_users_v2", true) || {};
-    if (users[u]) return setAuthErr("⚠️ Username already taken. Choose a different one.");
-    users[u] = { pw: btoa(pass), joined: Date.now() };
-    await setStorage("cbse_users_v2", users, true);
+    // Check if username exists
+    const { data: existing } = await supabase
+      .from("users")
+      .select("username")
+      .eq("username", u)
+      .single();
+    if (existing) return setAuthErr("⚠️ Username already taken. Choose a different one.");
+    const hashed = await hashPassword(pass);
+    const { error } = await supabase.from("users").insert({
+      username: u,
+      password_hash: hashed,
+      joined_at: new Date().toISOString(),
+      last_login: new Date().toISOString()
+    });
+    if (error) return setAuthErr("❌ Registration failed. Please try again.");
     setCurrentUser(u);
     setUname(""); setPass(""); setPass2("");
     nav("dashboard");
