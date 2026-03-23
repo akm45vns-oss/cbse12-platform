@@ -69,6 +69,7 @@ const totalChapters = Object.values(CURRICULUM).reduce((a, s) => a + s.units.red
 // ===== API HELPERS =====
 async function callClaude(prompt, maxTokens = 2000) {
   const GEMINI_KEY = import.meta.env.VITE_GEMINI_KEY;
+  if (!GEMINI_KEY) throw new Error("GEMINI API KEY MISSING — Add VITE_GEMINI_KEY to .env and Vercel");
   const res = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_KEY}`,
     {
@@ -83,9 +84,15 @@ async function callClaude(prompt, maxTokens = 2000) {
       })
     }
   );
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(`Gemini API Error ${res.status}: ${err?.error?.message || res.statusText}`);
+  }
   const data = await res.json();
   if (data.error) throw new Error(data.error.message);
-  return data.candidates?.[0]?.content?.parts?.[0]?.text || "";
+  const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
+  if (!text) throw new Error("Empty response from Gemini");
+  return text;
 }
 
 // ===== SUPABASE HELPERS =====
@@ -314,7 +321,7 @@ Format the notes as follows:
 Be thorough, use clear formatting, and cover ALL NCERT content for this chapter. Make it board-exam focused.`, 2000);
       setNotes(text);
       await saveProgress(`${subj}||${chap}||notes`, { read: true, date: Date.now() });
-    } catch { setNotes("❌ Error generating notes. Please check your connection and try again."); }
+    } catch(e) { setNotes("❌ Error: " + e.message); }
     setLoading(false);
   };
 
@@ -350,7 +357,7 @@ Start your response with [ and end with ]`, 7000);
       if (!Array.isArray(parsed) || parsed.length === 0) throw new Error("Empty quiz");
       setQuiz(parsed);
     } catch (e) {
-      setQuizErr("Failed to generate quiz. The AI response may have been incomplete. Please try again.");
+      setQuizErr("Failed to generate quiz: " + e.message);
     }
     setLoading(false);
   };
