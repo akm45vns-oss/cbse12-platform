@@ -601,10 +601,18 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
         .opt-wrong { border-color: #dc2626 !important; background: #fef2f2 !important; color: #dc2626 !important; }
         .qnum { width: 30px; height: 30px; border-radius: 8px; border: none; font-size: 11px; font-weight: 700; cursor: pointer; transition: all 0.1s; }
         .qnum:hover { transform: scale(1.1); }
-        .prose-notes { white-space: pre-wrap; line-height: 1.75; color: #334155; font-size: 14px; }
-        .prose-notes h1 { font-size: 22px; font-weight: 800; color: #0f172a; margin: 0 0 8px; }
-        .prose-notes h2 { font-size: 17px; font-weight: 700; color: #831843; margin: 24px 0 8px; padding-left: 10px; border-left: 3px solid #ec4899; }
-        .prose-notes h3 { font-size: 15px; font-weight: 600; color: #334155; margin: 16px 0 4px; }
+        .prose-notes { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.85; color: #2d1832; font-size: 15px; }
+        .prose-notes-block { background: linear-gradient(135deg, #fff8fb 0%, #fff0f5 100%); border-radius: 18px; border: 1px solid #fce7f3; padding: 40px 48px; box-shadow: 0 4px 32px rgba(236,72,153,0.07), 0 1px 4px rgba(0,0,0,0.04); }
+        .prose-notes h1 { font-family: 'Georgia', serif; font-size: 26px; font-weight: 900; color: #831843; margin: 0 0 4px; letter-spacing: -0.02em; line-height: 1.2; }
+        .prose-notes h2 { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; font-weight: 800; color: #be185d; margin: 32px 0 12px; padding: 10px 16px; background: linear-gradient(90deg, #fce7f3, #fff0f5); border-left: 4px solid #ec4899; border-radius: 0 10px 10px 0; text-transform: uppercase; letter-spacing: 0.06em; }
+        .prose-notes h3 { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; font-weight: 700; color: #9d174d; margin: 20px 0 6px; }
+        .prose-notes p { margin: 0 0 12px; }
+        .prose-notes hr { border: none; border-top: 2px dashed #fce7f3; margin: 20px 0; }
+        .prose-notes strong { color: #831843; font-weight: 700; }
+        .prose-notes li { margin-bottom: 6px; padding-left: 4px; }
+        .prose-notes ul, .prose-notes ol { padding-left: 22px; margin: 8px 0 14px; }
+        .prose-notes code { background: #fdf2f8; color: #be185d; padding: 1px 6px; border-radius: 5px; font-size: 13px; font-family: 'Courier New', monospace; }
+        .prose-notes blockquote { border-left: 4px solid #f9a8d4; background: #fff0f5; padding: 10px 16px; border-radius: 0 10px 10px 0; margin: 14px 0; color: #9d174d; font-style: italic; }
         ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: #fff0f5; } ::-webkit-scrollbar-thumb { background: #f9a8d4; border-radius: 3px; }
       `}</style>
 
@@ -786,22 +794,50 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
 
         {/* ===== NOTES VIEW ===== */}
         {view === "notes" && (
-          <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <div style={{ maxWidth: 860, margin: "0 auto" }}>
             {loading ? <LoadingScreen message={loadMsg} emoji={loadEmoji} /> : (
               <div>
-                <div style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "28px 32px", boxShadow: "0 2px 12px rgba(0,0,0,0.04)" }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24, paddingBottom: 20, borderBottom: "1px solid #fce7f3", flexWrap: "wrap", gap: 12 }}>
-                    <div>
-                      <Badge color={S?.accent || "#6366f1"}>{subject}</Badge>
-                      <h2 style={{ fontSize: 20, fontWeight: 800, color: "#0f172a", margin: "8px 0 0" }}>{chapter}</h2>
-                    </div>
-                    <div style={{ display: "flex", gap: 10 }}>
-                      <button onClick={() => genNotes(subject, chapter)} style={{ background: "#fce7f3", border: "none", borderRadius: 9, padding: "8px 16px", color: "#be185d", fontSize: 13, fontWeight: 600 }}>🔄 Regenerate</button>
-                      <button onClick={() => { setQuiz([]); setAnswers({}); setSubmitted(false); setQIdx(0); setView("quiz"); genQuiz(subject, chapter); }}
-                        style={{ background: S?.accent || "#6366f1", border: "none", borderRadius: 9, padding: "8px 16px", color: "white", fontSize: 13, fontWeight: 700 }}>Take Quiz →</button>
-                    </div>
+                {/* Notes Header Card */}
+                <div style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "22px 32px", boxShadow: "0 2px 12px rgba(236,72,153,0.07)", marginBottom: 20, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
+                  <div>
+                    <Badge color={S?.accent || "#ec4899"}>{subject}</Badge>
+                    <h2 style={{ fontSize: 22, fontWeight: 900, color: "#831843", margin: "6px 0 2px", letterSpacing: "-0.02em" }}>{chapter}</h2>
+                    <div style={{ fontSize: 12, color: "#f472b4", fontWeight: 600 }}>NCERT Class 12 CBSE · Study Notes</div>
                   </div>
-                  <div className="prose-notes">{notes}</div>
+                  <div style={{ display: "flex", gap: 10 }}>
+                    <button onClick={() => genNotes(subject, chapter)} style={{ background: "#fce7f3", border: "1px solid #fbcfe8", borderRadius: 10, padding: "9px 18px", color: "#be185d", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>🔄 Regenerate</button>
+                    <button onClick={() => { setQuiz([]); setAnswers({}); setSubmitted(false); setQIdx(0); setView("quiz"); genQuiz(subject, chapter); }}
+                      style={{ background: "linear-gradient(135deg,#ec4899,#db2777)", border: "none", borderRadius: 10, padding: "9px 20px", color: "white", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6, boxShadow: "0 4px 14px rgba(236,72,153,0.35)" }}>🧠 Take Quiz →</button>
+                  </div>
+                </div>
+                {/* Notes Content */}
+                <div className="prose-notes-block">
+                  <div className="prose-notes">
+                    {notes.split('\n').map((line, i) => {
+                      if (line.startsWith('# ')) return <h1 key={i}>{line.slice(2)}</h1>;
+                      if (line.startsWith('## ')) return <h2 key={i}>{line.slice(3)}</h2>;
+                      if (line.startsWith('### ')) return <h3 key={i}>{line.slice(4)}</h3>;
+                      if (line.startsWith('---')) return <hr key={i} />;
+                      if (line.startsWith('> ')) return <blockquote key={i}>{line.slice(2)}</blockquote>;
+                      if (line.startsWith('- ') || line.startsWith('* ')) {
+                        const text = line.slice(2).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+                        return <ul key={i} style={{margin:0,paddingLeft:22}}><li dangerouslySetInnerHTML={{ __html: text }} /></ul>;
+                      }
+                      if (/^\d+\.\s/.test(line)) {
+                        const text = line.replace(/^\d+\.\s/, '').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+                        return <ol key={i} style={{margin:0,paddingLeft:22}}><li dangerouslySetInnerHTML={{ __html: text }} /></ol>;
+                      }
+                      if (line.trim() === '') return <div key={i} style={{height:6}} />;
+                      const formatted = line.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/`(.+?)`/g, '<code>$1</code>');
+                      return <p key={i} dangerouslySetInnerHTML={{ __html: formatted }} />;
+                    })}
+                  </div>
+                </div>
+                {/* Bottom action bar */}
+                <div style={{ display: "flex", justifyContent: "center", gap: 14, marginTop: 24, paddingBottom: 32 }}>
+                  <button onClick={() => genNotes(subject, chapter)} style={{ background: "white", border: "1px solid #fce7f3", borderRadius: 12, padding: "11px 24px", color: "#be185d", fontSize: 14, fontWeight: 700 }}>🔄 Regenerate Notes</button>
+                  <button onClick={() => { setQuiz([]); setAnswers({}); setSubmitted(false); setQIdx(0); setView("quiz"); genQuiz(subject, chapter); }}
+                    style={{ background: "linear-gradient(135deg,#ec4899,#db2777)", border: "none", borderRadius: 12, padding: "11px 28px", color: "white", fontSize: 14, fontWeight: 700, boxShadow: "0 4px 14px rgba(236,72,153,0.35)" }}>🧠 Start Quiz →</button>
                 </div>
               </div>
             )}
