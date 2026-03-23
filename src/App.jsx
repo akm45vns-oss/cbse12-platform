@@ -44,6 +44,9 @@ export default function App() {
   useEffect(() => {
     if (auth.currentUser) {
       progress.load(auth.currentUser);
+      nav.goToDashboard();
+    } else {
+      nav.navigate("auth");
     }
   }, [auth.currentUser]);
 
