@@ -228,7 +228,43 @@ function LoadingScreen({ message, emoji = "🔄" }) {
     </div>
   );
 }
+function ExamTimer({ initialSeconds, onExpire }) {
+  const [timeLeft, setTimeLeft] = useState(initialSeconds);
 
+  useEffect(() => {
+    if (timeLeft <= 0) {
+      if (onExpire) onExpire();
+      return;
+    }
+    const timer = setInterval(() => setTimeLeft(prev => prev - 1), 1000);
+    return () => clearInterval(timer);
+  }, [timeLeft, onExpire]);
+
+  const hours = Math.floor(timeLeft / 3600);
+  const minutes = Math.floor((timeLeft % 3600) / 60);
+  const seconds = timeLeft % 60;
+
+  const timeString = hours > 0
+    ? `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`
+    : `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+  const isLow = timeLeft > 0 && timeLeft <= 300; // Less than 5 minutes
+  const isExpired = timeLeft <= 0;
+
+  return (
+    <div className="no-print" style={{
+      display: "flex", alignItems: "center", gap: 8,
+      background: isExpired ? "#fee2e2" : isLow ? "#fefce8" : "#f0fdf4",
+      border: `1px solid ${isExpired ? "#ef4444" : isLow ? "#facc15" : "#86efac"}`,
+      color: isExpired ? "#b91c1c" : isLow ? "#a16207" : "#15803d",
+      padding: "6px 14px", borderRadius: 10, fontWeight: 700, fontSize: 14,
+      boxShadow: isLow ? "0 0 12px rgba(250, 204, 21, 0.3)" : "none",
+      transition: "all 0.3s"
+    }}>
+      <span>⏱️</span> {isExpired ? "TIME UP!" : timeString}
+    </div>
+  );
+}
 // ===== MAIN APP =====
 export default function App() {
   // Navigation
@@ -571,7 +607,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
       {/* ===== LEFT PANEL ===== */}
       <div className="auth-left">
         <div style={{ pointerEvents: "none", position: "absolute", top: -100, left: -100, width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(236,72,153,0.18) 0%, transparent 70%)", animation: "glow 4s ease-in-out infinite" }} />
-<div style={{ pointerEvents: "none", position: "absolute", bottom: -80, right: -80, width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(244,114,182,0.14) 0%, transparent 70%)", animation: "glow 5s ease-in-out infinite 1s" }} />
+        <div style={{ pointerEvents: "none", position: "absolute", bottom: -80, right: -80, width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(244,114,182,0.14) 0%, transparent 70%)", animation: "glow 5s ease-in-out infinite 1s" }} />
         <div style={{ marginBottom: 44 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(236,72,153,0.08)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 99, padding: "7px 18px", marginBottom: 10 }}>
             <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#ec4899", display: "inline-block", boxShadow: "0 0 8px #ec4899" }} />
@@ -757,6 +793,32 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
           .notes-content-pad { padding: 16px 14px; }
           .opt-btn { padding: 11px 14px; font-size: 13px; }
         }
+          @media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-content, #printable-content * {
+    visibility: visible;
+  }
+  #printable-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none !important;
+    background: white !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  /* Ensure background colors in notes print correctly */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
         @media (min-width: 600px) {
           .breadcrumb-chapter { display: inline !important; }
         }
@@ -956,21 +1018,22 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
           <div style={{ maxWidth: 860, margin: "0 auto" }}>
             {loading ? <LoadingScreen message={loadMsg} emoji={loadEmoji} /> : (
               <div>
-                {/* Notes Header Card */}
-                <div style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "clamp(14px,3vw,22px) clamp(16px,4vw,32px)", boxShadow: "0 2px 12px rgba(236,72,153,0.07)", marginBottom: 20, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
+{/* Notes Header Card */}
+                <div className="no-print" style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "clamp(14px,3vw,22px) clamp(16px,4vw,32px)", boxShadow: "0 2px 12px rgba(236,72,153,0.07)", marginBottom: 20, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
                   <div>
                     <Badge color={S?.accent || "#ec4899"}>{subject}</Badge>
                     <h2 style={{ fontSize: 22, fontWeight: 900, color: "#831843", margin: "6px 0 2px", letterSpacing: "-0.02em" }}>{chapter}</h2>
                     <div style={{ fontSize: 12, color: "#f472b4", fontWeight: 600 }}>NCERT Class 12 CBSE · Study Notes</div>
                   </div>
                   <div style={{ display: "flex", gap: 10 }}>
+                    <button onClick={() => window.print()} style={{ background: "#f8fafc", border: "1px solid #cbd5e1", borderRadius: 10, padding: "9px 16px", color: "#334155", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>📥 PDF</button>
                     <button onClick={() => genNotes(subject, chapter)} style={{ background: "#fce7f3", border: "1px solid #fbcfe8", borderRadius: 10, padding: "9px 18px", color: "#be185d", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>🔄 Regenerate</button>
                     <button onClick={() => { setQuiz([]); setAnswers({}); setSubmitted(false); setQIdx(0); setView("quiz"); genQuiz(subject, chapter); }}
                       style={{ background: "linear-gradient(135deg,#ec4899,#db2777)", border: "none", borderRadius: 10, padding: "9px 20px", color: "white", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6, boxShadow: "0 4px 14px rgba(236,72,153,0.35)" }}>🧠 Take Quiz →</button>
                   </div>
                 </div>
                 {/* Notes Content */}
-                <div className="prose-notes-block">
+                <div id="printable-content" className="prose-notes-block">
                   <div className="prose-notes">
                     {notes.split('\n').map((line, i) => {
                       if (line.startsWith('# ')) return <h1 key={i}>{line.slice(2)}</h1>;
@@ -1053,14 +1116,21 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
             ) : (
               /* QUIZ IN PROGRESS */
               <div>
-                {/* Header */}
-                <div style={{ background: "white", borderRadius: 16, border: "1px solid #fce7f3", padding: "14px 20px", marginBottom: 16 }}>
+               {/* Header */}
+                <div className="no-print" style={{ background: "white", borderRadius: 16, border: "1px solid #fce7f3", padding: "14px 20px", marginBottom: 16 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
                     <div>
                       <span style={{ fontSize: 13, fontWeight: 700, color: "#1e293b" }}>Question {qIdx + 1} / {quiz.length}</span>
                       <span style={{ fontSize: 12, color: "#94a3b8", marginLeft: 12 }}>{Object.keys(answers).length} answered</span>
                     </div>
-                    <Badge color={S?.accent || "#6366f1"}>{subject}</Badge>
+                    <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                      {/* 25 Minute Timer (1500 seconds) */}
+                      <ExamTimer initialSeconds={1500} onExpire={() => {
+                        alert("⏱️ Time is up! Auto-submitting your quiz.");
+                        submitQuiz();
+                      }} />
+                      <Badge color={S?.accent || "#6366f1"}>{subject}</Badge>
+                    </div>
                   </div>
                   <ProgressBar value={qIdx + 1} max={quiz.length} color={S?.accent || "#6366f1"} height={5} />
                 </div>
@@ -1123,13 +1193,20 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
         {view === "paper" && (
           <div style={{ maxWidth: 860, margin: "0 auto", width: "100%" }}>
             {loading ? <LoadingScreen message={loadMsg} emoji={loadEmoji} /> : (
-              <div style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "clamp(16px, 4vw, 32px)" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, paddingBottom: 20, borderBottom: "1px solid #fce7f3", flexWrap: "wrap", gap: 12 }}>
-                  <div>
+              <div id="printable-content" style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "clamp(16px, 4vw, 32px)" }}>
+                <div className="no-print" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, paddingBottom: 20, borderBottom: "1px solid #fce7f3", flexWrap: "wrap", gap: 12 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
                     <Badge color={S?.accent || "#6366f1"}>{subject}</Badge>
+                    {/* 3 Hour Timer (10800 seconds) */}
+                    <ExamTimer initialSeconds={10800} /> 
+                  </div>
+                  <div>
                     <h2 style={{ fontSize: 20, fontWeight: 800, color: "#0f172a", margin: "8px 0 0" }}>Sample Board Exam Paper</h2>
                   </div>
-                  <button onClick={() => genPaper(subject)} style={{ background: "#fce7f3", border: "none", borderRadius: 9, padding: "8px 16px", color: "#be185d", fontSize: 13, fontWeight: 600 }}>🔄 Regenerate</button>
+                  <div style={{ display: "flex", gap: 10 }}>
+                     <button onClick={() => window.print()} style={{ background: "#f8fafc", border: "1px solid #cbd5e1", borderRadius: 9, padding: "8px 16px", color: "#334155", fontSize: 13, fontWeight: 600 }}>📥 Save PDF</button>
+                     <button onClick={() => genPaper(subject)} style={{ background: "#fce7f3", border: "none", borderRadius: 9, padding: "8px 16px", color: "#be185d", fontSize: 13, fontWeight: 600 }}>🔄 Regenerate</button>
+                  </div>
                 </div>
                 <pre style={{ whiteSpace: "pre-wrap", fontFamily: "'Courier New', monospace", fontSize: "clamp(11px, 2vw, 13px)", color: "#334155", lineHeight: 1.8, margin: 0, overflowX: "auto" }}>{paper}</pre>
               </div>
