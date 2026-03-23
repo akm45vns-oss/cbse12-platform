@@ -107,7 +107,7 @@ async function hashPassword(password) {
 function ProgressBar({ value, max, color = "#6366f1", height = 6 }) {
   const pct = max > 0 ? Math.min(100, Math.round(value / max * 100)) : 0;
   return (
-    <div style={{ background: "#e2e8f0", borderRadius: 99, height, overflow: "hidden" }}>
+    <div style={{ background: "#fce7f3", borderRadius: 99, height, overflow: "hidden" }}>
       <div style={{ width: `${pct}%`, height: "100%", background: color, borderRadius: 99, transition: "width 0.6s cubic-bezier(.4,0,.2,1)" }} />
     </div>
   );
@@ -134,7 +134,7 @@ function LoadingScreen({ message, emoji = "🔄" }) {
       <div style={{ fontSize: 13, color: "#94a3b8" }}>This may take 15–30 seconds</div>
       <div style={{ display: "flex", gap: 6, marginTop: 8 }}>
         {[0,1,2].map(i => (
-          <div key={i} style={{ width: 8, height: 8, borderRadius: "50%", background: "#6366f1", animation: `bounce 1.2s ${i * 0.2}s infinite` }} />
+          <div key={i} style={{ width: 8, height: 8, borderRadius: "50%", background: "#ec4899", animation: `bounce 1.2s ${i * 0.2}s infinite` }} />
         ))}
       </div>
       <style>{`
@@ -431,15 +431,15 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
 
   // ---- AUTH VIEW ----
   if (view === "auth") return (
-    <div style={{ minHeight: "100vh", width: "100%", background: "#0a0f1e", display: "flex", fontFamily: "'Segoe UI', system-ui, sans-serif", overflow: "hidden" }}>
+    <div style={{ minHeight: "100vh", width: "100%", background: "#fff0f5", display: "flex", fontFamily: "'Segoe UI', system-ui, sans-serif", overflow: "hidden" }}>
       <style>{`
         * { box-sizing: border-box; }
         input { font-family: inherit; }
         button { cursor: pointer; font-family: inherit; }
-        .auth-input { width: 100%; padding: 11px 14px; border: 1.5px solid #1e293b; border-radius: 10px; background: #0f172a; color: #f1f5f9; font-size: 14px; outline: none; transition: border-color 0.2s; }
-        .auth-input:focus { border-color: #818cf8; }
-        .auth-input::placeholder { color: #334155; }
-        .auth-btn { width: 100%; padding: 12px; border: none; border-radius: 10px; background: linear-gradient(135deg, #4f46e5, #7c3aed); color: white; font-size: 15px; font-weight: 700; letter-spacing: 0.02em; transition: opacity 0.2s, transform 0.1s; }
+        .auth-input { width: 100%; padding: 11px 14px; border: 1.5px solid #fbcfe8; border-radius: 10px; background: #fff0f5; color: #831843; font-size: 14px; outline: none; transition: border-color 0.2s; }
+        .auth-input:focus { border-color: #ec4899; }
+        .auth-input::placeholder { color: #f9a8d4; }
+        .auth-btn { width: 100%; padding: 12px; border: none; border-radius: 10px; background: linear-gradient(135deg, #ec4899, #db2777); color: white; font-size: 15px; font-weight: 700; letter-spacing: 0.02em; transition: opacity 0.2s, transform 0.1s; }
         .auth-btn:hover { opacity: 0.9; transform: translateY(-1px); }
         .auth-btn:active { transform: translateY(0); }
         .tab-btn { flex: 1; padding: 9px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; transition: all 0.2s; }
@@ -448,17 +448,17 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
       `}</style>
 
       {/* ===== LEFT PANEL ===== */}
-      <div style={{ flex: 1, background: "linear-gradient(140deg, #0f172a 0%, #1e1b4b 55%, #0f2942 100%)", display: "flex", flexDirection: "column", justifyContent: "center", padding: "56px 60px", position: "relative", overflow: "hidden", minWidth: 0 }}>
-        <div style={{ position: "absolute", top: -100, left: -100, width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(99,102,241,0.18) 0%, transparent 70%)", animation: "glow 4s ease-in-out infinite" }} />
-        <div style={{ position: "absolute", bottom: -80, right: -80, width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(124,58,237,0.14) 0%, transparent 70%)", animation: "glow 5s ease-in-out infinite 1s" }} />
+      <div style={{ flex: 1, background: "linear-gradient(140deg, #fce4ec 0%, #fdf2f8 55%, #fce4ec 100%)", display: "flex", flexDirection: "column", justifyContent: "center", padding: "56px 60px", position: "relative", overflow: "hidden", minWidth: 0 }}>
+        <div style={{ position: "absolute", top: -100, left: -100, width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(236,72,153,0.18) 0%, transparent 70%)", animation: "glow 4s ease-in-out infinite" }} />
+        <div style={{ position: "absolute", bottom: -80, right: -80, width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(244,114,182,0.14) 0%, transparent 70%)", animation: "glow 5s ease-in-out infinite 1s" }} />
 
         {/* Developer pill */}
         <div style={{ marginBottom: 44 }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 99, padding: "7px 18px", marginBottom: 10 }}>
-            <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#a78bfa", display: "inline-block", boxShadow: "0 0 8px #a78bfa" }} />
-            <span style={{ fontSize: 10, color: "#94a3b8", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}>Developer</span>
-            <span style={{ color: "rgba(255,255,255,0.2)" }}>·</span>
-            <span style={{ fontSize: 12, color: "white", fontWeight: 800, letterSpacing: "0.04em", textTransform: "uppercase" }}>Ayush Kumar Maurya</span>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(236,72,153,0.08)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 99, padding: "7px 18px", marginBottom: 10 }}>
+            <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#ec4899", display: "inline-block", boxShadow: "0 0 8px #ec4899" }} />
+            <span style={{ fontSize: 10, color: "#be185d", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}>Developer</span>
+            <span style={{ color: "rgba(190,24,93,0.3)" }}>·</span>
+            <span style={{ fontSize: 12, color: "#831843", fontWeight: 800, letterSpacing: "0.04em", textTransform: "uppercase" }}>Ayush Kumar Maurya</span>
           </div>
           <div style={{ display: "flex", gap: 8 }}>
             {[
@@ -467,9 +467,9 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
               { href: "https://www.instagram.com/ayush.maurya45/", label: "Instagram" },
             ].map(({ href, label }) => (
               <a key={label} href={href} target="_blank" rel="noopener noreferrer"
-                style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 99, padding: "5px 14px", color: "#94a3b8", fontSize: 11, fontWeight: 600, textDecoration: "none", transition: "all 0.2s" }}
-                onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.09)"; e.currentTarget.style.color = "white"; }}
-                onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.color = "#94a3b8"; }}>
+                style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(236,72,153,0.06)", border: "1px solid rgba(236,72,153,0.2)", borderRadius: 99, padding: "5px 14px", color: "#be185d", fontSize: 11, fontWeight: 600, textDecoration: "none", transition: "all 0.2s" }}
+                onMouseEnter={e => { e.currentTarget.style.background = "rgba(236,72,153,0.15)"; e.currentTarget.style.color = "#831843"; }}
+                onMouseLeave={e => { e.currentTarget.style.background = "rgba(236,72,153,0.05)"; e.currentTarget.style.color = "#be185d"; }}>
                 {label}
               </a>
             ))}
@@ -479,25 +479,25 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
         <div style={{ animation: "float 6s ease-in-out infinite", marginBottom: 10 }}>
           <span style={{ fontSize: 60 }}>🎓</span>
         </div>
-        <h1 style={{ color: "white", fontSize: 44, fontWeight: 900, margin: "0 0 14px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
+        <h1 style={{ color: "#831843", fontSize: 44, fontWeight: 900, margin: "0 0 14px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
           CBSE Class 12<br/>
-          <span style={{ background: "linear-gradient(135deg, #818cf8, #a78bfa, #34d399)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>AI Study Platform</span>
+          <span style={{ background: "linear-gradient(135deg, #ec4899, #f472b4, #f9a8d4)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>AI Study Platform</span>
         </h1>
-        <p style={{ color: "#64748b", fontSize: 15, lineHeight: 1.7, marginBottom: 36, maxWidth: 440 }}>
+        <p style={{ color: "#be185d", fontSize: 15, lineHeight: 1.7, marginBottom: 36, maxWidth: 440 }}>
           Complete NCERT-based preparation for Board Exams 2025–26. AI-generated notes, 50 MCQs per chapter, sample papers and progress tracking.
         </p>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 40, maxWidth: 460 }}>
           {[
-            { emoji: "⚛️", name: "Physics", units: "9 Units · 15 Chapters", bg: "rgba(59,130,246,0.08)", border: "rgba(59,130,246,0.2)" },
-            { emoji: "🧪", name: "Chemistry", units: "8 Units · 16 Chapters", bg: "rgba(16,185,129,0.08)", border: "rgba(16,185,129,0.2)" },
-            { emoji: "🌿", name: "Biology", units: "5 Units · 14 Chapters", bg: "rgba(34,197,94,0.08)", border: "rgba(34,197,94,0.2)" },
-            { emoji: "📖", name: "English", units: "4 Units · 27 Topics", bg: "rgba(167,139,250,0.08)", border: "rgba(167,139,250,0.2)" },
+            { emoji: "⚛️", name: "Physics", units: "9 Units · 15 Chapters", bg: "rgba(236,72,153,0.07)", border: "rgba(236,72,153,0.25)" },
+            { emoji: "🧪", name: "Chemistry", units: "8 Units · 16 Chapters", bg: "rgba(244,114,182,0.07)", border: "rgba(244,114,182,0.25)" },
+            { emoji: "🌿", name: "Biology", units: "5 Units · 14 Chapters", bg: "rgba(251,191,36,0.07)", border: "rgba(251,191,36,0.2)" },
+            { emoji: "📖", name: "English", units: "4 Units · 27 Topics", bg: "rgba(168,85,247,0.07)", border: "rgba(168,85,247,0.2)" },
           ].map(({ emoji, name, units, bg, border }) => (
             <div key={name} style={{ background: bg, border: `1px solid ${border}`, borderRadius: 14, padding: "14px 16px" }}>
               <div style={{ fontSize: 22, marginBottom: 6 }}>{emoji}</div>
-              <div style={{ color: "white", fontWeight: 700, fontSize: 14 }}>{name}</div>
-              <div style={{ color: "#475569", fontSize: 11, marginTop: 2 }}>{units}</div>
+              <div style={{ color: "#831843", fontWeight: 700, fontSize: 14 }}>{name}</div>
+              <div style={{ color: "#be185d", fontSize: 11, marginTop: 2 }}>{units}</div>
             </div>
           ))}
         </div>
@@ -510,21 +510,21 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
             { icon: "📊", text: "Individual Progress Tracking per Subject" },
           ].map(({ icon, text }) => (
             <div key={text} style={{ display: "flex", alignItems: "center", gap: 12 }}>
-              <div style={{ width: 30, height: 30, borderRadius: 8, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14, flexShrink: 0 }}>{icon}</div>
-              <span style={{ color: "#94a3b8", fontSize: 13 }}>{text}</span>
+              <div style={{ width: 30, height: 30, borderRadius: 8, background: "rgba(236,72,153,0.08)", border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14, flexShrink: 0 }}>{icon}</div>
+              <span style={{ color: "#9d174d", fontSize: 13 }}>{text}</span>
             </div>
           ))}
         </div>
       </div>
 
       {/* ===== RIGHT PANEL — LOGIN FORM ===== */}
-      <div style={{ width: 440, flexShrink: 0, background: "#060b14", display: "flex", flexDirection: "column", justifyContent: "center", padding: "48px 40px", borderLeft: "1px solid #0f172a", overflowY: "auto" }}>
+      <div style={{ width: 440, flexShrink: 0, background: "#fce4ec", display: "flex", flexDirection: "column", justifyContent: "center", padding: "48px 40px", borderLeft: "1px solid #fbcfe8", overflowY: "auto" }}>
         <div style={{ width: "100%" }}>
 
-          <h2 style={{ color: "white", fontSize: 22, fontWeight: 800, margin: "0 0 4px", letterSpacing: "-0.02em" }}>
+          <h2 style={{ color: "#831843", fontSize: 22, fontWeight: 800, margin: "0 0 4px", letterSpacing: "-0.02em" }}>
             {authTab === "login" ? "Welcome back 👋" : "Create Account ✨"}
           </h2>
-          <p style={{ color: "#475569", fontSize: 13, marginBottom: 28 }}>
+          <p style={{ color: "#be185d", fontSize: 13, marginBottom: 28 }}>
             {authTab === "login" ? "Sign in to continue your preparation" : "Join thousands of Class 12 students"}
           </p>
 
@@ -532,7 +532,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
           <div style={{ display: "flex", background: "#0f172a", border: "1px solid #1e293b", borderRadius: 12, padding: 4, marginBottom: 24 }}>
             {[["login","🔑 Sign In"],["register","✨ Register"]].map(([t, label]) => (
               <button key={t} className="tab-btn" onClick={() => { setAuthTab(t); setAuthErr(""); }}
-                style={{ background: authTab === t ? "linear-gradient(135deg,#4f46e5,#7c3aed)" : "transparent", color: authTab === t ? "white" : "#475569" }}>
+                style={{ background: authTab === t ? "linear-gradient(135deg,#ec4899,#db2777)" : "transparent", color: authTab === t ? "white" : "#be185d" }}>
                 {label}
               </button>
             ))}
@@ -540,13 +540,13 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
 
           <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
             <div>
-              <label style={{ color: "#64748b", fontSize: 11, fontWeight: 700, display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.08em" }}>Username</label>
+              <label style={{ color: "#be185d", fontSize: 11, fontWeight: 700, display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.08em" }}>Username</label>
               <input className="auth-input" value={uname} onChange={e => setUname(e.target.value)}
                 placeholder={authTab === "register" ? "Choose a unique username" : "Enter your username"}
                 onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
             </div>
             <div>
-              <label style={{ color: "#64748b", fontSize: 11, fontWeight: 700, display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.08em" }}>Password</label>
+              <label style={{ color: "#be185d", fontSize: 11, fontWeight: 700, display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.08em" }}>Password</label>
               <div style={{ position: "relative" }}>
                 <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)}
                   placeholder={authTab === "register" ? "Min 6 characters" : "Enter your password"}
@@ -558,13 +558,13 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
             </div>
             {authTab === "register" && (
               <div>
-                <label style={{ color: "#64748b", fontSize: 11, fontWeight: 700, display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.08em" }}>Confirm Password</label>
+                <label style={{ color: "#be185d", fontSize: 11, fontWeight: 700, display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.08em" }}>Confirm Password</label>
                 <input className="auth-input" type="password" value={pass2} onChange={e => setPass2(e.target.value)}
                   placeholder="Re-enter password" onKeyDown={e => e.key === "Enter" && doRegister()} />
               </div>
             )}
             {authErr && (
-              <div style={{ background: "#450a0a", border: "1px solid #7f1d1d", color: "#fca5a5", padding: "10px 14px", borderRadius: 10, fontSize: 13 }}>{authErr}</div>
+              <div style={{ background: "#fff0f5", border: "1px solid #fbcfe8", color: "#be185d", padding: "10px 14px", borderRadius: 10, fontSize: 13 }}>{authErr}</div>
             )}
             <button className="auth-btn" onClick={authTab === "login" ? doLogin : doRegister} style={{ marginTop: 4 }}>
               {authTab === "login" ? "Sign In →" : "Create Account ✨"}
@@ -572,8 +572,8 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
           </div>
 
           {authTab === "login" && (
-            <p style={{ textAlign: "center", color: "#334155", fontSize: 13, marginTop: 18, marginBottom: 0 }}>
-              New here? <button onClick={() => setAuthTab("register")} style={{ background: "none", border: "none", color: "#818cf8", fontWeight: 600, cursor: "pointer" }}>Create an account</button>
+            <p style={{ textAlign: "center", color: "#be185d", fontSize: 13, marginTop: 18, marginBottom: 0 }}>
+              New here? <button onClick={() => setAuthTab("register")} style={{ background: "none", border: "none", color: "#ec4899", fontWeight: 600, cursor: "pointer" }}>Create an account</button>
             </p>
           )}
           <p style={{ textAlign: "center", color: "#1e293b", fontSize: 11, marginTop: 28 }}>NCERT • CBSE Board 2025–26 • Class XII • All Subjects</p>
@@ -586,38 +586,38 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
   const canGoBack = viewStack.length > 2;
 
   return (
-    <div style={{ minHeight: "100vh", width: "100%", background: "#f8fafc", fontFamily: "'Segoe UI', system-ui, sans-serif" }}>
+    <div style={{ minHeight: "100vh", width: "100%", background: "#fff0f5", fontFamily: "'Segoe UI', system-ui, sans-serif" }}>
       <style>{`
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        html, body, #root { width: 100%; min-height: 100vh; background: #f8fafc; }
+        html, body, #root { width: 100%; min-height: 100vh; background: #fff0f5; }
         button { cursor: pointer; font-family: inherit; }
-        .card { background: white; border-radius: 16px; border: 1px solid #e2e8f0; padding: 20px; transition: box-shadow 0.2s, transform 0.2s; }
+        .card { background: white; border-radius: 16px; border: 1px solid #fce7f3; padding: 20px; transition: box-shadow 0.2s, transform 0.2s; }
         .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
         .hover-lift:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
-        .opt-btn { width: 100%; text-align: left; padding: 14px 18px; border-radius: 12px; border: 2px solid #e2e8f0; background: white; color: #1e293b; fontSize: 14px; lineHeight: 1.5; transition: all 0.15s; }
-        .opt-btn:hover { border-color: #94a3b8; background: #f8fafc; }
-        .opt-selected { border-color: #4f46e5 !important; background: #eef2ff !important; color: #4338ca !important; font-weight: 600; }
+        .opt-btn { width: 100%; text-align: left; padding: 14px 18px; border-radius: 12px; border: 2px solid #fce7f3; background: white; color: #1e293b; fontSize: 14px; lineHeight: 1.5; transition: all 0.15s; }
+        .opt-btn:hover { border-color: #f472b4; background: #fff0f5; }
+        .opt-selected { border-color: #ec4899 !important; background: #fdf2f8 !important; color: #be185d !important; font-weight: 600; }
         .opt-correct { border-color: #16a34a !important; background: #f0fdf4 !important; color: #15803d !important; }
         .opt-wrong { border-color: #dc2626 !important; background: #fef2f2 !important; color: #dc2626 !important; }
         .qnum { width: 30px; height: 30px; border-radius: 8px; border: none; font-size: 11px; font-weight: 700; cursor: pointer; transition: all 0.1s; }
         .qnum:hover { transform: scale(1.1); }
         .prose-notes { white-space: pre-wrap; line-height: 1.75; color: #334155; font-size: 14px; }
         .prose-notes h1 { font-size: 22px; font-weight: 800; color: #0f172a; margin: 0 0 8px; }
-        .prose-notes h2 { font-size: 17px; font-weight: 700; color: #1e293b; margin: 24px 0 8px; padding-left: 10px; border-left: 3px solid #6366f1; }
+        .prose-notes h2 { font-size: 17px; font-weight: 700; color: #831843; margin: 24px 0 8px; padding-left: 10px; border-left: 3px solid #ec4899; }
         .prose-notes h3 { font-size: 15px; font-weight: 600; color: #334155; margin: 16px 0 4px; }
-        ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: #f1f5f9; } ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+        ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: #fff0f5; } ::-webkit-scrollbar-thumb { background: #f9a8d4; border-radius: 3px; }
       `}</style>
 
       {/* TOP NAV */}
-      <nav style={{ background: "white", borderBottom: "1px solid #e2e8f0", position: "sticky", top: 0, zIndex: 100, boxShadow: "0 1px 8px rgba(0,0,0,0.06)" }}>
+      <nav style={{ background: "white", borderBottom: "1px solid #fce7f3", position: "sticky", top: 0, zIndex: 100, boxShadow: "0 1px 8px rgba(0,0,0,0.06)" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 16px", height: 60, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
             {canGoBack && (
-              <button onClick={goBack} style={{ background: "#f1f5f9", border: "none", borderRadius: 8, padding: "6px 12px", color: "#64748b", fontWeight: 600, fontSize: 13, display: "flex", alignItems: "center", gap: 4 }}>
+              <button onClick={goBack} style={{ background: "#fce7f3", border: "none", borderRadius: 8, padding: "6px 12px", color: "#be185d", fontWeight: 600, fontSize: 13, display: "flex", alignItems: "center", gap: 4 }}>
                 ← Back
               </button>
             )}
-            <button onClick={() => { setView("dashboard"); setViewStack(["auth","dashboard"]); setSubject(null); setChapter(null); }} style={{ display: "flex", alignItems: "center", gap: 8, background: "none", border: "none", color: "#4f46e5", fontWeight: 800, fontSize: 18 }}>
+            <button onClick={() => { setView("dashboard"); setViewStack(["auth","dashboard"]); setSubject(null); setChapter(null); }} style={{ display: "flex", alignItems: "center", gap: 8, background: "none", border: "none", color: "#ec4899", fontWeight: 800, fontSize: 18 }}>
               🎓 <span style={{ letterSpacing: "-0.02em" }}>CBSE12</span>
             </button>
             {subject && <span style={{ color: "#94a3b8", fontSize: 13 }}>/ {S.emoji} {subject}</span>}
@@ -625,16 +625,16 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <button onClick={() => { setView("progress"); setViewStack(s => [...s, "progress"]); }}
-              style={{ background: "#f1f5f9", border: "none", borderRadius: 8, padding: "6px 14px", color: "#475569", fontWeight: 600, fontSize: 13 }}>
+              style={{ background: "#fce7f3", border: "none", borderRadius: 8, padding: "6px 14px", color: "#be185d", fontWeight: 600, fontSize: 13 }}>
               📊 Progress
             </button>
             <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-              <div style={{ width: 34, height: 34, borderRadius: "50%", background: "linear-gradient(135deg,#4f46e5,#7c3aed)", color: "white", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontSize: 15 }}>
+              <div style={{ width: 34, height: 34, borderRadius: "50%", background: "linear-gradient(135deg,#ec4899,#db2777)", color: "white", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontSize: 15 }}>
                 {currentUser?.[0]?.toUpperCase()}
               </div>
               <span style={{ fontSize: 13, fontWeight: 600, color: "#334155", display: window.innerWidth > 600 ? "block" : "none" }}>{currentUser}</span>
             </div>
-            <button onClick={doLogout} style={{ background: "none", border: "1px solid #e2e8f0", borderRadius: 8, padding: "6px 12px", color: "#94a3b8", fontSize: 13 }}>Logout</button>
+            <button onClick={doLogout} style={{ background: "none", border: "1px solid #fce7f3", borderRadius: 8, padding: "6px 12px", color: "#f472b4", fontSize: 13 }}>Logout</button>
           </div>
         </div>
       </nav>
@@ -645,12 +645,12 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
         {view === "dashboard" && (
           <div>
             <div style={{ marginBottom: 28 }}>
-              <h1 style={{ fontSize: 26, fontWeight: 800, color: "#0f172a", margin: 0 }}>Welcome back, {currentUser}! 👋</h1>
-              <p style={{ color: "#64748b", marginTop: 4, fontSize: 15 }}>CBSE Class 12 Board Exam Preparation — All Subjects</p>
+              <h1 style={{ fontSize: 26, fontWeight: 800, color: "#831843", margin: 0 }}>Welcome back, {currentUser}! 👋</h1>
+              <p style={{ color: "#be185d", marginTop: 4, fontSize: 15 }}>CBSE Class 12 Board Exam Preparation — All Subjects</p>
             </div>
 
             {/* Overall Progress */}
-            <div style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)", borderRadius: 20, padding: 24, marginBottom: 24, color: "white", display: "flex", flexWrap: "wrap", gap: 20, alignItems: "center", justifyContent: "space-between" }}>
+            <div style={{ background: "linear-gradient(135deg, #831843 0%, #9d174d 100%)", borderRadius: 20, padding: 24, marginBottom: 24, color: "white", display: "flex", flexWrap: "wrap", gap: 20, alignItems: "center", justifyContent: "space-between" }}>
               <div>
                 <div style={{ fontSize: 13, color: "#94a3b8", marginBottom: 4 }}>Overall Progress</div>
                 <div style={{ fontSize: 40, fontWeight: 900 }}>{overallPct}%</div>
@@ -662,7 +662,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
                   { v: stats.quizDone, t: "Quizzes Done", emoji: "✅", c: "#34d399" },
                   { v: totalChapters, t: "Total Chapters", emoji: "📚", c: "#f59e0b" }
                 ].map(({ v, t, emoji, c }) => (
-                  <div key={t} style={{ background: "rgba(255,255,255,0.07)", borderRadius: 14, padding: "14px 20px", textAlign: "center", minWidth: 90 }}>
+                  <div key={t} style={{ background: "rgba(255,255,255,0.15)", borderRadius: 14, padding: "14px 20px", textAlign: "center", minWidth: 90 }}>
                     <div style={{ fontSize: 24, marginBottom: 4 }}>{emoji}</div>
                     <div style={{ fontSize: 26, fontWeight: 800, color: c }}>{v}</div>
                     <div style={{ fontSize: 11, color: "#94a3b8", marginTop: 2 }}>{t}</div>
@@ -729,9 +729,9 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
                     const best = qData?.best;
                     return (
                       <button key={ci} onClick={() => { setChapter(ch); setNotes(""); setQuiz([]); nav("chapter"); }}
-                        style={{ background: "white", border: `1.5px solid ${nRead && qData ? S.border : "#e2e8f0"}`, borderRadius: 14, padding: "14px 16px", textAlign: "left", transition: "all 0.15s" }}
+                        style={{ background: "white", border: `1.5px solid ${nRead && qData ? S.border : "#fce7f3"}`, borderRadius: 14, padding: "14px 16px", textAlign: "left", transition: "all 0.15s" }}
                         onMouseEnter={e => { e.currentTarget.style.borderColor = S.accent; e.currentTarget.style.transform = "translateY(-1px)"; e.currentTarget.style.boxShadow = `0 4px 12px ${S.accent}22`; }}
-                        onMouseLeave={e => { e.currentTarget.style.borderColor = nRead && qData ? S.border : "#e2e8f0"; e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; }}>
+                        onMouseLeave={e => { e.currentTarget.style.borderColor = nRead && qData ? S.border : "#fce7f3"; e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; }}>
                         <div style={{ fontWeight: 600, color: "#1e293b", fontSize: 14, lineHeight: 1.4, marginBottom: 8 }}>{ch}</div>
                         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                           <span style={{ fontSize: 13 }}>{nRead ? "📖" : "◻️"}</span>
@@ -771,9 +771,9 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
                   else if (mode === "notes") { nav("notes"); if (!notes) genNotes(subject, chapter); }
                   else { setQuiz([]); setAnswers({}); setSubmitted(false); setQIdx(0); nav("quiz"); genQuiz(subject, chapter); }
                 }}
-                  style={{ background: "white", border: `2px solid ${done ? color + "44" : "#e2e8f0"}`, borderRadius: 18, padding: 22, textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, transition: "all 0.15s" }}
+                  style={{ background: "white", border: `2px solid ${done ? color + "44" : "#fce7f3"}`, borderRadius: 18, padding: 22, textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, transition: "all 0.15s" }}
                   onMouseEnter={e => { e.currentTarget.style.borderColor = color; e.currentTarget.style.background = bg; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = `0 8px 25px ${color}25`; }}
-                  onMouseLeave={e => { e.currentTarget.style.borderColor = done ? color + "44" : "#e2e8f0"; e.currentTarget.style.background = "white"; e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; }}>
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = done ? color + "44" : "#fce7f3"; e.currentTarget.style.background = "white"; e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; }}>
                   <div style={{ fontSize: 36 }}>{emoji}</div>
                   <div style={{ fontWeight: 800, color: "#1e293b", fontSize: 16 }}>{title}</div>
                   <div style={{ fontSize: 12, color: "#64748b", lineHeight: 1.4 }}>{desc}</div>
@@ -789,14 +789,14 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
             {loading ? <LoadingScreen message={loadMsg} emoji={loadEmoji} /> : (
               <div>
-                <div style={{ background: "white", borderRadius: 20, border: "1px solid #e2e8f0", padding: "28px 32px", boxShadow: "0 2px 12px rgba(0,0,0,0.04)" }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24, paddingBottom: 20, borderBottom: "1px solid #f1f5f9", flexWrap: "wrap", gap: 12 }}>
+                <div style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "28px 32px", boxShadow: "0 2px 12px rgba(0,0,0,0.04)" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24, paddingBottom: 20, borderBottom: "1px solid #fce7f3", flexWrap: "wrap", gap: 12 }}>
                     <div>
                       <Badge color={S?.accent || "#6366f1"}>{subject}</Badge>
                       <h2 style={{ fontSize: 20, fontWeight: 800, color: "#0f172a", margin: "8px 0 0" }}>{chapter}</h2>
                     </div>
                     <div style={{ display: "flex", gap: 10 }}>
-                      <button onClick={() => genNotes(subject, chapter)} style={{ background: "#f1f5f9", border: "none", borderRadius: 9, padding: "8px 16px", color: "#475569", fontSize: 13, fontWeight: 600 }}>🔄 Regenerate</button>
+                      <button onClick={() => genNotes(subject, chapter)} style={{ background: "#fce7f3", border: "none", borderRadius: 9, padding: "8px 16px", color: "#be185d", fontSize: 13, fontWeight: 600 }}>🔄 Regenerate</button>
                       <button onClick={() => { setQuiz([]); setAnswers({}); setSubmitted(false); setQIdx(0); setView("quiz"); genQuiz(subject, chapter); }}
                         style={{ background: S?.accent || "#6366f1", border: "none", borderRadius: 9, padding: "8px 16px", color: "white", fontSize: 13, fontWeight: 700 }}>Take Quiz →</button>
                     </div>
@@ -815,7 +815,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
               <div style={{ textAlign: "center", padding: 60 }}>
                 <div style={{ fontSize: 48, marginBottom: 16 }}>⚠️</div>
                 <div style={{ color: "#475569", fontSize: 16, marginBottom: 20 }}>{quizErr || "Failed to load quiz. Please try again."}</div>
-                <button onClick={() => { setQuiz([]); genQuiz(subject, chapter); }} style={{ background: "#4f46e5", border: "none", borderRadius: 10, padding: "12px 28px", color: "white", fontWeight: 700, fontSize: 15 }}>🔄 Try Again</button>
+                <button onClick={() => { setQuiz([]); genQuiz(subject, chapter); }} style={{ background: "#ec4899", border: "none", borderRadius: 10, padding: "12px 28px", color: "white", fontWeight: 700, fontSize: 15 }}>🔄 Try Again</button>
               </div>
             ) : submitted ? (
               /* RESULTS */
@@ -828,7 +828,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
                   </div>
                   <div style={{ display: "flex", gap: 12, justifyContent: "center", marginTop: 20 }}>
                     <button onClick={() => { setQuiz([]); setAnswers({}); setSubmitted(false); setQIdx(0); genQuiz(subject, chapter); }}
-                      style={{ background: "#4f46e5", border: "none", borderRadius: 10, padding: "11px 24px", color: "white", fontWeight: 700, fontSize: 14 }}>🔄 Retry Quiz</button>
+                      style={{ background: "#ec4899", border: "none", borderRadius: 10, padding: "11px 24px", color: "white", fontWeight: 700, fontSize: 14 }}>🔄 Retry Quiz</button>
                     <button onClick={() => { setView("notes"); if (!notes) genNotes(subject, chapter); }}
                       style={{ background: S?.accent || "#6366f1", border: "none", borderRadius: 10, padding: "11px 24px", color: "white", fontWeight: 700, fontSize: 14 }}>📝 Review Notes</button>
                   </div>
@@ -859,7 +859,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
               /* QUIZ IN PROGRESS */
               <div>
                 {/* Header */}
-                <div style={{ background: "white", borderRadius: 16, border: "1px solid #e2e8f0", padding: "14px 20px", marginBottom: 16 }}>
+                <div style={{ background: "white", borderRadius: 16, border: "1px solid #fce7f3", padding: "14px 20px", marginBottom: 16 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
                     <div>
                       <span style={{ fontSize: 13, fontWeight: 700, color: "#1e293b" }}>Question {qIdx + 1} / {quiz.length}</span>
@@ -872,7 +872,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
 
                 {/* Question */}
                 {quiz[qIdx] && (
-                  <div style={{ background: "white", borderRadius: 18, border: "1px solid #e2e8f0", padding: "24px 24px", marginBottom: 14, boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}>
+                  <div style={{ background: "white", borderRadius: 18, border: "1px solid #fce7f3", padding: "24px 24px", marginBottom: 14, boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}>
                     <div style={{ fontSize: 11, fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 10 }}>Question {qIdx + 1}</div>
                     <p style={{ fontSize: 15, fontWeight: 600, color: "#0f172a", lineHeight: 1.6, marginBottom: 20 }}>{quiz[qIdx].q}</p>
                     <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
@@ -888,11 +888,11 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
                 {/* Navigation */}
                 <div style={{ display: "flex", gap: 10, marginBottom: 16 }}>
                   <button onClick={() => setQIdx(q => Math.max(0, q - 1))} disabled={qIdx === 0}
-                    style={{ padding: "11px 20px", background: "#f1f5f9", border: "none", borderRadius: 10, color: "#475569", fontWeight: 600, fontSize: 14, opacity: qIdx === 0 ? 0.4 : 1 }}>
+                    style={{ padding: "11px 20px", background: "#fce7f3", border: "none", borderRadius: 10, color: "#be185d", fontWeight: 600, fontSize: 14, opacity: qIdx === 0 ? 0.4 : 1 }}>
                     ← Prev
                   </button>
                   {qIdx < quiz.length - 1 ? (
-                    <button onClick={() => setQIdx(q => q + 1)} style={{ flex: 1, padding: "11px", background: "#4f46e5", border: "none", borderRadius: 10, color: "white", fontWeight: 700, fontSize: 14 }}>
+                    <button onClick={() => setQIdx(q => q + 1)} style={{ flex: 1, padding: "11px", background: "#ec4899", border: "none", borderRadius: 10, color: "white", fontWeight: 700, fontSize: 14 }}>
                       Next →
                     </button>
                   ) : (
@@ -903,12 +903,12 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
                 </div>
 
                 {/* Question Palette */}
-                <div style={{ background: "white", borderRadius: 14, border: "1px solid #e2e8f0", padding: "14px 16px" }}>
+                <div style={{ background: "white", borderRadius: 14, border: "1px solid #fce7f3", padding: "14px 16px" }}>
                   <div style={{ fontSize: 11, fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: 10 }}>Question Navigator</div>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
                     {quiz.map((_, i) => (
                       <button key={i} className="qnum" onClick={() => setQIdx(i)}
-                        style={{ background: i === qIdx ? (S?.accent || "#6366f1") : answers[i] !== undefined ? "#dcfce7" : "#f1f5f9", color: i === qIdx ? "white" : answers[i] !== undefined ? "#15803d" : "#64748b", border: i === qIdx ? "none" : answers[i] !== undefined ? "1px solid #86efac" : "1px solid #e2e8f0" }}>
+                        style={{ background: i === qIdx ? (S?.accent || "#6366f1") : answers[i] !== undefined ? "#dcfce7" : "#fce7f3", color: i === qIdx ? "white" : answers[i] !== undefined ? "#15803d" : "#64748b", border: i === qIdx ? "none" : answers[i] !== undefined ? "1px solid #86efac" : "1px solid #fce7f3" }}>
                         {i + 1}
                       </button>
                     ))}
@@ -928,13 +928,13 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
         {view === "paper" && (
           <div style={{ maxWidth: 860, margin: "0 auto" }}>
             {loading ? <LoadingScreen message={loadMsg} emoji={loadEmoji} /> : (
-              <div style={{ background: "white", borderRadius: 20, border: "1px solid #e2e8f0", padding: "28px 32px" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, paddingBottom: 20, borderBottom: "1px solid #f1f5f9", flexWrap: "wrap", gap: 12 }}>
+              <div style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "28px 32px" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, paddingBottom: 20, borderBottom: "1px solid #fce7f3", flexWrap: "wrap", gap: 12 }}>
                   <div>
                     <Badge color={S?.accent || "#6366f1"}>{subject}</Badge>
                     <h2 style={{ fontSize: 20, fontWeight: 800, color: "#0f172a", margin: "8px 0 0" }}>Sample Board Exam Paper</h2>
                   </div>
-                  <button onClick={() => genPaper(subject)} style={{ background: "#f1f5f9", border: "none", borderRadius: 9, padding: "8px 16px", color: "#475569", fontSize: 13, fontWeight: 600 }}>🔄 Regenerate</button>
+                  <button onClick={() => genPaper(subject)} style={{ background: "#fce7f3", border: "none", borderRadius: 9, padding: "8px 16px", color: "#be185d", fontSize: 13, fontWeight: 600 }}>🔄 Regenerate</button>
                 </div>
                 <pre style={{ whiteSpace: "pre-wrap", fontFamily: "'Courier New', monospace", fontSize: 13, color: "#334155", lineHeight: 1.8, margin: 0 }}>{paper}</pre>
               </div>
@@ -951,7 +951,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
             {/* Summary */}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(180px,1fr))", gap: 14, marginBottom: 28 }}>
               {[
-                { v: overallPct + "%", label: "Overall Completion", c: "linear-gradient(135deg,#4f46e5,#7c3aed)", emoji: "🎯" },
+                { v: overallPct + "%", label: "Overall Completion", c: "linear-gradient(135deg,#ec4899,#db2777)", emoji: "🎯" },
                 { v: stats.notesRead, label: "Notes Read", c: "linear-gradient(135deg,#0ea5e9,#3b82f6)", emoji: "📝" },
                 { v: stats.quizDone, label: "Quizzes Completed", c: "linear-gradient(135deg,#10b981,#16a34a)", emoji: "✅" },
                 { v: totalChapters, label: "Total Chapters", c: "linear-gradient(135deg,#f59e0b,#d97706)", emoji: "📚" },
@@ -996,7 +996,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
                             const best = qData?.best;
                             const attempts = qData?.attempts?.length || 0;
                             return (
-                              <div key={ci} style={{ background: "#f8fafc", borderRadius: 10, padding: "8px 12px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 8 }}>
+                              <div key={ci} style={{ background: "#fff0f5", borderRadius: 10, padding: "8px 12px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 8 }}>
                                 <span style={{ fontSize: 12, color: "#334155", flex: 1, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{ch}</span>
                                 <div style={{ display: "flex", gap: 6, alignItems: "center", flexShrink: 0 }}>
                                   <span title="Notes">{nRead ? "📖" : "◻️"}</span>
@@ -1019,10 +1019,10 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
       </div>
 
       {/* ===== DEVELOPER FOOTER ===== */}
-      <footer style={{ marginTop: 24, background: "#0f172a", borderTop: "1px solid #1e293b", padding: "10px 20px" }}>
+      <footer style={{ marginTop: 24, background: "#831843", borderTop: "1px solid #9d174d", padding: "10px 20px" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", alignItems: "center", gap: 14, flexWrap: "wrap" }}>
-          <span style={{ fontSize: 9, color: "#475569", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em" }}>Built by</span>
-          <span style={{ color: "#94a3b8", fontWeight: 700, fontSize: 12 }}>Ayush Kumar Maurya</span>
+          <span style={{ fontSize: 9, color: "#fce7f3", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em" }}>Built by</span>
+          <span style={{ color: "white", fontWeight: 700, fontSize: 12 }}>Ayush Kumar Maurya</span>
           <span style={{ color: "#1e293b", fontSize: 14 }}>|</span>
           {[
             { href: "https://github.com/akm45vns-oss", label: "GitHub" },
@@ -1031,8 +1031,8 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
           ].map(({ href, label }) => (
             <a key={label} href={href} target="_blank" rel="noopener noreferrer"
               style={{ color: "#475569", fontSize: 11, fontWeight: 600, textDecoration: "none", transition: "color 0.2s" }}
-              onMouseEnter={e => e.currentTarget.style.color = "#818cf8"}
-              onMouseLeave={e => e.currentTarget.style.color = "#475569"}>
+              onMouseEnter={e => e.currentTarget.style.color = "#fda4af"}
+              onMouseLeave={e => e.currentTarget.style.color = "#fce7f3"}>
               {label}
             </a>
           ))}
