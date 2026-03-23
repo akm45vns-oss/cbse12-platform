@@ -161,7 +161,7 @@ async function callClaude(prompt, maxTokens = 2000) {
       "Authorization": `Bearer ${GROQ_KEY}`
     },
     body: JSON.stringify({
-      model: "llama-3.3-70b-versatile",
+      model: "llama3-8b-8192",
       max_tokens: maxTokens,
       temperature: 0.7,
       messages: [{ role: "user", content: prompt }]
