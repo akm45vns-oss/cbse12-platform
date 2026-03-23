@@ -1343,7 +1343,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
               {label}
             </a>
           ))}
-          <span style={{ fontSize: 10, color: "#fce7f3", opacity: 0.7 }}>© 2025 · CBSE Class 12 AI Platform</span>
+          <span style={{ fontSize: 10, color: "#fce7f3", opacity: 0.7 }}>© 2026 · CBSE Class 12 AI Platform</span>
         </div>
       </footer>
     </div>
