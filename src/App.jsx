@@ -61,7 +61,91 @@ const CURRICULUM = {
       { name: "Vistas (Supplementary)", chapters: ["The Third Level", "The Tiger King", "Journey to the End of the Earth", "The Enemy", "Should Wizard Hit Mommy", "On the Face of It", "Evans Tries an O-Level", "Memories of Childhood"] },
       { name: "Writing Skills", chapters: ["Notice Writing", "Formal Letter Writing", "Article Writing", "Report Writing", "Speech Writing"] },
     ]
-  }
+  },
+  Mathematics: {
+    emoji: "📐", code: "MAT",
+    gradient: "linear-gradient(135deg, #92400e 0%, #f59e0b 50%, #fcd34d 100%)",
+    accent: "#f59e0b", light: "#fffbeb", text: "#92400e", border: "#fde68a",
+    units: [
+      { name: "Unit I — Relations & Functions", chapters: ["Relations and Functions", "Inverse Trigonometric Functions"] },
+      { name: "Unit II — Algebra", chapters: ["Matrices", "Determinants"] },
+      { name: "Unit III — Calculus", chapters: ["Continuity and Differentiability", "Application of Derivatives", "Integrals", "Application of Integrals", "Differential Equations"] },
+      { name: "Unit IV — Vectors & 3D Geometry", chapters: ["Vector Algebra", "Three Dimensional Geometry"] },
+      { name: "Unit V — Linear Programming", chapters: ["Linear Programming"] },
+      { name: "Unit VI — Probability", chapters: ["Probability"] },
+    ]
+  },
+  "Computer Science": {
+    emoji: "💻", code: "CS",
+    gradient: "linear-gradient(135deg, #0c4a6e 0%, #0ea5e9 50%, #7dd3fc 100%)",
+    accent: "#0ea5e9", light: "#f0f9ff", text: "#0369a1", border: "#bae6fd",
+    units: [
+      { name: "Unit I — Programming in Python", chapters: ["Python Revision Tour", "Functions", "File Handling", "Exception Handling"] },
+      { name: "Unit II — Data Structures", chapters: ["Stack", "Queue", "Linked List (Theory)"] },
+      { name: "Unit III — Database Management", chapters: ["Database Concepts", "Structured Query Language (SQL)", "MySQL Functions and Grouping"] },
+      { name: "Unit IV — Networking & Web", chapters: ["Computer Networks", "Network Security Concepts", "Web Technologies Basics"] },
+      { name: "Unit V — Society, Law & Ethics", chapters: ["Cyber Safety", "Intellectual Property Rights", "IT Act and Cyber Crime", "E-waste Management"] },
+    ]
+  },
+  Economics: {
+    emoji: "📈", code: "ECO",
+    gradient: "linear-gradient(135deg, #134e4a 0%, #14b8a6 50%, #5eead4 100%)",
+    accent: "#14b8a6", light: "#f0fdfa", text: "#0f766e", border: "#99f6e4",
+    units: [
+      { name: "Part A — Introductory Microeconomics", chapters: ["Introduction to Microeconomics", "Consumer Equilibrium and Demand", "Producer Behaviour and Supply", "Forms of Market and Price Determination", "Simple Applications of Tools of Demand and Supply"] },
+      { name: "Part B — Introductory Macroeconomics", chapters: ["National Income and Related Aggregates", "Money and Banking", "Determination of Income and Employment", "Government Budget and the Economy", "Balance of Payments and Foreign Exchange"] },
+    ]
+  },
+  Accountancy: {
+    emoji: "🧾", code: "ACC",
+    gradient: "linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #93c5fd 100%)",
+    accent: "#2563eb", light: "#eff6ff", text: "#1d4ed8", border: "#bfdbfe",
+    units: [
+      { name: "Part I — Accounting for Not-for-Profit", chapters: ["Accounting for Not-for-Profit Organisations"] },
+      { name: "Part I — Partnership Accounts", chapters: ["Accounting for Partnership: Basic Concepts", "Reconstitution of Partnership: Admission", "Reconstitution of Partnership: Retirement & Death", "Dissolution of Partnership Firm"] },
+      { name: "Part II — Company Accounts", chapters: ["Accounting for Share Capital", "Issue and Redemption of Debentures"] },
+      { name: "Part II — Financial Statements Analysis", chapters: ["Financial Statements of a Company", "Analysis of Financial Statements", "Accounting Ratios", "Cash Flow Statement"] },
+    ]
+  },
+  "Business Studies": {
+    emoji: "🏢", code: "BS",
+    gradient: "linear-gradient(135deg, #4a1942 0%, #a21caf 50%, #e879f9 100%)",
+    accent: "#a21caf", light: "#fdf4ff", text: "#86198f", border: "#f0abfc",
+    units: [
+      { name: "Part A — Principles & Functions of Management", chapters: ["Nature and Significance of Management", "Principles of Management", "Business Environment", "Planning", "Organising", "Staffing", "Directing", "Controlling"] },
+      { name: "Part B — Business Finance & Marketing", chapters: ["Financial Management", "Financial Markets", "Marketing Management", "Consumer Protection", "Entrepreneurship Development"] },
+    ]
+  },
+  History: {
+    emoji: "🏛️", code: "HIS",
+    gradient: "linear-gradient(135deg, #451a03 0%, #b45309 50%, #fcd34d 100%)",
+    accent: "#b45309", light: "#fffbeb", text: "#92400e", border: "#fde68a",
+    units: [
+      { name: "Themes in Indian History — Part I", chapters: ["Bricks, Beads and Bones: The Harappan Civilisation", "Kings, Farmers and Towns", "Kinship, Caste and Class", "Thinkers, Beliefs and Buildings", "Through the Eyes of Travellers"] },
+      { name: "Themes in Indian History — Part II", chapters: ["Bhakti–Sufi Traditions", "An Imperial Capital: Vijayanagara", "Peasants, Zamindars and the State", "Kings and Chronicles: The Mughal Courts", "Colonialism and the Countryside"] },
+      { name: "Themes in Indian History — Part III", chapters: ["Rebels and the Raj: 1857 Revolt", "Colonial Cities", "Mahatma Gandhi and the Nationalist Movement", "Understanding Partition", "Framing the Constitution"] },
+    ]
+  },
+  "Political Science": {
+    emoji: "🗳️", code: "POL",
+    gradient: "linear-gradient(135deg, #1c1917 0%, #dc2626 50%, #fca5a5 100%)",
+    accent: "#dc2626", light: "#fef2f2", text: "#b91c1c", border: "#fecaca",
+    units: [
+      { name: "Part A — Contemporary World Politics", chapters: ["The Cold War Era", "The End of Bipolarity", "US Hegemony in World Politics", "Alternative Centres of Power", "Contemporary South Asia", "International Organisations", "Security in the Contemporary World", "Environment and Natural Resources", "Globalisation"] },
+      { name: "Part B — Politics in India Since Independence", chapters: ["Challenges of Nation Building", "Era of One-Party Dominance", "Politics of Planned Development", "India's External Relations", "Challenges to the Congress System", "Crisis of the Constitutional Order", "Rise of Popular Movements", "Regional Aspirations", "Recent Developments in Indian Politics"] },
+    ]
+  },
+  "Physical Education": {
+    emoji: "🏃", code: "PE",
+    gradient: "linear-gradient(135deg, #14532d 0%, #22c55e 50%, #86efac 100%)",
+    accent: "#22c55e", light: "#f0fdf4", text: "#15803d", border: "#bbf7d0",
+    units: [
+      { name: "Unit I — Management of Sports", chapters: ["Management of Sporting Events", "Children and Women in Sports", "Yoga as Preventive Measure for Lifestyle Diseases"] },
+      { name: "Unit II — Sports & Nutrition", chapters: ["Physical Education and Sports for CWSN", "Sports Nutrition", "Measurement and Evaluation in Sports"] },
+      { name: "Unit III — Physical Activity & Health", chapters: ["Test and Measurement in Sports", "Biomechanics and Sports", "Psychology and Sports"] },
+      { name: "Unit IV — Training & Physiology", chapters: ["Training in Sports", "Doping — Drugs in Sports", "Sports Medicine"] },
+    ]
+  },
 };
 
 const totalChapters = Object.values(CURRICULUM).reduce((a, s) => a + s.units.reduce((b, u) => b + u.chapters.length, 0), 0);
@@ -364,14 +448,14 @@ Start your response with [ and end with ]`, 7000);
   const genPaper = async (subj) => {
     setLoading(true); setLoadMsg(`Generating Sample Paper for ${subj}`); setLoadEmoji("📄"); setPaper("");
     try {
-      const marks = subj === "English" ? 80 : 70;
+      const marks = subj === "English" ? 80 : subj === "Mathematics" ? 80 : subj === "Physical Education" ? 70 : 80;
       const text = await callClaude(`Create a complete, realistic CBSE Class 12 Board Exam Sample Paper for ${subj}.
 
 Follow the LATEST official CBSE pattern:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 CENTRAL BOARD OF SECONDARY EDUCATION
 SAMPLE QUESTION PAPER — CLASS XII
-Subject: ${subj} (${subj === "Physics" ? "042" : subj === "Chemistry" ? "043" : subj === "Biology" ? "044" : "301"})
+Subject: ${subj} (${subj === "Physics" ? "042" : subj === "Chemistry" ? "043" : subj === "Biology" ? "044" : subj === "Mathematics" ? "041" : subj === "Computer Science" ? "083" : subj === "Economics" ? "030" : subj === "Accountancy" ? "055" : subj === "Business Studies" ? "054" : subj === "History" ? "027" : subj === "Political Science" ? "028" : subj === "Physical Education" ? "048" : "301"})
 Time Allowed: 3 Hours                Maximum Marks: ${marks}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -450,7 +534,7 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
         .auth-right { width: 440px; flex-shrink: 0; background: #fce4ec; display: flex; flex-direction: column; justify-content: center; padding: 48px 40px; border-left: 1px solid #fbcfe8; overflow-y: auto; }
         .auth-title { font-size: 44px; }
         .auth-desc { display: block; }
-        .auth-subjects { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 40px; max-width: 460px; }
+        .auth-subjects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 32px; max-width: 480px; }
         .auth-features { display: flex; flex-direction: column; gap: 10px; }
         @media (max-width: 860px) {
           .auth-wrap { flex-direction: column; }
@@ -508,17 +592,18 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
           Complete NCERT-based preparation for Board Exams 2025–26. AI-generated notes, 50 MCQs per chapter, sample papers and progress tracking.
         </p>
 
-        <div className="auth-subjects">
+        <div className="auth-subjects" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
           {[
-            { emoji: "⚛️", name: "Physics", units: "9 Units · 15 Chapters", bg: "rgba(236,72,153,0.07)", border: "rgba(236,72,153,0.25)" },
-            { emoji: "🧪", name: "Chemistry", units: "8 Units · 16 Chapters", bg: "rgba(244,114,182,0.07)", border: "rgba(244,114,182,0.25)" },
-            { emoji: "🌿", name: "Biology", units: "5 Units · 14 Chapters", bg: "rgba(251,191,36,0.07)", border: "rgba(251,191,36,0.2)" },
-            { emoji: "📖", name: "English", units: "4 Units · 27 Topics", bg: "rgba(168,85,247,0.07)", border: "rgba(168,85,247,0.2)" },
-          ].map(({ emoji, name, units, bg, border }) => (
-            <div key={name} style={{ background: bg, border: `1px solid ${border}`, borderRadius: 14, padding: "14px 16px" }}>
-              <div style={{ fontSize: 22, marginBottom: 6 }}>{emoji}</div>
-              <div style={{ color: "#831843", fontWeight: 700, fontSize: 14 }}>{name}</div>
-              <div style={{ color: "#be185d", fontSize: 11, marginTop: 2 }}>{units}</div>
+            { emoji: "⚛️", name: "Physics" }, { emoji: "🧪", name: "Chemistry" },
+            { emoji: "🌿", name: "Biology" }, { emoji: "📖", name: "English" },
+            { emoji: "📐", name: "Maths" }, { emoji: "💻", name: "CS" },
+            { emoji: "📈", name: "Economics" }, { emoji: "🧾", name: "Accountancy" },
+            { emoji: "🏢", name: "Business" }, { emoji: "🏛️", name: "History" },
+            { emoji: "🗳️", name: "Pol. Science" }, { emoji: "🏃", name: "Phy. Ed." },
+          ].map(({ emoji, name }) => (
+            <div key={name} style={{ background: "rgba(236,72,153,0.06)", border: "1px solid rgba(236,72,153,0.2)", borderRadius: 10, padding: "8px 10px", textAlign: "center" }}>
+              <div style={{ fontSize: 18, marginBottom: 3 }}>{emoji}</div>
+              <div style={{ color: "#831843", fontWeight: 700, fontSize: 11 }}>{name}</div>
             </div>
           ))}
         </div>
