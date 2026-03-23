@@ -1,7 +1,7 @@
 import { ProgressBar, Badge } from "../common";
 import { CURRICULUM, totalChapters } from "../../constants/curriculum";
 
-export function DashboardView({ stats, overallPct, subject, setSubject, nav, currentUser }) {
+export function DashboardView({ stats, overallPct, currentUser, onSelectSubject }) {
   return (
     <div>
       <div style={{ marginBottom: 28 }}>
@@ -38,7 +38,7 @@ export function DashboardView({ stats, overallPct, subject, setSubject, nav, cur
           const st = stats.bySubject[s];
           const pct = Math.round((st.n + st.q) / (st.t * 2) * 100);
           return (
-            <button key={s} className="card hover-lift" onClick={() => nav.navigateToSubject(s)}
+            <button key={s} className="card hover-lift" onClick={() => onSelectSubject(s)}
               style={{ textAlign: "left", border: "none", width: "100%", padding: 0, overflow: "hidden" }}>
               <div style={{ background: d.gradient, padding: "20px 20px 16px", color: "white" }}>
                 <div style={{ fontSize: 32, marginBottom: 6 }}>{d.emoji}</div>
