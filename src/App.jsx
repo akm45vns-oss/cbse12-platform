@@ -378,112 +378,136 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
 
   // ---- AUTH VIEW ----
   if (view === "auth") return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%)", display: "flex", alignItems: "center", justifyContent: "center", padding: 16, fontFamily: "'Segoe UI', system-ui, sans-serif" }}>
+    <div style={{ minHeight: "100vh", width: "100%", background: "#0a0f1e", display: "flex", fontFamily: "'Segoe UI', system-ui, sans-serif", overflow: "hidden" }}>
       <style>{`
         * { box-sizing: border-box; }
         input { font-family: inherit; }
         button { cursor: pointer; font-family: inherit; }
-        .auth-input { width: 100%; padding: 12px 16px; border: 1.5px solid #334155; borderRadius: 10px; background: #1e293b; color: #f1f5f9; fontSize: 14px; outline: none; transition: border-color 0.2s; }
+        .auth-input { width: 100%; padding: 11px 14px; border: 1.5px solid #1e293b; border-radius: 10px; background: #0f172a; color: #f1f5f9; font-size: 14px; outline: none; transition: border-color 0.2s; }
         .auth-input:focus { border-color: #818cf8; }
-        .auth-input::placeholder { color: #475569; }
-        .auth-btn { width: 100%; padding: 13px; border: none; borderRadius: 10px; background: linear-gradient(135deg, #4f46e5, #7c3aed); color: white; fontSize: 15px; fontWeight: 700; letter-spacing: 0.02em; transition: opacity 0.2s, transform 0.1s; }
+        .auth-input::placeholder { color: #334155; }
+        .auth-btn { width: 100%; padding: 12px; border: none; border-radius: 10px; background: linear-gradient(135deg, #4f46e5, #7c3aed); color: white; font-size: 15px; font-weight: 700; letter-spacing: 0.02em; transition: opacity 0.2s, transform 0.1s; }
         .auth-btn:hover { opacity: 0.9; transform: translateY(-1px); }
         .auth-btn:active { transform: translateY(0); }
-        .tab-btn { flex: 1; padding: 9px; border: none; borderRadius: 8px; fontSize: 14px; fontWeight: 600; transition: all 0.2s; }
+        .tab-btn { flex: 1; padding: 9px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; transition: all 0.2s; }
+        @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+        @keyframes glow { 0%,100%{opacity:0.4} 50%{opacity:0.9} }
       `}</style>
-      <div style={{ width: "100%", maxWidth: 440 }}>
 
-        {/* ===== DEVELOPER CREDITS — PILL STYLE ===== */}
-        <div style={{ textAlign: "center", marginBottom: 30 }}>
-          {/* Name pill */}
-          <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: 99, padding: "8px 20px", marginBottom: 12, backdropFilter: "blur(10px)" }}>
-            <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#a78bfa", display: "inline-block", boxShadow: "0 0 8px #a78bfa" }} />
-            <span style={{ fontSize: 11, color: "#94a3b8", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}>Developer</span>
-            <span style={{ color: "rgba(255,255,255,0.25)", fontSize: 12 }}>·</span>
-            <span style={{ fontSize: 13, color: "white", fontWeight: 800, letterSpacing: "0.04em", textTransform: "uppercase" }}>Ayush Kumar Maurya</span>
+      {/* ===== LEFT PANEL ===== */}
+      <div style={{ flex: 1, background: "linear-gradient(140deg, #0f172a 0%, #1e1b4b 55%, #0f2942 100%)", display: "flex", flexDirection: "column", justifyContent: "center", padding: "56px 60px", position: "relative", overflow: "hidden", minWidth: 0 }}>
+        <div style={{ position: "absolute", top: -100, left: -100, width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(99,102,241,0.18) 0%, transparent 70%)", animation: "glow 4s ease-in-out infinite" }} />
+        <div style={{ position: "absolute", bottom: -80, right: -80, width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(124,58,237,0.14) 0%, transparent 70%)", animation: "glow 5s ease-in-out infinite 1s" }} />
+
+        {/* Developer pill */}
+        <div style={{ marginBottom: 44 }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 99, padding: "7px 18px", marginBottom: 10 }}>
+            <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#a78bfa", display: "inline-block", boxShadow: "0 0 8px #a78bfa" }} />
+            <span style={{ fontSize: 10, color: "#94a3b8", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}>Developer</span>
+            <span style={{ color: "rgba(255,255,255,0.2)" }}>·</span>
+            <span style={{ fontSize: 12, color: "white", fontWeight: 800, letterSpacing: "0.04em", textTransform: "uppercase" }}>Ayush Kumar Maurya</span>
           </div>
-
-          {/* Social link pills */}
-          <div style={{ display: "flex", justifyContent: "center", gap: 10, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: 8 }}>
             {[
-              {
-                href: "https://www.linkedin.com/in/ayush-kumar-maurya-326071384/",
-                label: "LinkedIn",
-                svg: (
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                  </svg>
-                )
-              },
-              {
-                href: "https://github.com/akm45vns-oss",
-                label: "GitHub",
-                svg: (
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-                  </svg>
-                )
-              },
-              {
-                href: "https://www.instagram.com/ayush.maurya45/",
-                label: "Instagram",
-                svg: (
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-                  </svg>
-                )
-              }
-            ].map(({ href, label, svg }) => (
+              { href: "https://www.linkedin.com/in/ayush-kumar-maurya-326071384/", label: "LinkedIn" },
+              { href: "https://github.com/akm45vns-oss", label: "GitHub" },
+              { href: "https://www.instagram.com/ayush.maurya45/", label: "Instagram" },
+            ].map(({ href, label }) => (
               <a key={label} href={href} target="_blank" rel="noopener noreferrer"
-                style={{ display: "inline-flex", alignItems: "center", gap: 7, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: 99, padding: "7px 16px", color: "#cbd5e1", fontSize: 12, fontWeight: 600, textDecoration: "none", transition: "all 0.2s", letterSpacing: "0.02em" }}
-                onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; e.currentTarget.style.color = "white"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)"; }}
-                onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.05)"; e.currentTarget.style.color = "#cbd5e1"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.12)"; }}>
-                {svg}{label}
+                style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 99, padding: "5px 14px", color: "#94a3b8", fontSize: 11, fontWeight: 600, textDecoration: "none", transition: "all 0.2s" }}
+                onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.09)"; e.currentTarget.style.color = "white"; }}
+                onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.color = "#94a3b8"; }}>
+                {label}
               </a>
             ))}
           </div>
         </div>
 
-        {/* Header */}
-        <div style={{ textAlign: "center", marginBottom: 32 }}>
-          <div style={{ fontSize: 56, marginBottom: 12 }}>🎓</div>
-          <h1 style={{ color: "white", fontSize: 28, fontWeight: 800, margin: 0, letterSpacing: "-0.02em" }}>CBSE Class 12</h1>
-          <p style={{ color: "#94a3b8", marginTop: 6, fontSize: 14 }}>AI-Powered Board Exam Preparation Platform</p>
-          <div style={{ display: "flex", justifyContent: "center", gap: 8, marginTop: 14, flexWrap: "wrap" }}>
-            {["⚛️ Physics", "🧪 Chemistry", "🌿 Biology", "📖 English"].map(s => (
-              <span key={s} style={{ background: "rgba(255,255,255,0.08)", color: "#c7d2fe", fontSize: 12, padding: "4px 12px", borderRadius: 99, border: "1px solid rgba(255,255,255,0.1)" }}>{s}</span>
-            ))}
-          </div>
+        <div style={{ animation: "float 6s ease-in-out infinite", marginBottom: 10 }}>
+          <span style={{ fontSize: 60 }}>🎓</span>
+        </div>
+        <h1 style={{ color: "white", fontSize: 44, fontWeight: 900, margin: "0 0 14px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
+          CBSE Class 12<br/>
+          <span style={{ background: "linear-gradient(135deg, #818cf8, #a78bfa, #34d399)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>AI Study Platform</span>
+        </h1>
+        <p style={{ color: "#64748b", fontSize: 15, lineHeight: 1.7, marginBottom: 36, maxWidth: 440 }}>
+          Complete NCERT-based preparation for Board Exams 2025–26. AI-generated notes, 50 MCQs per chapter, sample papers and progress tracking.
+        </p>
+
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 40, maxWidth: 460 }}>
+          {[
+            { emoji: "⚛️", name: "Physics", units: "9 Units · 15 Chapters", bg: "rgba(59,130,246,0.08)", border: "rgba(59,130,246,0.2)" },
+            { emoji: "🧪", name: "Chemistry", units: "8 Units · 16 Chapters", bg: "rgba(16,185,129,0.08)", border: "rgba(16,185,129,0.2)" },
+            { emoji: "🌿", name: "Biology", units: "5 Units · 14 Chapters", bg: "rgba(34,197,94,0.08)", border: "rgba(34,197,94,0.2)" },
+            { emoji: "📖", name: "English", units: "4 Units · 27 Topics", bg: "rgba(167,139,250,0.08)", border: "rgba(167,139,250,0.2)" },
+          ].map(({ emoji, name, units, bg, border }) => (
+            <div key={name} style={{ background: bg, border: `1px solid ${border}`, borderRadius: 14, padding: "14px 16px" }}>
+              <div style={{ fontSize: 22, marginBottom: 6 }}>{emoji}</div>
+              <div style={{ color: "white", fontWeight: 700, fontSize: 14 }}>{name}</div>
+              <div style={{ color: "#475569", fontSize: 11, marginTop: 2 }}>{units}</div>
+            </div>
+          ))}
         </div>
 
-        {/* Card */}
-        <div style={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 20, padding: 32, boxShadow: "0 25px 50px rgba(0,0,0,0.5)" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          {[
+            { icon: "📝", text: "AI-Generated Detailed Notes per Chapter" },
+            { icon: "🧠", text: "50 Board-Level MCQs with Explanations" },
+            { icon: "📄", text: "Full CBSE Sample Papers with Answer Keys" },
+            { icon: "📊", text: "Individual Progress Tracking per Subject" },
+          ].map(({ icon, text }) => (
+            <div key={text} style={{ display: "flex", alignItems: "center", gap: 12 }}>
+              <div style={{ width: 30, height: 30, borderRadius: 8, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14, flexShrink: 0 }}>{icon}</div>
+              <span style={{ color: "#94a3b8", fontSize: 13 }}>{text}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ===== RIGHT PANEL — LOGIN FORM ===== */}
+      <div style={{ width: 440, flexShrink: 0, background: "#060b14", display: "flex", flexDirection: "column", justifyContent: "center", padding: "48px 40px", borderLeft: "1px solid #0f172a", overflowY: "auto" }}>
+        <div style={{ width: "100%" }}>
+
+          <h2 style={{ color: "white", fontSize: 22, fontWeight: 800, margin: "0 0 4px", letterSpacing: "-0.02em" }}>
+            {authTab === "login" ? "Welcome back 👋" : "Create Account ✨"}
+          </h2>
+          <p style={{ color: "#475569", fontSize: 13, marginBottom: 28 }}>
+            {authTab === "login" ? "Sign in to continue your preparation" : "Join thousands of Class 12 students"}
+          </p>
+
           {/* Tabs */}
-          <div style={{ display: "flex", background: "#1e293b", borderRadius: 12, padding: 4, marginBottom: 28 }}>
+          <div style={{ display: "flex", background: "#0f172a", border: "1px solid #1e293b", borderRadius: 12, padding: 4, marginBottom: 24 }}>
             {[["login","🔑 Sign In"],["register","✨ Register"]].map(([t, label]) => (
               <button key={t} className="tab-btn" onClick={() => { setAuthTab(t); setAuthErr(""); }}
-                style={{ background: authTab === t ? "linear-gradient(135deg,#4f46e5,#7c3aed)" : "transparent", color: authTab === t ? "white" : "#94a3b8" }}>
+                style={{ background: authTab === t ? "linear-gradient(135deg,#4f46e5,#7c3aed)" : "transparent", color: authTab === t ? "white" : "#475569" }}>
                 {label}
               </button>
             ))}
           </div>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
             <div>
-              <label style={{ color: "#94a3b8", fontSize: 12, fontWeight: 600, display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.06em" }}>Username</label>
-              <input className="auth-input" value={uname} onChange={e => setUname(e.target.value)} placeholder={authTab === "register" ? "Choose a unique username" : "Enter your username"} onKeyDown={e => e.key === "Enter" && (authTab === "login" ? doLogin() : null)} />
+              <label style={{ color: "#64748b", fontSize: 11, fontWeight: 700, display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.08em" }}>Username</label>
+              <input className="auth-input" value={uname} onChange={e => setUname(e.target.value)}
+                placeholder={authTab === "register" ? "Choose a unique username" : "Enter your username"}
+                onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
             </div>
             <div>
-              <label style={{ color: "#94a3b8", fontSize: 12, fontWeight: 600, display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.06em" }}>Password</label>
+              <label style={{ color: "#64748b", fontSize: 11, fontWeight: 700, display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.08em" }}>Password</label>
               <div style={{ position: "relative" }}>
-                <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)} placeholder={authTab === "register" ? "Create a strong password (min 6)" : "Enter your password"} style={{ paddingRight: 44 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
-                <button onClick={() => setShowPass(s => !s)} style={{ position: "absolute", right: 12, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#64748b", fontSize: 16 }}>{showPass ? "🙈" : "👁️"}</button>
+                <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)}
+                  placeholder={authTab === "register" ? "Min 6 characters" : "Enter your password"}
+                  style={{ paddingRight: 44 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
+                <button onClick={() => setShowPass(s => !s)} style={{ position: "absolute", right: 12, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#475569", fontSize: 16 }}>
+                  {showPass ? "🙈" : "👁️"}
+                </button>
               </div>
             </div>
             {authTab === "register" && (
               <div>
-                <label style={{ color: "#94a3b8", fontSize: 12, fontWeight: 600, display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.06em" }}>Confirm Password</label>
-                <input className="auth-input" type="password" value={pass2} onChange={e => setPass2(e.target.value)} placeholder="Re-enter password" onKeyDown={e => e.key === "Enter" && doRegister()} />
+                <label style={{ color: "#64748b", fontSize: 11, fontWeight: 700, display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.08em" }}>Confirm Password</label>
+                <input className="auth-input" type="password" value={pass2} onChange={e => setPass2(e.target.value)}
+                  placeholder="Re-enter password" onKeyDown={e => e.key === "Enter" && doRegister()} />
               </div>
             )}
             {authErr && (
@@ -495,41 +519,17 @@ Make it exam-quality, with real questions (not just placeholders).`, 4000);
           </div>
 
           {authTab === "login" && (
-            <p style={{ textAlign: "center", color: "#475569", fontSize: 13, marginTop: 16, marginBottom: 0 }}>
+            <p style={{ textAlign: "center", color: "#334155", fontSize: 13, marginTop: 18, marginBottom: 0 }}>
               New here? <button onClick={() => setAuthTab("register")} style={{ background: "none", border: "none", color: "#818cf8", fontWeight: 600, cursor: "pointer" }}>Create an account</button>
             </p>
           )}
-        </div>
-        <p style={{ textAlign: "center", color: "#334155", fontSize: 12, marginTop: 16 }}>NCERT • CBSE Board 2025–26 • Class XII • All Subjects</p>
-
-        {/* Developer Credit Card — Auth Page */}
-        <div style={{ marginTop: 16, background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "10px 14px", backdropFilter: "blur(10px)", display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
-          <div style={{ width: 28, height: 28, borderRadius: "50%", background: "linear-gradient(135deg,#4f46e5,#7c3aed)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, flexShrink: 0 }}>
-            👨‍💻
-          </div>
-          <div style={{ marginRight: 4 }}>
-            <div style={{ fontSize: 9, color: "#6366f1", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", lineHeight: 1 }}>Developed by</div>
-            <div style={{ color: "white", fontWeight: 800, fontSize: 12 }}>Ayush Kumar Maurya</div>
-          </div>
-          <div style={{ width: 1, height: 24, background: "rgba(255,255,255,0.1)", margin: "0 2px" }} />
-          {[
-            { href: "https://github.com/akm45vns-oss", label: "GitHub", bg: "rgba(255,255,255,0.06)", border: "rgba(255,255,255,0.12)", color: "#e2e8f0" },
-            { href: "https://www.linkedin.com/in/ayush-kumar-maurya-326071384/", label: "LinkedIn", bg: "rgba(10,102,194,0.15)", border: "rgba(10,102,194,0.3)", color: "#93c5fd" },
-            { href: "https://www.instagram.com/ayush.maurya45/", label: "Instagram", bg: "rgba(225,48,108,0.12)", border: "rgba(225,48,108,0.25)", color: "#f9a8d4" },
-          ].map(({ href, label, bg, border, color }) => (
-            <a key={label} href={href} target="_blank" rel="noopener noreferrer"
-              style={{ display: "inline-flex", alignItems: "center", gap: 4, background: bg, border: `1px solid ${border}`, borderRadius: 6, padding: "4px 10px", color, fontSize: 10, fontWeight: 600, textDecoration: "none", transition: "opacity 0.2s" }}
-              onMouseEnter={e => e.currentTarget.style.opacity = "0.7"}
-              onMouseLeave={e => e.currentTarget.style.opacity = "1"}>
-              {label}
-            </a>
-          ))}
+          <p style={{ textAlign: "center", color: "#1e293b", fontSize: 11, marginTop: 28 }}>NCERT • CBSE Board 2025–26 • Class XII • All Subjects</p>
         </div>
       </div>
     </div>
   );
 
-  // ---- MAIN LAYOUT ----
+    // ---- MAIN LAYOUT ----
   const canGoBack = viewStack.length > 2;
 
   return (
