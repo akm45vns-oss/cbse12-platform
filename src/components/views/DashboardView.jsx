@@ -1,17 +1,18 @@
-import { ProgressBar, Badge, SearchBar, WeakTopicsReport } from "../common";
+﻿import { ProgressBar, Badge, SearchBar, WeakTopicsReport } from "../common";
 import { CURRICULUM, totalChapters } from "../../constants/curriculum";
 import { getRecentChapters } from "../../utils/recentChapters";
 import { getLoginStreak } from "../../utils/loginStreak";
 
-export function DashboardView({ stats, overallPct, currentUser, onSelectSubject, onSelectChapter }) {
+export function DashboardView({ stats, overallPct, currentUser, onSelectSubject, onSelectChapter, theme = { isDarkMode: false } }) {
   const recentChapters = getRecentChapters(5);
   const streak = getLoginStreak();
+  const isDark = theme?.isDarkMode;
   
   return (
     <div>
       <div style={{ marginBottom: 36 }}>
-        <h1 style={{ fontSize: "clamp(22px,5vw,28px)", fontWeight: 900, color: "#064e78", margin: 0, letterSpacing: "-0.02em", lineHeight: 1.2 }}>Welcome back, <span style={{color: "#0891b2"}}>{currentUser}</span>! 👋</h1>
-        <p style={{ color: "#9d174d", marginTop: 8, fontSize: "clamp(14px,2.5vw,16px)", fontWeight: 500 }}>AkmEdu - Comprehensive Study Preparation · All Subjects</p>
+        <h1 style={{ fontSize: "clamp(22px,5vw,28px)", fontWeight: 900, color: isDark ? "#22d3ee" : "#064e78", margin: 0, letterSpacing: "-0.02em", lineHeight: 1.2 }}>Welcome back, <span style={{color: "#0891b2"}}>{currentUser}</span>! 👋</h1>
+        <p style={{ color: isDark ? "#cbd5e1" : "#9d174d", marginTop: 8, fontSize: "clamp(14px,2.5vw,16px)", fontWeight: 500 }}>AkmEdu - Comprehensive Study Preparation · All Subjects</p>
       </div>
 
       {/* Search Bar */}
@@ -35,23 +36,23 @@ export function DashboardView({ stats, overallPct, currentUser, onSelectSubject,
       {streak.current > 0 && (
         <div
           style={{
-            background: `linear-gradient(135deg, #fef5f5, #fee5e5)`,
-            border: "1.5px solid #feca5a",
+            background: isDark ? `linear-gradient(135deg, #1e293b, #334155)` : `linear-gradient(135deg, #fef5f5, #fee5e5)`,
+            border: `1.5px solid ${isDark ? "#475569" : "#feca5a"}`,
             borderRadius: 16,
             padding: 18,
             marginBottom: 24,
             display: "flex",
             alignItems: "center",
             gap: 16,
-            boxShadow: "0 4px 12px rgba(254, 202, 90, 0.2)",
+            boxShadow: `0 4px 12px ${isDark ? "rgba(6, 182, 212, 0.2)" : "rgba(254, 202, 90, 0.2)"}`,
           }}
         >
           <div style={{ fontSize: 40 }}>🔥</div>
           <div style={{ flex: 1 }}>
-            <div style={{ fontWeight: 900, color: "#b45309", fontSize: 16 }}>
+            <div style={{ fontWeight: 900, color: isDark ? "#fbbf24" : "#b45309", fontSize: 16 }}>
               {streak.current} Day{streak.current > 1 ? "s" : ""} On Fire! 🎉
             </div>
-            <div style={{ fontSize: 13, color: "#92400e", marginTop: 2 }}>
+            <div style={{ fontSize: 13, color: isDark ? "#fcdab7" : "#92400e", marginTop: 2 }}>
               Keep it up! Your best streak is {streak.best} days.
             </div>
           </div>
@@ -61,7 +62,7 @@ export function DashboardView({ stats, overallPct, currentUser, onSelectSubject,
       {/* Recent Chapters */}
       {recentChapters.length > 0 && (
         <div style={{ marginBottom: 28 }}>
-          <h3 style={{ fontSize: 14, fontWeight: 900, color: "#064e78", marginBottom: 12, letterSpacing: "-0.01em" }}>
+          <h3 style={{ fontSize: 14, fontWeight: 900, color: isDark ? "#22d3ee" : "#064e78", marginBottom: 12, letterSpacing: "-0.01em" }}>
             📚 Recently Studied
           </h3>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: 10 }}>
@@ -73,8 +74,8 @@ export function DashboardView({ stats, overallPct, currentUser, onSelectSubject,
                   setTimeout(() => onSelectChapter(ch.chapter), 100);
                 }}
                 style={{
-                  background: "linear-gradient(135deg, #f0f9fc, #dbeafe)",
-                  border: "1.5px solid #f9a8d4",
+                  background: isDark ? "linear-gradient(135deg, #334155, #475569)" : "linear-gradient(135deg, #f0f9fc, #dbeafe)",
+                  border: isDark ? "1.5px solid #475569" : "1.5px solid #f9a8d4",
                   borderRadius: 12,
                   padding: 12,
                   textAlign: "left",
@@ -85,17 +86,17 @@ export function DashboardView({ stats, overallPct, currentUser, onSelectSubject,
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = "translateY(-2px)";
-                  e.currentTarget.style.boxShadow = "0 6px 16px rgba(236, 72, 153, 0.2)";
+                  e.currentTarget.style.boxShadow = isDark ? "0 6px 16px rgba(6, 182, 212, 0.2)" : "0 6px 16px rgba(236, 72, 153, 0.2)";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = "translateY(0)";
                   e.currentTarget.style.boxShadow = "none";
                 }}
               >
-                <div style={{ fontSize: 11, color: "#0369a1", fontWeight: 700, marginBottom: 4 }}>
+                <div style={{ fontSize: 11, color: isDark ? "#06b6d4" : "#0369a1", fontWeight: 700, marginBottom: 4 }}>
                   {ch.subject}
                 </div>
-                <div style={{ color: "#1e293b", fontWeight: 700, fontSize: 12 }}>
+                <div style={{ color: isDark ? "#cbd5e1" : "#1e293b", fontWeight: 700, fontSize: 12 }}>
                   {ch.chapter}
                 </div>
               </button>
@@ -132,14 +133,14 @@ export function DashboardView({ stats, overallPct, currentUser, onSelectSubject,
       </div>
 
       {/* Subject Cards */}
-      <h2 style={{ fontSize: "clamp(14px, 3vw, 16px)", fontWeight: 800, color: "#064e78", marginBottom: 20, marginTop: 40, textTransform: "uppercase", letterSpacing: "0.08em" }}>📚 All Subjects</h2>
+      <h2 style={{ fontSize: "clamp(14px, 3vw, 16px)", fontWeight: 800, color: isDark ? "#22d3ee" : "#064e78", marginBottom: 20, marginTop: 40, textTransform: "uppercase", letterSpacing: "0.08em" }}>📚 All Subjects</h2>
       <div className="dash-grid">
         {Object.entries(CURRICULUM).map(([s, d]) => {
           const st = stats.bySubject[s];
           const pct = Math.round((st.n + st.q) / (st.t * 2) * 100);
           return (
             <button key={s} className="card hover-lift" onClick={() => onSelectSubject(s)}
-              style={{ textAlign: "left", border: "none", width: "100%", padding: 0, overflow: "hidden", cursor: "pointer", background: "white", transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              style={{ textAlign: "left", border: "none", width: "100%", padding: 0, overflow: "hidden", cursor: "pointer", background: isDark ? "#1e293b" : "white", transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)" }}>
               <div style={{ background: d.gradient, padding: "24px 20px 20px", color: "white", position: "relative", overflow: "hidden" }}>
                 <div style={{ position: "absolute", right: -20, top: -20, width: 80, height: 80, background: "rgba(255,255,255,0.1)", borderRadius: "50%", blur: "30px" }} />
                 <div style={{ fontSize: 36, marginBottom: 8, position: "relative", zIndex: 1 }}>{d.emoji}</div>
@@ -147,12 +148,12 @@ export function DashboardView({ stats, overallPct, currentUser, onSelectSubject,
                 <div style={{ fontSize: 13, opacity: 0.85, marginTop: 4, fontWeight: 500, position: "relative", zIndex: 1 }}>{d.units.length} Units · {st.t} Chapters</div>
               </div>
               <div style={{ padding: "18px 20px 20px" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, color: "#64748b", marginBottom: 10, alignItems: "center" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, color: isDark ? "#cbd5e1" : "#64748b", marginBottom: 10, alignItems: "center" }}>
                   <span style={{ fontWeight: 600 }}>Progress</span>
                   <span style={{ fontWeight: 800, color: d.accent, fontSize: 16 }}>{pct}%</span>
                 </div>
                 <ProgressBar value={st.n + st.q} max={st.t * 2} color={d.accent} height={7} />
-                <div style={{ display: "flex", gap: 16, marginTop: 14, fontSize: 13, color: "#64748b", fontWeight: 600 }}>
+                <div style={{ display: "flex", gap: 16, marginTop: 14, fontSize: 13, color: isDark ? "#cbd5e1" : "#64748b", fontWeight: 600 }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 5 }}>
                     <span>📖</span>
                     <span>{st.n}/{st.t} notes</span>

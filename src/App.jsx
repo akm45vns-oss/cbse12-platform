@@ -462,6 +462,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
             stats={progress.getStats()}
             overallPct={progress.getOverallPercentage()}
             totalChapters={totalChapters}
+            theme={theme}
             onSelectSubject={(subject) => {
               nav.navigateToSubject(subject);
             }}
@@ -474,6 +475,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
             curriculum={CURRICULUM}
             stats={progress.getStats()}
             progress={progress.data}
+            theme={theme}
             onSelectChapter={(chapter) => {
               nav.navigateToChapter(chapter);
             }}
@@ -492,6 +494,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
             curriculumData={S}
             notesRead={progress.data[`${nav.subject}||${nav.chapter}||notes`]?.read}
             quizBest={progress.data[`${nav.subject}||${nav.chapter}||quiz`]?.best}
+            theme={theme}
             onStartNotes={() => {
               nav.navigate("notes");
               if (!notes) genNotes(nav.subject, nav.chapter);
@@ -521,6 +524,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
             subject={nav.subject}
             chapter={nav.chapter}
             curriculumData={S}
+            theme={theme}
             onRegenerateNotes={() => genNotes(nav.subject, nav.chapter)}
             onStartQuiz={() => {
               setQuiz([]);
@@ -549,6 +553,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
             subject={nav.subject}
             chapter={nav.chapter}
             curriculumData={S}
+            theme={theme}
             onSubmit={submitQuiz}
             onRetry={() => {
               setQuiz([]);
@@ -572,6 +577,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
             paper={paper}
             subject={nav.subject}
             curriculumData={S}
+            theme={theme}
             onRegenerate={() => genPaper(nav.subject)}
           />
         )}
@@ -583,11 +589,12 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
             totalChapters={totalChapters}
             curriculum={CURRICULUM}
             progressData={progress.data}
+            theme={theme}
           />
         )}
 
         {nav.view === "stats" && (
-          <StatsView />
+          <StatsView theme={theme} />
         )}
       </div>
 
