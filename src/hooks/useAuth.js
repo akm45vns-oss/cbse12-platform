@@ -25,6 +25,7 @@ export function useAuth() {
   const [error, setError] = useState("");
   const [isLockedOut, setIsLockedOut] = useState(false);
   const [lockoutTimeRemaining, setLockoutTimeRemaining] = useState(0);
+  const [showPass, setShowPass] = useState(false);
 
   // Helper function to set current user and persist to localStorage
   const setCurrentUser = (user) => {
@@ -44,6 +45,7 @@ export function useAuth() {
   const doLogin = async () => {
     setError("");
     setIsLockedOut(false);
+    setShowPass(false);
     
     const u = credentials.username.trim().toLowerCase();
     
@@ -83,10 +85,12 @@ export function useAuth() {
     resetLoginAttempts(u);
     setCurrentUser(u);
     setCredentials({ username: "", password: "", confirmPassword: "" });
+    setShowPass(false);
   };
 
   const doRegister = async () => {
     setError("");
+    setShowPass(false);
     const u = credentials.username.trim().toLowerCase();
     
     const usernameErr = validateUsername(u);
@@ -110,6 +114,7 @@ export function useAuth() {
     resetLoginAttempts(u);
     setCurrentUser(u);
     setCredentials({ username: "", password: "", confirmPassword: "" });
+    setShowPass(false);
   };
 
   const doLogout = () => {
@@ -119,6 +124,7 @@ export function useAuth() {
     setAuthTab("login");
     setIsLockedOut(false);
     setLockoutTimeRemaining(0);
+    setShowPass(false);
   };
 
   return {
@@ -128,8 +134,10 @@ export function useAuth() {
     error,
     isLockedOut,
     lockoutTimeRemaining,
+    showPass,
     setAuthTab,
     setCredentials,
+    setShowPass,
     doLogin,
     doRegister,
     doLogout,

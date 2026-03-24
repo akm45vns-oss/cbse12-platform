@@ -217,10 +217,12 @@ Make it exam-quality with real questions.`,
         pass={auth.credentials.password}
         pass2={auth.credentials.confirmPassword}
         authErr={auth.error}
+        showPass={auth.showPass}
         setAuthTab={auth.setAuthTab}
         setUname={(u) => auth.setCredentials({ ...auth.credentials, username: u })}
         setPass={(p) => auth.setCredentials({ ...auth.credentials, password: p })}
         setPass2={(p) => auth.setCredentials({ ...auth.credentials, confirmPassword: p })}
+        setShowPass={auth.setShowPass}
         doLogin={auth.doLogin}
         doRegister={auth.doRegister}
       />
