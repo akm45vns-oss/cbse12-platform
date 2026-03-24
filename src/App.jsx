@@ -3,6 +3,10 @@ import { useAuth, useNavigation, useProgress, useTheme, useKeyboardShortcuts } f
 import { callClaude, extractJSON } from "./utils/api";
 import { supabase, getChapterNotes } from "./utils/supabase";
 import { CURRICULUM, totalChapters } from "./constants/curriculum";
+import { SearchBar } from "./components/common/SearchBar";
+import { recordDailyActivity } from "./utils/loginStreak";
+import { recordChapterAccess } from "./utils/recentChapters";
+import { recordQuizSubmission } from "./utils/weakTopics";
 import {
   AuthView,
   DashboardView,
@@ -46,6 +50,7 @@ export default function App() {
   useEffect(() => {
     if (auth.currentUser) {
       progress.load(auth.currentUser);
+      recordDailyActivity(); // Track daily login streak
       nav.goToDashboard();
     } else {
       nav.navigate("auth");
@@ -190,6 +195,10 @@ Make it exam-quality with real questions.`,
     });
     setScore(sc);
     setSubmitted(true);
+    
+    // Record quiz submission for weak topics analysis
+    recordQuizSubmission(nav.subject, nav.chapter, answers, quiz);
+    
     const key = `${nav.subject}||${nav.chapter}||quiz`;
     const prev = progress.data[key] || { attempts: [] };
     progress.save(key, {

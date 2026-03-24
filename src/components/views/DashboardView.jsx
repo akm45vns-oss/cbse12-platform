@@ -1,7 +1,12 @@
-import { ProgressBar, Badge } from "../common";
+import { ProgressBar, Badge, SearchBar, WeakTopicsReport } from "../common";
 import { CURRICULUM, totalChapters } from "../../constants/curriculum";
+import { getRecentChapters } from "../../utils/recentChapters";
+import { getLoginStreak } from "../../utils/loginStreak";
 
-export function DashboardView({ stats, overallPct, currentUser, onSelectSubject }) {
+export function DashboardView({ stats, overallPct, currentUser, onSelectSubject, onSelectChapter }) {
+  const recentChapters = getRecentChapters(5);
+  const streak = getLoginStreak();
+  
   return (
     <div>
       <div style={{ marginBottom: 36 }}>
@@ -9,7 +14,100 @@ export function DashboardView({ stats, overallPct, currentUser, onSelectSubject 
         <p style={{ color: "#9d174d", marginTop: 8, fontSize: "clamp(14px,2.5vw,16px)", fontWeight: 500 }}>AkmEdu - Comprehensive Study Preparation · All Subjects</p>
       </div>
 
-      {/* Overall Progress */}
+      {/* Search Bar */}
+      <div style={{ marginBottom: 24 }}>
+        <SearchBar 
+          onSelectChapter={(chapter) => {
+            const foundSubject = Object.keys(CURRICULUM).find(subj => {
+              const chapters = CURRICULUM[subj].chapters || [];
+              return chapters.includes(chapter);
+            });
+            if (foundSubject) {
+              onSelectSubject(foundSubject);
+              setTimeout(() => onSelectChapter(chapter), 100);
+            }
+          }}
+          onSelectSubject={onSelectSubject}
+        />
+      </div>
+
+      {/* Login Streak */}
+      {streak.current > 0 && (
+        <div
+          style={{
+            background: `linear-gradient(135deg, #fef5f5, #fee5e5)`,
+            border: "1.5px solid #feca5a",
+            borderRadius: 16,
+            padding: 18,
+            marginBottom: 24,
+            display: "flex",
+            alignItems: "center",
+            gap: 16,
+            boxShadow: "0 4px 12px rgba(254, 202, 90, 0.2)",
+          }}
+        >
+          <div style={{ fontSize: 40 }}>🔥</div>
+          <div style={{ flex: 1 }}>
+            <div style={{ fontWeight: 900, color: "#b45309", fontSize: 16 }}>
+              {streak.current} Day{streak.current > 1 ? "s" : ""} On Fire! 🎉
+            </div>
+            <div style={{ fontSize: 13, color: "#92400e", marginTop: 2 }}>
+              Keep it up! Your best streak is {streak.best} days.
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Recent Chapters */}
+      {recentChapters.length > 0 && (
+        <div style={{ marginBottom: 28 }}>
+          <h3 style={{ fontSize: 14, fontWeight: 900, color: "#831843", marginBottom: 12, letterSpacing: "-0.01em" }}>
+            📚 Recently Studied
+          </h3>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: 10 }}>
+            {recentChapters.map((ch, idx) => (
+              <button
+                key={idx}
+                onClick={() => {
+                  onSelectSubject(ch.subject);
+                  setTimeout(() => onSelectChapter(ch.chapter), 100);
+                }}
+                style={{
+                  background: "linear-gradient(135deg, #fff0f5, #fce7f3)",
+                  border: "1.5px solid #f9a8d4",
+                  borderRadius: 12,
+                  padding: 12,
+                  textAlign: "left",
+                  cursor: "pointer",
+                  transition: "all 0.2s",
+                  fontSize: 12,
+                  fontWeight: 600,
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                  e.currentTarget.style.boxShadow = "0 6px 16px rgba(236, 72, 153, 0.2)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "none";
+                }}
+              >
+                <div style={{ fontSize: 11, color: "#be185d", fontWeight: 700, marginBottom: 4 }}>
+                  {ch.subject}
+                </div>
+                <div style={{ color: "#1e293b", fontWeight: 700, fontSize: 12 }}>
+                  {ch.chapter}
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Weak Topics Report */}
+      <div style={{ marginBottom: 28 }}>
+        <WeakTopicsReport />
+      </div>
       <div className="dash-overall">
         <div>
           <div style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", marginBottom: 6, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em" }}>Overall Progress</div>

@@ -1,8 +1,39 @@
 import { ProgressBar } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
+import { useState, useEffect } from "react";
+import { addBookmark, removeBookmark, isBookmarked } from "../../utils/bookmarks";
+import { recordChapterAccess } from "../../utils/recentChapters";
 
 export function SubjectView({ subject, stats, progress, onSelectChapter, onGeneratePaper, curriculum }) {
   const S = curriculum[subject];
+  const [bookmarks, setBookmarks] = useState({});
+
+  // Load bookmark states
+  useEffect(() => {
+    const newBookmarks = {};
+    S.units.forEach(unit => {
+      unit.chapters.forEach(ch => {
+        newBookmarks[ch] = isBookmarked(subject, ch);
+      });
+    });
+    setBookmarks(newBookmarks);
+  }, [subject, S.units]);
+
+  const handleBookmarkClick = (e, chapter) => {
+    e.stopPropagation();
+    if (bookmarks[chapter]) {
+      removeBookmark(subject, chapter);
+      setBookmarks(prev => ({ ...prev, [chapter]: false }));
+    } else {
+      addBookmark(subject, chapter);
+      setBookmarks(prev => ({ ...prev, [chapter]: true }));
+    }
+  };
+
+  const handleSelectChapter = (chapter) => {
+    recordChapterAccess(subject, chapter);
+    onSelectChapter(chapter);
+  };
   
   return (
     <div>
@@ -35,11 +66,32 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
               const qData = progress[qk];
               const best = qData?.best;
               return (
-                <button key={ci} onClick={() => onSelectChapter(ch)}
-                  style={{ background: "white", border: `1.5px solid ${nRead && best !== undefined ? S.accent : "#fce7f3"}`, borderRadius: 16, padding: "16px 18px", textAlign: "left", transition: "all 0.25s cubic-bezier(0.4, 0, 0.2, 1)", cursor: "pointer", boxShadow: nRead && best !== undefined ? `0 4px 16px ${S.accent}20` : "0 2px 8px rgba(236,72,153,0.08)" }}
+                <button key={ci} onClick={() => handleSelectChapter(ch)}
+                  style={{ background: "white", border: `1.5px solid ${nRead && best !== undefined ? S.accent : "#fce7f3"}`, borderRadius: 16, padding: "16px 18px", textAlign: "left", transition: "all 0.25s cubic-bezier(0.4, 0, 0.2, 1)", cursor: "pointer", boxShadow: nRead && best !== undefined ? `0 4px 16px ${S.accent}20` : "0 2px 8px rgba(236,72,153,0.08)", position: "relative" }}
                   onMouseEnter={e => { e.currentTarget.style.borderColor = S.accent; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = `0 8px 24px ${S.accent}30`; }}
                   onMouseLeave={e => { e.currentTarget.style.borderColor = nRead && best !== undefined ? S.accent : "#fce7f3"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = nRead && best !== undefined ? `0 4px 16px ${S.accent}20` : "0 2px 8px rgba(236,72,153,0.08)"; }}>
-                  <div style={{ fontWeight: 700, color: "#1e293b", fontSize: 14, lineHeight: 1.5, marginBottom: 10 }}>{ch}</div>
+                  
+                  {/* Bookmark Button */}
+                  <button
+                    onClick={(e) => handleBookmarkClick(e, ch)}
+                    style={{
+                      position: "absolute",
+                      top: 12,
+                      right: 12,
+                      background: "none",
+                      border: "none",
+                      fontSize: 18,
+                      cursor: "pointer",
+                      padding: 4,
+                      transition: "transform 0.2s",
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.2)")}
+                    onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+                  >
+                    {bookmarks[ch] ? "❤️" : "🤍"}
+                  </button>
+
+                  <div style={{ fontWeight: 700, color: "#1e293b", fontSize: 14, lineHeight: 1.5, marginBottom: 10, paddingRight: 24 }}>{ch}</div>
                   <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                       <span style={{ fontSize: 14 }}>{nRead ? "📖" : "📄"}</span>
