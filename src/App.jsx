@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useAuth, useNavigation, useProgress } from "./hooks";
+import { useAuth, useNavigation, useProgress, useTheme, useKeyboardShortcuts } from "./hooks";
 import { callClaude, extractJSON } from "./utils/api";
 import { supabase, getChapterNotes } from "./utils/supabase";
 import { CURRICULUM, totalChapters } from "./constants/curriculum";
@@ -27,6 +27,7 @@ export default function App() {
   const auth = useAuth();
   const nav = useNavigation();
   const progress = useProgress();
+  const theme = useTheme();
 
   // Content generation state
   const [loading, setLoading] = useState(false);
@@ -232,12 +233,13 @@ Make it exam-quality with real questions.`,
       {/* Top Navigation */}
       <nav
         style={{
-          background: "white",
-          borderBottom: "1px solid #fce7f3",
+          background: theme.isDarkMode ? "#1e293b" : "white",
+          borderBottom: theme.isDarkMode ? "1px solid #334155" : "1px solid #fce7f3",
           position: "sticky",
           top: 0,
           zIndex: 100,
-          boxShadow: "0 1px 8px rgba(0,0,0,0.06)",
+          boxShadow: theme.isDarkMode ? "0 1px 8px rgba(0,0,0,0.3)" : "0 1px 8px rgba(0,0,0,0.06)",
+          transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
         }}
       >
         <div className="nav-bar">
@@ -246,11 +248,11 @@ Make it exam-quality with real questions.`,
               <button
                 onClick={nav.goBack}
                 style={{
-                  background: "#fce7f3",
+                  background: theme.isDarkMode ? "#334155" : "#fce7f3",
                   border: "none",
                   borderRadius: 8,
                   padding: "6px 12px",
-                  color: "#be185d",
+                  color: theme.isDarkMode ? "#f472b4" : "#be185d",
                   fontWeight: 600,
                   fontSize: 13,
                   display: "flex",
@@ -277,7 +279,7 @@ Make it exam-quality with real questions.`,
               🎓 <span style={{ letterSpacing: "-0.02em" }}>AkmEdu</span>
             </button>
             {nav.subject && (
-              <span style={{ color: "#94a3b8", fontSize: 13 }}>
+              <span style={{ color: theme.isDarkMode ? "#cbd5e1" : "#94a3b8", fontSize: 13 }}>
                 / {S.emoji} {nav.subject}
               </span>
             )}
@@ -302,11 +304,11 @@ Make it exam-quality with real questions.`,
             <button
               onClick={() => nav.navigate("stats")}
               style={{
-                background: "#fce7f3",
+                background: theme.isDarkMode ? "#334155" : "#fce7f3",
                 border: "none",
                 borderRadius: 8,
                 padding: "6px 14px",
-                color: "#be185d",
+                color: theme.isDarkMode ? "#f472b4" : "#be185d",
                 fontWeight: 600,
                 fontSize: 13,
               }}
@@ -316,16 +318,31 @@ Make it exam-quality with real questions.`,
             <button
               onClick={() => nav.navigate("progress")}
               style={{
-                background: "#fce7f3",
+                background: theme.isDarkMode ? "#334155" : "#fce7f3",
                 border: "none",
                 borderRadius: 8,
                 padding: "6px 14px",
-                color: "#be185d",
+                color: theme.isDarkMode ? "#f472b4" : "#be185d",
                 fontWeight: 600,
                 fontSize: 13,
               }}
             >
               📊 Progress
+            </button>
+            <button
+              onClick={theme.toggleTheme}
+              title="Toggle dark mode (Ctrl+D)"
+              style={{
+                background: theme.isDarkMode ? "#334155" : "#fce7f3",
+                border: "none",
+                borderRadius: 8,
+                padding: "6px 12px",
+                color: theme.isDarkMode ? "#f472b4" : "#be185d",
+                fontWeight: 600,
+                fontSize: 14,
+              }}
+            >
+              {theme.isDarkMode ? "☀️" : "🌙"}
             </button>
             <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
               <div
@@ -508,9 +525,10 @@ Make it exam-quality with real questions.`,
       <footer
         style={{
           marginTop: 24,
-          background: "#831843",
-          borderTop: "1px solid #9d174d",
+          background: theme.isDarkMode ? "#1e293b" : "#831843",
+          borderTop: theme.isDarkMode ? "1px solid #334155" : "1px solid #9d174d",
           padding: "12px 16px",
+          transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
         }}
       >
         <div

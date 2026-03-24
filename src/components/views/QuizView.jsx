@@ -1,6 +1,7 @@
 import { Badge, LoadingScreen, ExamTimer, ProgressBar } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useKeyboardShortcuts } from "../../hooks";
 import { startSession, endSession } from "../../utils/sessionTracking";
 
 export function QuizView({ 
@@ -23,6 +24,7 @@ export function QuizView({
   onReviewNotes
 }) {
   const S = curriculumData;
+  const [showShortcutHelp, setShowShortcutHelp] = useState(false);
 
   // Track quiz session
   useEffect(() => {
@@ -37,6 +39,40 @@ export function QuizView({
       endSession(true); // Mark quiz completion as completed session
     }
   }, [submitted]);
+
+  // Keyboard shortcuts for quiz
+  const shortcuts = !submitted && quiz.length > 0 ? [
+    {
+      key: "ArrowRight",
+      action: () => {
+        if (qIdx < quiz.length - 1) {
+          setQIdx(qIdx + 1);
+        }
+      },
+      label: "→ Next Question",
+    },
+    {
+      key: "ArrowLeft",
+      action: () => {
+        if (qIdx > 0) {
+          setQIdx(qIdx - 1);
+        }
+      },
+      label: "← Previous Question",
+    },
+    {
+      key: "Enter",
+      action: onSubmit,
+      label: "↵ Submit Quiz",
+    },
+    {
+      key: "?",
+      action: () => setShowShortcutHelp(!showShortcutHelp),
+      label: "? Show Shortcuts",
+    },
+  ] : [];
+
+  useKeyboardShortcuts(shortcuts);
   
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", width: "100%" }}>
@@ -166,6 +202,36 @@ export function QuizView({
               <span style={{display: "flex", alignItems: "center", gap: 6}}><span style={{width: 12, height: 12, borderRadius: 3, background: "#fce7f3"}}></span>Unanswered ({quiz.length - Object.keys(answers).length})</span>
             </div>
           </div>
+
+          {/* Keyboard Shortcuts Help */}
+          {showShortcutHelp && (
+            <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.5)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 1000 }} onClick={() => setShowShortcutHelp(false)}>
+              <div style={{ background: "white", borderRadius: 20, padding: 28, maxWidth: 400, border: "1.5px solid #fce7f3", boxShadow: "0 20px 60px rgba(0,0,0,0.2)" }} onClick={e => e.stopPropagation()}>
+                <h3 style={{ fontSize: 18, fontWeight: 900, color: "#831843", marginBottom: 18, letterSpacing: "-0.01em" }}>⌨️ Keyboard Shortcuts</h3>
+                <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: 12, background: "#f8fafc", borderRadius: 10 }}>
+                    <span style={{ fontWeight: 600, color: "#1e293b" }}>← Previous Question</span>
+                    <span style={{ background: "#e2e8f0", padding: "4px 8px", borderRadius: 6, fontSize: 12, fontWeight: 700, color: "#475569" }}>← Arrow</span>
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: 12, background: "#f8fafc", borderRadius: 10 }}>
+                    <span style={{ fontWeight: 600, color: "#1e293b" }}>Next Question →</span>
+                    <span style={{ background: "#e2e8f0", padding: "4px 8px", borderRadius: 6, fontSize: 12, fontWeight: 700, color: "#475569" }}>→ Arrow</span>
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: 12, background: "#f8fafc", borderRadius: 10 }}>
+                    <span style={{ fontWeight: 600, color: "#1e293b" }}>Submit Quiz</span>
+                    <span style={{ background: "#e2e8f0", padding: "4px 8px", borderRadius: 6, fontSize: 12, fontWeight: 700, color: "#475569" }}>Enter</span>
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: 12, background: "#f8fafc", borderRadius: 10 }}>
+                    <span style={{ fontWeight: 600, color: "#1e293b" }}>Close Help</span>
+                    <span style={{ background: "#e2e8f0", padding: "4px 8px", borderRadius: 6, fontSize: 12, fontWeight: 700, color: "#475569" }}>?</span>
+                  </div>
+                </div>
+                <button onClick={() => setShowShortcutHelp(false)} style={{ width: "100%", marginTop: 16, background: "#ec4899", border: "none", borderRadius: 10, padding: 10, color: "white", fontWeight: 700, cursor: "pointer" }}>
+                  Got it!
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>
