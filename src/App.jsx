@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense, lazy } from "react";
 import { useAuth, useNavigation, useProgress, useTheme } from "./hooks";
 import { callClaude, extractJSON } from "./utils/api";
 import { getChapterNotes } from "./utils/supabase";
@@ -6,19 +6,27 @@ import { CURRICULUM, totalChapters } from "./constants/curriculum";
 import { SearchBar } from "./components/common/SearchBar";
 import { recordDailyActivity } from "./utils/loginStreak";
 import { recordQuizSubmission } from "./utils/weakTopics";
-import {
-  AuthView,
-  DashboardView,
-  SubjectView,
-  ChapterView,
-  NotesView,
-  QuizView,
-  PaperView,
-  ProgressView,
-  StatsView,
-} from "./components/views";
+// Eager load critical views, lazy load others
+import { AuthView, DashboardView } from "./components/views";
+const SubjectView = lazy(() => import("./components/views/SubjectView").then(m => ({ default: m.SubjectView })));
+const ChapterView = lazy(() => import("./components/views/ChapterView").then(m => ({ default: m.ChapterView })));
+const NotesView = lazy(() => import("./components/views/NotesView").then(m => ({ default: m.NotesView })));
+const QuizView = lazy(() => import("./components/views/QuizView").then(m => ({ default: m.QuizView })));
+const PaperView = lazy(() => import("./components/views/PaperView").then(m => ({ default: m.PaperView })));
+const ProgressView = lazy(() => import("./components/views/ProgressView").then(m => ({ default: m.ProgressView })));
+const StatsView = lazy(() => import("./components/views/StatsView").then(m => ({ default: m.StatsView })));
 import { FloatingForumButton } from "./components/common";
 import { globalStyles } from "./styles/shared";
+
+// Loading fallback component
+const LoadingFallback = () => (
+  <div style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "400px" }}>
+    <div style={{ textAlign: "center" }}>
+      <div style={{ fontSize: 32, marginBottom: 16 }}>⏳</div>
+      <div style={{ color: "#64748b", fontSize: 14 }}>Loading...</div>
+    </div>
+  </div>
+);
 
 
 
@@ -469,131 +477,145 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
         )}
 
         {nav.view === "subject" && nav.subject && (
-          <SubjectView
-            subject={nav.subject}
-            curriculum={CURRICULUM}
-            stats={progress.getStats()}
-            progress={progress.data}
-            theme={theme}
-            onSelectChapter={(chapter) => {
-              nav.navigateToChapter(chapter);
-            }}
-            onGeneratePaper={() => {
-              setPaper("");
-              nav.navigate("paper");
-              genPaper(nav.subject);
-            }}
-          />
+          <Suspense fallback={<LoadingFallback />}>
+            <SubjectView
+              subject={nav.subject}
+              curriculum={CURRICULUM}
+              stats={progress.getStats()}
+              progress={progress.data}
+              theme={theme}
+              onSelectChapter={(chapter) => {
+                nav.navigateToChapter(chapter);
+              }}
+              onGeneratePaper={() => {
+                setPaper("");
+                nav.navigate("paper");
+                genPaper(nav.subject);
+              }}
+            />
+          </Suspense>
         )}
 
         {nav.view === "chapter" && nav.chapter && (
-          <ChapterView
-            chapter={nav.chapter}
-            subject={nav.subject}
-            curriculumData={S}
-            notesRead={progress.data[`${nav.subject}||${nav.chapter}||notes`]?.read}
-            quizBest={progress.data[`${nav.subject}||${nav.chapter}||quiz`]?.best}
-            theme={theme}
-            onStartNotes={() => {
-              nav.navigate("notes");
-              if (!notes) genNotes(nav.subject, nav.chapter);
-            }}
-            onStartQuiz={() => {
-              setQuiz([]);
-              setAnswers({});
-              setSubmitted(false);
-              setQIdx(0);
-              nav.navigate("quiz");
-              genQuiz(nav.subject, nav.chapter);
-            }}
-            onStartPaper={() => {
-              setPaper("");
-              nav.navigate("paper");
-              genPaper(nav.subject);
-            }}
-          />
+          <Suspense fallback={<LoadingFallback />}>
+            <ChapterView
+              chapter={nav.chapter}
+              subject={nav.subject}
+              curriculumData={S}
+              notesRead={progress.data[`${nav.subject}||${nav.chapter}||notes`]?.read}
+              quizBest={progress.data[`${nav.subject}||${nav.chapter}||quiz`]?.best}
+              theme={theme}
+              onStartNotes={() => {
+                nav.navigate("notes");
+                if (!notes) genNotes(nav.subject, nav.chapter);
+              }}
+              onStartQuiz={() => {
+                setQuiz([]);
+                setAnswers({});
+                setSubmitted(false);
+                setQIdx(0);
+                nav.navigate("quiz");
+                genQuiz(nav.subject, nav.chapter);
+              }}
+              onStartPaper={() => {
+                setPaper("");
+                nav.navigate("paper");
+                genPaper(nav.subject);
+              }}
+            />
+          </Suspense>
         )}
 
         {nav.view === "notes" && (
-          <NotesView
-            loading={loading}
-            loadMsg={loadMsg}
-            loadEmoji={loadEmoji}
-            notes={notes}
-            subject={nav.subject}
-            chapter={nav.chapter}
-            curriculumData={S}
-            theme={theme}
-            onRegenerateNotes={() => genNotes(nav.subject, nav.chapter)}
-            onStartQuiz={() => {
-              setQuiz([]);
-              setAnswers({});
-              setSubmitted(false);
-              setQIdx(0);
-              nav.navigate("quiz");
-              genQuiz(nav.subject, nav.chapter);
-            }}
-          />
+          <Suspense fallback={<LoadingFallback />}>
+            <NotesView
+              loading={loading}
+              loadMsg={loadMsg}
+              loadEmoji={loadEmoji}
+              notes={notes}
+              subject={nav.subject}
+              chapter={nav.chapter}
+              curriculumData={S}
+              theme={theme}
+              onRegenerateNotes={() => genNotes(nav.subject, nav.chapter)}
+              onStartQuiz={() => {
+                setQuiz([]);
+                setAnswers({});
+                setSubmitted(false);
+                setQIdx(0);
+                nav.navigate("quiz");
+                genQuiz(nav.subject, nav.chapter);
+              }}
+            />
+          </Suspense>
         )}
 
         {nav.view === "quiz" && (
-          <QuizView
-            loading={loading}
-            loadMsg={loadMsg}
-            loadEmoji={loadEmoji}
-            quiz={quiz}
-            quizErr={quizErr}
-            qIdx={qIdx}
-            setQIdx={setQIdx}
-            answers={answers}
-            setAnswers={setAnswers}
-            submitted={submitted}
-            score={score}
-            subject={nav.subject}
-            chapter={nav.chapter}
-            curriculumData={S}
-            theme={theme}
-            onSubmit={submitQuiz}
-            onRetry={() => {
-              setQuiz([]);
-              setAnswers({});
-              setSubmitted(false);
-              setQIdx(0);
-              genQuiz(nav.subject, nav.chapter);
-            }}
-            onReviewNotes={() => {
-              nav.navigate("notes");
-              if (!notes) genNotes(nav.subject, nav.chapter);
-            }}
-          />
+          <Suspense fallback={<LoadingFallback />}>
+            <QuizView
+              loading={loading}
+              loadMsg={loadMsg}
+              loadEmoji={loadEmoji}
+              quiz={quiz}
+              quizErr={quizErr}
+              qIdx={qIdx}
+              setQIdx={setQIdx}
+              answers={answers}
+              setAnswers={setAnswers}
+              submitted={submitted}
+              score={score}
+              subject={nav.subject}
+              chapter={nav.chapter}
+              curriculumData={S}
+              theme={theme}
+              onSubmit={submitQuiz}
+              onRetry={() => {
+                setQuiz([]);
+                setAnswers({});
+                setSubmitted(false);
+                setQIdx(0);
+                genQuiz(nav.subject, nav.chapter);
+              }}
+              onReviewNotes={() => {
+                nav.navigate("notes");
+                if (!notes) genNotes(nav.subject, nav.chapter);
+              }}
+            />
+          </Suspense>
         )}
 
         {nav.view === "paper" && (
-          <PaperView
-            loading={loading}
-            loadMsg={loadMsg}
-            loadEmoji={loadEmoji}
-            paper={paper}
-            subject={nav.subject}
-            curriculumData={S}
-            theme={theme}
-            onRegenerate={() => genPaper(nav.subject)}
-          />
+          <Suspense fallback={<LoadingFallback />}>
+            <PaperView
+              loading={loading}
+              loadMsg={loadMsg}
+              loadEmoji={loadEmoji}
+              paper={paper}
+              subject={nav.subject}
+              curriculumData={S}
+              theme={theme}
+              onRegenerate={() => genPaper(nav.subject)}
+            />
+          </Suspense>
         )}
 
         {nav.view === "progress" && (
-          <ProgressView
-            overallPct={progress.getOverallPercentage()}
-            stats={progress.getStats()}
-            totalChapters={totalChapters}
-            curriculum={CURRICULUM}
-            progressData={progress.data}
-            theme={theme}
-          />
+          <Suspense fallback={<LoadingFallback />}>
+            <ProgressView
+              overallPct={progress.getOverallPercentage()}
+              stats={progress.getStats()}
+              totalChapters={totalChapters}
+              curriculum={CURRICULUM}
+              progressData={progress.data}
+              theme={theme}
+            />
+          </Suspense>
         )}
 
         {nav.view === "stats" && (
-          <StatsView theme={theme} />
+          <Suspense fallback={<LoadingFallback />}>
+            <StatsView theme={theme} />
+          </Suspense>
         )}
       </div>
 
