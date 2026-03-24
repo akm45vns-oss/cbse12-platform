@@ -4,3 +4,5 @@ export { LoadingScreen } from "./LoadingScreen";
 export { ExamTimer } from "./ExamTimer";
 export { SearchBar } from "./SearchBar";
 export { WeakTopicsReport } from "./WeakTopicsReport";
+export { ForumModal } from "./ForumModal";
+export { FloatingForumButton } from "./FloatingForumButton";

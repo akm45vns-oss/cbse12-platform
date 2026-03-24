@@ -18,6 +18,7 @@ import {
   ProgressView,
   StatsView,
 } from "./components/views";
+import { FloatingForumButton } from "./components/common";
 import { globalStyles } from "./styles/shared";
 
 
@@ -597,6 +598,9 @@ Make it exam-quality with real questions.`,
           </span>
         </div>
       </footer>
+
+      {/* Floating Forum Button - Always visible */}
+      <FloatingForumButton currentSubject={nav.subject} currentChapter={nav.chapter} />
     </div>
   );
 }
