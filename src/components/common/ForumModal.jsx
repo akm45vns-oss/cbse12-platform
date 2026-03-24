@@ -11,6 +11,7 @@ import {
   getForumStats,
   getQuestionsForChapter,
 } from "../../utils/forum";
+import { ImageUploader } from "./ImageUploader";
 
 export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapter = "" }) {
   const [activeTab, setActiveTab] = useState("recent"); // recent, trending, myChapter, search
@@ -20,6 +21,8 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
   const [newAnswer, setNewAnswer] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [showPostForm, setShowPostForm] = useState(false);
+  const [questionImage, setQuestionImage] = useState(""); // Image URL for question
+  const [answerImage, setAnswerImage] = useState(""); // Image URL for answer
   const stats = getForumStats();
 
   // Load questions based on active tab
@@ -42,8 +45,9 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
   const handlePostQuestion = () => {
     if (!newQuestion.trim()) return;
 
-    postQuestion(newQuestion, currentSubject, currentChapter);
+    postQuestion(newQuestion, currentSubject, currentChapter, questionImage);
     setNewQuestion("");
+    setQuestionImage("");
     setShowPostForm(false);
     
     // Reload questions
@@ -53,8 +57,9 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
   const handlePostAnswer = () => {
     if (!newAnswer.trim() || !selectedQuestion) return;
 
-    postAnswer(selectedQuestion.id, newAnswer);
+    postAnswer(selectedQuestion.id, newAnswer, answerImage);
     setNewAnswer("");
+    setAnswerImage("");
     
     // Reload question with answers
     incrementViews(selectedQuestion.id);
@@ -261,6 +266,12 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                       resize: "vertical",
                     }}
                   />
+                  
+                  {/* Image Uploader */}
+                  <div style={{ marginTop: 10, marginBottom: 10 }}>
+                    <ImageUploader onImageUpload={setQuestionImage} />
+                  </div>
+
                   <div style={{ display: "flex", gap: 8, marginTop: 10 }}>
                     <button
                       onClick={handlePostQuestion}
@@ -282,6 +293,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                       onClick={() => {
                         setShowPostForm(false);
                         setNewQuestion("");
+                        setQuestionImage("");
                       }}
                       style={{
                         flex: 1,
@@ -346,6 +358,19 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                       <div style={{ fontSize: 13, fontWeight: 700, color: "#1e293b", marginBottom: 4 }}>
                         {q.question}
                       </div>
+                      {q.imageUrl && (
+                        <img
+                          src={q.imageUrl}
+                          alt="Question"
+                          style={{
+                            maxWidth: "100%",
+                            maxHeight: 100,
+                            borderRadius: 6,
+                            marginBottom: 8,
+                            border: "1px solid #fce7f3",
+                          }}
+                        />
+                      )}
                       <div
                         style={{
                           display: "flex",
@@ -353,6 +378,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                           fontSize: 11,
                           color: "#94a3b8",
                           fontWeight: 500,
+                          flexWrap: "wrap",
                         }}
                       >
                         {q.subject && (
@@ -379,6 +405,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                         )}
                         <span>💬 {q.answers?.length || 0} answers</span>
                         <span>👁️ {q.views || 0} views</span>
+                        {q.imageUrl && <span>🖼️ Image</span>}
                       </div>
                     </button>
                   ))
@@ -415,6 +442,19 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                 <div style={{ fontSize: 14, fontWeight: 700, color: "#1e293b", marginBottom: 8 }}>
                   {selectedQuestion.question}
                 </div>
+                {selectedQuestion.imageUrl && (
+                  <img
+                    src={selectedQuestion.imageUrl}
+                    alt="Question"
+                    style={{
+                      maxWidth: "100%",
+                      maxHeight: 300,
+                      borderRadius: 8,
+                      marginBottom: 12,
+                      border: "1.5px solid #fce7f3",
+                    }}
+                  />
+                )}
                 <div
                   style={{
                     fontSize: 11,
@@ -471,6 +511,19 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                       <div style={{ fontSize: 12, color: "#475569", lineHeight: 1.6, marginBottom: 8 }}>
                         {ans.text}
                       </div>
+                      {ans.imageUrl && (
+                        <img
+                          src={ans.imageUrl}
+                          alt="Answer"
+                          style={{
+                            maxWidth: "100%",
+                            maxHeight: 200,
+                            borderRadius: 6,
+                            marginBottom: 8,
+                            border: "1px solid #e2e8f0",
+                          }}
+                        />
+                      )}
                       <div
                         style={{
                           fontSize: 11,
@@ -534,6 +587,12 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                     marginBottom: 10,
                   }}
                 />
+
+                {/* Image Uploader for Answer */}
+                <div style={{ marginBottom: 10 }}>
+                  <ImageUploader onImageUpload={setAnswerImage} />
+                </div>
+
                 <button
                   onClick={handlePostAnswer}
                   style={{

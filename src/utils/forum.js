@@ -8,9 +8,10 @@ const ANSWERS_KEY = "akmedu_forum_answers";
  * @param {string} question - Question text
  * @param {string} subject - Subject context (optional)
  * @param {string} chapter - Chapter context (optional)
+ * @param {string} imageUrl - Image URL (optional)
  * @returns {object} Posted question with ID
  */
-export function postQuestion(question, subject = "", chapter = "") {
+export function postQuestion(question, subject = "", chapter = "", imageUrl = "") {
   if (!question.trim()) return null;
 
   const posts = getQuestions();
@@ -19,7 +20,8 @@ export function postQuestion(question, subject = "", chapter = "") {
     question: question.trim(),
     subject,
     chapter,
-    author: "Anonymous Student", // Could be extended with actual usernames
+    imageUrl, // Add image support
+    author: "Anonymous Student",
     timestamp: Date.now(),
     views: 0,
     answers: [],
@@ -58,9 +60,10 @@ export function getQuestionsForChapter(subject, chapter) {
  * Post an answer to a question
  * @param {number} questionId - ID of question
  * @param {string} answer - Answer text
+ * @param {string} imageUrl - Image URL (optional)
  * @returns {object} Posted answer with ID
  */
-export function postAnswer(questionId, answer) {
+export function postAnswer(questionId, answer, imageUrl = "") {
   if (!answer.trim()) return null;
 
   const posts = JSON.parse(localStorage.getItem(FORUM_KEY) || "[]");
@@ -71,6 +74,7 @@ export function postAnswer(questionId, answer) {
   const newAnswer = {
     id: Date.now(),
     text: answer.trim(),
+    imageUrl, // Add image support
     author: "Anonymous Student",
     timestamp: Date.now(),
     helpful: 0,
