@@ -6,3 +6,4 @@ export { NotesView } from "./NotesView";
 export { QuizView } from "./QuizView";
 export { PaperView } from "./PaperView";
 export { ProgressView } from "./ProgressView";
+export { StatsView } from "./StatsView";

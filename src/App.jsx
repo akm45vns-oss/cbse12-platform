@@ -12,6 +12,7 @@ import {
   QuizView,
   PaperView,
   ProgressView,
+  StatsView,
 } from "./components/views";
 import { globalStyles } from "./styles/shared";
 
@@ -299,6 +300,20 @@ Make it exam-quality with real questions.`,
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <button
+              onClick={() => nav.navigate("stats")}
+              style={{
+                background: "#fce7f3",
+                border: "none",
+                borderRadius: 8,
+                padding: "6px 14px",
+                color: "#be185d",
+                fontWeight: 600,
+                fontSize: 13,
+              }}
+            >
+              📊 Stats
+            </button>
+            <button
               onClick={() => nav.navigate("progress")}
               style={{
                 background: "#fce7f3",
@@ -482,6 +497,10 @@ Make it exam-quality with real questions.`,
             curriculum={CURRICULUM}
             progressData={progress.data}
           />
+        )}
+
+        {nav.view === "stats" && (
+          <StatsView />
         )}
       </div>
 

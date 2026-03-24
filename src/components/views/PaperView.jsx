@@ -1,8 +1,19 @@
 import { Badge, LoadingScreen, ExamTimer } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
+import { useEffect } from "react";
+import { startSession, endSession } from "../../utils/sessionTracking";
 
 export function PaperView({ subject, paper, loading, loadMsg, loadEmoji, curriculumData, onRegenerate }) {
   const S = curriculumData;
+
+  // Track paper session
+  useEffect(() => {
+    const sessionId = startSession(subject, "Sample Paper", "paper");
+    
+    return () => {
+      endSession(true); // Mark as completed when leaving paper view
+    };
+  }, [subject]);
   
   return (
     <div style={{ maxWidth: 860, margin: "0 auto", width: "100%" }}>

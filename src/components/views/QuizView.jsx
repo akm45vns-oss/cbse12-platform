@@ -1,5 +1,7 @@
 import { Badge, LoadingScreen, ExamTimer, ProgressBar } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
+import { useEffect } from "react";
+import { startSession, endSession } from "../../utils/sessionTracking";
 
 export function QuizView({ 
   subject, 
@@ -21,6 +23,20 @@ export function QuizView({
   onReviewNotes
 }) {
   const S = curriculumData;
+
+  // Track quiz session
+  useEffect(() => {
+    if (quiz.length > 0 && !loading) {
+      const sessionId = startSession(subject, chapter, "quiz");
+    }
+  }, [quiz.length, loading, subject, chapter]);
+
+  // End session when quiz is submitted
+  useEffect(() => {
+    if (submitted) {
+      endSession(true); // Mark quiz completion as completed session
+    }
+  }, [submitted]);
   
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", width: "100%" }}>
