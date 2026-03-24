@@ -8,6 +8,7 @@ import { recordDailyActivity } from "./utils/loginStreak";
 import { recordQuizSubmission } from "./utils/weakTopics";
 // Eager load critical views, lazy load others
 import { AuthView, DashboardView } from "./components/views";
+import { LandingPage } from "./components/views/LandingPage";
 const SubjectView = lazy(() => import("./components/views/SubjectView").then(m => ({ default: m.SubjectView })));
 const ChapterView = lazy(() => import("./components/views/ChapterView").then(m => ({ default: m.ChapterView })));
 const NotesView = lazy(() => import("./components/views/NotesView").then(m => ({ default: m.NotesView })));
@@ -53,6 +54,7 @@ export default function App() {
   const [answers, setAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
+  const [showAuthView, setShowAuthView] = useState(false);
 
   // Load progress on user login
   useEffect(() => {
@@ -226,6 +228,16 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
 
   // Not authenticated
   if (nav.view === "auth") {
+    // Show landing page first, auth view only when sign up clicked
+    if (!showAuthView) {
+      return (
+        <LandingPage
+          onSignUp={() => setShowAuthView(true)}
+          theme={theme}
+        />
+      );
+    }
+
     return (
       <AuthView
         authTab={auth.authTab}
