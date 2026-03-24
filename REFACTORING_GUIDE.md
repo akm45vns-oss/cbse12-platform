@@ -1,4 +1,4 @@
-# CBSE12 Platform - Refactored Structure
+# AkMEdu Platform - Refactored Structure
 
 ## Overview
 The monolithic `App.jsx` has been refactored into a clean, modular architecture for better maintainability and scalability.

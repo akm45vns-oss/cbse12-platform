@@ -163,11 +163,11 @@ export function AuthView({
             <span style={{ fontSize: 64 }}>🎓</span>
           </div>
           <h1 className="auth-title" style={{ color: "#831843", fontWeight: 900, margin: "0 0 12px", letterSpacing: "-0.03em", lineHeight: 1.15 }}>
-            CBSE Class 12<br/>
-            <span style={{ background: "linear-gradient(135deg, #ec4899 0%, #f472b4 50%, #f9a8d4 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>AI Study Platform</span>
+            AkMEdu<br/>
+            <span style={{ background: "linear-gradient(135deg, #ec4899 0%, #f472b4 50%, #f9a8d4 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Smart Study Platform</span>
           </h1>
           <p style={{ color: "#9d174d", fontSize: 16, lineHeight: 1.8, marginBottom: 44, maxWidth: 500, fontWeight: 500 }}>
-            Complete NCERT-based preparation for Board Exams 2025–26. AI-generated notes, 50 MCQs per chapter, sample papers and progress tracking.
+            Complete study preparation for all exams. AI-generated notes, 50 practice questions per chapter, sample papers and progress tracking.
           </p>
 
           <div className="auth-subjects">
@@ -287,7 +287,7 @@ export function AuthView({
                 New here? <button onClick={() => setAuthTab("register")} style={{ background: "none", border: "none", color: "#ec4899", fontWeight: 700, cursor: "pointer", fontSize: "inherit" }}>Create an account</button>
               </p>
             )}
-            <p style={{ textAlign: "center", color: "#cbd5e1", fontSize: 12, marginTop: 32, fontWeight: 500, letterSpacing: "0.04em" }}>NCERT • CBSE BOARD 2025–26 • CLASS XII • ALL SUBJECTS</p>
+            <p style={{ textAlign: "center", color: "#cbd5e1", fontSize: 12, marginTop: 32, fontWeight: 500, letterSpacing: "0.04em" }}>AkMEdu • Smart Study Platform • 12 Subjects • All Chapters</p>
           </div>
         </div>
       </div>

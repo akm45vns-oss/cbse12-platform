@@ -273,7 +273,7 @@ Make it exam-quality with real questions.`,
                 fontSize: 18,
               }}
             >
-              🎓 <span style={{ letterSpacing: "-0.02em" }}>CBSE12</span>
+              🎓 <span style={{ letterSpacing: "-0.02em" }}>AkMEdu</span>
             </button>
             {nav.subject && (
               <span style={{ color: "#94a3b8", fontSize: 13 }}>
@@ -547,7 +547,7 @@ Make it exam-quality with real questions.`,
             </a>
           ))}
           <span style={{ fontSize: 10, color: "#fce7f3", opacity: 0.7 }}>
-            © 2026 · CBSE Class 12 AI Platform
+            © 2026 · AkMEdu · Smart Study Platform
           </span>
         </div>
       </footer>
