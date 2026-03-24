@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useAuth, useNavigation, useProgress } from "./hooks";
 import { callClaude, extractJSON } from "./utils/api";
-import { supabase } from "./utils/supabase";
+import { supabase, getChapterNotes } from "./utils/supabase";
 import { CURRICULUM, totalChapters } from "./constants/curriculum";
 import {
   AuthView,
@@ -53,10 +53,21 @@ export default function App() {
   // Content generation functions
   const genNotes = async (subj, chap) => {
     setLoading(true);
-    setLoadMsg(`Generating notes for "${chap}"`);
+    setLoadMsg(`Loading notes for "${chap}"`);
     setLoadEmoji("📝");
     setNotes("");
     try {
+      // Try to load from database first
+      const cachedNotes = await getChapterNotes(subj, chap);
+      if (cachedNotes) {
+        setNotes(cachedNotes);
+        progress.save(`${subj}||${chap}||notes`, { read: true, date: Date.now() });
+        setLoading(false);
+        return;
+      }
+      
+      // If not in database, generate with API (fallback)
+      setLoadMsg(`Generating notes for "${chap}"...`);
       const text = await callClaude(
         `Create comprehensive CBSE Class 12 NCERT study notes for the chapter "${chap}" from ${subj}.
 Format the notes as follows:

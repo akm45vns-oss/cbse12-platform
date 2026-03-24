@@ -78,3 +78,34 @@ export async function saveProgressItem(username, subject, chapter, type, data) {
     { onConflict: "username,subject,chapter,type" }
   );
 }
+
+// ===== CHAPTER NOTES CACHING =====
+export async function saveChapterNotes(subject, chapter, notes) {
+  const { error } = await supabase.from("chapter_notes").upsert(
+    {
+      subject,
+      chapter,
+      notes,
+      created_at: new Date().toISOString()
+    },
+    { onConflict: "subject,chapter" }
+  );
+  
+  if (error) {
+    console.error("Save notes error:", error);
+    return false;
+  }
+  return true;
+}
+
+export async function getChapterNotes(subject, chapter) {
+  const { data, error } = await supabase
+    .from("chapter_notes")
+    .select("notes")
+    .eq("subject", subject)
+    .eq("chapter", chapter)
+    .single();
+  
+  if (error || !data) return null;
+  return data.notes;
+}
