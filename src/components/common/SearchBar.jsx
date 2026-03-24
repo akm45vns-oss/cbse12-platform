@@ -17,17 +17,20 @@ export function SearchBar({ onSelectChapter, onSelectSubject }) {
 
     // Search across all subjects and chapters
     Object.entries(CURRICULUM).forEach(([subjectName, data]) => {
-      data.chapters?.forEach((chapter, idx) => {
-        if (
-          chapter.toLowerCase().includes(q) ||
-          subjectName.toLowerCase().includes(q)
-        ) {
-          foundChapters.push({
-            subject: subjectName,
-            chapter,
-            unitNum: data.units?.[Math.floor(idx / (data.chapters.length / data.units?.length))]?.num || 1,
-          });
-        }
+      // Chapters are nested inside units
+      data.units?.forEach((unit) => {
+        unit.chapters?.forEach((chapter) => {
+          if (
+            chapter.toLowerCase().includes(q) ||
+            subjectName.toLowerCase().includes(q)
+          ) {
+            foundChapters.push({
+              subject: subjectName,
+              chapter,
+              unit: unit.name,
+            });
+          }
+        });
       });
     });
 
