@@ -240,7 +240,7 @@ Make it exam-quality with real questions.`,
         fontFamily: "'Segoe UI', system-ui, sans-serif",
       }}
     >
-      <style>{globalStyles}
+      <style>{`${globalStyles}
         @media (max-width: 640px) {
           .nav-bar {
             padding: 0 12px !important;
@@ -270,7 +270,7 @@ Make it exam-quality with real questions.`,
             content: "" !important;
           }
         }
-      </style>
+      `}</style>
 
       {/* Top Navigation */}
       <nav
