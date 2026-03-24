@@ -255,7 +255,7 @@ Make it exam-quality with real questions.`,
         }}
       >
         <div className="nav-bar">
-          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12, minWidth: 0, flex: 1 }}>
             {nav.canGoBack && (
               <button
                 onClick={nav.goBack}
@@ -263,16 +263,19 @@ Make it exam-quality with real questions.`,
                   background: theme.isDarkMode ? "#334155" : "#dbeafe",
                   border: "none",
                   borderRadius: 8,
-                  padding: "6px 12px",
+                  padding: "8px 10px",
                   color: theme.isDarkMode ? "#06b6d4" : "#0369a1",
                   fontWeight: 600,
-                  fontSize: 13,
+                  fontSize: 12,
                   display: "flex",
                   alignItems: "center",
                   gap: 4,
+                  minHeight: "40px",
+                  whiteSpace: "nowrap",
+                  flexShrink: 0,
                 }}
               >
-                ← Back
+                ← <span style={{ display: "none" }}>Back</span>
               </button>
             )}
             <button
@@ -281,19 +284,31 @@ Make it exam-quality with real questions.`,
               style={{
                 display: "flex",
                 alignItems: "center",
-                gap: 8,
+                gap: 6,
                 background: "none",
                 border: "none",
                 color: "#0891b2",
                 fontWeight: 800,
                 fontSize: 18,
+                cursor: "pointer",
+                whiteSpace: "nowrap",
+                flexShrink: 0,
               }}
             >
               🎓 <span style={{ letterSpacing: "-0.02em" }}>AkmEdu</span>
             </button>
             {nav.subject && (
-              <span style={{ color: theme.isDarkMode ? "#cbd5e1" : "#94a3b8", fontSize: 13 }}>
-                / {S.emoji} {nav.subject}
+              <span
+                style={{
+                  color: theme.isDarkMode ? "#cbd5e1" : "#94a3b8",
+                  fontSize: 13,
+                  minWidth: 0,
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                / {S.emoji} <span style={{ display: "none" }}>{nav.subject}</span>
               </span>
             )}
             {nav.chapter && (
@@ -313,20 +328,27 @@ Make it exam-quality with real questions.`,
               </span>
             )}
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
             <button
               onClick={() => nav.navigate("stats")}
               style={{
                 background: theme.isDarkMode ? "#334155" : "#dbeafe",
                 border: "none",
                 borderRadius: 8,
-                padding: "6px 14px",
+                padding: "8px 12px",
                 color: theme.isDarkMode ? "#06b6d4" : "#0369a1",
                 fontWeight: 600,
                 fontSize: 13,
+                display: "flex",
+                alignItems: "center",
+                gap: 6,
+                minHeight: "40px",
+                whiteSpace: "nowrap",
               }}
+              title="Statistics"
             >
-              📊 Stats
+              <span style={{ fontSize: 16 }}>📊</span>
+              <span style={{ display: "none" }} className="nav-btn-text">Stats</span>
             </button>
             <button
               onClick={() => nav.navigate("progress")}
@@ -334,13 +356,20 @@ Make it exam-quality with real questions.`,
                 background: theme.isDarkMode ? "#334155" : "#dbeafe",
                 border: "none",
                 borderRadius: 8,
-                padding: "6px 14px",
+                padding: "8px 12px",
                 color: theme.isDarkMode ? "#06b6d4" : "#0369a1",
                 fontWeight: 600,
                 fontSize: 13,
+                display: "flex",
+                alignItems: "center",
+                gap: 6,
+                minHeight: "40px",
+                whiteSpace: "nowrap",
               }}
+              title="Progress"
             >
-              📊 Progress
+              <span style={{ fontSize: 16 }}>📈</span>
+              <span style={{ display: "none" }} className="nav-btn-text">Progress</span>
             </button>
             <button
               onClick={theme.toggleTheme}
@@ -349,15 +378,20 @@ Make it exam-quality with real questions.`,
                 background: theme.isDarkMode ? "#334155" : "#dbeafe",
                 border: "none",
                 borderRadius: 8,
-                padding: "6px 12px",
+                padding: "8px 12px",
                 color: theme.isDarkMode ? "#06b6d4" : "#0369a1",
                 fontWeight: 600,
                 fontSize: 14,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                minHeight: "40px",
+                minWidth: "40px",
               }}
             >
               {theme.isDarkMode ? "☀️" : "🌙"}
             </button>
-            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8, minHeight: "40px" }}>
               <div
                 style={{
                   width: 34,
@@ -370,12 +404,23 @@ Make it exam-quality with real questions.`,
                   justifyContent: "center",
                   fontWeight: 800,
                   fontSize: 15,
+                  flexShrink: 0,
                 }}
               >
                 {auth.currentUser?.[0]?.toUpperCase()}
               </div>
               <span
-                style={{ fontSize: 13, fontWeight: 600, color: "#334155" }}
+                style={{
+                  fontSize: 13,
+                  fontWeight: 600,
+                  color: "#334155",
+                  display: "block",
+                  maxWidth: 120,
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                  whiteSpace: "nowrap",
+                }}
+                className="nav-username"
               >
                 {auth.currentUser}
               </span>
@@ -386,10 +431,14 @@ Make it exam-quality with real questions.`,
                 background: "none",
                 border: "1px solid #dbeafe",
                 borderRadius: 8,
-                padding: "6px 12px",
+                padding: "8px 12px",
                 color: "#06b6d4",
                 fontSize: 13,
+                fontWeight: 600,
+                minHeight: "40px",
+                cursor: "pointer",
               }}
+              title="Logout"
             >
               Logout
             </button>
