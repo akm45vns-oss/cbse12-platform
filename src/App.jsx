@@ -191,7 +191,8 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
       );
       setPaper(text);
     } catch (e) {
-      setPaper("❌ Error generating sample paper. Please try again. " + e.message);
+      console.error("Sample paper generation failed:", e);
+      setPaper("❌ Error generating sample paper. Please try again.");
     }
     setLoading(false);
   };

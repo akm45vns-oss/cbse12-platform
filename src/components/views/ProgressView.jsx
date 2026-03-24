@@ -47,8 +47,8 @@ export function ProgressView({ stats, overallPct, totalChapters, curriculum, pro
                   </div>
                   <div className="prog-ch-grid">
                     {unit.chapters.map((ch, ci) => {
-                       const nk = `${s}||${ch}||notes`;
-                       const qk = `${s}||${ch}||quiz`;
+                      const nk = `${s}||${ch}||notes`;
+                      const qk = `${s}||${ch}||quiz`;
                       const nRead = progressData[nk]?.read;
                       const qData = progressData[qk];
                       const best = qData?.best;
