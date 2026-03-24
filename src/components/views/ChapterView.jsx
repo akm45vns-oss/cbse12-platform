@@ -12,7 +12,7 @@ export function ChapterView({ subject, chapter, curriculumData, notesRead, quizB
       </div>
       <div className="chapter-hub-grid">
         {[
-          { mode: "notes", emoji: "📝", title: "Detailed Notes", desc: "AI-generated comprehensive NCERT notes", color: "#3b82f6", bg: "#eff6ff", done: notesRead, extra: "Notes read ✓" },
+          { mode: "notes", emoji: "📝", title: "Detailed Notes", desc: "Comprehensive NCERT notes for quick study", color: "#3b82f6", bg: "#eff6ff", done: notesRead, extra: "Notes read ✓" },
           { mode: "quiz", emoji: "🧠", title: "50 MCQ Quiz", desc: "Board-level practice questions + explanations", color: "#16a34a", bg: "#f0fdf4", done: quizBest !== undefined, extra: `Best: ${quizBest ?? "—"}/50` },
           { mode: "paper", emoji: "📄", title: "Sample Paper", desc: `Full ${subject} CBSE board exam paper`, color: "#7c3aed", bg: "#f5f3ff", done: false, extra: "Full subject paper" }
         ].map(({ mode, emoji, title, desc, color, bg, done, extra }) => (
