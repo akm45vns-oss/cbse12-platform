@@ -240,7 +240,37 @@ Make it exam-quality with real questions.`,
         fontFamily: "'Segoe UI', system-ui, sans-serif",
       }}
     >
-      <style>{globalStyles}</style>
+      <style>{globalStyles}
+        @media (max-width: 640px) {
+          .nav-bar {
+            padding: 0 12px !important;
+            gap: 8px !important;
+          }
+          .nav-stats-btn, .nav-progress-btn, .nav-theme-btn {
+            padding: 6px 8px !important;
+            font-size: 0 !important;
+          }
+          .nav-stats-btn::before { content: "📊"; font-size: 14px; }
+          .nav-progress-btn::before { content: "📊"; font-size: 14px; }
+          .nav-theme-btn { font-size: 14px !important; padding: 6px 10px !important; }
+          .nav-username { display: none !important; }
+          .nav-user-avatar { width: 32px !important; height: 32px !important; min-width: 32px !important; }
+          .nav-logout { padding: 6px 10px !important; font-size: 12px !important; }
+          .breadcrumb-chapter { display: none !important; }
+        }
+        @media (max-width: 480px) {
+          .nav-bar {
+            height: 56px !important;
+            padding: 0 10px !important;
+            gap: 6px !important;
+          }
+          .nav-brand { font-size: 16px !important; }
+          .nav-back { padding: 5px 8px !important; font-size: 12px !important; }
+          .nav-stats-btn::after, .nav-progress-btn::after {
+            content: "" !important;
+          }
+        }
+      </style>
 
       {/* Top Navigation */}
       <nav
@@ -259,6 +289,7 @@ Make it exam-quality with real questions.`,
             {nav.canGoBack && (
               <button
                 onClick={nav.goBack}
+                className="nav-back"
                 style={{
                   background: theme.isDarkMode ? "#334155" : "#dbeafe",
                   border: "none",
@@ -277,6 +308,7 @@ Make it exam-quality with real questions.`,
             )}
             <button
               onClick={nav.goToDashboard}
+              className="nav-brand"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -315,6 +347,7 @@ Make it exam-quality with real questions.`,
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <button
               onClick={() => nav.navigate("stats")}
+              className="nav-stats-btn"
               style={{
                 background: theme.isDarkMode ? "#334155" : "#dbeafe",
                 border: "none",
@@ -329,6 +362,7 @@ Make it exam-quality with real questions.`,
             </button>
             <button
               onClick={() => nav.navigate("progress")}
+              className="nav-progress-btn"
               style={{
                 background: theme.isDarkMode ? "#334155" : "#dbeafe",
                 border: "none",
@@ -344,6 +378,7 @@ Make it exam-quality with real questions.`,
             <button
               onClick={theme.toggleTheme}
               title="Toggle dark mode (Ctrl+D)"
+              className="nav-theme-btn"
               style={{
                 background: theme.isDarkMode ? "#334155" : "#dbeafe",
                 border: "none",
@@ -358,6 +393,7 @@ Make it exam-quality with real questions.`,
             </button>
             <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
               <div
+                className="nav-user-avatar"
                 style={{
                   width: 34,
                   height: 34,
@@ -382,6 +418,7 @@ Make it exam-quality with real questions.`,
             </div>
             <button
               onClick={auth.doLogout}
+              className="nav-logout"
               style={{
                 background: "none",
                 border: "1px solid #dbeafe",
