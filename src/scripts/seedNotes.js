@@ -3,6 +3,7 @@
  * Generates AI notes for all chapters in all subjects
  * Run with: npm run seed-notes
  */
+/* eslint-disable no-undef */
 
 import dotenv from "dotenv";
 import { fileURLToPath } from "url";

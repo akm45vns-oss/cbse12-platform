@@ -8,8 +8,8 @@ export function PaperView({ subject, paper, loading, loadMsg, loadEmoji, curricu
 
   // Track paper session
   useEffect(() => {
-    const sessionId = startSession(subject, "Sample Paper", "paper");
-    
+    startSession(subject, "Sample Paper", "paper");
+
     return () => {
       endSession(true); // Mark as completed when leaving paper view
     };

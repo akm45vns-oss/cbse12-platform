@@ -29,7 +29,7 @@ export function QuizView({
   // Track quiz session
   useEffect(() => {
     if (quiz.length > 0 && !loading) {
-      const sessionId = startSession(subject, chapter, "quiz");
+      startSession(subject, chapter, "quiz");
     }
   }, [quiz.length, loading, subject, chapter]);
 

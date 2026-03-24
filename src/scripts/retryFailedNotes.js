@@ -2,6 +2,7 @@
  * Retry Failed Notes
  * Regenerates only the chapters that failed in the seeding process
  */
+/* eslint-disable no-undef */
 
 import dotenv from "dotenv";
 import { fileURLToPath } from "url";

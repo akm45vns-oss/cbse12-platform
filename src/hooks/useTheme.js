@@ -28,14 +28,14 @@ export function useTheme() {
     }
   };
 
-  // Apply theme on mount
+  // Apply theme on mount and when it changes
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add("dark-mode");
     } else {
       document.documentElement.classList.remove("dark-mode");
     }
-  }, []);
+  }, [isDarkMode]);
 
   return {
     isDarkMode,

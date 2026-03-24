@@ -22,7 +22,7 @@ export function validatePasswordStrength(password) {
     errors.push("Password must contain at least one number");
   }
 
-  if (!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password)) {
+  if (!/[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(password)) {
     errors.push("Password must contain at least one special character (!@#$%^&* etc)");
   }
 
@@ -44,7 +44,7 @@ function calculateStrength(password) {
   if (/[A-Z]/.test(password)) strength += 15;
   if (/[a-z]/.test(password)) strength += 15;
   if (/[0-9]/.test(password)) strength += 15;
-  if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password)) strength += 20;
+  if (/[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(password)) strength += 20;
   if (!/(.)\1{2,}/.test(password)) strength += 5;
 
   if (strength >= 90) return { level: "Very Strong", color: "#16a34a", percent: 100 };

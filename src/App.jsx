@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
-import { useAuth, useNavigation, useProgress, useTheme, useKeyboardShortcuts } from "./hooks";
+import { useAuth, useNavigation, useProgress, useTheme } from "./hooks";
 import { callClaude, extractJSON } from "./utils/api";
-import { supabase, getChapterNotes } from "./utils/supabase";
+import { getChapterNotes } from "./utils/supabase";
 import { CURRICULUM, totalChapters } from "./constants/curriculum";
 import { SearchBar } from "./components/common/SearchBar";
 import { recordDailyActivity } from "./utils/loginStreak";
-import { recordChapterAccess } from "./utils/recentChapters";
 import { recordQuizSubmission } from "./utils/weakTopics";
 import {
   AuthView,
@@ -192,7 +191,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
         4000
       );
       setPaper(text);
-    } catch (e) {
+    } catch {
       setPaper("❌ Error generating sample paper. Please try again.");
     }
     setLoading(false);

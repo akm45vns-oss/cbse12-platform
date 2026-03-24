@@ -5,10 +5,10 @@ import { useState, useEffect } from "react";
 export function StatsView() {
   const [stats, setStats] = useState(null);
   const [recommendations, setRecommendations] = useState([]);
-  const [timeRange, setTimeRange] = useState("all"); // all, week, month
 
   useEffect(() => {
     const overallStats = getOverallStats();
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setStats(overallStats);
     setRecommendations(getStudyRecommendations(overallStats));
   }, []);

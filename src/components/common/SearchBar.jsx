@@ -8,6 +8,7 @@ export function SearchBar({ onSelectChapter, onSelectSubject }) {
 
   useEffect(() => {
     if (!query.trim()) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setResults([]);
       return;
     }

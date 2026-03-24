@@ -141,7 +141,8 @@ export const FILE_UPLOAD_CONFIG = {
   scanForMalware: true,
 
   // Store in secure directory
-  uploadDir: process.env.UPLOAD_DIR || "./uploads",
+  // eslint-disable-next-line no-undef
+  uploadDir: (typeof process !== 'undefined' && process.env?.UPLOAD_DIR) || "./uploads",
 };
 
 // ============================================================
@@ -156,7 +157,8 @@ export const SESSION_CONFIG = {
   refreshInterval: 15 * 60 * 1000,
 
   // Use secure cookies only
-  secure: process.env.NODE_ENV === "production",
+  // eslint-disable-next-line no-undef
+  secure: typeof process !== 'undefined' && process.env?.NODE_ENV === "production",
 
   // HttpOnly prevents JavaScript access to cookie
   httpOnly: true,
@@ -274,7 +276,8 @@ export function validateOrigin(origin) {
 }
 
 export function isSecureConnection(protocol) {
-  return protocol === "https" || process.env.NODE_ENV === "development";
+  // eslint-disable-next-line no-undef
+  return protocol === "https" || (typeof process !== 'undefined' && process.env?.NODE_ENV === "development");
 }
 
 export function sanitizeHeaderValue(value) {

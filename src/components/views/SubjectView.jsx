@@ -16,8 +16,9 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
         newBookmarks[ch] = isBookmarked(subject, ch);
       });
     });
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setBookmarks(newBookmarks);
-  }, [subject, S.units]);
+  }, [subject]);
 
   const handleBookmarkClick = (e, chapter) => {
     e.stopPropagation();
