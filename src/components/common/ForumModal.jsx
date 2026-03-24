@@ -101,15 +101,15 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
           display: "flex",
           flexDirection: "column",
           boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
-          border: "1.5px solid #fce7f3",
+          border: "1.5px solid #dbeafe",
         }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
         <div
           style={{
-            background: "linear-gradient(135deg, #fff0f5, #fce7f3)",
-            borderBottom: "1.5px solid #fce7f3",
+            background: "linear-gradient(135deg, #f0f9fc, #dbeafe)",
+            borderBottom: "1.5px solid #dbeafe",
             padding: "20px",
             display: "flex",
             justifyContent: "space-between",
@@ -118,10 +118,10 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
           }}
         >
           <div>
-            <h2 style={{ fontSize: 18, fontWeight: 900, color: "#831843", margin: 0, marginBottom: 4 }}>
+            <h2 style={{ fontSize: 18, fontWeight: 900, color: "#064e78", margin: 0, marginBottom: 4 }}>
               💬 Community Q&A Forum
             </h2>
-            <div style={{ fontSize: 12, color: "#be185d", fontWeight: 600 }}>
+            <div style={{ fontSize: 12, color: "#0369a1", fontWeight: 600 }}>
               {stats.totalQuestions} Questions • {stats.totalAnswers} Answers
             </div>
           </div>
@@ -132,7 +132,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
               border: "none",
               fontSize: 24,
               cursor: "pointer",
-              color: "#831843",
+              color: "#064e78",
             }}
           >
             ✕
@@ -145,7 +145,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
             display: "flex",
             gap: 12,
             padding: "16px 20px",
-            borderBottom: "1px solid #fce7f3",
+            borderBottom: "1px solid #dbeafe",
             overflowX: "auto",
           }}
         >
@@ -169,12 +169,12 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                   }}
                   style={{
                     background:
-                      activeTab === tab.id ? "#ec4899" : "transparent",
-                    color: activeTab === tab.id ? "white" : "#be185d",
+                      activeTab === tab.id ? "#0891b2" : "transparent",
+                    color: activeTab === tab.id ? "white" : "#0369a1",
                     border:
                       activeTab === tab.id
                         ? "none"
-                        : "1.5px solid #fce7f3",
+                        : "1.5px solid #dbeafe",
                     borderRadius: 10,
                     padding: "8px 14px",
                     fontWeight: 700,
@@ -211,7 +211,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                     width: "100%",
                     padding: "10px 12px",
                     borderRadius: 10,
-                    border: "1.5px solid #fce7f3",
+                    border: "1.5px solid #dbeafe",
                     marginBottom: 16,
                     fontSize: 13,
                     fontWeight: 500,
@@ -226,7 +226,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                   style={{
                     width: "100%",
                     padding: 12,
-                    background: "linear-gradient(135deg, #ec4899, #db2777)",
+                    background: "linear-gradient(135deg, #0891b2, #0284c7)",
                     border: "none",
                     borderRadius: 10,
                     color: "white",
@@ -244,8 +244,8 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
               {showPostForm && (
                 <div
                   style={{
-                    background: "#fff0f5",
-                    border: "1.5px solid #fce7f3",
+                    background: "#f0f9fc",
+                    border: "1.5px solid #dbeafe",
                     borderRadius: 12,
                     padding: 14,
                     marginBottom: 16,
@@ -259,7 +259,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                       width: "100%",
                       padding: 10,
                       borderRadius: 8,
-                      border: "1px solid #fce7f3",
+                      border: "1px solid #dbeafe",
                       fontSize: 13,
                       fontFamily: "inherit",
                       minHeight: 80,
@@ -278,7 +278,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                       style={{
                         flex: 1,
                         padding: 8,
-                        background: "#ec4899",
+                        background: "#0891b2",
                         border: "none",
                         borderRadius: 8,
                         color: "white",
@@ -299,9 +299,9 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                         flex: 1,
                         padding: 8,
                         background: "white",
-                        border: "1.5px solid #fce7f3",
+                        border: "1.5px solid #dbeafe",
                         borderRadius: 8,
-                        color: "#be185d",
+                        color: "#0369a1",
                         fontWeight: 700,
                         fontSize: 12,
                         cursor: "pointer",
@@ -338,7 +338,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                       }}
                       style={{
                         background: "white",
-                        border: "1.5px solid #fce7f3",
+                        border: "1.5px solid #dbeafe",
                         borderRadius: 10,
                         padding: 12,
                         textAlign: "left",
@@ -348,10 +348,10 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                       }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.borderColor = "#f9a8d4";
-                        e.currentTarget.style.background = "#fff0f5";
+                        e.currentTarget.style.background = "#f0f9fc";
                       }}
                       onMouseLeave={(e) => {
-                        e.currentTarget.style.borderColor = "#fce7f3";
+                        e.currentTarget.style.borderColor = "#dbeafe";
                         e.currentTarget.style.background = "white";
                       }}
                     >
@@ -367,7 +367,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                             maxHeight: 100,
                             borderRadius: 6,
                             marginBottom: 8,
-                            border: "1px solid #fce7f3",
+                            border: "1px solid #dbeafe",
                           }}
                         />
                       )}
@@ -384,7 +384,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                         {q.subject && (
                           <span
                             style={{
-                              background: "#fce7f3",
+                              background: "#dbeafe",
                               padding: "2px 6px",
                               borderRadius: 4,
                             }}
@@ -395,7 +395,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                         {q.chapter && (
                           <span
                             style={{
-                              background: "#fce7f3",
+                              background: "#dbeafe",
                               padding: "2px 6px",
                               borderRadius: 4,
                             }}
@@ -420,7 +420,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                 style={{
                   background: "transparent",
                   border: "none",
-                  color: "#ec4899",
+                  color: "#0891b2",
                   fontSize: 12,
                   fontWeight: 700,
                   cursor: "pointer",
@@ -432,8 +432,8 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
 
               <div
                 style={{
-                  background: "linear-gradient(135deg, #fff0f5, #fce7f3)",
-                  border: "1.5px solid #fce7f3",
+                  background: "linear-gradient(135deg, #f0f9fc, #dbeafe)",
+                  border: "1.5px solid #dbeafe",
                   borderRadius: 12,
                   padding: 14,
                   marginBottom: 16,
@@ -451,7 +451,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                       maxHeight: 300,
                       borderRadius: 8,
                       marginBottom: 12,
-                      border: "1.5px solid #fce7f3",
+                      border: "1.5px solid #dbeafe",
                     }}
                   />
                 )}
@@ -478,7 +478,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                   style={{
                     fontSize: 13,
                     fontWeight: 800,
-                    color: "#831843",
+                    color: "#064e78",
                     marginBottom: 10,
                   }}
                 >
@@ -538,7 +538,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                           style={{
                             background: "none",
                             border: "none",
-                            color: "#ec4899",
+                            color: "#0891b2",
                             cursor: "pointer",
                             fontWeight: 600,
                             fontSize: 11,
@@ -555,8 +555,8 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
               {/* Post Answer Form */}
               <div
                 style={{
-                  background: "#fff0f5",
-                  border: "1.5px solid #fce7f3",
+                  background: "#f0f9fc",
+                  border: "1.5px solid #dbeafe",
                   borderRadius: 12,
                   padding: 14,
                 }}
@@ -565,7 +565,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                   style={{
                     fontSize: 12,
                     fontWeight: 700,
-                    color: "#831843",
+                    color: "#064e78",
                     marginBottom: 10,
                   }}
                 >
@@ -579,7 +579,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                     width: "100%",
                     padding: 10,
                     borderRadius: 8,
-                    border: "1px solid #fce7f3",
+                    border: "1px solid #dbeafe",
                     fontSize: 12,
                     fontFamily: "inherit",
                     minHeight: 80,
@@ -598,7 +598,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                   style={{
                     width: "100%",
                     padding: 10,
-                    background: "#ec4899",
+                    background: "#0891b2",
                     border: "none",
                     borderRadius: 8,
                     color: "white",

@@ -234,7 +234,7 @@ Make it exam-quality with real questions.`,
       style={{
         minHeight: "100vh",
         width: "100%",
-        background: "#fff0f5",
+        background: "#f0f9fc",
         fontFamily: "'Segoe UI', system-ui, sans-serif",
       }}
     >
@@ -244,7 +244,7 @@ Make it exam-quality with real questions.`,
       <nav
         style={{
           background: theme.isDarkMode ? "#1e293b" : "white",
-          borderBottom: theme.isDarkMode ? "1px solid #334155" : "1px solid #fce7f3",
+          borderBottom: theme.isDarkMode ? "1px solid #334155" : "1px solid #dbeafe",
           position: "sticky",
           top: 0,
           zIndex: 100,
@@ -258,11 +258,11 @@ Make it exam-quality with real questions.`,
               <button
                 onClick={nav.goBack}
                 style={{
-                  background: theme.isDarkMode ? "#334155" : "#fce7f3",
+                  background: theme.isDarkMode ? "#334155" : "#dbeafe",
                   border: "none",
                   borderRadius: 8,
                   padding: "6px 12px",
-                  color: theme.isDarkMode ? "#f472b4" : "#be185d",
+                  color: theme.isDarkMode ? "#06b6d4" : "#0369a1",
                   fontWeight: 600,
                   fontSize: 13,
                   display: "flex",
@@ -281,7 +281,7 @@ Make it exam-quality with real questions.`,
                 gap: 8,
                 background: "none",
                 border: "none",
-                color: "#ec4899",
+                color: "#0891b2",
                 fontWeight: 800,
                 fontSize: 18,
               }}
@@ -314,11 +314,11 @@ Make it exam-quality with real questions.`,
             <button
               onClick={() => nav.navigate("stats")}
               style={{
-                background: theme.isDarkMode ? "#334155" : "#fce7f3",
+                background: theme.isDarkMode ? "#334155" : "#dbeafe",
                 border: "none",
                 borderRadius: 8,
                 padding: "6px 14px",
-                color: theme.isDarkMode ? "#f472b4" : "#be185d",
+                color: theme.isDarkMode ? "#06b6d4" : "#0369a1",
                 fontWeight: 600,
                 fontSize: 13,
               }}
@@ -328,11 +328,11 @@ Make it exam-quality with real questions.`,
             <button
               onClick={() => nav.navigate("progress")}
               style={{
-                background: theme.isDarkMode ? "#334155" : "#fce7f3",
+                background: theme.isDarkMode ? "#334155" : "#dbeafe",
                 border: "none",
                 borderRadius: 8,
                 padding: "6px 14px",
-                color: theme.isDarkMode ? "#f472b4" : "#be185d",
+                color: theme.isDarkMode ? "#06b6d4" : "#0369a1",
                 fontWeight: 600,
                 fontSize: 13,
               }}
@@ -343,11 +343,11 @@ Make it exam-quality with real questions.`,
               onClick={theme.toggleTheme}
               title="Toggle dark mode (Ctrl+D)"
               style={{
-                background: theme.isDarkMode ? "#334155" : "#fce7f3",
+                background: theme.isDarkMode ? "#334155" : "#dbeafe",
                 border: "none",
                 borderRadius: 8,
                 padding: "6px 12px",
-                color: theme.isDarkMode ? "#f472b4" : "#be185d",
+                color: theme.isDarkMode ? "#06b6d4" : "#0369a1",
                 fontWeight: 600,
                 fontSize: 14,
               }}
@@ -360,7 +360,7 @@ Make it exam-quality with real questions.`,
                   width: 34,
                   height: 34,
                   borderRadius: "50%",
-                  background: "linear-gradient(135deg,#ec4899,#db2777)",
+                  background: "linear-gradient(135deg,#0891b2,#0284c7)",
                   color: "white",
                   display: "flex",
                   alignItems: "center",
@@ -382,10 +382,10 @@ Make it exam-quality with real questions.`,
               onClick={auth.doLogout}
               style={{
                 background: "none",
-                border: "1px solid #fce7f3",
+                border: "1px solid #dbeafe",
                 borderRadius: 8,
                 padding: "6px 12px",
-                color: "#f472b4",
+                color: "#06b6d4",
                 fontSize: 13,
               }}
             >
@@ -535,7 +535,7 @@ Make it exam-quality with real questions.`,
       <footer
         style={{
           marginTop: 24,
-          background: theme.isDarkMode ? "#1e293b" : "#831843",
+          background: theme.isDarkMode ? "#1e293b" : "#064e78",
           borderTop: theme.isDarkMode ? "1px solid #334155" : "1px solid #9d174d",
           padding: "12px 16px",
           transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -555,7 +555,7 @@ Make it exam-quality with real questions.`,
           <span
             style={{
               fontSize: 9,
-              color: "#fce7f3",
+              color: "#dbeafe",
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: "0.1em",
@@ -588,12 +588,12 @@ Make it exam-quality with real questions.`,
                 transition: "color 0.2s",
               }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "#fda4af")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#fce7f3")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#dbeafe")}
             >
               {label}
             </a>
           ))}
-          <span style={{ fontSize: 10, color: "#fce7f3", opacity: 0.7 }}>
+          <span style={{ fontSize: 10, color: "#dbeafe", opacity: 0.7 }}>
             © 2026 · AkmEdu · Smart Study Platform
           </span>
         </div>

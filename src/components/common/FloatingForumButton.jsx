@@ -16,7 +16,7 @@ export function FloatingForumButton({ currentSubject = "", currentChapter = "" }
           width: 56,
           height: 56,
           borderRadius: "50%",
-          background: "linear-gradient(135deg, #ec4899, #db2777)",
+          background: "linear-gradient(135deg, #0891b2, #0284c7)",
           border: "none",
           fontSize: 24,
           cursor: "pointer",

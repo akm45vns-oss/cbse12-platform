@@ -33,7 +33,7 @@ export function LoadingScreen({ message, emoji = "🔄" }) {
               width: 8,
               height: 8,
               borderRadius: "50%",
-              background: "#ec4899",
+              background: "#0891b2",
               animation: `bounce 1.2s ${i * 0.2}s infinite`
             }}
           />

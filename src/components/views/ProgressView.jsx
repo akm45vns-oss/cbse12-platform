@@ -10,7 +10,7 @@ export function ProgressView({ stats, overallPct, totalChapters, curriculum, pro
       {/* Summary */}
       <div className="prog-summary-grid">
         {[
-          { v: overallPct + "%", label: "Overall Completion", c: "linear-gradient(135deg,#ec4899,#db2777)", emoji: "🎯" },
+          { v: overallPct + "%", label: "Overall Completion", c: "linear-gradient(135deg,#0891b2,#0284c7)", emoji: "🎯" },
           { v: stats.notesRead, label: "Notes Read", c: "linear-gradient(135deg,#0ea5e9,#3b82f6)", emoji: "📝" },
           { v: stats.quizDone, label: "Quizzes Completed", c: "linear-gradient(135deg,#10b981,#16a34a)", emoji: "✅" },
           { v: totalChapters, label: "Total Chapters", c: "linear-gradient(135deg,#f59e0b,#d97706)", emoji: "📚" },
@@ -55,7 +55,7 @@ export function ProgressView({ stats, overallPct, totalChapters, curriculum, pro
                       const best = qData?.best;
                       const attempts = qData?.attempts?.length || 0;
                       return (
-                        <div key={ci} style={{ background: "#fff0f5", borderRadius: 10, padding: "8px 12px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 8 }}>
+                        <div key={ci} style={{ background: "#f0f9fc", borderRadius: 10, padding: "8px 12px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 8 }}>
                           <span style={{ fontSize: 12, color: "#334155", flex: 1, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{ch}</span>
                           <div style={{ display: "flex", gap: 6, alignItems: "center", flexShrink: 0 }}>
                             <span title="Notes">{nRead ? "📖" : "◻️"}</span>

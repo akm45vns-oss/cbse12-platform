@@ -427,7 +427,7 @@ export const globalStyles = `
   .prose-notes-block { 
     background: linear-gradient(135deg, rgba(255, 248, 251, 0.95) 0%, rgba(255, 240, 245, 0.95) 100%); 
     border-radius: 20px; 
-    border: 1.5px solid #fce7f3; 
+    border: 1.5px solid #dbeafe; 
     padding: 48px 56px; 
     box-shadow: 0 8px 32px rgba(236, 72, 153, 0.1), 0 2px 8px rgba(0, 0, 0, 0.04);
     overflow-x: auto;
@@ -436,7 +436,7 @@ export const globalStyles = `
   .prose-notes h1 { 
     font-size: 28px; 
     font-weight: 900; 
-    color: #831843; 
+    color: #064e78; 
     margin: 0 0 8px; 
     letter-spacing: -0.02em; 
     line-height: 1.1;
@@ -444,11 +444,11 @@ export const globalStyles = `
   .prose-notes h2 { 
     font-size: 16px; 
     font-weight: 800; 
-    color: #be185d; 
+    color: #0369a1; 
     margin: 32px 0 14px; 
     padding: 12px 18px; 
     background: linear-gradient(90deg, rgba(252, 231, 243, 0.8), rgba(255, 240, 245, 0.8));
-    border-left: 4px solid #ec4899;
+    border-left: 4px solid #0891b2;
     border-radius: 0 12px 12px 0;
     text-transform: uppercase; 
     letter-spacing: 0.08em;
@@ -464,11 +464,11 @@ export const globalStyles = `
   }
   .prose-notes hr { 
     border: none; 
-    border-top: 2px solid #fce7f3; 
+    border-top: 2px solid #dbeafe; 
     margin: 24px 0;
   }
   .prose-notes strong { 
-    color: #831843; 
+    color: #064e78; 
     font-weight: 700; 
   }
   .prose-notes li { 
@@ -480,24 +480,24 @@ export const globalStyles = `
     margin: 10px 0 16px; 
   }
   .prose-notes code { 
-    background: linear-gradient(135deg, #fdf2f8, #fff0f5);
-    color: #be185d; 
+    background: linear-gradient(135deg, #fdf2f8, #f0f9fc);
+    color: #0369a1; 
     padding: 2px 8px; 
     border-radius: 6px; 
     font-size: 13px; 
     font-family: 'Courier New', monospace;
     font-weight: 500;
-    border: 1px solid #fce7f3;
+    border: 1px solid #dbeafe;
   }
   .prose-notes blockquote { 
     border-left: 4px solid #f9a8d4; 
-    background: linear-gradient(135deg, #fff0f5, #fff8fb);
+    background: linear-gradient(135deg, #f0f9fc, #fff8fb);
     padding: 12px 18px; 
     border-radius: 0 12px 12px 0; 
     margin: 16px 0; 
     color: #9d174d; 
     font-style: italic;
-    border: 1px solid #fce7f3;
+    border: 1px solid #dbeafe;
     border-left: 4px solid #f9a8d4;
   }
   
@@ -510,20 +510,20 @@ export const globalStyles = `
     background: rgba(252, 231, 243, 0.5); 
   }
   ::-webkit-scrollbar-thumb { 
-    background: linear-gradient(180deg, #f472b4, #ec4899);
+    background: linear-gradient(180deg, #06b6d4, #0891b2);
     border-radius: 4px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #ec4899, #db2777);
+    background: linear-gradient(180deg, #0891b2, #0284c7);
   }
 `;
 
 
 export const authStyles = `
-  .auth-input { width: 100%; padding: 11px 14px; border: 1.5px solid #fbcfe8; border-radius: 10px; background: #fff0f5; color: #831843; font-size: 14px; outline: none; transition: border-color 0.2s; }
-  .auth-input:focus { border-color: #ec4899; }
+  .auth-input { width: 100%; padding: 11px 14px; border: 1.5px solid #fbcfe8; border-radius: 10px; background: #f0f9fc; color: #064e78; font-size: 14px; outline: none; transition: border-color 0.2s; }
+  .auth-input:focus { border-color: #0891b2; }
   .auth-input::placeholder { color: #f9a8d4; }
-  .auth-btn { width: 100%; padding: 12px; border: none; border-radius: 10px; background: linear-gradient(135deg, #ec4899, #db2777); color: white; font-size: 15px; font-weight: 700; letter-spacing: 0.02em; transition: opacity 0.2s, transform 0.1s; }
+  .auth-btn { width: 100%; padding: 12px; border: none; border-radius: 10px; background: linear-gradient(135deg, #0891b2, #0284c7); color: white; font-size: 15px; font-weight: 700; letter-spacing: 0.02em; transition: opacity 0.2s, transform 0.1s; }
   .auth-btn:hover { opacity: 0.9; transform: translateY(-1px); }
   .auth-btn:active { transform: translateY(0); }
   .tab-btn { flex: 1; padding: 9px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; transition: all 0.2s; }

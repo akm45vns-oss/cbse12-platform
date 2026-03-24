@@ -61,7 +61,7 @@ export function SearchBar({ onSelectChapter, onSelectSubject }) {
             width: "100%",
             padding: "10px 14px",
             borderRadius: 10,
-            border: "1.5px solid #fce7f3",
+            border: "1.5px solid #dbeafe",
             fontSize: 13,
             fontWeight: 500,
             transition: "all 0.2s",
@@ -84,7 +84,7 @@ export function SearchBar({ onSelectChapter, onSelectSubject }) {
             left: 0,
             right: 0,
             background: "white",
-            border: "1.5px solid #fce7f3",
+            border: "1.5px solid #dbeafe",
             borderTop: "none",
             borderRadius: "0 0 10px 10px",
             boxShadow: "0 8px 20px rgba(236, 72, 153, 0.15)",
@@ -99,15 +99,15 @@ export function SearchBar({ onSelectChapter, onSelectSubject }) {
               onClick={() => handleSelectChapter(result.subject, result.chapter)}
               style={{
                 padding: "12px 14px",
-                borderBottom: idx < results.length - 1 ? "1px solid #fce7f3" : "none",
+                borderBottom: idx < results.length - 1 ? "1px solid #dbeafe" : "none",
                 cursor: "pointer",
                 transition: "background 0.2s",
                 background: "white",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.background = "#fff0f5")}
+              onMouseEnter={(e) => (e.currentTarget.style.background = "#f0f9fc")}
               onMouseLeave={(e) => (e.currentTarget.style.background = "white")}
             >
-              <div style={{ fontSize: 12, fontWeight: 700, color: "#be185d" }}>
+              <div style={{ fontSize: 12, fontWeight: 700, color: "#0369a1" }}>
                 {result.subject}
               </div>
               <div style={{ fontSize: 13, fontWeight: 600, color: "#1e293b", marginTop: 2 }}>
@@ -126,7 +126,7 @@ export function SearchBar({ onSelectChapter, onSelectSubject }) {
             left: 0,
             right: 0,
             background: "white",
-            border: "1.5px solid #fce7f3",
+            border: "1.5px solid #dbeafe",
             borderTop: "none",
             borderRadius: "0 0 10px 10px",
             padding: "16px",

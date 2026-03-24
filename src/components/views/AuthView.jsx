@@ -21,7 +21,7 @@ export function AuthView({
   const [showPasswordHint, setShowPasswordHint] = useState(false);
   const passwordValidation = authTab === "register" ? validatePasswordStrength(pass) : null;
   return (
-    <div style={{ minHeight: "100vh", width: "100%", background: "#fff0f5", fontFamily: "'Segoe UI', system-ui, sans-serif" }}>
+    <div style={{ minHeight: "100vh", width: "100%", background: "#f0f9fc", fontFamily: "'Segoe UI', system-ui, sans-serif" }}>
       <style>{`
         * { box-sizing: border-box; }
         input { font-family: inherit; }
@@ -31,14 +31,14 @@ export function AuthView({
           border: 1.5px solid rgba(236, 72, 153, 0.2); 
           border-radius: 12px; 
           background: rgba(255, 255, 255, 0.8); 
-          color: #831843; 
+          color: #064e78; 
           font-size: 14px; 
           outline: none; 
           transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
           backdrop-filter: blur(10px);
         }
         .auth-input:focus { 
-          border-color: #ec4899;
+          border-color: #0891b2;
           background: rgba(255, 255, 255, 1);
           box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
         }
@@ -48,7 +48,7 @@ export function AuthView({
           padding: 13px 18px; 
           border: none; 
           border-radius: 12px; 
-          background: linear-gradient(135deg, #ec4899 0%, #db2777 100%); 
+          background: linear-gradient(135deg, #0891b2 0%, #0284c7 100%); 
           color: white; 
           font-size: 15px; 
           font-weight: 700; 
@@ -88,7 +88,7 @@ export function AuthView({
         .auth-wrap { display: flex; flex-direction: row; min-height: 100vh; }
         .auth-left { 
           flex: 1; 
-          background: linear-gradient(135deg, #fce4ec 0%, #fdf2f8 40%, #fff0f5 100%); 
+          background: linear-gradient(135deg, #fce4ec 0%, #fdf2f8 40%, #f0f9fc 100%); 
           display: flex; 
           flex-direction: column; 
           justify-content: center; 
@@ -133,14 +133,14 @@ export function AuthView({
       <div className="auth-wrap">
         {/* ===== LEFT PANEL ===== */}
         <div className="auth-left">
-          <div style={{ pointerEvents: "none", position: "absolute", top: -100, left: -100, width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(236,72,153,0.18) 0%, transparent 70%)", animation: "glow 4s ease-in-out infinite" }} />
+          <div style={{ pointerEvents: "none", position: "absolute", top: -100, left: -100, width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(8,145,178,0.18) 0%, transparent 70%)", animation: "glow 4s ease-in-out infinite" }} />
           <div style={{ pointerEvents: "none", position: "absolute", bottom: -80, right: -80, width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(244,114,182,0.14) 0%, transparent 70%)", animation: "glow 5s ease-in-out infinite 1s" }} />
           <div style={{ marginBottom: 48 }}>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(236,72,153,0.12)", border: "1.5px solid rgba(236,72,153,0.25)", borderRadius: 99, padding: "9px 20px", marginBottom: 12, boxShadow: "0 4px 16px rgba(236,72,153,0.12)" }}>
-              <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#ec4899", display: "inline-block", boxShadow: "0 0 10px #ec4899, 0 0 20px rgba(236,72,153,0.4)" }} />
-              <span style={{ fontSize: 11, color: "#be185d", fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase" }}>Developer</span>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(8,145,178,0.12)", border: "1.5px solid rgba(8,145,178,0.25)", borderRadius: 99, padding: "9px 20px", marginBottom: 12, boxShadow: "0 4px 16px rgba(8,145,178,0.12)" }}>
+              <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#0891b2", display: "inline-block", boxShadow: "0 0 10px #0891b2, 0 0 20px rgba(8,145,178,0.4)" }} />
+              <span style={{ fontSize: 11, color: "#0369a1", fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase" }}>Developer</span>
               <span style={{ color: "rgba(190,24,93,0.3)" }}>·</span>
-              <span style={{ fontSize: 13, color: "#831843", fontWeight: 900, letterSpacing: "0.02em", textTransform: "uppercase" }}>Ayush Kumar Maurya</span>
+              <span style={{ fontSize: 13, color: "#064e78", fontWeight: 900, letterSpacing: "0.02em", textTransform: "uppercase" }}>Ayush Kumar Maurya</span>
             </div>
             <div style={{ display: "flex", gap: 10 }}>
               {[
@@ -149,9 +149,9 @@ export function AuthView({
                 { href: "https://www.instagram.com/ayush.maurya45/", label: "Instagram", emoji: "📸" },
               ].map(({ href, label, emoji }) => (
                 <a key={label} href={href} target="_blank" rel="noopener noreferrer"
-                  style={{ display: "inline-flex", alignItems: "center", gap: 7, background: "rgba(236,72,153,0.08)", border: "1.5px solid rgba(236,72,153,0.2)", borderRadius: 99, padding: "7px 16px", color: "#be185d", fontSize: 12, fontWeight: 700, textDecoration: "none", transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)", cursor: "pointer" }}
-                  onMouseEnter={e => { e.currentTarget.style.background = "rgba(236,72,153,0.16)"; e.currentTarget.style.borderColor = "rgba(236,72,153,0.4)"; e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 20px rgba(236,72,153,0.2)"; }}
-                  onMouseLeave={e => { e.currentTarget.style.background = "rgba(236,72,153,0.08)"; e.currentTarget.style.borderColor = "rgba(236,72,153,0.2)"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}>
+                  style={{ display: "inline-flex", alignItems: "center", gap: 7, background: "rgba(8,145,178,0.08)", border: "1.5px solid rgba(8,145,178,0.2)", borderRadius: 99, padding: "7px 16px", color: "#0369a1", fontSize: 12, fontWeight: 700, textDecoration: "none", transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)", cursor: "pointer" }}
+                  onMouseEnter={e => { e.currentTarget.style.background = "rgba(8,145,178,0.16)"; e.currentTarget.style.borderColor = "rgba(8,145,178,0.4)"; e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 20px rgba(8,145,178,0.2)"; }}
+                  onMouseLeave={e => { e.currentTarget.style.background = "rgba(8,145,178,0.08)"; e.currentTarget.style.borderColor = "rgba(8,145,178,0.2)"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}>
                   <span>{emoji}</span>
                   {label}
                 </a>
@@ -162,9 +162,9 @@ export function AuthView({
           <div style={{ animation: "float 6s ease-in-out infinite", marginBottom: 14 }}>
             <span style={{ fontSize: 64 }}>🎓</span>
           </div>
-          <h1 className="auth-title" style={{ color: "#831843", fontWeight: 900, margin: "0 0 12px", letterSpacing: "-0.03em", lineHeight: 1.15 }}>
+          <h1 className="auth-title" style={{ color: "#064e78", fontWeight: 900, margin: "0 0 12px", letterSpacing: "-0.03em", lineHeight: 1.15 }}>
             AkmEdu<br/>
-            <span style={{ background: "linear-gradient(135deg, #ec4899 0%, #f472b4 50%, #f9a8d4 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Smart Study Platform</span>
+            <span style={{ background: "linear-gradient(135deg, #0891b2 0%, #06b6d4 50%, #f9a8d4 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Smart Study Platform</span>
           </h1>
           <p style={{ color: "#9d174d", fontSize: 16, lineHeight: 1.8, marginBottom: 44, maxWidth: 500, fontWeight: 500 }}>
             Complete study preparation for all exams. Comprehensive notes, 50 practice questions per chapter, sample papers and progress tracking.
@@ -179,11 +179,11 @@ export function AuthView({
               { emoji: "🏢", name: "Business" }, { emoji: "🏛️", name: "History" },
               { emoji: "🗳️", name: "Pol. Science" }, { emoji: "🏃", name: "Phy. Ed." },
             ].map(({ emoji, name }) => (
-              <div key={name} style={{ background: "linear-gradient(135deg, rgba(255,255,255,0.4), rgba(255,240,245,0.4))", border: "1.5px solid rgba(236,72,153,0.2)", borderRadius: 12, padding: "10px 8px", textAlign: "center", transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)", cursor: "pointer" }}
-                onMouseEnter={e => { e.currentTarget.style.background = "linear-gradient(135deg, rgba(255,255,255,0.6), rgba(255,240,245,0.6))"; e.currentTarget.style.borderColor = "rgba(236,72,153,0.4)"; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 8px 20px rgba(236,72,153,0.15)"; }}
-                onMouseLeave={e => { e.currentTarget.style.background = "linear-gradient(135deg, rgba(255,255,255,0.4), rgba(255,240,245,0.4))"; e.currentTarget.style.borderColor = "rgba(236,72,153,0.2)"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}>
+              <div key={name} style={{ background: "linear-gradient(135deg, rgba(255,255,255,0.4), rgba(240,249,252,0.4))", border: "1.5px solid rgba(8,145,178,0.2)", borderRadius: 12, padding: "10px 8px", textAlign: "center", transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)", cursor: "pointer" }}
+                onMouseEnter={e => { e.currentTarget.style.background = "linear-gradient(135deg, rgba(255,255,255,0.6), rgba(240,249,252,0.6))"; e.currentTarget.style.borderColor = "rgba(8,145,178,0.4)"; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 8px 20px rgba(8,145,178,0.15)"; }}
+                onMouseLeave={e => { e.currentTarget.style.background = "linear-gradient(135deg, rgba(255,255,255,0.4), rgba(240,249,252,0.4))"; e.currentTarget.style.borderColor = "rgba(8,145,178,0.2)"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}>
                 <div style={{ fontSize: 20, marginBottom: 4 }}>{emoji}</div>
-                <div style={{ color: "#831843", fontWeight: 800, fontSize: 12, letterSpacing: "0.02em" }}>{name}</div>
+                <div style={{ color: "#064e78", fontWeight: 800, fontSize: 12, letterSpacing: "0.02em" }}>{name}</div>
               </div>
             ))}
           </div>
@@ -196,7 +196,7 @@ export function AuthView({
               { icon: "📊", text: "Individual Progress Tracking per Subject" },
             ].map(({ icon, text }) => (
               <div key={text} style={{ display: "flex", alignItems: "flex-start", gap: 14 }}>
-                <div style={{ width: 36, height: 36, borderRadius: 10, background: "linear-gradient(135deg, rgba(236,72,153,0.12), rgba(244,114,182,0.08))", border: "1.5px solid rgba(236,72,153,0.2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, transition: "all 0.3s" }}>
+                <div style={{ width: 36, height: 36, borderRadius: 10, background: "linear-gradient(135deg, rgba(8,145,178,0.12), rgba(244,114,182,0.08))", border: "1.5px solid rgba(8,145,178,0.2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, transition: "all 0.3s" }}>
                   {icon}
                 </div>
                 <span style={{ color: "#9d174d", fontSize: 14, fontWeight: 600, lineHeight: 1.6 }}>{text}</span>
@@ -209,7 +209,7 @@ export function AuthView({
         <div className="auth-right">
           <div style={{ width: "100%" }}>
             <div style={{ marginBottom: 32 }}>
-              <h2 style={{ color: "#831843", fontSize: 24, fontWeight: 900, margin: "0 0 5px", letterSpacing: "-0.02em" }}>
+              <h2 style={{ color: "#064e78", fontSize: 24, fontWeight: 900, margin: "0 0 5px", letterSpacing: "-0.02em" }}>
                 {authTab === "login" ? "Welcome back 👋" : "Create Account ✨"}
               </h2>
               <p style={{ color: "#9d174d", fontSize: 14, margin: 0, fontWeight: 500 }}>
@@ -221,7 +221,7 @@ export function AuthView({
             <div style={{ display: "flex", background: "rgba(15, 23, 42, 0.05)", border: "1.5px solid rgba(236, 72, 153, 0.15)", borderRadius: 14, padding: 5, marginBottom: 32, backdropFilter: "blur(10px)" }}>
               {[["login", "🔑 Sign In"], ["register", "✨ Register"]].map(([t, label]) => (
                 <button key={t} className="tab-btn" onClick={() => { setAuthTab(t); }}
-                  style={{ background: authTab === t ? "linear-gradient(135deg, #ec4899, #db2777)" : "transparent", color: authTab === t ? "white" : "#9d174d", boxShadow: authTab === t ? "0 4px 12px rgba(236, 72, 153, 0.2)" : "none" }}>
+                  style={{ background: authTab === t ? "linear-gradient(135deg, #0891b2, #0284c7)" : "transparent", color: authTab === t ? "white" : "#9d174d", boxShadow: authTab === t ? "0 4px 12px rgba(236, 72, 153, 0.2)" : "none" }}>
                   {label}
                 </button>
               ))}
@@ -229,20 +229,20 @@ export function AuthView({
 
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               <div>
-                <label style={{ color: "#be185d", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Username</label>
+                <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Username</label>
                 <input className="auth-input" value={uname} onChange={e => setUname(e.target.value)}
                   placeholder={authTab === "register" ? "Choose a unique username" : "Enter your username"}
                   onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
               </div>
               <div>
-                <label style={{ color: "#be185d", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Password</label>
+                <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Password</label>
                 <div style={{ position: "relative" }}>
                   <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)}
                     placeholder={authTab === "register" ? "Min 8 chars, mixed case, numbers, symbols" : "Enter your password"}
                     style={{ paddingRight: 48 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} 
                     onFocus={() => authTab === "register" && setShowPasswordHint(true)}
                     onBlur={() => setShowPasswordHint(false)} />
-                  <button onClick={() => setShowPass(s => !s)} style={{ position: "absolute", right: 14, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#be185d", fontSize: 18, cursor: "pointer", padding: "4px 8px" }}>
+                  <button onClick={() => setShowPass(s => !s)} style={{ position: "absolute", right: 14, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#0369a1", fontSize: 18, cursor: "pointer", padding: "4px 8px" }}>
                     {showPass ? "🙈" : "👁️"}
                   </button>
                 </div>
@@ -269,7 +269,7 @@ export function AuthView({
               </div>
               {authTab === "register" && (
                 <div>
-                  <label style={{ color: "#be185d", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Confirm Password</label>
+                  <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Confirm Password</label>
                   <input className="auth-input" type="password" value={pass2} onChange={e => setPass2(e.target.value)}
                     placeholder="Re-enter password" onKeyDown={e => e.key === "Enter" && doRegister()} />
                 </div>
@@ -284,7 +284,7 @@ export function AuthView({
 
             {authTab === "login" && (
               <p style={{ textAlign: "center", color: "#9d174d", fontSize: 14, marginTop: 22, marginBottom: 0, fontWeight: 500 }}>
-                New here? <button onClick={() => setAuthTab("register")} style={{ background: "none", border: "none", color: "#ec4899", fontWeight: 700, cursor: "pointer", fontSize: "inherit" }}>Create an account</button>
+                New here? <button onClick={() => setAuthTab("register")} style={{ background: "none", border: "none", color: "#0891b2", fontWeight: 700, cursor: "pointer", fontSize: "inherit" }}>Create an account</button>
               </p>
             )}
             <p style={{ textAlign: "center", color: "#cbd5e1", fontSize: 12, marginTop: 32, fontWeight: 500, letterSpacing: "0.04em" }}>AkmEdu • Smart Study Platform • 12 Subjects • All Chapters</p>

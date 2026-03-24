@@ -10,7 +10,7 @@ export function DashboardView({ stats, overallPct, currentUser, onSelectSubject,
   return (
     <div>
       <div style={{ marginBottom: 36 }}>
-        <h1 style={{ fontSize: "clamp(22px,5vw,28px)", fontWeight: 900, color: "#831843", margin: 0, letterSpacing: "-0.02em", lineHeight: 1.2 }}>Welcome back, <span style={{color: "#ec4899"}}>{currentUser}</span>! 👋</h1>
+        <h1 style={{ fontSize: "clamp(22px,5vw,28px)", fontWeight: 900, color: "#064e78", margin: 0, letterSpacing: "-0.02em", lineHeight: 1.2 }}>Welcome back, <span style={{color: "#0891b2"}}>{currentUser}</span>! 👋</h1>
         <p style={{ color: "#9d174d", marginTop: 8, fontSize: "clamp(14px,2.5vw,16px)", fontWeight: 500 }}>AkmEdu - Comprehensive Study Preparation · All Subjects</p>
       </div>
 
@@ -61,7 +61,7 @@ export function DashboardView({ stats, overallPct, currentUser, onSelectSubject,
       {/* Recent Chapters */}
       {recentChapters.length > 0 && (
         <div style={{ marginBottom: 28 }}>
-          <h3 style={{ fontSize: 14, fontWeight: 900, color: "#831843", marginBottom: 12, letterSpacing: "-0.01em" }}>
+          <h3 style={{ fontSize: 14, fontWeight: 900, color: "#064e78", marginBottom: 12, letterSpacing: "-0.01em" }}>
             📚 Recently Studied
           </h3>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: 10 }}>
@@ -73,7 +73,7 @@ export function DashboardView({ stats, overallPct, currentUser, onSelectSubject,
                   setTimeout(() => onSelectChapter(ch.chapter), 100);
                 }}
                 style={{
-                  background: "linear-gradient(135deg, #fff0f5, #fce7f3)",
+                  background: "linear-gradient(135deg, #f0f9fc, #dbeafe)",
                   border: "1.5px solid #f9a8d4",
                   borderRadius: 12,
                   padding: 12,
@@ -92,7 +92,7 @@ export function DashboardView({ stats, overallPct, currentUser, onSelectSubject,
                   e.currentTarget.style.boxShadow = "none";
                 }}
               >
-                <div style={{ fontSize: 11, color: "#be185d", fontWeight: 700, marginBottom: 4 }}>
+                <div style={{ fontSize: 11, color: "#0369a1", fontWeight: 700, marginBottom: 4 }}>
                   {ch.subject}
                 </div>
                 <div style={{ color: "#1e293b", fontWeight: 700, fontSize: 12 }}>
@@ -132,7 +132,7 @@ export function DashboardView({ stats, overallPct, currentUser, onSelectSubject,
       </div>
 
       {/* Subject Cards */}
-      <h2 style={{ fontSize: "clamp(14px, 3vw, 16px)", fontWeight: 800, color: "#831843", marginBottom: 20, marginTop: 40, textTransform: "uppercase", letterSpacing: "0.08em" }}>📚 All Subjects</h2>
+      <h2 style={{ fontSize: "clamp(14px, 3vw, 16px)", fontWeight: 800, color: "#064e78", marginBottom: 20, marginTop: 40, textTransform: "uppercase", letterSpacing: "0.08em" }}>📚 All Subjects</h2>
       <div className="dash-grid">
         {Object.entries(CURRICULUM).map(([s, d]) => {
           const st = stats.bySubject[s];

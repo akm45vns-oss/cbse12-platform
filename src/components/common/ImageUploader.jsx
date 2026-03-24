@@ -42,20 +42,20 @@ export function ImageUploader({ onImageUpload, maxSize = "10MB" }) {
             alignItems: "center",
             gap: 6,
             padding: "8px 12px",
-            background: "#fff0f5",
-            border: "1.5px solid #fce7f3",
+            background: "#f0f9fc",
+            border: "1.5px solid #dbeafe",
             borderRadius: 8,
             cursor: "pointer",
             fontSize: 12,
             fontWeight: 600,
-            color: "#be185d",
+            color: "#0369a1",
             transition: "all 0.2s",
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.background = "#fce7f3";
+            e.currentTarget.style.background = "#dbeafe";
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.background = "#fff0f5";
+            e.currentTarget.style.background = "#f0f9fc";
           }}
         >
           🖼️ Add Image
@@ -79,7 +79,7 @@ export function ImageUploader({ onImageUpload, maxSize = "10MB" }) {
               maxWidth: "200px",
               maxHeight: "150px",
               borderRadius: 8,
-              border: "1.5px solid #fce7f3",
+              border: "1.5px solid #dbeafe",
             }}
           />
         </div>
@@ -143,7 +143,7 @@ export function ImageUploader({ onImageUpload, maxSize = "10MB" }) {
           style={{
             marginTop: 8,
             fontSize: 12,
-            color: "#ec4899",
+            color: "#0891b2",
             fontWeight: 600,
           }}
         >

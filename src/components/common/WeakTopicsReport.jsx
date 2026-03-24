@@ -33,28 +33,28 @@ export function WeakTopicsReport() {
     <div
       style={{
         background: "white",
-        border: "1.5px solid #fce7f3",
+        border: "1.5px solid #dbeafe",
         borderRadius: 20,
         padding: 20,
         boxShadow: "0 4px 16px rgba(236, 72, 153, 0.08)",
       }}
     >
-      <div style={{ fontSize: 16, fontWeight: 900, color: "#831843", marginBottom: 16, letterSpacing: "-0.01em" }}>
+      <div style={{ fontSize: 16, fontWeight: 900, color: "#064e78", marginBottom: 16, letterSpacing: "-0.01em" }}>
         📊 Weak Topics Report
       </div>
 
       {/* Tabs */}
-      <div style={{ display: "flex", gap: 8, marginBottom: 16, borderBottom: "1px solid #fce7f3", paddingBottom: 12 }}>
+      <div style={{ display: "flex", gap: 8, marginBottom: 16, borderBottom: "1px solid #dbeafe", paddingBottom: 12 }}>
         <button
           onClick={() => setActiveTab("topics")}
           style={{
             padding: "8px 12px",
-            background: activeTab === "topics" ? "#fce7f3" : "transparent",
+            background: activeTab === "topics" ? "#dbeafe" : "transparent",
             border: "none",
             borderRadius: 8,
             fontSize: 12,
             fontWeight: 700,
-            color: activeTab === "topics" ? "#be185d" : "#94a3b8",
+            color: activeTab === "topics" ? "#0369a1" : "#94a3b8",
             cursor: "pointer",
           }}
         >
@@ -64,12 +64,12 @@ export function WeakTopicsReport() {
           onClick={() => setActiveTab("chapters")}
           style={{
             padding: "8px 12px",
-            background: activeTab === "chapters" ? "#fce7f3" : "transparent",
+            background: activeTab === "chapters" ? "#dbeafe" : "transparent",
             border: "none",
             borderRadius: 8,
             fontSize: 12,
             fontWeight: 700,
-            color: activeTab === "chapters" ? "#be185d" : "#94a3b8",
+            color: activeTab === "chapters" ? "#0369a1" : "#94a3b8",
             cursor: "pointer",
           }}
         >
@@ -79,12 +79,12 @@ export function WeakTopicsReport() {
           onClick={() => setActiveTab("recent")}
           style={{
             padding: "8px 12px",
-            background: activeTab === "recent" ? "#fce7f3" : "transparent",
+            background: activeTab === "recent" ? "#dbeafe" : "transparent",
             border: "none",
             borderRadius: 8,
             fontSize: 12,
             fontWeight: 700,
-            color: activeTab === "recent" ? "#be185d" : "#94a3b8",
+            color: activeTab === "recent" ? "#0369a1" : "#94a3b8",
             cursor: "pointer",
           }}
         >

@@ -18,8 +18,8 @@ export function PaperView({ subject, paper, loading, loadMsg, loadEmoji, curricu
   return (
     <div style={{ maxWidth: 860, margin: "0 auto", width: "100%" }}>
       {loading ? <LoadingScreen message={loadMsg} emoji={loadEmoji} /> : (
-        <div id="printable-content" style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "clamp(16px, 4vw, 32px)" }}>
-          <div className="no-print" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, paddingBottom: 20, borderBottom: "1px solid #fce7f3", flexWrap: "wrap", gap: 12 }}>
+        <div id="printable-content" style={{ background: "white", borderRadius: 20, border: "1px solid #dbeafe", padding: "clamp(16px, 4vw, 32px)" }}>
+          <div className="no-print" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, paddingBottom: 20, borderBottom: "1px solid #dbeafe", flexWrap: "wrap", gap: 12 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
               <Badge color={S?.accent || "#6366f1"}>{subject}</Badge>
               <ExamTimer initialSeconds={10800} />
@@ -29,7 +29,7 @@ export function PaperView({ subject, paper, loading, loadMsg, loadEmoji, curricu
             </div>
             <div style={{ display: "flex", gap: 10 }}>
               <button onClick={() => window.print()} style={{ background: "#f8fafc", border: "1px solid #cbd5e1", borderRadius: 9, padding: "8px 16px", color: "#334155", fontSize: 13, fontWeight: 600 }}>📥 Save PDF</button>
-              <button onClick={onRegenerate} style={{ background: "#fce7f3", border: "none", borderRadius: 9, padding: "8px 16px", color: "#be185d", fontSize: 13, fontWeight: 600 }}>🔄 Regenerate</button>
+              <button onClick={onRegenerate} style={{ background: "#dbeafe", border: "none", borderRadius: 9, padding: "8px 16px", color: "#0369a1", fontSize: 13, fontWeight: 600 }}>🔄 Regenerate</button>
             </div>
           </div>
           {/* Professionally Formatted Paper */}

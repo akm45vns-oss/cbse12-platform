@@ -20,16 +20,16 @@ export function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji
       {loading ? <LoadingScreen message={loadMsg} emoji={loadEmoji} /> : (
         <div>
           {/* Notes Header Card */}
-          <div className="no-print" style={{ background: "white", borderRadius: 20, border: "1px solid #fce7f3", padding: "clamp(14px,3vw,22px) clamp(16px,4vw,32px)", boxShadow: "0 2px 12px rgba(236,72,153,0.07)", marginBottom: 20, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
+          <div className="no-print" style={{ background: "white", borderRadius: 20, border: "1px solid #dbeafe", padding: "clamp(14px,3vw,22px) clamp(16px,4vw,32px)", boxShadow: "0 2px 12px rgba(8,145,178,0.07)", marginBottom: 20, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
             <div>
-              <Badge color={S?.accent || "#ec4899"}>{subject}</Badge>
-              <h2 style={{ fontSize: 22, fontWeight: 900, color: "#831843", margin: "6px 0 2px", letterSpacing: "-0.02em" }}>{chapter}</h2>
-              <div style={{ fontSize: 12, color: "#f472b4", fontWeight: 600 }}>AkmEdu · Study Notes</div>
+              <Badge color={S?.accent || "#0891b2"}>{subject}</Badge>
+              <h2 style={{ fontSize: 22, fontWeight: 900, color: "#064e78", margin: "6px 0 2px", letterSpacing: "-0.02em" }}>{chapter}</h2>
+              <div style={{ fontSize: 12, color: "#06b6d4", fontWeight: 600 }}>AkmEdu · Study Notes</div>
             </div>
             <div style={{ display: "flex", gap: 10 }}>
               <button onClick={() => window.print()} style={{ background: "#f8fafc", border: "1px solid #cbd5e1", borderRadius: 10, padding: "9px 16px", color: "#334155", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>📥 PDF</button>
               <button onClick={onStartQuiz}
-                style={{ background: "linear-gradient(135deg,#ec4899,#db2777)", border: "none", borderRadius: 10, padding: "9px 20px", color: "white", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6, boxShadow: "0 4px 14px rgba(236,72,153,0.35)" }}>🧠 Take Quiz →</button>
+                style={{ background: "linear-gradient(135deg,#0891b2,#0284c7)", border: "none", borderRadius: 10, padding: "9px 20px", color: "white", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6, boxShadow: "0 4px 14px rgba(8,145,178,0.35)" }}>🧠 Take Quiz →</button>
             </div>
           </div>
           {/* Notes Content */}
@@ -58,7 +58,7 @@ export function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji
           {/* Bottom action bar */}
           <div style={{ display: "flex", justifyContent: "center", gap: 14, marginTop: 24, paddingBottom: 32 }}>
             <button onClick={onStartQuiz}
-              style={{ background: "linear-gradient(135deg,#ec4899,#db2777)", border: "none", borderRadius: 12, padding: "11px 28px", color: "white", fontSize: 14, fontWeight: 700, boxShadow: "0 4px 14px rgba(236,72,153,0.35)" }}>🧠 Start Quiz →</button>
+              style={{ background: "linear-gradient(135deg,#0891b2,#0284c7)", border: "none", borderRadius: 12, padding: "11px 28px", color: "white", fontSize: 14, fontWeight: 700, boxShadow: "0 4px 14px rgba(8,145,178,0.35)" }}>🧠 Start Quiz →</button>
           </div>
         </div>
       )}

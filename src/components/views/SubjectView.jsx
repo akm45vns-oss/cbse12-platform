@@ -67,9 +67,9 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
               const best = qData?.best;
               return (
                 <button key={ci} onClick={() => handleSelectChapter(ch)}
-                  style={{ background: "white", border: `1.5px solid ${nRead && best !== undefined ? S.accent : "#fce7f3"}`, borderRadius: 16, padding: "16px 18px", textAlign: "left", transition: "all 0.25s cubic-bezier(0.4, 0, 0.2, 1)", cursor: "pointer", boxShadow: nRead && best !== undefined ? `0 4px 16px ${S.accent}20` : "0 2px 8px rgba(236,72,153,0.08)", position: "relative" }}
+                  style={{ background: "white", border: `1.5px solid ${nRead && best !== undefined ? S.accent : "#dbeafe"}`, borderRadius: 16, padding: "16px 18px", textAlign: "left", transition: "all 0.25s cubic-bezier(0.4, 0, 0.2, 1)", cursor: "pointer", boxShadow: nRead && best !== undefined ? `0 4px 16px ${S.accent}20` : "0 2px 8px rgba(8,145,178,0.08)", position: "relative" }}
                   onMouseEnter={e => { e.currentTarget.style.borderColor = S.accent; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = `0 8px 24px ${S.accent}30`; }}
-                  onMouseLeave={e => { e.currentTarget.style.borderColor = nRead && best !== undefined ? S.accent : "#fce7f3"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = nRead && best !== undefined ? `0 4px 16px ${S.accent}20` : "0 2px 8px rgba(236,72,153,0.08)"; }}>
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = nRead && best !== undefined ? S.accent : "#dbeafe"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = nRead && best !== undefined ? `0 4px 16px ${S.accent}20` : "0 2px 8px rgba(8,145,178,0.08)"; }}>
                   
                   {/* Bookmark Button */}
                   <button
