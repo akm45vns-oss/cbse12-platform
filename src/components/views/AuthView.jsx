@@ -167,7 +167,7 @@ export function AuthView({
             <span style={{ background: "linear-gradient(135deg, #ec4899 0%, #f472b4 50%, #f9a8d4 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Smart Study Platform</span>
           </h1>
           <p style={{ color: "#9d174d", fontSize: 16, lineHeight: 1.8, marginBottom: 44, maxWidth: 500, fontWeight: 500 }}>
-            Complete study preparation for all exams. AI-generated notes, 50 practice questions per chapter, sample papers and progress tracking.
+            Complete study preparation for all exams. Comprehensive notes, 50 practice questions per chapter, sample papers and progress tracking.
           </p>
 
           <div className="auth-subjects">
@@ -190,7 +190,7 @@ export function AuthView({
 
           <div className="auth-features">
             {[
-              { icon: "📝", text: "AI-Generated Detailed Notes per Chapter" },
+              { icon: "📝", text: "Comprehensive Detailed Notes per Chapter" },
               { icon: "🧠", text: "50 Board-Level MCQs with Explanations" },
               { icon: "📄", text: "Full CBSE Sample Papers with Answer Keys" },
               { icon: "📊", text: "Individual Progress Tracking per Subject" },

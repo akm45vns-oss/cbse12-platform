@@ -1,10 +1,10 @@
 # 🎓 AkmEdu - Smart Study Platform
 
-A modern, AI-powered educational platform for comprehensive exam preparation across 12 subjects.
+A modern, smart educational platform for comprehensive exam preparation across 12 subjects.
 
 ## Features
 
-- ✨ **AI-Generated Study Notes** - Comprehensive notes for every chapter
+- ✨ **Comprehensive Study Notes** - Detailed notes for every chapter
 - 📝 **50 Practice MCQs** - Board-level questions with detailed explanations  
 - 📄 **Sample Papers** - Full subject exam papers with answer keys
 - 📊 **Progress Tracking** - Individual progress for each subject
@@ -16,7 +16,7 @@ A modern, AI-powered educational platform for comprehensive exam preparation acr
 
 - **Frontend**: React 19, Vite, Modern CSS
 - **Backend**: Supabase (PostgreSQL with RLS)
-- **AI**: Groq API (llama-3.1-8b-instant)
+- **Content**: Groq API (llama-3.1-8b-instant)
 - **Deployment**: Vercel
 - **Database**: Supabase PostgreSQL
 
