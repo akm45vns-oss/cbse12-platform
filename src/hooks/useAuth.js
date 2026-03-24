@@ -12,12 +12,34 @@ import {
 } from "../utils/rateLimiting";
 
 export function useAuth() {
-  const [currentUser, setCurrentUser] = useState(null);
+  // Initialize from localStorage, default to null if not found
+  const [currentUser, setCurrentUserState] = useState(() => {
+    try {
+      return localStorage.getItem("akmedu_currentUser") || null;
+    } catch {
+      return null;
+    }
+  });
   const [authTab, setAuthTab] = useState("login");
   const [credentials, setCredentials] = useState({ username: "", password: "", confirmPassword: "" });
   const [error, setError] = useState("");
   const [isLockedOut, setIsLockedOut] = useState(false);
   const [lockoutTimeRemaining, setLockoutTimeRemaining] = useState(0);
+
+  // Helper function to set current user and persist to localStorage
+  const setCurrentUser = (user) => {
+    try {
+      if (user) {
+        localStorage.setItem("akmedu_currentUser", user);
+      } else {
+        localStorage.removeItem("akmedu_currentUser");
+      }
+      setCurrentUserState(user);
+    } catch (e) {
+      console.warn("Failed to persist auth state:", e);
+      setCurrentUserState(user);
+    }
+  };
 
   const doLogin = async () => {
     setError("");
