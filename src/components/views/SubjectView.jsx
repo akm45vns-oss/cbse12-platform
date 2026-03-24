@@ -11,7 +11,7 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
         <div style={{ position: "relative", zIndex: 1 }}>
           <div style={{ fontSize: "clamp(40px, 6vw, 48px)", marginBottom: 10 }}>{S.emoji}</div>
           <h1 style={{ fontSize: "clamp(26px, 5vw, 32px)", fontWeight: 900, margin: 0, letterSpacing: "-0.02em", lineHeight: 1.2 }}>{subject}</h1>
-          <p style={{ opacity: 0.85, marginTop: 8, fontSize: "clamp(13px, 2vw, 15px)", fontWeight: 500 }}>AkMEdu • {S.units.length} Units • {stats.bySubject[subject].t} Chapters</p>
+          <p style={{ opacity: 0.85, marginTop: 8, fontSize: "clamp(13px, 2vw, 15px)", fontWeight: 500 }}>AkmEdu • {S.units.length} Units • {stats.bySubject[subject].t} Chapters</p>
           <button onClick={onGeneratePaper}
             style={{ marginTop: 18, background: "linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.15))", border: "1.5px solid rgba(255,255,255,0.3)", borderRadius: 12, padding: "11px 22px", color: "white", fontWeight: 700, fontSize: 14, transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)", backdropFilter: "blur(10px)", cursor: "pointer" }}
             onMouseEnter={e => { e.currentTarget.style.background = "linear-gradient(135deg, rgba(255,255,255,0.35), rgba(255,255,255,0.25))"; e.currentTarget.style.transform = "translateY(-2px)"; }}

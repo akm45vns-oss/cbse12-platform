@@ -1,4 +1,4 @@
-# AkMEdu Platform - Refactored Structure
+# AkmEdu Platform - Refactored Structure
 
 ## Overview
 The monolithic `App.jsx` has been refactored into a clean, modular architecture for better maintainability and scalability.

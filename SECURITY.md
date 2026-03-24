@@ -1,6 +1,6 @@
 # Security Hardening Guide
 
-This document outlines all the security improvements implemented in the AkMEdu Platform.
+This document outlines all the security improvements implemented in the AkmEdu Platform.
 
 ## 1. Authentication Security 🔐
 

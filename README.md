@@ -1,4 +1,4 @@
-# 🎓 AkMEdu - Smart Study Platform
+# 🎓 AkmEdu - Smart Study Platform
 
 A modern, AI-powered educational platform for comprehensive exam preparation across 12 subjects.
 
@@ -126,7 +126,7 @@ This is a personal education project. For suggestions or issues, please create a
 
 ## License
 
-All rights reserved. © 2026 AkMEdu
+All rights reserved. © 2026 AkmEdu
 
 ## Developer
 

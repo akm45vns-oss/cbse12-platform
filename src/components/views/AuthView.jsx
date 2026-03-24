@@ -163,7 +163,7 @@ export function AuthView({
             <span style={{ fontSize: 64 }}>🎓</span>
           </div>
           <h1 className="auth-title" style={{ color: "#831843", fontWeight: 900, margin: "0 0 12px", letterSpacing: "-0.03em", lineHeight: 1.15 }}>
-            AkMEdu<br/>
+            AkmEdu<br/>
             <span style={{ background: "linear-gradient(135deg, #ec4899 0%, #f472b4 50%, #f9a8d4 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Smart Study Platform</span>
           </h1>
           <p style={{ color: "#9d174d", fontSize: 16, lineHeight: 1.8, marginBottom: 44, maxWidth: 500, fontWeight: 500 }}>
@@ -287,7 +287,7 @@ export function AuthView({
                 New here? <button onClick={() => setAuthTab("register")} style={{ background: "none", border: "none", color: "#ec4899", fontWeight: 700, cursor: "pointer", fontSize: "inherit" }}>Create an account</button>
               </p>
             )}
-            <p style={{ textAlign: "center", color: "#cbd5e1", fontSize: 12, marginTop: 32, fontWeight: 500, letterSpacing: "0.04em" }}>AkMEdu • Smart Study Platform • 12 Subjects • All Chapters</p>
+            <p style={{ textAlign: "center", color: "#cbd5e1", fontSize: 12, marginTop: 32, fontWeight: 500, letterSpacing: "0.04em" }}>AkmEdu • Smart Study Platform • 12 Subjects • All Chapters</p>
           </div>
         </div>
       </div>
