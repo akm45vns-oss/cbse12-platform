@@ -1,16 +1,38 @@
 import { useState } from "react";
 import { hashPassword, validateUsername, validatePassword } from "../utils/auth";
 import { loginUser, registerUser } from "../utils/supabase";
+import { validatePasswordStrength } from "../utils/passwordValidation";
+import { 
+  recordLoginAttempt, 
+  isAccountLocked, 
+  lockAccount, 
+  getRemainingLockoutTime, 
+  resetLoginAttempts,
+  SECURITY_CONFIG 
+} from "../utils/rateLimiting";
 
 export function useAuth() {
   const [currentUser, setCurrentUser] = useState(null);
   const [authTab, setAuthTab] = useState("login");
   const [credentials, setCredentials] = useState({ username: "", password: "", confirmPassword: "" });
   const [error, setError] = useState("");
+  const [isLockedOut, setIsLockedOut] = useState(false);
+  const [lockoutTimeRemaining, setLockoutTimeRemaining] = useState(0);
 
   const doLogin = async () => {
     setError("");
+    setIsLockedOut(false);
+    
     const u = credentials.username.trim().toLowerCase();
+    
+    // Check if account is locked
+    if (isAccountLocked(u)) {
+      const remainingSeconds = getRemainingLockoutTime(u);
+      setIsLockedOut(true);
+      setLockoutTimeRemaining(remainingSeconds);
+      return setError(`❌ Account temporarily locked. Try again in ${remainingSeconds} seconds.`);
+    }
+    
     const usernameErr = validateUsername(u);
     if (usernameErr) return setError(usernameErr);
     
@@ -20,8 +42,23 @@ export function useAuth() {
     const hashed = await hashPassword(credentials.password);
     const loginErr = await loginUser(u, hashed);
     
-    if (loginErr) return setError("❌ " + loginErr);
+    if (loginErr) {
+      // Record failed attempt
+      const attempts = recordLoginAttempt(u);
+      const remaining = SECURITY_CONFIG.MAX_LOGIN_ATTEMPTS - attempts;
+      
+      if (remaining <= 0) {
+        lockAccount(u);
+        setIsLockedOut(true);
+        setLockoutTimeRemaining(SECURITY_CONFIG.LOCKOUT_DURATION_MINUTES * 60);
+        return setError(`❌ Too many failed attempts. Account locked for ${SECURITY_CONFIG.LOCKOUT_DURATION_MINUTES} minutes.`);
+      }
+      
+      return setError(`❌ ${loginErr} (${remaining} attempt${remaining === 1 ? "" : "s"} remaining)`);
+    }
     
+    // Clear attempts on successful login
+    resetLoginAttempts(u);
     setCurrentUser(u);
     setCredentials({ username: "", password: "", confirmPassword: "" });
   };
@@ -33,6 +70,12 @@ export function useAuth() {
     const usernameErr = validateUsername(u);
     if (usernameErr) return setError(usernameErr);
     
+    // Validate password strength
+    const passwordStrength = validatePasswordStrength(credentials.password);
+    if (!passwordStrength.isValid) {
+      return setError(passwordStrength.errors[0]);
+    }
+    
     const passwordErr = validatePassword(credentials.password, credentials.confirmPassword);
     if (passwordErr) return setError(passwordErr);
     
@@ -41,6 +84,8 @@ export function useAuth() {
     
     if (registerErr) return setError("⚠️ " + registerErr);
     
+    // Clear lockout on successful registration
+    resetLoginAttempts(u);
     setCurrentUser(u);
     setCredentials({ username: "", password: "", confirmPassword: "" });
   };
@@ -50,6 +95,8 @@ export function useAuth() {
     setCredentials({ username: "", password: "", confirmPassword: "" });
     setError("");
     setAuthTab("login");
+    setIsLockedOut(false);
+    setLockoutTimeRemaining(0);
   };
 
   return {
@@ -57,6 +104,8 @@ export function useAuth() {
     authTab,
     credentials,
     error,
+    isLockedOut,
+    lockoutTimeRemaining,
     setAuthTab,
     setCredentials,
     doLogin,

@@ -1,5 +1,7 @@
 import { Badge, ProgressBar } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
+import { validatePasswordStrength, generatePasswordHint } from "../../utils/passwordValidation";
+import { useState } from "react";
 
 export function AuthView({
   authTab,
@@ -16,6 +18,8 @@ export function AuthView({
   doLogin,
   doRegister,
 }) {
+  const [showPasswordHint, setShowPasswordHint] = useState(false);
+  const passwordValidation = authTab === "register" ? validatePasswordStrength(pass) : null;
   return (
     <div style={{ minHeight: "100vh", width: "100%", background: "#fff0f5", fontFamily: "'Segoe UI', system-ui, sans-serif" }}>
       <style>{`
@@ -154,12 +158,34 @@ export function AuthView({
                 <label style={{ color: "#be185d", fontSize: 11, fontWeight: 700, display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.08em" }}>Password</label>
                 <div style={{ position: "relative" }}>
                   <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)}
-                    placeholder={authTab === "register" ? "Min 6 characters" : "Enter your password"}
-                    style={{ paddingRight: 44 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
+                    placeholder={authTab === "register" ? "Min 8 chars, mixed case, numbers, symbols" : "Enter your password"}
+                    style={{ paddingRight: 44 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} 
+                    onFocus={() => authTab === "register" && setShowPasswordHint(true)}
+                    onBlur={() => setShowPasswordHint(false)} />
                   <button onClick={() => setShowPass(s => !s)} style={{ position: "absolute", right: 12, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#475569", fontSize: 16 }}>
                     {showPass ? "🙈" : "👁️"}
                   </button>
                 </div>
+                {authTab === "register" && pass && (
+                  <div style={{ marginTop: 10 }}>
+                    <div style={{display: "flex", alignItems: "center", gap: 8}}>
+                      <div style={{flex: 1, height: 6, background: "#e2e8f0", borderRadius: 99, overflow: "hidden"}}>
+                        <div style={{width: `${passwordValidation.strength.percent}%`, height: "100%", background: passwordValidation.strength.color, transition: "width 0.3s"}} />
+                      </div>
+                      <span style={{fontSize: 11, fontWeight: 700, color: passwordValidation.strength.color}}>{passwordValidation.strength.level}</span>
+                    </div>
+                    {!passwordValidation.isValid && (
+                      <div style={{marginTop: 8}}>
+                        {passwordValidation.errors.map((err, i) => (
+                          <div key={i} style={{fontSize: 11, color: "#ef4444", marginBottom: 4}}>❌ {err}</div>
+                        ))}
+                      </div>
+                    )}
+                    {passwordValidation.isValid && (
+                      <div style={{marginTop: 8, fontSize: 11, color: "#16a34a"}}>✅ Password is strong!</div>
+                    )}
+                  </div>
+                )}
               </div>
               {authTab === "register" && (
                 <div>
