@@ -77,32 +77,33 @@ export default function App() {
       // If not in database, generate with API (fallback)
       setLoadMsg(`Generating notes for "${chap}"...`);
       const text = await callClaude(
-        `Create comprehensive CBSE Class 12 NCERT study notes for the chapter "${chap}" from ${subj}.
+        `Create comprehensive, ORIGINAL study material for the topic "${chap}" in ${subj}.
+You are creating INDEPENDENT educational content, not copying from any textbook.
 Format the notes as follows:
 # ${chap}
-## Subject: ${subj} | Class 12 CBSE NCERT
+## Subject: ${subj} | Class 12 Study Materials
 ---
-## 📌 Chapter Overview
-[2-3 sentence overview]
+## 📌 Topic Overview
+[2-3 sentence explanation in YOUR OWN words]
 ## 🔑 Key Concepts & Definitions
-[List all important terms with definitions]
+[Create clear definitions using your own explanations]
 ## 📐 Important Laws, Theories & Principles
-[All important laws/theories with statements]
+[Explain fundamental principles with original examples]
 ## 🧮 Formulas & Equations
-[All important formulas (if applicable)]
+[Include relevant mathematical/scientific formulas if applicable]
 ## 🔬 Mechanisms & Processes (Step-by-Step)
-[Important processes explained step by step]
-## 🖼️ Important Diagrams & Structures
-[Describe key diagrams, what to label, what to show]
-## ⭐ Most Important Points for Board Exam
-[Bullet points of must-know items, mark most critical with ★]
-## ❌ Common Mistakes to Avoid
-[List common errors students make]
-## 📅 Previous Year Questions (Topics)
-[Topics commonly asked in board exams]
-## 🔁 Quick Revision Summary
-[10-15 bullet point summary for last-minute revision]
-Be thorough, use clear formatting, and cover ALL NCERT content for this chapter. Make it board-exam focused.`,
+[Explain processes using your own logical flow]
+## 🖼️ Visual Aids & Diagrams
+[Describe visual representations and what they should show]
+## ⭐ Most Important Concepts
+[Mark key concepts with ★ that students should focus on]
+## ❌ Common Misconceptions
+[Explain typical mistakes students make on this topic]
+## 💡 Real-World Applications
+[Give practical examples of how this topic applies in real life]
+## 🔁 Quick Summary
+[10-15 bullet point quick reference for revision]
+IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and structure. Do not copy or closely paraphrase from any textbooks. Ensure content is accurate and educationally sound.`,
         3500
       );
       setNotes(text);
@@ -124,17 +125,19 @@ Be thorough, use clear formatting, and cover ALL NCERT content for this chapter.
     setQuizErr("");
 
     const generateBatch = async (batch) => {
-      const prompt = `Generate exactly 25 CBSE Class 12 board-level MCQ questions for "${chap}" from ${subj}. This is batch ${batch} of 2 — generate questions ${
+      const prompt = `Generate exactly 25 ORIGINAL multiple-choice questions about "${chap}" in ${subj}. This is batch ${batch} of 2 — generate questions ${
         batch === 1 ? "1–25" : "26–50"
-      }, covering ${batch === 1 ? "the first half" : "the second half"} of the chapter topics.
+      }, covering ${batch === 1 ? "the first half" : "the second half"} of the topic.
 CRITICAL: Return ONLY a valid JSON array. No markdown, no backticks, no explanation. Start with [ and end with ].
 Format: [{"q":"Question text?","opts":["A. option","B. option","C. option","D. option"],"ans":0,"exp":"Brief explanation"}]
 Rules:
 - "ans" is 0-based index (0=A,1=B,2=C,3=D)
-- NCERT Class 12 content only
-- Difficulty: 30% easy, 50% medium, 20% hard
-- Include formula/numerical questions where applicable
-- Generate all 25 questions, no placeholders`;
+- Create ORIGINAL questions testing understanding (not copied from any source)
+- Difficulty: 30% basic, 50% intermediate, 20% advanced
+- Include calculation/analytical questions where appropriate
+- Provide clear explanations for answers
+- Generate all 25 questions, no placeholders
+- Questions should be thought-provoking and educational`;
       return await callClaude(prompt, 4000);
     };
 
@@ -162,24 +165,30 @@ Rules:
     try {
       const marks = subj === "English" ? 80 : subj === "Physical Education" ? 70 : 80;
       const text = await callClaude(
-        `Create a complete, realistic CBSE Class 12 Board Exam Sample Paper for ${subj}.
-Follow the LATEST official CBSE pattern:
+        `Create an ORIGINAL, comprehensive sample assessment paper for ${subj} Class 12.
+Design it as a complete practice test following standard examination structure:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-CENTRAL BOARD OF SECONDARY EDUCATION
-SAMPLE QUESTION PAPER — CLASS XII
+COMPREHENSIVE ASSESSMENT PAPER
 Subject: ${subj}
-Time Allowed: 3 Hours | Maximum Marks: ${marks}
+Time Allowed: 3 Hours | Total Marks: ${marks}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Include:
-- General Instructions (5-6 points)
-- Section A: 1-mark MCQs and Assertion-Reasoning (16-20 marks)
-- Section B: 2-mark short answer (10 marks)
-- Section C: 3-mark short answer (12-15 marks)
-- Section D: 5-mark long answer (15-20 marks)
-- Section E: Case-study / Source-based (if applicable for ${subj})
-Cover ALL chapters/units proportionally.
-End with complete ANSWER KEY / MARKING SCHEME.
-Make it exam-quality with real questions.`,
+- Instructions for Students (5-6 points about format and rules)
+- Section A: Multiple Choice & Objective Type (16-20 marks)
+- Section B: Short Answer Questions (10 marks, 2-3 marks each)
+- Section C: Medium Answer Questions (12-15 marks, 3-4 marks each)
+- Section D: Long Answer Questions (15-20 marks, 5-6 marks each)
+- Section E: Case Studies, Practical Applications (if applicable for ${subj})
+Ensure:
+- Content covers major topics of the subject comprehensively
+- Questions test understanding, analysis, and application (not just recall)
+- Variety of question types
+- Appropriate difficulty distribution (30% basic, 50% intermediate, 20% advanced)
+End with:
+- Complete ANSWER KEY with marking points
+- Model answers showing expected responses
+- Marking rubric for subjective questions
+IMPORTANT: Create ORIGINAL questions. These should be unique practice material, not copied from any exam board or textbook.`,
         4000
       );
       setPaper(text);
