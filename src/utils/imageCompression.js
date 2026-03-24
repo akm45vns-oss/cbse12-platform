@@ -65,6 +65,8 @@ export async function uploadToImgBB(imageBlob, apiKey) {
   // Use environment variable if no API key provided
   const key = apiKey || import.meta.env.VITE_IMGBB_API_KEY;
   
+  console.log("🔑 API Key available:", !!key);
+  
   if (!key) {
     console.warn("⚠️ ImgBB API key not configured. Using local storage fallback.");
     return blobToDataURL(imageBlob);
@@ -80,11 +82,15 @@ export async function uploadToImgBB(imageBlob, apiKey) {
       body: formData,
     });
 
+    console.log("📡 ImgBB Response Status:", response.status);
+
     if (!response.ok) {
       throw new Error(`ImgBB error: ${response.statusText}`);
     }
 
     const data = await response.json();
+    console.log("📦 ImgBB Response:", data);
+    
     if (data.success) {
       console.log(`✅ Image uploaded to ImgBB: ${data.data.url}`);
       return data.data.url;
@@ -119,6 +125,8 @@ function blobToDataURL(blob) {
  */
 export async function processImage(file, apiKey = null) {
   try {
+    console.log("🖼️ Processing image:", { name: file.name, size: (file.size / 1024).toFixed(2) + "KB" });
+    
     // Validate file
     if (!file.type.startsWith("image/")) {
       throw new Error("Only image files are supported");
@@ -130,11 +138,14 @@ export async function processImage(file, apiKey = null) {
     }
 
     // Compress
+    console.log("⏳ Compressing image...");
     const compressed = await compressImage(file, 0.75, 1200);
 
     // Upload (uses env variable if no apiKey provided)
+    console.log("📤 Uploading to ImgBB...");
     const url = await uploadToImgBB(compressed, apiKey);
 
+    console.log("✅ Image processing complete:", url);
     return url;
   } catch (error) {
     console.error("❌ Image processing failed:", error.message);

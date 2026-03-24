@@ -4,6 +4,7 @@ import { processImage } from "../../utils/imageCompression";
 export function ImageUploader({ onImageUpload, maxSize = "10MB" }) {
   const [isUploading, setIsUploading] = useState(false);
   const [preview, setPreview] = useState(null);
+  const [uploadedUrl, setUploadedUrl] = useState(null);
   const [error, setError] = useState(null);
 
   const handleImageSelect = async (file) => {
@@ -13,16 +14,19 @@ export function ImageUploader({ onImageUpload, maxSize = "10MB" }) {
     setIsUploading(true);
 
     try {
-      // Preview
+      // Show local preview immediately
       const reader = new FileReader();
       reader.onload = (e) => setPreview(e.target.result);
       reader.readAsDataURL(file);
 
       // Process & upload (automatically uses env variable API key)
       const imgUrl = await processImage(file);
+      console.log("✅ Image uploaded:", imgUrl);
       onImageUpload(imgUrl);
-      setPreview(null);
+      setUploadedUrl(imgUrl);
+      setPreview(null); // Clear local preview after upload
     } catch (err) {
+      console.error("❌ Upload error:", err);
       setError(err.message);
     } finally {
       setIsUploading(false);
@@ -65,8 +69,9 @@ export function ImageUploader({ onImageUpload, maxSize = "10MB" }) {
         </label>
       </div>
 
-      {preview && (
+      {preview && !uploadedUrl && (
         <div style={{ marginTop: 10 }}>
+          <div style={{ fontSize: 11, color: "#94a3b8", marginBottom: 6 }}>📸 Preview:</div>
           <img
             src={preview}
             alt="Preview"
@@ -77,6 +82,43 @@ export function ImageUploader({ onImageUpload, maxSize = "10MB" }) {
               border: "1.5px solid #fce7f3",
             }}
           />
+        </div>
+      )}
+
+      {uploadedUrl && (
+        <div style={{ marginTop: 10 }}>
+          <div style={{ fontSize: 11, color: "#16a34a", marginBottom: 6, fontWeight: 600 }}>
+            ✅ Image uploaded successfully!
+          </div>
+          <img
+            src={uploadedUrl}
+            alt="Uploaded"
+            style={{
+              maxWidth: "200px",
+              maxHeight: "150px",
+              borderRadius: 8,
+              border: "2px solid #16a34a",
+            }}
+          />
+          <button
+            onClick={() => {
+              setUploadedUrl(null);
+              setPreview(null);
+            }}
+            style={{
+              marginTop: 8,
+              padding: "4px 10px",
+              background: "#fee5e5",
+              border: "1px solid #fca5a5",
+              borderRadius: 6,
+              color: "#dc2626",
+              fontSize: 11,
+              fontWeight: 600,
+              cursor: "pointer",
+            }}
+          >
+            ✕ Remove Image
+          </button>
         </div>
       )}
 
