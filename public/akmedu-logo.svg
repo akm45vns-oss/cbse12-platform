@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#f0f9fc" stroke="#0891b2" stroke-width="3"/>
+  
+  <!-- Graduation cap (mortarboard) -->
+  <g transform="translate(100, 100)">
+    <!-- Cap square -->
+    <rect x="-45" y="-35" width="90" height="8" fill="#0891b2" rx="2"/>
+    
+    <!-- Cap front edge highlight -->
+    <rect x="-45" y="-35" width="90" height="3" fill="#06b6d4" rx="2"/>
+    
+    <!-- Tassel string -->
+    <line x1="0" y1="-27" x2="0" y2="15" stroke="#0891b2" stroke-width="2.5"/>
+    
+    <!-- Tassel ball -->
+    <circle cx="0" cy="18" r="8" fill="#0891b2"/>
+    <circle cx="0" cy="18" r="5" fill="#06b6d4"/>
+    
+    <!-- Visor/brim -->
+    <ellipse cx="0" cy="5" rx="55" ry="18" fill="#0284c7"/>
+    <ellipse cx="0" cy="3" rx="55" ry="12" fill="#0891b2"/>
+    
+    <!-- Visor shine effect -->
+    <ellipse cx="0" cy="1" rx="50" ry="8" fill="#06b6d4" opacity="0.6"/>
+    
+    <!-- Center circle on brim -->
+    <circle cx="0" cy="5" r="12" fill="#dbeafe" opacity="0.8"/>
+    <circle cx="0" cy="5" r="8" fill="#f0f9fc"/>
+    <text x="0" y="4" text-anchor="middle" font-size="18" font-weight="bold" fill="#0891b2" font-family="Poppins, sans-serif">A</text>
+  </g>
+</svg>
