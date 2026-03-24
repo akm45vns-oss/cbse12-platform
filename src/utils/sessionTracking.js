@@ -140,7 +140,6 @@ export function getOverallStats() {
   const avgSessionTime = totalSessions > 0 ? Math.round(totalTime / totalSessions) : 0;
   
   // Calculate study streak
-  const today = new Date().toDateString();
   const streak = calculateStreak(history);
   
   // Group by subject

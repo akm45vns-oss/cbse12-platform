@@ -1,5 +1,4 @@
 import { Badge, LoadingScreen, ExamTimer } from "../common";
-import { CURRICULUM } from "../../constants/curriculum";
 import { useEffect } from "react";
 import { startSession, endSession } from "../../utils/sessionTracking";
 
@@ -8,7 +7,7 @@ export function PaperView({ subject, paper, loading, loadMsg, loadEmoji, curricu
 
   // Track paper session
   useEffect(() => {
-    const sessionId = startSession(subject, "Sample Paper", "paper");
+    startSession(subject, "Sample Paper", "paper");
     
     return () => {
       endSession(true); // Mark as completed when leaving paper view

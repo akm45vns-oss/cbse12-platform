@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 export function StatsView() {
   const [stats, setStats] = useState(null);
   const [recommendations, setRecommendations] = useState([]);
-  const [timeRange, setTimeRange] = useState("all"); // all, week, month
 
   useEffect(() => {
     const overallStats = getOverallStats();

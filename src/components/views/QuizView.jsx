@@ -1,5 +1,4 @@
 import { Badge, LoadingScreen, ExamTimer, ProgressBar } from "../common";
-import { CURRICULUM } from "../../constants/curriculum";
 import { useEffect, useState } from "react";
 import { useKeyboardShortcuts } from "../../hooks";
 import { startSession, endSession } from "../../utils/sessionTracking";
@@ -29,7 +28,7 @@ export function QuizView({
   // Track quiz session
   useEffect(() => {
     if (quiz.length > 0 && !loading) {
-      const sessionId = startSession(subject, chapter, "quiz");
+      startSession(subject, chapter, "quiz");
     }
   }, [quiz.length, loading, subject, chapter]);
 

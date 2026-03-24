@@ -1,14 +1,13 @@
 import { Badge, LoadingScreen } from "../common";
-import { CURRICULUM } from "../../constants/curriculum";
 import { useEffect } from "react";
 import { startSession, endSession } from "../../utils/sessionTracking";
 
-export function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji, onRegenerateNotes, onStartQuiz, curriculumData }) {
+export function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji, onStartQuiz, curriculumData }) {
   const S = curriculumData;
 
   // Track study session
   useEffect(() => {
-    const sessionId = startSession(subject, chapter, "notes");
+    startSession(subject, chapter, "notes");
     
     return () => {
       endSession(true); // Mark as completed when leaving notes

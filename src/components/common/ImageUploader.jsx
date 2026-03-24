@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { processImage } from "../../utils/imageCompression";
 
-export function ImageUploader({ onImageUpload, maxSize = "10MB" }) {
+export function ImageUploader({ onImageUpload }) {
   const [isUploading, setIsUploading] = useState(false);
   const [preview, setPreview] = useState(null);
   const [uploadedUrl, setUploadedUrl] = useState(null);

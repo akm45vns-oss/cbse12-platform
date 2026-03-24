@@ -1,5 +1,4 @@
 import { ProgressBar } from "../common";
-import { CURRICULUM, totalChapters } from "../../constants/curriculum";
 
 export function ProgressView({ stats, overallPct, totalChapters, curriculum, progressData }) {
   return (
@@ -48,10 +47,10 @@ export function ProgressView({ stats, overallPct, totalChapters, curriculum, pro
                   </div>
                   <div className="prog-ch-grid">
                     {unit.chapters.map((ch, ci) => {
-                      const nk = `${s}||${ch}||notes`;
-                      const qk = `${s}||${ch}||quiz`;
-                      const nRead = progress[nk]?.read;
-                      const qData = progress[qk];
+                       const nk = `${s}||${ch}||notes`;
+                       const qk = `${s}||${ch}||quiz`;
+                      const nRead = progressData[nk]?.read;
+                      const qData = progressData[qk];
                       const best = qData?.best;
                       const attempts = qData?.attempts?.length || 0;
                       return (

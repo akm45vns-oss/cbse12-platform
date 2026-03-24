@@ -1,7 +1,6 @@
 import { Badge, ProgressBar } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
-import { validatePasswordStrength, generatePasswordHint } from "../../utils/passwordValidation";
-import { useState } from "react";
+import { validatePasswordStrength } from "../../utils/passwordValidation";
 
 export function AuthView({
   authTab,
@@ -18,7 +17,6 @@ export function AuthView({
   doLogin,
   doRegister,
 }) {
-  const [showPasswordHint, setShowPasswordHint] = useState(false);
   const passwordValidation = authTab === "register" ? validatePasswordStrength(pass) : null;
   return (
     <div style={{ minHeight: "100vh", width: "100%", background: "#f0f9fc", fontFamily: "'Segoe UI', system-ui, sans-serif" }}>
@@ -240,8 +238,7 @@ export function AuthView({
                   <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)}
                     placeholder={authTab === "register" ? "Min 8 chars, mixed case, numbers, symbols" : "Enter your password"}
                     style={{ paddingRight: 48 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} 
-                    onFocus={() => authTab === "register" && setShowPasswordHint(true)}
-                    onBlur={() => setShowPasswordHint(false)} />
+                    />
                   <button onClick={() => setShowPass(s => !s)} style={{ position: "absolute", right: 14, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#0369a1", fontSize: 18, cursor: "pointer", padding: "4px 8px" }}>
                     {showPass ? "🙈" : "👁️"}
                   </button>

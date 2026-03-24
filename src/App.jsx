@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
-import { useAuth, useNavigation, useProgress, useTheme, useKeyboardShortcuts } from "./hooks";
+import { useAuth, useNavigation, useProgress, useTheme } from "./hooks";
 import { callClaude, extractJSON } from "./utils/api";
-import { supabase, getChapterNotes } from "./utils/supabase";
+import { getChapterNotes } from "./utils/supabase";
 import { CURRICULUM, totalChapters } from "./constants/curriculum";
-import { SearchBar } from "./components/common/SearchBar";
 import { recordDailyActivity } from "./utils/loginStreak";
-import { recordChapterAccess } from "./utils/recentChapters";
 import { recordQuizSubmission } from "./utils/weakTopics";
 import {
   AuthView,
@@ -56,7 +54,7 @@ export default function App() {
     } else {
       nav.navigate("auth");
     }
-  }, [auth.currentUser]);
+  }, [auth.currentUser, nav, progress]);
 
   // Content generation functions
   const genNotes = async (subj, chap) => {
@@ -193,7 +191,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
       );
       setPaper(text);
     } catch (e) {
-      setPaper("❌ Error generating sample paper. Please try again.");
+      setPaper("❌ Error generating sample paper. Please try again. " + e.message);
     }
     setLoading(false);
   };

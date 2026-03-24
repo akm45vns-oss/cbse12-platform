@@ -43,7 +43,9 @@ export function extractJSON(text) {
   try {
     const r = JSON.parse(cleaned);
     if (Array.isArray(r) && r.length > 0) return r;
-  } catch {}
+  } catch {
+    // Continue to repair the response below
+  }
   
   // Repair: find last complete object ending with }
   const lastGood = cleaned.lastIndexOf("},");

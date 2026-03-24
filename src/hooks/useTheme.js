@@ -35,7 +35,7 @@ export function useTheme() {
     } else {
       document.documentElement.classList.remove("dark-mode");
     }
-  }, []);
+  }, [isDarkMode]);
 
   return {
     isDarkMode,
