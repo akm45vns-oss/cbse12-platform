@@ -7,9 +7,6 @@ import { SearchBar } from "./components/common/SearchBar";
 import { recordDailyActivity } from "./utils/loginStreak";
 import { recordChapterAccess } from "./utils/recentChapters";
 import { recordQuizSubmission } from "./utils/weakTopics";
-import { FeatureGate, PremiumContent } from "./components/FeatureGate";
-import { PricingPage } from "./pages/PricingPage";
-import { useSubscription } from "./hooks/useSubscription";
 import {
   AuthView,
   DashboardView,
@@ -36,7 +33,6 @@ export default function App() {
   const nav = useNavigation();
   const progress = useProgress();
   const theme = useTheme();
-  const subscription = useSubscription();
 
   // Content generation state
   const [loading, setLoading] = useState(false);
@@ -55,7 +51,6 @@ export default function App() {
   useEffect(() => {
     if (auth.currentUser) {
       progress.load(auth.currentUser);
-      subscription.loadSubscription(auth.currentUser);
       recordDailyActivity(); // Track daily login streak
       nav.goToDashboard();
     } else {
@@ -65,14 +60,6 @@ export default function App() {
 
   // Content generation functions
   const genNotes = async (subj, chap) => {
-    // Check subscription for premium feature
-    if (!subscription.hasFeatureAccess('notes_generation')) {
-      setLoading(false);
-      alert('Notes generation is a Premium feature. Upgrade to Premium or Pro to unlock.');
-      nav.navigate("pricing");
-      return;
-    }
-
     setLoading(true);
     setLoadMsg(`Loading notes for "${chap}"`);
     setLoadEmoji("📝");
@@ -128,14 +115,6 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
   };
 
   const genQuiz = async (subj, chap) => {
-    // Check subscription for quiz feature
-    if (!subscription.hasFeatureAccess('full_quiz')) {
-      setLoading(false);
-      alert('Full quiz access is a Premium feature. Upgrade to Premium or Pro to unlock.');
-      nav.navigate("pricing");
-      return;
-    }
-
     setLoading(true);
     setLoadMsg(`Generating Quiz for "${chap}"`);
     setLoadEmoji("🧠");
@@ -179,14 +158,6 @@ Rules:
   };
 
   const genPaper = async (subj) => {
-    // Check subscription for sample papers feature
-    if (!subscription.hasFeatureAccess('sample_papers_unlimited')) {
-      setLoading(false);
-      alert('Unlimited sample papers are a Premium feature. Upgrade to Premium or Pro to unlock.');
-      nav.navigate("pricing");
-      return;
-    }
-
     setLoading(true);
     setLoadMsg(`Generating Sample Paper for ${subj}`);
     setLoadEmoji("📄");
@@ -464,23 +435,6 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
               </span>
             </div>
             <button
-              onClick={() => nav.navigate("pricing")}
-              style={{
-                background: "none",
-                border: "1px solid #dbeafe",
-                borderRadius: 8,
-                padding: "8px 12px",
-                color: "#06b6d4",
-                fontSize: 13,
-                fontWeight: 600,
-                minHeight: "40px",
-                cursor: "pointer",
-              }}
-              title="View Pricing Plans"
-            >
-              💎 Plans
-            </button>
-            <button
               onClick={auth.doLogout}
               style={{
                 background: "none",
@@ -502,10 +456,6 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
       </nav>
 
       <div className="main-content">
-        {nav.view === "pricing" && (
-          <PricingPage />
-        )}
-
         {nav.view === "dashboard" && (
           <DashboardView
             currentUser={auth.currentUser}
