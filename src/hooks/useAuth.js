@@ -26,7 +26,7 @@ export function useAuth() {
   const [isLockedOut, setIsLockedOut] = useState(false);
   const [lockoutTimeRemaining, setLockoutTimeRemaining] = useState(0);
   const [showPass, setShowPass] = useState(false);
-  const [otpState, setOtpState] = useState({ show: false, email: "", otp: "", loading: false });
+  const [otpState, setOtpState] = useState({ show: false, email: "", otp: "", loading: false, pendingRegistration: null });
 
   // Helper function to set current user and persist to localStorage
   const setCurrentUser = (user) => {
@@ -119,18 +119,24 @@ export function useAuth() {
     const passwordErr = validatePassword(credentials.password, credentials.confirmPassword);
     if (passwordErr) return setError(passwordErr);
 
+    // DON'T CREATE ACCOUNT YET - Just send OTP
+    // Store registration data temporarily for after OTP verification
     const hashed = await hashPassword(credentials.password);
-    const registerErr = await registerUser(u, hashed, em, nm);
 
-    if (registerErr) return setError("⚠️ " + registerErr);
-
-    // Registration successful! Now send OTP
-    setOtpState({ show: true, email: em, otp: "", loading: true });
+    setOtpState({
+      show: true,
+      email: em,
+      otp: "",
+      loading: true,
+      pendingRegistration: { username: u, email: em, name: nm, passwordHash: hashed }
+    });
 
     const otpResult = await sendOTP(em);
     setOtpState(prev => ({ ...prev, loading: false }));
 
     if (!otpResult.success) {
+      // OTP sending failed - reset state
+      setOtpState({ show: false, email: "", otp: "", loading: false, pendingRegistration: null });
       return setError("⚠️ " + (otpResult.error || "Failed to send verification code"));
     }
 
@@ -155,11 +161,23 @@ export function useAuth() {
       return setError("⚠️ " + result.error);
     }
 
-    // Email verified! Clear form and switch to login
-    setOtpState({ show: false, email: "", otp: "", loading: false });
+    // OTP verified! Now create the account with email already verified
+    const pending = otpState.pendingRegistration;
+    if (!pending) {
+      return setError("⚠️ Registration data not found");
+    }
+
+    const registerErr = await registerUser(pending.username, pending.passwordHash, pending.email, pending.name, true);
+    if (registerErr) {
+      return setError("⚠️ " + registerErr);
+    }
+
+    // Account created successfully! Auto-login
+    setCurrentUser(pending.username);
+    setOtpState({ show: false, email: "", otp: "", loading: false, pendingRegistration: null });
     setCredentials({ username: "", email: "", name: "", password: "", confirmPassword: "" });
     setAuthTab("login");
-    setError("✅ Email verified! You can now login.");
+    setError("✅ Email verified! Account created - you're now logged in!");
   };
 
   const doLogout = () => {
@@ -170,6 +188,7 @@ export function useAuth() {
     setIsLockedOut(false);
     setLockoutTimeRemaining(0);
     setShowPass(false);
+    setOtpState({ show: false, email: "", otp: "", loading: false, pendingRegistration: null });
   };
 
   return {

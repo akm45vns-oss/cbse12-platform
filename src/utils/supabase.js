@@ -31,7 +31,7 @@ export async function loginUser(usernameOrEmail, passwordHash) {
   return null;
 }
 
-export async function registerUser(username, passwordHash, email, name) {
+export async function registerUser(username, passwordHash, email, name, emailVerified = false) {
   // Check if username exists
   const { data: existingUsername } = await supabase
     .from("users")
@@ -55,7 +55,7 @@ export async function registerUser(username, passwordHash, email, name) {
     email,
     name,
     password_hash: passwordHash,
-    email_verified: false,
+    email_verified: emailVerified,
     joined_at: new Date().toISOString(),
     last_login: new Date().toISOString()
   });
