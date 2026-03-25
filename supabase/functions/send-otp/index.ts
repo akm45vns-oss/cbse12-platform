@@ -44,7 +44,7 @@ serve(async (req) => {
           },
         ],
         from: {
-          email: "akmedu45@gmail.com",
+          email: "noreply@akmedu45.xyz",
           name: "AkmEdu",
         },
         subject: "Your AkmEdu Verification Code",

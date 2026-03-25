@@ -104,18 +104,20 @@ export const globalStyles = `
   }
   
   /* ===== BUTTONS ===== */
-  .opt-btn { 
-    width: 100%; 
-    text-align: left; 
-    padding: 14px 18px; 
-    border-radius: 14px; 
-    border: 2px solid #e2e8f0; 
-    background: white; 
-    color: #1e293b; 
-    font-size: 14px; 
+  .opt-btn {
+    width: 100%;
+    text-align: left;
+    padding: 16px 20px;
+    border-radius: 14px;
+    border: 2px solid #e2e8f0;
+    background: white;
+    color: #1e293b;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 1.5; 
+    line-height: 1.6;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: 48px;
+    word-wrap: break-word;
   }
   .opt-btn:hover { 
     border-color: #06b6d4; 
@@ -363,9 +365,10 @@ export const globalStyles = `
       padding: var(--spacing-xl) var(--spacing-lg); 
     }
     .opt-btn {
-      min-height: 44px;
-      padding: var(--spacing-sm) var(--spacing-md);
+      min-height: 48px;
+      padding: var(--spacing-md) var(--spacing-md);
       font-size: 13px;
+      line-height: 1.6;
     }
     .prose-notes-block {
       padding: var(--spacing-xl) var(--spacing-lg);
@@ -471,10 +474,12 @@ export const globalStyles = `
     .notes-content-pad { 
       padding: var(--spacing-lg) var(--spacing-md); 
     }
-    .opt-btn { 
-      padding: var(--spacing-md) var(--spacing-md); 
-      font-size: 13px; 
-      min-height: 44px;
+    .opt-btn {
+      padding: var(--spacing-md) var(--spacing-md);
+      font-size: 13px;
+      min-height: 48px;
+      line-height: 1.6;
+      word-wrap: break-word;
     }
     .prose-notes-block {
       padding: var(--spacing-lg) var(--spacing-md);
