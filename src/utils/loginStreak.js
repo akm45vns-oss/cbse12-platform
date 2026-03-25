@@ -1,10 +1,10 @@
 // ===== LOGIN STREAK TRACKING =====
 
-export function recordDailyActivity() {
+export function recordDailyActivity(username) {
   try {
-    const streak = getLoginStreak();
+    const streak = getLoginStreak(username);
     const today = new Date().toDateString();
-    
+
     if (streak.lastDate === today) {
       // Already recorded today
       return streak;
@@ -23,7 +23,7 @@ export function recordDailyActivity() {
         lastDate: today,
         dates: [...streak.dates, today],
       };
-      localStorage.setItem("akmedu_login_streak", JSON.stringify(newStreak));
+      localStorage.setItem(`akmedu_login_streak_${username}`, JSON.stringify(newStreak));
       return newStreak;
     } else {
       // Start new streak
@@ -33,7 +33,7 @@ export function recordDailyActivity() {
         lastDate: today,
         dates: [today],
       };
-      localStorage.setItem("akmedu_login_streak", JSON.stringify(newStreak));
+      localStorage.setItem(`akmedu_login_streak_${username}`, JSON.stringify(newStreak));
       return newStreak;
     }
   } catch (e) {
@@ -42,17 +42,17 @@ export function recordDailyActivity() {
   }
 }
 
-export function getLoginStreak() {
+export function getLoginStreak(username) {
   try {
-    const saved = localStorage.getItem("akmedu_login_streak");
+    const saved = localStorage.getItem(`akmedu_login_streak_${username}`);
     return saved ? JSON.parse(saved) : { current: 0, best: 0, lastDate: null, dates: [] };
   } catch {
     return { current: 0, best: 0, lastDate: null, dates: [] };
   }
 }
 
-export function isStreakAlive() {
-  const streak = getLoginStreak();
+export function isStreakAlive(username) {
+  const streak = getLoginStreak(username);
   if (!streak.lastDate) return false;
 
   const lastDate = new Date(streak.lastDate);
@@ -64,9 +64,9 @@ export function isStreakAlive() {
   return diffDays <= 1;
 }
 
-export function getStreakStatus() {
-  const streak = getLoginStreak();
-  const alive = isStreakAlive();
+export function getStreakStatus(username) {
+  const streak = getLoginStreak(username);
+  const alive = isStreakAlive(username);
 
   if (!alive && streak.current > 0) {
     // Streak lost
@@ -86,16 +86,16 @@ export function getStreakStatus() {
   };
 }
 
-export function resetStreak() {
+export function resetStreak(username) {
   try {
-    localStorage.setItem("akmedu_login_streak", JSON.stringify({ current: 0, best: 0, lastDate: null, dates: [] }));
+    localStorage.setItem(`akmedu_login_streak_${username}`, JSON.stringify({ current: 0, best: 0, lastDate: null, dates: [] }));
   } catch (e) {
     console.warn("Failed to reset streak:", e);
   }
 }
 
-export function getStreakDates(days = 30) {
-  const streak = getLoginStreak();
+export function getStreakDates(username, days = 30) {
+  const streak = getLoginStreak(username);
   const today = new Date();
   const dates = {};
 
