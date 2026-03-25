@@ -7,6 +7,10 @@ export function AuthView({
   setAuthTab,
   uname,
   setUname,
+  email,
+  setEmail,
+  name,
+  setName,
   pass,
   setPass,
   pass2,
@@ -226,10 +230,28 @@ export function AuthView({
             </div>
 
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {authTab === "register" && (
+                <>
+                  <div>
+                    <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Full Name</label>
+                    <input className="auth-input" value={name} onChange={e => setName(e.target.value)}
+                      placeholder="Enter your full name"
+                      onKeyDown={e => e.key === "Enter" && doRegister()} />
+                  </div>
+                  <div>
+                    <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Email</label>
+                    <input className="auth-input" type="email" value={email} onChange={e => setEmail(e.target.value)}
+                      placeholder="Enter your email address"
+                      onKeyDown={e => e.key === "Enter" && doRegister()} />
+                  </div>
+                </>
+              )}
               <div>
-                <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Username</label>
+                <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>
+                  {authTab === "register" ? "Username" : "Username or Email"}
+                </label>
                 <input className="auth-input" value={uname} onChange={e => setUname(e.target.value)}
-                  placeholder={authTab === "register" ? "Choose a unique username" : "Enter your username"}
+                  placeholder={authTab === "register" ? "Choose a unique username" : "Enter username or email"}
                   onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
               </div>
               <div>

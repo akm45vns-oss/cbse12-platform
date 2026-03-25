@@ -243,12 +243,16 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
       <AuthView
         authTab={auth.authTab}
         uname={auth.credentials.username}
+        email={auth.credentials.email}
+        name={auth.credentials.name}
         pass={auth.credentials.password}
         pass2={auth.credentials.confirmPassword}
         authErr={auth.error}
         showPass={auth.showPass}
         setAuthTab={auth.setAuthTab}
         setUname={(u) => auth.setCredentials({ ...auth.credentials, username: u })}
+        setEmail={(e) => auth.setCredentials({ ...auth.credentials, email: e })}
+        setName={(n) => auth.setCredentials({ ...auth.credentials, name: n })}
         setPass={(p) => auth.setCredentials({ ...auth.credentials, password: p })}
         setPass2={(p) => auth.setCredentials({ ...auth.credentials, confirmPassword: p })}
         setShowPass={auth.setShowPass}

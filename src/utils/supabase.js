@@ -7,41 +7,58 @@ const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // ===== SUPABASE OPERATIONS =====
-export async function loginUser(username, passwordHash) {
+export async function loginUser(usernameOrEmail, passwordHash) {
+  const input = usernameOrEmail.trim().toLowerCase();
+
+  // Try to login with username or email
   const { data, error } = await supabase
     .from("users")
     .select("username")
-    .eq("username", username)
+    .or(`username.eq.${input},email.eq.${input}`)
     .eq("password_hash", passwordHash)
     .single();
-  
-  if (error || !data) return "Invalid username or password";
-  
+
+  if (error || !data) return "Invalid username/email or password";
+
   // Update last login
-  await supabase.from("users").update({ last_login: new Date().toISOString() }).eq("username", username);
-  
+  await supabase
+    .from("users")
+    .update({ last_login: new Date().toISOString() })
+    .eq("username", data.username);
+
   return null;
 }
 
-export async function registerUser(username, passwordHash) {
+export async function registerUser(username, passwordHash, email, name) {
   // Check if username exists
-  const { data: existing } = await supabase
+  const { data: existingUsername } = await supabase
     .from("users")
     .select("username")
     .eq("username", username)
     .single();
-  
-  if (existing) return "Username already taken";
-  
+
+  if (existingUsername) return "Username already taken";
+
+  // Check if email exists
+  const { data: existingEmail } = await supabase
+    .from("users")
+    .select("email")
+    .eq("email", email)
+    .single();
+
+  if (existingEmail) return "Email already registered";
+
   const { error } = await supabase.from("users").insert({
     username,
+    email,
+    name,
     password_hash: passwordHash,
     joined_at: new Date().toISOString(),
     last_login: new Date().toISOString()
   });
-  
-  if (error) return "Registration failed";
-  
+
+  if (error) return "Registration failed: " + (error.message || "Unknown error");
+
   return null;
 }
 
