@@ -18,10 +18,110 @@ export function AuthView({
   authErr,
   showPass,
   setShowPass,
+  otpState,
+  setOtpState,
   doLogin,
   doRegister,
+  doVerifyOTP,
 }) {
   const passwordValidation = authTab === "register" ? validatePasswordStrength(pass) : null;
+
+  // If OTP verification is needed, show OTP screen
+  if (otpState.show) {
+    return (
+      <div style={{ minHeight: "100vh", width: "100%", background: "linear-gradient(135deg, #fce4ec 0%, #fdf2f8 40%, #f0f9fc 100%)", fontFamily: "'Segoe UI', system-ui, sans-serif", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px" }}>
+        <div style={{ maxWidth: "400px", width: "100%", background: "white", borderRadius: "16px", padding: "40px", boxShadow: "0 20px 60px rgba(236, 72, 153, 0.15)", border: "1.5px solid rgba(236, 72, 153, 0.1)" }}>
+          <div style={{ textAlign: "center", marginBottom: "32px" }}>
+            <div style={{ fontSize: "48px", marginBottom: "16px" }}>📧</div>
+            <h2 style={{ fontSize: "24px", fontWeight: 900, color: "#064e78", margin: "0 0 8px", letterSpacing: "-0.02em" }}>Verify Your Email</h2>
+            <p style={{ fontSize: "14px", color: "#9d174d", margin: 0, fontWeight: 500 }}>We sent a 6-digit code to {otpState.email}</p>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <div>
+              <label style={{ color: "#0369a1", fontSize: "12px", fontWeight: 800, display: "block", marginBottom: "8px", textTransform: "uppercase", letterSpacing: "0.1em" }}>Verification Code</label>
+              <input
+                type="text"
+                maxLength="6"
+                value={otpState.otp}
+                onChange={(e) => setOtpState({ ...otpState, otp: e.target.value.replace(/\D/g, "") })}
+                placeholder="000000"
+                style={{
+                  width: "100%",
+                  padding: "13px 16px",
+                  border: "1.5px solid rgba(236, 72, 153, 0.2)",
+                  borderRadius: "12px",
+                  background: "rgba(255, 255, 255, 0.8)",
+                  color: "#064e78",
+                  fontSize: "18px",
+                  fontWeight: 700,
+                  letterSpacing: "8px",
+                  textAlign: "center",
+                  outline: "none",
+                  transition: "all 0.25s cubic-bezier(0.4, 0, 0.2, 1)"
+                }}
+                onKeyDown={(e) => e.key === "Enter" && doVerifyOTP()}
+              />
+              <p style={{ fontSize: "12px", color: "#0891b2", marginTop: "8px", textAlign: "center", fontWeight: 600 }}>💡 Check your spam folder if you don't see the email</p>
+            </div>
+
+            {authErr && (
+              <div style={{ background: "linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(220, 38, 38, 0.08))", border: "1.5px solid rgba(239, 68, 68, 0.25)", color: "#991b1b", padding: "12px 16px", borderRadius: "12px", fontSize: "13px", fontWeight: 600 }}>{authErr}</div>
+            )}
+
+            <button
+              onClick={doVerifyOTP}
+              disabled={otpState.loading}
+              style={{
+                width: "100%",
+                padding: "13px 18px",
+                border: "none",
+                borderRadius: "12px",
+                background: otpState.loading ? "#cbd5e1" : "linear-gradient(135deg, #0891b2 0%, #0284c7 100%)",
+                color: "white",
+                fontSize: "15px",
+                fontWeight: 700,
+                letterSpacing: "0.02em",
+                boxShadow: "0 8px 24px rgba(236, 72, 153, 0.3)",
+                transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+                cursor: otpState.loading ? "not-allowed" : "pointer",
+                marginTop: "8px"
+              }}
+              onMouseEnter={(e) => !otpState.loading && (e.currentTarget.style.transform = "translateY(-3px)", e.currentTarget.style.boxShadow = "0 12px 32px rgba(236, 72, 153, 0.4)")}
+              onMouseLeave={(e) => !otpState.loading && (e.currentTarget.style.transform = "translateY(0)")}
+            >
+              {otpState.loading ? "⏳ Verifying..." : "✓ Verify Code"}
+            </button>
+
+            <button
+              onClick={() => {
+                setOtpState({ show: false, email: "", otp: "", loading: false });
+                setAuthTab("register");
+              }}
+              style={{
+                width: "100%",
+                padding: "13px 18px",
+                border: "1.5px solid #dbeafe",
+                borderRadius: "12px",
+                background: "white",
+                color: "#0891b2",
+                fontSize: "14px",
+                fontWeight: 600,
+                cursor: "pointer",
+                transition: "all 0.3s"
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.background = "#f0f9fc")}
+              onMouseLeave={(e) => (e.currentTarget.style.background = "white")}
+            >
+              Back to Registration
+            </button>
+          </div>
+
+          <p style={{ textAlign: "center", color: "#cbd5e1", fontSize: "12px", marginTop: "24px", fontWeight: 500, letterSpacing: "0.04em" }}>AkmEdu • Smart Study Platform</p>
+        </div>
+      </div>
+    );
+  }
   return (
     <div style={{ minHeight: "100vh", width: "100%", background: "#f0f9fc", fontFamily: "'Segoe UI', system-ui, sans-serif" }}>
       <style>{`

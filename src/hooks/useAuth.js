@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { hashPassword, validateUsername, validatePassword } from "../utils/auth";
-import { loginUser, registerUser } from "../utils/supabase";
+import { loginUser, registerUser, sendOTP, verifyOTP } from "../utils/supabase";
 import { validatePasswordStrength } from "../utils/passwordValidation";
-import { 
-  recordLoginAttempt, 
-  isAccountLocked, 
-  lockAccount, 
-  getRemainingLockoutTime, 
+import {
+  recordLoginAttempt,
+  isAccountLocked,
+  lockAccount,
+  getRemainingLockoutTime,
   resetLoginAttempts,
-  SECURITY_CONFIG 
+  SECURITY_CONFIG
 } from "../utils/rateLimiting";
 
 export function useAuth() {
@@ -26,6 +26,7 @@ export function useAuth() {
   const [isLockedOut, setIsLockedOut] = useState(false);
   const [lockoutTimeRemaining, setLockoutTimeRemaining] = useState(0);
   const [showPass, setShowPass] = useState(false);
+  const [otpState, setOtpState] = useState({ show: false, email: "", otp: "", loading: false });
 
   // Helper function to set current user and persist to localStorage
   const setCurrentUser = (user) => {
@@ -123,11 +124,39 @@ export function useAuth() {
 
     if (registerErr) return setError("⚠️ " + registerErr);
 
-    // Clear lockout on successful registration
-    resetLoginAttempts(u);
-    setCurrentUser(u);
+    // Registration successful! Now send OTP
+    setOtpState({ show: true, email: em, otp: "", loading: true });
+
+    const otpResult = await sendOTP(em);
+    setOtpState(prev => ({ ...prev, loading: false }));
+
+    if (!otpResult.success) {
+      return setError("⚠️ " + (otpResult.error || "Failed to send verification code"));
+    }
+
+    // For development: show OTP in console
+    console.log(`🔐 Development OTP: ${otpResult.otp}`);
+    setError(""); // Clear errors
+  };
+
+  const doVerifyOTP = async () => {
+    if (!otpState.otp || otpState.otp.length !== 6) {
+      return setError("❌ Please enter a valid 6-digit code");
+    }
+
+    setOtpState(prev => ({ ...prev, loading: true }));
+    const result = await verifyOTP(otpState.email, otpState.otp);
+    setOtpState(prev => ({ ...prev, loading: false }));
+
+    if (!result.success) {
+      return setError("⚠️ " + result.error);
+    }
+
+    // Email verified! Clear form and switch to login
+    setOtpState({ show: false, email: "", otp: "", loading: false });
     setCredentials({ username: "", email: "", name: "", password: "", confirmPassword: "" });
-    setShowPass(false);
+    setAuthTab("login");
+    setError("✅ Email verified! You can now login.");
   };
 
   const doLogout = () => {
@@ -148,11 +177,14 @@ export function useAuth() {
     isLockedOut,
     lockoutTimeRemaining,
     showPass,
+    otpState,
     setAuthTab,
     setCredentials,
     setShowPass,
+    setOtpState,
     doLogin,
     doRegister,
+    doVerifyOTP,
     doLogout,
   };
 }

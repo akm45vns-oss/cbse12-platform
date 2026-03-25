@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
+import { generateOTP, getOTPExpiration, isOTPExpired } from "./emailVerification";
 
 // ===== SUPABASE CONFIG =====
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
@@ -53,6 +54,7 @@ export async function registerUser(username, passwordHash, email, name) {
     email,
     name,
     password_hash: passwordHash,
+    email_verified: false,
     joined_at: new Date().toISOString(),
     last_login: new Date().toISOString()
   });
@@ -60,6 +62,87 @@ export async function registerUser(username, passwordHash, email, name) {
   if (error) return "Registration failed: " + (error.message || "Unknown error");
 
   return null;
+}
+
+/**
+ * Send OTP to email (for free, OTP is stored in DB and can be shown in development)
+ */
+export async function sendOTP(email) {
+  try {
+    const otp = generateOTP();
+    const expiresAt = getOTPExpiration();
+
+    // Store OTP in email_verifications table
+    const { error } = await supabase.from("email_verifications").upsert(
+      {
+        email,
+        otp,
+        expires_at: expiresAt,
+        created_at: new Date().toISOString()
+      },
+      { onConflict: "email" }
+    );
+
+    if (error) {
+      console.error("OTP storage error:", error);
+      return { success: false, error: "Failed to generate OTP" };
+    }
+
+    // In production, send email via Resend/SendGrid/etc
+    // For now, return OTP for development (you'll integrate email service later)
+    console.log(`📧 OTP for ${email}: ${otp}`); // Development only
+
+    return { success: true, otp }; // OTP returned for testing (remove in production)
+  } catch (error) {
+    console.error("Send OTP error:", error);
+    return { success: false, error: "Failed to send verification code" };
+  }
+}
+
+/**
+ * Verify OTP and mark email as verified
+ */
+export async function verifyOTP(email, otp) {
+  try {
+    // Get stored OTP
+    const { data: verification, error: fetchError } = await supabase
+      .from("email_verifications")
+      .select("otp, expires_at")
+      .eq("email", email)
+      .single();
+
+    if (fetchError || !verification) {
+      return { success: false, error: "No verification request found" };
+    }
+
+    // Check if OTP expired
+    if (isOTPExpired(verification.expires_at)) {
+      return { success: false, error: "OTP expired. Request a new one." };
+    }
+
+    // Check if OTP matches
+    if (verification.otp !== otp) {
+      return { success: false, error: "Invalid OTP. Please try again." };
+    }
+
+    // Mark email as verified in users table
+    const { error: updateError } = await supabase
+      .from("users")
+      .update({ email_verified: true })
+      .eq("email", email);
+
+    if (updateError) {
+      return { success: false, error: "Verification failed" };
+    }
+
+    // Delete used OTP
+    await supabase.from("email_verifications").delete().eq("email", email);
+
+    return { success: true };
+  } catch (error) {
+    console.error("Verify OTP error:", error);
+    return { success: false, error: "Verification failed" };
+  }
 }
 
 export async function loadProgress(username) {
