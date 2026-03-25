@@ -170,6 +170,8 @@ RULES:
 - Explanations: 2-3 sentences`;
 
   try {
+    console.log(`Generating sets for ${subject} - ${chapter}...`);
+
     const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -184,29 +186,38 @@ RULES:
       })
     });
 
+    console.log(`Groq response status: ${response.status}`);
+
     if (!response.ok) {
       const err = await response.json();
-      throw new Error(err.error?.message || "Groq API error");
+      console.error(`Groq API error:`, err);
+      throw new Error(err.error?.message || `Groq API error ${response.status}`);
     }
 
     const data = await response.json();
+    console.log(`Response received, extracting text...`);
+
     const text = data.choices?.[0]?.message?.content || "";
+    if (!text) throw new Error("Empty response from Groq");
+
+    console.log(`Text length: ${text.length}, first 200 chars:`, text.substring(0, 200));
 
     // Extract JSON
     let cleaned = text.trim().replace(/```json\n?|```\n?/g, "").trim();
     const start = cleaned.indexOf("[");
-    if (start === -1) throw new Error("No JSON array found");
+    if (start === -1) throw new Error("No JSON array found in response");
 
     cleaned = cleaned.slice(start);
     const lastGood = cleaned.lastIndexOf("},");
     if (lastGood === -1) {
       const onlyOne = cleaned.lastIndexOf("}");
-      if (onlyOne === -1) throw new Error("No complete JSON objects");
+      if (onlyOne === -1) throw new Error("No complete JSON objects found");
       cleaned = cleaned.slice(0, onlyOne + 1) + "]";
     } else {
       cleaned = cleaned.slice(0, lastGood + 1) + "]";
     }
 
+    console.log(`Parsing JSON, cleaned length: ${cleaned.length}`);
     const sets = JSON.parse(cleaned);
 
     // Validate
@@ -220,9 +231,10 @@ RULES:
       }
     }
 
+    console.log(`✓ Successfully generated 15 sets for ${chapter}`);
     return sets;
   } catch (err) {
-    console.error(`Error generating sets for ${chapter}:`, err.message);
+    console.error(`❌ Error generating sets for ${chapter}:`, err.message);
     return null;
   }
 }
