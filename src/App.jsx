@@ -144,6 +144,12 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
     setQIdx(0);
     setQuizErr("");
 
+    // Validate question has all required fields
+    const isValidQuestion = (q) => {
+      return q && q.q && Array.isArray(q.opts) && q.opts.length === 4 &&
+             typeof q.ans === 'number' && q.ans >= 0 && q.ans <= 3 && q.exp;
+    };
+
     const generateBatch = async (batch) => {
       const prompt = `Generate exactly 15 ORIGINAL multiple-choice questions about "${chap}" in ${subj}. This is batch ${batch} of 2 — generate questions ${
         batch === 1 ? "1–15" : "16–30"
@@ -164,13 +170,22 @@ Rules:
     try {
       setLoadMsg("Generating Part 1 of 2...");
       const text1 = await generateBatch(1);
-      const batch1 = extractJSON(text1);
-      
+      let batch1 = extractJSON(text1).filter(isValidQuestion).slice(0, 15);
+
       setLoadMsg("Generating Part 2 of 2...");
       const text2 = await generateBatch(2);
-      const batch2 = extractJSON(text2);
-      
-      setQuiz([...batch1, ...batch2]);
+      let batch2 = extractJSON(text2).filter(isValidQuestion).slice(0, 15);
+
+      // Ensure exactly 30 questions
+      const allQuestions = [...batch1, ...batch2];
+
+      if (allQuestions.length < 30) {
+        setQuizErr(`Generated only ${allQuestions.length} questions instead of 30. Please try again.`);
+        setLoading(false);
+        return;
+      }
+
+      setQuiz(allQuestions.slice(0, 30));
     } catch (e) {
       setQuizErr("Failed to generate quiz: " + e.message);
     }
