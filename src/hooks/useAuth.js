@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { hashPassword, validateUsername, validatePassword } from "../utils/auth";
-import { loginUser, registerUser, sendOTP, verifyOTP } from "../utils/supabase";
+import { loginUser, registerUser, sendOTP, verifyOTP, sendPasswordResetOTP, verifyPasswordResetOTP, resetPassword } from "../utils/supabase";
 import { validatePasswordStrength } from "../utils/passwordValidation";
 import {
   recordLoginAttempt,
@@ -27,6 +27,7 @@ export function useAuth() {
   const [lockoutTimeRemaining, setLockoutTimeRemaining] = useState(0);
   const [showPass, setShowPass] = useState(false);
   const [otpState, setOtpState] = useState({ show: false, email: "", otp: "", loading: false, pendingRegistration: null });
+  const [resetPasswordData, setResetPasswordData] = useState({ email: "", otp: "", newPassword: "", confirmPassword: "", loading: false, step: "email" });
 
   // Helper function to set current user and persist to localStorage
   const setCurrentUser = (user) => {
@@ -191,6 +192,88 @@ export function useAuth() {
     setOtpState({ show: false, email: "", otp: "", loading: false, pendingRegistration: null });
   };
 
+  const doForgotPasswordRequest = async () => {
+    setError("");
+    const em = resetPasswordData.email.trim().toLowerCase();
+
+    // Validate email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!em || !emailRegex.test(em)) {
+      return setError("❌ Please enter a valid email address");
+    }
+
+    setResetPasswordData(prev => ({ ...prev, loading: true }));
+    const result = await sendPasswordResetOTP(em);
+    setResetPasswordData(prev => ({ ...prev, loading: false }));
+
+    if (!result.success) {
+      return setError("⚠️ " + (result.error || "Failed to send reset code"));
+    }
+
+    // Show OTP in console for development
+    if (result.otp) {
+      console.log(`🔐 Development Reset Code: ${result.otp}`);
+    }
+
+    // Move to OTP verification step
+    setResetPasswordData(prev => ({ ...prev, step: "otp", email: em }));
+  };
+
+  const doForgotPasswordVerifyOTP = async () => {
+    setError("");
+    if (!resetPasswordData.otp || resetPasswordData.otp.length !== 6) {
+      return setError("❌ Please enter a valid 6-digit code");
+    }
+
+    setResetPasswordData(prev => ({ ...prev, loading: true }));
+    const result = await verifyPasswordResetOTP(resetPasswordData.email, resetPasswordData.otp);
+    setResetPasswordData(prev => ({ ...prev, loading: false }));
+
+    if (!result.success) {
+      return setError("⚠️ " + result.error);
+    }
+
+    // Move to password reset step
+    setResetPasswordData(prev => ({ ...prev, step: "newPassword" }));
+  };
+
+  const doForgotPasswordReset = async () => {
+    setError("");
+    const newPass = resetPasswordData.newPassword;
+    const confirmPass = resetPasswordData.confirmPassword;
+
+    // Validate password strength
+    const passwordStrength = validatePasswordStrength(newPass);
+    if (!passwordStrength.isValid) {
+      return setError(passwordStrength.errors[0]);
+    }
+
+    // Check if passwords match
+    if (newPass !== confirmPass) {
+      return setError("❌ Passwords do not match");
+    }
+
+    setResetPasswordData(prev => ({ ...prev, loading: true }));
+    const hashedPassword = await hashPassword(newPass);
+    const result = await resetPassword(resetPasswordData.email, hashedPassword);
+    setResetPasswordData(prev => ({ ...prev, loading: false }));
+
+    if (!result.success) {
+      return setError("⚠️ " + (result.error || "Failed to reset password"));
+    }
+
+    // Success! Reset state and go back to login
+    setResetPasswordData({ email: "", otp: "", newPassword: "", confirmPassword: "", loading: false, step: "email" });
+    setAuthTab("login");
+    setError("✅ Password reset successfully! Please login with your new password.");
+  };
+
+  const cancelForgotPassword = () => {
+    setResetPasswordData({ email: "", otp: "", newPassword: "", confirmPassword: "", loading: false, step: "email" });
+    setError("");
+    setAuthTab("login");
+  };
+
   return {
     currentUser,
     authTab,
@@ -200,13 +283,19 @@ export function useAuth() {
     lockoutTimeRemaining,
     showPass,
     otpState,
+    resetPasswordData,
     setAuthTab,
     setCredentials,
     setShowPass,
     setOtpState,
+    setResetPasswordData,
     doLogin,
     doRegister,
     doVerifyOTP,
     doLogout,
+    doForgotPasswordRequest,
+    doForgotPasswordVerifyOTP,
+    doForgotPasswordReset,
+    cancelForgotPassword,
   };
 }

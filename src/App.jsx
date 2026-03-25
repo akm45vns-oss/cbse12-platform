@@ -265,6 +265,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
         authErr={auth.error}
         showPass={auth.showPass}
         otpState={auth.otpState}
+        resetPasswordData={auth.resetPasswordData}
         setAuthTab={auth.setAuthTab}
         setUname={(u) => auth.setCredentials({ ...auth.credentials, username: u })}
         setEmail={(e) => auth.setCredentials({ ...auth.credentials, email: e })}
@@ -273,9 +274,14 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
         setPass2={(p) => auth.setCredentials({ ...auth.credentials, confirmPassword: p })}
         setShowPass={auth.setShowPass}
         setOtpState={auth.setOtpState}
+        setResetPasswordData={auth.setResetPasswordData}
         doLogin={auth.doLogin}
         doRegister={auth.doRegister}
         doVerifyOTP={auth.doVerifyOTP}
+        doForgotPasswordRequest={auth.doForgotPasswordRequest}
+        doForgotPasswordVerifyOTP={auth.doForgotPasswordVerifyOTP}
+        doForgotPasswordReset={auth.doForgotPasswordReset}
+        cancelForgotPassword={auth.cancelForgotPassword}
       />
     );
   }

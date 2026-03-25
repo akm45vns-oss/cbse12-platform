@@ -1,6 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 import { generateOTP, getOTPExpiration, isOTPExpired } from "./emailVerification";
-import { sendOTPEmail } from "./emailService";
+import { sendOTPEmail, sendPasswordResetEmail } from "./emailService";
 
 // ===== SUPABASE CONFIG =====
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
@@ -226,7 +226,115 @@ export async function getChapterNotes(subject, chapter) {
     .eq("subject", subject)
     .eq("chapter", chapter)
     .single();
-  
+
   if (error || !data) return null;
   return data.notes;
+}
+
+// ===== PASSWORD RESET =====
+export async function sendPasswordResetOTP(email) {
+  try {
+    // Check if email exists
+    const { data: user, error: userError } = await supabase
+      .from("users")
+      .select("username")
+      .eq("email", email)
+      .single();
+
+    if (userError || !user) {
+      return { success: false, error: "Email not found in our system" };
+    }
+
+    const otp = generateOTP();
+    const expiresAtMs = Date.now() + 15 * 60 * 1000; // 15 minutes
+
+    // Store OTP in password_resets table
+    const { error } = await supabase.from("password_resets").upsert(
+      {
+        email,
+        otp,
+        expires_at: new Date(expiresAtMs).toISOString(),
+        created_at: new Date().toISOString()
+      },
+      { onConflict: "email" }
+    );
+
+    if (error) {
+      console.error("Password reset OTP storage error:", error);
+      return { success: false, error: "Failed to generate reset code" };
+    }
+
+    // Send email with reset OTP
+    const emailResult = await sendPasswordResetEmail(email, otp);
+
+    if (!emailResult.success) {
+      return { success: false, error: emailResult.error };
+    }
+
+    // Return OTP in development mode only
+    if (emailResult.development) {
+      return { success: true, otp };
+    }
+
+    return { success: true };
+  } catch (error) {
+    console.error("Send password reset OTP error:", error);
+    return { success: false, error: "Failed to send reset code" };
+  }
+}
+
+export async function verifyPasswordResetOTP(email, otp) {
+  try {
+    const { data: verification, error: fetchError } = await supabase
+      .from("password_resets")
+      .select("otp, expires_at")
+      .eq("email", email)
+      .single();
+
+    if (fetchError || !verification) {
+      return { success: false, error: "No reset request found" };
+    }
+
+    const expiresAtStr = verification.expires_at.endsWith('Z')
+      ? verification.expires_at
+      : verification.expires_at + 'Z';
+
+    const expiresAt = new Date(expiresAtStr);
+    const now = new Date();
+
+    if (now > expiresAt) {
+      return { success: false, error: "Reset code expired. Request a new one." };
+    }
+
+    if (verification.otp !== otp) {
+      return { success: false, error: "Invalid reset code. Please try again." };
+    }
+
+    return { success: true };
+  } catch (error) {
+    console.error("Verify password reset OTP error:", error);
+    return { success: false, error: "Verification failed" };
+  }
+}
+
+export async function resetPassword(email, newPasswordHash) {
+  try {
+    // Update password
+    const { error: updateError } = await supabase
+      .from("users")
+      .update({ password_hash: newPasswordHash })
+      .eq("email", email);
+
+    if (updateError) {
+      return { success: false, error: "Failed to reset password" };
+    }
+
+    // Delete used reset token
+    await supabase.from("password_resets").delete().eq("email", email);
+
+    return { success: true };
+  } catch (error) {
+    console.error("Reset password error:", error);
+    return { success: false, error: "Password reset failed" };
+  }
 }

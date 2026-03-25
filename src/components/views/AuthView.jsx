@@ -20,11 +20,16 @@ export function AuthView({
   setShowPass,
   otpState,
   setOtpState,
+  resetPasswordData,
+  setResetPasswordData,
   doLogin,
   doRegister,
   doVerifyOTP,
+  doForgotPasswordRequest,
+  doForgotPasswordVerifyOTP,
+  doForgotPasswordReset,
+  cancelForgotPassword,
 }) {
-  const passwordValidation = authTab === "register" ? validatePasswordStrength(pass) : null;
 
   // If OTP verification is needed, show OTP screen
   if (otpState.show) {
@@ -312,17 +317,17 @@ export function AuthView({
           <div style={{ width: "100%" }}>
             <div style={{ marginBottom: 32 }}>
               <h2 style={{ color: "#064e78", fontSize: 24, fontWeight: 900, margin: "0 0 5px", letterSpacing: "-0.02em" }}>
-                {authTab === "login" ? "Welcome back 👋" : "Create Account ✨"}
+                {authTab === "login" ? "Welcome back 👋" : authTab === "register" ? "Create Account ✨" : "Reset Password 🔑"}
               </h2>
               <p style={{ color: "#9d174d", fontSize: 14, margin: 0, fontWeight: 500 }}>
-                {authTab === "login" ? "Sign in to continue your preparation" : "Join thousands of Class 12 students"}
+                {authTab === "login" ? "Sign in to continue your preparation" : authTab === "register" ? "Join thousands of Class 12 students" : "Recover access to your account"}
               </p>
             </div>
 
             {/* Tabs */}
             <div style={{ display: "flex", background: "rgba(15, 23, 42, 0.05)", border: "1.5px solid rgba(236, 72, 153, 0.15)", borderRadius: 14, padding: 5, marginBottom: 32, backdropFilter: "blur(10px)" }}>
-              {[["login", "🔑 Sign In"], ["register", "✨ Register"]].map(([t, label]) => (
-                <button key={t} className="tab-btn" onClick={() => { setAuthTab(t); }}
+              {[["login", "🔑 Sign In"], ["register", "✨ Register"], ["forgot", "🔑 Forgot"]].map(([t, label]) => (
+                <button key={t} className="tab-btn" onClick={() => { setAuthTab(t); setResetPasswordData({ email: "", otp: "", newPassword: "", confirmPassword: "", loading: false, step: "email" }); }}
                   style={{ background: authTab === t ? "linear-gradient(135deg, #0891b2, #0284c7)" : "transparent", color: authTab === t ? "white" : "#9d174d", boxShadow: authTab === t ? "0 4px 12px rgba(236, 72, 153, 0.2)" : "none" }}>
                   {label}
                 </button>
@@ -346,64 +351,139 @@ export function AuthView({
                   </div>
                 </>
               )}
-              <div>
-                <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>
-                  {authTab === "register" ? "Username" : "Username or Email"}
-                </label>
-                <input className="auth-input" value={uname} onChange={e => setUname(e.target.value)}
-                  placeholder={authTab === "register" ? "Choose a unique username" : "Enter username or email"}
-                  onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
-              </div>
-              <div>
-                <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Password</label>
-                <div style={{ position: "relative" }}>
-                  <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)}
-                    placeholder={authTab === "register" ? "Min 8 chars, mixed case, numbers, symbols" : "Enter your password"}
-                    style={{ paddingRight: 48 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
-                  <button onClick={() => setShowPass(s => !s)} style={{ position: "absolute", right: 14, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#0369a1", fontSize: 18, cursor: "pointer", padding: "4px 8px" }}>
-                    {showPass ? "🙈" : "👁️"}
+
+              {authTab === "forgot" ? (
+                <>
+                  {resetPasswordData.step === "email" && (
+                    <>
+                      <p style={{ color: "#9d174d", fontSize: 14, fontWeight: 500, marginBottom: 8 }}>Enter the email address associated with your account</p>
+                      <div>
+                        <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Email Address</label>
+                        <input className="auth-input" type="email" value={resetPasswordData.email} onChange={e => setResetPasswordData({ ...resetPasswordData, email: e.target.value })}
+                          placeholder="Enter your email address"
+                          onKeyDown={e => e.key === "Enter" && doForgotPasswordRequest()} />
+                      </div>
+                    </>
+                  )}
+
+                  {resetPasswordData.step === "otp" && (
+                    <>
+                      <p style={{ color: "#9d174d", fontSize: 14, fontWeight: 500, marginBottom: 8 }}>We sent a 6-digit reset code to your email</p>
+                      <div>
+                        <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Reset Code</label>
+                        <input className="auth-input" type="text" maxLength="6" value={resetPasswordData.otp} onChange={e => setResetPasswordData({ ...resetPasswordData, otp: e.target.value.replace(/\D/g, "") })}
+                          placeholder="000000"
+                          style={{ letterSpacing: "8px", fontSize: "18px", fontWeight: 700, textAlign: "center" }}
+                          onKeyDown={e => e.key === "Enter" && doForgotPasswordVerifyOTP()} />
+                      </div>
+                    </>
+                  )}
+
+                  {resetPasswordData.step === "newPassword" && (
+                    <>
+                      <p style={{ color: "#9d174d", fontSize: 14, fontWeight: 500, marginBottom: 8 }}>Set your new password</p>
+                      <div>
+                        <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>New Password</label>
+                        <input className="auth-input" type="password" value={resetPasswordData.newPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, newPassword: e.target.value })}
+                          placeholder="Min 8 chars, mixed case, numbers, symbols" />
+                      </div>
+                      <div>
+                        <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Confirm Password</label>
+                        <input className="auth-input" type="password" value={resetPasswordData.confirmPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, confirmPassword: e.target.value })}
+                          placeholder="Re-enter password"
+                          onKeyDown={e => e.key === "Enter" && doForgotPasswordReset()} />
+                      </div>
+                    </>
+                  )}
+
+                  {authErr && (
+                    <div style={{ background: "linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(220, 38, 38, 0.08))", border: "1.5px solid rgba(239, 68, 68, 0.25)", color: "#991b1b", padding: "12px 16px", borderRadius: 12, fontSize: 13, fontWeight: 600 }}>{authErr}</div>
+                  )}
+
+                  <button className="auth-btn" onClick={
+                    resetPasswordData.step === "email" ? doForgotPasswordRequest :
+                    resetPasswordData.step === "otp" ? doForgotPasswordVerifyOTP :
+                    doForgotPasswordReset
+                  } style={{ marginTop: 8 }} disabled={resetPasswordData.loading}>
+                    {resetPasswordData.loading ? "⏳ Processing..." :
+                    resetPasswordData.step === "email" ? "Send Reset Code →" :
+                    resetPasswordData.step === "otp" ? "Verify Code →" :
+                    "Reset Password ✓"}
                   </button>
-                </div>
-                {authTab === "register" && pass && (
-                  <div style={{ marginTop: 12 }}>
-                    <div style={{display: "flex", alignItems: "center", gap: 10}}>
-                      <div style={{flex: 1, height: 6, background: "#e2e8f0", borderRadius: 99, overflow: "hidden"}}>
-                        <div style={{width: `${passwordValidation.strength.percent}%`, height: "100%", background: passwordValidation.strength.color, transition: "width 0.3s cubic-bezier(0.4, 0, 0.2, 1)"}} />
-                      </div>
-                      <span style={{fontSize: 12, fontWeight: 700, color: passwordValidation.strength.color, minWidth: 80}}>{passwordValidation.strength.level}</span>
+
+                  <button onClick={cancelForgotPassword} style={{ width: "100%", padding: "13px 18px", border: "1.5px solid #dbeafe", borderRadius: 12, background: "white", color: "#0891b2", fontSize: 14, fontWeight: 600, cursor: "pointer", marginTop: 8 }}>
+                    Back to Login
+                  </button>
+                </>
+              ) : (
+                <>
+                  {authTab !== "forgot" && (
+                    <div>
+                      <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>
+                        {authTab === "register" ? "Username" : "Username or Email"}
+                      </label>
+                      <input className="auth-input" value={uname} onChange={e => setUname(e.target.value)}
+                        placeholder={authTab === "register" ? "Choose a unique username" : "Enter username or email"}
+                        onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
                     </div>
-                    {!passwordValidation.isValid && (
-                      <div style={{marginTop: 10}}>
-                        {passwordValidation.errors.map((err, i) => (
-                          <div key={i} style={{fontSize: 12, color: "#ef4444", marginBottom: 5, fontWeight: 500}}>❌ {err}</div>
-                        ))}
+                  )}
+                  <div>
+                    <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Password</label>
+                    <div style={{ position: "relative" }}>
+                      <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)}
+                        placeholder={authTab === "register" ? "Min 8 chars, mixed case, numbers, symbols" : "Enter your password"}
+                        style={{ paddingRight: 48 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
+                      <button onClick={() => setShowPass(s => !s)} style={{ position: "absolute", right: 14, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#0369a1", fontSize: 18, cursor: "pointer", padding: "4px 8px" }}>
+                        {showPass ? "🙈" : "👁️"}
+                      </button>
+                    </div>
+                    {authTab === "register" && pass && (
+                      <div style={{ marginTop: 12 }}>
+                        <div style={{display: "flex", alignItems: "center", gap: 10}}>
+                          <div style={{flex: 1, height: 6, background: "#e2e8f0", borderRadius: 99, overflow: "hidden"}}>
+                            <div style={{width: `${validatePasswordStrength(pass).strength.percent}%`, height: "100%", background: validatePasswordStrength(pass).strength.color, transition: "width 0.3s cubic-bezier(0.4, 0, 0.2, 1)"}} />
+                          </div>
+                          <span style={{fontSize: 12, fontWeight: 700, color: validatePasswordStrength(pass).strength.color, minWidth: 80}}>{validatePasswordStrength(pass).strength.level}</span>
+                        </div>
+                        {!validatePasswordStrength(pass).isValid && (
+                          <div style={{marginTop: 10}}>
+                            {validatePasswordStrength(pass).errors.map((err, i) => (
+                              <div key={i} style={{fontSize: 12, color: "#ef4444", marginBottom: 5, fontWeight: 500}}>❌ {err}</div>
+                            ))}
+                          </div>
+                        )}
+                        {validatePasswordStrength(pass).isValid && (
+                          <div style={{marginTop: 10, fontSize: 12, color: "#16a34a", fontWeight: 600}}>✅ Password is strong!</div>
+                        )}
                       </div>
-                    )}
-                    {passwordValidation.isValid && (
-                      <div style={{marginTop: 10, fontSize: 12, color: "#16a34a", fontWeight: 600}}>✅ Password is strong!</div>
                     )}
                   </div>
-                )}
-              </div>
-              {authTab === "register" && (
-                <div>
-                  <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Confirm Password</label>
-                  <input className="auth-input" type="password" value={pass2} onChange={e => setPass2(e.target.value)}
-                    placeholder="Re-enter password" onKeyDown={e => e.key === "Enter" && doRegister()} />
-                </div>
+                  {authTab === "register" && (
+                    <div>
+                      <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Confirm Password</label>
+                      <input className="auth-input" type="password" value={pass2} onChange={e => setPass2(e.target.value)}
+                        placeholder="Re-enter password" onKeyDown={e => e.key === "Enter" && doRegister()} />
+                    </div>
+                  )}
+                  {authErr && (
+                    <div style={{ background: "linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(220, 38, 38, 0.08))", border: "1.5px solid rgba(239, 68, 68, 0.25)", color: "#991b1b", padding: "12px 16px", borderRadius: 12, fontSize: 13, fontWeight: 600 }}>{authErr}</div>
+                  )}
+                  <button className="auth-btn" onClick={authTab === "login" ? doLogin : doRegister} style={{ marginTop: 8 }}>
+                    {authTab === "login" ? "Sign In →" : "Create Account ✨"}
+                  </button>
+                </>
               )}
-              {authErr && (
-                <div style={{ background: "linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(220, 38, 38, 0.08))", border: "1.5px solid rgba(239, 68, 68, 0.25)", color: "#991b1b", padding: "12px 16px", borderRadius: 12, fontSize: 13, fontWeight: 600 }}>{authErr}</div>
-              )}
-              <button className="auth-btn" onClick={authTab === "login" ? doLogin : doRegister} style={{ marginTop: 8 }}>
-                {authTab === "login" ? "Sign In →" : "Create Account ✨"}
-              </button>
             </div>
 
             {authTab === "login" && (
-              <p style={{ textAlign: "center", color: "#9d174d", fontSize: 14, marginTop: 22, marginBottom: 0, fontWeight: 500 }}>
-                New here? <button onClick={() => setAuthTab("register")} style={{ background: "none", border: "none", color: "#0891b2", fontWeight: 700, cursor: "pointer", fontSize: "inherit" }}>Create an account</button>
-              </p>
+              <>
+                <p style={{ textAlign: "center", color: "#9d174d", fontSize: 14, marginTop: 22, marginBottom: 12, fontWeight: 500 }}>
+                  New here? <button onClick={() => setAuthTab("register")} style={{ background: "none", border: "none", color: "#0891b2", fontWeight: 700, cursor: "pointer", fontSize: "inherit" }}>Create an account</button>
+                </p>
+                <p style={{ textAlign: "center", color: "#9d174d", fontSize: 14, marginBottom: 0, fontWeight: 500 }}>
+                  <button onClick={() => setAuthTab("forgot")} style={{ background: "none", border: "none", color: "#0891b2", fontWeight: 700, cursor: "pointer", fontSize: "inherit" }}>Forgot your password?</button>
+                </p>
+              </>
             )}
             <p style={{ textAlign: "center", color: "#cbd5e1", fontSize: 12, marginTop: 32, fontWeight: 500, letterSpacing: "0.04em" }}>AkmEdu45 • Smart Study Platform • 12 Subjects • All Chapters</p>
           </div>
