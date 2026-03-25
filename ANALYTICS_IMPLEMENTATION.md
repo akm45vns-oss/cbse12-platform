@@ -207,7 +207,7 @@ window.gtag('event', 'test_event', {
 
 ### View Real-time Data
 1. Log in to [Google Analytics 4](https://analytics.google.com/)
-2. Select your property (AkmEdu)
+2. Select your property (AkmEdu45)
 3. Click **Real-time** on the left sidebar
 4. Perform actions on your website
 5. Data should appear within 1-2 seconds

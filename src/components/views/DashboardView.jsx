@@ -12,7 +12,7 @@ export function DashboardView({ stats, overallPct, currentUser, onSelectSubject,
     <div>
       <div style={{ marginBottom: 36 }}>
         <h1 style={{ fontSize: "clamp(22px,5vw,28px)", fontWeight: 900, color: isDark ? "#22d3ee" : "#064e78", margin: 0, letterSpacing: "-0.02em", lineHeight: 1.2 }}>Welcome back, <span style={{color: "#0891b2"}}>{currentUser}</span>! 👋</h1>
-        <p style={{ color: isDark ? "#cbd5e1" : "#9d174d", marginTop: 8, fontSize: "clamp(14px,2.5vw,16px)", fontWeight: 500 }}>AkmEdu - Comprehensive Study Preparation · All Subjects</p>
+        <p style={{ color: isDark ? "#cbd5e1" : "#9d174d", marginTop: 8, fontSize: "clamp(14px,2.5vw,16px)", fontWeight: 500 }}>AkmEdu45 - Comprehensive Study Preparation · All Subjects</p>
       </div>
 
       {/* Search Bar */}

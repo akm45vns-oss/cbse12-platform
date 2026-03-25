@@ -1,8 +1,8 @@
-# AkmEdu - Copyright & Compliance Statement
+# AkmEdu45 - Copyright & Compliance Statement
 
 ## 📜 Content Ownership & Original Material
 
-**AkmEdu** generates and provides **ORIGINAL educational content** created independently for the purpose of student learning and exam preparation.
+**AkmEdu45** generates and provides **ORIGINAL educational content** created independently for the purpose of student learning and exam preparation.
 
 ### ✅ What This Means
 
@@ -27,7 +27,7 @@
 ### ⚠️ Important Disclaimers
 
 **For Reference and Learning Only:**
-- AkmEdu uses subject matter knowledge to generate educational content
+- AkmEdu45 uses subject matter knowledge to generate educational content
 - Content is designed for Class 12 standard students
 - All material is created independently for educational purposes
 
@@ -43,7 +43,7 @@
 
 ### 📋 Intellectual Property
 
-- **AkmEdu IP**: All original content, quiz questions, sample papers, and learning features
+- **AkmEdu45 IP**: All original content, quiz questions, sample papers, and learning features
 - **User Generated Content**: Forum discussions, notes created by users
 - **Third-Party Services**: Supabase, Groq API, ImgBB (used with proper licenses)
 

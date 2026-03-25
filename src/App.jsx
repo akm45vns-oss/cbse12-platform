@@ -331,7 +331,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
                 flexShrink: 0,
               }}
             >
-              🎓 <span style={{ letterSpacing: "-0.02em" }}>AkmEdu</span>
+              🎓 <span style={{ letterSpacing: "-0.02em" }}>AkmEdu45</span>
             </button>
             {nav.subject && (
               <span
@@ -702,7 +702,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
             </a>
           ))}
           <span style={{ fontSize: 10, color: "#dbeafe", opacity: 0.7 }}>
-            © 2026 · AkmEdu · Smart Study Platform
+            © 2026 · AkmEdu45 · Smart Study Platform
           </span>
         </div>
       </footer>

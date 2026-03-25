@@ -45,13 +45,13 @@ serve(async (req) => {
         ],
         from: {
           email: "noreply@akmedu45.xyz",
-          name: "AkmEdu",
+          name: "AkmEdu45",
         },
-        subject: "Your AkmEdu Verification Code",
+        subject: "Your AkmEdu45 Verification Code",
         content: [
           {
             type: "text/plain",
-            value: `Welcome to AkmEdu! Your verification code is: ${otp}\n\nThis code will expire in 15 minutes.\n\nIf you didn't request this code, please ignore this email.`,
+            value: `Welcome to AkmEdu45! Your verification code is: ${otp}\n\nThis code will expire in 15 minutes.\n\nIf you didn't request this code, please ignore this email.`,
           },
           {
             type: "text/html",
@@ -59,7 +59,7 @@ serve(async (req) => {
               <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
                 <h2 style="color: #0369a1; text-align: center;">Email Verification</h2>
                 <p style="color: #64748b; font-size: 16px;">
-                  Welcome to AkmEdu! Your verification code is:
+                  Welcome to AkmEdu45! Your verification code is:
                 </p>
                 <div style="background: #f0f9fc; border: 2px solid #06b6d4; border-radius: 8px; padding: 20px; text-align: center; margin: 20px 0;">
                   <code style="font-size: 28px; font-weight: bold; color: #0369a1; letter-spacing: 6px;">

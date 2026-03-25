@@ -24,7 +24,7 @@ export function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji
             <div>
               <Badge color={S?.accent || "#0891b2"}>{subject}</Badge>
               <h2 style={{ fontSize: 22, fontWeight: 900, color: "#064e78", margin: "6px 0 2px", letterSpacing: "-0.02em" }}>{chapter}</h2>
-              <div style={{ fontSize: 12, color: "#06b6d4", fontWeight: 600 }}>AkmEdu · Study Notes</div>
+              <div style={{ fontSize: 12, color: "#06b6d4", fontWeight: 600 }}>AkmEdu45 · Study Notes</div>
             </div>
             <div style={{ display: "flex", gap: 10 }}>
               <button onClick={() => window.print()} style={{ background: "#f8fafc", border: "1px solid #cbd5e1", borderRadius: 10, padding: "9px 16px", color: "#334155", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>📥 PDF</button>

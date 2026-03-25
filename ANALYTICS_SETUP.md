@@ -1,4 +1,4 @@
-# Analytics Setup Guide for AkmEdu
+# Analytics Setup Guide for AkmEdu45
 
 ## Overview
 This guide covers setting up Google Analytics 4 (GA4) to track user behavior, conversion funnels, and platform metrics.
@@ -7,12 +7,12 @@ This guide covers setting up Google Analytics 4 (GA4) to track user behavior, co
 
 1. Go to [Google Analytics](https://analytics.google.com/)
 2. Create a new property:
-   - Property name: `AkmEdu`
+   - Property name: `AkmEdu45`
    - Reporting timezone: India (IST)
    - Currency: INR
 3. Create web data stream:
    - Website URL: `https://yourdomain.com`
-   - Stream name: `AkmEdu Web`
+   - Stream name: `AkmEdu45 Web`
 4. Copy the **MEASUREMENT ID** (starts with `G-`)
    - Format: `G-XXXXXXXXXX`
 
