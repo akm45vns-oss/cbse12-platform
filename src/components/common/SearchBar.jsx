@@ -1,41 +1,58 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { CURRICULUM } from "../../constants/curriculum";
+import { createDebouncedQuery } from "../../utils/queryOptimization";
 
 export function SearchBar({ onSelectChapter, onSelectSubject }) {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
+  const debouncedSearchRef = useRef(null);
 
+  // Create debounced search function on mount
+  useEffect(() => {
+    debouncedSearchRef.current = createDebouncedQuery(
+      async (searchQuery) => {
+        if (!searchQuery.trim()) {
+          return [];
+        }
+
+        const q = searchQuery.toLowerCase();
+        const foundChapters = [];
+
+        // Search across all subjects and chapters
+        Object.entries(CURRICULUM).forEach(([subjectName, data]) => {
+          data.units?.forEach((unit) => {
+            unit.chapters?.forEach((chapter) => {
+              if (
+                chapter.toLowerCase().includes(q) ||
+                subjectName.toLowerCase().includes(q)
+              ) {
+                foundChapters.push({
+                  subject: subjectName,
+                  chapter,
+                  unit: unit.name,
+                });
+              }
+            });
+          });
+        });
+
+        return foundChapters.slice(0, 10);
+      },
+      300 // 300ms debounce delay
+    );
+  }, []);
+
+  // Debounced search on query change
   useEffect(() => {
     if (!query.trim()) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
       setResults([]);
       return;
     }
 
-    const q = query.toLowerCase();
-    const foundChapters = [];
-
-    // Search across all subjects and chapters
-    Object.entries(CURRICULUM).forEach(([subjectName, data]) => {
-      // Chapters are nested inside units
-      data.units?.forEach((unit) => {
-        unit.chapters?.forEach((chapter) => {
-          if (
-            chapter.toLowerCase().includes(q) ||
-            subjectName.toLowerCase().includes(q)
-          ) {
-            foundChapters.push({
-              subject: subjectName,
-              chapter,
-              unit: unit.name,
-            });
-          }
-        });
-      });
-    });
-
-    setResults(foundChapters.slice(0, 10));
+    debouncedSearchRef.current(query)
+      .then(setResults)
+      .catch(() => setResults([]));
   }, [query]);
 
   const handleSelectChapter = (subject, chapter) => {

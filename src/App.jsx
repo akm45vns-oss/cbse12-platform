@@ -6,6 +6,8 @@ import { CURRICULUM, totalChapters } from "./constants/curriculum";
 import { SearchBar } from "./components/common/SearchBar";
 import { recordDailyActivity } from "./utils/loginStreak";
 import { recordQuizSubmission } from "./utils/weakTopics";
+import { getCachedNotes, cacheNotes } from "./utils/cacheManager";
+import { createDebouncedQuery } from "./utils/queryOptimization";
 // Eager load critical views, lazy load others
 import { AuthView, DashboardView } from "./components/views";
 const SubjectView = lazy(() => import("./components/views/SubjectView").then(m => ({ default: m.SubjectView })));
@@ -72,16 +74,26 @@ export default function App() {
     setLoadEmoji("📝");
     setNotes("");
     try {
-      // Try to load from database first
-      const cachedNotes = await getChapterNotes(subj, chap);
-      if (cachedNotes) {
-        setNotes(cachedNotes);
+      // 1. Check localStorage cache first (fastest)
+      const localCached = getCachedNotes(subj, chap);
+      if (localCached) {
+        setNotes(localCached);
         progress.save(`${subj}||${chap}||notes`, { read: true, date: Date.now() });
         setLoading(false);
         return;
       }
-      
-      // If not in database, generate with API (fallback)
+
+      // 2. Try to load from database (database cache)
+      const dbNotes = await getChapterNotes(subj, chap);
+      if (dbNotes) {
+        setNotes(dbNotes);
+        cacheNotes(subj, chap, dbNotes, 1440); // Cache for 24 hours
+        progress.save(`${subj}||${chap}||notes`, { read: true, date: Date.now() });
+        setLoading(false);
+        return;
+      }
+
+      // 3. If not in database, generate with API (fallback)
       setLoadMsg(`Generating notes for "${chap}"...`);
       const text = await callClaude(
         `Create comprehensive, ORIGINAL study material for the topic "${chap}" in ${subj}.
@@ -114,6 +126,7 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
         3500
       );
       setNotes(text);
+      cacheNotes(subj, chap, text, 1440); // Cache generated notes for 24 hours
       progress.save(`${subj}||${chap}||notes`, { read: true, date: Date.now() });
     } catch (e) {
       setNotes("❌ Error: " + e.message);
