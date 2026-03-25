@@ -51,6 +51,16 @@ export function useAuth() {
 
     const u = credentials.username.trim().toLowerCase();
 
+    // Check if input is email or username
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const isEmail = emailRegex.test(u);
+
+    // Validate: must be either valid email or valid username
+    if (!isEmail) {
+      const usernameErr = validateUsername(u);
+      if (usernameErr) return setError(usernameErr);
+    }
+
     // Check if account is locked
     if (isAccountLocked(u)) {
       const remainingSeconds = getRemainingLockoutTime(u);
@@ -58,9 +68,6 @@ export function useAuth() {
       setLockoutTimeRemaining(remainingSeconds);
       return setError(`❌ Account temporarily locked. Try again in ${remainingSeconds} seconds.`);
     }
-
-    const usernameErr = validateUsername(u);
-    if (usernameErr) return setError(usernameErr);
 
     const passwordErr = validatePassword(credentials.password);
     if (passwordErr) return setError(passwordErr);
