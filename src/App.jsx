@@ -1,7 +1,7 @@
 import { useState, useEffect, Suspense, lazy } from "react";
 import { useAuth, useNavigation, useProgress, useTheme } from "./hooks";
 import { callClaude, extractJSON } from "./utils/api";
-import { getChapterNotes } from "./utils/supabase";
+import { getChapterNotes, getQuizSet, getQuizSetStatus, saveQuizSubmission } from "./utils/supabase";
 import { CURRICULUM, totalChapters } from "./constants/curriculum";
 import { SearchBar } from "./components/common/SearchBar";
 import { recordDailyActivity } from "./utils/loginStreak";
@@ -9,7 +9,7 @@ import { recordQuizSubmission } from "./utils/weakTopics";
 import { getCachedNotes, cacheNotes } from "./utils/cacheManager";
 import { createDebouncedQuery } from "./utils/queryOptimization";
 // Eager load critical views, lazy load others
-import { AuthView, DashboardView } from "./components/views";
+import { AuthView, DashboardView, QuizSetsView } from "./components/views";
 const SubjectView = lazy(() => import("./components/views/SubjectView").then(m => ({ default: m.SubjectView })));
 const ChapterView = lazy(() => import("./components/views/ChapterView").then(m => ({ default: m.ChapterView })));
 const NotesView = lazy(() => import("./components/views/NotesView").then(m => ({ default: m.NotesView })));
@@ -55,6 +55,8 @@ export default function App() {
   const [answers, setAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
+  const [selectedQuizSet, setSelectedQuizSet] = useState(null); // Track selected set (1-15)
+  const [quizSetStatus, setQuizSetStatus] = useState({}); // Track best scores per set
 
   // Load progress on user login
   useEffect(() => {
@@ -134,9 +136,32 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
     setLoading(false);
   };
 
-  const genQuiz = async (subj, chap) => {
+  const startQuiz = async (subj, chap) => {
     setLoading(true);
-    setLoadMsg(`Generating Quiz for "${chap}"`);
+    setLoadMsg(`Loading quiz sets for "${chap}"`);
+    setLoadEmoji("📚");
+    setQuiz([]);
+    setAnswers({});
+    setSubmitted(false);
+    setQIdx(0);
+    setQuizErr("");
+    setSelectedQuizSet(null);
+
+    try {
+      // Load quiz set status from database
+      const status = await getQuizSetStatus(auth.currentUser, subj, chap);
+      setQuizSetStatus(status || {});
+    } catch (e) {
+      console.error("Error loading quiz set status:", e);
+      setQuizSetStatus({});
+    }
+
+    setLoading(false);
+  };
+
+  const loadQuizSet = async (setNumber) => {
+    setLoading(true);
+    setLoadMsg(`Loading Quiz Set ${setNumber}`);
     setLoadEmoji("🧠");
     setQuiz([]);
     setAnswers({});
@@ -144,50 +169,18 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
     setQIdx(0);
     setQuizErr("");
 
-    // Validate question has all required fields
-    const isValidQuestion = (q) => {
-      return q && q.q && Array.isArray(q.opts) && q.opts.length === 4 &&
-             typeof q.ans === 'number' && q.ans >= 0 && q.ans <= 3 && q.exp;
-    };
-
-    const generateBatch = async (batch) => {
-      const prompt = `Generate exactly 15 ORIGINAL multiple-choice questions about "${chap}" in ${subj}. This is batch ${batch} of 2 — generate questions ${
-        batch === 1 ? "1–15" : "16–30"
-      }, covering ${batch === 1 ? "the first half" : "the second half"} of the topic.
-CRITICAL: Return ONLY a valid JSON array. No markdown, no backticks, no explanation. Start with [ and end with ].
-Format: [{"q":"Question text?","opts":["A. option","B. option","C. option","D. option"],"ans":0,"exp":"Brief explanation"}]
-Rules:
-- "ans" is 0-based index (0=A,1=B,2=C,3=D)
-- Create ORIGINAL questions testing understanding (not copied from any source)
-- Difficulty: 30% basic, 50% intermediate, 20% advanced
-- Include calculation/analytical questions where appropriate
-- Provide clear explanations for answers
-- Generate all 15 questions, no placeholders
-- Questions should be thought-provoking and educational`;
-      return await callClaude(prompt, 4000);
-    };
-
     try {
-      setLoadMsg("Generating Part 1 of 2...");
-      const text1 = await generateBatch(1);
-      let batch1 = extractJSON(text1).filter(isValidQuestion).slice(0, 15);
-
-      setLoadMsg("Generating Part 2 of 2...");
-      const text2 = await generateBatch(2);
-      let batch2 = extractJSON(text2).filter(isValidQuestion).slice(0, 15);
-
-      // Ensure exactly 30 questions
-      const allQuestions = [...batch1, ...batch2];
-
-      if (allQuestions.length < 30) {
-        setQuizErr(`Generated only ${allQuestions.length} questions instead of 30. Please try again.`);
+      const questions = await getQuizSet(nav.subject, nav.chapter, setNumber);
+      if (!questions || questions.length === 0) {
+        setQuizErr("Quiz set not found. Please try another set or refresh.");
         setLoading(false);
         return;
       }
 
-      setQuiz(allQuestions.slice(0, 30));
+      setQuiz(questions);
+      setSelectedQuizSet(setNumber);
     } catch (e) {
-      setQuizErr("Failed to generate quiz: " + e.message);
+      setQuizErr("Error loading quiz set: " + e.message);
     }
     setLoading(false);
   };
@@ -240,14 +233,19 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
     });
     setScore(sc);
     setSubmitted(true);
-    
+
     // Record quiz submission for weak topics analysis
     recordQuizSubmission(nav.subject, nav.chapter, answers, quiz);
-    
+
+    // Save quiz submission to database with set number
+    if (selectedQuizSet && auth.currentUser) {
+      await saveQuizSubmission(auth.currentUser, nav.subject, nav.chapter, selectedQuizSet, answers, sc);
+    }
+
     const key = `${nav.subject}||${nav.chapter}||quiz`;
     const prev = progress.data[key] || { attempts: [] };
     progress.save(key, {
-      attempts: [...(prev.attempts || []), { score: sc, total: quiz.length, date: Date.now() }],
+      attempts: [...(prev.attempts || []), { score: sc, total: quiz.length, date: Date.now(), setNumber: selectedQuizSet }],
       best: Math.max(sc, ...(prev.attempts || []).map((a) => a.score), 0),
     });
   };
@@ -553,12 +551,13 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
                 if (!notes) genNotes(nav.subject, nav.chapter);
               }}
               onStartQuiz={() => {
+                setSelectedQuizSet(null);
                 setQuiz([]);
                 setAnswers({});
                 setSubmitted(false);
                 setQIdx(0);
                 nav.navigate("quiz");
-                genQuiz(nav.subject, nav.chapter);
+                startQuiz(nav.subject, nav.chapter);
               }}
               onStartPaper={() => {
                 setPaper("");
@@ -582,12 +581,13 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
               theme={theme}
               onRegenerateNotes={() => genNotes(nav.subject, nav.chapter)}
               onStartQuiz={() => {
+                setSelectedQuizSet(null);
                 setQuiz([]);
                 setAnswers({});
                 setSubmitted(false);
                 setQIdx(0);
                 nav.navigate("quiz");
-                genQuiz(nav.subject, nav.chapter);
+                startQuiz(nav.subject, nav.chapter);
               }}
             />
           </Suspense>
@@ -595,35 +595,46 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
 
         {nav.view === "quiz" && (
           <Suspense fallback={<LoadingFallback />}>
-            <QuizView
-              loading={loading}
-              loadMsg={loadMsg}
-              loadEmoji={loadEmoji}
-              quiz={quiz}
-              quizErr={quizErr}
-              qIdx={qIdx}
-              setQIdx={setQIdx}
-              answers={answers}
-              setAnswers={setAnswers}
-              submitted={submitted}
-              score={score}
-              subject={nav.subject}
-              chapter={nav.chapter}
-              curriculumData={S}
-              theme={theme}
-              onSubmit={submitQuiz}
-              onRetry={() => {
-                setQuiz([]);
-                setAnswers({});
-                setSubmitted(false);
-                setQIdx(0);
-                genQuiz(nav.subject, nav.chapter);
-              }}
-              onReviewNotes={() => {
-                nav.navigate("notes");
-                if (!notes) genNotes(nav.subject, nav.chapter);
-              }}
-            />
+            {!selectedQuizSet ? (
+              <QuizSetsView
+                subject={nav.subject}
+                chapter={nav.chapter}
+                curriculumData={S}
+                quizSetStatus={quizSetStatus}
+                loading={loading}
+                onSelectSet={loadQuizSet}
+              />
+            ) : (
+              <QuizView
+                loading={loading}
+                loadMsg={loadMsg}
+                loadEmoji={loadEmoji}
+                quiz={quiz}
+                quizErr={quizErr}
+                qIdx={qIdx}
+                setQIdx={setQIdx}
+                answers={answers}
+                setAnswers={setAnswers}
+                submitted={submitted}
+                score={score}
+                subject={nav.subject}
+                chapter={nav.chapter}
+                curriculumData={S}
+                theme={theme}
+                onSubmit={submitQuiz}
+                onRetry={() => {
+                  setSelectedQuizSet(null);
+                  setQuiz([]);
+                  setAnswers({});
+                  setSubmitted(false);
+                  setQIdx(0);
+                }}
+                onReviewNotes={() => {
+                  nav.navigate("notes");
+                  if (!notes) genNotes(nav.subject, nav.chapter);
+                }}
+              />
+            )}
           </Suspense>
         )}
 

@@ -338,3 +338,136 @@ export async function resetPassword(email, newPasswordHash) {
     return { success: false, error: "Password reset failed" };
   }
 }
+
+// ===== QUIZ SETS =====
+/**
+ * Fetch a specific quiz set (1-15) for a chapter
+ */
+export async function getQuizSet(subject, chapter, setNumber) {
+  try {
+    const { data, error } = await supabase
+      .from("quiz_sets")
+      .select("questions")
+      .eq("subject", subject)
+      .eq("chapter", chapter)
+      .eq("set_number", setNumber)
+      .single();
+
+    if (error || !data) {
+      return null;
+    }
+
+    return data.questions || [];
+  } catch (error) {
+    console.error("Fetch quiz set error:", error);
+    return null;
+  }
+}
+
+/**
+ * Get all quiz set summaries for a chapter (for displaying set list)
+ */
+export async function getQuizSetSummaries(subject, chapter) {
+  try {
+    const { data, error } = await supabase
+      .from("quiz_sets")
+      .select("set_number")
+      .eq("subject", subject)
+      .eq("chapter", chapter)
+      .order("set_number", { ascending: true });
+
+    if (error || !data) {
+      return [];
+    }
+
+    return data.map(row => row.set_number);
+  } catch (error) {
+    console.error("Fetch quiz set summaries error:", error);
+    return [];
+  }
+}
+
+/**
+ * Save quiz submission for a specific set
+ */
+export async function saveQuizSubmission(username, subject, chapter, setNumber, answers, score) {
+  try {
+    const { error } = await supabase.from("quiz_submissions").insert({
+      username,
+      subject,
+      chapter,
+      set_number: setNumber,
+      answers: answers, // JSON object {questionIndex: selectedIndex}
+      score,
+      total_questions: 30,
+      submitted_at: new Date().toISOString()
+    });
+
+    if (error) {
+      console.error("Save submission error:", error);
+      return false;
+    }
+
+    return true;
+  } catch (error) {
+    console.error("Save quiz submission error:", error);
+    return false;
+  }
+}
+
+/**
+ * Get user's best score for a quiz set
+ */
+export async function getBestQuizScore(username, subject, chapter, setNumber) {
+  try {
+    const { data, error } = await supabase
+      .from("quiz_submissions")
+      .select("score")
+      .eq("username", username)
+      .eq("subject", subject)
+      .eq("chapter", chapter)
+      .eq("set_number", setNumber)
+      .order("score", { ascending: false })
+      .limit(1)
+      .single();
+
+    if (error || !data) {
+      return undefined;
+    }
+
+    return data.score;
+  } catch (error) {
+    return undefined;
+  }
+}
+
+/**
+ * Get all quiz completion status for a chapter
+ */
+export async function getQuizSetStatus(username, subject, chapter) {
+  try {
+    const { data, error } = await supabase
+      .from("quiz_submissions")
+      .select("set_number, score")
+      .eq("username", username)
+      .eq("subject", subject)
+      .eq("chapter", chapter);
+
+    if (error || !data) {
+      return {};
+    }
+
+    // Group by set_number, get best score
+    const status = {};
+    for (const row of data) {
+      if (!status[row.set_number] || status[row.set_number] < row.score) {
+        status[row.set_number] = row.score;
+      }
+    }
+
+    return status;
+  } catch (error) {
+    console.error("Get quiz set status error:", error);
+    return {};
+  }
+}

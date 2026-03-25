@@ -4,6 +4,7 @@ export { SubjectView } from "./SubjectView";
 export { ChapterView } from "./ChapterView";
 export { NotesView } from "./NotesView";
 export { QuizView } from "./QuizView";
+export { QuizSetsView } from "./QuizSetsView";
 export { PaperView } from "./PaperView";
 export { ProgressView } from "./ProgressView";
 export { StatsView } from "./StatsView";
