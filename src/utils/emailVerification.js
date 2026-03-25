@@ -11,11 +11,11 @@ export function generateOTP() {
 }
 
 /**
- * Calculate expiration time (10 minutes from now)
+ * Calculate expiration time (15 minutes from now)
  */
 export function getOTPExpiration() {
   const now = new Date();
-  now.setMinutes(now.getMinutes() + 10);
+  now.setMinutes(now.getMinutes() + 15);
   return now.toISOString();
 }
 

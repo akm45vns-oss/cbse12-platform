@@ -134,8 +134,11 @@ export function useAuth() {
       return setError("⚠️ " + (otpResult.error || "Failed to send verification code"));
     }
 
-    // For development: show OTP in console
-    console.log(`🔐 Development OTP: ${otpResult.otp}`);
+    // For development: show OTP in console if returned
+    if (otpResult.otp) {
+      console.log(`🔐 Development OTP: ${otpResult.otp}`);
+    }
+
     setError(""); // Clear errors
   };
 

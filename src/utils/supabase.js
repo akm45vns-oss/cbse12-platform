@@ -1,5 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 import { generateOTP, getOTPExpiration, isOTPExpired } from "./emailVerification";
+import { sendOTPEmail } from "./emailService";
 
 // ===== SUPABASE CONFIG =====
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
@@ -65,19 +66,20 @@ export async function registerUser(username, passwordHash, email, name) {
 }
 
 /**
- * Send OTP to email (for free, OTP is stored in DB and can be shown in development)
+ * Send OTP to email using Resend API
  */
 export async function sendOTP(email) {
   try {
     const otp = generateOTP();
-    const expiresAt = getOTPExpiration();
+    // Store expiration as Unix timestamp (milliseconds) to avoid timezone issues
+    const expiresAtMs = Date.now() + 15 * 60 * 1000; // 15 minutes from now
 
     // Store OTP in email_verifications table
     const { error } = await supabase.from("email_verifications").upsert(
       {
         email,
         otp,
-        expires_at: expiresAt,
+        expires_at: new Date(expiresAtMs).toISOString(), // Convert to ISO for DB storage
         created_at: new Date().toISOString()
       },
       { onConflict: "email" }
@@ -88,11 +90,20 @@ export async function sendOTP(email) {
       return { success: false, error: "Failed to generate OTP" };
     }
 
-    // In production, send email via Resend/SendGrid/etc
-    // For now, return OTP for development (you'll integrate email service later)
-    console.log(`📧 OTP for ${email}: ${otp}`); // Development only
+    // Send email with OTP
+    const emailResult = await sendOTPEmail(email, otp);
 
-    return { success: true, otp }; // OTP returned for testing (remove in production)
+    if (!emailResult.success) {
+      return { success: false, error: emailResult.error };
+    }
+
+    // Return OTP in development mode only
+    if (emailResult.development) {
+      return { success: true, otp };
+    }
+
+    // In production, don't return OTP (user will receive via email)
+    return { success: true };
   } catch (error) {
     console.error("Send OTP error:", error);
     return { success: false, error: "Failed to send verification code" };
@@ -115,8 +126,18 @@ export async function verifyOTP(email, otp) {
       return { success: false, error: "No verification request found" };
     }
 
-    // Check if OTP expired
-    if (isOTPExpired(verification.expires_at)) {
+    // Parse expires_at - add 'Z' if missing to mark as UTC
+    const expiresAtStr = verification.expires_at.endsWith('Z')
+      ? verification.expires_at
+      : verification.expires_at + 'Z';
+
+    const expiresAt = new Date(expiresAtStr);
+    const now = new Date();
+
+    console.log(`⏰ OTP Check: Expires at ${expiresAtStr}, Now is ${now.toISOString()}`);
+    console.log(`⏰ Time remaining: ${Math.round((expiresAt - now) / 1000)}s`);
+
+    if (now > expiresAt) {
       return { success: false, error: "OTP expired. Request a new one." };
     }
 

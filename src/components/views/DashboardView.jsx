@@ -4,8 +4,8 @@ import { getRecentChapters } from "../../utils/recentChapters";
 import { getLoginStreak } from "../../utils/loginStreak";
 
 export function DashboardView({ stats, overallPct, currentUser, onSelectSubject, onSelectChapter, theme = { isDarkMode: false } }) {
-  const recentChapters = getRecentChapters(5);
-  const streak = getLoginStreak();
+  const recentChapters = getRecentChapters(currentUser, 5);
+  const streak = getLoginStreak(currentUser);
   const isDark = theme?.isDarkMode;
   
   return (
