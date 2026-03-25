@@ -50,6 +50,10 @@ serve(async (req) => {
         subject: "Your AkmEdu Verification Code",
         content: [
           {
+            type: "text/plain",
+            value: `Welcome to AkmEdu! Your verification code is: ${otp}\n\nThis code will expire in 15 minutes.\n\nIf you didn't request this code, please ignore this email.`,
+          },
+          {
             type: "text/html",
             value: `
               <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
