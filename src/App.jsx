@@ -145,8 +145,8 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
     setQuizErr("");
 
     const generateBatch = async (batch) => {
-      const prompt = `Generate exactly 25 ORIGINAL multiple-choice questions about "${chap}" in ${subj}. This is batch ${batch} of 2 — generate questions ${
-        batch === 1 ? "1–25" : "26–50"
+      const prompt = `Generate exactly 15 ORIGINAL multiple-choice questions about "${chap}" in ${subj}. This is batch ${batch} of 2 — generate questions ${
+        batch === 1 ? "1–15" : "16–30"
       }, covering ${batch === 1 ? "the first half" : "the second half"} of the topic.
 CRITICAL: Return ONLY a valid JSON array. No markdown, no backticks, no explanation. Start with [ and end with ].
 Format: [{"q":"Question text?","opts":["A. option","B. option","C. option","D. option"],"ans":0,"exp":"Brief explanation"}]
@@ -156,7 +156,7 @@ Rules:
 - Difficulty: 30% basic, 50% intermediate, 20% advanced
 - Include calculation/analytical questions where appropriate
 - Provide clear explanations for answers
-- Generate all 25 questions, no placeholders
+- Generate all 15 questions, no placeholders
 - Questions should be thought-provoking and educational`;
       return await callClaude(prompt, 4000);
     };
