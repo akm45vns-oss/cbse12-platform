@@ -26,6 +26,7 @@ export function useAuth() {
   const [isLockedOut, setIsLockedOut] = useState(false);
   const [lockoutTimeRemaining, setLockoutTimeRemaining] = useState(0);
   const [showPass, setShowPass] = useState(false);
+  const [showResetPassword, setShowResetPassword] = useState(false);
   const [otpState, setOtpState] = useState({ show: false, email: "", otp: "", loading: false, pendingRegistration: null });
   const [resetPasswordData, setResetPasswordData] = useState({ email: "", otp: "", newPassword: "", confirmPassword: "", loading: false, step: "email" });
 
@@ -271,12 +272,14 @@ export function useAuth() {
 
     // Success! Reset state and go back to login
     setResetPasswordData({ email: "", otp: "", newPassword: "", confirmPassword: "", loading: false, step: "email" });
+    setShowResetPassword(false);
     setAuthTab("login");
     setError("✅ Password reset successfully! Please login with your new password.");
   };
 
   const cancelForgotPassword = () => {
     setResetPasswordData({ email: "", otp: "", newPassword: "", confirmPassword: "", loading: false, step: "email" });
+    setShowResetPassword(false);
     setError("");
     setAuthTab("login");
   };
@@ -289,11 +292,13 @@ export function useAuth() {
     isLockedOut,
     lockoutTimeRemaining,
     showPass,
+    showResetPassword,
     otpState,
     resetPasswordData,
     setAuthTab,
     setCredentials,
     setShowPass,
+    setShowResetPassword,
     setOtpState,
     setResetPasswordData,
     doLogin,

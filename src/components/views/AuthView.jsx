@@ -18,6 +18,8 @@ export function AuthView({
   authErr,
   showPass,
   setShowPass,
+  showResetPassword,
+  setShowResetPassword,
   otpState,
   setOtpState,
   resetPasswordData,
@@ -327,7 +329,7 @@ export function AuthView({
             {/* Tabs */}
             <div style={{ display: "flex", background: "rgba(15, 23, 42, 0.05)", border: "1.5px solid rgba(236, 72, 153, 0.15)", borderRadius: 14, padding: 5, marginBottom: 32, backdropFilter: "blur(10px)" }}>
               {[["login", "🔑 Sign In"], ["register", "✨ Register"], ["forgot", "🔑 Forgot"]].map(([t, label]) => (
-                <button key={t} className="tab-btn" onClick={() => { setAuthTab(t); setResetPasswordData({ email: "", otp: "", newPassword: "", confirmPassword: "", loading: false, step: "email" }); }}
+                <button key={t} className="tab-btn" onClick={() => { setAuthTab(t); setResetPasswordData({ email: "", otp: "", newPassword: "", confirmPassword: "", loading: false, step: "email" }); setShowResetPassword(false); }}
                   style={{ background: authTab === t ? "linear-gradient(135deg, #0891b2, #0284c7)" : "transparent", color: authTab === t ? "white" : "#9d174d", boxShadow: authTab === t ? "0 4px 12px rgba(236, 72, 153, 0.2)" : "none" }}>
                   {label}
                 </button>
@@ -384,14 +386,26 @@ export function AuthView({
                       <p style={{ color: "#9d174d", fontSize: 14, fontWeight: 500, marginBottom: 8 }}>Set your new password</p>
                       <div>
                         <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>New Password</label>
-                        <input className="auth-input" type="password" value={resetPasswordData.newPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, newPassword: e.target.value })}
-                          placeholder="Min 8 chars, mixed case, numbers, symbols" />
+                        <div style={{ position: "relative" }}>
+                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.newPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, newPassword: e.target.value })}
+                            placeholder="Min 8 chars, mixed case, numbers, symbols"
+                            style={{ paddingRight: 48 }} />
+                          <button onClick={() => setShowResetPassword(s => !s)} style={{ position: "absolute", right: 14, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#0369a1", fontSize: 18, cursor: "pointer", padding: "4px 8px" }}>
+                            {showResetPassword ? "🙈" : "👁️"}
+                          </button>
+                        </div>
                       </div>
                       <div>
                         <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Confirm Password</label>
-                        <input className="auth-input" type="password" value={resetPasswordData.confirmPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, confirmPassword: e.target.value })}
-                          placeholder="Re-enter password"
-                          onKeyDown={e => e.key === "Enter" && doForgotPasswordReset()} />
+                        <div style={{ position: "relative" }}>
+                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.confirmPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, confirmPassword: e.target.value })}
+                            placeholder="Re-enter password"
+                            style={{ paddingRight: 48 }}
+                            onKeyDown={e => e.key === "Enter" && doForgotPasswordReset()} />
+                          <button onClick={() => setShowResetPassword(s => !s)} style={{ position: "absolute", right: 14, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#0369a1", fontSize: 18, cursor: "pointer", padding: "4px 8px" }}>
+                            {showResetPassword ? "🙈" : "👁️"}
+                          </button>
+                        </div>
                       </div>
                     </>
                   )}
