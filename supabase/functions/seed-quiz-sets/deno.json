@@ -1,5 +1,8 @@
 {
   "imports": {
     "std/": "https://deno.land/std@0.168.0/"
+  },
+  "env": {
+    "verify_jwt": false
   }
 }
