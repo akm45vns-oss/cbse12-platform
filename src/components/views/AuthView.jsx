@@ -32,21 +32,24 @@ export function AuthView({
   doForgotPasswordReset,
   cancelForgotPassword,
 }) {
-
   // If OTP verification is needed, show OTP screen
   if (otpState.show) {
     return (
-      <div style={{ minHeight: "100vh", width: "100%", background: "linear-gradient(135deg, #fce4ec 0%, #fdf2f8 40%, #f0f9fc 100%)", fontFamily: "'Segoe UI', system-ui, sans-serif", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px" }}>
-        <div style={{ maxWidth: "400px", width: "100%", background: "white", borderRadius: "16px", padding: "40px", boxShadow: "0 20px 60px rgba(236, 72, 153, 0.15)", border: "1.5px solid rgba(236, 72, 153, 0.1)" }}>
+      <div style={{ minHeight: "100vh", width: "100%", background: "#0f172a", position: "relative", overflow: "hidden", fontFamily: "'Inter', system-ui, sans-serif", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px" }}>
+        {/* Animated Orbs */}
+        <div style={{ position: "absolute", top: "10%", left: "20%", width: "40vw", height: "40vw", background: "radial-gradient(circle, rgba(6,182,212,0.15) 0%, transparent 60%)", filter: "blur(100px)", borderRadius: "50%", animation: "float 12s infinite ease-in-out" }} />
+        <div style={{ position: "absolute", bottom: "10%", right: "20%", width: "50vw", height: "50vw", background: "radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 60%)", filter: "blur(120px)", borderRadius: "50%", animation: "float 15s infinite reverse ease-in-out" }} />
+        
+        <div style={{ position: "relative", zIndex: 10, maxWidth: "420px", width: "100%", background: "rgba(15, 23, 42, 0.4)", backdropFilter: "blur(32px)", WebkitBackdropFilter: "blur(32px)", borderRadius: "24px", padding: "48px", boxShadow: "0 24px 64px rgba(0,0,0,0.5)", border: "1px solid rgba(255, 255, 255, 0.08)" }}>
           <div style={{ textAlign: "center", marginBottom: "32px" }}>
             <div style={{ fontSize: "48px", marginBottom: "16px" }}>📧</div>
-            <h2 style={{ fontSize: "24px", fontWeight: 900, color: "#064e78", margin: "0 0 8px", letterSpacing: "-0.02em" }}>Verify Your Email</h2>
-            <p style={{ fontSize: "14px", color: "#9d174d", margin: 0, fontWeight: 500 }}>We sent a 6-digit code to {otpState.email}</p>
+            <h2 style={{ fontSize: "24px", fontWeight: 800, color: "#f8fafc", margin: "0 0 8px", letterSpacing: "-0.02em" }}>Verify Your Email</h2>
+            <p style={{ fontSize: "14px", color: "#94a3b8", margin: 0, fontWeight: 500 }}>We sent a 6-digit code to {otpState.email}</p>
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <div>
-              <label style={{ color: "#0369a1", fontSize: "12px", fontWeight: 800, display: "block", marginBottom: "8px", textTransform: "uppercase", letterSpacing: "0.1em" }}>Verification Code</label>
+              <label style={{ color: "#94a3b8", fontSize: "12px", fontWeight: 700, display: "block", marginBottom: "8px", textTransform: "uppercase", letterSpacing: "0.1em" }}>Verification Code</label>
               <input
                 type="text"
                 maxLength="6"
@@ -54,261 +57,240 @@ export function AuthView({
                 onChange={(e) => setOtpState({ ...otpState, otp: e.target.value.replace(/\D/g, "") })}
                 placeholder="000000"
                 style={{
-                  width: "100%",
-                  padding: "13px 16px",
-                  border: "1.5px solid rgba(236, 72, 153, 0.2)",
-                  borderRadius: "12px",
-                  background: "rgba(255, 255, 255, 0.8)",
-                  color: "#064e78",
-                  fontSize: "18px",
-                  fontWeight: 700,
-                  letterSpacing: "8px",
-                  textAlign: "center",
-                  outline: "none",
-                  transition: "all 0.25s cubic-bezier(0.4, 0, 0.2, 1)"
+                  width: "100%", padding: "14px 16px",
+                  border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "12px",
+                  background: "rgba(255, 255, 255, 0.04)", color: "#f8fafc",
+                  fontSize: "20px", fontWeight: 700, letterSpacing: "8px", textAlign: "center",
+                  outline: "none", transition: "all 0.3s ease"
                 }}
+                onFocus={(e) => { e.currentTarget.style.borderColor = "rgba(6, 182, 212, 0.5)"; e.currentTarget.style.boxShadow = "0 0 0 3px rgba(6, 182, 212, 0.15)"; e.currentTarget.style.background = "rgba(255, 255, 255, 0.08)"; }}
+                onBlur={(e) => { e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.1)"; e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.background = "rgba(255, 255, 255, 0.04)"; }}
                 onKeyDown={(e) => e.key === "Enter" && doVerifyOTP()}
               />
-              <p style={{ fontSize: "12px", color: "#0891b2", marginTop: "8px", textAlign: "center", fontWeight: 600 }}>💡 Check your spam folder if you don't see the email</p>
+              <p style={{ fontSize: "12px", color: "#06b6d4", marginTop: "12px", textAlign: "center", fontWeight: 500 }}>💡 Check your spam folder if you don't see the email</p>
             </div>
 
             {authErr && (
-              <div style={{ background: "linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(220, 38, 38, 0.08))", border: "1.5px solid rgba(239, 68, 68, 0.25)", color: "#991b1b", padding: "12px 16px", borderRadius: "12px", fontSize: "13px", fontWeight: 600 }}>{authErr}</div>
+              <div style={{ background: "rgba(239, 68, 68, 0.1)", border: "1px solid rgba(239, 68, 68, 0.3)", color: "#fca5a5", padding: "12px 16px", borderRadius: "12px", fontSize: "13px", fontWeight: 500 }}>{authErr}</div>
             )}
 
             <button
               onClick={doVerifyOTP}
               disabled={otpState.loading}
               style={{
-                width: "100%",
-                padding: "13px 18px",
-                border: "none",
-                borderRadius: "12px",
-                background: otpState.loading ? "#cbd5e1" : "linear-gradient(135deg, #0891b2 0%, #0284c7 100%)",
-                color: "white",
-                fontSize: "15px",
-                fontWeight: 700,
-                letterSpacing: "0.02em",
-                boxShadow: "0 8px 24px rgba(236, 72, 153, 0.3)",
-                transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-                cursor: otpState.loading ? "not-allowed" : "pointer",
-                marginTop: "8px"
+                width: "100%", padding: "14px", border: "none", borderRadius: "12px",
+                background: otpState.loading ? "rgba(255, 255, 255, 0.1)" : "linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)",
+                color: otpState.loading ? "#94a3b8" : "white",
+                fontSize: "15px", fontWeight: 600, letterSpacing: "0.02em",
+                boxShadow: otpState.loading ? "none" : "0 8px 20px rgba(6, 182, 212, 0.25)",
+                transition: "all 0.3s ease", cursor: otpState.loading ? "not-allowed" : "pointer", marginTop: "8px"
               }}
-              onMouseEnter={(e) => !otpState.loading && (e.currentTarget.style.transform = "translateY(-3px)", e.currentTarget.style.boxShadow = "0 12px 32px rgba(236, 72, 153, 0.4)")}
+              onMouseEnter={(e) => !otpState.loading && (e.currentTarget.style.transform = "translateY(-2px)")}
               onMouseLeave={(e) => !otpState.loading && (e.currentTarget.style.transform = "translateY(0)")}
             >
               {otpState.loading ? "⏳ Verifying..." : "✓ Verify Code"}
             </button>
 
             <button
-              onClick={() => {
-                setOtpState({ show: false, email: "", otp: "", loading: false });
-                setAuthTab("register");
-              }}
+              onClick={() => { setOtpState({ show: false, email: "", otp: "", loading: false }); setAuthTab("register"); }}
               style={{
-                width: "100%",
-                padding: "13px 18px",
-                border: "1.5px solid #dbeafe",
-                borderRadius: "12px",
-                background: "white",
-                color: "#0891b2",
-                fontSize: "14px",
-                fontWeight: 600,
-                cursor: "pointer",
-                transition: "all 0.3s"
+                width: "100%", padding: "14px", border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "12px",
+                background: "transparent", color: "#94a3b8", fontSize: "14px", fontWeight: 500,
+                cursor: "pointer", transition: "all 0.3s ease"
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.background = "#f0f9fc")}
-              onMouseLeave={(e) => (e.currentTarget.style.background = "white")}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255, 255, 255, 0.05)"; e.currentTarget.style.color = "#f8fafc"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#94a3b8"; }}
             >
               Back to Registration
             </button>
           </div>
-
-          <p style={{ textAlign: "center", color: "#cbd5e1", fontSize: "12px", marginTop: "24px", fontWeight: 500, letterSpacing: "0.04em" }}>AkmEdu45 • Smart Study Platform</p>
         </div>
       </div>
     );
   }
+
+  // MAIN AUTH VIEW
   return (
-    <div style={{ minHeight: "100vh", width: "100%", background: "#f0f9fc", fontFamily: "'Segoe UI', system-ui, sans-serif" }}>
+    <div style={{ minHeight: "100vh", width: "100%", background: "#0f172a", position: "relative", overflow: "hidden", fontFamily: "'Inter', system-ui, sans-serif", display: "flex", alignItems: "center", justifyContent: "center", padding: "24px" }}>
+      {/* Dynamic Background Orbs */}
+      <div style={{ position: "absolute", top: "-10%", left: "-10%", width: "60vw", height: "60vw", background: "radial-gradient(circle, rgba(6,182,212,0.12) 0%, transparent 60%)", filter: "blur(90px)", animation: "float 18s infinite ease-in-out" }} />
+      <div style={{ position: "absolute", bottom: "-20%", right: "-10%", width: "70vw", height: "70vw", background: "radial-gradient(circle, rgba(99,102,241,0.12) 0%, transparent 60%)", filter: "blur(110px)", animation: "float 20s infinite reverse ease-in-out" }} />
+      <div style={{ position: "absolute", top: "30%", left: "50%", width: "40vw", height: "40vw", background: "radial-gradient(circle, rgba(236,72,153,0.08) 0%, transparent 60%)", filter: "blur(80px)", animation: "pulse 12s infinite alternate" }} />
+
       <style>{`
         * { box-sizing: border-box; }
-        input { font-family: inherit; }
-        button { cursor: pointer; font-family: inherit; }
+        input, button { font-family: inherit; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.2); }
+        
+        .auth-modal {
+          position: relative;
+          z-index: 10;
+          width: 100%;
+          max-width: 1080px;
+          background: rgba(15, 23, 42, 0.4);
+          backdrop-filter: blur(32px);
+          -webkit-backdrop-filter: blur(32px);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 32px;
+          box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+          display: flex;
+          overflow: hidden;
+        }
+
+        .auth-left {
+          flex: 1.1;
+          padding: 64px 56px;
+          position: relative;
+          border-right: 1px solid rgba(255, 255, 255, 0.05);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background: linear-gradient(135deg, rgba(30, 41, 59, 0.3) 0%, rgba(15, 23, 42, 0.1) 100%);
+        }
+
+        .auth-right {
+          flex: 0.9;
+          padding: 64px 48px;
+          background: rgba(15, 23, 42, 0.5);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
         .auth-input { 
-          width: 100%; padding: 13px 16px; 
-          border: 1.5px solid rgba(236, 72, 153, 0.2); 
+          width: 100%; padding: 14px 16px; 
+          border: 1px solid rgba(255, 255, 255, 0.1); 
           border-radius: 12px; 
-          background: rgba(255, 255, 255, 0.8); 
-          color: #064e78; 
+          background: rgba(255, 255, 255, 0.04); 
+          color: #f8fafc; 
           font-size: 14px; 
           outline: none; 
-          transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-          backdrop-filter: blur(10px);
+          transition: all 0.3s ease;
         }
         .auth-input:focus { 
-          border-color: #0891b2;
-          background: rgba(255, 255, 255, 1);
-          box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
+          border-color: rgba(6, 182, 212, 0.5);
+          background: rgba(255, 255, 255, 0.08);
+          box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.15);
         }
-        .auth-input::placeholder { color: #f9a8d4; }
+        .auth-input::placeholder { color: #64748b; }
+
         .auth-btn { 
-          width: 100%; 
-          padding: 13px 18px; 
-          border: none; 
-          border-radius: 12px; 
-          background: linear-gradient(135deg, #0891b2 0%, #0284c7 100%); 
-          color: white; 
-          font-size: 15px; 
-          font-weight: 700; 
-          letter-spacing: 0.02em;
-          box-shadow: 0 8px 24px rgba(236, 72, 153, 0.3);
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          width: 100%; padding: 14px; border: none; border-radius: 12px; 
+          background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%); 
+          color: white; font-size: 15px; font-weight: 600; letter-spacing: 0.02em;
+          box-shadow: 0 8px 24px rgba(6, 182, 212, 0.25);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer;
         }
-        .auth-btn:hover { 
-          transform: translateY(-3px);
-          box-shadow: 0 12px 32px rgba(236, 72, 153, 0.4);
-        }
-        .auth-btn:active { 
-          transform: translateY(-1px);
-        }
+        .auth-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(6, 182, 212, 0.4); }
+        .auth-btn:active { transform: translateY(1px); }
+        .auth-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; box-shadow: none; }
+
         .tab-btn { 
-          flex: 1; 
-          padding: 11px 14px; 
-          border: none; 
-          border-radius: 10px; 
-          font-size: 14px; 
-          font-weight: 700;
-          letter-spacing: 0.03em;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          flex: 1; padding: 10px 14px; border: 1px solid transparent; border-radius: 10px; 
+          font-size: 13px; font-weight: 600; letter-spacing: 0.02em; transition: all 0.3s ease;
+          background: transparent; color: #94a3b8; cursor: pointer;
         }
+        .tab-btn.active {
+          background: rgba(255, 255, 255, 0.08); color: #f8fafc;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-color: rgba(255, 255, 255, 0.05);
+        }
+        .tab-btn:hover:not(.active) { color: #e2e8f0; background: rgba(255,255,255, 0.03); }
+
+        .subj-chip {
+          background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 12px; padding: 14px 8px; text-align: center;
+          transition: all 0.3s ease; cursor: default;
+        }
+        .subj-chip:hover {
+          background: rgba(255, 255, 255, 0.08); border-color: rgba(6, 182, 212, 0.3);
+          transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .auth-link-btn {
+          background: none; border: none; color: #06b6d4; font-weight: 600; cursor: pointer; font-size: inherit; transition: color 0.2s;
+        }
+        .auth-link-btn:hover { color: #22d3ee; }
+
+        .label-text {
+          color: #94a3b8; font-size: 12px; font-weight: 600; display: block; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.1em;
+        }
+
         @keyframes float { 
-          0%,100%{transform:translateY(0)} 
-          50%{transform:translateY(-16px)} 
+          0%, 100% { transform: translate(0, 0) scale(1); } 
+          33% { transform: translate(30px, -50px) scale(1.05); }
+          66% { transform: translate(-20px, 20px) scale(0.95); }
         }
-        @keyframes glow { 
-          0%,100%{opacity:0.3} 
-          50%{opacity:0.8} 
+        @keyframes pulse {
+          0%, 100% { opacity: 0.3; transform: scale(1); }
+          50% { opacity: 0.6; transform: scale(1.1); }
         }
-        @keyframes slideInLeft {
-          from { opacity: 0; transform: translateX(-20px); }
-          to { opacity: 1; transform: translateX(0); }
-        }
-        .auth-wrap { display: flex; flex-direction: row; min-height: 100vh; }
-        .auth-left { 
-          flex: 1; 
-          background: linear-gradient(135deg, #fce4ec 0%, #fdf2f8 40%, #f0f9fc 100%); 
-          display: flex; 
-          flex-direction: column; 
-          justify-content: center; 
-          padding: 60px 64px; 
-          position: relative; 
-          overflow: hidden; 
-          min-width: 0;
-          border-right: 1px solid rgba(236, 72, 153, 0.1);
-        }
-        .auth-right { 
-          width: 460px; 
-          flex-shrink: 0; 
-          background: rgba(255, 255, 255, 0.98);
-          backdrop-filter: blur(20px);
-          display: flex; 
-          flex-direction: column; 
-          justify-content: center; 
-          padding: 56px 48px; 
-          overflow-y: auto;
-          border-left: 1px solid rgba(236, 72, 153, 0.1);
-          box-shadow: -8px 0 32px rgba(236, 72, 153, 0.08);
-        }
-        .auth-title { font-size: 48px; }
-        .auth-desc { display: block; }
-        .auth-subjects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 40px; max-width: 500px; }
-        .auth-features { display: flex; flex-direction: column; gap: 14px; }
-        @media (max-width: 860px) {
-          .auth-wrap { flex-direction: column; }
-          .auth-left { padding: 40px 32px 32px; justify-content: flex-start; border-right: none; border-bottom: 1px solid rgba(236, 72, 153, 0.1); }
-          .auth-right { width: 100%; padding: 36px 28px 48px; border-left: none; border-top: none; box-shadow: none; }
-          .auth-title { font-size: 34px; }
-          .auth-subjects { margin-bottom: 28px; }
-          .auth-features { display: none; }
+
+        @media (max-width: 960px) {
+          .auth-modal { flex-direction: column; max-width: 560px; border-radius: 24px; }
+          .auth-left { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding: 48px 32px 36px; }
+          .auth-right { padding: 36px 32px 48px; }
         }
         @media (max-width: 480px) {
-          .auth-left { padding: 28px 18px 20px; }
-          .auth-right { padding: 24px 18px 36px; }
-          .auth-title { font-size: 26px; }
-          .auth-subjects { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 24px; max-width: 100%; }
+          .auth-modal { border-radius: 20px; }
+          .auth-left { padding: 32px 20px 24px; }
+          .auth-right { padding: 24px 20px 32px; }
+          .subj-chip { padding: 10px 4px; }
         }
       `}</style>
-      <div className="auth-wrap">
+
+      <div className="auth-modal">
         {/* ===== LEFT PANEL ===== */}
         <div className="auth-left">
-          <div style={{ pointerEvents: "none", position: "absolute", top: -100, left: -100, width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(8,145,178,0.18) 0%, transparent 70%)", animation: "glow 4s ease-in-out infinite" }} />
-          <div style={{ pointerEvents: "none", position: "absolute", bottom: -80, right: -80, width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(244,114,182,0.14) 0%, transparent 70%)", animation: "glow 5s ease-in-out infinite 1s" }} />
-          <div style={{ marginBottom: 48 }}>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(8,145,178,0.12)", border: "1.5px solid rgba(8,145,178,0.25)", borderRadius: 99, padding: "9px 20px", marginBottom: 12, boxShadow: "0 4px 16px rgba(8,145,178,0.12)" }}>
-              <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#0891b2", display: "inline-block", boxShadow: "0 0 10px #0891b2, 0 0 20px rgba(8,145,178,0.4)" }} />
-              <span style={{ fontSize: 11, color: "#0369a1", fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase" }}>Developer</span>
-              <span style={{ color: "rgba(190,24,93,0.3)" }}>·</span>
-              <span style={{ fontSize: 13, color: "#064e78", fontWeight: 900, letterSpacing: "0.02em", textTransform: "uppercase" }}>Ayush Kumar Maurya</span>
+          {/* Developer Tag */}
+          <div style={{ marginBottom: 40 }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(6, 182, 212, 0.1)", border: "1px solid rgba(6, 182, 212, 0.2)", borderRadius: 99, padding: "6px 16px", marginBottom: 16 }}>
+              <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#06b6d4", display: "inline-block", boxShadow: "0 0 10px #06b6d4, 0 0 20px rgba(6, 182, 212, 0.6)" }} />
+              <span style={{ fontSize: 11, color: "#94a3b8", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>Creator</span>
+              <span style={{ color: "rgba(255,255,255,0.2)" }}>|</span>
+              <span style={{ fontSize: 12, color: "#e2e8f0", fontWeight: 700, letterSpacing: "0.02em" }}>Ayush Kumar Maurya</span>
             </div>
-            <div style={{ display: "flex", gap: 10 }}>
+            <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
               {[
-                { href: "https://www.linkedin.com/in/ayush-kumar-maurya-326071384/", label: "LinkedIn", emoji: "🔗" },
-                { href: "https://github.com/akm45vns-oss", label: "GitHub", emoji: "💻" },
-                { href: "https://www.instagram.com/ayush.maurya45/", label: "Instagram", emoji: "📸" },
-              ].map(({ href, label, emoji }) => (
+                { href: "https://www.linkedin.com/in/ayush-kumar-maurya-326071384/", label: "LinkedIn" },
+                { href: "https://github.com/akm45vns-oss", label: "GitHub" },
+                { href: "https://www.instagram.com/ayush.maurya45/", label: "Instagram" },
+              ].map(({ href, label }) => (
                 <a key={label} href={href} target="_blank" rel="noopener noreferrer"
-                  style={{ display: "inline-flex", alignItems: "center", gap: 7, background: "rgba(8,145,178,0.08)", border: "1.5px solid rgba(8,145,178,0.2)", borderRadius: 99, padding: "7px 16px", color: "#0369a1", fontSize: 12, fontWeight: 700, textDecoration: "none", transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)", cursor: "pointer" }}
-                  onMouseEnter={e => { e.currentTarget.style.background = "rgba(8,145,178,0.16)"; e.currentTarget.style.borderColor = "rgba(8,145,178,0.4)"; e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 20px rgba(8,145,178,0.2)"; }}
-                  onMouseLeave={e => { e.currentTarget.style.background = "rgba(8,145,178,0.08)"; e.currentTarget.style.borderColor = "rgba(8,145,178,0.2)"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}>
-                  <span>{emoji}</span>
-                  {label}
+                  style={{ display: "inline-block", background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 99, padding: "6px 14px", color: "#94a3b8", fontSize: 12, fontWeight: 500, textDecoration: "none", transition: "all 0.3s ease" }}
+                  onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.08)";  e.currentTarget.style.color = "#f8fafc"; }}
+                  onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.03)";  e.currentTarget.style.color = "#94a3b8"; }}>
+                  {label} ↗
                 </a>
               ))}
             </div>
           </div>
 
-          <div style={{ animation: "float 6s ease-in-out infinite", marginBottom: 14 }}>
-            <span style={{ fontSize: 64 }}>🎓</span>
+          <div style={{ marginBottom: 16 }}>
+            <span style={{ fontSize: 56, display: "inline-block", filter: "drop-shadow(0 10px 20px rgba(0,0,0,0.3))" }}>🎓</span>
           </div>
-          <h1 className="auth-title" style={{ color: "#064e78", fontWeight: 900, margin: "0 0 12px", letterSpacing: "-0.03em", lineHeight: 1.15 }}>
+          <h1 style={{ color: "#f8fafc", fontWeight: 800, fontSize: 40, margin: "0 0 12px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
             AkmEdu45<br/>
-            <span style={{ background: "linear-gradient(135deg, #0891b2 0%, #06b6d4 50%, #f9a8d4 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Smart Study Platform</span>
+            <span style={{ background: "linear-gradient(135deg, #22d3ee 0%, #818cf8 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Smart Study Platform</span>
           </h1>
-          <p style={{ color: "#9d174d", fontSize: 16, lineHeight: 1.8, marginBottom: 44, maxWidth: 500, fontWeight: 500 }}>
-            Complete study preparation for all exams. Comprehensive notes, 30 practice questions per chapter, sample papers and progress tracking.
+          <p style={{ color: "#94a3b8", fontSize: 15, lineHeight: 1.7, marginBottom: 40, maxWidth: 440, fontWeight: 400 }}>
+            Master your CBSE Class 12 exams. Access comprehensive AI-generated notes, vast MCQ practice sets, sample papers, and deep performance analytics.
           </p>
 
-          <div className="auth-subjects">
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "10px", marginBottom: "32px", maxWidth: "440px" }}>
             {[
               { emoji: "⚛️", name: "Physics" }, { emoji: "🧪", name: "Chemistry" },
               { emoji: "🌿", name: "Biology" }, { emoji: "📖", name: "English" },
               { emoji: "📐", name: "Maths" }, { emoji: "💻", name: "CS" },
-              { emoji: "📈", name: "Economics" }, { emoji: "🧾", name: "Accountancy" },
+              { emoji: "📈", name: "Economics" }, { emoji: "🧾", name: "Accounts" },
               { emoji: "🏢", name: "Business" }, { emoji: "🏛️", name: "History" },
-              { emoji: "🗳️", name: "Pol. Science" }, { emoji: "🏃", name: "Phy. Ed." },
+              { emoji: "🗳️", name: "Pol. Sc." }, { emoji: "🏃", name: "Phy. Ed." },
             ].map(({ emoji, name }) => (
-              <div key={name} style={{ background: "linear-gradient(135deg, rgba(255,255,255,0.4), rgba(240,249,252,0.4))", border: "1.5px solid rgba(8,145,178,0.2)", borderRadius: 12, padding: "10px 8px", textAlign: "center", transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)", cursor: "pointer" }}
-                onMouseEnter={e => { e.currentTarget.style.background = "linear-gradient(135deg, rgba(255,255,255,0.6), rgba(240,249,252,0.6))"; e.currentTarget.style.borderColor = "rgba(8,145,178,0.4)"; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 8px 20px rgba(8,145,178,0.15)"; }}
-                onMouseLeave={e => { e.currentTarget.style.background = "linear-gradient(135deg, rgba(255,255,255,0.4), rgba(240,249,252,0.4))"; e.currentTarget.style.borderColor = "rgba(8,145,178,0.2)"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}>
-                <div style={{ fontSize: 20, marginBottom: 4 }}>{emoji}</div>
-                <div style={{ color: "#064e78", fontWeight: 800, fontSize: 12, letterSpacing: "0.02em" }}>{name}</div>
-              </div>
-            ))}
-          </div>
-
-          <div className="auth-features">
-            {[
-              { icon: "📝", text: "Comprehensive Detailed Notes per Chapter" },
-              { icon: "🧠", text: "30 Board-Level MCQs with Explanations" },
-              { icon: "📄", text: "Full CBSE Sample Papers with Answer Keys" },
-              { icon: "📊", text: "Individual Progress Tracking per Subject" },
-            ].map(({ icon, text }) => (
-              <div key={text} style={{ display: "flex", alignItems: "flex-start", gap: 14 }}>
-                <div style={{ width: 36, height: 36, borderRadius: 10, background: "linear-gradient(135deg, rgba(8,145,178,0.12), rgba(244,114,182,0.08))", border: "1.5px solid rgba(8,145,178,0.2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, transition: "all 0.3s" }}>
-                  {icon}
-                </div>
-                <span style={{ color: "#9d174d", fontSize: 14, fontWeight: 600, lineHeight: 1.6 }}>{text}</span>
+              <div key={name} className="subj-chip">
+                <div style={{ fontSize: 18, marginBottom: 6, filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.2))" }}>{emoji}</div>
+                <div style={{ color: "#cbd5e1", fontWeight: 600, fontSize: 11, letterSpacing: "0.02em", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{name}</div>
               </div>
             ))}
           </div>
@@ -316,21 +298,20 @@ export function AuthView({
 
         {/* ===== RIGHT PANEL — LOGIN FORM ===== */}
         <div className="auth-right">
-          <div style={{ width: "100%" }}>
+          <div style={{ width: "100%", maxWidth: 360, margin: "0 auto" }}>
             <div style={{ marginBottom: 32 }}>
-              <h2 style={{ color: "#064e78", fontSize: 24, fontWeight: 900, margin: "0 0 5px", letterSpacing: "-0.02em" }}>
+              <h2 style={{ color: "#f8fafc", fontSize: 26, fontWeight: 800, margin: "0 0 8px", letterSpacing: "-0.02em" }}>
                 {authTab === "login" ? "Welcome back 👋" : authTab === "register" ? "Create Account ✨" : "Reset Password 🔑"}
               </h2>
-              <p style={{ color: "#9d174d", fontSize: 14, margin: 0, fontWeight: 500 }}>
+              <p style={{ color: "#94a3b8", fontSize: 14, margin: 0, fontWeight: 400 }}>
                 {authTab === "login" ? "Sign in to continue your preparation" : authTab === "register" ? "Join thousands of Class 12 students" : "Recover access to your account"}
               </p>
             </div>
 
             {/* Tabs */}
-            <div style={{ display: "flex", background: "rgba(15, 23, 42, 0.05)", border: "1.5px solid rgba(236, 72, 153, 0.15)", borderRadius: 14, padding: 5, marginBottom: 32, backdropFilter: "blur(10px)" }}>
-              {[["login", "🔑 Sign In"], ["register", "✨ Register"], ["forgot", "🔑 Forgot"]].map(([t, label]) => (
-                <button key={t} className="tab-btn" onClick={() => { setAuthTab(t); setResetPasswordData({ email: "", otp: "", newPassword: "", confirmPassword: "", loading: false, step: "email" }); setShowResetPassword(false); }}
-                  style={{ background: authTab === t ? "linear-gradient(135deg, #0891b2, #0284c7)" : "transparent", color: authTab === t ? "white" : "#9d174d", boxShadow: authTab === t ? "0 4px 12px rgba(236, 72, 153, 0.2)" : "none" }}>
+            <div style={{ display: "flex", background: "rgba(0, 0, 0, 0.2)", border: "1px solid rgba(255, 255, 255, 0.05)", borderRadius: 12, padding: 4, marginBottom: 32 }}>
+              {[["login", "Sign In"], ["register", "Register"], ["forgot", "Forgot"]].map(([t, label]) => (
+                <button key={t} className={`tab-btn ${authTab === t ? "active" : ""}`} onClick={() => { setAuthTab(t); setResetPasswordData({ email: "", otp: "", newPassword: "", confirmPassword: "", loading: false, step: "email" }); setShowResetPassword(false); }}>
                   {label}
                 </button>
               ))}
@@ -340,16 +321,12 @@ export function AuthView({
               {authTab === "register" && (
                 <>
                   <div>
-                    <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Full Name</label>
-                    <input className="auth-input" value={name} onChange={e => setName(e.target.value)}
-                      placeholder="Enter your full name"
-                      onKeyDown={e => e.key === "Enter" && doRegister()} />
+                    <label className="label-text">Full Name</label>
+                    <input className="auth-input" value={name} onChange={e => setName(e.target.value)} placeholder="Enter your full name" onKeyDown={e => e.key === "Enter" && doRegister()} />
                   </div>
                   <div>
-                    <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Email</label>
-                    <input className="auth-input" type="email" value={email} onChange={e => setEmail(e.target.value)}
-                      placeholder="Enter your email address"
-                      onKeyDown={e => e.key === "Enter" && doRegister()} />
+                    <label className="label-text">Email</label>
+                    <input className="auth-input" type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Enter your email address" onKeyDown={e => e.key === "Enter" && doRegister()} />
                   </div>
                 </>
               )}
@@ -358,130 +335,86 @@ export function AuthView({
                 <>
                   {resetPasswordData.step === "email" && (
                     <>
-                      <p style={{ color: "#9d174d", fontSize: 14, fontWeight: 500, marginBottom: 8 }}>Enter the email address associated with your account</p>
                       <div>
-                        <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Email Address</label>
-                        <input className="auth-input" type="email" value={resetPasswordData.email} onChange={e => setResetPasswordData({ ...resetPasswordData, email: e.target.value })}
-                          placeholder="Enter your email address"
-                          onKeyDown={e => e.key === "Enter" && doForgotPasswordRequest()} />
+                        <label className="label-text">Email Address</label>
+                        <input className="auth-input" type="email" value={resetPasswordData.email} onChange={e => setResetPasswordData({ ...resetPasswordData, email: e.target.value })} placeholder="Enter your account email" onKeyDown={e => e.key === "Enter" && doForgotPasswordRequest()} />
                       </div>
                     </>
                   )}
 
                   {resetPasswordData.step === "otp" && (
                     <>
-                      <p style={{ color: "#9d174d", fontSize: 14, fontWeight: 500, marginBottom: 8 }}>We sent a 6-digit reset code to your email</p>
+                      <p style={{ color: "#94a3b8", fontSize: 13, marginBottom: 8 }}>We sent a 6-digit reset code to your email</p>
                       <div>
-                        <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Reset Code</label>
-                        <input className="auth-input" type="text" maxLength="6" value={resetPasswordData.otp} onChange={e => setResetPasswordData({ ...resetPasswordData, otp: e.target.value.replace(/\D/g, "") })}
-                          placeholder="000000"
-                          style={{ letterSpacing: "8px", fontSize: "18px", fontWeight: 700, textAlign: "center" }}
-                          onKeyDown={e => e.key === "Enter" && doForgotPasswordVerifyOTP()} />
+                        <label className="label-text">Reset Code</label>
+                        <input className="auth-input" type="text" maxLength="6" value={resetPasswordData.otp} onChange={e => setResetPasswordData({ ...resetPasswordData, otp: e.target.value.replace(/\D/g, "") })} placeholder="000000" style={{ letterSpacing: "8px", fontSize: "18px", fontWeight: 700, textAlign: "center" }} onKeyDown={e => e.key === "Enter" && doForgotPasswordVerifyOTP()} />
                       </div>
                     </>
                   )}
 
                   {resetPasswordData.step === "newPassword" && (
                     <>
-                      <p style={{ color: "#9d174d", fontSize: 14, fontWeight: 500, marginBottom: 8 }}>Set your new password</p>
                       <div>
-                        <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>New Password</label>
+                        <label className="label-text">New Password</label>
                         <div style={{ position: "relative" }}>
-                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.newPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, newPassword: e.target.value })}
-                            placeholder="Min 8 chars, mixed case, numbers, symbols"
-                            style={{ paddingRight: 48 }} />
-                          <button onClick={() => setShowResetPassword(s => !s)} style={{ position: "absolute", right: 14, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#0369a1", fontSize: 18, cursor: "pointer", padding: "4px 8px" }}>
-                            {showResetPassword ? "🙈" : "👁️"}
-                          </button>
+                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.newPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, newPassword: e.target.value })} placeholder="Min 8 chars, mixed case, symbols" style={{ paddingRight: 40 }} />
+                          <button onClick={() => setShowResetPassword(s => !s)} style={{ position: "absolute", right: 12, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#64748b", fontSize: 16, cursor: "pointer" }}>{showResetPassword ? "🙈" : "👁️"}</button>
                         </div>
                       </div>
                       <div>
-                        <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Confirm Password</label>
+                        <label className="label-text">Confirm Password</label>
                         <div style={{ position: "relative" }}>
-                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.confirmPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, confirmPassword: e.target.value })}
-                            placeholder="Re-enter password"
-                            style={{ paddingRight: 48 }}
-                            onKeyDown={e => e.key === "Enter" && doForgotPasswordReset()} />
-                          <button onClick={() => setShowResetPassword(s => !s)} style={{ position: "absolute", right: 14, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#0369a1", fontSize: 18, cursor: "pointer", padding: "4px 8px" }}>
-                            {showResetPassword ? "🙈" : "👁️"}
-                          </button>
+                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.confirmPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, confirmPassword: e.target.value })} placeholder="Re-enter password" style={{ paddingRight: 40 }} onKeyDown={e => e.key === "Enter" && doForgotPasswordReset()} />
+                          <button onClick={() => setShowResetPassword(s => !s)} style={{ position: "absolute", right: 12, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#64748b", fontSize: 16, cursor: "pointer" }}>{showResetPassword ? "🙈" : "👁️"}</button>
                         </div>
                       </div>
                     </>
                   )}
-
-                  {authErr && (
-                    <div style={{ background: "linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(220, 38, 38, 0.08))", border: "1.5px solid rgba(239, 68, 68, 0.25)", color: "#991b1b", padding: "12px 16px", borderRadius: 12, fontSize: 13, fontWeight: 600 }}>{authErr}</div>
-                  )}
-
-                  <button className="auth-btn" onClick={
-                    resetPasswordData.step === "email" ? doForgotPasswordRequest :
-                    resetPasswordData.step === "otp" ? doForgotPasswordVerifyOTP :
-                    doForgotPasswordReset
-                  } style={{ marginTop: 8 }} disabled={resetPasswordData.loading}>
-                    {resetPasswordData.loading ? "⏳ Processing..." :
-                    resetPasswordData.step === "email" ? "Send Reset Code →" :
-                    resetPasswordData.step === "otp" ? "Verify Code →" :
-                    "Reset Password ✓"}
+                  {authErr && <div style={{ background: "rgba(239, 68, 68, 0.1)", border: "1px solid rgba(239, 68, 68, 0.2)", color: "#fca5a5", padding: "12px", borderRadius: 10, fontSize: 13, fontWeight: 500 }}>{authErr}</div>}
+                  <button className="auth-btn" onClick={resetPasswordData.step === "email" ? doForgotPasswordRequest : resetPasswordData.step === "otp" ? doForgotPasswordVerifyOTP : doForgotPasswordReset} style={{ marginTop: 8 }} disabled={resetPasswordData.loading}>
+                    {resetPasswordData.loading ? "⏳ Processing..." : resetPasswordData.step === "email" ? "Send Reset Code →" : resetPasswordData.step === "otp" ? "Verify Code →" : "Reset Password ✓"}
                   </button>
-
-                  <button onClick={cancelForgotPassword} style={{ width: "100%", padding: "13px 18px", border: "1.5px solid #dbeafe", borderRadius: 12, background: "white", color: "#0891b2", fontSize: 14, fontWeight: 600, cursor: "pointer", marginTop: 8 }}>
-                    Back to Login
-                  </button>
+                  <button onClick={cancelForgotPassword} style={{ width: "100%", padding: "14px", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 12, background: "rgba(255,255,255,0.03)", color: "#cbd5e1", fontSize: 14, fontWeight: 500, cursor: "pointer", marginTop: 4 }}>Back</button>
                 </>
               ) : (
                 <>
                   {authTab !== "forgot" && (
                     <div>
-                      <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>
-                        {authTab === "register" ? "Username" : "Username or Email"}
-                      </label>
-                      <input className="auth-input" value={uname} onChange={e => setUname(e.target.value)}
-                        placeholder={authTab === "register" ? "Choose a unique username" : "Enter username or email"}
-                        onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
+                      <label className="label-text">{authTab === "register" ? "Username" : "Email or Username"}</label>
+                      <input className="auth-input" value={uname} onChange={e => setUname(e.target.value)} placeholder={authTab === "register" ? "Choose a unique username" : "Enter email or username"} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
                     </div>
                   )}
                   <div>
-                    <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Password</label>
+                    <label className="label-text">Password</label>
                     <div style={{ position: "relative" }}>
-                      <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)}
-                        placeholder={authTab === "register" ? "Min 8 chars, mixed case, numbers, symbols" : "Enter your password"}
-                        style={{ paddingRight: 48 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
-                      <button onClick={() => setShowPass(s => !s)} style={{ position: "absolute", right: 14, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#0369a1", fontSize: 18, cursor: "pointer", padding: "4px 8px" }}>
-                        {showPass ? "🙈" : "👁️"}
-                      </button>
+                      <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)} placeholder={authTab === "register" ? "Min 8 chars, mixed, symbols" : "Enter your password"} style={{ paddingRight: 40 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
+                      <button onClick={() => setShowPass(s => !s)} style={{ position: "absolute", right: 12, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#64748b", fontSize: 16, cursor: "pointer" }}>{showPass ? "🙈" : "👁️"}</button>
                     </div>
                     {authTab === "register" && pass && (
                       <div style={{ marginTop: 12 }}>
-                        <div style={{display: "flex", alignItems: "center", gap: 10}}>
-                          <div style={{flex: 1, height: 6, background: "#e2e8f0", borderRadius: 99, overflow: "hidden"}}>
-                            <div style={{width: `${validatePasswordStrength(pass).strength.percent}%`, height: "100%", background: validatePasswordStrength(pass).strength.color, transition: "width 0.3s cubic-bezier(0.4, 0, 0.2, 1)"}} />
+                        <div style={{display: "flex", alignItems: "center", gap: 8}}>
+                          <div style={{flex: 1, height: 4, background: "rgba(255,255,255,0.1)", borderRadius: 99, overflow: "hidden"}}>
+                            <div style={{width: `${validatePasswordStrength(pass).strength.percent}%`, height: "100%", background: validatePasswordStrength(pass).strength.color, transition: "width 0.3s ease"}} />
                           </div>
-                          <span style={{fontSize: 12, fontWeight: 700, color: validatePasswordStrength(pass).strength.color, minWidth: 80}}>{validatePasswordStrength(pass).strength.level}</span>
+                          <span style={{fontSize: 11, fontWeight: 600, color: validatePasswordStrength(pass).strength.color, minWidth: 60}}>{validatePasswordStrength(pass).strength.level}</span>
                         </div>
                         {!validatePasswordStrength(pass).isValid && (
-                          <div style={{marginTop: 10}}>
+                          <div style={{marginTop: 8}}>
                             {validatePasswordStrength(pass).errors.map((err, i) => (
-                              <div key={i} style={{fontSize: 12, color: "#ef4444", marginBottom: 5, fontWeight: 500}}>❌ {err}</div>
+                              <div key={i} style={{fontSize: 11, color: "#fca5a5", marginBottom: 3}}>{err}</div>
                             ))}
                           </div>
-                        )}
-                        {validatePasswordStrength(pass).isValid && (
-                          <div style={{marginTop: 10, fontSize: 12, color: "#16a34a", fontWeight: 600}}>✅ Password is strong!</div>
                         )}
                       </div>
                     )}
                   </div>
                   {authTab === "register" && (
                     <div>
-                      <label style={{ color: "#0369a1", fontSize: 12, fontWeight: 800, display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.1em" }}>Confirm Password</label>
-                      <input className="auth-input" type="password" value={pass2} onChange={e => setPass2(e.target.value)}
-                        placeholder="Re-enter password" onKeyDown={e => e.key === "Enter" && doRegister()} />
+                      <label className="label-text">Confirm Password</label>
+                      <input className="auth-input" type="password" value={pass2} onChange={e => setPass2(e.target.value)} placeholder="Re-enter password" onKeyDown={e => e.key === "Enter" && doRegister()} />
                     </div>
                   )}
-                  {authErr && (
-                    <div style={{ background: "linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(220, 38, 38, 0.08))", border: "1.5px solid rgba(239, 68, 68, 0.25)", color: "#991b1b", padding: "12px 16px", borderRadius: 12, fontSize: 13, fontWeight: 600 }}>{authErr}</div>
-                  )}
+                  {authErr && <div style={{ background: "rgba(239, 68, 68, 0.1)", border: "1px solid rgba(239, 68, 68, 0.2)", color: "#fca5a5", padding: "12px", borderRadius: 10, fontSize: 13, fontWeight: 500 }}>{authErr}</div>}
                   <button className="auth-btn" onClick={authTab === "login" ? doLogin : doRegister} style={{ marginTop: 8 }}>
                     {authTab === "login" ? "Sign In →" : "Create Account ✨"}
                   </button>
@@ -490,16 +423,12 @@ export function AuthView({
             </div>
 
             {authTab === "login" && (
-              <>
-                <p style={{ textAlign: "center", color: "#9d174d", fontSize: 14, marginTop: 22, marginBottom: 12, fontWeight: 500 }}>
-                  New here? <button onClick={() => setAuthTab("register")} style={{ background: "none", border: "none", color: "#0891b2", fontWeight: 700, cursor: "pointer", fontSize: "inherit" }}>Create an account</button>
-                </p>
-                <p style={{ textAlign: "center", color: "#9d174d", fontSize: 14, marginBottom: 0, fontWeight: 500 }}>
-                  <button onClick={() => setAuthTab("forgot")} style={{ background: "none", border: "none", color: "#0891b2", fontWeight: 700, cursor: "pointer", fontSize: "inherit" }}>Forgot your password?</button>
-                </p>
-              </>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 24 }}>
+                <button className="auth-link-btn" onClick={() => setAuthTab("forgot")} style={{ fontSize: 13, color: "#94a3b8", fontWeight: 500 }}>Forgot password?</button>
+                <button className="auth-link-btn" onClick={() => setAuthTab("register")} style={{ fontSize: 13 }}>Create account</button>
+              </div>
             )}
-            <p style={{ textAlign: "center", color: "#cbd5e1", fontSize: 12, marginTop: 32, fontWeight: 500, letterSpacing: "0.04em" }}>AkmEdu45 • Smart Study Platform • 12 Subjects • All Chapters</p>
+            <p style={{ textAlign: "center", color: "#475569", fontSize: 11, marginTop: 40, fontWeight: 500, letterSpacing: "0.05em", textTransform: "uppercase" }}>AkmEdu45 • Smart Study Platform</p>
           </div>
         </div>
       </div>
