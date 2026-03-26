@@ -35,24 +35,46 @@ export function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji
           {/* Notes Content */}
           <div id="printable-content" className="prose-notes-block">
             <div className="prose-notes">
-              {notes.split('\n').map((line, i) => {
-                if (line.startsWith('# ')) return <h1 key={i}>{line.slice(2)}</h1>;
-                if (line.startsWith('## ')) return <h2 key={i}>{line.slice(3)}</h2>;
-                if (line.startsWith('### ')) return <h3 key={i}>{line.slice(4)}</h3>;
-                if (line.startsWith('---')) return <hr key={i} />;
-                if (line.startsWith('> ')) return <blockquote key={i}>{line.slice(2)}</blockquote>;
-                if (line.startsWith('- ') || line.startsWith('* ')) {
-                  const text = line.slice(2).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-                  return <ul key={i} style={{margin:0,paddingLeft:22}}><li dangerouslySetInnerHTML={{ __html: text }} /></ul>;
+              {(() => {
+                const elements = [];
+                const lines = notes.split('\n');
+                let i = 0;
+                while (i < lines.length) {
+                  const line = lines[i];
+                  if (line.startsWith('# ')) {
+                    elements.push(<h1 key={i}>{line.slice(2)}</h1>);
+                  } else if (line.startsWith('## ')) {
+                    elements.push(<h2 key={i}>{line.slice(3)}</h2>);
+                  } else if (line.startsWith('### ')) {
+                    elements.push(<h3 key={i}>{line.slice(4)}</h3>);
+                  } else if (line.startsWith('---')) {
+                    elements.push(<hr key={i} />);
+                  } else if (line.startsWith('> ')) {
+                    elements.push(<blockquote key={i}>{line.slice(2)}</blockquote>);
+                  } else if (line.startsWith('- ') || line.startsWith('* ')) {
+                    const text = line.slice(2).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+                    elements.push(<ul key={i} style={{margin:0,paddingLeft:22}}><li dangerouslySetInnerHTML={{ __html: text }} /></ul>);
+                  } else if (/^\d+\.\s/.test(line)) {
+                    // Group consecutive numbered items
+                    const listItems = [];
+                    let j = i;
+                    while (j < lines.length && /^\d+\.\s/.test(lines[j])) {
+                      const text = lines[j].replace(/^\d+\.\s/, '').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+                      listItems.push(<li key={j} dangerouslySetInnerHTML={{ __html: text }} />);
+                      j++;
+                    }
+                    elements.push(<ol key={i} style={{margin:0,paddingLeft:22}}>{listItems}</ol>);
+                    i = j - 1;
+                  } else if (line.trim() === '') {
+                    elements.push(<div key={i} style={{height:6}} />);
+                  } else {
+                    const formatted = line.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/`(.+?)`/g, '<code>$1</code>');
+                    elements.push(<p key={i} dangerouslySetInnerHTML={{ __html: formatted }} />);
+                  }
+                  i++;
                 }
-                if (/^\d+\.\s/.test(line)) {
-                  const text = line.replace(/^\d+\.\s/, '').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-                  return <ol key={i} style={{margin:0,paddingLeft:22}}><li dangerouslySetInnerHTML={{ __html: text }} /></ol>;
-                }
-                if (line.trim() === '') return <div key={i} style={{height:6}} />;
-                const formatted = line.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/`(.+?)`/g, '<code>$1</code>');
-                return <p key={i} dangerouslySetInnerHTML={{ __html: formatted }} />;
-              })}
+                return elements;
+              })()}
             </div>
           </div>
           {/* Bottom action bar */}
