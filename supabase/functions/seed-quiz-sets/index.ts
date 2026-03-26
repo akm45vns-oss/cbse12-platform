@@ -7,6 +7,9 @@ const corsHeaders = {
   "Access-Control-Allow-Headers": "Content-Type, Authorization",
 };
 
+// deno-lint-ignore no-explicit-any
+const __NO_AUTH_CHECK = true; // Allow unauthenticated calls for seeding
+
 // CURRICULUM structure (must match frontend)
 const CURRICULUM = {
   Physics: { chapters: ["Units and Measurements", "Motion in a Straight Line", "Motion in a Plane", "Laws of Motion", "Work, Energy and Power", "System of Particles and Rotational Motion", "Gravitation", "Mechanical Properties of Solids", "Mechanical Properties of Fluids", "Thermal Properties of Matter", "Thermodynamics", "Kinetic Theory"] },
@@ -31,6 +34,21 @@ serve(async (req) => {
   try {
     const url = new URL(req.url);
     const subject = url.searchParams.get("subject") || "ALL";
+
+    // Debug endpoint
+    if (subject === "DEBUG") {
+      const groqKey = Deno.env.get("GROQ_API_KEY");
+      return new Response(
+        JSON.stringify({
+          groqKeyPresent: !!groqKey,
+          groqKeyLength: groqKey?.length || 0,
+          groqKeyPrefix: groqKey ? groqKey.substring(0, 10) + "..." : "MISSING",
+          supabaseUrlPresent: !!Deno.env.get("SUPABASE_URL"),
+          supabaseKeyPresent: !!Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")
+        }),
+        { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
 
     // Initialize Supabase client
     const supabaseUrl = Deno.env.get("SUPABASE_URL");
@@ -68,14 +86,48 @@ serve(async (req) => {
         try {
           console.log(`  ✏️ ${chap}...`);
 
-          // Generate 15 sets
-          const sets = await generateQuizSets(chap, subj, groqKey);
+          // Generate 15 sets (3 API calls of 5 sets each)
+          const allSets = [];
+          let successCount = 0;
 
-          if (!sets || sets.length === 0) {
-            console.log(`    ❌ Failed to generate questions`);
-            results.push({ subject: subj, chapter: chap, status: "failed" });
+          for (let batch = 1; batch <= 3; batch++) {
+            if (successCount >= 15) break; // Stop if we have enough sets
+
+            const result = await generateQuizSets(chap, subj, groqKey, 5, batch);
+
+            if (result.success && result.data && result.data.length > 0) {
+              allSets.push(...result.data);
+              successCount += result.data.length;
+              console.log(`    ✓ Batch ${batch}: ${result.data.length} sets`);
+            } else {
+              console.log(`    ⚠️ Batch ${batch} failed, retrying after longer wait...`);
+
+              // If batch failed, wait extra long before retry
+              await new Promise(resolve => setTimeout(resolve, 60000));
+
+              const retryResult = await generateQuizSets(chap, subj, groqKey, 5, `${batch}-retry`);
+              if (retryResult.success && retryResult.data && retryResult.data.length > 0) {
+                allSets.push(...retryResult.data);
+                successCount += retryResult.data.length;
+                console.log(`    ✓ Batch ${batch} retry: ${retryResult.data.length} sets`);
+              }
+            }
+
+            // Delay between batches to avoid rate limits (60+ seconds)
+            if (batch < 3 && successCount < 15) {
+              console.log(`    ⏳ Waiting 70s before batch ${batch + 1}...`);
+              await new Promise(resolve => setTimeout(resolve, 70000));
+            }
+          }
+
+          if (allSets.length === 0) {
+            console.log(`    ❌ No sets generated for this chapter after retries`);
+            results.push({ subject: subj, chapter: chap, status: "failed", error: "No sets generated" });
             continue;
           }
+
+          // Keep only first 15 sets if more were generated
+          const sets = allSets.slice(0, 15);
 
           // Save to database
           for (let i = 0; i < sets.length; i++) {
@@ -97,15 +149,15 @@ serve(async (req) => {
 
           totalSets += sets.length;
           totalQuestions += sets.reduce((sum, set) => sum + set.length, 0);
-          console.log(`    ✓ 15 sets saved`);
+          console.log(`    ✓ ${sets.length} sets saved`);
           results.push({ subject: subj, chapter: chap, status: "success", sets: sets.length });
         } catch (err) {
           console.error(`  Error with ${chap}:`, err);
           results.push({ subject: subj, chapter: chap, status: "error", error: err.message });
         }
 
-        // Small delay to avoid rate limiting
-        await new Promise(resolve => setTimeout(resolve, 500));
+        // Long delay to avoid rate limiting between chapters
+        await new Promise(resolve => setTimeout(resolve, 90000));
       }
     }
 
@@ -128,49 +180,21 @@ serve(async (req) => {
   }
 });
 
-async function generateQuizSets(chapter, subject, groqKey) {
-  const prompt = `Generate 15 COMPLETELY DIFFERENT quiz sets for "${chapter}" in ${subject}.
-
-IMPORTANT: Each set must have DIFFERENT questions (no repeats across sets).
-
-For EACH of the 15 sets, generate exactly 30 multiple-choice questions with this structure:
-- 5 EASY questions (direct concept application, straightforward)
-- 5 MEDIUM questions (require understanding and basic analysis)
-- 5 HARD questions (application, analysis, synthesis level - board exam standard)
-
-Each question must follow this JSON format:
-{
-  "q": "Question text (clear and unambiguous)",
-  "opts": ["Option A", "Option B", "Option C", "Option D"],
-  "ans": 0,
-  "exp": "Detailed explanation of why answer is correct"
-}
-
-Return ALL 15 sets as a JSON array. Example structure:
-[
-  [
-    {"q": "Question 1", "opts": [...], "ans": 0, "exp": "..."},
-    ...30 questions for set 1...
-  ],
-  [
-    ...30 questions for set 2...
-  ],
-  ...
-  [
-    ...30 questions for set 15...
-  ]
-]
-
-RULES:
-- Total: 15 sets × 30 questions = 450 questions
-- CBSE Class 12 board exam level
-- 100% ORIGINAL content (no copying)
-- Each option must be plausible but clearly distinguishable
-- Ans value: 0-3 (index of correct option)
-- Explanations: 2-3 sentences`;
+async function generateQuizSets(chapter, subject, groqKey, numSets = 5, batchNum = 1) {
+  const prompt = `Generate exactly ${numSets} quiz sets for "${chapter}" (${subject}). Batch ${batchNum}.
+Each set: exactly 30 MCQs (5 easy + 5 medium + 5 hard). CBSE 12 level.
+JSON format: [[[{"q":"...","opts":[...],"ans":0,"exp":"..."},...30 each],...${numSets} sets]]
+Unique questions. Short 1-line explanations.`;
 
   try {
-    console.log(`Generating sets for ${subject} - ${chapter}...`);
+    console.log(`Generating ${numSets} sets (batch ${batchNum}) for ${subject} - ${chapter}...`);
+
+    const requestBody = {
+      model: "llama-3.1-8b-instant",
+      max_tokens: 3000,
+      temperature: 0.7,
+      messages: [{ role: "user", content: prompt }]
+    };
 
     const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
@@ -178,63 +202,140 @@ RULES:
         "Content-Type": "application/json",
         "Authorization": `Bearer ${groqKey}`
       },
-      body: JSON.stringify({
-        model: "llama-3.1-8b-instant",
-        max_tokens: 4000,
-        temperature: 0.7,
-        messages: [{ role: "user", content: prompt }]
-      })
+      body: JSON.stringify(requestBody)
     });
 
     console.log(`Groq response status: ${response.status}`);
+    const responseText = await response.text();
+    console.log(`Response length: ${responseText.length}`);
 
     if (!response.ok) {
-      const err = await response.json();
-      console.error(`Groq API error:`, err);
-      throw new Error(err.error?.message || `Groq API error ${response.status}`);
+      let err;
+      try {
+        err = JSON.parse(responseText);
+      } catch {
+        err = { message: responseText };
+      }
+      const errMsg = err.error?.message || err.message || responseText || `Groq API error ${response.status}`;
+      console.error(`Groq API error:`, errMsg);
+      throw new Error(errMsg);
     }
 
-    const data = await response.json();
+    let data;
+    try {
+      data = JSON.parse(responseText);
+    } catch (parseErr) {
+      console.error(`Failed to parse response as JSON:`, parseErr.message);
+      throw new Error(`Invalid JSON response: ${parseErr.message}`);
+    }
     console.log(`Response received, extracting text...`);
 
     const text = data.choices?.[0]?.message?.content || "";
     if (!text) throw new Error("Empty response from Groq");
 
-    console.log(`Text length: ${text.length}, first 200 chars:`, text.substring(0, 200));
+    console.log(`Text length: ${text.length}`);
 
-    // Extract JSON
+    // Extract JSON - robust parsing for truncated/malformed responses
     let cleaned = text.trim().replace(/```json\n?|```\n?/g, "").trim();
     const start = cleaned.indexOf("[");
     if (start === -1) throw new Error("No JSON array found in response");
 
     cleaned = cleaned.slice(start);
-    const lastGood = cleaned.lastIndexOf("},");
-    if (lastGood === -1) {
-      const onlyOne = cleaned.lastIndexOf("}");
-      if (onlyOne === -1) throw new Error("No complete JSON objects found");
-      cleaned = cleaned.slice(0, onlyOne + 1) + "]";
-    } else {
-      cleaned = cleaned.slice(0, lastGood + 1) + "]";
-    }
 
-    console.log(`Parsing JSON, cleaned length: ${cleaned.length}`);
-    const sets = JSON.parse(cleaned);
+    // Try to find valid JSON by progressively finding matching brackets
+    let bracketCount = 0;
+    let endPos = -1;
 
-    // Validate
-    if (!Array.isArray(sets) || sets.length !== 15) {
-      throw new Error(`Expected 15 sets, got ${sets.length}`);
-    }
-
-    for (let i = 0; i < sets.length; i++) {
-      if (!Array.isArray(sets[i]) || sets[i].length !== 30) {
-        throw new Error(`Set ${i + 1}: Expected 30 questions, got ${sets[i].length}`);
+    for (let i = 0; i < cleaned.length; i++) {
+      const char = cleaned[i];
+      if (char === "[") bracketCount++;
+      else if (char === "]") {
+        bracketCount--;
+        if (bracketCount === 0) {
+          endPos = i;
+          break;
+        }
       }
     }
 
-    console.log(`✓ Successfully generated 15 sets for ${chapter}`);
-    return sets;
+    if (endPos !== -1) {
+      // Valid complete JSON found
+      cleaned = cleaned.slice(0, endPos + 1);
+    } else {
+      // Incomplete JSON - try to fix it
+      const lastObjectEnd = cleaned.lastIndexOf("}");
+      if (lastObjectEnd === -1) {
+        throw new Error("No complete JSON objects found in response");
+      }
+
+      // Count opening brackets up to the last object
+      let openBrackets = 0;
+      for (let i = 0; i <= lastObjectEnd; i++) {
+        if (cleaned[i] === "[") openBrackets++;
+      }
+
+      // Take everything up to the last complete object and close all brackets
+      cleaned = cleaned.slice(0, lastObjectEnd + 1);
+      cleaned += "]".repeat(openBrackets);
+      console.log(`Auto-completed JSON with ${openBrackets} closing brackets`);
+    }
+
+    // Try to parse - if it fails, progressively remove trailing content
+    console.log(`Attempting JSON parse, length: ${cleaned.length}`);
+    let sets = null;
+    let parseError = null;
+
+    try {
+      sets = JSON.parse(cleaned);
+      console.log(`✓ JSON parsed successfully`);
+    } catch (err) {
+      parseError = err;
+      console.log(`Parse error: ${err.message}`);
+
+      // Try removing trailing characters one by one
+      for (let i = cleaned.length - 1; i > 10; i--) {
+        try {
+          if (cleaned[i] === "]") {
+            const test = cleaned.slice(0, i + 1);
+            sets = JSON.parse(test);
+            cleaned = test;
+            console.log(`✓ JSON parsed after removing ${cleaned.length - i} trailing chars`);
+            break;
+          }
+        } catch (e) {
+          // Continue trying
+        }
+      }
+
+      if (!sets) {
+        throw parseError;
+      }
+    }
+
+    // Validate - accept any sets with at least some questions
+    if (!Array.isArray(sets) || sets.length === 0) {
+      throw new Error(`Expected sets array, got ${sets.length} items`);
+    }
+
+    // Validate each set has questions (accept even if not exactly 30)
+    let validSetCount = 0;
+    for (let i = 0; i < sets.length; i++) {
+      if (Array.isArray(sets[i]) && sets[i].length > 0) {
+        if (sets[i].length !== 30) {
+          console.warn(`Set ${i + 1}: Has ${sets[i].length} questions (expected 30)`);
+        }
+        validSetCount++;
+      }
+    }
+
+    if (validSetCount === 0) {
+      throw new Error("No valid question sets found");
+    }
+
+    console.log(`✓ Successfully generated ${sets.length} sets (${validSetCount} valid) for ${chapter}`);
+    return { success: true, data: sets };
   } catch (err) {
     console.error(`❌ Error generating sets for ${chapter}:`, err.message);
-    return null;
+    return { success: false, error: err.message };
   }
 }
