@@ -71,103 +71,119 @@ serve(async (req) => {
       );
     }
 
-    // Determine which subjects to seed
-    const subjects = subject === "ALL" ? Object.keys(CURRICULUM) : [subject];
+    // Support single chapter seeding: ?subject=Physics&chapter=Units+and+Measurements
+    const chapter = url.searchParams.get("chapter");
 
-    let totalSets = 0;
-    let totalQuestions = 0;
+    if (chapter) {
+      // Single chapter mode - fast return
+      console.log(`📘 Seeding single chapter: ${subject} - ${chapter}`);
+
+      try {
+        const allSets = [];
+        let successCount = 0;
+
+        // Generate 15 sets (3 API calls of 5 sets each)
+        for (let batch = 1; batch <= 3; batch++) {
+          if (successCount >= 15) break;
+
+          const result = await generateQuizSets(chapter, subject, groqKey, 5, batch);
+
+          if (result.success && result.data && result.data.length > 0) {
+            allSets.push(...result.data);
+            successCount += result.data.length;
+            console.log(`  ✓ Batch ${batch}: ${result.data.length} sets`);
+          } else {
+            console.log(`  ⚠️ Batch ${batch} failed, retrying...`);
+            await new Promise(resolve => setTimeout(resolve, 30000)); // 30s retry wait
+
+            const retryResult = await generateQuizSets(chapter, subject, groqKey, 5, `${batch}-retry`);
+            if (retryResult.success && retryResult.data && retryResult.data.length > 0) {
+              allSets.push(...retryResult.data);
+              successCount += retryResult.data.length;
+              console.log(`  ✓ Batch ${batch} retry: ${retryResult.data.length} sets`);
+            }
+          }
+
+          // Quick delay between batches (30s instead of 70s)
+          if (batch < 3 && successCount < 15) {
+            await new Promise(resolve => setTimeout(resolve, 30000));
+          }
+        }
+
+        if (allSets.length === 0) {
+          return new Response(
+            JSON.stringify({ success: false, error: "No sets generated after retries" }),
+            { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+          );
+        }
+
+        const sets = allSets.slice(0, 15);
+
+        // Save to database
+        let savedCount = 0;
+        for (let i = 0; i < sets.length; i++) {
+          const { error } = await supabase.from("quiz_sets").upsert(
+            {
+              subject,
+              chapter,
+              set_number: i + 1,
+              questions: sets[i],
+              created_at: new Date().toISOString()
+            },
+            { onConflict: "subject,chapter,set_number" }
+          );
+          if (!error) savedCount++;
+        }
+
+        const totalQuestions = sets.reduce((sum, set) => sum + set.length, 0);
+        return new Response(
+          JSON.stringify({
+            success: true,
+            subject,
+            chapter,
+            setsGenerated: sets.length,
+            setsSaved: savedCount,
+            totalQuestions,
+            message: `✅ Generated ${sets.length} sets with ${totalQuestions} questions`
+          }),
+          { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        );
+      } catch (err) {
+        console.error(`Error:`, err);
+        return new Response(
+          JSON.stringify({ success: false, error: err.message }),
+          { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        );
+      }
+    }
+
+    // Bulk mode: seed all chapters for subject
+    console.log(`📚 Starting bulk seed for subject: ${subject}`);
+    const subjects = subject === "ALL" ? Object.keys(CURRICULUM) : [subject];
     const results = [];
+    let totalJobsQueued = 0;
 
     for (const subj of subjects) {
       const chapters = CURRICULUM[subj].chapters || [];
-      console.log(`\n📚 ${subj} (${chapters.length} chapters)`);
-
       for (const chap of chapters) {
-        try {
-          console.log(`  ✏️ ${chap}...`);
-
-          // Generate 15 sets (3 API calls of 5 sets each)
-          const allSets = [];
-          let successCount = 0;
-
-          for (let batch = 1; batch <= 3; batch++) {
-            if (successCount >= 15) break; // Stop if we have enough sets
-
-            const result = await generateQuizSets(chap, subj, groqKey, 5, batch);
-
-            if (result.success && result.data && result.data.length > 0) {
-              allSets.push(...result.data);
-              successCount += result.data.length;
-              console.log(`    ✓ Batch ${batch}: ${result.data.length} sets`);
-            } else {
-              console.log(`    ⚠️ Batch ${batch} failed, retrying after longer wait...`);
-
-              // If batch failed, wait extra long before retry
-              await new Promise(resolve => setTimeout(resolve, 60000));
-
-              const retryResult = await generateQuizSets(chap, subj, groqKey, 5, `${batch}-retry`);
-              if (retryResult.success && retryResult.data && retryResult.data.length > 0) {
-                allSets.push(...retryResult.data);
-                successCount += retryResult.data.length;
-                console.log(`    ✓ Batch ${batch} retry: ${retryResult.data.length} sets`);
-              }
-            }
-
-            // Delay between batches to avoid rate limits (60+ seconds)
-            if (batch < 3 && successCount < 15) {
-              console.log(`    ⏳ Waiting 70s before batch ${batch + 1}...`);
-              await new Promise(resolve => setTimeout(resolve, 70000));
-            }
-          }
-
-          if (allSets.length === 0) {
-            console.log(`    ❌ No sets generated for this chapter after retries`);
-            results.push({ subject: subj, chapter: chap, status: "failed", error: "No sets generated" });
-            continue;
-          }
-
-          // Keep only first 15 sets if more were generated
-          const sets = allSets.slice(0, 15);
-
-          // Save to database
-          for (let i = 0; i < sets.length; i++) {
-            const { error } = await supabase.from("quiz_sets").upsert(
-              {
-                subject: subj,
-                chapter: chap,
-                set_number: i + 1,
-                questions: sets[i],
-                created_at: new Date().toISOString()
-              },
-              { onConflict: "subject,chapter,set_number" }
-            );
-
-            if (error) {
-              console.log(`    ❌ Set ${i + 1} failed`);
-            }
-          }
-
-          totalSets += sets.length;
-          totalQuestions += sets.reduce((sum, set) => sum + set.length, 0);
-          console.log(`    ✓ ${sets.length} sets saved`);
-          results.push({ subject: subj, chapter: chap, status: "success", sets: sets.length });
-        } catch (err) {
-          console.error(`  Error with ${chap}:`, err);
-          results.push({ subject: subj, chapter: chap, status: "error", error: err.message });
-        }
-
-        // Long delay to avoid rate limiting between chapters
-        await new Promise(resolve => setTimeout(resolve, 90000));
+        results.push({
+          subject: subj,
+          chapter: chap,
+          status: "queued",
+          instructions: `Call with ?subject=${encodeURIComponent(subj)}&chapter=${encodeURIComponent(chap)}`
+        });
+        totalJobsQueued++;
       }
     }
 
     return new Response(
       JSON.stringify({
         success: true,
-        totalSets,
-        totalQuestions,
-        summary: `✅ Seeded ${totalSets} sets with ${totalQuestions} questions`,
-        details: results
+        mode: "bulk",
+        totalChaptersToSeed: totalJobsQueued,
+        message: `🚀 ${totalJobsQueued} chapters ready to seed. Use the provided URLs to seed each chapter.`,
+        details: results.slice(0, 5),
+        moreChapters: totalJobsQueued > 5 ? `... and ${totalJobsQueued - 5} more` : "All chapters shown"
       }),
       { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
     );
