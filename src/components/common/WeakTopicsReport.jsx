@@ -12,17 +12,20 @@ export function WeakTopicsReport() {
     return (
       <div
         style={{
-          background: "linear-gradient(135deg, #f0fdf4, #f9fce4)",
-          border: "1.5px solid #86efac",
-          borderRadius: 16,
-          padding: 20,
+          background: "rgba(16, 185, 129, 0.05)",
+          backdropFilter: "blur(24px)",
+          WebkitBackdropFilter: "blur(24px)",
+          border: "1px solid rgba(16, 185, 129, 0.2)",
+          borderRadius: 24,
+          padding: 32,
           textAlign: "center",
-          color: "#15803d",
+          color: "#34d399",
+          boxShadow: "0 12px 32px rgba(16, 185, 129, 0.1), inset 0 1px 0 rgba(255,255,255,0.05)",
         }}
       >
-        <div style={{ fontSize: 28, marginBottom: 8 }}>🎉</div>
-        <div style={{ fontWeight: 700, fontSize: 14 }}>No weak topics detected!</div>
-        <div style={{ fontSize: 12, marginTop: 4, color: "#16a34a" }}>
+        <div style={{ fontSize: 44, marginBottom: 12, filter: "drop-shadow(0 4px 12px rgba(16,185,129,0.3))" }}>🎉</div>
+        <div style={{ fontWeight: 800, fontSize: 18, letterSpacing: "-0.01em" }}>No weak topics detected!</div>
+        <div style={{ fontSize: 14, marginTop: 6, color: "#6ee7b7", opacity: 0.8, fontWeight: 500 }}>
           Keep taking quizzes to track your progress
         </div>
       </div>
@@ -32,92 +35,76 @@ export function WeakTopicsReport() {
   return (
     <div
       style={{
-        background: "white",
-        border: "1.5px solid #dbeafe",
-        borderRadius: 20,
-        padding: 20,
-        boxShadow: "0 4px 16px rgba(236, 72, 153, 0.08)",
+        background: "rgba(15, 23, 42, 0.4)",
+        backdropFilter: "blur(28px)",
+        WebkitBackdropFilter: "blur(28px)",
+        border: "1px solid rgba(255, 255, 255, 0.08)",
+        borderRadius: 24,
+        padding: 24,
+        boxShadow: "0 16px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,0.05)",
       }}
     >
-      <div style={{ fontSize: 16, fontWeight: 900, color: "#064e78", marginBottom: 16, letterSpacing: "-0.01em" }}>
-        📊 Weak Topics Report
+      <div style={{ fontSize: 16, fontWeight: 900, color: "#f8fafc", marginBottom: 20, letterSpacing: "0.05em", textTransform: "uppercase", display: "flex", alignItems: "center", gap: 10 }}>
+        <span style={{ filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.5))" }}>📊</span> 
+        <span style={{ background: "linear-gradient(135deg, #f8fafc 0%, #cbd5e1 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Weak Topics Report</span>
       </div>
 
       {/* Tabs */}
-      <div style={{ display: "flex", gap: 8, marginBottom: 16, borderBottom: "1px solid #dbeafe", paddingBottom: 12 }}>
-        <button
-          onClick={() => setActiveTab("topics")}
-          style={{
-            padding: "8px 12px",
-            background: activeTab === "topics" ? "#dbeafe" : "transparent",
-            border: "none",
-            borderRadius: 8,
-            fontSize: 12,
-            fontWeight: 700,
-            color: activeTab === "topics" ? "#0369a1" : "#94a3b8",
-            cursor: "pointer",
-          }}
-        >
-          Topics ({weakTopics.length})
-        </button>
-        <button
-          onClick={() => setActiveTab("chapters")}
-          style={{
-            padding: "8px 12px",
-            background: activeTab === "chapters" ? "#dbeafe" : "transparent",
-            border: "none",
-            borderRadius: 8,
-            fontSize: 12,
-            fontWeight: 700,
-            color: activeTab === "chapters" ? "#0369a1" : "#94a3b8",
-            cursor: "pointer",
-          }}
-        >
-          Chapters ({weakChapters.length})
-        </button>
-        <button
-          onClick={() => setActiveTab("recent")}
-          style={{
-            padding: "8px 12px",
-            background: activeTab === "recent" ? "#dbeafe" : "transparent",
-            border: "none",
-            borderRadius: 8,
-            fontSize: 12,
-            fontWeight: 700,
-            color: activeTab === "recent" ? "#0369a1" : "#94a3b8",
-            cursor: "pointer",
-          }}
-        >
-          Recent ({recentWrongQuestions.length})
-        </button>
+      <div style={{ display: "flex", gap: 8, marginBottom: 20, borderBottom: "1px solid rgba(255, 255, 255, 0.08)", paddingBottom: 16, overflowX: "auto" }}>
+        {["topics", "chapters", "recent"].map(tab => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab)}
+            style={{
+              padding: "8px 16px",
+              background: activeTab === tab ? "rgba(6, 182, 212, 0.15)" : "rgba(255, 255, 255, 0.02)",
+              border: activeTab === tab ? "1px solid rgba(6, 182, 212, 0.3)" : "1px solid rgba(255, 255, 255, 0.05)",
+              borderRadius: 10,
+              fontSize: 12,
+              fontWeight: 700,
+              textTransform: "uppercase",
+              letterSpacing: "0.05em",
+              color: activeTab === tab ? "#22d3ee" : "#94a3b8",
+              cursor: "pointer",
+              transition: "all 0.2s"
+            }}
+            onMouseEnter={e => { if(activeTab !== tab) e.currentTarget.style.background = "rgba(255,255,255,0.08)"; }}
+            onMouseLeave={e => { if(activeTab !== tab) e.currentTarget.style.background = "rgba(255,255,255,0.02)"; }}
+          >
+            {tab.charAt(0).toUpperCase() + tab.slice(1)} (
+              {tab === "topics" ? weakTopics.length : tab === "chapters" ? weakChapters.length : recentWrongQuestions.length}
+            )
+          </button>
+        ))}
       </div>
 
       {/* Topics Tab */}
       {activeTab === "topics" && (
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           {weakTopics.map((item, idx) => (
             <div
               key={idx}
               style={{
-                background: "linear-gradient(135deg, #fee5e5, #fef2f2)",
-                border: "1.5px solid #fca5a5",
-                borderRadius: 12,
-                padding: 12,
+                background: "rgba(239, 68, 68, 0.05)",
+                border: "1px solid rgba(239, 68, 68, 0.2)",
+                borderRadius: 14,
+                padding: "16px",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
+                boxShadow: "0 4px 12px rgba(239, 68, 68, 0.05)",
               }}
             >
               <div>
-                <div style={{ fontWeight: 700, color: "#991b1b", fontSize: 14 }}>
+                <div style={{ fontWeight: 800, color: "#fca5a5", fontSize: 14 }}>
                   {item.topic}
                 </div>
-                <div style={{ fontSize: 12, color: "#dc2626", marginTop: 2 }}>
+                <div style={{ fontSize: 12, color: "#f87171", marginTop: 4, opacity: 0.9 }}>
                   Struggled in {item.mistakeCount} question{item.mistakeCount !== 1 ? "s" : ""}
                 </div>
               </div>
-              <span style={{ background: "#dc2626", color: "white", padding: "4px 10px", borderRadius: 6, fontWeight: 700, fontSize: 12 }}>
-                {item.mistakeCount}
+              <span style={{ background: "rgba(239, 68, 68, 0.2)", color: "#fecaca", padding: "6px 14px", borderRadius: 8, fontWeight: 900, fontSize: 13, border: "1px solid rgba(239, 68, 68, 0.3)" }}>
+                {item.mistakeCount} x
               </span>
             </div>
           ))}
@@ -126,37 +113,38 @@ export function WeakTopicsReport() {
 
       {/* Chapters Tab */}
       {activeTab === "chapters" && (
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           {weakChapters.map((ch, idx) => (
             <div
               key={idx}
               style={{
-                background: "linear-gradient(135deg, #fee5e5, #fef2f2)",
-                border: "1.5px solid #fca5a5",
-                borderRadius: 12,
-                padding: 12,
+                background: "rgba(239, 68, 68, 0.05)",
+                border: "1px solid rgba(239, 68, 68, 0.2)",
+                borderRadius: 14,
+                padding: 16,
               }}
             >
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "start", marginBottom: 8 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "start", marginBottom: 10 }}>
                 <div>
-                  <div style={{ fontWeight: 700, color: "#991b1b" }}>
+                  <div style={{ fontWeight: 800, color: "#fca5a5", fontSize: 14 }}>
                     {ch.chapter}
                   </div>
-                  <div style={{ fontSize: 12, color: "#dc2626", marginTop: 2 }}>
+                  <div style={{ fontSize: 12, color: "#f87171", marginTop: 4, opacity: 0.9 }}>
                     {ch.subject} • {ch.attempts} attempt{ch.attempts !== 1 ? "s" : ""}
                   </div>
                 </div>
               </div>
-              <div style={{ background: "white", height: 6, borderRadius: 3, overflow: "hidden" }}>
+              <div style={{ background: "rgba(255,255,255,0.1)", height: 6, borderRadius: 3, overflow: "hidden" }}>
                 <div
                   style={{
                     height: "100%",
-                    background: ch.avgAccuracy >= 60 ? "#16a34a" : ch.avgAccuracy >= 40 ? "#f59e0b" : "#dc2626",
+                    background: ch.avgAccuracy >= 60 ? "#10b981" : ch.avgAccuracy >= 40 ? "#f59e0b" : "#ef4444",
                     width: `${ch.avgAccuracy}%`,
+                    boxShadow: "0 0 8px rgba(239,68,68,0.5)"
                   }}
                 />
               </div>
-              <div style={{ fontSize: 12, fontWeight: 700, color: "#991b1b", marginTop: 6 }}>
+              <div style={{ fontSize: 12, fontWeight: 800, color: "#fca5a5", marginTop: 8 }}>
                 Avg Accuracy: {ch.avgAccuracy}%
               </div>
             </div>
@@ -166,7 +154,7 @@ export function WeakTopicsReport() {
 
       {/* Recent Tab */}
       {activeTab === "recent" && (
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           {recentWrongQuestions.length === 0 ? (
             <div style={{ textAlign: "center", color: "#94a3b8", fontSize: 13, padding: 16 }}>
               No recent mistakes
@@ -176,23 +164,23 @@ export function WeakTopicsReport() {
               <div
                 key={idx}
                 style={{
-                  background: "#f8fafc",
-                  border: "1.5px solid #e2e8f0",
-                  borderRadius: 12,
-                  padding: 12,
+                  background: "rgba(255, 255, 255, 0.03)",
+                  border: "1px solid rgba(255, 255, 255, 0.08)",
+                  borderRadius: 14,
+                  padding: 16,
                 }}
               >
-                <div style={{ fontSize: 12, fontWeight: 700, color: "#64748b", marginBottom: 6 }}>
+                <div style={{ fontSize: 11, fontWeight: 800, color: "#94a3b8", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.05em" }}>
                   {q.subject} • {q.chapter} • Q{q.qIdx}
                 </div>
-                <div style={{ fontSize: 13, fontWeight: 600, color: "#1e293b", marginBottom: 8 }}>
+                <div style={{ fontSize: 14, fontWeight: 600, color: "#f8fafc", marginBottom: 12, lineHeight: 1.4 }}>
                   {q.question}
                 </div>
-                <div style={{ display: "flex", gap: 12, fontSize: 12 }}>
-                  <span style={{ color: "#dc2626", fontWeight: 600 }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: 12 }}>
+                  <span style={{ color: "#fca5a5", fontWeight: 600, background: "rgba(239, 68, 68, 0.1)", padding: "4px 8px", borderRadius: 6, display: "inline-block" }}>
                     ✗ You chose: {q.userAns !== undefined ? `Option ${q.userAns + 1}` : "Not answered"}
                   </span>
-                  <span style={{ color: "#16a34a", fontWeight: 600 }}>
+                  <span style={{ color: "#6ee7b7", fontWeight: 600, background: "rgba(16, 185, 129, 0.1)", padding: "4px 8px", borderRadius: 6, display: "inline-block" }}>
                     ✓ Correct: Option {q.correctAns + 1}
                   </span>
                 </div>

@@ -24,8 +24,8 @@ import { globalStyles } from "./styles/shared";
 const LoadingFallback = () => (
   <div style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "400px" }}>
     <div style={{ textAlign: "center" }}>
-      <div style={{ fontSize: 32, marginBottom: 16 }}>⏳</div>
-      <div style={{ color: "#64748b", fontSize: 14 }}>Loading...</div>
+      <div style={{ fontSize: 36, marginBottom: 16, animation: "pulse 1.5s ease infinite" }}>⚡</div>
+      <div style={{ color: "#94a3b8", fontSize: 14, fontWeight: 600 }}>Loading...</div>
     </div>
   </div>
 );
@@ -293,21 +293,27 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
       style={{
         minHeight: "100vh",
         width: "100%",
-        background: "#f0f9fc",
-        fontFamily: "'Segoe UI', system-ui, sans-serif",
+        background: "#0f172a",
+        position: "relative",
+        fontFamily: "'Inter', system-ui, sans-serif",
       }}
     >
+      <div style={{ position: "fixed", top: "-10%", left: "-10%", width: "50vw", height: "50vw", background: "radial-gradient(circle, rgba(6,182,212,0.15) 0%, transparent 60%)", filter: "blur(100px)", zIndex: 0, pointerEvents: "none" }} />
+      <div style={{ position: "fixed", bottom: "-20%", right: "-10%", width: "60vw", height: "60vw", background: "radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 60%)", filter: "blur(120px)", zIndex: 0, pointerEvents: "none" }} />
+      
       <style>{globalStyles}</style>
 
       {/* Top Navigation */}
       <nav
         style={{
-          background: theme.isDarkMode ? "#1e293b" : "white",
-          borderBottom: theme.isDarkMode ? "1px solid #334155" : "1px solid #dbeafe",
+          background: "rgba(15, 23, 42, 0.6)",
+          backdropFilter: "blur(32px)",
+          WebkitBackdropFilter: "blur(32px)",
+          borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
           position: "sticky",
           top: 0,
           zIndex: 100,
-          boxShadow: theme.isDarkMode ? "0 1px 8px rgba(0,0,0,0.3)" : "0 1px 8px rgba(0,0,0,0.06)",
+          boxShadow: "0 10px 40px rgba(0,0,0,0.5)",
           transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
         }}
       >
@@ -317,11 +323,11 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
               <button
                 onClick={nav.goBack}
                 style={{
-                  background: theme.isDarkMode ? "#334155" : "#dbeafe",
-                  border: "none",
+                  background: "rgba(255, 255, 255, 0.05)",
+                  border: "1px solid rgba(255, 255, 255, 0.1)",
                   borderRadius: 8,
                   padding: "8px 10px",
-                  color: theme.isDarkMode ? "#06b6d4" : "#0369a1",
+                  color: "#cbd5e1",
                   fontWeight: 600,
                   fontSize: 12,
                   display: "flex",
@@ -331,33 +337,35 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
                   whiteSpace: "nowrap",
                   flexShrink: 0,
                 }}
+                onMouseEnter={e => { e.currentTarget.style.background="rgba(255,255,255,0.1)"; e.currentTarget.style.color="#f8fafc"; }}
+                onMouseLeave={e => { e.currentTarget.style.background="rgba(255,255,255,0.05)"; e.currentTarget.style.color="#cbd5e1"; }}
               >
                 ← <span style={{ display: "none" }}>Back</span>
               </button>
             )}
-            <button
-              onClick={nav.goToDashboard}
-              className="nav-brand"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 6,
-                background: "none",
-                border: "none",
-                color: "#0891b2",
-                fontWeight: 800,
-                fontSize: 18,
-                cursor: "pointer",
-                whiteSpace: "nowrap",
-                flexShrink: 0,
-              }}
-            >
-              🎓 <span style={{ letterSpacing: "-0.02em" }}>AkmEdu45</span>
-            </button>
+              <button
+                onClick={nav.goToDashboard}
+                className="nav-brand"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 6,
+                  background: "none",
+                  border: "none",
+                  color: "#f8fafc",
+                  fontWeight: 800,
+                  fontSize: 18,
+                  cursor: "pointer",
+                  whiteSpace: "nowrap",
+                  flexShrink: 0,
+                }}
+              >
+                🎓 <span style={{ background: "linear-gradient(135deg, #22d3ee 0%, #818cf8 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>AkmEdu45</span>
+              </button>
             {nav.subject && (
               <span
                 style={{
-                  color: theme.isDarkMode ? "#cbd5e1" : "#94a3b8",
+                  color: "#94a3b8",
                   fontSize: 13,
                   minWidth: 0,
                   overflow: "hidden",
@@ -389,11 +397,11 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
             <button
               onClick={() => nav.navigate("stats")}
               style={{
-                background: theme.isDarkMode ? "#334155" : "#dbeafe",
-                border: "none",
+                background: "rgba(255, 255, 255, 0.05)",
+                border: "1px solid rgba(255, 255, 255, 0.1)",
                 borderRadius: 8,
                 padding: "8px 12px",
-                color: theme.isDarkMode ? "#06b6d4" : "#0369a1",
+                color: "#cbd5e1",
                 fontWeight: 600,
                 fontSize: 13,
                 display: "flex",
@@ -401,7 +409,10 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
                 gap: 6,
                 minHeight: "40px",
                 whiteSpace: "nowrap",
+                transition: "all 0.2s"
               }}
+              onMouseEnter={e => { e.currentTarget.style.background="rgba(255,255,255,0.1)"; e.currentTarget.style.color="#f8fafc"; }}
+              onMouseLeave={e => { e.currentTarget.style.background="rgba(255,255,255,0.05)"; e.currentTarget.style.color="#cbd5e1"; }}
               title="Statistics"
             >
               <span style={{ fontSize: 16 }}>📊</span>
@@ -410,11 +421,11 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
             <button
               onClick={() => nav.navigate("progress")}
               style={{
-                background: theme.isDarkMode ? "#334155" : "#dbeafe",
-                border: "none",
+                background: "rgba(255, 255, 255, 0.05)",
+                border: "1px solid rgba(255, 255, 255, 0.1)",
                 borderRadius: 8,
                 padding: "8px 12px",
-                color: theme.isDarkMode ? "#06b6d4" : "#0369a1",
+                color: "#cbd5e1",
                 fontWeight: 600,
                 fontSize: 13,
                 display: "flex",
@@ -422,31 +433,14 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
                 gap: 6,
                 minHeight: "40px",
                 whiteSpace: "nowrap",
+                transition: "all 0.2s"
               }}
+              onMouseEnter={e => { e.currentTarget.style.background="rgba(255,255,255,0.1)"; e.currentTarget.style.color="#f8fafc"; }}
+              onMouseLeave={e => { e.currentTarget.style.background="rgba(255,255,255,0.05)"; e.currentTarget.style.color="#cbd5e1"; }}
               title="Progress"
             >
               <span style={{ fontSize: 16 }}>📈</span>
               <span style={{ display: "none" }} className="nav-btn-text">Progress</span>
-            </button>
-            <button
-              onClick={theme.toggleTheme}
-              title="Toggle dark mode (Ctrl+D)"
-              style={{
-                background: theme.isDarkMode ? "#334155" : "#dbeafe",
-                border: "none",
-                borderRadius: 8,
-                padding: "8px 12px",
-                color: theme.isDarkMode ? "#06b6d4" : "#0369a1",
-                fontWeight: 600,
-                fontSize: 14,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                minHeight: "40px",
-                minWidth: "40px",
-              }}
-            >
-              {theme.isDarkMode ? "☀️" : "🌙"}
             </button>
             <div style={{ display: "flex", alignItems: "center", gap: 8, minHeight: "40px" }}>
               <div
@@ -470,7 +464,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
                 style={{
                   fontSize: 13,
                   fontWeight: 600,
-                  color: "#334155",
+                  color: "#f8fafc",
                   display: "block",
                   maxWidth: 120,
                   overflow: "hidden",
@@ -485,16 +479,19 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
             <button
               onClick={auth.doLogout}
               style={{
-                background: "none",
-                border: "1px solid #dbeafe",
+                background: "rgba(239, 68, 68, 0.1)",
+                border: "1px solid rgba(239, 68, 68, 0.2)",
                 borderRadius: 8,
                 padding: "8px 12px",
-                color: "#06b6d4",
+                color: "#fca5a5",
                 fontSize: 13,
                 fontWeight: 600,
                 minHeight: "40px",
                 cursor: "pointer",
+                transition: "all 0.2s"
               }}
+              onMouseEnter={e => { e.currentTarget.style.background="rgba(239,68,68,0.2)"; e.currentTarget.style.color="#fecaca"; }}
+              onMouseLeave={e => { e.currentTarget.style.background="rgba(239,68,68,0.1)"; e.currentTarget.style.color="#fca5a5"; }}
               title="Logout"
             >
               Logout
@@ -513,6 +510,9 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
             theme={theme}
             onSelectSubject={(subject) => {
               nav.navigateToSubject(subject);
+            }}
+            onSelectChapter={(chapter) => {
+              nav.navigateToChapter(chapter);
             }}
           />
         )}
@@ -677,10 +677,13 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
       <footer
         style={{
           marginTop: 24,
-          background: theme.isDarkMode ? "#1e293b" : "#064e78",
-          borderTop: theme.isDarkMode ? "1px solid #334155" : "1px solid #9d174d",
+          background: "rgba(15, 23, 42, 0.4)",
+          backdropFilter: "blur(28px)",
+          borderTop: "1px solid rgba(255, 255, 255, 0.08)",
           padding: "12px 16px",
           transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+          position: "relative",
+          zIndex: 10
         }}
       >
         <div
@@ -723,14 +726,14 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                color: "#475569",
+                color: "#94a3b8",
                 fontSize: 11,
                 fontWeight: 600,
                 textDecoration: "none",
                 transition: "color 0.2s",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#fda4af")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#dbeafe")}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#22d3ee")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
             >
               {label}
             </a>

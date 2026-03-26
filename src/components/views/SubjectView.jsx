@@ -8,7 +8,6 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
   const S = curriculum[subject];
   const [bookmarks, setBookmarks] = useState({});
 
-  // Load bookmark states
   useEffect(() => {
     const newBookmarks = {};
     S.units.forEach(unit => {
@@ -16,7 +15,6 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
         newBookmarks[ch] = isBookmarked(subject, ch);
       });
     });
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setBookmarks(newBookmarks);
   }, [subject]);
 
@@ -38,26 +36,69 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
   
   return (
     <div>
-      <div style={{ background: S.gradient, borderRadius: 24, padding: "clamp(20px, 5vw, 32px)", marginBottom: 32, color: "white", position: "relative", overflow: "hidden", boxShadow: "0 12px 40px rgba(0,0,0,0.15)", border: "1px solid rgba(255,255,255,0.1)" }}>
-        <div style={{ position: "absolute", right: -40, top: -40, width: 140, height: 140, background: "rgba(255,255,255,0.1)", borderRadius: "50%", zIndex: 0 }} />
+      {/* Subject Hero Banner */}
+      <div style={{
+        background: S.gradient,
+        borderRadius: 28,
+        padding: "clamp(24px, 5vw, 40px)",
+        marginBottom: 36,
+        color: "white",
+        position: "relative",
+        overflow: "hidden",
+        boxShadow: "0 20px 60px rgba(0,0,0,0.4)",
+        border: "1px solid rgba(255,255,255,0.15)"
+      }}>
+        <div style={{ position: "absolute", right: -60, top: -60, width: 200, height: 200, background: "rgba(255,255,255,0.07)", borderRadius: "50%", filter: "blur(30px)" }} />
+        <div style={{ position: "absolute", left: "30%", bottom: -40, width: 160, height: 160, background: "rgba(255,255,255,0.05)", borderRadius: "50%", filter: "blur(40px)" }} />
         <div style={{ position: "relative", zIndex: 1 }}>
-          <div style={{ fontSize: "clamp(40px, 6vw, 48px)", marginBottom: 10 }}>{S.emoji}</div>
-          <h1 style={{ fontSize: "clamp(26px, 5vw, 32px)", fontWeight: 900, margin: 0, letterSpacing: "-0.02em", lineHeight: 1.2 }}>{subject}</h1>
-          <p style={{ opacity: 0.85, marginTop: 8, fontSize: "clamp(13px, 2vw, 15px)", fontWeight: 500 }}>AkmEdu45 • {S.units.length} Units • {stats.bySubject[subject].t} Chapters</p>
+          <div style={{ fontSize: "clamp(44px,6vw,56px)", marginBottom: 12, filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.3))" }}>{S.emoji}</div>
+          <h1 style={{ fontSize: "clamp(26px,5vw,36px)", fontWeight: 900, margin: 0, letterSpacing: "-0.02em", lineHeight: 1.2 }}>{subject}</h1>
+          <p style={{ opacity: 0.85, marginTop: 10, fontSize: "clamp(13px,2vw,15px)", fontWeight: 500 }}>
+            AkmEdu45 · {S.units.length} Units · {stats.bySubject[subject].t} Chapters
+          </p>
           <button onClick={onGeneratePaper}
-            style={{ marginTop: 18, background: "linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.15))", border: "1.5px solid rgba(255,255,255,0.3)", borderRadius: 12, padding: "11px 22px", color: "white", fontWeight: 700, fontSize: 14, transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)", backdropFilter: "blur(10px)", cursor: "pointer" }}
-            onMouseEnter={e => { e.currentTarget.style.background = "linear-gradient(135deg, rgba(255,255,255,0.35), rgba(255,255,255,0.25))"; e.currentTarget.style.transform = "translateY(-2px)"; }}
-            onMouseLeave={e => { e.currentTarget.style.background = "linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.15))"; e.currentTarget.style.transform = "translateY(0)"; }}>
+            style={{
+              marginTop: 20,
+              background: "rgba(255,255,255,0.15)",
+              backdropFilter: "blur(12px)",
+              border: "1.5px solid rgba(255,255,255,0.3)",
+              borderRadius: 12,
+              padding: "11px 22px",
+              color: "white",
+              fontWeight: 700,
+              fontSize: 14,
+              transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+              cursor: "pointer"
+            }}
+            onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.25)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
+            onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.15)"; e.currentTarget.style.transform = "translateY(0)"; }}>
             📄 Generate Sample Board Paper →
           </button>
         </div>
       </div>
 
+      {/* Units & Chapters */}
       {S.units.map((unit, ui) => (
-        <div key={ui} style={{ marginBottom: 32 }}>
-          <h3 style={{ fontSize: "clamp(12px, 2vw, 14px)", fontWeight: 900, color: S.text, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12, display: "flex", alignItems: "center", gap: 10 }}>
-            <span style={{ background: "linear-gradient(135deg, " + S.light + ", " + S.light + "cc)", border: `1.5px solid ${S.border}`, borderRadius: 8, padding: "4px 14px", fontWeight: 800 }}>{unit.name}</span>
-            <span style={{ flex: 1, height: 1, background: S.border, opacity: 0.3 }} />
+        <div key={ui} style={{ marginBottom: 36 }}>
+          <h3 style={{
+            fontSize: "clamp(11px,2vw,13px)",
+            fontWeight: 900,
+            color: "#22d3ee",
+            textTransform: "uppercase",
+            letterSpacing: "0.12em",
+            marginBottom: 16,
+            display: "flex",
+            alignItems: "center",
+            gap: 12
+          }}>
+            <span style={{
+              background: "rgba(6, 182, 212, 0.1)",
+              border: "1px solid rgba(6, 182, 212, 0.25)",
+              borderRadius: 8,
+              padding: "5px 16px",
+              fontWeight: 800
+            }}>{unit.name}</span>
+            <span style={{ flex: 1, height: 1, background: "rgba(255,255,255,0.08)" }} />
           </h3>
           <div className="subj-ch-grid">
             {unit.chapters.map((ch, ci) => {
@@ -66,42 +107,59 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
               const nRead = progress[nk]?.read;
               const qData = progress[qk];
               const best = qData?.best;
+              const isDone = nRead && best !== undefined;
               return (
                 <button key={ci} onClick={() => handleSelectChapter(ch)}
-                  style={{ background: "white", border: `1.5px solid ${nRead && best !== undefined ? S.accent : "#dbeafe"}`, borderRadius: 16, padding: "16px 18px", textAlign: "left", transition: "all 0.25s cubic-bezier(0.4, 0, 0.2, 1)", cursor: "pointer", boxShadow: nRead && best !== undefined ? `0 4px 16px ${S.accent}20` : "0 2px 8px rgba(8,145,178,0.08)", position: "relative" }}
-                  onMouseEnter={e => { e.currentTarget.style.borderColor = S.accent; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = `0 8px 24px ${S.accent}30`; }}
-                  onMouseLeave={e => { e.currentTarget.style.borderColor = nRead && best !== undefined ? S.accent : "#dbeafe"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = nRead && best !== undefined ? `0 4px 16px ${S.accent}20` : "0 2px 8px rgba(8,145,178,0.08)"; }}>
+                  style={{
+                    background: "rgba(15, 23, 42, 0.5)",
+                    backdropFilter: "blur(20px)",
+                    border: `1px solid ${isDone ? "rgba(6, 182, 212, 0.35)" : "rgba(255, 255, 255, 0.08)"}`,
+                    borderRadius: 18,
+                    padding: "18px 20px",
+                    textAlign: "left",
+                    transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+                    cursor: "pointer",
+                    boxShadow: isDone ? "0 8px 24px rgba(6, 182, 212, 0.15)" : "0 4px 16px rgba(0,0,0,0.3)",
+                    position: "relative"
+                  }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.borderColor = "rgba(6, 182, 212, 0.5)";
+                    e.currentTarget.style.transform = "translateY(-4px)";
+                    e.currentTarget.style.boxShadow = "0 16px 40px rgba(6,182,212,0.2)";
+                    e.currentTarget.style.background = "rgba(6,182,212,0.08)";
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.borderColor = isDone ? "rgba(6, 182, 212, 0.35)" : "rgba(255,255,255,0.08)";
+                    e.currentTarget.style.transform = "translateY(0)";
+                    e.currentTarget.style.boxShadow = isDone ? "0 8px 24px rgba(6,182,212,0.15)" : "0 4px 16px rgba(0,0,0,0.3)";
+                    e.currentTarget.style.background = "rgba(15,23,42,0.5)";
+                  }}>
                   
-                  {/* Bookmark Button */}
+                  {/* Bookmark */}
                   <button
                     onClick={(e) => handleBookmarkClick(e, ch)}
                     style={{
-                      position: "absolute",
-                      top: 12,
-                      right: 12,
-                      background: "none",
-                      border: "none",
-                      fontSize: 18,
-                      cursor: "pointer",
-                      padding: 4,
-                      transition: "transform 0.2s",
+                      position: "absolute", top: 14, right: 14,
+                      background: "none", border: "none",
+                      fontSize: 16, cursor: "pointer",
+                      padding: 4, transition: "transform 0.2s",
                     }}
-                    onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.2)")}
-                    onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+                    onMouseEnter={e => (e.currentTarget.style.transform = "scale(1.3)")}
+                    onMouseLeave={e => (e.currentTarget.style.transform = "scale(1)")}
                   >
                     {bookmarks[ch] ? "❤️" : "🤍"}
                   </button>
 
-                  <div style={{ fontWeight: 700, color: "#1e293b", fontSize: 14, lineHeight: 1.5, marginBottom: 10, paddingRight: 24 }}>{ch}</div>
+                  <div style={{ fontWeight: 700, color: "#f8fafc", fontSize: 14, lineHeight: 1.5, marginBottom: 12, paddingRight: 28 }}>{ch}</div>
                   <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                      <span style={{ fontSize: 14 }}>{nRead ? "📖" : "📄"}</span>
-                      <span style={{ fontSize: 12, fontWeight: 600, color: nRead ? S.accent : "#94a3b8" }}>{nRead ? "Read" : "Notes"}</span>
+                      <span style={{ fontSize: 13 }}>{nRead ? "📖" : "📄"}</span>
+                      <span style={{ fontSize: 12, fontWeight: 600, color: nRead ? "#22d3ee" : "#94a3b8" }}>{nRead ? "Read" : "Notes"}</span>
                     </div>
                     <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                      <span style={{ fontSize: 14 }}>{best !== undefined ? "✅" : "❓"}</span>
+                      <span style={{ fontSize: 13 }}>{best !== undefined ? "✅" : "❓"}</span>
                       {best !== undefined ? (
-                        <span style={{ fontSize: 12, fontWeight: 700, color: S.text }}>{best}/50</span>
+                        <span style={{ fontSize: 12, fontWeight: 800, color: "#6ee7b7" }}>{best}/30</span>
                       ) : (
                         <span style={{ fontSize: 12, color: "#94a3b8" }}>Quiz</span>
                       )}
