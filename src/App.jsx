@@ -1,13 +1,14 @@
 import { useState, useEffect, Suspense, lazy } from "react";
 import { useAuth, useNavigation, useProgress, useTheme } from "./hooks";
 import { callClaude, extractJSON } from "./utils/api";
-import { getChapterNotes, getQuizSet, getQuizSetStatus, saveQuizSubmission } from "./utils/supabase";
+import { getChapterNotes, getQuizSet, getQuizSetStatus, getQuizSetSummaries, saveQuizSubmission, getSamplePaper } from "./utils/supabase";
 import { CURRICULUM, totalChapters } from "./constants/curriculum";
 import { SearchBar } from "./components/common/SearchBar";
 import { recordDailyActivity } from "./utils/loginStreak";
 import { recordQuizSubmission } from "./utils/weakTopics";
 import { getCachedNotes, cacheNotes } from "./utils/cacheManager";
 import { createDebouncedQuery } from "./utils/queryOptimization";
+import { validateQuestion } from "./components/views/QuizView";
 // Eager load critical views, lazy load others
 import { AuthView, DashboardView, QuizSetsView } from "./components/views";
 const SubjectView = lazy(() => import("./components/views/SubjectView").then(m => ({ default: m.SubjectView })));
@@ -15,6 +16,7 @@ const ChapterView = lazy(() => import("./components/views/ChapterView").then(m =
 const NotesView = lazy(() => import("./components/views/NotesView").then(m => ({ default: m.NotesView })));
 const QuizView = lazy(() => import("./components/views/QuizView").then(m => ({ default: m.QuizView })));
 const PaperView = lazy(() => import("./components/views/PaperView").then(m => ({ default: m.PaperView })));
+const PapersListView = lazy(() => import("./components/views/PapersListView").then(m => ({ default: m.PapersListView })));
 const ProgressView = lazy(() => import("./components/views/ProgressView").then(m => ({ default: m.ProgressView })));
 const StatsView = lazy(() => import("./components/views/StatsView").then(m => ({ default: m.StatsView })));
 import { FloatingForumButton } from "./components/common";
@@ -49,6 +51,7 @@ export default function App() {
   const [loadEmoji, setLoadEmoji] = useState("🔄");
   const [notes, setNotes] = useState("");
   const [paper, setPaper] = useState("");
+  const [selectedPaperSet, setSelectedPaperSet] = useState(null); // Track selected paper set (1-5)
   const [quiz, setQuiz] = useState([]);
   const [quizErr, setQuizErr] = useState("");
   const [qIdx, setQIdx] = useState(0);
@@ -57,6 +60,7 @@ export default function App() {
   const [score, setScore] = useState(0);
   const [selectedQuizSet, setSelectedQuizSet] = useState(null); // Track selected set (1-15)
   const [quizSetStatus, setQuizSetStatus] = useState({}); // Track best scores per set
+  const [availableSets, setAvailableSets] = useState([]); // Actual set numbers in DB
 
   // Load progress on user login
   useEffect(() => {
@@ -148,12 +152,17 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
     setSelectedQuizSet(null);
 
     try {
-      // Load quiz set status from database
-      const status = await getQuizSetStatus(auth.currentUser, subj, chap);
+      // Load quiz set status AND available sets from database in parallel
+      const [status, sets] = await Promise.all([
+        getQuizSetStatus(auth.currentUser, subj, chap),
+        getQuizSetSummaries(subj, chap)
+      ]);
       setQuizSetStatus(status || {});
+      setAvailableSets(sets || []);
     } catch (e) {
       console.error("Error loading quiz set status:", e);
       setQuizSetStatus({});
+      setAvailableSets([]);
     }
 
     setLoading(false);
@@ -185,43 +194,20 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
     setLoading(false);
   };
 
-  const genPaper = async (subj) => {
+  const genPaper = async (subj, setNum) => {
     setLoading(true);
-    setLoadMsg(`Generating Sample Paper for ${subj}`);
+    setLoadMsg(`Loading Sample Paper Set ${setNum} for ${subj}`);
     setLoadEmoji("📄");
     setPaper("");
     try {
-      const marks = subj === "English" ? 80 : subj === "Physical Education" ? 70 : 80;
-      const text = await callClaude(
-        `Create an ORIGINAL, comprehensive sample assessment paper for ${subj} Class 12.
-Design it as a complete practice test following standard examination structure:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-COMPREHENSIVE ASSESSMENT PAPER
-Subject: ${subj}
-Time Allowed: 3 Hours | Total Marks: ${marks}
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Include:
-- Instructions for Students (5-6 points about format and rules)
-- Section A: Multiple Choice & Objective Type (16-20 marks)
-- Section B: Short Answer Questions (10 marks, 2-3 marks each)
-- Section C: Medium Answer Questions (12-15 marks, 3-4 marks each)
-- Section D: Long Answer Questions (15-20 marks, 5-6 marks each)
-- Section E: Case Studies, Practical Applications (if applicable for ${subj})
-Ensure:
-- Content covers major topics of the subject comprehensively
-- Questions test understanding, analysis, and application (not just recall)
-- Variety of question types
-- Appropriate difficulty distribution (30% basic, 50% intermediate, 20% advanced)
-End with:
-- Complete ANSWER KEY with marking points
-- Model answers showing expected responses
-- Marking rubric for subjective questions
-IMPORTANT: Create ORIGINAL questions. These should be unique practice material, not copied from any exam board or textbook.`,
-        4000
-      );
-      setPaper(text);
-    } catch {
-      setPaper("❌ Error generating sample paper. Please try again.");
+      const paperData = await getSamplePaper(subj, setNum);
+      if (paperData) {
+        setPaper(paperData.content);
+      } else {
+        setPaper("❌ Sample paper not found. Please try another set.");
+      }
+    } catch (err) {
+      setPaper("❌ Error loading sample paper. Please try again.");
     }
     setLoading(false);
   };
@@ -229,7 +215,8 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
   const submitQuiz = async () => {
     let sc = 0;
     quiz.forEach((q, i) => {
-      if (answers[i] === q.ans) sc++;
+      const validatedQ = validateQuestion(q);
+      if (validatedQ && answers[i] === validatedQ.ans) sc++;
     });
     setScore(sc);
     setSubmitted(true);
@@ -529,9 +516,9 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
                 nav.navigateToChapter(chapter);
               }}
               onGeneratePaper={() => {
+                setSelectedPaperSet(null);
                 setPaper("");
                 nav.navigate("paper");
-                genPaper(nav.subject);
               }}
             />
           </Suspense>
@@ -545,6 +532,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
               curriculumData={S}
               notesRead={progress.data[`${nav.subject}||${nav.chapter}||notes`]?.read}
               quizBest={progress.data[`${nav.subject}||${nav.chapter}||quiz`]?.best}
+              availableSets={availableSets}
               theme={theme}
               onStartNotes={() => {
                 nav.navigate("notes");
@@ -558,11 +546,6 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
                 setQIdx(0);
                 nav.navigate("quiz");
                 startQuiz(nav.subject, nav.chapter);
-              }}
-              onStartPaper={() => {
-                setPaper("");
-                nav.navigate("paper");
-                genPaper(nav.subject);
               }}
             />
           </Suspense>
@@ -601,6 +584,7 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
                 chapter={nav.chapter}
                 curriculumData={S}
                 quizSetStatus={quizSetStatus}
+                availableSets={availableSets}
                 loading={loading}
                 onSelectSet={loadQuizSet}
               />
@@ -640,16 +624,30 @@ IMPORTANT: Create ORIGINAL questions. These should be unique practice material, 
 
         {nav.view === "paper" && (
           <Suspense fallback={<LoadingFallback />}>
-            <PaperView
-              loading={loading}
-              loadMsg={loadMsg}
-              loadEmoji={loadEmoji}
-              paper={paper}
-              subject={nav.subject}
-              curriculumData={S}
-              theme={theme}
-              onRegenerate={() => genPaper(nav.subject)}
-            />
+            {selectedPaperSet === null ? (
+              <PapersListView
+                subject={nav.subject}
+                curriculumData={S}
+                loading={loading}
+                loadMsg={loadMsg}
+                loadEmoji={loadEmoji}
+                onSelectPaper={(setNum) => {
+                  setSelectedPaperSet(setNum);
+                  genPaper(nav.subject, setNum);
+                }}
+              />
+            ) : (
+              <PaperView
+                loading={loading}
+                loadMsg={loadMsg}
+                loadEmoji={loadEmoji}
+                paper={paper}
+                subject={nav.subject}
+                curriculumData={S}
+                theme={theme}
+                onRegenerate={() => setSelectedPaperSet(null)}
+              />
+            )}
           </Suspense>
         )}
 

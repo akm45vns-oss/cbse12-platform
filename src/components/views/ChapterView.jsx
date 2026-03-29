@@ -1,6 +1,7 @@
-export function ChapterView({ subject, chapter, curriculumData, notesRead, quizBest, onStartNotes, onStartQuiz, onStartPaper }) {
+export function ChapterView({ subject, chapter, curriculumData, notesRead, quizBest, availableSets = [], onStartNotes, onStartQuiz }) {
   const S = curriculumData;
-  
+  const quizSetCount = availableSets.length;
+
   const modes = [
     {
       mode: "notes",
@@ -17,23 +18,12 @@ export function ChapterView({ subject, chapter, curriculumData, notesRead, quizB
       mode: "quiz",
       emoji: "🧠",
       title: "Practice Quizzes",
-      desc: "15 sets × 30 board-level MCQs with explanations",
+      desc: `${quizSetCount} set${quizSetCount !== 1 ? 's' : ''} × 30 board-level MCQs with explanations`,
       accentColor: "#10b981",
       glowColor: "rgba(16, 185, 129, 0.2)",
       borderActive: "rgba(16, 185, 129, 0.4)",
       done: quizBest !== undefined,
       doneLabel: `Best: ${quizBest ?? "—"}/30`
-    },
-    {
-      mode: "paper",
-      emoji: "📄",
-      title: "Sample Paper",
-      desc: `Full ${subject} CBSE board exam paper`,
-      accentColor: "#8b5cf6",
-      glowColor: "rgba(139, 92, 246, 0.2)",
-      borderActive: "rgba(139, 92, 246, 0.4)",
-      done: false,
-      doneLabel: "Full subject paper"
     }
   ];
 
@@ -62,8 +52,7 @@ export function ChapterView({ subject, chapter, curriculumData, notesRead, quizB
       <div className="chapter-hub-grid">
         {modes.map(({ mode, emoji, title, desc, accentColor, glowColor, borderActive, done, doneLabel }) => (
           <button key={mode} onClick={() => {
-            if (mode === "paper") onStartPaper();
-            else if (mode === "notes") onStartNotes();
+            if (mode === "notes") onStartNotes();
             else onStartQuiz();
           }}
             style={{

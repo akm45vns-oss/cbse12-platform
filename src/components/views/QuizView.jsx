@@ -4,6 +4,30 @@ import { useEffect, useState } from "react";
 import { useKeyboardShortcuts } from "../../hooks";
 import { startSession, endSession } from "../../utils/sessionTracking";
 
+// Validate and fix question structure
+export function validateQuestion(q) {
+  if (!q || !q.q) return null;
+
+  // Ensure opts is an array with exactly 4 options
+  let opts = q.opts || [];
+  if (!Array.isArray(opts)) opts = [opts];
+
+  // If less than 4 options, pad with empty strings
+  while (opts.length < 4) {
+    opts.push(`Option ${opts.length + 1}`);
+  }
+
+  // Trim to exactly 4 options
+  opts = opts.slice(0, 4);
+
+  return {
+    q: q.q,
+    opts: opts,
+    ans: typeof q.ans === 'number' && q.ans >= 0 && q.ans < 4 ? q.ans : 0,
+    exp: q.exp || "No explanation available"
+  };
+}
+
 export function QuizView({ 
   subject, 
   chapter, 
@@ -155,11 +179,14 @@ export function QuizView({
               <div style={{ fontSize: 12, fontWeight: 900, color: "#9d174d", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: 12 }}>Question {qIdx + 1}</div>
               <p style={{ fontSize: 16, fontWeight: 700, color: "#0f172a", lineHeight: 1.7, marginBottom: 24, letterSpacing: "-0.01em" }}>{quiz[qIdx].q}</p>
               <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                {quiz[qIdx].opts.map((opt, oi) => (
-                  <button key={oi} className={`opt-btn ${answers[qIdx] === oi ? "opt-selected" : ""}`} onClick={() => setAnswers(a => ({ ...a, [qIdx]: oi }))}>
-                    {opt}
-                  </button>
-                ))}
+                {(() => {
+                  const validQuestion = validateQuestion(quiz[qIdx]);
+                  return validQuestion?.opts?.map((opt, oi) => (
+                    <button key={oi} className={`opt-btn ${answers[qIdx] === oi ? "opt-selected" : ""}`} onClick={() => setAnswers(a => ({ ...a, [qIdx]: oi }))}>
+                      {opt}
+                    </button>
+                  )) || null;
+                })()}
               </div>
             </div>
           )}

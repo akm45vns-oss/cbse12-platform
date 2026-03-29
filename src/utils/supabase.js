@@ -369,6 +369,7 @@ export async function getQuizSet(subject, chapter, setNumber) {
  */
 export async function getQuizSetSummaries(subject, chapter) {
   try {
+    console.log(`[getQuizSetSummaries] Querying: subject="${subject}", chapter="${chapter}"`);
     const { data, error } = await supabase
       .from("quiz_sets")
       .select("set_number")
@@ -376,13 +377,19 @@ export async function getQuizSetSummaries(subject, chapter) {
       .eq("chapter", chapter)
       .order("set_number", { ascending: true });
 
-    if (error || !data) {
+    if (error) {
+      console.error("[getQuizSetSummaries] Supabase error:", error);
+      return [];
+    }
+    if (!data) {
+      console.warn("[getQuizSetSummaries] data is null/undefined");
       return [];
     }
 
+    console.log(`[getQuizSetSummaries] Got ${data.length} rows:`, data);
     return data.map(row => row.set_number);
   } catch (error) {
-    console.error("Fetch quiz set summaries error:", error);
+    console.error("[getQuizSetSummaries] Unexpected error:", error);
     return [];
   }
 }
@@ -471,3 +478,49 @@ export async function getQuizSetStatus(username, subject, chapter) {
     return {};
   }
 }
+
+/**
+ * Get all sample papers for a subject
+ */
+export async function getSamplePapers(subject) {
+  try {
+    const { data, error } = await supabase
+      .from("sample_papers")
+      .select("set_number, content, total_marks")
+      .eq("subject", subject)
+      .order("set_number", { ascending: true });
+
+    if (error || !data) {
+      return [];
+    }
+
+    return data;
+  } catch (error) {
+    console.error("Get sample papers error:", error);
+    return [];
+  }
+}
+
+/**
+ * Get a specific sample paper
+ */
+export async function getSamplePaper(subject, setNumber) {
+  try {
+    const { data, error } = await supabase
+      .from("sample_papers")
+      .select("content, total_marks")
+      .eq("subject", subject)
+      .eq("set_number", setNumber)
+      .single();
+
+    if (error || !data) {
+      return null;
+    }
+
+    return data;
+  } catch (error) {
+    console.error("Get sample paper error:", error);
+    return null;
+  }
+}
+

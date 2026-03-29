@@ -3,7 +3,7 @@
  * Users can select which set to attempt and see their progress
  */
 
-export function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, onSelectSet, loading }) {
+export function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, availableSets = [], onSelectSet, loading }) {
   const S = curriculumData;
 
   if (loading) {
@@ -17,7 +17,8 @@ export function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, 
     );
   }
 
-  const completedCount = Object.keys(quizSetStatus).length;
+  const totalSets = availableSets.length;
+  const completedCount = Object.values(quizSetStatus).filter(s => s !== undefined).length;
 
   return (
     <div style={{ maxWidth: 760, margin: "0 auto", width: "100%" }}>
@@ -37,23 +38,41 @@ export function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, 
         <div style={{ position: "absolute", top: -60, right: -40, width: 200, height: 200, background: "radial-gradient(circle, rgba(99,102,241,0.2) 0%, transparent 70%)", borderRadius: "50%", filter: "blur(40px)", pointerEvents: "none" }} />
         <div style={{ fontSize: 11, fontWeight: 900, color: "#22d3ee", textTransform: "uppercase", letterSpacing: "0.14em", marginBottom: 10 }}>{subject}</div>
         <h1 style={{ fontSize: "clamp(22px,4vw,30px)", fontWeight: 900, color: "#f8fafc", margin: "0 0 10px", letterSpacing: "-0.02em", lineHeight: 1.2 }}>{chapter}</h1>
-        <p style={{ color: "#94a3b8", fontSize: 14, margin: 0, fontWeight: 500 }}>📚 Practice Quiz Sets · 15 sets × 30 questions each</p>
+        <p style={{ color: "#94a3b8", fontSize: 14, margin: 0, fontWeight: 500 }}>📚 Practice Quiz Sets · {totalSets} set{totalSets !== 1 ? "s" : ""} × 30 questions each</p>
         
         {/* Progress indicator */}
         {completedCount > 0 && (
           <div style={{ marginTop: 20, display: "flex", alignItems: "center", gap: 12 }}>
             <div style={{ flex: 1, height: 6, background: "rgba(255,255,255,0.08)", borderRadius: 3, overflow: "hidden" }}>
-              <div style={{ height: "100%", width: `${(completedCount / 15) * 100}%`, background: "linear-gradient(90deg, #06b6d4, #818cf8)", borderRadius: 3, boxShadow: "0 0 8px rgba(6,182,212,0.5)", transition: "width 0.5s ease" }} />
+              <div style={{ height: "100%", width: totalSets > 0 ? `${(completedCount / totalSets) * 100}%` : "0%", background: "linear-gradient(90deg, #06b6d4, #818cf8)", borderRadius: 3, boxShadow: "0 0 8px rgba(6,182,212,0.5)", transition: "width 0.5s ease" }} />
             </div>
-            <span style={{ fontSize: 13, fontWeight: 800, color: "#22d3ee", whiteSpace: "nowrap" }}>{completedCount}/15 done</span>
+            <span style={{ fontSize: 13, fontWeight: 800, color: "#22d3ee", whiteSpace: "nowrap" }}>{completedCount}/{totalSets} done</span>
           </div>
         )}
       </div>
 
+      {/* Empty State */}
+      {availableSets.length === 0 && (
+        <div style={{
+          textAlign: "center",
+          padding: "48px 24px",
+          background: "rgba(239,68,68,0.06)",
+          border: "1px solid rgba(239,68,68,0.2)",
+          borderRadius: 20,
+          marginBottom: 36
+        }}>
+          <div style={{ fontSize: 36, marginBottom: 12 }}>⚠️</div>
+          <div style={{ color: "#fca5a5", fontSize: 16, fontWeight: 700, marginBottom: 8 }}>No quiz sets found in database</div>
+          <div style={{ color: "#94a3b8", fontSize: 13 }}>
+            The quiz sets for this chapter could not be loaded.<br />
+            Check the browser console (F12) for details.
+          </div>
+        </div>
+      )}
+
       {/* Quiz Sets Grid */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 16, marginBottom: 36 }}>
-        {Array.from({ length: 15 }, (_, i) => {
-          const setNum = i + 1;
+        {availableSets.map((setNum) => {
           const bestScore = quizSetStatus[setNum];
           const isCompleted = bestScore !== undefined;
           const pct = isCompleted ? Math.round((bestScore / 30) * 100) : 0;

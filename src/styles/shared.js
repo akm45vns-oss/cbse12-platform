@@ -68,34 +68,35 @@ export const globalStyles = `
   /* ===== BUTTONS ===== */
   .opt-btn {
     width: 100%; text-align: left; padding: 16px 20px; border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.04);
-    color: #f8fafc; font-size: 14px; font-weight: 500; line-height: 1.6;
+    border: 2px solid #e2e8f0;
+    background: #f8fafc;
+    color: #0f172a; font-size: 14px; font-weight: 500; line-height: 1.6;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); min-height: 48px; word-wrap: break-word;
   }
-  .opt-btn:hover { 
-    border-color: rgba(6, 182, 212, 0.5); 
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 4px 16px rgba(6, 182, 212, 0.15);
+  .opt-btn:hover {
+    border-color: #06b6d4;
+    background: #e0f7fa;
+    color: #0369a1;
+    box-shadow: 0 4px 16px rgba(6, 182, 212, 0.2);
   }
-  .opt-selected { 
-    border-color: #06b6d4 !important; 
-    background: rgba(6, 182, 212, 0.15) !important; 
-    color: #22d3ee !important; 
+  .opt-selected {
+    border-color: #06b6d4 !important;
+    background: #cffafe !important;
+    color: #0891b2 !important;
     font-weight: 600;
-    box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.3) !important;
+    box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.4) !important;
   }
-  .opt-correct { 
-    border-color: #10b981 !important; 
-    background: rgba(16, 185, 129, 0.15) !important; 
-    color: #34d399 !important;
-    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3) !important;
+  .opt-correct {
+    border-color: #10b981 !important;
+    background: #d1fae5 !important;
+    color: #059669 !important;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.4) !important;
   }
-  .opt-wrong { 
-    border-color: #ef4444 !important; 
-    background: rgba(239, 68, 68, 0.15) !important; 
-    color: #f87171 !important;
-    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.3) !important;
+  .opt-wrong {
+    border-color: #ef4444 !important;
+    background: #fee2e2 !important;
+    color: #dc2626 !important;
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.4) !important;
   }
   
   /* ===== QUESTION NUMBERS ===== */

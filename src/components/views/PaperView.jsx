@@ -29,7 +29,7 @@ export function PaperView({ subject, paper, loading, loadMsg, loadEmoji, curricu
             </div>
             <div style={{ display: "flex", gap: 10 }}>
               <button onClick={() => window.print()} style={{ background: "#f8fafc", border: "1px solid #cbd5e1", borderRadius: 9, padding: "8px 16px", color: "#334155", fontSize: 13, fontWeight: 600 }}>📥 Save PDF</button>
-              <button onClick={onRegenerate} style={{ background: "#dbeafe", border: "none", borderRadius: 9, padding: "8px 16px", color: "#0369a1", fontSize: 13, fontWeight: 600 }}>🔄 Regenerate</button>
+              <button onClick={onRegenerate} style={{ background: "#dbeafe", border: "none", borderRadius: 9, padding: "8px 16px", color: "#0369a1", fontSize: 13, fontWeight: 600 }}>← Back to List</button>
             </div>
           </div>
           {/* Professionally Formatted Paper */}

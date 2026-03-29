@@ -39,7 +39,7 @@ async function saveChapterNotes(subject, chapter, notes) {
     },
     { onConflict: "subject,chapter" }
   );
-  
+
   if (error) {
     console.error("Save notes error:", error);
     return false;
@@ -52,7 +52,7 @@ async function callGroqAPI(prompt, maxTokens = 1500, retries = 3) {
     try {
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 30000);
-      
+
       const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
         headers: {
@@ -92,17 +92,17 @@ async function delay(ms) {
 
 async function retryFailedNotes() {
   console.log("🔄 Retrying failed chapters...\n");
-  
+
   let successful = 0;
   let failed = 0;
-  
+
   for (let i = 0; i < FAILED_CHAPTERS.length; i++) {
     const { subject, chapter } = FAILED_CHAPTERS[i];
     const progress = `[${i + 1}/${FAILED_CHAPTERS.length}]`;
-    
+
     try {
       console.log(`${progress} 📝 Generating notes for ${subject} - ${chapter}...`);
-      
+
       const notes = await callGroqAPI(
         `Create CBSE Class 12 NCERT study notes for "${chapter}" (${subject}).
 
@@ -127,9 +127,9 @@ async function retryFailedNotes() {
 Be concise, clear, and comprehensive for CBSE exam prep.`,
         1500
       );
-      
+
       const saved = await saveChapterNotes(subject, chapter, notes);
-      
+
       if (saved) {
         console.log(`${progress} ✅ Saved successfully!\n`);
         successful++;
@@ -137,7 +137,7 @@ Be concise, clear, and comprehensive for CBSE exam prep.`,
         console.log(`${progress} ⚠️ Generated but failed to save\n`);
         failed++;
       }
-      
+
       if (i < FAILED_CHAPTERS.length - 1) {
         await delay(12000);
       }
@@ -146,7 +146,7 @@ Be concise, clear, and comprehensive for CBSE exam prep.`,
       failed++;
     }
   }
-  
+
   console.log("\n" + "=".repeat(50));
   console.log("📊 RETRY COMPLETE");
   console.log("=".repeat(50));
@@ -154,7 +154,7 @@ Be concise, clear, and comprehensive for CBSE exam prep.`,
   console.log(`❌ Failed: ${failed}`);
   console.log(`📚 Total: ${FAILED_CHAPTERS.length}`);
   console.log("=".repeat(50) + "\n");
-  
+
   if (failed > 0) {
     console.log("⚠️  Some chapters still failed. Check the errors above.");
     process.exit(1);
