@@ -232,19 +232,22 @@ export async function getChapterNotes(subject, chapter) {
 }
 
 // ===== PASSWORD RESET =====
-export async function sendPasswordResetOTP(email) {
+export async function sendPasswordResetOTP(usernameOrEmail) {
   try {
-    // Check if email exists
+    const input = usernameOrEmail.trim().toLowerCase();
+    
+    // Check if user exists by email or username
     const { data: user, error: userError } = await supabase
       .from("users")
-      .select("username")
-      .eq("email", email)
+      .select("email, username")
+      .or(`username.eq.${input},email.eq.${input}`)
       .single();
 
     if (userError || !user) {
-      return { success: false, error: "Email not found in our system" };
+      return { success: false, error: "Account not found in our system" };
     }
 
+    const email = user.email;
     const otp = generateOTP();
     const expiresAtMs = Date.now() + 15 * 60 * 1000; // 15 minutes
 
@@ -273,10 +276,10 @@ export async function sendPasswordResetOTP(email) {
 
     // Return OTP in development mode only
     if (emailResult.development) {
-      return { success: true, otp };
+      return { success: true, email, otp };
     }
 
-    return { success: true };
+    return { success: true, email };
   } catch (error) {
     console.error("Send password reset OTP error:", error);
     return { success: false, error: "Failed to send reset code" };

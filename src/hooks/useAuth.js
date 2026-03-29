@@ -202,16 +202,14 @@ export function useAuth() {
 
   const doForgotPasswordRequest = async () => {
     setError("");
-    const em = resetPasswordData.email.trim().toLowerCase();
+    const input = resetPasswordData.email.trim().toLowerCase();
 
-    // Validate email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!em || !emailRegex.test(em)) {
-      return setError("❌ Please enter a valid email address");
+    if (!input) {
+      return setError("❌ Please enter your email or username");
     }
 
     setResetPasswordData(prev => ({ ...prev, loading: true }));
-    const result = await sendPasswordResetOTP(em);
+    const result = await sendPasswordResetOTP(input);
     setResetPasswordData(prev => ({ ...prev, loading: false }));
 
     if (!result.success) {
@@ -223,8 +221,8 @@ export function useAuth() {
       console.log(`🔐 Development Reset Code: ${result.otp}`);
     }
 
-    // Move to OTP verification step
-    setResetPasswordData(prev => ({ ...prev, step: "otp", email: em }));
+    // Move to OTP verification step using the resolved email
+    setResetPasswordData(prev => ({ ...prev, step: "otp", email: result.email || input }));
   };
 
   const doForgotPasswordVerifyOTP = async () => {

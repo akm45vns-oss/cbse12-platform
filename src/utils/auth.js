@@ -10,7 +10,7 @@ export function validateUsername(username) {
   const u = username.trim().toLowerCase();
   if (!u) return "Username is required";
   if (u.length < 3) return "Username must be at least 3 characters";
-  if (!/^[a-z0-9_]+$/.test(u)) return "Username: only letters, numbers, underscores";
+  if (!/^[a-z0-9_.@#$!\-]+$/.test(u)) return "Username: only letters, numbers, and allowed symbols (._@#$!-)";
   return null;
 }
 

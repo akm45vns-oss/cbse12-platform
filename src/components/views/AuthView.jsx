@@ -336,8 +336,8 @@ export function AuthView({
                   {resetPasswordData.step === "email" && (
                     <>
                       <div>
-                        <label className="label-text">Email Address</label>
-                        <input className="auth-input" type="email" value={resetPasswordData.email} onChange={e => setResetPasswordData({ ...resetPasswordData, email: e.target.value })} placeholder="Enter your account email" onKeyDown={e => e.key === "Enter" && doForgotPasswordRequest()} />
+                        <label className="label-text">Email or Username</label>
+                        <input className="auth-input" type="text" value={resetPasswordData.email} onChange={e => setResetPasswordData({ ...resetPasswordData, email: e.target.value })} placeholder="Enter your email or username" onKeyDown={e => e.key === "Enter" && doForgotPasswordRequest()} />
                       </div>
                     </>
                   )}
