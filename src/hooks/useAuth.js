@@ -74,9 +74,9 @@ export function useAuth() {
     if (passwordErr) return setError(passwordErr);
 
     const hashed = await hashPassword(credentials.password);
-    const loginErr = await loginUser(u, hashed);
+    const loginResult = await loginUser(u, hashed);
 
-    if (loginErr) {
+    if (loginResult.error) {
       // Record failed attempt
       const attempts = recordLoginAttempt(u);
       const remaining = SECURITY_CONFIG.MAX_LOGIN_ATTEMPTS - attempts;
@@ -88,12 +88,12 @@ export function useAuth() {
         return setError(`❌ Too many failed attempts. Account locked for ${SECURITY_CONFIG.LOCKOUT_DURATION_MINUTES} minutes.`);
       }
 
-      return setError(`❌ ${loginErr} (${remaining} attempt${remaining === 1 ? "" : "s"} remaining)`);
+      return setError(`❌ ${loginResult.error} (${remaining} attempt${remaining === 1 ? "" : "s"} remaining)`);
     }
 
     // Clear attempts on successful login
     resetLoginAttempts(u);
-    setCurrentUser(u);
+    setCurrentUser(loginResult.username);
     setCredentials({ username: "", email: "", name: "", password: "", confirmPassword: "" });
     setShowPass(false);
   };

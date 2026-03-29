@@ -20,7 +20,7 @@ export async function loginUser(usernameOrEmail, passwordHash) {
     .eq("password_hash", passwordHash)
     .single();
 
-  if (error || !data) return "Invalid username/email or password";
+  if (error || !data) return { error: "Invalid username/email or password", username: null };
 
   // Update last login
   await supabase
@@ -28,7 +28,7 @@ export async function loginUser(usernameOrEmail, passwordHash) {
     .update({ last_login: new Date().toISOString() })
     .eq("username", data.username);
 
-  return null;
+  return { error: null, username: data.username };
 }
 
 export async function registerUser(username, passwordHash, email, name, emailVerified = false) {
