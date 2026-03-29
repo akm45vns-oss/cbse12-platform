@@ -19,6 +19,7 @@ const PaperView = lazy(() => import("./components/views/PaperView").then(m => ({
 const PapersListView = lazy(() => import("./components/views/PapersListView").then(m => ({ default: m.PapersListView })));
 const ProgressView = lazy(() => import("./components/views/ProgressView").then(m => ({ default: m.ProgressView })));
 const StatsView = lazy(() => import("./components/views/StatsView").then(m => ({ default: m.StatsView })));
+const ProfileView = lazy(() => import("./components/views/ProfileView").then(m => ({ default: m.ProfileView })));
 import { FloatingForumButton } from "./components/common";
 import { globalStyles } from "./styles/shared";
 
@@ -433,7 +434,16 @@ Respond with the paper content directly.`;
               <span style={{ fontSize: 16 }}>📈</span>
               <span style={{ display: "none" }} className="nav-btn-text">Progress</span>
             </button>
-            <div style={{ display: "flex", alignItems: "center", gap: 8, minHeight: "40px" }}>
+            <button
+              onClick={() => nav.navigate("profile")}
+              style={{
+                display: "flex", alignItems: "center", gap: 8, minHeight: "40px",
+                background: "rgba(0,0,0,0.02)", border: "1px solid rgba(0,0,0,0.05)", borderRadius: 12, padding: "4px 12px 4px 4px", cursor: "pointer", transition: "all 0.2s"
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background="rgba(59,130,246,0.05)"; e.currentTarget.style.borderColor="rgba(59,130,246,0.2)"; }}
+              onMouseLeave={e => { e.currentTarget.style.background="rgba(0,0,0,0.02)"; e.currentTarget.style.borderColor="rgba(0,0,0,0.05)"; }}
+              title="View Profile"
+            >
               <div
                 style={{
                   width: 34,
@@ -445,11 +455,12 @@ Respond with the paper content directly.`;
                   alignItems: "center",
                   justifyContent: "center",
                   fontWeight: 800,
-                  fontSize: 15,
+                  fontSize: 18,
                   flexShrink: 0,
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.15)"
                 }}
               >
-                {auth.currentUser?.[0]?.toUpperCase()}
+                {progress.data?.["SYSTEM||PROFILE||avatar"]?.icon || auth.currentUser?.[0]?.toUpperCase()}
               </div>
               <span
                 style={{
@@ -464,28 +475,8 @@ Respond with the paper content directly.`;
                 }}
                 className="nav-username"
               >
-                {auth.currentUser}
+                {progress.data?.["SYSTEM||PROFILE||name"]?.value || auth.currentUser}
               </span>
-            </div>
-            <button
-              onClick={auth.doLogout}
-              style={{
-                background: "rgba(239, 68, 68, 0.05)",
-                border: "1px solid rgba(239, 68, 68, 0.2)",
-                borderRadius: 8,
-                padding: "8px 12px",
-                color: "#ef4444",
-                fontSize: 13,
-                fontWeight: 600,
-                minHeight: "40px",
-                cursor: "pointer",
-                transition: "all 0.2s"
-              }}
-              onMouseEnter={e => { e.currentTarget.style.background="rgba(239,68,68,0.1)"; e.currentTarget.style.color="#dc2626"; }}
-              onMouseLeave={e => { e.currentTarget.style.background="rgba(239,68,68,0.05)"; e.currentTarget.style.color="#ef4444"; }}
-              title="Logout"
-            >
-              Logout
             </button>
           </div>
         </div>
@@ -495,6 +486,7 @@ Respond with the paper content directly.`;
         {nav.view === "dashboard" && (
           <DashboardView
             currentUser={auth.currentUser}
+            displayName={progress.data?.["SYSTEM||PROFILE||name"]?.value || auth.currentUser}
             stats={progress.getStats()}
             overallPct={progress.getOverallPercentage()}
             totalChapters={totalChapters}
@@ -667,6 +659,17 @@ Respond with the paper content directly.`;
               totalChapters={totalChapters}
               curriculum={CURRICULUM}
               progressData={progress.data}
+              theme={theme}
+            />
+          </Suspense>
+        )}
+
+        {nav.view === "profile" && (
+          <Suspense fallback={<LoadingFallback />}>
+            <ProfileView
+              currentUser={auth.currentUser}
+              onLogout={auth.doLogout}
+              progress={progress}
               theme={theme}
             />
           </Suspense>

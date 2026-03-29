@@ -65,6 +65,67 @@ export async function registerUser(username, passwordHash, email, name, emailVer
   return null;
 }
 
+export async function getUserProfile(username) {
+  try {
+    const { data, error } = await supabase
+      .from("users")
+      .select("username, email, name, joined_at")
+      .eq("username", username)
+      .single();
+
+    if (error || !data) return null;
+    return data;
+  } catch (err) {
+    console.error("Get user profile error:", err);
+    return null;
+  }
+}
+
+export async function updateUserName(username, newName) {
+  try {
+    const { error } = await supabase
+      .from("users")
+      .update({ name: newName })
+      .eq("username", username);
+
+    if (error) return { success: false, error: "Failed to update name" };
+    return { success: true };
+  } catch (err) {
+    console.error("Update name error:", err);
+    return { success: false, error: "Network error updating name" };
+  }
+}
+
+export async function updateUserPassword(username, currentHash, newHash) {
+  try {
+    // First, verify current password
+    const { data, error: fetchError } = await supabase
+      .from("users")
+      .select("password_hash")
+      .eq("username", username)
+      .single();
+
+    if (fetchError || !data) return { success: false, error: "Account not found" };
+
+    if (data.password_hash !== currentHash) {
+      return { success: false, error: "Incorrect current password" };
+    }
+
+    // Now update to the new password
+    const { error: updateError } = await supabase
+      .from("users")
+      .update({ password_hash: newHash })
+      .eq("username", username);
+
+    if (updateError) return { success: false, error: "Failed to update password" };
+    
+    return { success: true };
+  } catch (err) {
+    console.error("Update password error:", err);
+    return { success: false, error: "Network error updating password" };
+  }
+}
+
 /**
  * Send OTP to email using Resend API
  */
