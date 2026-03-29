@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { hashPassword, validateUsername, validatePassword } from "../utils/auth";
+import { validateUsername, validatePassword } from "../utils/auth";
 import { loginUser, registerUser, sendOTP, verifyOTP, sendPasswordResetOTP, verifyPasswordResetOTP, resetPassword } from "../utils/supabase";
 import { validatePasswordStrength } from "../utils/passwordValidation";
 import {
@@ -130,14 +130,14 @@ export function useAuth() {
 
     // DON'T CREATE ACCOUNT YET - Just send OTP
     // Store registration data temporarily for after OTP verification
-    const hashed = await hashPassword(credentials.password);
+    // Store plain text password - registerUser will handle the hashing
 
     setOtpState({
       show: true,
       email: em,
       otp: "",
       loading: true,
-      pendingRegistration: { username: u, email: em, name: nm, passwordHash: hashed }
+      pendingRegistration: { username: u, email: em, name: nm, passwordPlain: credentials.password }
     });
 
     const otpResult = await sendOTP(em);
@@ -176,7 +176,7 @@ export function useAuth() {
       return setError("⚠️ Registration data not found");
     }
 
-    const registerErr = await registerUser(pending.username, pending.passwordHash, pending.email, pending.name, true);
+    const registerErr = await registerUser(pending.username, pending.passwordPlain, pending.email, pending.name, true);
     if (registerErr) {
       return setError("⚠️ " + registerErr);
     }
@@ -260,8 +260,7 @@ export function useAuth() {
     }
 
     setResetPasswordData(prev => ({ ...prev, loading: true }));
-    const hashedPassword = await hashPassword(newPass);
-    const result = await resetPassword(resetPasswordData.email, hashedPassword);
+    const result = await resetPassword(resetPasswordData.email, newPass);
     setResetPasswordData(prev => ({ ...prev, loading: false }));
 
     if (!result.success) {

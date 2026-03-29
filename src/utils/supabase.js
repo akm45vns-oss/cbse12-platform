@@ -89,7 +89,7 @@ export async function loginUser(usernameOrEmail, passwordPlainText) {
   }
 }
 
-export async function registerUser(username, passwordHash, email, name, emailVerified = false) {
+export async function registerUser(username, passwordPlain, email, name, emailVerified = false) {
   // Check if username exists
   const { data: existingUsername } = await supabase
     .from("users")
@@ -107,6 +107,10 @@ export async function registerUser(username, passwordHash, email, name, emailVer
     .single();
 
   if (existingEmail) return "Email already registered";
+
+  // Hash the password using bcrypt
+  const { hashPassword } = await import("./auth.js");
+  const passwordHash = await hashPassword(passwordPlain);
 
   const { error } = await supabase.from("users").insert({
     username,
@@ -154,28 +158,61 @@ export async function updateUserName(username, newName) {
   }
 }
 
-export async function updateUserPassword(username, currentHash, newHash) {
+/**
+ * Update user password with verification of current password
+ * @param {string} username - Username
+ * @param {string} currentPasswordPlain - Current password in plain text
+ * @param {string} newPasswordPlain - New password in plain text
+ * @returns {Promise<object>} { success: boolean, error?: string }
+ */
+export async function updateUserPassword(username, currentPasswordPlain, newPasswordPlain) {
   try {
-    // First, verify current password
+    // First, fetch the stored password hash
     const { data, error: fetchError } = await supabase
       .from("users")
       .select("password_hash")
       .eq("username", username)
       .single();
 
-    if (fetchError || !data) return { success: false, error: "Account not found" };
+    if (fetchError || !data) {
+      return { success: false, error: "Account not found" };
+    }
 
-    if (data.password_hash !== currentHash) {
+    const storedHash = data.password_hash;
+
+    // Verify the current password against the stored hash
+    let isCurrentPasswordValid = false;
+    
+    if (isBcryptHash(storedHash)) {
+      // New bcrypt hash - use bcrypt verification
+      isCurrentPasswordValid = await verifyPassword(currentPasswordPlain, storedHash);
+    } else {
+      // Old SHA-256 hash - compute SHA-256 and compare
+      try {
+        const sha256Hash = await createSHA256Hash(currentPasswordPlain);
+        isCurrentPasswordValid = sha256Hash === storedHash;
+      } catch (hashError) {
+        console.error('SHA-256 hash verification failed:', hashError);
+        isCurrentPasswordValid = false;
+      }
+    }
+
+    if (!isCurrentPasswordValid) {
       return { success: false, error: "Incorrect current password" };
     }
 
-    // Now update to the new password
+    // Hash the new password
+    const newHashBcrypt = await hashPassword(newPasswordPlain);
+
+    // Update the password in database
     const { error: updateError } = await supabase
       .from("users")
-      .update({ password_hash: newHash })
+      .update({ password_hash: newHashBcrypt })
       .eq("username", username);
 
-    if (updateError) return { success: false, error: "Failed to update password" };
+    if (updateError) {
+      return { success: false, error: "Failed to update password" };
+    }
     
     return { success: true };
   } catch (err) {
@@ -439,8 +476,12 @@ export async function verifyPasswordResetOTP(email, otp) {
   }
 }
 
-export async function resetPassword(email, newPasswordHash) {
+export async function resetPassword(email, newPasswordPlain) {
   try {
+    // Hash the new password using bcrypt
+    const { hashPassword } = await import("./auth.js");
+    const newPasswordHash = await hashPassword(newPasswordPlain);
+    
     // Update password
     const { error: updateError } = await supabase
       .from("users")

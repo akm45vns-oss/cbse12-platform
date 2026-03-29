@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { getUserProfile, updateUserName, updateUserPassword } from "../../utils/supabase";
-import { hashPassword } from "../../utils/auth";
+import { getUserProfile, updateUserPassword } from "../../utils/supabase";
 import { validatePasswordStrength } from "../../utils/passwordValidation";
 
 const AVATARS = [
@@ -94,10 +93,8 @@ export function ProfileView({
 
     setIsChangingPass(true);
     try {
-        const currentHash = await hashPassword(passData.current);
-        const newHash = await hashPassword(passData.new);
-
-        const { success, error } = await updateUserPassword(currentUser, currentHash, newHash);
+        // Pass plain text passwords to updateUserPassword (it handles hashing internally)
+        const { success, error } = await updateUserPassword(currentUser, passData.current, passData.new);
         
         if (success) {
             setPassSuccess(true);
