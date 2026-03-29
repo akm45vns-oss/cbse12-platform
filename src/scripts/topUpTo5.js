@@ -23,7 +23,7 @@ async function generateQuizSetsLocally(chapter, subject, numSetsToGenerate) {
     const prompt = `Generate 1 quiz set for CBSE Class 12.
 Chapter: "${chapter}" (${subject})
 
-Create exactly 30 MCQs: 5 Easy, 5 Medium, 5 Hard.
+Create exactly 30 MCQs: 10 Easy, 10 Medium, 10 Hard.
 Output ONLY valid JSON array with 30 question objects:
 [{"q":"What is...","opts":["A text","B text","C text","D text"],"ans":0,"exp":"Explanation"},...30 total]
 

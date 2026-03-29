@@ -10,8 +10,8 @@ export function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, 
     return (
       <div style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: 400 }}>
         <div style={{ textAlign: "center" }}>
-          <div style={{ fontSize: 40, marginBottom: 16, filter: "drop-shadow(0 0 20px rgba(6,182,212,0.5))", animation: "spin 1s linear infinite" }}>⚡</div>
-          <div style={{ color: "#94a3b8", fontSize: 15, fontWeight: 600 }}>Loading quiz sets...</div>
+          <div style={{ fontSize: 40, marginBottom: 16, filter: "drop-shadow(0 0 20px rgba(59,130,246,0.3))", animation: "spin 1s linear infinite" }}>⚡</div>
+          <div style={{ color: "#64748b", fontSize: 15, fontWeight: 600 }}>Loading quiz sets...</div>
         </div>
       </div>
     );
@@ -24,29 +24,29 @@ export function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, 
     <div style={{ maxWidth: 760, margin: "0 auto", width: "100%" }}>
       {/* Header */}
       <div style={{
-        background: "rgba(15, 23, 42, 0.5)",
+        background: "rgba(255, 255, 255, 0.8)",
         backdropFilter: "blur(28px)",
         WebkitBackdropFilter: "blur(28px)",
-        border: "1px solid rgba(255, 255, 255, 0.08)",
+        border: "1px solid rgba(0, 0, 0, 0.05)",
         borderRadius: 28,
         padding: "clamp(24px, 4vw, 36px)",
         marginBottom: 36,
-        boxShadow: "0 20px 60px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.07)",
+        boxShadow: "0 20px 50px rgba(148,163,184,0.15), inset 0 1px 0 rgba(255,255,255,0.9)",
         position: "relative",
         overflow: "hidden"
       }}>
-        <div style={{ position: "absolute", top: -60, right: -40, width: 200, height: 200, background: "radial-gradient(circle, rgba(99,102,241,0.2) 0%, transparent 70%)", borderRadius: "50%", filter: "blur(40px)", pointerEvents: "none" }} />
-        <div style={{ fontSize: 11, fontWeight: 900, color: "#22d3ee", textTransform: "uppercase", letterSpacing: "0.14em", marginBottom: 10 }}>{subject}</div>
-        <h1 style={{ fontSize: "clamp(22px,4vw,30px)", fontWeight: 900, color: "#f8fafc", margin: "0 0 10px", letterSpacing: "-0.02em", lineHeight: 1.2 }}>{chapter}</h1>
-        <p style={{ color: "#94a3b8", fontSize: 14, margin: 0, fontWeight: 500 }}>📚 Practice Quiz Sets · {totalSets} set{totalSets !== 1 ? "s" : ""} × 30 questions each</p>
+        <div style={{ position: "absolute", top: -60, right: -40, width: 200, height: 200, background: "radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%)", borderRadius: "50%", filter: "blur(40px)", pointerEvents: "none" }} />
+        <div style={{ fontSize: 11, fontWeight: 900, color: "#3b82f6", textTransform: "uppercase", letterSpacing: "0.14em", marginBottom: 10 }}>{subject}</div>
+        <h1 style={{ fontSize: "clamp(22px,4vw,30px)", fontWeight: 900, color: "#1e293b", margin: "0 0 10px", letterSpacing: "-0.02em", lineHeight: 1.2 }}>{chapter}</h1>
+        <p style={{ color: "#475569", fontSize: 14, margin: 0, fontWeight: 500 }}>📚 Practice Quiz Sets · {totalSets} set{totalSets !== 1 ? "s" : ""} × 30 questions each</p>
         
         {/* Progress indicator */}
         {completedCount > 0 && (
           <div style={{ marginTop: 20, display: "flex", alignItems: "center", gap: 12 }}>
-            <div style={{ flex: 1, height: 6, background: "rgba(255,255,255,0.08)", borderRadius: 3, overflow: "hidden" }}>
-              <div style={{ height: "100%", width: totalSets > 0 ? `${(completedCount / totalSets) * 100}%` : "0%", background: "linear-gradient(90deg, #06b6d4, #818cf8)", borderRadius: 3, boxShadow: "0 0 8px rgba(6,182,212,0.5)", transition: "width 0.5s ease" }} />
+            <div style={{ flex: 1, height: 6, background: "rgba(0,0,0,0.05)", borderRadius: 3, overflow: "hidden" }}>
+              <div style={{ height: "100%", width: totalSets > 0 ? `${(completedCount / totalSets) * 100}%` : "0%", background: "linear-gradient(90deg, #3b82f6, #8b5cf6)", borderRadius: 3, boxShadow: "0 0 8px rgba(59,130,246,0.3)", transition: "width 0.5s ease" }} />
             </div>
-            <span style={{ fontSize: 13, fontWeight: 800, color: "#22d3ee", whiteSpace: "nowrap" }}>{completedCount}/{totalSets} done</span>
+            <span style={{ fontSize: 13, fontWeight: 800, color: "#3b82f6", whiteSpace: "nowrap" }}>{completedCount}/{totalSets} done</span>
           </div>
         )}
       </div>
@@ -82,33 +82,33 @@ export function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, 
               key={setNum}
               onClick={() => onSelectSet(setNum)}
               style={{
-                background: isCompleted ? "rgba(6, 182, 212, 0.08)" : "rgba(255,255,255,0.02)",
+                background: isCompleted ? "rgba(59, 130, 246, 0.05)" : "rgba(255, 255, 255, 0.7)",
                 backdropFilter: "blur(20px)",
                 WebkitBackdropFilter: "blur(20px)",
-                border: `1px solid ${isCompleted ? "rgba(6, 182, 212, 0.3)" : "rgba(255,255,255,0.07)"}`,
+                border: `1px solid ${isCompleted ? "rgba(59, 130, 246, 0.3)" : "rgba(0,0,0,0.05)"}`,
                 borderRadius: 20,
                 padding: 20,
                 textAlign: "center",
                 cursor: "pointer",
                 transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-                boxShadow: isCompleted ? "0 8px 24px rgba(6,182,212,0.15)" : "0 4px 16px rgba(0,0,0,0.3)",
+                boxShadow: isCompleted ? "0 8px 16px rgba(59, 130, 246, 0.15)" : "0 4px 12px rgba(148,163,184,0.15)",
                 position: "relative"
               }}
               onMouseEnter={e => {
-                e.currentTarget.style.borderColor = "rgba(6, 182, 212, 0.5)";
+                e.currentTarget.style.borderColor = "rgba(59, 130, 246, 0.5)";
                 e.currentTarget.style.transform = "translateY(-5px)";
-                e.currentTarget.style.boxShadow = "0 20px 50px rgba(6,182,212,0.2)";
-                e.currentTarget.style.background = "rgba(6,182,212,0.12)";
+                e.currentTarget.style.boxShadow = "0 16px 40px rgba(59, 130, 246, 0.2)";
+                e.currentTarget.style.background = isCompleted ? "rgba(59, 130, 246, 0.15)" : "rgba(255, 255, 255, 1)";
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.borderColor = isCompleted ? "rgba(6, 182, 212, 0.3)" : "rgba(255,255,255,0.07)";
+                e.currentTarget.style.borderColor = isCompleted ? "rgba(59, 130, 246, 0.3)" : "rgba(0,0,0,0.05)";
                 e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = isCompleted ? "0 8px 24px rgba(6,182,212,0.15)" : "0 4px 16px rgba(0,0,0,0.3)";
-                e.currentTarget.style.background = isCompleted ? "rgba(6,182,212,0.08)" : "rgba(255,255,255,0.02)";
+                e.currentTarget.style.boxShadow = isCompleted ? "0 8px 16px rgba(59, 130, 246, 0.15)" : "0 4px 12px rgba(148,163,184,0.15)";
+                e.currentTarget.style.background = isCompleted ? "rgba(59, 130, 246, 0.05)" : "rgba(255, 255, 255, 0.7)";
               }}
             >
               {/* Set Number */}
-              <div style={{ fontSize: 26, fontWeight: 900, color: isCompleted ? "#22d3ee" : "#f8fafc", marginBottom: 10, letterSpacing: "-0.02em" }}>
+              <div style={{ fontSize: 26, fontWeight: 900, color: isCompleted ? "#3b82f6" : "#1e293b", marginBottom: 10, letterSpacing: "-0.02em" }}>
                 Set {setNum}
               </div>
 
@@ -116,9 +116,9 @@ export function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, 
               {isCompleted ? (
                 <div style={{ marginBottom: 12 }}>
                   <div style={{
-                    background: "rgba(6, 182, 212, 0.15)",
-                    border: "1px solid rgba(6, 182, 212, 0.3)",
-                    color: "#22d3ee",
+                    background: "rgba(59, 130, 246, 0.1)",
+                    border: "1px solid rgba(59, 130, 246, 0.2)",
+                    color: "#3b82f6",
                     padding: "6px 12px",
                     borderRadius: 10,
                     fontSize: 12,
@@ -130,21 +130,21 @@ export function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, 
                 </div>
               ) : (
                 <div style={{ marginBottom: 12 }}>
-                  <div style={{ color: "#94a3b8", fontSize: 12, fontWeight: 600 }}>Not Started →</div>
+                  <div style={{ color: "#64748b", fontSize: 12, fontWeight: 600 }}>Not Started →</div>
                 </div>
               )}
 
               {/* Score Display */}
               {isCompleted && (
                 <div style={{
-                  background: "rgba(255,255,255,0.05)",
-                  border: "1px solid rgba(255,255,255,0.1)",
+                  background: "rgba(0,0,0,0.03)",
+                  border: "1px solid rgba(0,0,0,0.05)",
                   borderRadius: 10,
                   padding: "8px 12px",
                   marginBottom: 12,
                   fontSize: 16,
                   fontWeight: 900,
-                  color: pct >= 80 ? "#34d399" : pct >= 60 ? "#fbbf24" : "#f87171"
+                  color: pct >= 80 ? "#059669" : pct >= 60 ? "#d97706" : "#dc2626"
                 }}>
                   Best: {bestScore}/30 · {pct}%
                 </div>
@@ -157,7 +157,7 @@ export function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, 
 
               {/* Difficulty Info */}
               <div style={{ fontSize: 11, color: "#64748b", marginTop: 8, fontWeight: 500, display: "flex", gap: 6, justifyContent: "center" }}>
-                <span>5 Easy</span><span>·</span><span>5 Med</span><span>·</span><span>5 Hard</span>
+                <span>10 Easy</span><span>·</span><span>10 Med</span><span>·</span><span>10 Hard</span>
               </div>
             </button>
           );
@@ -173,7 +173,7 @@ export function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, 
         padding: 24,
         textAlign: "center"
       }}>
-        <p style={{ fontSize: 14, color: "#a5b4fc", fontWeight: 600, margin: 0, lineHeight: 1.7 }}>
+        <p style={{ fontSize: 14, color: "#4f46e5", fontWeight: 600, margin: 0, lineHeight: 1.7 }}>
           💡 Each set contains 30 board-level questions with different difficulty levels.
           <br />
           Practice multiple sets to master this chapter!

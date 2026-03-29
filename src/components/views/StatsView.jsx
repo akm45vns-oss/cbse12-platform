@@ -82,16 +82,16 @@ export function StatsView() {
 
   const cardBg = theme.isDarkMode
     ? "linear-gradient(135deg, rgba(30,41,59,0.8), rgba(15,23,42,0.8))"
-    : "linear-gradient(135deg, rgba(255,248,251,0.95), rgba(240,249,252,0.95))";
-  const cardBorder = theme.isDarkMode ? "#475569" : "#dbeafe";
+    : "rgba(255, 255, 255, 0.8)";
+  const cardBorder = theme.isDarkMode ? "#475569" : "rgba(0,0,0,0.05)";
   const cardTextColor = theme.isDarkMode ? "#cbd5e1" : "#1e293b";
-  const labelColor = theme.isDarkMode ? "#94a3b8" : "#9d174d";
+  const labelColor = theme.isDarkMode ? "#94a3b8" : "#64748b";
 
   return (
     <div style={{ color: cardTextColor }}>
       {/* Header */}
       <div style={{ marginBottom: 32 }}>
-        <h1 style={{ fontSize: "clamp(24px, 5vw, 32px)", fontWeight: 900, color: theme.isDarkMode ? "#22d3ee" : "#064e78", margin: "0 0 8px", letterSpacing: "-0.02em" }}>
+        <h1 style={{ fontSize: "clamp(24px, 5vw, 32px)", fontWeight: 900, color: theme.isDarkMode ? "#22d3ee" : "#1e293b", margin: "0 0 8px", letterSpacing: "-0.02em" }}>
           📊 Your Study Statistics
         </h1>
         <p style={{ color: labelColor, marginTop: 8, fontSize: "clamp(13px, 2vw, 15px)", fontWeight: 500 }}>
@@ -117,17 +117,19 @@ export function StatsView() {
             border: `1.5px solid ${cardBorder}`,
             borderRadius: 18,
             padding: 20,
+            backdropFilter: "blur(20px)",
+            WebkitBackdropFilter: "blur(20px)",
             textAlign: "center",
-            boxShadow: theme.isDarkMode ? "0 4px 12px rgba(0,0,0,0.3)" : "0 4px 16px rgba(236, 72, 153, 0.1)",
+            boxShadow: theme.isDarkMode ? "0 4px 12px rgba(0,0,0,0.3)" : "0 4px 12px rgba(148,163,184,0.15)",
             transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
           }}
             onMouseEnter={e => {
               e.currentTarget.style.transform = "translateY(-4px)";
-              e.currentTarget.style.boxShadow = theme.isDarkMode ? "0 8px 20px rgba(0,0,0,0.4)" : "0 8px 24px rgba(236, 72, 153, 0.15)";
+              e.currentTarget.style.boxShadow = theme.isDarkMode ? "0 8px 20px rgba(0,0,0,0.4)" : "0 8px 24px rgba(148,163,184,0.2)";
             }}
             onMouseLeave={e => {
               e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow = theme.isDarkMode ? "0 4px 12px rgba(0,0,0,0.3)" : "0 4px 16px rgba(236, 72, 153, 0.1)";
+              e.currentTarget.style.boxShadow = theme.isDarkMode ? "0 4px 12px rgba(0,0,0,0.3)" : "0 4px 12px rgba(148,163,184,0.15)";
             }}>
             <div style={{ fontSize: 32, marginBottom: 8 }}>{emoji}</div>
             <div style={{ fontSize: 12, color: labelColor, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 6 }}>
@@ -148,9 +150,9 @@ export function StatsView() {
           borderRadius: 20,
           padding: 24,
           marginBottom: 32,
-          boxShadow: theme.isDarkMode ? "0 4px 12px rgba(0,0,0,0.3)" : "0 4px 16px rgba(236, 72, 153, 0.1)",
+          boxShadow: theme.isDarkMode ? "0 4px 12px rgba(0,0,0,0.3)" : "0 4px 16px rgba(148,163,184,0.15)",
         }}>
-          <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#064e78", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
+          <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#1e293b", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
             🧠 Quiz Performance
           </h3>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 12 }}>
@@ -186,7 +188,7 @@ export function StatsView() {
       {displayedSubjects.length > 0 && (
         <div style={{ marginBottom: 32 }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-            <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#064e78", margin: 0, letterSpacing: "-0.01em" }}>
+            <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#1e293b", margin: 0, letterSpacing: "-0.01em" }}>
               📊 Subject Performance
             </h3>
             <div style={{ display: "flex", gap: 8 }}>
@@ -223,11 +225,11 @@ export function StatsView() {
                   borderRadius: 14,
                   padding: 14,
                   textAlign: "center",
-                  boxShadow: theme.isDarkMode ? "0 2px 8px rgba(0,0,0,0.3)" : "0 2px 8px rgba(236, 72, 153, 0.08)",
+                  boxShadow: theme.isDarkMode ? "0 2px 8px rgba(0,0,0,0.3)" : "0 2px 8px rgba(148,163,184,0.1)",
                   transition: "all 0.2s",
                 }}>
                   <div style={{ fontSize: 20, marginBottom: 8 }}>{S?.emoji}</div>
-                  <div style={{ fontSize: 11, fontWeight: 700, color: S?.text || "#064e78", textTransform: "uppercase", marginBottom: 4, letterSpacing: "0.05em" }}>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: S?.text || "#1e293b", textTransform: "uppercase", marginBottom: 4, letterSpacing: "0.05em" }}>
                     {subject}
                   </div>
                   <div style={{
@@ -263,9 +265,9 @@ export function StatsView() {
         borderRadius: 20,
         padding: 24,
         marginBottom: 32,
-        boxShadow: theme.isDarkMode ? "0 4px 12px rgba(0,0,0,0.3)" : "0 4px 16px rgba(236, 72, 153, 0.1)",
+        boxShadow: theme.isDarkMode ? "0 4px 12px rgba(0,0,0,0.3)" : "0 4px 16px rgba(148,163,184,0.15)",
       }}>
-        <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#064e78", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
+        <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#1e293b", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
           📈 Study Patterns
         </h3>
         <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
@@ -382,7 +384,7 @@ export function StatsView() {
       {/* Topic Mastery */}
       {(topicData.weakTopics.length > 0 || topicData.strongTopics.length > 0) && (
         <div style={{ marginBottom: 32 }}>
-          <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#064e78", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
+          <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#1e293b", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
             🎯 Topic Mastery
           </h3>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: 16 }}>
@@ -393,7 +395,7 @@ export function StatsView() {
                 border: `1.5px solid ${cardBorder}`,
                 borderRadius: 14,
                 padding: 16,
-                boxShadow: theme.isDarkMode ? "0 2px 8px rgba(0,0,0,0.3)" : "0 2px 8px rgba(236, 72, 153, 0.08)",
+                boxShadow: theme.isDarkMode ? "0 2px 8px rgba(0,0,0,0.3)" : "0 2px 8px rgba(148,163,184,0.1)",
               }}>
                 <div style={{ fontSize: 13, fontWeight: 800, color: "#dc2626", marginBottom: 12, textTransform: "uppercase", letterSpacing: "0.05em" }}>
                   ⚠️ Needs Focus
@@ -421,7 +423,7 @@ export function StatsView() {
                 border: `1.5px solid ${cardBorder}`,
                 borderRadius: 14,
                 padding: 16,
-                boxShadow: theme.isDarkMode ? "0 2px 8px rgba(0,0,0,0.3)" : "0 2px 8px rgba(236, 72, 153, 0.08)",
+                boxShadow: theme.isDarkMode ? "0 2px 8px rgba(0,0,0,0.3)" : "0 2px 8px rgba(148,163,184,0.1)",
               }}>
                 <div style={{ fontSize: 13, fontWeight: 800, color: "#16a34a", marginBottom: 12, textTransform: "uppercase", letterSpacing: "0.05em" }}>
                   ⭐ Mastered
@@ -448,14 +450,17 @@ export function StatsView() {
       {/* Personalized Insights */}
       {insights && (
         <div style={{
-          background: "linear-gradient(135deg, rgba(15,23,42,0.9), rgba(30,41,59,0.9))",
-          border: "1.5px solid #0891b2",
+          background: theme.isDarkMode 
+            ? "linear-gradient(135deg, rgba(15,23,42,0.9), rgba(30,41,59,0.9))"
+            : "linear-gradient(135deg, rgba(255,255,255,0.9), rgba(248,250,252,0.9))",
+          backdropFilter: "blur(20px)",
+          border: theme.isDarkMode ? "1.5px solid #0891b2" : "1.5px solid rgba(59,130,246,0.3)",
           borderRadius: 20,
           padding: 24,
           marginBottom: 32,
-          boxShadow: "0 8px 32px rgba(8, 145, 178, 0.2)",
+          boxShadow: theme.isDarkMode ? "0 8px 32px rgba(8, 145, 178, 0.2)" : "0 8px 24px rgba(59,130,246,0.15)",
         }}>
-          <h3 style={{ fontSize: 16, fontWeight: 800, color: "#22d3ee", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
+          <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#3b82f6", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
             💡 Personalized Insights
           </h3>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16 }}>
@@ -503,9 +508,9 @@ export function StatsView() {
         borderRadius: 20,
         padding: 24,
         marginBottom: 32,
-        boxShadow: theme.isDarkMode ? "0 4px 12px rgba(0,0,0,0.3)" : "0 4px 16px rgba(236, 72, 153, 0.1)",
+        boxShadow: theme.isDarkMode ? "0 4px 12px rgba(0,0,0,0.3)" : "0 4px 16px rgba(148,163,184,0.15)",
       }}>
-        <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#064e78", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
+        <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#1e293b", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
           📋 Session Summary
         </h3>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }}>
@@ -546,7 +551,7 @@ export function StatsView() {
 
       {/* Time by Subject */}
       <div style={{ marginBottom: 32 }}>
-        <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#064e78", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
+        <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#1e293b", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
           📚 Time Spent by Subject
         </h3>
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
@@ -561,7 +566,7 @@ export function StatsView() {
                 border: `1.5px solid ${cardBorder}`,
                 borderRadius: 16,
                 padding: 16,
-                boxShadow: theme.isDarkMode ? "0 2px 8px rgba(0,0,0,0.3)" : "0 2px 8px rgba(236, 72, 153, 0.08)",
+                boxShadow: theme.isDarkMode ? "0 2px 8px rgba(0,0,0,0.3)" : "0 2px 8px rgba(148,163,184,0.1)",
               }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
                   <div>
@@ -593,8 +598,9 @@ export function StatsView() {
         borderRadius: 20,
         padding: 24,
         marginBottom: 32,
+        boxShadow: theme.isDarkMode ? "0 4px 12px rgba(0,0,0,0.3)" : "0 4px 16px rgba(148,163,184,0.15)",
       }}>
-        <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#064e78", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
+        <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#1e293b", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
           🎯 Study Mode Distribution
         </h3>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
@@ -625,7 +631,7 @@ export function StatsView() {
       {/* Recommendations */}
       {recommendations.length > 0 && (
         <div style={{ marginBottom: 32 }}>
-          <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#064e78", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
+          <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#1e293b", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
             💡 Smart Recommendations
           </h3>
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
@@ -662,7 +668,7 @@ export function StatsView() {
           fontSize: 13,
           fontWeight: 500,
         }}>
-          Last studied: <strong style={{ color: theme.isDarkMode ? "#22d3ee" : "#064e78" }}>{stats.lastSession.subject} - {stats.lastSession.chapter}</strong> ({formatDuration(stats.lastSession.duration)})
+          Last studied: <strong style={{ color: theme.isDarkMode ? "#22d3ee" : "#3b82f6" }}>{stats.lastSession.subject} - {stats.lastSession.chapter}</strong> ({formatDuration(stats.lastSession.duration)})
         </div>
       )}
     </div>

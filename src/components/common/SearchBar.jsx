@@ -48,15 +48,15 @@ export function SearchBar({ onSelectChapter, onSelectSubject }) {
           placeholder="🔍 Search chapters..."
           value={query}
           onChange={(e) => { setQuery(e.target.value); setIsOpen(true); }}
-          onFocus={(e) => { setIsOpen(true); e.currentTarget.style.borderColor = "rgba(6, 182, 212, 0.5)"; e.currentTarget.style.boxShadow = "0 0 0 3px rgba(6, 182, 212, 0.15)"; e.currentTarget.style.background = "rgba(255, 255, 255, 0.08)"; }}
-          onBlur={(e) => { e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.1)"; e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.background = "rgba(255, 255, 255, 0.05)"; }}
+          onFocus={(e) => { setIsOpen(true); e.currentTarget.style.borderColor = "rgba(59, 130, 246, 0.5)"; e.currentTarget.style.boxShadow = "0 0 0 3px rgba(59, 130, 246, 0.15)"; e.currentTarget.style.background = "rgba(255, 255, 255, 1)"; }}
+          onBlur={(e) => { e.currentTarget.style.borderColor = "rgba(0, 0, 0, 0.05)"; e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.background = "rgba(255, 255, 255, 0.8)"; }}
           style={{
             width: "100%",
             padding: "14px 18px",
             borderRadius: 14,
-            border: "1px solid rgba(255, 255, 255, 0.1)",
-            background: "rgba(255, 255, 255, 0.05)",
-            color: "#f8fafc",
+            border: "1px solid rgba(0, 0, 0, 0.05)",
+            background: "rgba(255, 255, 255, 0.8)",
+            color: "#1e293b",
             fontSize: 14,
             fontWeight: 500,
             transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -74,12 +74,12 @@ export function SearchBar({ onSelectChapter, onSelectSubject }) {
             top: "calc(100% + 8px)",
             left: 0,
             right: 0,
-            background: "rgba(15, 23, 42, 0.85)",
+            background: "rgba(255, 255, 255, 0.95)",
             backdropFilter: "blur(24px)",
             WebkitBackdropFilter: "blur(24px)",
-            border: "1px solid rgba(255, 255, 255, 0.1)",
+            border: "1px solid rgba(0,0,0,0.05)",
             borderRadius: 16,
-            boxShadow: "0 14px 40px rgba(0, 0, 0, 0.5)",
+            boxShadow: "0 14px 40px rgba(148,163,184,0.2)",
             maxHeight: 320,
             overflowY: "auto",
             zIndex: 50,
@@ -97,13 +97,13 @@ export function SearchBar({ onSelectChapter, onSelectSubject }) {
                 transition: "all 0.2s ease",
                 background: "transparent",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255, 255, 255, 0.08)"; e.currentTarget.style.transform = "translateX(4px)"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(59, 130, 246, 0.05)"; e.currentTarget.style.transform = "translateX(4px)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.transform = "translateX(0)"; }}
             >
-              <div style={{ fontSize: 11, fontWeight: 700, color: "#22d3ee", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "#3b82f6", textTransform: "uppercase", letterSpacing: "0.08em" }}>
                 {result.subject}
               </div>
-              <div style={{ fontSize: 13, fontWeight: 600, color: "#f8fafc", marginTop: 4 }}>
+              <div style={{ fontSize: 13, fontWeight: 600, color: "#1e293b", marginTop: 4 }}>
                 {result.chapter}
               </div>
             </div>
@@ -118,17 +118,17 @@ export function SearchBar({ onSelectChapter, onSelectSubject }) {
             top: "calc(100% + 8px)",
             left: 0,
             right: 0,
-            background: "rgba(15, 23, 42, 0.85)",
+            background: "rgba(255, 255, 255, 0.95)",
             backdropFilter: "blur(24px)",
             WebkitBackdropFilter: "blur(24px)",
-            border: "1px solid rgba(255, 255, 255, 0.1)",
+            border: "1px solid rgba(0,0,0,0.05)",
             borderRadius: 16,
             padding: "24px",
             textAlign: "center",
             fontSize: 13,
             fontWeight: 500,
-            color: "#94a3b8",
-            boxShadow: "0 14px 40px rgba(0, 0, 0, 0.5)",
+            color: "#64748b",
+            boxShadow: "0 14px 40px rgba(148,163,184,0.2)",
           }}
         >
           No chapters found

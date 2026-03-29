@@ -83,7 +83,7 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
           <h3 style={{
             fontSize: "clamp(11px,2vw,13px)",
             fontWeight: 900,
-            color: "#22d3ee",
+            color: "#3b82f6",
             textTransform: "uppercase",
             letterSpacing: "0.12em",
             marginBottom: 16,
@@ -92,13 +92,13 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
             gap: 12
           }}>
             <span style={{
-              background: "rgba(6, 182, 212, 0.1)",
-              border: "1px solid rgba(6, 182, 212, 0.25)",
+              background: "rgba(59, 130, 246, 0.1)",
+              border: "1px solid rgba(59, 130, 246, 0.25)",
               borderRadius: 8,
               padding: "5px 16px",
               fontWeight: 800
             }}>{unit.name}</span>
-            <span style={{ flex: 1, height: 1, background: "rgba(255,255,255,0.08)" }} />
+            <span style={{ flex: 1, height: 1, background: "rgba(0,0,0,0.08)" }} />
           </h3>
           <div className="subj-ch-grid">
             {unit.chapters.map((ch, ci) => {
@@ -111,28 +111,28 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
               return (
                 <button key={ci} onClick={() => handleSelectChapter(ch)}
                   style={{
-                    background: "rgba(15, 23, 42, 0.5)",
+                    background: "rgba(255, 255, 255, 0.75)",
                     backdropFilter: "blur(20px)",
-                    border: `1px solid ${isDone ? "rgba(6, 182, 212, 0.35)" : "rgba(255, 255, 255, 0.08)"}`,
+                    border: `1px solid ${isDone ? "rgba(59, 130, 246, 0.35)" : "rgba(0, 0, 0, 0.05)"}`,
                     borderRadius: 18,
                     padding: "18px 20px",
                     textAlign: "left",
                     transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
                     cursor: "pointer",
-                    boxShadow: isDone ? "0 8px 24px rgba(6, 182, 212, 0.15)" : "0 4px 16px rgba(0,0,0,0.3)",
+                    boxShadow: isDone ? "0 8px 24px rgba(59, 130, 246, 0.15)" : "0 4px 16px rgba(148,163,184,0.1)",
                     position: "relative"
                   }}
                   onMouseEnter={e => {
-                    e.currentTarget.style.borderColor = "rgba(6, 182, 212, 0.5)";
+                    e.currentTarget.style.borderColor = "rgba(59, 130, 246, 0.4)";
                     e.currentTarget.style.transform = "translateY(-4px)";
-                    e.currentTarget.style.boxShadow = "0 16px 40px rgba(6,182,212,0.2)";
-                    e.currentTarget.style.background = "rgba(6,182,212,0.08)";
+                    e.currentTarget.style.boxShadow = "0 16px 40px rgba(148,163,184,0.3)";
+                    e.currentTarget.style.background = "rgba(255, 255, 255, 1)";
                   }}
                   onMouseLeave={e => {
-                    e.currentTarget.style.borderColor = isDone ? "rgba(6, 182, 212, 0.35)" : "rgba(255,255,255,0.08)";
+                    e.currentTarget.style.borderColor = isDone ? "rgba(59, 130, 246, 0.35)" : "rgba(0, 0, 0, 0.05)";
                     e.currentTarget.style.transform = "translateY(0)";
-                    e.currentTarget.style.boxShadow = isDone ? "0 8px 24px rgba(6,182,212,0.15)" : "0 4px 16px rgba(0,0,0,0.3)";
-                    e.currentTarget.style.background = "rgba(15,23,42,0.5)";
+                    e.currentTarget.style.boxShadow = isDone ? "0 8px 24px rgba(59, 130, 246, 0.15)" : "0 4px 16px rgba(148,163,184,0.1)";
+                    e.currentTarget.style.background = "rgba(255, 255, 255, 0.75)";
                   }}>
                   
                   {/* Bookmark */}
@@ -150,18 +150,18 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
                     {bookmarks[ch] ? "❤️" : "🤍"}
                   </button>
 
-                  <div style={{ fontWeight: 700, color: "#f8fafc", fontSize: 14, lineHeight: 1.5, marginBottom: 12, paddingRight: 28 }}>{ch}</div>
+                  <div style={{ fontWeight: 700, color: "#1e293b", fontSize: 14, lineHeight: 1.5, marginBottom: 12, paddingRight: 28 }}>{ch}</div>
                   <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                       <span style={{ fontSize: 13 }}>{nRead ? "📖" : "📄"}</span>
-                      <span style={{ fontSize: 12, fontWeight: 600, color: nRead ? "#22d3ee" : "#94a3b8" }}>{nRead ? "Read" : "Notes"}</span>
+                      <span style={{ fontSize: 12, fontWeight: 600, color: nRead ? "#3b82f6" : "#64748b" }}>{nRead ? "Read" : "Notes"}</span>
                     </div>
                     <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                       <span style={{ fontSize: 13 }}>{best !== undefined ? "✅" : "❓"}</span>
                       {best !== undefined ? (
-                        <span style={{ fontSize: 12, fontWeight: 800, color: "#6ee7b7" }}>{best}/30</span>
+                        <span style={{ fontSize: 12, fontWeight: 800, color: "#059669" }}>{best}/30</span>
                       ) : (
-                        <span style={{ fontSize: 12, color: "#94a3b8" }}>Quiz</span>
+                        <span style={{ fontSize: 12, color: "#64748b" }}>Quiz</span>
                       )}
                     </div>
                   </div>

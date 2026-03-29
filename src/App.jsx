@@ -27,7 +27,7 @@ const LoadingFallback = () => (
   <div style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "400px" }}>
     <div style={{ textAlign: "center" }}>
       <div style={{ fontSize: 36, marginBottom: 16, animation: "pulse 1.5s ease infinite" }}>⚡</div>
-      <div style={{ color: "#94a3b8", fontSize: 14, fontWeight: 600 }}>Loading...</div>
+      <div style={{ color: "#64748b", fontSize: 14, fontWeight: 600 }}>Loading...</div>
     </div>
   </div>
 );
@@ -282,25 +282,25 @@ Respond with the paper content directly.`;
       style={{
         minHeight: "100vh",
         width: "100%",
-        background: "linear-gradient(-45deg, #2a0845, #6441A5, #0f172a, #0f3443, #34e89e)",
+        background: "linear-gradient(-45deg, #fdfbfb, #ebedee, #e0c3fc, #8ec5fc, #fbc2eb)",
         backgroundSize: "400% 400%",
         animation: "globalBackgroundGradient 20s ease infinite",
         position: "relative",
         fontFamily: "'Inter', system-ui, sans-serif",
       }}
     >
-      <div style={{ position: "fixed", top: "-10%", left: "-10%", width: "50vw", height: "50vw", background: "radial-gradient(circle, rgba(236, 72, 153, 0.25) 0%, transparent 60%)", filter: "blur(100px)", zIndex: 0, pointerEvents: "none", animation: "orbPulse1 12s infinite alternate" }} />
-      <div style={{ position: "fixed", bottom: "-20%", right: "-10%", width: "60vw", height: "60vw", background: "radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, transparent 60%)", filter: "blur(120px)", zIndex: 0, pointerEvents: "none", animation: "orbPulse2 15s infinite alternate-reverse" }} />
+      <div style={{ position: "fixed", top: "-10%", left: "-10%", width: "50vw", height: "50vw", background: "radial-gradient(circle, rgba(236, 72, 153, 0.15) 0%, transparent 60%)", filter: "blur(100px)", zIndex: 0, pointerEvents: "none", animation: "orbPulse1 12s infinite alternate" }} />
+      <div style={{ position: "fixed", bottom: "-20%", right: "-10%", width: "60vw", height: "60vw", background: "radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 60%)", filter: "blur(120px)", zIndex: 0, pointerEvents: "none", animation: "orbPulse2 15s infinite alternate-reverse" }} />
       
       <style>{globalStyles}</style>
 
       {/* Top Navigation */}
       <nav
         style={{
-          background: "rgba(15, 23, 42, 0.6)",
+          background: "rgba(255, 255, 255, 0.85)",
           backdropFilter: "blur(32px)",
           WebkitBackdropFilter: "blur(32px)",
-          borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
+          borderBottom: "1px solid rgba(0, 0, 0, 0.05)",
           position: "sticky",
           top: 0,
           zIndex: 100,
@@ -314,11 +314,11 @@ Respond with the paper content directly.`;
               <button
                 onClick={nav.goBack}
                 style={{
-                  background: "rgba(255, 255, 255, 0.05)",
-                  border: "1px solid rgba(255, 255, 255, 0.1)",
+                  background: "rgba(0, 0, 0, 0.03)",
+                  border: "1px solid rgba(0, 0, 0, 0.06)",
                   borderRadius: 8,
                   padding: "8px 10px",
-                  color: "#cbd5e1",
+                  color: "#475569",
                   fontWeight: 600,
                   fontSize: 12,
                   display: "flex",
@@ -328,8 +328,8 @@ Respond with the paper content directly.`;
                   whiteSpace: "nowrap",
                   flexShrink: 0,
                 }}
-                onMouseEnter={e => { e.currentTarget.style.background="rgba(255,255,255,0.1)"; e.currentTarget.style.color="#f8fafc"; }}
-                onMouseLeave={e => { e.currentTarget.style.background="rgba(255,255,255,0.05)"; e.currentTarget.style.color="#cbd5e1"; }}
+                onMouseEnter={e => { e.currentTarget.style.background="rgba(0,0,0,0.06)"; e.currentTarget.style.color="#1e293b"; }}
+                onMouseLeave={e => { e.currentTarget.style.background="rgba(0,0,0,0.03)"; e.currentTarget.style.color="#475569"; }}
               >
                 ← <span style={{ display: "none" }}>Back</span>
               </button>
@@ -343,7 +343,7 @@ Respond with the paper content directly.`;
                   gap: 6,
                   background: "none",
                   border: "none",
-                  color: "#f8fafc",
+                  color: "#1e293b",
                   fontWeight: 800,
                   fontSize: 18,
                   cursor: "pointer",
@@ -356,7 +356,7 @@ Respond with the paper content directly.`;
             {nav.subject && (
               <span
                 style={{
-                  color: "#94a3b8",
+                  color: "#64748b",
                   fontSize: 13,
                   minWidth: 0,
                   overflow: "hidden",
@@ -370,7 +370,7 @@ Respond with the paper content directly.`;
             {nav.chapter && (
               <span
                 style={{
-                  color: "#94a3b8",
+                  color: "#64748b",
                   fontSize: 12,
                   maxWidth: 140,
                   overflow: "hidden",
@@ -388,11 +388,11 @@ Respond with the paper content directly.`;
             <button
               onClick={() => nav.navigate("stats")}
               style={{
-                background: "rgba(255, 255, 255, 0.05)",
-                border: "1px solid rgba(255, 255, 255, 0.1)",
+                background: "rgba(0, 0, 0, 0.03)",
+                border: "1px solid rgba(0, 0, 0, 0.06)",
                 borderRadius: 8,
                 padding: "8px 12px",
-                color: "#cbd5e1",
+                color: "#475569",
                 fontWeight: 600,
                 fontSize: 13,
                 display: "flex",
@@ -402,8 +402,8 @@ Respond with the paper content directly.`;
                 whiteSpace: "nowrap",
                 transition: "all 0.2s"
               }}
-              onMouseEnter={e => { e.currentTarget.style.background="rgba(255,255,255,0.1)"; e.currentTarget.style.color="#f8fafc"; }}
-              onMouseLeave={e => { e.currentTarget.style.background="rgba(255,255,255,0.05)"; e.currentTarget.style.color="#cbd5e1"; }}
+              onMouseEnter={e => { e.currentTarget.style.background="rgba(0,0,0,0.06)"; e.currentTarget.style.color="#1e293b"; }}
+              onMouseLeave={e => { e.currentTarget.style.background="rgba(0,0,0,0.03)"; e.currentTarget.style.color="#475569"; }}
               title="Statistics"
             >
               <span style={{ fontSize: 16 }}>📊</span>
@@ -412,11 +412,11 @@ Respond with the paper content directly.`;
             <button
               onClick={() => nav.navigate("progress")}
               style={{
-                background: "rgba(255, 255, 255, 0.05)",
-                border: "1px solid rgba(255, 255, 255, 0.1)",
+                background: "rgba(0, 0, 0, 0.03)",
+                border: "1px solid rgba(0, 0, 0, 0.06)",
                 borderRadius: 8,
                 padding: "8px 12px",
-                color: "#cbd5e1",
+                color: "#475569",
                 fontWeight: 600,
                 fontSize: 13,
                 display: "flex",
@@ -426,8 +426,8 @@ Respond with the paper content directly.`;
                 whiteSpace: "nowrap",
                 transition: "all 0.2s"
               }}
-              onMouseEnter={e => { e.currentTarget.style.background="rgba(255,255,255,0.1)"; e.currentTarget.style.color="#f8fafc"; }}
-              onMouseLeave={e => { e.currentTarget.style.background="rgba(255,255,255,0.05)"; e.currentTarget.style.color="#cbd5e1"; }}
+              onMouseEnter={e => { e.currentTarget.style.background="rgba(0,0,0,0.06)"; e.currentTarget.style.color="#1e293b"; }}
+              onMouseLeave={e => { e.currentTarget.style.background="rgba(0,0,0,0.03)"; e.currentTarget.style.color="#475569"; }}
               title="Progress"
             >
               <span style={{ fontSize: 16 }}>📈</span>
@@ -455,7 +455,7 @@ Respond with the paper content directly.`;
                 style={{
                   fontSize: 13,
                   fontWeight: 600,
-                  color: "#f8fafc",
+                  color: "#1e293b",
                   display: "block",
                   maxWidth: 120,
                   overflow: "hidden",
@@ -470,19 +470,19 @@ Respond with the paper content directly.`;
             <button
               onClick={auth.doLogout}
               style={{
-                background: "rgba(239, 68, 68, 0.1)",
+                background: "rgba(239, 68, 68, 0.05)",
                 border: "1px solid rgba(239, 68, 68, 0.2)",
                 borderRadius: 8,
                 padding: "8px 12px",
-                color: "#fca5a5",
+                color: "#ef4444",
                 fontSize: 13,
                 fontWeight: 600,
                 minHeight: "40px",
                 cursor: "pointer",
                 transition: "all 0.2s"
               }}
-              onMouseEnter={e => { e.currentTarget.style.background="rgba(239,68,68,0.2)"; e.currentTarget.style.color="#fecaca"; }}
-              onMouseLeave={e => { e.currentTarget.style.background="rgba(239,68,68,0.1)"; e.currentTarget.style.color="#fca5a5"; }}
+              onMouseEnter={e => { e.currentTarget.style.background="rgba(239,68,68,0.1)"; e.currentTarget.style.color="#dc2626"; }}
+              onMouseLeave={e => { e.currentTarget.style.background="rgba(239,68,68,0.05)"; e.currentTarget.style.color="#ef4444"; }}
               title="Logout"
             >
               Logout
@@ -683,9 +683,9 @@ Respond with the paper content directly.`;
       <footer
         style={{
           marginTop: 24,
-          background: "rgba(15, 23, 42, 0.4)",
+          background: "rgba(255, 255, 255, 0.6)",
           backdropFilter: "blur(28px)",
-          borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+          borderTop: "1px solid rgba(0, 0, 0, 0.05)",
           padding: "12px 16px",
           transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
           position: "relative",
@@ -706,7 +706,7 @@ Respond with the paper content directly.`;
           <span
             style={{
               fontSize: 9,
-              color: "#dbeafe",
+              color: "#64748b",
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: "0.1em",
@@ -714,10 +714,10 @@ Respond with the paper content directly.`;
           >
             Built by
           </span>
-          <span style={{ color: "white", fontWeight: 700, fontSize: 12 }}>
+          <span style={{ color: "#1e293b", fontWeight: 700, fontSize: 12 }}>
             Ayush Kumar Maurya
           </span>
-          <span style={{ color: "#1e293b", fontSize: 14 }}>|</span>
+          <span style={{ color: "#cbd5e1", fontSize: 14 }}>|</span>
           {[
             { href: "https://github.com/akm45vns-oss", label: "GitHub" },
             {
@@ -732,19 +732,19 @@ Respond with the paper content directly.`;
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                color: "#94a3b8",
+                color: "#64748b",
                 fontSize: 11,
                 fontWeight: 600,
                 textDecoration: "none",
                 transition: "color 0.2s",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#22d3ee")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#94a3b8")}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#3b82f6")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#64748b")}
             >
               {label}
             </a>
           ))}
-          <span style={{ fontSize: 10, color: "#dbeafe", opacity: 0.7 }}>
+          <span style={{ fontSize: 10, color: "#94a3b8", opacity: 0.8 }}>
             © 2026 · AkmEdu45 · Smart Study Platform
           </span>
         </div>

@@ -53,16 +53,16 @@ export function ChapterView({ subject, chapter, curriculumData, notesRead, quizB
 
       {/* Hero Banner Redesign */}
       <div style={{
-        background: "linear-gradient(135deg, rgba(15, 23, 42, 0.7) 0%, rgba(30, 41, 59, 0.7) 100%)",
+        background: "linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 250, 252, 0.8) 100%)",
         backdropFilter: "blur(40px)",
         WebkitBackdropFilter: "blur(40px)",
-        border: "1px solid rgba(255, 255, 255, 0.12)",
+        border: "1px solid rgba(0, 0, 0, 0.05)",
         borderRadius: 32,
         padding: "clamp(32px, 5vw, 56px)",
         marginBottom: 48,
         position: "relative",
         overflow: "hidden",
-        boxShadow: "0 30px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.2)",
+        boxShadow: "0 20px 50px rgba(148,163,184,0.15), inset 0 1px 0 rgba(255,255,255,0.9)",
         textAlign: "center"
       }}>
         {/* Animated Background Orbs */}
@@ -76,15 +76,15 @@ export function ChapterView({ subject, chapter, curriculumData, notesRead, quizB
             alignItems: "center",
             padding: "8px 20px", 
             borderRadius: 100, 
-            background: "rgba(255,255,255,0.06)", 
-            border: "1px solid rgba(255,255,255,0.15)",
+            background: "rgba(59, 130, 246, 0.1)", 
+            border: "1px solid rgba(59, 130, 246, 0.2)",
             fontSize: 12, 
             fontWeight: 800, 
-            color: "#6ee7b7", 
+            color: "#059669", 
             textTransform: "uppercase", 
             letterSpacing: "0.25em", 
             marginBottom: 24,
-            boxShadow: "0 8px 24px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.1)"
+            boxShadow: "0 4px 12px rgba(59, 130, 246, 0.15), inset 0 1px 0 rgba(255,255,255,0.8)"
           }}>
             <span style={{ marginRight: 8, fontSize: 14 }}>{S?.emoji || "📘"}</span>
             {subject}
@@ -95,14 +95,14 @@ export function ChapterView({ subject, chapter, curriculumData, notesRead, quizB
             margin: "0 0 16px", 
             lineHeight: 1.15,
             letterSpacing: "-0.03em",
-            background: "linear-gradient(to right, #ffffff, #94a3b8)",
+            background: "linear-gradient(to right, #1e293b, #475569)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
-            filter: "drop-shadow(0 8px 16px rgba(0,0,0,0.6))"
+            filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.1))"
           }}>
             {chapter}
           </h1>
-          <p style={{ color: "#94a3b8", fontSize: "clamp(14px, 2vw, 16px)", margin: 0, fontWeight: 500, letterSpacing: "-0.01em" }}>
+          <p style={{ color: "#64748b", fontSize: "clamp(14px, 2vw, 16px)", margin: 0, fontWeight: 500, letterSpacing: "-0.01em" }}>
             NCERT Class 12 CBSE — Select a learning module to begin
           </p>
         </div>
@@ -116,10 +116,10 @@ export function ChapterView({ subject, chapter, curriculumData, notesRead, quizB
             else onStartQuiz();
           }}
             style={{
-              background: done ? `linear-gradient(145deg, rgba(255,255,255,0.05) 0%, ${glowColor} 200%)` : "rgba(30, 41, 59, 0.4)",
+              background: done ? `linear-gradient(145deg, rgba(255,255,255,0.95) 0%, ${glowColor} 200%)` : "rgba(255, 255, 255, 0.75)",
               backdropFilter: "blur(24px)",
               WebkitBackdropFilter: "blur(24px)",
-              border: `1px solid ${done ? borderActive : "rgba(255,255,255,0.1)"}`,
+              border: `1px solid ${done ? borderActive : "rgba(0,0,0,0.05)"}`,
               borderRadius: 36,
               padding: "40px 32px",
               textAlign: "left",
@@ -128,32 +128,32 @@ export function ChapterView({ subject, chapter, curriculumData, notesRead, quizB
               gap: 24,
               transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
               cursor: "pointer",
-              boxShadow: done ? `0 20px 50px ${glowColor}, inset 0 1px 0 rgba(255,255,255,0.2)` : "0 16px 40px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08)",
+              boxShadow: done ? `0 20px 50px ${glowColor}, inset 0 1px 0 rgba(255,255,255,0.8)` : "0 12px 32px rgba(148,163,184,0.15), inset 0 1px 0 rgba(255,255,255,0.9)",
               position: "relative",
               overflow: "hidden"
             }}
             onMouseEnter={e => {
               e.currentTarget.style.borderColor = borderActive;
               e.currentTarget.style.transform = "translateY(-8px) scale(1.02)";
-              e.currentTarget.style.boxShadow = `0 30px 70px ${glowColor}, inset 0 1px 0 rgba(255,255,255,0.3)`;
-              if(!done) e.currentTarget.style.background = `linear-gradient(145deg, rgba(255,255,255,0.1) 0%, rgba(30, 41, 59, 0.7) 100%)`;
+              e.currentTarget.style.boxShadow = `0 30px 70px ${glowColor}, inset 0 1px 0 rgba(255,255,255,0.8)`;
+              if(!done) e.currentTarget.style.background = `linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(248, 250, 252, 0.9) 100%)`;
               const iconBox = e.currentTarget.querySelector('.cv-icon-box');
               if(iconBox) {
                 iconBox.style.transform = "scale(1.15) rotate(5deg)";
-                iconBox.style.boxShadow = `0 0 40px ${glowIntense}, inset 0 1px 0 rgba(255,255,255,0.4)`;
-                iconBox.style.border = `1px solid rgba(255,255,255,0.3)`;
+                iconBox.style.boxShadow = `0 12px 30px ${glowIntense}, inset 0 1px 0 rgba(255,255,255,0.9)`;
+                iconBox.style.border = `1px solid rgba(0,0,0,0.05)`;
               }
             }}
             onMouseLeave={e => {
-              e.currentTarget.style.borderColor = done ? borderActive : "rgba(255,255,255,0.1)";
+              e.currentTarget.style.borderColor = done ? borderActive : "rgba(0,0,0,0.05)";
               e.currentTarget.style.transform = "translateY(0) scale(1)";
-              e.currentTarget.style.boxShadow = done ? `0 20px 50px ${glowColor}, inset 0 1px 0 rgba(255,255,255,0.2)` : "0 16px 40px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08)";
-              e.currentTarget.style.background = done ? `linear-gradient(145deg, rgba(255,255,255,0.05) 0%, ${glowColor} 200%)` : "rgba(30, 41, 59, 0.4)";
+              e.currentTarget.style.boxShadow = done ? `0 20px 50px ${glowColor}, inset 0 1px 0 rgba(255,255,255,0.8)` : "0 12px 32px rgba(148,163,184,0.15), inset 0 1px 0 rgba(255,255,255,0.9)";
+              e.currentTarget.style.background = done ? `linear-gradient(145deg, rgba(255,255,255,0.95) 0%, ${glowColor} 200%)` : "rgba(255, 255, 255, 0.75)";
               const iconBox = e.currentTarget.querySelector('.cv-icon-box');
               if(iconBox) {
                 iconBox.style.transform = "scale(1) rotate(0deg)";
-                iconBox.style.boxShadow = `0 12px 24px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1)`;
-                iconBox.style.border = `1px solid rgba(255,255,255,0.15)`;
+                iconBox.style.boxShadow = `0 8px 16px rgba(148,163,184,0.15), inset 0 1px 0 rgba(255,255,255,0.8)`;
+                iconBox.style.border = `1px solid rgba(0,0,0,0.05)`;
               }
             }}>
             
@@ -165,40 +165,40 @@ export function ChapterView({ subject, chapter, curriculumData, notesRead, quizB
               <div className="cv-icon-box" style={{ 
                 width: 72, height: 72, 
                 borderRadius: 24, 
-                background: "rgba(15, 23, 42, 0.7)", 
-                border: "1px solid rgba(255,255,255,0.15)",
+                background: "rgba(255, 255, 255, 0.9)", 
+                border: "1px solid rgba(0,0,0,0.05)",
                 display: "flex", alignItems: "center", justifyContent: "center",
                 fontSize: 36,
-                boxShadow: "0 12px 24px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1)",
+                boxShadow: "0 8px 16px rgba(148,163,184,0.15), inset 0 1px 0 rgba(255,255,255,0.8)",
                 transition: "all 0.5s cubic-bezier(0.16, 1, 0.3, 1)"
               }}>
-                <span style={{ filter: `drop-shadow(0 8px 16px ${glowColor})`, animation: "cvFloat 6s ease-in-out infinite" }}>{emoji}</span>
+                <span style={{ filter: `drop-shadow(0 4px 12px ${glowColor})`, animation: "cvFloat 6s ease-in-out infinite" }}>{emoji}</span>
               </div>
 
               {done && (
                 <div style={{
                   fontSize: 13,
-                  color: "white",
+                  color: "#1e293b",
                   fontWeight: 800,
-                  background: `linear-gradient(135deg, ${accentColor}, #0f172a)`,
+                  background: `linear-gradient(135deg, ${glowColor}, rgba(255,255,255,0.8))`,
                   padding: "8px 16px",
                   borderRadius: 100,
-                  boxShadow: `0 8px 24px ${glowColor}`,
+                  boxShadow: `0 4px 12px ${glowColor}`,
                   border: `1px solid ${borderActive}`,
                   display: "flex",
                   alignItems: "center",
                   gap: 8,
                   letterSpacing: "0.02em"
                 }}>
-                  <div style={{ background: "white", color: accentColor, borderRadius: "50%", width: 16, height: 16, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11 }}>✓</div>
+                  <div style={{ background: "white", color: accentColor, borderRadius: "50%", width: 16, height: 16, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.1))" }}>✓</div>
                   {doneLabel}
                 </div>
               )}
             </div>
             
             <div style={{ position: "relative", zIndex: 1, marginTop: 12 }}>
-              <div style={{ fontWeight: 800, color: "#f8fafc", fontSize: 24, letterSpacing: "-0.02em", marginBottom: 10 }}>{title}</div>
-              <div style={{ fontSize: 15, color: "#94a3b8", lineHeight: 1.6, fontWeight: 500 }}>{desc}</div>
+              <div style={{ fontWeight: 800, color: "#1e293b", fontSize: 24, letterSpacing: "-0.02em", marginBottom: 10 }}>{title}</div>
+              <div style={{ fontSize: 15, color: "#475569", lineHeight: 1.6, fontWeight: 500 }}>{desc}</div>
             </div>
           </button>
         ))}
