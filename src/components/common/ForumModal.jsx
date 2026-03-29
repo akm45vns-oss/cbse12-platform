@@ -13,68 +13,104 @@ import {
 } from "../../utils/forum";
 import { ImageUploader } from "./ImageUploader";
 
-export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapter = "" }) {
+export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapter = "", currentUser = "" }) {
   const [activeTab, setActiveTab] = useState("recent"); // recent, trending, myChapter, search
   const [questions, setQuestions] = useState([]);
   const [selectedQuestion, setSelectedQuestion] = useState(null);
+  const [answers, setAnswers] = useState([]);
   const [newQuestion, setNewQuestion] = useState("");
   const [newAnswer, setNewAnswer] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [showPostForm, setShowPostForm] = useState(false);
   const [questionImage, setQuestionImage] = useState(""); // Image URL for question
   const [answerImage, setAnswerImage] = useState(""); // Image URL for answer
-  const stats = getForumStats();
+  const [stats, setStats] = useState({ totalQuestions: 0, totalAnswers: 0 });
+  const [isLoading, setIsLoading] = useState(false);
+
+  // Load forum stats
+  useEffect(() => {
+    const loadStats = async () => {
+      const data = await getForumStats();
+      setStats(data);
+    };
+    loadStats();
+  }, []);
 
   // Load questions based on active tab
   useEffect(() => {
     if (!isOpen) return;
 
-    let loaded = [];
-    if (activeTab === "recent") {
-      loaded = getQuestions(20);
-    } else if (activeTab === "trending") {
-      loaded = getTrendingQuestions();
-    } else if (activeTab === "myChapter" && currentSubject && currentChapter) {
-      loaded = getQuestionsForChapter(currentSubject, currentChapter);
-    } else if (activeTab === "search" && searchQuery) {
-      loaded = searchQuestions(searchQuery);
-    }
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setQuestions(loaded);
+    const loadQuestions = async () => {
+      setIsLoading(true);
+      let loaded = [];
+      if (activeTab === "recent") {
+        loaded = await getQuestions(20);
+      } else if (activeTab === "trending") {
+        loaded = await getTrendingQuestions();
+      } else if (activeTab === "myChapter" && currentSubject && currentChapter) {
+        loaded = await getQuestionsForChapter(currentSubject, currentChapter);
+      } else if (activeTab === "search" && searchQuery) {
+        loaded = await searchQuestions(searchQuery);
+      }
+      setQuestions(loaded);
+      setIsLoading(false);
+    };
+    loadQuestions();
   }, [isOpen, activeTab, searchQuery, currentSubject, currentChapter]);
 
-  const handlePostQuestion = () => {
+  // Load answers when question is selected
+  useEffect(() => {
+    if (!selectedQuestion) return;
+
+    const loadAnswers = async () => {
+      const data = await getAnswers(selectedQuestion.id);
+      setAnswers(data);
+    };
+    loadAnswers();
+  }, [selectedQuestion]);
+
+  const handlePostQuestion = async () => {
     if (!newQuestion.trim()) return;
 
-    postQuestion(newQuestion, currentSubject, currentChapter, questionImage);
+    await postQuestion(newQuestion, currentSubject, currentChapter, questionImage, currentUser || "Anonymous Student");
     setNewQuestion("");
     setQuestionImage("");
     setShowPostForm(false);
     
     // Reload questions
-    setQuestions(getQuestions(20));
+    const reloaded = await getQuestions(20);
+    setQuestions(reloaded);
+    
+    // Update stats
+    const newStats = await getForumStats();
+    setStats(newStats);
   };
 
-  const handlePostAnswer = () => {
+  const handlePostAnswer = async () => {
     if (!newAnswer.trim() || !selectedQuestion) return;
 
-    postAnswer(selectedQuestion.id, newAnswer, answerImage);
+    await postAnswer(selectedQuestion.id, newAnswer, answerImage, currentUser || "Anonymous Student");
     setNewAnswer("");
     setAnswerImage("");
     
     // Reload question with answers
-    incrementViews(selectedQuestion.id);
-    const updated = getQuestions(100).find((q) => q.id === selectedQuestion.id);
+    await incrementViews(selectedQuestion.id);
+    const allQuestions = await getQuestions(100);
+    const updated = allQuestions.find((q) => q.id === selectedQuestion.id);
     setSelectedQuestion(updated);
+    
+    // Update stats
+    const newStats = await getForumStats();
+    setStats(newStats);
   };
 
-  const handleHelpful = (answerId) => {
+  const handleHelpful = async (answerId) => {
     if (!selectedQuestion) return;
-    markHelpful(selectedQuestion.id, answerId);
+    await markHelpful(selectedQuestion.id, answerId);
     
-    // Reload question
-    const updated = getQuestions(100).find((q) => q.id === selectedQuestion.id);
-    setSelectedQuestion(updated);
+    // Reload answers
+    const data = await getAnswers(selectedQuestion.id);
+    setAnswers(data);
   };
 
   if (!isOpen) return null;
@@ -333,9 +369,9 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                   questions.map((q) => (
                     <button
                       key={q.id}
-                      onClick={() => {
+                      onClick={async () => {
                         setSelectedQuestion(q);
-                        incrementViews(q.id);
+                        await incrementViews(q.id);
                       }}
                       style={{
                         background: "white",
@@ -483,9 +519,9 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                     marginBottom: 10,
                   }}
                 >
-                  💭 Answers ({getAnswers(selectedQuestion.id).length})
+                  💭 Answers ({answers.length})
                 </h3>
-                {getAnswers(selectedQuestion.id).length === 0 ? (
+                {answers.length === 0 ? (
                   <div
                     style={{
                       background: "#f8fafc",
@@ -498,7 +534,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                     No answers yet. Be the first to help!
                   </div>
                 ) : (
-                  getAnswers(selectedQuestion.id).map((ans) => (
+                  answers.map((ans) => (
                     <div
                       key={ans.id}
                       style={{
@@ -533,7 +569,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                           gap: 12,
                         }}
                       >
-                        <span>{ans.author}</span>
+                        <span>Posted by {ans.author}</span>
                         <button
                           onClick={() => handleHelpful(ans.id)}
                           style={{

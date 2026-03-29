@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ForumModal } from "./ForumModal";
 
-export function FloatingForumButton({ currentSubject = "", currentChapter = "" }) {
+export function FloatingForumButton({ currentSubject = "", currentChapter = "", currentUser = "" }) {
   const [isForumOpen, setIsForumOpen] = useState(false);
 
   return (
@@ -46,6 +46,7 @@ export function FloatingForumButton({ currentSubject = "", currentChapter = "" }
         onClose={() => setIsForumOpen(false)}
         currentSubject={currentSubject}
         currentChapter={currentChapter}
+        currentUser={currentUser}
       />
     </>
   );

@@ -754,7 +754,11 @@ Respond with the paper content directly.`;
       </footer>
 
       {/* Floating Forum Button - Always visible */}
-      <FloatingForumButton currentSubject={nav.subject} currentChapter={nav.chapter} />
+      <FloatingForumButton 
+        currentSubject={nav.subject} 
+        currentChapter={nav.chapter}
+        currentUser={auth.currentUser}
+      />
     </div>
   );
 }
