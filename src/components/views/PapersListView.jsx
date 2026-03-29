@@ -1,20 +1,21 @@
 import { Badge, LoadingScreen } from "../common";
 import { useState, useEffect } from "react";
-import { getSamplePapers } from "../../utils/supabase";
-
 export function PapersListView({ subject, curriculumData, loading, loadMsg, loadEmoji, onSelectPaper }) {
   const S = curriculumData;
   const [papers, setPapers] = useState([]);
   const [papersLoading, setPapersLoading] = useState(true);
 
   useEffect(() => {
-    const loadPapers = async () => {
-      setPapersLoading(true);
-      const availablePapers = await getSamplePapers(subject);
-      setPapers(availablePapers);
-      setPapersLoading(false);
-    };
-    loadPapers();
+    const isPracticalSubject = ["Physics", "Chemistry", "Biology", "Computer Science", "Physical Education"].includes(subject);
+    const marks = isPracticalSubject ? 70 : 80;
+    setPapers([
+      { set_number: 1, total_marks: marks },
+      { set_number: 2, total_marks: marks },
+      { set_number: 3, total_marks: marks },
+      { set_number: 4, total_marks: marks },
+      { set_number: 5, total_marks: marks }
+    ]);
+    setPapersLoading(false);
   }, [subject]);
 
   if (papersLoading || loading) {

@@ -58,11 +58,14 @@ export function getQuizSubmissions() {
 export function getWeakTopics(limit = 5) {
   const submissions = getQuizSubmissions();
   const topicMap = {};
+  const ignoreWords = new Set(["Which", "What", "Why", "How", "When", "Who", "Where", "The", "A", "An", "In", "On", "At", "To", "Is", "Are", "Do", "Does", "Did", "As", "If", "Identify", "Consider", "According"]);
 
   // Aggregate wrong topics across all submissions
   submissions.forEach(sub => {
     sub.wrongTopics.forEach(topic => {
-      topicMap[topic] = (topicMap[topic] || 0) + 1;
+      if (topic && topic.length > 2 && !ignoreWords.has(topic.split(' ')[0])) {
+        topicMap[topic] = (topicMap[topic] || 0) + 1;
+      }
     });
   });
 
@@ -146,8 +149,21 @@ export function getQuizReport(subject, chapter) {
 
 function extractTopicFromQuestion(questionText) {
   // Extract possible topic by finding capitalized words (simple heuristic)
+  const ignoreWords = new Set(["Which", "What", "Why", "How", "When", "Who", "Where", "The", "A", "An", "In", "On", "At", "To", "Is", "Are", "Do", "Does", "Did", "As", "If", "Identify", "Consider", "According"]);
   const matches = questionText.match(/\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b/g);
-  return matches ? matches[0] : null;
+  
+  if (matches) {
+    const validTopics = matches.filter(m => !ignoreWords.has(m.split(' ')[0]));
+    if (validTopics.length > 0) return validTopics[0];
+    
+    // Fallback: extract the longest word in the question that isn't a stopword
+    const words = questionText.replace(/[^\w\s]/g, '').split(/\s+/).filter(w => w.length > 4 && w[0] === w[0].toUpperCase());
+    if (words.length > 0) {
+      return words.reduce((a, b) => a.length > b.length ? a : b);
+    }
+  }
+  
+  return null;
 }
 
 export function clearAllSubmissions() {

@@ -182,6 +182,23 @@ export const globalStyles = `
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
   ::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.2); }
+  
+  /* ===== CYBER NEON GLOBAL ANIMATIONS ===== */
+  @keyframes globalBackgroundGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  @keyframes orbPulse1 {
+    0% { transform: scale(1) translate(0, 0); opacity: 0.5; }
+    50% { transform: scale(1.3) translate(5vw, 5vh); opacity: 0.8; }
+    100% { transform: scale(1) translate(0, 0); opacity: 0.5; }
+  }
+  @keyframes orbPulse2 {
+    0% { transform: scale(1) translate(0, 0); opacity: 0.5; }
+    50% { transform: scale(1.4) translate(-5vw, -5vh); opacity: 0.8; }
+    100% { transform: scale(1) translate(0, 0); opacity: 0.5; }
+  }
 `;
 
 export const authStyles = `

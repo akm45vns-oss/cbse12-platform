@@ -33,51 +33,55 @@ serve(async (req) => {
 
     // Determine email subject and content based on type
     const isPasswordReset = type === "password_reset";
-    const subject = isPasswordReset ? "Your AkmEdu45 Password Reset Code" : "Your AkmEdu45 Verification Code";
-    const plainText = isPasswordReset
-      ? `Your password reset code is: ${otp}\n\nThis code will expire in 15 minutes.\n\nIf you didn't request this, please ignore this email.`
-      : `Welcome to AkmEdu45! Your verification code is: ${otp}\n\nThis code will expire in 15 minutes.\n\nIf you didn't request this code, please ignore this email.`;
+    const subject = "Your verification code";
+    const plainText = `
+Hi,
+
+Your verification code is: ${otp}
+
+This code will expire in 15 minutes.
+
+If you did not request this, please ignore this email.
+
+Thanks,
+Ayush
+`;
 
     const htmlContent = isPasswordReset
       ? `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #0369a1; text-align: center;">Password Reset Request</h2>
-          <p style="color: #64748b; font-size: 16px;">
-            You requested to reset your AkmEdu45 password. Use the code below:
-          </p>
-          <div style="background: #f0f9fc; border: 2px solid #06b6d4; border-radius: 8px; padding: 20px; text-align: center; margin: 20px 0;">
-            <code style="font-size: 28px; font-weight: bold; color: #0369a1; letter-spacing: 6px;">
-              ${otp}
-            </code>
-          </div>
-          <p style="color: #64748b; font-size: 14px;">
-            This code will expire in <strong>15 minutes</strong>.
-          </p>
-          <p style="color: #94a3b8; font-size: 12px; margin-top: 20px;">
-            If you didn't request a password reset, please ignore this email.
-          </p>
-        </div>
-      `
-      : `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #0369a1; text-align: center;">Email Verification</h2>
-          <p style="color: #64748b; font-size: 16px;">
-            Welcome to AkmEdu45! Your verification code is:
-          </p>
-          <div style="background: #f0f9fc; border: 2px solid #06b6d4; border-radius: 8px; padding: 20px; text-align: center; margin: 20px 0;">
-            <code style="font-size: 28px; font-weight: bold; color: #0369a1; letter-spacing: 6px;">
-              ${otp}
-            </code>
-          </div>
-          <p style="color: #64748b; font-size: 14px;">
-            This code will expire in <strong>15 minutes</strong>.
-          </p>
-          <p style="color: #94a3b8; font-size: 12px; margin-top: 20px;">
-            If you didn't request this code, please ignore this email.
-          </p>
-        </div>
-      `;
+<p>Hi,</p>
 
+<p>Your password reset code is:</p>
+
+<p><strong>${otp}</strong></p>
+
+<p>This code will expire in 15 minutes.</p>
+
+<p>If you did not request this, please ignore this email.</p>
+
+<p>Thanks,<br>Ayush</p>
+
+<p style="font-size:12px;color:gray;">
+You are receiving this email because you requested a password reset.
+</p>
+`
+      : `
+<p>Hi,</p>
+
+<p>Your verification code is:</p>
+
+<p><strong>${otp}</strong></p>
+
+<p>This code will expire in 15 minutes.</p>
+
+<p>If you did not request this, please ignore this email.</p>
+
+<p>Thanks,<br>Ayush</p>
+
+<p style="font-size:12px;color:gray;">
+You are receiving this email because you signed up on our platform.
+</p>
+`;
     const response = await fetch("https://api.sendgrid.com/v3/mail/send", {
       method: "POST",
       headers: {
@@ -94,7 +98,7 @@ serve(async (req) => {
           email: "noreply@akmedu45.xyz",
           name: "AkmEdu45",
         },
-        subject: subject,
+        subject: "Quick check",
         content: [
           {
             type: "text/plain",

@@ -196,18 +196,20 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
 
   const genPaper = async (subj, setNum) => {
     setLoading(true);
-    setLoadMsg(`Loading Sample Paper Set ${setNum} for ${subj}`);
+    setLoadMsg(`Generating Sample Paper Set ${setNum} for ${subj}`);
     setLoadEmoji("📄");
     setPaper("");
     try {
-      const paperData = await getSamplePaper(subj, setNum);
-      if (paperData) {
-        setPaper(paperData.content);
-      } else {
-        setPaper("❌ Sample paper not found. Please try another set.");
-      }
+      const prompt = `Generate a realistic, full-length Class 12 CBSE Board Examination Sample Paper for ${subj} (Set ${setNum}).
+Format the output with appropriate sections (Section A, B, C, D, etc.), marks distribution, and general instructions.
+Include a variety of question types (MCQ, Short Answer, Long Answer, Case-based) as per the latest CBSE pattern.
+Use professional formatting with clear headings. Only provide the question paper, DO NOT provide answers.
+Respond with the paper content directly.`;
+      
+      const text = await callClaude(prompt, 4000);
+      setPaper(text);
     } catch (err) {
-      setPaper("❌ Error loading sample paper. Please try again.");
+      setPaper("❌ Error generating sample paper. Please try again.");
     }
     setLoading(false);
   };
@@ -280,13 +282,15 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
       style={{
         minHeight: "100vh",
         width: "100%",
-        background: "#0f172a",
+        background: "linear-gradient(-45deg, #2a0845, #6441A5, #0f172a, #0f3443, #34e89e)",
+        backgroundSize: "400% 400%",
+        animation: "globalBackgroundGradient 20s ease infinite",
         position: "relative",
         fontFamily: "'Inter', system-ui, sans-serif",
       }}
     >
-      <div style={{ position: "fixed", top: "-10%", left: "-10%", width: "50vw", height: "50vw", background: "radial-gradient(circle, rgba(6,182,212,0.15) 0%, transparent 60%)", filter: "blur(100px)", zIndex: 0, pointerEvents: "none" }} />
-      <div style={{ position: "fixed", bottom: "-20%", right: "-10%", width: "60vw", height: "60vw", background: "radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 60%)", filter: "blur(120px)", zIndex: 0, pointerEvents: "none" }} />
+      <div style={{ position: "fixed", top: "-10%", left: "-10%", width: "50vw", height: "50vw", background: "radial-gradient(circle, rgba(236, 72, 153, 0.25) 0%, transparent 60%)", filter: "blur(100px)", zIndex: 0, pointerEvents: "none", animation: "orbPulse1 12s infinite alternate" }} />
+      <div style={{ position: "fixed", bottom: "-20%", right: "-10%", width: "60vw", height: "60vw", background: "radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, transparent 60%)", filter: "blur(120px)", zIndex: 0, pointerEvents: "none", animation: "orbPulse2 15s infinite alternate-reverse" }} />
       
       <style>{globalStyles}</style>
 
@@ -516,9 +520,10 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
                 nav.navigateToChapter(chapter);
               }}
               onGeneratePaper={() => {
-                setSelectedPaperSet(null);
+                setSelectedPaperSet(1);
                 setPaper("");
                 nav.navigate("paper");
+                genPaper(nav.subject, 1);
               }}
             />
           </Suspense>
@@ -645,7 +650,10 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
                 subject={nav.subject}
                 curriculumData={S}
                 theme={theme}
-                onRegenerate={() => setSelectedPaperSet(null)}
+                onRegenerate={() => {
+                  setSelectedPaperSet(null);
+                  nav.navigate("subject");
+                }}
               />
             )}
           </Suspense>
