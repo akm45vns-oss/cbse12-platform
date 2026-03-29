@@ -1,7 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 import { generateOTP, getOTPExpiration, isOTPExpired } from "./emailVerification";
 import { sendOTPEmail, sendPasswordResetEmail } from "./emailService";
-import { verifyPassword } from "./auth";
+import { verifyPassword, isBcryptHash, createSHA256Hash, hashPassword } from "./auth";
 
 // ===== SUPABASE CONFIG =====
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
@@ -12,12 +12,13 @@ export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 // ===== SUPABASE OPERATIONS =====
 /**
  * Login user with username/email and password
- * Uses bcrypt password verification for security
+ * Supports both bcrypt and old SHA-256 hashes (backward compatible)
+ * Auto-upgrades old SHA-256 users to bcrypt on successful login
  * @param {string} usernameOrEmail - Username or email
- * @param {string} passwordHash - Bcrypt password hash to verify against
+ * @param {string} passwordPlainText - Plain text password
  * @returns {Promise<object>} { error: string|null, username: string|null }
  */
-export async function loginUser(usernameOrEmail, passwordHash) {
+export async function loginUser(usernameOrEmail, passwordPlainText) {
   const input = usernameOrEmail.trim().toLowerCase();
 
   try {
@@ -32,11 +33,47 @@ export async function loginUser(usernameOrEmail, passwordHash) {
       return { error: "Invalid username/email or password", username: null };
     }
 
-    // Verify password using bcrypt comparison
-    const isPasswordValid = await verifyPassword(passwordHash, data.password_hash);
+    let isPasswordValid = false;
+    let shouldUpgradeHash = false;
+
+    // Check if hash is bcrypt or old SHA-256
+    if (isBcryptHash(data.password_hash)) {
+      // New bcrypt hash - use bcrypt verification
+      isPasswordValid = await verifyPassword(passwordPlainText, data.password_hash);
+    } else {
+      // Old SHA-256 hash - compute SHA-256 and compare
+      try {
+        const sha256Hash = await createSHA256Hash(passwordPlainText);
+        isPasswordValid = sha256Hash === data.password_hash;
+        
+        // Mark for upgrade if password is correct
+        if (isPasswordValid) {
+          shouldUpgradeHash = true;
+          console.log(`[AUTH] Will upgrade ${data.username} from SHA-256 to bcrypt`);
+        }
+      } catch (hashError) {
+        console.error('SHA-256 hash creation failed:', hashError);
+        isPasswordValid = false;
+      }
+    }
 
     if (!isPasswordValid) {
       return { error: "Invalid username/email or password", username: null };
+    }
+
+    // Auto-upgrade old SHA-256 hash to bcrypt
+    if (shouldUpgradeHash) {
+      try {
+        const newHash = await hashPassword(passwordPlainText);
+        await supabase
+          .from("users")
+          .update({ password_hash: newHash })
+          .eq("username", data.username);
+        console.log(`[AUTH] Successfully upgraded ${data.username} to bcrypt`);
+      } catch (upgradeError) {
+        console.error('Failed to upgrade password hash:', upgradeError);
+        // Continue login even if upgrade fails
+      }
     }
 
     // Update last login timestamp

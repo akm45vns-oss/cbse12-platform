@@ -28,6 +28,31 @@ export async function verifyPassword(password, hash) {
   }
 }
 
+/**
+ * BACKWARD COMPATIBILITY: Create old SHA-256 hash for existing users
+ * @param {string} password - Plain text password
+ * @returns {string} SHA-256 hex hash
+ * @private
+ */
+export function createSHA256Hash(password) {
+  const enc = new TextEncoder();
+  const hashBuffer = crypto.subtle.digest("SHA-256", enc.encode(password));
+  return hashBuffer.then(buf => 
+    Array.from(new Uint8Array(buf))
+      .map(b => b.toString(16).padStart(2, "0"))
+      .join("")
+  );
+}
+
+/**
+ * Check if a hash is bcrypt (starts with $2a$, $2b$, or $2y$)
+ * @param {string} hash - Hash to check
+ * @returns {boolean} True if hash is bcrypt
+ */
+export function isBcryptHash(hash) {
+  return /^\$2[aby]\$/.test(hash);
+}
+
 // ===== VALIDATION HELPERS =====
 export function validateUsername(username) {
   const u = username.trim().toLowerCase();

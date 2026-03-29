@@ -73,8 +73,8 @@ export function useAuth() {
     const passwordErr = validatePassword(credentials.password);
     if (passwordErr) return setError(passwordErr);
 
-    const hashed = await hashPassword(credentials.password);
-    const loginResult = await loginUser(u, hashed);
+    // Send plain text password to loginUser (hashing is done inside)
+    const loginResult = await loginUser(u, credentials.password);
 
     if (loginResult.error) {
       // Record failed attempt
