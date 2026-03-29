@@ -1,8 +1,31 @@
+import bcrypt from 'bcryptjs';
+
 // ===== PASSWORD HASHING =====
+// Using bcryptjs for secure password hashing with salt
+// Cost factor: 12 (provides good balance between security and performance)
 export async function hashPassword(password) {
-  const enc = new TextEncoder();
-  const buf = await crypto.subtle.digest("SHA-256", enc.encode(password));
-  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+  try {
+    const salt = await bcrypt.genSalt(12);
+    return await bcrypt.hash(password, salt);
+  } catch (error) {
+    console.error('Error hashing password:', error);
+    throw new Error('Password hashing failed');
+  }
+}
+
+/**
+ * Verify a password against its bcrypt hash
+ * @param {string} password - Plain text password to verify
+ * @param {string} hash - Bcrypt hash to compare against
+ * @returns {Promise<boolean>} True if password matches hash
+ */
+export async function verifyPassword(password, hash) {
+  try {
+    return await bcrypt.compare(password, hash);
+  } catch (error) {
+    console.error('Error verifying password:', error);
+    return false;
+  }
 }
 
 // ===== VALIDATION HELPERS =====

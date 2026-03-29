@@ -1,6 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 import { generateOTP, getOTPExpiration, isOTPExpired } from "./emailVerification";
 import { sendOTPEmail, sendPasswordResetEmail } from "./emailService";
+import { verifyPassword } from "./auth";
 
 // ===== SUPABASE CONFIG =====
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
@@ -9,26 +10,46 @@ const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // ===== SUPABASE OPERATIONS =====
+/**
+ * Login user with username/email and password
+ * Uses bcrypt password verification for security
+ * @param {string} usernameOrEmail - Username or email
+ * @param {string} passwordHash - Bcrypt password hash to verify against
+ * @returns {Promise<object>} { error: string|null, username: string|null }
+ */
 export async function loginUser(usernameOrEmail, passwordHash) {
   const input = usernameOrEmail.trim().toLowerCase();
 
-  // Try to login with username or email
-  const { data, error } = await supabase
-    .from("users")
-    .select("username")
-    .or(`username.eq.${input},email.eq.${input}`)
-    .eq("password_hash", passwordHash)
-    .single();
+  try {
+    // Fetch user by username or email
+    const { data, error } = await supabase
+      .from("users")
+      .select("username, password_hash")
+      .or(`username.eq.${input},email.eq.${input}`)
+      .single();
 
-  if (error || !data) return { error: "Invalid username/email or password", username: null };
+    if (error || !data) {
+      return { error: "Invalid username/email or password", username: null };
+    }
 
-  // Update last login
-  await supabase
-    .from("users")
-    .update({ last_login: new Date().toISOString() })
-    .eq("username", data.username);
+    // Verify password using bcrypt comparison
+    const isPasswordValid = await verifyPassword(passwordHash, data.password_hash);
 
-  return { error: null, username: data.username };
+    if (!isPasswordValid) {
+      return { error: "Invalid username/email or password", username: null };
+    }
+
+    // Update last login timestamp
+    await supabase
+      .from("users")
+      .update({ last_login: new Date().toISOString() })
+      .eq("username", data.username);
+
+    return { error: null, username: data.username };
+  } catch (error) {
+    console.error('Login error:', error);
+    return { error: "Login failed. Please try again.", username: null };
+  }
 }
 
 export async function registerUser(username, passwordHash, email, name, emailVerified = false) {

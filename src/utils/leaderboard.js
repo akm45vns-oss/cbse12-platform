@@ -1,5 +1,50 @@
 import { supabase } from './supabase';
 
+// ===== LEADERBOARD CACHING =====
+// Cache configuration: 5 minutes TTL to balance freshness and performance
+const LEADERBOARD_CACHE_TTL = 5 * 60 * 1000; // 5 minutes in milliseconds
+const leaderboardCache = new Map();
+
+/**
+ * Get cache key for a leaderboard query
+ * @private
+ */
+function getCacheKey(subject, chapter, limit) {
+  return `${subject}:${chapter || 'all'}:${limit}`;
+}
+
+/**
+ * Get cached data if available and not expired
+ * @private
+ */
+function getCachedData(cacheKey) {
+  const cached = leaderboardCache.get(cacheKey);
+  if (cached && Date.now() - cached.timestamp < LEADERBOARD_CACHE_TTL) {
+    console.log(`[leaderboard] Cache hit for ${cacheKey}`);
+    return cached.data;
+  }
+  return null;
+}
+
+/**
+ * Store data in cache with timestamp
+ * @private
+ */
+function setCachedData(cacheKey, data) {
+  leaderboardCache.set(cacheKey, {
+    data,
+    timestamp: Date.now()
+  });
+}
+
+/**
+ * Clear leaderboard cache (useful for manual refresh)
+ */
+export function clearLeaderboardCache() {
+  leaderboardCache.clear();
+  console.log('[leaderboard] Cache cleared');
+}
+
 /**
  * Get leaderboard data ranked by average percentage score
  * @param {string} subject - The subject to get leaderboard for
@@ -8,6 +53,14 @@ import { supabase } from './supabase';
  * @returns {Promise<Array>} Array of leaderboard entries with rank, username, avgPercentage, attempts, bestScore
  */
 export async function getLeaderboardData(subject, chapter = null, limit = 25) {
+  const cacheKey = getCacheKey(subject, chapter, limit);
+  
+  // Check cache first
+  const cachedData = getCachedData(cacheKey);
+  if (cachedData) {
+    return cachedData;
+  }
+
   try {
     let query = supabase
       .from('quiz_submissions')
@@ -67,6 +120,8 @@ export async function getLeaderboardData(subject, chapter = null, limit = 25) {
         ...entry
       }));
 
+    // Cache the result
+    setCachedData(cacheKey, leaderboard);
     return leaderboard;
   } catch (error) {
     console.error('[getLeaderboardData] Unexpected error:', error);
@@ -83,67 +138,21 @@ export async function getLeaderboardData(subject, chapter = null, limit = 25) {
  */
 export async function getUserRank(username, subject, chapter = null) {
   try {
-    let query = supabase
-      .from('quiz_submissions')
-      .select('username, score')
-      .eq('subject', subject);
-
-    if (chapter) {
-      query = query.eq('chapter', chapter);
-    }
-
-    const { data: submissions, error } = await query;
-
-    if (error) {
-      console.error('[getUserRank] Error fetching submissions:', error);
-      return null;
-    }
-
-    if (!submissions || submissions.length === 0) {
-      return null;
-    }
-
-    // Group by username and calculate statistics
-    const userStats = {};
-    submissions.forEach(submission => {
-      if (!userStats[submission.username]) {
-        userStats[submission.username] = {
-          username: submission.username,
-          scores: []
-        };
-      }
-      userStats[submission.username].scores.push(submission.score);
-    });
-
-    // Convert to array and calculate aggregate metrics
-    const allUsers = Object.values(userStats)
-      .map(stat => ({
-        username: stat.username,
-        avgPercentage: (stat.scores.reduce((a, b) => a + b, 0) / stat.scores.length).toFixed(2),
-        bestScore: Math.max(...stat.scores)
-      }))
-      .sort((a, b) => {
-        // Sort by average percentage (descending)
-        if (b.avgPercentage !== a.avgPercentage) {
-          return parseFloat(b.avgPercentage) - parseFloat(a.avgPercentage);
-        }
-        // Tie-breaker: best score
-        return b.bestScore - a.bestScore;
-      });
-
-    // Find user's rank
-    const userIndex = allUsers.findIndex(u => u.username === username);
-
-    if (userIndex === -1) {
+    // Get full leaderboard (which is cached), then find user in it
+    const leaderboard = await getLeaderboardData(subject, chapter, 1000); // Get more to find user
+    
+    const userEntry = leaderboard.find(entry => entry.username === username);
+    
+    if (!userEntry) {
       return null; // User has no submissions
     }
 
     return {
-      rank: userIndex + 1,
-      username: allUsers[userIndex].username,
-      avgPercentage: allUsers[userIndex].avgPercentage,
-      bestScore: allUsers[userIndex].bestScore,
-      totalUsers: allUsers.length
+      rank: userEntry.rank,
+      username: userEntry.username,
+      avgPercentage: userEntry.avgPercentage,
+      bestScore: userEntry.bestScore,
+      totalUsers: leaderboard.length
     };
   } catch (error) {
     console.error('[getUserRank] Unexpected error:', error);
