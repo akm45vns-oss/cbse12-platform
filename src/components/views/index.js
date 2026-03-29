@@ -9,3 +9,4 @@ export { PaperView } from "./PaperView";
 export { ProgressView } from "./ProgressView";
 export { StatsView } from "./StatsView";
 export { ProfileView } from "./ProfileView";
+export { default as LeaderboardView } from "./LeaderboardView";

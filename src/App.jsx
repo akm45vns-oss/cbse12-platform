@@ -10,7 +10,7 @@ import { getCachedNotes, cacheNotes } from "./utils/cacheManager";
 import { createDebouncedQuery } from "./utils/queryOptimization";
 import { validateQuestion } from "./components/views/QuizView";
 // Eager load critical views, lazy load others
-import { AuthView, DashboardView, QuizSetsView } from "./components/views";
+import { AuthView, DashboardView, QuizSetsView, LeaderboardView } from "./components/views";
 const SubjectView = lazy(() => import("./components/views/SubjectView").then(m => ({ default: m.SubjectView })));
 const ChapterView = lazy(() => import("./components/views/ChapterView").then(m => ({ default: m.ChapterView })));
 const NotesView = lazy(() => import("./components/views/NotesView").then(m => ({ default: m.NotesView })));
@@ -435,6 +435,30 @@ Respond with the paper content directly.`;
               <span style={{ display: "none" }} className="nav-btn-text">Progress</span>
             </button>
             <button
+              onClick={() => nav.navigate("leaderboard")}
+              style={{
+                background: "rgba(0, 0, 0, 0.03)",
+                border: "1px solid rgba(0, 0, 0, 0.06)",
+                borderRadius: 8,
+                padding: "8px 12px",
+                color: "#475569",
+                fontWeight: 600,
+                fontSize: 13,
+                display: "flex",
+                alignItems: "center",
+                gap: 6,
+                minHeight: "40px",
+                whiteSpace: "nowrap",
+                transition: "all 0.2s"
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background="rgba(0,0,0,0.06)"; e.currentTarget.style.color="#1e293b"; }}
+              onMouseLeave={e => { e.currentTarget.style.background="rgba(0,0,0,0.03)"; e.currentTarget.style.color="#475569"; }}
+              title="Leaderboard"
+            >
+              <span style={{ fontSize: 16 }}>🏆</span>
+              <span style={{ display: "none" }} className="nav-btn-text">Leaderboard</span>
+            </button>
+            <button
               onClick={() => nav.navigate("profile")}
               style={{
                 display: "flex", alignItems: "center", gap: 8, minHeight: "40px",
@@ -678,6 +702,12 @@ Respond with the paper content directly.`;
         {nav.view === "stats" && (
           <Suspense fallback={<LoadingFallback />}>
             <StatsView theme={theme} />
+          </Suspense>
+        )}
+
+        {nav.view === "leaderboard" && (
+          <Suspense fallback={<LoadingFallback />}>
+            <LeaderboardView />
           </Suspense>
         )}
       </div>

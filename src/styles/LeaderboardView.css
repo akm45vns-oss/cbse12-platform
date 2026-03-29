@@ -1,0 +1,495 @@
+/* LeaderboardView.css */
+
+.leaderboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.leaderboard-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.leaderboard-header h1 {
+  font-size: 2.5em;
+  margin: 0 0 10px 0;
+  font-weight: 800;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-header .subtitle {
+  font-size: 1.1em;
+  opacity: 0.9;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Tabs for view type selection */
+.leaderboard-tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1em;
+}
+
+.tab-button:hover {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tab-button.active {
+  background: white;
+  color: #667eea;
+  border-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Subject Selector */
+.leaderboard-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.leaderboard-selector label {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.subject-select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid white;
+  background: white;
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1em;
+  min-width: 200px;
+  transition: all 0.3s ease;
+}
+
+.subject-select:hover,
+.subject-select:focus {
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-color: #f0f0f0;
+}
+
+/* Chapter Selector Grid */
+.chapter-selector {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  backdrop-filter: blur(10px);
+}
+
+.chapter-label {
+  color: white;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  font-size: 1.05em;
+}
+
+.chapters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.chapters-grid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chapters-grid::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.chapters-grid::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.chapters-grid::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.chapter-button {
+  padding: 8px 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.95em;
+  text-wrap: wrap;
+}
+
+.chapter-button:hover {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.chapter-button.active {
+  background: white;
+  color: #667eea;
+  border-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* User Rank Card */
+.user-rank-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  animation: slideInDown 0.4s ease;
+}
+
+.rank-badge {
+  font-size: 2.5em;
+  font-weight: 800;
+  color: white;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(245, 87, 108, 0.4);
+}
+
+.rank-info {
+  flex: 1;
+}
+
+.rank-username {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.rank-score {
+  font-size: 1.8em;
+  color: #667eea;
+  font-weight: 800;
+}
+
+.rank-meta {
+  font-size: 0.9em;
+  color: #999;
+  margin-top: 5px;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Leaderboard Table */
+.leaderboard-table-wrapper {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  overflow-x: auto;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+}
+
+.leaderboard-table th {
+  padding: 16px;
+  text-align: left;
+  font-size: 0.95em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.leaderboard-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.leaderboard-table tbody tr:hover {
+  background-color: #f8f8ff;
+  transform: scale(1.01);
+}
+
+.leaderboard-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.leaderboard-row {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.leaderboard-row.current-user {
+  background-color: #f0f0ff;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.leaderboard-table td {
+  padding: 16px;
+  font-size: 0.95em;
+}
+
+.rank-col {
+  text-align: center;
+  width: 50px;
+}
+
+.rank-col.medal {
+  font-size: 1.5em;
+}
+
+.username-col {
+  font-weight: 500;
+  color: #333;
+}
+
+.username-badge {
+  background: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.you-badge {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.75em;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.score-col {
+  font-weight: 700;
+  color: #667eea;
+}
+
+.percentage {
+  font-size: 1.2em;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.best-col {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.attempts-col {
+  color: #666;
+}
+
+/* Loading and Empty States */
+.loading-state,
+.empty-state {
+  padding: 60px 20px;
+  text-align: center;
+  color: #666;
+}
+
+.spinner {
+  border: 4px solid #f0f0f0;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.empty-hint {
+  color: #999;
+  font-size: 0.95em;
+  margin-top: 10px;
+}
+
+/* Stats Summary */
+.leaderboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stat-label {
+  font-size: 0.9em;
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.stat-value {
+  font-size: 2em;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .leaderboard-container {
+    padding: 15px;
+    padding-top: 70px;
+  }
+
+  .leaderboard-header h1 {
+    font-size: 1.8em;
+  }
+
+  .leaderboard-selector {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .subject-select {
+    min-width: 100%;
+  }
+
+  .chapters-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .user-rank-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rank-badge {
+    width: 70px;
+    height: 70px;
+    font-size: 2em;
+  }
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 12px 8px;
+    font-size: 0.85em;
+  }
+
+  .leaderboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .rank-col {
+    width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leaderboard-header h1 {
+    font-size: 1.5em;
+  }
+
+  .tab-button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .leaderboard-table {
+    font-size: 0.8em;
+  }
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 10px 6px;
+  }
+
+  .stat-value {
+    font-size: 1.5em;
+  }
+}
