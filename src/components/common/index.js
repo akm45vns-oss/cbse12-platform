@@ -7,3 +7,6 @@ export { WeakTopicsReport } from "./WeakTopicsReport";
 export { ForumModal } from "./ForumModal";
 export { FloatingForumButton } from "./FloatingForumButton";
 export { ImageUploader } from "./ImageUploader";
+export { default as StreakDisplay } from "./StreakDisplay";
+export { default as RankBadgeDisplay } from "./RankBadgeDisplay";
+export { default as WeeklyToppers } from "./WeeklyToppers";

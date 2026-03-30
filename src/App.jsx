@@ -224,8 +224,8 @@ Respond with the paper content directly.`;
     setScore(sc);
     setSubmitted(true);
 
-    // Record quiz submission for weak topics analysis
-    recordQuizSubmission(nav.subject, nav.chapter, answers, quiz);
+    // Record quiz submission for weak topics analysis and gamification
+    recordQuizSubmission(nav.subject, nav.chapter, answers, quiz, auth.currentUser);
 
     // Save quiz submission to database with set number
     if (selectedQuizSet && auth.currentUser) {

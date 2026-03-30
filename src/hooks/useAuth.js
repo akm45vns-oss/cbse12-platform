@@ -10,6 +10,7 @@ import {
   resetLoginAttempts,
   SECURITY_CONFIG
 } from "../utils/rateLimiting";
+import { syncGamificationDataToDB } from "../utils/gamificationDB";
 
 export function useAuth() {
   // Initialize from localStorage, default to null if not found
@@ -96,6 +97,11 @@ export function useAuth() {
     setCurrentUser(loginResult.username);
     setCredentials({ username: "", email: "", name: "", password: "", confirmPassword: "" });
     setShowPass(false);
+    
+    // Sync gamification data from localStorage to database
+    syncGamificationDataToDB(loginResult.username)
+      .then(() => console.log('[AUTH] Gamification data synced to database'))
+      .catch(err => console.error('[AUTH] Failed to sync gamification data:', err));
   };
 
   const doRegister = async () => {

@@ -1,4 +1,4 @@
-import { ProgressBar, Badge, SearchBar, WeakTopicsReport } from "../common";
+import { ProgressBar, Badge, SearchBar, WeakTopicsReport, StreakDisplay, RankBadgeDisplay, WeeklyToppers } from "../common";
 import { CURRICULUM, totalChapters } from "../../constants/curriculum";
 import { getRecentChapters } from "../../utils/recentChapters";
 import { getLoginStreak } from "../../utils/loginStreak";
@@ -119,6 +119,16 @@ export function DashboardView({ stats, overallPct, currentUser, displayName, onS
       {/* Weak Topics Report */}
       <div style={{ marginBottom: 36 }}>
         <WeakTopicsReport />
+      </div>
+
+      {/* Gamification Features - Streaks, Badges, Weekly Toppers */}
+      <div style={{ marginBottom: 36 }}>
+        <h3 style={{ fontSize: 14, fontWeight: 800, color: "#3b82f6", marginBottom: 16, textTransform: "uppercase", letterSpacing: "0.08em" }}>
+          🎮 Achievement Tracker
+        </h3>
+        <StreakDisplay />
+        <RankBadgeDisplay />
+        <WeeklyToppers />
       </div>
 
       <div className="dash-overall">

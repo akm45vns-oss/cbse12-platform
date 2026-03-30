@@ -1,6 +1,8 @@
 // ===== WEAK TOPICS ANALYSIS =====
+import { recordQuizAttempt } from "./streaks";
+import { updatePerformanceMetricsDB } from "./gamificationDB";
 
-export function recordQuizSubmission(subject, chapter, answers, quiz) {
+export function recordQuizSubmission(subject, chapter, answers, quiz, username = null) {
   try {
     const submissions = getQuizSubmissions();
     
@@ -24,6 +26,18 @@ export function recordQuizSubmission(subject, chapter, answers, quiz) {
 
     const score = quiz.filter((q, idx) => answers[idx] === q.ans).length;
     const accuracy = Math.round((score / quiz.length) * 100);
+    
+    // Record quiz attempt to track streaks and sync to database
+    const streakResult = recordQuizAttempt(
+      new Date().toISOString().split('T')[0],
+      username // Pass username for database sync
+    );
+    
+    // Update performance metrics in database if username provided
+    if (username) {
+      updatePerformanceMetricsDB(username, score)
+        .catch(err => console.error("Failed to update metrics in DB:", err));
+    }
 
     const submission = {
       id: Date.now(),
@@ -35,6 +49,8 @@ export function recordQuizSubmission(subject, chapter, answers, quiz) {
       accuracy,
       wrongQuestions,
       wrongTopics: Array.from(wrongTopics),
+      streak: streakResult.streak,
+      streakIsNewDay: streakResult.isNewDay,
     };
 
     submissions.push(submission);
