@@ -7,7 +7,6 @@
  */
 
 import { supabase } from "./supabase";
-import { useCallback } from 'react';
 
 // Production logging utility
 const log = (level, msg, data = null) => {

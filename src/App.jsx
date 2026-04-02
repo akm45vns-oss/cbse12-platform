@@ -1,13 +1,12 @@
 import { useState, useEffect, Suspense, lazy } from "react";
 import { useAuth, useNavigation, useProgress, useTheme } from "./hooks";
-import { callClaude, extractJSON } from "./utils/api";
-import { getChapterNotes, getQuizSet, getQuizSetStatus, getQuizSetSummaries, saveQuizSubmission, getSamplePaper } from "./utils/supabase";
+import { callClaude } from "./utils/api";
+import { getChapterNotes, getQuizSet, getQuizSetStatus, getQuizSetSummaries, saveQuizSubmission } from "./utils/supabase";
 import { CURRICULUM, totalChapters } from "./constants/curriculum";
 import { SearchBar } from "./components/common/SearchBar";
 import { recordDailyActivity } from "./utils/loginStreak";
 import { recordQuizSubmission } from "./utils/weakTopics";
 import { getCachedNotes, cacheNotes } from "./utils/cacheManager";
-import { createDebouncedQuery } from "./utils/queryOptimization";
 import { validateQuestion } from "./components/views/QuizView";
 // Eager load critical views, lazy load others
 import { AuthView, DashboardView, QuizSetsView, LeaderboardView } from "./components/views";
@@ -209,7 +208,7 @@ Respond with the paper content directly.`;
       
       const text = await callClaude(prompt, 4000);
       setPaper(text);
-    } catch (err) {
+    } catch {
       setPaper("❌ Error generating sample paper. Please try again.");
     }
     setLoading(false);
