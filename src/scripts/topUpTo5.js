@@ -372,8 +372,32 @@ async function run() {
       const chapter = chaptersAtMin[chapterIdx];
 
       while (chapter.validSets.size < nextLevel) {
-        // Assign next sequential set number (1, 2, 3, ...)
-        const nextSetNum = chapter.validSets.size + 1;
+        // Refresh valid sets from DB to get latest state
+        const { data: freshRows, error: freshError } = await supabase
+          .from('quiz_sets')
+          .select('set_number, questions')
+          .eq('subject', chapter.subject)
+          .eq('chapter', chapter.chapter);
+
+        if (!freshError && freshRows) {
+          chapter.validSets.clear();
+          freshRows.forEach(row => {
+            if (Array.isArray(row.questions) && row.questions.length === 30) {
+              chapter.validSets.add(row.set_number);
+            }
+          });
+        }
+
+        // Check again after refresh
+        if (chapter.validSets.size >= nextLevel) {
+          break; // Chapter already has enough sets
+        }
+
+        // Find next available set number (increment until we find an unused one)
+        let nextSetNum = 1;
+        while (chapter.validSets.has(nextSetNum)) {
+          nextSetNum++;
+        }
 
         try {
           const setLabel = `${chapter.subject} - ${chapter.chapter} [Set #${nextSetNum}]`;

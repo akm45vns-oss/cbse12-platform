@@ -1,8 +1,10 @@
 import { getWeakTopics, getWeakChapters, getRecentWeakQuestions } from "../../utils/weakTopics";
 import { useState } from "react";
+import { useNavigation } from "../../hooks/useNavigation";
 
 export function WeakTopicsReport() {
   const [activeTab, setActiveTab] = useState("topics");
+  const nav = useNavigation();
 
   const weakTopics = getWeakTopics(5);
   const weakChapters = getWeakChapters(5);
@@ -84,6 +86,7 @@ export function WeakTopicsReport() {
           {weakTopics.map((item, idx) => (
             <div
               key={idx}
+              onClick={() => nav.navigate("quiz", { chapter: item.topic })}
               style={{
                 background: "rgba(239, 68, 68, 0.05)",
                 border: "1px solid rgba(239, 68, 68, 0.2)",
@@ -93,6 +96,20 @@ export function WeakTopicsReport() {
                 justifyContent: "space-between",
                 alignItems: "center",
                 boxShadow: "0 4px 12px rgba(239, 68, 68, 0.05)",
+                cursor: "pointer",
+                transition: "all 0.3s ease",
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = "rgba(239, 68, 68, 0.12)";
+                e.currentTarget.style.borderColor = "rgba(239, 68, 68, 0.4)";
+                e.currentTarget.style.boxShadow = "0 6px 20px rgba(239, 68, 68, 0.15), inset 0 0 0 1px rgba(239, 68, 68, 0.1)";
+                e.currentTarget.style.transform = "translateX(4px)";
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = "rgba(239, 68, 68, 0.05)";
+                e.currentTarget.style.borderColor = "rgba(239, 68, 68, 0.2)";
+                e.currentTarget.style.boxShadow = "0 4px 12px rgba(239, 68, 68, 0.05)";
+                e.currentTarget.style.transform = "translateX(0)";
               }}
             >
               <div>
@@ -100,7 +117,7 @@ export function WeakTopicsReport() {
                   {item.topic}
                 </div>
                 <div style={{ fontSize: 12, color: "#b91c1c", marginTop: 4, opacity: 0.9 }}>
-                  Struggled in {item.mistakeCount} question{item.mistakeCount !== 1 ? "s" : ""}
+                  Struggled in {item.mistakeCount} question{item.mistakeCount !== 1 ? "s" : ""} • Click to practice
                 </div>
               </div>
               <span style={{ background: "rgba(239, 68, 68, 0.15)", color: "#dc2626", padding: "6px 14px", borderRadius: 8, fontWeight: 900, fontSize: 13, border: "1px solid rgba(239, 68, 68, 0.3)" }}>
@@ -117,11 +134,26 @@ export function WeakTopicsReport() {
           {weakChapters.map((ch, idx) => (
             <div
               key={idx}
+              onClick={() => nav.navigate("quiz", { chapter: ch.chapter, subject: ch.subject })}
               style={{
                 background: "rgba(239, 68, 68, 0.05)",
                 border: "1px solid rgba(239, 68, 68, 0.2)",
                 borderRadius: 14,
                 padding: 16,
+                cursor: "pointer",
+                transition: "all 0.3s ease",
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = "rgba(239, 68, 68, 0.12)";
+                e.currentTarget.style.borderColor = "rgba(239, 68, 68, 0.4)";
+                e.currentTarget.style.boxShadow = "0 6px 20px rgba(239, 68, 68, 0.15), inset 0 0 0 1px rgba(239, 68, 68, 0.1)";
+                e.currentTarget.style.transform = "translateY(-2px)";
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = "rgba(239, 68, 68, 0.05)";
+                e.currentTarget.style.borderColor = "rgba(239, 68, 68, 0.2)";
+                e.currentTarget.style.boxShadow = "0 4px 12px rgba(239, 68, 68, 0.05)";
+                e.currentTarget.style.transform = "translateY(0)";
               }}
             >
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "start", marginBottom: 10 }}>
@@ -130,7 +162,7 @@ export function WeakTopicsReport() {
                     {ch.chapter}
                   </div>
                   <div style={{ fontSize: 12, color: "#b91c1c", marginTop: 4, opacity: 0.9 }}>
-                    {ch.subject} • {ch.attempts} attempt{ch.attempts !== 1 ? "s" : ""}
+                    {ch.subject} • {ch.attempts} attempt{ch.attempts !== 1 ? "s" : ""} • Click to practice
                   </div>
                 </div>
               </div>
