@@ -709,6 +709,7 @@ Respond with the paper content directly.`;
             <LeaderboardView />
           </Suspense>
         )}
+
       </div>
 
       {/* Footer */}

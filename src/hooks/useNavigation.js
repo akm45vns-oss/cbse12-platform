@@ -1,10 +1,30 @@
 import { useState } from "react";
 
+const ALLOWED_VIEWS = new Set([
+  "auth",
+  "dashboard",
+  "subject",
+  "chapter",
+  "notes",
+  "quiz",
+  "paper",
+  "progress",
+  "profile",
+  "stats",
+  "leaderboard",
+]);
+
+function sanitizeView(view) {
+  if (ALLOWED_VIEWS.has(view)) return view;
+  return view === "monitor" ? "dashboard" : "auth";
+}
+
 export function useNavigation() {
   // Initialize state from localStorage
   const [view, setViewState] = useState(() => {
     try {
-      return localStorage.getItem("akmedu_nav_view") || "auth";
+      const saved = localStorage.getItem("akmedu_nav_view") || "auth";
+      return sanitizeView(saved);
     } catch {
       return "auth";
     }
@@ -37,12 +57,13 @@ export function useNavigation() {
 
   // Persist view changes
   const setView = (v) => {
+    const nextView = sanitizeView(v);
     try {
-      localStorage.setItem("akmedu_nav_view", v);
+      localStorage.setItem("akmedu_nav_view", nextView);
     } catch (e) {
       console.warn("Failed to persist view:", e);
     }
-    setViewState(v);
+    setViewState(nextView);
   };
 
   // Persist subject changes

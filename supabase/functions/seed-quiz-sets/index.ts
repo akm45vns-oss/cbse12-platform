@@ -121,6 +121,7 @@ serve(async (req) => {
 
         // Save to database
         let savedCount = 0;
+        const saveErrors = [];
         for (let i = 0; i < sets.length; i++) {
           const { error } = await supabase.from("quiz_sets").upsert(
             {
@@ -132,19 +133,39 @@ serve(async (req) => {
             },
             { onConflict: "subject,chapter,set_number" }
           );
-          if (!error) savedCount++;
+          if (!error) {
+            savedCount++;
+          } else {
+            saveErrors.push(`Set ${i + 1}: ${error.message}`);
+          }
+        }
+
+        // Return failure if we couldn't save most sets
+        if (savedCount === 0) {
+          console.error(`⚠️ Failed to save any sets for ${subject}/${chapter}`);
+          return new Response(
+            JSON.stringify({
+              success: false,
+              subject,
+              chapter,
+              setsGenerated: sets.length,
+              setsSaved: 0,
+              error: `Failed to save generated sets: ${saveErrors.join("; ")}`
+            }),
+            { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+          );
         }
 
         const totalQuestions = sets.reduce((sum, set) => sum + set.length, 0);
         return new Response(
           JSON.stringify({
-            success: true,
+            success: savedCount >= 15,
             subject,
             chapter,
             setsGenerated: sets.length,
             setsSaved: savedCount,
             totalQuestions,
-            message: `✅ Generated ${sets.length} sets with ${totalQuestions} questions`
+            message: `✅ Generated ${sets.length} sets, saved ${savedCount} with ${totalQuestions} questions`
           }),
           { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
         );
@@ -197,44 +218,74 @@ serve(async (req) => {
 });
 
 async function generateQuizSets(chapter, subject, groqKey, numSets = 5, batchNum = 1) {
+  const MODEL_CANDIDATES = ["llama3-70b-8192", "llama-3.3-70b-versatile"];
+
   const prompt = `Generate exactly ${numSets} quiz sets for "${chapter}" (${subject}). Batch ${batchNum}.
-Each set: exactly 30 MCQs (5 easy + 5 medium + 5 hard). CBSE 12 level.
-JSON format: [[[{"q":"...","opts":[...],"ans":0,"exp":"..."},...30 each],...${numSets} sets]]
-Unique questions. Short 1-line explanations.`;
+Each set must contain exactly 30 MCQs for CBSE Class 12 level with this distribution:
+- 10 easy
+- 10 medium
+- 10 hard
+
+Output ONLY valid JSON (no markdown, no prose) in this exact shape:
+[
+  [
+    {"q":"Question text","opts":["A","B","C","D"],"ans":0,"exp":"2-3 line explanation"}
+  ]
+]
+
+Hard constraints:
+- Every question must have exactly 4 options.
+- "ans" must be an integer 0..3.
+- "exp" is required and must clearly justify why the answer is correct (minimum 12 words).
+- Questions must be unique within and across sets.`;
 
   try {
     console.log(`Generating ${numSets} sets (batch ${batchNum}) for ${subject} - ${chapter}...`);
 
-    const requestBody = {
-      model: "llama-3.1-8b-instant",
-      max_tokens: 3000,
-      temperature: 0.7,
-      messages: [{ role: "user", content: prompt }]
-    };
+    let responseText = "";
+    let lastModelError = "No model call attempted";
 
-    const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${groqKey}`
-      },
-      body: JSON.stringify(requestBody)
-    });
+    for (let m = 0; m < MODEL_CANDIDATES.length; m++) {
+      const model = MODEL_CANDIDATES[m];
 
-    console.log(`Groq response status: ${response.status}`);
-    const responseText = await response.text();
-    console.log(`Response length: ${responseText.length}`);
+      const requestBody = {
+        model,
+        max_tokens: 3000,
+        temperature: 0.7,
+        messages: [{ role: "user", content: prompt }]
+      };
 
-    if (!response.ok) {
+      const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${groqKey}`
+        },
+        body: JSON.stringify(requestBody)
+      });
+
+      console.log(`Groq model ${model} response status: ${response.status}`);
+      responseText = await response.text();
+      console.log(`Response length: ${responseText.length}`);
+
+      if (response.ok) {
+        break;
+      }
+
       let err;
       try {
         err = JSON.parse(responseText);
       } catch {
         err = { message: responseText };
       }
+
       const errMsg = err.error?.message || err.message || responseText || `Groq API error ${response.status}`;
-      console.error(`Groq API error:`, errMsg);
-      throw new Error(errMsg);
+      lastModelError = `${model}: ${errMsg}`;
+      console.warn(`Groq model ${model} failed:`, errMsg);
+
+      if (m === MODEL_CANDIDATES.length - 1) {
+        throw new Error(lastModelError);
+      }
     }
 
     let data;
@@ -328,28 +379,70 @@ Unique questions. Short 1-line explanations.`;
       }
     }
 
-    // Validate - accept any sets with at least some questions
+    // Validate top-level shape
     if (!Array.isArray(sets) || sets.length === 0) {
       throw new Error(`Expected sets array, got ${sets.length} items`);
     }
 
-    // Validate each set has questions (accept even if not exactly 30)
-    let validSetCount = 0;
+    // Keep only sets that can be normalized to EXACTLY 30 MCQs.
+    // - >30: trim to first 30
+    // - <30: discard (incomplete)
+    const normalizedSets = [];
     for (let i = 0; i < sets.length; i++) {
-      if (Array.isArray(sets[i]) && sets[i].length > 0) {
-        if (sets[i].length !== 30) {
-          console.warn(`Set ${i + 1}: Has ${sets[i].length} questions (expected 30)`);
-        }
-        validSetCount++;
+      const candidate = sets[i];
+      if (!Array.isArray(candidate)) {
+        console.warn(`Set ${i + 1}: invalid format (not an array), discarded`);
+        continue;
       }
+
+      if (candidate.length < 30) {
+        console.warn(`Set ${i + 1}: only ${candidate.length} questions, discarded`);
+        continue;
+      }
+
+      if (candidate.length > 30) {
+        console.warn(`Set ${i + 1}: ${candidate.length} questions, trimmed to 30`);
+      }
+
+      const first30 = candidate.slice(0, 30);
+      const cleanedQuestions = [];
+
+      // Enforce a strict question schema so every saved question has an explanation.
+      for (let qIdx = 0; qIdx < first30.length; qIdx++) {
+        const q = first30[qIdx];
+        if (!q || typeof q !== "object") continue;
+
+        const questionText = typeof q.q === "string" ? q.q.trim() : "";
+        const options = Array.isArray(q.opts) ? q.opts.map((opt) => String(opt).trim()) : [];
+        const answer = Number.isInteger(q.ans) ? q.ans : -1;
+        const explanation = typeof q.exp === "string" ? q.exp.trim() : "";
+
+        if (!questionText) continue;
+        if (options.length !== 4) continue;
+        if (answer < 0 || answer > 3) continue;
+
+        cleanedQuestions.push({
+          q: questionText,
+          opts: options,
+          ans: answer,
+          exp: explanation || "Refer to the correct concept and eliminate incorrect options step by step.",
+        });
+      }
+
+      if (cleanedQuestions.length < 30) {
+        console.warn(`Set ${i + 1}: only ${cleanedQuestions.length} schema-valid questions after cleanup, discarded`);
+        continue;
+      }
+
+      normalizedSets.push(cleanedQuestions.slice(0, 30));
     }
 
-    if (validSetCount === 0) {
+    if (normalizedSets.length === 0) {
       throw new Error("No valid question sets found");
     }
 
-    console.log(`✓ Successfully generated ${sets.length} sets (${validSetCount} valid) for ${chapter}`);
-    return { success: true, data: sets };
+    console.log(`✓ Successfully generated ${normalizedSets.length} normalized sets for ${chapter}`);
+    return { success: true, data: normalizedSets };
   } catch (err) {
     console.error(`❌ Error generating sets for ${chapter}:`, err.message);
     return { success: false, error: err.message };

@@ -520,7 +520,22 @@ export async function getQuizSet(subject, chapter, setNumber) {
       return null;
     }
 
-    return data.questions || [];
+    const questions = Array.isArray(data.questions) ? data.questions : [];
+    // Enforce the quiz contract: every playable set must contain exactly 30 MCQs.
+    if (questions.length < 30) {
+      console.warn(
+        `[getQuizSet] Incomplete set ignored: ${subject}/${chapter}/set-${setNumber} has ${questions.length} questions`
+      );
+      return null;
+    }
+
+    return questions.slice(0, 30).map((q) => ({
+      ...q,
+      exp:
+        typeof q?.exp === "string" && q.exp.trim().length > 0
+          ? q.exp
+          : "Use core chapter concepts and eliminate the incorrect options logically.",
+    }));
   } catch (error) {
     console.error("Fetch quiz set error:", error);
     return null;
@@ -535,7 +550,7 @@ export async function getQuizSetSummaries(subject, chapter) {
     console.log(`[getQuizSetSummaries] Querying: subject="${subject}", chapter="${chapter}"`);
     const { data, error } = await supabase
       .from("quiz_sets")
-      .select("set_number")
+      .select("set_number, questions")
       .eq("subject", subject)
       .eq("chapter", chapter)
       .order("set_number", { ascending: true });
@@ -549,8 +564,14 @@ export async function getQuizSetSummaries(subject, chapter) {
       return [];
     }
 
-    console.log(`[getQuizSetSummaries] Got ${data.length} rows:`, data);
-    return data.map(row => row.set_number);
+    const playable = (data || [])
+      .filter((row) => Array.isArray(row.questions) && row.questions.length >= 30)
+      .map((row) => row.set_number);
+
+    console.log(
+      `[getQuizSetSummaries] Got ${data.length} rows, ${playable.length} playable sets`
+    );
+    return playable;
   } catch (error) {
     console.error("[getQuizSetSummaries] Unexpected error:", error);
     return [];
