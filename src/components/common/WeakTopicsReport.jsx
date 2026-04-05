@@ -4,11 +4,19 @@ import { useNavigation } from "../../hooks/useNavigation";
 
 export function WeakTopicsReport() {
   const [activeTab, setActiveTab] = useState("topics");
+  const [expandedItems, setExpandedItems] = useState({});
   const nav = useNavigation();
 
   const weakTopics = getWeakTopics(5);
   const weakChapters = getWeakChapters(5);
   const recentWrongQuestions = getRecentWeakQuestions(5);
+
+  const toggleExpand = (key) => {
+    setExpandedItems(prev => ({
+      ...prev,
+      [key]: !prev[key]
+    }));
+  };
 
   if (weakTopics.length === 0 && weakChapters.length === 0) {
     return (
@@ -83,104 +91,217 @@ export function WeakTopicsReport() {
       {/* Topics Tab */}
       {activeTab === "topics" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-          {weakTopics.map((item, idx) => (
+          {weakTopics.map((item, idx) => {
+            const isExpanded = expandedItems[`topic-${idx}`];
+            return (
             <div
               key={idx}
-              onClick={() => nav.navigate("quiz", { chapter: item.topic })}
               style={{
                 background: "rgba(239, 68, 68, 0.05)",
                 border: "1px solid rgba(239, 68, 68, 0.2)",
                 borderRadius: 14,
-                padding: "16px",
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
+                overflow: "hidden",
                 boxShadow: "0 4px 12px rgba(239, 68, 68, 0.05)",
-                cursor: "pointer",
                 transition: "all 0.3s ease",
               }}
-              onMouseEnter={e => {
-                e.currentTarget.style.background = "rgba(239, 68, 68, 0.12)";
-                e.currentTarget.style.borderColor = "rgba(239, 68, 68, 0.4)";
-                e.currentTarget.style.boxShadow = "0 6px 20px rgba(239, 68, 68, 0.15), inset 0 0 0 1px rgba(239, 68, 68, 0.1)";
-                e.currentTarget.style.transform = "translateX(4px)";
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.background = "rgba(239, 68, 68, 0.05)";
-                e.currentTarget.style.borderColor = "rgba(239, 68, 68, 0.2)";
-                e.currentTarget.style.boxShadow = "0 4px 12px rgba(239, 68, 68, 0.05)";
-                e.currentTarget.style.transform = "translateX(0)";
-              }}
             >
-              <div>
-                <div style={{ fontWeight: 800, color: "#dc2626", fontSize: 14 }}>
-                  {item.topic}
+              {/* Header (clickable) */}
+              <div
+                onClick={() => toggleExpand(`topic-${idx}`)}
+                style={{
+                  padding: "16px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  cursor: "pointer",
+                  background: isExpanded ? "rgba(239, 68, 68, 0.12)" : "rgba(239, 68, 68, 0.05)",
+                  transition: "all 0.2s ease",
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.background = "rgba(239, 68, 68, 0.12)";
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.background = isExpanded ? "rgba(239, 68, 68, 0.12)" : "rgba(239, 68, 68, 0.05)";
+                }}
+              >
+                <div>
+                  <div style={{ fontWeight: 800, color: "#dc2626", fontSize: 14 }}>
+                    {item.topic}
+                  </div>
+                  <div style={{ fontSize: 12, color: "#b91c1c", marginTop: 4, opacity: 0.9 }}>
+                    Struggled in {item.mistakeCount} question{item.mistakeCount !== 1 ? "s" : ""}
+                  </div>
                 </div>
-                <div style={{ fontSize: 12, color: "#b91c1c", marginTop: 4, opacity: 0.9 }}>
-                  Struggled in {item.mistakeCount} question{item.mistakeCount !== 1 ? "s" : ""} • Click to practice
+                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                  <span style={{ background: "rgba(239, 68, 68, 0.15)", color: "#dc2626", padding: "6px 14px", borderRadius: 8, fontWeight: 900, fontSize: 13, border: "1px solid rgba(239, 68, 68, 0.3)" }}>
+                    {item.mistakeCount} x
+                  </span>
+                  <div style={{
+                    fontSize: 20,
+                    transition: "transform 0.3s ease",
+                    transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)",
+                    color: "#dc2626"
+                  }}>
+                    ▼
+                  </div>
                 </div>
               </div>
-              <span style={{ background: "rgba(239, 68, 68, 0.15)", color: "#dc2626", padding: "6px 14px", borderRadius: 8, fontWeight: 900, fontSize: 13, border: "1px solid rgba(239, 68, 68, 0.3)" }}>
-                {item.mistakeCount} x
-              </span>
+
+              {/* Expandable Content */}
+              {isExpanded && (
+                <div style={{
+                  padding: "12px 16px 16px",
+                  borderTop: "1px solid rgba(239, 68, 68, 0.2)",
+                  background: "rgba(239, 68, 68, 0.08)",
+                  animation: "slideDown 0.3s ease"
+                }}>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      nav.navigate("quiz", { chapter: item.topic });
+                    }}
+                    style={{
+                      width: "100%",
+                      background: "linear-gradient(135deg, #dc2626, #b91c1c)",
+                      color: "white",
+                      border: "none",
+                      padding: "10px 16px",
+                      borderRadius: 10,
+                      fontWeight: 800,
+                      fontSize: 13,
+                      cursor: "pointer",
+                      transition: "all 0.2s",
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.transform = "translateY(-2px)";
+                      e.currentTarget.style.boxShadow = "0 6px 16px rgba(220, 38, 38, 0.3)";
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.transform = "translateY(0)";
+                      e.currentTarget.style.boxShadow = "none";
+                    }}
+                  >
+                    📝 Practice {item.topic}
+                  </button>
+                </div>
+              )}
             </div>
-          ))}
+            );
+          })}
         </div>
       )}
 
       {/* Chapters Tab */}
       {activeTab === "chapters" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-          {weakChapters.map((ch, idx) => (
+          {weakChapters.map((ch, idx) => {
+            const isExpanded = expandedItems[`chapter-${idx}`];
+            return (
             <div
               key={idx}
-              onClick={() => nav.navigate("quiz", { chapter: ch.chapter, subject: ch.subject })}
               style={{
                 background: "rgba(239, 68, 68, 0.05)",
                 border: "1px solid rgba(239, 68, 68, 0.2)",
                 borderRadius: 14,
-                padding: 16,
-                cursor: "pointer",
+                overflow: "hidden",
+                boxShadow: "0 4px 12px rgba(239, 68, 68, 0.05)",
                 transition: "all 0.3s ease",
               }}
-              onMouseEnter={e => {
-                e.currentTarget.style.background = "rgba(239, 68, 68, 0.12)";
-                e.currentTarget.style.borderColor = "rgba(239, 68, 68, 0.4)";
-                e.currentTarget.style.boxShadow = "0 6px 20px rgba(239, 68, 68, 0.15), inset 0 0 0 1px rgba(239, 68, 68, 0.1)";
-                e.currentTarget.style.transform = "translateY(-2px)";
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.background = "rgba(239, 68, 68, 0.05)";
-                e.currentTarget.style.borderColor = "rgba(239, 68, 68, 0.2)";
-                e.currentTarget.style.boxShadow = "0 4px 12px rgba(239, 68, 68, 0.05)";
-                e.currentTarget.style.transform = "translateY(0)";
-              }}
             >
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "start", marginBottom: 10 }}>
+              {/* Header (clickable) */}
+              <div
+                onClick={() => toggleExpand(`chapter-${idx}`)}
+                style={{
+                  padding: "16px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  cursor: "pointer",
+                  background: isExpanded ? "rgba(239, 68, 68, 0.12)" : "rgba(239, 68, 68, 0.05)",
+                  transition: "all 0.2s ease",
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.background = "rgba(239, 68, 68, 0.12)";
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.background = isExpanded ? "rgba(239, 68, 68, 0.12)" : "rgba(239, 68, 68, 0.05)";
+                }}
+              >
                 <div>
                   <div style={{ fontWeight: 800, color: "#dc2626", fontSize: 14 }}>
                     {ch.chapter}
                   </div>
                   <div style={{ fontSize: 12, color: "#b91c1c", marginTop: 4, opacity: 0.9 }}>
-                    {ch.subject} • {ch.attempts} attempt{ch.attempts !== 1 ? "s" : ""} • Click to practice
+                    {ch.subject} • {ch.attempts} attempt{ch.attempts !== 1 ? "s" : ""}
                   </div>
                 </div>
+                <div style={{
+                  fontSize: 20,
+                  transition: "transform 0.3s ease",
+                  transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)",
+                  color: "#dc2626"
+                }}>
+                  ▼
+                </div>
               </div>
-              <div style={{ background: "rgba(0,0,0,0.05)", height: 6, borderRadius: 3, overflow: "hidden" }}>
-                <div
-                  style={{
-                    height: "100%",
-                    background: ch.avgAccuracy >= 60 ? "#10b981" : ch.avgAccuracy >= 40 ? "#f59e0b" : "#ef4444",
-                    width: `${ch.avgAccuracy}%`,
-                    boxShadow: "0 0 8px rgba(239,68,68,0.5)"
-                  }}
-                />
-              </div>
-              <div style={{ fontSize: 12, fontWeight: 800, color: "#dc2626", marginTop: 8 }}>
-                Avg Accuracy: {ch.avgAccuracy}%
-              </div>
+
+              {/* Expandable Content */}
+              {isExpanded && (
+                <div style={{
+                  padding: "16px",
+                  borderTop: "1px solid rgba(239, 68, 68, 0.2)",
+                  background: "rgba(239, 68, 68, 0.08)",
+                  animation: "slideDown 0.3s ease"
+                }}>
+                  <div style={{ marginBottom: 12 }}>
+                    <div style={{ background: "rgba(0,0,0,0.05)", height: 8, borderRadius: 4, overflow: "hidden" }}>
+                      <div
+                        style={{
+                          height: "100%",
+                          background: ch.avgAccuracy >= 60 ? "#10b981" : ch.avgAccuracy >= 40 ? "#f59e0b" : "#ef4444",
+                          width: `${ch.avgAccuracy}%`,
+                          boxShadow: "0 0 8px rgba(239,68,68,0.5)",
+                          transition: "width 0.3s ease"
+                        }}
+                      />
+                    </div>
+                    <div style={{ fontSize: 12, fontWeight: 800, color: "#dc2626", marginTop: 8 }}>
+                      Avg Accuracy: {ch.avgAccuracy}%
+                    </div>
+                  </div>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      nav.navigate("quiz", { chapter: ch.chapter, subject: ch.subject });
+                    }}
+                    style={{
+                      width: "100%",
+                      background: "linear-gradient(135deg, #dc2626, #b91c1c)",
+                      color: "white",
+                      border: "none",
+                      padding: "10px 16px",
+                      borderRadius: 10,
+                      fontWeight: 800,
+                      fontSize: 13,
+                      cursor: "pointer",
+                      transition: "all 0.2s",
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.transform = "translateY(-2px)";
+                      e.currentTarget.style.boxShadow = "0 6px 16px rgba(220, 38, 38, 0.3)";
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.transform = "translateY(0)";
+                      e.currentTarget.style.boxShadow = "none";
+                    }}
+                  >
+                    📝 Practice {ch.chapter}
+                  </button>
+                </div>
+              )}
             </div>
-          ))}
+            );
+          })}
         </div>
       )}
 
@@ -192,32 +313,81 @@ export function WeakTopicsReport() {
               No recent mistakes
             </div>
           ) : (
-            recentWrongQuestions.map((q, idx) => (
+            recentWrongQuestions.map((q, idx) => {
+              const isExpanded = expandedItems[`recent-${idx}`];
+              return (
               <div
                 key={idx}
                 style={{
-                  background: "rgba(255,255,255,0.8)",
-                  border: "1px solid rgba(0,0,0,0.05)",
+                  background: "rgba(239, 68, 68, 0.05)",
+                  border: "1px solid rgba(239, 68, 68, 0.2)",
                   borderRadius: 14,
-                  padding: 16,
+                  overflow: "hidden",
+                  transition: "all 0.3s ease",
                 }}
               >
-                <div style={{ fontSize: 11, fontWeight: 800, color: "#64748b", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.05em" }}>
-                  {q.subject} • {q.chapter} • Q{q.qIdx}
+                {/* Header (clickable) */}
+                <div
+                  onClick={() => toggleExpand(`recent-${idx}`)}
+                  style={{
+                    padding: "16px",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    cursor: "pointer",
+                    background: isExpanded ? "rgba(239, 68, 68, 0.12)" : "rgba(239, 68, 68, 0.05)",
+                    transition: "all 0.2s ease",
+                  }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.background = "rgba(239, 68, 68, 0.12)";
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.background = isExpanded ? "rgba(239, 68, 68, 0.12)" : "rgba(239, 68, 68, 0.05)";
+                  }}
+                >
+                  <div style={{ flex: 1 }}>
+                    <div style={{ fontSize: 11, fontWeight: 800, color: "#64748b", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.05em" }}>
+                      {q.subject} • {q.chapter} • Q{q.qIdx}
+                    </div>
+                    <div style={{ fontSize: 14, fontWeight: 600, color: "#1e293b" }}>
+                      {q.question.substring(0, 50)}...
+                    </div>
+                  </div>
+                  <div style={{
+                    fontSize: 20,
+                    transition: "transform 0.3s ease",
+                    transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)",
+                    color: "#dc2626",
+                    marginLeft: 12
+                  }}>
+                    ▼
+                  </div>
                 </div>
-                <div style={{ fontSize: 14, fontWeight: 600, color: "#1e293b", marginBottom: 12, lineHeight: 1.4 }}>
-                  {q.question}
-                </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: 12 }}>
-                  <span style={{ color: "#dc2626", fontWeight: 600, background: "rgba(239, 68, 68, 0.1)", padding: "4px 8px", borderRadius: 6, display: "inline-block" }}>
-                    ✗ You chose: {q.userAns !== undefined ? `Option ${q.userAns + 1}` : "Not answered"}
-                  </span>
-                  <span style={{ color: "#059669", fontWeight: 600, background: "rgba(16, 185, 129, 0.1)", padding: "4px 8px", borderRadius: 6, display: "inline-block" }}>
-                    ✓ Correct: Option {q.correctAns + 1}
-                  </span>
-                </div>
+
+                {/* Expandable Content */}
+                {isExpanded && (
+                  <div style={{
+                    padding: "16px",
+                    borderTop: "1px solid rgba(239, 68, 68, 0.2)",
+                    background: "rgba(239, 68, 68, 0.08)",
+                    animation: "slideDown 0.3s ease"
+                  }}>
+                    <div style={{ fontSize: 14, fontWeight: 600, color: "#1e293b", marginBottom: 12, lineHeight: 1.5 }}>
+                      {q.question}
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                      <span style={{ color: "#dc2626", fontWeight: 700, background: "rgba(239, 68, 68, 0.1)", padding: "8px 12px", borderRadius: 8, fontSize: 13 }}>
+                        ✗ You chose: {q.userAns !== undefined ? `Option ${q.userAns + 1}` : "Not answered"}
+                      </span>
+                      <span style={{ color: "#059669", fontWeight: 700, background: "rgba(16, 185, 129, 0.1)", padding: "8px 12px", borderRadius: 8, fontSize: 13 }}>
+                        ✓ Correct: Option {q.correctAns + 1}
+                      </span>
+                    </div>
+                  </div>
+                )}
               </div>
-            ))
+              );
+            })
           )}
         </div>
       )}
