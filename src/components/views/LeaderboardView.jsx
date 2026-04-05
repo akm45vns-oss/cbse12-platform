@@ -146,7 +146,7 @@ export default function LeaderboardView() {
         <div className="user-rank-card">
           <div className="rank-badge">#{userRank.rank}</div>
           <div className="rank-info">
-            <div className="rank-username">{userRank.username}</div>
+            <div className="rank-username">{userRank.name}</div>
             <div className="rank-score">{userRank.avgPercentage}%</div>
             <div className="rank-meta">
               {viewType === 'chapter' && selectedChapter
@@ -174,7 +174,7 @@ export default function LeaderboardView() {
             <thead>
               <tr>
                 <th className="rank-col">Rank</th>
-                <th className="username-col">Username</th>
+                <th className="username-col">Name</th>
                 <th className="score-col">Average %</th>
                 <th className="best-col">Best Score</th>
                 <th className="attempts-col">Attempts</th>
@@ -190,7 +190,7 @@ export default function LeaderboardView() {
                 >
                   <td className="rank-col medal">{getMedalIcon(entry.rank)}</td>
                   <td className="username-col">
-                    <span className="username-badge">{entry.username}</span>
+                    <span className="username-badge">{entry.name}</span>
                     {entry.username === username && (
                       <span className="you-badge">YOU</span>
                     )}

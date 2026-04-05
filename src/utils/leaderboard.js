@@ -96,10 +96,27 @@ export async function getLeaderboardData(subject, chapter = null, limit = 25) {
       userStats[submission.username].attempts += 1;
     });
 
+    // Fetch user names from users table
+    const usernames = Object.keys(userStats);
+    let userNames = {};
+    if (usernames.length > 0) {
+      const { data: users } = await supabase
+        .from('users')
+        .select('username, name')
+        .in('username', usernames);
+      
+      if (users) {
+        users.forEach(user => {
+          userNames[user.username] = user.name || user.username;
+        });
+      }
+    }
+
     // Convert to array and calculate aggregate metrics
     const leaderboard = Object.values(userStats)
       .map(stat => ({
         username: stat.username,
+        name: userNames[stat.username] || stat.username,
         avgPercentage: ((stat.scores.reduce((a, b) => a + b, 0) / (stat.scores.length * 30)) * 100).toFixed(2),
         bestScore: Math.max(...stat.scores),
         worstScore: Math.min(...stat.scores),
@@ -150,6 +167,7 @@ export async function getUserRank(username, subject, chapter = null) {
     return {
       rank: userEntry.rank,
       username: userEntry.username,
+      name: userEntry.name,
       avgPercentage: userEntry.avgPercentage,
       bestScore: userEntry.bestScore,
       totalUsers: leaderboard.length
