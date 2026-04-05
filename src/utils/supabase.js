@@ -159,6 +159,91 @@ export async function updateUserName(username, newName) {
 }
 
 /**
+ * Update username with uniqueness validation
+ * @param {string} currentUsername - Current username
+ * @param {string} newUsername - New username to change to
+ * @returns {Promise<object>} { success: boolean, error?: string }
+ */
+export async function updateUsername(currentUsername, newUsername) {
+  try {
+    // Validate new username
+    const validationError = validateUsername(newUsername);
+    if (validationError) {
+      return { success: false, error: validationError };
+    }
+
+    // Check if new username already exists
+    const { data: existing, error: checkError } = await supabase
+      .from("users")
+      .select("username")
+      .eq("username", newUsername)
+      .single();
+
+    if (existing) {
+      return { success: false, error: "Username already taken" };
+    }
+
+    // If checkError and it's not "PGRST116" (no rows found), it's a real error
+    if (checkError && checkError.code !== 'PGRST116') {
+      return { success: false, error: "Error validating username" };
+    }
+
+    // Update username in users table
+    const { error: updateError } = await supabase
+      .from("users")
+      .update({ username: newUsername })
+      .eq("username", currentUsername);
+
+    if (updateError) {
+      return { success: false, error: "Failed to update username" };
+    }
+
+    // Update all quiz_submissions with new username
+    const { error: submissionsError } = await supabase
+      .from("quiz_submissions")
+      .update({ username: newUsername })
+      .eq("username", currentUsername);
+
+    if (submissionsError) {
+      console.warn("Warning: Could not update some quiz submissions:", submissionsError);
+      // Don't fail the operation, but warn the user
+    }
+
+    return { success: true };
+  } catch (err) {
+    console.error("Update username error:", err);
+    return { success: false, error: "Network error updating username" };
+  }
+}
+
+/**
+ * Validate username format
+ * @private
+ */
+function validateUsername(username) {
+  if (!username || typeof username !== 'string') {
+    return "Username is required";
+  }
+
+  const trimmed = username.trim();
+  
+  if (trimmed.length < 3) {
+    return "Username must be at least 3 characters";
+  }
+
+  if (trimmed.length > 20) {
+    return "Username must be at most 20 characters";
+  }
+
+  // Allow alphanumeric and underscore only
+  if (!/^[a-zA-Z0-9_]+$/.test(trimmed)) {
+    return "Username can only contain letters, numbers, and underscores";
+  }
+
+  return null;
+}
+
+/**
  * Update user password with verification of current password
  * @param {string} username - Username
  * @param {string} currentPasswordPlain - Current password in plain text
