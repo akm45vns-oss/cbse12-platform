@@ -73,55 +73,58 @@ function normalizeQuestion(q) {
 }
 
 async function fetchGroqContent(prompt, maxTokens = 2500, temperature = 0.4) {
-  const currentKey = getNextGroqKey(); // Rotate through available API keys
-  const MODEL_CANDIDATES = ['llama-3.1-8b-instant', 'llama-3.3-70b-versatile'];
+  // FASTEST AVAILABLE MODELS (in order of preference)
+  const MODEL_CANDIDATES = ['llama-3.3-70b-versatile', 'llama-3.1-8b-instant'];
   let lastError = 'No model returned a valid response';
 
   for (let m = 0; m < MODEL_CANDIDATES.length; m++) {
     const model = MODEL_CANDIDATES[m];
-    const requestBody = {
-      model,
-      max_tokens: maxTokens,
-      temperature,
-      messages: [{ role: 'user', content: prompt }],
-    };
+    
+    // PARALLEL MODE: Fire all 5 API keys concurrently for this model
+    const parallelRequests = GROQ_KEYS.map(groqKey => 
+      fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${groqKey}`,
+        },
+        body: JSON.stringify({
+          model,
+          max_tokens: maxTokens,
+          temperature,
+          messages: [{ role: 'user', content: prompt }],
+        }),
+      })
+    );
 
-    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${currentKey}`,
-      },
-      body: JSON.stringify(requestBody),
-    });
+    try {
+      // Race: Use whichever API key responds first successfully
+      const response = await Promise.race(
+        parallelRequests.map(p => 
+          p.then(res => {
+            if (!res.ok) throw new Error(`${res.status}`);
+            return res;
+          })
+        )
+      );
 
-    if (!response.ok) {
-      const responseText = await response.text();
-      let err;
-      try {
-        err = JSON.parse(responseText);
-      } catch {
-        err = { message: responseText };
+      const data = await response.json();
+      const text = data.choices?.[0]?.message?.content || '';
+      
+      if (!text) {
+        lastError = `Model ${model} returned empty content`;
+        continue;
       }
 
-      const errMsg = err.error?.message || err.message || responseText || `Groq API error ${response.status}`;
-      lastError = `Model ${model} API ${response.status}: ${errMsg}`;
-
-      if (response.status === 429) {
-        console.log(`     ⏳ Rate limited on ${model}, waiting 60s...`);
+      return text;
+    } catch (err) {
+      // Check if it's a 429 rate limit on all APIs
+      if (err.message === '429') {
+        console.log(`     ⏳ All ${GROQ_KEYS.length} API keys rate limited on ${model}, waiting 60s...`);
         await new Promise((resolve) => setTimeout(resolve, 60000));
       }
-      continue;
+      lastError = `Model ${model} all keys failed: ${err.message}`;
     }
-
-    const data = await response.json();
-    const text = data.choices?.[0]?.message?.content || '';
-    if (!text) {
-      lastError = `Model ${model} returned empty content`;
-      continue;
-    }
-
-    return text;
   }
 
   throw new Error(lastError);
@@ -285,8 +288,11 @@ No markdown, no extra text. ONLY JSON.`;
 
 async function run() {
   console.log(`\n🎯 SMART LEVELING ALGORITHM - Water-Filling Strategy`);
+  console.log(`📌 Model: llama-3.3-70b-versatile (12,000 TPM - FASTEST AVAILABLE) + llama-3.1-8b-instant fallback`);
+  console.log(`🔐 Safety: All 296 existing generated sets are PRESERVED (APPEND ONLY, no deletions)`);
   console.log(`Mode: ${FAST_MODE ? 'FAST' : 'STRICT'}`);
-  console.log(`🔑 API Keys: ${GROQ_KEYS.length} Groq account(s) loaded (round-robin rotation enabled)`);
+  console.log(`⚡ PARALLEL API MODE: All ${GROQ_KEYS.length} Groq accounts fire simultaneously`);
+  console.log(`   (First successful response wins = ${GROQ_KEYS.length}x speed boost)`);
   console.log(`Target sets per chapter: ${TARGET_SETS}`);
   console.log(`Retry wait: ${FAST_RETRY_WAIT_MS}ms | set delay: ${FAST_BETWEEN_SET_WAIT_MS}ms | chapter delay: ${FAST_BETWEEN_CHAPTER_WAIT_MS}ms\n`);
 

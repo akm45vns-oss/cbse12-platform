@@ -100,7 +100,7 @@ export async function getLeaderboardData(subject, chapter = null, limit = 25) {
     const leaderboard = Object.values(userStats)
       .map(stat => ({
         username: stat.username,
-        avgPercentage: (stat.scores.reduce((a, b) => a + b, 0) / stat.scores.length).toFixed(2),
+        avgPercentage: ((stat.scores.reduce((a, b) => a + b, 0) / (stat.scores.length * 30)) * 100).toFixed(2),
         bestScore: Math.max(...stat.scores),
         worstScore: Math.min(...stat.scores),
         totalAttempts: stat.attempts,
