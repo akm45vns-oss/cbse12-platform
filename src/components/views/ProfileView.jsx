@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getUserProfile, updateUserPassword, updateUsername, updateUserName } from "../../utils/supabase";
+import { getUserProfile, updateUserPassword, updateUserName } from "../../utils/supabase";
 import { validatePasswordStrength } from "../../utils/passwordValidation";
 
 const AVATARS = [
@@ -22,12 +22,6 @@ export function ProfileView({
   const [nameError, setNameError] = useState("");
   const [nameSuccess, setNameSuccess] = useState(false);
 
-  // States for username editing
-  const [isEditingUsername, setIsEditingUsername] = useState(false);
-  const [editUsernameValue, setEditUsernameValue] = useState("");
-  const [usernameError, setUsernameError] = useState("");
-  const [usernameSuccess, setUsernameSuccess] = useState(false);
-
   // States for password change
   const [passData, setPassData] = useState({ current: "", new: "", confirm: "" });
   const [passError, setPassError] = useState("");
@@ -46,7 +40,6 @@ export function ProfileView({
         if (data) {
           setProfile(data);
           setEditNameValue(data.name || "");
-          setEditUsernameValue(data.username || "");
           progress.save("SYSTEM||PROFILE||name", { value: data.name, updatedAt: Date.now() });
         }
       }
@@ -78,39 +71,6 @@ export function ProfileView({
       setTimeout(() => setNameSuccess(false), 3000);
     } else {
       setNameError(error);
-    }
-  };
-
-  const handleSaveUsername = async () => {
-    setUsernameError("");
-    setUsernameSuccess(false);
-    
-    if (!profile) {
-      setUsernameError("Profile not loaded");
-      return;
-    }
-    
-    const newUsername = editUsernameValue.trim();
-    if (!newUsername || newUsername.length < 3) {
-      setUsernameError("Username must be at least 3 characters");
-      return;
-    }
-
-    if (newUsername === profile.username) {
-      setUsernameError("New username is the same as current");
-      return;
-    }
-
-    const { success, error } = await updateUsername(profile.username, newUsername);
-    console.log("Username update result:", { success, error, oldUsername: profile.username, newUsername });
-    if (success) {
-      setProfile(prev => ({ ...prev, username: newUsername }));
-      progress.save("SYSTEM||PROFILE||username", { value: newUsername, updatedAt: Date.now() });
-      setIsEditingUsername(false);
-      setUsernameSuccess(true);
-      setTimeout(() => setUsernameSuccess(false), 3000);
-    } else {
-      setUsernameError(error || "Failed to update username");
     }
   };
 
@@ -265,62 +225,11 @@ export function ProfileView({
 
           {nameSuccess && <div style={{ color: "#10b981", fontSize: 14, fontWeight: 600, marginBottom: 12 }}>Name updated successfully!</div>}
 
-          {isEditingUsername ? (
-              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 10, marginBottom: 16 }}>
-                  <input
-                      type="text"
-                      value={editUsernameValue}
-                      onChange={e => setEditUsernameValue(e.target.value)}
-                      placeholder="Enter new username"
-                      style={{
-                          padding: "10px 16px",
-                          borderRadius: 12,
-                          border: "1px solid #cbd5e1",
-                          fontSize: 16,
-                          textAlign: "center",
-                          fontWeight: 700,
-                          color: "#1e293b",
-                          background: "#fff",
-                          width: "100%", maxWidth: 300
-                      }}
-                  />
-                  {usernameError && <div style={{ color: "#ef4444", fontSize: 13 }}>{usernameError}</div>}
-                  <div style={{ fontSize: 12, color: "#64748b" }}>3-20 characters, letters/numbers/underscore only</div>
-                  <div style={{ display: "flex", gap: 8 }}>
-                      <button 
-                          onClick={handleSaveUsername}
-                          style={{
-                              background: "#10b981", color: "white",
-                              border: "none", padding: "6px 16px", borderRadius: 8,
-                              fontWeight: 600, cursor: "pointer"
-                          }}
-                      >Save</button>
-                      <button 
-                          onClick={() => { setIsEditingUsername(false); setEditUsernameValue(profile.username); setUsernameError(""); }}
-                          style={{
-                              background: "rgba(0,0,0,0.05)", color: "#64748b",
-                              border: "none", padding: "6px 16px", borderRadius: 8,
-                              fontWeight: 600, cursor: "pointer"
-                          }}
-                      >Cancel</button>
-                  </div>
+          <div style={{ display: "flex", justifyContent: "center", gap: 8, marginBottom: 16 }}>
+              <div style={{ background: "rgba(99,102,241,0.1)", color: "#4f46e5", padding: "6px 12px", borderRadius: 20, fontWeight: 700, fontSize: 14 }}>
+                  @{profile.username}
               </div>
-          ) : (
-              <div style={{ display: "flex", justifyContent: "center", gap: 8, marginBottom: 16 }}>
-                  <div style={{ background: "rgba(99,102,241,0.1)", color: "#4f46e5", padding: "6px 12px", borderRadius: 20, fontWeight: 700, fontSize: 14 }}>
-                      @{profile.username}
-                  </div>
-                  <button 
-                      onClick={() => setIsEditingUsername(true)}
-                      style={{ background: "none", border: "none", cursor: "pointer", fontSize: 14, color: "#94a3b8" }}
-                      title="Edit Username"
-                  >
-                      ✏️
-                  </button>
-              </div>
-          )}
-
-          {usernameSuccess && <div style={{ color: "#10b981", fontSize: 14, fontWeight: 600, marginBottom: 12 }}>✅ Username updated! Leaderboard will reflect changes on next quiz. 🎉</div>}
+          </div>
 
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16, color: "#64748b", fontSize: 14 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
