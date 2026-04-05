@@ -105,8 +105,10 @@ export function useNavigation() {
     setViewStackState(newStack);
   };
 
-  const navigate = (v) => {
+  const navigate = (v, options = {}) => {
     setView(v);
+    if (options.chapter) setChapter(options.chapter);
+    if (options.subject) setSubject(options.subject);
     setViewStack(s => [...s, v]);
   };
 

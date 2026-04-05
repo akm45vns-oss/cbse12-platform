@@ -156,8 +156,7 @@ export function WeakTopicsReport() {
                   animation: "slideDown 0.3s ease"
                 }}>
                   <button
-                    onClick={(e) => {
-                      e.stopPropagation();
+                    onClick={() => {
                       nav.navigate("quiz", { chapter: item.topic });
                     }}
                     style={{
@@ -165,12 +164,13 @@ export function WeakTopicsReport() {
                       background: "linear-gradient(135deg, #dc2626, #b91c1c)",
                       color: "white",
                       border: "none",
-                      padding: "10px 16px",
+                      padding: "12px 16px",
                       borderRadius: 10,
                       fontWeight: 800,
                       fontSize: 13,
                       cursor: "pointer",
                       transition: "all 0.2s",
+                      boxShadow: "0 4px 12px rgba(220, 38, 38, 0.2)"
                     }}
                     onMouseEnter={e => {
                       e.currentTarget.style.transform = "translateY(-2px)";
@@ -178,7 +178,7 @@ export function WeakTopicsReport() {
                     }}
                     onMouseLeave={e => {
                       e.currentTarget.style.transform = "translateY(0)";
-                      e.currentTarget.style.boxShadow = "none";
+                      e.currentTarget.style.boxShadow = "0 4px 12px rgba(220, 38, 38, 0.2)";
                     }}
                   >
                     📝 Practice {item.topic}
@@ -270,8 +270,7 @@ export function WeakTopicsReport() {
                     </div>
                   </div>
                   <button
-                    onClick={(e) => {
-                      e.stopPropagation();
+                    onClick={() => {
                       nav.navigate("quiz", { chapter: ch.chapter, subject: ch.subject });
                     }}
                     style={{
@@ -279,12 +278,13 @@ export function WeakTopicsReport() {
                       background: "linear-gradient(135deg, #dc2626, #b91c1c)",
                       color: "white",
                       border: "none",
-                      padding: "10px 16px",
+                      padding: "12px 16px",
                       borderRadius: 10,
                       fontWeight: 800,
                       fontSize: 13,
                       cursor: "pointer",
                       transition: "all 0.2s",
+                      boxShadow: "0 4px 12px rgba(220, 38, 38, 0.2)"
                     }}
                     onMouseEnter={e => {
                       e.currentTarget.style.transform = "translateY(-2px)";
@@ -292,7 +292,7 @@ export function WeakTopicsReport() {
                     }}
                     onMouseLeave={e => {
                       e.currentTarget.style.transform = "translateY(0)";
-                      e.currentTarget.style.boxShadow = "none";
+                      e.currentTarget.style.boxShadow = "0 4px 12px rgba(220, 38, 38, 0.2)";
                     }}
                   >
                     📝 Practice {ch.chapter}

@@ -96,7 +96,7 @@ export function ProfileView({
       return;
     }
 
-    const { success, error } = await updateUsername(currentUser, newUsername);
+    const { success, error } = await updateUsername(profile.username, newUsername);
     if (success) {
       setProfile(prev => ({ ...prev, username: newUsername }));
       progress.save("SYSTEM||PROFILE||username", { value: newUsername, updatedAt: Date.now() });
