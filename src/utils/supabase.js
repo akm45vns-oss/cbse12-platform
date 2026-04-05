@@ -175,27 +175,32 @@ export async function updateUsername(currentUsername, newUsername) {
     // Check if new username already exists
     const { data: existing, error: checkError } = await supabase
       .from("users")
-      .select("username")
-      .eq("username", newUsername)
-      .single();
+      .select("username", { count: "exact" })
+      .eq("username", newUsername);
 
-    if (existing) {
+    if (existing && existing.length > 0) {
       return { success: false, error: "Username already taken" };
     }
 
-    // If checkError and it's not "PGRST116" (no rows found), it's a real error
-    if (checkError && checkError.code !== 'PGRST116') {
+    if (checkError) {
+      console.error("Error checking username:", checkError);
       return { success: false, error: "Error validating username" };
     }
 
     // Update username in users table
-    const { error: updateError } = await supabase
+    const { data: updateData, error: updateError } = await supabase
       .from("users")
       .update({ username: newUsername })
-      .eq("username", currentUsername);
+      .eq("username", currentUsername)
+      .select();
 
     if (updateError) {
+      console.error("Update error:", updateError);
       return { success: false, error: "Failed to update username" };
+    }
+
+    if (!updateData || updateData.length === 0) {
+      return { success: false, error: "Username not found" };
     }
 
     // Update all quiz_submissions with new username

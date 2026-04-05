@@ -85,6 +85,11 @@ export function ProfileView({
     setUsernameError("");
     setUsernameSuccess(false);
     
+    if (!profile) {
+      setUsernameError("Profile not loaded");
+      return;
+    }
+    
     const newUsername = editUsernameValue.trim();
     if (!newUsername || newUsername.length < 3) {
       setUsernameError("Username must be at least 3 characters");
@@ -97,6 +102,7 @@ export function ProfileView({
     }
 
     const { success, error } = await updateUsername(profile.username, newUsername);
+    console.log("Username update result:", { success, error, oldUsername: profile.username, newUsername });
     if (success) {
       setProfile(prev => ({ ...prev, username: newUsername }));
       progress.save("SYSTEM||PROFILE||username", { value: newUsername, updatedAt: Date.now() });
@@ -104,7 +110,7 @@ export function ProfileView({
       setUsernameSuccess(true);
       setTimeout(() => setUsernameSuccess(false), 3000);
     } else {
-      setUsernameError(error);
+      setUsernameError(error || "Failed to update username");
     }
   };
 
