@@ -166,58 +166,54 @@ export async function updateUserName(username, newName) {
  */
 export async function updateUsername(currentUsername, newUsername) {
   try {
+    console.log("Attempting to update username:", { currentUsername, newUsername });
+    
     // Validate new username
     const validationError = validateUsername(newUsername);
     if (validationError) {
+      console.error("Validation error:", validationError);
       return { success: false, error: validationError };
     }
 
     // Check if new username already exists
-    const { data: existing, error: checkError } = await supabase
-      .from("users")
-      .select("username", { count: "exact" })
-      .eq("username", newUsername);
+    try {
+      const { data: existing } = await supabase
+        .from("users")
+        .select("id")
+        .eq("username", newUsername)
+        .limit(1);
 
-    if (existing && existing.length > 0) {
-      return { success: false, error: "Username already taken" };
+      if (existing && existing.length > 0) {
+        console.warn("Username already exists");
+        return { success: false, error: "Username already taken" };
+      }
+    } catch (checkErr) {
+      console.warn("Warning checking username existence:", checkErr);
     }
 
-    if (checkError) {
-      console.error("Error checking username:", checkError);
-      return { success: false, error: "Error validating username" };
+    console.log("Validation passed, calling RPC function...");
+
+    // Call the RPC function to update username
+    const { data, error } = await supabase.rpc("update_user_username", {
+      current_username: currentUsername,
+      new_username: newUsername
+    });
+
+    if (error) {
+      console.error("RPC update error:", error);
+      return { success: false, error: error.message || "Failed to update username" };
     }
 
-    // Update username in users table
-    const { data: updateData, error: updateError } = await supabase
-      .from("users")
-      .update({ username: newUsername })
-      .eq("username", currentUsername)
-      .select();
+    console.log("RPC response:", data);
 
-    if (updateError) {
-      console.error("Update error:", updateError);
-      return { success: false, error: "Failed to update username" };
-    }
-
-    if (!updateData || updateData.length === 0) {
-      return { success: false, error: "Username not found" };
-    }
-
-    // Update all quiz_submissions with new username
-    const { error: submissionsError } = await supabase
-      .from("quiz_submissions")
-      .update({ username: newUsername })
-      .eq("username", currentUsername);
-
-    if (submissionsError) {
-      console.warn("Warning: Could not update some quiz submissions:", submissionsError);
-      // Don't fail the operation, but warn the user
+    if (data && data.success === false) {
+      return { success: false, error: data.error || "Failed to update username" };
     }
 
     return { success: true };
   } catch (err) {
     console.error("Update username error:", err);
-    return { success: false, error: "Network error updating username" };
+    return { success: false, error: err.message || "Network error updating username" };
   }
 }
 
