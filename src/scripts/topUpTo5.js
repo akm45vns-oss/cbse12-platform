@@ -74,57 +74,57 @@ function normalizeQuestion(q) {
 
 async function fetchGroqContent(prompt, maxTokens = 2500, temperature = 0.4) {
   // FASTEST AVAILABLE MODELS (in order of preference)
-  const MODEL_CANDIDATES = ['llama-3.3-70b-versatile', 'llama-3.1-8b-instant'];
+  const MODEL_CANDIDATES = ['llama-3.1-8b-instant', 'llama-3.3-70b-versatile'];
   let lastError = 'No model returned a valid response';
 
   for (let m = 0; m < MODEL_CANDIDATES.length; m++) {
     const model = MODEL_CANDIDATES[m];
     
-    // PARALLEL MODE: Fire all 5 API keys concurrently for this model
-    const parallelRequests = GROQ_KEYS.map(groqKey => 
-      fetch('https://api.groq.com/openai/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${groqKey}`,
-        },
-        body: JSON.stringify({
-          model,
-          max_tokens: maxTokens,
-          temperature,
-          messages: [{ role: 'user', content: prompt }],
-        }),
-      })
-    );
+    // SEQUENTIAL MODE: Try each API key one at a time (respects rate limits better)
+    for (let keyIdx = 0; keyIdx < GROQ_KEYS.length; keyIdx++) {
+      try {
+        const groqKey = GROQ_KEYS[keyIdx];
+        
+        const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${groqKey}`,
+          },
+          body: JSON.stringify({
+            model,
+            max_tokens: maxTokens,
+            temperature,
+            messages: [{ role: 'user', content: prompt }],
+          }),
+        });
 
-    try {
-      // Race: Use whichever API key responds first successfully
-      const response = await Promise.race(
-        parallelRequests.map(p => 
-          p.then(res => {
-            if (!res.ok) throw new Error(`${res.status}`);
-            return res;
-          })
-        )
-      );
+        if (!response.ok) {
+          const statusCode = response.status;
+          if (statusCode === 429) {
+            // Rate limited on this key, try next key
+            continue;
+          }
+          throw new Error(`HTTP ${statusCode}`);
+        }
 
-      const data = await response.json();
-      const text = data.choices?.[0]?.message?.content || '';
-      
-      if (!text) {
-        lastError = `Model ${model} returned empty content`;
-        continue;
+        const data = await response.json();
+        const text = data.choices?.[0]?.message?.content || '';
+        
+        if (!text) {
+          lastError = `Model ${model} returned empty content`;
+          continue;
+        }
+
+        return text;
+      } catch (err) {
+        lastError = `Key ${keyIdx + 1}/${GROQ_KEYS.length} failed: ${err.message}`;
       }
-
-      return text;
-    } catch (err) {
-      // Check if it's a 429 rate limit on all APIs
-      if (err.message === '429') {
-        console.log(`     ⏳ All ${GROQ_KEYS.length} API keys rate limited on ${model}, waiting 60s...`);
-        await new Promise((resolve) => setTimeout(resolve, 60000));
-      }
-      lastError = `Model ${model} all keys failed: ${err.message}`;
     }
+    
+    // All keys failed for this model, wait and retry all keys
+    console.log(`     ⏳ All ${GROQ_KEYS.length} API keys tried (${model}), waiting 30s...`);
+    await new Promise((resolve) => setTimeout(resolve, 30000));
   }
 
   throw new Error(lastError);
@@ -296,10 +296,10 @@ async function run() {
   console.log(`Target sets per chapter: ${TARGET_SETS}`);
   console.log(`Retry wait: ${FAST_RETRY_WAIT_MS}ms | set delay: ${FAST_BETWEEN_SET_WAIT_MS}ms | chapter delay: ${FAST_BETWEEN_CHAPTER_WAIT_MS}ms\n`);
 
-  // Fetch all chapters
+  // Fetch all chapters (metadata only - NOT full questions to avoid huge payloads)
   let allRows = [], from = 0, to = 999, hasMore = true;
   while(hasMore) {
-    const { data, error } = await supabase.from('quiz_sets').select('subject, chapter, set_number, questions').range(from, to);
+    const { data, error } = await supabase.from('quiz_sets').select('subject, chapter, set_number').range(from, to);
     if (error) { console.error("Error:", error); return; }
     if (data.length > 0) {
       allRows.push(...data);
@@ -314,9 +314,8 @@ async function run() {
   allRows.forEach(row => {
     const key = `${row.subject}|||${row.chapter}`;
     if (!chapterData[key]) chapterData[key] = { subject: row.subject, chapter: row.chapter, validSets: new Set() };
-    if (Array.isArray(row.questions) && row.questions.length === 30) {
-      chapterData[key].validSets.add(row.set_number);
-    }
+    // If set exists in DB, trust it (we didn't fetch full questions to avoid huge payloads)
+    chapterData[key].validSets.add(row.set_number);
   });
 
   // Include chapters with zero rows
@@ -381,16 +380,14 @@ async function run() {
         // Refresh valid sets from DB to get latest state
         const { data: freshRows, error: freshError } = await supabase
           .from('quiz_sets')
-          .select('set_number, questions')
+          .select('set_number')
           .eq('subject', chapter.subject)
           .eq('chapter', chapter.chapter);
 
         if (!freshError && freshRows) {
           chapter.validSets.clear();
           freshRows.forEach(row => {
-            if (Array.isArray(row.questions) && row.questions.length === 30) {
-              chapter.validSets.add(row.set_number);
-            }
+            chapter.validSets.add(row.set_number);
           });
         }
 
