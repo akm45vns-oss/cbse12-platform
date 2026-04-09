@@ -3,6 +3,8 @@
  * Track Core Web Vitals and performance metrics in real-time
  */
 
+import { useEffect } from 'react';
+
 /**
  * Measure Core Web Vitals (CWV)
  * - Largest Contentful Paint (LCP): ~2.5s
@@ -246,7 +248,7 @@ export const logPerformanceMetrics = () => {
  * Hook for React to measure performance on mount
  */
 export const usePerformanceMetrics = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     // Give the page time to fully load
     const timer = setTimeout(() => {
       logPerformanceMetrics();
