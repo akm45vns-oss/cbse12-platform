@@ -4,17 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/akmedu-logo.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  
+  <!-- ===== PERFORMANCE & RESPONSIVENESS ===== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#0891b2" />
   <meta name="description"
     content="AkmEdu45 - Comprehensive Class 12 Study Platform with original educational content, AI-generated study materials, quizzes, and analytics" />
+  
+  <!-- Performance: Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  
+  <!-- Performance: Critical Font Loading (system-ui fallback) -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet"></noscript>
+  
   <title>AkmEdu45 - Smart Study Platform</title>
-  <!-- Professional Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap"
-    rel="stylesheet" />
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) - Async for better performance -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDPNQ6GG18"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -26,8 +35,8 @@
 
 <body>
   <div id="root"></div>
+  <!-- Main app script with type=module for modern bundling -->
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
-</html
-
+</html>

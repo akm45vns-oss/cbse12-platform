@@ -5,38 +5,106 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  /* Performance: GPU acceleration for smooth scrolling */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Mobile-first: System fonts for faster rendering */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
   background: #fff0f5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  /* Mobile optimization: Prevent zoom on input focus */
+  -webkit-user-scalable: yes;
+  -webkit-touch-callout: none;
 }
 
 #root {
   width: 100%;
   min-height: 100vh;
+  /* Performance: GPU acceleration for animations */
+  will-change: transform;
 }
 
+/* Mobile-first responsive images */
 img, video {
   max-width: 100%;
   height: auto;
+  display: block;
+  /* Performance: Lazy load images (works with loading="lazy") */
 }
 
+/* Responsive input and form elements */
 input, button, textarea, select {
   font: inherit;
+  /* Mobile: 16px prevents zoom on focus */
+  font-size: 16px;
 }
 
-/* Prevent horizontal scroll */
+/* Prevent horizontal scroll layout */
 * {
   max-width: 100%;
 }
 
+/* Code blocks with responsive overflow */
 pre {
   overflow-x: auto;
   white-space: pre-wrap;
   word-break: break-word;
+  /* Mobile optimization: Prevent text selection while scrolling */
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* ===== MOBILE-FIRST RESPONSIVE TYPOGRAPHY ===== */
+/* Default: Mobile (320px and up) */
+@media screen {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Tablet (640px and up) */
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* ===== MOBILE-OPTIMIZED SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile touch-friendly focus states */
+@media (hover: none) and (pointer: coarse) {
+  button, a, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }

@@ -20,12 +20,43 @@ export default defineConfig({
     },
     // Chunk size warnings
     chunkSizeWarningLimit: 600,
+    // Production optimizations
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+        pure_funcs: ['console.log', 'console.debug', 'console.info']
+      },
+      output: {
+        comments: false
+      }
+    },
+    // CSS optimization
+    cssCodeSplit: true,
+    cssMinify: true,
+    // Source maps for production debugging (can be disabled)
+    sourcemap: false,
+    // Report compressed size
+    reportCompressedSize: true,
+    // Optimize images and assets
+    assetsInlineLimit: 4096, // Inline assets smaller than 4kb
+    assetsDir: 'assets',
+    // Manifest for resource preloading
+    emptyOutDir: true,
   },
   server: {
     // Better HMR for development
     hmr: {
       protocol: 'ws',
       timeout: 60000
-    }
+    },
+    // Enable compression in dev
+    middlewareMode: false,
+  },
+  // Optimize dependencies
+  optimizeDeps: {
+    include: ['react', 'react-dom', '@supabase/supabase-js'],
+    exclude: ['@anthropic-ai/sdk', '@google/generative-ai']
   }
 })

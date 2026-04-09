@@ -1,0 +1,277 @@
+/* ===== MOBILE-FIRST RESPONSIVE DESIGN ===== */
+/* This file contains responsive breakpoints and mobile optimizations */
+
+/* ===== MOBILE BREAKPOINTS ===== */
+/* xs: 320px - Extra Small phones */
+/* sm: 640px - Small phones/tablets */
+/* md: 1024px - Medium tablets/small laptops */
+/* lg: 1280px - Large laptops */
+/* xl: 1536px - Extra large screens */
+
+/* ===== TOUCH-FRIENDLY INTERACTIVE ELEMENTS ===== */
+@media (hover: none) and (pointer: coarse) {
+  /* Mobile/Touch devices */
+  
+  /* Touch targets minimum 44x44px */
+  button, a, [role="button"], input[type="radio"], input[type="checkbox"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Increase spacing for touch */
+  .card {
+    margin-bottom: 12px;
+  }
+  
+  /* Remove hover effects on touch */
+  .card:hover {
+    transform: none;
+  }
+  
+  /* Better touch feedback */
+  button:active {
+    opacity: 0.8;
+    transform: scale(0.98);
+  }
+}
+
+/* ===== MOBILE CONTAINERS (320px - 639px) ===== */
+@media screen and (max-width: 639px) {
+  /* Mobile-first: Full width containers */
+  body {
+    padding: 0;
+  }
+  
+  /* Stack layout */
+  .grid, [display="grid"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Full-width cards */
+  .card, .modal {
+    margin: 8px;
+    border-radius: 12px;
+  }
+  
+  /* Responsive padding */
+  .container, main, article {
+    padding: 12px;
+  }
+  
+  /* Reduce spacing on mobile */
+  .spacing-lg { margin: 12px 0 !important; }
+  .spacing-xl { margin: 16px 0 !important; }
+  
+  /* Mobile typography */
+  h1 { font-size: 24px; line-height: 1.2; }
+  h2 { font-size: 20px; line-height: 1.3; }
+  h3 { font-size: 16px; line-height: 1.4; }
+  
+  /* Text overflow handling */
+  p, span, li {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Mobile input optimization */
+  input:not([type="radio"]):not([type="checkbox"]),
+  textarea,
+  select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px; /* Prevents zoom on focus */
+  }
+  
+  /* Full-width buttons */
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+  
+  /* Stack navigation items */
+  nav ul {
+    flex-direction: column;
+  }
+  
+  /* Hide desktop elements */
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+/* ===== TABLET (640px - 1023px) ===== */
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  /* Two column layout */
+  .grid-2 { grid-template-columns: 1fr 1fr; }
+  
+  /* Moderate padding */
+  .container { padding: 16px; }
+  
+  /* Adjusted card spacing */
+  .card { margin-bottom: 16px; }
+  
+  /* Tablet typography */
+  h1 { font-size: 28px; }
+  h3 { font-size: 18px; }
+  
+  /* Better spacing */
+  .spacing-lg { margin: 16px 0; }
+  
+  /* Input size optimization */
+  input, textarea, select {
+    font-size: 16px;
+  }
+}
+
+/* ===== DESKTOP (1024px and up) ===== */
+@media screen and (min-width: 1024px) {
+  /* Hover effects on desktop */
+  button:hover {
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+  }
+  
+  /* Three+ column layouts */
+  .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .grid-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+  
+  /* Desktop padding */
+  .container { padding: 24px 32px; max-width: 1200px; margin: 0 auto; }
+  
+  /* Show desktop elements */
+  .mobile-only {
+    display: none !important;
+  }
+  
+  /* Optimized spacing */
+  .spacing-xl { margin: 32px 0; }
+}
+
+/* ===== LANDSCAPE ORIENTATION OPTIMIZATIONS ===== */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  /* Reduce vertical spacing on landscape mobile */
+  body { padding: 8px; }
+  h1, h2 { margin: 4px 0; }
+  .card { padding: 12px; }
+  .spacing-lg { margin: 8px 0 !important; }
+}
+
+/* ===== TABLET LANDSCAPE ===== */
+@media screen and (orientation: landscape) and (min-width: 640px) {
+  /* Allow more columns in landscape */
+  .grid { grid-auto-flow: column; }
+  .grid-2 { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+/* ===== PERFORMANCE: REDUCE MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===== DARK MODE SUPPORT ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+  
+  body {
+    background: #1a1a1a;
+    color: #f0f0f0;
+  }
+  
+  input, textarea, select {
+    background: #2a2a2a;
+    color: #f0f0f0;
+    border-color: #444;
+  }
+}
+
+/* ===== HIGH CONTRAST MODE ===== */
+@media (prefers-contrast: more) {
+  button, a {
+    text-decoration: underline;
+  }
+  
+  .card {
+    border-width: 2px;
+  }
+}
+
+/* ===== PRINT OPTIMIZATION ===== */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  /* Page break optimization */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+  
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+}
+
+/* ===== RETINA DISPLAY OPTIMIZATION ===== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Use higher quality assets for retina displays */
+  img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+  
+  /* Thinner borders on retina */
+  .card {
+    border-width: 0.5px;
+  }
+}
+
+/* ===== SAFE AREA INSETS (Notch Support) ===== */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+    padding-top: max(12px, env(safe-area-inset-top));
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+  }
+}
+
+/* ===== VISIBILITY & ACCESSIBILITY ===== */
+/* Skip to content link - visible on focus */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Focus visible for keyboard navigation */
+:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}

@@ -1,4 +1,4 @@
-import { useState, useEffect, Suspense, lazy } from "react";
+import { useState, useEffect, Suspense, lazy, useRef } from "react";
 import { useAuth, useNavigation, useProgress, useTheme } from "./hooks";
 import { callClaude } from "./utils/api";
 import { getChapterNotes, getQuizSet, getQuizSetStatus, getQuizSetSummaries, saveQuizSubmission } from "./utils/supabase";
@@ -62,6 +62,10 @@ export default function App() {
   const [quizSetStatus, setQuizSetStatus] = useState({}); // Track best scores per set
   const [availableSets, setAvailableSets] = useState([]); // Actual set numbers in DB
 
+  // Refs for cancellation tokens
+  const abortControllerRef = useRef(null);
+  const prevChapterRef = useRef(null);
+
   // Load progress on user login
   useEffect(() => {
     if (auth.currentUser) {
@@ -73,16 +77,47 @@ export default function App() {
     }
   }, [auth.currentUser]);
 
+  // Clear notes and quiz when chapter changes (prevents race condition)
+  useEffect(() => {
+    const key = `${nav.subject}||${nav.chapter}`;
+    const prevKey = prevChapterRef.current;
+    
+    if (prevKey && prevKey !== key) {
+      // Chapter has changed, cancel any pending requests
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort();
+        abortControllerRef.current = null;
+      }
+      // Clear stale content
+      setNotes("");
+      setQuiz([]);
+      setAnswers({});
+      setSubmitted(false);
+      setQIdx(0);
+    }
+    prevChapterRef.current = key;
+  }, [nav.subject, nav.chapter]);
+
   // Content generation functions
   const genNotes = async (subj, chap) => {
     setLoading(true);
     setLoadMsg(`Loading notes for "${chap}"`);
     setLoadEmoji("📝");
     setNotes("");
+
+    // Cancel previous request and create new controller
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+    const controller = new AbortController();
+    abortControllerRef.current = controller;
+
     try {
       // 1. Check localStorage cache first (fastest)
+      if (controller.signal.aborted) return;
       const localCached = getCachedNotes(subj, chap);
       if (localCached) {
+        if (controller.signal.aborted) return;
         setNotes(localCached);
         progress.save(`${subj}||${chap}||notes`, { read: true, date: Date.now() });
         setLoading(false);
@@ -90,7 +125,9 @@ export default function App() {
       }
 
       // 2. Try to load from database (database cache)
+      if (controller.signal.aborted) return;
       const dbNotes = await getChapterNotes(subj, chap);
+      if (controller.signal.aborted) return;
       if (dbNotes) {
         setNotes(dbNotes);
         cacheNotes(subj, chap, dbNotes, 1440); // Cache for 24 hours
@@ -100,6 +137,7 @@ export default function App() {
       }
 
       // 3. If not in database, generate with API (fallback)
+      if (controller.signal.aborted) return;
       setLoadMsg(`Generating notes for "${chap}"...`);
       const text = await callClaude(
         `Create comprehensive, ORIGINAL study material for the topic "${chap}" in ${subj}.
@@ -131,11 +169,14 @@ Format the notes as follows:
 IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and structure. Do not copy or closely paraphrase from any textbooks. Ensure content is accurate and educationally sound.`,
         3500
       );
+      if (controller.signal.aborted) return;
       setNotes(text);
       cacheNotes(subj, chap, text, 1440); // Cache generated notes for 24 hours
       progress.save(`${subj}||${chap}||notes`, { read: true, date: Date.now() });
     } catch (e) {
-      setNotes("❌ Error: " + e.message);
+      if (e.name !== 'AbortError') {
+        setNotes("❌ Error: " + e.message);
+      }
     }
     setLoading(false);
   };
@@ -151,18 +192,29 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
     setQuizErr("");
     setSelectedQuizSet(null);
 
+    // Cancel previous request and create new controller
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+    const controller = new AbortController();
+    abortControllerRef.current = controller;
+
     try {
+      if (controller.signal.aborted) return;
       // Load quiz set status AND available sets from database in parallel
       const [status, sets] = await Promise.all([
         getQuizSetStatus(auth.currentUser, subj, chap),
         getQuizSetSummaries(subj, chap)
       ]);
+      if (controller.signal.aborted) return;
       setQuizSetStatus(status || {});
       setAvailableSets(sets || []);
     } catch (e) {
-      console.error("Error loading quiz set status:", e);
-      setQuizSetStatus({});
-      setAvailableSets([]);
+      if (e.name !== 'AbortError') {
+        console.error("Error loading quiz set status:", e);
+        setQuizSetStatus({});
+        setAvailableSets([]);
+      }
     }
 
     setLoading(false);
@@ -199,7 +251,16 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
     setLoadMsg(`Generating Sample Paper Set ${setNum} for ${subj}`);
     setLoadEmoji("📄");
     setPaper("");
+
+    // Cancel previous request and create new controller
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+    const controller = new AbortController();
+    abortControllerRef.current = controller;
+
     try {
+      if (controller.signal.aborted) return;
       const prompt = `Generate a realistic, full-length Class 12 CBSE Board Examination Sample Paper for ${subj} (Set ${setNum}).
 Format the output with appropriate sections (Section A, B, C, D, etc.), marks distribution, and general instructions.
 Include a variety of question types (MCQ, Short Answer, Long Answer, Case-based) as per the latest CBSE pattern.
@@ -207,9 +268,12 @@ Use professional formatting with clear headings. Only provide the question paper
 Respond with the paper content directly.`;
       
       const text = await callClaude(prompt, 4000);
+      if (controller.signal.aborted) return;
       setPaper(text);
-    } catch {
-      setPaper("❌ Error generating sample paper. Please try again.");
+    } catch (e) {
+      if (e.name !== 'AbortError') {
+        setPaper("❌ Error generating sample paper. Please try again.");
+      }
     }
     setLoading(false);
   };
