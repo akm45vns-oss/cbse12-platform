@@ -1,5 +1,5 @@
 import { useState, useEffect, Suspense, lazy, useRef } from "react";
-import { useAuth, useNavigation, useProgress, useTheme } from "./hooks";
+import { useAuth, useNavigation, useProgress, useTheme, useScrollDirection } from "./hooks";
 import { callClaude } from "./utils/api";
 import { getChapterNotes, getQuizSet, getQuizSetStatus, getQuizSetSummaries, saveQuizSubmission } from "./utils/supabase";
 import { CURRICULUM, totalChapters } from "./constants/curriculum";
@@ -340,6 +340,7 @@ Respond with the paper content directly.`;
   }
 
   const S = nav.subject ? CURRICULUM[nav.subject] : null;
+  const { isScrollingUp, isAtTop } = useScrollDirection();
 
   return (
     <div
@@ -370,6 +371,9 @@ Respond with the paper content directly.`;
           zIndex: 100,
           boxShadow: "0 10px 40px rgba(0,0,0,0.5)",
           transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+          transform: isScrollingUp || isAtTop ? "translateY(0)" : "translateY(-100%)",
+          opacity: isScrollingUp || isAtTop ? 1 : 0,
+          pointerEvents: isScrollingUp || isAtTop ? "auto" : "none",
         }}
       >
         <div className="nav-bar">
