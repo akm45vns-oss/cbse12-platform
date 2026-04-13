@@ -149,17 +149,46 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
                     e.currentTarget.style.background = "rgba(255, 255, 255, 0.75)";
                   }}>
                   
-                  {/* Bookmark */}
+                  {/* Bookmark Button - Top Right Corner */}
                   <button
                     onClick={(e) => handleBookmarkClick(e, ch)}
                     style={{
-                      position: "absolute", top: 14, right: 14,
-                      background: "none", border: "none",
-                      fontSize: 16, cursor: "pointer",
-                      padding: 4, transition: "transform 0.2s",
+                      position: "absolute",
+                      top: 10,
+                      right: 10,
+                      background: "rgba(255, 255, 255, 0.95)",
+                      backdropFilter: "blur(10px)",
+                      border: "2px solid rgba(255, 107, 107, 0.3)",
+                      borderRadius: "50%",
+                      width: 44,
+                      height: 44,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontSize: 20,
+                      cursor: "pointer",
+                      padding: 0,
+                      transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+                      zIndex: 10,
+                      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                      hover: {
+                        transform: "scale(1.15) rotate(10deg)",
+                        boxShadow: "0 8px 20px rgba(255, 107, 107, 0.3)"
+                      }
                     }}
-                    onMouseEnter={e => (e.currentTarget.style.transform = "scale(1.3)")}
-                    onMouseLeave={e => (e.currentTarget.style.transform = "scale(1)")}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.transform = "scale(1.15) rotate(10deg)";
+                      e.currentTarget.style.boxShadow = "0 8px 20px rgba(255, 107, 107, 0.3)";
+                      e.currentTarget.style.borderColor = bookmarks[ch] ? "rgba(255, 59, 48, 0.6)" : "rgba(255, 107, 107, 0.5)";
+                      e.currentTarget.style.background = "rgba(255, 255, 255, 1)";
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.transform = "scale(1)";
+                      e.currentTarget.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.1)";
+                      e.currentTarget.style.borderColor = "rgba(255, 107, 107, 0.3)";
+                      e.currentTarget.style.background = "rgba(255, 255, 255, 0.95)";
+                    }}
+                    title={bookmarks[ch] ? "Remove from favorites" : "Add to favorites"}
                   >
                     {bookmarks[ch] ? "❤️" : "🤍"}
                   </button>
