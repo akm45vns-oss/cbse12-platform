@@ -595,8 +595,23 @@ Respond with the paper content directly.`;
               stats={progress.getStats()}
               progress={progress.data}
               theme={theme}
-              onSelectChapter={(chapter) => {
-                nav.navigateToChapter(chapter);
+              onSelectChapter={(chapter, viewType) => {
+                // If viewType is specified (notes or quiz), navigate directly to that view
+                if (viewType === 'notes') {
+                  nav.navigate("notes", { chapter });
+                  if (!notes) genNotes(nav.subject, chapter);
+                } else if (viewType === 'quiz') {
+                  setSelectedQuizSet(null);
+                  setQuiz([]);
+                  setAnswers({});
+                  setSubmitted(false);
+                  setQIdx(0);
+                  nav.navigate("quiz", { chapter });
+                  startQuiz(nav.subject, chapter);
+                } else {
+                  // Default behavior: navigate to chapter overview
+                  nav.navigateToChapter(chapter);
+                }
               }}
               onGeneratePaper={() => {
                 setSelectedPaperSet(1);
