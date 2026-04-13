@@ -165,62 +165,72 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
                   </button>
 
                   <div style={{ fontWeight: 700, color: "#1e293b", fontSize: 14, lineHeight: 1.5, marginBottom: 12, paddingRight: 28 }}>{ch}</div>
-                  <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-                    {/* Clickable Notes Button */}
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+                    {/* Clickable Notes Button - More Prominent */}
                     <button onClick={(e) => handleNotesClick(e, ch)}
                       style={{
                         display: "flex",
                         alignItems: "center",
+                        justifyContent: "center",
                         gap: 6,
-                        background: nRead ? "rgba(59, 130, 246, 0.1)" : "transparent",
-                        border: "1px solid " + (nRead ? "rgba(59, 130, 246, 0.3)" : "transparent"),
-                        borderRadius: 8,
-                        padding: "6px 12px",
+                        background: nRead ? "linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.1))" : "rgba(226, 232, 240, 0.6)",
+                        border: `2px solid ${nRead ? "rgba(59, 130, 246, 0.4)" : "rgba(100, 116, 139, 0.2)"}`,
+                        borderRadius: 10,
+                        padding: "8px 14px",
                         cursor: "pointer",
-                        transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)"
+                        transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+                        minHeight: "36px",
+                        minWidth: "auto"
                       }}
                       onMouseEnter={e => {
-                        e.currentTarget.style.background = "rgba(59, 130, 246, 0.15)";
-                        e.currentTarget.style.borderColor = "rgba(59, 130, 246, 0.4)";
-                        e.currentTarget.style.transform = "translateY(-1px)";
+                        e.currentTarget.style.background = "linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(59, 130, 246, 0.15))";
+                        e.currentTarget.style.borderColor = "rgba(59, 130, 246, 0.6)";
+                        e.currentTarget.style.transform = "translateY(-2px)";
+                        e.currentTarget.style.boxShadow = "0 4px 12px rgba(59, 130, 246, 0.2)";
                       }}
                       onMouseLeave={e => {
-                        e.currentTarget.style.background = nRead ? "rgba(59, 130, 246, 0.1)" : "transparent";
-                        e.currentTarget.style.borderColor = nRead ? "rgba(59, 130, 246, 0.3)" : "transparent";
+                        e.currentTarget.style.background = nRead ? "linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.1))" : "rgba(226, 232, 240, 0.6)";
+                        e.currentTarget.style.borderColor = nRead ? "rgba(59, 130, 246, 0.4)" : "rgba(100, 116, 139, 0.2)";
                         e.currentTarget.style.transform = "translateY(0)";
+                        e.currentTarget.style.boxShadow = "none";
                       }}>
-                      <span style={{ fontSize: 13 }}>{nRead ? "📖" : "📄"}</span>
-                      <span style={{ fontSize: 12, fontWeight: 600, color: nRead ? "#3b82f6" : "#64748b" }}>{nRead ? "Read" : "Notes"}</span>
+                      <span style={{ fontSize: 16 }}>{nRead ? "📖" : "📄"}</span>
+                      <span style={{ fontSize: 13, fontWeight: 700, color: nRead ? "#3b82f6" : "#64748b" }}>{nRead ? "Read" : "Notes"}</span>
                     </button>
 
-                    {/* Clickable Quiz Button */}
+                    {/* Clickable Quiz Button - More Prominent */}
                     <button onClick={(e) => handleQuizClick(e, ch)}
                       style={{
                         display: "flex",
                         alignItems: "center",
+                        justifyContent: "center",
                         gap: 6,
-                        background: best !== undefined ? "rgba(16, 185, 129, 0.1)" : "transparent",
-                        border: "1px solid " + (best !== undefined ? "rgba(16, 185, 129, 0.3)" : "transparent"),
-                        borderRadius: 8,
-                        padding: "6px 12px",
+                        background: best !== undefined ? "linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.1))" : "rgba(226, 232, 240, 0.6)",
+                        border: `2px solid ${best !== undefined ? "rgba(16, 185, 129, 0.4)" : "rgba(100, 116, 139, 0.2)"}`,
+                        borderRadius: 10,
+                        padding: "8px 14px",
                         cursor: "pointer",
-                        transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)"
+                        transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+                        minHeight: "36px",
+                        minWidth: "auto"
                       }}
                       onMouseEnter={e => {
-                        e.currentTarget.style.background = "rgba(16, 185, 129, 0.15)";
-                        e.currentTarget.style.borderColor = "rgba(16, 185, 129, 0.4)";
-                        e.currentTarget.style.transform = "translateY(-1px)";
+                        e.currentTarget.style.background = "linear-gradient(135deg, rgba(16, 185, 129, 0.25), rgba(16, 185, 129, 0.15))";
+                        e.currentTarget.style.borderColor = "rgba(16, 185, 129, 0.6)";
+                        e.currentTarget.style.transform = "translateY(-2px)";
+                        e.currentTarget.style.boxShadow = "0 4px 12px rgba(16, 185, 129, 0.2)";
                       }}
                       onMouseLeave={e => {
-                        e.currentTarget.style.background = best !== undefined ? "rgba(16, 185, 129, 0.1)" : "transparent";
-                        e.currentTarget.style.borderColor = best !== undefined ? "rgba(16, 185, 129, 0.3)" : "transparent";
+                        e.currentTarget.style.background = best !== undefined ? "linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.1))" : "rgba(226, 232, 240, 0.6)";
+                        e.currentTarget.style.borderColor = best !== undefined ? "rgba(16, 185, 129, 0.4)" : "rgba(100, 116, 139, 0.2)";
                         e.currentTarget.style.transform = "translateY(0)";
+                        e.currentTarget.style.boxShadow = "none";
                       }}>
-                      <span style={{ fontSize: 13 }}>{best !== undefined ? "✅" : "❓"}</span>
+                      <span style={{ fontSize: 16 }}>{best !== undefined ? "✅" : "❓"}</span>
                       {best !== undefined ? (
-                        <span style={{ fontSize: 12, fontWeight: 800, color: "#059669" }}>{best}/30</span>
+                        <span style={{ fontSize: 13, fontWeight: 800, color: "#059669" }}>{best}/30</span>
                       ) : (
-                        <span style={{ fontSize: 12, color: "#64748b" }}>Quiz</span>
+                        <span style={{ fontSize: 13, fontWeight: 700, color: "#64748b" }}>Quiz</span>
                       )}
                     </button>
                   </div>
