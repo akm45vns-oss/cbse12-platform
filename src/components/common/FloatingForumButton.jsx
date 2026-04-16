@@ -6,12 +6,12 @@ export function FloatingForumButton({ currentSubject = "", currentChapter = "", 
 
   return (
     <>
-      {/* Floating Button */}
+      {/* Floating Button - Positioned at top-right for easy access */}
       <button
         onClick={() => setIsForumOpen(true)}
         style={{
           position: "fixed",
-          bottom: 24,
+          top: 80,
           right: 24,
           width: 56,
           height: 56,
