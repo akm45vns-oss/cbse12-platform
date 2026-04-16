@@ -61,8 +61,12 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
 
   // Auto-scroll content to top when modal opens, questions load, or tab changes
   useEffect(() => {
-    if (contentRef.current) {
-      contentRef.current.scrollTop = 0;
+    if (contentRef.current && isOpen) {
+      try {
+        contentRef.current.scrollTop = 0;
+      } catch (e) {
+        console.error("Error scrolling content:", e);
+      }
     }
   }, [isOpen, questions, activeTab, selectedQuestion]);
 
@@ -76,18 +80,6 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
     };
     loadAnswers();
   }, [selectedQuestion]);
-
-  // Prevent body scroll when modal is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-    return () => {
-      document.body.style.overflow = "unset";
-    };
-  }, [isOpen]);
 
   const handlePostQuestion = async () => {
     if (!newQuestion.trim()) return;
