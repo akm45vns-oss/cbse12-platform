@@ -14,7 +14,7 @@ import {
 import { ImageUploader } from "./ImageUploader";
 
 export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapter = "", currentUser = "" }) {
-  const contentRef = useRef(null); // Ref for scrollable content area
+  const modalRef = useRef(null);
   const [activeTab, setActiveTab] = useState("recent"); // recent, trending, myChapter, search
   const [questions, setQuestions] = useState([]);
   const [selectedQuestion, setSelectedQuestion] = useState(null);
@@ -27,6 +27,21 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
   const [answerImage, setAnswerImage] = useState(""); // Image URL for answer
   const [stats, setStats] = useState({ totalQuestions: 0, totalAnswers: 0 });
   const [isLoading, setIsLoading] = useState(false);
+
+  // Scroll modal into view when opened
+  useEffect(() => {
+    if (isOpen && modalRef.current) {
+      // Scroll the modal container into view
+      setTimeout(() => {
+        try {
+          modalRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+        } catch (e) {
+          // Fallback: just scroll window to top
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }, 0);
+    }
+  }, [isOpen]);
 
   // Load forum stats
   useEffect(() => {
@@ -58,17 +73,6 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
     };
     loadQuestions();
   }, [isOpen, activeTab, searchQuery, currentSubject, currentChapter]);
-
-  // Auto-scroll content to top when modal opens, questions load, or tab changes
-  useEffect(() => {
-    if (contentRef.current && isOpen) {
-      try {
-        contentRef.current.scrollTop = 0;
-      } catch (e) {
-        console.error("Error scrolling content:", e);
-      }
-    }
-  }, [isOpen, questions, activeTab, selectedQuestion]);
 
   // Load answers when question is selected
   useEffect(() => {
@@ -141,6 +145,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
       onClick={onClose}
     >
       <div
+        ref={modalRef}
         style={{
           background: "white",
           borderRadius: 20,
@@ -240,7 +245,6 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
 
         {/* Content Area */}
         <div
-          ref={contentRef}
           style={{
             flex: 1,
             overflowY: "auto",

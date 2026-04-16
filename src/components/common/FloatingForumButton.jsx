@@ -6,11 +6,19 @@ export function FloatingForumButton({ currentSubject = "", currentChapter = "", 
   const [isForumOpen, setIsForumOpen] = useState(false);
   const { isScrollingUp, isAtTop } = useScrollDirection();
 
+  const handleOpenForum = () => {
+    setIsForumOpen(true);
+    // Scroll to top to ensure modal is visible
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 50);
+  };
+
   return (
     <>
       {/* Floating Button - Positioned at top-right for easy access */}
       <button
-        onClick={() => setIsForumOpen(true)}
+        onClick={handleOpenForum}
         style={{
           position: "fixed",
           top: 80,
