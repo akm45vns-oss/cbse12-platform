@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   getQuestions,
   getAnswers,
@@ -14,6 +14,7 @@ import {
 import { ImageUploader } from "./ImageUploader";
 
 export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapter = "", currentUser = "" }) {
+  const contentRef = useRef(null); // Ref for scrollable content area
   const [activeTab, setActiveTab] = useState("recent"); // recent, trending, myChapter, search
   const [questions, setQuestions] = useState([]);
   const [selectedQuestion, setSelectedQuestion] = useState(null);
@@ -57,6 +58,13 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
     };
     loadQuestions();
   }, [isOpen, activeTab, searchQuery, currentSubject, currentChapter]);
+
+  // Auto-scroll content to top when modal opens, questions load, or tab changes
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollTop = 0;
+    }
+  }, [isOpen, questions, activeTab, selectedQuestion]);
 
   // Load answers when question is selected
   useEffect(() => {
@@ -228,6 +236,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
 
         {/* Content Area */}
         <div
+          ref={contentRef}
           style={{
             flex: 1,
             overflowY: "auto",
