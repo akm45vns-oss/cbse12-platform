@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useScrollDirection } from "../../hooks";
 import { ForumModal } from "./ForumModal";
 
 export function FloatingForumButton({ currentSubject = "", currentChapter = "", currentUser = "" }) {
   const [isForumOpen, setIsForumOpen] = useState(false);
+  const { isScrollingUp, isAtTop } = useScrollDirection();
 
   return (
     <>
@@ -26,6 +28,9 @@ export function FloatingForumButton({ currentSubject = "", currentChapter = "", 
           justifyContent: "center",
           zIndex: 999,
           transition: "all 0.3s",
+          transform: isScrollingUp || isAtTop ? "translateX(0)" : "translateX(100px)",
+          opacity: isScrollingUp || isAtTop ? 1 : 0,
+          pointerEvents: isScrollingUp || isAtTop ? "auto" : "none",
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.transform = "scale(1.1)";
