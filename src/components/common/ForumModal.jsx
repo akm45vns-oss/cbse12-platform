@@ -77,6 +77,18 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
     loadAnswers();
   }, [selectedQuestion]);
 
+  // Prevent body scroll when modal is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
   const handlePostQuestion = async () => {
     if (!newQuestion.trim()) return;
 
