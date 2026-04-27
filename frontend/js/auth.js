@@ -11,6 +11,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const authBox = document.getElementById("auth-box");
     
+    // Password Visibility Toggle
+    document.querySelectorAll('.password-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = btn.getAttribute('data-target');
+            const input = document.getElementById(targetId);
+            if (input) {
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    btn.textContent = '👁️‍🗨️';
+                } else {
+                    input.type = 'password';
+                    btn.textContent = '👁️';
+                }
+            }
+        });
+    });
+    
     // Toggles between forms
     const btnShowReg = document.getElementById("show-register");
     const btnShowLog = document.getElementById("show-login");
