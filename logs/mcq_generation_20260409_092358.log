@@ -1,0 +1,51 @@
+2026-04-09 09:23:58,358 - INFO - Loaded API key 1
+2026-04-09 09:23:58,358 - INFO - Loaded API key 2
+2026-04-09 09:23:58,358 - INFO - Loaded API key 3
+2026-04-09 09:23:58,358 - INFO - Loaded API key 4
+2026-04-09 09:23:58,359 - INFO - Loaded API key 5
+2026-04-09 09:23:58,359 - INFO - Loaded 5 API keys for load balancing
+2026-04-09 09:24:01,558 - INFO - ======================================================================
+2026-04-09 09:24:01,558 - INFO - STARTING ADVANCED MCQ GENERATOR
+2026-04-09 09:24:01,558 - INFO - API Keys Available: 5
+2026-04-09 09:24:01,558 - INFO - Batch Size: 8
+2026-04-09 09:24:01,560 - INFO - ======================================================================
+2026-04-09 09:24:01,609 - INFO - Found 40 topics needing generation
+
+2026-04-09 09:24:01,616 - INFO - 
+[1/40] Python Programming -> Fundamentals of Python -> Input and Output
+2026-04-09 09:24:01,617 - INFO - 
+======================================================================
+2026-04-09 09:24:01,617 - INFO - Generating 30 MCQs for: Input and Output
+2026-04-09 09:24:01,617 - INFO - ======================================================================
+2026-04-09 09:24:01,617 - INFO -    [EASY] Generating 12 easy questions...
+2026-04-09 09:24:01,617 - INFO - API call (attempt 1/6, key rotation active)...
+2026-04-09 09:24:04,230 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 09:24:04,255 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:04,255 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:04,256 - INFO - [OK] Valid question: How to print output?...
+2026-04-09 09:24:04,256 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:04,256 - INFO - [OK] Valid question: Input function return type?...
+2026-04-09 09:24:04,256 - INFO - [OK] Valid question: Print function purpose?...
+2026-04-09 09:24:04,256 - INFO - [OK] Valid question: How to get user input?...
+2026-04-09 09:24:04,256 - INFO - [OK] Valid question: Stdout and stdin relation?...
+2026-04-09 09:24:04,256 - INFO - API call (attempt 1/6, key rotation active)...
+2026-04-09 09:24:06,037 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 09:24:06,038 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:06,038 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:06,038 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:06,039 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:06,039 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:06,039 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:06,039 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:06,039 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:06,039 - INFO - API call (attempt 1/6, key rotation active)...
+2026-04-09 09:24:07,989 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 09:24:07,991 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:07,992 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:07,992 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:07,992 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:07,992 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:07,993 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:07,993 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:07,993 - WARNING - [SKIP] Invalid question rejected
+2026-04-09 09:24:07,993 - INFO - API call (attempt 1/6, key rotation active)...

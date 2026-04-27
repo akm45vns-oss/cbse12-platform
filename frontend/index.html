@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Study Hub — Sign In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Specific Auth Page Overrides */
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 16px;
+        background-image:
+          radial-gradient(ellipse 80% 50% at 20% -10%, rgba(79,142,247,0.15) 0%, transparent 60%),
+          radial-gradient(ellipse 60% 50% at 80% 100%, rgba(139,92,246,0.15) 0%, transparent 60%);
+    }
+    
+    .auth-container {
+        width: 100%;
+        max-width: 440px;
+        background: rgba(10,14,26,0.6);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-xl);
+        padding: 40px;
+        backdrop-filter: blur(30px);
+        box-shadow: var(--shadow-card);
+        position: relative;
+        overflow: hidden;
+    }
+    .auth-container::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; height: 4px;
+        background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    }
+    .auth-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .auth-icon { font-size: 40px; margin-bottom: 12px; filter: drop-shadow(0 0 10px rgba(79,142,247,0.5)); }
+    .auth-title { font-size: 24px; font-weight: 800; color: var(--text-1); letter-spacing: -0.5px; }
+    .auth-subtitle { font-size: 13px; color: var(--text-3); margin-top: 5px; }
+
+    .form-group { margin-bottom: 16px; }
+    .form-label { display: block; font-size: 12px; font-weight: 600; color: var(--text-2); margin-bottom: 6px; }
+    .form-input {
+        width: 100%;
+        padding: 12px 16px;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-md);
+        color: var(--text-1);
+        font-size: 16px;
+        transition: all var(--transition);
+        outline: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    .form-input:focus {
+        border-color: rgba(79,142,247,0.5);
+        background: rgba(79,142,247,0.05);
+        box-shadow: 0 0 0 3px rgba(79,142,247,0.1);
+    }
+    
+    .auth-btn {
+        width: 100%;
+        padding: 16px;
+        margin-top: 10px;
+        font-size: 15px;
+        border-radius: var(--radius-md);
+        min-height: 48px;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .auth-toggle {
+        text-align: center;
+        margin-top: 24px;
+        font-size: 13px;
+        color: var(--text-2);
+    }
+    .auth-toggle a {
+        color: var(--accent-blue);
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .auth-toggle a:hover { text-decoration: underline; }
+
+    #register-form { display: none; }
+    .mode-register #login-form { display: none; }
+    .mode-register #register-form { display: block; }
+
+    /* ═══════════════════════════════════════════
+       MOBILE RESPONSIVE FIXES
+    ═══════════════════════════════════════════ */
+    @media (max-width: 600px) {
+        body {
+            padding: 12px;
+            min-height: auto;
+            min-height: 100dvh;
+        }
+        
+        .auth-container {
+            padding: 24px 20px;
+            border-radius: 16px;
+        }
+        
+        .auth-header {
+            margin-bottom: 20px;
+        }
+        
+        .auth-icon { 
+            font-size: 32px; 
+            margin-bottom: 8px;
+        }
+        
+        .auth-title { 
+            font-size: 20px;
+            letter-spacing: -0.3px;
+        }
+        
+        .auth-subtitle { 
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        
+        .form-group { 
+            margin-bottom: 14px;
+        }
+        
+        .form-label { 
+            font-size: 11px;
+            margin-bottom: 5px;
+        }
+        
+        .form-input {
+            padding: 14px 12px;
+            font-size: 16px;
+        }
+        
+        .auth-btn {
+            padding: 16px 12px;
+            margin-top: 8px;
+            font-size: 14px;
+            min-height: 48px;
+        }
+        
+        .auth-toggle {
+            margin-top: 18px;
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 380px) {
+        .auth-container {
+            padding: 18px 16px;
+        }
+        
+        .auth-icon { 
+            font-size: 28px;
+            margin-bottom: 6px;
+        }
+        
+        .auth-title { 
+            font-size: 18px;
+        }
+        
+        .form-group { 
+            margin-bottom: 12px;
+        }
+        
+        .auth-btn {
+            padding: 14px 12px;
+            font-size: 13px;
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="auth-container" id="auth-box">
+    <div class="auth-header">
+      <div class="auth-icon">🧠</div>
+      <div class="auth-title">Identify Yourself</div>
+      <div class="auth-subtitle">Welcome to Smart Study Hub</div>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <form id="login-form">
+      <div class="form-group">
+        <label class="form-label">Username</label>
+        <input type="text" class="form-input" id="log-username" placeholder="Enter username" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-input" id="log-password" placeholder="••••••••" required />
+      </div>
+      <button type="submit" class="btn-primary auth-btn" id="login-btn">Log In</button>
+      <div class="auth-toggle">
+        New to the Hub? <a id="show-register">Create Account</a>
+      </div>
+    </form>
+
+    <!-- REGISTER FORM -->
+    <form id="register-form">
+      <div class="form-group">
+        <label class="form-label">Username</label>
+        <input type="text" class="form-input" id="reg-username" placeholder="Choose a username" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-input" id="reg-email" placeholder="you@example.com" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-input" id="reg-password" placeholder="Create a password" required />
+      </div>
+      <button type="submit" class="btn-primary auth-btn" id="register-btn">Sign Up</button>
+      <div class="auth-toggle">
+        Already have an account? <a id="show-login">Log In</a>
+      </div>
+    </form>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast" aria-live="polite"></div>
+  </div>
+
+  <!-- Re-use the app.js fetch library natively -->
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+2026-04-08 22:57:46,074 - INFO - Loaded API key 1
+2026-04-08 22:57:46,074 - INFO - Loaded API key 2
+2026-04-08 22:57:46,074 - INFO - Loaded API key 3
+2026-04-08 22:57:46,074 - INFO - Loaded API key 4
+2026-04-08 22:57:46,074 - INFO - Loaded API key 5
+2026-04-08 22:57:46,074 - INFO - Loaded 5 API keys for load balancing
+2026-04-08 22:57:49,412 - INFO - ======================================================================
+2026-04-08 22:57:49,413 - INFO - STARTING ADVANCED MCQ GENERATOR
+2026-04-08 22:57:49,413 - INFO - API Keys Available: 5
+2026-04-08 22:57:49,413 - INFO - Batch Size: 8
+2026-04-08 22:57:49,414 - INFO - ======================================================================
+2026-04-08 22:57:49,474 - INFO - Found 43 topics needing generation
+
+2026-04-08 22:57:49,488 - INFO - 
+[1/43] Python Programming -> Fundamentals of Python -> Introduction to Python
+2026-04-08 22:57:49,488 - INFO - 
+======================================================================
+2026-04-08 22:57:49,488 - INFO - Generating 30 MCQs for: Introduction to Python
+2026-04-08 22:57:49,489 - INFO - ======================================================================
+2026-04-08 22:57:49,489 - INFO - 
+[EASY] Generating 12 easy questions...
+2026-04-08 22:57:49,490 - INFO - API call (attempt 1/6, key rotation active)...
+2026-04-08 22:57:49,968 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-04-08 22:57:49,970 - WARNING - Rate limit hit. Waiting 30s...

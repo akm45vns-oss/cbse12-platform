@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Study Hub</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-icon">🧠</div>
+      <div class="brand-text">
+        <span class="brand-name">Smart Study</span>
+        <span class="brand-sub">Hub</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" role="navigation" aria-label="Main navigation">
+      <a class="nav-item active" id="nav-dashboard" href="#" data-page="dashboard" aria-label="Dashboard">
+        <span class="nav-icon">📊</span>
+        <span class="nav-label">Dashboard</span>
+        <span class="nav-indicator"></span>
+      </a>
+      <a class="nav-item" id="nav-courses" href="#" data-page="courses" aria-label="Courses">
+        <span class="nav-icon">📚</span>
+        <span class="nav-label">Courses</span>
+        <span class="nav-indicator"></span>
+      </a>
+      <a class="nav-item" id="nav-leaderboard" href="#" data-page="leaderboard" aria-label="Leaderboard">
+        <span class="nav-icon">🏆</span>
+        <span class="nav-label">Leaderboard</span>
+        <span class="nav-indicator"></span>
+      </a>
+      <a class="nav-item" id="nav-profile" href="#" data-page="profile" aria-label="Profile">
+        <span class="nav-icon">👤</span>
+        <span class="nav-label">Profile</span>
+        <span class="nav-indicator"></span>
+      </a>
+    </nav>
+
+    <div class="sidebar-xp-card">
+      <div class="xp-label">Your XP</div>
+      <div class="xp-value" id="sidebar-xp">342</div>
+      <div class="xp-bar-wrap">
+        <div class="xp-bar-fill" id="sidebar-xp-bar" style="width:34%"></div>
+      </div>
+      <div class="xp-level-label">Level <span id="sidebar-level">3</span> — <span id="sidebar-level-title">Learner</span></div>
+    </div>
+
+    <div class="sidebar-streak">
+      <span class="streak-flame">🔥</span>
+      <span class="streak-count" id="sidebar-streak">7</span>
+      <span class="streak-text">day streak</span>
+    </div>
+  </aside>
+<header class="topbar" id="topbar">
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle sidebar">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="topbar-title" id="topbar-title">Leaderboard</div>
+    <div class="topbar-actions">
+      <div class="topbar-avatar" id="topbar-avatar-wrap">
+        <div class="avatar-circle" id="topbar-avatar">A</div>
+        <span class="avatar-name" id="topbar-username">Alex</span>
+      </div>
+    </div>
+  </header>
+  <main class="main-content" id="main-content">
+<section class="page active" id="page-leaderboard">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Leaderboard</h1>
+          <p class="page-subtitle">Top learners competing for glory this week</p>
+        </div>
+        <div class="lb-filter-wrap">
+          <button class="lb-filter active" data-period="weekly" id="lb-weekly">Weekly</button>
+          <button class="lb-filter" data-period="monthly" id="lb-monthly">Monthly</button>
+          <button class="lb-filter" data-period="all_time" id="lb-alltime">All Time</button>
+        </div>
+      </div>
+      <div class="leaderboard-wrap">
+        <div class="podium-row" id="podium-row">
+          <!-- top 3 podium rendered by JS -->
+        </div>
+        <div class="leaderboard-table" id="leaderboard-table">
+          <!-- rank rows 4-10 rendered by JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>

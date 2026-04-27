@@ -1,0 +1,455 @@
+{
+  "start_time": "2026-04-06T20:11:00.089559",
+  "last_update": "2026-04-08T22:55:29.678470",
+  "completed_topics": [
+    {
+      "id": 1,
+      "name": "Introduction to Python",
+      "timestamp": "2026-04-07T18:41:00.523147",
+      "questions": 30
+    },
+    {
+      "id": 2,
+      "name": "Variables and Data Types",
+      "timestamp": "2026-04-07T18:42:24.155437",
+      "questions": 30
+    },
+    {
+      "id": 3,
+      "name": "Operators in Python",
+      "timestamp": "2026-04-07T18:43:46.396714",
+      "questions": 31
+    },
+    {
+      "id": 4,
+      "name": "Input and Output",
+      "timestamp": "2026-04-07T18:45:07.900023",
+      "questions": 29
+    },
+    {
+      "id": 5,
+      "name": "Control Flow: if/elif/else",
+      "timestamp": "2026-04-07T18:46:32.603189",
+      "questions": 31
+    },
+    {
+      "id": 6,
+      "name": "for Loops",
+      "timestamp": "2026-04-07T18:47:54.230822",
+      "questions": 27
+    },
+    {
+      "id": 7,
+      "name": "while Loops",
+      "timestamp": "2026-04-07T18:49:16.865092",
+      "questions": 27
+    },
+    {
+      "id": 8,
+      "name": "List Comprehensions",
+      "timestamp": "2026-04-07T18:50:39.722949",
+      "questions": 29
+    },
+    {
+      "id": 9,
+      "name": "Defining and Calling Functions",
+      "timestamp": "2026-04-07T18:52:02.848573",
+      "questions": 30
+    },
+    {
+      "id": 10,
+      "name": "Lambda and Higher-Order Functions",
+      "timestamp": "2026-04-07T18:53:25.496732",
+      "questions": 31
+    },
+    {
+      "id": 11,
+      "name": "Modules and Packages",
+      "timestamp": "2026-04-07T18:54:47.369172",
+      "questions": 29
+    },
+    {
+      "id": 12,
+      "name": "Classes and Objects",
+      "timestamp": "2026-04-07T18:56:12.103271",
+      "questions": 28
+    },
+    {
+      "id": 13,
+      "name": "File Operations",
+      "timestamp": "2026-04-07T18:57:37.006678",
+      "questions": 28
+    },
+    {
+      "id": 38,
+      "name": "What is Machine Learning?",
+      "timestamp": "2026-04-08T09:36:18.727722",
+      "questions": 31
+    },
+    {
+      "id": 39,
+      "name": "Handling Missing Data",
+      "timestamp": "2026-04-08T09:37:40.788830",
+      "questions": 28
+    },
+    {
+      "id": 40,
+      "name": "Feature Scaling",
+      "timestamp": "2026-04-08T09:39:03.234560",
+      "questions": 30
+    },
+    {
+      "id": 41,
+      "name": "Linear Regression",
+      "timestamp": "2026-04-08T09:40:26.465210",
+      "questions": 32
+    },
+    {
+      "id": 42,
+      "name": "Classification Algorithms",
+      "timestamp": "2026-04-08T09:41:50.008044",
+      "questions": 29
+    },
+    {
+      "id": 14,
+      "name": "Exception Handling",
+      "timestamp": "2026-04-08T20:37:28.807686",
+      "questions": 29
+    },
+    {
+      "id": 15,
+      "name": "Network Basics",
+      "timestamp": "2026-04-08T20:41:39.576678",
+      "questions": 30
+    },
+    {
+      "id": 16,
+      "name": "Transmission Media",
+      "timestamp": "2026-04-08T20:45:52.655323",
+      "questions": 30
+    },
+    {
+      "id": 17,
+      "name": "OSI Reference Model",
+      "timestamp": "2026-04-08T20:50:04.415297",
+      "questions": 30
+    },
+    {
+      "id": 18,
+      "name": "Key Protocols",
+      "timestamp": "2026-04-08T22:55:29.678449",
+      "questions": 30
+    }
+  ],
+  "failed_topics": [
+    {
+      "id": 1,
+      "name": "Introduction to Python",
+      "error": "Object '<Quiz at 0x23469a31fd0>' is already attached to session '1' (this is '2')",
+      "timestamp": "2026-04-06T20:12:24.646628"
+    },
+    {
+      "id": 2,
+      "name": "Variables and Data Types",
+      "error": "Object '<Quiz at 0x23469a95450>' is already attached to session '1' (this is '3')",
+      "timestamp": "2026-04-06T20:13:50.925411"
+    },
+    {
+      "id": 3,
+      "name": "Operators in Python",
+      "error": "Object '<Quiz at 0x23469a67950>' is already attached to session '1' (this is '4')",
+      "timestamp": "2026-04-06T20:15:12.983668"
+    },
+    {
+      "id": 4,
+      "name": "Input and Output",
+      "error": "Object '<Quiz at 0x23469a3e470>' is already attached to session '1' (this is '5')",
+      "timestamp": "2026-04-06T20:16:35.754386"
+    },
+    {
+      "id": 5,
+      "name": "Control Flow: if/elif/else",
+      "error": "Object '<Quiz at 0x23469df6650>' is already attached to session '1' (this is '6')",
+      "timestamp": "2026-04-06T20:18:00.841759"
+    },
+    {
+      "id": 6,
+      "name": "for Loops",
+      "error": "Object '<Quiz at 0x23469e08c80>' is already attached to session '1' (this is '7')",
+      "timestamp": "2026-04-06T20:19:24.192219"
+    },
+    {
+      "id": 7,
+      "name": "while Loops",
+      "error": "Object '<Quiz at 0x23469a8be70>' is already attached to session '1' (this is '8')",
+      "timestamp": "2026-04-06T20:20:47.533891"
+    },
+    {
+      "id": 8,
+      "name": "List Comprehensions",
+      "error": "Object '<Quiz at 0x23469a718b0>' is already attached to session '1' (this is '9')",
+      "timestamp": "2026-04-06T20:22:09.092385"
+    },
+    {
+      "id": 9,
+      "name": "Defining and Calling Functions",
+      "error": "Object '<Quiz at 0x23469e071d0>' is already attached to session '1' (this is '10')",
+      "timestamp": "2026-04-06T20:23:32.026604"
+    },
+    {
+      "id": 10,
+      "name": "Lambda and Higher-Order Functions",
+      "error": "Object '<Quiz at 0x23469a4b3e0>' is already attached to session '1' (this is '11')",
+      "timestamp": "2026-04-06T20:24:55.445409"
+    },
+    {
+      "id": 11,
+      "name": "Modules and Packages",
+      "error": "Object '<Quiz at 0x23469a9d450>' is already attached to session '1' (this is '12')",
+      "timestamp": "2026-04-06T20:26:19.604235"
+    },
+    {
+      "id": 14,
+      "name": "Exception Handling",
+      "error": "Part 2 generation returned None",
+      "timestamp": "2026-04-07T19:05:49.930929"
+    },
+    {
+      "id": 15,
+      "name": "Network Basics",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T19:13:21.903396"
+    },
+    {
+      "id": 16,
+      "name": "Transmission Media",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T19:20:53.951655"
+    },
+    {
+      "id": 17,
+      "name": "OSI Reference Model",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T19:28:25.117739"
+    },
+    {
+      "id": 18,
+      "name": "Key Protocols",
+      "error": "Part 2 generation returned None",
+      "timestamp": "2026-04-07T19:37:09.602234"
+    },
+    {
+      "id": 19,
+      "name": "IPv4 Addressing",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T19:44:40.789293"
+    },
+    {
+      "id": 20,
+      "name": "IPv6",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T19:52:12.820550"
+    },
+    {
+      "id": 21,
+      "name": "Routing Protocols",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T19:59:43.920571"
+    },
+    {
+      "id": 22,
+      "name": "Security Fundamentals",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T20:07:15.240997"
+    },
+    {
+      "id": 23,
+      "name": "OOP Concepts Overview",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T20:14:46.210031"
+    },
+    {
+      "id": 24,
+      "name": "Classes and Objects in C++",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T20:22:17.837860"
+    },
+    {
+      "id": 25,
+      "name": "Encapsulation",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T20:29:49.148784"
+    },
+    {
+      "id": 26,
+      "name": "Abstraction: Abstract Classes and Interfaces",
+      "error": "Part 2 generation returned None",
+      "timestamp": "2026-04-07T20:48:10.919178"
+    },
+    {
+      "id": 27,
+      "name": "Types of Inheritance",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T20:55:42.185513"
+    },
+    {
+      "id": 28,
+      "name": "Compile-Time Polymorphism",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T21:03:13.274493"
+    },
+    {
+      "id": 29,
+      "name": "Runtime Polymorphism",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T21:10:44.465651"
+    },
+    {
+      "id": 30,
+      "name": "Templates in C++",
+      "error": "Part 2 generation returned None",
+      "timestamp": "2026-04-07T22:43:16.080313"
+    },
+    {
+      "id": 31,
+      "name": "Memory Management",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T22:50:47.235648"
+    },
+    {
+      "id": 32,
+      "name": "Why Visualize Data?",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T22:58:18.529190"
+    },
+    {
+      "id": 33,
+      "name": "Data Types and Visual Encoding",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T23:05:50.451737"
+    },
+    {
+      "id": 34,
+      "name": "Matplotlib Basics",
+      "error": "Part 2 generation returned None",
+      "timestamp": "2026-04-07T23:20:57.513572"
+    },
+    {
+      "id": 35,
+      "name": "Seaborn Plots",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T23:28:29.903729"
+    },
+    {
+      "id": 36,
+      "name": "Plotly Express",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-07T23:36:01.388989"
+    },
+    {
+      "id": 37,
+      "name": "Building Dashboards",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T09:34:52.895286"
+    },
+    {
+      "id": 43,
+      "name": "Model Evaluation for Classification",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T09:49:22.026829"
+    },
+    {
+      "id": 44,
+      "name": "Clustering",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T10:32:53.944024"
+    },
+    {
+      "id": 18,
+      "name": "Key Protocols",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T20:57:35.642330"
+    },
+    {
+      "id": 19,
+      "name": "IPv4 Addressing",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T21:05:06.921486"
+    },
+    {
+      "id": 20,
+      "name": "IPv6",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T21:12:38.271796"
+    },
+    {
+      "id": 21,
+      "name": "Routing Protocols",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T21:20:09.615187"
+    },
+    {
+      "id": 22,
+      "name": "Security Fundamentals",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T21:27:40.955389"
+    },
+    {
+      "id": 23,
+      "name": "OOP Concepts Overview",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T21:35:12.319429"
+    },
+    {
+      "id": 24,
+      "name": "Classes and Objects in C++",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T21:42:43.634734"
+    },
+    {
+      "id": 25,
+      "name": "Encapsulation",
+      "error": "Part 2 generation returned None",
+      "timestamp": "2026-04-08T21:58:23.329854"
+    },
+    {
+      "id": 26,
+      "name": "Abstraction: Abstract Classes and Interfaces",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T22:05:55.277563"
+    },
+    {
+      "id": 27,
+      "name": "Types of Inheritance",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T22:13:27.701035"
+    },
+    {
+      "id": 28,
+      "name": "Compile-Time Polymorphism",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T22:20:58.866000"
+    },
+    {
+      "id": 29,
+      "name": "Runtime Polymorphism",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T22:28:30.196101"
+    },
+    {
+      "id": 30,
+      "name": "Templates in C++",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T22:36:01.588321"
+    },
+    {
+      "id": 31,
+      "name": "Memory Management",
+      "error": "Part 1 generation returned None",
+      "timestamp": "2026-04-08T22:43:32.894682"
+    }
+  ],
+  "total_topics": 44,
+  "total_questions": 679,
+  "stats": {}
+}
