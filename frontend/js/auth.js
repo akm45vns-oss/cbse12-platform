@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const authBox = document.getElementById("auth-box");
     
-    // Password Visibility Toggle
+    // Password Visibility Toggle - positioned on right side
     document.querySelectorAll('.password-toggle').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
@@ -22,12 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
             if (input) {
                 if (input.type === 'password') {
                     input.type = 'text';
-                    btn.textContent = '👁️‍🗨️ Hide';
+                    btn.textContent = '✕';
                 } else {
                     input.type = 'password';
-                    btn.textContent = '👁️ Show';
+                    btn.textContent = '👁️';
                 }
-                input.focus();
             }
         });
     });

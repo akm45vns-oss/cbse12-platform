@@ -51,6 +51,11 @@
     .form-group { margin-bottom: 16px; }
     .form-label { display: block; font-size: 12px; font-weight: 600; color: var(--text-2); margin-bottom: 6px; }
     
+    .password-group {
+        position: relative;
+        margin-bottom: 16px;
+    }
+    
     .form-input {
         width: 100%;
         padding: 12px 16px;
@@ -72,17 +77,26 @@
         box-shadow: 0 0 0 3px rgba(79,142,247,0.1);
     }
     
+    .password-group .form-input {
+        padding-right: 48px;
+    }
+    
     .password-toggle {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
         background: none;
         border: none;
         color: var(--text-3);
-        font-size: 16px;
+        font-size: 13px;
         cursor: pointer;
-        padding: 8px 12px;
+        padding: 6px 8px;
         transition: color var(--transition);
         -webkit-tap-highlight-color: transparent;
-        display: inline-block;
-        margin-top: 4px;
+        white-space: nowrap;
+        pointer-events: auto;
+        z-index: 10;
     }
     
     .password-toggle:hover,
@@ -166,9 +180,14 @@
             font-size: 16px;
         }
         
+        .password-group .form-input {
+            padding-right: 44px;
+        }
+        
         .password-toggle {
-            padding: 6px 10px;
-            font-size: 13px;
+            right: 6px;
+            font-size: 12px;
+            padding: 5px 6px;
         }
         
         .auth-btn {
@@ -198,7 +217,8 @@
             font-size: 18px;
         }
         
-        .form-group { 
+        .form-group,
+        .password-group { 
             margin-bottom: 12px;
         }
         
@@ -207,10 +227,14 @@
             font-size: 16px;
         }
         
+        .password-group .form-input {
+            padding-right: 40px;
+        }
+        
         .password-toggle {
-            padding: 5px 8px;
-            font-size: 12px;
-            margin-top: 3px;
+            right: 5px;
+            font-size: 11px;
+            padding: 4px 5px;
         }
         
         .auth-btn {
@@ -235,10 +259,10 @@
         <label class="form-label">Username</label>
         <input type="text" class="form-input" id="log-username" placeholder="Enter username" required />
       </div>
-      <div class="form-group">
+      <div class="password-group">
         <label class="form-label">Password</label>
         <input type="password" class="form-input" id="log-password" placeholder="••••••••" required />
-        <button type="button" class="password-toggle" data-target="log-password" aria-label="Toggle password visibility">👁️ Show</button>
+        <button type="button" class="password-toggle" data-target="log-password" aria-label="Toggle password visibility">👁️</button>
       </div>
       <button type="submit" class="btn-primary auth-btn" id="login-btn">Log In</button>
       <div class="auth-toggle">
@@ -256,10 +280,10 @@
         <label class="form-label">Email Address</label>
         <input type="email" class="form-input" id="reg-email" placeholder="you@example.com" required />
       </div>
-      <div class="form-group">
+      <div class="password-group">
         <label class="form-label">Password</label>
         <input type="password" class="form-input" id="reg-password" placeholder="Create a password" required />
-        <button type="button" class="password-toggle" data-target="reg-password" aria-label="Toggle password visibility">👁️ Show</button>
+        <button type="button" class="password-toggle" data-target="reg-password" aria-label="Toggle password visibility">👁️</button>
       </div>
       <button type="submit" class="btn-primary auth-btn" id="register-btn">Sign Up</button>
       <div class="auth-toggle">
