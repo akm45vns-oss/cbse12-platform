@@ -15,16 +15,19 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.password-toggle').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
+            e.stopPropagation();
+            
             const targetId = btn.getAttribute('data-target');
             const input = document.getElementById(targetId);
             if (input) {
                 if (input.type === 'password') {
                     input.type = 'text';
-                    btn.textContent = '👁️‍🗨️';
+                    btn.textContent = '👁️‍🗨️ Hide';
                 } else {
                     input.type = 'password';
-                    btn.textContent = '👁️';
+                    btn.textContent = '👁️ Show';
                 }
+                input.focus();
             }
         });
     });
@@ -34,13 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnShowLog = document.getElementById("show-login");
 
     if (btnShowReg) {
-        btnShowReg.addEventListener("click", () => {
+        btnShowReg.addEventListener("click", (e) => {
+            e.preventDefault();
             authBox.classList.add("mode-register");
         });
     }
 
     if (btnShowLog) {
-        btnShowLog.addEventListener("click", () => {
+        btnShowLog.addEventListener("click", (e) => {
+            e.preventDefault();
             authBox.classList.remove("mode-register");
         });
     }
