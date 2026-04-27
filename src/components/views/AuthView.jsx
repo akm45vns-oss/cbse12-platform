@@ -358,16 +358,16 @@ export function AuthView({
                     <>
                       <div>
                         <label className="label-text">New Password</label>
-                        <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+                        <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
                           <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.newPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, newPassword: e.target.value })} placeholder="Min 8 chars, mixed case, symbols" style={{ flex: 1, minHeight: 44 }} />
-                          <button onClick={() => setShowResetPassword(s => !s)} style={{ background: "rgba(0, 0, 0, 0.02)", border: "1px solid rgba(0, 0, 0, 0.08)", borderRadius: "12px", color: "#64748b", fontSize: "20px", cursor: "pointer", padding: "10px 12px", display: "flex", alignItems: "center", justifyContent: "center", minHeight: "44px", minWidth: "44px", flexShrink: 0 }}>{showResetPassword ? "🙈" : "👁️"}</button>
+                          <button onClick={() => setShowResetPassword(s => !s)} style={{ background: "none", border: "none", color: "#64748b", fontSize: "18px", cursor: "pointer", padding: "6px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>{showResetPassword ? "🙈" : "👁️"}</button>
                         </div>
                       </div>
                       <div>
                         <label className="label-text">Confirm Password</label>
-                        <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+                        <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
                           <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.confirmPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, confirmPassword: e.target.value })} placeholder="Re-enter password" style={{ flex: 1, minHeight: 44 }} onKeyDown={e => e.key === "Enter" && doForgotPasswordReset()} />
-                          <button onClick={() => setShowResetPassword(s => !s)} style={{ background: "rgba(0, 0, 0, 0.02)", border: "1px solid rgba(0, 0, 0, 0.08)", borderRadius: "12px", color: "#64748b", fontSize: "20px", cursor: "pointer", padding: "10px 12px", display: "flex", alignItems: "center", justifyContent: "center", minHeight: "44px", minWidth: "44px", flexShrink: 0 }}>{showResetPassword ? "🙈" : "👁️"}</button>
+                          <button onClick={() => setShowResetPassword(s => !s)} style={{ background: "none", border: "none", color: "#64748b", fontSize: "18px", cursor: "pointer", padding: "6px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>{showResetPassword ? "🙈" : "👁️"}</button>
                         </div>
                       </div>
                     </>
@@ -388,9 +388,9 @@ export function AuthView({
                   )}
                   <div>
                     <label className="label-text">Password</label>
-                    <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+                    <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
                       <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)} placeholder={authTab === "register" ? "Min 8 chars, mixed, symbols" : "Enter your password"} style={{ flex: 1, minHeight: 44 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
-                      <button onClick={() => setShowPass(s => !s)} style={{ background: "rgba(0, 0, 0, 0.02)", border: "1px solid rgba(0, 0, 0, 0.08)", borderRadius: "12px", color: "#64748b", fontSize: "20px", cursor: "pointer", padding: "10px 12px", display: "flex", alignItems: "center", justifyContent: "center", minHeight: "44px", minWidth: "44px", flexShrink: 0 }}>{showPass ? "🙈" : "👁️"}</button>
+                      <button onClick={() => setShowPass(s => !s)} style={{ background: "none", border: "none", color: "#64748b", fontSize: "18px", cursor: "pointer", padding: "6px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>{showPass ? "🙈" : "👁️"}</button>
                     </div>
                     {authTab === "register" && pass && (
                       <div style={{ marginTop: 12 }}>
