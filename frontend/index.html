@@ -52,45 +52,57 @@
     .form-label { display: block; font-size: 12px; font-weight: 600; color: var(--text-2); margin-bottom: 6px; }
     
     .form-input-wrapper {
-        position: relative;
         display: flex;
         align-items: center;
-    }
-    
-    .form-input {
-        width: 100%;
-        padding: 12px 16px;
-        padding-right: 44px;
+        gap: 4px;
         background: rgba(255,255,255,0.04);
         border: 1px solid var(--glass-border);
         border-radius: var(--radius-md);
+        padding: 0;
+        transition: all var(--transition);
+    }
+    
+    .form-input-wrapper:focus-within {
+        border-color: rgba(79,142,247,0.5);
+        background: rgba(79,142,247,0.05);
+        box-shadow: 0 0 0 3px rgba(79,142,247,0.1);
+    }
+    
+    .form-input {
+        flex: 1;
+        padding: 12px 16px;
+        background: transparent;
+        border: none;
+        border-radius: 0;
         color: var(--text-1);
         font-size: 16px;
         transition: all var(--transition);
         outline: none;
         -webkit-appearance: none;
         appearance: none;
+        min-width: 0;
     }
     
     .form-input:focus {
-        border-color: rgba(79,142,247,0.5);
-        background: rgba(79,142,247,0.05);
-        box-shadow: 0 0 0 3px rgba(79,142,247,0.1);
+        outline: none;
+        box-shadow: none;
+        border: none;
     }
     
     .password-toggle {
-        position: absolute;
-        right: 12px;
-        top: 50%;
-        transform: translateY(-50%);
         background: none;
         border: none;
         color: var(--text-3);
         font-size: 18px;
         cursor: pointer;
-        padding: 8px;
+        padding: 8px 12px;
         transition: color var(--transition);
         -webkit-tap-highlight-color: transparent;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: auto;
     }
     
     .password-toggle:hover,
@@ -171,14 +183,12 @@
         
         .form-input {
             padding: 14px 12px;
-            padding-right: 42px;
             font-size: 16px;
         }
         
         .password-toggle {
-            right: 10px;
+            padding: 6px 10px;
             font-size: 16px;
-            padding: 6px;
         }
         
         .auth-btn {
@@ -210,6 +220,16 @@
         
         .form-group { 
             margin-bottom: 12px;
+        }
+        
+        .form-input {
+            padding: 12px 10px;
+            font-size: 16px;
+        }
+        
+        .password-toggle {
+            padding: 6px 8px;
+            font-size: 15px;
         }
         
         .auth-btn {
