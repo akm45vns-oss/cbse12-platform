@@ -161,14 +161,16 @@ export function AuthView({
         }
 
         .auth-input { 
-          width: 100%; padding: 14px 16px; 
+          width: 100%; 
+          padding: clamp(12px, 3vw, 14px) clamp(12px, 3vw, 16px); 
           border: 1px solid rgba(0, 0, 0, 0.08); 
           border-radius: 12px; 
           background: rgba(0, 0, 0, 0.02); 
           color: #1e293b; 
-          font-size: 14px; 
+          font-size: clamp(13px, 3.5vw, 14px); 
           outline: none; 
           transition: all 0.3s ease;
+          min-height: 44px;
         }
         .auth-input:focus { 
           border-color: rgba(59, 130, 246, 0.5);
@@ -357,15 +359,15 @@ export function AuthView({
                       <div>
                         <label className="label-text">New Password</label>
                         <div style={{ position: "relative" }}>
-                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.newPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, newPassword: e.target.value })} placeholder="Min 8 chars, mixed case, symbols" style={{ paddingRight: 40 }} />
-                          <button onClick={() => setShowResetPassword(s => !s)} style={{ position: "absolute", right: 12, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#64748b", fontSize: 16, cursor: "pointer" }}>{showResetPassword ? "🙈" : "👁️"}</button>
+                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.newPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, newPassword: e.target.value })} placeholder="Min 8 chars, mixed case, symbols" style={{ paddingRight: "max(40px, 12vw)", minHeight: 44 }} />
+                          <button onClick={() => setShowResetPassword(s => !s)} style={{ position: "absolute", right: "max(8px, 2vw)", top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#64748b", fontSize: "clamp(14px, 4vw, 18px)", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", touchAction: "manipulation" }}>{showResetPassword ? "🙈" : "👁️"}</button>
                         </div>
                       </div>
                       <div>
                         <label className="label-text">Confirm Password</label>
                         <div style={{ position: "relative" }}>
-                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.confirmPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, confirmPassword: e.target.value })} placeholder="Re-enter password" style={{ paddingRight: 40 }} onKeyDown={e => e.key === "Enter" && doForgotPasswordReset()} />
-                          <button onClick={() => setShowResetPassword(s => !s)} style={{ position: "absolute", right: 12, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#64748b", fontSize: 16, cursor: "pointer" }}>{showResetPassword ? "🙈" : "👁️"}</button>
+                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.confirmPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, confirmPassword: e.target.value })} placeholder="Re-enter password" style={{ paddingRight: "max(40px, 12vw)", minHeight: 44 }} onKeyDown={e => e.key === "Enter" && doForgotPasswordReset()} />
+                          <button onClick={() => setShowResetPassword(s => !s)} style={{ position: "absolute", right: "max(8px, 2vw)", top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#64748b", fontSize: "clamp(14px, 4vw, 18px)", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", touchAction: "manipulation" }}>{showResetPassword ? "🙈" : "👁️"}</button>
                         </div>
                       </div>
                     </>
@@ -387,8 +389,8 @@ export function AuthView({
                   <div>
                     <label className="label-text">Password</label>
                     <div style={{ position: "relative" }}>
-                      <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)} placeholder={authTab === "register" ? "Min 8 chars, mixed, symbols" : "Enter your password"} style={{ paddingRight: 40 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
-                      <button onClick={() => setShowPass(s => !s)} style={{ position: "absolute", right: 12, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#64748b", fontSize: 16, cursor: "pointer" }}>{showPass ? "🙈" : "👁️"}</button>
+                      <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)} placeholder={authTab === "register" ? "Min 8 chars, mixed, symbols" : "Enter your password"} style={{ paddingRight: "max(40px, 12vw)", minHeight: 44 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
+                      <button onClick={() => setShowPass(s => !s)} style={{ position: "absolute", right: "max(8px, 2vw)", top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "#64748b", fontSize: "clamp(14px, 4vw, 18px)", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", touchAction: "manipulation" }}>{showPass ? "🙈" : "👁️"}</button>
                     </div>
                     {authTab === "register" && pass && (
                       <div style={{ marginTop: 12 }}>
