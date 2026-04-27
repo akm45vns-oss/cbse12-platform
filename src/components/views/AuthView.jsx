@@ -162,6 +162,7 @@ export function AuthView({
 
         .auth-input { 
           width: 100%; 
+          min-width: 0;
           padding: clamp(12px, 3vw, 14px) clamp(12px, 3vw, 16px); 
           border: 1px solid rgba(0, 0, 0, 0.08); 
           border-radius: 12px; 
@@ -171,6 +172,7 @@ export function AuthView({
           outline: none; 
           transition: all 0.3s ease;
           min-height: 44px;
+          box-sizing: border-box;
         }
         .auth-input:focus { 
           border-color: rgba(59, 130, 246, 0.5);
