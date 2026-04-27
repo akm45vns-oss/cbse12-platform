@@ -2,11 +2,10 @@
   "builds": [
     {
       "src": "backend/app.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "frontend",
-      "use": "@vercel/static"
+      "use": "@vercel/python",
+      "config": {
+        "runtime": "python3.11"
+      }
     }
   ],
   "routes": [
@@ -16,10 +15,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/frontend/$1"
+      "dest": "backend/app.py"
     }
-  ],
-  "env": {
-    "FLASK_ENV": "production"
-  }
+  ]
 }

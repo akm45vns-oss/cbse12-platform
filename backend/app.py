@@ -52,7 +52,9 @@ def create_app(config_class=Config):
 
     return app
 
+# Create app instance for Vercel and other WSGI servers
+app = create_app()
+
 if __name__ == '__main__':
     import os
-    app = create_app()
     app.run(debug=True, port=5000)
