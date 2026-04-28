@@ -161,7 +161,7 @@ export function AuthView({
         }
 
         .auth-input { 
-          width: 100%; 
+          max-width: 100%; 
           min-width: 0;
           padding: clamp(12px, 3vw, 14px) clamp(12px, 3vw, 16px); 
           border: 1px solid rgba(0, 0, 0, 0.08); 
