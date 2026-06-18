@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, memo } from "react";
 import { getUserProfile, updateUserPassword, updateUserName } from "../../utils/supabase";
 import { validatePasswordStrength } from "../../utils/passwordValidation";
 
@@ -7,7 +7,7 @@ const AVATARS = [
   "💡", "📚", "🎨", "🔬", "🌎", "🎵", "🏆", "🦖"
 ];
 
-export function ProfileView({ 
+export const ProfileView = memo(function ProfileView({ 
   currentUser, 
   onLogout,
   progress,
@@ -378,4 +378,4 @@ export function ProfileView({
 
     </div>
   );
-}
+});

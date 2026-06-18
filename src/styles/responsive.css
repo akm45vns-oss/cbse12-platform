@@ -280,3 +280,12 @@ html, body {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
+
+@media (max-width: 767px) {
+  .card, .auth-modal, .prose-notes-block {
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    box-shadow: 0 4px 16px rgba(148, 163, 184, 0.1) !important;
+  }
+}
+

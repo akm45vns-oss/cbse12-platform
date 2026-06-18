@@ -1,4 +1,6 @@
-export function ChapterView({ subject, chapter, curriculumData, notesRead, quizBest, availableSets = [], onStartNotes, onStartQuiz }) {
+import { memo } from "react";
+
+export const ChapterView = memo(function ChapterView({ subject, chapter, curriculumData, notesRead, quizBest, availableSets = [], onStartNotes, onStartQuiz }) {
   const S = curriculumData;
   const quizSetCount = availableSets.length;
 
@@ -205,4 +207,4 @@ export function ChapterView({ subject, chapter, curriculumData, notesRead, quizB
       </div>
     </div>
   );
-}
+});

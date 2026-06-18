@@ -1,9 +1,10 @@
+import { memo } from "react";
 import { ProgressBar, Badge, SearchBar, WeakTopicsReport, StreakDisplay, RankBadgeDisplay, WeeklyToppers } from "../common";
 import { CURRICULUM, totalChapters } from "../../constants/curriculum";
 import { getRecentChapters } from "../../utils/recentChapters";
 import { getLoginStreak } from "../../utils/loginStreak";
 
-export function DashboardView({ stats, overallPct, currentUser, displayName, onSelectSubject, onSelectChapter }) {
+export const DashboardView = memo(function DashboardView({ stats, overallPct, currentUser, displayName, onSelectSubject, onSelectChapter }) {
   const recentChapters = getRecentChapters(currentUser, 5);
   const streak = getLoginStreak(currentUser);
   
@@ -198,4 +199,4 @@ export function DashboardView({ stats, overallPct, currentUser, displayName, onS
       </div>
     </div>
   );
-}
+});

@@ -1,9 +1,9 @@
 import { Badge, LoadingScreen, ExamTimer } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
-import { useEffect } from "react";
+import { useEffect, memo } from "react";
 import { startSession, endSession } from "../../utils/sessionTracking";
 
-export function PaperView({ subject, paper, loading, loadMsg, loadEmoji, curriculumData, onRegenerate }) {
+export const PaperView = memo(function PaperView({ subject, paper, loading, loadMsg, loadEmoji, curriculumData, onRegenerate }) {
   const S = curriculumData;
 
   // Track paper session
@@ -72,4 +72,4 @@ export function PaperView({ subject, paper, loading, loadMsg, loadEmoji, curricu
       )}
     </div>
   );
-}
+});

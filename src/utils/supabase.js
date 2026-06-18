@@ -2,6 +2,7 @@ import { createClient } from "@supabase/supabase-js";
 import { generateOTP, getOTPExpiration, isOTPExpired } from "./emailVerification";
 import { sendOTPEmail, sendPasswordResetEmail } from "./emailService";
 import { verifyPassword, isBcryptHash, createSHA256Hash, hashPassword } from "./auth";
+import { createCachedQuery } from "./queryOptimization.js";
 
 // ===== SUPABASE CONFIG =====
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
@@ -625,7 +626,7 @@ export async function resetPassword(email, newPasswordPlain) {
 /**
  * Fetch a specific quiz set (1-15) for a chapter
  */
-export async function getQuizSet(subject, chapter, setNumber) {
+export const getQuizSet = createCachedQuery("quizSet", async (subject, chapter, setNumber) => {
   try {
     const { data, error } = await supabase
       .from("quiz_sets")
@@ -659,12 +660,12 @@ export async function getQuizSet(subject, chapter, setNumber) {
     console.error("Fetch quiz set error:", error);
     return null;
   }
-}
+}, 120); // Cache for 2 hours
 
 /**
  * Get all quiz set summaries for a chapter (for displaying set list)
  */
-export async function getQuizSetSummaries(subject, chapter) {
+export const getQuizSetSummaries = createCachedQuery("quizSetSummaries", async (subject, chapter) => {
   try {
     console.log(`[getQuizSetSummaries] Querying: subject="${subject}", chapter="${chapter}"`);
     const { data, error } = await supabase
@@ -695,13 +696,20 @@ export async function getQuizSetSummaries(subject, chapter) {
     console.error("[getQuizSetSummaries] Unexpected error:", error);
     return [];
   }
-}
+}, 120); // Cache for 2 hours
 
 /**
  * Save quiz submission for a specific set
  */
 export async function saveQuizSubmission(username, subject, chapter, setNumber, answers, score) {
   try {
+    // Invalidate status and summaries caches
+    const { cacheManager } = await import("./cacheManager.js");
+    const cacheKey = `query:quizSetStatus:${JSON.stringify([username, subject, chapter])}`;
+    cacheManager.remove(cacheKey);
+    const summariesKey = `query:quizSetSummaries:${JSON.stringify([subject, chapter])}`;
+    cacheManager.remove(summariesKey);
+
     const { error } = await supabase.from("quiz_submissions").insert({
       username,
       subject,
@@ -754,7 +762,7 @@ export async function getBestQuizScore(username, subject, chapter, setNumber) {
 /**
  * Get all quiz completion status for a chapter
  */
-export async function getQuizSetStatus(username, subject, chapter) {
+export const getQuizSetStatus = createCachedQuery("quizSetStatus", async (username, subject, chapter) => {
   try {
     const { data, error } = await supabase
       .from("quiz_submissions")
@@ -780,12 +788,12 @@ export async function getQuizSetStatus(username, subject, chapter) {
     console.error("Get quiz set status error:", error);
     return {};
   }
-}
+}, 10); // Cache status for 10 minutes
 
 /**
  * Get all sample papers for a subject
  */
-export async function getSamplePapers(subject) {
+export const getSamplePapers = createCachedQuery("samplePapers", async (subject) => {
   try {
     const { data, error } = await supabase
       .from("sample_papers")
@@ -802,12 +810,12 @@ export async function getSamplePapers(subject) {
     console.error("Get sample papers error:", error);
     return [];
   }
-}
+}, 240); // Cache for 4 hours
 
 /**
  * Get a specific sample paper
  */
-export async function getSamplePaper(subject, setNumber) {
+export const getSamplePaper = createCachedQuery("samplePaper", async (subject, setNumber) => {
   try {
     const { data, error } = await supabase
       .from("sample_papers")
@@ -825,5 +833,5 @@ export async function getSamplePaper(subject, setNumber) {
     console.error("Get sample paper error:", error);
     return null;
   }
-}
+}, 240); // Cache for 4 hours
 

@@ -1,7 +1,8 @@
+import { memo } from "react";
 import { ProgressBar } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
 
-export function ProgressView({ stats, overallPct, totalChapters, curriculum, progressData }) {
+export const ProgressView = memo(function ProgressView({ stats, overallPct, totalChapters, curriculum, progressData }) {
   return (
     <div style={{ animation: "cvFadeIn 0.5s ease-out" }}>
       <style>{`
@@ -120,4 +121,4 @@ export function ProgressView({ stats, overallPct, totalChapters, curriculum, pro
       })}
     </div>
   );
-}
+});

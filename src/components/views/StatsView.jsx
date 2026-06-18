@@ -1,6 +1,6 @@
 import { ProgressBar } from "../common";
 import { getOverallStats, formatDuration, getStudyRecommendations } from "../../utils/sessionTracking";
-import { useState, useEffect } from "react";
+import { useState, useEffect, memo } from "react";
 import { useTheme, useProgress } from "../../hooks";
 import {
   getSubjectPerformance,
@@ -13,7 +13,7 @@ import {
 } from "../../utils/analyticsEngine";
 import { CURRICULUM } from "../../constants/curriculum";
 
-export function StatsView() {
+export const StatsView = memo(function StatsView() {
   const theme = useTheme();
   const progress = useProgress();
   const [stats, setStats] = useState(null);
@@ -673,4 +673,4 @@ export function StatsView() {
       )}
     </div>
   );
-}
+});

@@ -1,10 +1,11 @@
+import { memo } from "react";
 import { ProgressBar } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
 import { useState, useEffect } from "react";
 import { addBookmark, removeBookmark, isBookmarked } from "../../utils/bookmarks";
 import { recordChapterAccess } from "../../utils/recentChapters";
 
-export function SubjectView({ subject, stats, progress, onSelectChapter, onGeneratePaper, curriculum, username }) {
+export const SubjectView = memo(function SubjectView({ subject, stats, progress, onSelectChapter, onGeneratePaper, curriculum, username }) {
   const S = curriculum[subject];
   const [bookmarks, setBookmarks] = useState({});
 
@@ -271,4 +272,4 @@ export function SubjectView({ subject, stats, progress, onSelectChapter, onGener
       ))}
     </div>
   );
-}
+});

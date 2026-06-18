@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import { CURRICULUM } from '../../constants/curriculum';
 import { getLeaderboardData, getUserRank, getChapterLeaderboards } from '../../utils/leaderboard';
 import { useAuth } from '../../hooks';
 import '../../styles/LeaderboardView.css';
 
-export default function LeaderboardView() {
+const LeaderboardView = memo(function LeaderboardView() {
   const { currentUser: username } = useAuth();
   const [selectedSubject, setSelectedSubject] = useState(Object.keys(CURRICULUM)[0] || '');
   const [selectedChapter, setSelectedChapter] = useState(null);
@@ -228,4 +228,6 @@ export default function LeaderboardView() {
       )}
     </div>
   );
-}
+});
+
+export default LeaderboardView;

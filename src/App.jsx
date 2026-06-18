@@ -1,4 +1,4 @@
-import { useState, useEffect, Suspense, lazy, useRef } from "react";
+import { useState, useEffect, Suspense, lazy, useRef, useCallback } from "react";
 import { useAuth, useNavigation, useProgress, useTheme, useScrollDirection } from "./hooks";
 import { callClaude } from "./utils/api";
 import { getChapterNotes, getQuizSet, getQuizSetStatus, getQuizSetSummaries, saveQuizSubmission } from "./utils/supabase";
@@ -7,6 +7,7 @@ import { SearchBar } from "./components/common/SearchBar";
 import { recordDailyActivity } from "./utils/loginStreak";
 import { recordQuizSubmission } from "./utils/weakTopics";
 import { getCachedNotes, cacheNotes } from "./utils/cacheManager";
+import { usePerformanceMetrics } from "./utils/performanceMonitoring";
 // Eager load critical views, lazy load others
 import { AuthView, DashboardView, QuizSetsView, LeaderboardView } from "./components/views";
 const SubjectView = lazy(() => import("./components/views/SubjectView").then(m => ({ default: m.SubjectView })));
@@ -43,6 +44,9 @@ export default function App() {
   const nav = useNavigation();
   const progress = useProgress();
   const theme = useTheme();
+
+  // Call performance tracking in dev environment
+  usePerformanceMetrics();
 
   // Content generation state
   const [loading, setLoading] = useState(false);
@@ -99,7 +103,7 @@ export default function App() {
   }, [nav.subject, nav.chapter]);
 
   // Content generation functions
-  const genNotes = async (subj, chap) => {
+  const genNotes = useCallback(async (subj, chap) => {
     setLoading(true);
     setLoadMsg(`Loading notes for "${chap}"`);
     setLoadEmoji("📝");
@@ -179,9 +183,9 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
       }
     }
     setLoading(false);
-  };
+  }, [progress]);
 
-  const startQuiz = async (subj, chap) => {
+  const startQuiz = useCallback(async (subj, chap) => {
     setLoading(true);
     setLoadMsg(`Loading quiz sets for "${chap}"`);
     setLoadEmoji("📚");
@@ -218,9 +222,9 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
     }
 
     setLoading(false);
-  };
+  }, [auth.currentUser]);
 
-  const loadQuizSet = async (setNumber) => {
+  const loadQuizSet = useCallback(async (setNumber) => {
     setLoading(true);
     setLoadMsg(`Loading Quiz Set ${setNumber}`);
     setLoadEmoji("🧠");
@@ -244,9 +248,9 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
       setQuizErr("Error loading quiz set: " + e.message);
     }
     setLoading(false);
-  };
+  }, [nav.subject, nav.chapter]);
 
-  const genPaper = async (subj, setNum) => {
+  const genPaper = useCallback(async (subj, setNum) => {
     setLoading(true);
     setLoadMsg(`Generating Sample Paper Set ${setNum} for ${subj}`);
     setLoadEmoji("📄");
@@ -276,9 +280,9 @@ Respond with the paper content directly.`;
       }
     }
     setLoading(false);
-  };
+  }, []);
 
-  const submitQuiz = async () => {
+  const submitQuiz = useCallback(async () => {
     let sc = 0;
     quiz.forEach((q, i) => {
       const validatedQ = validateQuestion(q);
@@ -301,7 +305,7 @@ Respond with the paper content directly.`;
       attempts: [...(prev.attempts || []), { score: sc, total: quiz.length, date: Date.now(), setNumber: selectedQuizSet }],
       best: Math.max(sc, ...(prev.attempts || []).map((a) => a.score), 0),
     });
-  };
+  }, [quiz, answers, selectedQuizSet, auth.currentUser, nav.subject, nav.chapter, progress]);
 
   // Not authenticated
   if (nav.view === "auth") {

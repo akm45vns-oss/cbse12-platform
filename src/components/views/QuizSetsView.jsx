@@ -2,8 +2,9 @@
  * QuizSetsView - Display all 15 quiz sets for a chapter
  * Users can select which set to attempt and see their progress
  */
+import { memo } from "react";
 
-export function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, availableSets = [], onSelectSet, loading }) {
+export const QuizSetsView = memo(function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, availableSets = [], onSelectSet, loading }) {
   const S = curriculumData;
 
   if (loading) {
@@ -181,4 +182,4 @@ export function QuizSetsView({ subject, chapter, curriculumData, quizSetStatus, 
       </div>
     </div>
   );
-}
+});

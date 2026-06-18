@@ -1,6 +1,6 @@
 import { Badge, LoadingScreen, ExamTimer, ProgressBar } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
 import { useKeyboardShortcuts } from "../../hooks";
 import { startSession, endSession } from "../../utils/sessionTracking";
 
@@ -12,7 +12,7 @@ export function validateQuestion(q) {
   return { q: q.q, opts: opts.slice(0, 4), ans: typeof q.ans === 'number' && q.ans >= 0 && q.ans < 4 ? q.ans : 0, exp: q.exp || "No explanation available" };
 }
 
-export function QuizView({ subject, chapter, loading, loadMsg, loadEmoji, quiz, quizErr, qIdx, setQIdx, answers, setAnswers, submitted, score, curriculumData, onSubmit, onRetry, onReviewNotes }) {
+export const QuizView = memo(function QuizView({ subject, chapter, loading, loadMsg, loadEmoji, quiz, quizErr, qIdx, setQIdx, answers, setAnswers, submitted, score, curriculumData, onSubmit, onRetry, onReviewNotes }) {
   const S = curriculumData;
   const [showShortcutHelp, setShowShortcutHelp] = useState(false);
 
@@ -156,4 +156,4 @@ export function QuizView({ subject, chapter, loading, loadMsg, loadEmoji, quiz, 
       )}
     </div>
   );
-}
+});

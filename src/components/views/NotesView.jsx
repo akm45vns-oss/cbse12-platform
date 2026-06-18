@@ -1,9 +1,9 @@
 import { Badge, LoadingScreen } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
-import { useEffect } from "react";
+import { useEffect, memo } from "react";
 import { startSession, endSession } from "../../utils/sessionTracking";
 
-export function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji, onStartQuiz, curriculumData }) {
+export const NotesView = memo(function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji, onStartQuiz, curriculumData }) {
   const S = curriculumData;
 
   useEffect(() => {
@@ -155,4 +155,4 @@ export function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji
       )}
     </div>
   );
-}
+});

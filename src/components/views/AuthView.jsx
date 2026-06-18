@@ -1,6 +1,64 @@
+import { memo } from "react";
 import { Badge, ProgressBar } from "../common";
 import { CURRICULUM } from "../../constants/curriculum";
 import { validatePasswordStrength } from "../../utils/passwordValidation";
+
+const AuthLeftPanel = memo(function AuthLeftPanel() {
+  return (
+    <div className="auth-left">
+      {/* Developer Tag */}
+      <div style={{ marginBottom: 40 }}>
+        <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(59, 130, 246, 0.1)", border: "1px solid rgba(59, 130, 246, 0.2)", borderRadius: 99, padding: "6px 16px", marginBottom: 16 }}>
+          <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#3b82f6", display: "inline-block", boxShadow: "0 0 10px #3b82f6, 0 0 20px rgba(59, 130, 246, 0.6)" }} />
+          <span style={{ fontSize: 11, color: "#64748b", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>Creator</span>
+          <span style={{ color: "rgba(0,0,0,0.1)" }}>|</span>
+          <span style={{ fontSize: 12, color: "#1e293b", fontWeight: 700, letterSpacing: "0.02em" }}>Ayush Kumar Maurya</span>
+        </div>
+        <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+          {[
+            { href: "https://www.linkedin.com/in/ayush-kumar-maurya-326071384/", label: "LinkedIn" },
+            { href: "https://github.com/akm45vns-oss", label: "GitHub" },
+            { href: "https://www.instagram.com/ayush.maurya45/", label: "Instagram" },
+          ].map(({ href, label }) => (
+            <a key={label} href={href} target="_blank" rel="noopener noreferrer"
+              style={{ display: "inline-block", background: "rgba(0,0,0,0.03)", border: "1px solid rgba(0,0,0,0.06)", borderRadius: 99, padding: "6px 14px", color: "#64748b", fontSize: 12, fontWeight: 500, textDecoration: "none", transition: "all 0.3s ease" }}
+              onMouseEnter={e => { e.currentTarget.style.background = "rgba(0,0,0,0.06)";  e.currentTarget.style.color = "#1e293b"; }}
+              onMouseLeave={e => { e.currentTarget.style.background = "rgba(0,0,0,0.03)";  e.currentTarget.style.color = "#64748b"; }}>
+              {label} ↗
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ marginBottom: 16 }}>
+        <span style={{ fontSize: 56, display: "inline-block", filter: "drop-shadow(0 10px 20px rgba(0,0,0,0.3))" }}>🎓</span>
+      </div>
+      <h1 style={{ color: "#1e293b", fontWeight: 800, fontSize: 40, margin: "0 0 12px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
+        AkmEdu45<br/>
+        <span style={{ background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Smart Study Platform</span>
+      </h1>
+      <p style={{ color: "#475569", fontSize: 15, lineHeight: 1.7, marginBottom: 40, maxWidth: 440, fontWeight: 400 }}>
+        Master your CBSE Class 12 exams. Access comprehensive AI-generated notes, vast MCQ practice sets, sample papers, and deep performance analytics.
+      </p>
+
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(90px, 100%), 1fr))", gap: "10px", marginBottom: "32px", maxWidth: "440px" }}>
+        {[
+          { emoji: "⚛️", name: "Physics" }, { emoji: "🧪", name: "Chemistry" },
+          { emoji: "🌿", name: "Biology" }, { emoji: "📖", name: "English" },
+          { emoji: "📐", name: "Maths" }, { emoji: "💻", name: "CS" },
+          { emoji: "📈", name: "Economics" }, { emoji: "🧾", name: "Accounts" },
+          { emoji: "🏢", name: "Business" }, { emoji: "🏛️", name: "History" },
+          { emoji: "🗳️", name: "Pol. Sc." }, { emoji: "🏃", name: "Phy. Ed." },
+        ].map(({ emoji, name }) => (
+          <div key={name} className="subj-chip">
+            <div style={{ fontSize: 18, marginBottom: 6, filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.2))" }}>{emoji}</div>
+            <div style={{ color: "#475569", fontWeight: 600, fontSize: 11, letterSpacing: "0.02em", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{name}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+});
 
 export function AuthView({
   authTab,
@@ -260,59 +318,7 @@ export function AuthView({
       `}</style>
 
       <div className="auth-modal">
-        {/* ===== LEFT PANEL ===== */}
-        <div className="auth-left">
-          {/* Developer Tag */}
-          <div style={{ marginBottom: 40 }}>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(59, 130, 246, 0.1)", border: "1px solid rgba(59, 130, 246, 0.2)", borderRadius: 99, padding: "6px 16px", marginBottom: 16 }}>
-              <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#3b82f6", display: "inline-block", boxShadow: "0 0 10px #3b82f6, 0 0 20px rgba(59, 130, 246, 0.6)" }} />
-              <span style={{ fontSize: 11, color: "#64748b", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>Creator</span>
-              <span style={{ color: "rgba(0,0,0,0.1)" }}>|</span>
-              <span style={{ fontSize: 12, color: "#1e293b", fontWeight: 700, letterSpacing: "0.02em" }}>Ayush Kumar Maurya</span>
-            </div>
-            <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-              {[
-                { href: "https://www.linkedin.com/in/ayush-kumar-maurya-326071384/", label: "LinkedIn" },
-                { href: "https://github.com/akm45vns-oss", label: "GitHub" },
-                { href: "https://www.instagram.com/ayush.maurya45/", label: "Instagram" },
-              ].map(({ href, label }) => (
-                <a key={label} href={href} target="_blank" rel="noopener noreferrer"
-                  style={{ display: "inline-block", background: "rgba(0,0,0,0.03)", border: "1px solid rgba(0,0,0,0.06)", borderRadius: 99, padding: "6px 14px", color: "#64748b", fontSize: 12, fontWeight: 500, textDecoration: "none", transition: "all 0.3s ease" }}
-                  onMouseEnter={e => { e.currentTarget.style.background = "rgba(0,0,0,0.06)";  e.currentTarget.style.color = "#1e293b"; }}
-                  onMouseLeave={e => { e.currentTarget.style.background = "rgba(0,0,0,0.03)";  e.currentTarget.style.color = "#64748b"; }}>
-                  {label} ↗
-                </a>
-              ))}
-            </div>
-          </div>
-
-          <div style={{ marginBottom: 16 }}>
-            <span style={{ fontSize: 56, display: "inline-block", filter: "drop-shadow(0 10px 20px rgba(0,0,0,0.3))" }}>🎓</span>
-          </div>
-          <h1 style={{ color: "#1e293b", fontWeight: 800, fontSize: 40, margin: "0 0 12px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
-            AkmEdu45<br/>
-            <span style={{ background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Smart Study Platform</span>
-          </h1>
-          <p style={{ color: "#475569", fontSize: 15, lineHeight: 1.7, marginBottom: 40, maxWidth: 440, fontWeight: 400 }}>
-            Master your CBSE Class 12 exams. Access comprehensive AI-generated notes, vast MCQ practice sets, sample papers, and deep performance analytics.
-          </p>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(90px, 100%), 1fr))", gap: "10px", marginBottom: "32px", maxWidth: "440px" }}>
-            {[
-              { emoji: "⚛️", name: "Physics" }, { emoji: "🧪", name: "Chemistry" },
-              { emoji: "🌿", name: "Biology" }, { emoji: "📖", name: "English" },
-              { emoji: "📐", name: "Maths" }, { emoji: "💻", name: "CS" },
-              { emoji: "📈", name: "Economics" }, { emoji: "🧾", name: "Accounts" },
-              { emoji: "🏢", name: "Business" }, { emoji: "🏛️", name: "History" },
-              { emoji: "🗳️", name: "Pol. Sc." }, { emoji: "🏃", name: "Phy. Ed." },
-            ].map(({ emoji, name }) => (
-              <div key={name} className="subj-chip">
-                <div style={{ fontSize: 18, marginBottom: 6, filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.2))" }}>{emoji}</div>
-                <div style={{ color: "#475569", fontWeight: 600, fontSize: 11, letterSpacing: "0.02em", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{name}</div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <AuthLeftPanel />
 
         {/* ===== RIGHT PANEL — LOGIN FORM ===== */}
         <div className="auth-right">

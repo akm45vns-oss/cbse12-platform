@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { loadProgress, saveProgressItem } from "../utils/supabase";
 import { CURRICULUM, totalChapters } from "../constants/curriculum";
 
@@ -7,23 +7,25 @@ export function useProgress() {
   const [isLoading, setIsLoading] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
 
-  const load = async (username) => {
+  const load = useCallback(async (username) => {
     setCurrentUser(username);
     if (!username) return;
     setIsLoading(true);
     const loadedData = await loadProgress(username);
     setData(loadedData);
     setIsLoading(false);
-  };
+  }, []);
 
-  const save = async (key, val) => {
-    const newData = { ...data, [key]: val };
-    setData(newData);
-    
-    if (!currentUser) return;
-    const [subject, chapter, type] = key.split("||");
-    await saveProgressItem(currentUser, subject, chapter, type, val);
-  };
+  const save = useCallback(async (key, val) => {
+    setData(prev => {
+      const newData = { ...prev, [key]: val };
+      if (currentUser) {
+        const [subject, chapter, type] = key.split("||");
+        saveProgressItem(currentUser, subject, chapter, type, val);
+      }
+      return newData;
+    });
+  }, [currentUser]);
 
   const getStats = () => {
     let notesRead = 0, quizDone = 0;

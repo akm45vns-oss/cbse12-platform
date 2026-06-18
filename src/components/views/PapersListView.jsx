@@ -1,6 +1,6 @@
 import { Badge, LoadingScreen } from "../common";
-import { useState, useEffect } from "react";
-export function PapersListView({ subject, curriculumData, loading, loadMsg, loadEmoji, onSelectPaper }) {
+import { useState, useEffect, memo } from "react";
+export const PapersListView = memo(function PapersListView({ subject, curriculumData, loading, loadMsg, loadEmoji, onSelectPaper }) {
   const S = curriculumData;
   const [papers, setPapers] = useState([]);
   const [papersLoading, setPapersLoading] = useState(true);
@@ -121,4 +121,4 @@ export function PapersListView({ subject, curriculumData, loading, loadMsg, load
       )}
     </div>
   );
-}
+});
