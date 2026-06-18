@@ -1,4 +1,5 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { sendEmailWithRetry } from "./brevoService.ts";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -6,10 +7,47 @@ const corsHeaders = {
   "Access-Control-Allow-Headers": "Content-Type, Authorization",
 };
 
+// In-memory sliding window IP-based rate limiter
+// Key: IP address, Value: Array of timestamps of recent requests
+const ipRequestHistory = new Map<string, number[]>();
+const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour window
+const MAX_REQUESTS_PER_WINDOW = 5;           // Max 5 emails per hour per IP
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  if (!ipRequestHistory.has(ip)) {
+    ipRequestHistory.set(ip, [now]);
+    return false;
+  }
+
+  const timestamps = ipRequestHistory.get(ip)!;
+  // Filter out timestamps older than the sliding window limit
+  const validTimestamps = timestamps.filter((t) => now - t < RATE_LIMIT_WINDOW_MS);
+
+  if (validTimestamps.length >= MAX_REQUESTS_PER_WINDOW) {
+    ipRequestHistory.set(ip, validTimestamps);
+    return true;
+  }
+
+  validTimestamps.push(now);
+  ipRequestHistory.set(ip, validTimestamps);
+  return false;
+}
+
 serve(async (req) => {
   // Handle CORS preflight request
   if (req.method === "OPTIONS") {
     return new Response("ok", { headers: corsHeaders });
+  }
+
+  // Extract IP and perform rate limiting check
+  const clientIp = req.headers.get("x-forwarded-for") || "unknown";
+  if (isRateLimited(clientIp)) {
+    console.warn(`[Rate Limit] Blocked IP: ${clientIp} from sending verification email.`);
+    return new Response(
+      JSON.stringify({ error: "Too many verification requests. Please try again in an hour." }),
+      { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+    );
   }
 
   try {
@@ -22,9 +60,9 @@ serve(async (req) => {
       );
     }
 
-    const sendgridApiKey = Deno.env.get("SENDGRID_API_KEY");
-    if (!sendgridApiKey) {
-      console.error("SENDGRID_API_KEY not set");
+    const brevoApiKey = Deno.env.get("BREVO_API_KEY");
+    if (!brevoApiKey) {
+      console.error("BREVO_API_KEY not set");
       return new Response(
         JSON.stringify({ error: "Email service not configured" }),
         { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
@@ -88,46 +126,23 @@ https://akmedu45.xyz
 </html>
 `;
 
-    const response = await fetch("https://api.sendgrid.com/v3/mail/send", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${sendgridApiKey}`,
-      },
-      body: JSON.stringify({
-        personalizations: [
-          {
-            to: [{ email: email }],
-          },
-        ],
-        from: {
-          email: "noreply@akmedu45.xyz",
-          name: "AkmEdu45 Support",
-        },
-        subject: subject,
-        content: [
-          {
-            type: "text/plain",
-            value: plainText,
-          },
-          {
-            type: "text/html",
-            value: htmlContent,
-          },
-        ],
-      }),
-    });
+    const brevoSenderEmail = Deno.env.get("BREVO_SENDER_EMAIL") || "noreply@akmedu45.xyz";
 
-    if (!response.ok) {
-      const errorData = await response.text();
-      console.error("SendGrid error:", errorData);
+    // Send the email using Brevo Service
+    const success = await sendEmailWithRetry(
+      { to: email, subject, htmlContent, plainText, senderEmail: brevoSenderEmail },
+      brevoApiKey
+    );
+
+    if (!success) {
+      console.error(`[Error] Brevo email service returned failure for ${email}`);
       return new Response(
         JSON.stringify({ error: "Failed to send email" }),
-        { status: response.status, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
 
-    console.log(`✅ Email sent to ${email}`);
+    console.log(`✅ Email successfully delivered to ${email}`);
 
     return new Response(JSON.stringify({ success: true }), {
       status: 200,
@@ -136,7 +151,7 @@ https://akmedu45.xyz
   } catch (error) {
     console.error("Function error:", error.message);
     return new Response(
-      JSON.stringify({ error: "Internal server error" }),
+      JSON.stringify({ error: error.message || "Internal server error" }),
       { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
     );
   }

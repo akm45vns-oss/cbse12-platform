@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import {
   getQuestions,
   getAnswers,
@@ -15,6 +16,7 @@ import { ImageUploader } from "./ImageUploader";
 
 export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapter = "", currentUser = "" }) {
   const modalRef = useRef(null);
+  const contentRef = useRef(null);
   const [activeTab, setActiveTab] = useState("recent"); // recent, trending, myChapter, search
   const [questions, setQuestions] = useState([]);
   const [selectedQuestion, setSelectedQuestion] = useState(null);
@@ -28,20 +30,74 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
   const [stats, setStats] = useState({ totalQuestions: 0, totalAnswers: 0 });
   const [isLoading, setIsLoading] = useState(false);
 
-  // Scroll modal into view when opened
+  // Prevent background scrolling while modal is open
   useEffect(() => {
-    if (isOpen && modalRef.current) {
-      // Scroll the modal container into view
-      setTimeout(() => {
-        try {
-          modalRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
-        } catch (e) {
-          // Fallback: just scroll window to top
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-      }, 0);
+    if (isOpen) {
+      const originalOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = originalOverflow;
+      };
     }
   }, [isOpen]);
+
+  // Reset internal modal content scroll to top when opened
+  useEffect(() => {
+    if (isOpen && contentRef.current) {
+      contentRef.current.scrollTop = 0;
+    }
+  }, [isOpen]);
+
+  // Accessibility: Handle Escape key & trap keyboard focus within modal
+  useEffect(() => {
+    if (!isOpen || !modalRef.current) return;
+
+    const modalElement = modalRef.current;
+    modalElement.focus();
+
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+
+    const handleTabKey = (e) => {
+      if (e.key !== 'Tab') return;
+
+      const focusableElements = modalElement.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      
+      if (focusableElements.length === 0) {
+        e.preventDefault();
+        return;
+      }
+
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey) {
+        // Shift + Tab: wrap to last element if at the first element
+        if (document.activeElement === firstElement) {
+          lastElement.focus();
+          e.preventDefault();
+        }
+      } else {
+        // Tab: wrap to first element if at the last element
+        if (document.activeElement === lastElement) {
+          firstElement.focus();
+          e.preventDefault();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('keydown', handleTabKey);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('keydown', handleTabKey);
+    };
+  }, [isOpen, onClose]);
 
   // Load forum stats
   useEffect(() => {
@@ -131,34 +187,65 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
 
   if (!isOpen) return null;
 
-  return (
-    <div
-      style={{
-        position: "fixed",
-        inset: 0,
-        background: "rgba(0,0,0,0.5)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        zIndex: 1000,
-      }}
-      onClick={onClose}
-    >
+  return createPortal(
+    <div className="forum-modal-overlay" onClick={onClose}>
+      <style>{`
+        .forum-modal-overlay {
+          position: fixed;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1000;
+          backdrop-filter: blur(4px);
+        }
+        .forum-modal-content {
+          background: white;
+          display: flex;
+          flex-direction: column;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+          border: 1.5px solid #dbeafe;
+          overflow: hidden;
+          outline: none;
+          transition: all 0.2s ease;
+        }
+        /* Mobile: < 768px */
+        @media (max-width: 767px) {
+          .forum-modal-content {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: 100dvh !important;
+            max-height: 100dvh !important;
+            border-radius: 0 !important;
+            border: none !important;
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+          }
+        }
+        /* Tablet: 768px - 1024px */
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .forum-modal-content {
+            width: min(90%, 700px) !important;
+            max-width: 700px !important;
+            border-radius: 20px !important;
+            max-height: 90vh !important;
+          }
+        }
+        /* Desktop: > 1024px */
+        @media (min-width: 1025px) {
+          .forum-modal-content {
+            width: min(90%, 900px) !important;
+            max-width: 900px !important;
+            border-radius: 20px !important;
+            max-height: 85vh !important;
+          }
+        }
+      `}</style>
       <div
         ref={modalRef}
-        style={{
-          background: "white",
-          borderRadius: 20,
-          width: "min(90%, 700px)",
-          maxWidth: 700,
-          /* Use dvh so the modal shrinks when virtual keyboard appears on iOS */
-          maxHeight: "min(85dvh, calc(100vh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px) - 32px))",
-          display: "flex",
-          flexDirection: "column",
-          boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
-          border: "1.5px solid #dbeafe",
-          overflowY: "hidden",
-        }}
+        tabIndex={-1}
+        className="forum-modal-content"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -256,6 +343,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
 
         {/* Content Area */}
         <div
+          ref={contentRef}
           style={{
             flex: 1,
             overflowY: "auto",
@@ -679,6 +767,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

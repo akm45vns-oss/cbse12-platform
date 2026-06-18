@@ -8,10 +8,6 @@ export function FloatingForumButton({ currentSubject = "", currentChapter = "", 
 
   const handleOpenForum = () => {
     setIsForumOpen(true);
-    // Scroll to top to ensure modal is visible
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }, 50);
   };
 
   return (

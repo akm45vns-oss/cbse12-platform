@@ -116,7 +116,7 @@ export const globalStyles = `
   @media (max-width: 480px) { .qnum { width: 38px; height: 38px; font-size: 11px; } }
   
   /* ===== LAYOUTS ===== */
-  .main-content { max-width: 1140px; margin: 0 auto; padding: 40px 24px; position: relative; z-index: 10; }
+  .main-content { max-width: 1140px; margin: 0 auto; padding: 40px 24px; position: relative; z-index: 10; flex: 1 0 auto; width: 100%; display: flex; flex-direction: column; }
   /* Auto-fill min 240px on md+, single col on xs */
   .dash-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); gap: 24px; }
   .subj-ch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%),1fr)); gap: 16px; }

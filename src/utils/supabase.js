@@ -312,6 +312,22 @@ export async function updateUserPassword(username, currentPasswordPlain, newPass
  */
 export async function sendOTP(email) {
   try {
+    // Check if an OTP was recently generated within 60s to prevent duplicate verification emails
+    const { data: existing, error: fetchError } = await supabase
+      .from("email_verifications")
+      .select("created_at")
+      .eq("email", email)
+      .maybeSingle();
+
+    if (existing && !fetchError) {
+      const lastSent = new Date(existing.created_at).getTime();
+      const diff = Date.now() - lastSent;
+      if (diff < 60000) {
+        const waitTime = Math.ceil((60000 - diff) / 1000);
+        return { success: false, error: `Please wait ${waitTime} seconds before requesting a new verification code.` };
+      }
+    }
+
     const otp = generateOTP();
     // Store expiration as Unix timestamp (milliseconds) to avoid timezone issues
     const expiresAtMs = Date.now() + 15 * 60 * 1000; // 15 minutes from now
@@ -490,6 +506,23 @@ export async function sendPasswordResetOTP(usernameOrEmail) {
     }
 
     const email = user.email;
+
+    // Check if a reset OTP was recently generated within 60s to prevent duplicate verification emails
+    const { data: existing, error: fetchError } = await supabase
+      .from("password_resets")
+      .select("created_at")
+      .eq("email", email)
+      .maybeSingle();
+
+    if (existing && !fetchError) {
+      const lastSent = new Date(existing.created_at).getTime();
+      const diff = Date.now() - lastSent;
+      if (diff < 60000) {
+        const waitTime = Math.ceil((60000 - diff) / 1000);
+        return { success: false, error: `Please wait ${waitTime} seconds before requesting a new reset code.` };
+      }
+    }
+
     const otp = generateOTP();
     const expiresAtMs = Date.now() + 15 * 60 * 1000; // 15 minutes
 
