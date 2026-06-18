@@ -44,6 +44,7 @@ export default function App() {
   const nav = useNavigation();
   const progress = useProgress();
   const theme = useTheme();
+  const { isScrollingUp, isAtTop } = useScrollDirection();
 
   // Call performance tracking in dev environment
   usePerformanceMetrics();
@@ -86,7 +87,7 @@ export default function App() {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "instant"
+      behavior: "auto"
     });
   }, [nav.view, nav.subject, nav.chapter]);
 
@@ -364,40 +365,41 @@ Respond with the paper content directly.`;
   }
 
   const S = nav.subject ? CURRICULUM[nav.subject] : null;
-  const { isScrollingUp, isAtTop } = useScrollDirection();
 
   return (
     <div
       style={{
-        minHeight: "100vh",
+        minHeight: "100dvh",
         width: "100%",
         background: "linear-gradient(-45deg, #fdfbfb, #ebedee, #e0c3fc, #8ec5fc, #fbc2eb)",
         backgroundSize: "400% 400%",
         animation: "globalBackgroundGradient 20s ease infinite",
-        position: "relative",
+        display: "flex",
+        flexDirection: "column",
         fontFamily: "'Inter', system-ui, sans-serif",
       }}
     >
-      <div style={{ position: "fixed", top: "-10%", left: "-10%", width: "50vw", height: "50vw", background: "radial-gradient(circle, rgba(236, 72, 153, 0.15) 0%, transparent 60%)", filter: "blur(100px)", zIndex: 0, pointerEvents: "none", animation: "orbPulse1 12s infinite alternate" }} />
-      <div style={{ position: "fixed", bottom: "-20%", right: "-10%", width: "60vw", height: "60vw", background: "radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 60%)", filter: "blur(120px)", zIndex: 0, pointerEvents: "none", animation: "orbPulse2 15s infinite alternate-reverse" }} />
+      <div style={{ position: "fixed", top: "-10%", left: "-10%", width: "50vw", height: "50vw", background: "radial-gradient(circle, rgba(236, 72, 153, 0.12) 0%, transparent 60%)", filter: "blur(60px)", zIndex: 0, pointerEvents: "none", animation: "orbPulse1 12s infinite alternate" }} />
+      <div style={{ position: "fixed", bottom: "-20%", right: "-10%", width: "60vw", height: "60vw", background: "radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 60%)", filter: "blur(80px)", zIndex: 0, pointerEvents: "none", animation: "orbPulse2 15s infinite alternate-reverse" }} />
       
       <style>{globalStyles}</style>
 
       {/* Top Navigation */}
       <nav
         style={{
-          background: "rgba(255, 255, 255, 0.85)",
-          backdropFilter: "blur(32px)",
-          WebkitBackdropFilter: "blur(32px)",
+          background: "rgba(255, 255, 255, 0.92)",
+          backdropFilter: "blur(20px)",
+          WebkitBackdropFilter: "blur(20px)",
           borderBottom: "1px solid rgba(0, 0, 0, 0.05)",
           position: "sticky",
           top: 0,
           zIndex: 100,
-          boxShadow: "0 10px 40px rgba(0,0,0,0.5)",
-          transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+          boxShadow: "0 2px 16px rgba(0,0,0,0.08)",
+          transition: "transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease",
           transform: isScrollingUp || isAtTop ? "translateY(0)" : "translateY(-100%)",
           opacity: isScrollingUp || isAtTop ? 1 : 0,
           pointerEvents: isScrollingUp || isAtTop ? "auto" : "none",
+          flexShrink: 0,
         }}
       >
         <div className="nav-bar">
@@ -641,8 +643,9 @@ Respond with the paper content directly.`;
           top: 60,
           left: 0,
           right: 0,
-          background: "rgba(255, 255, 255, 0.95)",
-          backdropFilter: "blur(32px)",
+          background: "rgba(255, 255, 255, 0.97)",
+          backdropFilter: "blur(16px)",
+          WebkitBackdropFilter: "blur(16px)",
           borderBottom: "1px solid rgba(0, 0, 0, 0.05)",
           zIndex: 99,
           animation: "slideDown 0.2s ease-out"
@@ -1008,14 +1011,14 @@ Respond with the paper content directly.`;
       {/* Footer */}
       <footer
         style={{
-          marginTop: 24,
           background: "rgba(255, 255, 255, 0.6)",
-          backdropFilter: "blur(28px)",
+          backdropFilter: "blur(16px)",
+          WebkitBackdropFilter: "blur(16px)",
           borderTop: "1px solid rgba(0, 0, 0, 0.05)",
           padding: "12px 16px",
-          transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
           position: "relative",
-          zIndex: 10
+          zIndex: 10,
+          flexShrink: 0,
         }}
       >
         <div

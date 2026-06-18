@@ -31,14 +31,29 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
   const [isLoading, setIsLoading] = useState(false);
 
   // Prevent background scrolling while modal is open
+  // SAFE approach: save scroll position, fix body temporarily.
+  // Always restores on cleanup — even if modal unmounts mid-flight.
   useEffect(() => {
-    if (isOpen) {
-      const originalOverflow = document.body.style.overflow;
-      document.body.style.overflow = "hidden";
-      return () => {
-        document.body.style.overflow = originalOverflow;
-      };
-    }
+    if (!isOpen) return;
+    const scrollY = window.scrollY;
+    const body = document.body;
+    const prev = {
+      position: body.style.position,
+      top: body.style.top,
+      width: body.style.width,
+      overflow: body.style.overflow,
+    };
+    body.style.position = "fixed";
+    body.style.top = `-${scrollY}px`;
+    body.style.width = "100%";
+    body.style.overflow = "hidden";
+    return () => {
+      body.style.position = prev.position;
+      body.style.top = prev.top;
+      body.style.width = prev.width;
+      body.style.overflow = prev.overflow;
+      window.scrollTo({ top: scrollY, behavior: "instant" });
+    };
   }, [isOpen]);
 
   // Reset internal modal content scroll to top when opened

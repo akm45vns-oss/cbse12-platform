@@ -426,7 +426,7 @@
 @media (max-width: 768px) {
   .leaderboard-container {
     padding: 15px;
-    padding-top: 70px;
+    /* Removed padding-top:70px — sticky nav handles its own offset */
   }
 
   .leaderboard-header h1 {

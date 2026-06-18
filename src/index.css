@@ -2,37 +2,35 @@
   box-sizing: border-box;
 }
 
-html, body {
+html {
+  margin: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  touch-action: manipulation;
-}
-
-html {
-  -webkit-text-size-adjust: 100%;
-  /* Performance: GPU acceleration for smooth scrolling */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   /* Mobile-first: System fonts for faster rendering */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
   background: #fff0f5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* Mobile optimization: Prevent zoom on input focus */
+  /* Mobile optimization: Prevent text selection while scrolling */
   -webkit-user-scalable: yes;
   -webkit-touch-callout: none;
+  position: relative;
 }
+
 
 #root {
   width: 100%;
-  min-height: 100vh;
-  /* Performance: GPU acceleration for animations */
-  will-change: transform;
+  min-height: 100%;
+  /* Avoid will-change:transform — it creates a stacking context that breaks
+     fixed positioning (sticky nav) and adds unnecessary GPU layers. */
+  isolation: isolate;
 }
 
 /* Mobile-first responsive images */

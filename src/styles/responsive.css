@@ -2,16 +2,23 @@
 /* This file contains responsive breakpoints and mobile optimizations */
 
 /* ===== GLOBAL RESPONSIVE SAFETY OVERRIDES ===== */
-html, body {
+html {
   max-width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
 }
 
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 
 /* ===== MOBILE BREAKPOINTS ===== */
 /* xs: 320px - Extra Small phones */
@@ -164,7 +171,6 @@ html, body {
 /* ===== LANDSCAPE ORIENTATION OPTIMIZATIONS ===== */
 @media screen and (orientation: landscape) and (max-height: 500px) {
   /* Reduce vertical spacing on landscape mobile */
-  body { padding: 8px; }
   h1, h2 { margin: 4px 0; }
   .card { padding: 12px; }
   .spacing-lg { margin: 8px 0 !important; }
@@ -249,11 +255,10 @@ html, body {
   }
 }
 
-/* ===== SAFE AREA INSETS (Notch Support) ===== */
-/* Only apply bottom safe area on body; top/sides are handled by sticky nav & containers.
-   Applying left/right/top here creates double-padding with the app's own padding system. */
+/* Safe area insets are applied per-component (e.g. floating buttons) rather than
+   on body, to avoid adding phantom height that causes extra scroll space. */
 @supports (padding: max(0px)) {
-  body {
+  .floating-safe-bottom {
     padding-bottom: max(0px, env(safe-area-inset-bottom));
   }
 }

@@ -31,14 +31,29 @@ export const globalStyles = `
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   
-  html, body, #root { 
+  html { 
     width: 100%; 
-    min-height: 100vh; 
     background: var(--bg-primary);
     color: var(--text-primary);
     overflow-x: hidden;
+  }
+  body {
+    width: 100%;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    touch-action: manipulation;
+    position: relative;
+  }
+  #root {
+    width: 100%;
+    min-height: 100dvh;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; -webkit-font-smoothing: antialiased; }
@@ -119,7 +134,15 @@ export const globalStyles = `
   @media (max-width: 480px) { .qnum { width: 38px; height: 38px; font-size: 11px; } }
   
   /* ===== LAYOUTS ===== */
-  .main-content { max-width: 1140px; margin: 0 auto; padding: 40px 24px; position: relative; z-index: 10; flex: 1 0 auto; width: 100%; display: flex; flex-direction: column; }
+  .main-content { 
+    max-width: 1140px; 
+    margin: 0 auto; 
+    padding: 40px 24px;
+    position: relative; 
+    z-index: 10; 
+    flex: 1; 
+    width: 100%; 
+  }
   /* Auto-fill min 240px on md+, single col on xs */
   .dash-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); gap: 24px; }
   .subj-ch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%),1fr)); gap: 16px; }
