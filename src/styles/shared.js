@@ -36,6 +36,9 @@ export const globalStyles = `
     min-height: 100vh; 
     background: var(--bg-primary);
     color: var(--text-primary);
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    touch-action: manipulation;
   }
 
   body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; -webkit-font-smoothing: antialiased; }

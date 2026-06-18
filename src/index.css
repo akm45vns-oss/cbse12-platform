@@ -2,9 +2,15 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  touch-action: manipulation;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
   /* Performance: GPU acceleration for smooth scrolling */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,7 +23,6 @@ body {
   background: #fff0f5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
   /* Mobile optimization: Prevent zoom on input focus */
   -webkit-user-scalable: yes;
   -webkit-touch-callout: none;

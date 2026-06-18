@@ -69,6 +69,26 @@ export default function App() {
   // Refs for cancellation tokens
   const abortControllerRef = useRef(null);
   const prevChapterRef = useRef(null);
+  const prevStackLengthRef = useRef(nav.viewStack ? nav.viewStack.length : 0);
+
+  // Scroll to top on navigation/route change, preserving scroll position on Back actions
+  useEffect(() => {
+    const prevLength = prevStackLengthRef.current;
+    const currentLength = nav.viewStack ? nav.viewStack.length : 0;
+    prevStackLengthRef.current = currentLength;
+
+    if (currentLength < prevLength) {
+      // Navigated back - preserve scroll position
+      return;
+    }
+
+    // Reset viewport to top
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant"
+    });
+  }, [nav.view, nav.subject, nav.chapter]);
 
   // Load progress on user login
   useEffect(() => {
