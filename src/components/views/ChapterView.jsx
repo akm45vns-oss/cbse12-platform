@@ -109,7 +109,7 @@ export function ChapterView({ subject, chapter, curriculumData, notesRead, quizB
       </div>
 
       {/* Mode Cards Grid */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 32 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px, 100%), 1fr))", gap: 32 }}>
         {modes.map(({ mode, emoji, title, desc, accentColor, glowColor, glowIntense, borderActive, done, doneLabel }) => (
           <button key={mode} onClick={() => {
             if (mode === "notes") onStartNotes();

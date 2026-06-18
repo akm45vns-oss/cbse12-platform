@@ -7,7 +7,6 @@ import { SearchBar } from "./components/common/SearchBar";
 import { recordDailyActivity } from "./utils/loginStreak";
 import { recordQuizSubmission } from "./utils/weakTopics";
 import { getCachedNotes, cacheNotes } from "./utils/cacheManager";
-import { validateQuestion } from "./components/views/QuizView";
 // Eager load critical views, lazy load others
 import { AuthView, DashboardView, QuizSetsView, LeaderboardView } from "./components/views";
 const SubjectView = lazy(() => import("./components/views/SubjectView").then(m => ({ default: m.SubjectView })));
@@ -613,7 +612,7 @@ Respond with the paper content directly.`;
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div style={{
+        <div className="mobile-menu-dropdown" style={{
           position: "fixed",
           top: 60,
           left: 0,
@@ -622,8 +621,7 @@ Respond with the paper content directly.`;
           backdropFilter: "blur(32px)",
           borderBottom: "1px solid rgba(0, 0, 0, 0.05)",
           zIndex: 99,
-          animation: "slideDown 0.2s ease-out",
-          '@media (min-width: 769px)': { display: 'none' }
+          animation: "slideDown 0.2s ease-out"
         }}>
           <div style={{ padding: "12px", display: "flex", flexDirection: "column", gap: 8 }}>
             <button
@@ -745,6 +743,9 @@ Respond with the paper content directly.`;
           .nav-desktop-links { display: none !important; }
           /* Hide nav bar child-2 selector as backup */
           .nav-bar > div:nth-child(2) { display: none !important; }
+        }
+        @media (min-width: 769px) {
+          .mobile-menu-dropdown { display: none !important; }
         }
         @keyframes slideDown {
           from { opacity: 0; transform: translateY(-8px); }

@@ -340,7 +340,7 @@ export function StatsView() {
             <div style={{
               display: "grid",
               gridTemplateColumns: "repeat(7, 1fr)",
-              gap: 8,
+              gap: "clamp(4px, 1vw, 8px)",
             }}>
               {trends.dailyActivity.map(d => {
                 const intensity = d.sessions / (Math.max(...trends.dailyActivity.map(x => x.sessions)) || 1);
@@ -357,7 +357,7 @@ export function StatsView() {
                       style={{
                         background: `rgba(8, 145, 178, ${opacity})`,
                         borderRadius: 8,
-                        padding: 16,
+                        padding: "clamp(8px, 1.5vw, 16px) clamp(2px, 0.5vw, 8px)",
                         marginBottom: 8,
                         cursor: "pointer",
                         minHeight: 40,
@@ -366,7 +366,7 @@ export function StatsView() {
                         justifyContent: "center",
                       }}
                     >
-                      <div style={{ fontSize: 18, fontWeight: 700, color: intensity > 0.5 ? "white" : "#0891b2" }}>
+                      <div style={{ fontSize: "clamp(12px, 1.8vw, 18px)", fontWeight: 700, color: intensity > 0.5 ? "white" : "#0891b2" }}>
                         {d.sessions}
                       </div>
                     </div>
@@ -513,7 +513,7 @@ export function StatsView() {
         <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#1e293b", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
           📋 Session Summary
         </h3>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(90px, 100%), 1fr))", gap: 16 }}>
           <div>
             <div style={{ fontSize: 12, color: labelColor, fontWeight: 700, marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.08em" }}>
               Total Sessions
@@ -603,7 +603,7 @@ export function StatsView() {
         <h3 style={{ fontSize: 16, fontWeight: 800, color: theme.isDarkMode ? "#22d3ee" : "#1e293b", margin: "0 0 16px", letterSpacing: "-0.01em" }}>
           🎯 Study Mode Distribution
         </h3>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(80px, 100%), 1fr))", gap: 12 }}>
           <div style={{ textAlign: "center" }}>
             <div style={{ fontSize: 32, marginBottom: 8 }}>📝</div>
             <div style={{ fontSize: 12, color: labelColor, fontWeight: 700, marginBottom: 4 }}>Notes</div>

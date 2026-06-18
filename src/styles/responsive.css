@@ -1,6 +1,18 @@
 /* ===== MOBILE-FIRST RESPONSIVE DESIGN ===== */
 /* This file contains responsive breakpoints and mobile optimizations */
 
+/* ===== GLOBAL RESPONSIVE SAFETY OVERRIDES ===== */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 /* ===== MOBILE BREAKPOINTS ===== */
 /* xs: 320px - Extra Small phones */
 /* sm: 640px - Small phones/tablets */

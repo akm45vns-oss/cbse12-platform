@@ -297,7 +297,7 @@ export function AuthView({
             Master your CBSE Class 12 exams. Access comprehensive AI-generated notes, vast MCQ practice sets, sample papers, and deep performance analytics.
           </p>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "10px", marginBottom: "32px", maxWidth: "440px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(90px, 100%), 1fr))", gap: "10px", marginBottom: "32px", maxWidth: "440px" }}>
             {[
               { emoji: "⚛️", name: "Physics" }, { emoji: "🧪", name: "Chemistry" },
               { emoji: "🌿", name: "Biology" }, { emoji: "📖", name: "English" },
@@ -374,16 +374,16 @@ export function AuthView({
                     <>
                       <div>
                         <label className="label-text">New Password</label>
-                        <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
-                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.newPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, newPassword: e.target.value })} placeholder="Min 8 chars, mixed case, symbols" style={{ flex: 1 }} />
-                          <button onClick={() => setShowResetPassword(s => !s)} style={{ background: "none", border: "none", color: "#94a3b8", fontSize: "16px", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", minWidth: "44px", minHeight: "44px", flexShrink: 0, opacity: 0.7, transition: "opacity 0.2s ease", borderRadius: "8px" }} onMouseEnter={e => e.target.style.opacity = "1"} onMouseLeave={e => e.target.style.opacity = "0.7"} title="Toggle password visibility">{showResetPassword ? "🙈" : "👁️"}</button>
+                        <div style={{ position: "relative", display: "flex", width: "100%", alignItems: "center" }}>
+                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.newPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, newPassword: e.target.value })} placeholder="Min 8 chars, mixed case, symbols" style={{ paddingRight: "48px" }} />
+                          <button onClick={() => setShowResetPassword(s => !s)} style={{ position: "absolute", right: "4px", background: "none", border: "none", color: "#94a3b8", fontSize: "16px", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", minWidth: "44px", minHeight: "44px", opacity: 0.7, transition: "opacity 0.2s ease", borderRadius: "8px" }} onMouseEnter={e => e.target.style.opacity = "1"} onMouseLeave={e => e.target.style.opacity = "0.7"} title="Toggle password visibility">{showResetPassword ? "🙈" : "👁️"}</button>
                         </div>
                       </div>
                       <div>
                         <label className="label-text">Confirm Password</label>
-                        <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
-                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.confirmPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, confirmPassword: e.target.value })} placeholder="Re-enter password" style={{ flex: 1 }} onKeyDown={e => e.key === "Enter" && doForgotPasswordReset()} />
-                      <button onClick={() => setShowResetPassword(s => !s)} style={{ background: "none", border: "none", color: "#94a3b8", fontSize: "16px", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", minWidth: "44px", minHeight: "44px", flexShrink: 0, opacity: 0.7, transition: "opacity 0.2s ease", borderRadius: "8px" }} onMouseEnter={e => e.target.style.opacity = "1"} onMouseLeave={e => e.target.style.opacity = "0.7"} title="Toggle password visibility">{showResetPassword ? "🙈" : "👁️"}</button>
+                        <div style={{ position: "relative", display: "flex", width: "100%", alignItems: "center" }}>
+                          <input className="auth-input" type={showResetPassword ? "text" : "password"} value={resetPasswordData.confirmPassword} onChange={e => setResetPasswordData({ ...resetPasswordData, confirmPassword: e.target.value })} placeholder="Re-enter password" style={{ paddingRight: "48px" }} onKeyDown={e => e.key === "Enter" && doForgotPasswordReset()} />
+                          <button onClick={() => setShowResetPassword(s => !s)} style={{ position: "absolute", right: "4px", background: "none", border: "none", color: "#94a3b8", fontSize: "16px", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", minWidth: "44px", minHeight: "44px", opacity: 0.7, transition: "opacity 0.2s ease", borderRadius: "8px" }} onMouseEnter={e => e.target.style.opacity = "1"} onMouseLeave={e => e.target.style.opacity = "0.7"} title="Toggle password visibility">{showResetPassword ? "🙈" : "👁️"}</button>
                         </div>
                       </div>
                     </>
@@ -404,9 +404,9 @@ export function AuthView({
                   )}
                   <div>
                     <label className="label-text">Password</label>
-                    <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
-                      <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)} placeholder={authTab === "register" ? "Min 8 chars, mixed, symbols" : "Enter your password"} style={{ flex: 1 }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
-                      <button onClick={() => setShowPass(s => !s)} style={{ background: "none", border: "none", color: "#94a3b8", fontSize: "16px", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", minWidth: "44px", minHeight: "44px", flexShrink: 0, opacity: 0.7, transition: "opacity 0.2s ease", borderRadius: "8px" }} onMouseEnter={e => e.target.style.opacity = "1"} onMouseLeave={e => e.target.style.opacity = "0.7"} title="Toggle password visibility">{showPass ? "🙈" : "👁️"}</button>
+                    <div style={{ position: "relative", display: "flex", width: "100%", alignItems: "center" }}>
+                      <input className="auth-input" type={showPass ? "text" : "password"} value={pass} onChange={e => setPass(e.target.value)} placeholder={authTab === "register" ? "Min 8 chars, mixed, symbols" : "Enter your password"} style={{ paddingRight: "48px" }} onKeyDown={e => e.key === "Enter" && authTab === "login" && doLogin()} />
+                      <button onClick={() => setShowPass(s => !s)} style={{ position: "absolute", right: "4px", background: "none", border: "none", color: "#94a3b8", fontSize: "16px", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", justifyContent: "center", minWidth: "44px", minHeight: "44px", opacity: 0.7, transition: "opacity 0.2s ease", borderRadius: "8px" }} onMouseEnter={e => e.target.style.opacity = "1"} onMouseLeave={e => e.target.style.opacity = "0.7"} title="Toggle password visibility">{showPass ? "🙈" : "👁️"}</button>
                     </div>
                     {authTab === "register" && pass && (
                       <div style={{ marginTop: 12 }}>

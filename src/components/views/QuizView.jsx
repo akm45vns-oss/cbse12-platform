@@ -142,7 +142,7 @@ export function QuizView({ subject, chapter, loading, loadMsg, loadEmoji, quiz, 
               {quiz.map((_, i) => (
                 <button key={i} onClick={() => setQIdx(i)}
                   style={{
-                    width: 32, height: 32, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: 8, fontWeight: 700, cursor: "pointer", border: "none",
+                    width: 38, height: 38, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: 8, fontWeight: 700, cursor: "pointer", border: "none",
                     background: i === qIdx ? (S?.accent || "#6366f1") : answers[i] !== undefined ? "rgba(34,197,94,0.2)" : "rgba(0,0,0,0.05)",
                     color: i === qIdx ? "white" : answers[i] !== undefined ? "#059669" : "#64748b",
                     border: answers[i] !== undefined && i !== qIdx ? "1px solid rgba(34,197,94,0.4)" : "1px solid transparent"
