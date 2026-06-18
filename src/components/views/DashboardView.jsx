@@ -9,18 +9,18 @@ export function DashboardView({ stats, overallPct, currentUser, displayName, onS
   
   return (
     <div>
-      <div style={{ marginBottom: 36, display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "flex-end", gap: 24 }}>
-        <div>
-          <h1 style={{ fontSize: "clamp(28px,5vw,38px)", fontWeight: 900, color: "#1e293b", margin: 0, letterSpacing: "-0.02em", lineHeight: 1.2 }}>
+      <div style={{ marginBottom: 36, display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "flex-end", gap: 16 }}>
+        <div style={{ minWidth: 0, flex: "1 1 200px" }}>
+          <h1 style={{ fontSize: "clamp(22px,5vw,38px)", fontWeight: 900, color: "#1e293b", margin: 0, letterSpacing: "-0.02em", lineHeight: 1.2 }}>
             Welcome back, <span style={{background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", filter: "drop-shadow(0 0 20px rgba(59,130,246,0.2))"}}>{displayName || currentUser}</span>! 👋
           </h1>
-          <p style={{ color: "#64748b", marginTop: 8, fontSize: "clamp(14px,2.5vw,16px)", fontWeight: 500 }}>
+          <p style={{ color: "#64748b", marginTop: 8, fontSize: "clamp(13px,2.5vw,15px)", fontWeight: 500 }}>
             AkmEdu45 - Comprehensive Study Preparation · All Subjects
           </p>
         </div>
         
-        {/* Search Bar aligned to the right or bottom */}
-        <div style={{ width: "100%", maxWidth: 320 }}>
+        {/* Search Bar — full-width on xs, constrained on md+ */}
+        <div style={{ flex: "1 1 240px", maxWidth: 320 }}>
           <SearchBar 
             onSelectChapter={(chapter) => {
               const foundSubject = Object.keys(CURRICULUM).find(subj => {

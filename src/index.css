@@ -45,8 +45,8 @@ input, button, textarea, select {
   font-size: 16px;
 }
 
-/* Prevent horizontal scroll layout */
-* {
+/* Prevent media from overflowing containers — do NOT apply globally as it breaks SVG/tables */
+img, video, iframe, embed, canvas {
   max-width: 100%;
 }
 

@@ -454,13 +454,12 @@ Respond with the paper content directly.`;
             )}
           </div>
 
-          {/* Desktop Navigation (hidden on mobile) */}
-          <div style={{ 
+          {/* Desktop Navigation — hidden on mobile via CSS class */}
+          <div className="nav-desktop-links" style={{ 
             display: "flex", 
             alignItems: "center", 
             gap: 10, 
             flexWrap: "wrap",
-            '@media (max-width: 768px)': { display: 'none' }
           }}>
             <button
               onClick={() => nav.navigate("stats")}
@@ -580,12 +579,11 @@ Respond with the paper content directly.`;
             </button>
           </div>
 
-          {/* Mobile Hamburger Menu Button (visible only on mobile) */}
+          {/* Mobile Hamburger Menu Button — visible only on mobile via CSS class */}
           <button
+            className="nav-hamburger"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             style={{
-              display: "none",
-              '@media (max-width: 768px)': { display: 'flex' },
               background: "rgba(0, 0, 0, 0.03)",
               border: "1px solid rgba(0, 0, 0, 0.06)",
               borderRadius: 8,
@@ -593,10 +591,11 @@ Respond with the paper content directly.`;
               color: "#475569",
               fontWeight: 600,
               fontSize: 20,
+              display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              minHeight: "40px",
-              minWidth: "40px",
+              minHeight: "44px",
+              minWidth: "44px",
               cursor: "pointer",
               transition: "all 0.2s",
               flexShrink: 0
@@ -604,6 +603,8 @@ Respond with the paper content directly.`;
             onMouseEnter={e => { e.currentTarget.style.background="rgba(0,0,0,0.06)"; e.currentTarget.style.color="#1e293b"; }}
             onMouseLeave={e => { e.currentTarget.style.background="rgba(0,0,0,0.03)"; e.currentTarget.style.color="#475569"; }}
             title="Menu"
+            aria-label="Open navigation menu"
+            aria-expanded={mobileMenuOpen}
           >
             {mobileMenuOpen ? "✕" : "☰"}
           </button>
@@ -736,17 +737,23 @@ Respond with the paper content directly.`;
       )}
 
       <style>{`
+        /* Hamburger: show only on mobile; desktop nav: hide only on mobile */
+        .nav-hamburger { display: none; }
+        .nav-desktop-links { display: flex; }
         @media (max-width: 768px) {
+          .nav-hamburger { display: flex !important; }
+          .nav-desktop-links { display: none !important; }
+          /* Hide nav bar child-2 selector as backup */
           .nav-bar > div:nth-child(2) { display: none !important; }
         }
         @keyframes slideDown {
-          from {
-            opacity: 0;
-            transform: translateY(-10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
+          from { opacity: 0; transform: translateY(-8px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        /* Floating forum button safe area */
+        @supports (bottom: env(safe-area-inset-bottom)) {
+          .floating-forum-btn {
+            bottom: calc(24px + env(safe-area-inset-bottom));
           }
         }
       `}</style>
@@ -999,7 +1006,7 @@ Respond with the paper content directly.`;
         >
           <span
             style={{
-              fontSize: 9,
+              fontSize: 11,
               color: "#64748b",
               fontWeight: 700,
               textTransform: "uppercase",
@@ -1008,7 +1015,7 @@ Respond with the paper content directly.`;
           >
             Built by
           </span>
-          <span style={{ color: "#1e293b", fontWeight: 700, fontSize: 12 }}>
+          <span style={{ color: "#1e293b", fontWeight: 700, fontSize: 13 }}>
             Ayush Kumar Maurya
           </span>
           <span style={{ color: "#cbd5e1", fontSize: 14 }}>|</span>

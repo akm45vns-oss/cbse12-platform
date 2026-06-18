@@ -35,12 +35,12 @@ export function AuthView({
   // If OTP verification is needed, show OTP screen
   if (otpState.show) {
     return (
-      <div style={{ minHeight: "100vh", width: "100%", background: "transparent", position: "relative", overflow: "hidden", fontFamily: "'Inter', system-ui, sans-serif", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px" }}>
+      <div style={{ minHeight: "100vh", width: "100%", background: "transparent", position: "relative", overflow: "hidden", fontFamily: "'Inter', system-ui, sans-serif", display: "flex", alignItems: "center", justifyContent: "center", padding: "clamp(12px, 4vw, 20px)" }}>
         {/* Animated Orbs */}
         <div style={{ position: "absolute", top: "10%", left: "20%", width: "40vw", height: "40vw", background: "radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 60%)", filter: "blur(100px)", borderRadius: "50%", animation: "float 12s infinite ease-in-out" }} />
         <div style={{ position: "absolute", bottom: "10%", right: "20%", width: "50vw", height: "50vw", background: "radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 60%)", filter: "blur(120px)", borderRadius: "50%", animation: "float 15s infinite reverse ease-in-out" }} />
         
-        <div style={{ position: "relative", zIndex: 10, maxWidth: "420px", width: "100%", background: "rgba(255, 255, 255, 0.75)", backdropFilter: "blur(32px)", WebkitBackdropFilter: "blur(32px)", borderRadius: "24px", padding: "48px", boxShadow: "0 24px 64px rgba(148, 163, 184, 0.25)", border: "1px solid rgba(255, 255, 255, 0.8)" }}>
+        <div style={{ position: "relative", zIndex: 10, maxWidth: "420px", width: "100%", background: "rgba(255, 255, 255, 0.75)", backdropFilter: "blur(32px)", WebkitBackdropFilter: "blur(32px)", borderRadius: "24px", padding: "clamp(24px, 6vw, 48px)", boxShadow: "0 24px 64px rgba(148, 163, 184, 0.25)", border: "1px solid rgba(255, 255, 255, 0.8)", overflowY: "auto", maxHeight: "calc(100vh - 40px)" }}>
           <div style={{ textAlign: "center", marginBottom: "32px" }}>
             <div style={{ fontSize: "48px", marginBottom: "16px" }}>📧</div>
             <h2 style={{ fontSize: "24px", fontWeight: 800, color: "#1e293b", margin: "0 0 8px", letterSpacing: "-0.02em" }}>Verify Your Email</h2>
@@ -111,7 +111,7 @@ export function AuthView({
 
   // MAIN AUTH VIEW
   return (
-    <div style={{ minHeight: "100vh", width: "100%", background: "transparent", position: "relative", overflow: "hidden", fontFamily: "'Inter', system-ui, sans-serif", display: "flex", alignItems: "center", justifyContent: "center", padding: "24px" }}>
+    <div style={{ minHeight: "100vh", width: "100%", background: "transparent", position: "relative", overflow: "hidden", fontFamily: "'Inter', system-ui, sans-serif", display: "flex", alignItems: "center", justifyContent: "center", padding: "clamp(12px, 4vw, 24px)" }}>
       {/* Dynamic Background Orbs */}
       <div style={{ position: "absolute", top: "-10%", left: "-10%", width: "60vw", height: "60vw", background: "radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 60%)", filter: "blur(90px)", animation: "float 18s infinite ease-in-out" }} />
       <div style={{ position: "absolute", bottom: "-20%", right: "-10%", width: "70vw", height: "70vw", background: "radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 60%)", filter: "blur(110px)", animation: "float 20s infinite reverse ease-in-out" }} />
@@ -137,7 +137,9 @@ export function AuthView({
           border-radius: 32px;
           box-shadow: 0 24px 64px rgba(148, 163, 184, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.9);
           display: flex;
-          overflow: hidden;
+          /* overflow:auto allows the form to scroll on very small phones */
+          overflow: auto;
+          max-height: calc(100vh - 48px);
         }
 
         .auth-left {
@@ -163,17 +165,18 @@ export function AuthView({
         .auth-input { 
           max-width: 100%; 
           min-width: 0;
-          padding: clamp(14px, 4vw, 16px) clamp(14px, 4vw, 18px); 
+          padding: clamp(12px, 3.5vw, 16px) clamp(12px, 4vw, 18px); 
           border: 1px solid rgba(0, 0, 0, 0.08); 
           border-radius: 12px; 
           background: rgba(0, 0, 0, 0.02); 
           color: #1e293b; 
-          font-size: clamp(13px, 3.5vw, 14px); 
-          letter-spacing: 0.15em;
+          font-size: 16px; /* MUST be 16px to prevent iOS zoom-on-focus */
+          letter-spacing: 0.05em;
           outline: none; 
           transition: all 0.3s ease;
-          min-height: 44px;
+          min-height: 48px;
           box-sizing: border-box;
+          width: 100%;
         }
         .auth-input:focus { 
           border-color: rgba(59, 130, 246, 0.5);
@@ -188,6 +191,7 @@ export function AuthView({
           color: white; font-size: 15px; font-weight: 600; letter-spacing: 0.02em;
           box-shadow: 0 8px 24px rgba(59, 130, 246, 0.25);
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer;
+          min-height: 48px;
         }
         .auth-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(59, 130, 246, 0.4); }
         .auth-btn:active { transform: translateY(1px); }
@@ -197,6 +201,7 @@ export function AuthView({
           flex: 1; padding: 10px 14px; border: 1px solid transparent; border-radius: 10px; 
           font-size: 13px; font-weight: 600; letter-spacing: 0.02em; transition: all 0.3s ease;
           background: transparent; color: #64748b; cursor: pointer;
+          min-height: 44px;
         }
         .tab-btn.active {
           background: rgba(255, 255, 255, 0.9); color: #1e293b;
@@ -216,6 +221,7 @@ export function AuthView({
 
         .auth-link-btn {
           background: none; border: none; color: #3b82f6; font-weight: 600; cursor: pointer; font-size: inherit; transition: color 0.2s;
+          min-height: 44px; padding: 4px 8px;
         }
         .auth-link-btn:hover { color: #60a5fa; }
 
@@ -239,10 +245,17 @@ export function AuthView({
           .auth-right { padding: 36px 32px 48px; }
         }
         @media (max-width: 480px) {
-          .auth-modal { border-radius: 20px; }
+          .auth-modal { border-radius: 20px; max-height: calc(100dvh - 24px); }
           .auth-left { padding: 32px 20px 24px; }
           .auth-right { padding: 24px 20px 32px; }
           .subj-chip { padding: 10px 4px; }
+        }
+        @media (max-width: 380px) {
+          .auth-modal { border-radius: 16px; }
+          .auth-left { padding: 24px 16px 20px; }
+          .auth-right { padding: 20px 16px 28px; }
+          .auth-btn { font-size: 14px; padding: 13px; }
+          .subj-chip { padding: 8px 2px; font-size: 10px; }
         }
       `}</style>
 

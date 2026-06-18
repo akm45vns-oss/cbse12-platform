@@ -82,8 +82,9 @@
     font-size: 16px; /* Prevents zoom on focus */
   }
   
-  /* Full-width buttons */
-  button {
+  /* Full-width buttons — only when explicitly needed, NOT all buttons */
+  /* Use class .mobile-full-btn to opt-in */
+  .mobile-full-btn {
     width: 100%;
     padding: 12px;
     font-size: 16px;
@@ -175,22 +176,15 @@
 }
 
 /* ===== DARK MODE SUPPORT ===== */
+/* Note: This site uses its own light glassmorphism theme.
+   Dark mode overrides are intentionally disabled to preserve brand design.
+   Re-enable below if/when a dark theme is implemented. */
+/*
 @media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-  }
-  
-  body {
-    background: #1a1a1a;
-    color: #f0f0f0;
-  }
-  
-  input, textarea, select {
-    background: #2a2a2a;
-    color: #f0f0f0;
-    border-color: #444;
-  }
+  body { background: #1a1a1a; color: #f0f0f0; }
+  input, textarea, select { background: #2a2a2a; color: #f0f0f0; border-color: #444; }
 }
+*/
 
 /* ===== HIGH CONTRAST MODE ===== */
 @media (prefers-contrast: more) {
@@ -244,12 +238,11 @@
 }
 
 /* ===== SAFE AREA INSETS (Notch Support) ===== */
+/* Only apply bottom safe area on body; top/sides are handled by sticky nav & containers.
+   Applying left/right/top here creates double-padding with the app's own padding system. */
 @supports (padding: max(0px)) {
   body {
-    padding-left: max(12px, env(safe-area-inset-left));
-    padding-right: max(12px, env(safe-area-inset-right));
-    padding-top: max(12px, env(safe-area-inset-top));
-    padding-bottom: max(12px, env(safe-area-inset-bottom));
+    padding-bottom: max(0px, env(safe-area-inset-bottom));
   }
 }
 

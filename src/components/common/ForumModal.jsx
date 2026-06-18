@@ -149,13 +149,15 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
         style={{
           background: "white",
           borderRadius: 20,
-          width: "90%",
+          width: "min(90%, 700px)",
           maxWidth: 700,
-          maxHeight: "85vh",
+          /* Use dvh so the modal shrinks when virtual keyboard appears on iOS */
+          maxHeight: "min(85dvh, calc(100vh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px) - 32px))",
           display: "flex",
           flexDirection: "column",
           boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
           border: "1.5px solid #dbeafe",
+          overflowY: "hidden",
         }}
         onClick={(e) => e.stopPropagation()}
       >
@@ -187,7 +189,15 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
               fontSize: 24,
               cursor: "pointer",
               color: "#064e78",
+              minHeight: "44px",
+              minWidth: "44px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: 8,
+              flexShrink: 0,
             }}
+            aria-label="Close forum"
           >
             ✕
           </button>
@@ -235,6 +245,7 @@ export function ForumModal({ isOpen, onClose, currentSubject = "", currentChapte
                     fontSize: 12,
                     cursor: "pointer",
                     whiteSpace: "nowrap",
+                    minHeight: "44px",
                   }}
                 >
                   {tab.label}

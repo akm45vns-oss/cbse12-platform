@@ -47,7 +47,7 @@ export function QuizView({ subject, chapter, loading, loadMsg, loadEmoji, quiz, 
             <div style={{ fontSize: 16, fontWeight: 700, marginTop: 6, color: score >= 40 ? "#22c55e" : score >= 25 ? "#eab308" : "#ef4444" }}>
               {score >= 40 ? "Excellent! Board Ready! 🎉" : score >= 25 ? "Good! Keep Practicing! 💪" : "Needs More Study. Review Notes! 📖"}
             </div>
-            <div style={{ display: "flex", gap: 14, justifyContent: "center", marginTop: 24 }}>
+            <div style={{ display: "flex", gap: 14, justifyContent: "center", marginTop: 24, flexWrap: "wrap" }}>
               <button onClick={onRetry}
                 style={{ background: "linear-gradient(135deg, #0891b2, #0284c7)", border: "none", borderRadius: 12, padding: "13px 28px", color: "white", fontWeight: 800, fontSize: 15, cursor: "pointer" }}>
                 🔄 Retry Quiz
@@ -69,12 +69,12 @@ export function QuizView({ subject, chapter, loading, loadMsg, loadEmoji, quiz, 
                     <span style={{ fontSize: 14, color: "#1e293b", lineHeight: 1.6, fontWeight: 600 }}>{q.q}</span>
                   </div>
                   {!ok && (
-                    <div style={{ marginLeft: 60, fontSize: 13, marginBottom: 8, background: "rgba(0,0,0,0.03)", padding: 10, borderRadius: 8 }}>
+                    <div style={{ marginLeft: "clamp(0px, 8vw, 56px)", fontSize: 13, marginBottom: 8, background: "rgba(0,0,0,0.03)", padding: 10, borderRadius: 8 }}>
                       <div style={{ color: "#dc2626", fontWeight: 600 }}>Your answer: {q.opts[ua] || "Not answered"}</div>
                       <div style={{ color: "#059669", fontWeight: 700, marginTop: 4 }}>Correct: {q.opts[ca]}</div>
                     </div>
                   )}
-                  <div style={{ marginLeft: 60, marginTop: 10, fontSize: 13, color: "#4f46e5", fontWeight: 500, lineHeight: 1.6 }}>💡 {q.exp}</div>
+                  <div style={{ marginLeft: "clamp(0px, 8vw, 56px)", marginTop: 10, fontSize: 13, color: "#4f46e5", fontWeight: 500, lineHeight: 1.6 }}>💡 {q.exp}</div>
                 </div>
               );
             })}
