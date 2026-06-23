@@ -15,12 +15,12 @@ export const globalStyles = `
     --border-contrast: rgba(0, 0, 0, 0.06);
     
     /* Responsive Typography Scale */
-    --fs-h1: 32px; --fs-h2: 24px; --fs-h3: 18px;
-    --fs-body: 15px; --fs-sm: 13px;
+    --fs-h1: 2rem; --fs-h2: 1.5rem; --fs-h3: 1.125rem;
+    --fs-body: 1rem; --fs-sm: 0.875rem;
     
     /* Responsive Spacing */
-    --spacing-xs: 8px; --spacing-sm: 12px; --spacing-md: 16px;
-    --spacing-lg: 24px; --spacing-xl: 32px; --spacing-2xl: 48px;
+    --spacing-xs: 0.5rem; --spacing-sm: 0.75rem; --spacing-md: 1rem;
+    --spacing-lg: 1.5rem; --spacing-xl: 2rem; --spacing-2xl: 3rem;
     
     /* Border Radius */
     --radius-sm: 8px; --radius-md: 12px;
@@ -59,17 +59,18 @@ export const globalStyles = `
   body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; -webkit-font-smoothing: antialiased; }
   button { cursor: pointer; font-family: inherit; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
   
-  /* ===== CARDS & CONTAINERS ===== */
   .card { 
     background: var(--bg-secondary); 
     border-radius: var(--radius-lg); 
     border: 1px solid var(--border-color); 
-    padding: 20px; 
+    padding: var(--spacing-lg); 
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     backdrop-filter: blur(32px);
     -webkit-backdrop-filter: blur(32px);
     box-shadow: 0 12px 32px var(--card-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.8);
     color: var(--text-primary);
+    width: 100%;
+    max-width: 100%;
   }
 
   .card:hover { 
@@ -137,7 +138,7 @@ export const globalStyles = `
   .main-content { 
     max-width: 1140px; 
     margin: 0 auto; 
-    padding: 40px 24px;
+    padding: var(--spacing-xl) var(--spacing-lg) calc(80px + env(safe-area-inset-bottom)); /* Extra padding for bottom nav */
     position: relative; 
     z-index: 10; 
     flex: 1; 
@@ -182,20 +183,20 @@ export const globalStyles = `
     .nav-bar { height: 64px; padding: 0 20px; }
   }
   @media (max-width: 767px) {
-    .main-content { padding: 20px 12px; }
+    .main-content { padding: var(--spacing-lg) var(--spacing-sm) calc(80px + env(safe-area-inset-bottom)); }
     .dash-grid { grid-template-columns: 1fr; }
-    .nav-bar { height: 60px; padding: 0 12px; }
+    .nav-bar { height: 60px; padding: 0 var(--spacing-sm); }
     .nav-btn-text, .nav-username { display: none !important; }
-    .dash-overall { padding: 20px 16px; margin-bottom: 28px; }
-    .notes-content-pad { padding: 20px 16px; }
+    .dash-overall { padding: var(--spacing-lg) var(--spacing-md); margin-bottom: 28px; }
+    .notes-content-pad { padding: var(--spacing-lg) var(--spacing-md); }
   }
   @media (max-width: 479px) {
-    .main-content { padding: 16px 10px; }
-    .dash-overall { padding: 16px 12px; border-radius: 20px; }
-    .dash-grid { gap: 12px; }
-    .card { padding: 16px; border-radius: 16px; }
-    .prose-notes h1 { font-size: 24px; }
-    .prose-notes h2 { font-size: 14px; }
+    .main-content { padding: var(--spacing-md) var(--spacing-xs) calc(80px + env(safe-area-inset-bottom)); }
+    .dash-overall { padding: var(--spacing-md) var(--spacing-sm); border-radius: 20px; }
+    .dash-grid { gap: var(--spacing-sm); }
+    .card { padding: var(--spacing-md); border-radius: 16px; }
+    .prose-notes h1 { font-size: 1.5rem; }
+    .prose-notes h2 { font-size: 1rem; }
   }
   
   /* ===== PROSE & NOTES (Light Theme) ===== */

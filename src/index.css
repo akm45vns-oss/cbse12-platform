@@ -27,7 +27,7 @@ body {
 
 #root {
   width: 100%;
-  min-height: 100%;
+  min-height: 100dvh;
   /* Avoid will-change:transform — it creates a stacking context that breaks
      fixed positioning (sticky nav) and adds unnecessary GPU layers. */
   isolation: isolate;
@@ -63,26 +63,17 @@ pre {
   user-select: text;
 }
 
+/* Responsive Table Wrapper */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* ===== MOBILE-FIRST RESPONSIVE TYPOGRAPHY ===== */
-/* Default: Mobile (320px and up) */
-@media screen {
-  html {
-    font-size: 15px;
-  }
-}
-
-/* Tablet (640px and up) */
-@media screen and (min-width: 640px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-/* Desktop (1024px and up) */
-@media screen and (min-width: 1024px) {
-  html {
-    font-size: 16px;
-  }
+/* Base 16px is standard. 1rem = 16px */
+html {
+  font-size: 16px;
 }
 
 /* ===== MOBILE-OPTIMIZED SCROLLBAR ===== */

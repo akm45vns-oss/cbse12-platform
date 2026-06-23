@@ -65,7 +65,7 @@ export default function App() {
   const [selectedQuizSet, setSelectedQuizSet] = useState(null); // Track selected set (1-15)
   const [quizSetStatus, setQuizSetStatus] = useState({}); // Track best scores per set
   const [availableSets, setAvailableSets] = useState([]); // Actual set numbers in DB
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // Mobile menu toggle
+  const [availableSets, setAvailableSets] = useState([]); // Actual set numbers in DB
 
   // Refs for cancellation tokens
   const abortControllerRef = useRef(null);
@@ -604,175 +604,18 @@ Respond with the paper content directly.`;
             </button>
           </div>
 
-          {/* Mobile Hamburger Menu Button — visible only on mobile via CSS class */}
-          <button
-            className="nav-hamburger"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            style={{
-              background: "rgba(0, 0, 0, 0.03)",
-              border: "1px solid rgba(0, 0, 0, 0.06)",
-              borderRadius: 8,
-              padding: "8px 12px",
-              color: "#475569",
-              fontWeight: 600,
-              fontSize: 20,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              minHeight: "44px",
-              minWidth: "44px",
-              cursor: "pointer",
-              transition: "all 0.2s",
-              flexShrink: 0
-            }}
-            onMouseEnter={e => { e.currentTarget.style.background="rgba(0,0,0,0.06)"; e.currentTarget.style.color="#1e293b"; }}
-            onMouseLeave={e => { e.currentTarget.style.background="rgba(0,0,0,0.03)"; e.currentTarget.style.color="#475569"; }}
-            title="Menu"
-            aria-label="Open navigation menu"
-            aria-expanded={mobileMenuOpen}
-          >
-            {mobileMenuOpen ? "✕" : "☰"}
-          </button>
         </div>
       </nav>
 
-      {/* Mobile Menu Dropdown */}
-      {mobileMenuOpen && (
-        <div className="mobile-menu-dropdown" style={{
-          position: "fixed",
-          top: 60,
-          left: 0,
-          right: 0,
-          background: "rgba(255, 255, 255, 0.97)",
-          backdropFilter: "blur(16px)",
-          WebkitBackdropFilter: "blur(16px)",
-          borderBottom: "1px solid rgba(0, 0, 0, 0.05)",
-          zIndex: 99,
-          animation: "slideDown 0.2s ease-out"
-        }}>
-          <div style={{ padding: "12px", display: "flex", flexDirection: "column", gap: 8 }}>
-            <button
-              onClick={() => { nav.navigate("stats"); setMobileMenuOpen(false); }}
-              style={{
-                background: "transparent",
-                border: "none",
-                color: "#475569",
-                fontWeight: 600,
-                fontSize: 14,
-                padding: "12px 16px",
-                textAlign: "left",
-                cursor: "pointer",
-                transition: "all 0.2s",
-                borderRadius: 8,
-                display: "flex",
-                alignItems: "center",
-                gap: 10
-              }}
-              onMouseEnter={e => { e.currentTarget.style.background="rgba(0,0,0,0.03)"; e.currentTarget.style.color="#1e293b"; }}
-              onMouseLeave={e => { e.currentTarget.style.background="transparent"; e.currentTarget.style.color="#475569"; }}
-            >
-              <span style={{ fontSize: 18 }}>📊</span> Statistics
-            </button>
-            <button
-              onClick={() => { nav.navigate("progress"); setMobileMenuOpen(false); }}
-              style={{
-                background: "transparent",
-                border: "none",
-                color: "#475569",
-                fontWeight: 600,
-                fontSize: 14,
-                padding: "12px 16px",
-                textAlign: "left",
-                cursor: "pointer",
-                transition: "all 0.2s",
-                borderRadius: 8,
-                display: "flex",
-                alignItems: "center",
-                gap: 10
-              }}
-              onMouseEnter={e => { e.currentTarget.style.background="rgba(0,0,0,0.03)"; e.currentTarget.style.color="#1e293b"; }}
-              onMouseLeave={e => { e.currentTarget.style.background="transparent"; e.currentTarget.style.color="#475569"; }}
-            >
-              <span style={{ fontSize: 18 }}>📈</span> Progress
-            </button>
-            <button
-              onClick={() => { nav.navigate("leaderboard"); setMobileMenuOpen(false); }}
-              style={{
-                background: "transparent",
-                border: "none",
-                color: "#475569",
-                fontWeight: 600,
-                fontSize: 14,
-                padding: "12px 16px",
-                textAlign: "left",
-                cursor: "pointer",
-                transition: "all 0.2s",
-                borderRadius: 8,
-                display: "flex",
-                alignItems: "center",
-                gap: 10
-              }}
-              onMouseEnter={e => { e.currentTarget.style.background="rgba(0,0,0,0.03)"; e.currentTarget.style.color="#1e293b"; }}
-              onMouseLeave={e => { e.currentTarget.style.background="transparent"; e.currentTarget.style.color="#475569"; }}
-            >
-              <span style={{ fontSize: 18 }}>🏆</span> Leaderboard
-            </button>
-            <div style={{ height: 1, background: "rgba(0,0,0,0.05)", margin: "4px 0" }} />
-            <button
-              onClick={() => { nav.navigate("profile"); setMobileMenuOpen(false); }}
-              style={{
-                background: "transparent",
-                border: "none",
-                color: "#1e293b",
-                fontWeight: 700,
-                fontSize: 14,
-                padding: "12px 16px",
-                textAlign: "left",
-                cursor: "pointer",
-                transition: "all 0.2s",
-                borderRadius: 8,
-                display: "flex",
-                alignItems: "center",
-                gap: 10
-              }}
-              onMouseEnter={e => { e.currentTarget.style.background="rgba(59,130,246,0.1)"; e.currentTarget.style.color="#3b82f6"; }}
-              onMouseLeave={e => { e.currentTarget.style.background="transparent"; e.currentTarget.style.color="#1e293b"; }}
-            >
-              <div
-                style={{
-                  width: 28,
-                  height: 28,
-                  borderRadius: "50%",
-                  background: "linear-gradient(135deg,#0891b2,#0284c7)",
-                  color: "white",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontWeight: 800,
-                  fontSize: 12,
-                  flexShrink: 0
-                }}
-              >
-                {progress.data?.["SYSTEM||PROFILE||avatar"]?.icon || auth.currentUser?.[0]?.toUpperCase()}
-              </div>
-              <span>{progress.data?.["SYSTEM||PROFILE||name"]?.value || auth.currentUser}</span>
-            </button>
-          </div>
-        </div>
-      )}
+
 
       <style>{`
-        /* Hamburger: show only on mobile; desktop nav: hide only on mobile */
-        .nav-hamburger { display: none; }
         .nav-desktop-links { display: flex; }
+        .mobile-bottom-nav { display: none; }
         @media (max-width: 768px) {
-          .nav-hamburger { display: flex !important; }
           .nav-desktop-links { display: none !important; }
-          /* Hide nav bar child-2 selector as backup */
+          .mobile-bottom-nav { display: flex !important; }
           .nav-bar > div:nth-child(2) { display: none !important; }
-        }
-        @media (min-width: 769px) {
-          .mobile-menu-dropdown { display: none !important; }
         }
         @keyframes slideDown {
           from { opacity: 0; transform: translateY(-8px); }
@@ -1085,6 +928,51 @@ Respond with the paper content directly.`;
         currentChapter={nav.chapter}
         currentUser={auth.currentUser}
       />
+
+      {/* Mobile Bottom Navigation Bar */}
+      <nav className="mobile-bottom-nav" style={{
+        position: "fixed",
+        bottom: 0,
+        left: 0,
+        right: 0,
+        background: "rgba(255, 255, 255, 0.95)",
+        backdropFilter: "blur(20px)",
+        WebkitBackdropFilter: "blur(20px)",
+        borderTop: "1px solid rgba(0, 0, 0, 0.08)",
+        justifyContent: "space-around",
+        alignItems: "center",
+        padding: "8px 12px calc(8px + env(safe-area-inset-bottom))",
+        zIndex: 100,
+        boxShadow: "0 -4px 16px rgba(0,0,0,0.05)"
+      }}>
+        {[
+          { id: "dashboard", icon: "🏠", label: "Home" },
+          { id: "stats", icon: "📊", label: "Stats" },
+          { id: "progress", icon: "📈", label: "Progress" },
+          { id: "leaderboard", icon: "🏆", label: "Rank" },
+          { id: "profile", icon: "👤", label: "Profile" }
+        ].map(item => (
+          <button
+            key={item.id}
+            onClick={() => nav.navigate(item.id)}
+            style={{
+              background: "transparent",
+              border: "none",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: 4,
+              color: nav.view === item.id || (item.id === "dashboard" && ["subject", "chapter", "notes", "quiz", "paper", "papers-list"].includes(nav.view)) ? "#3b82f6" : "#64748b",
+              minWidth: 48,
+              minHeight: 48,
+              padding: "4px"
+            }}
+          >
+            <span style={{ fontSize: 20 }}>{item.icon}</span>
+            <span style={{ fontSize: 10, fontWeight: 600 }}>{item.label}</span>
+          </button>
+        ))}
+      </nav>
     </div>
   );
 }

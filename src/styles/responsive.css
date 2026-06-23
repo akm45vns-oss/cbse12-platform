@@ -31,10 +31,10 @@ body {
 @media (hover: none) and (pointer: coarse) {
   /* Mobile/Touch devices */
   
-  /* Touch targets minimum 44x44px */
+  /* Touch targets minimum 48x48px (Smartphone-First) */
   button, a, [role="button"], input[type="radio"], input[type="checkbox"] {
-    min-height: 44px;
-    min-width: 44px;
+    min-height: 48px;
+    min-width: 48px;
   }
   
   /* Increase spacing for touch */
@@ -82,9 +82,9 @@ body {
   .spacing-xl { margin: 16px 0 !important; }
   
   /* Mobile typography */
-  h1 { font-size: 24px; line-height: 1.2; }
-  h2 { font-size: 20px; line-height: 1.3; }
-  h3 { font-size: 16px; line-height: 1.4; }
+  h1 { font-size: 1.5rem; line-height: 1.2; }
+  h2 { font-size: 1.25rem; line-height: 1.3; }
+  h3 { font-size: 1rem; line-height: 1.4; }
   
   /* Text overflow handling */
   p, span, li {
@@ -106,7 +106,8 @@ body {
   .mobile-full-btn {
     width: 100%;
     padding: 12px;
-    font-size: 16px;
+    font-size: 1rem;
+    min-height: 48px;
   }
   
   /* Stack navigation items */
@@ -132,8 +133,8 @@ body {
   .card { margin-bottom: 16px; }
   
   /* Tablet typography */
-  h1 { font-size: 28px; }
-  h3 { font-size: 18px; }
+  h1 { font-size: 1.75rem; }
+  h3 { font-size: 1.125rem; }
   
   /* Better spacing */
   .spacing-lg { margin: 16px 0; }
@@ -257,9 +258,31 @@ body {
 
 /* Safe area insets are applied per-component (e.g. floating buttons) rather than
    on body, to avoid adding phantom height that causes extra scroll space. */
+.floating-forum-btn {
+  bottom: 24px;
+  right: 24px;
+}
 @supports (padding: max(0px)) {
-  .floating-safe-bottom {
-    padding-bottom: max(0px, env(safe-area-inset-bottom));
+  .floating-forum-btn {
+    bottom: calc(24px + env(safe-area-inset-bottom));
+  }
+}
+@media (max-width: 767px) {
+  .floating-forum-btn {
+    bottom: calc(24px + 72px + env(safe-area-inset-bottom));
+    right: 16px;
+  }
+}
+
+/* Mobile-first bottom nav spacer helper */
+.bottom-nav-spacer {
+  height: calc(72px + env(safe-area-inset-bottom));
+  width: 100%;
+  display: none; /* Only show on mobile */
+}
+@media (max-width: 767px) {
+  .bottom-nav-spacer {
+    display: block;
   }
 }
 

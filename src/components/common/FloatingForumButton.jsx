@@ -12,13 +12,12 @@ export function FloatingForumButton({ currentSubject = "", currentChapter = "", 
 
   return (
     <>
-      {/* Floating Button - Positioned at top-right for easy access */}
+      {/* Floating Button - Positioned at bottom-right for easy access */}
       <button
+        className="floating-forum-btn"
         onClick={handleOpenForum}
         style={{
           position: "fixed",
-          top: 80,
-          right: 24,
           width: 56,
           height: 56,
           borderRadius: "50%",

@@ -20,8 +20,8 @@ export const DashboardView = memo(function DashboardView({ stats, overallPct, cu
           </p>
         </div>
         
-        {/* Search Bar — full-width on xs, constrained on md+ */}
-        <div style={{ flex: "1 1 240px", maxWidth: 320 }}>
+        {/* Search Bar — full-width on xs, constrained on md+ via flex */}
+        <div style={{ flex: "1 1 240px", width: "100%" }}>
           <SearchBar 
             onSelectChapter={(chapter) => {
               const foundSubject = Object.keys(CURRICULUM).find(subj => {
