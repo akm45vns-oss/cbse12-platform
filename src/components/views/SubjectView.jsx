@@ -108,16 +108,14 @@ export const SubjectView = memo(function SubjectView({
           const qData = progress[qk];
           const best = qData?.best;
           const isActive = ci === doneChapters; // current chapter
-          const isLocked = ci > doneChapters + 1;
 
           return (
             <button
               key={ci}
               className={`curriculum-row${isActive ? " active-chapter" : ""}`}
-              onClick={() => !isLocked && handleSelectChapter(ch)}
+              onClick={() => handleSelectChapter(ch)}
               style={{
-                opacity: isLocked ? 0.55 : 1,
-                cursor: isLocked ? "default" : "pointer",
+                cursor: "pointer",
                 border: "none",
               }}
             >
@@ -143,9 +141,9 @@ export const SubjectView = memo(function SubjectView({
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                   <button
-                    onClick={(e) => !isLocked && handleNotesClick(e, ch)}
+                    onClick={(e) => handleNotesClick(e, ch)}
                     style={{
-                      background: "none", border: "none", padding: 0, cursor: isLocked ? "default" : "pointer",
+                      background: "none", border: "none", padding: 0, cursor: "pointer",
                       display: "flex", alignItems: "center", gap: 4,
                     }}
                   >
@@ -153,9 +151,9 @@ export const SubjectView = memo(function SubjectView({
                     <span style={{ fontSize: 12, fontWeight: 600, color: nRead ? "#10b981" : "#94a3b8" }}>Read</span>
                   </button>
                   <button
-                    onClick={(e) => !isLocked && handleQuizClick(e, ch)}
+                    onClick={(e) => handleQuizClick(e, ch)}
                     style={{
-                      background: "none", border: "none", padding: 0, cursor: isLocked ? "default" : "pointer",
+                      background: "none", border: "none", padding: 0, cursor: "pointer",
                       display: "flex", alignItems: "center", gap: 4,
                     }}
                   >
@@ -165,50 +163,16 @@ export const SubjectView = memo(function SubjectView({
                 </div>
               </div>
 
-              {/* Right: lock or arrow */}
+              {/* Right: arrow */}
               <div style={{ flexShrink: 0, display: "flex", alignItems: "center" }}>
-                {isLocked ? <LockIcon /> : (
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M9 18l6-6-6-6"/>
-                  </svg>
-                )}
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 18l6-6-6-6"/>
+                </svg>
               </div>
             </button>
           );
         })}
       </div>
-
-      {/* ── Locked chapters banner ── */}
-      {totalChaps > 6 && (
-        <div style={{
-          marginTop: 14,
-          borderRadius: 20,
-          overflow: "hidden",
-          position: "relative",
-          background: "linear-gradient(135deg, #1e1b4b 0%, #312e81 100%)",
-          padding: "28px 24px",
-          textAlign: "center",
-          cursor: "pointer",
-          boxShadow: "0 8px 24px rgba(79, 70, 229, 0.3)",
-        }}>
-          {/* Stars */}
-          {[...Array(6)].map((_, i) => (
-            <div key={i} style={{
-              position: "absolute",
-              width: 3, height: 3, borderRadius: "50%",
-              background: "white", opacity: 0.4 + Math.random() * 0.4,
-              top: `${10 + Math.random() * 80}%`,
-              left: `${5 + Math.random() * 90}%`,
-            }} />
-          ))}
-          <div style={{ fontSize: 22, fontWeight: 900, color: "#818cf8", marginBottom: 6, letterSpacing: "-0.02em" }}>
-            +{totalChaps - 6} More Chapters
-          </div>
-          <div style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", fontWeight: 500 }}>
-            Unlock by completing current modules
-          </div>
-        </div>
-      )}
 
     </div>
   );
