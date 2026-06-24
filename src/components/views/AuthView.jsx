@@ -45,7 +45,7 @@ export function AuthView({
 
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
             <div>
-              <label style={{ color: "#0f172a", fontSize: 13, fontWeight: 600, display: "block", marginBottom: 8, fontFamily: "'JetBrains Mono', 'Courier New', monospace" }}>Verification Code</label>
+              <label style={{ color: "#0f172a", fontSize: 13, fontWeight: 600, display: "block", marginBottom: 8 }}>Verification Code</label>
               <input
                 type="text"
                 maxLength="6"
@@ -123,7 +123,6 @@ export function AuthView({
           font-weight: 600;
           display: block;
           margin-bottom: 8px;
-          font-family: 'JetBrains Mono', 'Courier New', monospace;
         }
 
         .tab-switcher {
@@ -144,7 +143,6 @@ export function AuthView({
           border-radius: 6px;
           cursor: pointer;
           transition: all 0.2s;
-          font-family: 'JetBrains Mono', 'Courier New', monospace;
         }
         .tab-minimal.active {
           background: white;
@@ -159,7 +157,6 @@ export function AuthView({
           font-size: 13px;
           font-weight: 600;
           cursor: pointer;
-          font-family: 'JetBrains Mono', 'Courier New', monospace;
           padding: 0;
         }
         .bottom-link:hover { color: #0f172a; text-decoration: underline; }
