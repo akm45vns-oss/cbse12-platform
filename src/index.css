@@ -6,6 +6,7 @@ html {
   margin: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -13,86 +14,64 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  /* Mobile-first: System fonts for faster rendering */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-  background: #fff0f5;
+  font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #eef0ff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* Mobile optimization: Prevent text selection while scrolling */
   -webkit-user-scalable: yes;
   -webkit-touch-callout: none;
   position: relative;
 }
 
-
 #root {
   width: 100%;
   min-height: 100dvh;
-  /* Avoid will-change:transform — it creates a stacking context that breaks
-     fixed positioning (sticky nav) and adds unnecessary GPU layers. */
   isolation: isolate;
 }
 
-/* Mobile-first responsive images */
 img, video {
   max-width: 100%;
   height: auto;
   display: block;
-  /* Performance: Lazy load images (works with loading="lazy") */
 }
 
-/* Responsive input and form elements */
 input, button, textarea, select {
   font: inherit;
-  /* Mobile: 16px prevents zoom on focus */
   font-size: 16px;
 }
 
-/* Prevent media from overflowing containers — do NOT apply globally as it breaks SVG/tables */
 img, video, iframe, embed, canvas {
   max-width: 100%;
 }
 
-/* Code blocks with responsive overflow */
 pre {
   overflow-x: auto;
   white-space: pre-wrap;
   word-break: break-word;
-  /* Mobile optimization: Prevent text selection while scrolling */
   -webkit-user-select: text;
   user-select: text;
 }
 
-/* Responsive Table Wrapper */
 .table-container {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-/* ===== MOBILE-FIRST RESPONSIVE TYPOGRAPHY ===== */
-/* Base 16px is standard. 1rem = 16px */
-html {
-  font-size: 16px;
-}
-
-/* ===== MOBILE-OPTIMIZED SCROLLBAR ===== */
+/* ===== SCROLLBARS ===== */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
-
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.05);
+  background: transparent;
 }
-
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  background: rgba(99, 102, 241, 0.2);
+  border-radius: 10px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(99, 102, 241, 0.4);
 }
 
 /* Mobile touch-friendly focus states */

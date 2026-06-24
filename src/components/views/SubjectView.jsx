@@ -1,275 +1,215 @@
-import { memo } from "react";
-import { ProgressBar } from "../common";
+import { memo, useState, useEffect } from "react";
 import { CURRICULUM } from "../../constants/curriculum";
-import { useState, useEffect } from "react";
 import { addBookmark, removeBookmark, isBookmarked } from "../../utils/bookmarks";
 import { recordChapterAccess } from "../../utils/recentChapters";
 
-export const SubjectView = memo(function SubjectView({ subject, stats, progress, onSelectChapter, onGeneratePaper, curriculum, username }) {
+// Status check icon
+const CheckIcon = ({ filled, color = "#10b981" }) => (
+  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="7" cy="7" r="6.5" stroke={filled ? color : "#cbd5e1"} fill={filled ? color : "none"} strokeWidth="1.5"/>
+    {filled && <path d="M4 7l2 2 4-4" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>}
+  </svg>
+);
+
+const LockIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+    <path d="M7 11V7a5 5 0 0110 0v4"/>
+  </svg>
+);
+
+export const SubjectView = memo(function SubjectView({
+  subject, stats, progress, onSelectChapter, onGeneratePaper, curriculum, username
+}) {
   const S = curriculum[subject];
   const [bookmarks, setBookmarks] = useState({});
+  const subjectStats = stats.bySubject[subject];
+  const totalChaps = subjectStats?.t || 0;
+  const completedNotes = subjectStats?.n || 0;
+  const completedQuiz = subjectStats?.q || 0;
+  const doneChapters = Math.min(completedNotes, completedQuiz);
+  const completedPct = totalChaps > 0 ? Math.round(((completedNotes + completedQuiz) / (totalChaps * 2)) * 100) : 0;
+  const D = CURRICULUM[subject];
 
   useEffect(() => {
-    const newBookmarks = {};
-    S.units.forEach(unit => {
-      unit.chapters.forEach(ch => {
-        newBookmarks[ch] = isBookmarked(subject, ch);
-      });
-    });
-    setBookmarks(newBookmarks);
+    const nb = {};
+    S.units.forEach(unit => unit.chapters.forEach(ch => { nb[ch] = isBookmarked(subject, ch); }));
+    setBookmarks(nb);
   }, [subject]);
-
-  const handleBookmarkClick = (e, chapter) => {
-    e.stopPropagation();
-    if (bookmarks[chapter]) {
-      removeBookmark(subject, chapter);
-      setBookmarks(prev => ({ ...prev, [chapter]: false }));
-    } else {
-      addBookmark(subject, chapter);
-      setBookmarks(prev => ({ ...prev, [chapter]: true }));
-    }
-  };
 
   const handleSelectChapter = (chapter) => {
     recordChapterAccess(username, subject, chapter);
     onSelectChapter(chapter);
   };
-
-  // Navigate to Notes view directly
   const handleNotesClick = (e, chapter) => {
     e.stopPropagation();
     recordChapterAccess(username, subject, chapter);
-    onSelectChapter(chapter, 'notes');
+    onSelectChapter(chapter, "notes");
   };
-
-  // Navigate to Quiz view directly
   const handleQuizClick = (e, chapter) => {
     e.stopPropagation();
     recordChapterAccess(username, subject, chapter);
-    onSelectChapter(chapter, 'quiz');
+    onSelectChapter(chapter, "quiz");
   };
-  
+  const handleBookmark = (e, chapter) => {
+    e.stopPropagation();
+    if (bookmarks[chapter]) { removeBookmark(subject, chapter); setBookmarks(p => ({ ...p, [chapter]: false })); }
+    else { addBookmark(subject, chapter); setBookmarks(p => ({ ...p, [chapter]: true })); }
+  };
+
+  // Flatten all chapters for sequential numbering
+  const allChapters = S.units.flatMap(u => u.chapters);
+
   return (
-    <div>
-      {/* Subject Hero Banner */}
-      <div style={{
-        background: S.gradient,
-        borderRadius: 28,
-        padding: "clamp(24px, 5vw, 40px)",
-        marginBottom: 36,
-        color: "white",
-        position: "relative",
-        overflow: "hidden",
-        boxShadow: "0 20px 60px rgba(0,0,0,0.4)",
-        border: "1px solid rgba(255,255,255,0.15)"
-      }}>
-        <div style={{ position: "absolute", right: -60, top: -60, width: 200, height: 200, background: "rgba(255,255,255,0.07)", borderRadius: "50%", filter: "blur(30px)" }} />
-        <div style={{ position: "absolute", left: "30%", bottom: -40, width: 160, height: 160, background: "rgba(255,255,255,0.05)", borderRadius: "50%", filter: "blur(40px)" }} />
-        <div style={{ position: "relative", zIndex: 1 }}>
-          <div style={{ fontSize: "clamp(44px,6vw,56px)", marginBottom: 12, filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.3))" }}>{S.emoji}</div>
-          <h1 style={{ fontSize: "clamp(26px,5vw,36px)", fontWeight: 900, margin: 0, letterSpacing: "-0.02em", lineHeight: 1.2 }}>{subject}</h1>
-          <p style={{ opacity: 0.85, marginTop: 10, fontSize: "clamp(13px,2vw,15px)", fontWeight: 500 }}>
-            AkmEdu45 · {S.units.length} Units · {stats.bySubject[subject].t} Chapters
-          </p>
-          <button onClick={onGeneratePaper}
-            style={{
-              marginTop: 20,
-              background: "rgba(255,255,255,0.15)",
-              backdropFilter: "blur(12px)",
-              border: "1.5px solid rgba(255,255,255,0.3)",
-              borderRadius: 12,
-              padding: "11px 22px",
-              color: "white",
-              fontWeight: 700,
-              fontSize: 14,
-              transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-              cursor: "pointer"
-            }}
-            onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.25)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
-            onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.15)"; e.currentTarget.style.transform = "translateY(0)"; }}>
-            📄 Generate Sample Board Paper →
-          </button>
+    <div style={{ animation: "fadeInUp 0.4s cubic-bezier(0.4,0,0.2,1)" }}>
+
+      {/* ── Mastery Progress Card ── */}
+      <div className="mastery-card">
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
+          <div>
+            <div style={{ fontSize: 20, fontWeight: 800, color: "#0f172a", marginBottom: 2 }}>Mastery Progress</div>
+            <div style={{ fontSize: 13, color: "#94a3b8", fontWeight: 500 }}>Class 12 · {S.units.length > 3 ? "Science" : "Commerce"} Stream</div>
+          </div>
+          <div style={{
+            width: 44, height: 44, borderRadius: 12,
+            background: "#ede9fe", color: "#4f46e5",
+            display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22,
+          }}>
+            📚
+          </div>
+        </div>
+
+        {/* Progress Bar */}
+        <div className="progress-track" style={{ height: 8, marginBottom: 10 }}>
+          <div className="progress-fill" style={{ width: `${completedPct}%` }} />
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ fontSize: 13, fontWeight: 700, color: "#4f46e5" }}>{completedPct}% Completed</span>
+          <span style={{ fontSize: 13, fontWeight: 600, color: "#94a3b8" }}>{doneChapters} / {totalChaps} Chapters</span>
         </div>
       </div>
 
-      {/* Units & Chapters */}
-      {S.units.map((unit, ui) => (
-        <div key={ui} style={{ marginBottom: 36 }}>
-          <h3 style={{
-            fontSize: "clamp(11px,2vw,13px)",
-            fontWeight: 900,
-            color: "#3b82f6",
-            textTransform: "uppercase",
-            letterSpacing: "0.12em",
-            marginBottom: 16,
-            display: "flex",
-            alignItems: "center",
-            gap: 12
-          }}>
-            <span style={{
-              background: "rgba(59, 130, 246, 0.1)",
-              border: "1px solid rgba(59, 130, 246, 0.25)",
-              borderRadius: 8,
-              padding: "5px 16px",
-              fontWeight: 800
-            }}>{unit.name}</span>
-            <span style={{ flex: 1, height: 1, background: "rgba(0,0,0,0.08)" }} />
-          </h3>
-          <div className="subj-ch-grid">
-            {unit.chapters.map((ch, ci) => {
-              const nk = `${subject}||${ch}||notes`;
-              const qk = `${subject}||${ch}||quiz`;
-              const nRead = progress[nk]?.read;
-              const qData = progress[qk];
-              const best = qData?.best;
-              const isDone = nRead && best !== undefined;
-              return (
-                <button key={ci} onClick={() => handleSelectChapter(ch)}
-                  style={{
-                    background: "rgba(255, 255, 255, 0.75)",
-                    backdropFilter: "blur(20px)",
-                    border: `1px solid ${isDone ? "rgba(59, 130, 246, 0.35)" : "rgba(0, 0, 0, 0.05)"}`,
-                    borderRadius: 18,
-                    padding: "18px 20px",
-                    textAlign: "left",
-                    transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-                    cursor: "pointer",
-                    boxShadow: isDone ? "0 8px 24px rgba(59, 130, 246, 0.15)" : "0 4px 16px rgba(148,163,184,0.1)",
-                    position: "relative"
-                  }}
-                  onMouseEnter={e => {
-                    e.currentTarget.style.borderColor = "rgba(59, 130, 246, 0.4)";
-                    e.currentTarget.style.transform = "translateY(-4px)";
-                    e.currentTarget.style.boxShadow = "0 16px 40px rgba(148,163,184,0.3)";
-                    e.currentTarget.style.background = "rgba(255, 255, 255, 1)";
-                  }}
-                  onMouseLeave={e => {
-                    e.currentTarget.style.borderColor = isDone ? "rgba(59, 130, 246, 0.35)" : "rgba(0, 0, 0, 0.05)";
-                    e.currentTarget.style.transform = "translateY(0)";
-                    e.currentTarget.style.boxShadow = isDone ? "0 8px 24px rgba(59, 130, 246, 0.15)" : "0 4px 16px rgba(148,163,184,0.1)";
-                    e.currentTarget.style.background = "rgba(255, 255, 255, 0.75)";
-                  }}>
-                  
-                  {/* Bookmark Button - Top Right Corner */}
+      {/* ── Curriculum ── */}
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+        <h2 style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", margin: 0 }}>Curriculum</h2>
+        <button
+          onClick={onGeneratePaper}
+          style={{ background: "none", border: "none", color: "#4f46e5", fontSize: 13, fontWeight: 700, cursor: "pointer", padding: 0 }}
+        >
+          Sample Paper →
+        </button>
+      </div>
+
+      <div className="subj-ch-grid" style={{ gap: 10 }}>
+        {allChapters.map((ch, ci) => {
+          const nk = `${subject}||${ch}||notes`;
+          const qk = `${subject}||${ch}||quiz`;
+          const nRead = progress[nk]?.read;
+          const qData = progress[qk];
+          const best = qData?.best;
+          const isActive = ci === doneChapters; // current chapter
+          const isLocked = ci > doneChapters + 1;
+
+          return (
+            <button
+              key={ci}
+              className={`curriculum-row${isActive ? " active-chapter" : ""}`}
+              onClick={() => !isLocked && handleSelectChapter(ch)}
+              style={{
+                opacity: isLocked ? 0.55 : 1,
+                cursor: isLocked ? "default" : "pointer",
+                border: "none",
+              }}
+            >
+              {/* Icon */}
+              <div
+                className="chapter-icon-box"
+                style={{
+                  background: nRead && best !== undefined ? "#ede9fe" : "#f8f8ff",
+                  color: nRead && best !== undefined ? "#4f46e5" : "#94a3b8",
+                }}
+              >
+                <span style={{ fontSize: 18 }}>{D.emoji}</span>
+              </div>
+
+              {/* Text content */}
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{
+                  fontSize: 15, fontWeight: 700, color: "#0f172a",
+                  marginBottom: 4, textAlign: "left",
+                  overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+                }}>
+                  {ch}
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                   <button
-                    onClick={(e) => handleBookmarkClick(e, ch)}
+                    onClick={(e) => !isLocked && handleNotesClick(e, ch)}
                     style={{
-                      position: "absolute",
-                      top: 10,
-                      right: 10,
-                      background: "rgba(255, 255, 255, 0.95)",
-                      backdropFilter: "blur(10px)",
-                      border: "2px solid rgba(255, 107, 107, 0.3)",
-                      borderRadius: "50%",
-                      width: 44,
-                      height: 44,
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      fontSize: 20,
-                      cursor: "pointer",
-                      padding: 0,
-                      transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-                      zIndex: 10,
-                      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-                      hover: {
-                        transform: "scale(1.15) rotate(10deg)",
-                        boxShadow: "0 8px 20px rgba(255, 107, 107, 0.3)"
-                      }
+                      background: "none", border: "none", padding: 0, cursor: isLocked ? "default" : "pointer",
+                      display: "flex", alignItems: "center", gap: 4,
                     }}
-                    onMouseEnter={e => {
-                      e.currentTarget.style.transform = "scale(1.15) rotate(10deg)";
-                      e.currentTarget.style.boxShadow = "0 8px 20px rgba(255, 107, 107, 0.3)";
-                      e.currentTarget.style.borderColor = bookmarks[ch] ? "rgba(255, 59, 48, 0.6)" : "rgba(255, 107, 107, 0.5)";
-                      e.currentTarget.style.background = "rgba(255, 255, 255, 1)";
-                    }}
-                    onMouseLeave={e => {
-                      e.currentTarget.style.transform = "scale(1)";
-                      e.currentTarget.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.1)";
-                      e.currentTarget.style.borderColor = "rgba(255, 107, 107, 0.3)";
-                      e.currentTarget.style.background = "rgba(255, 255, 255, 0.95)";
-                    }}
-                    title={bookmarks[ch] ? "Remove from favorites" : "Add to favorites"}
                   >
-                    {bookmarks[ch] ? "❤️" : "🤍"}
+                    <CheckIcon filled={!!nRead} color="#10b981" />
+                    <span style={{ fontSize: 12, fontWeight: 600, color: nRead ? "#10b981" : "#94a3b8" }}>Read</span>
                   </button>
+                  <button
+                    onClick={(e) => !isLocked && handleQuizClick(e, ch)}
+                    style={{
+                      background: "none", border: "none", padding: 0, cursor: isLocked ? "default" : "pointer",
+                      display: "flex", alignItems: "center", gap: 4,
+                    }}
+                  >
+                    <CheckIcon filled={best !== undefined} color="#10b981" />
+                    <span style={{ fontSize: 12, fontWeight: 600, color: best !== undefined ? "#10b981" : "#94a3b8" }}>Practice</span>
+                  </button>
+                </div>
+              </div>
 
-                  <div style={{ fontWeight: 700, color: "#1e293b", fontSize: 14, lineHeight: 1.5, marginBottom: 12, paddingRight: 28 }}>{ch}</div>
-                  <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
-                    {/* Clickable Notes Button - More Prominent */}
-                    <button onClick={(e) => handleNotesClick(e, ch)}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        gap: 6,
-                        background: nRead ? "linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.1))" : "rgba(226, 232, 240, 0.6)",
-                        border: `2px solid ${nRead ? "rgba(59, 130, 246, 0.4)" : "rgba(100, 116, 139, 0.2)"}`,
-                        borderRadius: 10,
-                        padding: "8px 14px",
-                        cursor: "pointer",
-                        transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
-                        minHeight: "36px",
-                        minWidth: "auto"
-                      }}
-                      onMouseEnter={e => {
-                        e.currentTarget.style.background = "linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(59, 130, 246, 0.15))";
-                        e.currentTarget.style.borderColor = "rgba(59, 130, 246, 0.6)";
-                        e.currentTarget.style.transform = "translateY(-2px)";
-                        e.currentTarget.style.boxShadow = "0 4px 12px rgba(59, 130, 246, 0.2)";
-                      }}
-                      onMouseLeave={e => {
-                        e.currentTarget.style.background = nRead ? "linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.1))" : "rgba(226, 232, 240, 0.6)";
-                        e.currentTarget.style.borderColor = nRead ? "rgba(59, 130, 246, 0.4)" : "rgba(100, 116, 139, 0.2)";
-                        e.currentTarget.style.transform = "translateY(0)";
-                        e.currentTarget.style.boxShadow = "none";
-                      }}>
-                      <span style={{ fontSize: 16 }}>{nRead ? "📖" : "📄"}</span>
-                      <span style={{ fontSize: 13, fontWeight: 700, color: nRead ? "#3b82f6" : "#64748b" }}>{nRead ? "Read" : "Notes"}</span>
-                    </button>
+              {/* Right: lock or arrow */}
+              <div style={{ flexShrink: 0, display: "flex", alignItems: "center" }}>
+                {isLocked ? <LockIcon /> : (
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 18l6-6-6-6"/>
+                  </svg>
+                )}
+              </div>
+            </button>
+          );
+        })}
+      </div>
 
-                    {/* Clickable Quiz Button - More Prominent */}
-                    <button onClick={(e) => handleQuizClick(e, ch)}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        gap: 6,
-                        background: best !== undefined ? "linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.1))" : "rgba(226, 232, 240, 0.6)",
-                        border: `2px solid ${best !== undefined ? "rgba(16, 185, 129, 0.4)" : "rgba(100, 116, 139, 0.2)"}`,
-                        borderRadius: 10,
-                        padding: "8px 14px",
-                        cursor: "pointer",
-                        transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
-                        minHeight: "36px",
-                        minWidth: "auto"
-                      }}
-                      onMouseEnter={e => {
-                        e.currentTarget.style.background = "linear-gradient(135deg, rgba(16, 185, 129, 0.25), rgba(16, 185, 129, 0.15))";
-                        e.currentTarget.style.borderColor = "rgba(16, 185, 129, 0.6)";
-                        e.currentTarget.style.transform = "translateY(-2px)";
-                        e.currentTarget.style.boxShadow = "0 4px 12px rgba(16, 185, 129, 0.2)";
-                      }}
-                      onMouseLeave={e => {
-                        e.currentTarget.style.background = best !== undefined ? "linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.1))" : "rgba(226, 232, 240, 0.6)";
-                        e.currentTarget.style.borderColor = best !== undefined ? "rgba(16, 185, 129, 0.4)" : "rgba(100, 116, 139, 0.2)";
-                        e.currentTarget.style.transform = "translateY(0)";
-                        e.currentTarget.style.boxShadow = "none";
-                      }}>
-                      <span style={{ fontSize: 16 }}>{best !== undefined ? "✅" : "❓"}</span>
-                      {best !== undefined ? (
-                        <span style={{ fontSize: 13, fontWeight: 800, color: "#059669" }}>{best}/30</span>
-                      ) : (
-                        <span style={{ fontSize: 13, fontWeight: 700, color: "#64748b" }}>Quiz</span>
-                      )}
-                    </button>
-                  </div>
-                </button>
-              );
-            })}
+      {/* ── Locked chapters banner ── */}
+      {totalChaps > 6 && (
+        <div style={{
+          marginTop: 14,
+          borderRadius: 20,
+          overflow: "hidden",
+          position: "relative",
+          background: "linear-gradient(135deg, #1e1b4b 0%, #312e81 100%)",
+          padding: "28px 24px",
+          textAlign: "center",
+          cursor: "pointer",
+          boxShadow: "0 8px 24px rgba(79, 70, 229, 0.3)",
+        }}>
+          {/* Stars */}
+          {[...Array(6)].map((_, i) => (
+            <div key={i} style={{
+              position: "absolute",
+              width: 3, height: 3, borderRadius: "50%",
+              background: "white", opacity: 0.4 + Math.random() * 0.4,
+              top: `${10 + Math.random() * 80}%`,
+              left: `${5 + Math.random() * 90}%`,
+            }} />
+          ))}
+          <div style={{ fontSize: 22, fontWeight: 900, color: "#818cf8", marginBottom: 6, letterSpacing: "-0.02em" }}>
+            +{totalChaps - 6} More Chapters
+          </div>
+          <div style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", fontWeight: 500 }}>
+            Unlock by completing current modules
           </div>
         </div>
-      ))}
+      )}
+
     </div>
   );
 });

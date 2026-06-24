@@ -24,13 +24,20 @@ import { globalStyles } from "./styles/shared";
 
 // Loading fallback component
 const LoadingFallback = () => (
-  <div style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "400px" }}>
+  <div style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "300px" }}>
     <div style={{ textAlign: "center" }}>
-      <div style={{ fontSize: 36, marginBottom: 16, animation: "pulse 1.5s ease infinite" }}>⚡</div>
-      <div style={{ color: "#64748b", fontSize: 14, fontWeight: 600 }}>Loading...</div>
+      <div style={{ width: 40, height: 40, border: "3px solid #ede9fe", borderTop: "3px solid #4f46e5", borderRadius: "50%", animation: "spin 0.8s linear infinite", margin: "0 auto 12px" }} />
+      <div style={{ color: "#94a3b8", fontSize: 13, fontWeight: 600 }}>Loading...</div>
     </div>
   </div>
 );
+
+// SVG Icons for bottom nav
+const HomeIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z" strokeLinecap="round" strokeLinejoin="round"/><path d="M9 21V12h6v9" strokeLinecap="round" strokeLinejoin="round"/></svg>);
+const StatsIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 3v18h18" strokeLinecap="round" strokeLinejoin="round"/><path d="M7 16l4-5 4 3 4-6" strokeLinecap="round" strokeLinejoin="round"/></svg>);
+const ProgressIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" strokeLinecap="round"/><path d="M12 7v5l3 3" strokeLinecap="round" strokeLinejoin="round"/></svg>);
+const RankIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="12" width="4" height="9" rx="1" strokeLinecap="round"/><rect x="10" y="7" width="4" height="14" rx="1" strokeLinecap="round"/><rect x="17" y="3" width="4" height="18" rx="1" strokeLinecap="round"/></svg>);
+const ProfileIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" strokeLinecap="round"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" strokeLinecap="round" strokeLinejoin="round"/></svg>);
 
 
 
@@ -64,7 +71,6 @@ export default function App() {
   const [score, setScore] = useState(0);
   const [selectedQuizSet, setSelectedQuizSet] = useState(null); // Track selected set (1-15)
   const [quizSetStatus, setQuizSetStatus] = useState({}); // Track best scores per set
-  const [availableSets, setAvailableSets] = useState([]); // Actual set numbers in DB
   const [availableSets, setAvailableSets] = useState([]); // Actual set numbers in DB
 
   // Refs for cancellation tokens
@@ -366,268 +372,114 @@ Respond with the paper content directly.`;
 
   const S = nav.subject ? CURRICULUM[nav.subject] : null;
 
+  // Determine page title from nav state
+  const getPageTitle = () => {
+    if (nav.view === "dashboard") return "AkmEdu45";
+    if (nav.view === "subject") return nav.subject || "Subject";
+    if (nav.view === "chapter") return nav.chapter || "Chapter";
+    if (nav.view === "notes") return "Notes";
+    if (nav.view === "quiz") return "Quiz";
+    if (nav.view === "paper" || nav.view === "papers-list") return "Sample Paper";
+    if (nav.view === "stats") return "Stats";
+    if (nav.view === "progress") return "Progress";
+    if (nav.view === "leaderboard") return "Rank";
+    if (nav.view === "profile") return "Profile";
+    return "AkmEdu45";
+  };
+
+  const streak = (() => {
+    try { return JSON.parse(localStorage.getItem('loginStreak') || '{}')} catch { return {}; }
+  })();
+  const streakCount = streak.current || 0;
+
   return (
     <div
       style={{
         minHeight: "100dvh",
         width: "100%",
-        background: "linear-gradient(-45deg, #fdfbfb, #ebedee, #e0c3fc, #8ec5fc, #fbc2eb)",
-        backgroundSize: "400% 400%",
-        animation: "globalBackgroundGradient 20s ease infinite",
+        background: "linear-gradient(160deg, #f0f0ff 0%, #e8e8ff 100%)",
         display: "flex",
         flexDirection: "column",
-        fontFamily: "'Inter', system-ui, sans-serif",
+        fontFamily: "'Outfit', 'Inter', system-ui, sans-serif",
       }}
     >
-      <div style={{ position: "fixed", top: "-10%", left: "-10%", width: "50vw", height: "50vw", background: "radial-gradient(circle, rgba(236, 72, 153, 0.12) 0%, transparent 60%)", filter: "blur(60px)", zIndex: 0, pointerEvents: "none", animation: "orbPulse1 12s infinite alternate" }} />
-      <div style={{ position: "fixed", bottom: "-20%", right: "-10%", width: "60vw", height: "60vw", background: "radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 60%)", filter: "blur(80px)", zIndex: 0, pointerEvents: "none", animation: "orbPulse2 15s infinite alternate-reverse" }} />
-      
       <style>{globalStyles}</style>
 
-      {/* Top Navigation */}
+      {/* ===== NEW TOP HEADER ===== */}
       <nav
+        className="top-header"
         style={{
-          background: "rgba(255, 255, 255, 0.92)",
-          backdropFilter: "blur(20px)",
-          WebkitBackdropFilter: "blur(20px)",
-          borderBottom: "1px solid rgba(0, 0, 0, 0.05)",
-          position: "sticky",
-          top: 0,
-          zIndex: 100,
-          boxShadow: "0 2px 16px rgba(0,0,0,0.08)",
-          transition: "transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease",
           transform: isScrollingUp || isAtTop ? "translateY(0)" : "translateY(-100%)",
           opacity: isScrollingUp || isAtTop ? 1 : 0,
           pointerEvents: isScrollingUp || isAtTop ? "auto" : "none",
-          flexShrink: 0,
         }}
       >
-        <div className="nav-bar">
-          <div style={{ display: "flex", alignItems: "center", gap: 12, minWidth: 0, flex: 1 }}>
-            {nav.canGoBack && (
-              <button
-                onClick={nav.goBack}
-                style={{
-                  background: "rgba(0, 0, 0, 0.03)",
-                  border: "1px solid rgba(0, 0, 0, 0.06)",
-                  borderRadius: 8,
-                  padding: "8px 10px",
-                  color: "#475569",
-                  fontWeight: 600,
-                  fontSize: 12,
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 4,
-                  minHeight: "40px",
-                  whiteSpace: "nowrap",
-                  flexShrink: 0,
-                }}
-                onMouseEnter={e => { e.currentTarget.style.background="rgba(0,0,0,0.06)"; e.currentTarget.style.color="#1e293b"; }}
-                onMouseLeave={e => { e.currentTarget.style.background="rgba(0,0,0,0.03)"; e.currentTarget.style.color="#475569"; }}
-              >
-                ← <span style={{ display: "none" }}>Back</span>
+        <div className="top-header-inner">
+          {/* Left: back button or spacer */}
+          <div style={{ display: "flex", alignItems: "center", gap: 8, flex: 1, minWidth: 0 }}>
+            {nav.canGoBack ? (
+              <button className="top-header-back" onClick={nav.goBack} title="Go back" aria-label="Go back">
+                ←
               </button>
-            )}
-              <button
-                onClick={nav.goToDashboard}
-                className="nav-brand"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 6,
-                  background: "none",
-                  border: "none",
-                  color: "#1e293b",
-                  fontWeight: 800,
-                  fontSize: 18,
-                  cursor: "pointer",
-                  whiteSpace: "nowrap",
-                  flexShrink: 0,
-                }}
-              >
-                🎓 <span style={{ background: "linear-gradient(135deg, #22d3ee 0%, #818cf8 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>AkmEdu45</span>
-              </button>
-            {nav.subject && (
-              <span
-                style={{
-                  color: "#64748b",
-                  fontSize: 13,
-                  minWidth: 0,
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                / {S.emoji} <span style={{ display: "none" }}>{nav.subject}</span>
-              </span>
-            )}
-            {nav.chapter && (
-              <span
-                style={{
-                  color: "#64748b",
-                  fontSize: 12,
-                  maxWidth: 140,
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  whiteSpace: "nowrap",
-                  display: "none",
-                }}
-                className="breadcrumb-chapter"
-              >
-                / {nav.chapter}
-              </span>
-            )}
+            ) : null}
+            <span className="top-header-title">
+              {getPageTitle()}
+            </span>
           </div>
 
-          {/* Desktop Navigation — hidden on mobile via CSS class */}
-          <div className="nav-desktop-links" style={{ 
-            display: "flex", 
-            alignItems: "center", 
-            gap: 10, 
-            flexWrap: "wrap",
-          }}>
-            <button
-              onClick={() => nav.navigate("stats")}
-              style={{
-                background: "rgba(0, 0, 0, 0.03)",
-                border: "1px solid rgba(0, 0, 0, 0.06)",
-                borderRadius: 8,
-                padding: "8px 12px",
-                color: "#475569",
-                fontWeight: 600,
-                fontSize: 13,
-                display: "flex",
-                alignItems: "center",
-                gap: 6,
-                minHeight: "40px",
-                whiteSpace: "nowrap",
-                transition: "all 0.2s"
-              }}
-              onMouseEnter={e => { e.currentTarget.style.background="rgba(0,0,0,0.06)"; e.currentTarget.style.color="#1e293b"; }}
-              onMouseLeave={e => { e.currentTarget.style.background="rgba(0,0,0,0.03)"; e.currentTarget.style.color="#475569"; }}
-              title="Statistics"
-            >
-              <span style={{ fontSize: 16 }}>📊</span>
-              <span style={{ display: "none" }} className="nav-btn-text">Stats</span>
-            </button>
-            <button
-              onClick={() => nav.navigate("progress")}
-              style={{
-                background: "rgba(0, 0, 0, 0.03)",
-                border: "1px solid rgba(0, 0, 0, 0.06)",
-                borderRadius: 8,
-                padding: "8px 12px",
-                color: "#475569",
-                fontWeight: 600,
-                fontSize: 13,
-                display: "flex",
-                alignItems: "center",
-                gap: 6,
-                minHeight: "40px",
-                whiteSpace: "nowrap",
-                transition: "all 0.2s"
-              }}
-              onMouseEnter={e => { e.currentTarget.style.background="rgba(0,0,0,0.06)"; e.currentTarget.style.color="#1e293b"; }}
-              onMouseLeave={e => { e.currentTarget.style.background="rgba(0,0,0,0.03)"; e.currentTarget.style.color="#475569"; }}
-              title="Progress"
-            >
-              <span style={{ fontSize: 16 }}>📈</span>
-              <span style={{ display: "none" }} className="nav-btn-text">Progress</span>
-            </button>
-            <button
-              onClick={() => nav.navigate("leaderboard")}
-              style={{
-                background: "rgba(0, 0, 0, 0.03)",
-                border: "1px solid rgba(0, 0, 0, 0.06)",
-                borderRadius: 8,
-                padding: "8px 12px",
-                color: "#475569",
-                fontWeight: 600,
-                fontSize: 13,
-                display: "flex",
-                alignItems: "center",
-                gap: 6,
-                minHeight: "40px",
-                whiteSpace: "nowrap",
-                transition: "all 0.2s"
-              }}
-              onMouseEnter={e => { e.currentTarget.style.background="rgba(0,0,0,0.06)"; e.currentTarget.style.color="#1e293b"; }}
-              onMouseLeave={e => { e.currentTarget.style.background="rgba(0,0,0,0.03)"; e.currentTarget.style.color="#475569"; }}
-              title="Leaderboard"
-            >
-              <span style={{ fontSize: 16 }}>🏆</span>
-              <span style={{ display: "none" }} className="nav-btn-text">Leaderboard</span>
-            </button>
-            <button
-              onClick={() => nav.navigate("profile")}
-              style={{
-                display: "flex", alignItems: "center", gap: 8, minHeight: "40px",
-                background: "rgba(0,0,0,0.02)", border: "1px solid rgba(0,0,0,0.05)", borderRadius: 12, padding: "4px 12px 4px 4px", cursor: "pointer", transition: "all 0.2s"
-              }}
-              onMouseEnter={e => { e.currentTarget.style.background="rgba(59,130,246,0.05)"; e.currentTarget.style.borderColor="rgba(59,130,246,0.2)"; }}
-              onMouseLeave={e => { e.currentTarget.style.background="rgba(0,0,0,0.02)"; e.currentTarget.style.borderColor="rgba(0,0,0,0.05)"; }}
-              title="View Profile"
-            >
-              <div
-                style={{
-                  width: 34,
-                  height: 34,
-                  borderRadius: "50%",
-                  background: "linear-gradient(135deg,#0891b2,#0284c7)",
-                  color: "white",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontWeight: 800,
-                  fontSize: 18,
-                  flexShrink: 0,
-                  boxShadow: "0 2px 8px rgba(0,0,0,0.15)"
-                }}
-              >
-                {progress.data?.["SYSTEM||PROFILE||avatar"]?.icon || auth.currentUser?.[0]?.toUpperCase()}
+          {/* Right: streak + avatar */}
+          <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
+            {streakCount > 0 && (
+              <div className="streak-pill">
+                <span style={{ fontWeight: 800, fontSize: 15 }}>{streakCount}</span>
+                <span style={{ fontSize: 18 }}>🔥</span>
               </div>
-              <span
-                style={{
-                  fontSize: 13,
-                  fontWeight: 600,
-                  color: "#1e293b",
-                  display: "block",
-                  maxWidth: 120,
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  whiteSpace: "nowrap",
-                }}
-                className="nav-username"
-              >
-                {progress.data?.["SYSTEM||PROFILE||name"]?.value || auth.currentUser}
-              </span>
+            )}
+            <button
+              className="avatar-circle"
+              onClick={() => nav.navigate("profile")}
+              title="View Profile"
+              aria-label="Profile"
+            >
+              {progress.data?.["SYSTEM||PROFILE||avatar"]?.icon || (auth.currentUser?.[0]?.toUpperCase()) || "U"}
             </button>
           </div>
 
+          {/* Desktop links (hidden on mobile) */}
+          <div className="nav-desktop-links" style={{ display: "flex", alignItems: "center", gap: 8, flexShrink: 0 }}>
+            {[
+              { id: "stats", label: "Stats" },
+              { id: "progress", label: "Progress" },
+              { id: "leaderboard", label: "Rank" },
+            ].map(item => (
+              <button
+                key={item.id}
+                onClick={() => nav.navigate(item.id)}
+                style={{
+                  background: nav.view === item.id ? "rgba(79,70,229,0.1)" : "transparent",
+                  border: "1.5px solid",
+                  borderColor: nav.view === item.id ? "rgba(79,70,229,0.3)" : "rgba(0,0,0,0.08)",
+                  borderRadius: 10,
+                  padding: "7px 14px",
+                  color: nav.view === item.id ? "#4f46e5" : "#64748b",
+                  fontWeight: 700,
+                  fontSize: 13,
+                  transition: "all 0.2s",
+                  minHeight: 36,
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background="rgba(79,70,229,0.08)"; e.currentTarget.style.color="#4f46e5"; }}
+                onMouseLeave={e => { e.currentTarget.style.background=nav.view===item.id?"rgba(79,70,229,0.1)":"transparent"; e.currentTarget.style.color=nav.view===item.id?"#4f46e5":"#64748b"; }}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
         </div>
       </nav>
 
 
 
-      <style>{`
-        .nav-desktop-links { display: flex; }
-        .mobile-bottom-nav { display: none; }
-        @media (max-width: 768px) {
-          .nav-desktop-links { display: none !important; }
-          .mobile-bottom-nav { display: flex !important; }
-          .nav-bar > div:nth-child(2) { display: none !important; }
-        }
-        @keyframes slideDown {
-          from { opacity: 0; transform: translateY(-8px); }
-          to   { opacity: 1; transform: translateY(0); }
-        }
-        /* Floating forum button safe area */
-        @supports (bottom: env(safe-area-inset-bottom)) {
-          .floating-forum-btn {
-            bottom: calc(24px + env(safe-area-inset-bottom));
-          }
-        }
-      `}</style>
+
 
       <div className="main-content">
         {nav.view === "dashboard" && (
@@ -851,76 +703,7 @@ Respond with the paper content directly.`;
 
       </div>
 
-      {/* Footer */}
-      <footer
-        style={{
-          background: "rgba(255, 255, 255, 0.6)",
-          backdropFilter: "blur(16px)",
-          WebkitBackdropFilter: "blur(16px)",
-          borderTop: "1px solid rgba(0, 0, 0, 0.05)",
-          padding: "12px 16px",
-          position: "relative",
-          zIndex: 10,
-          flexShrink: 0,
-        }}
-      >
-        <div
-          style={{
-            maxWidth: 1100,
-            margin: "0 auto",
-            display: "flex",
-            alignItems: "center",
-            gap: 10,
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
-        >
-          <span
-            style={{
-              fontSize: 11,
-              color: "#64748b",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "0.1em",
-            }}
-          >
-            Built by
-          </span>
-          <span style={{ color: "#1e293b", fontWeight: 700, fontSize: 13 }}>
-            Ayush Kumar Maurya
-          </span>
-          <span style={{ color: "#cbd5e1", fontSize: 14 }}>|</span>
-          {[
-            { href: "https://github.com/akm45vns-oss", label: "GitHub" },
-            {
-              href: "https://www.linkedin.com/in/ayush-kumar-maurya-326071384/",
-              label: "LinkedIn",
-            },
-            { href: "https://www.instagram.com/ayush.maurya45/", label: "Instagram" },
-          ].map(({ href, label }) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "#64748b",
-                fontSize: 11,
-                fontWeight: 600,
-                textDecoration: "none",
-                transition: "color 0.2s",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#3b82f6")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#64748b")}
-            >
-              {label}
-            </a>
-          ))}
-          <span style={{ fontSize: 10, color: "#94a3b8", opacity: 0.8 }}>
-            © 2026 · AkmEdu45 · Smart Study Platform
-          </span>
-        </div>
-      </footer>
+
 
       {/* Floating Forum Button - Always visible */}
       <FloatingForumButton 
@@ -929,49 +712,28 @@ Respond with the paper content directly.`;
         currentUser={auth.currentUser}
       />
 
-      {/* Mobile Bottom Navigation Bar */}
-      <nav className="mobile-bottom-nav" style={{
-        position: "fixed",
-        bottom: 0,
-        left: 0,
-        right: 0,
-        background: "rgba(255, 255, 255, 0.95)",
-        backdropFilter: "blur(20px)",
-        WebkitBackdropFilter: "blur(20px)",
-        borderTop: "1px solid rgba(0, 0, 0, 0.08)",
-        justifyContent: "space-around",
-        alignItems: "center",
-        padding: "8px 12px calc(8px + env(safe-area-inset-bottom))",
-        zIndex: 100,
-        boxShadow: "0 -4px 16px rgba(0,0,0,0.05)"
-      }}>
+      {/* ===== NEW BOTTOM NAVIGATION ===== */}
+      <nav className="mobile-bottom-nav" aria-label="Main navigation">
         {[
-          { id: "dashboard", icon: "🏠", label: "Home" },
-          { id: "stats", icon: "📊", label: "Stats" },
-          { id: "progress", icon: "📈", label: "Progress" },
-          { id: "leaderboard", icon: "🏆", label: "Rank" },
-          { id: "profile", icon: "👤", label: "Profile" }
-        ].map(item => (
-          <button
-            key={item.id}
-            onClick={() => nav.navigate(item.id)}
-            style={{
-              background: "transparent",
-              border: "none",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              gap: 4,
-              color: nav.view === item.id || (item.id === "dashboard" && ["subject", "chapter", "notes", "quiz", "paper", "papers-list"].includes(nav.view)) ? "#3b82f6" : "#64748b",
-              minWidth: 48,
-              minHeight: 48,
-              padding: "4px"
-            }}
-          >
-            <span style={{ fontSize: 20 }}>{item.icon}</span>
-            <span style={{ fontSize: 10, fontWeight: 600 }}>{item.label}</span>
-          </button>
-        ))}
+          { id: "dashboard", Icon: HomeIcon, label: "Home" },
+          { id: "stats", Icon: StatsIcon, label: "Stats" },
+          { id: "progress", Icon: ProgressIcon, label: "Progress" },
+          { id: "leaderboard", Icon: RankIcon, label: "Rank" },
+          { id: "profile", Icon: ProfileIcon, label: "Profile" },
+        ].map(({ id, Icon, label }) => {
+          const isActive = nav.view === id || (id === "dashboard" && ["subject", "chapter", "notes", "quiz", "paper", "papers-list"].includes(nav.view));
+          return (
+            <button
+              key={id}
+              onClick={() => nav.navigate(id)}
+              className={`bottom-nav-item${isActive ? " active" : ""}`}
+              aria-label={label}
+            >
+              <Icon />
+              <span className="bottom-nav-label">{label}</span>
+            </button>
+          );
+        })}
       </nav>
     </div>
   );

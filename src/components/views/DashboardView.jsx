@@ -1,202 +1,221 @@
 import { memo } from "react";
-import { ProgressBar, Badge, SearchBar, WeakTopicsReport, StreakDisplay, RankBadgeDisplay, WeeklyToppers } from "../common";
-import { CURRICULUM, totalChapters } from "../../constants/curriculum";
+import { SearchBar } from "../common";
+import { CURRICULUM } from "../../constants/curriculum";
 import { getRecentChapters } from "../../utils/recentChapters";
 import { getLoginStreak } from "../../utils/loginStreak";
 
-export const DashboardView = memo(function DashboardView({ stats, overallPct, currentUser, displayName, onSelectSubject, onSelectChapter }) {
-  const recentChapters = getRecentChapters(currentUser, 5);
-  const streak = getLoginStreak(currentUser);
-  
+// Subject icon bg colors matching design
+const SUBJECT_ICON_COLORS = {
+  Physics:            { bg: "#ede9fe", color: "#4f46e5" },
+  Chemistry:          { bg: "#d1fae5", color: "#059669" },
+  Biology:            { bg: "#d1fae5", color: "#16a34a" },
+  Mathematics:        { bg: "#fef3c7", color: "#d97706" },
+  English:            { bg: "#ede9fe", color: "#7c3aed" },
+  "Computer Science": { bg: "#dbeafe", color: "#2563eb" },
+  Economics:          { bg: "#ccfbf1", color: "#0d9488" },
+  Accountancy:        { bg: "#dbeafe", color: "#1d4ed8" },
+  "Business Studies": { bg: "#fae8ff", color: "#a21caf" },
+  History:            { bg: "#fef3c7", color: "#b45309" },
+  "Political Science":{ bg: "#fee2e2", color: "#dc2626" },
+  "Physical Education":{ bg: "#dcfce7", color: "#16a34a" },
+};
+
+const DAILY_TIPS = [
+  "Use Active Recall for Organic Chemistry formulas today.",
+  "Try the Feynman Technique — explain concepts in simple words.",
+  "Review your weak topics before sleeping for better retention.",
+  "Space your revision: revisit notes after 1 day, 3 days, 7 days.",
+  "Practice one past board paper this weekend to build exam stamina.",
+];
+
+export const DashboardView = memo(function DashboardView({
+  stats, overallPct, currentUser, displayName, onSelectSubject, onSelectChapter
+}) {
+  const recentChapters = getRecentChapters(currentUser, 1);
+  const mostRecent = recentChapters[0] || null;
+  const todayTip = DAILY_TIPS[new Date().getDay() % DAILY_TIPS.length];
+
+  // Compute progress for a subject
+  const getSubjectPct = (s) => {
+    const st = stats.bySubject[s];
+    if (!st) return 0;
+    return Math.round((st.n + st.q) / (st.t * 2) * 100);
+  };
+
+  // Show first 4 subjects in the 2×2 grid
+  const subjectKeys = Object.keys(CURRICULUM).slice(0, 4);
+
   return (
-    <div>
-      <div style={{ marginBottom: 36, display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "flex-end", gap: 16 }}>
-        <div style={{ minWidth: 0, flex: "1 1 200px" }}>
-          <h1 style={{ fontSize: "clamp(22px,5vw,38px)", fontWeight: 900, color: "#1e293b", margin: 0, letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-            Welcome back, <span style={{background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", filter: "drop-shadow(0 0 20px rgba(59,130,246,0.2))"}}>{displayName || currentUser}</span>! 👋
-          </h1>
-          <p style={{ color: "#64748b", marginTop: 8, fontSize: "clamp(13px,2.5vw,15px)", fontWeight: 500 }}>
-            AkmEdu45 - Comprehensive Study Preparation · All Subjects
-          </p>
-        </div>
-        
-        {/* Search Bar — full-width on xs, constrained on md+ via flex */}
-        <div style={{ flex: "1 1 240px", width: "100%" }}>
-          <SearchBar 
-            onSelectChapter={(chapter) => {
-              const foundSubject = Object.keys(CURRICULUM).find(subj => {
-                return CURRICULUM[subj].units?.some(unit =>
-                  unit.chapters?.includes(chapter)
-                );
-              });
-              if (foundSubject) {
-                onSelectSubject(foundSubject);
-                setTimeout(() => onSelectChapter(chapter), 100);
-              }
-            }}
-            onSelectSubject={onSelectSubject}
-          />
-        </div>
-      </div>
+    <div style={{ animation: "fadeInUp 0.4s cubic-bezier(0.4,0,0.2,1)" }}>
 
-      {/* Login Streak */}
-      {streak.current > 0 && (
-        <div
-          style={{
-            background: "rgba(245, 158, 11, 0.08)",
-            backdropFilter: "blur(24px)",
-            border: "1px solid rgba(245, 158, 11, 0.2)",
-            borderRadius: 20,
-            padding: 24,
-            marginBottom: 28,
-            display: "flex",
-            alignItems: "center",
-            gap: 24,
-            boxShadow: "0 12px 32px rgba(245, 158, 11, 0.1), inset 0 1px 0 rgba(255,255,255,0.5)",
+      {/* Search Bar */}
+      <div style={{ marginBottom: 24, position: "relative" }}>
+        <SearchBar
+          onSelectChapter={(chapter) => {
+            const foundSubject = Object.keys(CURRICULUM).find(subj =>
+              CURRICULUM[subj].units?.some(unit => unit.chapters?.includes(chapter))
+            );
+            if (foundSubject) {
+              onSelectSubject(foundSubject);
+              setTimeout(() => onSelectChapter(chapter), 100);
+            }
           }}
-        >
-          <div style={{ fontSize: 44, filter: "drop-shadow(0 4px 12px rgba(245,158,11,0.3))" }}>🔥</div>
-          <div style={{ flex: 1 }}>
-            <div style={{ fontWeight: 900, color: "#d97706", fontSize: 18, letterSpacing: "-0.01em" }}>
-              {streak.current} Day{streak.current > 1 ? "s" : ""} On Fire! 🎉
-            </div>
-            <div style={{ fontSize: 13, color: "#b45309", opacity: 0.8, marginTop: 4, fontWeight: 500 }}>
-              Keep it up! Your best streak is <strong style={{color:"#92400e", fontWeight: 800}}>{streak.best}</strong> days.
-            </div>
-          </div>
-        </div>
-      )}
+          onSelectSubject={onSelectSubject}
+        />
+      </div>
 
-      {/* Recent Chapters */}
-      {recentChapters.length > 0 && (
-        <div style={{ marginBottom: 36 }}>
-          <h3 style={{ fontSize: 14, fontWeight: 800, color: "#3b82f6", marginBottom: 16, textTransform: "uppercase", letterSpacing: "0.08em" }}>
-            📚 Recently Studied
-          </h3>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 16 }}>
-            {recentChapters.map((ch, idx) => (
-              <button
-                key={idx}
-                onClick={() => {
-                  onSelectSubject(ch.subject);
-                  setTimeout(() => onSelectChapter(ch.chapter), 100);
-                }}
-                style={{
-                  background: "rgba(255, 255, 255, 0.7)",
-                  backdropFilter: "blur(20px)",
-                  border: "1px solid rgba(0, 0, 0, 0.05)",
-                  borderRadius: 16,
-                  padding: "16px 20px",
-                  textAlign: "left",
-                  cursor: "pointer",
-                  transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-                  boxShadow: "0 4px 12px rgba(148, 163, 184, 0.1)",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "rgba(255, 255, 255, 1)";
-                  e.currentTarget.style.borderColor = "rgba(59, 130, 246, 0.3)";
-                  e.currentTarget.style.transform = "translateY(-4px)";
-                  e.currentTarget.style.boxShadow = "0 12px 24px rgba(59, 130, 246, 0.15)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "rgba(255, 255, 255, 0.7)";
-                  e.currentTarget.style.borderColor = "rgba(0, 0, 0, 0.05)";
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow = "0 4px 12px rgba(148, 163, 184, 0.1)";
-                }}
-              >
-                <div style={{ fontSize: 11, color: "#3b82f6", fontWeight: 800, marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.1em" }}>
-                  {ch.subject}
+      {/* ── Continue Learning ── */}
+      {mostRecent && (() => {
+        const S = CURRICULUM[mostRecent.subject];
+        const pct = getSubjectPct(mostRecent.subject);
+        return (
+          <div style={{ marginBottom: 24 }}>
+            <h2 style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", marginBottom: 12 }}>
+              Continue Learning
+            </h2>
+            <button
+              className="continue-card"
+              style={{ width: "100%", textAlign: "left", border: "none", padding: 0 }}
+              onClick={() => {
+                onSelectSubject(mostRecent.subject);
+                setTimeout(() => onSelectChapter(mostRecent.chapter), 100);
+              }}
+            >
+              <div style={{ padding: "20px 20px 0" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
+                  <span style={{
+                    display: "inline-block",
+                    background: "#ede9fe",
+                    color: "#4f46e5",
+                    fontSize: 10,
+                    fontWeight: 800,
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    padding: "3px 10px",
+                    borderRadius: 999,
+                  }}>
+                    {mostRecent.subject}
+                  </span>
+                  <span style={{ fontSize: 13, fontWeight: 700, color: "#94a3b8" }}>{pct}% Done</span>
                 </div>
-                <div style={{ color: "#1e293b", fontWeight: 600, fontSize: 14, lineHeight: 1.3 }}>
-                  {ch.chapter}
+                <div style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", lineHeight: 1.3, marginBottom: 4 }}>
+                  {mostRecent.chapter}
                 </div>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Weak Topics Report */}
-      <div style={{ marginBottom: 36 }}>
-        <WeakTopicsReport />
-      </div>
-
-      {/* Gamification Features - Streaks, Badges, Weekly Toppers */}
-      <div style={{ marginBottom: 36 }}>
-        <h3 style={{ fontSize: 14, fontWeight: 800, color: "#3b82f6", marginBottom: 16, textTransform: "uppercase", letterSpacing: "0.08em" }}>
-          🎮 Achievement Tracker
-        </h3>
-        <StreakDisplay />
-        <RankBadgeDisplay />
-        <WeeklyToppers />
-      </div>
-
-      <div className="dash-overall">
-        {/* Glow behind */}
-        <div style={{ position: "absolute", top: "50%", left: "20%", transform: "translate(-50%, -50%)", width: 400, height: 400, background: "radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%)", filter: "blur(60px)", borderRadius: "50%", pointerEvents: "none" }} />
-        <div style={{ position: "absolute", top: "50%", right: "10%", transform: "translate(50%, -50%)", width: 400, height: 400, background: "radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%)", filter: "blur(60px)", borderRadius: "50%", pointerEvents: "none" }} />
-        
-        <div style={{ position: "relative", zIndex: 10 }}>
-          <div style={{ fontSize: 13, color: "#64748b", marginBottom: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em" }}>Overall Progress</div>
-          <div style={{ fontSize: 72, fontWeight: 900, lineHeight: 1, background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.15))" }}>{overallPct}%</div>
-          <div style={{ fontSize: 15, color: "#475569", marginTop: 12, fontWeight: 500 }}>Towards Board Exam Readiness</div>
-        </div>
-        <div className="dash-overall-stats">
-          {[
-            { v: stats.notesRead, t: "Notes Read", emoji: "📝", c: "#22c55e" },
-            { v: stats.quizDone, t: "Quizzes", emoji: "✅", c: "#3b82f6" },
-            { v: totalChapters, t: "Chapters", emoji: "📚", c: "#f59e0b" }
-          ].map(({ v, t, emoji, c }) => (
-            <div key={t} style={{ background: "rgba(255,255,255,0.8)", backdropFilter: "blur(30px)", borderRadius: 24, border: "1px solid rgba(0,0,0,0.05)", padding: "24px", textAlign: "center", minWidth: 140, boxShadow: "0 10px 30px rgba(148, 163, 184, 0.15)", transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)" }}
-              onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,1)"; e.currentTarget.style.transform = "translateY(-6px)"; e.currentTarget.style.borderColor = "rgba(59, 130, 246, 0.2)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(59, 130, 246, 0.15)";  }}
-              onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.8)"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.borderColor = "rgba(0,0,0,0.05)"; e.currentTarget.style.boxShadow = "0 10px 30px rgba(148, 163, 184, 0.15)"; }}>
-              <div style={{ fontSize: 28, marginBottom: 12, filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.1))" }}>{emoji}</div>
-              <div style={{ fontSize: 36, fontWeight: 900, color: c }}>{v}</div>
-              <div style={{ fontSize: 11, color: "#64748b", marginTop: 6, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em" }}>{t}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Subject Cards */}
-      <h2 style={{ fontSize: "16px", fontWeight: 800, color: "#3b82f6", marginBottom: 20, marginTop: 48, textTransform: "uppercase", letterSpacing: "0.08em" }}>📚 All Subjects</h2>
-      <div className="dash-grid">
-        {Object.entries(CURRICULUM).map(([s, d]) => {
-          const st = stats.bySubject[s];
-          const pct = Math.round((st.n + st.q) / (st.t * 2) * 100);
-          return (
-            <button key={s} className="card hover-lift" onClick={() => onSelectSubject(s)}
-              style={{ textAlign: "left", width: "100%", padding: 0, overflow: "hidden", cursor: "pointer", border: "1px solid rgba(0,0,0,0.05)", background: "rgba(255, 255, 255, 0.8)", borderRadius: 24 }}>
-              <div style={{ padding: "32px 24px 24px", position: "relative", overflow: "hidden", borderBottom: "1px solid rgba(0,0,0,0.05)" }}>
-                {/* Glowing orb color tint for each subject card */}
-                <div style={{ position: "absolute", right: -40, top: -40, width: 200, height: 200, background: d.gradient, opacity: 0.15, borderRadius: "50%", filter: "blur(50px)", pointerEvents: "none" }} />
-                
-                <div style={{ fontSize: 44, marginBottom: 16, position: "relative", zIndex: 1, filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.1))" }}>{d.emoji}</div>
-                <div style={{ fontSize: 24, fontWeight: 900, letterSpacing: "-0.02em", color: "#1e293b", lineHeight: 1.2, position: "relative", zIndex: 1 }}>{s}</div>
-                <div style={{ fontSize: 13, color: "#64748b", marginTop: 8, fontWeight: 500, position: "relative", zIndex: 1 }}>{d.units.length} Units · {st.t} Chapters</div>
+                <div style={{ fontSize: 13, color: "#94a3b8", fontWeight: 500, marginBottom: 20 }}>
+                  {S?.units?.[0]?.name || "Class 12 CBSE"}
+                </div>
               </div>
-              <div style={{ padding: "24px" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, color: "#64748b", marginBottom: 14, alignItems: "center" }}>
-                  <span style={{ fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em" }}>Progress</span>
-                  <span style={{ fontWeight: 900, color: d.accent || "#3b82f6", fontSize: 16 }}>{pct}%</span>
-                </div>
-                <ProgressBar value={st.n + st.q} max={st.t * 2} color={d.accent || "#3b82f6"} height={8} />
-                <div style={{ display: "flex", gap: 20, marginTop: 18, fontSize: 13, color: "#475569", fontWeight: 600 }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                    <span style={{ opacity: 0.8 }}>📖</span>
-                    <span>{st.n}/{st.t} notes</span>
-                  </div>
-                  <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                    <span style={{ opacity: 0.8 }}>✅</span>
-                    <span>{st.q}/{st.t} quiz</span>
-                  </div>
-                </div>
+              {/* Progress bar flush to bottom */}
+              <div style={{ height: 6, background: "#f1f0ff", borderRadius: "0 0 20px 20px", overflow: "hidden" }}>
+                <div style={{ height: "100%", width: `${pct}%`, background: "linear-gradient(90deg, #4f46e5, #818cf8)", borderRadius: "0 0 20px 20px", transition: "width 0.6s ease" }} />
               </div>
             </button>
-          );
-        })}
+          </div>
+        );
+      })()}
+
+      {/* ── Your Subjects ── */}
+      <div style={{ marginBottom: 24 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+          <h2 style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", margin: 0 }}>
+            Your Subjects
+          </h2>
+          {Object.keys(CURRICULUM).length > 4 && (
+            <button
+              onClick={() => onSelectSubject(Object.keys(CURRICULUM)[4])}
+              style={{ background: "none", border: "none", color: "#4f46e5", fontSize: 13, fontWeight: 700, cursor: "pointer", padding: 0 }}
+            >
+              See all →
+            </button>
+          )}
+        </div>
+
+        <div className="dash-grid">
+          {subjectKeys.map((s) => {
+            const d = CURRICULUM[s];
+            const pct = getSubjectPct(s);
+            const colors = SUBJECT_ICON_COLORS[s] || { bg: "#ede9fe", color: "#4f46e5" };
+            const accentColor = d.accent || "#4f46e5";
+            return (
+              <button
+                key={s}
+                className="subject-mini-card"
+                onClick={() => onSelectSubject(s)}
+                style={{ border: "none", width: "100%", textAlign: "left" }}
+              >
+                <div>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
+                    <div
+                      className="subject-icon-box"
+                      style={{ background: colors.bg, color: colors.color }}
+                    >
+                      <span style={{ fontSize: 22 }}>{d.emoji}</span>
+                    </div>
+                    <span style={{ fontSize: 13, fontWeight: 800, color: accentColor }}>{pct}%</span>
+                  </div>
+                </div>
+                <div>
+                  <div style={{ fontSize: 16, fontWeight: 800, color: "#0f172a", marginBottom: 8 }}>{s}</div>
+                  {/* Progress bar */}
+                  <div className="progress-track">
+                    <div className="progress-fill" style={{ width: `${pct}%`, background: accentColor }} />
+                  </div>
+                </div>
+              </button>
+            );
+          })}
+        </div>
       </div>
+
+      {/* ── All Other Subjects (collapsed list) ── */}
+      {Object.keys(CURRICULUM).length > 4 && (
+        <div style={{ marginBottom: 24 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+            {Object.keys(CURRICULUM).slice(4).map(s => {
+              const d = CURRICULUM[s];
+              const pct = getSubjectPct(s);
+              const colors = SUBJECT_ICON_COLORS[s] || { bg: "#ede9fe", color: "#4f46e5" };
+              return (
+                <button
+                  key={s}
+                  className="subject-mini-card"
+                  onClick={() => onSelectSubject(s)}
+                  style={{ border: "none", width: "100%", textAlign: "left" }}
+                >
+                  <div>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
+                      <div className="subject-icon-box" style={{ background: colors.bg, color: colors.color, width: 40, height: 40 }}>
+                        <span style={{ fontSize: 18 }}>{d.emoji}</span>
+                      </div>
+                      <span style={{ fontSize: 12, fontWeight: 800, color: d.accent || "#4f46e5" }}>{pct}%</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a", marginBottom: 6 }}>{s}</div>
+                    <div className="progress-track" style={{ height: 4 }}>
+                      <div className="progress-fill" style={{ width: `${pct}%`, background: d.accent || "#4f46e5" }} />
+                    </div>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* ── Daily Study Tip ── */}
+      <div className="tip-banner" style={{ marginBottom: 8 }}>
+        <div className="tip-icon-circle">💡</div>
+        <div style={{ flex: 1 }}>
+          <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", opacity: 0.7, marginBottom: 4 }}>
+            Daily Study Tip
+          </div>
+          <div style={{ fontSize: 14, fontWeight: 600, lineHeight: 1.5 }}>
+            {todayTip}
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 });

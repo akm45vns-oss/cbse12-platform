@@ -1,152 +1,181 @@
-import { Badge, LoadingScreen } from "../common";
-import { CURRICULUM } from "../../constants/curriculum";
+import { LoadingScreen } from "../common";
 import { useEffect, memo } from "react";
 import { startSession, endSession } from "../../utils/sessionTracking";
 
-export const NotesView = memo(function NotesView({ subject, chapter, notes, loading, loadMsg, loadEmoji, onStartQuiz, curriculumData }) {
-  const S = curriculumData;
-
+export const NotesView = memo(function NotesView({
+  subject, chapter, notes, loading, loadMsg, loadEmoji, onStartQuiz, curriculumData, onRegenerateNotes
+}) {
   useEffect(() => {
     startSession(subject, chapter, "notes");
-    return () => {
-      endSession(true);
-    };
+    return () => { endSession(true); };
   }, [subject, chapter]);
-  
-  return (
-    <div style={{ maxWidth: 880, margin: "0 auto" }}>
-      {loading ? <LoadingScreen message={loadMsg} emoji={loadEmoji} /> : (
-        <div>
-          {/* Notes Header Card */}
-          <div className="no-print" style={{
-            background: "rgba(255, 255, 255, 0.8)",
-            backdropFilter: "blur(28px)",
-            WebkitBackdropFilter: "blur(28px)",
-            border: "1px solid rgba(0,0,0,0.05)",
-            borderRadius: 20,
-            padding: "clamp(14px,3vw,22px) clamp(16px,4vw,28px)",
-            boxShadow: "0 12px 32px rgba(148,163,184,0.15), inset 0 1px 0 rgba(255,255,255,0.8)",
-            marginBottom: 24,
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            flexWrap: "wrap",
-            gap: 14
+
+  // Enhanced markdown renderer matching new design (callout boxes, formula boxes, etc.)
+  const renderNotes = (raw) => {
+    if (!raw) return null;
+    const elements = [];
+    const lines = raw.split('\n');
+    let i = 0;
+    while (i < lines.length) {
+      const line = lines[i];
+
+      if (line.startsWith('# ')) {
+        elements.push(
+          <div key={i} style={{ marginBottom: 4 }}>
+            <h1>{line.slice(2)}</h1>
+            <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 8 }}>
+              <span style={{
+                display: "inline-block", background: "#ede9fe", color: "#4f46e5",
+                fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999, letterSpacing: "0.06em",
+              }}>Class 12</span>
+              <span style={{
+                display: "inline-block", background: "#dbeafe", color: "#2563eb",
+                fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999, letterSpacing: "0.06em",
+              }}>{subject}</span>
+            </div>
+          </div>
+        );
+      } else if (line.startsWith('## ')) {
+        elements.push(<h2 key={i}>{line.slice(3)}</h2>);
+      } else if (line.startsWith('### ')) {
+        elements.push(<h3 key={i}>{line.slice(4)}</h3>);
+      } else if (line.startsWith('---')) {
+        elements.push(<hr key={i} />);
+      } else if (line.startsWith('> ')) {
+        // Blockquote → styled concept box
+        elements.push(
+          <div key={i} style={{
+            borderLeft: "3px solid #06b6d4",
+            background: "#ecfeff",
+            borderRadius: "0 12px 12px 0",
+            padding: "12px 16px",
+            margin: "12px 0",
+            color: "#164e63",
           }}>
-            <div>
-              <div style={{ fontSize: 11, fontWeight: 800, color: "#3b82f6", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 6 }}>{subject}</div>
-              <h2 style={{ fontSize: "clamp(18px,3vw,24px)", fontWeight: 900, color: "#1e293b", margin: "0 0 4px", letterSpacing: "-0.02em" }}>{chapter}</h2>
-              <div style={{ fontSize: 12, color: "#64748b", fontWeight: 600 }}>AkmEdu45 · Study Notes</div>
+            <span style={{ fontSize: 11, fontWeight: 800, color: "#0891b2", letterSpacing: "0.08em", textTransform: "uppercase" }}>Concept: </span>
+            <span style={{ fontStyle: "italic", fontSize: 14, fontWeight: 500 }}>{line.slice(2)}</span>
+          </div>
+        );
+      } else if (line.toLowerCase().includes('formula') && (line.startsWith('##') || line.startsWith('**'))) {
+        // Formula section → styled box
+        elements.push(
+          <div key={i} style={{
+            background: "#f0fdf4", border: "1.5px solid #bbf7d0",
+            borderRadius: 12, padding: "14px 16px", margin: "12px 0",
+          }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+              <span style={{ fontSize: 13, fontWeight: 800, color: "#16a34a" }}>
+                {line.startsWith('#') ? line.replace(/^#+\s/, '') : line.replace(/\*\*/g, '')}
+              </span>
+              <span style={{ marginLeft: "auto", fontSize: 16 }}>⭐</span>
             </div>
-            <div style={{ display: "flex", gap: 10 }}>
-              <button onClick={() => window.print()}
-                style={{
-                  background: "rgba(0,0,0,0.03)",
-                  border: "1px solid rgba(0,0,0,0.05)",
-                  borderRadius: 10,
-                  padding: "9px 16px",
-                  color: "#475569",
-                  fontSize: 13,
-                  fontWeight: 700,
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 6,
-                  cursor: "pointer",
-                  transition: "all 0.2s"
-                }}
-                onMouseEnter={e => { e.currentTarget.style.background = "rgba(0,0,0,0.06)"; e.currentTarget.style.color = "#1e293b"; }}
-                onMouseLeave={e => { e.currentTarget.style.background = "rgba(0,0,0,0.03)"; e.currentTarget.style.color = "#475569"; }}
-              >
-                📥 PDF
-              </button>
-              <button onClick={onStartQuiz}
-                style={{
-                  background: "linear-gradient(135deg, rgba(59,130,246,0.9), rgba(139,92,246,0.9))",
-                  backdropFilter: "blur(10px)",
-                  border: "1px solid rgba(255,255,255,0.5)",
-                  borderRadius: 10,
-                  padding: "9px 20px",
-                  color: "white",
-                  fontSize: 13,
-                  fontWeight: 700,
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 6,
-                  boxShadow: "0 4px 12px rgba(59,130,246,0.2)",
-                  cursor: "pointer",
-                  transition: "all 0.2s"
-                }}
-                onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 16px rgba(59,130,246,0.3)"; }}
-                onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 4px 12px rgba(59,130,246,0.2)"; }}
-              >
-                🧠 Take Quiz →
-              </button>
+          </div>
+        );
+      } else if (line.startsWith('- ') || line.startsWith('* ')) {
+        const text = line.slice(2).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/`(.+?)`/g, '<code>$1</code>');
+        elements.push(
+          <ul key={i} style={{ margin: "0 0 4px", paddingLeft: 22 }}>
+            <li dangerouslySetInnerHTML={{ __html: text }} />
+          </ul>
+        );
+      } else if (/^\d+\.\s/.test(line)) {
+        const listItems = [];
+        let j = i;
+        while (j < lines.length && /^\d+\.\s/.test(lines[j])) {
+          const text = lines[j].replace(/^\d+\.\s/, '').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+          listItems.push(<li key={j} dangerouslySetInnerHTML={{ __html: text }} />);
+          j++;
+        }
+        elements.push(<ol key={i} style={{ margin: "0 0 8px", paddingLeft: 22 }}>{listItems}</ol>);
+        i = j - 1;
+      } else if (line.trim() === '') {
+        elements.push(<div key={i} style={{ height: 8 }} />);
+      } else {
+        // Detect study tips
+        if (line.toLowerCase().startsWith('💡') || line.toLowerCase().includes('study tip') || line.toLowerCase().includes('note:')) {
+          elements.push(
+            <div key={i} style={{
+              background: "#fffbeb", border: "1.5px solid #fde68a",
+              borderRadius: 12, padding: "12px 16px", margin: "10px 0",
+              display: "flex", gap: 10, alignItems: "flex-start",
+            }}>
+              <span style={{ fontSize: 18, flexShrink: 0 }}>💡</span>
+              <span style={{ fontSize: 14, color: "#92400e", fontWeight: 500, lineHeight: 1.6 }}>
+                {line.replace(/^💡\s*/, '').replace(/^(Study Tip:|Note:)\s*/i, '')}
+              </span>
             </div>
+          );
+        } else {
+          const formatted = line
+            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+            .replace(/`(.+?)`/g, '<code>$1</code>');
+          elements.push(<p key={i} dangerouslySetInnerHTML={{ __html: formatted }} />);
+        }
+      }
+      i++;
+    }
+    return elements;
+  };
+
+  return (
+    <div style={{ maxWidth: 780, margin: "0 auto" }}>
+      {loading ? (
+        <LoadingScreen message={loadMsg} emoji={loadEmoji} />
+      ) : (
+        <div>
+          {/* Action bar */}
+          <div style={{
+            display: "flex", justifyContent: "space-between", alignItems: "center",
+            marginBottom: 16, gap: 10,
+          }}>
+            <button
+              onClick={() => window.print()}
+              style={{
+                background: "white", border: "1.5px solid rgba(0,0,0,0.08)",
+                borderRadius: 10, padding: "8px 16px", color: "#64748b",
+                fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6,
+                cursor: "pointer",
+              }}
+              onMouseEnter={e => { e.currentTarget.style.borderColor = "#4f46e5"; e.currentTarget.style.color = "#4f46e5"; }}
+              onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(0,0,0,0.08)"; e.currentTarget.style.color = "#64748b"; }}
+            >
+              📥 PDF
+            </button>
+            <button
+              onClick={onStartQuiz}
+              style={{
+                background: "linear-gradient(135deg, #4f46e5, #818cf8)",
+                border: "none", borderRadius: 10, padding: "10px 20px", color: "white",
+                fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6,
+                boxShadow: "0 4px 12px rgba(79,70,229,0.3)", cursor: "pointer",
+              }}
+              onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; }}
+              onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; }}
+            >
+              Take Quiz →
+            </button>
           </div>
 
           {/* Notes Content */}
           <div id="printable-content" className="prose-notes-block">
-            <div className="prose-notes">
-              {(() => {
-                const elements = [];
-                const lines = notes.split('\n');
-                let i = 0;
-                while (i < lines.length) {
-                  const line = lines[i];
-                  if (line.startsWith('# ')) {
-                    elements.push(<h1 key={i}>{line.slice(2)}</h1>);
-                  } else if (line.startsWith('## ')) {
-                    elements.push(<h2 key={i}>{line.slice(3)}</h2>);
-                  } else if (line.startsWith('### ')) {
-                    elements.push(<h3 key={i}>{line.slice(4)}</h3>);
-                  } else if (line.startsWith('---')) {
-                    elements.push(<hr key={i} />);
-                  } else if (line.startsWith('> ')) {
-                    elements.push(<blockquote key={i}>{line.slice(2)}</blockquote>);
-                  } else if (line.startsWith('- ') || line.startsWith('* ')) {
-                    const text = line.slice(2).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-                    elements.push(<ul key={i} style={{margin:0,paddingLeft:22}}><li dangerouslySetInnerHTML={{ __html: text }} /></ul>);
-                  } else if (/^\d+\.\s/.test(line)) {
-                    const listItems = [];
-                    let j = i;
-                    while (j < lines.length && /^\d+\.\s/.test(lines[j])) {
-                      const text = lines[j].replace(/^\d+\.\s/, '').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-                      listItems.push(<li key={j} dangerouslySetInnerHTML={{ __html: text }} />);
-                      j++;
-                    }
-                    elements.push(<ol key={i} style={{margin:0,paddingLeft:22}}>{listItems}</ol>);
-                    i = j - 1;
-                  } else if (line.trim() === '') {
-                    elements.push(<div key={i} style={{height:6}} />);
-                  } else {
-                    const formatted = line.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/`(.+?)`/g, '<code>$1</code>');
-                    elements.push(<p key={i} dangerouslySetInnerHTML={{ __html: formatted }} />);
-                  }
-                  i++;
-                }
-                return elements;
-              })()}
+            <div className="notes-content-pad prose-notes">
+              {renderNotes(notes)}
             </div>
           </div>
 
-          {/* Bottom action bar */}
-          <div style={{ display: "flex", justifyContent: "center", gap: 14, marginTop: 32, paddingBottom: 40 }}>
-            <button onClick={onStartQuiz}
+          {/* Bottom CTA */}
+          <div style={{ display: "flex", justifyContent: "center", marginTop: 24, paddingBottom: 16 }}>
+            <button
+              onClick={onStartQuiz}
               style={{
-                background: "linear-gradient(135deg, rgba(59,130,246,0.9), rgba(139,92,246,0.9))",
-                border: "1px solid rgba(255,255,255,0.5)",
-                backdropFilter: "blur(10px)",
-                borderRadius: 14,
-                padding: "13px 32px",
-                color: "white",
-                fontSize: 15,
-                fontWeight: 800,
-                boxShadow: "0 6px 20px rgba(59,130,246,0.2)",
-                cursor: "pointer",
-                transition: "all 0.2s"
+                background: "linear-gradient(135deg, #4f46e5, #818cf8)",
+                border: "none", borderRadius: 14, padding: "14px 36px", color: "white",
+                fontSize: 15, fontWeight: 800,
+                boxShadow: "0 6px 20px rgba(79,70,229,0.3)", cursor: "pointer",
+                transition: "all 0.2s",
               }}
-              onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 12px 30px rgba(59,130,246,0.3)"; }}
-              onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 6px 20px rgba(59,130,246,0.2)"; }}
+              onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 12px 32px rgba(79,70,229,0.4)"; }}
+              onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 6px 20px rgba(79,70,229,0.3)"; }}
             >
               🧠 Start Quiz →
             </button>
