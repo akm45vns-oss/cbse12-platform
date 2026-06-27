@@ -11,7 +11,7 @@ import {
   getPerformanceColor,
   getPerformanceLabel,
 } from "../../utils/analyticsEngine";
-import { curriculumData } from "../../constants/curriculum";
+
 
 export const StatsView = memo(function StatsView({ curriculumData }) {
   const theme = useTheme();
