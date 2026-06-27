@@ -19,7 +19,7 @@ const LockIcon = () => (
 );
 
 export const SubjectView = memo(function SubjectView({
-  subject, stats, progress, onSelectChapter, onGeneratePaper, curriculum, username
+  subject, stats, progress, onSelectChapter, onGeneratePaper, curriculum, username, selectedClass
 }) {
   const S = curriculum[subject];
   const [bookmarks, setBookmarks] = useState({});
@@ -68,7 +68,7 @@ export const SubjectView = memo(function SubjectView({
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
           <div>
             <div style={{ fontSize: 20, fontWeight: 800, color: "#0f172a", marginBottom: 2 }}>Mastery Progress</div>
-            <div style={{ fontSize: 13, color: "#94a3b8", fontWeight: 500 }}>Class 12 · {S.units.length > 3 ? "Science" : "Commerce"} Stream</div>
+            <div style={{ fontSize: 13, color: "#94a3b8", fontWeight: 500 }}>Class {selectedClass || "12"} · {S.units.length > 3 ? "Science" : "Commerce"} Stream</div>
           </div>
           <div style={{
             width: 44, height: 44, borderRadius: 12,

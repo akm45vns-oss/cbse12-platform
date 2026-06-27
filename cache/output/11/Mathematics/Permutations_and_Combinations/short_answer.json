@@ -1,0 +1,113 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:28:12.633Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a permutation?",
+        "marks": 2,
+        "answer": "A permutation is an arrangement of objects in a specific order. It is a selection of objects where the order of selection matters. For example, if we have 3 objects A, B, C, then the permutations of these objects are ABC, ACB, BAC, BCA, CAB, CBA.",
+        "key_points": [
+          "Order matters",
+          "Selection",
+          "Arrangement"
+        ],
+        "topic": "Introduction to Permutations"
+      },
+      {
+        "q": "What is the formula for finding the number of permutations of n distinct objects taken r at a time?",
+        "marks": 2,
+        "answer": "The formula for finding the number of permutations of n distinct objects taken r at a time is given by nPr = n! / (n-r)!, where n is the total number of objects and r is the number of objects selected.",
+        "key_points": [
+          "Permutation formula",
+          "Factorial notation",
+          "Selection"
+        ],
+        "topic": "Permutations of n distinct objects"
+      },
+      {
+        "q": "What is the difference between permutation and combination?",
+        "marks": 2,
+        "answer": "The main difference between permutation and combination is that in permutation, the order of selection matters, whereas in combination, the order of selection does not matter. For example, if we have 3 objects A, B, C, then the permutations are ABC, ACB, BAC, BCA, CAB, CBA, but the combinations are {A, B, C} only.",
+        "key_points": [
+          "Order matters",
+          "No order matters",
+          "Permutation vs Combination"
+        ],
+        "topic": "Permutation vs Combination"
+      },
+      {
+        "q": "What is a multinomial coefficient?",
+        "marks": 2,
+        "answer": "A multinomial coefficient is the number of ways to partition a set of n objects among r boxes. It is given by the formula n! / (n1! * n2! * ... * nr!), where n1, n2, ..., nr are the numbers of objects in each box.",
+        "key_points": [
+          "Multinomial coefficient",
+          "Partitioning",
+          "Factorial notation"
+        ],
+        "topic": "Multinomial Coefficients"
+      },
+      {
+        "q": "What is the formula for finding the number of combinations of n distinct objects taken r at a time?",
+        "marks": 2,
+        "answer": "The formula for finding the number of combinations of n distinct objects taken r at a time is given by nCr = n! / (r! * (n-r)!), where n is the total number of objects and r is the number of objects selected.",
+        "key_points": [
+          "Combination formula",
+          "Factorial notation",
+          "Selection"
+        ],
+        "topic": "Combinations of n distinct objects"
+      },
+      {
+        "q": "What is a circular permutation?",
+        "marks": 2,
+        "answer": "A circular permutation is a permutation of objects in a circular arrangement. The number of circular permutations of n distinct objects is given by (n-1)!.",
+        "key_points": [
+          "Circular arrangement",
+          "Permutation formula",
+          "Factorial notation"
+        ],
+        "topic": "Circular Permutations"
+      },
+      {
+        "q": "What is the formula for finding the number of circular permutations of n distinct objects?",
+        "marks": 2,
+        "answer": "The formula for finding the number of circular permutations of n distinct objects is given by (n-1)!, where n is the total number of objects.",
+        "key_points": [
+          "Circular permutation formula",
+          "Factorial notation",
+          "Circular arrangement"
+        ],
+        "topic": "Circular Permutations"
+      },
+      {
+        "q": "What is the difference between a permutation and a derangement?",
+        "marks": 2,
+        "answer": "A derangement is a permutation of objects in which no object is in its original position. In other words, a derangement is a permutation where no object is fixed in its original position. For example, if we have 3 objects A, B, C, then the derangements are ABC, BCA, CAB, but not ACB, BAC, CBA.",
+        "key_points": [
+          "Derangement definition",
+          "Permutation vs Derangement",
+          "No fixed position"
+        ],
+        "topic": "Derangements"
+      },
+      {
+        "q": "What is the formula for finding the number of derangements of n distinct objects?",
+        "marks": 2,
+        "answer": "The formula for finding the number of derangements of n distinct objects is given by !n = n! * (1/0! - 1/1! + 1/2! - ... + (-1)^n/n!), where n is the total number of objects.",
+        "key_points": [
+          "Derangement formula",
+          "Derangement notation",
+          "Factorial notation"
+        ],
+        "topic": "Derangements"
+      }
+    ],
+    "total": 9
+  }
+}

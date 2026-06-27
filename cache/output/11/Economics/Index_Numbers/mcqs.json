@@ -1,0 +1,235 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Index Numbers",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T05:48:10.041Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the main purpose of index numbers?",
+        "opts": [
+          "(A) To compare the price levels of different commodities",
+          "(B) To calculate the average of a group of numbers",
+          "(C) To forecast future economic trends",
+          "(D) To analyze the distribution of incomes"
+        ],
+        "ans": "A",
+        "explanation": "Index numbers are used to compare the price levels of different commodities over time or across different regions. This helps in making informed decisions about investments and resource allocation.",
+        "difficulty": "easy",
+        "topic": "Introduction to Index Numbers"
+      },
+      {
+        "q": "Which of the following is a characteristic of a good index number?",
+        "opts": [
+          "(A) It should be simple to calculate",
+          "(B) It should be sensitive to changes in the variables it measures",
+          "(C) It should be difficult to understand",
+          "(D) It should be insensitive to changes in the variables it measures"
+        ],
+        "ans": "B",
+        "explanation": "A good index number should be sensitive to changes in the variables it measures, meaning it should be able to accurately reflect changes in the data. Sensitivity is a key characteristic of a good index number.",
+        "difficulty": "easy",
+        "topic": "Characteristics of a Good Index Number"
+      },
+      {
+        "q": "What is the formula for the Laspeyres' Price Index?",
+        "opts": [
+          "(A) (Σp1q0)/(Σp0q0)",
+          "(B) (Σp1q1)/(Σp0q0)",
+          "(C) (Σp0q1)/(Σp1q0)",
+          "(D) (Σp1q0)/(Σp1q1)"
+        ],
+        "ans": "B",
+        "explanation": "The Laspeyres' Price Index is calculated using the formula (Σp1q1)/(Σp0q0), where p1 is the current price, p0 is the base period price, q1 is the current quantity, and q0 is the base period quantity.",
+        "difficulty": "easy",
+        "topic": "Laspeyres' Price Index"
+      },
+      {
+        "q": "What is the difference between a price index and a quantity index?",
+        "opts": [
+          "(A) A price index measures the change in prices, while a quantity index measures the change in quantities",
+          "(B) A price index measures the change in quantities, while a quantity index measures the change in prices",
+          "(C) A price index is used to calculate the total value of a group of items, while a quantity index is used to calculate the average price of a group of items",
+          "(D) A price index is used to calculate the average price of a group of items, while a quantity index is used to calculate the total value of a group of items"
+        ],
+        "ans": "A",
+        "explanation": "A price index measures the change in prices over time, while a quantity index measures the change in quantities over time. This is an important distinction in index number theory.",
+        "difficulty": "medium",
+        "topic": "Price Index vs Quantity Index"
+      },
+      {
+        "q": "What is the Paasche's Price Index?",
+        "opts": [
+          "(A) (Σp1q1)/(Σp0q0)",
+          "(B) (Σp1q0)/(Σp0q0)",
+          "(C) (Σp0q1)/(Σp1q0)",
+          "(D) (Σp1q1)/(Σp0q1)"
+        ],
+        "ans": "D",
+        "explanation": "The Paasche's Price Index is calculated using the formula (Σp1q1)/(Σp0q1), where p1 is the current price, p0 is the base period price, q1 is the current quantity, and q0 is the base period quantity.",
+        "difficulty": "medium",
+        "topic": "Paasche's Price Index"
+      },
+      {
+        "q": "What is the main advantage of the Fisher's Ideal Index?",
+        "opts": [
+          "(A) It is easy to calculate",
+          "(B) It is sensitive to changes in the variables it measures",
+          "(C) It is a geometric mean of the Laspeyres' and Paasche's Price Indexes",
+          "(D) It is insensitive to changes in the variables it measures"
+        ],
+        "ans": "C",
+        "explanation": "Fisher's Ideal Index is a geometric mean of the Laspeyres' and Paasche's Price Indexes, making it a more accurate measure of price change than either of the two individual indexes.",
+        "difficulty": "medium",
+        "topic": "Fisher's Ideal Index"
+      },
+      {
+        "q": "What is the purpose of chain linking in index number construction?",
+        "opts": [
+          "(A) To simplify the calculation of index numbers",
+          "(B) To make the index number more sensitive to changes in the variables it measures",
+          "(C) To make the index number more robust to changes in the base year",
+          "(D) To make the index number more accurate by accounting for changes in the weights over time"
+        ],
+        "ans": "D",
+        "explanation": "Chain linking is a method of index number construction that accounts for changes in the weights over time by linking the current period index to the previous period index, making the index number more accurate.",
+        "difficulty": "medium",
+        "topic": "Chain Linking"
+      },
+      {
+        "q": "What is the main difference between the arithmetic mean and the geometric mean?",
+        "opts": [
+          "(A) The arithmetic mean is used for price indexes, while the geometric mean is used for quantity indexes",
+          "(B) The arithmetic mean is used for quantity indexes, while the geometric mean is used for price indexes",
+          "(C) The arithmetic mean is a weighted average, while the geometric mean is an unweighted average",
+          "(D) The arithmetic mean is used to calculate the total value of a group of items, while the geometric mean is used to calculate the average price of a group of items"
+        ],
+        "ans": "C",
+        "explanation": "The arithmetic mean is a weighted average, while the geometric mean is an unweighted average. This is an important distinction in index number theory.",
+        "difficulty": "hard",
+        "topic": "Arithmetic Mean vs Geometric Mean"
+      },
+      {
+        "q": "How does the choice of base year affect the value of an index number?",
+        "opts": [
+          "(A) The base year has no effect on the value of an index number",
+          "(B) The base year affects the value of an index number by changing the weights used in its calculation",
+          "(C) The base year affects the value of an index number by changing the level of the index number",
+          "(D) The base year only affects the level of the index number, but not its rate of change"
+        ],
+        "ans": "C",
+        "explanation": "The choice of base year affects the value of an index number by changing the level of the index number. This means that the same data can produce different index numbers depending on the base year chosen.",
+        "difficulty": "hard",
+        "topic": "Base Year"
+      },
+      {
+        "q": "What is the main advantage of using a chain index instead of a fixed base index?",
+        "opts": [
+          "(A) Chain indexes are easier to calculate",
+          "(B) Chain indexes are more sensitive to changes in the variables they measure",
+          "(C) Chain indexes are more accurate because they account for changes in the weights over time",
+          "(D) Chain indexes are more robust to changes in the base year"
+        ],
+        "ans": "C",
+        "explanation": "Chain indexes are more accurate because they account for changes in the weights over time. This makes them more suitable for use in economic analysis.",
+        "difficulty": "hard",
+        "topic": "Chain Index vs Fixed Base Index"
+      },
+      {
+        "q": "What is the purpose of seasonally adjusting an index number?",
+        "opts": [
+          "(A) To remove the effect of seasonal fluctuations in the data",
+          "(B) To make the index number more sensitive to changes in the variables it measures",
+          "(C) To make the index number more robust to changes in the base year",
+          "(D) To make the index number more accurate by accounting for changes in the weights over time"
+        ],
+        "ans": "A",
+        "explanation": "Seasonal adjustment is a process of removing the effect of seasonal fluctuations in the data. This makes the index number more suitable for use in economic analysis.",
+        "difficulty": "hard",
+        "topic": "Seasonal Adjustment"
+      },
+      {
+        "q": "What is the difference between a weighted and an unweighted index?",
+        "opts": [
+          "(A) A weighted index is used for price indexes, while an unweighted index is used for quantity indexes",
+          "(B) A weighted index is used for quantity indexes, while an unweighted index is used for price indexes",
+          "(C) A weighted index gives more importance to the variables with larger values, while an unweighted index gives equal importance to all variables",
+          "(D) A weighted index is used to calculate the total value of a group of items, while an unweighted index is used to calculate the average price of a group of items"
+        ],
+        "ans": "C",
+        "explanation": "A weighted index gives more importance to the variables with larger values, while an unweighted index gives equal importance to all variables. This is an important distinction in index number theory.",
+        "difficulty": "hard",
+        "topic": "Weighted vs Unweighted Index"
+      },
+      {
+        "q": "What is the main advantage of using a composite index instead of a single index?",
+        "opts": [
+          "(A) Composite indexes are easier to calculate",
+          "(B) Composite indexes are more sensitive to changes in the variables they measure",
+          "(C) Composite indexes are more accurate because they account for changes in multiple variables",
+          "(D) Composite indexes are more robust to changes in the base year"
+        ],
+        "ans": "C",
+        "explanation": "Composite indexes are more accurate because they account for changes in multiple variables. This makes them more suitable for use in economic analysis.",
+        "difficulty": "hard",
+        "topic": "Composite Index"
+      },
+      {
+        "q": "What is the purpose of using a Laspeyres' Price Index instead of a Paasche's Price Index?",
+        "opts": [
+          "(A) To simplify the calculation of index numbers",
+          "(B) To make the index number more sensitive to changes in the variables it measures",
+          "(C) To make the index number more robust to changes in the base year",
+          "(D) To make the index number more accurate by accounting for changes in the weights over time"
+        ],
+        "ans": "D",
+        "explanation": "Laspeyres' Price Index is more accurate than Paasche's Price Index because it accounts for changes in the weights over time. This makes it more suitable for use in economic analysis.",
+        "difficulty": "hard",
+        "topic": "Laspeyres' Price Index vs Paasche's Price Index"
+      },
+      {
+        "q": "What is the main advantage of using a Fisher's Ideal Index instead of a Laspeyres' Price Index?",
+        "opts": [
+          "(A) Fisher's Ideal Index is easier to calculate",
+          "(B) Fisher's Ideal Index is more sensitive to changes in the variables it measures",
+          "(C) Fisher's Ideal Index is more accurate because it is a geometric mean of the Laspeyres' and Paasche's Price Indexes",
+          "(D) Fisher's Ideal Index is more robust to changes in the base year"
+        ],
+        "ans": "C",
+        "explanation": "Fisher's Ideal Index is more accurate than Laspeyres' Price Index because it is a geometric mean of the Laspeyres' and Paasche's Price Indexes. This makes it more suitable for use in economic analysis.",
+        "difficulty": "hard",
+        "topic": "Fisher's Ideal Index vs Laspeyres' Price Index"
+      },
+      {
+        "q": "What is the purpose of using a Paasche's Price Index instead of a Laspeyres' Price Index?",
+        "opts": [
+          "(A) To simplify the calculation of index numbers",
+          "(B) To make the index number more sensitive to changes in the variables it measures",
+          "(C) To make the index number more robust to changes in the base year",
+          "(D) To make the index number more accurate by accounting for changes in the weights over time"
+        ],
+        "ans": "D",
+        "explanation": "Paasche's Price Index is more accurate than Laspeyres' Price Index because it accounts for changes in the weights over time. This makes it more suitable for use in economic analysis.",
+        "difficulty": "hard",
+        "topic": "Paasche's Price Index vs Laspeyres' Price Index"
+      },
+      {
+        "q": "What is the main difference between the concept of index numbers and the concept of percentage change?",
+        "opts": [
+          "(A) Index numbers are used to calculate the total value of a group of items, while percentage change is used to calculate the average price of a group of items",
+          "(B) Index numbers are used to calculate the average price of a group of items, while percentage change is used to calculate the total value of a group of items",
+          "(C) Index numbers are used to calculate the percentage change in a single variable, while percentage change is used to calculate the percentage change in multiple variables",
+          "(D) Index numbers are used to calculate the percentage change in multiple variables, while percentage change is used to calculate the percentage change in a single variable"
+        ],
+        "ans": "D",
+        "explanation": "Index numbers are used to calculate the percentage change in multiple variables, while percentage change is used to calculate the percentage change in a single variable.",
+        "difficulty": "hard",
+        "topic": "Index Numbers vs Percentage Change"
+      }
+    ],
+    "total": 17
+  }
+}

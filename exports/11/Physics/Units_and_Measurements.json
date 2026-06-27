@@ -1,0 +1,1082 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Units and Measurements",
+  "exported_at": "2026-06-27T05:54:07.000Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:10:01.98+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 9,
+        "questions": [
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): These seven fundamental units are metre, kilogram, second, ampere, kelvin, mole, and candela.",
+            "assertion": "Assertion (A): The unit of measurement in the International System of Units (SI) is based on seven fundamental units.",
+            "explanation": "This option is correct because the SI unit is indeed based on seven fundamental units and the reason provides a correct explanation of this fact."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Absolute error is also known as the absolute deviation or absolute discrepancy.",
+            "assertion": "Assertion (A): The absolute error is the magnitude of the difference between the measured and true values of a quantity.",
+            "explanation": "This option is correct because the assertion defines absolute error correctly and the reason provides a correct explanation of its definition."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is also expressed as a percentage.",
+            "assertion": "Assertion (A): The relative error is the ratio of the absolute error to the true value of a quantity.",
+            "explanation": "This option is correct because the assertion defines relative error correctly and the reason provides a correct explanation of its expression."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Significant figures include the digits to the left of the decimal point and the digits to the right of the decimal point, excluding any trailing zeros.",
+            "assertion": "Assertion (A): The significant figures in a measurement are the digits that are known with certainty.",
+            "explanation": "This option is correct because the assertion is false and the reason provides a correct explanation of the rule for significant figures."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The number of significant figures also depends on the uncertainty in the measurement.",
+            "assertion": "Assertion (A): The number of significant figures in a measurement depends only on the number of digits in the measurement.",
+            "explanation": "This option is correct because the assertion is false and the reason provides a correct explanation of the factors that influence the number of significant figures in a measurement."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The precision also depends on the instrument used to make the measurement.",
+            "assertion": "Assertion (A): The precision of a measurement is the number of significant figures in the measurement.",
+            "explanation": "This option is correct because the assertion is false and the reason provides a correct explanation of the factors that influence the precision of a measurement."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The accuracy also depends on how close the measured value is to the true value.",
+            "assertion": "Assertion (A): The accuracy of a measurement is the number of significant figures in the measurement.",
+            "explanation": "This option is correct because the assertion is false and the reason provides a correct explanation of the factors that influence the accuracy of a measurement."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The absolute uncertainty is a measure of the reliability of the measurement.",
+            "assertion": "Assertion (A): The absolute uncertainty is the maximum possible error in a measurement.",
+            "explanation": "This option is correct because the assertion defines absolute uncertainty correctly and the reason provides a correct explanation of its significance."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is also expressed as a percentage.",
+            "assertion": "Assertion (A): The relative uncertainty is the ratio of the absolute uncertainty to the true value of a quantity.",
+            "explanation": "This option is correct because the assertion defines relative uncertainty correctly and the reason provides a correct explanation of its expression."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:10:03.584+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "A surveyor needs to measure the length of a road to be constructed. The road is 5000 meters long. However, the surveyor wants to express this length in kilometers to make it more manageable. What is the length of the road in kilometers?",
+            "questions": [
+              {
+                "q": "What is the length of the road in kilometers?",
+                "ans": "A",
+                "opts": [
+                  "(A) 5 km",
+                  "(B) 5.5 km",
+                  "(C) 5.00 km",
+                  "(D) 5.000 km"
+                ],
+                "explanation": "To convert meters to kilometers, we divide by 1000. So, 5000 m ÷ 1000 = 5 km."
+              },
+              {
+                "q": "What is the relationship between meters and kilometers?",
+                "ans": "D",
+                "opts": [
+                  "(A) 1 m = 1 km",
+                  "(B) 1 m = 1000 km",
+                  "(C) 1 m = 0.001 km",
+                  "(D) 1 km = 1000 m"
+                ],
+                "explanation": "1 meter is equal to 0.001 kilometers, or 1 kilometer is equal to 1000 meters."
+              },
+              {
+                "q": "What is the length of the road in centimeters?",
+                "ans": "A",
+                "opts": [
+                  "(A) 500000 cm",
+                  "(B) 50000 cm",
+                  "(C) 50 cm",
+                  "(D) 500 cm"
+                ],
+                "explanation": "To convert meters to centimeters, we multiply by 100. So, 5000 m × 100 = 500000 cm."
+              },
+              {
+                "q": "What is the relationship between meters and centimeters?",
+                "ans": "C",
+                "opts": [
+                  "(A) 1 m = 1 cm",
+                  "(B) 1 m = 100 cm",
+                  "(C) 1 m = 1000 cm",
+                  "(D) 1 cm = 1000 m"
+                ],
+                "explanation": "1 meter is equal to 100 centimeters."
+              },
+              {
+                "q": "What is the unit of length used to measure the length of the road?",
+                "ans": "A",
+                "opts": [
+                  "(A) Meter",
+                  "(B) Kilometer",
+                  "(C) Centimeter",
+                  "(D) All of the above"
+                ],
+                "explanation": "The length of the road is given in meters."
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "A scientist measures the mass of a sample in grams. If the mass of the sample is 250 grams, what is the mass in kilograms?",
+            "questions": [
+              {
+                "q": "What is the mass of the sample in kilograms?",
+                "ans": "A",
+                "opts": [
+                  "(A) 0.25 kg",
+                  "(B) 2.5 kg",
+                  "(C) 25 kg",
+                  "(D) 250 kg"
+                ],
+                "explanation": "To convert grams to kilograms, we divide by 1000. So, 250 g ÷ 1000 = 0.25 kg."
+              },
+              {
+                "q": "What is the relationship between grams and kilograms?",
+                "ans": "D",
+                "opts": [
+                  "(A) 1 g = 1 kg",
+                  "(B) 1 g = 1000 kg",
+                  "(C) 1 g = 0.001 kg",
+                  "(D) 1 kg = 1000 g"
+                ],
+                "explanation": "1 kilogram is equal to 1000 grams."
+              },
+              {
+                "q": "What is the mass of the sample in milligrams?",
+                "ans": "D",
+                "opts": [
+                  "(A) 250000 mg",
+                  "(B) 25000 mg",
+                  "(C) 2500 mg",
+                  "(D) 250 mg"
+                ],
+                "explanation": "To convert grams to milligrams, we multiply by 1000. So, 250 g × 1000 = 250000 mg."
+              },
+              {
+                "q": "What is the relationship between grams and milligrams?",
+                "ans": "C",
+                "opts": [
+                  "(A) 1 g = 1 mg",
+                  "(B) 1 g = 1000 mg",
+                  "(C) 1 g = 1000000 mg",
+                  "(D) 1 mg = 1000 g"
+                ],
+                "explanation": "1 gram is equal to 1000000 milligrams."
+              },
+              {
+                "q": "What is the unit of mass used to measure the sample?",
+                "ans": "A",
+                "opts": [
+                  "(A) Gram",
+                  "(B) Kilogram",
+                  "(C) Milligram",
+                  "(D) All of the above"
+                ],
+                "explanation": "The mass of the sample is given in grams."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:19:04.074+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Units and Measurements\n## 📌 Chapter Overview\n\nThis chapter is an introduction to the fundamental concepts of physics, focusing on the measurement and description of physical quantities using units and dimensions. The study of units and measurements is crucial in physics as it enables us to compare and analyze different physical phenomena. This chapter will cover the various types of physical quantities, their units, and the methods for measuring them. We will also explore the concept of dimension and its significance in physics.\n\nIn this chapter, we will delve into the world of measurements, exploring the different systems of units, the concept of dimension, and the methods of measurement. We will also discuss the importance of precision and accuracy in measurements and how to minimize errors. By the end of this chapter, you will have a solid understanding of the basics of units and measurements, which will serve as a foundation for more advanced topics in physics.\n\n## 🎯 Learning Objectives\n\n* Understand the concept of physical quantities and their units\n* Learn about the different systems of units (SI, CGS, etc.)\n* Understand the concept of dimension and its significance in physics\n* Learn about the methods of measurement (direct, indirect, etc.)\n* Understand the importance of precision and accuracy in measurements\n* Learn about the concept of significant figures and rounding off\n* Understand the concept of error and its types (absolute, relative, etc.)\n\n## 🔑 Key Concepts & Definitions\n\n* **Physical Quantity**: A physical quantity is a quantity that can be measured or quantified in terms of its magnitude and dimension.\n* **Unit**: A unit is a standard quantity used to express the magnitude of a physical quantity.\n* **Dimension**: A dimension is a fundamental property of a physical quantity that describes its nature and characteristics.\n* **System of Units**: A system of units is a set of units used to express physical quantities in a consistent and coherent manner.\n* **Precision**: Precision refers to the closeness of repeated measurements of a physical quantity.\n* **Accuracy**: Accuracy refers to the closeness of a measurement to the true value of a physical quantity.\n* **Significant Figures**: Significant figures are the digits in a measurement that are known to be reliable and accurate.\n* **Error**: Error is the difference between the measured value and the true value of a physical quantity.\n\n## 📐 Core Theory & Principles\n\n* The concept of dimension is crucial in physics as it helps us to understand the nature and characteristics of physical quantities.\n* The SI system of units is the most widely used system of units in physics.\n* The concept of precision and accuracy is essential in measurements as it helps us to minimize errors.\n* The method of measurement involves taking repeated measurements of a physical quantity to determine its magnitude and dimension.\n* The concept of significant figures is important in measurements as it helps us to determine the reliability and accuracy of a measurement.\n\n## 🧮 Important Formulas & Laws\n\n* **Formula for calculating the number of significant figures**: (n+1) × (1 + δ)\n* **Formula for calculating the absolute error**: Δx = x - x_true\n* **Formula for calculating the relative error**: Δx/x = Δx_true/x_true\n* **Law of significant figures**: The number of significant figures in a measurement is equal to the number of decimal places in the measurement.\n\n## 🔬 Detailed Explanations\n\n### Measurement of Physical Quantities\n\nPhysical quantities can be measured using various methods, including direct and indirect methods.\n\n* **Direct Measurement**: Direct measurement involves measuring a physical quantity directly, using instruments such as thermometers, barometers, and clocks.\n* **Indirect Measurement**: Indirect measurement involves measuring a related quantity and using it to determine the desired physical quantity.\n\n### Precision and Accuracy\n\nPrecision and accuracy are essential in measurements as they help us to minimize errors.\n\n* **Precision**: Precision refers to the closeness of repeated measurements of a physical quantity.\n* **Accuracy**: Accuracy refers to the closeness of a measurement to the true value of a physical quantity.\n\n### Significant Figures\n\nSignificant figures are the digits in a measurement that are known to be reliable and accurate.\n\n* **Definition of Significant Figures**: Significant figures are the digits in a measurement that are known to be reliable and accurate.\n* **Rules for Significant Figures**: The number of significant figures in a measurement is equal to the number of decimal places in the measurement.\n\n## 🖼️ Diagrams & Visual Concepts\n\n* **Diagram of a Thermometer**: A thermometer is a device used to measure temperature.\n* **Diagram of a Barometer**: A barometer is a device used to measure atmospheric pressure.\n* **Diagram of a Clock**: A clock is a device used to measure time.\n\n## ⭐ Most Important Points (Exam Focus)\n\n* Physical quantities can be measured using various methods, including direct and indirect methods.\n* Precision and accuracy are essential in measurements as they help us to minimize errors.\n* Significant figures are the digits in a measurement that are known to be reliable and accurate.\n* The number of significant figures in a measurement is equal to the number of decimal places in the measurement.\n* The concept of dimension is crucial in physics as it helps us to understand the nature and characteristics of physical quantities.\n* The SI system of units is the most widely used system of units in physics.\n* The method of measurement involves taking repeated measurements of a physical quantity to determine its magnitude and dimension.\n* The concept of precision and accuracy is essential in measurements as it helps us to minimize errors.\n* The law of significant figures states that the number of significant figures in a measurement is equal to the number of decimal places in the measurement.\n* Error can be classified into absolute and relative errors.\n* Absolute error refers to the difference between the measured value and the true value of a physical quantity.\n* Relative error refers to the ratio of the absolute error to the true value of a physical quantity.\n\n## ❌ Common Mistakes to Avoid\n\n* Failing to understand the concept of dimension and its significance in physics.\n* Failing to appreciate the importance of precision and accuracy in measurements.\n* Failing to understand the concept of significant figures and its relevance in measurements.\n* Failing to use the correct units and dimensions in calculations.\n* Failing to minimize errors in measurements.\n\n## 💡 Real-World Applications\n\n* **Temperature Measurement**: Temperature is an essential physical quantity that is measured using thermometers.\n* **Atmospheric Pressure Measurement**: Atmospheric pressure is an essential physical quantity that is measured using barometers.\n* **Time Measurement**: Time is an essential physical quantity that is measured using clocks.\n\n## 🔁 Quick Revision Summary\n\n* Physical quantities can be measured using various methods, including direct and indirect methods.\n* Precision and accuracy are essential in measurements as they help us to minimize errors.\n* Significant figures are the digits in a measurement that are known to be reliable and accurate.\n* The number of significant figures in a measurement is equal to the number of decimal places in the measurement.\n* The concept of dimension is crucial in physics as it helps us to understand the nature and characteristics of physical quantities.\n* The SI system of units is the most widely used system of units in physics.\n* The method of measurement involves taking repeated measurements of a physical quantity to determine its magnitude and dimension.\n* Error can be classified into absolute and relative errors.\n* Absolute error refers to the difference between the measured value and the true value of a physical quantity.\n* Relative error refers to the ratio of the absolute error to the true value of a physical quantity.\n* The law of significant figures states that the number of significant figures in a measurement is equal to the number of decimal places in the measurement.\n* The concept of precision and accuracy is essential in measurements as it helps us to minimize errors.\n* The SI system of units is the most widely used system of units in physics.\n* The method of measurement involves taking repeated measurements of a physical quantity to determine its magnitude and dimension.\n* Error can be classified into absolute and relative errors.\n* Absolute error refers to the difference between the measured value and the true value of a physical quantity.\n* Relative error refers to the ratio of the absolute error to the true value of a physical quantity.\n* The law of significant figures states that the number of significant figures in a measurement is equal to the number of decimal places in the measurement."
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:14:23.527+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [],
+        "exam_frequency": "medium",
+        "difficulty_score": 5,
+        "overall_difficulty": "medium"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:08:44.44+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Study tip 1",
+          "Study tip 2"
+        ],
+        "total_minutes": 120,
+        "revision_minutes": 20,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 30,
+        "sessions_recommended": 3,
+        "first_reading_minutes": 45,
+        "practice_questions_minutes": 25
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:56:31.488+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Content",
+            "notes": "",
+            "units": "",
+            "formula": "```json\n[\n  {\n    \"name\": \"Position-Time Graph\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"A position-time graph is a graphical representation of the position of an object as a function of time. It can be used to determine the velocity and acceleration of the object.\"\n  },\n  {\n    \"name\": \"Velocity-Time Graph\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"A velocity-time graph is a graphical representation of the velocity of an object as a function of time. It can be used to determine the acceleration and displacement of the object.\"\n  },\n  {\n    \"name\": \"Acceleration-Time Graph\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"An acceleration-time graph is a graphical representation of the acceleration of an object as a function of time. It can be used to determine the velocity and displacement of the object.\"\n  },\n  {\n    \"name\": \"Displacement-Time Graph\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"A displacement-time graph is a graphical representation of the displacement of an object as a function of time. It can be used to determine the velocity and position of the object.\"\n  },\n  {\n    \"name\": \"Uniformly Accelerated Motion (UAM) Equations\",\n    \"formula\": \"s = ut + (1/2)at^2\",\n    \"variables\": {\n      \"s\": \"Displacement\",\n      \"u\": \"Initial velocity\",\n      \"t\": \"Time\",\n      \"a\": \"Acceleration\"\n    },\n    \"units\": \"m, ms^-1, s, ms^-2\",\n    \"notes\": \"Used to find displacement when initial velocity and acceleration are given.\"\n  },\n  {\n    \"name\": \"Uniformly Accelerated Motion (UAM) Equations\",\n    \"formula\": \"v = u + at\",\n    \"variables\": {\n      \"v\": \"Final velocity\",\n      \"u\": \"Initial velocity\",\n      \"t\": \"Time\",\n      \"a\": \"Acceleration\"\n    },\n    \"units\": \"ms^-1, ms^-1, s, ms^-2\",\n    \"notes\": \"Used to find final velocity when initial velocity, time, and acceleration are given.\"\n  },\n  {\n    \"name\": \"Uniformly Accelerated Motion (UAM) Equations\",\n    \"formula\": \"v^2 = u^2 + 2as\",\n    \"variables\": {\n      \"v\": \"Final velocity\",\n      \"u\": \"Initial velocity\",\n      \"a\": \"Acceleration\",\n      \"s\": \"Displacement\"\n    },\n    \"units\": \"(ms^-1)^2, (ms^-1)^2, ms^-2, m\",\n    \"notes\": \"Used to find final velocity when initial velocity, acceleration, and displacement are given.\"\n  },\n  {\n    \"name\": \"Relative Motion\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"The relative motion of two or more objects is the motion of one object with respect to another object. It can be used to determine the motion of one object with respect to another object.\"\n  },\n  {\n    \"name\": \"Frames of Reference\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"A frame of reference is a coordinate system that is used to describe the motion of an object. It can be used to determine the motion of an object in different frames of reference.\"\n  },\n  {\n    \"name\": \"Error in Measurement\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"The error in measurement is the difference between the measured value and the true value. It can be used to determine the accuracy of a measurement.\"\n  },\n  {\n    \"name\": \"Uncertainty in Measurement\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"The uncertainty in measurement is the range of possible values that a measurement can have. It can be used to determine the precision of a measurement.\"\n  },\n  {\n    \"name\": \"Significant Figures\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"Significant figures are the digits in a measurement that are known to be reliable. They can be used to determine the accuracy of a measurement.\"\n  },\n  {\n    \"name\": \"Least Count\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"The least count is the smallest value that can be measured using a measuring instrument. It can be used to determine the precision of a measurement.\"\n  },\n  {\n    \"name\": \"Limit of Error\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"The limit of error is the maximum possible error in a measurement. It can be used to determine the accuracy of a measurement.\"\n  },\n  {\n    \"name\": \"Absolute Error\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"The absolute error is the difference between the measured value and the true value. It can be used to determine the accuracy of a measurement.\"\n  },\n  {\n    \"name\": \"Relative Error\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"The relative error is the ratio of the absolute error to the true value. It can be used to determine the accuracy of a measurement.\"\n  },\n  {\n    \"name\": \"Mean Error\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\":",
+            "variables": ""
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:14:23.731+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "Fundamental Quantities",
+            "importance": "Understanding fundamental quantities is crucial for understanding other physical quantities and their relationships.",
+            "explanation": "Fundamental quantities are the basic physical quantities that cannot be expressed in terms of other quantities. Examples include length, mass, time, and temperature.",
+            "related_topics": [
+              "Derived Quantities",
+              "SI Units"
+            ]
+          },
+          {
+            "concept": "Derived Quantities",
+            "importance": "Derived quantities help to describe physical properties and relationships in a more convenient and meaningful way.",
+            "explanation": "Derived quantities are physical quantities that can be expressed in terms of fundamental quantities. Examples include area, volume, and density.",
+            "related_topics": [
+              "Fundamental Quantities",
+              "SI Units"
+            ]
+          },
+          {
+            "concept": "SI Units",
+            "importance": "SI units provide a common language for scientists and engineers to communicate physical measurements and results.",
+            "explanation": "SI units are the International System of Units, which is a standardized system of units used to measure physical quantities. Examples include meters (length), kilograms (mass), and seconds (time).",
+            "related_topics": [
+              "Fundamental Quantities",
+              "Derived Quantities"
+            ]
+          },
+          {
+            "concept": "Precision and Accuracy",
+            "importance": "Understanding precision and accuracy is crucial for evaluating the reliability of measurements and results.",
+            "explanation": "Precision refers to the closeness of measurements to each other, while accuracy refers to the closeness of measurements to the true value. A measurement can be precise but not accurate, or accurate but not precise.",
+            "related_topics": [
+              "Error Calculation",
+              "Significant Figures"
+            ]
+          },
+          {
+            "concept": "Error Calculation",
+            "importance": "Error calculation helps to estimate the reliability of measurements and results, and to identify potential sources of error.",
+            "explanation": "Error calculation involves estimating the uncertainty in a measurement or result. It can be done using methods such as the method of significant figures or the method of propagation of uncertainty.",
+            "related_topics": [
+              "Precision and Accuracy",
+              "Significant Figures"
+            ]
+          },
+          {
+            "concept": "Significant Figures",
+            "importance": "Significant figures provide a simple and intuitive way to express the precision of a measurement, and are widely used in science and engineering.",
+            "explanation": "Significant figures are the digits in a measurement that are known to be reliable, and are used to express the precision of a measurement. The number of significant figures in a measurement can be used to estimate the uncertainty in the result.",
+            "related_topics": [
+              "Precision and Accuracy",
+              "Error Calculation"
+            ]
+          },
+          {
+            "concept": "Uncertainty in Measurement",
+            "importance": "Understanding uncertainty in measurement is crucial for evaluating the reliability of measurements and results, and for making informed decisions.",
+            "explanation": "Uncertainty in measurement refers to the limitations and uncertainties associated with measuring physical quantities. It can arise from various sources, including instrumental errors, human errors, and environmental factors.",
+            "related_topics": [
+              "Error Calculation",
+              "Precision and Accuracy"
+            ]
+          },
+          {
+            "concept": "Limitations of Measurement",
+            "importance": "Understanding limitations of measurement is crucial for selecting appropriate measurement techniques and instruments, and for evaluating the reliability of results.",
+            "explanation": "Limitations of measurement refer to the constraints and uncertainties associated with measuring physical quantities. Examples include instrumental limitations, human limitations, and environmental limitations.",
+            "related_topics": [
+              "Uncertainty in Measurement",
+              "Error Calculation"
+            ]
+          },
+          {
+            "concept": "Measurement of Physical Quantities",
+            "importance": "Measurement of physical quantities is essential for describing physical phenomena and making scientific and engineering decisions.",
+            "explanation": "Measurement of physical quantities involves assigning a numerical value to a physical quantity, using a standard unit of measurement. Examples include measuring length, mass, and time.",
+            "related_topics": [
+              "SI Units",
+              "Derived Quantities"
+            ]
+          },
+          {
+            "concept": "Standard Units and Conversions",
+            "importance": "Standard units and conversions provide a common language for scientists and engineers to communicate physical measurements and results.",
+            "explanation": "Standard units are the units of measurement that are widely accepted and used in science and engineering. Conversions between units involve expressing a quantity in a different unit, using conversion factors or formulas.",
+            "related_topics": [
+              "SI Units",
+              "Measurement of Physical Quantities"
+            ]
+          },
+          {
+            "concept": "Measurement of Time and Frequency",
+            "importance": "Measurement of time and frequency is essential for describing physical phenomena and making scientific and engineering decisions.",
+            "explanation": "Measurement of time and frequency involves assigning a numerical value to time and frequency, using standard units such as seconds and hertz. Examples include measuring the period of a pendulum and the frequency of a sound wave.",
+            "related_topics": [
+              "SI Units",
+              "Derived Quantities"
+            ]
+          },
+          {
+            "concept": "Measurement of Energy and Work",
+            "importance": "Measurement of energy and work is essential for describing physical phenomena and making scientific and engineering decisions.",
+            "explanation": "Measurement of energy and work involves assigning a numerical value to energy and work, using standard units such as joules and newtons. Examples include measuring the energy of a moving object and the work done by a force.",
+            "related_topics": [
+              "SI Units",
+              "Derived Quantities"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:14:21.895+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "Physical Quantities",
+            "example": "The physical quantity of length is measured in meters and can be expressed as 10 m.",
+            "definition": "Physical quantities are those that can be measured and are used to describe the physical world. Examples include length, mass, time, and temperature."
+          },
+          {
+            "term": "Fundamental Physical Quantities",
+            "example": "Length is a fundamental physical quantity that can be measured in meters.",
+            "definition": "Fundamental physical quantities are those that cannot be expressed in terms of other physical quantities. Examples include length, mass, time, and temperature."
+          },
+          {
+            "term": "Derived Physical Quantities",
+            "example": "Area is a derived physical quantity that can be expressed as length^2 (L^2).",
+            "definition": "Derived physical quantities are those that can be expressed in terms of fundamental physical quantities. Examples include area, volume, and density."
+          },
+          {
+            "term": "Measurement",
+            "example": "The measurement of length is done using a meter scale.",
+            "definition": "Measurement is the process of determining the magnitude of a physical quantity using a standard unit."
+          },
+          {
+            "term": "Unit",
+            "example": "The unit of length is meter (m).",
+            "definition": "A unit is a standard quantity used to express the magnitude of a physical quantity."
+          },
+          {
+            "term": "System of Units",
+            "example": "The SI system of units is widely used in science and engineering.",
+            "definition": "A system of units is a set of standard units used to express physical quantities in a consistent manner."
+          },
+          {
+            "term": "SI System of Units",
+            "example": "The SI system of units is used to express physical quantities such as length, mass, time, and temperature.",
+            "definition": "The SI system of units is a set of seven fundamental units used to express physical quantities. The seven fundamental units are meter (m), kilogram (kg), second (s), ampere (A), kelvin (K), mole (mol), and candela (cd)."
+          },
+          {
+            "term": "Prefixes in SI System",
+            "example": "The prefix kilo- is used to express a multiple of 1000, such as 1 km = 1000 m.",
+            "definition": "Prefixes in the SI system are used to express multiples or submultiples of fundamental units. Examples include kilo- (k), mega- (M), and milli- (m)."
+          },
+          {
+            "term": "Significant Figures",
+            "example": "A measurement of 10.2 m has three significant figures.",
+            "definition": "Significant figures are the digits in a measurement that are known to be reliable and certain. The number of significant figures in a measurement depends on the accuracy of the measurement."
+          },
+          {
+            "term": "Error in Measurement",
+            "example": "The error in measurement of length can be expressed as the absolute error (ΔL) or relative error (ΔL/L).",
+            "definition": "Error in measurement is the difference between the measured value and the true value. It can be expressed as the absolute error or relative error."
+          },
+          {
+            "term": "Absolute Error",
+            "example": "The absolute error in measurement of length is ΔL = L_true - L_measured.",
+            "definition": "Absolute error is the difference between the measured value and the true value."
+          },
+          {
+            "term": "Relative Error",
+            "example": "The relative error in measurement of length is ΔL/L = (L_true - L_measured) / L_true.",
+            "definition": "Relative error is the ratio of the absolute error to the true value."
+          },
+          {
+            "term": "Limitations of Measurement",
+            "example": "The limitation of a meter scale is that it can only measure lengths up to 2 m.",
+            "definition": "Limitations of measurement refer to the constraints or restrictions on the accuracy of measurement due to the limitations of the measurement instrument or technique."
+          },
+          {
+            "term": "Uncertainty in Measurement",
+            "example": "The uncertainty in measurement of length can be expressed as ΔL ± δL.",
+            "definition": "Uncertainty in measurement is the range of values within which the true value is likely to lie."
+          },
+          {
+            "term": "Least Count",
+            "example": "The least count of a meter scale is 1 mm.",
+            "definition": "Least count is the smallest value that can be measured using a measurement instrument."
+          },
+          {
+            "term": "Resolution of Instrument",
+            "example": "The resolution of a digital multimeter is 1 mΩ.",
+            "definition": "Resolution of instrument is the smallest value that can be measured using a measurement instrument."
+          },
+          {
+            "term": "Accuracy of Measurement",
+            "example": "The accuracy of measurement of length is ± 1 mm.",
+            "definition": "Accuracy of measurement refers to how close the measured value is to the true value."
+          },
+          {
+            "term": "Precision of Measurement",
+            "example": "The precision of measurement of length is ± 0.5 mm.",
+            "definition": "Precision of measurement refers to the consistency of repeated measurements."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:08:44.55+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Apply the concept of significant figures to calculate numerical values.",
+            "Use the concept of least count to determine the accuracy of a measurement.",
+            "Solve problems using dimensional analysis."
+          ],
+          "analyze": [
+            "Analyze the limitations of measuring instruments and their impact on measurement accuracy.",
+            "Compare the advantages and disadvantages of different methods of measurement.",
+            "Evaluate the importance of measurement in scientific inquiry."
+          ],
+          "remember": [
+            "Recall the fundamental units of physical quantities and their symbols.",
+            "List the dimensions of various physical quantities.",
+            "Identify the fundamental and derived units in physics."
+          ],
+          "understand": [
+            "Explain the concept of significant figures and rounding off numbers.",
+            "Describe the concept of least count and its importance in measurement.",
+            "Understand the concept of dimensional analysis and its applications."
+          ]
+        },
+        "ncert_objectives": [
+          "Explain the fundamental principles of measurement and the concept of units.",
+          "Discuss the importance of standardization in measurement and the role of international system of units (SI).",
+          "Solve problems involving the calculation of dimensions and units of physical quantities."
+        ],
+        "board_exam_objectives": [
+          "Explain the concept of significant figures and how to handle numbers in calculations.",
+          "Describe the importance of least count in measurement and its application.",
+          "Solve problems involving the use of dimensional analysis and measurement."
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-26T08:04:52.189+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "A physical quantity is defined as the product of a fundamental quantity and a dimensionless quantity. Explain with an example. Also, give one fundamental quantity and one dimensionless quantity that can be used to define the physical quantity 'speed'.",
+            "marks": 5,
+            "topic": "Physical Quantities and Their Measurement",
+            "answer": "A physical quantity is defined as the product of a fundamental quantity and a dimensionless quantity. For instance, 'work done' is a physical quantity that can be defined as the product of force and displacement. In this case, 'force' is a fundamental quantity and 'displacement' is a dimensionless quantity. However, 'displacement' is not dimensionless. It is actually a fundamental quantity with unit of length. Therefore, a correct example would be 'work done' defined as the product of 'force' and 'cosine of angle between force and displacement'. Speed is a physical quantity that can be defined as the product of a fundamental quantity 'distance' and a dimensionless quantity 'cosine of angle between displacement and velocity' or simply 'cosine of angle between displacement and velocity' as distance and displacement are one and the same. Alternatively, 'speed' can be defined as the product of a fundamental quantity 'displacement' and a dimensionless quantity 'time taken'.",
+            "marking_scheme": [
+              "Explain the concept of a physical quantity as the product of a fundamental quantity and a dimensionless quantity (1 mark)",
+              "Provide one example of a physical quantity defined as the product of a fundamental quantity and a dimensionless quantity (1 mark)",
+              "Give one fundamental quantity and one dimensionless quantity that can be used to define the physical quantity 'speed' (2 marks)",
+              "Correctness of answer (1 mark)"
+            ]
+          },
+          {
+            "q": "Derive the relation between the density of a substance and its specific gravity. Also, derive the relation between the density of a substance and its relative density.",
+            "marks": 5,
+            "topic": "Densities",
+            "answer": "To derive the relation between the density of a substance and its specific gravity, we consider the following: Specific gravity is the ratio of the density of a substance to the density of water at a particular temperature and pressure. Therefore, specific gravity = density of substance/density of water. Similarly, to derive the relation between the density of a substance and its relative density, we consider the following: Relative density is the ratio of the density of a substance to the density of water at a particular temperature and pressure. Therefore, relative density = density of substance/density of water. Hence, specific gravity = relative density = density of substance/density of water.",
+            "marking_scheme": [
+              "Derive the relation between the density of a substance and its specific gravity (2 marks)",
+              "Derive the relation between the density of a substance and its relative density (2 marks)",
+              "Correctness of answer (1 mark)"
+            ]
+          },
+          {
+            "q": "A student measures the length of a room to be 8.0 m. If the error in measurement is ±0.2 m, what is the absolute error in measurement and percentage error in measurement?",
+            "marks": 5,
+            "topic": "Errors in Measurement",
+            "answer": "To find the absolute error in measurement, we consider the following: The absolute error in measurement is the difference between the maximum and minimum limits of error. In this case, the maximum and minimum limits of error are 8.0 + 0.2 = 8.2 m and 8.0 - 0.2 = 7.8 m respectively. Therefore, absolute error in measurement = 8.2 - 7.8 = 0.4 m. To find the percentage error in measurement, we consider the following: The percentage error in measurement is the ratio of the absolute error in measurement to the measured value, multiplied by 100. In this case, percentage error in measurement = (0.4/8.0) x 100 = 5%. Therefore, the absolute error in measurement is 0.4 m and the percentage error in measurement is 5%.",
+            "marking_scheme": [
+              "Calculate the absolute error in measurement (2 marks)",
+              "Calculate the percentage error in measurement (2 marks)",
+              "Correctness of answer (1 mark)"
+            ]
+          },
+          {
+            "q": "Explain the concept of significant figures with an example. Also, explain the rules for counting significant figures in a measured quantity.",
+            "marks": 5,
+            "topic": "Significant Figures",
+            "answer": "Significant figures are the digits in a measured quantity that are known to be reliable. The concept of significant figures is used to express the accuracy of a measured quantity. For instance, consider the measurement of the length of a room as 8.0 m. In this case, the digits 8 and 0 are the significant figures because they are known to be reliable. The digit 0 after the decimal point is not a significant figure because it is assumed to be a placeholder. The rules for counting significant figures in a measured quantity are as follows: Non-zero digits are always significant figures. Zeros between two non-zero digits are significant figures. Zeros at the end of a number are significant figures if the number contains a decimal point. Zeros at the end of a number without a decimal point are not significant figures. Digits after the decimal point are significant figures. Trailing zeros in a number without a decimal point are not significant figures.",
+            "marking_scheme": [
+              "Explain the concept of significant figures with an example (2 marks)",
+              "Explain the rules for counting significant figures in a measured quantity (2 marks)",
+              "Correctness of answer (1 mark)"
+            ]
+          },
+          {
+            "q": "A student measures the mass of an object to be 7.35 g. If the error in measurement is ±0.03 g, what is the absolute error in measurement and percentage error in measurement?",
+            "marks": 5,
+            "topic": "Errors in Measurement",
+            "answer": "To find the absolute error in measurement, we consider the following: The absolute error in measurement is the difference between the maximum and minimum limits of error. In this case, the maximum and minimum limits of error are 7.35 + 0.03 = 7.38 g and 7.35 - 0.03 = 7.32 g respectively. Therefore, absolute error in measurement = 7.38 - 7.32 = 0.06 g. To find the percentage error in measurement, we consider the following: The percentage error in measurement is the ratio of the absolute error in measurement to the measured value, multiplied by 100. In this case, percentage error in measurement = (0.06/7.35) x 100 = 0.816%. Therefore, the absolute error in measurement is 0.06 g and the percentage error in measurement is 0.816%.",
+            "marking_scheme": [
+              "Calculate the absolute error in measurement (2 marks)",
+              "Calculate the percentage error in measurement (2 marks)",
+              "Correctness of answer (1 mark)"
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:10:02.606+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 17,
+        "questions": [
+          {
+            "q": "What is the fundamental unit of length in SI?",
+            "ans": "A",
+            "opts": [
+              "(A) Meter",
+              "(B) Kilogram",
+              "(C) Second",
+              "(D) Ampere"
+            ],
+            "topic": "SI Units",
+            "difficulty": "easy",
+            "explanation": "The fundamental unit of length is meter (m), which is used as a basis for all other length measurements."
+          },
+          {
+            "q": "Which of the following quantities is dimensionless?",
+            "ans": "D",
+            "opts": [
+              "(A) Velocity",
+              "(B) Acceleration",
+              "(C) Force",
+              "(D) Relative density"
+            ],
+            "topic": "Dimensions",
+            "difficulty": "easy",
+            "explanation": "Relative density is a dimensionless quantity, as it is the ratio of two densities."
+          },
+          {
+            "q": "What is the value of the gravitational acceleration on the surface of the Earth?",
+            "ans": "A",
+            "opts": [
+              "(A) 9.8 m/s^2",
+              "(B) 10 m/s^2",
+              "(C) 9.5 m/s^2",
+              "(D) 11 m/s^2"
+            ],
+            "topic": "Standard Values",
+            "difficulty": "easy",
+            "explanation": "The standard value of the gravitational acceleration on the surface of the Earth is 9.8 m/s^2."
+          },
+          {
+            "q": "What is the difference between the units of force and mass?",
+            "ans": "B",
+            "opts": [
+              "(A) Force is measured in kg, mass in N",
+              "(B) Force is measured in N, mass in kg",
+              "(C) Force is measured in kg, mass in N",
+              "(D) Force is measured in kg/m, mass in N"
+            ],
+            "topic": "Force and Mass",
+            "difficulty": "medium",
+            "explanation": "Force is measured in Newtons (N), while mass is measured in kilograms (kg)."
+          },
+          {
+            "q": "Which of the following is a fundamental unit of time in SI?",
+            "ans": "A",
+            "opts": [
+              "(A) Second",
+              "(B) Minute",
+              "(C) Hour",
+              "(D) Day"
+            ],
+            "topic": "SI Units",
+            "difficulty": "medium",
+            "explanation": "The fundamental unit of time in SI is the second (s)."
+          },
+          {
+            "q": "What is the value of the Avogadro's number?",
+            "ans": "C",
+            "opts": [
+              "(A) 6.02 x 10^23",
+              "(B) 6.02 x 10^20",
+              "(C) 6.022 x 10^23",
+              "(D) 6.022 x 10^20"
+            ],
+            "topic": "Fundamental Constants",
+            "difficulty": "medium",
+            "explanation": "The Avogadro's number is a fundamental constant in physics, representing the number of particles in one mole of a substance."
+          },
+          {
+            "q": "What is the unit of electric current in SI?",
+            "ans": "A",
+            "opts": [
+              "(A) Ampere",
+              "(B) Volt",
+              "(C) Ohm",
+              "(D) Farad"
+            ],
+            "topic": "Electric Current",
+            "difficulty": "medium",
+            "explanation": "The unit of electric current in SI is the ampere (A)."
+          },
+          {
+            "q": "Which of the following quantities is a derived unit?",
+            "ans": "D",
+            "opts": [
+              "(A) Meter",
+              "(B) Kilogram",
+              "(C) Second",
+              "(D) Joule"
+            ],
+            "topic": "Derived Units",
+            "difficulty": "medium",
+            "explanation": "Joule is a derived unit, as it is the product of other fundamental units (meter, kilogram, and second)."
+          },
+          {
+            "q": "What is the value of the speed of light in vacuum?",
+            "ans": "A",
+            "opts": [
+              "(A) 3 x 10^8 m/s",
+              "(B) 2 x 10^8 m/s",
+              "(C) 1 x 10^8 m/s",
+              "(D) 2.5 x 10^8 m/s"
+            ],
+            "topic": "Fundamental Constants",
+            "difficulty": "hard",
+            "explanation": "The speed of light in vacuum is a fundamental constant in physics, representing the maximum speed at which all energy, matter, and information in the universe can travel."
+          },
+          {
+            "q": "What is the unit of temperature in SI?",
+            "ans": "A",
+            "opts": [
+              "(A) Kelvin",
+              "(B) Celsius",
+              "(C) Fahrenheit",
+              "(D) Rankine"
+            ],
+            "topic": "Temperature",
+            "difficulty": "hard",
+            "explanation": "The unit of temperature in SI is the kelvin (K)."
+          },
+          {
+            "q": "Which of the following is a dimensionless quantity?",
+            "ans": "D",
+            "opts": [
+              "(A) Velocity",
+              "(B) Acceleration",
+              "(C) Force",
+              "(D) Planck's constant"
+            ],
+            "topic": "Dimensions",
+            "difficulty": "hard",
+            "explanation": "Planck's constant is a dimensionless quantity, as it is a fundamental constant in physics representing the ratio of energy to frequency."
+          },
+          {
+            "q": "What is the value of the Planck's constant?",
+            "ans": "A",
+            "opts": [
+              "(A) 6.626 x 10^-34 J s",
+              "(B) 6.626 x 10^-33 J s",
+              "(C) 6.626 x 10^-35 J s",
+              "(D) 6.626 x 10^-36 J s"
+            ],
+            "topic": "Fundamental Constants",
+            "difficulty": "hard",
+            "explanation": "The Planck's constant is a fundamental constant in physics, representing the ratio of energy to frequency."
+          },
+          {
+            "q": "What is the difference between the units of volume and area?",
+            "ans": "A",
+            "opts": [
+              "(A) Volume is measured in m^3, area in m^2",
+              "(B) Volume is measured in m^2, area in m^3",
+              "(C) Volume is measured in m, area in m^2",
+              "(D) Volume is measured in m^2, area in m"
+            ],
+            "topic": "Units of Volume and Area",
+            "difficulty": "hard",
+            "explanation": "Volume is measured in cubic meters (m^3), while area is measured in square meters (m^2)."
+          },
+          {
+            "q": "Which of the following is a fundamental unit of mass in SI?",
+            "ans": "A",
+            "opts": [
+              "(A) Kilogram",
+              "(B) Gram",
+              "(C) Milligram",
+              "(D) Microgram"
+            ],
+            "topic": "SI Units",
+            "difficulty": "hard",
+            "explanation": "The fundamental unit of mass in SI is the kilogram (kg)."
+          },
+          {
+            "q": "What is the unit of energy in SI?",
+            "ans": "A",
+            "opts": [
+              "(A) Joule",
+              "(B) Watt",
+              "(C) Ampere",
+              "(D) Farad"
+            ],
+            "topic": "Energy",
+            "difficulty": "hard",
+            "explanation": "The unit of energy in SI is the joule (J)."
+          },
+          {
+            "q": "Which of the following quantities is a derived unit of energy?",
+            "ans": "D",
+            "opts": [
+              "(A) Joule",
+              "(B) Calorie",
+              "(C) Kilowatt-hour",
+              "(D) All of the above"
+            ],
+            "topic": "Derived Units of Energy",
+            "difficulty": "hard",
+            "explanation": "All of the above options are derived units of energy, as they are related to other fundamental units."
+          },
+          {
+            "q": "What is the value of the gravitational constant?",
+            "ans": "A",
+            "opts": [
+              "(A) 6.674 x 10^-11 N m^2 kg^-2",
+              "(B) 6.674 x 10^-12 N m^2 kg^-2",
+              "(C) 6.674 x 10^-13 N m^2 kg^-2",
+              "(D) 6.674 x 10^-14 N m^2 kg^-2"
+            ],
+            "topic": "Fundamental Constants",
+            "difficulty": "hard",
+            "explanation": "The gravitational constant is a fundamental constant in physics, representing the strength of the gravitational force."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:14:25.876+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Units and Measurements\n\n## Chapter at a Glance\nThis chapter focuses on the fundamental concept of physical quantities and their measurement. The chapter begins with the definition of physical quantities, their classification, and the process of measurement. The concept of units, dimensions, and the system of units is also discussed in detail. The chapter emphasizes the importance of significant figures and the rules for counting them. The chapter concludes with the introduction of the concept of errors in measurement and the methods of expressing uncertainty in measurement.\n\n## Section-wise Summary\n\n### 1. Physical Quantities and their Measurement\n\n* Physical quantities are defined as those which can be quantitatively measured.\n* They are classified into fundamental and derived quantities.\n* Fundamental quantities are those that cannot be defined in terms of other quantities, e.g., length, mass, time, etc.\n* Derived quantities are those that can be expressed in terms of fundamental quantities, e.g., speed, force, etc.\n* Measurement involves assigning a numerical value to a physical quantity.\n\n### 2. System of Units\n\n* A system of units is a set of units for fundamental quantities.\n* The International System of Units (SI) is the modern system of units.\n* The SI system consists of seven fundamental units: meter (m), kilogram (kg), second (s), kelvin (K), ampere (A), mole (mol), and candela (cd).\n* Derived units are formed by combining fundamental units using the laws of physics.\n\n### 3. Dimensional Analysis\n\n* Dimensional analysis is a method of checking the correctness of a physical equation.\n* It involves checking if the dimensions of the left-hand side of the equation match the dimensions of the right-hand side.\n* The dimensions of a physical quantity are expressed as a product of the fundamental units.\n\n### 4. Unit Conversion\n\n* Unit conversion involves converting a physical quantity from one unit to another.\n* It is done using conversion factors, which are ratios of two units.\n* Unit conversion can be done using the concept of dimensional analysis.\n\n### 5. Significant Figures\n\n* Significant figures are the digits in a measurement that are known to be reliable.\n* The rules for counting significant figures are:\n\t+ All non-zero digits are significant.\n\t+ Zeros between two non-zero digits are significant.\n\t+ Zeros at the end of a number are significant only if the number contains a decimal point.\n* The number of significant figures in a measurement determines its precision.\n\n### 6. Errors in Measurement\n\n* Errors in measurement are uncertainties in the measured value.\n* There are two types of errors: random and systematic.\n* Random errors occur due to chance and are unpredictable.\n* Systematic errors occur due to a flaw in the measurement process and are predictable.\n\n## Important NCERT Exercises Insight\n\n* Key concepts tested in NCERT exercises include:\n\t+ Definition of physical quantities and their classification.\n\t+ Concept of units, dimensions, and the system of units.\n\t+ Dimensional analysis and unit conversion.\n\t+ Significant figures and rules for counting them.\n\t+ Errors in measurement and methods of expressing uncertainty.\n* Key concepts to remember:\n\t+ Physical quantities are those which can be quantitatively measured.\n\t+ Fundamental quantities are those that cannot be defined in terms of other quantities.\n\t+ Derived quantities are those that can be expressed in terms of fundamental quantities.\n\t+ Dimensional analysis is a method of checking the correctness of a physical equation.\n\n## NCERT Exemplar Focus\n\n* Additional topics covered in NCERT Exemplar for this chapter include:\n\t+ Conversion of units using different methods.\n\t+ Determination of the number of significant figures in a measurement.\n\t+ Calculation of errors in measurement using different methods.\n\n## Board Exam Relevance\n\n* Marks weightage: 10-15 marks out of 100\n* Frequently asked topics:\n\t+ Definition of physical quantities and their classification.\n\t+ Concept of units, dimensions, and the system of units.\n\t+ Dimensional analysis and unit conversion.\n\t+ Significant figures and rules for counting them.\n\t+ Errors in measurement and methods of expressing uncertainty.\n* Tips for exam:\n\t+ Practice numerical problems to understand the application of concepts.\n\t+ Focus on the rules for counting significant figures and errors in measurement.\n\t+ Review the concept of dimensional analysis and unit conversion."
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:17:00.405+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "The value of g at the equator is less than its value at the poles due to",
+            "type": "True/False",
+            "marks": 1,
+            "answer": "True",
+            "difficulty": "medium",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "The unit of a physical quantity is expressed as",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "[Symbol of quantity] = [Unit]",
+            "difficulty": "easy",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "A physical quantity is expressed in terms of fundamental units as",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "[Physical quantity] = [Numeral] x [Fundamental unit]^x",
+            "difficulty": "easy",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "The percentage error in the measurement of length is",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "{(Δl/l) x 100}%",
+            "difficulty": "easy",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "The dimensions of length are",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "[M]",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "A physical quantity is expressed as",
+            "type": "Long Answer",
+            "marks": 3,
+            "answer": "[Physical quantity] = [Symbol of quantity] x [SI unit]",
+            "difficulty": "medium",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "The dimensions of time are",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "[T]",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "The formula of speed is",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "[Speed] = [Distance] / [Time]",
+            "difficulty": "easy",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "The value of acceleration due to gravity on the surface of the moon is",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "approximately 1.62 ms^(-2)",
+            "difficulty": "medium",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "Express the physical quantity 'work done' in terms of fundamental units.",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "[Work done] = [Numeral] x [Joule]",
+            "difficulty": "medium",
+            "year_pattern": "2019-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:19:16.096+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "Define the terms 'accuracy' and 'precision'.",
+            "marks": 2,
+            "topic": "Measurement",
+            "answer": "Accuracy refers to the closeness of a measured value to its true value. Precision refers to the closeness of different measurements of the same quantity.",
+            "key_points": [
+              "Accuracy",
+              "Precision",
+              "Uncertainty"
+            ]
+          },
+          {
+            "q": "What are the two main types of physical quantities?",
+            "marks": 2,
+            "topic": "Classification of Physical Quantities",
+            "answer": "The two main types of physical quantities are scalar and vector quantities. Scalar quantities have only magnitude, whereas vector quantities have both magnitude and direction.",
+            "key_points": [
+              "Scalar quantity",
+              "Vector quantity"
+            ]
+          },
+          {
+            "q": "Explain the concept of significant figures.",
+            "marks": 3,
+            "topic": "Significant Figures and Errors",
+            "answer": "Significant figures are the digits in a measured or calculated value that are known to be reliable and certain. They are used to express the precision of a measurement or calculation. The rules for counting significant figures include leading zeros, trailing zeros, and non-significant figures.",
+            "key_points": [
+              "Leading zeros",
+              "Trailing zeros",
+              "Non-significant figures"
+            ]
+          },
+          {
+            "q": "Distinguish between absolute and relative error.",
+            "marks": 2,
+            "topic": "Errors and Uncertainties",
+            "answer": "Absolute error is the difference between the measured value and the true value of a quantity. Relative error is the ratio of the absolute error to the true value.",
+            "key_points": [
+              "Absolute error",
+              "Relative error"
+            ]
+          },
+          {
+            "q": "What is the difference between the 'SI unit' and 'c.g.s. unit'?",
+            "marks": 2,
+            "topic": "SI Units",
+            "answer": "The SI unit is a system of units based on the International System of Units, whereas the c.g.s. unit is a system of units based on the centimeter-gram-second system. The SI system is widely used and preferred over the c.g.s. system.",
+            "key_points": [
+              "SI unit",
+              "c.g.s. unit"
+            ]
+          },
+          {
+            "q": "Explain the concept of dimensional analysis.",
+            "marks": 3,
+            "topic": "Dimensional Analysis",
+            "answer": "Dimensional analysis is a method of solving problems by canceling out units. It involves equating the units on both sides of an equation and canceling out the units that appear on both sides. This method is useful for checking the correctness of a calculation.",
+            "key_points": [
+              "Dimensional analysis",
+              "Unit cancellation"
+            ]
+          },
+          {
+            "q": "Define the term 'error' in the context of measurement.",
+            "marks": 2,
+            "topic": "Errors and Uncertainties",
+            "answer": "Error in measurement refers to the difference between the measured value and the true value of a quantity. It can be expressed as absolute error or relative error.",
+            "key_points": [
+              "Error",
+              "Absolute error",
+              "Relative error"
+            ]
+          },
+          {
+            "q": "What is the difference between the 'standard unit' and 'derived unit'?",
+            "marks": 2,
+            "topic": "SI Units",
+            "answer": "A standard unit is a unit that cannot be expressed in terms of other units, whereas a derived unit is a unit that can be expressed in terms of other units.",
+            "key_points": [
+              "Standard unit",
+              "Derived unit"
+            ]
+          },
+          {
+            "q": "Explain the concept of least count of an instrument.",
+            "marks": 3,
+            "topic": "Measurement and Errors",
+            "answer": "The least count of an instrument is the smallest change in the quantity being measured that can be detected by the instrument. It is the smallest value that can be read on the instrument's scale.",
+            "key_points": [
+              "Least count",
+              "Instrumental error"
+            ]
+          },
+          {
+            "q": "Distinguish between 'accuracy' and 'precision' in the context of measurement.",
+            "marks": 2,
+            "topic": "Measurement",
+            "answer": "Accuracy refers to how close the measured value is to the true value, whereas precision refers to how close the measured values are to each other.",
+            "key_points": [
+              "Accuracy",
+              "Precision"
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:14:22.914+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Units and Measurements — Quick Revision Notes\n\n## ⚡ Key Points\n* The concept of measurement is the comparison of a physical quantity with a standard quantity of the same kind.\n* Units of measurement are used to express physical quantities.\n* Fundamental units are the basic units of measurement in the International System of Units (SI).\n* Derived units are obtained by combining the fundamental units.\n* Dimensional analysis is used to check the correctness of a physical equation.\n* The dimensions of a physical quantity are expressed in terms of the fundamental units.\n* The dimensions of a derived unit are obtained by combining the dimensions of the fundamental units.\n* The dimensions of a physical quantity are used to determine the type of physical quantity it represents.\n* The concept of precision refers to the closeness of two or more measurements of the same quantity.\n* The concept of accuracy refers to the closeness of a measurement to the true value of the quantity.\n* The concept of significant figures refers to the number of digits in a measurement that are known to be reliable.\n* The concept of standard deviation refers to the measure of the spread of a set of measurements.\n* The concept of error refers to the difference between a measured value and the true value of a quantity.\n* Uncertainty in measurement is the range of values within which the true value of a quantity is likely to lie.\n* Significant figures are used to express the precision of a measurement.\n* Rounding off of measurements is done to simplify the writing of numbers.\n* The rules for significant figures in arithmetic operations are used to ensure that the result of an operation is expressed with the correct number of significant figures.\n* The concept of scientific notation is used to express numbers in a compact form.\n* The concept of logarithms is used to simplify complex calculations.\n* The concept of exponents is used to express repeated multiplication.\n* The concept of percentage error is used to express the error in a measurement as a percentage of the true value.\n\n## 🔑 Must-Know Definitions\n* **Fundamental Unit**: A basic unit of measurement that cannot be expressed in terms of other units.\n* **Derived Unit**: A unit of measurement that is obtained by combining fundamental units.\n* **Dimensional Analysis**: A method used to check the correctness of a physical equation by comparing the dimensions of the quantities on both sides of the equation.\n* **Precision**: The closeness of two or more measurements of the same quantity.\n* **Accuracy**: The closeness of a measurement to the true value of the quantity.\n* **Significant Figures**: The number of digits in a measurement that are known to be reliable.\n* **Standard Deviation**: A measure of the spread of a set of measurements.\n\n## 📊 Important Formulas\n* **Dimensional Formula**: [M] = mass, [L] = length, [T] = time, [I] = electric current\n* **SI Prefixes**:\n + Giga (G): 10^9\n + Mega (M): 10^6\n + Kilo (k): 10^3\n + Centi (c): 10^-2\n + Milli (m): 10^-3\n + Micro (μ): 10^-6\n + Nano (n): 10^-9\n* **Rules for Significant Figures in Arithmetic Operations**:\n + Addition and subtraction: the result has the same number of decimal places as the measurement with the fewest decimal places.\n + Multiplication and division: the result has the same number of significant figures as the measurement with the fewest significant figures.\n\n## ⭐ Exam Tips\n* Make sure to memorize the fundamental units and their dimensions.\n* Understand the concept of dimensional analysis and how to apply it to check the correctness of physical equations.\n* Practice converting between different units of measurement.\n* Understand the concept of significant figures and how to apply the rules for significant figures in arithmetic operations.\n* Make sure to read the questions carefully and understand what is being asked before attempting to solve it."
+      }
+    }
+  }
+}

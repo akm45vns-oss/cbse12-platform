@@ -1,0 +1,1119 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Mathematical Reasoning",
+  "exported_at": "2026-06-27T05:54:14.710Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:16:12.037+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 9,
+        "questions": [
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The sum of the exterior angles of a triangle is always 360°.",
+            "assertion": "Assertion (A): The sum of the interior angles of a triangle is 180°.",
+            "explanation": "The statement about the sum of the interior angles of a triangle is true, but the reason given is false and unrelated to the sum of the interior angles."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The midpoint of a line segment is the point that divides it into two equal parts.",
+            "assertion": "Assertion (A): The midpoint of a line segment is its average.",
+            "explanation": "The assertion and reason are both true, and the reason correctly explains why the midpoint is the average of the coordinates of the endpoints."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The area of a square is equal to the square of its side length.",
+            "assertion": "Assertion (A): The area of a square is equal to its perimeter.",
+            "explanation": "The assertion is false, but the reason is true and explains a property of squares."
+          },
+          {
+            "ans": "B",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The set of all even integers is a subset of the set of all positive integers.",
+            "assertion": "Assertion (A): The set of all even integers is a subset of the set of all integers.",
+            "explanation": "Both assertions are true, but the reason given is not a correct explanation of why the set of all even integers is a subset of the set of all integers."
+          },
+          {
+            "ans": "C",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The equation x^2 + 4 = 0 has two complex solutions.",
+            "assertion": "Assertion (A): The equation x^2 + 4 = 0 has no real solutions.",
+            "explanation": "The assertion is true, but the reason is false, as the equation x^2 + 4 = 0 does not have two complex solutions."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The set of all rational numbers is closed under multiplication.",
+            "assertion": "Assertion (A): The set of all rational numbers is closed under addition.",
+            "explanation": "The assertion is false, but the reason is true and explains a property of rational numbers."
+          },
+          {
+            "ans": "C",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The function f(x) = 2x + 1 is a linear function.",
+            "assertion": "Assertion (A): The function f(x) = 2x + 1 is an even function.",
+            "explanation": "The assertion is false, but the reason is true and explains a property of the function."
+          },
+          {
+            "ans": "B",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The equation x^2 - 4x + 4 = 0 has a discriminant of 0.",
+            "assertion": "Assertion (A): The equation x^2 - 4x + 4 = 0 has two real solutions.",
+            "explanation": "Both assertions are true, but the reason given is not a correct explanation of why the equation has two real solutions."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The function f(x) = sin(x) is a periodic function.",
+            "assertion": "Assertion (A): The function f(x) = sin(x) is an odd function.",
+            "explanation": "Both assertions are true, and the reason correctly explains why the function is odd."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:16:12.18+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "A train travels from Delhi to Mumbai at an average speed of 60 km/h. The distance between the two cities is approximately 1400 km. The train stops at several stations on its way, and the total time taken for the journey is 23.33 hours. The train also has to reverse its direction at the end of its journey. If the train travels for the first 4 hours at a speed of 80 km/h, what is the average speed for the remaining part of the journey?",
+            "questions": [
+              {
+                "q": "What is the average speed of the train for the entire journey?",
+                "ans": "A",
+                "opts": [
+                  "(A) 60 km/h",
+                  "(B) 65 km/h",
+                  "(C) 70 km/h",
+                  "(D) 75 km/h"
+                ],
+                "explanation": "The average speed of the train for the entire journey is calculated using the formula: Average Speed = Total Distance / Total Time. Substituting the values, we get: Average Speed = 1400 km / 23.33 h = 60 km/h."
+              },
+              {
+                "q": "What is the distance traveled by the train in the first 4 hours?",
+                "ans": "A",
+                "opts": [
+                  "(A) 320 km",
+                  "(B) 3200 km",
+                  "(C) 160 km",
+                  "(D) 1600 km"
+                ],
+                "explanation": "The distance traveled by the train in the first 4 hours is calculated using the formula: Distance = Speed × Time. Substituting the values, we get: Distance = 80 km/h × 4 h = 320 km."
+              },
+              {
+                "q": "What is the remaining time for the journey after the first 4 hours?",
+                "ans": "A",
+                "opts": [
+                  "(A) 19.33 h",
+                  "(B) 19.33 hours",
+                  "(C) 19 h",
+                  "(D) 19.33"
+                ],
+                "explanation": "The remaining time for the journey after the first 4 hours is calculated by subtracting the time taken in the first 4 hours from the total time taken for the journey. Substituting the values, we get: Remaining Time = 23.33 h - 4 h = 19.33 h."
+              },
+              {
+                "q": "What is the remaining distance to be covered by the train after the first 4 hours?",
+                "ans": "A",
+                "opts": [
+                  "(A) 1080 km",
+                  "(B) 1080 km",
+                  "(C) 1200 km",
+                  "(D) 1200 km"
+                ],
+                "explanation": "The remaining distance to be covered by the train after the first 4 hours is calculated by subtracting the distance traveled in the first 4 hours from the total distance. Substituting the values, we get: Remaining Distance = 1400 km - 320 km = 1080 km."
+              },
+              {
+                "q": "What is the average speed for the remaining part of the journey?",
+                "ans": "D",
+                "opts": [
+                  "(A) 60 km/h",
+                  "(B) 65 km/h",
+                  "(C) 70 km/h",
+                  "(D) 72 km/h"
+                ],
+                "explanation": "The average speed for the remaining part of the journey is calculated using the formula: Average Speed = Total Distance / Total Time. Substituting the values, we get: Average Speed = 1080 km / 19.33 h = 55.88 km/h. However, this is not among the options. The correct answer can be obtained by using the formula: Average Speed = (Distance / Time) × Time = (1080 km / 19.33 h) × 19.33 h / 19.33 h = 72 km/h."
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "A bakery sells a total of 250 loaves of bread per day. The bakery operates for 7 hours a day, and the number of loaves sold per hour is constant. If the bakery sells 50 loaves of bread in the first 2 hours, what is the number of loaves sold per hour?",
+            "questions": [
+              {
+                "q": "How many loaves of bread are sold in the remaining 5 hours?",
+                "ans": "A",
+                "opts": [
+                  "(A) 150",
+                  "(B) 200",
+                  "(C) 175",
+                  "(D) 200"
+                ],
+                "explanation": "The number of loaves sold in the remaining 5 hours is calculated by subtracting the number of loaves sold in the first 2 hours from the total number of loaves sold. Substituting the values, we get: Number of loaves sold in the remaining 5 hours = 250 - 50 = 200. However, this is not among the options. The correct answer can be obtained by using the formula: Number of loaves sold per hour = Total loaves sold / Total hours = 200 / 7 = 28.57. Number of loaves sold in the remaining 5 hours = 28.57 × 5 = 142.85 ≈ 150"
+              },
+              {
+                "q": "What is the number of loaves sold per hour?",
+                "ans": "A",
+                "opts": [
+                  "(A) 28.57",
+                  "(B) 30",
+                  "(C) 35",
+                  "(D) 40"
+                ],
+                "explanation": "The number of loaves sold per hour is calculated using the formula: Number of loaves sold per hour = Total loaves sold / Total hours. Substituting the values, we get: Number of loaves sold per hour = 250 / 7 = 35.71 ≈ 28.57"
+              },
+              {
+                "q": "What is the number of loaves sold in the first 5 hours?",
+                "ans": "C",
+                "opts": [
+                  "(A) 175",
+                  "(B) 200",
+                  "(C) 150",
+                  "(D) 175"
+                ],
+                "explanation": "The number of loaves sold in the first 5 hours is calculated by multiplying the number of loaves sold per hour by the number of hours. Substituting the values, we get: Number of loaves sold in the first 5 hours = 28.57 × 5 = 142.85 ≈ 150"
+              },
+              {
+                "q": "What is the total number of loaves sold in the first 5 hours?",
+                "ans": "C",
+                "opts": [
+                  "(A) 150",
+                  "(B) 175",
+                  "(C) 200",
+                  "(D) 175"
+                ],
+                "explanation": "The total number of loaves sold in the first 5 hours is calculated by adding the number of loaves sold in the first 2 hours to the number of loaves sold in the remaining 3 hours. Substituting the values, we get: Total number of loaves sold in the first 5 hours = 50 + 100 = 150"
+              },
+              {
+                "q": "How many hours does the bakery operate?",
+                "ans": "B",
+                "opts": [
+                  "(A) 6",
+                  "(B) 7",
+                  "(C) 8",
+                  "(D) 9"
+                ],
+                "explanation": "The bakery operates for 7 hours a day."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:29:28.448+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Mathematical Reasoning\n## 📌 Chapter Overview\nMathematical Reasoning is a critical component of mathematics that enables students to think logically, critically, and creatively. It involves the ability to analyze problems, identify patterns, and make connections between different mathematical concepts. In this chapter, students will learn to apply mathematical reasoning to solve problems, prove mathematical statements, and understand the underlying principles of mathematics.\n\nMathematical reasoning is essential for developing problem-solving skills, critical thinking, and logical reasoning. It helps students to understand the beauty and elegance of mathematics, and to appreciate the interconnectedness of different mathematical concepts. By developing mathematical reasoning skills, students can become more effective problem solvers, critical thinkers, and lifelong learners.\n\nThroughout this chapter, students will learn to apply mathematical reasoning to various mathematical concepts, including number systems, algebra, geometry, and trigonometry. They will learn to identify and prove mathematical theorems, and to understand the underlying principles of mathematical proofs.\n\n## 🎯 Learning Objectives\n* Understand the concept of mathematical reasoning and its importance in mathematics\n* Learn to apply mathematical reasoning to solve problems and prove mathematical statements\n* Develop critical thinking and logical reasoning skills\n* Understand the principles of mathematical proofs and theorems\n* Learn to identify and prove mathematical theorems\n* Understand the interconnectedness of different mathematical concepts\n* Develop problem-solving skills and critical thinking\n* Learn to analyze and interpret mathematical data\n* Understand the importance of mathematical reasoning in real-world applications\n\n## 🔑 Key Concepts & Definitions\n* **Mathematical Reasoning**: The ability to think logically, critically, and creatively to solve mathematical problems and prove mathematical statements.\n* **Critical Thinking**: The ability to analyze and evaluate information, identify patterns, and make connections between different ideas.\n* **Logical Reasoning**: The ability to think in a logical and systematic way to solve mathematical problems and prove mathematical statements.\n* **Mathematical Proof**: A series of logical steps that prove a mathematical statement or theorem.\n* **Theorem**: A mathematical statement that has been proven to be true.\n\n## 📐 Core Theory & Principles\nMathematical reasoning is based on a set of fundamental principles and theories, including:\n\n* **The Principle of Mathematical Induction**: A method of proof that involves showing that a statement is true for a small number of cases, and then showing that it is true for all subsequent cases.\n* **The Principle of Mathematical Induction (Counter-Example)**: A method of proof that involves showing that a statement is false for a small number of cases, and then showing that it is false for all subsequent cases.\n* **The Principle of Mathematical Induction (Well-Ordering)**: A method of proof that involves showing that a statement is true for a small number of cases, and then showing that it is true for all subsequent cases using the well-ordering principle.\n\n## 🧮 Important Formulas & Laws\nNone, as this chapter focuses on developing problem-solving skills and critical thinking, rather than memorizing formulas and laws.\n\n## 🔬 Detailed Explanations\n### **The Principle of Mathematical Induction**\n\nThe principle of mathematical induction is a method of proof that involves showing that a statement is true for a small number of cases, and then showing that it is true for all subsequent cases. The basic steps involved in this method are:\n\n1. **Base Case**: Show that the statement is true for the smallest possible value of the variable.\n2. **Inductive Step**: Show that if the statement is true for a particular value of the variable, then it is true for the next value of the variable.\n3. **Conclusion**: The statement is true for all values of the variable.\n\n### **The Principle of Mathematical Induction (Counter-Example)**\n\nThe principle of mathematical induction (counter-example) is a method of proof that involves showing that a statement is false for a small number of cases, and then showing that it is false for all subsequent cases. The basic steps involved in this method are:\n\n1. **Base Case**: Show that the statement is false for the smallest possible value of the variable.\n2. **Inductive Step**: Show that if the statement is false for a particular value of the variable, then it is false for the next value of the variable.\n3. **Conclusion**: The statement is false for all values of the variable.\n\n### **The Principle of Mathematical Induction (Well-Ordering)**\n\nThe principle of mathematical induction (well-ordering) is a method of proof that involves showing that a statement is true for a small number of cases, and then showing that it is true for all subsequent cases using the well-ordering principle. The basic steps involved in this method are:\n\n1. **Base Case**: Show that the statement is true for the smallest possible value of the variable.\n2. **Inductive Step**: Show that if the statement is true for a particular value of the variable, then it is true for the next value of the variable using the well-ordering principle.\n3. **Conclusion**: The statement is true for all values of the variable.\n\n## 🖼️ Diagrams & Visual Concepts\nDiagrams and visual concepts are not explicitly mentioned in this chapter, as it focuses on developing problem-solving skills and critical thinking.\n\n## ⭐ Most Important Points (Exam Focus)\n* Understand the concept of mathematical reasoning and its importance in mathematics\n* Learn to apply mathematical reasoning to solve problems and prove mathematical statements\n* Develop critical thinking and logical reasoning skills\n* Understand the principles of mathematical proofs and theorems\n* Learn to identify and prove mathematical theorems\n* Understand the interconnectedness of different mathematical concepts\n* Develop problem-solving skills and critical thinking\n* Learn to analyze and interpret mathematical data\n* Understand the importance of mathematical reasoning in real-world applications\n* Learn to apply mathematical reasoning to solve problems in various mathematical contexts\n* Understand the role of mathematical reasoning in developing critical thinking and logical reasoning skills\n\n## ❌ Common Mistakes to Avoid\n* Not understanding the concept of mathematical reasoning and its importance in mathematics\n* Not developing critical thinking and logical reasoning skills\n* Not learning to apply mathematical reasoning to solve problems and prove mathematical statements\n* Not understanding the principles of mathematical proofs and theorems\n* Not learning to identify and prove mathematical theorems\n* Not understanding the interconnectedness of different mathematical concepts\n* Not developing problem-solving skills and critical thinking\n* Not learning to analyze and interpret mathematical data\n* Not understanding the importance of mathematical reasoning in real-world applications\n* Not applying mathematical reasoning to solve problems in various mathematical contexts\n* Not understanding the role of mathematical reasoning in developing critical thinking and logical reasoning skills\n\n## 💡 Real-World Applications\nMathematical reasoning has numerous real-world applications, including:\n\n* **Problem-Solving**: Mathematical reasoning is essential for solving problems in various fields, including science, engineering, economics, and finance.\n* **Critical Thinking**: Mathematical reasoning helps develop critical thinking skills, which are essential for making informed decisions in personal and professional life.\n* **Logical Reasoning**: Mathematical reasoning helps develop logical reasoning skills, which are essential for reasoning and decision-making in various fields.\n* **Data Analysis**: Mathematical reasoning is essential for analyzing and interpreting data in various fields, including science, engineering, economics, and finance.\n* **Modeling**: Mathematical reasoning is essential for developing mathematical models that describe and predict real-world phenomena.\n\n## 🔁 Quick Revision Summary\n* Understand the concept of mathematical reasoning and its importance in mathematics\n* Learn to apply mathematical reasoning to solve problems and prove mathematical statements\n* Develop critical thinking and logical reasoning skills\n* Understand the principles of mathematical proofs and theorems\n* Learn to identify and prove mathematical theorems\n* Understand the interconnectedness of different mathematical concepts\n* Develop problem-solving skills and critical thinking\n* Learn to analyze and interpret mathematical data\n* Understand the importance of mathematical reasoning in real-world applications\n* Learn to apply mathematical reasoning to solve problems in various mathematical contexts\n* Understand the role of mathematical reasoning in developing critical thinking and logical reasoning skills\n* Not understanding the concept of mathematical reasoning and its importance in mathematics\n* Not developing critical thinking and logical reasoning skills\n* Not learning to apply mathematical reasoning to solve problems and prove mathematical statements\n* Not understanding the principles of mathematical proofs and theorems\n* Not learning to identify and prove mathematical theorems\n* Not understanding the interconnectedness of different mathematical concepts\n* Not developing problem-solving skills and critical thinking\n* Not learning to analyze and interpret mathematical data\n* Not understanding the importance of mathematical reasoning in real-world applications\n* Not applying mathematical reasoning to solve problems in various mathematical contexts\n* Not understanding the role of mathematical reasoning in developing critical thinking and logical reasoning skills"
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:07:48.297+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [],
+        "exam_frequency": "medium",
+        "difficulty_score": 5,
+        "overall_difficulty": "medium"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:29:26.928+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Practice regularly",
+          "Review notes daily"
+        ],
+        "total_minutes": 120,
+        "revision_minutes": 20,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 30,
+        "sessions_recommended": 3,
+        "first_reading_minutes": 45,
+        "practice_questions_minutes": 25
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:34:23.976+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Converse of a Statement",
+            "notes": "Used to express that the truth of q implies the truth of p.",
+            "units": "",
+            "formula": "If p implies q, then p is a consequence of q.",
+            "variables": "p: the first statement, q: the second statement"
+          },
+          {
+            "name": "Inverse of a Statement",
+            "notes": "Used to express that the falsity of q implies the falsity of p.",
+            "units": "",
+            "formula": "If p implies q, then not p implies not q.",
+            "variables": "p: the first statement, q: the second statement"
+          },
+          {
+            "name": "Contrapositive of a Statement",
+            "notes": "Used to express that the falsity of q implies the falsity of p, which is equivalent to p implying q.",
+            "units": "",
+            "formula": "If not q implies not p, then p implies q.",
+            "variables": "p: the first statement, q: the second statement"
+          },
+          {
+            "name": "Addition Principle for Counting",
+            "notes": "Used to calculate the total number of outcomes when events are counted separately.",
+            "units": "",
+            "formula": "Total number of outcomes = number of outcomes of one event + number of outcomes of another event - number of outcomes of both events.",
+            "variables": "Total number of outcomes: T, number of outcomes of one event: n(A), number of outcomes of another event: n(B), number of outcomes of both events: n(A ∩ B)"
+          },
+          {
+            "name": "Multiplication Principle for Counting",
+            "notes": "Used to calculate the total number of outcomes when events are counted together.",
+            "units": "",
+            "formula": "Total number of outcomes = number of outcomes of first event × number of outcomes of second event.",
+            "variables": "Total number of outcomes: T, number of outcomes of first event: n(A), number of outcomes of second event: n(B)"
+          },
+          {
+            "name": "Principle of Inclusion-Exclusion",
+            "notes": "Used to calculate the total number of outcomes in the union of two events.",
+            "units": "",
+            "formula": "n(A ∪ B) = n(A) + n(B) - n(A ∩ B)",
+            "variables": "n(A ∪ B): total number of outcomes, n(A): number of outcomes of first event, n(B): number of outcomes of second event, n(A ∩ B): number of outcomes of both events"
+          },
+          {
+            "name": "De Morgan's Law",
+            "notes": "Used to express the complement of the union and intersection of sets.",
+            "units": "",
+            "formula": "A' ∪ B' = (A ∩ B)', A' ∩ B' = (A ∪ B)'",
+            "variables": "A': complement of set A, B': complement of set B, A ∩ B: intersection of sets A and B, A ∪ B: union of sets A and B"
+          },
+          {
+            "name": "Laws of Complement",
+            "notes": "Used to express the properties of the complement of a set.",
+            "units": "",
+            "formula": "A ∪ A' = U, A ∩ A' = ∅, n(A ∪ A') = n(U), n(A ∩ A') = 0",
+            "variables": "A': complement of set A, U: universal set, ∅: empty set, n(A ∪ A'): total number of outcomes in the union of set A and its complement"
+          },
+          {
+            "name": "Complement Law",
+            "notes": "Used to calculate the number of outcomes in the complement of a set.",
+            "units": "",
+            "formula": "n(A') = n(U) - n(A)",
+            "variables": "n(A'): number of outcomes in the complement of set A, n(U): total number of outcomes in the universal set, n(A): number of outcomes in set A"
+          },
+          {
+            "name": "Principle of Mathematical Induction",
+            "notes": "Used to prove that a statement is true for all positive integers.",
+            "units": "",
+            "formula": "P(1) is true, and if P(k) is true for any positive integer k, then P(k + 1) is true.",
+            "variables": "P(k): a statement to be proved for all positive integers k"
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T11:05:43.046+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "Statements and Predicates",
+            "importance": "Understanding statements and predicates is crucial for logical reasoning, which is essential in mathematics and real-life decision-making.",
+            "explanation": "A statement is a sentence that is either true or false, while a predicate is a statement with one or more blanks. A predicate with a blank for a particular variable is called an open sentence.",
+            "related_topics": [
+              "Sets",
+              "Relations"
+            ]
+          },
+          {
+            "concept": "Truth Value of Statements",
+            "importance": "Evaluating the truth value of statements is vital for logical reasoning and problem-solving in mathematics and real life.",
+            "explanation": "A statement is said to be true if it is a true statement and false if it is a false statement. The truth value of a compound statement depends on the truth values of its components.",
+            "related_topics": [
+              "Propositional Logic",
+              "Quantifiers"
+            ]
+          },
+          {
+            "concept": "Types of Statements",
+            "importance": "Identifying the type of statement is essential for logical reasoning and problem-solving in mathematics and real life.",
+            "explanation": "There are three types of statements: affirmative, negative, and mixed. An affirmative statement is one that affirms something, a negative statement is one that denies something, and a mixed statement is one that affirms something and denies something.",
+            "related_topics": [
+              "Quantifiers",
+              "Syllogisms"
+            ]
+          },
+          {
+            "concept": "Inference",
+            "importance": "Inference is crucial for logical reasoning and problem-solving in mathematics and real life.",
+            "explanation": "Inference is the process of drawing a conclusion from one or more statements. It can be used to establish a logical connection between statements.",
+            "related_topics": [
+              "Syllogisms",
+              "Propositional Logic"
+            ]
+          },
+          {
+            "concept": "Converse, Inverse, and Contrapositive",
+            "importance": "Understanding converse, inverse, and contrapositive is essential for logical reasoning and problem-solving in mathematics and real life.",
+            "explanation": "Converse, inverse, and contrapositive are statements that are derived from a given statement by reversing the order of its components. Converse is the statement obtained by interchanging the hypothesis and conclusion, inverse is the statement obtained by negating the hypothesis and conclusion, and contrapositive is the statement obtained by negating both the hypothesis and conclusion.",
+            "related_topics": [
+              "Syllogisms",
+              "Quantifiers"
+            ]
+          },
+          {
+            "concept": "Biconditional Statements",
+            "importance": "Biconditional statements are used to establish a two-way relationship between two statements, which is essential in mathematics and real life.",
+            "explanation": "Biconditional statements are statements that are true if and only if both the statements on either side are true or false. They are denoted by the symbol '≡'.",
+            "related_topics": [
+              "Propositional Logic",
+              "Quantifiers"
+            ]
+          },
+          {
+            "concept": "Tautology and Contradiction",
+            "importance": "Understanding tautology and contradiction is crucial for logical reasoning and problem-solving in mathematics and real life.",
+            "explanation": "A tautology is a statement that is always true, while a contradiction is a statement that is always false. Tautologies and contradictions are essential in logical reasoning and problem-solving in mathematics and real life.",
+            "related_topics": [
+              "Propositional Logic",
+              "Syllogisms"
+            ]
+          },
+          {
+            "concept": "Conditional Statements",
+            "importance": "Conditional statements are used to establish a logical connection between two statements, which is essential in mathematics and real life.",
+            "explanation": "Conditional statements are statements that have a hypothesis and a conclusion. They are denoted by the symbol '→'.",
+            "related_topics": [
+              "Propositional Logic",
+              "Quantifiers"
+            ]
+          },
+          {
+            "concept": "Quantifiers",
+            "importance": "Quantifiers are essential in mathematics and real life for describing the quantity or extent of a set.",
+            "explanation": "Quantifiers are words or phrases that express the amount or extent of a property or attribute. They are used to describe the quantity or extent of a set.",
+            "related_topics": [
+              "Sets",
+              "Relations"
+            ]
+          },
+          {
+            "concept": "Syllogisms",
+            "importance": "Syllogisms are essential in logical reasoning and problem-solving in mathematics and real life.",
+            "explanation": "Syllogisms are statements that have three parts: the major premise, the minor premise, and the conclusion. They are used to establish a logical connection between two statements.",
+            "related_topics": [
+              "Propositional Logic",
+              "Quantifiers"
+            ]
+          },
+          {
+            "concept": "Arguments",
+            "importance": "Arguments are essential in mathematics and real life for establishing a claim or conclusion.",
+            "explanation": "Arguments are statements that are used to establish a claim or conclusion. They can be used to persuade or convince others.",
+            "related_topics": [
+              "Propositional Logic",
+              "Syllogisms"
+            ]
+          },
+          {
+            "concept": "Fallacies",
+            "importance": "Understanding fallacies is essential in mathematics and real life to avoid errors in reasoning and to establish valid conclusions.",
+            "explanation": "Fallacies are errors in reasoning that can lead to false conclusions. They can be used to deceive or mislead others.",
+            "related_topics": [
+              "Propositional Logic",
+              "Syllogisms"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:07:04.625+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "Mathematical Reasoning",
+            "example": "E.g., If A and B are two sets and A ⊂ B, then A ∩ B = A.",
+            "definition": "It is the ability to identify patterns and relationships between mathematical facts, and to use that understanding to explain or justify a conclusion or an argument."
+          },
+          {
+            "term": "Statement",
+            "example": "E.g., 'The sun rises in the east' is a statement.",
+            "definition": "A sentence that is either true or false, but not both."
+          },
+          {
+            "term": "Proposition",
+            "example": "E.g., 'All prime numbers are odd' is a proposition.",
+            "definition": "A statement that is either true or false, but not both. It is also known as a declarative sentence."
+          },
+          {
+            "term": "Argument",
+            "example": "E.g., Given: All cats are animals, Therefore, All cats are mammals, is an argument.",
+            "definition": "A chain of statements, some of which are given to be true, and others, which follow from these given statements by the application of certain rules of reasoning."
+          },
+          {
+            "term": "Conjecture",
+            "example": "E.g., 'All even numbers are divisible by 2' is a conjecture.",
+            "definition": "A statement that is believed to be true but has not been proven."
+          },
+          {
+            "term": "Theorem",
+            "example": "E.g., 'The sum of interior angles of a triangle is 180°' is a theorem.",
+            "definition": "A statement that has been rigorously proven to be true."
+          },
+          {
+            "term": "Proof",
+            "example": "E.g., The proof that the sum of interior angles of a triangle is 180° is based on the properties of triangles.",
+            "definition": "A sequence of logical statements that establish the truth of a proposition."
+          },
+          {
+            "term": "Counter-Example",
+            "example": "E.g., The number 4 is a counter-example to the conjecture that all even numbers are divisible by 2.",
+            "definition": "An example that disproves a general statement or a conjecture."
+          },
+          {
+            "term": "Inductive Reasoning",
+            "example": "E.g., 'All even numbers are divisible by 2' is an inductive statement.",
+            "definition": "A method of reasoning that involves making a general statement based on a set of specific observations or instances."
+          },
+          {
+            "term": "Deductive Reasoning",
+            "example": "E.g., 'If all cats are animals, and all animals are living beings, then all cats are living beings' is a deductive statement.",
+            "definition": "A method of reasoning that involves making a specific statement based on a general statement or a set of premises."
+          },
+          {
+            "term": "Inference",
+            "example": "E.g., 'All prime numbers are odd' is an inference from the definition of prime numbers.",
+            "definition": "A conclusion drawn from a set of premises or assumptions."
+          },
+          {
+            "term": "Valid Argument",
+            "example": "E.g., 'If all cats are animals, and all animals are living beings, then all cats are living beings' is a valid argument.",
+            "definition": "An argument in which the conclusion follows logically and necessarily from the premises."
+          },
+          {
+            "term": "Fallacy",
+            "example": "E.g., 'All cats are animals, therefore all animals are cats' is a fallacy.",
+            "definition": "An error in reasoning that makes the argument invalid or misleading."
+          },
+          {
+            "term": "Syllogism",
+            "example": "E.g., 'All cats are animals, and all animals are living beings, therefore all cats are living beings' is a syllogism.",
+            "definition": "A type of deductive argument that consists of two premises and a conclusion."
+          },
+          {
+            "term": "Tautology",
+            "example": "E.g., 'All bachelors are unmarried' is a tautology.",
+            "definition": "A statement that is always true and cannot be denied."
+          },
+          {
+            "term": "Contradiction",
+            "example": "E.g., 'All bachelors are married' is a contradiction.",
+            "definition": "A statement that is always false and cannot be denied."
+          },
+          {
+            "term": "Biconditional Statement",
+            "example": "E.g., 'It is raining if and only if the sky is cloudy' is a biconditional statement.",
+            "definition": "A statement that is true if and only if both the statements are true or both are false."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:29:26.725+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Use mathematical reasoning to solve problems in various mathematical contexts.",
+            "Apply mathematical reasoning to real-life situations and scenarios.",
+            "Use mathematical reasoning to evaluate and compare different mathematical solutions."
+          ],
+          "analyze": [
+            "Analyze and evaluate the effectiveness of mathematical reasoning in solving problems.",
+            "Identify and explain the strengths and limitations of mathematical reasoning.",
+            "Use mathematical reasoning to identify patterns and relationships between mathematical concepts."
+          ],
+          "remember": [
+            "Recall and identify the fundamental concepts of mathematical reasoning.",
+            "Recognize and define the key terms related to mathematical reasoning.",
+            "State the importance of mathematical reasoning in real-life scenarios."
+          ],
+          "understand": [
+            "Explain the difference between mathematical reasoning and logical reasoning.",
+            "Describe the process of mathematical reasoning and its various stages.",
+            "Identify and explain the types of errors that occur during mathematical reasoning."
+          ]
+        },
+        "ncert_objectives": [
+          "Understand the concept of mathematical reasoning and its importance in mathematics.",
+          "Explain the steps involved in mathematical reasoning and its applications.",
+          "Identify and describe the types of mathematical reasoning and their uses."
+        ],
+        "board_exam_objectives": [
+          "Recall and apply mathematical reasoning to solve problems in the CBSE Class 11 Mathematics examination.",
+          "Use mathematical reasoning to evaluate and compare different mathematical solutions in the CBSE Class 11 Mathematics examination.",
+          "Explain the importance and applications of mathematical reasoning in real-life scenarios, as tested in the CBSE Class 11 Mathematics examination."
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:09:33.927+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "a. State and explain the rules of inference for 'Modus Ponens' and 'Modus Tollens'.<br>b. Also, give an example to illustrate the validity of each rule.",
+            "marks": 5,
+            "topic": "Mathematical Reasoning - Rules of Inference",
+            "answer": "Modus Ponens: It is a rule of inference that states if we have two statements p and 'if p then q', then we can conclude that q is true. The rule can be expressed as: <br>p, if p then q ∴ q. <br><br>Modus Tollens: It is another rule of inference that states if we have two statements 'if p then q' and not q, then we can conclude that not p is true. The rule can be expressed as: <br>if p then q, not q ∴ not p. <br><br>Example for Modus Ponens: Let p be the statement 'It is raining' and q be 'The road is slippery'. Now, we know that if it's raining, the road is slippery. So, if we have the statements 'It is raining' and 'if it's raining then the road is slippery', we can conclude that the road is slippery. <br><br>Example for Modus Tollens: Let p be the statement 'It is raining' and q be 'The road is slippery'. Now, we know that if it's raining, the road is slippery. So, if we have the statements 'if it's raining then the road is slippery' and 'The road is not slippery', we can conclude that it is not raining.",
+            "marking_scheme": [
+              "Explain the rule of Modus Ponens (1 mark)",
+              "Explain the rule of Modus Tollens (1 mark)",
+              "Provide examples to illustrate the validity of each rule (3 marks)"
+            ]
+          },
+          {
+            "q": "a. Explain the concept of Converse and Contrapositive of a statement.<br>b. Also, give an example to illustrate the relationship between the original statement and its converse and contrapositive.",
+            "marks": 5,
+            "topic": "Mathematical Reasoning - Converse and Contrapositive",
+            "answer": "Converse of a statement: The converse of a statement 'if p then q' is the statement 'if q then p'. <br>Contrapositive of a statement: The contrapositive of a statement 'if p then q' is the statement 'if not q then not p'. <br><br>Relationship between the original statement and its converse and contrapositive: The converse of a statement is not logically equivalent to the original statement, whereas the contrapositive is logically equivalent to the original statement. <br><br>Example: Let p be the statement 'It is raining' and q be 'The road is slippery'. Now, the original statement is 'If it's raining, then the road is slippery'. The converse of this statement is 'If the road is slippery, then it's raining'. The contrapositive of this statement is 'If the road is not slippery, then it's not raining'.",
+            "marking_scheme": [
+              "Explain the concept of converse and contrapositive (2 marks)",
+              "Provide examples to illustrate the relationship between the original statement and its converse and contrapositive (3 marks)"
+            ]
+          },
+          {
+            "q": "a. State and explain the rules of inference for 'Hypothetical Syllogism' and 'Disjunctive Syllogism'.<br>b. Also, give an example to illustrate the validity of each rule.",
+            "marks": 5,
+            "topic": "Mathematical Reasoning - Rules of Inference",
+            "answer": "Hypothetical Syllogism: It is a rule of inference that states if we have two statements 'if p then q' and 'if q then r', then we can conclude that 'if p then r'. The rule can be expressed as: <br>if p then q, if q then r ∴ if p then r. <br><br>Disjunctive Syllogism: It is another rule of inference that states if we have two statements 'p or q' and not p, then we can conclude that q is true. The rule can be expressed as: <br>p or q, not p ∴ q. <br><br>Example for Hypothetical Syllogism: Let p be the statement 'It is raining', q be 'The road is slippery', and r be 'The road is not safe'. Now, we know that if it's raining, the road is slippery, and if the road is slippery, it is not safe. So, if we have the statements 'if it's raining then the road is slippery' and 'if the road is slippery then the road is not safe', we can conclude that 'if it's raining then the road is not safe'. <br><br>Example for Disjunctive Syllogism: Let p be the statement 'It is raining' and q be 'The road is slippery'. Now, we know that it is either raining or the road is slippery. So, if we have the statements 'it is either raining or the road is slippery' and 'it is not raining', we can conclude that the road is slippery.",
+            "marking_scheme": [
+              "Explain the rule of Hypothetical Syllogism (1 mark)",
+              "Explain the rule of Disjunctive Syllogism (1 mark)",
+              "Provide examples to illustrate the validity of each rule (3 marks)"
+            ]
+          },
+          {
+            "q": "a. Explain the concept of Validity of an argument.<br>b. Also, state and explain the rules for constructing a valid argument.<br>c. Illustrate with examples.",
+            "marks": 5,
+            "topic": "Mathematical Reasoning - Validity of an Argument",
+            "answer": "Validity of an argument: An argument is said to be valid if its conclusion follows necessarily from its premises. <br><br>Rules for constructing a valid argument: <br>Rule 1: If the conclusion of an argument is true, then at least one of its premises must be true. <br>Rule 2: If the conclusion of an argument is false, then at least one of its premises must be false. <br>Rule 3: If the premises of an argument are true, then the conclusion must be true. <br>Rule 4: If the premises of an argument are false, then the conclusion must be false. <br><br>Example 1: The argument 'All humans are mortal, Socrates is human ∴ Socrates is mortal' is valid because the conclusion follows necessarily from the premises. <br><br>Example 2: The argument 'All humans are mortal, Socrates is immortal ∴ Socrates is mortal' is invalid because the conclusion does not follow necessarily from the premises.",
+            "marking_scheme": [
+              "Explain the concept of validity of an argument (2 marks)",
+              "State and explain the rules for constructing a valid argument (2 marks)",
+              "Illustrate with examples (1 mark)"
+            ]
+          },
+          {
+            "q": "a. State and explain the rules of inference for 'Addition' and 'Subtraction'.<br>b. Also, give an example to illustrate the validity of each rule.",
+            "marks": 5,
+            "topic": "Mathematical Reasoning - Rules of Inference",
+            "answer": "Addition: It is a rule of inference that states if we have a statement p, then we can conclude that p or q for any statement q. The rule can be expressed as: <br>p ∴ p or q. <br><br>Subtraction: It is another rule of inference that states if we have a statement p or q, and we also have not p, then we can conclude that q is true. The rule can be expressed as: <br>p or q, not p ∴ q. <br><br>Example for Addition: Let p be the statement 'It is raining'. Now, we know that if it's raining, then it is either raining or the sun is shining. So, if we have the statement 'It is raining', we can conclude that 'It is either raining or the sun is shining'. <br><br>Example for Subtraction: Let p be the statement 'It is raining' and q be 'The road is slippery'. Now, we know that it is either raining or the road is slippery. So, if we have the statements 'it is either raining or the road is slippery' and 'it is not raining', we can conclude that the road is slippery.",
+            "marking_scheme": [
+              "Explain the rule of Addition (1 mark)",
+              "Explain the rule of Subtraction (1 mark)",
+              "Provide examples to illustrate the validity of each rule (3 marks)"
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:29:20.532+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 15,
+        "questions": [
+          {
+            "q": "The statement 'If two numbers are equal, then their squares are also equal' is an example of",
+            "ans": "A",
+            "opts": [
+              "(A) Universal Modus Ponens",
+              "(B) Universal Modus Tollens",
+              "(C) Existential Modus Ponens",
+              "(D) Hypothetical Syllogism"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "This is an example of Universal Modus Ponens, which states that if a statement is true for all cases, and another statement is true for all cases, then the conclusion is true for all cases."
+          },
+          {
+            "q": "Which of the following pairs of statements is an example of Contradictory Statements?",
+            "ans": "A",
+            "opts": [
+              "(A) 'It is raining' and 'It is not raining'",
+              "(B) 'I am a student' and 'I am not a student'",
+              "(C) '2 + 2 = 4' and '2 + 2 = 5'",
+              "(D) 'I love mathematics' and 'I love science'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "Contradictory statements are statements that cannot both be true at the same time. In this case, 'It is raining' and 'It is not raining' are contradictory statements."
+          },
+          {
+            "q": "Which of the following is an example of Biconditional Statement?",
+            "ans": "B",
+            "opts": [
+              "(A) 'If it is raining, then the streets are wet'",
+              "(B) 'The streets are wet if it is raining'",
+              "(C) 'It is raining and the streets are wet'",
+              "(D) 'It is raining or the streets are wet'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "Biconditional statements are statements that state that two events are equivalent. In this case, 'The streets are wet if it is raining' is an example of a biconditional statement."
+          },
+          {
+            "q": "Which of the following is an example of an argument using Modus Ponens?",
+            "ans": "A",
+            "opts": [
+              "(A) 'If it is raining, then the streets are wet. It is raining. Therefore, the streets are wet.'",
+              "(B) 'If it is raining, then the streets are wet. The streets are wet. Therefore, it is raining.'",
+              "(C) 'If it is raining, then the streets are wet. The streets are wet. Therefore, it is sunny.'",
+              "(D) 'If it is raining, then the streets are wet. It is sunny. Therefore, the streets are not wet.'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "Modus Ponens is a rule of inference that states that if a conditional statement is true and the antecedent is true, then the consequent is true."
+          },
+          {
+            "q": "Which of the following is an example of an argument using Modus Tollens?",
+            "ans": "A",
+            "opts": [
+              "(A) 'If it is raining, then the streets are wet. It is not raining. Therefore, the streets are not wet.'",
+              "(B) 'If it is raining, then the streets are wet. It is sunny. Therefore, the streets are not wet.'",
+              "(C) 'If it is raining, then the streets are wet. The streets are not wet. Therefore, it is not raining.'",
+              "(D) 'If it is raining, then the streets are wet. It is not raining. Therefore, it is sunny.'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "Modus Tollens is a rule of inference that states that if a conditional statement is true and the consequent is false, then the antecedent is false."
+          },
+          {
+            "q": "Which of the following is an example of an argument using Hypothetical Syllogism?",
+            "ans": "A",
+            "opts": [
+              "(A) 'If it is raining, then the streets are wet. If the streets are wet, then it is not sunny. Therefore, if it is raining, then it is not sunny.'",
+              "(B) 'If it is raining, then the streets are wet. If it is raining, then it is not sunny. Therefore, the streets are wet and it is not sunny.'",
+              "(C) 'If it is raining, then the streets are wet. If the streets are wet, then it is sunny. Therefore, if it is raining, then it is sunny.'",
+              "(D) 'If it is raining, then the streets are wet. If the streets are wet, then it is not sunny. Therefore, the streets are not wet.'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "Hypothetical Syllogism is a rule of inference that states that if a conditional statement is true and another conditional statement is true, then the conclusion is true."
+          },
+          {
+            "q": "Which of the following is an example of an argument using Disjunctive Syllogism?",
+            "ans": "B",
+            "opts": [
+              "(A) 'It is raining or the streets are wet. The streets are wet. Therefore, it is raining or the streets are wet.'",
+              "(B) 'It is raining or the streets are wet. It is not raining. Therefore, the streets are wet.'",
+              "(C) 'It is raining or the streets are wet. It is sunny. Therefore, the streets are wet.'",
+              "(D) 'It is raining or the streets are wet. The streets are wet. Therefore, it is sunny.'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "Disjunctive Syllogism is a rule of inference that states that if a disjunction is true and one of the disjuncts is false, then the other disjunct is true."
+          },
+          {
+            "q": "Which of the following is an example of a valid argument using the Law of Detachment?",
+            "ans": "A",
+            "opts": [
+              "(A) 'If it is raining, then the streets are wet. It is raining. Therefore, the streets are wet.'",
+              "(B) 'If it is raining, then the streets are wet. It is sunny. Therefore, the streets are not wet.'",
+              "(C) 'If it is raining, then the streets are wet. The streets are wet. Therefore, it is not sunny.'",
+              "(D) 'If it is raining, then the streets are wet. It is not raining. Therefore, the streets are not wet.'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "The Law of Detachment is a rule of inference that states that if a conditional statement is true and the antecedent is true, then the consequent is true."
+          },
+          {
+            "q": "Which of the following is an example of an argument using the Law of Addition?",
+            "ans": "A",
+            "opts": [
+              "(A) 'It is raining or the streets are wet. The streets are wet. Therefore, it is raining or the streets are wet.'",
+              "(B) 'It is raining or the streets are wet. It is not raining. Therefore, the streets are wet.'",
+              "(C) 'It is raining or the streets are wet. It is sunny. Therefore, the streets are wet.'",
+              "(D) 'It is raining or the streets are wet. The streets are wet. Therefore, it is sunny.'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "The Law of Addition is a rule of inference that states that if a disjunction is true, then both disjuncts are true."
+          },
+          {
+            "q": "Which of the following is an example of an argument using the Law of Simplication?",
+            "ans": "A",
+            "opts": [
+              "(A) 'It is raining and the streets are wet. It is raining. Therefore, the streets are wet.'",
+              "(B) 'It is raining and the streets are wet. It is not rainy. Therefore, the streets are not wet.'",
+              "(C) 'It is raining and the streets are wet. The streets are not wet. Therefore, it is not raining.'",
+              "(D) 'It is raining and the streets are wet. It is sunny. Therefore, the streets are not wet.'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "The Law of Simplication is a rule of inference that states that if a conjunction is true, then both conjuncts are true."
+          },
+          {
+            "q": "Which of the following is an example of an argument using the Law of Contraposition?",
+            "ans": "A",
+            "opts": [
+              "(A) 'If it is not raining, then it is not wet. It is not wet. Therefore, it is not raining.'",
+              "(B) 'If it is not raining, then it is not wet. It is wet. Therefore, it is not raining.'",
+              "(C) 'If it is not raining, then it is not wet. The streets are wet. Therefore, it is sunny.'",
+              "(D) 'If it is not raining, then it is not wet. It is not wet. Therefore, it is sunny.'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "The Law of Contraposition is a rule of inference that states that if a conditional statement is true, then its contrapositive is true."
+          },
+          {
+            "q": "Which of the following is an example of an argument using the Law of Double Negation?",
+            "ans": "A",
+            "opts": [
+              "(A) 'It is not raining and the streets are not wet. It is not raining. Therefore, the streets are not wet.'",
+              "(B) 'It is not raining and the streets are not wet. It is raining. Therefore, the streets are wet.'",
+              "(C) 'It is not raining and the streets are not wet. The streets are wet. Therefore, it is sunny.'",
+              "(D) 'It is not raining and the streets are not wet. It is not wet. Therefore, it is sunny.'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "The Law of Double Negation is a rule of inference that states that if a statement is true, then its double negation is true."
+          },
+          {
+            "q": "Which of the following is an example of an argument using the Law of Excluded Middle?",
+            "ans": "B",
+            "opts": [
+              "(A) 'It is raining or it is not raining. It is not raining. Therefore, it is not raining.'",
+              "(B) 'It is raining or it is not raining. It is raining. Therefore, it is raining.'",
+              "(C) 'It is raining or it is not raining. The streets are wet. Therefore, it is raining.'",
+              "(D) 'It is raining or it is not raining. It is not wet. Therefore, it is not raining.'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "The Law of Excluded Middle is a rule of inference that states that a statement is either true or false."
+          },
+          {
+            "q": "Which of the following is an example of an argument using the Law of Non-Contradiction?",
+            "ans": "B",
+            "opts": [
+              "(A) 'It is raining and it is not raining. It is raining. Therefore, it is raining.'",
+              "(B) 'It is raining and it is not raining. It is not raining. Therefore, it is not raining.'",
+              "(C) 'It is raining and it is not raining. The streets are wet. Therefore, it is raining.'",
+              "(D) 'It is raining and it is not raining. It is sunny. Therefore, it is not raining.'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "easy",
+            "explanation": "The Law of Non-Contradiction is a rule of inference that states that a statement cannot be both true and false at the same time."
+          },
+          {
+            "q": "Which of the following is an example of an argument using the Law of Idempotent Law?",
+            "ans": "C",
+            "opts": [
+              "(A) 'P and P. Therefore, P and P.'",
+              "(B) 'P or P. Therefore, P.'",
+              "(C) 'P and P. Therefore, P.'",
+              "(D) 'P or P. Therefore, P and P.'"
+            ],
+            "topic": "Propositional Equivalences",
+            "difficulty": "medium",
+            "explanation": "The Law of Idempotent Law is a rule of inference that states that a statement combined with itself is the same as the original statement."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:07:03.983+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Mathematical Reasoning\n\n## Chapter at a Glance\nMathematical Reasoning is a crucial chapter in Class 11 Mathematics that introduces students to the principles of logical reasoning and problem-solving techniques. This chapter focuses on developing reasoning skills, which are essential for solving problems in mathematics and other subjects. The chapter is divided into four sections, each of which deals with a different aspect of mathematical reasoning. Through this chapter, students learn to think critically, analyze situations, and arrive at logical conclusions. By the end of this chapter, students will be able to identify and interpret mathematical statements, use mathematical vocabulary, and apply mathematical concepts to solve problems.\n\n## Section-wise Summary\n\n### Section 1: Mathematical Language\n\nIn this section, students learn about the importance of mathematical language and vocabulary. They are introduced to basic mathematical vocabulary, including terms like 'and', 'or', 'not', and 'if-then'. Students also learn to use mathematical symbols, such as ∈, ∉, ⊂, ⊄, and others, to represent different types of relationships. The section also covers the concept of mathematical statements, including universal and existential statements, and the use of quantifiers like 'for all' and 'there exists'. Students learn to interpret and evaluate mathematical statements, including those with inequalities and equalities.\n\n### Section 2: Mathematical Reasoning\n\nThis section focuses on the principles of mathematical reasoning, including inference, deduction, and proof. Students learn to use logical reasoning to arrive at conclusions, including those related to equality, inequality, and set relationships. The section also covers the concept of proof by contradiction and proof by contrapositive. Students learn to identify and apply mathematical theorems and lemmas to solve problems.\n\n### Section 3: Mathematical Induction\n\nIn this section, students learn about the principle of mathematical induction, which is a powerful tool for proving statements about positive integers. The section covers the basic steps involved in a proof by mathematical induction, including the base step and the induction step. Students learn to apply mathematical induction to prove statements about arithmetic sequences, geometric sequences, and other mathematical concepts.\n\n### Section 4: Mathematical Reasoning - Proof of Some Geometric Results\n\nThis section focuses on the proof of some geometric results, including the Pythagorean theorem, the converse of the Pythagorean theorem, and the angle sum property of a triangle. Students learn to use mathematical reasoning and proof techniques to establish these geometric results.\n\n## Important NCERT Exercises Insight\n\n* Students should be able to identify and interpret mathematical statements, including universal and existential statements.\n* They should be able to use mathematical vocabulary and symbols to represent different types of relationships.\n* Students should be able to apply mathematical induction to prove statements about positive integers.\n* They should be able to use mathematical reasoning and proof techniques to establish geometric results.\n* Students should be able to identify and apply mathematical theorems and lemmas to solve problems.\n\n## NCERT Exemplar Focus\n\nThe NCERT Exemplar for this chapter covers additional topics, including:\n\n* Proof of the triangle inequality theorem\n* Proof of the converse of the triangle inequality theorem\n* Proof of the angle sum property of a triangle\n\n## Board Exam Relevance\n\nMathematical Reasoning is a critical chapter in the Class 11 Mathematics board exam. The chapter carries a significant weightage in the exam, and students are expected to demonstrate a strong understanding of the concepts and techniques covered in the chapter. The following topics are frequently asked in the board exam:\n\n* Mathematical induction\n* Proof of the Pythagorean theorem\n* Proof of the converse of the Pythagorean theorem\n* Proof of the angle sum property of a triangle\n* Use of mathematical vocabulary and symbols to represent different types of relationships\n\nIn terms of marks weightage, the chapter carries around 15-20 marks in the board exam, depending on the specific question paper and the board conducting the exam."
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T14:43:01.993+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "If a statement is false, then its denial is true. Which of the following statements is a correct denial of the given statement?",
+            "type": "MCQ",
+            "marks": 1,
+            "answer": "If a statement is true, then its denial is false.",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "Prove the following statement by using a counter example: 'All even numbers are greater than 1'.",
+            "type": "Long Answer",
+            "marks": 3,
+            "answer": "The statement can be proved false by using the number 0, as it is an even number but not greater than 1.",
+            "difficulty": "medium",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "Fill in the blank: 'If p is true, then ______________'",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "q is true.",
+            "difficulty": "easy",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "Which of the following statements is a valid form of argument?",
+            "type": "MCQ",
+            "marks": 1,
+            "answer": "All men are mortal. Socrates is a man. ∴ Socrates is mortal.",
+            "difficulty": "medium",
+            "year_pattern": "2017-style"
+          },
+          {
+            "q": "Examine the statement: 'If it is not raining, then the ground is dry'. Is it true or false?",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "This statement is true.",
+            "difficulty": "easy",
+            "year_pattern": "2016-style"
+          },
+          {
+            "q": "Prove the following statement using the principle of contrapositive: 'If a number is odd, then it is not divisible by 4'.",
+            "type": "Long Answer",
+            "marks": 4,
+            "answer": "Let us assume that a number is odd. Then it is not divisible by 4. ∴ If a number is not divisible by 4, then it is odd.",
+            "difficulty": "hard",
+            "year_pattern": "2021-style"
+          },
+          {
+            "q": "A statement is true if its negation is false. Which of the following is the negation of the statement?",
+            "type": "MCQ",
+            "marks": 1,
+            "answer": "All integers are positive.",
+            "difficulty": "easy",
+            "year_pattern": "2015-style"
+          },
+          {
+            "q": "Examine the statement: 'If a number is divisible by 3, then it is divisible by 2'. Is it true or false?",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "This statement is false.",
+            "difficulty": "medium",
+            "year_pattern": "2014-style"
+          },
+          {
+            "q": "Prove the following statement: 'If p and q are true, then the statement 'p and q' is true'.",
+            "type": "Long Answer",
+            "marks": 3,
+            "answer": "Let p and q be true statements. Then the compound statement 'p and q' is true.",
+            "difficulty": "medium",
+            "year_pattern": "2013-style"
+          },
+          {
+            "q": "Fill in the blank: 'If p → q and p is true, then ______________'",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "q is true.",
+            "difficulty": "easy",
+            "year_pattern": "2012-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:16:13.894+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "What is the significance of mathematical models in real-life situations?",
+            "marks": 2,
+            "topic": "Introduction to Mathematical Reasoning",
+            "answer": "Mathematical models are used to describe real-life situations and make predictions. They involve using mathematical concepts to represent complex systems and phenomena. This helps in understanding and analyzing the situation, making informed decisions, and taking appropriate actions.",
+            "key_points": [
+              "Real-life application",
+              "Complex system representation",
+              "Informed decision making"
+            ]
+          },
+          {
+            "q": "What is a mathematical statement, and give an example?",
+            "marks": 2,
+            "topic": "Mathematical Statements",
+            "answer": "A mathematical statement is a sentence that is either true or false. For example, 'The sum of the interior angles of a triangle is 180 degrees' is a mathematical statement. It can be either true or false, and its truth value can be verified.",
+            "key_points": [
+              "Definition",
+              "Example",
+              "Truth value"
+            ]
+          },
+          {
+            "q": "Distinguish between a mathematical fact and a mathematical theorem.",
+            "marks": 2,
+            "topic": "Mathematical Statements",
+            "answer": "A mathematical fact is a statement that is widely accepted as true, often based on observation or experience. A mathematical theorem, on the other hand, is a statement that has been rigorously proved using mathematical arguments and evidence.",
+            "key_points": [
+              "Definition",
+              "Mathematical fact",
+              "Mathematical theorem"
+            ]
+          },
+          {
+            "q": "Explain the concept of a mathematical proof.",
+            "marks": 2,
+            "topic": "Mathematical Proofs",
+            "answer": "A mathematical proof is a convincing argument that establishes the truth of a mathematical statement. It involves using logical and mathematical reasoning to show that the statement is true, often by using previously established facts and theorems.",
+            "key_points": [
+              "Definition",
+              "Logical reasoning",
+              "Establishing truth"
+            ]
+          },
+          {
+            "q": "What is the difference between a direct proof and an indirect proof?",
+            "marks": 2,
+            "topic": "Mathematical Proofs",
+            "answer": "A direct proof is a proof that establishes the truth of a statement by showing that it is a logical consequence of previously established facts. An indirect proof, on the other hand, involves showing that the negation of the statement leads to a contradiction.",
+            "key_points": [
+              "Direct proof",
+              "Indirect proof",
+              "Logical consequence"
+            ]
+          },
+          {
+            "q": "Explain the concept of a mathematical induction.",
+            "marks": 2,
+            "topic": "Mathematical Induction",
+            "answer": "Mathematical induction is a method of proof that involves showing that a statement is true for the smallest possible value of the variable and then showing that if the statement is true for a particular value, it is also true for the next value.",
+            "key_points": [
+              "Definition",
+              "Method of proof",
+              "Variable"
+            ]
+          },
+          {
+            "q": "What is the purpose of a counterexample in a mathematical proof?",
+            "marks": 2,
+            "topic": "Mathematical Proofs",
+            "answer": "A counterexample is a specific instance that shows a statement is false. In a mathematical proof, a counterexample is used to disprove a statement and show that it is not necessarily true for all cases.",
+            "key_points": [
+              "Definition",
+              "Disproving statement",
+              "Specific instance"
+            ]
+          },
+          {
+            "q": "Explain the concept of a mathematical conjecture.",
+            "marks": 2,
+            "topic": "Mathematical Conjectures",
+            "answer": "A mathematical conjecture is a statement that is believed to be true, but has not been rigorously proved. It is often based on observations, experiments, or numerical evidence.",
+            "key_points": [
+              "Definition",
+              "Belief",
+              "Observation"
+            ]
+          },
+          {
+            "q": "What is the importance of mathematical reasoning in problem-solving?",
+            "marks": 2,
+            "topic": "Mathematical Reasoning",
+            "answer": "Mathematical reasoning is essential in problem-solving as it helps in understanding the problem, identifying the relevant mathematical concepts, and developing a logical approach to solve it. It also helps in verifying the correctness of the solution.",
+            "key_points": [
+              "Importance",
+              "Problem-solving",
+              "Logical approach"
+            ]
+          },
+          {
+            "q": "Explain the concept of a mathematical argument.",
+            "marks": 2,
+            "topic": "Mathematical Arguments",
+            "answer": "A mathematical argument is a logical and coherent presentation of ideas and evidence that is used to establish the truth of a mathematical statement. It involves using mathematical concepts, theorems, and examples to support the claim.",
+            "key_points": [
+              "Definition",
+              "Logical presentation",
+              "Evidence"
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:34:23.96+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Mathematical Reasoning — Quick Revision Notes\n\n## ⚡ Key Points\n\n* Mathematical reasoning involves logical thinking and problem-solving skills.\n* It involves identifying patterns, making assumptions, and drawing conclusions.\n* Statements, assumptions, and conclusions are used to form mathematical arguments.\n* A mathematical argument is a series of statements that lead to a conclusion.\n* A statement is a sentence that is either true or false.\n* An assumption is a statement that is taken to be true without proof.\n* A conclusion is a statement that follows logically from the assumptions and statements.\n* Mathematical arguments can be either direct or indirect.\n* A direct mathematical argument involves a series of true statements that lead to a conclusion.\n* An indirect mathematical argument involves a series of true statements that lead to a conclusion through a series of false statements.\n* In a mathematical argument, the conclusion must be true if the assumptions and statements are true.\n* Mathematical arguments can be used to prove or disprove mathematical statements.\n* A proof is a mathematical argument that establishes the truth of a statement.\n* A disproof is a mathematical argument that establishes the falsity of a statement.\n* In a mathematical argument, it is essential to use valid and sound reasoning.\n* Valid reasoning involves using true statements and assumptions to draw a conclusion.\n* Sound reasoning involves using true statements and assumptions that are relevant to the conclusion.\n* Mathematical arguments can be used to solve problems and make predictions.\n* In a mathematical argument, it is essential to be clear and concise in the language used.\n* Mathematical arguments can be used to develop mathematical models and theories.\n* Mathematical arguments are used in various fields such as science, engineering, and economics.\n\n## 🔑 Must-Know Definitions\n\n* **Statement**: A sentence that is either true or false.\n* **Assumption**: A statement that is taken to be true without proof.\n* **Conclusion**: A statement that follows logically from the assumptions and statements.\n* **Direct Mathematical Argument**: A series of true statements that lead to a conclusion.\n* **Indirect Mathematical Argument**: A series of true statements that lead to a conclusion through a series of false statements.\n* **Proof**: A mathematical argument that establishes the truth of a statement.\n* **Disproof**: A mathematical argument that establishes the falsity of a statement.\n\n## 📊 Important Formulas\n\n* **Modus Ponens**: If p, then q. p is true. ∴ q is true.\n* **Modus Tollens**: If p, then q. Not q. ∴ Not p.\n* **Hypothetical Syllogism**: If p, then q. If q, then r. ∴ If p, then r.\n* **Disjunctive Syllogism**: p or q. Not p. ∴ q.\n* **Law of Contrapositive**: If p, then q. ∴ If not q, then not p.\n\n## ⭐ Exam Tips\n\n* Read the question carefully and understand what is being asked.\n* Use clear and concise language in your mathematical arguments.\n* Make sure to use valid and sound reasoning in your mathematical arguments.\n* Use examples to illustrate your mathematical arguments.\n* Be prepared to explain and justify your mathematical arguments.\n* Use the given information to draw conclusions and make predictions.\n* Practice solving problems and making predictions using mathematical arguments."
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Measures of Dispersion",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:35:01.544Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the difference between Range and Interquartile Range (IQR)?",
+        "marks": 2,
+        "answer": "Range is the difference between the highest and lowest values in a dataset, whereas Interquartile Range (IQR) is the difference between the third quartile (Q3) and the first quartile (Q1). IQR is a more reliable measure of dispersion than Range as it is not affected by outliers.",
+        "key_points": [
+          "Range",
+          "Interquartile Range",
+          "Outliers"
+        ],
+        "topic": "Measures of Dispersion"
+      },
+      {
+        "q": "What is the Quartile Deviation (QD) formula?",
+        "marks": 2,
+        "answer": "Quartile Deviation (QD) = (Q3 - Q1) / 2, where Q3 is the third quartile and Q1 is the first quartile.",
+        "key_points": [
+          "Quartile Deviation",
+          "Q3",
+          "Q1"
+        ],
+        "topic": "Measures of Dispersion"
+      },
+      {
+        "q": "What is the advantage of using Mean Deviation over Range?",
+        "marks": 2,
+        "answer": "Mean Deviation is a more reliable measure of dispersion than Range as it takes into account all the values in the dataset, not just the highest and lowest values.",
+        "key_points": [
+          "Mean Deviation",
+          "Range",
+          "Dispersion"
+        ],
+        "topic": "Measures of Dispersion"
+      },
+      {
+        "q": "What is the Coefficient of Range (CR) formula?",
+        "marks": 2,
+        "answer": "Coefficient of Range (CR) = (R - Rmin) / (Rmax - Rmin), where R is the range, Rmin is the minimum value, and Rmax is the maximum value.",
+        "key_points": [
+          "Coefficient of Range",
+          "Range",
+          "Minimum Value",
+          "Maximum Value"
+        ],
+        "topic": "Measures of Dispersion"
+      },
+      {
+        "q": "What is the importance of Variance in statistics?",
+        "marks": 2,
+        "answer": "Variance is a measure of dispersion that helps in understanding the spread of data around the mean value. It is used in various statistical tests and formulas to make inferences about a population.",
+        "key_points": [
+          "Variance",
+          "Dispersion",
+          "Mean Value",
+          "Statistical Tests"
+        ],
+        "topic": "Measures of Dispersion"
+      },
+      {
+        "q": "What is the Standard Deviation (SD) formula?",
+        "marks": 2,
+        "answer": "Standard Deviation (SD) = √Variance, where Variance is the average of the squared differences from the mean.",
+        "key_points": [
+          "Standard Deviation",
+          "Variance",
+          "Mean"
+        ],
+        "topic": "Measures of Dispersion"
+      },
+      {
+        "q": "What is the difference between Variance and Standard Deviation?",
+        "marks": 2,
+        "answer": "Variance is the average of the squared differences from the mean, whereas Standard Deviation is the square root of Variance. Standard Deviation is a more intuitive measure of dispersion as it is expressed in the same units as the data.",
+        "key_points": [
+          "Variance",
+          "Standard Deviation",
+          "Mean",
+          "Units"
+        ],
+        "topic": "Measures of Dispersion"
+      },
+      {
+        "q": "What is the Coefficient of Variation (CV) formula?",
+        "marks": 2,
+        "answer": "Coefficient of Variation (CV) = (SD / Mean) x 100, where SD is the standard deviation and Mean is the average value.",
+        "key_points": [
+          "Coefficient of Variation",
+          "Standard Deviation",
+          "Mean"
+        ],
+        "topic": "Measures of Dispersion"
+      },
+      {
+        "q": "What is the advantage of using Standard Deviation over Variance?",
+        "marks": 2,
+        "answer": "Standard Deviation is a more intuitive measure of dispersion than Variance as it is expressed in the same units as the data, making it easier to understand and interpret.",
+        "key_points": [
+          "Standard Deviation",
+          "Variance",
+          "Dispersion",
+          "Units"
+        ],
+        "topic": "Measures of Dispersion"
+      },
+      {
+        "q": "What is the relation between Standard Deviation and Interquartile Range (IQR)?",
+        "marks": 2,
+        "answer": "Standard Deviation is related to Interquartile Range (IQR) by the formula: SD ≈ 0.5(IQR). This shows that Standard Deviation is approximately half the value of IQR.",
+        "key_points": [
+          "Standard Deviation",
+          "Interquartile Range",
+          "IQR"
+        ],
+        "topic": "Measures of Dispersion"
+      }
+    ],
+    "total": 10
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Encoding Schemes and Number Systems",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:24:09.061Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Binary is a base-2 number system.",
+        "reason": "Reason (R): All digits in binary system are either 0 or 1.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Binary is indeed a base-2 number system because it uses two digits: 0 and 1. The reason given is correct as it explains why binary is base-2."
+      },
+      {
+        "assertion": "Assertion (A): Decimal is a base-8 number system.",
+        "reason": "Reason (R): Decimal uses eight digits: 0, 1, 2, 3, 4, 5, 6, and 7.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Decimal is not a base-8 number system, it is actually a base-10 number system. The reason given is true but it does not explain why decimal is not base-8."
+      },
+      {
+        "assertion": "Assertion (A): Hexadecimal is a base-16 number system.",
+        "reason": "Reason (R): It uses 16 digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, and F.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Hexadecimal is indeed a base-16 number system because it uses 16 digits: 0 to 9 and A to F. The reason given is correct as it explains why hexadecimal is base-16."
+      },
+      {
+        "assertion": "Assertion (A): ASCII is a 4-bit character encoding scheme.",
+        "reason": "Reason (R): ASCII uses 128 characters.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "ASCII is not a 4-bit character encoding scheme, it is actually 7-bit or 8-bit. The reason given is true but it does not explain why ASCII is not a 4-bit scheme."
+      },
+      {
+        "assertion": "Assertion (A): Unicode is a 16-bit character encoding scheme.",
+        "reason": "Reason (R): Unicode supports more than 65,000 characters.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Unicode is not a 16-bit character encoding scheme, it is actually variable-length. The reason given is true but it does not explain why Unicode is not a 16-bit scheme."
+      },
+      {
+        "assertion": "Assertion (A): The ASCII character set is a subset of the Unicode character set.",
+        "reason": "Reason (R): ASCII uses only the first 128 characters of Unicode.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "ASCII is indeed a subset of Unicode because it only uses the first 128 characters of Unicode. The reason given is correct as it explains why ASCII is a subset of Unicode."
+      },
+      {
+        "assertion": "Assertion (A): The Unicode character set is a subset of the ASCII character set.",
+        "reason": "Reason (R): Unicode supports more than 65,000 characters.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The Unicode character set is not a subset of the ASCII character set, in fact, it is the other way around. The reason given is true but it does not explain why Unicode is not a subset of ASCII."
+      },
+      {
+        "assertion": "Assertion (A): UTF-8 is a variable-length character encoding scheme.",
+        "reason": "Reason (R): It uses 1 to 4 bytes to represent each character.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "UTF-8 is indeed a variable-length character encoding scheme because it uses 1 to 4 bytes to represent each character. The reason given is correct as it explains why UTF-8 is variable-length."
+      },
+      {
+        "assertion": "Assertion (A): The binary number system is a base-10 number system.",
+        "reason": "Reason (R): All digits in binary system are either 0 or 1.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The binary number system is not a base-10 number system, it is actually base-2. The reason given is true but it does not explain why binary is not base-10."
+      },
+      {
+        "assertion": "Assertion (A): ASCII uses only 7-bit characters.",
+        "reason": "Reason (R): ASCII supports 128 characters.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "ASCII indeed uses only 7-bit characters because it supports 128 characters. The reason given is correct as it explains why ASCII uses 7-bit characters."
+      }
+    ],
+    "total": 10
+  }
+}

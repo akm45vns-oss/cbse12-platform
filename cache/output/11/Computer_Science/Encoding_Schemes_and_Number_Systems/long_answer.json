@@ -1,0 +1,79 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Encoding Schemes and Number Systems",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-26T08:10:30.221Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "a) What is the main difference between binary and hexadecimal number systems? Explain with examples. <br> b) Give an example of how you would convert a decimal number to hexadecimal and vice versa.",
+        "marks": 5,
+        "answer": "The main difference between binary and hexadecimal number systems is the base value. Binary has a base value of 2, whereas hexadecimal has a base value of 16. This results in a shorter representation of numbers in hexadecimal compared to binary.<br><br>For example, the decimal number 255 can be represented in binary as 11111111 and in hexadecimal as FF. This shows that hexadecimal is more efficient for representing large numbers.<br><br>To convert a decimal number to hexadecimal, we can use the following steps: <br>Divide the decimal number by 16 and note the remainder.<br>Repeat the division with the quotient until it becomes 0.<br>Write down the remainders in reverse order to get the hexadecimal number.<br><br>For example, to convert the decimal number 255 to hexadecimal: <br>255 ÷ 16 = 15 remainder 15.<br>15 ÷ 16 = 0 remainder 15.<br>So, the hexadecimal number is 15 15 or FF.<br><br>To convert a hexadecimal number to decimal, we can use the following steps: <br>Write down the hexadecimal number and multiply each digit by 16 raised to the power of its position (starting from 0 for the rightmost digit).<br>Add up the results to get the decimal number.<br><br>For example, to convert the hexadecimal number FF to decimal: <br>FF = (F × 16^1) + (F × 16^0) = (15 × 16) + 15 = 240 + 15 = 255.",
+        "marking_scheme": [
+          "Explain the main difference between binary and hexadecimal number systems (1 mark)",
+          "Give examples of binary and hexadecimal representations of a decimal number (1 mark)",
+          "Describe the steps to convert a decimal number to hexadecimal (1 mark)",
+          "Describe the steps to convert a hexadecimal number to decimal (1 mark)",
+          "Provide a correct example of converting a decimal number to hexadecimal and vice versa (1 mark)"
+        ],
+        "topic": "Number Systems"
+      },
+      {
+        "q": "a) What is ASCII? Explain its significance in computer science.<br>b) How many bits are required to represent a character in ASCII?<br>c) Give an example of how ASCII is used in real-world applications.",
+        "marks": 5,
+        "answer": "ASCII (American Standard Code for Information Interchange) is a character encoding standard that assigns unique binary codes to characters, symbols, and control characters. It is significant in computer science as it enables communication between devices and allows for the representation of text in digital form.<br><br>The ASCII character set uses 7-bit binary codes, which means 2^7 = 128 unique characters can be represented. This includes uppercase and lowercase letters, digits, punctuation marks, and control characters.<br><br>ASCII is used in real-world applications such as web development, where it is used to represent text on websites and web applications. For example, when you type a message on a website, it is converted into ASCII codes and sent to the server for processing.",
+        "marking_scheme": [
+          "Explain the significance of ASCII in computer science (1 mark)",
+          "Describe the number of bits required to represent a character in ASCII (1 mark)",
+          "Provide an example of how ASCII is used in real-world applications (1 mark)",
+          "Describe the ASCII character set and its limitations (1 mark)",
+          "Explain how ASCII is used in web development (1 mark)"
+        ],
+        "topic": "Encoding Schemes"
+      },
+      {
+        "q": "a) What is Unicode?<br>b) How does Unicode address the limitations of ASCII?<br>c) What are the advantages of using Unicode over ASCII?",
+        "marks": 5,
+        "answer": "Unicode is a character encoding standard that assigns unique binary codes to characters, symbols, and control characters from almost all human languages. It addresses the limitations of ASCII by supporting a much larger character set, including characters from non-English languages, and providing a more comprehensive representation of the world's languages.<br><br>The main advantage of using Unicode over ASCII is its ability to represent a wide range of languages and characters, making it a more versatile and inclusive encoding standard. This is particularly important in a globalized world where communication across languages and cultures is increasingly common.",
+        "marking_scheme": [
+          "Explain the concept of Unicode (1 mark)",
+          "Describe how Unicode addresses the limitations of ASCII (1 mark)",
+          "List the advantages of using Unicode over ASCII (1 mark)",
+          "Explain the importance of Unicode in a globalized world (1 mark)",
+          "Describe the differences between Unicode and ASCII (1 mark)"
+        ],
+        "topic": "Encoding Schemes"
+      },
+      {
+        "q": "a) What is a bit vector?<br>b) Explain how bit vectors are used in computer science.<br>c) Provide an example of how bit vectors are used in real-world applications.",
+        "marks": 5,
+        "answer": "A bit vector is a compact binary representation of a set of Boolean values. It is a sequence of bits where each bit corresponds to a particular Boolean value. Bit vectors are used in computer science to efficiently store and manipulate large sets of Boolean values, such as flags or permissions.<br><br>Bit vectors are used in various applications, including database indexing, memory management, and security protocols. For example, in database indexing, bit vectors can be used to quickly identify relevant documents based on their metadata.",
+        "marking_scheme": [
+          "Explain the concept of a bit vector (1 mark)",
+          "Describe the uses of bit vectors in computer science (1 mark)",
+          "Provide an example of how bit vectors are used in real-world applications (1 mark)",
+          "Explain the benefits of using bit vectors (1 mark)",
+          "Describe how bit vectors can be used to optimize performance (1 mark)"
+        ],
+        "topic": "Encoding Schemes"
+      },
+      {
+        "q": "a) What is Gray code?<br>b) Explain the properties of Gray code.<br>c) Provide an example of how Gray code is used in real-world applications.",
+        "marks": 5,
+        "answer": "Gray code is a binary numeral system where two successive values differ in only one bit. This makes it useful for applications where data is transmitted or received in a sequential manner, such as in digital communications or data storage. Gray code has the following properties: <br><br>It has a minimum number of transitions between successive values, which makes it suitable for applications where data is transmitted or received in a sequential manner.<br>It can be implemented using a simple circuit, making it cost-effective for hardware implementation.<br><br>Gray code is used in real-world applications such as digital communications, data storage, and navigation systems. For example, in navigation systems, Gray code can be used to represent the position of a vehicle, allowing for efficient and accurate navigation.",
+        "marking_scheme": [
+          "Explain the concept of Gray code (1 mark)",
+          "Describe the properties of Gray code (1 mark)",
+          "Provide an example of how Gray code is used in real-world applications (1 mark)",
+          "Explain the advantages of using Gray code (1 mark)",
+          "Describe how Gray code can be implemented using hardware (1 mark)"
+        ],
+        "topic": "Number Systems"
+      }
+    ],
+    "total": 5
+  }
+}

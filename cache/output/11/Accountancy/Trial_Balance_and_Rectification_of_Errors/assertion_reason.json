@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Accountancy",
+  "chapter": "Trial Balance and Rectification of Errors",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:23:51.734Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Trial Balance is a statement of all ledger accounts balances at a particular date.",
+        "reason": "Reason (R): It helps in detecting errors in ledger accounts and also in preparation of final accounts.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the trial balance is indeed a list of all ledger accounts and their balances, and it is used to detect errors and prepare final accounts."
+      },
+      {
+        "assertion": "Assertion (A): Rectification of errors is the process of making adjustments in the ledger accounts to correct errors.",
+        "reason": "Reason (R): The main objective of rectification of errors is to ensure the accuracy of financial statements.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because rectifying errors is indeed about making adjustments to correct errors, and the main objective is to ensure the accuracy of financial statements."
+      },
+      {
+        "assertion": "Assertion (A): Omissions from ledger accounts can be rectified by passing a journal entry.",
+        "reason": "Reason (R): This journal entry should be the reverse of the transaction that was omitted.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because omissions can be rectified by passing a journal entry, and this entry should be the reverse of the transaction that was omitted."
+      },
+      {
+        "assertion": "Assertion (A): Overdraft is a type of genuine error.",
+        "reason": "Reason (R): It occurs due to genuine transactions and is allowed in the accounts of a business.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because overdraft is indeed a type of genuine error, and it occurs due to genuine transactions that are allowed in the accounts of a business."
+      },
+      {
+        "assertion": "Assertion (A): The total of debit side of trial balance should be equal to the total of credit side.",
+        "reason": "Reason (R): As per the principle of accounting, debits must equal credits.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the total of the debit side of the trial balance should indeed be equal to the total of the credit side, as per the principle of accounting that debits must equal credits."
+      },
+      {
+        "assertion": "Assertion (A): Rectification of errors is done before preparation of final accounts.",
+        "reason": "Reason (R): It helps in ensuring the accuracy of financial statements.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because rectifying errors is indeed done before preparation of final accounts, and it helps in ensuring the accuracy of financial statements."
+      },
+      {
+        "assertion": "Assertion (A): The following are the errors of principle: 1) Omitting a transaction, 2) Posting all transactions in the wrong side.",
+        "reason": "Reason (R): These errors affect the financial statement and may lead to serious consequences.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because omitting a transaction is an error of omission, not an error of principle. Posting all transactions in the wrong side is an error of commission, but it is not an error of principle. Errors of principle are serious errors that affect the financial statement and may lead to serious consequences, such as misrepresentation of financial position or results of operations."
+      },
+      {
+        "assertion": "Assertion (A): Errors of commission can be rectified by reversing the journal entry.",
+        "reason": "Reason (R): This journal entry is the opposite of the original journal entry that caused the error.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because errors of commission can be rectified by reversing the journal entry, and this journal entry is indeed the opposite of the original journal entry that caused the error."
+      },
+      {
+        "assertion": "Assertion (A): Undercasting is a type of error of omission.",
+        "reason": "Reason (R): It occurs when a transaction is recorded at a lower amount than the actual amount.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because undercasting is a type of error of commission, not an error of omission. Error of omission occurs when a transaction is omitted or not recorded at all, whereas error of commission occurs when a transaction is recorded at an incorrect amount."
+      }
+    ],
+    "total": 9
+  }
+}

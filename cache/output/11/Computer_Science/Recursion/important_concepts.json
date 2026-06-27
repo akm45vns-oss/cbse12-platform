@@ -1,0 +1,133 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Recursion",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:15:08.009Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "concept": "Recursion Definition",
+        "explanation": "Recursion is a programming technique where a function calls itself repeatedly until it reaches a base case that stops the recursion. This allows the function to solve complex problems by breaking them down into smaller sub-problems of the same type.",
+        "importance": "Understanding recursion is crucial for solving problems that have a recursive structure, such as tree traversals, linked lists, and dynamic programming.",
+        "related_topics": [
+          "Recursion Types",
+          "Base Cases",
+          "Time Complexity"
+        ]
+      },
+      {
+        "concept": "Base Cases",
+        "explanation": "A base case is the condition that stops the recursion. It is the simplest case that can be solved directly without calling the function recursively.",
+        "importance": "Identifying the correct base case is critical for ensuring that the recursion terminates and produces the correct result.",
+        "related_topics": [
+          "Recursion Definition",
+          "Time Complexity",
+          "Recursive Functions"
+        ]
+      },
+      {
+        "concept": "Recursive Functions",
+        "explanation": "A recursive function is a function that calls itself repeatedly until it reaches a base case. Recursive functions are useful for solving problems that have a recursive structure.",
+        "importance": "Understanding how to write recursive functions is essential for solving problems that require recursion.",
+        "related_topics": [
+          "Recursion Definition",
+          "Base Cases",
+          "Time Complexity"
+        ]
+      },
+      {
+        "concept": "Time Complexity of Recursion",
+        "explanation": "The time complexity of a recursive function is determined by the number of function calls and the time taken by each call. A recursive function with a high time complexity can be inefficient and even lead to a stack overflow.",
+        "importance": "Understanding the time complexity of recursive functions is crucial for writing efficient code and avoiding performance issues.",
+        "related_topics": [
+          "Recursion Definition",
+          "Base Cases",
+          "Space Complexity"
+        ]
+      },
+      {
+        "concept": "Space Complexity of Recursion",
+        "explanation": "The space complexity of a recursive function is determined by the amount of memory used by each function call. A recursive function with a high space complexity can lead to a stack overflow.",
+        "importance": "Understanding the space complexity of recursive functions is crucial for writing efficient code and avoiding performance issues.",
+        "related_topics": [
+          "Recursion Definition",
+          "Time Complexity",
+          "Base Cases"
+        ]
+      },
+      {
+        "concept": "Tail Recursion",
+        "explanation": "Tail recursion is a technique where the recursive call is the last statement in the function. This allows the compiler to optimize the function call and avoid using extra stack space.",
+        "importance": "Understanding tail recursion is essential for writing efficient recursive functions and avoiding performance issues.",
+        "related_topics": [
+          "Recursion Definition",
+          "Base Cases",
+          "Time Complexity"
+        ]
+      },
+      {
+        "concept": "Mutual Recursion",
+        "explanation": "Mutual recursion is a technique where two or more functions call each other recursively. This can be used to solve problems that require a more complex recursive structure.",
+        "importance": "Understanding mutual recursion is essential for solving problems that require a more complex recursive structure.",
+        "related_topics": [
+          "Recursion Definition",
+          "Base Cases",
+          "Time Complexity"
+        ]
+      },
+      {
+        "concept": "Memoization",
+        "explanation": "Memoization is a technique where the results of expensive function calls are stored and reused instead of recalculating them. This can be used to optimize recursive functions and improve performance.",
+        "importance": "Understanding memoization is essential for optimizing recursive functions and improving performance.",
+        "related_topics": [
+          "Recursion Definition",
+          "Time Complexity",
+          "Dynamic Programming"
+        ]
+      },
+      {
+        "concept": "Dynamic Programming",
+        "explanation": "Dynamic programming is a technique where problems are broken down into smaller sub-problems and solved recursively. This can be used to solve problems that require a recursive structure.",
+        "importance": "Understanding dynamic programming is essential for solving problems that require a recursive structure and optimizing performance.",
+        "related_topics": [
+          "Recursion Definition",
+          "Time Complexity",
+          "Memoization"
+        ]
+      },
+      {
+        "concept": "Recursion Types",
+        "explanation": "Recursion can be classified into three types: linear, nonlinear, and multiple. Each type has its own characteristics and is used to solve different types of problems.",
+        "importance": "Understanding the different types of recursion is essential for solving problems that require a recursive structure.",
+        "related_topics": [
+          "Recursion Definition",
+          "Base Cases",
+          "Time Complexity"
+        ]
+      },
+      {
+        "concept": "Recursive Algorithms",
+        "explanation": "Recursive algorithms are algorithms that use recursion to solve a problem. They can be used to solve problems that have a recursive structure.",
+        "importance": "Understanding recursive algorithms is essential for solving problems that require a recursive structure.",
+        "related_topics": [
+          "Recursion Definition",
+          "Time Complexity",
+          "Dynamic Programming"
+        ]
+      },
+      {
+        "concept": "Recursive Data Structures",
+        "explanation": "Recursive data structures are data structures that contain recursive references to themselves. They can be used to solve problems that have a recursive structure.",
+        "importance": "Understanding recursive data structures is essential for solving problems that require a recursive structure.",
+        "related_topics": [
+          "Recursion Definition",
+          "Time Complexity",
+          "Dynamic Programming"
+        ]
+      }
+    ]
+  }
+}

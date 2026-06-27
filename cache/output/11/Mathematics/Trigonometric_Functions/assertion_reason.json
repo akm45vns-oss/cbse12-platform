@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Trigonometric Functions",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:13:07.445Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The range of the sine function is [0, 1].",
+        "reason": "Reason (R): Sine function is positive in the first and second quadrants.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The range of the sine function is [0, 1] because the maximum value of sine function occurs in the first quadrant which is 1 and sine function is positive in the first and second quadrants."
+      },
+      {
+        "assertion": "Assertion (A): The graph of y = sin x + c is a periodic function.",
+        "reason": "Reason (R): The sine function is periodic and the sum of a periodic function and a constant is also periodic.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The graph of y = sin x + c is a periodic function because the sine function is periodic and the sum of a periodic function and a constant is also periodic."
+      },
+      {
+        "assertion": "Assertion (A): The tangent function is periodic with period 2π.",
+        "reason": "Reason (R): The tangent function is defined as tan x = sin x / cos x and the sine and cosine functions are periodic with period 2π.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The tangent function is periodic with period 2π because the sine and cosine functions are periodic with period 2π and the tangent function is defined as tan x = sin x / cos x."
+      },
+      {
+        "assertion": "Assertion (A): The cosine function is an even function.",
+        "reason": "Reason (R): The cosine function satisfies the condition cos(-x) = cos x.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The cosine function is an even function because the cosine function satisfies the condition cos(-x) = cos x."
+      },
+      {
+        "assertion": "Assertion (A): The sine function is an odd function.",
+        "reason": "Reason (R): The sine function satisfies the condition sin(-x) = -sin x.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The sine function is an odd function because the sine function satisfies the condition sin(-x) = -sin x."
+      },
+      {
+        "assertion": "Assertion (A): The value of the sine function at π/6 is 1/2.",
+        "reason": "Reason (R): The value of the sine function at π/6 is sin(π/6) = 0.5.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The value of the sine function at π/6 is indeed 1/2."
+      },
+      {
+        "assertion": "Assertion (A): The graph of y = cos x is a periodic function.",
+        "reason": "Reason (R): The cosine function is periodic and the graph of y = cos x represents the cosine function.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The graph of y = cos x is a periodic function because the cosine function is periodic and the graph of y = cos x represents the cosine function."
+      },
+      {
+        "assertion": "Assertion (A): The range of the cosine function is [0, 1].",
+        "reason": "Reason (R): The cosine function is positive in the first and fourth quadrants.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The range of the cosine function is actually [-1, 1], not [0, 1]. Although the cosine function is positive in the first and fourth quadrants, this does not explain the entire range of the function."
+      },
+      {
+        "assertion": "Assertion (A): The tangent function is defined as tan x = cos x / sin x.",
+        "reason": "Reason (R): The tangent function is defined as tan x = sin x / cos x.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The tangent function is actually defined as tan x = sin x / cos x, not cos x / sin x."
+      }
+    ],
+    "total": 9
+  }
+}

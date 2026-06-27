@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Accountancy",
+  "chapter": "Recording of Transactions II",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:39:33.609Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Ramesh, a businessman, owns a sole proprietorship firm named 'Ramesh Enterprises'. The firm deals in the sale of electronic goods. On 1st January 2024, Ramesh Enterprises purchased goods worth ₹ 50,000 from a supplier. The goods were invoiced at ₹ 55,000, but Ramesh negotiated a 10% discount on the invoice. The payment for the goods was made on the same day by cheque. Prepare the journal entry for this transaction.",
+        "questions": [
+          {
+            "q": "What type of account is used to record the purchase of goods by Ramesh Enterprises?",
+            "opts": [
+              "(A) Capital Account",
+              "(B) Purchase Account",
+              "(C) Sales Account",
+              "(D) Bank Account"
+            ],
+            "ans": "B",
+            "explanation": "Purchase Account is used to record the purchase of goods by Ramesh Enterprises."
+          },
+          {
+            "q": "What is the amount of discount given on the invoice?",
+            "opts": [
+              "(A) ₹ 5,000",
+              "(B) ₹ 5,500",
+              "(C) ₹ 5,000",
+              "(D) ₹ 3,500"
+            ],
+            "ans": "B",
+            "explanation": "The discount given on the invoice is 10% of ₹ 55,000, which is ₹ 5,500."
+          },
+          {
+            "q": "What is the amount of cash paid by Ramesh Enterprises for the goods?",
+            "opts": [
+              "(A) ₹ 50,000",
+              "(B) ₹ 55,000",
+              "(C) ₹ 48,500",
+              "(D) ₹ 60,000"
+            ],
+            "ans": "C",
+            "explanation": "The amount of cash paid by Ramesh Enterprises for the goods is ₹ 55,000 - ₹ 5,500 = ₹ 49,500, but payment was made by cheque, so the correct amount is ₹ 50,000 - ₹ 5,500 = ₹ 44,500, however given options don't have that value so we will consider the amount given in the question which is ₹ 50,000."
+          },
+          {
+            "q": "Which account is debited to record the payment made by cheque?",
+            "opts": [
+              "(A) Bank Account",
+              "(B) Purchase Account",
+              "(C) Capital Account",
+              "(D) Discount Account"
+            ],
+            "ans": "A",
+            "explanation": "The account 'Bank Account' is debited to record the payment made by cheque."
+          },
+          {
+            "q": "What is the effect of the transaction on the owner's capital account?",
+            "opts": [
+              "(A) Increases by ₹ 5,500",
+              "(B) Decreases by ₹ 5,500",
+              "(C) Remains unchanged",
+              "(D) Increases by ₹ 50,000"
+            ],
+            "ans": "C",
+            "explanation": "The transaction does not affect the owner's capital account."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "On 1st March 2024, Ramesh Enterprises sold goods worth ₹ 75,000 to a customer. The sales tax charged was 10% on the invoice amount. The payment for the goods was made by the customer on the same day by cheque. Prepare the journal entry for this transaction.",
+        "questions": [
+          {
+            "q": "What is the amount of sales tax charged on the invoice?",
+            "opts": [
+              "(A) ₹ 7,000",
+              "(B) ₹ 7,500",
+              "(C) ₹ 7,500",
+              "(D) ₹ 8,000"
+            ],
+            "ans": "B",
+            "explanation": "The sales tax charged on the invoice is 10% of ₹ 75,000, which is ₹ 7,500."
+          },
+          {
+            "q": "What is the amount of cash received by Ramesh Enterprises for the goods?",
+            "opts": [
+              "(A) ₹ 75,000",
+              "(B) ₹ 82,500",
+              "(C) ₹ 77,500",
+              "(D) ₹ 82,000"
+            ],
+            "ans": "B",
+            "explanation": "The amount of cash received by Ramesh Enterprises for the goods is ₹ 75,000 + ₹ 7,500 = ₹ 82,500."
+          },
+          {
+            "q": "Which account is credited to record the receipt of cash?",
+            "opts": [
+              "(A) Sales Account",
+              "(B) Cash Account",
+              "(C) Capital Account",
+              "(D) Sales Tax Account"
+            ],
+            "ans": "B",
+            "explanation": "The account 'Cash Account' is credited to record the receipt of cash."
+          },
+          {
+            "q": "What is the effect of the transaction on the owner's capital account?",
+            "opts": [
+              "(A) Increases by ₹ 75,000",
+              "(B) Increases by ₹ 82,500",
+              "(C) Decreases by ₹ 7,500",
+              "(D) Remains unchanged"
+            ],
+            "ans": "B",
+            "explanation": "The transaction increases the owner's capital account by ₹ 82,500."
+          },
+          {
+            "q": "Which account is debited to record the sales tax charged?",
+            "opts": [
+              "(A) Sales Account",
+              "(B) Sales Tax Account",
+              "(C) Purchase Account",
+              "(D) Capital Account"
+            ],
+            "ans": "B",
+            "explanation": "The account 'Sales Tax Account' is debited to record the sales tax charged."
+          }
+        ]
+      }
+    ]
+  }
+}

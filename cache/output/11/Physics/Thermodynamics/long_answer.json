@@ -1,0 +1,64 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Thermodynamics",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:04:53.797Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A refrigerator operates between 4°C and -15°C temperatures. Calculate the coefficient of performance (COP) of the refrigerator. Assume the refrigerator works on the Carnot cycle.",
+        "marks": 5,
+        "answer": "Given the temperatures T1 = 277 K and T2 = 258 K, the coefficient of performance (COP) is given by COP = T2 / (T1 - T2) = 258 / (277 - 258) = 258 / 19 = 13.58. Therefore, the coefficient of performance (COP) of the refrigerator is 13.58.",
+        "marking_scheme": [
+          "Calculate the temperatures T1 and T2 from the given temperatures.",
+          "Use the formula COP = T2 / (T1 - T2) to calculate the coefficient of performance."
+        ],
+        "topic": "Refrigeration and Liquefaction"
+      },
+      {
+        "q": "A heat engine has an efficiency of 30%. The heat is supplied at a temperature of 500 K and the engine rejects heat at a temperature of 300 K. Calculate the work done by the engine in one cycle.",
+        "marks": 5,
+        "answer": "Given the efficiency η = 30% = 0.3, the heat supplied Q1 = 100 J, and the heat rejected Q2 = 70 J. We know that η = 1 - Q2 / Q1. Using this, we can calculate Q1 = 100 J. Now, we can calculate the work done W by the engine using the formula W = ηQ1 = 0.3 * 100 = 30 J.",
+        "marking_scheme": [
+          "Use the formula η = 1 - Q2 / Q1 to calculate the heat supplied Q1.",
+          "Calculate the work done W by the engine using the formula W = ηQ1."
+        ],
+        "topic": "Heat Engines"
+      },
+      {
+        "q": "A Carnot refrigerator operates between 0°C and -10°C. What is the amount of work done per unit of heat removed in the case of a Carnot refrigerator?",
+        "marks": 5,
+        "answer": "Given the temperatures T1 = 273 K and T2 = 263 K, the coefficient of performance (COP) of the Carnot refrigerator is given by COP = T2 / (T1 - T2) = 263 / (273 - 263) = 263 / 10 = 26.3. We know that COP = W / Q2, where W is the work done per unit of heat removed. Therefore, W = COP * Q2 = 26.3 * 10 = 263 J.",
+        "marking_scheme": [
+          "Calculate the temperatures T1 and T2 from the given temperatures.",
+          "Use the formula COP = W / Q2 to calculate the work done W per unit of heat removed."
+        ],
+        "topic": "Refrigeration and Liquefaction"
+      },
+      {
+        "q": "A carnot engine has an efficiency of 25%. The heat is supplied at a temperature of 400 K. The engine rejects heat at a temperature of 300 K. What is the ratio of the heat supplied to the heat rejected?",
+        "marks": 5,
+        "answer": "Given the efficiency η = 25% = 0.25, we know that η = 1 - Q2 / Q1, where Q1 is the heat supplied and Q2 is the heat rejected. Rearranging this, we get Q2 / Q1 = 1 - η = 1 - 0.25 = 0.75. Therefore, the ratio of the heat supplied to the heat rejected is Q1 / Q2 = 1 / 0.75 = 4 / 3.",
+        "marking_scheme": [
+          "Use the formula η = 1 - Q2 / Q1 to calculate the ratio of the heat supplied to the heat rejected.",
+          "Rearrange the formula to get the ratio Q1 / Q2."
+        ],
+        "topic": "Heat Engines"
+      },
+      {
+        "q": "An ideal gas is heated from 300 K to 400 K at constant volume. What is the change in the internal energy of the gas?",
+        "marks": 5,
+        "answer": "Given the initial and final temperatures T1 = 300 K and T2 = 400 K, we know that the change in internal energy ΔU is given by ΔU = nCvΔT, where n is the number of moles of the gas, Cv is the specific heat capacity at constant volume, and ΔT is the change in temperature. Since the gas is heated at constant volume, Cv is constant and equal to 20.8 J/mol*K. Therefore, ΔU = n * 20.8 * (400 - 300) = n * 20.8 * 100 = 2080 n.",
+        "marking_scheme": [
+          "Use the formula ΔU = nCvΔT to calculate the change in internal energy ΔU.",
+          "Rearrange the formula to get the value of ΔU in terms of n, Cv, and ΔT."
+        ],
+        "topic": "Internal Energy and First Law of Thermodynamics"
+      }
+    ],
+    "total": 5
+  }
+}

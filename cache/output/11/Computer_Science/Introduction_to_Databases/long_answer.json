@@ -1,0 +1,75 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Introduction to Databases",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:14:01.575Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a database? Explain its importance in modern applications. Also, describe the different types of databases (a) Hierarchical, (b) Network, (c) Relational.",
+        "marks": 5,
+        "answer": "A database is a collection of organized data that is stored in a way that allows for efficient retrieval and manipulation. It plays a crucial role in modern applications as it enables the storage, management, and analysis of large amounts of data. The importance of a database can be seen in various aspects such as data consistency, data security, data sharing, and data scalability. There are mainly three types of databases: Hierarchical, Network, and Relational. A hierarchical database is a type of database that organizes data in a tree-like structure, where each record has a parent-child relationship. It is simple to design and implement but has limitations in handling complex relationships. A network database is a type of database that organizes data in a network structure, where each record can have multiple parent-child relationships. It is more complex to design and implement but can handle complex relationships. A relational database is a type of database that organizes data in tables, where each table has rows and columns, and each row represents a unique record. It is widely used due to its ability to handle complex relationships and provide data consistency.",
+        "marking_scheme": [
+          "Explain the concept of a database and its importance (1 mark)",
+          "Describe the three types of databases with their characteristics (2 marks)",
+          "Provide an example of each type of database (1 mark)",
+          "Discuss the advantages and disadvantages of each type of database (1 mark)"
+        ],
+        "topic": "Database Basics"
+      },
+      {
+        "q": "What is normalization in databases? Explain the need for normalization and the steps involved in the normalization process (a) First Normal Form, (b) Second Normal Form, (c) Third Normal Form.",
+        "marks": 5,
+        "answer": "Normalization is the process of organizing the data in a database to minimize data redundancy and dependency. The need for normalization arises from the fact that data redundancy can lead to data inconsistencies and make it difficult to modify the data. The steps involved in the normalization process are: First Normal Form (1NF), Second Normal Form (2NF), and Third Normal Form (3NF). A table is said to be in 1NF if each cell in the table contains a single value. A table is said to be in 2NF if it is in 1NF and each non-key attribute depends on the entire primary key. A table is said to be in 3NF if it is in 2NF and if there are no transitive dependencies. The steps involved in normalization are: identify the primary key, identify the non-key attributes, check for partial dependencies, check for transitive dependencies, and split the table into smaller tables.",
+        "marking_scheme": [
+          "Explain the concept of normalization and its need (1 mark)",
+          "Describe the three normalization forms with their characteristics (2 marks)",
+          "Provide an example of each normalization form (1 mark)",
+          "Discuss the advantages and disadvantages of normalization (1 mark)"
+        ],
+        "topic": "Database Design"
+      },
+      {
+        "q": "What is a database schema? Explain the importance of a database schema in the design and implementation of a database (a) Data independence, (b) Data redundancy, (c) Data consistency.",
+        "marks": 5,
+        "answer": "A database schema is a conceptual representation of the database, which includes the structure and organization of the data. It is a blueprint of the database that defines the relationships between different entities and attributes. The importance of a database schema can be seen in various aspects such as data independence, data redundancy, and data consistency. Data independence is the ability to modify the schema without affecting the application programs. Data redundancy is the repeated storage of the same data in multiple places, which can lead to data inconsistencies. Data consistency is the state of the database where all the data is valid and consistent. A database schema provides a way to manage data redundancy, ensures data consistency, and provides data independence. It is a critical component in the design and implementation of a database.",
+        "marking_scheme": [
+          "Explain the concept of a database schema and its importance (1 mark)",
+          "Describe the three aspects of database schema with their characteristics (2 marks)",
+          "Provide an example of how a database schema ensures data independence (1 mark)",
+          "Discuss the advantages and disadvantages of a database schema (1 mark)"
+        ],
+        "topic": "Database Design"
+      },
+      {
+        "q": "What are the differences between a primary key and a foreign key in a relational database? Explain the purpose of each key and provide examples (a) Primary key, (b) Foreign key.",
+        "marks": 5,
+        "answer": "A primary key is a unique identifier for each record in a table, which is used to distinguish one record from another. It is a column or set of columns that uniquely identifies each record in a table. A foreign key is a column or set of columns in a table that refers to the primary key of another table. It is used to establish relationships between tables. The purpose of a primary key is to uniquely identify each record in a table, while the purpose of a foreign key is to establish relationships between tables. For example, in a customer table, the customer ID can be the primary key, while in an order table, the customer ID can be a foreign key that refers to the primary key in the customer table.",
+        "marking_scheme": [
+          "Explain the concept of a primary key and its purpose (1 mark)",
+          "Describe the characteristics of a primary key (1 mark)",
+          "Explain the concept of a foreign key and its purpose (1 mark)",
+          "Provide an example of a primary key and a foreign key (1 mark)",
+          "Discuss the advantages and disadvantages of primary and foreign keys (1 mark)"
+        ],
+        "topic": "Relational Database"
+      },
+      {
+        "q": "What is a database management system (DBMS)? Explain the functions and features of a DBMS (a) Data definition, (b) Data manipulation, (c) Data control.",
+        "marks": 5,
+        "answer": "A database management system (DBMS) is a software system that enables the definition, creation, maintenance, and use of a database. It provides a way to manage the database and perform various operations such as data definition, data manipulation, and data control. The functions and features of a DBMS include: data definition, which involves creating and modifying the database schema; data manipulation, which involves querying and updating the data; and data control, which involves controlling access to the data and ensuring data security. A DBMS provides a way to manage the database, ensure data consistency, and provide data independence. It is a critical component in the development of database applications.",
+        "marking_scheme": [
+          "Explain the concept of a DBMS and its functions (1 mark)",
+          "Describe the three functions of a DBMS with their characteristics (2 marks)",
+          "Provide an example of a DBMS and its features (1 mark)",
+          "Discuss the advantages and disadvantages of a DBMS (1 mark)"
+        ],
+        "topic": "DBMS"
+      }
+    ],
+    "total": 5
+  }
+}

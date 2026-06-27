@@ -1,0 +1,274 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Computer Systems",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:24:05.892Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the primary function of the CPU?",
+        "opts": [
+          "(A) Memory storage",
+          "(B) Input/output operation",
+          "(C) Execution of instructions",
+          "(D) Power supply"
+        ],
+        "ans": "C",
+        "explanation": "The Central Processing Unit (CPU) is responsible for executing instructions and performing calculations. It fetches, decodes, and executes instructions, making it the primary function of the CPU.",
+        "difficulty": "easy",
+        "topic": "CPU and its Functions"
+      },
+      {
+        "q": "Which of the following is a type of RAM?",
+        "opts": [
+          "(A) Hard Disk Drive",
+          "(B) Solid State Drive",
+          "(C) Dynamic RAM (DRAM)",
+          "(D) Optical Drive"
+        ],
+        "ans": "C",
+        "explanation": "Dynamic RAM (DRAM) is a type of Random Access Memory (RAM) that stores data in capacitors, making it volatile.",
+        "difficulty": "easy",
+        "topic": "Memory and Storage"
+      },
+      {
+        "q": "What is the purpose of a cache memory?",
+        "opts": [
+          "(A) To slow down the CPU",
+          "(B) To increase the storage capacity",
+          "(C) To reduce the access time",
+          "(D) To reduce the power consumption"
+        ],
+        "ans": "C",
+        "explanation": "Cache memory is a small, fast memory that stores frequently accessed data, reducing the access time and improving system performance.",
+        "difficulty": "easy",
+        "topic": "Cache Memory"
+      },
+      {
+        "q": "Which of the following is a type of computer bus?",
+        "opts": [
+          "(A) ISA bus",
+          "(B) PCI bus",
+          "(C) IDE bus",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "ISA (Industry Standard Architecture) bus, PCI (Peripheral Component Interconnect) bus, and IDE (Integrated Drive Electronics) bus are all types of computer buses that provide communication between components.",
+        "difficulty": "medium",
+        "topic": "Computer Buses"
+      },
+      {
+        "q": "What is the difference between a 32-bit and 64-bit operating system?",
+        "opts": [
+          "(A) Only the word size",
+          "(B) Only the memory address size",
+          "(C) Both the word size and memory address size",
+          "(D) None of the above"
+        ],
+        "ans": "C",
+        "explanation": "A 64-bit operating system has both a 64-bit word size and a 64-bit memory address size, allowing it to access more memory and perform calculations more efficiently.",
+        "difficulty": "medium",
+        "topic": "Operating Systems"
+      },
+      {
+        "q": "Which of the following is a type of storage device?",
+        "opts": [
+          "(A) Monitor",
+          "(B) Keyboard",
+          "(C) Hard Disk Drive",
+          "(D) Printer"
+        ],
+        "ans": "C",
+        "explanation": "A Hard Disk Drive (HDD) is a type of storage device that stores data on a magnetic disk.",
+        "difficulty": "medium",
+        "topic": "Storage Devices"
+      },
+      {
+        "q": "What is the primary function of a network interface card?",
+        "opts": [
+          "(A) To connect the CPU to the keyboard",
+          "(B) To connect the CPU to the monitor",
+          "(C) To connect the computer to a network",
+          "(D) To connect the computer to a printer"
+        ],
+        "ans": "C",
+        "explanation": "A Network Interface Card (NIC) is responsible for connecting a computer to a network, allowing it to communicate with other devices.",
+        "difficulty": "medium",
+        "topic": "Network Interface Cards"
+      },
+      {
+        "q": "Which of the following is a type of network protocol?",
+        "opts": [
+          "(A) TCP",
+          "(B) HTTP",
+          "(C) FTP",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "TCP (Transmission Control Protocol), HTTP (Hypertext Transfer Protocol), and FTP (File Transfer Protocol) are all types of network protocols used for communication between devices.",
+        "difficulty": "medium",
+        "topic": "Network Protocols"
+      },
+      {
+        "q": "What is the purpose of a power supply unit?",
+        "opts": [
+          "(A) To slow down the CPU",
+          "(B) To increase the storage capacity",
+          "(C) To convert AC power to DC power",
+          "(D) To reduce the power consumption"
+        ],
+        "ans": "C",
+        "explanation": "A Power Supply Unit (PSU) is responsible for converting Alternating Current (AC) power from the mains to Direct Current (DC) power for the computer's components.",
+        "difficulty": "medium",
+        "topic": "Power Supply Unit"
+      },
+      {
+        "q": "Which of the following is a type of input device?",
+        "opts": [
+          "(A) Monitor",
+          "(B) Keyboard",
+          "(C) Mouse",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "A Monitor, Keyboard, and Mouse are all types of input devices that allow users to interact with the computer.",
+        "difficulty": "easy",
+        "topic": "Input Devices"
+      },
+      {
+        "q": "What is the purpose of a hard drive?",
+        "opts": [
+          "(A) To store data temporarily",
+          "(B) To store data permanently",
+          "(C) To reduce the power consumption",
+          "(D) To increase the storage capacity"
+        ],
+        "ans": "B",
+        "explanation": "A hard drive is a type of storage device that stores data permanently on a magnetic disk.",
+        "difficulty": "easy",
+        "topic": "Hard Disk Drive"
+      },
+      {
+        "q": "Which of the following is a type of computer system?",
+        "opts": [
+          "(A) Desktop computer",
+          "(B) Laptop computer",
+          "(C) Server computer",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "A Desktop computer, Laptop computer, and Server computer are all types of computer systems used for different purposes.",
+        "difficulty": "easy",
+        "topic": "Computer Systems"
+      },
+      {
+        "q": "What is the difference between a compiler and an interpreter?",
+        "opts": [
+          "(A) Only the compilation time",
+          "(B) Only the execution time",
+          "(C) Both the compilation time and execution time",
+          "(D) None of the above"
+        ],
+        "ans": "C",
+        "explanation": "A compiler translates the entire source code into machine code at once, while an interpreter translates and executes the source code line by line, making compilation time and execution time different.",
+        "difficulty": "medium",
+        "topic": "Compilers and Interpreters"
+      },
+      {
+        "q": "Which of the following is a type of computer virus?",
+        "opts": [
+          "(A) Trojan horse",
+          "(B) Worm",
+          "(C) Rootkit",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "A Trojan horse, Worm, and Rootkit are all types of computer viruses that can harm a computer system.",
+        "difficulty": "hard",
+        "topic": "Computer Viruses"
+      },
+      {
+        "q": "What is the purpose of a firewall?",
+        "opts": [
+          "(A) To allow all incoming traffic",
+          "(B) To block all incoming traffic",
+          "(C) To filter incoming traffic based on rules",
+          "(D) To reduce the power consumption"
+        ],
+        "ans": "C",
+        "explanation": "A firewall is a network security system that filters incoming traffic based on rules, allowing or blocking specific types of traffic.",
+        "difficulty": "hard",
+        "topic": "Firewalls"
+      },
+      {
+        "q": "Which of the following is a type of operating system?",
+        "opts": [
+          "(A) Single-user operating system",
+          "(B) Multi-user operating system",
+          "(C) Single-task operating system",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "A Single-user operating system, Multi-user operating system, and Single-task operating system are all types of operating systems used for different purposes.",
+        "difficulty": "hard",
+        "topic": "Operating Systems"
+      },
+      {
+        "q": "What is the purpose of a database management system?",
+        "opts": [
+          "(A) To store data temporarily",
+          "(B) To store data permanently",
+          "(C) To manage data storage and retrieval",
+          "(D) To reduce the power consumption"
+        ],
+        "ans": "C",
+        "explanation": "A Database Management System (DBMS) is responsible for managing data storage and retrieval in a database.",
+        "difficulty": "hard",
+        "topic": "Database Management Systems"
+      },
+      {
+        "q": "Which of the following is a type of computer network?",
+        "opts": [
+          "(A) LAN",
+          "(B) WAN",
+          "(C) MAN",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "A LAN (Local Area Network), WAN (Wide Area Network), and MAN (Metropolitan Area Network) are all types of computer networks used for different purposes.",
+        "difficulty": "hard",
+        "topic": "Computer Networks"
+      },
+      {
+        "q": "What is the purpose of a load balancer?",
+        "opts": [
+          "(A) To distribute incoming traffic across multiple servers",
+          "(B) To block incoming traffic to a single server",
+          "(C) To reduce the power consumption",
+          "(D) To increase the storage capacity"
+        ],
+        "ans": "A",
+        "explanation": "A Load Balancer is a network device that distributes incoming traffic across multiple servers, improving system performance and availability.",
+        "difficulty": "hard",
+        "topic": "Load Balancers"
+      },
+      {
+        "q": "Which of the following is a type of computer security threat?",
+        "opts": [
+          "(A) Malware",
+          "(B) Phishing",
+          "(C) SQL injection",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "Malware, Phishing, and SQL injection are all types of computer security threats that can harm a computer system.",
+        "difficulty": "hard",
+        "topic": "Computer Security Threats"
+      }
+    ],
+    "total": 20
+  }
+}

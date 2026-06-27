@@ -1,0 +1,124 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Encoding Schemes and Number Systems",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:20:56.948Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the main purpose of ASCII (American Standard Code for Information Interchange)?",
+        "marks": 2,
+        "answer": "ASCII is a character encoding scheme that assigns unique binary codes to each character. It is mainly used for representing text data in computers. ASCII is an 8-bit encoding scheme, which means each character is represented by a 7-bit or 8-bit binary code.",
+        "key_points": [
+          "ASCII encoding scheme",
+          "Character encoding",
+          "8-bit encoding scheme"
+        ],
+        "topic": "Character Encoding Schemes"
+      },
+      {
+        "q": "What is the difference between Octal and Binary number systems?",
+        "marks": 2,
+        "answer": "The main difference between Octal and Binary number systems is the base of the numbers. Binary uses base 2 (0s and 1s), while Octal uses base 8 (0-7). Octal is an 8-bit number system, which makes it easier to convert between Binary and Octal.",
+        "key_points": [
+          "Octal number system",
+          "Binary number system",
+          "Base 8 vs Base 2"
+        ],
+        "topic": "Number Systems"
+      },
+      {
+        "q": "What is the purpose of Hexadecimal number system in computers?",
+        "marks": 2,
+        "answer": "Hexadecimal is a 16-bit number system (0-9, A-F) that is used to represent binary data in a more readable format. It is often used for representing memory addresses, IP addresses, and colors in computers.",
+        "key_points": [
+          "Hexadecimal number system",
+          "16-bit number system",
+          "Binary data representation"
+        ],
+        "topic": "Number Systems"
+      },
+      {
+        "q": "What is the term for converting a binary number to its decimal equivalent?",
+        "marks": 2,
+        "answer": "The process of converting a binary number to its decimal equivalent is called Binary to Decimal conversion. This is done by multiplying each binary digit by the corresponding power of 2 and summing the results.",
+        "key_points": [
+          "Binary to Decimal conversion",
+          "Decimal equivalent",
+          "Power of 2"
+        ],
+        "topic": "Number Systems"
+      },
+      {
+        "q": "What is the advantage of using Unicode encoding scheme over ASCII?",
+        "marks": 2,
+        "answer": "The main advantage of using Unicode encoding scheme over ASCII is that it can represent a wide range of characters from different languages, whereas ASCII only supports English characters. Unicode is a 16-bit or 32-bit encoding scheme, which makes it more versatile than ASCII.",
+        "key_points": [
+          "Unicode encoding scheme",
+          "ASCII",
+          "Character representation"
+        ],
+        "topic": "Character Encoding Schemes"
+      },
+      {
+        "q": "What is the difference between signed and unsigned numbers in binary representation?",
+        "marks": 2,
+        "answer": "The main difference between signed and unsigned numbers in binary representation is the use of a sign bit. Signed numbers use a single bit to represent the sign (0 for positive and 1 for negative), while unsigned numbers do not have a sign bit and can only represent positive values.",
+        "key_points": [
+          "Signed numbers",
+          "Unsigned numbers",
+          "Sign bit"
+        ],
+        "topic": "Number Systems"
+      },
+      {
+        "q": "What is the term for representing a binary number using a smaller number of bits?",
+        "marks": 2,
+        "answer": "The process of representing a binary number using a smaller number of bits is called Data Compression. This is often done using techniques such as Huffman coding and Run-Length Encoding.",
+        "key_points": [
+          "Data Compression",
+          "Huffman coding",
+          "Run-Length Encoding"
+        ],
+        "topic": "Number Systems"
+      },
+      {
+        "q": "What is the purpose of Gray code in digital electronics?",
+        "marks": 2,
+        "answer": "Gray code is a binary number system that is used to minimize the difference between consecutive numbers. This is useful in digital electronics where a small change in input can result in a large change in output. Gray code is used in applications such as digital counters and digital-to-analog converters.",
+        "key_points": [
+          "Gray code",
+          "Binary number system",
+          "Digital electronics"
+        ],
+        "topic": "Number Systems"
+      },
+      {
+        "q": "What is the difference between Kilobyte (KB) and Kibibyte (KiB)?",
+        "marks": 2,
+        "answer": "The main difference between Kilobyte (KB) and Kibibyte (KiB) is the base used for calculation. Kilobyte uses base 10, while Kibibyte uses base 2. This means that 1 KiB is equal to 1024 bytes, while 1 KB is equal to 1000 bytes.",
+        "key_points": [
+          "Kilobyte (KB)",
+          "Kibibyte (KiB)",
+          "Base 10 vs Base 2"
+        ],
+        "topic": "Memory and Storage"
+      },
+      {
+        "q": "What is the term for representing a large number of bits as a single unit?",
+        "marks": 2,
+        "answer": "The process of representing a large number of bits as a single unit is called a Byte. A byte is a group of 8 bits that are used to represent a single character or number in computers.",
+        "key_points": [
+          "Byte",
+          "8 bits",
+          "Character or number representation"
+        ],
+        "topic": "Memory and Storage"
+      }
+    ],
+    "total": 10
+  }
+}

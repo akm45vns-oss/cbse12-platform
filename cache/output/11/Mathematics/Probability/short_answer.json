@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Probability",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:16:31.722Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the difference between experimental probability and theoretical probability?",
+        "marks": 2,
+        "answer": "Experimental probability is the ratio of the number of times an event occurs to the total number of trials, whereas theoretical probability is the probability of an event occurring based on the number of favorable outcomes and total outcomes. Experimental probability is used for empirical data, whereas theoretical probability is used in mathematical calculations.",
+        "key_points": [
+          "Experimental vs Theoretical Probability",
+          "Empirical data",
+          "Mathematical calculations"
+        ],
+        "topic": "Basic Probability"
+      },
+      {
+        "q": "What is the formula for calculating the probability of an event not occurring?",
+        "marks": 2,
+        "answer": "The probability of an event not occurring is given by P(E') = 1 - P(E), where P(E') is the probability of the event not occurring and P(E) is the probability of the event occurring.",
+        "key_points": [
+          "Probability of Complement",
+          "P(E') = 1 - P(E)"
+        ],
+        "topic": "Basic Probability"
+      },
+      {
+        "q": "What is the difference between independent and dependent events?",
+        "marks": 2,
+        "answer": "Independent events are those events whose occurrence does not affect the occurrence of the other event, whereas dependent events are those events whose occurrence affects the occurrence of the other event. For example, tossing a coin and flipping a coin are independent events, but drawing a card from a deck and drawing another card are dependent events.",
+        "key_points": [
+          "Independent Events",
+          "Dependent Events",
+          "Mutually Exclusive Events"
+        ],
+        "topic": "Independent and Dependent Events"
+      },
+      {
+        "q": "What is the formula for calculating the probability of the union of two events?",
+        "marks": 2,
+        "answer": "The probability of the union of two events is given by P(E ∪ F) = P(E) + P(F) - P(E ∩ F), where P(E ∪ F) is the probability of the union of events E and F, P(E) and P(F) are the probabilities of events E and F respectively, and P(E ∩ F) is the probability of the intersection of events E and F.",
+        "key_points": [
+          "Probability of Union",
+          "P(E ∪ F) = P(E) + P(F) - P(E ∩ F)"
+        ],
+        "topic": "Probability of Union and Intersection"
+      },
+      {
+        "q": "What is the concept of Bayes' theorem?",
+        "marks": 2,
+        "answer": "Bayes' theorem is a method for updating the probability of a hypothesis as more evidence or information becomes available. It is used to calculate the probability of an event occurring based on the prior probability of the event and the likelihood of the event given some new evidence.",
+        "key_points": [
+          "Bayes' Theorem",
+          "Updating Probabilities",
+          "Prior and Posterior Probabilities"
+        ],
+        "topic": "Bayes' Theorem"
+      },
+      {
+        "q": "What is the difference between discrete and continuous random variables?",
+        "marks": 2,
+        "answer": "Discrete random variables are those that can take on a countable number of values, whereas continuous random variables are those that can take on any value within a given range. For example, the number of heads in a coin toss is a discrete random variable, whereas the height of a person is a continuous random variable.",
+        "key_points": [
+          "Discrete Random Variable",
+          "Continuous Random Variable",
+          "Countable vs Uncountable Values"
+        ],
+        "topic": "Discrete and Continuous Random Variables"
+      },
+      {
+        "q": "What is the concept of cumulative distribution function (CDF)?",
+        "marks": 2,
+        "answer": "The cumulative distribution function (CDF) is a function that gives the probability that a random variable takes on a value less than or equal to a given value. It is used to describe the distribution of a continuous random variable.",
+        "key_points": [
+          "Cumulative Distribution Function (CDF)",
+          "Probability of Event",
+          "Continuous Random Variable"
+        ],
+        "topic": "Cumulative Distribution Function (CDF)"
+      },
+      {
+        "q": "What is the formula for calculating the expected value of a discrete random variable?",
+        "marks": 2,
+        "answer": "The expected value of a discrete random variable is given by E(X) = ∑xP(X = x), where x is the value of the random variable and P(X = x) is the probability of that value occurring.",
+        "key_points": [
+          "Expected Value",
+          "Discrete Random Variable",
+          "E(X) = ∑xP(X = x)"
+        ],
+        "topic": "Expected Value"
+      },
+      {
+        "q": "What is the concept of variance of a random variable?",
+        "marks": 2,
+        "answer": "The variance of a random variable is a measure of the spread or dispersion of the random variable. It is calculated as the average of the squared differences between the random variable and its mean.",
+        "key_points": [
+          "Variance",
+          "Spread or Dispersion",
+          "Squared Differences"
+        ],
+        "topic": "Variance"
+      },
+      {
+        "q": "What is the formula for calculating the standard deviation of a random variable?",
+        "marks": 2,
+        "answer": "The standard deviation of a random variable is the square root of the variance. It is calculated as σ = √V(X), where V(X) is the variance of the random variable.",
+        "key_points": [
+          "Standard Deviation",
+          "σ = √V(X)",
+          "Variance"
+        ],
+        "topic": "Standard Deviation"
+      }
+    ],
+    "total": 10
+  }
+}

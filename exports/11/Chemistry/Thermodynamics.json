@@ -1,0 +1,1241 @@
+{
+  "class": "11",
+  "subject": "Chemistry",
+  "chapter": "Thermodynamics",
+  "exported_at": "2026-06-27T05:55:05.662Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:24:54.559+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The change in internal energy depends only on the initial and final states of the system.",
+            "assertion": "Assertion (A): Internal energy of a system is a state function.",
+            "explanation": "Internal energy is a state function because its change depends only on the initial and final states of the system, not on the path taken to reach the final state."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The amount of heat transferred depends on the path taken to reach the final state.",
+            "assertion": "Assertion (A): Heat is a path function.",
+            "explanation": "Heat is a path function because its amount depends on the path taken to reach the final state, not only on the initial and final states."
+          },
+          {
+            "ans": "C",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Entropy is a measure of disorder or randomness in a system.",
+            "assertion": "Assertion (A): The change in entropy of a system is always positive.",
+            "explanation": "The change in entropy can be either positive or negative, depending on whether the disorder or randomness in the system increases or decreases. Entropy is a measure of disorder or randomness, but it is not always positive."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The second law of thermodynamics states that the total entropy of an isolated system remains constant in a reversible process but increases in an irreversible process.",
+            "assertion": "Assertion (A): The second law of thermodynamics states that the total entropy of an isolated system always increases.",
+            "explanation": "The second law of thermodynamics indeed states that the total entropy of an isolated system remains constant in a reversible process but increases in an irreversible process, which implies that the total entropy of an isolated system always increases over time."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): In a reversible adiabatic process, there is no heat transfer between the system and the surroundings.",
+            "assertion": "Assertion (A): The entropy of a reversible adiabatic process is zero.",
+            "explanation": "In a reversible adiabatic process, there is no heat transfer between the system and the surroundings, which implies that the entropy of a reversible adiabatic process is indeed zero."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The change in Gibbs free energy depends only on the initial and final states of the system.",
+            "assertion": "Assertion (A): The Gibbs free energy of a system is a state function.",
+            "explanation": "Gibbs free energy is a state function because its change depends only on the initial and final states of the system, not on the path taken to reach the final state."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Enthalpy is defined as H = U + pV.",
+            "assertion": "Assertion (A): The enthalpy of a system is a measure of its internal energy plus the product of pressure and volume.",
+            "explanation": "Enthalpy is indeed a measure of internal energy plus the product of pressure and volume, which is mathematically represented as H = U + pV."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): A negative change in Gibbs free energy indicates a spontaneous process.",
+            "assertion": "Assertion (A): The spontaneity of a process is determined by the change in the Gibbs free energy.",
+            "explanation": "The spontaneity of a process is indeed determined by the change in the Gibbs free energy. A negative change in Gibbs free energy indicates a spontaneous process, while a positive change indicates a non-spontaneous process."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The entropy of a perfect crystal at absolute zero temperature is zero.",
+            "assertion": "Assertion (A): The entropy of a system can be zero.",
+            "explanation": "The entropy of a system can indeed be zero. For example, the entropy of a perfect crystal at absolute zero temperature is zero, but this does not mean that the entropy of all systems can be zero."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The change in the Gibbs free energy depends only on the initial and final states of the system.",
+            "assertion": "Assertion (A): The change in the Gibbs free energy is independent of the path taken.",
+            "explanation": "The change in the Gibbs free energy is indeed independent of the path taken. It depends only on the initial and final states of the system, making it a state function."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:05:08.997+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "A refrigerator is a well-known example of a heat engine that works under constant volume. It operates by transferring heat from the cold interior to the hot exterior. The heat transfer occurs through a series of phase transitions in the refrigerant, causing the temperature to rise and fall as it moves from one stage to another. This process is repeated continuously, allowing the refrigerator to maintain a low temperature inside the compartment. Consider the following scenario: If the temperature inside the refrigerator is 5°C, and the ambient temperature is 30°C, what is the direction of heat flow?",
+            "questions": [
+              {
+                "q": "What is the direction of heat flow in the refrigerator?",
+                "ans": "A",
+                "opts": [
+                  "From the cold interior to the hot exterior",
+                  "From the hot exterior to the cold interior",
+                  "No heat flow occurs",
+                  "Heat flow is in both directions"
+                ],
+                "explanation": "Heat flows from a region of higher temperature to a region of lower temperature."
+              },
+              {
+                "q": "Which type of process occurs in the refrigerator?",
+                "ans": "C",
+                "opts": [
+                  "Isothermal process",
+                  "Isobaric process",
+                  "Adiabatic process",
+                  "Constant volume process"
+                ],
+                "explanation": "The heat transfer occurs through a series of phase transitions, which is an adiabatic process."
+              },
+              {
+                "q": "What is the function of the refrigerant in the refrigerator?",
+                "ans": "C",
+                "opts": [
+                  "To absorb heat from the cold interior",
+                  "To release heat to the hot exterior",
+                  "To facilitate the phase transitions",
+                  "To maintain a constant temperature"
+                ],
+                "explanation": "The refrigerant undergoes phase transitions, which facilitates the heat transfer from the cold interior to the hot exterior."
+              },
+              {
+                "q": "What is the significance of the temperature inside the refrigerator being lower than the ambient temperature?",
+                "ans": "C",
+                "opts": [
+                  "It allows for efficient heat transfer",
+                  "It maintains a constant volume",
+                  "It enables the refrigerator to operate",
+                  "It prevents heat flow"
+                ],
+                "explanation": "The temperature difference between the inside and outside of the refrigerator allows it to operate and maintain a low temperature inside the compartment."
+              },
+              {
+                "q": "Which law governs the heat transfer in the refrigerator?",
+                "ans": "B",
+                "opts": [
+                  "First Law of Thermodynamics",
+                  "Second Law of Thermodynamics",
+                  "Third Law of Thermodynamics",
+                  "Zeroth Law of Thermodynamics"
+                ],
+                "explanation": "The Second Law of Thermodynamics governs the direction of heat flow, which is from the region of higher temperature to the region of lower temperature."
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "A car engine is a heat engine that converts the chemical energy of the fuel into mechanical work. It operates by igniting a mixture of air and fuel in the combustion chamber, releasing a large amount of heat energy. This heat energy is then transferred to the surroundings through the exhaust gases. Consider the following scenario: If the car engine operates at a temperature of 2500 K and the surroundings are at a temperature of 300 K, what is the direction of heat flow?",
+            "questions": [
+              {
+                "q": "What type of energy conversion occurs in the car engine?",
+                "ans": "C",
+                "opts": [
+                  "Mechanical to thermal energy",
+                  "Thermal to mechanical energy",
+                  "Chemical to mechanical energy",
+                  "Mechanical to electrical energy"
+                ],
+                "explanation": "The car engine converts the chemical energy of the fuel into mechanical work."
+              },
+              {
+                "q": "What is the function of the exhaust gases in the car engine?",
+                "ans": "B",
+                "opts": [
+                  "To absorb heat from the surroundings",
+                  "To release heat to the surroundings",
+                  "To facilitate the combustion process",
+                  "To maintain a constant temperature"
+                ],
+                "explanation": "The exhaust gases transfer the heat energy released during combustion to the surroundings."
+              },
+              {
+                "q": "Which law governs the heat transfer in the car engine?",
+                "ans": "B",
+                "opts": [
+                  "First Law of Thermodynamics",
+                  "Second Law of Thermodynamics",
+                  "Third Law of Thermodynamics",
+                  "Zeroth Law of Thermodynamics"
+                ],
+                "explanation": "The Second Law of Thermodynamics governs the direction of heat flow, which is from the region of higher temperature to the region of lower temperature."
+              },
+              {
+                "q": "What is the significance of the car engine operating at a higher temperature than the surroundings?",
+                "ans": "C",
+                "opts": [
+                  "It allows for efficient heat transfer",
+                  "It maintains a constant volume",
+                  "It enables the car engine to operate",
+                  "It prevents heat flow"
+                ],
+                "explanation": "The temperature difference between the car engine and the surroundings allows it to operate and convert chemical energy into mechanical work."
+              },
+              {
+                "q": "What is the direction of heat flow in the car engine?",
+                "ans": "B",
+                "opts": [
+                  "From the surroundings to the car engine",
+                  "From the car engine to the surroundings",
+                  "No heat flow occurs",
+                  "Heat flow is in both directions"
+                ],
+                "explanation": "Heat flows from a region of higher temperature to a region of lower temperature, which in this case is from the car engine to the surroundings."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:24:52.31+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Thermodynamics\n## 📌 Chapter Overview\nThermodynamics is the branch of physics that deals with the study of heat and temperature and their relation to energy, work, and properties of matter. The chapter of thermodynamics in Class 11 chemistry is an introduction to the fundamental concepts of thermodynamics, which includes the laws of thermodynamics, thermodynamic systems, and the behavior of ideal gases. The chapter covers the principles of energy, its various forms, and the relationship between energy and work. It also deals with the concept of entropy, which is a measure of disorder or randomness in a system.\n\nThroughout this chapter, students will learn about the different types of thermodynamic systems, such as isolated, closed, and open systems. They will also learn about the various thermodynamic processes, such as isothermal, adiabatic, and isobaric processes. The chapter also covers the concept of thermodynamic properties, such as internal energy, enthalpy, and entropy, and their relationship to the laws of thermodynamics.\n\n## 🎯 Learning Objectives\n* Define thermodynamics and its importance in physics and chemistry\n* Explain the laws of thermodynamics, including the zeroth law, first law, second law, and third law\n* Describe the different types of thermodynamic systems and their characteristics\n* Explain the behavior of ideal gases and the equation of state for an ideal gas\n* Define thermodynamic properties, such as internal energy, enthalpy, and entropy\n* Explain the concept of entropy and its relationship to the second law of thermodynamics\n* Apply the laws of thermodynamics to solve problems and analyze thermodynamic processes\n\n## 🔑 Key Concepts & Definitions\n* **Thermodynamics**: The branch of physics that deals with the study of heat and temperature and their relation to energy, work, and properties of matter.\n* **Thermodynamic System**: A region of space where energy and matter can be exchanged with the surroundings.\n* **Isolated System**: A thermodynamic system that does not exchange energy or matter with the surroundings.\n* **Closed System**: A thermodynamic system that can exchange energy but not matter with the surroundings.\n* **Open System**: A thermodynamic system that can exchange both energy and matter with the surroundings.\n* **Thermodynamic Property**: A quantity that can be measured and calculated for a thermodynamic system.\n* **Internal Energy (U)**: The total energy of a thermodynamic system, including kinetic energy, potential energy, and potential energy of the particles.\n* **Enthalpy (H)**: A measure of the total energy of a thermodynamic system, including internal energy and the energy associated with the pressure and volume of the system.\n* **Entropy (S)**: A measure of the disorder or randomness of a thermodynamic system.\n\n## 📐 Core Theory & Principles\nThe laws of thermodynamics are the fundamental principles of thermodynamics. The zeroth law of thermodynamics states that if two systems are in thermal equilibrium with a third system, then they are also in thermal equilibrium with each other. The first law of thermodynamics states that energy cannot be created or destroyed, only converted from one form to another. The second law of thermodynamics states that the total entropy of a closed system will always increase over time, unless the system is in a state of thermal equilibrium. The third law of thermodynamics states that as the temperature of a system approaches absolute zero, the entropy of the system approaches a minimum value.\n\n## 🧮 Important Formulas & Laws\n* **Zeroth Law of Thermodynamics**: If two systems are in thermal equilibrium with a third system, then they are also in thermal equilibrium with each other.\n* **First Law of Thermodynamics**: ΔE = Q - W, where ΔE is the change in internal energy, Q is the heat added to the system, and W is the work done by the system.\n* **Second Law of Thermodynamics**: ΔS = ΔQ / T, where ΔS is the change in entropy, ΔQ is the heat added to the system, and T is the temperature of the system.\n* **Third Law of Thermodynamics**: As the temperature of a system approaches absolute zero, the entropy of the system approaches a minimum value.\n* **Ideal Gas Equation**: PV = nRT, where P is the pressure of the gas, V is the volume of the gas, n is the number of moles of the gas, R is the gas constant, and T is the temperature of the gas.\n\n## 🔬 Detailed Explanations\n### Thermodynamic Processes\n* **Isothermal Process**: A thermodynamic process in which the temperature of the system remains constant.\n* **Adiabatic Process**: A thermodynamic process in which no heat is transferred between the system and the surroundings.\n* **Isobaric Process**: A thermodynamic process in which the pressure of the system remains constant.\n\n### Thermodynamic Properties\n* **Internal Energy (U)**: The total energy of a thermodynamic system, including kinetic energy, potential energy, and potential energy of the particles.\n* **Enthalpy (H)**: A measure of the total energy of a thermodynamic system, including internal energy and the energy associated with the pressure and volume of the system.\n* **Entropy (S)**: A measure of the disorder or randomness of a thermodynamic system.\n\n### First Law of Thermodynamics\nThe first law of thermodynamics states that energy cannot be created or destroyed, only converted from one form to another. This means that the total energy of an isolated system remains constant over time, unless energy is added or removed from the system.\n\n### Second Law of Thermodynamics\nThe second law of thermodynamics states that the total entropy of a closed system will always increase over time, unless the system is in a state of thermal equilibrium. This means that the disorder or randomness of a system will always increase over time, unless the system is in a state of maximum disorder or randomness.\n\n## 🖼️ Diagrams & Visual Concepts\n* **Thermodynamic Diagrams**: Diagrams that show the relationship between different thermodynamic properties, such as pressure, volume, and temperature.\n* **Entropy Diagrams**: Diagrams that show the relationship between entropy and the other thermodynamic properties.\n* **Enthalpy Diagrams**: Diagrams that show the relationship between enthalpy and the other thermodynamic properties.\n\n## ⭐ Most Important Points (Exam Focus)\n* Define thermodynamics and its importance in physics and chemistry.\n* Explain the laws of thermodynamics, including the zeroth law, first law, second law, and third law.\n* Describe the different types of thermodynamic systems and their characteristics.\n* Explain the behavior of ideal gases and the equation of state for an ideal gas.\n* Define thermodynamic properties, such as internal energy, enthalpy, and entropy.\n* Explain the concept of entropy and its relationship to the second law of thermodynamics.\n* Apply the laws of thermodynamics to solve problems and analyze thermodynamic processes.\n* Describe the different types of thermodynamic processes, such as isothermal, adiabatic, and isobaric processes.\n* Explain the concept of thermodynamic equilibrium and the conditions for thermodynamic equilibrium.\n* Describe the behavior of real gases and the differences between real gases and ideal gases.\n* Apply the ideal gas equation to solve problems and analyze ideal gas behavior.\n\n## ❌ Common Mistakes to Avoid\n* Confusing the first law of thermodynamics with the second law of thermodynamics.\n* Failing to distinguish between internal energy and enthalpy.\n* Misunderstanding the concept of entropy and its relationship to the second law of thermodynamics.\n* Failing to apply the laws of thermodynamics correctly to solve problems.\n* Confusing the different types of thermodynamic processes, such as isothermal, adiabatic, and isobaric processes.\n\n## 💡 Real-World Applications\n* **Power Plants**: Thermodynamics is used in power plants to generate electricity from heat energy.\n* **Refrigeration**: Thermodynamics is used in refrigeration systems to transfer heat from one location to another.\n* **Heat Pumps**: Thermodynamics is used in heat pumps to transfer heat from one location to another, often for heating or cooling purposes.\n* **Internal Combustion Engines**: Thermodynamics is used in internal combustion engines to convert chemical energy into mechanical energy.\n\n## 🔁 Quick Revision Summary\n* Thermodynamics is the branch of physics that deals with the study of heat and temperature and their relation to energy, work, and properties of matter.\n* The laws of thermodynamics are the fundamental principles of thermodynamics.\n* The zeroth law of thermodynamics states that if two systems are in thermal equilibrium with a third system, then they are also in thermal equilibrium with each other.\n* The first law of thermodynamics states that energy cannot be created or destroyed, only converted from one form to another.\n* The second law of thermodynamics states that the total entropy of a closed system will always increase over time, unless the system is in a state of thermal equilibrium.\n* The third law of thermodynamics states that as the temperature of a system approaches absolute zero, the entropy of the system approaches a minimum value.\n* Thermodynamic systems can be classified as isolated, closed, or open systems.\n* Thermodynamic properties include internal energy, enthalpy, and entropy.\n* The ideal gas equation is PV = nRT, where P is the pressure of the gas, V is the volume of the gas, n is the number of moles of the gas, R is the gas constant, and T is the temperature of the gas.\n* Thermodynamic processes include isothermal, adiabatic, and isobaric processes.\n* Thermodynamic equilibrium is a state in which the properties of a system are constant and unchanging.\n* Real gases behave differently from ideal gases due to the presence of intermolecular forces.\n* Thermodynamics is used in various real-world applications, including power plants, refrigeration systems, heat pumps, and internal combustion engines."
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:57:48.942+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [],
+        "exam_frequency": "medium",
+        "difficulty_score": 5,
+        "overall_difficulty": "medium"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:24:49.888+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Focus on understanding the basics of thermodynamics",
+          "Practice problems from previous years' question papers"
+        ],
+        "total_minutes": 120,
+        "revision_minutes": 20,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 30,
+        "sessions_recommended": 3,
+        "first_reading_minutes": 45,
+        "practice_questions_minutes": 25
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:57:48.221+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Zeroth Law of Thermodynamics",
+            "notes": "This law allows us to define a temperature scale.",
+            "formula": "If two systems are in thermal equilibrium with a third system, then they are also in thermal equilibrium with each other."
+          },
+          {
+            "name": "First Law of Thermodynamics",
+            "notes": "This law states that energy cannot be created or destroyed, only converted from one form to another.",
+            "units": "Joules (J)",
+            "formula": "\\Delta U = Q - W",
+            "variables": {
+              "Q": "Heat added to the system",
+              "W": "Work done by the system",
+              "\\Delta U": "Change in internal energy"
+            }
+          },
+          {
+            "name": "First Law of Thermodynamics (Internal Energy Change)",
+            "notes": "This is an alternative way of expressing the first law.",
+            "units": "Joules (J)",
+            "formula": "\\Delta U = U_f - U_i",
+            "variables": {
+              "U_f": "Final internal energy",
+              "U_i": "Initial internal energy",
+              "\\Delta U": "Change in internal energy"
+            }
+          },
+          {
+            "name": "First Law of Thermodynamics (Work Done)",
+            "notes": "This formula is used when the work done is done against a constant external pressure.",
+            "units": "Joules (J)",
+            "formula": "W = P\\Delta V",
+            "variables": {
+              "P": "Pressure",
+              "W": "Work done by the system",
+              "\\Delta V": "Change in volume"
+            }
+          },
+          {
+            "name": "First Law of Thermodynamics (Heat Added)",
+            "notes": "This formula is used when the heat added and work done are functions of time.",
+            "units": "Joules per second (J/s)",
+            "formula": "Q = \\frac{dU}{dt} dt + \\frac{dW}{dt} dt",
+            "variables": {
+              "Q": "Heat added to the system",
+              "\\frac{dU}{dt}": "Rate of change of internal energy",
+              "\\frac{dW}{dt}": "Rate of change of work done"
+            }
+          },
+          {
+            "name": "Second Law of Thermodynamics",
+            "notes": "This law states that the total entropy of an isolated system will always increase over time.",
+            "units": "Joules per Kelvin (J/K)",
+            "formula": "\\Delta S = \\frac{\\Delta Q}{T}",
+            "variables": {
+              "T": "Temperature in Kelvin",
+              "\\Delta Q": "Heat added to the system",
+              "\\Delta S": "Change in entropy"
+            }
+          },
+          {
+            "name": "Second Law of Thermodynamics (Entropy Change)",
+            "notes": "This is an alternative way of expressing the second law.",
+            "units": "Joules per Kelvin (J/K)",
+            "formula": "\\Delta S = S_f - S_i",
+            "variables": {
+              "S_f": "Final entropy",
+              "S_i": "Initial entropy",
+              "\\Delta S": "Change in entropy"
+            }
+          },
+          {
+            "name": "Third Law of Thermodynamics",
+            "notes": "This law states that at absolute zero temperature, the entropy of a system is zero.",
+            "formula": "As T -> 0 K, \\Delta S -> 0",
+            "variables": {
+              "T": "Temperature in Kelvin",
+              "\\Delta S": "Change in entropy"
+            }
+          },
+          {
+            "name": "Equation of State for an Ideal Gas",
+            "notes": "This equation relates the pressure, volume, and temperature of an ideal gas.",
+            "units": "Pascals (Pa), Meters cubed (m³), Moles (mol), Joules per Kelvin (J/K), Kelvin (K)",
+            "formula": "PV = nRT",
+            "variables": {
+              "P": "Pressure",
+              "R": "Gas constant",
+              "T": "Temperature in Kelvin",
+              "V": "Volume",
+              "n": "Number of moles"
+            }
+          },
+          {
+            "name": "Ideal Gas Constant",
+            "notes": "This is the value of the gas constant at standard temperature and pressure.",
+            "formula": "R = 8.314 J/mol·K"
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T19:16:16.489+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "System and Surroundings",
+            "importance": "Understanding the system and surroundings is crucial for analyzing thermodynamic processes and understanding the concept of isolation.",
+            "explanation": "A system is a part of the universe which is under observation, while the surroundings are the rest of the universe. The system and surroundings interact with each other through the transfer of energy and matter.",
+            "related_topics": [
+              "Thermodynamic Processes",
+              "Types of Systems"
+            ]
+          },
+          {
+            "concept": "Types of Systems",
+            "importance": "Identifying the type of system helps in understanding the direction of spontaneous processes and the feasibility of thermodynamic changes.",
+            "explanation": "A system can be open, closed, or isolated, based on the exchange of matter and energy with the surroundings.",
+            "related_topics": [
+              "System and Surroundings",
+              "Spontaneity"
+            ]
+          },
+          {
+            "concept": "Thermodynamic Properties",
+            "importance": "Understanding these properties is essential for analyzing thermodynamic changes and predicting the direction of spontaneous processes.",
+            "explanation": "Thermodynamic properties include internal energy (U), enthalpy (H), entropy (S), and free energy (G), which describe the state of a system.",
+            "related_topics": [
+              "Internal Energy",
+              "Enthalpy",
+              "Entropy"
+            ]
+          },
+          {
+            "concept": "Internal Energy (U)",
+            "importance": "Understanding internal energy is crucial for analyzing thermodynamic changes and predicting the direction of spontaneous processes.",
+            "explanation": "Internal energy is the total energy of a system, which includes both kinetic energy and potential energy of the particles.",
+            "related_topics": [
+              "Thermodynamic Properties",
+              "Heat Capacity"
+            ]
+          },
+          {
+            "concept": "Enthalpy (H)",
+            "importance": "Enthalpy is an important property for analyzing thermodynamic changes and predicting the direction of spontaneous processes in constant-pressure systems.",
+            "explanation": "Enthalpy is a measure of the total energy of a system, including internal energy and the energy associated with the pressure and volume of the system.",
+            "related_topics": [
+              "Thermodynamic Properties",
+              "Heats of Reaction"
+            ]
+          },
+          {
+            "concept": "Entropy (S)",
+            "importance": "Understanding entropy is crucial for analyzing thermodynamic changes and predicting the direction of spontaneous processes.",
+            "explanation": "Entropy is a measure of the disorder or randomness of a system, which increases with the increase in number of possible microstates.",
+            "related_topics": [
+              "Thermodynamic Properties",
+              "Second Law of Thermodynamics"
+            ]
+          },
+          {
+            "concept": "Free Energy (G)",
+            "importance": "Understanding free energy is essential for analyzing thermodynamic changes and predicting the direction of spontaneous processes.",
+            "explanation": "Free energy is a measure of the maximum amount of work that can be done by a system, which is a combination of enthalpy and entropy.",
+            "related_topics": [
+              "Thermodynamic Properties",
+              "Equilibrium"
+            ]
+          },
+          {
+            "concept": "Thermodynamic Processes",
+            "importance": "Understanding thermodynamic processes is crucial for analyzing thermodynamic changes and predicting the direction of spontaneous processes.",
+            "explanation": "Thermodynamic processes include isothermal, adiabatic, isobaric, and isochoric processes, which describe the change in state of a system.",
+            "related_topics": [
+              "System and Surroundings",
+              "Types of Systems"
+            ]
+          },
+          {
+            "concept": "Spontaneity",
+            "importance": "Understanding spontaneity is crucial for predicting the direction of thermodynamic changes and analyzing the feasibility of chemical reactions.",
+            "explanation": "Spontaneity is the tendency of a system to undergo a change in its state, which depends on the change in free energy.",
+            "related_topics": [
+              "Free Energy",
+              "Equilibrium"
+            ]
+          },
+          {
+            "concept": "Equilibrium",
+            "importance": "Understanding equilibrium is essential for analyzing thermodynamic changes and predicting the direction of spontaneous processes.",
+            "explanation": "Equilibrium is a state where the forward and reverse reactions occur at the same rate, resulting in no net change in the system.",
+            "related_topics": [
+              "Free Energy",
+              "Spontaneity"
+            ]
+          },
+          {
+            "concept": "Heat Capacity",
+            "importance": "Understanding heat capacity is crucial for analyzing thermodynamic changes and predicting the direction of spontaneous processes.",
+            "explanation": "Heat capacity is the amount of heat required to change the temperature of a system by one degree.",
+            "related_topics": [
+              "Internal Energy",
+              "Specific Heat Capacity"
+            ]
+          },
+          {
+            "concept": "Heats of Reaction",
+            "importance": "Understanding heats of reaction is essential for analyzing thermodynamic changes and predicting the direction of spontaneous processes.",
+            "explanation": "Heats of reaction are the amounts of heat released or absorbed during a chemical reaction.",
+            "related_topics": [
+              "Enthalpy",
+              "Thermodynamic Properties"
+            ]
+          },
+          {
+            "concept": "Second Law of Thermodynamics",
+            "importance": "Understanding the second law of thermodynamics is crucial for analyzing thermodynamic changes and predicting the direction of spontaneous processes.",
+            "explanation": "The second law of thermodynamics states that the total entropy of an isolated system always increases over time.",
+            "related_topics": [
+              "Entropy",
+              "Free Energy"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:57:47.061+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "Thermodynamics",
+            "example": "",
+            "definition": "The branch of physics that deals with the relationship between heat, work, and energy."
+          },
+          {
+            "term": "System",
+            "example": "",
+            "definition": "A region of space where changes occur due to interactions with its surroundings."
+          },
+          {
+            "term": "Surroundings",
+            "example": "",
+            "definition": "The entire region outside the system."
+          },
+          {
+            "term": "Boundary",
+            "example": "",
+            "definition": "The surface that separates the system from its surroundings."
+          },
+          {
+            "term": "State function",
+            "example": "",
+            "definition": "A function whose value does not depend on the path taken to reach that value."
+          },
+          {
+            "term": "Path function",
+            "example": "",
+            "definition": "A function whose value depends on the path taken to reach that value."
+          },
+          {
+            "term": "Internal energy",
+            "example": "",
+            "definition": "The total energy of the system, including kinetic energy, potential energy, and potential energy due to the interactions of the particles."
+          },
+          {
+            "term": "Enthalpy (H)",
+            "example": "",
+            "definition": "The total energy of the system including internal energy and the energy associated with the pressure and volume of a system."
+          },
+          {
+            "term": "Entropy (S)",
+            "example": "",
+            "definition": "A measure of the disorder or randomness of a system."
+          },
+          {
+            "term": "Temperature (T)",
+            "example": "",
+            "definition": "A measure of the average kinetic energy of the particles in a system."
+          },
+          {
+            "term": "Kelvin scale",
+            "example": "",
+            "definition": "A temperature scale that has the same unit of measurement as the Celsius scale."
+          },
+          {
+            "term": "Heat",
+            "example": "",
+            "definition": "The energy transferred from one system to another due to a temperature difference."
+          },
+          {
+            "term": "Work",
+            "example": "",
+            "definition": "The energy transferred from one system to another due to a pressure-volume change."
+          },
+          {
+            "term": "First law of thermodynamics",
+            "example": "",
+            "definition": "Energy cannot be created or destroyed, only converted from one form to another."
+          },
+          {
+            "term": "Second law of thermodynamics",
+            "example": "",
+            "definition": "The total entropy of an isolated system always increases over time."
+          },
+          {
+            "term": "Spontaneous process",
+            "example": "",
+            "definition": "A process that occurs on its own without any external influence."
+          },
+          {
+            "term": "Non-spontaneous process",
+            "example": "",
+            "definition": "A process that does not occur on its own and requires external influence."
+          },
+          {
+            "term": "Equilibrium",
+            "example": "",
+            "definition": "A state in which the rates of forward and reverse processes are equal."
+          },
+          {
+            "term": "Steady-state",
+            "example": "",
+            "definition": "A condition where the concentrations of reactants and products in a system remain constant over time."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:24:50.332+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Calculate the internal energy change (ΔU) for a system undergoing a thermodynamic process",
+            "Determine the entropy change (ΔS) for a system undergoing a thermodynamic process",
+            "Apply the first law of thermodynamics to solve problems related to heat, work, and internal energy"
+          ],
+          "analyze": [
+            "Analyze the efficiency of a heat engine and its relation to the environment",
+            "Compare the thermodynamic properties of different systems and processes",
+            "Critically evaluate the role of thermodynamics in various industrial and environmental applications"
+          ],
+          "remember": [
+            "Identify the laws of thermodynamics and their statements",
+            "List the properties of a system and their representation in thermodynamic equations",
+            "Recall the types of thermodynamic processes and their characteristics"
+          ],
+          "understand": [
+            "Explain the significance of temperature and its relation to heat and work",
+            "Describe the concept of internal energy and its relation to the state of a system",
+            "Understand the concept of entropy and its relation to disorder and randomness"
+          ]
+        },
+        "ncert_objectives": [
+          "Explain the laws of thermodynamics and their applications.",
+          "Define the terms - system, surroundings, and universe and explain the types of systems.",
+          "Explain the concept of internal energy, enthalpy and entropy and their measurement."
+        ],
+        "board_exam_objectives": [
+          "The first law of thermodynamics: Internal energy, heat and work.",
+          "The second law of thermodynamics: Spontaneity, entropy and Gibbs energy.",
+          "Thermodynamic processes: Isothermal, adiabatic, isochoric and isobaric processes."
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:04:59.981+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "a) Define the term 'spontaneity' in the context of thermodynamics. Explain its relation to the sign of ΔG. <br> b) Discuss the factors that affect the spontaneity of a reaction. <br> c) What is the relationship between ΔG and ΔH?",
+            "marks": 5,
+            "topic": "Spontaneity and Gibbs Free Energy",
+            "answer": "a) Spontaneity in thermodynamics refers to the tendency of a system to move towards a state of lower energy. It is a measure of the natural direction of a process. The sign of ΔG determines the spontaneity of a reaction. If ΔG is negative, the reaction is spontaneous. If ΔG is positive, the reaction is non-spontaneous. <br> b) The spontaneity of a reaction is affected by the change in Gibbs free energy (ΔG), which depends on the change in enthalpy (ΔH) and the change in entropy (ΔS). A reaction is spontaneous if ΔG is negative. The factors that affect spontaneity include temperature, pressure, and the concentration of reactants. <br> c) ΔG is related to ΔH and ΔS by the equation ΔG = ΔH - TΔS. This equation shows that ΔG is affected by both the change in enthalpy and the change in entropy.",
+            "marking_scheme": [
+              "Define spontaneity and its relation to ΔG (1 mark)",
+              "Discuss the factors that affect spontaneity (2 marks)",
+              "Relate ΔG to ΔH (2 marks)"
+            ]
+          },
+          {
+            "q": "a) What is the concept of 'equilibrium' in thermodynamics? <br> b) Explain the conditions for equilibrium in a chemical reaction. <br> c) What is the significance of the equilibrium constant (Kc)?",
+            "marks": 5,
+            "topic": "Chemical Equilibrium",
+            "answer": "a) Equilibrium in thermodynamics refers to a state in which the concentrations of reactants and products remain constant over time. It is a state of balance between the forward and reverse reactions. <br> b) The conditions for equilibrium in a chemical reaction are: (1) the forward and reverse reactions occur at the same rate, (2) the concentrations of reactants and products remain constant, and (3) the system is in a state of dynamic equilibrium. <br> c) The equilibrium constant (Kc) is a measure of the ratio of the concentrations of products to reactants at equilibrium. It is a characteristic property of a reaction and can be used to predict the direction of a reaction.",
+            "marking_scheme": [
+              "Define equilibrium (1 mark)",
+              "Explain the conditions for equilibrium (2 marks)",
+              "Discuss the significance of Kc (2 marks)"
+            ]
+          },
+          {
+            "q": "a) What is 'entropy' in thermodynamics? <br> b) Explain the relationship between entropy and disorder. <br> c) What is the significance of the third law of thermodynamics?",
+            "marks": 5,
+            "topic": "Entropy and the Third Law",
+            "answer": "a) Entropy in thermodynamics is a measure of the disorder or randomness of a system. It is a function of the number of possible microstates in a system. <br> b) Entropy is directly related to disorder. As the disorder of a system increases, its entropy also increases. The greater the disorder, the higher the entropy. <br> c) The third law of thermodynamics states that as the temperature of a system approaches absolute zero, its entropy approaches a minimum value. This law is significant because it provides a basis for calculating the entropy of a system at any temperature, and it helps to explain the behavior of systems at very low temperatures.",
+            "marking_scheme": [
+              "Define entropy (1 mark)",
+              "Explain the relationship between entropy and disorder (2 marks)",
+              "Discuss the significance of the third law of thermodynamics (2 marks)"
+            ]
+          },
+          {
+            "q": "a) What is 'enthalpy' in thermodynamics? <br> b) Explain the difference between enthalpy and internal energy. <br> c) What is the significance of the equation ΔH = ΔU + Δ(pV)?",
+            "marks": 5,
+            "topic": "Enthalpy and Internal Energy",
+            "answer": "a) Enthalpy in thermodynamics is a measure of the total energy of a system, including its internal energy and the energy associated with the pressure and volume of a system. It is a state function that is equal to the sum of the internal energy and the product of the pressure and volume of a system. <br> b) Enthalpy and internal energy are related but distinct properties of a system. Internal energy is the total energy of a system, while enthalpy is a measure of the total energy that includes the energy associated with the pressure and volume of a system. <br> c) The equation ΔH = ΔU + Δ(pV) shows that the change in enthalpy is equal to the change in internal energy plus the change in the energy associated with the pressure and volume of a system. This equation is significant because it provides a basis for calculating the enthalpy of a system and understanding the behavior of systems under different conditions.",
+            "marking_scheme": [
+              "Define enthalpy (1 mark)",
+              "Explain the difference between enthalpy and internal energy (2 marks)",
+              "Discuss the significance of the equation ΔH = ΔU + Δ(pV) (2 marks)"
+            ]
+          },
+          {
+            "q": "a) What is 'Hess's law' in thermodynamics? <br> b) Explain the importance of Hess's law in the calculation of thermodynamic properties. <br> c) What are the limitations of Hess's law?",
+            "marks": 5,
+            "topic": "Hess's Law",
+            "answer": "a) Hess's law is a statement in thermodynamics that the total enthalpy change in a reaction is the same regardless of the number of steps or the pathway taken to reach the final state. It is a fundamental principle in the calculation of thermodynamic properties. <br> b) Hess's law is important in the calculation of thermodynamic properties because it allows us to calculate the enthalpy change of a reaction by combining the enthalpy changes of the individual steps. This makes it possible to calculate the enthalpy change of a reaction even if the reaction is not directly measurable. <br> c) The limitations of Hess's law include the fact that it assumes that the reaction takes place at a constant temperature, and that the reactants and products are in their standard states. Additionally, the law does not take into account the changes in entropy and other thermodynamic properties.",
+            "marking_scheme": [
+              "Define Hess's law (1 mark)",
+              "Explain the importance of Hess's law (2 marks)",
+              "Discuss the limitations of Hess's law (2 marks)"
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:05:09.389+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 19,
+        "questions": [
+          {
+            "q": "What is the term for the measure of the disorder or randomness of a system?",
+            "ans": "A",
+            "opts": [
+              "(A) Entropy",
+              "(B) Enthalpy",
+              "(C) Internal Energy",
+              "(D) Free Energy"
+            ],
+            "topic": "Entropy",
+            "difficulty": "easy",
+            "explanation": "Entropy is a measure of disorder or randomness of a system. Enthalpy is the total energy of a system, internal energy is the energy present in the system and free energy is the energy available to do work."
+          },
+          {
+            "q": "Which of the following processes is an example of a spontaneous process?",
+            "ans": "D",
+            "opts": [
+              "(A) Melting of ice",
+              "(B) Dissolution of sugar in water",
+              "(C) Burning of coal in air",
+              "(D) All of the above"
+            ],
+            "topic": "Spontaneity",
+            "difficulty": "easy",
+            "explanation": "All the given processes are examples of spontaneous processes. Melting of ice is an example of melting point depression, dissolution of sugar in water is an example of dissolution, and burning of coal in air is an example of combustion."
+          },
+          {
+            "q": "What is the sign of ΔS for an ideal gas expanding against a vacuum?",
+            "ans": "A",
+            "opts": [
+              "(A) Positive",
+              "(B) Negative",
+              "(C) Zero",
+              "(D) Depends on the initial and final states"
+            ],
+            "topic": "Entropy Changes",
+            "difficulty": "easy",
+            "explanation": "When an ideal gas expands against a vacuum, entropy increases, resulting in a positive sign of ΔS."
+          },
+          {
+            "q": "Which of the following equations is an example of the first law of thermodynamics?",
+            "ans": "C",
+            "opts": [
+              "(A) ΔU = ΔH",
+              "(B) ΔH = ΔE",
+              "(C) ΔE = ΔQ - ΔW",
+              "(D) ΔQ = ΔW"
+            ],
+            "topic": "First Law of Thermodynamics",
+            "difficulty": "easy",
+            "explanation": "The first law of thermodynamics states that energy cannot be created or destroyed, only converted. Therefore, ΔE = ΔQ - ΔW is the correct equation."
+          },
+          {
+            "q": "What is the term for the energy associated with the motion of particles?",
+            "ans": "B",
+            "opts": [
+              "(A) Potential Energy",
+              "(B) Kinetic Energy",
+              "(C) Internal Energy",
+              "(D) Free Energy"
+            ],
+            "topic": "Types of Energy",
+            "difficulty": "easy",
+            "explanation": "Kinetic energy is the energy associated with the motion of particles. Potential energy is the energy associated with the position of particles, internal energy is the total energy of a system, and free energy is the energy available to do work."
+          },
+          {
+            "q": "Which of the following processes is an example of a non-spontaneous process?",
+            "ans": "A",
+            "opts": [
+              "(A) Dissolution of sugar in water",
+              "(B) Melting of ice",
+              "(C) Burning of coal in air",
+              "(D) All of the above"
+            ],
+            "topic": "Spontaneity",
+            "difficulty": "easy",
+            "explanation": "Dissolution of sugar in water is an example of a non-spontaneous process because it requires energy input. Melting of ice and burning of coal in air are examples of spontaneous processes."
+          },
+          {
+            "q": "What is the term for the measure of the total energy of a system?",
+            "ans": "C",
+            "opts": [
+              "(A) Enthalpy",
+              "(B) Entropy",
+              "(C) Internal Energy",
+              "(D) Free Energy"
+            ],
+            "topic": "Internal Energy",
+            "difficulty": "easy",
+            "explanation": "Internal energy is the total energy of a system, including both kinetic energy and potential energy. Enthalpy is the total energy of a system plus the energy associated with the pressure and volume of the system, entropy is a measure of disorder or randomness, and free energy is the energy available to do work."
+          },
+          {
+            "q": "Which of the following statements is true about the second law of thermodynamics?",
+            "ans": "B",
+            "opts": [
+              "(A) The total entropy of an isolated system always decreases",
+              "(B) The total entropy of an isolated system always increases",
+              "(C) The total entropy of an isolated system remains constant",
+              "(D) The total entropy of an isolated system can decrease or increase"
+            ],
+            "topic": "Second Law of Thermodynamics",
+            "difficulty": "medium",
+            "explanation": "The second law of thermodynamics states that the total entropy of an isolated system always increases. This means that the disorder or randomness of the system always increases over time."
+          },
+          {
+            "q": "What is the term for the energy associated with the pressure and volume of a system?",
+            "ans": "B",
+            "opts": [
+              "(A) Internal Energy",
+              "(B) Enthalpy",
+              "(C) Entropy",
+              "(D) Free Energy"
+            ],
+            "topic": "Types of Energy",
+            "difficulty": "medium",
+            "explanation": "Enthalpy is the total energy of a system plus the energy associated with the pressure and volume of the system. Internal energy is the total energy of a system, entropy is a measure of disorder or randomness, and free energy is the energy available to do work."
+          },
+          {
+            "q": "Which of the following processes is an example of an endothermic process?",
+            "ans": "A",
+            "opts": [
+              "(A) Melting of ice",
+              "(B) Dissolution of sugar in water",
+              "(C) Burning of coal in air",
+              "(D) All of the above"
+            ],
+            "topic": "Endothermic and Exothermic Processes",
+            "difficulty": "medium",
+            "explanation": "Melting of ice is an example of an endothermic process because it requires energy input to change the state of the system. Dissolution of sugar in water and burning of coal in air are examples of exothermic processes."
+          },
+          {
+            "q": "What is the term for the energy available to do work?",
+            "ans": "D",
+            "opts": [
+              "(A) Internal Energy",
+              "(B) Enthalpy",
+              "(C) Entropy",
+              "(D) Free Energy"
+            ],
+            "topic": "Types of Energy",
+            "difficulty": "medium",
+            "explanation": "Free energy is the energy available to do work. Internal energy is the total energy of a system, enthalpy is the total energy of a system plus the energy associated with the pressure and volume of the system, and entropy is a measure of disorder or randomness."
+          },
+          {
+            "q": "Which of the following equations is an example of the second law of thermodynamics?",
+            "ans": "C",
+            "opts": [
+              "(A) ΔS = ΔH",
+              "(B) ΔH = ΔE",
+              "(C) ΔS = ΔQ / T",
+              "(D) ΔQ = ΔW"
+            ],
+            "topic": "Second Law of Thermodynamics",
+            "difficulty": "medium",
+            "explanation": "The second law of thermodynamics states that the total entropy of an isolated system always increases. Therefore, ΔS = ΔQ / T is the correct equation."
+          },
+          {
+            "q": "What is the term for the process by which a system becomes more organized?",
+            "ans": "D",
+            "opts": [
+              "(A) Spontaneous process",
+              "(B) Non-spontaneous process",
+              "(C) Irreversible process",
+              "(D) Reversible process"
+            ],
+            "topic": "Reversible and Irreversible Processes",
+            "difficulty": "medium",
+            "explanation": "A reversible process is a process that can be reversed without any change in the system. This means that the system becomes more organized and the entropy remains constant."
+          },
+          {
+            "q": "Which of the following statements is true about the first law of thermodynamics?",
+            "ans": "A",
+            "opts": [
+              "(A) Energy cannot be created or destroyed, only converted",
+              "(B) Energy can be created or destroyed",
+              "(C) Energy is conserved",
+              "(D) Energy is not conserved"
+            ],
+            "topic": "First Law of Thermodynamics",
+            "difficulty": "hard",
+            "explanation": "The first law of thermodynamics states that energy cannot be created or destroyed, only converted. This means that the total energy of an isolated system remains constant over time."
+          },
+          {
+            "q": "What is the term for the energy associated with the motion of particles in a system?",
+            "ans": "B",
+            "opts": [
+              "(A) Potential Energy",
+              "(B) Kinetic Energy",
+              "(C) Internal Energy",
+              "(D) Free Energy"
+            ],
+            "topic": "Types of Energy",
+            "difficulty": "hard",
+            "explanation": "Kinetic energy is the energy associated with the motion of particles in a system. Potential energy is the energy associated with the position of particles, internal energy is the total energy of a system, and free energy is the energy available to do work."
+          },
+          {
+            "q": "Which of the following processes is an example of a reversible process?",
+            "ans": "A",
+            "opts": [
+              "(A) Dissolution of sugar in water",
+              "(B) Melting of ice",
+              "(C) Burning of coal in air",
+              "(D) All of the above"
+            ],
+            "topic": "Reversible and Irreversible Processes",
+            "difficulty": "hard",
+            "explanation": "Dissolution of sugar in water is an example of a reversible process because it can be reversed without any change in the system. Melting of ice and burning of coal in air are examples of irreversible processes."
+          },
+          {
+            "q": "What is the term for the process by which a system becomes more disordered?",
+            "ans": "C",
+            "opts": [
+              "(A) Spontaneous process",
+              "(B) Non-spontaneous process",
+              "(C) Irreversible process",
+              "(D) Reversible process"
+            ],
+            "topic": "Reversible and Irreversible Processes",
+            "difficulty": "hard",
+            "explanation": "An irreversible process is a process that cannot be reversed without any change in the system. This means that the system becomes more disordered and the entropy increases."
+          },
+          {
+            "q": "Which of the following equations is an example of the Gibbs free energy equation?",
+            "ans": "A",
+            "opts": [
+              "(A) ΔG = ΔH - TΔS",
+              "(B) ΔG = ΔE + PΔV",
+              "(C) ΔG = ΔQ - ΔW",
+              "(D) ΔG = ΔH + TΔS"
+            ],
+            "topic": "Gibbs Free Energy",
+            "difficulty": "hard",
+            "explanation": "The Gibbs free energy equation is ΔG = ΔH - TΔS, which is used to determine the spontaneity of a process."
+          },
+          {
+            "q": "What is the term for the energy associated with the position of particles in a system?",
+            "ans": "A",
+            "opts": [
+              "(A) Potential Energy",
+              "(B) Kinetic Energy",
+              "(C) Internal Energy",
+              "(D) Free Energy"
+            ],
+            "topic": "Types of Energy",
+            "difficulty": "hard",
+            "explanation": "Potential energy is the energy associated with the position of particles in a system. Kinetic energy is the energy associated with the motion of particles, internal energy is the total energy of a system, and free energy is the energy available to do work."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:57:48.348+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Thermodynamics\n\n## Chapter at a Glance\nThermodynamics is a branch of physics that deals with the relationships between heat, work, temperature, and energy. This chapter introduces the fundamental concepts of thermodynamics, including the system, surroundings, and the various thermodynamic processes such as isothermal, adiabatic, and isobaric processes. The chapter also covers the laws of thermodynamics, thermodynamic properties, and the concept of entropy. Understanding thermodynamics is crucial for understanding various physical and chemical phenomena, including the behavior of ideal gases, phase transitions, and chemical reactions.\n\n## Section-wise Summary\n\n### 5.1 Introduction\nThermodynamics is a branch of physics that deals with the relationships between heat, work, temperature, and energy. The system and surroundings are the two primary components of a thermodynamic system. The system is the part of the universe under study, while the surroundings are the parts of the universe outside the system.\n\n### 5.2 Thermodynamic Systems and Processes\nA thermodynamic system can be in equilibrium or non-equilibrium. The system's properties can be classified into two categories: intensive and extensive properties. Intensive properties are independent of the system's size, while extensive properties are dependent on the system's size.\n\n### 5.3 State Variables\nState variables are properties of a system that depend only on the current state of the system. They are used to describe the condition of a system. The most common state variables are pressure (P), volume (V), and temperature (T).\n\n### 5.4 Thermodynamic Processes\nThermodynamic processes are changes in the state of a system. There are several types of thermodynamic processes, including isothermal, adiabatic, isobaric, isochoric, and cyclic processes.\n\n### 5.5 First Law of Thermodynamics\nThe first law of thermodynamics, also known as the law of energy conservation, states that energy cannot be created or destroyed, only converted from one form to another. It can be expressed mathematically as ΔE = Q - W.\n\n### 5.6 Second Law of Thermodynamics\nThe second law of thermodynamics states that the total entropy of an isolated system always increases over time. Entropy is a measure of the disorder or randomness of a system.\n\n### 5.7 Third Law of Thermodynamics\nThe third law of thermodynamics states that as the temperature of a system approaches absolute zero, the entropy of the system approaches a minimum value.\n\n### 5.8 Thermodynamic Properties\nThermodynamic properties are the physical and chemical properties of a system that can be measured or calculated. They include internal energy (U), enthalpy (H), and entropy (S).\n\n## Important NCERT Exercises Insight\nTo excel in NCERT thermodynamics, remember the following key concepts:\n\n* The first law of thermodynamics: ΔE = Q - W\n* The second law of thermodynamics: ΔS = Q / T\n* The definition of entropy: a measure of disorder or randomness\n* The difference between extensive and intensive properties\n* The various types of thermodynamic processes\n* The concept of internal energy, enthalpy, and entropy\n\n## NCERT Exemplar Focus\nThe following topics are covered in NCERT Exemplar for this chapter:\n\n* Thermodynamic properties of an ideal gas\n* Thermodynamic processes, including isothermal, adiabatic, and isobaric processes\n* First law of thermodynamics for an ideal gas\n* Second law of thermodynamics for an ideal gas\n\n## Board Exam Relevance\nThermodynamics is an important topic in the Class 11 Chemistry board exam. The marks weightage for this chapter is around 10-15%. The frequently asked topics include:\n\n* First law of thermodynamics\n* Second law of thermodynamics\n* Thermodynamic properties of an ideal gas\n* Thermodynamic processes\n* Internal energy, enthalpy, and entropy"
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:05:57.908+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "At constant pressure, the internal energy (ΔU) of a system is -3.5 kJ/mol. Calculate the change in enthalpy (ΔH) of the system. (Assume Δn = 0).",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "ΔH = ΔU + Δ(PV) = ΔU + PΔV = ΔU + 0 = -3.5 kJ/mol",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "A reaction is spontaneous at 298 K and 1 atm. Will it be spontaneous at 298 K and 2 atm?",
+            "type": "True/False",
+            "marks": 1,
+            "answer": "False",
+            "difficulty": "easy",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "Calculate the work done by a system at constant pressure (2 atm) that expands from 2 L to 4 L against an external pressure of 2 atm.",
+            "type": "Fill in the Blank",
+            "marks": 2,
+            "answer": "4 L atm",
+            "difficulty": "medium",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "What is the relation between ΔH and ΔU for a reaction at constant volume?",
+            "type": "Short Answer",
+            "marks": 1,
+            "answer": "ΔH = ΔU + ΔnRT",
+            "difficulty": "medium",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "A reaction has ΔH = 20 kJ/mol and ΔS = 15 J/K mol. Calculate the change in Gibbs free energy (ΔG) at 298 K.",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "ΔG = ΔH - TΔS = 20 kJ/mol - (298 K)(0.015 kJ/K mol) = 19.74 kJ/mol",
+            "difficulty": "hard",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "For a process at constant temperature, what is the relation between the work done (w) and the change in internal energy (ΔU)?",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "w = -ΔU",
+            "difficulty": "easy",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "A reaction is carried out at constant temperature and pressure. The reaction quotient (Q) is 10 times the equilibrium constant (K). Will the reaction proceed?",
+            "type": "True/False",
+            "marks": 1,
+            "answer": "False",
+            "difficulty": "medium",
+            "year_pattern": "2017-style"
+          },
+          {
+            "q": "Calculate the standard Gibbs free energy change (ΔG°) for the reaction 2H2(g) + O2(g) → 2H2O(g) at 298 K. (ΔH° = -113.1 kJ/mol and ΔS° = 136.0 J/K mol).",
+            "type": "Short Answer",
+            "marks": 3,
+            "answer": "ΔG° = ΔH° - TΔS° = -113.1 kJ/mol - (298 K)(0.136 kJ/K mol) = -113.1 kJ/mol - 40.48 kJ/mol = -153.58 kJ/mol",
+            "difficulty": "hard",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "A process is carried out at constant volume. The work done by the system will be ______. (Assume Δn = 0).",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "Zero",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "Calculate the work done by a system that expands isothermally against an external pressure from 2 atm to 4 atm. (Assume the initial and final volumes are 2 L and 4 L respectively).",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "w = -nRT ln(P2/P1) = -nRT ln(4/2) = -nRT ln(2) = -nRT 0.693 = -2 L atm",
+            "difficulty": "medium",
+            "year_pattern": "2020-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:05:08.906+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "Define internal energy (U) of a system.",
+            "marks": 2,
+            "topic": "Internal Energy",
+            "answer": "The internal energy (U) of a system is the sum of the kinetic energy and potential energy of its particles. It is a state function that depends on the temperature and volume of the system. In an isolated system, the internal energy remains constant.",
+            "key_points": [
+              "Internal energy is a state function.",
+              "Depends on temperature and volume.",
+              "Constant in an isolated system."
+            ]
+          },
+          {
+            "q": "What is the difference between a reversible and an irreversible process?",
+            "marks": 2,
+            "topic": "Reversible and Irreversible Processes",
+            "answer": "A reversible process is a process that can be reversed without any change in the system or its surroundings. An irreversible process cannot be reversed as it involves a change in the system or its surroundings. This difference is due to the presence of friction or any other dissipative force in an irreversible process.",
+            "key_points": [
+              "Reversible process can be reversed.",
+              "No change in system and surroundings.",
+              "Irreversible process cannot be reversed.",
+              "Presence of friction or dissipative force."
+            ]
+          },
+          {
+            "q": "Explain the concept of entropy.",
+            "marks": 3,
+            "topic": "Entropy",
+            "answer": "Entropy is a measure of disorder or randomness in a system. It is a state function that depends on the temperature, volume, and number of moles of a system. Entropy increases in a spontaneous process, and it is a measure of the amount of thermal energy unavailable to do work in a system.",
+            "key_points": [
+              "Entropy measures disorder or randomness.",
+              "Depends on temperature, volume, and number of moles.",
+              "Increases in a spontaneous process.",
+              "Measures unavailable thermal energy."
+            ]
+          },
+          {
+            "q": "What is the difference between heat and internal energy?",
+            "marks": 2,
+            "topic": "Heat and Internal Energy",
+            "answer": "Heat is the energy transferred between a system and its surroundings due to a temperature difference. Internal energy, on the other hand, is the total energy of a system including its kinetic and potential energy. Heat is a path function, whereas internal energy is a state function.",
+            "key_points": [
+              "Heat is energy transfer.",
+              "Depends on temperature difference.",
+              "Internal energy is a state function.",
+              "Path function."
+            ]
+          },
+          {
+            "q": "Explain the first law of thermodynamics.",
+            "marks": 3,
+            "topic": "First Law of Thermodynamics",
+            "answer": "The first law of thermodynamics states that energy cannot be created or destroyed, only converted from one form to another. Mathematically, it is expressed as ΔU = Q - W, where ΔU is the change in internal energy, Q is the heat added to the system, and W is the work done by the system.",
+            "key_points": [
+              "Energy cannot be created or destroyed.",
+              "Only converted from one form to another.",
+              "ΔU = Q - W.",
+              "ΔU is change in internal energy."
+            ]
+          },
+          {
+            "q": "What is the significance of the sign of ΔG in a reaction?",
+            "marks": 2,
+            "topic": "Gibbs Free Energy",
+            "answer": "The sign of ΔG determines the spontaneity of a reaction. A negative ΔG value indicates a spontaneous reaction, whereas a positive ΔG value indicates a non-spontaneous reaction. The spontaneity of a reaction is also influenced by the temperature, with lower temperatures favoring non-spontaneous reactions.",
+            "key_points": [
+              "ΔG determines spontaneity.",
+              "Negative ΔG is spontaneous.",
+              "Positive ΔG is non-spontaneous.",
+              "Temperature affects spontaneity."
+            ]
+          },
+          {
+            "q": "Explain the concept of equilibrium.",
+            "marks": 3,
+            "topic": "Equilibrium",
+            "answer": "Equilibrium is a state in a reversible process where the forward and reverse reactions occur at the same rate, resulting in no net change in the concentrations of reactants and products. The equilibrium constant (K) is a measure of the equilibrium position, with higher values indicating a more dominant product.",
+            "key_points": [
+              "Equilibrium is a state of no net change.",
+              "Forward and reverse reactions are equal.",
+              "Equilibrium constant (K) measures equilibrium position.",
+              "Higher K indicates dominant product."
+            ]
+          },
+          {
+            "q": "What is the difference between a phase transition and a chemical reaction?",
+            "marks": 2,
+            "topic": "Phase Transitions and Chemical Reactions",
+            "answer": "A phase transition is a change in the state of a substance, such as melting or boiling, whereas a chemical reaction involves the transformation of one substance into another. Phase transitions involve a change in the physical properties of a substance, whereas chemical reactions involve a change in the chemical composition of a substance.",
+            "key_points": [
+              "Phase transition involves state change.",
+              "Physical properties change.",
+              "Chemical reaction involves substance transformation.",
+              "Chemical composition changes."
+            ]
+          },
+          {
+            "q": "Explain the concept of entropy change (ΔS) in a reaction.",
+            "marks": 3,
+            "topic": "Entropy Change",
+            "answer": "Entropy change (ΔS) measures the disorder or randomness of a system. A positive ΔS value indicates an increase in disorder or randomness, whereas a negative ΔS value indicates a decrease in disorder or randomness. The entropy change is related to the change in the number of particles in a system, with a higher number of particles resulting in a higher entropy.",
+            "key_points": [
+              "ΔS measures disorder or randomness.",
+              "Positive ΔS indicates increase in disorder.",
+              "Negative ΔS indicates decrease in disorder.",
+              "Related to change in particle number."
+            ]
+          },
+          {
+            "q": "What is the significance of the sign of ΔH in a reaction?",
+            "marks": 2,
+            "topic": "Enthalpy Change",
+            "answer": "The sign of ΔH determines the heat transfer in a reaction. A negative ΔH value indicates an exothermic reaction, whereas a positive ΔH value indicates an endothermic reaction. The heat transfer is related to the stability of a reaction, with exothermic reactions generally being more stable.",
+            "key_points": [
+              "ΔH determines heat transfer.",
+              "Negative ΔH is exothermic.",
+              "Positive ΔH is endothermic.",
+              "Heat transfer affects stability."
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:57:48.596+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Thermodynamics — Quick Revision Notes\n\n## ⚡ Key Points\n* Thermodynamics is the branch of physics that deals with the relationship between heat and other forms of energy.\n* It is concerned with the macroscopic properties of a system.\n* Thermodynamics is applicable to all types of systems, including isolated, closed, and open systems.\n* Laws of thermodynamics are universal and independent of the size and composition of the system.\n* First law of thermodynamics: Energy cannot be created or destroyed, only converted from one form to another.\n* Second law of thermodynamics: The total entropy of an isolated system always increases over time.\n* Third law of thermodynamics: As the temperature of a system approaches absolute zero, its entropy approaches a minimum value.\n* Internal energy (U) is a state function that depends only on the state of the system.\n* Enthalpy (H) is a state function that depends on the internal energy and the pressure of the system.\n* Entropy (S) is a state function that depends on the disorder or randomness of the system.\n* Gibbs free energy (G) is a state function that depends on the internal energy, pressure, and temperature of the system.\n* Thermodynamic equilibrium is a state where the properties of a system are no longer changing with time.\n* Thermodynamic processes can be reversible or irreversible.\n* Reversible processes take place slowly and in a single direction.\n* Irreversible processes take place rapidly and in a single direction.\n* Adiabatic processes are those in which there is no heat transfer between the system and its surroundings.\n* Isothermal processes are those in which the temperature of the system remains constant.\n* Isobaric processes are those in which the pressure of the system remains constant.\n* Isochoric processes are those in which the volume of the system remains constant.\n* Ideal gas equation: PV = nRT.\n* Real gases deviate from ideal behavior due to intermolecular forces.\n* Thermodynamic properties can be expressed in terms of the Gibbs free energy function.\n* The Gibbs free energy change (ΔG) is a measure of the spontaneity of a reaction.\n\n## 🔑 Must-Know Definitions\n* **Thermodynamics**: The branch of physics that deals with the relationship between heat and other forms of energy.\n* **System**: A region in space where the thermodynamic properties are being measured.\n* **Surroundings**: The region outside the system that interacts with the system.\n* **Internal energy (U)**: The total energy of a system, including kinetic energy, potential energy, and other forms of energy.\n* **Enthalpy (H)**: A measure of the total energy of a system, including internal energy and the energy associated with the pressure and volume of a system.\n* **Entropy (S)**: A measure of the disorder or randomness of a system.\n* **Gibbs free energy (G)**: A measure of the energy available to do work in a system.\n* **Thermodynamic equilibrium**: A state where the properties of a system are no longer changing with time.\n\n## 📊 Important Formulas\n1. **First law of thermodynamics**: ΔE = Q - W\n2. **Internal energy**: U = U(T, V, n)\n3. **Enthalpy**: H = U + pV\n4. **Entropy**: ΔS = Δq / T\n5. **Gibbs free energy**: ΔG = ΔH - TΔS\n6. **Ideal gas equation**: PV = nRT\n7. **Gibbs free energy function**: ΔG = ΔH - TΔS - ∑νiμi\n8. **Entropy change**: ΔS = S2 - S1\n9. **Internal energy change**: ΔU = Q - W\n10. **Enthalpy change**: ΔH = Q_p - W\n\n## ⭐ Exam Tips\n* Focus on the laws of thermodynamics and their applications.\n* Understand the concept of internal energy, enthalpy, and entropy.\n* Be familiar with the ideal gas equation and the behavior of real gases.\n* Practice problems related to thermodynamic processes and cycles.\n* Review the concept of thermodynamic equilibrium and the Gibbs free energy function."
+      }
+    }
+  }
+}

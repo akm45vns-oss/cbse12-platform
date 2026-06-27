@@ -1,0 +1,124 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:32:49.252Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is SQL and its primary function?",
+        "marks": 2,
+        "answer": "SQL (Structured Query Language) is a programming language used to manage and manipulate data in relational databases. Its primary function is to store, modify and retrieve data stored in a database.",
+        "key_points": [
+          "SQL is a programming language",
+          "Primary function of SQL",
+          "Data manipulation"
+        ],
+        "topic": "Introduction to SQL"
+      },
+      {
+        "q": "What is a database and what are its components?",
+        "marks": 2,
+        "answer": "A database is a collection of organized data that is stored in a way that allows efficient retrieval and manipulation. Its components include database schema, data types, tables, rows, and columns.",
+        "key_points": [
+          "Database components",
+          "Database schema",
+          "Data types"
+        ],
+        "topic": "Database Fundamentals"
+      },
+      {
+        "q": "What is a SQL query and what are its types?",
+        "marks": 2,
+        "answer": "A SQL query is a command used to retrieve or modify data in a database. Its types include DDL (Data Definition Language), DML (Data Manipulation Language), and DQL (Data Query Language).",
+        "key_points": [
+          "SQL query",
+          "Types of SQL queries",
+          "DDL, DML, DQL"
+        ],
+        "topic": "SQL Queries"
+      },
+      {
+        "q": "What is the difference between INNER JOIN and LEFT JOIN in SQL?",
+        "marks": 2,
+        "answer": "INNER JOIN returns records that have matching values in both tables, while LEFT JOIN returns all records from the left table and the matching records from the right table. If no match is found, NULL values are returned.",
+        "key_points": [
+          "INNER JOIN",
+          "LEFT JOIN",
+          "Join operations"
+        ],
+        "topic": "SQL Joins"
+      },
+      {
+        "q": "What is a subquery and how is it used in SQL?",
+        "marks": 2,
+        "answer": "A subquery is a query nested inside another query. It is used to retrieve data from one query and use it in another query. It can be used in SELECT, FROM, WHERE, or HAVING clauses.",
+        "key_points": [
+          "Subquery",
+          "Nested query",
+          "Query within a query"
+        ],
+        "topic": "SQL Subqueries"
+      },
+      {
+        "q": "What is the purpose of GROUP BY clause in SQL?",
+        "marks": 2,
+        "answer": "The GROUP BY clause is used to group a set of rows into a set of summary rows based on one or more columns. It is used to perform aggregation operations such as SUM, AVG, MAX, etc.",
+        "key_points": [
+          "GROUP BY clause",
+          "Aggregation operations",
+          "Summary rows"
+        ],
+        "topic": "SQL Aggregate Functions"
+      },
+      {
+        "q": "What is the difference between LIKE and NOT LIKE operators in SQL?",
+        "marks": 2,
+        "answer": "LIKE operator is used to search for a specified pattern in a column, while NOT LIKE operator is used to search for a specified pattern that does not exist in a column.",
+        "key_points": [
+          "LIKE operator",
+          "NOT LIKE operator",
+          "Pattern matching"
+        ],
+        "topic": "SQL Pattern Matching"
+      },
+      {
+        "q": "What is the purpose of ORDER BY clause in SQL?",
+        "marks": 2,
+        "answer": "The ORDER BY clause is used to sort a set of rows in ascending or descending order based on one or more columns. It is used to retrieve data in a specific order.",
+        "key_points": [
+          "ORDER BY clause",
+          "Sorting data",
+          "Ascending and descending order"
+        ],
+        "topic": "SQL Sorting and Ordering"
+      },
+      {
+        "q": "What is the difference between UNION and UNION ALL operators in SQL?",
+        "marks": 2,
+        "answer": "UNION operator returns a unique set of rows from two or more queries, while UNION ALL operator returns all rows from two or more queries, including duplicates.",
+        "key_points": [
+          "UNION operator",
+          "UNION ALL operator",
+          "Duplicate removal"
+        ],
+        "topic": "SQL Set Operations"
+      },
+      {
+        "q": "What is the purpose of INDEX in SQL?",
+        "marks": 2,
+        "answer": "An index is a data structure that improves the speed of data retrieval operations by locating data quickly. It is used to speed up the execution of queries.",
+        "key_points": [
+          "Index",
+          "Data retrieval",
+          "Query optimization"
+        ],
+        "topic": "SQL Indexing"
+      }
+    ],
+    "total": 10
+  }
+}

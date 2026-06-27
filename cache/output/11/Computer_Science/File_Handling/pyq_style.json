@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "File Handling",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:13:57.826Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the difference between Sequential and Direct Access methods of file handling?",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "Sequential access method is a method in which files are read or written in sequence from start to end or vice versa. Direct access method is a method in which files are read or written at any location directly.",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "A file contains the following records. What is the record length?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "25",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the purpose of using a record separator in file handling?",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "To separate each record from one another.",
+        "year_pattern": "2015-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the difference between a text file and a binary file?",
+        "type": "Long Answer",
+        "marks": 8,
+        "answer": "A text file contains only text data whereas a binary file contains both text and non-text data.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "What is the mode in which a file is opened in write mode and the file does not exist?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "w",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the purpose of using a file pointer?",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "To keep track of the current position in the file.",
+        "year_pattern": "2014-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the difference between a sequential file and a direct access file?",
+        "type": "Long Answer",
+        "marks": 8,
+        "answer": "A sequential file is a file in which records are stored in a continuous block of space whereas a direct access file is a file in which records are stored in non-continuous blocks of space and are accessed directly by their address.",
+        "year_pattern": "2018-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "What is the mode in which a file is opened in read and write mode and the file exists?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "r+",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the purpose of using a record length?",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "To determine the length of each record in a file.",
+        "year_pattern": "2015-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the difference between a fixed length record and a variable length record?",
+        "type": "Long Answer",
+        "marks": 8,
+        "answer": "A fixed length record is a record whose length is fixed and does not change whereas a variable length record is a record whose length changes depending on the data it contains.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      }
+    ],
+    "total": 10
+  }
+}

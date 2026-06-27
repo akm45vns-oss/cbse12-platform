@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Chemistry",
+  "chapter": "States of Matter: Gases and Liquids",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:05:05.891Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Gases have no fixed shape and volume.",
+        "reason": "Reason (R): This is because the molecules of a gas are widely spaced and are free to move in any direction.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The molecules of a gas are widely spaced and are free to move in any direction, leading to no fixed shape and volume."
+      },
+      {
+        "assertion": "Assertion (A): Liquids have a fixed volume but no fixed shape.",
+        "reason": "Reason (R): This is because the molecules of a liquid are close together and have a fixed distance between them.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The molecules of a liquid are close together but can flow past each other, allowing the liquid to take the shape of its container, not the molecules having a fixed distance between them."
+      },
+      {
+        "assertion": "Assertion (A): The pressure of a gas is directly proportional to its volume.",
+        "reason": "Reason (R): According to Boyle's Law, the pressure of a gas is inversely proportional to its volume.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Boyle's Law states that the pressure of a gas is inversely proportional to its volume, not directly proportional."
+      },
+      {
+        "assertion": "Assertion (A): The surface tension of a liquid is due to the intermolecular forces between its molecules.",
+        "reason": "Reason (R): This is because the molecules at the surface of a liquid are not as close together as those in the bulk of the liquid.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The molecules at the surface of a liquid are not as close together as those in the bulk of the liquid, leading to weaker intermolecular forces and surface tension."
+      },
+      {
+        "assertion": "Assertion (A): The viscosity of a liquid is a measure of its ability to flow.",
+        "reason": "Reason (R): This is because the molecules of a liquid are close together and have a fixed distance between them.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "Viscosity is a measure of a liquid's resistance to flow, not its ability to flow. The molecules of a liquid being close together is related to its surface tension, not viscosity."
+      },
+      {
+        "assertion": "Assertion (A): The boiling point of a liquid is the temperature at which its vapor pressure equals the atmospheric pressure.",
+        "reason": "Reason (R): This is because the molecules of a liquid have a fixed distance between them.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The boiling point of a liquid is the temperature at which its vapor pressure equals the atmospheric pressure, not the molecules having a fixed distance between them."
+      },
+      {
+        "assertion": "Assertion (A): The critical temperature of a gas is the temperature above which it cannot be liquefied.",
+        "reason": "Reason (R): This is because the molecules of a gas have a fixed distance between them.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The critical temperature of a gas is the temperature above which it cannot be liquefied, not because the molecules have a fixed distance between them."
+      },
+      {
+        "assertion": "Assertion (A): The root mean square velocity of gas molecules is independent of the pressure of the gas.",
+        "reason": "Reason (R): This is because the root mean square velocity is directly proportional to the square root of the temperature of the gas.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The root mean square velocity of gas molecules is directly proportional to the square root of the temperature of the gas, not independent of pressure."
+      },
+      {
+        "assertion": "Assertion (A): The surface tension of a liquid is a measure of its viscosity.",
+        "reason": "Reason (R): This is because the molecules of a liquid are close together and have a fixed distance between them.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The surface tension of a liquid is a measure of its intermolecular forces, not its viscosity."
+      }
+    ],
+    "total": 9
+  }
+}

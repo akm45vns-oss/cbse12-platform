@@ -27,11 +27,12 @@ export function useProgress() {
     });
   }, [currentUser]);
 
-  const getStats = () => {
+  const getStats = (curriculumOverride) => {
+    const activeCurriculum = curriculumOverride || CURRICULUM;
     let notesRead = 0, quizDone = 0;
     const bySubject = {};
 
-    Object.entries(CURRICULUM).forEach(([s, d]) => {
+    Object.entries(activeCurriculum).forEach(([s, d]) => {
       let sN = 0, sQ = 0, sT = 0;
       d.units.forEach(u =>
         u.chapters.forEach(ch => {
@@ -52,9 +53,10 @@ export function useProgress() {
     return { notesRead, quizDone, bySubject };
   };
 
-  const getOverallPercentage = () => {
-    const stats = getStats();
-    return Math.round((stats.notesRead + stats.quizDone) / (totalChapters * 2) * 100);
+  const getOverallPercentage = (curriculumOverride, totalOverride) => {
+    const total = totalOverride || totalChapters;
+    const stats = getStats(curriculumOverride);
+    return Math.round((stats.notesRead + stats.quizDone) / (total * 2) * 100);
   };
 
   return {

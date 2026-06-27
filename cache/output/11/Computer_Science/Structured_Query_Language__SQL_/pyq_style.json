@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T14:47:35.016Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Write a SQL command to delete a row from a table whose column 'employee_id' has a value of 101.",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "DELETE FROM table_name WHERE employee_id = 101;",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Which SQL command is used to retrieve data from a database table?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "SELECT",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the difference between INNER JOIN and LEFT JOIN in SQL?",
+        "type": "Short Answer",
+        "marks": 5,
+        "answer": "INNER JOIN returns only the rows that have a match in both tables, while LEFT JOIN returns all the rows from the left table and the matching rows from the right table.",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Write a SQL query to retrieve the names of all employees whose salary is greater than 5000.",
+        "type": "Long Answer",
+        "marks": 8,
+        "answer": "SELECT name FROM employees WHERE salary > 5000;",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the purpose of the GROUP BY clause in SQL?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The GROUP BY clause is used to group the result-set by one or more columns.",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Write a SQL command to create a table named 'employees' with columns 'employee_id', 'name', and 'salary'.",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "CREATE TABLE employees (employee_id INT, name VARCHAR(255), salary DECIMAL(10,2));",
+        "year_pattern": "2021-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "What is the result of the following SQL query: SELECT * FROM employees WHERE age > 30 OR age < 20?",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "True",
+        "year_pattern": "2015-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Write a SQL query to retrieve the sum of the salaries of all employees in a table.",
+        "type": "Long Answer",
+        "marks": 10,
+        "answer": "SELECT SUM(salary) FROM employees;",
+        "year_pattern": "2014-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "What is the purpose of the HAVING clause in SQL?",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "The HAVING clause is used to filter groups of rows based on a condition.",
+        "year_pattern": "2012-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Write a SQL command to drop a table named 'employees'.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "DROP TABLE employees;",
+        "year_pattern": "2013-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

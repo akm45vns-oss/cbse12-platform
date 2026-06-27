@@ -1,0 +1,274 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "System of Particles and Rotational Motion",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:11:12.982Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A particle is moving in a circular path with constant speed. This motion is an example of?",
+        "opts": [
+          "(A) Simple Harmonic Motion",
+          "(B) Circular Motion",
+          "(C) Rotational Motion",
+          "(D) Oscillatory Motion"
+        ],
+        "ans": "B",
+        "explanation": "Circular motion refers to the motion of an object in a circular path with constant speed. Simple harmonic motion is a special case of rotational motion.",
+        "difficulty": "easy",
+        "topic": "Circular Motion"
+      },
+      {
+        "q": "Two particles of masses 2 kg and 3 kg are moving with velocities 4 m/s and 6 m/s respectively. The velocity of the center of mass is?",
+        "opts": [
+          "(A) 5 m/s",
+          "(B) 3.5 m/s",
+          "(C) 7.5 m/s",
+          "(D) 10 m/s"
+        ],
+        "ans": "B",
+        "explanation": "The velocity of the center of mass is calculated using the formula: V_cm = (m1*v1 + m2*v2) / (m1 + m2)",
+        "difficulty": "medium",
+        "topic": "Center of Mass"
+      },
+      {
+        "q": "A rigid body is rotating about an axis passing through its center of mass. The angular momentum about this axis is?",
+        "opts": [
+          "(A) Zero",
+          "(B) Maximum",
+          "(C) Minimum",
+          "(D) Dependent on the moment of inertia"
+        ],
+        "ans": "B",
+        "explanation": "The angular momentum about an axis passing through the center of mass is maximum.",
+        "difficulty": "easy",
+        "topic": "Angular Momentum"
+      },
+      {
+        "q": "A rod of length 1 m is pivoted at one end. A force of 2 N is applied at the other end. The torque about the pivot is?",
+        "opts": [
+          "(A) 0.5 Nm",
+          "(B) 1 Nm",
+          "(C) 2 Nm",
+          "(D) 3 Nm"
+        ],
+        "ans": "B",
+        "explanation": "The torque about a point is calculated using the formula: τ = r × F",
+        "difficulty": "medium",
+        "topic": "Torque"
+      },
+      {
+        "q": "A wheel of radius 0.5 m is rotating about its axis with an angular velocity of 2 rad/s. The linear velocity of a point on the wheel is?",
+        "opts": [
+          "(A) 1 m/s",
+          "(B) 2 m/s",
+          "(C) 3 m/s",
+          "(D) 4 m/s"
+        ],
+        "ans": "B",
+        "explanation": "The linear velocity of a point on a rotating object is calculated using the formula: v = rω",
+        "difficulty": "easy",
+        "topic": "Rotational Kinematics"
+      },
+      {
+        "q": "A rigid body is rotating about an axis passing through its center of mass. The kinetic energy of rotation is?",
+        "opts": [
+          "(A) Maximum when the moment of inertia is maximum",
+          "(B) Minimum when the moment of inertia is maximum",
+          "(C) Dependent on the angular velocity",
+          "(D) Independent of the angular velocity"
+        ],
+        "ans": "C",
+        "explanation": "The kinetic energy of rotation is calculated using the formula: K = (1/2)Iω^2",
+        "difficulty": "medium",
+        "topic": "Rotational Energy"
+      },
+      {
+        "q": "A particle of mass 4 kg is rotating in a circular path with a radius of 2 m and an angular velocity of 3 rad/s. The angular momentum about the center of the circle is?",
+        "opts": [
+          "(A) 12 kg m^2/s",
+          "(B) 24 kg m^2/s",
+          "(C) 36 kg m^2/s",
+          "(D) 48 kg m^2/s"
+        ],
+        "ans": "B",
+        "explanation": "The angular momentum about a point is calculated using the formula: L = r × m × v",
+        "difficulty": "hard",
+        "topic": "Angular Momentum"
+      },
+      {
+        "q": "A rod of length 1 m is pivoted at one end. A force of 2 N is applied at a distance of 0.5 m from the pivot. The torque about the pivot is?",
+        "opts": [
+          "(A) 0.5 Nm",
+          "(B) 1 Nm",
+          "(C) 1.5 Nm",
+          "(D) 2 Nm"
+        ],
+        "ans": "C",
+        "explanation": "The torque about a point is calculated using the formula: τ = r × F",
+        "difficulty": "medium",
+        "topic": "Torque"
+      },
+      {
+        "q": "A wheel of radius 0.5 m is rotating about its axis with an angular acceleration of 2 rad/s^2. The angular velocity after 5 seconds is?",
+        "opts": [
+          "(A) 1 rad/s",
+          "(B) 2 rad/s",
+          "(C) 5 rad/s",
+          "(D) 10 rad/s"
+        ],
+        "ans": "C",
+        "explanation": "The angular velocity after a given time is calculated using the formula: ω = ω0 + αt",
+        "difficulty": "hard",
+        "topic": "Rotational Kinematics"
+      },
+      {
+        "q": "A rigid body is rotating about an axis passing through its center of mass. The moment of inertia about this axis is?",
+        "opts": [
+          "(A) Maximum when the angular momentum is maximum",
+          "(B) Minimum when the angular momentum is maximum",
+          "(C) Dependent on the mass distribution",
+          "(D) Independent of the mass distribution"
+        ],
+        "ans": "C",
+        "explanation": "The moment of inertia about an axis passing through the center of mass depends on the mass distribution of the object.",
+        "difficulty": "medium",
+        "topic": "Moment of Inertia"
+      },
+      {
+        "q": "A particle of mass 2 kg is moving in a circular path with a radius of 1 m and an angular velocity of 4 rad/s. The linear velocity of the particle is?",
+        "opts": [
+          "(A) 0.5 m/s",
+          "(B) 1 m/s",
+          "(C) 2 m/s",
+          "(D) 4 m/s"
+        ],
+        "ans": "C",
+        "explanation": "The linear velocity of a point on a rotating object is calculated using the formula: v = rω",
+        "difficulty": "easy",
+        "topic": "Rotational Kinematics"
+      },
+      {
+        "q": "A rigid body is rotating about an axis passing through its center of mass. The kinetic energy of rotation is maximum when?",
+        "opts": [
+          "(A) The moment of inertia is minimum",
+          "(B) The moment of inertia is maximum",
+          "(C) The angular velocity is maximum",
+          "(D) The angular velocity is minimum"
+        ],
+        "ans": "C",
+        "explanation": "The kinetic energy of rotation is calculated using the formula: K = (1/2)Iω^2",
+        "difficulty": "medium",
+        "topic": "Rotational Energy"
+      },
+      {
+        "q": "A particle of mass 3 kg is rotating in a circular path with a radius of 2 m and an angular acceleration of 2 rad/s^2. The angular velocity after 5 seconds is?",
+        "opts": [
+          "(A) 5 rad/s",
+          "(B) 10 rad/s",
+          "(C) 15 rad/s",
+          "(D) 20 rad/s"
+        ],
+        "ans": "B",
+        "explanation": "The angular velocity after a given time is calculated using the formula: ω = ω0 + αt",
+        "difficulty": "hard",
+        "topic": "Rotational Kinematics"
+      },
+      {
+        "q": "A rigid body is rotating about an axis passing through its center of mass. The moment of inertia about this axis is dependent on?",
+        "opts": [
+          "(A) The mass of the object",
+          "(B) The distance from the axis of rotation",
+          "(C) The angular velocity of the object",
+          "(D) The force applied to the object"
+        ],
+        "ans": "B",
+        "explanation": "The moment of inertia about an axis passing through the center of mass depends on the distance from the axis of rotation.",
+        "difficulty": "medium",
+        "topic": "Moment of Inertia"
+      },
+      {
+        "q": "A particle of mass 1 kg is rotating in a circular path with a radius of 0.5 m and an angular velocity of 6 rad/s. The kinetic energy of rotation is?",
+        "opts": [
+          "(A) 1 J",
+          "(B) 2 J",
+          "(C) 3 J",
+          "(D) 4 J"
+        ],
+        "ans": "B",
+        "explanation": "The kinetic energy of rotation is calculated using the formula: K = (1/2)Iω^2",
+        "difficulty": "easy",
+        "topic": "Rotational Energy"
+      },
+      {
+        "q": "A rigid body is rotating about an axis passing through its center of mass. The angular momentum about this axis is dependent on?",
+        "opts": [
+          "(A) The mass of the object",
+          "(B) The distance from the axis of rotation",
+          "(C) The angular velocity of the object",
+          "(D) The force applied to the object"
+        ],
+        "ans": "C",
+        "explanation": "The angular momentum about an axis passing through the center of mass depends on the angular velocity of the object.",
+        "difficulty": "medium",
+        "topic": "Angular Momentum"
+      },
+      {
+        "q": "A particle of mass 4 kg is moving in a circular path with a radius of 2 m and an angular acceleration of 3 rad/s^2. The angular velocity after 5 seconds is?",
+        "opts": [
+          "(A) 10 rad/s",
+          "(B) 15 rad/s",
+          "(C) 20 rad/s",
+          "(D) 25 rad/s"
+        ],
+        "ans": "B",
+        "explanation": "The angular velocity after a given time is calculated using the formula: ω = ω0 + αt",
+        "difficulty": "hard",
+        "topic": "Rotational Kinematics"
+      },
+      {
+        "q": "A rigid body is rotating about an axis passing through its center of mass. The torque about this axis is dependent on?",
+        "opts": [
+          "(A) The mass of the object",
+          "(B) The distance from the axis of rotation",
+          "(C) The angular velocity of the object",
+          "(D) The force applied to the object"
+        ],
+        "ans": "D",
+        "explanation": "The torque about an axis passing through the center of mass depends on the force applied to the object.",
+        "difficulty": "medium",
+        "topic": "Torque"
+      },
+      {
+        "q": "A particle of mass 2 kg is rotating in a circular path with a radius of 1 m and an angular velocity of 4 rad/s. The moment of inertia about the center of the circle is?",
+        "opts": [
+          "(A) 0.5 kg m^2",
+          "(B) 1 kg m^2",
+          "(C) 2 kg m^2",
+          "(D) 3 kg m^2"
+        ],
+        "ans": "C",
+        "explanation": "The moment of inertia about a point is calculated using the formula: I = r^2 × m",
+        "difficulty": "easy",
+        "topic": "Moment of Inertia"
+      },
+      {
+        "q": "A rigid body is rotating about an axis passing through its center of mass. The kinetic energy of rotation is minimum when?",
+        "opts": [
+          "(A) The moment of inertia is maximum",
+          "(B) The moment of inertia is minimum",
+          "(C) The angular velocity is maximum",
+          "(D) The angular velocity is minimum"
+        ],
+        "ans": "A",
+        "explanation": "The kinetic energy of rotation is calculated using the formula: K = (1/2)Iω^2",
+        "difficulty": "medium",
+        "topic": "Rotational Energy"
+      }
+    ],
+    "total": 20
+  }
+}

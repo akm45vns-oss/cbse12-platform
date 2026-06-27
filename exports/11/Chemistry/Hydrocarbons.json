@@ -1,0 +1,1194 @@
+{
+  "class": "11",
+  "subject": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "exported_at": "2026-06-27T05:55:02.419Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:07:09.808+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 9,
+        "questions": [
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): They do not have a functional group which causes colour and odour.",
+            "assertion": "Assertion (A): Hydrocarbons are generally colourless and odourless.",
+            "explanation": "Hydrocarbons do not have any functional group, which is responsible for their colour and odour. This makes them colourless and odourless."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): They do not contain any multiple bond.",
+            "assertion": "Assertion (A): Alkanes are saturated hydrocarbons.",
+            "explanation": "Alkanes are saturated hydrocarbons because they do not contain any multiple bond, i.e., double or triple bond."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): They are unsaturated hydrocarbons.",
+            "assertion": "Assertion (A): Alkynes have one triple bond in their molecule.",
+            "explanation": "Alkynes are unsaturated hydrocarbons because they contain one or more triple bond. Since they have one triple bond, they are called alkynes."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Due to the presence of weak dipole-dipole forces in alkenes.",
+            "assertion": "Assertion (A): Alkanes have lower boiling point compared to alkenes.",
+            "explanation": "Alkanes have lower boiling point compared to alkenes because alkenes have stronger London dispersion forces due to their larger molecular size, not because of dipole-dipole forces."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It contains the maximum number of multiple bonds.",
+            "assertion": "Assertion (A): Alkyne is the most unsaturated hydrocarbon.",
+            "explanation": "Alkyne is the most unsaturated hydrocarbon because it contains the maximum number of multiple bonds, which are the characteristic of unsaturated hydrocarbons."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Due to the stability of double bond in alkenes.",
+            "assertion": "Assertion (A): Alkenes are less reactive than alkynes.",
+            "explanation": "Alkenes are less reactive than alkynes because of the stability of double bond in alkenes. Double bond in alkenes is less reactive than the triple bond in alkynes."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Due to the presence of weak dipole-dipole forces in alkanes.",
+            "assertion": "Assertion (A): Alkanes have higher boiling point compared to alkenes.",
+            "explanation": "Alkanes have lower boiling point compared to alkenes because alkanes have weaker London dispersion forces due to their smaller molecular size, not because of dipole-dipole forces."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Due to the presence of weak dipole-dipole forces in alkynes.",
+            "assertion": "Assertion (A): Alkynes have higher boiling point compared to alkenes.",
+            "explanation": "Alkenes have higher boiling point compared to alkynes because alkenes have stronger London dispersion forces due to their larger molecular size, not because of dipole-dipole forces."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): They do not contain any multiple bond.",
+            "assertion": "Assertion (A): Alkynes are saturated hydrocarbons.",
+            "explanation": "Alkynes are unsaturated hydrocarbons because they contain one or more multiple bond, i.e., double or triple bond."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:07:11.514+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "In a small village, there is a local oil refinery that produces various types of fuels from crude oil. One of the main products is petrol (gasoline), which is used as a fuel for vehicles. The refinery uses a process called fractional distillation to separate the different components of crude oil based on their boiling points. The petrol produced in this process is a mixture of hydrocarbons with different molecular weights and structures. The villagers rely heavily on this fuel for their transportation needs. However, some of them are concerned about the environmental impact of burning these hydrocarbons.",
+            "questions": [
+              {
+                "q": "What is the process used by the refinery to separate the different components of crude oil?",
+                "ans": "A",
+                "opts": [
+                  "(A) Fractional distillation",
+                  "(B) Cracking",
+                  "(C) Polymerization",
+                  "(D) Alkylation"
+                ],
+                "explanation": "Fractional distillation is a process used to separate the different components of a mixture based on their boiling points."
+              },
+              {
+                "q": "What is the main product used as a fuel for vehicles in the village?",
+                "ans": "B",
+                "opts": [
+                  "(A) Diesel",
+                  "(B) Petrol",
+                  "(C) Kerosene",
+                  "(D) LPG"
+                ],
+                "explanation": "Petrol (gasoline) is the main product used as a fuel for vehicles in the village."
+              },
+              {
+                "q": "What are hydrocarbons with different molecular weights and structures called?",
+                "ans": "A",
+                "opts": [
+                  "(A) Isomers",
+                  "(B) Alkanes",
+                  "(C) Alkenes",
+                  "(D) Alkynes"
+                ],
+                "explanation": "Isomers are hydrocarbons with different molecular weights and structures."
+              },
+              {
+                "q": "What is the primary concern of the villagers regarding the fuel used in their vehicles?",
+                "ans": "A",
+                "opts": [
+                  "(A) Environmental impact",
+                  "(B) Cost of fuel",
+                  "(C) Availability of fuel",
+                  "(D) Quality of fuel"
+                ],
+                "explanation": "The villagers are concerned about the environmental impact of burning these hydrocarbons."
+              },
+              {
+                "q": "What is the type of reaction that converts a long-chain hydrocarbon into a lighter one?",
+                "ans": "B",
+                "opts": [
+                  "(A) Polymerization",
+                  "(B) Cracking",
+                  "(C) Hydrogenation",
+                  "(D) Oxidation"
+                ],
+                "explanation": "Cracking is the type of reaction that converts a long-chain hydrocarbon into a lighter one."
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "A chemist is working in a research laboratory to develop a new type of fuel that is more environmentally friendly. She is experimenting with different types of hydrocarbons to find a suitable one. She starts by studying the properties of alkanes, alkenes, and alkynes. She notices that alkanes have higher boiling points compared to alkenes and alkynes. She also observes that alkenes have more reactivity compared to alkanes and alkynes. Based on these observations, she decides to focus on alkenes as a potential candidate for the new fuel.",
+            "questions": [
+              {
+                "q": "Why do alkanes have higher boiling points compared to alkenes and alkynes?",
+                "ans": "C",
+                "opts": [
+                  "(A) Due to the presence of double bonds in alkenes",
+                  "(B) Due to the presence of triple bonds in alkynes",
+                  "(C) Due to the stronger intermolecular forces in alkanes",
+                  "(D) Due to the weaker intermolecular forces in alkanes"
+                ],
+                "explanation": "Alkanes have stronger intermolecular forces due to their higher molecular weight and branching, resulting in higher boiling points."
+              },
+              {
+                "q": "Which type of hydrocarbon is more reactive compared to alkanes and alkynes?",
+                "ans": "B",
+                "opts": [
+                  "(A) Alkanes",
+                  "(B) Alkenes",
+                  "(C) Alkynes",
+                  "(D) Aromatic hydrocarbons"
+                ],
+                "explanation": "Alkenes are more reactive compared to alkanes and alkynes due to the presence of double bonds."
+              },
+              {
+                "q": "Why did the chemist decide to focus on alkenes as a potential candidate for the new fuel?",
+                "ans": "C",
+                "opts": [
+                  "(A) Due to their higher boiling points",
+                  "(B) Due to their higher reactivity",
+                  "(C) Due to their environmental friendliness",
+                  "(D) Due to their low cost"
+                ],
+                "explanation": "The chemist decided to focus on alkenes because of their potential to be environmentally friendly."
+              },
+              {
+                "q": "What type of bonds are present in alkenes?",
+                "ans": "B",
+                "opts": [
+                  "(A) Single bonds",
+                  "(B) Double bonds",
+                  "(C) Triple bonds",
+                  "(D) Hydrogen bonds"
+                ],
+                "explanation": "Alkenes contain double bonds between carbon atoms."
+              },
+              {
+                "q": "What is the primary goal of the chemist in the research laboratory?",
+                "ans": "A",
+                "opts": [
+                  "(A) To develop a new type of fuel",
+                  "(B) To study the properties of hydrocarbons",
+                  "(C) To synthesize a new compound",
+                  "(D) To analyze a sample"
+                ],
+                "explanation": "The primary goal of the chemist is to develop a new type of fuel that is more environmentally friendly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:25:57.996+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Hydrocarbons\n## 📌 Chapter Overview\n\nHydrocarbons are a class of organic compounds that consist of hydrogen and carbon atoms. They are the simplest type of organic compounds and are found naturally in various forms such as petroleum, natural gas, coal, and wood. Hydrocarbons are a fundamental class of organic compounds, and their properties and reactions are crucial to understand in various fields such as chemistry, physics, and biology. This chapter will introduce you to the different types of hydrocarbons, their physical and chemical properties, and their chemical reactions.\n\n## 🎯 Learning Objectives\n\n* Define hydrocarbons and their classification.\n* Identify and explain the physical properties of different types of hydrocarbons.\n* Explain the chemical properties and reactions of hydrocarbons.\n* Identify and explain the different types of hydrocarbons, including alkanes, alkenes, alkynes, and aromatic hydrocarbons.\n* Describe the structure and bonding of hydrocarbons.\n* Explain the concept of isomerism in hydrocarbons.\n* Identify and explain the different methods of preparation and purification of hydrocarbons.\n* Describe the uses and applications of hydrocarbons in various industries.\n\n## 🔑 Key Concepts & Definitions\n\n* **Hydrocarbons**: Compounds consisting of hydrogen and carbon atoms.\n* **Alkanes**: Saturated hydrocarbons with only single bonds between carbon atoms.\n* **Alkenes**: Unsaturated hydrocarbons with at least one double bond between carbon atoms.\n* **Alkynes**: Unsaturated hydrocarbons with at least one triple bond between carbon atoms.\n* **Aromatic Hydrocarbons**: Hydrocarbons with a planar, ring-like structure and alternating double bonds between carbon atoms.\n* **Isomerism**: The phenomenon of having different compounds with the same molecular formula.\n* **Saturated Hydrocarbons**: Hydrocarbons with only single bonds between carbon atoms.\n* **Unsaturated Hydrocarbons**: Hydrocarbons with at least one double or triple bond between carbon atoms.\n\n## 📐 Core Theory & Principles\n\nThe fundamental theory behind hydrocarbons is the concept of covalent bonding between carbon and hydrogen atoms. Carbon has four valence electrons, which can form four covalent bonds with other atoms, while hydrogen has one valence electron, which can form one covalent bond with other atoms. The arrangement of these covalent bonds determines the structure and properties of hydrocarbons.\n\n## 🧮 Important Formulas & Laws\n\n* **Valency of Carbon**: 4\n* **Valency of Hydrogen**: 1\n* **General Formula for Alkanes**: CnH2n+2\n* **General Formula for Alkenes**: CnH2n\n* **General Formula for Alkynes**: CnH2n-2\n* **General Formula for Aromatic Hydrocarbons**: CnH2n-6\n* **Law of Multiple Proportions**: When two elements combine to form more than one compound, the ratios of the masses of the elements in the compounds are simple whole numbers.\n\n## 🔬 Detailed Explanations\n\n### Alkanes\n\n* Alkanes are saturated hydrocarbons with only single bonds between carbon atoms.\n* They have a general formula of CnH2n+2.\n* Alkanes are insoluble in water but soluble in organic solvents.\n* They have low reactivity and are used as fuels and lubricants.\n\n### Alkenes\n\n* Alkenes are unsaturated hydrocarbons with at least one double bond between carbon atoms.\n* They have a general formula of CnH2n.\n* Alkenes are insoluble in water but soluble in organic solvents.\n* They have high reactivity and are used in the production of plastics and other polymers.\n\n### Alkynes\n\n* Alkynes are unsaturated hydrocarbons with at least one triple bond between carbon atoms.\n* They have a general formula of CnH2n-2.\n* Alkynes are insoluble in water but soluble in organic solvents.\n* They have high reactivity and are used in the production of polymers and other materials.\n\n### Aromatic Hydrocarbons\n\n* Aromatic hydrocarbons have a planar, ring-like structure and alternating double bonds between carbon atoms.\n* They have a general formula of CnH2n-6.\n* Aromatic hydrocarbons are insoluble in water but soluble in organic solvents.\n* They have high reactivity and are used in the production of dyes and other chemicals.\n\n## 🖼️ Diagrams & Visual Concepts\n\n* **Structural Formula**: A diagram that shows the arrangement of atoms in a molecule.\n* **Ball-and-Stick Model**: A three-dimensional model that shows the arrangement of atoms in a molecule.\n* **Space Filling Model**: A three-dimensional model that shows the arrangement of atoms in a molecule and the spaces between them.\n\n## ⭐ Most Important Points (Exam Focus)\n\n* Definition of hydrocarbons and their classification.\n* Physical and chemical properties of different types of hydrocarbons.\n* Structure and bonding of hydrocarbons.\n* Isomerism in hydrocarbons.\n* Methods of preparation and purification of hydrocarbons.\n* Uses and applications of hydrocarbons in various industries.\n* Reactions of hydrocarbons, including combustion, substitution, and addition reactions.\n* Properties and uses of different types of hydrocarbons, including alkanes, alkenes, alkynes, and aromatic hydrocarbons.\n\n## ❌ Common Mistakes to Avoid\n\n* Confusing saturated and unsaturated hydrocarbons.\n* Misunderstanding the concept of isomerism.\n* Failing to recognize the structure and bonding of hydrocarbons.\n* Not understanding the properties and uses of different types of hydrocarbons.\n* Not recognizing the importance of hydrocarbons in various industries.\n\n## 💡 Real-World Applications\n\n* **Petroleum Refining**: Hydrocarbons are used in the production of fuels, lubricants, and other petroleum products.\n* **Plastic Production**: Hydrocarbons are used in the production of plastics and other polymers.\n* **Pharmaceuticals**: Hydrocarbons are used in the production of medicines and other pharmaceuticals.\n* **Dyes and Pigments**: Hydrocarbons are used in the production of dyes and pigments.\n* **Fuel Cells**: Hydrocarbons are used in the production of fuel cells and other energy storage devices.\n\n## 🔁 Quick Revision Summary\n\n* Hydrocarbons are compounds consisting of hydrogen and carbon atoms.\n* Alkanes are saturated hydrocarbons with only single bonds between carbon atoms.\n* Alkenes are unsaturated hydrocarbons with at least one double bond between carbon atoms.\n* Alkynes are unsaturated hydrocarbons with at least one triple bond between carbon atoms.\n* Aromatic hydrocarbons have a planar, ring-like structure and alternating double bonds between carbon atoms.\n* Hydrocarbons have different physical and chemical properties.\n* Hydrocarbons are used in various industries, including petroleum refining, plastic production, pharmaceuticals, dyes and pigments, and fuel cells.\n* Hydrocarbons undergo various reactions, including combustion, substitution, and addition reactions.\n* Isomerism is an important concept in hydrocarbons.\n* The structure and bonding of hydrocarbons are crucial to understanding their properties and uses."
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:31:38.317+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [
+          {
+            "name": "Alkanes",
+            "difficulty": "easy",
+            "weight_percentage": 20
+          },
+          {
+            "name": "Alkenes",
+            "difficulty": "medium",
+            "weight_percentage": 20
+          },
+          {
+            "name": "Alkynes",
+            "difficulty": "hard",
+            "weight_percentage": 20
+          },
+          {
+            "name": "Arenes",
+            "difficulty": "medium",
+            "weight_percentage": 20
+          },
+          {
+            "name": "Halogenated Hydrocarbons",
+            "difficulty": "hard",
+            "weight_percentage": 20
+          }
+        ],
+        "common_errors": [
+          "Confusing between Alkane and Alkene reactions",
+          "Incorrect application of Markovnikov's rule"
+        ],
+        "exam_frequency": "medium",
+        "difficulty_score": 6,
+        "overall_difficulty": "medium",
+        "memory_vs_application": "balanced"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:25:55.751+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Study tip 1",
+          "Study tip 2"
+        ],
+        "total_minutes": 120,
+        "revision_minutes": 20,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 30,
+        "sessions_recommended": 3,
+        "first_reading_minutes": 45,
+        "practice_questions_minutes": 25
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:59:45.985+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Content",
+            "notes": "",
+            "units": "",
+            "formula": "```json\n[\n  {\n    \"name\": \"General formula for alkanes\",\n    \"formula\": \"CnH2n+2\",\n    \"variables\": \"n = number of carbon atoms\",\n    \"units\": \"\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"General formula for alkenes\",\n    \"formula\": \"CnH2n\",\n    \"variables\": \"n = number of carbon atoms\",\n    \"units\": \"\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"General formula for alkynes\",\n    \"formula\": \"CnH2n-2\",\n    \"variables\": \"n = number of carbon atoms\",\n    \"units\": \"\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"General formula for cycloalkanes\",\n    \"formula\": \"CnH2n\",\n    \"variables\": \"n = number of carbon atoms\",\n    \"units\": \"\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Isomerism - Number of possible isomers in alkanes\",\n    \"formula\": \"2n-1 (if n is even), 2n (if n is odd)\",\n    \"variables\": \"n = number of carbon atoms\",\n    \"units\": \"\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Thermodynamic stability of alkanes\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"Higher the number of C-C bonds, higher the thermodynamic stability\"\n  },\n  {\n    \"name\": \"Reaction of alkanes with chlorine\",\n    \"formula\": \"R - H + Cl2 → R - Cl + HCl\",\n    \"variables\": \"R = alkyl group, Cl2 = chlorine gas, HCl = hydrochloric acid\",\n    \"units\": \"\",\n    \"notes\": \"Substitution reaction\"\n  },\n  {\n    \"name\": \"Reaction of alkanes with bromine\",\n    \"formula\": \"R - H + Br2 → R - Br + HBr\",\n    \"variables\": \"R = alkyl group, Br2 = bromine gas, HBr = hydrobromic acid\",\n    \"units\": \"\",\n    \"notes\": \"Substitution reaction\"\n  },\n  {\n    \"name\": \"Reaction of alkanes with nitric acid\",\n    \"formula\": \"R - H + HNO3 → R - NO2 + H2O\",\n    \"variables\": \"R = alkyl group, HNO3 = nitric acid\",\n    \"units\": \"\",\n    \"notes\": \"Nitration reaction\"\n  },\n  {\n    \"name\": \"Reaction of alkanes with sulphuric acid and H2SO4\",\n    \"formula\": \"R - H + H2SO4 → R - CH2OH + H2O\",\n    \"variables\": \"R = alkyl group, H2SO4 = sulphuric acid\",\n    \"units\": \"\",\n    \"notes\": \"Hydration reaction to alcohols\"\n  },\n  {\n    \"name\": \"Reaction of alkenes with bromine\",\n    \"formula\": \"R - CH=CH - R + Br2 → R - CHBr - CHBr - R\",\n    \"variables\": \"R = alkyl group, Br2 = bromine gas\",\n    \"units\": \"\",\n    \"notes\": \"Addition reaction\"\n  },\n  {\n    \"name\": \"Reaction of alkenes with HCl\",\n    \"formula\": \"R - CH=CH - R + HCl → R - CHCl - CH2 - R\",\n    \"variables\": \"R = alkyl group, HCl = hydrochloric acid\",\n    \"units\": \"\",\n    \"notes\": \"Addition reaction\"\n  },\n  {\n    \"name\": \"Reaction of alkenes with H2 (in presence of Pd or Ni)\",\n    \"formula\": \"R - CH=CH - R + H2 → R - CH2 - CH2 - R\",\n    \"variables\": \"R = alkyl group, H2 = hydrogen gas\",\n    \"units\": \"\",\n    \"notes\": \"Addition reaction to form alkanes\"\n  },\n  {\n    \"name\": \"Reaction of alkynes with bromine\",\n    \"formula\": \"R - C≡CH + Br2 → R - C≡C - Br + HBr\",\n    \"variables\": \"R = alkyl group, Br2 = bromine gas\",\n    \"units\": \"\",\n    \"notes\": \"Addition reaction\"\n  },\n  {\n    \"name\": \"Reaction of alkynes with HCl\",\n    \"formula\": \"R - C≡CH + HCl → R - C≡C - H + HCl\",\n    \"variables\": \"R = alkyl group, HCl = hydrochloric acid\",\n    \"units\": \"\",\n    \"notes\": \"Addition reaction\"\n  },\n  {\n    \"name\": \"Reaction of alkynes with H2 (in presence of Pd or Ni)\",\n    \"formula\": \"R - C≡CH + H2 → R - C≡C - H\",\n    \"variables\": \"R = alkyl group, H2 = hydrogen gas\",\n    \"units\": \"\",\n    \"notes\": \"Addition reaction to form alkenes\"\n  }\n]\n```\n\nThis formula sheet covers various types of hydrocarbons including alkanes, alkenes, alkynes, and their reactions with different reagents. It also includes the general formulas for these hydrocarbons and the number of possible isomers in alkanes.",
+            "variables": ""
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:59:45.688+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "Classification of Hydrocarbons",
+            "importance": "Understanding the classification is crucial for identifying the properties and reactions of hydrocarbons.",
+            "explanation": "Hydrocarbons are classified into three types: alkanes, alkenes, and alkynes based on the type of bonds present between carbon atoms.",
+            "related_topics": [
+              "Properties of Hydrocarbons",
+              "Types of Reactions"
+            ]
+          },
+          {
+            "concept": "Properties of Alkanes",
+            "importance": "Knowledge of alkane properties is essential for understanding their uses in everyday life, such as in fuels and plastics.",
+            "explanation": "Alkanes are non-polar, have low reactivity, and are good insulators due to the strong C-H bonds.",
+            "related_topics": [
+              "Properties of Hydrocarbons",
+              "Uses of Hydrocarbons"
+            ]
+          },
+          {
+            "concept": "Properties of Alkenes",
+            "importance": "Understanding the properties of alkenes is crucial for their uses in the production of polymers and other organic compounds.",
+            "explanation": "Alkenes are unsaturated, have higher reactivity, and can undergo addition reactions due to the presence of double bonds.",
+            "related_topics": [
+              "Properties of Hydrocarbons",
+              "Addition Reactions"
+            ]
+          },
+          {
+            "concept": "Properties of Alkynes",
+            "importance": "Knowledge of alkene properties is essential for understanding their uses in the production of polymers and other organic compounds.",
+            "explanation": "Alkynes are unsaturated and highly reactive due to the presence of triple bonds.",
+            "related_topics": [
+              "Properties of Hydrocarbons",
+              "Addition Reactions"
+            ]
+          },
+          {
+            "concept": "IUPAC Nomenclature of Hydrocarbons",
+            "importance": "Understanding IUPAC nomenclature is crucial for identifying and naming hydrocarbons in chemical reactions and equations.",
+            "explanation": "IUPAC nomenclature is a systematic method of naming hydrocarbons based on their structure and functional groups.",
+            "related_topics": [
+              "Chemical Nomenclature",
+              "Structural Formulas"
+            ]
+          },
+          {
+            "concept": "Isomerism in Hydrocarbons",
+            "importance": "Understanding isomerism is essential for identifying and distinguishing between different hydrocarbons in chemical reactions and equations.",
+            "explanation": "Isomerism occurs when two or more molecules have the same molecular formula but different structural formulas.",
+            "related_topics": [
+              "Structural Formulas",
+              "Chemical Reactions"
+            ]
+          },
+          {
+            "concept": "Types of Reactions of Hydrocarbons",
+            "importance": "Understanding the types of reactions is crucial for predicting and explaining the behavior of hydrocarbons in chemical reactions.",
+            "explanation": "Hydrocarbons undergo various types of reactions, including substitution, addition, and polymerization reactions.",
+            "related_topics": [
+              "Chemical Reactions",
+              "Reaction Mechanisms"
+            ]
+          },
+          {
+            "concept": "Substitution Reactions of Hydrocarbons",
+            "importance": "Understanding substitution reactions is essential for predicting the behavior of hydrocarbons in chemical reactions.",
+            "explanation": "Substitution reactions involve the replacement of one functional group with another in a hydrocarbon molecule.",
+            "related_topics": [
+              "Chemical Reactions",
+              "Reaction Mechanisms"
+            ]
+          },
+          {
+            "concept": "Addition Reactions of Hydrocarbons",
+            "importance": "Understanding addition reactions is crucial for predicting the behavior of hydrocarbons in chemical reactions.",
+            "explanation": "Addition reactions involve the addition of one or more molecules to a hydrocarbon molecule, resulting in the formation of a new compound.",
+            "related_topics": [
+              "Chemical Reactions",
+              "Reaction Mechanisms"
+            ]
+          },
+          {
+            "concept": "Polymerization Reactions of Hydrocarbons",
+            "importance": "Understanding polymerization reactions is essential for predicting the behavior of hydrocarbons in chemical reactions.",
+            "explanation": "Polymerization reactions involve the combination of many small molecules to form a large molecule, resulting in the formation of a polymer.",
+            "related_topics": [
+              "Chemical Reactions",
+              "Reaction Mechanisms"
+            ]
+          },
+          {
+            "concept": "Combustion of Hydrocarbons",
+            "importance": "Understanding combustion reactions is crucial for predicting the behavior of hydrocarbons in chemical reactions.",
+            "explanation": "Combustion reactions involve the reaction of a hydrocarbon with oxygen to produce carbon dioxide and water.",
+            "related_topics": [
+              "Chemical Reactions",
+              "Thermochemistry"
+            ]
+          },
+          {
+            "concept": "Uses of Hydrocarbons",
+            "importance": "Understanding the uses of hydrocarbons is essential for predicting their applications in everyday life and industry.",
+            "explanation": "Hydrocarbons have various uses, including as fuels, lubricants, plastics, and synthetic fibers.",
+            "related_topics": [
+              "Industrial Chemistry",
+              "Materials Science"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:59:58.435+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "Alkane",
+            "example": "Methane (CH4) is an example of an alkane.",
+            "definition": "Saturated hydrocarbons that contain only single bonds between carbon atoms. They are also known as paraffins. They have the general formula CnH2n+2."
+          },
+          {
+            "term": "Alkene",
+            "example": "Ethene (C2H4) is an example of an alkene.",
+            "definition": " Unsaturated hydrocarbons that contain at least one double bond between carbon atoms. They have the general formula CnH2n."
+          },
+          {
+            "term": "Alkyne",
+            "example": "Ethyne (C2H2) is an example of an alkyne.",
+            "definition": "Unsaturated hydrocarbons that contain at least one triple bond between carbon atoms. They have the general formula CnH2n-2."
+          },
+          {
+            "term": "Saturated Hydrocarbons",
+            "example": "Alkanes are examples of saturated hydrocarbons.",
+            "definition": "Hydrocarbons that contain only single bonds between carbon atoms."
+          },
+          {
+            "term": "Unsaturated Hydrocarbons",
+            "example": "Alkenes and alkynes are examples of unsaturated hydrocarbons.",
+            "definition": "Hydrocarbons that contain one or more multiple bonds between carbon atoms."
+          },
+          {
+            "term": "Isomerism",
+            "example": "Butane and isobutane are isomers.",
+            "definition": "The occurrence of two or more compounds with the same molecular formula but different structural formulas."
+          },
+          {
+            "term": "Functional Group",
+            "example": "The -CH3 group is a functional group in alkane molecules.",
+            "definition": "A group of atoms within a molecule that determines its chemical properties."
+          },
+          {
+            "term": "Hydrogenation",
+            "example": "The hydrogenation of alkenes results in the formation of alkanes.",
+            "definition": "The addition of hydrogen to a molecule, typically in the presence of a catalyst."
+          },
+          {
+            "term": "Cracking",
+            "example": "The cracking of petroleum produces lighter hydrocarbons.",
+            "definition": "A process that involves the breaking of large hydrocarbon molecules into smaller molecules."
+          },
+          {
+            "term": "Fischer-Tropsch Process",
+            "example": "The Fischer-Tropsch process is used to produce liquid fuels.",
+            "definition": "A process that involves the conversion of carbon monoxide and hydrogen into hydrocarbons."
+          },
+          {
+            "term": "Petroleum",
+            "example": "Petroleum is a major source of energy.",
+            "definition": "A naturally occurring mixture of hydrocarbons that can be refined into various petroleum products."
+          },
+          {
+            "term": "Natural Gas",
+            "example": "Natural gas is a cleaner-burning fuel than coal or oil.",
+            "definition": "A naturally occurring mixture of hydrocarbons and other gases that can be used as a fuel."
+          },
+          {
+            "term": "Coal Tar",
+            "example": "Coal tar is used to produce dyes and other chemicals.",
+            "definition": "A dark liquid that is produced from the distillation of coal and contains various organic compounds."
+          },
+          {
+            "term": "Naphtha",
+            "example": "Naphtha is used as a solvent and in the production of plastics.",
+            "definition": "A mixture of hydrocarbons that is produced from the distillation of petroleum."
+          },
+          {
+            "term": "Fractional Distillation",
+            "example": "Fractional distillation is used to separate the components of petroleum.",
+            "definition": "A process that involves the separation of a mixture of liquids based on their boiling points."
+          },
+          {
+            "term": "Reforming",
+            "example": "The reforming of naphtha produces high-octane gasoline.",
+            "definition": "A process that involves the conversion of a hydrocarbon into a more useful product, typically in the presence of a catalyst."
+          },
+          {
+            "term": "Catalytic Cracking",
+            "example": "Catalytic cracking is used to produce lighter hydrocarbons.",
+            "definition": "A process that involves the cracking of hydrocarbons in the presence of a catalyst."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:25:56.426+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Derive the structure of a given compound using IUPAC nomenclature.",
+            "Predict the products of different types of reactions of hydrocarbons.",
+            "Determine the type of reaction that can occur in a given compound.",
+            "Calculate the molar mass of a given hydrocarbon."
+          ],
+          "analyze": [
+            "Compare and contrast the physical properties of different types of hydrocarbons.",
+            "Critically evaluate the uses of different types of hydrocarbons.",
+            "Analyze the environmental impact of the production and use of hydrocarbons.",
+            "Design a synthesis route for a given compound."
+          ],
+          "remember": [
+            "Identify and recall the general formula for alkanes, alkenes, and alkynes.",
+            "List and describe the physical properties of alkanes, alkenes, and alkynes.",
+            "State the general types of reactions of alkanes, alkenes, and alkynes.",
+            "Recall the names of different types of hydrocarbons (saturated and unsaturated)."
+          ],
+          "understand": [
+            "Explain the difference between saturated and unsaturated hydrocarbons.",
+            "Describe the preparation of alkanes, alkenes, and alkynes.",
+            "Discuss the properties and uses of different types of hydrocarbons.",
+            "Explain the concept of isomerism in hydrocarbons."
+          ]
+        },
+        "ncert_objectives": [
+          "To understand the general characteristics and types of hydrocarbons.",
+          "To describe the preparation, properties, and uses of alkanes, alkenes, and alkynes.",
+          "To explain the concept of isomerism in hydrocarbons and its importance."
+        ],
+        "board_exam_objectives": [
+          "To identify and name different types of hydrocarbons according to IUPAC nomenclature.",
+          "To predict the products of different types of reactions of hydrocarbons.",
+          "To calculate the molar mass of a given hydrocarbon and describe its physical properties.",
+          "To explain the environmental impact of the production and use of hydrocarbons."
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T07:17:26.935+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "a) Write the structural formula of the alkanes with molecular formula C4H10. <br> b) Give the IUPAC name of the compound with the molecular formula C3H8.",
+            "marks": 5,
+            "topic": "Alkanes",
+            "answer": "The alkanes with the molecular formula C4H10 are n-butane and isobutane. <br> n-butane: CH₃CH₂CH₂CH₃ <br> isobutane: (CH₃)₃CH <br> The compound with the molecular formula C3H8 is propane. <br> IUPAC name: propane",
+            "marking_scheme": [
+              "Point 1 (a): Structural formula of n-butane and isobutane (1 mark each)",
+              "Point 2 (a): Structural formula of n-butane and isobutane (1 mark each)",
+              "Point 3 (b): IUPAC name of propane (1 mark)"
+            ]
+          },
+          {
+            "q": "a) Write the structural formula of the cycloalkanes with molecular formula C4H8. <br> b) Explain the difference in physical properties between alkanes and cycloalkanes.",
+            "marks": 5,
+            "topic": "Cycloalkanes",
+            "answer": "The cycloalkanes with the molecular formula C4H8 are cyclobutane. <br> Structural formula: C₄H₈ <br> Cyclobutane: C₄H₈ <br> The physical properties of alkanes and cycloalkanes differ because of the presence of a ring structure in cycloalkanes, which restricts the rotation of molecules. <br> Alkanes have lower boiling points, are less dense, and have higher vapor pressure than cycloalkanes.",
+            "marking_scheme": [
+              "Point 1 (a): Structural formula of cyclobutane (1 mark)",
+              "Point 2 (a): Structural formula of cyclobutane (1 mark)",
+              "Point 3 (b): Difference in physical properties (2 marks)"
+            ]
+          },
+          {
+            "q": "a) Explain the types of isomerism exhibited by alkenes. <br> b) Write the IUPAC name of the alkene with molecular formula C4H7Cl.",
+            "marks": 5,
+            "topic": "Alkenes",
+            "answer": "The types of isomerism exhibited by alkenes are: <br> Geometric (cis-trans) isomerism <br> Positional (1,2-disubstituted) isomerism <br> The alkene with the molecular formula C4H7Cl is 3-chloro-1-butene. <br> IUPAC name: 3-chloro-1-butene",
+            "marking_scheme": [
+              "Point 1 (a): Types of isomerism (1 mark each)",
+              "Point 2 (b): IUPAC name of 3-chloro-1-butene (2 marks)"
+            ]
+          },
+          {
+            "q": "a) Explain the mechanism of electrophilic addition of HCl to alkenes. <br> b) Write the product formed when propene reacts with HCl.",
+            "marks": 5,
+            "topic": "Electrophilic Addition",
+            "answer": "The mechanism of electrophilic addition of HCl to alkenes involves: <br> Step 1: Formation of a carbocation intermediate <br> Step 2: Addition of HCl to the carbocation <br> The product formed when propene reacts with HCl is chloropropane. <br> Structural formula: CH₃CH(Cl)CH₃",
+            "marking_scheme": [
+              "Point 1 (a): Mechanism of electrophilic addition (2 marks)",
+              "Point 2 (b): Product formed (2 marks)"
+            ]
+          },
+          {
+            "q": "a) Explain the difference in reactivity of alkanes and alkenes towards electrophilic addition reactions. <br> b) Write the product formed when cyclohexene reacts with HBr.",
+            "marks": 5,
+            "topic": "Alkenes",
+            "answer": "Alkenes are more reactive than alkanes towards electrophilic addition reactions because of the presence of a double bond, which facilitates the formation of a carbocation intermediate. <br> The product formed when cyclohexene reacts with HBr is trans-1-bromocyclohexane.",
+            "marking_scheme": [
+              "Point 1 (a): Difference in reactivity (2 marks)",
+              "Point 2 (b): Product formed (2 marks)"
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:07:13.678+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 23,
+        "questions": [
+          {
+            "q": "What is the general formula for alkanes?",
+            "ans": "C",
+            "opts": [
+              "(A) CnH2n",
+              "(B) CnHn",
+              "(C) CnH2n+2",
+              "(D) CnHn-2"
+            ],
+            "topic": "Introduction to Alkanes",
+            "difficulty": "easy",
+            "explanation": "Alkanes are saturated hydrocarbons with the general formula CnH2n+2. This is because each carbon atom has four valence electrons and forms bonds with four other atoms, either carbon or hydrogen."
+          },
+          {
+            "q": "Which type of isomerism is exhibited by butane?",
+            "ans": "A",
+            "opts": [
+              "(A) Structural isomerism",
+              "(B) Geometrical isomerism",
+              "(C) Positional isomerism",
+              "(D) Optical isomerism"
+            ],
+            "topic": "Types of Isomerism in Alkanes",
+            "difficulty": "easy",
+            "explanation": "Butane exhibits structural isomerism due to the presence of two different structures: n-butane and isobutane."
+          },
+          {
+            "q": "What is the process of removing a hydrogen atom from an alkane called?",
+            "ans": "B",
+            "opts": [
+              "(A) Halogenation",
+              "(B) Dehydrogenation",
+              "(C) Hydrogenation",
+              "(D) Cracking"
+            ],
+            "topic": "Reactions of Alkanes",
+            "difficulty": "easy",
+            "explanation": "Dehydrogenation is the process of removing a hydrogen atom from an alkane, resulting in the formation of an alkene."
+          },
+          {
+            "q": "Which of the following is an example of a branched alkane?",
+            "ans": "C",
+            "opts": [
+              "(A) Methane",
+              "(B) Ethane",
+              "(C) Isobutane",
+              "(D) Propane"
+            ],
+            "topic": "Classification of Alkanes",
+            "difficulty": "easy",
+            "explanation": "Isobutane is an example of a branched alkane due to its three-carbon chain with a methyl group attached to the central carbon."
+          },
+          {
+            "q": "What is the general formula for alkenes?",
+            "ans": "C",
+            "opts": [
+              "(A) CnH2n",
+              "(B) CnHn",
+              "(C) CnH2n-2",
+              "(D) CnH2n+2"
+            ],
+            "topic": "Introduction to Alkenes",
+            "difficulty": "easy",
+            "explanation": "Alkenes are unsaturated hydrocarbons with the general formula CnH2n-2. This is because each carbon atom with a double bond has only three bonds."
+          },
+          {
+            "q": "Which of the following alkenes is not an isomer of the other?",
+            "ans": "C",
+            "opts": [
+              "(A) Propene and 1-butene",
+              "(B) Propene and Butene",
+              "(C) Propene and 2-methylpropene",
+              "(D) 1-butene and 2-methylpropene"
+            ],
+            "topic": "Classification of Alkenes",
+            "difficulty": "easy",
+            "explanation": "Propene and 2-methylpropene are structural isomers, but 2-methylpropene is also an alkene with a methyl group attached to the double bond, making it different from propene."
+          },
+          {
+            "q": "What is the process of adding a hydrogen atom to an alkene called?",
+            "ans": "B",
+            "opts": [
+              "(A) Halogenation",
+              "(B) Hydrogenation",
+              "(C) Dehydrogenation",
+              "(D) Cracking"
+            ],
+            "topic": "Reactions of Alkenes",
+            "difficulty": "easy",
+            "explanation": "Hydrogenation is the process of adding a hydrogen atom to an alkene, resulting in the formation of an alkane."
+          },
+          {
+            "q": "Which type of isomerism is exhibited by but-1-ene?",
+            "ans": "A",
+            "opts": [
+              "(A) Structural isomerism",
+              "(B) Geometrical isomerism",
+              "(C) Positional isomerism",
+              "(D) Optical isomerism"
+            ],
+            "topic": "Types of Isomerism in Alkenes",
+            "difficulty": "easy",
+            "explanation": "But-1-ene exhibits structural isomerism due to the presence of different structures, such as 1-butene and 2-methylpropene."
+          },
+          {
+            "q": "What is the general formula for alkynes?",
+            "ans": "D",
+            "opts": [
+              "(A) CnH2n",
+              "(B) CnHn",
+              "(C) CnH2n-2",
+              "(D) CnH2n-2"
+            ],
+            "topic": "Introduction to Alkynes",
+            "difficulty": "easy",
+            "explanation": "Alkynes are unsaturated hydrocarbons with the general formula CnH2n-2. This is because each carbon atom with a triple bond has only two bonds."
+          },
+          {
+            "q": "Which of the following is an example of a terminal alkyne?",
+            "ans": "A",
+            "opts": [
+              "(A) Ethyne",
+              "(B) Propyne",
+              "(C) 1-butyne",
+              "(D) 2-butyne"
+            ],
+            "topic": "Classification of Alkynes",
+            "difficulty": "easy",
+            "explanation": "Ethyne is an example of a terminal alkyne, as it has a triple bond at the end of the carbon chain."
+          },
+          {
+            "q": "What is the process of removing a hydrogen atom from an alkyne called?",
+            "ans": "B",
+            "opts": [
+              "(A) Halogenation",
+              "(B) Dehydrogenation",
+              "(C) Hydrogenation",
+              "(D) Cracking"
+            ],
+            "topic": "Reactions of Alkynes",
+            "difficulty": "easy",
+            "explanation": "Dehydrogenation is the process of removing a hydrogen atom from an alkyne, resulting in the formation of an allene."
+          },
+          {
+            "q": "Which type of isomerism is exhibited by pent-2-yne?",
+            "ans": "A",
+            "opts": [
+              "(A) Structural isomerism",
+              "(B) Geometrical isomerism",
+              "(C) Positional isomerism",
+              "(D) Optical isomerism"
+            ],
+            "topic": "Types of Isomerism in Alkynes",
+            "difficulty": "easy",
+            "explanation": "Pent-2-yne exhibits structural isomerism due to the presence of different structures, such as 1-pentyne and 2-methylbutyne."
+          },
+          {
+            "q": "What is the general formula for aromatic hydrocarbons?",
+            "ans": "D",
+            "opts": [
+              "(A) CnH2n",
+              "(B) CnHn",
+              "(C) CnH2n-2",
+              "(D) CnH2n+6"
+            ],
+            "topic": "Introduction to Aromatic Hydrocarbons",
+            "difficulty": "medium",
+            "explanation": "Aromatic hydrocarbons have the general formula CnH2n+6, which is a result of the delocalization of electrons in the ring."
+          },
+          {
+            "q": "Which of the following is an example of a benzenoid aromatic hydrocarbon?",
+            "ans": "A",
+            "opts": [
+              "(A) Benzene",
+              "(B) Toluene",
+              "(C) Styrene",
+              "(D) Naphthalene"
+            ],
+            "topic": "Classification of Aromatic Hydrocarbons",
+            "difficulty": "medium",
+            "explanation": "Benzene is an example of a benzenoid aromatic hydrocarbon, as it has a single ring of six carbon atoms."
+          },
+          {
+            "q": "What is the process of adding a hydrogen atom to an aromatic hydrocarbon called?",
+            "ans": "B",
+            "opts": [
+              "(A) Halogenation",
+              "(B) Hydrogenation",
+              "(C) Dehydrogenation",
+              "(D) Cracking"
+            ],
+            "topic": "Reactions of Aromatic Hydrocarbons",
+            "difficulty": "medium",
+            "explanation": "Hydrogenation is the process of adding a hydrogen atom to an aromatic hydrocarbon, resulting in the formation of an alkane."
+          },
+          {
+            "q": "Which type of isomerism is exhibited by naphthalene?",
+            "ans": "A",
+            "opts": [
+              "(A) Structural isomerism",
+              "(B) Geometrical isomerism",
+              "(C) Positional isomerism",
+              "(D) Optical isomerism"
+            ],
+            "topic": "Types of Isomerism in Aromatic Hydrocarbons",
+            "difficulty": "medium",
+            "explanation": "Naphthalene exhibits structural isomerism due to the presence of different structures, such as 1-naphthalene and 2-naphthalene."
+          },
+          {
+            "q": "What is the general formula for cycloalkanes?",
+            "ans": "D",
+            "opts": [
+              "(A) CnH2n",
+              "(B) CnHn",
+              "(C) CnH2n-2",
+              "(D) CnH2n"
+            ],
+            "topic": "Introduction to Cycloalkanes",
+            "difficulty": "medium",
+            "explanation": "Cycloalkanes have the general formula CnH2n, as each carbon atom in the ring has two bonds."
+          },
+          {
+            "q": "Which of the following is an example of a cycloalkane?",
+            "ans": "D",
+            "opts": [
+              "(A) Cyclopropane",
+              "(B) Cyclobutane",
+              "(C) Cyclopentane",
+              "(D) Cyclohexane"
+            ],
+            "topic": "Classification of Cycloalkanes",
+            "difficulty": "medium",
+            "explanation": "Cyclohexane is an example of a cycloalkane, as it has a ring of six carbon atoms."
+          },
+          {
+            "q": "What is the process of removing a hydrogen atom from a cycloalkane called?",
+            "ans": "B",
+            "opts": [
+              "(A) Halogenation",
+              "(B) Dehydrogenation",
+              "(C) Hydrogenation",
+              "(D) Cracking"
+            ],
+            "topic": "Reactions of Cycloalkanes",
+            "difficulty": "medium",
+            "explanation": "Dehydrogenation is the process of removing a hydrogen atom from a cycloalkane, resulting in the formation of a cycloalkene."
+          },
+          {
+            "q": "Which type of isomerism is exhibited by cyclohexane?",
+            "ans": "A",
+            "opts": [
+              "(A) Structural isomerism",
+              "(B) Geometrical isomerism",
+              "(C) Positional isomerism",
+              "(D) Optical isomerism"
+            ],
+            "topic": "Types of Isomerism in Cycloalkanes",
+            "difficulty": "medium",
+            "explanation": "Cyclohexane exhibits structural isomerism due to the presence of different structures, such as chair and boat conformations."
+          },
+          {
+            "q": "What is the general formula for alkyl halides?",
+            "ans": "D",
+            "opts": [
+              "(A) CnH2n",
+              "(B) CnHn",
+              "(C) CnH2n-2",
+              "(D) CnXn+1H2n-2X"
+            ],
+            "topic": "Introduction to Alkyl Halides",
+            "difficulty": "hard",
+            "explanation": "Alkyl halides have the general formula CnXn+1H2n-2X, as each carbon atom has a halogen atom attached to it."
+          },
+          {
+            "q": "Which of the following is an example of a primary alkyl halide?",
+            "ans": "A",
+            "opts": [
+              "(A) CH3Cl",
+              "(B) CH3CH2Cl",
+              "(C) CH3CH2CH2Cl",
+              "(D) CH3CH2CH2CH2Cl"
+            ],
+            "topic": "Classification of Alkyl Halides",
+            "difficulty": "hard",
+            "explanation": "CH3Cl is an example of a primary alkyl halide, as it has only one carbon atom attached to the halogen atom."
+          },
+          {
+            "q": "What is the process of replacing a hydrogen atom in an alkane with a halogen atom called?",
+            "ans": "A",
+            "opts": [
+              "(A) Halogenation",
+              "(B) Dehydrogenation",
+              "(C) Hydrogenation",
+              "(D) Cracking"
+            ],
+            "topic": "Reactions of Alkanes",
+            "difficulty": "hard",
+            "explanation": "Halogenation is the process of replacing a hydrogen atom in an alkane with a halogen atom, resulting in the formation of an alkyl halide."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:59:47.06+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Hydrocarbons\n\n## Chapter at a Glance\nHydrocarbons are a class of organic compounds that consist of only carbon (C) and hydrogen (H) atoms. They are the simplest type of organic compounds and are widely found in nature. The chapter covers the structure, classification, physical and chemical properties, and reactions of hydrocarbons. It also discusses the importance of hydrocarbons in our daily life and their industrial applications.\n\n## Section-wise Summary\n\n### 13.1 Introduction to Hydrocarbons\nHydrocarbons are defined as compounds that contain only carbon and hydrogen atoms. They are the basis of all organic chemistry and have a wide range of applications. Hydrocarbons can be classified into two main categories: aliphatic and aromatic hydrocarbons.\n\n### 13.2 Alkanes\nAlkanes are saturated hydrocarbons that have only single bonds between carbon atoms. They have a general formula of CnH2n+2. Alkanes are non-polar and have low reactivity due to the absence of double or triple bonds.\n\n### 13.3 Alkenes\nAlkenes are unsaturated hydrocarbons that have at least one double bond between carbon atoms. They have a general formula of CnH2n. Alkenes are polar and have high reactivity due to the presence of double bonds.\n\n### 13.4 Alkynes\nAlkynes are unsaturated hydrocarbons that have at least one triple bond between carbon atoms. They have a general formula of CnH2n-2. Alkynes are polar and have high reactivity due to the presence of triple bonds.\n\n### 13.5 Aromatic Hydrocarbons\nAromatic hydrocarbons have a planar ring structure with alternating double bonds between carbon atoms. They have a general formula of CnHn. Aromatic hydrocarbons are stable and have high reactivity due to the presence of delocalized electrons.\n\n### 13.6 Physical Properties of Hydrocarbons\nHydrocarbons have a wide range of physical properties, including boiling point, melting point, and density. These properties are influenced by the molecular weight and shape of the hydrocarbon molecules.\n\n### 13.7 Chemical Properties of Hydrocarbons\nHydrocarbons have a wide range of chemical properties, including combustion, hydrolysis, and substitution reactions. These properties are influenced by the type of hydrocarbon and the presence of double or triple bonds.\n\n### 13.8 Uses of Hydrocarbons\nHydrocarbons have a wide range of uses, including fuels, lubricants, and solvents. They are also used as raw materials in the production of plastics, rubber, and other synthetic materials.\n\n## Important NCERT Exercises Insight\n* The general formula for alkanes, alkenes, and alkynes should be remembered.\n* The difference between saturated and unsaturated hydrocarbons should be understood.\n* The physical and chemical properties of hydrocarbons should be remembered.\n* The uses of hydrocarbons and their importance in our daily life should be understood.\n\n## NCERT Exemplar Focus\n* The NCERT Exemplar for this chapter covers additional topics, including:\n + Isomerism in hydrocarbons\n + Polarity and electronegativity in hydrocarbons\n + Reaction of hydrocarbons with oxygen and chlorine\n\n## Board Exam Relevance\n* The board exam for Class 11 Chemistry has 30-40 marks weightage for the chapter on hydrocarbons.\n* The frequently asked topics from this chapter include:\n + Classification and nomenclature of hydrocarbons\n + Physical and chemical properties of hydrocarbons\n + Uses of hydrocarbons and their importance in our daily life"
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:06:04.011+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "Classify the following hydrocarbons into alkanes, alkenes, and alkynes: C2H6, C2H4, C2H2",
+            "type": "Short Answer",
+            "marks": 3,
+            "answer": "Alkanes: C2H6, Alkenes: C2H4, Alkynes: C2H2",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "Write the structural formula of the alkene with the molecular formula C4H8.",
+            "type": "Long Answer",
+            "marks": 5,
+            "answer": "CH3CH=CHCH3",
+            "difficulty": "medium",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "Identify the correct statement regarding the physical properties of alkanes.",
+            "type": "True/False",
+            "marks": 1,
+            "answer": "true",
+            "difficulty": "easy",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "What is the general formula for the general formula of alkynes?",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "CnH2n-2",
+            "difficulty": "easy",
+            "year_pattern": "2017-style"
+          },
+          {
+            "q": "Explain the difference between primary, secondary and tertiary alcohols with suitable examples.",
+            "type": "Short Answer",
+            "marks": 4,
+            "answer": "Primary alcohols: RCH2OH, Secondary alcohols: R2CHOH, Tertiary alcohols: R3COH",
+            "difficulty": "hard",
+            "year_pattern": "2016-style"
+          },
+          {
+            "q": "Write the equation for the combustion of butane.",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "2C4H10 + 13O2 → 8CO2 + 10H2O",
+            "difficulty": "medium",
+            "year_pattern": "2015-style"
+          },
+          {
+            "q": "Which of the following hydrocarbons is an alkene?",
+            "type": "MCQ",
+            "marks": 1,
+            "answer": "C2H4",
+            "difficulty": "easy",
+            "year_pattern": "2014-style"
+          },
+          {
+            "q": "What is the general formula of alkenes?",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "CnH2n",
+            "difficulty": "easy",
+            "year_pattern": "2013-style"
+          },
+          {
+            "q": "Explain the difference between saturated and unsaturated hydrocarbons.",
+            "type": "Short Answer",
+            "marks": 3,
+            "answer": "Saturated hydrocarbons: contain only single bonds between carbon atoms, Unsaturated hydrocarbons: contain at least one double or triple bond between carbon atoms",
+            "difficulty": "medium",
+            "year_pattern": "2012-style"
+          },
+          {
+            "q": "Write the structural formula of the alkane with the molecular formula C3H8.",
+            "type": "Long Answer",
+            "marks": 5,
+            "answer": "CH3CH2CH3",
+            "difficulty": "easy",
+            "year_pattern": "2011-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:07:11.689+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "What is the difference between alkanes and cycloalkanes?",
+            "marks": 2,
+            "topic": "Classification of Hydrocarbons",
+            "answer": "Alkanes are saturated hydrocarbons with open-chain structures, whereas cycloalkanes are saturated hydrocarbons with ring structures. Cycloalkanes have all the carbon atoms in a ring, with the exception of one carbon atom bonded to an alkyl group.",
+            "key_points": [
+              "Alkanes are saturated",
+              "Cycloalkanes have ring structures",
+              "Exception in cycloalkanes"
+            ]
+          },
+          {
+            "q": "What is the general formula for alkenes?",
+            "marks": 2,
+            "topic": "Alkenes",
+            "answer": "The general formula for alkenes is CnH2n. In this formula, the suffix '-ene' indicates the presence of a double bond.",
+            "key_points": [
+              "General formula for alkenes",
+              "Double bond in alkenes",
+              "Suffix '-ene'"
+            ]
+          },
+          {
+            "q": "What is the difference between alkanes and alkynes?",
+            "marks": 2,
+            "topic": "Alkynes",
+            "answer": "Alkanes are saturated hydrocarbons with only single bonds between carbon atoms, whereas alkynes are unsaturated hydrocarbons with at least one triple bond between carbon atoms.",
+            "key_points": [
+              "Alkanes have single bonds",
+              "Alkynes have triple bonds",
+              "Difference between alkanes and alkynes"
+            ]
+          },
+          {
+            "q": "What is the IUPAC nomenclature of the compound 2-methylpropane?",
+            "marks": 2,
+            "topic": "IUPAC Nomenclature of Hydrocarbons",
+            "answer": "The IUPAC name of the compound 2-methylpropane is propane. The suffix '-ane' indicates that it is an alkane, and the prefix '2-methyl' indicates the presence of a methyl group attached to the second carbon atom.",
+            "key_points": [
+              "IUPAC nomenclature",
+              "Suffix '-ane'",
+              "Prefix '2-methyl'"
+            ]
+          },
+          {
+            "q": "What is the difference between primary, secondary and tertiary alcohols?",
+            "marks": 2,
+            "topic": "Alcohols",
+            "answer": "Primary alcohols have the hydroxyl group (OH) attached to a primary carbon atom, secondary alcohols have the hydroxyl group attached to a secondary carbon atom, and tertiary alcohols have the hydroxyl group attached to a tertiary carbon atom.",
+            "key_points": [
+              "Primary alcohols",
+              "Secondary alcohols",
+              "Tertiary alcohols"
+            ]
+          },
+          {
+            "q": "Write the structural formula of the compound ethene?",
+            "marks": 2,
+            "topic": "Alkenes",
+            "answer": "The structural formula of ethene is H2C=CH2. The double bond between the two carbon atoms is indicated by the presence of the double bond symbol.",
+            "key_points": [
+              "Structural formula of ethene",
+              "Double bond symbol",
+              "Hydrogen atoms"
+            ]
+          },
+          {
+            "q": "What is the general formula for alkynes?",
+            "marks": 2,
+            "topic": "Alkynes",
+            "answer": "The general formula for alkynes is CnH2n-2. In this formula, the suffix '-yne' indicates the presence of a triple bond.",
+            "key_points": [
+              "General formula for alkynes",
+              "Triple bond in alkynes",
+              "Suffix '-yne'"
+            ]
+          },
+          {
+            "q": "What is the difference between alkanes and arenes?",
+            "marks": 2,
+            "topic": "Arenes",
+            "answer": "Alkanes are saturated hydrocarbons, whereas arenes are unsaturated hydrocarbons with at least one benzene ring.",
+            "key_points": [
+              "Alkanes are saturated",
+              "Arenes are unsaturated",
+              "Benzene ring"
+            ]
+          },
+          {
+            "q": "What is the IUPAC nomenclature of the compound chlorobenzene?",
+            "marks": 2,
+            "topic": "IUPAC Nomenclature of Hydrocarbons",
+            "answer": "The IUPAC name of the compound chlorobenzene is benzene. The suffix '-ene' indicates that it is an arene, and the prefix 'chloro' indicates the presence of a chlorine atom.",
+            "key_points": [
+              "IUPAC nomenclature",
+              "Suffix '-ene'",
+              "Prefix 'chloro'"
+            ]
+          },
+          {
+            "q": "What is the general formula for arenes?",
+            "marks": 2,
+            "topic": "Arenes",
+            "answer": "The general formula for arenes is CnH2n-6. In this formula, the suffix '-ene' indicates the presence of a benzene ring.",
+            "key_points": [
+              "General formula for arenes",
+              "Benzene ring",
+              "Suffix '-ene'"
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:59:47.388+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Hydrocarbons — Quick Revision Notes\n\n## ⚡ Key Points\n\n* Hydrocarbons are organic compounds that contain only carbon and hydrogen atoms.\n* They can be classified into two main categories: alkanes and aromatic hydrocarbons.\n* Alkanes are saturated hydrocarbons that contain only single bonds between carbon atoms.\n* Aromatic hydrocarbons are unsaturated and contain a planar, ring-shaped structure with alternating double bonds.\n* Alkenes are unsaturated hydrocarbons that contain at least one double bond between carbon atoms.\n* Alkynes are unsaturated hydrocarbons that contain at least one triple bond between carbon atoms.\n* The general formula for alkanes is CnH2n+2.\n* The general formula for alkenes is CnH2n.\n* The general formula for alkynes is CnH2n-2.\n* Isomers are compounds with the same molecular formula but different structural formulas.\n* Stereoisomers are compounds with the same molecular formula and structural formula but different spatial arrangements of atoms.\n* Polarity in hydrocarbons arises due to the presence of electronegative atoms such as oxygen, nitrogen, or halogens.\n* Hydrocarbons can be purified by fractional distillation.\n* Hydrocarbons can be separated based on their boiling points.\n* Hydrocarbons can be characterized using various physical and chemical tests.\n* The boiling point of hydrocarbons increases with the increase in molecular size.\n* The melting point of hydrocarbons generally decreases with the increase in molecular size.\n* Hydrocarbons can be classified as aliphatic and aromatic.\n* Aliphatic hydrocarbons are further divided into alkanes, alkenes, and alkynes.\n* Aromatic hydrocarbons are further divided into benzene and its derivatives.\n* Naphtha is a mixture of hydrocarbons with 5-12 carbon atoms.\n* Kerosene is a mixture of hydrocarbons with 12-16 carbon atoms.\n* Diesel oil is a mixture of hydrocarbons with 16-20 carbon atoms.\n* The octane number is a measure of the anti-knock properties of a fuel.\n* Hydrocarbons are used as fuels, lubricants, and solvents.\n* The combustion of hydrocarbons produces carbon dioxide and water as products.\n\n## 🔑 Must-Know Definitions\n\n* **Hydrocarbon**: An organic compound that contains only carbon and hydrogen atoms.\n* **Saturated hydrocarbon**: A hydrocarbon that contains only single bonds between carbon atoms.\n* **Unsaturated hydrocarbon**: A hydrocarbon that contains one or more multiple bonds between carbon atoms.\n* **Alkane**: A saturated hydrocarbon with the general formula CnH2n+2.\n* **Alkene**: An unsaturated hydrocarbon with the general formula CnH2n.\n* **Alkyne**: An unsaturated hydrocarbon with the general formula CnH2n-2.\n* **Isomer**: Compounds with the same molecular formula but different structural formulas.\n* **Stereoisomer**: Compounds with the same molecular formula and structural formula but different spatial arrangements of atoms.\n\n## 📊 Important Formulas\n\n1. General formula for alkanes: CnH2n+2\n2. General formula for alkenes: CnH2n\n3. General formula for alkynes: CnH2n-2\n4. Formula for the combustion of hydrocarbons: CnH2m + (n+m/4)O2 → nCO2 + (m/2)H2O\n\n## ⭐ Exam Tips\n\n* Focus on understanding the classification and properties of different types of hydrocarbons.\n* Practice identifying and naming isomers and stereoisomers.\n* Learn to calculate the boiling and melting points of hydrocarbons based on their molecular size.\n* Understand the importance of hydrocarbons in everyday life and their uses.\n* Review the combustion reaction of hydrocarbons and the products formed."
+      }
+    }
+  }
+}

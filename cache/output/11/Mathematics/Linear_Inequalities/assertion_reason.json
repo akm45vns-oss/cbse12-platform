@@ -1,0 +1,134 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Linear Inequalities",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:13:59.348Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): For any real numbers a and b, the inequality a < b implies a^2 < b^2.",
+        "reason": "Reason (R): This is because the square of a real number is always non-negative.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Since a < b, a^2 - b^2 < 0. Factoring on the left hand side, we get (a + b)(a - b) < 0. Since a + b and a - b have opposite signs, one of them must be negative. Hence, a^2 < b^2."
+      },
+      {
+        "assertion": "Assertion (A): The inequality 3x - 2 > 5 has exactly one solution.",
+        "reason": "Reason (R): This is because a linear inequality in one variable has either no solution, exactly one solution, or infinitely many solutions.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The inequality 3x - 2 > 5 is equivalent to 3x > 7, which is equivalent to x > 7/3. This is a linear inequality in one variable and has infinitely many solutions, not exactly one solution."
+      },
+      {
+        "assertion": "Assertion (A): The inequality x^2 + 3x + 2 > 0 is true for all real numbers x.",
+        "reason": "Reason (R): This is because the quadratic expression x^2 + 3x + 2 is always positive.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The quadratic expression x^2 + 3x + 2 can be factored as (x + 2)(x + 1). This is always positive when x > -2 or x < -1, but not true for all real numbers x."
+      },
+      {
+        "assertion": "Assertion (A): If a > 0, then -a < 0.",
+        "reason": "Reason (R): This is because the negative of a positive number is always negative.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This statement is true by the definition of negative numbers."
+      },
+      {
+        "assertion": "Assertion (A): The inequality x^2 - 4 > 0 has no solution.",
+        "reason": "Reason (R): This is because the quadratic expression x^2 - 4 is always non-negative.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The quadratic expression x^2 - 4 is always non-negative when x < -2 or x > 2, so it has infinitely many solutions, not no solution."
+      },
+      {
+        "assertion": "Assertion (A): If x > 2, then x^2 > 3.",
+        "reason": "Reason (R): This is because the square of a real number is always non-negative.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Since x > 2, we have x^2 > 4, so x^2 > 3 is true."
+      },
+      {
+        "assertion": "Assertion (A): The inequality 2x - 5 > 3 has exactly one solution.",
+        "reason": "Reason (R): This is because a linear inequality in one variable has either no solution, exactly one solution, or infinitely many solutions.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The inequality 2x - 5 > 3 is equivalent to 2x > 8, which is equivalent to x > 4. This is a linear inequality in one variable and has infinitely many solutions, not exactly one solution."
+      },
+      {
+        "assertion": "Assertion (A): The inequality x^2 + 2x + 1 > 0 is true for all real numbers x.",
+        "reason": "Reason (R): This is because the quadratic expression x^2 + 2x + 1 is always positive.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The quadratic expression x^2 + 2x + 1 can be factored as (x + 1)^2. This is always non-negative, not always positive."
+      },
+      {
+        "assertion": "Assertion (A): If x < 0, then -x > 0.",
+        "reason": "Reason (R): This is because the negative of a negative number is always positive.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This statement is true by the definition of positive numbers."
+      },
+      {
+        "assertion": "Assertion (A): The inequality x^2 - 5 > 0 has exactly one solution.",
+        "reason": "Reason (R): This is because a quadratic inequality in one variable has either no solution, exactly one solution, or infinitely many solutions.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The inequality x^2 - 5 > 0 is equivalent to x^2 > 5, which is equivalent to x > sqrt(5) or x < -sqrt(5). This is a quadratic inequality in one variable and has infinitely many solutions, not exactly one solution."
+      }
+    ],
+    "total": 10
+  }
+}

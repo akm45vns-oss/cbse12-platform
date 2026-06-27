@@ -1,0 +1,134 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "System of Particles and Rotational Motion",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:11:12.839Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The centre of mass of a system of particles is the point where the entire mass of the system can be assumed to be concentrated.",
+        "reason": "Reason (R): The centre of mass is the point where the weight of the system can be assumed to act.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The centre of mass is the point where the entire mass of the system can be assumed to be concentrated, and the weight of the system can be assumed to act at this point."
+      },
+      {
+        "assertion": "Assertion (A): The moment of inertia of a system of particles is a measure of its resistance to changes in its rotational motion.",
+        "reason": "Reason (R): It depends on the mass and distance of the particles from the axis of rotation.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The moment of inertia is a measure of the system's resistance to changes in its rotational motion, and it depends on the mass and distance of the particles from the axis of rotation."
+      },
+      {
+        "assertion": "Assertion (A): The torque acting on a body is zero when the force applied is perpendicular to the displacement of the force.",
+        "reason": "Reason (R): The torque is given by the product of force and perpendicular distance from the axis of rotation.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The torque is given by the product of force and perpendicular distance from the axis of rotation, and the torque is zero when the force applied is perpendicular to the displacement of the force."
+      },
+      {
+        "assertion": "Assertion (A): The angular velocity of a rotating body remains constant if the torque acting on it is zero.",
+        "reason": "Reason (R): According to Newton's second law, the net torque acting on a body is equal to its rate of change of angular momentum.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The angular velocity of a rotating body remains constant if the torque acting on it is zero, as the net torque acting on a body is equal to its rate of change of angular momentum."
+      },
+      {
+        "assertion": "Assertion (A): The parallel axes theorem states that the moment of inertia of a body about a new axis is equal to the moment of inertia about a parallel axis passing through its centre of mass plus the product of its mass and the square of the distance between the two axes.",
+        "reason": "Reason (R): This theorem is used to find the moment of inertia of a complex system by breaking it down into simpler systems.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The parallel axes theorem is used to find the moment of inertia of a complex system by breaking it down into simpler systems, and it states that the moment of inertia of a body about a new axis is equal to the moment of inertia about a parallel axis passing through its centre of mass plus the product of its mass and the square of the distance between the two axes."
+      },
+      {
+        "assertion": "Assertion (A): The centre of mass of a system of particles is the point where the weight of the system can be assumed to act.",
+        "reason": "Reason (R): The centre of mass is the point where the entire mass of the system can be assumed to be concentrated.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "The centre of mass is the point where the entire mass of the system can be assumed to be concentrated, but this is not the point where the weight of the system can be assumed to act. The centre of mass and the centre of weight are different points for a system of particles."
+      },
+      {
+        "assertion": "Assertion (A): The moment of inertia of a rod rotating about one end is greater than its moment of inertia when rotating about its centre.",
+        "reason": "Reason (R): The moment of inertia is directly proportional to the square of the distance of the particles from the axis of rotation.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The moment of inertia of a rod rotating about its centre is greater than its moment of inertia when rotating about one end, as the distance of the particles from the axis of rotation is greater."
+      },
+      {
+        "assertion": "Assertion (A): The torque acting on a body is zero when the force applied is parallel to the displacement of the force.",
+        "reason": "Reason (R): The torque is given by the product of force and perpendicular distance from the axis of rotation.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The torque is not zero when the force applied is parallel to the displacement of the force. The torque is zero when the force applied is perpendicular to the displacement of the force."
+      },
+      {
+        "assertion": "Assertion (A): The angular acceleration of a rotating body is directly proportional to the torque acting on it.",
+        "reason": "Reason (R): According to Newton's second law, the net torque acting on a body is equal to its rate of change of angular momentum.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "The angular acceleration of a rotating body is directly proportional to the net torque acting on it, but the given reason is not the correct explanation of this statement."
+      },
+      {
+        "assertion": "Assertion (A): The moment of inertia of a sphere is given by (2/5)MR^2.",
+        "reason": "Reason (R): The moment of inertia of a sphere is not dependent on its angular velocity.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The moment of inertia of a sphere is given by (2/5)MR^2, and it is dependent on its mass and radius, not its angular velocity."
+      }
+    ],
+    "total": 10
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "class": "11",
+  "subject": "Political Science",
+  "chapter": "Election and Representation",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T11:39:25.276Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "First Past the Post (FPTP) System",
+        "formula": "The candidate with the most votes wins the election",
+        "variables": "Votes cast for each candidate",
+        "units": "None",
+        "notes": "Used in single-member constituencies, often leads to a two-party system"
+      },
+      {
+        "name": "Proportional Representation (PR) System",
+        "formula": "Seats are allocated in proportion to the votes received by each party",
+        "variables": "Votes cast for each party, total seats available",
+        "units": "None",
+        "notes": "Used in multi-member constituencies, ensures representation of smaller parties"
+      },
+      {
+        "name": "D'Hondt's Method",
+        "formula": "n = (S+1)/m + (S+2)/(m-1) + ... + (S+k)/(m-k+1)",
+        "variables": "S = seats allocated, m = number of seats available, k = number of rounds",
+        "units": "None",
+        "notes": "Used in PR systems to calculate the number of seats for each party"
+      },
+      {
+        "name": "Sainte-Laguë Method",
+        "formula": "n = (S+1)/m + (S+3)/(m-1) + ... + (S+2k-1)/(m-k+1)",
+        "variables": "S = seats allocated, m = number of seats available, k = number of rounds",
+        "units": "None",
+        "notes": "Used in PR systems to calculate the number of seats for each party"
+      },
+      {
+        "name": "Single Transferable Vote (STV) System",
+        "formula": "Votes are transferred from eliminated candidates to other candidates",
+        "variables": "Votes cast for each candidate, threshold to be elected",
+        "units": "None",
+        "notes": "Used in multi-member constituencies, ensures representation of smaller parties"
+      },
+      {
+        "name": "Electoral College System",
+        "formula": "The candidate with a majority of electoral votes wins the election",
+        "variables": "Electoral votes allocated to each state",
+        "units": "None",
+        "notes": "Used in the United States presidential election"
+      },
+      {
+        "name": "Gerrymandering",
+        "formula": "A district is drawn to favor one party over another",
+        "variables": "District boundaries, voting patterns",
+        "units": "None",
+        "notes": "A technique used to manipulate electoral districts for partisan gain"
+      }
+    ]
+  }
+}

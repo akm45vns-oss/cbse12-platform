@@ -1,0 +1,134 @@
+{
+  "class": "11",
+  "subject": "Chemistry",
+  "chapter": "Thermodynamics",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:24:54.559Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Internal energy of a system is a state function.",
+        "reason": "Reason (R): The change in internal energy depends only on the initial and final states of the system.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Internal energy is a state function because its change depends only on the initial and final states of the system, not on the path taken to reach the final state."
+      },
+      {
+        "assertion": "Assertion (A): Heat is a path function.",
+        "reason": "Reason (R): The amount of heat transferred depends on the path taken to reach the final state.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Heat is a path function because its amount depends on the path taken to reach the final state, not only on the initial and final states."
+      },
+      {
+        "assertion": "Assertion (A): The change in entropy of a system is always positive.",
+        "reason": "Reason (R): Entropy is a measure of disorder or randomness in a system.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The change in entropy can be either positive or negative, depending on whether the disorder or randomness in the system increases or decreases. Entropy is a measure of disorder or randomness, but it is not always positive."
+      },
+      {
+        "assertion": "Assertion (A): The second law of thermodynamics states that the total entropy of an isolated system always increases.",
+        "reason": "Reason (R): The second law of thermodynamics states that the total entropy of an isolated system remains constant in a reversible process but increases in an irreversible process.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The second law of thermodynamics indeed states that the total entropy of an isolated system remains constant in a reversible process but increases in an irreversible process, which implies that the total entropy of an isolated system always increases over time."
+      },
+      {
+        "assertion": "Assertion (A): The entropy of a reversible adiabatic process is zero.",
+        "reason": "Reason (R): In a reversible adiabatic process, there is no heat transfer between the system and the surroundings.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "In a reversible adiabatic process, there is no heat transfer between the system and the surroundings, which implies that the entropy of a reversible adiabatic process is indeed zero."
+      },
+      {
+        "assertion": "Assertion (A): The Gibbs free energy of a system is a state function.",
+        "reason": "Reason (R): The change in Gibbs free energy depends only on the initial and final states of the system.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Gibbs free energy is a state function because its change depends only on the initial and final states of the system, not on the path taken to reach the final state."
+      },
+      {
+        "assertion": "Assertion (A): The enthalpy of a system is a measure of its internal energy plus the product of pressure and volume.",
+        "reason": "Reason (R): Enthalpy is defined as H = U + pV.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Enthalpy is indeed a measure of internal energy plus the product of pressure and volume, which is mathematically represented as H = U + pV."
+      },
+      {
+        "assertion": "Assertion (A): The spontaneity of a process is determined by the change in the Gibbs free energy.",
+        "reason": "Reason (R): A negative change in Gibbs free energy indicates a spontaneous process.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The spontaneity of a process is indeed determined by the change in the Gibbs free energy. A negative change in Gibbs free energy indicates a spontaneous process, while a positive change indicates a non-spontaneous process."
+      },
+      {
+        "assertion": "Assertion (A): The entropy of a system can be zero.",
+        "reason": "Reason (R): The entropy of a perfect crystal at absolute zero temperature is zero.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The entropy of a system can indeed be zero. For example, the entropy of a perfect crystal at absolute zero temperature is zero, but this does not mean that the entropy of all systems can be zero."
+      },
+      {
+        "assertion": "Assertion (A): The change in the Gibbs free energy is independent of the path taken.",
+        "reason": "Reason (R): The change in the Gibbs free energy depends only on the initial and final states of the system.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The change in the Gibbs free energy is indeed independent of the path taken. It depends only on the initial and final states of the system, making it a state function."
+      }
+    ],
+    "total": 10
+  }
+}

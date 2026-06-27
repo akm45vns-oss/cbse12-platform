@@ -1,0 +1,248 @@
+{
+  "class": "11",
+  "subject": "Chemistry",
+  "chapter": "Equilibrium",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:25:52.022Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the general expression for the equilibrium constant?",
+        "opts": [
+          "(A) K = [C] / [A]",
+          "(B) K = [A] / [C]",
+          "(C) K = [A] + [C]",
+          "(D) K = [A] / [C]"
+        ],
+        "ans": "D",
+        "explanation": "The equilibrium constant is the ratio of the concentration of the products to the concentration of the reactants, expressed as K = [C] / [A].",
+        "difficulty": "easy",
+        "topic": "Introduction to Equilibrium"
+      },
+      {
+        "q": "What is the law of mass action?",
+        "opts": [
+          "(A) The equilibrium constant is independent of concentration",
+          "(B) The equilibrium constant is a measure of the rate of reaction",
+          "(C) The equilibrium constant is a ratio of the concentrations of products and reactants",
+          "(D) The equilibrium constant is a measure of the temperature of the reaction"
+        ],
+        "ans": "C",
+        "explanation": "The law of mass action states that the equilibrium constant is a ratio of the concentrations of products and reactants, which is a fundamental principle of chemical equilibrium.",
+        "difficulty": "easy",
+        "topic": "Introduction to Equilibrium"
+      },
+      {
+        "q": "What is the term for a system at equilibrium?",
+        "opts": [
+          "(A) Dynamic equilibrium",
+          "(B) Static equilibrium",
+          "(C) Equilibrium mixture",
+          "(D) Equilibrium system"
+        ],
+        "ans": "A",
+        "explanation": "A system at equilibrium is said to be in a state of dynamic equilibrium, where the forward and reverse reactions occur at equal rates.",
+        "difficulty": "easy",
+        "topic": "Introduction to Equilibrium"
+      },
+      {
+        "q": "What is the equilibrium expression for the reaction 2NO(g) + O2(g) ⇌ 2NO2(g)?",
+        "opts": [
+          "(A) K = [NO] / [NO2]",
+          "(B) K = [O2] / [NO2]",
+          "(C) K = [NO2]^2 / [NO]^2 [O2]",
+          "(D) K = [NO]^2 / [NO2]^2"
+        ],
+        "ans": "C",
+        "explanation": "The equilibrium expression for the reaction 2NO(g) + O2(g) ⇌ 2NO2(g) is K = [NO2]^2 / [NO]^2 [O2].",
+        "difficulty": "easy",
+        "topic": "Equilibrium Expressions"
+      },
+      {
+        "q": "What is the equilibrium constant for the reaction N2(g) + O2(g) ⇌ 2NO(g)?",
+        "opts": [
+          "(A) K = [NO]^2 / [N2][O2]",
+          "(B) K = [N2][O2] / [NO]^2",
+          "(C) K = [N2][O2]",
+          "(D) K = [NO]^2"
+        ],
+        "ans": "A",
+        "explanation": "The equilibrium constant for the reaction N2(g) + O2(g) ⇌ 2NO(g) is K = [NO]^2 / [N2][O2].",
+        "difficulty": "easy",
+        "topic": "Equilibrium Expressions"
+      },
+      {
+        "q": "What is the term for a reaction that is not reversible?",
+        "opts": [
+          "(A) Reversible reaction",
+          "(B) Irreversible reaction",
+          "(C) Forward reaction",
+          "(D) Reverse reaction"
+        ],
+        "ans": "B",
+        "explanation": "A reaction that is not reversible is called an irreversible reaction, where the reactants are completely converted to products and cannot be converted back.",
+        "difficulty": "easy",
+        "topic": "Types of Reactions"
+      },
+      {
+        "q": "What is the concept of equilibrium constant in terms of activities?",
+        "opts": [
+          "(A) K = a_A / a_C",
+          "(B) K = a_C / a_A",
+          "(C) K = a_A a_C",
+          "(D) K = 1 / a_A a_C"
+        ],
+        "ans": "A",
+        "explanation": "In terms of activities, the equilibrium constant is expressed as K = a_A / a_C, where a_A and a_C are the activities of the reactants and products, respectively.",
+        "difficulty": "medium",
+        "topic": "Activities and Equilibrium Constant"
+      },
+      {
+        "q": "What is the relationship between the equilibrium constant and the temperature?",
+        "opts": [
+          "(A) K increases with temperature",
+          "(B) K decreases with temperature",
+          "(C) K is independent of temperature",
+          "(D) K is a function of temperature"
+        ],
+        "ans": "C",
+        "explanation": "The equilibrium constant (K) is independent of temperature, meaning that it remains constant as long as the reaction is at equilibrium.",
+        "difficulty": "medium",
+        "topic": "Temperature and Equilibrium Constant"
+      },
+      {
+        "q": "What is the effect of increasing the pressure on the equilibrium of the reaction N2(g) + 3H2(g) ⇌ 2NH3(g)?",
+        "opts": [
+          "(A) The equilibrium shifts to the left",
+          "(B) The equilibrium shifts to the right",
+          "(C) The equilibrium remains the same",
+          "(D) The reaction becomes irreversible"
+        ],
+        "ans": "B",
+        "explanation": "When the pressure is increased, the equilibrium of the reaction N2(g) + 3H2(g) ⇌ 2NH3(g) shifts to the right, favoring the formation of more gaseous products.",
+        "difficulty": "medium",
+        "topic": "Effect of Pressure on Equilibrium"
+      },
+      {
+        "q": "What is the effect of increasing the temperature on the equilibrium of the reaction N2(g) + O2(g) ⇌ 2NO(g)?",
+        "opts": [
+          "(A) The equilibrium shifts to the left",
+          "(B) The equilibrium shifts to the right",
+          "(C) The equilibrium remains the same",
+          "(D) The reaction becomes irreversible"
+        ],
+        "ans": "B",
+        "explanation": "When the temperature is increased, the equilibrium of the reaction N2(g) + O2(g) ⇌ 2NO(g) shifts to the right, favoring the formation of more gaseous products.",
+        "difficulty": "medium",
+        "topic": "Effect of Temperature on Equilibrium"
+      },
+      {
+        "q": "What is the term for a system that is not in equilibrium?",
+        "opts": [
+          "(A) In equilibrium",
+          "(B) Out of equilibrium",
+          "(C) Equilibrium mixture",
+          "(D) Dynamic system"
+        ],
+        "ans": "B",
+        "explanation": "A system that is not in equilibrium is said to be out of equilibrium, where the forward and reverse reactions occur at different rates.",
+        "difficulty": "medium",
+        "topic": "Introduction to Equilibrium"
+      },
+      {
+        "q": "What is the Le Chatelier's principle?",
+        "opts": [
+          "(A) When a system is in equilibrium, it is not affected by changes in concentration",
+          "(B) When a system is in equilibrium, it will shift to the side with the greatest number of moles of gas",
+          "(C) When a system is subjected to a change in concentration, temperature, or pressure, it will shift to counteract the effect of the change",
+          "(D) When a system is in equilibrium, it will always shift to the side with the greatest number of moles of reactants"
+        ],
+        "ans": "C",
+        "explanation": "Le Chatelier's principle states that when a system is subjected to a change in concentration, temperature, or pressure, it will shift to counteract the effect of the change.",
+        "difficulty": "medium",
+        "topic": "Le Chatelier's Principle"
+      },
+      {
+        "q": "What is the effect of adding a catalyst to a reaction?",
+        "opts": [
+          "(A) The reaction rate decreases",
+          "(B) The reaction rate increases",
+          "(C) The reaction equilibrium shifts",
+          "(D) The reaction becomes irreversible"
+        ],
+        "ans": "B",
+        "explanation": "A catalyst increases the rate of a reaction without affecting the equilibrium constant or the equilibrium position.",
+        "difficulty": "hard",
+        "topic": "Catalysts and Equilibrium"
+      },
+      {
+        "q": "What is the term for a reaction that is in equilibrium, but one of the reactants or products is in a different state (e.g. solid or liquid)?",
+        "opts": [
+          "(A) Heterogeneous equilibrium",
+          "(B) Homogeneous equilibrium",
+          "(C) Dynamic equilibrium",
+          "(D) Static equilibrium"
+        ],
+        "ans": "A",
+        "explanation": "A reaction that is in equilibrium, but one of the reactants or products is in a different state (e.g. solid or liquid) is called a heterogeneous equilibrium.",
+        "difficulty": "hard",
+        "topic": "Heterogeneous Equilibrium"
+      },
+      {
+        "q": "What is the concept of equilibrium constant in terms of fugacities?",
+        "opts": [
+          "(A) K = f_A / f_C",
+          "(B) K = f_C / f_A",
+          "(C) K = f_A f_C",
+          "(D) K = 1 / f_A f_C"
+        ],
+        "ans": "A",
+        "explanation": "In terms of fugacities, the equilibrium constant is expressed as K = f_A / f_C, where f_A and f_C are the fugacities of the reactants and products, respectively.",
+        "difficulty": "hard",
+        "topic": "Fugacities and Equilibrium Constant"
+      },
+      {
+        "q": "What is the effect of changing the concentration of a reactant on the equilibrium of a reaction?",
+        "opts": [
+          "(A) The equilibrium shifts to the left",
+          "(B) The equilibrium shifts to the right",
+          "(C) The equilibrium remains the same",
+          "(D) The reaction becomes irreversible"
+        ],
+        "ans": "B",
+        "explanation": "When the concentration of a reactant is increased, the equilibrium of a reaction shifts to the right, favoring the formation of more products.",
+        "difficulty": "hard",
+        "topic": "Effect of Concentration on Equilibrium"
+      },
+      {
+        "q": "What is the term for a reaction that is in equilibrium, but the equilibrium constant is not a simple ratio of concentrations?",
+        "opts": [
+          "(A) Complex equilibrium",
+          "(B) Heterogeneous equilibrium",
+          "(C) Homogeneous equilibrium",
+          "(D) Dynamic equilibrium"
+        ],
+        "ans": "A",
+        "explanation": "A reaction that is in equilibrium, but the equilibrium constant is not a simple ratio of concentrations is called a complex equilibrium.",
+        "difficulty": "hard",
+        "topic": "Complex Equilibrium"
+      },
+      {
+        "q": "What is the concept of equilibrium constant in terms of activities of ions in solution?",
+        "opts": [
+          "(A) K = a_A / a_C",
+          "(B) K = a_C / a_A",
+          "(C) K = a_A a_C",
+          "(D) K = 1 / a_A a_C"
+        ],
+        "ans": "A",
+        "explanation": "In terms of activities of ions in solution, the equilibrium constant is expressed as K = a_A / a_C, where a_A and a_C are the activities of the ions of the reactants and products, respectively.",
+        "difficulty": "hard",
+        "topic": "Activities of Ions and Equilibrium Constant"
+      }
+    ],
+    "total": 18
+  }
+}

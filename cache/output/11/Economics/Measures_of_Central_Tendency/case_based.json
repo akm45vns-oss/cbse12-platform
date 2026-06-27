@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Measures of Central Tendency",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:22:08.554Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A school in a small town in India conducted a survey to determine the average height of its students. The heights of 100 students are as follows: 160, 150, 170, 165, 162, 168, 166, 164, 167, 161, 169, 163, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200. The school wants to calculate the average height of its students for further analysis. The school's principal also wants to compare the average height of its students with other schools in the state.",
+        "questions": [
+          {
+            "q": "Which of the following measures of central tendency would be most suitable for the given data?",
+            "opts": [
+              "Mean",
+              "Median",
+              "Mode",
+              "Range"
+            ],
+            "ans": "A",
+            "explanation": "Mean is the most suitable measure of central tendency for the given data as it gives a precise value and is suitable for continuous data."
+          },
+          {
+            "q": "What would be the effect on the mean height of students if the school administration decides to add 2 cm to the height of each student?",
+            "opts": [
+              "The mean height will decrease",
+              "The mean height will increase",
+              "The mean height will remain the same",
+              "The mean height will become zero"
+            ],
+            "ans": "B",
+            "explanation": "Adding 2 cm to the height of each student will increase the mean height of students."
+          },
+          {
+            "q": "What is the median of the given data?",
+            "opts": [
+              "164.5",
+              "165",
+              "166",
+              "167"
+            ],
+            "ans": "B",
+            "explanation": "The median is the middle value of the data when it is arranged in ascending order. The 51st value is 166."
+          },
+          {
+            "q": "What is the mode of the given data?",
+            "opts": [
+              "None",
+              "160",
+              "165",
+              "166"
+            ],
+            "ans": "A",
+            "explanation": "The mode is the most frequently occurring value in the data. There is no value that occurs more than once in the given data."
+          },
+          {
+            "q": "Why is the mean height of students more influenced by extreme values than the median?",
+            "opts": [
+              "Because the mean is more sensitive to outliers",
+              "Because the median is more sensitive to outliers",
+              "Because the mean and median are equally sensitive to outliers",
+              "Because the median is more precise"
+            ],
+            "ans": "A",
+            "explanation": "The mean is more influenced by extreme values because it is the average of all the values, whereas the median is the middle value and is less affected by extreme values."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A company produces light bulbs and wants to calculate the average lifespan of its products. The lifespans of 50 light bulbs are as follows: 500, 502, 504, 506, 508, 510, 512, 514, 516, 518, 520, 522, 524, 526, 528, 530, 532, 534, 536, 538, 540, 542, 544, 546, 548, 550, 552, 554, 556, 558, 560, 562, 564, 566, 568, 570, 572, 574, 576, 578, 580, 582, 584, 586, 588, 590, 600, 610, 620, 630, 640. The company wants to know the average lifespan of its light bulbs and whether it is sufficient for its customers.",
+        "questions": [
+          {
+            "q": "What is the mode of the given data?",
+            "opts": [
+              "None",
+              "500",
+              "550",
+              "600"
+            ],
+            "ans": "A",
+            "explanation": "The mode is the most frequently occurring value in the data. There is no value that occurs more than once in the given data."
+          },
+          {
+            "q": "What is the median of the given data?",
+            "opts": [
+              "514",
+              "524",
+              "534",
+              "544"
+            ],
+            "ans": "C",
+            "explanation": "The median is the middle value of the data when it is arranged in ascending order. The 26th value is 534."
+          },
+          {
+            "q": "What is the effect on the mean lifespan of light bulbs if the company decides to add 10 to the lifespan of each light bulb?",
+            "opts": [
+              "The mean lifespan will decrease",
+              "The mean lifespan will increase",
+              "The mean lifespan will remain the same",
+              "The mean lifespan will become zero"
+            ],
+            "ans": "B",
+            "explanation": "Adding 10 to the lifespan of each light bulb will increase the mean lifespan of light bulbs."
+          },
+          {
+            "q": "Why is the mean lifespan of light bulbs more influenced by extreme values than the median?",
+            "opts": [
+              "Because the mean is more sensitive to outliers",
+              "Because the median is more sensitive to outliers",
+              "Because the mean and median are equally sensitive to outliers",
+              "Because the median is more precise"
+            ],
+            "ans": "A",
+            "explanation": "The mean is more influenced by extreme values because it is the average of all the values, whereas the median is the middle value and is less affected by extreme values."
+          },
+          {
+            "q": "What is the range of the given data?",
+            "opts": [
+              "0",
+              "100",
+              "200",
+              "500"
+            ],
+            "ans": "D",
+            "explanation": "The range is the difference between the highest and lowest values in the data. The highest value is 640 and the lowest value is 500, so the range is 640 - 500 = 140."
+          }
+        ]
+      }
+    ]
+  }
+}

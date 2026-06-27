@@ -1,0 +1,144 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:28:17.008Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A box contains 5 red marbles, 4 blue marbles, and 6 green marbles. How many ways are there to choose 3 marbles from the box?",
+        "opts": [
+          "(A) 200",
+          "(B) 560",
+          "(C) 700",
+          "(D) 1000"
+        ],
+        "ans": "B",
+        "explanation": "We can use the combination formula C(n, r) = n! / (r! * (n-r)!), where n is the total number of marbles and r is the number of marbles we want to choose. So, C(15, 3) = 15! / (3! * (15-3)!) = 4550 / (6 * 12) = 560.",
+        "difficulty": "easy",
+        "topic": "Combinations"
+      },
+      {
+        "q": "Find the number of ways in which 4 boys and 2 girls can be seated in a row such that boys and girls are seated alternately.",
+        "opts": [
+          "(A) 2880",
+          "(B) 28800",
+          "(C) 2880 * 2!",
+          "(D) 2880 * 4!"
+        ],
+        "ans": "A",
+        "explanation": "To solve this problem, we can consider the 4 boys as fixed points in a row. Then the 2 girls can be seated in between the boys in 2 ways. So, the number of ways to seat the boys and girls alternately is 4! * 2! = 2880.",
+        "difficulty": "easy",
+        "topic": "Permutations and Combinations"
+      },
+      {
+        "q": "In how many ways can the letters of the word 'EXAMINATION' be arranged?",
+        "opts": [
+          "(A) 10,080,000",
+          "(B) 7,560,000",
+          "(C) 5,040,000",
+          "(D) 3,600,000"
+        ],
+        "ans": "A",
+        "explanation": "The word 'EXAMINATION' has 11 letters, of which 2 are 'A', 2 are 'N', 2 are 'I', 2 are 'O', and the rest are distinct. So, the number of ways to arrange the letters is 11! / (2! * 2! * 2! * 2!) = 10,080,000.",
+        "difficulty": "easy",
+        "topic": "Permutations"
+      },
+      {
+        "q": "Find the number of ways in which 3 men and 2 women can be seated in a row such that no two women are seated together.",
+        "opts": [
+          "(A) 144",
+          "(B) 24 * 2!",
+          "(C) 24 * 3!",
+          "(D) 144 * 2!"
+        ],
+        "ans": "C",
+        "explanation": "To solve this problem, we can consider the 3 men as fixed points in a row. Then the 2 women can be seated in between the men in 3 ways. So, the number of ways to seat the men and women is 3! * 2! * 3 = 144 * 6 / 6 = 24 * 6 = 144.",
+        "difficulty": "easy",
+        "topic": "Permutations and Combinations"
+      },
+      {
+        "q": "How many ways are there to select 3 books from a total of 7 books such that at least one book is selected from each of 3 categories (Fiction, Non-Fiction, and Poetry)?",
+        "opts": [
+          "(A) 35",
+          "(B) 70",
+          "(C) 105",
+          "(D) 140"
+        ],
+        "ans": "A",
+        "explanation": "Let's consider the number of ways to select 3 books from each category. The number of ways to select 1 book from each category is 3 * 3 * 3 = 27. The number of ways to select 2 books from one category and 1 book from another category is 3 * 3 * 3 = 27. The number of ways to select 3 books from one category is 3 * 3 * 3 = 27. So, the total number of ways is 27 + 27 + 27 = 81. But we have counted some cases multiple times. For example, we have counted the case where we select 2 books from one category and 1 book from another category twice. So, we need to subtract these cases. The number of ways to select 2 books from one category and 1 book from another category is 3 * 3 * 3 = 27. The number of ways to select 2 books from one category and 1 book from another category is 3 * 3 * 3 = 27. So, the total number of ways is 81 - 27 - 27 = 27. But we have not counted the case where we select 3 books from one category. So, we need to add this case. The number of ways to select 3 books from one category is 3 * 3 * 3 = 27. So, the total number of ways is 27 + 27 = 54. But we have counted some cases multiple times. For example, we have counted the case where we select 3 books from one category twice. So, we need to subtract this case. The number of ways to select 3 books from one category is 3 * 3 * 3 = 27. So, the total number of ways is 54 - 27 = 27. But we have not counted the case where we select 3 books from two categories. So, we need to add this case. The number of ways to select 3 books from two categories is 3 * 3 * 3 = 27. So, the total number of ways is 27 + 27 = 54. But we have counted some cases multiple times. For example, we have counted the case where we select 3 books from two categories twice. So, we need to subtract this case. The number of ways to select 3 books from two categories is 3 * 3 * 3 = 27. So, the total number of ways is 54 - 27 = 27. But we have not counted the case where we select 3 books from all three categories. So, we need to add this case. The number of ways to select 3 books from all three categories is 3 * 3 * 3 = 27. So, the total number of ways is 27 + 27 = 54. But we have counted some cases multiple times. For example, we have counted the case where we select 3 books from all three categories twice. So, we need to subtract this case. The number of ways to select 3 books from all three categories is 3 * 3 * 3 = 27. So, the total number of ways is 54 - 27 = 27.",
+        "difficulty": "easy",
+        "topic": "Combinations"
+      },
+      {
+        "q": "Find the number of ways in which 4 men and 4 women can be seated in a row such that no two men are seated together.",
+        "opts": [
+          "(A) 576",
+          "(B) 24 * 4!",
+          "(C) 24 * 4!",
+          "(D) 24 * 4! * 2"
+        ],
+        "ans": "A",
+        "explanation": "To solve this problem, we can consider the 4 women as fixed points in a row. Then the 4 men can be seated in between the women in 4 ways. So, the number of ways to seat the men and women is 4! * 4! * 4 = 576.",
+        "difficulty": "easy",
+        "topic": "Permutations and Combinations"
+      },
+      {
+        "q": "In how many ways can 5 boys be seated in a row such that no two boys with the same birthday are seated together?",
+        "opts": [
+          "(A) 120",
+          "(B) 240",
+          "(C) 360",
+          "(D) 480"
+        ],
+        "ans": "A",
+        "explanation": "Let's consider the number of ways to seat the boys such that no two boys with the same birthday are seated together. We can consider the 3 boys with different birthdays as fixed points in a row. Then the 2 boys with the same birthday can be seated in between the fixed boys in 2 ways. So, the number of ways to seat the boys is 3! * 2 * 2! = 24 * 4 = 96. But we have not counted the case where all 5 boys have the same birthday. So, we need to add this case. The number of ways to seat the boys is 1 * 1 = 1. So, the total number of ways is 96 + 1 = 97. But we have counted some cases multiple times. For example, we have counted the case where all 5 boys have the same birthday twice. So, we need to subtract this case. The number of ways to seat the boys is 1 * 1 = 1. So, the total number of ways is 97 - 1 = 96. But we have not counted the case where 4 boys have the same birthday and 1 boy has a different birthday. So, we need to add this case. The number of ways to seat the boys is 4 * 4 * 2 * 2! = 64 * 4 = 256. So, the total number of ways is 96 + 256 = 352. But we have counted some cases multiple times. For example, we have counted the case where 4 boys have the same birthday and 1 boy has a different birthday twice. So, we need to subtract this case. The number of ways to seat the boys is 4 * 4 * 2 * 2! = 64 * 4 = 256. So, the total number of ways is 352 - 256 = 96.",
+        "difficulty": "easy",
+        "topic": "Permutations"
+      },
+      {
+        "q": "Find the number of ways in which 3 men and 2 women can be seated in a row such that the men and women are seated alternately.",
+        "opts": [
+          "(A) 144",
+          "(B) 24 * 2!",
+          "(C) 24 * 3!",
+          "(D) 144 * 2!"
+        ],
+        "ans": "C",
+        "explanation": "To solve this problem, we can consider the 3 men as fixed points in a row. Then the 2 women can be seated in between the men in 3 ways. So, the number of ways to seat the men and women is 3! * 2! * 3 = 144.",
+        "difficulty": "easy",
+        "topic": "Permutations and Combinations"
+      },
+      {
+        "q": "In how many ways can 4 women be seated in a row such that no two women with the same birthday are seated together?",
+        "opts": [
+          "(A) 24",
+          "(B) 48",
+          "(C) 96",
+          "(D) 192"
+        ],
+        "ans": "A",
+        "explanation": "Let's consider the number of ways to seat the women such that no two women with the same birthday are seated together. We can consider the 3 women with different birthdays as fixed points in a row. Then the 1 woman with the same birthday as one of the fixed women can be seated in between the fixed women in 1 way. So, the number of ways to seat the women is 3! * 1 * 2! = 6 * 2 = 12. But we have not counted the case where all 4 women have the same birthday. So, we need to add this case. The number of ways to seat the women is 1 * 1 = 1. So, the total number of ways is 12 + 1 = 13. But we have counted some cases multiple times. For example, we have counted the case where all 4 women have the same birthday twice. So, we need to subtract this case. The number of ways to seat the women is 1 * 1 = 1. So, the total number of ways is 13 - 1 = 12.",
+        "difficulty": "easy",
+        "topic": "Permutations"
+      },
+      {
+        "q": "Find the number of ways in which 4 men and 4 women can be seated in a row such that the men and women are seated alternately.",
+        "opts": [
+          "(A) 576",
+          "(B) 24 * 4!",
+          "(C) 24 * 4!",
+          "(D) 24 * 4! * 2"
+        ],
+        "ans": "A",
+        "explanation": "To solve this problem, we can consider the 4 men as fixed points in a row. Then the 4 women can be seated in between the men in 4 ways. So, the number of ways to seat the men and women is 4! * 4! * 4 = 576.",
+        "difficulty": "easy",
+        "topic": "Permutations and Combinations"
+      }
+    ],
+    "total": 10
+  }
+}

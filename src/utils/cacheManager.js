@@ -134,23 +134,61 @@ class CacheManager {
 export const cacheManager = new CacheManager();
 
 // Convenience functions for notes caching
-export function cacheNotes(subject, chapter, notes, ttl = 1440) {
-  const key = `${CACHE_KEYS.NOTES}:${subject}:${chapter}`;
-  return cacheManager.set(key, notes, ttl);
+export function cacheNotes(classLevel, subject, chapter, notes, ttl = 1440) {
+  let finalClass = classLevel;
+  let finalSubj = subject;
+  let finalChap = chapter;
+  let finalNotes = notes;
+  let finalTtl = ttl;
+
+  if (typeof notes === 'undefined' || typeof notes === 'number') {
+    // 3 or 4 arguments signature: cacheNotes(subject, chapter, notes, ttl)
+    finalClass = "12";
+    finalSubj = classLevel;
+    finalChap = subject;
+    finalNotes = chapter;
+    finalTtl = notes || 1440;
+  }
+
+  const key = `cbse:${finalClass}:${finalSubj}:${finalChap}:notes`;
+  return cacheManager.set(key, finalNotes, finalTtl);
 }
 
-export function getCachedNotes(subject, chapter) {
-  const key = `${CACHE_KEYS.NOTES}:${subject}:${chapter}`;
+export function getCachedNotes(classLevel, subject, chapter) {
+  // If 2 arguments, it's (subject, chapter)
+  const args = typeof chapter === 'undefined'
+    ? { classLevel: "12", subject: classLevel, chapter: subject }
+    : { classLevel, subject, chapter };
+
+  const key = `cbse:${args.classLevel}:${args.subject}:${args.chapter}:notes`;
   return cacheManager.get(key);
 }
 
 // Convenience functions for quiz caching
-export function cacheQuiz(subject, chapter, quiz, ttl = 1440) {
-  const key = `${CACHE_KEYS.QUIZ}:${subject}:${chapter}`;
-  return cacheManager.set(key, quiz, ttl);
+export function cacheQuiz(classLevel, subject, chapter, quiz, ttl = 1440) {
+  let finalClass = classLevel;
+  let finalSubj = subject;
+  let finalChap = chapter;
+  let finalQuiz = quiz;
+  let finalTtl = ttl;
+
+  if (typeof quiz === 'undefined' || typeof quiz === 'number') {
+    finalClass = "12";
+    finalSubj = classLevel;
+    finalChap = subject;
+    finalQuiz = chapter;
+    finalTtl = quiz || 1440;
+  }
+
+  const key = `cbse:${finalClass}:${finalSubj}:${finalChap}:quiz`;
+  return cacheManager.set(key, finalQuiz, finalTtl);
 }
 
-export function getCachedQuiz(subject, chapter) {
-  const key = `${CACHE_KEYS.QUIZ}:${subject}:${chapter}`;
+export function getCachedQuiz(classLevel, subject, chapter) {
+  const args = typeof chapter === 'undefined'
+    ? { classLevel: "12", subject: classLevel, chapter: subject }
+    : { classLevel, subject, chapter };
+
+  const key = `cbse:${args.classLevel}:${args.subject}:${args.chapter}:quiz`;
   return cacheManager.get(key);
 }

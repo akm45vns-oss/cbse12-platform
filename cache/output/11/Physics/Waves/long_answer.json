@@ -1,0 +1,69 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Waves",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:19:02.388Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A tuning fork of frequency 256 Hz is placed near a stationary air column in a pipe closed at one end. The air column starts vibrating in its <a>second</a> harmonic. Determine the length of the air column.",
+        "marks": 5,
+        "answer": "The frequency of the tuning fork is 256 Hz. The frequency of the second harmonic of the air column is given by f = v / (4l), where l is the length of the air column and v is the speed of sound in air. Since the second harmonic is present, the frequency of the air column is f = 3v / 4l. Equating this to the frequency of the tuning fork, we get 256 = 3v / 4l. Solving for l, we get l = 3v / 1024. The speed of sound in air is approximately 343 m/s at room temperature. Therefore, l = 3 * 343 / 1024 = 0.99 m.",
+        "marking_scheme": [
+          "Point 1: Identify the frequency of the tuning fork and the frequency of the second harmonic of the air column (1 mark)",
+          "Point 2: Calculate the length of the air column using the correct formula and speed of sound in air (2 marks)",
+          "Point 3: Substitute the correct values and solve for l (2 marks)"
+        ],
+        "topic": "Standing Waves"
+      },
+      {
+        "q": "A wave of amplitude 2.5 cm and wavelength 2.0 m is travelling in a medium. (a) What is the <a>angular frequency</a> of the wave? (b) What is the <a>velocity</a> of the wave?",
+        "marks": 5,
+        "answer": "Using the formula v = λf, we can calculate the velocity of the wave. First, we need to calculate the frequency of the wave. The frequency of a wave is given by f = v / λ. However, since we are given the wavelength and the amplitude, we can use the formula v = λf and the relationship between the angular frequency and the frequency (ω = 2πf) to calculate the angular frequency. The angular frequency is given by ω = 2πf = 2πv / λ.",
+        "marking_scheme": [
+          "Point 1: Identify the amplitude and wavelength of the wave (1 mark)",
+          "Point 2: Calculate the angular frequency using the correct formula (2 marks)",
+          "Point 3: Calculate the velocity of the wave using the correct formula (2 marks)"
+        ],
+        "topic": "Properties of Waves"
+      },
+      {
+        "q": "A sound wave has a frequency of 256 Hz and a speed of 343 m/s. (a) What is its <a>wavelength</a>? (b) What is its <a>period</a>?",
+        "marks": 5,
+        "answer": "To calculate the wavelength of the sound wave, we can use the formula v = λf. Rearranging this formula to solve for λ, we get λ = v / f. Substituting the given values, we get λ = 343 / 256 = 1.34 m. To calculate the period of the sound wave, we can use the formula T = 1 / f. Substituting the given value, we get T = 1 / 256 = 0.0039 s.",
+        "marking_scheme": [
+          "Point 1: Identify the frequency and speed of the sound wave (1 mark)",
+          "Point 2: Calculate the wavelength using the correct formula (2 marks)",
+          "Point 3: Calculate the period using the correct formula (2 marks)"
+        ],
+        "topic": "Properties of Waves"
+      },
+      {
+        "q": "A string of length 1.5 m and mass per unit length 0.05 kg/m is fixed at both ends. It is plucked at its center. (a) What is the <a>first</a> harmonic frequency of the string? (b) What is the <a>second</a> harmonic frequency of the string?",
+        "marks": 5,
+        "answer": "The frequency of the first harmonic of a string fixed at both ends is given by f1 = v / 2l, where v is the speed of the wave in the string and l is the length of the string. The speed of the wave in a string is given by v = √(T/μ), where T is the tension in the string and μ is the mass per unit length of the string. However, since the tension in the string is not given, we can assume that the string is plucked at its center and the wave travels in both directions. Therefore, the frequency of the first harmonic is given by f1 = v / 2l = 2 * v / 2l = v / l = 1 / T. To calculate the frequency of the second harmonic, we can use the formula f2 = 3v / 2l.",
+        "marking_scheme": [
+          "Point 1: Identify the length and mass per unit length of the string (1 mark)",
+          "Point 2: Calculate the first harmonic frequency using the correct formula (2 marks)",
+          "Point 3: Calculate the second harmonic frequency using the correct formula (2 marks)"
+        ],
+        "topic": "Standing Waves"
+      },
+      {
+        "q": "A wave of wavelength 0.5 m and amplitude 0.25 m is travelling in a medium. (a) What is the <a>angular frequency</a> of the wave? (b) What is the <a>velocity</a> of the wave?",
+        "marks": 5,
+        "answer": "To calculate the angular frequency of the wave, we can use the formula ω = 2πf. First, we need to calculate the frequency of the wave. The frequency of a wave is given by f = v / λ. However, since we are given the wavelength and the amplitude, we can use the formula v = λf and the relationship between the angular frequency and the frequency (ω = 2πf) to calculate the angular frequency. The angular frequency is given by ω = 2πf = 2πv / λ. To calculate the velocity of the wave, we can use the formula v = λf.",
+        "marking_scheme": [
+          "Point 1: Identify the wavelength and amplitude of the wave (1 mark)",
+          "Point 2: Calculate the angular frequency using the correct formula (2 marks)",
+          "Point 3: Calculate the velocity of the wave using the correct formula (2 marks)"
+        ],
+        "topic": "Properties of Waves"
+      }
+    ],
+    "total": 5
+  }
+}

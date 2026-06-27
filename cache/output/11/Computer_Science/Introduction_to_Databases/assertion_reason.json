@@ -1,0 +1,134 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Introduction to Databases",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:32:48.987Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The primary key of a table uniquely identifies each record.",
+        "reason": "Reason (R): It is used as a reference to other tables in the database.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This is correct because the primary key uniquely identifies each record and it is used as a reference to other tables in the database."
+      },
+      {
+        "assertion": "Assertion (A): A candidate key is a column or set of columns that uniquely identifies each record in a table.",
+        "reason": "Reason (R): It can be a primary key or a foreign key.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This is correct because a candidate key uniquely identifies each record and it can be a primary key or a foreign key."
+      },
+      {
+        "assertion": "Assertion (A): A database schema is a collection of entities, attributes, and relationships that define the structure of a database.",
+        "reason": "Reason (R): It is used to plan, design, and implement a database.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This is correct because a database schema defines the structure of a database and it is used to plan, design, and implement a database."
+      },
+      {
+        "assertion": "Assertion (A): The entity-relationship model is a high-level conceptual model used to design and implement a database.",
+        "reason": "Reason (R): It is based on the concept of entities and relationships between them.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This is correct because the entity-relationship model is based on the concept of entities and relationships between them."
+      },
+      {
+        "assertion": "Assertion (A): A foreign key is a field in a table that references the primary key of another table.",
+        "reason": "Reason (R): It is used to establish relationships between tables.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This is correct because a foreign key references the primary key of another table and it is used to establish relationships between tables."
+      },
+      {
+        "assertion": "Assertion (A): A database is a collection of inter-related data that is stored in a structured format.",
+        "reason": "Reason (R): It is used to store, manage, and retrieve data efficiently.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This is correct because a database is a collection of inter-related data and it is used to store, manage, and retrieve data efficiently."
+      },
+      {
+        "assertion": "Assertion (A): A database management system (DBMS) is a software that manages and manipulates data in a database.",
+        "reason": "Reason (R): It provides a layer of abstraction between the user and the database.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This is correct because a DBMS manages and manipulates data in a database and it provides a layer of abstraction between the user and the database."
+      },
+      {
+        "assertion": "Assertion (A): A database schema is a logical representation of a database.",
+        "reason": "Reason (R): It is used to define the structure of a database.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "This is correct because a database schema defines the structure of a database, and a physical representation is also a possible definition of a database schema."
+      },
+      {
+        "assertion": "Assertion (A): A database is a physical storage of data.",
+        "reason": "Reason (R): It is used to store, manage, and retrieve data efficiently.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This is correct because a database is a collection of inter-related data, and it is not a physical storage of data."
+      },
+      {
+        "assertion": "Assertion (A): A DBMS is a software that manages and manipulates data in a database.",
+        "reason": "Reason (R): It provides a layer of abstraction between the user and the operating system.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "This is correct because a DBMS manages and manipulates data in a database, and it provides a layer of abstraction between the user and the database, not the operating system."
+      }
+    ],
+    "total": 10
+  }
+}

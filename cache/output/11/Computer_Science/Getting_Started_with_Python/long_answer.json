@@ -1,0 +1,79 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Getting Started with Python",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T19:11:22.486Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A programmer wants to write a Python program that calculates the area and perimeter of a rectangle. Which of the following data types should they use to represent the length and width of the rectangle? (a) Integers, (b) Floats, (c) Strings.",
+        "marks": 5,
+        "answer": "In Python, the length and width of a rectangle are typically represented using floating point numbers (Floats) because they may contain decimal points. For example, a rectangle with a length of 5.5 units and a width of 3.2 units. This choice of data type is due to the fact that the length and width of a rectangle can be any real number, and using floats allows for greater precision and flexibility in calculations.",
+        "marking_scheme": [
+          "Point 1: Mention correct data type for length and width (1 mark)",
+          "Point 2: Explain why floats are chosen (1 mark)",
+          "Point 3: Provide an example of rectangle dimensions (1 mark)",
+          "Point 4: Discuss precision and flexibility (1 mark)",
+          "Point 5: Summarize the correct answer (1 mark)"
+        ],
+        "topic": "Data Types"
+      },
+      {
+        "q": "What is the difference between '==' and 'is' operators in Python? Use an example to illustrate the difference. (a) Explain the difference, (b) Provide an example.",
+        "marks": 5,
+        "answer": "In Python, the '==' operator checks for equality between two values, whereas the 'is' operator checks if both variables point to the same object in memory. The main difference between the two is that '==' checks the value of the object, while 'is' checks the identity of the object. Here's an example to illustrate the difference: If we have two variables x and y, and we assign x = 5 and y = 5, then x == y would return True because they have the same value, but x is y would return False because they are not the same object in memory.",
+        "marking_scheme": [
+          "Point 1: Define '==' operator (1 mark)",
+          "Point 2: Define 'is' operator (1 mark)",
+          "Point 3: Explain the difference between '==' and 'is' (1 mark)",
+          "Point 4: Provide example to illustrate the difference (1 mark)",
+          "Point 5: Summarize the correct answer (1 mark)"
+        ],
+        "topic": "Operators"
+      },
+      {
+        "q": "What is the use of 'assert' statement in Python? Describe its syntax and explain its purpose with an example.",
+        "marks": 5,
+        "answer": "The 'assert' statement in Python is used to check if a condition is true or false. If the condition is false, it raises an AssertionError. The syntax of the 'assert' statement is as follows: assert condition, message. Here's an example to illustrate its purpose: If we have a function that calculates the area of a rectangle, and we want to ensure that the length and width are positive numbers, we can use the 'assert' statement to check for this condition.",
+        "marking_scheme": [
+          "Point 1: Define 'assert' statement (1 mark)",
+          "Point 2: Explain the syntax of 'assert' statement (1 mark)",
+          "Point 3: Explain the purpose of 'assert' statement (1 mark)",
+          "Point 4: Provide example to illustrate its purpose (1 mark)",
+          "Point 5: Summarize the correct answer (1 mark)"
+        ],
+        "topic": "Control Structures"
+      },
+      {
+        "q": "What is a list in Python? Describe its syntax and explain its methods. Provide an example to illustrate its usage.",
+        "marks": 5,
+        "answer": "A list in Python is a collection of items that can be of any data type, including strings, integers, floats, and other lists. The syntax of a list is as follows: list_name = [item1, item2, item3, ...]. The methods of a list include append(), insert(), remove(), and sort(). Here's an example to illustrate its usage: If we want to create a list of the names of students in a class, we can use the append() method to add each name to the list.",
+        "marking_scheme": [
+          "Point 1: Define list (1 mark)",
+          "Point 2: Explain syntax of list (1 mark)",
+          "Point 3: Explain list methods (1 mark)",
+          "Point 4: Provide example to illustrate its usage (1 mark)",
+          "Point 5: Summarize the correct answer (1 mark)"
+        ],
+        "topic": "Lists"
+      },
+      {
+        "q": "What is a function in Python? Describe its syntax and explain its purpose. Provide an example to illustrate its usage.",
+        "marks": 5,
+        "answer": "A function in Python is a block of code that can be executed multiple times from different parts of a program. The syntax of a function is as follows: def function_name(parameters): code block. The purpose of a function is to modularize code, make it reusable, and improve code organization. Here's an example to illustrate its usage: If we want to calculate the area and perimeter of a rectangle, we can create a function that takes the length and width as parameters and returns the area and perimeter.",
+        "marking_scheme": [
+          "Point 1: Define function (1 mark)",
+          "Point 2: Explain syntax of function (1 mark)",
+          "Point 3: Explain purpose of function (1 mark)",
+          "Point 4: Provide example to illustrate its usage (1 mark)",
+          "Point 5: Summarize the correct answer (1 mark)"
+        ],
+        "topic": "Functions"
+      }
+    ],
+    "total": 5
+  }
+}

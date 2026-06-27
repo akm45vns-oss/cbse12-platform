@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:13:59.062Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Write a function to find the greatest common divisor (GCD) of two integers.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "def gcd(a, b):\n    while b != 0:\n        a, b = b, a % b\n    return a",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Which of the following is a correct example of a recursive function in Python?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "A) A function that calls itself in its own definition",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Explain the concept of function arguments in Python with an example.",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "Function arguments are the values passed to a function when it is called. For example: def greet(name): print('Hello, ' + name)",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Write a Python function to calculate the area of a circle given its radius.",
+        "type": "Fill in the Blank",
+        "marks": 2,
+        "answer": "πr^2",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the main difference between a local and global variable in a function?",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "Local variables are defined within a function and are not accessible outside it, whereas global variables are defined outside a function and are accessible within it.",
+        "year_pattern": "2021-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Write a Python function to convert a list of integers into a string of comma-separated values.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "def list_to_string(lst):\n    return ', '.join(map(str, lst))",
+        "year_pattern": "2015-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Which of the following is a valid use of the return statement in Python?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "A) To exit a loop",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Explain the concept of default arguments in Python with an example.",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "Default arguments are values assigned to function parameters when they are not provided during function call. For example: def greet(name='World'): print('Hello, ' + name)",
+        "year_pattern": "2014-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Write a Python function to filter a list of numbers to include only those greater than a certain threshold.",
+        "type": "Fill in the Blank",
+        "marks": 2,
+        "answer": "[x for x in lst if x > threshold]",
+        "year_pattern": "2013-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the purpose of the `pass` statement in Python when used in a function definition?",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "The `pass` statement is used as a placeholder when a statement is required syntactically but no execution of code is necessary, such as in a function definition with no body.",
+        "year_pattern": "2012-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

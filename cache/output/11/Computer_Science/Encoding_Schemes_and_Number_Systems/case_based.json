@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Encoding Schemes and Number Systems",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:24:19.479Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The internet is a massive network of interconnected devices, and it relies heavily on protocols for data transfer. One such protocol is HTTP (Hypertext Transfer Protocol), which uses ASCII (American Standard Code for Information Interchange) encoding to represent characters. ASCII uses 7-bit binary code to represent each character. For instance, the character 'A' is represented as 01000001 in binary. However, when sending data over the internet, it's more efficient to use a 32-bit binary code to represent each character. This is where Unicode comes in – it uses 32-bit binary code to represent characters from various languages. Consider a scenario where you're developing a web application that needs to support multiple languages. How would you approach this?",
+        "questions": [
+          {
+            "q": "What is the primary encoding scheme used by HTTP protocol?",
+            "opts": [
+              "ASCII",
+              "Unicode",
+              "Binary",
+              "None of the above"
+            ],
+            "ans": "A",
+            "explanation": "HTTP protocol primarily uses ASCII encoding scheme to represent characters."
+          },
+          {
+            "q": "What is the primary difference between ASCII and Unicode encoding schemes?",
+            "opts": [
+              "ASCII uses 8-bit binary code, while Unicode uses 32-bit binary code.",
+              "ASCII uses 32-bit binary code, while Unicode uses 8-bit binary code.",
+              "ASCII uses 7-bit binary code, while Unicode uses 32-bit binary code.",
+              "ASCII uses 7-bit binary code, while Unicode uses 8-bit binary code."
+            ],
+            "ans": "C",
+            "explanation": "ASCII uses 7-bit binary code, while Unicode uses 32-bit binary code."
+          },
+          {
+            "q": "Which encoding scheme is more efficient for representing characters when sending data over the internet?",
+            "opts": [
+              "ASCII",
+              "Unicode",
+              "Binary",
+              "It depends on the situation"
+            ],
+            "ans": "B",
+            "explanation": "Unicode is more efficient for representing characters when sending data over the internet."
+          },
+          {
+            "q": "What is the primary advantage of using Unicode encoding scheme?",
+            "opts": [
+              "It supports only English characters.",
+              "It supports characters from various languages.",
+              "It does not support any characters.",
+              "It is more efficient than ASCII."
+            ],
+            "ans": "B",
+            "explanation": "Unicode supports characters from various languages."
+          },
+          {
+            "q": "Which of the following is a correct representation of the character 'A' in ASCII encoding scheme?",
+            "opts": [
+              "01000010",
+              "01000001",
+              "01100001",
+              "None of the above"
+            ],
+            "ans": "B",
+            "explanation": "The character 'A' is represented as 01000001 in ASCII encoding scheme."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "In computer networks, data is often transmitted in binary format. However, humans find it more convenient to work with numbers in base 10 (decimal system). To convert binary data into decimal, we use the binary number system. The binary number system represents numbers using only two digits: 0 and 1. For instance, the decimal number 12 can be represented in binary as 1100. Consider a scenario where you're working with a microcontroller that uses binary to represent numbers. How would you convert a decimal number to its binary equivalent?",
+        "questions": [
+          {
+            "q": "What are the two digits used to represent numbers in the binary number system?",
+            "opts": [
+              "0 and 1",
+              "1 and 2",
+              "0 and 10",
+              "0 and any number"
+            ],
+            "ans": "A",
+            "explanation": "The binary number system represents numbers using only two digits: 0 and 1."
+          },
+          {
+            "q": "What is the binary representation of the decimal number 12?",
+            "opts": [
+              "1000",
+              "1100",
+              "1010",
+              "None of the above"
+            ],
+            "ans": "B",
+            "explanation": "The decimal number 12 can be represented in binary as 1100."
+          },
+          {
+            "q": "Why do humans find it more convenient to work with numbers in base 10 (decimal system) compared to binary?",
+            "opts": [
+              "Binary is more efficient for calculations.",
+              "Binary is more efficient for storage.",
+              "Humans are more familiar with the decimal system.",
+              "None of the above"
+            ],
+            "ans": "C",
+            "explanation": "Humans are more familiar with the decimal system."
+          },
+          {
+            "q": "What is the binary number system used for in computer networks?",
+            "opts": [
+              "To transmit data over the internet.",
+              "To convert decimal numbers to binary.",
+              "To represent numbers in a more efficient way.",
+              "None of the above"
+            ],
+            "ans": "C",
+            "explanation": "The binary number system is used to represent numbers in a more efficient way."
+          },
+          {
+            "q": "Which of the following is a correct statement about the binary number system?",
+            "opts": [
+              "It represents numbers using only one digit.",
+              "It represents numbers using only two digits.",
+              "It represents numbers using only three digits.",
+              "None of the above"
+            ],
+            "ans": "B",
+            "explanation": "The binary number system represents numbers using only two digits: 0 and 1."
+          }
+        ]
+      }
+    ]
+  }
+}

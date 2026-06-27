@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Introduction to Three Dimensional Geometry",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:28:19.127Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "In a city, a new shopping mall is being constructed. The mall has a main entrance that is 5 meters above the ground level. The floor of the mall is in the shape of a rectangular prism with dimensions 20 meters by 15 meters by 5 meters. The architect wants to install a flagpole on the roof of the mall. The flagpole should be 3 meters taller than the main entrance. What is the minimum distance from the main entrance to the point directly below the top of the flagpole?",
+        "questions": [
+          {
+            "q": "What is the shape of the floor of the mall?",
+            "opts": [
+              "Rectangular Prism",
+              "Cube",
+              "Sphere",
+              "Cylinder"
+            ],
+            "ans": "A",
+            "explanation": "The floor of the mall is in the shape of a rectangular prism because it has three dimensions."
+          },
+          {
+            "q": "What is the height of the flagpole from the ground level?",
+            "opts": [
+              "5 + 3 = 8 meters",
+              "5 - 3 = 2 meters",
+              "5 x 3 = 15 meters",
+              "5 / 3 = 1.67 meters"
+            ],
+            "ans": "A",
+            "explanation": "The height of the flagpole is 3 meters taller than the main entrance, which is 5 meters above the ground level."
+          },
+          {
+            "q": "What is the minimum distance from the main entrance to the point directly below the top of the flagpole?",
+            "opts": [
+              "5 meters",
+              "15 meters",
+              "20 meters",
+              "25 meters"
+            ],
+            "ans": "A",
+            "explanation": "The minimum distance is simply the height of the flagpole from the ground level."
+          },
+          {
+            "q": "What is the length of the diagonal of the rectangular base of the mall?",
+            "opts": [
+              "20 meters",
+              "15 meters",
+              "5 meters",
+              "5 sqrt(20^2 + 15^2) meters"
+            ],
+            "ans": "D",
+            "explanation": "To find the length of the diagonal, we need to use the Pythagorean theorem."
+          },
+          {
+            "q": "What is the volume of the rectangular prism representing the mall?",
+            "opts": [
+              "1000 cubic meters",
+              "750 cubic meters",
+              "500 cubic meters",
+              "3000 cubic meters"
+            ],
+            "ans": "C",
+            "explanation": "To find the volume, we multiply the length, width, and height of the rectangular prism."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A water tank is being constructed in a rectangular shape with dimensions 10 meters by 8 meters by 5 meters. The tank is to be filled with water up to a certain height. If the water level is 3 meters above the ground level, what is the volume of water in the tank?",
+        "questions": [
+          {
+            "q": "What is the shape of the water tank?",
+            "opts": [
+              "Cube",
+              "Rectangular Prism",
+              "Sphere",
+              "Cylinder"
+            ],
+            "ans": "B",
+            "explanation": "The water tank is in the shape of a rectangular prism because it has three dimensions."
+          },
+          {
+            "q": "What is the height of the water level above the ground level?",
+            "opts": [
+              "3 meters",
+              "5 meters",
+              "8 meters",
+              "10 meters"
+            ],
+            "ans": "A",
+            "explanation": "The height of the water level is 3 meters above the ground level."
+          },
+          {
+            "q": "What is the volume of water in the tank up to a height of 3 meters?",
+            "opts": [
+              "1200 cubic meters",
+              "800 cubic meters",
+              "600 cubic meters",
+              "400 cubic meters"
+            ],
+            "ans": "D",
+            "explanation": "To find the volume, we multiply the length, width, and height of the rectangular prism representing the water in the tank."
+          },
+          {
+            "q": "What is the area of the base of the rectangular prism representing the water in the tank?",
+            "opts": [
+              "10 x 8 = 80 square meters",
+              "10 x 5 = 50 square meters",
+              "8 x 5 = 40 square meters",
+              "10 x 8 = 80 x 5 = 400 square meters"
+            ],
+            "ans": "A",
+            "explanation": "To find the area of the base, we multiply the length and width of the rectangular prism."
+          },
+          {
+            "q": "What is the formula to find the volume of a rectangular prism?",
+            "opts": [
+              "V = l * w",
+              "V = l * w * h",
+              "V = h^3",
+              "V = l^2 * w^2"
+            ],
+            "ans": "C",
+            "explanation": "The formula to find the volume of a rectangular prism is V = l * w * h."
+          }
+        ]
+      }
+    ]
+  }
+}

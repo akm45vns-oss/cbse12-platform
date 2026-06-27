@@ -1,0 +1,80 @@
+{
+  "class": "11",
+  "subject": "Chemistry",
+  "chapter": "Some Basic Concepts of Chemistry",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:56:40.926Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Mole Concept",
+        "formula": "1 mole of any substance contains 6.022 x 10^23 particles (Avogadro's Number)",
+        "variables": "1 mole, particles",
+        "notes": ""
+      },
+      {
+        "name": "Mole Mass",
+        "formula": "Molar Mass = Mass of 1 mole of a substance",
+        "variables": "Molar Mass, mass of 1 mole",
+        "notes": "Molar mass of an element is the mass of 1 mole of that element in grams."
+      },
+      {
+        "name": "Avogadro's Law",
+        "formula": "V1/T1 = V2/T2 at constant pressure (or) V1/P1 = V2/P2 at constant temperature",
+        "variables": "V1, V2 (Volumes), T1, T2 (Temperatures), P1, P2 (Pressures)",
+        "units": "Volume in liters, Temperature in Kelvin, Pressure in atm",
+        "notes": "This law states that equal volumes of gases at the same temperature and pressure contain equal number of molecules."
+      },
+      {
+        "name": "Gay-Lussac's Law",
+        "formula": "P1/T1 = P2/T2 at constant volume (or) P1/V1 = P2/V2 at constant temperature",
+        "variables": "P1, P2 (Pressures), T1, T2 (Temperatures), V1, V2 (Volumes)",
+        "units": "Pressure in atm, Temperature in Kelvin, Volume in liters",
+        "notes": "This law states that the pressure of a given mass of an ideal gas at constant volume is directly proportional to its absolute temperature."
+      },
+      {
+        "name": "Boyle's Law",
+        "formula": "P1V1 = P2V2 at constant temperature",
+        "variables": "P1, P2 (Pressures), V1, V2 (Volumes)",
+        "units": "Pressure in atm, Volume in liters",
+        "notes": "This law states that the volume of a given mass of an ideal gas at constant temperature is inversely proportional to its pressure."
+      },
+      {
+        "name": "Ideal Gas Equation",
+        "formula": "PV = nRT",
+        "variables": "P (Pressure), V (Volume), n (Number of moles), R (Gas Constant), T (Temperature)",
+        "units": "Pressure in atm, Volume in liters, Number of moles, Temperature in Kelvin",
+        "notes": "This law relates the pressure and volume of an ideal gas at constant temperature."
+      },
+      {
+        "name": "Dalton's Law of Partial Pressures",
+        "formula": "P_total = P1 + P2 + ... + Pn",
+        "variables": "P_total (Total Pressure), P1, P2, ... , Pn (Partial Pressures of each gas)",
+        "units": "Pressure in atm",
+        "notes": "This law states that the total pressure exerted by a mixture of non-reacting gases is equal to the sum of the partial pressures of the individual gases."
+      },
+      {
+        "name": "Mole Fraction",
+        "formula": "X_A = n_A / (n_A + n_B + ... + n_n)",
+        "variables": "X_A (Mole Fraction of component A), n_A, n_B, ... , n_n (Number of moles of each component)",
+        "notes": "Mole fraction is the ratio of the number of moles of a component to the total number of moles in a mixture."
+      },
+      {
+        "name": "Raoult's Law",
+        "formula": "P_A = X_A * P°_A",
+        "variables": "P_A (Partial Pressure of component A), X_A (Mole Fraction of component A), P°_A (Vapor Pressure of pure component A)",
+        "units": "Pressure in atm",
+        "notes": "This law states that the partial pressure of a component in a solution is equal to the product of its mole fraction and the vapor pressure of the pure component."
+      },
+      {
+        "name": "Henry's Law",
+        "formula": "P_A = k_H * X_A",
+        "variables": "P_A (Partial Pressure of component A), X_A (Mole Fraction of component A), k_H (Henry's Law constant)",
+        "units": "Pressure in atm, Mole Fraction",
+        "notes": "This law states that the partial pressure of a gas in a solution is directly proportional to its mole fraction."
+      }
+    ]
+  }
+}

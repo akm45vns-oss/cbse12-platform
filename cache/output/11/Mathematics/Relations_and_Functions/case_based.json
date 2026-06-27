@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:13:05.472Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The Indian government has launched a new program to encourage people to adopt pets. As part of this program, a database is created to store information about the adopted pets. The database contains fields for the pet's name, age, species, and the name of the person who adopted it. The government wants to analyze the data to understand the preferences of people when it comes to adopting pets. A relation R is defined as R = {(name, age, species, adopted_by) | name is the name of the pet, age is the age of the pet, species is the type of pet, and adopted_by is the name of the person who adopted it}. Based on this relation, can you answer the following questions?",
+        "questions": [
+          {
+            "q": "What type of relation is R?",
+            "opts": [
+              "(A) Function",
+              "(B) Binary Relation",
+              "(C) Unary Relation",
+              "(D) None of the above"
+            ],
+            "ans": "A",
+            "explanation": "Since R is a relation between four variables, it is a function."
+          },
+          {
+            "q": "Is the relation R one-to-one?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Cannot be determined",
+              "(D) It depends on the values"
+            ],
+            "ans": "B",
+            "explanation": "Since the same person can adopt multiple pets, the relation R is not one-to-one."
+          },
+          {
+            "q": "Is the relation R many-to-one?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Cannot be determined",
+              "(D) It depends on the values"
+            ],
+            "ans": "A",
+            "explanation": "Since multiple pets can be adopted by the same person, the relation R is many-to-one."
+          },
+          {
+            "q": "Is the relation R one-to-many?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Cannot be determined",
+              "(D) It depends on the values"
+            ],
+            "ans": "A",
+            "explanation": "Since one person can adopt multiple pets, the relation R is one-to-many."
+          },
+          {
+            "q": "Is the relation R a function from the set of pet names to the set of ages?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Cannot be determined",
+              "(D) It depends on the values"
+            ],
+            "ans": "B",
+            "explanation": "Since one pet name can correspond to multiple ages, the relation R is not a function from the set of pet names to the set of ages."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A school has a relation R defined as R = {(roll_no, name, age, branch) | roll_no is the roll number of the student, name is the name of the student, age is the age of the student, and branch is the branch of the student}. The school wants to analyze the data to understand the distribution of students across different branches. Based on this relation, can you answer the following questions?",
+        "questions": [
+          {
+            "q": "Is the relation R a function from the set of roll numbers to the set of branch names?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Cannot be determined",
+              "(D) It depends on the values"
+            ],
+            "ans": "A",
+            "explanation": "Since one roll number can correspond to one branch name, the relation R is a function from the set of roll numbers to the set of branch names."
+          },
+          {
+            "q": "Is the relation R one-to-one?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Cannot be determined",
+              "(D) It depends on the values"
+            ],
+            "ans": "B",
+            "explanation": "Since multiple students can have the same roll number, the relation R is not one-to-one."
+          },
+          {
+            "q": "Is the relation R many-to-one?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Cannot be determined",
+              "(D) It depends on the values"
+            ],
+            "ans": "A",
+            "explanation": "Since multiple students can have the same roll number, the relation R is many-to-one."
+          },
+          {
+            "q": "Is the relation R one-to-many?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Cannot be determined",
+              "(D) It depends on the values"
+            ],
+            "ans": "A",
+            "explanation": "Since one roll number can correspond to multiple students, the relation R is one-to-many."
+          },
+          {
+            "q": "Is the relation R a function from the set of student names to the set of ages?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Cannot be determined",
+              "(D) It depends on the values"
+            ],
+            "ans": "B",
+            "explanation": "Since one student name can correspond to multiple ages, the relation R is not a function from the set of student names to the set of ages."
+          }
+        ]
+      }
+    ]
+  }
+}

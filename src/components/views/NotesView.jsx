@@ -3,7 +3,7 @@ import { useEffect, memo } from "react";
 import { startSession, endSession } from "../../utils/sessionTracking";
 
 export const NotesView = memo(function NotesView({
-  subject, chapter, notes, loading, loadMsg, loadEmoji, onStartQuiz, curriculumData, onRegenerateNotes
+  subject, chapter, notes, loading, loadMsg, loadEmoji, onStartQuiz, curriculumData, onRegenerateNotes, selectedClass
 }) {
   useEffect(() => {
     startSession(subject, chapter, "notes");
@@ -27,7 +27,7 @@ export const NotesView = memo(function NotesView({
               <span style={{
                 display: "inline-block", background: "#ede9fe", color: "#4f46e5",
                 fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999, letterSpacing: "0.06em",
-              }}>Class 12</span>
+              }}>Class {selectedClass || "12"}</span>
               <span style={{
                 display: "inline-block", background: "#dbeafe", color: "#2563eb",
                 fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999, letterSpacing: "0.06em",

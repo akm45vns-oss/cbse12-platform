@@ -1,0 +1,235 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Straight Lines",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T11:01:03.276Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If the line passing through points (5, -2) and (9, 3) has a slope of 2, is it possible?",
+        "opts": [
+          "(A) Yes, the line is uniquely defined",
+          "(B) No, the line is not uniquely defined",
+          "(C) Yes, the line is uniquely defined for a specific value of c",
+          "(D) No information is available"
+        ],
+        "ans": "B",
+        "explanation": "The slope of a line is given by (y2 - y1)/(x2 - x1). In this case, the slope is (3 - (-2))/(9 - 5) = 5/4, not 2.",
+        "difficulty": "easy",
+        "topic": "Slope of a Line"
+      },
+      {
+        "q": "What is the equation of the line passing through (1, 2) and parallel to the line 3x - 5y - 7 = 0?",
+        "opts": [
+          "(A) 3x - 5y + 1 = 0",
+          "(B) 3x - 5y - 1 = 0",
+          "(C) 3x - 5y - 15 = 0",
+          "(D) 5x + 3y - 2 = 0"
+        ],
+        "ans": "A",
+        "explanation": "The slope of the given line is 3/5, so the slope of the parallel line is also 3/5. Using point-slope form, we get 3(x - 1) - 5(y - 2) = 0, which simplifies to 3x - 5y + 1 = 0.",
+        "difficulty": "medium",
+        "topic": "Equations of Lines"
+      },
+      {
+        "q": "Find the point on the line 2x + 3y - 5 = 0 that is closest to the point (3, 4).",
+        "opts": [
+          "(A) (-1/2, 1)",
+          "(B) (1, -1)",
+          "(C) (3/2, 1/2)",
+          "(D) (5/3, 10/3)"
+        ],
+        "ans": "B",
+        "explanation": "The line is given in standard form, so we can use the formula for the distance from a point to a line. The closest point is where the perpendicular line from the given point intersects the given line.",
+        "difficulty": "hard",
+        "topic": "Distance of a Point from a Line"
+      },
+      {
+        "q": "What is the equation of the line passing through (-1, 2) and perpendicular to the line 3x - 5y + 7 = 0?",
+        "opts": [
+          "(A) 5x + 3y - 17 = 0",
+          "(B) 5x + 3y + 17 = 0",
+          "(C) 3x - 5y + 17 = 0",
+          "(D) 3x - 5y - 17 = 0"
+        ],
+        "ans": "A",
+        "explanation": "The slope of the given line is -3/5, so the slope of the perpendicular line is 5/3. Using point-slope form, we get 5(x + 1) + 3(y - 2) = 0, which simplifies to 5x + 3y + 17 = 0.",
+        "difficulty": "medium",
+        "topic": "Equations of Lines"
+      },
+      {
+        "q": "Find the distance between the lines 2x + 3y - 5 = 0 and 2x + 3y - 10 = 0.",
+        "opts": [
+          "(A) 1/√2",
+          "(B) √2",
+          "(C) 1/√5",
+          "(D) 1/2"
+        ],
+        "ans": "C",
+        "explanation": "The distance between two lines is the distance between their parallel lines. We can use the formula for the distance between two parallel lines.",
+        "difficulty": "hard",
+        "topic": "Distance Between Two Lines"
+      },
+      {
+        "q": "What is the equation of the line passing through (2, 1) and having a slope of -2?",
+        "opts": [
+          "(A) x + 2y - 5 = 0",
+          "(B) x - 2y + 5 = 0",
+          "(C) x + 2y + 5 = 0",
+          "(D) x - 2y - 5 = 0"
+        ],
+        "ans": "B",
+        "explanation": "Using point-slope form, we get y - 1 = -2(x - 2), which simplifies to x - 2y + 5 = 0.",
+        "difficulty": "easy",
+        "topic": "Equations of Lines"
+      },
+      {
+        "q": "Find the equation of the line passing through the origin and perpendicular to the line 2x - 5y + 7 = 0.",
+        "opts": [
+          "(A) 5x + 2y - 7 = 0",
+          "(B) 5x + 2y + 7 = 0",
+          "(C) 2x - 5y - 7 = 0",
+          "(D) 2x - 5y + 7 = 0"
+        ],
+        "ans": "B",
+        "explanation": "The slope of the given line is 2/5, so the slope of the perpendicular line is -5/2. Using point-slope form, we get 5x + 2(y - 0) = 0, which simplifies to 5x + 2y + 7 = 0.",
+        "difficulty": "medium",
+        "topic": "Equations of Lines"
+      },
+      {
+        "q": "Find the distance from the point (1, 2) to the line 3x - 5y + 7 = 0.",
+        "opts": [
+          "(A) 1/√14",
+          "(B) √14",
+          "(C) 1/√7",
+          "(D) 1/2"
+        ],
+        "ans": "A",
+        "explanation": "We can use the formula for the distance from a point to a line.",
+        "difficulty": "hard",
+        "topic": "Distance of a Point from a Line"
+      },
+      {
+        "q": "What is the equation of the line passing through (-2, 3) and parallel to the line 4x - 3y + 5 = 0?",
+        "opts": [
+          "(A) 4x - 3y - 11 = 0",
+          "(B) 4x - 3y + 11 = 0",
+          "(C) 3x - 4y + 5 = 0",
+          "(D) 3x - 4y - 5 = 0"
+        ],
+        "ans": "A",
+        "explanation": "The slope of the given line is 4/3, so the slope of the parallel line is also 4/3. Using point-slope form, we get 4(x + 2) - 3(y - 3) = 0, which simplifies to 4x - 3y - 11 = 0.",
+        "difficulty": "medium",
+        "topic": "Equations of Lines"
+      },
+      {
+        "q": "Find the equation of the line passing through (1, 2) and having a slope of 0.",
+        "opts": [
+          "(A) x - 2 = 0",
+          "(B) x + 2 = 0",
+          "(C) x - 2y + 4 = 0",
+          "(D) x + 2y - 4 = 0"
+        ],
+        "ans": "A",
+        "explanation": "Using point-slope form, we get y - 2 = 0(x - 1), which simplifies to x - 2 = 0.",
+        "difficulty": "easy",
+        "topic": "Equations of Lines"
+      },
+      {
+        "q": "Find the distance between the lines 3x - 2y + 5 = 0 and 3x - 2y - 5 = 0.",
+        "opts": [
+          "(A) 1/√13",
+          "(B) √13",
+          "(C) 1/√2",
+          "(D) 1/2"
+        ],
+        "ans": "B",
+        "explanation": "The distance between two lines is the distance between their parallel lines. We can use the formula for the distance between two parallel lines.",
+        "difficulty": "hard",
+        "topic": "Distance Between Two Lines"
+      },
+      {
+        "q": "What is the equation of the line passing through the origin and parallel to the line 5x - 3y - 7 = 0?",
+        "opts": [
+          "(A) 5x - 3y + 7 = 0",
+          "(B) 5x - 3y - 7 = 0",
+          "(C) 3x - 5y + 7 = 0",
+          "(D) 3x - 5y - 7 = 0"
+        ],
+        "ans": "A",
+        "explanation": "The slope of the given line is 5/3, so the slope of the parallel line is also 5/3. Using point-slope form, we get 5(x - 0) - 3(y - 0) = 0, which simplifies to 5x - 3y + 7 = 0.",
+        "difficulty": "medium",
+        "topic": "Equations of Lines"
+      },
+      {
+        "q": "Find the distance from the point (2, 1) to the line 4x - 3y + 7 = 0.",
+        "opts": [
+          "(A) 1/√13",
+          "(B) √13",
+          "(C) 1/√7",
+          "(D) 1/2"
+        ],
+        "ans": "A",
+        "explanation": "We can use the formula for the distance from a point to a line.",
+        "difficulty": "hard",
+        "topic": "Distance of a Point from a Line"
+      },
+      {
+        "q": "What is the equation of the line passing through (3, 1) and having a slope of 1?",
+        "opts": [
+          "(A) x - y + 2 = 0",
+          "(B) x - y - 2 = 0",
+          "(C) x - y + 1 = 0",
+          "(D) x - y - 1 = 0"
+        ],
+        "ans": "A",
+        "explanation": "Using point-slope form, we get y - 1 = 1(x - 3), which simplifies to x - y + 2 = 0.",
+        "difficulty": "easy",
+        "topic": "Equations of Lines"
+      },
+      {
+        "q": "Find the equation of the line passing through (1, -1) and perpendicular to the line 2x + 3y - 5 = 0.",
+        "opts": [
+          "(A) 3x + 2y - 7 = 0",
+          "(B) 3x + 2y + 7 = 0",
+          "(C) 2x - 3y + 7 = 0",
+          "(D) 2x - 3y - 7 = 0"
+        ],
+        "ans": "A",
+        "explanation": "The slope of the given line is -2/3, so the slope of the perpendicular line is 3/2. Using point-slope form, we get 3(x - 1) + 2(y + 1) = 0, which simplifies to 3x + 2y - 7 = 0.",
+        "difficulty": "medium",
+        "topic": "Equations of Lines"
+      },
+      {
+        "q": "Find the distance between the lines 4x - 3y - 5 = 0 and 4x - 3y + 5 = 0.",
+        "opts": [
+          "(A) 1/√13",
+          "(B) √13",
+          "(C) 1/√2",
+          "(D) 1/2"
+        ],
+        "ans": "B",
+        "explanation": "The distance between two lines is the distance between their parallel lines. We can use the formula for the distance between two parallel lines.",
+        "difficulty": "hard",
+        "topic": "Distance Between Two Lines"
+      },
+      {
+        "q": "What is the equation of the line passing through (0, 3) and having a slope of -1?",
+        "opts": [
+          "(A) x + y - 3 = 0",
+          "(B) x - y + 3 = 0",
+          "(C) x + y + 3 = 0",
+          "(D) x - y - 3 = 0"
+        ],
+        "ans": "B",
+        "explanation": "Using point-slope form, we get y - 3 = -1(x - 0), which simplifies to x - y + 3 = 0.",
+        "difficulty": "easy",
+        "topic": "Equations of Lines"
+      }
+    ],
+    "total": 17
+  }
+}

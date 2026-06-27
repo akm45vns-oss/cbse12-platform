@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Presentation of Data",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:33:59.172Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Median is better than mean for skewed distribution.",
+        "reason": "Reason (R): Mean is sensitive to extreme values, which can distort the average in skewed distributions.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "In skewed distributions, extreme values can greatly affect the mean, making median a better measure of central tendency."
+      },
+      {
+        "assertion": "Assertion (A): Mean is the best measure of central tendency.",
+        "reason": "Reason (R): Mean is sensitive to extreme values.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Mean is not the best measure of central tendency because it is sensitive to extreme values, which can distort the average."
+      },
+      {
+        "assertion": "Assertion (A): Mode is the best measure of central tendency.",
+        "reason": "Reason (R): Mode is the value that appears most frequently in a data set.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Mode is indeed the best measure of central tendency when the data is discrete and there are multiple peaks, but it's not always the case."
+      },
+      {
+        "assertion": "Assertion (A): Range is a measure of dispersion.",
+        "reason": "Reason (R): Range is the difference between the highest and lowest values in a data set.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Range indeed measures the spread of the data and is the difference between the highest and lowest values."
+      },
+      {
+        "assertion": "Assertion (A): Variance is always greater than or equal to the range.",
+        "reason": "Reason (R): Range measures the difference between the highest and lowest values, while variance measures the average of the squared differences from the mean.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "Variance is not always greater than or equal to the range; in fact, variance can be much smaller than the range."
+      },
+      {
+        "assertion": "Assertion (A): Standard deviation measures the spread of the data.",
+        "reason": "Reason (R): Standard deviation is the square root of the variance.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Standard deviation indeed measures the spread of the data and is the square root of the variance."
+      },
+      {
+        "assertion": "Assertion (A): Coefficient of variation is a measure of relative dispersion.",
+        "reason": "Reason (R): Coefficient of variation is the ratio of the standard deviation to the mean.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Coefficient of variation indeed measures relative dispersion and is the ratio of the standard deviation to the mean."
+      },
+      {
+        "assertion": "Assertion (A): Quartiles are measures of central tendency.",
+        "reason": "Reason (R): Quartiles divide the data into four equal parts.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Quartiles are actually measures of dispersion, not central tendency, as they divide the data into four equal parts."
+      },
+      {
+        "assertion": "Assertion (A): Deciles are measures of central tendency.",
+        "reason": "Reason (R): Deciles divide the data into ten equal parts.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Deciles are actually measures of dispersion, not central tendency, as they divide the data into ten equal parts."
+      }
+    ],
+    "total": 9
+  }
+}

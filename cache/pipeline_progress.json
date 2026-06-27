@@ -1,0 +1,177 @@
+{
+  "updated_at": "2026-06-27T05:53:56.227Z",
+  "elapsed_seconds": 8,
+  "rate_per_second": 356.25,
+  "queue": {
+    "completed": 2850,
+    "pending": 0,
+    "inFlight": 0,
+    "failed": 0,
+    "retrying": 0,
+    "byPriority": {
+      "notes": 0,
+      "mcqs": 0,
+      "revision": 0,
+      "longAnswers": 0
+    }
+  },
+  "workers": [
+    {
+      "workerId": "Worker-Physics",
+      "processed": 1,
+      "skipped": 1,
+      "failed": 0,
+      "running": false
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "processed": 1,
+      "skipped": 1,
+      "failed": 0,
+      "running": false
+    },
+    {
+      "workerId": "Worker-Maths",
+      "processed": 2,
+      "skipped": 0,
+      "failed": 0,
+      "running": false
+    },
+    {
+      "workerId": "Worker-Biology",
+      "processed": 1,
+      "skipped": 0,
+      "failed": 0,
+      "running": false
+    },
+    {
+      "workerId": "Worker-Other",
+      "processed": 1,
+      "skipped": 0,
+      "failed": 0,
+      "running": false
+    }
+  ],
+  "recent_events": [
+    {
+      "workerId": "Worker-Physics",
+      "status": "finished",
+      "message": "Worker finished — 1 done, 1 skipped, 0 failed",
+      "timestamp": "2026-06-27T05:53:56.226Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "info",
+      "message": "Queue empty — worker done",
+      "timestamp": "2026-06-27T05:53:56.226Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "finished",
+      "message": "Worker finished — 1 done, 0 skipped, 0 failed",
+      "timestamp": "2026-06-27T05:53:56.196Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "info",
+      "message": "Queue empty — worker done",
+      "timestamp": "2026-06-27T05:53:56.196Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "finished",
+      "message": "Worker finished — 1 done, 0 skipped, 0 failed",
+      "timestamp": "2026-06-27T05:53:55.975Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "info",
+      "message": "Queue empty — worker done",
+      "timestamp": "2026-06-27T05:53:55.975Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "finished",
+      "message": "Worker finished — 1 done, 1 skipped, 0 failed",
+      "timestamp": "2026-06-27T05:53:55.677Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "info",
+      "message": "Queue empty — worker done",
+      "timestamp": "2026-06-27T05:53:55.677Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "finished",
+      "message": "Worker finished — 2 done, 0 skipped, 0 failed",
+      "timestamp": "2026-06-27T05:53:55.149Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "info",
+      "message": "Queue empty — worker done",
+      "timestamp": "2026-06-27T05:53:55.149Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "done",
+      "message": "✅ History/Nomadic Empires/important_concepts",
+      "timestamp": "2026-06-27T05:53:55.149Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "done",
+      "message": "✅ History/An Empire Across Three Continents/important_concepts",
+      "timestamp": "2026-06-27T05:53:52.207Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "done",
+      "message": "✅ Economics/Indian Economy 1950–1990/important_concepts",
+      "timestamp": "2026-06-27T05:53:52.190Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "done",
+      "message": "✅ History/From the Beginning of Time/important_concepts",
+      "timestamp": "2026-06-27T05:53:51.950Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating important_concepts for Nomadic Empires (History)",
+      "timestamp": "2026-06-27T05:53:51.845Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "done",
+      "message": "✅ History/The Central Islamic Lands/important_concepts",
+      "timestamp": "2026-06-27T05:53:51.656Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "done",
+      "message": "✅ Mathematics/Introduction to Three Dimensional Geometry/important_concepts",
+      "timestamp": "2026-06-27T05:53:51.654Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating important_concepts for The Central Islamic Lands (History)",
+      "timestamp": "2026-06-27T05:53:48.848Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating important_concepts for Indian Economy 1950–1990 (Economics)",
+      "timestamp": "2026-06-27T05:53:48.841Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating important_concepts for Introduction to Three Dimensional Geometry (Mathematics)",
+      "timestamp": "2026-06-27T05:53:48.836Z"
+    }
+  ]
+}

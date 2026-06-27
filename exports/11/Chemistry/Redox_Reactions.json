@@ -1,0 +1,1122 @@
+{
+  "class": "11",
+  "subject": "Chemistry",
+  "chapter": "Redox Reactions",
+  "exported_at": "2026-06-27T05:55:03.495Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:06:01.297+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 9,
+        "questions": [
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Oxidation is a process where electrons are released from the substance.",
+            "assertion": "Assertion (A): Oxidation involves loss of electrons.",
+            "explanation": "Oxidation indeed involves the loss of electrons, and the reason provided accurately explains this concept."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Oxidation can involve gain or loss of oxygen or hydrogen.",
+            "assertion": "Assertion (A): Oxidation always involves a loss of oxygen.",
+            "explanation": "The assertion is false as oxidation can also involve the gain of oxygen, and the reason provided is correct."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Reduction is a process where electrons are added to the substance.",
+            "assertion": "Assertion (A): Reduction involves gain of electrons.",
+            "explanation": "Reduction indeed involves the gain of electrons, and the reason provided accurately explains this concept."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Oxidation involves loss of electrons and reduction involves gain of electrons.",
+            "assertion": "Assertion (A): Oxidation and reduction reactions always occur simultaneously.",
+            "explanation": "The assertion is false as oxidation and reduction reactions can occur separately, and the reason provided is correct."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Oxidation number is a hypothetical charge assigned to an atom in a substance.",
+            "assertion": "Assertion (A): Oxidation number of an element in a compound is equal to its actual charge.",
+            "explanation": "The assertion is false as oxidation number is a hypothetical charge, and the reason provided is correct."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Oxidation number of oxygen is -2 in most of its compounds.",
+            "assertion": "Assertion (A): Oxidation number of oxygen is always -2.",
+            "explanation": "The assertion is false as oxidation number of oxygen can be -1 in peroxides, and the reason provided is correct."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Oxidation number of hydrogen is +1 in most of its compounds.",
+            "assertion": "Assertion (A): Oxidation number of hydrogen is always +1.",
+            "explanation": "The assertion is false as oxidation number of hydrogen can be -1 in hydrides, and the reason provided is correct."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): This method involves separating the redox reaction into oxidation and reduction half-reactions.",
+            "assertion": "Assertion (A): Oxidation and reduction reactions can be balanced by using the half-reaction method.",
+            "explanation": "Oxidation and reduction reactions can be balanced using the half-reaction method, and the reason provided accurately explains this concept."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Redox reactions involve the transfer of electrons between substances.",
+            "assertion": "Assertion (A): Redox reactions involve only the change in oxidation number of an element.",
+            "explanation": "The assertion is false as redox reactions involve the transfer of electrons, and the reason provided is correct."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:06:00.706+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "The process of rusting of iron is a classic example of a redox reaction. When iron reacts with oxygen in the presence of moisture, it forms iron oxide, also known as rust. This reaction is spontaneous and cannot be reversed. In the presence of oxygen and water, iron undergoes oxidation, resulting in the formation of iron oxide. The rusting of iron is a common problem in many industries, including construction and automotive. To prevent rusting, various methods are employed, including the application of a protective coating or the use of galvanized iron.",
+            "questions": [
+              {
+                "q": "What is the product formed when iron reacts with oxygen in the presence of moisture?",
+                "ans": "A",
+                "opts": [
+                  "Iron oxide",
+                  "(B) Iron hydroxide",
+                  "(C) Iron carbonate",
+                  "(D) Iron nitride"
+                ],
+                "explanation": "Iron oxide, also known as rust, is formed when iron reacts with oxygen in the presence of moisture."
+              },
+              {
+                "q": "What is the process called when iron reacts with oxygen in the presence of moisture?",
+                "ans": "A",
+                "opts": [
+                  "Redox reaction",
+                  "(B) Combination reaction",
+                  "(C) Decomposition reaction",
+                  "(D) Displacement reaction"
+                ],
+                "explanation": "The process of iron reacting with oxygen in the presence of moisture is an example of a redox reaction."
+              },
+              {
+                "q": "Why is rusting of iron a problem in many industries?",
+                "ans": "D",
+                "opts": [
+                  "It is a spontaneous reaction",
+                  "(B) It cannot be reversed",
+                  "(C) It weakens the structure of iron",
+                  "(D) All of the above"
+                ],
+                "explanation": "Rusting of iron is a problem in many industries because it is a spontaneous reaction, cannot be reversed, and weakens the structure of iron."
+              },
+              {
+                "q": "What is the role of moisture in the rusting of iron?",
+                "ans": "B",
+                "opts": [
+                  "It is a catalyst",
+                  "(B) It is a necessary condition",
+                  "(C) It is a byproduct",
+                  "(D) It has no role"
+                ],
+                "explanation": "Moisture is a necessary condition for the rusting of iron to occur."
+              },
+              {
+                "q": "What is a common method used to prevent rusting of iron?",
+                "ans": "C",
+                "opts": [
+                  "Using galvanized iron",
+                  "(B) Applying a protective coating",
+                  "(C) Both of the above",
+                  "(D) Neither of the above"
+                ],
+                "explanation": "Both using galvanized iron and applying a protective coating are common methods used to prevent rusting of iron."
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "The process of combustion of gasoline in a car engine is a complex redox reaction. When gasoline is ignited in the presence of oxygen, it undergoes oxidation, resulting in the formation of carbon dioxide and water. The combustion reaction is highly exothermic, releasing a large amount of heat energy. This energy is then used to power the car. In addition to carbon dioxide and water, the combustion reaction also produces nitrogen oxides, which are harmful pollutants.",
+            "questions": [
+              {
+                "q": "What is the product formed when gasoline is ignited in the presence of oxygen?",
+                "ans": "A",
+                "opts": [
+                  "Carbon dioxide and water",
+                  "(B) Carbon dioxide and nitrogen",
+                  "(C) Water and nitrogen oxides",
+                  "(D) Carbon monoxide and water"
+                ],
+                "explanation": "Carbon dioxide and water are the products formed when gasoline is ignited in the presence of oxygen."
+              },
+              {
+                "q": "What is the nature of the combustion reaction of gasoline?",
+                "ans": "B",
+                "opts": [
+                  "Endothermic",
+                  "(B) Exothermic",
+                  "(C) Redox reaction",
+                  "(D) All of the above"
+                ],
+                "explanation": "The combustion reaction of gasoline is highly exothermic, releasing a large amount of heat energy."
+              },
+              {
+                "q": "What is the role of oxygen in the combustion of gasoline?",
+                "ans": "B",
+                "opts": [
+                  "It is a catalyst",
+                  "(B) It is a necessary condition",
+                  "(C) It is a byproduct",
+                  "(D) It has no role"
+                ],
+                "explanation": "Oxygen is a necessary condition for the combustion of gasoline to occur."
+              },
+              {
+                "q": "What are the harmful pollutants produced during the combustion of gasoline?",
+                "ans": "B",
+                "opts": [
+                  "Carbon dioxide and water",
+                  "(B) Carbon dioxide and nitrogen oxides",
+                  "(C) Water and nitrogen oxides",
+                  "(D) Carbon monoxide and nitrogen"
+                ],
+                "explanation": "Nitrogen oxides are harmful pollutants produced during the combustion of gasoline."
+              },
+              {
+                "q": "What is the purpose of the heat energy released during the combustion reaction?",
+                "ans": "A",
+                "opts": [
+                  "To power the car",
+                  "(B) To cool the engine",
+                  "(C) To ignite the gasoline",
+                  "(D) To produce nitrogen oxides"
+                ],
+                "explanation": "The heat energy released during the combustion reaction is used to power the car."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:34:51.604+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Redox Reactions\n## 📌 Chapter Overview\n\nRedox reactions are a fundamental concept in chemistry that deals with the transfer of electrons between two species. These reactions are essential in understanding various chemical processes, including combustion, rusting, and respiration. In this chapter, we will delve into the world of redox reactions, exploring the key concepts, theories, and principles that govern these complex chemical processes.\n\nRedox reactions involve the simultaneous occurrence of oxidation and reduction processes. Oxidation is a process in which an atom, molecule, or ion loses one or more electrons, resulting in an increase in oxidation state. Reduction, on the other hand, is a process in which an atom, molecule, or ion gains one or more electrons, resulting in a decrease in oxidation state. The transfer of electrons between two species is what makes redox reactions possible, and it is this transfer that is critical in understanding the chemical changes that occur during these reactions.\n\nThroughout this chapter, we will explore the concepts of oxidation numbers, half-equations, and the balancing of redox reactions. We will also examine various types of redox reactions, including acid-base redox reactions, disproportionation reactions, and redox reactions involving complex ions.\n\n## 🎯 Learning Objectives\n\n* Understand the concept of oxidation numbers and their importance in redox reactions\n* Learn to write half-equations for oxidation and reduction processes\n* Balance redox reactions using the half-equation method\n* Identify and write equations for acid-base redox reactions\n* Understand the concept of disproportionation reactions and their significance\n* Learn to balance redox reactions involving complex ions\n* Apply the principles of redox reactions to real-world problems\n\n## 🔑 Key Concepts & Definitions\n\n* **Redox reaction**: A chemical reaction in which one or more electrons are transferred from one species to another.\n* **Oxidation**: A process in which an atom, molecule, or ion loses one or more electrons, resulting in an increase in oxidation state.\n* **Reduction**: A process in which an atom, molecule, or ion gains one or more electrons, resulting in a decrease in oxidation state.\n* **Oxidation number**: A number assigned to an atom in a compound to represent its oxidation state.\n* **Half-equation**: An equation that represents the oxidation or reduction process in a redox reaction.\n* **Balancing redox reactions**: The process of writing a balanced equation for a redox reaction.\n\n## 📐 Core Theory & Principles\n\nRedox reactions involve the transfer of electrons between two species. This transfer is driven by the difference in electronegativity between the species involved in the reaction. The more electronegative species tends to attract electrons towards itself, resulting in the transfer of electrons from the less electronegative species.\n\nThe key to understanding redox reactions lies in the concept of oxidation numbers. Oxidation numbers are assigned to atoms in a compound based on their position in the compound and the type of bond they form. The oxidation number of an atom in a compound is a measure of its oxidation state.\n\nTo write half-equations, we need to identify the oxidation and reduction processes in a redox reaction. We can do this by looking at the change in oxidation number of each atom in the reaction. The half-equation for oxidation is written by removing the electrons from the atom, while the half-equation for reduction is written by adding electrons to the atom.\n\n## 🧮 Important Formulas & Laws\n\n* **Oxidation number**:\n\t+ The sum of the oxidation numbers of all atoms in a compound is equal to the charge on the compound.\n\t+ The oxidation number of an atom in a compound is equal to the sum of the oxidation numbers of the atoms it is bonded to, multiplied by the number of bonds.\n* **Half-equation**:\n\t+ Oxidation half-equation: 2H2O → O2 + 4H+ + 4e-\n\t+ Reduction half-equation: O2 + 4H+ + 4e- → 2H2O\n* **Balancing redox reactions**:\n\t+ Oxidation number method: Identify the oxidation and reduction processes, and then balance the equation using the half-equation method.\n\t+ Half-equation method: Write the half-equations for oxidation and reduction, and then balance the equation by adding electrons to both half-equations.\n\n## 🔬 Detailed Explanations\n\n### Oxidation Numbers\n\nOxidation numbers are a crucial concept in understanding redox reactions. An oxidation number is a number assigned to an atom in a compound to represent its oxidation state. The oxidation number of an atom in a compound is a measure of its ability to lose or gain electrons.\n\nTo assign oxidation numbers, we need to consider the position of the atom in the compound and the type of bond it forms. The oxidation number of an atom in a compound is equal to the sum of the oxidation numbers of the atoms it is bonded to, multiplied by the number of bonds.\n\nFor example, in the compound NaCl, the oxidation number of Na is +1, and the oxidation number of Cl is -1. This is because Na is a Group 1 metal, which tends to lose one electron to form a +1 ion, while Cl is a Group 17 nonmetal, which tends to gain one electron to form a -1 ion.\n\n### Half-Equations\n\nHalf-equations are a key concept in understanding redox reactions. A half-equation is an equation that represents the oxidation or reduction process in a redox reaction.\n\nTo write half-equations, we need to identify the oxidation and reduction processes in a redox reaction. We can do this by looking at the change in oxidation number of each atom in the reaction. The half-equation for oxidation is written by removing the electrons from the atom, while the half-equation for reduction is written by adding electrons to the atom.\n\nFor example, in the reaction 2H2 + O2 → 2H2O, the half-equations are:\n\nOxidation half-equation: 2H2 → 2H+ + 2e-\nReduction half-equation: O2 + 4H+ + 4e- → 2H2O\n\n### Balancing Redox Reactions\n\nBalancing redox reactions is a crucial step in understanding redox reactions. To balance a redox reaction, we need to use the half-equation method.\n\nThe half-equation method involves writing the half-equations for oxidation and reduction, and then balancing the equation by adding electrons to both half-equations. We can do this by looking at the number of electrons transferred in each half-equation and adding the appropriate number of electrons to the other half-equation.\n\nFor example, in the reaction 2H2 + O2 → 2H2O, we can balance the equation using the half-equation method as follows:\n\nOxidation half-equation: 2H2 → 2H+ + 2e-\nReduction half-equation: O2 + 4H+ + 4e- → 2H2O\n\nTo balance the equation, we add electrons to both half-equations:\n\n2H2 + O2 + 4H+ + 4e- → 2H2O + 4H+\n\nWe can then combine the two half-equations to get the balanced equation:\n\n2H2 + O2 → 2H2O\n\n## 🖼️ Diagrams & Visual Concepts\n\nDiagrams are an effective way to visualize redox reactions. A diagram can help us understand the oxidation and reduction processes in a redox reaction.\n\nFor example, in the reaction 2H2 + O2 → 2H2O, we can draw a diagram to show the oxidation and reduction processes:\n\nOxidation: 2H2 → 2H+ + 2e-\nReduction: O2 + 4H+ + 4e- → 2H2O\n\nIn this diagram, the blue arrows represent the oxidation process, while the red arrows represent the reduction process.\n\n## ⭐ Most Important Points (Exam Focus)\n\n* Oxidation numbers are a crucial concept in understanding redox reactions.\n* Half-equations are a key concept in understanding redox reactions.\n* Balancing redox reactions involves using the half-equation method.\n* Oxidation numbers can be assigned using the following rules:\n\t+ Metals tend to lose electrons to form a positive ion.\n\t+ Nonmetals tend to gain electrons to form a negative ion.\n\t+ Oxygen has an oxidation number of -2.\n\t+ Hydrogen has an oxidation number of +1 when combined with nonmetals and -1 when combined with metals.\n* Redox reactions can be balanced using the half-equation method.\n* The half-equation method involves writing the half-equations for oxidation and reduction, and then balancing the equation by adding electrons to both half-equations.\n\n## ❌ Common Mistakes to Avoid\n\n* Assigning incorrect oxidation numbers to atoms in a compound.\n* Writing incorrect half-equations for oxidation and reduction processes.\n* Failing to balance redox reactions using the half-equation method.\n* Not considering the change in oxidation number of each atom in a redox reaction.\n* Not using the correct rules to assign oxidation numbers to atoms in a compound.\n\n## 💡 Real-World Applications\n\n* Redox reactions are essential in understanding various chemical processes, including combustion, rusting, and respiration.\n* Redox reactions are used in the production of various chemicals, including chlorine, sodium hydroxide, and hydrogen peroxide.\n* Redox reactions are used in the treatment of wastewater and in the removal of pollutants from the environment.\n* Redox reactions are used in the production of fuels, including gasoline and diesel.\n\n## 🔁 Quick Revision Summary\n\n* Oxidation numbers are a crucial concept in understanding redox reactions.\n* Half-equations are a key concept in understanding redox reactions.\n* Balancing redox reactions involves using the half-equation method.\n* Oxidation numbers can be assigned using the following rules:\n\t+ Metals tend to lose electrons to form a positive ion.\n\t+ Nonmetals tend to gain electrons to form a negative ion.\n\t+ Oxygen has an oxidation number of -2.\n\t+ Hydrogen has an oxidation number of +1 when combined with nonmetals and -1 when combined with metals.\n* Redox reactions can be balanced using the half-equation method.\n* The half-equation method involves writing the half-equations for oxidation and reduction, and then balancing the equation by adding electrons to both half-equations.\n* Diagrams are an effective way to visualize redox reactions.\n* Redox reactions are essential in understanding various chemical processes, including combustion, rusting, and respiration.\n* Redox reactions are used in the production of various chemicals, including chlorine, sodium hydroxide, and hydrogen peroxide.\n* Redox reactions are used in the treatment of wastewater and in the removal of pollutants from the environment.\n* Redox reactions are used in the production of fuels, including gasoline and diesel.\n\nHere is the quick revision summary in 20 bullet points:\n\n* Oxidation numbers are a crucial concept in understanding redox reactions.\n* Half-equations are a key concept in understanding redox reactions.\n* Balancing redox reactions involves using the half-equation method.\n* Oxidation numbers can be assigned using the following rules:\n\t+ Metals tend to lose electrons to form a positive ion.\n\t+ Nonmetals tend to gain electrons to form a negative ion.\n* Oxygen has an oxidation number of -2.\n* Hydrogen has an oxidation number of +1 when combined with nonmetals and -1 when combined with metals.\n* Redox reactions can be balanced using the half-equation method.\n* The half-equation method involves writing the half-equations for oxidation and reduction, and then balancing the equation by adding electrons to both half-equations.\n* Diagrams are an effective way to visualize redox reactions.\n* Redox reactions are essential in understanding various chemical processes, including combustion, rusting, and respiration.\n* Redox reactions are used in the production of various chemicals, including chlorine, sodium hydroxide, and hydrogen peroxide.\n* Redox reactions are used in the treatment of wastewater and in the removal of pollutants from the environment.\n* Redox reactions are used in the production of fuels, including gasoline and diesel.\n* Oxidation numbers can be used to predict the products of redox reactions.\n* Half-equations can be used to predict the products of redox reactions.\n* Balancing redox reactions is essential in understanding the products of redox reactions.\n* Redox reactions can be used to predict the reactivity of metals and nonmetals.\n* Redox reactions are used in the production of various materials, including steel and alloys.\n* Redox reactions are used in the treatment of various diseases, including cancer and Alzheimer's disease."
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T08:01:19.387+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [],
+        "exam_frequency": "medium",
+        "difficulty_score": 5,
+        "overall_difficulty": "medium"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:24:52.009+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Study tip 1",
+          "Study tip 2"
+        ],
+        "total_minutes": 120,
+        "revision_minutes": 20,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 30,
+        "sessions_recommended": 3,
+        "first_reading_minutes": 45,
+        "practice_questions_minutes": 25
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:58:36.583+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Content",
+            "notes": "",
+            "units": "",
+            "formula": "Here's a complete formula sheet for CBSE Class 11 Chemistry - Redox Reactions in JSON format:\n\n[\n  {\n    \"name\": \"Oxidation Number (O.N.) of an element in a compound\",\n    \"formula\": \"O.N. of element = Number of valence electrons of the element\",\n    \"variables\": \"valence electrons\",\n    \"units\": \"\",\n    \"notes\": \"Used to determine the oxidation state of an element in a compound\"\n  },\n  {\n    \"name\": \"Oxidation Number (O.N.) of an element in a polyatomic ion\",\n    \"formula\": \"O.N. of element = Charge on the polyatomic ion + Number of valence electrons of the element\",\n    \"variables\": \"charge on the polyatomic ion, valence electrons\",\n    \"units\": \"\",\n    \"notes\": \"Used to determine the oxidation state of an element in a polyatomic ion\"\n  },\n  {\n    \"name\": \"Rules for assigning Oxidation Numbers\",\n    \"formula\": \"O.N. of F, O, N always -ve; O.N. of H always +1; O.N. of Group 1 elements always +1; O.N. of Group 2 elements always +2\",\n    \"variables\": \"F, O, N, H, Group 1 elements, Group 2 elements\",\n    \"units\": \"\",\n    \"notes\": \"Used to assign oxidation numbers to elements in a compound or polyatomic ion\"\n  },\n  {\n    \"name\": \"Oxidation Number (O.N.) of an element in a compound with polyatomic ions\",\n    \"formula\": \"O.N. of element in compound = O.N. of element in polyatomic ion + Charge on polyatomic ion\",\n    \"variables\": \"O.N. of element in polyatomic ion, charge on polyatomic ion\",\n    \"units\": \"\",\n    \"notes\": \"Used to determine the oxidation state of an element in a compound with polyatomic ions\"\n  },\n  {\n    \"name\": \"Redox Reaction (Balanced Equation)\",\n    \"formula\": \"Oxidation: LHS → RHS; Reduction: LHS → RHS\",\n    \"variables\": \"Oxidation: LHS = Left Hand Side; RHS = Right Hand Side; Reduction: LHS = Left Hand Side; RHS = Right Hand Side\",\n    \"units\": \"\",\n    \"notes\": \"Used to identify and balance redox reactions\"\n  },\n  {\n    \"name\": \"Half-Reaction Method for Balancing Redox Reactions\",\n    \"formula\": \"Separate the reaction into oxidation and reduction half-reactions; Balance each half-reaction separately; Check if the number of electrons lost in oxidation equals the number of electrons gained in reduction\",\n    \"variables\": \"oxidation half-reaction, reduction half-reaction\",\n    \"units\": \"\",\n    \"notes\": \"Used to balance redox reactions using the half-reaction method\"\n  },\n  {\n    \"name\": \"Ion-Electron Method for Balancing Redox Reactions\",\n    \"formula\": \"Oxidation: LHS → RHS; Reduction: LHS → RHS; Balance the ion and electron half-reactions separately; Check if the number of electrons lost in oxidation equals the number of electrons gained in reduction\",\n    \"variables\": \"ion half-reaction, electron half-reaction\",\n    \"units\": \"\",\n    \"notes\": \"Used to balance redox reactions using the ion-electron method\"\n  }\n]\n\nNote: The provided JSON array contains key statements and laws related to redox reactions, including the rules for assigning oxidation numbers, and the methods for balancing redox reactions.",
+            "variables": ""
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:58:38.434+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "Redox Reactions",
+            "importance": "Understanding redox reactions is crucial for solving complex chemical reactions and predicting the outcomes of various chemical processes.",
+            "explanation": "Redox reactions involve the transfer of electrons from one species to another, resulting in a change in oxidation state. Oxidation is the loss of electrons, while reduction is the gain of electrons.",
+            "related_topics": [
+              "Oxidation and Reduction",
+              "Electrochemistry"
+            ]
+          },
+          {
+            "concept": "Oxidation Numbers",
+            "importance": "Oxidation numbers are essential for balancing redox reactions and predicting the products of chemical reactions.",
+            "explanation": "Oxidation numbers are the charges on atoms within a molecule or ion, and are used to determine the oxidation state of an atom. They help in identifying the oxidizing and reducing agents in a reaction.",
+            "related_topics": [
+              "Redox Reactions",
+              "Acid-Base Chemistry"
+            ]
+          },
+          {
+            "concept": "Oxidation and Reduction",
+            "importance": "Understanding oxidation and reduction is crucial for identifying the oxidizing and reducing agents in a reaction.",
+            "explanation": "Oxidation is the loss of electrons, resulting in an increase in oxidation state, while reduction is the gain of electrons, resulting in a decrease in oxidation state.",
+            "related_topics": [
+              "Redox Reactions",
+              "Electrochemistry"
+            ]
+          },
+          {
+            "concept": "Balancing Redox Reactions",
+            "importance": "Balancing redox reactions is essential for determining the products of chemical reactions and predicting the outcomes of various chemical processes.",
+            "explanation": "Redox reactions can be balanced by separating the reaction into two half-reactions: oxidation and reduction. The number of electrons lost in the oxidation half-reaction must equal the number of electrons gained in the reduction half-reaction.",
+            "related_topics": [
+              "Redox Reactions",
+              "Chemical Equilibrium"
+            ]
+          },
+          {
+            "concept": "Electrochemistry",
+            "importance": "Electrochemistry is crucial for understanding the principles of batteries, fuel cells, and electrolysis.",
+            "explanation": "Electrochemistry involves the relationship between chemical reactions and electrical energy. It is the study of the reactions that occur at the interface between an electrode and an electrolyte.",
+            "related_topics": [
+              "Redox Reactions",
+              "Acid-Base Chemistry"
+            ]
+          },
+          {
+            "concept": "Acid-Base Chemistry",
+            "importance": "Understanding acid-base chemistry is crucial for predicting the products of chemical reactions and identifying the acid and base in a reaction.",
+            "explanation": "Acid-base chemistry involves the reaction between acids and bases, resulting in the formation of salts and water.",
+            "related_topics": [
+              "Redox Reactions",
+              "Electrochemistry"
+            ]
+          },
+          {
+            "concept": "Combustion Reactions",
+            "importance": "Understanding combustion reactions is crucial for predicting the products of chemical reactions and identifying the fuel and oxidizer in a reaction.",
+            "explanation": "Combustion reactions involve the reaction between a fuel and an oxidizer, resulting in the release of heat and light.",
+            "related_topics": [
+              "Redox Reactions",
+              "Chemical Energy"
+            ]
+          },
+          {
+            "concept": "Disproportionation Reaction",
+            "importance": "Understanding disproportionation reactions is crucial for predicting the products of chemical reactions and identifying the substance that undergoes both oxidation and reduction.",
+            "explanation": "Disproportionation reactions involve the reaction of a single substance that is both oxidized and reduced.",
+            "related_topics": [
+              "Redox Reactions",
+              "Oxidation and Reduction"
+            ]
+          },
+          {
+            "concept": "Oxidation-Reduction Potential",
+            "importance": "Understanding ORP is crucial for predicting the products of chemical reactions and identifying the oxidizing and reducing agents in a reaction.",
+            "explanation": "Oxidation-reduction potential (ORP) is a measure of the tendency of a species to gain or lose electrons. It is used to predict the direction of a redox reaction.",
+            "related_topics": [
+              "Redox Reactions",
+              "Electrochemistry"
+            ]
+          },
+          {
+            "concept": "Standard Reduction Potential",
+            "importance": "Understanding SRP is crucial for predicting the products of chemical reactions and identifying the reducing agent in a reaction.",
+            "explanation": "Standard reduction potential (SRP) is a measure of the tendency of a species to gain electrons. It is used to predict the direction of a redox reaction.",
+            "related_topics": [
+              "Redox Reactions",
+              "Oxidation-Reduction Potential"
+            ]
+          },
+          {
+            "concept": "Redox Titrations",
+            "importance": "Understanding redox titrations is crucial for determining the concentration of a substance and identifying the oxidizing and reducing agents in a reaction.",
+            "explanation": "Redox titrations involve the reaction between a strong oxidizing agent and a weak reducing agent. The reaction is used to determine the concentration of the reducing agent.",
+            "related_topics": [
+              "Redox Reactions",
+              "Chemical Equilibrium"
+            ]
+          },
+          {
+            "concept": "Electrochemical Cells",
+            "importance": "Understanding electrochemical cells is crucial for predicting the products of chemical reactions and identifying the oxidizing and reducing agents in a reaction.",
+            "explanation": "Electrochemical cells involve the transfer of electrons between two electrodes, resulting in a chemical reaction.",
+            "related_topics": [
+              "Redox Reactions",
+              "Electrochemistry"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:58:38.84+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "Redox Reaction",
+            "example": "The reaction between zinc metal and copper sulfate is a redox reaction where zinc gets oxidized and copper gets reduced.",
+            "definition": "A redox reaction is a chemical reaction in which there is a transfer of electrons from one species to another. It involves the oxidation of one species (loss of electrons) and the reduction of another species (gain of electrons)."
+          },
+          {
+            "term": "Oxidation",
+            "example": "Zinc metal losing electrons to form zinc ions is an example of oxidation.",
+            "definition": "Oxidation is the process of losing one or more electrons by a species, resulting in an increase in oxidation state. It is often accompanied by an increase in valency."
+          },
+          {
+            "term": "Reduction",
+            "example": "Copper ions gaining electrons to form copper metal is an example of reduction.",
+            "definition": "Reduction is the process of gaining one or more electrons by a species, resulting in a decrease in oxidation state. It is often accompanied by a decrease in valency."
+          },
+          {
+            "term": "Oxidizing Agent",
+            "example": "Chlorine gas is an oxidizing agent as it accepts electrons to form chloride ions.",
+            "definition": "An oxidizing agent is a species that causes oxidation of another species by accepting electrons. It is often in the form of a base or an acid."
+          },
+          {
+            "term": "Reducing Agent",
+            "example": "Zinc metal is a reducing agent as it donates electrons to form zinc ions.",
+            "definition": "A reducing agent is a species that causes reduction of another species by donating electrons. It is often in the form of a base or an acid."
+          },
+          {
+            "term": "Oxidation State",
+            "example": "In the compound NaCl, sodium has an oxidation state of +1 and chlorine has an oxidation state of -1.",
+            "definition": "The oxidation state is a measure of the number of electrons lost or gained by an atom in a compound. It is denoted by a Roman numeral."
+          },
+          {
+            "term": "Half-Reaction",
+            "example": "The half-reaction for the oxidation of zinc metal is Zn → Zn2+ + 2e-",
+            "definition": "A half-reaction is a redox reaction in which only one species is involved and there is a transfer of electrons. It can be either oxidation or reduction."
+          },
+          {
+            "term": "Balanced Redox Equation",
+            "example": "The balanced redox equation for the reaction between zinc metal and copper sulfate is Zn + CuSO4 → ZnSO4 + Cu",
+            "definition": "A balanced redox equation is a chemical equation in which the number of electrons lost by one species is equal to the number of electrons gained by another species."
+          },
+          {
+            "term": "Electron Transfer",
+            "example": "In the reaction between zinc metal and copper ions, electrons are transferred from zinc to copper ions.",
+            "definition": "Electron transfer is the process of transferring electrons from one species to another. It is a key feature of redox reactions."
+          },
+          {
+            "term": "Oxidation-Reduction Potential",
+            "example": "The oxidation-reduction potential of copper ions is higher than that of zinc metal, indicating that copper ions are more likely to be reduced.",
+            "definition": "Oxidation-reduction potential is a measure of the tendency of a species to accept or donate electrons. It is denoted by a standard electrode potential."
+          },
+          {
+            "term": "Standard Electrode Potential",
+            "example": "The standard electrode potential of the copper-copper ion couple is +0.34 V.",
+            "definition": "Standard electrode potential is a measure of the oxidation-reduction potential of a species under standard conditions. It is denoted by a potential difference."
+          },
+          {
+            "term": "Electrochemical Cell",
+            "example": "A Daniell cell is an electrochemical cell that consists of a copper electrode and a zinc electrode connected by a salt bridge.",
+            "definition": "An electrochemical cell is a device that converts chemical energy into electrical energy or vice versa. It consists of two half-cells connected by a salt bridge."
+          },
+          {
+            "term": "Salt Bridge",
+            "example": "A salt bridge is used to connect the copper electrode and the zinc electrode in a Daniell cell.",
+            "definition": "A salt bridge is a device that connects two half-cells in an electrochemical cell and allows ions to flow between them."
+          },
+          {
+            "term": "Conductor",
+            "example": "Copper is a good conductor and is often used as a conductor in electrochemical cells.",
+            "definition": "A conductor is a substance that allows electrons to flow through it. Metals are typically good conductors."
+          },
+          {
+            "term": "Non-Conductor",
+            "example": "Glass is a non-conductor and is often used as an insulator in electrochemical cells.",
+            "definition": "A non-conductor is a substance that does not allow electrons to flow through it. Insulators are typically non-conductors."
+          },
+          {
+            "term": "Cathode",
+            "example": "In a Daniell cell, the copper electrode is the cathode where reduction occurs.",
+            "definition": "A cathode is the electrode where reduction occurs in an electrochemical cell. It is the site where electrons are gained."
+          },
+          {
+            "term": "Anode",
+            "example": "In a Daniell cell, the zinc electrode is the anode where oxidation occurs.",
+            "definition": "An anode is the electrode where oxidation occurs in an electrochemical cell. It is the site where electrons are lost."
+          },
+          {
+            "term": "Electrolyte",
+            "example": "Sodium chloride is an electrolyte and is often used as an electrolyte in electrochemical cells.",
+            "definition": "An electrolyte is a substance that conducts electricity when dissolved in a solvent. It is often used in electrochemical cells."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:24:52.466+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Students will be able to balance redox reactions using the oxidation number method and half-equation method.",
+            "Students will be able to identify and separate the oxidation and reduction half-equations in a given redox reaction.",
+            "Students will be able to apply knowledge of redox reactions to predict the products of a reaction and explain the outcome of a reaction."
+          ],
+          "analyze": [
+            "Students will be able to analyze and compare the different methods of balancing redox reactions.",
+            "Students will be able to evaluate the role of redox reactions in understanding the chemical behavior of elements and compounds.",
+            "Students will be able to design and propose a redox reaction to achieve a desired chemical change."
+          ],
+          "remember": [
+            "Students will be able to recall the definition and types of redox reactions.",
+            "Students will be able to identify the oxidizing and reducing agents in a given chemical reaction.",
+            "Students will be able to list the characteristics of redox reactions."
+          ],
+          "understand": [
+            "Students will be able to explain the oxidation number concept and its role in redox reactions.",
+            "Students will be able to describe the different methods of balancing redox reactions, such as oxidation number method and half-equation method.",
+            "Students will be able to explain the importance of redox reactions in various natural and industrial processes."
+          ]
+        },
+        "ncert_objectives": [
+          "To understand the concept of redox reactions and their importance in chemistry.",
+          "To learn the different methods of balancing redox reactions and apply them to various chemical reactions.",
+          "To explain the characteristics of redox reactions and their role in various natural and industrial processes."
+        ],
+        "board_exam_objectives": [
+          "Students will be able to balance redox reactions using the oxidation number method and half-equation method.",
+          "Students will be able to identify and explain the oxidation and reduction processes in a given redox reaction.",
+          "Students will be able to apply knowledge of redox reactions to predict the products of a reaction and explain the outcome of a reaction."
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:05:56.718+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "a. Write a balanced redox equation for the reaction between MnO4- and I- in acidic medium. <br> b. Identify the oxidising and reducing agents in the above reaction.",
+            "marks": 5,
+            "topic": "Redox Reactions",
+            "answer": "a. MnO4- + 8H+ + 5I- → Mn2+ + 4H2O + 5I2 <br> b. Oxidising agent: MnO4- <br> Reducing agent: I- <br> In the given redox reaction, MnO4- is the oxidising agent as it causes the reduction of I- to I2. On the other hand, I- acts as the reducing agent as it causes the oxidation of MnO4- to Mn2+.",
+            "marking_scheme": [
+              "Balanced redox equation (1 mark)",
+              "Identification of oxidising and reducing agents (1 mark)",
+              "Correct identification of oxidising agent (1 mark)",
+              "Correct identification of reducing agent (1 mark)",
+              "Explanation (1 mark)"
+            ]
+          },
+          {
+            "q": "a. Explain the difference between strong and weak oxidising agents. <br> b. Give two examples each of strong and weak oxidising agents.",
+            "marks": 5,
+            "topic": "Oxidising and Reducing Agents",
+            "answer": "a. Strong oxidising agents are those that can bring about the oxidation of all other substances that they come into contact with. On the other hand, weak oxidising agents are those that can bring about the oxidation of only certain substances. <br> b. Examples of strong oxidising agents: <br> i. KMnO4 <br> ii. K2Cr2O7 <br> Examples of weak oxidising agents: <br> i. Cu2+ <br> ii. Fe3+",
+            "marking_scheme": [
+              "Explanation of difference between strong and weak oxidising agents (1 mark)",
+              "Examples of strong oxidising agents (1 mark)",
+              "Examples of weak oxidising agents (1 mark)",
+              "Correct identification of strong oxidising agents (1 mark)",
+              "Correct identification of weak oxidising agents (1 mark)"
+            ]
+          },
+          {
+            "q": "a. What is the difference between oxidation and reduction reactions? <br> b. Give one example each of oxidation and reduction reactions.",
+            "marks": 5,
+            "topic": "Oxidation and Reduction",
+            "answer": "a. Oxidation is the process in which a substance loses one or more electrons, resulting in an increase in its oxidation number. Reduction, on the other hand, is the process in which a substance gains one or more electrons, resulting in a decrease in its oxidation number. <br> b. Example of oxidation reaction: <br> 4Na + O2 → 2Na2O <br> Example of reduction reaction: <br> Cu2+ + 2e- → Cu <br> In the given oxidation reaction, oxygen causes the loss of electrons from sodium, resulting in the formation of sodium oxide. In the given reduction reaction, copper causes the gain of electrons, resulting in the formation of copper metal.",
+            "marking_scheme": [
+              "Explanation of difference between oxidation and reduction reactions (1 mark)",
+              "Example of oxidation reaction (1 mark)",
+              "Example of reduction reaction (1 mark)",
+              "Correct identification of oxidation reaction (1 mark)",
+              "Correct identification of reduction reaction (1 mark)"
+            ]
+          },
+          {
+            "q": "a. What is the role of oxygen in oxidation reactions? <br> b. Explain the difference between combustion and respiration.",
+            "marks": 5,
+            "topic": "Oxidation and Reduction",
+            "answer": "a. Oxygen plays a crucial role in oxidation reactions as it is the most common oxidising agent. In most oxidation reactions, oxygen causes the loss of electrons from the reactant, resulting in the formation of an oxide or a peroxide. <br> b. Combustion is a type of oxidation reaction that involves the burning of a substance in the presence of oxygen, resulting in the release of heat and light. Respiration, on the other hand, is the process by which living organisms convert glucose into energy in the presence of oxygen. While both combustion and respiration involve the oxidation of glucose, combustion is a non-biological process, whereas respiration is a biological process.",
+            "marking_scheme": [
+              "Role of oxygen in oxidation reactions (1 mark)",
+              "Difference between combustion and respiration (1 mark)",
+              "Explanation of combustion (1 mark)",
+              "Explanation of respiration (1 mark)",
+              "Correct identification of combustion and respiration (1 mark)"
+            ]
+          },
+          {
+            "q": "a. What is the difference between a redox reaction and a non-redox reaction? <br> b. Give one example each of a redox reaction and a non-redox reaction.",
+            "marks": 5,
+            "topic": "Redox Reactions",
+            "answer": "a. A redox reaction is a type of chemical reaction in which one or more electrons are transferred from one substance to another, resulting in a change in oxidation number. A non-redox reaction, on the other hand, is a type of chemical reaction in which no electrons are transferred, resulting in no change in oxidation number. <br> b. Example of redox reaction: <br> 2Fe + CuSO4 → Fe2(SO4)3 + Cu <br> Example of non-redox reaction: <br> 2H2O → 2H2 + O2 <br> In the given redox reaction, iron causes the loss of electrons to copper, resulting in the formation of iron(III) sulfate and copper metal. In the given non-redox reaction, water is split into hydrogen and oxygen, with no transfer of electrons.",
+            "marking_scheme": [
+              "Difference between redox and non-redox reactions (1 mark)",
+              "Example of redox reaction (1 mark)",
+              "Example of non-redox reaction (1 mark)",
+              "Correct identification of redox reaction (1 mark)",
+              "Correct identification of non-redox reaction (1 mark)"
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:06:04.109+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 19,
+        "questions": [
+          {
+            "q": "In the reaction 2Na (s) + Cl2 (g) → 2NaCl (s), the oxidation state of sodium changes from",
+            "ans": "C",
+            "opts": [
+              "(A) +1 to +1",
+              "(B) +1 to 0",
+              "(C) 0 to +1",
+              "(D) -1 to 0"
+            ],
+            "topic": "Redox Reactions - Oxidation",
+            "difficulty": "easy",
+            "explanation": "Sodium is oxidized from 0 (in metallic state) to +1 (in ionic state)."
+          },
+          {
+            "q": "The oxidation number of chlorine in HClO4 is",
+            "ans": "D",
+            "opts": [
+              "(A) +1",
+              "(B) +3",
+              "(C) +5",
+              "(D) +7"
+            ],
+            "topic": "Redox Reactions - Oxidation Numbers",
+            "difficulty": "easy",
+            "explanation": "Chlorine has a higher oxidation state in HClO4 due to the presence of four oxygen atoms."
+          },
+          {
+            "q": "Which of the following is an example of disproportionation reaction?",
+            "ans": "A",
+            "opts": [
+              "(A) 2H2O2 → 2H2O + O2",
+              "(B) 2Na (s) + Cl2 (g) → 2NaCl (s)",
+              "(C) 2H2 + O2 → 2H2O",
+              "(D) All of the above"
+            ],
+            "topic": "Redox Reactions - Disproportionation",
+            "difficulty": "easy",
+            "explanation": "Disproportionation reaction involves the oxidation and reduction of the same element."
+          },
+          {
+            "q": "What is the type of reaction that involves the transfer of electrons between two substances?",
+            "ans": "C",
+            "opts": [
+              "(A) Combination reaction",
+              "(B) Displacement reaction",
+              "(C) Redox reaction",
+              "(D) Neutralization reaction"
+            ],
+            "topic": "Redox Reactions - Definition",
+            "difficulty": "easy",
+            "explanation": "Redox reactions involve the transfer of electrons, which leads to a change in oxidation states."
+          },
+          {
+            "q": "The oxidation state of manganese in KMnO4 is",
+            "ans": "C",
+            "opts": [
+              "(A) +1",
+              "(B) +3",
+              "(C) +6",
+              "(D) +7"
+            ],
+            "topic": "Redox Reactions - Oxidation Numbers",
+            "difficulty": "easy",
+            "explanation": "Manganese has a higher oxidation state in KMnO4 due to the presence of four oxygen atoms."
+          },
+          {
+            "q": "Identify the oxidizing agent in the reaction 2MnSO4 + K2Cr2O7 → K2SO4 + 2Cr2(SO4)3 + Mn2(SO4)3?",
+            "ans": "B",
+            "opts": [
+              "(A) MnSO4",
+              "(B) K2Cr2O7",
+              "(C) Cr2(SO4)3",
+              "(D) Mn2(SO4)3"
+            ],
+            "topic": "Redox Reactions - Oxidizing and Reducing Agents",
+            "difficulty": "easy",
+            "explanation": "Oxidizing agents cause oxidation."
+          },
+          {
+            "q": "Which of the following is an example of a redox reaction with oxygen?",
+            "ans": "C",
+            "opts": [
+              "(A) 2H2 + O2 → 2H2O",
+              "(B) 2Na (s) + Cl2 (g) → 2NaCl (s)",
+              "(C) Ca (s) + 2H2O → Ca(OH)2 + H2",
+              "(D) All of the above"
+            ],
+            "topic": "Redox Reactions - Oxidation",
+            "difficulty": "easy",
+            "explanation": "Redox reactions with oxygen involve oxidation."
+          },
+          {
+            "q": "In the reaction 2KMnO4 + 3H2SO4 → K2SO4 + 2MnSO4 + 3H2O + 5[O] , how many electrons are transferred?",
+            "ans": "A",
+            "opts": [
+              "(A) 10",
+              "(B) 5",
+              "(C) 3",
+              "(D) 15"
+            ],
+            "topic": "Redox Reactions - Electron Transfer",
+            "difficulty": "medium",
+            "explanation": "The number of electrons transferred is equal to the number of oxygen atoms produced."
+          },
+          {
+            "q": "What is the change in oxidation state of chlorine in the reaction 2Na (s) + Cl2 (g) → 2NaCl (s)?",
+            "ans": "B",
+            "opts": [
+              "(A) 0",
+              "(B) +1",
+              "(C) -1",
+              "(D) +2"
+            ],
+            "topic": "Redox Reactions - Oxidation",
+            "difficulty": "medium",
+            "explanation": "Chlorine is oxidized from 0 (in elemental state) to +1 (in ionic state)."
+          },
+          {
+            "q": "Identify the reducing agent in the reaction Al (s) + CuSO4 (aq) → Al2(SO4)3 (aq) + Cu (s)?",
+            "ans": "A",
+            "opts": [
+              "(A) Al (s)",
+              "(B) CuSO4 (aq)",
+              "(C) Al2(SO4)3 (aq)",
+              "(D) Cu (s)"
+            ],
+            "topic": "Redox Reactions - Oxidizing and Reducing Agents",
+            "difficulty": "medium",
+            "explanation": "Reducing agents cause reduction."
+          },
+          {
+            "q": "The oxidation number of manganese in Mn2O7 is",
+            "ans": "D",
+            "opts": [
+              "(A) +3",
+              "(B) +5",
+              "(C) +6",
+              "(D) +7"
+            ],
+            "topic": "Redox Reactions - Oxidation Numbers",
+            "difficulty": "medium",
+            "explanation": "Manganese has a higher oxidation state in Mn2O7 due to the presence of seven oxygen atoms."
+          },
+          {
+            "q": "What is the difference between oxidation and reduction in redox reactions?",
+            "ans": "B",
+            "opts": [
+              "(A) Oxidation involves gain of electrons, while reduction involves loss of electrons",
+              "(B) Oxidation involves loss of electrons, while reduction involves gain of electrons",
+              "(C) Oxidation involves gain of protons, while reduction involves loss of protons",
+              "(D) Oxidation involves loss of protons, while reduction involves gain of protons"
+            ],
+            "topic": "Redox Reactions - Oxidation and Reduction",
+            "difficulty": "medium",
+            "explanation": "Oxidation involves loss of electrons, while reduction involves gain of electrons."
+          },
+          {
+            "q": "The oxidation number of copper in CuSO4 is",
+            "ans": "B",
+            "opts": [
+              "(A) +1",
+              "(B) +2",
+              "(C) +3",
+              "(D) +4"
+            ],
+            "topic": "Redox Reactions - Oxidation Numbers",
+            "difficulty": "medium",
+            "explanation": "Copper has an oxidation state of +2 in CuSO4."
+          },
+          {
+            "q": "Identify the oxidizing agent in the reaction 2KMnO4 + 3H2SO4 → K2SO4 + 2MnSO4 + 3H2O + 5[O]?",
+            "ans": "A",
+            "opts": [
+              "(A) KMnO4",
+              "(B) H2SO4",
+              "(C) K2SO4",
+              "(D) MnSO4"
+            ],
+            "topic": "Redox Reactions - Oxidizing and Reducing Agents",
+            "difficulty": "medium",
+            "explanation": "Oxidizing agents cause oxidation."
+          },
+          {
+            "q": "What is the type of reaction that involves the transfer of electrons between two substances, resulting in a change in oxidation states?",
+            "ans": "C",
+            "opts": [
+              "(A) Combination reaction",
+              "(B) Displacement reaction",
+              "(C) Redox reaction",
+              "(D) Neutralization reaction"
+            ],
+            "topic": "Redox Reactions - Definition",
+            "difficulty": "medium",
+            "explanation": "Redox reactions involve the transfer of electrons, which leads to a change in oxidation states."
+          },
+          {
+            "q": "The oxidation number of chlorine in HClO is",
+            "ans": "B",
+            "opts": [
+              "(A) +1",
+              "(B) +3",
+              "(C) +5",
+              "(D) +7"
+            ],
+            "topic": "Redox Reactions - Oxidation Numbers",
+            "difficulty": "medium",
+            "explanation": "Chlorine has a higher oxidation state in HClO due to the presence of oxygen."
+          },
+          {
+            "q": "What is the change in oxidation state of iron in the reaction Fe2O3 + 3CO → 2Fe + 3CO2?",
+            "ans": "A",
+            "opts": [
+              "(A) +3 to 0",
+              "(B) +3 to +2",
+              "(C) +2 to 0",
+              "(D) 0 to +3"
+            ],
+            "topic": "Redox Reactions - Oxidation",
+            "difficulty": "hard",
+            "explanation": "Iron is reduced from +3 (in Fe2O3) to 0 (in Fe)."
+          },
+          {
+            "q": "Identify the reducing agent in the reaction 2KMnO4 + 5SO2 + H2O → K2SO4 + 2MnSO4 + 2H2SO4 + 2H2O?",
+            "ans": "B",
+            "opts": [
+              "(A) KMnO4",
+              "(B) SO2",
+              "(C) H2O",
+              "(D) K2SO4"
+            ],
+            "topic": "Redox Reactions - Oxidizing and Reducing Agents",
+            "difficulty": "hard",
+            "explanation": "Reducing agents cause reduction."
+          },
+          {
+            "q": "The oxidation number of manganese in KMnO4 is related to?",
+            "ans": "A",
+            "opts": [
+              "(A) The number of oxygen atoms",
+              "(B) The number of potassium atoms",
+              "(C) The number of manganese atoms",
+              "(D) The number of protons in manganese"
+            ],
+            "topic": "Redox Reactions - Oxidation Numbers",
+            "difficulty": "hard",
+            "explanation": "The oxidation number of manganese in KMnO4 is related to the number of oxygen atoms."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:58:49.289+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Redox Reactions\n\n## Chapter at a Glance\nRedox reactions, also known as oxidation-reduction reactions, involve the transfer of electrons from one species to another. This chapter focuses on understanding the concept of redox reactions, balancing redox reactions, and identifying oxidation and reduction processes. The chapter emphasizes the importance of electron transfer in chemical reactions and its role in various biological and industrial processes. Understanding redox reactions is crucial in fields like chemistry, physics, and biology.\n\n## Section-wise Summary\n\n### 1. Introduction to Redox Reactions\nRedox reactions involve the transfer of electrons from a species that loses electrons (oxidized) to a species that gains electrons (reduced). The loss of electrons is known as oxidation, while the gain of electrons is known as reduction. Oxidation and reduction processes occur simultaneously in a redox reaction.\n\n### 2. Oxidation and Reduction Reactions\nOxidation reactions involve the loss of electrons, resulting in an increase in oxidation state. Reduction reactions involve the gain of electrons, resulting in a decrease in oxidation state. Oxidation and reduction reactions are the two complementary processes that occur in a redox reaction.\n\n### 3. Oxidation Numbers\nOxidation numbers are assigned to atoms in a compound to indicate the loss or gain of electrons. The sum of oxidation numbers in a neutral compound is zero. Oxidation numbers help in identifying oxidation and reduction processes in a redox reaction.\n\n### 4. Balancing Redox Reactions\nBalancing redox reactions involves balancing the number of electrons lost and gained. This is achieved by adding H+ ions and H2O molecules to the reaction equation. The half-reaction method is commonly used to balance redox reactions.\n\n### 5. Types of Redox Reactions\nRedox reactions can be classified into two types: synthesis and decomposition reactions. Synthesis reactions involve the combination of two species to form a new compound, while decomposition reactions involve the breakdown of a compound into simpler substances.\n\n### 6. Redox Reactions in Titration\nTitration is a method used to determine the concentration of a substance in a solution. Redox reactions play a crucial role in titration reactions, where the oxidizing or reducing agent is titrated against a standard solution.\n\n## Important NCERT Exercises Insight\nKey concepts tested in NCERT exercises include:\n\n- Identifying oxidation and reduction processes in a redox reaction\n- Assigning oxidation numbers to atoms in a compound\n- Balancing redox reactions using the half-reaction method\n- Classifying redox reactions into synthesis and decomposition reactions\n- Understanding the role of redox reactions in titration reactions\n\nKey points to remember:\n\n- Oxidation is the loss of electrons, resulting in an increase in oxidation state.\n- Reduction is the gain of electrons, resulting in a decrease in oxidation state.\n- Oxidation numbers are assigned to atoms in a compound to indicate the loss or gain of electrons.\n- Balancing redox reactions involves balancing the number of electrons lost and gained.\n\n## NCERT Exemplar Focus\nNCERT Exemplar includes additional topics such as:\n\n- Redox reactions in biological systems, such as cellular respiration and photosynthesis\n- Redox reactions in industrial processes, such as the production of fertilizers and explosives\n- Advanced topics in redox reactions, such as electrochemistry and electrolysis\n\n## Board Exam Relevance\nRedox reactions are an important topic in the Class 11 Chemistry board exam, with a weightage of around 10-15 marks. Frequently asked topics include:\n\n- Balancing redox reactions using the half-reaction method\n- Identifying oxidation and reduction processes in a redox reaction\n- Assigning oxidation numbers to atoms in a compound\n- Understanding the role of redox reactions in titration reactions\n\nTo score well in the board exam, it is essential to practice solving problems and exercises related to redox reactions."
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:05:56.225+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "Zn(s) reacts with Cu2+ ions to give Zn2+ ions and Cu(s). The reaction is a classic example of:",
+            "type": "Short Answer",
+            "marks": 3,
+            "answer": "Redox reaction",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "Which of the following is a characteristic of a spontaneous redox reaction?",
+            "type": "MCQ",
+            "marks": 1,
+            "answer": "Ecell is positive",
+            "difficulty": "easy",
+            "year_pattern": "2017-style"
+          },
+          {
+            "q": "Write a balanced chemical equation for the reaction between MnO2 and HCl.",
+            "type": "Short Answer",
+            "marks": 4,
+            "answer": "2MnO2 + 4HCl -> 2MnCl2 + 2H2O + Cl2",
+            "difficulty": "medium",
+            "year_pattern": "2016-style"
+          },
+          {
+            "q": "What is the maximum number of electrons gained by one mole of O2 during its reduction in acidic medium?",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "4",
+            "difficulty": "easy",
+            "year_pattern": "2015-style"
+          },
+          {
+            "q": "Which of the following is an example of a redox reaction that occurs in biological system?",
+            "type": "MCQ",
+            "marks": 1,
+            "answer": "Krebs cycle",
+            "difficulty": "easy",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "Balance the following redox reaction using half-reaction method: Cr2O72- + H+ + e- → Cr3+ + H2O.",
+            "type": "Long Answer",
+            "marks": 6,
+            "answer": "Cr2O72- + 14H+ + 6e- → 2Cr3+ + 7H2O",
+            "difficulty": "hard",
+            "year_pattern": "2014-style"
+          },
+          {
+            "q": "Which of the following is a characteristic of a non-spontaneous redox reaction?",
+            "type": "MCQ",
+            "marks": 1,
+            "answer": "Ecell is negative",
+            "difficulty": "easy",
+            "year_pattern": "2013-style"
+          },
+          {
+            "q": "Write the balanced chemical equation for the reaction between Fe2O3 and Al.",
+            "type": "Short Answer",
+            "marks": 4,
+            "answer": "2Al + Fe2O3 -> 2Fe + Al2O3",
+            "difficulty": "medium",
+            "year_pattern": "2012-style"
+          },
+          {
+            "q": "What is the oxidation state of Mn in KMnO4?",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "+7",
+            "difficulty": "easy",
+            "year_pattern": "2011-style"
+          },
+          {
+            "q": "Identify the oxidising and reducing agents in the reaction: Cu2+ + Zn → Cu + Zn2+.",
+            "type": "Short Answer",
+            "marks": 3,
+            "answer": "Oxidizing agent: Cu2+, Reducing agent: Zn",
+            "difficulty": "easy",
+            "year_pattern": "2010-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:06:00.518+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "What is the difference between oxidation and reduction reactions?",
+            "marks": 3,
+            "topic": "Introduction to Redox Reactions",
+            "answer": "Oxidation is the process where an atom, molecule, or ion loses one or more electrons, resulting in an increase in oxidation state. Reduction is the process where an atom, molecule, or ion gains one or more electrons, resulting in a decrease in oxidation state.",
+            "key_points": [
+              "Definition of oxidation",
+              "Definition of reduction",
+              "Key difference between oxidation and reduction"
+            ]
+          },
+          {
+            "q": "What are the types of redox reactions?",
+            "marks": 2,
+            "topic": "Types of Redox Reactions",
+            "answer": "Redox reactions can be classified as combination, decomposition, displacement, and combustion reactions.",
+            "key_points": [
+              "Combination reaction",
+              "Decomposition reaction",
+              "Displacement reaction"
+            ]
+          },
+          {
+            "q": "What is the role of oxidation number in identifying redox reactions?",
+            "marks": 2,
+            "topic": "Role of Oxidation Number in Redox Reactions",
+            "answer": "Oxidation number helps in identifying the change in oxidation state of an element during a redox reaction.",
+            "key_points": [
+              "Definition of oxidation number",
+              "Role of oxidation number in redox reactions"
+            ]
+          },
+          {
+            "q": "What is the difference between spontaneous and non-spontaneous redox reactions?",
+            "marks": 3,
+            "topic": "Spontaneity of Redox Reactions",
+            "answer": "Spontaneous redox reactions occur on their own, releasing energy, whereas non-spontaneous redox reactions require external energy to proceed.",
+            "key_points": [
+              "Definition of spontaneous redox reaction",
+              "Definition of non-spontaneous redox reaction",
+              "Key difference between spontaneous and non-spontaneous redox reactions"
+            ]
+          },
+          {
+            "q": "Explain the concept of EMF (Electromotive Force) in redox reactions.",
+            "marks": 3,
+            "topic": "Electrochemical Cells and EMF",
+            "answer": "EMF is the energy required to drive a redox reaction at a particular temperature. It is measured in volts and helps in identifying the spontaneity of a redox reaction.",
+            "key_points": [
+              "Definition of EMF",
+              "Role of EMF in redox reactions",
+              "Relationship between EMF and spontaneity"
+            ]
+          },
+          {
+            "q": "What are the factors that affect the spontaneity of redox reactions?",
+            "marks": 2,
+            "topic": "Factors Affecting Spontaneity",
+            "answer": "The spontaneity of redox reactions is affected by temperature, pressure, and the presence of catalysts.",
+            "key_points": [
+              "Effect of temperature",
+              "Effect of pressure",
+              "Role of catalysts"
+            ]
+          },
+          {
+            "q": "Explain the concept of oxidation-reduction potential (ORP).",
+            "marks": 3,
+            "topic": "Redox Titrations and ORP",
+            "answer": "ORP is a measure of the tendency of a substance to gain or lose electrons. It is expressed in volts and helps in identifying the spontaneity of a redox reaction.",
+            "key_points": [
+              "Definition of ORP",
+              "Role of ORP in redox reactions",
+              "Relationship between ORP and spontaneity"
+            ]
+          },
+          {
+            "q": "What is the difference between a galvanic cell and an electrolytic cell?",
+            "marks": 3,
+            "topic": "Galvanic and Electrolytic Cells",
+            "answer": "A galvanic cell is a spontaneous redox reaction that generates electricity, whereas an electrolytic cell is a non-spontaneous redox reaction that requires external energy to proceed.",
+            "key_points": [
+              "Definition of galvanic cell",
+              "Definition of electrolytic cell",
+              "Key difference between galvanic and electrolytic cells"
+            ]
+          },
+          {
+            "q": "Explain the concept of cell potential and its relationship with redox reactions.",
+            "marks": 3,
+            "topic": "Cell Potential and Redox Reactions",
+            "answer": "Cell potential is the energy required to drive a redox reaction at a particular temperature. It is measured in volts and helps in identifying the spontaneity of a redox reaction.",
+            "key_points": [
+              "Definition of cell potential",
+              "Role of cell potential in redox reactions",
+              "Relationship between cell potential and spontaneity"
+            ]
+          },
+          {
+            "q": "What is the significance of redox reactions in everyday life?",
+            "marks": 3,
+            "topic": "Significance of Redox Reactions",
+            "answer": "Redox reactions play a crucial role in various everyday processes such as respiration, combustion of fuels, and corrosion of metals.",
+            "key_points": [
+              "Examples of redox reactions in everyday life",
+              "Importance of redox reactions in various industries"
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:58:36.588+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Redox Reactions — Quick Revision Notes\n\n## ⚡ Key Points\n\n* Oxidation: Loss of electrons, increase in oxidation state, addition of oxygen or removal of hydrogen.\n* Reduction: Gain of electrons, decrease in oxidation state, removal of oxygen or addition of hydrogen.\n* Redox reaction: Both oxidation and reduction occur simultaneously.\n* Oxidation number: A number assigned to an atom in a compound to represent its oxidation state.\n* Oxidation number rules: \n  - Free elements have an oxidation number of zero.\n  - Monatomic ions have an oxidation number equal to their charge.\n  - Oxygen has an oxidation number of -2 (except in peroxides where it is -1).\n  - Hydrogen has an oxidation number of +1 (except in hydrides where it is -1).\n  - Fluorine has an oxidation number of -1.\n* Oxidation states of elements in compounds can be determined using the following rules:\n  - Add and subtract electrons to balance the charges.\n  - Assign the lowest possible oxidation number to each element.\n* Oxidising agent: Substance that causes oxidation (gains electrons).\n* Reducing agent: Substance that causes reduction (loses electrons).\n* Oxidation-reduction reactions are also known as redox reactions.\n* Redox reactions involve the transfer of electrons.\n* Oxidation-reduction reactions can be balanced using half-reactions.\n* Half-reactions: Oxidation and reduction parts of a redox reaction separated.\n* Balancing half-reactions: \n  - Add electrons to balance the charges.\n  - Add H+ ions to balance the charges.\n  - Multiply by integers to balance the coefficients.\n* Redox reactions can be classified as:\n  - Synthesis (combination) reactions.\n  - Decomposition reactions.\n  - Displacement reactions.\n  - Combustion reactions.\n* Redox reactions are involved in various biological processes.\n* Redox reactions are used in various industrial processes.\n\n## 🔑 Must-Know Definitions\n\n* Oxidation: Loss of electrons.\n* Reduction: Gain of electrons.\n* Oxidation number: A number assigned to an atom in a compound to represent its oxidation state.\n* Oxidising agent: Substance that causes oxidation (gains electrons).\n* Reducing agent: Substance that causes reduction (loses electrons).\n* Half-reaction: Oxidation or reduction part of a redox reaction separated.\n\n## 📊 Important Formulas\n\n* Oxidation number of an element in a compound = (Number of valence electrons) - (Number of electrons transferred to form an ion)\n* Oxidation-reduction reaction: 2A + B → C + 2D\n* Half-reaction: \n  Oxidation: A → A^n\n  Reduction: B → B^n\n* Balancing half-reactions: \n  Add electrons to balance the charges.\n  Add H+ ions to balance the charges.\n  Multiply by integers to balance the coefficients.\n\n## ⭐ Exam Tips\n\n* Pay attention to the oxidation numbers of elements in a compound.\n* Identify the oxidising and reducing agents in a redox reaction.\n* Balance the half-reactions carefully.\n* Classify redox reactions into different types.\n* Understand the importance of redox reactions in various biological and industrial processes."
+      }
+    }
+  }
+}

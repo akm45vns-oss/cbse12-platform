@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "File Handling",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:25:27.146Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Rahul is working on a project to maintain records of students' marks in his school. He wants to store student details like name, roll number, and marks in a file. He needs to ensure that once a student's record is updated, the old record is not overwritten and the new record is added to the existing file. Rahul decides to use a program that can open the existing file, append new records, and save the updated data. He is working in Python and is using the 'w+' mode to open the file. However, he is getting confused between 'w+' and 'a' modes. He needs your help to understand how to achieve his goal.",
+        "questions": [
+          {
+            "q": "What is Rahul trying to achieve in his project?",
+            "opts": [
+              "(A) Storing student details in a database",
+              "(B) Maintaining records of students' marks in a file",
+              "(C) Updating existing records in a file",
+              "(D) Deleting old records from a file"
+            ],
+            "ans": "B",
+            "explanation": "Rahul is trying to maintain records of students' marks in a file, which implies he needs to store and retrieve data from a file."
+          },
+          {
+            "q": "Why does Rahul need to use 'a' mode instead of 'w+'?",
+            "opts": [
+              "(A) To overwrite existing records",
+              "(B) To append new records to the existing file",
+              "(C) To delete old records from the file",
+              "(D) To update existing records in the file"
+            ],
+            "ans": "B",
+            "explanation": "Rahul needs to use 'a' mode to append new records to the existing file, ensuring that old records are not overwritten."
+          },
+          {
+            "q": "What is Rahul confused about?",
+            "opts": [
+              "(A) Using 'w+' mode",
+              "(B) Using 'a' mode",
+              "(C) Opening and closing files",
+              "(D) Reading and writing files"
+            ],
+            "ans": "B",
+            "explanation": "Rahul is confused about the difference between 'w+' and 'a' modes, which are used to open files."
+          },
+          {
+            "q": "What does Rahul need to ensure while storing student records in the file?",
+            "opts": [
+              "(A) That old records are overwritten",
+              "(B) That new records are added to the existing file",
+              "(C) That records are deleted from the file",
+              "(D) That records are updated in the file"
+            ],
+            "ans": "B",
+            "explanation": "Rahul needs to ensure that new records are added to the existing file, without overwriting old records."
+          },
+          {
+            "q": "What programming language is Rahul using for his project?",
+            "opts": [
+              "(A) Java",
+              "(B) Python",
+              "(C) C++",
+              "(D) C#"
+            ],
+            "ans": "B",
+            "explanation": "Rahul is working in Python, which is a high-level programming language."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "Priya is working on a project to store and retrieve employee details from a text file. She wants to ensure that the data is read from the file in a structured format, and then it is used to display the employee details. Priya needs to ensure that the data is in a format that can be easily parsed and processed. She wants to use a specific format for storing employee details, which includes name, employee ID, and department. Priya is getting confused about how to read the data from the file in the specified format.",
+        "questions": [
+          {
+            "q": "What is Priya trying to achieve in her project?",
+            "opts": [
+              "(A) Storing employee details in a database",
+              "(B) Retrieving employee details from a text file",
+              "(C) Displaying employee details on the screen",
+              "(D) Deleting employee records from the file"
+            ],
+            "ans": "B",
+            "explanation": "Priya is trying to retrieve employee details from a text file, which implies she needs to read and process data from a file."
+          },
+          {
+            "q": "What does Priya need to ensure while reading employee details from the file?",
+            "opts": [
+              "(A) That the data is in a structured format",
+              "(B) That the data is in an unstructured format",
+              "(C) That the data is deleted from the file",
+              "(D) That the data is updated in the file"
+            ],
+            "ans": "A",
+            "explanation": "Priya needs to ensure that the data is in a structured format, which can be easily parsed and processed."
+          },
+          {
+            "q": "What format does Priya want to use for storing employee details?",
+            "opts": [
+              "(A) JSON format",
+              "(B) CSV format",
+              "(C) XML format",
+              "(D) None of the above"
+            ],
+            "ans": "C",
+            "explanation": "Priya wants to use a specific format for storing employee details, but the format is not specified in the passage. However, XML format is a common format used for storing and retrieving data."
+          },
+          {
+            "q": "What is Priya getting confused about?",
+            "opts": [
+              "(A) Reading data from the file",
+              "(B) Writing data to the file",
+              "(C) Parsing data from the file",
+              "(D) Processing data from the file"
+            ],
+            "ans": "C",
+            "explanation": "Priya is getting confused about how to read the data from the file in the specified format, which implies she is confused about parsing data from the file."
+          },
+          {
+            "q": "What does Priya need to display on the screen?",
+            "opts": [
+              "(A) Employee details",
+              "(B) Department names",
+              "(C) Employee IDs",
+              "(D) File names"
+            ],
+            "ans": "A",
+            "explanation": "Priya wants to display employee details on the screen, which implies she needs to retrieve and display data from the file."
+          }
+        ]
+      }
+    ]
+  }
+}

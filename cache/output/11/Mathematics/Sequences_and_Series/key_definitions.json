@@ -1,0 +1,98 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Sequences and Series",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:05:56.470Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Sequence",
+        "definition": "A sequence is an ordered set of numbers in which each term after the first is obtained by applying a fixed rule to the preceding term. It is a list of numbers in a particular order, where each number is called a term.",
+        "example": "Example: 1, 2, 3, 4, 5 is a sequence."
+      },
+      {
+        "term": "Series",
+        "definition": "A series is the sum of the terms of a sequence. It is the result of adding the terms of a sequence, one after the other.",
+        "example": "Example: 1 + 2 + 3 + 4 + 5 is a series."
+      },
+      {
+        "term": "Arithmetic Sequence",
+        "definition": "An arithmetic sequence is a sequence in which each term after the first is obtained by adding a fixed number, called the common difference, to the preceding term.",
+        "example": "Example: 2, 5, 8, 11, 14 is an arithmetic sequence with common difference 3."
+      },
+      {
+        "term": "Arithmetic Series",
+        "definition": "An arithmetic series is the sum of the terms of an arithmetic sequence.",
+        "example": "Example: 2 + 5 + 8 + 11 + 14 is an arithmetic series."
+      },
+      {
+        "term": "Geometric Sequence",
+        "definition": "A geometric sequence is a sequence in which each term after the first is obtained by multiplying the preceding term by a fixed number, called the common ratio.",
+        "example": "Example: 2, 6, 18, 54, 162 is a geometric sequence with common ratio 3."
+      },
+      {
+        "term": "Geometric Series",
+        "definition": "A geometric series is the sum of the terms of a geometric sequence.",
+        "example": "Example: 2 + 6 + 18 + 54 + 162 is a geometric series."
+      },
+      {
+        "term": "Convergence of a Series",
+        "definition": "A series is said to be convergent if it has a finite sum, and divergent if it does not have a finite sum.",
+        "example": "Example: The series 1 + 1/2 + 1/4 + 1/8 + ... is convergent."
+      },
+      {
+        "term": "Divergence of a Series",
+        "definition": "A series is said to be divergent if it does not have a finite sum.",
+        "example": "Example: The series 1 + 2 + 3 + 4 + ... is divergent."
+      },
+      {
+        "term": "Limit of a Sequence",
+        "definition": "The limit of a sequence is the value that the sequence approaches as the number of terms increases without bound.",
+        "example": "Example: The sequence 1, 1/2, 1/3, 1/4, ... approaches 0 as the number of terms increases without bound."
+      },
+      {
+        "term": "Limit of a Series",
+        "definition": "The limit of a series is the value of the sum of the series as the number of terms increases without bound.",
+        "example": "Example: The geometric series 1 + x + x^2 + x^3 + ... has a limit of 1/(1-x) as x approaches 0."
+      },
+      {
+        "term": "Telescoping Series",
+        "definition": "A telescoping series is a series in which most of the terms cancel each other out, leaving only a few terms.",
+        "example": "Example: The series 1 + 1/2 + 1/4 + 1/8 + ... is a telescoping series."
+      },
+      {
+        "term": "Alternating Series",
+        "definition": "An alternating series is a series in which the terms alternate between positive and negative.",
+        "example": "Example: The series 1 - 1/2 + 1/3 - 1/4 + ... is an alternating series."
+      },
+      {
+        "term": "Alternating Series Test",
+        "definition": "The alternating series test is a test for the convergence of an alternating series.",
+        "example": "Example: The alternating series test states that an alternating series with terms that decrease in absolute value and approach 0 is convergent."
+      },
+      {
+        "term": "Ratio Test",
+        "definition": "The ratio test is a test for the convergence of a series.",
+        "example": "Example: The ratio test states that a series with terms that approach 0 as the number of terms increases without bound is convergent."
+      },
+      {
+        "term": "Root Test",
+        "definition": "The root test is a test for the convergence of a series.",
+        "example": "Example: The root test states that a series with terms that approach 0 as the number of terms increases without bound is convergent."
+      },
+      {
+        "term": "Power Series",
+        "definition": "A power series is a series of the form a0 + a1x + a2x^2 + a3x^3 + ...",
+        "example": "Example: The power series 1 + x + x^2 + x^3 + ... is a power series."
+      },
+      {
+        "term": "Radius of Convergence",
+        "definition": "The radius of convergence of a power series is the distance from the center of the series to the nearest point where the series diverges.",
+        "example": "Example: The radius of convergence of the power series 1 + x + x^2 + x^3 + ... is infinity."
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Measures of Dispersion",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:39:08.032Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Content",
+        "formula": "Here is the complete formula sheet for CBSE Class 11 Economics - Measures of Dispersion in JSON format:\n\n```json\n[\n  {\n    \"name\": \"Range\",\n    \"formula\": \"R = X_max - X_min\",\n    \"variables\": {\n      \"R\": \"Range\",\n      \"X_max\": \"Maximum value of the data set\",\n      \"X_min\": \"Minimum value of the data set\"\n    },\n    \"units\": \"Same as data\",\n    \"notes\": \"Simple and easy to calculate, but not suitable for large data sets.\"\n  },\n  {\n    \"name\": \"Mean Deviation (MD)\",\n    \"formula\": \"MD = (1/n) \\* Σ |Xi - X̄|\",\n    \"variables\": {\n      \"MD\": \"Mean Deviation\",\n      \"n\": \"Number of observations\",\n      \"Xi\": \"Individual data points\",\n      \"X̄\": \"Mean of the data set\"\n    },\n    \"units\": \"Same as data\",\n    \"notes\": \"Suitable for small data sets, but not suitable for large data sets.\"\n  },\n  {\n    \"name\": \"Variance (σ^2)\",\n    \"formula\": \"σ^2 = (1/(n-1)) \\* Σ (Xi - X̄)^2\",\n    \"variables\": {\n      \"σ^2\": \"Variance\",\n      \"n\": \"Number of observations\",\n      \"Xi\": \"Individual data points\",\n      \"X̄\": \"Mean of the data set\"\n    },\n    \"units\": \"Square of the unit of data\",\n    \"notes\": \"Suitable for large data sets, but not suitable for small data sets.\"\n  },\n  {\n    \"name\": \"Standard Deviation (σ)\",\n    \"formula\": \"σ = √σ^2\",\n    \"variables\": {\n      \"σ\": \"Standard Deviation\",\n      \"σ^2\": \"Variance\"\n    },\n    \"units\": \"Unit of data\",\n    \"notes\": \"A measure of spread that is easily interpretable.\"\n  },\n  {\n    \"name\": \"Quartile Deviation (QD)\",\n    \"formula\": \"QD = (Q3 - Q1)/2\",\n    \"variables\": {\n      \"QD\": \"Quartile Deviation\",\n      \"Q3\": \"Third quartile\",\n      \"Q1\": \"First quartile\"\n    },\n    \"units\": \"Same as data\",\n    \"notes\": \"Suitable for skewed distributions.\"\n  },\n  {\n    \"name\": \"Interquartile Range (IQR)\",\n    \"formula\": \"IQR = Q3 - Q1\",\n    \"variables\": {\n      \"IQR\": \"Interquartile Range\",\n      \"Q3\": \"Third quartile\",\n      \"Q1\": \"First quartile\"\n    },\n    \"units\": \"Same as data\",\n    \"notes\": \"A measure of spread that is easily interpretable.\"\n  }\n]\n```\n\nNote: This list includes only the most commonly used measures of dispersion.",
+        "variables": "",
+        "units": "",
+        "notes": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Correlation",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:39:31.671Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Content",
+        "formula": "Here's a complete formula sheet for CBSE Class 11 Economics - Correlation in JSON format:\n\n```json\n[\n  {\n    \"name\": \"Pearson's Correlation Coefficient Formula\",\n    \"formula\": \"r = Σ[(xi - x̄)(yi - ȳ)] / (√Σ(xi - x̄)² * √Σ(yi - ȳ)²)\",\n    \"variables\": {\n      \"r\": \"Pearson's correlation coefficient\",\n      \"xi\": \"Value of the independent variable\",\n      \"x̄\": \"Mean of the independent variable\",\n      \"yi\": \"Value of the dependent variable\",\n      \"ȳ\": \"Mean of the dependent variable\"\n    },\n    \"units\": \"\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Karl Pearson's Coefficient of Correlation\",\n    \"formula\": \"r = -1 ≤ r ≤ 1\",\n    \"variables\": {\n      \"r\": \"Pearson's correlation coefficient\"\n    },\n    \"units\": \"\",\n    \"notes\": \"Range of values for Pearson's correlation coefficient\"\n  },\n  {\n    \"name\": \"Spearman's Rank Correlation Coefficient Formula\",\n    \"formula\": \"r = 1 - (6 * Σd²) / (n² - 1)\",\n    \"variables\": {\n      \"r\": \"Spearman's rank correlation coefficient\",\n      \"d\": \"Difference in ranks of corresponding pairs\",\n      \"n\": \"Number of observations\"\n    },\n    \"units\": \"\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Kendall's Tau Coefficient Formula\",\n    \"formula\": \"τ = (Number of concordant pairs - Number of discordant pairs) / (Total number of pairs)\",\n    \"variables\": {\n      \"τ\": \"Kendall's tau coefficient\"\n    },\n    \"units\": \"\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Correlation and Causation\",\n    \"formula\": \"Correlation does not necessarily imply causation\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"Important note to remember when interpreting correlation coefficients\"\n  }\n]\n```\n\nNote that all variables and symbols used in the formulas are explained in the \"variables\" section for each formula.",
+        "variables": "",
+        "units": "",
+        "notes": ""
+      }
+    ]
+  }
+}

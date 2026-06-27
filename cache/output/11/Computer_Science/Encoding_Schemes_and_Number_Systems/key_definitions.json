@@ -1,0 +1,108 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Encoding Schemes and Number Systems",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T08:12:10.946Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Binary System",
+        "definition": "A number system that uses only two digits, 0 and 1, to represent information. This is the fundamental base of computer science as computers understand only binary language.",
+        "example": "Examples of binary numbers include 101, 110, and 011."
+      },
+      {
+        "term": "Octal System",
+        "definition": "A number system that uses eight digits (0-7) to represent information. It is used to represent binary numbers in a more readable format.",
+        "example": "The octal representation of the binary number 1011 is 13."
+      },
+      {
+        "term": "Decimal System",
+        "definition": "A number system that uses ten digits (0-9) to represent information. It is widely used in everyday life for counting and arithmetic operations.",
+        "example": "The decimal representation of the number 12 is 12."
+      },
+      {
+        "term": "Hexadecimal System",
+        "definition": "A number system that uses sixteen digits (0-9, A-F) to represent information. It is used to represent binary numbers in a more readable format.",
+        "example": "The hexadecimal representation of the binary number 1011 is B."
+      },
+      {
+        "term": "ASCII (American Standard Code for Information Interchange)",
+        "definition": "A character-encoding scheme that assigns unique binary codes to each character, allowing text to be represented and transmitted digitally.",
+        "example": "The ASCII code for the letter 'A' is 01000001."
+      },
+      {
+        "term": "Encoding Scheme",
+        "definition": "A method or system of converting data into a format that can be understood by a computer or other device.",
+        "example": "ASCII is an example of an encoding scheme."
+      },
+      {
+        "term": "Encoding",
+        "definition": "The process of converting data into a format that can be understood by a computer or other device.",
+        "example": "Encoding a text file into binary format."
+      },
+      {
+        "term": "Decoding",
+        "definition": "The process of converting data from a format that a computer can understand back into its original form.",
+        "example": "Decoding a binary file into a text file."
+      },
+      {
+        "term": "Gray Code",
+        "definition": "A binary number system in which each digit is represented by a unique combination of binary digits, minimizing the number of transitions between adjacent codes.",
+        "example": "Gray code is used in binary counters and other digital circuits."
+      },
+      {
+        "term": "Number System",
+        "definition": "A set of symbols, rules, and operations used to represent and manipulate data.",
+        "example": "Binary, octal, decimal, and hexadecimal are examples of number systems."
+      },
+      {
+        "term": "Base",
+        "definition": "The number of unique digits or symbols used to represent information in a number system.",
+        "example": "The base of the binary number system is 2."
+      },
+      {
+        "term": "Digit",
+        "definition": "A single symbol or character used to represent information in a number system.",
+        "example": "The digit 1 in the binary number 101."
+      },
+      {
+        "term": "Place Value",
+        "definition": "The value of a digit in a number system, determined by its position and the base of the system.",
+        "example": "In the binary number 101, the place value of the digit 1 is 1."
+      },
+      {
+        "term": "Unsigned Integer",
+        "definition": "A whole number that is greater than or equal to zero and is represented using a fixed number of digits in a number system.",
+        "example": "The unsigned integer 12 in decimal."
+      },
+      {
+        "term": "Signed Integer",
+        "definition": "A whole number that can be either positive or negative and is represented using a fixed number of digits in a number system.",
+        "example": "The signed integer -12 in decimal."
+      },
+      {
+        "term": "Fixed-Point Representation",
+        "definition": "A method of representing numbers in a computer system using a fixed number of digits and a fixed number of decimal places.",
+        "example": "Fixed-point representation is used in some microcontrollers and embedded systems."
+      },
+      {
+        "term": "Floating-Point Representation",
+        "definition": "A method of representing numbers in a computer system using a fixed number of digits and a variable number of decimal places.",
+        "example": "Floating-point representation is used in most modern computer systems."
+      },
+      {
+        "term": "Precision",
+        "definition": "The number of digits or decimal places used to represent a number in a number system.",
+        "example": "The precision of the floating-point representation of the number 3.14159."
+      },
+      {
+        "term": "Accuracy",
+        "definition": "The degree to which a number system or representation accurately represents the true value of a quantity.",
+        "example": "The accuracy of the floating-point representation of the number 3.14159."
+      }
+    ]
+  }
+}

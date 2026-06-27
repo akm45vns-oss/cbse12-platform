@@ -1,0 +1,20 @@
+{
+  "class": "11",
+  "subject": "Biology",
+  "chapter": "Chemical Coordination and Integration",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:04:37.210Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Content",
+        "formula": "Here's a complete formula sheet for CBSE Class 11 Biology - Chemical Coordination and Integration in JSON format:\n\n[\n  {\n    \"name\": \"All-or-None Law\",\n    \"formula\": \"Each neuron either fires maximally or not at all\",\n    \"variables\": \"None\",\n    \"units\": \"None\",\n    \"notes\": \"This law states that the response of a neuron is either maximum or zero, with no intermediate values.\"\n  },\n  {\n    \"name\": \"Law of Large Numbers\",\n    \"formula\": \"As the number of trials increases, the average of the results will get closer to the population mean\",\n    \"variables\": \"Number of trials, population mean\",\n    \"units\": \"None\",\n    \"notes\": \"This law helps us understand that the average of a large number of trials will be close to the actual population mean.\"\n  },\n  {\n    \"name\": \"Steady State Potential\",\n    \"formula\": \"E = (Rm/Ri) * Ina - (Vk - Vm) / (Ri * gk)\",\n    \"variables\": \"E (equilibrium potential), Rm (membrane resistance), Ri (input resistance), Ina (sodium current), Vk (potassium equilibrium potential), Vm (membrane potential), gk (potassium conductance)\",\n    \"units\": \"mV\",\n    \"notes\": \"This formula helps in calculating the steady state membrane potential of a neuron.\"\n  },\n  {\n    \"name\": \"Hodgkin-Huxley Model\",\n    \"formula\": \"dm/dt = (gNa * m^3 * h + gK * n^4 - gL * (Vm - VNa) - gK * (Vm - VK)) / Cm\",\n    \"variables\": \"m (sodium activation gate), h (sodium inactivation gate), n (potassium activation gate), gNa (sodium conductance), gK (potassium conductance), gL (leakage conductance), Vm (membrane potential), VNa (sodium equilibrium potential), VK (potassium equilibrium potential), Cm (membrane capacitance)\",\n    \"units\": \"None\",\n    \"notes\": \"This model helps in explaining the generation of action potentials in neurons.\"\n  }\n]\n\nNote: These formulas are based on the key concepts of the chapter and are widely used in the field of neuroscience to explain the generation of action potentials and the behavior of neurons.",
+        "variables": "",
+        "units": "",
+        "notes": ""
+      }
+    ]
+  }
+}

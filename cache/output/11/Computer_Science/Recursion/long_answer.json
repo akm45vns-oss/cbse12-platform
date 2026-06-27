@@ -1,0 +1,69 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Recursion",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:13:58.521Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A recursive function calculates the factorial of a number. Write the recursive function in Python and explain the base case and recursive case. Also, explain how recursion is more efficient than iteration in this scenario.",
+        "marks": 5,
+        "answer": "A recursive function to calculate factorial is as follows:\n\npython\ndef factorial(n):\n    if n == 0:  # base case\n        return 1\n    else:\n        return n * factorial(n-1)\n\n# Test the function\nprint(factorial(5))  # prints 120\n\n\nIn this function, the base case is when n equals 0, at which point the function returns 1. The recursive case is when n is greater than 0, at which point the function calls itself with n-1 as the argument. This process continues until the base case is reached.\n\nRecursion is more efficient than iteration in this scenario because it allows for a more straightforward implementation of the factorial function. However, recursion can be less efficient than iteration for large values of n because it creates a new stack frame for each recursive call, which can lead to a stack overflow.",
+        "marking_scheme": [
+          "Explain the base case and recursive case correctly (2 marks)",
+          "Compare recursion and iteration correctly (2 marks)",
+          "Code the recursive function correctly (1 mark)"
+        ],
+        "topic": "Recursion Basics"
+      },
+      {
+        "q": "A binary tree node has a value and pointers to its left and right children. Implement a recursive function to perform an in-order traversal of the binary tree. What is the time complexity of this algorithm?",
+        "marks": 5,
+        "answer": "A recursive function to perform an in-order traversal of the binary tree is as follows:\n\npython\nclass Node:\n    def __init__(self, value):\n        self.value = value\n        self.left = None\n        self.right = None\n\ndef inorder_traversal(node):\n    if node is not None:  # base case\n        inorder_traversal(node.left)\n        print(node.value)\n        inorder_traversal(node.right)\n\n# Test the function\nroot = Node(1)\nroot.left = Node(2)\nroot.right = Node(3)\nroot.left.left = Node(4)\nroot.left.right = Node(5)\nroot.right.left = Node(6)\nroot.right.right = Node(7)\n\ninorder_traversal(root)\n  # prints 4 2 5 1 6 3 7\n\n\nThe time complexity of this algorithm is O(n), where n is the number of nodes in the binary tree, because each node is visited once.",
+        "marking_scheme": [
+          "Implement the recursive function correctly (2 marks)",
+          "Explain the time complexity correctly (2 marks)",
+          "Provide a test case correctly (1 mark)"
+        ],
+        "topic": "Recursion Applications"
+      },
+      {
+        "q": "A recursive function calculates the sum of all elements in a list. Write the recursive function in Python and explain the base case and recursive case. Also, explain how recursion can be used to solve this problem.",
+        "marks": 5,
+        "answer": "A recursive function to calculate the sum of all elements in a list is as follows:\n\npython\ndef sum_list(lst):\n    if len(lst) == 0:  # base case\n        return 0\n    else:\n        return lst[0] + sum_list(lst[1:])\n\n# Test the function\nprint(sum_list([1, 2, 3, 4, 5]))  # prints 15\n\n\nIn this function, the base case is when the list is empty, at which point the function returns 0. The recursive case is when the list is not empty, at which point the function calls itself with the rest of the list as the argument. This process continues until the base case is reached.\n\nRecursion can be used to solve this problem because it allows for a more straightforward implementation of the function. The recursive approach breaks down the problem into smaller subproblems, which are then solved recursively.",
+        "marking_scheme": [
+          "Explain the base case and recursive case correctly (2 marks)",
+          "Compare the recursive approach with other approaches (2 marks)",
+          "Code the recursive function correctly (1 mark)"
+        ],
+        "topic": "Recursion Basics"
+      },
+      {
+        "q": "A recursive function calculates the maximum value in a list. Write the recursive function in Python and explain the base case and recursive case. Also, explain how recursion can be used to solve this problem.",
+        "marks": 5,
+        "answer": "A recursive function to calculate the maximum value in a list is as follows:\n\npython\ndef max_list(lst):\n    if len(lst) == 1:  # base case\n        return lst[0]\n    else:\n        return max(lst[0], max_list(lst[1:]))\n\n# Test the function\nprint(max_list([1, 2, 3, 4, 5]))  # prints 5\n\n\nIn this function, the base case is when the list has only one element, at which point the function returns that element. The recursive case is when the list has more than one element, at which point the function calls itself with the rest of the list as the argument. This process continues until the base case is reached.\n\nRecursion can be used to solve this problem because it allows for a more straightforward implementation of the function. The recursive approach breaks down the problem into smaller subproblems, which are then solved recursively.",
+        "marking_scheme": [
+          "Explain the base case and recursive case correctly (2 marks)",
+          "Compare the recursive approach with other approaches (2 marks)",
+          "Code the recursive function correctly (1 mark)"
+        ],
+        "topic": "Recursion Applications"
+      },
+      {
+        "q": "A recursive function calculates the number of ways to climb a staircase with n steps. Write the recursive function in Python and explain the base case and recursive case. Also, explain how recursion can be used to solve this problem.",
+        "marks": 5,
+        "answer": "A recursive function to calculate the number of ways to climb a staircase with n steps is as follows:\n\npython\ndef climb_stairs(n):\n    if n == 0:  # base case\n        return 1\n    elif n == 1:\n        return 1\n    else:\n        return climb_stairs(n-1) + climb_stairs(n-2)\n\n# Test the function\nprint(climb_stairs(4))  # prints 5\n\n\nIn this function, the base case is when there are no steps left to climb, at which point the function returns 1. The recursive case is when there are more than one step left to climb, at which point the function calls itself with n-1 and n-2 steps as the arguments. This process continues until the base case is reached.\n\nRecursion can be used to solve this problem because it allows for a more straightforward implementation of the function. The recursive approach breaks down the problem into smaller subproblems, which are then solved recursively.",
+        "marking_scheme": [
+          "Explain the base case and recursive case correctly (2 marks)",
+          "Compare the recursive approach with other approaches (2 marks)",
+          "Code the recursive function correctly (1 mark)"
+        ],
+        "topic": "Recursion Applications"
+      }
+    ],
+    "total": 5
+  }
+}

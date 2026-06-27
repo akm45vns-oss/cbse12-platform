@@ -1,0 +1,93 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Measures of Dispersion",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T08:15:33.594Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Range",
+        "definition": "The difference between the highest and lowest values in a dataset, providing a rough estimate of dispersion. It does not consider the actual values of the data points.",
+        "example": "For example, if we have data points 10, 20, 30, 40, and 50, the range is 40 (50 - 10)."
+      },
+      {
+        "term": "Mean Deviation",
+        "definition": "The average of the absolute differences between each data point and the mean, providing a measure of dispersion by considering the deviations from the mean.",
+        "example": "Mean Deviation = (Σ|xi - mean|) / N, where xi is each data point, mean is the mean of the dataset, and N is the number of data points."
+      },
+      {
+        "term": "Variance",
+        "definition": "The average of the squared differences between each data point and the mean, providing a measure of dispersion by considering the squared deviations from the mean.",
+        "example": "Variance = (Σ(xi - mean)^2) / N, where xi is each data point, mean is the mean of the dataset, and N is the number of data points."
+      },
+      {
+        "term": "Standard Deviation",
+        "definition": "The square root of the variance, providing a measure of dispersion in the same unit as the data points, making it easier to interpret.",
+        "example": "Standard Deviation = √Variance"
+      },
+      {
+        "term": "Coefficient of Range",
+        "definition": "The ratio of the range to the average of the highest and lowest values, providing a relative measure of dispersion.",
+        "example": "Coefficient of Range = Range / ((Highest value + Lowest value) / 2)"
+      },
+      {
+        "term": "Coefficient of Mean Deviation",
+        "definition": "The ratio of the mean deviation to the mean, providing a relative measure of dispersion.",
+        "example": "Coefficient of Mean Deviation = Mean Deviation / Mean"
+      },
+      {
+        "term": "Coefficient of Variation",
+        "definition": "The ratio of the standard deviation to the mean, expressed as a percentage, providing a relative measure of dispersion.",
+        "example": "Coefficient of Variation = (Standard Deviation / Mean) * 100"
+      },
+      {
+        "term": "Interquartile Range",
+        "definition": "The difference between the 75th percentile (Q3) and the 25th percentile (Q1), providing a measure of dispersion in the middle 50% of the data.",
+        "example": "Interquartile Range = Q3 - Q1"
+      },
+      {
+        "term": "Quartile Deviation",
+        "definition": "Half of the interquartile range, providing a measure of dispersion in the middle 50% of the data.",
+        "example": "Quartile Deviation = (Q3 - Q1) / 2"
+      },
+      {
+        "term": "Coefficient of Quartile Deviation",
+        "definition": "The ratio of the quartile deviation to the median, providing a relative measure of dispersion.",
+        "example": "Coefficient of Quartile Deviation = Quartile Deviation / Median"
+      },
+      {
+        "term": "Absolute Deviation",
+        "definition": "The absolute difference between each data point and the mean or median, providing a measure of dispersion by considering the deviations from the central tendency.",
+        "example": "|xi - mean| or |xi - median|, where xi is each data point, mean or median is the central tendency."
+      },
+      {
+        "term": "Root Mean Square Deviation",
+        "definition": "The square root of the average of the squared differences between each data point and the mean, providing a measure of dispersion by considering the squared deviations from the mean.",
+        "example": "Root Mean Square Deviation = √((Σ(xi - mean)^2) / N), where xi is each data point, mean is the mean of the dataset, and N is the number of data points."
+      },
+      {
+        "term": "Mean Absolute Deviation",
+        "definition": "The average of the absolute differences between each data point and the mean, providing a measure of dispersion by considering the deviations from the mean.",
+        "example": "Mean Absolute Deviation = (Σ|xi - mean|) / N, where xi is each data point, mean is the mean of the dataset, and N is the number of data points."
+      },
+      {
+        "term": "Standard Error",
+        "definition": "The standard deviation of the sampling distribution of the sample mean, providing a measure of the variability of the sample mean.",
+        "example": "Standard Error = Standard Deviation / √N, where N is the sample size."
+      },
+      {
+        "term": "Index of Dispersion",
+        "definition": "A measure of dispersion that compares the variance of a sample to the variance of a population, providing a measure of the variability of the sample.",
+        "example": "Index of Dispersion = Variance of sample / Variance of population"
+      },
+      {
+        "term": "Coefficient of Dispersion",
+        "definition": "A relative measure of dispersion that compares the standard deviation or variance of a sample to the standard deviation or variance of a population.",
+        "example": "Coefficient of Dispersion = Standard Deviation of sample / Standard Deviation of population"
+      }
+    ]
+  }
+}

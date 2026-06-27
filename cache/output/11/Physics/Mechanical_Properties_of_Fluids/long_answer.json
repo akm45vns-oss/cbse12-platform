@@ -1,0 +1,79 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Mechanical Properties of Fluids",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:18:08.512Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A U-tube manometer is used to measure the pressure of a gas in a container. The height of the liquid column in the left arm is 50 cm and the right arm is 20 cm. The specific gravity of the liquid used is 1.2. Calculate the pressure difference between the two arms of the manometer. (Take g = 9.8 m/s^2)",
+        "marks": 5,
+        "answer": "To calculate the pressure difference, we need to first find the pressure due to the liquid column in each arm. The pressure due to a liquid column is given by P = ρgh, where ρ is the density of the liquid, g is the acceleration due to gravity, and h is the height of the liquid column. Since the specific gravity of the liquid is 1.2, the density of the liquid is 1.2 times the density of water. The density of water is approximately 1000 kg/m^3. Therefore, the density of the liquid is 1.2 x 1000 kg/m^3 = 1200 kg/m^3. Now, we can calculate the pressure due to the liquid column in each arm. For the left arm, the pressure is P1 = ρgh = 1200 kg/m^3 x 9.8 m/s^2 x 0.5 m = 5880 Pa. For the right arm, the pressure is P2 = ρgh = 1200 kg/m^3 x 9.8 m/s^2 x 0.2 m = 2352 Pa. The pressure difference between the two arms is ΔP = P1 - P2 = 5880 Pa - 2352 Pa = 3528 Pa.",
+        "marking_scheme": [
+          "Calculate the pressure due to the liquid column in each arm (1 mark)",
+          "Find the pressure difference between the two arms (1 mark)",
+          "Show the correct units and significant figures (1 mark)",
+          "Calculate the numerical value of the pressure difference (1 mark)",
+          "Explain the concept of pressure difference in the context of the manometer (1 mark)"
+        ],
+        "topic": "Measurement of Pressure"
+      },
+      {
+        "q": "A cylindrical tank of radius 1 m is filled with water to a height of 2 m. A hole of diameter 2 cm is made at the bottom of the tank. Assuming the flow of water is steady and incompressible, calculate the velocity of water emerging from the hole. (Take g = 9.8 m/s^2)",
+        "marks": 5,
+        "answer": "To calculate the velocity of water emerging from the hole, we need to first find the volume flow rate of water. The volume flow rate is given by Q = A × v, where A is the cross-sectional area of the hole and v is the velocity of water. The cross-sectional area of the hole is A = πr^2 = π(0.01 m)^2 = 3.14 x 10^-4 m^2. The volume flow rate can also be calculated using the equation Q = A × v = πR^2 × h × g, where R is the radius of the tank and h is the height of the water column. Since the tank is filled with water to a height of 2 m, the volume flow rate is Q = π(1 m)^2 × 2 m × 9.8 m/s^2 = 58.88 m^3/s. Now, we can calculate the velocity of water emerging from the hole by rearranging the equation Q = A × v to v = Q / A. Therefore, the velocity of water emerging from the hole is v = 58.88 m^3/s / (3.14 x 10^-4 m^2) = 187.4 m/s.",
+        "marking_scheme": [
+          "Calculate the cross-sectional area of the hole (1 mark)",
+          "Find the volume flow rate of water (1 mark)",
+          "Rearrange the equation Q = A × v to find the velocity of water (1 mark)",
+          "Calculate the numerical value of the velocity of water (1 mark)",
+          "Explain the relationship between the volume flow rate and the velocity of water (1 mark)"
+        ],
+        "topic": "Fluid Flow"
+      },
+      {
+        "q": "A submarine is moving vertically upwards in the ocean with a velocity of 5 m/s. The density of the water is 1025 kg/m^3. Assuming the pressure at the surface is 1 atm (101325 Pa), calculate the pressure at a depth of 50 m below the surface.",
+        "marks": 5,
+        "answer": "To calculate the pressure at a depth of 50 m below the surface, we need to first find the pressure due to the water column. The pressure due to a water column is given by P = ρgh, where ρ is the density of the water, g is the acceleration due to gravity, and h is the height of the water column. Since the submarine is moving vertically upwards, the height of the water column above the submarine is 50 m. The pressure due to the water column is P = ρgh = 1025 kg/m^3 x 9.8 m/s^2 x 50 m = 500125 Pa. The total pressure at a depth of 50 m below the surface is the sum of the pressure at the surface and the pressure due to the water column. Therefore, the total pressure is P_total = 101325 Pa + 500125 Pa = 601450 Pa.",
+        "marking_scheme": [
+          "Calculate the pressure due to the water column (1 mark)",
+          "Find the total pressure at a depth of 50 m below the surface (1 mark)",
+          "Show the correct units and significant figures (1 mark)",
+          "Calculate the numerical value of the total pressure (1 mark)",
+          "Explain the concept of pressure due to a water column (1 mark)"
+        ],
+        "topic": "Pressure and Density"
+      },
+      {
+        "q": "A syphon is a device used to transfer water from a lower level to a higher level without the use of pumps. The syphon consists of a tube with a small hole at the bottom. The tube is filled with water and the hole is submerged in the water. Explain the working of the syphon and describe the forces acting on the water column.",
+        "marks": 5,
+        "answer": "The syphon works on the principle of atmospheric pressure and the concept of pressure difference. The water column in the syphon is at equilibrium, meaning that the forces acting on it are balanced. The forces acting on the water column are the weight of the water column and the pressure difference between the two ends of the syphon. The pressure difference is due to the atmospheric pressure at the top end of the syphon and the pressure at the bottom end of the syphon, which is equal to the pressure due to the water column. The weight of the water column is balanced by the pressure difference, allowing the water column to rise to the higher level. The forces acting on the water column can be represented as follows: F_weight = ρVg, where ρ is the density of water, V is the volume of the water column, and g is the acceleration due to gravity. F_pressure = P1 - P2, where P1 is the pressure at the top end of the syphon and P2 is the pressure at the bottom end of the syphon.",
+        "marking_scheme": [
+          "Explain the working of the syphon (1 mark)",
+          "Describe the forces acting on the water column (1 mark)",
+          "Show the relationship between the forces acting on the water column (1 mark)",
+          "Explain the concept of pressure difference in the context of the syphon (1 mark)",
+          "Describe the equilibrium of the water column (1 mark)"
+        ],
+        "topic": "Mechanical Advantage"
+      },
+      {
+        "q": "A horizontal pipe of diameter 0.1 m carries water from a reservoir to a turbine. The velocity of water in the pipe is 5 m/s. Calculate the volume flow rate of water in the pipe.",
+        "marks": 5,
+        "answer": "To calculate the volume flow rate of water in the pipe, we need to first find the cross-sectional area of the pipe. The cross-sectional area of the pipe is A = πr^2 = π(0.05 m)^2 = 7.85 x 10^-3 m^2. The volume flow rate is given by Q = A × v, where v is the velocity of water. Therefore, the volume flow rate is Q = 7.85 x 10^-3 m^2 x 5 m/s = 0.003925 m^3/s.",
+        "marking_scheme": [
+          "Calculate the cross-sectional area of the pipe (1 mark)",
+          "Find the volume flow rate of water (1 mark)",
+          "Rearrange the equation Q = A × v to find the numerical value of the volume flow rate (1 mark)",
+          "Show the correct units and significant figures (1 mark)",
+          "Explain the concept of volume flow rate in the context of the pipe (1 mark)"
+        ],
+        "topic": "Fluid Flow"
+      }
+    ],
+    "total": 5
+  }
+}

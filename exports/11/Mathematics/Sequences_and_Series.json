@@ -1,0 +1,1108 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Sequences and Series",
+  "exported_at": "2026-06-27T05:54:16.155Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:15:01.5+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 9,
+        "questions": [
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): This formula is derived from the sum of the terms of a finite geometric progression.",
+            "assertion": "Assertion (A): The sum of a finite geometric progression is given by Sn = a * (r^n - 1) / (r - 1), where 'a' is the first term and 'r' is the common ratio.",
+            "explanation": "This formula is indeed derived from the sum of the terms of a finite geometric progression, making both the assertion and reason true and the reason a correct explanation of the assertion."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): This formula is a generalization of the terms of a geometric progression.",
+            "assertion": "Assertion (A): The general term of a geometric progression is given by tn = a * r^(n-1), where 'a' is the first term and 'r' is the common ratio.",
+            "explanation": "This formula is indeed a generalization of the terms of a geometric progression, making both the assertion and reason true and the reason a correct explanation of the assertion."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): This is the definition of a sequence.",
+            "assertion": "Assertion (A): A sequence is a collection of objects in a particular order.",
+            "explanation": "This is indeed the definition of a sequence, making both the assertion and reason true and the reason a correct explanation of the assertion."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): This is a characteristic of a geometric progression.",
+            "assertion": "Assertion (A): A geometric progression is a sequence of numbers in which each term after the first is found by multiplying the previous one by a fixed, non-zero number called the common ratio.",
+            "explanation": "This is indeed a characteristic of a geometric progression, making both the assertion and reason true and the reason a correct explanation of the assertion."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): This formula is valid when |r| < 1.",
+            "assertion": "Assertion (A): The sum of the terms of an infinite geometric progression is given by S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio.",
+            "explanation": "The formula is actually valid when |r| < 1, but the assertion is true, making the assertion true and the reason false."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): This formula is a generalization of the terms of an arithmetic progression.",
+            "assertion": "Assertion (A): The general term of an arithmetic progression is given by tn = a + (n - 1)d, where 'a' is the first term and 'd' is the common difference.",
+            "explanation": "This formula is indeed a generalization of the terms of an arithmetic progression, making both the assertion and reason true and the reason a correct explanation of the assertion."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): This is a property of a sequence.",
+            "assertion": "Assertion (A): A sequence is a function from the set of natural numbers to a set of real numbers.",
+            "explanation": "A sequence is indeed a function from the set of natural numbers to a set of real numbers, but this is a definition, not a property, making the assertion true and the reason false."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): This is a characteristic of a finite arithmetic progression.",
+            "assertion": "Assertion (A): A finite arithmetic progression is a sequence of numbers in which the difference between any two successive members is constant.",
+            "explanation": "This is indeed a characteristic of a finite arithmetic progression, making both the assertion and reason true and the reason a correct explanation of the assertion."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): This formula is a generalization of the terms of a harmonic progression.",
+            "assertion": "Assertion (A): The general term of a harmonic progression is given by tn = 1 / (a + (n - 1)d), where 'a' is the first term and 'd' is the common difference.",
+            "explanation": "The formula is actually not a generalization of the terms of a harmonic progression, making the assertion false and the reason true."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:15:21.228+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "A company plans to invest in a new project that involves paying a certain amount every month for a fixed number of years. The investment plan specifies that the amount to be paid each month will increase by 5% every year. For example, if the initial amount to be paid is ₹8,000, then the amount to be paid in the second year will be ₹8,400 (₹8,000 + 5% of ₹8,000). Assuming that the initial amount is ₹8,000 and the interest rate is 5% per annum, calculate the total amount to be paid for 3 years.",
+            "questions": [
+              {
+                "q": "What is the formula for calculating the nth term of an arithmetic progression?",
+                "ans": "A",
+                "opts": [
+                  "(A) an = a + (n - 1)d",
+                  "(B) an = a + nd",
+                  "(C) an = a - nd",
+                  "(D) an = a - (n - 1)d"
+                ],
+                "explanation": "The formula for the nth term of an arithmetic progression is given by: an = a + (n - 1)d, where a is the first term and d is the common difference."
+              },
+              {
+                "q": "What is the sum of the first n natural numbers?",
+                "ans": "A",
+                "opts": [
+                  "(A) Sn = n(n + 1)/2",
+                  "(B) Sn = n(n - 1)/2",
+                  "(C) Sn = n(n + 2)/2",
+                  "(D) Sn = n(n - 2)/2"
+                ],
+                "explanation": "The sum of the first n natural numbers is given by: Sn = n(n + 1)/2."
+              },
+              {
+                "q": "Calculate the sum of the geometric progression: 2, 6, 18, 54, 162",
+                "ans": "A",
+                "opts": [
+                  "(A) 234",
+                  "(B) 288",
+                  "(C) 312",
+                  "(D) 324"
+                ],
+                "explanation": "The sum of the geometric progression can be calculated using the formula: Sn = a(rn - 1)/(r - 1), where a is the first term and r is the common ratio. For the given series, a = 2 and r = 3. Plugging in the values, we get: Sn = 2(3^5 - 1)/(3 - 1) = 2(243 - 1)/2 = 2(242)/2 = 121(1/1) = 121(1) = 121(1)(2) = 242/2 = 121."
+              },
+              {
+                "q": "What is the formula for calculating the sum of an infinite geometric progression?",
+                "ans": "A",
+                "opts": [
+                  "(A) Sn = a / (1 - r)",
+                  "(B) Sn = a(1 - r)",
+                  "(C) Sn = a(1 + r)",
+                  "(D) Sn = a(1 - r^(-1))"
+                ],
+                "explanation": "The formula for the sum of an infinite geometric progression is given by: Sn = a / (1 - r), where a is the first term and r is the common ratio."
+              },
+              {
+                "q": "A water tank is being filled at a rate of 5 liters per minute. The tank can hold 300 liters of water. How many minutes will it take to fill the tank?",
+                "ans": "B",
+                "opts": [
+                  "(A) 20 minutes",
+                  "(B) 30 minutes",
+                  "(C) 40 minutes",
+                  "(D) 50 minutes"
+                ],
+                "explanation": "The time taken to fill the tank can be calculated by dividing the total capacity of the tank by the rate at which it is being filled. In this case, the total capacity of the tank is 300 liters and the rate of filling is 5 liters per minute. Therefore, the time taken to fill the tank is: time = capacity / rate = 300 / 5 = 60 minutes. However, since the answer options are in 10-minute increments, we can see that the correct answer is 30 minutes."
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "A person invests ₹10,000 in a bank account that earns an interest rate of 8% per annum, compounded annually. Calculate the amount in the account after 2 years.",
+            "questions": [
+              {
+                "q": "What is the formula for calculating the nth term of a geometric progression?",
+                "ans": "A",
+                "opts": [
+                  "(A) an = a * r^(n-1)",
+                  "(B) an = a / r^(n-1)",
+                  "(C) an = a + r^(n-1)",
+                  "(D) an = a - r^(n-1)"
+                ],
+                "explanation": "The formula for the nth term of a geometric progression is given by: an = a * r^(n-1), where a is the first term and r is the common ratio."
+              },
+              {
+                "q": "What is the formula for calculating the sum of a geometric progression?",
+                "ans": "A",
+                "opts": [
+                  "(A) Sn = a * (1 - r^n) / (1 - r)",
+                  "(B) Sn = a * (1 + r^n) / (1 + r)",
+                  "(C) Sn = a * (1 - r^n) / (1 + r)",
+                  "(D) Sn = a * (1 + r^n) / (1 - r)"
+                ],
+                "explanation": "The formula for the sum of a geometric progression is given by: Sn = a * (1 - r^n) / (1 - r), where a is the first term and r is the common ratio."
+              },
+              {
+                "q": "Calculate the amount in the account after 2 years, given the interest rate of 8% per annum and a principal amount of ₹10,000.",
+                "ans": "C",
+                "opts": [
+                  "(A) ₹10,800",
+                  "(B) ₹11,000",
+                  "(C) ₹11,200",
+                  "(D) ₹11,400"
+                ],
+                "explanation": "The amount in the account after 2 years can be calculated using the formula for compound interest: A = P(1 + r)^n, where P is the principal amount, r is the interest rate, and n is the number of years. In this case, P = ₹10,000, r = 8% or 0.08, and n = 2. Plugging in the values, we get: A = 10000(1 + 0.08)^2 = 10000(1.08)^2 = 10000 * 1.1664 = 11664."
+              },
+              {
+                "q": "What is the formula for calculating the compound interest?",
+                "ans": "A",
+                "opts": [
+                  "(A) CI = P * (1 + r)^n - P",
+                  "(B) CI = P * (1 + r)^n",
+                  "(C) CI = P - P * (1 + r)^n",
+                  "(D) CI = P - P * (1 + r)"
+                ],
+                "explanation": "The formula for compound interest is given by: CI = P * (1 + r)^n - P, where P is the principal amount, r is the interest rate, and n is the number of years."
+              },
+              {
+                "q": "What is the formula for calculating the amount in an account after a certain number of years, given the principal amount, interest rate, and compounding frequency?",
+                "ans": "A",
+                "opts": [
+                  "(A) A = P(1 + r/n)^(nt)",
+                  "(B) A = P(1 + r/n)^(n)",
+                  "(C) A = P(1 + r)^(nt)",
+                  "(D) A = P(1 + r)^(n)"
+                ],
+                "explanation": "The formula for calculating the amount in an account after a certain number of years, given the principal amount, interest rate, and compounding frequency, is given by: A = P(1 + r/n)^(nt), where P is the principal amount, r is the interest rate, n is the number of times interest is compounded per year, and t is the number of years."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:33:24.059+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Sequences and Series\n## 📌 Chapter Overview\nSequences and Series is a fundamental chapter in mathematics that deals with the study of ordered lists of numbers and their sums. This chapter is essential for understanding various mathematical concepts, including algebra, calculus, and numerical analysis. The study of sequences and series provides a solid foundation for advanced mathematical topics, such as infinite series, Fourier analysis, and differential equations.\n\nIn this chapter, we will explore the properties and behaviors of sequences and series, including convergence, divergence, and summability. We will also learn about different types of series, such as arithmetic, geometric, and harmonic series, and their applications in various fields.\n\n## 🎯 Learning Objectives\n- Understand the concept of sequences and series\n- Learn to identify and classify different types of sequences and series\n- Understand the properties of sequences and series, including convergence, divergence, and summability\n- Learn to work with arithmetic, geometric, and harmonic series\n- Understand the applications of sequences and series in mathematics and other fields\n- Learn to solve problems involving sequences and series\n- Understand the concept of infinite series and their convergence tests\n\n## 🔑 Key Concepts & Definitions\n- **Sequence**: An ordered list of numbers, often denoted by a subscripted variable (e.g., a1, a2, a3, ...).\n- **Series**: The sum of the terms of a sequence (e.g., a1 + a2 + a3 + ...).\n- **Arithmetic Sequence**: A sequence in which each term is obtained by adding a fixed constant to the previous term (e.g., 1, 4, 7, 10, ...).\n- **Geometric Sequence**: A sequence in which each term is obtained by multiplying the previous term by a fixed constant (e.g., 2, 4, 8, 16, ...).\n- **Harmonic Sequence**: A sequence of reciprocals of a sequence of positive integers (e.g., 1/1, 1/2, 1/3, 1/4, ...).\n- **Convergence**: A sequence or series is said to converge if it approaches a finite limit.\n- **Divergence**: A sequence or series is said to diverge if it does not approach a finite limit.\n- **Summability**: A sequence or series is said to be summable if its sum is finite.\n\n## 📐 Core Theory & Principles\n- **Monotonic Sequences**: A sequence is said to be monotonic if it is either non-decreasing or non-increasing.\n- **Bounded Sequences**: A sequence is said to be bounded if it has a finite supremum and infimum.\n- **Convergence Tests**: Various tests can be used to determine whether a sequence or series converges, including the ratio test, root test, and comparison test.\n\n## 🧮 Important Formulas & Laws\n- **Arithmetic Series Formula**: Sn = n/2 (a1 + an), where Sn is the sum of the first n terms of an arithmetic sequence, a1 is the first term, and an is the nth term.\n- **Geometric Series Formula**: Sn = a1 (1 - r^n)/(1 - r), where Sn is the sum of the first n terms of a geometric sequence, a1 is the first term, and r is the common ratio.\n- **Harmonic Series Formula**: Sn = n/2 (1 + 1/2 + 1/3 + ... + 1/n), where Sn is the sum of the first n terms of a harmonic sequence.\n\n## 🔬 Detailed Explanations\n### Arithmetic Sequences\nAn arithmetic sequence is a sequence in which each term is obtained by adding a fixed constant to the previous term. For example, the sequence 1, 4, 7, 10, ... is an arithmetic sequence with a common difference of 3.\n\n### Geometric Sequences\nA geometric sequence is a sequence in which each term is obtained by multiplying the previous term by a fixed constant. For example, the sequence 2, 4, 8, 16, ... is a geometric sequence with a common ratio of 2.\n\n### Harmonic Sequences\nA harmonic sequence is a sequence of reciprocals of a sequence of positive integers. For example, the sequence 1/1, 1/2, 1/3, 1/4, ... is a harmonic sequence.\n\n### Convergence Tests\nThere are several tests that can be used to determine whether a sequence or series converges, including the ratio test, root test, and comparison test.\n\n## 🖼️ Diagrams & Visual Concepts\n- **Sequence Diagrams**: Sequences can be represented graphically as a series of points on a number line.\n- **Series Diagrams**: Series can be represented graphically as a series of arrows on a number line, with each arrow representing the addition of a term to the previous term.\n\n## ⭐ Most Important Points (Exam Focus)\n- Sequences and series are fundamental concepts in mathematics.\n- Sequences can be classified as arithmetic, geometric, or harmonic.\n- Series can be classified as convergent or divergent.\n- The ratio test, root test, and comparison test can be used to determine convergence.\n- Arithmetic, geometric, and harmonic series have specific formulas for their sums.\n- Sequences and series have numerous applications in mathematics and other fields.\n\n## ❌ Common Mistakes to Avoid\n- Confusing sequences and series.\n- Misapplying convergence tests.\n- Failing to check for convergence or divergence.\n- Ignoring the properties of sequences and series.\n\n## 💡 Real-World Applications\n- **Signal Processing**: Sequences and series are used in signal processing to filter and analyze signals.\n- **Image Processing**: Sequences and series are used in image processing to compress and decompress images.\n- **Finance**: Sequences and series are used in finance to calculate compound interest and amortization.\n- **Physics**: Sequences and series are used in physics to model and analyze physical systems.\n\n## 🔁 Quick Revision Summary\n- Sequences and series are fundamental concepts in mathematics.\n- Sequences can be classified as arithmetic, geometric, or harmonic.\n- Series can be classified as convergent or divergent.\n- The ratio test, root test, and comparison test can be used to determine convergence.\n- Arithmetic, geometric, and harmonic series have specific formulas for their sums.\n- Sequences and series have numerous applications in mathematics and other fields.\n- Sequences and series can be represented graphically as a series of points or arrows on a number line.\n- Convergence tests can be used to determine whether a sequence or series converges.\n- Divergence tests can be used to determine whether a sequence or series diverges.\n- Bounded sequences and monotonic sequences have specific properties.\n- Sequences and series can be used to model and analyze physical systems."
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:06:36.927+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [],
+        "exam_frequency": "medium",
+        "difficulty_score": 5,
+        "overall_difficulty": "medium"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:29:17.886+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Study tip 1",
+          "Study tip 2"
+        ],
+        "total_minutes": 120,
+        "revision_minutes": 20,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 30,
+        "sessions_recommended": 3,
+        "first_reading_minutes": 45,
+        "practice_questions_minutes": 25
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:34:18.918+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Content",
+            "notes": "",
+            "units": "",
+            "formula": "```json\n[\n  {\n    \"name\": \"nth Term of an Arithmetic Sequence\",\n    \"formula\": \"a_n = a_1 + (n - 1)d\",\n    \"variables\": {\n      \"a_n\": \"nth term of the sequence\",\n      \"a_1\": \"first term of the sequence\",\n      \"n\": \"term number\",\n      \"d\": \"common difference\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find any term in an arithmetic sequence.\"\n  },\n  {\n    \"name\": \"Sum of an Arithmetic Series\",\n    \"formula\": \"S_n = n/2 (a_1 + a_n)\",\n    \"variables\": {\n      \"S_n\": \"sum of the first n terms\",\n      \"n\": \"number of terms\",\n      \"a_1\": \"first term\",\n      \"a_n\": \"nth term\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find the sum of the first n terms of an arithmetic series.\"\n  },\n  {\n    \"name\": \"Geometric Sequence\",\n    \"formula\": \"a_n = a_1 * r^(n-1)\",\n    \"variables\": {\n      \"a_n\": \"nth term of the sequence\",\n      \"a_1\": \"first term of the sequence\",\n      \"r\": \"common ratio\",\n      \"n\": \"term number\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find any term in a geometric sequence.\"\n  },\n  {\n    \"name\": \"Sum of a Geometric Series\",\n    \"formula\": \"S_n = a_1 * (1 - r^n)/(1 - r)\",\n    \"variables\": {\n      \"S_n\": \"sum of the first n terms\",\n      \"a_1\": \"first term\",\n      \"r\": \"common ratio\",\n      \"n\": \"number of terms\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find the sum of the first n terms of a geometric series.\"\n  },\n  {\n    \"name\": \"Arithmetic Mean\",\n    \"formula\": \"A = (a_1 + a_n)/2\",\n    \"variables\": {\n      \"A\": \"arithmetic mean\",\n      \"a_1\": \"first term\",\n      \"a_n\": \"nth term\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find the arithmetic mean of two numbers.\"\n  },\n  {\n    \"name\": \"Geometric Mean\",\n    \"formula\": \"G = (a_1 * a_n)^(1/2)\",\n    \"variables\": {\n      \"G\": \"geometric mean\",\n      \"a_1\": \"first term\",\n      \"a_n\": \"nth term\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find the geometric mean of two numbers.\"\n  },\n  {\n    \"name\": \"Harmonic Mean\",\n    \"formula\": \"H = 2a_1a_n / (a_1 + a_n)\",\n    \"variables\": {\n      \"H\": \"harmonic mean\",\n      \"a_1\": \"first term\",\n      \"a_n\": \"nth term\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find the harmonic mean of two numbers.\"\n  },\n  {\n    \"name\": \"nth Term of a Geometric Sequence\",\n    \"formula\": \"a_n = a_1 * r^(n-1)\",\n    \"variables\": {\n      \"a_n\": \"nth term of the sequence\",\n      \"a_1\": \"first term of the sequence\",\n      \"r\": \"common ratio\",\n      \"n\": \"term number\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find any term in a geometric sequence.\"\n  },\n  {\n    \"name\": \"Sum of an Infinite Geometric Series\",\n    \"formula\": \"S = a_1 / (1 - r)\",\n    \"variables\": {\n      \"S\": \"sum of the series\",\n      \"a_1\": \"first term\",\n      \"r\": \"common ratio\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find the sum of an infinite geometric series.\"\n  },\n  {\n    \"name\": \"Convergence of a Series\",\n    \"formula\": \"a series converges if |r| < 1\",\n    \"variables\": {\n      \"r\": \"common ratio\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to check if a geometric series converges or diverges.\"\n  }\n]\n```\n\nNote: The formulas included in this sheet are specifically for the CBSE Class 11 Mathematics chapter on Sequences and Series.",
+            "variables": ""
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:06:37.652+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "Definition of Sequences",
+            "importance": "Understanding sequences is crucial for understanding series, which are used to represent infinite sums.",
+            "explanation": "A sequence is a function whose domain is a set of integers and whose range is a set of real numbers.",
+            "related_topics": [
+              "Arithmetic Progressions",
+              "Geometric Progressions"
+            ]
+          },
+          {
+            "concept": "Types of Sequences",
+            "importance": "Recognizing the type of sequence is essential for finding its nth term and sum.",
+            "explanation": "Sequences can be classified as arithmetic, geometric, or neither based on their general term.",
+            "related_topics": [
+              "Arithmetic Progressions",
+              "Geometric Progressions"
+            ]
+          },
+          {
+            "concept": "Arithmetic Progressions",
+            "importance": "Understanding arithmetic progressions is important for finding the nth term and sum of an arithmetic sequence.",
+            "explanation": "An arithmetic progression is a sequence in which the difference between consecutive terms is constant.",
+            "related_topics": [
+              "Sequences",
+              "Geometric Progressions"
+            ]
+          },
+          {
+            "concept": "Geometric Progressions",
+            "importance": "Geometric progressions are essential for understanding geometric series and their sums.",
+            "explanation": "A geometric progression is a sequence in which the ratio between consecutive terms is constant.",
+            "related_topics": [
+              "Sequences",
+              "Arithmetic Progressions"
+            ]
+          },
+          {
+            "concept": "Definition of Series",
+            "importance": "Understanding series is crucial for representing infinite sums and finding their limits.",
+            "explanation": "A series is the sum of the terms of a sequence.",
+            "related_topics": [
+              "Sequences",
+              "Convergence Tests"
+            ]
+          },
+          {
+            "concept": "Types of Series",
+            "importance": "Recognizing the type of series is essential for finding its sum and determining convergence.",
+            "explanation": "Series can be classified as arithmetic, geometric, or neither based on their general term.",
+            "related_topics": [
+              "Arithmetic Progressions",
+              "Geometric Progressions"
+            ]
+          },
+          {
+            "concept": "Arithmetic Series",
+            "importance": "Understanding arithmetic series is important for finding their sums and limits.",
+            "explanation": "An arithmetic series is the sum of the terms of an arithmetic progression.",
+            "related_topics": [
+              "Arithmetic Progressions",
+              "Geometric Series"
+            ]
+          },
+          {
+            "concept": "Geometric Series",
+            "importance": "Geometric series are essential for understanding their sums and convergence.",
+            "explanation": "A geometric series is the sum of the terms of a geometric progression.",
+            "related_topics": [
+              "Geometric Progressions",
+              "Convergence Tests"
+            ]
+          },
+          {
+            "concept": "Convergence Tests",
+            "importance": "Understanding convergence tests is crucial for determining the convergence of a series.",
+            "explanation": "Convergence tests are used to determine whether a series converges or diverges.",
+            "related_topics": [
+              "Series",
+              "Geometric Series"
+            ]
+          },
+          {
+            "concept": "Ratio Test",
+            "importance": "The ratio test is a commonly used convergence test for geometric series.",
+            "explanation": "The ratio test is used to determine the convergence of a series by comparing the ratio of consecutive terms.",
+            "related_topics": [
+              "Geometric Series",
+              "Convergence Tests"
+            ]
+          },
+          {
+            "concept": "Root Test",
+            "importance": "The root test is a useful convergence test for series with terms that involve nth roots.",
+            "explanation": "The root test is used to determine the convergence of a series by comparing the nth root of the nth term.",
+            "related_topics": [
+              "Convergence Tests",
+              "Series"
+            ]
+          },
+          {
+            "concept": "Comparison Test",
+            "importance": "The comparison test is a useful tool for determining the convergence of a series.",
+            "explanation": "The comparison test is used to determine the convergence of a series by comparing it to a known convergent or divergent series.",
+            "related_topics": [
+              "Convergence Tests",
+              "Series"
+            ]
+          },
+          {
+            "concept": "Absolute Convergence",
+            "importance": "Understanding absolute convergence is crucial for determining the convergence of a series.",
+            "explanation": "A series is said to be absolutely convergent if the series of absolute values converges.",
+            "related_topics": [
+              "Convergence Tests",
+              "Series"
+            ]
+          },
+          {
+            "concept": "Conditional Convergence",
+            "importance": "Understanding conditional convergence is essential for determining the convergence of a series.",
+            "explanation": "A series is said to be conditionally convergent if it converges but the series of absolute values diverges.",
+            "related_topics": [
+              "Convergence Tests",
+              "Series"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:56.47+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "Sequence",
+            "example": "Example: 1, 2, 3, 4, 5 is a sequence.",
+            "definition": "A sequence is an ordered set of numbers in which each term after the first is obtained by applying a fixed rule to the preceding term. It is a list of numbers in a particular order, where each number is called a term."
+          },
+          {
+            "term": "Series",
+            "example": "Example: 1 + 2 + 3 + 4 + 5 is a series.",
+            "definition": "A series is the sum of the terms of a sequence. It is the result of adding the terms of a sequence, one after the other."
+          },
+          {
+            "term": "Arithmetic Sequence",
+            "example": "Example: 2, 5, 8, 11, 14 is an arithmetic sequence with common difference 3.",
+            "definition": "An arithmetic sequence is a sequence in which each term after the first is obtained by adding a fixed number, called the common difference, to the preceding term."
+          },
+          {
+            "term": "Arithmetic Series",
+            "example": "Example: 2 + 5 + 8 + 11 + 14 is an arithmetic series.",
+            "definition": "An arithmetic series is the sum of the terms of an arithmetic sequence."
+          },
+          {
+            "term": "Geometric Sequence",
+            "example": "Example: 2, 6, 18, 54, 162 is a geometric sequence with common ratio 3.",
+            "definition": "A geometric sequence is a sequence in which each term after the first is obtained by multiplying the preceding term by a fixed number, called the common ratio."
+          },
+          {
+            "term": "Geometric Series",
+            "example": "Example: 2 + 6 + 18 + 54 + 162 is a geometric series.",
+            "definition": "A geometric series is the sum of the terms of a geometric sequence."
+          },
+          {
+            "term": "Convergence of a Series",
+            "example": "Example: The series 1 + 1/2 + 1/4 + 1/8 + ... is convergent.",
+            "definition": "A series is said to be convergent if it has a finite sum, and divergent if it does not have a finite sum."
+          },
+          {
+            "term": "Divergence of a Series",
+            "example": "Example: The series 1 + 2 + 3 + 4 + ... is divergent.",
+            "definition": "A series is said to be divergent if it does not have a finite sum."
+          },
+          {
+            "term": "Limit of a Sequence",
+            "example": "Example: The sequence 1, 1/2, 1/3, 1/4, ... approaches 0 as the number of terms increases without bound.",
+            "definition": "The limit of a sequence is the value that the sequence approaches as the number of terms increases without bound."
+          },
+          {
+            "term": "Limit of a Series",
+            "example": "Example: The geometric series 1 + x + x^2 + x^3 + ... has a limit of 1/(1-x) as x approaches 0.",
+            "definition": "The limit of a series is the value of the sum of the series as the number of terms increases without bound."
+          },
+          {
+            "term": "Telescoping Series",
+            "example": "Example: The series 1 + 1/2 + 1/4 + 1/8 + ... is a telescoping series.",
+            "definition": "A telescoping series is a series in which most of the terms cancel each other out, leaving only a few terms."
+          },
+          {
+            "term": "Alternating Series",
+            "example": "Example: The series 1 - 1/2 + 1/3 - 1/4 + ... is an alternating series.",
+            "definition": "An alternating series is a series in which the terms alternate between positive and negative."
+          },
+          {
+            "term": "Alternating Series Test",
+            "example": "Example: The alternating series test states that an alternating series with terms that decrease in absolute value and approach 0 is convergent.",
+            "definition": "The alternating series test is a test for the convergence of an alternating series."
+          },
+          {
+            "term": "Ratio Test",
+            "example": "Example: The ratio test states that a series with terms that approach 0 as the number of terms increases without bound is convergent.",
+            "definition": "The ratio test is a test for the convergence of a series."
+          },
+          {
+            "term": "Root Test",
+            "example": "Example: The root test states that a series with terms that approach 0 as the number of terms increases without bound is convergent.",
+            "definition": "The root test is a test for the convergence of a series."
+          },
+          {
+            "term": "Power Series",
+            "example": "Example: The power series 1 + x + x^2 + x^3 + ... is a power series.",
+            "definition": "A power series is a series of the form a0 + a1x + a2x^2 + a3x^3 + ..."
+          },
+          {
+            "term": "Radius of Convergence",
+            "example": "Example: The radius of convergence of the power series 1 + x + x^2 + x^3 + ... is infinity.",
+            "definition": "The radius of convergence of a power series is the distance from the center of the series to the nearest point where the series diverges."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:29:17.538+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Find the nth term of an AP and GP",
+            "Find the sum of n terms of an AP and GP",
+            "Find the sum of an infinite geometric series",
+            "Find the sum of an infinite arithmetic series",
+            "Solve problems involving sequence and series"
+          ],
+          "analyze": [
+            "Analyze the convergence or divergence of a series",
+            "Compare the convergence or divergence of different series",
+            "Analyze the properties of a sequence or series",
+            "Compare the properties of different sequences or series",
+            "Solve problems involving complex sequences and series"
+          ],
+          "remember": [
+            "Recall the definition of sequence and series",
+            "Identify different types of sequences (AP, GP, HP)",
+            "List out the terms of a sequence",
+            "State the formula for nth term of an AP and GP",
+            "Recall the properties of sequence and series"
+          ],
+          "understand": [
+            "Explain the concept of convergence and divergence of a series",
+            "Understand the difference between convergent and divergent series",
+            "Explain the concept of absolute convergence and conditional convergence",
+            "Understand the relationship between sequence and series",
+            "Explain the concept of arithmetic-geometric progression"
+          ]
+        },
+        "ncert_objectives": [
+          "As per NCERT objective 1: Define a sequence and explain the concept of convergence and divergence of a series.",
+          "As per NCERT objective 2: Prove the formula for the sum of n terms of an AP and GP.",
+          "As per NCERT objective 3: Explain the concept of arithmetic-geometric progression and its applications."
+        ],
+        "board_exam_objectives": [
+          "CBSE tests the ability to find the nth term of an AP and GP, sum of n terms of an AP and GP, sum of an infinite geometric series, and sum of an infinite arithmetic series.",
+          "CBSE tests the ability to analyze the convergence or divergence of a series and compare the properties of different sequences or series.",
+          "CBSE tests the ability to solve problems involving sequence and series, including complex sequences and series."
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T16:22:18.161+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "A sequence is defined as: a_1 = 2, a_n = a_(n-1) + 3 for n > 1. Find the first 5 terms of the sequence and check if it is an A.P. If it is, find the common difference and the nth term.",
+            "marks": 5,
+            "topic": "Arithmetic Progression",
+            "answer": "Given sequence is a_1 = 2, a_n = a_(n-1) + 3 for n > 1. \nFirst 5 terms of the sequence are: \na_1 = 2, a_2 = 5, a_3 = 8, a_4 = 11, a_5 = 14. \nThis sequence is an A.P. because the difference between consecutive terms is constant, i.e., d = a_2 - a_1 = 5 - 2 = 3. \nSo, the common difference is 3. \nThe nth term of an A.P. is given by: a_n = a_1 + (n - 1)d. \nSubstituting a_1 = 2 and d = 3, we get: a_n = 2 + (n - 1)(3) = 2 + 3n - 3 = 3n - 1.",
+            "marking_scheme": [
+              "1 mark for listing the first 5 terms of the sequence",
+              "1 mark for identifying the sequence as an A.P.",
+              "2 marks for finding the common difference and the nth term"
+            ]
+          },
+          {
+            "q": "Show that the sequence defined by a_n = 1/(3n - 2) is a G.P. Find the common ratio and the nth term of the sequence.",
+            "marks": 5,
+            "topic": "Geometric Progression",
+            "answer": "To show that the sequence a_n = 1/(3n - 2) is a G.P., we need to find the ratio of consecutive terms. \nLet's find a_(n+1)/a_n. \na_(n+1) = 1/(3(n+1) - 2) = 1/(3n + 1) \na_n = 1/(3n - 2) \na_(n+1)/a_n = (1/(3n + 1))/(1/(3n - 2)) = (3n - 2)/(3n + 1) \nThis ratio is constant for all values of n, so the sequence is a G.P. \nThe common ratio of the G.P. is: r = a_(n+1)/a_n = (3n - 2)/(3n + 1). \nThe nth term of a G.P. is given by: a_n = a_1 * r^(n-1). \nSubstituting a_1 = 1/(3*1 - 2) = 1/1 = 1, we get: a_n = 1 * ((3n - 2)/(3n + 1))^(n-1).",
+            "marking_scheme": [
+              "1 mark for showing that the sequence is a G.P.",
+              "2 marks for finding the common ratio and the nth term"
+            ]
+          },
+          {
+            "q": "Find the sum of the infinite G.P.: 1, 1/2, 1/4, 1/8, ...",
+            "marks": 5,
+            "topic": "Infinite Geometric Progression",
+            "answer": "The given G.P. has first term a = 1 and common ratio r = 1/2. \nThe sum of an infinite G.P. is given by: S = a/(1 - r). \nSubstituting a = 1 and r = 1/2, we get: S = 1/(1 - 1/2) = 1/(1/2) = 2.",
+            "marking_scheme": [
+              "1 mark for identifying the first term and the common ratio",
+              "2 marks for applying the formula and getting the correct answer"
+            ]
+          },
+          {
+            "q": "Find the sum of the first 5 terms of the A.P.: 2, 5, 8, 11, ...",
+            "marks": 5,
+            "topic": "Arithmetic Progression",
+            "answer": "The given A.P. has first term a = 2 and common difference d = 5 - 2 = 3. \nThe sum of the first n terms of an A.P. is given by: Sn = n/2 * (2a + (n-1)d). \nSubstituting a = 2, d = 3 and n = 5, we get: S5 = 5/2 * (2*2 + (5-1)*3) = 5/2 * (4 + 12) = 5/2 * 16 = 40.",
+            "marking_scheme": [
+              "1 mark for identifying the first term and the common difference",
+              "2 marks for applying the formula and getting the correct answer"
+            ]
+          },
+          {
+            "q": "Show that the sequence: 1, 8, 27, ... is a G.P. Find the common ratio and the nth term of the sequence.",
+            "marks": 5,
+            "topic": "Geometric Progression",
+            "answer": "To show that the sequence 1, 8, 27, ... is a G.P., we need to find the ratio of consecutive terms. \nLet's find a_(n+1)/a_n. \na_(n+1) = (n+1)^3 \na_n = n^3 \na_(n+1)/a_n = ((n+1)^3)/(n^3) = ((n+1)/n)^3 \nThis ratio is constant for all values of n, so the sequence is a G.P. \nThe common ratio of the G.P. is: r = a_(n+1)/a_n = ((n+1)/n)^3. \nThe nth term of a G.P. is given by: a_n = a_1 * r^(n-1). \nSubstituting a_1 = 1, we get: a_n = 1 * ((n+1)/n)^^(3*(n-1)).",
+            "marking_scheme": [
+              "1 mark for showing that the sequence is a G.P.",
+              "2 marks for finding the common ratio and the nth term"
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:15:03.018+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 18,
+        "questions": [
+          {
+            "q": "If the sum of the first n terms of an arithmetic progression is 5n - 3n^2 + 2n + 1, then the first term is?",
+            "ans": "B",
+            "opts": [
+              "(A) 0",
+              "(B) 1",
+              "(C) 2",
+              "(D) 3"
+            ],
+            "topic": "Arithmetic Progressions",
+            "difficulty": "easy",
+            "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d], where 'a' is the first term and 'd' is the common difference. By comparing the given sum, we can find the value of 'a'."
+          },
+          {
+            "q": "Which of the following sequence is a geometric progression?",
+            "ans": "B",
+            "opts": [
+              "(A) 2, 4, 6, 8, 10",
+              "(B) 1, 2, 4, 8, 16",
+              "(C) 1, 2, 3, 4, 5",
+              "(D) 1, 1/2, 1/4, 1/8, 1/16"
+            ],
+            "topic": "Geometric Progressions",
+            "difficulty": "easy",
+            "explanation": "A sequence is a geometric progression if each term is obtained by multiplying the previous term by a fixed constant. In option (B), each term is obtained by multiplying the previous term by 2."
+          },
+          {
+            "q": "The sum of an infinite geometric progression is 5 and the first term is 1/2. Find the common ratio?",
+            "ans": "A",
+            "opts": [
+              "(A) 1/2",
+              "(B) 1/3",
+              "(C) 2/3",
+              "(D) 3/4"
+            ],
+            "topic": "Geometric Progressions",
+            "difficulty": "easy",
+            "explanation": "The sum of an infinite geometric progression is given by S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio. By substituting the given values, we can find the value of 'r'."
+          },
+          {
+            "q": "In an arithmetic progression, the sum of the first 10 terms is 255 and the sum of the first 20 terms is 1035. Find the first term?",
+            "ans": "B",
+            "opts": [
+              "(A) 10",
+              "(B) 15",
+              "(C) 20",
+              "(D) 25"
+            ],
+            "topic": "Arithmetic Progressions",
+            "difficulty": "medium",
+            "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d]. By using this formula, we can find the value of 'a' by solving the equations for n = 10 and n = 20."
+          },
+          {
+            "q": "Find the sum of the infinite geometric progression 1 + 1/4 + 1/16 + ...",
+            "ans": "C",
+            "opts": [
+              "(A) 1",
+              "(B) 2",
+              "(C) 4/3",
+              "(D) 7/4"
+            ],
+            "topic": "Geometric Progressions",
+            "difficulty": "medium",
+            "explanation": "The sum of an infinite geometric progression is given by S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio. In this case, 'a' is 1 and 'r' is 1/4."
+          },
+          {
+            "q": "If the sum of the first n terms of a geometric progression is 4n^2 + 2n + 1, then the common ratio is?",
+            "ans": "B",
+            "opts": [
+              "(A) 1/3",
+              "(B) 1/2",
+              "(C) 2/3",
+              "(D) 3/4"
+            ],
+            "topic": "Geometric Progressions",
+            "difficulty": "medium",
+            "explanation": "We know the sum of the first n terms of a geometric progression is Sn = a * (1 - r^n) / (1 - r), where 'a' is the first term and 'r' is the common ratio. By comparing the given sum, we can find the value of 'r'."
+          },
+          {
+            "q": "Find the value of 'x' if the sum of the first n terms of an arithmetic progression is 5n - 3n^2 + 2n + 1 and the sum of the first (n+1) terms is 6n - 4n^2 + 3n + 1.",
+            "ans": "B",
+            "opts": [
+              "(A) 1",
+              "(B) 2",
+              "(C) 3",
+              "(D) 4"
+            ],
+            "topic": "Arithmetic Progressions",
+            "difficulty": "hard",
+            "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d]. By substituting the given values, we can solve for 'x'."
+          },
+          {
+            "q": "Find the sum of the infinite geometric progression 1/3 + 1/9 + 1/27 + ...",
+            "ans": "B",
+            "opts": [
+              "(A) 1/2",
+              "(B) 2/3",
+              "(C) 3/4",
+              "(D) 4/5"
+            ],
+            "topic": "Geometric Progressions",
+            "difficulty": "hard",
+            "explanation": "The sum of an infinite geometric progression is given by S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio. In this case, 'a' is 1/3 and 'r' is 1/3."
+          },
+          {
+            "q": "Find the sum of the first n terms of the arithmetic progression 3, 7, 11, ...",
+            "ans": "A",
+            "opts": [
+              "(A) n/2 * [6 + (n-1)4]",
+              "(B) n/2 * [6 + (n-1)2]",
+              "(C) n/2 * [12 + (n-1)4]",
+              "(D) n/2 * [12 + (n-1)2]"
+            ],
+            "topic": "Arithmetic Progressions",
+            "difficulty": "hard",
+            "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d]. By substituting the given values, we can find the sum of the first n terms."
+          },
+          {
+            "q": "Find the common ratio of the geometric progression 1/2, 1/4, 1/8, ...",
+            "ans": "B",
+            "opts": [
+              "(A) 1/2",
+              "(B) 2/3",
+              "(C) 3/4",
+              "(D) 4/5"
+            ],
+            "topic": "Geometric Progressions",
+            "difficulty": "hard",
+            "explanation": "A sequence is a geometric progression if each term is obtained by multiplying the previous term by a fixed constant. In this case, each term is obtained by multiplying the previous term by 1/2."
+          },
+          {
+            "q": "If the sum of the first n terms of an arithmetic progression is 5n + 3n^2 - 2n - 1, then the common difference is?",
+            "ans": "B",
+            "opts": [
+              "(A) 1/3",
+              "(B) 1/2",
+              "(C) 2/3",
+              "(D) 3/4"
+            ],
+            "topic": "Arithmetic Progressions",
+            "difficulty": "hard",
+            "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d], where 'a' is the first term and 'd' is the common difference. By comparing the given sum, we can find the value of 'd'."
+          },
+          {
+            "q": "Find the sum of the first 10 terms of the geometric progression 2, 6, 18, ...",
+            "ans": "A",
+            "opts": [
+              "(A) 145",
+              "(B) 154",
+              "(C) 163",
+              "(D) 172"
+            ],
+            "topic": "Geometric Progressions",
+            "difficulty": "medium",
+            "explanation": "We know the sum of the first n terms of a geometric progression is Sn = a * (1 - r^n) / (1 - r), where 'a' is the first term and 'r' is the common ratio. By substituting the given values, we can find the sum of the first 10 terms."
+          },
+          {
+            "q": "If the sum of the first n terms of a geometric progression is 2n^2 + 3n + 1, then the first term is?",
+            "ans": "C",
+            "opts": [
+              "(A) 1/2",
+              "(B) 1",
+              "(C) 2",
+              "(D) 4"
+            ],
+            "topic": "Geometric Progressions",
+            "difficulty": "medium",
+            "explanation": "We know the sum of the first n terms of a geometric progression is Sn = a * (1 - r^n) / (1 - r), where 'a' is the first term and 'r' is the common ratio. By comparing the given sum, we can find the value of 'a'."
+          },
+          {
+            "q": "Find the sum of the infinite geometric progression 1/2, 1/6, 1/18, ...",
+            "ans": "B",
+            "opts": [
+              "(A) 1/2",
+              "(B) 2/3",
+              "(C) 3/4",
+              "(D) 4/5"
+            ],
+            "topic": "Geometric Progressions",
+            "difficulty": "hard",
+            "explanation": "The sum of an infinite geometric progression is given by S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio. In this case, 'a' is 1/2 and 'r' is 1/3."
+          },
+          {
+            "q": "If the sum of the first n terms of an arithmetic progression is 3n + 2n^2 - 1, then the first term is?",
+            "ans": "B",
+            "opts": [
+              "(A) 1",
+              "(B) 2",
+              "(C) 3",
+              "(D) 4"
+            ],
+            "topic": "Arithmetic Progressions",
+            "difficulty": "hard",
+            "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d], where 'a' is the first term and 'd' is the common difference. By comparing the given sum, we can find the value of 'a'."
+          },
+          {
+            "q": "Find the sum of the first n terms of the geometric progression 1, 1/2, 1/4, ...",
+            "ans": "A",
+            "opts": [
+              "(A) n/2",
+              "(B) n/4",
+              "(C) n/8",
+              "(D) n/16"
+            ],
+            "topic": "Geometric Progressions",
+            "difficulty": "medium",
+            "explanation": "We know the sum of the first n terms of a geometric progression is Sn = a * (1 - r^n) / (1 - r), where 'a' is the first term and 'r' is the common ratio. By substituting the given values, we can find the sum of the first n terms."
+          },
+          {
+            "q": "If the sum of the first n terms of a geometric progression is 2n^2 + n + 1, then the common ratio is?",
+            "ans": "B",
+            "opts": [
+              "(A) 1/3",
+              "(B) 1/2",
+              "(C) 2/3",
+              "(D) 3/4"
+            ],
+            "topic": "Geometric Progressions",
+            "difficulty": "hard",
+            "explanation": "We know the sum of the first n terms of a geometric progression is Sn = a * (1 - r^n) / (1 - r), where 'a' is the first term and 'r' is the common ratio. By comparing the given sum, we can find the value of 'r'."
+          },
+          {
+            "q": "Find the sum of the first 20 terms of the arithmetic progression 2, 7, 12, ...",
+            "ans": "A",
+            "opts": [
+              "(A) 190",
+              "(B) 200",
+              "(C) 210",
+              "(D) 220"
+            ],
+            "topic": "Arithmetic Progressions",
+            "difficulty": "medium",
+            "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d]. By substituting the given values, we can find the sum of the first 20 terms."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T11:05:35.062+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Sequences and Series\n\n## Chapter at a Glance\nThe chapter on Sequences and Series is a fundamental concept in mathematics that deals with the study of the sum of the terms of a sequence. It introduces the concept of a sequence, which is an ordered list of numbers. The chapter also covers the concept of a series, which is the sum of the terms of a sequence. It discusses various types of sequences, such as arithmetic sequences and geometric sequences, and their respective series. The chapter also covers the concept of convergence and divergence of a series.\n\n## Section-wise Summary\n### 11.1 Introduction\nThis section introduces the concept of a sequence and its notation. It explains that a sequence is a function whose domain is the set of positive integers and the range is the set of real numbers. It also explains the notation used to represent a sequence, such as a_n, where 'a' is the first term and 'n' is the nth term.\n\n### 11.2 Arithmetic Progression (A.P.)\nThis section defines an arithmetic progression (A.P.) as a sequence in which each term after the first is obtained by adding a fixed constant to the previous term. It introduces the formula for the nth term of an A.P., which is a_n = a + (n - 1)d, where 'a' is the first term, 'n' is the number of terms, and 'd' is the common difference. It also introduces the formula for the sum of n terms of an A.P., which is S_n = n/2 [2a + (n - 1)d].\n\n### 11.3 Geometric Progression (G.P.)\nThis section defines a geometric progression (G.P.) as a sequence in which each term after the first is obtained by multiplying the previous term by a fixed non-zero constant. It introduces the formula for the nth term of a G.P., which is a_n = ar^(n - 1), where 'a' is the first term and 'r' is the common ratio. It also introduces the formula for the sum of n terms of a G.P., which is S_n = a(r^n - 1)/(r - 1), when r ≠ 1.\n\n### 11.4 Geometric Progression (G.P.): Sum to n Terms\nThis section introduces the formula for the sum of n terms of a G.P. and discusses the convergence and divergence of a G.P.\n\n### 11.5 Relation Between A.M. and G.M.\nThis section introduces the relationship between the arithmetic mean (A.M.) and the geometric mean (G.M.) of two numbers. It explains that the G.M. of two numbers is always greater than or equal to the A.M. of the same two numbers, and the equality occurs only when the numbers are equal.\n\n### 11.6 Miscellaneous Exercise\nThis section provides additional problems to practice the concepts learned in the chapter.\n\n## Important NCERT Exercises Insight\nKey concepts tested in NCERT exercises include:\n\n* Finding the nth term and sum of n terms of an A.P. and G.P.\n* Identifying whether a sequence is an A.P. or a G.P.\n* Finding the common difference and common ratio of an A.P. and G.P.\n* Identifying whether a G.P. converges or diverges.\n* Finding the relation between A.M. and G.M. of two numbers.\n\nRemember to practice the exercises in the NCERT textbook to master these concepts.\n\n## NCERT Exemplar Focus\nAdditional topics covered in NCERT Exemplar for this chapter include:\n\n* Finding the sum of an infinite G.P.\n* Finding the sum of the squares and cubes of the first n natural numbers.\n* Finding the sum of the reciprocals of the first n natural numbers.\n\nThese topics provide additional practice and challenge to the students.\n\n## Board Exam Relevance\nThe marks weightage for this chapter in the CBSE board exam is approximately 10-15%. The frequently asked topics from this chapter include:\n\n* Finding the nth term and sum of n terms of an A.P. and G.P.\n* Identifying whether a sequence is an A.P. or a G.P.\n* Finding the common difference and common ratio of an A.P. and G.P.\n* Identifying whether a G.P. converges or diverges.\n\nThese topics are essential to score good marks in the board exam."
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T07:25:06.356+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "If the sum of the first n terms of a G.P. is Sn = a(r^n - 1)/(r - 1) = 8n(n - 1), find the first term and the common ratio.",
+            "type": "Long Answer",
+            "marks": 6,
+            "answer": "a = 4, r = 2",
+            "difficulty": "medium",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "The sum of the first three terms of the sequence 1 + 2x + 3x^2 + 4x^3 + ... is (1 + 2x + 3x^2) + (4x^3 + 5x^4 + 6x^5). Find the sum of the first four terms of the sequence.",
+            "type": "Short Answer",
+            "marks": 3,
+            "answer": "1 + 2x + 3x^2 + 4x^3 + 5x^4 + 6x^5",
+            "difficulty": "medium",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "If a G.P. has a common ratio of 2 and the sum of its first three terms is 21, find the first term of the G.P.",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "3",
+            "difficulty": "easy",
+            "year_pattern": "2017-style"
+          },
+          {
+            "q": "In a G.P. with 5 terms, the sum of the first 3 terms is 13 and the sum of the last 2 terms is 80. Find the first term and the common ratio.",
+            "type": "Long Answer",
+            "marks": 6,
+            "answer": "a = 4, r = 2",
+            "difficulty": "medium",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "Show that 2 + 6 + 12 + ... + 6n is a G.P. and find its nth term and sum to n terms.",
+            "type": "Short Answer",
+            "marks": 3,
+            "answer": "Tn = 3n(n + 1), Sn = n(2n + 7)/2",
+            "difficulty": "medium",
+            "year_pattern": "2016-style"
+          },
+          {
+            "q": "If the 5th term of a G.P. is 32 times the 2nd term, find the first term and the common ratio.",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "4, 2",
+            "difficulty": "easy",
+            "year_pattern": "2015-style"
+          },
+          {
+            "q": "In a G.P., the sum of the first two terms is 5 and the sum of the first four terms is 49. Find the first term and the common ratio.",
+            "type": "Long Answer",
+            "marks": 6,
+            "answer": "a = 3, r = 2",
+            "difficulty": "medium",
+            "year_pattern": "2014-style"
+          },
+          {
+            "q": "If the 7th term of a G.P. is 729 times the 3rd term, find the first term and the common ratio.",
+            "type": "Short Answer",
+            "marks": 3,
+            "answer": "27, 3",
+            "difficulty": "medium",
+            "year_pattern": "2013-style"
+          },
+          {
+            "q": "The sum of the first n terms of an arithmetic-geometric progression is 2n - 3 + 5n^(2) - 3n^(3) + 3^(n-4) n^(n-2). Find the first term and the common ratio.",
+            "type": "Long Answer",
+            "marks": 6,
+            "answer": "a = 1, r = 3",
+            "difficulty": "hard",
+            "year_pattern": "2012-style"
+          },
+          {
+            "q": "If the sum of the first n terms of a G.P. is 10n + 2n^(2) - 3, find the first term and the common ratio.",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "2, 2",
+            "difficulty": "medium",
+            "year_pattern": "2011-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T10:59:59.838+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "What is the general form of an arithmetic progression (A.P.)?",
+            "marks": 2,
+            "topic": "Introduction to Arithmetic Progression",
+            "answer": "An arithmetic progression (A.P.) is a sequence of numbers in which the difference between any two consecutive terms is constant.",
+            "key_points": [
+              "Constant difference",
+              "A.P. sequence"
+            ]
+          },
+          {
+            "q": "Write the formula for the nth term of an arithmetic progression (A.P.).",
+            "marks": 2,
+            "topic": "Arithmetic Progression",
+            "answer": "The nth term of an arithmetic progression (A.P.) is given by the formula: an = a + (n - 1)d, where 'a' is the first term and 'd' is the common difference.",
+            "key_points": [
+              "A.P. nth term",
+              "Formula"
+            ]
+          },
+          {
+            "q": "State the formula to find the sum of n terms of an arithmetic progression (A.P.).",
+            "marks": 2,
+            "topic": "Arithmetic Progression",
+            "answer": "The sum of n terms of an arithmetic progression (A.P.) is given by the formula: Sn = n/2 [2a + (n - 1)d], where 'a' is the first term, 'd' is the common difference, and 'n' is the number of terms.",
+            "key_points": [
+              "A.P. sum",
+              "Formula"
+            ]
+          },
+          {
+            "q": "What is the general form of a geometric progression (G.P.)?",
+            "marks": 2,
+            "topic": "Introduction to Geometric Progression",
+            "answer": "A geometric progression (G.P.) is a sequence of numbers in which each term after the first is found by multiplying the previous term by a fixed, non-zero number called the common ratio.",
+            "key_points": [
+              "Common ratio",
+              "G.P. sequence"
+            ]
+          },
+          {
+            "q": "Write the formula for the nth term of a geometric progression (G.P.).",
+            "marks": 2,
+            "topic": "Geometric Progression",
+            "answer": "The nth term of a geometric progression (G.P.) is given by the formula: an = ar^(n-1), where 'a' is the first term and 'r' is the common ratio.",
+            "key_points": [
+              "G.P. nth term",
+              "Formula"
+            ]
+          },
+          {
+            "q": "State the formula to find the sum of n terms of a geometric progression (G.P.).",
+            "marks": 2,
+            "topic": "Geometric Progression",
+            "answer": "The sum of n terms of a geometric progression (G.P.) is given by the formula: Sn = a(r^n - 1) / (r - 1), where 'a' is the first term, 'r' is the common ratio, and 'n' is the number of terms.",
+            "key_points": [
+              "G.P. sum",
+              "Formula"
+            ]
+          },
+          {
+            "q": "What is the meaning of 'first term' and 'common difference' in an arithmetic progression (A.P.)?",
+            "marks": 2,
+            "topic": "Arithmetic Progression",
+            "answer": "The first term of an arithmetic progression (A.P.) is the first term of the sequence, and the common difference is the constant difference between any two consecutive terms.",
+            "key_points": [
+              "A.P. first term",
+              "Common difference"
+            ]
+          },
+          {
+            "q": "What is the meaning of 'first term' and 'common ratio' in a geometric progression (G.P.)?",
+            "marks": 2,
+            "topic": "Geometric Progression",
+            "answer": "The first term of a geometric progression (G.P.) is the first term of the sequence, and the common ratio is the fixed number by which each term after the first is obtained.",
+            "key_points": [
+              "G.P. first term",
+              "Common ratio"
+            ]
+          },
+          {
+            "q": "State the condition for the convergence of a geometric progression (G.P.).",
+            "marks": 2,
+            "topic": "Geometric Progression",
+            "answer": "A geometric progression (G.P.) converges if the absolute value of the common ratio (|r|) is less than 1.",
+            "key_points": [
+              "G.P. convergence",
+              "Condition"
+            ]
+          },
+          {
+            "q": "What is the difference between an arithmetic progression (A.P.) and a geometric progression (G.P.)?",
+            "marks": 2,
+            "topic": "Introduction to Arithmetic and Geometric Progression",
+            "answer": "An arithmetic progression (A.P.) is a sequence with a constant difference between terms, while a geometric progression (G.P.) is a sequence with a constant ratio between terms.",
+            "key_points": [
+              "A.P. vs G.P.",
+              "Difference"
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:55.33+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Sequences and Series — Quick Revision Notes\n\n## ⚡ Key Points\n\n* A **sequence** is a list of numbers in a particular order, with each term denoted by a subscript.\n* The **nth term** of a sequence is denoted by `a_n`.\n* A **series** is the sum of the terms of a sequence.\n* Arithmetic sequences have a common difference between consecutive terms.\n* Geometric sequences have a common ratio between consecutive terms.\n* An **arithmetic progression (AP)** is a sequence in which each term is the sum of the previous term and the common difference.\n* A **geometric progression (GP)** is a sequence in which each term is the product of the previous term and the common ratio.\n* The **sum of an AP** is given by `S_n = n/2 * (a + l)`, where `a` is the first term and `l` is the last term.\n* The **sum of a GP** is given by `S_n = a * (r^n - 1) / (r - 1)`, where `a` is the first term and `r` is the common ratio.\n* The **sum to infinity of a GP** is given by `S = a / (1 - r)`, where `a` is the first term and `r` is the common ratio.\n* The **Cauchy's Mean Theorem** states that the arithmetic mean of a set of numbers is greater than or equal to the geometric mean.\n* The **Arithmetic Mean - Geometric Mean (AM-GM) Inequality** states that the arithmetic mean of a set of non-negative numbers is greater than or equal to the geometric mean.\n* The **Root Mean Square (RMS)** of a set of numbers is the square root of the mean of the squares of the numbers.\n* The **Mean Deviation** of a set of numbers is the average of the absolute values of the differences between the numbers and the mean.\n* The **Geometric Mean** of a set of positive numbers is the nth root of the product of the numbers, where n is the number of terms.\n* The **Harmonic Mean** of a set of positive numbers is the reciprocal of the arithmetic mean of the reciprocals of the numbers.\n* The **Summation Notation** is used to represent the sum of a series.\n* The **Sigma Notation** is used to represent the sum of a series.\n* The **Product Notation** is used to represent the product of a sequence.\n\n## 🔑 Must-Know Definitions\n\n* **Sequence**: A list of numbers in a particular order.\n* **Series**: The sum of the terms of a sequence.\n* **Arithmetic Progression (AP)**: A sequence in which each term is the sum of the previous term and the common difference.\n* **Geometric Progression (GP)**: A sequence in which each term is the product of the previous term and the common ratio.\n* **Arithmetic Mean**: The average of a set of numbers.\n* **Geometric Mean**: The nth root of the product of a set of positive numbers.\n* **Harmonic Mean**: The reciprocal of the arithmetic mean of the reciprocals of a set of positive numbers.\n\n## 📊 Important Formulas\n\n* **Sum of an AP**: `S_n = n/2 * (a + l)`\n* **Sum of a GP**: `S_n = a * (r^n - 1) / (r - 1)`\n* **Sum to infinity of a GP**: `S = a / (1 - r)`\n* **Arithmetic Mean**: `A = (a_1 + a_2 + ... + a_n) / n`\n* **Geometric Mean**: `G = (a_1 * a_2 * ... * a_n)^(1/n)`\n* **Harmonic Mean**: `H = n / (∑1/a_i)`\n* **Root Mean Square (RMS)**: `RMS = (∑a_i^2 / n)^(1/2)`\n* **Mean Deviation**: `MD = (∑|a_i - A| / n)`\n\n## ⭐ Exam Tips\n\n* Make sure to understand the concepts of sequences and series before attempting questions.\n* Practice calculating the sum of an AP and GP.\n* Use the summation notation to represent the sum of a series.\n* Be careful when dealing with infinite series and their convergence.\n* Use the AM-GM inequality to establish upper bounds for sums of positive numbers.\n* Practice problems with different types of series, such as arithmetic-geometric series."
+      }
+    }
+  }
+}

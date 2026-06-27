@@ -1,0 +1,104 @@
+{
+  "class": "11",
+  "subject": "English",
+  "chapter": "We're Not Afraid to Die",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:08:09.367Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "The Law of Universal Gravitation",
+        "formula": "F = G * (m1 * m2) / r^2",
+        "variables": "F: Force, G: Gravitational constant, m1: Mass of object 1, m2: Mass of object 2, r: Distance between objects",
+        "units": "N (Newtons) for force, m^3 kg^-1 s^-2 for gravitational constant",
+        "notes": "This law explains the gravitational force between two objects and is used to describe the motion of planets around the sun."
+      },
+      {
+        "name": "Hooke's Law",
+        "formula": "F = k * x",
+        "variables": "F: Force, k: Spring constant, x: Displacement from equilibrium position",
+        "units": "N (Newtons) for force, Nm^-1 (Newtons per meter) for spring constant",
+        "notes": "This law describes the relationship between the force exerted on a spring and its displacement from its equilibrium position."
+      },
+      {
+        "name": "Work-Energy Theorem",
+        "formula": "W = ΔE",
+        "variables": "W: Work done, ΔE: Change in energy",
+        "units": "J (Joules) for work and energy",
+        "notes": "This theorem states that the work done on an object is equal to the change in its energy."
+      },
+      {
+        "name": "Energy Conservation",
+        "formula": "E = E_initial + W",
+        "variables": "E: Total energy, E_initial: Initial energy, W: Work done",
+        "units": "J (Joules) for energy",
+        "notes": "This law states that the total energy of an isolated system remains constant over time."
+      },
+      {
+        "name": "Power",
+        "formula": "P = W / t",
+        "variables": "P: Power, W: Work done, t: Time taken",
+        "units": "W (Watts) for power, J (Joules) for work and time in seconds",
+        "notes": "This formula calculates the rate at which work is done."
+      },
+      {
+        "name": "Impulse-Momentum Theorem",
+        "formula": "J = Δp",
+        "variables": "J: Impulse, Δp: Change in momentum",
+        "units": "Ns (Newtons seconds) for impulse and momentum",
+        "notes": "This theorem states that the impulse applied to an object is equal to the change in its momentum."
+      },
+      {
+        "name": "Momentum",
+        "formula": "p = m * v",
+        "variables": "p: Momentum, m: Mass, v: Velocity",
+        "units": "kg m/s (kilogram meters per second) for momentum, kg for mass, m/s for velocity",
+        "notes": "This formula calculates the momentum of an object."
+      },
+      {
+        "name": "Velocity-Time Graph",
+        "formula": "v = Δx / Δt",
+        "variables": "v: Velocity, Δx: Displacement, Δt: Time taken",
+        "units": "m/s (meters per second) for velocity, m for displacement and time in seconds",
+        "notes": "This formula calculates the average velocity of an object from a velocity-time graph."
+      },
+      {
+        "name": "Displacement-Time Graph",
+        "formula": "s = Δx",
+        "variables": "s: Displacement, Δx: Displacement",
+        "units": "m (meters) for displacement",
+        "notes": "This formula calculates the displacement of an object from a displacement-time graph."
+      },
+      {
+        "name": "Acceleration-Time Graph",
+        "formula": "a = Δv / Δt",
+        "variables": "a: Acceleration, Δv: Change in velocity, Δt: Time taken",
+        "units": "m/s^2 (meters per second squared) for acceleration, m/s for velocity and time in seconds",
+        "notes": "This formula calculates the average acceleration of an object from an acceleration-time graph."
+      },
+      {
+        "name": "Velocity-Displacement Graph",
+        "formula": "v = Δx / Δt",
+        "variables": "v: Velocity, Δx: Displacement, Δt: Time taken",
+        "units": "m/s (meters per second) for velocity, m for displacement and time in seconds",
+        "notes": "This formula calculates the average velocity of an object from a velocity-displacement graph."
+      },
+      {
+        "name": "Area Under Velocity-Time Graph",
+        "formula": "s = Area under v-t graph",
+        "variables": "s: Displacement, v: Velocity, t: Time",
+        "units": "m (meters) for displacement, m/s (meters per second) for velocity and time in seconds",
+        "notes": "This formula calculates the displacement of an object from the area under its velocity-time graph."
+      },
+      {
+        "name": "Area Under Displacement-Time Graph",
+        "formula": "s = Area under s-t graph",
+        "variables": "s: Displacement, t: Time",
+        "units": "m (meters) for displacement and time in seconds",
+        "notes": "This formula calculates the displacement of an object from the area under its displacement-time graph."
+      }
+    ]
+  }
+}

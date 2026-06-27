@@ -1,0 +1,139 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Thermodynamics",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:21:32.903Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Zeroth Law of Thermodynamics",
+        "formula": "If two systems are in thermal equilibrium with a third system, then they are also in thermal equilibrium with each other.",
+        "notes": "This law helps in defining the temperature scale, such as Celsius or Kelvin."
+      },
+      {
+        "name": "Ideal Gas Equation",
+        "formula": "PV = nRT",
+        "variables": {
+          "P": "Pressure",
+          "V": "Volume",
+          "n": "Number of moles",
+          "R": "Gas constant",
+          "T": "Temperature in Kelvin"
+        },
+        "units": {
+          "P": "Pa",
+          "V": "m³",
+          "n": "mol",
+          "R": "J/mol·K",
+          "T": "K"
+        },
+        "notes": "This equation relates the pressure, volume, and temperature of an ideal gas."
+      },
+      {
+        "name": "Ideal Gas Constant",
+        "formula": "R = 8.3145 J/mol·K",
+        "notes": "The value of R can be used in the ideal gas equation."
+      },
+      {
+        "name": "Charles' Law",
+        "formula": "V1 / T1 = V2 / T2",
+        "variables": {
+          "V1": "Initial volume",
+          "T1": "Initial temperature",
+          "V2": "Final volume",
+          "T2": "Final temperature"
+        },
+        "units": {
+          "V": "m³",
+          "T": "K"
+        },
+        "notes": "This law states that at constant pressure, the volume of a gas is directly proportional to its temperature."
+      },
+      {
+        "name": "Gay-Lussac's Law",
+        "formula": "P1 / T1 = P2 / T2",
+        "variables": {
+          "P1": "Initial pressure",
+          "T1": "Initial temperature",
+          "P2": "Final pressure",
+          "T2": "Final temperature"
+        },
+        "units": {
+          "P": "Pa",
+          "T": "K"
+        },
+        "notes": "This law states that at constant volume, the pressure of a gas is directly proportional to its temperature."
+      },
+      {
+        "name": "Combined Gas Law",
+        "formula": "P1V1 / T1 = P2V2 / T2",
+        "variables": {
+          "P1": "Initial pressure",
+          "V1": "Initial volume",
+          "T1": "Initial temperature",
+          "P2": "Final pressure",
+          "V2": "Final volume",
+          "T2": "Final temperature"
+        },
+        "units": {
+          "P": "Pa",
+          "V": "m³",
+          "T": "K"
+        },
+        "notes": "This law combines Charles' Law and Gay-Lussac's Law."
+      },
+      {
+        "name": "First Law of Thermodynamics",
+        "formula": "ΔE = Q - W",
+        "variables": {
+          "ΔE": "Change in internal energy",
+          "Q": "Heat added to the system",
+          "W": "Work done by the system"
+        },
+        "units": {
+          "E": "J",
+          "Q": "J",
+          "W": "J"
+        },
+        "notes": "This law states that the change in internal energy of a system is equal to the heat added to the system minus the work done by the system."
+      },
+      {
+        "name": "Second Law of Thermodynamics",
+        "formula": "ΔS = ΔQ / T",
+        "variables": {
+          "ΔS": "Change in entropy",
+          "ΔQ": "Heat added to the system",
+          "T": "Temperature in Kelvin"
+        },
+        "units": {
+          "S": "J/K",
+          "Q": "J",
+          "T": "K"
+        },
+        "notes": "This law states that the change in entropy of a system is equal to the heat added to the system divided by the temperature."
+      },
+      {
+        "name": "Kelvin-Planck Statement of Second Law of Thermodynamics",
+        "formula": "No heat engine can convert all the heat energy put into it into work.",
+        "notes": "This statement describes the second law of thermodynamics."
+      },
+      {
+        "name": "Carnot's Theorem",
+        "formula": "η = 1 - (Tc / Th)",
+        "variables": {
+          "η": "Efficiency",
+          "Tc": "Temperature of the cold reservoir",
+          "Th": "Temperature of the hot reservoir"
+        },
+        "units": {
+          "η": "1",
+          "T": "K"
+        },
+        "notes": "This theorem states that the maximum efficiency of a heat engine is given by Carnot's formula."
+      }
+    ]
+  }
+}

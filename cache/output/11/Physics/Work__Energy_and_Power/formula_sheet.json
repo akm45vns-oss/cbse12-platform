@@ -1,0 +1,83 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Work, Energy and Power",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:23:37.289Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Work Done by a Constant Force",
+        "formula": "W = F * s * cos(θ)",
+        "variables": "W = Work done, F = Force applied, s = Displacement, θ = Angle between force and displacement",
+        "units": "Joule (J)",
+        "notes": "Work is done only when the force and displacement are in the same direction."
+      },
+      {
+        "name": "Work Done by a Variable Force",
+        "formula": "W = ∫F * ds",
+        "variables": "W = Work done, F = Force applied, ds = Small displacement",
+        "units": "Joule (J)",
+        "notes": "This formula is used when the force is variable."
+      },
+      {
+        "name": "Kinetic Energy of an Object",
+        "formula": "KE = 1/2 mv^2",
+        "variables": "KE = Kinetic energy, m = Mass of the object, v = Velocity of the object",
+        "units": "Joule (J)",
+        "notes": "Kinetic energy is the energy of motion."
+      },
+      {
+        "name": "Potential Energy of an Object at Height",
+        "formula": "PE = mgh",
+        "variables": "PE = Potential energy, m = Mass of the object, g = Acceleration due to gravity, h = Height of the object",
+        "units": "Joule (J)",
+        "notes": "Potential energy is the energy of position."
+      },
+      {
+        "name": "Potential Energy of an Object at a Depth",
+        "formula": "PE = -kx",
+        "variables": "PE = Potential energy, k = Spring constant, x = Displacement from equilibrium position",
+        "units": "Joule (J)",
+        "notes": "This formula is used for an object attached to a spring."
+      },
+      {
+        "name": "Potential Energy of an Object due to Gravitational Potential Energy",
+        "formula": "PE = mgh",
+        "variables": "PE = Potential energy, m = Mass of the object, g = Acceleration due to gravity, h = Height of the object",
+        "units": "Joule (J)",
+        "notes": "This formula is used when the object is at a certain height."
+      },
+      {
+        "name": "Potential Energy of an Object due to Elastic Potential Energy",
+        "formula": "PE = 1/2 kx^2",
+        "variables": "PE = Potential energy, k = Spring constant, x = Displacement from equilibrium position",
+        "units": "Joule (J)",
+        "notes": "This formula is used for an object attached to a spring."
+      },
+      {
+        "name": "Power",
+        "formula": "P = W / t",
+        "variables": "P = Power, W = Work done, t = Time taken",
+        "units": "Watt (W)",
+        "notes": "Power is the rate of doing work."
+      },
+      {
+        "name": "Work-Energy Theorem",
+        "formula": "ΔK = ΔU + W",
+        "variables": "ΔK = Change in kinetic energy, ΔU = Change in potential energy, W = Work done",
+        "units": "Joule (J)",
+        "notes": "This theorem states that the change in kinetic energy of an object is equal to the change in its potential energy plus the work done on it."
+      },
+      {
+        "name": "Law of Conservation of Energy",
+        "formula": "E = KE + PE",
+        "variables": "E = Total energy, KE = Kinetic energy, PE = Potential energy",
+        "units": "Joule (J)",
+        "notes": "This law states that the total energy of an isolated system remains constant."
+      }
+    ]
+  }
+}

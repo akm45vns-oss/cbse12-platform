@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Introduction to Databases",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:49:44.343Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a database?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "A collection of interrelated data",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Distinguish between primary and foreign key in a database table.",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "Primary key is a field that uniquely identifies each record in a table, whereas foreign key is a field that references the primary key in another table.",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "What is the purpose of normalization in database design?",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Normalization is the process of organizing the data in a database to minimize data redundancy and improve data integrity. It involves dividing large tables into smaller tables and linking them through relationships.",
+        "year_pattern": "2015-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "What is a relation in the context of a database?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "A relation is a table with rows and columns.",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the difference between a database and a data warehouse?",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "A database is a collection of data that is used for transactional purposes, whereas a data warehouse is a collection of data that is used for analytical purposes.",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Define the term 'data integrity' in the context of a database.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "Data integrity refers to the accuracy and consistency of data in a database.",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What are the different types of database models?",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "There are three main types of database models: hierarchical, network, and relational. The hierarchical model is based on a tree-like structure, the network model is based on a graph-like structure, and the relational model is based on tables.",
+        "year_pattern": "2014-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "What is the purpose of a database schema?",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "A database schema is a visual representation of the database structure, including the relationships between tables and data types.",
+        "year_pattern": "2021-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "What is the difference between a primary key and a unique key in a database table?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "A primary key is a field that uniquely identifies each record in a table, whereas a unique key is a field that ensures uniqueness of values in a table.",
+        "year_pattern": "2013-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "What is a database management system (DBMS)?",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "A DBMS is a software system that allows you to define, create, and manage databases. It provides a way to store, retrieve, and manipulate data in a database.",
+        "year_pattern": "2012-style",
+        "difficulty": "hard"
+      }
+    ],
+    "total": 10
+  }
+}

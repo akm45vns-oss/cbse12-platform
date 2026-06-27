@@ -1,0 +1,118 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:19:46.248Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the Binomial Theorem and what does it help us derive?",
+        "marks": 2,
+        "answer": "The Binomial Theorem is a mathematical concept that helps us expand the expression of (a + b)^n, where n is a positive integer. It helps us derive the coefficients of each term in the expansion.",
+        "key_points": [
+          "Binomial Theorem",
+          "Expansion of (a + b)^n"
+        ],
+        "topic": "Introduction"
+      },
+      {
+        "q": "What is the general term in the expansion of (a + b)^n? ",
+        "marks": 2,
+        "answer": "The general term in the expansion of (a + b)^n is given by T_r = ^nC_r * a^(n-r) * b^r, where r is a positive integer.",
+        "key_points": [
+          "General term",
+          "Combination notation"
+        ],
+        "topic": "General Term"
+      },
+      {
+        "q": "How do you find the value of a binomial coefficient using the formula?",
+        "marks": 2,
+        "answer": "The value of a binomial coefficient can be found using the formula nCr = n! / (r! * (n-r)!) where n! denotes the factorial of n.",
+        "key_points": [
+          "Binomial coefficient",
+          "Factorial notation"
+        ],
+        "topic": "Binomial Coefficients"
+      },
+      {
+        "q": "State the condition for the Binomial Theorem to be applicable.",
+        "marks": 2,
+        "answer": "The Binomial Theorem is applicable when n is a positive integer.",
+        "key_points": [
+          "Applicability",
+          "Positive integer"
+        ],
+        "topic": "General Term"
+      },
+      {
+        "q": "Explain the concept of the Binomial Theorem for a negative integer n.",
+        "marks": 3,
+        "answer": "The Binomial Theorem can be extended to negative integer values of n by using the formula (a + b)^(-n) = 1 / (a + b)^n. This involves finding the reciprocal of each term in the expansion of (a + b)^n.",
+        "key_points": [
+          "Negative integer n",
+          "Reciprocal expansion"
+        ],
+        "topic": "Negative Integer Exponents"
+      },
+      {
+        "q": "What is the value of (a + b)^(-1) according to the Binomial Theorem?",
+        "marks": 2,
+        "answer": "The value of (a + b)^(-1) is given by 1 / (a + b) = a^(-1) - b^(-1) according to the Binomial Theorem.",
+        "key_points": [
+          "Reciprocal expansion",
+          "Negative exponent"
+        ],
+        "topic": "Negative Integer Exponents"
+      },
+      {
+        "q": "How do you find the value of (a + b)^(-n) according to the Binomial Theorem?",
+        "marks": 3,
+        "answer": "The value of (a + b)^(-n) is given by 1 / (a + b)^n = a^(-n) - n * a^(-n-1) * b + n(n+1)/2 * a^(-n-2) * b^2 - ... (to infinity) according to the Binomial Theorem.",
+        "key_points": [
+          "Negative exponent",
+          "Reciprocal expansion",
+          "Alternating series"
+        ],
+        "topic": "Negative Integer Exponents"
+      },
+      {
+        "q": "Explain the concept of the Binomial Theorem for a fractional exponent n.",
+        "marks": 3,
+        "answer": "The Binomial Theorem can be extended to fractional values of n by using the formula (a + b)^(m/n) = (a^(1/n) + b^(1/n))^m according to the Binomial Theorem. This involves finding the m-th power of each term in the expansion of (a^(1/n) + b^(1/n)).",
+        "key_points": [
+          "Fractional exponent",
+          "Exponentiation",
+          "Binomial expansion"
+        ],
+        "topic": "Fractional Exponents"
+      },
+      {
+        "q": "State the Binomial Theorem for a non-positive integer n.",
+        "marks": 2,
+        "answer": "The Binomial Theorem for a non-positive integer n is given by (a + b)^n = Σ (nC_r) * (-1)^r * a^(n-r) * b^r, r = 0, 1, 2, ..., |n|.",
+        "key_points": [
+          "Non-positive integer n",
+          "Alternating series",
+          "Binomial expansion"
+        ],
+        "topic": "Non-Positive Integer Exponents"
+      },
+      {
+        "q": "Explain the concept of the Binomial Theorem for a non-integer exponent n.",
+        "marks": 3,
+        "answer": "The Binomial Theorem can be extended to non-integer values of n by using the formula (a + b)^n = Σ (nC_r) * a^(n-r) * b^r, r = 0, 1, 2, ..., |n|, where the binomial coefficients are defined using the Gamma function.",
+        "key_points": [
+          "Non-integer exponent",
+          "Gamma function",
+          "Binomial expansion"
+        ],
+        "topic": "Non-Integer Exponents"
+      }
+    ],
+    "total": 10
+  }
+}

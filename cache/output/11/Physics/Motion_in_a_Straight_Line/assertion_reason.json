@@ -1,0 +1,134 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Motion in a Straight Line",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:10:58.532Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The motion of an object along a straight line is one-dimensional.",
+        "reason": "Reason (R): Any motion can be resolved into a component along a straight line.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The motion of an object along a straight line is indeed one-dimensional. Any motion can be resolved into a component along a straight line, making this reason a correct explanation of the assertion."
+      },
+      {
+        "assertion": "Assertion (A): If the position of an object is given by s = 3t^2 + 2t + 1, then the object is moving uniformly.",
+        "reason": "Reason (R): For an object to be moving uniformly, its velocity should be constant.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The given equation of position is not linear, indicating that the velocity of the object is not constant, and hence, the object is not moving uniformly."
+      },
+      {
+        "assertion": "Assertion (A): The acceleration of an object is given by a = 4t + 2.",
+        "reason": "Reason (R): For an object to be moving uniformly, its acceleration should be zero.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The given equation of acceleration is not zero, indicating that the object is not moving uniformly. However, the reason that acceleration should be zero for uniform motion is true."
+      },
+      {
+        "assertion": "Assertion (A): The motion of an object is said to be uniform if the object covers equal distances in equal intervals of time.",
+        "reason": "Reason (R): For an object to be moving uniformly, its velocity should be constant.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The motion of an object is indeed said to be uniform if the object covers equal distances in equal intervals of time. This is a direct consequence of the object's velocity being constant."
+      },
+      {
+        "assertion": "Assertion (A): If the velocity of an object is given by v = 2t + 1, then the object is moving uniformly.",
+        "reason": "Reason (R): For an object to be moving uniformly, its acceleration should be zero.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "The given equation of velocity is linear, indicating that the acceleration of the object is not zero. Hence, the object is not moving uniformly, but the reason that acceleration should be zero for uniform motion is true."
+      },
+      {
+        "assertion": "Assertion (A): The position of an object at time t is given by s = 2t^2 + 3t + 1.",
+        "reason": "Reason (R): The equation of position of an object is linear.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The given equation of position is not linear, indicating that the position of the object is not given by a linear equation."
+      },
+      {
+        "assertion": "Assertion (A): If the acceleration of an object is given by a = 2t^2 + 3t - 1, then the object is moving uniformly.",
+        "reason": "Reason (R): For an object to be moving uniformly, its velocity should be constant.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The given equation of acceleration is not constant, indicating that the velocity of the object is not constant, and hence, the object is not moving uniformly."
+      },
+      {
+        "assertion": "Assertion (A): The velocity of an object is given by v = 2t + 1.",
+        "reason": "Reason (R): The equation of velocity of an object is a linear equation.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The given equation of velocity is indeed a linear equation, and the velocity of the object is given by this equation."
+      },
+      {
+        "assertion": "Assertion (A): If the position of an object is given by s = 2t^2 + 3t + 1, then the object is moving uniformly.",
+        "reason": "Reason (R): For an object to be moving uniformly, its velocity should be constant.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The given equation of position is not linear, indicating that the velocity of the object is not constant, and hence, the object is not moving uniformly."
+      },
+      {
+        "assertion": "Assertion (A): The motion of an object is said to be uniform if the object covers unequal distances in equal intervals of time.",
+        "reason": "Reason (R): For an object to be moving uniformly, its velocity should be constant.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The motion of an object is not said to be uniform if the object covers unequal distances in equal intervals of time, as this implies a non-constant velocity."
+      }
+    ],
+    "total": 10
+  }
+}

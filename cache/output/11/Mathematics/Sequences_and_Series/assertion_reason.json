@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Sequences and Series",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:15:01.500Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The sum of a finite geometric progression is given by Sn = a * (r^n - 1) / (r - 1), where 'a' is the first term and 'r' is the common ratio.",
+        "reason": "Reason (R): This formula is derived from the sum of the terms of a finite geometric progression.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This formula is indeed derived from the sum of the terms of a finite geometric progression, making both the assertion and reason true and the reason a correct explanation of the assertion."
+      },
+      {
+        "assertion": "Assertion (A): The general term of a geometric progression is given by tn = a * r^(n-1), where 'a' is the first term and 'r' is the common ratio.",
+        "reason": "Reason (R): This formula is a generalization of the terms of a geometric progression.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This formula is indeed a generalization of the terms of a geometric progression, making both the assertion and reason true and the reason a correct explanation of the assertion."
+      },
+      {
+        "assertion": "Assertion (A): A sequence is a collection of objects in a particular order.",
+        "reason": "Reason (R): This is the definition of a sequence.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This is indeed the definition of a sequence, making both the assertion and reason true and the reason a correct explanation of the assertion."
+      },
+      {
+        "assertion": "Assertion (A): A geometric progression is a sequence of numbers in which each term after the first is found by multiplying the previous one by a fixed, non-zero number called the common ratio.",
+        "reason": "Reason (R): This is a characteristic of a geometric progression.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This is indeed a characteristic of a geometric progression, making both the assertion and reason true and the reason a correct explanation of the assertion."
+      },
+      {
+        "assertion": "Assertion (A): The sum of the terms of an infinite geometric progression is given by S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio.",
+        "reason": "Reason (R): This formula is valid when |r| < 1.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The formula is actually valid when |r| < 1, but the assertion is true, making the assertion true and the reason false."
+      },
+      {
+        "assertion": "Assertion (A): The general term of an arithmetic progression is given by tn = a + (n - 1)d, where 'a' is the first term and 'd' is the common difference.",
+        "reason": "Reason (R): This formula is a generalization of the terms of an arithmetic progression.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This formula is indeed a generalization of the terms of an arithmetic progression, making both the assertion and reason true and the reason a correct explanation of the assertion."
+      },
+      {
+        "assertion": "Assertion (A): A sequence is a function from the set of natural numbers to a set of real numbers.",
+        "reason": "Reason (R): This is a property of a sequence.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "A sequence is indeed a function from the set of natural numbers to a set of real numbers, but this is a definition, not a property, making the assertion true and the reason false."
+      },
+      {
+        "assertion": "Assertion (A): A finite arithmetic progression is a sequence of numbers in which the difference between any two successive members is constant.",
+        "reason": "Reason (R): This is a characteristic of a finite arithmetic progression.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This is indeed a characteristic of a finite arithmetic progression, making both the assertion and reason true and the reason a correct explanation of the assertion."
+      },
+      {
+        "assertion": "Assertion (A): The general term of a harmonic progression is given by tn = 1 / (a + (n - 1)d), where 'a' is the first term and 'd' is the common difference.",
+        "reason": "Reason (R): This formula is a generalization of the terms of a harmonic progression.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The formula is actually not a generalization of the terms of a harmonic progression, making the assertion false and the reason true."
+      }
+    ],
+    "total": 9
+  }
+}

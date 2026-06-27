@@ -1,0 +1,1229 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Thermodynamics",
+  "exported_at": "2026-06-27T05:54:06.638Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:20:13.105+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 9,
+        "questions": [
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): In a reversible adiabatic process, the heat transfer is zero.",
+            "assertion": "Assertion (A): In a reversible adiabatic process, the change in internal energy is zero.",
+            "explanation": "In a reversible adiabatic process, since the heat transfer is zero, the change in internal energy is also zero due to the first law of thermodynamics, ΔQ = ΔU + ΔW."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The efficiency of an ideal Carnot engine depends on the temperature ratio of the hot and cold reservoirs.",
+            "assertion": "Assertion (A): The efficiency of an ideal Carnot engine depends on the temperature of the hot reservoir.",
+            "explanation": "The efficiency of an ideal Carnot engine is given by η = 1 - (Tc/Th), which depends on the temperature ratio of the hot and cold reservoirs, and hence the temperature of the hot reservoir."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): A refrigerator is a heat pump.",
+            "assertion": "Assertion (A): A refrigerator is a heat engine.",
+            "explanation": "A refrigerator is not a heat engine, it is a heat pump that transfers heat from a cold body to a hot body, whereas a heat engine transfers heat from a hot body to a cold body."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The work done by a gas in an isothermal process is constant.",
+            "assertion": "Assertion (A): The work done by a gas in an isothermal process is maximum.",
+            "explanation": "In an isothermal process, the work done by a gas is maximum because the gas expands to its maximum possible volume, doing the maximum amount of work."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The entropy change of a reversible process is zero.",
+            "assertion": "Assertion (A): The entropy change of a reversible adiabatic process is zero.",
+            "explanation": "Since a reversible adiabatic process is a reversible process, the entropy change is zero, as entropy change is a state function."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The efficiency of an ideal Carnot refrigerator is independent of the temperature ratio of the hot and cold reservoirs.",
+            "assertion": "Assertion (A): The efficiency of an ideal Carnot refrigerator is independent of the temperature of the hot reservoir.",
+            "explanation": "The efficiency of an ideal Carnot refrigerator is given by ε = Tc/Th, which is dependent on the temperature ratio of the hot and cold reservoirs, and hence the temperature of the hot reservoir."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): A heat engine is a device that converts thermal energy into mechanical energy.",
+            "assertion": "Assertion (A): A heat engine is a device that converts heat energy into electrical energy.",
+            "explanation": "A heat engine is a device that converts thermal energy into mechanical energy, not electrical energy."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The entropy change of a reversible process is zero.",
+            "assertion": "Assertion (A): The entropy change of a reversible isothermal process is zero.",
+            "explanation": "Since a reversible isothermal process is a reversible process, the entropy change is zero, as entropy change is a state function."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): In a reversible adiabatic process, the change in internal energy is zero.",
+            "assertion": "Assertion (A): A reversible adiabatic process is an isothermal process.",
+            "explanation": "A reversible adiabatic process is not an isothermal process, as the temperature may change during the process, although the heat transfer is zero."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:04:01.606+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "A car is driven from Delhi to Chandigarh, a distance of 250 km, in 4 hours. The average speed of the car is 62.5 km/h. While driving, the car's engine temperature increases from 80°C to 100°C. The engine has a mass of 50 kg and specific heat capacity of 1000 J/(kg°C). Assuming the engine absorbs heat from the surroundings, calculate the amount of heat energy absorbed by the engine during the journey.",
+            "questions": [
+              {
+                "q": "What is the average speed of the car?",
+                "ans": "B",
+                "opts": [
+                  "(A) 50 km/h",
+                  "(B) 62.5 km/h",
+                  "(C) 75 km/h",
+                  "(D) 100 km/h"
+                ],
+                "explanation": "The average speed is calculated using the formula: Average Speed = Total Distance / Total Time. In this case, the average speed is 250 km / 4 hours = 62.5 km/h."
+              },
+              {
+                "q": "What is the change in temperature of the engine?",
+                "ans": "B",
+                "opts": [
+                  "(A) 10°C",
+                  "(B) 20°C",
+                  "(C) 30°C",
+                  "(D) 20°C"
+                ],
+                "explanation": "The change in temperature is calculated by subtracting the initial temperature from the final temperature: ΔT = T_final - T_initial = 100°C - 80°C = 20°C."
+              },
+              {
+                "q": "What is the specific heat capacity of the engine?",
+                "ans": "B",
+                "opts": [
+                  "(A) 500 J/(kg°C)",
+                  "(B) 1000 J/(kg°C)",
+                  "(C) 1500 J/(kg°C)",
+                  "(D) 2000 J/(kg°C)"
+                ],
+                "explanation": "The specific heat capacity of the engine is given in the passage as 1000 J/(kg°C)."
+              },
+              {
+                "q": "What is the mass of the engine?",
+                "ans": "B",
+                "opts": [
+                  "(A) 20 kg",
+                  "(B) 50 kg",
+                  "(C) 100 kg",
+                  "(D) 150 kg"
+                ],
+                "explanation": "The mass of the engine is given in the passage as 50 kg."
+              },
+              {
+                "q": "What is the formula to calculate the amount of heat energy absorbed by the engine?",
+                "ans": "A",
+                "opts": [
+                  "(A) Q = mcΔT",
+                  "(B) Q = mΔT/c",
+                  "(C) Q = mc^2",
+                  "(D) Q = c^2/m"
+                ],
+                "explanation": "The formula to calculate the amount of heat energy absorbed by the engine is Q = mcΔT, where Q is the heat energy, m is the mass, c is the specific heat capacity, and ΔT is the change in temperature."
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "A 2 kg block of ice at 0°C is placed in a calorimeter containing 1 kg of water at 80°C. The specific heat capacity of water is 4200 J/(kg°C) and the latent heat of fusion of ice is 334 kJ/kg. Calculate the final temperature of the mixture and the amount of ice melted.",
+            "questions": [
+              {
+                "q": "What is the specific heat capacity of water?",
+                "ans": "D",
+                "opts": [
+                  "(A) 1000 J/(kg°C)",
+                  "(B) 2000 J/(kg°C)",
+                  "(C) 3000 J/(kg°C)",
+                  "(D) 4200 J/(kg°C)"
+                ],
+                "explanation": "The specific heat capacity of water is given in the passage as 4200 J/(kg°C)."
+              },
+              {
+                "q": "What is the latent heat of fusion of ice?",
+                "ans": "D",
+                "opts": [
+                  "(A) 100 kJ/kg",
+                  "(B) 200 kJ/kg",
+                  "(C) 300 kJ/kg",
+                  "(D) 334 kJ/kg"
+                ],
+                "explanation": "The latent heat of fusion of ice is given in the passage as 334 kJ/kg."
+              },
+              {
+                "q": "What is the mass of the block of ice?",
+                "ans": "B",
+                "opts": [
+                  "(A) 1 kg",
+                  "(B) 2 kg",
+                  "(C) 3 kg",
+                  "(D) 4 kg"
+                ],
+                "explanation": "The mass of the block of ice is given in the passage as 2 kg."
+              },
+              {
+                "q": "What is the initial temperature of the block of ice?",
+                "ans": "A",
+                "opts": [
+                  "(A) 0°C",
+                  "(B) 10°C",
+                  "(C) 20°C",
+                  "(D) 30°C"
+                ],
+                "explanation": "The initial temperature of the block of ice is given in the passage as 0°C."
+              },
+              {
+                "q": "What is the formula to calculate the amount of ice melted?",
+                "ans": "A",
+                "opts": [
+                  "(A) m = Q / L",
+                  "(B) m = L / Q",
+                  "(C) m = Q - L",
+                  "(D) m = L - Q"
+                ],
+                "explanation": "The formula to calculate the amount of ice melted is m = Q / L, where m is the amount of ice melted, Q is the heat energy, and L is the latent heat of fusion."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:09:56.294+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Thermodynamics\n## 📌 Chapter Overview\nThermodynamics is a branch of physics that deals with the study of heat and temperature, and their relationship to energy, work, and the properties of matter. This chapter is an essential part of the Physics curriculum for Class 11 students, as it provides a fundamental understanding of the behavior of systems in terms of energy, temperature, and work. The chapter is divided into several sections, including the Zeroth Law of Thermodynamics, the First Law of Thermodynamics, the Second Law of Thermodynamics, and the Third Law of Thermodynamics. These laws form the basis of thermodynamics and are used to explain various phenomena, such as the behavior of gases, the efficiency of engines, and the principles of refrigeration.\n\nThroughout this chapter, students will learn about the concepts of temperature, heat, internal energy, entropy, and the laws of thermodynamics. They will also learn to apply these concepts to solve problems and explain real-world phenomena. The chapter is designed to help students develop a deep understanding of the principles of thermodynamics and their applications in various fields, such as engineering, chemistry, and biology.\n\n## 🎯 Learning Objectives\n- To understand the concept of temperature and its measurement.\n- To learn about the laws of thermodynamics and their applications.\n- To understand the concepts of internal energy, enthalpy, and entropy.\n- To learn how to apply the laws of thermodynamics to solve problems.\n- To understand the concept of heat transfer and its mechanisms.\n- To learn about the behavior of ideal gases and real gases.\n- To understand the principles of refrigeration and heat pumps.\n\n## 🔑 Key Concepts & Definitions\n- **Temperature**: A measure of the average kinetic energy of the particles in a substance.\n- **Heat**: A form of energy that is transferred from one body to another due to a temperature difference.\n- **Internal Energy**: The total energy of a system, including both kinetic energy and potential energy.\n- **Enthalpy**: A measure of the total energy of a system, including both internal energy and the energy associated with the pressure and volume of a system.\n- **Entropy**: A measure of the disorder or randomness of a system.\n- **Zeroth Law of Thermodynamics**: If two systems are in thermal equilibrium with a third system, then they are also in thermal equilibrium with each other.\n- **First Law of Thermodynamics**: Energy cannot be created or destroyed, only converted from one form to another.\n- **Second Law of Thermodynamics**: The total entropy of a closed system will always increase over time.\n- **Third Law of Thermodynamics**: As the temperature of a system approaches absolute zero, its entropy approaches a minimum value.\n\n## 📐 Core Theory & Principles\nThe core theory of thermodynamics is based on the laws of thermodynamics, which are a set of principles that describe the behavior of energy and its interactions with matter. The laws of thermodynamics are:\n\n1. **Zeroth Law of Thermodynamics**: This law states that if two systems are in thermal equilibrium with a third system, then they are also in thermal equilibrium with each other. This law allows us to define a temperature scale, such as the Celsius or Kelvin scale.\n2. **First Law of Thermodynamics**: This law states that energy cannot be created or destroyed, only converted from one form to another. This law is often expressed mathematically as ΔE = Q - W, where ΔE is the change in energy, Q is the heat added to the system, and W is the work done on the system.\n3. **Second Law of Thermodynamics**: This law states that the total entropy of a closed system will always increase over time. Entropy is a measure of the disorder or randomness of a system, and it is related to the amount of energy that is unavailable to do work.\n4. **Third Law of Thermodynamics**: This law states that as the temperature of a system approaches absolute zero, its entropy approaches a minimum value. This law is often used to explain why it is impossible to reach absolute zero by any finite number of processes.\n\n## 🧮 Important Formulas & Laws\n- **First Law of Thermodynamics**: ΔE = Q - W\n- **Second Law of Thermodynamics**: ΔS = Q / T\n- **Third Law of Thermodynamics**: S = k \\* ln(W)\n- **Ideal Gas Law**: PV = nRT\n- **enthalpy**: H = U + pV\n\n## 🔬 Detailed Explanations\n### Internal Energy\nInternal energy is the total energy of a system, including both kinetic energy and potential energy. It is a measure of the energy associated with the motion of the particles in a system. The internal energy of a system can be increased or decreased by the addition or removal of energy from the system.\n\n### Heat Transfer\nHeat transfer is the transfer of energy from one body to another due to a temperature difference. There are three modes of heat transfer: conduction, convection, and radiation. Conduction occurs when there is a direct contact between two bodies. Convection occurs when a fluid is heated and expands, causing it to rise and create a circulation of fluid. Radiation occurs when energy is transferred through electromagnetic waves.\n\n### Entropy\nEntropy is a measure of the disorder or randomness of a system. It is related to the amount of energy that is unavailable to do work. The entropy of a system can be increased or decreased by the addition or removal of energy from the system.\n\n## 🖼️ Diagrams & Visual Concepts\nDiagrams of thermodynamic systems, such as the ideal gas law and the first law of thermodynamics, are essential for understanding the concepts of thermodynamics. Visualizing the behavior of systems and the interactions between energy and matter can help students to better understand the principles of thermodynamics.\n\n### Ideal Gas Law Diagram\nThe ideal gas law is a mathematical equation that describes the behavior of ideal gases. The diagram shows the relationship between pressure, volume, and temperature of an ideal gas.\n\n### First Law of Thermodynamics Diagram\nThe first law of thermodynamics is a mathematical equation that describes the conservation of energy. The diagram shows the relationship between energy, heat, and work.\n\n## ⭐ Most Important Points (Exam Focus)\n- The laws of thermodynamics are a set of principles that describe the behavior of energy and its interactions with matter.\n- The zeroth law of thermodynamics allows us to define a temperature scale.\n- The first law of thermodynamics states that energy cannot be created or destroyed, only converted from one form to another.\n- The second law of thermodynamics states that the total entropy of a closed system will always increase over time.\n- The third law of thermodynamics states that as the temperature of a system approaches absolute zero, its entropy approaches a minimum value.\n- Internal energy is the total energy of a system, including both kinetic energy and potential energy.\n- Heat transfer is the transfer of energy from one body to another due to a temperature difference.\n- Entropy is a measure of the disorder or randomness of a system.\n\n## ❌ Common Mistakes to Avoid\n- Confusing heat and temperature.\n- Failing to account for the work done on or by a system in thermodynamic calculations.\n- Assuming that the entropy of a system will always decrease over time.\n- Failing to consider the limitations of the ideal gas law.\n- Confusing the first and second laws of thermodynamics.\n\n## 💡 Real-World Applications\n- **Refrigeration**: The principles of thermodynamics are used in refrigeration to transfer heat from a cold body to a hot body.\n- **Power Plants**: Thermodynamics is used in power plants to generate electricity by converting chemical energy into electrical energy.\n- **Air Conditioning**: Thermodynamics is used in air conditioning to transfer heat from a hot body to a cold body.\n- **Automobile Engines**: Thermodynamics is used in automobile engines to convert chemical energy into mechanical energy.\n\n## 🔁 Quick Revision Summary\n- **Zeroth Law of Thermodynamics**: If two systems are in thermal equilibrium with a third system, then they are also in thermal equilibrium with each other.\n- **First Law of Thermodynamics**: Energy cannot be created or destroyed, only converted from one form to another.\n- **Second Law of Thermodynamics**: The total entropy of a closed system will always increase over time.\n- **Third Law of Thermodynamics**: As the temperature of a system approaches absolute zero, its entropy approaches a minimum value.\n- **Internal Energy**: The total energy of a system, including both kinetic energy and potential energy.\n- **Heat Transfer**: The transfer of energy from one body to another due to a temperature difference.\n- **Entropy**: A measure of the disorder or randomness of a system.\n- **Ideal Gas Law**: PV = nRT\n- **First Law of Thermodynamics**: ΔE = Q - W\n- **Second Law of Thermodynamics**: ΔS = Q / T\n- **Third Law of Thermodynamics**: S = k \\* ln(W)\n- **Enthalpy**: H = U + pV\n- **Internal Energy**: U = Q - W"
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:16:40.437+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [],
+        "exam_frequency": "medium",
+        "difficulty_score": 5,
+        "overall_difficulty": "medium"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:09:54.709+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Study tip 1",
+          "Study tip 2"
+        ],
+        "total_minutes": 120,
+        "revision_minutes": 20,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 30,
+        "sessions_recommended": 3,
+        "first_reading_minutes": 45,
+        "practice_questions_minutes": 25
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:21:32.903+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Zeroth Law of Thermodynamics",
+            "notes": "This law helps in defining the temperature scale, such as Celsius or Kelvin.",
+            "formula": "If two systems are in thermal equilibrium with a third system, then they are also in thermal equilibrium with each other."
+          },
+          {
+            "name": "Ideal Gas Equation",
+            "notes": "This equation relates the pressure, volume, and temperature of an ideal gas.",
+            "units": {
+              "P": "Pa",
+              "R": "J/mol·K",
+              "T": "K",
+              "V": "m³",
+              "n": "mol"
+            },
+            "formula": "PV = nRT",
+            "variables": {
+              "P": "Pressure",
+              "R": "Gas constant",
+              "T": "Temperature in Kelvin",
+              "V": "Volume",
+              "n": "Number of moles"
+            }
+          },
+          {
+            "name": "Ideal Gas Constant",
+            "notes": "The value of R can be used in the ideal gas equation.",
+            "formula": "R = 8.3145 J/mol·K"
+          },
+          {
+            "name": "Charles' Law",
+            "notes": "This law states that at constant pressure, the volume of a gas is directly proportional to its temperature.",
+            "units": {
+              "T": "K",
+              "V": "m³"
+            },
+            "formula": "V1 / T1 = V2 / T2",
+            "variables": {
+              "T1": "Initial temperature",
+              "T2": "Final temperature",
+              "V1": "Initial volume",
+              "V2": "Final volume"
+            }
+          },
+          {
+            "name": "Gay-Lussac's Law",
+            "notes": "This law states that at constant volume, the pressure of a gas is directly proportional to its temperature.",
+            "units": {
+              "P": "Pa",
+              "T": "K"
+            },
+            "formula": "P1 / T1 = P2 / T2",
+            "variables": {
+              "P1": "Initial pressure",
+              "P2": "Final pressure",
+              "T1": "Initial temperature",
+              "T2": "Final temperature"
+            }
+          },
+          {
+            "name": "Combined Gas Law",
+            "notes": "This law combines Charles' Law and Gay-Lussac's Law.",
+            "units": {
+              "P": "Pa",
+              "T": "K",
+              "V": "m³"
+            },
+            "formula": "P1V1 / T1 = P2V2 / T2",
+            "variables": {
+              "P1": "Initial pressure",
+              "P2": "Final pressure",
+              "T1": "Initial temperature",
+              "T2": "Final temperature",
+              "V1": "Initial volume",
+              "V2": "Final volume"
+            }
+          },
+          {
+            "name": "First Law of Thermodynamics",
+            "notes": "This law states that the change in internal energy of a system is equal to the heat added to the system minus the work done by the system.",
+            "units": {
+              "E": "J",
+              "Q": "J",
+              "W": "J"
+            },
+            "formula": "ΔE = Q - W",
+            "variables": {
+              "Q": "Heat added to the system",
+              "W": "Work done by the system",
+              "ΔE": "Change in internal energy"
+            }
+          },
+          {
+            "name": "Second Law of Thermodynamics",
+            "notes": "This law states that the change in entropy of a system is equal to the heat added to the system divided by the temperature.",
+            "units": {
+              "Q": "J",
+              "S": "J/K",
+              "T": "K"
+            },
+            "formula": "ΔS = ΔQ / T",
+            "variables": {
+              "T": "Temperature in Kelvin",
+              "ΔQ": "Heat added to the system",
+              "ΔS": "Change in entropy"
+            }
+          },
+          {
+            "name": "Kelvin-Planck Statement of Second Law of Thermodynamics",
+            "notes": "This statement describes the second law of thermodynamics.",
+            "formula": "No heat engine can convert all the heat energy put into it into work."
+          },
+          {
+            "name": "Carnot's Theorem",
+            "notes": "This theorem states that the maximum efficiency of a heat engine is given by Carnot's formula.",
+            "units": {
+              "T": "K",
+              "η": "1"
+            },
+            "formula": "η = 1 - (Tc / Th)",
+            "variables": {
+              "Tc": "Temperature of the cold reservoir",
+              "Th": "Temperature of the hot reservoir",
+              "η": "Efficiency"
+            }
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:16:42.149+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "Zeroth Law of Thermodynamics",
+            "importance": "Important for understanding temperature and thermal equilibrium.",
+            "explanation": "States that if two systems are in thermal equilibrium with a third system, then they are also in thermal equilibrium with each other. This law allows us to define a temperature scale.",
+            "related_topics": [
+              "First Law of Thermodynamics",
+              "Second Law of Thermodynamics"
+            ]
+          },
+          {
+            "concept": "First Law of Thermodynamics",
+            "importance": "Crucial for understanding energy transformations and conservation.",
+            "explanation": "Also known as the law of energy conservation, it states that energy cannot be created or destroyed, only converted from one form to another. Mathematically represented as ΔE = Q - W.",
+            "related_topics": [
+              "Zeroth Law of Thermodynamics",
+              "Second Law of Thermodynamics"
+            ]
+          },
+          {
+            "concept": "Internal Energy (U)",
+            "importance": "Important for understanding energy changes in a system.",
+            "explanation": "The total energy of a system, including both kinetic energy and potential energy of the particles in the system.",
+            "related_topics": [
+              "First Law of Thermodynamics",
+              "Heat Transfer"
+            ]
+          },
+          {
+            "concept": "Heat Transfer",
+            "importance": "Important for understanding how energy is transferred between systems.",
+            "explanation": "The transfer of energy from one body to another due to a temperature difference. Can occur through conduction, convection, or radiation.",
+            "related_topics": [
+              "Internal Energy (U)",
+              "Thermal Expansion"
+            ]
+          },
+          {
+            "concept": "Second Law of Thermodynamics",
+            "importance": "Important for understanding the direction of spontaneous processes and the concept of entropy.",
+            "explanation": "States that the total entropy (a measure of disorder or randomness) of an isolated system always increases over time. Mathematically represented as ΔS = ΔQ / T.",
+            "related_topics": [
+              "Zeroth Law of Thermodynamics",
+              "First Law of Thermodynamics"
+            ]
+          },
+          {
+            "concept": "Entropy (S)",
+            "importance": "Important for understanding the direction of spontaneous processes.",
+            "explanation": "A measure of the disorder or randomness of a system. Can be thought of as a measure of the amount of thermal energy unavailable to do work.",
+            "related_topics": [
+              "Second Law of Thermodynamics",
+              "Thermal Expansion"
+            ]
+          },
+          {
+            "concept": "Isobaric Process",
+            "importance": "Important for understanding heat transfer and energy changes in a system.",
+            "explanation": "A process in which the pressure remains constant.",
+            "related_topics": [
+              "Isothermal Process",
+              "Adiabatic Process"
+            ]
+          },
+          {
+            "concept": "Isochoric Process",
+            "importance": "Important for understanding heat transfer and energy changes in a system.",
+            "explanation": "A process in which the volume remains constant.",
+            "related_topics": [
+              "Isobaric Process",
+              "Isentropic Process"
+            ]
+          },
+          {
+            "concept": "Isothermal Process",
+            "importance": "Important for understanding heat transfer and energy changes in a system.",
+            "explanation": "A process in which the temperature remains constant.",
+            "related_topics": [
+              "Isobaric Process",
+              "Adiabatic Process"
+            ]
+          },
+          {
+            "concept": "Adiabatic Process",
+            "importance": "Important for understanding energy changes in a system.",
+            "explanation": "A process in which there is no heat transfer between the system and its surroundings.",
+            "related_topics": [
+              "Isothermal Process",
+              "Isobaric Process"
+            ]
+          },
+          {
+            "concept": "Carnot Engine",
+            "importance": "Important for understanding the efficiency of heat engines.",
+            "explanation": "A theoretical engine that operates on the Carnot cycle, which is the most efficient cycle possible. It is used to illustrate the principles of the second law of thermodynamics.",
+            "related_topics": [
+              "Heat Engines",
+              "Second Law of Thermodynamics"
+            ]
+          },
+          {
+            "concept": "Ideal Gas",
+            "importance": "Important for understanding the behavior of gases.",
+            "explanation": "A hypothetical gas that obeys the ideal gas equation PV = nRT. It is used to model real gases and understand their behavior.",
+            "related_topics": [
+              "Gibbs Free Energy",
+              "Thermal Expansion"
+            ]
+          },
+          {
+            "concept": "Thermal Expansion",
+            "importance": "Important for understanding the behavior of materials in different temperature conditions.",
+            "explanation": "The change in volume or shape of a substance due to a change in temperature.",
+            "related_topics": [
+              "Internal Energy (U)",
+              "Entropy (S)"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:21:32.898+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "Thermodynamics",
+            "example": "",
+            "definition": "The branch of physics that deals with the relationship between heat, work, and energy."
+          },
+          {
+            "term": "System",
+            "example": "",
+            "definition": "A region in space where the physical and chemical changes occur. It can be a part of the universe where the changes do not affect the surroundings."
+          },
+          {
+            "term": "Surroundings",
+            "example": "",
+            "definition": "The part of the universe outside the system, with which the system may interact through exchange of energy or matter."
+          },
+          {
+            "term": "Boundary",
+            "example": "",
+            "definition": "The surface that separates the system from the surroundings."
+          },
+          {
+            "term": "Internal Energy (U)",
+            "example": "",
+            "definition": "The total energy of a system, including kinetic energy, potential energy, and other types of energy."
+          },
+          {
+            "term": "Heat Transfer (Q)",
+            "example": "",
+            "definition": "The energy transferred between the system and the surroundings due to a temperature difference."
+          },
+          {
+            "term": "Work Done (W)",
+            "example": "",
+            "definition": "The energy transferred between the system and the surroundings due to a force applied over a distance."
+          },
+          {
+            "term": "First Law of Thermodynamics",
+            "example": "",
+            "definition": "Energy cannot be created or destroyed, only converted from one form to another."
+          },
+          {
+            "term": "Second Law of Thermodynamics",
+            "example": "",
+            "definition": "The total entropy of an isolated system always increases over time, except in reversible processes."
+          },
+          {
+            "term": "Entropy (S)",
+            "example": "",
+            "definition": "A measure of the disorder or randomness of a system."
+          },
+          {
+            "term": "Reversible Process",
+            "example": "",
+            "definition": "A process that can be reversed without any change in the system or the surroundings."
+          },
+          {
+            "term": "Irreversible Process",
+            "example": "",
+            "definition": "A process that cannot be reversed without any change in the system or the surroundings."
+          },
+          {
+            "term": "Isothermal Process",
+            "example": "",
+            "definition": "A process that occurs at a constant temperature."
+          },
+          {
+            "term": "Adiabatic Process",
+            "example": "",
+            "definition": "A process that occurs without any heat transfer between the system and the surroundings."
+          },
+          {
+            "term": "Isobaric Process",
+            "example": "",
+            "definition": "A process that occurs at a constant pressure."
+          },
+          {
+            "term": "Cyclic Process",
+            "example": "",
+            "definition": "A process that returns to its initial state after a complete cycle."
+          },
+          {
+            "term": "Perpetual Motion Machine",
+            "example": "",
+            "definition": "A hypothetical machine that can operate indefinitely without any external input of energy."
+          },
+          {
+            "term": "Thermodynamic Property",
+            "example": "",
+            "definition": "A characteristic of a system that can be measured or calculated."
+          },
+          {
+            "term": "Thermodynamic Process",
+            "example": "",
+            "definition": "A change in the state of a system over time."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:09:54.85+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Apply the first law of thermodynamics to solve problems involving heat, work, and internal energy",
+            "Use the second law of thermodynamics to determine the efficiency of heat engines",
+            "Apply the concept of entropy to predict the spontaneity of thermodynamic processes"
+          ],
+          "analyze": [
+            "Compare and contrast different types of heat engines and their efficiencies",
+            "Analyze the effect of temperature on the internal energy of a system",
+            "Evaluate the role of thermodynamics in real-world applications such as refrigeration and air conditioning"
+          ],
+          "remember": [
+            "Recall and state the laws of thermodynamics",
+            "List and define the different types of processes",
+            "Mention the significance of thermodynamic systems and surroundings"
+          ],
+          "understand": [
+            "Explain the concept of internal energy and its relation to heat and work",
+            "Describe the first law of thermodynamics and its applications",
+            "Understand the concept of entropy and its role in thermodynamic processes"
+          ]
+        },
+        "ncert_objectives": [
+          "State the zeroth law of thermodynamics and explain its significance.",
+          "Define internal energy and explain its change in a thermodynamic process.",
+          "Describe the first law of thermodynamics and its applications."
+        ],
+        "board_exam_objectives": [
+          "First law of thermodynamics and its applications",
+          "Second law of thermodynamics and its applications",
+          "Thermodynamic processes, such as isothermal, adiabatic, and cyclic processes"
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:04:53.797+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "A refrigerator operates between 4°C and -15°C temperatures. Calculate the coefficient of performance (COP) of the refrigerator. Assume the refrigerator works on the Carnot cycle.",
+            "marks": 5,
+            "topic": "Refrigeration and Liquefaction",
+            "answer": "Given the temperatures T1 = 277 K and T2 = 258 K, the coefficient of performance (COP) is given by COP = T2 / (T1 - T2) = 258 / (277 - 258) = 258 / 19 = 13.58. Therefore, the coefficient of performance (COP) of the refrigerator is 13.58.",
+            "marking_scheme": [
+              "Calculate the temperatures T1 and T2 from the given temperatures.",
+              "Use the formula COP = T2 / (T1 - T2) to calculate the coefficient of performance."
+            ]
+          },
+          {
+            "q": "A heat engine has an efficiency of 30%. The heat is supplied at a temperature of 500 K and the engine rejects heat at a temperature of 300 K. Calculate the work done by the engine in one cycle.",
+            "marks": 5,
+            "topic": "Heat Engines",
+            "answer": "Given the efficiency η = 30% = 0.3, the heat supplied Q1 = 100 J, and the heat rejected Q2 = 70 J. We know that η = 1 - Q2 / Q1. Using this, we can calculate Q1 = 100 J. Now, we can calculate the work done W by the engine using the formula W = ηQ1 = 0.3 * 100 = 30 J.",
+            "marking_scheme": [
+              "Use the formula η = 1 - Q2 / Q1 to calculate the heat supplied Q1.",
+              "Calculate the work done W by the engine using the formula W = ηQ1."
+            ]
+          },
+          {
+            "q": "A Carnot refrigerator operates between 0°C and -10°C. What is the amount of work done per unit of heat removed in the case of a Carnot refrigerator?",
+            "marks": 5,
+            "topic": "Refrigeration and Liquefaction",
+            "answer": "Given the temperatures T1 = 273 K and T2 = 263 K, the coefficient of performance (COP) of the Carnot refrigerator is given by COP = T2 / (T1 - T2) = 263 / (273 - 263) = 263 / 10 = 26.3. We know that COP = W / Q2, where W is the work done per unit of heat removed. Therefore, W = COP * Q2 = 26.3 * 10 = 263 J.",
+            "marking_scheme": [
+              "Calculate the temperatures T1 and T2 from the given temperatures.",
+              "Use the formula COP = W / Q2 to calculate the work done W per unit of heat removed."
+            ]
+          },
+          {
+            "q": "A carnot engine has an efficiency of 25%. The heat is supplied at a temperature of 400 K. The engine rejects heat at a temperature of 300 K. What is the ratio of the heat supplied to the heat rejected?",
+            "marks": 5,
+            "topic": "Heat Engines",
+            "answer": "Given the efficiency η = 25% = 0.25, we know that η = 1 - Q2 / Q1, where Q1 is the heat supplied and Q2 is the heat rejected. Rearranging this, we get Q2 / Q1 = 1 - η = 1 - 0.25 = 0.75. Therefore, the ratio of the heat supplied to the heat rejected is Q1 / Q2 = 1 / 0.75 = 4 / 3.",
+            "marking_scheme": [
+              "Use the formula η = 1 - Q2 / Q1 to calculate the ratio of the heat supplied to the heat rejected.",
+              "Rearrange the formula to get the ratio Q1 / Q2."
+            ]
+          },
+          {
+            "q": "An ideal gas is heated from 300 K to 400 K at constant volume. What is the change in the internal energy of the gas?",
+            "marks": 5,
+            "topic": "Internal Energy and First Law of Thermodynamics",
+            "answer": "Given the initial and final temperatures T1 = 300 K and T2 = 400 K, we know that the change in internal energy ΔU is given by ΔU = nCvΔT, where n is the number of moles of the gas, Cv is the specific heat capacity at constant volume, and ΔT is the change in temperature. Since the gas is heated at constant volume, Cv is constant and equal to 20.8 J/mol*K. Therefore, ΔU = n * 20.8 * (400 - 300) = n * 20.8 * 100 = 2080 n.",
+            "marking_scheme": [
+              "Use the formula ΔU = nCvΔT to calculate the change in internal energy ΔU.",
+              "Rearrange the formula to get the value of ΔU in terms of n, Cv, and ΔT."
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:13:14.112+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 18,
+        "questions": [
+          {
+            "q": "A thermodynamic system is in equilibrium when the temperature is uniform throughout the system.?",
+            "ans": "A",
+            "opts": [
+              "(A) True",
+              "(B) False",
+              "(C) Only if the system is in thermal equilibrium",
+              "(D) Only if the system is in mechanical equilibrium"
+            ],
+            "topic": "Equilibrium",
+            "difficulty": "easy",
+            "explanation": "A system is in equilibrium when its temperature is uniform throughout. This is a condition of thermal equilibrium."
+          },
+          {
+            "q": "The specific heat capacity of a substance is the heat required to raise its temperature by 1°C.?",
+            "ans": "A",
+            "opts": [
+              "(A) True",
+              "(B) False",
+              "(C) Specific heat capacity is the heat required to raise the temperature of 1 kg of the substance by 1°C",
+              "(D) Specific heat capacity is the heat required to raise the temperature of 1 g of the substance by 1°C"
+            ],
+            "topic": "Specific Heat Capacity",
+            "difficulty": "easy",
+            "explanation": "Specific heat capacity is the heat required to raise the temperature of a unit mass of a substance by 1°C."
+          },
+          {
+            "q": "A Carnot engine is 100% efficient.?",
+            "ans": "B",
+            "opts": [
+              "(A) True",
+              "(B) False",
+              "(C) It is the most efficient engine but not 100%",
+              "(D) It is the least efficient engine"
+            ],
+            "topic": "Carnot Engine",
+            "difficulty": "easy",
+            "explanation": "A Carnot engine is the most efficient engine but it is not 100% efficient."
+          },
+          {
+            "q": "The temperature of the hot reservoir is greater than the temperature of the cold reservoir in a heat engine.?",
+            "ans": "A",
+            "opts": [
+              "(A) True",
+              "(B) False",
+              "(C) The temperature of the cold reservoir is greater than the temperature of the hot reservoir",
+              "(D) The temperature of the hot reservoir is equal to the temperature of the cold reservoir"
+            ],
+            "topic": "Heat Engines",
+            "difficulty": "easy",
+            "explanation": "The temperature of the hot reservoir is greater than the temperature of the cold reservoir in a heat engine."
+          },
+          {
+            "q": "In an isothermal process, the temperature of the system remains constant.?",
+            "ans": "A",
+            "opts": [
+              "(A) True",
+              "(B) False",
+              "(C) The temperature of the system increases in an isothermal process",
+              "(D) The temperature of the system decreases in an isothermal process"
+            ],
+            "topic": "Processes",
+            "difficulty": "easy",
+            "explanation": "In an isothermal process, the temperature of the system remains constant."
+          },
+          {
+            "q": "Which of the following is an example of an adiabatic process?",
+            "ans": "A",
+            "opts": [
+              "(A) Free expansion of a gas",
+              "(B) Isobaric process",
+              "(C) Isothermal process",
+              "(D) Free expansion of a gas is an example of an adiabatic process"
+            ],
+            "topic": "Processes",
+            "difficulty": "easy",
+            "explanation": "Free expansion of a gas is an example of an adiabatic process."
+          },
+          {
+            "q": "The efficiency of a Carnot engine is given by?",
+            "ans": "A",
+            "opts": [
+              "(A) η = 1 - (Tc / Th)",
+              "(B) η = (Tc / Th)",
+              "(C) η = (Th - Tc) / Th",
+              "(D) η = (Th - Tc) / Tc"
+            ],
+            "topic": "Carnot Engine",
+            "difficulty": "medium",
+            "explanation": "The efficiency of a Carnot engine is given by η = 1 - (Tc / Th)."
+          },
+          {
+            "q": "A refrigerator is a heat engine running in reverse.?",
+            "ans": "B",
+            "opts": [
+              "(A) True",
+              "(B) False",
+              "(C) A refrigerator is a heat pump running in reverse",
+              "(D) A refrigerator is a heat engine running in reverse and a heat pump running in reverse"
+            ],
+            "topic": "Refrigerators",
+            "difficulty": "medium",
+            "explanation": "A refrigerator is a heat pump running in reverse, not a heat engine."
+          },
+          {
+            "q": "The coefficient of performance (COP) of a refrigerator is given by?",
+            "ans": "C",
+            "opts": [
+              "(A) COP = Qc / W",
+              "(B) COP = Qh / W",
+              "(C) COP = Qc / W = Tc / (Th - Tc)",
+              "(D) COP = Qh / W = Tc / (Th - Tc)"
+            ],
+            "topic": "Refrigerators",
+            "difficulty": "medium",
+            "explanation": "The coefficient of performance (COP) of a refrigerator is given by COP = Qc / W = Tc / (Th - Tc)."
+          },
+          {
+            "q": "A heat engine can be used to convert heat energy into?",
+            "ans": "D",
+            "opts": [
+              "(A) Mechanical energy",
+              "(B) Electrical energy",
+              "(C) Thermal energy",
+              "(D) All of the above"
+            ],
+            "topic": "Heat Engines",
+            "difficulty": "medium",
+            "explanation": "A heat engine can be used to convert heat energy into mechanical energy, electrical energy, and thermal energy."
+          },
+          {
+            "q": "The entropy change (ΔS) of a system is given by?",
+            "ans": "B",
+            "opts": [
+              "(A) ΔS = Q / T",
+              "(B) ΔS = Q / T + W / T",
+              "(C) ΔS = Q / T - W / T",
+              "(D) ΔS = W / T"
+            ],
+            "topic": "Entropy",
+            "difficulty": "medium",
+            "explanation": "The entropy change (ΔS) of a system is given by ΔS = Q / T + W / T."
+          },
+          {
+            "q": "A reversible adiabatic process is an example of?",
+            "ans": "D",
+            "opts": [
+              "(A) Isochoric process",
+              "(B) Isobaric process",
+              "(C) Isothermal process",
+              "(D) Reversible adiabatic process"
+            ],
+            "topic": "Processes",
+            "difficulty": "medium",
+            "explanation": "A reversible adiabatic process is an example of a reversible adiabatic process."
+          },
+          {
+            "q": "The efficiency of a heat engine is given by?",
+            "ans": "D",
+            "opts": [
+              "(A) η = (W / Qh)",
+              "(B) η = (Qh - W) / Qh",
+              "(C) η = (Qh - Qc) / Qh",
+              "(D) η = (W / Qh) = (Th - Tc) / Th"
+            ],
+            "topic": "Heat Engines",
+            "difficulty": "medium",
+            "explanation": "The efficiency of a heat engine is given by η = (W / Qh) = (Th - Tc) / Th."
+          },
+          {
+            "q": "A refrigerator operating on a Carnot cycle has a coefficient of performance (COP) of?",
+            "ans": "B",
+            "opts": [
+              "(A) COP = 1",
+              "(B) COP = (Tc / Th)",
+              "(C) COP = (Th / Tc)",
+              "(D) COP = (Th - Tc) / Th"
+            ],
+            "topic": "Refrigerators",
+            "difficulty": "hard",
+            "explanation": "A refrigerator operating on a Carnot cycle has a coefficient of performance (COP) of COP = (Tc / Th)."
+          },
+          {
+            "q": "A heat pump operating on a Carnot cycle has a coefficient of performance (COP) of?",
+            "ans": "A",
+            "opts": [
+              "(A) COP = (Th / Tc)",
+              "(B) COP = (Tc / Th)",
+              "(C) COP = 1",
+              "(D) COP = (Th - Tc) / Th"
+            ],
+            "topic": "Heat Pumps",
+            "difficulty": "hard",
+            "explanation": "A heat pump operating on a Carnot cycle has a coefficient of performance (COP) of COP = (Th / Tc)."
+          },
+          {
+            "q": "A reversible engine operating between two heat reservoirs of temperatures Th and Tc has an efficiency of?",
+            "ans": "C",
+            "opts": [
+              "(A) η = (W / Qh)",
+              "(B) η = (Qh - W) / Qh",
+              "(C) η = (Th - Tc) / Th",
+              "(D) η = (Th - Tc) / (Th - Tc)"
+            ],
+            "topic": "Heat Engines",
+            "difficulty": "hard",
+            "explanation": "A reversible engine operating between two heat reservoirs of temperatures Th and Tc has an efficiency of η = (Th - Tc) / Th."
+          },
+          {
+            "q": "A system undergoes a reversible adiabatic expansion from an initial state A to a final state B. The change in entropy (ΔS) of the system is?",
+            "ans": "B",
+            "opts": [
+              "(A) ΔS = Q / T",
+              "(B) ΔS = 0",
+              "(C) ΔS = - Q / T",
+              "(D) ΔS = W / T"
+            ],
+            "topic": "Entropy",
+            "difficulty": "hard",
+            "explanation": "Since the process is reversible and adiabatic, the change in entropy (ΔS) of the system is ΔS = 0."
+          },
+          {
+            "q": "A refrigerator operating on a Carnot cycle has a coefficient of performance (COP) of 4. The temperature of the cold reservoir (Tc) is 250 K. The temperature of the hot reservoir (Th) is?",
+            "ans": "B",
+            "opts": [
+              "(A) 1000 K",
+              "(B) 1250 K",
+              "(C) 1500 K",
+              "(D) 2000 K"
+            ],
+            "topic": "Refrigerators",
+            "difficulty": "hard",
+            "explanation": "We know that COP = (Tc / Th). Therefore, Th = (Tc * COP) = (250 K * 4) = 1000 K."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:15:52.06+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Thermodynamics\n\n## Chapter at a Glance\nThermodynamics is a branch of physics that deals with the relationship between heat, work, and energy. In this chapter, we will study the laws of thermodynamics, which describe how energy is conserved and transformed from one form to another. We will also explore the concepts of internal energy, enthalpy, and entropy, which are essential in understanding various thermodynamic processes. The chapter will cover the first law of thermodynamics, the second law of thermodynamics, and the third law of thermodynamics, providing a comprehensive understanding of the subject.\n\n## Section-wise Summary\n### Section 5.1: Introduction to Thermodynamics\n\n* Thermodynamics is a branch of physics that deals with the relationship between heat, work, and energy.\n* The study of thermodynamics is based on the concept of system, surroundings, and the interaction between them.\n* The system is the region of interest, and the surroundings are the environment external to the system.\n* The system can be isolated, closed, or open, depending on the exchange of matter and energy with the surroundings.\n\n### Section 5.2: Thermal Properties of Matter\n\n* Thermal properties are the properties of a system that depend on its temperature.\n* Specific heat capacity is the amount of heat required to raise the temperature of a unit mass of a substance by one degree Celsius.\n* Molar specific heat capacity is the amount of heat required to raise the temperature of one mole of a substance by one degree Celsius.\n* Thermal expansion is the change in volume or length of a substance with a change in temperature.\n\n### Section 5.3: First Law of Thermodynamics\n\n* The first law of thermodynamics states that energy cannot be created or destroyed, only converted from one form to another.\n* The law is expressed mathematically as ΔE = Q - W, where ΔE is the change in internal energy, Q is the heat added to the system, and W is the work done on the system.\n* Internal energy is the total energy of a system, including kinetic energy, potential energy, and other forms of energy.\n\n### Section 5.4: Equilibrium and the First Law of Thermodynamics\n\n* A system is in equilibrium when its internal energy is at a maximum or minimum.\n* The first law of thermodynamics can be applied to a system in equilibrium, where ΔE = 0.\n* The internal energy of a system depends on its temperature and other thermodynamic properties.\n\n### Section 5.5: Second Law of Thermodynamics\n\n* The second law of thermodynamics states that the total entropy of an isolated system always increases over time.\n* Entropy is a measure of the disorder or randomness of a system.\n* The law can be applied to both reversible and irreversible processes.\n\n### Section 5.6: Entropy and the Second Law of Thermodynamics\n\n* Entropy is a state function that depends on the properties of a system.\n* The second law of thermodynamics can be expressed mathematically as ΔS = ΔQ / T, where ΔS is the change in entropy and ΔQ is the heat added to the system.\n* Entropy is a measure of the disorder or randomness of a system.\n\n### Section 5.7: Adiabatic Processes\n\n* An adiabatic process is a thermodynamic process where no heat is transferred between the system and its surroundings.\n* Adiabatic processes can be reversible or irreversible.\n* The internal energy of a system changes during an adiabatic process.\n\n### Section 5.8: Adiabatic Expansion and Compression\n\n* Adiabatic expansion is a process where a system expands and its internal energy decreases.\n* Adiabatic compression is a process where a system is compressed and its internal energy increases.\n* Adiabatic processes can be applied to various systems, including gases and liquids.\n\n### Section 5.9: Third Law of Thermodynamics\n\n* The third law of thermodynamics states that as the temperature of a system approaches absolute zero, its entropy approaches a minimum value.\n* The law can be applied to both reversible and irreversible processes.\n* The third law of thermodynamics is a fundamental principle in thermodynamics.\n\n## Important NCERT Exercises Insight\n* Key concepts tested in NCERT exercises:\n + First law of thermodynamics\n + Internal energy\n + Enthalpy\n + Entropy\n + Adiabatic processes\n + Third law of thermodynamics\n* What to remember:\n + The first law of thermodynamics is ΔE = Q - W.\n + Internal energy is the total energy of a system.\n + Entropy is a measure of the disorder or randomness of a system.\n + Adiabatic processes are a type of thermodynamic process where no heat is transferred between the system and its surroundings.\n + The third law of thermodynamics states that as the temperature of a system approaches absolute zero, its entropy approaches a minimum value.\n\n## NCERT Exemplar Focus\n* Additional topics covered in NCERT Exemplar:\n + Heat transfer mechanisms\n + Thermal conductivity\n + Specific heat capacity\n + Molar specific heat capacity\n + Thermal expansion\n\n## Board Exam Relevance\n* Marks weightage:\n + First law of thermodynamics: 15-20 marks\n + Second law of thermodynamics: 20-25 marks\n + Third law of thermodynamics: 10-15 marks\n + Adiabatic processes: 15-20 marks\n* Frequently asked topics:\n + First law of thermodynamics\n + Internal energy and enthalpy\n + Entropy and the second law of thermodynamics\n + Adiabatic processes\n + Third law of thermodynamics"
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:22:29.68+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "An ideal gas is taken through a cycle AB A B, as shown in P-V diagram. The net work done on the gas in one cycle is:",
+            "type": "MCQ",
+            "marks": 1,
+            "answer": "Zero",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "A Carnot refrigerator operates between 300 K and 240 K. If the work done in each cycle is 200 J, then the heat extracted from the cold body in each cycle is:",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "500 J",
+            "difficulty": "easy",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "A sample of an ideal gas is heated at constant volume. The graph between the work done and the change in internal energy is a:",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "straight line parallel to the x-axis",
+            "difficulty": "easy",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "A refrigerator works on a Carnot cycle. Its coefficient of performance is 4. If the temperature of the source is 400 K, the temperature of the sink is:",
+            "type": "Long Answer",
+            "marks": 3,
+            "answer": "300 K",
+            "difficulty": "medium",
+            "year_pattern": "2017-style"
+          },
+          {
+            "q": "A block of wood is heated through a temperature difference of 20°C. If the heat lost by the block is 480 J, then the mass of the block is:",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "0.1 kg",
+            "difficulty": "easy",
+            "year_pattern": "2016-style"
+          },
+          {
+            "q": "The efficiency of a heat engine is given by:",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "1 - (Tc / Th)",
+            "difficulty": "easy",
+            "year_pattern": "2015-style"
+          },
+          {
+            "q": "A body is heated at 400 K for 10 minutes. Calculate the change in entropy of the body:",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "0.0364 J/K",
+            "difficulty": "medium",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "A Carnot heat engine works between 600 K and 400 K. If the heat input is 1000 J, then the work done per cycle is:",
+            "type": "Long Answer",
+            "marks": 3,
+            "answer": "500 J",
+            "difficulty": "medium",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "A refrigerator works on a Carnot cycle. If the work done on the refrigerator is 200 J, then the coefficient of performance is:",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "4",
+            "difficulty": "easy",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "A block of ice of mass 500 g is melted by a hot liquid. If the heat required to melt the ice is 80 cal/g, then the temperature of the hot liquid is:",
+            "type": "Long Answer",
+            "marks": 3,
+            "answer": "80°C",
+            "difficulty": "medium",
+            "year_pattern": "2017-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:13:15.785+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "What is the definition of thermodynamics?",
+            "marks": 2,
+            "topic": "Introduction to Thermodynamics",
+            "answer": "Thermodynamics is the branch of physics that deals with the relationships between heat, work, and energy. It involves the study of the transfer of energy from one body to another due to a temperature difference. Thermodynamics is concerned with the macroscopic properties of systems, such as temperature, pressure, and volume.",
+            "key_points": [
+              "Definition",
+              "Macroscopic properties",
+              "Energy transfer"
+            ]
+          },
+          {
+            "q": "State the zeroth law of thermodynamics.",
+            "marks": 2,
+            "topic": "Zeroth Law of Thermodynamics",
+            "answer": "The zeroth law of thermodynamics states that if two systems are in thermal equilibrium with a third system, then they are also in thermal equilibrium with each other. This law allows us to define a temperature scale, such as the Celsius or Kelvin scale.",
+            "key_points": [
+              "Zeroth law",
+              "Thermal equilibrium",
+              "Temperature scale"
+            ]
+          },
+          {
+            "q": "What is the difference between internal energy and heat?",
+            "marks": 2,
+            "topic": "Internal Energy and Heat",
+            "answer": "Internal energy is the total energy of a system, including both kinetic energy and potential energy of the particles in the system. Heat, on the other hand, is the transfer of energy from one body to another due to a temperature difference. Internal energy is a property of the system, while heat is a process.",
+            "key_points": [
+              "Internal energy",
+              "Heat",
+              "Energy transfer"
+            ]
+          },
+          {
+            "q": "State the first law of thermodynamics.",
+            "marks": 2,
+            "topic": "First Law of Thermodynamics",
+            "answer": "The first law of thermodynamics, also known as the law of energy conservation, states that energy cannot be created or destroyed, only converted from one form to another. Mathematically, it is expressed as ΔU = Q - W, where ΔU is the change in internal energy, Q is the heat added to the system, and W is the work done by the system.",
+            "key_points": [
+              "First law",
+              "Energy conservation",
+              "ΔU = Q - W"
+            ]
+          },
+          {
+            "q": "What is enthalpy?",
+            "marks": 2,
+            "topic": "Enthalpy",
+            "answer": "Enthalpy (H) is a thermodynamic property that is defined as the sum of the internal energy (U) and the product of the pressure (P) and volume (V) of a system. Mathematically, it is expressed as H = U + PV. Enthalpy is often used to describe the energy of a system at constant pressure.",
+            "key_points": [
+              "Enthalpy",
+              "Internal energy",
+              "PV"
+            ]
+          },
+          {
+            "q": "State the second law of thermodynamics.",
+            "marks": 2,
+            "topic": "Second Law of Thermodynamics",
+            "answer": "The second law of thermodynamics states that the total entropy (a measure of disorder or randomness) of an isolated system always increases over time. Mathematically, it is expressed as ΔS = ΔQ / T, where ΔS is the change in entropy, ΔQ is the heat added to the system, and T is the temperature at which the heat is added.",
+            "key_points": [
+              "Second law",
+              "Entropy",
+              "ΔS = ΔQ / T"
+            ]
+          },
+          {
+            "q": "What is the difference between isothermal and adiabatic processes?",
+            "marks": 2,
+            "topic": "Types of Processes",
+            "answer": "An isothermal process is a process in which the temperature of the system remains constant. An adiabatic process, on the other hand, is a process in which no heat is transferred between the system and its surroundings. In an adiabatic process, the temperature of the system may change.",
+            "key_points": [
+              "Isothermal process",
+              "Adiabatic process",
+              "Temperature change"
+            ]
+          },
+          {
+            "q": "State the Carnot efficiency.",
+            "marks": 2,
+            "topic": "Efficiency of Heat Engines",
+            "answer": "The Carnot efficiency (η) is the maximum efficiency of a heat engine operating between two temperature reservoirs. It is given by the equation η = 1 - (Tc / Th), where Tc is the temperature of the cold reservoir and Th is the temperature of the hot reservoir.",
+            "key_points": [
+              "Carnot efficiency",
+              "Heat engine",
+              "η = 1 - (Tc / Th)"
+            ]
+          },
+          {
+            "q": "What is the difference between reversible and irreversible processes?",
+            "marks": 2,
+            "topic": "Reversible and Irreversible Processes",
+            "answer": "A reversible process is a process that can be reversed without any change in the surroundings. An irreversible process, on the other hand, is a process that cannot be reversed without some change in the surroundings. Reversible processes are ideal and do not occur in reality.",
+            "key_points": [
+              "Reversible process",
+              "Irreversible process",
+              "Ideal process"
+            ]
+          },
+          {
+            "q": "State the definition of entropy.",
+            "marks": 2,
+            "topic": "Entropy",
+            "answer": "Entropy (S) is a measure of the disorder or randomness of a system. It is a thermodynamic property that is related to the amount of thermal energy unavailable to do work in a system. Entropy is often used to describe the energy of a system at constant temperature.",
+            "key_points": [
+              "Entropy",
+              "Disorder",
+              "Thermal energy"
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:21:31.281+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Thermodynamics — Quick Revision Notes\n\n## ⚡ Key Points\n- Thermodynamics is the branch of physics that deals with the heat and temperature.\n- Laws of thermodynamics are three in number and provide a foundation for understanding the behavior of energy.\n- Zeroth law of thermodynamics allows us to define a temperature scale.\n- First law of thermodynamics represents the law of energy conservation.\n- Second law of thermodynamics explains the direction of spontaneous processes.\n- Third law of thermodynamics deals with the entropy of a system at absolute zero.\n- Thermodynamic system is the part of the universe under consideration.\n- Surroundings are all the parts of the universe outside the system.\n- System and surroundings interact with each other through the boundary.\n- Work done by a system is defined as the product of the force applied and the displacement in the direction of force.\n- Heat is the energy transferred due to a temperature difference.\n- Internal energy of a system is the sum of kinetic energy and potential energy of the particles in the system.\n- Enthalpy is a measure of the total energy of a system.\n- Entropy is a measure of the disorder or randomness in a system.\n- Reversible and irreversible processes are two types of thermodynamic processes.\n- Carnot engine is an idealized engine that provides the maximum efficiency.\n- Efficiency of an engine is the ratio of the work output to the heat input.\n- Thermodynamic properties are the properties that can be measured directly.\n- Thermodynamic processes can be isothermal, adiabatic, isobaric, and so on.\n- Phase transitions occur when the system changes from one state to another.\n- Critical point is the point at which the liquid and vapor phases become indistinguishable.\n\n## 🔑 Must-Know Definitions\n- **Thermodynamic System**: A part of the universe under consideration.\n- **Surroundings**: All the parts of the universe outside the system.\n- **Boundary**: The surface separating the system and surroundings.\n- **Work**: The product of the force applied and the displacement in the direction of force.\n- **Heat**: The energy transferred due to a temperature difference.\n- **Internal Energy**: The sum of kinetic energy and potential energy of the particles in the system.\n- **Enthalpy**: A measure of the total energy of a system.\n- **Entropy**: A measure of the disorder or randomness in a system.\n\n## 📊 Important Formulas\n- U = Q - W (First law of thermodynamics)\n- ΔU = Q - W (First law of thermodynamics)\n- dQ = dU + dW (First law of thermodynamics)\n- ΔQ = nCΔT (Heat capacity)\n- Q = mcΔT (Heat transfer)\n- W = Fx (Work done by a system)\n- PdV = nRT (Ideal gas equation)\n- ΔG = ΔH - TΔS (Gibbs free energy)\n- ΔS = ΔQ / T (Entropy change)\n- η = 1 - (Tc / Th) (Efficiency of a Carnot engine)\n\n## ⭐ Exam Tips\n- Understand the concept of thermodynamic system and surroundings.\n- Be able to apply the first law of thermodynamics to solve problems.\n- Know the difference between reversible and irreversible processes.\n- Understand the concept of entropy and its relation to the second law of thermodynamics.\n- Practice solving problems related to thermodynamic properties and processes."
+      }
+    }
+  }
+}

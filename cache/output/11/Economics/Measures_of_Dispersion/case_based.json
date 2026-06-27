@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Measures of Dispersion",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:34:59.905Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The average salary of employees in a company is Rs 50,000 per month. However, the actual salaries vary widely. The lowest salary is Rs 25,000, while the highest is Rs 1,50,000. If 5 employees have a salary of Rs 30,000, 3 employees have a salary of Rs 40,000, and 2 employees have a salary of Rs 1,20,000, calculate the range of salaries in the company.",
+        "questions": [
+          {
+            "q": "What is the range of salaries in the company?",
+            "opts": [
+              "(A) Rs 25,000",
+              "(B) Rs 25,000 - Rs 1,50,000",
+              "(C) Rs 1,50,000 - Rs 25,000",
+              "(D) Rs 0"
+            ],
+            "ans": "B",
+            "explanation": "Range is the difference between the highest and lowest values in a dataset."
+          },
+          {
+            "q": "How many employees have a salary of Rs 40,000?",
+            "opts": [
+              "(A) 1",
+              "(B) 3",
+              "(C) 5",
+              "(D) 2"
+            ],
+            "ans": "B",
+            "explanation": "Given in the passage."
+          },
+          {
+            "q": "What is the difference between the highest and lowest salaries?",
+            "opts": [
+              "(A) Rs 25,000",
+              "(B) Rs 25,000",
+              "(C) Rs 1,25,000",
+              "(D) Rs 0"
+            ],
+            "ans": "C",
+            "explanation": "Highest salary - lowest salary = Rs 1,50,000 - Rs 25,000 = Rs 1,25,000"
+          },
+          {
+            "q": "How many employees have a salary of Rs 1,20,000?",
+            "opts": [
+              "(A) 1",
+              "(B) 3",
+              "(C) 2",
+              "(D) 5"
+            ],
+            "ans": "C",
+            "explanation": "Given in the passage."
+          },
+          {
+            "q": "What is the lowest salary in the company?",
+            "opts": [
+              "(A) Rs 25,000",
+              "(B) Rs 40,000",
+              "(C) Rs 50,000",
+              "(D) Rs 1,50,000"
+            ],
+            "ans": "A",
+            "explanation": "Given in the passage."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A company has 10 employees. The average age of these employees is 35 years. However, the ages vary from 25 to 45 years. If 3 employees are 30 years old, 4 employees are 35 years old, and 3 employees are 40 years old, calculate the standard deviation of the ages.",
+        "questions": [
+          {
+            "q": "What is the standard deviation of the ages?",
+            "opts": [
+              "(A) 0",
+              "(B) 5 years",
+              "(C) 10 years",
+              "(D) 15 years"
+            ],
+            "ans": "C",
+            "explanation": "Assuming the ages are normally distributed, the standard deviation would be half the range (45-25=20), which is 10 years."
+          },
+          {
+            "q": "How many employees are 30 years old?",
+            "opts": [
+              "(A) 1",
+              "(B) 2",
+              "(C) 3",
+              "(D) 4"
+            ],
+            "ans": "C",
+            "explanation": "Given in the passage."
+          },
+          {
+            "q": "What is the range of ages in the company?",
+            "opts": [
+              "(A) 10 years",
+              "(B) 15 years",
+              "(C) 20 years",
+              "(D) 25 years"
+            ],
+            "ans": "C",
+            "explanation": "Highest age - lowest age = 45 - 25 = 20 years"
+          },
+          {
+            "q": "How many employees are 35 years old?",
+            "opts": [
+              "(A) 1",
+              "(B) 2",
+              "(C) 3",
+              "(D) 4"
+            ],
+            "ans": "D",
+            "explanation": "Given in the passage."
+          },
+          {
+            "q": "What is the lowest age in the company?",
+            "opts": [
+              "(A) 25 years",
+              "(B) 30 years",
+              "(C) 35 years",
+              "(D) 40 years"
+            ],
+            "ans": "A",
+            "explanation": "Given in the passage."
+          }
+        ]
+      }
+    ]
+  }
+}

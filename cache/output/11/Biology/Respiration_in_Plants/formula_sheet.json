@@ -1,0 +1,62 @@
+{
+  "class": "11",
+  "subject": "Biology",
+  "chapter": "Respiration in Plants",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:03:12.529Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Law of Respiration",
+        "formula": "C6H12O6 → 6CO2 + 6H2O + ATP (energy)",
+        "variables": "C6H12O6: Glucose, CO2: Carbon dioxide, H2O: Water, ATP: Adenosine triphosphate",
+        "units": "",
+        "notes": "General equation for cellular respiration in aerobic conditions"
+      },
+      {
+        "name": "Glycolysis",
+        "formula": "C6H12O6 + 2NAD+ + 2P → 2C3H6O3 + 2NADH + 2H+ + 2ATP",
+        "variables": "C6H12O6: Glucose, NAD+: Nicotinamide adenine dinucleotide, P: Inorganic phosphate, C3H6O3: Pyruvate",
+        "units": "",
+        "notes": "Equation for glycolysis in aerobic conditions"
+      },
+      {
+        "name": "Pentose Phosphate Pathway",
+        "formula": "G6P → CO2 + NADPH + 5C5H10O5P",
+        "variables": "G6P: Glucose-6-phosphate, CO2: Carbon dioxide, NADPH: Nicotinamide adenine dinucleotide phosphate, C5H10O5P: Pentoses",
+        "units": "",
+        "notes": "Equation for the pentose phosphate pathway"
+      },
+      {
+        "name": "Citric Acid Cycle (Krebs Cycle)",
+        "formula": "Acetyl-CoA → CO2 + NADH + FADH2 + ATP + GTP",
+        "variables": "Acetyl-CoA: Acetyl-CoA, CO2: Carbon dioxide, NADH: Nicotinamide adenine dinucleotide, FADH2: Flavin adenine dinucleotide, ATP: Adenosine triphosphate, GTP: Guanosine triphosphate",
+        "units": "",
+        "notes": "Equation for the citric acid cycle (Krebs cycle) in aerobic conditions"
+      },
+      {
+        "name": "Electron Transport Chain",
+        "formula": "NADH + H+ → NAD+ + H2O + 3H+ + 2e-; FADH2 + H+ → FAD + H2O + 2H+ + 2e-",
+        "variables": "NADH: Nicotinamide adenine dinucleotide, H+: Protons, NAD+: Nicotinamide adenine dinucleotide, FADH2: Flavin adenine dinucleotide, FAD: Flavin adenine dinucleotide",
+        "units": "",
+        "notes": "Equations for the electron transport chain"
+      },
+      {
+        "name": "Chemiosmosis",
+        "formula": "P → ATP (energy)",
+        "variables": "P: Inorganic phosphate, ATP: Adenosine triphosphate",
+        "units": "",
+        "notes": "Equation for chemiosmosis"
+      },
+      {
+        "name": "Respiratory Quotient (RQ)",
+        "formula": "RQ = CO2 produced / O2 consumed",
+        "variables": "RQ: Respiratory Quotient, CO2: Carbon dioxide, O2: Oxygen",
+        "units": "CO2 produced: moles, O2 consumed: moles",
+        "notes": "Formula to calculate respiratory quotient"
+      }
+    ]
+  }
+}

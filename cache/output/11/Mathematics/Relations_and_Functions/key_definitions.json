@@ -1,0 +1,93 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:33:52.262Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Relation",
+        "definition": "A relation R from a set A to a set B is a subset of the Cartesian product A x B. It is a collection of ordered pairs, where each ordered pair consists of an element from set A and an element from set B.",
+        "example": "Consider a set of students and their heights. A relation can be defined as 'taller than' between students."
+      },
+      {
+        "term": "Domain of a Relation",
+        "definition": "The set of all the first elements of the ordered pairs in a relation is called the domain of the relation.",
+        "example": "In the relation 'taller than' between students, the domain is the set of all students."
+      },
+      {
+        "term": "Range of a Relation",
+        "definition": "The set of all the second elements of the ordered pairs in a relation is called the range of the relation.",
+        "example": "In the relation 'taller than' between students, the range is the set of all students that the students in the domain are taller than."
+      },
+      {
+        "term": "Codomain of a Relation",
+        "definition": "The codomain of a relation is the set B in the Cartesian product A x B.",
+        "example": "In the relation 'taller than' between students, the codomain is the set of all students."
+      },
+      {
+        "term": "Function",
+        "definition": "A function f from a set A to a set B is a relation that associates each element of A to exactly one element of B. It is a special kind of relation where each element of A has a unique image in B.",
+        "example": "Consider a function that maps students to their heights. Each student is associated with a unique height."
+      },
+      {
+        "term": "Domain of a Function",
+        "definition": "The set of all the first elements of the ordered pairs in a function is called the domain of the function.",
+        "example": "In the function that maps students to their heights, the domain is the set of all students."
+      },
+      {
+        "term": "Range of a Function",
+        "definition": "The set of all the second elements of the ordered pairs in a function is called the range of the function. It is also known as the image of the function.",
+        "example": "In the function that maps students to their heights, the range is the set of all possible heights."
+      },
+      {
+        "term": "Codomain of a Function",
+        "definition": "The codomain of a function is the set B in the Cartesian product A x B.",
+        "example": "In the function that maps students to their heights, the codomain is the set of all heights."
+      },
+      {
+        "term": "One-to-One Function (Injective)",
+        "definition": "A function f from A to B is said to be one-to-one or injective if f(x1) = f(x2) implies x1 = x2 for all x1, x2 in A.",
+        "example": "Consider a function that maps students to their heights. If two students have the same height, they are the same student, so this function is one-to-one."
+      },
+      {
+        "term": "Many-to-One Function (Not Injective)",
+        "definition": "A function f from A to B is said to be many-to-one or not injective if f(x1) = f(x2) does not imply x1 = x2 for some x1, x2 in A.",
+        "example": "Consider a function that maps students to their heights. If two students have the same height, but are not the same student, this function is many-to-one."
+      },
+      {
+        "term": "Onto Function (Surjective)",
+        "definition": "A function f from A to B is said to be onto or surjective if for every b in B, there exists an a in A such that f(a) = b.",
+        "example": "Consider a function that maps students to their heights. If every height is mapped to by at least one student, this function is onto."
+      },
+      {
+        "term": "Bijective Function",
+        "definition": "A function f from A to B is said to be bijective if it is both one-to-one and onto.",
+        "example": "Consider a function that maps students to their heights. If every height is mapped to by exactly one student, this function is bijective."
+      },
+      {
+        "term": "Composition of Functions",
+        "definition": "The composition of two functions f and g, denoted as (f ∘ g)(x), is defined as f(g(x)).",
+        "example": "Consider two functions that map students to their heights and then to their weights. The composition of these functions would map students to their weights."
+      },
+      {
+        "term": "Inverse of a Function",
+        "definition": "The inverse of a function f, denoted as f^(-1), is a function that undoes the action of f. It is a function from B to A such that f(f^(-1)(x)) = x for all x in A.",
+        "example": "Consider a function that maps students to their heights. The inverse function would map heights to students."
+      },
+      {
+        "term": "Identity Function",
+        "definition": "An identity function from a set A to itself is a function that maps each element of A to itself.",
+        "example": "Consider a function that maps each student to themselves. This function is an identity function."
+      },
+      {
+        "term": "Constant Function",
+        "definition": "A constant function from a set A to a set B is a function that maps every element of A to a fixed element of B.",
+        "example": "Consider a function that maps every student to a fixed height. This function is a constant function."
+      }
+    ]
+  }
+}

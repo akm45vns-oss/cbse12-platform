@@ -1,0 +1,106 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Computer Systems",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T14:47:22.504Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the primary function of a CPU cache?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The primary function of a CPU cache is to store frequently accessed data and instructions to improve the CPU's performance by reducing the time it takes to access main memory.",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Fill in the blank: The _______ is the primary storage unit in a computer system.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "Hard Disk",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the difference between a byte and a bit?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "A bit is the basic unit of information in a computer, representing either 0 or 1. A byte, on the other hand, is a group of 8 bits that represents a single character or number.",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Which of the following is a type of input device?",
+        "type": "MCQ",
+        "marks": 1,
+        "options": [
+          "CPU",
+          "RAM",
+          "Mouse",
+          "Hard Disk"
+        ],
+        "answer": "Mouse",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Explain the concept of pipelining in CPU architecture with the help of an example.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "Pipelining is a technique used in CPU architecture to improve the instruction processing speed by breaking down the instruction execution process into a series of stages. Each stage performs a specific task, and the instruction is passed from one stage to the next in a continuous flow. For example, the instruction execution process can be divided into the following stages: instruction fetch, decode, execute, memory access, and write back.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "What is the purpose of the control unit in a computer system?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The control unit in a computer system is responsible for managing the flow of data between different components, such as the CPU, memory, and input/output devices. It interprets the instructions and sends control signals to the other components to execute the instructions.",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Which of the following is not a type of computer memory?",
+        "type": "MCQ",
+        "marks": 1,
+        "options": [
+          "RAM",
+          "ROM",
+          "HDD",
+          "CD"
+        ],
+        "answer": "HDD",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Explain the concept of virtual memory with the help of an example.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "Virtual memory is a memory management technique that allows a computer to use more memory than is physically available in the system. It does this by using a portion of the hard disk as an extension of the physical memory. For example, when a program requires more memory than is available in the physical memory, the operating system swaps out some of the pages of the program from the physical memory to the hard disk, making room for the additional pages required by the program. This process is called paging.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "What is the role of the arithmetic logic unit (ALU) in a computer system?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The arithmetic logic unit (ALU) in a computer system is responsible for performing arithmetic and logical operations on the data. It can add, subtract, multiply, divide, and perform logical operations such as AND, OR, and NOT.",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Fill in the blank: The _______ is a type of input/output device that allows users to interact with the computer.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "Keyboard",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

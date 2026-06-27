@@ -1,0 +1,1072 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Trigonometric Functions",
+  "exported_at": "2026-06-27T05:54:17.604Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:13:07.445+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 9,
+        "questions": [
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Sine function is positive in the first and second quadrants.",
+            "assertion": "Assertion (A): The range of the sine function is [0, 1].",
+            "explanation": "The range of the sine function is [0, 1] because the maximum value of sine function occurs in the first quadrant which is 1 and sine function is positive in the first and second quadrants."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The sine function is periodic and the sum of a periodic function and a constant is also periodic.",
+            "assertion": "Assertion (A): The graph of y = sin x + c is a periodic function.",
+            "explanation": "The graph of y = sin x + c is a periodic function because the sine function is periodic and the sum of a periodic function and a constant is also periodic."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The tangent function is defined as tan x = sin x / cos x and the sine and cosine functions are periodic with period 2π.",
+            "assertion": "Assertion (A): The tangent function is periodic with period 2π.",
+            "explanation": "The tangent function is periodic with period 2π because the sine and cosine functions are periodic with period 2π and the tangent function is defined as tan x = sin x / cos x."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The cosine function satisfies the condition cos(-x) = cos x.",
+            "assertion": "Assertion (A): The cosine function is an even function.",
+            "explanation": "The cosine function is an even function because the cosine function satisfies the condition cos(-x) = cos x."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The sine function satisfies the condition sin(-x) = -sin x.",
+            "assertion": "Assertion (A): The sine function is an odd function.",
+            "explanation": "The sine function is an odd function because the sine function satisfies the condition sin(-x) = -sin x."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The value of the sine function at π/6 is sin(π/6) = 0.5.",
+            "assertion": "Assertion (A): The value of the sine function at π/6 is 1/2.",
+            "explanation": "The value of the sine function at π/6 is indeed 1/2."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The cosine function is periodic and the graph of y = cos x represents the cosine function.",
+            "assertion": "Assertion (A): The graph of y = cos x is a periodic function.",
+            "explanation": "The graph of y = cos x is a periodic function because the cosine function is periodic and the graph of y = cos x represents the cosine function."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The cosine function is positive in the first and fourth quadrants.",
+            "assertion": "Assertion (A): The range of the cosine function is [0, 1].",
+            "explanation": "The range of the cosine function is actually [-1, 1], not [0, 1]. Although the cosine function is positive in the first and fourth quadrants, this does not explain the entire range of the function."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The tangent function is defined as tan x = sin x / cos x.",
+            "assertion": "Assertion (A): The tangent function is defined as tan x = cos x / sin x.",
+            "explanation": "The tangent function is actually defined as tan x = sin x / cos x, not cos x / sin x."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:27:11.22+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "In a small town, there is a famous lighthouse that is used as a navigation aid for boats passing through the nearby harbor. The lighthouse is 50 meters tall, and its beam of light rotates in a circular motion, shining for 12 seconds at a time before going off for 12 seconds. At what angle from the vertical will the light of the lighthouse be directed when it is shining?",
+            "questions": [
+              {
+                "q": "What is the period of the lighthouse's rotation?",
+                "ans": "A",
+                "opts": [
+                  "(A) 12 seconds",
+                  "(B) 24 seconds",
+                  "(C) 12 hours",
+                  "(D) 1 day"
+                ],
+                "explanation": "The period is the time taken for one complete rotation, which in this case is 12 seconds."
+              },
+              {
+                "q": "What is the angular speed of the lighthouse's rotation?",
+                "ans": "B",
+                "opts": [
+                  "(A) π/6 rad/s",
+                  "(B) π/12 rad/s",
+                  "(C) π/2 rad/s",
+                  "(D) 2π rad/s"
+                ],
+                "explanation": "The angular speed is calculated as 2π / period, which in this case is 2π / 24 = π/12 rad/s."
+              },
+              {
+                "q": "If the lighthouse beam is shining at an angle of 30° from the vertical, what is its angular displacement from the vertical?",
+                "ans": "B",
+                "opts": [
+                  "(A) π/6 rad",
+                  "(B) π/3 rad",
+                  "(C) π/6 rad",
+                  "(D) 30°"
+                ],
+                "explanation": "The angular displacement is given by the angle of rotation in radians, which in this case is π/3 rad."
+              },
+              {
+                "q": "What is the maximum height reached by the lighthouse beam above the horizontal?",
+                "ans": "B",
+                "opts": [
+                  "(A) 50 meters",
+                  "(B) 50 + 50 tan(30°) meters",
+                  "(C) 50 + 50 tan(60°) meters",
+                  "(D) 50 - 50 tan(30°) meters"
+                ],
+                "explanation": "The maximum height is reached when the beam is at the highest point of its rotation, which is given by the height of the lighthouse plus the distance from the base to the point directly below the beam. This is given by 50 + 50 tan(30°) meters."
+              },
+              {
+                "q": "What is the minimum height reached by the lighthouse beam below the horizontal?",
+                "ans": "D",
+                "opts": [
+                  "(A) -50 meters",
+                  "(B) -50 + 50 tan(30°) meters",
+                  "(C) -50 + 50 tan(60°) meters",
+                  "(D) -50 - 50 tan(30°) meters"
+                ],
+                "explanation": "The minimum height is reached when the beam is at the lowest point of its rotation, which is given by the height of the lighthouse minus the distance from the base to the point directly below the beam. This is given by -50 - 50 tan(30°) meters."
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "A Ferris wheel has a diameter of 20 meters and completes one rotation in 30 seconds. If a rider sits at a height of 15 meters above the ground, what is the maximum height reached by the rider above the ground?",
+            "questions": [
+              {
+                "q": "What is the angular speed of the Ferris wheel?",
+                "ans": "B",
+                "opts": [
+                  "(A) π/6 rad/s",
+                  "(B) π/12 rad/s",
+                  "(C) π/2 rad/s",
+                  "(D) 2π rad/s"
+                ],
+                "explanation": "The angular speed is calculated as 2π / period, which in this case is 2π / 30 = π/15 rad/s."
+              },
+              {
+                "q": "At what time will the rider be at the maximum height?",
+                "ans": "C",
+                "opts": [
+                  "(A) 0 seconds",
+                  "(B) 15 seconds",
+                  "(C) 30 seconds",
+                  "(D) 45 seconds"
+                ],
+                "explanation": "The rider will be at the maximum height when the Ferris wheel has completed one full rotation, which is at 30 seconds."
+              },
+              {
+                "q": "What is the maximum height reached by the rider above the ground?",
+                "ans": "D",
+                "opts": [
+                  "(A) 15 meters",
+                  "(B) 15 + 10 meters",
+                  "(C) 15 + 10 tan(30°) meters",
+                  "(D) 15 + 10 tan(60°) meters"
+                ],
+                "explanation": "The maximum height is reached when the rider is at the highest point of the Ferris wheel's rotation, which is given by the height of the rider plus the radius of the Ferris wheel. This is given by 15 + 10 tan(60°) meters."
+              },
+              {
+                "q": "What is the minimum height reached by the rider below the ground?",
+                "ans": "D",
+                "opts": [
+                  "(A) -15 meters",
+                  "(B) -15 + 10 meters",
+                  "(C) -15 + 10 tan(30°) meters",
+                  "(D) -15 - 10 tan(30°) meters"
+                ],
+                "explanation": "The minimum height is reached when the rider is at the lowest point of the Ferris wheel's rotation, which is given by the height of the rider minus the radius of the Ferris wheel. This is given by -15 - 10 tan(30°) meters."
+              },
+              {
+                "q": "What is the angular displacement of the rider from the vertical?",
+                "ans": "B",
+                "opts": [
+                  "(A) π/6 rad",
+                  "(B) π/3 rad",
+                  "(C) π/6 rad",
+                  "(D) 30°"
+                ],
+                "explanation": "The angular displacement is given by the angle of rotation in radians, which in this case is π/3 rad."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:28:21.352+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Trigonometric Functions\n## 📌 Chapter Overview\nTrigonometric functions play a crucial role in mathematics, particularly in the study of triangles and waves. This chapter explores the relationship between the angles and side lengths of triangles, which is essential for solving various mathematical and real-world problems. The chapter begins by introducing the concept of trigonometric ratios, which are used to relate the angles and side lengths of triangles. We will also explore the trigonometric functions, their identities, and their applications.\n\nTrigonometric functions have numerous real-world applications, including navigation, physics, engineering, and computer graphics. Understanding the properties and relationships of these functions is vital for solving problems in these fields. Throughout this chapter, we will delve into the world of trigonometry, exploring its fundamental concepts, formulas, and applications.\n\n## 🎯 Learning Objectives\n* Understand the concept of trigonometric ratios and their relation to triangles\n* Learn the six trigonometric functions (sine, cosine, tangent, cotangent, secant, and cosecant)\n* Understand the properties and identities of trigonometric functions\n* Learn to solve trigonometric equations and inequalities\n* Apply trigonometric functions to solve real-world problems\n* Understand the relationship between trigonometric functions and other mathematical concepts (e.g., geometry and algebra)\n\n## 🔑 Key Concepts & Definitions\n\n* **Trigonometric ratio**: A ratio of the side lengths of a triangle to the angle being considered.\n* **Trigonometric function**: A function that relates the angles and side lengths of a triangle.\n* **Periodic function**: A function that repeats its values at regular intervals.\n* **Identity**: An equation that is true for all values of the variable.\n* **Inverse function**: A function that reverses the operation of another function.\n\n## 📐 Core Theory & Principles\nThe core of trigonometry lies in the relationship between the angles and side lengths of triangles. The six trigonometric functions are defined as follows:\n\n* **Sine (sin)**: The ratio of the opposite side to the hypotenuse.\n* **Cosine (cos)**: The ratio of the adjacent side to the hypotenuse.\n* **Tangent (tan)**: The ratio of the opposite side to the adjacent side.\n* **Cotangent (cot)**: The ratio of the adjacent side to the opposite side.\n* **Secant (sec)**: The ratio of the hypotenuse to the adjacent side.\n* **Cosecant (csc)**: The ratio of the hypotenuse to the opposite side.\n\nThese functions have various properties and identities that are essential for solving trigonometric equations and inequalities. For example, the Pythagorean identity states that sin²x + cos²x = 1 for all values of x.\n\n## 🧮 Important Formulas & Laws\n\n* **Pythagorean identity**: sin²x + cos²x = 1\n* **Sum and difference formulas**: sin(x + y) = sin(x)cos(y) + cos(x)sin(y), cos(x + y) = cos(x)cos(y) - sin(x)sin(y)\n* **Double-angle formulas**: sin(2x) = 2sin(x)cos(x), cos(2x) = cos²(x) - sin²(x)\n* **Triple-angle formulas**: sin(3x) = 3sin(x) - 4sin³(x), cos(3x) = 4cos³(x) - 3cos(x)\n* **Law of sines**: sin(A)/a = sin(B)/b = sin(C)/c\n* **Law of cosines**: c² = a² + b² - 2abcos(C)\n\n## 🔬 Detailed Explanations\n\n### Types of Triangles\n\nTriangles can be classified into three types: acute, right, and obtuse triangles. Acute triangles have all angles less than 90°, right triangles have one angle equal to 90°, and obtuse triangles have one angle greater than 90°.\n\n### Trigonometric Ratios\n\nThe six trigonometric functions are defined as ratios of the side lengths of a triangle. These ratios are used to relate the angles and side lengths of triangles.\n\n### Trigonometric Identities\n\nTrigonometric identities are equations that are true for all values of the variable. Examples of trigonometric identities include the Pythagorean identity and the sum and difference formulas.\n\n### Trigonometric Equations\n\nTrigonometric equations are equations that involve trigonometric functions. These equations can be solved using various techniques, including factoring, substitution, and the quadratic formula.\n\n### Inverse Trigonometric Functions\n\nInverse trigonometric functions are functions that reverse the operation of another function. Examples of inverse trigonometric functions include the inverse sine function and the inverse cosine function.\n\n## 🖼️ Diagrams & Visual Concepts\n\n* **Triangle diagrams**: Diagrams of triangles with labeled sides and angles.\n* **Circular diagrams**: Diagrams of the unit circle with labeled angles and coordinates.\n* **Graphs of trigonometric functions**: Graphs of trigonometric functions, including sine, cosine, and tangent.\n\n## ⭐ Most Important Points (Exam Focus)\n\n* The six trigonometric functions (sine, cosine, tangent, cotangent, secant, and cosecant)\n* The Pythagorean identity (sin²x + cos²x = 1)\n* The sum and difference formulas (sin(x + y) = sin(x)cos(y) + cos(x)sin(y), cos(x + y) = cos(x)cos(y) - sin(x)sin(y))\n* The double-angle formulas (sin(2x) = 2sin(x)cos(x), cos(2x) = cos²(x) - sin²(x))\n* The law of sines (sin(A)/a = sin(B)/b = sin(C)/c)\n* The law of cosines (c² = a² + b² - 2abcos(C))\n* The inverse trigonometric functions (inverse sine, inverse cosine, inverse tangent)\n* The properties and identities of trigonometric functions\n\n## ❌ Common Mistakes to Avoid\n\n* Confusing the sine and cosine functions\n* Failing to use the correct trigonometric identity or formula\n* Not simplifying trigonometric expressions\n* Not checking the domain and range of trigonometric functions\n* Not using the correct notation for trigonometric functions\n\n## 💡 Real-World Applications\n\n* **Navigation**: Trigonometry is used in navigation to determine the position and velocity of objects.\n* **Physics**: Trigonometry is used in physics to describe the motion of objects and the forces acting on them.\n* **Engineering**: Trigonometry is used in engineering to design and analyze structures, such as bridges and buildings.\n* **Computer graphics**: Trigonometry is used in computer graphics to create 3D models and animations.\n\n## 🔁 Quick Revision Summary\n\n* The six trigonometric functions (sine, cosine, tangent, cotangent, secant, and cosecant)\n* The Pythagorean identity (sin²x + cos²x = 1)\n* The sum and difference formulas (sin(x + y) = sin(x)cos(y) + cos(x)sin(y), cos(x + y) = cos(x)cos(y) - sin(x)sin(y))\n* The double-angle formulas (sin(2x) = 2sin(x)cos(x), cos(2x) = cos²(x) - sin²(x))\n* The law of sines (sin(A)/a = sin(B)/b = sin(C)/c)\n* The law of cosines (c² = a² + b² - 2abcos(C))\n* The inverse trigonometric functions (inverse sine, inverse cosine, inverse tangent)\n* The properties and identities of trigonometric functions\n* Trigonometric ratios and their relation to triangles\n* Types of triangles (acute, right, and obtuse)\n* Trigonometric identities and their applications"
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:31.413+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [],
+        "exam_frequency": "medium",
+        "difficulty_score": 5,
+        "overall_difficulty": "medium"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:28:19.502+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Study tip 1",
+          "Study tip 2"
+        ],
+        "total_minutes": 120,
+        "revision_minutes": 20,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 30,
+        "sessions_recommended": 3,
+        "first_reading_minutes": 45,
+        "practice_questions_minutes": 25
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:29.313+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Content",
+            "notes": "",
+            "units": "",
+            "formula": "```json\n[\n  {\n    \"name\": \"Trigonometric Identities\",\n    \"formula\": \"sin(A+B) = sin(A)cos(B) + cos(A)sin(B)\",\n    \"variables\": \"A and B are angles in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to simplify trigonometric expressions involving addition of angles\"\n  },\n  {\n    \"name\": \"Trigonometric Identities\",\n    \"formula\": \"sin(A-B) = sin(A)cos(B) - cos(A)sin(B)\",\n    \"variables\": \"A and B are angles in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to simplify trigonometric expressions involving subtraction of angles\"\n  },\n  {\n    \"name\": \"Trigonometric Identities\",\n    \"formula\": \"cos(A+B) = cos(A)cos(B) - sin(A)sin(B)\",\n    \"variables\": \"A and B are angles in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to simplify trigonometric expressions involving addition of angles\"\n  },\n  {\n    \"name\": \"Trigonometric Identities\",\n    \"formula\": \"cos(A-B) = cos(A)cos(B) + sin(A)sin(B)\",\n    \"variables\": \"A and B are angles in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to simplify trigonometric expressions involving subtraction of angles\"\n  },\n  {\n    \"name\": \"Trigonometric Identities\",\n    \"formula\": \"tan(A+B) = (tan(A) + tan(B)) / (1 - tan(A)tan(B))\",\n    \"variables\": \"A and B are angles in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to simplify trigonometric expressions involving addition of angles\"\n  },\n  {\n    \"name\": \"Trigonometric Identities\",\n    \"formula\": \"tan(A-B) = (tan(A) - tan(B)) / (1 + tan(A)tan(B))\",\n    \"variables\": \"A and B are angles in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to simplify trigonometric expressions involving subtraction of angles\"\n  },\n  {\n    \"name\": \"Trigonometric Identities\",\n    \"formula\": \"sin(A/2) = ± √((1 - cos(A))/2)\",\n    \"variables\": \"A is an angle in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to find sine of half angle\"\n  },\n  {\n    \"name\": \"Trigonometric Identities\",\n    \"formula\": \"cos(A/2) = ± √((1 + cos(A))/2)\",\n    \"variables\": \"A is an angle in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to find cosine of half angle\"\n  },\n  {\n    \"name\": \"Trigonometric Identities\",\n    \"formula\": \"tan(A/2) = ± √((1 - cos(A))/(1 + cos(A)))\",\n    \"variables\": \"A is an angle in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to find tangent of half angle\"\n  },\n  {\n    \"name\": \"Sum-to-Product Identities\",\n    \"formula\": \"sin(A) + sin(B) = 2 sin((A+B)/2) cos((A-B)/2)\",\n    \"variables\": \"A and B are angles in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to simplify trigonometric expressions involving sum of sines\"\n  },\n  {\n    \"name\": \"Sum-to-Product Identities\",\n    \"formula\": \"sin(A) - sin(B) = 2 cos((A+B)/2) sin((A-B)/2)\",\n    \"variables\": \"A and B are angles in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to simplify trigonometric expressions involving difference of sines\"\n  },\n  {\n    \"name\": \"Sum-to-Product Identities\",\n    \"formula\": \"cos(A) + cos(B) = 2 cos((A+B)/2) cos((A-B)/2)\",\n    \"variables\": \"A and B are angles in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to simplify trigonometric expressions involving sum of cosines\"\n  },\n  {\n    \"name\": \"Sum-to-Product Identities\",\n    \"formula\": \"cos(A) - cos(B) = -2 sin((A+B)/2) sin((A-B)/2)\",\n    \"variables\": \"A and B are angles in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to simplify trigonometric expressions involving difference of cosines\"\n  },\n  {\n    \"name\": \"Product-to-Sum Identities\",\n    \"formula\": \"sin(A)sin(B) = (1/2)(cos(A-B) - cos(A+B))\",\n    \"variables\": \"A and B are angles in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to simplify trigonometric expressions involving product of sines\"\n  },\n  {\n    \"name\": \"Product-to-Sum Identities\",\n    \"formula\": \"cos(A)cos(B) = (1/2)(cos(A-B) + cos(A+B))\",\n    \"variables\": \"A and B are angles in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to simplify trigonometric expressions involving product of cosines\"\n  },\n  {\n    \"name\": \"Double Angle Formulae\",\n    \"formula\": \"sin(2A) = 2 sin(A)cos(A)\",\n    \"variables\": \"A is an angle in radians\",\n    \"units\": \"\",\n    \"notes\": \"Use to find sine of double angle\"\n ",
+            "variables": ""
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-27T04:27:33.441+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "Introduction to Trigonometric Functions",
+            "importance": "Understanding the basics of trigonometric functions is crucial for solving problems in mathematics and physics.",
+            "explanation": "Trigonometric functions are used to describe the relationship between the angles and side lengths of triangles. They are defined as ratios of the sides of a right-angled triangle.",
+            "related_topics": [
+              "Unit Circle",
+              "Graphs of Trigonometric Functions"
+            ]
+          },
+          {
+            "concept": "Unit Circle",
+            "importance": "The unit circle helps to visualize and understand the periodic nature of trigonometric functions.",
+            "explanation": "The unit circle is a circle with a radius of 1, centered at the origin of a coordinate plane. It is used to define trigonometric functions for all real numbers.",
+            "related_topics": [
+              "Introduction to Trigonometric Functions",
+              "Graphs of Trigonometric Functions"
+            ]
+          },
+          {
+            "concept": "Graphs of Trigonometric Functions",
+            "importance": "Graphs of trigonometric functions are essential for understanding their behavior and solving problems in mathematics and physics.",
+            "explanation": "Graphs of trigonometric functions show the relationship between the angle and the value of the function. They can be used to identify key features such as the amplitude, period, and phase shift.",
+            "related_topics": [
+              "Introduction to Trigonometric Functions",
+              "Unit Circle"
+            ]
+          },
+          {
+            "concept": "Sine, Cosine, and Tangent Functions",
+            "importance": "Understanding the sine, cosine, and tangent functions is crucial for solving problems in mathematics and physics.",
+            "explanation": "The sine, cosine, and tangent functions are the basic trigonometric functions. They are defined as ratios of the sides of a right-angled triangle.",
+            "related_topics": [
+              "Pythagorean Identity",
+              "Graphs of Trigonometric Functions"
+            ]
+          },
+          {
+            "concept": "Pythagorean Identity",
+            "importance": "The Pythagorean identity is used to simplify expressions and solve equations involving trigonometric functions.",
+            "explanation": "The Pythagorean identity is a fundamental relationship between the sine and cosine functions. It states that sin^2(x) + cos^2(x) = 1.",
+            "related_topics": [
+              "Sine, Cosine, and Tangent Functions",
+              "Graphs of Trigonometric Functions"
+            ]
+          },
+          {
+            "concept": "Even and Odd Functions",
+            "importance": "Understanding even and odd functions helps to simplify expressions and solve equations involving trigonometric functions.",
+            "explanation": "Even functions have symmetry about the y-axis, while odd functions have symmetry about the origin. This concept is essential for understanding the behavior of trigonometric functions.",
+            "related_topics": [
+              "Graphs of Trigonometric Functions",
+              "Sine, Cosine, and Tangent Functions"
+            ]
+          },
+          {
+            "concept": "Periodic Functions",
+            "importance": "Understanding periodic functions helps to identify key features such as the amplitude, period, and phase shift.",
+            "explanation": "Periodic functions repeat their values after a certain interval. Trigonometric functions are periodic functions with a period of 2π.",
+            "related_topics": [
+              "Graphs of Trigonometric Functions",
+              "Unit Circle"
+            ]
+          },
+          {
+            "concept": "Amplitude, Period, and Phase Shift",
+            "importance": "Understanding amplitude, period, and phase shift helps to identify key features of trigonometric functions and simplify expressions.",
+            "explanation": "The amplitude of a trigonometric function is its maximum value, while the period is the length of one full cycle. The phase shift is the horizontal shift of the function.",
+            "related_topics": [
+              "Graphs of Trigonometric Functions",
+              "Periodic Functions"
+            ]
+          },
+          {
+            "concept": "Inverse Trigonometric Functions",
+            "importance": "Inverse trigonometric functions are essential for solving problems in mathematics and physics.",
+            "explanation": "Inverse trigonometric functions are used to find the angle corresponding to a given value of a trigonometric function.",
+            "related_topics": [
+              "Sine, Cosine, and Tangent Functions",
+              "Graphs of Trigonometric Functions"
+            ]
+          },
+          {
+            "concept": "Trigonometric Identities",
+            "importance": "Trigonometric identities are used to simplify expressions and solve equations involving trigonometric functions.",
+            "explanation": "Trigonometric identities are equations involving trigonometric functions that are true for all values of the variable.",
+            "related_topics": [
+              "Sine, Cosine, and Tangent Functions",
+              "Pythagorean Identity"
+            ]
+          },
+          {
+            "concept": "Solving Equations Involving Trigonometric Functions",
+            "importance": "Solving equations involving trigonometric functions is essential for solving problems in mathematics and physics.",
+            "explanation": "Solving equations involving trigonometric functions requires using trigonometric identities and properties of trigonometric functions.",
+            "related_topics": [
+              "Trigonometric Identities",
+              "Inverse Trigonometric Functions"
+            ]
+          },
+          {
+            "concept": "Applications of Trigonometric Functions",
+            "importance": "Understanding the applications of trigonometric functions helps to appreciate their importance and relevance in real-world problems.",
+            "explanation": "Trigonometric functions have numerous applications in mathematics, physics, engineering, and other fields. They are used to model periodic phenomena and solve problems involving right-angled triangles.",
+            "related_topics": [
+              "Sine, Cosine, and Tangent Functions",
+              "Graphs of Trigonometric Functions"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:30.944+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "Trigonometric Functions",
+            "example": "In a right-angled triangle, sin θ = opposite side / hypotenuse, cos θ = adjacent side / hypotenuse, and tan θ = opposite side / adjacent side.",
+            "definition": "The six basic trigonometric functions are sine (sin), cosine (cos), tangent (tan), cotangent (cot), secant (sec), and cosecant (csc) of an angle in a right-angled triangle."
+          },
+          {
+            "term": "Sine (sin)",
+            "example": "sin (60°) = √3 / 2",
+            "definition": "The ratio of the length of the side opposite the angle to the length of the hypotenuse in a right-angled triangle."
+          },
+          {
+            "term": "Cosine (cos)",
+            "example": "cos (45°) = 1 / √2",
+            "definition": "The ratio of the length of the side adjacent to the angle to the length of the hypotenuse in a right-angled triangle."
+          },
+          {
+            "term": "Tangent (tan)",
+            "example": "tan (30°) = 1 / √3",
+            "definition": "The ratio of the length of the side opposite the angle to the length of the side adjacent to the angle in a right-angled triangle."
+          },
+          {
+            "term": "Cotangent (cot)",
+            "example": "cot (45°) = √2 / 1",
+            "definition": "The reciprocal of the tangent function, or the ratio of the length of the side adjacent to the angle to the length of the side opposite the angle in a right-angled triangle."
+          },
+          {
+            "term": "Secant (sec)",
+            "example": "sec (30°) = 2 / √3",
+            "definition": "The reciprocal of the cosine function, or the ratio of the length of the hypotenuse to the length of the side adjacent to the angle in a right-angled triangle."
+          },
+          {
+            "term": "Cosecant (csc)",
+            "example": "csc (45°) = √2 / 1",
+            "definition": "The reciprocal of the sine function, or the ratio of the length of the hypotenuse to the length of the side opposite the angle in a right-angled triangle."
+          },
+          {
+            "term": "Periodic Function",
+            "example": "The sine function is periodic with a period of 2π.",
+            "definition": "A function that repeats its values at regular intervals, or periods."
+          },
+          {
+            "term": "Period",
+            "example": "The period of the sine function is 2π.",
+            "definition": "The distance between two consecutive points on the graph of a function where the function value is the same."
+          },
+          {
+            "term": "Amplitude",
+            "example": "The amplitude of the sine function is 1.",
+            "definition": "The maximum displacement of a function from its mean value, or the vertical distance between the maximum and minimum points of a function."
+          },
+          {
+            "term": "Range",
+            "example": "The range of the sine function is [-1, 1].",
+            "definition": "The set of all possible output values of a function."
+          },
+          {
+            "term": "Domain",
+            "example": "The domain of the sine function is all real numbers.",
+            "definition": "The set of all possible input values of a function."
+          },
+          {
+            "term": "Trigonometric Identities",
+            "example": "sin²(x) + cos²(x) = 1",
+            "definition": "Equalities involving trigonometric functions that are true for all values of the angles involved."
+          },
+          {
+            "term": "Pythagorean Identities",
+            "example": "sin²(x) + cos²(x) = 1",
+            "definition": "A set of trigonometric identities that involve the sine and cosine functions."
+          },
+          {
+            "term": "Complementary Angles",
+            "example": "30° and 60° are complementary angles.",
+            "definition": "Two angles whose sum is 90°, or whose sine and cosine values are complementary."
+          },
+          {
+            "term": "Supplementary Angles",
+            "example": "30° and 150° are supplementary angles.",
+            "definition": "Two angles whose sum is 180°, or whose sine and cosine values are supplementary."
+          },
+          {
+            "term": "Co-function",
+            "example": "sin(x) and cos(90° - x) are co-functions.",
+            "definition": "Two trigonometric functions that have the same value for complementary angles."
+          },
+          {
+            "term": "Trigonometric Equations",
+            "example": "sin(x) = 1/2",
+            "definition": "Equations involving trigonometric functions that need to be solved for a variable."
+          },
+          {
+            "term": "Trigonometric Formulas",
+            "example": "sin(a + b) = sin(a)cos(b) + cos(a)sin(b)",
+            "definition": "Formulas involving trigonometric functions that are used to simplify or solve problems."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:28:20.008+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Use trigonometric identities to simplify expressions involving sine, cosine, and tangent.",
+            "Apply trigonometric functions to solve problems involving right triangles.",
+            "Use trigonometric functions to solve problems involving periodic phenomena, such as sound and light waves."
+          ],
+          "analyze": [
+            "Analyze the relationships between the sine, cosine, and tangent functions and their graphs.",
+            "Examine the impact of the amplitude and period on the graph of a trigonometric function.",
+            "Compare and contrast different trigonometric functions and their properties."
+          ],
+          "remember": [
+            "Recall the definitions of trigonometric functions (sine, cosine, tangent) for different angles.",
+            "State the range of the six trigonometric functions.",
+            "Identify the quadrant in which a given angle lies based on its reference angle."
+          ],
+          "understand": [
+            "Explain the relationship between trigonometric functions and their reciprocal functions (cosecant, secant, cotangent).",
+            "Describe the periodic nature of trigonometric functions and their graphs.",
+            "Understand the concept of principal value and the range of principal value."
+          ]
+        },
+        "ncert_objectives": [
+          "Students will be able to define the six trigonometric functions and their domains and ranges.",
+          "Students will be able to explain the periodic nature of trigonometric functions and their graphs.",
+          "Students will be able to use trigonometric identities to simplify expressions involving sine, cosine, and tangent."
+        ],
+        "board_exam_objectives": [
+          "Use trigonometric functions to solve problems involving right triangles (e.g., finding missing sides or angles).",
+          "Apply trigonometric functions to solve problems involving periodic phenomena (e.g., sound and light waves).",
+          "Use trigonometric identities to simplify expressions involving sine, cosine, and tangent."
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T19:08:08.498+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "a) Prove that (sin θ + cos θ)^(2) = 1 + sin 2θ. <br> b) Hence, prove that (sin θ - cos θ)^(2) = 1 - sin 2θ.",
+            "marks": 5,
+            "topic": "Proving Trigonometric Identities",
+            "answer": "a) We know that (sin θ + cos θ)^(2) = sin^(2) θ + 2 sin θ cos θ + cos^(2) θ. <br> But from the identity, we know that sin^(2) θ + cos^(2) θ = 1. <br> Also, 2 sin θ cos θ = sin 2θ. <br> So, (sin θ + cos θ)^(2) = sin^(2) θ + cos^(2) θ + sin 2θ = 1 + sin 2θ. <br> b) We can prove (sin θ - cos θ)^(2) by using the identity (sin θ + cos θ)^(2) = 1 + sin 2θ. <br> If we expand (sin θ - cos θ)^(2) and simplify it, we get (sin θ - cos θ)^(2) = 1 - sin 2θ. <br> Therefore, (sin θ - cos θ)^(2) = 1 - sin 2θ.",
+            "marking_scheme": [
+              "Expand (sin θ + cos θ)^(2) correctly (1 mark)",
+              "Simplify (sin θ + cos θ)^(2) to get 1 + sin 2θ (2 marks)",
+              "Prove (sin θ - cos θ)^(2) using the given identity (2 marks)"
+            ]
+          },
+          {
+            "q": "a) Express sin (A + B) in terms of sin A, sin B, cos A and cos B. <br> b) Hence, prove that sin (A + B) + sin (A - B) = sin A.",
+            "marks": 5,
+            "topic": "Sine and Cosine of Sum and Difference of Angles",
+            "answer": "a) We know that sin (A + B) = sin A cos B + cos A sin B. <br> This is the required expression. <br> b) We can prove sin (A + B) + sin (A - B) = sin A by using the given expression for sin (A + B). <br> Let us first expand sin (A + B) + sin (A - B) using the given expression for sin (A + B). <br> sin (A + B) + sin (A - B) = (sin A cos B + cos A sin B) + (sin A cos B - cos A sin B). <br> Simplifying this expression, we get sin (A + B) + sin (A - B) = 2 sin A cos B. <br> Now, let us expand sin 2A using the double angle formula for sine. <br> sin 2A = 2 sin A cos A. <br> Therefore, sin (A + B) + sin (A - B) = sin 2A. <br> But we know that sin 2A = 2 sin A cos A. <br> Therefore, sin (A + B) + sin (A - B) = sin A.",
+            "marking_scheme": [
+              "Express sin (A + B) in terms of sin A, sin B, cos A and cos B (2 marks)",
+              "Prove sin (A + B) + sin (A - B) = sin A using the given expression for sin (A + B) (3 marks)"
+            ]
+          },
+          {
+            "q": "a) Prove that cos 2A cos 2B - sin 2A sin 2B = cos (2A + 2B). <br> b) Hence, prove that cos 2A cos 2B - sin 2A sin 2B = cos 2(A + B).",
+            "marks": 5,
+            "topic": "Cosine of Sum and Difference of Angles",
+            "answer": "a) We know that cos 2A cos 2B - sin 2A sin 2B = cos (2A + 2B). <br> This is the required result. <br> b) We can prove cos 2A cos 2B - sin 2A sin 2B = cos 2(A + B) by using the given result. <br> Let us first expand cos 2(A + B) using the cosine of sum formula. <br> cos 2(A + B) = cos 2A cos 2B + sin 2A sin 2B. <br> But we are given that cos 2A cos 2B - sin 2A sin 2B = cos (2A + 2B). <br> Therefore, cos 2A cos 2B - sin 2A sin 2B = cos 2(A + B).",
+            "marking_scheme": [
+              "Prove cos 2A cos 2B - sin 2A sin 2B = cos (2A + 2B) (3 marks)",
+              "Prove cos 2A cos 2B - sin 2A sin 2B = cos 2(A + B) using the given result (2 marks)"
+            ]
+          },
+          {
+            "q": "a) Find the value of tan (60° + θ) in terms of tan θ. <br> b) Hence, prove that tan (60° + θ) = (tan θ + √3)/(1 - tan θ/√3).",
+            "marks": 5,
+            "topic": "Tangent of Sum and Difference of Angles",
+            "answer": "a) We know that tan (60° + θ) = (tan 60° + tan θ)/(1 - tan 60° tan θ). <br> But tan 60° = √3. <br> Therefore, tan (60° + θ) = (√3 + tan θ)/(1 - √3 tan θ). <br> b) We can prove tan (60° + θ) = (√3 + tan θ)/(1 - √3 tan θ) by using the given expression for tan (60° + θ). <br> Let us first simplify the expression (√3 + tan θ)/(1 - √3 tan θ) by multiplying the numerator and denominator by the conjugate of the denominator. <br> (√3 + tan θ)/(1 - √3 tan θ) = ((√3 + tan θ)(1 + √3 tan θ))/((1 - √3 tan θ)(1 + √3 tan θ)). <br> Simplifying this expression, we get (√3 + tan θ)/(1 - √3 tan θ) = (√3 + tan θ + √3 tan θ + √3^(2) tan^(2) θ)/(1 - √3^(2) tan^(2) θ). <br> But we know that 3^(2) = 9. <br> Therefore, (√3 + tan θ)/(1 - √3 tan θ) = (√3 + tan θ + √3 tan θ + 9 tan^(2) θ)/(1 - 3 tan^(2) θ). <br> Now, let us expand tan (60° + θ) using the tangent of sum formula. <br> tan (60° + θ) = (tan 60° + tan θ)/(1 - tan 60° tan θ). <br> But we know that tan 60° = √3. <br> Therefore, tan (60° + θ) = (√3 + tan θ)/(1 - √3 tan θ). <br> Therefore, tan (60° + θ) = (√3 + tan θ + √3 tan θ + 9 tan^(2) θ)/(1 - 3 tan^(2) θ). <br> Therefore, tan (60° + θ) = (√3 + tan θ)/(1 - √3 tan θ).",
+            "marking_scheme": [
+              "Find the value of tan (60° + θ) in terms of tan θ (2 marks)",
+              "Prove tan (60° + θ) = (tan θ + √3)/(1 - tan θ/√3) using the given expression for tan (60° + θ) (3 marks)"
+            ]
+          },
+          {
+            "q": "a) Find the value of sec (A + B) in terms of sec A, sec B, tan A and tan B. <br> b) Hence, prove that sec (A + B) = (sec A sec B + tan A tan B)/(1 - tan A tan B sec B).",
+            "marks": 5,
+            "topic": "Secant and Cosecant of Sum and Difference of Angles",
+            "answer": "a) We know that sec (A + B) = (cos A cos B + sin A sin B)/(cos A cos B - sin A sin B). <br> This is the required expression. <br> b) We can prove sec (A + B) = (sec A sec B + tan A tan B)/(1 - tan A tan B sec B) by using the given expression for sec (A + B). <br> Let us first expand sec (A + B) using the given expression for sec (A + B). <br> sec (A + B) = (cos A cos B + sin A sin B)/(cos A cos B - sin A sin B). <br> Now, let us divide both the numerator and the denominator of the expression by cos A cos B. <br> sec (A + B) = (1 + tan A tan B)/(1 - tan A tan B). <br> But we know that tan A = sin A/cos A and tan B = sin B/cos B. <br> Therefore, sec (A + B) = (1 + (sin A/cos A) (sin B/cos B))/(1 - (sin A/cos A) (sin B/cos B)). <br> Simplifying this expression, we get sec (A + B) = (1 + (sin A sin B)/(cos A cos B))/(1 - (sin A sin B)/(cos A cos B)). <br> Therefore, sec (A + B) = ((cos A cos B + sin A sin B)/(cos A cos B))/((cos A cos B - sin A sin B)/(cos A cos B)). <br> Therefore, sec (A + B) = (sec A sec B + tan A tan B)/(1 - tan A tan B sec B).",
+            "marking_scheme": [
+              "Find the value of sec (A + B) in terms of sec A, sec B, tan A and tan B (2 marks)",
+              "Prove sec (A + B) = (sec A sec B + tan A tan B)/(1 - tan A tan B sec B) using the given expression for sec (A + B) (3 marks)"
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:28:12.524+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 17,
+        "questions": [
+          {
+            "q": "If sin(x) = 3/5, then cos(x) is",
+            "ans": "A",
+            "opts": [
+              "(A) 4/5",
+              "(B) 3/5",
+              "(C) 5/3",
+              "(D) -4/5"
+            ],
+            "topic": "Identities",
+            "difficulty": "easy",
+            "explanation": "Using Pythagorean identity, cos^2(x) + sin^2(x) = 1. Given sin(x) = 3/5, we can substitute and solve for cos(x)."
+          },
+          {
+            "q": "The value of tan(π/4) is",
+            "ans": "C",
+            "opts": [
+              "(A) 1/√2",
+              "(B) √2",
+              "(C) 1",
+              "(D) √3"
+            ],
+            "topic": "Trigonometric Functions",
+            "difficulty": "easy",
+            "explanation": "Recall that tan(π/4) is a well-known value from trigonometry."
+          },
+          {
+            "q": "If sin(x) = 2/3, then sin(2x) is",
+            "ans": "A",
+            "opts": [
+              "(A) 4/9",
+              "(B) 2/3",
+              "(C) 8/9",
+              "(D) 4/5"
+            ],
+            "topic": "Double-Angle Formulas",
+            "difficulty": "easy",
+            "explanation": "Use the double-angle identity for sine: sin(2x) = 2sin(x)cos(x). Given sin(x) = 2/3, we need to find cos(x) first."
+          },
+          {
+            "q": "Find the value of cos(π/2) using a unit circle.",
+            "ans": "A",
+            "opts": [
+              "(A) 0",
+              "(B) 1/√2",
+              "(C) √2",
+              "(D) -1"
+            ],
+            "topic": "Unit Circle",
+            "difficulty": "easy",
+            "explanation": "Recall that the cosine function represents the x-coordinate on a unit circle."
+          },
+          {
+            "q": "If tan(x) = 2, then sin(x) is",
+            "ans": "A",
+            "opts": [
+              "(A) 2/√5",
+              "(B) 1/√2",
+              "(C) 2/3",
+              "(D) 1/√3"
+            ],
+            "topic": "Trigonometric Functions",
+            "difficulty": "easy",
+            "explanation": "Recall that tan(x) = sin(x)/cos(x). Given tan(x) = 2, we can set up a ratio and solve for sin(x)."
+          },
+          {
+            "q": "Prove the identity sin^2(x) + cos^2(x) = 1 using the unit circle.",
+            "ans": "A",
+            "opts": [
+              "(A) True",
+              "(B) False"
+            ],
+            "topic": "Identities",
+            "difficulty": "easy",
+            "explanation": "Draw a diagram of a unit circle and label points on the circle corresponding to angles x and -x. Use these points to demonstrate the identity."
+          },
+          {
+            "q": "Find the value of sin(3π/4) using a unit circle.",
+            "ans": "C",
+            "opts": [
+              "(A) √2/2",
+              "(B) 1/√2",
+              "(C) √2",
+              "(D) -√2"
+            ],
+            "topic": "Unit Circle",
+            "difficulty": "medium",
+            "explanation": "Recall that the sine function represents the y-coordinate on a unit circle."
+          },
+          {
+            "q": "Simplify the expression sin(2x + π/4) using double-angle and sum identities.",
+            "ans": "A",
+            "opts": [
+              "(A) sin(2x)cos(π/4) + cos(2x)sin(π/4)",
+              "(B) cos(2x) - sin(2x)",
+              "(C) sin(2x) + cos(2x)",
+              "(D) sin(2x) - cos(2x)"
+            ],
+            "topic": "Double-Angle Formulas",
+            "difficulty": "medium",
+            "explanation": "Use the double-angle identity for sine and the sum identity for sine to simplify the expression."
+          },
+          {
+            "q": "Prove the identity tan(x + π/2) = -cot(x) using trigonometric identities.",
+            "ans": "A",
+            "opts": [
+              "(A) True",
+              "(B) False"
+            ],
+            "topic": "Identities",
+            "difficulty": "medium",
+            "explanation": "Use the sum identity for tangent and the reciprocal identity for tangent to simplify the expression."
+          },
+          {
+            "q": "Find the value of cos(7π/6) using a unit circle.",
+            "ans": "A",
+            "opts": [
+              "(A) -√3/2",
+              "(B) 1/2",
+              "(C) √3/2",
+              "(D) -1/2"
+            ],
+            "topic": "Unit Circle",
+            "difficulty": "medium",
+            "explanation": "Recall that the cosine function represents the x-coordinate on a unit circle."
+          },
+          {
+            "q": "Simplify the expression (sin(x) + cos(x))^2 using trigonometric identities.",
+            "ans": "A",
+            "opts": [
+              "(A) sin^2(x) + 2sin(x)cos(x) + cos^2(x)",
+              "(B) sin^2(x) + cos^2(x)",
+              "(C) sin^2(x) - cos^2(x)",
+              "(D) -sin^2(x) + cos^2(x)"
+            ],
+            "topic": "Identities",
+            "difficulty": "medium",
+            "explanation": "Use the Pythagorean identity and the square identity to simplify the expression."
+          },
+          {
+            "q": "Prove the identity sec^2(x) - tan^2(x) = 1 using trigonometric identities.",
+            "ans": "A",
+            "opts": [
+              "(A) True",
+              "(B) False"
+            ],
+            "topic": "Identities",
+            "difficulty": "medium",
+            "explanation": "Use the reciprocal identity for secant and tangent, and the Pythagorean identity to simplify the expression."
+          },
+          {
+            "q": "Find the value of tan(11π/6) using a unit circle.",
+            "ans": "A",
+            "opts": [
+              "(A) √3",
+              "(B) -√3",
+              "(C) 1/√3",
+              "(D) -1/√3"
+            ],
+            "topic": "Unit Circle",
+            "difficulty": "hard",
+            "explanation": "Recall that the tangent function represents the ratio of sine and cosine on a unit circle."
+          },
+          {
+            "q": "Simplify the expression sin(5x) using double-angle and sum identities.",
+            "ans": "A",
+            "opts": [
+              "(A) 2sin(3x)cos(2x)",
+              "(B) 2sin(3x) + 2cos(3x)",
+              "(C) sin(3x) + cos(3x)",
+              "(D) sin(3x) - cos(3x)"
+            ],
+            "topic": "Double-Angle Formulas",
+            "difficulty": "hard",
+            "explanation": "Use the double-angle identity for sine and the sum identity for sine to simplify the expression."
+          },
+          {
+            "q": "Prove the identity cot(x + π/4) = tan(x - π/4) using trigonometric identities.",
+            "ans": "A",
+            "opts": [
+              "(A) True",
+              "(B) False"
+            ],
+            "topic": "Identities",
+            "difficulty": "hard",
+            "explanation": "Use the sum identity for cotangent and the difference identity for tangent to simplify the expression."
+          },
+          {
+            "q": "Find the value of csc(3π/4) using a unit circle.",
+            "ans": "C",
+            "opts": [
+              "(A) √2",
+              "(B) -√2",
+              "(C) 1/√2",
+              "(D) -1/√2"
+            ],
+            "topic": "Unit Circle",
+            "difficulty": "hard",
+            "explanation": "Recall that the cosecant function represents the reciprocal of sine on a unit circle."
+          },
+          {
+            "q": "Simplify the expression (sin^2(x) + cos^2(x))^2 using trigonometric identities.",
+            "ans": "A",
+            "opts": [
+              "(A) 1",
+              "(B) sin^4(x) + cos^4(x)",
+              "(C) sin^2(x) + cos^2(x)",
+              "(D) sin^2(x) - cos^2(x)"
+            ],
+            "topic": "Identities",
+            "difficulty": "hard",
+            "explanation": "Use the Pythagorean identity and the square identity to simplify the expression."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:33:52.104+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Trigonometric Functions\n\n## Chapter at a Glance\nThe chapter on Trigonometric Functions introduces students to the concept of trigonometric functions and their properties. It discusses the definitions of trigonometric functions, their domains and ranges, and their relationships. The chapter also covers the properties of trigonometric functions, such as periodicity, symmetry, and identities. The trigonometric functions studied in this chapter include sine, cosine, tangent, cotangent, secant, and cosecant. Students learn to evaluate trigonometric functions for various angles and to simplify trigonometric expressions using identities. The chapter aims to provide a solid foundation for further studies in trigonometry and its applications in mathematics and other sciences.\n\n## Section-wise Summary\n\n### 3.1 Introduction\nThe chapter begins with the introduction to trigonometric functions, which are defined in terms of the ratios of the sides of a right-angled triangle. The six basic trigonometric functions are sine, cosine, tangent, cotangent, secant, and cosecant. The domains and ranges of these functions are also discussed.\n\n### 3.2 Definition, Range and Domain of Trigonometric Functions\nThe definitions of trigonometric functions are given in terms of the coordinates of a point on the unit circle. The range and domain of each trigonometric function are discussed, and students learn to determine the values of trigonometric functions for various angles.\n\n### 3.3 Properties of Trigonometric Functions\nThe chapter covers the properties of trigonometric functions, including periodicity, symmetry, and identities. Students learn to use these properties to simplify trigonometric expressions and to evaluate trigonometric functions for various angles.\n\n### 3.4 Graphs of Trigonometric Functions\nThe chapter discusses the graphs of trigonometric functions, including the sine, cosine, and tangent functions. Students learn to identify the key features of these graphs, such as the amplitude, period, and phase shift.\n\n### 3.5 Trigonometric Identities\nThe chapter introduces students to trigonometric identities, which are equations that are true for all values of the variables involved. Students learn to use these identities to simplify trigonometric expressions and to evaluate trigonometric functions for various angles.\n\n### 3.6 Sum and Difference Formulae\nThe chapter covers the sum and difference formulae for trigonometric functions. Students learn to use these formulae to simplify trigonometric expressions and to evaluate trigonometric functions for various angles.\n\n### 3.7 Product Formulae\nThe chapter introduces students to product formulae for trigonometric functions. Students learn to use these formulae to simplify trigonometric expressions and to evaluate trigonometric functions for various angles.\n\n### 3.8 Solution of Triangles\nThe chapter discusses the solution of triangles using trigonometric functions. Students learn to use trigonometric functions to find the lengths of sides and angles in a triangle.\n\n## Important NCERT Exercises Insight\nKey concepts tested in NCERT exercises include:\n\n* Evaluating trigonometric functions for various angles\n* Simplifying trigonometric expressions using identities\n* Using trigonometric functions to find the lengths of sides and angles in a triangle\n* Solving equations involving trigonometric functions\n* Graphing trigonometric functions\n\nStudents should remember to:\n\n* Use the unit circle to evaluate trigonometric functions\n* Simplify trigonometric expressions using identities\n* Use the properties of trigonometric functions to simplify expressions\n* Graph trigonometric functions using the key features of the graphs\n\n## NCERT Exemplar Focus\nThe NCERT Exemplar for this chapter provides additional topics and exercises that are not covered in the main textbook. Students should focus on the following topics:\n\n* Trigonometric functions of sums and differences of angles\n* Trigonometric functions of multiple angles\n* Trigonometric identities involving products and quotients\n* Solution of triangles using trigonometric functions\n\n## Board Exam Relevance\nMarks weightage for this chapter in the board exam is around 30-40 marks out of a total of 100 marks. Frequently asked topics from this chapter include:\n\n* Evaluating trigonometric functions for various angles\n* Simplifying trigonometric expressions using identities\n* Using trigonometric functions to find the lengths of sides and angles in a triangle\n* Solving equations involving trigonometric functions\n* Graphing trigonometric functions\n\nStudents should focus on these topics and practice the exercises and problems in the textbook and exemplar to perform well in the board exam."
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T15:34:20.961+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "If sin x = 3/5, then find the value of cos x.",
+            "type": "Short Answer",
+            "marks": 3,
+            "answer": "4/5",
+            "difficulty": "easy",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "Prove that 2sin^(2) x + sin x = 0 has no solution for 0° ≤ x ≤ 360°.",
+            "type": "Long Answer",
+            "marks": 6,
+            "answer": "Let 2sin^(2) x + sin x = 0, we get 2sin^(2) x = -sin x, which is sin x(2sin x + 1) = 0.",
+            "difficulty": "medium",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "If tan x = 1/2 and tan x lies in the second quadrant, find the value of sin x.",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "-1/√5",
+            "difficulty": "easy",
+            "year_pattern": "2017-style"
+          },
+          {
+            "q": "If sin 2x = 3sin x cos x, show that tan x = 3.",
+            "type": "Long Answer",
+            "marks": 5,
+            "answer": "We have sin 2x = 3sin x cos x, which is 2sin x cos x = 3sin x cos x. This implies cos x = 3/2.",
+            "difficulty": "easy",
+            "year_pattern": "2016-style"
+          },
+          {
+            "q": "If cos x = 7/25, find the value of tan x.",
+            "type": "Short Answer",
+            "marks": 1,
+            "answer": "√(239)/15",
+            "difficulty": "easy",
+            "year_pattern": "2015-style"
+          },
+          {
+            "q": "Prove that (sin x + cos x)^(2) + (sin x - cos x)^(2) = 2 + 2sin^(2) x.",
+            "type": "Long Answer",
+            "marks": 5,
+            "answer": "LHS = (sin x + cos x)^(2) + (sin x - cos x)^(2) = (sin^(2) x + 2sin x cos x + cos^(2) x) + (sin^(2) x - 2sin x cos x + cos^(2) x) = 2sin^(2) x + 2cos^(2) x = 2 + 2sin^(2) x.",
+            "difficulty": "easy",
+            "year_pattern": "2014-style"
+          },
+          {
+            "q": "If tan x = 3/4, find the value of sin x.",
+            "type": "Short Answer",
+            "marks": 1,
+            "answer": "3/5",
+            "difficulty": "easy",
+            "year_pattern": "2013-style"
+          },
+          {
+            "q": "Prove that 2cos^(2) x - sin x - 1 = 0 has no solution for 0° ≤ x ≤ 360°.",
+            "type": "Long Answer",
+            "marks": 6,
+            "answer": "Let 2cos^(2) x - sin x - 1 = 0, we get 2cos^(2) x = sin x + 1, which is 2(1 - sin^(2) x) = sin x + 1.",
+            "difficulty": "medium",
+            "year_pattern": "2012-style"
+          },
+          {
+            "q": "If cos x = 12/13, find the value of tan x.",
+            "type": "Short Answer",
+            "marks": 1,
+            "answer": "-4/5",
+            "difficulty": "easy",
+            "year_pattern": "2011-style"
+          },
+          {
+            "q": "Prove that (sin x + cos x)^(2) + (sin x - cos x)^(2) = 2 + 2cos^(2) x.",
+            "type": "Long Answer",
+            "marks": 5,
+            "answer": "LHS = (sin x + cos x)^(2) + (sin x - cos x)^(2) = (sin^(2) x + 2sin x cos x + cos^(2) x) + (sin^(2) x - 2sin x cos x + cos^(2) x) = 2sin^(2) x + 2cos^(2) x = 2 + 2cos^(2) x.",
+            "difficulty": "easy",
+            "year_pattern": "2010-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:13:57.086+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "Define the trigonometric functions sine, cosine, and tangent.",
+            "marks": 2,
+            "topic": "Introduction to Trigonometry",
+            "answer": "The trigonometric functions sine, cosine, and tangent are defined as: sin x = opposite side/hypotenuse, cos x = adjacent side/hypotenuse, and tan x = opposite side/adjacent side.",
+            "key_points": [
+              "Sine function",
+              "Cosine function",
+              "Tangent function"
+            ]
+          },
+          {
+            "q": "What is the range of the sine function?",
+            "marks": 2,
+            "topic": "Properties of Trigonometric Functions",
+            "answer": "The range of the sine function is [-1, 1].",
+            "key_points": [
+              "Range of sine function",
+              "Domain of sine function"
+            ]
+          },
+          {
+            "q": "Determine the period of the cosine function.",
+            "marks": 2,
+            "topic": "Properties of Trigonometric Functions",
+            "answer": "The period of the cosine function is 2π.",
+            "key_points": [
+              "Period of cosine function",
+              "Domain and range of cosine function"
+            ]
+          },
+          {
+            "q": "Express tan (x + y) in terms of sin x, cos x, sin y, and cos y.",
+            "marks": 3,
+            "topic": "Trigonometric Identities",
+            "answer": "tan (x + y) = (tan x + tan y)/(1 - tan x tan y).",
+            "key_points": [
+              "Angle addition formula for tangent",
+              "Trigonometric identities"
+            ]
+          },
+          {
+            "q": "Prove that sin^2 x + cos^2 x = 1.",
+            "marks": 3,
+            "topic": "Trigonometric Identities",
+            "answer": "Using the Pythagorean identity, we can prove that sin^2 x + cos^2 x = (opposite side/hypotenuse)^2 + (adjacent side/hypotenuse)^2 = 1.",
+            "key_points": [
+              "Pythagorean identity",
+              "Proof of trigonometric identities"
+            ]
+          },
+          {
+            "q": "Determine the value of sin (sin^-1 (1/2)).",
+            "marks": 2,
+            "topic": "Inverse Trigonometric Functions",
+            "answer": "Let y = sin^-1 (1/2). Then, sin y = 1/2. Since y is an acute angle, y = π/6. Therefore, sin (sin^-1 (1/2)) = sin (π/6) = 1/2.",
+            "key_points": [
+              "Inverse trigonometric functions",
+              "Domain and range of inverse trigonometric functions"
+            ]
+          },
+          {
+            "q": "Express cos (2x) in terms of sin x and cos x.",
+            "marks": 3,
+            "topic": "Trigonometric Identities",
+            "answer": "cos (2x) = 2cos^2 x - 1 = 1 - 2sin^2 x.",
+            "key_points": [
+              "Double angle formula for cosine",
+              "Trigonometric identities"
+            ]
+          },
+          {
+            "q": "Determine the value of tan (π/3).",
+            "marks": 2,
+            "topic": "Trigonometric Ratios",
+            "answer": "tan (π/3) = sin (π/3)/cos (π/3) = √3/1/2 = √3.",
+            "key_points": [
+              "Value of trigonometric functions in standard angles",
+              "Trigonometric ratios in standard angles"
+            ]
+          },
+          {
+            "q": "Express sin (x + y) in terms of sin x, cos x, sin y, and cos y.",
+            "marks": 3,
+            "topic": "Trigonometric Identities",
+            "answer": "sin (x + y) = sin x cos y + cos x sin y.",
+            "key_points": [
+              "Angle addition formula for sine",
+              "Trigonometric identities"
+            ]
+          },
+          {
+            "q": "Determine the value of cos (cos^-1 (3/4)).",
+            "marks": 2,
+            "topic": "Inverse Trigonometric Functions",
+            "answer": "Let y = cos^-1 (3/4). Then, cos y = 3/4. Since y is an acute angle, y = cos^-1 (3/4). Therefore, cos (cos^-1 (3/4)) = 3/4.",
+            "key_points": [
+              "Inverse trigonometric functions",
+              "Domain and range of inverse trigonometric functions"
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:33:53.757+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Trigonometric Functions — Quick Revision Notes\n\n## ⚡ Key Points\n- Trigonometric functions are defined for all real numbers.\n- Domain of trigonometric functions is all real numbers.\n- Range of trigonometric functions is restricted to certain intervals.\n- Period of trigonometric functions is the interval after which the function starts repeating.\n- Trigonometric functions can be represented in terms of sine and cosine functions.\n- Trigonometric functions can be represented in terms of tangent and cotangent functions.\n- Period of sine and cosine functions is 2π.\n- Period of tangent and cotangent functions is π.\n- Graphs of trigonometric functions can be represented in different intervals.\n- Trigonometric functions can be expressed in terms of other trigonometric functions using identities.\n- Identities are used to simplify trigonometric expressions.\n- Trigonometric functions can be used to model real-world problems.\n- Sine, cosine, and tangent functions are used to find angles in right-angled triangles.\n- Sine, cosine, and tangent functions are used in navigation and geography.\n- Trigonometric functions are used in physics and engineering to model periodic phenomena.\n- Graphs of trigonometric functions can be used to model real-world situations.\n- Trigonometric functions can be used to solve equations and inequalities.\n- Trigonometric functions are used in calculus to find derivatives and integrals.\n- Trigonometric functions are used in statistics to model data.\n\n## 🔑 Must-Know Definitions\n- **Trigonometric Function**: A function that relates the angles of a triangle to the ratios of the lengths of its sides.\n- **Domain**: The set of all possible input values (angles) for a function.\n- **Range**: The set of all possible output values (values of the function) for a given input.\n- **Period**: The interval after which the function starts repeating.\n- **Sine Function**: The ratio of the length of the opposite side to the length of the hypotenuse in a right-angled triangle.\n- **Cosine Function**: The ratio of the length of the adjacent side to the length of the hypotenuse in a right-angled triangle.\n- **Tangent Function**: The ratio of the length of the opposite side to the length of the adjacent side in a right-angled triangle.\n\n## 📊 Important Formulas\n- **Sine Function Formula**: sin(x) = opposite side / hypotenuse\n- **Cosine Function Formula**: cos(x) = adjacent side / hypotenuse\n- **Tangent Function Formula**: tan(x) = opposite side / adjacent side\n- **Pythagorean Identity**: sin²(x) + cos²(x) = 1\n- **Tangent Identity**: tan(x) = sin(x) / cos(x)\n- **Cotangent Identity**: cot(x) = cos(x) / sin(x)\n- **Periodic Identity**: sin(x + 2π) = sin(x) and cos(x + 2π) = cos(x)\n- **Co-Function Identity**: sin(x) = cos(π/2 - x) and cos(x) = sin(π/2 - x)\n\n## ⭐ Exam Tips\n- **Understand the definitions and formulas**: Make sure to understand the definitions and formulas of trigonometric functions and their properties.\n- **Practice graphing**: Graphing trigonometric functions is an essential skill, practice graphing different functions and identify their periods and ranges.\n- **Use identities to simplify expressions**: Use trigonometric identities to simplify complex expressions and solve equations.\n- **Practice solving equations and inequalities**: Practice solving equations and inequalities involving trigonometric functions.\n- **Use real-world examples**: Use real-world examples to illustrate the application of trigonometric functions in different fields."
+      }
+    }
+  }
+}

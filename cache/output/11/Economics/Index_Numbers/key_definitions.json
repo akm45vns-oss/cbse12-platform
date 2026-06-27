@@ -1,0 +1,103 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Index Numbers",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:20:22.709Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Index Number",
+        "definition": "A statistical measure that expresses the changes in the average prices of a representative group of commodities over a period of time.",
+        "example": "An index number of 100 for the current year indicates that the prices of the commodities have increased by 50% compared to the base year."
+      },
+      {
+        "term": "Base Period",
+        "definition": "The period used as a reference point to which the prices of the current period are compared.",
+        "example": "The base period is usually the average price of a commodity over a period of 3 to 5 years."
+      },
+      {
+        "term": "Base Year",
+        "definition": "The year used as the base period to which the prices of other years are compared.",
+        "example": "The base year is usually the average price of a commodity over a period of 3 to 5 years."
+      },
+      {
+        "term": "Index Number Formula",
+        "definition": "A mathematical formula used to calculate the index number, which expresses the changes in the average prices of a representative group of commodities over a period of time.",
+        "example": "The Laspeyres' Index Number formula is given by: P = (Σ p0 q0) / (Σ p0 q0), where p0 and q0 are the prices and quantities in the base year."
+      },
+      {
+        "term": "Laspeyres' Index Number",
+        "definition": "An index number that is calculated by multiplying the prices of the current period by the quantities in the base period and then dividing by the sum of the prices in the base period multiplied by the quantities in the base period.",
+        "example": "The Laspeyres' Index Number formula is given by: P = (Σ p0 q0) / (Σ p0 q0)."
+      },
+      {
+        "term": "Paasche's Index Number",
+        "definition": "An index number that is calculated by multiplying the prices of the current period by the quantities in the current period and then dividing by the sum of the prices in the current period multiplied by the quantities in the current period.",
+        "example": "The Paasche's Index Number formula is given by: P = (Σ p q0) / (Σ p q0)."
+      },
+      {
+        "term": "Fisher's Index Number",
+        "definition": "An index number that is calculated by taking the geometric mean of the Laspeyres' and Paasche's Index Numbers.",
+        "example": "Fisher's Index Number is given by: P = √(P1 P2), where P1 and P2 are the Laspeyres' and Paasche's Index Numbers respectively."
+      },
+      {
+        "term": "Chain Index Number",
+        "definition": "An index number that is calculated by taking the ratio of the average price of a commodity in the current period to the average price in the previous period.",
+        "example": "The chain index number is given by: P = (Σ p0 q0) / (Σ p-1 q-1), where p0 and q0 are the prices and quantities in the current period, and p-1 and q-1 are the prices and quantities in the previous period."
+      },
+      {
+        "term": "Weighted Index Number",
+        "definition": "An index number that is calculated by multiplying the prices of the current period by the quantities in the base period and then dividing by the sum of the prices in the base period multiplied by the quantities in the base period.",
+        "example": "The weighted index number is given by: P = (Σ p0 q0) / (Σ p0 q0)."
+      },
+      {
+        "term": "Unweighted Index Number",
+        "definition": "An index number that is calculated by taking the average of the prices of the current period.",
+        "example": "The unweighted index number is given by: P = (Σ p) / (Σ p0), where p and p0 are the prices in the current and base periods respectively."
+      },
+      {
+        "term": "Price Index",
+        "definition": "A statistical measure that expresses the changes in the average prices of a representative group of commodities over a period of time.",
+        "example": "A price index of 100 for the current year indicates that the prices of the commodities have increased by 50% compared to the base year."
+      },
+      {
+        "term": "Quantitative Index",
+        "definition": "An index number that is calculated by multiplying the prices of the current period by the quantities in the base period and then dividing by the sum of the prices in the base period multiplied by the quantities in the base period.",
+        "example": "The quantitative index is given by: P = (Σ p0 q0) / (Σ p0 q0)."
+      },
+      {
+        "term": "Qualitative Index",
+        "definition": "An index number that is calculated by taking the average of the prices of the current period.",
+        "example": "The qualitative index is given by: P = (Σ p) / (Σ p0), where p and p0 are the prices in the current and base periods respectively."
+      },
+      {
+        "term": "Index Number of Prices",
+        "definition": "An index number that expresses the changes in the average prices of a representative group of commodities over a period of time.",
+        "example": "An index number of prices of 100 for the current year indicates that the prices of the commodities have increased by 50% compared to the base year."
+      },
+      {
+        "term": "Index Number of Quantities",
+        "definition": "An index number that expresses the changes in the average quantities of a representative group of commodities over a period of time.",
+        "example": "An index number of quantities of 100 for the current year indicates that the quantities of the commodities have increased by 50% compared to the base year."
+      },
+      {
+        "term": "Index Number of Volume",
+        "definition": "An index number that expresses the changes in the average volume of a representative group of commodities over a period of time.",
+        "example": "An index number of volume of 100 for the current year indicates that the volume of the commodities has increased by 50% compared to the base year."
+      },
+      {
+        "term": "Uses of Index Numbers",
+        "definition": "Index numbers are widely used in economics to measure changes in prices, quantities, and volumes of goods and services over time.",
+        "example": "Index numbers are used to calculate inflation rates, track changes in consumer spending patterns, and measure economic growth."
+      },
+      {
+        "term": "Limitations of Index Numbers",
+        "definition": "Index numbers have several limitations, including the possibility of errors in data collection, the choice of base year, and the weighting scheme used.",
+        "example": "The limitations of index numbers can lead to incorrect conclusions and decisions based on the data."
+      }
+    ]
+  }
+}

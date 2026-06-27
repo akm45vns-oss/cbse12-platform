@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Statistics",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:16:25.569Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A school conducted a survey to understand the sleeping habits of its students. The survey collected data on the number of hours slept by 50 students in the school. The results are as follows: 8 students slept for 5 hours or less, 12 students slept for 6-7 hours, 15 students slept for 8 hours, 8 students slept for 9-10 hours, and 7 students slept for 11 hours or more. A histogram was drawn to represent the distribution of the data. Based on the histogram, it was observed that the data is skewed to the right. The school wants to know the median sleep duration of its students. Which of the following is the correct method for finding the median of the given data?",
+        "questions": [
+          {
+            "q": "What type of data distribution is shown by the histogram of the given data?",
+            "opts": [
+              "(A) Symmetric",
+              "(B) Skewed to the left",
+              "(C) Skewed to the right",
+              "(D) Bimodal"
+            ],
+            "ans": "C",
+            "explanation": "A histogram is a graphical representation of the distribution of a dataset. If the histogram is skewed to the right, it means that the data is skewed to the right, indicating that most of the values are concentrated on the higher end of the scale."
+          },
+          {
+            "q": "The given data is not in a suitable format for finding the median. Which of the following steps can be taken to make the data suitable for finding the median?",
+            "opts": [
+              "(A) Group all the students who slept for 8 hours or more",
+              "(B) Group all the students who slept for 5 hours or less",
+              "(C) Group all the students who slept for 11 hours or more",
+              "(D) Group all the students who slept for 6-7 hours"
+            ],
+            "ans": "A",
+            "explanation": "To find the median, the data needs to be in a grouped format, where each group represents a range of values. Grouping all the students who slept for 8 hours or more makes the data suitable for finding the median."
+          },
+          {
+            "q": "Which of the following methods can be used to find the median of the given data?",
+            "opts": [
+              "(A) Step deviation method",
+              "(B) Direct method",
+              "(B) Interpolation method",
+              "(D) None of the above"
+            ],
+            "ans": "B",
+            "explanation": "The direct method is used to find the median when the data is in a grouped format. This method involves finding the median class, which is the class interval that contains the median value."
+          },
+          {
+            "q": "What is the median sleep duration of the students in the school?",
+            "opts": [
+              "(A) 7 hours",
+              "(B) 8 hours",
+              "(C) 9 hours",
+              "(D) 10 hours"
+            ],
+            "ans": "B",
+            "explanation": "The median sleep duration is the value of the middlemost observation in the data. Since the data is grouped, we need to find the median class and then use the formula to find the median value. Based on the given data, the median sleep duration is 8 hours."
+          },
+          {
+            "q": "Why is it necessary to find the median of the given data?",
+            "opts": [
+              "(A) To find the mean",
+              "(B) To find the mode",
+              "(C) To understand the central tendency of the data",
+              "(D) To find the range"
+            ],
+            "ans": "C",
+            "explanation": "The median is a measure of central tendency, which helps us understand the middle value of the data. Finding the median of the given data helps us understand the central tendency of the data, which is essential for making informed decisions."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A company conducted a survey to understand the opinions of its customers about a new product. The survey collected data on the satisfaction levels of 100 customers, with scores ranging from 1 to 5. The results are as follows: 15 customers gave a score of 1, 20 customers gave a score of 2, 25 customers gave a score of 3, 20 customers gave a score of 4, and 20 customers gave a score of 5. The company wants to know the mode of the satisfaction levels of its customers. Which of the following is the correct method for finding the mode of the given data?",
+        "questions": [
+          {
+            "q": "What is the mode of the given data?",
+            "opts": [
+              "(A) 2",
+              "(B) 3",
+              "(C) 4",
+              "(D) 5"
+            ],
+            "ans": "D",
+            "explanation": "The mode is the value that occurs most frequently in the data. Based on the given data, the value 5 occurs most frequently, with 20 customers giving a score of 5."
+          },
+          {
+            "q": "Why is it necessary to find the mode of the given data?",
+            "opts": [
+              "(A) To find the mean",
+              "(B) To find the median",
+              "(C) To understand the central tendency of the data",
+              "(D) To find the range"
+            ],
+            "ans": "C",
+            "explanation": "The mode is a measure of central tendency, which helps us understand the most common value in the data. Finding the mode of the given data helps us understand the central tendency of the data, which is essential for making informed decisions."
+          },
+          {
+            "q": "Which of the following is a characteristic of the given data?",
+            "opts": [
+              "(A) Bimodal",
+              "(B) Skewed to the left",
+              "(C) Skewed to the right",
+              "(D) Symmetric"
+            ],
+            "ans": "A",
+            "explanation": "The given data is bimodal, meaning it has two modes. The value 5 occurs most frequently, and the value 1 occurs less frequently but still has a significant number of occurrences."
+          },
+          {
+            "q": "What type of frequency distribution is shown by the given data?",
+            "opts": [
+              "(A) Discrete",
+              "(B) Continuous",
+              "(C) Grouped",
+              "(D) Ungrouped"
+            ],
+            "ans": "A",
+            "explanation": "The given data represents a discrete frequency distribution, where the values are distinct and separate. The data is also ungrouped, meaning each value is recorded separately."
+          },
+          {
+            "q": "Why is it difficult to find the median of the given data?",
+            "opts": [
+              "(A) Because the data is skewed to the left",
+              "(B) Because the data is skewed to the right",
+              "(C) Because the data is bimodal",
+              "(D) Because the data is discrete"
+            ],
+            "ans": "D",
+            "explanation": "The given data is discrete, meaning it consists of distinct and separate values. This makes it difficult to find the median, as the data does not have a continuous range of values."
+          }
+        ]
+      }
+    ]
+  }
+}

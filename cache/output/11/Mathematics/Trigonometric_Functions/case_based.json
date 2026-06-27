@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Trigonometric Functions",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:27:11.220Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "In a small town, there is a famous lighthouse that is used as a navigation aid for boats passing through the nearby harbor. The lighthouse is 50 meters tall, and its beam of light rotates in a circular motion, shining for 12 seconds at a time before going off for 12 seconds. At what angle from the vertical will the light of the lighthouse be directed when it is shining?",
+        "questions": [
+          {
+            "q": "What is the period of the lighthouse's rotation?",
+            "opts": [
+              "(A) 12 seconds",
+              "(B) 24 seconds",
+              "(C) 12 hours",
+              "(D) 1 day"
+            ],
+            "ans": "A",
+            "explanation": "The period is the time taken for one complete rotation, which in this case is 12 seconds."
+          },
+          {
+            "q": "What is the angular speed of the lighthouse's rotation?",
+            "opts": [
+              "(A) π/6 rad/s",
+              "(B) π/12 rad/s",
+              "(C) π/2 rad/s",
+              "(D) 2π rad/s"
+            ],
+            "ans": "B",
+            "explanation": "The angular speed is calculated as 2π / period, which in this case is 2π / 24 = π/12 rad/s."
+          },
+          {
+            "q": "If the lighthouse beam is shining at an angle of 30° from the vertical, what is its angular displacement from the vertical?",
+            "opts": [
+              "(A) π/6 rad",
+              "(B) π/3 rad",
+              "(C) π/6 rad",
+              "(D) 30°"
+            ],
+            "ans": "B",
+            "explanation": "The angular displacement is given by the angle of rotation in radians, which in this case is π/3 rad."
+          },
+          {
+            "q": "What is the maximum height reached by the lighthouse beam above the horizontal?",
+            "opts": [
+              "(A) 50 meters",
+              "(B) 50 + 50 tan(30°) meters",
+              "(C) 50 + 50 tan(60°) meters",
+              "(D) 50 - 50 tan(30°) meters"
+            ],
+            "ans": "B",
+            "explanation": "The maximum height is reached when the beam is at the highest point of its rotation, which is given by the height of the lighthouse plus the distance from the base to the point directly below the beam. This is given by 50 + 50 tan(30°) meters."
+          },
+          {
+            "q": "What is the minimum height reached by the lighthouse beam below the horizontal?",
+            "opts": [
+              "(A) -50 meters",
+              "(B) -50 + 50 tan(30°) meters",
+              "(C) -50 + 50 tan(60°) meters",
+              "(D) -50 - 50 tan(30°) meters"
+            ],
+            "ans": "D",
+            "explanation": "The minimum height is reached when the beam is at the lowest point of its rotation, which is given by the height of the lighthouse minus the distance from the base to the point directly below the beam. This is given by -50 - 50 tan(30°) meters."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A Ferris wheel has a diameter of 20 meters and completes one rotation in 30 seconds. If a rider sits at a height of 15 meters above the ground, what is the maximum height reached by the rider above the ground?",
+        "questions": [
+          {
+            "q": "What is the angular speed of the Ferris wheel?",
+            "opts": [
+              "(A) π/6 rad/s",
+              "(B) π/12 rad/s",
+              "(C) π/2 rad/s",
+              "(D) 2π rad/s"
+            ],
+            "ans": "B",
+            "explanation": "The angular speed is calculated as 2π / period, which in this case is 2π / 30 = π/15 rad/s."
+          },
+          {
+            "q": "At what time will the rider be at the maximum height?",
+            "opts": [
+              "(A) 0 seconds",
+              "(B) 15 seconds",
+              "(C) 30 seconds",
+              "(D) 45 seconds"
+            ],
+            "ans": "C",
+            "explanation": "The rider will be at the maximum height when the Ferris wheel has completed one full rotation, which is at 30 seconds."
+          },
+          {
+            "q": "What is the maximum height reached by the rider above the ground?",
+            "opts": [
+              "(A) 15 meters",
+              "(B) 15 + 10 meters",
+              "(C) 15 + 10 tan(30°) meters",
+              "(D) 15 + 10 tan(60°) meters"
+            ],
+            "ans": "D",
+            "explanation": "The maximum height is reached when the rider is at the highest point of the Ferris wheel's rotation, which is given by the height of the rider plus the radius of the Ferris wheel. This is given by 15 + 10 tan(60°) meters."
+          },
+          {
+            "q": "What is the minimum height reached by the rider below the ground?",
+            "opts": [
+              "(A) -15 meters",
+              "(B) -15 + 10 meters",
+              "(C) -15 + 10 tan(30°) meters",
+              "(D) -15 - 10 tan(30°) meters"
+            ],
+            "ans": "D",
+            "explanation": "The minimum height is reached when the rider is at the lowest point of the Ferris wheel's rotation, which is given by the height of the rider minus the radius of the Ferris wheel. This is given by -15 - 10 tan(30°) meters."
+          },
+          {
+            "q": "What is the angular displacement of the rider from the vertical?",
+            "opts": [
+              "(A) π/6 rad",
+              "(B) π/3 rad",
+              "(C) π/6 rad",
+              "(D) 30°"
+            ],
+            "ans": "B",
+            "explanation": "The angular displacement is given by the angle of rotation in radians, which in this case is π/3 rad."
+          }
+        ]
+      }
+    ]
+  }
+}

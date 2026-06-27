@@ -1,7 +1,7 @@
 import { memo } from "react";
 
 export const ChapterView = memo(function ChapterView({
-  subject, chapter, curriculumData, notesRead, quizBest, availableSets = [], onStartNotes, onStartQuiz
+  subject, chapter, curriculumData, notesRead, quizBest, availableSets = [], onStartNotes, onStartQuiz, selectedClass
 }) {
   const S = curriculumData;
   const quizSetCount = availableSets.length;
@@ -102,7 +102,7 @@ export const ChapterView = memo(function ChapterView({
             Take Quiz
           </div>
           <div style={{ fontSize: 14, color: "#64748b", fontWeight: 500, marginBottom: 12, lineHeight: 1.5 }}>
-            Challenge yourself with interactive Class 12 MCQs.
+            Challenge yourself with interactive Class {selectedClass || "12"} MCQs.
             {quizSetCount > 0 && <span style={{ color: "#94a3b8" }}> · {quizSetCount} set{quizSetCount !== 1 ? "s" : ""} available</span>}
           </div>
 

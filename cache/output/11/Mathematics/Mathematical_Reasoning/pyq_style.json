@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Mathematical Reasoning",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T14:43:01.993Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If a statement is false, then its denial is true. Which of the following statements is a correct denial of the given statement?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "If a statement is true, then its denial is false.",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Prove the following statement by using a counter example: 'All even numbers are greater than 1'.",
+        "type": "Long Answer",
+        "marks": 3,
+        "answer": "The statement can be proved false by using the number 0, as it is an even number but not greater than 1.",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Fill in the blank: 'If p is true, then ______________'",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "q is true.",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Which of the following statements is a valid form of argument?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "All men are mortal. Socrates is a man. ∴ Socrates is mortal.",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Examine the statement: 'If it is not raining, then the ground is dry'. Is it true or false?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "This statement is true.",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Prove the following statement using the principle of contrapositive: 'If a number is odd, then it is not divisible by 4'.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Let us assume that a number is odd. Then it is not divisible by 4. ∴ If a number is not divisible by 4, then it is odd.",
+        "year_pattern": "2021-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "A statement is true if its negation is false. Which of the following is the negation of the statement?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "All integers are positive.",
+        "year_pattern": "2015-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Examine the statement: 'If a number is divisible by 3, then it is divisible by 2'. Is it true or false?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "This statement is false.",
+        "year_pattern": "2014-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Prove the following statement: 'If p and q are true, then the statement 'p and q' is true'.",
+        "type": "Long Answer",
+        "marks": 3,
+        "answer": "Let p and q be true statements. Then the compound statement 'p and q' is true.",
+        "year_pattern": "2013-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Fill in the blank: 'If p → q and p is true, then ______________'",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "q is true.",
+        "year_pattern": "2012-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

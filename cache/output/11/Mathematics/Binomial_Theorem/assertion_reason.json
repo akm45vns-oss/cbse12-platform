@@ -1,0 +1,134 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:14:14.028Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The Binomial Theorem can be used to expand (x + y)^n, where n is a positive integer.",
+        "reason": "Reason (R): It is based on the principle of mathematical induction and provides a systematic method for expanding expressions of the form (x + y)^n.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The Binomial Theorem is indeed used to expand (x + y)^n, and it is based on the principle of mathematical induction."
+      },
+      {
+        "assertion": "Assertion (A): The Binomial Theorem states that (x + y)^n = Σ (nCk) * x^(n-k) * y^k, where n is a positive integer.",
+        "reason": "Reason (R): The general term (nCk) * x^(n-k) * y^k represents the number of combinations of n items taken k at a time, multiplied by the product of x^(n-k) and y^k.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The Binomial Theorem indeed states that (x + y)^n = Σ (nCk) * x^(n-k) * y^k, and the general term represents the number of combinations of n items taken k at a time, multiplied by the product of x^(n-k) and y^k."
+      },
+      {
+        "assertion": "Assertion (A): If n is a negative integer, then (x + y)^n is not defined.",
+        "reason": "Reason (R): The Binomial Theorem is not applicable for negative values of n, as the expression (x + y)^n would involve fractional or zero exponents, which are undefined.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "For negative values of n, the Binomial Theorem is not applicable, and the expression (x + y)^n would indeed involve fractional or zero exponents, which are undefined."
+      },
+      {
+        "assertion": "Assertion (A): The Binomial Theorem can be used to expand expressions of the form (x - y)^n.",
+        "reason": "Reason (R): By substituting -y for y in the Binomial Theorem, we can expand expressions of the form (x - y)^n.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The Binomial Theorem can indeed be used to expand expressions of the form (x - y)^n by substituting -y for y."
+      },
+      {
+        "assertion": "Assertion (A): The Binomial Theorem is applicable for all real values of n.",
+        "reason": "Reason (R): The Binomial Theorem is based on the principle of mathematical induction, which is applicable for all positive integers, and can be extended to real values of n using the concept of limits.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "The Binomial Theorem is indeed applicable for all real values of n, but the given reason is not the correct explanation."
+      },
+      {
+        "assertion": "Assertion (A): The Binomial Theorem can be used to find the sum of a binomial series.",
+        "reason": "Reason (R): The Binomial Theorem provides a systematic method for expanding expressions of the form (x + y)^n, which can be used to find the sum of a binomial series.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The Binomial Theorem can indeed be used to find the sum of a binomial series."
+      },
+      {
+        "assertion": "Assertion (A): The Binomial Theorem is only applicable for expressions of the form (x + y)^n.",
+        "reason": "Reason (R): The Binomial Theorem can be extended to expressions of the form (x - y)^n by substituting -y for y, and to expressions of the form (x + y)^(-n) by using the concept of limits.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The Binomial Theorem is not only applicable for expressions of the form (x + y)^n."
+      },
+      {
+        "assertion": "Assertion (A): The Binomial Theorem can be used to find the coefficient of a term in a binomial expansion.",
+        "reason": "Reason (R): The Binomial Theorem provides a systematic method for expanding expressions of the form (x + y)^n, which can be used to find the coefficient of a term in a binomial expansion.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The Binomial Theorem can indeed be used to find the coefficient of a term in a binomial expansion."
+      },
+      {
+        "assertion": "Assertion (A): The Binomial Theorem is a special case of the multinomial theorem.",
+        "reason": "Reason (R): The Binomial Theorem can be obtained by setting two of the variables in the multinomial theorem to zero.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The Binomial Theorem is indeed a special case of the multinomial theorem."
+      },
+      {
+        "assertion": "Assertion (A): The Binomial Theorem can be used to find the sum of an infinite geometric series.",
+        "reason": "Reason (R): The Binomial Theorem provides a systematic method for expanding expressions of the form (x + y)^n, which can be used to find the sum of an infinite geometric series.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The Binomial Theorem is not used to find the sum of an infinite geometric series."
+      }
+    ],
+    "total": 10
+  }
+}

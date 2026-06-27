@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:09:27.411Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If r is a real number and n is a positive integer, then which of the following is a true statement regarding the expansion of (1 + r)^n?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "The number of terms in the expansion of (1 + r)^n is (n+1).",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Expand (2x^2 + 3)^4 using binomial theorem.",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "The expansion of (2x^2 + 3)^4 is (2x^2)^4 + 4(2x^2)^3(3) + 6(2x^2)^2(3)^2 + 4(2x^2)(3)^3 + (3)^4.",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If the 5th term in the expansion of (2x + 3y)^n is 192x^(5) y^(3), then find the value of n.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "The 5th term in the expansion of (2x + 3y)^n is given by T_(5) = (nC_(4))(2x)^(n-4)(3y)^(4). It is given that T_(5) = 192x^(5)y^(3) = (nC_(4))(2^(n-4))(3^(4))x^(n-4)y^(4). Therefore, (n-4) = 1 and nC_(4) = 64. We know that nC_(4) = n(n-1)(n-2)(n-3)/4! and nC_(4) = 64. Solving this equation, we get n = 7.",
+        "year_pattern": "2018-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Find the coefficient of x^2 in the expansion of (2x - 3y)^6.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "The coefficient of x^2 in the expansion of (2x - 3y)^6 is 36.",
+        "year_pattern": "2016-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "The binomial coefficient nCr is defined as nCr = n!/(r!(n-r)!). Which of the following is a true statement regarding the binomial coefficient?",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "The binomial coefficient 10C3 is equal to 10!/(3!7!).",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If the coefficient of the 4th term in the expansion of (1 - 2x)^n is 6, then find the value of n.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "The 4th term in the expansion of (1 - 2x)^n is given by T_(4) = (nC_(3))x^(3)(-2)^3. It is given that T_(4) = 6. Therefore, (nC_(3))(-2)^3 = 6 => (nC_(3)) = -6/(-8) = 3/4. We know that nC_(3) = n(n-1)(n-2)/3! and nC_(3) = 3/4. Solving this equation, we get n = 7.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Using binomial theorem, expand (x+y)^0.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The expansion of (x+y)^0 is 1.",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If the 6th term in the expansion of (x + 1/x)^n is 729x^(4), then find the value of n.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "The 6th term in the expansion of (x + 1/x)^n is given by T_(6) = (nC_(5))x^(n-5)(1/x)^(5) = (nC_(5))x^(n-10). It is given that T_(6) = 729x^(4) = (nC_(5))x^(n-10). Therefore, n-10 = 4 and n = 14.",
+        "year_pattern": "2018-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Find the coefficient of x^3y^2 in the expansion of (2x + 3y)^8.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "The coefficient of x^3y^2 in the expansion of (2x + 3y)^8 is 36960.",
+        "year_pattern": "2016-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If the 7th term in the expansion of (1 + x)^n is (n+1)x^(6), then find the value of n.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "The 7th term in the expansion of (1 + x)^n is given by T_(7) = (nC_(6))x^(6). It is given that T_(7) = (n+1)x^(6). Therefore, (nC_(6)) = (n+1). We know that nC_(6) = n(n-1)(n-2)(n-3)(n-4)(n-5)/6! and (nC_(6)) = (n+1). Solving this equation, we get n = 7.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      }
+    ],
+    "total": 10
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "System of Particles and Rotational Motion",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:17:54.046Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A solid cylinder of mass 5 kg and radius 20 cm is rotating about its axis of symmetry with an angular speed of 10 rad/s.",
+        "marks": 5,
+        "answer": "The moment of inertia of a solid cylinder about its axis of symmetry is given by I = (1/2)MR^2. Substituting the values, we get I = (1/2) * 5 * (0.2)^2 = 0.1 kg m^2. The angular momentum of the cylinder is given by L = Iω, where ω is the angular speed. Substituting the values, we get L = 0.1 * 10 = 1 kg m^2/s. The torque acting on the cylinder is given by τ = dL/dt. Since the cylinder is rotating with a constant angular speed, the torque acting on it is zero.",
+        "marking_scheme": [
+          "Moment of inertia of the cylinder (1 mark)",
+          "Angular momentum of the cylinder (1 mark)",
+          "Torque acting on the cylinder (3 marks)"
+        ],
+        "topic": "Angular Momentum"
+      },
+      {
+        "q": "A rigid body is moving in a circular path of radius 10 m with a uniform speed of 5 m/s. Find the centripetal acceleration of the body and the force required to produce this acceleration.",
+        "marks": 5,
+        "answer": "The centripetal acceleration of the body is given by a_c = v^2/r, where v is the uniform speed and r is the radius of the circular path. Substituting the values, we get a_c = (5)^2/10 = 2.5 m/s^2. The force required to produce this acceleration is given by F = ma_c, where m is the mass of the body. However, the mass of the body is not given. Therefore, we cannot find the exact value of the force.",
+        "marking_scheme": [
+          "Centripetal acceleration of the body (2 marks)",
+          "Force required to produce the acceleration (3 marks)"
+        ],
+        "topic": "Circular Motion"
+      },
+      {
+        "q": "A system of two particles of masses 3 kg and 4 kg is moving with a uniform velocity of 2 m/s. Find the momentum of the system and the force acting on it.",
+        "marks": 5,
+        "answer": "The momentum of the system is the vector sum of the momenta of the individual particles. Since both particles are moving with a uniform velocity, the momentum of each particle is given by p = mv. Substituting the values, we get p_1 = 3 * 2 = 6 kg m/s and p_2 = 4 * 2 = 8 kg m/s. The total momentum of the system is P = p_1 + p_2 = 6 + 8 = 14 kg m/s. The force acting on the system is given by F = dP/dt. Since the system is moving with a uniform velocity, the force acting on it is zero.",
+        "marking_scheme": [
+          "Momentum of the system (2 marks)",
+          "Force acting on the system (3 marks)"
+        ],
+        "topic": "Linear Momentum"
+      },
+      {
+        "q": "A wheel of radius 40 cm is rotating about its axis of symmetry with an angular speed of 20 rad/s. Find the linear speed of a point on the rim of the wheel.",
+        "marks": 5,
+        "answer": "The linear speed of a point on the rim of the wheel is given by v = rω, where r is the radius of the wheel and ω is the angular speed. Substituting the values, we get v = 0.4 * 20 = 8 m/s.",
+        "marking_scheme": [
+          "Linear speed of the point on the rim (5 marks)"
+        ],
+        "topic": "Rotational Kinematics"
+      },
+      {
+        "q": "A rigid body is rotating about a fixed axis with an angular speed of 15 rad/s. The moment of inertia of the body about the axis of rotation is 6 kg m^2. Find the kinetic energy of the body.",
+        "marks": 5,
+        "answer": "The kinetic energy of the body is given by K = (1/2)Iω^2, where I is the moment of inertia and ω is the angular speed. Substituting the values, we get K = (1/2) * 6 * (15)^2 = 337.5 J.",
+        "marking_scheme": [
+          "Kinetic energy of the body (5 marks)"
+        ],
+        "topic": "Rotational Kinetics"
+      }
+    ],
+    "total": 5
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Emerging Trends",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:12:59.143Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What are the key features of Artificial Intelligence (AI) and its applications in our daily lives? Explain with suitable examples. (a) Explain the types of Machine Learning algorithms used in AI, (b) Describe how Natural Language Processing (NLP) is used in AI.",
+        "marks": 5,
+        "answer": "Artificial Intelligence (AI) is a subset of computer science that enables machines to perform tasks that typically require human intelligence. Key features of AI include machine learning, natural language processing, and expert systems. Applications of AI in our daily lives include virtual assistants, image and speech recognition, and recommendation systems.\n\nMachine Learning algorithms used in AI include supervised learning, unsupervised learning, and reinforcement learning. Supervised learning is used for classification and regression tasks, while unsupervised learning is used for clustering and dimensionality reduction. Reinforcement learning is used for decision-making tasks.\n\nNatural Language Processing (NLP) is a subfield of AI that deals with the interaction between computers and humans in natural language. NLP is used in AI for text classification, sentiment analysis, and machine translation. It also enables computers to understand and generate human-like language.",
+        "marking_scheme": [
+          "Explain the key features of AI (1 mark)",
+          "Describe the applications of AI in daily life (1 mark)",
+          "Explain the types of Machine Learning algorithms used in AI (1.5 marks)",
+          "Describe how NLP is used in AI (2 marks)"
+        ],
+        "topic": "Introduction to Artificial Intelligence"
+      },
+      {
+        "q": "Explain the concept of Internet of Things (IoT) and its applications in various sectors. (a) Describe the architecture of IoT, (b) Explain the security and privacy concerns of IoT.",
+        "marks": 5,
+        "answer": "The Internet of Things (IoT) refers to the network of physical devices, vehicles, home appliances, and other items that are embedded with sensors, software, and connectivity, allowing them to collect and exchange data with other devices and systems. IoT has various applications in sectors such as smart homes, industrial automation, healthcare, and transportation.\n\nThe architecture of IoT includes sensing devices, communication protocols, data processing, and applications. Sensing devices collect data from the environment, which is transmitted to the cloud or edge devices for processing. The processed data is then sent to the applications for analysis and decision-making.\n\nSecurity and privacy concerns of IoT include data breaches, hacking, and unauthorized access. IoT devices are vulnerable to cyber-attacks due to their connectivity and openness. To address these concerns, IoT devices need to implement robust security measures such as encryption, firewalls, and access control.",
+        "marking_scheme": [
+          "Explain the concept of IoT (1 mark)",
+          "Describe the architecture of IoT (1.5 marks)",
+          "Explain the applications of IoT in various sectors (1 mark)",
+          "Describe the security and privacy concerns of IoT (2 marks)"
+        ],
+        "topic": "Internet of Things"
+      },
+      {
+        "q": "Explain the concept of Blockchain and its applications in various sectors. (a) Describe the architecture of Blockchain, (b) Explain the advantages and disadvantages of Blockchain.",
+        "marks": 5,
+        "answer": "Blockchain is a decentralized, digital ledger that records transactions across a network of computers. It is a secure and transparent way of conducting transactions, without the need for intermediaries. Blockchain has various applications in sectors such as finance, supply chain management, and healthcare.\n\nThe architecture of Blockchain includes nodes, blocks, and a consensus mechanism. Nodes are computers that store and validate transactions, while blocks are groups of transactions that are linked together through a hash. The consensus mechanism is used to validate the transactions and ensure the integrity of the Blockchain.\n\nAdvantages of Blockchain include immutability, security, transparency, and decentralization. Disadvantages of Blockchain include high energy consumption, scalability issues, and regulatory concerns.",
+        "marking_scheme": [
+          "Explain the concept of Blockchain (1 mark)",
+          "Describe the architecture of Blockchain (1.5 marks)",
+          "Explain the advantages of Blockchain (1.5 marks)",
+          "Explain the disadvantages of Blockchain (1.5 marks)"
+        ],
+        "topic": "Blockchain Technology"
+      },
+      {
+        "q": "Explain the concept of Cloud Computing and its applications in various sectors. (a) Describe the types of Cloud Computing models, (b) Explain the advantages and disadvantages of Cloud Computing.",
+        "marks": 5,
+        "answer": "Cloud Computing is a model of delivering computing services over the internet, where resources such as servers, storage, and applications are provided as a service to users. Cloud Computing has various applications in sectors such as business, education, and healthcare.\n\nTypes of Cloud Computing models include Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). IaaS provides virtualized computing resources, while PaaS provides a platform for developing and deploying applications. SaaS provides software applications over the internet.\n\nAdvantages of Cloud Computing include scalability, flexibility, and cost-effectiveness. Disadvantages of Cloud Computing include security concerns, dependence on internet connectivity, and vendor lock-in.",
+        "marking_scheme": [
+          "Explain the concept of Cloud Computing (1 mark)",
+          "Describe the types of Cloud Computing models (1.5 marks)",
+          "Explain the advantages of Cloud Computing (1.5 marks)",
+          "Explain the disadvantages of Cloud Computing (1.5 marks)"
+        ],
+        "topic": "Cloud Computing"
+      },
+      {
+        "q": "Explain the concept of Cyber Security and its importance in the digital age. (a) Describe the types of Cyber Threats, (b) Explain the measures to prevent Cyber Threats.",
+        "marks": 5,
+        "answer": "Cyber Security refers to the protection of computer systems, networks, and data from unauthorized access, use, disclosure, disruption, modification, or destruction. Cyber Security is essential in the digital age, as it protects sensitive information and prevents financial losses.\n\nTypes of Cyber Threats include malware, phishing, ransomware, and denial-of-service (DoS) attacks. Malware is malicious software that can harm computer systems, while phishing is a type of social engineering attack that tricks users into revealing sensitive information. Ransomware is a type of malware that demands payment in exchange for restoring access to data. DoS attacks involve overwhelming a system with traffic in order to make it unavailable.\n\nMeasures to prevent Cyber Threats include using firewalls, antivirus software, and encryption. Firewalls block unauthorized access to computer systems, while antivirus software detects and removes malware. Encryption protects data from unauthorized access. Additionally, users should practice safe computing habits, such as using strong passwords and being cautious when clicking on links or downloading attachments.",
+        "marking_scheme": [
+          "Explain the concept of Cyber Security (1 mark)",
+          "Describe the types of Cyber Threats (1.5 marks)",
+          "Explain the measures to prevent Cyber Threats (2 marks)"
+        ],
+        "topic": "Cyber Security"
+      }
+    ],
+    "total": 5
+  }
+}

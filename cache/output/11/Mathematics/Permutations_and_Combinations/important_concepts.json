@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:05:51.474Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "concept": "Definition of Permutations",
+        "explanation": "Permutations are arrangements of objects in a specific order. The order of arrangement matters in permutations. For example, if we have 3 objects A, B, and C, then the permutation ABC is different from BCA.",
+        "importance": "Understands the basic concept of permutations, which is crucial for solving problems related to arrangement and ordering.",
+        "related_topics": [
+          "Permutation Formula",
+          "Circular Permutations"
+        ]
+      },
+      {
+        "concept": "Permutation Formula",
+        "explanation": "The permutation formula is nPr = n! / (n - r)!, where n is the total number of objects and r is the number of objects being arranged. This formula helps to find the number of permutations of n objects taken r at a time.",
+        "importance": "Helps to solve problems related to permutations, which is an essential skill for competitive exams.",
+        "related_topics": [
+          "Definition of Permutations",
+          "Circular Permutations"
+        ]
+      },
+      {
+        "concept": "Circular Permutations",
+        "explanation": "Circular permutations are permutations of objects in a circle, where the starting point does not matter. For example, if we have 3 objects A, B, and C in a circle, then the circular permutations are ABC, BCA, CAB.",
+        "importance": "Helps to solve problems related to circular arrangements, which is a common scenario in real life.",
+        "related_topics": [
+          "Definition of Permutations",
+          "Permutation Formula"
+        ]
+      },
+      {
+        "concept": "Definition of Combinations",
+        "explanation": "Combinations are selections of objects where the order does not matter. For example, if we have 3 objects A, B, and C, then the combination AB is the same as BA.",
+        "importance": "Understands the basic concept of combinations, which is crucial for solving problems related to selection and grouping.",
+        "related_topics": [
+          "Combination Formula",
+          "Binomial Expansion"
+        ]
+      },
+      {
+        "concept": "Combination Formula",
+        "explanation": "The combination formula is nCr = n! / (r!(n-r)!), where n is the total number of objects and r is the number of objects being selected. This formula helps to find the number of combinations of n objects taken r at a time.",
+        "importance": "Helps to solve problems related to combinations, which is an essential skill for competitive exams.",
+        "related_topics": [
+          "Definition of Combinations",
+          "Binomial Expansion"
+        ]
+      },
+      {
+        "concept": "Binomial Expansion",
+        "explanation": "Binomial expansion is the expansion of the binomial expression (a + b)^n, where n is a positive integer. This expansion helps to find the coefficients of the terms in the expression.",
+        "importance": "Helps to solve problems related to algebra and geometry, which is essential for advanced mathematics.",
+        "related_topics": [
+          "Combination Formula",
+          "Pascal's Triangle"
+        ]
+      },
+      {
+        "concept": "Pascal's Triangle",
+        "explanation": "Pascal's triangle is a triangular array of numbers in which each number is the sum of the two numbers directly above it. This triangle helps to find the coefficients of the terms in the binomial expansion.",
+        "importance": "Helps to understand the pattern and structure of binomial expansion, which is essential for advanced mathematics.",
+        "related_topics": [
+          "Binomial Expansion",
+          "Combinations"
+        ]
+      },
+      {
+        "concept": "Permutations with Repetition",
+        "explanation": "Permutations with repetition are permutations of objects where some objects are repeated. For example, if we have 3 objects A, A, and B, then the permutation AA is the same as AB.",
+        "importance": "Helps to solve problems related to permutations where some objects are repeated, which is a common scenario in real life.",
+        "related_topics": [
+          "Permutation Formula",
+          "Circular Permutations"
+        ]
+      },
+      {
+        "concept": "Combinations with Repetition",
+        "explanation": "Combinations with repetition are selections of objects where some objects are repeated. For example, if we have 3 objects A, A, and B, then the combination AA is the same as AB.",
+        "importance": "Helps to solve problems related to combinations where some objects are repeated, which is a common scenario in real life.",
+        "related_topics": [
+          "Combination Formula",
+          "Binomial Expansion"
+        ]
+      }
+    ]
+  }
+}

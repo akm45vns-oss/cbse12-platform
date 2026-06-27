@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Probability",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:29:21.558Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A five-member committee is to be formed from a group of 8 students and 4 teachers. If a student is to be the chairperson, find the probability that the committee will have at least 2 teachers. Assume that each member of the group is equally likely to be selected.",
+        "questions": [
+          {
+            "q": "How many ways can a student be selected as the chairperson?",
+            "opts": [
+              "(A) 8",
+              "(B) 4",
+              "(C) 1",
+              "(D) 5"
+            ],
+            "ans": "C",
+            "explanation": "Since a student is to be the chairperson, we have only 1 option for this position."
+          },
+          {
+            "q": "How many ways can a committee of 5 members be formed from 8 students and 4 teachers?",
+            "opts": [
+              "(A) 12C5",
+              "(B) 12C1",
+              "(C) 8C5",
+              "(D) 4C5"
+            ],
+            "ans": "A",
+            "explanation": "The total number of ways to form a committee of 5 members from 12 people is 12C5."
+          },
+          {
+            "q": "If a student is selected as the chairperson, what is the probability that the committee will have at least 2 teachers?",
+            "opts": [
+              "(A) 5/56",
+              "(B) 9/56",
+              "(C) 11/56",
+              "(D) 3/56"
+            ],
+            "ans": "C",
+            "explanation": "The probability can be calculated using the formula P(at least 2 teachers) = P(2 teachers) + P(3 teachers) + P(4 teachers)."
+          },
+          {
+            "q": "What is the total number of committees that can be formed with a student as the chairperson?",
+            "opts": [
+              "(A) 8C1 * 4C4",
+              "(B) 8C4 * 4C1",
+              "(C) 8C1 * 4C1",
+              "(D) 8C4 * 4C4"
+            ],
+            "ans": "C",
+            "explanation": "Since a student is to be the chairperson, we need to select 1 student out of 8 and 1 teacher out of 4."
+          },
+          {
+            "q": "What is the probability that the committee will have no teachers if a student is selected as the chairperson?",
+            "opts": [
+              "(A) 1/56",
+              "(B) 1/6",
+              "(C) 1/8",
+              "(D) 1/4"
+            ],
+            "ans": "C",
+            "explanation": "The probability can be calculated using the formula P(no teachers) = P(5 students)."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A bag contains 5 red marbles, 8 blue marbles, and 4 green marbles. A marble is drawn at random from the bag. If the marble drawn is blue, find the probability that it was drawn from the first third of the bag.",
+        "questions": [
+          {
+            "q": "How many blue marbles are there in the bag?",
+            "opts": [
+              "(A) 5",
+              "(B) 8",
+              "(C) 4",
+              "(D) 12"
+            ],
+            "ans": "B",
+            "explanation": "The bag contains 8 blue marbles."
+          },
+          {
+            "q": "What is the total number of marbles in the bag?",
+            "opts": [
+              "(A) 5 + 8 + 4",
+              "(B) 12 + 8 + 4",
+              "(C) 5C3 + 8C1 + 4C1",
+              "(D) 17"
+            ],
+            "ans": "D",
+            "explanation": "The total number of marbles in the bag is 17."
+          },
+          {
+            "q": "If a blue marble is drawn, what is the probability that it was drawn from the first third of the bag?",
+            "opts": [
+              "(A) 8/17",
+              "(B) 2/5",
+              "(C) 2/3",
+              "(D) 3/4"
+            ],
+            "ans": "A",
+            "explanation": "The probability can be calculated using the formula P(first third) = P(blue marble in first third) / P(blue marble)."
+          },
+          {
+            "q": "What is the probability that a blue marble is drawn from the bag?",
+            "opts": [
+              "(A) 8/17",
+              "(B) 5/17",
+              "(C) 4/17",
+              "(D) 3/17"
+            ],
+            "ans": "A",
+            "explanation": "The probability can be calculated using the formula P(blue marble) = (number of blue marbles) / (total number of marbles)."
+          },
+          {
+            "q": "What is the number of marbles in the first third of the bag?",
+            "opts": [
+              "(A) 5",
+              "(B) 8",
+              "(C) 4",
+              "(D) 6"
+            ],
+            "ans": "D",
+            "explanation": "Since the bag contains 17 marbles, the first third of the bag contains 6 marbles."
+          }
+        ]
+      }
+    ]
+  }
+}

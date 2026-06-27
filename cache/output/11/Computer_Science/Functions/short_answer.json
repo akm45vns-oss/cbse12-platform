@@ -1,0 +1,124 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:32:45.369Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a function in programming?",
+        "marks": 2,
+        "answer": "A function is a block of code that performs a specific task. It takes input values as parameters and returns output values. Functions help in reusability and reduce code duplication.",
+        "key_points": [
+          "Block of code",
+          "Input values",
+          "Output values"
+        ],
+        "topic": "Introduction to Functions"
+      },
+      {
+        "q": "What is the difference between a function and a method?",
+        "marks": 2,
+        "answer": "A function is a standalone block of code, whereas a method is a function within a class. A method has access to the class's attributes and can modify them.",
+        "key_points": [
+          "Function",
+          "Method",
+          "Class attributes"
+        ],
+        "topic": "Functions vs Methods"
+      },
+      {
+        "q": "What is the purpose of function arguments?",
+        "marks": 2,
+        "answer": "Function arguments provide input values to the function, allowing it to perform its task. They can be passed by value or by reference.",
+        "key_points": [
+          "Input values",
+          "Passed by value",
+          "Passed by reference"
+        ],
+        "topic": "Function Arguments"
+      },
+      {
+        "q": "What is the purpose of function return types?",
+        "marks": 2,
+        "answer": "Function return types specify the data type of the output value returned by the function. It helps in understanding the function's behavior and usage.",
+        "key_points": [
+          "Output value",
+          "Data type",
+          "Function behavior"
+        ],
+        "topic": "Function Return Types"
+      },
+      {
+        "q": "What is a lambda function in Python?",
+        "marks": 2,
+        "answer": "A lambda function is a small anonymous function in Python, defined using the lambda keyword. It is used for one-time use or as a higher-order function.",
+        "key_points": [
+          "Anonymous function",
+          "Lambda keyword",
+          "Higher-order function"
+        ],
+        "topic": "Lambda Functions"
+      },
+      {
+        "q": "How do you handle multiple return values from a function?",
+        "marks": 2,
+        "answer": "You can use tuples or lists to return multiple values from a function. This allows the function to return multiple outputs and enables the caller to unpack the values as needed.",
+        "key_points": [
+          "Tuples",
+          "Lists",
+          "Multiple outputs"
+        ],
+        "topic": "Multiple Return Values"
+      },
+      {
+        "q": "What is the purpose of default function arguments?",
+        "marks": 2,
+        "answer": "Default function arguments provide a default value for a parameter if no value is passed. This helps in making the function more flexible and reusable.",
+        "key_points": [
+          "Default value",
+          "Parameter",
+          "Function flexibility"
+        ],
+        "topic": "Default Function Arguments"
+      },
+      {
+        "q": "How do you pass variables by reference in a function?",
+        "marks": 2,
+        "answer": "You can pass variables by reference in a function using pointers or references. This allows the function to modify the original variable.",
+        "key_points": [
+          "Pointers",
+          "References",
+          "Original variable"
+        ],
+        "topic": "Passing Variables by Reference"
+      },
+      {
+        "q": "What is the purpose of function overloading?",
+        "marks": 2,
+        "answer": "Function overloading allows multiple functions with the same name to be defined, but with different parameter lists. This enables the function to perform different tasks based on the input parameters.",
+        "key_points": [
+          "Multiple functions",
+          "Same name",
+          "Different parameters"
+        ],
+        "topic": "Function Overloading"
+      },
+      {
+        "q": "How do you handle function exceptions in Python?",
+        "marks": 2,
+        "answer": "You can handle function exceptions in Python using try-except blocks. This allows the function to catch and handle any exceptions that occur during its execution.",
+        "key_points": [
+          "Try-except blocks",
+          "Function exceptions",
+          "Exception handling"
+        ],
+        "topic": "Function Exception Handling"
+      }
+    ],
+    "total": 10
+  }
+}

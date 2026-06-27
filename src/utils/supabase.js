@@ -478,16 +478,37 @@ export async function saveChapterNotes(subject, chapter, notes) {
   return true;
 }
 
-export async function getChapterNotes(subject, chapter) {
+export async function getChapterNotes(classLevel, subject, chapter) {
+  const args = typeof chapter === 'undefined'
+    ? { classLevel: "12", subject: classLevel, chapter: subject }
+    : { classLevel, subject, chapter };
+
   const { data, error } = await supabase
     .from("chapter_notes")
     .select("notes")
-    .eq("subject", subject)
-    .eq("chapter", chapter)
-    .single();
+    .eq("class_level", args.classLevel)
+    .eq("subject", args.subject)
+    .eq("chapter", args.chapter)
+    .maybeSingle();
 
-  if (error || !data) return null;
-  return data.notes;
+  if (data && data.notes) return data.notes;
+
+  // Fallback: Query content_library table (e.g. for Class 11 notes)
+  const { data: libData, error: libError } = await supabase
+    .from("content_library")
+    .select("data")
+    .eq("class_level", args.classLevel)
+    .eq("subject", args.subject)
+    .eq("chapter", args.chapter)
+    .eq("content_type", "detailed_notes")
+    .eq("is_valid", true)
+    .maybeSingle();
+
+  if (libData && libData.data && libData.data.markdown) {
+    return libData.data.markdown;
+  }
+
+  return null;
 }
 
 // ===== PASSWORD RESET =====
@@ -626,14 +647,28 @@ export async function resetPassword(email, newPasswordPlain) {
 /**
  * Fetch a specific quiz set (1-15) for a chapter
  */
-export const getQuizSet = createCachedQuery("quizSet", async (subject, chapter, setNumber) => {
+export const getQuizSet = createCachedQuery("quizSet", async (classLevel, subject, chapter, setNumber) => {
+  let finalClass = classLevel;
+  let finalSubj = subject;
+  let finalChap = chapter;
+  let finalSetNum = setNumber;
+
+  if (typeof setNumber === 'undefined') {
+    // Called as (subject, chapter, setNumber)
+    finalClass = "12";
+    finalSubj = classLevel;
+    finalChap = subject;
+    finalSetNum = chapter;
+  }
+
   try {
     const { data, error } = await supabase
       .from("quiz_sets")
       .select("questions")
-      .eq("subject", subject)
-      .eq("chapter", chapter)
-      .eq("set_number", setNumber)
+      .eq("class_level", finalClass)
+      .eq("subject", finalSubj)
+      .eq("chapter", finalChap)
+      .eq("set_number", finalSetNum)
       .single();
 
     if (error || !data) {
@@ -644,7 +679,7 @@ export const getQuizSet = createCachedQuery("quizSet", async (subject, chapter, 
     // Enforce the quiz contract: every playable set must contain exactly 30 MCQs.
     if (questions.length < 30) {
       console.warn(
-        `[getQuizSet] Incomplete set ignored: ${subject}/${chapter}/set-${setNumber} has ${questions.length} questions`
+        `[getQuizSet] Incomplete set ignored: ${finalSubj}/${finalChap}/set-${finalSetNum} has ${questions.length} questions`
       );
       return null;
     }
@@ -665,14 +700,19 @@ export const getQuizSet = createCachedQuery("quizSet", async (subject, chapter, 
 /**
  * Get all quiz set summaries for a chapter (for displaying set list)
  */
-export const getQuizSetSummaries = createCachedQuery("quizSetSummaries", async (subject, chapter) => {
+export const getQuizSetSummaries = createCachedQuery("quizSetSummaries", async (classLevel, subject, chapter) => {
+  const args = typeof chapter === 'undefined'
+    ? { classLevel: "12", subject: classLevel, chapter: subject }
+    : { classLevel, subject, chapter };
+
   try {
-    console.log(`[getQuizSetSummaries] Querying: subject="${subject}", chapter="${chapter}"`);
+    console.log(`[getQuizSetSummaries] Querying: class_level="${args.classLevel}", subject="${args.subject}", chapter="${args.chapter}"`);
     const { data, error } = await supabase
       .from("quiz_sets")
       .select("set_number, questions")
-      .eq("subject", subject)
-      .eq("chapter", chapter)
+      .eq("class_level", args.classLevel)
+      .eq("subject", args.subject)
+      .eq("chapter", args.chapter)
       .order("set_number", { ascending: true });
 
     if (error) {
@@ -701,22 +741,47 @@ export const getQuizSetSummaries = createCachedQuery("quizSetSummaries", async (
 /**
  * Save quiz submission for a specific set
  */
-export async function saveQuizSubmission(username, subject, chapter, setNumber, answers, score) {
+export async function saveQuizSubmission(classLevel, username, subject, chapter, setNumber, answers, score) {
+  let finalClass = classLevel;
+  let finalUser = username;
+  let finalSubj = subject;
+  let finalChap = chapter;
+  let finalSetNum = setNumber;
+  let finalAnswers = answers;
+  let finalScore = score;
+
+  if (typeof score === 'undefined') {
+    // Called as saveQuizSubmission(username, subject, chapter, setNumber, answers, score)
+    finalClass = "12";
+    finalUser = classLevel;
+    finalSubj = username;
+    finalChap = subject;
+    finalSetNum = chapter;
+    finalAnswers = answers;
+    finalScore = score;
+  }
+
   try {
     // Invalidate status and summaries caches
     const { cacheManager } = await import("./cacheManager.js");
-    const cacheKey = `query:quizSetStatus:${JSON.stringify([username, subject, chapter])}`;
+    const cacheKey = `query:quizSetStatus:${JSON.stringify([finalClass, finalUser, finalSubj, finalChap])}`;
     cacheManager.remove(cacheKey);
-    const summariesKey = `query:quizSetSummaries:${JSON.stringify([subject, chapter])}`;
+    const oldCacheKey = `query:quizSetStatus:${JSON.stringify([finalUser, finalSubj, finalChap])}`;
+    cacheManager.remove(oldCacheKey);
+
+    const summariesKey = `query:quizSetSummaries:${JSON.stringify([finalClass, finalSubj, finalChap])}`;
     cacheManager.remove(summariesKey);
+    const oldSummariesKey = `query:quizSetSummaries:${JSON.stringify([finalSubj, finalChap])}`;
+    cacheManager.remove(oldSummariesKey);
 
     const { error } = await supabase.from("quiz_submissions").insert({
-      username,
-      subject,
-      chapter,
-      set_number: setNumber,
-      answers: answers, // JSON object {questionIndex: selectedIndex}
-      score,
+      class_level: finalClass,
+      username: finalUser,
+      subject: finalSubj,
+      chapter: finalChap,
+      set_number: finalSetNum,
+      answers: finalAnswers,
+      score: finalScore,
       total_questions: 30,
       submitted_at: new Date().toISOString()
     });
@@ -736,15 +801,30 @@ export async function saveQuizSubmission(username, subject, chapter, setNumber, 
 /**
  * Get user's best score for a quiz set
  */
-export async function getBestQuizScore(username, subject, chapter, setNumber) {
+export async function getBestQuizScore(classLevel, username, subject, chapter, setNumber) {
+  let finalClass = classLevel;
+  let finalUser = username;
+  let finalSubj = subject;
+  let finalChap = chapter;
+  let finalSetNum = setNumber;
+
+  if (typeof setNumber === 'undefined') {
+    finalClass = "12";
+    finalUser = classLevel;
+    finalSubj = username;
+    finalChap = subject;
+    finalSetNum = chapter;
+  }
+
   try {
     const { data, error } = await supabase
       .from("quiz_submissions")
       .select("score")
-      .eq("username", username)
-      .eq("subject", subject)
-      .eq("chapter", chapter)
-      .eq("set_number", setNumber)
+      .eq("class_level", finalClass)
+      .eq("username", finalUser)
+      .eq("subject", finalSubj)
+      .eq("chapter", finalChap)
+      .eq("set_number", finalSetNum)
       .order("score", { ascending: false })
       .limit(1)
       .single();
@@ -762,14 +842,27 @@ export async function getBestQuizScore(username, subject, chapter, setNumber) {
 /**
  * Get all quiz completion status for a chapter
  */
-export const getQuizSetStatus = createCachedQuery("quizSetStatus", async (username, subject, chapter) => {
+export const getQuizSetStatus = createCachedQuery("quizSetStatus", async (classLevel, username, subject, chapter) => {
+  let finalClass = classLevel;
+  let finalUser = username;
+  let finalSubj = subject;
+  let finalChap = chapter;
+
+  if (typeof chapter === 'undefined') {
+    finalClass = "12";
+    finalUser = classLevel;
+    finalSubj = username;
+    finalChap = subject;
+  }
+
   try {
     const { data, error } = await supabase
       .from("quiz_submissions")
       .select("set_number, score")
-      .eq("username", username)
-      .eq("subject", subject)
-      .eq("chapter", chapter);
+      .eq("class_level", finalClass)
+      .eq("username", finalUser)
+      .eq("subject", finalSubj)
+      .eq("chapter", finalChap);
 
     if (error || !data) {
       return {};

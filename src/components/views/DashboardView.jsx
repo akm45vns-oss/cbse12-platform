@@ -1,6 +1,5 @@
 import { memo } from "react";
 import { SearchBar } from "../common";
-import { CURRICULUM } from "../../constants/curriculum";
 import { getRecentChapters } from "../../utils/recentChapters";
 import { getLoginStreak } from "../../utils/loginStreak";
 
@@ -29,21 +28,25 @@ const DAILY_TIPS = [
 ];
 
 export const DashboardView = memo(function DashboardView({
-  stats, overallPct, currentUser, displayName, onSelectSubject, onSelectChapter
+  stats, overallPct, currentUser, displayName, onSelectSubject, onSelectChapter,
+  selectedClass = "12", curriculum,
 }) {
+  // Use prop curriculum if provided, otherwise fall back to empty object
+  const CURR = curriculum || {};
   const recentChapters = getRecentChapters(currentUser, 1);
   const mostRecent = recentChapters[0] || null;
   const todayTip = DAILY_TIPS[new Date().getDay() % DAILY_TIPS.length];
 
-  // Compute progress for a subject
+  // Progress comes from App.jsx pre-computed against activeCurriculum's chapter names,
+  // so it is already class-specific — no bleed between Class 11 and Class 12.
   const getSubjectPct = (s) => {
     const st = stats.bySubject[s];
     if (!st) return 0;
     return Math.round((st.n + st.q) / (st.t * 2) * 100);
   };
 
-  // Show first 4 subjects in the 2×2 grid
-  const subjectKeys = Object.keys(CURRICULUM).slice(0, 4);
+  // All subjects in one unified grid
+  const allSubjectKeys = Object.keys(CURR);
 
   return (
     <div style={{ animation: "fadeInUp 0.4s cubic-bezier(0.4,0,0.2,1)" }}>
@@ -52,8 +55,8 @@ export const DashboardView = memo(function DashboardView({
       <div style={{ marginBottom: 24, position: "relative" }}>
         <SearchBar
           onSelectChapter={(chapter) => {
-            const foundSubject = Object.keys(CURRICULUM).find(subj =>
-              CURRICULUM[subj].units?.some(unit => unit.chapters?.includes(chapter))
+            const foundSubject = Object.keys(CURR).find(subj =>
+              CURR[subj].units?.some(unit => unit.chapters?.includes(chapter))
             );
             if (foundSubject) {
               onSelectSubject(foundSubject);
@@ -61,12 +64,29 @@ export const DashboardView = memo(function DashboardView({
             }
           }}
           onSelectSubject={onSelectSubject}
+          curriculum={CURR}
         />
+      </div>
+
+      {/* ── Class Badge ── */}
+      <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 20 }}>
+        <div style={{
+          display: "inline-flex", alignItems: "center", gap: 6,
+          background: selectedClass === "11" ? "#ede9fe" : "#dbeafe",
+          color: selectedClass === "11" ? "#4f46e5" : "#1d4ed8",
+          padding: "5px 14px", borderRadius: 999, fontSize: 13, fontWeight: 800,
+        }}>
+          <span>{selectedClass === "11" ? "🎓" : "🏆"}</span>
+          Class {selectedClass} CBSE
+        </div>
+        <span style={{ fontSize: 13, color: "#94a3b8" }}>
+          {Object.keys(CURR).length} subjects
+        </span>
       </div>
 
       {/* ── Continue Learning ── */}
       {mostRecent && (() => {
-        const S = CURRICULUM[mostRecent.subject];
+        const S = CURR[mostRecent.subject];
         const pct = getSubjectPct(mostRecent.subject);
         return (
           <div style={{ marginBottom: 24 }}>
@@ -102,7 +122,7 @@ export const DashboardView = memo(function DashboardView({
                   {mostRecent.chapter}
                 </div>
                 <div style={{ fontSize: 13, color: "#94a3b8", fontWeight: 500, marginBottom: 20 }}>
-                  {S?.units?.[0]?.name || "Class 12 CBSE"}
+                  {S?.units?.[0]?.name || `Class ${selectedClass} CBSE`}
                 </div>
               </div>
               {/* Progress bar flush to bottom */}
@@ -114,25 +134,14 @@ export const DashboardView = memo(function DashboardView({
         );
       })()}
 
-      {/* ── Your Subjects ── */}
+      {/* ── Your Subjects — unified 2-column grid ── */}
       <div style={{ marginBottom: 24 }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
-          <h2 style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", margin: 0 }}>
-            Your Subjects
-          </h2>
-          {Object.keys(CURRICULUM).length > 4 && (
-            <button
-              onClick={() => onSelectSubject(Object.keys(CURRICULUM)[4])}
-              style={{ background: "none", border: "none", color: "#4f46e5", fontSize: 13, fontWeight: 700, cursor: "pointer", padding: 0 }}
-            >
-              See all →
-            </button>
-          )}
-        </div>
-
-        <div className="dash-grid">
-          {subjectKeys.map((s) => {
-            const d = CURRICULUM[s];
+        <h2 style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", marginBottom: 12, margin: "0 0 12px" }}>
+          Your Subjects
+        </h2>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+          {allSubjectKeys.map((s) => {
+            const d = CURR[s];
             const pct = getSubjectPct(s);
             const colors = SUBJECT_ICON_COLORS[s] || { bg: "#ede9fe", color: "#4f46e5" };
             const accentColor = d.accent || "#4f46e5";
@@ -155,8 +164,7 @@ export const DashboardView = memo(function DashboardView({
                   </div>
                 </div>
                 <div>
-                  <div style={{ fontSize: 16, fontWeight: 800, color: "#0f172a", marginBottom: 8 }}>{s}</div>
-                  {/* Progress bar */}
+                  <div style={{ fontSize: 15, fontWeight: 800, color: "#0f172a", marginBottom: 8 }}>{s}</div>
                   <div className="progress-track">
                     <div className="progress-fill" style={{ width: `${pct}%`, background: accentColor }} />
                   </div>
@@ -166,42 +174,6 @@ export const DashboardView = memo(function DashboardView({
           })}
         </div>
       </div>
-
-      {/* ── All Other Subjects (collapsed list) ── */}
-      {Object.keys(CURRICULUM).length > 4 && (
-        <div style={{ marginBottom: 24 }}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
-            {Object.keys(CURRICULUM).slice(4).map(s => {
-              const d = CURRICULUM[s];
-              const pct = getSubjectPct(s);
-              const colors = SUBJECT_ICON_COLORS[s] || { bg: "#ede9fe", color: "#4f46e5" };
-              return (
-                <button
-                  key={s}
-                  className="subject-mini-card"
-                  onClick={() => onSelectSubject(s)}
-                  style={{ border: "none", width: "100%", textAlign: "left" }}
-                >
-                  <div>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
-                      <div className="subject-icon-box" style={{ background: colors.bg, color: colors.color, width: 40, height: 40 }}>
-                        <span style={{ fontSize: 18 }}>{d.emoji}</span>
-                      </div>
-                      <span style={{ fontSize: 12, fontWeight: 800, color: d.accent || "#4f46e5" }}>{pct}%</span>
-                    </div>
-                  </div>
-                  <div>
-                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a", marginBottom: 6 }}>{s}</div>
-                    <div className="progress-track" style={{ height: 4 }}>
-                      <div className="progress-fill" style={{ width: `${pct}%`, background: d.accent || "#4f46e5" }} />
-                    </div>
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      )}
 
       {/* ── Daily Study Tip ── */}
       <div className="tip-banner" style={{ marginBottom: 8 }}>

@@ -9,7 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "seed-notes": "node src/scripts/seedNotes.js",
-    "retry-notes": "node src/scripts/retryFailedNotes.js"
+    "retry-notes": "node src/scripts/retryFailedNotes.js",
+    "generate-class11": "node src/content-pipeline/scheduler.js",
+    "retry-failed": "node src/content-pipeline/scheduler.js --retry-only",
+    "export-class11": "node src/content-pipeline/exports/exportManager.js 11"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.80.0",

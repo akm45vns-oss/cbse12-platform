@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Conic Sections",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:28:21.482Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The equation of a circle with centre (a, b) and radius r is (x - a)^2 + (y - b)^2 = r^2.",
+        "reason": "Reason (R): The general equation of a circle is (x - h)^2 + (y - k)^2 = r^2.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the equation of a circle is indeed (x - h)^2 + (y - k)^2 = r^2, and (a, b) is a specific case where (h, k) = (a, b) and r is the given radius."
+      },
+      {
+        "assertion": "Assertion (A): The equation of an ellipse in standard form is (x^2/a^2) + (y^2/b^2) = 1.",
+        "reason": "Reason (R): The standard form of the equation of an ellipse is (x^2/a^2) + (y^2/b^2) = 1, where a and b are the semi-major and semi-minor axes respectively.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the equation of an ellipse is indeed (x^2/a^2) + (y^2/b^2) = 1, and the reason provided is a correct explanation for this equation."
+      },
+      {
+        "assertion": "Assertion (A): The equation of a parabola in standard form is y^2 = 4ax.",
+        "reason": "Reason (R): The standard form of the equation of a parabola is y^2 = 4ax, where (a, 0) is the focus of the parabola.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the equation of a parabola is indeed y^2 = 4ax, and the reason provided is a correct explanation for this equation."
+      },
+      {
+        "assertion": "Assertion (A): If a conic section has its major axis along the y-axis, it is a vertical ellipse.",
+        "reason": "Reason (R): If a conic section has its major axis along the y-axis, it is either a vertical ellipse or a vertical hyperbola.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the statement in A is false, and the reason provided is a correct explanation for why it could be either a vertical ellipse or a vertical hyperbola."
+      },
+      {
+        "assertion": "Assertion (A): The equation of a hyperbola with its transverse axis along the y-axis is (x^2/a^2) - (y^2/b^2) = 1.",
+        "reason": "Reason (R): The standard form of the equation of a hyperbola is (x^2/a^2) - (y^2/b^2) = 1, where a and b are the distances from the centre to the vertices along the x and y axes respectively.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the equation of a hyperbola with its transverse axis along the y-axis is indeed (x^2/a^2) - (y^2/b^2) = 1, and the reason provided is a correct explanation for this equation."
+      },
+      {
+        "assertion": "Assertion (A): The equation of a parabola in the form y = ax^2 is a horizontal parabola.",
+        "reason": "Reason (R): The equation of a parabola in the form y = ax^2 is a vertical parabola.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the statement in A is false, and the reason provided is a correct explanation for why it is a vertical parabola."
+      },
+      {
+        "assertion": "Assertion (A): A point (x, y) lies inside the circle x^2 + y^2 = r^2 if x^2 + y^2 < r^2.",
+        "reason": "Reason (R): A point (x, y) lies inside the circle x^2 + y^2 = r^2 if x^2 + y^2 < r^2, since this implies that the point lies within the boundary of the circle.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the statement in A is true, and the reason provided is a correct explanation for why the point lies inside the circle."
+      },
+      {
+        "assertion": "Assertion (A): The equation of a parabola y = ax^2 is a parabola with vertex at (0, 0).",
+        "reason": "Reason (R): The equation of a parabola y = ax^2 is a parabola with vertex at (0, 0).",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the statement in A is true, and the reason provided is a correct explanation for why the parabola has its vertex at (0, 0)."
+      },
+      {
+        "assertion": "Assertion (A): The equation of a hyperbola (x^2/a^2) - (y^2/b^2) = 1 is a hyperbola with its transverse axis along the y-axis.",
+        "reason": "Reason (R): The equation of a hyperbola (x^2/a^2) - (y^2/b^2) = 1 is a hyperbola with its transverse axis along the x-axis.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the statement in A is false, and the reason provided is a correct explanation for why the hyperbola has its transverse axis along the x-axis."
+      }
+    ],
+    "total": 9
+  }
+}

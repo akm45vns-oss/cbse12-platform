@@ -1,0 +1,231 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Sets",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:13:05.030Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A set containing 3 elements is said to be a ______ set?",
+        "opts": [
+          "(A) Finite set",
+          "(B) Infinite set",
+          "(C) Empty set",
+          "(D) Cardinal set"
+        ],
+        "ans": "A",
+        "explanation": "A finite set is defined as a set that has a finite number of elements, i.e., the number of elements in the set is countable. In this case, a set containing 3 elements is a finite set.",
+        "difficulty": "easy",
+        "topic": "Types of Sets"
+      },
+      {
+        "q": "The set of integers less than -5 is denoted by?",
+        "opts": [
+          "(A) {x: x ∈ Z, x > -5}",
+          "(B) {x: x ∈ Z, x < -5}",
+          "(C) {x: x ∈ Z, x ≥ -5}",
+          "(D) {x: x ∈ Z, x ≤ -5}"
+        ],
+        "ans": "B",
+        "explanation": "The set of integers less than -5 is denoted by {x: x ∈ Z, x < -5} because it includes all integers x that are less than -5.",
+        "difficulty": "easy",
+        "topic": "Notations for Sets"
+      },
+      {
+        "q": "The number of elements in the set {1, 2, 3, 4, 5, 6} is?",
+        "opts": [
+          "(A) 4",
+          "(B) 5",
+          "(C) 6",
+          "(D) 7"
+        ],
+        "ans": "C",
+        "explanation": "The number of elements in a set is determined by counting the individual elements. In this case, the set {1, 2, 3, 4, 5, 6} has 6 elements.",
+        "difficulty": "easy",
+        "topic": "Cardinal Number of a Set"
+      },
+      {
+        "q": "The union of two sets A and B is denoted by?",
+        "opts": [
+          "(A) A ∩ B",
+          "(B) A ∪ B",
+          "(C) A - B",
+          "(D) A × B"
+        ],
+        "ans": "B",
+        "explanation": "The union of two sets A and B is denoted by A ∪ B. It includes all elements that are in A, in B, or in both A and B.",
+        "difficulty": "easy",
+        "topic": "Set Operations"
+      },
+      {
+        "q": "The intersection of two sets A and B is denoted by?",
+        "opts": [
+          "(A) A ∪ B",
+          "(B) A ∩ B",
+          "(C) A - B",
+          "(D) A × B"
+        ],
+        "ans": "B",
+        "explanation": "The intersection of two sets A and B is denoted by A ∩ B. It includes all elements that are common to both A and B.",
+        "difficulty": "easy",
+        "topic": "Set Operations"
+      },
+      {
+        "q": "If A = {1, 2, 3} and B = {3, 4, 5}, then A ∩ B =?",
+        "opts": [
+          "(A) {1, 2}",
+          "(B) {3}",
+          "(C) {1, 2, 3, 4, 5}",
+          "(D) φ"
+        ],
+        "ans": "B",
+        "explanation": "The intersection of A and B is the set of elements common to both. In this case, the only element common to both sets is 3.",
+        "difficulty": "easy",
+        "topic": "Set Operations"
+      },
+      {
+        "q": "If A = {1, 2, 3} and B = {3, 4, 5}, then A - B =?",
+        "opts": [
+          "(A) {1, 2}",
+          "(B) {3, 4, 5}",
+          "(C) {1, 2, 4, 5}",
+          "(D) φ"
+        ],
+        "ans": "A",
+        "explanation": "The difference of A and B is the set of elements that are in A but not in B. In this case, the elements 1 and 2 are in A but not in B.",
+        "difficulty": "easy",
+        "topic": "Set Operations"
+      },
+      {
+        "q": "A relation R from set A to set B is a subset of A × B. (True/False)",
+        "opts": [
+          "(A) True",
+          "(B) False"
+        ],
+        "ans": "A",
+        "explanation": "A relation R from set A to set B is indeed a subset of A × B, as it is a collection of ordered pairs (a, b) where a is in A and b is in B.",
+        "difficulty": "easy",
+        "topic": "Relation"
+      },
+      {
+        "q": "If A = {1, 2, 3} and B = {a, b, c}, then A × B =?",
+        "opts": [
+          "(A) {(1, a), (1, b), (1, c), (2, a), (2, b), (2, c), (3, a), (3, b), (3, c)}",
+          "(B) {(1, a), (2, b), (3, c)}",
+          "(C) {(1, 2), (2, 3), (3, 1)}",
+          "(D) {(1, a), (2, 2), (3, 3)}"
+        ],
+        "ans": "A",
+        "explanation": "The Cartesian product of A and B is the set of all ordered pairs (a, b) where a is in A and b is in B.",
+        "difficulty": "easy",
+        "topic": "Cartesian Product"
+      },
+      {
+        "q": "If A = {1, 2, 3} and B = {a, b, c}, then A ∪ B =?",
+        "opts": [
+          "(A) {1, 2, 3, a, b, c}",
+          "(B) {1, 2, 3} ∪ {a, b, c}",
+          "(C) {1, 2, 3} ∩ {a, b, c}",
+          "(D) φ"
+        ],
+        "ans": "A",
+        "explanation": "The union of A and B is the set of all elements that are in A, in B, or in both A and B.",
+        "difficulty": "medium",
+        "topic": "Set Operations"
+      },
+      {
+        "q": "Show that (A ∪ B) ∩ (A ∩ B) = A ∩ B.",
+        "opts": [
+          "(A) True",
+          "(B) False"
+        ],
+        "ans": "A",
+        "explanation": "To show that (A ∪ B) ∩ (A ∩ B) = A ∩ B, we need to prove that (A ∪ B) ∩ (A ∩ B) ⊆ A ∩ B and A ∩ B ⊆ (A ∪ B) ∩ (A ∩ B).",
+        "difficulty": "medium",
+        "topic": "Set Operations"
+      },
+      {
+        "q": "If A = {1, 2, 3} and B = {3, 4, 5}, then (A - B) ∪ (B - A) =?",
+        "opts": [
+          "(A) {1, 2}",
+          "(B) {3, 4, 5}",
+          "(C) {1, 2, 4, 5}",
+          "(D) φ"
+        ],
+        "ans": "C",
+        "explanation": "To find (A - B) ∪ (B - A), we first need to find A - B and B - A, and then find their union.",
+        "difficulty": "medium",
+        "topic": "Set Operations"
+      },
+      {
+        "q": "If A = {1, 2, 3} and B = {3, 4, 5}, then (A ∩ B) - B =?",
+        "opts": [
+          "(A) {1, 2}",
+          "(B) {3}",
+          "(C) {3, 4, 5}",
+          "(D) φ"
+        ],
+        "ans": "B",
+        "explanation": "To find (A ∩ B) - B, we first need to find A ∩ B, and then find the difference of A ∩ B and B.",
+        "difficulty": "medium",
+        "topic": "Set Operations"
+      },
+      {
+        "q": "If A = {1, 2, 3} and B = {3, 4, 5}, then (A - B) ∩ B =?",
+        "opts": [
+          "(A) {1, 2}",
+          "(B) {3, 4, 5}",
+          "(C) {1, 2, 3, 4, 5}",
+          "(D) φ"
+        ],
+        "ans": "D",
+        "explanation": "To find (A - B) ∩ B, we first need to find A - B, and then find the intersection of A - B and B.",
+        "difficulty": "medium",
+        "topic": "Set Operations"
+      },
+      {
+        "q": "A relation R from set A to set B is said to be _______ if it is reflexive and symmetric.",
+        "opts": [
+          "(A) Equivalence relation",
+          "(B) Partial order relation",
+          "(B) Total order relation",
+          "(D) Irreflexive relation"
+        ],
+        "ans": "A",
+        "explanation": "A relation R from set A to set B is an equivalence relation if it is reflexive, symmetric, and transitive.",
+        "difficulty": "hard",
+        "topic": "Relation"
+      },
+      {
+        "q": "If A = {1, 2, 3} and B = {3, 4, 5}, then A × (B - A) =?",
+        "opts": [
+          "(A) {(1, 4), (1, 5), (2, 4), (2, 5), (3, 4), (3, 5)}",
+          "(B) {(1, 3), (2, 3), (3, 3)}",
+          "(C) {(1, 4), (2, 4), (3, 4), (4, 5), (5, 5)}",
+          "(D) {(1, 4), (2, 4), (3, 4), (4, 3), (5, 3)}"
+        ],
+        "ans": "A",
+        "explanation": "To find A × (B - A), we first need to find B - A, and then find the Cartesian product of A and B - A.",
+        "difficulty": "hard",
+        "topic": "Cartesian Product"
+      },
+      {
+        "q": "If A = {1, 2, 3} and B = {3, 4, 5}, then A × (B ∪ A) =?",
+        "opts": [
+          "(A) {(1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5)}",
+          "(B) {(1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (2, 2), (2, 3), (2, 4), (2, 5), (3, 3), (3, 4), (3, 5)}",
+          "(C) {(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)}",
+          "(D) {(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3), (4, 1), (5, 1)}"
+        ],
+        "ans": "A",
+        "explanation": "To find A × (B ∪ A), we first need to find B ∪ A, and then find the Cartesian product of A and B ∪ A.",
+        "difficulty": "hard",
+        "topic": "Cartesian Product"
+      }
+    ],
+    "total": 17
+  }
+}

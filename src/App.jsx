@@ -2,7 +2,7 @@ import { useState, useEffect, Suspense, lazy, useRef, useCallback } from "react"
 import { useAuth, useNavigation, useProgress, useTheme, useScrollDirection } from "./hooks";
 import { callClaude } from "./utils/api";
 import { getChapterNotes, getQuizSet, getQuizSetStatus, getQuizSetSummaries, saveQuizSubmission } from "./utils/supabase";
-import { CURRICULUM, totalChapters } from "./constants/curriculum";
+import { CURRICULUM, totalChapters, CURRICULUM_11, totalChapters11, getCurriculumSync } from "./constants/curriculum";
 import { SearchBar } from "./components/common/SearchBar";
 import { recordDailyActivity } from "./utils/loginStreak";
 import { recordQuizSubmission } from "./utils/weakTopics";
@@ -19,8 +19,37 @@ const PapersListView = lazy(() => import("./components/views/PapersListView").th
 const ProgressView = lazy(() => import("./components/views/ProgressView").then(m => ({ default: m.ProgressView })));
 const StatsView = lazy(() => import("./components/views/StatsView").then(m => ({ default: m.StatsView })));
 const ProfileView = lazy(() => import("./components/views/ProfileView").then(m => ({ default: m.ProfileView })));
+const PipelineDashboardView = lazy(() => import("./components/views/PipelineDashboardView").then(m => ({ default: m.PipelineDashboardView })));
 import { FloatingForumButton } from "./components/common";
 import { globalStyles } from "./styles/shared";
+
+// ── Class Switcher Pill ──────────────────────────────────────────
+const ClassSwitcher = ({ selectedClass, onChange }) => (
+  <div style={{
+    display: "flex", background: "rgba(0,0,0,0.06)", borderRadius: 999,
+    padding: 3, gap: 0, flexShrink: 0,
+  }}>
+    {["11", "12"].map(cls => (
+      <button
+        key={cls}
+        onClick={() => onChange(cls)}
+        style={{
+          padding: "5px 14px", borderRadius: 999, border: "none",
+          fontSize: 13, fontWeight: 800, cursor: "pointer",
+          transition: "all 0.2s",
+          background: selectedClass === cls
+            ? "linear-gradient(135deg, #4f46e5, #818cf8)"
+            : "transparent",
+          color: selectedClass === cls ? "#fff" : "#64748b",
+          boxShadow: selectedClass === cls ? "0 2px 8px rgba(79,70,229,0.3)" : "none",
+        }}
+        aria-label={`Switch to Class ${cls}`}
+      >
+        Class {cls}
+      </button>
+    ))}
+  </div>
+);
 
 // Loading fallback component
 const LoadingFallback = () => (
@@ -56,6 +85,31 @@ export default function App() {
   // Call performance tracking in dev environment
   usePerformanceMetrics();
 
+  // ── Class selection (11 or 12) — persisted to localStorage ──
+  const [selectedClass, setSelectedClass] = useState(() => {
+    return localStorage.getItem("akmedu_selected_class") || "12";
+  });
+
+  // Derived: curriculum and chapter count for active class
+  const activeCurriculum = getCurriculumSync(selectedClass, CURRICULUM_11);
+  const activeTotalChapters = selectedClass === "11" ? totalChapters11 : totalChapters;
+
+  const handleClassChange = useCallback((cls) => {
+    setSelectedClass(cls);
+    localStorage.setItem("akmedu_selected_class", cls);
+    // Navigate to dashboard on class switch
+    nav.goToDashboard();
+    // Clear content state to avoid showing stale Class 12 content
+    setNotes("");
+    setQuiz([]);
+    setAnswers({});
+    setSubmitted(false);
+  }, [nav]);
+
+  // Exit confirmation state — shown when user presses back at root (dashboard)
+  const [exitConfirm, setExitConfirm] = useState(false);
+  const exitConfirmTimerRef = useRef(null);
+
   // Content generation state
   const [loading, setLoading] = useState(false);
   const [loadMsg, setLoadMsg] = useState("");
@@ -78,24 +132,69 @@ export default function App() {
   const prevChapterRef = useRef(null);
   const prevStackLengthRef = useRef(nav.viewStack ? nav.viewStack.length : 0);
 
-  // Scroll to top on navigation/route change, preserving scroll position on Back actions
+  // Scroll to top on forward navigation (goBack restores scroll via useNavigation)
   useEffect(() => {
     const prevLength = prevStackLengthRef.current;
     const currentLength = nav.viewStack ? nav.viewStack.length : 0;
     prevStackLengthRef.current = currentLength;
 
     if (currentLength < prevLength) {
-      // Navigated back - preserve scroll position
+      // Navigated back — useNavigation handles scroll restore via requestAnimationFrame
       return;
     }
 
-    // Reset viewport to top
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "auto"
-    });
+    // Forward navigation — reset to top
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, [nav.view, nav.subject, nav.chapter]);
+
+  // ── popstate: intercept browser/Android hardware back button ──────────────
+  useEffect(() => {
+    const handlePopState = (e) => {
+      // Always prevent the browser from actually navigating
+      // We manage navigation ourselves via our internal stack.
+
+      const wentBack = nav.goBack();
+
+      if (!wentBack) {
+        // Already at root (dashboard) — push a dummy state so the back button
+        // doesn't immediately exit on the next press, giving us control.
+        window.history.pushState({ __akmedu_root: true }, "", "/");
+
+        if (exitConfirm) {
+          // Second press within the confirm window — allow exit by going back
+          // in browser history (one real step we allowed above)
+          window.history.go(-1);
+        } else {
+          // First press at root — show confirmation overlay
+          setExitConfirm(true);
+          // Auto-dismiss after 3 seconds
+          clearTimeout(exitConfirmTimerRef.current);
+          exitConfirmTimerRef.current = setTimeout(() => {
+            setExitConfirm(false);
+          }, 3000);
+        }
+      } else {
+        // We navigated back internally — dismiss any open exit confirm
+        setExitConfirm(false);
+        clearTimeout(exitConfirmTimerRef.current);
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+
+    // Ensure there's always at least one history entry above the "exit" entry
+    // so the first back press hits our handler instead of exiting directly.
+    if (window.history.state === null || !window.history.state?.__akmedu) {
+      window.history.replaceState({ __akmedu: true, view: nav.view }, "", window.location.pathname);
+      window.history.pushState({ __akmedu_sentinel: true }, "", window.location.pathname);
+    }
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+      clearTimeout(exitConfirmTimerRef.current);
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [nav.goBack, exitConfirm]);
 
   // Load progress on user login
   useEffect(() => {
@@ -146,7 +245,7 @@ export default function App() {
     try {
       // 1. Check localStorage cache first (fastest)
       if (controller.signal.aborted) return;
-      const localCached = getCachedNotes(subj, chap);
+      const localCached = getCachedNotes(selectedClass, subj, chap);
       if (localCached) {
         if (controller.signal.aborted) return;
         setNotes(localCached);
@@ -157,11 +256,11 @@ export default function App() {
 
       // 2. Try to load from database (database cache)
       if (controller.signal.aborted) return;
-      const dbNotes = await getChapterNotes(subj, chap);
+      const dbNotes = await getChapterNotes(selectedClass, subj, chap);
       if (controller.signal.aborted) return;
       if (dbNotes) {
         setNotes(dbNotes);
-        cacheNotes(subj, chap, dbNotes, 1440); // Cache for 24 hours
+        cacheNotes(selectedClass, subj, chap, dbNotes, 1440); // Cache for 24 hours
         progress.save(`${subj}||${chap}||notes`, { read: true, date: Date.now() });
         setLoading(false);
         return;
@@ -175,7 +274,7 @@ export default function App() {
 You are creating INDEPENDENT educational content, not copying from any textbook.
 Format the notes as follows:
 # ${chap}
-## Subject: ${subj} | Class 12 Study Materials
+## Subject: ${subj} | Class ${selectedClass} Study Materials
 ---
 ## 📌 Topic Overview
 [2-3 sentence explanation in YOUR OWN words]
@@ -202,7 +301,7 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
       );
       if (controller.signal.aborted) return;
       setNotes(text);
-      cacheNotes(subj, chap, text, 1440); // Cache generated notes for 24 hours
+      cacheNotes(selectedClass, subj, chap, text, 1440); // Cache generated notes for 24 hours
       progress.save(`${subj}||${chap}||notes`, { read: true, date: Date.now() });
     } catch (e) {
       if (e.name !== 'AbortError') {
@@ -210,7 +309,7 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
       }
     }
     setLoading(false);
-  }, [progress]);
+  }, [progress, selectedClass]);
 
   const startQuiz = useCallback(async (subj, chap) => {
     setLoading(true);
@@ -234,8 +333,8 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
       if (controller.signal.aborted) return;
       // Load quiz set status AND available sets from database in parallel
       const [status, sets] = await Promise.all([
-        getQuizSetStatus(auth.currentUser, subj, chap),
-        getQuizSetSummaries(subj, chap)
+        getQuizSetStatus(selectedClass, auth.currentUser, subj, chap),
+        getQuizSetSummaries(selectedClass, subj, chap)
       ]);
       if (controller.signal.aborted) return;
       setQuizSetStatus(status || {});
@@ -249,7 +348,7 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
     }
 
     setLoading(false);
-  }, [auth.currentUser]);
+  }, [auth.currentUser, selectedClass]);
 
   const loadQuizSet = useCallback(async (setNumber) => {
     setLoading(true);
@@ -262,7 +361,7 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
     setQuizErr("");
 
     try {
-      const questions = await getQuizSet(nav.subject, nav.chapter, setNumber);
+      const questions = await getQuizSet(selectedClass, nav.subject, nav.chapter, setNumber);
       if (!questions || questions.length === 0) {
         setQuizErr("Quiz set not found. Please try another set or refresh.");
         setLoading(false);
@@ -275,7 +374,7 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
       setQuizErr("Error loading quiz set: " + e.message);
     }
     setLoading(false);
-  }, [nav.subject, nav.chapter]);
+  }, [nav.subject, nav.chapter, selectedClass]);
 
   const genPaper = useCallback(async (subj, setNum) => {
     setLoading(true);
@@ -292,11 +391,28 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
 
     try {
       if (controller.signal.aborted) return;
-      const prompt = `Generate a realistic, full-length Class 12 CBSE Board Examination Sample Paper for ${subj} (Set ${setNum}).
-Format the output with appropriate sections (Section A, B, C, D, etc.), marks distribution, and general instructions.
-Include a variety of question types (MCQ, Short Answer, Long Answer, Case-based) as per the latest CBSE pattern.
-Use professional formatting with clear headings. Only provide the question paper, DO NOT provide answers.
-Respond with the paper content directly.`;
+      const subjCurriculum = activeCurriculum[subj];
+      const syllabusInfo = subjCurriculum
+        ? subjCurriculum.units.map(unit => `- ${unit.name}: ${unit.chapters.join(", ")}`).join("\n")
+        : "";
+
+      const prompt = `Generate a realistic, full-length, and professionally formatted Class ${selectedClass} CBSE Board Examination Sample Paper for ${subj} (Set ${setNum}).
+      
+Here is the official CBSE Class ${selectedClass} syllabus for ${subj} that you MUST follow:
+${syllabusInfo}
+
+Format Guidelines:
+1. Include Section Headers (e.g., SECTION A, SECTION B) and General Instructions at the start of the paper.
+2. For multiple-choice questions (MCQs), you MUST list each option on its own individual line. Never place options inline or on the same line as the question. For example:
+   21. What is the derivative of x^2?
+   (A) x
+   (B) 2x
+   (C) x^2
+   (D) 2
+3. Keep the markup simple and clean using standard double asterisks for bolding (e.g. **Section A**).
+4. Use standard CBSE marks distribution (e.g., 1 mark for MCQs, 2-3 marks for Short Answers, 5 marks for Long Answers).
+5. Only provide the question paper. Do NOT provide answers or answer keys.
+6. Return the paper content directly without any introductory or concluding chat remarks.`;
       
       const text = await callClaude(prompt, 4000);
       if (controller.signal.aborted) return;
@@ -307,7 +423,7 @@ Respond with the paper content directly.`;
       }
     }
     setLoading(false);
-  }, []);
+  }, [selectedClass, activeCurriculum]);
 
   const submitQuiz = useCallback(async () => {
     let sc = 0;
@@ -323,7 +439,7 @@ Respond with the paper content directly.`;
 
     // Save quiz submission to database with set number
     if (selectedQuizSet && auth.currentUser) {
-      await saveQuizSubmission(auth.currentUser, nav.subject, nav.chapter, selectedQuizSet, answers, sc);
+      await saveQuizSubmission(selectedClass, auth.currentUser, nav.subject, nav.chapter, selectedQuizSet, answers, sc);
     }
 
     const key = `${nav.subject}||${nav.chapter}||quiz`;
@@ -332,7 +448,7 @@ Respond with the paper content directly.`;
       attempts: [...(prev.attempts || []), { score: sc, total: quiz.length, date: Date.now(), setNumber: selectedQuizSet }],
       best: Math.max(sc, ...(prev.attempts || []).map((a) => a.score), 0),
     });
-  }, [quiz, answers, selectedQuizSet, auth.currentUser, nav.subject, nav.chapter, progress]);
+  }, [quiz, answers, selectedQuizSet, auth.currentUser, nav.subject, nav.chapter, progress, selectedClass]);
 
   // Not authenticated
   if (nav.view === "auth") {
@@ -370,7 +486,7 @@ Respond with the paper content directly.`;
     );
   }
 
-  const S = nav.subject ? CURRICULUM[nav.subject] : null;
+  const S = nav.subject ? activeCurriculum[nav.subject] : null;
 
   // Determine page title from nav state
   const getPageTitle = () => {
@@ -384,6 +500,7 @@ Respond with the paper content directly.`;
     if (nav.view === "progress") return "Progress";
     if (nav.view === "leaderboard") return "Rank";
     if (nav.view === "profile") return "Profile";
+    if (nav.view === "pipeline") return "Pipeline";
     return "AkmEdu45";
   };
 
@@ -403,6 +520,59 @@ Respond with the paper content directly.`;
         fontFamily: "'Outfit', 'Inter', system-ui, sans-serif",
       }}
     >
+      {/* ===== EXIT CONFIRM OVERLAY ===== */}
+      {exitConfirm && (
+        <div
+          role="alertdialog"
+          aria-modal="true"
+          aria-label="Exit app confirmation"
+          style={{
+            position: "fixed",
+            bottom: 90,
+            left: "50%",
+            transform: "translateX(-50%)",
+            zIndex: 9999,
+            background: "rgba(17,17,34,0.92)",
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
+            borderRadius: 16,
+            padding: "14px 24px",
+            display: "flex",
+            alignItems: "center",
+            gap: 12,
+            boxShadow: "0 8px 32px rgba(0,0,0,0.35)",
+            border: "1px solid rgba(255,255,255,0.12)",
+            animation: "exitConfirmSlideUp 0.25s cubic-bezier(0.34,1.56,0.64,1) both",
+            maxWidth: "calc(100vw - 40px)",
+          }}
+        >
+          <span style={{ fontSize: 22 }}>🚪</span>
+          <div>
+            <div style={{ color: "#fff", fontWeight: 700, fontSize: 14, lineHeight: 1.3 }}>
+              Press back again to exit
+            </div>
+            <div style={{ color: "rgba(255,255,255,0.55)", fontSize: 12, marginTop: 2 }}>
+              You are at the home screen
+            </div>
+          </div>
+          <button
+            onClick={() => setExitConfirm(false)}
+            style={{
+              marginLeft: "auto",
+              background: "rgba(255,255,255,0.12)",
+              border: "none",
+              borderRadius: 8,
+              color: "#fff",
+              padding: "6px 12px",
+              fontSize: 12,
+              fontWeight: 700,
+              cursor: "pointer",
+            }}
+          >
+            Stay
+          </button>
+        </div>
+      )}
       <style>{globalStyles}</style>
 
       {/* ===== NEW TOP HEADER ===== */}
@@ -426,6 +596,11 @@ Respond with the paper content directly.`;
               {getPageTitle()}
             </span>
           </div>
+
+          {/* Centre: Class Switcher — only show on dashboard/subject views */}
+          {["dashboard", "subject"].includes(nav.view) && (
+            <ClassSwitcher selectedClass={selectedClass} onChange={handleClassChange} />
+          )}
 
           {/* Right: streak + avatar */}
           <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
@@ -486,9 +661,11 @@ Respond with the paper content directly.`;
           <DashboardView
             currentUser={auth.currentUser}
             displayName={progress.data?.["SYSTEM||PROFILE||name"]?.value || auth.currentUser}
-            stats={progress.getStats()}
-            overallPct={progress.getOverallPercentage()}
-            totalChapters={totalChapters}
+            stats={progress.getStats(activeCurriculum)}
+            overallPct={progress.getOverallPercentage(activeCurriculum, activeTotalChapters)}
+            totalChapters={activeTotalChapters}
+            selectedClass={selectedClass}
+            curriculum={activeCurriculum}
             theme={theme}
             onSelectSubject={(subject) => {
               nav.navigateToSubject(subject);
@@ -499,11 +676,18 @@ Respond with the paper content directly.`;
           />
         )}
 
+        {nav.view === "pipeline" && (
+          <Suspense fallback={<LoadingFallback />}>
+            <PipelineDashboardView />
+          </Suspense>
+        )}
+
         {nav.view === "subject" && nav.subject && (
           <Suspense fallback={<LoadingFallback />}>
             <SubjectView
               subject={nav.subject}
-              curriculum={CURRICULUM}
+              curriculum={activeCurriculum}
+              selectedClass={selectedClass}
               stats={progress.getStats()}
               progress={progress.data}
               theme={theme}
@@ -540,6 +724,7 @@ Respond with the paper content directly.`;
             <ChapterView
               chapter={nav.chapter}
               subject={nav.subject}
+              selectedClass={selectedClass}
               curriculumData={S}
               notesRead={progress.data[`${nav.subject}||${nav.chapter}||notes`]?.read}
               quizBest={progress.data[`${nav.subject}||${nav.chapter}||quiz`]?.best}
@@ -547,7 +732,7 @@ Respond with the paper content directly.`;
               theme={theme}
               onStartNotes={() => {
                 nav.navigate("notes");
-                if (!notes) genNotes(nav.subject, nav.chapter);
+                genNotes(nav.subject, nav.chapter);
               }}
               onStartQuiz={() => {
                 setSelectedQuizSet(null);
@@ -573,6 +758,7 @@ Respond with the paper content directly.`;
               chapter={nav.chapter}
               curriculumData={S}
               theme={theme}
+              selectedClass={selectedClass}
               onRegenerateNotes={() => genNotes(nav.subject, nav.chapter)}
               onStartQuiz={() => {
                 setSelectedQuizSet(null);
@@ -626,7 +812,7 @@ Respond with the paper content directly.`;
                 }}
                 onReviewNotes={() => {
                   nav.navigate("notes");
-                  if (!notes) genNotes(nav.subject, nav.chapter);
+                  genNotes(nav.subject, nav.chapter);
                 }}
               />
             )}
@@ -670,8 +856,8 @@ Respond with the paper content directly.`;
             <ProgressView
               overallPct={progress.getOverallPercentage()}
               stats={progress.getStats()}
-              totalChapters={totalChapters}
-              curriculum={CURRICULUM}
+              totalChapters={activeTotalChapters}
+              curriculum={activeCurriculum}
               progressData={progress.data}
               theme={theme}
             />
@@ -734,6 +920,16 @@ Respond with the paper content directly.`;
             </button>
           );
         })}
+        {/* Pipeline button — shown as desktop-only shortcut */}
+        <button
+          onClick={() => nav.navigate("pipeline")}
+          className={`bottom-nav-item${nav.view === "pipeline" ? " active" : ""}`}
+          aria-label="Pipeline"
+          style={{ display: "none" }}
+        >
+          <span style={{ fontSize: 20 }}>🔬</span>
+          <span className="bottom-nav-label">Pipeline</span>
+        </button>
       </nav>
     </div>
   );

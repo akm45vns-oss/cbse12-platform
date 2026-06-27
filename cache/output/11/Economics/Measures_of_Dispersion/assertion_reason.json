@@ -1,0 +1,134 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Measures of Dispersion",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:35:02.499Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Range is a measure of dispersion that takes into account all observations in a dataset.",
+        "reason": "Reason (R): It provides a general idea of the variability in the dataset.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Range is indeed a measure of dispersion that considers all observations, and it provides a general idea of variability in the dataset."
+      },
+      {
+        "assertion": "Assertion (A): The mean deviation is calculated as the average of the absolute deviations from the median.",
+        "reason": "Reason (R): It is a measure of dispersion that provides an idea of the average difference between individual observations and the median.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Mean deviation is calculated as the average of the absolute deviations from the median, which provides an idea of the average difference between individual observations and the median."
+      },
+      {
+        "assertion": "Assertion (A): Variance is a measure of dispersion that is sensitive to extreme values in a dataset.",
+        "reason": "Reason (R): The square root of variance is called standard deviation, which is a commonly used measure of dispersion.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Variance is indeed sensitive to extreme values, and the square root of variance is called standard deviation, which is a commonly used measure of dispersion."
+      },
+      {
+        "assertion": "Assertion (A): Standard deviation is a measure of dispersion that provides an idea of the spread of data points around the mean.",
+        "reason": "Reason (R): It is a commonly used measure of dispersion in statistical analysis.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Standard deviation is indeed a measure of dispersion that provides an idea of the spread of data points around the mean, and it is a commonly used measure of dispersion in statistical analysis."
+      },
+      {
+        "assertion": "Assertion (A): Quartile deviation is a measure of dispersion that is calculated as half of the difference between the third quartile and the first quartile.",
+        "reason": "Reason (R): It is a measure of dispersion that provides an idea of the variability in the dataset.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Quartile deviation is indeed calculated as half of the difference between the third quartile and the first quartile, and it is a measure of dispersion that provides an idea of the variability in the dataset."
+      },
+      {
+        "assertion": "Assertion (A): Coefficient of variation is a measure of relative dispersion that is calculated as the ratio of the standard deviation to the mean.",
+        "reason": "Reason (R): It provides a relative measure of dispersion that allows for comparison across different datasets.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Coefficient of variation is indeed calculated as the ratio of the standard deviation to the mean, which provides a relative measure of dispersion that allows for comparison across different datasets."
+      },
+      {
+        "assertion": "Assertion (A): Range is not affected by the extreme values in a dataset.",
+        "reason": "Reason (R): It is a measure of dispersion that only considers the highest and lowest values in the dataset.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "Range is indeed affected by extreme values in a dataset, so option A is false. Option R is also false because it incorrectly states what range considers."
+      },
+      {
+        "assertion": "Assertion (A): Standard deviation is a measure of absolute dispersion.",
+        "reason": "Reason (R): It is a measure of dispersion that provides an idea of the spread of data points around the mean.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "Standard deviation is a measure of relative dispersion, not absolute dispersion. So, option A is false."
+      },
+      {
+        "assertion": "Assertion (A): Variance is a measure of dispersion that is used in statistical analysis.",
+        "reason": "Reason (R): It is a measure of dispersion that provides an idea of the spread of data points around the mean.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Variance is indeed a measure of dispersion used in statistical analysis, and it provides an idea of the spread of data points around the mean."
+      },
+      {
+        "assertion": "Assertion (A): Mean deviation is a measure of absolute dispersion.",
+        "reason": "Reason (R): It is a measure of dispersion that provides an idea of the average difference between individual observations and the median.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Mean deviation is indeed a measure of absolute dispersion, and it provides an idea of the average difference between individual observations and the median."
+      }
+    ],
+    "total": 10
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:04:45.013Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Domain and Range",
+        "formula": "Domain: {x ∈ R | f(x) is defined}",
+        "variables": "R - set of real numbers, f(x) - function",
+        "notes": "The set of all possible input values for which the function is defined."
+      },
+      {
+        "name": "Range",
+        "formula": "Range: {f(x) | x ∈ Domain}",
+        "variables": "f(x) - function, Domain - domain of the function",
+        "notes": "The set of all possible output values of the function."
+      },
+      {
+        "name": "Codomain",
+        "formula": "Codomain: set of all possible output values",
+        "variables": "set of all possible output values",
+        "notes": "The set of all possible output values of the function, which may not be the same as the range."
+      },
+      {
+        "name": "Function Composition",
+        "formula": "(f ∘ g)(x) = f(g(x))",
+        "variables": "f - function, g - function, x - input value",
+        "notes": "The composition of two functions f and g, denoted by (f ∘ g)(x), is defined as f(g(x))."
+      },
+      {
+        "name": "Inverse Function",
+        "formula": "f^(-1)(x) = y ⇔ f(y) = x",
+        "variables": "f - function, x - input value, y - output value",
+        "notes": "A function f is invertible if and only if it is one-to-one (injective)."
+      },
+      {
+        "name": "One-to-One (Injective) Function",
+        "formula": "f(x1) = f(x2) ⇒ x1 = x2",
+        "variables": "f - function, x1 - input value, x2 - input value",
+        "notes": "A function f is one-to-one if and only if f(x1) = f(x2) implies x1 = x2."
+      },
+      {
+        "name": "Onto (Surjective) Function",
+        "formula": "∀y ∈ codomain, ∃x ∈ domain such that f(x) = y",
+        "variables": "f - function, y - output value, x - input value",
+        "notes": "A function f is onto if and only if for every y in the codomain, there exists an x in the domain such that f(x) = y."
+      },
+      {
+        "name": "Bijective Function",
+        "formula": "f is both one-to-one and onto",
+        "variables": "f - function",
+        "notes": "A function f is bijective if and only if it is both one-to-one and onto."
+      },
+      {
+        "name": "Equivalence Relation",
+        "formula": "A relation R on a set A is an equivalence relation if and only if it is reflexive, symmetric, and transitive",
+        "variables": "R - relation, A - set",
+        "notes": "A relation R on a set A is an equivalence relation if and only if it satisfies the following properties: (1) R is reflexive, (2) R is symmetric, and (3) R is transitive."
+      },
+      {
+        "name": "Reflexive Relation",
+        "formula": "∀x ∈ A, xRx",
+        "variables": "R - relation, A - set, x - element of the set",
+        "notes": "A relation R on a set A is reflexive if and only if for every element x in A, x is related to x, i.e., xRx."
+      },
+      {
+        "name": "Symmetric Relation",
+        "formula": "∀x, y ∈ A, xRy ⇒ yRx",
+        "variables": "R - relation, A - set, x - element of the set, y - element of the set",
+        "notes": "A relation R on a set A is symmetric if and only if for every pair of elements x and y in A, if x is related to y, then y is also related to x, i.e., xRy ⇒ yRx."
+      },
+      {
+        "name": "Transitive Relation",
+        "formula": "∀x, y, z ∈ A, xRy ∧ yRz ⇒ xRz",
+        "variables": "R - relation, A - set, x - element of the set, y - element of the set, z - element of the set",
+        "notes": "A relation R on a set A is transitive if and only if for every triple of elements x, y, and z in A, if x is related to y and y is related to z, then x is also related to z, i.e., xRy ∧ yRz ⇒ xRz."
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Complex Numbers and Quadratic Equations",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T11:05:40.225Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Complex Number",
+        "definition": "A complex number is a number of the form a + ib or a - ib, where a and b are real numbers and i is the imaginary unit, satisfying i^2 = -1.",
+        "example": "For example, 3 + 4i and 2 - 5i are complex numbers."
+      },
+      {
+        "term": "Imaginary Unit",
+        "definition": "The imaginary unit i is defined as the square root of -1, denoted by i, and satisfies i^2 = -1.",
+        "example": "For example, i^2 = -1."
+      },
+      {
+        "term": "Conjugate of a Complex Number",
+        "definition": "The conjugate of a complex number a + ib is denoted as a - ib.",
+        "example": "For example, the conjugate of 3 + 4i is 3 - 4i."
+      },
+      {
+        "term": "Modulus of a Complex Number",
+        "definition": "The modulus of a complex number a + ib is denoted as |a + ib| and is defined as √(a^2 + b^2).",
+        "example": "For example, the modulus of 3 + 4i is √(3^2 + 4^2) = 5."
+      },
+      {
+        "term": "Argument of a Complex Number",
+        "definition": "The argument of a complex number a + ib is denoted as arg(a + ib) and is defined as the angle between the positive real axis and the line segment joining the origin to the point (a, b) in the complex plane.",
+        "example": "For example, the argument of 3 + 4i is tan^-1(4/3)."
+      },
+      {
+        "term": "Polar Form of a Complex Number",
+        "definition": "The polar form of a complex number a + ib is denoted as r(cosθ + isinθ), where r = |a + ib| and θ = arg(a + ib).",
+        "example": "For example, the polar form of 3 + 4i is 5(cosθ + isinθ), where θ = tan^-1(4/3)."
+      },
+      {
+        "term": "Quadratic Equation",
+        "definition": "A quadratic equation is a polynomial equation of degree two, which can be written in the form ax^2 + bx + c = 0, where a, b, and c are constants and a ≠ 0.",
+        "example": "For example, x^2 + 4x + 4 = 0 is a quadratic equation."
+      },
+      {
+        "term": "Quadratic Formula",
+        "definition": "The quadratic formula is given by x = (-b ± √(b^2 - 4ac)) / 2a, which gives the solutions of the quadratic equation ax^2 + bx + c = 0.",
+        "example": "For example, the solutions of x^2 + 4x + 4 = 0 can be found using the quadratic formula."
+      },
+      {
+        "term": "Discriminant",
+        "definition": "The discriminant of a quadratic equation ax^2 + bx + c = 0 is given by b^2 - 4ac.",
+        "example": "For example, the discriminant of x^2 + 4x + 4 = 0 is 4^2 - 4(1)(4) = 0."
+      },
+      {
+        "term": "Nature of Roots of a Quadratic Equation",
+        "definition": "The nature of the roots of a quadratic equation ax^2 + bx + c = 0 can be determined by the discriminant b^2 - 4ac.",
+        "example": "For example, if b^2 - 4ac > 0, then the equation has two distinct real roots."
+      },
+      {
+        "term": "Real Roots",
+        "definition": "Real roots are the solutions of a quadratic equation that lie on the real number line.",
+        "example": "For example, 2 and 3 are real roots of the equation x^2 - 5x + 6 = 0."
+      },
+      {
+        "term": "Imaginary Roots",
+        "definition": "Imaginary roots are the solutions of a quadratic equation that lie on the imaginary number line.",
+        "example": "For example, 3 + 4i and 3 - 4i are imaginary roots of the equation x^2 + 4x + 13 = 0."
+      },
+      {
+        "term": "Complex Roots",
+        "definition": "Complex roots are the solutions of a quadratic equation that lie on the complex plane.",
+        "example": "For example, 3 + 4i and 3 - 4i are complex roots of the equation x^2 + 4x + 13 = 0."
+      },
+      {
+        "term": "Coefficient of a Term in a Quadratic Equation",
+        "definition": "The coefficient of a term in a quadratic equation ax^2 + bx + c = 0 is the constant that multiplies the variable term.",
+        "example": "For example, the coefficient of the x^2 term in x^2 + 4x + 4 = 0 is 1."
+      },
+      {
+        "term": "Term of a Quadratic Equation",
+        "definition": "A term of a quadratic equation ax^2 + bx + c = 0 is a product of a coefficient and a variable term.",
+        "example": "For example, the terms of x^2 + 4x + 4 = 0 are x^2, 4x, and 4."
+      },
+      {
+        "term": "Sum and Product of the Roots of a Quadratic Equation",
+        "definition": "The sum and product of the roots of a quadratic equation ax^2 + bx + c = 0 can be found using the coefficients a, b, and c.",
+        "example": "For example, the sum and product of the roots of x^2 + 4x + 4 = 0 are -b/a and c/a, respectively."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1144 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "exported_at": "2026-06-27T05:55:00.405Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:26:23.881+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 9,
+        "questions": [
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It specifies what we want to do with our data, rather than how to do it.",
+            "assertion": "Assertion (A): SQL is a declarative language.",
+            "explanation": "SQL is a declarative language because it specifies what we want to do with our data, rather than how to do it."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is typically the first statement in a SQL query.",
+            "assertion": "Assertion (A): The SELECT statement is used to select data from a database.",
+            "explanation": "The SELECT statement is used to select data from a database, and it is typically the first statement in a SQL query."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): A primary key cannot be null and must contain unique values.",
+            "assertion": "Assertion (A): The PRIMARY KEY constraint is used to uniquely identify each record in a table.",
+            "explanation": "The PRIMARY KEY constraint is used to uniquely identify each record in a table, and a primary key cannot be null and must contain unique values."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is the opposite of the EXISTS operator.",
+            "assertion": "Assertion (A): The NOT EXISTS operator is used to exclude rows from a result set that match a subquery.",
+            "explanation": "The NOT EXISTS operator is used to exclude rows from a result set that match a subquery, and it is the opposite of the EXISTS operator."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): This clause is often used with aggregate functions such as SUM and COUNT.",
+            "assertion": "Assertion (A): The GROUP BY clause is used to group rows that have the same values in one or more columns.",
+            "explanation": "The GROUP BY clause is used to group rows that have the same values in one or more columns, and this clause is often used with aggregate functions such as SUM and COUNT."
+          },
+          {
+            "ans": "C",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is used to combine rows from two or more tables, but not to combine tables into one table.",
+            "assertion": "Assertion (A): The JOIN operator is used to combine rows from two or more tables based on a related column between them.",
+            "explanation": "The JOIN operator is used to combine rows from two or more tables based on a related column between them, and it is used to combine rows from two or more tables, not to combine tables into one table."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is used to insert a new record into a table.",
+            "assertion": "Assertion (A): The INSERT INTO statement is used to add new records to a table.",
+            "explanation": "The INSERT INTO statement is used to add new records to a table, and it is used to insert a new record into a table."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It sets the value of one or more columns in a table.",
+            "assertion": "Assertion (A): The UPDATE statement is used to modify existing records in a table.",
+            "explanation": "The UPDATE statement is used to modify existing records in a table, and it sets the value of one or more columns in a table."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It removes the specified records from a table.",
+            "assertion": "Assertion (A): The DELETE statement is used to delete existing records from a table.",
+            "explanation": "The DELETE statement is used to delete existing records from a table, and it removes the specified records from a table."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:26:21.739+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "Rohit is the database administrator of a popular e-commerce website. He has been tasked with designing a database for the company's new product database. The product database will store information about various products, including their names, descriptions, prices, and quantities in stock. Rohit has decided to use a relational database management system and has chosen to use SQL as the query language. He needs to create a table to store the product information. The table should have columns for product ID, product name, product description, price, and quantity in stock. Rohit wants to ensure that the product ID is unique for each product and that the quantity in stock is always a non-negative integer.",
+            "questions": [
+              {
+                "q": "What is the primary key constraint for the product ID column?",
+                "ans": "A",
+                "opts": [
+                  "(A) PRIMARY KEY",
+                  "(B) UNIQUE",
+                  "(C) NOT NULL",
+                  "(D) CHECK"
+                ],
+                "explanation": "The primary key constraint is used to ensure that the product ID is unique for each product."
+              },
+              {
+                "q": "What data type should be used for the quantity in stock column?",
+                "ans": "A",
+                "opts": [
+                  "(A) INT",
+                  "(B) FLOAT",
+                  "(C) CHAR",
+                  "(D) VARCHAR"
+                ],
+                "explanation": "The quantity in stock should be a non-negative integer, which can be stored using the INT data type."
+              },
+              {
+                "q": "What SQL statement would Rohit use to create the product table?",
+                "ans": "A",
+                "opts": [
+                  "(A) CREATE TABLE product (product_id INT PRIMARY KEY, product_name VARCHAR(255), product_description TEXT, price DECIMAL(10, 2), quantity INT NOT NULL);",
+                  "(B) CREATE TABLE product (product_id INT UNIQUE, product_name VARCHAR(255), product_description TEXT, price DECIMAL(10, 2), quantity INT NOT NULL);",
+                  "(C) CREATE TABLE product (product_id INT NOT NULL, product_name VARCHAR(255), product_description TEXT, price DECIMAL(10, 2), quantity INT);",
+                  "(D) CREATE TABLE product (product_id INT PRIMARY KEY, product_name VARCHAR(255), product_description TEXT, price DECIMAL(10, 2));"
+                ],
+                "explanation": "The correct SQL statement to create the product table is the one that specifies the product ID as the primary key and the quantity in stock as a non-negative integer."
+              },
+              {
+                "q": "What is the purpose of the NOT NULL constraint for the quantity in stock column?",
+                "ans": "B",
+                "opts": [
+                  "(A) To ensure that the quantity in stock is always a non-negative integer.",
+                  "(B) To prevent the quantity in stock from being null.",
+                  "(C) To ensure that the quantity in stock is always a positive integer.",
+                  "(D) To ensure that the quantity in stock is always a negative integer."
+                ],
+                "explanation": "The NOT NULL constraint is used to prevent the quantity in stock from being null, ensuring that a value is always entered for this column."
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "Rahul is a data analyst for a marketing firm. He needs to analyze sales data for the past quarter. The sales data is stored in a database with a table called sales. The sales table has columns for sales ID, product ID, sales date, quantity sold, and revenue. Rahul wants to retrieve the total revenue for each product sold in the past quarter.",
+            "questions": [
+              {
+                "q": "What SQL statement would Rahul use to retrieve the total revenue for each product sold in the past quarter?",
+                "ans": "A",
+                "opts": [
+                  "(A) SELECT product_id, SUM(revenue) FROM sales WHERE sales_date >= '2022-01-01' AND sales_date <= '2022-03-31' GROUP BY product_id;",
+                  "(B) SELECT product_id, SUM(revenue) FROM sales WHERE sales_date >= '2022-01-01' GROUP BY product_id;",
+                  "(C) SELECT product_id, SUM(revenue) FROM sales WHERE sales_date >= '2022-01-01' GROUP BY sales_date;",
+                  "(D) SELECT product_id, SUM(revenue) FROM sales WHERE sales_date >= '2022-01-01';"
+                ],
+                "explanation": "The correct SQL statement to retrieve the total revenue for each product sold in the past quarter is the one that filters the sales data for the past quarter and groups the results by product ID."
+              },
+              {
+                "q": "What is the purpose of the GROUP BY clause in the SQL statement?",
+                "ans": "A",
+                "opts": [
+                  "(A) To group the sales data by product ID.",
+                  "(B) To filter the sales data for the past quarter.",
+                  "(C) To sort the sales data in ascending order.",
+                  "(D) To retrieve the total revenue for each product sold."
+                ],
+                "explanation": "The GROUP BY clause is used to group the sales data by product ID, allowing Rahul to retrieve the total revenue for each product sold."
+              },
+              {
+                "q": "What is the purpose of the SUM function in the SQL statement?",
+                "ans": "B",
+                "opts": [
+                  "(A) To calculate the average revenue for each product sold.",
+                  "(B) To calculate the total revenue for each product sold.",
+                  "(C) To calculate the minimum revenue for each product sold.",
+                  "(D) To calculate the maximum revenue for each product sold."
+                ],
+                "explanation": "The SUM function is used to calculate the total revenue for each product sold, allowing Rahul to retrieve the desired data."
+              },
+              {
+                "q": "What is the purpose of the WHERE clause in the SQL statement?",
+                "ans": "B",
+                "opts": [
+                  "(A) To group the sales data by product ID.",
+                  "(B) To filter the sales data for the past quarter.",
+                  "(C) To sort the sales data in ascending order.",
+                  "(D) To retrieve the total revenue for each product sold."
+                ],
+                "explanation": "The WHERE clause is used to filter the sales data for the past quarter, ensuring that only relevant data is retrieved."
+              },
+              {
+                "q": "What data type should be used for the sales date column?",
+                "ans": "B",
+                "opts": [
+                  "(A) INT",
+                  "(B) DATE",
+                  "(C) TIME",
+                  "(D) TIMESTAMP"
+                ],
+                "explanation": "The sales date column should be of type DATE to accurately store and retrieve dates."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:55:40.428+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Structured Query Language (SQL)\n## 📌 Chapter Overview\nStructured Query Language (SQL) is a fundamental language for managing relational databases, which store data in a structured format. This chapter introduces students to the basics of SQL, including its syntax, data types, and various operations that can be performed on a database. SQL is used to create, modify, and query databases, making it an essential skill for anyone working with databases.\n\nSQL was first developed in the 1970s and has since become a standard language for database management. It is widely used in various industries, including business, finance, government, and healthcare. With the increasing use of databases in everyday life, the need for skilled SQL professionals has grown significantly.\n\nIn this chapter, students will learn the basics of SQL, including how to create and manage databases, how to insert, update, and delete data, and how to perform various queries on a database.\n\n## 🎯 Learning Objectives\n* Understand the basics of SQL and its significance in database management\n* Learn the basic syntax and data types in SQL\n* Understand how to create and manage databases using SQL\n* Learn how to insert, update, and delete data in a database\n* Understand how to perform various queries on a database\n* Learn how to use SQL to manage database relationships\n* Understand how to optimize database queries for performance\n\n## 🔑 Key Concepts & Definitions\n* **Database**: A collection of related data stored in a structured format.\n* **Table**: A collection of related data stored in a database.\n* **Row**: A single record in a table.\n* **Column**: A single field in a table.\n* **Primary Key**: A unique identifier for each row in a table.\n* **Foreign Key**: A field in a table that references the primary key of another table.\n* **SQL**: Structured Query Language, a language used to manage relational databases.\n* **Query**: A request for data from a database.\n\n## 📐 Core Theory & Principles\nA database is a collection of related data stored in a structured format. A table is a collection of related data stored in a database. Each table has rows and columns. A row represents a single record, and a column represents a single field. The primary key is a unique identifier for each row in a table, while the foreign key is a field in a table that references the primary key of another table.\n\nSQL is used to create, modify, and query databases. It is a declarative language, meaning that you specify what you want to do with your data, rather than how to do it. SQL has a simple syntax and is easy to learn.\n\n## 🧮 Important Formulas & Laws\n* There are no specific formulas or laws in SQL, as it is a declarative language.\n* However, there are some basic rules to follow when writing SQL queries:\n * Use proper syntax and grammar\n * Use consistent naming conventions\n * Use indexes to improve query performance\n * Avoid using SELECT *\n\n## 🔬 Detailed Explanations\n### Creating a Database\nTo create a database, you use the `CREATE DATABASE` statement. For example:\n```sql\nCREATE DATABASE mydatabase;\n```\nThis will create a new database named `mydatabase`.\n\n### Creating a Table\nTo create a table, you use the `CREATE TABLE` statement. For example:\n```sql\nCREATE TABLE customers (\n  id INT PRIMARY KEY,\n  name VARCHAR(255),\n  email VARCHAR(255)\n);\n```\nThis will create a new table named `customers` with three columns: `id`, `name`, and `email`.\n\n### Inserting Data\nTo insert data into a table, you use the `INSERT INTO` statement. For example:\n```sql\nINSERT INTO customers (id, name, email)\nVALUES (1, 'John Doe', 'john.doe@example.com');\n```\nThis will insert a new record into the `customers` table.\n\n### Updating Data\nTo update data in a table, you use the `UPDATE` statement. For example:\n```sql\nUPDATE customers\nSET name = 'Jane Doe'\nWHERE id = 1;\n```\nThis will update the `name` column for the record with `id` = 1.\n\n### Deleting Data\nTo delete data from a table, you use the `DELETE` statement. For example:\n```sql\nDELETE FROM customers\nWHERE id = 1;\n```\nThis will delete the record with `id` = 1.\n\n### Querying Data\nTo query data from a table, you use the `SELECT` statement. For example:\n```sql\nSELECT * FROM customers;\n```\nThis will retrieve all records from the `customers` table.\n\n### Joining Tables\nTo join two or more tables, you use the `JOIN` statement. For example:\n```sql\nSELECT *\nFROM customers\nJOIN orders\nON customers.id = orders.customer_id;\n```\nThis will join the `customers` and `orders` tables on the `id` column.\n\n## 🖼️ Diagrams & Visual Concepts\nDiagrams and visual concepts are used to represent the relationship between tables in a database. For example, an entity-relationship diagram (ERD) is a visual representation of the relationships between entities in a database.\n\nERDs typically consist of the following components:\n\n* **Entities**: Represented by boxes, entities are the objects or concepts in the database.\n* **Attributes**: Represented by lines, attributes are the characteristics or properties of the entities.\n* **Relationships**: Represented by lines or arrows, relationships show how the entities are connected.\n\n## ⭐ Most Important Points (Exam Focus)\n* SQL is a declarative language used to manage relational databases.\n* A database is a collection of related data stored in a structured format.\n* Tables are collections of related data stored in a database.\n* Rows and columns are used to represent data in a table.\n* Primary keys and foreign keys are used to establish relationships between tables.\n* SQL has a simple syntax and is easy to learn.\n* Use proper syntax and grammar when writing SQL queries.\n* Use indexes to improve query performance.\n* Avoid using SELECT *\n\n## ❌ Common Mistakes to Avoid\n* Not using proper syntax and grammar when writing SQL queries.\n* Not using indexes to improve query performance.\n* Using SELECT * without specifying the columns needed.\n* Not using proper naming conventions for tables and columns.\n* Not establishing relationships between tables using primary keys and foreign keys.\n\n## 💡 Real-World Applications\n* **E-commerce**: SQL is used to manage databases for e-commerce websites, allowing users to search for products, view orders, and manage customer information.\n* **Banking**: SQL is used to manage databases for banks, allowing users to view account balances, transfer funds, and manage customer information.\n* **Healthcare**: SQL is used to manage databases for hospitals and clinics, allowing users to view patient records, manage medical information, and track prescriptions.\n* **Social Media**: SQL is used to manage databases for social media platforms, allowing users to view profiles, manage relationships, and track interactions.\n\n## 🔁 Quick Revision Summary\n1. SQL is a declarative language used to manage relational databases.\n2. A database is a collection of related data stored in a structured format.\n3. Tables are collections of related data stored in a database.\n4. Rows and columns are used to represent data in a table.\n5. Primary keys and foreign keys are used to establish relationships between tables.\n6. SQL has a simple syntax and is easy to learn.\n7. Use proper syntax and grammar when writing SQL queries.\n8. Use indexes to improve query performance.\n9. Avoid using SELECT *\n10. Use proper naming conventions for tables and columns.\n11. Establish relationships between tables using primary keys and foreign keys.\n12. Use the `CREATE DATABASE` statement to create a new database.\n13. Use the `CREATE TABLE` statement to create a new table.\n14. Use the `INSERT INTO` statement to insert data into a table.\n15. Use the `UPDATE` statement to update data in a table.\n16. Use the `DELETE` statement to delete data from a table.\n17. Use the `SELECT` statement to query data from a table.\n18. Use the `JOIN` statement to join two or more tables.\n19. Use indexes to improve query performance.\n20. Avoid using SELECT *\n\nThis concludes the comprehensive study notes for the chapter on Structured Query Language (SQL) for CBSE Class 11."
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:16:00.547+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [],
+        "exam_frequency": "medium",
+        "difficulty_score": 5,
+        "overall_difficulty": "medium"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:55:39.475+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Study tip 1",
+          "Study tip 2"
+        ],
+        "total_minutes": 120,
+        "revision_minutes": 20,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 30,
+        "sessions_recommended": 3,
+        "first_reading_minutes": 45,
+        "practice_questions_minutes": 25
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:15:58.202+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Content",
+            "notes": "",
+            "units": "",
+            "formula": "```json\n[\n  {\n    \"name\": \"SELECT Statement\",\n    \"formula\": \"SELECT column1, column2 FROM table;\",\n    \"variables\": \"column1, column2: column names of the table to retrieve\",\n    \"units\": \"\",\n    \"notes\": \"Use to retrieve specific columns from a table\"\n  },\n  {\n    \"name\": \"INSERT INTO Statement\",\n    \"formula\": \"INSERT INTO table (column1, column2) VALUES ('value1', 'value2');\",\n    \"variables\": \"table: table name, column1, column2: column names to insert into, value1, value2: values to insert\",\n    \"units\": \"\",\n    \"notes\": \"Use to add new data to a table\"\n  },\n  {\n    \"name\": \"UPDATE Statement\",\n    \"formula\": \"UPDATE table SET column1 = 'value1', column2 = 'value2' WHERE condition;\",\n    \"variables\": \"table: table name, column1, column2: column names to update, value1, value2: new values, condition: condition to apply the update\",\n    \"units\": \"\",\n    \"notes\": \"Use to modify existing data in a table\"\n  },\n  {\n    \"name\": \"DELETE Statement\",\n    \"formula\": \"DELETE FROM table WHERE condition;\",\n    \"variables\": \"table: table name, condition: condition to delete\",\n    \"units\": \"\",\n    \"notes\": \"Use to delete data from a table\"\n  },\n  {\n    \"name\": \"WHERE Clause\",\n    \"formula\": \"SELECT * FROM table WHERE condition;\",\n    \"variables\": \"table: table name, condition: condition to apply\",\n    \"units\": \"\",\n    \"notes\": \"Use to filter results based on conditions\"\n  },\n  {\n    \"name\": \"AND Operator\",\n    \"formula\": \"SELECT * FROM table WHERE condition1 AND condition2;\",\n    \"variables\": \"table: table name, condition1, condition2: conditions to apply\",\n    \"units\": \"\",\n    \"notes\": \"Use to apply multiple conditions in a WHERE clause\"\n  },\n  {\n    \"name\": \"OR Operator\",\n    \"formula\": \"SELECT * FROM table WHERE condition1 OR condition2;\",\n    \"variables\": \"table: table name, condition1, condition2: conditions to apply\",\n    \"units\": \"\",\n    \"notes\": \"Use to apply multiple conditions in a WHERE clause\"\n  },\n  {\n    \"name\": \"NOT Operator\",\n    \"formula\": \"SELECT * FROM table WHERE NOT condition;\",\n    \"variables\": \"table: table name, condition: condition to negate\",\n    \"units\": \"\",\n    \"notes\": \"Use to negate a condition in a WHERE clause\"\n  },\n  {\n    \"name\": \"ORDER BY Clause\",\n    \"formula\": \"SELECT * FROM table ORDER BY column ASC/DESC;\",\n    \"variables\": \"table: table name, column: column to sort by, ASC/DESC: ascending/descending order\",\n    \"units\": \"\",\n    \"notes\": \"Use to sort results in ascending or descending order\"\n  },\n  {\n    \"name\": \"LIMIT Clause\",\n    \"formula\": \"SELECT * FROM table LIMIT number;\",\n    \"variables\": \"table: table name, number: number of rows to return\",\n    \"units\": \"\",\n    \"notes\": \"Use to limit the number of rows returned\"\n  },\n  {\n    \"name\": \"JOIN Clause\",\n    \"formula\": \"SELECT * FROM table1 JOIN table2 ON table1.column = table2.column;\",\n    \"variables\": \"table1, table2: table names, table1.column, table2.column: columns to join on\",\n    \"units\": \"\",\n    \"notes\": \"Use to combine data from two or more tables\"\n  },\n  {\n    \"name\": \"INNER JOIN\",\n    \"formula\": \"SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column;\",\n    \"variables\": \"table1, table2: table names, table1.column, table2.column: columns to join on\",\n    \"units\": \"\",\n    \"notes\": \"Use to combine data from two or more tables based on matching rows\"\n  },\n  {\n    \"name\": \"LEFT JOIN\",\n    \"formula\": \"SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column;\",\n    \"variables\": \"table1, table2: table names, table1.column, table2.column: columns to join on\",\n    \"units\": \"\",\n    \"notes\": \"Use to combine data from two or more tables, including all rows from one table and matching rows from the other\"\n  },\n  {\n    \"name\": \"RIGHT JOIN\",\n    \"formula\": \"SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column;\",\n    \"variables\": \"table1, table2: table names, table1.column, table2.column: columns to join on\",\n    \"units\": \"\",\n    \"notes\": \"Use to combine data from two or more tables, including all rows from one table and matching rows from the other\"\n  },\n  {\n    \"name\": \"FULL OUTER JOIN\",\n    \"formula\": \"SELECT * FROM table1 FULL OUTER JOIN table2 ON table1.column = table2.column;\",\n    \"variables\": \"table1, table2: table names, table1.column, table2.column: columns to join on\",\n    \"units\": \"\",\n    \"notes\": \"Use to combine data from two or more tables, including all rows from both tables\"\n  },\n  {\n    \"name\": \"GROUP BY Clause\",\n    \"formula\": \"SELECT column FROM table GROUP BY column;\",\n    \"variables\": \"table: table name, column: column to group by\",\n    \"units\": \"\",\n    \"notes\": \"Use",
+            "variables": ""
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T15:03:52.251+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "Introduction to SQL",
+            "importance": "Understanding the basics of SQL is crucial for working with databases and performing various operations.",
+            "explanation": "SQL stands for Structured Query Language, which is used to communicate with relational databases. It is a standard language for accessing, managing, and modifying data in relational databases. SQL is used to perform various operations such as creating, modifying, and querying databases.",
+            "related_topics": [
+              "Relational Databases",
+              "Database Management Systems"
+            ]
+          },
+          {
+            "concept": "SQL Syntax",
+            "importance": "Mastering SQL syntax is essential for writing efficient and effective SQL queries.",
+            "explanation": "SQL syntax involves the rules and structures used to write SQL statements. It includes keywords, identifiers, and other elements that are used to construct SQL queries.",
+            "related_topics": [
+              "SQL Queries",
+              "SQL Statements"
+            ]
+          },
+          {
+            "concept": "SQL Queries",
+            "importance": "Understanding SQL queries is crucial for extracting data from a database and performing various data analysis tasks.",
+            "explanation": "SQL queries are used to retrieve data from a database. They can be used to select specific data, perform calculations, and sort data.",
+            "related_topics": [
+              "SQL Syntax",
+              "Data Retrieval"
+            ]
+          },
+          {
+            "concept": "SELECT Statement",
+            "importance": "The SELECT statement is a fundamental part of SQL and is used extensively in data retrieval operations.",
+            "explanation": "The SELECT statement is used to select data from a database. It can be used to select specific columns, rows, and tables.",
+            "related_topics": [
+              "SQL Queries",
+              "Data Retrieval"
+            ]
+          },
+          {
+            "concept": "WHERE Clause",
+            "importance": "The WHERE clause is an essential part of SQL queries and is used to refine the data retrieved from a database.",
+            "explanation": "The WHERE clause is used to filter data based on conditions. It can be used to select specific data that meets certain criteria.",
+            "related_topics": [
+              "SQL Queries",
+              "Data Filtering"
+            ]
+          },
+          {
+            "concept": "ORDER BY Clause",
+            "importance": "The ORDER BY clause is used extensively in data analysis and reporting tasks.",
+            "explanation": "The ORDER BY clause is used to sort data in ascending or descending order. It can be used to sort data based on one or more columns.",
+            "related_topics": [
+              "SQL Queries",
+              "Data Sorting"
+            ]
+          },
+          {
+            "concept": "GROUP BY Clause",
+            "importance": "The GROUP BY clause is used extensively in data analysis and reporting tasks.",
+            "explanation": "The GROUP BY clause is used to group data based on one or more columns. It can be used to perform aggregate operations such as SUM, COUNT, and AVG.",
+            "related_topics": [
+              "SQL Queries",
+              "Data Aggregation"
+            ]
+          },
+          {
+            "concept": "HAVING Clause",
+            "importance": "The HAVING clause is used extensively in data analysis and reporting tasks.",
+            "explanation": "The HAVING clause is used to filter grouped data based on conditions. It can be used to select specific data that meets certain criteria.",
+            "related_topics": [
+              "SQL Queries",
+              "Data Filtering"
+            ]
+          },
+          {
+            "concept": "INSERT Statement",
+            "importance": "The INSERT statement is used extensively in data entry and updating operations.",
+            "explanation": "The INSERT statement is used to insert new data into a database. It can be used to insert single or multiple rows.",
+            "related_topics": [
+              "SQL Statements",
+              "Data Entry"
+            ]
+          },
+          {
+            "concept": "UPDATE Statement",
+            "importance": "The UPDATE statement is used extensively in data updating and maintenance operations.",
+            "explanation": "The UPDATE statement is used to modify existing data in a database. It can be used to update single or multiple rows.",
+            "related_topics": [
+              "SQL Statements",
+              "Data Updating"
+            ]
+          },
+          {
+            "concept": "DELETE Statement",
+            "importance": "The DELETE statement is used extensively in data maintenance and cleaning operations.",
+            "explanation": "The DELETE statement is used to delete existing data from a database. It can be used to delete single or multiple rows.",
+            "related_topics": [
+              "SQL Statements",
+              "Data Deletion"
+            ]
+          },
+          {
+            "concept": "Database Normalization",
+            "importance": "Database normalization is crucial for ensuring data consistency and reducing data redundancy.",
+            "explanation": "Database normalization is the process of organizing the data in a database to minimize data redundancy and improve data integrity.",
+            "related_topics": [
+              "Data Modeling",
+              "Data Design"
+            ]
+          },
+          {
+            "concept": "SQL Indexing",
+            "importance": "SQL indexing is crucial for improving query performance and reducing data retrieval time.",
+            "explanation": "SQL indexing is the process of creating an index on a column or set of columns in a table. It can be used to improve query performance and reduce data retrieval time.",
+            "related_topics": [
+              "Data Retrieval",
+              "Query Optimization"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:37:19.952+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "SQL",
+            "example": null,
+            "definition": "Structured Query Language is a standard language for accessing and manipulating data in relational database management systems (RDBMS). It allows users to perform various operations like creating, modifying, and querying databases."
+          },
+          {
+            "term": "Relational Database",
+            "example": null,
+            "definition": "A relational database is a type of database that stores data in a structured format using tables, where each table has rows and columns, and data is linked using relationships between tables."
+          },
+          {
+            "term": "Schema",
+            "example": "For example, a schema for a student database might include tables for students, courses, and grades.",
+            "definition": "A schema is the overall structure of a database, including the relationships between tables, the data types of each column, and the constraints imposed on the data."
+          },
+          {
+            "term": "Table",
+            "example": "For example, a table for students might have columns for student ID, name, and age.",
+            "definition": "A table is a collection of related data stored in rows and columns, where each row represents a single record and each column represents a field or attribute of that record."
+          },
+          {
+            "term": "Row",
+            "example": "For example, a row for a student might have values for student ID, name, and age.",
+            "definition": "A row is a single record in a table, consisting of a set of values for each column."
+          },
+          {
+            "term": "Column",
+            "example": "For example, a column for student ID might contain a unique identifier for each student.",
+            "definition": "A column is a field or attribute of a table, representing a single piece of data for each row."
+          },
+          {
+            "term": "Primary Key",
+            "example": "For example, a primary key for a student table might be a student ID.",
+            "definition": "A primary key is a unique identifier for each row in a table, used to distinguish it from other rows."
+          },
+          {
+            "term": "Foreign Key",
+            "example": "For example, a foreign key in a grades table might reference the student ID in the students table.",
+            "definition": "A foreign key is a column or set of columns in a table that references the primary key of another table, establishing a relationship between the two tables."
+          },
+          {
+            "term": "JOIN",
+            "example": "For example, a JOIN might be used to combine rows from a students table and a grades table based on student ID.",
+            "definition": "A JOIN is a clause used in SQL to combine rows from two or more tables based on a common column or set of columns."
+          },
+          {
+            "term": "SELECT",
+            "example": "For example, a SELECT statement might be used to retrieve the names and grades of all students in a particular course.",
+            "definition": "A SELECT statement is a SQL command used to retrieve data from a database, specifying the columns to be returned and the conditions under which the data should be selected."
+          },
+          {
+            "term": "FROM",
+            "example": "For example, a FROM clause might be used to specify the students and grades tables in a query.",
+            "definition": "A FROM clause is a part of a SQL statement that specifies the tables to be used in a query, typically used with the SELECT statement."
+          },
+          {
+            "term": "WHERE",
+            "example": "For example, a WHERE clause might be used to select only students with a grade above 80.",
+            "definition": "A WHERE clause is a part of a SQL statement that specifies the conditions under which data should be selected, typically used with the SELECT statement."
+          },
+          {
+            "term": "ORDER BY",
+            "example": "For example, an ORDER BY clause might be used to sort the results of a query by student name in ascending order.",
+            "definition": "An ORDER BY clause is a part of a SQL statement that sorts the results of a query in ascending or descending order, based on one or more columns."
+          },
+          {
+            "term": "GROUP BY",
+            "example": "For example, a GROUP BY clause might be used to group the results of a query by student course.",
+            "definition": "A GROUP BY clause is a part of a SQL statement that groups the results of a query by one or more columns, allowing for aggregation operations like SUM and COUNT."
+          },
+          {
+            "term": "HAVING",
+            "example": "For example, a HAVING clause might be used to select only courses with an average grade above 80.",
+            "definition": "A HAVING clause is a part of a SQL statement that specifies conditions for aggregated data, typically used with the GROUP BY clause."
+          },
+          {
+            "term": "INSERT",
+            "example": "For example, an INSERT statement might be used to add a new student to the students table.",
+            "definition": "An INSERT statement is a SQL command used to add new data to a database, specifying the table and values to be inserted."
+          },
+          {
+            "term": "UPDATE",
+            "example": "For example, an UPDATE statement might be used to update the grade of a student in the grades table.",
+            "definition": "An UPDATE statement is a SQL command used to modify existing data in a database, specifying the table and values to be updated."
+          },
+          {
+            "term": "DELETE",
+            "example": "For example, a DELETE statement might be used to remove a student from the students table.",
+            "definition": "A DELETE statement is a SQL command used to remove data from a database, specifying the table and conditions for deletion."
+          },
+          {
+            "term": "Index",
+            "example": "For example, an index might be created on a column in a table to improve query performance when searching for data in that column.",
+            "definition": "An index is a data structure used in databases to improve query performance, allowing for faster access to data by creating a quick reference or pointer to the data."
+          },
+          {
+            "term": "View",
+            "example": "For example, a view might be created to simplify access to a complex query that retrieves data from multiple tables.",
+            "definition": "A view is a virtual table in a database, derived from the result of a query, allowing for simplified access to complex data."
+          },
+          {
+            "term": "Trigger",
+            "example": "For example, a trigger might be created to update a field in a table whenever a new record is inserted.",
+            "definition": "A trigger is a set of actions that occur automatically in response to certain events in a database, such as insert, update, or delete operations."
+          },
+          {
+            "term": "Constraint",
+            "example": "For example, a constraint might be created to enforce a unique identifier for each record in a table.",
+            "definition": "A constraint is a rule or restriction imposed on data in a database, ensuring data integrity and consistency."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:55:39.097+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Write SQL queries to perform basic operations, such as inserting, updating, and deleting data.",
+            "Use SQL to perform aggregate operations, such as grouping and sorting data.",
+            "Write SQL queries to perform data analysis and visualization."
+          ],
+          "analyze": [
+            "Analyze the performance of SQL queries and optimize them for better execution time.",
+            "Use SQL to identify data inconsistencies and resolve data integrity issues.",
+            "Analyze data trends and patterns using SQL queries."
+          ],
+          "remember": [
+            "Recall the basic syntax of SQL queries, including SELECT, FROM, WHERE, GROUP BY, and HAVING clauses.",
+            "Identify the different types of SQL queries, such as DDL, DML, and DQL.",
+            "List the advantages and disadvantages of using SQL for data management."
+          ],
+          "understand": [
+            "Explain the concept of database normalization and its importance in SQL.",
+            "Describe the difference between a database and a table, and explain the relationship between them.",
+            "Understand how to use JOINs to combine data from multiple tables."
+          ]
+        },
+        "ncert_objectives": [
+          "Explain the basic syntax of SQL queries and their importance in data management.",
+          "Describe the different types of SQL queries and their applications.",
+          "Explain the concept of database normalization and its importance in data management."
+        ],
+        "board_exam_objectives": [
+          "Write SQL queries to perform basic operations, such as inserting, updating, and deleting data.",
+          "Use SQL to perform aggregate operations, such as grouping and sorting data.",
+          "Explain the concept of database normalization and its importance in data management."
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-26T08:05:58.977+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "What are the basic components of a SQL query, and how are they arranged? (a) SELECT, FROM, WHERE, GROUP BY, HAVING; (b) Explain the order in which these components are arranged.",
+            "marks": 5,
+            "topic": "SQL Query Basics",
+            "answer": "A SQL query consists of several basic components: SELECT, FROM, WHERE, GROUP BY, HAVING. The order in which these components are arranged is crucial for the query to execute correctly. The SELECT clause is used to specify the columns to be retrieved, while the FROM clause specifies the tables to be used. The WHERE clause is used to specify conditions for which rows to include in the result set. The GROUP BY clause is used to group rows based on one or more columns, and the HAVING clause is used to specify conditions for the grouped rows. The basic syntax of a SQL query is: SELECT column1, column2 FROM table_name WHERE condition GROUP BY column_name HAVING condition. This order ensures that the query first retrieves the required data, then applies filters and groupings, and finally returns the result set.",
+            "marking_scheme": [
+              "Explain the basic components of a SQL query (2 marks)",
+              "Describe the order in which these components are arranged (3 marks)"
+            ]
+          },
+          {
+            "q": "What is the difference between an INNER JOIN and a LEFT JOIN in SQL? (a) Explain the purpose of each; (b) Provide an example of when to use each.",
+            "marks": 5,
+            "topic": "SQL Joins",
+            "answer": "An INNER JOIN and a LEFT JOIN are both types of joins used in SQL to combine rows from two or more tables based on a related column between them. The main difference between the two is that an INNER JOIN returns only the rows that have a match in both tables, whereas a LEFT JOIN returns all the rows from the left table and the matching rows from the right table. If there is no match in the right table, the result set will contain NULL values. An INNER JOIN is used when we want to retrieve only the rows that have a match in both tables, whereas a LEFT JOIN is used when we want to retrieve all the rows from the left table, even if there are no matches in the right table.",
+            "marking_scheme": [
+              "Explain the purpose of an INNER JOIN (2 marks)",
+              "Explain the purpose of a LEFT JOIN (2 marks)",
+              "Provide an example of when to use each (1 mark)"
+            ]
+          },
+          {
+            "q": "What are the different types of indexes in SQL, and how do they improve query performance? (a) Explain the purpose of each; (b) Provide an example of when to use each.",
+            "marks": 5,
+            "topic": "SQL Indexing",
+            "answer": "There are several types of indexes in SQL, including Clustered Index, Non-Clustered Index, Covering Index, and Composite Index. A Clustered Index is used to physically reorder the rows in a table based on the index keys, whereas a Non-Clustered Index is used to create a separate data structure that stores the index keys and their corresponding row locations. A Covering Index is used to store all the columns required by a query in the index, whereas a Composite Index is used to create a single index that combines multiple columns. Indexes improve query performance by reducing the time it takes to locate data in a table, as the index can be used to quickly retrieve the required data.",
+            "marking_scheme": [
+              "Explain the purpose of a Clustered Index (2 marks)",
+              "Explain the purpose of a Non-Clustered Index (2 marks)",
+              "Provide an example of when to use each (1 mark)"
+            ]
+          },
+          {
+            "q": "What are the differences between a subquery and a derived table in SQL? (a) Explain the purpose of each; (b) Provide an example of when to use each.",
+            "marks": 5,
+            "topic": "SQL Subqueries and Derived Tables",
+            "answer": "A subquery and a derived table are both used to perform complex queries in SQL, but they differ in their structure and usage. A subquery is a query nested inside another query, whereas a derived table is a temporary result set created from a query. A subquery is used when we want to retrieve data from a table based on a condition that involves another query, whereas a derived table is used when we want to create a temporary result set from a query and use it in another query. Subqueries are generally more efficient and easier to read than derived tables, but derived tables can be useful when we need to perform complex operations on the result set.",
+            "marking_scheme": [
+              "Explain the purpose of a subquery (2 marks)",
+              "Explain the purpose of a derived table (2 marks)",
+              "Provide an example of when to use each (1 mark)"
+            ]
+          },
+          {
+            "q": "What is the difference between a stored procedure and a function in SQL? (a) Explain the purpose of each; (b) Provide an example of when to use each.",
+            "marks": 5,
+            "topic": "SQL Stored Procedures and Functions",
+            "answer": "A stored procedure and a function are both used to package a group of SQL statements together, but they differ in their purpose and usage. A stored procedure is used to perform a specific task or set of tasks, whereas a function is used to return a value based on a specific input. A stored procedure is used when we want to perform a complex operation that involves multiple statements, whereas a function is used when we want to return a value based on a specific input. Stored procedures are generally more flexible and powerful than functions, but functions are more efficient and easier to use.",
+            "marking_scheme": [
+              "Explain the purpose of a stored procedure (2 marks)",
+              "Explain the purpose of a function (2 marks)",
+              "Provide an example of when to use each (1 mark)"
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:26:23.377+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 20,
+        "questions": [
+          {
+            "q": "What is the purpose of the SELECT statement in SQL?",
+            "ans": "C",
+            "opts": [
+              "(A) To delete data from a database",
+              "(B) To insert new data into a database",
+              "(C) To retrieve data from a database",
+              "(D) To create a new table in a database"
+            ],
+            "topic": "Basic SQL",
+            "difficulty": "easy",
+            "explanation": "The SELECT statement is used to retrieve data from one or more tables in a database."
+          },
+          {
+            "q": "What is the difference between INNER JOIN and LEFT JOIN in SQL?",
+            "ans": "B",
+            "opts": [
+              "(A) INNER JOIN returns all rows from the left table, while LEFT JOIN returns all rows from the right table",
+              "(B) INNER JOIN returns all rows from both tables where there is a match, while LEFT JOIN returns all rows from the left table and the matched rows from the right table",
+              "(C) INNER JOIN returns all rows from the right table, while LEFT JOIN returns all rows from the left table",
+              "(D) INNER JOIN returns all rows from the left table, while LEFT JOIN returns all rows from the right table"
+            ],
+            "topic": "Joins",
+            "difficulty": "medium",
+            "explanation": "INNER JOIN returns all rows from both tables where there is a match, while LEFT JOIN returns all rows from the left table and the matched rows from the right table."
+          },
+          {
+            "q": "How do you update a column in a table using SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) UPDATE table_name SET column_name = new_value",
+              "(B) INSERT INTO table_name (column_name) VALUES (new_value)",
+              "(C) ALTER TABLE table_name CHANGE column_name new_value",
+              "(D) DROP TABLE table_name"
+            ],
+            "topic": "Data Modification",
+            "difficulty": "easy",
+            "explanation": "The UPDATE statement is used to update a column in a table."
+          },
+          {
+            "q": "What is the purpose of the GROUP BY clause in SQL?",
+            "ans": "C",
+            "opts": [
+              "(A) To sort the data in a table",
+              "(B) To filter the data in a table",
+              "(C) To group the data in a table by one or more columns",
+              "(D) To aggregate the data in a table"
+            ],
+            "topic": "Aggregate Functions",
+            "difficulty": "medium",
+            "explanation": "The GROUP BY clause is used to group the data in a table by one or more columns."
+          },
+          {
+            "q": "How do you delete a row from a table using SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) DELETE FROM table_name WHERE condition",
+              "(B) DROP TABLE table_name",
+              "(C) TRUNCATE TABLE table_name",
+              "(D) ALTER TABLE table_name DROP column_name"
+            ],
+            "topic": "Data Modification",
+            "difficulty": "easy",
+            "explanation": "The DELETE statement is used to delete a row from a table."
+          },
+          {
+            "q": "What is the difference between a primary key and a foreign key in SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) A primary key is a unique identifier for each row in a table, while a foreign key is a column in a table that references the primary key of another table",
+              "(B) A primary key is a column in a table that references the primary key of another table, while a foreign key is a unique identifier for each row in a table",
+              "(C) A primary key is a column in a table that contains a unique value for each row, while a foreign key is a column in a table that references the primary key of another table",
+              "(D) A primary key is a column in a table that references the primary key of another table, while a foreign key is a column in a table that contains a unique value for each row"
+            ],
+            "topic": "Database Design",
+            "difficulty": "hard",
+            "explanation": "A primary key is a unique identifier for each row in a table, while a foreign key is a column in a table that references the primary key of another table."
+          },
+          {
+            "q": "How do you insert data into a table using SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) INSERT INTO table_name (column1, column2) VALUES (value1, value2)",
+              "(B) UPDATE table_name SET column1 = value1, column2 = value2",
+              "(C) SELECT * FROM table_name",
+              "(D) DELETE FROM table_name"
+            ],
+            "topic": "Data Insertion",
+            "difficulty": "easy",
+            "explanation": "The INSERT INTO statement is used to insert data into a table."
+          },
+          {
+            "q": "What is the purpose of the ORDER BY clause in SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) To sort the data in a table",
+              "(B) To filter the data in a table",
+              "(C) To group the data in a table by one or more columns",
+              "(D) To aggregate the data in a table"
+            ],
+            "topic": "Data Retrieval",
+            "difficulty": "medium",
+            "explanation": "The ORDER BY clause is used to sort the data in a table."
+          },
+          {
+            "q": "How do you create a new table in a database using SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) CREATE TABLE table_name (column1 data_type, column2 data_type)",
+              "(B) DROP TABLE table_name",
+              "(C) ALTER TABLE table_name ADD column_name data_type",
+              "(D) TRUNCATE TABLE table_name"
+            ],
+            "topic": "Database Design",
+            "difficulty": "easy",
+            "explanation": "The CREATE TABLE statement is used to create a new table in a database."
+          },
+          {
+            "q": "What is the purpose of the UNION operator in SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) To combine the results of two or more SELECT statements into a single result set",
+              "(B) To combine the results of two or more INSERT INTO statements into a single result set",
+              "(C) To combine the results of two or more UPDATE statements into a single result set",
+              "(D) To combine the results of two or more DELETE statements into a single result set"
+            ],
+            "topic": "Data Retrieval",
+            "difficulty": "hard",
+            "explanation": "The UNION operator is used to combine the results of two or more SELECT statements into a single result set."
+          },
+          {
+            "q": "How do you update multiple columns in a table using SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) UPDATE table_name SET column1 = new_value, column2 = new_value2",
+              "(B) UPDATE table_name SET column1 = new_value",
+              "(C) ALTER TABLE table_name CHANGE column1 new_value",
+              "(D) DROP TABLE table_name"
+            ],
+            "topic": "Data Modification",
+            "difficulty": "easy",
+            "explanation": "The UPDATE statement is used to update multiple columns in a table."
+          },
+          {
+            "q": "What is the purpose of the INDEX clause in SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) To speed up queries by creating an index on a column",
+              "(B) To slow down queries by creating an index on a column",
+              "(C) To create a primary key on a column",
+              "(D) To create a foreign key on a column"
+            ],
+            "topic": "Database Design",
+            "difficulty": "medium",
+            "explanation": "The INDEX clause is used to speed up queries by creating an index on a column."
+          },
+          {
+            "q": "How do you truncate a table in a database using SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) TRUNCATE TABLE table_name",
+              "(B) DROP TABLE table_name",
+              "(C) ALTER TABLE table_name DROP column_name",
+              "(D) UPDATE table_name SET column_name = NULL"
+            ],
+            "topic": "Data Modification",
+            "difficulty": "easy",
+            "explanation": "The TRUNCATE TABLE statement is used to truncate a table in a database."
+          },
+          {
+            "q": "What is the purpose of the SUBQUERY in SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) To filter the data in a table based on a condition",
+              "(B) To sort the data in a table based on a condition",
+              "(C) To group the data in a table based on a condition",
+              "(D) To aggregate the data in a table based on a condition"
+            ],
+            "topic": "Data Retrieval",
+            "difficulty": "medium",
+            "explanation": "The SUBQUERY is used to filter the data in a table based on a condition."
+          },
+          {
+            "q": "How do you delete multiple rows from a table using SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) DELETE FROM table_name WHERE condition",
+              "(B) DELETE FROM table_name",
+              "(C) TRUNCATE TABLE table_name",
+              "(D) ALTER TABLE table_name DROP column_name"
+            ],
+            "topic": "Data Modification",
+            "difficulty": "easy",
+            "explanation": "The DELETE statement is used to delete multiple rows from a table."
+          },
+          {
+            "q": "What is the purpose of the VIEW in SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) To create a virtual table based on the result of a SELECT statement",
+              "(B) To create a physical table in a database",
+              "(C) To create a trigger on a table",
+              "(D) To create a stored procedure"
+            ],
+            "topic": "Database Design",
+            "difficulty": "hard",
+            "explanation": "The VIEW is used to create a virtual table based on the result of a SELECT statement."
+          },
+          {
+            "q": "How do you create a stored procedure in a database using SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) CREATE PROCEDURE procedure_name AS BEGIN statements END",
+              "(B) CREATE FUNCTION procedure_name() RETURNS table",
+              "(C) ALTER TABLE table_name ADD procedure_name",
+              "(D) TRUNCATE TABLE table_name"
+            ],
+            "topic": "Database Design",
+            "difficulty": "medium",
+            "explanation": "The CREATE PROCEDURE statement is used to create a stored procedure in a database."
+          },
+          {
+            "q": "What is the purpose of the TRIGGER in SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) To execute a set of statements in response to a specific event",
+              "(B) To create a stored procedure in a database",
+              "(C) To create a view in a database",
+              "(D) To create an index on a column"
+            ],
+            "topic": "Database Design",
+            "difficulty": "hard",
+            "explanation": "The TRIGGER is used to execute a set of statements in response to a specific event."
+          },
+          {
+            "q": "How do you create an index on a column in a table using SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) CREATE INDEX index_name ON table_name (column_name)",
+              "(B) ALTER TABLE table_name ADD INDEX (column_name)",
+              "(C) CREATE TABLE table_name INDEX (column_name)",
+              "(D) TRUNCATE TABLE table_name"
+            ],
+            "topic": "Database Design",
+            "difficulty": "medium",
+            "explanation": "The CREATE INDEX statement is used to create an index on a column in a table."
+          },
+          {
+            "q": "What is the purpose of the DROP TABLE statement in SQL?",
+            "ans": "A",
+            "opts": [
+              "(A) To delete a table from a database",
+              "(B) To truncate a table in a database",
+              "(C) To alter a table in a database",
+              "(D) To create a new table in a database"
+            ],
+            "topic": "Database Design",
+            "difficulty": "easy",
+            "explanation": "The DROP TABLE statement is used to delete a table from a database."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:15:58.438+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Structured Query Language (SQL)\n\n## Chapter at a Glance\n\nStructured Query Language (SQL) is a standard language for accessing, managing, and modifying data in relational database management systems. This chapter introduces the basics of SQL, its syntax, and its applications in database management. The chapter covers the concepts of database schema, data types, and SQL commands for creating, modifying, and querying databases. By the end of this chapter, students will be able to write efficient SQL queries and perform various database operations.\n\n## Section-wise Summary\n\n### 1. Introduction to SQL\n\n- **Definition of SQL**: A standard language for accessing, managing, and modifying data in relational database management systems.\n- **Characteristics of SQL**:\n  - **Declarative**: The SQL language is declarative, meaning that the user specifies what they want to do, rather than how to do it.\n  - **Procedural**: SQL is also procedural, meaning that the user can specify the steps to be taken to achieve a particular goal.\n  - **Non-procedural**: SQL is non-procedural, meaning that the database management system determines the most efficient way to perform a query.\n- **Types of SQL**:\n  - **SQL-92**: A standard language for relational databases.\n  - **SQL-99**: An extension of SQL-92 that adds new features and functionality.\n  - **SQL:2011**: A more recent standard that adds new features and improves existing ones.\n\n### 2. Basic SQL Commands\n\n- **CREATE**: Creates a new database or table.\n- **DROP**: Deletes a database or table.\n- **ALTER**: Modifies the structure of a database or table.\n- **TRUNCATE**: Deletes all rows from a table.\n- **INSERT**: Adds new rows to a table.\n- **UPDATE**: Modifies existing rows in a table.\n- **DELETE**: Deletes rows from a table.\n\n### 3. SQL Data Types\n\n- **Integer**: Whole numbers, such as 1, 2, 3, etc.\n- **Real**: Decimal numbers, such as 3.14 or -0.5.\n- **Character**: Strings of characters, such as 'hello' or 'world'.\n- **Date**: Dates in the format YYYY-MM-DD.\n- **Time**: Times in the format HH:MM:SS.\n- **Boolean**: True or false values.\n\n### 4. Subqueries\n\n- **Definition**: A subquery is a query nested inside another query.\n- **Types of subqueries**:\n  - **Correlated subquery**: A subquery that references the outer query.\n  - **Uncorrelated subquery**: A subquery that does not reference the outer query.\n\n### 5. Aggregate Functions\n\n- **Definition**: Aggregate functions perform calculations on a set of values.\n- **Types of aggregate functions**:\n  - **SUM**: Calculates the sum of a set of values.\n  - **COUNT**: Counts the number of values in a set.\n  - **MAX**: Returns the maximum value in a set.\n  - **MIN**: Returns the minimum value in a set.\n  - **AVG**: Calculates the average of a set of values.\n\n### 6. Indexing and Views\n\n- **Definition**: An index is a data structure that improves query performance.\n- **Types of indexes**:\n  - **Clustered index**: An index that rearranges the data in a table.\n  - **Non-clustered index**: An index that does not rearrange the data in a table.\n- **Definition**: A view is a virtual table based on the result of a query.\n\n## Important NCERT Exercises Insight\n\nKey concepts tested in NCERT exercises include:\n\n- Writing SQL queries to create, modify, and query databases.\n- Using aggregate functions to perform calculations on sets of values.\n- Creating and using indexes to improve query performance.\n- Defining and using views to simplify complex queries.\n\nImportant points to remember:\n\n- Use the correct SQL syntax and data types.\n- Use subqueries to perform complex queries.\n- Use aggregate functions to perform calculations on sets of values.\n- Use indexes to improve query performance.\n- Use views to simplify complex queries.\n\n## NCERT Exemplar Focus\n\nAdditional topics covered in NCERT Exemplar include:\n\n- **SQL Server**: A commercial relational database management system.\n- **Database security**: Measures to protect a database from unauthorized access.\n- **Database design**: The process of designing a database to meet the needs of an application.\n\n## Board Exam Relevance\n\nMarks weightage and frequently asked topics from this chapter include:\n\n- Writing SQL queries to create, modify, and query databases (20 marks).\n- Using aggregate functions to perform calculations on sets of values (15 marks).\n- Creating and using indexes to improve query performance (10 marks).\n- Defining and using views to simplify complex queries (10 marks).\n\nFrequently asked topics include:\n\n- Writing SQL queries to create and modify databases.\n- Using aggregate functions to perform calculations on sets of values.\n- Creating and using indexes to improve query performance.\n- Defining and using views to simplify complex queries."
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T14:47:35.016+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "Write a SQL command to delete a row from a table whose column 'employee_id' has a value of 101.",
+            "type": "Short Answer",
+            "marks": 3,
+            "answer": "DELETE FROM table_name WHERE employee_id = 101;",
+            "difficulty": "easy",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "Which SQL command is used to retrieve data from a database table?",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "SELECT",
+            "difficulty": "easy",
+            "year_pattern": "2016-style"
+          },
+          {
+            "q": "What is the difference between INNER JOIN and LEFT JOIN in SQL?",
+            "type": "Short Answer",
+            "marks": 5,
+            "answer": "INNER JOIN returns only the rows that have a match in both tables, while LEFT JOIN returns all the rows from the left table and the matching rows from the right table.",
+            "difficulty": "medium",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "Write a SQL query to retrieve the names of all employees whose salary is greater than 5000.",
+            "type": "Long Answer",
+            "marks": 8,
+            "answer": "SELECT name FROM employees WHERE salary > 5000;",
+            "difficulty": "easy",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "What is the purpose of the GROUP BY clause in SQL?",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "The GROUP BY clause is used to group the result-set by one or more columns.",
+            "difficulty": "easy",
+            "year_pattern": "2017-style"
+          },
+          {
+            "q": "Write a SQL command to create a table named 'employees' with columns 'employee_id', 'name', and 'salary'.",
+            "type": "Short Answer",
+            "marks": 4,
+            "answer": "CREATE TABLE employees (employee_id INT, name VARCHAR(255), salary DECIMAL(10,2));",
+            "difficulty": "medium",
+            "year_pattern": "2021-style"
+          },
+          {
+            "q": "What is the result of the following SQL query: SELECT * FROM employees WHERE age > 30 OR age < 20?",
+            "type": "True/False",
+            "marks": 1,
+            "answer": "True",
+            "difficulty": "easy",
+            "year_pattern": "2015-style"
+          },
+          {
+            "q": "Write a SQL query to retrieve the sum of the salaries of all employees in a table.",
+            "type": "Long Answer",
+            "marks": 10,
+            "answer": "SELECT SUM(salary) FROM employees;",
+            "difficulty": "hard",
+            "year_pattern": "2014-style"
+          },
+          {
+            "q": "What is the purpose of the HAVING clause in SQL?",
+            "type": "Short Answer",
+            "marks": 3,
+            "answer": "The HAVING clause is used to filter groups of rows based on a condition.",
+            "difficulty": "medium",
+            "year_pattern": "2012-style"
+          },
+          {
+            "q": "Write a SQL command to drop a table named 'employees'.",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "DROP TABLE employees;",
+            "difficulty": "easy",
+            "year_pattern": "2013-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:32:49.252+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "What is SQL and its primary function?",
+            "marks": 2,
+            "topic": "Introduction to SQL",
+            "answer": "SQL (Structured Query Language) is a programming language used to manage and manipulate data in relational databases. Its primary function is to store, modify and retrieve data stored in a database.",
+            "key_points": [
+              "SQL is a programming language",
+              "Primary function of SQL",
+              "Data manipulation"
+            ]
+          },
+          {
+            "q": "What is a database and what are its components?",
+            "marks": 2,
+            "topic": "Database Fundamentals",
+            "answer": "A database is a collection of organized data that is stored in a way that allows efficient retrieval and manipulation. Its components include database schema, data types, tables, rows, and columns.",
+            "key_points": [
+              "Database components",
+              "Database schema",
+              "Data types"
+            ]
+          },
+          {
+            "q": "What is a SQL query and what are its types?",
+            "marks": 2,
+            "topic": "SQL Queries",
+            "answer": "A SQL query is a command used to retrieve or modify data in a database. Its types include DDL (Data Definition Language), DML (Data Manipulation Language), and DQL (Data Query Language).",
+            "key_points": [
+              "SQL query",
+              "Types of SQL queries",
+              "DDL, DML, DQL"
+            ]
+          },
+          {
+            "q": "What is the difference between INNER JOIN and LEFT JOIN in SQL?",
+            "marks": 2,
+            "topic": "SQL Joins",
+            "answer": "INNER JOIN returns records that have matching values in both tables, while LEFT JOIN returns all records from the left table and the matching records from the right table. If no match is found, NULL values are returned.",
+            "key_points": [
+              "INNER JOIN",
+              "LEFT JOIN",
+              "Join operations"
+            ]
+          },
+          {
+            "q": "What is a subquery and how is it used in SQL?",
+            "marks": 2,
+            "topic": "SQL Subqueries",
+            "answer": "A subquery is a query nested inside another query. It is used to retrieve data from one query and use it in another query. It can be used in SELECT, FROM, WHERE, or HAVING clauses.",
+            "key_points": [
+              "Subquery",
+              "Nested query",
+              "Query within a query"
+            ]
+          },
+          {
+            "q": "What is the purpose of GROUP BY clause in SQL?",
+            "marks": 2,
+            "topic": "SQL Aggregate Functions",
+            "answer": "The GROUP BY clause is used to group a set of rows into a set of summary rows based on one or more columns. It is used to perform aggregation operations such as SUM, AVG, MAX, etc.",
+            "key_points": [
+              "GROUP BY clause",
+              "Aggregation operations",
+              "Summary rows"
+            ]
+          },
+          {
+            "q": "What is the difference between LIKE and NOT LIKE operators in SQL?",
+            "marks": 2,
+            "topic": "SQL Pattern Matching",
+            "answer": "LIKE operator is used to search for a specified pattern in a column, while NOT LIKE operator is used to search for a specified pattern that does not exist in a column.",
+            "key_points": [
+              "LIKE operator",
+              "NOT LIKE operator",
+              "Pattern matching"
+            ]
+          },
+          {
+            "q": "What is the purpose of ORDER BY clause in SQL?",
+            "marks": 2,
+            "topic": "SQL Sorting and Ordering",
+            "answer": "The ORDER BY clause is used to sort a set of rows in ascending or descending order based on one or more columns. It is used to retrieve data in a specific order.",
+            "key_points": [
+              "ORDER BY clause",
+              "Sorting data",
+              "Ascending and descending order"
+            ]
+          },
+          {
+            "q": "What is the difference between UNION and UNION ALL operators in SQL?",
+            "marks": 2,
+            "topic": "SQL Set Operations",
+            "answer": "UNION operator returns a unique set of rows from two or more queries, while UNION ALL operator returns all rows from two or more queries, including duplicates.",
+            "key_points": [
+              "UNION operator",
+              "UNION ALL operator",
+              "Duplicate removal"
+            ]
+          },
+          {
+            "q": "What is the purpose of INDEX in SQL?",
+            "marks": 2,
+            "topic": "SQL Indexing",
+            "answer": "An index is a data structure that improves the speed of data retrieval operations by locating data quickly. It is used to speed up the execution of queries.",
+            "key_points": [
+              "Index",
+              "Data retrieval",
+              "Query optimization"
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:15:48.29+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Structured Query Language (SQL) — Quick Revision Notes\n\n## ⚡ Key Points\n- SQL is a standard language for accessing, managing, and modifying data in relational databases.\n- SQL is used to perform various operations like creating, modifying, and querying databases.\n- Relational databases store data in tables, which consist of rows (tuples) and columns (attributes).\n- SQL is case-insensitive, but it's common to use uppercase for keywords.\n- SQL commands are categorized into DDL (Data Definition Language), DML (Data Manipulation Language), and DQL (Data Query Language).\n- DDL commands create and modify database structure (e.g., CREATE, ALTER, DROP).\n- DML commands manipulate data in the database (e.g., INSERT, UPDATE, DELETE).\n- DQL commands retrieve data from the database (e.g., SELECT).\n- SQL uses clauses like WHERE, GROUP BY, HAVING, and ORDER BY to filter and manipulate data.\n- Subqueries are used to nest one query within another.\n- SQL supports various data types like INT, VARCHAR, DATE, and BOOLEAN.\n- Aggregate functions like SUM, COUNT, AVG, and MAX are used to calculate data summaries.\n- SQL supports joins to combine data from multiple tables.\n- Common join types include INNER JOIN, LEFT JOIN, and RIGHT JOIN.\n- SQL supports views, which are virtual tables based on the result of a query.\n- Indexing is used to speed up query performance by creating a data structure that points to specific data locations.\n- Transactions are used to ensure data consistency by grouping multiple operations as a single unit.\n- SQL supports stored procedures, which are reusable blocks of code that perform a specific task.\n- SQL is supported by most database management systems (DBMS), including MySQL, PostgreSQL, and Microsoft SQL Server.\n\n## 🔑 Must-Know Definitions\n- **Database**: A collection of related data stored in a way that supports efficient retrieval and manipulation.\n- **Table**: A collection of related data stored in rows and columns.\n- **Row**: A single entry in a table, also known as a tuple.\n- **Column**: A single field in a table, also known as an attribute.\n- **Primary Key**: A unique identifier for each row in a table.\n- **Foreign Key**: A field in one table that references the primary key in another table.\n- **Index**: A data structure that speeds up query performance by locating specific data locations.\n- **View**: A virtual table based on the result of a query.\n\n## 📊 Important Formulas\n- **Average**: AVG(column_name) = SUM(column_name) / COUNT(column_name)\n- **Sum**: SUM(column_name) = ∑ column_name\n- **Count**: COUNT(column_name) = # of rows with non-null values\n- **Max**: MAX(column_name) = maximum value in column_name\n- **Min**: MIN(column_name) = minimum value in column_name\n\n## ⭐ Exam Tips\n- Always use the correct syntax for SQL commands.\n- Use parentheses to group clauses and improve readability.\n- Use aliases to simplify complex queries.\n- Use indexes to speed up query performance.\n- Practice writing SQL queries to improve your skills and speed.\n- Review the syntax for each SQL command to avoid errors.\n- Use online resources to practice and test your SQL skills."
+      }
+    }
+  }
+}

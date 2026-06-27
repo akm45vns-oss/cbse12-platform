@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Introduction to Databases",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:26:22.562Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The XYZ Bank is planning to introduce a new customer relationship management system to manage its large customer base. The system will store customer information, account details, and transaction history. The bank wants to ensure that the system can handle a large volume of transactions and provide fast query responses. The system architect is considering using a relational database management system (RDBMS) with a normalized database design to achieve this goal. However, the bank's customer data is expected to grow exponentially, and the architect is concerned about the scalability of the RDBMS. What is the primary advantage of using a relational database management system (RDBMS) in this scenario?",
+        "questions": [
+          {
+            "q": "What is the primary advantage of using a relational database management system (RDBMS) in this scenario?",
+            "opts": [
+              "(A) Improved scalability",
+              "(B) Enhanced data security",
+              "(C) Faster query responses",
+              "(D) Simplified data modeling"
+            ],
+            "ans": "C",
+            "explanation": "Relational databases are optimized for fast query responses, making them suitable for applications with high query volumes."
+          },
+          {
+            "q": "Why is the bank's customer data expected to grow exponentially?",
+            "opts": [
+              "(A) The bank is expanding its customer base through targeted marketing campaigns",
+              "(B) The bank is introducing new products and services that appeal to existing customers",
+              "(C) The bank is improving its customer service, leading to increased customer retention",
+              "(D) None of the above"
+            ],
+            "ans": "A",
+            "explanation": "Exponential growth is often associated with rapid expansion or adoption, which can be driven by targeted marketing campaigns."
+          },
+          {
+            "q": "What is the primary concern of the system architect regarding the bank's customer data?",
+            "opts": [
+              "(A) Data security",
+              "(B) Data consistency",
+              "(C) Data scalability",
+              "(D) Data integrity"
+            ],
+            "ans": "C",
+            "explanation": "The architect is concerned about the scalability of the RDBMS, indicating that the primary concern is the ability of the system to handle growing data volumes."
+          },
+          {
+            "q": "What type of database design is recommended for the bank's customer data?",
+            "opts": [
+              "(A) Denormalized database design",
+              "(B) Normalized database design",
+              "(C) Distributed database design",
+              "(D) Hierarchical database design"
+            ],
+            "ans": "B",
+            "explanation": "A normalized database design is recommended to ensure data consistency and minimize data redundancy."
+          },
+          {
+            "q": "What is the primary goal of the bank's customer relationship management system?",
+            "opts": [
+              "(A) To improve customer service",
+              "(B) To increase sales and revenue",
+              "(C) To enhance data security",
+              "(D) To ensure fast query responses"
+            ],
+            "ans": "B",
+            "explanation": "The primary goal is to increase sales and revenue by effectively managing customer relationships."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "The City Health Department is planning to develop a disease surveillance system to monitor and track infectious disease outbreaks. The system will collect data from various sources, including laboratory reports, hospital admissions, and outbreak reports. The data will be used to identify trends, patterns, and clusters of disease outbreaks. The system architect is considering using a NoSQL database to store the large volume of unstructured and semi-structured data. What is the primary advantage of using a NoSQL database in this scenario?",
+        "questions": [
+          {
+            "q": "What type of data is expected to be stored in the disease surveillance system?",
+            "opts": [
+              "(A) Structured data only",
+              "(B) Unstructured and semi-structured data",
+              "(C) Raw and processed data",
+              "(D) Historical and real-time data"
+            ],
+            "ans": "B",
+            "explanation": "The system will store unstructured and semi-structured data from various sources, including laboratory reports and outbreak reports."
+          },
+          {
+            "q": "What is the primary goal of the disease surveillance system?",
+            "opts": [
+              "(A) To track patient outcomes",
+              "(B) To monitor disease trends and patterns",
+              "(C) To provide real-time alerts",
+              "(D) To store medical records"
+            ],
+            "ans": "B",
+            "explanation": "The primary goal is to identify trends, patterns, and clusters of disease outbreaks to inform public health decision-making."
+          },
+          {
+            "q": "Why is the system architect considering using a NoSQL database?",
+            "opts": [
+              "(A) To improve data security",
+              "(B) To enhance data consistency",
+              "(C) To handle large volumes of unstructured data",
+              "(D) To simplify data modeling"
+            ],
+            "ans": "C",
+            "explanation": "The system will handle large volumes of unstructured and semi-structured data, making a NoSQL database a suitable choice."
+          },
+          {
+            "q": "What is the primary advantage of using a NoSQL database in this scenario?",
+            "opts": [
+              "(A) Improved data integrity",
+              "(B) Enhanced data security",
+              "(C) Faster data processing",
+              "(D) Simplified data modeling"
+            ],
+            "ans": "D",
+            "explanation": "NoSQL databases are designed for simplified data modeling and flexible schema, making them suitable for handling large volumes of unstructured and semi-structured data."
+          },
+          {
+            "q": "What type of data will be used to identify trends, patterns, and clusters of disease outbreaks?",
+            "opts": [
+              "(A) Historical data only",
+              "(B) Real-time data only",
+              "(C) Both historical and real-time data",
+              "(D) Laboratory reports only"
+            ],
+            "ans": "C",
+            "explanation": "The system will use both historical and real-time data to identify trends, patterns, and clusters of disease outbreaks."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1170 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Presentation of Data",
+  "exported_at": "2026-06-27T05:54:41.445Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:33:59.172+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 9,
+        "questions": [
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Mean is sensitive to extreme values, which can distort the average in skewed distributions.",
+            "assertion": "Assertion (A): Median is better than mean for skewed distribution.",
+            "explanation": "In skewed distributions, extreme values can greatly affect the mean, making median a better measure of central tendency."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Mean is sensitive to extreme values.",
+            "assertion": "Assertion (A): Mean is the best measure of central tendency.",
+            "explanation": "Mean is not the best measure of central tendency because it is sensitive to extreme values, which can distort the average."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Mode is the value that appears most frequently in a data set.",
+            "assertion": "Assertion (A): Mode is the best measure of central tendency.",
+            "explanation": "Mode is indeed the best measure of central tendency when the data is discrete and there are multiple peaks, but it's not always the case."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Range is the difference between the highest and lowest values in a data set.",
+            "assertion": "Assertion (A): Range is a measure of dispersion.",
+            "explanation": "Range indeed measures the spread of the data and is the difference between the highest and lowest values."
+          },
+          {
+            "ans": "C",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Range measures the difference between the highest and lowest values, while variance measures the average of the squared differences from the mean.",
+            "assertion": "Assertion (A): Variance is always greater than or equal to the range.",
+            "explanation": "Variance is not always greater than or equal to the range; in fact, variance can be much smaller than the range."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Standard deviation is the square root of the variance.",
+            "assertion": "Assertion (A): Standard deviation measures the spread of the data.",
+            "explanation": "Standard deviation indeed measures the spread of the data and is the square root of the variance."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Coefficient of variation is the ratio of the standard deviation to the mean.",
+            "assertion": "Assertion (A): Coefficient of variation is a measure of relative dispersion.",
+            "explanation": "Coefficient of variation indeed measures relative dispersion and is the ratio of the standard deviation to the mean."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Quartiles divide the data into four equal parts.",
+            "assertion": "Assertion (A): Quartiles are measures of central tendency.",
+            "explanation": "Quartiles are actually measures of dispersion, not central tendency, as they divide the data into four equal parts."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Deciles divide the data into ten equal parts.",
+            "assertion": "Assertion (A): Deciles are measures of central tendency.",
+            "explanation": "Deciles are actually measures of dispersion, not central tendency, as they divide the data into ten equal parts."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:22:05.893+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "The Indian government has been conducting a nationwide survey to assess the impact of the COVID-19 pandemic on the country's workforce. According to the survey, the average age of the workforce in the urban areas is 35.6 years, with a standard deviation of 8.2 years. In the rural areas, the average age is 32.9 years, with a standard deviation of 6.5 years. Compare the age distribution of the workforce in urban and rural areas.",
+            "questions": [
+              {
+                "q": "What is the average age of the workforce in the urban areas?",
+                "ans": "B",
+                "opts": [
+                  "(A) 35.5 years",
+                  "(B) 35.6 years",
+                  "(C) 35.7 years",
+                  "(D) 35.8 years"
+                ],
+                "explanation": "The passage states that the average age of the workforce in urban areas is 35.6 years."
+              },
+              {
+                "q": "What is the standard deviation of the workforce age in rural areas?",
+                "ans": "B",
+                "opts": [
+                  "(A) 6.3 years",
+                  "(B) 6.5 years",
+                  "(C) 6.7 years",
+                  "(D) 6.9 years"
+                ],
+                "explanation": "The passage states that the standard deviation of the workforce age in rural areas is 6.5 years."
+              },
+              {
+                "q": "What can be inferred from the comparison of the average age of the workforce in urban and rural areas?",
+                "ans": "A",
+                "opts": [
+                  "(A) The workforce in urban areas is older than in rural areas",
+                  "(B) The workforce in rural areas is older than in urban areas",
+                  "(C) The workforce in urban and rural areas has the same age distribution",
+                  "(D) No inference can be made"
+                ],
+                "explanation": "The passage states that the average age of the workforce in urban areas (35.6 years) is higher than in rural areas (32.9 years)."
+              },
+              {
+                "q": "What type of data is presented in the passage?",
+                "ans": "C",
+                "opts": [
+                  "(A) Nominal data",
+                  "(B) Ordinal data",
+                  "(C) Interval data",
+                  "(D) Ratio data"
+                ],
+                "explanation": "The passage presents data on the average age of the workforce, which is an interval data as it has a meaningful zero point."
+              },
+              {
+                "q": "What is the purpose of the nationwide survey mentioned in the passage?",
+                "ans": "B",
+                "opts": [
+                  "(A) To assess the impact of the COVID-19 pandemic on the economy",
+                  "(B) To compare the age distribution of the workforce in urban and rural areas",
+                  "(C) To determine the average age of the workforce in the country",
+                  "(D) To identify the standard deviation of the workforce age in urban areas"
+                ],
+                "explanation": "The passage states that the survey is to assess the impact of the COVID-19 pandemic on the country's workforce, but the specific purpose of comparing the age distribution of the workforce in urban and rural areas can be inferred."
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "The Central Bureau of Statistics has released a report on the average monthly expenditure of households in India. According to the report, the average monthly expenditure of a two-person household is ₹ 18,500, with a standard deviation of ₹ 2,500. The average monthly expenditure of a three-person household is ₹ 22,500, with a standard deviation of ₹ 3,000. Compare the average monthly expenditure of two-person and three-person households.",
+            "questions": [
+              {
+                "q": "What is the average monthly expenditure of a two-person household?",
+                "ans": "B",
+                "opts": [
+                  "(A) ₹ 18,000",
+                  "(B) ₹ 18,500",
+                  "(C) ₹ 19,000",
+                  "(D) ₹ 19,500"
+                ],
+                "explanation": "The passage states that the average monthly expenditure of a two-person household is ₹ 18,500."
+              },
+              {
+                "q": "What is the standard deviation of the average monthly expenditure of a three-person household?",
+                "ans": "C",
+                "opts": [
+                  "(A) ₹ 2,500",
+                  "(B) ₹ 2,800",
+                  "(C) ₹ 3,000",
+                  "(D) ₹ 3,200"
+                ],
+                "explanation": "The passage states that the standard deviation of the average monthly expenditure of a three-person household is ₹ 3,000."
+              },
+              {
+                "q": "What can be inferred from the comparison of the average monthly expenditure of two-person and three-person households?",
+                "ans": "A",
+                "opts": [
+                  "(A) The monthly expenditure of three-person households is higher than that of two-person households",
+                  "(B) The monthly expenditure of two-person households is higher than that of three-person households",
+                  "(C) The monthly expenditure of two-person and three-person households is the same",
+                  "(D) No inference can be made"
+                ],
+                "explanation": "The passage states that the average monthly expenditure of a three-person household (₹ 22,500) is higher than that of a two-person household (₹ 18,500)."
+              },
+              {
+                "q": "What type of data is presented in the passage?",
+                "ans": "C",
+                "opts": [
+                  "(A) Nominal data",
+                  "(B) Ordinal data",
+                  "(C) Interval data",
+                  "(D) Ratio data"
+                ],
+                "explanation": "The passage presents data on the average monthly expenditure of households, which is an interval data as it has a meaningful zero point."
+              },
+              {
+                "q": "What is the purpose of the report released by the Central Bureau of Statistics?",
+                "ans": "B",
+                "opts": [
+                  "(A) To compare the average monthly expenditure of two-person and three-person households",
+                  "(B) To determine the average monthly expenditure of households in India",
+                  "(C) To identify the standard deviation of the average monthly expenditure of households",
+                  "(D) To assess the impact of inflation on household expenditure"
+                ],
+                "explanation": "The passage states that the report is on the average monthly expenditure of households in India, but the specific purpose of comparing the average monthly expenditure of two-person and three-person households can be inferred."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:55:47.915+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Presentation of Data\n## 📌 Chapter Overview\nThe presentation of data is a crucial aspect of economics that deals with the collection, organization, and representation of data in a meaningful and understandable manner. This chapter focuses on the methods and techniques used to present data in a way that facilitates analysis, interpretation, and decision-making. The presentation of data is essential in economics as it helps to identify patterns, trends, and relationships between variables, which can inform policy decisions and business strategies.\n\nEffective presentation of data requires careful consideration of the type of data, the level of detail, and the audience for whom the data is intended. The chapter will cover various methods of data presentation, including charts, graphs, tables, and indexes. By the end of this chapter, students will be able to understand the importance of data presentation, identify the strengths and limitations of different methods, and apply these techniques to real-world scenarios.\n\n## 🎯 Learning Objectives\n- Understand the importance of data presentation in economics\n- Identify the strengths and limitations of different methods of data presentation\n- Apply charts, graphs, tables, and indexes to present data effectively\n- Analyze and interpret data presented in various formats\n- Recognize the importance of data accuracy and precision in presentation\n- Use technology to create and present data\n\n## 🔑 Key Concepts & Definitions\n- **Data**: A collection of facts and figures used to describe a particular situation or phenomenon.\n- **Data presentation**: The process of organizing and representing data in a way that facilitates analysis and interpretation.\n- **Charts**: Graphic representations of data that use lines, bars, or other visual elements to show trends and patterns.\n- **Graphs**: Charts that use lines, curves, or other visual elements to show relationships between variables.\n- **Tables**: Organized collections of data that use rows and columns to display information.\n- **Indexes**: Numbers or percentages that represent changes in a particular variable over time or across different groups.\n- **Frequency distribution**: A table or graph that shows the number of times each value or category occurs in a dataset.\n- **Histogram**: A graph that shows the frequency distribution of a continuous variable.\n\n## 📐 Core Theory & Principles\nThe presentation of data is based on several fundamental principles, including:\n\n- **Accuracy**: Data must be accurate and precise to ensure that it is reliable and trustworthy.\n- **Completeness**: Data must be complete to provide a comprehensive picture of the situation or phenomenon being studied.\n- **Timeliness**: Data must be up-to-date to reflect current trends and patterns.\n- **Relevance**: Data must be relevant to the research question or problem being addressed.\n\n## 🧮 Important Formulas & Laws\n- **Index formula**: I = (Vt / V0) x 100, where I is the index, Vt is the current value, and V0 is the base value.\n- **Percentage change formula**: % change = ((Vt - V0) / V0) x 100, where Vt is the current value and V0 is the previous value.\n\n## 🔬 Detailed Explanations\n### Charts\nCharts are graphic representations of data that use lines, bars, or other visual elements to show trends and patterns. There are several types of charts, including:\n\n- **Bar charts**: Show the frequency or value of each category in a dataset.\n- **Line charts**: Show the trend or pattern of a single variable over time.\n- **Pie charts**: Show the proportion of each category in a dataset.\n\n### Graphs\nGraphs are charts that use lines, curves, or other visual elements to show relationships between variables. There are several types of graphs, including:\n\n- **Scatter plots**: Show the relationship between two variables.\n- **Line graphs**: Show the trend or pattern of a single variable over time.\n- **Histograms**: Show the frequency distribution of a continuous variable.\n\n### Tables\nTables are organized collections of data that use rows and columns to display information. There are several types of tables, including:\n\n- **Frequency tables**: Show the number of times each value or category occurs in a dataset.\n- **Cross-tabulation tables**: Show the relationship between two variables.\n\n### Indexes\nIndexes are numbers or percentages that represent changes in a particular variable over time or across different groups. There are several types of indexes, including:\n\n- **Consumer price index (CPI)**: Measures the change in the price of a basket of goods and services over time.\n- **Gross domestic product (GDP)**: Measures the total value of all goods and services produced within a country.\n\n## 🖼️ Diagrams & Visual Concepts\nDiagrams are visual representations of data that use lines, shapes, or other elements to show relationships and patterns. Important visual concepts include:\n\n- **Bar charts**: Show the frequency or value of each category in a dataset.\n- **Pie charts**: Show the proportion of each category in a dataset.\n- **Scatter plots**: Show the relationship between two variables.\n\n## ⭐ Most Important Points (Exam Focus)\n- The importance of data accuracy and precision in presentation\n- The strengths and limitations of different methods of data presentation\n- The use of charts, graphs, tables, and indexes to present data effectively\n- The importance of data timeliness and relevance\n- The use of technology to create and present data\n- The concept of frequency distribution and histogram\n- The use of index formulas and percentage change formulas\n- The importance of cross-tabulation tables in showing relationships between variables\n- The concept of scatter plots and their use in showing relationships between variables\n\n## ❌ Common Mistakes to Avoid\n- Failing to check data accuracy and precision before presentation\n- Using outdated or irrelevant data\n- Misusing or misinterpreting data presentation techniques\n- Failing to consider the audience and purpose of the data presentation\n- Using technology to create and present data without understanding the underlying concepts\n\n## 💡 Real-World Applications\n- **Business**: Data presentation is essential in business for making informed decisions and strategic planning.\n- **Government**: Data presentation is crucial in government for policy-making and decision-making.\n- **Research**: Data presentation is vital in research for analyzing and interpreting data.\n\n## 🔁 Quick Revision Summary\n- Data presentation is the process of organizing and representing data in a way that facilitates analysis and interpretation.\n- Charts, graphs, tables, and indexes are used to present data effectively.\n- Accuracy, completeness, timeliness, and relevance are essential principles in data presentation.\n- Frequency distribution and histogram are important concepts in data presentation.\n- Index formulas and percentage change formulas are used to calculate changes in variables.\n- Scatter plots and cross-tabulation tables are used to show relationships between variables.\n- Technology is used to create and present data.\n- Data accuracy and precision are essential in presentation.\n- Data timeliness and relevance are crucial in presentation.\n- The audience and purpose of the data presentation must be considered.\n- Data presentation techniques must be used correctly and effectively."
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:18:05.016+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [],
+        "exam_frequency": "medium",
+        "difficulty_score": 5,
+        "overall_difficulty": "medium"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:56:43.198+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Study tip 1",
+          "Study tip 2"
+        ],
+        "total_minutes": 120,
+        "revision_minutes": 20,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 30,
+        "sessions_recommended": 3,
+        "first_reading_minutes": 45,
+        "practice_questions_minutes": 25
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:18:16.815+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Content",
+            "notes": "",
+            "units": "",
+            "formula": "Here's a comprehensive formula sheet for CBSE Class 11 Economics - Presentation of Data in JSON format:\n\n```json\n[\n  {\n    \"name\": \"Arithmetic Mean (AM)\",\n    \"formula\": \"\\\\bar{x} = \\\\frac{\\\\sum x_i}{n}\",\n    \"variables\": \"x_i = individual data points, n = number of observations\",\n    \"units\": \"Depends on the data\",\n    \"notes\": \"Used to calculate the average value of a dataset\"\n  },\n  {\n    \"name\": \"Geometric Mean (GM)\",\n    \"formula\": \"\\\\bar{x} = \\\\sqrt[n]{\\\\prod x_i}\",\n    \"variables\": \"x_i = individual data points, n = number of observations\",\n    \"units\": \"Depends on the data\",\n    \"notes\": \"Used to calculate the average value of a dataset when data is in the form of growth rates or percentages\"\n  },\n  {\n    \"name\": \"Harmonic Mean (HM)\",\n    \"formula\": \"HM = \\\\frac{n}{\\\\sum \\\\frac{1}{x_i}}\",\n    \"variables\": \"x_i = individual data points, n = number of observations\",\n    \"units\": \"Depends on the data\",\n    \"notes\": \"Used to calculate the average value of a dataset when data represents rates or ratios\"\n  },\n  {\n    \"name\": \"Coefficient of Range (CR)\",\n    \"formula\": \"CR = \\\\frac{R}{x_{max} - x_{min}}\",\n    \"variables\": \"R = range, x_{max} = maximum value, x_{min} = minimum value\",\n    \"units\": \"Depends on the data\",\n    \"notes\": \"Used to measure the dispersion of a dataset\"\n  },\n  {\n    \"name\": \"Coefficient of Quartile Deviation (CQD)\",\n    \"formula\": \"CQD = \\\\frac{Q_3 - Q_1}{2}\",\n    \"variables\": \"Q_3 = third quartile, Q_1 = first quartile\",\n    \"units\": \"Depends on the data\",\n    \"notes\": \"Used to measure the dispersion of a dataset\"\n  },\n  {\n    \"name\": \"Coefficient of Variation (CV)\",\n    \"formula\": \"CV = \\\\left(\\\\frac{\\\\sigma}{\\\\bar{x}}\\\\right) \\\\times 100\",\n    \"variables\": \"\\\\sigma = standard deviation, \\\\bar{x} = mean\",\n    \"units\": \"Percentage\",\n    \"notes\": \"Used to measure the relative dispersion of a dataset\"\n  },\n  {\n    \"name\": \"Standard Deviation (σ)\",\n    \"formula\": \"\\\\sigma = \\\\sqrt{\\\\frac{\\\\sum (x_i - \\\\bar{x})^2}{n}}\",\n    \"variables\": \"x_i = individual data points, \\\\bar{x} = mean, n = number of observations\",\n    \"units\": \"Depends on the data\",\n    \"notes\": \"Used to measure the dispersion of a dataset\"\n  },\n  {\n    \"name\": \"Variance (σ²)\",\n    \"formula\": \"\\\\sigma^2 = \\\\frac{\\\\sum (x_i - \\\\bar{x})^2}{n}\",\n    \"variables\": \"x_i = individual data points, \\\\bar{x} = mean, n = number of observations\",\n    \"units\": \"Depends on the data\",\n    \"notes\": \"Used to measure the dispersion of a dataset\"\n  },\n  {\n    \"name\": \"Range Rule of Thumb\",\n    \"formula\": \"The range should be between 1/3 and 2/3 of the mean\",\n    \"variables\": \"Range, mean\",\n    \"units\": \"Depends on the data\",\n    \"notes\": \"Used to check for outliers in a dataset\"\n  },\n  {\n    \"name\": \"Empirical Relationship between Mean Deviation and Standard Deviation\",\n    \"formula\": \"\\\\bar{d} = k\\\\sigma\",\n    \"variables\": \"\\\\bar{d} = mean deviation, k = constant, \\\\sigma = standard deviation\",\n    \"units\": \"Depends on the data\",\n    \"notes\": \"Used to find the mean deviation from the mean\"\n  },\n  {\n    \"name\": \"Chebyshev's Theorem\",\n    \"formula\": \"P(|x - \\\\mu| \\\\geq k\\\\sigma) \\\\leq \\\\frac{1}{k^2}\",\n    \"variables\": \"P = probability, \\\\mu = mean, \\\\sigma = standard deviation, k = constant\",\n    \"units\": \"Depends on the data\",\n    \"notes\": \"Used to estimate the probability of an event occurring\"\n  },\n  {\n    \"name\": \"Empirical Relationship between Range and Standard Deviation\",\n    \"formula\": \"R = k\\\\sigma\",\n    \"variables\": \"R = range, k = constant, \\\\sigma = standard deviation\",\n    \"units\": \"Depends on the data\",\n    \"notes\": \"Used to find the range of a dataset\"\n  },\n  {\n    \"name\": \"Five-Number Summary\",\n    \"formula\": \"[\\\\min, Q_1, \\\\bar{x}, Q_3, \\\\max]\",\n    \"variables\": \"\\\\min = minimum value, Q_1 = first quartile, \\\\bar{x} = mean, Q_3 = third quartile, \\\\max = maximum value\",\n    \"units\": \"Depends on the data\",\n    \"notes\": \"Used to summarize a dataset in a concise manner\"\n  }\n]\n```\n\nNote: This list is not exhaustive but covers most of the important formulas and laws related to the presentation of data in CBSE Class 11 Economics.",
+            "variables": ""
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T14:14:10.568+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "Mean",
+            "importance": "Calculating mean is crucial for understanding data distribution and making informed decisions.",
+            "explanation": "The mean is the average value of a data set, calculated by summing all values and dividing by the number of values. It is a measure of central tendency.",
+            "related_topics": [
+              "Measure of Central Tendency",
+              "Data Analysis"
+            ]
+          },
+          {
+            "concept": "Median",
+            "importance": "Median is essential for understanding data distribution, especially when data is skewed or contains outliers.",
+            "explanation": "The median is the middle value of a data set when it is arranged in ascending or descending order. It is another measure of central tendency.",
+            "related_topics": [
+              "Measure of Central Tendency",
+              "Data Analysis"
+            ]
+          },
+          {
+            "concept": "Mode",
+            "importance": "Mode is important for understanding data distribution and identifying patterns.",
+            "explanation": "The mode is the value that appears most frequently in a data set. It is also a measure of central tendency.",
+            "related_topics": [
+              "Measure of Central Tendency",
+              "Data Analysis"
+            ]
+          },
+          {
+            "concept": "Range",
+            "importance": "Range is essential for understanding data variation and making informed decisions.",
+            "explanation": "The range is the difference between the highest and lowest values in a data set. It is a measure of dispersion.",
+            "related_topics": [
+              "Measure of Dispersion",
+              "Data Analysis"
+            ]
+          },
+          {
+            "concept": "Variance",
+            "importance": "Variance is crucial for understanding data variation and making informed decisions.",
+            "explanation": "The variance is a measure of dispersion that calculates the average of the squared differences from the mean. It is an important concept in statistical analysis.",
+            "related_topics": [
+              "Measure of Dispersion",
+              "Statistical Analysis"
+            ]
+          },
+          {
+            "concept": "Standard Deviation",
+            "importance": "Standard deviation is essential for understanding data variation and making informed decisions.",
+            "explanation": "The standard deviation is the square root of the variance. It is another measure of dispersion that calculates the average distance from the mean.",
+            "related_topics": [
+              "Measure of Dispersion",
+              "Statistical Analysis"
+            ]
+          },
+          {
+            "concept": "Frequency Distribution",
+            "importance": "Frequency distribution is important for understanding data patterns and making informed decisions.",
+            "explanation": "A frequency distribution is a table that displays the frequency of each value in a data set. It is a way to summarize and visualize data.",
+            "related_topics": [
+              "Data Analysis",
+              "Data Visualization"
+            ]
+          },
+          {
+            "concept": "Histogram",
+            "importance": "Histograms are essential for understanding data patterns and making informed decisions.",
+            "explanation": "A histogram is a graphical representation of a frequency distribution. It is a way to visualize and understand data patterns.",
+            "related_topics": [
+              "Data Visualization",
+              "Data Analysis"
+            ]
+          },
+          {
+            "concept": "Bar Chart",
+            "importance": "Bar charts are important for comparing and visualizing data, and making informed decisions.",
+            "explanation": "A bar chart is a graphical representation of categorical data. It is a way to compare and visualize data.",
+            "related_topics": [
+              "Data Visualization",
+              "Data Analysis"
+            ]
+          },
+          {
+            "concept": "Pie Chart",
+            "importance": "Pie charts are essential for comparing and visualizing data, and making informed decisions.",
+            "explanation": "A pie chart is a graphical representation of categorical data. It is a way to compare and visualize data.",
+            "related_topics": [
+              "Data Visualization",
+              "Data Analysis"
+            ]
+          },
+          {
+            "concept": "Scatter Plot",
+            "importance": "Scatter plots are important for understanding the relationship between variables, and making informed decisions.",
+            "explanation": "A scatter plot is a graphical representation of the relationship between two variables. It is a way to visualize and understand the relationship between variables.",
+            "related_topics": [
+              "Data Visualization",
+              "Correlation Analysis"
+            ]
+          },
+          {
+            "concept": "Correlation Coefficient",
+            "importance": "Correlation coefficient is essential for understanding the relationship between variables, and making informed decisions.",
+            "explanation": "The correlation coefficient measures the strength and direction of the relationship between two variables. It is a numerical value between -1 and 1.",
+            "related_topics": [
+              "Correlation Analysis",
+              "Data Analysis"
+            ]
+          },
+          {
+            "concept": "Regression Analysis",
+            "importance": "Regression analysis is important for understanding the relationship between variables, and making predictions.",
+            "explanation": "Regression analysis is a statistical method that models the relationship between a dependent variable and one or more independent variables.",
+            "related_topics": [
+              "Regression Analysis",
+              "Data Analysis"
+            ]
+          },
+          {
+            "concept": "Index Numbers",
+            "importance": "Index numbers are essential for understanding changes in variables, and making informed decisions.",
+            "explanation": "Index numbers are statistical measures that represent the relative changes in a particular variable over time or across different groups.",
+            "related_topics": [
+              "Index Numbers",
+              "Quantitative Analysis"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:18:04.055+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "Primary Data",
+            "example": "",
+            "definition": "Raw data collected by the investigator himself through a survey or experiment. It is a first-hand information. It is original and primary, collected from primary sources or original sources."
+          },
+          {
+            "term": "Secondary Data",
+            "example": "",
+            "definition": "Data collected by someone else rather than the investigator. It is a second-hand information. It is already collected, compiled and analyzed by someone else."
+          },
+          {
+            "term": "Statistics",
+            "example": "",
+            "definition": "A collection of numerical facts, figures and dates that are related to the study of economics."
+          },
+          {
+            "term": "Tabulation",
+            "example": "",
+            "definition": "The process of presenting data in the form of a table."
+          },
+          {
+            "term": "Class Interval",
+            "example": "",
+            "definition": "A range of values between two numbers, used to group data into categories."
+          },
+          {
+            "term": "Class Limit",
+            "example": "",
+            "definition": "The lower and upper values of a class interval."
+          },
+          {
+            "term": "Class Mark",
+            "example": "",
+            "definition": "The value in the middle of a class interval."
+          },
+          {
+            "term": "Frequency",
+            "example": "",
+            "definition": "The number of times a particular value occurs in a dataset."
+          },
+          {
+            "term": "Frequency Distribution",
+            "example": "",
+            "definition": "A table that shows the number of times each value occurs in a dataset."
+          },
+          {
+            "term": "Histogram",
+            "example": "",
+            "definition": "A graphical representation of a frequency distribution, showing the number of times each value occurs."
+          },
+          {
+            "term": "Bar Diagram",
+            "example": "",
+            "definition": "A graphical representation of data using bars, showing the relationship between different categories."
+          },
+          {
+            "term": "Pie Chart",
+            "example": "",
+            "definition": "A circular chart that shows how different categories contribute to a whole."
+          },
+          {
+            "term": "Line Graph",
+            "example": "",
+            "definition": "A graphical representation of data using a line, showing the relationship between different categories over time."
+          },
+          {
+            "term": "Scatter Diagram",
+            "example": "",
+            "definition": "A graphical representation of data showing the relationship between two variables."
+          },
+          {
+            "term": "Mean",
+            "example": "",
+            "definition": "The average value of a dataset, calculated by adding up all the values and dividing by the number of values."
+          },
+          {
+            "term": "Median",
+            "example": "",
+            "definition": "The middle value of a dataset, used to represent the average value."
+          },
+          {
+            "term": "Mode",
+            "example": "",
+            "definition": "The most frequently occurring value in a dataset."
+          },
+          {
+            "term": "Range",
+            "example": "",
+            "definition": "The difference between the highest and lowest values in a dataset."
+          },
+          {
+            "term": "Quantitative Data",
+            "example": "",
+            "definition": "Data that can be measured or counted, such as numbers or amounts."
+          },
+          {
+            "term": "Qualitative Data",
+            "example": "",
+            "definition": "Data that cannot be measured or counted, such as opinions or descriptions."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:23:34.877+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Create and interpret different types of charts and graphs (bar charts, pie charts, line charts, histograms) to present data effectively.",
+            "Analyze and interpret data presented in different forms (tables, charts, graphs) to draw inferences and make conclusions.",
+            "Use statistical tools and techniques to identify trends and patterns in data."
+          ],
+          "analyze": [
+            "Analyze the strengths and limitations of different data presentation methods and choose the most appropriate method for a given situation.",
+            "Evaluate the effectiveness of different data visualization techniques in conveying complex information.",
+            "Identify and analyze biases and errors in data presentation and interpretation."
+          ],
+          "remember": [
+            "Identify and explain different types of data (primary, secondary, qualitative, and quantitative) and their sources.",
+            "List and describe various methods of data collection (surveys, questionnaires, observations, experiments) and their advantages/disadvantages.",
+            "Explain the concept of statistics and its importance in decision-making."
+          ],
+          "understand": [
+            "Describe the process of data presentation, including data collection, compilation, and analysis.",
+            "Explain the concept of data visualization and its importance in understanding complex data.",
+            "Identify and describe different types of charts and graphs (bar charts, pie charts, line charts, histograms) and their uses."
+          ]
+        },
+        "ncert_objectives": [
+          "To understand the different types of data and their sources.",
+          "To learn about the methods of data collection and their advantages/disadvantages.",
+          "To understand the concept of statistics and its importance in decision-making."
+        ],
+        "board_exam_objectives": [
+          "To identify and describe different types of data and their sources.",
+          "To create and interpret different types of charts and graphs.",
+          "To analyze and interpret data presented in different forms and draw inferences."
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:14:05.711+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "A consumer survey was conducted to study the preference of people for different brands of soap. The results are given in the table below. Analyze the data and compare the preference of people for different brands of soap. <br><br> | Brand | Number of Consumers | Percentage | <br> | --- | --- | --- | <br> | A | 120 | 40% | <br> | B | 80 | 26.67% | <br> | C | 60 | 20% | <br> | D | 40 | 13.33% | <br>",
+            "marks": 5,
+            "topic": "Presentation of Data using Tables",
+            "answer": "The given table shows the preference of people for different brands of soap. The data is presented in both absolute and relative (percentage) terms. The highest number of consumers prefer brand A with 120 consumers, followed by brand B with 80 consumers, brand C with 60 consumers, and brand D with the lowest number of consumers at 40. In terms of percentage, 40% of the consumers prefer brand A, 26.67% prefer brand B, 20% prefer brand C, and 13.33% prefer brand D. The bar chart or the pie chart can be used to represent this data visually.",
+            "marking_scheme": [
+              "Explain the data presented in the table (1 mark)",
+              "Compare the preference of people for different brands of soap (2 marks)",
+              "Suggest a suitable method to represent this data visually (2 marks)"
+            ]
+          },
+          {
+            "q": "A survey was conducted among 50 students to find out their favorite subjects in school. The results are as follows: <br> | Subject | Number of Students | Percentage | <br> | --- | --- | --- | <br> | Mathematics | 20 | 40% | <br> | Science | 15 | 30% | <br> | English | 10 | 20% | <br> | Others | 5 | 10% | <br>",
+            "marks": 5,
+            "topic": "Presentation of Data using Tables",
+            "answer": "The given table shows the preference of students for different subjects in school. The data is presented in both absolute and relative (percentage) terms. The highest number of students prefer Mathematics with 20 students, followed by Science with 15 students, English with 10 students, and Others with the lowest number of students at 5. In terms of percentage, 40% of the students prefer Mathematics, 30% prefer Science, 20% prefer English, and 10% prefer Others. The bar chart or the pie chart can be used to represent this data visually. It can be observed that the majority of students prefer Mathematics and Science, while a smaller number of students prefer English and Others.",
+            "marking_scheme": [
+              "Explain the data presented in the table (1 mark)",
+              "Compare the preference of students for different subjects (2 marks)",
+              "Suggest a suitable method to represent this data visually (2 marks)"
+            ]
+          },
+          {
+            "q": "The following table shows the marks obtained by 10 students in a class test: <br> | Student | Marks | <br> | --- | --- | <br> | A | 80 | <br> | B | 90 | <br> | C | 70 | <br> | D | 85 | <br> | E | 65 | <br> | F | 75 | <br> | G | 95 | <br> | H | 60 | <br> | I | 70 | <br> | J | 90 | <br> | K | 55 | <br>",
+            "marks": 5,
+            "topic": "Presentation of Data using Graphs and Charts",
+            "answer": "The given table shows the marks obtained by 10 students in a class test. To analyze the data, we need to calculate the mean, median, and mode of the marks. The mean can be calculated by adding all the marks and dividing by the total number of students. The median can be found by arranging the marks in ascending order and selecting the middle value. The mode is the mark that appears most frequently. The range of the marks can be calculated by subtracting the lowest mark from the highest mark. The data can be represented visually using a histogram or a box plot.",
+            "marking_scheme": [
+              "Calculate the mean of the marks (1 mark)",
+              "Find the median of the marks (1 mark)",
+              "Determine the mode of the marks (1 mark)",
+              "Calculate the range of the marks (1 mark)",
+              "Suggest a suitable method to represent this data visually (1 mark)"
+            ]
+          },
+          {
+            "q": "The following table shows the number of students who passed in different subjects in a school: <br> | Subject | Number of Students Passed | Percentage | <br> | --- | --- | --- | <br> | Mathematics | 30 | 60% | <br> | Science | 25 | 50% | <br> | English | 15 | 30% | <br> | Others | 10 | 20% | <br>",
+            "marks": 5,
+            "topic": "Presentation of Data using Tables",
+            "answer": "The given table shows the number of students who passed in different subjects in a school. The data is presented in both absolute and relative (percentage) terms. The highest number of students passed in Mathematics with 30 students, followed by Science with 25 students, English with 15 students, and Others with the lowest number of students at 10. In terms of percentage, 60% of the students passed in Mathematics, 50% in Science, 30% in English, and 20% in Others. The bar chart or the pie chart can be used to represent this data visually.",
+            "marking_scheme": [
+              "Explain the data presented in the table (1 mark)",
+              "Compare the number of students who passed in different subjects (2 marks)",
+              "Suggest a suitable method to represent this data visually (2 marks)"
+            ]
+          },
+          {
+            "q": "A survey was conducted among 20 students to find out their favorite mode of transportation: <br> | Mode of Transportation | Number of Students | Percentage | <br> | --- | --- | --- | <br> | Bus | 8 | 40% | <br> | Train | 6 | 30% | <br> | Car | 4 | 20% | <br> | Others | 2 | 10% | <br>",
+            "marks": 5,
+            "topic": "Presentation of Data using Tables",
+            "answer": "The given table shows the preference of students for different modes of transportation. The data is presented in both absolute and relative (percentage) terms. The highest number of students prefer Bus with 8 students, followed by Train with 6 students, Car with 4 students, and Others with the lowest number of students at 2. In terms of percentage, 40% of the students prefer Bus, 30% prefer Train, 20% prefer Car, and 10% prefer Others. The bar chart or the pie chart can be used to represent this data visually.",
+            "marking_scheme": [
+              "Explain the data presented in the table (1 mark)",
+              "Compare the preference of students for different modes of transportation (2 marks)",
+              "Suggest a suitable method to represent this data visually (2 marks)"
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:33:59.765+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 21,
+        "questions": [
+          {
+            "q": "What is the primary purpose of presenting data?",
+            "ans": "B",
+            "opts": [
+              "(A) To make data look visually appealing",
+              "(B) To convey information effectively to the audience",
+              "(C) To create graphs and charts solely for decoration",
+              "(D) To confuse the audience with complex data"
+            ],
+            "topic": "Introduction to Data Presentation",
+            "difficulty": "easy",
+            "explanation": "Data presentation aims to effectively communicate information to the audience. It involves selecting the right type of graph or chart that best represents the data."
+          },
+          {
+            "q": "Which of the following types of charts is best suited for comparing categorical data?",
+            "ans": "A",
+            "opts": [
+              "(A) Bar chart",
+              "(B) Pie chart",
+              "(C) Histogram",
+              "(D) Scatter plot"
+            ],
+            "topic": "Types of Charts and Graphs",
+            "difficulty": "easy",
+            "explanation": "Bar charts are ideal for comparing categorical data as they can easily show the differences between categories."
+          },
+          {
+            "q": "Why is it essential to select the right scale in a bar chart?",
+            "ans": "C",
+            "opts": [
+              "(A) To make the chart look more appealing",
+              "(B) To distort the data to support a particular argument",
+              "(C) To ensure accurate representation of data",
+              "(D) To reduce the complexity of the chart"
+            ],
+            "topic": "Types of Charts and Graphs",
+            "difficulty": "easy",
+            "explanation": "Choosing the right scale in a bar chart is crucial as it ensures that the data is accurately represented and not distorted."
+          },
+          {
+            "q": "What is the primary advantage of using a line graph?",
+            "ans": "C",
+            "opts": [
+              "(A) It can only show categorical data",
+              "(B) It can only show numerical data",
+              "(C) It can show both categorical and numerical data over time",
+              "(D) It can only show a single data point"
+            ],
+            "topic": "Types of Charts and Graphs",
+            "difficulty": "easy",
+            "explanation": "Line graphs are ideal for showing how data changes over time, making them suitable for displaying both categorical and numerical data."
+          },
+          {
+            "q": "Why is it essential to label axes in a graph?",
+            "ans": "C",
+            "opts": [
+              "(A) To make the graph look more appealing",
+              "(B) To confuse the audience with complex labels",
+              "(C) To ensure accurate representation of data",
+              "(D) To reduce the complexity of the graph"
+            ],
+            "topic": "Labeling and Captioning",
+            "difficulty": "easy",
+            "explanation": "Labeling axes in a graph is crucial as it ensures that the data is accurately represented and understood by the audience."
+          },
+          {
+            "q": "What is the primary purpose of a caption in a graph?",
+            "ans": "B",
+            "opts": [
+              "(A) To make the graph look more appealing",
+              "(B) To provide additional information about the data",
+              "(C) To confuse the audience with complex information",
+              "(D) To reduce the complexity of the graph"
+            ],
+            "topic": "Labeling and Captioning",
+            "difficulty": "easy",
+            "explanation": "Captions in a graph provide additional information about the data, making it easier for the audience to understand the context and significance of the data."
+          },
+          {
+            "q": "Which of the following types of charts is best suited for showing the distribution of data?",
+            "ans": "C",
+            "opts": [
+              "(A) Bar chart",
+              "(B) Pie chart",
+              "(C) Histogram",
+              "(D) Scatter plot"
+            ],
+            "topic": "Types of Charts and Graphs",
+            "difficulty": "medium",
+            "explanation": "Histograms are ideal for showing the distribution of data as they can easily display the frequency and density of data points."
+          },
+          {
+            "q": "Why is it essential to choose the right type of graph for displaying data?",
+            "ans": "C",
+            "opts": [
+              "(A) To make the graph look more appealing",
+              "(B) To confuse the audience with complex data",
+              "(C) To ensure accurate representation of data",
+              "(D) To reduce the complexity of the graph"
+            ],
+            "topic": "Selecting the Right Type of Graph",
+            "difficulty": "medium",
+            "explanation": "Choosing the right type of graph is crucial as it ensures that the data is accurately represented and understood by the audience."
+          },
+          {
+            "q": "What is the primary difference between a bar chart and a histogram?",
+            "ans": "C",
+            "opts": [
+              "(A) Bar charts show numerical data, while histograms show categorical data",
+              "(B) Bar charts show categorical data, while histograms show numerical data",
+              "(C) Bar charts show the frequency of data, while histograms show the density of data",
+              "(D) Bar charts show the density of data, while histograms show the frequency of data"
+            ],
+            "topic": "Types of Charts and Graphs",
+            "difficulty": "medium",
+            "explanation": "Bar charts show the frequency of data, while histograms show the density of data, making them suitable for displaying different types of information."
+          },
+          {
+            "q": "Why is it essential to use a title in a graph?",
+            "ans": "C",
+            "opts": [
+              "(A) To make the graph look more appealing",
+              "(B) To confuse the audience with complex information",
+              "(C) To ensure accurate representation of data",
+              "(D) To reduce the complexity of the graph"
+            ],
+            "topic": "Labeling and Captioning",
+            "difficulty": "medium",
+            "explanation": "Using a title in a graph is crucial as it provides context and helps the audience understand the significance of the data."
+          },
+          {
+            "q": "What is the primary advantage of using a scatter plot?",
+            "ans": "C",
+            "opts": [
+              "(A) It can only show categorical data",
+              "(B) It can only show numerical data",
+              "(C) It can show both categorical and numerical data in a two-dimensional space",
+              "(D) It can only show a single data point"
+            ],
+            "topic": "Types of Charts and Graphs",
+            "difficulty": "medium",
+            "explanation": "Scatter plots are ideal for showing the relationship between two variables, making them suitable for displaying complex data."
+          },
+          {
+            "q": "Why is it essential to use color judiciously in a graph?",
+            "ans": "C",
+            "opts": [
+              "(A) To make the graph look more appealing",
+              "(B) To confuse the audience with complex information",
+              "(C) To ensure accurate representation of data",
+              "(D) To reduce the complexity of the graph"
+            ],
+            "topic": "Color and Patterns",
+            "difficulty": "medium",
+            "explanation": "Using color judiciously in a graph is crucial as it helps to distinguish between different categories and ensures that the data is accurately represented."
+          },
+          {
+            "q": "What is the primary difference between a line graph and a scatter plot?",
+            "ans": "D",
+            "opts": [
+              "(A) Line graphs show numerical data, while scatter plots show categorical data",
+              "(B) Line graphs show categorical data, while scatter plots show numerical data",
+              "(C) Line graphs show the relationship between two variables, while scatter plots show the frequency of data",
+              "(D) Line graphs show the frequency of data, while scatter plots show the relationship between two variables"
+            ],
+            "topic": "Types of Charts and Graphs",
+            "difficulty": "medium",
+            "explanation": "Line graphs show the relationship between two variables, while scatter plots show the frequency of data, making them suitable for displaying different types of information."
+          },
+          {
+            "q": "Why is it essential to use patterns judiciously in a graph?",
+            "ans": "C",
+            "opts": [
+              "(A) To make the graph look more appealing",
+              "(B) To confuse the audience with complex information",
+              "(C) To ensure accurate representation of data",
+              "(D) To reduce the complexity of the graph"
+            ],
+            "topic": "Color and Patterns",
+            "difficulty": "medium",
+            "explanation": "Using patterns judiciously in a graph is crucial as it helps to distinguish between different categories and ensures that the data is accurately represented."
+          },
+          {
+            "q": "What is the primary purpose of a legend in a graph?",
+            "ans": "D",
+            "opts": [
+              "(A) To make the graph look more appealing",
+              "(B) To confuse the audience with complex information",
+              "(C) To ensure accurate representation of data",
+              "(D) To provide additional information about the data"
+            ],
+            "topic": "Labeling and Captioning",
+            "difficulty": "medium",
+            "explanation": "A legend in a graph provides additional information about the data, making it easier for the audience to understand the significance of the data."
+          },
+          {
+            "q": "Which of the following types of charts is best suited for showing the relationship between two variables?",
+            "ans": "D",
+            "opts": [
+              "(A) Bar chart",
+              "(B) Pie chart",
+              "(C) Histogram",
+              "(D) Scatter plot"
+            ],
+            "topic": "Types of Charts and Graphs",
+            "difficulty": "hard",
+            "explanation": "Scatter plots are ideal for showing the relationship between two variables, making them suitable for displaying complex data."
+          },
+          {
+            "q": "Why is it essential to use multiple graphs in a presentation?",
+            "ans": "D",
+            "opts": [
+              "(A) To make the presentation look more appealing",
+              "(B) To confuse the audience with complex information",
+              "(C) To ensure accurate representation of data",
+              "(D) To provide a comprehensive view of the data"
+            ],
+            "topic": "Selecting the Right Type of Graph",
+            "difficulty": "hard",
+            "explanation": "Using multiple graphs in a presentation is crucial as it provides a comprehensive view of the data, making it easier for the audience to understand the significance of the data."
+          },
+          {
+            "q": "What is the primary difference between a box plot and a histogram?",
+            "ans": "C",
+            "opts": [
+              "(A) Box plots show numerical data, while histograms show categorical data",
+              "(B) Box plots show categorical data, while histograms show numerical data",
+              "(C) Box plots show the distribution of data, while histograms show the frequency of data",
+              "(D) Box plots show the frequency of data, while histograms show the distribution of data"
+            ],
+            "topic": "Types of Charts and Graphs",
+            "difficulty": "hard",
+            "explanation": "Box plots show the distribution of data, while histograms show the frequency of data, making them suitable for displaying different types of information."
+          },
+          {
+            "q": "Why is it essential to use 3D graphs judiciously in a presentation?",
+            "ans": "C",
+            "opts": [
+              "(A) To make the presentation look more appealing",
+              "(B) To confuse the audience with complex information",
+              "(C) To ensure accurate representation of data",
+              "(D) To reduce the complexity of the graph"
+            ],
+            "topic": "Color and Patterns",
+            "difficulty": "hard",
+            "explanation": "Using 3D graphs judiciously in a presentation is crucial as it helps to distinguish between different categories and ensures that the data is accurately represented."
+          },
+          {
+            "q": "What is the primary purpose of a table in a presentation?",
+            "ans": "D",
+            "opts": [
+              "(A) To make the presentation look more appealing",
+              "(B) To confuse the audience with complex information",
+              "(C) To ensure accurate representation of data",
+              "(D) To provide additional information about the data"
+            ],
+            "topic": "Tables and Charts",
+            "difficulty": "hard",
+            "explanation": "A table in a presentation provides additional information about the data, making it easier for the audience to understand the significance of the data."
+          },
+          {
+            "q": "Which of the following types of charts is best suited for showing the relationship between three variables?",
+            "ans": "D",
+            "opts": [
+              "(A) Bar chart",
+              "(B) Pie chart",
+              "(C) Histogram",
+              "(D) 3D graph"
+            ],
+            "topic": "Types of Charts and Graphs",
+            "difficulty": "hard",
+            "explanation": "3D graphs are ideal for showing the relationship between three variables, making them suitable for displaying complex data."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:18:04.261+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Presentation of Data\n\n## Chapter at a Glance\nThe presentation of data is a crucial step in the process of data analysis. It involves the systematic organization, tabulation, and display of data in a meaningful way to facilitate its interpretation and understanding. Data presentation helps to identify patterns, trends, and relationships within the data, making it easier to draw conclusions and make informed decisions. In this chapter, students will learn various methods of presenting data, including tabulation, diagrams, and charts.\n\n## Section-wise Summary\n\n### 1.1 Introduction to Data Presentation\n\nData presentation is an essential step in data analysis. It helps to organize and display data in a meaningful way, making it easier to understand and interpret. There are different methods of presenting data, including tabulation, diagrams, and charts.\n\n### 1.2 Tabulation of Data\n\nTabulation is a method of presenting data in a systematic and organized way. It involves arranging data in a table format with rows and columns. The rows are used to represent different categories or classes, and the columns are used to represent different variables or characteristics.\n\n*   Types of Tables: There are two types of tables - simple and composite tables.\n*   Simple Table: A simple table contains only one variable or characteristic.\n*   Composite Table: A composite table contains two or more variables or characteristics.\n\n### 1.3 Diagrams\n\nDiagrams are a visual representation of data. They help to illustrate complex data relationships and patterns. There are different types of diagrams, including:\n\n*   Bar Diagram: A bar diagram is used to compare the values of different categories or classes.\n*   Histogram: A histogram is used to display the distribution of data.\n*   Pie Diagram: A pie diagram is used to show the proportion of different categories or classes.\n\n### 1.4 Charts\n\nCharts are a visual representation of data that are used to compare and display data over a period of time. There are different types of charts, including:\n\n*   Line Chart: A line chart is used to display the trend of data over a period of time.\n*   Column Chart: A column chart is used to compare the values of different categories or classes.\n*   Scatter Diagram: A scatter diagram is used to display the relationship between two variables.\n\n### 1.5 Maps\n\nMaps are a visual representation of geographical data. They help to illustrate the distribution of data over a geographical area. There are different types of maps, including:\n\n*   Physical Map: A physical map is used to display geographical features such as rivers, mountains, and cities.\n*   Political Map: A political map is used to display political boundaries and administrative divisions.\n\n## Important NCERT Exercises Insight\n\n*   Tabulation: Students should be able to create simple and composite tables to present data.\n*   Diagrams: Students should be able to create bar diagrams, histograms, and pie diagrams to display data.\n*   Charts: Students should be able to create line charts, column charts, and scatter diagrams to compare and display data.\n*   Maps: Students should be able to create physical and political maps to display geographical data.\n\n## NCERT Exemplar Focus\n\n*   Types of charts: In addition to the types of charts covered in the NCERT textbook, the NCERT Exemplar also covers other types of charts such as area charts and radar charts.\n*   Maps: The NCERT Exemplar covers different types of maps such as thematic maps and contour maps.\n\n## Board Exam Relevance\n\n*   The presentation of data is an important topic in the board exams, and students are expected to be able to create different types of tables, diagrams, charts, and maps to display data.\n*   The weightage of this topic in the board exams is around 10-15 marks.\n*   Frequently asked topics from this chapter include tabulation, diagrams, charts, and maps."
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:50:54.269+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "The following data represents the number of houses in a village for the years 2015, 2016, 2017 and 2018. Year-wise data is as follows: 2015: 1000, 2016: 1100, 2017: 1050, 2018: 1200. What is the average rate of change of houses from 2015 to 2018?",
+            "type": "Long Answer",
+            "marks": 4,
+            "answer": "Average rate of change = (Change in number of houses)/(Change in years) = (1200 - 1000)/(2018 - 2015) = 200/3",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "The following table shows the data on production of wheat (in thousand tonnes) for some years. Year-wise data is as follows: 2013: 150, 2014: 160, 2015: 170, 2016: 180, 2017: 190. If the average rate of change in production of wheat from 2013 to 2016 is 10, then find the average rate of change from 2015 to 2017.",
+            "type": "MCQ",
+            "marks": 1,
+            "answer": "20",
+            "difficulty": "medium",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "Find the mode of the following data: 10, 6, 8, 10, 8, 4, 9, 8, 9, 9.",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "The mode of the given data is 9.",
+            "difficulty": "easy",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "The following table shows the data on the number of students who appeared in an exam in different years. Year-wise data is as follows: Year 2015: 100, Year 2016: 110, Year 2017: 120, Year 2018: 130. If the median of the given data is 115, then find the mode.",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "130",
+            "difficulty": "hard",
+            "year_pattern": "2017-style"
+          },
+          {
+            "q": "Find the median of the following data: 6, 4, 8, 12, 10, 8, 12, 9, 9, 9.",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "The median of the given data is 9.",
+            "difficulty": "easy",
+            "year_pattern": "2016-style"
+          },
+          {
+            "q": "The following table shows the data on the number of people living in a city. Year-wise data is as follows: Year 2015: 1000, Year 2016: 1100, Year 2017: 1050, Year 2018: 1200. If the average rate of change in number of people living in the city from 2015 to 2018 is 25, then find the range of the given data.",
+            "type": "Long Answer",
+            "marks": 4,
+            "answer": "Range = Maximum value - Minimum value = 1200 - 1000 = 200.",
+            "difficulty": "medium",
+            "year_pattern": "2021-style"
+          },
+          {
+            "q": "Find the mean of the following data: 6, 8, 10, 12, 14, 16.",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "The mean of the given data is 10.",
+            "difficulty": "easy",
+            "year_pattern": "2015-style"
+          },
+          {
+            "q": "The following table shows the data on the production of wheat (in thousand tonnes) for some years. Year-wise data is as follows: 2015: 150, 2016: 160, 2017: 170, 2018: 180, 2019: 190. If the median of the given data is 165, then find the mode.",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "170",
+            "difficulty": "hard",
+            "year_pattern": "2014-style"
+          },
+          {
+            "q": "Find the mode of the following data: 4, 6, 8, 10, 8, 6, 4.",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "The mode of the given data is 6.",
+            "difficulty": "easy",
+            "year_pattern": "2013-style"
+          },
+          {
+            "q": "The following table shows the data on the number of students who appeared in an exam in different years. Year-wise data is as follows: Year 2015: 100, Year 2016: 110, Year 2017: 120, Year 2018: 130. If the average rate of change in number of students who appeared in the exam from 2015 to 2018 is 15, then find the range of the given data.",
+            "type": "Long Answer",
+            "marks": 4,
+            "answer": "Range = Maximum value - Minimum value = 130 - 100 = 30.",
+            "difficulty": "medium",
+            "year_pattern": "2012-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:22:05.889+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "What are the two types of averages?",
+            "marks": 2,
+            "topic": "Measures of Central Tendency",
+            "answer": "The two types of averages are arithmetic mean and weighted average. Arithmetic mean is the sum of all values divided by the number of values, whereas weighted average is the sum of the product of each value and its respective weight divided by the sum of the weights.",
+            "key_points": [
+              "Arithmetic Mean",
+              "Weighted Average",
+              "Mean"
+            ]
+          },
+          {
+            "q": "What is dispersion and why is it necessary?",
+            "marks": 2,
+            "topic": "Measures of Dispersion",
+            "answer": "Dispersion refers to the scattering or spread of data values from the central value. It is necessary to understand the dispersion because it helps in identifying the variability in data values and in making decisions based on the data.",
+            "key_points": [
+              "Dispersion",
+              "Variability",
+              "Central Value"
+            ]
+          },
+          {
+            "q": "What is the difference between range and interquartile range?",
+            "marks": 2,
+            "topic": "Measures of Dispersion",
+            "answer": "Range is the difference between the highest and lowest values in a data set, whereas interquartile range (IQR) is the difference between the third quartile (Q3) and the first quartile (Q1). IQR is a better measure of dispersion than range because it is less affected by extreme values.",
+            "key_points": [
+              "Range",
+              "Interquartile Range",
+              "Quartiles"
+            ]
+          },
+          {
+            "q": "What is the purpose of graphical representation of data?",
+            "marks": 2,
+            "topic": "Graphical Representation of Data",
+            "answer": "The purpose of graphical representation of data is to enable the reader to understand the data quickly and easily, and to identify trends and patterns in the data.",
+            "key_points": [
+              "Graphical Representation",
+              "Data Visualization",
+              "Patterns"
+            ]
+          },
+          {
+            "q": "What are the advantages of using histograms?",
+            "marks": 2,
+            "topic": "Graphical Representation of Data",
+            "answer": "The advantages of using histograms are that they are easy to understand and provide a visual representation of the frequency distribution of data. They are also useful in identifying the shape of the distribution and in comparing the distribution of different data sets.",
+            "key_points": [
+              "Histograms",
+              "Frequency Distribution",
+              "Shape of Distribution"
+            ]
+          },
+          {
+            "q": "What is the difference between a bar chart and a pie chart?",
+            "marks": 2,
+            "topic": "Graphical Representation of Data",
+            "answer": "A bar chart is used to compare the values of different categories, whereas a pie chart is used to show the proportion of different categories in a data set.",
+            "key_points": [
+              "Bar Chart",
+              "Pie Chart",
+              "Categories"
+            ]
+          },
+          {
+            "q": "What are the uses of frequency polygons?",
+            "marks": 2,
+            "topic": "Graphical Representation of Data",
+            "answer": "The uses of frequency polygons are that they provide a visual representation of the frequency distribution of data and are useful in comparing the distribution of different data sets.",
+            "key_points": [
+              "Frequency Polygon",
+              "Frequency Distribution",
+              "Data Comparison"
+            ]
+          },
+          {
+            "q": "What is the purpose of using a scatter diagram?",
+            "marks": 2,
+            "topic": "Graphical Representation of Data",
+            "answer": "The purpose of using a scatter diagram is to identify the relationship between two variables and to understand the direction and strength of the relationship.",
+            "key_points": [
+              "Scatter Diagram",
+              "Relationship Between Variables",
+              "Direction and Strength"
+            ]
+          },
+          {
+            "q": "What are the limitations of box and whisker plot?",
+            "marks": 2,
+            "topic": "Graphical Representation of Data",
+            "answer": "The limitations of box and whisker plot are that it is difficult to read and interpret, and it is not suitable for large data sets. It is also not useful in identifying the shape of the distribution.",
+            "key_points": [
+              "Box and Whisker Plot",
+              "Data Interpretation",
+              "Distribution Shape"
+            ]
+          },
+          {
+            "q": "What is the difference between a percentage bar diagram and a simple bar diagram?",
+            "marks": 2,
+            "topic": "Graphical Representation of Data",
+            "answer": "A percentage bar diagram is used to show the percentage distribution of different categories, whereas a simple bar diagram is used to compare the values of different categories.",
+            "key_points": [
+              "Percentage Bar Diagram",
+              "Simple Bar Diagram",
+              "Categories"
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:18:02.785+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Presentation of Data — Quick Revision Notes\n\n## ⚡ Key Points\n\n* Data collection methods: primary, secondary, and derived.\n* Types of data: qualitative, quantitative, and mixed.\n* Data classification: raw, ungrouped, and grouped.\n* Frequency distribution: ungrouped and grouped.\n* Types of frequency distribution: discrete and continuous.\n* Graphical representation: bar chart, histogram, and pie chart.\n* Measures of central tendency: mean, median, and mode.\n* Measures of dispersion: range, variance, and standard deviation.\n* Index numbers: definition, types, and uses.\n* Uses of index numbers: price index, cost of living index, and consumer price index.\n* Types of index numbers: simple and weighted.\n* Methods of constructing index numbers: Laspeyres, Paasche, and Fisher's ideal index.\n* Uses of statistical tools: regression analysis, correlation coefficient, and time series analysis.\n* Types of time series data: trend, seasonal, and cyclical.\n* Time series analysis: components, decomposition, and forecasting.\n* Uses of time series data: stock market analysis, weather forecasting, and population growth.\n\n## 🔑 Must-Know Definitions\n\n* **Data**: facts and figures collected for a specific purpose.\n* **Primary data**: original data collected through research or surveys.\n* **Secondary data**: existing data collected by others.\n* **Derived data**: data derived from other data sources.\n* **Qualitative data**: non-numerical data, e.g., opinions, attitudes.\n* **Quantitative data**: numerical data, e.g., prices, quantities.\n* **Frequency distribution**: a table or graph showing the distribution of data.\n* **Index number**: a statistical measure used to compare changes in a variable.\n\n## 📊 Important Formulas\n\n1. **Mean**: (Σx / n)\n2. **Median**: (n + 1)th term if n is odd, (n / 2)th term + (n / 2 + 1)th term if n is even\n3. **Mode**: most frequently occurring value\n4. **Range**: maximum value - minimum value\n5. **Variance**: Σ(x - μ)^2 / n\n6. **Standard deviation**: √(Σ(x - μ)^2 / n)\n7. **Simple index number**: (Σpx / ΣQx) × 100\n8. **Weighted index number**: (ΣPwx / ΣQx) × 100\n9. **Laspeyres index**: (ΣP_0x / ΣP_1x) × 100\n10. **Paasche index**: (ΣP_0x / ΣP_0x) × 100\n11. **Fisher's ideal index**: (ΣP_0x / ΣP_1x) × (ΣP_1x / ΣP_0x) × 100\n\n## ⭐ Exam Tips\n\n1. **Focus on the concept of data collection**: Understand the types of data, methods of data collection, and the importance of data in economics.\n2. **Practice numerical problems**: Practice calculating mean, median, mode, range, variance, and standard deviation.\n3. **Learn the formulas**: Memorize the formulas for simple and weighted index numbers, Laspeyres and Paasche indices, and Fisher's ideal index.\n4. **Understand the applications**: Learn how to apply the concepts of index numbers, time series analysis, and regression analysis to real-world problems.\n5. **Practice graphically representing data**: Practice drawing bar charts, histograms, and pie charts to represent data."
+      }
+    }
+  }
+}

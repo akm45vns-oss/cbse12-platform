@@ -1,0 +1,111 @@
+{
+  "class": "11",
+  "subject": "Chemistry",
+  "chapter": "Thermodynamics",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:57:48.221Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Zeroth Law of Thermodynamics",
+        "formula": "If two systems are in thermal equilibrium with a third system, then they are also in thermal equilibrium with each other.",
+        "notes": "This law allows us to define a temperature scale."
+      },
+      {
+        "name": "First Law of Thermodynamics",
+        "formula": "\\Delta U = Q - W",
+        "variables": {
+          "\\Delta U": "Change in internal energy",
+          "Q": "Heat added to the system",
+          "W": "Work done by the system"
+        },
+        "units": "Joules (J)",
+        "notes": "This law states that energy cannot be created or destroyed, only converted from one form to another."
+      },
+      {
+        "name": "First Law of Thermodynamics (Internal Energy Change)",
+        "formula": "\\Delta U = U_f - U_i",
+        "variables": {
+          "\\Delta U": "Change in internal energy",
+          "U_f": "Final internal energy",
+          "U_i": "Initial internal energy"
+        },
+        "units": "Joules (J)",
+        "notes": "This is an alternative way of expressing the first law."
+      },
+      {
+        "name": "First Law of Thermodynamics (Work Done)",
+        "formula": "W = P\\Delta V",
+        "variables": {
+          "W": "Work done by the system",
+          "P": "Pressure",
+          "\\Delta V": "Change in volume"
+        },
+        "units": "Joules (J)",
+        "notes": "This formula is used when the work done is done against a constant external pressure."
+      },
+      {
+        "name": "First Law of Thermodynamics (Heat Added)",
+        "formula": "Q = \\frac{dU}{dt} dt + \\frac{dW}{dt} dt",
+        "variables": {
+          "Q": "Heat added to the system",
+          "\\frac{dU}{dt}": "Rate of change of internal energy",
+          "\\frac{dW}{dt}": "Rate of change of work done"
+        },
+        "units": "Joules per second (J/s)",
+        "notes": "This formula is used when the heat added and work done are functions of time."
+      },
+      {
+        "name": "Second Law of Thermodynamics",
+        "formula": "\\Delta S = \\frac{\\Delta Q}{T}",
+        "variables": {
+          "\\Delta S": "Change in entropy",
+          "\\Delta Q": "Heat added to the system",
+          "T": "Temperature in Kelvin"
+        },
+        "units": "Joules per Kelvin (J/K)",
+        "notes": "This law states that the total entropy of an isolated system will always increase over time."
+      },
+      {
+        "name": "Second Law of Thermodynamics (Entropy Change)",
+        "formula": "\\Delta S = S_f - S_i",
+        "variables": {
+          "\\Delta S": "Change in entropy",
+          "S_f": "Final entropy",
+          "S_i": "Initial entropy"
+        },
+        "units": "Joules per Kelvin (J/K)",
+        "notes": "This is an alternative way of expressing the second law."
+      },
+      {
+        "name": "Third Law of Thermodynamics",
+        "formula": "As T -> 0 K, \\Delta S -> 0",
+        "variables": {
+          "\\Delta S": "Change in entropy",
+          "T": "Temperature in Kelvin"
+        },
+        "notes": "This law states that at absolute zero temperature, the entropy of a system is zero."
+      },
+      {
+        "name": "Equation of State for an Ideal Gas",
+        "formula": "PV = nRT",
+        "variables": {
+          "P": "Pressure",
+          "V": "Volume",
+          "n": "Number of moles",
+          "R": "Gas constant",
+          "T": "Temperature in Kelvin"
+        },
+        "units": "Pascals (Pa), Meters cubed (m³), Moles (mol), Joules per Kelvin (J/K), Kelvin (K)",
+        "notes": "This equation relates the pressure, volume, and temperature of an ideal gas."
+      },
+      {
+        "name": "Ideal Gas Constant",
+        "formula": "R = 8.314 J/mol·K",
+        "notes": "This is the value of the gas constant at standard temperature and pressure."
+      }
+    ]
+  }
+}

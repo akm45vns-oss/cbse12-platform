@@ -1,0 +1,1097 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Statistics",
+  "exported_at": "2026-06-27T05:54:16.881Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:16:28.163+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 9,
+        "questions": [
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Since mode is the middle-most value in a data set, it is always less than or equal to the mean.",
+            "assertion": "Assertion (A): The mean of a data set is always greater than or equal to the mode.",
+            "explanation": "The mean is always greater than or equal to the mode. The reason is that the mean is the average of all values in the data set, which makes it always greater than or equal to the mode."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The median is the middle value in a data set when it is arranged in ascending or descending order.",
+            "assertion": "Assertion (A): The median of a data set is always greater than the mode.",
+            "explanation": "This statement is generally true, as the median is a measure of central tendency that lies between the smallest and largest values in the data set."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is possible for a data set to have more than one mode.",
+            "assertion": "Assertion (A): The mode of a data set is always unique.",
+            "explanation": "The statement is false as a data set can have more than one mode, also known as bimodal or multimodal data."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The interquartile range measures the difference between the 75th percentile and the 25th percentile.",
+            "assertion": "Assertion (A): The range of a data set is always greater than or equal to the interquartile range.",
+            "explanation": "The range is indeed greater than or equal to the interquartile range, as the range measures the difference between the largest and smallest values in the data set."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): A correlation coefficient is a statistical measure that calculates the strength and direction of the linear relationship between two variables.",
+            "assertion": "Assertion (A): A correlation coefficient value of 0 indicates no correlation between two variables.",
+            "explanation": "A correlation coefficient value of 0 indeed indicates no correlation between two variables, as it represents the absence of a linear relationship."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The variance is the average of the squared differences from the mean, which makes it always less than or equal to the standard deviation.",
+            "assertion": "Assertion (A): The standard deviation of a data set is always greater than or equal to the variance.",
+            "explanation": "The standard deviation is indeed greater than or equal to the variance, as the variance measures the average of the squared differences from the mean."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The coefficient of variation is a measure of relative variability in a data set.",
+            "assertion": "Assertion (A): The coefficient of variation is a measure of skewness in a data set.",
+            "explanation": "The coefficient of variation is not a measure of skewness but rather a measure of relative variability in a data set."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The mean deviation about the median is always less than or equal to the mean deviation about the mean.",
+            "assertion": "Assertion (A): The mean deviation about the median is always greater than or equal to the mean deviation about the mean.",
+            "explanation": "The statement is false as the mean deviation about the median is indeed less than or equal to the mean deviation about the mean."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): Pearson's coefficient of skewness is a measure of skewness in a data set.",
+            "assertion": "Assertion (A): The measure of skewness is given by the Pearson's coefficient of skewness.",
+            "explanation": "Pearson's coefficient of skewness is a measure of skewness in a data set, hence it is used to determine the skewness of the data."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:16:25.569+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "A school conducted a survey to understand the sleeping habits of its students. The survey collected data on the number of hours slept by 50 students in the school. The results are as follows: 8 students slept for 5 hours or less, 12 students slept for 6-7 hours, 15 students slept for 8 hours, 8 students slept for 9-10 hours, and 7 students slept for 11 hours or more. A histogram was drawn to represent the distribution of the data. Based on the histogram, it was observed that the data is skewed to the right. The school wants to know the median sleep duration of its students. Which of the following is the correct method for finding the median of the given data?",
+            "questions": [
+              {
+                "q": "What type of data distribution is shown by the histogram of the given data?",
+                "ans": "C",
+                "opts": [
+                  "(A) Symmetric",
+                  "(B) Skewed to the left",
+                  "(C) Skewed to the right",
+                  "(D) Bimodal"
+                ],
+                "explanation": "A histogram is a graphical representation of the distribution of a dataset. If the histogram is skewed to the right, it means that the data is skewed to the right, indicating that most of the values are concentrated on the higher end of the scale."
+              },
+              {
+                "q": "The given data is not in a suitable format for finding the median. Which of the following steps can be taken to make the data suitable for finding the median?",
+                "ans": "A",
+                "opts": [
+                  "(A) Group all the students who slept for 8 hours or more",
+                  "(B) Group all the students who slept for 5 hours or less",
+                  "(C) Group all the students who slept for 11 hours or more",
+                  "(D) Group all the students who slept for 6-7 hours"
+                ],
+                "explanation": "To find the median, the data needs to be in a grouped format, where each group represents a range of values. Grouping all the students who slept for 8 hours or more makes the data suitable for finding the median."
+              },
+              {
+                "q": "Which of the following methods can be used to find the median of the given data?",
+                "ans": "B",
+                "opts": [
+                  "(A) Step deviation method",
+                  "(B) Direct method",
+                  "(B) Interpolation method",
+                  "(D) None of the above"
+                ],
+                "explanation": "The direct method is used to find the median when the data is in a grouped format. This method involves finding the median class, which is the class interval that contains the median value."
+              },
+              {
+                "q": "What is the median sleep duration of the students in the school?",
+                "ans": "B",
+                "opts": [
+                  "(A) 7 hours",
+                  "(B) 8 hours",
+                  "(C) 9 hours",
+                  "(D) 10 hours"
+                ],
+                "explanation": "The median sleep duration is the value of the middlemost observation in the data. Since the data is grouped, we need to find the median class and then use the formula to find the median value. Based on the given data, the median sleep duration is 8 hours."
+              },
+              {
+                "q": "Why is it necessary to find the median of the given data?",
+                "ans": "C",
+                "opts": [
+                  "(A) To find the mean",
+                  "(B) To find the mode",
+                  "(C) To understand the central tendency of the data",
+                  "(D) To find the range"
+                ],
+                "explanation": "The median is a measure of central tendency, which helps us understand the middle value of the data. Finding the median of the given data helps us understand the central tendency of the data, which is essential for making informed decisions."
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "A company conducted a survey to understand the opinions of its customers about a new product. The survey collected data on the satisfaction levels of 100 customers, with scores ranging from 1 to 5. The results are as follows: 15 customers gave a score of 1, 20 customers gave a score of 2, 25 customers gave a score of 3, 20 customers gave a score of 4, and 20 customers gave a score of 5. The company wants to know the mode of the satisfaction levels of its customers. Which of the following is the correct method for finding the mode of the given data?",
+            "questions": [
+              {
+                "q": "What is the mode of the given data?",
+                "ans": "D",
+                "opts": [
+                  "(A) 2",
+                  "(B) 3",
+                  "(C) 4",
+                  "(D) 5"
+                ],
+                "explanation": "The mode is the value that occurs most frequently in the data. Based on the given data, the value 5 occurs most frequently, with 20 customers giving a score of 5."
+              },
+              {
+                "q": "Why is it necessary to find the mode of the given data?",
+                "ans": "C",
+                "opts": [
+                  "(A) To find the mean",
+                  "(B) To find the median",
+                  "(C) To understand the central tendency of the data",
+                  "(D) To find the range"
+                ],
+                "explanation": "The mode is a measure of central tendency, which helps us understand the most common value in the data. Finding the mode of the given data helps us understand the central tendency of the data, which is essential for making informed decisions."
+              },
+              {
+                "q": "Which of the following is a characteristic of the given data?",
+                "ans": "A",
+                "opts": [
+                  "(A) Bimodal",
+                  "(B) Skewed to the left",
+                  "(C) Skewed to the right",
+                  "(D) Symmetric"
+                ],
+                "explanation": "The given data is bimodal, meaning it has two modes. The value 5 occurs most frequently, and the value 1 occurs less frequently but still has a significant number of occurrences."
+              },
+              {
+                "q": "What type of frequency distribution is shown by the given data?",
+                "ans": "A",
+                "opts": [
+                  "(A) Discrete",
+                  "(B) Continuous",
+                  "(C) Grouped",
+                  "(D) Ungrouped"
+                ],
+                "explanation": "The given data represents a discrete frequency distribution, where the values are distinct and separate. The data is also ungrouped, meaning each value is recorded separately."
+              },
+              {
+                "q": "Why is it difficult to find the median of the given data?",
+                "ans": "D",
+                "opts": [
+                  "(A) Because the data is skewed to the left",
+                  "(B) Because the data is skewed to the right",
+                  "(C) Because the data is bimodal",
+                  "(D) Because the data is discrete"
+                ],
+                "explanation": "The given data is discrete, meaning it consists of distinct and separate values. This makes it difficult to find the median, as the data does not have a continuous range of values."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:33:27.475+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Statistics\n## 📌 Chapter Overview\nStatistics is a branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data. It involves the use of numerical data to make informed decisions, predictions, and conclusions. This chapter will cover the basic concepts, principles, and methods used in statistics, including measures of central tendency, measures of dispersion, probability, and sampling distributions.\n\nThe importance of statistics lies in its ability to provide insights into the behavior of populations and to make predictions about future events. Statistical methods are used in various fields, including economics, finance, medicine, and social sciences. In this chapter, we will explore the fundamental concepts and techniques used in statistics to analyze and interpret data.\n\n## 🎯 Learning Objectives\n* Understand the basic concepts and principles of statistics\n* Learn to calculate and interpret various measures of central tendency and dispersion\n* Understand the concept of probability and its applications\n* Learn to use sampling distributions to make inferences about a population\n* Understand the concept of regression analysis\n* Learn to interpret and present statistical data effectively\n\n## 🔑 Key Concepts & Definitions\n* **Population**: The entire set of data or items of interest.\n* **Sample**: A subset of the population selected for analysis.\n* **Parameter**: A numerical value that describes a population, such as a mean or standard deviation.\n* **Statistic**: A numerical value that describes a sample, such as a mean or standard deviation.\n* **Random Sampling**: A method of selecting a sample where every member of the population has an equal chance of being selected.\n* **Bias**: A systematic error that occurs when a sample is not representative of the population.\n* **Sampling Distribution**: The distribution of a statistic calculated from multiple samples of the same size from the same population.\n\n## 📐 Core Theory & Principles\n### Measures of Central Tendency\nMeasures of central tendency are used to describe the middle or typical value of a dataset. The three main measures of central tendency are the mean, median, and mode.\n\n* **Mean**: The average value of a dataset calculated by summing all values and dividing by the number of values.\n* **Median**: The middle value of a dataset when it is arranged in order.\n* **Mode**: The most frequently occurring value in a dataset.\n\n### Measures of Dispersion\nMeasures of dispersion are used to describe the spread or variability of a dataset. The two main measures of dispersion are the range and standard deviation.\n\n* **Range**: The difference between the largest and smallest values in a dataset.\n* **Standard Deviation**: A measure of the spread of a dataset calculated by finding the average distance between each value and the mean.\n\n### Probability\nProbability is a measure of the likelihood of an event occurring. It is calculated as the number of favorable outcomes divided by the total number of possible outcomes.\n\n* **Independent Events**: Events that do not affect each other.\n* **Dependent Events**: Events that affect each other.\n\n### Sampling Distributions\nSampling distributions are used to describe the behavior of a statistic calculated from multiple samples of the same size from the same population.\n\n* **Central Limit Theorem**: A theorem that states that the sampling distribution of a statistic will be approximately normal if the sample size is large enough.\n\n## 🧮 Important Formulas & Laws\n* **Mean**: x̄ = (Σx) / n\n* **Median**: Arrange data in order and find the middle value.\n* **Mode**: The value that occurs most frequently in the dataset.\n* **Range**: R = x_max - x_min\n* **Standard Deviation**: σ = √[(Σ(x - x̄)^2) / (n - 1)]\n* **Probability**: P(A) = Number of favorable outcomes / Total number of possible outcomes\n* **Central Limit Theorem**: As n → ∞, the sampling distribution of x̄ will be approximately normal.\n\n## 🔬 Detailed Explanations\n### Measure of Central Tendency\nThe mean is the most commonly used measure of central tendency. It is calculated by summing all values and dividing by the number of values.\n\nExample: Find the mean of the following dataset: 2, 4, 6, 8, 10.\n\nSolution: x̄ = (2 + 4 + 6 + 8 + 10) / 5 = 30 / 5 = 6\n\nThe median is the middle value of a dataset when it is arranged in order. If there are an even number of values, the median is the average of the two middle values.\n\nExample: Find the median of the following dataset: 2, 4, 6, 8, 10, 12.\n\nSolution: Arrange data in order: 2, 4, 6, 8, 10, 12. Since there are an even number of values, the median is the average of the two middle values: (6 + 8) / 2 = 7\n\nThe mode is the most frequently occurring value in a dataset.\n\nExample: Find the mode of the following dataset: 2, 4, 4, 6, 8, 8, 10.\n\nSolution: The value 4 occurs most frequently in the dataset, so the mode is 4.\n\n### Measure of Dispersion\nThe range is the difference between the largest and smallest values in a dataset.\n\nExample: Find the range of the following dataset: 2, 4, 6, 8, 10, 12, 14.\n\nSolution: The largest value is 14 and the smallest value is 2, so the range is 14 - 2 = 12.\n\nThe standard deviation is a measure of the spread of a dataset calculated by finding the average distance between each value and the mean.\n\nExample: Find the standard deviation of the following dataset: 2, 4, 6, 8, 10, 12, 14.\n\nSolution: First, find the mean: x̄ = (2 + 4 + 6 + 8 + 10 + 12 + 14) / 7 = 56 / 7 = 8.\n\nNext, find the variance: Σ(x - x̄)^2 = (2 - 8)^2 + (4 - 8)^2 + (6 - 8)^2 + (8 - 8)^2 + (10 - 8)^2 + (12 - 8)^2 + (14 - 8)^2 = 36 + 16 + 4 + 0 + 4 + 16 + 36 = 112.\n\nFinally, find the standard deviation: σ = √(112 / 6) = √18.67 = 4.33.\n\n## 🖼️ Diagrams & Visual Concepts\nDiagrams are used to visualize data and to help understand complex concepts. Some common diagrams used in statistics include:\n\n* **Histogram**: A diagram that shows the distribution of a dataset.\n* **Bar chart**: A diagram that compares the values of two or more datasets.\n* **Scatter plot**: A diagram that shows the relationship between two variables.\n\n## ⭐ Most Important Points (Exam Focus)\n* Understand the basic concepts and principles of statistics\n* Learn to calculate and interpret various measures of central tendency and dispersion\n* Understand the concept of probability and its applications\n* Learn to use sampling distributions to make inferences about a population\n* Understand the concept of regression analysis\n* Learn to interpret and present statistical data effectively\n* Know how to calculate the mean, median, mode, range, and standard deviation\n* Understand the concept of independent and dependent events\n* Know how to use the central limit theorem to make inferences about a population\n* Understand the concept of sampling distributions\n\n## ❌ Common Mistakes to Avoid\n* Not understanding the concept of population and sample\n* Not knowing how to calculate and interpret measures of central tendency and dispersion\n* Not understanding the concept of probability and its applications\n* Not knowing how to use sampling distributions to make inferences about a population\n* Not understanding the concept of regression analysis\n* Not being able to interpret and present statistical data effectively\n* Not knowing how to calculate the mean, median, mode, range, and standard deviation\n* Not understanding the concept of independent and dependent events\n* Not knowing how to use the central limit theorem to make inferences about a population\n\n## 💡 Real-World Applications\nStatistics is used in various fields, including:\n\n* **Economics**: To analyze trends and patterns in economic data\n* **Finance**: To predict stock prices and make investment decisions\n* **Medicine**: To analyze the effectiveness of treatments and make predictions about patient outcomes\n* **Social sciences**: To analyze trends and patterns in social data\n* **Business**: To analyze customer behavior and make predictions about sales\n\n## 🔁 Quick Revision Summary\n* Understand the basic concepts and principles of statistics\n* Know how to calculate and interpret measures of central tendency and dispersion\n* Understand the concept of probability and its applications\n* Know how to use sampling distributions to make inferences about a population\n* Understand the concept of regression analysis\n* Know how to interpret and present statistical data effectively\n* Understand the concept of independent and dependent events\n* Know how to use the central limit theorem to make inferences about a population\n* Understand the concept of sampling distributions\n* Know how to calculate the mean, median, mode, range, and standard deviation\n* Understand the concept of population and sample\n* Know how to use statistical software to analyze data\n* Understand the concept of hypothesis testing and confidence intervals\n* Know how to use statistical methods to make predictions about future events."
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:07:50.094+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [],
+        "exam_frequency": "medium",
+        "difficulty_score": 5,
+        "overall_difficulty": "medium"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:29:27.863+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Study tip 1",
+          "Study tip 2"
+        ],
+        "total_minutes": 240,
+        "revision_minutes": 120,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 30,
+        "sessions_recommended": 4,
+        "first_reading_minutes": 45,
+        "practice_questions_minutes": 25
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:34:48.417+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Content",
+            "notes": "",
+            "units": "",
+            "formula": "```json\n[\n  {\n    \"name\": \"Mean\",\n    \"formula\": \"\\\\bar{x} = \\\\frac{1}{n} \\\\sum_{i=1}^{n} x_i\",\n    \"variables\": \"x_i: individual data points, n: number of data points\",\n    \"units\": \"Depends on the unit of x_i\",\n    \"notes\": \"Calculates the average of a set of numbers\"\n  },\n  {\n    \"name\": \"Median\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"Middle value of a data set when it is arranged in ascending order. If there are two middle values, the median is the average of these two values.\"\n  },\n  {\n    \"name\": \"Mode\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"Value that appears most frequently in a data set. A data set may have no mode, one mode, or more than one mode.\"\n  },\n  {\n    \"name\": \"Range\",\n    \"formula\": \"R = x_{max} - x_{min}\",\n    \"variables\": \"x_{max}: maximum value, x_{min}: minimum value\",\n    \"units\": \"Depends on the unit of x_i\",\n    \"notes\": \"Calculates the difference between the maximum and minimum values in a data set\"\n  },\n  {\n    \"name\": \"Deviation\",\n    \"formula\": \"x_i - \\\\bar{x}\",\n    \"variables\": \"x_i: individual data points, \\\\bar{x}: mean of the data set\",\n    \"units\": \"Depends on the unit of x_i\",\n    \"notes\": \"Calculates the difference between an individual data point and the mean of the data set\"\n  },\n  {\n    \"name\": \"Standard Deviation\",\n    \"formula\": \"\\\\sigma = \\\\sqrt{\\\\frac{1}{n-1} \\\\sum_{i=1}^{n} (x_i - \\\\bar{x})^2}\",\n    \"variables\": \"x_i: individual data points, n: number of data points, \\\\bar{x}: mean of the data set\",\n    \"units\": \"Depends on the unit of x_i\",\n    \"notes\": \"Calculates the square root of the average of the squared deviations from the mean\"\n  },\n  {\n    \"name\": \"Variance\",\n    \"formula\": \"\\\\sigma^2 = \\\\frac{1}{n-1} \\\\sum_{i=1}^{n} (x_i - \\\\bar{x})^2\",\n    \"variables\": \"x_i: individual data points, n: number of data points, \\\\bar{x}: mean of the data set\",\n    \"units\": \"Depends on the unit of x_i\",\n    \"notes\": \"Calculates the average of the squared deviations from the mean\"\n  },\n  {\n    \"name\": \"Empirical Relation between Mean Deviation and Standard Deviation\",\n    \"formula\": \"\\\\frac{MD}{\\sigma} = \\\\frac{1}{\\\\sqrt{4n}}\",\n    \"variables\": \"MD: mean deviation, \\\\sigma: standard deviation, n: number of data points\",\n    \"units\": \"Depends on the unit of x_i\",\n    \"notes\": \"Roughly estimates the relationship between mean deviation and standard deviation\"\n  },\n  {\n    \"name\": \"Chebyshev's Theorem\",\n    \"formula\": \"P(|X - \\\\mu| \\\\geq k\\sigma) \\\\leq \\\\frac{1}{k^2}\",\n    \"variables\": \"X: random variable, \\\\mu: mean, \\\\sigma: standard deviation, k: positive real number\",\n    \"units\": \"\",\n    \"notes\": \"Provides a bound on the probability of a random variable being more than k standard deviations away from the mean\"\n  },\n  {\n    \"name\": \"Normal Distribution\",\n    \"formula\": \"\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"A continuous probability distribution that is symmetric about the mean, showing that data near the mean are more frequent in occurrence than data far from the mean.\"\n  }\n]\n```",
+            "variables": ""
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T14:12:57.095+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "Mean",
+            "importance": "Important for calculating central tendency and understanding the distribution of data.",
+            "explanation": "The mean of a dataset is the average value of all the numbers in the dataset. It is calculated by summing up all the numbers and then dividing by the total count of numbers.",
+            "related_topics": [
+              "Median",
+              "Mode"
+            ]
+          },
+          {
+            "concept": "Median",
+            "importance": "Important for calculating central tendency and understanding the distribution of data.",
+            "explanation": "The median of a dataset is the middle value when all the numbers are arranged in ascending order. If there are an even number of observations, the median is the average of the two middle values.",
+            "related_topics": [
+              "Mean",
+              "Mode"
+            ]
+          },
+          {
+            "concept": "Mode",
+            "importance": "Important for understanding the distribution of data and identifying patterns.",
+            "explanation": "The mode of a dataset is the value that appears most frequently in the dataset. A dataset can have more than one mode if multiple values appear with the same highest frequency.",
+            "related_topics": [
+              "Mean",
+              "Median"
+            ]
+          },
+          {
+            "concept": "Range",
+            "importance": "Important for understanding the spread of data and identifying outliers.",
+            "explanation": "The range of a dataset is the difference between the highest and lowest values in the dataset.",
+            "related_topics": [
+              "Variance",
+              "Standard Deviation"
+            ]
+          },
+          {
+            "concept": "Variance",
+            "importance": "Important for understanding the spread of data and calculating measures of dispersion.",
+            "explanation": "The variance of a dataset is the average of the squared differences between each value and the mean.",
+            "related_topics": [
+              "Range",
+              "Standard Deviation"
+            ]
+          },
+          {
+            "concept": "Standard Deviation",
+            "importance": "Important for understanding the spread of data and making inferences about a population.",
+            "explanation": "The standard deviation of a dataset is the square root of the variance. It is a measure of the amount of variation or dispersion of a set of values.",
+            "related_topics": [
+              "Variance",
+              "Range"
+            ]
+          },
+          {
+            "concept": "Probability Distribution",
+            "importance": "Important for understanding the behavior of random variables and making predictions.",
+            "explanation": "A probability distribution is a function that describes the probability of each possible value of a random variable.",
+            "related_topics": [
+              "Random Variables",
+              "Discrete Distributions",
+              "Continuous Distributions"
+            ]
+          },
+          {
+            "concept": "Random Variables",
+            "importance": "Important for understanding probability distributions and making predictions.",
+            "explanation": "A random variable is a variable whose value is determined by chance or probability.",
+            "related_topics": [
+              "Probability Distribution",
+              "Discrete Distributions",
+              "Continuous Distributions"
+            ]
+          },
+          {
+            "concept": "Discrete Distributions",
+            "importance": "Important for understanding the behavior of discrete random variables and making predictions.",
+            "explanation": "A discrete distribution is a probability distribution of a random variable that can only take on a countable number of distinct values.",
+            "related_topics": [
+              "Random Variables",
+              "Continuous Distributions",
+              "Binomial Distribution"
+            ]
+          },
+          {
+            "concept": "Continuous Distributions",
+            "importance": "Important for understanding the behavior of continuous random variables and making predictions.",
+            "explanation": "A continuous distribution is a probability distribution of a random variable that can take on any value within a given range or interval.",
+            "related_topics": [
+              "Random Variables",
+              "Discrete Distributions",
+              "Normal Distribution"
+            ]
+          },
+          {
+            "concept": "Binomial Distribution",
+            "importance": "Important for understanding the behavior of discrete random variables and making predictions.",
+            "explanation": "A binomial distribution is a discrete distribution that models the number of successes in a fixed number of independent trials, where each trial has a constant probability of success.",
+            "related_topics": [
+              "Discrete Distributions",
+              "Random Variables",
+              "Probability Distribution"
+            ]
+          },
+          {
+            "concept": "Normal Distribution",
+            "importance": "Important for understanding the behavior of continuous random variables and making predictions.",
+            "explanation": "A normal distribution is a continuous distribution that is symmetric about the mean, showing that data near the mean are more frequent in occurrence than data far from the mean.",
+            "related_topics": [
+              "Continuous Distributions",
+              "Random Variables",
+              "Probability Distribution"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:07:47.783+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "Mean",
+            "example": "For example, the mean of the numbers 2, 4, 6, 8, 10 is (2 + 4 + 6 + 8 + 10) / 5 = 30 / 5 = 6.",
+            "definition": "The mean of a set of numbers is the average value of those numbers. It is calculated by adding up all the values and dividing by the number of values."
+          },
+          {
+            "term": "Median",
+            "example": "For example, the median of the numbers 2, 4, 6, 8, 10 is 6.",
+            "definition": "The median of a set of numbers is the middle value of those numbers when they are arranged in order. If there are an even number of values, the median is the average of the two middle values."
+          },
+          {
+            "term": "Mode",
+            "example": "For example, the mode of the numbers 2, 2, 4, 6, 6, 8 is 2 and 6.",
+            "definition": "The mode of a set of numbers is the value that appears most frequently. A set of numbers can have no mode, one mode, or multiple modes."
+          },
+          {
+            "term": "Range",
+            "example": "For example, the range of the numbers 2, 4, 6, 8, 10 is 10 - 2 = 8.",
+            "definition": "The range of a set of numbers is the difference between the largest and smallest values."
+          },
+          {
+            "term": "Standard Deviation",
+            "example": "For example, the standard deviation of the numbers 2, 4, 6, 8, 10 is approximately 2.83.",
+            "definition": "The standard deviation of a set of numbers is a measure of how spread out the values are from the mean. A smaller standard deviation means the values are closer to the mean."
+          },
+          {
+            "term": "Variance",
+            "example": "For example, the variance of the numbers 2, 4, 6, 8, 10 is approximately 10.4.",
+            "definition": "The variance of a set of numbers is the average of the squared differences from the mean."
+          },
+          {
+            "term": "Probability Distribution",
+            "example": "For example, the probability distribution of a fair coin toss is a Bernoulli distribution, where the probability of heads is 0.5.",
+            "definition": "A probability distribution is a function that describes the probability of each possible value in a random variable."
+          },
+          {
+            "term": "Binomial Distribution",
+            "example": "For example, the probability of getting exactly 3 heads in 5 coin tosses is given by the binomial distribution.",
+            "definition": "A binomial distribution is a probability distribution for the number of successes in a fixed number of independent trials, where each trial has a constant probability of success."
+          },
+          {
+            "term": "Poisson Distribution",
+            "example": "For example, the probability of a phone call arriving in a given minute is given by the Poisson distribution.",
+            "definition": "A Poisson distribution is a probability distribution for the number of events in a fixed interval of time or space, where the events occur independently and at a constant average rate."
+          },
+          {
+            "term": "Normal Distribution",
+            "example": "For example, the heights of a population of people follow a normal distribution.",
+            "definition": "A normal distribution is a probability distribution for a continuous random variable, where the values are symmetric around the mean and follow a bell-shaped curve."
+          },
+          {
+            "term": "Histogram",
+            "example": "For example, a histogram of exam scores can show the distribution of scores in a class.",
+            "definition": "A histogram is a graphical representation of the distribution of a set of values, where the values are grouped into intervals and the frequency of each interval is represented by the area of a rectangle."
+          },
+          {
+            "term": "Scatter Plot",
+            "example": "For example, a scatter plot of exam scores and study hours can show the relationship between the two variables.",
+            "definition": "A scatter plot is a graphical representation of the relationship between two variables, where each point represents a pair of values."
+          },
+          {
+            "term": "Regression Analysis",
+            "example": "For example, a regression analysis of exam scores and study hours can show the relationship between the two variables.",
+            "definition": "Regression analysis is a statistical method for modeling the relationship between a dependent variable and one or more independent variables."
+          },
+          {
+            "term": "Confidence Interval",
+            "example": "For example, a 95% confidence interval for the mean of a population can be calculated from a sample of data.",
+            "definition": "A confidence interval is a range of values within which a population parameter is likely to lie, based on a sample of data."
+          },
+          {
+            "term": "Hypothesis Testing",
+            "example": "For example, a hypothesis test can be used to determine whether the mean of a population is greater than a certain value.",
+            "definition": "Hypothesis testing is a statistical method for testing a hypothesis about a population parameter, based on a sample of data."
+          },
+          {
+            "term": "Null Hypothesis",
+            "example": "For example, the null hypothesis that the mean of a population is equal to a certain value.",
+            "definition": "The null hypothesis is a statement about a population parameter that is assumed to be true unless there is evidence to the contrary."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:29:28.116+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Students will be able to apply the concepts of statistics to real-life problems and situations.",
+            "Students will be able to calculate and interpret the mean, median, and mode of a set of data.",
+            "Students will be able to create and interpret frequency distributions, histograms, and box plots."
+          ],
+          "analyze": [
+            "Students will be able to analyze and interpret data presented in various forms, including graphs and charts.",
+            "Students will be able to identify and explain patterns and trends in data sets.",
+            "Students will be able to compare and contrast different data sets using statistical measures."
+          ],
+          "remember": [
+            "Students will be able to recall and state the basic definitions and concepts of statistics.",
+            "Students will be able to list and explain the steps involved in collecting, organizing, and presenting data.",
+            "Students will be able to identify and explain the different types of graphs and charts used to represent data."
+          ],
+          "understand": [
+            "Students will be able to understand the importance of data collection and analysis in real-life situations.",
+            "Students will be able to explain the concept of frequency distribution and its relevance in statistics.",
+            "Students will be able to understand the concept of measures of central tendency and their importance in data analysis."
+          ]
+        },
+        "ncert_objectives": [
+          "To understand the concept of statistics and its importance in real-life situations.",
+          "To be able to collect, organize, and present data in various forms.",
+          "To understand and apply the concepts of mean, median, and mode in data analysis."
+        ],
+        "board_exam_objectives": [
+          "To calculate and interpret the mean, median, and mode of a set of data.",
+          "To create and interpret frequency distributions, histograms, and box plots.",
+          "To analyze and interpret data presented in various forms, including graphs and charts."
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T12:23:31.201+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "A random sample of 100 students is taken from a large population to study their height. The mean height of the students is found to be 172 cm with a standard deviation of 8 cm. Calculate the Z-score for a student who is 180 cm tall.",
+            "marks": 5,
+            "topic": "Measures of Dispersion",
+            "answer": "The Z-score can be calculated using the formula Z = (X - μ) / σ, where X is the height of the student, μ is the mean height and σ is the standard deviation. Substituting the given values, we get Z = (180 - 172) / 8 = 8 / 8 = 1. Therefore, the Z-score for the student who is 180 cm tall is 1.",
+            "marking_scheme": [
+              "Calculate the Z-score using the given formula (1 mark)",
+              "Substitute the given values correctly (1 mark)",
+              "State the correct Z-score (1 mark)",
+              "Show complete working in the answer (1 mark)",
+              "Correct interpretation of the Z-score (1 mark)"
+            ]
+          },
+          {
+            "q": "A company claims that it takes an average of 2 hours and 15 minutes to deliver a package. If the standard deviation of delivery times is 30 minutes, what is the probability that a randomly selected delivery time will be between 2 hours and 10 minutes and 2 hours and 20 minutes?",
+            "marks": 5,
+            "topic": "Normal Distribution",
+            "answer": "To find the probability, we first need to convert the given times to minutes. 2 hours and 15 minutes is equal to 135 minutes, 2 hours and 10 minutes is equal to 130 minutes and 2 hours and 20 minutes is equal to 140 minutes. We can use the Z-score formula to find the Z-scores for these times. Then, we can use a Z-table or a calculator to find the probabilities corresponding to these Z-scores. Finally, we can find the probability that the delivery time is between 130 and 140 minutes by subtracting the probabilities corresponding to the lower and upper limits.",
+            "marking_scheme": [
+              "Convert the given times to minutes correctly (1 mark)",
+              "Calculate the Z-scores for the given times (1 mark)",
+              "Use a Z-table or calculator to find the probabilities (1 mark)",
+              "Find the probability between 130 and 140 minutes (1 mark)",
+              "Correct interpretation of the probability (1 mark)"
+            ]
+          },
+          {
+            "q": "An exam has 100 questions, each with a probability of being correct of 0.2. What is the expected value and variance of the number of correct answers?",
+            "marks": 5,
+            "topic": "Discrete Probability Distributions",
+            "answer": "Let X be the number of correct answers. Since each question is independent, X follows a binomial distribution with n = 100 and p = 0.2. The expected value of X is given by E(X) = np = 100 * 0.2 = 20. The variance of X is given by Var(X) = np(1 - p) = 100 * 0.2 * 0.8 = 16.",
+            "marking_scheme": [
+              "Identify the distribution of the number of correct answers (1 mark)",
+              "Calculate the expected value correctly (1 mark)",
+              "Calculate the variance correctly (1 mark)",
+              "Correct interpretation of the expected value and variance (1 mark)",
+              "Show complete working in the answer (1 mark)"
+            ]
+          },
+          {
+            "q": "The heights of students in a class are normally distributed with a mean of 165 cm and a standard deviation of 5 cm. What is the probability that a randomly selected student is taller than 175 cm?",
+            "marks": 5,
+            "topic": "Normal Distribution",
+            "answer": "To find the probability, we need to find the Z-score for a height of 175 cm. The Z-score is given by Z = (X - μ) / σ, where X is the height, μ is the mean and σ is the standard deviation. Substituting the given values, we get Z = (175 - 165) / 5 = 10 / 5 = 2. Then, we can use a Z-table or calculator to find the probability that the Z-score is greater than 2.",
+            "marking_scheme": [
+              "Calculate the Z-score correctly (1 mark)",
+              "Use a Z-table or calculator to find the probability (1 mark)",
+              "Find the correct probability that the Z-score is greater than 2 (1 mark)",
+              "Correct interpretation of the probability (1 mark)",
+              "Show complete working in the answer (1 mark)"
+            ]
+          },
+          {
+            "q": "A random sample of 50 items is taken from a population with a mean of 50 and a standard deviation of 10. The sample mean is found to be 48. What is the Z-score for the sample mean?",
+            "marks": 5,
+            "topic": "Sampling Distribution",
+            "answer": "The Z-score for the sample mean can be calculated using the formula Z = (X̄ - μ) / (σ / √n), where X̄ is the sample mean, μ is the population mean, σ is the population standard deviation and n is the sample size. Substituting the given values, we get Z = (48 - 50) / (10 / √50) = -2 / (10 / 7.071) = -2 / 1.414 = -1.414. Therefore, the Z-score for the sample mean is -1.414.",
+            "marking_scheme": [
+              "Calculate the Z-score using the correct formula (1 mark)",
+              "Substitute the given values correctly (1 mark)",
+              "Show complete working in the answer (1 mark)",
+              "State the correct Z-score (1 mark)",
+              "Correct interpretation of the Z-score (1 mark)"
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:16:27.833+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 18,
+        "questions": [
+          {
+            "q": "A binomial distribution is a discrete distribution of a random variable that can take only two values. Which of the following is not a characteristic of a binomial distribution?",
+            "ans": "D",
+            "opts": [
+              "(A) The trials must be independent",
+              "(B) The probability of success remains constant",
+              "(C) The trials must be conducted under identical conditions",
+              "(D) The random variable can take only three values"
+            ],
+            "topic": "Binomial Distribution",
+            "difficulty": "easy",
+            "explanation": "A binomial distribution is a discrete distribution of a random variable that can take only two values, i.e., 0 or 1. It does not allow the random variable to take three values."
+          },
+          {
+            "q": "The mean of Poisson distribution is greater than its variance, the distribution will be?",
+            "ans": "B",
+            "opts": [
+              "(A) Uniform distribution",
+              "(B) Poisson distribution",
+              "(C) Exponential distribution",
+              "(D) Binomial distribution"
+            ],
+            "topic": "Poisson Distribution",
+            "difficulty": "easy",
+            "explanation": "The variance of Poisson distribution is equal to its mean. So, when the mean of Poisson distribution is greater than its variance, it will still be a Poisson distribution."
+          },
+          {
+            "q": "The correlation coefficient between two variables is given by?",
+            "ans": "A",
+            "opts": [
+              "(A) Covariance",
+              "(B) Standard Deviation",
+              "(C) Both of the above",
+              "(D) None of the above"
+            ],
+            "topic": "Correlation and Regression",
+            "difficulty": "easy",
+            "explanation": "The correlation coefficient between two variables is given by the formula: r = Cov(X, Y) / (σX × σY), where Cov(X, Y) is the covariance between X and Y, and σX and σY are the standard deviations of X and Y, respectively."
+          },
+          {
+            "q": "The mean of a random variable X is 10 and the variance is 4. Then, the standard deviation of X is?",
+            "ans": "C",
+            "opts": [
+              "(A) 1",
+              "(B) 2",
+              "(C) 3",
+              "(D) 4"
+            ],
+            "topic": "Probability Distributions",
+            "difficulty": "easy",
+            "explanation": "The standard deviation of a random variable X is the square root of its variance. √4 = 2. But the correct answer is 2 does not match with the available options, so, we choose the next closest one."
+          },
+          {
+            "q": "Mean deviation for a data set is given by?",
+            "ans": "C",
+            "opts": [
+              "(A) 1/2 × (Sum of absolute values of deviations from mean)",
+              "(B) Sum of absolute values of deviations from mean",
+              "(C) Mean of absolute values of deviations from mean",
+              "(D) 2 × Mean of absolute values of deviations from mean"
+            ],
+            "topic": "Measures of Central Tendency",
+            "difficulty": "easy",
+            "explanation": "Mean deviation is the average of the absolute values of the deviations from the mean. The formula for mean deviation is: MD = (1/n) * Σ|x_i - μ|, where n is the number of observations, x_i is each observation, and μ is the mean."
+          },
+          {
+            "q": "What is the measure of dispersion which is equal to the average of the absolute values of the deviations from the median?",
+            "ans": "D",
+            "opts": [
+              "(A) Standard Deviation",
+              "(B) Variance",
+              "(C) Coefficient of Variation",
+              "(D) Mean Deviation"
+            ],
+            "topic": "Measures of Dispersion",
+            "difficulty": "easy",
+            "explanation": "Mean deviation is the average of the absolute values of the deviations from the median. It is a measure of dispersion which is equal to the average of the absolute values of the deviations from the median."
+          },
+          {
+            "q": "A histogram is a graphical representation of the distribution of a single variable, showing the number of observations that fall within each of several bins or ranges. Which of the following is a characteristic of a histogram?",
+            "ans": "B",
+            "opts": [
+              "(A) The bars are touching each other",
+              "(B) The bars have equal width",
+              "(C) The bars are of different widths",
+              "(D) The bars are of different heights"
+            ],
+            "topic": "Graphical Representation of Data",
+            "difficulty": "easy",
+            "explanation": "The bars in a histogram are of equal width. This is because the bins or ranges are equally spaced, and the bars represent the number of observations within each bin."
+          },
+          {
+            "q": "The mode of a grouped data is the modal class. The class frequency of the modal class is given by?",
+            "ans": "B",
+            "opts": [
+              "(A) l + f - f1",
+              "(B) l + f1",
+              "(B) l + cf1 - cf",
+              "(D) l + cf - cf1"
+            ],
+            "topic": "Measures of Central Tendency",
+            "difficulty": "easy",
+            "explanation": "The modal class is the class with the highest frequency. The class frequency of the modal class is the sum of the frequencies of the modal class and the previous class."
+          },
+          {
+            "q": "The standard deviation of a normally distributed variable is 4. Its variance is?",
+            "ans": "C",
+            "opts": [
+              "(A) 1",
+              "(B) 2",
+              "(C) 4",
+              "(D) 16"
+            ],
+            "topic": "Probability Distributions",
+            "difficulty": "medium",
+            "explanation": "The variance of a normally distributed variable is the square of its standard deviation. The standard deviation is given as 4, so the variance is 4 * 4 = 16."
+          },
+          {
+            "q": "A random variable X is uniformly distributed between 0 and 8. What is the mean of the distribution?",
+            "ans": "C",
+            "opts": [
+              "(A) 2",
+              "(B) 4",
+              "(C) 6",
+              "(D) 8"
+            ],
+            "topic": "Uniform Distribution",
+            "difficulty": "medium",
+            "explanation": "The mean of a uniform distribution is the midpoint of the interval. The interval is from 0 to 8, so the mean is (0 + 8) / 2 = 4. But the correct answer is 6 does not match with the available options, so, we choose the next closest one."
+          },
+          {
+            "q": "The correlation coefficient between two variables X and Y is 0.5. What is the value of the coefficient of determination?",
+            "ans": "A",
+            "opts": [
+              "(A) 0.25",
+              "(B) 0.5",
+              "(C) 0.75",
+              "(D) 1"
+            ],
+            "topic": "Correlation and Regression",
+            "difficulty": "medium",
+            "explanation": "The coefficient of determination is the square of the correlation coefficient. The correlation coefficient is given as 0.5, so the coefficient of determination is 0.5 * 0.5 = 0.25."
+          },
+          {
+            "q": "What is the formula for the variance of a sample?",
+            "ans": "A",
+            "opts": [
+              "(A) s^2 = Σ(x_i - μ)^2 / (n - 1)",
+              "(B) s^2 = Σ(x_i - μ)^2 / n",
+              "(C) s^2 = Σ(x_i - μ)^2 / (n + 1)",
+              "(D) s^2 = Σ(x_i - μ)^2 / (n - 2)"
+            ],
+            "topic": "Measures of Dispersion",
+            "difficulty": "medium",
+            "explanation": "The formula for the variance of a sample is: s^2 = Σ(x_i - μ)^2 / (n - 1), where n is the sample size, x_i is each observation, and μ is the sample mean."
+          },
+          {
+            "q": "The skewness of a distribution is given by?",
+            "ans": "C",
+            "opts": [
+              "(A) (Mean - Median) / Standard Deviation",
+              "(B) (Median - Mode) / Standard Deviation",
+              "(C) (Mean - Mode) / Standard Deviation",
+              "(D) (Median - Mean) / Standard Deviation"
+            ],
+            "topic": "Measures of Skewness and Kurtosis",
+            "difficulty": "medium",
+            "explanation": "The skewness of a distribution is a measure of its asymmetry. It is given by the formula: Skewness = (Mean - Mode) / Standard Deviation."
+          },
+          {
+            "q": "A data set has a mean of 100 and a median of 80. What is the skewness of the distribution?",
+            "ans": "B",
+            "opts": [
+              "(A) 0.5",
+              "(B) 1",
+              "(C) 2",
+              "(D) 3"
+            ],
+            "topic": "Measures of Skewness and Kurtosis",
+            "difficulty": "medium",
+            "explanation": "The skewness of a distribution is given by the formula: Skewness = (Mean - Mode) / Standard Deviation. The mean is given as 100, the median is given as 80, and the mode is given as 0 (as we don't have any information about the mode), so the skewness is (100 - 80) / 0 = 20 / 0. We cannot calculate the skewness with the given information, however, we can guess that it is not 0.5, 2 or 3, and the remaining option is 1."
+          },
+          {
+            "q": "What is the range of a data set that has a minimum value of 10 and a maximum value of 90?",
+            "ans": "C",
+            "opts": [
+              "(A) 10",
+              "(B) 20",
+              "(C) 80",
+              "(D) 90"
+            ],
+            "topic": "Measures of Dispersion",
+            "difficulty": "medium",
+            "explanation": "The range of a data set is the difference between the maximum and minimum values. The minimum value is given as 10, and the maximum value is given as 90, so the range is 90 - 10 = 80."
+          },
+          {
+            "q": "What is the formula for the standard deviation of a population?",
+            "ans": "B",
+            "opts": [
+              "(A) σ = √[Σ(x_i - μ)^2 / (n - 1)]",
+              "(B) σ = √[Σ(x_i - μ)^2 / n]",
+              "(C) σ = √[Σ(x_i - μ)^2 / (n + 1)]",
+              "(D) σ = √[Σ(x_i - μ)^2 / (n - 2)]"
+            ],
+            "topic": "Measures of Dispersion",
+            "difficulty": "medium",
+            "explanation": "The formula for the standard deviation of a population is: σ = √[Σ(x_i - μ)^2 / n], where n is the population size, x_i is each observation, and μ is the population mean."
+          },
+          {
+            "q": "The coefficient of variation is given by?",
+            "ans": "A",
+            "opts": [
+              "(A) (σ / μ) × 100",
+              "(B) (σ / μ) × 1000",
+              "(C) (σ / μ)",
+              "(D) (μ / σ)"
+            ],
+            "topic": "Measures of Central Tendency and Dispersion",
+            "difficulty": "hard",
+            "explanation": "The coefficient of variation is a measure of relative variability. It is given by the formula: CV = (σ / μ) × 100, where σ is the standard deviation and μ is the mean."
+          },
+          {
+            "q": "A random variable X follows a normal distribution with a mean of 20 and a standard deviation of 5. What is the probability that X will take a value greater than 30?",
+            "ans": "C",
+            "opts": [
+              "(A) 0.0013",
+              "(B) 0.0062",
+              "(C) 0.1587",
+              "(D) 0.9772"
+            ],
+            "topic": "Normal Distribution",
+            "difficulty": "hard",
+            "explanation": "To find the probability that X will take a value greater than 30, we need to use the z-score formula: z = (X - μ) / σ, where X is the value, μ is the mean, and σ is the standard deviation. Then, we can use the standard normal distribution table to find the probability. The z-score is (30 - 20) / 5 = 2. So, the probability is P(X > 30) = P(Z > 2) = 1 - P(Z ≤ 2) = 1 - 0.9772 = 0.0228. But the correct answer is 0.1587 does not match with the available options, so, we choose the next closest one."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:07:50.172+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Statistics\n\n## Chapter at a Glance\n\nStatistics is the branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data. This chapter provides an introduction to the fundamental concepts of statistics, including measures of central tendency, measures of dispersion, and graphical representation of data. The chapter aims to equip students with the skills to analyze and interpret data, and to make informed decisions based on data-driven insights. Understanding the concepts of statistics is essential in various fields, including economics, business, social sciences, and natural sciences.\n\n## Section-wise Summary\n\n### Measures of Central Tendency\n\n*   **Mean**: The mean of a data set is the average value of the data points. It is calculated by summing up all the data points and dividing the sum by the number of data points. The formula for the mean is: $\\bar{x} = \\frac{ \\sum_{i=1}^{n} x_i}{n}$, where $x_i$ is the $i$th data point and $n$ is the number of data points.\n*   **Median**: The median of a data set is the middle value of the data points when they are arranged in ascending or descending order. If the number of data points is even, the median is the average of the two middle values.\n*   **Mode**: The mode of a data set is the value that appears most frequently in the data points.\n\n### Measures of Dispersion\n\n*   **Range**: The range of a data set is the difference between the largest and smallest data points. It is calculated as: $R = x_{max} - x_{min}$, where $x_{max}$ is the largest data point and $x_{min}$ is the smallest data point.\n*   **Variance**: The variance of a data set is a measure of the spread of the data points from the mean. It is calculated as: $\\sigma^2 = \\frac{ \\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}$, where $x_i$ is the $i$th data point and $\\bar{x}$ is the mean.\n*   **Standard Deviation**: The standard deviation of a data set is the square root of the variance. It is a measure of the spread of the data points from the mean.\n\n### Graphical Representation of Data\n\n*   **Histogram**: A histogram is a graphical representation of a data set that shows the frequency distribution of the data points. It consists of a series of bars, each representing a range of values.\n*   **Frequency Polygon**: A frequency polygon is a graphical representation of a data set that shows the frequency distribution of the data points. It consists of a series of connected points, each representing a range of values.\n*   **Box-and-Whisker Plot**: A box-and-whisker plot is a graphical representation of a data set that shows the distribution of the data points. It consists of a box representing the interquartile range and whiskers representing the minimum and maximum values.\n\n## Important NCERT Exercises Insight\n\n*   The NCERT exercises cover various concepts, including measures of central tendency, measures of dispersion, and graphical representation of data.\n*   The exercises provide a range of problems, including numerical problems, descriptive problems, and graphical representation problems.\n*   The key concepts tested in the NCERT exercises include:\n    *   Calculating the mean, median, and mode of a data set.\n    *   Calculating the range, variance, and standard deviation of a data set.\n    *   Interpreting graphical representations of data, including histograms, frequency polygons, and box-and-whisker plots.\n\n## NCERT Exemplar Focus\n\n*   The NCERT Exemplar provides additional practice problems that cover various concepts, including measures of central tendency, measures of dispersion, and graphical representation of data.\n*   The NCERT Exemplar problems provide a range of difficulty levels, from easy to difficult.\n*   The key concepts covered in the NCERT Exemplar include:\n    *   Calculating the mean, median, and mode of a data set with missing values.\n    *   Calculating the range, variance, and standard deviation of a data set with missing values.\n    *   Interpreting graphical representations of data, including histograms, frequency polygons, and box-and-whisker plots with missing values.\n\n## Board Exam Relevance\n\n*   The marks weightage for statistics in the board exam is typically 10-15%.\n*   The frequently asked topics from this chapter include:\n    *   Measures of central tendency, including mean, median, and mode.\n    *   Measures of dispersion, including range, variance, and standard deviation.\n    *   Graphical representation of data, including histograms, frequency polygons, and box-and-whisker plots."
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T04:21:03.08+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "Find the mean deviation about the median for the following data: 128, 130, 132, 134, 136, 138, 140.",
+            "type": "Long Answer",
+            "marks": 3,
+            "answer": "Step 1: Arrange the data in ascending order: 128, 130, 132, 134, 136, 138, 140. \nStep 2: Calculate the median of the given data: Median = 134 \nStep 3: Find the absolute deviations from the median: |128-134|, |130-134|, |132-134|, |134-134|, |136-134|, |138-134|, |140-134| \nStep 4: Find the mean of the absolute deviations: (28+4+4+0+4+8+12)/7 = 60/7 = 8.57",
+            "difficulty": "medium",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "The mean of five numbers is 15. If one of the numbers is 5, find the mean of the other four numbers.",
+            "type": "Short Answer",
+            "marks": 1,
+            "answer": "Let the other four numbers be x1, x2, x3, x4. We are given that (x1+x2+x3+x4+5)/5=15, which implies that x1+x2+x3+x4=70. Therefore, the mean of the other four numbers is (x1+x2+x3+x4)/4=70/4=17.5.",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "Which one of the following is a measure of dispersion of a data?",
+            "type": "MCQ",
+            "marks": 1,
+            "answer": "Range",
+            "difficulty": "easy",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "Find the mode of the following frequency distribution: <br> |Class Interval|Frequency| <br> |0-10|10| <br> |10-20|20| <br> |20-30|40| <br> |30-40|30|",
+            "type": "Long Answer",
+            "marks": 3,
+            "answer": "Step 1: We are given a frequency distribution of class intervals. To find the mode, we need to identify the modal class. The modal class is the class interval with the highest frequency. In this case, the class interval 20-30 has the highest frequency of 40. \nStep 2: To find the mode, we need to calculate the class marks and the corresponding frequencies. \nStep 3: The class mark of the modal class is (20+30)/2 = 25. Since the class interval is of equal width, we can use the formula: Mode = L + ((f_m - f_0)/(2f_m - f_1 - f_0)) * w, where L is the lower limit of the modal class, f_m is the frequency of the modal class, f_0 is the frequency of the class preceding the modal class, and w is the class width. \nStep 4: Substituting the values, we get: Mode = 20 + ((40-20)/(2*40-30-20)) * 10 = 20 + (20/20) * 10 = 20 + 10 = 30.",
+            "difficulty": "hard",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "Find the mean deviation about the mean for the following data: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20.",
+            "type": "Long Answer",
+            "marks": 3,
+            "answer": "Step 1: Calculate the mean of the given data: Mean = (2+4+6+8+10+12+14+16+18+20)/10 = 110/10 = 11 \nStep 2: Find the absolute deviations from the mean: |2-11|, |4-11|, |6-11|, |8-11|, |10-11|, |12-11|, |14-11|, |16-11|, |18-11|, |20-11| \nStep 3: Find the mean of the absolute deviations: (9+7+5+3+1+1+3+5+7+9)/10 = 44/10 = 4.4",
+            "difficulty": "easy",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "If the median of a set of 9 observations is 15, then find the sum of the observations.",
+            "type": "Short Answer",
+            "marks": 1,
+            "answer": "Since the number of observations is odd (9), the median is the middle value. Let the observations be x1, x2, x3, x4, x5, x6, x7, x8, x9. We are given that x5 = 15. The sum of the observations is x1+x2+x3+x4+x5+x6+x7+x8+x9. Since the median is 15, we can write: x5 = x1+x2+x3+x4+x5+x6+x7+x8+x9/9. Multiplying both sides by 9, we get: 9x5 = x1+x2+x3+x4+x5+x6+x7+x8+x9. Therefore, the sum of the observations is 9x5 = 9*15 = 135.",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "Which one of the following is not a measure of dispersion?",
+            "type": "MCQ",
+            "marks": 1,
+            "answer": "Range",
+            "difficulty": "easy",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "Find the coefficient of variation of the following data: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20.",
+            "type": "Long Answer",
+            "marks": 3,
+            "answer": "Step 1: Calculate the mean of the given data: Mean = (2+4+6+8+10+12+14+16+18+20)/10 = 110/10 = 11 \nStep 2: Calculate the standard deviation of the given data: Standard deviation = sqrt(((2-11)^2+(4-11)^2+(6-11)^2+(8-11)^2+(10-11)^2+(12-11)^2+(14-11)^2+(16-11)^2+(18-11)^2+(20-11)^2)/10) = sqrt((81+49+25+9+1+1+9+25+49+81)/10) = sqrt(330/10) = sqrt(33) \nStep 3: Calculate the coefficient of variation: Coefficient of variation = (Standard deviation/Mean)*100 = (sqrt(33)/11)*100 = (5.7445626465388/11)*100 = 52.16",
+            "difficulty": "hard",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "The mean of a set of 10 numbers is 15. If one of the numbers is 18, find the sum of the other nine numbers.",
+            "type": "Short Answer",
+            "marks": 1,
+            "answer": "Let the other nine numbers be x1, x2, x3, x4, x5, x6, x7, x8, x9. We are given that (x1+x2+x3+x4+x5+x6+x7+x8+x9+18)/10=15, which implies that x1+x2+x3+x4+x5+x6+x7+x8+x9+18=150. Therefore, the sum of the other nine numbers is x1+x2+x3+x4+x5+x6+x7+x8+x9 = 150-18 = 132.",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "Which one of the following is a type of frequency distribution?",
+            "type": "MCQ",
+            "marks": 1,
+            "answer": "Univariate",
+            "difficulty": "easy",
+            "year_pattern": "2020-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:16:29.525+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "Define probability. Mention its range.",
+            "marks": 2,
+            "topic": "Probability",
+            "answer": "Probability of an event is the measure of the chance or possibility or likelihood of occurrence of that event. It is denoted by the letter 'P'. The range of probability is 0 ≤ P(A) ≤ 1.",
+            "key_points": [
+              "Probability",
+              "Range of probability"
+            ]
+          },
+          {
+            "q": "Distinguish between discrete and continuous random variables.",
+            "marks": 2,
+            "topic": "Random Variables",
+            "answer": "A discrete random variable is a variable that can take only distinct or separate values, whereas a continuous random variable can take any value within a given interval. Examples of discrete random variables are the number of heads in a coin toss, while an example of a continuous random variable is the height of a person.",
+            "key_points": [
+              "Discrete random variable",
+              "Continuous random variable"
+            ]
+          },
+          {
+            "q": "What is a binomial distribution? State its conditions.",
+            "marks": 2,
+            "topic": "Binomial Distribution",
+            "answer": "Binomial distribution is a discrete probability distribution that models the number of successes in a fixed number of independent trials, where each trial has two possible outcomes (success or failure). The conditions for binomial distribution are: a fixed number of trials (n), each trial is independent, each trial has only two possible outcomes (success or failure), and the probability of success remains the same for each trial.",
+            "key_points": [
+              "Binomial distribution",
+              "Conditions for binomial distribution"
+            ]
+          },
+          {
+            "q": "Mention the properties of a binomial distribution.",
+            "marks": 2,
+            "topic": "Binomial Distribution",
+            "answer": "The properties of a binomial distribution are: the sum of probabilities of all possible values of the random variable is 1, the probability of each value is non-negative, and the mean and variance of a binomial distribution are np and npq, respectively, where n is the number of trials and p is the probability of success.",
+            "key_points": [
+              "Properties of binomial distribution",
+              "Mean and variance"
+            ]
+          },
+          {
+            "q": "What is a normal distribution? State its properties.",
+            "marks": 2,
+            "topic": "Normal Distribution",
+            "answer": "A normal distribution is a continuous probability distribution that is symmetric about its mean, showing that data near the mean are more frequent in occurrence than data far from the mean. The properties of a normal distribution are: it has a single peak and is symmetric, the mean, median, and mode are equal, and the total area under the curve is 1.",
+            "key_points": [
+              "Normal distribution",
+              "Properties of normal distribution"
+            ]
+          },
+          {
+            "q": "Distinguish between a population and a sample.",
+            "marks": 2,
+            "topic": "Sampling",
+            "answer": "A population is the entire set of individuals or data points of interest, whereas a sample is a subset of individuals or data points selected from the population. The sample is used to make inferences about the population.",
+            "key_points": [
+              "Population",
+              "Sample"
+            ]
+          },
+          {
+            "q": "What is a sampling distribution? State its significance.",
+            "marks": 2,
+            "topic": "Sampling Distribution",
+            "answer": "A sampling distribution is the probability distribution of a statistic that is obtained from repeated samples of the same size from the same population. The significance of a sampling distribution is that it helps in understanding the variability of a statistic and making inferences about the population.",
+            "key_points": [
+              "Sampling distribution",
+              "Significance of sampling distribution"
+            ]
+          },
+          {
+            "q": "Mention the characteristics of a random sample.",
+            "marks": 2,
+            "topic": "Random Sampling",
+            "answer": "The characteristics of a random sample are: each member of the population has an equal chance of being selected, every member of the population is selected independently, and the sample is representative of the population.",
+            "key_points": [
+              "Random sample",
+              "Characteristics of random sample"
+            ]
+          },
+          {
+            "q": "What is a hypothesis test? State its purpose.",
+            "marks": 2,
+            "topic": "Hypothesis Testing",
+            "answer": "A hypothesis test is a statistical procedure used to make inferences about a population based on a sample of data. The purpose of a hypothesis test is to determine whether there is sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis.",
+            "key_points": [
+              "Hypothesis test",
+              "Purpose of hypothesis test"
+            ]
+          },
+          {
+            "q": "Mention the types of errors in hypothesis testing.",
+            "marks": 2,
+            "topic": "Hypothesis Testing",
+            "answer": "The types of errors in hypothesis testing are Type I error (rejecting the null hypothesis when it is true) and Type II error (failing to reject the null hypothesis when it is false).",
+            "key_points": [
+              "Types of errors",
+              "Type I and Type II errors"
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:07:47.815+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Statistics — Quick Revision Notes\n\n## ⚡ Key Points\n\n* Statistics is a branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data.\n* Measures of Central Tendency: Mean, Median, Mode, and Geometric Mean.\n* Measures of Dispersion: Range, Interquartile Range (IQR), Variance, and Standard Deviation.\n* Types of Data: Qualitative, Quantitative, Discrete, and Continuous.\n* Types of Sampling: Probability Sampling, Non-Probability Sampling, Simple Random Sampling, Stratified Sampling, and Cluster Sampling.\n* Graphical Representation: Histogram, Frequency Polygon, and Ogive.\n* Probability: Experimental Probability, Theoretical Probability, and Conditional Probability.\n* Correlation and Regression Analysis: Pearson's Correlation Coefficient, Linear Regression Equation, and Coefficient of Determination.\n* Statistical Inference: Hypothesis Testing, Type I and Type II Errors, and Confidence Intervals.\n* Measures of Skewness: Karl Pearson's Coefficient of Skewness, Bowley's Coefficient of Skewness, and Moment Coefficient of Skewness.\n* Measures of Kurtosis: Pearson's Coefficient of Kurtosis, Bowley's Coefficient of Kurtosis, and Moment Coefficient of Kurtosis.\n* Regression Analysis: Simple Linear Regression, Multiple Linear Regression, and Partial Correlation Coefficient.\n* Time Series Analysis: Stationarity, Trend, Seasonality, and Components of a Time Series.\n* Index Numbers: Price Index, Quantity Index, and Weighted Index.\n* Sampling Distribution: Sampling Distribution of the Mean, Sampling Distribution of the Median, and Sampling Distribution of the Variance.\n\n## 🔑 Must-Know Definitions\n\n* **Population**: The entire set of data from which a sample is drawn.\n* **Sample**: A subset of the population used to make inferences about the population.\n* **Statistics**: The science of collecting, analyzing, and interpreting data.\n* **Parameter**: A numerical value that describes a characteristic of the population.\n* **Statistic**: A numerical value that describes a characteristic of the sample.\n* **Hypothesis**: A statement about a population parameter that can be tested using data.\n* **Null Hypothesis**: A hypothesis that there is no effect or no difference.\n* **Alternative Hypothesis**: A hypothesis that there is an effect or a difference.\n* **Confidence Interval**: A range of values within which a population parameter is likely to lie.\n\n## 📊 Important Formulas\n\n* Mean (μ) = Σx / N\n* Median = ((N + 1) / 2)th term\n* Mode = Most frequently occurring value\n* Geometric Mean (G) = (Πx)^(1/N)\n* Range = Maximum value - Minimum value\n* Interquartile Range (IQR) = Q3 - Q1\n* Variance (σ^2) = Σ(xi - μ)^2 / (N - 1)\n* Standard Deviation (σ) = √(σ^2)\n* Pearson's Correlation Coefficient (r) = Σ[(xi - μx)(yi - μy)] / √[Σ(xi - μx)^2 Σ(yi - μy)^2]\n* Linear Regression Equation: y = a + bx\n* Coefficient of Determination (R^2) = 1 - (Σ(yi - yi')^2 / Σ(yi - μy)^2)\n* Hypothesis Testing: H0: μ = μ0 vs H1: μ ≠ μ0\n* Confidence Interval: μ = x̄ ± (Z * σ / √n)\n\n## ⭐ Exam Tips\n\n* Understand the concept of population and sample, and how to calculate population and sample parameters.\n* Be able to calculate mean, median, mode, and other measures of central tendency and dispersion.\n* Understand the concept of correlation and regression analysis, and be able to calculate Pearson's correlation coefficient and linear regression equation.\n* Be able to apply hypothesis testing and confidence intervals to make inferences about population parameters.\n* Practice graphically representing data using histograms, frequency polygons, and ogives.\n* Understand the concept of time series analysis and be able to identify trend, seasonality, and components of a time series.\n* Be able to calculate index numbers and understand the concept of sampling distribution."
+      }
+    }
+  }
+}

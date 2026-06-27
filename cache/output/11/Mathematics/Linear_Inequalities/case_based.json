@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Linear Inequalities",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:14:13.602Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Rahul, a student, plans to buy a new mobile phone. He has a budget of ₹20,000. He has already saved ₹10,000. His parents have agreed to give him an allowance of ₹1,500 per month for the next 6 months. Rahul's best friend, Rohan, has offered to lend him an amount equal to the difference between his monthly allowance and the amount he has already saved, but only if he promises to repay it within 3 months. If the mobile phone costs more than ₹10,000, Rahul will have to take out a loan at an interest rate of 12% per annum. The interest will be compounded monthly. Can Rahul buy the mobile phone within his budget?",
+        "questions": [
+          {
+            "q": "What is the maximum amount Rahul can spend on the mobile phone?",
+            "opts": [
+              "(A) ₹10,000",
+              "(B) ₹15,000",
+              "(C) ₹20,000",
+              "(D) ₹25,000"
+            ],
+            "ans": "C",
+            "explanation": "Rahul has a budget of ₹20,000."
+          },
+          {
+            "q": "How much amount will Rohan lend Rahul?",
+            "opts": [
+              "(A) ₹1,000",
+              "(B) ₹2,000",
+              "(C) ₹3,000",
+              "(D) ₹5,000"
+            ],
+            "ans": "B",
+            "explanation": "Rohan will lend the difference between Rahul's monthly allowance (₹1,500) and the amount he has already saved (₹10,000), which is ₹1,500 - ₹10,000 = -₹8,500. However, since Rohan can't lend a negative amount, this option is not valid. Instead, we should calculate the amount Rohan will lend as ₹1,500 (monthly allowance) - ₹6,000 (amount saved in 4 months) = ₹500 per month. Since Rohan wants to lend an amount equal to this difference, we should find the total amount saved in 1 month first, then multiply it by 3, and then subtract the amount saved in 4 months from it. This will give us ₹1,500 - ₹6,000 = ₹4,500. We can't lend this amount for 4 months, since the question says that Rohan will lend the difference for 3 months. Therefore, we should calculate the amount saved in 1 month first, then multiply it by 3, and then subtract the amount saved in 3 months from it. This will give us ₹1,500 - ₹4,500 = ₹3,000."
+          },
+          {
+            "q": "How much amount will Rahul have to repay to Rohan?",
+            "opts": [
+              "(A) ₹1,000",
+              "(B) ₹3,000",
+              "(C) ₹4,500",
+              "(D) ₹5,000"
+            ],
+            "ans": "C",
+            "explanation": "Rahul will have to repay the amount lent by Rohan, which is ₹4,500."
+          },
+          {
+            "q": "What is the minimum amount Rahul needs to save to buy the mobile phone?",
+            "opts": [
+              "(A) ₹10,000",
+              "(B) ₹15,000",
+              "(C) ₹20,000",
+              "(D) ₹25,000"
+            ],
+            "ans": "C",
+            "explanation": "Rahul needs to save at least ₹20,000 to buy the mobile phone."
+          },
+          {
+            "q": "Can Rahul buy the mobile phone within his budget if it costs more than ₹15,000?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Maybe",
+              "(D) It depends"
+            ],
+            "ans": "B",
+            "explanation": "If the mobile phone costs more than ₹15,000, Rahul will have to take out a loan at an interest rate of 12% per annum, which means he won't be able to buy the mobile phone within his budget."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A bakery sells a variety of bread, including whole wheat, white, and rye. The bakery has a limited capacity to produce bread and can only make a certain number of loaves per day. The bakery wants to maximize its profits by producing the most profitable bread varieties and selling them at a price that will maximize revenue. The bakery's profit per loaf of bread is ₹2 for whole wheat, ₹3 for white, and ₹4 for rye. The bakery sells each loaf of bread for ₹5. The bakery has a fixed cost of ₹1,000 per day. The bakery produces 100 loaves of bread per day.",
+        "questions": [
+          {
+            "q": "What is the total revenue of the bakery per day?",
+            "opts": [
+              "(A) ₹500",
+              "(B) ₹1,000",
+              "(C) ₹2,000",
+              "(D) ₹3,000"
+            ],
+            "ans": "C",
+            "explanation": "The total revenue of the bakery per day is the total number of loaves sold multiplied by the selling price per loaf. Since the bakery sells each loaf of bread for ₹5 and produces 100 loaves per day, the total revenue is 100 loaves/day * ₹5/loaf = ₹500/day."
+          },
+          {
+            "q": "What is the total profit of the bakery per day?",
+            "opts": [
+              "(A) ₹1,000",
+              "(B) ₹2,000",
+              "(C) ₹3,000",
+              "(D) ₹4,000"
+            ],
+            "ans": "D",
+            "explanation": "The total profit of the bakery per day is the total revenue minus the fixed cost. Since the bakery's profit per loaf of bread is ₹2, ₹3, and ₹4 for whole wheat, white, and rye, respectively, and the bakery sells each loaf of bread for ₹5, the total revenue is 100 loaves/day * ₹5/loaf = ₹500/day. Subtracting the fixed cost of ₹1,000 per day from the total revenue gives us a profit of ₹500/day."
+          },
+          {
+            "q": "Can the bakery increase its profit by producing more loaves of bread?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Maybe",
+              "(D) It depends"
+            ],
+            "ans": "B",
+            "explanation": "The bakery's profit per loaf of bread is ₹2 for whole wheat, ₹3 for white, and ₹4 for rye. Since the bakery sells each loaf of bread for ₹5, the profit per loaf is ₹5 - ₹2 = ₹3 for whole wheat, ₹5 - ₹3 = ₹2 for white, and ₹5 - ₹4 = ₹1 for rye. The bakery produces 100 loaves of bread per day, which means it produces 100 whole wheat loaves, 0 white loaves, and 0 rye loaves. Since the profit per loaf of white bread is less than the profit per loaf of whole wheat bread, the bakery won't increase its profit by producing more loaves of bread."
+          },
+          {
+            "q": "What is the minimum number of loaves of rye bread the bakery must produce to maximize its profit?",
+            "opts": [
+              "(A) 0",
+              "(B) 10",
+              "(C) 20",
+              "(D) 50"
+            ],
+            "ans": "D",
+            "explanation": "The bakery's profit per loaf of bread is ₹2 for whole wheat, ₹3 for white, and ₹4 for rye. The bakery sells each loaf of bread for ₹5. To maximize its profit, the bakery should produce the most profitable bread varieties and sell them at a price that will maximize revenue. The profit per loaf of rye bread is ₹4, which is the highest among the three bread varieties. Therefore, the bakery should produce at least 50 loaves of rye bread to maximize its profit."
+          },
+          {
+            "q": "Can the bakery produce 100 loaves of whole wheat bread to maximize its profit?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Maybe",
+              "(D) It depends"
+            ],
+            "ans": "B",
+            "explanation": "The bakery's profit per loaf of bread is ₹2 for whole wheat, ₹3 for white, and ₹4 for rye. Since the bakery sells each loaf of bread for ₹5, the profit per loaf is ₹5 - ₹2 = ₹3 for whole wheat. However, producing 100 loaves of whole wheat bread will not maximize the bakery's profit, as it will sell each loaf for ₹5, which is less than the profit per loaf of rye bread. Therefore, the bakery cannot produce 100 loaves of whole wheat bread to maximize its profit."
+          }
+        ]
+      }
+    ]
+  }
+}

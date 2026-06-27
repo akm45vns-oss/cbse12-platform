@@ -1,0 +1,248 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:27:12.338Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Let A = {1, 2, 3} and B = {a, b, c}. If R = {(1, a), (2, b), (3, c)}, is R a function from A to B?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Depends on the context",
+          "(D) Not enough information"
+        ],
+        "ans": "A",
+        "explanation": "A relation R from A to B is said to be a function if every element of A has exactly one image in B. In this case, each element of A has exactly one image in B.",
+        "difficulty": "easy",
+        "topic": "Functions - Definition and Types"
+      },
+      {
+        "q": "Let f: R → R be a function defined by f(x) = 2x + 1. Find f(4)?",
+        "opts": [
+          "(A) 9",
+          "(B) 8",
+          "(C) 7",
+          "(D) 10"
+        ],
+        "ans": "A",
+        "explanation": "To find f(4), we substitute x = 4 in the given function f(x) = 2x + 1.",
+        "difficulty": "easy",
+        "topic": "Functions - Domain, Co-domain and Range"
+      },
+      {
+        "q": "Let A = {1, 2, 3} and B = {a, b, c}. If R = {(1, a), (1, b), (2, c)}, is R a function from A to B?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Depends on the context",
+          "(D) Not enough information"
+        ],
+        "ans": "B",
+        "explanation": "A relation R from A to B is said to be a function if every element of A has exactly one image in B. In this case, the element 1 of A has two images a and b in B.",
+        "difficulty": "easy",
+        "topic": "Functions - Definition and Types"
+      },
+      {
+        "q": "Let A = {1, 2} and B = {a, b}. If R = {(1, a), (2, a)}, what is the range of R?",
+        "opts": [
+          "(A) {a}",
+          "(B) {b}",
+          "(C) {a, b}",
+          "(D) ∅"
+        ],
+        "ans": "A",
+        "explanation": "The range of R is the set of all images of elements of A in B. In this case, the range of R is {a}.",
+        "difficulty": "easy",
+        "topic": "Functions - Domain, Co-domain and Range"
+      },
+      {
+        "q": "If A = {1, 2} and B = {a, b}, what is the number of functions from A to B?",
+        "opts": [
+          "(A) 2",
+          "(B) 3",
+          "(C) 4",
+          "(D) 6"
+        ],
+        "ans": "D",
+        "explanation": "The number of functions from A to B is given by n(B)^n(A), where n(A) and n(B) are the number of elements in A and B respectively.",
+        "difficulty": "easy",
+        "topic": "Functions - Domain, Co-domain and Range"
+      },
+      {
+        "q": "Let f: R → R be a function defined by f(x) = 2x^2 + 3x - 1. Find f(-2)?",
+        "opts": [
+          "(A) 1",
+          "(B) 3",
+          "(C) 5",
+          "(D) -1"
+        ],
+        "ans": "C",
+        "explanation": "To find f(-2), we substitute x = -2 in the given function f(x) = 2x^2 + 3x - 1.",
+        "difficulty": "medium",
+        "topic": "Functions - Domain, Co-domain and Range"
+      },
+      {
+        "q": "Let A = {1, 2, 3} and B = {a, b, c}. If R = {(1, a), (2, b), (3, c), (2, c)}, is R a function from A to B?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Depends on the context",
+          "(D) Not enough information"
+        ],
+        "ans": "B",
+        "explanation": "A relation R from A to B is said to be a function if every element of A has exactly one image in B. In this case, the element 2 of A has two images b and c in B.",
+        "difficulty": "medium",
+        "topic": "Functions - Definition and Types"
+      },
+      {
+        "q": "Let A = {1, 2} and B = {a, b}. If R = {(1, a), (2, b), (2, a)}, what is the co-domain of R?",
+        "opts": [
+          "(A) {a, b}",
+          "(B) {a}",
+          "(C) {b}",
+          "(D) ∅"
+        ],
+        "ans": "A",
+        "explanation": "The co-domain of R is the set of all elements in B that are mapped to by elements of A. In this case, the co-domain of R is {a, b}.",
+        "difficulty": "medium",
+        "topic": "Functions - Domain, Co-domain and Range"
+      },
+      {
+        "q": "Let f: R → R be a function defined by f(x) = x^2 - 2x + 1. Find f(0)?",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) 2",
+          "(D) -1"
+        ],
+        "ans": "A",
+        "explanation": "To find f(0), we substitute x = 0 in the given function f(x) = x^2 - 2x + 1.",
+        "difficulty": "medium",
+        "topic": "Functions - Domain, Co-domain and Range"
+      },
+      {
+        "q": "Let A = {1, 2} and B = {a, b}. If R = {(1, a), (2, b), (1, b)}, is R a function from A to B?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Depends on the context",
+          "(D) Not enough information"
+        ],
+        "ans": "B",
+        "explanation": "A relation R from A to B is said to be a function if every element of A has exactly one image in B. In this case, the element 1 of A has two images a and b in B.",
+        "difficulty": "medium",
+        "topic": "Functions - Definition and Types"
+      },
+      {
+        "q": "Let f: R → R be a function defined by f(x) = 2x^3 - 3x^2 + x - 1. Find f(1)?",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) 2",
+          "(D) -1"
+        ],
+        "ans": "D",
+        "explanation": "To find f(1), we substitute x = 1 in the given function f(x) = 2x^3 - 3x^2 + x - 1.",
+        "difficulty": "medium",
+        "topic": "Functions - Domain, Co-domain and Range"
+      },
+      {
+        "q": "Let A = {1, 2} and B = {a, b}. If R = {(1, a), (2, b), (2, a)}, what is the number of elements in the domain of R?",
+        "opts": [
+          "(A) 1",
+          "(B) 2",
+          "(C) 3",
+          "(D) 4"
+        ],
+        "ans": "B",
+        "explanation": "The domain of R is the set of all elements in A that are mapped to by elements of B. In this case, the domain of R is {1, 2}.",
+        "difficulty": "medium",
+        "topic": "Functions - Domain, Co-domain and Range"
+      },
+      {
+        "q": "Let A = {1, 2, 3} and B = {a, b, c}. If R = {(1, a), (2, b), (3, c), (3, a)}, is R a function from A to B?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Depends on the context",
+          "(D) Not enough information"
+        ],
+        "ans": "B",
+        "explanation": "A relation R from A to B is said to be a function if every element of A has exactly one image in B. In this case, the element 3 of A has two images a and c in B.",
+        "difficulty": "hard",
+        "topic": "Functions - Definition and Types"
+      },
+      {
+        "q": "Let f: R → R be a function defined by f(x) = x^3 - 2x^2 - 5x + 1. Find f(-1)?",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) -1",
+          "(D) 2"
+        ],
+        "ans": "C",
+        "explanation": "To find f(-1), we substitute x = -1 in the given function f(x) = x^3 - 2x^2 - 5x + 1.",
+        "difficulty": "hard",
+        "topic": "Functions - Domain, Co-domain and Range"
+      },
+      {
+        "q": "Let A = {1, 2, 3} and B = {a, b, c}. If R = {(1, a), (2, b), (3, c), (1, c)}, is R a function from A to B?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Depends on the context",
+          "(D) Not enough information"
+        ],
+        "ans": "B",
+        "explanation": "A relation R from A to B is said to be a function if every element of A has exactly one image in B. In this case, the element 1 of A has two images a and c in B.",
+        "difficulty": "hard",
+        "topic": "Functions - Definition and Types"
+      },
+      {
+        "q": "Let f: R → R be a function defined by f(x) = x^4 - 4x^3 + 5x^2 - 2x + 1. Find f(2)?",
+        "opts": [
+          "(A) 1",
+          "(B) 2",
+          "(C) 3",
+          "(D) 0"
+        ],
+        "ans": "A",
+        "explanation": "To find f(2), we substitute x = 2 in the given function f(x) = x^4 - 4x^3 + 5x^2 - 2x + 1.",
+        "difficulty": "hard",
+        "topic": "Functions - Domain, Co-domain and Range"
+      },
+      {
+        "q": "Let A = {1, 2, 3} and B = {a, b, c}. If R = {(1, a), (2, b), (3, c)}, what is the number of relations from A to B?",
+        "opts": [
+          "(A) 4",
+          "(B) 6",
+          "(C) 8",
+          "(D) 10"
+        ],
+        "ans": "B",
+        "explanation": "The number of relations from A to B is given by 2^(n(A)*n(B)), where n(A) and n(B) are the number of elements in A and B respectively.",
+        "difficulty": "hard",
+        "topic": "Relations - Definition and Types"
+      },
+      {
+        "q": "Let f: R → R be a function defined by f(x) = x^2 - 3x + 2. Find f(-2)?",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) -1",
+          "(D) 2"
+        ],
+        "ans": "C",
+        "explanation": "To find f(-2), we substitute x = -2 in the given function f(x) = x^2 - 3x + 2.",
+        "difficulty": "hard",
+        "topic": "Functions - Domain, Co-domain and Range"
+      }
+    ],
+    "total": 18
+  }
+}

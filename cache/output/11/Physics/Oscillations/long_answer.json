@@ -1,0 +1,79 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Oscillations",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:19:15.239Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A particle executes SHM with a time period of 2 seconds and an amplitude of 5 cm. If the particle starts from its mean position, find its acceleration and velocity at t = 1 second. (a) Calculate acceleration (b) Calculate velocity (c) Draw a neat sketch to illustrate the motion at t = 1 second.",
+        "marks": 5,
+        "answer": "To find the acceleration and velocity, we use the equations of SHM: a = -ω^2x and v = Aωcos(ωt + φ), where ω is the angular frequency, x is the displacement, A is the amplitude, and φ is the phase angle. Given that the time period is 2 seconds, we can find the angular frequency: ω = 2π / T = 2π / 2 = π rad/s. Since the particle starts from its mean position, φ = 0. At t = 1 second, the displacement is x = A cos(ωt) = 5 cos(π) = -5 cm. Therefore, the acceleration is a = -ω^2x = -π^2(-5) = 15π^2 m/s^2 ≈ 148.5 m/s^2. The velocity is v = Aωcos(ωt) = 5πcos(π) = -5π m/s ≈ -15.71 m/s. A sketch of the motion at t = 1 second would show the particle displaced by 5 cm from the mean position in the direction of negative x-axis, with a velocity of -15.71 m/s and acceleration of 148.5 m/s^2.",
+        "marking_scheme": [
+          "Acceleration calculation (1 mark)",
+          "Velocity calculation (1 mark)",
+          "Sketch description (2 marks)",
+          "Acceleration value (1 mark)",
+          "Velocity value (1 mark)"
+        ],
+        "topic": "Simple Harmonic Motion"
+      },
+      {
+        "q": "A mass of 2 kg is attached to a spring with a spring constant of 100 N/m. If the mass is displaced by 2 m from its mean position and released from rest, find the time taken by the mass to reach its mean position for the first time. (a) Calculate the time period of oscillation (b) Calculate the time taken to reach the mean position.",
+        "marks": 5,
+        "answer": "To find the time period of oscillation, we use the equation T = 2π √(m/k), where m is the mass and k is the spring constant. Given that m = 2 kg and k = 100 N/m, we can find the time period: T = 2π √(2/100) = 2π √(0.02) = 0.4π seconds. Since the mass is released from rest, the phase angle φ = π/2. The time taken to reach the mean position for the first time is equal to the time period divided by 4 (since the mass passes through the mean position for the first time at t = T/4). Therefore, the time taken to reach the mean position is T/4 = 0.4π/4 = π/10 seconds.",
+        "marking_scheme": [
+          "Time period calculation (1 mark)",
+          "Time taken calculation (1 mark)",
+          "Explanation of phase angle (1 mark)",
+          "Time period value (1 mark)",
+          "Time taken value (1 mark)"
+        ],
+        "topic": "Simple Harmonic Motion"
+      },
+      {
+        "q": "A body of mass 5 kg is attached to a spring with a spring constant of 200 N/m. If the body is oscillating with an amplitude of 10 cm and an angular frequency of 4 rad/s, find the total energy of the body. (a) Calculate the total energy (b) Calculate the kinetic energy at the mean position.",
+        "marks": 5,
+        "answer": "To find the total energy of the body, we use the equation E = (1/2)kA^2, where k is the spring constant and A is the amplitude. Given that k = 200 N/m and A = 10 cm = 0.1 m, we can find the total energy: E = (1/2) * 200 * 0.1^2 = 1 J. To find the kinetic energy at the mean position, we use the equation K = (1/2)mv^2, where m is the mass and v is the velocity. The velocity at the mean position is v = Aω = 0.1 * 4 = 0.4 m/s. Therefore, the kinetic energy at the mean position is K = (1/2) * 5 * 0.4^2 = 0.4 J.",
+        "marking_scheme": [
+          "Total energy calculation (1 mark)",
+          "Kinetic energy calculation (1 mark)",
+          "Explanation of energy conservation (1 mark)",
+          "Total energy value (1 mark)",
+          "Kinetic energy value (1 mark)"
+        ],
+        "topic": "Simple Harmonic Motion"
+      },
+      {
+        "q": "A particle is performing simple harmonic motion with an amplitude of 10 cm and an angular frequency of 2 rad/s. If the particle is at a displacement of 5 cm at t = 0, find its displacement, velocity, and acceleration at t = 0.5 seconds. (a) Calculate displacement (b) Calculate velocity (c) Calculate acceleration.",
+        "marks": 5,
+        "answer": "To find the displacement, velocity, and acceleration of the particle, we use the equations of SHM: x = A cos(ωt + φ), v = Aωsin(ωt + φ), and a = -ω^2x, where ω is the angular frequency, A is the amplitude, and φ is the phase angle. Given that A = 10 cm, ω = 2 rad/s, and x = 5 cm at t = 0, we can find the phase angle: 5 = 10 cos(φ), which gives φ = arccos(0.5) = π/3 radians. At t = 0.5 seconds, the displacement is x = 10 cos(2*0.5 + π/3) = 10 cos(π + π/3) = -10 cos(π/3) = -5√3 cm. The velocity is v = 10 * 2 sin(2*0.5 + π/3) = 10 * 2 sin(π + π/3) = -10 * 2 sin(π/3) = -10√3 m/s. The acceleration is a = -2^2 * (-5√3) = -20√3 m/s^2.",
+        "marking_scheme": [
+          "Displacement calculation (1 mark)",
+          "Velocity calculation (1 mark)",
+          "Acceleration calculation (1 mark)",
+          "Displacement value (1 mark)",
+          "Velocity value (1 mark)"
+        ],
+        "topic": "Simple Harmonic Motion"
+      },
+      {
+        "q": "A simple pendulum of length 1 m has a time period of 2 seconds. If the length is increased to 2 m, find the new time period. (a) Calculate the new time period (b) Explain why the time period increases.",
+        "marks": 5,
+        "answer": "To find the new time period, we use the equation T = 2π √(L/g), where L is the length and g is the acceleration due to gravity. Given that the original time period is 2 seconds and the original length is 1 m, we can find the new length: 2 = 2π √(L/g), which gives L = (2/2π)^2 g = (1/π)^2 g. The new length is 2 m, so the new time period is T = 2π √(2/π^2 g) = 2π √(2/g) = √2 * 2 seconds ≈ 2.83 seconds. The time period increases because the length of the pendulum increases, which reduces the angular frequency and increases the time period.",
+        "marking_scheme": [
+          "New time period calculation (1 mark)",
+          "Explanation of time period increase (1 mark)",
+          "New time period value (1 mark)",
+          "Explanation of angular frequency (1 mark)",
+          "Explanation of g value (1 mark)"
+        ],
+        "topic": "Simple Harmonic Motion"
+      }
+    ],
+    "total": 5
+  }
+}

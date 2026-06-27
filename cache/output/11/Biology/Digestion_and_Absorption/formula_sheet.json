@@ -1,0 +1,20 @@
+{
+  "class": "11",
+  "subject": "Biology",
+  "chapter": "Digestion and Absorption",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:03:27.149Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Content",
+        "formula": "[\n  {\n    \"name\": \"Fick's Law of Diffusion\",\n    \"formula\": \"J = -DA \\* (C1 - C2)/x\",\n    \"variables\": \"J: rate of diffusion, D: diffusion coefficient, A: surface area, C1 and C2: concentrations of the substance on either side, x: thickness of the membrane\",\n    \"units\": \"SI units: J = mol/s, D = m^2/s, A = m^2, C1 and C2 = mol/m^3, x = m\",\n    \"notes\": \"This law describes the movement of substances across a membrane.\"\n  },\n  {\n    \"name\": \"Gibbs-Donnan Equilibrium\",\n    \"formula\": \"P = R \\* T \\* ln(C1/C2)\",\n    \"variables\": \"P: osmotic pressure, R: gas constant, T: temperature, C1 and C2: concentrations of the solutes\",\n    \"units\": \"SI units: P = Pa, R = J/mol/K, T = K, C1 and C2 = mol/m^3\",\n    \"notes\": \"This law describes the equilibrium between two solutions separated by a semipermeable membrane.\"\n  },\n  {\n    \"name\": \"Law of Conservation of Mass\",\n    \"formula\": \"Mass in = Mass out\",\n    \"variables\": \"Mass in: mass of substances entering the system, Mass out: mass of substances leaving the system\",\n    \"units\": \"SI units: kg\",\n    \"notes\": \"This law describes the principle that mass is neither created nor destroyed in a chemical reaction.\"\n  },\n  {\n    \"name\": \"First Law of Thermodynamics\",\n    \"formula\": \"ΔE = Q - W\",\n    \"variables\": \"ΔE: change in energy, Q: heat energy, W: work done\",\n    \"units\": \"SI units: ΔE = J, Q = J, W = J\",\n    \"notes\": \"This law describes the relationship between energy and work done in a system.\"\n  },\n  {\n    \"name\": \"Second Law of Thermodynamics\",\n    \"formula\": \"ΔS = ΔQ / T\",\n    \"variables\": \"ΔS: change in entropy, ΔQ: heat energy, T: temperature\",\n    \"units\": \"SI units: ΔS = J/K, ΔQ = J, T = K\",\n    \"notes\": \"This law describes the relationship between entropy and heat energy in a system.\"\n  },\n  {\n    \"name\": \"Michaelis-Menten Kinetics\",\n    \"formula\": \"Vmax = Vm \\* [S]\",\n    \"variables\": \"Vmax: maximum rate of reaction, Vm: maximum velocity, [S]: concentration of substrate\",\n    \"units\": \"SI units: Vmax = mol/s, Vm = mol/s, [S] = mol/m^3\",\n    \"notes\": \"This law describes the relationship between the rate of enzyme-catalyzed reaction and substrate concentration.\"\n  }\n]",
+        "variables": "",
+        "units": "",
+        "notes": ""
+      }
+    ]
+  }
+}

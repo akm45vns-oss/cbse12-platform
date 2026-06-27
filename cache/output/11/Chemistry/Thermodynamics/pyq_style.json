@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Chemistry",
+  "chapter": "Thermodynamics",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:05:57.908Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "At constant pressure, the internal energy (ΔU) of a system is -3.5 kJ/mol. Calculate the change in enthalpy (ΔH) of the system. (Assume Δn = 0).",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "ΔH = ΔU + Δ(PV) = ΔU + PΔV = ΔU + 0 = -3.5 kJ/mol",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "A reaction is spontaneous at 298 K and 1 atm. Will it be spontaneous at 298 K and 2 atm?",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "False",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Calculate the work done by a system at constant pressure (2 atm) that expands from 2 L to 4 L against an external pressure of 2 atm.",
+        "type": "Fill in the Blank",
+        "marks": 2,
+        "answer": "4 L atm",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "What is the relation between ΔH and ΔU for a reaction at constant volume?",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "ΔH = ΔU + ΔnRT",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "A reaction has ΔH = 20 kJ/mol and ΔS = 15 J/K mol. Calculate the change in Gibbs free energy (ΔG) at 298 K.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "ΔG = ΔH - TΔS = 20 kJ/mol - (298 K)(0.015 kJ/K mol) = 19.74 kJ/mol",
+        "year_pattern": "2018-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "For a process at constant temperature, what is the relation between the work done (w) and the change in internal energy (ΔU)?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "w = -ΔU",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "A reaction is carried out at constant temperature and pressure. The reaction quotient (Q) is 10 times the equilibrium constant (K). Will the reaction proceed?",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "False",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Calculate the standard Gibbs free energy change (ΔG°) for the reaction 2H2(g) + O2(g) → 2H2O(g) at 298 K. (ΔH° = -113.1 kJ/mol and ΔS° = 136.0 J/K mol).",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "ΔG° = ΔH° - TΔS° = -113.1 kJ/mol - (298 K)(0.136 kJ/K mol) = -113.1 kJ/mol - 40.48 kJ/mol = -153.58 kJ/mol",
+        "year_pattern": "2018-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "A process is carried out at constant volume. The work done by the system will be ______. (Assume Δn = 0).",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "Zero",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Calculate the work done by a system that expands isothermally against an external pressure from 2 atm to 4 atm. (Assume the initial and final volumes are 2 L and 4 L respectively).",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "w = -nRT ln(P2/P1) = -nRT ln(4/2) = -nRT ln(2) = -nRT 0.693 = -2 L atm",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      }
+    ],
+    "total": 10
+  }
+}

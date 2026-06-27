@@ -1,0 +1,79 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Statistics",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T12:23:31.201Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A random sample of 100 students is taken from a large population to study their height. The mean height of the students is found to be 172 cm with a standard deviation of 8 cm. Calculate the Z-score for a student who is 180 cm tall.",
+        "marks": 5,
+        "answer": "The Z-score can be calculated using the formula Z = (X - μ) / σ, where X is the height of the student, μ is the mean height and σ is the standard deviation. Substituting the given values, we get Z = (180 - 172) / 8 = 8 / 8 = 1. Therefore, the Z-score for the student who is 180 cm tall is 1.",
+        "marking_scheme": [
+          "Calculate the Z-score using the given formula (1 mark)",
+          "Substitute the given values correctly (1 mark)",
+          "State the correct Z-score (1 mark)",
+          "Show complete working in the answer (1 mark)",
+          "Correct interpretation of the Z-score (1 mark)"
+        ],
+        "topic": "Measures of Dispersion"
+      },
+      {
+        "q": "A company claims that it takes an average of 2 hours and 15 minutes to deliver a package. If the standard deviation of delivery times is 30 minutes, what is the probability that a randomly selected delivery time will be between 2 hours and 10 minutes and 2 hours and 20 minutes?",
+        "marks": 5,
+        "answer": "To find the probability, we first need to convert the given times to minutes. 2 hours and 15 minutes is equal to 135 minutes, 2 hours and 10 minutes is equal to 130 minutes and 2 hours and 20 minutes is equal to 140 minutes. We can use the Z-score formula to find the Z-scores for these times. Then, we can use a Z-table or a calculator to find the probabilities corresponding to these Z-scores. Finally, we can find the probability that the delivery time is between 130 and 140 minutes by subtracting the probabilities corresponding to the lower and upper limits.",
+        "marking_scheme": [
+          "Convert the given times to minutes correctly (1 mark)",
+          "Calculate the Z-scores for the given times (1 mark)",
+          "Use a Z-table or calculator to find the probabilities (1 mark)",
+          "Find the probability between 130 and 140 minutes (1 mark)",
+          "Correct interpretation of the probability (1 mark)"
+        ],
+        "topic": "Normal Distribution"
+      },
+      {
+        "q": "An exam has 100 questions, each with a probability of being correct of 0.2. What is the expected value and variance of the number of correct answers?",
+        "marks": 5,
+        "answer": "Let X be the number of correct answers. Since each question is independent, X follows a binomial distribution with n = 100 and p = 0.2. The expected value of X is given by E(X) = np = 100 * 0.2 = 20. The variance of X is given by Var(X) = np(1 - p) = 100 * 0.2 * 0.8 = 16.",
+        "marking_scheme": [
+          "Identify the distribution of the number of correct answers (1 mark)",
+          "Calculate the expected value correctly (1 mark)",
+          "Calculate the variance correctly (1 mark)",
+          "Correct interpretation of the expected value and variance (1 mark)",
+          "Show complete working in the answer (1 mark)"
+        ],
+        "topic": "Discrete Probability Distributions"
+      },
+      {
+        "q": "The heights of students in a class are normally distributed with a mean of 165 cm and a standard deviation of 5 cm. What is the probability that a randomly selected student is taller than 175 cm?",
+        "marks": 5,
+        "answer": "To find the probability, we need to find the Z-score for a height of 175 cm. The Z-score is given by Z = (X - μ) / σ, where X is the height, μ is the mean and σ is the standard deviation. Substituting the given values, we get Z = (175 - 165) / 5 = 10 / 5 = 2. Then, we can use a Z-table or calculator to find the probability that the Z-score is greater than 2.",
+        "marking_scheme": [
+          "Calculate the Z-score correctly (1 mark)",
+          "Use a Z-table or calculator to find the probability (1 mark)",
+          "Find the correct probability that the Z-score is greater than 2 (1 mark)",
+          "Correct interpretation of the probability (1 mark)",
+          "Show complete working in the answer (1 mark)"
+        ],
+        "topic": "Normal Distribution"
+      },
+      {
+        "q": "A random sample of 50 items is taken from a population with a mean of 50 and a standard deviation of 10. The sample mean is found to be 48. What is the Z-score for the sample mean?",
+        "marks": 5,
+        "answer": "The Z-score for the sample mean can be calculated using the formula Z = (X̄ - μ) / (σ / √n), where X̄ is the sample mean, μ is the population mean, σ is the population standard deviation and n is the sample size. Substituting the given values, we get Z = (48 - 50) / (10 / √50) = -2 / (10 / 7.071) = -2 / 1.414 = -1.414. Therefore, the Z-score for the sample mean is -1.414.",
+        "marking_scheme": [
+          "Calculate the Z-score using the correct formula (1 mark)",
+          "Substitute the given values correctly (1 mark)",
+          "Show complete working in the answer (1 mark)",
+          "State the correct Z-score (1 mark)",
+          "Correct interpretation of the Z-score (1 mark)"
+        ],
+        "topic": "Sampling Distribution"
+      }
+    ],
+    "total": 5
+  }
+}

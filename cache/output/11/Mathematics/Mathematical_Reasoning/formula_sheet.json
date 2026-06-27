@@ -1,0 +1,83 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Mathematical Reasoning",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:34:23.976Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Converse of a Statement",
+        "formula": "If p implies q, then p is a consequence of q.",
+        "variables": "p: the first statement, q: the second statement",
+        "units": "",
+        "notes": "Used to express that the truth of q implies the truth of p."
+      },
+      {
+        "name": "Inverse of a Statement",
+        "formula": "If p implies q, then not p implies not q.",
+        "variables": "p: the first statement, q: the second statement",
+        "units": "",
+        "notes": "Used to express that the falsity of q implies the falsity of p."
+      },
+      {
+        "name": "Contrapositive of a Statement",
+        "formula": "If not q implies not p, then p implies q.",
+        "variables": "p: the first statement, q: the second statement",
+        "units": "",
+        "notes": "Used to express that the falsity of q implies the falsity of p, which is equivalent to p implying q."
+      },
+      {
+        "name": "Addition Principle for Counting",
+        "formula": "Total number of outcomes = number of outcomes of one event + number of outcomes of another event - number of outcomes of both events.",
+        "variables": "Total number of outcomes: T, number of outcomes of one event: n(A), number of outcomes of another event: n(B), number of outcomes of both events: n(A ∩ B)",
+        "units": "",
+        "notes": "Used to calculate the total number of outcomes when events are counted separately."
+      },
+      {
+        "name": "Multiplication Principle for Counting",
+        "formula": "Total number of outcomes = number of outcomes of first event × number of outcomes of second event.",
+        "variables": "Total number of outcomes: T, number of outcomes of first event: n(A), number of outcomes of second event: n(B)",
+        "units": "",
+        "notes": "Used to calculate the total number of outcomes when events are counted together."
+      },
+      {
+        "name": "Principle of Inclusion-Exclusion",
+        "formula": "n(A ∪ B) = n(A) + n(B) - n(A ∩ B)",
+        "variables": "n(A ∪ B): total number of outcomes, n(A): number of outcomes of first event, n(B): number of outcomes of second event, n(A ∩ B): number of outcomes of both events",
+        "units": "",
+        "notes": "Used to calculate the total number of outcomes in the union of two events."
+      },
+      {
+        "name": "De Morgan's Law",
+        "formula": "A' ∪ B' = (A ∩ B)', A' ∩ B' = (A ∪ B)'",
+        "variables": "A': complement of set A, B': complement of set B, A ∩ B: intersection of sets A and B, A ∪ B: union of sets A and B",
+        "units": "",
+        "notes": "Used to express the complement of the union and intersection of sets."
+      },
+      {
+        "name": "Laws of Complement",
+        "formula": "A ∪ A' = U, A ∩ A' = ∅, n(A ∪ A') = n(U), n(A ∩ A') = 0",
+        "variables": "A': complement of set A, U: universal set, ∅: empty set, n(A ∪ A'): total number of outcomes in the union of set A and its complement",
+        "units": "",
+        "notes": "Used to express the properties of the complement of a set."
+      },
+      {
+        "name": "Complement Law",
+        "formula": "n(A') = n(U) - n(A)",
+        "variables": "n(A'): number of outcomes in the complement of set A, n(U): total number of outcomes in the universal set, n(A): number of outcomes in set A",
+        "units": "",
+        "notes": "Used to calculate the number of outcomes in the complement of a set."
+      },
+      {
+        "name": "Principle of Mathematical Induction",
+        "formula": "P(1) is true, and if P(k) is true for any positive integer k, then P(k + 1) is true.",
+        "variables": "P(k): a statement to be proved for all positive integers k",
+        "units": "",
+        "notes": "Used to prove that a statement is true for all positive integers."
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Presentation of Data",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:22:05.893Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The Indian government has been conducting a nationwide survey to assess the impact of the COVID-19 pandemic on the country's workforce. According to the survey, the average age of the workforce in the urban areas is 35.6 years, with a standard deviation of 8.2 years. In the rural areas, the average age is 32.9 years, with a standard deviation of 6.5 years. Compare the age distribution of the workforce in urban and rural areas.",
+        "questions": [
+          {
+            "q": "What is the average age of the workforce in the urban areas?",
+            "opts": [
+              "(A) 35.5 years",
+              "(B) 35.6 years",
+              "(C) 35.7 years",
+              "(D) 35.8 years"
+            ],
+            "ans": "B",
+            "explanation": "The passage states that the average age of the workforce in urban areas is 35.6 years."
+          },
+          {
+            "q": "What is the standard deviation of the workforce age in rural areas?",
+            "opts": [
+              "(A) 6.3 years",
+              "(B) 6.5 years",
+              "(C) 6.7 years",
+              "(D) 6.9 years"
+            ],
+            "ans": "B",
+            "explanation": "The passage states that the standard deviation of the workforce age in rural areas is 6.5 years."
+          },
+          {
+            "q": "What can be inferred from the comparison of the average age of the workforce in urban and rural areas?",
+            "opts": [
+              "(A) The workforce in urban areas is older than in rural areas",
+              "(B) The workforce in rural areas is older than in urban areas",
+              "(C) The workforce in urban and rural areas has the same age distribution",
+              "(D) No inference can be made"
+            ],
+            "ans": "A",
+            "explanation": "The passage states that the average age of the workforce in urban areas (35.6 years) is higher than in rural areas (32.9 years)."
+          },
+          {
+            "q": "What type of data is presented in the passage?",
+            "opts": [
+              "(A) Nominal data",
+              "(B) Ordinal data",
+              "(C) Interval data",
+              "(D) Ratio data"
+            ],
+            "ans": "C",
+            "explanation": "The passage presents data on the average age of the workforce, which is an interval data as it has a meaningful zero point."
+          },
+          {
+            "q": "What is the purpose of the nationwide survey mentioned in the passage?",
+            "opts": [
+              "(A) To assess the impact of the COVID-19 pandemic on the economy",
+              "(B) To compare the age distribution of the workforce in urban and rural areas",
+              "(C) To determine the average age of the workforce in the country",
+              "(D) To identify the standard deviation of the workforce age in urban areas"
+            ],
+            "ans": "B",
+            "explanation": "The passage states that the survey is to assess the impact of the COVID-19 pandemic on the country's workforce, but the specific purpose of comparing the age distribution of the workforce in urban and rural areas can be inferred."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "The Central Bureau of Statistics has released a report on the average monthly expenditure of households in India. According to the report, the average monthly expenditure of a two-person household is ₹ 18,500, with a standard deviation of ₹ 2,500. The average monthly expenditure of a three-person household is ₹ 22,500, with a standard deviation of ₹ 3,000. Compare the average monthly expenditure of two-person and three-person households.",
+        "questions": [
+          {
+            "q": "What is the average monthly expenditure of a two-person household?",
+            "opts": [
+              "(A) ₹ 18,000",
+              "(B) ₹ 18,500",
+              "(C) ₹ 19,000",
+              "(D) ₹ 19,500"
+            ],
+            "ans": "B",
+            "explanation": "The passage states that the average monthly expenditure of a two-person household is ₹ 18,500."
+          },
+          {
+            "q": "What is the standard deviation of the average monthly expenditure of a three-person household?",
+            "opts": [
+              "(A) ₹ 2,500",
+              "(B) ₹ 2,800",
+              "(C) ₹ 3,000",
+              "(D) ₹ 3,200"
+            ],
+            "ans": "C",
+            "explanation": "The passage states that the standard deviation of the average monthly expenditure of a three-person household is ₹ 3,000."
+          },
+          {
+            "q": "What can be inferred from the comparison of the average monthly expenditure of two-person and three-person households?",
+            "opts": [
+              "(A) The monthly expenditure of three-person households is higher than that of two-person households",
+              "(B) The monthly expenditure of two-person households is higher than that of three-person households",
+              "(C) The monthly expenditure of two-person and three-person households is the same",
+              "(D) No inference can be made"
+            ],
+            "ans": "A",
+            "explanation": "The passage states that the average monthly expenditure of a three-person household (₹ 22,500) is higher than that of a two-person household (₹ 18,500)."
+          },
+          {
+            "q": "What type of data is presented in the passage?",
+            "opts": [
+              "(A) Nominal data",
+              "(B) Ordinal data",
+              "(C) Interval data",
+              "(D) Ratio data"
+            ],
+            "ans": "C",
+            "explanation": "The passage presents data on the average monthly expenditure of households, which is an interval data as it has a meaningful zero point."
+          },
+          {
+            "q": "What is the purpose of the report released by the Central Bureau of Statistics?",
+            "opts": [
+              "(A) To compare the average monthly expenditure of two-person and three-person households",
+              "(B) To determine the average monthly expenditure of households in India",
+              "(C) To identify the standard deviation of the average monthly expenditure of households",
+              "(D) To assess the impact of inflation on household expenditure"
+            ],
+            "ans": "B",
+            "explanation": "The passage states that the report is on the average monthly expenditure of households in India, but the specific purpose of comparing the average monthly expenditure of two-person and three-person households can be inferred."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:25:15.589Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the primary purpose of a function in programming?",
+        "opts": [
+          "(A) To store data",
+          "(B) To perform a specific task",
+          "(C) To create a new variable",
+          "(D) To read input"
+        ],
+        "ans": "B",
+        "explanation": "Functions are used to group a set of statements together to perform a specific task.",
+        "difficulty": "easy",
+        "topic": "Introduction to Functions"
+      },
+      {
+        "q": "What is the return type of a function with no return statement?",
+        "opts": [
+          "(A) void",
+          "(B) int",
+          "(C) float",
+          "(D) boolean"
+        ],
+        "ans": "A",
+        "explanation": "In C, if a function has no return statement, it implicitly returns void.",
+        "difficulty": "easy",
+        "topic": "Function Return Types"
+      },
+      {
+        "q": "Which of the following is a valid function signature in C?",
+        "opts": [
+          "(A) int func();",
+          "(B) void func();",
+          "(C) func();",
+          "(D) int func(int);"
+        ],
+        "ans": "D",
+        "explanation": "A function signature in C must specify the return type and any function parameters.",
+        "difficulty": "easy",
+        "topic": "Function Signatures"
+      },
+      {
+        "q": "What happens when a function is called recursively?",
+        "opts": [
+          "(A) It creates a new stack frame every time it's called",
+          "(B) It reduces the complexity of the program",
+          "(C) It increases the memory usage of the program",
+          "(D) It terminates the program"
+        ],
+        "ans": "A",
+        "explanation": "Recursion involves the function calling itself, creating a new stack frame each time.",
+        "difficulty": "medium",
+        "topic": "Recursion"
+      },
+      {
+        "q": "What is the base case in a recursive function?",
+        "opts": [
+          "(A) The condition that stops the recursion",
+          "(B) The condition that starts the recursion",
+          "(C) The function parameter",
+          "(D) The return statement"
+        ],
+        "ans": "A",
+        "explanation": "The base case is the condition that stops the recursion, preventing infinite recursion.",
+        "difficulty": "medium",
+        "topic": "Recursion"
+      },
+      {
+        "q": "How do you pass arguments to a function in C?",
+        "opts": [
+          "(A) By using a comma-separated list of variables",
+          "(B) By using a comma-separated list of values",
+          "(C) By using function pointers",
+          "(D) By using a struct"
+        ],
+        "ans": "A",
+        "explanation": "In C, function arguments are passed using a comma-separated list of variables.",
+        "difficulty": "medium",
+        "topic": "Function Arguments"
+      },
+      {
+        "q": "What is the difference between `void func()` and `func()`?",
+        "opts": [
+          "(A) The return type",
+          "(B) The function name",
+          "(C) The function parameters",
+          "(D) The memory usage"
+        ],
+        "ans": "A",
+        "explanation": "The `void` keyword specifies that a function does not return any value.",
+        "difficulty": "medium",
+        "topic": "Function Signatures"
+      },
+      {
+        "q": "What happens when a function attempts to return a value of the wrong type?",
+        "opts": [
+          "(A) It raises an error",
+          "(B) It truncates the value to the correct type",
+          "(C) It converts the value to the correct type",
+          "(D) It continues executing the program"
+        ],
+        "ans": "A",
+        "explanation": "In C, attempting to return a value of the wrong type results in a compilation error.",
+        "difficulty": "medium",
+        "topic": "Function Return Types"
+      },
+      {
+        "q": "How do you pass a pointer to a function in C?",
+        "opts": [
+          "(A) By using the `*` operator",
+          "(B) By using the `&` operator",
+          "(C) By using the `sizeof` operator",
+          "(D) By using the `malloc` function"
+        ],
+        "ans": "B",
+        "explanation": "In C, the `&` operator is used to get the memory address of a variable, which can be passed to a function as a pointer.",
+        "difficulty": "hard",
+        "topic": "Pointers and Functions"
+      },
+      {
+        "q": "What is the difference between a function pointer and a regular pointer?",
+        "opts": [
+          "(A) A function pointer points to a function, while a regular pointer points to a variable",
+          "(B) A function pointer points to a variable, while a regular pointer points to a function",
+          "(C) A function pointer is used for input, while a regular pointer is used for output",
+          "(D) A function pointer is used for output, while a regular pointer is used for input"
+        ],
+        "ans": "A",
+        "explanation": "Function pointers are used to point to functions, while regular pointers are used to point to variables.",
+        "difficulty": "hard",
+        "topic": "Pointers and Functions"
+      },
+      {
+        "q": "How do you pass an array to a function in C?",
+        "opts": [
+          "(A) By using the `sizeof` operator",
+          "(B) By using the `malloc` function",
+          "(C) By passing a pointer to the first element",
+          "(D) By passing the entire array"
+        ],
+        "ans": "C",
+        "explanation": "In C, when passing an array to a function, the function receives a pointer to the first element of the array.",
+        "difficulty": "hard",
+        "topic": "Function Arguments"
+      },
+      {
+        "q": "What is the purpose of the `const` keyword in function signatures?",
+        "opts": [
+          "(A) To specify the return type",
+          "(B) To specify the function parameters",
+          "(C) To indicate that the function does not modify the input",
+          "(D) To indicate that the function modifies the input"
+        ],
+        "ans": "C",
+        "explanation": "The `const` keyword in function signatures indicates that the function does not modify the input.",
+        "difficulty": "hard",
+        "topic": "Function Signatures"
+      },
+      {
+        "q": "What happens when a function is called with a variable number of arguments?",
+        "opts": [
+          "(A) It raises an error",
+          "(B) It truncates the arguments",
+          "(C) It uses the ellipsis operator to handle extra arguments",
+          "(D) It ignores the extra arguments"
+        ],
+        "ans": "C",
+        "explanation": "In C, the ellipsis operator (`...`) is used to handle a variable number of arguments in a function.",
+        "difficulty": "hard",
+        "topic": "Variable Argument Functions"
+      },
+      {
+        "q": "How do you implement a function with a variable number of arguments in C?",
+        "opts": [
+          "(A) Using the `sizeof` operator",
+          "(B) Using the `malloc` function",
+          "(C) Using the ellipsis operator",
+          "(D) Using a struct"
+        ],
+        "ans": "C",
+        "explanation": "In C, the ellipsis operator (`...`) is used to implement a function with a variable number of arguments.",
+        "difficulty": "hard",
+        "topic": "Variable Argument Functions"
+      },
+      {
+        "q": "What is the difference between a function and a procedure?",
+        "opts": [
+          "(A) A function returns a value, while a procedure does not",
+          "(B) A function does not return a value, while a procedure returns a value",
+          "(C) A function is used for input, while a procedure is used for output",
+          "(D) A function is used for output, while a procedure is used for input"
+        ],
+        "ans": "A",
+        "explanation": "Functions are used to compute a value, while procedures are used to perform an action.",
+        "difficulty": "hard",
+        "topic": "Functions vs Procedures"
+      },
+      {
+        "q": "How do you implement a recursive function in C?",
+        "opts": [
+          "(A) By using a loop",
+          "(B) By using a pointer",
+          "(C) By using the `while` statement",
+          "(D) By using a function call"
+        ],
+        "ans": "D",
+        "explanation": "In C, a recursive function calls itself to solve a problem.",
+        "difficulty": "hard",
+        "topic": "Recursion"
+      },
+      {
+        "q": "What is the base case in a recursive function implementation?",
+        "opts": [
+          "(A) The condition that stops the recursion",
+          "(B) The condition that starts the recursion",
+          "(C) The function parameter",
+          "(D) The return statement"
+        ],
+        "ans": "A",
+        "explanation": "The base case is the condition that stops the recursion, preventing infinite recursion.",
+        "difficulty": "hard",
+        "topic": "Recursion"
+      },
+      {
+        "q": "How do you optimize a recursive function to avoid stack overflow?",
+        "opts": [
+          "(A) By using a loop",
+          "(B) By using a pointer",
+          "(C) By using memoization",
+          "(D) By using dynamic programming"
+        ],
+        "ans": "C",
+        "explanation": "Memoization involves storing the results of expensive function calls to avoid redundant calculations.",
+        "difficulty": "hard",
+        "topic": "Recursion Optimization"
+      },
+      {
+        "q": "What is the purpose of the `register` keyword in function signatures?",
+        "opts": [
+          "(A) To specify the return type",
+          "(B) To specify the function parameters",
+          "(C) To indicate that the function uses a register variable",
+          "(D) To indicate that the function does not use a register variable"
+        ],
+        "ans": "C",
+        "explanation": "The `register` keyword indicates that a function uses a register variable.",
+        "difficulty": "hard",
+        "topic": "Function Signatures"
+      }
+    ],
+    "total": 19
+  }
+}

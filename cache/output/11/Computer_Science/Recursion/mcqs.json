@@ -1,0 +1,235 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Recursion",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:32:46.167Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is recursion in programming?",
+        "opts": [
+          "(A) A programming concept where a function calls itself",
+          "(B) A data structure where a node points to its parent",
+          "(C) A control structure where a loop continues indefinitely",
+          "(D) A debugging tool where errors are reported"
+        ],
+        "ans": "A",
+        "explanation": "Recursion is a programming concept where a function calls itself until it reaches a base case, which stops the recursion.",
+        "difficulty": "easy",
+        "topic": "Introduction to Recursion"
+      },
+      {
+        "q": "What is the base case in recursion?",
+        "opts": [
+          "(A) The condition that stops the recursion",
+          "(B) The condition that starts the recursion",
+          "(C) The condition that repeats the recursion",
+          "(D) The condition that skips the recursion"
+        ],
+        "ans": "A",
+        "explanation": "The base case is the condition that stops the recursion, preventing infinite loops.",
+        "difficulty": "easy",
+        "topic": "Introduction to Recursion"
+      },
+      {
+        "q": "What is the time complexity of a recursive function?",
+        "opts": [
+          "(A) O(1) - constant time",
+          "(B) O(n) - linear time",
+          "(C) O(2^n) - exponential time",
+          "(D) O(n!) - factorial time"
+        ],
+        "ans": "C",
+        "explanation": "The time complexity of a recursive function can be exponential, depending on the number of recursive calls.",
+        "difficulty": "easy",
+        "topic": "Time and Space Complexity of Recursion"
+      },
+      {
+        "q": "What is memoization in recursion?",
+        "opts": [
+          "(A) A technique to store intermediate results",
+          "(B) A technique to skip intermediate results",
+          "(C) A technique to repeat the same calculation",
+          "(D) A technique to skip the base case"
+        ],
+        "ans": "A",
+        "explanation": "Memoization is a technique to store intermediate results in a recursive function, improving performance.",
+        "difficulty": "medium",
+        "topic": "Optimization Techniques for Recursion"
+      },
+      {
+        "q": "What is the difference between recursion and iteration?",
+        "opts": [
+          "(A) Recursion uses loops, iteration uses recursion",
+          "(B) Recursion uses function calls, iteration uses loops",
+          "(C) Recursion uses recursive function calls, iteration uses iterative loops",
+          "(D) Recursion uses iterative loops, iteration uses recursive function calls"
+        ],
+        "ans": "C",
+        "explanation": "Recursion uses recursive function calls, while iteration uses iterative loops.",
+        "difficulty": "medium",
+        "topic": "Recursion vs Iteration"
+      },
+      {
+        "q": "What is the maximum depth of a recursive call stack?",
+        "opts": [
+          "(A) 1",
+          "(B) n",
+          "(C) 2^n",
+          "(D) Any value"
+        ],
+        "ans": "B",
+        "explanation": "The maximum depth of a recursive call stack is equal to the number of recursive calls.",
+        "difficulty": "medium",
+        "topic": "Time and Space Complexity of Recursion"
+      },
+      {
+        "q": "What is the space complexity of a recursive function?",
+        "opts": [
+          "(A) O(1) - constant space",
+          "(B) O(n) - linear space",
+          "(C) O(2^n) - exponential space",
+          "(D) O(n!) - factorial space"
+        ],
+        "ans": "C",
+        "explanation": "The space complexity of a recursive function can be exponential, depending on the number of recursive calls.",
+        "difficulty": "medium",
+        "topic": "Time and Space Complexity of Recursion"
+      },
+      {
+        "q": "How can we prevent infinite recursion?",
+        "opts": [
+          "(A) By using a base case",
+          "(B) By using a recursive function call",
+          "(C) By using a loop",
+          "(D) By using a different data structure"
+        ],
+        "ans": "A",
+        "explanation": "A base case is necessary to prevent infinite recursion, as it stops the recursive calls.",
+        "difficulty": "medium",
+        "topic": "Introduction to Recursion"
+      },
+      {
+        "q": "What is the problem with recursive functions when dealing with large datasets?",
+        "opts": [
+          "(A) They are too slow",
+          "(B) They use too much memory",
+          "(C) They can cause a stack overflow",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "Recursive functions can be slow and use too much memory, and they can also cause a stack overflow for large datasets.",
+        "difficulty": "hard",
+        "topic": "Time and Space Complexity of Recursion"
+      },
+      {
+        "q": "How can we optimize a recursive function for large datasets?",
+        "opts": [
+          "(A) By using memoization",
+          "(B) By using dynamic programming",
+          "(C) By using a different algorithm",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "Memoization, dynamic programming, and using a different algorithm are all ways to optimize a recursive function for large datasets.",
+        "difficulty": "hard",
+        "topic": "Optimization Techniques for Recursion"
+      },
+      {
+        "q": "What is the difference between a recursive function and a recursive algorithm?",
+        "opts": [
+          "(A) A recursive function is a type of recursive algorithm",
+          "(B) A recursive algorithm is a type of recursive function",
+          "(C) A recursive function is a single function call, while a recursive algorithm is multiple function calls",
+          "(D) A recursive function is a loop, while a recursive algorithm is a function call"
+        ],
+        "ans": "C",
+        "explanation": "A recursive function is a single function call, while a recursive algorithm is multiple function calls.",
+        "difficulty": "hard",
+        "topic": "Recursion vs Iteration"
+      },
+      {
+        "q": "What is the concept of tail recursion?",
+        "opts": [
+          "(A) A recursive function that calls itself as the last operation",
+          "(B) A recursive function that calls itself as the first operation",
+          "(C) A recursive function that uses a loop",
+          "(D) A recursive function that skips the base case"
+        ],
+        "ans": "A",
+        "explanation": "Tail recursion is a recursive function that calls itself as the last operation, which can be optimized by the compiler.",
+        "difficulty": "hard",
+        "topic": "Optimization Techniques for Recursion"
+      },
+      {
+        "q": "What is the problem with using recursion for sorting large datasets?",
+        "opts": [
+          "(A) It is too slow",
+          "(B) It uses too much memory",
+          "(C) It can cause a stack overflow",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "Recursive functions for sorting large datasets can be slow, use too much memory, and cause a stack overflow.",
+        "difficulty": "hard",
+        "topic": "Time and Space Complexity of Recursion"
+      },
+      {
+        "q": "How can we convert a recursive function to an iterative one?",
+        "opts": [
+          "(A) By using a loop instead of a function call",
+          "(B) By using a recursive function call instead of a loop",
+          "(C) By using a different algorithm",
+          "(D) All of the above"
+        ],
+        "ans": "A",
+        "explanation": "Converting a recursive function to an iterative one typically involves replacing the function calls with a loop.",
+        "difficulty": "hard",
+        "topic": "Recursion vs Iteration"
+      },
+      {
+        "q": "What is the concept of recursive backtracking?",
+        "opts": [
+          "(A) A technique to explore all possible solutions",
+          "(B) A technique to skip possible solutions",
+          "(C) A technique to repeat the same solution",
+          "(D) A technique to skip the base case"
+        ],
+        "ans": "A",
+        "explanation": "Recursive backtracking is a technique to explore all possible solutions by recursively trying all possibilities.",
+        "difficulty": "hard",
+        "topic": "Optimization Techniques for Recursion"
+      },
+      {
+        "q": "What is the problem with using recursion for solving dynamic programming problems?",
+        "opts": [
+          "(A) It is too slow",
+          "(B) It uses too much memory",
+          "(C) It can cause a stack overflow",
+          "(D) It does not use memoization"
+        ],
+        "ans": "D",
+        "explanation": "Recursive functions for dynamic programming problems should use memoization to avoid redundant calculations.",
+        "difficulty": "hard",
+        "topic": "Optimization Techniques for Recursion"
+      },
+      {
+        "q": "How can we use recursion to solve the Tower of Hanoi problem?",
+        "opts": [
+          "(A) By using a recursive function to move the disks one by one",
+          "(B) By using a recursive function to move all disks at once",
+          "(C) By using a loop to move the disks",
+          "(D) By using a different algorithm"
+        ],
+        "ans": "A",
+        "explanation": "Recursion can be used to solve the Tower of Hanoi problem by recursively moving the disks one by one.",
+        "difficulty": "hard",
+        "topic": "Applications of Recursion"
+      }
+    ],
+    "total": 17
+  }
+}

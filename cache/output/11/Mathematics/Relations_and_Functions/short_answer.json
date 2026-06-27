@@ -1,0 +1,117 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:13:06.733Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a relation? Define it mathematically.",
+        "marks": 2,
+        "answer": "A relation is a set of ordered pairs. Mathematically, it can be represented as R = {(a, b) | a ∈ A, b ∈ B, a ∈ D, b ∈ D}, where A and B are non-empty sets.",
+        "key_points": [
+          "Definition of a relation",
+          "Order of elements in a relation",
+          "Representation of a relation"
+        ],
+        "topic": "Introduction to Relations"
+      },
+      {
+        "q": "What is an equivalence relation? Give an example.",
+        "marks": 2,
+        "answer": "An equivalence relation is a relation R on a set A such that it is reflexive, symmetric, and transitive. Example: Relation R on set A = {1, 2, 3} defined by R = {(1, 1), (2, 2), (3, 3), (1, 2), (2, 1), (2, 3), (3, 2)} is an equivalence relation.",
+        "key_points": [
+          "Definition of equivalence relation",
+          "Properties of equivalence relation",
+          "Example of equivalence relation"
+        ],
+        "topic": "Equivalence Relations"
+      },
+      {
+        "q": "What is a function? Define it mathematically.",
+        "marks": 2,
+        "answer": "A function is a relation from a non-empty set A to a non-empty set B such that every element of A has one and only one image in B. Mathematically, it can be represented as f: A → B, where for every x ∈ A, there exists a unique y ∈ B, denoted as f(x) = y.",
+        "key_points": [
+          "Definition of a function",
+          "Existence of an image",
+          "Uniqueness of an image"
+        ],
+        "topic": "Introduction to Functions"
+      },
+      {
+        "q": "What is the range of a function? Give an example.",
+        "marks": 2,
+        "answer": "The range of a function f: A → B is the set of all images of elements of A under f. Example: Function f(x) = 2x + 1, defined on set A = {0, 1, 2}, has a range of {1, 3, 5}.",
+        "key_points": [
+          "Definition of range",
+          "Example of range"
+        ],
+        "topic": "Range of a Function"
+      },
+      {
+        "q": "What is the composition of functions? Define it mathematically.",
+        "marks": 2,
+        "answer": "The composition of two functions f: A → B and g: B → C is a function g ∘ f: A → C, defined as (g ∘ f)(x) = g(f(x)) for all x ∈ A. Mathematically, it can be represented as g ∘ f: A → C, where (g ∘ f)(x) = g(f(x)).",
+        "key_points": [
+          "Definition of composition of functions",
+          "Representation of composition of functions"
+        ],
+        "topic": "Composition of Functions"
+      },
+      {
+        "q": "What is a one-to-one function? Give an example.",
+        "marks": 2,
+        "answer": "A function f: A → B is said to be one-to-one (injective) if f(x1) = f(x2) implies x1 = x2 for all x1, x2 ∈ A. Example: Function f(x) = 2x, defined on set A = {0, 1, 2, 3}, is one-to-one.",
+        "key_points": [
+          "Definition of one-to-one function",
+          "Example of one-to-one function"
+        ],
+        "topic": "One-to-One Functions"
+      },
+      {
+        "q": "What is the inverse of a function? Define it mathematically.",
+        "marks": 2,
+        "answer": "The inverse of a function f: A → B, denoted as f^(-1): B → A, is a function that satisfies f(f^(-1)(y)) = y and f^(-1)(f(x)) = x for all x ∈ A and y ∈ B. Mathematically, it can be represented as f^(-1): B → A, where f^(-1)(y) = x if and only if f(x) = y.",
+        "key_points": [
+          "Definition of inverse of a function",
+          "Properties of inverse of a function"
+        ],
+        "topic": "Inverse of a Function"
+      },
+      {
+        "q": "What is a many-to-one function? Give an example.",
+        "marks": 2,
+        "answer": "A function f: A → B is said to be many-to-one (not injective) if there exist distinct elements x1, x2 ∈ A such that f(x1) = f(x2). Example: Function f(x) = |x|, defined on set A = {-1, 1}, is many-to-one.",
+        "key_points": [
+          "Definition of many-to-one function",
+          "Example of many-to-one function"
+        ],
+        "topic": "Many-to-One Functions"
+      },
+      {
+        "q": "What is the domain of a function? Give an example.",
+        "marks": 2,
+        "answer": "The domain of a function f: A → B is the set of all elements of A for which f is defined. Example: Function f(x) = 1/x, defined on set A = {0, 1, 2, 3}, has a domain of {1, 2, 3}.",
+        "key_points": [
+          "Definition of domain",
+          "Example of domain"
+        ],
+        "topic": "Domain and Range of a Function"
+      },
+      {
+        "q": "What is the identity function? Define it mathematically.",
+        "marks": 2,
+        "answer": "The identity function on a set A, denoted as I_A: A → A, is a function defined as I_A(x) = x for all x ∈ A. Mathematically, it can be represented as I_A: A → A, where I_A(x) = x for all x ∈ A.",
+        "key_points": [
+          "Definition of identity function",
+          "Representation of identity function"
+        ],
+        "topic": "Identity Function"
+      }
+    ],
+    "total": 10
+  }
+}

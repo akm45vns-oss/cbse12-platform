@@ -640,6 +640,10 @@ export const globalStyles = `
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
+  @keyframes exitConfirmSlideUp {
+    from { opacity: 0; transform: translateX(-50%) translateY(20px) scale(0.95); }
+    to   { opacity: 1; transform: translateX(-50%) translateY(0)    scale(1);    }
+  }
 
   /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {

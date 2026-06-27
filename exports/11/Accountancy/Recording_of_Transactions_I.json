@@ -1,0 +1,1216 @@
+{
+  "class": "11",
+  "subject": "Accountancy",
+  "chapter": "Recording of Transactions I",
+  "exported_at": "2026-06-27T05:54:54.400Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T14:09:43.037+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 9,
+        "questions": [
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "This is because expenses paid at the time of purchase are direct and avoidable expenses.",
+            "assertion": "A trader records expenses in the account 'Expenses Paid' at the time of purchase.",
+            "explanation": "This is correct because the given assertion and reason are true and the reason correctly explains the assertion."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "The accounting equation is a fundamental concept in accounting that represents the relationship between a company's assets, liabilities, and capital.",
+            "assertion": "The accounting equation is Assets = Liabilities + Capital.",
+            "explanation": "This is correct because the given assertion and reason are true and the reason correctly explains the assertion."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Cash is a liquid asset, which means it can be easily converted into cash.",
+            "assertion": "The Cash account is an asset account.",
+            "explanation": "This is correct because the Cash account is indeed an asset account and the given reason explains why it is considered an asset."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Journal is the first book of entry in which all transactions are recorded as they occur.",
+            "assertion": "The journal is a book of original entry.",
+            "explanation": "This is correct because the given assertion and reason are true and the reason correctly explains the assertion."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "No, an entry is made in the Accounts Payable account when a purchase is made on credit.",
+            "assertion": "An entry is made in the Cash account when a purchase is made on credit.",
+            "explanation": "This is correct because the given assertion is false and the reason explains why it is false."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Ledger is a book in which all the accounts are opened to record the effects of transactions.",
+            "assertion": "The ledger is a book of final entry.",
+            "explanation": "This is correct because the given assertion and reason are true and the reason correctly explains the assertion."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "No, the Bank account is also an asset account.",
+            "assertion": "The Cash account is an asset account, but the Bank account is a liability account.",
+            "explanation": "This is correct because the given assertion is false and the reason explains why it is false."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Journal is the first book of entry in which all transactions are recorded as they occur.",
+            "assertion": "The journal is a book of final entry.",
+            "explanation": "This is correct because the given assertion is false and the reason explains why the journal is not a book of final entry."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "No, the ledger is a book of final entry.",
+            "assertion": "The ledger is a book of original entry.",
+            "explanation": "This is correct because the given assertion is false and the reason explains why the ledger is not a book of original entry."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:38:32.507+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "Rajesh, the owner of a small business, sells goods worth ₹ 80,000 to a customer on credit. The cost price of the goods sold was ₹ 60,000. Rajesh uses the perpetual inventory system to record transactions. He also uses the 'Sales Day Book' and 'Sales Return Day Book' to record sales and returns, respectively. On the same day, Rajesh also receives goods worth ₹ 40,000 from a supplier on credit. He uses the 'Purchases Day Book' to record purchases. Rajesh wants to record the sale and purchase in the ledger accounts of the business.",
+            "questions": [
+              {
+                "q": "What is the amount of profit made by Rajesh from the sale?",
+                "ans": "C",
+                "opts": [
+                  "(A) ₹ 10,000",
+                  "(B) ₹ 20,000",
+                  "(C) ₹ 20,000",
+                  "(D) ₹ 20,000"
+                ],
+                "explanation": "Profit made from the sale = Selling Price - Cost Price = ₹ 80,000 - ₹ 60,000 = ₹ 20,000"
+              },
+              {
+                "q": "Which of the following account will be debited for the amount of ₹ 40,000?",
+                "ans": "B",
+                "opts": [
+                  "(A) Sales Account",
+                  "(B) Purchases Account",
+                  "(C) Capital Account",
+                  "(D) Drawings Account"
+                ],
+                "explanation": "Purchases Account will be debited for the amount of ₹ 40,000 as it is a credit purchase."
+              },
+              {
+                "q": "What is the purpose of using a 'Sales Day Book'?",
+                "ans": "C",
+                "opts": [
+                  "(A) To record all sales transactions",
+                  "(B) To record only credit sales",
+                  "(C) To record sales and returns",
+                  "(D) To record purchases and returns"
+                ],
+                "explanation": "The purpose of using a 'Sales Day Book' is to record sales and returns."
+              },
+              {
+                "q": "Which account will be credited for the amount of ₹ 80,000?",
+                "ans": "B",
+                "opts": [
+                  "(A) Capital Account",
+                  "(B) Sales Account",
+                  "(C) Purchases Account",
+                  "(D) Drawings Account"
+                ],
+                "explanation": "Sales Account will be credited for the amount of ₹ 80,000 as it is a credit sale."
+              },
+              {
+                "q": "What will be the effect of the transaction of sale on the capital of Rajesh?",
+                "ans": "B",
+                "opts": [
+                  "(A) Decrease by ₹ 20,000",
+                  "(B) Increase by ₹ 20,000",
+                  "(C) Decrease by ₹ 80,000",
+                  "(D) Increase by ₹ 80,000"
+                ],
+                "explanation": "The sale transaction will increase the capital of Rajesh by ₹ 20,000 as the profit made will be added to the capital."
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "Suresh, the owner of a small business, buys goods worth ₹ 50,000 from a supplier on credit. The cost price of the goods purchased was ₹ 40,000. Suresh uses the perpetual inventory system to record transactions. On the same day, Suresh also sells goods worth ₹ 30,000 to a customer on credit. The selling price of the goods sold was ₹ 40,000. Suresh also receives a return of goods worth ₹ 10,000 from a customer. He uses the 'Sales Return Day Book' to record returns.",
+            "questions": [
+              {
+                "q": "What is the amount of loss made by Suresh from the purchase?",
+                "ans": "C",
+                "opts": [
+                  "(A) ₹ 0",
+                  "(B) ₹ 5,000",
+                  "(C) ₹ 5,000",
+                  "(D) ₹ 10,000"
+                ],
+                "explanation": "Loss made from the purchase = Cost Price - Selling Price = ₹ 40,000 - ₹ 30,000 = ₹ 10,000"
+              },
+              {
+                "q": "Which of the following account will be debited for the amount of ₹ 50,000?",
+                "ans": "B",
+                "opts": [
+                  "(A) Sales Account",
+                  "(B) Purchases Account",
+                  "(C) Capital Account",
+                  "(D) Drawings Account"
+                ],
+                "explanation": "Purchases Account will be debited for the amount of ₹ 50,000 as it is a credit purchase."
+              },
+              {
+                "q": "What is the effect of the return of goods on the sales account?",
+                "ans": "B",
+                "opts": [
+                  "(A) Increase",
+                  "(B) Decrease",
+                  "(C) No effect",
+                  "(D) Increase and then decrease"
+                ],
+                "explanation": "The return of goods will decrease the sales account as the amount of sales will be reduced."
+              },
+              {
+                "q": "Which account will be credited for the amount of ₹ 30,000?",
+                "ans": "B",
+                "opts": [
+                  "(A) Capital Account",
+                  "(B) Sales Account",
+                  "(C) Purchases Account",
+                  "(D) Drawings Account"
+                ],
+                "explanation": "Sales Account will be credited for the amount of ₹ 30,000 as it is a credit sale."
+              },
+              {
+                "q": "What will be the effect of the transaction of purchase on the capital of Suresh?",
+                "ans": "C",
+                "opts": [
+                  "(A) Decrease by ₹ 5,000",
+                  "(B) Increase by ₹ 5,000",
+                  "(C) Decrease by ₹ 50,000",
+                  "(D) Increase by ₹ 50,000"
+                ],
+                "explanation": "The purchase transaction will decrease the capital of Suresh by ₹ 5,000 as the loss made will be deducted from the capital."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:58:03.518+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Recording of Transactions I\n## 📌 Chapter Overview\nRecording of Transactions is the first chapter of the bookkeeping process, which involves the systematic and accurate recording of business transactions in a journal. This chapter lays the foundation for the entire accounting process, as it ensures that all transactions are properly recorded and classified. The chapter introduces the concept of the journal, which is a book in which all transactions are first recorded. The journal is used to record all transactions in chronological order, and it serves as the basis for the preparation of the ledger accounts.\n\nThe chapter also covers the rules of debit and credit, which are the fundamental principles of accounting. The rules of debit and credit determine how to record transactions in the journal and ledger accounts. The chapter explains the concept of a trial balance, which is a list of all ledger accounts with their debit and credit balances. The trial balance is a tool used to ensure the accuracy of the accounting records.\n\n## 🎯 Learning Objectives\n* Understand the concept of the journal and its importance in the accounting process\n* Learn the rules of debit and credit and how to apply them\n* Understand the concept of the ledger and its relationship to the journal\n* Learn how to prepare a trial balance and use it to check the accuracy of accounting records\n* Understand the importance of proper recording of transactions in the journal and ledger accounts\n* Learn how to classify transactions as assets, liabilities, capital, revenues, and expenses\n\n## 🔑 Key Concepts & Definitions\n\n* **Journal**: A book in which all transactions are first recorded in chronological order.\n* **Ledger**: A book in which all accounts are maintained in a classified and summarized form.\n* **Rules of Debit and Credit**: Fundamental principles of accounting that determine how to record transactions in the journal and ledger accounts.\n* **Trial Balance**: A list of all ledger accounts with their debit and credit balances.\n* **Assets**: Resources owned by a business, such as cash, accounts receivable, and inventory.\n* **Liabilities**: Debts or obligations owed by a business, such as accounts payable and loans payable.\n* **Capital**: The owner's investment in the business, which includes the initial investment and any additional investments made.\n* **Revenues**: Income earned by a business, such as sales and interest income.\n* **Expenses**: Costs incurred by a business, such as rent, salaries, and utilities.\n\n## 📐 Core Theory & Principles\nThe rules of debit and credit are the fundamental principles of accounting that determine how to record transactions in the journal and ledger accounts. The rules are as follows:\n\n* **Debit**: A debit is used to record an increase in an asset or a decrease in a liability or capital.\n* **Credit**: A credit is used to record a decrease in an asset or an increase in a liability or capital.\n* **Matching Principle**: The matching principle states that revenues and expenses should be matched in the same period to ensure that the income statement accurately reflects the financial performance of the business.\n* **Accounting Equation**: The accounting equation is the fundamental equation of accounting, which states that Assets = Liabilities + Capital.\n\n## 🧮 Important Formulas & Laws\n\n* **Accounting Equation**: Assets = Liabilities + Capital\n* **Trial Balance Formula**: Trial Balance = Debit Balance + Credit Balance\n* **Journal Entry Formula**: Debit = Increase in Asset or Decrease in Liability or Capital\n* **Credit = Decrease in Asset or Increase in Liability or Capital**\n\n## 🔬 Detailed Explanations\n### Journal Entries\nJournal entries are the first step in the accounting process, and they involve recording all transactions in the journal. The journal is a book in which all transactions are recorded in chronological order. Each journal entry consists of a date, a description of the transaction, and the debit and credit amounts.\n\n### Ledger Accounts\nLedger accounts are the accounts maintained in the ledger, which is a book in which all accounts are maintained in a classified and summarized form. Ledger accounts are used to record the debit and credit balances of each account.\n\n### Trial Balance\nA trial balance is a list of all ledger accounts with their debit and credit balances. The trial balance is used to ensure the accuracy of the accounting records and to check for any errors.\n\n### Rules of Debit and Credit\nThe rules of debit and credit are the fundamental principles of accounting that determine how to record transactions in the journal and ledger accounts. The rules are as follows:\n\n* **Debit**: A debit is used to record an increase in an asset or a decrease in a liability or capital.\n* **Credit**: A credit is used to record a decrease in an asset or an increase in a liability or capital.\n\n### Accounting Equation\nThe accounting equation is the fundamental equation of accounting, which states that Assets = Liabilities + Capital.\n\n## 🖼️ Diagrams & Visual Concepts\nThe following diagrams and visual concepts are important in this chapter:\n\n* **Journal Entry Diagram**: A diagram showing the different components of a journal entry, including the date, description, debit amount, and credit amount.\n* **Ledger Account Diagram**: A diagram showing the different components of a ledger account, including the account name, debit balance, and credit balance.\n* **Trial Balance Diagram**: A diagram showing the different components of a trial balance, including the account name, debit balance, and credit balance.\n\n## ⭐ Most Important Points (Exam Focus)\n\n* The journal is a book in which all transactions are first recorded in chronological order.\n* The ledger is a book in which all accounts are maintained in a classified and summarized form.\n* The rules of debit and credit are the fundamental principles of accounting that determine how to record transactions in the journal and ledger accounts.\n* The trial balance is a list of all ledger accounts with their debit and credit balances.\n* The accounting equation is the fundamental equation of accounting, which states that Assets = Liabilities + Capital.\n* Journal entries involve recording all transactions in the journal.\n* Ledger accounts are used to record the debit and credit balances of each account.\n* The trial balance is used to ensure the accuracy of the accounting records and to check for any errors.\n\n## ❌ Common Mistakes to Avoid\n\n* Failing to record transactions in the journal and ledger accounts.\n* Failing to apply the rules of debit and credit.\n* Failing to prepare a trial balance.\n* Failing to check for errors in the accounting records.\n* Failing to maintain accurate and up-to-date accounting records.\n\n## 💡 Real-World Applications\n\n* **Business Decision-Making**: Accurate and timely recording of transactions is essential for making informed business decisions.\n* **Financial Reporting**: The accounting records are used to prepare financial statements, which are used to communicate the financial performance of the business to stakeholders.\n* **Tax Compliance**: Accurate and timely recording of transactions is essential for complying with tax laws and regulations.\n* **Investor Relations**: Accurate and timely recording of transactions is essential for maintaining good investor relations.\n* **Internal Control**: Accurate and timely recording of transactions is essential for maintaining internal control and preventing fraud.\n\n## 🔁 Quick Revision Summary\n\n* Journal is a book in which all transactions are first recorded in chronological order.\n* Ledger is a book in which all accounts are maintained in a classified and summarized form.\n* Rules of debit and credit are the fundamental principles of accounting that determine how to record transactions in the journal and ledger accounts.\n* Trial balance is a list of all ledger accounts with their debit and credit balances.\n* Accounting equation is the fundamental equation of accounting, which states that Assets = Liabilities + Capital.\n* Journal entries involve recording all transactions in the journal.\n* Ledger accounts are used to record the debit and credit balances of each account.\n* Trial balance is used to ensure the accuracy of the accounting records and to check for any errors.\n* Journal entries are recorded in the journal and ledger accounts.\n* Ledger accounts are maintained in the ledger.\n* Trial balance is prepared to check for errors in the accounting records.\n* Accounting equation is used to ensure that the accounting records are accurate and complete.\n* Journal entries are recorded in chronological order.\n* Ledger accounts are maintained in a classified and summarized form.\n* Trial balance is used to check for errors in the accounting records.\n* Accounting equation is used to ensure that the accounting records are accurate and complete.\n* Journal entries are recorded in the journal and ledger accounts.\n* Ledger accounts are maintained in the ledger.\n* Trial balance is prepared to check for errors in the accounting records.\n* Accounting equation is used to ensure that the accounting records are accurate and complete."
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:46:43.573+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [],
+        "exam_frequency": "medium",
+        "difficulty_score": 5,
+        "overall_difficulty": "medium"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:58:01.79+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Study tip 1",
+          "Study tip 2"
+        ],
+        "total_minutes": 120,
+        "revision_minutes": 20,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 30,
+        "sessions_recommended": 3,
+        "first_reading_minutes": 45,
+        "practice_questions_minutes": 25
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T08:24:07.901+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Journal",
+            "notes": "A journal is a book in which transactions are recorded chronologically.",
+            "units": "None",
+            "formula": "The first entry in the accounting cycle that contains a summary of all the business transactions in a chronological order.",
+            "variables": "None"
+          },
+          {
+            "name": "Ledger",
+            "notes": "A ledger is a book in which all the accounts of a business are maintained.",
+            "units": "None",
+            "formula": "The book that contains the permanent records of all the accounts of a business.",
+            "variables": "None"
+          },
+          {
+            "name": "Account",
+            "notes": "An account is a record of the financial effects of a business transaction.",
+            "units": "None",
+            "formula": "A record of the financial effects of a business transaction.",
+            "variables": "None"
+          },
+          {
+            "name": "Assets = Liabilities + Capital",
+            "notes": "This formula is based on the accounting equation and is used to determine the amount of capital in a business.",
+            "units": "Rupees",
+            "formula": "Assets = Liabilities + Capital",
+            "variables": {
+              "Assets": "The total value of a business's resources.",
+              "Capital": "The owner's claim on the business.",
+              "Liabilities": "The total claims of outsiders against a business."
+            }
+          },
+          {
+            "name": "Accrual Concept",
+            "notes": "Accrual concept is a matching concept where expenses are matched with the revenue they help to generate.",
+            "units": "None",
+            "formula": "Expenses are matched with the revenue they help to generate.",
+            "variables": "None"
+          },
+          {
+            "name": "Matching Concept",
+            "notes": "Matching concept is a concept where expenses are matched with the revenue they help to generate.",
+            "units": "None",
+            "formula": "Expenses are matched with the revenue they help to generate.",
+            "variables": "None"
+          },
+          {
+            "name": "Going Concern Concept",
+            "notes": "Going concern concept is a concept where a business is assumed to continue operating for the foreseeable future.",
+            "units": "None",
+            "formula": "A business will continue to operate for the foreseeable future.",
+            "variables": "None"
+          },
+          {
+            "name": "Monetary Unit Concept",
+            "notes": "Monetary unit concept is a concept where all transactions are recorded in money terms.",
+            "units": "None",
+            "formula": "All transactions are recorded in money terms.",
+            "variables": "None"
+          },
+          {
+            "name": "Historical Cost Concept",
+            "notes": "Historical cost concept is a concept where assets and liabilities are recorded at their original cost.",
+            "units": "None",
+            "formula": "Assets and liabilities are recorded at their original cost.",
+            "variables": "None"
+          },
+          {
+            "name": "Entity Concept",
+            "notes": "Entity concept is a concept where a business is treated as a separate entity from its owner.",
+            "units": "None",
+            "formula": "A business is treated as a separate entity from its owner.",
+            "variables": "None"
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T15:59:19.351+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "Ledger",
+            "importance": "Understanding the concept of ledger is crucial for recording and presenting financial transactions accurately.",
+            "explanation": "A ledger is a book or electronic file that contains the record of all financial transactions of a business. It is divided into various accounts, each representing a specific type of asset, liability, equity, revenue, or expense.",
+            "related_topics": [
+              "Recording of Transactions I",
+              "Financial Statements"
+            ]
+          },
+          {
+            "concept": "Journal",
+            "importance": "Journal is essential for recording transactions accurately and efficiently.",
+            "explanation": "A journal is a book or electronic file that contains the record of all financial transactions in chronological order. It serves as a temporary record of transactions before they are posted to the ledger.",
+            "related_topics": [
+              "Recording of Transactions I",
+              "Ledger"
+            ]
+          },
+          {
+            "concept": "Accounting Equation",
+            "importance": "Understanding the accounting equation is crucial for preparing and analyzing financial statements.",
+            "explanation": "The accounting equation is a fundamental concept that represents the relationship between a business's assets, liabilities, and equity. It states that assets equal liabilities plus equity (A = L + E).",
+            "related_topics": [
+              "Financial Statements",
+              "Balance Sheet"
+            ]
+          },
+          {
+            "concept": "Types of Accounts",
+            "importance": "Understanding the types of accounts is essential for recording and classifying transactions accurately.",
+            "explanation": "There are two main types of accounts: Personal and Nominal. Personal accounts represent individuals or businesses, while nominal accounts represent assets, liabilities, revenue, and expenses.",
+            "related_topics": [
+              "Ledger",
+              "Journal"
+            ]
+          },
+          {
+            "concept": "Double Entry System",
+            "importance": "The double-entry system is essential for preparing accurate and reliable financial statements.",
+            "explanation": "The double-entry system is a method of recording transactions where every transaction affects at least two accounts. It ensures that the accounting equation is maintained and provides a complete and accurate record of financial transactions.",
+            "related_topics": [
+              "Journal",
+              "Ledger"
+            ]
+          },
+          {
+            "concept": "Books of Prime Entry",
+            "importance": "Understanding the concept of books of prime entry is essential for recording transactions accurately and efficiently.",
+            "explanation": "Books of prime entry are the first entry point for financial transactions. There are two main types: Journal and Cash Book.",
+            "related_topics": [
+              "Journal",
+              "Cash Book"
+            ]
+          },
+          {
+            "concept": "Cash Book",
+            "importance": "Cash book is essential for recording and analyzing cash and bank transactions.",
+            "explanation": "A cash book is a special journal that records all cash and bank transactions. It helps in identifying the amount of cash and bank balances at any point in time.",
+            "related_topics": [
+              "Books of Prime Entry",
+              "Journal"
+            ]
+          },
+          {
+            "concept": "Voucher",
+            "importance": "Vouchers are crucial for maintaining the accuracy and reliability of financial records.",
+            "explanation": "A voucher is a document that supports a transaction and provides evidence of its authenticity. It is an essential tool for recording transactions accurately.",
+            "related_topics": [
+              "Journal",
+              "Ledger"
+            ]
+          },
+          {
+            "concept": "Posting",
+            "importance": "Posting is essential for maintaining the accuracy and completeness of financial records.",
+            "explanation": "Posting refers to the process of transferring transactions from the journal to the ledger. It involves recording the debit and credit amounts in the respective accounts.",
+            "related_topics": [
+              "Journal",
+              "Ledger"
+            ]
+          },
+          {
+            "concept": "Trial Balance",
+            "importance": "Trial balance is essential for verifying the accuracy and completeness of financial records.",
+            "explanation": "A trial balance is a list of all ledger accounts and their respective debit and credit balances. It helps in identifying any errors or discrepancies in the accounting records.",
+            "related_topics": [
+              "Ledger",
+              "Financial Statements"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T15:59:19.323+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "Journal",
+            "example": "The company's accountant records all daily transactions in the journal.",
+            "definition": "A book of original entry in which all the business transactions of the enterprise are recorded in chronological order in a day-to-day account."
+          },
+          {
+            "term": "Journal Entry",
+            "example": "The journal entry for the purchase of goods is recorded on the debit side.",
+            "definition": "A record of a transaction or a series of transactions in the journal."
+          },
+          {
+            "term": "Ledger",
+            "example": "The company's ledger provides a clear picture of its financial position.",
+            "definition": "A book of final entry in which all the accounts are maintained in a classified and systematic manner."
+          },
+          {
+            "term": "Account",
+            "example": "The accounts department maintains the accounts of all departments in the company.",
+            "definition": "A self-balancing record of all transactions related to a particular aspect of the business."
+          },
+          {
+            "term": "Personal Account",
+            "example": "The company maintains a personal account for its suppliers.",
+            "definition": "An account which is related to a person or a group of persons, e.g., customers, creditors, etc."
+          },
+          {
+            "term": "Real Account",
+            "example": "The company's real account for its plant and machinery shows the current market value of the assets.",
+            "definition": "An account which is related to a physical asset or a liability of the business, e.g., assets, liabilities, etc."
+          },
+          {
+            "term": "Nominal Account",
+            "example": "The company's nominal account for sales shows the total sales revenue for the year.",
+            "definition": "An account which is related to the revenue and expenses of the business, e.g., sales, purchases, etc."
+          },
+          {
+            "term": "T Account",
+            "example": "The company uses T-accounts for recording its fixed assets.",
+            "definition": "A type of ledger account which has only one side, used for recording real accounts."
+          },
+          {
+            "term": "Subsidiary Ledger",
+            "example": "The company maintains a subsidiary ledger for its accounts payable.",
+            "definition": "A book of final entry which contains accounts of a specific class or group of accounts."
+          },
+          {
+            "term": "Trial Balance",
+            "example": "The company's trial balance shows a total of Rs. 1,00,000 on the debit side and Rs. 1,00,000 on the credit side.",
+            "definition": "A statement prepared at the end of an accounting period to verify the accuracy of the ledger accounts and to check the arithmetical accuracy of the transactions recorded in the journal."
+          },
+          {
+            "term": "Posting",
+            "example": "The accountant posts the journal entries to the respective ledger accounts.",
+            "definition": "The process of transferring the journal entries to the proper ledger accounts."
+          },
+          {
+            "term": "Balancing",
+            "example": "The accountant balances the account to ensure that the debit and credit amounts are equal.",
+            "definition": "The process of ensuring that the debit and credit sides of an account are equal, i.e., in balance."
+          },
+          {
+            "term": "Accounting Equation",
+            "example": "The company's accounting equation is Assets = Rs. 5,00,000 = Capital + Liabilities.",
+            "definition": "The equation which represents the fundamental principle of accounting, i.e., Assets = Capital + Liabilities."
+          },
+          {
+            "term": "Accrual Concept",
+            "example": "The company records its rent expenses when it is incurred, even if it has not been paid yet.",
+            "definition": "The concept which states that expenses should be recorded when they are incurred, and revenues should be recorded when they are earned."
+          },
+          {
+            "term": "Matching Concept",
+            "example": "The company matches its sales expenses with the sales revenue.",
+            "definition": "The concept which states that expenses should be matched with the revenues they help to generate."
+          },
+          {
+            "term": "Going Concern Concept",
+            "definition": "The concept which assumes that the business will continue to operate for the foreseeable future."
+          },
+          {
+            "term": "Materiality Concept",
+            "definition": "The concept which states that an item should be recorded in the financial statements if its omission or misstatement could influence the decisions of the users."
+          },
+          {
+            "term": "Historical Cost Concept",
+            "definition": "The concept which states that assets and liabilities should be recorded at their historical cost."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:58:01.402+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Students will be able to apply the rules of debit and credit to record a transaction in the books of account.",
+            "Students will be able to identify the type of account (asset, liability, capital, revenue, or expense) to be debited or credited for a particular transaction."
+          ],
+          "analyze": [
+            "Students will be able to analyze a transaction and identify the accounts to be debited and credited."
+          ],
+          "remember": [
+            "Students will be able to recall the different types of accounting records and their characteristics.",
+            "Students will be able to describe the importance of recording transactions in the books of account."
+          ],
+          "understand": [
+            "Students will be able to understand the concept of accounting equation and its components.",
+            "Students will be able to explain how the accounting equation is affected by a transaction."
+          ]
+        },
+        "ncert_objectives": [
+          "To understand the need for recording transactions in a systematic and scientific manner.",
+          "To describe the characteristics of a complete record and its importance in accounting."
+        ],
+        "board_exam_objectives": [
+          "To record transactions in the journal and ledger accounts as per the rules of debit and credit.",
+          "To identify the type of account (asset, liability, capital, revenue, or expense) to be debited or credited for a particular transaction.",
+          "To prepare a cash book, journal and ledger accounts from the given transactions."
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:15:08.82+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "A business buys goods of Rs. 50,000 from a supplier on 1st January, 2024. The payment for the goods is to be made after 2 months. Prepare the journal entry for this transaction on 1st January, 2024.",
+            "marks": 5,
+            "topic": "Recording of Transactions",
+            "answer": "Journal entry for purchase of goods on credit will be as follows:\n\nDr. Purchases A/c - 50,000\nCr. Accounts Payable A/c - 50,000\n\nExplanation: The business has made a purchase of goods worth Rs. 50,000 on credit. As per the accounting principle of matching principle, the purchase is recorded in the account called 'Purchases A/c'. Since the payment is to be made after 2 months, the liability to pay the supplier is recorded in the account called 'Accounts Payable A/c'.",
+            "marking_scheme": [
+              "Recording of purchase of goods worth Rs. 50,000 in the correct account (1 mark)",
+              "Recording of liability to pay the supplier in the correct account (1 mark)",
+              "Correct application of the matching principle (1 mark)",
+              "Correct accounting treatment for a transaction on credit (1 mark)",
+              "Clear and concise journal entry (1 mark)"
+            ]
+          },
+          {
+            "q": "A business receives an invoice from a supplier for Rs. 20,000 on 1st January, 2024, for goods supplied on 25th December, 2023. The business had received the goods on credit on 26th December, 2023. Prepare the journal entry for this transaction on 1st January, 2024.",
+            "marks": 5,
+            "topic": "Recording of Transactions",
+            "answer": "Journal entry for the transaction will be as follows:\n\nDr. Purchases A/c - 20,000\nCr. Accounts Payable A/c - 20,000\n\nExplanation: The business had received the goods on credit on 26th December, 2023, and the supplier has sent an invoice for the same on 1st January, 2024. The business has to record the purchase of goods worth Rs. 20,000 in the account called 'Purchases A/c' and the liability to pay the supplier in the account called 'Accounts Payable A/c'.",
+            "marking_scheme": [
+              "Recording of purchase of goods worth Rs. 20,000 in the correct account (1 mark)",
+              "Recording of liability to pay the supplier in the correct account (1 mark)",
+              "Correct application of the accounting principle of accruals (1 mark)",
+              "Correct accounting treatment for a transaction on credit (1 mark)",
+              "Clear and concise journal entry (1 mark)"
+            ]
+          },
+          {
+            "q": "A business receives a dividend of Rs. 15,000 from its investment in shares on 31st December, 2024. The dividend is to be received on 25th January, 2025. Prepare the journal entry for this transaction on 31st December, 2024.",
+            "marks": 5,
+            "topic": "Recording of Transactions",
+            "answer": "Journal entry for the transaction will be as follows:\n\nDr. Dividend Receivable A/c - 15,000\nCr. Income from Investments A/c - 15,000\n\nExplanation: The business has received a dividend of Rs. 15,000 from its investment in shares, which is to be received on 25th January, 2025. However, as per the accounting principle of accruals, the business has to record the dividend received in the year in which it is earned, i.e., 2024. Therefore, the business has to record the dividend received in the account called 'Dividend Receivable A/c' and the income earned in the account called 'Income from Investments A/c'.",
+            "marking_scheme": [
+              "Recording of dividend received in the correct account (1 mark)",
+              "Recording of income earned in the correct account (1 mark)",
+              "Correct application of the accounting principle of accruals (1 mark)",
+              "Correct accounting treatment for an income earned on investment (1 mark)",
+              "Clear and concise journal entry (1 mark)"
+            ]
+          },
+          {
+            "q": "A business purchases goods worth Rs. 30,000 from a supplier on 1st January, 2024, on a 2% discount for immediate payment. Prepare the journal entry for this transaction on 1st January, 2024.",
+            "marks": 5,
+            "topic": "Recording of Transactions",
+            "answer": "Journal entry for the transaction will be as follows:\n\nDr. Purchases A/c - 29,400\nCr. Cash A/c - 29,400\n\nExplanation: The business has purchased goods worth Rs. 30,000 from a supplier on 1st January, 2024, on a 2% discount for immediate payment. The business has to record the purchase of goods worth Rs. 29,400 (after deducting the discount) in the account called 'Purchases A/c' and the cash paid in the account called 'Cash A/c'.",
+            "marking_scheme": [
+              "Recording of purchase of goods worth Rs. 30,000 in the correct account (1 mark)",
+              "Deduction of discount in the correct amount (1 mark)",
+              "Correct calculation of the amount to be recorded in the 'Purchases A/c' (1 mark)",
+              "Correct accounting treatment for a discount received (1 mark)",
+              "Clear and concise journal entry (1 mark)"
+            ]
+          },
+          {
+            "q": "A business sells goods worth Rs. 20,000 to a customer on 1st January, 2024, on a 3% cash discount. Prepare the journal entry for this transaction on 1st January, 2024.",
+            "marks": 5,
+            "topic": "Recording of Transactions",
+            "answer": "Journal entry for the transaction will be as follows:\n\nDr. Sales A/c - 20,000\nCr. Cash A/c - 20,000\n\nExplanation: The business has sold goods worth Rs. 20,000 to a customer on 1st January, 2024, on a 3% cash discount. The business has to record the sales of goods worth Rs. 20,000 in the account called 'Sales A/c' and the cash received in the account called 'Cash A/c'.",
+            "marking_scheme": [
+              "Recording of sales of goods worth Rs. 20,000 in the correct account (1 mark)",
+              "Correct calculation of the amount to be recorded in the 'Sales A/c' (1 mark)",
+              "Correct accounting treatment for a cash discount given (1 mark)",
+              "Correct recording of cash received in the correct account (1 mark)",
+              "Clear and concise journal entry (1 mark)"
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T14:09:41.551+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 23,
+        "questions": [
+          {
+            "q": "A business can be incorporated under which of the following forms?",
+            "ans": "B",
+            "opts": [
+              "(A) Partnership Firm",
+              "(B) Private Limited Company",
+              "(C) One Person Company",
+              "(D) Sole Proprietorship"
+            ],
+            "topic": "Types of Business Entities",
+            "difficulty": "easy",
+            "explanation": "A private limited company is a type of business entity that can be incorporated under the Companies Act."
+          },
+          {
+            "q": "Which of the following is not an asset?",
+            "ans": "C",
+            "opts": [
+              "(A) Bank balance",
+              "(B) Capital",
+              "(C) Liabilities",
+              "(D) Goodwill"
+            ],
+            "topic": "Assets and Liabilities",
+            "difficulty": "easy",
+            "explanation": "Liabilities are amounts owed by the business, not assets."
+          },
+          {
+            "q": "What is the main objective of accounting?",
+            "ans": "A",
+            "opts": [
+              "(A) To prepare financial statements",
+              "(B) To calculate depreciation",
+              "(C) To record transactions",
+              "(D) To determine tax liability"
+            ],
+            "topic": "Introduction to Accounting",
+            "difficulty": "easy",
+            "explanation": "The primary goal of accounting is to provide financial information to users."
+          },
+          {
+            "q": "A company's assets are valued at the cost price, which is the price at which?",
+            "ans": "A",
+            "opts": [
+              "(A) Assets were purchased",
+              "(B) Assets were sold",
+              "(C) Assets were manufactured",
+              "(D) Assets were donated"
+            ],
+            "topic": "Valuation of Assets",
+            "difficulty": "easy",
+            "explanation": "Cost price is the price at which assets were acquired."
+          },
+          {
+            "q": "The accounting equation is also known as the?",
+            "ans": "B",
+            "opts": [
+              "(A) Profit and Loss Account",
+              "(B) Balance Sheet",
+              "(C) Cash Flow Statement",
+              "(D) Accounting Equation"
+            ],
+            "topic": "Accounting Equation",
+            "difficulty": "easy",
+            "explanation": "The accounting equation is a fundamental concept that represents the relationship between a company's assets, liabilities, and equity."
+          },
+          {
+            "q": "What is the process of recording business transactions called?",
+            "ans": "C",
+            "opts": [
+              "(A) Accounting",
+              "(B) Auditing",
+              "(C) Bookkeeping",
+              "(D) Finance"
+            ],
+            "topic": "Bookkeeping",
+            "difficulty": "easy",
+            "explanation": "Bookkeeping is the process of recording and classifying financial transactions."
+          },
+          {
+            "q": "Which of the following is an example of a current liability?",
+            "ans": "A",
+            "opts": [
+              "(A) Bank overdraft",
+              "(B) Loan taken from a bank",
+              "(C) Dividend declared",
+              "(D) Rent paid"
+            ],
+            "topic": "Current Liabilities",
+            "difficulty": "easy",
+            "explanation": "A bank overdraft is a type of current liability that represents the amount owed by a business to a bank."
+          },
+          {
+            "q": "What is the purpose of a journal?",
+            "ans": "C",
+            "opts": [
+              "(A) To prepare financial statements",
+              "(B) To classify transactions",
+              "(C) To record transactions",
+              "(D) To analyze financial data"
+            ],
+            "topic": "Journal",
+            "difficulty": "easy",
+            "explanation": "A journal is a book of original entry that records business transactions."
+          },
+          {
+            "q": "A company's capital can be divided into?",
+            "ans": "C",
+            "opts": [
+              "(A) Equity and liabilities",
+              "(B) Assets and liabilities",
+              "(C) Equity and assets",
+              "(D) Liabilities and assets"
+            ],
+            "topic": "Capital",
+            "difficulty": "easy",
+            "explanation": "A company's capital is divided into equity and assets."
+          },
+          {
+            "q": "What is the main difference between a debit and a credit?",
+            "ans": "B",
+            "opts": [
+              "(A) A debit is an increase in assets, while a credit is a decrease in liabilities",
+              "(B) A debit is a decrease in assets, while a credit is an increase in liabilities",
+              "(C) A debit is an increase in assets, while a credit is an increase in liabilities",
+              "(D) A debit is a decrease in assets, while a credit is a decrease in liabilities"
+            ],
+            "topic": "Debit and Credit",
+            "difficulty": "easy",
+            "explanation": "A debit is a decrease in assets, while a credit is an increase in liabilities."
+          },
+          {
+            "q": "A company's assets can be classified into which of the following types?",
+            "ans": "A",
+            "opts": [
+              "(A) Current and non-current",
+              "(B) Tangible and intangible",
+              "(C) Fixed and current",
+              "(D) Assets and liabilities"
+            ],
+            "topic": "Classification of Assets",
+            "difficulty": "easy",
+            "explanation": "A company's assets can be classified into current and non-current assets."
+          },
+          {
+            "q": "What is the process of verifying the accuracy of financial transactions called?",
+            "ans": "A",
+            "opts": [
+              "(A) Auditing",
+              "(B) Bookkeeping",
+              "(C) Accounting",
+              "(D) Finance"
+            ],
+            "topic": "Auditing",
+            "difficulty": "medium",
+            "explanation": "Auditing is the process of verifying the accuracy of financial transactions."
+          },
+          {
+            "q": "A company's financial statements can be classified into which of the following types?",
+            "ans": "D",
+            "opts": [
+              "(A) Financial position and performance",
+              "(B) Profit and loss and balance sheet",
+              "(C) Balance sheet and cash flow statement",
+              "(D) Income statement and balance sheet"
+            ],
+            "topic": "Financial Statements",
+            "difficulty": "medium",
+            "explanation": "A company's financial statements can be classified into income statement and balance sheet."
+          },
+          {
+            "q": "What is the purpose of a ledger?",
+            "ans": "B",
+            "opts": [
+              "(A) To record transactions",
+              "(B) To classify transactions",
+              "(C) To analyze financial data",
+              "(D) To prepare financial statements"
+            ],
+            "topic": "Ledger",
+            "difficulty": "medium",
+            "explanation": "A ledger is a book of final entry that classifies and summarizes transactions."
+          },
+          {
+            "q": "A company's capital can be divided into which of the following categories?",
+            "ans": "A",
+            "opts": [
+              "(A) Share capital and reserves",
+              "(B) Equity and liabilities",
+              "(C) Assets and liabilities",
+              "(D) Equity and assets"
+            ],
+            "topic": "Capital",
+            "difficulty": "medium",
+            "explanation": "A company's capital can be divided into share capital and reserves."
+          },
+          {
+            "q": "What is the main difference between a nominal and a real account?",
+            "ans": "B",
+            "opts": [
+              "(A) A nominal account is debited, while a real account is credited",
+              "(B) A nominal account is credited, while a real account is debited",
+              "(C) A nominal account represents an asset, while a real account represents a liability",
+              "(D) A nominal account represents a liability, while a real account represents an asset"
+            ],
+            "topic": "Nominal and Real Accounts",
+            "difficulty": "medium",
+            "explanation": "A nominal account is credited, while a real account is debited."
+          },
+          {
+            "q": "A company's financial statements can be prepared using which of the following methods?",
+            "ans": "A",
+            "opts": [
+              "(A) Cash basis and accrual basis",
+              "(B) Accrual basis and matching principle",
+              "(C) Matching principle and accounting equation",
+              "(D) Accounting equation and financial position"
+            ],
+            "topic": "Financial Statements",
+            "difficulty": "medium",
+            "explanation": "A company's financial statements can be prepared using cash basis and accrual basis methods."
+          },
+          {
+            "q": "What is the purpose of a trial balance?",
+            "ans": "D",
+            "opts": [
+              "(A) To record transactions",
+              "(B) To classify transactions",
+              "(C) To analyze financial data",
+              "(D) To verify the accuracy of transactions"
+            ],
+            "topic": "Trial Balance",
+            "difficulty": "medium",
+            "explanation": "A trial balance is a list of ledger accounts that verifies the accuracy of transactions."
+          },
+          {
+            "q": "A company's assets can be valued at which of the following methods?",
+            "ans": "A",
+            "opts": [
+              "(A) Cost price and market price",
+              "(B) Cost price and selling price",
+              "(C) Market price and selling price",
+              "(D) Selling price and cost price"
+            ],
+            "topic": "Valuation of Assets",
+            "difficulty": "medium",
+            "explanation": "A company's assets can be valued at cost price and market price."
+          },
+          {
+            "q": "What is the process of preparing financial statements from a trial balance called?",
+            "ans": "D",
+            "opts": [
+              "(A) Ledger posting",
+              "(B) Journalizing",
+              "(C) Trial balancing",
+              "(D) Financial statement preparation"
+            ],
+            "topic": "Financial Statements",
+            "difficulty": "hard",
+            "explanation": "Financial statement preparation is the process of preparing financial statements from a trial balance."
+          },
+          {
+            "q": "A company's financial statements can be prepared using which of the following accounting standards?",
+            "ans": "A",
+            "opts": [
+              "(A) Generally Accepted Accounting Principles (GAAP) and International Financial Reporting Standards (IFRS)",
+              "(B) International Financial Reporting Standards (IFRS) and Financial Accounting Standards Board (FASB)",
+              "(C) Financial Accounting Standards Board (FASB) and Accounting Standards Codification (ASC)",
+              "(D) Generally Accepted Accounting Principles (GAAP) and Accounting Standards Codification (ASC)"
+            ],
+            "topic": "Accounting Standards",
+            "difficulty": "hard",
+            "explanation": "A company's financial statements can be prepared using Generally Accepted Accounting Principles (GAAP) and International Financial Reporting Standards (IFRS)."
+          },
+          {
+            "q": "What is the purpose of a comprehensive income statement?",
+            "ans": "D",
+            "opts": [
+              "(A) To provide a detailed analysis of a company's financial performance",
+              "(B) To present a summary of a company's financial position",
+              "(C) To disclose a company's financial obligations",
+              "(D) To show a company's financial performance in a comprehensive manner"
+            ],
+            "topic": "Financial Statements",
+            "difficulty": "hard",
+            "explanation": "A comprehensive income statement presents a company's financial performance in a comprehensive manner."
+          },
+          {
+            "q": "A company's financial statements can be audited using which of the following audit approaches?",
+            "ans": "A",
+            "opts": [
+              "(A) Financial statement audit and system audit",
+              "(B) Compliance audit and operational audit",
+              "(C) Financial performance audit and system audit",
+              "(D) System audit and financial statement audit"
+            ],
+            "topic": "Auditing",
+            "difficulty": "hard",
+            "explanation": "A company's financial statements can be audited using financial statement audit and system audit approaches."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T14:15:17.883+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Recording of Transactions I\n\n## Chapter at a Glance\n\nRecording of Transactions I is the first chapter of the Accountancy book for Class 11, and it deals with the fundamental concepts of accounting. This chapter explains how business transactions are recorded in the books of accounts. It lays the foundation for the subsequent chapters and provides an understanding of the accounting process. The chapter covers the basic elements of a transaction, the importance of accounting, and the methods of recording transactions. It also introduces the concept of accounting equation and its significance in recording transactions.\n\n## Section-wise Summary\n\n### 11.1 Introduction to Accounting\n\nThe chapter begins with an introduction to accounting, which is defined as the systematic recording, classifying, and reporting of financial transactions of a business. Accounting is essential for a business as it helps in decision-making, planning, and control. The chapter explains that accounting is a language of business and provides a platform for the exchange of information between various stakeholders.\n\n### 11.2 Basic Accounting Elements\n\nThe basic accounting elements are asset, liability, capital, revenue, and expense. Assets are resources owned or controlled by a business, while liabilities are the obligations of a business. Capital represents the owner's investment in a business, and revenue is the income earned by a business. Expense is a cost incurred by a business to generate revenue. These elements are essential for recording transactions and are used in the accounting equation.\n\n### 11.3 Accounting Equation\n\nThe accounting equation is a fundamental concept in accounting, and it is represented as: Assets = Capital + Liabilities. This equation is used to record transactions and to ensure that the accounting records are accurate and reliable. The accounting equation is also known as the balance sheet equation.\n\n### 11.4 Journal and Ledger\n\nA journal is a book of prime entry where transactions are recorded in the order in which they occur. It is a chronological record of all the transactions of a business. A ledger is a book of final entry where transactions are posted from the journal. It is a classified record of all the transactions of a business.\n\n### 11.5 Recording of Transactions\n\nTransactions are recorded in the journal and then posted to the ledger. The journal provides a chronological record of all the transactions, while the ledger provides a classified record of all the transactions. The chapter explains the rules for recording transactions in the journal and the ledger.\n\n### 11.6 Ledger Accounts\n\nA ledger account is a classified record of all the transactions of a business. It is a permanent record of all the transactions and can be used to prepare financial statements. The chapter explains the types of ledger accounts and how they are used.\n\n## Important NCERT Exercises Insight\n\n* Key concepts tested in NCERT exercises:\n\t+ Accounting elements (asset, liability, capital, revenue, and expense)\n\t+ Accounting equation\n\t+ Journal and ledger\n\t+ Recording of transactions\n\t+ Ledger accounts\n* What to remember:\n\t+ The accounting equation is a fundamental concept in accounting and is used to record transactions.\n\t+ The journal is a book of prime entry where transactions are recorded in the order in which they occur.\n\t+ The ledger is a book of final entry where transactions are posted from the journal.\n\t+ Ledger accounts provide a classified record of all the transactions of a business.\n\n## NCERT Exemplar Focus\n\nThe NCERT exemplar provides additional topics covered in the chapter, including:\n\n* Examples of recording transactions\n* Illustrations of journal and ledger accounts\n* Practice questions to test understanding of the concepts\n\n## Board Exam Relevance\n\n* Marks weightage: 20-25% of the total marks\n* Frequently asked topics:\n\t+ Accounting elements\n\t+ Accounting equation\n\t+ Journal and ledger\n\t+ Recording of transactions\n\t+ Ledger accounts\n* Tips for board exam preparation:\n\t+ Practice solving exercises and problems\n\t+ Review and revise concepts regularly\n\t+ Focus on understanding the concepts rather than just memorizing the formulas and rules."
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:59:35.864+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "A business firm purchased goods costing ₹ 3,00,000 from a supplier. The payment for the goods was made by issuing a cheque for ₹ 2,50,000 and the balance by a bank draft for ₹ 50,000. Pass the journal entry for the above transaction.",
+            "type": "Long Answer",
+            "marks": 5,
+            "answer": "Debit Purchases A/c ₹ 3,00,000, Credit Bank A/c ₹ 2,50,000, Debit Bank A/c ₹ 50,000",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "The following are the details of the expenses incurred by a company during the year ended 31st March, 2022: ₹ 1,00,000 by cash and ₹ 50,000 by cheque. Prepare the journal entry for the above transaction.",
+            "type": "Long Answer",
+            "marks": 5,
+            "answer": "Debit Expenses A/c ₹ 1,50,000, Credit Bank A/c ₹ 1,00,000",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "A business firm issued 1,000 equity shares of ₹ 10 each at a premium of ₹ 2 per share. Pass the journal entry for the above transaction.",
+            "type": "Long Answer",
+            "marks": 5,
+            "answer": "Debit Bank A/c ₹ 9,00,000, Credit Share Capital A/c ₹ 10,00,000",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "A business firm received ₹ 2,50,000 from a customer as advance against the sale of goods. Record the transaction.",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "Debit Cash A/c ₹ 2,50,000, Credit Unearned Income A/c ₹ 2,50,000",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "A business firm purchased goods on credit from a supplier for ₹ 60,000. The payment for the goods was made 6 months after the purchase. Record the transaction.",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "Debit Purchases A/c ₹ 60,000, Credit Bank A/c ₹ 60,000 after 6 months",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "A business firm issued a cheque of ₹ 5,000 to a supplier for the purchase of goods. Record the transaction.",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "Debit Purchases A/c ₹ 5,000, Credit Bank A/c ₹ __________",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "A business firm received a dividend of ₹ 20,000 from a company. Record the transaction.",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "Debit Dividend Received A/c ₹ 20,000, Credit Bank A/c ₹ __________",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "A business firm issued 500 equity shares of ₹ 10 each at a premium of ₹ 3 per share. What is the amount of share capital?",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "₹ 1,75,000",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "A business firm purchased goods on credit from a supplier for ₹ 40,000. The payment for the goods was made 3 months after the purchase. What is the accounting treatment for this transaction?",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "Debit Purchases A/c ₹ 40,000, Credit Bank A/c ₹ 40,000 after 3 months",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "True or False: Cash received from customers is recorded as an asset.",
+            "type": "True/False",
+            "marks": 1,
+            "answer": "False",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:23:50.414+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "What is meant by accounting equation?",
+            "marks": 2,
+            "topic": "Accounting Equation",
+            "answer": "The accounting equation is a fundamental concept in accounting that represents the relationship between a company's assets, liabilities, and equity. It is expressed as: Assets = Liabilities + Capital. This equation helps in identifying the true financial position of a business.",
+            "key_points": [
+              "Assets = Liabilities + Capital",
+              "True financial position",
+              "Business entity"
+            ]
+          },
+          {
+            "q": "What is the difference between nominal and personal accounts?",
+            "marks": 3,
+            "topic": "Accounting for Expenses and Revenues",
+            "answer": "Nominal accounts represent income, expenses, losses, and gains of a business, while personal accounts represent the financial transactions related to individuals or business entities. Nominal accounts are closed at the end of the accounting period, whereas personal accounts are carried forward to the next period.",
+            "key_points": [
+              "Nominal accounts",
+              "Personal accounts",
+              "Closed at the end of the accounting period"
+            ]
+          },
+          {
+            "q": "What is an asset?",
+            "marks": 2,
+            "topic": "Assets, Liabilities and Capital",
+            "answer": "An asset is a resource owned or controlled by a business, expected to generate economic benefits in the future. Assets can be tangible (e.g., cash, property) or intangible (e.g., patents, copyrights).",
+            "key_points": [
+              "Resource owned or controlled",
+              "Economic benefits",
+              "Tangible and intangible"
+            ]
+          },
+          {
+            "q": "What is a journal?",
+            "marks": 2,
+            "topic": "Journal",
+            "answer": "A journal is a book of original entry where transactions are recorded in a chronological order. It is a temporary book used to record and classify transactions before posting them to the ledger.",
+            "key_points": [
+              "Original entry",
+              "Chronological order",
+              "Temporary book"
+            ]
+          },
+          {
+            "q": "What is meant by the term 'posting'?",
+            "marks": 2,
+            "topic": "Posting from Journal",
+            "answer": "Posting refers to the process of transferring the transactions recorded in the journal to the respective ledger accounts. This is done to update the ledger accounts and ensure that the accounting records are accurate and up-to-date.",
+            "key_points": [
+              "Transferring to ledger accounts",
+              "Updating ledger accounts",
+              "Accuracy of accounting records"
+            ]
+          },
+          {
+            "q": "What is a ledger account?",
+            "marks": 2,
+            "topic": "Ledger",
+            "answer": "A ledger account is a permanent book that shows the complete and accurate picture of an account. It is divided into two parts: debit side and credit side, and is used to record and classify the transactions of a business.",
+            "key_points": [
+              "Permanent book",
+              "Debit and credit sides",
+              "Complete and accurate picture"
+            ]
+          },
+          {
+            "q": "What is the purpose of a trial balance?",
+            "marks": 2,
+            "topic": "Trial Balance",
+            "answer": "The purpose of a trial balance is to ensure that the total debit balances equal the total credit balances in the ledger accounts. It helps in detecting any errors or discrepancies in the accounting records.",
+            "key_points": [
+              "Total debit balances",
+              "Total credit balances",
+              "Detection of errors"
+            ]
+          },
+          {
+            "q": "What is meant by 'accruals'?",
+            "marks": 2,
+            "topic": "Accruals and Prepaid Expenses",
+            "answer": "Accruals refer to the expenses or revenues of a business that have been incurred or earned but not yet paid or received. They are recorded in the accounting books to ensure that the financial statements accurately reflect the business's financial position.",
+            "key_points": [
+              "Expenses or revenues",
+              "Not yet paid or received",
+              "Financial statements"
+            ]
+          },
+          {
+            "q": "What is prepaid expense?",
+            "marks": 2,
+            "topic": "Accruals and Prepaid Expenses",
+            "answer": "A prepaid expense is a payment made in advance for an expense that will be incurred in the future. It is recorded as an asset in the accounting books and is gradually reduced over time as the expense is incurred.",
+            "key_points": [
+              "Payment made in advance",
+              "Asset in accounting books",
+              "Gradual reduction"
+            ]
+          },
+          {
+            "q": "What is a journal voucher?",
+            "marks": 2,
+            "topic": "Journal Voucher",
+            "answer": "A journal voucher is a document used to record a transaction in the journal that does not involve a business transaction, but rather a correction or adjustment to a previous transaction. It helps in maintaining the accuracy and integrity of the accounting records.",
+            "key_points": [
+              "Correction or adjustment",
+              "Previous transaction",
+              "Accuracy and integrity"
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:31:12.928+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Recording of Transactions I — Quick Revision Notes\n\n## ⚡ Key Points\n- All transactions in a business organization can be recorded in 3 main accounts: Assets, Liabilities, and Capital.\n- Accounting equation: Assets = Liabilities + Capital.\n- Journal is a book of prime entry in which all the transactions of a business are recorded in chronological order.\n- Journal entries are recorded in a journal to record transactions.\n- Journal entries are classified into two types: Personal Accounts and Real Accounts.\n- Personal Accounts are further classified into two types: Nominal Accounts and Real Accounts.\n- Nominal Accounts are also known as Temporary Accounts or Revenue Accounts.\n- Real Accounts are also known as Permanent Accounts or Balance Sheet Accounts.\n- The rules of debit and credit are as follows:\n  - Assets and Drawings are debited.\n  - Liabilities and Capital are credited.\n  - Expenses are debited and Revenues are credited.\n- Journal entries can be recorded in a journal using the format: Date, Particulars, L.F., Debit Amount, Credit Amount.\n- A Ledger is a book of final entry in which all the accounts of a business are recorded.\n- Ledger accounts are classified into two types: Personal Ledger Accounts and Real Ledger Accounts.\n- The rules of debit and credit are followed in the same manner as in a journal.\n- The format of a Ledger account is: Date, Particulars, Debit Balance, Credit Balance.\n- The difference between a journal entry and a ledger account is that a journal entry is an entry recorded in a journal, while a ledger account is an account recorded in a ledger.\n- The main purpose of a journal is to record transactions in a chronological order.\n- The main purpose of a ledger is to record the final position of each account.\n- A journal is a book of prime entry, while a ledger is a book of final entry.\n- The first step in recording transactions is to record them in a journal.\n- The second step in recording transactions is to post them to a ledger.\n\n## 🔑 Must-Know Definitions\n- **Accounting Equation**: Assets = Liabilities + Capital.\n- **Journal**: A book of prime entry in which all the transactions of a business are recorded in chronological order.\n- **Journal Entry**: A record of a transaction in a journal.\n- **Ledger**: A book of final entry in which all the accounts of a business are recorded.\n- **Personal Accounts**: Accounts that deal with individuals or organizations.\n- **Real Accounts**: Accounts that deal with tangible assets or liabilities.\n- **Nominal Accounts**: Accounts that are temporary in nature and deal with expenses and revenues.\n- **Debit**: A left-hand side entry in a journal or ledger account.\n- **Credit**: A right-hand side entry in a journal or ledger account.\n\n## 📊 Important Formulas\n- Assets = Liabilities + Capital\n- Assets + Drawings = Liabilities + Capital\n- Assets - Drawings = Liabilities + Capital\n- Total Expenses = Total Revenues - Net Profit\n- Net Profit = Total Revenues - Total Expenses\n- Capital = Opening Capital + Net Profit - Drawings\n\n## ⭐ Exam Tips\n- Practice recording journal entries and posting them to a ledger to develop your skills.\n- Make sure to follow the accounting equation and the rules of debit and credit.\n- Review your journal entries and ledger accounts regularly to ensure that they are accurate and up-to-date.\n- Use a journal and ledger to record transactions, as this will help you to understand the accounting process better.\n- Focus on understanding the accounting equation and the rules of debit and credit, as these are the foundation of accounting."
+      }
+    }
+  }
+}

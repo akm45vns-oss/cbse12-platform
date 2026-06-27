@@ -1,0 +1,69 @@
+{
+  "class": "11",
+  "subject": "Accountancy",
+  "chapter": "Depreciation, Provisions and Reserves",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:38:48.438Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Depreciation Formula",
+        "formula": "W = (C + A) / N",
+        "variables": "W = Depreciation per annum, C = Cost of asset, A = Annuity for the life of asset, N = Number of years",
+        "units": "Currency units (e.g. INR)",
+        "notes": "This formula is used to calculate depreciation per annum."
+      },
+      {
+        "name": "Reducing Balance Method",
+        "formula": "W = C * r / (1 - (1 + r)^(-n))",
+        "variables": "W = Depreciation per annum, C = Cost of asset, r = Rate of depreciation, n = Number of years",
+        "units": "Currency units (e.g. INR)",
+        "notes": "This method is used to calculate depreciation where asset value decreases by a fixed percentage every year."
+      },
+      {
+        "name": "Straight Line Method",
+        "formula": "W = C / n",
+        "variables": "W = Depreciation per annum, C = Cost of asset, n = Number of years",
+        "units": "Currency units (e.g. INR)",
+        "notes": "This method is used to calculate depreciation where asset value decreases by an equal amount every year."
+      },
+      {
+        "name": "Provisions Formula",
+        "formula": "Provisions = (Estimated Loss / 5) + (Accumulated Loss / 5)",
+        "variables": "Estimated Loss = Estimated amount of loss, Accumulated Loss = Accumulated amount of loss",
+        "units": "Currency units (e.g. INR)",
+        "notes": "This formula is used to calculate provisions for estimated and accumulated losses."
+      },
+      {
+        "name": "Reserves Formula",
+        "formula": "Reserves = Profit - Dividend",
+        "variables": "Profit = Net profit of the company, Dividend = Dividend declared by the company",
+        "units": "Currency units (e.g. INR)",
+        "notes": "This formula is used to calculate reserves by subtracting dividend from net profit."
+      },
+      {
+        "name": "Statement of Accounting Treatment for Depreciation",
+        "formula": "Depreciation is an expense, not a liability.",
+        "variables": "",
+        "units": "",
+        "notes": "This statement emphasizes that depreciation is an expense, not a liability, and is deducted from profit to arrive at net profit."
+      },
+      {
+        "name": "Statement of Accounting Treatment for Provisions",
+        "formula": "Provisions are recorded as liabilities and expenses in the same period.",
+        "variables": "",
+        "units": "",
+        "notes": "This statement emphasizes that provisions are recorded as both liabilities and expenses in the same period."
+      },
+      {
+        "name": "Statement of Accounting Treatment for Reserves",
+        "formula": "Reserves are recorded as equity.",
+        "variables": "",
+        "units": "",
+        "notes": "This statement emphasizes that reserves are recorded as equity, not liabilities or expenses."
+      }
+    ]
+  }
+}

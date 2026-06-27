@@ -1,0 +1,83 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:15:50.036Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Thermal Expansion",
+        "formula": "\\frac{\\Delta L}{L} = \\alpha \\Delta T",
+        "variables": "L: Initial length, \\Delta L: Change in length, \\alpha: Coefficient of linear expansion, \\Delta T: Change in temperature",
+        "units": "SI units: 1/K",
+        "notes": "Linear expansion is directly proportional to the change in temperature."
+      },
+      {
+        "name": "Coefficients of Linear Expansion",
+        "formula": "For solids: \\alpha = \\frac{1}{L} \\frac{dL}{dT}, For liquids: \\alpha = \\frac{1}{V} \\frac{dV}{dT}",
+        "variables": "L: Length, V: Volume, \\alpha: Coefficient of linear expansion",
+        "units": "SI units: 1/K",
+        "notes": "Coefficients of linear expansion are temperature independent."
+      },
+      {
+        "name": "Linear Expansion for Small Changes",
+        "formula": "\\Delta L = L \\alpha \\Delta T",
+        "variables": "L: Length, \\Delta L: Change in length, \\alpha: Coefficient of linear expansion, \\Delta T: Change in temperature",
+        "units": "SI units: m",
+        "notes": "This formula is used when the change in temperature is small."
+      },
+      {
+        "name": "Volume Expansion",
+        "formula": "\\frac{\\Delta V}{V} = 3\\alpha \\Delta T",
+        "variables": "V: Initial volume, \\Delta V: Change in volume, \\alpha: Coefficient of linear expansion, \\Delta T: Change in temperature",
+        "units": "SI units: 1/K",
+        "notes": "Volume expansion is directly proportional to the change in temperature."
+      },
+      {
+        "name": "Thermal Expansion of Gases",
+        "formula": "PV = nRT",
+        "variables": "P: Pressure, V: Volume, n: Number of moles, R: Gas constant, T: Temperature",
+        "units": "SI units: Pa, m^3, mol, J/molK, K",
+        "notes": "This is the ideal gas equation."
+      },
+      {
+        "name": "Isothermal Expansion of an Ideal Gas",
+        "formula": "PV = nRT",
+        "variables": "P: Pressure, V: Volume, n: Number of moles, R: Gas constant, T: Temperature",
+        "units": "SI units: Pa, m^3, mol, J/molK, K",
+        "notes": "This is the ideal gas equation."
+      },
+      {
+        "name": "Adiabatic Expansion of an Ideal Gas",
+        "formula": "PV^\\gamma = constant",
+        "variables": "P: Pressure, V: Volume, \\gamma: Adiabatic index",
+        "units": "SI units: Pa, m^3",
+        "notes": "Adiabatic expansion is a process where no heat is exchanged with the surroundings."
+      },
+      {
+        "name": "Heat Transfer by Conduction",
+        "formula": "Q = kA\\Delta T\\frac{t}{d}",
+        "variables": "Q: Heat transferred, k: Thermal conductivity, A: Area, \\Delta T: Temperature difference, t: Time, d: Distance",
+        "units": "SI units: J, W/mK, m^2, K, s, m",
+        "notes": "This formula is used for heat transfer through a solid."
+      },
+      {
+        "name": "Heat Transfer by Convection",
+        "formula": "Q = hA\\Delta T",
+        "variables": "Q: Heat transferred, h: Convective heat transfer coefficient, A: Area, \\Delta T: Temperature difference",
+        "units": "SI units: J, W/m^2K, m^2, K",
+        "notes": "This formula is used for heat transfer through a fluid."
+      },
+      {
+        "name": "Heat Transfer by Radiation",
+        "formula": "Q = \\sigma A (T_1^4 - T_2^4)",
+        "variables": "Q: Heat transferred, \\sigma: Stefan-Boltzmann constant, A: Area, T_1: Temperature of the source, T_2: Temperature of the sink",
+        "units": "SI units: J, W/m^2K^4, m^2, K",
+        "notes": "This formula is used for heat transfer through radiation."
+      }
+    ]
+  }
+}

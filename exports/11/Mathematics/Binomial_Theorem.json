@@ -1,0 +1,1130 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "exported_at": "2026-06-27T05:54:12.530Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:14:14.028+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is based on the principle of mathematical induction and provides a systematic method for expanding expressions of the form (x + y)^n.",
+            "assertion": "Assertion (A): The Binomial Theorem can be used to expand (x + y)^n, where n is a positive integer.",
+            "explanation": "The Binomial Theorem is indeed used to expand (x + y)^n, and it is based on the principle of mathematical induction."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The general term (nCk) * x^(n-k) * y^k represents the number of combinations of n items taken k at a time, multiplied by the product of x^(n-k) and y^k.",
+            "assertion": "Assertion (A): The Binomial Theorem states that (x + y)^n = Σ (nCk) * x^(n-k) * y^k, where n is a positive integer.",
+            "explanation": "The Binomial Theorem indeed states that (x + y)^n = Σ (nCk) * x^(n-k) * y^k, and the general term represents the number of combinations of n items taken k at a time, multiplied by the product of x^(n-k) and y^k."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The Binomial Theorem is not applicable for negative values of n, as the expression (x + y)^n would involve fractional or zero exponents, which are undefined.",
+            "assertion": "Assertion (A): If n is a negative integer, then (x + y)^n is not defined.",
+            "explanation": "For negative values of n, the Binomial Theorem is not applicable, and the expression (x + y)^n would indeed involve fractional or zero exponents, which are undefined."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): By substituting -y for y in the Binomial Theorem, we can expand expressions of the form (x - y)^n.",
+            "assertion": "Assertion (A): The Binomial Theorem can be used to expand expressions of the form (x - y)^n.",
+            "explanation": "The Binomial Theorem can indeed be used to expand expressions of the form (x - y)^n by substituting -y for y."
+          },
+          {
+            "ans": "B",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The Binomial Theorem is based on the principle of mathematical induction, which is applicable for all positive integers, and can be extended to real values of n using the concept of limits.",
+            "assertion": "Assertion (A): The Binomial Theorem is applicable for all real values of n.",
+            "explanation": "The Binomial Theorem is indeed applicable for all real values of n, but the given reason is not the correct explanation."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The Binomial Theorem provides a systematic method for expanding expressions of the form (x + y)^n, which can be used to find the sum of a binomial series.",
+            "assertion": "Assertion (A): The Binomial Theorem can be used to find the sum of a binomial series.",
+            "explanation": "The Binomial Theorem can indeed be used to find the sum of a binomial series."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The Binomial Theorem can be extended to expressions of the form (x - y)^n by substituting -y for y, and to expressions of the form (x + y)^(-n) by using the concept of limits.",
+            "assertion": "Assertion (A): The Binomial Theorem is only applicable for expressions of the form (x + y)^n.",
+            "explanation": "The Binomial Theorem is not only applicable for expressions of the form (x + y)^n."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The Binomial Theorem provides a systematic method for expanding expressions of the form (x + y)^n, which can be used to find the coefficient of a term in a binomial expansion.",
+            "assertion": "Assertion (A): The Binomial Theorem can be used to find the coefficient of a term in a binomial expansion.",
+            "explanation": "The Binomial Theorem can indeed be used to find the coefficient of a term in a binomial expansion."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The Binomial Theorem can be obtained by setting two of the variables in the multinomial theorem to zero.",
+            "assertion": "Assertion (A): The Binomial Theorem is a special case of the multinomial theorem.",
+            "explanation": "The Binomial Theorem is indeed a special case of the multinomial theorem."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): The Binomial Theorem provides a systematic method for expanding expressions of the form (x + y)^n, which can be used to find the sum of an infinite geometric series.",
+            "assertion": "Assertion (A): The Binomial Theorem can be used to find the sum of an infinite geometric series.",
+            "explanation": "The Binomial Theorem is not used to find the sum of an infinite geometric series."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T10:59:55.199+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "The probability of a student getting a scholarship in a competitive examination is 3/5. If 20 students appeared for the examination, find the probability that at least 10 students will get the scholarship. The scholarship is awarded based on the marks scored in the examination, and the marks are distributed binomially.",
+            "questions": [
+              {
+                "q": "What is the probability of a student getting the scholarship in the examination?",
+                "ans": "B",
+                "opts": [
+                  "(A) 2/5",
+                  "(B) 3/5",
+                  "(C) 4/5",
+                  "(D) 1/5"
+                ],
+                "explanation": "Using the binomial probability formula, we can calculate the probability of a student getting the scholarship. The probability of getting the scholarship is 3/5, which matches option (B)."
+              },
+              {
+                "q": "How many students are required to appear for the examination so that the probability of at least 10 students getting the scholarship is 0.6?",
+                "ans": "B",
+                "opts": [
+                  "(A) 20",
+                  "(B) 25",
+                  "(C) 30",
+                  "(D) 35"
+                ],
+                "explanation": "Using the binomial probability formula, we can calculate the number of students required to appear for the examination. The probability of at least 10 students getting the scholarship is 0.6, which matches option (B)."
+              },
+              {
+                "q": "What is the mean of the binomial distribution for the scholarship in the examination?",
+                "ans": "C",
+                "opts": [
+                  "(A) 12",
+                  "(B) 15",
+                  "(C) 10",
+                  "(D) 20"
+                ],
+                "explanation": "The mean of the binomial distribution for the scholarship is np, where n is the number of students and p is the probability of getting the scholarship. In this case, n = 20 and p = 3/5."
+              },
+              {
+                "q": "What is the standard deviation of the binomial distribution for the scholarship in the examination?",
+                "ans": "C",
+                "opts": [
+                  "(A) 2",
+                  "(B) 3",
+                  "(C) √(npq)",
+                  "(D) √(np(1-p))"
+                ],
+                "explanation": "The standard deviation of the binomial distribution for the scholarship is √(npq), where n is the number of students and q is the probability of not getting the scholarship."
+              },
+              {
+                "q": "Using the binomial theorem, find the coefficient of x^10 in the expansion of (2x - 1)^20.",
+                "ans": "A",
+                "opts": [
+                  "(A) 184756",
+                  "(B) 185356",
+                  "(C) 184856",
+                  "(D) 185456"
+                ],
+                "explanation": "Using the binomial theorem, the coefficient of x^10 is given by 20C10 * (2)^10 * (-1)^10."
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "A company produces light bulbs with a success probability of 0.9. If a sample of 5 light bulbs is randomly selected, find the probability that at least 4 light bulbs will work. The production process is binomially distributed.",
+            "questions": [
+              {
+                "q": "What is the probability that a light bulb will work in the production process?",
+                "ans": "C",
+                "opts": [
+                  "(A) 0.7",
+                  "(B) 0.8",
+                  "(C) 0.9",
+                  "(D) 0.95"
+                ],
+                "explanation": "Using the binomial probability formula, we can calculate the probability that a light bulb will work. The probability of success is 0.9, which matches option (C)."
+              },
+              {
+                "q": "How many light bulbs are required to be selected so that the probability of at least 4 light bulbs working is 0.8?",
+                "ans": "B",
+                "opts": [
+                  "(A) 5",
+                  "(B) 10",
+                  "(C) 15",
+                  "(D) 20"
+                ],
+                "explanation": "Using the binomial probability formula, we can calculate the number of light bulbs required to be selected. The probability of at least 4 light bulbs working is 0.8, which matches option (B)."
+              },
+              {
+                "q": "What is the mean of the binomial distribution for the light bulbs in the production process?",
+                "ans": "C",
+                "opts": [
+                  "(A) 3",
+                  "(B) 4",
+                  "(C) 5",
+                  "(D) 6"
+                ],
+                "explanation": "The mean of the binomial distribution for the light bulbs is np, where n is the number of light bulbs selected and p is the probability of success."
+              },
+              {
+                "q": "What is the standard deviation of the binomial distribution for the light bulbs in the production process?",
+                "ans": "B",
+                "opts": [
+                  "(A) 1",
+                  "(B) √(npq)",
+                  "(C) √(np(1-p))",
+                  "(D) √(np(1-p)(1-q))"
+                ],
+                "explanation": "The standard deviation of the binomial distribution for the light bulbs is √(npq), where n is the number of light bulbs selected and q is the probability of failure."
+              },
+              {
+                "q": "Using the binomial theorem, find the coefficient of x^15 in the expansion of (1 + x)^25.",
+                "ans": "A",
+                "opts": [
+                  "(A) 53130",
+                  "(B) 53230",
+                  "(C) 53330",
+                  "(D) 53430"
+                ],
+                "explanation": "Using the binomial theorem, the coefficient of x^15 is given by 25C15 * (1)^15 * (x)^15."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:29:16.983+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Binomial Theorem\n## 📌 Chapter Overview\nThe Binomial Theorem is a powerful mathematical tool that helps us expand expressions of the form (a + b)^n, where 'n' is a positive integer. This theorem is a fundamental concept in algebra and is used to expand expressions with multiple terms. The binomial theorem has numerous applications in various fields such as mathematics, physics, engineering, and economics. In this chapter, we will explore the binomial theorem, its various forms, and its applications.\n\nThe binomial theorem was first discovered by the ancient Indian mathematician Aryabhata in the 5th century. However, it was later popularized by the French mathematician Blaise Pascal in the 17th century. The theorem is an extension of the binomial expansion, which is a special case of the binomial theorem.\n\n## 🎯 Learning Objectives\n- To understand the binomial theorem and its various forms.\n- To expand expressions of the form (a + b)^n using the binomial theorem.\n- To apply the binomial theorem to solve problems in algebra and other fields.\n- To understand the concept of binomial coefficients and their properties.\n- To use the binomial theorem to solve problems involving permutations and combinations.\n- To apply the binomial theorem to solve problems in probability and statistics.\n\n## 🔑 Key Concepts & Definitions\n- **Binomial Theorem**: A mathematical formula that helps us expand expressions of the form (a + b)^n.\n- **Binomial Coefficients**: The coefficients of the terms in the expansion of (a + b)^n.\n- **Binomial Expansion**: A special case of the binomial theorem where n is a positive integer.\n- **Permutation**: A way of arranging objects in a specific order.\n- **Combination**: A way of selecting objects from a set without considering the order.\n\n## 📐 Core Theory & Principles\nThe binomial theorem is based on the following principles:\n\n- The theorem states that (a + b)^n = Σ (n choose k) * a^(n-k) * b^k, where k ranges from 0 to n.\n- The binomial coefficients (n choose k) can be calculated using the formula n! / (k! * (n-k)!).\n- The binomial theorem can be applied to expand expressions of the form (a + b)^n, where 'n' is a positive integer.\n- The binomial theorem can be used to solve problems involving permutations and combinations.\n\n## 🧮 Important Formulas & Laws\n- **Binomial Theorem Formula**: (a + b)^n = Σ (n choose k) * a^(n-k) * b^k, where k ranges from 0 to n.\n- **Binomial Coefficient Formula**: (n choose k) = n! / (k! * (n-k)!).\n- **Permutation Formula**: nPr = n! / (n-r)!, where r is the number of objects being selected.\n- **Combination Formula**: nCr = n! / (r! * (n-r)!), where r is the number of objects being selected.\n\n## 🔬 Detailed Explanations\nThe binomial theorem can be used to expand expressions of the form (a + b)^n, where 'n' is a positive integer. The expansion of (a + b)^n can be written as:\n\n(a + b)^n = a^n + na^(n-1)b + (n(n-1)/2)a^(n-2)b^2 + ... + b^n\n\nThe binomial coefficients (n choose k) can be calculated using the formula n! / (k! * (n-k)!).\n\n## 🖼️ Diagrams & Visual Concepts\nThe binomial theorem can be represented using a diagram, which shows the expansion of (a + b)^n as a series of terms.\n\n| Term | Coefficient | Power of a | Power of b |\n| --- | --- | --- | --- |\n| a^n | 1 | n | 0 |\n| na^(n-1)b | n | n-1 | 1 |\n| (n(n-1)/2)a^(n-2)b^2 | n(n-1)/2 | n-2 | 2 |\n| ... | ... | ... | ... |\n| b^n | 1 | 0 | n |\n\n## ⭐ Most Important Points (Exam Focus)\n- The binomial theorem is a powerful mathematical tool used to expand expressions of the form (a + b)^n.\n- The binomial theorem states that (a + b)^n = Σ (n choose k) * a^(n-k) * b^k, where k ranges from 0 to n.\n- The binomial coefficients (n choose k) can be calculated using the formula n! / (k! * (n-k)!).\n- The binomial theorem can be used to solve problems involving permutations and combinations.\n- The binomial theorem has numerous applications in various fields such as mathematics, physics, engineering, and economics.\n- The binomial theorem can be used to expand expressions with multiple terms.\n- The binomial theorem is an extension of the binomial expansion.\n- The binomial theorem can be applied to solve problems involving probability and statistics.\n- The binomial theorem is used in the study of permutations and combinations.\n- The binomial theorem is used in the study of probability and statistics.\n\n## ❌ Common Mistakes to Avoid\n- Confusing the binomial theorem with the binomial expansion.\n- Not calculating the binomial coefficients correctly.\n- Not identifying the correct value of 'n' and 'k' in the binomial theorem.\n- Not applying the binomial theorem correctly to solve problems.\n- Not checking the validity of the binomial theorem for different values of 'n'.\n\n## 💡 Real-World Applications\n- **Probability and Statistics**: The binomial theorem is used to calculate the probability of success in a series of independent trials.\n- **Engineering**: The binomial theorem is used to calculate the stress and strain on materials in engineering applications.\n- **Computer Science**: The binomial theorem is used in algorithms for sorting and searching data.\n- **Economics**: The binomial theorem is used to model financial markets and calculate the probability of different outcomes.\n\n## 🔁 Quick Revision Summary\n- The binomial theorem is a powerful mathematical tool used to expand expressions of the form (a + b)^n.\n- The binomial theorem states that (a + b)^n = Σ (n choose k) * a^(n-k) * b^k, where k ranges from 0 to n.\n- The binomial coefficients (n choose k) can be calculated using the formula n! / (k! * (n-k)!).\n- The binomial theorem can be used to solve problems involving permutations and combinations.\n- The binomial theorem has numerous applications in various fields such as mathematics, physics, engineering, and economics.\n- The binomial theorem can be used to expand expressions with multiple terms.\n- The binomial theorem is an extension of the binomial expansion.\n- The binomial theorem can be applied to solve problems involving probability and statistics.\n- The binomial theorem is used in the study of permutations and combinations.\n- The binomial theorem is used in the study of probability and statistics.\n- Not calculating the binomial coefficients correctly.\n- Not identifying the correct value of 'n' and 'k' in the binomial theorem.\n- Not applying the binomial theorem correctly to solve problems.\n- Not checking the validity of the binomial theorem for different values of 'n'.\n- The binomial theorem is used in algorithms for sorting and searching data.\n- The binomial theorem is used in financial modeling and calculation of the probability of different outcomes."
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:53.685+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [],
+        "exam_frequency": "medium",
+        "difficulty_score": 5,
+        "overall_difficulty": "medium"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:29:15.629+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Study tip 1",
+          "Study tip 2"
+        ],
+        "total_minutes": 120,
+        "revision_minutes": 20,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 30,
+        "sessions_recommended": 3,
+        "first_reading_minutes": 45,
+        "practice_questions_minutes": 25
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:53.224+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Content",
+            "notes": "",
+            "units": "",
+            "formula": "```json\n[\n  {\n    \"name\": \"Binomial Theorem Statement\",\n    \"formula\": \"(a + b)^n = ∑(n choose r) * a^(n-r) * b^r for r = 0 to n\",\n    \"variables\": {\n      \"a\": \"First term\",\n      \"b\": \"Second term\",\n      \"n\": \"Power to which the binomial is raised\",\n      \"r\": \"Variable in the summation\",\n      \"n choose r\": \"Binomial coefficient, calculated as n! / (r! * (n-r)!) where ! denotes factorial\"\n    },\n    \"units\": \"\",\n    \"notes\": \"The binomial theorem is a powerful tool for expanding expressions of the form (a + b)^n\"\n  },\n  {\n    \"name\": \"Binomial Coefficient Formula\",\n    \"formula\": \"n choose r = n! / (r! * (n-r)!) where ! denotes factorial\",\n    \"variables\": {\n      \"n choose r\": \"Binomial coefficient\",\n      \"n\": \"Power to which the binomial is raised\",\n      \"r\": \"Variable in the summation\"\n    },\n    \"units\": \"\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Factorial Formula\",\n    \"formula\": \"n! = n * (n-1) * ... * 2 * 1\",\n    \"variables\": {\n      \"n!\": \"Factorial of n\",\n      \"n\": \"Number\"\n    },\n    \"units\": \"\",\n    \"notes\": \"The factorial of a number n is the product of all positive integers less than or equal to n\"\n  },\n  {\n    \"name\": \"Binomial Expansion for Positive Integer n\",\n    \"formula\": \"(a + b)^n = a^n + n*a^(n-1)*b + (n*(n-1)/2)*a^(n-2)*b^2 + ... + b^n\",\n    \"variables\": {\n      \"a\": \"First term\",\n      \"b\": \"Second term\",\n      \"n\": \"Power to which the binomial is raised\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This is a special case of the binomial theorem, where n is a positive integer\"\n  },\n  {\n    \"name\": \"General Term of Binomial Expansion\",\n    \"formula\": \"T_(r+1) = (n choose r) * a^(n-r) * b^r\",\n    \"variables\": {\n      \"T_(r+1)\": \"General term of the binomial expansion\",\n      \"n choose r\": \"Binomial coefficient\",\n      \"a\": \"First term\",\n      \"b\": \"Second term\",\n      \"r\": \"Variable in the summation\"\n    },\n    \"units\": \"\",\n    \"notes\": \"The general term of a binomial expansion is given by the formula above\"\n  }\n]\n```\n\nNote: This is a comprehensive list of formulas related to the binomial theorem for CBSE Class 11 Mathematics.",
+            "variables": ""
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T14:12:55.957+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "Introduction to Binomial Theorem",
+            "importance": "Understanding the Binomial Theorem is crucial for solving various problems in algebra, calculus, and statistics.",
+            "explanation": "The Binomial Theorem is a mathematical concept that describes the expansion of a binomial expression raised to a positive integer power. It is a fundamental concept in algebra and has numerous applications in mathematics and other fields.",
+            "related_topics": [
+              "Algebra",
+              "Calculus",
+              "Statistics"
+            ]
+          },
+          {
+            "concept": "Tribinomial Theorem",
+            "importance": "The Tribinomial Theorem is essential for solving complex algebraic problems and has applications in advanced mathematics and physics.",
+            "explanation": "The Tribinomial Theorem is an extension of the Binomial Theorem, applicable to expressions of the form (a + b + c)^n. It is used to expand expressions with three terms.",
+            "related_topics": [
+              "Algebra",
+              "Advanced Mathematics",
+              "Physics"
+            ]
+          },
+          {
+            "concept": "Combinatorial Notation",
+            "importance": "Combinatorial notation is crucial for simplifying complex expressions and solving problems involving permutations and combinations.",
+            "explanation": "Combinatorial notation is used to express binomial coefficients in a compact form, making calculations easier and more efficient.",
+            "related_topics": [
+              "Combinatorics",
+              "Permutations",
+              "Combinations"
+            ]
+          },
+          {
+            "concept": "Binomial Coefficients",
+            "importance": "Binomial coefficients are essential for solving problems involving counting and probability.",
+            "explanation": "Binomial coefficients are the numbers that appear in the expansion of a binomial expression. They are used to express the number of ways to choose items from a set.",
+            "related_topics": [
+              "Combinatorics",
+              "Probability",
+              "Counting"
+            ]
+          },
+          {
+            "concept": "Expansion of (a + b)^n",
+            "importance": "Understanding the expansion of (a + b)^n is crucial for solving various problems in algebra and calculus.",
+            "explanation": "The expansion of (a + b)^n is a fundamental concept in the Binomial Theorem, describing the expression as a sum of terms with binomial coefficients.",
+            "related_topics": [
+              "Algebra",
+              "Calculus",
+              "Functions"
+            ]
+          },
+          {
+            "concept": "Expansion of (a - b)^n",
+            "importance": "Understanding the expansion of (a - b)^n is essential for solving problems involving differences of squares and other algebraic expressions.",
+            "explanation": "The expansion of (a - b)^n is similar to the expansion of (a + b)^n, but with alternating signs.",
+            "related_topics": [
+              "Algebra",
+              "Functions",
+              "Differences of Squares"
+            ]
+          },
+          {
+            "concept": "Middle Term of the Binomial Expansion",
+            "importance": "Understanding the middle term of the binomial expansion is crucial for solving problems involving binomial coefficients and algebraic expressions.",
+            "explanation": "The middle term of the binomial expansion is the term that appears in the middle of the expansion, when n is even.",
+            "related_topics": [
+              "Algebra",
+              "Binomial Coefficients",
+              "Algebraic Expressions"
+            ]
+          },
+          {
+            "concept": "Use of Binomial Theorem in Calculus",
+            "importance": "Understanding the use of the Binomial Theorem in calculus is essential for solving problems involving functions and differential equations.",
+            "explanation": "The Binomial Theorem has numerous applications in calculus, including the expansion of functions and the solution of differential equations.",
+            "related_topics": [
+              "Calculus",
+              "Functions",
+              "Differential Equations"
+            ]
+          },
+          {
+            "concept": "Binomial Theorem in Trigonometry",
+            "importance": "Understanding the Binomial Theorem in trigonometry is essential for solving problems involving trigonometric functions and equations.",
+            "explanation": "The Binomial Theorem has applications in trigonometry, including the expansion of trigonometric functions and the solution of trigonometric equations.",
+            "related_topics": [
+              "Trigonometry",
+              "Trigonometric Functions",
+              "Trigonometric Equations"
+            ]
+          },
+          {
+            "concept": "Binomial Theorem in Statistics",
+            "importance": "Understanding the Binomial Theorem in statistics is essential for solving problems involving probability and statistical distributions.",
+            "explanation": "The Binomial Theorem has applications in statistics, including the binomial distribution and the solution of statistical problems.",
+            "related_topics": [
+              "Statistics",
+              "Probability",
+              "Binomial Distribution"
+            ]
+          },
+          {
+            "concept": "Pascal's Triangle",
+            "importance": "Understanding Pascal's Triangle is essential for solving problems involving binomial coefficients and algebraic expressions.",
+            "explanation": "Pascal's Triangle is a triangular array of binomial coefficients, used to express the expansion of a binomial expression.",
+            "related_topics": [
+              "Algebra",
+              "Binomial Coefficients",
+              "Algebraic Expressions"
+            ]
+          },
+          {
+            "concept": "Binomial Theorem in Computer Science",
+            "importance": "Understanding the Binomial Theorem in computer science is essential for solving problems involving algorithms and data structures.",
+            "explanation": "The Binomial Theorem has applications in computer science, including the solution of problems involving permutations and combinations.",
+            "related_topics": [
+              "Computer Science",
+              "Algorithms",
+              "Data Structures"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:53.733+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "Binomial Theorem",
+            "example": "The expansion of (x + y)^5 is a classic application of the binomial theorem.",
+            "definition": "A mathematical concept that describes the expansion of a binomial expression to any positive integer power. It states that any binomial expression of the form (a + b)^n can be expanded into a sum of terms, where each term is a combination of 'a' and 'b' raised to various powers, with coefficients calculated using combinations."
+          },
+          {
+            "term": "Binomial Expression",
+            "example": "The expression 3x + 2y is a binomial expression.",
+            "definition": "An algebraic expression consisting of two terms, one with a positive coefficient and the other with a negative coefficient, separated by a plus sign (+). It is usually of the form a + b or a - b."
+          },
+          {
+            "term": "Coefficient",
+            "example": "In the expression 3x^2, the coefficient is 3.",
+            "definition": "A numerical factor in a term of a polynomial, which is multiplied by the variables to get the term's value."
+          },
+          {
+            "term": "Combination",
+            "example": "The combination of 3 items from a set of 5 is denoted as C(5, 3) or 5C3.",
+            "definition": "A way of selecting items from a set, where the order of selection is not important. In the context of the binomial theorem, combinations are used to calculate the coefficients of the expanded terms."
+          },
+          {
+            "term": "Combinatorial Notation",
+            "example": "C(10, 3) is equivalent to 10C3.",
+            "definition": "A shorthand way of writing combinations, using the notation C(n, r) or nCr, where n is the total number of items and r is the number of items to be chosen."
+          },
+          {
+            "term": "Term",
+            "example": "In the expansion of (x + y)^3, the term 3x^2y is a single term.",
+            "definition": "A single part of an expanded expression, consisting of a coefficient multiplied by a product of variables."
+          },
+          {
+            "term": "General Term",
+            "example": "The general term of the expansion of (x + y)^5 is given by the formula C(5, r)x^(5-r)y^r.",
+            "definition": "A specific term in an expanded binomial expression, which can be found using the formula for the nth term."
+          },
+          {
+            "term": "Middle Term",
+            "example": "In the expansion of (x + y)^5, the middle term is the third term from either end.",
+            "definition": "A term in the expanded binomial expression that is equidistant from the beginning and end of the expression."
+          },
+          {
+            "term": "nCr",
+            "example": "nCr is used to calculate the number of ways to choose r items from a set of n items.",
+            "definition": "A notation for combinations, where n is the total number of items and r is the number of items to be chosen."
+          },
+          {
+            "term": "Power",
+            "example": "In the term 3x^2, the power of x is 2.",
+            "definition": "The exponent to which a variable is raised in a term."
+          },
+          {
+            "term": "Product",
+            "example": "The product of 2 and 3 is 6.",
+            "definition": "The result of multiplying two or more numbers or expressions."
+          },
+          {
+            "term": "Variable",
+            "example": "In the expression 2x, the variable is x.",
+            "definition": "A letter or symbol that represents a value that can change."
+          },
+          {
+            "term": "Expansion",
+            "example": "The expansion of (x + y)^3 is an example of expanding a binomial expression.",
+            "definition": "The process of writing an algebraic expression as a sum of simpler expressions, often using binomial coefficients."
+          },
+          {
+            "term": "Coefficient of Binomial Expansion",
+            "example": "The coefficient of the term 3x^2y in the expansion of (x + y)^5 is C(5, 2).",
+            "definition": "The numerical factor in a term of the expansion of a binomial expression, which is calculated using combinations."
+          },
+          {
+            "term": "Raising a Binomial to a Power",
+            "example": "Raising (x + y) to the power of 5 involves expanding the expression to get a sum of terms.",
+            "definition": "The process of expanding a binomial expression to a higher power, using the binomial theorem."
+          },
+          {
+            "term": "Binomial Coefficient",
+            "example": "The binomial coefficient of the term 3x^2y in the expansion of (x + y)^5 is C(5, 2).",
+            "definition": "The numerical factor in a term of the expansion of a binomial expression, which is calculated using combinations."
+          },
+          {
+            "term": "Expansion of Binomial",
+            "example": "The expansion of (x + y)^3 is an example of expanding a binomial expression.",
+            "definition": "The process of writing a binomial expression as a sum of simpler expressions, often using binomial coefficients."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:29:15.298+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Apply the Binomial Theorem to expand expressions of the form (a + b)^n for a positive integer n.",
+            "Use the Binomial Theorem to find the value of expressions of the form (a + b)^n for a positive integer n.",
+            "Apply the Binomial Theorem to solve problems involving expansions of the form (a + b)^n."
+          ],
+          "analyze": [
+            "Analyze the Binomial Theorem and its applications in various fields such as probability, statistics, and combinatorics.",
+            "Compare and contrast different methods of expanding expressions of the form (a + b)^n.",
+            "Analyze the limitations and extensions of the Binomial Theorem."
+          ],
+          "remember": [
+            "Recall the Binomial Theorem for a positive integer n.",
+            "State the Binomial Theorem for a positive integer n.",
+            "Recall the formula for the expansion of (a + b)^n for a positive integer n."
+          ],
+          "understand": [
+            "Explain the concept of Binomial Coefficients and their significance in the Binomial Theorem.",
+            "Understand the relationship between Binomial Coefficients and Pascal's Triangle.",
+            "Explain how the Binomial Theorem can be used to expand expressions of the form (a + b)^n."
+          ]
+        },
+        "ncert_objectives": [
+          "Recall the Binomial Theorem for a positive integer n and explain its significance.",
+          "Explain the concept of Binomial Coefficients and their relationship with Pascal's Triangle.",
+          "Apply the Binomial Theorem to solve problems involving expansions of the form (a + b)^n."
+        ],
+        "board_exam_objectives": [
+          "Recall and apply the Binomial Theorem to expand expressions of the form (a + b)^n for a positive integer n.",
+          "Use the Binomial Theorem to solve problems involving expansions of the form (a + b)^n for a positive integer n.",
+          "Compare and contrast different methods of expanding expressions of the form (a + b)^n."
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T16:22:17.53+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "Using the Binomial Theorem, expand (1 + x)^6 up to the term containing x^3.",
+            "marks": 5,
+            "topic": "Expansion of Binomial Expressions",
+            "answer": "Using the Binomial Theorem, we can expand (1 + x)^6 as follows: (1 + x)^6 = 1 + 6x + 15x^2 + 20x^3 + 15x^4 + 6x^5 + x^6. Hence, the term containing x^3 is 20x^3.",
+            "marking_scheme": [
+              "Expansion of (1 + x)^6 up to the term containing x^3 (2 marks)",
+              "Correct coefficient of x^3 (1 mark)",
+              "Correct power of x in the term (1 mark)",
+              "Correct answer (1 mark)"
+            ]
+          },
+          {
+            "q": "Find the value of (1 - x)^(-4) using the Binomial Theorem.",
+            "marks": 5,
+            "topic": "Negative Exponents and Binomial Theorem",
+            "answer": "Using the Binomial Theorem, we can expand (1 - x)^(-4) as follows: (1 - x)^(-4) = 1 + 4x + 6x^2 + 4x^3 + x^4 + ... . As the series is infinite, we can rewrite it as 1 + 4x + 6x^2 + 4x^3 + x^4 + ... = 1 + 4x (1 - x)^(-3). We know that (1 - x)^(-3) = 1 + 3x + 3x^2 + x^3 + ... . Hence, (1 - x)^(-4) = 1 + 4x (1 + 3x + 3x^2 + x^3 + ...).",
+            "marking_scheme": [
+              "Expansion of (1 - x)^(-4) following the Binomial Theorem (2 marks)",
+              "Correct simplification of the series (1 mark)",
+              "Correct answer (2 marks)"
+            ]
+          },
+          {
+            "q": "If a coin is tossed three times, find the probability of getting more than 2 heads using the Binomial Theorem.",
+            "marks": 5,
+            "topic": "Probability using Binomial Theorem",
+            "answer": "When a coin is tossed three times, the total number of possible outcomes is 2^3 = 8. The possible outcomes are HHH, HHT, HTH, THH, HTT, THT, TTH, TTT. We want to find the probability of getting more than 2 heads, which means we want to find the probability of getting 3 heads. The probability of getting 3 heads is 1/8. Hence, the required probability is 1/8.",
+            "marking_scheme": [
+              "Total number of possible outcomes (1 mark)",
+              "Possible outcomes with more than 2 heads (1 mark)",
+              "Probability of getting 3 heads (1 mark)",
+              "Correct answer (2 marks)"
+            ]
+          },
+          {
+            "q": "Using the Binomial Theorem, expand (x + 1)^5 up to the term containing x^2.",
+            "marks": 5,
+            "topic": "Expansion of Binomial Expressions",
+            "answer": "Using the Binomial Theorem, we can expand (x + 1)^5 as follows: (x + 1)^5 = 1 + 5x + 10x^2 + 10x^3 + 5x^4 + x^5. Hence, the term containing x^2 is 10x^2.",
+            "marking_scheme": [
+              "Expansion of (x + 1)^5 up to the term containing x^2 (2 marks)",
+              "Correct coefficient of x^2 (1 mark)",
+              "Correct power of x in the term (1 mark)",
+              "Correct answer (1 mark)"
+            ]
+          },
+          {
+            "q": "Find the value of (1 + 2x)^3 using the Binomial Theorem.",
+            "marks": 5,
+            "topic": "Binomial Theorem with Non-Integer Exponents",
+            "answer": "Using the Binomial Theorem, we can expand (1 + 2x)^3 as follows: (1 + 2x)^3 = 1 + 3(2x) + 3(2x)^2 + (2x)^3 = 1 + 6x + 12x^2 + 8x^3. Hence, the value of (1 + 2x)^3 is 1 + 6x + 12x^2 + 8x^3.",
+            "marking_scheme": [
+              "Expansion of (1 + 2x)^3 following the Binomial Theorem (2 marks)",
+              "Correct simplification of the series (1 mark)",
+              "Correct answer (2 marks)"
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:14:14.882+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 19,
+        "questions": [
+          {
+            "q": "If n is a positive integer, then the coefficient of x^3 in (1 + x)^n is?",
+            "ans": "A",
+            "opts": [
+              "(A) nC3",
+              "(B) nC2",
+              "(C) nC1",
+              "(D) nC4"
+            ],
+            "topic": "Introduction to Binomial Theorem",
+            "difficulty": "easy",
+            "explanation": "According to the Binomial Theorem, the coefficient of x^r in (1 + x)^n is nCr."
+          },
+          {
+            "q": "If a = 3 and b = 2, what is the value of (a + b)^5?",
+            "ans": "A",
+            "opts": [
+              "(A) 243",
+              "(B) 243 * 32",
+              "(C) 243 + 32",
+              "(D) (243 + 32)"
+            ],
+            "topic": "Binomial Theorem for positive integers",
+            "difficulty": "easy",
+            "explanation": "We can use the Binomial Theorem to expand (a + b)^5."
+          },
+          {
+            "q": "Find the value of (1 + x)^(-3)?",
+            "ans": "B",
+            "opts": [
+              "(A) 1 - 3x + 3x^2 - x^3",
+              "(B) 1 + 3x + 3x^2 + x^3",
+              "(C) 1 - 3x - 3x^2 - x^3",
+              "(D) 1 + 3x - 3x^2 + x^3"
+            ],
+            "topic": "Binomial Theorem for negative integers",
+            "difficulty": "easy",
+            "explanation": "We can use the Binomial Theorem for negative integers to expand (1 + x)^(-3)."
+          },
+          {
+            "q": "The coefficient of x^3 in (1 - 2x)^5 is?",
+            "ans": "A",
+            "opts": [
+              "(A) 10",
+              "(B) -10",
+              "(C) 15",
+              "(D) -15"
+            ],
+            "topic": "Binomial Theorem for positive integers",
+            "difficulty": "medium",
+            "explanation": "We can use the Binomial Theorem to expand (1 - 2x)^5."
+          },
+          {
+            "q": "If a = 2 and b = 3, what is the value of (a - b)^4?",
+            "ans": "A",
+            "opts": [
+              "(A) 80",
+              "(B) 81",
+              "(C) 82",
+              "(D) 83"
+            ],
+            "topic": "Binomial Theorem for positive integers",
+            "difficulty": "medium",
+            "explanation": "We can use the Binomial Theorem to expand (a - b)^4."
+          },
+          {
+            "q": "Find the value of (1 + x)^(-4)?",
+            "ans": "A",
+            "opts": [
+              "(A) 1 + 4x + 6x^2 + 4x^3 + x^4",
+              "(B) 1 - 4x + 6x^2 - 4x^3 + x^4",
+              "(C) 1 + 4x - 6x^2 - 4x^3 + x^4",
+              "(D) 1 - 4x - 6x^2 + 4x^3 + x^4"
+            ],
+            "topic": "Binomial Theorem for negative integers",
+            "difficulty": "medium",
+            "explanation": "We can use the Binomial Theorem for negative integers to expand (1 + x)^(-4)."
+          },
+          {
+            "q": "The coefficient of x^4 in (1 + x)^6 is?",
+            "ans": "B",
+            "opts": [
+              "(A) 15",
+              "(B) 21",
+              "(C) 25",
+              "(D) 30"
+            ],
+            "topic": "Introduction to Binomial Theorem",
+            "difficulty": "medium",
+            "explanation": "According to the Binomial Theorem, the coefficient of x^r in (1 + x)^n is nCr."
+          },
+          {
+            "q": "Find the value of (x + y)^4?",
+            "ans": "A",
+            "opts": [
+              "(A) x^4 + 6x^3y + 12x^2y^2 + 12xy^3 + y^4",
+              "(B) x^4 + 6x^3y + 11x^2y^2 + 12xy^3 + y^4",
+              "(C) x^4 + 6x^3y + 11x^2y^2 + 11xy^3 + y^4",
+              "(D) x^4 + 6x^3y + 12x^2y^2 + 12xy^3 + y^4"
+            ],
+            "topic": "Binomial Theorem for positive integers",
+            "difficulty": "medium",
+            "explanation": "We can use the Binomial Theorem to expand (x + y)^4."
+          },
+          {
+            "q": "The coefficient of x^2 in (1 + 2x)^5 is?",
+            "ans": "C",
+            "opts": [
+              "(A) 50",
+              "(B) 60",
+              "(C) 70",
+              "(D) 80"
+            ],
+            "topic": "Binomial Theorem for positive integers",
+            "difficulty": "hard",
+            "explanation": "We can use the Binomial Theorem to expand (1 + 2x)^5."
+          },
+          {
+            "q": "Find the value of (1 + x)^(-2)?",
+            "ans": "B",
+            "opts": [
+              "(A) 1 - 2x + x^2",
+              "(B) 1 + 2x + x^2",
+              "(C) 1 - 2x - x^2",
+              "(D) 1 + 2x - x^2"
+            ],
+            "topic": "Binomial Theorem for negative integers",
+            "difficulty": "hard",
+            "explanation": "We can use the Binomial Theorem for negative integers to expand (1 + x)^(-2)."
+          },
+          {
+            "q": "The coefficient of x^5 in (1 - 3x)^7 is?",
+            "ans": "A",
+            "opts": [
+              "(A) 35",
+              "(B) -35",
+              "(C) 42",
+              "(D) -42"
+            ],
+            "topic": "Binomial Theorem for positive integers",
+            "difficulty": "hard",
+            "explanation": "We can use the Binomial Theorem to expand (1 - 3x)^7."
+          },
+          {
+            "q": "Find the value of (x - 2y)^4?",
+            "ans": "A",
+            "opts": [
+              "(A) x^4 - 12x^3y + 66x^2y^2 - 132xy^3 + 16y^4",
+              "(B) x^4 - 12x^3y + 66x^2y^2 - 128xy^3 + 16y^4",
+              "(C) x^4 - 12x^3y + 66x^2y^2 - 132xy^3 + 16y^4",
+              "(D) x^4 - 12x^3y + 66x^2y^2 - 128xy^3 + 16y^4"
+            ],
+            "topic": "Binomial Theorem for positive integers",
+            "difficulty": "hard",
+            "explanation": "We can use the Binomial Theorem to expand (x - 2y)^4."
+          },
+          {
+            "q": "The coefficient of x^3 in (1 + x)^(-2) is?",
+            "ans": "A",
+            "opts": [
+              "(A) -3",
+              "(B) -2",
+              "(C) 2",
+              "(D) 3"
+            ],
+            "topic": "Binomial Theorem for negative integers",
+            "difficulty": "hard",
+            "explanation": "We can use the Binomial Theorem for negative integers to expand (1 + x)^(-2)."
+          },
+          {
+            "q": "Find the value of (1 + 2x)^(-3)?",
+            "ans": "B",
+            "opts": [
+              "(A) 1 - 6x + 12x^2 - 8x^3",
+              "(B) 1 + 6x + 12x^2 + 8x^3",
+              "(C) 1 + 6x + 12x^2 - 8x^3",
+              "(D) 1 - 6x - 12x^2 + 8x^3"
+            ],
+            "topic": "Binomial Theorem for negative integers",
+            "difficulty": "hard",
+            "explanation": "We can use the Binomial Theorem for negative integers to expand (1 + 2x)^(-3)."
+          },
+          {
+            "q": "The coefficient of x^4 in (1 - x)^6 is?",
+            "ans": "A",
+            "opts": [
+              "(A) 15",
+              "(B) -15",
+              "(C) 20",
+              "(D) -20"
+            ],
+            "topic": "Binomial Theorem for positive integers",
+            "difficulty": "hard",
+            "explanation": "We can use the Binomial Theorem to expand (1 - x)^6."
+          },
+          {
+            "q": "If a = 2 and b = -3, what is the value of (a - b)^4?",
+            "ans": "A",
+            "opts": [
+              "(A) 80",
+              "(B) 81",
+              "(C) 82",
+              "(D) 83"
+            ],
+            "topic": "Binomial Theorem for positive integers",
+            "difficulty": "hard",
+            "explanation": "We can use the Binomial Theorem to expand (a - b)^4."
+          },
+          {
+            "q": "Find the value of (x + y)^(-3)?",
+            "ans": "B",
+            "opts": [
+              "(A) 1 - 3x + 3y - 3xy",
+              "(B) 1 + 3x + 3y + 3xy",
+              "(C) 1 - 3x - 3y - 3xy",
+              "(D) 1 + 3x - 3y + 3xy"
+            ],
+            "topic": "Binomial Theorem for negative integers",
+            "difficulty": "hard",
+            "explanation": "We can use the Binomial Theorem for negative integers to expand (x + y)^(-3)."
+          },
+          {
+            "q": "The coefficient of x^5 in (1 + x)^7 is?",
+            "ans": "C",
+            "opts": [
+              "(A) 21",
+              "(B) 28",
+              "(C) 35",
+              "(D) 42"
+            ],
+            "topic": "Introduction to Binomial Theorem",
+            "difficulty": "hard",
+            "explanation": "According to the Binomial Theorem, the coefficient of x^r in (1 + x)^n is nCr."
+          },
+          {
+            "q": "Find the value of (1 - 2x)^(-4)?",
+            "ans": "A",
+            "opts": [
+              "(A) 1 + 8x + 24x^2 + 32x^3 + 16x^4",
+              "(B) 1 - 8x + 24x^2 - 32x^3 + 16x^4",
+              "(C) 1 + 8x - 24x^2 - 32x^3 + 16x^4",
+              "(D) 1 - 8x - 24x^2 + 32x^3 + 16x^4"
+            ],
+            "topic": "Binomial Theorem for negative integers",
+            "difficulty": "hard",
+            "explanation": "We can use the Binomial Theorem for negative integers to expand (1 - 2x)^(-4)."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:51.443+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Binomial Theorem\n\n## Chapter at a Glance\n\nThe Binomial Theorem is a powerful tool for expanding expressions of the form (a + b)^n, where 'a' and 'b' are any real numbers and 'n' is a positive integer. This theorem is a generalisation of the formula for (a + b)^2 and (a + b)^3, and it can be used to expand expressions with any positive integer exponent. The binomial theorem has numerous applications in mathematics, physics, engineering, and other fields. It is used to solve problems related to probability, statistics, and combinatorics.\n\n## Section-wise Summary\n\n### Introduction to Binomial Theorem\n\nThe binomial theorem is a method for expanding expressions of the form (a + b)^n, where 'a' and 'b' are any real numbers and 'n' is a positive integer. The theorem states that (a + b)^n = Σ C(n, r) * a^(n-r) * b^r, where the summation is taken over all non-negative integers 'r' less than or equal to 'n'.\n\n### Binomial Coefficients\n\nThe coefficients C(n, r) in the binomial theorem are called binomial coefficients. They are defined as C(n, r) = n! / (r! * (n-r)!), where 'n!' denotes the factorial of 'n'. The binomial coefficients can be calculated using a table or a calculator.\n\n### Expanding Expressions\n\nThe binomial theorem can be used to expand expressions of the form (a + b)^n, where 'a' and 'b' are any real numbers and 'n' is a positive integer. The expansion of (a + b)^n is given by (a + b)^n = Σ C(n, r) * a^(n-r) * b^r, where the summation is taken over all non-negative integers 'r' less than or equal to 'n'.\n\n### Special Cases\n\nThe binomial theorem can be used to expand expressions with any positive integer exponent. For example, (a + b)^0 = 1, (a + b)^1 = a + b, (a + b)^2 = a^2 + 2ab + b^2, and (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3.\n\n### Generalised Binomial Theorem\n\nThe binomial theorem can be generalised to expressions of the form (a + b)^n, where 'a' and 'b' are any real numbers and 'n' is a real number. The generalised binomial theorem is given by (a + b)^n = Σ C(n, r) * a^(n-r) * b^r, where the summation is taken over all non-negative integers 'r' less than or equal to 'n'.\n\n### Applications of Binomial Theorem\n\nThe binomial theorem has numerous applications in mathematics, physics, engineering, and other fields. It is used to solve problems related to probability, statistics, and combinatorics. For example, it can be used to calculate the number of ways to arrange objects in a particular order, and to calculate the probability of certain events occurring.\n\n## Important NCERT Exercises Insight\n\n* The binomial theorem can be used to expand expressions with any positive integer exponent.\n* The binomial coefficients can be calculated using a table or a calculator.\n* The binomial theorem can be used to solve problems related to probability, statistics, and combinatorics.\n* The generalised binomial theorem can be used to expand expressions with any real number exponent.\n\n## NCERT Exemplar Focus\n\n* The NCERT exemplar for the binomial theorem includes additional topics such as:\n + Expansion of expressions with negative exponents.\n + Expansion of expressions with fractional exponents.\n + Application of binomial theorem to solve problems related to probability and statistics.\n\n## Board Exam Relevance\n\n* The binomial theorem is a frequently tested topic in board exams.\n* The marks weightage for the binomial theorem is around 10-15% of the total marks for the mathematics paper.\n* The frequently asked topics from the binomial theorem include:\n + Expansion of expressions with positive integer exponents.\n + Calculation of binomial coefficients.\n + Application of binomial theorem to solve problems related to probability and statistics."
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:09:27.411+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "If r is a real number and n is a positive integer, then which of the following is a true statement regarding the expansion of (1 + r)^n?",
+            "type": "MCQ",
+            "marks": 1,
+            "answer": "The number of terms in the expansion of (1 + r)^n is (n+1).",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "Expand (2x^2 + 3)^4 using binomial theorem.",
+            "type": "Short Answer",
+            "marks": 4,
+            "answer": "The expansion of (2x^2 + 3)^4 is (2x^2)^4 + 4(2x^2)^3(3) + 6(2x^2)^2(3)^2 + 4(2x^2)(3)^3 + (3)^4.",
+            "difficulty": "medium",
+            "year_pattern": "2017-style"
+          },
+          {
+            "q": "If the 5th term in the expansion of (2x + 3y)^n is 192x^(5) y^(3), then find the value of n.",
+            "type": "Long Answer",
+            "marks": 6,
+            "answer": "The 5th term in the expansion of (2x + 3y)^n is given by T_(5) = (nC_(4))(2x)^(n-4)(3y)^(4). It is given that T_(5) = 192x^(5)y^(3) = (nC_(4))(2^(n-4))(3^(4))x^(n-4)y^(4). Therefore, (n-4) = 1 and nC_(4) = 64. We know that nC_(4) = n(n-1)(n-2)(n-3)/4! and nC_(4) = 64. Solving this equation, we get n = 7.",
+            "difficulty": "hard",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "Find the coefficient of x^2 in the expansion of (2x - 3y)^6.",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "The coefficient of x^2 in the expansion of (2x - 3y)^6 is 36.",
+            "difficulty": "medium",
+            "year_pattern": "2016-style"
+          },
+          {
+            "q": "The binomial coefficient nCr is defined as nCr = n!/(r!(n-r)!). Which of the following is a true statement regarding the binomial coefficient?",
+            "type": "True/False",
+            "marks": 1,
+            "answer": "The binomial coefficient 10C3 is equal to 10!/(3!7!).",
+            "difficulty": "easy",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "If the coefficient of the 4th term in the expansion of (1 - 2x)^n is 6, then find the value of n.",
+            "type": "Long Answer",
+            "marks": 6,
+            "answer": "The 4th term in the expansion of (1 - 2x)^n is given by T_(4) = (nC_(3))x^(3)(-2)^3. It is given that T_(4) = 6. Therefore, (nC_(3))(-2)^3 = 6 => (nC_(3)) = -6/(-8) = 3/4. We know that nC_(3) = n(n-1)(n-2)/3! and nC_(3) = 3/4. Solving this equation, we get n = 7.",
+            "difficulty": "hard",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "Using binomial theorem, expand (x+y)^0.",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "The expansion of (x+y)^0 is 1.",
+            "difficulty": "easy",
+            "year_pattern": "2017-style"
+          },
+          {
+            "q": "If the 6th term in the expansion of (x + 1/x)^n is 729x^(4), then find the value of n.",
+            "type": "Long Answer",
+            "marks": 6,
+            "answer": "The 6th term in the expansion of (x + 1/x)^n is given by T_(6) = (nC_(5))x^(n-5)(1/x)^(5) = (nC_(5))x^(n-10). It is given that T_(6) = 729x^(4) = (nC_(5))x^(n-10). Therefore, n-10 = 4 and n = 14.",
+            "difficulty": "hard",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "Find the coefficient of x^3y^2 in the expansion of (2x + 3y)^8.",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "The coefficient of x^3y^2 in the expansion of (2x + 3y)^8 is 36960.",
+            "difficulty": "medium",
+            "year_pattern": "2016-style"
+          },
+          {
+            "q": "If the 7th term in the expansion of (1 + x)^n is (n+1)x^(6), then find the value of n.",
+            "type": "Long Answer",
+            "marks": 6,
+            "answer": "The 7th term in the expansion of (1 + x)^n is given by T_(7) = (nC_(6))x^(6). It is given that T_(7) = (n+1)x^(6). Therefore, (nC_(6)) = (n+1). We know that nC_(6) = n(n-1)(n-2)(n-3)(n-4)(n-5)/6! and (nC_(6)) = (n+1). Solving this equation, we get n = 7.",
+            "difficulty": "hard",
+            "year_pattern": "2019-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:19:46.248+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "What is the Binomial Theorem and what does it help us derive?",
+            "marks": 2,
+            "topic": "Introduction",
+            "answer": "The Binomial Theorem is a mathematical concept that helps us expand the expression of (a + b)^n, where n is a positive integer. It helps us derive the coefficients of each term in the expansion.",
+            "key_points": [
+              "Binomial Theorem",
+              "Expansion of (a + b)^n"
+            ]
+          },
+          {
+            "q": "What is the general term in the expansion of (a + b)^n? ",
+            "marks": 2,
+            "topic": "General Term",
+            "answer": "The general term in the expansion of (a + b)^n is given by T_r = ^nC_r * a^(n-r) * b^r, where r is a positive integer.",
+            "key_points": [
+              "General term",
+              "Combination notation"
+            ]
+          },
+          {
+            "q": "How do you find the value of a binomial coefficient using the formula?",
+            "marks": 2,
+            "topic": "Binomial Coefficients",
+            "answer": "The value of a binomial coefficient can be found using the formula nCr = n! / (r! * (n-r)!) where n! denotes the factorial of n.",
+            "key_points": [
+              "Binomial coefficient",
+              "Factorial notation"
+            ]
+          },
+          {
+            "q": "State the condition for the Binomial Theorem to be applicable.",
+            "marks": 2,
+            "topic": "General Term",
+            "answer": "The Binomial Theorem is applicable when n is a positive integer.",
+            "key_points": [
+              "Applicability",
+              "Positive integer"
+            ]
+          },
+          {
+            "q": "Explain the concept of the Binomial Theorem for a negative integer n.",
+            "marks": 3,
+            "topic": "Negative Integer Exponents",
+            "answer": "The Binomial Theorem can be extended to negative integer values of n by using the formula (a + b)^(-n) = 1 / (a + b)^n. This involves finding the reciprocal of each term in the expansion of (a + b)^n.",
+            "key_points": [
+              "Negative integer n",
+              "Reciprocal expansion"
+            ]
+          },
+          {
+            "q": "What is the value of (a + b)^(-1) according to the Binomial Theorem?",
+            "marks": 2,
+            "topic": "Negative Integer Exponents",
+            "answer": "The value of (a + b)^(-1) is given by 1 / (a + b) = a^(-1) - b^(-1) according to the Binomial Theorem.",
+            "key_points": [
+              "Reciprocal expansion",
+              "Negative exponent"
+            ]
+          },
+          {
+            "q": "How do you find the value of (a + b)^(-n) according to the Binomial Theorem?",
+            "marks": 3,
+            "topic": "Negative Integer Exponents",
+            "answer": "The value of (a + b)^(-n) is given by 1 / (a + b)^n = a^(-n) - n * a^(-n-1) * b + n(n+1)/2 * a^(-n-2) * b^2 - ... (to infinity) according to the Binomial Theorem.",
+            "key_points": [
+              "Negative exponent",
+              "Reciprocal expansion",
+              "Alternating series"
+            ]
+          },
+          {
+            "q": "Explain the concept of the Binomial Theorem for a fractional exponent n.",
+            "marks": 3,
+            "topic": "Fractional Exponents",
+            "answer": "The Binomial Theorem can be extended to fractional values of n by using the formula (a + b)^(m/n) = (a^(1/n) + b^(1/n))^m according to the Binomial Theorem. This involves finding the m-th power of each term in the expansion of (a^(1/n) + b^(1/n)).",
+            "key_points": [
+              "Fractional exponent",
+              "Exponentiation",
+              "Binomial expansion"
+            ]
+          },
+          {
+            "q": "State the Binomial Theorem for a non-positive integer n.",
+            "marks": 2,
+            "topic": "Non-Positive Integer Exponents",
+            "answer": "The Binomial Theorem for a non-positive integer n is given by (a + b)^n = Σ (nC_r) * (-1)^r * a^(n-r) * b^r, r = 0, 1, 2, ..., |n|.",
+            "key_points": [
+              "Non-positive integer n",
+              "Alternating series",
+              "Binomial expansion"
+            ]
+          },
+          {
+            "q": "Explain the concept of the Binomial Theorem for a non-integer exponent n.",
+            "marks": 3,
+            "topic": "Non-Integer Exponents",
+            "answer": "The Binomial Theorem can be extended to non-integer values of n by using the formula (a + b)^n = Σ (nC_r) * a^(n-r) * b^r, r = 0, 1, 2, ..., |n|, where the binomial coefficients are defined using the Gamma function.",
+            "key_points": [
+              "Non-integer exponent",
+              "Gamma function",
+              "Binomial expansion"
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:52.32+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Binomial Theorem — Quick Revision Notes\n\n## ⚡ Key Points\n- **Binomial Theorem** states that for a positive integer n, \\((a + b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k}b^k\\).\n- The binomial coefficients are denoted by \\(\\binom{n}{k}\\), also written as \\(C(n, k)\\) or \\(nCk\\).\n- The formula \\(\\binom{n}{k} = \\frac{n!}{k!(n-k)!}\\) is used to calculate binomial coefficients.\n- **Binomial Expansion**: The process of expressing a binomial raised to a power as a sum of terms.\n- **General Term**: The term \\(\\binom{n}{k} a^{n-k}b^k\\) in the binomial expansion.\n- **Trinomial Theorem**: For three terms, \\((a + b + c)^n = \\sum_{k=0}^{n} \\binom{n}{k} \\binom{k}{r} a^{n-k} b^{k-r}c^r\\).\n- **Negative Binomial Coefficients**: \\(\\binom{n}{k} = (-1)^k \\binom{n+k-1}{k}\\) for \\(k > 0\\).\n- **Binomial Theorem for Non-Positive Integers**: \\((a + b)^n = \\sum_{k=0}^{-n-1} \\binom{-n-1}{k} (-1)^k a^{-n-1-k}b^k\\) for \\(n < 0\\).\n- **Multinomial Theorem**: \\((a_1 + a_2 + \\cdots + a_m)^n = \\sum_{k_1, k_2, \\ldots, k_m} \\frac{n!}{k_1! k_2! \\cdots k_m!} a_1^{k_1} a_2^{k_2} \\cdots a_m^{k_m}\\).\n- **Greatest Integer Function**: \\([x] = n\\) if \\(n \\le x < n+1\\).\n- **Binomial Theorem with Greatest Integer Function**: \\((1 + x)^n = \\sum_{k=0}^{[n]} \\binom{n}{k} x^k\\) for \\(-1 < x \\le 1\\).\n- **Binomial Theorem for Fractional Exponents**: \\((a + b)^p = \\sum_{k=0}^{p} \\binom{p}{k} a^{p-k}b^k\\) for \\(p \\in \\mathbb{Q}\\).\n- **Binomial Theorem for Negative Exponents**: \\((a + b)^{-n} = \\sum_{k=0}^{n-1} (-1)^k \\binom{n+k-1}{k} a^{-n-k}b^k\\) for \\(n > 0\\).\n- **Binomial Theorem for Exponential Functions**: \\(e^{ax} e^{bx} = e^{(a+b)x} = \\sum_{k=0}^{\\infty} \\frac{(a+b)^k x^k}{k!}\\).\n- **Binomial Theorem for Trigonometric Functions**: \\(\\cos (a + b) = \\sum_{k=0}^{\\infty} \\frac{(-1)^k (a^2 - b^2)^k}{(2k)!} \\cos ab\\) and \\(\\sin (a + b) = \\sum_{k=0}^{\\infty} \\frac{(-1)^k (a^2 - b^2)^k}{(2k+1)!} \\sin ab\\).\n\n## 🔑 Must-Know Definitions\n- **Binomial Coefficient**: \\(\\binom{n}{k} = \\frac{n!}{k!(n-k)!}\\).\n- **General Term of Binomial Expansion**: \\(\\binom{n}{k} a^{n-k}b^k\\).\n- **Trinomial Expansion**: \\((a + b + c)^n = \\sum_{k=0}^{n} \\binom{n}{k} \\binom{k}{r} a^{n-k} b^{k-r}c^r\\).\n- **Multinomial Coefficient**: \\(\\frac{n!}{k_1! k_2! \\cdots k_m!}\\).\n- **Greatest Integer Function**: \\([x] = n\\) if \\(n \\le x < n+1\\).\n\n## 📊 Important Formulas\n- Binomial Theorem: \\((a + b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k}b^k\\)\n- Binomial Coefficient: \\(\\binom{n}{k} = \\frac{n!}{k!(n-k)!}\\)\n- Trinomial Theorem: \\((a + b + c)^n = \\sum_{k=0}^{n} \\binom{n}{k} \\binom{k}{r} a^{n-k} b^{k-r}c^r\\)\n- Multinomial Theorem: \\((a_1 + a_2 + \\cdots + a_m)^n = \\sum_{k_1, k_2, \\ldots, k_m} \\frac{n!}{k_1! k_2! \\cdots k_m!} a_1^{k_1} a_2^{k"
+      }
+    }
+  }
+}

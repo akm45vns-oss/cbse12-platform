@@ -1,0 +1,68 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Kinetic Theory",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:18:58.377Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A gas is enclosed in a container of volume 2.5 litres. The temperature of the gas is raised from 300 K to 400 K. Calculate the change in the number of molecules of the gas. (Take the gas constant R = 8.3 J/mol·K).",
+        "marks": 5,
+        "answer": "Using the ideal gas equation, PV = nRT, we can find the initial and final number of molecules. We can rearrange the equation to solve for n: n = PV / RT. Let's assume the pressure remains constant at 1 atm. The initial volume is 2.5 L, and the initial temperature is 300 K. The final temperature is 400 K. We can plug in the values to find the initial and final number of molecules: n_initial = (1 atm * 2.5 L) / (8.3 J/mol·K * 300 K) = 0.0115 mol n_final = (1 atm * 2.5 L) / (8.3 J/mol·K * 400 K) = 0.0086 mol The change in the number of molecules is Δn = n_final - n_initial = -0.0029 mol. Since we're looking for the change in the number of molecules, we take the absolute value: Δn = |Δn| = 0.0029 mol. To convert this to the number of molecules, we multiply by Avogadro's number (6.022 x 10^23 mol^-1): ΔN = Δn * N_A = 0.0029 mol * 6.022 x 10^23 mol^-1 = 1.75 x 10^21 molecules",
+        "marking_scheme": [
+          "Correctly applies the ideal gas equation to find the initial and final number of molecules (2 marks)",
+          "Correctly calculates the change in the number of molecules and converts it to the number of molecules using Avogadro's number (3 marks)"
+        ],
+        "topic": "Kinetic Theory of Gases"
+      },
+      {
+        "q": "A metal cube has a mass of 100 grams. The cube is heated, and its temperature is increased from 20°C to 50°C. Calculate the increase in the average kinetic energy of the metal atoms. (Take the specific heat capacity of the metal as 0.1 J/g°C).",
+        "marks": 5,
+        "answer": "The increase in temperature is ΔT = 50°C - 20°C = 30°C. The specific heat capacity is c = 0.1 J/g°C. The mass of the metal cube is m = 100 g. We can use the formula Q = mcΔT to find the heat energy transferred: Q = 100 g * 0.1 J/g°C * 30°C = 300 J. The average kinetic energy of the metal atoms is given by the equation E_k = (3/2)kT, where k is Boltzmann's constant. The initial temperature is T_initial = 20°C + 273.15 = 293.15 K. The final temperature is T_final = 50°C + 273.15 = 323.15 K. We can find the initial and final average kinetic energies: E_k_initial = (3/2)k * 293.15 K E_k_final = (3/2)k * 323.15 K The increase in the average kinetic energy is ΔE_k = E_k_final - E_k_initial. We can simplify this expression using the fact that ΔE_k = (3/2)kΔT: ΔE_k = (3/2)k * (323.15 K - 293.15 K) = (3/2)k * 30 K. We can cancel out the Boltzmann's constant k by using the fact that Q = n * ΔE_k, where n is the number of atoms. We can rewrite this as ΔE_k = Q / n. We can plug in the values to find the increase in the average kinetic energy: ΔE_k = 300 J / n. We can find the number of atoms using the formula n = m / M, where M is the molar mass of the metal. Let's assume the molar mass of the metal is 50 g/mol. We can plug in the values to find the number of atoms: n = 100 g / 50 g/mol = 2 mol. We can find the increase in the average kinetic energy: ΔE_k = 300 J / 2 mol = 150 J/mol. We can convert this to the increase in the average kinetic energy per atom: ΔE_k = 150 J/mol / 6.022 x 10^23 mol^-1 = 2.49 x 10^-21 J.",
+        "marking_scheme": [
+          "Correctly applies the formula Q = mcΔT to find the heat energy transferred (2 marks)",
+          "Correctly calculates the increase in the average kinetic energy using the equation ΔE_k = (3/2)kΔT (2 marks)",
+          "Correctly converts the increase in the average kinetic energy from J/mol to J/atom (1 mark)"
+        ],
+        "topic": "Kinetic Theory of Gases"
+      },
+      {
+        "q": "A gas is enclosed in a container of volume 100 litres. The pressure of the gas is 1 atm. Calculate the work done by the gas when its volume is increased from 100 litres to 150 litres. (Assume the pressure remains constant).",
+        "marks": 5,
+        "answer": "The work done by the gas is given by the equation W = PΔV. We can find the initial and final volumes: V_initial = 100 L V_final = 150 L The change in volume is ΔV = V_final - V_initial = 50 L. We can plug in the values to find the work done: W = 1 atm * 50 L = 50 L·atm. We can convert this to Joules using the conversion factor 1 L·atm = 101.325 J: W = 50 L·atm * 101.325 J/L·atm = 5081.25 J.",
+        "marking_scheme": [
+          "Correctly applies the formula W = PΔV to find the work done (2 marks)",
+          "Correctly converts the work done from L·atm to J (2 marks)",
+          "Correctly provides the correct numerical value for the work done (1 mark)"
+        ],
+        "topic": "Kinetic Theory of Gases"
+      },
+      {
+        "q": "A metal cube has a mass of 200 grams. The cube is heated, and its temperature is increased from 30°C to 60°C. Calculate the increase in the pressure of the metal cube. (Take the specific heat capacity of the metal as 0.2 J/g°C).",
+        "marks": 5,
+        "answer": "The increase in temperature is ΔT = 60°C - 30°C = 30°C. The specific heat capacity is c = 0.2 J/g°C. The mass of the metal cube is m = 200 g. We can use the formula Q = mcΔT to find the heat energy transferred: Q = 200 g * 0.2 J/g°C * 30°C = 1200 J. We can use the ideal gas equation PV = nRT to relate the pressure and volume of the metal cube. We can assume the volume remains constant. We can rearrange the equation to solve for P: P = nRT / V. We can use the formula n = Q / (cΔT) to find the number of moles: n = 1200 J / (0.2 J/g°C * 30°C) = 20 mol. We can plug in the values to find the initial and final pressures: P_initial = (20 mol * R * 303.15 K) / V P_final = (20 mol * R * 333.15 K) / V We can find the increase in pressure: ΔP = P_final - P_initial. We can simplify this expression using the fact that ΔP = (ΔT / V) * nR: ΔP = (30°C / V) * (20 mol * 8.3 J/mol·K). We can cancel out the volume V by using the fact that Q = n * ΔU, where ΔU is the change in internal energy. We can rewrite this as ΔU = Q / n. We can plug in the values to find the change in internal energy: ΔU = 1200 J / 20 mol = 60 J/mol. We can find the increase in pressure: ΔP = (30°C / V) * (20 mol * 8.3 J/mol·K) = 498 J/m^3. We can convert this to kPa: ΔP = 498 J/m^3 / 1000 = 0.498 kPa.",
+        "marking_scheme": [
+          "Correctly applies the formula Q = mcΔT to find the heat energy transferred (2 marks)",
+          "Correctly uses the ideal gas equation to relate the pressure and volume of the metal cube (2 marks)",
+          "Correctly calculates the increase in pressure using the equation ΔP = (ΔT / V) * nR (1 mark)"
+        ],
+        "topic": "Kinetic Theory of Gases"
+      },
+      {
+        "q": "A gas is enclosed in a container of volume 50 litres. The gas is heated, and its temperature is increased from 10°C to 30°C. Calculate the change in the internal energy of the gas. (Take the specific heat capacity of the gas as 0.5 J/g°C).",
+        "marks": 5,
+        "answer": "The increase in temperature is ΔT = 30°C - 10°C = 20°C. The specific heat capacity is c = 0.5 J/g°C. We can use the formula Q = mcΔT to find the heat energy transferred: Q = mcΔT. We can assume the mass of the gas is 50 g (this is a reasonable assumption for 50 litres of gas). We can plug in the values to find the heat energy transferred: Q = 50 g * 0.5 J/g°C * 20°C = 500 J. The change in internal energy is given by the equation ΔU = Q - W. We can assume the work done by the gas is zero (this is a reasonable assumption since the gas is enclosed in a rigid container). We can plug in the values to find the change in internal energy: ΔU = Q = 500 J.",
+        "marking_scheme": [
+          "Correctly applies the formula Q = mcΔT to find the heat energy transferred (2 marks)",
+          "Correctly assumes the work done by the gas is zero (1 mark)",
+          "Correctly calculates the change in internal energy using the equation ΔU = Q - W (2 marks)"
+        ],
+        "topic": "Kinetic Theory of Gases"
+      }
+    ],
+    "total": 5
+  }
+}

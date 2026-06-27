@@ -1,0 +1,76 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Poverty",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:22:37.580Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Poverty Line",
+        "formula": "Poverty Line = Minimum level of income required to meet the basic needs of an individual",
+        "variables": "Basic needs: food, clothing, shelter, healthcare, education",
+        "units": "Currency (e.g., Rupees)",
+        "notes": "Poverty line is used to measure the poverty incidence in a country"
+      },
+      {
+        "name": "Poverty Incidence",
+        "formula": "Poverty Incidence = Number of people below the poverty line / Total population",
+        "variables": "Number of people below the poverty line, Total population",
+        "units": "Percentage (%)",
+        "notes": "Poverty incidence is a measure of the proportion of people living below the poverty line"
+      },
+      {
+        "name": "Headcount Ratio",
+        "formula": "Headcount Ratio = Number of poor people / Total population",
+        "variables": "Number of poor people, Total population",
+        "units": "Percentage (%)",
+        "notes": "Headcount ratio is a measure of the proportion of people living below the poverty line"
+      },
+      {
+        "name": "Poverty Gap Index",
+        "formula": "Poverty Gap Index = Average distance of the poor below the poverty line",
+        "variables": "Poverty line, Income of the poor",
+        "units": "Currency (e.g., Rupees)",
+        "notes": "Poverty gap index measures the average distance of the poor below the poverty line"
+      },
+      {
+        "name": "Poverty Severity Index",
+        "formula": "Poverty Severity Index = Sum of the distance of each poor person below the poverty line",
+        "variables": "Poverty line, Income of each poor person",
+        "units": "Currency (e.g., Rupees)",
+        "notes": "Poverty severity index measures the total distance of the poor below the poverty line"
+      },
+      {
+        "name": "Poverty Inequality Index",
+        "formula": "Poverty Inequality Index = Dispersion of income among the poor",
+        "variables": "Income of each poor person",
+        "units": "Currency (e.g., Rupees)",
+        "notes": "Poverty inequality index measures the dispersion of income among the poor"
+      },
+      {
+        "name": "Kuznets Curve",
+        "formula": "Kuznets Curve: Income Inequality → Economic Growth → Income Inequality",
+        "variables": "Income inequality, Economic growth",
+        "units": "None",
+        "notes": "Kuznets curve describes the relationship between income inequality and economic growth"
+      },
+      {
+        "name": "Welfare Function",
+        "formula": "Welfare Function = U(x, y) = U(x) + U(y)",
+        "variables": "x (income), y (education)",
+        "units": "None",
+        "notes": "Welfare function measures the overall well-being of an individual"
+      },
+      {
+        "name": "Opportunity Cost",
+        "formula": "Opportunity Cost = Value of the next best alternative foregone",
+        "variables": "Value of the next best alternative",
+        "units": "Currency (e.g., Rupees)",
+        "notes": "Opportunity cost is the value of the next best alternative foregone"
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "class": "11",
+  "subject": "Accountancy",
+  "chapter": "Bank Reconciliation Statement",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T14:15:18.297Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Opening Balance",
+        "formula": "Opening Balance = Balance as per Cash Book",
+        "variables": "Balance as per Cash Book",
+        "units": "",
+        "notes": "Opening balance is the balance as per the cash book on the date when reconciliation is done."
+      },
+      {
+        "name": "Bank Balance",
+        "formula": "Bank Balance = Balance as per Bank Statement",
+        "variables": "Balance as per Bank Statement",
+        "units": "",
+        "notes": "Bank balance is the balance as per the bank statement on the date when reconciliation is done."
+      },
+      {
+        "name": "Dishonoured Cheques",
+        "formula": "Dishonoured Cheques = Cheques appearing in Cash Book but not in Bank Statement",
+        "variables": "Cheques appearing in Cash Book but not in Bank Statement",
+        "units": "",
+        "notes": "Dishonoured cheques are the cheques that have been returned unpaid by the bank."
+      },
+      {
+        "name": "Cheques Deposited",
+        "formula": "Cheques Deposited = Cheques appearing in Bank Statement but not in Cash Book",
+        "variables": "Cheques appearing in Bank Statement but not in Cash Book",
+        "units": "",
+        "notes": "Cheques deposited are the cheques that have been deposited into the bank but have not yet been credited in the cash book."
+      },
+      {
+        "name": "Interest Received",
+        "formula": "Interest Received = Interest appearing in Bank Statement but not in Cash Book",
+        "variables": "Interest appearing in Bank Statement but not in Cash Book",
+        "units": "",
+        "notes": "Interest received is the interest that has been credited in the bank statement but not in the cash book."
+      },
+      {
+        "name": "Interest Paid",
+        "formula": "Interest Paid = Interest appearing in Cash Book but not in Bank Statement",
+        "variables": "Interest appearing in Cash Book but not in Bank Statement",
+        "units": "",
+        "notes": "Interest paid is the interest that has been debited in the cash book but not in the bank statement."
+      },
+      {
+        "name": "Bank Reconciliation Statement",
+        "formula": "Bank Reconciliation Statement = Opening Balance + Cheques Deposited + Interest Received - Dishonoured Cheques - Interest Paid",
+        "variables": "Opening Balance, Cheques Deposited, Interest Received, Dishonoured Cheques, Interest Paid",
+        "units": "",
+        "notes": "Bank Reconciliation Statement is a statement that shows the difference between the cash book balance and the bank statement balance."
+      }
+    ]
+  }
+}

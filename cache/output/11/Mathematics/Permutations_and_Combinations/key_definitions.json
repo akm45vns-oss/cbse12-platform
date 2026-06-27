@@ -1,0 +1,103 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:33:57.772Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Permutation",
+        "definition": "An arrangement of objects in a specific order. It is a selection of objects where the order of selection matters. For example, the letters ABC and BCA are different permutations of the same set of objects.",
+        "example": "A student has to select 4 books from a shelf containing 8 books. In how many different ways can the student select the 4 books?"
+      },
+      {
+        "term": "Combination",
+        "definition": "A selection of objects where the order of selection does not matter. For example, the letters ABC and BCA are the same combination of the same set of objects.",
+        "example": "From a group of 5 friends, 3 are to be chosen to form a team. In how many ways can the team be formed?"
+      },
+      {
+        "term": "nPr",
+        "definition": "The number of permutations of n objects taken r at a time, denoted by nPr or P(n, r). It is calculated as nPr = n! / (n - r)!. For example, 5P3 = 5! / (5 - 3)! = 60.",
+        "example": "In how many ways can 5 students be arranged in a row?"
+      },
+      {
+        "term": "nCr",
+        "definition": "The number of combinations of n objects taken r at a time, denoted by nCr or C(n, r). It is calculated as nCr = n! / (r! * (n - r)!). For example, 5C3 = 5! / (3! * (5 - 3)!) = 10.",
+        "example": "From a group of 5 friends, 3 are to be chosen to form a team."
+      },
+      {
+        "term": "Factorial",
+        "definition": "The product of all positive integers less than or equal to a given number. It is denoted by !. For example, 5! = 5 * 4 * 3 * 2 * 1 = 120.",
+        "example": "Calculate the value of 4!."
+      },
+      {
+        "term": "Arrangement",
+        "definition": "The process of selecting and ordering a set of objects. It is also known as permutation.",
+        "example": "Arrange the letters ABC in a specific order."
+      },
+      {
+        "term": "Selection",
+        "definition": "The process of choosing a subset of objects from a larger set. It is also known as combination.",
+        "example": "Select 3 books from a shelf containing 8 books."
+      },
+      {
+        "term": "Circular Permutation",
+        "definition": "A permutation of objects in a circular arrangement. It is also known as circular arrangement.",
+        "example": "5 friends are seated in a circular arrangement."
+      },
+      {
+        "term": "Circular Permutation Formula",
+        "definition": "The formula for calculating the number of circular permutations, which is (n - 1)!.",
+        "example": "5 friends are seated in a circular arrangement. In how many ways can they be arranged?"
+      },
+      {
+        "term": "Internal Circular Permutation",
+        "definition": "The arrangement of objects in a circular manner where the starting point is fixed.",
+        "example": "5 friends are seated in a circular arrangement in such a way that one friend is at the center."
+      },
+      {
+        "term": "External Circular Permutation",
+        "definition": "The arrangement of objects in a circular manner where the starting point is not fixed.",
+        "example": "5 friends are seated in a circular arrangement."
+      },
+      {
+        "term": "Derangement",
+        "definition": "A permutation of objects in which no object is in its original position.",
+        "example": "Arrange the letters ABC in such a way that none of the letters is in its original position."
+      },
+      {
+        "term": "Derangement Formula",
+        "definition": "The formula for calculating the number of derangements, which is n! * (1/0! - 1/1! + 1/2! - ... + ((-1)^n)/n!).",
+        "example": "Calculate the number of derangements of 5 objects."
+      },
+      {
+        "term": "Permutation with Repetition",
+        "definition": "A permutation of objects where some objects repeat.",
+        "example": "Arrange the letters AAABBB in a specific order."
+      },
+      {
+        "term": "Permutation with Repetition Formula",
+        "definition": "The formula for calculating the number of permutations with repetition, which is n! / (n1! * n2! * ... * nk!), where n1, n2, ..., nk are the frequencies of the repeated objects.",
+        "example": "Calculate the number of permutations of the letters AAABBB."
+      },
+      {
+        "term": "Circular Permutation with Repetition",
+        "definition": "A circular permutation of objects where some objects repeat.",
+        "example": "5 friends are seated in a circular arrangement where one friend is repeated."
+      },
+      {
+        "term": "Circular Permutation with Repetition Formula",
+        "definition": "The formula for calculating the number of circular permutations with repetition, which is (n - r)! / (n1! * n2! * ... * nk!), where n1, n2, ..., nk are the frequencies of the repeated objects.",
+        "example": "Calculate the number of circular permutations of the letters AAABBB."
+      },
+      {
+        "term": "Multinomial Coefficient",
+        "definition": "The coefficient in the multinomial expansion of a product of variables.",
+        "example": "Calculate the multinomial coefficient of (a + b + c)^4."
+      }
+    ]
+  }
+}

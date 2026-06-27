@@ -1,0 +1,1011 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "exported_at": "2026-06-27T05:54:15.067Z",
+  "content_count": 15,
+  "content": {
+    "assertion_reason": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:28:10.85+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 9,
+        "questions": [
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is calculated as n! / (n-r)!",
+            "assertion": "Assertion (A): The number of permutations of 'n' objects taken 'r' at a time is denoted by P(n, r).",
+            "explanation": "The correct formula to calculate the number of permutations of 'n' objects taken 'r' at a time is n! / (n-r)!."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is calculated as n! / (r! * (n-r)!).",
+            "assertion": "Assertion (A): The number of combinations of 'n' objects taken 'r' at a time is denoted by C(n, r).",
+            "explanation": "The correct formula to calculate the number of combinations of 'n' objects taken 'r' at a time is n! / (r! * (n-r)!)."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is calculated using the formula nPr = n! / (n - r)!.",
+            "assertion": "Assertion (A): The formula for combination is nCr = n! / r! * (n - r)!",
+            "explanation": "The formula for permutation is nPr = n! / (n - r)!. The formula for combination is nCr = n! / r! * (n - r)!. These two formulas are different."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is because each of the 'n' objects is unique.",
+            "assertion": "Assertion (A): The number of permutations of 'n' distinct objects is n!. ",
+            "explanation": "The correct explanation of why the number of permutations of 'n' distinct objects is n! is that each of the 'n' objects is unique."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is calculated as n! / (n-r)!",
+            "assertion": "Assertion (A): The formula for permutation of 'n' objects taken 'r' at a time is nPr = n! / r!",
+            "explanation": "The correct formula to calculate the number of permutations of 'n' objects taken 'r' at a time is n! / (n-r)!."
+          },
+          {
+            "ans": "D",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is because nPr = n! / (n-r)! which equals n! / 0!.",
+            "assertion": "Assertion (A): The value of nPr is maximum when r = n.",
+            "explanation": "The value of nPr is maximum when r = n-1, not n. This is because when r = n-1, nPr = n! / (n-(n-1))! = n! / 1! = n!. So option A is false."
+          },
+          {
+            "ans": "C",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is because they both are calculated using factorials.",
+            "assertion": "Assertion (A): The number of permutations of 'n' objects taken 'r' at a time is equal to the number of combinations of 'n' objects taken 'r' at a time.",
+            "explanation": "The number of permutations of 'n' objects taken 'r' at a time is not equal to the number of combinations of 'n' objects taken 'r' at a time. This is because the formula to calculate permutations and combinations are different."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is because nPr = n! / (n-r)! and when r = n, nPr = n! / (n-n)! = n! / 0!",
+            "assertion": "Assertion (A): The number of permutations of 'n' distinct objects taken 'r' at a time is equal to the number of permutations of 'n' distinct objects taken 'n' at a time.",
+            "explanation": "The correct explanation of why the number of permutations of 'n' distinct objects taken 'r' at a time is equal to the number of permutations of 'n' distinct objects taken 'n' at a time is that when r = n, nPr = n! / (n-n)! = n! / 0! = n!. However, 0! = 1, so nPr = n!. Therefore, option A is true."
+          },
+          {
+            "ans": "A",
+            "opts": [
+              "(A) Both A and R are true and R is the correct explanation of A",
+              "(B) Both A and R are true but R is not the correct explanation of A",
+              "(C) A is true but R is false",
+              "(D) A is false but R is true"
+            ],
+            "reason": "Reason (R): It is because the formula for permutation is nPr = n! / (n-r)! which is always greater than or equal to the formula for combination nCr = n! / r! * (n - r)!.",
+            "assertion": "Assertion (A): The number of permutations of 'n' distinct objects taken 'r' at a time is always greater than or equal to the number of combinations of 'n' distinct objects taken 'r' at a time.",
+            "explanation": "The correct explanation of why the number of permutations of 'n' distinct objects taken 'r' at a time is always greater than or equal to the number of combinations of 'n' distinct objects taken 'r' at a time is that the formula for permutation is nPr = n! / (n-r)! which is always greater than or equal to the formula for combination nCr = n! / r! * (n - r)!. However, this is not always true. There are cases where the number of permutations of 'n' distinct objects taken 'r' at a time is equal to the number of combinations of 'n' distinct objects taken 'r' at a time, such as when r = n."
+          }
+        ]
+      }
+    },
+    "case_based": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T16:14:11.659+00:00",
+      "version": "1.0",
+      "data": {
+        "cases": [
+          {
+            "case_id": 1,
+            "passage": "A group of 5 friends, Rohan, Aryan, Kartik, Ayush, and Dhruv, want to select a captain for their school cricket team. They need to choose one person from their group to be the captain. The order of selection does not matter. The group has 5 members. How many different ways can they select the captain?",
+            "questions": [
+              {
+                "q": "What is the number of ways to select the captain from the group of 5 friends?",
+                "ans": "B",
+                "opts": [
+                  "(A) 1",
+                  "(B) 5",
+                  "(C) 10",
+                  "(D) 20"
+                ],
+                "explanation": "Since the order of selection does not matter, we are dealing with combinations. The number of ways to choose 1 person from 5 is given by the formula C(n, r) = n! / (r!(n-r)!), where n is the total number of items and r is the number of items to choose. In this case, n = 5 and r = 1, so C(5, 1) = 5!"
+              },
+              {
+                "q": "A committee of 3 members is to be formed from a group of 7 students. The order of selection does not matter. What is the number of ways to form the committee?",
+                "ans": "C",
+                "opts": [
+                  "(A) 35",
+                  "(B) 70",
+                  "(C) 105",
+                  "(D) 140"
+                ],
+                "explanation": "Using the combination formula C(n, r) = n! / (r!(n-r)!), where n = 7 and r = 3, we get C(7, 3) = 7! / (3!(7-3)!) = 35 * 4 / 2 = 70 * 2 = 140/2 = 70 * 2 = 140/2 = 70 * 2 = 140/2 = 70"
+              },
+              {
+                "q": "In a class of 20 students, a group of 4 students is to be chosen for a project. The order of selection does not matter. How many different groups of 4 students can be formed?",
+                "ans": "A",
+                "opts": [
+                  "(A) 4845",
+                  "(B) 4840",
+                  "(C) 4845",
+                  "(D) 4850"
+                ],
+                "explanation": "Using the combination formula C(n, r) = n! / (r!(n-r)!), where n = 20 and r = 4, we get C(20, 4) = 20! / (4!(20-4)!) = 4845"
+              },
+              {
+                "q": "A team of 6 players is to be selected from a group of 12 players. The order of selection does not matter. What is the number of ways to select the team?",
+                "ans": "A",
+                "opts": [
+                  "(A) 924",
+                  "(B) 969",
+                  "(C) 924",
+                  "(D) 969"
+                ],
+                "explanation": "Using the combination formula C(n, r) = n! / (r!(n-r)!), where n = 12 and r = 6, we get C(12, 6) = 924"
+              },
+              {
+                "q": "In a survey of 10 students, 3 students are to be chosen to represent the class. The order of selection does not matter. How many different groups of 3 students can be formed?",
+                "ans": "C",
+                "opts": [
+                  "(A) 120",
+                  "(B) 126",
+                  "(C) 120",
+                  "(D) 136"
+                ],
+                "explanation": "Using the combination formula C(n, r) = n! / (r!(n-r)!), where n = 10 and r = 3, we get C(10, 3) = 120"
+              }
+            ]
+          },
+          {
+            "case_id": 2,
+            "passage": "A company has 8 employees and wants to form a team of 3 people to handle a project. The order of selection does not matter. The company also wants to select 2 people from the remaining 5 employees to be part of a sub-team. The order of selection does not matter. What is the number of ways to select the team and the sub-team?",
+            "questions": [
+              {
+                "q": "What is the number of ways to select the team of 3 people from the 8 employees?",
+                "ans": "C",
+                "opts": [
+                  "(A) 56",
+                  "(B) 70",
+                  "(C) 56",
+                  "(D) 70"
+                ],
+                "explanation": "Using the combination formula C(n, r) = n! / (r!(n-r)!), where n = 8 and r = 3, we get C(8, 3) = 56"
+              },
+              {
+                "q": "What is the number of ways to select the sub-team of 2 people from the remaining 5 employees?",
+                "ans": "C",
+                "opts": [
+                  "(A) 10",
+                  "(B) 15",
+                  "(C) 10",
+                  "(D) 15"
+                ],
+                "explanation": "Using the combination formula C(n, r) = n! / (r!(n-r)!), where n = 5 and r = 2, we get C(5, 2) = 10"
+              },
+              {
+                "q": "A group of 4 friends, Priya, Ria, Tanvi, and Anusha, want to select a team of 2 members to participate in a dance competition. The order of selection does not matter. The group has 4 members. How many different ways can they select the team?",
+                "ans": "C",
+                "opts": [
+                  "(A) 6",
+                  "(B) 4",
+                  "(C) 6",
+                  "(D) 4"
+                ],
+                "explanation": "Using the combination formula C(n, r) = n! / (r!(n-r)!), where n = 4 and r = 2, we get C(4, 2) = 6"
+              },
+              {
+                "q": "A club has 9 members and wants to select a team of 4 people to participate in a sports tournament. The order of selection does not matter. What is the number of ways to select the team?",
+                "ans": "C",
+                "opts": [
+                  "(A) 126",
+                  "(B) 126",
+                  "(C) 126",
+                  "(D) 140"
+                ],
+                "explanation": "Using the combination formula C(n, r) = n! / (r!(n-r)!), where n = 9 and r = 4, we get C(9, 4) = 126"
+              },
+              {
+                "q": "In a school, a class of 15 students wants to select a team of 5 people to participate in a cultural festival. The order of selection does not matter. What is the number of ways to select the team?",
+                "ans": "C",
+                "opts": [
+                  "(A) 3003",
+                  "(B) 3003",
+                  "(C) 3003",
+                  "(D) 3005"
+                ],
+                "explanation": "Using the combination formula C(n, r) = n! / (r!(n-r)!), where n = 15 and r = 5, we get C(15, 5) = 3003"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "detailed_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:35:44.048+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Permutations and Combinations\n## 📌 Chapter Overview\n\nPermutations and Combinations are fundamental concepts in mathematics used to calculate the number of ways to arrange or select items from a given set. The chapter introduces the concept of counting, which is the process of determining the number of ways to arrange or select items from a given set. It is a crucial part of probability theory and is used extensively in various fields such as statistics, computer science, and engineering.\n\nThe chapter begins with the concept of permutations, which involves arranging items in a specific order. It then moves on to combinations, which involves selecting a group of items without considering the order. The chapter also covers the concept of permutations and combinations with repetition, which involves selecting items that can be repeated.\n\nThroughout the chapter, we will use various formulas and laws to calculate the number of permutations and combinations. We will also learn how to apply these concepts to solve real-world problems.\n\n## 🎯 Learning Objectives\n\n* Understand the concept of permutations and combinations\n* Learn the formulas for permutations and combinations\n* Understand how to apply permutations and combinations to solve real-world problems\n* Learn how to calculate permutations and combinations with repetition\n* Understand the concept of circular permutations and permutations with restriction\n* Learn how to apply permutations and combinations to solve problems involving probability\n\n## 🔑 Key Concepts & Definitions\n\n* **Permutation**: A permutation is an arrangement of items in a specific order.\n* **Combination**: A combination is a selection of items without considering the order.\n* **Permutation Formula**: nPr = n! / (n - r)!\n* **Combination Formula**: nCr = n! / (r! \\* (n - r)!)\n* **Repetition**: Repetition occurs when an item can be selected more than once.\n* **Circular Permutation**: A circular permutation is a permutation of items arranged in a circle.\n* **Permutation with Restriction**: A permutation with restriction is a permutation where certain items cannot be selected.\n\n## 📐 Core Theory & Principles\n\nPermutations and combinations are used to calculate the number of ways to arrange or select items from a given set. The number of permutations of n items is given by n!. The number of combinations of n items is given by n!.\n\n**Example 1**: Find the number of permutations of 5 items.\n\nn! = 5! = 5 \\* 4 \\* 3 \\* 2 \\* 1 = 120\n\n**Example 2**: Find the number of combinations of 5 items.\n\nnC5 = 5! / (5 - 5)! = 5! / 0! = 5! = 120\n\n## 🧮 Important Formulas & Laws\n\n* **Permutation Formula**: nPr = n! / (n - r)!\n* **Combination Formula**: nCr = n! / (r! \\* (n - r)!)\n* **Product Rule**: If one event can occur in m ways and a second independent event can occur in n ways, then the events together can occur in m \\* n ways.\n* **Sum Rule**: If one event can occur in m ways and a second mutually exclusive event can occur in n ways, then the events together can occur in m + n ways.\n\n## 🔬 Detailed Explanations\n\n### Permutations\n\nPermutations involve arranging items in a specific order. The number of permutations of n items is given by n!. We can use the permutation formula to calculate the number of permutations of n items.\n\n**Example 1**: Find the number of permutations of 5 items.\n\nn! = 5! = 5 \\* 4 \\* 3 \\* 2 \\* 1 = 120\n\n**Example 2**: Find the number of permutations of 5 items, where two items are identical.\n\nn! / (2!) = 5! / (2!) = (5 \\* 4 \\* 3 \\* 2 \\* 1) / (2 \\* 1) = 60\n\n### Combinations\n\nCombinations involve selecting items without considering the order. The number of combinations of n items is given by n!. We can use the combination formula to calculate the number of combinations of n items.\n\n**Example 1**: Find the number of combinations of 5 items.\n\nnC5 = 5! / (5 - 5)! = 5! / 0! = 5! = 120\n\n**Example 2**: Find the number of combinations of 5 items, where two items are identical.\n\nnC5 = 5! / (2!) = (5 \\* 4 \\* 3 \\* 2 \\* 1) / (2 \\* 1) = 60\n\n### Permutations with Repetition\n\nPermutations with repetition involve selecting items that can be repeated. We can use the permutation formula with repetition to calculate the number of permutations with repetition.\n\n**Example 1**: Find the number of permutations of 5 items, where two items are repeated.\n\nn! / (2!) = 5! / (2!) = (5 \\* 4 \\* 3 \\* 2 \\* 1) / (2 \\* 1) = 60\n\n## 🖼️ Diagrams & Visual Concepts\n\nDiagrams can be used to visualize permutations and combinations. A permutation diagram can be used to represent the arrangement of items in a specific order. A combination diagram can be used to represent the selection of items without considering the order.\n\n**Example 1**: Draw a permutation diagram to represent the arrangement of 5 items.\n\nA permutation diagram can be drawn as follows:\n\nA B C D E\n\n**Example 2**: Draw a combination diagram to represent the selection of 3 items from 5 items.\n\nA combination diagram can be drawn as follows:\n\nA B C\nA B D\nA B E\nA C D\nA C E\nA D E\nB C D\nB C E\nB D E\nC D E\n\n## ⭐ Most Important Points (Exam Focus)\n\n* Permutations and combinations are used to calculate the number of ways to arrange or select items from a given set.\n* Permutations involve arranging items in a specific order, while combinations involve selecting items without considering the order.\n* The number of permutations of n items is given by n!, while the number of combinations of n items is given by n!.\n* Permutations with repetition involve selecting items that can be repeated.\n* Circular permutations involve arranging items in a circle.\n* Permutations with restriction involve selecting items where certain items cannot be selected.\n\n* Important formulas: nPr = n! / (n - r)!, nCr = n! / (r! \\* (n - r)!)\n* Important laws: product rule, sum rule\n* Important concepts: permutations, combinations, permutations with repetition, circular permutations, permutations with restriction\n\n## ❌ Common Mistakes to Avoid\n\n* Confusing permutations and combinations.\n* Not considering the order when calculating permutations.\n* Not considering the repetition when calculating permutations with repetition.\n* Not considering the restriction when calculating permutations with restriction.\n* Not using the correct formulas for permutations and combinations.\n\n## 💡 Real-World Applications\n\nPermutations and combinations have numerous real-world applications. Some examples include:\n\n* Computer science: permutations and combinations are used to calculate the number of ways to arrange items in a specific order.\n* Statistics: permutations and combinations are used to calculate the number of ways to select items from a given set.\n* Engineering: permutations and combinations are used to calculate the number of ways to arrange items in a specific order.\n* Economics: permutations and combinations are used to calculate the number of ways to select items from a given set.\n\n## 🔁 Quick Revision Summary\n\n* Permutations and combinations are used to calculate the number of ways to arrange or select items from a given set.\n* Permutations involve arranging items in a specific order, while combinations involve selecting items without considering the order.\n* The number of permutations of n items is given by n!, while the number of combinations of n items is given by n!.\n* Permutations with repetition involve selecting items that can be repeated.\n* Circular permutations involve arranging items in a circle.\n* Permutations with restriction involve selecting items where certain items cannot be selected.\n* Important formulas: nPr = n! / (n - r)!, nCr = n! / (r! \\* (n - r)!)\n* Important laws: product rule, sum rule\n* Important concepts: permutations, combinations, permutations with repetition, circular permutations, permutations with restriction\n* Common mistakes to avoid: confusing permutations and combinations, not considering the order when calculating permutations, not considering the repetition when calculating permutations with repetition, not considering the restriction when calculating permutations with restriction, not using the correct formulas for permutations and combinations."
+      }
+    },
+    "difficulty_tags": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:51.038+00:00",
+      "version": "1.0",
+      "data": {
+        "topics": [],
+        "exam_frequency": "medium",
+        "difficulty_score": 5,
+        "overall_difficulty": "medium"
+      }
+    },
+    "estimated_study_time": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:29:14.164+00:00",
+      "version": "1.0",
+      "data": {
+        "tips": [
+          "Use the fundamental principle of counting to solve permutation and combination problems.",
+          "Practice questions from previous years' CBSE exams to improve your problem-solving skills."
+        ],
+        "total_minutes": 235,
+        "revision_minutes": 60,
+        "difficulty_factor": "medium",
+        "notes_making_minutes": 45,
+        "sessions_recommended": 5,
+        "first_reading_minutes": 90,
+        "practice_questions_minutes": 40
+      }
+    },
+    "formula_sheet": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:33:58.691+00:00",
+      "version": "1.0",
+      "data": {
+        "formulas": [
+          {
+            "name": "Factorial",
+            "notes": "The factorial of a number is the product of all positive integers less than or equal to that number.",
+            "units": "",
+            "formula": "n! = n × (n - 1) × (n - 2) × ... × 2 × 1",
+            "variables": "n: a positive integer"
+          },
+          {
+            "name": "Permutation Formula",
+            "notes": "The permutation formula gives the number of ways to choose r items from a set of n items, where order matters.",
+            "units": "",
+            "formula": "P(n, r) = n! / (n - r)!",
+            "variables": "n: number of items, r: number of items being chosen at a time"
+          },
+          {
+            "name": "Combination Formula",
+            "notes": "The combination formula gives the number of ways to choose r items from a set of n items, where order does not matter.",
+            "units": "",
+            "formula": "C(n, r) = n! / (r! × (n - r)!)",
+            "variables": "n: number of items, r: number of items being chosen at a time"
+          },
+          {
+            "name": "Inclusion-Exclusion Principle",
+            "notes": "The inclusion-exclusion principle helps in counting the number of elements in the union of two sets by considering the number of elements in each set and their intersection.",
+            "units": "",
+            "formula": "n(A ∪ B) = n(A) + n(B) - n(A ∩ B)",
+            "variables": "A and B: sets, n(A): number of elements in set A, n(B): number of elements in set B, n(A ∩ B): number of elements in the intersection of A and B"
+          },
+          {
+            "name": "De Morgan's Law",
+            "notes": "De Morgan's law provides a way to express the complement of the union or intersection of two sets in terms of the complements of the individual sets.",
+            "units": "",
+            "formula": "(A ∪ B)' = A' ∩ B', (A ∩ B)' = A' ∪ B'",
+            "variables": "A and B: sets, A' and B': complements of sets A and B"
+          },
+          {
+            "name": "Complement Law",
+            "notes": "The complement law states that the union of a set and its complement is the universal set, and the intersection of a set and its complement is the empty set.",
+            "units": "",
+            "formula": "A ∪ A' = S, A ∩ A' = ∅",
+            "variables": "A: set, A': complement of set A, S: universal set, ∅: empty set"
+          },
+          {
+            "name": "Idempotent Law",
+            "notes": "The idempotent law states that the intersection and union of a set with itself is the set itself.",
+            "units": "",
+            "formula": "A ∩ A = A, A ∪ A = A",
+            "variables": "A: set"
+          },
+          {
+            "name": "Commutative Law",
+            "notes": "The commutative law states that the order of the sets does not change the result of the intersection or union.",
+            "units": "",
+            "formula": "A ∩ B = B ∩ A, A ∪ B = B ∪ A",
+            "variables": "A and B: sets"
+          },
+          {
+            "name": "Associative Law",
+            "notes": "The associative law states that the order in which we perform the intersection or union of sets does not change the result.",
+            "units": "",
+            "formula": "(A ∩ B) ∩ C = A ∩ (B ∩ C), (A ∪ B) ∪ C = A ∪ (B ∪ C)",
+            "variables": "A, B, and C: sets"
+          }
+        ]
+      }
+    },
+    "important_concepts": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:51.474+00:00",
+      "version": "1.0",
+      "data": {
+        "concepts": [
+          {
+            "concept": "Definition of Permutations",
+            "importance": "Understands the basic concept of permutations, which is crucial for solving problems related to arrangement and ordering.",
+            "explanation": "Permutations are arrangements of objects in a specific order. The order of arrangement matters in permutations. For example, if we have 3 objects A, B, and C, then the permutation ABC is different from BCA.",
+            "related_topics": [
+              "Permutation Formula",
+              "Circular Permutations"
+            ]
+          },
+          {
+            "concept": "Permutation Formula",
+            "importance": "Helps to solve problems related to permutations, which is an essential skill for competitive exams.",
+            "explanation": "The permutation formula is nPr = n! / (n - r)!, where n is the total number of objects and r is the number of objects being arranged. This formula helps to find the number of permutations of n objects taken r at a time.",
+            "related_topics": [
+              "Definition of Permutations",
+              "Circular Permutations"
+            ]
+          },
+          {
+            "concept": "Circular Permutations",
+            "importance": "Helps to solve problems related to circular arrangements, which is a common scenario in real life.",
+            "explanation": "Circular permutations are permutations of objects in a circle, where the starting point does not matter. For example, if we have 3 objects A, B, and C in a circle, then the circular permutations are ABC, BCA, CAB.",
+            "related_topics": [
+              "Definition of Permutations",
+              "Permutation Formula"
+            ]
+          },
+          {
+            "concept": "Definition of Combinations",
+            "importance": "Understands the basic concept of combinations, which is crucial for solving problems related to selection and grouping.",
+            "explanation": "Combinations are selections of objects where the order does not matter. For example, if we have 3 objects A, B, and C, then the combination AB is the same as BA.",
+            "related_topics": [
+              "Combination Formula",
+              "Binomial Expansion"
+            ]
+          },
+          {
+            "concept": "Combination Formula",
+            "importance": "Helps to solve problems related to combinations, which is an essential skill for competitive exams.",
+            "explanation": "The combination formula is nCr = n! / (r!(n-r)!), where n is the total number of objects and r is the number of objects being selected. This formula helps to find the number of combinations of n objects taken r at a time.",
+            "related_topics": [
+              "Definition of Combinations",
+              "Binomial Expansion"
+            ]
+          },
+          {
+            "concept": "Binomial Expansion",
+            "importance": "Helps to solve problems related to algebra and geometry, which is essential for advanced mathematics.",
+            "explanation": "Binomial expansion is the expansion of the binomial expression (a + b)^n, where n is a positive integer. This expansion helps to find the coefficients of the terms in the expression.",
+            "related_topics": [
+              "Combination Formula",
+              "Pascal's Triangle"
+            ]
+          },
+          {
+            "concept": "Pascal's Triangle",
+            "importance": "Helps to understand the pattern and structure of binomial expansion, which is essential for advanced mathematics.",
+            "explanation": "Pascal's triangle is a triangular array of numbers in which each number is the sum of the two numbers directly above it. This triangle helps to find the coefficients of the terms in the binomial expansion.",
+            "related_topics": [
+              "Binomial Expansion",
+              "Combinations"
+            ]
+          },
+          {
+            "concept": "Permutations with Repetition",
+            "importance": "Helps to solve problems related to permutations where some objects are repeated, which is a common scenario in real life.",
+            "explanation": "Permutations with repetition are permutations of objects where some objects are repeated. For example, if we have 3 objects A, A, and B, then the permutation AA is the same as AB.",
+            "related_topics": [
+              "Permutation Formula",
+              "Circular Permutations"
+            ]
+          },
+          {
+            "concept": "Combinations with Repetition",
+            "importance": "Helps to solve problems related to combinations where some objects are repeated, which is a common scenario in real life.",
+            "explanation": "Combinations with repetition are selections of objects where some objects are repeated. For example, if we have 3 objects A, A, and B, then the combination AA is the same as AB.",
+            "related_topics": [
+              "Combination Formula",
+              "Binomial Expansion"
+            ]
+          }
+        ]
+      }
+    },
+    "key_definitions": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:33:57.772+00:00",
+      "version": "1.0",
+      "data": {
+        "definitions": [
+          {
+            "term": "Permutation",
+            "example": "A student has to select 4 books from a shelf containing 8 books. In how many different ways can the student select the 4 books?",
+            "definition": "An arrangement of objects in a specific order. It is a selection of objects where the order of selection matters. For example, the letters ABC and BCA are different permutations of the same set of objects."
+          },
+          {
+            "term": "Combination",
+            "example": "From a group of 5 friends, 3 are to be chosen to form a team. In how many ways can the team be formed?",
+            "definition": "A selection of objects where the order of selection does not matter. For example, the letters ABC and BCA are the same combination of the same set of objects."
+          },
+          {
+            "term": "nPr",
+            "example": "In how many ways can 5 students be arranged in a row?",
+            "definition": "The number of permutations of n objects taken r at a time, denoted by nPr or P(n, r). It is calculated as nPr = n! / (n - r)!. For example, 5P3 = 5! / (5 - 3)! = 60."
+          },
+          {
+            "term": "nCr",
+            "example": "From a group of 5 friends, 3 are to be chosen to form a team.",
+            "definition": "The number of combinations of n objects taken r at a time, denoted by nCr or C(n, r). It is calculated as nCr = n! / (r! * (n - r)!). For example, 5C3 = 5! / (3! * (5 - 3)!) = 10."
+          },
+          {
+            "term": "Factorial",
+            "example": "Calculate the value of 4!.",
+            "definition": "The product of all positive integers less than or equal to a given number. It is denoted by !. For example, 5! = 5 * 4 * 3 * 2 * 1 = 120."
+          },
+          {
+            "term": "Arrangement",
+            "example": "Arrange the letters ABC in a specific order.",
+            "definition": "The process of selecting and ordering a set of objects. It is also known as permutation."
+          },
+          {
+            "term": "Selection",
+            "example": "Select 3 books from a shelf containing 8 books.",
+            "definition": "The process of choosing a subset of objects from a larger set. It is also known as combination."
+          },
+          {
+            "term": "Circular Permutation",
+            "example": "5 friends are seated in a circular arrangement.",
+            "definition": "A permutation of objects in a circular arrangement. It is also known as circular arrangement."
+          },
+          {
+            "term": "Circular Permutation Formula",
+            "example": "5 friends are seated in a circular arrangement. In how many ways can they be arranged?",
+            "definition": "The formula for calculating the number of circular permutations, which is (n - 1)!."
+          },
+          {
+            "term": "Internal Circular Permutation",
+            "example": "5 friends are seated in a circular arrangement in such a way that one friend is at the center.",
+            "definition": "The arrangement of objects in a circular manner where the starting point is fixed."
+          },
+          {
+            "term": "External Circular Permutation",
+            "example": "5 friends are seated in a circular arrangement.",
+            "definition": "The arrangement of objects in a circular manner where the starting point is not fixed."
+          },
+          {
+            "term": "Derangement",
+            "example": "Arrange the letters ABC in such a way that none of the letters is in its original position.",
+            "definition": "A permutation of objects in which no object is in its original position."
+          },
+          {
+            "term": "Derangement Formula",
+            "example": "Calculate the number of derangements of 5 objects.",
+            "definition": "The formula for calculating the number of derangements, which is n! * (1/0! - 1/1! + 1/2! - ... + ((-1)^n)/n!)."
+          },
+          {
+            "term": "Permutation with Repetition",
+            "example": "Arrange the letters AAABBB in a specific order.",
+            "definition": "A permutation of objects where some objects repeat."
+          },
+          {
+            "term": "Permutation with Repetition Formula",
+            "example": "Calculate the number of permutations of the letters AAABBB.",
+            "definition": "The formula for calculating the number of permutations with repetition, which is n! / (n1! * n2! * ... * nk!), where n1, n2, ..., nk are the frequencies of the repeated objects."
+          },
+          {
+            "term": "Circular Permutation with Repetition",
+            "example": "5 friends are seated in a circular arrangement where one friend is repeated.",
+            "definition": "A circular permutation of objects where some objects repeat."
+          },
+          {
+            "term": "Circular Permutation with Repetition Formula",
+            "example": "Calculate the number of circular permutations of the letters AAABBB.",
+            "definition": "The formula for calculating the number of circular permutations with repetition, which is (n - r)! / (n1! * n2! * ... * nk!), where n1, n2, ..., nk are the frequencies of the repeated objects."
+          },
+          {
+            "term": "Multinomial Coefficient",
+            "example": "Calculate the multinomial coefficient of (a + b + c)^4.",
+            "definition": "The coefficient in the multinomial expansion of a product of variables."
+          }
+        ]
+      }
+    },
+    "learning_objectives": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T15:29:14.481+00:00",
+      "version": "1.0",
+      "data": {
+        "bloom_levels": {
+          "apply": [
+            "Students will be able to calculate the number of permutations and combinations for a given problem.",
+            "Students will be able to apply the formula for permutation and combination to solve real-life problems."
+          ],
+          "analyze": [
+            "Students will be able to analyze the situation to decide whether to use permutation or combination.",
+            "Students will be able to analyze the data to find the number of permutations and combinations."
+          ],
+          "remember": [
+            "Students will be able to recall and list the formulas for permutation and combination.",
+            "Students will be able to recall and apply the formula for permutation and combination."
+          ],
+          "understand": [
+            "Students will be able to understand the concept of permutation and combination.",
+            "Students will be able to understand the difference between permutation and combination."
+          ]
+        },
+        "ncert_objectives": [
+          "To understand the basic concepts of permutation and combination.",
+          "To apply the formula for permutation and combination to solve problems.",
+          "To differentiate between permutation and combination."
+        ],
+        "board_exam_objectives": [
+          "To calculate the number of permutations of n distinct items taken r at a time.",
+          "To calculate the number of combinations of n distinct items taken r at a time.",
+          "To solve problems involving permutation and combination."
+        ]
+      }
+    },
+    "long_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T03:09:25.008+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 5,
+        "questions": [
+          {
+            "q": "A box contains 5 red and 4 blue marbles. Find the number of ways to draw 3 marbles from the box such that at least one blue marble is drawn. <br> a) If the order of drawing the marbles does not matter, <br> b) If the order of drawing the marbles matters.",
+            "marks": 5,
+            "topic": "Combinations and Permutations",
+            "answer": "To find the number of ways to draw 3 marbles from the box such that at least one blue marble is drawn, we will use the concept of combinations and permutations.<br><br>a) If the order of drawing the marbles does not matter, we need to find the total number of ways to choose 3 marbles from 9 marbles and subtract the number of ways to choose 3 red marbles from 5 red marbles. Using the combination formula, we have <br> C(9, 3) - C(5, 3) = 84 - 10 = 74 ways.<br><br>b) If the order of drawing the marbles matters, we need to find the total number of permutations of 3 marbles from 9 marbles and subtract the number of permutations of 3 red marbles from 5 red marbles. Using the permutation formula, we have <br> P(9, 3) - P(5, 3) = 504 - 60 = 444 ways.",
+            "marking_scheme": [
+              "Calculate the combination or permutation correctly (2 marks)",
+              "Use the correct formula and apply the correct logic (2 marks)",
+              "Write the correct answer with proper reasoning (1 mark)"
+            ]
+          },
+          {
+            "q": "In how many ways can 4 men and 2 women be seated in a row such that no two women are together?",
+            "marks": 5,
+            "topic": "Permutations",
+            "answer": "To find the number of ways to seat 4 men and 2 women in a row such that no two women are together, we will use the concept of permutations.<br><br>We can treat the 2 women as 2 blocks and arrange the 6 blocks (4 men and 2 women) in a row. We can arrange these 6 blocks in 6! ways. However, within each block, the order of men and women does not matter, so we need to divide by 2! for each block. Therefore, the total number of ways to seat 4 men and 2 women in a row such that no two women are together is <br> 6! / (2! 2!) = 360 ways.",
+            "marking_scheme": [
+              "Calculate the permutation correctly (2 marks)",
+              "Use the correct formula and apply the correct logic (2 marks)",
+              "Write the correct answer with proper reasoning (1 mark)"
+            ]
+          },
+          {
+            "q": "A committee of 5 members is to be formed from 8 men and 4 women. In how many ways can this be done if <br> a) The committee consists of 3 men and 2 women, <br> b) The committee consists of 2 men and 3 women?",
+            "marks": 5,
+            "topic": "Combinations",
+            "answer": "To find the number of ways to form a committee of 5 members from 8 men and 4 women, we will use the concept of combinations.<br><br>a) If the committee consists of 3 men and 2 women, we need to find the number of ways to choose 3 men from 8 men and 2 women from 4 women. Using the combination formula, we have <br> C(8, 3)  C(4, 2) = 56  6 = 336 ways.<br><br>b) If the committee consists of 2 men and 3 women, we need to find the number of ways to choose 2 men from 8 men and 3 women from 4 women. Using the combination formula, we have <br> C(8, 2)  C(4, 3) = 28  4 = 112 ways.",
+            "marking_scheme": [
+              "Calculate the combination correctly (2 marks)",
+              "Use the correct formula and apply the correct logic (2 marks)",
+              "Write the correct answer with proper reasoning (1 mark)"
+            ]
+          },
+          {
+            "q": "How many words can be formed from the letters of the word 'TIGER' if no two vowels are together?",
+            "marks": 5,
+            "topic": "Permutations",
+            "answer": "To find the number of words that can be formed from the letters of the word 'TIGER' such that no two vowels are together, we will use the concept of permutations.<br><br>We can treat the vowels 'I', 'E', and 'E' as 3 blocks and arrange the 5 blocks (3 vowels and 2 consonants) in a row. We can arrange these 5 blocks in 5! ways. However, within each block, the order of vowels and consonants does not matter, so we need to divide by 2! for the block with 2 consonants. Within the block with 2 vowels 'E', the order does not matter, so we need to divide by 2!. Therefore, the total number of ways to form words from the letters of the word 'TIGER' such that no two vowels are together is <br> 5! / 2! = 60 ways.",
+            "marking_scheme": [
+              "Calculate the permutation correctly (2 marks)",
+              "Use the correct formula and apply the correct logic (2 marks)",
+              "Write the correct answer with proper reasoning (1 mark)"
+            ]
+          },
+          {
+            "q": "A deck of 52 cards contains 4 Aces, 4 Kings, 4 Queens, and 4 Jacks. In how many ways can 3 cards be drawn from the deck such that <br> a) No two cards are of the same suit, <br> b) No two cards are of the same rank?",
+            "marks": 5,
+            "topic": "Combinations and Permutations",
+            "answer": "To find the number of ways to draw 3 cards from the deck such that no two cards are of the same suit or rank, we will use the concept of permutations and combinations.<br><br>a) If no two cards are of the same suit, we need to find the number of ways to choose 3 suits from 4 suits and 1 card from each suit. Using the combination formula, we have <br> C(4, 3)  C(13, 1)  C(13, 1)  C(13, 1) = 4  13  13  13 = 8788 ways.<br><br>b) If no two cards are of the same rank, we need to find the number of ways to choose 3 ranks from 4 ranks and 1 card from each rank. Using the combination formula, we have <br> C(4, 3)  C(4, 1)  C(4, 1)  C(4, 1) = 4  4  4  4 = 64 ways.",
+            "marking_scheme": [
+              "Calculate the combination or permutation correctly (2 marks)",
+              "Use the correct formula and apply the correct logic (2 marks)",
+              "Write the correct answer with proper reasoning (1 mark)"
+            ]
+          }
+        ]
+      }
+    },
+    "mcqs": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:28:17.008+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "A box contains 5 red marbles, 4 blue marbles, and 6 green marbles. How many ways are there to choose 3 marbles from the box?",
+            "ans": "B",
+            "opts": [
+              "(A) 200",
+              "(B) 560",
+              "(C) 700",
+              "(D) 1000"
+            ],
+            "topic": "Combinations",
+            "difficulty": "easy",
+            "explanation": "We can use the combination formula C(n, r) = n! / (r! * (n-r)!), where n is the total number of marbles and r is the number of marbles we want to choose. So, C(15, 3) = 15! / (3! * (15-3)!) = 4550 / (6 * 12) = 560."
+          },
+          {
+            "q": "Find the number of ways in which 4 boys and 2 girls can be seated in a row such that boys and girls are seated alternately.",
+            "ans": "A",
+            "opts": [
+              "(A) 2880",
+              "(B) 28800",
+              "(C) 2880 * 2!",
+              "(D) 2880 * 4!"
+            ],
+            "topic": "Permutations and Combinations",
+            "difficulty": "easy",
+            "explanation": "To solve this problem, we can consider the 4 boys as fixed points in a row. Then the 2 girls can be seated in between the boys in 2 ways. So, the number of ways to seat the boys and girls alternately is 4! * 2! = 2880."
+          },
+          {
+            "q": "In how many ways can the letters of the word 'EXAMINATION' be arranged?",
+            "ans": "A",
+            "opts": [
+              "(A) 10,080,000",
+              "(B) 7,560,000",
+              "(C) 5,040,000",
+              "(D) 3,600,000"
+            ],
+            "topic": "Permutations",
+            "difficulty": "easy",
+            "explanation": "The word 'EXAMINATION' has 11 letters, of which 2 are 'A', 2 are 'N', 2 are 'I', 2 are 'O', and the rest are distinct. So, the number of ways to arrange the letters is 11! / (2! * 2! * 2! * 2!) = 10,080,000."
+          },
+          {
+            "q": "Find the number of ways in which 3 men and 2 women can be seated in a row such that no two women are seated together.",
+            "ans": "C",
+            "opts": [
+              "(A) 144",
+              "(B) 24 * 2!",
+              "(C) 24 * 3!",
+              "(D) 144 * 2!"
+            ],
+            "topic": "Permutations and Combinations",
+            "difficulty": "easy",
+            "explanation": "To solve this problem, we can consider the 3 men as fixed points in a row. Then the 2 women can be seated in between the men in 3 ways. So, the number of ways to seat the men and women is 3! * 2! * 3 = 144 * 6 / 6 = 24 * 6 = 144."
+          },
+          {
+            "q": "How many ways are there to select 3 books from a total of 7 books such that at least one book is selected from each of 3 categories (Fiction, Non-Fiction, and Poetry)?",
+            "ans": "A",
+            "opts": [
+              "(A) 35",
+              "(B) 70",
+              "(C) 105",
+              "(D) 140"
+            ],
+            "topic": "Combinations",
+            "difficulty": "easy",
+            "explanation": "Let's consider the number of ways to select 3 books from each category. The number of ways to select 1 book from each category is 3 * 3 * 3 = 27. The number of ways to select 2 books from one category and 1 book from another category is 3 * 3 * 3 = 27. The number of ways to select 3 books from one category is 3 * 3 * 3 = 27. So, the total number of ways is 27 + 27 + 27 = 81. But we have counted some cases multiple times. For example, we have counted the case where we select 2 books from one category and 1 book from another category twice. So, we need to subtract these cases. The number of ways to select 2 books from one category and 1 book from another category is 3 * 3 * 3 = 27. The number of ways to select 2 books from one category and 1 book from another category is 3 * 3 * 3 = 27. So, the total number of ways is 81 - 27 - 27 = 27. But we have not counted the case where we select 3 books from one category. So, we need to add this case. The number of ways to select 3 books from one category is 3 * 3 * 3 = 27. So, the total number of ways is 27 + 27 = 54. But we have counted some cases multiple times. For example, we have counted the case where we select 3 books from one category twice. So, we need to subtract this case. The number of ways to select 3 books from one category is 3 * 3 * 3 = 27. So, the total number of ways is 54 - 27 = 27. But we have not counted the case where we select 3 books from two categories. So, we need to add this case. The number of ways to select 3 books from two categories is 3 * 3 * 3 = 27. So, the total number of ways is 27 + 27 = 54. But we have counted some cases multiple times. For example, we have counted the case where we select 3 books from two categories twice. So, we need to subtract this case. The number of ways to select 3 books from two categories is 3 * 3 * 3 = 27. So, the total number of ways is 54 - 27 = 27. But we have not counted the case where we select 3 books from all three categories. So, we need to add this case. The number of ways to select 3 books from all three categories is 3 * 3 * 3 = 27. So, the total number of ways is 27 + 27 = 54. But we have counted some cases multiple times. For example, we have counted the case where we select 3 books from all three categories twice. So, we need to subtract this case. The number of ways to select 3 books from all three categories is 3 * 3 * 3 = 27. So, the total number of ways is 54 - 27 = 27."
+          },
+          {
+            "q": "Find the number of ways in which 4 men and 4 women can be seated in a row such that no two men are seated together.",
+            "ans": "A",
+            "opts": [
+              "(A) 576",
+              "(B) 24 * 4!",
+              "(C) 24 * 4!",
+              "(D) 24 * 4! * 2"
+            ],
+            "topic": "Permutations and Combinations",
+            "difficulty": "easy",
+            "explanation": "To solve this problem, we can consider the 4 women as fixed points in a row. Then the 4 men can be seated in between the women in 4 ways. So, the number of ways to seat the men and women is 4! * 4! * 4 = 576."
+          },
+          {
+            "q": "In how many ways can 5 boys be seated in a row such that no two boys with the same birthday are seated together?",
+            "ans": "A",
+            "opts": [
+              "(A) 120",
+              "(B) 240",
+              "(C) 360",
+              "(D) 480"
+            ],
+            "topic": "Permutations",
+            "difficulty": "easy",
+            "explanation": "Let's consider the number of ways to seat the boys such that no two boys with the same birthday are seated together. We can consider the 3 boys with different birthdays as fixed points in a row. Then the 2 boys with the same birthday can be seated in between the fixed boys in 2 ways. So, the number of ways to seat the boys is 3! * 2 * 2! = 24 * 4 = 96. But we have not counted the case where all 5 boys have the same birthday. So, we need to add this case. The number of ways to seat the boys is 1 * 1 = 1. So, the total number of ways is 96 + 1 = 97. But we have counted some cases multiple times. For example, we have counted the case where all 5 boys have the same birthday twice. So, we need to subtract this case. The number of ways to seat the boys is 1 * 1 = 1. So, the total number of ways is 97 - 1 = 96. But we have not counted the case where 4 boys have the same birthday and 1 boy has a different birthday. So, we need to add this case. The number of ways to seat the boys is 4 * 4 * 2 * 2! = 64 * 4 = 256. So, the total number of ways is 96 + 256 = 352. But we have counted some cases multiple times. For example, we have counted the case where 4 boys have the same birthday and 1 boy has a different birthday twice. So, we need to subtract this case. The number of ways to seat the boys is 4 * 4 * 2 * 2! = 64 * 4 = 256. So, the total number of ways is 352 - 256 = 96."
+          },
+          {
+            "q": "Find the number of ways in which 3 men and 2 women can be seated in a row such that the men and women are seated alternately.",
+            "ans": "C",
+            "opts": [
+              "(A) 144",
+              "(B) 24 * 2!",
+              "(C) 24 * 3!",
+              "(D) 144 * 2!"
+            ],
+            "topic": "Permutations and Combinations",
+            "difficulty": "easy",
+            "explanation": "To solve this problem, we can consider the 3 men as fixed points in a row. Then the 2 women can be seated in between the men in 3 ways. So, the number of ways to seat the men and women is 3! * 2! * 3 = 144."
+          },
+          {
+            "q": "In how many ways can 4 women be seated in a row such that no two women with the same birthday are seated together?",
+            "ans": "A",
+            "opts": [
+              "(A) 24",
+              "(B) 48",
+              "(C) 96",
+              "(D) 192"
+            ],
+            "topic": "Permutations",
+            "difficulty": "easy",
+            "explanation": "Let's consider the number of ways to seat the women such that no two women with the same birthday are seated together. We can consider the 3 women with different birthdays as fixed points in a row. Then the 1 woman with the same birthday as one of the fixed women can be seated in between the fixed women in 1 way. So, the number of ways to seat the women is 3! * 1 * 2! = 6 * 2 = 12. But we have not counted the case where all 4 women have the same birthday. So, we need to add this case. The number of ways to seat the women is 1 * 1 = 1. So, the total number of ways is 12 + 1 = 13. But we have counted some cases multiple times. For example, we have counted the case where all 4 women have the same birthday twice. So, we need to subtract this case. The number of ways to seat the women is 1 * 1 = 1. So, the total number of ways is 13 - 1 = 12."
+          },
+          {
+            "q": "Find the number of ways in which 4 men and 4 women can be seated in a row such that the men and women are seated alternately.",
+            "ans": "A",
+            "opts": [
+              "(A) 576",
+              "(B) 24 * 4!",
+              "(C) 24 * 4!",
+              "(D) 24 * 4! * 2"
+            ],
+            "topic": "Permutations and Combinations",
+            "difficulty": "easy",
+            "explanation": "To solve this problem, we can consider the 4 men as fixed points in a row. Then the 4 women can be seated in between the men in 4 ways. So, the number of ways to seat the men and women is 4! * 4! * 4 = 576."
+          }
+        ]
+      }
+    },
+    "ncert_summary": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:45.565+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# NCERT Summary: Permutations and Combinations\n\n## Chapter at a Glance\nThis chapter delves into the concepts of permutations and combinations, which are fundamental in counting and arranging objects in various ways. The chapter begins by explaining the basic principles of permutations and combinations, including the product rule and the addition rule. It then explores various types of permutations such as circular permutations, permutations with restrictions, and permutations of n objects taken r at a time. Combinations are also discussed, including the concept of nCr and its relation to permutations. The chapter culminates in the discussion of partitioning of a set, where the concept of Bell numbers is introduced. The chapter covers various theorems and formulas related to permutations and combinations, making it an essential part of mathematical reasoning and problem-solving.\n\n## Section-wise Summary\n### 1. Introduction to Permutations and Combinations\nThe chapter begins with the introduction to permutations and combinations. Permutations are arrangements of objects without repetition, while combinations are selections of objects without regard to order. The product rule states that if two events are independent, the number of outcomes is the product of the number of outcomes for each event.\n\n### 2. Permutations\nThis section deals with permutations of objects, including permutations of n distinct objects taken r at a time (denoted as P(n, r)). The formula for permutations is given as P(n, r) = n! / (n-r)!. The concept of circular permutations is also discussed, where the arrangement of objects in a circle is considered.\n\n### 3. Permutations with Restrictions\nIn this section, permutations with restrictions are discussed. Restrictions can be in the form of repeating elements, or in the form of certain elements being fixed or not allowed. The formula for permutations with restrictions is given as P(n, r) = n! / (n-r)! * R!, where R is the number of restrictions.\n\n### 4. Combinations\nThis section deals with combinations, including the concept of nCr (denoted as C(n, r)). The formula for combinations is given as nCr = n! / (r!(n-r)!).\n\n### 5. Partitioning of a Set\nIn this section, the concept of partitioning a set is discussed. Bell numbers are introduced, which represent the number of ways to partition a set of n elements. The formula for Bell numbers is given as Bn = Σ(k=0 to n) (nCk) * Bk.\n\n## Important NCERT Exercises Insight\nKey concepts tested in NCERT exercises include:\n\n* Permutations and combinations formulas\n* Product rule and addition rule\n* Permutations with restrictions\n* Combinations\n* Partitioning of a set and Bell numbers\n\nKey points to remember:\n\n* The formula for permutations is P(n, r) = n! / (n-r)!\n* The formula for combinations is nCr = n! / (r!(n-r)!)\n* Permutations with restrictions involve fixing certain elements or repeating elements\n* Combinations involve selecting objects without regard to order\n* Bell numbers represent the number of ways to partition a set\n\n## NCERT Exemplar Focus\nNCERT Exemplar covers additional topics such as:\n\n* Permutations with repeated elements\n* Combinations with restrictions\n* Partitioning of a set with more than two elements\n\nThese topics provide additional practice and reinforcement of key concepts.\n\n## Board Exam Relevance\nMarks weightage for this chapter is approximately 10-15%. Frequently asked topics include:\n\n* Permutations and combinations formulas\n* Permutations with restrictions\n* Combinations\n* Partitioning of a set and Bell numbers\n\nTo perform well in the board exam, it is essential to practice solving problems involving permutations and combinations, and to understand the key concepts and formulas."
+      }
+    },
+    "pyq_style": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-25T04:17:46.258+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 10,
+        "questions": [
+          {
+            "q": "Out of 5 men and 3 women, a team of 4 is to be chosen. In how many ways can this be done?",
+            "type": "Short Answer",
+            "marks": 3,
+            "answer": "5C4 × 3C0 + 5C3 × 3C1",
+            "difficulty": "medium",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "In a class, there are 15 boys and 8 girls. The teacher wants to choose a boy and a girl to represent the class in a function. Find the number of ways in which this can be done?",
+            "type": "Short Answer",
+            "marks": 3,
+            "answer": "15 × 8",
+            "difficulty": "easy",
+            "year_pattern": "2019-style"
+          },
+          {
+            "q": "How many ways are there to arrange the letters in the word 'MATHEMATICS'?",
+            "type": "Long Answer",
+            "marks": 6,
+            "answer": "The word 'MATHEMATICS' has 11 letters. It has 2 A's, 2 M's, 2 T's, 2 H's, 1 E, 1 I, 1 C, and 1 S. Therefore, the number of ways to arrange these letters is 11! / (2! × 2! × 2! × 2!) = 4989600.",
+            "difficulty": "hard",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "A box contains 6 red balls, 4 green balls, and 3 blue balls. All the balls are different. In how many ways can 3 balls be chosen from the box?",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "6C3 × 4C0 × 3C0 + 6C2 × 4C1 × 3C0 + 6C1 × 4C2 × 3C0",
+            "difficulty": "medium",
+            "year_pattern": "2017-style"
+          },
+          {
+            "q": "Find the number of ways to arrange 5 different books on a shelf.",
+            "type": "Short Answer",
+            "marks": 2,
+            "answer": "5!",
+            "difficulty": "easy",
+            "year_pattern": "2016-style"
+          },
+          {
+            "q": "If 6 men can do a piece of work in 10 days, in how many days can 4 men do the same work?",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "20",
+            "difficulty": "medium",
+            "year_pattern": "2015-style"
+          },
+          {
+            "q": "Out of 5 boys and 4 girls, a committee of 3 is to be formed. In how many ways can this be done?",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "5C3 × 4C0 + 5C2 × 4C1",
+            "difficulty": "medium",
+            "year_pattern": "2018-style"
+          },
+          {
+            "q": "Find the number of ways to arrange the letters in the word 'BOOKKEEPER'.",
+            "type": "Long Answer",
+            "marks": 6,
+            "answer": "The word 'BOOKKEEPER' has 10 letters. It has 2 O's, 2 K's, 2 E's, 2 P's, 2 B's, and 1 R. Therefore, the number of ways to arrange these letters is 10! / (2! × 2! × 2! × 2! × 2!).",
+            "difficulty": "hard",
+            "year_pattern": "2020-style"
+          },
+          {
+            "q": "A bag contains 5 marbles of different colours. In how many ways can 2 marbles be chosen from the bag?",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "5C2",
+            "difficulty": "easy",
+            "year_pattern": "2017-style"
+          },
+          {
+            "q": "If 5 men can do a piece of work in 12 days, in how many days can 3 men do the same work?",
+            "type": "Fill in the Blank",
+            "marks": 1,
+            "answer": "24",
+            "difficulty": "medium",
+            "year_pattern": "2015-style"
+          }
+        ]
+      }
+    },
+    "short_answer": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T17:28:12.633+00:00",
+      "version": "1.0",
+      "data": {
+        "total": 9,
+        "questions": [
+          {
+            "q": "What is a permutation?",
+            "marks": 2,
+            "topic": "Introduction to Permutations",
+            "answer": "A permutation is an arrangement of objects in a specific order. It is a selection of objects where the order of selection matters. For example, if we have 3 objects A, B, C, then the permutations of these objects are ABC, ACB, BAC, BCA, CAB, CBA.",
+            "key_points": [
+              "Order matters",
+              "Selection",
+              "Arrangement"
+            ]
+          },
+          {
+            "q": "What is the formula for finding the number of permutations of n distinct objects taken r at a time?",
+            "marks": 2,
+            "topic": "Permutations of n distinct objects",
+            "answer": "The formula for finding the number of permutations of n distinct objects taken r at a time is given by nPr = n! / (n-r)!, where n is the total number of objects and r is the number of objects selected.",
+            "key_points": [
+              "Permutation formula",
+              "Factorial notation",
+              "Selection"
+            ]
+          },
+          {
+            "q": "What is the difference between permutation and combination?",
+            "marks": 2,
+            "topic": "Permutation vs Combination",
+            "answer": "The main difference between permutation and combination is that in permutation, the order of selection matters, whereas in combination, the order of selection does not matter. For example, if we have 3 objects A, B, C, then the permutations are ABC, ACB, BAC, BCA, CAB, CBA, but the combinations are {A, B, C} only.",
+            "key_points": [
+              "Order matters",
+              "No order matters",
+              "Permutation vs Combination"
+            ]
+          },
+          {
+            "q": "What is a multinomial coefficient?",
+            "marks": 2,
+            "topic": "Multinomial Coefficients",
+            "answer": "A multinomial coefficient is the number of ways to partition a set of n objects among r boxes. It is given by the formula n! / (n1! * n2! * ... * nr!), where n1, n2, ..., nr are the numbers of objects in each box.",
+            "key_points": [
+              "Multinomial coefficient",
+              "Partitioning",
+              "Factorial notation"
+            ]
+          },
+          {
+            "q": "What is the formula for finding the number of combinations of n distinct objects taken r at a time?",
+            "marks": 2,
+            "topic": "Combinations of n distinct objects",
+            "answer": "The formula for finding the number of combinations of n distinct objects taken r at a time is given by nCr = n! / (r! * (n-r)!), where n is the total number of objects and r is the number of objects selected.",
+            "key_points": [
+              "Combination formula",
+              "Factorial notation",
+              "Selection"
+            ]
+          },
+          {
+            "q": "What is a circular permutation?",
+            "marks": 2,
+            "topic": "Circular Permutations",
+            "answer": "A circular permutation is a permutation of objects in a circular arrangement. The number of circular permutations of n distinct objects is given by (n-1)!.",
+            "key_points": [
+              "Circular arrangement",
+              "Permutation formula",
+              "Factorial notation"
+            ]
+          },
+          {
+            "q": "What is the formula for finding the number of circular permutations of n distinct objects?",
+            "marks": 2,
+            "topic": "Circular Permutations",
+            "answer": "The formula for finding the number of circular permutations of n distinct objects is given by (n-1)!, where n is the total number of objects.",
+            "key_points": [
+              "Circular permutation formula",
+              "Factorial notation",
+              "Circular arrangement"
+            ]
+          },
+          {
+            "q": "What is the difference between a permutation and a derangement?",
+            "marks": 2,
+            "topic": "Derangements",
+            "answer": "A derangement is a permutation of objects in which no object is in its original position. In other words, a derangement is a permutation where no object is fixed in its original position. For example, if we have 3 objects A, B, C, then the derangements are ABC, BCA, CAB, but not ACB, BAC, CBA.",
+            "key_points": [
+              "Derangement definition",
+              "Permutation vs Derangement",
+              "No fixed position"
+            ]
+          },
+          {
+            "q": "What is the formula for finding the number of derangements of n distinct objects?",
+            "marks": 2,
+            "topic": "Derangements",
+            "answer": "The formula for finding the number of derangements of n distinct objects is given by !n = n! * (1/0! - 1/1! + 1/2! - ... + (-1)^n/n!), where n is the total number of objects.",
+            "key_points": [
+              "Derangement formula",
+              "Derangement notation",
+              "Factorial notation"
+            ]
+          }
+        ]
+      }
+    },
+    "short_notes": {
+      "generated_by": "groq/llama-3.1-8b-instant",
+      "generated_at": "2026-06-24T18:05:46.426+00:00",
+      "version": "1.0",
+      "data": {
+        "markdown": "# Permutations and Combinations — Quick Revision Notes\n\n## ⚡ Key Points\n* Permutations are arrangements of objects in a specific order.\n* The number of permutations of n objects taken r at a time is denoted by P(n, r) = n! / (n-r)!.\n* Combinations are selections of objects where order doesn't matter.\n* The number of combinations of n objects taken r at a time is denoted by C(n, r) = n! / (r!(n-r)!).\n* The formula for P(n, r) can be used to find the number of permutations of a set of objects.\n* The formula for C(n, r) can be used to find the number of combinations of a set of objects.\n* Permutations and combinations have many real-world applications, such as calculating the number of ways to arrange items in a list or selecting a team from a group of people.\n* The concept of permutations and combinations can be extended to find the number of ways to arrange objects in a circular manner.\n* The concept of permutations and combinations can be extended to find the number of ways to choose objects with repetition allowed.\n* The formula for C(n, r) can be used to find the number of ways to choose k objects from a set of n objects.\n* The formula for P(n, r) can be used to find the number of ways to arrange k objects from a set of n objects.\n* Permutations and combinations can be used to solve problems related to coding theory, cryptography, and combinatorial optimization.\n* The concept of permutations and combinations can be used to find the number of ways to arrange objects in a specific order, with or without repetition.\n* The concept of permutations and combinations can be used to find the number of ways to choose objects with or without replacement.\n* The concept of permutations and combinations can be used to find the number of ways to arrange objects in a specific order, with or without repetition, and with or without replacement.\n* The concept of permutations and combinations can be used to solve problems related to probability theory.\n* Permutations and combinations can be used to find the number of ways to arrange objects in a specific order, with or without repetition, and with or without replacement, and with or without the concept of circular ordering.\n\n## 🔑 Must-Know Definitions\n* **Permutation**: A specific arrangement of objects in a particular order.\n* **Combination**: A selection of objects where order doesn't matter.\n* **P(n, r)**: The number of permutations of n objects taken r at a time.\n* **C(n, r)**: The number of combinations of n objects taken r at a time.\n* **Factorial**: A mathematical operation denoted by the symbol \"!\" and used to find the number of permutations or combinations of a set of objects.\n* **Circular permutation**: A permutation of objects where the order matters, but the starting point is not important.\n\n## 📊 Important Formulas\n1. **Permutation Formula**: P(n, r) = n! / (n-r)!\n2. **Combination Formula**: C(n, r) = n! / (r!(n-r)!)\n3. **Factorial Formula**: n! = n × (n-1) × (n-2) × ... × 2 × 1\n4. **Circular Permutation Formula**: P(n, r) = (n-1)! / (r-1)!\n5. **Combination with Repetition Formula**: C(n, r) = n^r / (r!)\n6. **Permutation with Repetition Formula**: P(n, r) = n! / (n-r)!\n7. **Complement of Permutation Formula**: P(n, r) = C(n, r) × r!\n8. **Complement of Combination Formula**: C(n, r) = P(n, r) / r!\n\n## ⭐ Exam Tips\n1. **Practice problems**: Practice problems from various sources to improve your understanding of permutations and combinations.\n2. **Understand the formulas**: Make sure you understand the formulas for permutations and combinations and how to apply them to solve problems.\n3. **Use the right formula**: Choose the right formula to solve a problem based on the given conditions.\n4. **Check for errors**: Check your calculations for errors and make sure you have used the correct formula.\n5. **Use real-world examples**: Use real-world examples to illustrate the concept of permutations and combinations and to make the subject more interesting."
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Kinetic Theory",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:20:23.884Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The average kinetic energy of the molecules of an ideal gas is directly proportional to the absolute temperature of the gas.",
+        "reason": "Reason (R): The average kinetic energy of the molecules of an ideal gas is given by KE = (3/2)kT, where k is Boltzmann's constant.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the equation KE = (3/2)kT shows that the average kinetic energy is directly proportional to the absolute temperature."
+      },
+      {
+        "assertion": "Assertion (A): The root mean square speed of the gas molecules is independent of the mass of the gas molecules.",
+        "reason": "Reason (R): The root mean square speed of the gas molecules is given by v_rms = √(3RT/M), where R is the gas constant and M is the molar mass of the gas.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the equation v_rms = √(3RT/M) shows that the root mean square speed is dependent on the mass of the gas molecules."
+      },
+      {
+        "assertion": "Assertion (A): The mean free path of the gas molecules is independent of the density of the gas.",
+        "reason": "Reason (R): The mean free path of the gas molecules is given by λ = 1/√(2πd^2N), where d is the diameter of the gas molecules and N is the number density of the gas.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the equation λ = 1/√(2πd^2N) shows that the mean free path is dependent on the density of the gas."
+      },
+      {
+        "assertion": "Assertion (A): The internal energy of an ideal gas is independent of the volume of the gas.",
+        "reason": "Reason (R): The internal energy of an ideal gas is given by U = (3/2)nRT, where n is the number of moles of the gas.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the equation U = (3/2)nRT shows that the internal energy is independent of the volume of the gas."
+      },
+      {
+        "assertion": "Assertion (A): The specific heat capacity of an ideal gas at constant pressure is equal to the specific heat capacity at constant volume.",
+        "reason": "Reason (R): The specific heat capacity at constant pressure is given by Cp = (5/2)R, where R is the gas constant.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the equation Cp = (5/2)R shows that the specific heat capacity at constant pressure is not equal to the specific heat capacity at constant volume."
+      },
+      {
+        "assertion": "Assertion (A): The diffusion rate of a gas is independent of the pressure of the gas.",
+        "reason": "Reason (R): The diffusion rate of a gas is given by D = (1/3)λv_rms, where λ is the mean free path and v_rms is the root mean square speed.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the equation D = (1/3)λv_rms shows that the diffusion rate is dependent on the mean free path, which in turn is dependent on the pressure of the gas."
+      },
+      {
+        "assertion": "Assertion (A): The viscosity of a gas is independent of the velocity of the gas.",
+        "reason": "Reason (R): The viscosity of a gas is given by η = (1/3)ρλv_rms, where ρ is the density of the gas.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the equation η = (1/3)ρλv_rms shows that the viscosity is dependent on the velocity of the gas."
+      },
+      {
+        "assertion": "Assertion (A): The average kinetic energy of the molecules of a gas is directly proportional to the temperature of the gas.",
+        "reason": "Reason (R): The average kinetic energy of the molecules of a gas is given by KE = (3/2)kT, where k is Boltzmann's constant.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the equation KE = (3/2)kT shows that the average kinetic energy is directly proportional to the temperature of the gas."
+      },
+      {
+        "assertion": "Assertion (A): The root mean square speed of the gas molecules is independent of the temperature of the gas.",
+        "reason": "Reason (R): The root mean square speed of the gas molecules is given by v_rms = √(3RT/M), where R is the gas constant and M is the molar mass of the gas.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the equation v_rms = √(3RT/M) shows that the root mean square speed is dependent on the temperature of the gas."
+      },
+      {
+        "assertion": "Assertion (A): The mean free path of the gas molecules is directly proportional to the temperature of the gas.",
+        "reason": "Reason (R): The mean free path of the gas molecules is given by λ = 1/√(2πd^2N), where d is the diameter of the gas molecules and N is the number density of the gas.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the equation λ = 1/√(2πd^2N) shows that the mean free path is not dependent on the temperature of the gas."
+      }
+    ],
+    "total": 10
+  }
+}

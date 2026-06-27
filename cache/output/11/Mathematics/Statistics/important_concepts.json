@@ -1,0 +1,127 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Statistics",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T14:12:57.095Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "concept": "Mean",
+        "explanation": "The mean of a dataset is the average value of all the numbers in the dataset. It is calculated by summing up all the numbers and then dividing by the total count of numbers.",
+        "importance": "Important for calculating central tendency and understanding the distribution of data.",
+        "related_topics": [
+          "Median",
+          "Mode"
+        ]
+      },
+      {
+        "concept": "Median",
+        "explanation": "The median of a dataset is the middle value when all the numbers are arranged in ascending order. If there are an even number of observations, the median is the average of the two middle values.",
+        "importance": "Important for calculating central tendency and understanding the distribution of data.",
+        "related_topics": [
+          "Mean",
+          "Mode"
+        ]
+      },
+      {
+        "concept": "Mode",
+        "explanation": "The mode of a dataset is the value that appears most frequently in the dataset. A dataset can have more than one mode if multiple values appear with the same highest frequency.",
+        "importance": "Important for understanding the distribution of data and identifying patterns.",
+        "related_topics": [
+          "Mean",
+          "Median"
+        ]
+      },
+      {
+        "concept": "Range",
+        "explanation": "The range of a dataset is the difference between the highest and lowest values in the dataset.",
+        "importance": "Important for understanding the spread of data and identifying outliers.",
+        "related_topics": [
+          "Variance",
+          "Standard Deviation"
+        ]
+      },
+      {
+        "concept": "Variance",
+        "explanation": "The variance of a dataset is the average of the squared differences between each value and the mean.",
+        "importance": "Important for understanding the spread of data and calculating measures of dispersion.",
+        "related_topics": [
+          "Range",
+          "Standard Deviation"
+        ]
+      },
+      {
+        "concept": "Standard Deviation",
+        "explanation": "The standard deviation of a dataset is the square root of the variance. It is a measure of the amount of variation or dispersion of a set of values.",
+        "importance": "Important for understanding the spread of data and making inferences about a population.",
+        "related_topics": [
+          "Variance",
+          "Range"
+        ]
+      },
+      {
+        "concept": "Probability Distribution",
+        "explanation": "A probability distribution is a function that describes the probability of each possible value of a random variable.",
+        "importance": "Important for understanding the behavior of random variables and making predictions.",
+        "related_topics": [
+          "Random Variables",
+          "Discrete Distributions",
+          "Continuous Distributions"
+        ]
+      },
+      {
+        "concept": "Random Variables",
+        "explanation": "A random variable is a variable whose value is determined by chance or probability.",
+        "importance": "Important for understanding probability distributions and making predictions.",
+        "related_topics": [
+          "Probability Distribution",
+          "Discrete Distributions",
+          "Continuous Distributions"
+        ]
+      },
+      {
+        "concept": "Discrete Distributions",
+        "explanation": "A discrete distribution is a probability distribution of a random variable that can only take on a countable number of distinct values.",
+        "importance": "Important for understanding the behavior of discrete random variables and making predictions.",
+        "related_topics": [
+          "Random Variables",
+          "Continuous Distributions",
+          "Binomial Distribution"
+        ]
+      },
+      {
+        "concept": "Continuous Distributions",
+        "explanation": "A continuous distribution is a probability distribution of a random variable that can take on any value within a given range or interval.",
+        "importance": "Important for understanding the behavior of continuous random variables and making predictions.",
+        "related_topics": [
+          "Random Variables",
+          "Discrete Distributions",
+          "Normal Distribution"
+        ]
+      },
+      {
+        "concept": "Binomial Distribution",
+        "explanation": "A binomial distribution is a discrete distribution that models the number of successes in a fixed number of independent trials, where each trial has a constant probability of success.",
+        "importance": "Important for understanding the behavior of discrete random variables and making predictions.",
+        "related_topics": [
+          "Discrete Distributions",
+          "Random Variables",
+          "Probability Distribution"
+        ]
+      },
+      {
+        "concept": "Normal Distribution",
+        "explanation": "A normal distribution is a continuous distribution that is symmetric about the mean, showing that data near the mean are more frequent in occurrence than data far from the mean.",
+        "importance": "Important for understanding the behavior of continuous random variables and making predictions.",
+        "related_topics": [
+          "Continuous Distributions",
+          "Random Variables",
+          "Probability Distribution"
+        ]
+      }
+    ]
+  }
+}

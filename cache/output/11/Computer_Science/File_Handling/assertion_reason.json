@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "File Handling",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:25:33.125Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): A file is a region of storage that holds a collection of data.",
+        "reason": "Reason (R): Files store data in a structured format.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Explanation: This is a correct statement as files hold a collection of data and store them in a structured format."
+      },
+      {
+        "assertion": "Assertion (A): Files can be categorized into text files, image files, and audio files.",
+        "reason": "Reason (R): All files are stored on a storage device.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Explanation: This is an incorrect statement as files are categorized into text files, image files, audio files, and other types, not just the mentioned ones. However, reason (R) is true."
+      },
+      {
+        "assertion": "Assertion (A): A text file stores data in a text format.",
+        "reason": "Reason (R): The data in a text file is stored in a sequence of bytes.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Explanation: This is a correct statement as text files store data in a text format and that text data is stored in a sequence of bytes."
+      },
+      {
+        "assertion": "Assertion (A): The file mode 'w' is used to create a new file.",
+        "reason": "Reason (R): The file mode 'r' is used to read from a file.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Explanation: This is a correct statement as the file mode 'w' is used to create a new file or overwrite an existing file. However, reason (R) is also true in a different context."
+      },
+      {
+        "assertion": "Assertion (A): A binary file is a type of text file.",
+        "reason": "Reason (R): Binary files store data in a binary format.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Explanation: This is an incorrect statement as binary files are not a type of text file. However, reason (R) is true."
+      },
+      {
+        "assertion": "Assertion (A): The file mode 'a' is used to read from a file.",
+        "reason": "Reason (R): The file mode 'w' is used to create a new file or overwrite an existing file.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Explanation: This is an incorrect statement as the file mode 'a' is used to append data to an existing file. However, reason (R) is true."
+      },
+      {
+        "assertion": "Assertion (A): The file mode 'r+' is used to read from and write to a file.",
+        "reason": "Reason (R): The file mode 'w' is used to create a new file or overwrite an existing file.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Explanation: This is a correct statement as the file mode 'r+' is used to read from and write to a file. However, reason (R) is also true in a different context."
+      },
+      {
+        "assertion": "Assertion (A): The file mode 'b' is used to read from a binary file.",
+        "reason": "Reason (R): The file mode 'w' is used to create a new file or overwrite an existing file.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Explanation: This is a correct statement as the file mode 'b' is used to read from a binary file. However, reason (R) is also true in a different context."
+      },
+      {
+        "assertion": "Assertion (A): The file mode 'r' is used to read from and write to a file.",
+        "reason": "Reason (R): Text files can be read and written in text mode.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Explanation: This is an incorrect statement as the file mode 'r' is used to read from a file, not to read and write to a file. However, reason (R) is true."
+      }
+    ],
+    "total": 9
+  }
+}

@@ -1,4 +1,5 @@
-// ===== CURRICULUM DATA =====
+// ===== CURRICULUM DATA (Class 12) =====
+// Also exported as CURRICULUM_12 for class-aware code
 export const CURRICULUM = {
   Physics: {
     emoji: "⚛️", code: "PHY",
@@ -144,3 +145,32 @@ export const totalChapters = Object.values(CURRICULUM).reduce(
   (a, s) => a + s.units.reduce((b, u) => b + u.chapters.length, 0),
   0
 );
+
+// ===== CLASS-AWARE HELPERS =====
+// Alias so new code can explicitly reference "Class 12"
+export const CURRICULUM_12 = CURRICULUM;
+
+// Import Class 11 curriculum (lazy-loaded to keep bundle size low for Class 12 users)
+export { CURRICULUM_11, totalChapters11, getAllChapters11 } from "./curriculum11.js";
+
+/**
+ * Returns curriculum object for the given class level.
+ * @param {"11"|"12"} classLevel
+ */
+export async function getCurriculum(classLevel) {
+  if (classLevel === "11") {
+    const mod = await import("./curriculum11.js");
+    return mod.CURRICULUM_11;
+  }
+  return CURRICULUM;
+}
+
+/**
+ * Synchronous version — returns curriculum object without dynamic import.
+ * Call after ensuring curriculum11.js is already loaded.
+ * @param {"11"|"12"} classLevel
+ * @param {object} curriculum11 — pass CURRICULUM_11 if available
+ */
+export function getCurriculumSync(classLevel, curriculum11) {
+  return classLevel === "11" ? curriculum11 : CURRICULUM;
+}

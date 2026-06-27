@@ -1,0 +1,79 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Laws of Motion",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:17:49.232Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A car of mass 1500 kg is moving with a uniform velocity of 20 m/s on a straight road. The driver applies the brakes and the car comes to rest in a distance of 20 m. Calculate the magnitude of the force applied by the brakes. Also, calculate the time taken by the car to come to rest.",
+        "marks": 5,
+        "answer": "To calculate the magnitude of the force applied by the brakes, we can use Newton's second law of motion: F = ma, where F is the net force acting on the car, m is its mass, and a is its acceleration. Since the car comes to rest, it is uniformly decelerated, and we can use the equation of uniformly accelerated motion: v^2 = u^2 + 2as, where v is the final velocity (0 m/s), u is the initial velocity (20 m/s), a is the acceleration, and s is the distance traveled (20 m). Rearranging the equation to find acceleration, we get a = -u^2 / (2s) = -400 / (2*20) = -10 m/s^2. The negative sign indicates that the acceleration is opposite to the direction of the initial velocity. Now, we can find the magnitude of the force applied by the brakes using F = ma = 1500 * 10 = 15000 N. To calculate the time taken by the car to come to rest, we can use the equation: t = v / a = 20 / 10 = 2 s. Therefore, the magnitude of the force applied by the brakes is 15000 N, and the time taken by the car to come to rest is 2 s.",
+        "marking_scheme": [
+          "Calculate the acceleration using the equation of uniformly accelerated motion (1 mark)",
+          "Calculate the magnitude of the force applied by the brakes using F = ma (1 mark)",
+          "Calculate the time taken by the car to come to rest using the equation t = v / a (1 mark)",
+          "State the final answer in the correct format (1 mark)",
+          "State the units of the answer (1 mark)"
+        ],
+        "topic": "Application of Newton's Second Law of Motion"
+      },
+      {
+        "q": "A block of mass 5 kg is placed on a frictionless table and connected to a horizontal spring of spring constant 200 N/m. The block is displaced by 0.1 m from its equilibrium position and released from rest. Calculate the maximum speed of the block and the time taken by the block to reach its maximum speed.",
+        "marks": 5,
+        "answer": "To calculate the maximum speed of the block, we can use the equation of motion for a simple harmonic motion: v^2 = ω^2 (A^2 - x^2), where v is the speed, ω is the angular frequency, A is the amplitude, and x is the displacement from the equilibrium position. We can find the angular frequency using the equation: ω = √(k / m), where k is the spring constant and m is the mass. Substituting the values, we get ω = √(200 / 5) = √40 = 6.32 rad/s. Now, we can find the maximum speed using the equation: v_max = ω * A = 6.32 * 0.1 = 0.632 m/s. To calculate the time taken by the block to reach its maximum speed, we can use the equation of motion: x = A * sin(ωt), where x is the displacement, A is the amplitude, ω is the angular frequency, and t is the time. Rearranging the equation to find time, we get t = x / (A * ω) = 0.1 / (0.1 * 6.32) = 0.0158 s. Therefore, the maximum speed of the block is 0.632 m/s, and the time taken by the block to reach its maximum speed is 0.0158 s.",
+        "marking_scheme": [
+          "Calculate the angular frequency using the equation ω = √(k / m) (1 mark)",
+          "Calculate the maximum speed using the equation v_max = ω * A (1 mark)",
+          "Calculate the time taken by the block to reach its maximum speed using the equation x = A * sin(ωt) (1 mark)",
+          "State the final answer in the correct format (1 mark)",
+          "State the units of the answer (1 mark)"
+        ],
+        "topic": "Simple Harmonic Motion"
+      },
+      {
+        "q": "A particle of mass 2 kg is moving in a circular path of radius 0.5 m with a speed of 2 m/s. Calculate the magnitude of the force acting on the particle and the angle between the force and the radius vector.",
+        "marks": 5,
+        "answer": "To calculate the magnitude of the force acting on the particle, we can use the equation of motion for a circular path: F = (m * v^2) / r, where F is the force, m is the mass, v is the speed, and r is the radius. Substituting the values, we get F = (2 * 2^2) / 0.5 = 16 N. To calculate the angle between the force and the radius vector, we can use the equation: tan(θ) = v^2 / (r * g), where θ is the angle, v is the speed, r is the radius, and g is the acceleration due to gravity. Substituting the values, we get tan(θ) = 2^2 / (0.5 * 9.8) = 0.408. Therefore, the angle between the force and the radius vector is 21.8°.",
+        "marking_scheme": [
+          "Calculate the magnitude of the force acting on the particle using the equation F = (m * v^2) / r (1 mark)",
+          "Calculate the angle between the force and the radius vector using the equation tan(θ) = v^2 / (r * g) (1 mark)",
+          "State the final answer in the correct format (1 mark)",
+          "State the units of the answer (1 mark)",
+          "State the angle in the correct unit (1 mark)"
+        ],
+        "topic": "Circular Motion"
+      },
+      {
+        "q": "A body of mass 3 kg is moving with a uniform speed of 10 m/s. A force of 5 N acts on the body in the same direction of motion. Calculate the acceleration of the body and the force exerted by the body on the ground.",
+        "marks": 5,
+        "answer": "To calculate the acceleration of the body, we can use Newton's second law of motion: F = ma, where F is the net force acting on the body, m is its mass, and a is its acceleration. Since the force acts in the same direction of motion, the net force is the sum of the applied force and the force of friction. The force of friction is given by F_f = μ * N, where μ is the coefficient of friction and N is the normal force. Since the body is moving with a uniform speed, the net force is zero, and the force of friction is equal to the applied force. Therefore, the acceleration of the body is a = F / m = 5 / 3 = 1.67 m/s^2. To calculate the force exerted by the body on the ground, we can use the equation: F = ma = 3 * 1.67 = 5 N.",
+        "marking_scheme": [
+          "Calculate the acceleration of the body using Newton's second law of motion (1 mark)",
+          "Calculate the force exerted by the body on the ground using the equation F = ma (1 mark)",
+          "State the final answer in the correct format (1 mark)",
+          "State the units of the answer (1 mark)",
+          "Explain the concept of friction and its effect on the motion of the body (1 mark)"
+        ],
+        "topic": "Force and Friction"
+      },
+      {
+        "q": "A block of mass 4 kg is placed on a rough horizontal surface and a horizontal force of 10 N is applied to the block. If the coefficient of friction is 0.2, calculate the acceleration of the block and the force of friction acting on the block.",
+        "marks": 5,
+        "answer": "To calculate the acceleration of the block, we can use Newton's second law of motion: F = ma, where F is the net force acting on the block, m is its mass, and a is its acceleration. The net force is the sum of the applied force and the force of friction. The force of friction is given by F_f = μ * N, where μ is the coefficient of friction and N is the normal force. Since the block is placed on a rough horizontal surface, the normal force is equal to the weight of the block: N = mg, where m is the mass and g is the acceleration due to gravity. Substituting the values, we get F_f = 0.2 * 4 * 9.8 = 3.92 N. The net force is the sum of the applied force and the force of friction: F_net = 10 - 3.92 = 6.08 N. Therefore, the acceleration of the block is a = F_net / m = 6.08 / 4 = 1.52 m/s^2. To calculate the force of friction acting on the block, we can use the equation: F_f = μ * N = 0.2 * 4 * 9.8 = 3.92 N.",
+        "marking_scheme": [
+          "Calculate the acceleration of the block using Newton's second law of motion (1 mark)",
+          "Calculate the force of friction acting on the block using the equation F_f = μ * N (1 mark)",
+          "State the final answer in the correct format (1 mark)",
+          "State the units of the answer (1 mark)",
+          "Explain the concept of friction and its effect on the motion of the block (1 mark)"
+        ],
+        "topic": "Force and Friction"
+      }
+    ],
+    "total": 5
+  }
+}
