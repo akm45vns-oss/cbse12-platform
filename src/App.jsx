@@ -914,7 +914,7 @@ Format Guidelines:
 
         {nav.view === "leaderboard" && (
           <Suspense fallback={<LoadingFallback />}>
-            <LeaderboardView />
+            <LeaderboardView selectedClass={selectedClass} curriculumData={activeCurriculum} />
           </Suspense>
         )}
 

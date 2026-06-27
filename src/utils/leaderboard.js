@@ -9,8 +9,8 @@ const leaderboardCache = new Map();
  * Get cache key for a leaderboard query
  * @private
  */
-function getCacheKey(subject, chapter, limit) {
-  return `${subject}:${chapter || 'all'}:${limit}`;
+function getCacheKey(classLevel, subject, chapter, limit) {
+  return `${classLevel}:${subject}:${chapter || 'all'}:${limit}`;
 }
 
 /**
@@ -52,8 +52,8 @@ export function clearLeaderboardCache() {
  * @param {number} limit - Number of top users to return (default: 25)
  * @returns {Promise<Array>} Array of leaderboard entries with rank, username, avgPercentage, attempts, bestScore
  */
-export async function getLeaderboardData(subject, chapter = null, limit = 25) {
-  const cacheKey = getCacheKey(subject, chapter, limit);
+export async function getLeaderboardData(classLevel, subject, chapter = null, limit = 25) {
+  const cacheKey = getCacheKey(classLevel, subject, chapter, limit);
   
   // Check cache first
   const cachedData = getCachedData(cacheKey);
@@ -65,7 +65,7 @@ export async function getLeaderboardData(subject, chapter = null, limit = 25) {
     let query = supabase
       .from('quiz_submissions')
       .select('username, score')
-      .eq('subject', subject);
+      .eq('class_level', classLevel).eq('subject', subject);
 
     if (chapter) {
       query = query.eq('chapter', chapter);
@@ -153,7 +153,7 @@ export async function getLeaderboardData(subject, chapter = null, limit = 25) {
  * @param {string|null} chapter - Optional chapter filter
  * @returns {Promise<object|null>} User's rank data or null if not found
  */
-export async function getUserRank(username, subject, chapter = null) {
+export async function getUserRank(classLevel, username, subject, chapter = null) {
   try {
     // Get full leaderboard (which is cached), then find user in it
     const leaderboard = await getLeaderboardData(subject, chapter, 1000); // Get more to find user

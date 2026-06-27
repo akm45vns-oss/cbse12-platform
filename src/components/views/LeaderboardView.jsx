@@ -1,12 +1,12 @@
 import React, { useState, useEffect, memo } from 'react';
-import { CURRICULUM } from '../../constants/curriculum';
+
 import { getLeaderboardData, getUserRank, getChapterLeaderboards } from '../../utils/leaderboard';
 import { useAuth } from '../../hooks';
 import '../../styles/LeaderboardView.css';
 
-const LeaderboardView = memo(function LeaderboardView() {
+const LeaderboardView = memo(function LeaderboardView({ selectedClass, curriculumData }) {
   const { currentUser: username } = useAuth();
-  const [selectedSubject, setSelectedSubject] = useState(Object.keys(CURRICULUM)[0] || '');
+  const [selectedSubject, setSelectedSubject] = useState(Object.keys(curriculumData)[0] || '');
   const [selectedChapter, setSelectedChapter] = useState(null);
   const [leaderboard, setLeaderboard] = useState([]);
   const [userRank, setUserRank] = useState(null);
@@ -16,13 +16,13 @@ const LeaderboardView = memo(function LeaderboardView() {
 
   // Get chapters for selected subject
   useEffect(() => {
-    const subjectData = CURRICULUM[selectedSubject];
+    const subjectData = curriculumData[selectedSubject];
     if (subjectData && subjectData.units) {
       const allChapters = subjectData.units.flatMap(unit => unit.chapters);
       setChapters(allChapters);
       setSelectedChapter(null); // Reset chapter selection when subject changes
     }
-  }, [selectedSubject]);
+  }, [selectedClass, selectedSubject, curriculumData]);
 
   // Fetch leaderboard data
   useEffect(() => {
@@ -31,22 +31,22 @@ const LeaderboardView = memo(function LeaderboardView() {
       try {
         if (viewType === 'chapter' && selectedChapter) {
           // Get leaderboard for specific chapter
-          const data = await getLeaderboardData(selectedSubject, selectedChapter, 25);
+          const data = await getLeaderboardData(selectedClass, selectedSubject, selectedChapter, 25);
           setLeaderboard(data);
 
           // Get user's rank for this chapter
           if (username) {
-            const rank = await getUserRank(username, selectedSubject, selectedChapter);
+            const rank = await getUserRank(selectedClass, username, selectedSubject, selectedChapter);
             setUserRank(rank);
           }
         } else {
           // Get leaderboard for entire subject
-          const data = await getLeaderboardData(selectedSubject, null, 25);
+          const data = await getLeaderboardData(selectedClass, selectedSubject, null, 25);
           setLeaderboard(data);
 
           // Get user's rank for this subject
           if (username) {
-            const rank = await getUserRank(username, selectedSubject, null);
+            const rank = await getUserRank(selectedClass, username, selectedSubject, null);
             setUserRank(rank);
           }
         }
@@ -62,7 +62,7 @@ const LeaderboardView = memo(function LeaderboardView() {
     if (selectedSubject) {
       fetchLeaderboard();
     }
-  }, [selectedSubject, selectedChapter, viewType, username]);
+  }, [selectedClass, selectedSubject, selectedChapter, viewType, username]);
 
   const handleChapterSelect = (chapter) => {
     setSelectedChapter(selectedChapter === chapter ? null : chapter);
