@@ -98,9 +98,12 @@ export default function App() {
   const handleClassChange = useCallback((cls) => {
     setSelectedClass(cls);
     localStorage.setItem("akmedu_selected_class", cls);
-    // Navigate to dashboard on class switch
-    nav.goToDashboard();
-    // Clear content state to avoid showing stale Class 12 content
+    // Navigate to dashboard only if on a subject-specific view to prevent errors
+    const subjectSpecificViews = ["subject", "chapter", "notes", "quiz", "paper", "papers-list"];
+    if (subjectSpecificViews.includes(nav.view)) {
+      nav.goToDashboard();
+    }
+    // Clear content state to avoid showing stale content
     setNotes("");
     setQuiz([]);
     setAnswers({});
@@ -625,8 +628,8 @@ Format Guidelines:
             </span>
           </div>
 
-          {/* Centre: Class Switcher — only show on dashboard/subject views */}
-          {["dashboard", "subject"].includes(nav.view) && (
+          {/* Centre: Class Switcher — only show on dashboard and root-level views */}
+          {["dashboard", "subject", "progress", "stats", "leaderboard", "profile"].includes(nav.view) && (
             <ClassSwitcher selectedClass={selectedClass} onChange={handleClassChange} />
           )}
 
