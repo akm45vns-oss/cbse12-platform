@@ -8,6 +8,7 @@ import { recordDailyActivity } from "./utils/loginStreak";
 import { recordQuizSubmission } from "./utils/weakTopics";
 import { getCachedNotes, cacheNotes } from "./utils/cacheManager";
 import { usePerformanceMetrics } from "./utils/performanceMonitoring";
+import { validateQuestion } from "./utils/quizUtils";
 // Eager load critical views, lazy load others
 import { AuthView, DashboardView, QuizSetsView, LeaderboardView } from "./components/views";
 const SubjectView = lazy(() => import("./components/views/SubjectView").then(m => ({ default: m.SubjectView })));

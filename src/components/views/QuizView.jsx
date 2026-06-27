@@ -3,14 +3,7 @@ import { CURRICULUM } from "../../constants/curriculum";
 import { useEffect, useState, memo } from "react";
 import { useKeyboardShortcuts } from "../../hooks";
 import { startSession, endSession } from "../../utils/sessionTracking";
-
-export function validateQuestion(q) {
-  if (!q || !q.q) return null;
-  let opts = q.opts || [];
-  if (!Array.isArray(opts)) opts = [opts];
-  while (opts.length < 4) { opts.push(`Option ${opts.length + 1}`); }
-  return { q: q.q, opts: opts.slice(0, 4), ans: typeof q.ans === 'number' && q.ans >= 0 && q.ans < 4 ? q.ans : 0, exp: q.exp || "No explanation available" };
-}
+import { validateQuestion } from "../../utils/quizUtils";
 
 export const QuizView = memo(function QuizView({ subject, chapter, loading, loadMsg, loadEmoji, quiz, quizErr, qIdx, setQIdx, answers, setAnswers, submitted, score, curriculumData, onSubmit, onRetry, onReviewNotes }) {
   const S = curriculumData;
@@ -61,20 +54,21 @@ export const QuizView = memo(function QuizView({ subject, chapter, loading, load
           <h3 style={{ fontWeight: 900, color: "#3b82f6", marginBottom: 18, fontSize: 18, letterSpacing: "-0.01em" }}>📊 Answer Review</h3>
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             {quiz.map((q, i) => {
-              const ua = answers[i]; const ca = q.ans; const ok = ua === ca;
+              const vq = validateQuestion(q) || {};
+              const ua = answers[i]; const ca = vq.ans; const ok = ua === ca;
               return (
                 <div key={i} style={{ background: "rgba(255, 255, 255, 0.7)", backdropFilter: "blur(20px)", border: `1.5px solid ${ok ? "rgba(74,222,128,0.4)" : "rgba(248,113,113,0.4)"}`, borderRadius: 16, padding: 18 }}>
                   <div style={{ display: "flex", gap: 12, marginBottom: ok ? 8 : 10 }}>
                     <span style={{ background: ok ? "rgba(22,163,74,0.15)" : "rgba(220,38,38,0.15)", color: ok ? "#15803d" : "#ef4444", fontSize: 12, fontWeight: 800, padding: "4px 10px", borderRadius: 8, flexShrink: 0, alignSelf: "flex-start", border: `1px solid ${ok ? "#16a34a" : "#dc2626"}` }}>Q{i + 1} {ok ? "✓" : "✗"}</span>
-                    <span style={{ fontSize: 14, color: "#1e293b", lineHeight: 1.6, fontWeight: 600 }}>{q.q}</span>
+                    <span style={{ fontSize: 14, color: "#1e293b", lineHeight: 1.6, fontWeight: 600 }}>{vq.q}</span>
                   </div>
                   {!ok && (
                     <div style={{ marginLeft: "clamp(0px, 8vw, 56px)", fontSize: 13, marginBottom: 8, background: "rgba(0,0,0,0.03)", padding: 10, borderRadius: 8 }}>
-                      <div style={{ color: "#dc2626", fontWeight: 600 }}>Your answer: {q.opts[ua] || "Not answered"}</div>
-                      <div style={{ color: "#059669", fontWeight: 700, marginTop: 4 }}>Correct: {q.opts[ca]}</div>
+                      <div style={{ color: "#dc2626", fontWeight: 600 }}>Your answer: {vq.opts?.[ua] || "Not answered"}</div>
+                      <div style={{ color: "#059669", fontWeight: 700, marginTop: 4 }}>Correct: {vq.opts?.[ca]}</div>
                     </div>
                   )}
-                  <div style={{ marginLeft: "clamp(0px, 8vw, 56px)", marginTop: 10, fontSize: 13, color: "#4f46e5", fontWeight: 500, lineHeight: 1.6 }}>💡 {q.exp}</div>
+                  <div style={{ marginLeft: "clamp(0px, 8vw, 56px)", marginTop: 10, fontSize: 13, color: "#4f46e5", fontWeight: 500, lineHeight: 1.6 }}>💡 {vq.exp}</div>
                 </div>
               );
             })}
@@ -99,7 +93,7 @@ export const QuizView = memo(function QuizView({ subject, chapter, loading, load
           {quiz[qIdx] && (
             <div style={{ background: "rgba(255, 255, 255, 0.8)", borderRadius: 20, border: "1.5px solid rgba(0,0,0,0.05)", padding: "28px 28px", marginBottom: 18, backdropFilter: "blur(20px)" }}>
               <div style={{ fontSize: 12, fontWeight: 900, color: S?.accent || "#818cf8", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: 12 }}>Question {qIdx + 1}</div>
-              <p style={{ fontSize: 16, fontWeight: 700, color: "#1e293b", lineHeight: 1.7, marginBottom: 24, letterSpacing: "-0.01em" }}>{quiz[qIdx].q}</p>
+              <p style={{ fontSize: 16, fontWeight: 700, color: "#1e293b", lineHeight: 1.7, marginBottom: 24, letterSpacing: "-0.01em" }}>{validateQuestion(quiz[qIdx])?.q}</p>
               <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 {validateQuestion(quiz[qIdx])?.opts?.map((opt, oi) => {
                   const isSelected = answers[qIdx] === oi;

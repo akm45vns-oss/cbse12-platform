@@ -684,13 +684,16 @@ export const getQuizSet = createCachedQuery("quizSet", async (classLevel, subjec
       return null;
     }
 
-    return questions.slice(0, 30).map((q) => ({
-      ...q,
-      exp:
-        typeof q?.exp === "string" && q.exp.trim().length > 0
-          ? q.exp
-          : "Use core chapter concepts and eliminate the incorrect options logically.",
-    }));
+    return questions.slice(0, 30).map((q) => {
+      const realExp = q.exp || q.explanation || q.reason;
+      return {
+        ...q,
+        exp:
+          typeof realExp === "string" && realExp.trim().length > 0
+            ? realExp
+            : "Use core chapter concepts and eliminate the incorrect options logically.",
+      };
+    });
   } catch (error) {
     console.error("Fetch quiz set error:", error);
     return null;
