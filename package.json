@@ -12,7 +12,8 @@
     "retry-notes": "node src/scripts/retryFailedNotes.js",
     "generate-class11": "node src/content-pipeline/scheduler.js",
     "retry-failed": "node src/content-pipeline/scheduler.js --retry-only",
-    "export-class11": "node src/content-pipeline/exports/exportManager.js 11"
+    "export-class11": "node src/content-pipeline/exports/exportManager.js 11",
+    "export-content": "node scripts/export-content.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.80.0",
