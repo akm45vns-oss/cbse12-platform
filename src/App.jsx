@@ -905,7 +905,7 @@ Format Guidelines:
 
         {nav.view === "stats" && (
           <Suspense fallback={<LoadingFallback />}>
-            <StatsView theme={theme} />
+            <StatsView theme={theme} curriculumData={activeCurriculum} />
           </Suspense>
         )}
 

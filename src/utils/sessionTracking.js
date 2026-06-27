@@ -80,7 +80,10 @@ export function endSession(completed = false) {
   session.duration = (session.endTime - session.startTime) - totalPausedTime;
   
   // Save to history
-  const history = getSessionHistory();
+  let history = getSessionHistory();
+  if (activeCurriculum) {
+    history = history.filter(s => isInCurriculum(s.subject, s.chapter, activeCurriculum));
+  }
   history.push(session);
   saveSessionHistory(history);
   
@@ -131,7 +134,15 @@ export function getSubjectStats(subject) {
 /**
  * Get overall study statistics
  */
-export function getOverallStats() {
+
+export function isInCurriculum(subject, chapter, curriculum) {
+  if (!curriculum) return true;
+  if (!curriculum[subject]) return false;
+  if (!chapter) return true;
+  return curriculum[subject].units.some(u => u.chapters.includes(chapter));
+}
+
+export function getOverallStats(activeCurriculum) {
   const history = getSessionHistory();
   
   const totalTime = history.reduce((sum, s) => sum + s.duration, 0);

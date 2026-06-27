@@ -11,9 +11,9 @@ import {
   getPerformanceColor,
   getPerformanceLabel,
 } from "../../utils/analyticsEngine";
-import { CURRICULUM } from "../../constants/curriculum";
+import { curriculumData } from "../../constants/curriculum";
 
-export const StatsView = memo(function StatsView() {
+export const StatsView = memo(function StatsView({ curriculumData }) {
   const theme = useTheme();
   const progress = useProgress();
   const [stats, setStats] = useState(null);
@@ -27,23 +27,23 @@ export const StatsView = memo(function StatsView() {
   const [trendTab, setTrendTab] = useState("hourly");
 
   useEffect(() => {
-    const overallStats = getOverallStats();
+    const overallStats = getOverallStats(curriculumData);
     setStats(overallStats);
     setRecommendations(getStudyRecommendations(overallStats));
 
-    const perfData = getSubjectPerformance();
+    const perfData = getSubjectPerformance(curriculumData);
     setSubjectPerf(perfData);
 
-    const topicMast = getTopicMastery();
+    const topicMast = getTopicMastery(curriculumData);
     setTopicData(topicMast);
 
-    const trendData = getStudyTrends(progress.data);
+    const trendData = getStudyTrends(progress.data, curriculumData);
     setTrends(trendData);
 
-    const quizMetricsData = getQuizPerformanceMetrics();
+    const quizMetricsData = getQuizPerformanceMetrics(curriculumData);
     setQuizMetrics(quizMetricsData);
 
-    const insightsData = getPersonalizedInsights(progress.data, topicMast, perfData);
+    const insightsData = getPersonalizedInsights(progress.data, topicMast, perfData, curriculumData);
     setInsights(insightsData);
   }, [progress.data]);
 
@@ -64,8 +64,8 @@ export const StatsView = memo(function StatsView() {
   const subjectsPerfArray = Object.entries(subjectPerf);
   const subjectsOrderedByPerf = [...subjectsPerfArray].sort((a, b) => b[1].accuracy - a[1].accuracy);
   const subjectsCurriculumOrder = [...subjectsPerfArray].sort((a, b) => {
-    const aOrder = Object.keys(CURRICULUM).indexOf(a[0]);
-    const bOrder = Object.keys(CURRICULUM).indexOf(b[0]);
+    const aOrder = Object.keys(curriculumData).indexOf(a[0]);
+    const bOrder = Object.keys(curriculumData).indexOf(b[0]);
     return aOrder - bOrder;
   });
   const displayedSubjects = sortBy === "performance" ? subjectsOrderedByPerf : subjectsCurriculumOrder;
@@ -217,7 +217,7 @@ export const StatsView = memo(function StatsView() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 12 }}>
             {displayedSubjects.map(([subject, data]) => {
-              const S = CURRICULUM[subject];
+              const S = curriculumData[subject];
               return (
                 <div key={subject} style={{
                   background: S?.light || "#f0f9fc",

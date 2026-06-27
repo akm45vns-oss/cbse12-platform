@@ -1,3 +1,4 @@
+import { isInCurriculum } from "./sessionTracking.js";
 /**
  * Advanced Analytics Engine
  * Computes deeper insights from existing data sources:
@@ -10,11 +11,14 @@
  * Get subject-wise quiz performance
  * Returns: { subject: { avgScore, attempts, accuracy%, bestScore } }
  */
-export function getSubjectPerformance() {
+export function getSubjectPerformance(activeCurriculum) {
   try {
-    const submissions = JSON.parse(
+    let submissions = JSON.parse(
       localStorage.getItem("akmedu_quiz_submissions") || "[]"
     );
+    if (activeCurriculum) {
+      submissions = submissions.filter(s => isInCurriculum(s.subject, s.chapter, activeCurriculum));
+    }
 
     const bySubject = {};
 
@@ -58,11 +62,14 @@ export function getSubjectPerformance() {
  * Get top weak and strong topics
  * Returns: { weakTopics: [...], strongTopics: [...] }
  */
-export function getTopicMastery() {
+export function getTopicMastery(activeCurriculum) {
   try {
-    const submissions = JSON.parse(
+    let submissions = JSON.parse(
       localStorage.getItem("akmedu_quiz_submissions") || "[]"
     );
+    if (activeCurriculum) {
+      submissions = submissions.filter(s => isInCurriculum(s.subject, s.chapter, activeCurriculum));
+    }
 
     const topicStats = {};
 
@@ -118,11 +125,14 @@ export function getTopicMastery() {
  * Get study time trends by subject and time patterns
  * Returns: { bySubject: {...}, peakHours: [...], dailyActivity: [...] }
  */
-export function getStudyTrends(progressData) {
+export function getStudyTrends(progressData, activeCurriculum) {
   try {
-    const sessions = JSON.parse(
+    let sessions = JSON.parse(
       localStorage.getItem("akmedu_sessions_history") || "[]"
     );
+    if (activeCurriculum) {
+      sessions = sessions.filter(s => isInCurriculum(s.subject, s.chapter, activeCurriculum));
+    }
 
     // 1. Time by subject
     const timeBySubject = {};
@@ -187,9 +197,9 @@ export function getStudyTrends(progressData) {
  * Get personalized insights and recommendations
  * Returns: { focusAreas, strengths, bestStudyTime, nextGoal }
  */
-export function getPersonalizedInsights(progressData, weakTopics, performance) {
+export function getPersonalizedInsights(progressData, weakTopics, performance, activeCurriculum) {
   try {
-    const trends = getStudyTrends(progressData);
+    const trends = getStudyTrends(progressData, activeCurriculum);
 
     // Find peak study hour
     const bestHour = trends.peakHours.reduce((prev, curr) =>
@@ -241,11 +251,14 @@ export function getPersonalizedInsights(progressData, weakTopics, performance) {
 /**
  * Get detailed quiz performance metrics
  */
-export function getQuizPerformanceMetrics() {
+export function getQuizPerformanceMetrics(activeCurriculum) {
   try {
-    const submissions = JSON.parse(
+    let submissions = JSON.parse(
       localStorage.getItem("akmedu_quiz_submissions") || "[]"
     );
+    if (activeCurriculum) {
+      submissions = submissions.filter(s => isInCurriculum(s.subject, s.chapter, activeCurriculum));
+    }
 
     if (submissions.length === 0) {
       return {
@@ -290,9 +303,12 @@ export function getQuizPerformanceMetrics() {
  */
 export function getSessionMetrics() {
   try {
-    const sessions = JSON.parse(
+    let sessions = JSON.parse(
       localStorage.getItem("akmedu_sessions_history") || "[]"
     );
+    if (activeCurriculum) {
+      sessions = sessions.filter(s => isInCurriculum(s.subject, s.chapter, activeCurriculum));
+    }
 
     if (sessions.length === 0) {
       return {
