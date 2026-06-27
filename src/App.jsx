@@ -202,7 +202,11 @@ export default function App() {
     if (auth.currentUser) {
       progress.load(auth.currentUser);
       recordDailyActivity(); // Track daily login streak
-      nav.goToDashboard();
+      // Only force redirect if they are currently on the login screen.
+      // This prevents deep links (like /quiz) from being hijacked on page refresh.
+      if (nav.view === "auth") {
+        nav.goToDashboard();
+      }
     } else {
       nav.navigate("auth");
     }
@@ -228,6 +232,29 @@ export default function App() {
     }
     prevChapterRef.current = key;
   }, [nav.subject, nav.chapter]);
+
+  // Handle direct navigation (refresh/bookmark) for data fetching
+  const initialFetchRef = useRef(false);
+  useEffect(() => {
+    if (initialFetchRef.current) return;
+
+    // If we land directly on notes and notes are empty
+    if (nav.view === "notes" && nav.subject && nav.chapter && !notes) {
+      initialFetchRef.current = true;
+      genNotes(nav.subject, nav.chapter);
+    }
+    // If we land directly on quiz and availableSets is empty
+    else if (nav.view === "quiz" && nav.subject && nav.chapter && availableSets.length === 0) {
+      initialFetchRef.current = true;
+      startQuiz(nav.subject, nav.chapter);
+    }
+    // If we land directly on paper list and no paper is loaded
+    else if (nav.view === "paper" && nav.subject && selectedPaperSet === null) {
+      initialFetchRef.current = true;
+      // It will just show the papers list component, no fetch needed.
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [nav.view, nav.subject, nav.chapter]);
 
   // Content generation functions
   const genNotes = useCallback(async (subj, chap) => {
