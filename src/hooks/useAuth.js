@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { validateUsername, validatePassword } from "../utils/auth";
-import { loginUser, registerUser, sendOTP, verifyOTP, sendPasswordResetOTP, verifyPasswordResetOTP, resetPassword } from "../utils/supabase";
+import { registerUser, sendOTP, verifyOTP, sendPasswordResetOTP, verifyPasswordResetOTP, resetPassword } from "../utils/supabase";
+import { apiClient } from "../utils/apiClient";
 import { validatePasswordStrength } from "../utils/passwordValidation";
 import {
   recordLoginAttempt,
@@ -74,10 +75,32 @@ export function useAuth() {
     const passwordErr = validatePassword(credentials.password);
     if (passwordErr) return setError(passwordErr);
 
-    // Send plain text password to loginUser (hashing is done inside)
-    const loginResult = await loginUser(u, credentials.password);
+    try {
+      // Call Backend API via apiClient
+      const response = await apiClient.post('/auth/login', { 
+        usernameOrEmail: u, 
+        password: credentials.password 
+      });
 
-    if (loginResult.error) {
+      const { user, token } = response.data;
+
+      // Clear attempts on successful login
+      resetLoginAttempts(u);
+      
+      // Save Token securely (localStorage for now, can move to HttpOnly cookies later)
+      localStorage.setItem('akmedu_token', token);
+      
+      // Set current user (saving username for backward compatibility)
+      setCurrentUser(user.username);
+      setCredentials({ username: "", email: "", name: "", password: "", confirmPassword: "" });
+      setShowPass(false);
+      
+      // Sync gamification data from localStorage to database
+      syncGamificationDataToDB(user.username)
+        .then(() => console.log('[AUTH] Gamification data synced to database'))
+        .catch(err => console.error('[AUTH] Failed to sync gamification data:', err));
+
+    } catch (apiError) {
       // Record failed attempt
       const attempts = recordLoginAttempt(u);
       const remaining = SECURITY_CONFIG.MAX_LOGIN_ATTEMPTS - attempts;
@@ -89,19 +112,8 @@ export function useAuth() {
         return setError(`❌ Too many failed attempts. Account locked for ${SECURITY_CONFIG.LOCKOUT_DURATION_MINUTES} minutes.`);
       }
 
-      return setError(`❌ ${loginResult.error} (${remaining} attempt${remaining === 1 ? "" : "s"} remaining)`);
+      return setError(`❌ ${apiError.message || 'Login failed'} (${remaining} attempt${remaining === 1 ? "" : "s"} remaining)`);
     }
-
-    // Clear attempts on successful login
-    resetLoginAttempts(u);
-    setCurrentUser(loginResult.username);
-    setCredentials({ username: "", email: "", name: "", password: "", confirmPassword: "" });
-    setShowPass(false);
-    
-    // Sync gamification data from localStorage to database
-    syncGamificationDataToDB(loginResult.username)
-      .then(() => console.log('[AUTH] Gamification data synced to database'))
-      .catch(err => console.error('[AUTH] Failed to sync gamification data:', err));
   };
 
   const doRegister = async () => {
