@@ -1,0 +1,98 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electrostatic Potential and Capacitance",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T18:20:47.148Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the concept of electrostatic potential and its unit. How does it differ from electric field?",
+        "marks": 5,
+        "answer": "The electrostatic potential at a point in an electric field is the work done per unit charge in moving a test charge from infinity to that point. The unit of electrostatic potential is joule per coulomb (J/C) or volt (V). The electric field is a vector quantity, while electrostatic potential is a scalar quantity. The direction of the electric field is from higher potential to lower potential, and the magnitude of the electric field is the negative rate of change of potential with distance.",
+        "marking_scheme": [
+          "Understanding of electrostatic potential (2 marks)",
+          "Difference from electric field (2 marks)",
+          "Unit of electrostatic potential (1 mark)"
+        ],
+        "topic": "Electrostatic Potential",
+        "is_numerical": false
+      },
+      {
+        "q": "A point charge of +4 μC is placed at the origin. Calculate the electrostatic potential at a point 3 m away from the charge.",
+        "marks": 5,
+        "answer": "The electrostatic potential at a point due to a point charge is given by V = kq/r, where k is Coulomb's constant, q is the charge, and r is the distance from the charge. Calculation: k = 9 × 10^9 N m^2/C^2, q = 4 × 10^-6 C, r = 3 m. V = kq/r = (9 × 10^9 N m^2/C^2)(4 × 10^-6 C)/3 m = 12000 V",
+        "marking_scheme": [
+          "Formula application (2 marks)",
+          "Numerical calculation (2 marks)",
+          "Unit of answer (1 mark)"
+        ],
+        "topic": "Electrostatic Potential",
+        "is_numerical": true
+      },
+      {
+        "q": "Derive the equation for the potential at the surface of a charged sphere.",
+        "marks": 5,
+        "answer": "The potential at the surface of a charged sphere is given by V = kQ/r, where k is Coulomb's constant, Q is the charge on the sphere, and r is the radius of the sphere. This can be derived by considering the potential at the surface of the sphere due to a small charge dq on the surface, and integrating over the entire surface.",
+        "marking_scheme": [
+          "Derivation (3 marks)",
+          "Equation (1 mark)",
+          "Explanation of concept (1 mark)"
+        ],
+        "topic": "Potential Due to a Charged Sphere",
+        "is_numerical": false
+      },
+      {
+        "q": "A parallel plate capacitor has a capacitance of 20 μF. Calculate the potential difference across the plates when a charge of 10 μC is stored.",
+        "marks": 5,
+        "answer": "The capacitance of a parallel plate capacitor is given by C = ε0A/d, where ε0 is the permittivity of free space, A is the area of the plates, and d is the distance between them. However, for this question, we can use the formula Q = CV, where Q is the charge, C is the capacitance, and V is the potential difference. Calculation: V = Q/C = (10 × 10^-6 C)/(20 × 10^-6 F) = 0.5 V",
+        "marking_scheme": [
+          "Formula application (2 marks)",
+          "Numerical calculation (2 marks)",
+          "Unit of answer (1 mark)"
+        ],
+        "topic": "Capacitance",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of dielectric polarization and its effect on capacitance.",
+        "marks": 5,
+        "answer": "Dielectric polarization occurs when a dielectric material is placed in an electric field, causing the electric dipoles in the material to align. This alignment of dipoles increases the capacitance of the capacitor, as the dielectric material acts as a medium for the electric field. The capacitance of a capacitor with a dielectric is given by C = ε0ε_r A/d, where ε_r is the relative permittivity of the dielectric.",
+        "marking_scheme": [
+          "Explanation of concept (2 marks)",
+          "Effect on capacitance (2 marks)",
+          "Formula (1 mark)"
+        ],
+        "topic": "Capacitance of a Parallel Plate Capacitor with a Dielectric",
+        "is_numerical": false
+      },
+      {
+        "q": "A capacitor is connected to a battery and allowed to charge. If the battery is then disconnected, what happens to the charge on the capacitor?",
+        "marks": 5,
+        "answer": "When a capacitor is connected to a battery, it charges up to a potential difference equal to the battery voltage. If the battery is then disconnected, the capacitor continues to hold the charge it has accumulated. The charge on the capacitor remains the same, but the potential difference across the capacitor decreases exponentially with time, as the capacitor discharges through the internal resistance of the capacitor.",
+        "marking_scheme": [
+          "Explanation of concept (3 marks)",
+          "Effect on charge (1 mark)",
+          "Effect on potential difference (1 mark)"
+        ],
+        "topic": "Capacitors",
+        "is_numerical": false
+      },
+      {
+        "q": "A parallel plate capacitor has a capacitance of 15 μF and is charged to a potential difference of 100 V. Calculate the energy stored in the capacitor.",
+        "marks": 5,
+        "answer": "The energy stored in a capacitor is given by E = (1/2)CV^2, where C is the capacitance and V is the potential difference. Calculation: E = (1/2)(15 × 10^-6 F)(100 V)^2 = 7.5 × 10^-3 J",
+        "marking_scheme": [
+          "Formula application (2 marks)",
+          "Numerical calculation (2 marks)",
+          "Unit of answer (1 mark)"
+        ],
+        "topic": "Energy Stored in a Capacitor",
+        "is_numerical": true
+      }
+    ],
+    "total": 7
+  }
+}

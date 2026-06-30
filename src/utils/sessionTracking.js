@@ -81,9 +81,6 @@ export function endSession(completed = false) {
   
   // Save to history
   let history = getSessionHistory();
-  if (activeCurriculum) {
-    history = history.filter(s => isInCurriculum(s.subject, s.chapter, activeCurriculum));
-  }
   history.push(session);
   saveSessionHistory(history);
   

@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-30T18:20:35.017Z",
-  "elapsed_seconds": 8056,
-  "rate_per_second": 0.6,
+  "updated_at": "2026-06-30T18:23:35.124Z",
+  "elapsed_seconds": 8236,
+  "rate_per_second": 0.59,
   "queue": {
-    "completed": 4862,
-    "pending": 701,
+    "completed": 4865,
+    "pending": 698,
     "inFlight": 5,
     "failed": 0,
-    "retrying": 701,
+    "retrying": 698,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
@@ -20,158 +20,158 @@
       "workerId": "Worker-Physics",
       "processed": 105,
       "skipped": 0,
-      "failed": 109,
-      "running": true
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "processed": 113,
-      "skipped": 0,
       "failed": 113,
       "running": true
     },
     {
-      "workerId": "Worker-Maths",
-      "processed": 93,
+      "workerId": "Worker-Chemistry",
+      "processed": 114,
       "skipped": 0,
-      "failed": 112,
+      "failed": 116,
+      "running": true
+    },
+    {
+      "workerId": "Worker-Maths",
+      "processed": 94,
+      "skipped": 0,
+      "failed": 117,
       "running": true
     },
     {
       "workerId": "Worker-Biology",
       "processed": 108,
       "skipped": 0,
-      "failed": 113,
+      "failed": 115,
       "running": true
     },
     {
       "workerId": "Worker-Other",
-      "processed": 107,
+      "processed": 108,
       "skipped": 0,
-      "failed": 119,
+      "failed": 121,
       "running": true
     }
   ],
   "recent_events": [
     {
-      "workerId": "Worker-Chemistry",
+      "workerId": "Worker-Physics",
       "status": "generating",
-      "message": "Generating ncert_summary for Doping — Drugs in Sports (Physical Education)",
-      "timestamp": "2026-06-30T18:20:23.925Z"
+      "message": "Generating long_answer for Chemical Kinetics (Chemistry)",
+      "timestamp": "2026-06-30T18:23:21.452Z"
     },
     {
-      "workerId": "Worker-Other",
+      "workerId": "Worker-Physics",
+      "status": "error",
+      "message": "Validation failed for 12::Physics::Ray Optics and Optical Instruments::pyq_style: Too few items in questions: 0 (minimum 3)",
+      "timestamp": "2026-06-30T18:23:21.210Z"
+    },
+    {
+      "workerId": "Worker-Maths",
       "status": "generating",
-      "message": "Generating formula_sheet for Training in Sports (Physical Education)",
-      "timestamp": "2026-06-30T18:20:23.893Z"
+      "message": "Generating long_answer for The Solid State (Chemistry)",
+      "timestamp": "2026-06-30T18:23:19.251Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T18:23:18.971Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating pyq_style for Semiconductor Electronics: Materials, Devices and Simple Circuits (Physics)",
+      "timestamp": "2026-06-30T18:23:00.366Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "error",
+      "message": "Validation failed for 12::Physics::Alternating Current::long_answer: Duplicate question/item within response: \"A 100 Ω resistor, a 50 mH inductor, and a 25 μF capacitor ar...\"",
+      "timestamp": "2026-06-30T18:23:00.101Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating pyq_style for The Solid State (Chemistry)",
+      "timestamp": "2026-06-30T18:22:57.617Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:20:23.671Z"
+      "timestamp": "2026-06-30T18:22:57.284Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating long_answer for Atoms (Physics)",
+      "timestamp": "2026-06-30T18:22:51.784Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating long_answer for Nuclei (Physics)",
+      "timestamp": "2026-06-30T18:22:51.633Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T18:22:50.505Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T18:22:50.501Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating long_answer for Dual Nature of Radiation and Matter (Physics)",
+      "timestamp": "2026-06-30T18:22:04.491Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-06-30T18:22:04.103Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "generating",
+      "message": "Generating pyq_style for Wave Optics (Physics)",
+      "timestamp": "2026-06-30T18:21:56.027Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:20:23.645Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating ncert_summary for Training in Sports (Physical Education)",
-      "timestamp": "2026-06-30T18:20:05.112Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "done",
-      "message": "✅ Physical Education/Test and Measurement in Sports/important_concepts",
-      "timestamp": "2026-06-30T18:20:04.920Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "generating",
-      "message": "Generating formula_sheet for Psychology and Sports (Physical Education)",
-      "timestamp": "2026-06-30T18:20:04.138Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating short_notes for Psychology and Sports (Physical Education)",
-      "timestamp": "2026-06-30T18:20:03.947Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "done",
-      "message": "✅ Physical Education/Measurement and Evaluation in Sports/short_notes",
-      "timestamp": "2026-06-30T18:20:03.936Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "done",
-      "message": "✅ Physical Education/Test and Measurement in Sports/difficulty_tags",
-      "timestamp": "2026-06-30T18:20:03.758Z"
+      "message": "Validation failed for 12::Physics::Moving Charges and Magnetism::long_answer: Too few items in questions: 0 (minimum 2)",
+      "timestamp": "2026-06-30T18:21:55.781Z"
     },
     {
       "workerId": "Worker-Physics",
       "status": "generating",
-      "message": "Generating key_definitions for Biomechanics and Sports (Physical Education)",
-      "timestamp": "2026-06-30T18:20:03.604Z"
+      "message": "Generating pyq_style for Ray Optics and Optical Instruments (Physics)",
+      "timestamp": "2026-06-30T18:21:52.803Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating important_concepts for Biomechanics and Sports (Physical Education)",
-      "timestamp": "2026-06-30T18:20:03.546Z"
+      "message": "Generating pyq_style for Electromagnetic Waves (Physics)",
+      "timestamp": "2026-06-30T18:21:52.752Z"
     },
     {
-      "workerId": "Worker-Chemistry",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:20:03.352Z"
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating long_answer for Alternating Current (Physics)",
+      "timestamp": "2026-06-30T18:21:52.486Z"
     },
     {
       "workerId": "Worker-Physics",
-      "status": "done",
-      "message": "✅ Physical Education/Measurement and Evaluation in Sports/difficulty_tags",
-      "timestamp": "2026-06-30T18:20:03.346Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating important_concepts for Test and Measurement in Sports (Physical Education)",
-      "timestamp": "2026-06-30T18:19:42.306Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating difficulty_tags for Test and Measurement in Sports (Physical Education)",
-      "timestamp": "2026-06-30T18:19:42.245Z"
-    },
-    {
-      "workerId": "Worker-Maths",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:19:42.105Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:19:42.049Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "generating",
-      "message": "Generating ncert_summary for Test and Measurement in Sports (Physical Education)",
-      "timestamp": "2026-06-30T18:19:40.804Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "done",
-      "message": "✅ Physical Education/Measurement and Evaluation in Sports/ncert_summary",
-      "timestamp": "2026-06-30T18:19:40.607Z"
+      "timestamp": "2026-06-30T18:21:52.447Z"
     }
   ]
 }
