@@ -200,6 +200,11 @@ Four primary tables manage user state, progress, and static content:
 # Bugs
 
 ### Resolved
+- **Date**: 2026-06-30
+  - *Cause*: White screen of death on back navigation caused by a ReferenceError (`activeCurriculum` is not defined) in `endSession` cleanup during `NotesView` unmount.
+  - *Fix*: Removed undefined `activeCurriculum` filtering from `sessionTracking.js` and implemented a global `ErrorBoundary.jsx` in `main.jsx` to catch and display unhandled render crashes.
+  - *Status*: Resolved.
+
 - **Date**: 2026-06-28
   - *Cause*: Leaderboard module was retrieving rank values without filtering by Class 11 vs Class 12, mixing stats.
   - *Fix*: Patched SQL/DB calls to pass class level constraints.
@@ -208,6 +213,12 @@ Four primary tables manage user state, progress, and static content:
 ---
 
 # Recent Changes
+
+### 2026-06-30 (Part 3)
+- **Files**: `src/components/common/ErrorBoundary.jsx`, `src/main.jsx`, `src/utils/sessionTracking.js`, `src/utils/cacheManager.js`, `src/components/views/NotesView.jsx`
+- **Reason**: Fix fatal UI crashes (white screen of death) and cache invalidation.
+- **Summary**: Implemented a global React `ErrorBoundary`, fixed a critical `ReferenceError` during component unmount in `sessionTracking.js`, incremented the cache `VERSION` to `v4` for automatic stale cache eviction, and patched `NotesView.jsx` to select default tabs gracefully.
+- **Impact**: Provides frontend stability on edge-case exceptions and ensures users receive the latest UI design without manual refreshing.
 
 ### 2026-06-30 (Part 2)
 - **Files**: `src/content-pipeline/generators/contentGenerator.js`, `src/content-pipeline/scheduler.js`, `src/content-pipeline/queue.js`
