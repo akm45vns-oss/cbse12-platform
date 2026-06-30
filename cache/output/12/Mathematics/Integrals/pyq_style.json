@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Integrals",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:59:29.624Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Find the value of ∫(2x^2 + 1) dx.",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "(2/3)x^3 + x + C",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If f(x) = ∫(2sinx + cos^2x) dx, find f(π/2).",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "1",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Prove that ∫(e^x + e^(-x)) dx = 2e^x + C.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "Let I = ∫(e^x + e^(-x)) dx. Integrating by parts, we get I = e^x - ∫e^x dx = e^x - e^x + C = 2e^x + C.",
+        "year_pattern": "2018-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Find the value of ∫(sin^4x + cos^4x) dx.",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "(1/2)x - sin^2xcos^2x + C",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If f(x) = ∫(x^2 + 1) dx, find f'(x).",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "x^2 + 1",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Prove that ∫(sinxcotx) dx = -cos^2x + C.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "Let I = ∫(sinxcotx) dx. Integrating by parts, we get I = -cos^2x + C.",
+        "year_pattern": "2015-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Find the value of ∫(x^3 + 3x^2 + 2x) dx.",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "(1/4)x^4 + x^3 + x^2 + C",
+        "year_pattern": "2014-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If f(x) = ∫(x + 1) dx, find f(-1).",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "0",
+        "year_pattern": "2013-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Prove that ∫(e^x + e^(-x)) dx = e^x + C.",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "Let I = ∫(e^x + e^(-x)) dx. Integrating by parts, we get I = e^x - ∫e^x dx = e^x - e^x + C = e^x + C.",
+        "year_pattern": "2012-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Find the value of ∫(sin^2x + cos^2x) dx.",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "x + C",
+        "year_pattern": "2011-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

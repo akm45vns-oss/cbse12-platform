@@ -1,0 +1,248 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Integrals",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:28:30.074Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the standard form of the definite integral?",
+        "opts": [
+          "(A) ∫(f(x)dx) from a to b",
+          "(B) ∫f(x)dx from a to b",
+          "(C) f(a)∫(dx)",
+          "(D) f(b)∫(dx)"
+        ],
+        "ans": "B",
+        "explanation": "The standard form of a definite integral is ∫f(x)dx from a to b, where f(x) is the function being integrated and a and b are the limits of integration.",
+        "difficulty": "easy",
+        "topic": "Definite Integrals"
+      },
+      {
+        "q": "Which of the following is a fundamental theorem in the evaluation of definite integrals?",
+        "opts": [
+          "(A) Mean Value Theorem",
+          "(B) Intermediate Value Theorem",
+          "(C) Fundamental Theorem of Calculus",
+          "(D) Extreme Value Theorem"
+        ],
+        "ans": "C",
+        "explanation": "The Fundamental Theorem of Calculus relates the derivative of a function to the definite integral of its antiderivative.",
+        "difficulty": "easy",
+        "topic": "Definite Integrals"
+      },
+      {
+        "q": "What is the result when the definite integral of f(x) is evaluated from x to x?",
+        "opts": [
+          "(A) f(x)",
+          "(B) 0",
+          "(C) f(x) + C",
+          "(D) ∫f(x)dx"
+        ],
+        "ans": "B",
+        "explanation": "When the definite integral of f(x) is evaluated from x to x, the result is always 0, since the area under the curve from x to x is zero.",
+        "difficulty": "easy",
+        "topic": "Definite Integrals"
+      },
+      {
+        "q": "What is the meaning of the notation ∫[a,∞)f(x)dx?",
+        "opts": [
+          "(A) The definite integral of f(x) from a to infinity",
+          "(B) The indefinite integral of f(x) from a to infinity",
+          "(C) The definite integral of f(x) from -∞ to a",
+          "(D) The indefinite integral of f(x) from -∞ to a"
+        ],
+        "ans": "A",
+        "explanation": "The notation ∫[a,∞)f(x)dx represents the definite integral of f(x) from a to infinity.",
+        "difficulty": "easy",
+        "topic": "Definite Integrals"
+      },
+      {
+        "q": "What is the result when the definite integral of f(x) is evaluated from -∞ to -∞?",
+        "opts": [
+          "(A) ∫f(x)dx",
+          "(B) 0",
+          "(C) f(x) + C",
+          "(D) ∫f(-x)dx"
+        ],
+        "ans": "B",
+        "explanation": "When the definite integral of f(x) is evaluated from -∞ to -∞, the result is always 0, since the area under the curve from -∞ to -∞ is zero.",
+        "difficulty": "easy",
+        "topic": "Definite Integrals"
+      },
+      {
+        "q": "What is the main difference between the definite and indefinite integrals?",
+        "opts": [
+          "(A) The limits of integration",
+          "(B) The presence or absence of limits of integration",
+          "(C) The type of function being integrated",
+          "(D) The result of the integration"
+        ],
+        "ans": "B",
+        "explanation": "The main difference between the definite and indefinite integrals is the presence or absence of limits of integration.",
+        "difficulty": "easy",
+        "topic": "Fundamental Theorem of Calculus"
+      },
+      {
+        "q": "What is the Fundamental Theorem of Calculus part 1?",
+        "opts": [
+          "(A) ∫f(x)dx=F(x)+C",
+          "(B) F'(x)=f(x)",
+          "(C) ∫f(x)dx=F(b)-F(a)",
+          "(D) F(x) is continuous and differentiable"
+        ],
+        "ans": "C",
+        "explanation": "The Fundamental Theorem of Calculus part 1 states that the definite integral of f(x) from a to b is equal to F(b) - F(a), where F(x) is the antiderivative of f(x).",
+        "difficulty": "medium",
+        "topic": "Fundamental Theorem of Calculus"
+      },
+      {
+        "q": "If f(x) has an antiderivative F(x), then which of the following is true?",
+        "opts": [
+          "(A) F'(x)=f(x)",
+          "(B) F(x)=∫f(x)dx",
+          "(C) F(x)=0",
+          "(D) F(x) is a constant"
+        ],
+        "ans": "A",
+        "explanation": "If f(x) has an antiderivative F(x), then F'(x) = f(x).",
+        "difficulty": "medium",
+        "topic": "Fundamental Theorem of Calculus"
+      },
+      {
+        "q": "What is the relationship between the area under a curve and the definite integral?",
+        "opts": [
+          "(A) The area under a curve is equal to the definite integral",
+          "(B) The definite integral is equal to the area under a curve",
+          "(C) The area under a curve is greater than the definite integral",
+          "(D) The definite integral is greater than the area under a curve"
+        ],
+        "ans": "B",
+        "explanation": "The definite integral is equal to the area under a curve.",
+        "difficulty": "medium",
+        "topic": "Definite Integrals"
+      },
+      {
+        "q": "What is the result when the definite integral of f(x) is evaluated from a to b, where f(x) is an even function?",
+        "opts": [
+          "(A) 0",
+          "(B) ∫f(x)dx from -a to b",
+          "(C) ∫f(x)dx from a to -b",
+          "(D) ∫f(x)dx from -b to a"
+        ],
+        "ans": "A",
+        "explanation": "When the definite integral of an even function f(x) is evaluated from a to b, the result is always 0.",
+        "difficulty": "medium",
+        "topic": "Properties of Definite Integrals"
+      },
+      {
+        "q": "What is the result when the definite integral of f(x) is evaluated from a to b, where f(x) is an odd function?",
+        "opts": [
+          "(A) 0",
+          "(B) ∫f(x)dx from -a to b",
+          "(C) ∫f(x)dx from a to -b",
+          "(D) ∫f(x)dx from -b to a"
+        ],
+        "ans": "B",
+        "explanation": "When the definite integral of an odd function f(x) is evaluated from a to b, the result is equal to the definite integral from -a to b.",
+        "difficulty": "medium",
+        "topic": "Properties of Definite Integrals"
+      },
+      {
+        "q": "What is the property of definite integrals that states that the order of integration can be reversed?",
+        "opts": [
+          "(A) Linearity of the integral",
+          "(B) Additivity of the integral",
+          "(C) Reversibility of the integral",
+          "(D) Continuity of the integral"
+        ],
+        "ans": "C",
+        "explanation": "The property of definite integrals that states that the order of integration can be reversed is known as the reversibility of the integral.",
+        "difficulty": "hard",
+        "topic": "Properties of Definite Integrals"
+      },
+      {
+        "q": "What is the property of definite integrals that states that the integral of a sum is the sum of the integrals?",
+        "opts": [
+          "(A) Linearity of the integral",
+          "(B) Additivity of the integral",
+          "(C) Reversibility of the integral",
+          "(D) Continuity of the integral"
+        ],
+        "ans": "A",
+        "explanation": "The property of definite integrals that states that the integral of a sum is the sum of the integrals is known as the linearity of the integral.",
+        "difficulty": "hard",
+        "topic": "Properties of Definite Integrals"
+      },
+      {
+        "q": "What is the property of definite integrals that states that the integral of a product is the product of the integrals?",
+        "opts": [
+          "(A) Linearity of the integral",
+          "(B) Additivity of the integral",
+          "(C) Reversibility of the integral",
+          "(D) None of the above"
+        ],
+        "ans": "D",
+        "explanation": "The integral of a product is not equal to the product of the integrals. This is known as the product rule for integrals.",
+        "difficulty": "hard",
+        "topic": "Properties of Definite Integrals"
+      },
+      {
+        "q": "What is the Cauchy Mean Value Theorem?",
+        "opts": [
+          "(A) f(x)=g(x)",
+          "(B) f'(x)=g'(x)",
+          "(C) f(x)g(x)≤f'(x)g'(x)",
+          "(D) There exists a point c such that f'(c)/g'(c)=f(b)/g(b)-(f(a)/g(a))"
+        ],
+        "ans": "D",
+        "explanation": "The Cauchy Mean Value Theorem states that there exists a point c such that f'(c)/g'(c)=f(b)/g(b)-(f(a)/g(a)).",
+        "difficulty": "hard",
+        "topic": "Mean Value Theorems"
+      },
+      {
+        "q": "What is the Lagrange Mean Value Theorem?",
+        "opts": [
+          "(A) f(x)=g(x)",
+          "(B) f'(x)=g'(x)",
+          "(C) f(x)g(x)≤f'(x)g'(x)",
+          "(D) There exists a point c such that f'(c)=(f(b)-f(a))/(b-a)"
+        ],
+        "ans": "D",
+        "explanation": "The Lagrange Mean Value Theorem states that there exists a point c such that f'(c)=(f(b)-f(a))/(b-a).",
+        "difficulty": "hard",
+        "topic": "Mean Value Theorems"
+      },
+      {
+        "q": "What is the relation between the area under the curve y=f(x) and the function y=f(x) itself?",
+        "opts": [
+          "(A) The area is equal to the function",
+          "(B) The function is equal to the area",
+          "(C) The area is greater than the function",
+          "(D) The function is greater than the area"
+        ],
+        "ans": "B",
+        "explanation": "The definite integral of f(x) from a to b is equal to the area under the curve y=f(x) from a to b.",
+        "difficulty": "hard",
+        "topic": "Definite Integrals"
+      },
+      {
+        "q": "What is the relation between the area under the curve y=f(x) and the function y=f'(x) itself?",
+        "opts": [
+          "(A) The area is equal to the function",
+          "(B) The function is equal to the area",
+          "(C) The area is greater than the function",
+          "(D) The function is greater than the area"
+        ],
+        "ans": "A",
+        "explanation": "The definite integral of f'(x) from a to b is equal to the area under the curve y=f(x) from a to b.",
+        "difficulty": "hard",
+        "topic": "Fundamental Theorem of Calculus"
+      }
+    ],
+    "total": 18
+  }
+}

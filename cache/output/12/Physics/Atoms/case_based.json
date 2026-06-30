@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Atoms",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:10:14.239Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A chemist is studying the properties of a new element, which is found to have an atomic number of 12. The element has 4 electrons in its 1s orbital, 2 electrons in its 2s orbital, and 6 electrons in its 2p orbital. Which type of orbital is the 2p orbital?",
+        "questions": [
+          {
+            "q": "What is the total number of electrons in the atom?",
+            "opts": [
+              "(A) 4",
+              "(B) 6",
+              "(C) 10",
+              "(D) 12"
+            ],
+            "ans": "D",
+            "explanation": "The total number of electrons in the atom is equal to its atomic number, which is given as 12."
+          },
+          {
+            "q": "How many electrons are in the 2p orbital?",
+            "opts": [
+              "(A) 2",
+              "(B) 4",
+              "(C) 6",
+              "(D) 8"
+            ],
+            "ans": "C",
+            "explanation": "According to the given information, there are 6 electrons in the 2p orbital."
+          },
+          {
+            "q": "Which type of orbital is the 2p orbital?",
+            "opts": [
+              "(A) s-orbital",
+              "(B) p-orbital",
+              "(C) d-orbital",
+              "(D) f-orbital"
+            ],
+            "ans": "B",
+            "explanation": "The 2p orbital is a type of orbital that is designated by a letter 'p' and a principal quantum number of 2."
+          },
+          {
+            "q": "What is the maximum number of electrons that can be accommodated in the 2p orbital?",
+            "opts": [
+              "(A) 2",
+              "(B) 4",
+              "(C) 6",
+              "(D) 8"
+            ],
+            "ans": "C",
+            "explanation": "According to the Aufbau principle, the 2p orbital can accommodate a maximum of 6 electrons."
+          },
+          {
+            "q": "What is the significance of the atomic number of an element?",
+            "opts": [
+              "(A) It determines the mass of the atom",
+              "(B) It determines the charge of the atom",
+              "(C) It determines the number of electrons in the atom",
+              "(D) It determines the number of protons in the nucleus"
+            ],
+            "ans": "D",
+            "explanation": "The atomic number of an element is equal to the number of protons in the nucleus, which determines the number of electrons in the atom."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A scientist is studying the properties of a metal, which has an atomic number of 26. The element has 2 electrons in its 1s orbital, 2 electrons in its 2s orbital, and 12 electrons in its 3p orbital. If 2 electrons are removed from the 3p orbital, what will be the new electronic configuration of the element?",
+        "questions": [
+          {
+            "q": "What is the initial electronic configuration of the element?",
+            "opts": [
+              "(A) 1s2 2s2 3s2 3p6",
+              "(B) 1s2 2s2 3s2 3p12",
+              "(C) 1s2 2s2 3s2 3p10",
+              "(D) 1s2 2s2 3s2 3p8"
+            ],
+            "ans": "B",
+            "explanation": "According to the given information, the initial electronic configuration of the element is 1s2 2s2 3s2 3p12."
+          },
+          {
+            "q": "If 2 electrons are removed from the 3p orbital, what will be the new electronic configuration of the element?",
+            "opts": [
+              "(A) 1s2 2s2 3s2 3p10",
+              "(B) 1s2 2s2 3s2 3p8",
+              "(C) 1s2 2s2 3s2 3p6",
+              "(D) 1s2 2s2 3s2 3p12"
+            ],
+            "ans": "B",
+            "explanation": "If 2 electrons are removed from the 3p orbital, the new electronic configuration of the element will be 1s2 2s2 3s2 3p10."
+          },
+          {
+            "q": "What is the atomic number of the element?",
+            "opts": [
+              "(A) 24",
+              "(B) 26",
+              "(C) 28",
+              "(D) 30"
+            ],
+            "ans": "B",
+            "explanation": "The atomic number of the element is given as 26."
+          },
+          {
+            "q": "How many electrons are in the 3p orbital initially?",
+            "opts": [
+              "(A) 10",
+              "(B) 12",
+              "(C) 14",
+              "(D) 16"
+            ],
+            "ans": "B",
+            "explanation": "According to the given information, there are 12 electrons in the 3p orbital initially."
+          },
+          {
+            "q": "What is the effect of removing 2 electrons from the 3p orbital on the atomic number of the element?",
+            "opts": [
+              "(A) It increases the atomic number",
+              "(B) It decreases the atomic number",
+              "(C) It remains the same",
+              "(D) It becomes zero"
+            ],
+            "ans": "C",
+            "explanation": "Removing 2 electrons from the 3p orbital does not change the atomic number of the element, which remains the same at 26."
+          }
+        ]
+      }
+    ]
+  }
+}

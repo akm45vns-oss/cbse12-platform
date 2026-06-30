@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Physical Education",
+  "chapter": "Sports Medicine",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:47:04.189Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "First Law of Thermoregulation",
+        "formula": "Heat loss = Heat production - Heat storage",
+        "variables": "Heat loss, Heat production, Heat storage",
+        "units": "W",
+        "notes": "[Describes human thermoregulation]"
+      },
+      {
+        "name": "Second Law of Thermoregulation",
+        "formula": "Heat gain = Heat loss + Heat storage",
+        "variables": "Heat gain, Heat loss, Heat storage",
+        "units": "W",
+        "notes": "[Describes human thermoregulation]"
+      },
+      {
+        "name": "Heat Transfer Equation",
+        "formula": "Q = mcΔT",
+        "variables": "Q (Heat transferred), m (Mass), c (Specific heat capacity), ΔT (Temperature change)",
+        "units": "J",
+        "notes": "[Used to calculate heat transfer]"
+      },
+      {
+        "name": "Specific Heat Capacity",
+        "formula": "c = Q / (mΔT)",
+        "variables": "c (Specific heat capacity), Q (Heat transferred), m (Mass), ΔT (Temperature change)",
+        "units": "J/kg°C",
+        "notes": "[Used to calculate specific heat capacity]"
+      },
+      {
+        "name": "Heat Loss through Convection",
+        "formula": "Q = hAΔT",
+        "variables": "Q (Heat transferred), h (Convective heat transfer coefficient), A (Surface area), ΔT (Temperature difference)",
+        "units": "W",
+        "notes": "[Used to calculate heat loss through convection]"
+      },
+      {
+        "name": "Heat Loss through Radiation",
+        "formula": "Q = εσA(T1^4 - T2^4)",
+        "variables": "Q (Heat transferred), ε (Emissivity), σ (Stefan-Boltzmann constant), A (Surface area), T1 and T2 (Temperatures)",
+        "units": "W",
+        "notes": "[Used to calculate heat loss through radiation]"
+      },
+      {
+        "name": "Heat Loss through Evaporation",
+        "formula": "Q = mLh",
+        "variables": "Q (Heat transferred), m (Mass of sweat), L (Latent heat of vaporization), h (Heat of vaporization)",
+        "units": "J",
+        "notes": "[Used to calculate heat loss through evaporation]"
+      }
+    ]
+  }
+}

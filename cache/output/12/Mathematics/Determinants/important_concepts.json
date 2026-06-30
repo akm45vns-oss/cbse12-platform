@@ -1,0 +1,53 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Determinants",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:16:17.989Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "Determinant of a 3x3 matrix",
+        "description": "The determinant of a 3x3 matrix can be found using the formula: ad - bc for matrices of the form [[a, b, c], [d, e, f], [g, h, i]]."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Determinant of a matrix is zero if it is singular",
+        "description": "If the determinant of a matrix is zero, it means that the matrix is singular and does not have an inverse."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Properties of Determinants",
+        "description": "Determinants have the following properties: Determinant of a matrix is unchanged if the rows or columns are interchanged. Determinant of a matrix is multiplied by k if a multiple of a row (or column) is added to another row (or column). Determinant of a matrix is multiplied by k if a row (or column) is multiplied by k."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "Mnemonic for the Determinant of a 3x3 matrix",
+        "description": "Mnemonic: Across Down (ad - bc) or ADock (ad - bc)"
+      },
+      {
+        "category": "Common Mistake",
+        "title": "Determinant of a matrix is not affected by the order of operations",
+        "description": "Students often forget that the order of operations does not affect the determinant of a matrix. For example, determinant(a + b) is not equal to determinant(a) + determinant(b)."
+      },
+      {
+        "category": "Units to remember",
+        "title": "Determinant of a Skew-Symmetric Matrix is zero",
+        "description": "The determinant of a skew-symmetric matrix (a matrix whose transpose is equal to its negative) is always zero."
+      },
+      {
+        "category": "Most Important Fact",
+        "title": "Determinant of an upper triangular matrix",
+        "description": "The determinant of an upper triangular matrix is equal to the product of the diagonal elements."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Determinant of a matrix is not affected by elementary row operations",
+        "description": "Determinant of a matrix remains unchanged after applying elementary row operations such as interchanging two rows, multiplying a row by a non-zero constant, or adding a multiple of one row to another row."
+      }
+    ]
+  }
+}

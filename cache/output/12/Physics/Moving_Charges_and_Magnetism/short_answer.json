@@ -1,0 +1,164 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:14:43.941Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the direction of the force experienced by a moving charge in a magnetic field?",
+        "marks": 1,
+        "answer": "The direction of the force experienced by a moving charge in a magnetic field is given by Fleming's left-hand rule. The force is perpendicular to both the direction of motion of the charge and the magnetic field.",
+        "key_points": [
+          "Fleming's left-hand rule",
+          "Perpendicular force"
+        ],
+        "topic": "Magnetic Field and Force"
+      },
+      {
+        "q": "Define the term 'magnetic field' and state its unit.",
+        "marks": 1,
+        "answer": "The magnetic field is a vector field that surrounds a magnet or a current-carrying conductor. The unit of magnetic field is Tesla (T).",
+        "key_points": [
+          "Magnetic field definition",
+          "Tesla unit"
+        ],
+        "topic": "Introduction to Magnetic Field"
+      },
+      {
+        "q": "What is the difference between a paramagnetic and a diamagnetic material?",
+        "marks": 1,
+        "answer": "Paramagnetic materials are weakly attracted to a magnetic field, while diamagnetic materials are weakly repelled by a magnetic field.",
+        "key_points": [
+          "Paramagnetic",
+          "Diamagnetic"
+        ],
+        "topic": "Magnetic Materials"
+      },
+      {
+        "q": "State the principle of a galvanometer.",
+        "marks": 1,
+        "answer": "A galvanometer works on the principle that a current-carrying coil experiences a torque in a magnetic field, causing the coil to rotate.",
+        "key_points": [
+          "Galvanometer principle",
+          "Torque in magnetic field"
+        ],
+        "topic": "Galvanometer"
+      },
+      {
+        "q": "What is the purpose of a shunt in a galvanometer?",
+        "marks": 1,
+        "answer": "A shunt in a galvanometer is used to increase its range by providing an additional path for the current to flow.",
+        "key_points": [
+          "Shunt purpose",
+          "Increasing range"
+        ],
+        "topic": "Galvanometer"
+      },
+      {
+        "q": "Derive an expression for the force experienced by a current-carrying conductor in a magnetic field.",
+        "marks": 2,
+        "answer": "The force experienced by a current-carrying conductor is given by F = BIL sinθ, where F is the force, B is the magnetic field, I is the current, L is the length of the conductor, and θ is the angle between the conductor and the magnetic field.",
+        "key_points": [
+          "Force expression",
+          "Magnetic field and current"
+        ],
+        "topic": "Magnetic Field and Force"
+      },
+      {
+        "q": "Explain the working of an ammeter with a diagram.",
+        "marks": 2,
+        "answer": "An ammeter works by having a low resistance shunt in parallel with a galvanometer. The shunt provides an additional path for the current to flow, allowing the ammeter to measure high currents. The galvanometer measures the small current flowing through it, which is proportional to the total current.",
+        "key_points": [
+          "Ammeter working",
+          "Shunt and galvanometer"
+        ],
+        "topic": "Ammeter"
+      },
+      {
+        "q": "What is the difference between a voltmeter and a galvanometer?",
+        "marks": 2,
+        "answer": "A voltmeter measures the potential difference between two points in a circuit, while a galvanometer measures the current flowing through it. A voltmeter has a high resistance, while a galvanometer has a low resistance.",
+        "key_points": [
+          "Voltmeter vs galvanometer",
+          "Resistance difference"
+        ],
+        "topic": "Voltmeter and Galvanometer"
+      },
+      {
+        "q": "Describe the process of converting a galvanometer into an ammeter.",
+        "marks": 2,
+        "answer": "To convert a galvanometer into an ammeter, a low resistance shunt is connected in parallel with the galvanometer. The shunt provides an additional path for the current to flow, allowing the ammeter to measure high currents.",
+        "key_points": [
+          "Converting galvanometer to ammeter",
+          "Shunt connection"
+        ],
+        "topic": "Ammeter"
+      },
+      {
+        "q": "Explain the principle of a cyclotron with a diagram.",
+        "marks": 2,
+        "answer": "A cyclotron works on the principle that a charged particle moving in a magnetic field experiences a force perpendicular to its motion, causing it to move in a circular path. The cyclotron uses a magnetic field to accelerate charged particles to high speeds.",
+        "key_points": [
+          "Cyclotron principle",
+          "Magnetic field and acceleration"
+        ],
+        "topic": "Cyclotron"
+      },
+      {
+        "q": "Derive an expression for the magnetic field at the center of a circular coil carrying a current.",
+        "marks": 3,
+        "answer": "The magnetic field at the center of a circular coil is given by B = μ₀nI / 2r, where B is the magnetic field, μ₀ is the permeability of free space, n is the number of turns, I is the current, and r is the radius of the coil.",
+        "key_points": [
+          "Magnetic field expression",
+          "Circular coil"
+        ],
+        "topic": "Magnetic Field"
+      },
+      {
+        "q": "Explain the concept of torque experienced by a current-carrying coil in a magnetic field.",
+        "marks": 3,
+        "answer": "The torque experienced by a current-carrying coil in a magnetic field is given by τ = nBIA sinθ, where τ is the torque, n is the number of turns, B is the magnetic field, I is the current, A is the area of the coil, and θ is the angle between the coil and the magnetic field.",
+        "key_points": [
+          "Torque concept",
+          "Magnetic field and current"
+        ],
+        "topic": "Magnetic Field and Torque"
+      },
+      {
+        "q": "Describe the working of a galvanometer as an electromagnet.",
+        "marks": 3,
+        "answer": "A galvanometer works as an electromagnet by using a coil of wire wrapped around a soft iron core. When a current flows through the coil, it generates a magnetic field, causing the coil to rotate. The rotation is proportional to the current, allowing the galvanometer to measure the current.",
+        "key_points": [
+          "Galvanometer as electromagnet",
+          "Coil and soft iron core"
+        ],
+        "topic": "Galvanometer"
+      },
+      {
+        "q": "Explain the concept of magnetic dipole moment and its relation to the magnetic field.",
+        "marks": 3,
+        "answer": "The magnetic dipole moment is a measure of the strength of a magnet. It is related to the magnetic field by the equation B = μ₀m / 4πr³, where B is the magnetic field, μ₀ is the permeability of free space, m is the magnetic dipole moment, and r is the distance from the dipole.",
+        "key_points": [
+          "Magnetic dipole moment",
+          "Magnetic field relation"
+        ],
+        "topic": "Magnetic Field and Dipole Moment"
+      },
+      {
+        "q": "Derive an expression for the magnetic field due to a long straight wire carrying a current.",
+        "marks": 3,
+        "answer": "The magnetic field due to a long straight wire is given by B = μ₀I / 2πr, where B is the magnetic field, μ₀ is the permeability of free space, I is the current, and r is the distance from the wire.",
+        "key_points": [
+          "Magnetic field expression",
+          "Long straight wire"
+        ],
+        "topic": "Magnetic Field"
+      }
+    ],
+    "total": 15
+  }
+}

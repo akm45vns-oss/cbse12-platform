@@ -1,0 +1,185 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:27:09.564Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a relation? Give an example.",
+        "marks": 1,
+        "answer": "A relation is a set of ordered pairs. For example, a relation R on the set A = {1, 2, 3} defined by R = {(1, 2), (2, 3), (3, 1)} is a relation.",
+        "key_points": [
+          "Relation is a set of ordered pairs",
+          "Example: R = {(1, 2), (2, 3), (3, 1)}"
+        ],
+        "topic": "Introduction to Relations"
+      },
+      {
+        "q": "What are the different types of relations?",
+        "marks": 1,
+        "answer": "The different types of relations are reflexive, symmetric, transitive, and equivalence relations.",
+        "key_points": [
+          "Reflexive relation",
+          "Symmetric relation",
+          "Transitive relation",
+          "Equivalence relation"
+        ],
+        "topic": "Types of Relations"
+      },
+      {
+        "q": "Define a function. Give an example.",
+        "marks": 1,
+        "answer": "A function is a relation from a set A to a set B such that every element of A has exactly one image in B. For example, let f: R → R be defined by f(x) = x^2. Then f is a function.",
+        "key_points": [
+          "Function is a relation from A to B",
+          "Example: f(x) = x^2"
+        ],
+        "topic": "Introduction to Functions"
+      },
+      {
+        "q": "What is the difference between a function and a relation?",
+        "marks": 1,
+        "answer": "A relation is a set of ordered pairs, whereas a function is a relation from a set A to a set B such that every element of A has exactly one image in B.",
+        "key_points": [
+          "Relation is a set of ordered pairs",
+          "Function is a relation with unique image"
+        ],
+        "topic": "Functions vs Relations"
+      },
+      {
+        "q": "What is the domain and range of a function? Give an example.",
+        "marks": 1,
+        "answer": "The domain of a function is the set of all input values, while the range is the set of all possible output values. For example, let f: R → R be defined by f(x) = x^2. Then the domain is R and the range is [0, ∞).",
+        "key_points": [
+          "Domain of a function",
+          "Range of a function",
+          "Example: f(x) = x^2"
+        ],
+        "topic": "Domain and Range of a Function"
+      },
+      {
+        "q": "What is the difference between the domain and range of a function?",
+        "marks": 1,
+        "answer": "The domain is the set of all input values, whereas the range is the set of all possible output values.",
+        "key_points": [
+          "Domain is input values",
+          "Range is output values"
+        ],
+        "topic": "Domain and Range"
+      },
+      {
+        "q": "Define the composition of two functions. Give an example.",
+        "marks": 1,
+        "answer": "The composition of two functions f and g is defined as (f ∘ g)(x) = f(g(x)). For example, let f: R → R and g: R → R be defined by f(x) = 2x and g(x) = x + 1. Then (f ∘ g)(x) = f(g(x)) = 2(x + 1) = 2x + 2.",
+        "key_points": [
+          "Composition of functions",
+          "Example: (f ∘ g)(x) = 2x + 2"
+        ],
+        "topic": "Composition of Functions"
+      },
+      {
+        "q": "What are the different types of functions? Give examples.",
+        "marks": 2,
+        "answer": "The different types of functions are one-one (injective), onto (surjective), and bijective functions. Examples include one-one functions like f(x) = x^2 and onto functions like f(x) = x.",
+        "key_points": [
+          "One-one function",
+          "Onto function",
+          "Bijective function",
+          "Examples: f(x) = x^2, f(x) = x"
+        ],
+        "topic": "Types of Functions"
+      },
+      {
+        "q": "What is the difference between an injective and surjective function? Give examples.",
+        "marks": 2,
+        "answer": "An injective function is one-one, whereas a surjective function is onto. An example of an injective function is f(x) = x^2, while an example of a surjective function is f(x) = x.",
+        "key_points": [
+          "Injective function",
+          "Surjective function",
+          "Examples: f(x) = x^2, f(x) = x"
+        ],
+        "topic": "Injective and Surjective Functions"
+      },
+      {
+        "q": "What is the inverse of a function? Give an example.",
+        "marks": 2,
+        "answer": "The inverse of a function f is denoted by f^(-1) and is defined as a function that undoes the action of f. For example, the inverse of f(x) = 2x is f^(-1)(x) = x/2.",
+        "key_points": [
+          "Inverse of a function",
+          "Example: f^(-1)(x) = x/2"
+        ],
+        "topic": "Inverse of a Function"
+      },
+      {
+        "q": "What is the difference between the domain and range of an inverse function?",
+        "marks": 2,
+        "answer": "The domain of an inverse function is the range of the original function, while the range of an inverse function is the domain of the original function.",
+        "key_points": [
+          "Domain of inverse function",
+          "Range of inverse function"
+        ],
+        "topic": "Domain and Range of Inverse Function"
+      },
+      {
+        "q": "Define the identity function. Give an example.",
+        "marks": 2,
+        "answer": "The identity function is a function f: A → A defined by f(x) = x for all x in A. For example, the identity function on the set of real numbers is f(x) = x.",
+        "key_points": [
+          "Identity function",
+          "Example: f(x) = x"
+        ],
+        "topic": "Identity Function"
+      },
+      {
+        "q": "What is the difference between an identity function and a constant function? Give examples.",
+        "marks": 3,
+        "answer": "An identity function is a function f: A → A defined by f(x) = x for all x in A, while a constant function is a function f: A → B defined by f(x) = c for all x in A, where c is a constant. An example of an identity function is f(x) = x, while an example of a constant function is f(x) = 2.",
+        "key_points": [
+          "Identity function",
+          "Constant function",
+          "Examples: f(x) = x, f(x) = 2"
+        ],
+        "topic": "Identity and Constant Functions"
+      },
+      {
+        "q": "What are the different types of binary operations? Give examples.",
+        "marks": 3,
+        "answer": "The different types of binary operations are binary relations, binary functions, and binary operations. Examples include binary relations like R = {(1, 2), (2, 3), (3, 1)}, binary functions like f(x) = 2x, and binary operations like addition and multiplication.",
+        "key_points": [
+          "Binary relation",
+          "Binary function",
+          "Binary operation",
+          "Examples: R = {(1, 2), (2, 3), (3, 1)}, f(x) = 2x, addition, multiplication"
+        ],
+        "topic": "Types of Binary Operations"
+      },
+      {
+        "q": "What is the difference between a binary relation and a binary function? Give examples.",
+        "marks": 3,
+        "answer": "A binary relation is a relation between two sets, while a binary function is a function from one set to another. An example of a binary relation is R = {(1, 2), (2, 3), (3, 1)}, while an example of a binary function is f(x) = 2x.",
+        "key_points": [
+          "Binary relation",
+          "Binary function",
+          "Examples: R = {(1, 2), (2, 3), (3, 1)}, f(x) = 2x"
+        ],
+        "topic": "Binary Relation and Binary Function"
+      },
+      {
+        "q": "What is the difference between a binary operation and a binary function? Give examples.",
+        "marks": 3,
+        "answer": "A binary operation is an operation that takes two elements as input and produces a single element as output, while a binary function is a function from one set to another. An example of a binary operation is addition, while an example of a binary function is f(x) = 2x.",
+        "key_points": [
+          "Binary operation",
+          "Binary function",
+          "Examples: addition, f(x) = 2x"
+        ],
+        "topic": "Binary Operation and Binary Function"
+      }
+    ],
+    "total": 16
+  }
+}

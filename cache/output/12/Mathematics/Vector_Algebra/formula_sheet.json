@@ -1,0 +1,20 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Vector Algebra",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:17:31.168Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Content",
+        "formula": "Here is the complete formula sheet for CBSE Class 12 Mathematics - Vector Algebra:\n\n[\n  {\n    \"name\": \"Position Vector\",\n    \"formula\": \"\\\\vec{a} = x\\\\hat{i} + y\\\\hat{j} + z\\\\hat{k}\",\n    \"variables\": \"x, y, z are components of the vector. \\\\hat{i}, \\\\hat{j}, \\\\hat{k} are unit vectors along x, y, z axes.\",\n    \"units\": \"No units\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Magnitude of a Vector\",\n    \"formula\": \"|\\vec{a}| = \\sqrt{x^2 + y^2 + z^2}\",\n    \"variables\": \"x, y, z are components of the vector.\",\n    \"units\": \"Meters (m)\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Unit Vector\",\n    \"formula\": \"\\\\hat{a} = \\frac{\\vec{a}}{|\\vec{a}|}\",\n    \"variables\": \"\\\\vec{a} is a given vector.\",\n    \"units\": \"No units\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Vector Addition\",\n    \"formula\": \"\\\\vec{a} + \\\\vec{b} = (a_1 + b_1)\\\\hat{i} + (a_2 + b_2)\\\\hat{j} + (a_3 + b_3)\\\\hat{k}\",\n    \"variables\": \"\\\\vec{a} = a_1\\\\hat{i} + a_2\\\\hat{j} + a_3\\\\hat{k}, \\\\vec{b} = b_1\\\\hat{i} + b_2\\\\hat{j} + b_3\\\\hat{k}\",\n    \"units\": \"No units\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Scalar Multiplication\",\n    \"formula\": \"c\\vec{a} = c(a_1\\\\hat{i} + a_2\\\\hat{j} + a_3\\\\hat{k}) = ca_1\\\\hat{i} + ca_2\\\\hat{j} + ca_3\\\\hat{k}\",\n    \"variables\": \"c is a scalar and \\\\vec{a} is a vector.\",\n    \"units\": \"No units\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Dot Product\",\n    \"formula\": \"\\\\vec{a} \\cdot \\\\vec{b} = a_1b_1 + a_2b_2 + a_3b_3\",\n    \"variables\": \"\\\\vec{a} = a_1\\\\hat{i} + a_2\\\\hat{j} + a_3\\\\hat{k}, \\\\vec{b} = b_1\\\\hat{i} + b_2\\\\hat{j} + b_3\\\\hat{k}\",\n    \"units\": \"No units\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Cross Product\",\n    \"formula\": \"\\\\vec{a} \\times \\\\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ a_1 & a_2 & a_3 \\\\ b_1 & b_2 & b_3 \\end{vmatrix}\",\n    \"variables\": \"\\\\vec{a} = a_1\\\\hat{i} + a_2\\\\hat{j} + a_3\\\\hat{k}, \\\\vec{b} = b_1\\\\hat{i} + b_2\\\\hat{j} + b_3\\\\hat{k}\",\n    \"units\": \"No units\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Vector Triple Product\",\n    \"formula\": \"\\\\vec{a} \\times (\\vec{b} \\times \\vec{c}) = \\vec{b}(\\vec{a} \\cdot \\vec{c}) - \\vec{c}(\\vec{a} \\cdot \\vec{b})\",\n    \"variables\": \"\\\\vec{a}, \\\\vec{b}, \\\\vec{c} are vectors.\",\n    \"units\": \"No units\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Parallelogram Law of Vector Addition\",\n    \"formula\": \"\\\\vec{a} + \\\\vec{b} = \\\\vec{c} \\\\iff \\\\text{Area of parallelogram} = |\\vec{c}|^2 = |\\vec{a}|^2 + |\\vec{b}|^2 + 2\\vec{a} \\cdot \\vec{b}\",\n    \"variables\": \"\\\\vec{a}, \\\\vec{b}, \\\\vec{c} are vectors.\",\n    \"units\": \"No units\",\n    \"notes\": \"\"\n  },\n  {\n    \"name\": \"Triangle Law of Vector Addition\",\n    \"formula\": \"\\\\vec{a} + \\\\vec{b} = \\\\vec{c} \\\\iff |\\vec{c}|^2 = |\\vec{a}|^2 + |\\vec{b}|^2 - 2\\vec{a} \\cdot \\vec{b}\",\n    \"variables\": \"\\\\vec{a}, \\\\vec{b}, \\\\vec{c} are vectors.\",\n    \"units\": \"No units\",\n    \"notes\": \"\"\n  }\n]",
+        "variables": "",
+        "units": "",
+        "notes": ""
+      }
+    ]
+  }
+}

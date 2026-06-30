@@ -1,0 +1,90 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:58:21.763Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the difference between a relation and a function. Discuss its domains and ranges. Also, illustrate with suitable examples.",
+        "marks": 5,
+        "answer": "A relation is a set of ordered pairs, whereas a function is a relation in which each element of the domain has a unique image in the range. The domain of a relation is the set of all first elements of the ordered pairs, and the range is the set of all second elements. For a function, the domain and range are denoted by D(f) and R(f) respectively. For example, let f = {(1, 2), (2, 3), (3, 4)} be a function. Here, the domain D(f) = {1, 2, 3} and the range R(f) = {2, 3, 4}.",
+        "marking_scheme": [
+          "Understanding the difference between a relation and a function (1 mark)",
+          "Domain and range of a relation and function (1 mark)",
+          "Example of a function with domain and range (1 mark)",
+          "Explanation of domain and range in the context of a function (2 marks)"
+        ],
+        "topic": "Functions",
+        "is_numerical": false
+      },
+      {
+        "q": "If f: N → N, f(x) = 3x^2 + 2x − 5, find (i) f(4) (ii) f(−2) (iii) f(0).",
+        "marks": 5,
+        "answer": "To find f(4), we substitute x = 4 in the given function. f(4) = 3(4)^2 + 2(4) − 5 = 3(16) + 8 - 5 = 48 + 8 - 5 = 51. To find f(-2), we substitute x = -2 in the given function. f(-2) = 3(-2)^2 + 2(-2) − 5 = 3(4) - 4 - 5 = 12 - 4 - 5 = 3. To find f(0), we substitute x = 0 in the given function. f(0) = 3(0)^2 + 2(0) − 5 = 3(0) + 0 - 5 = -5.",
+        "marking_scheme": [
+          "Calculation of f(4) (1 mark)",
+          "Calculation of f(-2) (1 mark)",
+          "Calculation of f(0) (1 mark)",
+          "Explanation of the results obtained (2 marks)"
+        ],
+        "topic": "Functions",
+        "is_numerical": true
+      },
+      {
+        "q": "Let f: R → R be given by f(x) = 2x − 5. Show that f is one-one and onto.",
+        "marks": 5,
+        "answer": "To show that f is one-one, we need to show that f(x1) = f(x2) implies x1 = x2. Let f(x1) = f(x2). Then, 2x1 - 5 = 2x2 - 5. Adding 5 to both sides, we get 2x1 = 2x2. Dividing both sides by 2, we get x1 = x2. Hence, f is one-one. To show that f is onto, we need to show that for every y in R, there exists an x in R such that f(x) = y. Let y be any real number. Then, f(x) = y implies 2x - 5 = y. Adding 5 to both sides, we get 2x = y + 5. Dividing both sides by 2, we get x = (y + 5)/2. Hence, for every y in R, there exists an x = (y + 5)/2 in R such that f(x) = y. Hence, f is onto.",
+        "marking_scheme": [
+          "Proof that f is one-one (2 marks)",
+          "Proof that f is onto (2 marks)",
+          "Explanation of the results obtained (1 mark)"
+        ],
+        "topic": "Functions",
+        "is_numerical": false
+      },
+      {
+        "q": "If f(x) = (3x + 1)/(2x + 1), find f(f(x)).",
+        "marks": 5,
+        "answer": "To find f(f(x)), we substitute f(x) in place of x in the given function. f(f(x)) = (3((3x + 1)/(2x + 1)) + 1)/(2((3x + 1)/(2x + 1)) + 1). To simplify this expression, we multiply the numerator and denominator by (2x + 1). f(f(x)) = ((3(3x + 1) + (2x + 1))/(2x + 1))/((2(3x + 1) + (2x + 1))/(2x + 1)). f(f(x)) = ((9x + 3 + 2x + 1))/(2x + 1))/((6x + 2 + 2x + 1))/(2x + 1)). f(f(x)) = ((11x + 4))/(8x + 3)).",
+        "marking_scheme": [
+          "Calculation of f(f(x)) (2 marks)",
+          "Simplification of the expression (2 marks)",
+          "Explanation of the results obtained (1 mark)"
+        ],
+        "topic": "Functions",
+        "is_numerical": true
+      },
+      {
+        "q": "If f(x) = (x^2 - 1)/(x + 1), find (i) f(-1) (ii) f(0) (iii) f(1).",
+        "marks": 5,
+        "answer": "To find f(-1), we substitute x = -1 in the given function. f(-1) = ((-1)^2 - 1)/((-1) + 1) = (1 - 1)/(0) which is undefined. To find f(0), we substitute x = 0 in the given function. f(0) = (0^2 - 1)/(0 + 1) = (-1)/1 = -1. To find f(1), we substitute x = 1 in the given function. f(1) = (1^2 - 1)/(1 + 1) = (1 - 1)/(2) = 0/2 = 0.",
+        "marking_scheme": [
+          "Calculation of f(-1) (1 mark)",
+          "Calculation of f(0) (1 mark)",
+          "Calculation of f(1) (1 mark)",
+          "Explanation of the results obtained (2 marks)"
+        ],
+        "topic": "Functions",
+        "is_numerical": true
+      },
+      {
+        "q": "Let f: R → R be given by f(x) = 2x + 1 and g(x) = x^2. Find (i) (f + g)(x) (ii) (f - g)(x) (iii) (f ∘ g)(x).",
+        "marks": 5,
+        "answer": "To find (f + g)(x), we add f(x) and g(x). (f + g)(x) = f(x) + g(x) = 2x + 1 + x^2 = x^2 + 2x + 1. To find (f - g)(x), we subtract g(x) from f(x). (f - g)(x) = f(x) - g(x) = 2x + 1 - x^2 = -x^2 + 2x + 1. To find (f ∘ g)(x), we substitute g(x) in place of x in f(x). (f ∘ g)(x) = f(g(x)) = f(x^2) = 2(x^2) + 1 = 2x^2 + 1.",
+        "marking_scheme": [
+          "Calculation of (f + g)(x) (1 mark)",
+          "Calculation of (f - g)(x) (1 mark)",
+          "Calculation of (f ∘ g)(x) (1 mark)",
+          "Explanation of the results obtained (2 marks)"
+        ],
+        "topic": "Functions",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Exception Handling",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:31:38.788Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is Exception Handling in Java?",
+        "marks": 1,
+        "answer": "Exception Handling in Java is a mechanism to handle runtime errors or exceptions that occur during the execution of a program.",
+        "key_points": [
+          "It prevents the program from crashing.",
+          "It provides information about the error."
+        ],
+        "topic": "Introduction"
+      },
+      {
+        "q": "What is the purpose of try block in Exception Handling?",
+        "marks": 1,
+        "answer": "The try block contains the code that may raise an exception. It provides a block of code where we can handle the exception.",
+        "key_points": [
+          "It contains the code that may raise an exception.",
+          "It is used to handle the exception."
+        ],
+        "topic": "Try Block"
+      },
+      {
+        "q": "What is the purpose of catch block in Exception Handling?",
+        "marks": 1,
+        "answer": "The catch block contains the code that will be executed if an exception is raised in the try block.",
+        "key_points": [
+          "It contains the code that will be executed if an exception is raised.",
+          "It is used to handle the exception."
+        ],
+        "topic": "Catch Block"
+      },
+      {
+        "q": "What is finally block in Exception Handling?",
+        "marks": 1,
+        "answer": "The finally block contains the code that will be executed regardless of whether an exception is raised or not.",
+        "key_points": [
+          "It contains the code that will be executed regardless of whether an exception is raised or not.",
+          "It is used to release system resources."
+        ],
+        "topic": "Finally Block"
+      },
+      {
+        "q": "What is the difference between checked and unchecked exceptions in Java?",
+        "marks": 1,
+        "answer": "Checked exceptions are those that can be caught and handled at compile time, while unchecked exceptions are those that cannot be caught and handled at compile time.",
+        "key_points": [
+          "Checked exceptions are those that can be caught and handled at compile time.",
+          "Unchecked exceptions are those that cannot be caught and handled at compile time."
+        ],
+        "topic": "Checked and Unchecked Exceptions"
+      },
+      {
+        "q": "What are the types of exceptions in Java?",
+        "marks": 1,
+        "answer": "The types of exceptions in Java are runtime exceptions and checked exceptions.",
+        "key_points": [
+          "Runtime exceptions are those that occur at runtime.",
+          "Checked exceptions are those that can be caught and handled at compile time."
+        ],
+        "topic": "Types of Exceptions"
+      },
+      {
+        "q": "What is the purpose of throws keyword in Java?",
+        "marks": 1,
+        "answer": "The throws keyword is used to declare that a method may throw a particular type of exception.",
+        "key_points": [
+          "It is used to declare that a method may throw a particular type of exception.",
+          "It is used to declare that a method may throw multiple types of exceptions."
+        ],
+        "topic": "Throws Keyword"
+      },
+      {
+        "q": "How to handle multiple exceptions in Java?",
+        "marks": 2,
+        "answer": "To handle multiple exceptions in Java, we can use multiple catch blocks or a single catch block with a parameterized type.",
+        "key_points": [
+          "We can use multiple catch blocks to handle multiple exceptions.",
+          "We can use a single catch block with a parameterized type to handle multiple exceptions."
+        ],
+        "topic": "Handling Multiple Exceptions"
+      },
+      {
+        "q": "What is the order of execution of try, catch, and finally blocks in Java?",
+        "marks": 2,
+        "answer": "The order of execution of try, catch, and finally blocks in Java is try, catch, and finally.",
+        "key_points": [
+          "Try block is executed first.",
+          "Catch block is executed if an exception is raised.",
+          "Finally block is executed regardless of whether an exception is raised or not."
+        ],
+        "topic": "Order of Execution"
+      },
+      {
+        "q": "How to rethrow an exception in Java?",
+        "marks": 2,
+        "answer": "To rethrow an exception in Java, we can use the throw keyword inside the catch block.",
+        "key_points": [
+          "We can use the throw keyword to rethrow an exception.",
+          "We can use a rethrow method to rethrow an exception."
+        ],
+        "topic": "Rethrowing Exceptions"
+      },
+      {
+        "q": "What is the difference between checked and unchecked exceptions in terms of compilation?",
+        "marks": 2,
+        "answer": "Checked exceptions must be caught and handled at compile time, while unchecked exceptions do not need to be caught and handled at compile time.",
+        "key_points": [
+          "Checked exceptions must be caught and handled at compile time.",
+          "Unchecked exceptions do not need to be caught and handled at compile time."
+        ],
+        "topic": "Checked and Unchecked Exceptions"
+      },
+      {
+        "q": "How to handle a custom exception in Java?",
+        "marks": 3,
+        "answer": "To handle a custom exception in Java, we can create a custom exception class that extends the Exception class and throw it in the catch block.",
+        "key_points": [
+          "We can create a custom exception class that extends the Exception class.",
+          "We can throw the custom exception in the catch block."
+        ],
+        "topic": "Handling Custom Exceptions"
+      },
+      {
+        "q": "What is the difference between checked and unchecked exceptions in terms of runtime behavior?",
+        "marks": 3,
+        "answer": "Checked exceptions are caught and handled at runtime, while unchecked exceptions are not caught and handled at runtime.",
+        "key_points": [
+          "Checked exceptions are caught and handled at runtime.",
+          "Unchecked exceptions are not caught and handled at runtime."
+        ],
+        "topic": "Checked and Unchecked Exceptions"
+      },
+      {
+        "q": "How to handle multiple exceptions with different types of exceptions in Java?",
+        "marks": 3,
+        "answer": "To handle multiple exceptions with different types of exceptions in Java, we can use multiple catch blocks with different types of exceptions.",
+        "key_points": [
+          "We can use multiple catch blocks with different types of exceptions.",
+          "We can use a single catch block with a parameterized type to handle multiple exceptions."
+        ],
+        "topic": "Handling Multiple Exceptions"
+      },
+      {
+        "q": "What is the purpose of try-with-resources statement in Java?",
+        "marks": 3,
+        "answer": "The try-with-resources statement is used to automatically close resources such as streams, sockets, and files.",
+        "key_points": [
+          "It is used to automatically close resources.",
+          "It is used to prevent resource leaks."
+        ],
+        "topic": "Try-with-Resources Statement"
+      },
+      {
+        "q": "How to handle a runtime exception in Java?",
+        "marks": 3,
+        "answer": "To handle a runtime exception in Java, we can use a try-catch block and catch the runtime exception in the catch block.",
+        "key_points": [
+          "We can use a try-catch block to handle a runtime exception.",
+          "We can catch the runtime exception in the catch block."
+        ],
+        "topic": "Handling Runtime Exceptions"
+      }
+    ],
+    "total": 16
+  }
+}

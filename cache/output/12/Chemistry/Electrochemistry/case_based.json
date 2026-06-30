@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Electrochemistry",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:16:00.626Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The zinc-carbon battery is a type of primary cell battery that is widely used in low-drain devices such as clocks, remote controls, and toys. It consists of a zinc anode and a manganese dioxide cathode separated by an electrolyte. When the battery is connected to a circuit, the zinc anode undergoes oxidation, releasing electrons that flow through the external circuit, ultimately resulting in the reduction of manganese dioxide at the cathode. The battery's potential is approximately 1.5 volts and it can provide a current of up to 10 milliamperes. However, the battery's lifespan is limited due to the continuous oxidation of the zinc anode.",
+        "questions": [
+          {
+            "q": "What is the function of the zinc anode in a zinc-carbon battery?",
+            "opts": [
+              "(A) It undergoes reduction to release electrons.",
+              "(B) It undergoes oxidation to release electrons.",
+              "(C) It acts as a catalyst.",
+              "(D) It stores electrical energy."
+            ],
+            "ans": "B",
+            "explanation": "In a zinc-carbon battery, the zinc anode undergoes oxidation to release electrons, which flow through the external circuit."
+          },
+          {
+            "q": "What is the result of the reduction of manganese dioxide at the cathode in a zinc-carbon battery?",
+            "opts": [
+              "(A) Release of electrons.",
+              "(B) Flow of electrons through the external circuit.",
+              "(C) Storage of electrical energy.",
+              "(D) Reduction of manganese dioxide at the cathode."
+            ],
+            "ans": "D",
+            "explanation": "The reduction of manganese dioxide at the cathode results in the storage of electrical energy in the battery."
+          },
+          {
+            "q": "What is the approximate potential of a zinc-carbon battery?",
+            "opts": [
+              "(A) 0.5 volts",
+              "(B) 1.0 volts",
+              "(C) 1.5 volts",
+              "(D) 2.0 volts"
+            ],
+            "ans": "C",
+            "explanation": "The potential of a zinc-carbon battery is approximately 1.5 volts."
+          },
+          {
+            "q": "Why does the lifespan of a zinc-carbon battery decrease over time?",
+            "opts": [
+              "(A) Due to the continuous reduction of manganese dioxide.",
+              "(B) Due to the continuous oxidation of the zinc anode.",
+              "(C) Due to the flow of electrons through the external circuit.",
+              "(D) Due to the storage of electrical energy."
+            ],
+            "ans": "B",
+            "explanation": "The lifespan of a zinc-carbon battery decreases over time due to the continuous oxidation of the zinc anode."
+          },
+          {
+            "q": "What is the typical current provided by a zinc-carbon battery?",
+            "opts": [
+              "(A) 1 milliamperes",
+              "(B) 5 milliamperes",
+              "(C) 10 milliamperes",
+              "(D) 20 milliamperes"
+            ],
+            "ans": "C",
+            "explanation": "A zinc-carbon battery can provide a current of up to 10 milliamperes."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "The electrolysis of water is a process in which an electric current is passed through water to split it into its components, hydrogen and oxygen. This process is often used to produce hydrogen gas, which is a clean-burning fuel. The electrolysis of water involves the oxidation of water at the anode, resulting in the production of oxygen gas, and the reduction of water at the cathode, resulting in the production of hydrogen gas. The overall reaction is 2H2O → 2H2 + O2.",
+        "questions": [
+          {
+            "q": "What is the result of the oxidation of water at the anode in the electrolysis of water?",
+            "opts": [
+              "(A) Production of hydrogen gas.",
+              "(B) Production of oxygen gas.",
+              "(C) Storage of electrical energy.",
+              "(D) Flow of electrons through the external circuit."
+            ],
+            "ans": "B",
+            "explanation": "The oxidation of water at the anode results in the production of oxygen gas."
+          },
+          {
+            "q": "What is the result of the reduction of water at the cathode in the electrolysis of water?",
+            "opts": [
+              "(A) Production of oxygen gas.",
+              "(B) Production of hydrogen gas.",
+              "(C) Storage of electrical energy.",
+              "(D) Flow of electrons through the external circuit."
+            ],
+            "ans": "B",
+            "explanation": "The reduction of water at the cathode results in the production of hydrogen gas."
+          },
+          {
+            "q": "What is the overall reaction of the electrolysis of water?",
+            "opts": [
+              "(A) 2H2O → H2 + O2",
+              "(B) 2H2O → 2H2 + O2",
+              "(C) H2O → H2 + O2",
+              "(D) H2O → H2 + H2"
+            ],
+            "ans": "B",
+            "explanation": "The overall reaction of the electrolysis of water is 2H2O → 2H2 + O2."
+          },
+          {
+            "q": "What is the purpose of electrolysis of water?",
+            "opts": [
+              "(A) To produce oxygen gas.",
+              "(B) To produce hydrogen gas.",
+              "(C) To store electrical energy.",
+              "(D) To flow electrons through the external circuit."
+            ],
+            "ans": "B",
+            "explanation": "The purpose of electrolysis of water is to produce hydrogen gas, which is a clean-burning fuel."
+          },
+          {
+            "q": "What is the type of reaction that occurs during the electrolysis of water?",
+            "opts": [
+              "(A) Combination reaction.",
+              "(B) Decomposition reaction.",
+              "(C) Displacement reaction.",
+              "(D) Double displacement reaction."
+            ],
+            "ans": "B",
+            "explanation": "The electrolysis of water is an example of a decomposition reaction, where water is split into its components, hydrogen and oxygen."
+          }
+        ]
+      }
+    ]
+  }
+}

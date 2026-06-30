@@ -1,0 +1,20 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Integrals",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:16:58.510Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Content",
+        "formula": "Since you didn't specify the particular chapter of Integrals in CBSE Class 12 Mathematics, I'm assuming you're referring to the chapter 'Definite Integrals'. Here's the formula sheet in JSON array format:\n\n[\n  {\n    \"name\": \"Definite Integral\",\n    \"formula\": \"\\\\int_a^b f(x) dx\",\n    \"variables\": \"f(x) - function, a - lower limit, b - upper limit\",\n    \"units\": \"N/A\",\n    \"notes\": \"Used to find the area under a curve between limits a and b\"\n  },\n  {\n    \"name\": \"Fundamental Theorem of Calculus (Part I)\",\n    \"formula\": \"\\\\int_a^b f(x) dx = F(b) - F(a)\",\n    \"variables\": \"f(x) - function, a - lower limit, b - upper limit, F(x) - antiderivative of f(x)\",\n    \"units\": \"N/A\",\n    \"notes\": \"Used to evaluate definite integrals\"\n  },\n  {\n    \"name\": \"Fundamental Theorem of Calculus (Part II)\",\n    \"formula\": \"\\\\frac{d}{dx} \\\\int_a^x f(t) dt = f(x)\",\n    \"variables\": \"f(x) - function, a - constant, x - variable of differentiation\",\n    \"units\": \"N/A\",\n    \"notes\": \"Used to derive derivative of an integral\"\n  },\n  {\n    \"name\": \"Integration by Substitution\",\n    \"formula\": \"\\\\int f(g(x)) g'(x) dx = \\\\int f(u) du = F(u) + C\",\n    \"variables\": \"f(x) - function, g(x) - substitution function, u - substitution variable, F(u) - antiderivative of f(u)\",\n    \"units\": \"N/A\",\n    \"notes\": \"Used to integrate functions by substituting a variable\"\n  },\n  {\n    \"name\": \"Integration by Parts\",\n    \"formula\": \"\\\\int u dv = uv - \\\\int v du\",\n    \"variables\": \"u, v - functions, du, dv - differentials\",\n    \"units\": \"N/A\",\n    \"notes\": \"Used to integrate product of two functions\"\n  },\n  {\n    \"name\": \"Definite Integral using Tabular Method\",\n    \"formula\": \"Using a table to evaluate definite integrals\",\n    \"variables\": \"f(x) - function, a - lower limit, b - upper limit\",\n    \"units\": \"N/A\",\n    \"notes\": \"Used to evaluate definite integrals using a table\"\n  },\n  {\n    \"name\": \"Definite Integral of Trigonometric Functions\",\n    \"formula\": \"\\\\int \\\\sin^2 x dx = \\\\frac{x}{2} - \\\\frac{1}{4} \\sin 2x + C\",\n    \"\\\\int \\\\cos^2 x dx = \\\\frac{x}{2} + \\\\frac{1}{4} \\sin 2x + C\",\n    \"\\\\int \\\\sin ax dx = -\\\\frac{1}{a} \\cos ax + C\",\n    \"\\\\int \\\\cos ax dx = \\\\frac{1}{a} \\sin ax + C\"\n    \"variables\": \"x - variable, a - constant\",\n    \"units\": \"N/A\",\n    \"notes\": \"Used to integrate trigonometric functions\"\n  },\n  {\n    \"name\": \"Definite Integral of Exponential and Logarithmic Functions\",\n    \"formula\": \"\\\\int e^x dx = e^x + C\",\n    \"\\\\int a^x dx = \\\\frac{a^x}{\\\\ln a} + C\",\n    \"\\\\int \\\\log x dx = x \\log x - x + C\"\n    \"variables\": \"x - variable, a - constant\",\n    \"units\": \"N/A\",\n    \"notes\": \"Used to integrate exponential and logarithmic functions\"\n  }\n]",
+        "variables": "",
+        "units": "",
+        "notes": ""
+      }
+    ]
+  }
+}

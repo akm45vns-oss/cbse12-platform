@@ -1,0 +1,108 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:18:40.681Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Function",
+        "definition": "A block of code that can be executed multiple times from different parts of the program, with its own input and output.",
+        "example": "A function to calculate the area of a circle."
+      },
+      {
+        "term": "Argument",
+        "definition": "The input values or parameters passed to a function when it is called.",
+        "example": "In the function to calculate the area of a circle, the radius is an argument."
+      },
+      {
+        "term": "Parameter",
+        "definition": "The variables in the function definition that can be used to customize the function's behavior.",
+        "example": "In the function to calculate the area of a circle, the parameter is radius."
+      },
+      {
+        "term": "Return Type",
+        "definition": "The data type of the value returned by a function.",
+        "example": "The return type of the function to calculate the area of a circle is float."
+      },
+      {
+        "term": "Return Statement",
+        "definition": "A statement in a function that specifies the value to be returned when the function is called.",
+        "example": "The return statement in the function to calculate the area of a circle returns the calculated area."
+      },
+      {
+        "term": "Local Variable",
+        "definition": "A variable that is defined within a function and is accessible only within that function.",
+        "example": "In the function to calculate the area of a circle, the variable 'pi' is a local variable."
+      },
+      {
+        "term": "Global Variable",
+        "definition": "A variable that is defined outside a function and is accessible from anywhere in the program.",
+        "example": "The variable 'pi' is a global variable if it is defined outside the function to calculate the area of a circle."
+      },
+      {
+        "term": "Function Call",
+        "definition": "The process of invoking a function by its name, along with the necessary arguments.",
+        "example": "Calling the function to calculate the area of a circle with a radius of 5."
+      },
+      {
+        "term": "Function Prototype",
+        "definition": "A statement in C++ that declares the function's return type, name, and parameters.",
+        "example": "The function prototype for the function to calculate the area of a circle."
+      },
+      {
+        "term": "Function Definition",
+        "definition": "A complete description of a function, including its return type, name, parameters, and body.",
+        "example": "The function definition for the function to calculate the area of a circle."
+      },
+      {
+        "term": "Overloading",
+        "definition": "A feature of C++ that allows multiple functions with the same name to be defined, as long as they have different parameter lists.",
+        "example": "Overloading the function to calculate the area of a circle for different shapes."
+      },
+      {
+        "term": "Function Signature",
+        "definition": "A unique combination of a function's return type and parameter list, used to identify a function.",
+        "example": "The function signature for the function to calculate the area of a circle."
+      },
+      {
+        "term": "Function Body",
+        "definition": "The sequence of statements that are executed when a function is called.",
+        "example": "The function body for the function to calculate the area of a circle."
+      },
+      {
+        "term": "Default Argument",
+        "definition": "A value that is assigned to an argument if it is not provided when the function is called.",
+        "example": "The function to calculate the area of a circle with a default radius of 1."
+      },
+      {
+        "term": "Variable Argument",
+        "definition": "An argument that can take any number of values, such as arrays or lists.",
+        "example": "The function to calculate the sum of all elements in an array."
+      },
+      {
+        "term": "Pass by Value",
+        "definition": "A technique where the value of an argument is copied when passed to a function.",
+        "example": "Passing an integer to a function by value."
+      },
+      {
+        "term": "Pass by Reference",
+        "definition": "A technique where a reference to the original argument is passed to a function.",
+        "example": "Passing a pointer to an integer to a function by reference."
+      },
+      {
+        "term": "Lambda Function",
+        "definition": "A small anonymous function that can be defined inline within a larger expression.",
+        "example": "A lambda function to calculate the square of a number."
+      },
+      {
+        "term": "Higher-Order Function",
+        "definition": "A function that takes another function as an argument or returns a function as output.",
+        "example": "A higher-order function to filter a list of numbers."
+      }
+    ]
+  }
+}

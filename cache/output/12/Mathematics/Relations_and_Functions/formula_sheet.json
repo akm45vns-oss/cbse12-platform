@@ -1,0 +1,55 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:15:45.158Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Domain of a Function",
+        "formula": "Domain of a function f = { x ∈ R | f(x) is defined }",
+        "variables": "R is the set of real numbers, f(x) is the function",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Range of a Function",
+        "formula": "Range of a function f = { y ∈ R | y = f(x) for some x in the domain of f }",
+        "variables": "R is the set of real numbers, f(x) is the function",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "One-to-One Function",
+        "formula": "If f: A → B is a one-to-one function, then for every y in B, there exists at most one x in A such that f(x) = y",
+        "variables": "A and B are non-empty sets, f is a function from A to B",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Onto Function",
+        "formula": "If f: A → B is an onto function, then for every y in B, there exists an x in A such that f(x) = y",
+        "variables": "A and B are non-empty sets, f is a function from A to B",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Composition of Functions",
+        "formula": "(f ∘ g)(x) = f(g(x))",
+        "variables": "f and g are functions from a common domain to a common range",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Inverse of a Function",
+        "formula": "If f: A → B is an invertible function, then f^(-1): B → A is defined by f^(-1)(y) = x if f(x) = y",
+        "variables": "A and B are non-empty sets, f is a function from A to B",
+        "units": "",
+        "notes": ""
+      }
+    ]
+  }
+}

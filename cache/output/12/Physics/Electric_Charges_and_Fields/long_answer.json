@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electric Charges and Fields",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:47:08.153Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the method of charging by friction. Explain with an example how this process can lead to the charging of a body.",
+        "marks": 5,
+        "answer": "Charging by friction is a process where an object becomes charged by coming into contact with another object, which is already charged. This process involves the transfer of electrons from one object to another. For example, when a glass rod is rubbed with a piece of silk, electrons are transferred from the glass rod to the silk. The glass rod becomes positively charged due to the loss of electrons, while the silk becomes negatively charged due to the gain of electrons.",
+        "marking_scheme": [
+          "Describe the method of charging by friction (1 mark)",
+          "Explain with an example how this process can lead to the charging of a body (2 marks)",
+          "Identify the type of charge acquired by the glass rod and the silk (2 marks)"
+        ],
+        "topic": "Methods of Charging",
+        "is_numerical": false
+      },
+      {
+        "q": "A point charge of 2 μC is placed at the origin. Determine the electric potential at a point on the x-axis at a distance of 5 cm from the origin.",
+        "marks": 5,
+        "answer": "Calculation:\nV = k * q / r\nwhere V = electric potential, k = Coulomb's constant, q = charge, and r = distance from the charge\nGiven: q = 2 μC = 2 * 10^(-6) C, r = 5 cm = 0.05 m\nk = 9 * 10^9 N m^2 C^-2\nV = (9 * 10^9) * (2 * 10^(-6)) / 0.05 = 360 V",
+        "marking_scheme": [
+          "State the formula for electric potential (1 mark)",
+          "Identify the given values and the value to be calculated (1 mark)",
+          "Perform the calculation and arrive at the correct answer (3 marks)"
+        ],
+        "topic": "Electric Potential Due to a Point Charge",
+        "is_numerical": true
+      },
+      {
+        "q": "A metal sphere of radius 0.1 m carries a charge of 1 μC. Determine the electric field at a point 0.2 m away from the center of the sphere.",
+        "marks": 5,
+        "answer": "Calculation:\nFor points outside the sphere, the electric field is given by E = k * q / r^2\nwhere E = electric field, k = Coulomb's constant, q = charge, and r = distance from the center of the sphere\nGiven: q = 1 μC = 1 * 10^(-6) C, r = 0.2 m\nk = 9 * 10^9 N m^2 C^-2\nE = (9 * 10^9) * (1 * 10^(-6)) / (0.2)^2 = 22500 N C^-1",
+        "marking_scheme": [
+          "State the formula for electric field outside a spherical conductor (1 mark)",
+          "Identify the given values and the value to be calculated (1 mark)",
+          "Perform the calculation and arrive at the correct answer (3 marks)"
+        ],
+        "topic": "Electric Field Due to a Charged Spherical Conductor",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of electric dipole and its properties. Draw a diagram to illustrate the electric field lines around an electric dipole.",
+        "marks": 5,
+        "answer": "An electric dipole is a pair of equal and opposite charges separated by a small distance. The properties of an electric dipole include its dipole moment, which is a measure of the product of the magnitude of the charges and the distance between them. The electric field lines around an electric dipole are symmetrical about the axis of the dipole and are directed from the positive charge to the negative charge.",
+        "marking_scheme": [
+          "Define an electric dipole and its properties (2 marks)",
+          "Draw a diagram to illustrate the electric field lines around an electric dipole (2 marks)",
+          "Explain the symmetry of electric field lines around an electric dipole (1 mark)"
+        ],
+        "topic": "Electric Dipole and Electric Field",
+        "is_numerical": false
+      },
+      {
+        "q": "A point charge of 4 μC is placed at a distance of 10 cm from a metal sphere of radius 5 cm. Determine the electric potential of the sphere.",
+        "marks": 5,
+        "answer": "Calculation:\nV = k * q / r\nwhere V = electric potential, k = Coulomb's constant, q = charge, and r = distance from the charge\nGiven: q = 4 μC = 4 * 10^(-6) C, r = 10 cm = 0.1 m\nk = 9 * 10^9 N m^2 C^-2\nHowever, the charge is placed at a distance from the metal sphere, not on its surface. To find the electric potential of the sphere, we need to consider the electric potential at its surface, which is given by V = k * q / R\nwhere R = radius of the sphere\nV = (9 * 10^9) * (4 * 10^(-6)) / 0.05 = 720 V",
+        "marking_scheme": [
+          "State the formula for electric potential (1 mark)",
+          "Identify the given values and the value to be calculated (1 mark)",
+          "Perform the calculation and arrive at the correct answer (3 marks)"
+        ],
+        "topic": "Electric Potential Due to a Point Charge",
+        "is_numerical": true
+      },
+      {
+        "q": "A metal sphere of radius 0.05 m carries a charge of 5 μC. Determine the electric field at a point 0.15 m away from the center of the sphere.",
+        "marks": 5,
+        "answer": "Calculation:\nFor points outside the sphere, the electric field is given by E = k * q / r^2\nwhere E = electric field, k = Coulomb's constant, q = charge, and r = distance from the center of the sphere\nGiven: q = 5 μC = 5 * 10^(-6) C, r = 0.15 m\nk = 9 * 10^9 N m^2 C^-2\nE = (9 * 10^9) * (5 * 10^(-6)) / (0.15)^2 = 200000 N C^-1",
+        "marking_scheme": [
+          "State the formula for electric field outside a spherical conductor (1 mark)",
+          "Identify the given values and the value to be calculated (1 mark)",
+          "Perform the calculation and arrive at the correct answer (3 marks)"
+        ],
+        "topic": "Electric Field Due to a Charged Spherical Conductor",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

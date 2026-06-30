@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Wave Optics",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:01:18.492Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Malus' Law",
+        "formula": "I = I0 * cos^2(θ)",
+        "variables": "I: Intensity of light passing through the polarizer, I0: Initial intensity of light, θ: Angle between polarizer and analyzer",
+        "units": "Intensity (I) and Initial Intensity (I0) in W/m^2, Angle (θ) in radians",
+        "notes": ""
+      },
+      {
+        "name": "Rayleigh's Criterion",
+        "formula": "θ = 1.22 * λ / D",
+        "variables": "θ: Minimum angle of resolution, λ: Wavelength of light, D: Diameter of the telescope or microscope",
+        "units": "Angle (θ) in radians, Wavelength (λ) in meters, Diameter (D) in meters",
+        "notes": ""
+      },
+      {
+        "name": "Fresnel's Equations",
+        "formula": "F1 = (n2 - n1) / (n2 + n1) and F2 = 4n1n2 / (n2 + n1)^2",
+        "variables": "F1: Reflected amplitude, F2: Transmitted amplitude, n1: Refractive index of the first medium, n2: Refractive index of the second medium",
+        "units": "Amplitude (F1, F2) and Refractive indices (n1, n2) are dimensionless",
+        "notes": "Applicable for normal incidence"
+      },
+      {
+        "name": "Fresnel's Equations (for normal incidence)",
+        "formula": "F1 = (n2 - n1) and F2 = 2n1n2/(n2 + n1)",
+        "variables": "F1: Reflected amplitude, F2: Transmitted amplitude, n1: Refractive index of the first medium, n2: Refractive index of the second medium",
+        "units": "Amplitude (F1, F2) and Refractive indices (n1, n2) are dimensionless",
+        "notes": ""
+      },
+      {
+        "name": "Huygens' Principle",
+        "formula": "S = u + (t-t0) * v",
+        "variables": "S: Position of the secondary wavefront, u: Initial position of the primary wavefront, t: Time at which the secondary wavefront is observed, t0: Initial time when the primary wavefront is incident, v: Speed of the wave",
+        "units": "Position (S, u) in meters, Time (t, t0) in seconds, Speed (v) in m/s",
+        "notes": ""
+      },
+      {
+        "name": "Diffraction Grating Formula",
+        "formula": "dsinθ = nλ",
+        "variables": "d: Distance between slits, θ: Angle of diffraction, n: Order of the spectrum, λ: Wavelength of light",
+        "units": "Distance (d) in meters, Angle (θ) in radians, Order (n) is a dimensionless integer, Wavelength (λ) in meters",
+        "notes": ""
+      },
+      {
+        "name": "Young's Double Slit Experiment",
+        "formula": "x = (λD)/d",
+        "variables": "x: Width of the central maximum, λ: Wavelength of light, D: Distance between the slits and the screen, d: Distance between the slits",
+        "units": "Width (x) in meters, Wavelength (λ) in meters, Distance (D) in meters, Distance (d) in meters",
+        "notes": ""
+      }
+    ]
+  }
+}

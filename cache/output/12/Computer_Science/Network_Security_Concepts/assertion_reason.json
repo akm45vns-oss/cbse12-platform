@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Network Security Concepts",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:33:55.169Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Network security is the practice of protecting the confidentiality, integrity, and availability of data.",
+        "reason": "Reason (R): This is achieved by implementing various security measures such as firewalls, encryption, and access control.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because network security is indeed about protecting data confidentiality, integrity, and availability, and firewalls, encryption, and access control are common measures used to achieve this."
+      },
+      {
+        "assertion": "Assertion (A): A firewall is a network security system that monitors and controls incoming and outgoing network traffic.",
+        "reason": "Reason (R): Firewalls can be configured to block certain IP addresses or ports to prevent unauthorized access to a network.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because firewalls do indeed monitor and control network traffic, and configuring them to block certain IP addresses or ports is a common way to prevent unauthorized access."
+      },
+      {
+        "assertion": "Assertion (A): Encryption is a process of converting plaintext data into unreadable ciphertext to protect data confidentiality.",
+        "reason": "Reason (R): Encryption uses a secret key or password to scramble the data, making it unreadable without the decryption key.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because encryption does indeed convert plaintext into ciphertext to protect data confidentiality, and the use of a secret key or password to scramble the data is a common method of encryption."
+      },
+      {
+        "assertion": "Assertion (A): Access control is a security measure that restricts access to resources based on user identity and permissions.",
+        "reason": "Reason (R): Access control lists (ACLs) and role-based access control (RBAC) are common techniques used to implement access control.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because access control does indeed restrict access to resources based on user identity and permissions, and ACLs and RBAC are common techniques used to implement access control."
+      },
+      {
+        "assertion": "Assertion (A): A virus is a type of malware that replicates itself by attaching to other programs or files.",
+        "reason": "Reason (R): Viruses can cause harm to a computer system by deleting or modifying files, or by disrupting system functionality.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because viruses do indeed replicate themselves by attaching to other programs or files, and they can cause harm to a computer system by deleting or modifying files, or by disrupting system functionality."
+      },
+      {
+        "assertion": "Assertion (A): A Trojan horse is a type of malware that disguises itself as a legitimate program to gain access to a computer system.",
+        "reason": "Reason (R): Trojan horses often contain backdoors that allow attackers to remotely access the compromised system.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because Trojan horses do indeed disguise themselves as legitimate programs to gain access to a computer system, and they often contain backdoors that allow attackers to remotely access the compromised system."
+      },
+      {
+        "assertion": "Assertion (A): A phishing attack is a type of social engineering attack that involves tricking users into revealing sensitive information.",
+        "reason": "Reason (R): Phishing attacks often involve emails or messages that appear to be from a legitimate source, but are actually fraudulent.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because phishing attacks do indeed involve tricking users into revealing sensitive information, and they often involve emails or messages that appear to be from a legitimate source but are actually fraudulent."
+      },
+      {
+        "assertion": "Assertion (A): A man-in-the-middle (MitM) attack is a type of eavesdropping attack that involves intercepting and modifying communication between two parties.",
+        "reason": "Reason (R): MitM attacks can be used to steal sensitive information or inject malware into a communication.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because MitM attacks do indeed involve intercepting and modifying communication between two parties, and they can be used to steal sensitive information or inject malware into a communication."
+      },
+      {
+        "assertion": "Assertion (A): A digital certificate is a type of electronic document that verifies the identity of a user or organization.",
+        "reason": "Reason (R): Digital certificates are often used to authenticate users or organizations in online transactions.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because digital certificates do indeed verify the identity of a user or organization, and they are often used to authenticate users or organizations in online transactions."
+      },
+      {
+        "assertion": "Assertion (A): A public key infrastructure (PKI) is a system that enables secure communication over the internet.",
+        "reason": "Reason (R): PKI uses digital certificates and public-key cryptography to authenticate users and encrypt data.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because PKI does indeed enable secure communication over the internet, and it uses digital certificates and public-key cryptography to authenticate users and encrypt data."
+      }
+    ],
+    "total": 10
+  }
+}

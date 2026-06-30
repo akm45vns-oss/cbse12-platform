@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Economics",
+  "chapter": "Producer Behaviour and Supply",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:01:12.543Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of production function. How does it differ from the cost function?",
+        "marks": 5,
+        "answer": "The production function is a mathematical representation of the relationship between the inputs used by a firm and the output it produces. It is expressed as Q = f(L, K), where Q is the output, L is labor, and K is capital. On the other hand, the cost function is a mathematical representation of the relationship between the output produced by a firm and its cost of production. It is expressed as C = f(Q), where C is the cost and Q is the output. The key difference between the two functions is that the production function focuses on the technical relationship between inputs and output, while the cost function focuses on the monetary aspects of production.",
+        "marking_scheme": [
+          "Definition of production function (1 mark)",
+          "Definition of cost function (1 mark)",
+          "Difference between production and cost function (3 marks)"
+        ],
+        "topic": "Production Function",
+        "is_numerical": false
+      },
+      {
+        "q": "A firm's production function is given by Q = 2L^0.5 * K^0.5. If the price of labor is Rs. 10 and the price of capital is Rs. 20, calculate the least-cost combination of labor and capital for producing 100 units of output.",
+        "marks": 5,
+        "answer": "Calculation:\nLet's start by finding the marginal product of labor (MPL) and marginal product of capital (MPK).\nMPL = ∂Q/∂L = 2 * 0.5 * L^(-0.5) * K^0.5 = L^(-0.5) * K^0.5\nMPK = ∂Q/∂K = 2 * 0.5 * L^0.5 * K^(-0.5) = L^0.5 * K^(-0.5)\nFor least-cost combination, MPL/P_L = MPK/P_K\nL^(-0.5) * K^0.5 / 10 = L^0.5 * K^(-0.5) / 20\nSimplifying, we get K/L = 2\nNow, we can substitute this ratio into the production function to find the optimal values of L and K.\n100 = 2L^0.5 * (2L)^0.5\n100 = 2L^0.5 * 2^0.5 * L^0.5\n100 = 2 * 2^0.5 * L\nL = 100 / (2 * 2^0.5)\nL = 50 / 2^0.5\nL = 35.355\nK = 2L = 2 * 35.355 = 70.710",
+        "marking_scheme": [
+          "Calculation of MPL and MPK (1 mark)",
+          "Setting up the least-cost condition (1 mark)",
+          "Solving for the optimal values of L and K (3 marks)"
+        ],
+        "topic": "Least-Cost Combination of Inputs",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the law of diminishing marginal product? Explain its significance in the theory of production.",
+        "marks": 5,
+        "answer": "The law of diminishing marginal product states that as the quantity of a variable input is increased, while holding other inputs constant, the marginal product of the variable input will eventually decrease. This law is significant in the theory of production because it helps to explain the behavior of firms in terms of their input decisions. It suggests that firms will continue to add variable inputs until the marginal product of the last unit of the input is equal to its marginal cost. The law of diminishing marginal product is also important because it helps to explain the concept of returns to scale and the shape of the production function.",
+        "marking_scheme": [
+          "Definition of the law of diminishing marginal product (1 mark)",
+          "Explanation of its significance in the theory of production (2 marks)",
+          "Relation to returns to scale and production function (2 marks)"
+        ],
+        "topic": "Law of Diminishing Marginal Product",
+        "is_numerical": false
+      },
+      {
+        "q": "A firm is producing 100 units of output using 10 units of labor and 20 units of capital. The marginal product of labor is 5 and the marginal product of capital is 2. If the wage rate is Rs. 20 and the rental rate of capital is Rs. 10, calculate the marginal rate of technical substitution of labor for capital.",
+        "marks": 5,
+        "answer": "Calculation:\nThe marginal rate of technical substitution (MRTS) is given by the ratio of the marginal product of labor to the marginal product of capital.\nMRTS = MPL / MPK = 5 / 2 = 2.5\nThis means that the firm can substitute 1 unit of capital with 2.5 units of labor without affecting the output.",
+        "marking_scheme": [
+          "Calculation of MRTS (2 marks)",
+          "Interpretation of MRTS (1 mark)",
+          "Understanding of the concept of MRTS (2 marks)"
+        ],
+        "topic": "Marginal Rate of Technical Substitution",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of returns to scale. How does it differ from the law of diminishing marginal product?",
+        "marks": 5,
+        "answer": "Returns to scale refers to the change in output when all inputs are increased by the same proportion. It is a long-run concept that helps to explain how firms can increase their production by increasing all inputs. On the other hand, the law of diminishing marginal product is a short-run concept that explains how the marginal product of a variable input changes when it is increased while holding other inputs constant. The key difference between the two concepts is that returns to scale deals with the proportionate increase in all inputs, while the law of diminishing marginal product deals with the increase in a single variable input.",
+        "marking_scheme": [
+          "Definition of returns to scale (1 mark)",
+          "Definition of the law of diminishing marginal product (1 mark)",
+          "Difference between returns to scale and the law of diminishing marginal product (3 marks)"
+        ],
+        "topic": "Returns to Scale",
+        "is_numerical": false
+      },
+      {
+        "q": "A firm's cost function is given by C = 100 + 10Q + 0.1Q^2. Calculate the marginal cost and average cost of producing 50 units of output.",
+        "marks": 5,
+        "answer": "Calculation:\nMarginal cost (MC) is the derivative of the cost function with respect to output.\nMC = ∂C/∂Q = 10 + 0.2Q\nAt Q = 50, MC = 10 + 0.2 * 50 = 10 + 10 = 20\nAverage cost (AC) is the total cost divided by the output.\nAC = C / Q = (100 + 10Q + 0.1Q^2) / Q\nAt Q = 50, AC = (100 + 10 * 50 + 0.1 * 50^2) / 50\nAC = (100 + 500 + 250) / 50\nAC = 850 / 50\nAC = 17",
+        "marking_scheme": [
+          "Calculation of marginal cost (2 marks)",
+          "Calculation of average cost (2 marks)",
+          "Understanding of the concept of marginal and average cost (1 mark)"
+        ],
+        "topic": "Cost Function",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "class": "12",
+  "subject": "Economics",
+  "chapter": "Simple Applications of Tools of Demand and Supply",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:02:18.077Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of consumer's equilibrium using the indifference curve analysis. Also, discuss the conditions of consumer's equilibrium.",
+        "marks": 5,
+        "answer": "The concept of consumer's equilibrium refers to the situation where a consumer allocates his/her income among different goods in such a way that he/she gets maximum satisfaction. According to the indifference curve analysis, a consumer attains equilibrium when he/she reaches the highest indifference curve given his/her budget constraint. The conditions of consumer's equilibrium are: (i) The marginal rate of substitution (MRS) of one good for another should be equal to the ratio of their prices, i.e., MRSxy = Px/Py, and (ii) The consumer should be on the budget line, i.e., the consumer should not be able to increase his/her satisfaction by reallocating his/her income.",
+        "marking_scheme": [
+          "Definition and explanation of consumer's equilibrium (1 mark)",
+          "Discussion of conditions of consumer's equilibrium (2 marks)",
+          "Use of indifference curve analysis (1 mark)",
+          "Clarity and coherence of answer (1 mark)"
+        ],
+        "topic": "Theory of Consumer Behaviour",
+        "is_numerical": false
+      },
+      {
+        "q": "A consumer has a monthly income of Rs 1000. He spends his income on two goods, X and Y, whose prices are Rs 10 and Rs 20 per unit, respectively. If the consumer's demand for good X is 50 units and for good Y is 20 units, find the consumer's equilibrium using the indifference curve analysis. Also, calculate the marginal rate of substitution (MRS) of good X for good Y.",
+        "marks": 5,
+        "answer": "Calculation: \nGiven: Income (M) = Rs 1000, Price of X (Px) = Rs 10, Price of Y (Py) = Rs 20, Demand for X (Qx) = 50 units, Demand for Y (Qy) = 20 units \nWe can calculate the MRS using the formula: MRSxy = (Px/Py) = (10/20) = 0.5 \nSince the consumer is already at the equilibrium, we can verify that MRSxy = (MUx/MUy), where MUx and MUy are the marginal utilities of goods X and Y, respectively. However, the marginal utilities are not given in the question, so we cannot calculate the MRS using this method. The consumer's equilibrium can be verified by checking if the budget constraint is satisfied: Px*Qx + Py*Qy = M, i.e., 10*50 + 20*20 = 1000, which is true.",
+        "marking_scheme": [
+          "Calculation of MRS (2 marks)",
+          "Verification of consumer's equilibrium (1 mark)",
+          "Use of indifference curve analysis (1 mark)",
+          "Clarity and coherence of answer (1 mark)"
+        ],
+        "topic": "Theory of Consumer Behaviour",
+        "is_numerical": true
+      },
+      {
+        "q": "Discuss the concept of production function and its types. Explain the short-run production function with the help of a numerical example.",
+        "marks": 5,
+        "answer": "The production function refers to the relationship between the inputs used by a firm and the output produced. There are two types of production functions: short-run production function and long-run production function. The short-run production function is a function where one or more inputs are fixed, and the output is a function of the variable input(s). For example, suppose a firm produces output using labor (L) and capital (K), and the production function is Q = 10L + 20K, where K is fixed at 10 units. If the wage rate is Rs 10 per unit of labor, and the firm wants to produce 200 units of output, we can calculate the amount of labor required: 200 = 10L + 20*10, i.e., 200 = 10L + 200, i.e., 10L = 0, i.e., L = 0. However, this is not possible, as the firm needs to use some labor to produce output. Therefore, we need to use a more realistic production function, such as Q = 10L^0.5 * K^0.5, where the output is a function of both labor and capital.",
+        "marking_scheme": [
+          "Definition and explanation of production function (1 mark)",
+          "Discussion of types of production functions (1 mark)",
+          "Explanation of short-run production function with numerical example (2 marks)",
+          "Clarity and coherence of answer (1 mark)"
+        ],
+        "topic": "Theory of Production",
+        "is_numerical": false
+      },
+      {
+        "q": "A firm produces output using labor (L) and capital (K) with the production function Q = 10L^0.5 * K^0.5. The price of output is Rs 10 per unit, and the wage rate is Rs 20 per unit of labor. The firm wants to produce 100 units of output, and the capital is fixed at 16 units. Calculate the amount of labor required to produce the desired output.",
+        "marks": 5,
+        "answer": "Calculation: \nGiven: Q = 100, K = 16, Q = 10L^0.5 * K^0.5 \nSubstituting the values, we get: 100 = 10L^0.5 * 16^0.5 \nSimplifying, we get: 100 = 10L^0.5 * 4 \nSimplifying further, we get: 100 = 40L^0.5 \nSquaring both sides, we get: 10000 = 1600L \nDividing both sides by 1600, we get: L = 10000/1600 = 6.25 \nTherefore, the firm needs to hire 6.25 units of labor to produce the desired output.",
+        "marking_scheme": [
+          "Calculation of labor required (3 marks)",
+          "Use of production function (1 mark)",
+          "Clarity and coherence of answer (1 mark)"
+        ],
+        "topic": "Theory of Production",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of cost function and its types. Discuss the short-run cost function with the help of a numerical example.",
+        "marks": 5,
+        "answer": "The cost function refers to the relationship between the output produced by a firm and the cost of production. There are two types of cost functions: short-run cost function and long-run cost function. The short-run cost function is a function where one or more inputs are fixed, and the cost is a function of the variable input(s). For example, suppose a firm produces output using labor (L) and capital (K), and the cost function is C = 10L + 20K, where K is fixed at 10 units. If the wage rate is Rs 10 per unit of labor, and the firm wants to produce 100 units of output, we can calculate the total cost: C = 10L + 20*10 = 10L + 200. If the firm hires 10 units of labor, the total cost will be: C = 10*10 + 200 = 300.",
+        "marking_scheme": [
+          "Definition and explanation of cost function (1 mark)",
+          "Discussion of types of cost functions (1 mark)",
+          "Explanation of short-run cost function with numerical example (2 marks)",
+          "Clarity and coherence of answer (1 mark)"
+        ],
+        "topic": "Cost",
+        "is_numerical": false
+      },
+      {
+        "q": "A firm produces output using labor (L) and capital (K) with the cost function C = 10L + 20K. The wage rate is Rs 10 per unit of labor, and the firm wants to produce 100 units of output. The capital is fixed at 5 units. Calculate the total cost of producing the desired output if the firm hires 5 units of labor.",
+        "marks": 5,
+        "answer": "Calculation: \nGiven: C = 10L + 20K, L = 5, K = 5 \nSubstituting the values, we get: C = 10*5 + 20*5 \nSimplifying, we get: C = 50 + 100 \nSimplifying further, we get: C = 150 \nTherefore, the total cost of producing the desired output is Rs 150.",
+        "marking_scheme": [
+          "Calculation of total cost (3 marks)",
+          "Use of cost function (1 mark)",
+          "Clarity and coherence of answer (1 mark)"
+        ],
+        "topic": "Cost",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

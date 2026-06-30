@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Physical Education",
+  "chapter": "Test and Measurement in Sports",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:46:53.250Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Calculation of BMI",
+        "formula": "BMI = Weight (in kg) / Height (in meters)²",
+        "variables": "Weight in kg, Height in meters",
+        "units": "kg/m²",
+        "notes": "To determine underweight, normal weight, overweight, or obese"
+      },
+      {
+        "name": "2. Calculation of BMR (Basal Metabolic Rate) for Men",
+        "formula": "BMR (men) = 66 + (6.2 x weight in lbs) + (12.7 x height in inches) - (6.8 x age in years)",
+        "variables": "Weight in lbs, Height in inches, Age in years",
+        "units": "calories/day",
+        "notes": "To estimate daily calorie needs at rest for men"
+      },
+      {
+        "name": "3. Calculation of BMR (Basal Metabolic Rate) for Women",
+        "formula": "BMR (women) = 655 + (4.35 x weight in lbs) + (4.7 x height in inches) - (4.7 x age in years)",
+        "variables": "Weight in lbs, Height in inches, Age in years",
+        "units": "calories/day",
+        "notes": "To estimate daily calorie needs at rest for women"
+      },
+      {
+        "name": "4. Target Heart Rate Zone (50-85% of Maximum Heart Rate)",
+        "formula": "Target Heart Rate = (Maximum Heart Rate) x (Desired Intensity as a decimal)",
+        "variables": "Maximum Heart Rate (usually 220 - age), Desired Intensity (e.g., 0.5 for 50%)",
+        "units": "beats per minute (bpm)",
+        "notes": "To find the ideal heart rate range for aerobic exercise"
+      },
+      {
+        "name": "5. Maximum Heart Rate (MHR) Estimate",
+        "formula": "MHR = 220 - age",
+        "variables": "Age in years",
+        "units": "beats per minute (bpm)",
+        "notes": "A simple estimate of maximum heart rate"
+      },
+      {
+        "name": "6. Calculation of Daily Caloric Needs",
+        "formula": "Daily Caloric Needs = BMR x Activity Multiplier",
+        "variables": "BMR from formula, Activity Multiplier (sedentary=1.2, lightly active=1.375, moderately active=1.55, very active=1.725, extra active=1.9)",
+        "units": "calories/day",
+        "notes": "To estimate total daily energy expenditure based on activity level"
+      },
+      {
+        "name": "7. VO2 Max Estimate (for men)",
+        "formula": "VO2 Max (men) = 15 x (body weight in kg / (body weight in kg - (body fat percentage x body weight in kg)))",
+        "variables": "Body weight in kg, Body fat percentage",
+        "units": "ml/kg/min",
+        "notes": "An estimate of aerobic capacity for men"
+      },
+      {
+        "name": "8. VO2 Max Estimate (for women)",
+        "formula": "VO2 Max (women) = 13.5 x (body weight in kg / (body weight in kg - (body fat percentage x body weight in kg)))",
+        "variables": "Body weight in kg, Body fat percentage",
+        "units": "ml/kg/min",
+        "notes": "An estimate of aerobic capacity for women"
+      },
+      {
+        "name": "9. Lean Body Mass (LBM) for Men",
+        "formula": "LBM (men) = (body weight in lbs x (100 - body fat percentage)) / 100",
+        "variables": "Body weight in lbs, Body fat percentage",
+        "units": "lbs",
+        "notes": "To calculate the weight of lean body mass for men"
+      },
+      {
+        "name": "10. Lean Body Mass (LBM) for Women",
+        "formula": "LBM (women) = (body weight in lbs x (100 - body fat percentage)) / 100",
+        "variables": "Body weight in lbs, Body fat percentage",
+        "units": "lbs",
+        "notes": "To calculate the weight of lean body mass for women"
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Wave Optics",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:09:21.624Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Young's double-slit experiment demonstrates the wave nature of light.",
+        "reason": "Reason (R): This is because the interference pattern formed on the screen shows bright and dark fringes.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "In Young's double-slit experiment, the interference pattern formed on the screen is a result of the superposition of light waves passing through the two slits, demonstrating the wave nature of light."
+      },
+      {
+        "assertion": "Assertion (A): The phenomenon of total internal reflection occurs when light passes from a denser to a rarer medium.",
+        "reason": "Reason (R): This happens when the angle of incidence is greater than the critical angle.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Total internal reflection occurs when light passes from a denser to a rarer medium at a large enough angle of incidence, and the critical angle is the angle beyond which total internal reflection occurs."
+      },
+      {
+        "assertion": "Assertion (A): The diffraction pattern observed in a single-slit experiment is similar to the pattern observed in a double-slit experiment.",
+        "reason": "Reason (R): This is due to the fact that both experiments involve the diffraction of light around obstacles.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "While both experiments do involve diffraction, the diffraction pattern observed in a single-slit experiment is not similar to the pattern observed in a double-slit experiment, as the latter also involves interference between the light waves passing through the two slits."
+      },
+      {
+        "assertion": "Assertion (A): Polarization of light can be achieved by passing it through a polarizing filter.",
+        "reason": "Reason (R): The polarizing filter only allows light waves with a specific orientation to pass through.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Passing light through a polarizing filter allows only light waves with a specific orientation to pass through, effectively polarizing the light."
+      },
+      {
+        "assertion": "Assertion (A): The Brewster's angle is the angle of incidence at which the reflected light is completely polarized.",
+        "reason": "Reason (R): This angle is given by the equation tan θ_B = n2 / n1.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Brewster's angle is indeed the angle of incidence at which the reflected light is completely polarized, and it can be calculated using the equation tan θ_B = n2 / n1, where n1 and n2 are the refractive indices of the two media."
+      },
+      {
+        "assertion": "Assertion (A): The phenomenon of diffraction is observed only when the obstacle size is comparable to the wavelength of light.",
+        "reason": "Reason (R): This is because diffraction is the bending of light around obstacles, which occurs when the obstacle is of the same order as the wavelength of light.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The phenomenon of diffraction is indeed observed when the obstacle size is comparable to the wavelength of light, as this allows for the bending of light around the obstacle."
+      },
+      {
+        "assertion": "Assertion (A): In a double-slit experiment, the intensity of the central maximum is maximum when the slits are very far apart.",
+        "reason": "Reason (R): This is because the distance between the slits has no effect on the intensity of the central maximum.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The intensity of the central maximum in a double-slit experiment is actually maximum when the slits are very close together, not when they are far apart."
+      },
+      {
+        "assertion": "Assertion (A): The intensity of the diffracted light is maximum at the central maximum in a single-slit experiment.",
+        "reason": "Reason (R): This is because the diffracted light waves are in phase at the central maximum.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The intensity of the diffracted light is indeed maximum at the central maximum in a single-slit experiment, as the diffracted light waves are in phase at this point."
+      },
+      {
+        "assertion": "Assertion (A): The resolving power of an optical instrument is its ability to distinguish between two closely spaced objects.",
+        "reason": "Reason (R): This is because a higher resolving power allows for the observation of smaller details.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The resolving power of an optical instrument is indeed its ability to distinguish between two closely spaced objects, as a higher resolving power allows for the observation of smaller details."
+      },
+      {
+        "assertion": "Assertion (A): The phenomenon of dispersion occurs when light passes through a prism.",
+        "reason": "Reason (R): This is because the different wavelengths of light are refracted at slightly different angles.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The phenomenon of dispersion indeed occurs when light passes through a prism, as the different wavelengths of light are refracted at slightly different angles."
+      }
+    ],
+    "total": 10
+  }
+}

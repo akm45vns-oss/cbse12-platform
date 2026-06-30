@@ -1,0 +1,248 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "File Handling",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:37:25.591Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the primary purpose of using a file in programming?",
+        "opts": [
+          "(A) To store large amounts of data",
+          "(B) To read and write data from/to secondary storage",
+          "(C) To perform mathematical calculations",
+          "(D) To control the flow of a program"
+        ],
+        "ans": "B",
+        "explanation": "Files are used to store and retrieve data from secondary storage. This allows programs to persist data across sessions.",
+        "difficulty": "easy",
+        "topic": "Introduction to File Handling"
+      },
+      {
+        "q": "What is a file mode in file handling?",
+        "opts": [
+          "(A) The location of a file on the secondary storage device",
+          "(B) The mode in which a file is opened (read, write, read-write)",
+          "(C) The size of a file",
+          "(D) The number of files in a directory"
+        ],
+        "ans": "B",
+        "explanation": "A file mode determines whether a file can be read, written, or both.",
+        "difficulty": "easy",
+        "topic": "File Modes"
+      },
+      {
+        "q": "What is the difference between 'r' and 'r+' file modes?",
+        "opts": [
+          "(A) 'r' mode opens a file for reading only, while 'r+' mode opens a file for writing only",
+          "(B) 'r' mode opens a file for reading only, while 'r+' mode opens a file for reading and writing",
+          "(C) 'r' mode opens a file for writing only, while 'r+' mode opens a file for reading and writing",
+          "(D) 'r' mode opens a file for reading and writing, while 'r+' mode opens a file for reading only"
+        ],
+        "ans": "B",
+        "explanation": "'r' mode opens a file for reading only, while 'r+' mode opens a file for reading and writing.",
+        "difficulty": "medium",
+        "topic": "File Modes"
+      },
+      {
+        "q": "What is the purpose of the seek() function in file handling?",
+        "opts": [
+          "(A) To change the file mode",
+          "(B) To read and write data from/to a file",
+          "(C) To move the file pointer to a specific location",
+          "(D) To delete a file"
+        ],
+        "ans": "C",
+        "explanation": "The seek() function is used to move the file pointer to a specific location in a file.",
+        "difficulty": "medium",
+        "topic": "File Input/Output Operations"
+      },
+      {
+        "q": "What is the difference between 'w' and 'a' file modes?",
+        "opts": [
+          "(A) 'w' mode opens a file for writing only, while 'a' mode opens a file for reading only",
+          "(B) 'w' mode opens a file for writing only, while 'a' mode opens a file for reading and writing",
+          "(C) 'w' mode opens a file for reading and writing, while 'a' mode opens a file for writing only",
+          "(D) 'w' mode opens a file for reading only, while 'a' mode opens a file for reading and writing"
+        ],
+        "ans": "C",
+        "explanation": "'w' mode opens a file for reading and writing, while 'a' mode opens a file for writing only.",
+        "difficulty": "medium",
+        "topic": "File Modes"
+      },
+      {
+        "q": "What is the purpose of the truncate() function in file handling?",
+        "opts": [
+          "(A) To change the file mode",
+          "(B) To read and write data from/to a file",
+          "(C) To delete a file",
+          "(D) To truncate the contents of a file to zero length"
+        ],
+        "ans": "D",
+        "explanation": "The truncate() function is used to truncate the contents of a file to zero length.",
+        "difficulty": "hard",
+        "topic": "File Input/Output Operations"
+      },
+      {
+        "q": "What is the difference between a file pointer and a file descriptor?",
+        "opts": [
+          "(A) A file pointer is a memory address, while a file descriptor is a numeric value",
+          "(B) A file pointer is a numeric value, while a file descriptor is a memory address",
+          "(C) A file pointer is a numeric value, while a file descriptor is a file object",
+          "(D) A file pointer is a file object, while a file descriptor is a numeric value"
+        ],
+        "ans": "D",
+        "explanation": "A file pointer is a file object, while a file descriptor is a numeric value.",
+        "difficulty": "hard",
+        "topic": "File Input/Output Operations"
+      },
+      {
+        "q": "What is the purpose of the file.seek() method in Python?",
+        "opts": [
+          "(A) To change the file mode",
+          "(B) To read and write data from/to a file",
+          "(C) To move the file pointer to a specific location",
+          "(D) To delete a file"
+        ],
+        "ans": "C",
+        "explanation": "The file.seek() method is used to move the file pointer to a specific location in a file.",
+        "difficulty": "hard",
+        "topic": "File Input/Output Operations"
+      },
+      {
+        "q": "What is the difference between 'rb' and 'wb' file modes in Python?",
+        "opts": [
+          "(A) 'rb' mode opens a file for reading binary data, while 'wb' mode opens a file for writing binary data",
+          "(B) 'rb' mode opens a file for reading text data, while 'wb' mode opens a file for writing text data",
+          "(C) 'rb' mode opens a file for reading and writing binary data, while 'wb' mode opens a file for reading only",
+          "(D) 'rb' mode opens a file for reading only, while 'wb' mode opens a file for reading and writing"
+        ],
+        "ans": "A",
+        "explanation": "'rb' mode opens a file for reading binary data, while 'wb' mode opens a file for writing binary data.",
+        "difficulty": "hard",
+        "topic": "File Modes"
+      },
+      {
+        "q": "What is the purpose of the file.close() method in Python?",
+        "opts": [
+          "(A) To change the file mode",
+          "(B) To read and write data from/to a file",
+          "(C) To delete a file",
+          "(D) To close the file and free up system resources"
+        ],
+        "ans": "D",
+        "explanation": "The file.close() method is used to close the file and free up system resources.",
+        "difficulty": "hard",
+        "topic": "File Input/Output Operations"
+      },
+      {
+        "q": "What is the difference between 'with' and 'open' functions in Python?",
+        "opts": [
+          "(A) 'with' function opens a file, while 'open' function closes a file",
+          "(B) 'with' function closes a file, while 'open' function opens a file",
+          "(C) 'with' function opens a file and closes it automatically, while 'open' function opens a file and must be closed manually",
+          "(D) 'with' function opens a file manually, while 'open' function opens a file and closes it automatically"
+        ],
+        "ans": "C",
+        "explanation": "'with' function opens a file and closes it automatically, while 'open' function opens a file and must be closed manually.",
+        "difficulty": "hard",
+        "topic": "File Input/Output Operations"
+      },
+      {
+        "q": "What is the purpose of the os module in Python?",
+        "opts": [
+          "(A) To change the file mode",
+          "(B) To read and write data from/to a file",
+          "(C) To delete a file",
+          "(D) To interact with the operating system and perform file-related operations"
+        ],
+        "ans": "D",
+        "explanation": "The os module is used to interact with the operating system and perform file-related operations.",
+        "difficulty": "hard",
+        "topic": "File Input/Output Operations"
+      },
+      {
+        "q": "What is the difference between 'mkdir' and 'mkdirs' functions in the os module?",
+        "opts": [
+          "(A) 'mkdir' function creates a directory, while 'mkdirs' function deletes a directory",
+          "(B) 'mkdir' function deletes a directory, while 'mkdirs' function creates a directory",
+          "(C) 'mkdir' function creates a directory if it does not exist, while 'mkdirs' function creates a directory and all its parents if they do not exist",
+          "(D) 'mkdir' function creates a directory and all its parents if they do not exist, while 'mkdirs' function creates a directory if it does not exist"
+        ],
+        "ans": "C",
+        "explanation": "'mkdir' function creates a directory if it does not exist, while 'mkdirs' function creates a directory and all its parents if they do not exist.",
+        "difficulty": "hard",
+        "topic": "File Input/Output Operations"
+      },
+      {
+        "q": "What is the purpose of the shutil module in Python?",
+        "opts": [
+          "(A) To change the file mode",
+          "(B) To read and write data from/to a file",
+          "(C) To delete a file",
+          "(D) To interact with the operating system and perform file-related operations, such as copying and moving files"
+        ],
+        "ans": "D",
+        "explanation": "The shutil module is used to interact with the operating system and perform file-related operations, such as copying and moving files.",
+        "difficulty": "hard",
+        "topic": "File Input/Output Operations"
+      },
+      {
+        "q": "What is the difference between 'copy' and 'copy2' functions in the shutil module?",
+        "opts": [
+          "(A) 'copy' function copies a file, while 'copy2' function moves a file",
+          "(B) 'copy' function moves a file, while 'copy2' function copies a file",
+          "(C) 'copy' function copies a file and its metadata, while 'copy2' function copies only the file contents",
+          "(D) 'copy' function copies only the file contents, while 'copy2' function copies a file and its metadata"
+        ],
+        "ans": "C",
+        "explanation": "'copy' function copies a file and its metadata, while 'copy2' function copies only the file contents.",
+        "difficulty": "hard",
+        "topic": "File Input/Output Operations"
+      },
+      {
+        "q": "What is the purpose of the os.path module in Python?",
+        "opts": [
+          "(A) To change the file mode",
+          "(B) To read and write data from/to a file",
+          "(C) To delete a file",
+          "(D) To interact with the operating system and perform file-related operations, such as joining and splitting paths"
+        ],
+        "ans": "D",
+        "explanation": "The os.path module is used to interact with the operating system and perform file-related operations, such as joining and splitting paths.",
+        "difficulty": "hard",
+        "topic": "File Input/Output Operations"
+      },
+      {
+        "q": "What is the difference between 'join' and 'abspath' functions in the os.path module?",
+        "opts": [
+          "(A) 'join' function joins two paths, while 'abspath' function splits a path",
+          "(B) 'join' function splits a path, while 'abspath' function joins two paths",
+          "(C) 'join' function joins two paths and their parents if they do not exist, while 'abspath' function joins two paths and removes any redundant separators",
+          "(D) 'join' function joins two paths and removes any redundant separators, while 'abspath' function joins two paths and their parents if they do not exist"
+        ],
+        "ans": "C",
+        "explanation": "'join' function joins two paths and their parents if they do not exist, while 'abspath' function joins two paths and removes any redundant separators.",
+        "difficulty": "hard",
+        "topic": "File Input/Output Operations"
+      },
+      {
+        "q": "What is the purpose of the glob module in Python?",
+        "opts": [
+          "(A) To change the file mode",
+          "(B) To read and write data from/to a file",
+          "(C) To delete a file",
+          "(D) To interact with the operating system and perform file-related operations, such as finding files matching a pattern"
+        ],
+        "ans": "D",
+        "explanation": "The glob module is used to interact with the operating system and perform file-related operations, such as finding files matching a pattern.",
+        "difficulty": "hard",
+        "topic": "File Input/Output Operations"
+      }
+    ],
+    "total": 18
+  }
+}

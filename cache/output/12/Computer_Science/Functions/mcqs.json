@@ -1,0 +1,235 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:30:45.308Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the main purpose of a function in programming?",
+        "opts": [
+          "(A) To store data",
+          "(B) To perform a specific task",
+          "(C) To declare variables",
+          "(D) To control the flow of a program"
+        ],
+        "ans": "B",
+        "explanation": "A function is a block of code that performs a specific task. It helps to reduce code duplication and make programs more modular.",
+        "difficulty": "easy",
+        "topic": "Introduction to Functions"
+      },
+      {
+        "q": "What is the difference between a function and a method?",
+        "opts": [
+          "(A) A function is a block of code, while a method is a function within a class",
+          "(B) A function is a reusable block of code, while a method is a non-reusable block of code",
+          "(C) A function is a code that takes arguments, while a method is a code that does not take arguments",
+          "(D) A function is a code that modifies variables, while a method is a code that does not modify variables"
+        ],
+        "ans": "A",
+        "explanation": "A function is a standalone block of code, while a method is a function within a class that is used to perform operations on objects of that class.",
+        "difficulty": "easy",
+        "topic": "Functions and Methods"
+      },
+      {
+        "q": "What is the purpose of the return statement in a function?",
+        "opts": [
+          "(A) To end the function execution",
+          "(B) To pass data to another function",
+          "(C) To return data from the function",
+          "(D) To declare a variable"
+        ],
+        "ans": "C",
+        "explanation": "The return statement is used to return data from a function, which can then be used by the caller.",
+        "difficulty": "easy",
+        "topic": "Function Control Structures"
+      },
+      {
+        "q": "What is the difference between a parameter and an argument in a function?",
+        "opts": [
+          "(A) A parameter is the data passed to a function, while an argument is the data received by the function",
+          "(B) A parameter is the data received by a function, while an argument is the data passed to the function",
+          "(C) A parameter is a variable, while an argument is a constant",
+          "(D) A parameter is a function, while an argument is a variable"
+        ],
+        "ans": "B",
+        "explanation": "A parameter is a variable in the function definition, while an argument is the actual value passed to the function when it is called.",
+        "difficulty": "easy",
+        "topic": "Function Parameters"
+      },
+      {
+        "q": "What is the purpose of the keyword 'this' in a function?",
+        "opts": [
+          "(A) To refer to the current object",
+          "(B) To refer to the parent object",
+          "(C) To refer to the global object",
+          "(D) To refer to the null object"
+        ],
+        "ans": "A",
+        "explanation": "The keyword 'this' is used to refer to the current object within a function, allowing the function to access its properties and methods.",
+        "difficulty": "medium",
+        "topic": "Function this Keyword"
+      },
+      {
+        "q": "What is the difference between a function prototype and a function declaration?",
+        "opts": [
+          "(A) A function prototype is a declaration of a function, while a function declaration is a definition of a function",
+          "(B) A function prototype is a definition of a function, while a function declaration is a declaration of a function",
+          "(C) A function prototype is a code that takes arguments, while a function declaration is a code that does not take arguments",
+          "(D) A function prototype is a code that modifies variables, while a function declaration is a code that does not modify variables"
+        ],
+        "ans": "A",
+        "explanation": "A function prototype is a declaration of a function, which includes the function name and parameter list, while a function declaration is a definition of a function, which includes the function body.",
+        "difficulty": "medium",
+        "topic": "Function Prototypes"
+      },
+      {
+        "q": "What is the purpose of the keyword 'default' in a function?",
+        "opts": [
+          "(A) To specify a default value for a parameter",
+          "(B) To specify a default value for a variable",
+          "(C) To specify a default value for a constant",
+          "(D) To specify a default value for a function"
+        ],
+        "ans": "A",
+        "explanation": "The keyword 'default' is used to specify a default value for a parameter in a function, which is used when no value is passed for that parameter.",
+        "difficulty": "medium",
+        "topic": "Function Parameters"
+      },
+      {
+        "q": "What is the difference between a function and a lambda function?",
+        "opts": [
+          "(A) A function is a block of code, while a lambda function is a small block of code",
+          "(B) A function is a reusable block of code, while a lambda function is a non-reusable block of code",
+          "(C) A function is a code that takes arguments, while a lambda function is a code that does not take arguments",
+          "(D) A function is a code that modifies variables, while a lambda function is a code that does not modify variables"
+        ],
+        "ans": "A",
+        "explanation": "A function is a block of code that can be reused, while a lambda function is a small block of code that is used to perform a simple operation.",
+        "difficulty": "medium",
+        "topic": "Lambda Functions"
+      },
+      {
+        "q": "What is the purpose of the keyword 'const' in a function?",
+        "opts": [
+          "(A) To specify that a function does not modify variables",
+          "(B) To specify that a function modifies variables",
+          "(C) To specify that a function returns a value",
+          "(D) To specify that a function takes arguments"
+        ],
+        "ans": "A",
+        "explanation": "The keyword 'const' is used to specify that a function does not modify variables, which can help prevent unintended modifications.",
+        "difficulty": "medium",
+        "topic": "Function Modifiers"
+      },
+      {
+        "q": "What is the difference between a function and a generator?",
+        "opts": [
+          "(A) A function is a block of code, while a generator is a block of code that returns values one at a time",
+          "(B) A function is a reusable block of code, while a generator is a non-reusable block of code",
+          "(C) A function is a code that takes arguments, while a generator is a code that does not take arguments",
+          "(D) A function is a code that modifies variables, while a generator is a code that does not modify variables"
+        ],
+        "ans": "A",
+        "explanation": "A function is a block of code that returns a single value, while a generator is a block of code that returns values one at a time, using the 'yield' keyword.",
+        "difficulty": "medium",
+        "topic": "Generators"
+      },
+      {
+        "q": "What is the purpose of the keyword 'yield' in a generator?",
+        "opts": [
+          "(A) To return a value from a generator",
+          "(B) To pass data to another generator",
+          "(C) To specify a default value for a parameter",
+          "(D) To specify a value to be returned from a function"
+        ],
+        "ans": "A",
+        "explanation": "The keyword 'yield' is used to return a value from a generator, which is used to produce a sequence of values.",
+        "difficulty": "medium",
+        "topic": "Generators"
+      },
+      {
+        "q": "What is the difference between a function and a coroutine?",
+        "opts": [
+          "(A) A function is a block of code, while a coroutine is a block of code that can be paused and resumed",
+          "(B) A function is a reusable block of code, while a coroutine is a non-reusable block of code",
+          "(C) A function is a code that takes arguments, while a coroutine is a code that does not take arguments",
+          "(D) A function is a code that modifies variables, while a coroutine is a code that does not modify variables"
+        ],
+        "ans": "A",
+        "explanation": "A function is a block of code that executes sequentially, while a coroutine is a block of code that can be paused and resumed, using the 'await' keyword.",
+        "difficulty": "hard",
+        "topic": "Coroutines"
+      },
+      {
+        "q": "What is the purpose of the keyword 'await' in a coroutine?",
+        "opts": [
+          "(A) To pause the execution of a coroutine",
+          "(B) To resume the execution of a coroutine",
+          "(C) To specify a value to be returned from a function",
+          "(D) To pass data to another coroutine"
+        ],
+        "ans": "A",
+        "explanation": "The keyword 'await' is used to pause the execution of a coroutine, allowing other tasks to run while waiting for the awaited task to complete.",
+        "difficulty": "hard",
+        "topic": "Coroutines"
+      },
+      {
+        "q": "What is the difference between a function and an async function?",
+        "opts": [
+          "(A) A function is a block of code, while an async function is a block of code that returns a promise",
+          "(B) A function is a reusable block of code, while an async function is a non-reusable block of code",
+          "(C) A function is a code that takes arguments, while an async function is a code that does not take arguments",
+          "(D) A function is a code that modifies variables, while an async function is a code that does not modify variables"
+        ],
+        "ans": "A",
+        "explanation": "A function is a block of code that returns a value, while an async function is a block of code that returns a promise, which can be used to handle asynchronous operations.",
+        "difficulty": "hard",
+        "topic": "Async Functions"
+      },
+      {
+        "q": "What is the purpose of the keyword 'async' in an async function?",
+        "opts": [
+          "(A) To specify that a function is asynchronous",
+          "(B) To specify that a function is synchronous",
+          "(C) To specify that a function takes arguments",
+          "(D) To specify that a function does not take arguments"
+        ],
+        "ans": "A",
+        "explanation": "The keyword 'async' is used to specify that a function is asynchronous, allowing it to return a promise and handle asynchronous operations.",
+        "difficulty": "hard",
+        "topic": "Async Functions"
+      },
+      {
+        "q": "What is the difference between a function and a callback function?",
+        "opts": [
+          "(A) A function is a block of code, while a callback function is a small block of code",
+          "(B) A function is a reusable block of code, while a callback function is a non-reusable block of code",
+          "(C) A function is a code that takes arguments, while a callback function is a code that does not take arguments",
+          "(D) A function is a code that modifies variables, while a callback function is a code that does not modify variables"
+        ],
+        "ans": "A",
+        "explanation": "A function is a block of code that can be reused, while a callback function is a small block of code that is used to perform a simple operation, often as a parameter to another function.",
+        "difficulty": "hard",
+        "topic": "Callback Functions"
+      },
+      {
+        "q": "What is the purpose of the keyword 'call' in a function?",
+        "opts": [
+          "(A) To invoke a function",
+          "(B) To pass data to a function",
+          "(C) To specify a value to be returned from a function",
+          "(D) To pass a function as an argument to another function"
+        ],
+        "ans": "D",
+        "explanation": "The keyword 'call' is used to pass a function as an argument to another function, allowing the function to be invoked at a later time.",
+        "difficulty": "hard",
+        "topic": "Function Invocation"
+      }
+    ],
+    "total": 17
+  }
+}

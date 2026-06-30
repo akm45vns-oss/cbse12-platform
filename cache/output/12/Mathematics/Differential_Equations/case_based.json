@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Differential Equations",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:29:23.784Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The rate at which a radioactive substance decays is given by the differential equation: dN/dt = -kN, where N is the amount of substance present at time t and k is a positive constant. The initial amount of the substance is 100 grams. Find the amount of the substance present after 2 hours if k = 0.1 per hour.",
+        "questions": [
+          {
+            "q": "What is the given differential equation?",
+            "opts": [
+              "dN/dt = -kN",
+              "dN/dt = kN",
+              "dN/dt = -kN + C",
+              "dN/dt = kN + C"
+            ],
+            "ans": "A",
+            "explanation": "The given differential equation is dN/dt = -kN."
+          },
+          {
+            "q": "What is the initial condition for this problem?",
+            "opts": [
+              "N(0) = 50",
+              "N(0) = 100",
+              "N(0) = 200",
+              "N(0) = 250"
+            ],
+            "ans": "B",
+            "explanation": "The initial amount of the substance is 100 grams."
+          },
+          {
+            "q": "What is the rate at which the substance is decaying?",
+            "opts": [
+              "k",
+              "-k",
+              "k^2",
+              "-k^2"
+            ],
+            "ans": "A",
+            "explanation": "The rate at which the substance is decaying is given by k."
+          },
+          {
+            "q": "How many grams of the substance will be left after 2 hours?",
+            "opts": [
+              "50",
+              "75",
+              "90",
+              "100"
+            ],
+            "ans": "B",
+            "explanation": "To find the amount of substance present after 2 hours, we need to solve the differential equation dN/dt = -kN with the initial condition N(0) = 100."
+          },
+          {
+            "q": "What is the value of k in this problem?",
+            "opts": [
+              "0.1",
+              "0.2",
+              "0.3",
+              "0.4"
+            ],
+            "ans": "A",
+            "explanation": "The value of k is given as 0.1 per hour."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A body starts falling from rest under the influence of gravity. The distance s(t) it has fallen after time t is given by the differential equation: ds/dt = g, where g is the acceleration due to gravity. Find the distance fallen by the body after 5 seconds if g = 9.8 m/s^2.",
+        "questions": [
+          {
+            "q": "What is the given differential equation?",
+            "opts": [
+              "ds/dt = g",
+              "ds/dt = -g",
+              "ds/dt = g + C",
+              "ds/dt = -g + C"
+            ],
+            "ans": "A",
+            "explanation": "The given differential equation is ds/dt = g."
+          },
+          {
+            "q": "What is the initial condition for this problem?",
+            "opts": [
+              "s(0) = 0",
+              "s(0) = 5",
+              "s(0) = 10",
+              "s(0) = 15"
+            ],
+            "ans": "A",
+            "explanation": "The body starts falling from rest, so s(0) = 0."
+          },
+          {
+            "q": "What is the acceleration due to gravity in this problem?",
+            "opts": [
+              "g",
+              "-g",
+              "g^2",
+              "-g^2"
+            ],
+            "ans": "A",
+            "explanation": "The acceleration due to gravity is given as g."
+          },
+          {
+            "q": "How many meters will the body have fallen after 5 seconds?",
+            "opts": [
+              "45",
+              "49",
+              "50",
+              "60"
+            ],
+            "ans": "A",
+            "explanation": "To find the distance fallen by the body after 5 seconds, we need to solve the differential equation ds/dt = g with the initial condition s(0) = 0."
+          },
+          {
+            "q": "What is the value of g in this problem?",
+            "opts": [
+              "9.8",
+              "10",
+              "10.8",
+              "11"
+            ],
+            "ans": "A",
+            "explanation": "The value of g is given as 9.8 m/s^2."
+          }
+        ]
+      }
+    ]
+  }
+}

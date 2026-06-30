@@ -406,6 +406,30 @@ export async function getChapterNotes(classLevel, subject, chapter) {
     ? { classLevel: "12", subject: classLevel, chapter: subject }
     : { classLevel, subject, chapter };
 
+  // 1. Fetch from content_library (NEW MODULAR PIPELINE)
+  const { data: libData, error: libError } = await supabase
+    .from("content_library")
+    .select("content_type, data")
+    .eq("class_level", args.classLevel)
+    .eq("subject", args.subject)
+    .eq("chapter", args.chapter)
+    .eq("is_valid", true);
+
+  if (libData && libData.length > 0) {
+    // Transform into a structured object
+    const structuredNotes = {};
+    for (const row of libData) {
+      structuredNotes[row.content_type] = row.data;
+    }
+    
+    // If we have at least one note type, we consider this a modular note object
+    if (Object.keys(structuredNotes).length > 0) {
+      structuredNotes.isModular = true; // Flag for the frontend to know it's the new format
+      return structuredNotes;
+    }
+  }
+
+  // 2. Fallback to old legacy chapter_notes table
   const { data, error } = await supabase
     .from("chapter_notes")
     .select("notes")
@@ -415,21 +439,6 @@ export async function getChapterNotes(classLevel, subject, chapter) {
     .maybeSingle();
 
   if (data && data.notes) return data.notes;
-
-  // Fallback: Query content_library table (e.g. for Class 11 notes)
-  const { data: libData, error: libError } = await supabase
-    .from("content_library")
-    .select("data")
-    .eq("class_level", args.classLevel)
-    .eq("subject", args.subject)
-    .eq("chapter", args.chapter)
-    .eq("content_type", "detailed_notes")
-    .eq("is_valid", true)
-    .maybeSingle();
-
-  if (libData && libData.data && libData.data.markdown) {
-    return libData.data.markdown;
-  }
 
   return null;
 }

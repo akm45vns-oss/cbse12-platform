@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Matrices",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:27:20.856Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The order of a matrix is the number of rows and columns it contains.",
+        "reason": "Reason (R): It is used to describe the dimension of the matrix.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The order of a matrix is indeed the number of rows and columns it contains, which describes its dimension."
+      },
+      {
+        "assertion": "Assertion (A): Matrices cannot be added if they do not have the same order.",
+        "reason": "Reason (R): Adding matrices involves adding corresponding elements, which can only be done if the matrices have the same order.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Matrices can only be added if they have the same order, as adding corresponding elements requires them to be of the same size."
+      },
+      {
+        "assertion": "Assertion (A): Diagonal elements of a skew symmetric matrix are all zero.",
+        "reason": "Reason (R): In a skew symmetric matrix, the transpose of the matrix is equal to its negative, so the diagonal elements must be zero to satisfy this condition.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "In a skew symmetric matrix, the diagonal elements are indeed zero, as the transpose of the matrix being equal to its negative implies that the diagonal elements must be zero."
+      },
+      {
+        "assertion": "Assertion (A): If A and B are square matrices of the same order, then (AB)^T = BA^T.",
+        "reason": "Reason (R): Using the property (AB)^T = B^T A^T, we can rewrite (AB)^T = (A^T)^T (B^T)^T = BA^T, as A and B are square matrices.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The correct property (AB)^T = B^T A^T holds for square matrices A and B of the same order, and it can be proven using this property."
+      },
+      {
+        "assertion": "Assertion (A): If A and B are square matrices of the same order, then (AB)^-1 = B^-1 A^-1.",
+        "reason": "Reason (R): This is not true for all square matrices A and B, as the inverse of a product of matrices is not equal to the product of the inverses in general.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The statement (AB)^-1 = B^-1 A^-1 is not true for all square matrices A and B, as the inverse of a product of matrices is not equal to the product of the inverses in general."
+      },
+      {
+        "assertion": "Assertion (A): If A is a square matrix, then A^2 = A A.",
+        "reason": "Reason (R): This is true, as matrix multiplication is associative, so A^2 = A A = A (A A) = (A A) A = A^2 A, which implies that A^2 = A A.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The statement A^2 = A A is true, as matrix multiplication is associative, and it can be proven using this property."
+      },
+      {
+        "assertion": "Assertion (A): If A is a square matrix, then (A^2)^T = (A^T)^2.",
+        "reason": "Reason (R): Using the property (AB)^T = B^T A^T, we can rewrite (A^2)^T = (A A)^T = A^T A^T = (A^T)^2.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The statement (A^2)^T = (A^T)^2 is true, and it can be proven using the property (AB)^T = B^T A^T."
+      },
+      {
+        "assertion": "Assertion (A): If A is a square matrix, then (A^-1)^T = (A^T)^-1.",
+        "reason": "Reason (R): This is true, as the inverse of the transpose of a matrix is equal to the transpose of its inverse, so (A^-1)^T = (A^T)^-1.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The statement (A^-1)^T = (A^T)^-1 is true, as the inverse of the transpose of a matrix is equal to the transpose of its inverse."
+      },
+      {
+        "assertion": "Assertion (A): The inverse of a skew symmetric matrix does not exist.",
+        "reason": "Reason (R): A skew symmetric matrix has a non-zero determinant, so its inverse does not exist.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The statement The inverse of a skew symmetric matrix does not exist is true, as a skew symmetric matrix has a non-zero determinant, so its inverse does not exist."
+      },
+      {
+        "assertion": "Assertion (A): The transpose of a matrix can be found by interchanging its rows and columns.",
+        "reason": "Reason (R): This is false, as the transpose of a matrix is found by interchanging its rows and columns, but the order of the rows and columns must also be reversed.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The statement The transpose of a matrix can be found by interchanging its rows and columns is false, as the order of the rows and columns must also be reversed."
+      }
+    ],
+    "total": 10
+  }
+}

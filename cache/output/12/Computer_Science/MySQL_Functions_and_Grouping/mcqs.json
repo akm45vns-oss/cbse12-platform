@@ -1,0 +1,248 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "MySQL Functions and Grouping",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:40:11.029Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Which MySQL function is used to get the current date?",
+        "opts": [
+          "NOW()",
+          "CURDATE()",
+          "DATEDIFF()",
+          "DATE_ADD()"
+        ],
+        "ans": "A",
+        "explanation": "NOW() returns the current date and time. CURDATE() is used to get the current date, DATEDIFF() is used to calculate the difference between two dates, and DATE_ADD() is used to add a specified interval to a date.",
+        "difficulty": "easy",
+        "topic": "Date and Time Functions"
+      },
+      {
+        "q": "What does the GROUP BY clause do in a MySQL query?",
+        "opts": [
+          "It sorts the data in ascending order",
+          "It groups the data based on one or more columns",
+          "It filters the data based on a condition",
+          "It updates the data in the database"
+        ],
+        "ans": "B",
+        "explanation": "The GROUP BY clause is used to group the data based on one or more columns, so that we can perform aggregate functions like SUM, COUNT, AVG, etc.",
+        "difficulty": "easy",
+        "topic": "Grouping"
+      },
+      {
+        "q": "Which MySQL function is used to get the sum of all values in a column?",
+        "opts": [
+          "SUM()",
+          "MAX()",
+          "MIN()",
+          "COUNT()"
+        ],
+        "ans": "A",
+        "explanation": "The SUM() function is used to get the sum of all values in a column.",
+        "difficulty": "easy",
+        "topic": "Aggregate Functions"
+      },
+      {
+        "q": "What is the purpose of the HAVING clause in a MySQL query?",
+        "opts": [
+          "It filters the grouped data based on a condition",
+          "It sorts the grouped data in ascending order",
+          "It updates the grouped data in the database",
+          "It groups the data based on one or more columns"
+        ],
+        "ans": "A",
+        "explanation": "The HAVING clause is used to filter the grouped data based on a condition.",
+        "difficulty": "medium",
+        "topic": "Grouping"
+      },
+      {
+        "q": "Which MySQL function is used to get the maximum value in a column?",
+        "opts": [
+          "MAX()",
+          "MIN()",
+          "SUM()",
+          "COUNT()"
+        ],
+        "ans": "A",
+        "explanation": "The MAX() function is used to get the maximum value in a column.",
+        "difficulty": "medium",
+        "topic": "Aggregate Functions"
+      },
+      {
+        "q": "How can you use the GROUP BY clause with multiple columns?",
+        "opts": [
+          "GROUP BY column1, column2; ",
+          "GROUP BY column1 OR column2; ",
+          "GROUP BY column1 AND column2; ",
+          "GROUP BY column1, column2, column3; "
+        ],
+        "ans": "D",
+        "explanation": "To group the data by multiple columns, we can use the GROUP BY clause with multiple columns separated by commas.",
+        "difficulty": "medium",
+        "topic": "Grouping"
+      },
+      {
+        "q": "What is the difference between the WHERE and HAVING clauses in a MySQL query?",
+        "opts": [
+          "WHERE clause filters the data before grouping, HAVING clause filters the data after grouping",
+          "WHERE clause filters the data after grouping, HAVING clause filters the data before grouping",
+          "WHERE clause is used for filtering, HAVING clause is used for grouping",
+          "WHERE clause is used for grouping, HAVING clause is used for filtering"
+        ],
+        "ans": "A",
+        "explanation": "The WHERE clause filters the data before grouping, while the HAVING clause filters the data after grouping.",
+        "difficulty": "medium",
+        "topic": "Grouping"
+      },
+      {
+        "q": "Which MySQL function is used to get the average of all values in a column?",
+        "opts": [
+          "AVG()",
+          "MAX()",
+          "MIN()",
+          "COUNT()"
+        ],
+        "ans": "A",
+        "explanation": "The AVG() function is used to get the average of all values in a column.",
+        "difficulty": "medium",
+        "topic": "Aggregate Functions"
+      },
+      {
+        "q": "How can you use the GROUP BY clause with aggregate functions?",
+        "opts": [
+          "GROUP BY column; ",
+          "GROUP BY column1, column2; ",
+          "GROUP BY column1 AND column2; ",
+          "GROUP BY column1, column2, column3; "
+        ],
+        "ans": "B",
+        "explanation": "To use the GROUP BY clause with aggregate functions, we can specify the column(s) to group by and the aggregate function to use.",
+        "difficulty": "medium",
+        "topic": "Grouping"
+      },
+      {
+        "q": "What is the purpose of the ORDER BY clause in a MySQL query?",
+        "opts": [
+          "It sorts the data in ascending or descending order",
+          "It filters the data based on a condition",
+          "It groups the data based on one or more columns",
+          "It updates the data in the database"
+        ],
+        "ans": "A",
+        "explanation": "The ORDER BY clause is used to sort the data in ascending or descending order.",
+        "difficulty": "easy",
+        "topic": "Sorting"
+      },
+      {
+        "q": "Which MySQL function is used to get the minimum value in a column?",
+        "opts": [
+          "MIN()",
+          "MAX()",
+          "SUM()",
+          "COUNT()"
+        ],
+        "ans": "A",
+        "explanation": "The MIN() function is used to get the minimum value in a column.",
+        "difficulty": "medium",
+        "topic": "Aggregate Functions"
+      },
+      {
+        "q": "How can you use the ORDER BY clause with multiple columns?",
+        "opts": [
+          "ORDER BY column1, column2; ",
+          "ORDER BY column1 OR column2; ",
+          "ORDER BY column1 AND column2; ",
+          "ORDER BY column1, column2, column3; "
+        ],
+        "ans": "D",
+        "explanation": "To sort the data by multiple columns, we can use the ORDER BY clause with multiple columns separated by commas.",
+        "difficulty": "medium",
+        "topic": "Sorting"
+      },
+      {
+        "q": "What is the difference between the ASC and DESC keywords in the ORDER BY clause?",
+        "opts": [
+          "ASC sorts the data in descending order, DESC sorts the data in ascending order",
+          "ASC sorts the data in ascending order, DESC sorts the data in descending order",
+          "ASC is used for grouping, DESC is used for sorting",
+          "ASC is used for sorting, DESC is used for grouping"
+        ],
+        "ans": "B",
+        "explanation": "The ASC keyword sorts the data in ascending order, while the DESC keyword sorts the data in descending order.",
+        "difficulty": "medium",
+        "topic": "Sorting"
+      },
+      {
+        "q": "Which MySQL function is used to get the count of all rows in a table?",
+        "opts": [
+          "COUNT()",
+          "MAX()",
+          "MIN()",
+          "SUM()"
+        ],
+        "ans": "A",
+        "explanation": "The COUNT() function is used to get the count of all rows in a table.",
+        "difficulty": "hard",
+        "topic": "Aggregate Functions"
+      },
+      {
+        "q": "How can you use the HAVING clause with aggregate functions?",
+        "opts": [
+          "HAVING column > 0; ",
+          "HAVING column < 0; ",
+          "HAVING column = 0; ",
+          "HAVING column != 0; "
+        ],
+        "ans": "A",
+        "explanation": "To use the HAVING clause with aggregate functions, we can specify the condition to apply to the grouped data.",
+        "difficulty": "hard",
+        "topic": "Grouping"
+      },
+      {
+        "q": "What is the purpose of the GROUP BY ALL clause in a MySQL query?",
+        "opts": [
+          "It groups the data based on all columns",
+          "It groups the data based on all distinct values in a column",
+          "It groups the data based on all NULL values in a column",
+          "It groups the data based on all non-NULL values in a column"
+        ],
+        "ans": "A",
+        "explanation": "The GROUP BY ALL clause is used to group the data based on all columns.",
+        "difficulty": "hard",
+        "topic": "Grouping"
+      },
+      {
+        "q": "Which MySQL function is used to get the sum of all distinct values in a column?",
+        "opts": [
+          "SUM()",
+          "MAX()",
+          "MIN()",
+          "COUNT(DISTINCT)"
+        ],
+        "ans": "B",
+        "explanation": "The MAX() function is used to get the maximum value in a column, but to get the sum of all distinct values, we can use the SUM() function with the DISTINCT keyword.",
+        "difficulty": "hard",
+        "topic": "Aggregate Functions"
+      },
+      {
+        "q": "How can you use the ORDER BY clause with a subquery?",
+        "opts": [
+          "ORDER BY (SELECT column FROM table); ",
+          "ORDER BY (SELECT column FROM table DESC); ",
+          "ORDER BY (SELECT column FROM table ASC); ",
+          "ORDER BY (SELECT column FROM table); "
+        ],
+        "ans": "A",
+        "explanation": "To use the ORDER BY clause with a subquery, we can use the ORDER BY clause with a subquery in the SELECT statement.",
+        "difficulty": "hard",
+        "topic": "Sorting"
+      }
+    ],
+    "total": 18
+  }
+}

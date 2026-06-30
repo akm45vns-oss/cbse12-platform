@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electrostatic Potential and Capacitance",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:07:58.249Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The electric potential at a point outside a charged sphere is the same as the potential at the surface of the sphere.",
+        "reason": "Reason (R): According to Gauss's law, the electric flux through a closed surface is zero for a point charge outside the sphere.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This statement is true because the electric field outside a charged sphere is radial and constant, so the potential difference between the surface and a point outside is zero."
+      },
+      {
+        "assertion": "Assertion (A): The capacitance of a parallel plate capacitor is independent of the plate dimensions.",
+        "reason": "Reason (R): The capacitance of a parallel plate capacitor is determined by the ratio of the charge to the potential difference between the plates.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This statement is true because the capacitance of a parallel plate capacitor is given by the formula C = ε₀A/d, where A is the area of the plates and d is the distance between them."
+      },
+      {
+        "assertion": "Assertion (A): The potential difference between two points in an electric field is the same for all paths between the points.",
+        "reason": "Reason (R): The electric potential is a scalar quantity and is defined as the work done per unit charge in moving a charge between two points.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This statement is true because the electric field is conservative and the potential difference is path-independent."
+      },
+      {
+        "assertion": "Assertion (A): The capacitance of a capacitor depends on the dielectric constant of the material between the plates.",
+        "reason": "Reason (R): The capacitance of a capacitor is given by the formula C = ε₀εᵣA/d, where εᵣ is the relative permittivity of the material between the plates.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This statement is true because the capacitance of a capacitor is increased by a factor of εᵣ when a dielectric material is inserted between the plates."
+      },
+      {
+        "assertion": "Assertion (A): The electric potential at a point due to a point charge is independent of the distance from the point charge.",
+        "reason": "Reason (R): The electric potential at a point due to a point charge is given by the formula V = kq/r.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "This statement is false because the electric potential at a point due to a point charge decreases with increasing distance from the point charge."
+      },
+      {
+        "assertion": "Assertion (A): The capacitance of a parallel plate capacitor is directly proportional to the area of the plates.",
+        "reason": "Reason (R): The capacitance of a parallel plate capacitor is given by the formula C = ε₀A/d.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This statement is true because the capacitance of a parallel plate capacitor is directly proportional to the area of the plates."
+      },
+      {
+        "assertion": "Assertion (A): The electric potential at a point due to a dipole is zero.",
+        "reason": "Reason (R): The electric potential at a point due to a dipole is given by the formula V = p⋅r/r³.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "This statement is false because the electric potential at a point due to a dipole is not zero, but is proportional to the dipole moment and the distance from the dipole."
+      },
+      {
+        "assertion": "Assertion (A): The capacitance of a capacitor is independent of the frequency of the alternating current.",
+        "reason": "Reason (R): The capacitance of a capacitor is determined by the geometry of the plates and the dielectric material between them.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This statement is true because the capacitance of a capacitor is independent of the frequency of the alternating current."
+      },
+      {
+        "assertion": "Assertion (A): The electric potential at a point in the presence of a uniform electric field is zero.",
+        "reason": "Reason (R): The electric potential is a scalar quantity and is defined as the work done per unit charge in moving a charge between two points.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This statement is false because the electric potential at a point in the presence of a uniform electric field is not zero, but is equal to the potential difference between the point and a reference point."
+      },
+      {
+        "assertion": "Assertion (A): The capacitance of a capacitor is directly proportional to the area of the plates.",
+        "reason": "Reason (R): The capacitance of a capacitor is given by the formula C = ε₀εᵣA/d.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This statement is true because the capacitance of a capacitor is directly proportional to the area of the plates."
+      }
+    ],
+    "total": 10
+  }
+}

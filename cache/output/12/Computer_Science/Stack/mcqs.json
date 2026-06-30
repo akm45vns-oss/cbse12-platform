@@ -1,0 +1,261 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Stack",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:31:39.400Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a stack?",
+        "opts": [
+          "A data structure that follows LIFO principle",
+          "(B) A data structure that follows FIFO principle",
+          "(C) A data structure that follows random access",
+          "(D) A data structure that follows heap principle"
+        ],
+        "ans": "A",
+        "explanation": "A stack is a linear data structure that follows the LIFO (Last In First Out) principle.",
+        "difficulty": "easy",
+        "topic": "Introduction to Stack"
+      },
+      {
+        "q": "What is the time complexity of push operation in stack?",
+        "opts": [
+          "O(1)",
+          "(B) O(n)",
+          "(C) O(log n)",
+          "(D) O(sqrt(n))"
+        ],
+        "ans": "A",
+        "explanation": "The time complexity of push operation in stack is O(1), as it involves just adding an element at the top.",
+        "difficulty": "easy",
+        "topic": "Stack Operations"
+      },
+      {
+        "q": "What is the time complexity of pop operation in stack?",
+        "opts": [
+          "O(1)",
+          "(B) O(n)",
+          "(C) O(log n)",
+          "(D) O(sqrt(n))"
+        ],
+        "ans": "A",
+        "explanation": "The time complexity of pop operation in stack is O(1), as it involves just removing an element from the top.",
+        "difficulty": "easy",
+        "topic": "Stack Operations"
+      },
+      {
+        "q": "What is the use of a stack in compilers?",
+        "opts": [
+          "To parse the source code",
+          "(B) To generate the machine code",
+          "(C) To store the intermediate results",
+          "(D) To store the symbols table"
+        ],
+        "ans": "B",
+        "explanation": "A stack is used to store the intermediate results during the compilation process.",
+        "difficulty": "medium",
+        "topic": "Applications of Stack"
+      },
+      {
+        "q": "What is the time complexity of searching an element in stack?",
+        "opts": [
+          "O(n)",
+          "(B) O(log n)",
+          "(C) O(1)",
+          "(D) O(sqrt(n))"
+        ],
+        "ans": "C",
+        "explanation": "The time complexity of searching an element in stack is O(1), as it involves just checking the top element.",
+        "difficulty": "medium",
+        "topic": "Stack Operations"
+      },
+      {
+        "q": "What is the use of a stack in expression evaluation?",
+        "opts": [
+          "To evaluate the postfix expressions",
+          "(B) To evaluate the infix expressions",
+          "(C) To evaluate the prefix expressions",
+          "(D) To evaluate the postfix expressions and infix expressions"
+        ],
+        "ans": "D",
+        "explanation": "A stack is used to evaluate the postfix and infix expressions.",
+        "difficulty": "medium",
+        "topic": "Applications of Stack"
+      },
+      {
+        "q": "What is the time complexity of reversing a linked list using stack?",
+        "opts": [
+          "O(n)",
+          "(B) O(n^2)",
+          "(C) O(log n)",
+          "(D) O(sqrt(n))"
+        ],
+        "ans": "A",
+        "explanation": "The time complexity of reversing a linked list using stack is O(n), as it involves pushing each node onto the stack and then popping each node off the stack.",
+        "difficulty": "hard",
+        "topic": "Reversing Linked List using Stack"
+      },
+      {
+        "q": "What is the space complexity of reversing a linked list using stack?",
+        "opts": [
+          "O(n)",
+          "(B) O(1)",
+          "(C) O(n^2)",
+          "(D) O(sqrt(n))"
+        ],
+        "ans": "A",
+        "explanation": "The space complexity of reversing a linked list using stack is O(n), as it involves storing each node in the stack.",
+        "difficulty": "hard",
+        "topic": "Reversing Linked List using Stack"
+      },
+      {
+        "q": "What is the time complexity of solving the Tower of Hanoi problem using stack?",
+        "opts": [
+          "O(2^n)",
+          "(B) O(n^2)",
+          "(C) O(n)",
+          "(D) O(log n)"
+        ],
+        "ans": "A",
+        "explanation": "The time complexity of solving the Tower of Hanoi problem using stack is O(2^n), as it involves recursively moving the disks.",
+        "difficulty": "hard",
+        "topic": "Tower of Hanoi Problem"
+      },
+      {
+        "q": "What is the space complexity of solving the Tower of Hanoi problem using stack?",
+        "opts": [
+          "O(2^n)",
+          "(B) O(n^2)",
+          "(C) O(n)",
+          "(D) O(log n)"
+        ],
+        "ans": "A",
+        "explanation": "The space complexity of solving the Tower of Hanoi problem using stack is O(2^n), as it involves storing each move in the stack.",
+        "difficulty": "hard",
+        "topic": "Tower of Hanoi Problem"
+      },
+      {
+        "q": "What is the use of a stack in parsing the syntax of a programming language?",
+        "opts": [
+          "To parse the syntax of the language",
+          "(B) To generate the syntax of the language",
+          "(C) To store the syntax trees",
+          "(D) To store the symbols table"
+        ],
+        "ans": "C",
+        "explanation": "A stack is used to store the syntax trees during the parsing process.",
+        "difficulty": "medium",
+        "topic": "Applications of Stack"
+      },
+      {
+        "q": "What is the time complexity of evaluating a postfix expression using stack?",
+        "opts": [
+          "O(n)",
+          "(B) O(n^2)",
+          "(C) O(log n)",
+          "(D) O(sqrt(n))"
+        ],
+        "ans": "A",
+        "explanation": "The time complexity of evaluating a postfix expression using stack is O(n), as it involves popping each operator off the stack.",
+        "difficulty": "medium",
+        "topic": "Evaluating Postfix Expressions"
+      },
+      {
+        "q": "What is the space complexity of evaluating a postfix expression using stack?",
+        "opts": [
+          "O(n)",
+          "(B) O(1)",
+          "(C) O(n^2)",
+          "(D) O(sqrt(n))"
+        ],
+        "ans": "A",
+        "explanation": "The space complexity of evaluating a postfix expression using stack is O(n), as it involves storing each operand in the stack.",
+        "difficulty": "medium",
+        "topic": "Evaluating Postfix Expressions"
+      },
+      {
+        "q": "What is the use of a stack in implementing recursive algorithms?",
+        "opts": [
+          "To implement the recursive algorithms",
+          "(B) To implement the iterative algorithms",
+          "(C) To store the recursive calls",
+          "(D) To store the symbols table"
+        ],
+        "ans": "C",
+        "explanation": "A stack is used to store the recursive calls during the execution of recursive algorithms.",
+        "difficulty": "medium",
+        "topic": "Applications of Stack"
+      },
+      {
+        "q": "What is the time complexity of implementing the recursive algorithms using stack?",
+        "opts": [
+          "O(n)",
+          "(B) O(n^2)",
+          "(C) O(log n)",
+          "(D) O(sqrt(n))"
+        ],
+        "ans": "A",
+        "explanation": "The time complexity of implementing the recursive algorithms using stack is O(n), as it involves pushing each recursive call onto the stack.",
+        "difficulty": "hard",
+        "topic": "Implementing Recursive Algorithms"
+      },
+      {
+        "q": "What is the space complexity of implementing the recursive algorithms using stack?",
+        "opts": [
+          "O(n)",
+          "(B) O(1)",
+          "(C) O(n^2)",
+          "(D) O(sqrt(n))"
+        ],
+        "ans": "A",
+        "explanation": "The space complexity of implementing the recursive algorithms using stack is O(n), as it involves storing each recursive call in the stack.",
+        "difficulty": "hard",
+        "topic": "Implementing Recursive Algorithms"
+      },
+      {
+        "q": "What is the use of a stack in implementing the undo and redo functions?",
+        "opts": [
+          "To implement the undo and redo functions",
+          "(B) To implement the copy and paste functions",
+          "(C) To store the undo and redo history",
+          "(D) To store the symbols table"
+        ],
+        "ans": "C",
+        "explanation": "A stack is used to store the undo and redo history during the execution of the undo and redo functions.",
+        "difficulty": "medium",
+        "topic": "Applications of Stack"
+      },
+      {
+        "q": "What is the time complexity of implementing the undo and redo functions using stack?",
+        "opts": [
+          "O(n)",
+          "(B) O(n^2)",
+          "(C) O(log n)",
+          "(D) O(sqrt(n))"
+        ],
+        "ans": "A",
+        "explanation": "The time complexity of implementing the undo and redo functions using stack is O(n), as it involves pushing each undo and redo command onto the stack.",
+        "difficulty": "hard",
+        "topic": "Implementing Undo and Redo Functions"
+      },
+      {
+        "q": "What is the space complexity of implementing the undo and redo functions using stack?",
+        "opts": [
+          "O(n)",
+          "(B) O(1)",
+          "(C) O(n^2)",
+          "(D) O(sqrt(n))"
+        ],
+        "ans": "A",
+        "explanation": "The space complexity of implementing the undo and redo functions using stack is O(n), as it involves storing each undo and redo command in the stack.",
+        "difficulty": "hard",
+        "topic": "Implementing Undo and Redo Functions"
+      }
+    ],
+    "total": 19
+  }
+}

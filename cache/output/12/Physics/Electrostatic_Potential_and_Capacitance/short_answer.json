@@ -1,0 +1,207 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electrostatic Potential and Capacitance",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:14:45.987Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define electrostatic potential at a point.",
+        "marks": 1,
+        "answer": "Electrostatic potential at a point in an electric field is defined as the work done in bringing a unit positive charge from infinity to that point.",
+        "key_points": [
+          "Work done in bringing a unit positive charge from infinity",
+          "Electric field"
+        ],
+        "topic": "Electrostatic Potential"
+      },
+      {
+        "q": "State the formula for electric potential at a point.",
+        "marks": 1,
+        "answer": "V = kq/r",
+        "key_points": [
+          "Formula for electric potential",
+          "k: Coulomb's constant",
+          "q: charge",
+          "r: distance"
+        ],
+        "topic": "Electrostatic Potential"
+      },
+      {
+        "q": "Define capacitance.",
+        "marks": 1,
+        "answer": "Capacitance is the ability of a conductor to store electric charge.",
+        "key_points": [
+          "Ability to store electric charge",
+          "Conductor"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "What is a capacitor?",
+        "marks": 1,
+        "answer": "A capacitor is an electrical device that stores electric charge.",
+        "key_points": [
+          "Electrical device",
+          "Stores electric charge"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "State the formula for capacitance.",
+        "marks": 1,
+        "answer": "C = Q/V",
+        "key_points": [
+          "Formula for capacitance",
+          "C: capacitance",
+          "Q: charge",
+          "V: potential difference"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "What is a parallel plate capacitor?",
+        "marks": 1,
+        "answer": "A parallel plate capacitor is a type of capacitor that consists of two parallel plates separated by a dielectric material.",
+        "key_points": [
+          "Type of capacitor",
+          "Parallel plates",
+          "Dielectric material"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "Derive the formula for capacitance of a parallel plate capacitor.",
+        "marks": 2,
+        "answer": "The formula for capacitance of a parallel plate capacitor is C = ε₀A/d, where ε₀ is the permittivity of free space, A is the area of the plates, and d is the distance between the plates.",
+        "key_points": [
+          "Capacitance formula",
+          "ε₀: permittivity of free space",
+          "A: area of plates",
+          "d: distance between plates"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "Describe the working of a capacitor in an LCR circuit.",
+        "marks": 2,
+        "answer": "In an LCR circuit, the capacitor stores electric charge and opposes the change in current. When the voltage is applied, the capacitor charges up and the current through it decreases. The capacitor acts as a reservoir of charge and helps to filter out the AC signal.",
+        "key_points": [
+          "LCR circuit",
+          "Capacitor stores electric charge",
+          "Opposes change in current"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "What is the significance of a capacitor in a DC circuit?",
+        "marks": 2,
+        "answer": "A capacitor in a DC circuit acts as a short circuit and allows the current to flow freely. However, it also stores electric charge and can filter out AC signals.",
+        "key_points": [
+          "DC circuit",
+          "Capacitor acts as short circuit",
+          "Stores electric charge"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "Derive the formula for the capacitance of a spherical conductor.",
+        "marks": 3,
+        "answer": "The formula for the capacitance of a spherical conductor is C = 4πε₀R, where ε₀ is the permittivity of free space and R is the radius of the sphere.",
+        "key_points": [
+          "Capacitance formula",
+          "ε₀: permittivity of free space",
+          "R: radius of sphere"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "Describe the concept of energy stored in a capacitor.",
+        "marks": 3,
+        "answer": "The energy stored in a capacitor is given by the formula U = 1/2CV², where C is the capacitance and V is the potential difference across the capacitor. The energy stored in a capacitor is a maximum when the capacitor is fully charged.",
+        "key_points": [
+          "Energy stored in capacitor",
+          "U = 1/2CV²",
+          "Capacitance",
+          "Potential difference"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "Derive the formula for the capacitance of a parallel plate capacitor with a dielectric medium.",
+        "marks": 3,
+        "answer": "The formula for the capacitance of a parallel plate capacitor with a dielectric medium is C = (εᵣε₀A)/d, where εᵣ is the relative permittivity of the dielectric medium, ε₀ is the permittivity of free space, A is the area of the plates, and d is the distance between the plates.",
+        "key_points": [
+          "Capacitance formula",
+          "εᵣ: relative permittivity of dielectric medium",
+          "ε₀: permittivity of free space",
+          "A: area of plates",
+          "d: distance between plates"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "Describe the concept of equivalent capacitance in a series capacitor circuit.",
+        "marks": 3,
+        "answer": "In a series capacitor circuit, the equivalent capacitance is given by the formula 1/Cᵉ = 1/C₁ + 1/C₂ + ... + 1/Cₙ, where Cᵉ is the equivalent capacitance and C₁, C₂, ..., Cₙ are the individual capacitances. The equivalent capacitance is always less than the smallest capacitance in the circuit.",
+        "key_points": [
+          "Equivalent capacitance",
+          "Series capacitor circuit",
+          "1/Cᵉ = 1/C₁ + 1/C₂ + ... + 1/Cₙ"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "Derive the formula for the potential difference across a capacitor in an LCR circuit.",
+        "marks": 3,
+        "answer": "The formula for the potential difference across a capacitor in an LCR circuit is V = V₀cos(ωt), where V₀ is the maximum potential difference and ω is the angular frequency.",
+        "key_points": [
+          "Potential difference",
+          "LCR circuit",
+          "V = V₀cos(ωt)"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "Describe the concept of energy stored in an LCR circuit.",
+        "marks": 3,
+        "answer": "The energy stored in an LCR circuit is given by the formula U = 1/2CV², where C is the capacitance and V is the potential difference across the capacitor. The energy stored in an LCR circuit is a maximum when the capacitor is fully charged.",
+        "key_points": [
+          "Energy stored in LCR circuit",
+          "U = 1/2CV²",
+          "Capacitance",
+          "Potential difference"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "Derive the formula for the resonance frequency of an LCR circuit.",
+        "marks": 3,
+        "answer": "The formula for the resonance frequency of an LCR circuit is ωᵣ = 1/√LC, where ωᵣ is the resonance frequency, L is the inductance, and C is the capacitance.",
+        "key_points": [
+          "Resonance frequency",
+          "ωᵣ = 1/√LC",
+          "LCR circuit"
+        ],
+        "topic": "Capacitance"
+      },
+      {
+        "q": "Describe the concept of Q-factor of a capacitor.",
+        "marks": 3,
+        "answer": "The Q-factor of a capacitor is given by the formula Q = ωᵣL/R, where ωᵣ is the resonance frequency, L is the inductance, and R is the resistance. The Q-factor is a measure of the ratio of the energy stored in the capacitor to the energy dissipated in the resistance.",
+        "key_points": [
+          "Q-factor",
+          "Q = ωᵣL/R",
+          "Resonance frequency",
+          "Inductance",
+          "Resistance"
+        ],
+        "topic": "Capacitance"
+      }
+    ],
+    "total": 17
+  }
+}

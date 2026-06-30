@@ -1,0 +1,12 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Matrices",
+  "content_type": "short_notes",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:15:48.979Z",
+  "version": "1.0",
+  "data": {
+    "markdown": "# 3. SHORT NOTES (QUICK REVISION)\n\n## Matrices\n\n### Definition\n- **Matrix:** Rectangular array of numbers, symbols, or expressions.\n- **Order of a matrix:** No. of rows x No. of columns.\n- **Elements:** Numbers or symbols in a matrix.\n\n### Types of Matrices\n- **Row matrix:** 1 row, any no. of columns.\n- **Column matrix:** 1 column, any no. of rows.\n- **Zero matrix:** All elements are zero.\n- **Identity matrix:** Main diagonal elements are 1, others are 0.\n\n### Operations on Matrices\n- **Addition:** Matrices with same order.\n- **Subtraction:** Matrices with same order.\n- **Scalar multiplication:** Multiplying matrix by a number.\n- **Matrix multiplication:** Only for matrices A & B if no. of columns in A = no. of rows in B.\n\n### Laws of Matrix Operations\n- **Commutative law of addition:** A + B = B + A.\n- **Associative law of addition:** (A + B) + C = A + (B + C).\n- **Multiplication law:** A(BC) = (AB)C.\n- **Multiplicative law:** A(B + C) = AB + AC.\n- **Distributive law:** A(B - C) = AB - AC.\n\n### Transpose of a Matrix\n- **Transpose of a matrix:** Interchanging rows and columns.\n- **Properties:** (A^T)^T = A, (A + B)^T = A^T + B^T, (AB)^T = B^T A^T.\n\n### Adjoint and Inverse of a Matrix\n- **Adjoint of a matrix:** Transpose of the matrix of cofactors.\n- **Inverse of a matrix:** Multiplicative inverse, denoted as A^-1.\n- **Properties:** A A^-1 = A^-1 A = I, (A^-1)^-1 = A.\n\n### Properties of Matrices\n- **Symmetric matrix:** A = A^T.\n- **Skew-symmetric matrix:** A = -A^T.\n- **Orthogonal matrix:** AA^T = I, A^T A = I.\n- **Hermitian matrix:** A = A^H."
+  }
+}

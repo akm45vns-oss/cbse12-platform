@@ -1,0 +1,166 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Linear Programming",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:29:46.420Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a linear programming problem?",
+        "marks": 1,
+        "answer": "A linear programming problem is a mathematical problem that involves finding the best way to allocate limited resources in order to maximize or minimize a linear objective function.",
+        "key_points": [
+          "Objective function",
+          "Constraints"
+        ],
+        "topic": "Introduction to Linear Programming"
+      },
+      {
+        "q": "State the conditions for a feasible solution in linear programming.",
+        "marks": 1,
+        "answer": "The conditions for a feasible solution in linear programming are that the solution must satisfy all the constraints and lie within the feasible region.",
+        "key_points": [
+          "Constraints",
+          "Feasible region"
+        ],
+        "topic": "Conditions for a Feasible Solution"
+      },
+      {
+        "q": "What is the graphical method of solving linear programming problems?",
+        "marks": 1,
+        "answer": "The graphical method of solving linear programming problems involves representing the objective function and the constraints as lines on a graph and finding the feasible region.",
+        "key_points": [
+          "Graphical representation",
+          "Feasible region"
+        ],
+        "topic": "Graphical Method"
+      },
+      {
+        "q": "Why is the objective function called so?",
+        "marks": 1,
+        "answer": "The objective function is called so because it represents the goal or objective of the problem, which is to be maximized or minimized.",
+        "key_points": [
+          "Objective function",
+          "Goal of the problem"
+        ],
+        "topic": "Introduction to Linear Programming"
+      },
+      {
+        "q": "State the difference between a basic feasible solution and an optimal solution.",
+        "marks": 1,
+        "answer": "A basic feasible solution is a solution that is feasible but not necessarily optimal, whereas an optimal solution is a solution that maximizes or minimizes the objective function.",
+        "key_points": [
+          "Basic feasible solution",
+          "Optimal solution"
+        ],
+        "topic": "Dual Simplex Method"
+      },
+      {
+        "q": "What is the simplex method of solving linear programming problems?",
+        "marks": 1,
+        "answer": "The simplex method of solving linear programming problems involves systematically improving the basic feasible solution until an optimal solution is found.",
+        "key_points": [
+          "Simplex method",
+          "Optimal solution"
+        ],
+        "topic": "Simplex Method"
+      },
+      {
+        "q": "Explain the concept of an optimal solution in linear programming.",
+        "marks": 2,
+        "answer": "An optimal solution in linear programming is a solution that maximizes or minimizes the objective function within the feasible region. It is the best possible solution that can be achieved under the given constraints.",
+        "key_points": [
+          "Optimal solution",
+          "Feasible region"
+        ],
+        "topic": "Introduction to Linear Programming"
+      },
+      {
+        "q": "What is the difference between a maximization problem and a minimization problem in linear programming?",
+        "marks": 2,
+        "answer": "A maximization problem involves maximizing a linear objective function, whereas a minimization problem involves minimizing a linear objective function. The approach to solving these problems is similar, but the goal is different.",
+        "key_points": [
+          "Maximization problem",
+          "Minimization problem"
+        ],
+        "topic": "Introduction to Linear Programming"
+      },
+      {
+        "q": "Explain the significance of the feasible region in linear programming.",
+        "marks": 2,
+        "answer": "The feasible region in linear programming represents all the possible solutions that satisfy the constraints. It is the region where the optimal solution can be found. The feasible region is a polygon bounded by the constraint lines.",
+        "key_points": [
+          "Feasible region",
+          "Constraints"
+        ],
+        "topic": "Conditions for a Feasible Solution"
+      },
+      {
+        "q": "What is the dual problem of a linear programming problem?",
+        "marks": 2,
+        "answer": "The dual problem of a linear programming problem is another problem that is related to the original problem. The dual problem has its own objective function and constraints, which are derived from the original problem.",
+        "key_points": [
+          "Dual problem",
+          "Linear programming"
+        ],
+        "topic": "Dual Problem"
+      },
+      {
+        "q": "Explain the concept of a basic feasible solution in linear programming.",
+        "marks": 3,
+        "answer": "A basic feasible solution in linear programming is a solution that is feasible and has a minimal number of non-zero variables. It is a solution that satisfies all the constraints and has a minimal number of basic variables.",
+        "key_points": [
+          "Basic feasible solution",
+          "Feasible solution",
+          "Basic variables"
+        ],
+        "topic": "Dual Simplex Method"
+      },
+      {
+        "q": "Solve the following linear programming problem using the graphical method: Maximize Z = 2x + 3y subject to x + y ≤ 4, x ≥ 0, y ≥ 0.",
+        "marks": 3,
+        "answer": "The feasible region is a triangle bounded by the constraint line x + y = 4 and the axes. The optimal solution is at the vertex of the triangle, which is (0, 4). The maximum value of Z is 12.",
+        "key_points": [
+          "Graphical method",
+          "Optimal solution"
+        ],
+        "topic": "Graphical Method"
+      },
+      {
+        "q": "Solve the following linear programming problem using the simplex method: Maximize Z = 3x + 2y subject to 2x + y ≤ 6, x ≥ 0, y ≥ 0.",
+        "marks": 3,
+        "answer": "The initial basic feasible solution is x = 0, y = 6. The simplex table is used to improve the solution until an optimal solution is found. The optimal solution is x = 2, y = 2, and the maximum value of Z is 10.",
+        "key_points": [
+          "Simplex method",
+          "Optimal solution"
+        ],
+        "topic": "Simplex Method"
+      },
+      {
+        "q": "Explain the concept of duality in linear programming.",
+        "marks": 3,
+        "answer": "Duality in linear programming refers to the relationship between a primal problem and its dual problem. The dual problem is a problem that is related to the original problem, and it has its own objective function and constraints. The dual problem can be used to solve the primal problem, and vice versa.",
+        "key_points": [
+          "Duality",
+          "Primal problem",
+          "Dual problem"
+        ],
+        "topic": "Dual Problem"
+      },
+      {
+        "q": "Solve the following linear programming problem using the dual simplex method: Minimize Z = 2x + 3y subject to x + y ≥ 4, x ≥ 0, y ≥ 0.",
+        "marks": 3,
+        "answer": "The initial basic feasible solution is x = 0, y = 0. The dual simplex table is used to improve the solution until an optimal solution is found. The optimal solution is x = 4, y = 0, and the minimum value of Z is 8.",
+        "key_points": [
+          "Dual simplex method",
+          "Optimal solution"
+        ],
+        "topic": "Dual Simplex Method"
+      }
+    ],
+    "total": 15
+  }
+}

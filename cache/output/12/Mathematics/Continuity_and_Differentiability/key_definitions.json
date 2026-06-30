@@ -1,0 +1,93 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Continuity and Differentiability",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:16:20.076Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Continuous Function",
+        "definition": "A function f(x) is said to be continuous at x = a if the following three conditions are satisfied: (1) f(a) is defined, (2) the limit of f(x) as x approaches a exists, and (3) the limit of f(x) as x approaches a is equal to f(a).",
+        "example": "The function f(x) = x^2 is continuous at x = 2."
+      },
+      {
+        "term": "Discontinuous Function",
+        "definition": "A function f(x) is said to be discontinuous at x = a if any of the three conditions for continuity are not satisfied.",
+        "example": "The function f(x) = 1/x is discontinuous at x = 0."
+      },
+      {
+        "term": "Piecewise Continuous Function",
+        "definition": "A function f(x) is said to be piecewise continuous if it is continuous on a finite number of intervals and has a finite number of discontinuities.",
+        "example": "The function f(x) = { 1/x, x < 0, 2x, x > 0 } is piecewise continuous."
+      },
+      {
+        "term": "Differentiable Function",
+        "definition": "A function f(x) is said to be differentiable at x = a if the limit of [f(x) - f(a)]/(x - a) as x approaches a exists.",
+        "example": "The function f(x) = x^2 is differentiable at x = 2."
+      },
+      {
+        "term": "Not Differentiable",
+        "definition": "A function f(x) is said to be not differentiable at x = a if the limit of [f(x) - f(a)]/(x - a) as x approaches a does not exist.",
+        "example": "The function f(x) = |x| is not differentiable at x = 0."
+      },
+      {
+        "term": "Derivative",
+        "definition": "The derivative of a function f(x) at x = a is denoted by f'(a) and is defined as the limit of [f(x) - f(a)]/(x - a) as x approaches a.",
+        "example": "The derivative of f(x) = x^2 at x = 2 is f'(2) = 4."
+      },
+      {
+        "term": "Geometric Representation of Differentiability",
+        "definition": "A function f(x) is differentiable at x = a if the tangent line to the graph of f(x) at x = a exists.",
+        "example": "The function f(x) = x^2 is differentiable at x = 2."
+      },
+      {
+        "term": "Differentiation Rules",
+        "definition": "There are several rules for differentiation, including the power rule, product rule, quotient rule, and chain rule.",
+        "example": "The power rule states that if f(x) = x^n, then f'(x) = nx^(n-1)."
+      },
+      {
+        "term": "Implicit Differentiation",
+        "definition": "Implicit differentiation is a technique used to find the derivative of an implicitly defined function.",
+        "example": "The function f(x, y) = x^2 + y^2 is implicitly defined, and its derivative can be found using implicit differentiation."
+      },
+      {
+        "term": "Logarithmic Differentiation",
+        "definition": "Logarithmic differentiation is a technique used to find the derivative of a function that is difficult to differentiate directly.",
+        "example": "The function f(x) = x^x is difficult to differentiate directly, but can be differentiated using logarithmic differentiation."
+      },
+      {
+        "term": "Inverse Trigonometric Functions",
+        "definition": "The inverse trigonometric functions are the inverse of the trigonometric functions, and their derivatives can be found using the chain rule.",
+        "example": "The derivative of f(x) = sin^-1(x) is f'(x) = 1/sqrt(1-x^2)."
+      },
+      {
+        "term": "Differentiation of Parametric Functions",
+        "definition": "Parametric functions are functions of the form f(t) = (x(t), y(t)), and their derivatives can be found using the chain rule.",
+        "example": "The derivative of f(t) = (t^2, t^3) is f'(t) = (2t, 3t^2)."
+      },
+      {
+        "term": "Differentiation of Polar Functions",
+        "definition": "Polar functions are functions of the form f(r, θ) = (r cos θ, r sin θ), and their derivatives can be found using the chain rule.",
+        "example": "The derivative of f(r, θ) = (r cos θ, r sin θ) is f'(r, θ) = (cos θ, sin θ)."
+      },
+      {
+        "term": "Derivative of a Composite Function",
+        "definition": "The derivative of a composite function f(g(x)) is given by the chain rule: f'(g(x)) * g'(x).",
+        "example": "The derivative of f(x) = sin(x^2) is f'(x) = cos(x^2) * 2x."
+      },
+      {
+        "term": "Derivative of a Vector Function",
+        "definition": "The derivative of a vector function f(x) = (f1(x), f2(x)) is given by the derivative of each component: f'(x) = (f1'(x), f2'(x)).",
+        "example": "The derivative of f(x) = (x^2, x^3) is f'(x) = (2x, 3x^2)."
+      },
+      {
+        "term": "Higher Order Derivatives",
+        "definition": "Higher order derivatives are derivatives of the derivative of a function.",
+        "example": "The second derivative of f(x) = x^2 is f''(x) = 2."
+      }
+    ]
+  }
+}

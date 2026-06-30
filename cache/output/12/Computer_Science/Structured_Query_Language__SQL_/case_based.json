@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:32:58.509Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Rahul is the owner of an e-commerce website that sells electronic products online. He wants to analyze the sales data to identify the best-selling products and their corresponding prices. Rahul has a database named 'electronics' that contains the following tables: 'products', 'orders', and 'order_items'. The 'products' table has columns 'product_id', 'product_name', 'price', and 'category'. The 'orders' table has columns 'order_id', 'customer_id', 'order_date', and 'total_amount'. The 'order_items' table has columns 'order_id', 'product_id', 'quantity', and 'unit_price'. Rahul wants to find the total sales amount for each product and display the top 3 best-selling products along with their total sales amount.",
+        "questions": [
+          {
+            "q": "What type of SQL query will Rahul use to find the total sales amount for each product?",
+            "opts": [
+              "GROUP BY",
+              "JOIN",
+              "ORDER BY",
+              "SUBQUERY"
+            ],
+            "ans": "A",
+            "explanation": "Rahul will use a GROUP BY query to group the order items by product and calculate the total sales amount for each product."
+          },
+          {
+            "q": "Which tables will Rahul join to find the total sales amount for each product?",
+            "opts": [
+              "products and orders",
+              "products and order_items",
+              "orders and order_items",
+              "products, orders, and order_items"
+            ],
+            "ans": "C",
+            "explanation": "Rahul will join the 'products' and 'order_items' tables to find the total sales amount for each product."
+          },
+          {
+            "q": "How will Rahul display the top 3 best-selling products along with their total sales amount?",
+            "opts": [
+              "ORDER BY and LIMIT",
+              "GROUP BY and HAVING",
+              "JOIN and GROUP BY",
+              "SUBQUERY and ORDER BY"
+            ],
+            "ans": "A",
+            "explanation": "Rahul will use the ORDER BY and LIMIT clauses to display the top 3 best-selling products along with their total sales amount."
+          },
+          {
+            "q": "What is the purpose of the 'order_items' table in the database?",
+            "opts": [
+              "To store product information",
+              "To store customer information",
+              "To store order information",
+              "To store details of products in each order"
+            ],
+            "ans": "D",
+            "explanation": "The 'order_items' table stores details of products in each order, including the product ID, quantity, and unit price."
+          },
+          {
+            "q": "Which table will Rahul use to find the customer ID and order date for each order?",
+            "opts": [
+              "products",
+              "orders",
+              "order_items",
+              "customers"
+            ],
+            "ans": "B",
+            "explanation": "Rahul will use the 'orders' table to find the customer ID and order date for each order."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "Priya is a data analyst at an online travel agency. She wants to analyze the booking data to find the top 5 destinations with the highest number of bookings and the corresponding average ticket price. Priya has a database named 'travel' that contains the following tables: 'bookings', 'destinations', and 'flights'. The 'bookings' table has columns 'booking_id', 'destination_id', 'flight_id', and 'booking_date'. The 'destinations' table has columns 'destination_id', 'destination_name', and 'country'. The 'flights' table has columns 'flight_id', 'flight_number', 'departure_airport', and 'arrival_airport'. Priya wants to find the top 5 destinations with the highest number of bookings and display the corresponding average ticket price.",
+        "questions": [
+          {
+            "q": "What type of SQL query will Priya use to find the top 5 destinations with the highest number of bookings?",
+            "opts": [
+              "GROUP BY and HAVING",
+              "JOIN and GROUP BY",
+              "ORDER BY and LIMIT",
+              "SUBQUERY and ORDER BY"
+            ],
+            "ans": "C",
+            "explanation": "Priya will use the ORDER BY and LIMIT clauses to find the top 5 destinations with the highest number of bookings."
+          },
+          {
+            "q": "Which tables will Priya join to find the top 5 destinations with the highest number of bookings?",
+            "opts": [
+              "bookings and destinations",
+              "bookings and flights",
+              "destinations and flights",
+              "bookings, destinations, and flights"
+            ],
+            "ans": "A",
+            "explanation": "Priya will join the 'bookings' and 'destinations' tables to find the top 5 destinations with the highest number of bookings."
+          },
+          {
+            "q": "How will Priya display the corresponding average ticket price for each destination?",
+            "opts": [
+              "AVG and GROUP BY",
+              "SUM and GROUP BY",
+              "MAX and GROUP BY",
+              "MIN and GROUP BY"
+            ],
+            "ans": "A",
+            "explanation": "Priya will use the AVG function and GROUP BY clause to display the corresponding average ticket price for each destination."
+          },
+          {
+            "q": "What is the purpose of the 'destinations' table in the database?",
+            "opts": [
+              "To store booking information",
+              "To store flight information",
+              "To store customer information",
+              "To store details of destinations"
+            ],
+            "ans": "D",
+            "explanation": "The 'destinations' table stores details of destinations, including the destination ID, destination name, and country."
+          },
+          {
+            "q": "Which table will Priya use to find the flight ID and departure/arrival airport for each flight?",
+            "opts": [
+              "bookings",
+              "destinations",
+              "flights",
+              "customers"
+            ],
+            "ans": "C",
+            "explanation": "Priya will use the 'flights' table to find the flight ID and departure/arrival airport for each flight."
+          }
+        ]
+      }
+    ]
+  }
+}

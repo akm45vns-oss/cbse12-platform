@@ -1,0 +1,165 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:15:26.947Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a semiconductor?",
+        "marks": 1,
+        "answer": "A semiconductor is a material whose conductivity lies between that of a conductor and an insulator. It has a conductivity in the range of 10^(-4) to 10^4 ohm^(-1) m^(-1).",
+        "key_points": [
+          "Conductivity range",
+          "Intermediate between conductor and insulator"
+        ],
+        "topic": "Introduction to Semiconductor Electronics"
+      },
+      {
+        "q": "Define the term 'doping' in semiconductors.",
+        "marks": 1,
+        "answer": "Doping is the process of introducing a small amount of impurity into a pure semiconductor to alter its electrical properties.",
+        "key_points": [
+          "Introduction of impurity",
+          "Alteration of electrical properties"
+        ],
+        "topic": "Semiconductor Materials"
+      },
+      {
+        "q": "What is the function of a p-n junction diode?",
+        "marks": 1,
+        "answer": "The function of a p-n junction diode is to allow current to flow in one direction while blocking it in the other direction, due to the formation of a depletion region.",
+        "key_points": [
+          "Unidirectional current flow",
+          "Depletion region"
+        ],
+        "topic": "p-n Junction Diode"
+      },
+      {
+        "q": "What is the purpose of a transistor?",
+        "marks": 1,
+        "answer": "The purpose of a transistor is to amplify a weak electrical signal or to act as a switch, by controlling the flow of current between two terminals.",
+        "key_points": [
+          "Amplification",
+          "Switching"
+        ],
+        "topic": "Junction Transistor"
+      },
+      {
+        "q": "Define the term 'logic gate'.",
+        "marks": 1,
+        "answer": "A logic gate is an electronic circuit that performs a specific logical operation, such as AND, OR, or NOT, on one or more input signals to produce an output signal.",
+        "key_points": [
+          "Logical operation",
+          "Input and output signals"
+        ],
+        "topic": "Digital Electronics"
+      },
+      {
+        "q": "Explain the concept of a p-n junction and its formation.",
+        "marks": 2,
+        "answer": "A p-n junction is formed by combining p-type and n-type semiconductors. The p-type material has an excess of holes, while the n-type material has an excess of electrons. At the junction, the electrons and holes recombine, creating a depletion region.",
+        "key_points": [
+          "p-type and n-type semiconductors",
+          "Depletion region"
+        ],
+        "topic": "p-n Junction Diode"
+      },
+      {
+        "q": "Describe the working of a half-wave rectifier.",
+        "marks": 2,
+        "answer": "A half-wave rectifier converts an AC signal into a pulsating DC signal, by allowing only the positive half-cycles to pass through the diode. The negative half-cycles are blocked, resulting in a unidirectional current flow.",
+        "key_points": [
+          "AC to DC conversion",
+          "Unidirectional current flow"
+        ],
+        "topic": "Diode Rectifiers"
+      },
+      {
+        "q": "What is a Zener diode? Explain its use.",
+        "marks": 2,
+        "answer": "A Zener diode is a special type of p-n junction diode that can operate in the reverse breakdown region, maintaining a constant voltage across it. It is used as a voltage regulator to provide a stable output voltage.",
+        "key_points": [
+          "Reverse breakdown region",
+          "Voltage regulation"
+        ],
+        "topic": "Special Purpose p-n Junction Diodes"
+      },
+      {
+        "q": "Explain the concept of a common emitter transistor amplifier.",
+        "marks": 2,
+        "answer": "A common emitter transistor amplifier uses a transistor in the common emitter configuration, where the input signal is applied to the base and the output signal is taken from the collector. The amplifier provides a high current gain and a moderate voltage gain.",
+        "key_points": [
+          "Common emitter configuration",
+          "Current and voltage gain"
+        ],
+        "topic": "Junction Transistor"
+      },
+      {
+        "q": "Describe the working of a NOT gate using a transistor.",
+        "marks": 2,
+        "answer": "A NOT gate using a transistor inverts the input signal, producing an output signal that is the opposite of the input. When the input is high, the transistor is in the saturation region, and the output is low. When the input is low, the transistor is in the cut-off region, and the output is high.",
+        "key_points": [
+          "Inversion of input signal",
+          "Transistor operation"
+        ],
+        "topic": "Digital Electronics"
+      },
+      {
+        "q": "Derive the expression for the current gain of a transistor in the common emitter configuration.",
+        "marks": 3,
+        "answer": "The current gain of a transistor in the common emitter configuration is given by the ratio of the collector current to the base current. Using the Ebers-Moll equation, we can derive the expression: β = I_C / I_B = α / (1 - α), where α is the common base current gain.",
+        "key_points": [
+          "Ebers-Moll equation",
+          "Current gain"
+        ],
+        "topic": "Junction Transistor"
+      },
+      {
+        "q": "Explain the working of a full-wave rectifier using a center-tapped transformer.",
+        "marks": 3,
+        "answer": "A full-wave rectifier using a center-tapped transformer converts an AC signal into a pulsating DC signal, by allowing both the positive and negative half-cycles to pass through the diodes. The center-tapped transformer provides two equal voltages, which are rectified by the diodes to produce a unidirectional current flow.",
+        "key_points": [
+          "Center-tapped transformer",
+          "Unidirectional current flow"
+        ],
+        "topic": "Diode Rectifiers"
+      },
+      {
+        "q": "Describe the characteristics of a Zener diode and its use in voltage regulation.",
+        "marks": 3,
+        "answer": "A Zener diode has a sharp breakdown voltage and a relatively constant voltage across it in the reverse breakdown region. It is used in voltage regulation to provide a stable output voltage, by connecting the Zener diode in parallel with the load and the input voltage.",
+        "key_points": [
+          "Breakdown voltage",
+          "Voltage regulation"
+        ],
+        "topic": "Special Purpose p-n Junction Diodes"
+      },
+      {
+        "q": "Explain the concept of a digital circuit and its advantages over analog circuits.",
+        "marks": 3,
+        "answer": "A digital circuit uses discrete voltage levels to represent information, whereas an analog circuit uses continuous voltage levels. Digital circuits have several advantages, including noise immunity, ease of design, and scalability. They are also less prone to errors and can be easily integrated with other digital systems.",
+        "key_points": [
+          "Discrete voltage levels",
+          "Noise immunity"
+        ],
+        "topic": "Digital Electronics"
+      },
+      {
+        "q": "Discuss the applications of transistors in electronic circuits, including amplifiers, switches, and logic gates.",
+        "marks": 3,
+        "answer": "Transistors have a wide range of applications in electronic circuits, including amplifiers, switches, and logic gates. They can amplify weak signals, switch on and off, and perform logical operations. Transistors are used in various devices, such as audio equipment, computers, and mobile phones, due to their high current gain, low power consumption, and small size.",
+        "key_points": [
+          "Amplification",
+          "Switching",
+          "Logical operations"
+        ],
+        "topic": "Junction Transistor"
+      }
+    ],
+    "total": 15
+  }
+}

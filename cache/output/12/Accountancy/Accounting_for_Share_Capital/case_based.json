@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Accountancy",
+  "chapter": "Accounting for Share Capital",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:39:45.528Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Rahul and Priya are partners of a partnership firm, XYZ Limited. They have 50,000 and 75,000 shares respectively. The face value of each share is Rs 10 and the company had made a 20% bonus issue of shares. At the time of issue of bonus shares, the company had a balance of Rs 50,000 in the share capital account. The company wants to know the amount of money to be transferred from the share capital account to the share premium account after the bonus issue. Write the journal entry to record the bonus issue and the amount to be transferred from the share capital account to the share premium account.",
+        "questions": [
+          {
+            "q": "What is the amount of bonus shares issued by the company?",
+            "opts": [
+              "50,000 shares",
+              "75,000 shares",
+              "125,000 shares",
+              "150,000 shares"
+            ],
+            "ans": "C",
+            "explanation": "The bonus issue is made at a 20% bonus ratio, so the total number of bonus shares issued is 20% of 125,000 shares."
+          },
+          {
+            "q": "What is the amount transferred from the share capital account to the share premium account?",
+            "opts": [
+              "Rs 10,000",
+              "Rs 20,000",
+              "Rs 25,000",
+              "Rs 50,000"
+            ],
+            "ans": "D",
+            "explanation": "The company had a balance of Rs 50,000 in the share capital account at the time of issue of bonus shares. This amount is transferred to the share premium account."
+          },
+          {
+            "q": "What is the total amount of share capital of the company after the bonus issue?",
+            "opts": [
+              "Rs 1,00,000",
+              "Rs 1,25,000",
+              "Rs 1,50,000",
+              "Rs 2,00,000"
+            ],
+            "ans": "B",
+            "explanation": "The face value of each share is Rs 10 and the company issued 125,000 shares, including bonus shares. So, the total amount of share capital is 125,000 shares x Rs 10 per share = Rs 1,25,000."
+          },
+          {
+            "q": "What is the journal entry to record the bonus issue?",
+            "opts": [
+              "Share Capital a/c Dr. To Share Premium a/c",
+              "Share Premium a/c Dr. To Share Capital a/c",
+              "Share Capital a/c Dr. To Bonus Shares a/c",
+              "Bonus Shares a/c Dr. To Share Premium a/c"
+            ],
+            "ans": "A",
+            "explanation": "The journal entry to record the bonus issue is Share Capital a/c Dr. To Share Premium a/c."
+          },
+          {
+            "q": "What is the amount of share capital that remains unchanged after the bonus issue?",
+            "opts": [
+              "Rs 50,000",
+              "Rs 1,00,000",
+              "Rs 1,25,000",
+              "Rs 1,50,000"
+            ],
+            "ans": "B",
+            "explanation": "The share capital remains unchanged after the bonus issue, so it remains Rs 1,00,000."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "Neha and Harsh are partners of a partnership firm, ABC Limited. They have 80,000 and 60,000 shares respectively. The face value of each share is Rs 5 and the company had a balance of Rs 30,000 in the share capital account. The company wants to know the amount of money to be transferred from the share capital account to the share premium account after a 15% rights issue of shares. Write the journal entry to record the rights issue and the amount to be transferred from the share capital account to the share premium account.",
+        "questions": [
+          {
+            "q": "What is the number of shares issued at the time of rights issue?",
+            "opts": [
+              "12,000 shares",
+              "15,000 shares",
+              "18,000 shares",
+              "20,000 shares"
+            ],
+            "ans": "B",
+            "explanation": "The rights issue is made at a 15% rights ratio, so the total number of shares issued is 15% of 80,000 shares."
+          },
+          {
+            "q": "What is the amount of share capital after the rights issue?",
+            "opts": [
+              "Rs 3,00,000",
+              "Rs 3,50,000",
+              "Rs 4,00,000",
+              "Rs 4,50,000"
+            ],
+            "ans": "C",
+            "explanation": "The face value of each share is Rs 5 and the company issued 12,000 shares at the time of rights issue. So, the total amount of share capital is 80,000 shares x Rs 5 per share = Rs 3,20,000 + 12,000 shares x Rs 5 per share = Rs 3,80,000 - Rs 30,000 = Rs 4,00,000."
+          },
+          {
+            "q": "What is the amount transferred from the share capital account to the share premium account?",
+            "opts": [
+              "Rs 10,000",
+              "Rs 20,000",
+              "Rs 30,000",
+              "Rs 40,000"
+            ],
+            "ans": "C",
+            "explanation": "The company had a balance of Rs 30,000 in the share capital account at the time of issue of rights shares. This amount is transferred to the share premium account."
+          },
+          {
+            "q": "What is the journal entry to record the rights issue?",
+            "opts": [
+              "Share Capital a/c Dr. To Share Premium a/c",
+              "Share Premium a/c Dr. To Share Capital a/c",
+              "Share Capital a/c Dr. To Rights Issue a/c",
+              "Rights Issue a/c Dr. To Share Premium a/c"
+            ],
+            "ans": "D",
+            "explanation": "The journal entry to record the rights issue is Rights Issue a/c Dr. To Share Premium a/c."
+          },
+          {
+            "q": "What is the amount of share premium after the rights issue?",
+            "opts": [
+              "Rs 40,000",
+              "Rs 50,000",
+              "Rs 60,000",
+              "Rs 70,000"
+            ],
+            "ans": "C",
+            "explanation": "The company had a balance of Rs 30,000 in the share capital account at the time of issue of rights shares. This amount is transferred to the share premium account."
+          }
+        ]
+      }
+    ]
+  }
+}

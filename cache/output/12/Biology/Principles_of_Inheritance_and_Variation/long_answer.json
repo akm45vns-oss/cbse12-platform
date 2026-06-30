@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Principles of Inheritance and Variation",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:51:19.628Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the principle of segregation? Explain how it is applicable in a monohybrid cross. Give an example.",
+        "marks": 5,
+        "answer": "The principle of segregation states that each pair of alleles separates from each other during gamete formation, resulting in each gamete receiving only one allele. In a monohybrid cross, two parents with different alleles for a particular trait are crossed to produce offspring. For example, in a cross between a tall (T) and a dwarf (t) pea plant, the alleles for height (T and t) will segregate during gamete formation, resulting in each offspring inheriting either the T or t allele.",
+        "marking_scheme": [
+          "Definition of principle of segregation (1 mark)",
+          "Explanation of its application in monohybrid cross (2 marks)",
+          "Example (2 marks)"
+        ],
+        "topic": "Mendel's Laws of Inheritance",
+        "is_numerical": false
+      },
+      {
+        "q": "A couple has a child with cystic fibrosis, an autosomal recessive disorder. If both parents are carriers of the disease, what is the probability that their next child will have the disease?",
+        "marks": 5,
+        "answer": "Calculation: \nLet's denote the allele for cystic fibrosis as 'f' and the normal allele as 'F'. Since both parents are carriers, they are heterozygous (Ff). The possible genotypes of the offspring are FF, Ff, and ff. The probability of the child having the disease (ff) is 1/4, since it is an autosomal recessive disorder. \nTherefore, the probability that their next child will have the disease is 1/4 or 25%.",
+        "marking_scheme": [
+          "Identification of the genetic basis of the disease (1 mark)",
+          "Calculation of the probability (2 marks)",
+          "Conclusion (2 marks)"
+        ],
+        "topic": "Autosomal Recessive Disorders",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of linkage and recombination. How does it help in mapping the genes on a chromosome?",
+        "marks": 5,
+        "answer": "Linkage refers to the tendency of genes to be inherited together due to their proximity on the same chromosome. Recombination, on the other hand, is the process by which genes are shuffled during meiosis, resulting in new combinations of alleles. The frequency of recombination between two genes is directly proportional to the distance between them. By analyzing the frequency of recombination, geneticists can construct a linkage map, which represents the relative positions of genes on a chromosome.",
+        "marking_scheme": [
+          "Definition of linkage and recombination (1 mark)",
+          "Explanation of the concept (2 marks)",
+          "Application in gene mapping (2 marks)"
+        ],
+        "topic": "Linkage and Recombination",
+        "is_numerical": false
+      },
+      {
+        "q": "In a dihybrid cross, two parents with the following genotypes are crossed: YYRR x yyrr. What is the probability of obtaining the genotype YyRr in the F2 generation?",
+        "marks": 5,
+        "answer": "Calculation: \nIn a dihybrid cross, each trait is inherited independently. The probability of obtaining the genotype Yy is 1/2 (since Y and y are equally likely to be inherited), and the probability of obtaining the genotype Rr is also 1/2. Since the two traits are independent, the probability of obtaining the genotype YyRr is the product of the individual probabilities: (1/2) x (1/2) = 1/4. \nTherefore, the probability of obtaining the genotype YyRr in the F2 generation is 1/4 or 25%.",
+        "marking_scheme": [
+          "Identification of the genotypes of the parents (1 mark)",
+          "Calculation of the probability (2 marks)",
+          "Conclusion (2 marks)"
+        ],
+        "topic": "Dihybrid Cross",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the difference between a genotype and a phenotype? Explain with an example.",
+        "marks": 5,
+        "answer": "The genotype refers to the genetic makeup of an individual, while the phenotype refers to the physical characteristics of an individual. For example, in a pea plant, the genotype 'RR' or 'Rr' will result in the phenotype 'tall', while the genotype 'rr' will result in the phenotype 'dwarf'. This is because the 'R' allele codes for the tall trait, while the 'r' allele codes for the dwarf trait.",
+        "marking_scheme": [
+          "Definition of genotype and phenotype (1 mark)",
+          "Explanation of the difference (2 marks)",
+          "Example (2 marks)"
+        ],
+        "topic": "Genotype and Phenotype",
+        "is_numerical": false
+      },
+      {
+        "q": "A genetic disorder is caused by a dominant allele. If a couple has a child with the disorder, and the mother is a carrier, what is the probability that their next child will have the disorder?",
+        "marks": 5,
+        "answer": "Calculation: \nLet's denote the allele for the disorder as 'D' and the normal allele as 'd'. Since the mother is a carrier, she is heterozygous (Dd). The father must be normal (dd), since the disorder is dominant and the child has the disorder. The possible genotypes of the offspring are Dd and dd. The probability of the child having the disorder (Dd or DD) is 1/2, since the mother has a 50% chance of passing on the 'D' allele. \nTherefore, the probability that their next child will have the disorder is 1/2 or 50%.",
+        "marking_scheme": [
+          "Identification of the genetic basis of the disease (1 mark)",
+          "Calculation of the probability (2 marks)",
+          "Conclusion (2 marks)"
+        ],
+        "topic": "Autosomal Dominant Disorders",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

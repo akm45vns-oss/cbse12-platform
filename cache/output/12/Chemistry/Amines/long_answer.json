@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Amines",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:51:13.105Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What are amines? How are they classified? Explain with suitable examples.",
+        "marks": 5,
+        "answer": "Amines are organic compounds that contain a basic nitrogen atom. They can be classified into three main types: primary amines, secondary amines, and tertiary amines. Primary amines have one alkyl or aryl group attached to the nitrogen atom, secondary amines have two alkyl or aryl groups attached, and tertiary amines have three alkyl or aryl groups attached. For example, methylamine (CH3NH2) is a primary amine, dimethylamine ((CH3)2NH) is a secondary amine, and trimethylamine ((CH3)3N) is a tertiary amine.",
+        "marking_scheme": [
+          "Definition of amines (1 mark)",
+          "Classification of amines (1 mark)",
+          "Examples of primary, secondary, and tertiary amines (3 marks)"
+        ],
+        "topic": "Introduction to Amines",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the preparation of amines by reduction of nitro compounds. What are the different reducing agents used for this purpose?",
+        "marks": 5,
+        "answer": "Amines can be prepared by the reduction of nitro compounds using various reducing agents such as hydrogen in the presence of a catalyst (Raney nickel or palladium), sodium borohydride, or lithium aluminum hydride. The choice of reducing agent depends on the specific nitro compound and the desired amine product. For example, the reduction of nitrobenzene using hydrogen in the presence of a catalyst produces aniline.",
+        "marking_scheme": [
+          "Preparation of amines by reduction of nitro compounds (2 marks)",
+          "Different reducing agents used (2 marks)",
+          "Example of preparation of aniline (1 mark)"
+        ],
+        "topic": "Preparation of Amines",
+        "is_numerical": false
+      },
+      {
+        "q": "Discuss the basic character of amines. How does it compare with ammonia? What is the effect of alkyl groups on the basicity of amines?",
+        "marks": 5,
+        "answer": "Amines are basic compounds that can accept a proton to form a conjugate acid. The basic character of amines is due to the lone pair of electrons on the nitrogen atom. The basicity of amines is comparable to that of ammonia, but it is affected by the presence of alkyl groups. Alkyl groups increase the basicity of amines by donating electrons to the nitrogen atom, making it more available to accept a proton. However, bulky alkyl groups can also sterically hinder the approach of a proton, reducing the basicity of the amine.",
+        "marking_scheme": [
+          "Basic character of amines (1 mark)",
+          "Comparison with ammonia (1 mark)",
+          "Effect of alkyl groups on basicity (3 marks)"
+        ],
+        "topic": "Properties of Amines",
+        "is_numerical": false
+      },
+      {
+        "q": "A 0.5 g sample of an organic compound containing nitrogen was digested with conc. H2SO4 and the liberated ammonia was absorbed in 20 mL of 0.1 M HCl. The excess HCl was then back-titrated with 10 mL of 0.1 M NaOH. Calculate the percentage of nitrogen in the compound.",
+        "marks": 5,
+        "answer": "Calculation:\nLet the amount of ammonia absorbed be x mL of 0.1 M HCl.\nThen, the amount of HCl left after absorption is (20 - x) mL of 0.1 M HCl.\nThis excess HCl is back-titrated with 10 mL of 0.1 M NaOH.\nSo, (20 - x) mL of 0.1 M HCl = 10 mL of 0.1 M NaOH\nSolving for x, x = 10 mL\nSo, the amount of ammonia absorbed is 10 mL of 0.1 M HCl.\nThis corresponds to 10 mL of 0.1 M NH3.\nThe mass of nitrogen in the sample is 10 x 0.1 x 14 / 1000 = 0.014 g\nThe percentage of nitrogen in the compound is (0.014 / 0.5) x 100 = 2.8%",
+        "marking_scheme": [
+          "Calculation of amount of ammonia absorbed (2 marks)",
+          "Calculation of mass of nitrogen (1 mark)",
+          "Calculation of percentage of nitrogen (2 marks)"
+        ],
+        "topic": "Nitrogen Containing Compounds",
+        "is_numerical": true
+      },
+      {
+        "q": "0.278 g of an organic compound containing nitrogen was Kjeldahlized and the ammonia evolved was absorbed in 50 mL of 0.1 M H2SO4. The excess acid was then back-titrated with 15 mL of 0.1 M NaOH. Calculate the percentage of nitrogen in the compound.",
+        "marks": 5,
+        "answer": "Calculation:\nLet the amount of ammonia absorbed be x mL of 0.1 M H2SO4.\nThen, the amount of H2SO4 left after absorption is (50 - x) mL of 0.1 M H2SO4.\nThis excess H2SO4 is back-titrated with 15 mL of 0.1 M NaOH.\nSo, (50 - x) mL of 0.1 M H2SO4 = 15 mL of 0.1 M NaOH\nSince H2SO4 is a diprotic acid, the number of equivalents of H2SO4 is twice the number of equivalents of NaOH.\nSo, (50 - x) / 2 = 15\nSolving for x, x = 20 mL\nSo, the amount of ammonia absorbed is 20 mL of 0.1 M H2SO4.\nThis corresponds to 20 mL of 0.1 M NH3.\nThe mass of nitrogen in the sample is 20 x 0.1 x 14 / 1000 = 0.028 g\nThe percentage of nitrogen in the compound is (0.028 / 0.278) x 100 = 10.07%",
+        "marking_scheme": [
+          "Calculation of amount of ammonia absorbed (2 marks)",
+          "Calculation of mass of nitrogen (1 mark)",
+          "Calculation of percentage of nitrogen (2 marks)"
+        ],
+        "topic": "Nitrogen Containing Compounds",
+        "is_numerical": true
+      },
+      {
+        "q": "1.35 g of an organic compound containing nitrogen was treated with excess of NaOH and the ammonia evolved was absorbed in 30 mL of 0.2 M HCl. The excess acid was then back-titrated with 20 mL of 0.2 M NaOH. Calculate the percentage of nitrogen in the compound.",
+        "marks": 5,
+        "answer": "Calculation:\nLet the amount of ammonia absorbed be x mL of 0.2 M HCl.\nThen, the amount of HCl left after absorption is (30 - x) mL of 0.2 M HCl.\nThis excess HCl is back-titrated with 20 mL of 0.2 M NaOH.\nSo, (30 - x) mL of 0.2 M HCl = 20 mL of 0.2 M NaOH\nSolving for x, x = 20 mL\nSo, the amount of ammonia absorbed is 20 mL of 0.2 M HCl.\nThis corresponds to 20 mL of 0.2 M NH3.\nThe mass of nitrogen in the sample is 20 x 0.2 x 14 / 1000 = 0.056 g\nThe percentage of nitrogen in the compound is (0.056 / 1.35) x 100 = 4.15%",
+        "marking_scheme": [
+          "Calculation of amount of ammonia absorbed (2 marks)",
+          "Calculation of mass of nitrogen (1 mark)",
+          "Calculation of percentage of nitrogen (2 marks)"
+        ],
+        "topic": "Nitrogen Containing Compounds",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

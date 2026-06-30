@@ -174,3 +174,16 @@ export async function getCurriculum(classLevel) {
 export function getCurriculumSync(classLevel, curriculum11) {
   return classLevel === "11" ? curriculum11 : CURRICULUM;
 }
+
+// Flat list of all tasks for Class 12: { subject, chapter, unit }
+export function getAllChapters12() {
+  const tasks = [];
+  for (const [subject, data] of Object.entries(CURRICULUM)) {
+    for (const unit of data.units) {
+      for (const chapter of unit.chapters) {
+        tasks.push({ subject, chapter, unit: unit.name });
+      }
+    }
+  }
+  return tasks;
+}

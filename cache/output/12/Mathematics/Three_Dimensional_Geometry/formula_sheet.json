@@ -1,0 +1,69 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:18:01.139Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Distance Formula",
+        "formula": "d = √((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2)",
+        "variables": "x1, y1, z1 (first point's coordinates), x2, y2, z2 (second point's coordinates)",
+        "units": "Length",
+        "notes": ""
+      },
+      {
+        "name": "Section Formula",
+        "formula": "((x2, y2, z2) = (x1, y1, z1) + λ(a, b, c))",
+        "variables": "x1, y1, z1 (point's coordinates), x2, y2, z2 (point's coordinates), λ (parameter), a, b, c (direction ratios)",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Direction Cosines of a Line",
+        "formula": "l = cos α, m = cos β, n = cos γ",
+        "variables": "l, m, n (direction cosines), α (angle with x-axis), β (angle with y-axis), γ (angle with z-axis)",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Direction Ratios of a Line",
+        "formula": "a = l / cos α, b = m / cos β, c = n / cos γ",
+        "variables": "a, b, c (direction ratios), l, m, n (direction cosines), α (angle with x-axis), β (angle with y-axis), γ (angle with z-axis)",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Equation of a Line in Space",
+        "formula": "a(x - x1) + b(y - y1) + c(z - z1) = 0",
+        "variables": "a, b, c (direction ratios), x1, y1, z1 (point's coordinates)",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Equation of a Plane",
+        "formula": "ax + by + cz + d = 0",
+        "variables": "a, b, c (coefficients), x, y, z (coordinates), d (constant)",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Cartesian Equation of a Sphere",
+        "formula": "x^2 + y^2 + z^2 + 2gx + 2fy + 2hz + d = 0",
+        "variables": "x, y, z (coordinates), g, f, h (coefficients), d (constant)",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Symmetrical Form of a Sphere",
+        "formula": "(x - h)^2 + (y - k)^2 + (z - l)^2 = r^2",
+        "variables": "x, y, z (coordinates), h, k, l (center's coordinates), r (radius)",
+        "units": "",
+        "notes": ""
+      }
+    ]
+  }
+}

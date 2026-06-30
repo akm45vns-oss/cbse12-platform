@@ -1,0 +1,90 @@
+{
+  "class": "12",
+  "subject": "Physical Education",
+  "chapter": "Sports Nutrition",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:08:44.489Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the importance of nutrition in sports performance. Discuss the role of carbohydrates, proteins, and fats in providing energy to athletes.",
+        "marks": 5,
+        "answer": "Nutrition plays a vital role in sports performance as it provides the necessary energy and nutrients for optimal functioning. Carbohydrates are the primary source of energy for athletes, particularly for high-intensity and endurance activities. Proteins are essential for muscle repair and recovery, while fats provide a secondary source of energy. A well-balanced diet that includes the right proportions of carbohydrates, proteins, and fats can enhance athletic performance, support muscle function, and aid in recovery.",
+        "marking_scheme": [
+          "Importance of nutrition in sports performance (1 mark)",
+          "Role of carbohydrates in energy production (1 mark)",
+          "Role of proteins in muscle repair and recovery (1 mark)",
+          "Role of fats as a secondary energy source (1 mark)",
+          "Conclusion on the importance of a balanced diet (1 mark)"
+        ],
+        "topic": "Sports Nutrition",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the recommended daily intake of water for athletes? Explain the consequences of dehydration on athletic performance.",
+        "marks": 5,
+        "answer": "The recommended daily intake of water for athletes is approximately 8-10 glasses (64-80 ounces) per day. Dehydration can have severe consequences on athletic performance, including decreased endurance, strength, and speed. It can also lead to heat-related illnesses, such as heat exhaustion and heat stroke. Athletes should aim to drink water regularly throughout the day, with a focus on hydrating before, during, and after exercise.",
+        "marking_scheme": [
+          "Recommended daily water intake for athletes (1 mark)",
+          "Consequences of dehydration on endurance (1 mark)",
+          "Consequences of dehydration on strength and speed (1 mark)",
+          "Risk of heat-related illnesses due to dehydration (1 mark)",
+          "Importance of proper hydration before, during, and after exercise (1 mark)"
+        ],
+        "topic": "Hydration and Athletic Performance",
+        "is_numerical": false
+      },
+      {
+        "q": "Discuss the role of supplements in sports nutrition. Explain the benefits and risks associated with the use of protein supplements, creatine, and caffeine.",
+        "marks": 5,
+        "answer": "Supplements can play a significant role in sports nutrition, particularly for athletes who require additional nutrients to support their training and performance. Protein supplements can help promote muscle growth and repair, while creatine can enhance strength and endurance. Caffeine can improve alertness and focus. However, the use of supplements also carries risks, such as contamination, side effects, and dependency. Athletes should consult with a sports dietitian or healthcare professional before using any supplements.",
+        "marking_scheme": [
+          "Role of supplements in sports nutrition (1 mark)",
+          "Benefits of protein supplements (1 mark)",
+          "Benefits and risks of creatine (1 mark)",
+          "Benefits and risks of caffeine (1 mark)",
+          "Importance of consulting a sports dietitian or healthcare professional (1 mark)"
+        ],
+        "topic": "Supplements in Sports Nutrition",
+        "is_numerical": false
+      },
+      {
+        "q": "A football player consumes 2500 calories per day, with a macronutrient breakdown of 55% carbohydrates, 25% proteins, and 20% fats. Calculate the number of grams of carbohydrates, proteins, and fats consumed per day.",
+        "marks": 5,
+        "answer": "Calculation:\nCarbohydrates: 55% of 2500 calories = 0.55 x 2500 = 1375 calories. Since 1 gram of carbohydrates provides 4 calories, the number of grams of carbohydrates consumed per day is 1375 / 4 = 343.75 grams.\nProteins: 25% of 2500 calories = 0.25 x 2500 = 625 calories. Since 1 gram of protein provides 4 calories, the number of grams of protein consumed per day is 625 / 4 = 156.25 grams.\nFats: 20% of 2500 calories = 0.20 x 2500 = 500 calories. Since 1 gram of fat provides 9 calories, the number of grams of fat consumed per day is 500 / 9 = 55.56 grams.",
+        "marking_scheme": [
+          "Calculation of carbohydrate intake (1.5 marks)",
+          "Calculation of protein intake (1.5 marks)",
+          "Calculation of fat intake (2 marks)"
+        ],
+        "topic": "Macronutrient Breakdown",
+        "is_numerical": true
+      },
+      {
+        "q": "An athlete requires 2000 calories per day, with a carbohydrate intake of 60% of total calories. If the athlete consumes 300 grams of carbohydrates per day, calculate the total number of calories consumed per day.",
+        "marks": 5,
+        "answer": "Calculation:\nSince 1 gram of carbohydrates provides 4 calories, the total number of calories from carbohydrates is 300 x 4 = 1200 calories.\nSince carbohydrates account for 60% of total calories, the total number of calories consumed per day is 1200 / 0.6 = 2000 calories.",
+        "marking_scheme": [
+          "Calculation of calories from carbohydrates (2 marks)",
+          "Calculation of total calories consumed per day (3 marks)"
+        ],
+        "topic": "Carbohydrate Intake",
+        "is_numerical": true
+      },
+      {
+        "q": "A basketball player consumes 150 grams of protein per day. If the player's daily energy requirement is 2800 calories, with a protein intake of 15% of total calories, calculate the number of grams of protein that should be consumed per day.",
+        "marks": 5,
+        "answer": "Calculation:\nSince protein accounts for 15% of total calories, the total number of calories from protein is 0.15 x 2800 = 420 calories.\nSince 1 gram of protein provides 4 calories, the number of grams of protein that should be consumed per day is 420 / 4 = 105 grams.",
+        "marking_scheme": [
+          "Calculation of calories from protein (2 marks)",
+          "Calculation of recommended protein intake (3 marks)"
+        ],
+        "topic": "Protein Intake",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

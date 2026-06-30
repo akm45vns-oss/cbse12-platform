@@ -1,0 +1,248 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:16:07.172Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the study of the rates of chemical reactions and the factors that influence these rates?",
+        "opts": [
+          "(A) Chemical equilibrium",
+          "(B) Chemical kinetics",
+          "(C) Chemical thermodynamics",
+          "(D) Chemical bonding"
+        ],
+        "ans": "B",
+        "explanation": "Chemical kinetics is the study of the rates of chemical reactions and the factors that influence these rates, such as concentration, temperature, and catalysts. The other options are not directly related to the study of reaction rates.",
+        "difficulty": "easy",
+        "topic": "Introduction to Chemical Kinetics"
+      },
+      {
+        "q": "Which of the following is a unit of rate of reaction?",
+        "opts": [
+          "(A) mol/L",
+          "(B) mol/L/s",
+          "(C) J/mol",
+          "(D) Pa"
+        ],
+        "ans": "B",
+        "explanation": "The rate of reaction is typically expressed in units of concentration per unit time, such as mol/L/s. The other options are not units of rate of reaction.",
+        "difficulty": "easy",
+        "topic": "Rate of Reaction"
+      },
+      {
+        "q": "What is the order of a reaction with respect to a reactant if the rate of reaction is doubled when the concentration of the reactant is doubled?",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) 2",
+          "(D) 3"
+        ],
+        "ans": "B",
+        "explanation": "If the rate of reaction is doubled when the concentration of the reactant is doubled, the reaction is first-order with respect to that reactant. This means that the rate of reaction is directly proportional to the concentration of the reactant.",
+        "difficulty": "easy",
+        "topic": "Order of Reaction"
+      },
+      {
+        "q": "Which of the following statements is true about a catalyst?",
+        "opts": [
+          "(A) It increases the equilibrium constant of a reaction",
+          "(B) It decreases the equilibrium constant of a reaction",
+          "(C) It increases the rate of a reaction without being consumed",
+          "(D) It decreases the rate of a reaction without being consumed"
+        ],
+        "ans": "C",
+        "explanation": "A catalyst is a substance that increases the rate of a reaction without being consumed or altering the equilibrium constant of the reaction. The other options are not true statements about catalysts.",
+        "difficulty": "easy",
+        "topic": "Catalysts"
+      },
+      {
+        "q": "What is the activation energy of a reaction?",
+        "opts": [
+          "(A) The energy required to initiate a reaction",
+          "(B) The energy released during a reaction",
+          "(C) The energy required to break a bond",
+          "(D) The energy required to form a bond"
+        ],
+        "ans": "A",
+        "explanation": "The activation energy of a reaction is the minimum energy required for the reactants to collide and form products. It is the energy barrier that must be overcome for the reaction to occur.",
+        "difficulty": "easy",
+        "topic": "Activation Energy"
+      },
+      {
+        "q": "Which of the following factors can affect the rate of a reaction?",
+        "opts": [
+          "(A) Concentration of reactants",
+          "(B) Surface area of reactants",
+          "(C) Temperature",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "The rate of a reaction can be affected by several factors, including the concentration of reactants, the surface area of reactants, and the temperature. These factors can influence the frequency and effectiveness of collisions between reactant molecules.",
+        "difficulty": "easy",
+        "topic": "Factors Affecting Reaction Rate"
+      },
+      {
+        "q": "What is the rate law for a reaction that is first-order with respect to one reactant and second-order with respect to another reactant?",
+        "opts": [
+          "(A) rate = k[A]",
+          "(B) rate = k[A]^2",
+          "(C) rate = k[A][B]",
+          "(D) rate = k[A][B]^2"
+        ],
+        "ans": "C",
+        "explanation": "The rate law for a reaction that is first-order with respect to one reactant (A) and second-order with respect to another reactant (B) is rate = k[A][B]. This means that the rate of reaction is directly proportional to the concentration of A and the square of the concentration of B.",
+        "difficulty": "medium",
+        "topic": "Rate Law"
+      },
+      {
+        "q": "How does an increase in temperature affect the rate of a reaction?",
+        "opts": [
+          "(A) It decreases the rate of reaction",
+          "(B) It has no effect on the rate of reaction",
+          "(C) It increases the rate of reaction",
+          "(D) It decreases the equilibrium constant of the reaction"
+        ],
+        "ans": "C",
+        "explanation": "An increase in temperature typically increases the rate of a reaction. This is because higher temperatures provide more energy for the reactant molecules to collide and overcome the activation energy barrier.",
+        "difficulty": "medium",
+        "topic": "Temperature Dependence"
+      },
+      {
+        "q": "What is the Arrhenius equation?",
+        "opts": [
+          "(A) k = Ae^(-Ea/RT)",
+          "(B) k = Ae^(Ea/RT)",
+          "(C) k = Ae^(-Ea/T)",
+          "(D) k = Ae^(Ea/T)"
+        ],
+        "ans": "A",
+        "explanation": "The Arrhenius equation is k = Ae^(-Ea/RT), where k is the rate constant, A is the pre-exponential factor, Ea is the activation energy, R is the gas constant, and T is the temperature in Kelvin. This equation relates the rate constant to the temperature and activation energy of a reaction.",
+        "difficulty": "medium",
+        "topic": "Arrhenius Equation"
+      },
+      {
+        "q": "Which of the following is an example of a zero-order reaction?",
+        "opts": [
+          "(A) The decomposition of ammonia on a metal surface",
+          "(B) The reaction of hydrogen gas with oxygen gas",
+          "(C) The hydrolysis of sucrose",
+          "(D) The reaction of sodium hydroxide with hydrochloric acid"
+        ],
+        "ans": "A",
+        "explanation": "The decomposition of ammonia on a metal surface is an example of a zero-order reaction, where the rate of reaction is independent of the concentration of the reactant. This is because the reaction occurs on the surface of the metal, and the rate is limited by the availability of surface sites rather than the concentration of ammonia.",
+        "difficulty": "medium",
+        "topic": "Zero-Order Reactions"
+      },
+      {
+        "q": "What is the half-life of a first-order reaction?",
+        "opts": [
+          "(A) The time it takes for the concentration of the reactant to decrease by 50%",
+          "(B) The time it takes for the concentration of the reactant to decrease by 25%",
+          "(C) The time it takes for the concentration of the reactant to increase by 50%",
+          "(D) The time it takes for the concentration of the reactant to increase by 25%"
+        ],
+        "ans": "A",
+        "explanation": "The half-life of a first-order reaction is the time it takes for the concentration of the reactant to decrease by 50%. This is a characteristic property of first-order reactions, and it is independent of the initial concentration of the reactant.",
+        "difficulty": "medium",
+        "topic": "Half-Life"
+      },
+      {
+        "q": "How does the presence of a catalyst affect the activation energy of a reaction?",
+        "opts": [
+          "(A) It increases the activation energy",
+          "(B) It decreases the activation energy",
+          "(C) It has no effect on the activation energy",
+          "(D) It eliminates the need for activation energy"
+        ],
+        "ans": "B",
+        "explanation": "The presence of a catalyst decreases the activation energy of a reaction. This is because the catalyst provides an alternative reaction pathway with a lower energy barrier, allowing the reaction to occur more easily and at a faster rate.",
+        "difficulty": "medium",
+        "topic": "Catalysts"
+      },
+      {
+        "q": "What is the difference between a homogeneous and a heterogeneous catalyst?",
+        "opts": [
+          "(A) A homogeneous catalyst is a solid, while a heterogeneous catalyst is a liquid",
+          "(B) A homogeneous catalyst is a liquid, while a heterogeneous catalyst is a solid",
+          "(C) A homogeneous catalyst is in the same phase as the reactants, while a heterogeneous catalyst is in a different phase",
+          "(D) A homogeneous catalyst is in a different phase, while a heterogeneous catalyst is in the same phase"
+        ],
+        "ans": "C",
+        "explanation": "A homogeneous catalyst is in the same phase as the reactants, while a heterogeneous catalyst is in a different phase. For example, a homogeneous catalyst might be a dissolved enzyme, while a heterogeneous catalyst might be a solid metal surface.",
+        "difficulty": "medium",
+        "topic": "Catalysts"
+      },
+      {
+        "q": "What is the integrated rate law for a first-order reaction?",
+        "opts": [
+          "(A) ln([A]t/[A]0) = -kt",
+          "(B) ln([A]0/[A]t) = -kt",
+          "(C) [A]t = [A]0e^(-kt)",
+          "(D) [A]t = [A]0e^(kt)"
+        ],
+        "ans": "A",
+        "explanation": "The integrated rate law for a first-order reaction is ln([A]t/[A]0) = -kt, where [A]t is the concentration of the reactant at time t, [A]0 is the initial concentration of the reactant, k is the rate constant, and t is time. This equation relates the concentration of the reactant at any time to the initial concentration and the rate constant.",
+        "difficulty": "medium",
+        "topic": "Integrated Rate Law"
+      },
+      {
+        "q": "How does the rate of a reaction change when the concentration of the reactant is increased?",
+        "opts": [
+          "(A) The rate of reaction decreases",
+          "(B) The rate of reaction remains the same",
+          "(C) The rate of reaction increases",
+          "(D) The rate of reaction becomes zero"
+        ],
+        "ans": "C",
+        "explanation": "When the concentration of the reactant is increased, the rate of reaction typically increases. This is because there are more reactant molecules available to collide and react, resulting in a higher frequency of effective collisions.",
+        "difficulty": "medium",
+        "topic": "Concentration Dependence"
+      },
+      {
+        "q": "What is the difference between the rate of reaction and the equilibrium constant?",
+        "opts": [
+          "(A) The rate of reaction is a measure of the speed of a reaction, while the equilibrium constant is a measure of the extent of a reaction",
+          "(B) The rate of reaction is a measure of the extent of a reaction, while the equilibrium constant is a measure of the speed of a reaction",
+          "(C) The rate of reaction is a measure of the equilibrium constant of a reaction",
+          "(D) The equilibrium constant is a measure of the rate of reaction"
+        ],
+        "ans": "A",
+        "explanation": "The rate of reaction is a measure of the speed of a reaction, while the equilibrium constant is a measure of the extent of a reaction. The rate of reaction tells us how fast the reaction occurs, while the equilibrium constant tells us how far the reaction will proceed.",
+        "difficulty": "hard",
+        "topic": "Rate of Reaction vs. Equilibrium Constant"
+      },
+      {
+        "q": "What is the steady-state approximation?",
+        "opts": [
+          "(A) The assumption that the concentration of an intermediate is constant over time",
+          "(B) The assumption that the concentration of a reactant is constant over time",
+          "(C) The assumption that the rate of reaction is constant over time",
+          "(D) The assumption that the equilibrium constant is constant over time"
+        ],
+        "ans": "A",
+        "explanation": "The steady-state approximation is the assumption that the concentration of an intermediate is constant over time. This is often used in kinetic analyses to simplify the mathematics and focus on the overall rate of reaction.",
+        "difficulty": "hard",
+        "topic": "Steady-State Approximation"
+      },
+      {
+        "q": "How does the presence of an inhibitor affect the rate of a reaction?",
+        "opts": [
+          "(A) It increases the rate of reaction",
+          "(B) It decreases the rate of reaction",
+          "(C) It has no effect on the rate of reaction",
+          "(D) It eliminates the need for a catalyst"
+        ],
+        "ans": "B",
+        "explanation": "The presence of an inhibitor decreases the rate of a reaction. An inhibitor is a substance that slows down the reaction by binding to the catalyst or reactants, reducing the frequency of effective collisions.",
+        "difficulty": "hard",
+        "topic": "Inhibitors"
+      }
+    ],
+    "total": 18
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Chemistry in Everyday Life",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:05:49.618Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Mass Percentage",
+        "formula": "% w/w = (Mass of Solute / Total Mass of Solution) × 100",
+        "variables": "Mass of Solute, Total Mass of Solution",
+        "units": "%",
+        "notes": ""
+      },
+      {
+        "name": "2. Mole Fraction",
+        "formula": "X_A = (Number of moles of A / Total number of moles) ",
+        "variables": "Number of moles of A, Total number of moles",
+        "units": "mol/mol",
+        "notes": ""
+      },
+      {
+        "name": "3. Partial Pressure of a Gas",
+        "formula": "P_A = X_A × P_total",
+        "variables": "X_A, P_total",
+        "units": "Pa",
+        "notes": ""
+      },
+      {
+        "name": "4. Raoult's Law",
+        "formula": "P_A = P°_A × X_A",
+        "variables": "P°_A, X_A",
+        "units": "Pa",
+        "notes": "For ideal solutions"
+      },
+      {
+        "name": "5. Osmotic Pressure",
+        "formula": "π = cRT",
+        "variables": "c, R, T",
+        "units": "Pa",
+        "notes": ""
+      },
+      {
+        "name": "6. Relationship between Viscosity and Temperature",
+        "formula": "η = η° (1 - α (T - T°))",
+        "variables": "η, η°, α, T, T°",
+        "units": "Pa.s",
+        "notes": ""
+      },
+      {
+        "name": "7. Colligative Properties",
+        "formula": "ΔP = P_total × ΔX (for Osmotic Pressure)",
+        "variables": "P_total, ΔX",
+        "units": "Pa",
+        "notes": "For ideal solutions"
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electrostatic Potential and Capacitance",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:07:57.907Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "In a typical thunderstorm, the air is filled with charged water droplets and ice crystals. These charged particles are accelerated by strong electric fields, resulting in spectacular displays of lightning. A group of scientists are studying the electrostatic potential differences between the cloud and the ground. They place two identical spheres, one at the base of the cloud and the other on the ground, to measure the potential difference. The spheres are connected by a wire, allowing charges to flow freely between them. As the storm intensifies, the potential difference between the spheres increases significantly. The scientists are interested in determining the relationship between the potential difference and the capacitance of the sphere. They want to know how the capacitance of the sphere affects the potential difference between the cloud and the ground.",
+        "questions": [
+          {
+            "q": "What is the primary purpose of placing two identical spheres, one at the base of the cloud and the other on the ground, to measure the electrostatic potential difference?",
+            "opts": [
+              "(A) To measure the capacitance of the sphere",
+              "(B) To determine the relationship between potential difference and capacitance",
+              "(C) To measure the electric field between the cloud and the ground",
+              "(D) To understand the effect of wire on charge flow"
+            ],
+            "ans": "B",
+            "explanation": "The scientists are interested in determining the relationship between the potential difference and the capacitance of the sphere."
+          },
+          {
+            "q": "What happens to the potential difference between the spheres as the storm intensifies?",
+            "opts": [
+              "(A) It decreases significantly",
+              "(B) It remains constant",
+              "(C) It increases significantly",
+              "(D) It becomes zero"
+            ],
+            "ans": "C",
+            "explanation": "As the storm intensifies, the potential difference between the spheres increases significantly."
+          },
+          {
+            "q": "Why are the spheres connected by a wire to measure the potential difference?",
+            "opts": [
+              "(A) To prevent charge flow between the spheres",
+              "(B) To measure the electric field between the spheres",
+              "(C) To allow charges to flow freely between the spheres",
+              "(D) To determine the capacitance of the sphere"
+            ],
+            "ans": "C",
+            "explanation": "The wire allows charges to flow freely between the spheres."
+          },
+          {
+            "q": "What is the relationship between the potential difference and the capacitance of the sphere that the scientists want to determine?",
+            "opts": [
+              "(A) Potential difference is directly proportional to capacitance",
+              "(B) Potential difference is inversely proportional to capacitance",
+              "(C) Potential difference is independent of capacitance",
+              "(D) Potential difference is directly proportional to the square of capacitance"
+            ],
+            "ans": "A",
+            "explanation": "The scientists want to know how the capacitance of the sphere affects the potential difference between the cloud and the ground."
+          },
+          {
+            "q": "Why is it essential to use identical spheres in the experiment?",
+            "opts": [
+              "(A) To measure the electric field between the spheres",
+              "(B) To determine the relationship between potential difference and capacitance",
+              "(C) To ensure that the spheres have the same capacitance",
+              "(D) To allow charges to flow freely between the spheres"
+            ],
+            "ans": "C",
+            "explanation": "Using identical spheres ensures that they have the same capacitance."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A capacitor consists of two parallel metal plates separated by a distance 'd'. The plates are connected to a battery, and a charge 'Q' is stored on the plates. The capacitance of the capacitor is given by C = Q/V, where V is the potential difference between the plates. A group of students are asked to design a capacitor using a parallel plate configuration. They want to maximize the capacitance of the capacitor by varying the distance between the plates.",
+        "questions": [
+          {
+            "q": "What is the capacitance of a capacitor made of two parallel metal plates separated by a distance 'd'?",
+            "opts": [
+              "(A) C = Q/d",
+              "(B) C = QV",
+              "(C) C = Q/V",
+              "(D) C = V/d"
+            ],
+            "ans": "C",
+            "explanation": "The capacitance of the capacitor is given by C = Q/V."
+          },
+          {
+            "q": "What is the primary goal of the students in designing a capacitor using a parallel plate configuration?",
+            "opts": [
+              "(A) To minimize the capacitance of the capacitor",
+              "(B) To maximize the capacitance of the capacitor",
+              "(C) To determine the relationship between capacitance and distance between plates",
+              "(D) To measure the potential difference between the plates"
+            ],
+            "ans": "B",
+            "explanation": "The students want to maximize the capacitance of the capacitor by varying the distance between the plates."
+          },
+          {
+            "q": "What is the relationship between the capacitance of a capacitor and the distance between its plates?",
+            "opts": [
+              "(A) Capacitance is directly proportional to the distance between plates",
+              "(B) Capacitance is inversely proportional to the distance between plates",
+              "(C) Capacitance is independent of the distance between plates",
+              "(D) Capacitance is directly proportional to the square of the distance between plates"
+            ],
+            "ans": "B",
+            "explanation": "The capacitance of a capacitor is inversely proportional to the distance between its plates."
+          },
+          {
+            "q": "Why is it essential to vary the distance between the plates to maximize the capacitance of the capacitor?",
+            "opts": [
+              "(A) To measure the electric field between the plates",
+              "(B) To determine the relationship between capacitance and distance between plates",
+              "(C) To ensure that the plates are parallel to each other",
+              "(D) To maximize the capacitance of the capacitor"
+            ],
+            "ans": "D",
+            "explanation": "The students want to maximize the capacitance of the capacitor by varying the distance between the plates."
+          },
+          {
+            "q": "What is the formula for the capacitance of a capacitor made of two parallel metal plates separated by a distance 'd'?",
+            "opts": [
+              "(A) C = Q/d",
+              "(B) C = QV",
+              "(C) C = ε0A/d",
+              "(D) C = Q/V"
+            ],
+            "ans": "D",
+            "explanation": "The capacitance of the capacitor is given by C = Q/V."
+          }
+        ]
+      }
+    ]
+  }
+}

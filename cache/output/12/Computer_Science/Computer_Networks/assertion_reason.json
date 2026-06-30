@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Computer Networks",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:33:08.267Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): TCP is a connection-oriented protocol.",
+        "reason": "Reason (R): It provides reliable data transfer and ensures that the packets are delivered in the same order in which they were sent.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "TCP ensures reliable data transfer by ensuring packets are delivered in the correct order, which makes the given reason a correct explanation for the assertion."
+      },
+      {
+        "assertion": "Assertion (A): UDP is a connectionless protocol.",
+        "reason": "Reason (R): It does not require a connection to be established before data transfer.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "UDP is indeed a connectionless protocol and the provided reason correctly explains this characteristic."
+      },
+      {
+        "assertion": "Assertion (A): A router is a networking device that connects multiple networks.",
+        "reason": "Reason (R): It forwards packets between different networks.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A router connects multiple networks and forwards packets between them, making the given reason a correct explanation for the assertion."
+      },
+      {
+        "assertion": "Assertion (A): A hub is a type of repeater.",
+        "reason": "Reason (R): It amplifies the signal to extend the network cable length.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A hub is indeed a type of repeater that amplifies the signal to extend the network cable length, making the given reason a correct explanation for the assertion."
+      },
+      {
+        "assertion": "Assertion (A): The OSI model consists of 5 layers.",
+        "reason": "Reason (R): It defines the standard framework for data communication.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The OSI model actually consists of 7 layers, not 5, making option D the correct answer."
+      },
+      {
+        "assertion": "Assertion (A): A switch is a type of bridge.",
+        "reason": "Reason (R): It connects multiple devices to a network.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "A switch is indeed a type of device that connects multiple devices to a network, but it is not a type of bridge, making option B the correct answer."
+      },
+      {
+        "assertion": "Assertion (A): DNS is used for resolving IP addresses to hostnames.",
+        "reason": "Reason (R): It translates domain names into IP addresses.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "DNS (Domain Name System) is indeed used for resolving IP addresses to hostnames and translating domain names into IP addresses, making the given reason a correct explanation for the assertion."
+      },
+      {
+        "assertion": "Assertion (A): A firewall is a network security system.",
+        "reason": "Reason (R): It filters incoming and outgoing network traffic based on predetermined security rules.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A firewall is indeed a network security system that filters incoming and outgoing network traffic based on predetermined security rules, making the given reason a correct explanation for the assertion."
+      },
+      {
+        "assertion": "Assertion (A): A repeater is a networking device that amplifies signals.",
+        "reason": "Reason (R): It extends the length of the network cable.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A repeater indeed amplifies signals to extend the length of the network cable, making the given reason a correct explanation for the assertion."
+      },
+      {
+        "assertion": "Assertion (A): The network address in IPv6 is 128 bits.",
+        "reason": "Reason (R): It is a 128-bit addressing scheme.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "IPv6 indeed uses a 128-bit addressing scheme, making the given reason a correct explanation for the assertion."
+      }
+    ],
+    "total": 10
+  }
+}

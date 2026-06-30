@@ -1,0 +1,274 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Web Technologies Basics",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:34:01.126Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the primary function of a URL?",
+        "opts": [
+          "(A) To store files on the web",
+          "(B) To locate web pages on the internet",
+          "(C) To send emails",
+          "(D) To make online payments"
+        ],
+        "ans": "B",
+        "explanation": "A URL (Uniform Resource Locator) is a web address used to locate a specific resource on the internet.",
+        "difficulty": "easy",
+        "topic": "URL and Uniform Resource Locators"
+      },
+      {
+        "q": "Which of the following is a type of HTTP request?",
+        "opts": [
+          "(A) POST",
+          "(B) GET",
+          "(C) Both A and B",
+          "(D) Neither A nor B"
+        ],
+        "ans": "C",
+        "explanation": "Both POST and GET are types of HTTP requests. POST is used for creating new resources, while GET is used for retrieving existing resources.",
+        "difficulty": "easy",
+        "topic": "HTTP Requests"
+      },
+      {
+        "q": "What is the purpose of a web browser?",
+        "opts": [
+          "(A) To store files on the web",
+          "(B) To locate web pages on the internet",
+          "(C) To display HTML content",
+          "(D) To send emails"
+        ],
+        "ans": "C",
+        "explanation": "A web browser's primary function is to display HTML content, allowing users to view and interact with web pages.",
+        "difficulty": "easy",
+        "topic": "Web Browsers"
+      },
+      {
+        "q": "Which of the following is a characteristic of a secure HTTP connection?",
+        "opts": [
+          "(A) It uses the 'http://' protocol",
+          "(B) It uses the 'https://' protocol",
+          "(C) It does not encrypt data",
+          "(D) It uses the 'ftp://' protocol"
+        ],
+        "ans": "B",
+        "explanation": "A secure HTTP connection, also known as HTTPS, uses the 'https://' protocol to encrypt data and ensure secure communication between the client and server.",
+        "difficulty": "easy",
+        "topic": "HTTP and HTTPS"
+      },
+      {
+        "q": "What is the purpose of a web server?",
+        "opts": [
+          "(A) To store files on the web",
+          "(B) To locate web pages on the internet",
+          "(C) To serve web pages to clients",
+          "(D) To send emails"
+        ],
+        "ans": "C",
+        "explanation": "A web server's primary function is to serve web pages to clients, responding to HTTP requests and providing access to hosted resources.",
+        "difficulty": "easy",
+        "topic": "Web Servers"
+      },
+      {
+        "q": "Which of the following is a type of web framework?",
+        "opts": [
+          "(A) Django",
+          "(B) Flask",
+          "(C) Both A and B",
+          "(D) Neither A nor B"
+        ],
+        "ans": "C",
+        "explanation": "Both Django and Flask are popular web frameworks used for building web applications. Django is a high-level framework, while Flask is a microframework.",
+        "difficulty": "medium",
+        "topic": "Web Frameworks"
+      },
+      {
+        "q": "What is the purpose of a client-side script?",
+        "opts": [
+          "(A) To perform server-side logic",
+          "(B) To enhance user experience",
+          "(C) To store data on the server",
+          "(D) To send emails"
+        ],
+        "ans": "B",
+        "explanation": "Client-side scripts, typically written in JavaScript, are used to enhance user experience by adding interactive elements and dynamic effects to web pages.",
+        "difficulty": "medium",
+        "topic": "Client-Side Scripting"
+      },
+      {
+        "q": "Which of the following is a type of HTTP header?",
+        "opts": [
+          "(A) Authorization",
+          "(B) Accept-Language",
+          "(C) Both A and B",
+          "(D) Neither A nor B"
+        ],
+        "ans": "C",
+        "explanation": "Both Authorization and Accept-Language are types of HTTP headers. Authorization headers are used for authentication, while Accept-Language headers specify the user's preferred language.",
+        "difficulty": "medium",
+        "topic": "HTTP Headers"
+      },
+      {
+        "q": "What is the purpose of a web cache?",
+        "opts": [
+          "(A) To store frequently accessed resources",
+          "(B) To reduce network traffic",
+          "(C) To enhance user experience",
+          "(D) To store data on the server"
+        ],
+        "ans": "A",
+        "explanation": "A web cache stores frequently accessed resources, reducing the need for repeated requests to the server and improving page load times.",
+        "difficulty": "medium",
+        "topic": "Web Caching"
+      },
+      {
+        "q": "Which of the following is a type of web security vulnerability?",
+        "opts": [
+          "(A) SQL Injection",
+          "(B) Cross-Site Scripting (XSS)",
+          "(C) Both A and B",
+          "(D) Neither A nor B"
+        ],
+        "ans": "C",
+        "explanation": "Both SQL Injection and Cross-Site Scripting (XSS) are types of web security vulnerabilities. SQL Injection involves injecting malicious SQL code, while XSS involves injecting malicious JavaScript code.",
+        "difficulty": "medium",
+        "topic": "Web Security"
+      },
+      {
+        "q": "What is the purpose of a web proxy?",
+        "opts": [
+          "(A) To filter network traffic",
+          "(B) To enhance user experience",
+          "(C) To store data on the server",
+          "(D) To reduce network traffic"
+        ],
+        "ans": "A",
+        "explanation": "A web proxy filters network traffic, allowing administrators to control access to specific resources and improve security.",
+        "difficulty": "medium",
+        "topic": "Web Proxies"
+      },
+      {
+        "q": "Which of the following is a characteristic of a RESTful API?",
+        "opts": [
+          "(A) It uses a fixed endpoint for all requests",
+          "(B) It uses a resource-based endpoint structure",
+          "(C) It does not support stateless communication",
+          "(D) It uses a fixed protocol"
+        ],
+        "ans": "B",
+        "explanation": "A RESTful API uses a resource-based endpoint structure, making it easier to identify and access specific resources.",
+        "difficulty": "medium",
+        "topic": "RESTful APIs"
+      },
+      {
+        "q": "What is the purpose of a web service?",
+        "opts": [
+          "(A) To provide a user interface for a web application",
+          "(B) To expose a web application's functionality as a service",
+          "(C) To store data on the server",
+          "(D) To send emails"
+        ],
+        "ans": "B",
+        "explanation": "A web service exposes a web application's functionality as a service, allowing other applications to access and use its resources.",
+        "difficulty": "medium",
+        "topic": "Web Services"
+      },
+      {
+        "q": "Which of the following is a type of web architecture pattern?",
+        "opts": [
+          "(A) Model-View-Controller (MVC)",
+          "(B) Model-View-ViewModel (MVVM)",
+          "(C) Both A and B",
+          "(D) Neither A nor B"
+        ],
+        "ans": "C",
+        "explanation": "Both Model-View-Controller (MVC) and Model-View-ViewModel (MVVM) are types of web architecture patterns. MVC separates concerns into three interconnected components, while MVVM separates concerns into four interconnected components.",
+        "difficulty": "hard",
+        "topic": "Web Architecture Patterns"
+      },
+      {
+        "q": "What is the purpose of a microservices architecture?",
+        "opts": [
+          "(A) To improve scalability and flexibility",
+          "(B) To reduce network traffic",
+          "(C) To enhance user experience",
+          "(D) To store data on the server"
+        ],
+        "ans": "A",
+        "explanation": "A microservices architecture improves scalability and flexibility by breaking down a monolithic application into smaller, independent services.",
+        "difficulty": "hard",
+        "topic": "Microservices Architecture"
+      },
+      {
+        "q": "Which of the following is a type of web performance optimization technique?",
+        "opts": [
+          "(A) Code splitting",
+          "(B) Image compression",
+          "(C) Both A and B",
+          "(D) Neither A nor B"
+        ],
+        "ans": "C",
+        "explanation": "Both code splitting and image compression are types of web performance optimization techniques. Code splitting involves breaking down large codebases into smaller chunks, while image compression reduces the file size of images.",
+        "difficulty": "hard",
+        "topic": "Web Performance Optimization"
+      },
+      {
+        "q": "What is the purpose of a service-oriented architecture (SOA)?",
+        "opts": [
+          "(A) To improve scalability and flexibility",
+          "(B) To reduce network traffic",
+          "(C) To enhance user experience",
+          "(D) To expose a web application's functionality as a service"
+        ],
+        "ans": "D",
+        "explanation": "A service-oriented architecture (SOA) exposes a web application's functionality as a service, allowing other applications to access and use its resources.",
+        "difficulty": "hard",
+        "topic": "Service-Oriented Architecture (SOA)"
+      },
+      {
+        "q": "Which of the following is a type of web security threat?",
+        "opts": [
+          "(A) SQL Injection",
+          "(B) Cross-Site Request Forgery (CSRF)",
+          "(C) Both A and B",
+          "(D) Neither A nor B"
+        ],
+        "ans": "C",
+        "explanation": "Both SQL Injection and Cross-Site Request Forgery (CSRF) are types of web security threats. SQL Injection involves injecting malicious SQL code, while CSRF involves tricking users into performing unintended actions.",
+        "difficulty": "hard",
+        "topic": "Web Security Threats"
+      },
+      {
+        "q": "What is the purpose of a load balancer?",
+        "opts": [
+          "(A) To distribute incoming traffic across multiple servers",
+          "(B) To reduce network traffic",
+          "(C) To enhance user experience",
+          "(D) To store data on the server"
+        ],
+        "ans": "A",
+        "explanation": "A load balancer distributes incoming traffic across multiple servers, improving scalability and reliability by ensuring that no single server becomes overwhelmed.",
+        "difficulty": "hard",
+        "topic": "Load Balancers"
+      },
+      {
+        "q": "Which of the following is a characteristic of a cloud-based web application?",
+        "opts": [
+          "(A) It uses a fixed infrastructure",
+          "(B) It uses a scalable and flexible infrastructure",
+          "(C) It does not support cloud computing",
+          "(D) It uses a traditional on-premises infrastructure"
+        ],
+        "ans": "B",
+        "explanation": "A cloud-based web application uses a scalable and flexible infrastructure, allowing it to easily adapt to changing demands and scale up or down as needed.",
+        "difficulty": "hard",
+        "topic": "Cloud-Based Web Applications"
+      }
+    ],
+    "total": 20
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electric Charges and Fields",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:07:54.096Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A research team is studying the behavior of electric charges in a thunderstorm. They place a small ball of plastic near the lightning rod to measure the electric field. As the storm approaches, the team observes that the ball starts to move towards the lightning rod. They also notice that the direction of the electric field is from the cloud to the ground. Suddenly, a lightning bolt strikes the lightning rod, causing a massive electric surge. The team measures the potential difference between the lightning rod and the ground to be 1 million volts. What can be concluded about the electric field in this scenario?",
+        "questions": [
+          {
+            "q": "What is the direction of the electric field in this scenario?",
+            "opts": [
+              "(A) From the ground to the cloud",
+              "(B) From the lightning rod to the ground",
+              "(C) From the cloud to the ground",
+              "(D) From the ground to the lightning rod"
+            ],
+            "ans": "C",
+            "explanation": "The electric field is directed from the positive charge to the negative charge. In this case, the cloud is positively charged, and the ground is negatively charged, so the electric field is directed from the cloud to the ground."
+          },
+          {
+            "q": "What is the potential difference between the lightning rod and the ground?",
+            "opts": [
+              "(A) 100 volts",
+              "(B) 1,000 volts",
+              "(C) 1 million volts",
+              "(D) 10 million volts"
+            ],
+            "ans": "C",
+            "explanation": "The team measured the potential difference between the lightning rod and the ground to be 1 million volts."
+          },
+          {
+            "q": "What is the effect of the electric field on the plastic ball?",
+            "opts": [
+              "(A) The ball remains stationary",
+              "(B) The ball moves away from the lightning rod",
+              "(C) The ball moves towards the lightning rod",
+              "(D) The ball is attracted to the cloud"
+            ],
+            "ans": "C",
+            "explanation": "The electric field exerted a force on the plastic ball, causing it to move towards the lightning rod."
+          },
+          {
+            "q": "What can be concluded about the charges on the cloud and the ground?",
+            "opts": [
+              "(A) The cloud is negatively charged, and the ground is positively charged",
+              "(B) The cloud is positively charged, and the ground is negatively charged",
+              "(C) The cloud and the ground have equal charges",
+              "(D) The cloud and the ground have no charges"
+            ],
+            "ans": "B",
+            "explanation": "The direction of the electric field is from the cloud to the ground, indicating that the cloud is positively charged and the ground is negatively charged."
+          },
+          {
+            "q": "What is the role of the lightning rod in this scenario?",
+            "opts": [
+              "(A) To protect the ground from electric shocks",
+              "(B) To attract the electric field and protect the surrounding area",
+              "(C) To conduct electricity from the cloud to the ground",
+              "(D) To produce a massive electric surge"
+            ],
+            "ans": "B",
+            "explanation": "The lightning rod is designed to attract the electric field and protect the surrounding area from electric shocks."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A physicist is studying the behavior of electric charges in a Van de Graaff generator. The generator consists of a hollow metal sphere that rotates around a central axis. The sphere is connected to a high-voltage power source, causing a massive electric charge to build up on its surface. The physicist observes that the electric field inside the sphere is zero, while the electric field outside the sphere is non-zero. What can be concluded about the electric field in this scenario?",
+        "questions": [
+          {
+            "q": "What is the electric field inside the Van de Graaff generator?",
+            "opts": [
+              "(A) Non-zero and directed radially outward",
+              "(B) Non-zero and directed radially inward",
+              "(C) Zero",
+              "(D) Unpredictable"
+            ],
+            "ans": "C",
+            "explanation": "The electric field inside a hollow conductor is always zero, regardless of the charge on the conductor."
+          },
+          {
+            "q": "What is the direction of the electric field outside the Van de Graaff generator?",
+            "opts": [
+              "(A) Radially inward",
+              "(B) Radially outward",
+              "(C) Tangentially along the surface",
+              "(D) Unpredictable"
+            ],
+            "ans": "B",
+            "explanation": "The electric field outside a charged conductor is directed radially outward."
+          },
+          {
+            "q": "What is the effect of the electric field on the charge on the surface of the Van de Graaff generator?",
+            "opts": [
+              "(A) The charge is reduced",
+              "(B) The charge remains constant",
+              "(C) The charge increases",
+              "(D) The charge is repelled"
+            ],
+            "ans": "B",
+            "explanation": "The electric field does not affect the charge on the surface of a conductor."
+          },
+          {
+            "q": "What can be concluded about the charge on the Van de Graaff generator?",
+            "opts": [
+              "(A) The charge is positive",
+              "(B) The charge is negative",
+              "(C) The charge is zero",
+              "(D) The charge is unpredictable"
+            ],
+            "ans": "A",
+            "explanation": "The electric field outside the Van de Graaff generator is directed radially outward, indicating that the charge on the generator is positive."
+          },
+          {
+            "q": "What is the purpose of the high-voltage power source in the Van de Graaff generator?",
+            "opts": [
+              "(A) To reduce the charge on the generator",
+              "(B) To increase the charge on the generator",
+              "(C) To protect the generator from electric shocks",
+              "(D) To measure the electric field around the generator"
+            ],
+            "ans": "B",
+            "explanation": "The high-voltage power source is used to build up a massive electric charge on the surface of the Van de Graaff generator."
+          }
+        ]
+      }
+    ]
+  }
+}

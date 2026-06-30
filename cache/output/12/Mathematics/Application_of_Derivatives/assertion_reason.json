@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Application of Derivatives",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:28:27.332Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The maximum value of the function f(x) = 2x^3 - 15x^2 + 18x + 8 occurs at x = 3.",
+        "reason": "Reason (R): Since f''(x) = 6(2x^2 - 5x + 4) is negative at x = 3, the function has a local maximum at x = 3.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Using the second derivative test to find the local maximum of the function."
+      },
+      {
+        "assertion": "Assertion (A): The function f(x) = x^3 - 6x^2 + 9x + 2 has a critical point at x = 1.",
+        "reason": "Reason (R): Since f'(x) = 3x^2 - 12x + 9 = 3(x - 1)^2 is zero at x = 1, x = 1 is a critical point.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Finding critical points by setting the derivative equal to zero."
+      },
+      {
+        "assertion": "Assertion (A): The function f(x) = x^3 - 6x^2 + 9x + 2 is increasing on the interval (-∞, 1).",
+        "reason": "Reason (R): Since f'(x) = 3x^2 - 12x + 9 = 3(x - 1)^2 is positive for x < 1, the function is increasing on the interval (-∞, 1).",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Using the derivative to determine the intervals of increase and decrease."
+      },
+      {
+        "assertion": "Assertion (A): The function f(x) = x^3 - 6x^2 + 9x + 2 has a local minimum at x = 2.",
+        "reason": "Reason (R): Since f'(x) = 3x^2 - 12x + 9 = 3(x - 1)^2 has a zero at x = 2, x = 2 is a critical point.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Using the first derivative test to find the local minimum of the function."
+      },
+      {
+        "assertion": "Assertion (A): The function f(x) = x^3 - 6x^2 + 9x + 2 has a local maximum at x = 3.",
+        "reason": "Reason (R): Since f''(x) = 6(2x^2 - 5x + 4) is positive at x = 3, the function has a local minimum at x = 3.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Using the second derivative test to find the local minimum of the function."
+      },
+      {
+        "assertion": "Assertion (A): The function f(x) = x^3 - 6x^2 + 9x + 2 is decreasing on the interval (2, ∞).",
+        "reason": "Reason (R): Since f'(x) = 3x^2 - 12x + 9 = 3(x - 1)^2 is negative for x > 2, the function is decreasing on the interval (2, ∞).",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Using the derivative to determine the intervals of increase and decrease."
+      },
+      {
+        "assertion": "Assertion (A): The function f(x) = x^3 - 6x^2 + 9x + 2 has a critical point at x = 2.",
+        "reason": "Reason (R): Since f'(x) = 3x^2 - 12x + 9 = 3(x - 1)^2 has a zero at x = 2, x = 2 is a critical point.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Finding critical points by setting the derivative equal to zero."
+      },
+      {
+        "assertion": "Assertion (A): The function f(x) = x^3 - 6x^2 + 9x + 2 has a local minimum at x = 1.",
+        "reason": "Reason (R): Since f''(x) = 6(2x^2 - 5x + 4) has a zero at x = 1, x = 1 is a point of inflection.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Using the second derivative test to find the local minimum of the function."
+      },
+      {
+        "assertion": "Assertion (A): The function f(x) = x^3 - 6x^2 + 9x + 2 is increasing on the interval (1, 2).",
+        "reason": "Reason (R): Since f'(x) = 3x^2 - 12x + 9 = 3(x - 1)^2 is positive for 1 < x < 2, the function is increasing on the interval (1, 2).",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Using the derivative to determine the intervals of increase and decrease."
+      },
+      {
+        "assertion": "Assertion (A): The function f(x) = x^3 - 6x^2 + 9x + 2 has a local maximum at x = 2.",
+        "reason": "Reason (R): Since f''(x) = 6(2x^2 - 5x + 4) is positive at x = 2, the function has a local minimum at x = 2.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Using the second derivative test to find the local minimum of the function."
+      }
+    ],
+    "total": 10
+  }
+}

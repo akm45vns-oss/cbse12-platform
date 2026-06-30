@@ -22,21 +22,31 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 import { getAllChapters11, CURRICULUM_11 } from "../constants/curriculum11.js";
+import { getAllChapters12, CURRICULUM } from "../constants/curriculum.js";
 import { taskQueue, makeTask, ALL_CONTENT_TYPES } from "./queue.js";
 import { getCompletedTaskIds } from "./cache/pipelineCache.js";
 import { WorkerManager } from "./workers/workerManager.js";
 import { printKeyStatus } from "./keyPool.js";
 import { clearSeenHashes } from "./validators/contentValidator.js";
 
-const CLASS_LEVEL = "11";
+// CLASS_LEVEL is dynamic now based on arguments
 
 // ── Parse CLI args ─────────────────────────────────────────────────
 const args = process.argv.slice(2);
 const isDryRun    = args.includes("--dry-run");
 const isRetryOnly = args.includes("--retry-only");
+const isForce     = args.includes("--force");
 const subjectFilter = (() => {
   const i = args.indexOf("--subject");
   return i !== -1 ? args[i + 1] : null;
+})();
+const chapterFilter = (() => {
+  const i = args.indexOf("--chapter");
+  return i !== -1 ? args[i + 1] : null;
+})();
+const classFilter = (() => {
+  const i = args.indexOf("--class");
+  return i !== -1 ? args[i + 1] : "12,11"; // Default to 12 first, then 11
 })();
 const chapterLimit = (() => {
   const i = args.indexOf("--chapters");
@@ -46,17 +56,29 @@ const chapterLimit = (() => {
 // ── Main ───────────────────────────────────────────────────────────
 async function main() {
   console.log("═".repeat(60));
-  console.log("  CBSE CLASS 11 CONTENT GENERATION PIPELINE");
+  console.log("  CBSE CONTENT GENERATION PIPELINE (Class 11 & 12)");
   console.log(`  Started: ${new Date().toLocaleString()}`);
   console.log("═".repeat(60));
 
-  // Load all chapters
-  let allChapters = getAllChapters11();
+  // Load all chapters based on classFilter
+  let allChapters = [];
+  if (classFilter.includes("12")) {
+    allChapters = allChapters.concat(getAllChapters12().map(c => ({ ...c, classLevel: "12" })));
+  }
+  if (classFilter.includes("11") || classFilter === "all") {
+    allChapters = allChapters.concat(getAllChapters11().map(c => ({ ...c, classLevel: "11" })));
+  }
 
   // Apply subject filter
   if (subjectFilter) {
     allChapters = allChapters.filter(c => c.subject.toLowerCase().includes(subjectFilter.toLowerCase()));
     console.log(`\n🔍 Subject filter: "${subjectFilter}" → ${allChapters.length} chapters`);
+  }
+
+  // Apply chapter filter
+  if (chapterFilter) {
+    allChapters = allChapters.filter(c => c.chapter.toLowerCase().includes(chapterFilter.toLowerCase()));
+    console.log(`\n🔍 Chapter filter: "${chapterFilter}" → ${allChapters.length} chapters`);
   }
 
   // Apply chapter limit per subject
@@ -96,8 +118,15 @@ async function main() {
 
   // ── Check already completed ────────────────────────────────────
   console.log("\n⏳ Checking database for already-generated content...");
-  const completedIds = await getCompletedTaskIds(CLASS_LEVEL);
-  console.log(`✅ ${completedIds.size} tasks already complete — will skip`);
+  const completedIds11 = classFilter.includes("11") || classFilter === "all" ? await getCompletedTaskIds("11") : new Set();
+  const completedIds12 = classFilter.includes("12") ? await getCompletedTaskIds("12") : new Set();
+  const completedIds = new Set([...completedIds11, ...completedIds12]);
+  
+  if (isForce) {
+    console.log(`✅ ${completedIds.size} tasks already complete — IGNORED (--force enabled)`);
+  } else {
+    console.log(`✅ ${completedIds.size} tasks already complete — will skip`);
+  }
 
   // ── Try to resume from checkpoint ─────────────────────────────
   let resumed = taskQueue.resume();
@@ -130,27 +159,31 @@ async function main() {
       // Only retry queue is used; clear main queues
       Object.values(taskQueue.queues).forEach(q => { q.length = 0; });
     } else {
-      // Enqueue all tasks that are NOT already done
-      let enqueued = 0;
-      let skipped  = 0;
+      if (taskQueue.isEmpty) {
+        if (!resumed) {
+          // Clean build
+          let enqueued = 0;
+          let skipped  = 0;
 
-      for (const { subject, chapter } of allChapters) {
-        for (const contentType of ALL_CONTENT_TYPES) {
-          const task = makeTask(CLASS_LEVEL, subject, chapter, contentType);
+          for (const { subject, chapter, classLevel } of allChapters) {
+            for (const contentType of ALL_CONTENT_TYPES) {
+              const task = makeTask(classLevel, subject, chapter, contentType);
 
-          if (completedIds.has(task.id)) {
-            skipped += 1;
-            taskQueue.completedCount += 1; // count pre-existing as done
-            continue;
+              if (completedIds.has(task.id) && !isForce) {
+                skipped += 1;
+                taskQueue.completedCount += 1; // count pre-existing as done
+                continue;
+              }
+
+              taskQueue.enqueue(task);
+              enqueued += 1;
+            }
           }
 
-          taskQueue.enqueue(task);
-          enqueued += 1;
+          console.log(`\n📥 Enqueued: ${enqueued} tasks`);
+          console.log(`⏩ Pre-skipped (already done): ${skipped} tasks`);
         }
       }
-
-      console.log(`\n📥 Enqueued: ${enqueued} tasks`);
-      console.log(`⏩ Pre-skipped (already done): ${skipped} tasks`);
     }
   }
 

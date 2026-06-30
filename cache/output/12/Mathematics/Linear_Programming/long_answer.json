@@ -1,0 +1,112 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Linear Programming",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:59:35.406Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the graphical method of solving a linear programming problem. What are the important points to consider while graphing the constraints and the feasible region?",
+        "marks": 5,
+        "answer": "The graphical method involves plotting the constraints on a coordinate plane and determining the feasible region, which is the area where all the constraints are satisfied. The following points are important to consider while graphing the constraints and the feasible region: (i) The constraints are represented by lines or curves, and the feasible region is the area enclosed by these lines or curves. (ii) The constraints are plotted on a coordinate plane, and the feasible region is determined by finding the intersection points of the constraints. (iii) The objective function is also plotted on the coordinate plane, and the optimal solution is determined by finding the point of intersection between the objective function and the feasible region. (iv) The feasible region must be consistent with the given constraints, and it must be a non-empty set.",
+        "marking_scheme": [
+          "Understanding the graphical method (1 mark)",
+          "Importance of considering intersection points (1 mark)",
+          "Importance of plotting the objective function (1 mark)",
+          "Feasible region consistency (1 mark)",
+          "Feasible region non-emptiness (1 mark)"
+        ],
+        "topic": "Graphical Method",
+        "is_numerical": false
+      },
+      {
+        "q": "Consider a linear programming problem with the following constraints: 2x + 3y ≤ 12, x ≥ 0, y ≥ 0. Use the graphical method to find the feasible region and determine the optimal solution.",
+        "marks": 5,
+        "answer": "To find the feasible region, we plot the constraints on a coordinate plane. The constraint 2x + 3y ≤ 12 is plotted as a line, and the x and y axes are plotted as the boundaries of the feasible region. The feasible region is the area below and to the left of the line 2x + 3y = 12. To determine the optimal solution, we find the point where the objective function intersects the feasible region. In this case, the objective function is not given, so we assume that the optimal solution is at the vertex of the feasible region. The vertices of the feasible region are found by solving the system of equations 2x + 3y = 12, x = 0, and y = 0.",
+        "marking_scheme": [
+          "Plotting the constraints (1 mark)",
+          "Determining the feasible region (1 mark)",
+          "Finding the vertices of the feasible region (1 mark)",
+          "Determining the optimal solution (1 mark)",
+          "Justification for the optimal solution (1 mark)"
+        ],
+        "topic": "Graphical Method",
+        "is_numerical": false
+      },
+      {
+        "q": "A company produces two products, A and B. The production of product A requires 2 hours of labor and 1 hour of machine time, while the production of product B requires 3 hours of labor and 2 hours of machine time. The company has a maximum of 120 hours of labor and 80 hours of machine time available. The profit per unit of product A is ₹ 10, and the profit per unit of product B is ₹ 15. Use linear programming to determine the optimal production levels of product A and product B.",
+        "marks": 5,
+        "answer": "To solve this problem, we set up the following system of linear equations: 2x + 3y ≤ 120 (labor constraint), x + 2y ≤ 80 (machine time constraint), x ≥ 0 (non-negativity constraint), and y ≥ 0 (non-negativity constraint). We also define the objective function as 10x + 15y (profit function). To find the optimal production levels, we graph the constraints on a coordinate plane and determine the feasible region. We then find the point where the objective function intersects the feasible region, which is the optimal solution.",
+        "marking_scheme": [
+          "Setting up the system of linear equations (1 mark)",
+          "Graphing the constraints and determining the feasible region (1 mark)",
+          "Finding the optimal production levels (1 mark)",
+          "Justification for the optimal solution (1 mark)",
+          "Calculation of the optimal profit (1 mark)"
+        ],
+        "topic": "Linear Programming",
+        "is_numerical": false
+      },
+      {
+        "q": "Solve the following linear programming problem: Maximize Z = 2x + 5y, subject to the constraints: x + 2y ≤ 12, 3x - 2y ≤ 10, x ≥ 0, y ≥ 0.",
+        "marks": 5,
+        "answer": "To solve this problem, we first graph the constraints on a coordinate plane and determine the feasible region. We then find the vertices of the feasible region by solving the system of equations x + 2y = 12, 3x - 2y = 10, x = 0, and y = 0. We evaluate the objective function at each vertex and determine which one gives the maximum value of Z.",
+        "marking_scheme": [
+          "Graphing the constraints and determining the feasible region (1 mark)",
+          "Finding the vertices of the feasible region (1 mark)",
+          "Evaluating the objective function at each vertex (1 mark)",
+          "Determining the optimal solution (1 mark)",
+          "Justification for the optimal solution (1 mark)"
+        ],
+        "topic": "Linear Programming",
+        "is_numerical": false
+      },
+      {
+        "q": "A factory produces two products, X and Y. The production of product X requires 3 hours of labor and 2 hours of machine time, while the production of product Y requires 2 hours of labor and 3 hours of machine time. The factory has a maximum of 180 hours of labor and 150 hours of machine time available. The profit per unit of product X is ₹ 20, and the profit per unit of product Y is ₹ 25. If the factory produces 60 units of product X, how many units of product Y should it produce to maximize profit?",
+        "marks": 5,
+        "answer": "To solve this problem, we first set up the following system of linear equations: 3x + 2y ≤ 180 (labor constraint), 2x + 3y ≤ 150 (machine time constraint), x ≥ 0 (non-negativity constraint), and y ≥ 0 (non-negativity constraint). We also define the objective function as 20x + 25y (profit function). We then use the simplex method to find the optimal production levels of product X and product Y.",
+        "marking_scheme": [
+          "Setting up the system of linear equations (1 mark)",
+          "Defining the objective function (1 mark)",
+          "Applying the simplex method (1 mark)",
+          "Finding the optimal production levels (1 mark)",
+          "Justification for the optimal solution (1 mark)"
+        ],
+        "topic": "Simplex Method",
+        "is_numerical": true
+      },
+      {
+        "q": "A company has a budget of ₹ 100,000 to invest in two projects, A and B. Project A requires an initial investment of ₹ 30,000 and is expected to generate a profit of ₹ 20,000 per year. Project B requires an initial investment of ₹ 40,000 and is expected to generate a profit of ₹ 30,000 per year. If the company wants to maximize its profit, how much should it invest in project A and project B?",
+        "marks": 5,
+        "answer": "Calculation:\nLet x be the amount invested in project A and y be the amount invested in project B. We have the constraints: x + y ≤ 100,000 (budget constraint), x ≥ 0 (non-negativity constraint), and y ≥ 0 (non-negativity constraint). We also define the objective function as 20,000x + 30,000y (profit function). To find the optimal investment levels, we graph the constraints on a coordinate plane and determine the feasible region. We then find the point where the objective function intersects the feasible region, which is the optimal solution.\n\nThe optimal investment levels are x = 40,000 and y = 60,000.",
+        "marking_scheme": [
+          "Setting up the system of linear equations (1 mark)",
+          "Defining the objective function (1 mark)",
+          "Graphing the constraints and determining the feasible region (1 mark)",
+          "Finding the optimal investment levels (1 mark)",
+          "Justification for the optimal solution (1 mark)"
+        ],
+        "topic": "Linear Programming",
+        "is_numerical": true
+      },
+      {
+        "q": "A company has two products, X and Y. The cost of producing one unit of product X is ₹ 10, and the cost of producing one unit of product Y is ₹ 15. The demand for product X is 200 units, and the demand for product Y is 150 units. If the company wants to minimize its total cost, how many units of product X and product Y should it produce?",
+        "marks": 5,
+        "answer": "Calculation:\nLet x be the number of units of product X produced and y be the number of units of product Y produced. We have the constraints: 10x + 15y ≤ 2000 (cost constraint), x ≥ 0 (non-negativity constraint), and y ≥ 0 (non-negativity constraint). We also define the objective function as 10x + 15y (cost function). To find the optimal production levels, we graph the constraints on a coordinate plane and determine the feasible region. We then find the point where the objective function intersects the feasible region, which is the optimal solution.\n\nThe optimal production levels are x = 100 and y = 50.",
+        "marking_scheme": [
+          "Setting up the system of linear equations (1 mark)",
+          "Defining the objective function (1 mark)",
+          "Graphing the constraints and determining the feasible region (1 mark)",
+          "Finding the optimal production levels (1 mark)",
+          "Justification for the optimal solution (1 mark)"
+        ],
+        "topic": "Linear Programming",
+        "is_numerical": true
+      }
+    ],
+    "total": 7
+  }
+}

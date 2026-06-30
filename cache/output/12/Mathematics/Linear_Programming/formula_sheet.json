@@ -1,0 +1,76 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Linear Programming",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:18:04.924Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Objective Function",
+        "formula": "Z = c1x1 + c2x2 + ... + cnxn",
+        "variables": "Z - Objective function value, c - Coefficients, x - Decision variables",
+        "units": "No units",
+        "notes": "Represents the objective function in a linear programming problem"
+      },
+      {
+        "name": "Constraints",
+        "formula": "ax1 + ax2 + ... + axn ≤ b (≤ constraint), ax1 + ax2 + ... + axn = b (equal constraint), ax1 + ax2 + ... + axn ≥ b (≥ constraint)",
+        "variables": "a - Coefficients, x - Decision variables, b - Right-hand side value",
+        "units": "No units",
+        "notes": "Represents the constraints in a linear programming problem"
+      },
+      {
+        "name": "Feasible Region",
+        "formula": "The set of all points (x1, x2, ..., xn) that satisfy all constraints",
+        "variables": "x - Decision variables",
+        "units": "No units",
+        "notes": "The region where the optimal solution lies"
+      },
+      {
+        "name": "Optimal Solution",
+        "formula": "The point in the feasible region that maximizes or minimizes the objective function",
+        "variables": "x - Decision variables",
+        "units": "No units",
+        "notes": "The solution that satisfies all constraints and maximizes or minimizes the objective function"
+      },
+      {
+        "name": "Corner Point Method",
+        "formula": "Find all corner points of the feasible region and evaluate the objective function at each point to find the optimal solution",
+        "variables": "x - Decision variables",
+        "units": "No units",
+        "notes": "A method to find the optimal solution by evaluating the objective function at all corner points of the feasible region"
+      },
+      {
+        "name": "Simplex Method",
+        "formula": "An iterative method to find the optimal solution by moving from one basic feasible solution to another",
+        "variables": "x - Decision variables",
+        "units": "No units",
+        "notes": "An algorithm to find the optimal solution by systematically moving from one basic feasible solution to another"
+      },
+      {
+        "name": "Dual Problem",
+        "formula": "Find the dual problem by interchanging the rows and columns of the original problem",
+        "variables": "x - Decision variables, y - Dual variables",
+        "units": "No units",
+        "notes": "A problem that is derived from the original problem by interchanging the rows and columns"
+      },
+      {
+        "name": "Weak Duality Theorem",
+        "formula": "If x is a feasible solution to the primal problem and y is a feasible solution to the dual problem, then cx ≤ by",
+        "variables": "x - Decision variables, y - Dual variables",
+        "units": "No units",
+        "notes": "A theorem that states that the optimal value of the primal problem is less than or equal to the optimal value of the dual problem"
+      },
+      {
+        "name": "Strong Duality Theorem",
+        "formula": "If x is an optimal solution to the primal problem and y is an optimal solution to the dual problem, then cx = by",
+        "variables": "x - Decision variables, y - Dual variables",
+        "units": "No units",
+        "notes": "A theorem that states that the optimal value of the primal problem is equal to the optimal value of the dual problem"
+      }
+    ]
+  }
+}

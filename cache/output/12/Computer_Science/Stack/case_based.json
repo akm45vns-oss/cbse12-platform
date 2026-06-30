@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Stack",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:31:43.564Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "While developing a web application, the development team encountered an issue where a user could add multiple items to their shopping cart before making the payment. However, after adding an item, the user couldn't remove it if they changed their mind. The team decided to implement a stack data structure to solve this issue. They used a stack to store the items in the shopping cart and implemented the 'push' operation to add items and the 'pop' operation to remove items. This approach allowed users to add and remove items easily, improving the overall user experience.",
+        "questions": [
+          {
+            "q": "What is the primary reason for implementing a stack data structure in the given scenario?",
+            "opts": [
+              "(A) To improve the performance of the web application",
+              "(B) To allow users to add and remove items easily",
+              "(C) To store user credentials securely",
+              "(D) To handle multiple requests concurrently"
+            ],
+            "ans": "B",
+            "explanation": "The team implemented a stack to allow users to add and remove items easily, improving the overall user experience."
+          },
+          {
+            "q": "What operation was used to add items to the shopping cart?",
+            "opts": [
+              "(A) Push",
+              "(B) Pop",
+              "(C) Peek",
+              "(D) Search"
+            ],
+            "ans": "A",
+            "explanation": "The team used the 'push' operation to add items to the shopping cart."
+          },
+          {
+            "q": "What operation was used to remove items from the shopping cart?",
+            "opts": [
+              "(A) Push",
+              "(B) Pop",
+              "(C) Peek",
+              "(D) Search"
+            ],
+            "ans": "B",
+            "explanation": "The team used the 'pop' operation to remove items from the shopping cart."
+          },
+          {
+            "q": "What is the result of implementing a stack data structure in the given scenario?",
+            "opts": [
+              "(A) Improved user experience",
+              "(B) Increased performance",
+              "(C) Enhanced security",
+              "(D) Better scalability"
+            ],
+            "ans": "A",
+            "explanation": "The implementation of a stack data structure allowed users to add and remove items easily, improving the overall user experience."
+          },
+          {
+            "q": "Why was a stack chosen over other data structures?",
+            "opts": [
+              "(A) Because it is more efficient than a queue",
+              "(B) Because it is easier to implement than a linked list",
+              "(C) Because it allows for easy addition and removal of elements",
+              "(D) Because it is more secure than an array"
+            ],
+            "ans": "C",
+            "explanation": "A stack was chosen because it allows for easy addition and removal of elements, making it suitable for the given scenario."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A compiler for a programming language uses a stack to store the symbols that are yet to be evaluated. When the compiler encounters a symbol, it pushes it onto the stack. Once the symbol is evaluated, it is popped from the stack. This process continues until the compiler has evaluated all the symbols. The use of a stack simplifies the evaluation process and makes the compiler more efficient.",
+        "questions": [
+          {
+            "q": "What is the primary use of a stack in the given compiler?",
+            "opts": [
+              "(A) To store the source code",
+              "(B) To evaluate symbols",
+              "(C) To generate assembly code",
+              "(D) To manage memory"
+            ],
+            "ans": "B",
+            "explanation": "The stack is used to store the symbols that are yet to be evaluated."
+          },
+          {
+            "q": "What operation is performed when the compiler encounters a symbol?",
+            "opts": [
+              "(A) Push",
+              "(B) Pop",
+              "(C) Peek",
+              "(D) Search"
+            ],
+            "ans": "A",
+            "explanation": "The compiler pushes the symbol onto the stack when it encounters it."
+          },
+          {
+            "q": "What happens to a symbol once it is evaluated?",
+            "opts": [
+              "(A) It is pushed onto the stack",
+              "(B) It is popped from the stack",
+              "(C) It is printed to the console",
+              "(D) It is stored in memory"
+            ],
+            "ans": "B",
+            "explanation": "Once a symbol is evaluated, it is popped from the stack."
+          },
+          {
+            "q": "What is the benefit of using a stack in the compiler?",
+            "opts": [
+              "(A) It makes the compiler more complex",
+              "(B) It simplifies the evaluation process",
+              "(C) It increases the memory usage",
+              "(D) It reduces the performance"
+            ],
+            "ans": "B",
+            "explanation": "The use of a stack simplifies the evaluation process and makes the compiler more efficient."
+          },
+          {
+            "q": "Why is a stack a suitable data structure for this application?",
+            "opts": [
+              "(A) Because it is more efficient than a queue",
+              "(B) Because it is easier to implement than a linked list",
+              "(C) Because it allows for easy addition and removal of elements",
+              "(D) Because it is more secure than an array"
+            ],
+            "ans": "C",
+            "explanation": "A stack is suitable because it allows for easy addition and removal of elements, making it suitable for the given scenario."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:14:54.443Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the phenomenon of producing an electric current from a changing magnetic field?",
+        "opts": [
+          "(A) Electromagnetic radiation",
+          "(B) Electromagnetic induction",
+          "(C) Electrostatic induction",
+          "(D) Magnetic induction"
+        ],
+        "ans": "B",
+        "explanation": "Electromagnetic induction is the correct answer because it is the process by which a changing magnetic field induces an electric current in a conductor. The other options are incorrect because electromagnetic radiation refers to the emission of energy in the form of electromagnetic waves, electrostatic induction refers to the process of inducing a charge on a conductor, and magnetic induction refers to the process of inducing a magnetic field.",
+        "difficulty": "easy",
+        "topic": "Introduction to Electromagnetic Induction"
+      },
+      {
+        "q": "Who discovered the principle of electromagnetic induction?",
+        "opts": [
+          "(A) Michael Faraday",
+          "(B) James Clerk Maxwell",
+          "(C) Heinrich Hertz",
+          "(D) Andre-Marie Ampere"
+        ],
+        "ans": "A",
+        "explanation": "Michael Faraday is the correct answer because he discovered the principle of electromagnetic induction in 1831. The other options are incorrect because James Clerk Maxwell formulated the equations of electromagnetism, Heinrich Hertz demonstrated the existence of electromagnetic waves, and Andre-Marie Ampere formulated Ampere's law.",
+        "difficulty": "easy",
+        "topic": "History of Electromagnetic Induction"
+      },
+      {
+        "q": "What is the unit of magnetic flux?",
+        "opts": [
+          "(A) Tesla",
+          "(B) Weber",
+          "(C) Ampere",
+          "(D) Volt"
+        ],
+        "ans": "B",
+        "explanation": "Weber is the correct answer because it is the unit of magnetic flux. The other options are incorrect because Tesla is the unit of magnetic field strength, Ampere is the unit of electric current, and Volt is the unit of electric potential.",
+        "difficulty": "easy",
+        "topic": "Magnetic Flux"
+      },
+      {
+        "q": "What is the phenomenon of electromagnetic induction used in?",
+        "opts": [
+          "(A) Generators",
+          "(B) Motors",
+          "(C) Transformers",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "All of the above is the correct answer because electromagnetic induction is used in generators to convert mechanical energy into electrical energy, in motors to convert electrical energy into mechanical energy, and in transformers to transfer electrical energy from one circuit to another.",
+        "difficulty": "easy",
+        "topic": "Applications of Electromagnetic Induction"
+      },
+      {
+        "q": "What is the direction of the induced current in a coil when a magnet is moved towards it?",
+        "opts": [
+          "(A) Clockwise",
+          "(B) Counterclockwise",
+          "(C) Depends on the orientation of the coil",
+          "(D) No current is induced"
+        ],
+        "ans": "C",
+        "explanation": "Depends on the orientation of the coil is the correct answer because the direction of the induced current depends on the orientation of the coil and the direction of the changing magnetic field. The other options are incorrect because the direction of the induced current cannot be determined without knowing the orientation of the coil.",
+        "difficulty": "medium",
+        "topic": "Lenz's Law"
+      },
+      {
+        "q": "What is Lenz's law?",
+        "opts": [
+          "(A) The induced current flows in the direction of the changing magnetic field",
+          "(B) The induced current flows in the opposite direction of the changing magnetic field",
+          "(C) The induced current flows in the same direction as the changing magnetic field",
+          "(D) The induced current flows in a direction perpendicular to the changing magnetic field"
+        ],
+        "ans": "B",
+        "explanation": "The induced current flows in the opposite direction of the changing magnetic field is the correct answer because Lenz's law states that the induced current flows in a direction such that the magnetic field it produces opposes the changing magnetic field. The other options are incorrect because they do not accurately describe Lenz's law.",
+        "difficulty": "medium",
+        "topic": "Lenz's Law"
+      },
+      {
+        "q": "What is the equation for the induced emf in a coil?",
+        "opts": [
+          "(A) ε = -N(dΦ/dt)",
+          "(B) ε = N(dΦ/dt)",
+          "(C) ε = -dΦ/dt",
+          "(D) ε = dΦ/dt"
+        ],
+        "ans": "A",
+        "explanation": "ε = -N(dΦ/dt) is the correct answer because it is the equation for the induced emf in a coil, where ε is the induced emf, N is the number of turns in the coil, and dΦ/dt is the rate of change of the magnetic flux. The other options are incorrect because they do not accurately describe the equation for the induced emf.",
+        "difficulty": "medium",
+        "topic": "Induced EMF"
+      },
+      {
+        "q": "What is the difference between a step-up transformer and a step-down transformer?",
+        "opts": [
+          "(A) A step-up transformer increases the voltage, while a step-down transformer decreases the voltage",
+          "(B) A step-up transformer decreases the voltage, while a step-down transformer increases the voltage",
+          "(C) A step-up transformer increases the current, while a step-down transformer decreases the current",
+          "(D) A step-up transformer decreases the current, while a step-down transformer increases the current"
+        ],
+        "ans": "A",
+        "explanation": "A step-up transformer increases the voltage, while a step-down transformer decreases the voltage is the correct answer because a step-up transformer has more turns in the secondary coil than in the primary coil, resulting in an increase in voltage, while a step-down transformer has fewer turns in the secondary coil than in the primary coil, resulting in a decrease in voltage.",
+        "difficulty": "medium",
+        "topic": "Transformers"
+      },
+      {
+        "q": "What is the purpose of the core in a transformer?",
+        "opts": [
+          "(A) To increase the voltage",
+          "(B) To decrease the voltage",
+          "(C) To increase the magnetic flux",
+          "(D) To decrease the magnetic flux"
+        ],
+        "ans": "C",
+        "explanation": "To increase the magnetic flux is the correct answer because the core in a transformer is used to increase the magnetic flux, allowing for more efficient energy transfer between the primary and secondary coils. The other options are incorrect because the core does not directly affect the voltage.",
+        "difficulty": "medium",
+        "topic": "Transformers"
+      },
+      {
+        "q": "What is the equation for the mutual inductance between two coils?",
+        "opts": [
+          "(A) M = Φ/I",
+          "(B) M = I/Φ",
+          "(C) M = NΦ/I",
+          "(D) M = Φ/N"
+        ],
+        "ans": "A",
+        "explanation": "M = Φ/I is the correct answer because it is the equation for the mutual inductance between two coils, where M is the mutual inductance, Φ is the magnetic flux, and I is the current. The other options are incorrect because they do not accurately describe the equation for mutual inductance.",
+        "difficulty": "medium",
+        "topic": "Mutual Inductance"
+      },
+      {
+        "q": "What is the effect of increasing the number of turns in the primary coil of a transformer on the secondary voltage?",
+        "opts": [
+          "(A) The secondary voltage increases",
+          "(B) The secondary voltage decreases",
+          "(C) The secondary voltage remains the same",
+          "(D) The secondary voltage becomes zero"
+        ],
+        "ans": "A",
+        "explanation": "The secondary voltage increases is the correct answer because increasing the number of turns in the primary coil increases the magnetic flux, resulting in an increase in the secondary voltage. The other options are incorrect because they do not accurately describe the effect of increasing the number of turns in the primary coil.",
+        "difficulty": "medium",
+        "topic": "Transformers"
+      },
+      {
+        "q": "What is the purpose of the insulation between the primary and secondary coils of a transformer?",
+        "opts": [
+          "(A) To increase the magnetic flux",
+          "(B) To decrease the magnetic flux",
+          "(C) To prevent electrical shock",
+          "(D) To increase the efficiency of the transformer"
+        ],
+        "ans": "C",
+        "explanation": "To prevent electrical shock is the correct answer because the insulation between the primary and secondary coils is used to prevent electrical shock by preventing the flow of current between the two coils. The other options are incorrect because they do not accurately describe the purpose of the insulation.",
+        "difficulty": "easy",
+        "topic": "Transformers"
+      },
+      {
+        "q": "What is the effect of a changing magnetic field on a conductor?",
+        "opts": [
+          "(A) It induces an electric current",
+          "(B) It induces a magnetic field",
+          "(C) It has no effect",
+          "(D) It induces a voltage"
+        ],
+        "ans": "A",
+        "explanation": "It induces an electric current is the correct answer because a changing magnetic field induces an electric current in a conductor, according to Faraday's law of electromagnetic induction. The other options are incorrect because they do not accurately describe the effect of a changing magnetic field on a conductor.",
+        "difficulty": "easy",
+        "topic": "Introduction to Electromagnetic Induction"
+      },
+      {
+        "q": "What is the difference between self-inductance and mutual inductance?",
+        "opts": [
+          "(A) Self-inductance occurs between two coils, while mutual inductance occurs within a single coil",
+          "(B) Self-inductance occurs within a single coil, while mutual inductance occurs between two coils",
+          "(C) Self-inductance is the ability of a coil to induce a voltage in itself, while mutual inductance is the ability of a coil to induce a voltage in another coil",
+          "(D) Self-inductance is the ability of a coil to induce a voltage in another coil, while mutual inductance is the ability of a coil to induce a voltage in itself"
+        ],
+        "ans": "B",
+        "explanation": "Self-inductance occurs within a single coil, while mutual inductance occurs between two coils is the correct answer because self-inductance refers to the ability of a coil to induce a voltage in itself, while mutual inductance refers to the ability of a coil to induce a voltage in another coil.",
+        "difficulty": "medium",
+        "topic": "Self-Inductance and Mutual Inductance"
+      },
+      {
+        "q": "What is the unit of self-inductance?",
+        "opts": [
+          "(A) Henry",
+          "(B) Ohm",
+          "(C) Volt",
+          "(D) Ampere"
+        ],
+        "ans": "A",
+        "explanation": "Henry is the correct answer because it is the unit of self-inductance, which is defined as the ratio of the induced voltage to the rate of change of current. The other options are incorrect because they are units of other physical quantities.",
+        "difficulty": "easy",
+        "topic": "Self-Inductance"
+      },
+      {
+        "q": "What is the effect of increasing the self-inductance of a coil on the current flowing through it?",
+        "opts": [
+          "(A) The current increases",
+          "(B) The current decreases",
+          "(C) The current remains the same",
+          "(D) The current becomes zero"
+        ],
+        "ans": "B",
+        "explanation": "The current decreases is the correct answer because increasing the self-inductance of a coil increases the opposition to changes in current, resulting in a decrease in the current flowing through the coil. The other options are incorrect because they do not accurately describe the effect of increasing the self-inductance.",
+        "difficulty": "medium",
+        "topic": "Self-Inductance"
+      },
+      {
+        "q": "What is the equation for the energy stored in an inductor?",
+        "opts": [
+          "(A) E = (1/2)LI^2",
+          "(B) E = (1/2)CV^2",
+          "(C) E = LI",
+          "(D) E = CV"
+        ],
+        "ans": "A",
+        "explanation": "E = (1/2)LI^2 is the correct answer because it is the equation for the energy stored in an inductor, where E is the energy, L is the self-inductance, and I is the current. The other options are incorrect because they are equations for the energy stored in other types of components.",
+        "difficulty": "medium",
+        "topic": "Energy Stored in an Inductor"
+      },
+      {
+        "q": "What is the effect of a coil's self-inductance on its ability to conduct alternating current?",
+        "opts": [
+          "(A) It has no effect",
+          "(B) It increases the coil's ability to conduct alternating current",
+          "(C) It decreases the coil's ability to conduct alternating current",
+          "(D) It makes the coil unable to conduct alternating current"
+        ],
+        "ans": "C",
+        "explanation": "It decreases the coil's ability to conduct alternating current is the correct answer because a coil's self-inductance opposes changes in current, making it more difficult for the coil to conduct alternating current. The other options are incorrect because they do not accurately describe the effect of self-inductance on the coil's ability to conduct alternating current.",
+        "difficulty": "hard",
+        "topic": "Self-Inductance and Alternating Current"
+      }
+    ],
+    "total": 18
+  }
+}

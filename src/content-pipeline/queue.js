@@ -20,7 +20,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CHECKPOINT_FILE = path.resolve(__dirname, "../../cache/pipeline_checkpoint.json");
-const CHECKPOINT_INTERVAL = 25; // save every N completions
+const CHECKPOINT_INTERVAL = 1; // save after every single completion to ensure immediate section persistence
 
 // ===== PRIORITY LEVELS =====
 export const PRIORITY = {

@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Current Electricity",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:08:09.691Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A circuit is connected to a 9 V battery and a variable resistor is placed in series with a 100 ohm resistor. When the variable resistor is adjusted to 50 ohms, the current flowing through the circuit is found to be 0.1 A. If the battery voltage and the 100 ohm resistor remain unchanged, what will be the new current in the circuit when the variable resistor is adjusted to 200 ohms?",
+        "questions": [
+          {
+            "q": "What is the resistance of the circuit when the variable resistor is adjusted to 50 ohms?",
+            "opts": [
+              "(A) 50 ohms",
+              "(B) 100 ohms",
+              "(C) 150 ohms",
+              "(D) 250 ohms"
+            ],
+            "ans": "B",
+            "explanation": "Since the resistors are in series, the total resistance is the sum of their individual resistances."
+          },
+          {
+            "q": "What is the value of the current flowing through the circuit when the variable resistor is adjusted to 50 ohms?",
+            "opts": [
+              "(A) 0.05 A",
+              "(B) 0.1 A",
+              "(C) 0.15 A",
+              "(D) 0.2 A"
+            ],
+            "ans": "B",
+            "explanation": "The current flowing through the circuit is given as 0.1 A."
+          },
+          {
+            "q": "If the battery voltage remains unchanged at 9 V, what will be the new current in the circuit when the variable resistor is adjusted to 200 ohms?",
+            "opts": [
+              "(A) 0.15 A",
+              "(B) 0.2 A",
+              "(C) 0.25 A",
+              "(D) 0.3 A"
+            ],
+            "ans": "A",
+            "explanation": "Using Ohm's Law, V = IR, we can find the new current in the circuit."
+          },
+          {
+            "q": "What is the value of the total resistance in the circuit when the variable resistor is adjusted to 200 ohms?",
+            "opts": [
+              "(A) 150 ohms",
+              "(B) 200 ohms",
+              "(C) 250 ohms",
+              "(D) 300 ohms"
+            ],
+            "ans": "C",
+            "explanation": "The total resistance is the sum of the 100 ohm resistor and the variable resistor."
+          },
+          {
+            "q": "What will be the new current in the circuit when the variable resistor is adjusted to 200 ohms?",
+            "opts": [
+              "(A) 0.15 A",
+              "(B) 0.2 A",
+              "(C) 0.25 A",
+              "(D) 0.3 A"
+            ],
+            "ans": "A",
+            "explanation": "Using Ohm's Law, V = IR, we can find the new current in the circuit."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A parallel circuit consists of two resistors connected across a 12 V battery. The current flowing through the first resistor is found to be 0.5 A and the current flowing through the second resistor is found to be 1.5 A. What is the total power consumed by the resistors in the circuit?",
+        "questions": [
+          {
+            "q": "What is the resistance of the first resistor?",
+            "opts": [
+              "(A) 12 ohms",
+              "(B) 24 ohms",
+              "(C) 36 ohms",
+              "(D) 48 ohms"
+            ],
+            "ans": "B",
+            "explanation": "Using Ohm's Law, V = IR, we can find the resistance of the first resistor."
+          },
+          {
+            "q": "What is the resistance of the second resistor?",
+            "opts": [
+              "(A) 8 ohms",
+              "(B) 16 ohms",
+              "(C) 24 ohms",
+              "(D) 32 ohms"
+            ],
+            "ans": "B",
+            "explanation": "Using Ohm's Law, V = IR, we can find the resistance of the second resistor."
+          },
+          {
+            "q": "What is the total power consumed by the resistors in the circuit?",
+            "opts": [
+              "(A) 15 W",
+              "(B) 25 W",
+              "(C) 30 W",
+              "(D) 40 W"
+            ],
+            "ans": "D",
+            "explanation": "The total power consumed by the resistors in a parallel circuit is the sum of the power consumed by each resistor."
+          },
+          {
+            "q": "What is the total current drawn from the battery in the circuit?",
+            "opts": [
+              "(A) 1 A",
+              "(B) 1.5 A",
+              "(C) 2 A",
+              "(D) 2.5 A"
+            ],
+            "ans": "B",
+            "explanation": "The total current drawn from the battery in a parallel circuit is the sum of the current flowing through each resistor."
+          },
+          {
+            "q": "What is the equivalent resistance of the parallel circuit?",
+            "opts": [
+              "(A) 6 ohms",
+              "(B) 8 ohms",
+              "(C) 12 ohms",
+              "(D) 16 ohms"
+            ],
+            "ans": "B",
+            "explanation": "The equivalent resistance of a parallel circuit is given by 1/R = 1/R1 + 1/R2."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Biomolecules",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:51:13.636Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What are the main functions of biomolecules in living organisms? Explain the structure and function of DNA.",
+        "marks": 5,
+        "answer": "Biomolecules perform a wide range of functions in living organisms, including metabolic pathways, replication, and transmission of genetic information. DNA (Deoxyribonucleic acid) is a biomolecule that contains the genetic instructions used in the development and function of all living organisms. It is a double-stranded helix with sugar and phosphate molecules making up the backbone and nitrogenous bases projecting inward from the backbone and pairing with each other in a complementary manner.",
+        "marking_scheme": [
+          "Definition and functions of biomolecules (1 mark)",
+          "Structure of DNA (2 marks)",
+          "Function of DNA (2 marks)"
+        ],
+        "topic": "Introduction to Biomolecules and Nucleic Acids",
+        "is_numerical": false
+      },
+      {
+        "q": "What are the differences between DNA and RNA? Explain the process of transcription.",
+        "marks": 5,
+        "answer": "The main differences between DNA and RNA are the sugar molecule (deoxyribose in DNA and ribose in RNA) and the nitrogenous base (thymine in DNA and uracil in RNA). Transcription is the process of creating a complementary RNA copy from a DNA template. It involves the initiation, elongation, and termination phases, resulting in the formation of a mature RNA molecule.",
+        "marking_scheme": [
+          "Differences between DNA and RNA (2 marks)",
+          "Process of transcription (3 marks)"
+        ],
+        "topic": "Nucleic Acids",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the structure and function of proteins. What are the different types of proteins and their functions?",
+        "marks": 5,
+        "answer": "Proteins are biomolecules composed of amino acids linked by peptide bonds. They have a complex structure, including primary, secondary, tertiary, and quaternary structures. Proteins perform a wide range of functions, including enzymatic activities, transport, storage, and regulation of metabolic pathways. There are several types of proteins, including enzymes, hormones, structural proteins, and transport proteins, each with unique functions.",
+        "marking_scheme": [
+          "Structure of proteins (2 marks)",
+          "Functions of proteins (2 marks)",
+          "Types of proteins (1 mark)"
+        ],
+        "topic": "Proteins",
+        "is_numerical": false
+      },
+      {
+        "q": "A solution of amino acid contains 10.0 g of the amino acid per 100 mL of solution. If the molar mass of the amino acid is 120 g/mol, calculate the molality of the solution.",
+        "marks": 5,
+        "answer": "To calculate the molality of the solution, we need to find the number of moles of the amino acid and the mass of the solvent in kilograms. Calculation: Moles of amino acid = mass of amino acid / molar mass = 10.0 g / 120 g/mol = 0.0833 mol. Mass of solvent (water) = 100 mL x 1 g/mL = 100 g = 0.1 kg. Molality = moles of amino acid / mass of solvent (in kg) = 0.0833 mol / 0.1 kg = 0.833 m.",
+        "marking_scheme": [
+          "Moles of amino acid calculation (1.5 marks)",
+          "Mass of solvent calculation (1 mark)",
+          "Molality calculation (2.5 marks)"
+        ],
+        "topic": "Amino Acids",
+        "is_numerical": true
+      },
+      {
+        "q": "A disaccharide is composed of two monosaccharides with a molar mass of 180 g/mol each. If the molar mass of the disaccharide is 342 g/mol, calculate the number of water molecules released during the formation of the disaccharide.",
+        "marks": 5,
+        "answer": "To calculate the number of water molecules released, we need to find the difference in molar mass between the disaccharide and the two monosaccharides. Calculation: Total molar mass of monosaccharides = 2 x 180 g/mol = 360 g/mol. Difference in molar mass = 360 g/mol - 342 g/mol = 18 g/mol. Since the molar mass of water is 18 g/mol, the number of water molecules released is 1.",
+        "marking_scheme": [
+          "Total molar mass of monosaccharides calculation (1 mark)",
+          "Difference in molar mass calculation (1.5 marks)",
+          "Number of water molecules calculation (2.5 marks)"
+        ],
+        "topic": "Carbohydrates",
+        "is_numerical": true
+      },
+      {
+        "q": "The hydrolysis of a polysaccharide produces 100 moles of glucose. If the molar mass of glucose is 180 g/mol, calculate the mass of glucose produced.",
+        "marks": 5,
+        "answer": "To calculate the mass of glucose produced, we need to multiply the number of moles of glucose by its molar mass. Calculation: Mass of glucose = number of moles x molar mass = 100 mol x 180 g/mol = 18000 g = 18 kg.",
+        "marking_scheme": [
+          "Understanding of hydrolysis reaction (1 mark)",
+          "Mass of glucose calculation (4 marks)"
+        ],
+        "topic": "Carbohydrates",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Ray Optics and Optical Instruments",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:48:20.020Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of total internal reflection and its applications. Describe an experiment to demonstrate total internal reflection.",
+        "marks": 5,
+        "answer": "Total internal reflection is the phenomenon where a light ray is completely reflected back into the denser medium when it hits the interface between the denser and rarer medium at an angle greater than the critical angle. This occurs because the light ray is unable to pass into the rarer medium. Applications of total internal reflection include optical fibers, binoculars, and prisms. To demonstrate total internal reflection, a glass slab can be placed in a tray of water with a light source shining through it. When the light hits the glass-water interface at a certain angle, it will be completely reflected back into the glass.",
+        "marking_scheme": [
+          "Definition of total internal reflection (1 mark)",
+          "Explanation of the concept (1 mark)",
+          "Applications of total internal reflection (1 mark)",
+          "Description of the experiment (2 marks)"
+        ],
+        "topic": "Total Internal Reflection",
+        "is_numerical": false
+      },
+      {
+        "q": "A converging lens of focal length 20 cm is placed in contact with a diverging lens of focal length 10 cm. Find the effective focal length of the combination.",
+        "marks": 5,
+        "answer": "Calculation:\n1 / f = 1 / f1 + 1 / f2\nwhere f1 = 20 cm and f2 = -10 cm (since it's a diverging lens)\n1 / f = 1 / 20 - 1 / 10\n1 / f = (1 - 2) / 20\n1 / f = -1 / 20\nf = -20 cm\nTherefore, the effective focal length of the combination is -20 cm.",
+        "marking_scheme": [
+          "Formula application (2 marks)",
+          "Calculation (2 marks)",
+          "Final answer (1 mark)"
+        ],
+        "topic": "Optical Instruments",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the difference between a real image and a virtual image? Describe the characteristics of a real image and a virtual image formed by a convex lens.",
+        "marks": 5,
+        "answer": "A real image is an image that can be projected onto a screen, whereas a virtual image cannot be projected onto a screen. A real image is formed when the light rays converge to a point, whereas a virtual image is formed when the light rays appear to diverge from a point. A convex lens can form both real and virtual images, depending on the position of the object. A real image formed by a convex lens is inverted and smaller than the object, while a virtual image is upright and larger than the object.",
+        "marking_scheme": [
+          "Definition of real and virtual images (1 mark)",
+          "Characteristics of real images (1 mark)",
+          "Characteristics of virtual images (1 mark)",
+          "Formation of images by a convex lens (2 marks)"
+        ],
+        "topic": "Optical Instruments",
+        "is_numerical": false
+      },
+      {
+        "q": "A beam of light is incident on a plane mirror at an angle of 30°. Find the angle of reflection.",
+        "marks": 5,
+        "answer": "Calculation:\nAngle of incidence (i) = 30°\nAngle of reflection (r) = i = 30°\nTherefore, the angle of reflection is 30°.",
+        "marking_scheme": [
+          "Formula application (2 marks)",
+          "Calculation (2 marks)",
+          "Final answer (1 mark)"
+        ],
+        "topic": "Reflection",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the working of a simple optical instrument, such as a magnifying glass or a microscope. Describe the advantages and limitations of the instrument.",
+        "marks": 5,
+        "answer": "A magnifying glass is a simple optical instrument that uses a convex lens to magnify objects. The lens collects light from the object and forms a virtual image that is larger than the object. The advantages of a magnifying glass include its simplicity and portability, while the limitations include its limited magnification power and distortion of the image. A microscope, on the other hand, uses a combination of lenses to magnify objects to a much greater extent. The advantages of a microscope include its high magnification power and ability to observe small objects, while the limitations include its complexity and cost.",
+        "marking_scheme": [
+          "Explanation of the working of the instrument (2 marks)",
+          "Advantages of the instrument (1 mark)",
+          "Limitations of the instrument (1 mark)",
+          "Comparison with other instruments (1 mark)"
+        ],
+        "topic": "Optical Instruments",
+        "is_numerical": false
+      },
+      {
+        "q": "A concave mirror of focal length 15 cm is used to form an image of an object placed 20 cm in front of the mirror. Find the distance of the image from the mirror and the magnification of the image.",
+        "marks": 5,
+        "answer": "Calculation:\n1 / f = 1 / u + 1 / v\nwhere f = -15 cm and u = -20 cm\n1 / (-15) = 1 / (-20) + 1 / v\n-1 / 15 = -1 / 20 + 1 / v\n-4 / 60 = -3 / 60 + 1 / v\n-1 / 60 = 1 / v\nv = -60 cm\nMagnification (m) = -v / u = -(-60) / (-20) = -3\nTherefore, the distance of the image from the mirror is 60 cm and the magnification of the image is -3.",
+        "marking_scheme": [
+          "Formula application (2 marks)",
+          "Calculation (2 marks)",
+          "Final answer (1 mark)"
+        ],
+        "topic": "Mirrors",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

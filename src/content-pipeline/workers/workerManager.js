@@ -17,7 +17,7 @@ import { printKeyStatus } from "../keyPool.js";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PROGRESS_FILE = path.resolve(__dirname, "../../../cache/pipeline_progress.json");
 const PROGRESS_WRITE_INTERVAL_MS = 10_000; // write progress.json every 10s
-const STATUS_PRINT_INTERVAL_MS   = 30_000; // print status to console every 30s
+const STATUS_PRINT_INTERVAL_MS   = 1000; // refresh dashboard every 1s
 
 // Worker identities — all pull from same queue; names are just for logging
 const WORKER_IDS = ["Worker-Physics", "Worker-Chemistry", "Worker-Maths", "Worker-Biology", "Worker-Other"];
@@ -69,21 +69,9 @@ export class WorkerManager {
   }
 
   _handleEvent(event) {
-    // Keep rolling log
+    // Keep rolling log for TUI
     this.events.unshift(event);
-    if (this.events.length > 100) this.events.pop();
-
-    // Print notable events
-    const prefix = `[${event.workerId}]`;
-    switch (event.status) {
-      case "done":       console.log(`  ${prefix} ✅ ${event.message}`); break;
-      case "skip":       console.log(`  ${prefix} ⏭️  ${event.message}`); break;
-      case "error":      console.error(`  ${prefix} ❌ ${event.message}`); break;
-      case "warn":       console.warn(`  ${prefix} ⚠️  ${event.message}`); break;
-      case "generating": console.log(`  ${prefix} 🔄 ${event.message}`); break;
-      case "info":
-      case "finished":   console.log(`  ${prefix} ℹ️  ${event.message}`); break;
-    }
+    if (this.events.length > 20) this.events.pop();
   }
 
   _writeProgress() {
@@ -107,10 +95,38 @@ export class WorkerManager {
   }
 
   _printStatus() {
+    process.stdout.write('\x1Bc'); // Clear screen
     const q = taskQueue.getSummary();
     const elapsed = Math.round((Date.now() - this.startTime) / 1000);
-    console.log(`\n── Progress Update (${elapsed}s elapsed) ──────────────────────`);
+    const rate = elapsed > 0 ? (q.completed / elapsed).toFixed(2) : "0";
+
+    console.log("═".repeat(60));
+    console.log(`  GENERATION DASHBOARD (${elapsed}s elapsed) | Rate: ${rate}/s`);
+    console.log("═".repeat(60));
     console.log(`  ✅ Done: ${q.completed}   ⏳ Pending: ${q.pending}   ❌ Failed: ${q.failed}   🔄 Retry: ${q.retrying}`);
+    console.log("");
+    console.log("  [Queue By Priority]");
+    console.log(`    Notes:       ${q.byPriority.notes}`);
+    console.log(`    MCQs:        ${q.byPriority.mcqs}`);
+    console.log(`    Revision:    ${q.byPriority.revision}`);
+    console.log(`    Long Ans:    ${q.byPriority.longAnswers}`);
+    console.log("═".repeat(60));
+    console.log("  [Recent Worker Activity]");
+    
+    // print last 10 events (in chronological order)
+    const recent = this.events.slice(0, 10).reverse();
+    recent.forEach(e => {
+        let emoji = "ℹ️ ";
+        if (e.status === "done") emoji = "✅";
+        if (e.status === "skip") emoji = "⏭️ ";
+        if (e.status === "error") emoji = "❌";
+        if (e.status === "warn") emoji = "⚠️ ";
+        if (e.status === "generating") emoji = "🔄";
+        console.log(`  [${e.workerId}] ${emoji} ${e.message}`);
+    });
+
+    console.log("═".repeat(60));
+    console.log(`  💾 Output Directory: ${path.resolve(__dirname, "../../../cache/output")}`);
     printKeyStatus();
   }
 

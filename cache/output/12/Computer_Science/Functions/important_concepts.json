@@ -1,0 +1,53 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:18:40.617Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "Predefined Functions",
+        "description": "Predefined functions are part of the Python Standard Library and are used to perform various tasks. Students should be familiar with common functions like print(), input(), len(), max(), min(), etc."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Function Signature",
+        "description": "A function signature includes the function name, parameters, and return type. It is used to define the function. A well-defined function signature is crucial for function implementation."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Function Arguments",
+        "description": "Functions can take various types of arguments, including required arguments, default arguments, keyword arguments, and variable-length arguments. Students should be able to identify and use these types of arguments correctly."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "PEMDAS Rule",
+        "description": "To evaluate expressions inside a function, use the PEMDAS rule: Parentheses, Exponents, Multiplication and Division, and Addition and Subtraction. This helps to avoid errors in function execution."
+      },
+      {
+        "category": "Common Mistake",
+        "title": "Passing Arguments by Value",
+        "description": "Many students mistakenly pass arguments by value instead of by reference. However, Python functions pass arguments by object reference. To avoid this mistake, use mutable objects as arguments and modify them inside the function."
+      },
+      {
+        "category": "Units to remember",
+        "title": "Local and Global Variables",
+        "description": "Inside a function, local variables have higher precedence than global variables. To access global variables, use the global keyword. This helps to avoid confusion between local and global variables."
+      },
+      {
+        "category": "One Liner",
+        "title": "Docstrings",
+        "description": "Docstrings are used to provide a description of the function, its parameters, and its return value. They are essential for documentation and should be used to write clean and readable code."
+      },
+      {
+        "category": "Most Important Fact",
+        "title": "Recursion",
+        "description": "Recursion is a function that calls itself until it reaches a base case. It is a powerful technique for solving problems that have a recursive structure. However, it can lead to a stack overflow if not used carefully."
+      }
+    ]
+  }
+}

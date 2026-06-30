@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Application of Derivatives",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:16:53.494Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Derivative of a Polynomial",
+        "formula": "f'(x) = d/dx [anxn + an-1xn-1 + ... + a1x + a0]",
+        "variables": "an, an-1, ..., a1, a0 are coefficients of the polynomial",
+        "units": "None",
+        "notes": "Used to find the derivative of a polynomial function"
+      },
+      {
+        "name": "Power Rule for Derivatives",
+        "formula": "d/dx [xn] = nxn-1",
+        "variables": "x is the variable and n is the exponent",
+        "units": "None",
+        "notes": "Used to find the derivative of a function with a single variable and exponent"
+      },
+      {
+        "name": "Product Rule for Derivatives",
+        "formula": "d/dx [f(x)g(x)] = f(x)g'(x) + g(x)f'(x)",
+        "variables": "f(x) and g(x) are functions of x",
+        "units": "None",
+        "notes": "Used to find the derivative of a product of two functions"
+      },
+      {
+        "name": "Quotient Rule for Derivatives",
+        "formula": "d/dx [f(x)/g(x)] = (g(x)f'(x) - f(x)g'(x)) / (g(x))^2",
+        "variables": "f(x) and g(x) are functions of x",
+        "units": "None",
+        "notes": "Used to find the derivative of a quotient of two functions"
+      },
+      {
+        "name": "Chain Rule for Derivatives",
+        "formula": "d/dx [f(g(x))] = f'(g(x)) * g'(x)",
+        "variables": "f(x) and g(x) are functions of x",
+        "units": "None",
+        "notes": "Used to find the derivative of a composite function"
+      },
+      {
+        "name": "Derivative of Exponential Function",
+        "formula": "d/dx [a^x] = a^x * ln a",
+        "variables": "a is a positive constant",
+        "units": "None",
+        "notes": "Used to find the derivative of an exponential function"
+      },
+      {
+        "name": "Derivative of Logarithmic Function",
+        "formula": "d/dx [log a(x)] = 1/(x * ln a)",
+        "variables": "a is a positive constant",
+        "units": "None",
+        "notes": "Used to find the derivative of a logarithmic function"
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Accountancy",
+  "chapter": "Cash Flow Statement",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:42:02.018Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Ashok Ltd., a manufacturing company, was facing financial difficulties. The company's management decided to dispose of its old machinery and equipment to raise funds. During the year, the company sold machinery for ₹ 50,000 and equipment for ₹ 75,000. The cost of machinery was ₹ 100,000, and the equipment was ₹ 80,000. The company also issued 5,000 equity shares of ₹ 10 each at a premium of ₹ 3 per share. The company had a profit of ₹ 1,50,000 for the year. The company's cash balance at the beginning of the year was ₹ 25,000. Prepare a Cash Flow Statement for the year, showing the cash flows from operating, investing, and financing activities.",
+        "questions": [
+          {
+            "q": "What type of activity is the disposal of old machinery and equipment classified under?",
+            "opts": [
+              "(A) Operating Activity",
+              "(B) Investing Activity",
+              "(C) Financing Activity",
+              "(D) None of the above"
+            ],
+            "ans": "B",
+            "explanation": "The disposal of old machinery and equipment is classified as an investing activity as it involves the sale of assets."
+          },
+          {
+            "q": "What is the impact of the sale of equipment on the company's cash balance?",
+            "opts": [
+              "(A) Increase of ₹ 75,000",
+              "(B) Decrease of ₹ 75,000",
+              "(C) Increase of ₹ 5,000",
+              "(D) Decrease of ₹ 5,000"
+            ],
+            "ans": "B",
+            "explanation": "The sale of equipment results in a decrease in cash balance by the amount of the sale proceeds."
+          },
+          {
+            "q": "What is the effect of issuing equity shares at a premium on the company's cash balance?",
+            "opts": [
+              "(A) Increase of ₹ 5,000",
+              "(B) Decrease of ₹ 5,000",
+              "(C) Increase of ₹ 15,000",
+              "(D) Decrease of ₹ 15,000"
+            ],
+            "ans": "A",
+            "explanation": "The issuance of equity shares at a premium results in an increase in cash balance by the amount of the premium received."
+          },
+          {
+            "q": "What is the company's net cash inflow from operating activities for the year?",
+            "opts": [
+              "(A) ₹ 1,50,000",
+              "(B) ₹ 1,75,000",
+              "(C) ₹ 1,95,000",
+              "(D) ₹ 2,05,000"
+            ],
+            "ans": "A",
+            "explanation": "The company's net cash inflow from operating activities is the profit for the year, which is ₹ 1,50,000."
+          },
+          {
+            "q": "What is the company's cash balance at the end of the year?",
+            "opts": [
+              "(A) ₹ 50,000",
+              "(B) ₹ 75,000",
+              "(C) ₹ 1,00,000",
+              "(D) ₹ 1,25,000"
+            ],
+            "ans": "D",
+            "explanation": "The company's cash balance at the beginning of the year was ₹ 25,000. Adding the net cash inflows from operating activities (₹ 1,50,000) and financing activities (₹ 15,000) results in a cash balance of ₹ 1,25,000 at the end of the year."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "XYZ Ltd., a trading company, purchased goods worth ₹ 2,00,000 in cash and ₹ 1,50,000 on credit. The company also collected ₹ 1,20,000 from debtors and incurred a credit expense of ₹ 30,000. Prepare a Cash Flow Statement for the year, showing the cash flows from operating, investing, and financing activities.",
+        "questions": [
+          {
+            "q": "What is the impact of purchasing goods on credit on the company's cash balance?",
+            "opts": [
+              "(A) Increase of ₹ 1,50,000",
+              "(B) Decrease of ₹ 1,50,000",
+              "(C) Increase of ₹ 50,000",
+              "(D) Decrease of ₹ 50,000"
+            ],
+            "ans": "D",
+            "explanation": "The purchase of goods on credit results in a decrease in cash balance by the amount of the credit purchase."
+          },
+          {
+            "q": "What is the effect of collecting cash from debtors on the company's cash balance?",
+            "opts": [
+              "(A) Increase of ₹ 1,20,000",
+              "(B) Decrease of ₹ 1,20,000",
+              "(C) Increase of ₹ 50,000",
+              "(D) Decrease of ₹ 50,000"
+            ],
+            "ans": "A",
+            "explanation": "The collection of cash from debtors results in an increase in cash balance by the amount collected."
+          },
+          {
+            "q": "What is the impact of incurring a credit expense on the company's cash balance?",
+            "opts": [
+              "(A) Increase of ₹ 30,000",
+              "(B) Decrease of ₹ 30,000",
+              "(C) Increase of ₹ 50,000",
+              "(D) Decrease of ₹ 50,000"
+            ],
+            "ans": "B",
+            "explanation": "The incurrence of a credit expense results in a decrease in cash balance by the amount of the expense."
+          },
+          {
+            "q": "What is the company's net cash outflow from investing activities for the year?",
+            "opts": [
+              "(A) ₹ 2,00,000",
+              "(B) ₹ 1,50,000",
+              "(C) ₹ 50,000",
+              "(D) ₹ 30,000"
+            ],
+            "ans": "B",
+            "explanation": "The company's net cash outflow from investing activities is the amount spent on purchasing goods on credit, which is ₹ 1,50,000."
+          },
+          {
+            "q": "What is the company's cash balance at the end of the year?",
+            "opts": [
+              "(A) ₹ 50,000",
+              "(B) ₹ 1,50,000",
+              "(C) ₹ 2,00,000",
+              "(D) ₹ 2,20,000"
+            ],
+            "ans": "B",
+            "explanation": "The company's cash balance at the beginning of the year is assumed to be zero. Adding the cash collected from debtors (₹ 1,20,000) and subtracting the cash spent on purchasing goods (₹ 2,00,000) and the credit expense (₹ 30,000) results in a cash balance of ₹ 1,50,000 at the end of the year."
+          }
+        ]
+      }
+    ]
+  }
+}

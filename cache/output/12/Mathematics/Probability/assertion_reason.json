@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Probability",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:29:46.641Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The probability of an event is always less than or equal to 1.",
+        "reason": "Reason (R): As the probability of an event is defined as the number of favorable outcomes divided by the total number of outcomes.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the probability of an event is indeed always less than or equal to 1, and this can be explained by the definition of probability where the total number of outcomes is always greater than or equal to the number of favorable outcomes."
+      },
+      {
+        "assertion": "Assertion (A): A sample space is a set of all possible outcomes of an experiment.",
+        "reason": "Reason (R): This set is used to define the probability of an event.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because a sample space is indeed a set of all possible outcomes of an experiment, and it is used to define the probability of an event."
+      },
+      {
+        "assertion": "Assertion (A): Two events are mutually exclusive if they have no outcomes in common.",
+        "reason": "Reason (R): If two events have outcomes in common, they are not mutually exclusive.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because two events are indeed mutually exclusive if they have no outcomes in common, and this can be explained by the fact that if they have outcomes in common, they are not mutually exclusive."
+      },
+      {
+        "assertion": "Assertion (A): The probability of an event is independent of the sample space.",
+        "reason": "Reason (R): The sample space only provides the set of all possible outcomes of an experiment.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the probability of an event is not independent of the sample space, as the sample space is used to define the probability of an event."
+      },
+      {
+        "assertion": "Assertion (A): An event with a probability of 0 is impossible.",
+        "reason": "Reason (R): In probability theory, an event with a probability of 0 is considered to have no chance of occurring.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because an event with a probability of 0 is indeed impossible, and this can be explained by the fact that an event with a probability of 0 is considered to have no chance of occurring."
+      },
+      {
+        "assertion": "Assertion (A): The probability of an event is always non-negative.",
+        "reason": "Reason (R): Probability is a measure of the likelihood of an event occurring, and likelihood is always non-negative.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the probability of an event is indeed always non-negative, and this can be explained by the fact that probability is a measure of the likelihood of an event occurring, and likelihood is always non-negative."
+      },
+      {
+        "assertion": "Assertion (A): The probability of an event is equal to 1 minus the probability of its complement.",
+        "reason": "Reason (R): The sum of the probability of an event and the probability of its complement is always equal to 1.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the probability of an event is indeed equal to 1 minus the probability of its complement, and this can be explained by the fact that the sum of the probability of an event and the probability of its complement is always equal to 1."
+      },
+      {
+        "assertion": "Assertion (A): Two events are independent if the occurrence or non-occurrence of one event does not affect the probability of the other event.",
+        "reason": "Reason (R): This means that the events do not have any common outcomes, or the occurrence or non-occurrence of one event does not affect the probability of the other event.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "This option is correct because two events are indeed independent if the occurrence or non-occurrence of one event does not affect the probability of the other event, but this can be explained by the fact that two events are independent if the occurrence or non-occurrence of one event does not affect the probability of the other event, and this is equivalent to saying that the events do not have any common outcomes."
+      },
+      {
+        "assertion": "Assertion (A): The probability of an event is always greater than or equal to 0.",
+        "reason": "Reason (R): As the probability of an event is defined as the number of favorable outcomes divided by the total number of outcomes.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the probability of an event is indeed always greater than or equal to 0, and this can be explained by the definition of probability where the number of favorable outcomes is always greater than or equal to 0 and the total number of outcomes is always greater than or equal to 0."
+      },
+      {
+        "assertion": "Assertion (A): An event with a probability of 1 is certain.",
+        "reason": "Reason (R): In probability theory, an event with a probability of 1 is considered to be certain to occur.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because an event with a probability of 1 is indeed certain, and this can be explained by the fact that an event with a probability of 1 is considered to be certain to occur."
+      }
+    ],
+    "total": 10
+  }
+}

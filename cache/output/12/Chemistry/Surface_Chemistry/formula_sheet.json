@@ -1,0 +1,20 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Surface Chemistry",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:03:15.018Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Content",
+        "formula": "Here's a JSON array with crucial formulas for CBSE Class 12 Chemistry - Surface Chemistry:\n\n[\n  {\n    \"name\": \"Henry's Law\",\n    \"formula\": \"p = kH × C\",\n    \"variables\": {\n      \"p\": \"Partial pressure of a gas\",\n      \"kH\": \"Henry's Law constant\",\n      \"C\": \"Concentration of the gas in the solution\"\n    },\n    \"units\": \"p in pascals, kH in L atm/mol or L bar/mol, C in mol/L\",\n    \"notes\": \"[for dilute solutions]\"\n  },\n  {\n    \"name\": \"Temkin Adsorption isotherm\",\n    \"formula\": \"logX = logA - β logθ\",\n    \"variables\": {\n      \"X\": \"Amount of gas adsorbed per unit mass of the adsorbent\",\n      \"A\": \"Constant, related to the heat of adsorption\",\n      \"β\": \"Constant related to the heat of adsorption\",\n      \"θ\": \"Fraction of the surface covered by adsorbate\"\n    },\n    \"units\": \"X in mol/g, A and β in dimensionless, θ in dimensionless\",\n    \"notes\": \"[for a specific type of adsorption]\"\n  },\n  {\n    \"name\": \"Langmuir Adsorption isotherm\",\n    \"formula\": \"X = (Xm × bC) / (1 + bC)\",\n    \"variables\": {\n      \"X\": \"Amount of gas adsorbed per unit mass of the adsorbent\",\n      \"Xm\": \"Maximum amount of gas adsorbed per unit mass of the adsorbent\",\n      \"b\": \"Langmuir adsorption constant\",\n      \"C\": \"Concentration of the gas in the solution\"\n    },\n    \"units\": \"X in mol/g, Xm in mol/g, b in L/mol, C in mol/L\",\n    \"notes\": \"[for a specific type of adsorption]\"\n  },\n  {\n    \"name\": \"Mass Percentage of a Solute\",\n    \"formula\": \"% w/w = (Mass of Solute / Total Mass of Solution) × 100\",\n    \"variables\": {\n      \"% w/w\": \"Mass percentage of the solute\",\n      \"Mass of Solute\": \"Mass of the solute in grams\",\n      \"Total Mass of Solution\": \"Total mass of the solution in grams\"\n    },\n    \"units\": \"% w/w in dimensionless, Mass in grams\",\n    \"notes\": \"[for dilute solutions]\"\n  },\n  {\n    \"name\": \"Mole Fraction of a Solute\",\n    \"formula\": \"X = (Number of Moles of Solute / Total Number of Moles in Solution) × 100\",\n    \"variables\": {\n      \"X\": \"Mole fraction of the solute\",\n      \"Number of Moles of Solute\": \"Number of moles of the solute\",\n      \"Total Number of Moles in Solution\": \"Total number of moles in the solution\"\n    },\n    \"units\": \"X in dimensionless, number of moles in mol\",\n    \"notes\": \"[for dilute solutions]\"\n  },\n  {\n    \"name\": \"Surface Tension\",\n    \"formula\": \"γ = (T × ρ) / N\",\n    \"variables\": {\n      \"γ\": \"Surface tension in units of force per unit length\",\n      \"T\": \"Temperature in Kelvin\",\n      \"ρ\": \"Density of the liquid in units of mass per unit volume\",\n      \"N\": \"Avogadro's number\"\n    },\n    \"units\": \"γ in N/m, T in K, ρ in kg/m³, N in mol⁻¹\",\n    \"notes\": \"[for a specific type of liquid]\"\n  }\n]\n\nNote: The provided formulas are crucial and commonly used in the chapter. However, the chapter may have other mathematical expressions or laws.",
+        "variables": "",
+        "units": "",
+        "notes": ""
+      }
+    ]
+  }
+}

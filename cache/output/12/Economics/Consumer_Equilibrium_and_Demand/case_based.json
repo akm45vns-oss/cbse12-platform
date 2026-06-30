@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Economics",
+  "chapter": "Consumer Equilibrium and Demand",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:43:07.409Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Rahul, a 25-year-old software engineer, recently moved to a new city for his job. He is planning to invest in a refrigerator, which costs ₹18,000. Rahul's budget for the refrigerator is ₹20,000. He has to choose between two models: Model A and Model B. Model A costs ₹18,000 and has a capacity of 250 liters. Model B costs ₹20,000 and has a capacity of 300 liters. Rahul's utility function is U = 50x - 2x^2, where x is the capacity of the refrigerator. According to the budget constraint, the price of the refrigerator is ₹8000 per unit. Determine which model Rahul will choose and why.",
+        "questions": [
+          {
+            "q": "What is the budget constraint for Rahul?",
+            "opts": [
+              "P = 8000",
+              "P = 10000",
+              "P = 12000",
+              "P = 16000"
+            ],
+            "ans": "A",
+            "explanation": "The budget constraint is given by the equation P = 8000, where P is the price of the refrigerator."
+          },
+          {
+            "q": "What is the utility function of Rahul?",
+            "opts": [
+              "U = 50x",
+              "U = 50x - 2x^2",
+              "U = 50x + 2x^2",
+              "U = 50x - 3x^2"
+            ],
+            "ans": "B",
+            "explanation": "The utility function of Rahul is U = 50x - 2x^2, where x is the capacity of the refrigerator."
+          },
+          {
+            "q": "Which model of the refrigerator will give the maximum utility to Rahul?",
+            "opts": [
+              "Model A",
+              "Model B",
+              "Both models are equal in utility",
+              "Cannot be determined"
+            ],
+            "ans": "A",
+            "explanation": "To determine the maximum utility, we need to substitute the capacity of each model into the utility function and compare the values. Model A has a capacity of 250 liters, while Model B has a capacity of 300 liters. Substituting these values into the utility function, we get U_A = 50(250) - 2(250)^2 = 12500 - 125000 = -112500 and U_B = 50(300) - 2(300)^2 = 15000 - 180000 = -165000. Since U_A > U_B, Model A will give the maximum utility to Rahul."
+          },
+          {
+            "q": "What is the marginal utility of the refrigerator for Rahul?",
+            "opts": [
+              "MU = 50",
+              "MU = 50 - 4x",
+              "MU = 50 + 4x",
+              "MU = 50 - 2x"
+            ],
+            "ans": "C",
+            "explanation": "The marginal utility of the refrigerator is the derivative of the utility function. The derivative of U = 50x - 2x^2 is MU = 50 - 4x."
+          },
+          {
+            "q": "Why does Rahul choose Model A over Model B?",
+            "opts": [
+              "Model A is cheaper than Model B",
+              "Model A has a higher capacity than Model B",
+              "Model A gives a higher utility than Model B",
+              "The price of the refrigerator is not a constraint"
+            ],
+            "ans": "C",
+            "explanation": "Rahul chooses Model A over Model B because it gives a higher utility than Model B. The utility function U = 50x - 2x^2 is maximized when x = 250 liters, which corresponds to Model A."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "Suppose that the demand curve for a commodity is given by the equation P = 100 - 2x, where P is the price and x is the quantity demanded. The price elasticity of demand is given by the formula E_p = -1/((dP/dx)), where dP/dx is the derivative of the demand function. Determine the price elasticity of demand for the commodity and explain what it implies.",
+        "questions": [
+          {
+            "q": "What is the demand function for the commodity?",
+            "opts": [
+              "P = 100 - 2x",
+              "P = 100 + 2x",
+              "P = 100 - x",
+              "P = 100 + x"
+            ],
+            "ans": "A",
+            "explanation": "The demand function for the commodity is given by the equation P = 100 - 2x, where P is the price and x is the quantity demanded."
+          },
+          {
+            "q": "What is the derivative of the demand function?",
+            "opts": [
+              "dP/dx = 2",
+              "dP/dx = -2",
+              "dP/dx = 100",
+              "dP/dx = -100"
+            ],
+            "ans": "B",
+            "explanation": "The derivative of the demand function P = 100 - 2x is dP/dx = -2."
+          },
+          {
+            "q": "What is the price elasticity of demand for the commodity?",
+            "opts": [
+              "E_p = 1/2",
+              "E_p = -1/2",
+              "E_p = 1",
+              "E_p = -1"
+            ],
+            "ans": "B",
+            "explanation": "The price elasticity of demand is given by the formula E_p = -1/((dP/dx)). Substituting dP/dx = -2, we get E_p = -1/(-2) = 1/2. However, since the demand function is given by P = 100 - 2x, we can rewrite it as x = (100 - P)/2. Taking the derivative of this equation with respect to P, we get dx/dP = -1/2. Therefore, E_p = -1/((dP/dx)) = -1/(-1/2) = 2. However, since E_p = -1/((dP/dx)), we can conclude that E_p = -1/(-2) = 1/2 is incorrect. Therefore, E_p = 2 which is equal to |E_p| = 2. Since |E_p| > 1, the demand is elastic."
+          },
+          {
+            "q": "What does the price elasticity of demand imply?",
+            "opts": [
+              "A small change in price will lead to a small change in quantity demanded",
+              "A small change in price will lead to a large change in quantity demanded",
+              "A large change in price will lead to a small change in quantity demanded",
+              "A large change in price will lead to a large change in quantity demanded"
+            ],
+            "ans": "B",
+            "explanation": "Since the price elasticity of demand is greater than 1, a small change in price will lead to a large change in quantity demanded. This implies that the demand is elastic."
+          },
+          {
+            "q": "What is the implication of the demand being elastic?",
+            "opts": [
+              "The firm will increase the price to maximize profits",
+              "The firm will decrease the price to maximize profits",
+              "The firm will maintain the current price to maximize profits",
+              "The firm will not change the price"
+            ],
+            "ans": "B",
+            "explanation": "Since the demand is elastic, a small change in price will lead to a large change in quantity demanded. To maximize profits, the firm should decrease the price to increase the quantity demanded and maximize revenue."
+          }
+        ]
+      }
+    ]
+  }
+}

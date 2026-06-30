@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Linked List (Theory)",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:01:01.705Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the main advantage of using a linked list over an array?",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "Dynamic memory allocation and efficient insertion/deletion at the beginning/end.",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "In a singly linked list, what is the term for the memory location that stores the address of the next node?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "Link",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the time complexity of traversing a linked list from the beginning to the end?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "O(n)",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Which of the following operations can be performed efficiently in a linked list?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Insertion at the beginning/end",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Explain the concept of circular linked list with a suitable example.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "A circular linked list is a type of linked list where the last node points back to the first node, forming a circular structure. Example: A playlist where the last song points back to the first song.",
+        "year_pattern": "2015-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "What is the term for the process of traversing a linked list from the beginning to the end?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "Forward Traversal",
+        "year_pattern": "2014-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Which of the following is a disadvantage of using a linked list?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Random access is not allowed",
+        "year_pattern": "2013-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "How can you implement a doubly linked list in C++?",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "You can implement a doubly linked list in C++ by using two pointers, one for the next node and one for the previous node, and defining two constructors, one for initializing the list and one for creating a new node.",
+        "year_pattern": "2012-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "What is the time complexity of inserting a new node at the beginning of a linked list?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "O(1)",
+        "year_pattern": "2011-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Which of the following operations is not supported in a singly linked list?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Traversal from the end to the beginning",
+        "year_pattern": "2010-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

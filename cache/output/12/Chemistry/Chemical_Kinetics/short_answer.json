@@ -1,0 +1,164 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:16:06.152Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define the term 'rate of reaction'.",
+        "marks": 1,
+        "answer": "The rate of reaction is defined as the change in concentration of reactants or products per unit time.",
+        "key_points": [
+          "Change in concentration",
+          "Per unit time"
+        ],
+        "topic": "Introduction to Chemical Kinetics"
+      },
+      {
+        "q": "What is the unit of rate of reaction?",
+        "marks": 1,
+        "answer": "The unit of rate of reaction is mol L^-1 s^-1 or M s^-1.",
+        "key_points": [
+          "Unit of concentration",
+          "Unit of time"
+        ],
+        "topic": "Introduction to Chemical Kinetics"
+      },
+      {
+        "q": "State the law of mass action.",
+        "marks": 1,
+        "answer": "The law of mass action states that the rate of a reaction is proportional to the product of the concentrations of the reactants, each concentration term raised to a power equal to the number of molecules of that reactant involved in the reaction.",
+        "key_points": [
+          "Rate of reaction",
+          "Concentrations of reactants"
+        ],
+        "topic": "Rate Law and Order of Reaction"
+      },
+      {
+        "q": "Define the term 'order of reaction'.",
+        "marks": 1,
+        "answer": "The order of reaction is defined as the sum of the powers to which the concentrations of the reactants are raised in the rate law expression.",
+        "key_points": [
+          "Order of reaction",
+          "Rate law expression"
+        ],
+        "topic": "Rate Law and Order of Reaction"
+      },
+      {
+        "q": "What is a zero-order reaction?",
+        "marks": 1,
+        "answer": "A zero-order reaction is a reaction in which the rate of reaction is independent of the concentration of the reactants.",
+        "key_points": [
+          "Zero-order reaction",
+          "Independent of concentration"
+        ],
+        "topic": "Rate Law and Order of Reaction"
+      },
+      {
+        "q": "Derive the integrated rate law for a first-order reaction.",
+        "marks": 2,
+        "answer": "The integrated rate law for a first-order reaction is given by: ln([A]t/[A]0) = -kt, where [A]t is the concentration of the reactant at time t, [A]0 is the initial concentration of the reactant, k is the rate constant, and t is the time.",
+        "key_points": [
+          "Integrated rate law",
+          "First-order reaction"
+        ],
+        "topic": "Integrated Rate Law"
+      },
+      {
+        "q": "Explain the concept of half-life period.",
+        "marks": 2,
+        "answer": "The half-life period is the time taken for the concentration of a reactant to decrease to half of its initial value. It is given by the expression: t1/2 = 0.693/k, where k is the rate constant.",
+        "key_points": [
+          "Half-life period",
+          "Rate constant"
+        ],
+        "topic": "Integrated Rate Law"
+      },
+      {
+        "q": "What is the effect of temperature on the rate of reaction?",
+        "marks": 2,
+        "answer": "An increase in temperature increases the rate of reaction, as it provides more energy to the reactant molecules to collide and react.",
+        "key_points": [
+          "Temperature",
+          "Rate of reaction"
+        ],
+        "topic": "Effect of Temperature on Rate of Reaction"
+      },
+      {
+        "q": "Derive the Arrhenius equation.",
+        "marks": 2,
+        "answer": "The Arrhenius equation is given by: k = Ae^(-Ea/RT), where k is the rate constant, A is the frequency factor, Ea is the activation energy, R is the gas constant, and T is the temperature.",
+        "key_points": [
+          "Arrhenius equation",
+          "Rate constant"
+        ],
+        "topic": "Effect of Temperature on Rate of Reaction"
+      },
+      {
+        "q": "Explain the concept of catalyst.",
+        "marks": 2,
+        "answer": "A catalyst is a substance that speeds up a chemical reaction without being consumed or altered in the process. It works by providing an alternative pathway with lower activation energy.",
+        "key_points": [
+          "Catalyst",
+          "Activation energy"
+        ],
+        "topic": "Catalysis"
+      },
+      {
+        "q": "Derive the expression for the rate constant of a reaction in terms of the Arrhenius parameters.",
+        "marks": 3,
+        "answer": "The expression for the rate constant of a reaction in terms of the Arrhenius parameters is given by: k = Ae^(-Ea/RT), where k is the rate constant, A is the frequency factor, Ea is the activation energy, R is the gas constant, and T is the temperature.",
+        "key_points": [
+          "Arrhenius equation",
+          "Rate constant"
+        ],
+        "topic": "Effect of Temperature on Rate of Reaction"
+      },
+      {
+        "q": "Explain the concept of collision theory and its importance in chemical kinetics.",
+        "marks": 3,
+        "answer": "The collision theory states that chemical reactions occur as a result of collisions between molecules. The importance of collision theory lies in its ability to explain the factors that affect the rate of reaction, such as concentration, temperature, and surface area.",
+        "key_points": [
+          "Collision theory",
+          "Rate of reaction"
+        ],
+        "topic": "Collision Theory"
+      },
+      {
+        "q": "Discuss the effect of concentration on the rate of reaction.",
+        "marks": 3,
+        "answer": "The rate of reaction increases with an increase in concentration of the reactants, as it increases the frequency of collisions between molecules. The effect of concentration on the rate of reaction can be explained by the law of mass action.",
+        "key_points": [
+          "Concentration",
+          "Rate of reaction"
+        ],
+        "topic": "Rate Law and Order of Reaction"
+      },
+      {
+        "q": "What is the role of a catalyst in a chemical reaction? Explain with an example.",
+        "marks": 3,
+        "answer": "A catalyst speeds up a chemical reaction without being consumed or altered in the process. For example, in the reaction between hydrogen and oxygen to form water, platinum acts as a catalyst by providing an alternative pathway with lower activation energy.",
+        "key_points": [
+          "Catalyst",
+          "Activation energy"
+        ],
+        "topic": "Catalysis"
+      },
+      {
+        "q": "Derive the integrated rate law for a second-order reaction and explain its significance.",
+        "marks": 3,
+        "answer": "The integrated rate law for a second-order reaction is given by: 1/[A]t = 1/[A]0 + kt, where [A]t is the concentration of the reactant at time t, [A]0 is the initial concentration of the reactant, k is the rate constant, and t is the time. The significance of this equation lies in its ability to determine the rate constant and the half-life period of the reaction.",
+        "key_points": [
+          "Integrated rate law",
+          "Second-order reaction"
+        ],
+        "topic": "Integrated Rate Law"
+      }
+    ],
+    "total": 15
+  }
+}

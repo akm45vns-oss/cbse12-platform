@@ -1,0 +1,248 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Network Security Concepts",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:34:01.361Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the primary purpose of a firewall in network security?",
+        "opts": [
+          "(A) To encrypt data",
+          "(B) To provide remote access",
+          "(C) To control incoming and outgoing network traffic",
+          "(D) To prevent malware spread"
+        ],
+        "ans": "C",
+        "explanation": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It helps to prevent unauthorized access to or from a private network while allowing authorized communication.",
+        "difficulty": "easy",
+        "topic": "Firewall"
+      },
+      {
+        "q": "Which of the following protocols is used for secure communication over the internet?",
+        "opts": [
+          "(A) HTTP",
+          "(B) FTP",
+          "(C) SSH",
+          "(D) SMTP"
+        ],
+        "ans": "C",
+        "explanation": "Secure Shell (SSH) is a protocol used for secure communication over the internet. It provides a secure and encrypted channel for remote access and file transfer.",
+        "difficulty": "easy",
+        "topic": "Secure Communication"
+      },
+      {
+        "q": "What is the main difference between a symmetric and asymmetric key encryption?",
+        "opts": [
+          "(A) Symmetric uses one key for both encryption and decryption",
+          "(B) Asymmetric uses different keys for encryption and decryption",
+          "(C) Symmetric is faster, but less secure",
+          "(D) Asymmetric is more secure, but slower"
+        ],
+        "ans": "B",
+        "explanation": "Asymmetric key encryption uses a pair of keys, one public key for encryption and a private key for decryption. Symmetric key encryption uses the same key for both encryption and decryption.",
+        "difficulty": "easy",
+        "topic": "Key Encryption"
+      },
+      {
+        "q": "Which of the following types of malware is designed to harm or steal data?",
+        "opts": [
+          "(A) Virus",
+          "(B) Worm",
+          "(C) Trojan",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "All types of malware, including viruses, worms, and Trojans, can be designed to harm or steal data. However, viruses typically replicate themselves, worms spread from system to system, and Trojans are disguised as legitimate software.",
+        "difficulty": "medium",
+        "topic": "Malware"
+      },
+      {
+        "q": "What is the purpose of a VPN in network security?",
+        "opts": [
+          "(A) To provide secure remote access",
+          "(B) To encrypt data in transit",
+          "(C) To prevent malware spread",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "A VPN (Virtual Private Network) provides secure remote access, encrypts data in transit, and can also prevent malware spread by encrypting internet traffic.",
+        "difficulty": "medium",
+        "topic": "VPN"
+      },
+      {
+        "q": "Which of the following authentication methods is based on something you know?",
+        "opts": [
+          "(A) Biometric authentication",
+          "(B) Password authentication",
+          "(C) Smart card authentication",
+          "(D) Token-based authentication"
+        ],
+        "ans": "B",
+        "explanation": "Password authentication is based on something the user knows, such as a username and password. Biometric authentication is based on something the user is, smart card authentication is based on something the user has, and token-based authentication is based on something the user has.",
+        "difficulty": "medium",
+        "topic": "Authentication"
+      },
+      {
+        "q": "What is the purpose of a honeypot in network security?",
+        "opts": [
+          "(A) To detect and prevent intrusions",
+          "(B) To attract and detect intruders",
+          "(C) To store sensitive data",
+          "(D) To provide remote access"
+        ],
+        "ans": "B",
+        "explanation": "A honeypot is a decoy system or data that is designed to attract and detect intruders. It is used to detect and prevent intrusions by luring attackers into a trap.",
+        "difficulty": "medium",
+        "topic": "Honeypot"
+      },
+      {
+        "q": "Which of the following encryption algorithms is considered to be secure against brute-force attacks?",
+        "opts": [
+          "(A) DES",
+          "(B) AES",
+          "(C) RSA",
+          "(D) SHA"
+        ],
+        "ans": "B",
+        "explanation": "Advanced Encryption Standard (AES) is considered to be secure against brute-force attacks due to its large key size and complex encryption process. DES (Data Encryption Standard) is considered insecure, RSA (Rivest-Shamir-Adleman) is used for key exchange, and SHA (Secure Hash Algorithm) is used for data integrity.",
+        "difficulty": "hard",
+        "topic": "Encryption Algorithms"
+      },
+      {
+        "q": "What is the difference between a vulnerability and a threat?",
+        "opts": [
+          "(A) A vulnerability is a weakness in a system, while a threat is a potential attack",
+          "(B) A vulnerability is a potential attack, while a threat is a weakness in a system",
+          "(C) Both are the same thing",
+          "(D) Neither is related to security"
+        ],
+        "ans": "A",
+        "explanation": "A vulnerability is a weakness in a system that can be exploited by an attacker, while a threat is a potential attack or exploit that takes advantage of the vulnerability.",
+        "difficulty": "hard",
+        "topic": "Threats and Vulnerabilities"
+      },
+      {
+        "q": "Which of the following access control models is based on the concept of least privilege?",
+        "opts": [
+          "(A) Mandatory Access Control",
+          "(B) Discretionary Access Control",
+          "(C) Role-Based Access Control",
+          "(D) Attribute-Based Access Control"
+        ],
+        "ans": "C",
+        "explanation": "Role-Based Access Control (RBAC) is based on the concept of least privilege, where users are assigned roles that determine their access to resources. Mandatory Access Control (MAC) is based on labels and clearance levels, Discretionary Access Control (DAC) is based on owner permissions, and Attribute-Based Access Control (ABAC) is based on attributes and policies.",
+        "difficulty": "hard",
+        "topic": "Access Control Models"
+      },
+      {
+        "q": "What is the purpose of a digital certificate in secure communication?",
+        "opts": [
+          "(A) To verify the identity of a user",
+          "(B) To encrypt data",
+          "(C) To authenticate a server",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "A digital certificate is used to verify the identity of a user, encrypt data, and authenticate a server. It is issued by a trusted third-party Certificate Authority (CA) and contains the user's or server's public key and identity information.",
+        "difficulty": "hard",
+        "topic": "Digital Certificates"
+      },
+      {
+        "q": "Which of the following network protocols is used for secure communication between a client and a server?",
+        "opts": [
+          "(A) HTTPS",
+          "(B) FTPS",
+          "(C) SFTP",
+          "(D) SSH"
+        ],
+        "ans": "A",
+        "explanation": "Hypertext Transfer Protocol Secure (HTTPS) is used for secure communication between a client and a server. It uses Transport Layer Security (TLS) or Secure Sockets Layer (SSL) to encrypt data in transit.",
+        "difficulty": "hard",
+        "topic": "Network Protocols"
+      },
+      {
+        "q": "What is the purpose of a password policy in network security?",
+        "opts": [
+          "(A) To prevent brute-force attacks",
+          "(B) To enforce strong passwords",
+          "(C) To require multi-factor authentication",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "A password policy is used to prevent brute-force attacks, enforce strong passwords, and require multi-factor authentication. It helps to protect user accounts and prevent unauthorized access to systems and data.",
+        "difficulty": "hard",
+        "topic": "Password Policy"
+      },
+      {
+        "q": "Which of the following types of malware is designed to steal sensitive information?",
+        "opts": [
+          "(A) Virus",
+          "(B) Worm",
+          "(C) Trojan",
+          "(D) Spyware"
+        ],
+        "ans": "D",
+        "explanation": "Spyware is a type of malware designed to steal sensitive information such as passwords, credit card numbers, and other personal data. Viruses typically replicate themselves, worms spread from system to system, and Trojans are disguised as legitimate software.",
+        "difficulty": "hard",
+        "topic": "Malware"
+      },
+      {
+        "q": "What is the difference between a vulnerability scan and a penetration test?",
+        "opts": [
+          "(A) A vulnerability scan identifies vulnerabilities, while a penetration test exploits them",
+          "(B) A vulnerability scan exploits vulnerabilities, while a penetration test identifies them",
+          "(C) Both are the same thing",
+          "(D) Neither is related to security"
+        ],
+        "ans": "A",
+        "explanation": "A vulnerability scan identifies vulnerabilities in a system, while a penetration test exploits vulnerabilities to simulate a real-world attack. A vulnerability scan is a non-intrusive test, while a penetration test is a more invasive test that simulates a real-world attack.",
+        "difficulty": "hard",
+        "topic": "Vulnerability Scanning and Penetration Testing"
+      },
+      {
+        "q": "Which of the following access control models is based on the concept of labels and clearance levels?",
+        "opts": [
+          "(A) Mandatory Access Control",
+          "(B) Discretionary Access Control",
+          "(C) Role-Based Access Control",
+          "(D) Attribute-Based Access Control"
+        ],
+        "ans": "A",
+        "explanation": "Mandatory Access Control (MAC) is based on the concept of labels and clearance levels, where users and resources are assigned labels that determine their access to each other. Discretionary Access Control (DAC) is based on owner permissions, Role-Based Access Control (RBAC) is based on roles, and Attribute-Based Access Control (ABAC) is based on attributes and policies.",
+        "difficulty": "hard",
+        "topic": "Access Control Models"
+      },
+      {
+        "q": "What is the purpose of a security information and event management (SIEM) system?",
+        "opts": [
+          "(A) To monitor network traffic",
+          "(B) To detect and prevent intrusions",
+          "(C) To store sensitive data",
+          "(D) All of the above"
+        ],
+        "ans": "B",
+        "explanation": "A SIEM system is used to detect and prevent intrusions by monitoring network traffic and system logs for suspicious activity. It helps to identify potential security threats and alert security teams to take action.",
+        "difficulty": "hard",
+        "topic": "SIEM Systems"
+      },
+      {
+        "q": "Which of the following encryption algorithms is considered to be secure against quantum computer attacks?",
+        "opts": [
+          "(A) RSA",
+          "(B) AES",
+          "(C) Elliptic Curve Cryptography",
+          "(D) None of the above"
+        ],
+        "ans": "C",
+        "explanation": "Elliptic Curve Cryptography (ECC) is considered to be secure against quantum computer attacks due to its large key size and resistance to factorization attacks. RSA and AES are vulnerable to quantum computer attacks.",
+        "difficulty": "hard",
+        "topic": "Encryption Algorithms"
+      }
+    ],
+    "total": 18
+  }
+}

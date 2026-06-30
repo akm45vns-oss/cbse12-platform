@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Nuclei",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:10:31.252Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A nuclear power plant is a thermal power station that uses nuclear reactions to generate steam and produce electricity. In a nuclear power plant, nuclear fission occurs in a reactor where the fuel (usually enriched uranium) undergoes a chain reaction. This process releases a large amount of energy, which is used to heat water and produce steam. The steam then drives a turbine connected to a generator, producing electricity. However, the safety of a nuclear power plant is a major concern due to the potential for radioactive leaks and accidents. To minimize these risks, strict safety protocols are implemented, including the use of containment structures and emergency cooling systems.",
+        "questions": [
+          {
+            "q": "What is the primary source of fuel in a nuclear power plant?",
+            "opts": [
+              "Enriched uranium",
+              "Plutonium",
+              "Thorium",
+              "Deuterium"
+            ],
+            "ans": "A",
+            "explanation": "Enriched uranium is the primary source of fuel in a nuclear power plant due to its high concentration of fissile isotopes."
+          },
+          {
+            "q": "What is the purpose of a containment structure in a nuclear power plant?",
+            "opts": [
+              "To increase the efficiency of the reactor",
+              "To reduce the risk of radioactive leaks",
+              "To improve the cooling system",
+              "To enhance the power output"
+            ],
+            "ans": "B",
+            "explanation": "A containment structure is designed to prevent radioactive materials from escaping into the environment in case of an accident or leak."
+          },
+          {
+            "q": "What is the process called when an atomic nucleus splits into two or more smaller nuclei?",
+            "opts": [
+              "Nuclear fission",
+              "Nuclear fusion",
+              "Radioactive decay",
+              "Neutron emission"
+            ],
+            "ans": "A",
+            "explanation": "Nuclear fission is the process where an atomic nucleus splits into two or more smaller nuclei, releasing a large amount of energy."
+          },
+          {
+            "q": "What is the primary function of a turbine in a nuclear power plant?",
+            "opts": [
+              "To produce electricity",
+              "To generate steam",
+              "To cool the reactor core",
+              "To control the chain reaction"
+            ],
+            "ans": "B",
+            "explanation": "A turbine is used to convert the thermal energy of the steam into mechanical energy, which is then converted into electricity by the generator."
+          },
+          {
+            "q": "What is a potential risk associated with nuclear power plants?",
+            "opts": [
+              "Radioactive contamination",
+              "Global warming",
+              "Climate change",
+              "Environmental pollution"
+            ],
+            "ans": "A",
+            "explanation": "Nuclear power plants pose a risk of radioactive contamination due to the potential for leaks and accidents."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "Radioactive dating is a technique used to determine the age of fossils, rocks, and other geological materials. It is based on the principle of radioactive decay, where unstable isotopes undergo a transformation into more stable ones, releasing radiation in the process. One commonly used method is radiocarbon dating, which measures the amount of carbon-14 present in an organic sample. Carbon-14 is a radioactive isotope of carbon that decays into nitrogen-14 at a known rate. By comparing the amount of carbon-14 in the sample to the known concentration in living organisms, scientists can calculate the age of the sample.",
+        "questions": [
+          {
+            "q": "What is the principle behind radioactive dating?",
+            "opts": [
+              "Radioactive decay",
+              "Nuclear fission",
+              "Radioactive emission",
+              "Thermal energy conversion"
+            ],
+            "ans": "A",
+            "explanation": "Radioactive dating relies on the principle of radioactive decay, where unstable isotopes transform into more stable ones, releasing radiation in the process."
+          },
+          {
+            "q": "What is the name of the radioactive isotope used in radiocarbon dating?",
+            "opts": [
+              "Carbon-14",
+              "Nitrogen-14",
+              "Oxygen-18",
+              "Sodium-24"
+            ],
+            "ans": "A",
+            "explanation": "Carbon-14 is the radioactive isotope used in radiocarbon dating, which decays into nitrogen-14 at a known rate."
+          },
+          {
+            "q": "What is the purpose of comparing the amount of carbon-14 in a sample to the known concentration in living organisms?",
+            "opts": [
+              "To determine the age of the sample",
+              "To identify the source of the sample",
+              "To measure the rate of radioactive decay",
+              "To calculate the concentration of carbon-14"
+            ],
+            "ans": "A",
+            "explanation": "By comparing the amount of carbon-14 in the sample to the known concentration in living organisms, scientists can calculate the age of the sample."
+          },
+          {
+            "q": "What is the rate at which carbon-14 decays into nitrogen-14?",
+            "opts": [
+              "Constant",
+              "Variable",
+              "Known",
+              "Unknown"
+            ],
+            "ans": "C",
+            "explanation": "The rate at which carbon-14 decays into nitrogen-14 is a known constant, which is used to calculate the age of the sample."
+          },
+          {
+            "q": "What is the type of material that can be dated using radiocarbon dating?",
+            "opts": [
+              "Inorganic",
+              "Organic",
+              "Mineral",
+              "Rock"
+            ],
+            "ans": "B",
+            "explanation": "Radiocarbon dating is used to date organic materials, which contain carbon-14."
+          }
+        ]
+      }
+    ]
+  }
+}

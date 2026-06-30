@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Ray Optics and Optical Instruments",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:15:16.902Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A student is working on a project to design a periscope for a submarine. The periscope consists of two plane mirrors and a converging lens. The student wants to observe an object on the surface of the water from a distance of 100 m. The periscope has a length of 10 m and the lens has a focal length of 0.5 m. The student is trying to determine the position and size of the image formed by the periscope.",
+        "questions": [
+          {
+            "q": "What is the magnification of the image formed by the periscope?",
+            "opts": [
+              "(A) 1",
+              "(B) 2",
+              "(C) 10",
+              "(D) 20"
+            ],
+            "ans": "C",
+            "explanation": "The magnification of the image is given by the ratio of the distance between the object and the lens to the distance between the lens and the image. Since the periscope has a length of 10 m and the object is at a distance of 100 m, the magnification is 10."
+          },
+          {
+            "q": "Where is the image formed by the periscope located?",
+            "opts": [
+              "(A) At the lens",
+              "(B) At the mirror",
+              "(C) At the eye piece",
+              "(D) 100 m from the lens"
+            ],
+            "ans": "C",
+            "explanation": "The image formed by the periscope is located at the eye piece, which is where the student observes the image."
+          },
+          {
+            "q": "What type of lens is used in the periscope?",
+            "opts": [
+              "(A) Diverging lens",
+              "(B) Converging lens",
+              "(C) Plane mirror",
+              "(D) Convex mirror"
+            ],
+            "ans": "B",
+            "explanation": "The periscope uses a converging lens to form an image of the object."
+          },
+          {
+            "q": "What is the purpose of the two plane mirrors in the periscope?",
+            "opts": [
+              "(A) To converge the light rays",
+              "(B) To diverge the light rays",
+              "(C) To change the direction of the light rays",
+              "(D) To reflect the image"
+            ],
+            "ans": "C",
+            "explanation": "The two plane mirrors in the periscope are used to change the direction of the light rays, allowing the student to observe the object from a different angle."
+          },
+          {
+            "q": "What is the distance between the object and the periscope?",
+            "opts": [
+              "(A) 10 m",
+              "(B) 50 m",
+              "(C) 100 m",
+              "(D) 200 m"
+            ],
+            "ans": "C",
+            "explanation": "The distance between the object and the periscope is given as 100 m."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A photographer is using a camera with a 50 mm lens to take a picture of a person standing 10 m away. The photographer wants to use a magnification of 0.5 to capture the person's face. The camera has an aperture of f/2.8 and the photographer is using a tripod to stabilize the camera. The photographer is trying to determine the position and size of the image formed by the camera.",
+        "questions": [
+          {
+            "q": "What is the focal length of the camera lens?",
+            "opts": [
+              "(A) 25 mm",
+              "(B) 50 mm",
+              "(C) 100 mm",
+              "(D) 200 mm"
+            ],
+            "ans": "B",
+            "explanation": "The focal length of the camera lens is given as 50 mm."
+          },
+          {
+            "q": "What is the magnification of the image formed by the camera?",
+            "opts": [
+              "(A) 0.2",
+              "(B) 0.5",
+              "(C) 1",
+              "(D) 2"
+            ],
+            "ans": "B",
+            "explanation": "The magnification of the image is given as 0.5."
+          },
+          {
+            "q": "Where is the image formed by the camera located?",
+            "opts": [
+              "(A) On the sensor",
+              "(B) On the lens",
+              "(C) On the aperture",
+              "(D) On the tripod"
+            ],
+            "ans": "A",
+            "explanation": "The image formed by the camera is located on the sensor, which captures the image."
+          },
+          {
+            "q": "What is the purpose of the aperture in the camera?",
+            "opts": [
+              "(A) To focus the light rays",
+              "(B) To diverge the light rays",
+              "(C) To control the amount of light entering the camera",
+              "(D) To reflect the image"
+            ],
+            "ans": "C",
+            "explanation": "The aperture in the camera is used to control the amount of light entering the camera, allowing the photographer to adjust the exposure of the image."
+          },
+          {
+            "q": "What is the distance between the person and the camera?",
+            "opts": [
+              "(A) 5 m",
+              "(B) 10 m",
+              "(C) 15 m",
+              "(D) 20 m"
+            ],
+            "ans": "B",
+            "explanation": "The distance between the person and the camera is given as 10 m."
+          }
+        ]
+      }
+    ]
+  }
+}

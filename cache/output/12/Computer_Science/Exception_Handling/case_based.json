@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Exception Handling",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:31:43.268Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A web application is designed to handle user input for various tasks such as login, registration, and transaction processing. However, unexpected errors can occur due to user input, network connectivity issues, or database inconsistencies. The developer wants to ensure that the application remains stable and provides meaningful error messages to the users. The developer decides to use exception handling mechanisms to manage these unexpected errors. Write a Python code snippet to demonstrate how to handle exceptions in a function that connects to a database and retrieves user data.",
+        "questions": [
+          {
+            "q": "What is the primary purpose of exception handling in the given scenario?",
+            "opts": [
+              "(A) To enhance the application's user interface",
+              "(B) To manage unexpected errors and maintain application stability",
+              "(C) To improve database performance",
+              "(D) To increase security measures"
+            ],
+            "ans": "B",
+            "explanation": "Exception handling is used to manage unexpected errors and maintain application stability."
+          },
+          {
+            "q": "In the given scenario, what type of exception is likely to occur due to user input errors?",
+            "opts": [
+              "(A) SyntaxError",
+              "(B) ValueError",
+              "(C) TypeError",
+              "(D) ImportError"
+            ],
+            "ans": "B",
+            "explanation": "ValueError is likely to occur due to user input errors."
+          },
+          {
+            "q": "What is the benefit of using try-except blocks in the given scenario?",
+            "opts": [
+              "(A) To reduce code complexity",
+              "(B) To increase execution time",
+              "(C) To handle exceptions and provide meaningful error messages",
+              "(D) To decrease memory usage"
+            ],
+            "ans": "C",
+            "explanation": "Try-except blocks handle exceptions and provide meaningful error messages."
+          },
+          {
+            "q": "What is the role of the finally block in the given scenario?",
+            "opts": [
+              "(A) To handle exceptions",
+              "(B) To clean up resources",
+              "(C) To execute code before the exception occurs",
+              "(D) To skip execution of the code"
+            ],
+            "ans": "B",
+            "explanation": "The finally block is used to clean up resources."
+          },
+          {
+            "q": "What is the Python keyword used to raise an exception in the given scenario?",
+            "opts": [
+              "(A) raise",
+              "(B) try",
+              "(C) except",
+              "(D) finally"
+            ],
+            "ans": "A",
+            "explanation": "The Python keyword 'raise' is used to raise an exception."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A banking application allows users to perform financial transactions such as deposit, withdrawal, and transfer money. However, unexpected errors can occur due to invalid user input, network connectivity issues, or database inconsistencies. The developer wants to ensure that the application remains stable and provides meaningful error messages to the users. The developer decides to use exception handling mechanisms to manage these unexpected errors. Write a Java code snippet to demonstrate how to handle exceptions in a function that performs financial transactions.",
+        "questions": [
+          {
+            "q": "What is the purpose of the try block in the given scenario?",
+            "opts": [
+              "(A) To handle exceptions",
+              "(B) To execute code that may raise an exception",
+              "(C) To clean up resources",
+              "(D) To skip execution of the code"
+            ],
+            "ans": "B",
+            "explanation": "The try block executes code that may raise an exception."
+          },
+          {
+            "q": "What is the purpose of the catch block in the given scenario?",
+            "opts": [
+              "(A) To clean up resources",
+              "(B) To handle exceptions and provide meaningful error messages",
+              "(C) To execute code before the exception occurs",
+              "(D) To skip execution of the code"
+            ],
+            "ans": "B",
+            "explanation": "The catch block handles exceptions and provides meaningful error messages."
+          },
+          {
+            "q": "What is the role of the finally block in the given scenario?",
+            "opts": [
+              "(A) To handle exceptions",
+              "(B) To clean up resources",
+              "(C) To execute code before the exception occurs",
+              "(D) To skip execution of the code"
+            ],
+            "ans": "B",
+            "explanation": "The finally block is used to clean up resources."
+          },
+          {
+            "q": "What is the Java keyword used to throw an exception in the given scenario?",
+            "opts": [
+              "(A) throw",
+              "(B) try",
+              "(C) catch",
+              "(D) finally"
+            ],
+            "ans": "A",
+            "explanation": "The Java keyword 'throw' is used to throw an exception."
+          },
+          {
+            "q": "What is the benefit of using exception handling in the given scenario?",
+            "opts": [
+              "(A) To enhance the application's user interface",
+              "(B) To maintain application stability and provide meaningful error messages",
+              "(C) To improve database performance",
+              "(D) To increase security measures"
+            ],
+            "ans": "B",
+            "explanation": "Exception handling maintains application stability and provides meaningful error messages."
+          }
+        ]
+      }
+    ]
+  }
+}

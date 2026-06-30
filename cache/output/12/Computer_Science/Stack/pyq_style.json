@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Stack",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:01:00.214Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the primary function of a stack in computer science?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The primary function of a stack is to follow the LIFO (Last In First Out) principle, where the last element added to the stack is the first one to be removed.",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Which of the following operations is NOT a basic operation that can be performed on a stack?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Insertion at a specific position",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Explain the concept of stack overflow with an example.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Stack overflow occurs when a program attempts to use more memory than is available on the call stack. For example, if a function calls itself recursively without a base case, it can lead to a stack overflow error.",
+        "year_pattern": "2018-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "What is the purpose of the POP operation in a stack?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "The purpose of the POP operation in a stack is to remove the top element from the stack.",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "True or False: A stack can be implemented using a linked list.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "True",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the difference between a stack and a queue?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "A stack follows the LIFO principle, whereas a queue follows the FIFO principle.",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Which of the following is an application of stacks?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Evaluating postfix expressions",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Explain the concept of stack underflow with an example.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Stack underflow occurs when a program attempts to remove an element from an empty stack. For example, if a function attempts to pop an element from an empty stack, it can lead to a stack underflow error.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "What is the purpose of the PUSH operation in a stack?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "The purpose of the PUSH operation in a stack is to add a new element to the top of the stack.",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "True or False: A stack is a type of tree data structure.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "False",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

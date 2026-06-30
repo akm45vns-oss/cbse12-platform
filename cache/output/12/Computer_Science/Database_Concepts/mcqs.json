@@ -1,0 +1,261 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Database Concepts",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:32:47.345Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the primary function of a database?",
+        "opts": [
+          "(A) To store data in a structured format",
+          "(B) To provide user authentication",
+          "(C) To perform data analysis",
+          "(D) To send emails"
+        ],
+        "ans": "A",
+        "explanation": "A database is designed to store data in a structured format that allows for efficient retrieval and manipulation. The other options are not the primary function of a database.",
+        "difficulty": "easy",
+        "topic": "Introduction to Databases"
+      },
+      {
+        "q": "Which of the following is an example of a relational database?",
+        "opts": [
+          "(A) MongoDB",
+          "(B) MySQL",
+          "(C) XML database",
+          "(D) JSON database"
+        ],
+        "ans": "B",
+        "explanation": "MySQL is a popular relational database management system. The other options are not relational databases.",
+        "difficulty": "easy",
+        "topic": "Relational Databases"
+      },
+      {
+        "q": "What is the purpose of normalization in database design?",
+        "opts": [
+          "(A) To reduce data redundancy",
+          "(B) To improve data security",
+          "(C) To increase data storage capacity",
+          "(D) To enhance data visualization"
+        ],
+        "ans": "A",
+        "explanation": "Normalization is a process of organizing data in a database to minimize data redundancy and dependency. The other options are not the primary purpose of normalization.",
+        "difficulty": "easy",
+        "topic": "Database Design"
+      },
+      {
+        "q": "Which of the following is a type of database constraint?",
+        "opts": [
+          "(A) Primary key",
+          "(B) Foreign key",
+          "(C) Unique constraint",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "Primary key, foreign key, and unique constraint are all types of database constraints. They ensure data consistency and integrity.",
+        "difficulty": "medium",
+        "topic": "Database Constraints"
+      },
+      {
+        "q": "What is the difference between a stored procedure and a view?",
+        "opts": [
+          "(A) Stored procedure is a set of SQL statements, while a view is a virtual table",
+          "(B) Stored procedure is a virtual table, while a view is a set of SQL statements",
+          "(C) Stored procedure is a set of SQL statements that can be executed multiple times, while a view is a virtual table that can be queried",
+          "(D) Stored procedure is a virtual table that can be queried, while a view is a set of SQL statements that can be executed multiple times"
+        ],
+        "ans": "C",
+        "explanation": "A stored procedure is a set of SQL statements that can be executed multiple times, while a view is a virtual table that can be queried. The other options are incorrect.",
+        "difficulty": "medium",
+        "topic": "Stored Procedures and Views"
+      },
+      {
+        "q": "Which of the following is a type of database index?",
+        "opts": [
+          "(A) B-tree index",
+          "(B) Hash index",
+          "(C) Clustered index",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "B-tree index, hash index, and clustered index are all types of database indexes. They improve query performance by reducing the time it takes to locate data.",
+        "difficulty": "medium",
+        "topic": "Database Indexing"
+      },
+      {
+        "q": "What is the purpose of a database schema?",
+        "opts": [
+          "(A) To define the structure of a database",
+          "(B) To define the relationships between tables",
+          "(C) To define the data types of columns",
+          "(D) To define the database constraints"
+        ],
+        "ans": "A",
+        "explanation": "A database schema defines the structure of a database, including the tables, columns, and relationships between them. The other options are not the primary purpose of a database schema.",
+        "difficulty": "medium",
+        "topic": "Database Schema"
+      },
+      {
+        "q": "Which of the following is an example of a NoSQL database?",
+        "opts": [
+          "(A) MySQL",
+          "(B) MongoDB",
+          "(C) PostgreSQL",
+          "(D) Oracle"
+        ],
+        "ans": "B",
+        "explanation": "MongoDB is a popular NoSQL database. It stores data in a flexible, JSON-like format. The other options are relational databases.",
+        "difficulty": "medium",
+        "topic": "NoSQL Databases"
+      },
+      {
+        "q": "What is the purpose of a database query optimizer?",
+        "opts": [
+          "(A) To optimize database performance",
+          "(B) To improve database security",
+          "(C) To enhance database reliability",
+          "(D) To reduce database storage capacity"
+        ],
+        "ans": "A",
+        "explanation": "A database query optimizer optimizes the execution plan of a query to improve database performance. The other options are not the primary purpose of a database query optimizer.",
+        "difficulty": "hard",
+        "topic": "Database Query Optimization"
+      },
+      {
+        "q": "Which of the following is a type of database transaction isolation level?",
+        "opts": [
+          "(A) Read committed",
+          "(B) Repeatable read",
+          "(C) Serializable",
+          "(D) Snapshot isolation"
+        ],
+        "ans": "C",
+        "explanation": "Serializable is a type of database transaction isolation level that ensures multiple transactions can execute concurrently without interfering with each other.",
+        "difficulty": "hard",
+        "topic": "Database Transaction Isolation Levels"
+      },
+      {
+        "q": "What is the purpose of a database recovery mechanism?",
+        "opts": [
+          "(A) To restore database consistency after a failure",
+          "(B) To improve database performance",
+          "(C) To enhance database security",
+          "(D) To reduce database storage capacity"
+        ],
+        "ans": "A",
+        "explanation": "A database recovery mechanism restores database consistency after a failure, such as a power outage or hardware crash. The other options are not the primary purpose of a database recovery mechanism.",
+        "difficulty": "hard",
+        "topic": "Database Recovery Mechanisms"
+      },
+      {
+        "q": "Which of the following is an example of a distributed database?",
+        "opts": [
+          "(A) MySQL",
+          "(B) MongoDB",
+          "(C) PostgreSQL",
+          "(D) Oracle"
+        ],
+        "ans": "B",
+        "explanation": "MongoDB can be deployed as a distributed database, where data is stored across multiple servers. The other options are relational databases.",
+        "difficulty": "hard",
+        "topic": "Distributed Databases"
+      },
+      {
+        "q": "What is the purpose of a database cache?",
+        "opts": [
+          "(A) To improve database performance by storing frequently accessed data",
+          "(B) To reduce database storage capacity",
+          "(C) To enhance database security",
+          "(D) To improve database reliability"
+        ],
+        "ans": "A",
+        "explanation": "A database cache stores frequently accessed data in memory to improve performance. The other options are not the primary purpose of a database cache.",
+        "difficulty": "hard",
+        "topic": "Database Caching"
+      },
+      {
+        "q": "Which of the following is a type of database clustering topology?",
+        "opts": [
+          "(A) Master-slave replication",
+          "(B) Master-master replication",
+          "(C) Peer-to-peer replication",
+          "(D) Star replication"
+        ],
+        "ans": "B",
+        "explanation": "Master-master replication is a type of database clustering topology where all nodes are equal and can accept writes. The other options are not correct.",
+        "difficulty": "hard",
+        "topic": "Database Clustering"
+      },
+      {
+        "q": "What is the purpose of a database backup and recovery plan?",
+        "opts": [
+          "(A) To ensure database availability",
+          "(B) To improve database performance",
+          "(C) To enhance database security",
+          "(D) To reduce database storage capacity"
+        ],
+        "ans": "A",
+        "explanation": "A database backup and recovery plan ensures that the database can be recovered in the event of a failure. The other options are not the primary purpose of a database backup and recovery plan.",
+        "difficulty": "hard",
+        "topic": "Database Backup and Recovery"
+      },
+      {
+        "q": "Which of the following is an example of a database security threat?",
+        "opts": [
+          "(A) SQL injection",
+          "(B) Cross-site scripting",
+          "(C) Malware",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "SQL injection, cross-site scripting, and malware are all types of database security threats. They can compromise database security and lead to data breaches.",
+        "difficulty": "hard",
+        "topic": "Database Security"
+      },
+      {
+        "q": "What is the purpose of a database audit trail?",
+        "opts": [
+          "(A) To track database changes and modifications",
+          "(B) To improve database performance",
+          "(C) To enhance database security",
+          "(D) To reduce database storage capacity"
+        ],
+        "ans": "A",
+        "explanation": "A database audit trail tracks database changes and modifications to ensure accountability and compliance. The other options are not the primary purpose of a database audit trail.",
+        "difficulty": "hard",
+        "topic": "Database Auditing"
+      },
+      {
+        "q": "Which of the following is a type of database data type?",
+        "opts": [
+          "(A) Integer",
+          "(B) String",
+          "(C) Date",
+          "(D) All of the above"
+        ],
+        "ans": "D",
+        "explanation": "Integer, string, and date are all types of database data types. They define the format and structure of data stored in a database.",
+        "difficulty": "medium",
+        "topic": "Database Data Types"
+      },
+      {
+        "q": "What is the purpose of a database transaction?",
+        "opts": [
+          "(A) To execute a set of SQL statements as a single unit of work",
+          "(B) To improve database performance",
+          "(C) To enhance database security",
+          "(D) To reduce database storage capacity"
+        ],
+        "ans": "A",
+        "explanation": "A database transaction executes a set of SQL statements as a single unit of work to ensure consistency and integrity. The other options are not the primary purpose of a database transaction.",
+        "difficulty": "medium",
+        "topic": "Database Transactions"
+      }
+    ],
+    "total": 19
+  }
+}

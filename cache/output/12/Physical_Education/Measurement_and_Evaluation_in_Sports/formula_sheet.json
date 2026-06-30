@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Physical Education",
+  "chapter": "Measurement and Evaluation in Sports",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:46:51.673Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Cronbach's Alpha",
+        "formula": "Calculates the reliability of a test or a set of test items",
+        "variables": "Number of items, Sum of the items, Sum of the squares of the items, Sum of the products of the items",
+        "units": "No units",
+        "notes": "Used to measure internal consistency reliability"
+      },
+      {
+        "name": "Test-Retest Reliability",
+        "formula": "Calculates the consistency of the test results over time",
+        "variables": "Score 1, Score 2, Mean of Score 1, Mean of Score 2",
+        "units": "No units",
+        "notes": "Used to measure stability or consistency of the test"
+      },
+      {
+        "name": "Inter-Rater Reliability",
+        "formula": "Calculates the consistency of the measurements made by different observers",
+        "variables": "Score 1, Score 2, Mean of Score 1, Mean of Score 2",
+        "units": "No units",
+        "notes": "Used to measure agreement between observers"
+      },
+      {
+        "name": "Split-Half Reliability",
+        "formula": "Calculates the consistency of the test results by dividing the test into two halves",
+        "variables": "Score 1, Score 2, Mean of Score 1, Mean of Score 2",
+        "units": "No units",
+        "notes": "Used to measure internal consistency reliability"
+      },
+      {
+        "name": "Kappa Coefficient",
+        "formula": "Calculates the agreement between observers beyond chance",
+        "variables": "Observed agreement, Chance agreement",
+        "units": "No units",
+        "notes": "Used to measure inter-rater reliability"
+      },
+      {
+        "name": "Standardized Score",
+        "formula": "Calculates a score that is standardized across different tests or populations",
+        "variables": "Raw Score, Mean, Standard Deviation",
+        "units": "No units",
+        "notes": "Used to compare scores across different tests or populations"
+      },
+      {
+        "name": "Coefficient of Variation (CV)",
+        "formula": "Calculates the relative variability of a set of data",
+        "variables": "Standard Deviation, Mean",
+        "units": "%",
+        "notes": "Used to measure relative variability"
+      }
+    ]
+  }
+}

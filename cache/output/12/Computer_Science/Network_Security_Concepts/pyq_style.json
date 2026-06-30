@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Network Security Concepts",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:01:06.368Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the main purpose of a firewall in a network?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Identify the type of attack where an attacker sends a large amount of traffic to a network to overwhelm its resources.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "Denial of Service (DoS) attack",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Explain the concept of encryption in network security.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Encryption is the process of converting plaintext data into unreadable ciphertext to protect it from unauthorized access. It uses algorithms and keys to scramble the data, making it unreadable to anyone without the decryption key.",
+        "year_pattern": "2020-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Which of the following is a type of malicious software that spreads through email attachments?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Trojan horse",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Describe the role of a proxy server in network security.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "A proxy server acts as an intermediary between a client and a server, hiding the client's IP address and allowing it to access the server while maintaining anonymity.",
+        "year_pattern": "2016-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "What is the difference between a virus and a worm in network security?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "A virus requires human interaction to spread, while a worm can spread automatically without human intervention.",
+        "year_pattern": "2015-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Explain the concept of secure sockets layer (SSL) and its importance in network security.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "SSL is a cryptographic protocol that provides secure communication between a client and a server over the internet. It ensures confidentiality, integrity, and authenticity of data transmitted between the two parties. SSL is used in e-commerce, online banking, and other secure transactions.",
+        "year_pattern": "2021-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Which of the following is a type of attack that involves tricking a user into revealing sensitive information?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Phishing attack",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Describe the role of a network intrusion detection system (NIDS) in network security.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "A NIDS monitors network traffic in real-time to detect and alert on potential security threats. It can identify known and unknown attacks, and provide detailed information about the attack, including the source IP address, timestamp, and packet details.",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Explain the importance of regular software updates and patches in network security.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Regular software updates and patches are essential in network security as they fix known vulnerabilities and prevent exploitation by attackers. They ensure that the software remains secure and up-to-date, reducing the risk of cyber attacks and data breaches.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      }
+    ],
+    "total": 10
+  }
+}

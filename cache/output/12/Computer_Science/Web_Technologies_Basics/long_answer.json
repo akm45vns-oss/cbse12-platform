@@ -1,0 +1,82 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Web Technologies Basics",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:01:06.809Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of URL (Uniform Resource Locator) with its components. What are the different types of URLs?",
+        "marks": 5,
+        "answer": "A URL is a web address that is used to locate a resource on the internet. It has the following components: protocol (http/https), subdomain, domain name, port number, path, parameters, and fragment identifier. Different types of URLs include: absolute URL, relative URL, protocol-relative URL, and mailto URL.",
+        "marking_scheme": [
+          "Explain the components of a URL (1 mark)",
+          "List the different types of URLs (1 mark)",
+          "Provide an example of each type of URL (3 marks)"
+        ],
+        "topic": "URLs and Domains",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the role of HTTP (Hypertext Transfer Protocol) in web communication. What are the different HTTP methods?",
+        "marks": 5,
+        "answer": "HTTP is a protocol used for transferring data over the web. It plays a crucial role in web communication by defining the rules for request and response between a client and a server. Different HTTP methods include: GET, POST, PUT, DELETE, HEAD, OPTIONS, and PATCH.",
+        "marking_scheme": [
+          "Explain the role of HTTP in web communication (2 marks)",
+          "List the different HTTP methods (1 mark)",
+          "Describe the use of each HTTP method (2 marks)"
+        ],
+        "topic": "HTTP and FTP",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the difference between HTTP and HTTPS? When do you use each protocol?",
+        "marks": 5,
+        "answer": "HTTP (Hypertext Transfer Protocol) and HTTPS (Hypertext Transfer Protocol Secure) are two protocols used for web communication. The main difference between them is that HTTPS is a secure protocol that uses encryption to protect the data being transmitted. HTTP is used for non-sensitive data, while HTTPS is used for sensitive data such as login credentials, payment information, etc.",
+        "marking_scheme": [
+          "Explain the difference between HTTP and HTTPS (2 marks)",
+          "List the scenarios where each protocol is used (2 marks)",
+          "Provide an example of a situation where HTTPS is used (1 mark)"
+        ],
+        "topic": "HTTP and HTTPS",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the number of bytes required to store the following IP address: 192.168.1.1",
+        "marks": 5,
+        "answer": "Calculation: The IP address 192.168.1.1 is a 32-bit address. Each octet requires 1 byte. Therefore, the total number of bytes required to store the IP address is 4 bytes.",
+        "marking_scheme": [
+          "Calculate the total number of bytes required (1 mark)"
+        ],
+        "topic": "IP Addresses",
+        "is_numerical": true
+      },
+      {
+        "q": "A website has the following URL: http://www.example.com/path/to/page. Calculate the number of bytes required to store the protocol (http), subdomain (www), domain name (example.com), and path (/path/to/page)",
+        "marks": 5,
+        "answer": "Calculation: The protocol 'http' is 4 bytes. The subdomain 'www' is 3 bytes. The domain name 'example.com' is 11 bytes. The path '/path/to/page' is 17 bytes. Therefore, the total number of bytes required to store the URL is 4 + 3 + 11 + 17 = 35 bytes.",
+        "marking_scheme": [
+          "Calculate the number of bytes required for each component (1 mark)",
+          "Calculate the total number of bytes required (3 marks)"
+        ],
+        "topic": "URLs and Domains",
+        "is_numerical": true
+      },
+      {
+        "q": "A website uses the following HTTP request: POST /path/to/page HTTP/1.1. Calculate the number of bytes required to store the HTTP method (POST) and the path (/path/to/page)",
+        "marks": 5,
+        "answer": "Calculation: The HTTP method 'POST' is 4 bytes. The path '/path/to/page' is 17 bytes. Therefore, the total number of bytes required to store the HTTP request is 4 + 17 = 21 bytes.",
+        "marking_scheme": [
+          "Calculate the number of bytes required for each component (1 mark)",
+          "Calculate the total number of bytes required (4 marks)"
+        ],
+        "topic": "HTTP and FTP",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

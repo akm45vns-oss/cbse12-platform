@@ -1,0 +1,183 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Alternating Current",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:09:05.525Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define RMS value of current and voltage.",
+        "marks": 1,
+        "answer": "The RMS (Root Mean Square) value of current and voltage is the square root of the mean value of the square of the current and voltage.",
+        "key_points": [
+          "RMS value is used to measure AC quantities"
+        ],
+        "topic": "RMS and Average Values"
+      },
+      {
+        "q": "State the advantages of AC over DC.",
+        "marks": 1,
+        "answer": "Advantages of AC over DC are - easier transformation, efficient transmission, and simplicity of design.",
+        "key_points": [
+          "Easier transformation",
+          "Efficient transmission",
+          "Simplicity of design"
+        ],
+        "topic": "Advantages of AC"
+      },
+      {
+        "q": "Explain the concept of frequency and its unit.",
+        "marks": 1,
+        "answer": "Frequency is the number of oscillations or cycles per second of a wave. Its unit is Hertz (Hz).",
+        "key_points": [
+          "Number of oscillations",
+          "Cycles per second",
+          "Unit - Hertz"
+        ],
+        "topic": "Time Period, Frequency and Angular Frequency"
+      },
+      {
+        "q": "Distinguish between AC and DC.",
+        "marks": 1,
+        "answer": "AC is a type of electric current that periodically reverses direction, whereas DC is a type of electric current that flows in one direction only.",
+        "key_points": [
+          "Periodic reversal",
+          "One direction only"
+        ],
+        "topic": "AC and DC"
+      },
+      {
+        "q": "Derive the expression for RMS value of current and voltage.",
+        "marks": 2,
+        "answer": "Let i = I0 sin ωt be the instantaneous value of alternating current. Then, the RMS value is given by I = I0 / √2.",
+        "key_points": [
+          "Instantaneous value",
+          "RMS value expression"
+        ],
+        "topic": "RMS and Average Values"
+      },
+      {
+        "q": "Explain the principle of a transformer.",
+        "marks": 2,
+        "answer": "A transformer is an electrical device that transfers electrical energy from one circuit to another through electromagnetic induction. It consists of two coils: primary and secondary.",
+        "key_points": [
+          "Electromagnetic induction",
+          "Primary and secondary coils"
+        ],
+        "topic": "Transformer"
+      },
+      {
+        "q": "Describe the construction and working of a step-down transformer.",
+        "marks": 3,
+        "answer": "A step-down transformer has a primary coil with a higher number of turns and a secondary coil with a lower number of turns. When an alternating current flows through the primary coil, a magnetic field is produced, inducing a voltage in the secondary coil.",
+        "key_points": [
+          "Primary and secondary coils",
+          "Magnetic field",
+          "Induced voltage"
+        ],
+        "topic": "Transformer"
+      },
+      {
+        "q": "Prove that power in an AC circuit is given by P = VI cos φ.",
+        "marks": 3,
+        "answer": "Let i = I0 sin (ωt - φ) be the instantaneous current in the AC circuit. Then, the instantaneous power is given by p = VI cos φ.",
+        "key_points": [
+          "Instantaneous current",
+          "Instantaneous power expression"
+        ],
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "Explain the concept of impedance and its unit.",
+        "marks": 1,
+        "answer": "Impedance is the total opposition to the flow of an alternating current in a circuit. Its unit is ohm (Ω).",
+        "key_points": [
+          "Total opposition",
+          "Unit - ohm"
+        ],
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "Derive the expression for impedance of an AC circuit.",
+        "marks": 2,
+        "answer": "Let R be the resistance and XL be the inductive reactance in the AC circuit. Then, the impedance is given by Z = √(R2 + XL2).",
+        "key_points": [
+          "Resistance",
+          "Inductive reactance",
+          "Impedance expression"
+        ],
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "Describe the construction and working of a step-up transformer.",
+        "marks": 3,
+        "answer": "A step-up transformer has a primary coil with a lower number of turns and a secondary coil with a higher number of turns. When an alternating current flows through the primary coil, a magnetic field is produced, inducing a voltage in the secondary coil.",
+        "key_points": [
+          "Primary and secondary coils",
+          "Magnetic field",
+          "Induced voltage"
+        ],
+        "topic": "Transformer"
+      },
+      {
+        "q": "Explain the concept of power factor and its significance.",
+        "marks": 2,
+        "answer": "Power factor is the ratio of the average power to the apparent power in an AC circuit. It is an important parameter that indicates the efficiency of the circuit.",
+        "key_points": [
+          "Ratio of average power",
+          "Apparent power",
+          "Significance"
+        ],
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "Determine the power factor of an AC circuit with a resistance of 10 Ω and an inductive reactance of 15 Ω.",
+        "marks": 3,
+        "answer": "The power factor is given by cos φ = R / Z = 10 / √(10^2 + 15^2) = 0.66.",
+        "key_points": [
+          "Resistance",
+          "Inductive reactance",
+          "Power factor expression"
+        ],
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "Explain the working of a wattmeter in an AC circuit.",
+        "marks": 2,
+        "answer": "A wattmeter is an instrument that measures the power consumed by an AC circuit. It consists of a moving coil and a fixed coil, and the deflection of the moving coil is proportional to the power consumed.",
+        "key_points": [
+          "Moving coil",
+          "Fixed coil",
+          "Deflection"
+        ],
+        "topic": "Measurement of Power in AC Circuits"
+      },
+      {
+        "q": "Describe the construction and working of a voltmeter in an AC circuit.",
+        "marks": 3,
+        "answer": "A voltmeter is an instrument that measures the potential difference across an AC circuit. It consists of a moving coil and a fixed coil, and the deflection of the moving coil is proportional to the potential difference.",
+        "key_points": [
+          "Moving coil",
+          "Fixed coil",
+          "Deflection"
+        ],
+        "topic": "Measurement of Power in AC Circuits"
+      },
+      {
+        "q": "Determine the current drawn by a circuit with a resistance of 20 Ω and an impedance of 25 Ω.",
+        "marks": 3,
+        "answer": "The current is given by I = V / Z = E / Z = 10 / 25 = 0.4 A.",
+        "key_points": [
+          "Resistance",
+          "Impedance",
+          "Current expression"
+        ],
+        "topic": "AC Circuits"
+      }
+    ],
+    "total": 16
+  }
+}

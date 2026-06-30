@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Integrals",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:59:30.703Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of indefinite integral and its importance in mathematics. Also, describe the process of finding the indefinite integral of a function.",
+        "marks": 5,
+        "answer": "The indefinite integral of a function f(x) is denoted as ∫f(x)dx and is used to represent the family of all antiderivatives of f(x). It is a fundamental concept in calculus and has numerous applications in various fields such as physics, engineering, and economics.\nThe process of finding the indefinite integral of a function involves various techniques such as substitution method, integration by parts, integration by partial fractions, and integration by trigonometric substitution.",
+        "marking_scheme": [
+          "Describing the concept of indefinite integral (1 mark)",
+          "Importance of indefinite integral in mathematics (1 mark)",
+          "Process of finding the indefinite integral (3 marks)"
+        ],
+        "topic": "Indefinite Integral",
+        "is_numerical": false
+      },
+      {
+        "q": "Find the indefinite integral of the function f(x) = x^2 sin(x) using the appropriate integration technique.",
+        "marks": 5,
+        "answer": "Calculation:\n∫x^2 sin(x)dx = -x^2 cos(x) + 2∫x cos(x)dx\nUsing integration by parts for 2∫x cos(x)dx:\n2∫x cos(x)dx = 2[x sin(x) - ∫sin(x)dx]\n= 2[x sin(x) + cos(x)]\nTherefore, ∫x^2 sin(x)dx = -x^2 cos(x) + 2[x sin(x) + cos(x)]",
+        "marking_scheme": [
+          "Applying integration by parts (2 marks)",
+          "Evaluating the integral (2 marks)",
+          "Correctness of the final answer (1 mark)"
+        ],
+        "topic": "Integration by Parts",
+        "is_numerical": true
+      },
+      {
+        "q": "Find the definite integral of the function f(x) = x^2 sin(x) from x = 0 to x = π.",
+        "marks": 5,
+        "answer": "Calculation:\n∫[0 to π] x^2 sin(x)dx = [-x^2 cos(x) + 2[x sin(x) + cos(x)]] from 0 to π\n= [-π^2 cos(π) + 2[π sin(π) + cos(π)] - (0 + 0)]\n= [π^2 + 2(cos(π) - sin(π))]",
+        "marking_scheme": [
+          "Applying the Fundamental Theorem of Calculus (2 marks)",
+          "Evaluating the limits (2 marks)",
+          "Correctness of the final answer (1 mark)"
+        ],
+        "topic": "Definite Integrals",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the method of substitution for finding the indefinite integral of a function. Also, describe the process of substitution for the function f(x) = (x^2 + 1)/(x + 1).",
+        "marks": 5,
+        "answer": "The method of substitution is a technique used to find the indefinite integral of a function by substituting a variable or expression with a simpler one. This method is particularly useful when the function contains a composite function.\nFor the function f(x) = (x^2 + 1)/(x + 1), we can substitute u = x + 1. Then, du/dx = 1, which implies du = dx.\nThe process of substitution is as follows:\nu = u^2 = (x + 1)^2\n= x^2 + 2x + 1\nSubstituting this into the original function, we get:\n∫[(x^2 + 1)/(x + 1)]dx = ∫(u^2 - 2u + 1)/u du\n",
+        "marking_scheme": [
+          "Describing the method of substitution (1 mark)",
+          "Process of substitution for the given function (3 marks)",
+          "Correctness of the substitution (1 mark)"
+        ],
+        "topic": "Substitution Method",
+        "is_numerical": false
+      },
+      {
+        "q": "Find the indefinite integral of the function f(x) = (2x^2 + 1)/(x + 1) using the method of substitution.",
+        "marks": 5,
+        "answer": "Calculation:\nLet u = x + 1, then du/dx = 1, which implies du = dx.\n∫[(2x^2 + 1)/(x + 1)]dx = ∫[(u^2 - 1) + 2u]/u du\n= ∫(u^2/u - 1/u + 2)\ndu\n= ∫u - 1/u + 2 du\n= (1/2)u^2 - ln(u) + 2u + c\nSubstituting back u = x + 1, we get:\n∫[(2x^2 + 1)/(x + 1)]dx = (1/2)(x + 1)^2 - ln(x + 1) + 2(x + 1) + c",
+        "marking_scheme": [
+          "Applying the method of substitution (2 marks)",
+          "Evaluating the integral (2 marks)",
+          "Correctness of the final answer (1 mark)"
+        ],
+        "topic": "Substitution Method",
+        "is_numerical": true
+      },
+      {
+        "q": "Find the definite integral of the function f(x) = (2x^2 + 1)/(x + 1) from x = 0 to x = 1.",
+        "marks": 5,
+        "answer": "Calculation:\n∫[0 to 1] [(2x^2 + 1)/(x + 1)]dx = [(1/2)(x + 1)^2 - ln(x + 1) + 2(x + 1)] from 0 to 1\n= [(1/2)(1 + 1)^2 - ln(1 + 1) + 2(1 + 1)] - [(1/2)(0 + 1)^2 - ln(0 + 1) + 2(0 + 1)]\n= [1 - ln(2) + 4] - [1/2 - 0 + 2]\n= 1 - ln(2) + 4 - 5/2\n= 3/2 - ln(2)",
+        "marking_scheme": [
+          "Applying the Fundamental Theorem of Calculus (2 marks)",
+          "Evaluating the limits (2 marks)",
+          "Correctness of the final answer (1 mark)"
+        ],
+        "topic": "Definite Integrals",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

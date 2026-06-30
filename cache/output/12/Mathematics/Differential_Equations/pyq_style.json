@@ -1,0 +1,102 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Differential Equations",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:59:33.884Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Solve the differential equation: (dy/dx) + (y/x) = (y/x)^2",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "The given differential equation can be written as (dy/dx) = (y^2/x^2) - (y/x). This is a homogeneous equation. Put y = vx. Then, (dy/dx) = v + x(dv/dx). So, v + x(dv/dx) = (v^2) - v. Thus, x(dv/dx) = (v^2) - 2v. Separating the variables, we get (dv/(v^2 - 2v)) = (dx/x). Integrating both sides, ∫(dv/(v(v-2))) = ∫(dx/x). Using partial fractions, we get ∫((1/2)(dv/v) - (1/2)(dv/(v-2))) = ∫(dx/x). On integrating, we get (1/2)ln|v| - (1/2)ln|v-2| = ln|x| + ln|c|. So, ln|(v/(v-2))| = ln|(x^2*c)|. Thus, (y/x) / ((y/x) - 2) = c*x^2. Hence, y = (2x^3*c)/(1 - x^2*c).",
+        "year_pattern": "2018-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "The general solution of the differential equation (dy/dx) = (x + y) / (x - y) is",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "x^2 - y^2 = c(x - y)",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Solve the differential equation: cos^2(x) * (dy/dx) + y * sin(2x) = 0",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "The given differential equation can be written as (dy/dx) + y*tan(x) = 0. This is a linear equation. The integrating factor is e^(∫tan(x)dx) = e^(-ln|cos(x)|) = (1/cos(x)). Multiplying both sides by the integrating factor, we get d(y*(1/cos(x)))/dx = 0. Integrating both sides, y*(1/cos(x)) = c. Thus, y = c*cos(x).",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "The differential equation representing the family of curves y = (a*x) + (b/x), where a and b are arbitrary constants, is",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "x*(dy/dx) - y = x^2*(d^2y/dx^2)",
+        "year_pattern": "2020-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "The general solution of the differential equation (dy/dx) = (2x - y) / (x + y) is",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "x + y = c*e^(2x)",
+        "year_pattern": "2016-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "State the order and degree of the differential equation: d^2y/dx^2 + (dy/dx)^2 + y = 0",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "Order = 2, Degree = 1",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "The solution of the differential equation dy/dx = (y + x) / (y - x) is",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "y^2 - x^2 = c*(y - x)",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Find the particular solution of the differential equation (dy/dx) = (3x - 2y) / (x + y) given that y = 1 when x = 0",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "The given differential equation is (dy/dx) = (3x - 2y) / (x + y). This is a homogeneous equation. Put y = vx. Then, (dy/dx) = v + x(dv/dx). So, v + x(dv/dx) = (3x - 2vx) / (x + vx). Thus, x(dv/dx) = ((3 - 2v) / (1 + v)) - v. Separating the variables, we get ((1 + v) / (3 - 3v))dv = (dx/x). Integrating both sides, ∫((1 + v) / (3 - 3v))dv = ∫(dx/x). Using partial fractions, we get ∫((1/3)(dv/v) + (2/3)(dv/(1 - v))) = ∫(dx/x). On integrating, we get (1/3)ln|v| - (2/3)ln|1 - v| = ln|x| + ln|c|. So, ln|(v/(1 - v)^2)| = ln|(x^3*c)|. Thus, (y/x) / ((1 - y/x)^2) = c*x^3. Given y = 1 when x = 0. Substituting these values in the equation above, we get (1/0) / ((1 - 1/0)^2) = c*0^3. So, c = 1. Hence, (y/x) / ((1 - y/x)^2) = x^3.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "State the order and degree of the differential equation: y*(d^2y/dx^2) + (dy/dx)^2 = 0",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "Order = 2, Degree = 1",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "The differential equation of the family of curves y = A*cos(x + B) is",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "(y'' + y)^2 = (y')^2",
+        "year_pattern": "2020-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "The general solution of the differential equation (dy/dx) = (y - x) / (y + x) is",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "x + y = c*(y - x)",
+        "year_pattern": "2016-style",
+        "difficulty": "medium"
+      }
+    ],
+    "total": 11
+  }
+}

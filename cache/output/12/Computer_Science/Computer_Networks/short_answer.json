@@ -1,0 +1,166 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Computer Networks",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:33:08.812Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the full form of TCP?",
+        "marks": 1,
+        "answer": "Transmission Control Protocol",
+        "key_points": [],
+        "topic": "Protocols"
+      },
+      {
+        "q": "What is the primary function of a router in a network?",
+        "marks": 1,
+        "answer": "To forward packets between different networks based on their destination IP address.",
+        "key_points": [],
+        "topic": "Network Devices"
+      },
+      {
+        "q": "What is the difference between a hub and a switch in a network?",
+        "marks": 1,
+        "answer": "A hub broadcasts incoming data to all connected devices, while a switch forwards data to the specific device it is intended for.",
+        "key_points": [],
+        "topic": "Network Devices"
+      },
+      {
+        "q": "What is a subnet mask used for?",
+        "marks": 1,
+        "answer": "To divide an IP address into network and host parts.",
+        "key_points": [],
+        "topic": "IP Addressing"
+      },
+      {
+        "q": "What is the purpose of the MAC address in a network?",
+        "marks": 1,
+        "answer": "To uniquely identify a device on a network at the data link layer.",
+        "key_points": [],
+        "topic": "Network Layer"
+      },
+      {
+        "q": "What is the difference between a LAN and a WAN?",
+        "marks": 1,
+        "answer": "A LAN is a small network covering a limited area, while a WAN is a larger network covering a wide geographical area.",
+        "key_points": [],
+        "topic": "Network Types"
+      },
+      {
+        "q": "Explain the concept of packet switching.",
+        "marks": 2,
+        "answer": "Packet switching is a method of transmitting data in small packets, each with its own header containing source and destination addresses, allowing data to be routed efficiently through a network.",
+        "key_points": [
+          "Packet switching involves dividing data into small packets",
+          "Each packet contains source and destination addresses"
+        ],
+        "topic": "Network Fundamentals"
+      },
+      {
+        "q": "Describe the process of IP address assignment in a network.",
+        "marks": 2,
+        "answer": "IP addresses are assigned to devices on a network through a process called Dynamic Host Configuration Protocol (DHCP), which automatically assigns IP addresses from a pool of available addresses.",
+        "key_points": [
+          "IP addresses are assigned using DHCP",
+          "Available IP addresses are drawn from a pool"
+        ],
+        "topic": "IP Addressing"
+      },
+      {
+        "q": "Explain the concept of network latency and its causes.",
+        "marks": 2,
+        "answer": "Network latency refers to the delay in data transmission over a network. Causes of network latency include distance between devices, network congestion, and hardware limitations.",
+        "key_points": [
+          "Network latency refers to delay in data transmission",
+          "Causes include distance, network congestion, and hardware limitations"
+        ],
+        "topic": "Network Fundamentals"
+      },
+      {
+        "q": "Describe the difference between half-duplex and full-duplex communication.",
+        "marks": 2,
+        "answer": "Half-duplex communication allows data to be sent in one direction at a time, while full-duplex communication allows data to be sent in both directions simultaneously.",
+        "key_points": [
+          "Half-duplex communication involves sending data in one direction",
+          "Full-duplex communication involves sending data in both directions"
+        ],
+        "topic": "Data Link Layer"
+      },
+      {
+        "q": "Explain the concept of network topology and its types.",
+        "marks": 3,
+        "answer": "Network topology refers to the physical or logical arrangement of devices on a network. Types of network topology include bus, star, ring, mesh, and wireless topologies.",
+        "key_points": [
+          "Network topology refers to arrangement of devices",
+          "Types include bus, star, ring, mesh, and wireless"
+        ],
+        "topic": "Network Topology"
+      },
+      {
+        "q": "Describe the process of network configuration using static IP addressing.",
+        "marks": 3,
+        "answer": "Static IP addressing involves manually configuring each device on a network with a unique IP address, subnet mask, and default gateway. This process requires careful planning and configuration to prevent IP address conflicts.",
+        "key_points": [
+          "Static IP addressing involves manual configuration",
+          "Requires careful planning and configuration"
+        ],
+        "topic": "IP Addressing"
+      },
+      {
+        "q": "Explain the concept of Quality of Service (QoS) in a network.",
+        "marks": 3,
+        "answer": "Quality of Service (QoS) refers to the ability of a network to guarantee a certain level of performance for critical applications, such as voice or video conferencing. QoS involves prioritizing traffic based on type and quality.",
+        "key_points": [
+          "QoS refers to guaranteeing performance for critical applications",
+          "Involves prioritizing traffic based on type and quality"
+        ],
+        "topic": "Network Fundamentals"
+      },
+      {
+        "q": "Describe the process of network troubleshooting using the OSI model.",
+        "marks": 3,
+        "answer": "Network troubleshooting using the OSI model involves identifying the layer at which the problem is occurring and then isolating the issue to a specific protocol or device. This process helps to efficiently identify and resolve network problems.",
+        "key_points": [
+          "Troubleshooting involves identifying the layer at which the problem occurs",
+          "Involves isolating the issue to a specific protocol or device"
+        ],
+        "topic": "Network Troubleshooting"
+      },
+      {
+        "q": "Explain the concept of network security threats and their types.",
+        "marks": 3,
+        "answer": "Network security threats refer to unauthorized access, modification, or destruction of network data. Types of network security threats include malware, viruses, spyware, and Denial of Service (DoS) attacks.",
+        "key_points": [
+          "Network security threats involve unauthorized access or modification",
+          "Types include malware, viruses, spyware, and DoS attacks"
+        ],
+        "topic": "Network Security"
+      },
+      {
+        "q": "Describe the process of network segmentation using VLANs.",
+        "marks": 3,
+        "answer": "Network segmentation using VLANs involves dividing a large network into smaller, isolated segments to improve security, reduce congestion, and improve network management.",
+        "key_points": [
+          "VLANs involve dividing a large network into smaller segments",
+          "Improves security, reduces congestion, and improves network management"
+        ],
+        "topic": "Network Segmentation"
+      },
+      {
+        "q": "Explain the concept of network virtualization and its benefits.",
+        "marks": 3,
+        "answer": "Network virtualization refers to the creation of virtual networks on top of physical networks. Benefits of network virtualization include improved resource utilization, increased flexibility, and reduced costs.",
+        "key_points": [
+          "Network virtualization involves creating virtual networks on top of physical networks",
+          "Benefits include improved resource utilization, increased flexibility, and reduced costs"
+        ],
+        "topic": "Network Virtualization"
+      }
+    ],
+    "total": 17
+  }
+}

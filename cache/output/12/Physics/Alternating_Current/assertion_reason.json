@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Alternating Current",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:09:02.474Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The current in an AC circuit is not constant and varies sinusoidally with time.",
+        "reason": "Reason (R): An AC source is required to supply power to the AC circuit.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The current in an AC circuit indeed varies sinusoidally with time, and an AC source is required to supply power to the circuit."
+      },
+      {
+        "assertion": "Assertion (A): The frequency of AC is measured in Hertz (Hz).",
+        "reason": "Reason (R): The frequency of AC is the number of oscillations per second.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The frequency of AC is indeed measured in Hertz (Hz), and it represents the number of oscillations per second."
+      },
+      {
+        "assertion": "Assertion (A): The average value of an AC is zero over one complete cycle.",
+        "reason": "Reason (R): The positive and negative half-cycles of an AC cancel each other out.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The average value of an AC is indeed zero over one complete cycle, as the positive and negative half-cycles cancel each other out."
+      },
+      {
+        "assertion": "Assertion (A): The root mean square (RMS) value of an AC is greater than its average value.",
+        "reason": "Reason (R): The RMS value is the square root of the mean of the squares of the AC values over one cycle.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The RMS value of an AC is indeed greater than its average value, and it is calculated as the square root of the mean of the squares of the AC values over one cycle."
+      },
+      {
+        "assertion": "Assertion (A): The phase angle in an AC circuit is the difference between the phase of the voltage and the phase of the current.",
+        "reason": "Reason (R): The phase angle is a measure of the time delay between the voltage and current waveforms.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The phase angle in an AC circuit is indeed the difference between the phase of the voltage and the phase of the current, and it represents the time delay between the voltage and current waveforms."
+      },
+      {
+        "assertion": "Assertion (A): The impedance of an AC circuit is the opposition to the flow of AC.",
+        "reason": "Reason (R): The impedance is a combination of resistance and reactance in the AC circuit.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The impedance of an AC circuit is indeed the opposition to the flow of AC, and it is a combination of resistance and reactance in the circuit."
+      },
+      {
+        "assertion": "Assertion (A): The power factor of an AC circuit is the ratio of the average power to the apparent power.",
+        "reason": "Reason (R): The power factor is a measure of the efficiency of the AC circuit.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The power factor of an AC circuit is indeed the ratio of the average power to the apparent power, and it represents the efficiency of the AC circuit."
+      },
+      {
+        "assertion": "Assertion (A): The power in an AC circuit is given by P = VIcosφ.",
+        "reason": "Reason (R): The formula represents the average power in terms of voltage, current, and power factor.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The power in an AC circuit is indeed given by P = VIcosφ, which represents the average power in terms of voltage, current, and power factor."
+      },
+      {
+        "assertion": "Assertion (A): The reactance of a capacitor is inversely proportional to the frequency of the AC.",
+        "reason": "Reason (R): The reactance of a capacitor is given by Xc = 1/ωC.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The reactance of a capacitor is indeed inversely proportional to the frequency of the AC, and it is given by Xc = 1/ωC."
+      },
+      {
+        "assertion": "Assertion (A): The average power in an AC circuit is given by P = (2/π)VI.",
+        "reason": "Reason (R): The formula represents the average power in terms of voltage and current.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The average power in an AC circuit is not given by P = (2/π)VI, which is incorrect. However, the reason that the formula represents the average power in terms of voltage and current is true."
+      }
+    ],
+    "total": 10
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Probability",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:18:24.808Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Experiment",
+        "definition": "An action or operation which can produce a number of outcomes is called an experiment.",
+        "example": "Tossing a coin is an experiment as it can produce two outcomes: heads or tails."
+      },
+      {
+        "term": "Sample Space",
+        "definition": "The set of all possible outcomes of an experiment is called the sample space.",
+        "example": "When a die is rolled, the sample space is {1, 2, 3, 4, 5, 6}."
+      },
+      {
+        "term": "Event",
+        "definition": "Any subset of the sample space is called an event.",
+        "example": "When a die is rolled, an event could be getting an even number."
+      },
+      {
+        "term": "Simple Event",
+        "definition": "An event containing only one outcome is called a simple event.",
+        "example": "Getting 4 when a die is rolled is a simple event."
+      },
+      {
+        "term": "Compound Event",
+        "definition": "An event containing more than one outcome is called a compound event.",
+        "example": "Getting an even number when a die is rolled is a compound event."
+      },
+      {
+        "term": "Mutually Exclusive Events",
+        "definition": "If two or more events cannot occur together, then they are said to be mutually exclusive events.",
+        "example": "Getting an even number and getting an odd number when a die is rolled are mutually exclusive events."
+      },
+      {
+        "term": "Collectively Exhaustive Events",
+        "definition": "If the sum of probabilities of all possible outcomes of an experiment is 1, then the events are called collectively exhaustive events.",
+        "example": "When a die is rolled, the events of getting 1, 2, 3, 4, 5, or 6 are collectively exhaustive events."
+      },
+      {
+        "term": "Probability of an Event",
+        "definition": "The chance or likelihood of occurrence of an event is called the probability of the event.",
+        "example": "Probability of getting a head when a coin is tossed is 1/2."
+      },
+      {
+        "term": "Random Experiment",
+        "definition": "An experiment in which all possible outcomes are known and the exact outcome cannot be predicted in advance is called a random experiment.",
+        "example": "Tossing a coin is a random experiment."
+      },
+      {
+        "term": "Random Variable",
+        "definition": "A variable which takes a random value is called a random variable.",
+        "example": "The number of heads obtained when a coin is tossed 3 times is a random variable."
+      },
+      {
+        "term": "Probability Distribution",
+        "definition": "A function which gives the probability of occurrence of each value of a random variable is called a probability distribution.",
+        "example": "The probability distribution of the number of heads obtained when a coin is tossed 3 times."
+      },
+      {
+        "term": "Discrete Random Variable",
+        "definition": "A random variable which takes a finite or countably infinite number of values is called a discrete random variable.",
+        "example": "The number of heads obtained when a coin is tossed 3 times is a discrete random variable."
+      },
+      {
+        "term": "Continuous Random Variable",
+        "definition": "A random variable which takes an uncountable number of values is called a continuous random variable.",
+        "example": "The height of a person in a class is a continuous random variable."
+      },
+      {
+        "term": "Probability Density Function (PDF)",
+        "definition": "The function which gives the probability distribution of a continuous random variable is called the probability density function (pdf).",
+        "example": "The probability density function of the height of a person in a class."
+      },
+      {
+        "term": "Cumulative Distribution Function (CDF)",
+        "definition": "The function which gives the probability that the random variable takes a value less than or equal to a given value is called the cumulative distribution function (cdf).",
+        "example": "The cumulative distribution function of the number of heads obtained when a coin is tossed 3 times."
+      },
+      {
+        "term": "Independent Events",
+        "definition": "Two events are said to be independent if the occurrence or non-occurrence of one event does not affect the probability of the occurrence of the other event.",
+        "example": "Tossing a coin and rolling a die are independent events."
+      },
+      {
+        "term": "Dependent Events",
+        "definition": "Two events are said to be dependent if the occurrence or non-occurrence of one event affects the probability of the occurrence of the other event.",
+        "example": "Drawing a card from a pack of cards and then drawing a card from the remaining cards are dependent events."
+      },
+      {
+        "term": "Bernoulli Trials",
+        "definition": "A sequence of independent trials in which each trial has only two possible outcomes is called a Bernoulli trial.",
+        "example": "Tossing a coin 3 times is a Bernoulli trial."
+      }
+    ]
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Queue",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:31:51.738Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a Queue?",
+        "opts": [
+          "(A) A data structure that follows LIFO order",
+          "(B) A linear data structure that follows FIFO order",
+          "(C) A non-linear data structure that stores elements in a tree",
+          "(D) A graph data structure"
+        ],
+        "ans": "B",
+        "explanation": "A queue follows the First-In-First-Out (FIFO) order, meaning the element that is inserted first will be removed first.",
+        "difficulty": "easy",
+        "topic": "Introduction to Queue"
+      },
+      {
+        "q": "What is the time complexity of Enqueue operation in a Queue?",
+        "opts": [
+          "(A) O(log n)",
+          "(B) O(n)",
+          "(C) O(1)",
+          "(D) O(n^2)"
+        ],
+        "ans": "C",
+        "explanation": "The time complexity of Enqueue operation in a Queue is O(1), as it involves simply adding an element to the end of the queue.",
+        "difficulty": "easy",
+        "topic": "Queue Operations"
+      },
+      {
+        "q": "What is the time complexity of Dequeue operation in a Queue?",
+        "opts": [
+          "(A) O(1)",
+          "(B) O(log n)",
+          "(C) O(n)",
+          "(D) O(n^2)"
+        ],
+        "ans": "C",
+        "explanation": "The time complexity of Dequeue operation in a Queue is O(n), as it involves shifting all elements after the removed element to fill the gap.",
+        "difficulty": "easy",
+        "topic": "Queue Operations"
+      },
+      {
+        "q": "What is a Circular Queue?",
+        "opts": [
+          "(A) A queue that is implemented using a linked list",
+          "(B) A queue that is implemented using an array with a fixed size",
+          "(C) A queue that is implemented using an array where the front and rear pointers wrap around to the beginning when they reach the end",
+          "(D) A queue that is implemented using a stack"
+        ],
+        "ans": "C",
+        "explanation": "A Circular Queue is a type of queue where the front and rear pointers wrap around to the beginning when they reach the end, making efficient use of memory.",
+        "difficulty": "medium",
+        "topic": "Types of Queues"
+      },
+      {
+        "q": "What is the advantage of using a Linked List to implement a Queue compared to an Array?",
+        "opts": [
+          "(A) It requires less memory",
+          "(B) It allows for faster insertion and deletion of elements",
+          "(C) It allows for more efficient use of memory when the queue is large",
+          "(D) It is simpler to implement"
+        ],
+        "ans": "B",
+        "explanation": "A Linked List allows for faster insertion and deletion of elements in a Queue compared to an Array, as each element is a separate block of memory that can be easily manipulated.",
+        "difficulty": "medium",
+        "topic": "Queue Implementation"
+      },
+      {
+        "q": "What is the disadvantage of using a Queue to implement a First-In-Last-Out (FILO) data structure?",
+        "opts": [
+          "(A) It requires more memory",
+          "(B) It is slower than a Stack",
+          "(C) It does not support efficient insertion and deletion of elements",
+          "(D) It is not suitable for large datasets"
+        ],
+        "ans": "C",
+        "explanation": "A Queue does not support efficient insertion and deletion of elements from the middle or end, making it less suitable for a First-In-Last-Out (FILO) data structure compared to a Stack.",
+        "difficulty": "medium",
+        "topic": "Queue vs Stack"
+      },
+      {
+        "q": "How is a Queue used in a Printer Queue?",
+        "opts": [
+          "(A) To manage the order in which documents are printed",
+          "(B) To prioritize the printing of certain documents",
+          "(C) To manage the allocation of printers to users",
+          "(D) To monitor the status of the printer"
+        ],
+        "ans": "A",
+        "explanation": "A Queue is used in a Printer Queue to manage the order in which documents are printed, ensuring that the first document to be printed is the first one to be removed from the queue.",
+        "difficulty": "medium",
+        "topic": "Real-World Applications of Queue"
+      },
+      {
+        "q": "What is the time complexity of finding the maximum element in a Queue?",
+        "opts": [
+          "(A) O(1)",
+          "(B) O(log n)",
+          "(C) O(n)",
+          "(D) O(n^2)"
+        ],
+        "ans": "C",
+        "explanation": "The time complexity of finding the maximum element in a Queue is O(n), as it involves scanning the entire queue to find the maximum element.",
+        "difficulty": "hard",
+        "topic": "Queue Operations"
+      },
+      {
+        "q": "What is the space complexity of a Queue implemented using an array of fixed size?",
+        "opts": [
+          "(A) O(1)",
+          "(B) O(log n)",
+          "(C) O(n)",
+          "(D) O(n^2)"
+        ],
+        "ans": "C",
+        "explanation": "The space complexity of a Queue implemented using an array of fixed size is O(n), as the size of the array is fixed and cannot be adjusted based on the number of elements in the queue.",
+        "difficulty": "hard",
+        "topic": "Queue Implementation"
+      },
+      {
+        "q": "What is the time complexity of implementing a Queue using a doubly linked list?",
+        "opts": [
+          "(A) O(1)",
+          "(B) O(log n)",
+          "(C) O(n)",
+          "(D) O(n^2)"
+        ],
+        "ans": "C",
+        "explanation": "The time complexity of implementing a Queue using a doubly linked list is O(n), as it involves updating the front and rear pointers to point to the correct elements in the queue.",
+        "difficulty": "hard",
+        "topic": "Queue Implementation"
+      },
+      {
+        "q": "How is a Queue used in a Job Scheduling System?",
+        "opts": [
+          "(A) To manage the order in which jobs are executed",
+          "(B) To prioritize the execution of certain jobs",
+          "(C) To manage the allocation of resources to jobs",
+          "(D) To monitor the status of jobs"
+        ],
+        "ans": "A",
+        "explanation": "A Queue is used in a Job Scheduling System to manage the order in which jobs are executed, ensuring that the first job to be executed is the first one to be removed from the queue.",
+        "difficulty": "hard",
+        "topic": "Real-World Applications of Queue"
+      },
+      {
+        "q": "What is the advantage of using a Stack to implement a Queue compared to a Queue?",
+        "opts": [
+          "(A) It requires less memory",
+          "(B) It allows for faster insertion and deletion of elements",
+          "(C) It is simpler to implement",
+          "(D) It does not require additional data structures"
+        ],
+        "ans": "D",
+        "explanation": "A Stack does not require additional data structures to implement a Queue, making it a more efficient choice compared to a Queue.",
+        "difficulty": "hard",
+        "topic": "Queue vs Stack"
+      },
+      {
+        "q": "What is the disadvantage of using a Queue to implement a Last-In-First-Out (LIFO) data structure?",
+        "opts": [
+          "(A) It requires more memory",
+          "(B) It is slower than a Stack",
+          "(C) It does not support efficient insertion and deletion of elements",
+          "(D) It is not suitable for large datasets"
+        ],
+        "ans": "C",
+        "explanation": "A Queue does not support efficient insertion and deletion of elements from the middle or end, making it less suitable for a Last-In-First-Out (LIFO) data structure compared to a Stack.",
+        "difficulty": "hard",
+        "topic": "Queue vs Stack"
+      },
+      {
+        "q": "How is a Queue used in a Bank's ATM Queue?",
+        "opts": [
+          "(A) To manage the order in which customers are served",
+          "(B) To prioritize the serving of certain customers",
+          "(C) To manage the allocation of ATMs to customers",
+          "(D) To monitor the status of ATMs"
+        ],
+        "ans": "A",
+        "explanation": "A Queue is used in a Bank's ATM Queue to manage the order in which customers are served, ensuring that the first customer to be served is the first one to be removed from the queue.",
+        "difficulty": "hard",
+        "topic": "Real-World Applications of Queue"
+      },
+      {
+        "q": "What is the time complexity of implementing a Queue using a balanced binary search tree?",
+        "opts": [
+          "(A) O(1)",
+          "(B) O(log n)",
+          "(C) O(n)",
+          "(D) O(n^2)"
+        ],
+        "ans": "C",
+        "explanation": "The time complexity of implementing a Queue using a balanced binary search tree is O(n), as it involves updating the tree to reflect the insertion or deletion of elements in the queue.",
+        "difficulty": "hard",
+        "topic": "Queue Implementation"
+      },
+      {
+        "q": "How is a Queue used in a Network Router?",
+        "opts": [
+          "(A) To manage the order in which packets are transmitted",
+          "(B) To prioritize the transmission of certain packets",
+          "(C) To manage the allocation of network resources to packets",
+          "(D) To monitor the status of network links"
+        ],
+        "ans": "A",
+        "explanation": "A Queue is used in a Network Router to manage the order in which packets are transmitted, ensuring that the first packet to be transmitted is the first one to be removed from the queue.",
+        "difficulty": "hard",
+        "topic": "Real-World Applications of Queue"
+      },
+      {
+        "q": "What is the advantage of using a Queue to implement a First-In-First-Out (FIFO) data structure compared to a Stack?",
+        "opts": [
+          "(A) It requires less memory",
+          "(B) It allows for faster insertion and deletion of elements",
+          "(C) It is simpler to implement",
+          "(D) It does not require additional data structures"
+        ],
+        "ans": "D",
+        "explanation": "A Queue does not require additional data structures to implement a First-In-First-Out (FIFO) data structure, making it a more efficient choice compared to a Stack.",
+        "difficulty": "hard",
+        "topic": "Queue vs Stack"
+      },
+      {
+        "q": "What is the disadvantage of using a Stack to implement a Queue compared to a Queue?",
+        "opts": [
+          "(A) It requires more memory",
+          "(B) It is slower than a Queue",
+          "(C) It does not support efficient insertion and deletion of elements",
+          "(D) It is not suitable for large datasets"
+        ],
+        "ans": "C",
+        "explanation": "A Stack does not support efficient insertion and deletion of elements from the middle or end, making it less suitable for a Queue compared to a Queue.",
+        "difficulty": "hard",
+        "topic": "Queue vs Stack"
+      },
+      {
+        "q": "How is a Queue used in a Production Line?",
+        "opts": [
+          "(A) To manage the order in which products are manufactured",
+          "(B) To prioritize the manufacturing of certain products",
+          "(C) To manage the allocation of resources to products",
+          "(D) To monitor the status of products"
+        ],
+        "ans": "A",
+        "explanation": "A Queue is used in a Production Line to manage the order in which products are manufactured, ensuring that the first product to be manufactured is the first one to be removed from the queue.",
+        "difficulty": "hard",
+        "topic": "Real-World Applications of Queue"
+      },
+      {
+        "q": "What is the time complexity of finding the minimum element in a Queue?",
+        "opts": [
+          "(A) O(1)",
+          "(B) O(log n)",
+          "(C) O(n)",
+          "(D) O(n^2)"
+        ],
+        "ans": "C",
+        "explanation": "The time complexity of finding the minimum element in a Queue is O(n), as it involves scanning the entire queue to find the minimum element.",
+        "difficulty": "hard",
+        "topic": "Queue Operations"
+      }
+    ],
+    "total": 20
+  }
+}

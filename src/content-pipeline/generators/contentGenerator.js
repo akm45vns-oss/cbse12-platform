@@ -8,18 +8,39 @@
  * Uses keyPool for round-robin key selection with health weighting and backoff.
  */
 
+import { AsyncLocalStorage } from "async_hooks";
 import { waitForAvailableKey, acquireKey, releaseSuccess, releaseFailure } from "../keyPool.js";
 
+const als = new AsyncLocalStorage();
+
 const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
-const MODEL        = "llama-3.1-8b-instant";
+
+// Model Pool: Spreads load to avoid rate limits and uses smarter models for fewer validation retries
+const MODELS = [
+  "llama-3.1-8b-instant",
+  "llama-3.3-70b-versatile"
+];
+
 const MIN_DELAY_MS = 500; // minimum gap between requests per key
 
 // ────────────────────────────────────────────────────────────────────
 // GROQ CALL WRAPPER
 // ────────────────────────────────────────────────────────────────────
+const STRICT_RULES = `
+STRICT RULES:
+- Follow the official CBSE syllabus and the selected chapter only.
+- Do NOT include content, definitions, formulas, examples, diagrams, or questions from any other chapter or unit.
+- If a topic is not explicitly part of this chapter, do not include it.
+- Verify every heading belongs to the current chapter before generating.
+- Generate complete, well-structured notes using simple CBSE-level language with proper headings, subheadings, definitions, key points, formulas (if applicable), examples, tables, and important exam points.
+`;
+
 async function callGroq(prompt, maxTokens = 2000) {
   const keyState = await waitForAvailableKey();
   acquireKey(keyState);
+
+  const store = als.getStore();
+  const model = store ? store.model : MODELS[0];
 
   try {
     const res = await fetch(GROQ_API_URL, {
@@ -29,10 +50,13 @@ async function callGroq(prompt, maxTokens = 2000) {
         "Authorization": `Bearer ${keyState.key}`,
       },
       body: JSON.stringify({
-        model: MODEL,
+        model: model,
         max_tokens: maxTokens,
         temperature: 0.65,
-        messages: [{ role: "user", content: prompt }],
+        messages: [
+          { role: "system", content: STRICT_RULES },
+          { role: "user", content: prompt }
+        ],
       }),
     });
 
@@ -71,12 +95,15 @@ function sleep(ms) {
 // ENVELOPE WRAPPER
 // ────────────────────────────────────────────────────────────────────
 function makeEnvelope(classLevel, subject, chapter, contentType, data) {
+  const store = als.getStore();
+  const model = store ? store.model : MODELS[0];
+  
   return {
     class: classLevel,
     subject,
     chapter,
     content_type: contentType,
-    generated_by: `groq/${MODEL}`,
+    generated_by: `groq/${model}`,
     generated_at: new Date().toISOString(),
     version: "1.0",
     data,
@@ -91,69 +118,56 @@ export async function generateDetailedNotes(classLevel, subject, chapter) {
   const prompt = `You are an expert CBSE Class ${classLevel} teacher creating comprehensive study notes.
 Subject: ${subject} | Chapter: ${chapter} | Class: ${classLevel} CBSE
 
-Write detailed, original study notes in markdown format with the following structure:
+Write detailed, original study notes in markdown format mimicking standard high-quality revision materials.
+Use the following structure strictly:
 
-# ${chapter}
-## 📌 Chapter Overview
-[2-3 paragraph introduction explaining what this chapter is about]
+# ${chapter} - DETAILED NOTES
 
-## 🎯 Learning Objectives
-[Bullet list of 5-7 what students will learn]
+## Introduction
+[1-2 paragraph introduction explaining the chapter's significance in real life and chemistry/physics/etc.]
 
-## 🔑 Key Concepts & Definitions
-[Define each important term clearly in your own words]
+## What is [Main Concept]?
+[Define the main overarching concept clearly in your own words with examples and characteristics]
 
-## 📐 Core Theory & Principles
-[Explain the fundamental theories and principles with examples]
+## Components / Sub-topics
+[Break down the chapter into its major sub-topics. For each sub-topic, provide:
+- Definition
+- Characteristics
+- Sub-types (use Markdown tables to classify types where appropriate, e.g., Types of Solutions based on physical states)]
 
-## 🧮 Important Formulas & Laws
-[List all relevant formulas, laws, and equations with explanations]
+## [Core Concept 1]
+[Detailed explanation of the first core concept with examples and rules/laws]
 
-## 🔬 Detailed Explanations
-[In-depth explanation of each major topic with examples]
+## [Core Concept 2]
+[Detailed explanation of the second core concept, etc. Add as many core concepts as necessary.]
 
-## 🖼️ Diagrams & Visual Concepts
-[Describe what diagrams should show; explain any important visual concepts]
+## Ideal and Non-Ideal Scenarios (if applicable)
+[Explain deviations, exceptions, or specific boundary cases like Raoult's Law deviations, Azeotropes, etc.]
 
-## ⭐ Most Important Points (Exam Focus)
-[10-15 bullet points of the most exam-important content]
+## Properties & Applications
+[Detail the properties (e.g. Colligative Properties) and their real-world or industrial applications]
 
-## ❌ Common Mistakes to Avoid
-[5 common misconceptions or errors students make]
+Write original, accurate content aligned to NCERT Class ${classLevel} curriculum. Use professional, clear language, tables, and bullet points.`;
 
-## 💡 Real-World Applications
-[3-5 practical applications of this chapter's concepts]
-
-## 🔁 Quick Revision Summary
-[15-20 bullet points for last-minute revision]
-
-Write original, accurate content aligned to NCERT Class ${classLevel} curriculum. Use proper terminology.`;
-
-  const text = await callGroq(prompt, 3500);
+  const text = await callGroq(prompt, 4000);
   return makeEnvelope(classLevel, subject, chapter, "detailed_notes", { markdown: text });
 }
 
 export async function generateShortNotes(classLevel, subject, chapter) {
   const prompt = `Create concise revision notes for CBSE Class ${classLevel} ${subject} — ${chapter}.
 
-Format as markdown:
-# ${chapter} — Quick Revision Notes
+Format strictly as markdown with bullet points only:
+# 3. SHORT NOTES (QUICK REVISION)
 
-## ⚡ Key Points
-[15-20 crisp bullet points covering the entire chapter]
+[Provide 15-25 highly condensed, crisp bullet points summarizing the entire chapter sequentially. 
+Follow this format for each point:
+- **Term/Concept:** Brief, to-the-point explanation (e.g., "Solution: Homogeneous mixture of solute + solvent.").
+- Include essential laws, definitions, types, and properties.
+- Do NOT add long paragraphs. Every point should be a single bullet.]
 
-## 🔑 Must-Know Definitions
-[5-8 most important terms with one-line definitions]
+Keep it extremely concise, scannable, and complete. Target 400-600 words.`;
 
-## 📊 Important Formulas
-[All essential formulas — one per line with labels]
-
-## ⭐ Exam Tips
-[5 tips specific to this chapter for board exams]
-
-Keep it concise, scannable, and complete. Target 400-600 words.`;
-
-  const text = await callGroq(prompt, 1200);
+  const text = await callGroq(prompt, 1500);
   return makeEnvelope(classLevel, subject, chapter, "short_notes", { markdown: text });
 }
 
@@ -189,15 +203,15 @@ export async function generateFormulaSheet(classLevel, subject, chapter) {
 Format as JSON array:
 [
   {
-    "name": "Formula/Law Name",
-    "formula": "Mathematical expression or statement",
-    "variables": "What each variable/symbol means",
+    "name": "Formula Name (e.g., 1. Mass Percentage)",
+    "formula": "Mathematical expression exactly as written in textbooks (e.g., % w/w = (Mass of Solute / Total Mass of Solution) × 100)",
+    "variables": "What each variable means, keeping it brief",
     "units": "SI units if applicable",
-    "notes": "When to use this formula / important conditions"
+    "notes": "When to use this formula (e.g., [for dilute sol.])"
   }
 ]
 
-Include ALL relevant formulas. If the chapter has no mathematical formulas, include key statements/laws in the same format using 'formula' for the statement. Return ONLY valid JSON.`;
+Focus on the most crucial formulas formatted for quick numerical solving. Include ALL relevant formulas (at least 7-10 if available). If the chapter has no mathematical formulas, include key statements/laws in the same format. Return ONLY valid JSON array.`;
 
   const text = await callGroq(prompt, 1200);
   let formulas;
@@ -212,19 +226,18 @@ Include ALL relevant formulas. If the chapter has no mathematical formulas, incl
 }
 
 export async function generateImportantConcepts(classLevel, subject, chapter) {
-  const prompt = `List the most important concepts for CBSE Class ${classLevel} ${subject} — ${chapter}.
+  const prompt = `Create an Exam Booster / Important Points section for CBSE Class ${classLevel} ${subject} — ${chapter}.
 
 Format as JSON array:
 [
   {
-    "concept": "Concept Name",
-    "explanation": "Clear explanation in 2-4 sentences",
-    "importance": "Why this is important for exams / real life",
-    "related_topics": ["related topic 1", "related topic 2"]
+    "category": "One of: 'Most Important Fact', 'NCERT Line', 'Board Favourite', 'Memory Trick', 'Common Mistake', 'Units to remember'",
+    "title": "Short title or topic name",
+    "description": "Detailed explanation based on the category. For memory tricks, provide mnemonics. For common mistakes, explain what students usually do wrong and how to fix it."
   }
 ]
 
-List 10-15 most important concepts. Return ONLY valid JSON.`;
+List at least 6-8 items covering the most critical exam pointers. Return ONLY valid JSON array.`;
 
   const text = await callGroq(prompt, 2000);
   let concepts;
@@ -234,7 +247,7 @@ List 10-15 most important concepts. Return ONLY valid JSON.`;
     const end = cleaned.lastIndexOf("]");
     concepts = JSON.parse(cleaned.substring(start, end + 1));
   } catch {
-    concepts = [{ concept: "Content", explanation: text, importance: "", related_topics: [] }];
+    concepts = [{ category: "Error", title: "Content", description: text }];
   }
   return makeEnvelope(classLevel, subject, chapter, "important_concepts", { concepts });
 }
@@ -242,25 +255,25 @@ List 10-15 most important concepts. Return ONLY valid JSON.`;
 export async function generateNcertSummary(classLevel, subject, chapter) {
   const prompt = `Write a comprehensive NCERT-aligned summary for Class ${classLevel} ${subject} — ${chapter}.
 
-Format as markdown:
+Format as markdown mimicking 'One Page Revision Sheet' and 'Chapter Overview':
 # NCERT Summary: ${chapter}
 
-## Chapter at a Glance
-[3-4 sentence overview of the entire chapter]
+## What is the chapter about?
+[Brief 3-4 sentence overview of the entire chapter]
 
-## Section-wise Summary
-[Summarise each major section/topic as it appears in NCERT, using NCERT terminology]
+## Why is it important?
+[Real-life applications and importance of studying this chapter]
 
-## Important NCERT Exercises Insight
-[Key concepts tested in NCERT exercises and what to remember]
+## Weightage in CBSE Board
+[Typical marks weightage and frequently asked topics from this chapter]
 
-## NCERT Exemplar Focus
-[Additional topics covered in NCERT Exemplar for this chapter]
+## Common mistakes students make
+[3-4 bullet points on what students usually confuse or forget]
 
-## Board Exam Relevance
-[Marks weightage and frequently asked topics from this chapter]
+## The Essentials (One Page Revision)
+[Provide 5-7 bold bullet points summarizing the absolute core essentials, e.g. "Solution: Homogeneous mixture.", "Raoult's Law: ...", "Van't Hoff (i): ..."]
 
-Use accurate NCERT terminology. Write 500-700 words.`;
+Use accurate NCERT terminology. Write 400-600 words.`;
 
   const text = await callGroq(prompt, 1400);
   return makeEnvelope(classLevel, subject, chapter, "ncert_summary", { markdown: text });
@@ -387,21 +400,21 @@ Return ONLY valid JSON array with exactly 2 case objects (5 questions each).`;
 }
 
 export async function generateShortAnswer(classLevel, subject, chapter) {
-  const prompt = `Generate exactly 10 Short Answer Questions (2-3 marks each) for CBSE Class ${classLevel} ${subject} — ${chapter}.
+  const prompt = `Generate exactly 15 NCERT Based Important Questions (mix of 1, 2, and 3 marks) for CBSE Class ${classLevel} ${subject} — ${chapter}.
 
 Format as JSON array:
 [
   {
-    "q": "Question text",
-    "marks": 2,
-    "answer": "Model answer in 3-5 sentences using proper NCERT terminology",
-    "key_points": ["Point 1", "Point 2", "Point 3"],
+    "q": "Question text (e.g., Define mole fraction, State Raoult's law, etc.)",
+    "marks": 1,
+    "answer": "Model answer in 1-4 sentences using proper NCERT terminology",
+    "key_points": ["Point 1", "Point 2"],
     "topic": "Sub-topic"
   }
 ]
 
-Cover all major topics. Answers should be concise but complete.
-Return ONLY valid JSON array with exactly 10 questions.`;
+Generate exactly 5 questions of 1 Mark, 5 questions of 2 Marks, and 5 questions of 3 Marks.
+Cover all major topics. Answers should be concise but complete. Return ONLY valid JSON array with exactly 15 questions.`;
 
   const text = await callGroq(prompt, 2000);
   let questions;
@@ -416,24 +429,25 @@ Return ONLY valid JSON array with exactly 10 questions.`;
 }
 
 export async function generateLongAnswer(classLevel, subject, chapter) {
-  const prompt = `Generate exactly 5 Long Answer Questions (5 marks each) for CBSE Class ${classLevel} ${subject} — ${chapter}.
+  const prompt = `Generate exactly 6 questions consisting of 3 Long Answer Questions (5 marks) and 3 Solved Numericals for CBSE Class ${classLevel} ${subject} — ${chapter}.
 
 Format as JSON array:
 [
   {
-    "q": "Question text (often multi-part: a, b, c)",
+    "q": "Question text (often multi-part for theory, or numerical problem)",
     "marks": 5,
-    "answer": "Detailed model answer covering all aspects (150-250 words)",
+    "answer": "Detailed model answer covering all aspects OR step-by-step calculation.",
     "marking_scheme": [
-      "Point 1 worth X mark(s)",
-      "Point 2 worth X mark(s)"
+      "Point 1 worth X mark(s)"
     ],
-    "topic": "Sub-topic"
+    "topic": "Sub-topic",
+    "is_numerical": true
   }
 ]
 
+For numericals, the 'answer' must include a 'Calculation:' block showing step-by-step formula application.
 Questions should be comprehensive and cover important board-exam topics.
-Return ONLY valid JSON array with exactly 5 questions.`;
+Return ONLY valid JSON array with exactly 6 questions.`;
 
   const text = await callGroq(prompt, 3500);
   let questions;
@@ -600,5 +614,9 @@ export const GENERATORS = {
 export async function generateContent(classLevel, subject, chapter, contentType) {
   const generator = GENERATORS[contentType];
   if (!generator) throw new Error(`Unknown content type: ${contentType}`);
-  return generator(classLevel, subject, chapter);
+  
+  const selectedModel = MODELS[Math.floor(Math.random() * MODELS.length)];
+  return als.run({ model: selectedModel }, () => {
+    return generator(classLevel, subject, chapter);
+  });
 }

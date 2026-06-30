@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Biomolecules",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:05:28.308Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Molecular Weight of Monosaccharides",
+        "formula": "(2 × Atomic Mass of C) + (16 × Atomic Mass of O) + (Atomic Mass of H)",
+        "variables": "Atomic Mass of C, Atomic Mass of O, Atomic Mass of H",
+        "units": "g/mol",
+        "notes": ""
+      },
+      {
+        "name": "Molecular Weight of Amino Acids",
+        "formula": "(C × Atomic Mass of C) + (H × Atomic Mass of H) + (O × Atomic Mass of O) + (N × Atomic Mass of N)",
+        "variables": "Atomic Mass of C, Atomic Mass of H, Atomic Mass of O, Atomic Mass of N",
+        "units": "g/mol",
+        "notes": ""
+      },
+      {
+        "name": "Molecular Weight of Nucleotides",
+        "formula": "(C × Atomic Mass of C) + (H × Atomic Mass of H) + (O × Atomic Mass of O) + (N × Atomic Mass of N) + (P × Atomic Mass of P) + (O × Atomic Mass of O)",
+        "variables": "Atomic Mass of C, Atomic Mass of H, Atomic Mass of O, Atomic Mass of N, Atomic Mass of P",
+        "units": "g/mol",
+        "notes": ""
+      },
+      {
+        "name": "Mass Percentage of Solute",
+        "formula": "% w/w = (Mass of Solute / Total Mass of Solution) × 100",
+        "variables": "Mass of Solute, Total Mass of Solution",
+        "units": "%",
+        "notes": ""
+      },
+      {
+        "name": "Percentage Composition of a Biomolecule",
+        "formula": "% Composition = (Mass of Component / Molecular Weight of Biomolecule) × 100",
+        "variables": "Mass of Component, Molecular Weight of Biomolecule",
+        "units": "%",
+        "notes": ""
+      },
+      {
+        "name": "Specific Rotation of a Compound",
+        "formula": "[α] = (Observed Rotation / Path Length in cm) × (100 / Concentration in g/ml)",
+        "variables": "Observed Rotation, Path Length in cm, Concentration in g/ml",
+        "units": "°",
+        "notes": "Used to determine the optical purity of a compound"
+      },
+      {
+        "name": "Gibbs Free Energy Change for a Reaction",
+        "formula": "ΔG = ΔH - TΔS",
+        "variables": "ΔH, T, ΔS",
+        "units": "J/mol",
+        "notes": "Used to determine the spontaneity of a reaction"
+      }
+    ]
+  }
+}

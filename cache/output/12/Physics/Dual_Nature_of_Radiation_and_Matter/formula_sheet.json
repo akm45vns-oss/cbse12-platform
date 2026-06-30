@@ -1,0 +1,55 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:01:20.893Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Wave-particle duality",
+        "formula": "Wave-like behavior: λ = h/p; Particle-like behavior: λ = h/mv",
+        "variables": "λ = wavelength, h = Planck's constant, p = momentum, m = mass, v = velocity",
+        "units": "m, J s, kg m/s, kg, m/s",
+        "notes": "Expresses the dual nature of radiation and matter."
+      },
+      {
+        "name": "De Broglie Wavelength",
+        "formula": "λ = h/p",
+        "variables": "λ = wavelength, h = Planck's constant, p = momentum",
+        "units": "m, J s, kg m/s",
+        "notes": "Calculates the wavelength of a particle."
+      },
+      {
+        "name": "Uncertainty Principle",
+        "formula": "ΔxΔp ≥ h/4π",
+        "variables": "Δx = uncertainty in position, Δp = uncertainty in momentum, h = Planck's constant",
+        "units": "m, kg m/s, J s",
+        "notes": "States that it's impossible to know both position and momentum of a particle simultaneously."
+      },
+      {
+        "name": "Compton Scattering",
+        "formula": "Δλ = λ' - λ = h/mc(1 - cosθ)",
+        "variables": "Δλ = change in wavelength, λ' = scattered wavelength, λ = incident wavelength, h = Planck's constant, m = electron mass, c = speed of light, θ = scattering angle",
+        "units": "m, J s, kg, m/s, rad",
+        "notes": "Calculates the change in wavelength of a photon after Compton scattering."
+      },
+      {
+        "name": "Einstein's Photoelectric Equation",
+        "formula": "K = hv - φ",
+        "variables": "K = maximum kinetic energy, h = Planck's constant, v = frequency of incident light, φ = work function of the material",
+        "units": "J, J s, Hz, J",
+        "notes": "Describes the relationship between the energy of incident light and the kinetic energy of emitted electrons."
+      },
+      {
+        "name": "Photoelectric Effect",
+        "formula": "K = hf - φ",
+        "variables": "K = maximum kinetic energy, h = Planck's constant, f = frequency of incident light, φ = work function of the material",
+        "units": "J, J s, Hz, J",
+        "notes": "States that the energy of emitted electrons depends on the frequency of incident light."
+      }
+    ]
+  }
+}

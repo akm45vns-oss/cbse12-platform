@@ -1,0 +1,122 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Queue",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:31:51.218Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "A queue is a First-In-First-Out (FIFO) data structure.",
+        "reason": "A queue follows the FIFO principle, where the first element that is added to the queue will be the first one to be removed.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion states that a queue is a FIFO data structure, and the reason explains why, making option (A) the correct choice."
+      },
+      {
+        "assertion": "A queue is a Linear Data Structure.",
+        "reason": "A queue is a collection of elements in which each element is a node, and nodes are arranged in a sequence, making it a linear data structure.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion states that a queue is a Linear Data Structure, and the reason supports this statement, making option (A) the correct choice."
+      },
+      {
+        "assertion": "Dequeue operation in a queue is an O(1) operation.",
+        "reason": "Dequeue operation in a queue requires removing the front element, which is a constant time operation, making it an O(1) operation.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion states that dequeue operation is an O(1) operation, and the reason explains why, making option (A) the correct choice."
+      },
+      {
+        "assertion": "Enqueue operation in a queue is an O(n) operation.",
+        "reason": "Enqueue operation in a queue requires adding an element at the end, which may require shifting all elements, making it an O(n) operation.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion states that enqueue operation is an O(n) operation, and the reason supports this statement, making option (A) the correct choice."
+      },
+      {
+        "assertion": "Queue is suitable for job scheduling.",
+        "reason": "Queue is suitable for job scheduling because it follows the FIFO principle, which ensures that jobs are executed in the order they are received.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion states that queue is suitable for job scheduling, and the reason explains why, making option (A) the correct choice."
+      },
+      {
+        "assertion": "Queue is not a data structure that supports random access.",
+        "reason": "Queue is a linear data structure that follows the FIFO principle, which does not support random access to elements.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion states that queue is not a data structure that supports random access, and the reason explains why, making option (A) the correct choice."
+      },
+      {
+        "assertion": "Enqueue and Dequeue operations are O(1) operations in an array-based queue.",
+        "reason": "Enqueue and Dequeue operations in an array-based queue are O(1) operations if the queue is not full or empty, respectively.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion states that enqueue and dequeue operations are O(1) operations in an array-based queue, and the reason supports this statement, making option (A) the correct choice."
+      },
+      {
+        "assertion": "A queue can be implemented using a linked list.",
+        "reason": "A queue can be implemented using a linked list where each node represents an element in the queue and pointers are used to connect nodes in a sequence.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion states that a queue can be implemented using a linked list, and the reason explains how, making option (A) the correct choice."
+      },
+      {
+        "assertion": "Queue is a data structure that supports insertion and deletion at both ends.",
+        "reason": "Queue is a data structure that supports insertion (enqueue) at the rear end and deletion (dequeue) at the front end.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion states that queue is a data structure that supports insertion and deletion at both ends, and the reason explains why, making option (A) the correct choice."
+      }
+    ],
+    "total": 9
+  }
+}

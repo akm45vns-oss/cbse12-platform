@@ -1,0 +1,183 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Stack",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:31:52.408Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a stack?",
+        "marks": 1,
+        "answer": "A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle, where elements are added and removed from the top.",
+        "key_points": [
+          "LIFO principle",
+          "Top element removal"
+        ],
+        "topic": "Introduction to Stack"
+      },
+      {
+        "q": "State the operations that can be performed on a stack.",
+        "marks": 1,
+        "answer": "The operations that can be performed on a stack are: push, pop, peek, isEmpty, and isFull.",
+        "key_points": [
+          "Push operation",
+          "Pop operation",
+          "Peek operation"
+        ],
+        "topic": "Operations on Stack"
+      },
+      {
+        "q": "What is the time complexity of push and pop operations in a stack?",
+        "marks": 1,
+        "answer": "The time complexity of both push and pop operations in a stack is O(1), making it an efficient data structure.",
+        "key_points": [
+          "Time complexity",
+          "Efficiency"
+        ],
+        "topic": "Time Complexity of Operations"
+      },
+      {
+        "q": "How is a stack implemented in memory?",
+        "marks": 1,
+        "answer": "A stack is implemented in memory as an array, where elements are added and removed from the top index.",
+        "key_points": [
+          "Array implementation",
+          "Top index"
+        ],
+        "topic": "Implementation of Stack"
+      },
+      {
+        "q": "What is the difference between a stack and a queue?",
+        "marks": 1,
+        "answer": "A stack follows LIFO while a queue follows First-In-First-Out (FIFO) principle.",
+        "key_points": [
+          "LIFO principle",
+          "FIFO principle"
+        ],
+        "topic": "Comparison of Stack and Queue"
+      },
+      {
+        "q": "Explain the concept of top element in a stack.",
+        "marks": 1,
+        "answer": "The top element in a stack is the most recently added element, which is removed first when the pop operation is performed.",
+        "key_points": [
+          "Top element",
+          "Last-In-First-Out principle"
+        ],
+        "topic": "Top Element in Stack"
+      },
+      {
+        "q": "State the advantage of using a stack over a linked list.",
+        "marks": 2,
+        "answer": "The advantage of using a stack over a linked list is that it has a constant time complexity for push and pop operations, making it more efficient. Additionally, a stack is easier to implement and manage than a linked list.",
+        "key_points": [
+          "Efficiency",
+          "Implementation simplicity"
+        ],
+        "topic": "Advantages of Stack"
+      },
+      {
+        "q": "Describe the process of implementing a stack using an array.",
+        "marks": 2,
+        "answer": "To implement a stack using an array, we need to define the size of the array, initialize it with a specified size, and then perform push and pop operations. The top element is represented by the index of the last element added to the array. When the array is full, the isFull function returns true, and when it is empty, the isEmpty function returns true.",
+        "key_points": [
+          "Array size",
+          "Top index",
+          "isFull and isEmpty functions"
+        ],
+        "topic": "Implementation of Stack using Array"
+      },
+      {
+        "q": "Explain the concept of stack overflow and stack underflow.",
+        "marks": 2,
+        "answer": "A stack overflow occurs when the stack is full and we try to push a new element onto it. A stack underflow occurs when the stack is empty and we try to pop an element from it. Both these scenarios are invalid and can lead to errors in the program.",
+        "key_points": [
+          "Stack overflow",
+          "Stack underflow",
+          "Invalid scenarios"
+        ],
+        "topic": "Stack Overflow and Stack Underflow"
+      },
+      {
+        "q": "State the time and space complexities of a stack.",
+        "marks": 2,
+        "answer": "The time complexity of a stack is O(1) for push and pop operations, while the space complexity is O(n), where n is the size of the stack.",
+        "key_points": [
+          "Time complexity",
+          "Space complexity"
+        ],
+        "topic": "Time and Space Complexities of Stack"
+      },
+      {
+        "q": "Discuss the applications of stacks in real-world scenarios.",
+        "marks": 3,
+        "answer": "Stacks have numerous applications in real-world scenarios, including parsing expressions, evaluating postfix notation, implementing recursive algorithms, managing system calls, and parsing HTML and XML documents. They are also used in compiler design, database systems, and network protocols.",
+        "key_points": [
+          "Parsing expressions",
+          "Recursive algorithms",
+          "System calls",
+          "Compiler design"
+        ],
+        "topic": "Applications of Stack"
+      },
+      {
+        "q": "Explain how stacks can be used to implement recursive algorithms iteratively.",
+        "marks": 3,
+        "answer": "Stacks can be used to implement recursive algorithms iteratively by simulating the call stack. The recursive function is called with the initial parameters and the stack is used to store the function calls. The function calls are then processed iteratively using a loop, and the stack is used to store the return addresses and parameters.",
+        "key_points": [
+          "Recursive algorithms",
+          "Call stack",
+          "Iterative processing"
+        ],
+        "topic": "Implementing Recursive Algorithms using Stack"
+      },
+      {
+        "q": "Describe the implementation of a stack using a linked list.",
+        "marks": 3,
+        "answer": "To implement a stack using a linked list, we need to define a Node class to represent each element in the list. The Node class contains a data field to store the element's value and a next pointer to reference the next Node in the list. The stack class contains a top pointer to reference the top element in the list. Push and pop operations are performed by updating the top pointer and the next pointer of the Node class.",
+        "key_points": [
+          "Node class",
+          "Linked list",
+          "Push and pop operations"
+        ],
+        "topic": "Implementation of Stack using Linked List"
+      },
+      {
+        "q": "Explain how stacks can be used to parse expressions in postfix notation.",
+        "marks": 3,
+        "answer": "Stacks can be used to parse expressions in postfix notation by evaluating the expression from left to right. The operator is pushed onto the stack when it is encountered, and the operands are popped from the stack and evaluated when an operator is encountered. The final result is the value of the expression.",
+        "key_points": [
+          "Postfix notation",
+          "Operator and operand evaluation"
+        ],
+        "topic": "Parsing Expressions using Stack"
+      },
+      {
+        "q": "State the advantages and disadvantages of using a stack over a queue.",
+        "marks": 3,
+        "answer": "The advantages of using a stack over a queue are that it has a constant time complexity for push and pop operations, and it is easier to implement and manage than a queue. The disadvantages of using a stack over a queue are that it follows a Last-In-First-Out principle, which may not be suitable for all applications, and it may lead to stack overflow and underflow errors.",
+        "key_points": [
+          "Advantages and disadvantages",
+          "LIFO principle",
+          "Stack overflow and underflow"
+        ],
+        "topic": "Comparison of Stack and Queue"
+      },
+      {
+        "q": "Describe the implementation of a stack using a circular array.",
+        "marks": 3,
+        "answer": "To implement a stack using a circular array, we need to define the size of the array and initialize it with a specified size. The top element is represented by the index of the last element added to the array. The isFull and isEmpty functions are used to check if the array is full or empty. Push and pop operations are performed by updating the top index and the array elements.",
+        "key_points": [
+          "Circular array",
+          "Top index",
+          "isFull and isEmpty functions"
+        ],
+        "topic": "Implementation of Stack using Circular Array"
+      }
+    ],
+    "total": 16
+  }
+}

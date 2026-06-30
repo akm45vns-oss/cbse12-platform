@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Integrals",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:28:27.363Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The sales of a company increase exponentially with time. The initial sales are Rs. 1000 and after 5 years, the sales are Rs. 10,000. Assuming the rate of increase is constant, find the rate at which the sales are increasing after 2 years.",
+        "questions": [
+          {
+            "q": "Find the rate of increase of sales after 2 years.",
+            "opts": [
+              "(A) Rs. 500",
+              "(B) Rs. 1000",
+              "(C) Rs. 2000",
+              "(D) Rs. 3000"
+            ],
+            "ans": "B",
+            "explanation": "Let the rate of increase be k. Then we have, 1000e^(5k) = 10000. Solving for k, we get k = 0.5. After 2 years, sales will increase at a rate of 1000e^(2*0.5) = Rs. 1000."
+          },
+          {
+            "q": "Find the total sales after 5 years.",
+            "opts": [
+              "(A) Rs. 10000",
+              "(B) Rs. 20000",
+              "(C) Rs. 50000",
+              "(D) Rs. 100000"
+            ],
+            "ans": "A",
+            "explanation": "We already know that sales after 5 years are Rs. 10000."
+          },
+          {
+            "q": "Find the rate of increase of sales after 1 year.",
+            "opts": [
+              "(A) Rs. 500",
+              "(B) Rs. 1000",
+              "(C) Rs. 2000",
+              "(D) Rs. 3000"
+            ],
+            "ans": "B",
+            "explanation": "After 1 year, sales will increase at a rate of 1000e^(1*0.5) = Rs. 1000."
+          },
+          {
+            "q": "Find the sales after 3 years.",
+            "opts": [
+              "(A) Rs. 5000",
+              "(B) Rs. 7500",
+              "(C) Rs. 10000",
+              "(D) Rs. 12500"
+            ],
+            "ans": "C",
+            "explanation": "We know that sales after 5 years are Rs. 10000. Therefore, after 3 years, sales will be 10000/2^2 = Rs. 10000/4 = Rs. 2500."
+          },
+          {
+            "q": "Find the time taken for sales to increase from Rs. 1000 to Rs. 10000.",
+            "opts": [
+              "(A) 3 years",
+              "(B) 5 years",
+              "(C) 7 years",
+              "(D) 9 years"
+            ],
+            "ans": "B",
+            "explanation": "We know that sales after 5 years are Rs. 10000. Therefore, it will take 5 years for sales to increase from Rs. 1000 to Rs. 10000."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A population of a city is growing at a rate of 5% per annum. Find the population after 2 years, given that the initial population is 1000.",
+        "questions": [
+          {
+            "q": "Find the population after 2 years.",
+            "opts": [
+              "(A) 1080",
+              "(B) 1100",
+              "(C) 1120",
+              "(D) 1140"
+            ],
+            "ans": "C",
+            "explanation": "We know that population is growing at a rate of 5% per annum. Therefore, after 2 years, population will be 1000 * (1 + 0.05)^2 = 1080."
+          },
+          {
+            "q": "Find the rate of growth of population after 2 years.",
+            "opts": [
+              "(A) 5%",
+              "(B) 10%",
+              "(C) 15%",
+              "(D) 20%"
+            ],
+            "ans": "C",
+            "explanation": "After 2 years, population will be 1000 * (1 + 0.05)^2 = 1120. Therefore, the rate of growth of population after 2 years is (1120 - 1000)/1000 * 100 = 12%. But we know that the rate of growth is 5% per annum. Therefore, the rate of growth of population after 2 years is actually 5% * 2 = 10%. But the question asks for the rate of growth after 2 years, not the rate of growth per annum. The rate of growth after 2 years is the rate of growth after the 2nd year, not the average rate of growth over the 2 years. Therefore, the rate of growth of population after 2 years is actually 12%."
+          },
+          {
+            "q": "Find the population after 5 years.",
+            "opts": [
+              "(A) 1244",
+              "(B) 1260",
+              "(C) 1280",
+              "(D) 1300"
+            ],
+            "ans": "C",
+            "explanation": "We know that population is growing at a rate of 5% per annum. Therefore, after 5 years, population will be 1000 * (1 + 0.05)^5 = 1280."
+          },
+          {
+            "q": "Find the rate of growth of population after 1 year.",
+            "opts": [
+              "(A) 5%",
+              "(B) 10%",
+              "(C) 15%",
+              "(D) 20%"
+            ],
+            "ans": "A",
+            "explanation": "After 1 year, population will be 1000 * (1 + 0.05) = 1050. Therefore, the rate of growth of population after 1 year is (1050 - 1000)/1000 * 100 = 5%."
+          },
+          {
+            "q": "Find the time taken for population to increase from 1000 to 1200.",
+            "opts": [
+              "(A) 1 year",
+              "(B) 2 years",
+              "(C) 3 years",
+              "(D) 4 years"
+            ],
+            "ans": "B",
+            "explanation": "We know that population is growing at a rate of 5% per annum. Therefore, we can write the population after n years as 1000 * (1 + 0.05)^n. We know that population after n years is 1200. Therefore, we can write the equation 1000 * (1 + 0.05)^n = 1200. Solving for n, we get n = 2."
+          }
+        ]
+      }
+    ]
+  }
+}

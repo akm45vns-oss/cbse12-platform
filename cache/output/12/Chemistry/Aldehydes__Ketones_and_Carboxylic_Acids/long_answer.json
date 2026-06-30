@@ -1,0 +1,92 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:51:11.223Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What are the main differences between aldehydes and ketones in terms of their structure, physical properties, and chemical reactions? Give examples to illustrate your answer.",
+        "marks": 5,
+        "answer": "Aldehydes and ketones are both carbonyl compounds, but they differ in their structure and properties. Aldehydes have a carbonyl group at the end of a carbon chain, while ketones have a carbonyl group within the carbon chain. Aldehydes are generally more reactive than ketones due to the presence of a hydrogen atom attached to the carbonyl group, which makes them more susceptible to nucleophilic attack. For example, aldehydes can undergo nucleophilic addition reactions with water, alcohols, and amines, while ketones do not. Additionally, aldehydes can be oxidized to carboxylic acids, while ketones cannot.",
+        "marking_scheme": [
+          "Definition and explanation of aldehydes and ketones (1 mark)",
+          "Comparison of physical properties (1 mark)",
+          "Comparison of chemical reactions (2 marks)",
+          "Examples to illustrate the differences (1 mark)"
+        ],
+        "topic": "Introduction to Aldehydes and Ketones",
+        "is_numerical": false
+      },
+      {
+        "q": "A 0.5 mol sample of acetaldehyde (CH3CHO) is allowed to react with 0.5 mol of sodium hydroxide (NaOH) in a reaction mixture. Calculate the amount of ethanol (CH3CH2OH) produced if the reaction goes to completion. Assume that the reaction is: CH3CHO + NaOH → CH3CH2OH + NaOCH.",
+        "marks": 5,
+        "answer": "Calculation: The balanced equation for the reaction is CH3CHO + 2NaOH → CH3CH2OH + NaOCH + NaOH. However, since the question gives the equation as CH3CHO + NaOH → CH3CH2OH + NaOCH, we will proceed with that. The reaction is a 1:1 ratio between acetaldehyde and sodium hydroxide. Since both reactants are present in equal amounts (0.5 mol), the reaction will go to completion, and the limiting reagent will be either of them. The amount of ethanol produced will be equal to the amount of the limiting reagent, which in this case is 0.5 mol.",
+        "marking_scheme": [
+          "Understanding of the chemical reaction (1 mark)",
+          "Calculation of the limiting reagent (1 mark)",
+          "Calculation of the amount of ethanol produced (2 marks)",
+          "Correct units and significant figures (1 mark)"
+        ],
+        "topic": "Reactions of Aldehydes",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the mechanism of the Cannizzaro reaction, and give an example to illustrate the reaction.",
+        "marks": 5,
+        "answer": "The Cannizzaro reaction is a chemical reaction that involves the disproportionation of an aldehyde that does not have an alpha-hydrogen atom. The reaction involves the transfer of a hydride ion from one molecule of the aldehyde to another, resulting in the formation of an alcohol and a carboxylic acid. For example, the Cannizzaro reaction of benzaldehyde (C6H5CHO) produces benzyl alcohol (C6H5CH2OH) and benzoic acid (C6H5COOH). The reaction is an example of a nucleophilic addition reaction, and it is often used to prepare alcohols and carboxylic acids.",
+        "marking_scheme": [
+          "Explanation of the Cannizzaro reaction mechanism (2 marks)",
+          "Example to illustrate the reaction (1 mark)",
+          "Identification of the products (1 mark)",
+          "Explanation of the reaction conditions (1 mark)"
+        ],
+        "topic": "Reactions of Aldehydes",
+        "is_numerical": false
+      },
+      {
+        "q": "A sample of propanal (CH3CH2CHO) is oxidized to propanoic acid (CH3CH2COOH) using potassium dichromate (K2Cr2O7) as the oxidizing agent. If 0.2 mol of propanal is oxidized, and the reaction has a 75% yield, calculate the amount of propanoic acid produced in grams.",
+        "marks": 5,
+        "answer": "Calculation: The molar mass of propanoic acid is 74 g/mol. The reaction is: CH3CH2CHO + K2Cr2O7 → CH3CH2COOH + Cr2O3. The reaction is a 1:1 ratio between propanal and propanoic acid. The amount of propanoic acid produced is 0.2 mol x 0.75 (yield) = 0.15 mol. The mass of propanoic acid produced is 0.15 mol x 74 g/mol = 11.1 g.",
+        "marking_scheme": [
+          "Understanding of the chemical reaction (1 mark)",
+          "Calculation of the yield (1 mark)",
+          "Calculation of the amount of propanoic acid produced (2 marks)",
+          "Correct units and significant figures (1 mark)"
+        ],
+        "topic": "Preparation of Carboxylic Acids",
+        "is_numerical": true
+      },
+      {
+        "q": "What are the main differences between esters and carboxylic acids in terms of their structure, physical properties, and chemical reactions? Give examples to illustrate your answer.",
+        "marks": 5,
+        "answer": "Esters and carboxylic acids are both derivatives of carboxylic acids, but they differ in their structure and properties. Esters have a carbonyl group linked to an alkyl or aryl group, while carboxylic acids have a carbonyl group linked to a hydroxyl group. Esters are generally less reactive than carboxylic acids due to the lack of a hydroxyl group, which makes them less susceptible to nucleophilic attack. For example, esters can undergo hydrolysis reactions to form carboxylic acids and alcohols, while carboxylic acids can undergo neutralization reactions with bases to form salts and water.",
+        "marking_scheme": [
+          "Definition and explanation of esters and carboxylic acids (1 mark)",
+          "Comparison of physical properties (1 mark)",
+          "Comparison of chemical reactions (2 marks)",
+          "Examples to illustrate the differences (1 mark)"
+        ],
+        "topic": "Introduction to Carboxylic Acids and Esters",
+        "is_numerical": false
+      },
+      {
+        "q": "A sample of ethanoic acid (CH3COOH) is neutralized with 0.5 mol of sodium hydroxide (NaOH) in a reaction mixture. Calculate the amount of sodium ethanoate (CH3COONa) produced if the reaction goes to completion. Assume that the reaction is: CH3COOH + NaOH → CH3COONa + H2O.",
+        "marks": 5,
+        "answer": "Calculation: The reaction is a 1:1 ratio between ethanoic acid and sodium hydroxide. Since the amount of sodium hydroxide is given (0.5 mol), and the reaction goes to completion, the amount of sodium ethanoate produced will be equal to the amount of the limiting reagent, which in this case is 0.5 mol. The molar mass of sodium ethanoate is 82 g/mol. The mass of sodium ethanoate produced is 0.5 mol x 82 g/mol = 41 g.",
+        "marking_scheme": [
+          "Understanding of the chemical reaction (1 mark)",
+          "Calculation of the limiting reagent (1 mark)",
+          "Calculation of the amount of sodium ethanoate produced (2 marks)",
+          "Correct units and significant figures (1 mark)"
+        ],
+        "topic": "Reactions of Carboxylic Acids",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Database Concepts",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:32:52.141Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The primary key of a table is a unique identifier for each record.",
+        "reason": "Reason (R): It is used to uniquely identify each record in the table.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The primary key is indeed a unique identifier, and it is used to uniquely identify each record in the table."
+      },
+      {
+        "assertion": "Assertion (A): A foreign key in a table is used to establish a relationship with another table.",
+        "reason": "Reason (R): It references the primary key of the related table.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A foreign key indeed establishes a relationship with another table, and it references the primary key of the related table."
+      },
+      {
+        "assertion": "Assertion (A): A candidate key is a set of one or more columns that uniquely identify each record in a table.",
+        "reason": "Reason (R): It may or may not be used as the primary key.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A candidate key indeed uniquely identifies each record, and it may or may not be used as the primary key."
+      },
+      {
+        "assertion": "Assertion (A): A view in a database is a virtual table that is based on the result of a query.",
+        "reason": "Reason (R): It does not store data, but rather provides a way to access data from one or more tables.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A view indeed provides a virtual table based on a query result, and it does not store data."
+      },
+      {
+        "assertion": "Assertion (A): A database schema is the overall structure and organization of a database.",
+        "reason": "Reason (R): It includes the relationships between tables and the data types of each column.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A database schema indeed includes the structure and organization of a database, including relationships between tables and data types of each column."
+      },
+      {
+        "assertion": "Assertion (A): A database normalization is a process of organizing data in a database to minimize data redundancy.",
+        "reason": "Reason (R): It also ensures data consistency and improves data integrity.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Database normalization indeed minimizes data redundancy and ensures data consistency and improves data integrity."
+      },
+      {
+        "assertion": "Assertion (A): A database index is a data structure that improves the speed of data retrieval.",
+        "reason": "Reason (R): It is used to speed up queries by providing a quick way to locate data.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A database index indeed improves the speed of data retrieval and is used to speed up queries by providing a quick way to locate data."
+      },
+      {
+        "assertion": "Assertion (A): A database transaction is a sequence of operations that are executed as a single, all-or-nothing unit of work.",
+        "reason": "Reason (R): It ensures that either all operations are executed successfully or none are, maintaining data consistency.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A database transaction indeed consists of a sequence of operations executed as a single unit of work and ensures that either all operations are executed successfully or none are."
+      },
+      {
+        "assertion": "Assertion (A): A database trigger is a stored procedure that is activated in response to certain events, such as insertions or updates.",
+        "reason": "Reason (R): It can perform automated actions, such as updating related tables or sending notifications.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A database trigger indeed is a stored procedure that is activated in response to certain events and can perform automated actions."
+      },
+      {
+        "assertion": "Assertion (A): A database backup is a copy of a database's data that can be used for recovery in case of data loss or corruption.",
+        "reason": "Reason (R): It helps to prevent data loss and ensures business continuity.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A database backup indeed is a copy of a database's data that can be used for recovery and helps to prevent data loss and ensures business continuity."
+      }
+    ],
+    "total": 10
+  }
+}

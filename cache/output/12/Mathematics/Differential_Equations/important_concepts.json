@@ -1,0 +1,53 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Differential Equations",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:17:28.139Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "Order and Degree of a Differential Equation",
+        "description": "To determine the order and degree of a differential equation, compare it with the general form F(x,y,y')=0. The order of a differential equation is the highest order of the derivative, and the degree is the highest power to which the highest-order derivative is raised."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "General and Particular Solutions",
+        "description": "A general solution is a solution that contains arbitrary constants, whereas a particular solution is a solution that satisfies the given differential equation and contains no arbitrary constants."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Separation of Variables",
+        "description": "To solve differential equations using separation of variables, separate the variables (x and y) and integrate both sides separately. This method is useful when the differential equation can be written in the form dy/dx=f(x)/g(y)."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "Berger's Method",
+        "description": "To solve differential equations using Berger's method, follow the order: Identify the type of differential equation, separate the variables, integrate both sides, and apply the initial conditions to get the final solution."
+      },
+      {
+        "category": "Common Mistake",
+        "title": "Confusion between Homogeneous and Non-Homogeneous Differential Equations",
+        "description": "Students often confuse homogeneous and non-homogeneous differential equations. A homogeneous differential equation has the form F(y,y')=0, whereas a non-homogeneous differential equation has the form F(x,y,y')=G(x)."
+      },
+      {
+        "category": "Units to remember",
+        "title": "Standard Forms of Differential Equations",
+        "description": "Students should remember the standard forms of differential equations, such as linear, separable, homogeneous, and Bernoulli's equation, to solve them efficiently."
+      },
+      {
+        "category": "Most Important Fact",
+        "title": "Exact Differential Equations",
+        "description": "To determine if a differential equation is exact, check if ∂M/∂y=∂N/∂x. If it is exact, find the solution by integrating M with respect to x or N with respect to y and then applying the condition."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Linear Differential Equations",
+        "description": "To solve linear differential equations of the form dy/dx+Py=Q, use the integrating factor e^(∫Pdx) and multiply both sides by it to get the solution."
+      }
+    ]
+  }
+}

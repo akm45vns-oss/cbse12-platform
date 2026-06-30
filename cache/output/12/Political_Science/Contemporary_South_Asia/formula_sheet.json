@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Political Science",
+  "chapter": "Contemporary South Asia",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:42:08.157Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Democracy Index",
+        "formula": "DI = (E + P + F + PEE + C + PPE) / 60",
+        "variables": "E = Electoral Process, P = Functioning of Government, F = Political Participation, PEE = Political Culture, C = Civil Liberties, PPE = Political Engagement and Participation Evaluation",
+        "units": "-",
+        "notes": "To evaluate the quality of democracy in South Asian countries"
+      },
+      {
+        "name": "Human Development Index (HDI)",
+        "formula": "HDI = (LEI + EI + II) / 3",
+        "variables": "LEI = Life Expectancy Index, EI = Education Index, II = Income Index",
+        "units": "-",
+        "notes": "To measure the human development of South Asian countries"
+      },
+      {
+        "name": "Gini Coefficient",
+        "formula": "G = (A / (A + B))",
+        "variables": "A = Area between the line of perfect equality and the Lorenz curve, B = Area between the Lorenz curve and the line of perfect inequality",
+        "units": "-",
+        "notes": "To measure income inequality in South Asian countries"
+      },
+      {
+        "name": "Freedom Score",
+        "formula": "FS = (PR + CL) / 2",
+        "variables": "PR = Political Rights score, CL = Civil Liberties score",
+        "units": "-",
+        "notes": "To evaluate the level of freedom in South Asian countries"
+      },
+      {
+        "name": "Corruption Perception Index (CPI)",
+        "formula": "CPI = (S1 + S2 + ... + Sn) / n",
+        "variables": "S = Survey score, n = Number of surveys",
+        "units": "-",
+        "notes": "To measure the perceived level of corruption in South Asian countries"
+      },
+      {
+        "name": "Global Peace Index (GPI)",
+        "formula": "GPI = (D + T + M) / 3",
+        "variables": "D = Domestic peace score, T = Terrorism score, M = Military expenditure score",
+        "units": "-",
+        "notes": "To evaluate the level of peace in South Asian countries"
+      },
+      {
+        "name": "Economic Freedom Index",
+        "formula": "EFI = (S1 + S2 + ... + Sn) / n",
+        "variables": "S = Score for economic freedom component, n = Number of components",
+        "units": "-",
+        "notes": "To measure the level of economic freedom in South Asian countries"
+      },
+      {
+        "name": "Press Freedom Index",
+        "formula": "PFI = (S1 + S2 + ... + Sn) / n",
+        "variables": "S = Score for press freedom component, n = Number of components",
+        "units": "-",
+        "notes": "To evaluate the level of press freedom in South Asian countries"
+      },
+      {
+        "name": "Rule of Law Index",
+        "formula": "RLI = (S1 + S2 + ... + Sn) / n",
+        "variables": "S = Score for rule of law component, n = Number of components",
+        "units": "-",
+        "notes": "To measure the level of rule of law in South Asian countries"
+      },
+      {
+        "name": "Good Governance Index",
+        "formula": "GGI = (S1 + S2 + ... + Sn) / n",
+        "variables": "S = Score for good governance component, n = Number of components",
+        "units": "-",
+        "notes": "To evaluate the level of good governance in South Asian countries"
+      }
+    ]
+  }
+}

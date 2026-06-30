@@ -1,0 +1,82 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Stack",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:01:01.190Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of a stack and its types. Describe the basic operations that can be performed on a stack.",
+        "marks": 5,
+        "answer": "A stack is a linear data structure that follows the LIFO (Last In First Out) principle. It can be of two types: array-based and linked list-based. The basic operations that can be performed on a stack are push, pop, peek, isEmpty, and size. The push operation adds an element to the top of the stack, the pop operation removes the top element, the peek operation returns the top element without removing it, the isEmpty operation checks if the stack is empty, and the size operation returns the number of elements in the stack.",
+        "marking_scheme": [
+          "Definition of stack (1 mark)",
+          "Types of stack (1 mark)",
+          "Basic operations of stack (3 marks)"
+        ],
+        "topic": "Introduction to Stack",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the difference between a stack and a queue? Explain with an example.",
+        "marks": 5,
+        "answer": "A stack follows the LIFO principle, whereas a queue follows the FIFO principle. For example, consider a plate stack. When we add a new plate, it goes on top of the existing plates (push operation), and when we remove a plate, we remove it from the top (pop operation). On the other hand, in a queue, the first person to arrive is the first one to be served (FIFO principle).",
+        "marking_scheme": [
+          "Difference between stack and queue (2 marks)",
+          "Example (3 marks)"
+        ],
+        "topic": "Stack vs Queue",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the implementation of a stack using an array. What are the advantages and disadvantages of this implementation?",
+        "marks": 5,
+        "answer": "A stack can be implemented using an array by storing the elements in contiguous memory locations. The top of the stack is represented by a pointer that points to the last element added. The advantages of this implementation are efficient memory usage and fast access times. The disadvantages are that the size of the stack is fixed and cannot be changed dynamically, and there is a risk of stack overflow if the array is full.",
+        "marking_scheme": [
+          "Implementation of stack using array (2 marks)",
+          "Advantages (1 mark)",
+          "Disadvantages (2 marks)"
+        ],
+        "topic": "Array-based Stack Implementation",
+        "is_numerical": false
+      },
+      {
+        "q": "A stack is implemented using an array of size 10. If the stack is currently empty, how many elements can be pushed onto the stack before it overflows? If each element is of size 4 bytes, what is the total memory occupied by the stack?",
+        "marks": 5,
+        "answer": "Calculation:\nSince the stack is currently empty, 10 elements can be pushed onto the stack before it overflows.\nTotal memory occupied by the stack = size of array * size of each element = 10 * 4 = 40 bytes",
+        "marking_scheme": [
+          "Number of elements that can be pushed (2 marks)",
+          "Total memory occupied (3 marks)"
+        ],
+        "topic": "Array-based Stack Implementation",
+        "is_numerical": true
+      },
+      {
+        "q": "A stack is implemented using a linked list. If the stack currently contains 5 elements, what is the time complexity of pushing a new element onto the stack? If each element is of size 4 bytes, what is the total memory occupied by the stack?",
+        "marks": 5,
+        "answer": "Calculation:\nTime complexity of pushing a new element = O(1), since we only need to update the top pointer.\nTotal memory occupied by the stack = number of elements * size of each element = 6 * 4 = 24 bytes",
+        "marking_scheme": [
+          "Time complexity of push operation (2 marks)",
+          "Total memory occupied (3 marks)"
+        ],
+        "topic": "Linked List-based Stack Implementation",
+        "is_numerical": true
+      },
+      {
+        "q": "A stack is used to evaluate the postfix expression 3 4 + 2 *. What is the final result of the expression?",
+        "marks": 5,
+        "answer": "Calculation:\nStep 1: Push 3 and 4 onto the stack.\nStep 2: Pop 3 and 4 from the stack, add them, and push the result (7) onto the stack.\nStep 3: Push 2 onto the stack.\nStep 4: Pop 7 and 2 from the stack, multiply them, and push the result (14) onto the stack.\nThe final result of the expression is 14.",
+        "marking_scheme": [
+          "Step-by-step evaluation of postfix expression (4 marks)",
+          "Final result (1 mark)"
+        ],
+        "topic": "Stack Applications",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

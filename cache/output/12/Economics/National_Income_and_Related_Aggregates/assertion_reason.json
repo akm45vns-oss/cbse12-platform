@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Economics",
+  "chapter": "National Income and Related Aggregates",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:36:30.399Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Gross National Product (GNP) and National Income (NI) are the same.",
+        "reason": "Reason (R): The concept of GNP and NI is the same, but GNP is measured at market price while NI is measured at factor cost.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "GNP is measured at market price, which includes indirect taxes and excludes subsidies, whereas NI is measured at factor cost, which excludes indirect taxes and includes subsidies."
+      },
+      {
+        "assertion": "Assertion (A): Gross Domestic Product (GDP) at factor cost is lower than GDP at market price.",
+        "reason": "Reason (R): Taxes are included in GDP at market price and not in GDP at factor cost.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "GDP at market price includes indirect taxes, whereas GDP at factor cost excludes indirect taxes."
+      },
+      {
+        "assertion": "Assertion (A): The concept of Net Domestic Product (NDP) and Net National Product (NNP) is the same.",
+        "reason": "Reason (R): NDP and NNP both exclude depreciation and include only that part of depreciation which is not subtracted.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "NDP and NNP are indeed the same, as they both exclude depreciation and include only that part of depreciation which is not subtracted."
+      },
+      {
+        "assertion": "Assertion (A): Disposable Income is the same as Personal Income.",
+        "reason": "Reason (R): Personal Income is the income received by an individual, whereas Disposable Income is the amount left after paying taxes.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Personal Income is the income received by an individual, including taxes, whereas Disposable Income is the amount left after paying taxes."
+      },
+      {
+        "assertion": "Assertion (A): The concept of Gross National Disposable Income is the same as Gross National Income.",
+        "reason": "Reason (R): Gross National Disposable Income is the amount left after paying taxes and receiving transfers, whereas Gross National Income is the total income earned by a nation.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Gross National Disposable Income is not the same as Gross National Income, as the former excludes transfers."
+      },
+      {
+        "assertion": "Assertion (A): Net National Income is the same as Net National Disposable Income.",
+        "reason": "Reason (R): Net National Income is the income earned by a nation after subtracting depreciation, whereas Net National Disposable Income is the amount left after paying taxes and receiving transfers.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "Net National Income is the income earned by a nation after subtracting depreciation, whereas Net National Disposable Income is the amount left after paying taxes and receiving transfers."
+      },
+      {
+        "assertion": "Assertion (A): The concept of National Income is the same as Personal Income.",
+        "reason": "Reason (R): Personal Income is the income received by an individual, whereas National Income is the total income earned by a nation.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "Personal Income is the income received by an individual, whereas National Income is the total income earned by a nation."
+      },
+      {
+        "assertion": "Assertion (A): Disposable Income is the same as Personal Disposable Income.",
+        "reason": "Reason (R): Personal Disposable Income is the amount left after paying taxes and receiving transfers, whereas Disposable Income is the amount left after paying taxes.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Personal Disposable Income is the amount left after paying taxes and receiving transfers, whereas Disposable Income is the amount left after paying taxes."
+      },
+      {
+        "assertion": "Assertion (A): Gross National Disposable Income is higher than Gross National Income.",
+        "reason": "Reason (R): Gross National Disposable Income is the amount left after paying taxes and receiving transfers, which is always higher than Gross National Income.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Gross National Disposable Income is not necessarily higher than Gross National Income, as it depends on the transfers received."
+      },
+      {
+        "assertion": "Assertion (A): Net National Disposable Income is the same as Net National Income.",
+        "reason": "Reason (R): Net National Disposable Income is the amount left after paying taxes and receiving transfers, whereas Net National Income is the income earned by a nation after subtracting depreciation.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "Net National Disposable Income is not the same as Net National Income, as the former includes transfers."
+      }
+    ],
+    "total": 10
+  }
+}

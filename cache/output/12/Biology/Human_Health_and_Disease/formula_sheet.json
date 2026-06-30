@@ -1,0 +1,41 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Human Health and Disease",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:07:10.480Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Vital Capacity",
+        "formula": "Tidal Volume (TV) x Number of Respiratory Cycles per minute",
+        "variables": "TV: Tidal Volume, Respiratory Cycles: Number of breaths taken in one minute",
+        "units": "Liters (L)",
+        "notes": "Calculates the maximum volume of air that can be exhaled after maximum inhalation"
+      },
+      {
+        "name": "Functional Residual Capacity (FRC)",
+        "formula": "Expiratory Reserve Volume (ERV) + Tidal Volume (TV)",
+        "variables": "ERV: Expiratory Reserve Volume, TV: Tidal Volume",
+        "units": "Liters (L)",
+        "notes": "Calculates the volume of air remaining in lungs after normal exhalation"
+      },
+      {
+        "name": "Residual Volume (RV)",
+        "formula": "RV = Total Lung Capacity (TLC) - Expiratory Reserve Volume (ERV)",
+        "variables": "TLC: Total Lung Capacity, ERV: Expiratory Reserve Volume",
+        "units": "Liters (L)",
+        "notes": "Calculates the volume of air remaining in lungs after maximum exhalation"
+      },
+      {
+        "name": "Hill's Criteria for the Diagnosis of Malaria",
+        "formula": "Asexual and sexual stages in peripheral blood, presence of malarial pigment in RBCs, and/or malarial parasitemia in bone marrow",
+        "variables": "Asymptomatic and symptomatic stages, presence of parasite stages, malarial pigment in RBCs",
+        "units": "N/A",
+        "notes": "A set of criteria used for the diagnosis of malaria"
+      }
+    ]
+  }
+}

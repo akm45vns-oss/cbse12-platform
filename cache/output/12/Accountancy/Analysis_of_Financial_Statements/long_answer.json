@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Accountancy",
+  "chapter": "Analysis of Financial Statements",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:02:25.032Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of horizontal analysis and its importance in the analysis of financial statements. How does it help in understanding the trend of a company's financial performance over a period of time?",
+        "marks": 5,
+        "answer": "Horizontal analysis, also known as trend analysis, is a method of comparing the financial statements of a company over a period of time to identify trends and patterns. It helps in understanding the trend of a company's financial performance over a period of time by comparing the financial statements of the current year with those of the previous years. This helps in identifying the areas of improvement and areas of concern. It is an important tool for financial analysis as it helps in identifying the changes in the financial performance of a company over time.",
+        "marking_scheme": [
+          "Explain the concept of horizontal analysis (1 mark)",
+          "Importance of horizontal analysis (1 mark)",
+          "How it helps in understanding the trend of a company's financial performance (3 marks)"
+        ],
+        "topic": "Horizontal Analysis",
+        "is_numerical": false
+      },
+      {
+        "q": "Discuss the concept of vertical analysis and its importance in the analysis of financial statements. What are the advantages of vertical analysis?",
+        "marks": 5,
+        "answer": "Vertical analysis, also known as ratio analysis, is a method of comparing the financial statements of a company with a base year or a standard to identify its financial performance. It helps in understanding the financial health of a company by comparing its financial statements with a base year or a standard. The advantages of vertical analysis include: It helps in identifying the areas of improvement and areas of concern. It provides a snapshot of a company's financial performance at a particular point of time. It helps in making comparisons with other companies in the same industry.",
+        "marking_scheme": [
+          "Explain the concept of vertical analysis (1 mark)",
+          "Importance of vertical analysis (1 mark)",
+          "Advantages of vertical analysis (3 marks)"
+        ],
+        "topic": "Vertical Analysis",
+        "is_numerical": false
+      },
+      {
+        "q": "A company's profit before tax for the year ended 31st March 2022 was Rs. 10,00,000. If the tax rate is 30%, calculate the company's profit after tax for the year.",
+        "marks": 5,
+        "answer": "Calculation:\nProfit before tax = Rs. 10,00,000\nTax rate = 30%\nTax = Profit before tax x Tax rate = Rs. 10,00,000 x 30% = Rs. 3,00,000\nProfit after tax = Profit before tax - Tax = Rs. 10,00,000 - Rs. 3,00,000 = Rs. 7,00,000\nTherefore, the company's profit after tax for the year is Rs. 7,00,000.",
+        "marking_scheme": [
+          "Calculate the tax (2 marks)",
+          "Calculate the profit after tax (3 marks)"
+        ],
+        "topic": "Calculation of Profit after Tax",
+        "is_numerical": true
+      },
+      {
+        "q": "A company's total assets for the year ended 31st March 2022 were Rs. 50,00,000. If the total liabilities were Rs. 30,00,000, calculate the company's net worth for the year.",
+        "marks": 5,
+        "answer": "Calculation:\nTotal assets = Rs. 50,00,000\nTotal liabilities = Rs. 30,00,000\nNet worth = Total assets - Total liabilities = Rs. 50,00,000 - Rs. 30,00,000 = Rs. 20,00,000\nTherefore, the company's net worth for the year is Rs. 20,00,000.",
+        "marking_scheme": [
+          "Calculate the net worth (4 marks)",
+          "Explain the concept of net worth (1 mark)"
+        ],
+        "topic": "Calculation of Net Worth",
+        "is_numerical": true
+      },
+      {
+        "q": "A company's operating profit for the year ended 31st March 2022 was Rs. 5,00,000. If the interest expenses were Rs. 1,00,000 and the tax rate was 30%, calculate the company's net profit for the year.",
+        "marks": 5,
+        "answer": "Calculation:\nOperating profit = Rs. 5,00,000\nInterest expenses = Rs. 1,00,000\nProfit before tax = Operating profit - Interest expenses = Rs. 5,00,000 - Rs. 1,00,000 = Rs. 4,00,000\nTax = Profit before tax x Tax rate = Rs. 4,00,000 x 30% = Rs. 1,20,000\nNet profit = Profit before tax - Tax = Rs. 4,00,000 - Rs. 1,20,000 = Rs. 2,80,000\nTherefore, the company's net profit for the year is Rs. 2,80,000.",
+        "marking_scheme": [
+          "Calculate the profit before tax (2 marks)",
+          "Calculate the tax (1 mark)",
+          "Calculate the net profit (2 marks)"
+        ],
+        "topic": "Calculation of Net Profit",
+        "is_numerical": true
+      },
+      {
+        "q": "A company's revenue for the year ended 31st March 2022 was Rs. 20,00,000. If the cost of goods sold was Rs. 12,00,000, calculate the company's gross profit for the year.",
+        "marks": 5,
+        "answer": "Calculation:\nRevenue = Rs. 20,00,000\nCost of goods sold = Rs. 12,00,000\nGross profit = Revenue - Cost of goods sold = Rs. 20,00,000 - Rs. 12,00,000 = Rs. 8,00,000\nTherefore, the company's gross profit for the year is Rs. 8,00,000.",
+        "marking_scheme": [
+          "Calculate the gross profit (4 marks)",
+          "Explain the concept of gross profit (1 mark)"
+        ],
+        "topic": "Calculation of Gross Profit",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

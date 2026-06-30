@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:27:14.919Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "In aeronautical engineering, the trajectory of a projectile's path is often described using trigonometric functions. Consider a catapult launching a projectile at an angle of 60 degrees above the horizontal. If the initial velocity is 100 m/s, we want to find the height of the projectile at a time t seconds after launch. The height of the projectile is given by h(t) = 100 * sin(60 * t) + 50t. To find the time at which the projectile reaches its maximum height, we need to use the inverse sine function.",
+        "questions": [
+          {
+            "q": "What type of function is h(t) = 100 * sin(60 * t) + 50t?",
+            "opts": [
+              "Trigonometric function",
+              "Inverse trigonometric function",
+              "Polynomial function",
+              "Rational function"
+            ],
+            "ans": "B",
+            "explanation": "The given function involves the sine function, but it is not an inverse trigonometric function. It is a composition of a trigonometric function and a polynomial function."
+          },
+          {
+            "q": "What is the maximum value of sin(60 * t)?",
+            "opts": [
+              "1",
+              "0",
+              "-1",
+              "No maximum value"
+            ],
+            "ans": "A",
+            "explanation": "The maximum value of sin(60 * t) is 1 when 60 * t = 90 degrees or t = 1.5 seconds."
+          },
+          {
+            "q": "When does the projectile reach its maximum height?",
+            "opts": [
+              "At t = 0 seconds",
+              "At t = 1.5 seconds",
+              "At t = 3 seconds",
+              "At t = 4.5 seconds"
+            ],
+            "ans": "B",
+            "explanation": "The projectile reaches its maximum height when the derivative of h(t) with respect to t is equal to zero. This occurs when t = 1.5 seconds."
+          },
+          {
+            "q": "What is the value of t when the projectile reaches its maximum height?",
+            "opts": [
+              "0",
+              "1.5",
+              "3",
+              "4.5"
+            ],
+            "ans": "B",
+            "explanation": "As explained earlier, the projectile reaches its maximum height when t = 1.5 seconds."
+          },
+          {
+            "q": "Which inverse trigonometric function is used to find the value of t when the projectile reaches its maximum height?",
+            "opts": [
+              "sin^-1",
+              "cos^-1",
+              "tan^-1",
+              "csc^-1"
+            ],
+            "ans": "A",
+            "explanation": "The inverse sine function is used to find the value of t when the projectile reaches its maximum height."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "In physics, the motion of a pendulum can be described using trigonometric functions. Consider a simple pendulum with a length of 1 meter and an initial angle of 30 degrees. The pendulum oscillates at a frequency of 1 Hz. To find the equation of motion for the pendulum, we need to use the inverse tangent function.",
+        "questions": [
+          {
+            "q": "What is the equation of motion for the pendulum?",
+            "opts": [
+              "θ(t) = tan^-1(30 * t)",
+              "θ(t) = tan(30 * t)",
+              "θ(t) = sin(30 * t)",
+              "θ(t) = cos(30 * t)"
+            ],
+            "ans": "B",
+            "explanation": "The equation of motion for the pendulum is given by θ(t) = tan(30 * t), where θ(t) is the angle of the pendulum at time t."
+          },
+          {
+            "q": "What is the frequency of oscillation of the pendulum?",
+            "opts": [
+              "0.5 Hz",
+              "1 Hz",
+              "2 Hz",
+              "3 Hz"
+            ],
+            "ans": "B",
+            "explanation": "The pendulum oscillates at a frequency of 1 Hz."
+          },
+          {
+            "q": "What is the value of tan(30 * t) when t = 0 seconds?",
+            "opts": [
+              "0",
+              "1",
+              "-1",
+              "Not defined"
+            ],
+            "ans": "C",
+            "explanation": "The value of tan(30 * t) is -1 when t = 0 seconds."
+          },
+          {
+            "q": "What is the angle of the pendulum at time t = 0 seconds?",
+            "opts": [
+              "0 degrees",
+              "30 degrees",
+              "60 degrees",
+              "90 degrees"
+            ],
+            "ans": "B",
+            "explanation": "The pendulum starts at an initial angle of 30 degrees, so at time t = 0 seconds, the angle of the pendulum is 30 degrees."
+          },
+          {
+            "q": "What inverse trigonometric function is used to find the equation of motion for the pendulum?",
+            "opts": [
+              "sin^-1",
+              "cos^-1",
+              "tan^-1",
+              "csc^-1"
+            ],
+            "ans": "C",
+            "explanation": "The inverse tangent function is used to find the equation of motion for the pendulum."
+          }
+        ]
+      }
+    ]
+  }
+}

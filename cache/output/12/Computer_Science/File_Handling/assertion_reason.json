@@ -1,0 +1,122 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "File Handling",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:30:53.692Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): File handling is used to store and retrieve data from a file in the computer.",
+        "reason": "Reason (R): It provides a way to access data from a file, which can be used for various applications.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "File handling allows reading and writing data from files, making it a crucial aspect for data storage and retrieval."
+      },
+      {
+        "assertion": "Assertion (A): Random Access File (RAF) allows us to access the file at any position directly.",
+        "reason": "Reason (R): It uses a block-based method to store data, which enables direct access to any block or record in the file.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Random Access File (RAF) supports direct access to any random position in the file, making it efficient for applications requiring fast access."
+      },
+      {
+        "assertion": "Assertion (A): Sequential Access File (SAF) allows us to access the file sequentially only.",
+        "reason": "Reason (R): It stores data in a sequence and can only be accessed from the beginning to the end, one record at a time.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Sequential Access File (SAF) stores data in a sequence and can only be accessed sequentially, making it suitable for applications where data is accessed in a specific order."
+      },
+      {
+        "assertion": "Assertion (A): The main advantage of using Stream Input/Output (I/O) operations is that it is platform-independent.",
+        "reason": "Reason (R): Stream I/O operations use the standard input/output streams of the Java programming language, making it independent of the underlying file system.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Stream I/O operations are platform-independent, making Java programs able to run on different operating systems without modifications to the file input/output operations."
+      },
+      {
+        "assertion": "Assertion (A): DataOutputStream and DataInputStream classes are used to write and read primitive data types.",
+        "reason": "Reason (R): These classes provide methods to write and read data of various primitive data types, such as int, float, etc.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "DataOutputStream and DataInputStream classes are used to write and read primitive data types, making them useful for storing and retrieving simple data types."
+      },
+      {
+        "assertion": "Assertion (A): Random Access File (RAF) is a type of sequential file.",
+        "reason": "Reason (R): No, RAF is a type of direct access file that allows access to any position in the file directly.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Random Access File (RAF) is a type of direct access file, not a sequential file, making it suitable for applications requiring fast access to any position in the file."
+      },
+      {
+        "assertion": "Assertion (A): The DataInputStream class is used to read data from a file.",
+        "reason": "Reason (R): The DataInputStream class is used to read primitive data types from an input stream, such as a file.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The DataInputStream class is used to read primitive data types from an input stream, such as a file, making it useful for reading data from a file."
+      },
+      {
+        "assertion": "Assertion (A): File handling is used only for reading data from a file.",
+        "reason": "Reason (R): No, file handling is used for both reading and writing data to a file.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "File handling is used for both reading and writing data to a file, making it a crucial aspect for data storage and retrieval."
+      },
+      {
+        "assertion": "Assertion (A): The RandomAccessFile class provides a way to access a file at any position directly.",
+        "reason": "Reason (R): The RandomAccessFile class provides methods to read and write data at any position in the file, making it a direct access file.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The RandomAccessFile class provides methods to read and write data at any position in the file, making it a direct access file, suitable for applications requiring fast access to any position in the file."
+      }
+    ],
+    "total": 9
+  }
+}

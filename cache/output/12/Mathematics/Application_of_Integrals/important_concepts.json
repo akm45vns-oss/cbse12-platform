@@ -1,0 +1,48 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Application of Integrals",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:17:17.297Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "Area under the curve using definite integral",
+        "description": "The area under a curve y = f(x) from x = a to x = b can be calculated using the definite integral, ∫[a, b] f(x) dx. This is a fundamental concept in application of integrals."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Mean Value Theorem",
+        "description": "The Mean Value Theorem states that if a function f(x) is continuous on [a, b] and differentiable on (a, b), then there exists a point c in (a, b) such that f'(c) = (f(b) - f(a)) / (b - a)."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Area of the region bounded by a curve and the x-axis",
+        "description": "The area of the region bounded by a curve y = f(x) and the x-axis from x = a to x = b can be calculated using the definite integral, ∫[a, b] f(x) dx. This is a common question in the board examination."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "Method of differentiation under the integral sign",
+        "description": "To differentiate under the integral sign, apply the power rule of differentiation and then integrate. For example, if ∫[a, b] f(x) dx = F(x), then d/dx ∫[a, b] f(x) dx = F'(x). Mnemonic: 'Differentiate, then Integrate'."
+      },
+      {
+        "category": "Common Mistake",
+        "title": "Incorrect application of the Fundamental Theorem of Calculus",
+        "description": "The Fundamental Theorem of Calculus states that the derivative of the integral of a function is the function itself. However, students often incorrectly apply this theorem by not considering the limits of integration. Always check the limits of integration before applying the theorem."
+      },
+      {
+        "category": "Units to remember",
+        "title": "Units and dimensions of the function",
+        "description": "When evaluating a definite integral, always check the units and dimensions of the function to ensure that the result is dimensionally correct. For example, if the function has units of length, the result should also have units of length."
+      },
+      {
+        "category": "Most Important Fact",
+        "title": "Mean value theorem for Integrals",
+        "description": "The mean value theorem for integrals states that if a function f(x) is continuous on the closed interval [a,b], then there exists a number c in [a,b] such that the definite integral of f(x) from a to b is equal to f(c) times the length of the interval [a,b]."
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Magnetism and Matter",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:48:15.741Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of magnetic dipole moment and the torque experienced by a magnetic dipole in a uniform magnetic field. Derive an expression for the torque acting on a magnetic dipole in a uniform magnetic field.",
+        "marks": 5,
+        "answer": "Magnetic dipole moment is a measure of the strength of a magnetic dipole. It is defined as the product of the pole strength and the distance between the poles. The torque experienced by a magnetic dipole in a uniform magnetic field is given by the expression τ = m × B, where m is the magnetic dipole moment and B is the magnetic field strength. The torque acting on a magnetic dipole in a uniform magnetic field can be derived by considering the force experienced by each pole of the dipole. The force on the north pole is given by F_N = q_N B, where q_N is the pole strength of the north pole. Similarly, the force on the south pole is given by F_S = -q_S B, where q_S is the pole strength of the south pole. Since the poles are separated by a distance 2l, the torque acting on the dipole is given by τ = (F_N - F_S) × l = (q_N B - (-q_S B)) × l = (q_N + q_S) B × l = m B, where m = q_N l is the magnetic dipole moment.",
+        "marking_scheme": [
+          "Definition of magnetic dipole moment (1 mark)",
+          "Derivation of torque expression (2 marks)",
+          "Explanation of torque experienced by a magnetic dipole (2 marks)"
+        ],
+        "topic": "Magnetic Dipole Moment and Torque",
+        "is_numerical": false
+      },
+      {
+        "q": "A current of 2 A flows through a circular coil of radius 0.1 m. The coil has 50 turns and is placed in a uniform magnetic field of strength 0.5 T. Calculate the torque experienced by the coil.",
+        "marks": 5,
+        "answer": "Calculation:\n1. Calculate the magnetic dipole moment of the coil: m = N I A, where N is the number of turns, I is the current, and A is the area of the coil. A = πr^2, where r is the radius of the coil.\n   m = 50 × 2 × π × (0.1)^2 = 0.314 Nm\n2. Calculate the torque experienced by the coil: τ = m × B = 0.314 × 0.5 = 0.157 Nm",
+        "marking_scheme": [
+          "Calculation of magnetic dipole moment (2 marks)",
+          "Calculation of torque (2 marks)",
+          "Correct units and significant figures (1 mark)"
+        ],
+        "topic": "Torque on a Current Loop",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of hysteresis and the properties of a ferromagnetic material. Describe the hysteresis loop and its significance.",
+        "marks": 5,
+        "answer": "Hysteresis is the phenomenon where the magnetic field strength required to magnetize a material depends on the previous state of magnetization. Ferromagnetic materials exhibit hysteresis due to the presence of magnetic domains. The hysteresis loop is a plot of the magnetic field strength (H) versus the magnetization (M) of a material. The loop has four distinct regions: the initial curve, the saturation region, the remanence region, and the coercivity region. The significance of the hysteresis loop lies in its ability to describe the magnetic properties of a material, such as the remanent magnetization, coercivity, and saturation magnetization.",
+        "marking_scheme": [
+          "Definition of hysteresis and ferromagnetic materials (1 mark)",
+          "Description of the hysteresis loop (2 marks)",
+          "Significance of the hysteresis loop (2 marks)"
+        ],
+        "topic": "Hysteresis and Ferromagnetism",
+        "is_numerical": false
+      },
+      {
+        "q": "A bar magnet is placed in a uniform magnetic field of strength 0.2 T. The magnet has a length of 0.5 m and a pole strength of 10 A·m. Calculate the torque experienced by the magnet.",
+        "marks": 5,
+        "answer": "Calculation:\n1. Calculate the magnetic dipole moment of the magnet: m = q × l, where q is the pole strength and l is the length of the magnet.\n   m = 10 × 0.5 = 5 A·m^2\n2. Calculate the torque experienced by the magnet: τ = m × B = 5 × 0.2 = 1 Nm",
+        "marking_scheme": [
+          "Calculation of magnetic dipole moment (2 marks)",
+          "Calculation of torque (2 marks)",
+          "Correct units and significant figures (1 mark)"
+        ],
+        "topic": "Torque on a Magnetic Dipole",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of Curie temperature and its significance in the context of ferromagnetic materials. Describe the changes that occur in a ferromagnetic material above and below the Curie temperature.",
+        "marks": 5,
+        "answer": "The Curie temperature is the temperature above which a ferromagnetic material loses its ferromagnetic properties and becomes paramagnetic. Below the Curie temperature, the material exhibits spontaneous magnetization, and the magnetic domains are aligned. Above the Curie temperature, the thermal energy overcomes the exchange interactions, and the material becomes paramagnetic. The significance of the Curie temperature lies in its ability to describe the temperature-dependent magnetic properties of a material.",
+        "marking_scheme": [
+          "Definition of Curie temperature (1 mark)",
+          "Description of changes below the Curie temperature (2 marks)",
+          "Description of changes above the Curie temperature (2 marks)"
+        ],
+        "topic": "Curie Temperature and Ferromagnetism",
+        "is_numerical": false
+      },
+      {
+        "q": "A solenoid has 1000 turns per meter and a current of 5 A flows through it. Calculate the magnetic field strength inside the solenoid.",
+        "marks": 5,
+        "answer": "Calculation:\n1. Calculate the magnetic field strength inside the solenoid: B = μ₀ n I, where μ₀ is the permeability of free space, n is the number of turns per meter, and I is the current.\n   B = 4π × 10^(-7) × 1000 × 5 = 0.0628 T",
+        "marking_scheme": [
+          "Calculation of magnetic field strength (3 marks)",
+          "Correct units and significant figures (1 mark)",
+          "Use of correct formula (1 mark)"
+        ],
+        "topic": "Magnetic Field of a Solenoid",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

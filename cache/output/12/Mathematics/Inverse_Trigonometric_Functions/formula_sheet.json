@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:15:49.025Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Definition of Inverse Trigonometric Functions",
+        "formula": "",
+        "variables": "",
+        "units": "",
+        "notes": "Inverse trigonometric functions are used to obtain the angle for a given ratio of the sine, cosine, or tangent of that angle."
+      },
+      {
+        "name": "2. y = sin^(-1) x",
+        "formula": "sin y = x, -1 ≤ x ≤ 1, -π/2 ≤ y ≤ π/2",
+        "variables": "x = ratio of opposite side to hypotenuse, y = angle in radians",
+        "units": "radians",
+        "notes": "This formula is used to find the angle whose sine is x."
+      },
+      {
+        "name": "3. y = cos^(-1) x",
+        "formula": "cos y = x, -1 ≤ x ≤ 1, 0 ≤ y ≤ π",
+        "variables": "x = ratio of adjacent side to hypotenuse, y = angle in radians",
+        "units": "radians",
+        "notes": "This formula is used to find the angle whose cosine is x."
+      },
+      {
+        "name": "4. y = tan^(-1) x",
+        "formula": "tan y = x, -∞ < x < ∞, -π/2 < y < π/2",
+        "variables": "x = ratio of opposite side to adjacent side, y = angle in radians",
+        "units": "radians",
+        "notes": "This formula is used to find the angle whose tangent is x."
+      },
+      {
+        "name": "5. y = cot^(-1) x",
+        "formula": "cot y = x, -∞ < x < ∞, 0 < y < π",
+        "variables": "x = ratio of adjacent side to opposite side, y = angle in radians",
+        "units": "radians",
+        "notes": "This formula is used to find the angle whose cotangent is x."
+      },
+      {
+        "name": "6. y = sec^(-1) x",
+        "formula": "sec y = x, |x| ≥ 1, 0 < y < π/2 or π/2 < y < π",
+        "variables": "x = ratio of hypotenuse to adjacent side, y = angle in radians",
+        "units": "radians",
+        "notes": "This formula is used to find the angle whose secant is x."
+      },
+      {
+        "name": "7. y = cosec^(-1) x",
+        "formula": "cosec y = x, |x| ≥ 1, -π/2 < y < 0 or 0 < y < π/2",
+        "variables": "x = ratio of hypotenuse to opposite side, y = angle in radians",
+        "units": "radians",
+        "notes": "This formula is used to find the angle whose cosecant is x."
+      }
+    ]
+  }
+}

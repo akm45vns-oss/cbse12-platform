@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Accountancy",
+  "chapter": "Issue and Redemption of Debentures",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:40:53.720Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Debentures are long-term borrowings of a company.",
+        "reason": "Reason (R): Issue of debentures involves creation of a new debt by a company.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The issue of debentures indeed involves creation of a new debt by a company, which is a long-term borrowing."
+      },
+      {
+        "assertion": "Assertion (A): Redemptive debentures can be redeemed at any time.",
+        "reason": "Reason (R): Redemptive debentures are issued at a premium and can be redeemed at par.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Redemptive debentures can be redeemed at any time, not necessarily at par."
+      },
+      {
+        "assertion": "Assertion (A): Debenture trust deeds can be modified by a simple majority vote.",
+        "reason": "Reason (R): Debenture trust deeds are registered deeds and cannot be modified without the consent of the debenture-holders.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "Debenture trust deeds are registered deeds and cannot be modified without the consent of the debenture-holders, not by a simple majority vote."
+      },
+      {
+        "assertion": "Assertion (A): Debenture-holders have a priority claim over the assets of the company.",
+        "reason": "Reason (R): Debenture-holders are secured creditors of the company.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The statement is true as debenture-holders have a priority claim over the assets of the company, as they are secured creditors."
+      },
+      {
+        "assertion": "Assertion (A): Debentures can be issued at a discount.",
+        "reason": "Reason (R): Debentures can be issued at a premium only.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The statement is true as debentures can be issued at a discount, not just a premium."
+      },
+      {
+        "assertion": "Assertion (A): The debenture trust deed is a document which shows the terms and conditions of debentures.",
+        "reason": "Reason (R): The debenture trust deed is a document which shows the terms and conditions of the debenture-holders.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The statement is true as the debenture trust deed indeed shows the terms and conditions of debentures, which also include the terms and conditions of the debenture-holders."
+      },
+      {
+        "assertion": "Assertion (A): Debentures are a type of share capital.",
+        "reason": "Reason (R): Debentures are a type of long-term loan capital.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The statement is false as debentures are a type of long-term loan capital, not share capital."
+      },
+      {
+        "assertion": "Assertion (A): Unsecured debentures are issued at a premium.",
+        "reason": "Reason (R): Unsecured debentures can be issued at a discount or at a premium.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "The statement is false as unsecured debentures can be issued at a discount or at a premium, not just at a premium."
+      },
+      {
+        "assertion": "Assertion (A): The issue of debentures involves creation of a new share capital.",
+        "reason": "Reason (R): The issue of debentures involves creation of a new long-term loan capital.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The statement is false as the issue of debentures involves creation of a new long-term loan capital, not share capital."
+      },
+      {
+        "assertion": "Assertion (A): Debentures are a type of short-term loan capital.",
+        "reason": "Reason (R): Debentures are a type of long-term loan capital.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The statement is false as debentures are a type of long-term loan capital, not short-term loan capital."
+      }
+    ],
+    "total": 10
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Wave Optics",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:48:19.239Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the working of a Michelson's interferometer and explain the phenomenon of interference of light. (5 marks)",
+        "marks": 5,
+        "answer": "Michelson's interferometer consists of a light source, a partially silvered mirror, two mirrors, and a screen. The light beam is split into two perpendicular beams by the partially silvered mirror. These beams travel to the two mirrors and return to the screen. The difference in the path of the two beams causes the interference pattern to appear on the screen. The phenomenon of interference of light occurs when two or more light waves overlap in space, resulting in a new wave with a different amplitude and intensity.",
+        "marking_scheme": [
+          "Explanation of Michelson's interferometer (1 mark)",
+          "Interference phenomenon (2 marks)",
+          "Working of Michelson's interferometer (1 mark)",
+          "Importance of Michelson's interferometer (1 mark)"
+        ],
+        "topic": "Michelson's Interferometer",
+        "is_numerical": false
+      },
+      {
+        "q": "Draw the ray diagram showing the working of a simple form of a telescope and describe its main parts. (5 marks)",
+        "marks": 5,
+        "answer": "The ray diagram of a simple telescope consists of an objective lens, an eyepiece lens, and a mirror. The objective lens collects the light from the object and forms a real image. The eyepiece lens then forms a virtual image of the real image. The mirror is used to reflect the light from the eyepiece to the eye. The main parts of the telescope are the objective lens, eyepiece lens, and the mirror.",
+        "marking_scheme": [
+          "Ray diagram (1 mark)",
+          "Main parts of the telescope (2 marks)",
+          "Working of the telescope (1 mark)",
+          "Importance of the telescope (1 mark)"
+        ],
+        "topic": "Simple Telescope",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the phenomenon of total internal reflection and its applications. (5 marks)",
+        "marks": 5,
+        "answer": "Total internal reflection occurs when a light wave hits a boundary between two media and is completely reflected back into the first medium. This happens when the angle of incidence is greater than the critical angle. The phenomenon of total internal reflection has several applications, including optical fibers, prisms, and periscopes.",
+        "marking_scheme": [
+          "Explanation of total internal reflection (2 marks)",
+          "Applications of total internal reflection (2 marks)",
+          "Importance of total internal reflection (1 mark)"
+        ],
+        "topic": "Total Internal Reflection",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the focal length of a convex lens using the lens formula 1/f = 1/do + 1/di, when an object is placed at a distance of 20 cm from the lens and forms an image at a distance of 15 cm from the lens. (5 marks)",
+        "marks": 5,
+        "answer": "Calculation: Given, do = 20 cm, di = 15 cm. Using the lens formula 1/f = 1/do + 1/di. Substituting the values, 1/f = 1/20 + 1/15. Simplifying, 1/f = (3+4)/60. 1/f = 7/60. Taking reciprocal, f = 60/7. Therefore, the focal length of the convex lens is 8.6 cm.",
+        "marking_scheme": [
+          "Understanding of the lens formula (1 mark)",
+          "Calculation of focal length (3 marks)",
+          "Unit of focal length (1 mark)"
+        ],
+        "topic": "Lens Formula",
+        "is_numerical": true
+      },
+      {
+        "q": "A beam of light consisting of two wavelengths 6000 Å and 5000 Å is used to obtain interference fringes in a Young's double-slit experiment. The distance between the slits is 0.3 mm. Calculate the distance between the third bright fringe of wavelength 6000 Å and the third bright fringe of wavelength 5000 Å. (5 marks)",
+        "marks": 5,
+        "answer": "Calculation: Given, λ1 = 6000 Å, λ2 = 5000 Å, d = 0.3 mm. The distance between the third bright fringe of wavelength 6000 Å and the third bright fringe of wavelength 5000 Å is given by β2 - β1 = (3λ2 - 3λ1) × d / (λ2 - λ1). Substituting the values, β2 - β1 = (3 × 5000 - 3 × 6000) × 0.3 × 10^(-3) / (5000-6000) = (15-18) × 0.3 × 10^(-3) / (-1) = 0.9 × 10^(-3) m = 0.9 mm.",
+        "marking_scheme": [
+          "Understanding of Young's double-slit experiment (1 mark)",
+          "Calculation of distance between fringes (3 marks)",
+          "Unit of distance (1 mark)"
+        ],
+        "topic": "Young's Double-Slit Experiment",
+        "is_numerical": true
+      },
+      {
+        "q": "A convex lens of focal length 15 cm is used to form a real image of an object placed at a distance of 25 cm from the lens. Calculate the magnification and the size of the image formed. (5 marks)",
+        "marks": 5,
+        "answer": "Calculation: Given, f = 15 cm, do = 25 cm. Using the lens formula 1/f = 1/do + 1/di, we can find the image distance di. Substituting the values, 1/15 = 1/25 + 1/di. Simplifying, 1/di = 1/15 - 1/25. Taking reciprocal, di = 25/5 = 5 cm. The magnification is given by m = -di/do = -5/25 = -0.2. The size of the image is given by hi = m × ho = -0.2 × 25 = -5 cm.",
+        "marking_scheme": [
+          "Understanding of lens formula (1 mark)",
+          "Calculation of image distance (1 mark)",
+          "Calculation of magnification (1 mark)",
+          "Calculation of image size (2 marks)"
+        ],
+        "topic": "Lens Formula",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

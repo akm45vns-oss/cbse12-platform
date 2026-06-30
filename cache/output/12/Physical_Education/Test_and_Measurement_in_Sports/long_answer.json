@@ -1,0 +1,88 @@
+{
+  "class": "12",
+  "subject": "Physical Education",
+  "chapter": "Test and Measurement in Sports",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:08:50.542Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of reliability in the context of test and measurement in sports. Discuss its importance and how it can be increased.",
+        "marks": 5,
+        "answer": "Reliability in sports refers to the consistency of a test or measurement. It is essential to ensure that the data collected is accurate and consistent. A reliable test or measurement should yield the same results under the same conditions. There are several ways to increase reliability, including using a large sample size, reducing measurement error, and using a standardized test or measurement procedure. Importance of reliability: It helps in making informed decisions in sports, such as selecting players for a team or evaluating the effectiveness of a training program.",
+        "marking_scheme": [
+          "Definition of reliability (1 mark)",
+          "Importance of reliability (1 mark)",
+          "Ways to increase reliability (2 marks)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Reliability in Sports Testing",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the concept of validity in the context of test and measurement in sports. Discuss its types and importance.",
+        "marks": 5,
+        "answer": "Validity in sports refers to the accuracy of a test or measurement. It is essential to ensure that the test or measurement measures what it is supposed to measure. There are several types of validity, including face validity, content validity, criterion-related validity, and construct validity. Importance of validity: It helps in making informed decisions in sports, such as selecting players for a team or evaluating the effectiveness of a training program.",
+        "marking_scheme": [
+          "Definition of validity (1 mark)",
+          "Types of validity (2 marks)",
+          "Importance of validity (2 marks)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Validity in Sports Testing",
+        "is_numerical": false
+      },
+      {
+        "q": "A researcher wants to measure the speed of a sprinter using a photocell timing system. The mean time recorded by the system is 10.5 seconds with a standard deviation of 0.2 seconds. Calculate the coefficient of variation (CV) for this data.",
+        "marks": 5,
+        "answer": "Calculation: CV = (SD / Mean) x 100 = (0.2 / 10.5) x 100 = 1.9%. Therefore, the coefficient of variation for this data is 1.9%. This indicates a relatively small amount of variability in the data.",
+        "marking_scheme": [
+          "Calculation of CV (2 marks)",
+          "Interpretation of CV (3 marks)"
+        ],
+        "topic": "Measurement of Speed",
+        "is_numerical": true
+      },
+      {
+        "q": "A coach wants to measure the flexibility of her athletes using a sit-and-reach test. She records the following data: 25 cm, 28 cm, 30 cm, 32 cm, and 35 cm. Calculate the mean and standard deviation of this data.",
+        "marks": 5,
+        "answer": "Calculation: Mean = (25 + 28 + 30 + 32 + 35) / 5 = 30 cm. SD = sqrt[(Σ(x - mean)^2) / (n - 1)] = sqrt[(25 - 30)^2 + (28 - 30)^2 + (30 - 30)^2 + (32 - 30)^2 + (35 - 30)^2] / 4 = 2.83 cm. Therefore, the mean and standard deviation of this data are 30 cm and 2.83 cm respectively.",
+        "marking_scheme": [
+          "Calculation of mean (2 marks)",
+          "Calculation of SD (2 marks)",
+          "Interpretation of results (1 mark)"
+        ],
+        "topic": "Measurement of Flexibility",
+        "is_numerical": true
+      },
+      {
+        "q": "A researcher wants to measure the accuracy of a batting average in cricket. Discuss the different types of error that can occur in this measurement and how they can be minimized.",
+        "marks": 5,
+        "answer": "Different types of error that can occur in measuring batting average include systematic error (bias) and random error (variability). Systematic error can be minimized by using a standardized procedure for recording batting averages, while random error can be minimized by using a large sample size and taking multiple measurements. ",
+        "marking_scheme": [
+          "Types of error (2 marks)",
+          "Minimizing systematic error (1 mark)",
+          "Minimizing random error (1 mark)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Error in Measurement",
+        "is_numerical": false
+      },
+      {
+        "q": "A coach wants to measure the power output of her athletes using a Wingate test. The test involves cycling at maximum intensity for 30 seconds. If the power output is measured to be 1000 W, and the coefficient of variation for this data is 5%, calculate the standard deviation of the power output.",
+        "marks": 5,
+        "answer": "Calculation: Standard deviation = CV x Mean = 0.05 x 1000 = 50 W. Therefore, the standard deviation of the power output is 50 W.",
+        "marking_scheme": [
+          "Given data (2 marks)",
+          "Calculation of SD (2 marks)",
+          "Interpretation of results (1 mark)"
+        ],
+        "topic": "Measurement of Power",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

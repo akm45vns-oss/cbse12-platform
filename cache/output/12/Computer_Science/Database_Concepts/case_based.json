@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Database Concepts",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:32:52.137Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A university has decided to develop a database of its students. The database will store information about each student, including their name, roll number, course, address, and marks obtained in each subject. The university wants to ensure that the database is designed such that it can handle multiple queries simultaneously and can provide accurate results. The database administrator has decided to implement a relational database management system (RDBMS) to manage the student data. The RDBMS will have the following entities: STUDENT, COURSE, SUBJECT, and MARKS. The relationships between these entities will be established using foreign keys.",
+        "questions": [
+          {
+            "q": "What type of database management system is being implemented by the university?",
+            "opts": [
+              "Graph Database",
+              "Object-Oriented Database",
+              "Relational Database Management System (RDBMS)",
+              "Network Database"
+            ],
+            "ans": "C",
+            "explanation": "The university is implementing an RDBMS to manage student data, which is a type of relational database management system."
+          },
+          {
+            "q": "What is the purpose of establishing relationships between entities in the RDBMS?",
+            "opts": [
+              "To improve data security",
+              "To increase data redundancy",
+              "To establish relationships between entities using foreign keys",
+              "To reduce data consistency"
+            ],
+            "ans": "C",
+            "explanation": "Relationships between entities are established using foreign keys to ensure data integrity and consistency."
+          },
+          {
+            "q": "What are the entities that will be used in the RDBMS to manage student data?",
+            "opts": [
+              "STUDENT, COURSE, SUBJECT, and MARKS",
+              "STUDENT, COURSE, TEACHER, and CLASSROOM",
+              "STUDENT, SUBJECT, MARKS, and GRADE",
+              "STUDENT, COURSE, FACULTY, and SEMESTER"
+            ],
+            "ans": "A",
+            "explanation": "The entities that will be used in the RDBMS are STUDENT, COURSE, SUBJECT, and MARKS."
+          },
+          {
+            "q": "What is the main advantage of using a relational database management system?",
+            "opts": [
+              "Improved data security",
+              "Increased data redundancy",
+              "Improved data consistency and integrity",
+              "Reduced data storage capacity"
+            ],
+            "ans": "C",
+            "explanation": "The main advantage of using a relational database management system is improved data consistency and integrity."
+          },
+          {
+            "q": "Why is it essential to establish relationships between entities in a relational database?",
+            "opts": [
+              "To improve data security",
+              "To increase data redundancy",
+              "To ensure data consistency and integrity",
+              "To reduce data storage capacity"
+            ],
+            "ans": "C",
+            "explanation": "Establishing relationships between entities in a relational database ensures data consistency and integrity."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "An online shopping website wants to develop a database to store information about its customers, products, and orders. The database will store customer details, product details, and order details, including the customer's name, address, product name, price, and order date. The website wants to ensure that the database is designed such that it can handle multiple queries simultaneously and can provide accurate results. The database administrator has decided to implement a database normalization technique to manage the customer data.",
+        "questions": [
+          {
+            "q": "What is the main purpose of implementing a database normalization technique?",
+            "opts": [
+              "To reduce data redundancy",
+              "To improve data security",
+              "To increase data consistency and integrity",
+              "To improve data scalability"
+            ],
+            "ans": "A",
+            "explanation": "The main purpose of implementing a database normalization technique is to reduce data redundancy."
+          },
+          {
+            "q": "Why is it essential to store customer data in a normalized form?",
+            "opts": [
+              "To improve data scalability",
+              "To reduce data redundancy",
+              "To ensure data consistency and integrity",
+              "To improve data security"
+            ],
+            "ans": "B",
+            "explanation": "Storing customer data in a normalized form reduces data redundancy and improves data integrity."
+          },
+          {
+            "q": "What is the main advantage of implementing a database normalization technique?",
+            "opts": [
+              "Improved data security",
+              "Increased data redundancy",
+              "Improved data consistency and integrity",
+              "Reduced data storage capacity"
+            ],
+            "ans": "C",
+            "explanation": "The main advantage of implementing a database normalization technique is improved data consistency and integrity."
+          },
+          {
+            "q": "What is the database normalization technique that the website wants to implement?",
+            "opts": [
+              "First Normal Form (1NF)",
+              "Second Normal Form (2NF)",
+              "Third Normal Form (3NF)",
+              "Boyce-Codd Normal Form (BCNF)"
+            ],
+            "ans": "B",
+            "explanation": "The website wants to implement the Second Normal Form (2NF) to manage customer data."
+          },
+          {
+            "q": "Why is it essential to implement a database normalization technique in a database?",
+            "opts": [
+              "To improve data scalability",
+              "To reduce data redundancy",
+              "To ensure data consistency and integrity",
+              "To improve data security"
+            ],
+            "ans": "C",
+            "explanation": "Implementing a database normalization technique ensures data consistency and integrity."
+          }
+        ]
+      }
+    ]
+  }
+}

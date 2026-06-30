@@ -1,0 +1,248 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:32:48.964Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the primary function of a SELECT statement in SQL?",
+        "opts": [
+          "(A) To insert data into a database table",
+          "(B) To retrieve data from a database table",
+          "(C) To update data in a database table",
+          "(D) To delete data from a database table"
+        ],
+        "ans": "B",
+        "explanation": "The SELECT statement is used to retrieve data from a database table. It allows you to specify which columns you want to retrieve and from which table(s) you want to retrieve the data.",
+        "difficulty": "easy",
+        "topic": "Querying Data"
+      },
+      {
+        "q": "What is the purpose of an ORDER BY clause in SQL?",
+        "opts": [
+          "(A) To limit the number of rows returned by a query",
+          "(B) To sort the results of a query in ascending or descending order",
+          "(C) To rename a column in a query result",
+          "(D) To join two tables on a common column"
+        ],
+        "ans": "B",
+        "explanation": "The ORDER BY clause is used to sort the results of a query in ascending or descending order. It allows you to specify the column(s) you want to sort on and the order you want the results to be sorted.",
+        "difficulty": "easy",
+        "topic": "Querying Data"
+      },
+      {
+        "q": "What is the difference between an INNER JOIN and a LEFT JOIN in SQL?",
+        "opts": [
+          "(A) An INNER JOIN returns all rows from both tables, while a LEFT JOIN returns only the matching rows",
+          "(B) An INNER JOIN returns only the matching rows, while a LEFT JOIN returns all rows from the left table and matching rows from the right table",
+          "(C) An INNER JOIN is faster than a LEFT JOIN, while a LEFT JOIN is slower",
+          "(D) An INNER JOIN returns only the matching rows, while a LEFT JOIN returns all rows from the right table and matching rows from the left table"
+        ],
+        "ans": "B",
+        "explanation": "An INNER JOIN returns only the matching rows from both tables, while a LEFT JOIN returns all rows from the left table and matching rows from the right table. If there are no matches, the LEFT JOIN will return NULL values for the right table columns.",
+        "difficulty": "medium",
+        "topic": "Joining Tables"
+      },
+      {
+        "q": "What is the purpose of a GROUP BY clause in SQL?",
+        "opts": [
+          "(A) To group the results of a query by one or more columns",
+          "(B) To sort the results of a query in ascending or descending order",
+          "(C) To limit the number of rows returned by a query",
+          "(D) To join two tables on a common column"
+        ],
+        "ans": "A",
+        "explanation": "The GROUP BY clause is used to group the results of a query by one or more columns. It allows you to specify the column(s) you want to group by and perform aggregate functions on the grouped data.",
+        "difficulty": "medium",
+        "topic": "Grouping Data"
+      },
+      {
+        "q": "What is the difference between a subquery and a derived table in SQL?",
+        "opts": [
+          "(A) A subquery is a query nested inside another query, while a derived table is a temporary table created from a query",
+          "(B) A subquery is faster than a derived table, while a derived table is slower",
+          "(C) A subquery is used to return a single value, while a derived table is used to return multiple values",
+          "(D) A subquery is used to join two tables, while a derived table is used to group data"
+        ],
+        "ans": "A",
+        "explanation": "A subquery is a query nested inside another query, while a derived table is a temporary table created from a query. A subquery is typically used to return a single value, while a derived table is used to return multiple values.",
+        "difficulty": "hard",
+        "topic": "Subqueries and Derived Tables"
+      },
+      {
+        "q": "What is the purpose of a Common Table Expression (CTE) in SQL?",
+        "opts": [
+          "(A) To create a temporary view of a query result",
+          "(B) To join two tables on a common column",
+          "(C) To group the results of a query by one or more columns",
+          "(D) To limit the number of rows returned by a query"
+        ],
+        "ans": "A",
+        "explanation": "A CTE is a temporary result set that is defined within a SELECT, INSERT, UPDATE, or DELETE statement. It allows you to give a name to a query result that can be used within the statement.",
+        "difficulty": "hard",
+        "topic": "Common Table Expressions"
+      },
+      {
+        "q": "What is the purpose of a cursor in SQL?",
+        "opts": [
+          "(A) To create a temporary table from a query result",
+          "(B) To join two tables on a common column",
+          "(C) To iterate over a set of rows in a query result",
+          "(D) To group the results of a query by one or more columns"
+        ],
+        "ans": "C",
+        "explanation": "A cursor is a control structure that allows you to iterate over a set of rows in a query result. It is typically used in stored procedures or functions to perform operations on individual rows.",
+        "difficulty": "hard",
+        "topic": "Cursors"
+      },
+      {
+        "q": "What is the difference between an index and a view in SQL?",
+        "opts": [
+          "(A) An index is a physical structure used to speed up data retrieval, while a view is a virtual table based on the result of a query",
+          "(B) An index is a virtual table based on the result of a query, while a view is a physical structure used to speed up data retrieval",
+          "(C) An index is used to join two tables, while a view is used to group data",
+          "(D) An index is used to sort data, while a view is used to limit the number of rows returned by a query"
+        ],
+        "ans": "A",
+        "explanation": "An index is a physical structure used to speed up data retrieval, while a view is a virtual table based on the result of a query. An index is typically used to improve the performance of queries, while a view is used to simplify complex queries.",
+        "difficulty": "medium",
+        "topic": "Indexes and Views"
+      },
+      {
+        "q": "What is the purpose of a trigger in SQL?",
+        "opts": [
+          "(A) To create a temporary view of a query result",
+          "(B) To join two tables on a common column",
+          "(C) To perform an action automatically when a specific event occurs",
+          "(D) To group the results of a query by one or more columns"
+        ],
+        "ans": "C",
+        "explanation": "A trigger is a stored procedure that is automatically executed in response to a specific event, such as an insert, update, or delete operation. It is typically used to enforce data integrity or perform complex operations.",
+        "difficulty": "hard",
+        "topic": "Triggers"
+      },
+      {
+        "q": "What is the difference between a stored procedure and a function in SQL?",
+        "opts": [
+          "(A) A stored procedure is a set of SQL statements that are stored in the database, while a function is a stored procedure that returns a value",
+          "(B) A stored procedure is used to return a value, while a function is used to perform an action",
+          "(C) A stored procedure is used to join two tables, while a function is used to group data",
+          "(D) A stored procedure is used to sort data, while a function is used to limit the number of rows returned by a query"
+        ],
+        "ans": "A",
+        "explanation": "A stored procedure is a set of SQL statements that are stored in the database, while a function is a stored procedure that returns a value. A stored procedure is typically used to perform complex operations, while a function is used to simplify queries.",
+        "difficulty": "hard",
+        "topic": "Stored Procedures and Functions"
+      },
+      {
+        "q": "What is the purpose of a transaction in SQL?",
+        "opts": [
+          "(A) To create a temporary view of a query result",
+          "(B) To join two tables on a common column",
+          "(C) To perform a series of operations as a single, all-or-nothing unit of work",
+          "(D) To group the results of a query by one or more columns"
+        ],
+        "ans": "C",
+        "explanation": "A transaction is a series of operations that are performed as a single, all-or-nothing unit of work. It allows you to ensure data consistency and integrity by either committing or rolling back the entire transaction.",
+        "difficulty": "hard",
+        "topic": "Transactions"
+      },
+      {
+        "q": "What is the purpose of a commit statement in SQL?",
+        "opts": [
+          "(A) To create a temporary view of a query result",
+          "(B) To join two tables on a common column",
+          "(C) To save the changes made to a database, making them permanent",
+          "(D) To group the results of a query by one or more columns"
+        ],
+        "ans": "C",
+        "explanation": "A commit statement is used to save the changes made to a database, making them permanent. It is typically used to commit a transaction and ensure data consistency.",
+        "difficulty": "medium",
+        "topic": "Transactions"
+      },
+      {
+        "q": "What is the purpose of a rollback statement in SQL?",
+        "opts": [
+          "(A) To create a temporary view of a query result",
+          "(B) To join two tables on a common column",
+          "(C) To undo the changes made to a database, restoring it to its previous state",
+          "(D) To group the results of a query by one or more columns"
+        ],
+        "ans": "C",
+        "explanation": "A rollback statement is used to undo the changes made to a database, restoring it to its previous state. It is typically used to roll back a transaction and ensure data consistency.",
+        "difficulty": "medium",
+        "topic": "Transactions"
+      },
+      {
+        "q": "What is the purpose of a database index in SQL?",
+        "opts": [
+          "(A) To create a temporary view of a query result",
+          "(B) To join two tables on a common column",
+          "(C) To speed up data retrieval by providing a quick access path to data",
+          "(D) To group the results of a query by one or more columns"
+        ],
+        "ans": "C",
+        "explanation": "A database index is a data structure that speeds up data retrieval by providing a quick access path to data. It allows you to quickly locate specific data in a table, improving query performance.",
+        "difficulty": "medium",
+        "topic": "Indexes"
+      },
+      {
+        "q": "What is the purpose of a database view in SQL?",
+        "opts": [
+          "(A) To create a temporary view of a query result",
+          "(B) To join two tables on a common column",
+          "(C) To simplify complex queries by providing a virtual table based on the result of a query",
+          "(D) To group the results of a query by one or more columns"
+        ],
+        "ans": "C",
+        "explanation": "A database view is a virtual table based on the result of a query. It simplifies complex queries and allows you to provide a layer of abstraction between the user and the underlying data.",
+        "difficulty": "medium",
+        "topic": "Views"
+      },
+      {
+        "q": "What is the purpose of a database trigger in SQL?",
+        "opts": [
+          "(A) To create a temporary view of a query result",
+          "(B) To join two tables on a common column",
+          "(C) To enforce data integrity by performing actions automatically when a specific event occurs",
+          "(D) To group the results of a query by one or more columns"
+        ],
+        "ans": "C",
+        "explanation": "A database trigger is a stored procedure that is automatically executed in response to a specific event, such as an insert, update, or delete operation. It is typically used to enforce data integrity or perform complex operations.",
+        "difficulty": "hard",
+        "topic": "Triggers"
+      },
+      {
+        "q": "What is the purpose of a stored procedure in SQL?",
+        "opts": [
+          "(A) To create a temporary view of a query result",
+          "(B) To join two tables on a common column",
+          "(C) To perform complex operations that involve multiple queries or database objects",
+          "(D) To group the results of a query by one or more columns"
+        ],
+        "ans": "C",
+        "explanation": "A stored procedure is a set of SQL statements that are stored in the database and can be executed repeatedly. It simplifies complex operations and allows you to perform actions that involve multiple queries or database objects.",
+        "difficulty": "hard",
+        "topic": "Stored Procedures"
+      },
+      {
+        "q": "What is the purpose of a transaction log in SQL?",
+        "opts": [
+          "(A) To create a temporary view of a query result",
+          "(B) To join two tables on a common column",
+          "(C) To track changes made to a database over time and provide a record of all transactions",
+          "(D) To group the results of a query by one or more columns"
+        ],
+        "ans": "C",
+        "explanation": "A transaction log is a record of all transactions made to a database over time. It allows you to track changes and provide a history of all modifications made to the data.",
+        "difficulty": "hard",
+        "topic": "Transaction Logs"
+      }
+    ],
+    "total": 18
+  }
+}

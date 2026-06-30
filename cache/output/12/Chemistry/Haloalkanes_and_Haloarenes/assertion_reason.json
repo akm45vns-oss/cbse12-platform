@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:16:13.022Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Chloroform is stored in the presence of a small amount of ethanol.",
+        "reason": "Reason (R): This is because chloroform reacts with oxygen in air to form an explosive compound, phosgene, and ethanol prevents this reaction.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Chloroform is stored with a small amount of ethanol to prevent it from reacting with oxygen and forming phosgene, a toxic gas."
+      },
+      {
+        "assertion": "Assertion (A): The order of reactivity of haloalkanes towards an S_N2 reaction is tertiary < secondary < primary.",
+        "reason": "Reason (R): The steric hindrance around the carbon atom with the halogen increases from primary to tertiary, which makes it harder for the nucleophile to approach.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "The assertion is incorrect; the correct order is tertiary < secondary < primary for S_N1 reactions, but for S_N2 reactions, it's primary > secondary > tertiary due to steric hindrance."
+      },
+      {
+        "assertion": "Assertion (A): Haloalkanes are less reactive than haloarenes.",
+        "reason": "Reason (R): The presence of the aromatic ring in haloarenes makes them less reactive due to resonance stabilization.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Haloalkanes are indeed less reactive than haloarenes in many reactions due to the resonance stabilization of the aromatic ring in haloarenes, which makes the carbon-halogen bond stronger and less reactive."
+      },
+      {
+        "assertion": "Assertion (A): The reaction of haloalkanes with sodium in ether is used for the preparation of alkanes.",
+        "reason": "Reason (R): This reaction is known as the Wurtz reaction and involves the coupling of two haloalkane molecules to form a new carbon-carbon bond.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The Wurtz reaction indeed involves the reaction of haloalkanes with sodium in ether to form alkanes through the coupling of two haloalkane molecules."
+      },
+      {
+        "assertion": "Assertion (A): Haloarenes are less reactive than haloalkanes towards nucleophilic substitution reactions.",
+        "reason": "Reason (R): The partial double bond character of the carbon-halogen bond in haloarenes due to resonance makes it stronger and less reactive.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The partial double bond character of the carbon-halogen bond in haloarenes due to resonance does make the bond stronger and less reactive towards nucleophilic substitution."
+      },
+      {
+        "assertion": "Assertion (A): Chlorobenzene can undergo nucleophilic substitution reactions under high pressure and temperature.",
+        "reason": "Reason (R): The high pressure and temperature provide the necessary energy for the reaction to occur.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "While high pressure and temperature can facilitate reactions, the assertion that chlorobenzene undergoes nucleophilic substitution under these conditions is true, but the reason provided is too general and does not specifically address the mechanism of nucleophilic aromatic substitution."
+      },
+      {
+        "assertion": "Assertion (A): The S_N1 reaction of haloalkanes involves a two-step mechanism.",
+        "reason": "Reason (R): The first step involves the formation of a carbocation intermediate, which then reacts with a nucleophile in the second step.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The S_N1 reaction indeed involves a two-step mechanism where the first step is the formation of a carbocation intermediate, and the second step is the reaction of this carbocation with a nucleophile."
+      },
+      {
+        "assertion": "Assertion (A): The reaction of haloalkanes with magnesium is used to prepare Grignard reagents.",
+        "reason": "Reason (R): Grignard reagents are used as strong bases and nucleophiles in organic synthesis.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "While the assertion that the reaction of haloalkanes with magnesium prepares Grignard reagents is true, and Grignard reagents are indeed used as strong bases and nucleophiles, the reason does not explain why the reaction with magnesium is used for this purpose."
+      },
+      {
+        "assertion": "Assertion (A): The order of reactivity of haloalkanes towards an S_N1 reaction is tertiary > secondary > primary.",
+        "reason": "Reason (R): The stability of the carbocation intermediate formed during the reaction increases from primary to tertiary.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion is correct, and the reason is also correct; the stability of the carbocation intermediate does increase from primary to tertiary, which explains the order of reactivity in S_N1 reactions."
+      },
+      {
+        "assertion": "Assertion (A): Haloarenes do not undergo nucleophilic substitution reactions under normal conditions.",
+        "reason": "Reason (R): The carbon-halogen bond in haloarenes is very strong due to the partial double bond character from resonance.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Haloarenes indeed do not undergo nucleophilic substitution under normal conditions due to the strength of the carbon-halogen bond, which is attributed to the partial double bond character resulting from resonance."
+      }
+    ],
+    "total": 10
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Solutions",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:49:34.042Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the molality of a solution containing 18g of glucose in 2000g of water?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "Molality = (18/180) * (1000/2000) = 0.5 m",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Which of the following statements is correct about an ideal solution?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "ΔH_mix = 0",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "The vapour pressure of a dilute aqueous solution of glucose at a particular temperature is 750 mm of Hg. Calculate the vapour pressure of pure water at that temperature if the mole fraction of the solute is 0.1.",
+        "type": "Long Answer",
+        "marks": 3,
+        "answer": "Using Raoult's law: P_solution = P_solvent * X_solvent, 750 = P_solvent * 0.9, P_solvent = 750/0.9 = 833.33 mm of Hg",
+        "year_pattern": "2017-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Fill in the blank: According to Raoult's law, the relative lowering of vapour pressure is equal to the _______________ of the solute.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "mole fraction",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "State whether the statement is True or False: The boiling point of a solution is always higher than that of the solvent.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "True",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the freezing point depression constant of water if the freezing point of 0.01 m NaCl solution is -0.034 degree?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "ΔT_f = K_f * m, 0.034 = K_f * 0.01, K_f = 3.4 K kg/mol",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "The molar mass of a non-electrolyte solute is 50 g/mol. If 2g of the solute is dissolved in 100 mL of water, what will be the elevation in boiling point?",
+        "type": "Long Answer",
+        "marks": 3,
+        "answer": "Molality = (2/50) * (1000/100) = 0.4 m, ΔT_b = K_b * m, assuming K_b = 0.52 K kg/mol for water, ΔT_b = 0.52 * 0.4 = 0.208 K",
+        "year_pattern": "2017-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Which of the following solutions will have the highest freezing point depression?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "0.1 M AlCl3 solution",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Calculate the molarity of a solution containing 5g of NaOH in 2000 mL of solution. (Molar mass of NaOH = 40 g/mol)",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "Molarity = (5/40) * (1000/2000) = 0.625 M",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "State whether the statement is True or False: Colligative properties depend on the nature of the solute particles.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "False",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Web Technologies Basics",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:41:27.048Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Rohan, a freelance web developer, is creating a website for a local bakery. The bakery has a large collection of recipes that they want to display on the website. Rohan decides to use HTML to structure the content and CSS to style the webpage. He uses semantic HTML tags like <header>, <nav>, <main>, and <footer> to provide a clear structure to the webpage. He also uses CSS to add a background image and change the font style of the headings. The bakery owner is impressed with the website and asks Rohan to add more features like a search bar and a contact form. Rohan uses JavaScript to add these features to the website.",
+        "questions": [
+          {
+            "q": "What technology stack is Rohan using to create the website?",
+            "opts": [
+              "HTML and CSS only",
+              "HTML, CSS, and JavaScript",
+              "Only JavaScript",
+              "Only CSS"
+            ],
+            "ans": "B",
+            "explanation": "Rohan is using a combination of HTML for structuring the content, CSS for styling the webpage, and JavaScript for adding dynamic features like a search bar and a contact form."
+          },
+          {
+            "q": "What is the purpose of using semantic HTML tags like <header>, <nav>, <main>, and <footer>?",
+            "opts": [
+              "To add background images to the webpage",
+              "To change the font style of the headings",
+              "To provide a clear structure to the webpage",
+              "To add dynamic features like a search bar and a contact form"
+            ],
+            "ans": "C",
+            "explanation": "Semantic HTML tags provide a clear structure to the webpage, making it easier for search engines and screen readers to understand the content."
+          },
+          {
+            "q": "What is the role of CSS in this scenario?",
+            "opts": [
+              "To add dynamic features like a search bar and a contact form",
+              "To structure the content of the webpage",
+              "To style the webpage and add a background image",
+              "To add semantic HTML tags"
+            ],
+            "ans": "C",
+            "explanation": "CSS is used to style the webpage and add a background image, making it visually appealing to the users."
+          },
+          {
+            "q": "What is JavaScript used for in this scenario?",
+            "opts": [
+              "To structure the content of the webpage",
+              "To style the webpage and add a background image",
+              "To add semantic HTML tags",
+              "To add dynamic features like a search bar and a contact form"
+            ],
+            "ans": "D",
+            "explanation": "JavaScript is used to add dynamic features like a search bar and a contact form to the webpage."
+          },
+          {
+            "q": "Why is the bakery owner impressed with the website?",
+            "opts": [
+              "Because the website has a complex design",
+              "Because the website is slow to load",
+              "Because the website has a clear structure and dynamic features",
+              "Because the website has a lot of content"
+            ],
+            "ans": "C",
+            "explanation": "The bakery owner is impressed with the website because it has a clear structure and dynamic features like a search bar and a contact form."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "Sakshi, a web designer, is creating a website for a fashion brand. The website needs to display a variety of images of clothing items. Sakshi decides to use HTML to structure the content and CSS to style the webpage. She uses CSS Grid to layout the images in a grid structure. She also uses CSS to add a hover effect to the images, making them more interactive. The client is impressed with the website and asks Sakshi to add a payment gateway to the website.",
+        "questions": [
+          {
+            "q": "What technology stack is Sakshi using to create the website?",
+            "opts": [
+              "HTML and CSS only",
+              "HTML, CSS, and JavaScript",
+              "Only JavaScript",
+              "Only CSS"
+            ],
+            "ans": "B",
+            "explanation": "Sakshi is using a combination of HTML for structuring the content, CSS for styling the webpage, and JavaScript for adding dynamic features like a payment gateway."
+          },
+          {
+            "q": "What is the purpose of using CSS Grid in this scenario?",
+            "opts": [
+              "To add a hover effect to the images",
+              "To style the webpage and add a background image",
+              "To layout the images in a grid structure",
+              "To add dynamic features like a payment gateway"
+            ],
+            "ans": "C",
+            "explanation": "CSS Grid is used to layout the images in a grid structure, making it easier to display multiple images on the webpage."
+          },
+          {
+            "q": "What is the role of CSS in this scenario?",
+            "opts": [
+              "To add dynamic features like a payment gateway",
+              "To structure the content of the webpage",
+              "To style the webpage and add a hover effect to the images",
+              "To add semantic HTML tags"
+            ],
+            "ans": "C",
+            "explanation": "CSS is used to style the webpage and add a hover effect to the images, making it visually appealing to the users."
+          },
+          {
+            "q": "What is the purpose of adding a hover effect to the images?",
+            "opts": [
+              "To make the website slower to load",
+              "To make the website more complex",
+              "To make the images more interactive",
+              "To add a payment gateway to the website"
+            ],
+            "ans": "C",
+            "explanation": "The hover effect makes the images more interactive, allowing users to hover over the images and see a preview of the content."
+          },
+          {
+            "q": "Why is the client impressed with the website?",
+            "opts": [
+              "Because the website has a complex design",
+              "Because the website is slow to load",
+              "Because the website has a clear structure and interactive features",
+              "Because the website has a lot of content"
+            ],
+            "ans": "C",
+            "explanation": "The client is impressed with the website because it has a clear structure and interactive features like a hover effect on the images."
+          }
+        ]
+      }
+    ]
+  }
+}

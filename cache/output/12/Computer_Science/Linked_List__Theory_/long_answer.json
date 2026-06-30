@@ -1,0 +1,92 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Linked List (Theory)",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:01:03.997Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a linked list? Explain its advantages and disadvantages. Also, define nodes and edges in the context of a linked list.",
+        "marks": 5,
+        "answer": "A linked list is a linear data structure where each element is a separate object, known as a node. Each node contains two items: the data and a reference (or link) to the next node in the sequence. This structure allows for efficient insertion or removal of elements from any position in the sequence. The advantages of a linked list include dynamic memory allocation, efficient insertion and deletion, and good memory usage. However, the disadvantages include slow search times, more memory usage per node, and the requirement for more complex code. Nodes are the individual elements in the list, and edges are the links between these nodes.",
+        "marking_scheme": [
+          "Definition of linked list (1 mark)",
+          "Advantages of linked list (1.5 marks)",
+          "Disadvantages of linked list (1.5 marks)",
+          "Definition of nodes and edges (1 mark)"
+        ],
+        "topic": "Introduction to Linked List",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of a circular linked list. How does it differ from a singly linked list? What are the applications of circular linked lists?",
+        "marks": 5,
+        "answer": "A circular linked list is a type of linked list where the last node points back to the first node, forming a circle. This differs from a singly linked list, where the last node points to null. In a circular linked list, any node can be considered the starting point, and the list can be traversed in a loop. The applications of circular linked lists include implementing queues, simulating a circular buffer, and managing a buffer pool.",
+        "marking_scheme": [
+          "Definition of circular linked list (1 mark)",
+          "Difference between circular and singly linked list (1.5 marks)",
+          "Applications of circular linked lists (2.5 marks)"
+        ],
+        "topic": "Types of Linked List",
+        "is_numerical": false
+      },
+      {
+        "q": "What is a doubly linked list? Explain its structure and operations. How does it differ from a singly linked list?",
+        "marks": 5,
+        "answer": "A doubly linked list is a type of linked list where each node contains two pointers: one pointing to the next node and one pointing to the previous node. This allows for efficient insertion and deletion of nodes at any position in the list, as well as traversal in both forward and backward directions. The operations in a doubly linked list include insertion, deletion, and traversal. A doubly linked list differs from a singly linked list in that it has an additional pointer to the previous node, allowing for more efficient operations.",
+        "marking_scheme": [
+          "Definition of doubly linked list (1 mark)",
+          "Structure of doubly linked list (1.5 marks)",
+          "Operations in doubly linked list (1.5 marks)",
+          "Difference between doubly and singly linked list (1 mark)"
+        ],
+        "topic": "Types of Linked List",
+        "is_numerical": false
+      },
+      {
+        "q": "Consider a singly linked list with the following nodes: 1 -> 2 -> 3 -> 4 -> 5. If we want to insert a new node with value 6 at the end of the list, what will be the updated list?",
+        "marks": 5,
+        "answer": "Calculation: \n1. The last node in the list is 5.\n2. Create a new node with value 6.\n3. Set the next pointer of the new node to null.\n4. Set the next pointer of the last node (5) to the new node (6).\nThe updated list will be: 1 -> 2 -> 3 -> 4 -> 5 -> 6",
+        "marking_scheme": [
+          "Identification of the last node (1 mark)",
+          "Creation of the new node (1 mark)",
+          "Updating the next pointer of the last node (1 mark)",
+          "Updated list (2 marks)"
+        ],
+        "topic": "Operations on Linked List",
+        "is_numerical": true
+      },
+      {
+        "q": "Suppose we have a circular linked list with the following nodes: 1 -> 2 -> 3 -> 4 -> 1. If we want to delete the node with value 3, what will be the updated list?",
+        "marks": 5,
+        "answer": "Calculation: \n1. Identify the node to be deleted (3) and its previous node (2).\n2. Set the next pointer of the previous node (2) to the next node of the node to be deleted (4).\n3. Since it's a circular linked list, ensure the last node still points to the first node (1).\nThe updated list will be: 1 -> 2 -> 4 -> 1",
+        "marking_scheme": [
+          "Identification of the node to be deleted and its previous node (1 mark)",
+          "Updating the next pointer of the previous node (1 mark)",
+          "Ensuring the circular link (1 mark)",
+          "Updated list (2 marks)"
+        ],
+        "topic": "Operations on Linked List",
+        "is_numerical": true
+      },
+      {
+        "q": "Consider a doubly linked list with the following nodes: 1 <-> 2 <-> 3 <-> 4 <-> 5. If we want to insert a new node with value 6 between the nodes with values 3 and 4, what will be the updated list?",
+        "marks": 5,
+        "answer": "Calculation: \n1. Identify the nodes between which the new node will be inserted (3 and 4).\n2. Create a new node with value 6.\n3. Set the next pointer of the new node to the node after the insertion point (4).\n4. Set the previous pointer of the new node to the node before the insertion point (3).\n5. Update the next pointer of the node before the insertion point (3) to the new node (6).\n6. Update the previous pointer of the node after the insertion point (4) to the new node (6).\nThe updated list will be: 1 <-> 2 <-> 3 <-> 6 <-> 4 <-> 5",
+        "marking_scheme": [
+          "Identification of the insertion point (1 mark)",
+          "Creation of the new node (1 mark)",
+          "Updating the pointers of the new node (1 mark)",
+          "Updating the pointers of the adjacent nodes (1 mark)",
+          "Updated list (1 mark)"
+        ],
+        "topic": "Operations on Linked List",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

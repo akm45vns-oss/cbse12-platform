@@ -1,0 +1,92 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "MySQL Functions and Grouping",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:01:04.383Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of GROUP BY in MySQL with appropriate examples. Discuss the use of aggregate functions with GROUP BY clause.",
+        "marks": 5,
+        "answer": "GROUP BY is a clause in MySQL that is used to group the result-set by one or more columns. It is often used with aggregate functions like SUM, AVG, MAX, MIN, and COUNT to perform calculations on grouped data. For example, the query `SELECT country, AVG(age) FROM customers GROUP BY country;` would return the average age of customers from each country.",
+        "marking_scheme": [
+          "Explain GROUP BY clause (1 mark)",
+          "Discuss use of aggregate functions with GROUP BY (2 marks)",
+          "Provide example query (1 mark)",
+          "Explain result of the query (1 mark)"
+        ],
+        "topic": "GROUP BY Clause",
+        "is_numerical": false
+      },
+      {
+        "q": "What are MySQL user-defined functions (UDFs)? Describe the steps to create a UDF using the CREATE FUNCTION statement. Provide an example of a UDF that calculates the area of a rectangle.",
+        "marks": 5,
+        "answer": "MySQL UDFs are custom functions that can be created to perform a specific task. To create a UDF, we use the CREATE FUNCTION statement with the LANGUAGE C or LANGUAGE SQL clause. For example, the function to calculate the area of a rectangle can be created as follows: `CREATE FUNCTION area(x INT, y INT) RETURNS INT DETERMINISTIC BEGIN DECLARE a INT; SET a = x * y; RETURN a; END;`",
+        "marking_scheme": [
+          "Define UDFs in MySQL (1 mark)",
+          "Describe CREATE FUNCTION statement (1 mark)",
+          "Provide example of area UDF (2 marks)",
+          "Explain function syntax (1 mark)"
+        ],
+        "topic": "User-Defined Functions",
+        "is_numerical": false
+      },
+      {
+        "q": "Write a MySQL query that uses the GROUP BY clause to find the total sales for each region. Assume the sales data is stored in the table 'sales' with columns 'region' and 'amount'. Use the HAVING clause to filter the results to only include regions with total sales greater than $100,000.",
+        "marks": 5,
+        "answer": "The query to find the total sales for each region using GROUP BY and HAVING clauses is: `SELECT region, SUM(amount) AS total_sales FROM sales GROUP BY region HAVING SUM(amount) > 100000;`",
+        "marking_scheme": [
+          "Write query with GROUP BY and HAVING (2 marks)",
+          "Explain use of HAVING clause (1 mark)",
+          "Explain result of the query (1 mark)",
+          "Explain query syntax (1 mark)"
+        ],
+        "topic": "GROUP BY and HAVING Clause",
+        "is_numerical": false
+      },
+      {
+        "q": "Solve: Find the average salary of employees in each department using the GROUP BY and AVG functions.",
+        "marks": 5,
+        "answer": "Calculation: \n1. Write the query: `SELECT department, AVG(salary) AS average_salary FROM employees GROUP BY department;` \n2. Explain the use of GROUP BY and AVG functions (1 mark) \n3. Explain the result of the query (1 mark)",
+        "marking_scheme": [
+          "Write query with GROUP BY and AVG (1 mark)",
+          "Explain use of GROUP BY and AVG (1 mark)",
+          "Explain result of the query (1 mark)",
+          "Explain query syntax (1 mark)"
+        ],
+        "topic": "Grouping and Aggregate Functions",
+        "is_numerical": true
+      },
+      {
+        "q": "Solve: Create a MySQL function that takes two integers as input and returns their product.",
+        "marks": 5,
+        "answer": "Calculation: \n1. Write the CREATE FUNCTION statement: `CREATE FUNCTION product(x INT, y INT) RETURNS INT DETERMINISTIC BEGIN DECLARE p INT; SET p = x * y; RETURN p; END;` \n2. Explain the use of CREATE FUNCTION statement (1 mark) \n3. Explain the function syntax (1 mark)",
+        "marking_scheme": [
+          "Write CREATE FUNCTION statement (1 mark)",
+          "Explain use of CREATE FUNCTION (1 mark)",
+          "Explain function syntax (1 mark)",
+          "Explain function body (1 mark)"
+        ],
+        "topic": "User-Defined Functions",
+        "is_numerical": true
+      },
+      {
+        "q": "Solve: Write a MySQL query that uses the GROUP BY clause to find the total sales for each region and the total sales for all regions. Use the HAVING clause to filter the results to only include regions with total sales greater than $100,000.",
+        "marks": 5,
+        "answer": "Calculation: \n1. Write the query: `SELECT region, SUM(amount) AS total_sales, SUM(SUM(amount)) OVER () AS total_sales_all FROM sales GROUP BY region HAVING SUM(amount) > 100000;` \n2. Explain the use of GROUP BY and HAVING clauses (1 mark) \n3. Explain the result of the query (1 mark)",
+        "marking_scheme": [
+          "Write query with GROUP BY and HAVING (2 marks)",
+          "Explain use of GROUP BY and HAVING (1 mark)",
+          "Explain result of the query (1 mark)",
+          "Explain query syntax (1 mark)"
+        ],
+        "topic": "GROUP BY and HAVING Clause",
+        "is_numerical": false
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:03:11.767Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Rate of Reaction (r)",
+        "formula": "r = ΔC / Δt",
+        "variables": "ΔC: Change in concentration, Δt: Change in time",
+        "units": "mol L⁻¹ s⁻¹ or M s⁻¹",
+        "notes": ""
+      },
+      {
+        "name": "First Order Rate Equation",
+        "formula": "log a = log A - kt/2.303",
+        "variables": "a: initial concentration, A: concentration at time t, k: rate constant, t: time",
+        "units": "log scale",
+        "notes": ""
+      },
+      {
+        "name": "First Order Rate Equation (Alternative Form)",
+        "formula": "t = 2.303 / k (log A - log a)",
+        "variables": "a: initial concentration, A: concentration at time t, k: rate constant, t: time",
+        "units": "s",
+        "notes": ""
+      },
+      {
+        "name": "Second Order Rate Equation (for two reactants)",
+        "formula": "1/a = 1/A + k × t",
+        "variables": "a: initial concentration, A: concentration at time t, k: rate constant, t: time",
+        "units": "s⁻¹",
+        "notes": ""
+      },
+      {
+        "name": "Second Order Rate Equation (for one reactant)",
+        "formula": "1/√a = 1/√A + k/2 × t",
+        "variables": "a: initial concentration, A: concentration at time t, k: rate constant, t: time",
+        "units": "s⁻¹",
+        "notes": ""
+      },
+      {
+        "name": "Rate Constant (k)",
+        "formula": "k = 2.303 / t (log a - log b)",
+        "variables": "a: initial concentration, b: concentration at time t, t: time",
+        "units": "s⁻¹",
+        "notes": ""
+      },
+      {
+        "name": "Activation Energy (Ea)",
+        "formula": "Ea = RT (log A - log B)",
+        "variables": "R: Gas constant, T: Temperature in Kelvin, A and B: rate constants at different temperatures",
+        "units": "J mol⁻¹",
+        "notes": ""
+      },
+      {
+        "name": "Arrhenius Equation",
+        "formula": "k = Ae^(-Ea/RT)",
+        "variables": "k: rate constant, A: frequency factor, Ea: activation energy, R: gas constant, T: temperature in Kelvin",
+        "units": "s⁻¹",
+        "notes": ""
+      }
+    ]
+  }
+}

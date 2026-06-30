@@ -1,0 +1,178 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "File Handling",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:30:54.503Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a file?",
+        "marks": 1,
+        "answer": "A file is a collection of related information stored in a computer system.",
+        "key_points": [
+          "File is a collection of related information",
+          "File is stored in a computer system"
+        ],
+        "topic": "Introduction to File Handling"
+      },
+      {
+        "q": "What is a stream in Java?",
+        "marks": 1,
+        "answer": "A stream in Java is a sequence of bytes flowing through a program.",
+        "key_points": [
+          "Stream is a sequence of bytes",
+          "Stream flows through a program"
+        ],
+        "topic": "Introduction to Streams"
+      },
+      {
+        "q": "What is the difference between FileInputStream and FileReader?",
+        "marks": 1,
+        "answer": "FileInputStream is used to read binary data from a file, whereas FileReader is used to read text data from a file.",
+        "key_points": [
+          "FileInputStream reads binary data",
+          "FileReader reads text data"
+        ],
+        "topic": "Input Streams"
+      },
+      {
+        "q": "How do you use the append mode in Java?",
+        "marks": 1,
+        "answer": "You can use the append mode in Java using the 'true' argument in the FileWriter or BufferedWriter constructor.",
+        "key_points": [
+          "Append mode is used for adding new data",
+          "Use 'true' argument in the constructor"
+        ],
+        "topic": "Output Streams"
+      },
+      {
+        "q": "What is the purpose of the flush() method in Java?",
+        "marks": 1,
+        "answer": "The flush() method in Java is used to clear the buffer and write the contents to the file.",
+        "key_points": [
+          "Flush() method clears the buffer",
+          "Flush() method writes contents to the file"
+        ],
+        "topic": "Output Streams"
+      },
+      {
+        "q": "Explain how to read a file using BufferedReader in Java. What are its advantages?",
+        "marks": 2,
+        "answer": "You can read a file using BufferedReader in Java by creating a BufferedReader object and reading the data line by line. The advantages of using BufferedReader are that it provides faster reading and better error handling compared to other readers.",
+        "key_points": [
+          "Use BufferedReader to read a file",
+          "Advantages of BufferedReader include faster reading and better error handling"
+        ],
+        "topic": "Input Streams"
+      },
+      {
+        "q": "What are the different types of File I/O operations in Java? Explain each with an example.",
+        "marks": 2,
+        "answer": "The different types of File I/O operations in Java are reading and writing binary data, reading and writing text data. An example of reading binary data is using FileInputStream to read an image file, and an example of reading text data is using FileReader to read a text file.",
+        "key_points": [
+          "Types of File I/O operations include reading and writing binary data and text data",
+          "Examples include reading an image file and a text file"
+        ],
+        "topic": "Input and Output Streams"
+      },
+      {
+        "q": "How do you create a new file in Java, and what are the different ways to do it?",
+        "marks": 2,
+        "answer": "You can create a new file in Java using the createNewFile() method of the File class or by using the FileWriter or BufferedWriter constructor with the 'true' argument.",
+        "key_points": [
+          "Use createNewFile() method to create a new file",
+          "Use FileWriter or BufferedWriter constructor with 'true' argument"
+        ],
+        "topic": "Output Streams"
+      },
+      {
+        "q": "Explain the concept of buffering in Java file I/O operations. What are its advantages?",
+        "marks": 2,
+        "answer": "Buffering in Java file I/O operations refers to the technique of storing data in a buffer before writing it to the file. The advantages of buffering include improved performance, reduced disk I/O, and better error handling.",
+        "key_points": [
+          "Buffering stores data in a buffer before writing to the file",
+          "Advantages of buffering include improved performance and better error handling"
+        ],
+        "topic": "Output Streams"
+      },
+      {
+        "q": "What is the difference between RandomAccessFile and FileInputStream?",
+        "marks": 3,
+        "answer": "RandomAccessFile is used to read and write data at any position in a file, whereas FileInputStream is used to read data from a file sequentially. RandomAccessFile provides more flexibility and control over file I/O operations, but it is slower than FileInputStream.",
+        "key_points": [
+          "RandomAccessFile reads and writes data at any position",
+          "FileInputStream reads data sequentially",
+          "RandomAccessFile provides more flexibility and control, but is slower"
+        ],
+        "topic": "Input Streams"
+      },
+      {
+        "q": "Explain how to use the File class in Java to perform file operations such as creating, deleting, and renaming files.",
+        "marks": 3,
+        "answer": "You can use the File class in Java to perform file operations such as creating, deleting, and renaming files by creating a File object and using its methods such as createNewFile(), delete(), and renameTo().",
+        "key_points": [
+          "Use File class to perform file operations",
+          "Methods include createNewFile(), delete(), and renameTo()"
+        ],
+        "topic": "File Class"
+      },
+      {
+        "q": "What is the difference between FileReader and BufferedReader in Java?",
+        "marks": 3,
+        "answer": "FileReader is used to read text data from a file, whereas BufferedReader is used to read text data from a file more efficiently by buffering the data. BufferedReader provides faster reading and better error handling compared to FileReader.",
+        "key_points": [
+          "FileReader reads text data",
+          "BufferedReader reads text data more efficiently",
+          "BufferedReader provides faster reading and better error handling"
+        ],
+        "topic": "Input Streams"
+      },
+      {
+        "q": "Explain how to use the append mode in Java file I/O operations. What are its advantages?",
+        "marks": 3,
+        "answer": "You can use the append mode in Java file I/O operations by using the 'true' argument in the FileWriter or BufferedWriter constructor. The advantages of append mode include adding new data to the end of the file without overwriting existing data and improved performance.",
+        "key_points": [
+          "Use append mode to add new data to the end of the file",
+          "Advantages include not overwriting existing data and improved performance"
+        ],
+        "topic": "Output Streams"
+      },
+      {
+        "q": "What is the purpose of the close() method in Java file I/O operations? Explain its importance.",
+        "marks": 3,
+        "answer": "The close() method in Java file I/O operations is used to close the stream or reader after use to free up system resources and prevent memory leaks. Closing the stream or reader is important to prevent errors and improve system performance.",
+        "key_points": [
+          "Close() method frees up system resources",
+          "Closing the stream or reader prevents errors and improves system performance"
+        ],
+        "topic": "Input and Output Streams"
+      },
+      {
+        "q": "Explain the concept of file buffering in Java. What are its advantages and disadvantages?",
+        "marks": 3,
+        "answer": "File buffering in Java refers to the technique of storing data in a buffer before writing it to the file. The advantages of file buffering include improved performance, reduced disk I/O, and better error handling. However, it can also increase memory usage and slow down performance if the buffer is too large.",
+        "key_points": [
+          "File buffering stores data in a buffer before writing to the file",
+          "Advantages include improved performance and better error handling",
+          "Disadvantages include increased memory usage and potential performance slowdown"
+        ],
+        "topic": "Output Streams"
+      },
+      {
+        "q": "What is the difference between BufferedOutputStream and FileOutputStream?",
+        "marks": 3,
+        "answer": "BufferedOutputStream is used to write data to a file more efficiently by buffering the data, whereas FileOutputStream is used to write data to a file sequentially. BufferedOutputStream provides faster writing and better error handling compared to FileOutputStream.",
+        "key_points": [
+          "BufferedOutputStream writes data more efficiently",
+          "FileOutputStream writes data sequentially",
+          "BufferedOutputStream provides faster writing and better error handling"
+        ],
+        "topic": "Output Streams"
+      }
+    ],
+    "total": 16
+  }
+}

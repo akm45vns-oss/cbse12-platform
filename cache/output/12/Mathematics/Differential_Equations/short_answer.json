@@ -1,0 +1,151 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Differential Equations",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:29:26.024Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define a differential equation.",
+        "marks": 1,
+        "answer": "A differential equation is an equation involving an unknown function and its derivatives.",
+        "key_points": [
+          "Differential equation",
+          "Unknown function",
+          "Derivatives"
+        ],
+        "topic": "Introduction to Differential Equations"
+      },
+      {
+        "q": "State the order of a differential equation.",
+        "marks": 1,
+        "answer": "The order of a differential equation is the highest order of the derivative of the unknown function.",
+        "key_points": [
+          "Order of differential equation",
+          "Highest order of derivative"
+        ],
+        "topic": "Introduction to Differential Equations"
+      },
+      {
+        "q": "Explain the concept of a particular solution of a differential equation.",
+        "marks": 1,
+        "answer": "A particular solution of a differential equation is a specific solution to the equation, which satisfies the initial conditions.",
+        "key_points": [
+          "Particular solution",
+          "Initial conditions"
+        ],
+        "topic": "General and Particular Solutions"
+      },
+      {
+        "q": "State the general solution of a differential equation.",
+        "marks": 1,
+        "answer": "The general solution of a differential equation is a family of solutions, which includes all possible solutions.",
+        "key_points": [
+          "General solution",
+          "Family of solutions"
+        ],
+        "topic": "General and Particular Solutions"
+      },
+      {
+        "q": "Define an integrating factor for a differential equation.",
+        "marks": 1,
+        "answer": "An integrating factor is a function used to make the left-hand side of a differential equation an exact differential.",
+        "key_points": [
+          "Integrating factor",
+          "Exact differential"
+        ],
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "Explain how to find the integrating factor for a differential equation.",
+        "marks": 2,
+        "answer": "The integrating factor is found by using the formula μ(x) = e^∫P(x)dx, where P(x) is the coefficient of the first derivative.",
+        "key_points": [
+          "Integrating factor",
+          "Formula",
+          "Coefficient of first derivative"
+        ],
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "Solve the differential equation dy/dx + P(x)y = Q(x) using the integrating factor.",
+        "marks": 3,
+        "answer": "The solution is given by y = (1/μ(x))∫μ(x)Q(x)dx + C/μ(x), where μ(x) is the integrating factor.",
+        "key_points": [
+          "Integrating factor",
+          "Solution",
+          "Formula"
+        ],
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "State the Euler's method for solving a differential equation.",
+        "marks": 1,
+        "answer": "Euler's method is an iterative method used to approximate the solution of a differential equation.",
+        "key_points": [
+          "Euler's method",
+          "Iterative method"
+        ],
+        "topic": "Numerical Methods"
+      },
+      {
+        "q": "Explain the concept of Picard's method for solving a differential equation.",
+        "marks": 2,
+        "answer": "Picard's method is an iterative method used to approximate the solution of a differential equation, which involves repeated substitution of the solution.",
+        "key_points": [
+          "Picard's method",
+          "Iterative method",
+          "Repeated substitution"
+        ],
+        "topic": "Numerical Methods"
+      },
+      {
+        "q": "Solve the differential equation y' = x^2 + y^2 using Picard's method.",
+        "marks": 3,
+        "answer": "The solution is given by y ≈ y0 + ∫[x0, x] (x^2 + (y0 + ∫[x0, t] (x^2 + (y0)^2) dt)^2) dt, where y0 is the initial approximation.",
+        "key_points": [
+          "Picard's method",
+          "Solution",
+          "Formula"
+        ],
+        "topic": "Numerical Methods"
+      },
+      {
+        "q": "State the Lagrange's linear equation.",
+        "marks": 1,
+        "answer": "Lagrange's linear equation is of the form y' + P(x)y = Q(x), where P(x) and Q(x) are functions of x.",
+        "key_points": [
+          "Lagrange's linear equation",
+          "Functions of x"
+        ],
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "Explain how to solve a linear differential equation of the form y' + P(x)y = Q(x).",
+        "marks": 2,
+        "answer": "The solution is given by y = (1/μ(x))∫μ(x)Q(x)dx + C/μ(x), where μ(x) is the integrating factor.",
+        "key_points": [
+          "Linear differential equation",
+          "Integrating factor",
+          "Solution"
+        ],
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "Solve the differential equation y' + 2xy = x^3 using the integrating factor.",
+        "marks": 3,
+        "answer": "The solution is given by y = x^2 + C/e^x^2, where C is the constant of integration.",
+        "key_points": [
+          "Integrating factor",
+          "Solution",
+          "Constant of integration"
+        ],
+        "topic": "Linear Differential Equations"
+      }
+    ],
+    "total": 13
+  }
+}

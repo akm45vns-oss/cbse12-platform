@@ -1,0 +1,235 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:27:10.338Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If f(x) = sin^{-1}(x), then f(sin(π/6)) is?",
+        "opts": [
+          "(A) π/6",
+          "(B) π/3",
+          "(C) π/2",
+          "(D) π/4"
+        ],
+        "ans": "A",
+        "explanation": "Since sin(π/6) is within the range of sin^{-1}x, we can directly substitute the value.",
+        "difficulty": "easy",
+        "topic": "Properties of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = tan^{-1}(x), then f(-x) is?",
+        "opts": [
+          "(A) tan^{-1}x",
+          "(B) -tan^{-1}x",
+          "(C) π - tan^{-1}x",
+          "(D) -π + tan^{-1}x"
+        ],
+        "ans": "C",
+        "explanation": "Since the range of tan^{-1}x is restricted to (-π/2, π/2), we have to adjust the sign of the output.",
+        "difficulty": "easy",
+        "topic": "Properties of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "Which of the following is a property of inverse trigonometric functions?",
+        "opts": [
+          "(A) They are one-to-one functions",
+          "(B) They are periodic functions",
+          "(C) They are even functions",
+          "(D) They are odd functions"
+        ],
+        "ans": "A",
+        "explanation": "Inverse trigonometric functions are one-to-one functions, which is a necessary condition for them to be invertible.",
+        "difficulty": "easy",
+        "topic": "Properties of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = sin^{-1}x, then the domain of f(x) is?",
+        "opts": [
+          "(A) [-1, 1]",
+          "(B) [-1, 0) ∪ (0, 1]",
+          "(C) [-1, 0] ∪ (0, 1]",
+          "(D) [-1, 1]"
+        ],
+        "ans": "B",
+        "explanation": "The domain of sin^{-1}x is restricted to the interval [-1, 1] because the range of sinx is [-1, 1].",
+        "difficulty": "easy",
+        "topic": "Domain and Range of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = cos^{-1}x, then the range of f(x) is?",
+        "opts": [
+          "(A) [0, π]",
+          "(B) [0, π/2]",
+          "(C) [0, π/2) ∪ (3π/2, 2π)",
+          "(D) [0, π/2) ∪ (π, 3π/2)"
+        ],
+        "ans": "A",
+        "explanation": "The range of cos^{-1}x is restricted to [0, π] because the range of cosx is [0, 1].",
+        "difficulty": "easy",
+        "topic": "Domain and Range of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "Which of the following is a composite function of inverse trigonometric functions?",
+        "opts": [
+          "(A) sin(sin^{-1}x)",
+          "(B) cos(cos^{-1}x)",
+          "(C) tan(tan^{-1}x)",
+          "(D) sin(cos^{-1}x)"
+        ],
+        "ans": "D",
+        "explanation": "The composition of sin and cos^{-1}x is a composite function of inverse trigonometric functions.",
+        "difficulty": "medium",
+        "topic": "Composite Functions of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = tan^{-1}x, then the domain of f(x) is?",
+        "opts": [
+          "(A) [-∞, ∞]",
+          "(B) [-1, 1]",
+          "(C) (-∞, -1] ∪ [1, ∞)",
+          "(D) (-∞, 1] ∪ [1, ∞)"
+        ],
+        "ans": "C",
+        "explanation": "The domain of tan^{-1}x is restricted to (-∞, -1] ∪ [1, ∞) because the range of tanx is all real numbers.",
+        "difficulty": "medium",
+        "topic": "Domain and Range of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = sin^{-1}x, then the inverse function of f(x) is?",
+        "opts": [
+          "(A) sin(x)",
+          "(B) cos(x)",
+          "(C) tan(x)",
+          "(D) f(x) = x"
+        ],
+        "ans": "A",
+        "explanation": "The inverse function of sin^{-1}x is sin(x).",
+        "difficulty": "medium",
+        "topic": "Inverse of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = sin^{-1}x, then the derivative of f(x) is?",
+        "opts": [
+          "(A) f'(x) = 1/√(1-x^2)",
+          "(B) f'(x) = 1/√(1-x^2)",
+          "(C) f'(x) = 1/√(1+x^2)",
+          "(D) f'(x) = 1/√(1+x^2)"
+        ],
+        "ans": "A",
+        "explanation": "The derivative of sin^{-1}x is 1/√(1-x^2).",
+        "difficulty": "medium",
+        "topic": "Derivatives of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = cos^{-1}x, then the derivative of f(x) is?",
+        "opts": [
+          "(A) f'(x) = -1/√(1-x^2)",
+          "(B) f'(x) = 1/√(1-x^2)",
+          "(C) f'(x) = -1/√(1+x^2)",
+          "(D) f'(x) = 1/√(1+x^2)"
+        ],
+        "ans": "A",
+        "explanation": "The derivative of cos^{-1}x is -1/√(1-x^2).",
+        "difficulty": "medium",
+        "topic": "Derivatives of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = tan^{-1}x, then the derivative of f(x) is?",
+        "opts": [
+          "(A) f'(x) = 1/1+x^2",
+          "(B) f'(x) = -1/1+x^2",
+          "(C) f'(x) = 1/(1-x^2)",
+          "(D) f'(x) = -1/(1-x^2)"
+        ],
+        "ans": "A",
+        "explanation": "The derivative of tan^{-1}x is 1/1+x^2.",
+        "difficulty": "medium",
+        "topic": "Derivatives of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = sin^{-1}x, then the integral of f(x) is?",
+        "opts": [
+          "(A) ∫f(x) dx = x sin^{-1}x + √(1-x^2)",
+          "(B) ∫f(x) dx = x sin^{-1}x - √(1-x^2)",
+          "(C) ∫f(x) dx = sin^{-1}x - x √(1-x^2)",
+          "(D) ∫f(x) dx = sin^{-1}x + x √(1-x^2)"
+        ],
+        "ans": "A",
+        "explanation": "The integral of sin^{-1}x is x sin^{-1}x + √(1-x^2).",
+        "difficulty": "hard",
+        "topic": "Integrals of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = cos^{-1}x, then the integral of f(x) is?",
+        "opts": [
+          "(A) ∫f(x) dx = x cos^{-1}x - √(1-x^2)",
+          "(B) ∫f(x) dx = x cos^{-1}x + √(1-x^2)",
+          "(C) ∫f(x) dx = cos^{-1}x - x √(1-x^2)",
+          "(D) ∫f(x) dx = cos^{-1}x + x √(1-x^2)"
+        ],
+        "ans": "A",
+        "explanation": "The integral of cos^{-1}x is x cos^{-1}x - √(1-x^2).",
+        "difficulty": "hard",
+        "topic": "Integrals of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = tan^{-1}x, then the integral of f(x) is?",
+        "opts": [
+          "(A) ∫f(x) dx = x tan^{-1}x - 1/2 ln(1+x^2)",
+          "(B) ∫f(x) dx = x tan^{-1}x + 1/2 ln(1+x^2)",
+          "(C) ∫f(x) dx = tan^{-1}x - x 1/2 ln(1+x^2)",
+          "(D) ∫f(x) dx = tan^{-1}x + x 1/2 ln(1+x^2)"
+        ],
+        "ans": "A",
+        "explanation": "The integral of tan^{-1}x is x tan^{-1}x - 1/2 ln(1+x^2).",
+        "difficulty": "hard",
+        "topic": "Integrals of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = sin^{-1}x, then the second derivative of f(x) is?",
+        "opts": [
+          "(A) f''(x) = -x/√(1-x^2)",
+          "(B) f''(x) = x/√(1-x^2)",
+          "(C) f''(x) = -1/√(1-x^2)",
+          "(D) f''(x) = 1/√(1-x^2)"
+        ],
+        "ans": "A",
+        "explanation": "The second derivative of sin^{-1}x is -x/√(1-x^2).",
+        "difficulty": "hard",
+        "topic": "Second Derivatives of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = cos^{-1}x, then the second derivative of f(x) is?",
+        "opts": [
+          "(A) f''(x) = x/√(1-x^2)",
+          "(B) f''(x) = -x/√(1-x^2)",
+          "(C) f''(x) = 1/√(1-x^2)",
+          "(D) f''(x) = -1/√(1-x^2)"
+        ],
+        "ans": "A",
+        "explanation": "The second derivative of cos^{-1}x is x/√(1-x^2).",
+        "difficulty": "hard",
+        "topic": "Second Derivatives of Inverse Trigonometric Functions"
+      },
+      {
+        "q": "If f(x) = tan^{-1}x, then the second derivative of f(x) is?",
+        "opts": [
+          "(A) f''(x) = -2x/(1+x^2)",
+          "(B) f''(x) = 2x/(1+x^2)",
+          "(C) f''(x) = -1/(1+x^2)",
+          "(D) f''(x) = 1/(1+x^2)"
+        ],
+        "ans": "A",
+        "explanation": "The second derivative of tan^{-1}x is -2x/(1+x^2).",
+        "difficulty": "hard",
+        "topic": "Second Derivatives of Inverse Trigonometric Functions"
+      }
+    ],
+    "total": 17
+  }
+}

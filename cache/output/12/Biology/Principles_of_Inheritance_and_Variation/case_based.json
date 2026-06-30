@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Principles of Inheritance and Variation",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:16:06.775Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "In a small village, a family has a history of red hair. The father has red hair, and his wife has black hair. They have three children, two boys, and a girl. The first boy has red hair, the second boy has black hair, and the girl has black hair. The family is worried about the inheritance pattern of red hair. They approach a genetic counselor to understand the possible reasons behind this variation. The counselor starts by explaining the concept of Mendelian inheritance and the role of dominant and recessive alleles.",
+        "questions": [
+          {
+            "q": "What is the possible genotype of the father if he has red hair?",
+            "opts": [
+              "RR",
+              "Rr",
+              "rr",
+              "Both Rr and rr"
+            ],
+            "ans": "Rr",
+            "explanation": "The father has red hair, which is a dominant trait. Therefore, his genotype can be either RR or Rr. But since he has a wife with black hair, it is likely that he is Rr."
+          },
+          {
+            "q": "What is the probability of the second boy inheriting red hair?",
+            "opts": [
+              "0%",
+              "25%",
+              "50%",
+              "100%"
+            ],
+            "ans": "25%",
+            "explanation": "The second boy can inherit either R or r allele from his father. Since his father is Rr, there is a 50% chance of inheriting R and a 50% chance of inheriting r. Therefore, the probability of inheriting red hair is 25%."
+          },
+          {
+            "q": "Why did the genetic counselor explain the concept of Mendelian inheritance?",
+            "opts": [
+              "To explain the concept of genomics",
+              "To explain the concept of epigenetics",
+              "To understand the possible reasons behind the variation in red hair",
+              "To explain the concept of gene expression"
+            ],
+            "ans": "To understand the possible reasons behind the variation in red hair",
+            "explanation": "The genetic counselor explained the concept of Mendelian inheritance to understand the possible reasons behind the variation in red hair in the family."
+          },
+          {
+            "q": "What is the genotype of the girl if she has black hair?",
+            "opts": [
+              "RR",
+              "Rr",
+              "rr",
+              "Either RR or Rr"
+            ],
+            "ans": "rr",
+            "explanation": "The girl has black hair, which is a recessive trait. Therefore, her genotype must be rr."
+          },
+          {
+            "q": "Why did the family approach a genetic counselor?",
+            "opts": [
+              "To understand the concept of genetics",
+              "To understand the concept of genomics",
+              "To understand the possible reasons behind the variation in red hair",
+              "To understand the concept of DNA"
+            ],
+            "ans": "To understand the possible reasons behind the variation in red hair",
+            "explanation": "The family approached a genetic counselor to understand the possible reasons behind the variation in red hair in their family."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A farmer has a field of wheat that is prone to a disease called rust. The farmer has noticed that some plants in the field have a recessive trait called yellow leaf, which makes them resistant to the disease. The farmer wants to breed more plants with yellow leaves to create a resistant variety. He starts by selecting plants with yellow leaves and crossing them with each other to produce offspring.",
+        "questions": [
+          {
+            "q": "What is the genotype of the farmer's selection if they have yellow leaves?",
+            "opts": [
+              "YY",
+              "Yy",
+              "yy",
+              "Either YY or Yy"
+            ],
+            "ans": "yy",
+            "explanation": "The farmer's selection has yellow leaves, which is a recessive trait. Therefore, their genotype must be yy."
+          },
+          {
+            "q": "What is the purpose of the farmer selecting plants with yellow leaves?",
+            "opts": [
+              "To understand the concept of genetics",
+              "To understand the concept of genomics",
+              "To breed more plants with yellow leaves to create a resistant variety",
+              "To understand the concept of DNA"
+            ],
+            "ans": "To breed more plants with yellow leaves to create a resistant variety",
+            "explanation": "The farmer selected plants with yellow leaves to breed more plants with yellow leaves and create a resistant variety."
+          },
+          {
+            "q": "What is the genotype of the offspring if the farmer crosses two plants with yellow leaves?",
+            "opts": [
+              "YY",
+              "Yy",
+              "yy",
+              "Either YY or Yy"
+            ],
+            "ans": "Yy",
+            "explanation": "When the farmer crosses two plants with yellow leaves, the offspring will inherit either Y or y allele from each parent. Therefore, the genotype of the offspring will be Yy."
+          },
+          {
+            "q": "Why did the farmer cross two plants with yellow leaves?",
+            "opts": [
+              "To understand the concept of Mendelian inheritance",
+              "To understand the concept of epigenetics",
+              "To breed more plants with yellow leaves to create a resistant variety",
+              "To understand the concept of gene expression"
+            ],
+            "ans": "To breed more plants with yellow leaves to create a resistant variety",
+            "explanation": "The farmer crossed two plants with yellow leaves to breed more plants with yellow leaves and create a resistant variety."
+          },
+          {
+            "q": "What is the benefit of the resistant variety for the farmer?",
+            "opts": [
+              "It will increase the yield of the crop",
+              "It will decrease the yield of the crop",
+              "It will make the crop more susceptible to disease",
+              "It will make the crop resistant to disease"
+            ],
+            "ans": "It will make the crop resistant to disease",
+            "explanation": "The resistant variety will make the crop resistant to disease, which will be beneficial for the farmer."
+          }
+        ]
+      }
+    ]
+  }
+}

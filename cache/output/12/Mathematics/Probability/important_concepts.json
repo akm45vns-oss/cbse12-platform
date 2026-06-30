@@ -1,0 +1,53 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Probability",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:18:24.934Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "Random Experiment and Sample Space",
+        "description": "A random experiment is a well-defined procedure that produces a well-defined set of outcomes. The collection of all possible outcomes is called the sample space, denoted as S."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Probability of an Event",
+        "description": "The probability of an event E, denoted as P(E), is defined as the number of favorable outcomes divided by the total number of possible outcomes, i.e., P(E) = (Number of favorable outcomes) / (Total number of possible outcomes)."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Independent Events",
+        "description": "Two events E1 and E2 are said to be independent if the occurrence or non-occurrence of one event does not affect the probability of the occurrence of the other event, i.e., P(E1 ∩ E2) = P(E1) × P(E2)."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "Mnemonics for Calculating Probability",
+        "description": "Use the mnemonics 'FIND' for calculating probability: F - Favorable outcomes, I - In the sample space, N - Number of favorable outcomes, D - Divide, i.e., Number of favorable outcomes / Total number of possible outcomes."
+      },
+      {
+        "category": "Common Mistake",
+        "title": "Confusing Independent and Dependent Events",
+        "description": "Be careful to identify whether events are independent or dependent. If events are independent, use the formula P(E1 ∩ E2) = P(E1) × P(E2). If events are dependent, use the formula P(E1 ∩ E2) = P(E1) × P(E2 | E1)."
+      },
+      {
+        "category": "Units to remember",
+        "title": "Types of Probability",
+        "description": "There are three types of probability: Theoretical Probability, Experimental Probability, and Classical Probability. Theoretical probability is calculated using the formula P(E) = (Number of favorable outcomes) / (Total number of possible outcomes). Experimental probability is calculated using relative frequency. Classical probability is used for equally likely outcomes."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Complementary Events",
+        "description": "Two events E and E' are said to be complementary events if they are mutually exclusive and exhaustive, i.e., one event cannot occur with the other event, and together they cover all possible outcomes. The probability of a complementary event is P(E') = 1 - P(E)."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Conditional Probability",
+        "description": "The probability of an event E given that event F has occurred is denoted as P(E | F) and is calculated using the formula P(E | F) = P(E ∩ F) / P(F)."
+      }
+    ]
+  }
+}

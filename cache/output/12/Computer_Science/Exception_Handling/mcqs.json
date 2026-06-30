@@ -1,0 +1,235 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Exception Handling",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:37:40.125Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the purpose of try block in exception handling?",
+        "opts": [
+          "(A) To handle exceptions",
+          "(B) To prevent exceptions",
+          "(C) To execute the code that might throw an exception",
+          "(D) To handle errors"
+        ],
+        "ans": "C",
+        "explanation": "The try block is used to execute the code that might throw an exception. It is a block of code where you try to execute some operation.",
+        "difficulty": "easy",
+        "topic": "Basic Exception Handling"
+      },
+      {
+        "q": "What is the purpose of catch block in exception handling?",
+        "opts": [
+          "(A) To handle errors",
+          "(B) To prevent exceptions",
+          "(C) To execute the code that might throw an exception",
+          "(D) To handle exceptions"
+        ],
+        "ans": "D",
+        "explanation": "The catch block is used to handle exceptions. It is a block of code where you can handle the exception that is thrown by the try block.",
+        "difficulty": "easy",
+        "topic": "Basic Exception Handling"
+      },
+      {
+        "q": "What is the purpose of finally block in exception handling?",
+        "opts": [
+          "(A) To handle errors",
+          "(B) To prevent exceptions",
+          "(C) To execute the code that might throw an exception",
+          "(D) To free up resources"
+        ],
+        "ans": "D",
+        "explanation": "The finally block is used to free up resources. It is a block of code that is executed regardless of whether an exception is thrown or not.",
+        "difficulty": "easy",
+        "topic": "Basic Exception Handling"
+      },
+      {
+        "q": "Which of the following is a type of exception?",
+        "opts": [
+          "(A) Syntax error",
+          "(B) Runtime error",
+          "(C) Both",
+          "(D) None"
+        ],
+        "ans": "C",
+        "explanation": "Both syntax error and runtime error are types of exceptions. Syntax error occurs when there is a mistake in the code, while runtime error occurs when there is a mistake in the code that is executed at runtime.",
+        "difficulty": "easy",
+        "topic": "Types of Exceptions"
+      },
+      {
+        "q": "What is a checked exception?",
+        "opts": [
+          "(A) An exception that is checked at compile time",
+          "(B) An exception that is checked at runtime",
+          "(C) An exception that is not checked at all",
+          "(D) An exception that is checked by the compiler"
+        ],
+        "ans": "A",
+        "explanation": "A checked exception is an exception that is checked at compile time. It is a type of exception that is checked by the compiler before the code is executed.",
+        "difficulty": "medium",
+        "topic": "Types of Exceptions"
+      },
+      {
+        "q": "What is an unchecked exception?",
+        "opts": [
+          "(A) An exception that is checked at compile time",
+          "(B) An exception that is checked at runtime",
+          "(C) An exception that is not checked at all",
+          "(D) An exception that is checked by the compiler"
+        ],
+        "ans": "C",
+        "explanation": "An unchecked exception is an exception that is not checked at all. It is a type of exception that is checked at runtime, not at compile time.",
+        "difficulty": "medium",
+        "topic": "Types of Exceptions"
+      },
+      {
+        "q": "What is the difference between checked and unchecked exceptions?",
+        "opts": [
+          "(A) Checked exceptions are checked at compile time, while unchecked exceptions are checked at runtime",
+          "(B) Checked exceptions are checked at runtime, while unchecked exceptions are checked at compile time",
+          "(C) Checked exceptions are not checked at all, while unchecked exceptions are checked at runtime",
+          "(D) Checked exceptions are checked by the compiler, while unchecked exceptions are not checked at all"
+        ],
+        "ans": "A",
+        "explanation": "Checked exceptions are checked at compile time, while unchecked exceptions are checked at runtime.",
+        "difficulty": "medium",
+        "topic": "Types of Exceptions"
+      },
+      {
+        "q": "Which of the following is a method of the Exception class?",
+        "opts": [
+          "(A) getMessage()",
+          "(B) getStackTrace()",
+          "(C) Both",
+          "(D) None"
+        ],
+        "ans": "C",
+        "explanation": "Both getMessage() and getStackTrace() are methods of the Exception class. getMessage() is used to get the message of the exception, while getStackTrace() is used to get the stack trace of the exception.",
+        "difficulty": "medium",
+        "topic": "Methods of Exception Class"
+      },
+      {
+        "q": "What is the purpose of throw keyword in exception handling?",
+        "opts": [
+          "(A) To handle exceptions",
+          "(B) To prevent exceptions",
+          "(C) To throw an exception",
+          "(D) To handle errors"
+        ],
+        "ans": "C",
+        "explanation": "The throw keyword is used to throw an exception. It is used to indicate that an exception has occurred.",
+        "difficulty": "medium",
+        "topic": "Throw Keyword"
+      },
+      {
+        "q": "Which of the following is a type of exception that is thrown by the Java Virtual Machine (JVM)?",
+        "opts": [
+          "(A) ArithmeticException",
+          "(B) NullPointerException",
+          "(C) Both",
+          "(D) None"
+        ],
+        "ans": "C",
+        "explanation": "Both ArithmeticException and NullPointerException are types of exceptions that are thrown by the Java Virtual Machine (JVM). ArithmeticException is thrown when there is an error in an arithmetic operation, while NullPointerException is thrown when a null is used where an object is required.",
+        "difficulty": "hard",
+        "topic": "Exceptions Thrown by JVM"
+      },
+      {
+        "q": "Which of the following is a method of the Throwable class?",
+        "opts": [
+          "(A) toString()",
+          "(B) equals()",
+          "(C) Both",
+          "(D) None"
+        ],
+        "ans": "C",
+        "explanation": "Both toString() and equals() are methods of the Throwable class. toString() is used to get the string representation of the exception, while equals() is used to check if the exception is equal to another exception.",
+        "difficulty": "hard",
+        "topic": "Methods of Throwable Class"
+      },
+      {
+        "q": "What is the purpose of getStackTrace() method in exception handling?",
+        "opts": [
+          "(A) To get the message of the exception",
+          "(B) To get the stack trace of the exception",
+          "(C) To get the type of the exception",
+          "(D) To get the cause of the exception"
+        ],
+        "ans": "B",
+        "explanation": "The getStackTrace() method is used to get the stack trace of the exception. It is a method of the Throwable class that returns an array of StackTraceElement objects, which represent the stack trace of the exception.",
+        "difficulty": "hard",
+        "topic": "Methods of Throwable Class"
+      },
+      {
+        "q": "Which of the following is a method of the Exception class that is used to get the cause of the exception?",
+        "opts": [
+          "(A) getCause()",
+          "(B) getSuppressed()",
+          "(C) Both",
+          "(D) None"
+        ],
+        "ans": "A",
+        "explanation": "The getCause() method is used to get the cause of the exception. It is a method of the Exception class that returns the cause of the exception, or null if the exception does not have a cause.",
+        "difficulty": "hard",
+        "topic": "Methods of Exception Class"
+      },
+      {
+        "q": "What is the purpose of getSuppressed() method in exception handling?",
+        "opts": [
+          "(A) To get the message of the exception",
+          "(B) To get the stack trace of the exception",
+          "(C) To get the suppressed exceptions",
+          "(D) To get the cause of the exception"
+        ],
+        "ans": "C",
+        "explanation": "The getSuppressed() method is used to get the suppressed exceptions. It is a method of the Throwable class that returns an array of Throwable objects, which represent the suppressed exceptions.",
+        "difficulty": "hard",
+        "topic": "Methods of Throwable Class"
+      },
+      {
+        "q": "Which of the following is a type of exception that is thrown by a method?",
+        "opts": [
+          "(A) ArithmeticException",
+          "(B) NullPointerException",
+          "(C) Both",
+          "(D) None"
+        ],
+        "ans": "C",
+        "explanation": "Both ArithmeticException and NullPointerException are types of exceptions that are thrown by a method. ArithmeticException is thrown when there is an error in an arithmetic operation, while NullPointerException is thrown when a null is used where an object is required.",
+        "difficulty": "hard",
+        "topic": "Exceptions Thrown by Methods"
+      },
+      {
+        "q": "What is the purpose of throws keyword in exception handling?",
+        "opts": [
+          "(A) To handle exceptions",
+          "(B) To prevent exceptions",
+          "(C) To declare exceptions",
+          "(D) To handle errors"
+        ],
+        "ans": "C",
+        "explanation": "The throws keyword is used to declare exceptions. It is used to indicate that a method may throw an exception.",
+        "difficulty": "hard",
+        "topic": "Throws Keyword"
+      },
+      {
+        "q": "Which of the following is a type of exception that is declared by a method?",
+        "opts": [
+          "(A) ArithmeticException",
+          "(B) NullPointerException",
+          "(C) Both",
+          "(D) None"
+        ],
+        "ans": "C",
+        "explanation": "Both ArithmeticException and NullPointerException are types of exceptions that are declared by a method. ArithmeticException is declared when there is an error in an arithmetic operation, while NullPointerException is declared when a null is used where an object is required.",
+        "difficulty": "hard",
+        "topic": "Exceptions Declared by Methods"
+      }
+    ],
+    "total": 17
+  }
+}

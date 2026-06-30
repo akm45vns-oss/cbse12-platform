@@ -1,0 +1,91 @@
+{
+  "class": "12",
+  "subject": "Economics",
+  "chapter": "National Income and Related Aggregates",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:02:13.041Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of national income. How is it calculated?",
+        "marks": 5,
+        "answer": "National income refers to the total value of goods and services produced within a country during a given period of time, usually a year. It is calculated by adding up the value of all final goods and services produced within the domestic territory of a country. The calculation involves adding up the gross domestic product (GDP) at market prices, which includes the value of consumption, investment, government spending, and net exports.",
+        "marking_scheme": [
+          "Definition of national income (1 mark)",
+          "Method of calculation (2 marks)",
+          "Inclusion of GDP at market prices (1 mark)",
+          "Exclusion of intermediate goods (1 mark)"
+        ],
+        "topic": "National Income",
+        "is_numerical": false
+      },
+      {
+        "q": "What are the differences between GDP at market prices and GDP at factor cost? Explain with examples.",
+        "marks": 5,
+        "answer": "GDP at market prices includes the value of goods and services produced within a country, including indirect taxes and excluding subsidies. On the other hand, GDP at factor cost excludes indirect taxes and includes subsidies. For example, if the market price of a good is Rs. 100, which includes a tax of Rs. 10, then the GDP at market prices will include the entire Rs. 100, while the GDP at factor cost will only include Rs. 90 (Rs. 100 - Rs. 10 tax).",
+        "marking_scheme": [
+          "Definition of GDP at market prices (1 mark)",
+          "Definition of GDP at factor cost (1 mark)",
+          "Example to illustrate the difference (2 marks)",
+          "Explanation of the difference (1 mark)"
+        ],
+        "topic": "GDP and Factor Cost",
+        "is_numerical": false
+      },
+      {
+        "q": "Discuss the importance of national income accounting in a country.",
+        "marks": 5,
+        "answer": "National income accounting is crucial for a country as it provides a comprehensive picture of the economy's performance. It helps in evaluating the growth rate of the economy, allocating resources, and making informed policy decisions. National income accounting also enables international comparisons and provides a basis for economic planning and forecasting.",
+        "marking_scheme": [
+          "Importance in evaluating growth rate (1 mark)",
+          "Importance in resource allocation (1 mark)",
+          "Importance in policy decisions (1 mark)",
+          "Importance in international comparisons (1 mark)",
+          "Importance in economic planning (1 mark)"
+        ],
+        "topic": "Importance of National Income",
+        "is_numerical": false
+      },
+      {
+        "q": "The following data relates to a country: Consumption = Rs. 200, Investment = Rs. 50, Government Spending = Rs. 100, and Net Exports = Rs. 20. Calculate the GDP using the expenditure method.",
+        "marks": 5,
+        "answer": "Calculation: \nGDP = C + I + G + (X - M) \nGDP = 200 + 50 + 100 + 20 \nGDP = 370",
+        "marking_scheme": [
+          "Correct formula application (2 marks)",
+          "Correct calculation (2 marks)",
+          "Correct answer (1 mark)"
+        ],
+        "topic": "Expenditure Method",
+        "is_numerical": true
+      },
+      {
+        "q": "A country has the following data: National Income = Rs. 500, Indirect Taxes = Rs. 50, and Subsidies = Rs. 20. Calculate the GDP at market prices and GDP at factor cost.",
+        "marks": 5,
+        "answer": "Calculation: \nGDP at market prices = National Income + Indirect Taxes - Subsidies \nGDP at market prices = 500 + 50 - 20 \nGDP at market prices = 530 \nGDP at factor cost = National Income + Subsidies - Indirect Taxes \nGDP at factor cost = 500 + 20 - 50 \nGDP at factor cost = 470",
+        "marking_scheme": [
+          "Correct formula application (2 marks)",
+          "Correct calculation of GDP at market prices (1 mark)",
+          "Correct calculation of GDP at factor cost (1 mark)",
+          "Correct answers (1 mark)"
+        ],
+        "topic": "GDP Calculations",
+        "is_numerical": true
+      },
+      {
+        "q": "The following data relates to a country: GDP at market prices = Rs. 1000, Depreciation = Rs. 100, and Net Factor Income from Abroad = Rs. 50. Calculate the National Income.",
+        "marks": 5,
+        "answer": "Calculation: \nNational Income = GDP at market prices - Depreciation + Net Factor Income from Abroad \nNational Income = 1000 - 100 + 50 \nNational Income = 950",
+        "marking_scheme": [
+          "Correct formula application (2 marks)",
+          "Correct calculation (2 marks)",
+          "Correct answer (1 mark)"
+        ],
+        "topic": "National Income Calculation",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "MySQL Functions and Grouping",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:32:58.132Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Functions in MySQL can be used to simplify complex queries.",
+        "reason": "Reason (R): Functions in MySQL help to avoid repetition of code and make the query more readable.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Functions in MySQL help to simplify complex queries and reduce code repetition, making the query more readable."
+      },
+      {
+        "assertion": "Assertion (A): GROUP BY clause is used to group rows in a table based on one or more columns.",
+        "reason": "Reason (R): GROUP BY clause is used in conjunction with aggregate functions such as SUM, AVG, MAX, MIN, etc.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "GROUP BY clause is used to group rows in a table based on one or more columns, and is typically used with aggregate functions."
+      },
+      {
+        "assertion": "Assertion (A): MySQL has built-in functions such as NOW() and CURDATE() to get the current date and time.",
+        "reason": "Reason (R): These functions help in creating dynamic queries that can be executed at any time.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "MySQL has built-in functions such as NOW() and CURDATE() to get the current date and time, which helps in creating dynamic queries."
+      },
+      {
+        "assertion": "Assertion (A): Aggregate functions in MySQL can be used to calculate multiple values from a set of rows.",
+        "reason": "Reason (R): Aggregate functions such as SUM, AVG, MAX, MIN, etc., help to perform calculations on a set of rows.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Aggregate functions in MySQL can be used to calculate multiple values from a set of rows, such as sum, average, maximum, and minimum."
+      },
+      {
+        "assertion": "Assertion (A): MySQL's GROUP BY clause can be used with multiple columns to group rows.",
+        "reason": "Reason (R): This is useful when you need to group rows based on multiple criteria.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "MySQL's GROUP BY clause can be used with multiple columns to group rows, which is useful when you need to group rows based on multiple criteria."
+      },
+      {
+        "assertion": "Assertion (A): MySQL's SUM() function is used to calculate the total of a set of values.",
+        "reason": "Reason (R): The SUM() function adds up all the values in a column or expression.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "MySQL's SUM() function is used to calculate the total of a set of values by adding up all the values in a column or expression."
+      },
+      {
+        "assertion": "Assertion (A): MySQL's HAVING clause is used to filter grouped results.",
+        "reason": "Reason (R): This is useful when you need to filter the results based on aggregate values.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "MySQL's HAVING clause is used to filter grouped results, which is useful when you need to filter the results based on aggregate values."
+      },
+      {
+        "assertion": "Assertion (A): MySQL's GROUP BY clause must precede the HAVING clause in a query.",
+        "reason": "Reason (R): This is a rule in SQL syntax to ensure that the query is properly structured.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "MySQL's GROUP BY clause must precede the HAVING clause in a query, following the standard SQL syntax rules."
+      },
+      {
+        "assertion": "Assertion (A): MySQL's GROUP BY clause can be used with aggregate functions to group rows.",
+        "reason": "Reason (R): This is a common use case for the GROUP BY clause in SQL queries.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "MySQL's GROUP BY clause can be used with aggregate functions to group rows, which is a common use case in SQL queries."
+      },
+      {
+        "assertion": "Assertion (A): MySQL's SELECT statement can be used with aggregate functions to retrieve data.",
+        "reason": "Reason (R): This is useful when you need to retrieve summary data from a database.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "MySQL's SELECT statement can be used with aggregate functions to retrieve data, which is useful when you need to retrieve summary data from a database."
+      }
+    ],
+    "total": 10
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Determinants",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:31:57.657Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The determinant of a 2x2 matrix can be calculated using the formula ad - bc.",
+        "reason": "Reason (R): This formula is derived from the expansion of a 2x2 matrix along the first row.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of a 2x2 matrix [a, b; c, d] is indeed calculated as ad - bc, and this formula is derived from the expansion along the first row."
+      },
+      {
+        "assertion": "Assertion (A): The determinant of a matrix is zero if one of its rows is a linear combination of the other rows.",
+        "reason": "Reason (R): A matrix with linearly dependent rows is singular and hence has a determinant of zero.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "If one row of a matrix is a linear combination of the other rows, the matrix is singular, meaning its determinant is zero, which is correctly explained by the reason."
+      },
+      {
+        "assertion": "Assertion (A): The determinant of the product of two matrices is the product of their determinants.",
+        "reason": "Reason (R): This property is a consequence of the way matrix multiplication is defined and how determinants are calculated.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of the product of two matrices A and B is indeed the product of the determinants of A and B, and this is a consequence of matrix multiplication and determinant calculation."
+      },
+      {
+        "assertion": "Assertion (A): If a matrix has two identical rows, its determinant is zero.",
+        "reason": "Reason (R): Having two identical rows means the rows are linearly dependent, which results in a determinant of zero.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "If a matrix has two identical rows, it implies linear dependency among the rows, leading to a determinant of zero, as correctly explained."
+      },
+      {
+        "assertion": "Assertion (A): The determinant of a 3x3 matrix can be found using the formula involving the sum of the products along any row or column.",
+        "reason": "Reason (R): This formula is based on the Laplace expansion method.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of a 3x3 matrix can indeed be calculated using the sum of the products along any row or column, which is a direct application of the Laplace expansion method."
+      },
+      {
+        "assertion": "Assertion (A): The determinant of the transpose of a matrix is the same as the determinant of the original matrix.",
+        "reason": "Reason (R): The determinant of a matrix and its transpose are equal due to the properties of matrix operations.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of the transpose of a matrix is indeed equal to the determinant of the original matrix, which is a fundamental property of determinants under matrix transposition."
+      },
+      {
+        "assertion": "Assertion (A): The determinant of a matrix changes sign when two of its rows are interchanged.",
+        "reason": "Reason (R): Interchanging rows in a matrix affects the determinant's sign due to the antisymmetric property of determinants.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Interchanging two rows of a matrix indeed changes the sign of its determinant, which is a direct consequence of the antisymmetric property of determinants."
+      },
+      {
+        "assertion": "Assertion (A): The determinant of a diagonal matrix is the product of its diagonal elements.",
+        "reason": "Reason (R): For a diagonal matrix, the off-diagonal elements are zero, simplifying the determinant calculation to the product of the diagonal.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of a diagonal matrix is indeed the product of its diagonal elements, as the presence of zeros in the off-diagonal positions simplifies the determinant calculation."
+      },
+      {
+        "assertion": "Assertion (A): If the determinant of a matrix is non-zero, the matrix is singular.",
+        "reason": "Reason (R): A non-zero determinant indicates the matrix is invertible.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "A non-zero determinant actually indicates that the matrix is invertible (non-singular), not singular. Thus, the assertion is false, but the reason is true."
+      },
+      {
+        "assertion": "Assertion (A): The determinant of a matrix is always an integer.",
+        "reason": "Reason (R): Determinants can be calculated using integer operations but may result in non-integer values.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The assertion is false because the determinant of a matrix is not always an integer; it can be any real number. However, the reason is true in stating that determinants, while calculated through operations that can involve integers, may result in non-integer values."
+      }
+    ],
+    "total": 10
+  }
+}

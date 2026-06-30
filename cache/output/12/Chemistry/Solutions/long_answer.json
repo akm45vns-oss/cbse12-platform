@@ -1,0 +1,88 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Solutions",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:49:34.577Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What are the factors that affect the solubility of a gas in a liquid? Explain with the help of suitable examples.",
+        "marks": 5,
+        "answer": "The solubility of a gas in a liquid is affected by several factors, including the nature of the gas and the liquid, temperature, and pressure. For example, the solubility of oxygen in water decreases with increase in temperature, while the solubility of carbon dioxide increases with increase in pressure.",
+        "marking_scheme": [
+          "Explanation of the effect of nature of gas and liquid on solubility (1 mark)",
+          "Explanation of the effect of temperature on solubility (1 mark)",
+          "Explanation of the effect of pressure on solubility (1 mark)",
+          "Examples to support the explanation (2 marks)"
+        ],
+        "topic": "Solubility of Gases",
+        "is_numerical": false
+      },
+      {
+        "q": "A solution of glucose in water is isotonic with a solution of sucrose in water. What is the ratio of the molar concentrations of glucose and sucrose?",
+        "marks": 5,
+        "answer": "Calculation: \nSince the solutions are isotonic, the molar concentrations are equal. \nLet the molar concentration of glucose be x. \nThen, the molar concentration of sucrose will also be x. \nThe ratio of the molar concentrations of glucose and sucrose will be 1:1 or 1.",
+        "marking_scheme": [
+          "Understanding of the concept of isotonic solutions (1 mark)",
+          "Calculation of the ratio of molar concentrations (2 marks)",
+          "Explanation of the relationship between molecular weight and molar concentration (2 marks)"
+        ],
+        "topic": "Isotonic Solutions",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the difference between a true solution and a colloidal solution? Explain with the help of examples.",
+        "marks": 5,
+        "answer": "A true solution is a homogeneous mixture of two or more substances, where the particles of the solute are molecularly or atomically dispersed in the solvent. On the other hand, a colloidal solution is a heterogeneous mixture of two or more substances, where the particles of the solute have a size range of 1-100 nm and are dispersed in the solvent. For example, a solution of sugar in water is a true solution, while a solution of starch in water is a colloidal solution.",
+        "marking_scheme": [
+          "Explanation of the definition of a true solution (1 mark)",
+          "Explanation of the definition of a colloidal solution (1 mark)",
+          "Examples to support the explanation (2 marks)",
+          "Explanation of the differences between true and colloidal solutions (1 mark)"
+        ],
+        "topic": "Types of Solutions",
+        "is_numerical": false
+      },
+      {
+        "q": "The vapour pressure of a solution of glucose in water at 35°C is 24.56 mmHg. The vapour pressure of pure water at 35°C is 29.60 mmHg. Calculate the mole fraction of glucose in the solution.",
+        "marks": 5,
+        "answer": "Calculation: \nLet the mole fraction of glucose be x. \nThen, the mole fraction of water will be (1-x). \nUsing Raoult's law, we can write: \nPsolution = (1-x) * Pwater \n24.56 = (1-x) * 29.60 \n(1-x) = 24.56 / 29.60 \n(1-x) = 0.83 \nx = 1 - 0.83 \nx = 0.17",
+        "marking_scheme": [
+          "Understanding of Raoult's law (1 mark)",
+          "Calculation of the mole fraction of glucose (2 marks)",
+          "Explanation of the relationship between vapour pressure and mole fraction (2 marks)"
+        ],
+        "topic": "Raoult's Law",
+        "is_numerical": true
+      },
+      {
+        "q": "The freezing point of a solution of urea in water is -0.52°C. The freezing point depression constant of water is 1.86 K kg/mol. Calculate the molality of the solution.",
+        "marks": 5,
+        "answer": "Calculation: \nLet the molality of the solution be m. \nUsing the formula for freezing point depression, we can write: \nΔTf = Kf * m \n0.52 = 1.86 * m \nm = 0.52 / 1.86 \nm = 0.28",
+        "marking_scheme": [
+          "Understanding of the concept of freezing point depression (1 mark)",
+          "Calculation of the molality of the solution (2 marks)",
+          "Explanation of the relationship between freezing point depression and molality (2 marks)"
+        ],
+        "topic": "Freezing Point Depression",
+        "is_numerical": true
+      },
+      {
+        "q": "What are the characteristics of an ideal solution? Explain with the help of suitable examples.",
+        "marks": 5,
+        "answer": "An ideal solution is a solution that obeys Raoult's law, which states that the partial vapour pressure of each component of a solution is proportional to its mole fraction. The characteristics of an ideal solution include a linear relationship between the composition of the solution and the vapour pressure, a constant boiling point, and a constant freezing point. For example, a solution of benzene and toluene is an ideal solution.",
+        "marking_scheme": [
+          "Explanation of the definition of an ideal solution (1 mark)",
+          "Explanation of the characteristics of an ideal solution (2 marks)",
+          "Examples to support the explanation (2 marks)"
+        ],
+        "topic": "Ideal Solutions",
+        "is_numerical": false
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Chemistry in Everyday Life",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:51:15.245Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the process of hydrogenation of unsaturated fats and how does it affect the physical and chemical properties of fats.",
+        "marks": 5,
+        "answer": "Hydrogenation of unsaturated fats involves the addition of hydrogen to the unsaturated bond, resulting in the formation of saturated fats. This process involves the use of a catalyst such as nickel or palladium. The physical properties of the fats are affected in the following ways: The melting point of the fat increases. The fat becomes more solid at room temperature. The chemical properties of the fats are affected in the following ways: The fat becomes less reactive.",
+        "marking_scheme": [
+          "Explain the process of hydrogenation (2 marks)",
+          "Describe the effect on physical properties (2 marks)",
+          "Describe the effect on chemical properties (1 mark)"
+        ],
+        "topic": "Hydrogenation of Unsaturated Fats",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the process of polymerization and describe the types of polymers that can be obtained by this process.",
+        "marks": 5,
+        "answer": "Polymerization is a process in which small molecules, called monomers, combine to form a large molecule, called a polymer. This process involves the breaking and forming of chemical bonds between the monomers. There are two main types of polymerization: Addition polymerization and Condensation polymerization. Addition polymerization involves the formation of a polymer by the addition of monomers to a growing chain, without the loss of any atoms. Condensation polymerization involves the formation of a polymer by the reaction of two monomers, resulting in the loss of a small molecule, such as water.",
+        "marking_scheme": [
+          "Explain the process of polymerization (2 marks)",
+          "Describe the types of polymerization (2 marks)",
+          "Describe the types of polymers that can be obtained (1 mark)"
+        ],
+        "topic": "Polymerization",
+        "is_numerical": false
+      },
+      {
+        "q": "What are the main differences between natural rubber and synthetic rubber? Discuss their properties and uses.",
+        "marks": 5,
+        "answer": "Natural rubber is obtained from the sap of the rubber tree, while synthetic rubber is produced artificially. The main differences between natural rubber and synthetic rubber are: Natural rubber is more flexible and elastic than synthetic rubber. Synthetic rubber is more durable and resistant to wear and tear than natural rubber. Natural rubber is more prone to aging and degradation than synthetic rubber. Natural rubber is used in the manufacture of tires, belts, and other rubber products, while synthetic rubber is used in the manufacture of tires, hoses, and other rubber products.",
+        "marking_scheme": [
+          "Compare the properties of natural rubber and synthetic rubber (2 marks)",
+          "Discuss the uses of natural rubber and synthetic rubber (2 marks)",
+          "Describe the advantages of synthetic rubber (1 mark)"
+        ],
+        "topic": "Natural Rubber and Synthetic Rubber",
+        "is_numerical": false
+      },
+      {
+        "q": "A sample of 50 g of a polymer contained 90% of carbon and 10% of hydrogen by mass. Calculate the empirical formula of the polymer.",
+        "marks": 5,
+        "answer": "Calculation: Given: Mass of polymer = 50 g Carbon percentage = 90% Hydrogen percentage = 10% Mass of carbon = 90% of 50 g = 45 g Mass of hydrogen = 10% of 50 g = 5 g Empirical formula mass = Mass of carbon + Mass of hydrogen = 45 g + 5 g = 50 g Molar mass of carbon = 12 g/mol Molar mass of hydrogen = 1 g/mol Number of moles of carbon = Mass of carbon / Molar mass of carbon = 45 g / 12 g/mol = 3.75 Number of moles of hydrogen = Mass of hydrogen / Molar mass of hydrogen = 5 g / 1 g/mol = 5 Number of moles of C:H = 3.75:5 = 3:4:1 or 3:5",
+        "marking_scheme": [
+          "Calculate the mass of carbon and hydrogen (2 marks)",
+          "Calculate the empirical formula mass (1 mark)",
+          "Determine the empirical formula (2 marks)"
+        ],
+        "topic": "Empirical Formula of a Polymer",
+        "is_numerical": true
+      },
+      {
+        "q": "A polymer has a molecular weight of 150,000 g/mol. If the polymer contains 80% of carbon and 20% of hydrogen by mass, calculate the number of carbon atoms and hydrogen atoms in a polymer molecule.",
+        "marks": 5,
+        "answer": "Calculation: Given: Molecular weight = 150,000 g/mol Carbon percentage = 80% Hydrogen percentage = 20% Mass of carbon = 80% of 150,000 g/mol = 120,000 g Mass of hydrogen = 20% of 150,000 g/mol = 30,000 g Molar mass of carbon = 12 g/mol Molar mass of hydrogen = 1 g/mol Number of moles of carbon = Mass of carbon / Molar mass of carbon = 120,000 g / 12 g/mol = 10,000 Number of moles of hydrogen = Mass of hydrogen / Molar mass of hydrogen = 30,000 g / 1 g/mol = 30,000 Number of carbon atoms = Number of moles of carbon x Avogadro's number = 10,000 x 6.023 x 10^23 = 6.023 x 10^26 Number of hydrogen atoms = Number of moles of hydrogen x Avogadro's number = 30,000 x 6.023 x 10^23 = 1.8069 x 10^27",
+        "marking_scheme": [
+          "Calculate the mass of carbon and hydrogen (2 marks)",
+          "Calculate the number of moles of carbon and hydrogen (2 marks)",
+          "Determine the number of carbon and hydrogen atoms (1 mark)"
+        ],
+        "topic": "Number of Atoms in a Polymer Molecule",
+        "is_numerical": true
+      },
+      {
+        "q": "A sample of a polymer contained 85% of carbon and 15% of hydrogen by mass. The sample was found to have a molecular weight of 180,000 g/mol. Calculate the density of the polymer.",
+        "marks": 5,
+        "answer": "Calculation: Given: Carbon percentage = 85% Hydrogen percentage = 15% Molecular weight = 180,000 g/mol Density = Mass / Volume Mass of 1 mole of polymer = Molecular weight = 180,000 g Volume of 1 mole of polymer = Mass / Density = 180,000 g / Density Density x Volume = Mass = 180,000 g Density = Mass / Volume = 180,000 g / (180,000 / Density) Density^2 = 180,000 g / 180,000 g Density = 1 g/cm^3",
+        "marking_scheme": [
+          "Calculate the mass of carbon and hydrogen (2 marks)",
+          "Calculate the volume of 1 mole of polymer (1 mark)",
+          "Calculate the density of the polymer (2 marks)"
+        ],
+        "topic": "Density of a Polymer",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

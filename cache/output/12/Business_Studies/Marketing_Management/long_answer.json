@@ -1,0 +1,87 @@
+{
+  "class": "12",
+  "subject": "Business Studies",
+  "chapter": "Marketing Management",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:05:31.906Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the importance of marketing research in the development of a marketing strategy. Discuss the role of marketing research in identifying market opportunities and threats.",
+        "marks": 5,
+        "answer": "Marketing research plays a crucial role in the development of a marketing strategy as it helps in identifying market opportunities and threats. It provides valuable information about the market, customers, and competitors, which enables businesses to make informed decisions. Marketing research helps in understanding customer needs, preferences, and behaviors, which enables businesses to develop effective marketing strategies. It also helps in identifying market trends, opportunities, and threats, which enables businesses to respond to changes in the market and stay competitive.",
+        "marking_scheme": [
+          "Importance of marketing research (1 mark)",
+          "Role of marketing research in identifying market opportunities (1 mark)",
+          "Role of marketing research in identifying market threats (1 mark)",
+          "Explanation of how marketing research helps in understanding customer needs and developing effective marketing strategies (2 marks)"
+        ],
+        "topic": "Marketing Research",
+        "is_numerical": false
+      },
+      {
+        "q": "A company has a product with a life cycle of 10 years. The product is currently in the introduction stage and has a growth rate of 20% per annum. If the current sales are Rs. 10 lakhs, calculate the sales for the next 5 years.",
+        "marks": 5,
+        "answer": "Calculation:\nYear 1: Sales = Rs. 10 lakhs * (1 + 0.20) = Rs. 12 lakhs\nYear 2: Sales = Rs. 12 lakhs * (1 + 0.20) = Rs. 14.4 lakhs\nYear 3: Sales = Rs. 14.4 lakhs * (1 + 0.20) = Rs. 17.28 lakhs\nYear 4: Sales = Rs. 17.28 lakhs * (1 + 0.20) = Rs. 20.74 lakhs\nYear 5: Sales = Rs. 20.74 lakhs * (1 + 0.20) = Rs. 24.89 lakhs",
+        "marking_scheme": [
+          "Calculation of sales for each year (4 marks)",
+          "Correct application of growth rate formula (1 mark)"
+        ],
+        "topic": "Product Life Cycle",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the difference between a marketing strategy and a marketing tactic? Explain with the help of an example.",
+        "marks": 5,
+        "answer": "A marketing strategy refers to the overall plan or approach that a business uses to achieve its marketing objectives, while a marketing tactic refers to a specific action or activity that is used to implement the marketing strategy. For example, a marketing strategy may be to increase sales by 10% within the next 6 months, while a marketing tactic may be to offer a discount of 5% on all products for a limited period. The marketing tactic is a specific action that is used to achieve the overall marketing strategy.",
+        "marking_scheme": [
+          "Definition of marketing strategy (1 mark)",
+          "Definition of marketing tactic (1 mark)",
+          "Explanation of the difference between marketing strategy and marketing tactic (2 marks)",
+          "Example to illustrate the difference (1 mark)"
+        ],
+        "topic": "Marketing Strategy",
+        "is_numerical": false
+      },
+      {
+        "q": "A company sells two products, A and B. The selling price of product A is Rs. 100 and the selling price of product B is Rs. 200. The variable cost of product A is Rs. 60 and the variable cost of product B is Rs. 120. The fixed cost is Rs. 10,000. If the company sells 100 units of product A and 50 units of product B, calculate the contribution of each product to the total profit.",
+        "marks": 5,
+        "answer": "Calculation:\nContribution of product A = (Selling price - Variable cost) * Quantity sold\n= (Rs. 100 - Rs. 60) * 100\n= Rs. 40 * 100\n= Rs. 4,000\nContribution of product B = (Selling price - Variable cost) * Quantity sold\n= (Rs. 200 - Rs. 120) * 50\n= Rs. 80 * 50\n= Rs. 4,000\nTotal contribution = Contribution of product A + Contribution of product B\n= Rs. 4,000 + Rs. 4,000\n= Rs. 8,000\nTotal profit = Total contribution - Fixed cost\n= Rs. 8,000 - Rs. 10,000\n= -Rs. 2,000",
+        "marking_scheme": [
+          "Calculation of contribution of each product (3 marks)",
+          "Calculation of total contribution (1 mark)",
+          "Calculation of total profit (1 mark)"
+        ],
+        "topic": "Cost and Pricing",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of market segmentation and its importance in marketing strategy. Discuss the different types of market segmentation.",
+        "marks": 5,
+        "answer": "Market segmentation refers to the process of dividing a larger market into smaller groups of consumers with similar needs, characteristics, or behaviors. It is an important concept in marketing strategy as it enables businesses to target their marketing efforts more effectively and efficiently. The different types of market segmentation include demographic segmentation, geographic segmentation, psychographic segmentation, and behavioral segmentation. Demographic segmentation involves dividing the market based on demographic characteristics such as age, income, and occupation. Geographic segmentation involves dividing the market based on geographic location. Psychographic segmentation involves dividing the market based on personality, lifestyle, and values. Behavioral segmentation involves dividing the market based on consumer behavior such as purchase history and usage rate.",
+        "marking_scheme": [
+          "Definition of market segmentation (1 mark)",
+          "Importance of market segmentation in marketing strategy (1 mark)",
+          "Explanation of different types of market segmentation (3 marks)"
+        ],
+        "topic": "Market Segmentation",
+        "is_numerical": false
+      },
+      {
+        "q": "A company has a budget of Rs. 1,00,000 for advertising. The company wants to allocate the budget between two advertising channels, television and print media. The cost of advertising on television is Rs. 5,000 per ad and the cost of advertising in print media is Rs. 2,000 per ad. If the company wants to advertise at least 5 times on television and at least 10 times in print media, calculate the maximum number of ads that can be advertised on each channel.",
+        "marks": 5,
+        "answer": "Calculation:\nLet x be the number of ads on television and y be the number of ads in print media.\nThe total budget is Rs. 1,00,000, so the total cost of advertising is:\n5,000x + 2,000y = 1,00,000\nThe company wants to advertise at least 5 times on television, so x ≥ 5.\nThe company wants to advertise at least 10 times in print media, so y ≥ 10.\nTo maximize the number of ads, we want to minimize the cost.\nSince the cost of advertising on television is higher, we want to minimize the number of ads on television.\nLet x = 5, then:\n5,000(5) + 2,000y = 1,00,000\n25,000 + 2,000y = 1,00,000\n2,000y = 75,000\ny = 37.5\nSince y must be an integer, the maximum number of ads in print media is 37.\nTherefore, the maximum number of ads on television is 5 and the maximum number of ads in print media is 37.",
+        "marking_scheme": [
+          "Formulation of the problem as a linear equation (2 marks)",
+          "Calculation of the maximum number of ads on each channel (2 marks)",
+          "Correct application of constraints (1 mark)"
+        ],
+        "topic": "Advertising and Sales Promotion",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

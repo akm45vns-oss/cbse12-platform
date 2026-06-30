@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Computer Networks",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:41:26.809Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "In a university campus, a student named Rohan wants to access the online course materials provided by the instructor. Rohan has a laptop with Wi-Fi capabilities and is connected to the university's Wi-Fi network. The instructor has shared the course materials on a server located in the university's server room. The server is connected to the university's network switch, which in turn is connected to the router. The router is connected to the university's Wi-Fi access point, which provides internet access to students like Rohan. Rohan wants to access the course materials from his laptop. What protocol will he use to establish a connection to the server?",
+        "questions": [
+          {
+            "q": "Which protocol will Rohan use to establish a connection to the server?",
+            "opts": [
+              "(A) TCP",
+              "(B) UDP",
+              "(C) HTTP",
+              "(D) DNS"
+            ],
+            "ans": "A",
+            "explanation": "Rohan will use TCP (Transmission Control Protocol) to establish a connection to the server. TCP is a connection-oriented protocol that ensures reliable data transfer between devices."
+          },
+          {
+            "q": "What is the primary function of the router in Rohan's network?",
+            "opts": [
+              "(A) To provide internet access to students",
+              "(B) To connect devices on the same network",
+              "(C) To route data between networks",
+              "(D) To provide Wi-Fi access to students"
+            ],
+            "ans": "C",
+            "explanation": "The primary function of the router is to route data between networks. It receives data from one network and forwards it to another network."
+          },
+          {
+            "q": "What is the purpose of the network switch in Rohan's network?",
+            "opts": [
+              "(A) To provide internet access to students",
+              "(B) To connect devices on the same network",
+              "(C) To route data between networks",
+              "(D) To connect devices to the server"
+            ],
+            "ans": "B",
+            "explanation": "The primary function of the network switch is to connect devices on the same network. It allows devices to communicate with each other within the network."
+          },
+          {
+            "q": "What is the role of the Wi-Fi access point in Rohan's network?",
+            "opts": [
+              "(A) To provide internet access to students",
+              "(B) To connect devices on the same network",
+              "(C) To route data between networks",
+              "(D) To provide Wi-Fi access to students"
+            ],
+            "ans": "D",
+            "explanation": "The Wi-Fi access point provides Wi-Fi access to students, allowing them to connect to the network using their Wi-Fi-enabled devices."
+          },
+          {
+            "q": "What is the device that Rohan uses to access the internet and the university's network?",
+            "opts": [
+              "(A) Router",
+              "(B) Switch",
+              "(C) Access Point",
+              "(D) Laptop"
+            ],
+            "ans": "D",
+            "explanation": "Rohan uses his laptop to access the internet and the university's network. The laptop is a Wi-Fi-enabled device that can connect to the network and access online resources."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A small business has a website that is hosted on a server located in a data center. The website uses HTTPS protocol to secure online transactions. The business has a team of developers who work remotely and need to access the website's code for maintenance and updates. The developers are located in different cities and use a VPN (Virtual Private Network) to connect to the business's network. What protocol will the developers use to access the website's code?",
+        "questions": [
+          {
+            "q": "What is the primary function of the VPN in the developers' network?",
+            "opts": [
+              "(A) To provide secure access to the website's code",
+              "(B) To route data between networks",
+              "(C) To encrypt data transmission between devices",
+              "(D) To connect devices on the same network"
+            ],
+            "ans": "C",
+            "explanation": "The primary function of the VPN is to encrypt data transmission between devices. It provides a secure and encrypted connection between the developers' devices and the business's network."
+          },
+          {
+            "q": "What protocol will the developers use to access the website's code?",
+            "opts": [
+              "(A) HTTP",
+              "(B) HTTPS",
+              "(C) FTP",
+              "(D) SSH"
+            ],
+            "ans": "D",
+            "explanation": "The developers will use SSH (Secure Shell) protocol to access the website's code. SSH is a secure protocol that allows remote access to a server's command-line interface."
+          },
+          {
+            "q": "What is the purpose of using HTTPS protocol on the business's website?",
+            "opts": [
+              "(A) To encrypt data transmission between devices",
+              "(B) To provide secure online transactions",
+              "(C) To route data between networks",
+              "(D) To connect devices on the same network"
+            ],
+            "ans": "B",
+            "explanation": "The primary purpose of using HTTPS protocol on the business's website is to provide secure online transactions. HTTPS encrypts data transmission between the website and the user's browser, ensuring that sensitive information is protected."
+          },
+          {
+            "q": "What is the device that hosts the business's website?",
+            "opts": [
+              "(A) Server",
+              "(B) Router",
+              "(C) Switch",
+              "(D) Access Point"
+            ],
+            "ans": "A",
+            "explanation": "The device that hosts the business's website is a server. The server is a computer that stores and serves web content to users."
+          },
+          {
+            "q": "What is the purpose of using a VPN in the developers' network?",
+            "opts": [
+              "(A) To provide secure access to the website's code",
+              "(B) To route data between networks",
+              "(C) To encrypt data transmission between devices",
+              "(D) To connect devices on the same network"
+            ],
+            "ans": "A",
+            "explanation": "The primary purpose of using a VPN in the developers' network is to provide secure access to the website's code. The VPN encrypts data transmission between the developers' devices and the business's network, ensuring that sensitive information is protected."
+          }
+        ]
+      }
+    ]
+  }
+}

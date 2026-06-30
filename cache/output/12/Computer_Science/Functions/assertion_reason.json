@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:30:42.600Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): A user defined function can be used multiple times in a program.",
+        "reason": "Reason (R): Functions are reusable blocks of code that can be called from any part of the program.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because functions are used to avoid code duplication and can be called multiple times in a program, and the reason provided is the correct explanation."
+      },
+      {
+        "assertion": "Assertion (A): The return type of a function is specified in the function definition.",
+        "reason": "Reason (R): The return type of a function is used to specify the data type of the value returned by the function.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the return type is indeed specified in the function definition and it is used to specify the data type of the value returned by the function."
+      },
+      {
+        "assertion": "Assertion (A): A function can have multiple return statements.",
+        "reason": "Reason (R): A function can return a value using the return statement, and it can have multiple return statements.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because a function can indeed have multiple return statements and the reason provided explains why."
+      },
+      {
+        "assertion": "Assertion (A): A function can take arguments of different data types.",
+        "reason": "Reason (R): Functions can be defined to accept arguments of any data type, including integers, strings, and arrays.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because functions can indeed take arguments of different data types and the reason provided explains why."
+      },
+      {
+        "assertion": "Assertion (A): A function can only return one value.",
+        "reason": "Reason (R): A function can return multiple values using arrays or objects.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because a function can return more than one value using arrays or objects, and the assertion is false."
+      },
+      {
+        "assertion": "Assertion (A): A function can be defined inside another function.",
+        "reason": "Reason (R): Nested functions can be used to encapsulate data and behavior within a larger function.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because nested functions can indeed be used to encapsulate data and behavior within a larger function."
+      },
+      {
+        "assertion": "Assertion (A): A function can have default values for its arguments.",
+        "reason": "Reason (R): Default values can be specified for function arguments to provide a default value if not provided.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because functions can indeed have default values for their arguments and the reason provided explains why."
+      },
+      {
+        "assertion": "Assertion (A): A function can be passed as an argument to another function.",
+        "reason": "Reason (R): Functions can be passed as arguments to higher-order functions to increase flexibility.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because functions can indeed be passed as arguments to other functions and the reason provided explains why."
+      },
+      {
+        "assertion": "Assertion (A): A function can be used to call itself recursively.",
+        "reason": "Reason (R): Recursion is a technique where a function calls itself to solve a problem.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because functions can indeed be used to call themselves recursively and the reason provided explains why."
+      },
+      {
+        "assertion": "Assertion (A): A function can only be defined once in a program.",
+        "reason": "Reason (R): Functions can be defined multiple times in a program, but with different parameters or return types.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because a function can indeed be defined multiple times in a program, and the assertion is false."
+      }
+    ],
+    "total": 10
+  }
+}

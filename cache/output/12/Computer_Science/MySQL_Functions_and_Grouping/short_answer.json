@@ -1,0 +1,172 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "MySQL Functions and Grouping",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:32:59.345Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What are user-defined functions in MySQL?",
+        "marks": 1,
+        "answer": "User-defined functions in MySQL are created by the user to perform specific tasks or operations. They can be used to simplify complex queries and improve code readability.",
+        "key_points": [
+          "User-defined functions can be created using the CREATE FUNCTION statement.",
+          "They can take arguments and return values."
+        ],
+        "topic": "MySQL User-defined Functions"
+      },
+      {
+        "q": "What is the purpose of the GROUP BY clause in MySQL?",
+        "marks": 1,
+        "answer": "The GROUP BY clause in MySQL is used to group the result-set by one or more columns. It is used to perform aggregation operations, such as SUM, COUNT, and AVG.",
+        "key_points": [
+          "GROUP BY clause is used with aggregate functions.",
+          "It is used to group rows that have the same values in one or more columns."
+        ],
+        "topic": "MySQL Grouping"
+      },
+      {
+        "q": "What is the difference between GROUP BY and HAVING clauses in MySQL?",
+        "marks": 1,
+        "answer": "The GROUP BY clause groups the result-set by one or more columns, while the HAVING clause filters the grouped result-set based on a condition.",
+        "key_points": [
+          "GROUP BY clause is used for grouping.",
+          "HAVING clause is used for filtering the grouped result-set."
+        ],
+        "topic": "MySQL Grouping"
+      },
+      {
+        "q": "Define an MySQL function to calculate the area of a circle?",
+        "marks": 2,
+        "answer": "To define an MySQL function to calculate the area of a circle, we can use the following code: `CREATE FUNCTION calculate_area(radius DECIMAL(10, 2)) RETURNS DECIMAL(10, 2) RETURN 3.14 * POWER(radius, 2);`",
+        "key_points": [
+          "The function takes a decimal argument for the radius.",
+          "It returns the calculated area of the circle."
+        ],
+        "topic": "MySQL User-defined Functions"
+      },
+      {
+        "q": "What is the use of GROUP BY in the following query?",
+        "marks": 2,
+        "answer": "The GROUP BY clause is used to group the result-set by the 'name' column. This is done to perform aggregation operations, such as SUM, COUNT, and AVG, on the grouped columns.",
+        "key_points": [
+          "The query uses GROUP BY to group the result-set by the 'name' column.",
+          "It is used with aggregate functions, such as SUM and AVG."
+        ],
+        "topic": "MySQL Grouping"
+      },
+      {
+        "q": "Write a MySQL query to calculate the average salary of employees in each department?",
+        "marks": 3,
+        "answer": "To calculate the average salary of employees in each department, we can use the following query: `SELECT department, AVG(salary) as avg_salary FROM employees GROUP BY department;`",
+        "key_points": [
+          "The query uses GROUP BY to group the result-set by the 'department' column.",
+          "It uses the AVG function to calculate the average salary of employees in each department."
+        ],
+        "topic": "MySQL Grouping"
+      },
+      {
+        "q": "What is the use of HAVING clause in the following query?",
+        "marks": 3,
+        "answer": "The HAVING clause is used to filter the grouped result-set based on a condition. In this query, it is used to filter the result-set to only include departments with an average salary greater than 5000.",
+        "key_points": [
+          "The query uses HAVING to filter the grouped result-set.",
+          "It uses a condition to filter the result-set to only include departments with an average salary greater than 5000."
+        ],
+        "topic": "MySQL Grouping"
+      },
+      {
+        "q": "Define an MySQL function to calculate the average temperature of a given date range?",
+        "marks": 3,
+        "answer": "To define an MySQL function to calculate the average temperature of a given date range, we can use the following code: `CREATE FUNCTION calculate_avg_temp(start_date DATE, end_date DATE) RETURNS DECIMAL(10, 2) RETURN (SELECT AVG(temperature) FROM weather WHERE date BETWEEN start_date AND end_date);`",
+        "key_points": [
+          "The function takes two date arguments for the start and end dates.",
+          "It returns the calculated average temperature for the given date range."
+        ],
+        "topic": "MySQL User-defined Functions"
+      },
+      {
+        "q": "What is the difference between the GROUP BY and HAVING clauses in the following query?",
+        "marks": 3,
+        "answer": "The GROUP BY clause groups the result-set by the 'name' column, while the HAVING clause filters the grouped result-set based on a condition. In this query, the GROUP BY clause is used to group the result-set, and the HAVING clause is used to filter the grouped result-set.",
+        "key_points": [
+          "The query uses GROUP BY to group the result-set.",
+          "It uses HAVING to filter the grouped result-set based on a condition."
+        ],
+        "topic": "MySQL Grouping"
+      },
+      {
+        "q": "Write a MySQL query to calculate the total sales for each product in each category?",
+        "marks": 3,
+        "answer": "To calculate the total sales for each product in each category, we can use the following query: `SELECT category, product, SUM(sales) as total_sales FROM sales GROUP BY category, product;`",
+        "key_points": [
+          "The query uses GROUP BY to group the result-set by the 'category' and 'product' columns.",
+          "It uses the SUM function to calculate the total sales for each product in each category."
+        ],
+        "topic": "MySQL Grouping"
+      },
+      {
+        "q": "What is the use of the GROUP BY clause in the following query?",
+        "marks": 1,
+        "answer": "The GROUP BY clause is used to group the result-set by the 'name' column.",
+        "key_points": [
+          "The query uses GROUP BY to group the result-set."
+        ],
+        "topic": "MySQL Grouping"
+      },
+      {
+        "q": "Define an MySQL function to calculate the area of a rectangle?",
+        "marks": 2,
+        "answer": "To define an MySQL function to calculate the area of a rectangle, we can use the following code: `CREATE FUNCTION calculate_area(length DECIMAL(10, 2), width DECIMAL(10, 2)) RETURNS DECIMAL(10, 2) RETURN length * width;`",
+        "key_points": [
+          "The function takes two decimal arguments for the length and width.",
+          "It returns the calculated area of the rectangle."
+        ],
+        "topic": "MySQL User-defined Functions"
+      },
+      {
+        "q": "Write a MySQL query to calculate the maximum salary of each department?",
+        "marks": 3,
+        "answer": "To calculate the maximum salary of each department, we can use the following query: `SELECT department, MAX(salary) as max_salary FROM employees GROUP BY department;`",
+        "key_points": [
+          "The query uses GROUP BY to group the result-set by the 'department' column.",
+          "It uses the MAX function to calculate the maximum salary of each department."
+        ],
+        "topic": "MySQL Grouping"
+      },
+      {
+        "q": "What is the use of the HAVING clause in the following query?",
+        "marks": 1,
+        "answer": "The HAVING clause is used to filter the grouped result-set based on a condition.",
+        "key_points": [
+          "The query uses HAVING to filter the grouped result-set."
+        ],
+        "topic": "MySQL Grouping"
+      },
+      {
+        "q": "Define an MySQL function to calculate the average temperature of a given city?",
+        "marks": 2,
+        "answer": "To define an MySQL function to calculate the average temperature of a given city, we can use the following code: `CREATE FUNCTION calculate_avg_temp(city VARCHAR(50)) RETURNS DECIMAL(10, 2) RETURN (SELECT AVG(temperature) FROM weather WHERE city = city);`",
+        "key_points": [
+          "The function takes a string argument for the city.",
+          "It returns the calculated average temperature for the given city."
+        ],
+        "topic": "MySQL User-defined Functions"
+      },
+      {
+        "q": "Write a MySQL query to calculate the total sales for each product in each category, and filter the result-set to only include products with a total sales greater than 1000?",
+        "marks": 3,
+        "answer": "To calculate the total sales for each product in each category, and filter the result-set to only include products with a total sales greater than 1000, we can use the following query: `SELECT category, product, SUM(sales) as total_sales FROM sales GROUP BY category, product HAVING SUM(sales) > 1000;`",
+        "key_points": [
+          "The query uses GROUP BY to group the result-set by the 'category' and 'product' columns.",
+          "It uses the SUM function to calculate the total sales for each product in each category, and the HAVING clause to filter the result-set."
+        ],
+        "topic": "MySQL Grouping"
+      }
+    ],
+    "total": 16
+  }
+}

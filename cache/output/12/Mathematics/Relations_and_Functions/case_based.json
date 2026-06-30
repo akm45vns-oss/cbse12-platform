@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:29:24.019Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "In a school, the number of hours a student spends on studying and extracurricular activities is a function of the number of subjects they are enrolled in. Let's assume that for every additional subject, a student spends an extra 2 hours on studying and 1 hour on extracurricular activities. If Ravi is enrolled in 5 subjects and spends a total of 25 hours on studying and 10 hours on extracurricular activities, determine the number of hours he spends on each activity for every subject.",
+        "questions": [
+          {
+            "q": "Determine the number of hours Ravi spends on studying for every subject.",
+            "opts": [
+              "(A) 5 hours",
+              "(B) 6 hours",
+              "(C) 7 hours",
+              "(D) 8 hours"
+            ],
+            "ans": "B",
+            "explanation": "Since Ravi spends a total of 25 hours on studying and is enrolled in 5 subjects, we can set up the equation 5x + 10 = 25, where x is the number of hours he spends on studying for every subject. Solving for x, we get x = 3. However, we are given that for every additional subject, a student spends an extra 2 hours on studying. Therefore, Ravi spends 3 + 2 = 5 hours on studying for the first subject and 5 + 2 = 7 hours for each subsequent subject. Since he is enrolled in 5 subjects, the additional hours spent on studying for each subject would be 7 - 5 = 2 hours. Hence, the number of hours Ravi spends on studying for every subject is 5 hours + 2 hours = 7 hours."
+          },
+          {
+            "q": "Determine the number of hours Ravi spends on extracurricular activities for every subject.",
+            "opts": [
+              "(A) 2 hours",
+              "(B) 3 hours",
+              "(C) 4 hours",
+              "(D) 5 hours"
+            ],
+            "ans": "C",
+            "explanation": "Since Ravi spends a total of 10 hours on extracurricular activities and is enrolled in 5 subjects, we can set up the equation 5x + 2 = 10, where x is the number of hours he spends on extracurricular activities for every subject. Solving for x, we get x = 1. However, we are given that for every additional subject, a student spends an extra 1 hour on extracurricular activities. Therefore, Ravi spends 1 + 1 = 2 hours on extracurricular activities for the first subject and 2 + 1 = 3 hours for each subsequent subject. Since he is enrolled in 5 subjects, the additional hours spent on extracurricular activities for each subject would be 3 - 2 = 1 hour. Hence, the number of hours Ravi spends on extracurricular activities for every subject is 2 hours + 1 hour = 3 hours."
+          },
+          {
+            "q": "Determine the total number of hours Ravi spends on studying and extracurricular activities for the first subject.",
+            "opts": [
+              "(A) 7 hours",
+              "(B) 8 hours",
+              "(C) 9 hours",
+              "(D) 10 hours"
+            ],
+            "ans": "A",
+            "explanation": "For the first subject, Ravi spends 5 hours on studying and 2 hours on extracurricular activities. Therefore, the total number of hours he spends on studying and extracurricular activities for the first subject is 5 hours + 2 hours = 7 hours."
+          },
+          {
+            "q": "Determine the total number of hours Ravi spends on studying and extracurricular activities for the last subject.",
+            "opts": [
+              "(A) 9 hours",
+              "(B) 10 hours",
+              "(C) 11 hours",
+              "(D) 12 hours"
+            ],
+            "ans": "D",
+            "explanation": "For the last subject, Ravi spends 7 hours on studying and 3 hours on extracurricular activities. Therefore, the total number of hours he spends on studying and extracurricular activities for the last subject is 7 hours + 3 hours + 2 hours (additional extracurricular hours) = 12 hours."
+          },
+          {
+            "q": "Determine the total number of hours Ravi spends on studying and extracurricular activities for the middle subject.",
+            "opts": [
+              "(A) 8 hours",
+              "(B) 9 hours",
+              "(C) 10 hours",
+              "(D) 11 hours"
+            ],
+            "ans": "C",
+            "explanation": "For the middle subject, Ravi spends 7 hours on studying and 3 hours on extracurricular activities. Therefore, the total number of hours he spends on studying and extracurricular activities for the middle subject is 7 hours + 3 hours = 10 hours."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "In a company, the salary of an employee is a function of their years of experience. Let's assume that for every additional year of experience, an employee's salary increases by Rs. 5,000. If Rohan has 8 years of experience and earns a salary of Rs. 40,000, determine the number of years of experience he would have if his salary were to increase to Rs. 60,000.",
+        "questions": [
+          {
+            "q": "Determine the number of years of experience Rohan has for his current salary.",
+            "opts": [
+              "(A) 5 years",
+              "(B) 6 years",
+              "(C) 7 years",
+              "(D) 8 years"
+            ],
+            "ans": "D",
+            "explanation": "Since Rohan's salary increases by Rs. 5,000 for every additional year of experience and he earns a salary of Rs. 40,000, we can set up the equation 5x + 20,000 = 40,000, where x is the number of years of experience Rohan has. Solving for x, we get x = 4. However, we are given that Rohan has 8 years of experience. Hence, the number of years of experience Rohan has for his current salary is 8 years."
+          },
+          {
+            "q": "Determine the number of years of experience Rohan would have if his salary were to increase to Rs. 60,000.",
+            "opts": [
+              "(A) 9 years",
+              "(B) 10 years",
+              "(C) 11 years",
+              "(D) 12 years"
+            ],
+            "ans": "C",
+            "explanation": "Since Rohan's salary increases by Rs. 5,000 for every additional year of experience and he earns a salary of Rs. 60,000, we can set up the equation 5x + 20,000 = 60,000, where x is the number of years of experience Rohan would have if his salary were to increase to Rs. 60,000. Solving for x, we get x = 8. However, we are given that Rohan currently has 8 years of experience. Hence, the additional years of experience he would have if his salary were to increase to Rs. 60,000 would be 8 - 4 = 4 years. Therefore, the number of years of experience Rohan would have if his salary were to increase to Rs. 60,000 is 8 years + 4 years = 12 years."
+          },
+          {
+            "q": "Determine the increase in salary Rohan would have if his salary were to increase to Rs. 60,000.",
+            "opts": [
+              "(A) Rs. 10,000",
+              "(B) Rs. 15,000",
+              "(C) Rs. 20,000",
+              "(D) Rs. 25,000"
+            ],
+            "ans": "D",
+            "explanation": "Since Rohan's salary increases by Rs. 5,000 for every additional year of experience and he earns a salary of Rs. 60,000, we can calculate the increase in salary by subtracting his current salary from his new salary. Therefore, the increase in salary Rohan would have if his salary were to increase to Rs. 60,000 is Rs. 60,000 - Rs. 40,000 = Rs. 20,000."
+          },
+          {
+            "q": "Determine the number of years of experience Rohan would have if his salary were to increase by Rs. 20,000.",
+            "opts": [
+              "(A) 7 years",
+              "(B) 8 years",
+              "(C) 9 years",
+              "(D) 10 years"
+            ],
+            "ans": "B",
+            "explanation": "Since Rohan's salary increases by Rs. 5,000 for every additional year of experience and he earns a salary of Rs. 40,000, we can set up the equation 5x + 20,000 = 60,000, where x is the number of years of experience Rohan would have if his salary were to increase to Rs. 60,000. Solving for x, we get x = 8. However, we are given that Rohan currently has 8 years of experience. Hence, the number of years of experience Rohan would have if his salary were to increase to Rs. 60,000 is 8 years."
+          },
+          {
+            "q": "Determine the total salary of Rohan if he earns a salary of Rs. 40,000.",
+            "opts": [
+              "(A) Rs. 40,000",
+              "(B) Rs. 50,000",
+              "(C) Rs. 60,000",
+              "(D) Rs. 70,000"
+            ],
+            "ans": "A",
+            "explanation": "Rohan earns a salary of Rs. 40,000, therefore, the total salary of Rohan is Rs. 40,000."
+          }
+        ]
+      }
+    ]
+  }
+}

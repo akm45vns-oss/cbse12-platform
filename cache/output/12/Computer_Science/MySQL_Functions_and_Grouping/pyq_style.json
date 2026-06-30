@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "MySQL Functions and Grouping",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:01:04.597Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the purpose of the GROUP BY clause in MySQL?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The GROUP BY clause is used to group rows that have the same values in one or more columns. It is often used with aggregate functions to perform calculations on groups of data.",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Fill in the blank: The _______ function is used to calculate the average value of a set of values in MySQL.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "AVG",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Explain the difference between the HAVING and WHERE clauses in MySQL. Give an example.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "The WHERE clause is used to filter rows before grouping, while the HAVING clause is used to filter groups after grouping. For example: SELECT department, AVG(salary) FROM employees GROUP BY department HAVING AVG(salary) > 50000;",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "What is the purpose of the COUNT() function in MySQL? Give an example.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The COUNT() function is used to count the number of rows in a table or the number of non-NULL values in a column. For example: SELECT COUNT(*) FROM customers;",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "True or False: The SUM() function can only be used with numeric columns.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "True",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Write a MySQL query to find the maximum salary in each department. Assume a table named 'employees' with columns 'department' and 'salary'.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "SELECT department, MAX(salary) FROM employees GROUP BY department;",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Fill in the blank: The _______ function is used to calculate the minimum value of a set of values in MySQL.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "MIN",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Explain the purpose of the DISTINCT keyword in MySQL. Give an example.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The DISTINCT keyword is used to select only unique values from a column. For example: SELECT DISTINCT department FROM employees;",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the difference between the MAX() and MIN() functions in MySQL? Give examples.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "The MAX() function returns the maximum value in a set of values, while the MIN() function returns the minimum value. For example: SELECT MAX(salary) FROM employees; SELECT MIN(salary) FROM employees;",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Choose the correct MySQL function to calculate the total number of rows in a table: A) AVG(), B) COUNT(), C) SUM(), D) MAX()",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "B) COUNT()",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

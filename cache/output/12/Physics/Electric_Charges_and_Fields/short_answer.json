@@ -1,0 +1,162 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electric Charges and Fields",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:07:54.345Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define electric field.",
+        "marks": 1,
+        "answer": "Electric field at a point in space is defined as the force per unit charge at that point. It is a vector quantity, represented by the symbol E.",
+        "key_points": [
+          "Electric field is a vector quantity",
+          "Electric field is represented by E"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "What is the S.I unit of electric field?",
+        "marks": 1,
+        "answer": "The S.I unit of electric field is Newton per coulomb (N/C).",
+        "key_points": [
+          "S.I unit of electric field is N/C"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "Distinguish between electric field and electric potential.",
+        "marks": 1,
+        "answer": "Electric field is a measure of the force per unit charge at a point, while electric potential is the potential difference between two points. Electric field is a vector quantity, whereas electric potential is a scalar quantity.",
+        "key_points": [
+          "Electric field is a vector quantity",
+          "Electric potential is a scalar quantity"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "State Coulomb's law.",
+        "marks": 1,
+        "answer": "Coulomb's law states that the force between two point charges is directly proportional to the product of the charges and inversely proportional to the square of the distance between them.",
+        "key_points": [
+          "Coulomb's law is directly proportional to charge product",
+          "Coulomb's law is inversely proportional to square of distance"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "What is the electric field due to a point charge?",
+        "marks": 1,
+        "answer": "The electric field due to a point charge is given by E = k * q / r^2, where k is Coulomb's constant, q is the charge, and r is the distance from the charge.",
+        "key_points": [
+          "Electric field due to point charge is given by E = k * q / r^2"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "What is the principle of superposition of electric fields?",
+        "marks": 2,
+        "answer": "The principle of superposition of electric fields states that the total electric field at a point due to multiple charges is the vector sum of the electric fields due to each individual charge.",
+        "key_points": [
+          "Principle of superposition is vector sum of electric fields",
+          "Multiple charges can have multiple electric fields at a point"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "Determine the electric field at a point on the axis of a dipole.",
+        "marks": 2,
+        "answer": "The electric field at a point on the axis of a dipole is given by E = 2k * p / r^3, where p is the dipole moment and r is the distance from the dipole.",
+        "key_points": [
+          "Electric field at a point on dipole axis is given by E = 2k * p / r^3",
+          "Dipole moment is p"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "What is the electric flux through a closed surface?",
+        "marks": 2,
+        "answer": "The electric flux through a closed surface is given by Φ = Q / ε0, where Q is the charge enclosed within the surface and ε0 is the permittivity of free space.",
+        "key_points": [
+          "Electric flux through a closed surface is Φ = Q / ε0",
+          "Charge enclosed within a surface is Q"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "State Gauss's law.",
+        "marks": 2,
+        "answer": "Gauss's law states that the total electric flux through a closed surface is proportional to the charge enclosed within the surface, given by Φ = Q / ε0.",
+        "key_points": [
+          "Gauss's law is Φ = Q / ε0",
+          "Charge enclosed within a surface is Q"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "What is the electric potential due to a point charge?",
+        "marks": 3,
+        "answer": "The electric potential due to a point charge is given by V = k * q / r, where k is Coulomb's constant, q is the charge, and r is the distance from the charge. The electric potential decreases with increasing distance from the charge.",
+        "key_points": [
+          "Electric potential due to point charge is given by V = k * q / r",
+          "Electric potential decreases with increasing distance"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "Determine the electric field and electric potential at a point due to multiple point charges.",
+        "marks": 3,
+        "answer": "To determine the electric field and electric potential at a point due to multiple point charges, we use the principle of superposition of electric fields. The total electric field is the vector sum of the electric fields due to each individual charge, while the total electric potential is the scalar sum of the electric potentials due to each individual charge.",
+        "key_points": [
+          "Principle of superposition is vector sum of electric fields",
+          "Principle of superposition is scalar sum of electric potentials"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "What is the electric dipole moment?",
+        "marks": 3,
+        "answer": "The electric dipole moment is a measure of the separation between the positive and negative charges in a dipole. It is given by p = q * 2a, where q is the magnitude of the charge and 2a is the separation between the charges.",
+        "key_points": [
+          "Electric dipole moment is p = q * 2a",
+          "Magnitude of charge is q"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "Determine the electric field at a point due to a uniformly charged spherical shell.",
+        "marks": 3,
+        "answer": "The electric field at a point due to a uniformly charged spherical shell is zero if the point is outside the shell. If the point is inside the shell, the electric field is constant and directed radially towards the center of the shell.",
+        "key_points": [
+          "Electric field is zero outside the shell",
+          "Electric field is constant inside the shell"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "What is the concept of electric potential energy?",
+        "marks": 3,
+        "answer": "The electric potential energy of a charge is the energy required to bring the charge from infinity to a point in an electric field. It is given by U = q * V, where q is the charge and V is the electric potential.",
+        "key_points": [
+          "Electric potential energy is U = q * V",
+          "Charge is q"
+        ],
+        "topic": "Electric Charges and Fields"
+      },
+      {
+        "q": "Determine the electric field and electric potential at a point due to a uniformly charged wire.",
+        "marks": 3,
+        "answer": "To determine the electric field and electric potential at a point due to a uniformly charged wire, we use the formula E = λ / (2πε0r) and V = λ / (2πε0), where λ is the linear charge density and r is the distance from the wire.",
+        "key_points": [
+          "Electric field is E = λ / (2πε0r)",
+          "Electric potential is V = λ / (2πε0)"
+        ],
+        "topic": "Electric Charges and Fields"
+      }
+    ],
+    "total": 15
+  }
+}

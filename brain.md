@@ -209,6 +209,18 @@ Four primary tables manage user state, progress, and static content:
 
 # Recent Changes
 
+### 2026-06-30 (Part 2)
+- **Files**: `src/content-pipeline/generators/contentGenerator.js`, `src/content-pipeline/scheduler.js`, `src/content-pipeline/queue.js`
+- **Reason**: Implement strict syllabus boundary constraints and enhance granular section-by-section persistence recovery.
+- **Summary**: Injected a global 'STRICT_RULES' instruction into the Groq API system prompt to prevent cross-chapter data contamination. Added `--chapter` and `--force` CLI flags to limit pipeline generation to single chapters on-demand. Reduced the queue checkpoint interval to 1 for real-time recovery.
+- **Impact**: Provides highly targeted single-chapter note generation with perfect recovery from crashes or API limits without overwriting completed sections.
+
+### 2026-06-30
+- **Files**: `src/content-pipeline/generators/contentGenerator.js` [MODIFY]
+- **Reason**: Update AI prompts to match comprehensive PDF structure for study notes.
+- **Summary**: Aligned detailed notes, short notes, formula sheet, important concepts, NCERT summary, short answer, and long answer generators with a newly provided premium institute PDF format.
+- **Impact**: All newly generated chapter notes will now feature structured introductions, one-page revision summaries, targeted numerical questions, and enhanced formula sheets.
+
 ### 2026-06-29
 - **Files**: `PROJECT_ARCHITECTURE.md` [NEW], `brain.md` [NEW]
 - **Reason**: Enable permanent memory retention and architectural clarity.

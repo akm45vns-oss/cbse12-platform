@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Physical Education",
+  "chapter": "Sports Medicine",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:08:56.177Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is sports medicine and what are its main objectives? Explain the role of a sports medicine team in preventing and managing sports injuries.",
+        "marks": 5,
+        "answer": "Sports medicine is a branch of medicine that deals with the prevention, diagnosis, and treatment of injuries and illnesses related to sports and physical activity. The main objectives of sports medicine are to prevent injuries, diagnose and treat injuries, and rehabilitate athletes to return to their sport. A sports medicine team consists of sports doctors, physiotherapists, athletic trainers, and other healthcare professionals who work together to provide medical care to athletes. The team's role includes conducting pre-participation exams, providing emergency care, developing rehabilitation programs, and educating athletes on injury prevention.",
+        "marking_scheme": [
+          "Definition of sports medicine (1 mark)",
+          "Objectives of sports medicine (1 mark)",
+          "Role of sports medicine team (3 marks)"
+        ],
+        "topic": "Introduction to Sports Medicine",
+        "is_numerical": false
+      },
+      {
+        "q": "A football player suffers a grade 2 ankle sprain during a match. If the player's ankle is swollen and painful, calculate the RICE principle treatment time, assuming the swelling reduces by 20% each day.",
+        "marks": 5,
+        "answer": "Calculation: \nLet's assume the initial swelling is 100%. \nDay 1: 100% - 20% = 80% \nDay 2: 80% - 20% = 64% \nDay 3: 64% - 20% = 51.2% \nDay 4: 51.2% - 20% = 40.96% \nDay 5: 40.96% - 20% = 32.77% \nSince the swelling is significantly reduced after 5 days, the RICE principle treatment time is 5 days.",
+        "marking_scheme": [
+          "Understanding of RICE principle (1 mark)",
+          "Calculation of swelling reduction (2 marks)",
+          "Determination of treatment time (2 marks)"
+        ],
+        "topic": "Sports Injuries",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of exercise-induced asthma and its symptoms. What precautions can be taken to prevent an asthma attack during exercise?",
+        "marks": 5,
+        "answer": "Exercise-induced asthma is a condition in which the airways constrict and narrow during or after exercise, causing symptoms such as wheezing, coughing, and shortness of breath. Precautions to prevent an asthma attack during exercise include using an inhaler before exercise, warming up and cooling down slowly, avoiding exercise in cold or polluted air, and monitoring symptoms. It is also essential to develop an asthma action plan with a healthcare professional.",
+        "marking_scheme": [
+          "Definition of exercise-induced asthma (1 mark)",
+          "Symptoms of exercise-induced asthma (1 mark)",
+          "Precautions to prevent asthma attack (3 marks)"
+        ],
+        "topic": "Exercise Physiology and Sports Medicine",
+        "is_numerical": false
+      },
+      {
+        "q": "A basketball player has a resting heart rate of 60 beats per minute. If the player's target heart rate zone is between 120-140 beats per minute, calculate the intensity of exercise required to achieve this zone.",
+        "marks": 5,
+        "answer": "Calculation: \nTo calculate the intensity of exercise, we need to determine the percentage of maximum heart rate. \nFirst, we calculate the maximum heart rate: 220 - age (assuming 20 years) = 200 beats per minute. \nThe target heart rate zone is 120-140 beats per minute. \nLower limit: (120 / 200) * 100% = 60% of maximum heart rate \nUpper limit: (140 / 200) * 100% = 70% of maximum heart rate \nSince the player's resting heart rate is 60 beats per minute, the intensity of exercise required to achieve the target zone is moderate to high.",
+        "marking_scheme": [
+          "Understanding of target heart rate zone (1 mark)",
+          "Calculation of maximum heart rate (1 mark)",
+          "Determination of exercise intensity (3 marks)"
+        ],
+        "topic": "Exercise Physiology",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the role of nutrition in sports medicine? Explain the importance of hydration, carbohydrates, and protein in an athlete's diet.",
+        "marks": 5,
+        "answer": "Nutrition plays a crucial role in sports medicine as it helps athletes optimize their performance, recover from injuries, and maintain overall health. Hydration is essential for regulating body temperature and transporting nutrients. Carbohydrates provide energy, while protein is necessary for muscle repair and growth. A balanced diet that includes these nutrients can help athletes perform at their best and reduce the risk of injuries and illnesses.",
+        "marking_scheme": [
+          "Role of nutrition in sports medicine (1 mark)",
+          "Importance of hydration (1 mark)",
+          "Importance of carbohydrates and protein (3 marks)"
+        ],
+        "topic": "Sports Nutrition",
+        "is_numerical": false
+      },
+      {
+        "q": "A gymnast weighs 50 kg and has a body fat percentage of 20%. If the gymnast's daily energy expenditure is 2500 kcal, calculate the daily protein intake required to support muscle growth and repair.",
+        "marks": 5,
+        "answer": "Calculation: \nFirst, we calculate the gymnast's lean body mass: 50 kg * (1 - 0.20) = 40 kg \nThe daily protein intake required to support muscle growth and repair is 1.6-2.2 grams per kilogram of lean body mass. \nLower limit: 40 kg * 1.6 g/kg = 64 g \nUpper limit: 40 kg * 2.2 g/kg = 88 g \nConsidering the gymnast's daily energy expenditure, the recommended daily protein intake is approximately 75-80 g.",
+        "marking_scheme": [
+          "Understanding of protein requirements (1 mark)",
+          "Calculation of lean body mass (1 mark)",
+          "Determination of daily protein intake (3 marks)"
+        ],
+        "topic": "Sports Nutrition",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

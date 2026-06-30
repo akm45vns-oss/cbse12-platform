@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Accountancy",
+  "chapter": "Cash Flow Statement",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:03:32.186Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of Cash Flow Statement and its significance in the financial statement analysis of a company. (5 marks)",
+        "marks": 5,
+        "answer": "A Cash Flow Statement is a financial statement that provides information about the inflows and outflows of cash and cash equivalents of a company over a specific period of time. It is a significant financial statement as it provides a comprehensive picture of a company's liquidity position, its ability to generate cash and cash equivalents, and its ability to meet its financial obligations. The Cash Flow Statement is prepared using the indirect method, which starts with net income and adjusts it for non-cash items and changes in working capital. The direct method, on the other hand, starts with cash inflows and outflows from operating activities and then adds back non-cash items.",
+        "marking_scheme": [
+          "Define Cash Flow Statement (1 mark)",
+          "Explain the significance of Cash Flow Statement (2 marks)",
+          "Distinguish between indirect and direct methods (2 marks)"
+        ],
+        "topic": "Introduction to Cash Flow Statement",
+        "is_numerical": false
+      },
+      {
+        "q": "What are the different components of Cash Flow from Operating Activities? Explain with examples. (5 marks)",
+        "marks": 5,
+        "answer": "The different components of Cash Flow from Operating Activities are: Cash received from customers, Cash paid to suppliers, Cash paid to employees, Interest and dividends received, Interest and dividends paid, Income taxes paid. For example, if a company receives Rs. 10,000 from customers and pays Rs. 5,000 to suppliers, the cash inflow from customers is Rs. 10,000 and the cash outflow to suppliers is Rs. 5,000.",
+        "marking_scheme": [
+          "List the components of Cash Flow from Operating Activities (1 mark)",
+          "Explain each component with example (2 marks)",
+          "Calculate the net cash inflow from operating activities (2 marks)"
+        ],
+        "topic": "Cash Flow from Operating Activities",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the cash inflows and outflows from investing activities of a company for the year ended March 31, 2023, given below: <table><tr><th>Particulars</th><th>Cash Inflow</th><th>Cash Outflow</th></tr><tr><td>Sale of investments</td><td>Rs. 50,000</td><td></td></tr><tr><td>Purchase of property, plant and equipment</td><td></td><td>Rs. 1,00,000</td></tr><tr><td>Proceeds from sale of property, plant and equipment</td><td></td><td>Rs. 20,000</td></tr><tr><td>Proceeds from sale of investments</td><td></td><td>Rs. 30,000</td></tr></table>",
+        "marks": 5,
+        "answer": "Calculation: Cash inflow from sale of investments = Rs. 50,000 - Rs. 30,000 = Rs. 20,000 Cash outflow from purchase of property, plant and equipment = Rs. 1,00,000 - Rs. 20,000 = Rs. 80,000 Net cash outflow from investing activities = Rs. 80,000",
+        "marking_scheme": [
+          "Identify cash inflows and outflows from investing activities (1 mark)",
+          "Calculate cash inflows and outflows (2 marks)",
+          "Determine net cash inflow/outflow from investing activities (2 marks)"
+        ],
+        "topic": "Cash Flow from Investing Activities",
+        "is_numerical": true
+      },
+      {
+        "q": "A company has the following cash flows for the year ended March 31, 2023: Cash inflow from operating activities = Rs. 1,50,000; Cash inflow from investing activities = Rs. 20,000. Calculate the net increase/decrease in cash and cash equivalents for the year.",
+        "marks": 5,
+        "answer": "Calculation: Net cash inflow from operating and investing activities = Cash inflow from operating activities + Cash inflow from investing activities = Rs. 1,50,000 + Rs. 20,000 = Rs. 1,70,000 Net increase/decrease in cash and cash equivalents = Rs. 1,70,000",
+        "marking_scheme": [
+          "Identify cash inflows from operating and investing activities (1 mark)",
+          "Calculate net cash inflow (2 marks)",
+          "Determine net increase/decrease in cash and cash equivalents (2 marks)"
+        ],
+        "topic": "Preparation of Cash Flow Statement",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the steps involved in preparing the Cash Flow Statement using the direct method. (5 marks)",
+        "marks": 5,
+        "answer": "The steps involved in preparing the Cash Flow Statement using the direct method are: Step 1: Determine the cash inflows and outflows from operating activities. Step 2: Classify the cash inflows and outflows into operating, investing, and financing activities. Step 3: Calculate the net cash inflow/outflow from operating, investing, and financing activities. Step 4: Calculate the net increase/decrease in cash and cash equivalents. Step 5: Present the Cash Flow Statement using the direct method.",
+        "marking_scheme": [
+          "List the steps involved in preparing Cash Flow Statement using direct method (1 mark)",
+          "Explain each step in detail (2 marks)",
+          "Identify the advantages of direct method (2 marks)"
+        ],
+        "topic": "Preparation of Cash Flow Statement",
+        "is_numerical": false
+      },
+      {
+        "q": "A company has the following data for the year ended March 31, 2023: Cash received from customers = Rs. 5,00,000; Cash paid to suppliers = Rs. 2,50,000; Cash paid to employees = Rs. 1,50,000. Calculate the cash inflow from operating activities.",
+        "marks": 5,
+        "answer": "Calculation: Cash inflow from customers = Cash received from customers = Rs. 5,00,000 Cash outflow to suppliers = Cash paid to suppliers = Rs. 2,50,000 Cash outflow to employees = Cash paid to employees = Rs. 1,50,000 Net cash inflow from operating activities = Cash inflow from customers - (Cash outflow to suppliers + Cash outflow to employees) = Rs. 5,00,000 - (Rs. 2,50,000 + Rs. 1,50,000) = Rs. 50,000",
+        "marking_scheme": [
+          "Identify cash inflows and outflows from operating activities (1 mark)",
+          "Classify cash inflows and outflows (1 mark)",
+          "Calculate net cash inflow from operating activities (3 marks)"
+        ],
+        "topic": "Cash Flow from Operating Activities",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

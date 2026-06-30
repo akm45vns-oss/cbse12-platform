@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Alternating Current",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:48:18.446Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the phase difference between the voltage and current in a purely resistive AC circuit?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "0°",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "An AC circuit contains a resistance of 20 ohms and an inductance of 50 mH. If the AC source has an angular frequency of 100 rad/s, find the impedance of the circuit.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "Z = √(R^2 + (XL)^2) = √(20^2 + (50*10^-3 * 100)^2) = √(400 + 2500) = √2900 ohms",
+        "year_pattern": "2020-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "The current in an AC circuit is given by i = 5 sin (100t) A. Find the rms value of the current.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "Irms = 5/√2 A",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "State the advantage of using AC over DC.",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "AC can be easily transformed to high or low voltages using a transformer.",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "A 100 μF capacitor is connected to a 220 V, 50 Hz AC source. Find the reactance of the capacitor.",
+        "type": "Long Answer",
+        "marks": 3,
+        "answer": "Xc = 1/(2πfC) = 1/(2*3.14*50*100*10^-6) = 1/0.0314 = 31.83 ohms",
+        "year_pattern": "2016-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Fill in the blank: The power factor of an AC circuit is given by _______________.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "cosφ",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "An inductor of inductance 100 mH is connected to a 100 V, 50 Hz AC source. Find the current in the inductor.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "XL = 2πfL = 2*3.14*50*100*10^-3 = 31.4 ohms, I = V/XL = 100/31.4 = 3.18 A",
+        "year_pattern": "2020-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "State True or False: The impedance of an AC circuit is always greater than or equal to the resistance of the circuit.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "True",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "A series LCR circuit has a resistance of 10 ohms, an inductance of 10 mH, and a capacitance of 100 μF. If the circuit is connected to a 100 V, 50 Hz AC source, find the resonant frequency of the circuit.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "f0 = 1/(2π√LC) = 1/(2*3.14*√10*10^-3*100*10^-6) = 1/(2*3.14*√10^-5) = 1/0.00707 = 141.4 Hz",
+        "year_pattern": "2017-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "An AC circuit has a resistance of 20 ohms and a reactance of 30 ohms. Find the power factor of the circuit.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "Power factor = R/Z = R/√(R^2 + X^2) = 20/√(20^2 + 30^2) = 20/√1300 = 20/36.06 = 0.554",
+        "year_pattern": "2016-style",
+        "difficulty": "medium"
+      }
+    ],
+    "total": 10
+  }
+}

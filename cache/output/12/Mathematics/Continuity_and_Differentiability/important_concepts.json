@@ -1,0 +1,53 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Continuity and Differentiability",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:16:19.953Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "Differentiability implies Continuity",
+        "description": "A function is continuous at a point if it is differentiable at that point. However, the converse is not always true. A function can be continuous at a point without being differentiable there."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Geometrical Interpretation of Continuity",
+        "description": "A function f(x) is continuous at x=a if the graph of f(x) is a continuous curve at x=a, i.e., the graph can be drawn without lifting the pencil from the paper."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Cauchy's Generalized Mean Value Theorem",
+        "description": "It states that if f(x) and g(x) are continuous functions on [a,b] and differentiable on (a,b), then there exists a point c in (a,b) such that (f(b) - f(a))/(g(b) - g(a)) = (f'(c))/g'(c)."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "Product Rule Mnemonic",
+        "description": "The product rule for differentiation is: d/dx (f(x)*g(x)) = f(x)*d/dx (g(x)) + g(x)*d/dx (f(x)). To remember this, use the phrase: 'First function times derivative of second, plus second function times derivative of first'."
+      },
+      {
+        "category": "Common Mistake",
+        "title": "Differentiating a Constant",
+        "description": "Students often forget that the derivative of a constant is zero. For example, if f(x) = x^2 + 3, then f'(x) = 2x, not 2x + 3."
+      },
+      {
+        "category": "Units to remember",
+        "title": "Derivatives of Trigonometric Functions",
+        "description": "The derivatives of sin(x), cos(x), tan(x), cot(x), sec(x), and cosec(x) are cos(x), -sin(x), sec^2(x), -cosec^2(x), sec(x)tan(x), and -cosec(x)cot(x) respectively."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Differentiability at a Point",
+        "description": "A function f(x) is differentiable at a point x=a if the limit of [f(x) - f(a)]/(x-a) as x approaches a exists."
+      },
+      {
+        "category": "Most Important Fact",
+        "title": "Implicit Function Theorem",
+        "description": "It states that if f(x,y) is a function of two variables and f(a,b) = 0, then there exists a function y = g(x) such that f(g(x),x) = 0 for all x in a neighbourhood of a."
+      }
+    ]
+  }
+}

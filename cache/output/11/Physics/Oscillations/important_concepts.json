@@ -3,140 +3,50 @@
   "subject": "Physics",
   "chapter": "Oscillations",
   "content_type": "important_concepts",
-  "generated_by": "groq/llama-3.1-8b-instant",
-  "generated_at": "2026-06-25T03:30:37.666Z",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:47:06.666Z",
   "version": "1.0",
   "data": {
     "concepts": [
       {
-        "concept": "Simple Harmonic Motion (SHM)",
-        "explanation": "SHM is a type of periodic motion where the restoring force is proportional to the displacement from the equilibrium position. The acceleration is directly proportional to the displacement and is always directed towards the equilibrium position.",
-        "importance": "Important for understanding oscillations, resonance, and energy transfer in various physical systems.",
-        "related_topics": [
-          "Periodic motion",
-          "Forced oscillations",
-          "Damped oscillations"
-        ]
+        "category": "Most Important Fact",
+        "title": "Definition of Oscillation",
+        "description": "Oscillation is the repeated back and forth movement of an object around its equilibrium position. Understanding this concept is crucial for the entire chapter."
       },
       {
-        "concept": "Simple Pendulum",
-        "explanation": "A simple pendulum is a physical system that exhibits SHM. It consists of a point mass attached to a massless string of fixed length.",
-        "importance": "Helps in understanding the concept of SHM and its applications in real-life situations.",
-        "related_topics": [
-          "Time period",
-          "Angular frequency",
-          "Energy of a simple pendulum"
-        ]
+        "category": "NCERT Line",
+        "title": "Simple Harmonic Motion (SHM)",
+        "description": "SHM is a special type of oscillation where the force acting on the object is directly proportional to its displacement from the equilibrium position, and the motion is sinusoidal in nature."
       },
       {
-        "concept": "Periodic Motion",
-        "explanation": "Periodic motion is a type of motion where the position of the object repeats after a fixed time interval.",
-        "importance": "Important for understanding various types of oscillations and their characteristics.",
-        "related_topics": [
-          "SHM",
-          "Forced oscillations",
-          "Damped oscillations"
-        ]
+        "category": "Board Favourite",
+        "title": "Equation of SHM",
+        "description": "The equation of SHM is given by x(t) = A sin(ωt + φ), where A is the amplitude, ω is the angular frequency, and φ is the phase angle. This equation is frequently asked in exams."
       },
       {
-        "concept": "Forced Oscillations",
-        "explanation": "Forced oscillations occur when an external periodic force is applied to a physical system, causing it to oscillate.",
-        "importance": "Helps in understanding resonance and energy transfer in various physical systems.",
-        "related_topics": [
-          "SHM",
-          "Damped oscillations",
-          "Resonance"
-        ]
+        "category": "Memory Trick",
+        "title": "Remembering SHM Equations",
+        "description": "Use the mnemonic 'AWESOME' to remember the SHM equations: A (amplitude), W (angular frequency), E (equilibrium position), S (simple harmonic motion), O (oscillation), M (mass), E (energy)."
       },
       {
-        "concept": "Damped Oscillations",
-        "explanation": "Damped oscillations occur when an external force opposes the motion of a physical system, causing its amplitude to decrease over time.",
-        "importance": "Important for understanding energy transfer and dissipation in various physical systems.",
-        "related_topics": [
-          "SHM",
-          "Forced oscillations",
-          "Resonance"
-        ]
+        "category": "Common Mistake",
+        "title": "Confusing Frequency and Angular Frequency",
+        "description": "Students often confuse frequency (f) with angular frequency (ω). To avoid this, remember that ω = 2πf, and make sure to use the correct unit (rad/s for ω and Hz for f)."
       },
       {
-        "concept": "Energy of a Simple Pendulum",
-        "explanation": "The energy of a simple pendulum consists of kinetic energy and potential energy. The total energy remains constant in a simple pendulum.",
-        "importance": "Helps in understanding the concept of energy conservation in simple harmonic motion.",
-        "related_topics": [
-          "Simple pendulum",
-          "SHM",
-          "Conservation of energy"
-        ]
+        "category": "Units to remember",
+        "title": "Units of Oscillation",
+        "description": "Remember the units of important quantities in oscillation: amplitude (m), frequency (Hz), angular frequency (rad/s), time period (s), and phase angle (rad)."
       },
       {
-        "concept": "Conservation of Energy",
-        "explanation": "The total mechanical energy of a physical system remains constant in the absence of external forces.",
-        "importance": "Important for understanding energy transfer and dissipation in various physical systems.",
-        "related_topics": [
-          "SHM",
-          "Simple pendulum",
-          "Damped oscillations"
-        ]
+        "category": "Most Important Fact",
+        "title": "Types of Oscillation",
+        "description": "There are two main types of oscillation: free oscillation (where the system oscillates without any external force) and forced oscillation (where an external force is applied to the system)."
       },
       {
-        "concept": "Resonance",
-        "explanation": "Resonance occurs when the frequency of an external force matches the natural frequency of a physical system, causing maximum energy transfer.",
-        "importance": "Helps in understanding energy transfer and dissipation in various physical systems.",
-        "related_topics": [
-          "Forced oscillations",
-          "SHM",
-          "Damped oscillations"
-        ]
-      },
-      {
-        "concept": "Time Period",
-        "explanation": "The time period of a physical system is the time taken for one complete oscillation.",
-        "importance": "Important for understanding the characteristics of various types of oscillations.",
-        "related_topics": [
-          "SHM",
-          "Simple pendulum",
-          "Angular frequency"
-        ]
-      },
-      {
-        "concept": "Angular Frequency",
-        "explanation": "Angular frequency is the angular velocity of a physical system undergoing SHM.",
-        "importance": "Helps in understanding the characteristics of SHM and its applications in real-life situations.",
-        "related_topics": [
-          "SHM",
-          "Simple pendulum",
-          "Time period"
-        ]
-      },
-      {
-        "concept": "Phase Angle",
-        "explanation": "Phase angle is the angle between the initial position of a physical system and its equilibrium position.",
-        "importance": "Important for understanding the characteristics of SHM and its applications in real-life situations.",
-        "related_topics": [
-          "SHM",
-          "Simple pendulum",
-          "Time period"
-        ]
-      },
-      {
-        "concept": "Amplitude",
-        "explanation": "Amplitude is the maximum displacement of a physical system from its equilibrium position.",
-        "importance": "Helps in understanding the characteristics of various types of oscillations.",
-        "related_topics": [
-          "SHM",
-          "Simple pendulum",
-          "Damped oscillations"
-        ]
-      },
-      {
-        "concept": "Equilibrium Position",
-        "explanation": "Equilibrium position is the position of a physical system where the restoring force is zero.",
-        "importance": "Important for understanding the characteristics of SHM and its applications in real-life situations.",
-        "related_topics": [
-          "SHM",
-          "Simple pendulum",
-          "Restoring force"
-        ]
+        "category": "Board Favourite",
+        "title": "Resonance",
+        "description": "Resonance occurs when the frequency of the external force matches the natural frequency of the system, resulting in maximum amplitude. This concept is frequently tested in exams."
       }
     ]
   }

@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Python Revision Tour",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:30:43.690Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Rohan, a software developer, is working on a project to automate the process of sending personalized emails to customers. He has a list of customer names, emails, and purchase history stored in a CSV file. Rohan wants to write a Python script that reads the CSV file, filters out customers who have not made any purchases in the last six months, and sends them a reminder email. He also wants to include a greeting in the email based on the customer's name and purchase history. Rohan has experience with Python and its libraries, but he is new to working with CSV files and email automation. He needs to write a Python script that meets the requirements and also ensures that the email is sent securely and efficiently.",
+        "questions": [
+          {
+            "q": "What is the first step Rohan should take to start working on the project?",
+            "opts": [
+              "Importing the necessary libraries in Python",
+              "Reading the CSV file and understanding its structure",
+              "Writing the Python script to filter customers and send emails",
+              "None of the above"
+            ],
+            "ans": "B",
+            "explanation": "Rohan needs to read the CSV file and understand its structure before writing the Python script."
+          },
+          {
+            "q": "Which library in Python would Rohan use to read the CSV file?",
+            "opts": [
+              "pandas",
+              "numpy",
+              "matplotlib",
+              "None of the above"
+            ],
+            "ans": "A",
+            "explanation": "The pandas library in Python is commonly used to read and manipulate CSV files."
+          },
+          {
+            "q": "How would Rohan ensure that the email is sent securely?",
+            "opts": [
+              "By using a secure password for the email account",
+              "By using the SSL encryption method",
+              "By using the SMTP protocol",
+              "None of the above"
+            ],
+            "ans": "C",
+            "explanation": "Rohan can use the SMTP protocol to send emails securely."
+          },
+          {
+            "q": "What is the purpose of filtering customers who have not made any purchases in the last six months?",
+            "opts": [
+              "To personalize the email",
+              "To reduce the number of emails sent",
+              "To increase sales by reminding inactive customers",
+              "None of the above"
+            ],
+            "ans": "C",
+            "explanation": "Filtering inactive customers helps Rohan to focus on customers who are most likely to purchase from the company."
+          },
+          {
+            "q": "What would be the next step after filtering customers and sending emails?",
+            "opts": [
+              "Saving the CSV file for future reference",
+              "Analyzing the email response rates",
+              "Updating the purchase history of customers",
+              "None of the above"
+            ],
+            "ans": "B",
+            "explanation": "Analyzing the email response rates would help Rohan to understand the effectiveness of the email campaign and make improvements for future campaigns."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "Lavanya, a data analyst, is working on a project to analyze the sales data of an e-commerce company. She has a CSV file containing the sales data for the last quarter, including the date, product ID, quantity sold, and revenue. Lavanya wants to write a Python script that reads the CSV file, calculates the total revenue for each product, and stores the results in a new CSV file. She also wants to plot a bar chart to visualize the top 5 products with the highest revenue. Lavanya has experience with Python and its libraries, but she is new to working with CSV files and data visualization.",
+        "questions": [
+          {
+            "q": "What is the first step Lavanya should take to start working on the project?",
+            "opts": [
+              "Importing the necessary libraries in Python",
+              "Reading the CSV file and understanding its structure",
+              "Writing the Python script to calculate revenue and plot a chart",
+              "None of the above"
+            ],
+            "ans": "B",
+            "explanation": "Lavanya needs to read the CSV file and understand its structure before writing the Python script."
+          },
+          {
+            "q": "Which library in Python would Lavanya use to read the CSV file?",
+            "opts": [
+              "pandas",
+              "numpy",
+              "matplotlib",
+              "None of the above"
+            ],
+            "ans": "A",
+            "explanation": "The pandas library in Python is commonly used to read and manipulate CSV files."
+          },
+          {
+            "q": "How would Lavanya calculate the total revenue for each product?",
+            "opts": [
+              "By summing up the revenue for each product",
+              "By averaging the revenue for each product",
+              "By multiplying the quantity sold by the revenue",
+              "None of the above"
+            ],
+            "ans": "A",
+            "explanation": "Lavanya would sum up the revenue for each product to calculate the total revenue."
+          },
+          {
+            "q": "What would be the purpose of plotting a bar chart to visualize the top 5 products with the highest revenue?",
+            "opts": [
+              "To understand the sales trends",
+              "To compare the revenue of different products",
+              "To identify the top-selling products",
+              "None of the above"
+            ],
+            "ans": "C",
+            "explanation": "Plotting a bar chart helps Lavanya to identify the top-selling products and understand their sales performance."
+          },
+          {
+            "q": "What would be the next step after calculating revenue and plotting a chart?",
+            "opts": [
+              "Saving the results in a new CSV file",
+              "Analyzing the sales data for the next quarter",
+              "Updating the sales data for the current quarter",
+              "None of the above"
+            ],
+            "ans": "A",
+            "explanation": "Saving the results in a new CSV file would help Lavanya to store the calculated revenue for each product."
+          }
+        ]
+      }
+    ]
+  }
+}

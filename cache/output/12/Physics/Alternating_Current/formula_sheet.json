@@ -1,0 +1,76 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Alternating Current",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:00:15.191Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Root Mean Square (RMS) Value of Alternating Voltage",
+        "formula": "Vrms = V0 / √2",
+        "variables": "Vrms = RMS voltage, V0 = Peak voltage",
+        "units": "V",
+        "notes": ""
+      },
+      {
+        "name": "Root Mean Square (RMS) Value of Alternating Current",
+        "formula": "Irms = I0 / √2",
+        "variables": "Irms = RMS current, I0 = Peak current",
+        "units": "A",
+        "notes": ""
+      },
+      {
+        "name": "Average Power in Alternating Current",
+        "formula": "Pavg = Vrms × Irms × cosφ",
+        "variables": "Pavg = Average power, Vrms = RMS voltage, Irms = RMS current, cosφ = Power factor",
+        "units": "W",
+        "notes": ""
+      },
+      {
+        "name": "True Power Factor",
+        "formula": "cosφ = P / (Vrms × Irms)",
+        "variables": "cosφ = Power factor, P = Real power, Vrms = RMS voltage, Irms = RMS current",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Apparent Power",
+        "formula": "S = Vrms × Irms",
+        "variables": "S = Apparent power, Vrms = RMS voltage, Irms = RMS current",
+        "units": "VA",
+        "notes": ""
+      },
+      {
+        "name": "Power Factor in Terms of Resistance, Inductive Reactance, and Capacitive Reactance",
+        "formula": "cosφ = R / √(R^2 + (XL - XC)^2)",
+        "variables": "cosφ = Power factor, R = Resistance, XL = Inductive reactance, XC = Capacitive reactance",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Impedance",
+        "formula": "Z = √(R^2 + (XL - XC)^2)",
+        "variables": "Z = Impedance, R = Resistance, XL = Inductive reactance, XC = Capacitive reactance",
+        "units": "Ω",
+        "notes": ""
+      },
+      {
+        "name": "Reactance of a Capacitor",
+        "formula": "XC = 1 / (ωC)",
+        "variables": "XC = Capacitive reactance, ω = Angular frequency, C = Capacitance",
+        "units": "Ω",
+        "notes": ""
+      },
+      {
+        "name": "Reactance of an Inductor",
+        "formula": "XL = ωL",
+        "variables": "XL = Inductive reactance, ω = Angular frequency, L = Inductance",
+        "units": "Ω",
+        "notes": ""
+      }
+    ]
+  }
+}

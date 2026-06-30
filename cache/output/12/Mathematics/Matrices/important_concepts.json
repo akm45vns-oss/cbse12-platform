@@ -1,0 +1,53 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Matrices",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:16:07.131Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "Inverse of a matrix",
+        "description": "The inverse of a matrix A, denoted by A^-1, is a matrix that, when multiplied by A, gives the identity matrix. It is only defined for square matrices and is denoted by A^-1 = 1/A, where 1 is the determinant of A."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Properties of inverse of a matrix",
+        "description": "The inverse of a matrix A has the following properties: (i) (A^-1)^-1 = A, (ii) A * A^-1 = I, (iii) A^-1 * A = I, where I is the identity matrix."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "Mnemonics for matrix operations",
+        "description": "To remember the order of operations for matrix multiplication, use the acronym 'MAD': Multiply Across Diagonals. For matrix addition, use 'MAD' again, but remember that the result is a matrix of the same order."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Properties of a skew-symmetric matrix",
+        "description": "A skew-symmetric matrix is a square matrix whose transpose is its negative. It is denoted by A^T = -A. For example, the matrix [ [0, 1], [-1, 0] ] is skew-symmetric."
+      },
+      {
+        "category": "Common Mistake",
+        "title": "Error in matrix multiplication",
+        "description": "Students often forget to multiply corresponding elements in the rows of the first matrix with the corresponding elements in the columns of the second matrix. Always remember to follow the order of operations (MAD) and multiply across diagonals."
+      },
+      {
+        "category": "Units to remember",
+        "title": "Determinant of a matrix",
+        "description": "The determinant of a 2x2 matrix [ [a, b], [c, d] ] is given by ad - bc. The determinant of a 3x3 matrix can be calculated using the formula A = a(ei - fh) - b(di - fg) + c(dh - eg)."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Properties of a Hermitian matrix",
+        "description": "A Hermitian matrix is a square matrix that is equal to its conjugate transpose. It is denoted by A = A^H. For example, the matrix [ [1, i], [-i, 1] ] is Hermitian."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Rank of a matrix",
+        "description": "The rank of a matrix is the maximum number of linearly independent rows or columns in the matrix. It is denoted by rank(A). The rank of a matrix is equal to the number of non-zero eigenvalues of the matrix."
+      }
+    ]
+  }
+}

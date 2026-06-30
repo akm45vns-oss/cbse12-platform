@@ -1,0 +1,122 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Linear Programming",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:30:31.857Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "In a linear programming problem, the objective function is a linear equation.",
+        "reason": "It is used to maximize or minimize the value.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The objective function is indeed a linear equation, and its purpose is to maximize or minimize the value, which is explained by reason."
+      },
+      {
+        "assertion": "A feasible region in linear programming is the set of all possible solutions that satisfy all the constraints.",
+        "reason": "It is formed by the intersection of the half-planes defined by the constraints.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The feasible region is the set of all possible solutions, and it is formed by the intersection of half-planes, which is explained by reason."
+      },
+      {
+        "assertion": "The vertices of the feasible region in linear programming are the optimal solutions to the problem.",
+        "reason": "They are the points where the constraints intersect, and the objective function is evaluated at these points.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The vertices indeed represent the optimal solutions, and the reason provided explains why they are evaluated for the objective function."
+      },
+      {
+        "assertion": "The boundary of the feasible region in linear programming is formed by the constraints.",
+        "reason": "It is the set of all points that satisfy at least one of the constraints.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The boundary is indeed formed by the constraints, and the reason explains why these constraints define the boundary."
+      },
+      {
+        "assertion": "The corner point method is an efficient method for solving linear programming problems.",
+        "reason": "It involves evaluating the objective function at the vertices of the feasible region, which are the optimal solutions.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The corner point method is indeed an efficient method for solving linear programming problems, and the reason provided explains its efficiency."
+      },
+      {
+        "assertion": "The simplex method is a popular method for solving linear programming problems.",
+        "reason": "It involves moving from one basic feasible solution to another, improving the objective function value at each step.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The simplex method is indeed a popular method, and the reason explains its working principle."
+      },
+      {
+        "assertion": "The initial basic feasible solution in the simplex method is always optimal.",
+        "reason": "It is not necessarily true, and further iterations are required to find the optimal solution.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The initial basic feasible solution is not always optimal, and reason explains why further iterations are required."
+      },
+      {
+        "assertion": "The two-phase simplex method is used to find the optimal solution to a linear programming problem.",
+        "reason": "It is used to find the initial basic feasible solution, and then the simplex method is applied to find the optimal solution.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The two-phase simplex method is not used to find the optimal solution directly, but rather to find the initial basic feasible solution, and then the simplex method is applied."
+      },
+      {
+        "assertion": "The Big-M method is a method used to find the initial basic feasible solution in the simplex method.",
+        "reason": "It involves introducing artificial variables to satisfy the constraints, and then the simplex method is applied to find the optimal solution.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The Big-M method is indeed a method used to find the initial basic feasible solution, and reason explains how it works."
+      }
+    ],
+    "total": 9
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:10:26.439Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A semiconductor is created by adding a small amount of impurity to a pure crystal of a material. Which of the following materials is most likely to be used to create a semiconductor?",
+        "opts": [
+          "Germanium (Ge)",
+          "(B) Silicon (Si)",
+          "(C) Tungsten (W)",
+          "(D) Copper (Cu)"
+        ],
+        "ans": "B",
+        "explanation": "Silicon is widely used due to its stability and abundance.",
+        "difficulty": "easy",
+        "topic": "Semiconductor Materials"
+      },
+      {
+        "q": "What is the process called when a small amount of group III element is added to pure silicon?",
+        "opts": [
+          "P-type Semiconductors",
+          "(B) N-type Semiconductors",
+          "(C) Doping",
+          "(D) Ion Implantation"
+        ],
+        "ans": "C",
+        "explanation": "Doping is a process where impurities are added to a semiconductor material.",
+        "difficulty": "easy",
+        "topic": "Doping in Semiconductors"
+      },
+      {
+        "q": "A p-n junction diode is a type of semiconductor device that allows current to flow in one direction but blocks it in the other. What is the name of the layer on the p-side of a p-n junction diode?",
+        "opts": [
+          "p-type semiconductor",
+          "(B) n-type semiconductor",
+          "(C) P-region",
+          "(D) N-region"
+        ],
+        "ans": "C",
+        "explanation": "The layer on the p-side of a p-n junction diode is called the p-region.",
+        "difficulty": "easy",
+        "topic": "p-n Junction Diodes"
+      },
+      {
+        "q": "A zener diode is used in voltage regulation. What is the primary function of a zener diode?",
+        "opts": [
+          "To rectify AC voltage",
+          "(B) To regulate voltage",
+          "(C) To amplify voltage",
+          "(D) To conduct current"
+        ],
+        "ans": "B",
+        "explanation": "The primary function of a zener diode is to regulate voltage.",
+        "difficulty": "easy",
+        "topic": "Zener Diodes"
+      },
+      {
+        "q": "A transistor is a semiconductor device that can amplify or switch electronic signals. What is the name of the three layers of a bipolar junction transistor (BJT)?",
+        "opts": [
+          "Base, Collector, Emitter",
+          "(B) Base, Collector, Base",
+          "(C) Collector, Emitter, Collector",
+          "(D) Emitter, Collector, Emitter"
+        ],
+        "ans": "A",
+        "explanation": "The three layers of a BJT are the base, collector, and emitter.",
+        "difficulty": "easy",
+        "topic": "Transistors"
+      },
+      {
+        "q": "A logic gate is a basic building block of digital electronics. What is the primary function of a NOT gate?",
+        "opts": [
+          "To perform arithmetic operations",
+          "(B) To perform logical operations",
+          "(C) To invert a signal",
+          "(D) To generate a clock signal"
+        ],
+        "ans": "C",
+        "explanation": "The primary function of a NOT gate is to invert a signal.",
+        "difficulty": "easy",
+        "topic": "Logic Gates"
+      },
+      {
+        "q": "A Schmitt trigger is a type of logic gate that has a unique input-output characteristic. What is the primary advantage of a Schmitt trigger?",
+        "opts": [
+          "High speed",
+          "(B) Low power consumption",
+          "(C) High noise immunity",
+          "(D) Simple circuitry"
+        ],
+        "ans": "C",
+        "explanation": "The primary advantage of a Schmitt trigger is its high noise immunity.",
+        "difficulty": "easy",
+        "topic": "Schmitt Trigger"
+      },
+      {
+        "q": "A diode is a two-terminal semiconductor device that allows current to flow in one direction but blocks it in the other. What is the maximum voltage rating of a diode?",
+        "opts": [
+          "10 V",
+          "(B) 100 V",
+          "(C) 1000 V",
+          "(D) 10000 V"
+        ],
+        "ans": "C",
+        "explanation": "The maximum voltage rating of a diode is typically in the range of 1000 V.",
+        "difficulty": "medium",
+        "topic": "Diodes"
+      },
+      {
+        "q": "A zener diode is used in voltage regulation. What is the primary disadvantage of using a zener diode?",
+        "opts": [
+          "Low power consumption",
+          "(B) High noise immunity",
+          "(C) Low voltage regulation accuracy",
+          "(D) High voltage regulation accuracy"
+        ],
+        "ans": "C",
+        "explanation": "The primary disadvantage of using a zener diode is its low voltage regulation accuracy.",
+        "difficulty": "medium",
+        "topic": "Zener Diodes"
+      },
+      {
+        "q": "A transistor is a semiconductor device that can amplify or switch electronic signals. What is the primary advantage of using a transistor?",
+        "opts": [
+          "High power consumption",
+          "(B) Low noise immunity",
+          "(C) High voltage gain",
+          "(D) Low current gain"
+        ],
+        "ans": "C",
+        "explanation": "The primary advantage of using a transistor is its high voltage gain.",
+        "difficulty": "medium",
+        "topic": "Transistors"
+      },
+      {
+        "q": "A logic gate is a basic building block of digital electronics. What is the primary disadvantage of using a logic gate?",
+        "opts": [
+          "High speed",
+          "(B) Low power consumption",
+          "(C) High noise immunity",
+          "(D) Complex circuitry"
+        ],
+        "ans": "D",
+        "explanation": "The primary disadvantage of using a logic gate is its complex circuitry.",
+        "difficulty": "medium",
+        "topic": "Logic Gates"
+      },
+      {
+        "q": "A Schmitt trigger is a type of logic gate that has a unique input-output characteristic. What is the primary advantage of using a Schmitt trigger?",
+        "opts": [
+          "High speed",
+          "(B) Low power consumption",
+          "(C) High noise immunity",
+          "(D) Low voltage regulation accuracy"
+        ],
+        "ans": "C",
+        "explanation": "The primary advantage of using a Schmitt trigger is its high noise immunity.",
+        "difficulty": "medium",
+        "topic": "Schmitt Trigger"
+      },
+      {
+        "q": "A p-n junction diode has a higher forward voltage drop than a Schottky diode. What is the primary reason for this?",
+        "opts": [
+          "Lower doping concentration",
+          "(B) Higher doping concentration",
+          "(C) Higher temperature",
+          "(D) Lower current flow"
+        ],
+        "ans": "B",
+        "explanation": "The primary reason for the higher forward voltage drop of a p-n junction diode is its higher doping concentration.",
+        "difficulty": "hard",
+        "topic": "Diodes"
+      },
+      {
+        "q": "A zener diode can be used as a voltage regulator. What is the primary condition for using a zener diode as a voltage regulator?",
+        "opts": [
+          "The zener voltage must be greater than the input voltage",
+          "(B) The zener voltage must be less than the input voltage",
+          "(C) The zener voltage must be equal to the input voltage",
+          "(D) The zener voltage must be a multiple of the input voltage"
+        ],
+        "ans": "B",
+        "explanation": "The primary condition for using a zener diode as a voltage regulator is that the zener voltage must be less than the input voltage.",
+        "difficulty": "hard",
+        "topic": "Zener Diodes"
+      },
+      {
+        "q": "A transistor can be used as an amplifier. What is the primary condition for using a transistor as an amplifier?",
+        "opts": [
+          "The transistor must be biased in the active region",
+          "(B) The transistor must be biased in the cut-off region",
+          "(C) The transistor must be biased in the saturation region",
+          "(D) The transistor must be biased in the linear region"
+        ],
+        "ans": "A",
+        "explanation": "The primary condition for using a transistor as an amplifier is that it must be biased in the active region.",
+        "difficulty": "hard",
+        "topic": "Transistors"
+      },
+      {
+        "q": "A logic gate can be used to perform arithmetic operations. What is the primary condition for using a logic gate to perform arithmetic operations?",
+        "opts": [
+          "The logic gate must be a NOT gate",
+          "(B) The logic gate must be an AND gate",
+          "(C) The logic gate must be an OR gate",
+          "(D) The logic gate must be a NAND gate"
+        ],
+        "ans": "A",
+        "explanation": "The primary condition for using a logic gate to perform arithmetic operations is that it must be a NOT gate.",
+        "difficulty": "hard",
+        "topic": "Logic Gates"
+      },
+      {
+        "q": "A Schmitt trigger can be used to eliminate noise from a signal. What is the primary mechanism by which a Schmitt trigger eliminates noise?",
+        "opts": [
+          "By reducing the amplitude of the signal",
+          "(B) By increasing the amplitude of the signal",
+          "(C) By filtering out the noise",
+          "(D) By converting the analog signal to a digital signal"
+        ],
+        "ans": "C",
+        "explanation": "The primary mechanism by which a Schmitt trigger eliminates noise is by filtering out the noise.",
+        "difficulty": "hard",
+        "topic": "Schmitt Trigger"
+      },
+      {
+        "q": "A p-n junction diode has a reverse saturation current. What is the primary reason for the existence of a reverse saturation current?",
+        "opts": [
+          "The p-n junction diode is biased in the forward direction",
+          "(B) The p-n junction diode is biased in the reverse direction",
+          "(C) The p-n junction diode is at thermal equilibrium",
+          "(D) The p-n junction diode is at electrical equilibrium"
+        ],
+        "ans": "B",
+        "explanation": "The primary reason for the existence of a reverse saturation current is that the p-n junction diode is biased in the reverse direction.",
+        "difficulty": "hard",
+        "topic": "Diodes"
+      },
+      {
+        "q": "A zener diode can be used as a voltage regulator. What is the primary advantage of using a zener diode as a voltage regulator?",
+        "opts": [
+          "Low power consumption",
+          "(B) High noise immunity",
+          "(C) High voltage regulation accuracy",
+          "(D) Low current regulation accuracy"
+        ],
+        "ans": "C",
+        "explanation": "The primary advantage of using a zener diode as a voltage regulator is its high voltage regulation accuracy.",
+        "difficulty": "hard",
+        "topic": "Zener Diodes"
+      },
+      {
+        "q": "A transistor can be used as an amplifier. What is the primary advantage of using a transistor as an amplifier?",
+        "opts": [
+          "High power consumption",
+          "(B) Low noise immunity",
+          "(C) High voltage gain",
+          "(D) Low current gain"
+        ],
+        "ans": "C",
+        "explanation": "The primary advantage of using a transistor as an amplifier is its high voltage gain.",
+        "difficulty": "hard",
+        "topic": "Transistors"
+      },
+      {
+        "q": "A logic gate can be used to perform arithmetic operations. What is the primary advantage of using a logic gate to perform arithmetic operations?",
+        "opts": [
+          "High speed",
+          "(B) Low power consumption",
+          "(C) High noise immunity",
+          "(D) Complex circuitry"
+        ],
+        "ans": "A",
+        "explanation": "The primary advantage of using a logic gate to perform arithmetic operations is its high speed.",
+        "difficulty": "hard",
+        "topic": "Logic Gates"
+      },
+      {
+        "q": "A Schmitt trigger can be used to eliminate noise from a signal. What is the primary advantage of using a Schmitt trigger to eliminate noise?",
+        "opts": [
+          "High speed",
+          "(B) Low power consumption",
+          "(C) High noise immunity",
+          "(D) Low voltage regulation accuracy"
+        ],
+        "ans": "C",
+        "explanation": "The primary advantage of using a Schmitt trigger to eliminate noise is its high noise immunity.",
+        "difficulty": "hard",
+        "topic": "Schmitt Trigger"
+      }
+    ],
+    "total": 22
+  }
+}

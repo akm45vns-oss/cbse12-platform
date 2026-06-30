@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Current Electricity",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:14:43.617Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The drift velocity of electrons in a conductor is typically very small.",
+        "reason": "Reason (R): The drift velocity is small because the electrons undergo frequent collisions with the atoms of the conductor.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The drift velocity of electrons is indeed small, and it is because of the frequent collisions with the atoms of the conductor that the electrons do not get to move very far before being scattered."
+      },
+      {
+        "assertion": "Assertion (A): The internal resistance of a cell can be reduced by increasing the area of the electrodes.",
+        "reason": "Reason (R): Increasing the area of the electrodes reduces the internal resistance because it allows more ions to participate in the reaction.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Increasing the area of the electrodes does reduce the internal resistance of a cell because more ions can participate in the reaction, reducing the resistance to the flow of charge."
+      },
+      {
+        "assertion": "Assertion (A): The resistivity of a conductor increases with temperature.",
+        "reason": "Reason (R): The resistivity of a conductor increases with temperature because the atoms of the conductor vibrate more at higher temperatures, causing more collisions with the electrons.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The resistivity of a conductor does indeed increase with temperature, and the reason is that the atoms of the conductor vibrate more at higher temperatures, causing more collisions with the electrons and increasing the resistivity."
+      },
+      {
+        "assertion": "Assertion (A): The emf of a cell is the potential difference between the terminals of the cell when no current is flowing.",
+        "reason": "Reason (R): The emf of a cell is the potential difference between the terminals when current is flowing.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The assertion is true, but the reason is false. The emf of a cell is indeed the potential difference between the terminals when no current is flowing, not when current is flowing."
+      },
+      {
+        "assertion": "Assertion (A): The resistance of a wire is directly proportional to its length.",
+        "reason": "Reason (R): The resistance of a wire is directly proportional to its cross-sectional area.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The assertion is true, but the reason is false. The resistance of a wire is indeed directly proportional to its length, but it is inversely proportional to its cross-sectional area."
+      },
+      {
+        "assertion": "Assertion (A): The power dissipated in a resistor is given by P = V^2/R.",
+        "reason": "Reason (R): The power dissipated in a resistor is given by P = VI.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "Both the assertion and the reason are true, but the reason does not explain the assertion. The power dissipated in a resistor can be given by either P = V^2/R or P = VI, depending on the context."
+      },
+      {
+        "assertion": "Assertion (A): The current in a circuit is the same at all points.",
+        "reason": "Reason (R): The current in a circuit is the same at all points because of the conservation of charge.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion is true, and the reason is the correct explanation. The current in a circuit is indeed the same at all points, and this is due to the conservation of charge."
+      },
+      {
+        "assertion": "Assertion (A): The terminal potential difference of a cell is equal to its emf when no current is flowing.",
+        "reason": "Reason (R): The terminal potential difference of a cell is always equal to its emf.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The assertion is true, but the reason is false. The terminal potential difference of a cell is equal to its emf only when no current is flowing, not always."
+      },
+      {
+        "assertion": "Assertion (A): The resistance of a wire is inversely proportional to its cross-sectional area.",
+        "reason": "Reason (R): The resistance of a wire is directly proportional to its cross-sectional area.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The assertion is true, but the reason is false. The resistance of a wire is indeed inversely proportional to its cross-sectional area, not directly proportional."
+      },
+      {
+        "assertion": "Assertion (A): The internal resistance of a cell is zero.",
+        "reason": "Reason (R): The internal resistance of a cell is the opposition to the flow of current within the cell.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The assertion is false, but the reason is true. The internal resistance of a cell is not zero, it is the opposition to the flow of current within the cell."
+      }
+    ],
+    "total": 10
+  }
+}

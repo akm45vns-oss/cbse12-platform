@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Economics",
+  "chapter": "Determination of Income and Employment",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:44:49.532Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The aggregate demand curve slopes downward from left to right.",
+        "reason": "Reason (R): This is because as the price level increases, the real value of money balances decreases, leading to a decrease in consumption and investment, thus reducing aggregate demand.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The aggregate demand curve does indeed slope downward due to the wealth effect, interest rate effect, and foreign trade effect, which are all accurately described by the reason."
+      },
+      {
+        "assertion": "Assertion (A): An increase in government spending leads to an increase in aggregate demand.",
+        "reason": "Reason (R): The multiplier effect of an increase in government spending is greater than one.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "While an increase in government spending does lead to an increase in aggregate demand, the reason provided about the multiplier effect being greater than one, although true, does not directly explain why the increase in government spending increases aggregate demand."
+      },
+      {
+        "assertion": "Assertion (A): The equilibrium level of income is determined by the intersection of the aggregate demand and aggregate supply curves.",
+        "reason": "Reason (R): The aggregate supply curve represents the total amount of goods and services that firms are willing to produce at different price levels.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "Both statements are true, but the reason does not directly explain why the equilibrium level of income is determined by the intersection of the two curves; it merely defines the aggregate supply curve."
+      },
+      {
+        "assertion": "Assertion (A): A decrease in taxes leads to an increase in disposable income.",
+        "reason": "Reason (R): The government uses taxation to redistribute income.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "Although a decrease in taxes does lead to an increase in disposable income, the reason given about taxation being used for income redistribution does not directly explain this relationship."
+      },
+      {
+        "assertion": "Assertion (A): The multiplier is less than infinity because of leakage from the circular flow of income.",
+        "reason": "Reason (R): Leakages include savings, taxes, and imports.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion that the multiplier is less than infinity is true and is correctly explained by the reason that leakages (savings, taxes, and imports) reduce the amount of income that is re-spent, thus limiting the multiplier effect."
+      },
+      {
+        "assertion": "Assertion (A): The consumption function is directly related to disposable income.",
+        "reason": "Reason (R): The marginal propensity to consume is always greater than one.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The consumption function is indeed directly related to disposable income, but the marginal propensity to consume (MPC) is less than one, not greater, as it represents the fraction of an increase in disposable income that is spent."
+      },
+      {
+        "assertion": "Assertion (A): An increase in aggregate demand can lead to an increase in the level of employment.",
+        "reason": "Reason (R): Firms will hire more workers to meet the increased demand for their products.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion is true and is correctly explained by the reason. When aggregate demand increases, firms typically respond by increasing production, which often requires hiring more workers, thus increasing the level of employment."
+      },
+      {
+        "assertion": "Assertion (A): The equilibrium level of income can be influenced by changes in government spending.",
+        "reason": "Reason (R): Changes in government spending affect the aggregate demand curve.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The assertion is true and is correctly explained by the reason. Government spending is a component of aggregate demand, and changes in it can shift the aggregate demand curve, thereby affecting the equilibrium level of income."
+      },
+      {
+        "assertion": "Assertion (A): The marginal propensity to save is the fraction of an increase in income that is saved.",
+        "reason": "Reason (R): The marginal propensity to save plus the marginal propensity to consume equals one.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "While the assertion about the marginal propensity to save is true, and the reason stating that the sum of the marginal propensity to save and the marginal propensity to consume equals one is also true, the reason does not directly explain the definition of the marginal propensity to save."
+      },
+      {
+        "assertion": "Assertion (A): A decrease in the price level will lead to an increase in the real value of money balances.",
+        "reason": "Reason (R): The wealth effect is the result of changes in consumption due to changes in the real value of money balances.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The reason regarding the wealth effect is true, but the assertion that a decrease in the price level leads to an increase in the real value of money balances, and thus directly explaining the assertion, is not what the reason is about; it's about the effect of such changes on consumption."
+      }
+    ],
+    "total": 10
+  }
+}

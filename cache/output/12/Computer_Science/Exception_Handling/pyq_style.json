@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Exception Handling",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:00:59.477Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the purpose of the finally block in exception handling?",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "The finally block is used to execute a block of code regardless of whether an exception is thrown or not.",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Consider the following code snippet: try { ... } catch (Exception e) { ... } finally { ... } Which of the following is the order of execution?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "try block, catch block, finally block",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the difference between checked and unchecked exceptions?",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "Checked exceptions are those that are checked at compile time, while unchecked exceptions are thrown at runtime.",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Consider the following code snippet: throw new NullPointerException(); Which type of exception is thrown?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "NullPointerException",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Describe the difference between throws and throw keywords in Java.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "The throws keyword is used to specify the types of exceptions that a method may throw, while the throw keyword is used to explicitly throw an exception.",
+        "year_pattern": "2020-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Consider the following code snippet: try { ... } catch (Exception e) { System.out.println(e.getMessage()); } finally { ... } What is the purpose of the getMessage() method?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The getMessage() method is used to get the message associated with the exception.",
+        "year_pattern": "2015-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "What is the purpose of the try-with-resources statement in Java?",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "The try-with-resources statement is used to automatically close resources such as files, sockets, and connections.",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Consider the following code snippet: try { ... } catch (Exception e) { e.printStackTrace(); } finally { ... } What is the purpose of the printStackTrace() method?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The printStackTrace() method is used to print the stack trace of the exception.",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "What is the difference between Exception and Error classes in Java?",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "The Exception class is used for runtime exceptions, while the Error class is used for irrecoverable errors.",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Consider the following code snippet: try { ... } catch (NullPointerException e) { ... } finally { ... } What is the type of exception in the catch block?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "NullPointerException",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Integrals",
+  "content_type": "short_notes",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:16:52.137Z",
+  "version": "1.0",
+  "data": {
+    "markdown": "# 3. SHORT NOTES (QUICK REVISION) - Integrals\n\n* **Definite Integral:** Limit of a sum of areas of rectangles under a curve as the no. of rectangles increases.\n* **Properties of Definite Integrals:** \n  - Additive\n  - Multiplicative\n  - Linearity\n  - Constant Multiple\n* **Second Fundamental Theorem of Calculus (FTC II):** \n  - If f(x) is continuous on [a, b] then \n    ∫[a, b] f(x) dx = F(b) - F(a)\n* **First Fundamental Theorem of Calculus (FTC I):** \n  - If f(x) is continuous on [a, b] then \n    ∫[a, b] f'(x) dx = f(b) - f(a)\n* **Mean Value Theorem for Integrals:** \n  - If f(x) is continuous on [a, b] then \n    there exists c ∈ [a, b] such that \n    ∫[a, b] f(x) dx = f(c)(b - a)\n* **Definite Integral of Even and Odd Functions:** \n  - ∫[a, b] f(x) dx = 2∫[0, b] f(x) dx if f(x) is even\n  - ∫[a, b] f(x) dx = 0 if f(x) is odd\n* **Definite Integral of the Sum and Difference of Functions:** \n  - ∫[a, b] (f(x) ± g(x)) dx = ∫[a, b] f(x) dx ± ∫[a, b] g(x) dx\n* **Integration by Substitution:** \n  - ∫f(g(x))g'(x) dx = F(g(x)) + C where u = g(x)\n* **Integration by Parts:** \n  - ∫u dv = uv - ∫v du\n* **Integration by Partial Fractions:** \n  - Express f(x) as a sum of simpler fractions\n* **Trigonometric Integrals:** \n  - ∫sin^2 x dx = (x/2) - (sin(2x)/4) + C\n  - ∫cos^2 x dx = (x/2) + (sin(2x)/4) + C\n* **Definite Integrals of Inverse Trigonometric Functions:** \n  - ∫tan^(-1) x dx = x*tan^(-1) x - (1/2)log(1 + x^2) + C\n* **Definite Integrals of Exponential and Logarithmic Functions:** \n  - ∫e^(ax) dx = (1/a)e^(ax) + C\n  - ∫log x dx = x*log x - x + C\n* **Definite Integrals of Hyperbolic Functions:** \n  - ∫sinh(x) dx = cosh(x) + C\n  - ∫cosh(x) dx = sinh(x) + C"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Magnetism and Matter",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:08:18.727Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define magnetic susceptibility.",
+        "marks": 1,
+        "answer": "Magnetic susceptibility is the ratio of magnetisation to the applied magnetic field.",
+        "key_points": [
+          "It is a dimensionless quantity.",
+          "It depends on the temperature."
+        ],
+        "topic": "Magnetic Susceptibility"
+      },
+      {
+        "q": "State Curie's law.",
+        "marks": 1,
+        "answer": "Curie's law states that the magnetic susceptibility of a substance is inversely proportional to the temperature.",
+        "key_points": [
+          "It is applicable only at high temperatures.",
+          "It is a simple law based on the assumption of classical theory."
+        ],
+        "topic": "Curie's Law"
+      },
+      {
+        "q": "Distinguish between paramagnetic and diamagnetic substances.",
+        "marks": 1,
+        "answer": "Paramagnetic substances are weakly attracted to magnetic fields and their magnetic susceptibility is positive, whereas diamagnetic substances are weakly repelled by magnetic fields and their magnetic susceptibility is negative.",
+        "key_points": [
+          "Paramagnetic substances have unpaired electrons.",
+          "Diamagnetic substances have paired electrons."
+        ],
+        "topic": "Paramagnetic and Diamagnetic Substances"
+      },
+      {
+        "q": "State the Biot-Savart law.",
+        "marks": 1,
+        "answer": "The Biot-Savart law states that the magnetic field dB due to a small element of a current-carrying wire is proportional to the current, the length of the element, and the sine of the angle between the element and the point where the field is being measured.",
+        "key_points": [
+          "It is a fundamental law of magnetism.",
+          "It is a vector equation."
+        ],
+        "topic": "Biot-Savart Law"
+      },
+      {
+        "q": "Explain the concept of diamagnetism.",
+        "marks": 1,
+        "answer": "Diamagnetism is a property of a substance where it is weakly repelled by a magnetic field due to the orbital motion of electrons.",
+        "key_points": [
+          "It occurs in all materials.",
+          "It is a result of the orbital motion of electrons."
+        ],
+        "topic": "Diamagnetism"
+      },
+      {
+        "q": "State the magnetic field inside a solenoid.",
+        "marks": 2,
+        "answer": "The magnetic field inside a solenoid is uniform and is given by the equation B = μ₀nI, where μ₀ is the magnetic constant, n is the number of turns per unit length, and I is the current flowing through the solenoid.",
+        "key_points": [
+          "It is a useful device for producing a uniform magnetic field.",
+          "It is widely used in many applications."
+        ],
+        "topic": "Magnetic Field Inside a Solenoid"
+      },
+      {
+        "q": "Explain the concept of paramagnetism and ferromagnetism.",
+        "marks": 2,
+        "answer": "Paramagnetism is a property of a substance where it is weakly attracted to a magnetic field due to the alignment of unpaired electrons, whereas ferromagnetism is a property of a substance where it is strongly attracted to a magnetic field due to the alignment of unpaired electrons.",
+        "key_points": [
+          "Paramagnetic substances have unpaired electrons.",
+          "Ferromagnetic substances have unpaired electrons and a spontaneous magnetization."
+        ],
+        "topic": "Paramagnetism and Ferromagnetism"
+      },
+      {
+        "q": "Derive the equation for the magnetic field inside a solenoid.",
+        "marks": 3,
+        "answer": "The magnetic field inside a solenoid can be derived by considering the magnetic field due to a single turn and then summing up the field due to all the turns. This results in the equation B = μ₀nI, where μ₀ is the magnetic constant, n is the number of turns per unit length, and I is the current flowing through the solenoid.",
+        "key_points": [
+          "It is a useful device for producing a uniform magnetic field.",
+          "It is widely used in many applications."
+        ],
+        "topic": "Magnetic Field Inside a Solenoid"
+      },
+      {
+        "q": "Explain the concept of hysteresis.",
+        "marks": 3,
+        "answer": "Hysteresis is the property of a ferromagnetic material to retain some of the magnetic field after the external field has been removed. This results in a loop of magnetization versus magnetic field, known as the hysteresis loop.",
+        "key_points": [
+          "It is a result of domain wall motion.",
+          "It is responsible for energy losses in magnetic materials."
+        ],
+        "topic": "Hysteresis"
+      },
+      {
+        "q": "Describe the process of magnetization of a ferromagnetic material.",
+        "marks": 3,
+        "answer": "The magnetization of a ferromagnetic material occurs through the alignment of unpaired electrons in the material. This alignment is facilitated by the application of an external magnetic field, which causes the domains to align in the direction of the field.",
+        "key_points": [
+          "It is a result of domain wall motion.",
+          "It is responsible for the magnetic properties of the material."
+        ],
+        "topic": "Magnetization of a Ferromagnetic Material"
+      },
+      {
+        "q": "Explain the concept of magnetic domains.",
+        "marks": 3,
+        "answer": "Magnetic domains are small regions within a ferromagnetic material where the magnetization is aligned. These domains are separated by domain walls, which are regions of high magnetic field.",
+        "key_points": [
+          "They are responsible for the magnetic properties of the material.",
+          "They can be aligned by an external magnetic field."
+        ],
+        "topic": "Magnetic Domains"
+      },
+      {
+        "q": "State Curie's temperature and its significance.",
+        "marks": 2,
+        "answer": "Curie's temperature is the temperature above which a ferromagnetic material becomes paramagnetic. This temperature is significant because it marks the transition from ferromagnetic to paramagnetic behavior.",
+        "key_points": [
+          "It is a critical temperature.",
+          "It depends on the material."
+        ],
+        "topic": "Curie's Temperature"
+      },
+      {
+        "q": "Explain the concept of magnetization.",
+        "marks": 2,
+        "answer": "Magnetization is the process by which a material becomes magnetized, i.e., it acquires a magnetic field. This can occur through the alignment of unpaired electrons or through the motion of charged particles.",
+        "key_points": [
+          "It is a result of domain wall motion.",
+          "It is responsible for the magnetic properties of the material."
+        ],
+        "topic": "Magnetization"
+      },
+      {
+        "q": "Describe the properties of a diamagnetic substance.",
+        "marks": 3,
+        "answer": "A diamagnetic substance is a material that is weakly repelled by a magnetic field. This is due to the orbital motion of electrons, which creates a magnetic field that opposes the external field.",
+        "key_points": [
+          "It is a result of orbital motion.",
+          "It is a fundamental property of all materials."
+        ],
+        "topic": "Properties of a Diamagnetic Substance"
+      },
+      {
+        "q": "Explain the concept of magnetic induction.",
+        "marks": 3,
+        "answer": "Magnetic induction is the process by which a magnetic field is induced in a material. This can occur through the motion of charged particles or through the alignment of unpaired electrons.",
+        "key_points": [
+          "It is a result of domain wall motion.",
+          "It is responsible for the magnetic properties of the material."
+        ],
+        "topic": "Magnetic Induction"
+      },
+      {
+        "q": "Describe the behavior of a paramagnetic substance in a magnetic field.",
+        "marks": 3,
+        "answer": "A paramagnetic substance is weakly attracted to a magnetic field and its magnetization is directly proportional to the applied field. This is due to the alignment of unpaired electrons, which creates a magnetic field that opposes the external field.",
+        "key_points": [
+          "It is a result of unpaired electrons.",
+          "It is a fundamental property of all paramagnetic materials."
+        ],
+        "topic": "Behavior of a Paramagnetic Substance"
+      }
+    ],
+    "total": 16
+  }
+}

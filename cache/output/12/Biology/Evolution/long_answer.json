@@ -1,0 +1,85 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Evolution",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:51:21.252Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the process of speciation and give an example of a speciating species. (5)",
+        "marks": 5,
+        "answer": "Speciation is the process by which a new species emerges from an existing one. It occurs when a group of organisms becomes reproductively isolated from the rest of the population, leading to genetic differences and eventually the formation of a new species. An example of a speciating species is the Galapagos finches. Over time, the finches evolved into different species due to geographical isolation and adaptation to different food sources.",
+        "marking_scheme": [
+          "Explanation of speciation process (1)",
+          "Example of a speciating species (2)",
+          "Clear description (2)"
+        ],
+        "topic": "Mechanisms of Evolution",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the significance of homologous structures? Explain with the example of forelimbs in vertebrates. (5)",
+        "marks": 5,
+        "answer": "Homologous structures are those that have a common evolutionary origin, but may have different functions. The forelimbs of vertebrates, such as birds, bats, and whales, are homologous structures. They have a similar bone structure, but are adapted for different functions such as flight, swimming, and walking. This is an example of convergent evolution, where different species evolve similar structures in response to similar environmental pressures.",
+        "marking_scheme": [
+          "Definition of homologous structures (1)",
+          "Example of forelimbs in vertebrates (2)",
+          "Explanation of significance (2)"
+        ],
+        "topic": "Similarities and Homologies",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the difference between adaptive radiation and convergent evolution? Explain with examples. (5)",
+        "marks": 5,
+        "answer": "Adaptive radiation occurs when a single species colonizes a new environment and rapidly evolves into multiple species, each adapted to a different niche. Convergent evolution, on the other hand, occurs when different species evolve similar structures or traits in response to similar environmental pressures. An example of adaptive radiation is the evolution of the Hawaiian honeycreepers, which evolved from a single species into multiple species with distinct beak shapes and sizes. An example of convergent evolution is the evolution of similar body shapes in sharks and dolphins, despite their distinct evolutionary histories.",
+        "marking_scheme": [
+          "Definition of adaptive radiation (1)",
+          "Definition of convergent evolution (1)",
+          "Examples of each (2)",
+          "Comparison of the two (1)"
+        ],
+        "topic": "Similarities and Homologies",
+        "is_numerical": false
+      },
+      {
+        "q": "A population of 1000 rabbits is introduced to a new island. Over the next 20 years, the population increases to 5000 rabbits. The population growth rate is 10% per year. Calculate the annual growth rate if the population growth is modeled using the logistic growth equation. (5)",
+        "marks": 5,
+        "answer": "To calculate the annual growth rate, we need to first find the carrying capacity (K) of the population. We can do this by rearranging the logistic growth equation: K = (initial population) / (1 - (1 + r)^(1/n)), where r is the growth rate and n is the number of years. Plugging in the values, we get: K = (1000) / (1 - (1 + 0.1)^(1/20)) = 5000. Now we can use the logistic growth equation to find the growth rate: 5000 = (1000) / (1 - e^(-r*20)), where e is the base of the natural logarithm. Solving for r, we get: r = 0.1045. Therefore, the annual growth rate is 10.45%.",
+        "marking_scheme": [
+          "Calculation of carrying capacity (K) (2)",
+          "Use of logistic growth equation (2)",
+          "Calculation of growth rate (r) (1)"
+        ],
+        "topic": "Population Growth",
+        "is_numerical": true
+      },
+      {
+        "q": "A species of plant has a population growth rate of 5% per year, and a carrying capacity of 1000 individuals. If the initial population is 100, calculate the population size after 10 years using the logistic growth equation. (5)",
+        "marks": 5,
+        "answer": "To calculate the population size after 10 years, we can use the logistic growth equation: P(t) = (K) / (1 + ((K - P0) / P0) * e^(-r*t)), where P0 is the initial population, K is the carrying capacity, r is the growth rate, and t is the time in years. Plugging in the values, we get: P(10) = (1000) / (1 + ((1000 - 100) / 100) * e^(-0.05*10)) = 964.9. Therefore, the population size after 10 years is approximately 964.9 individuals.",
+        "marking_scheme": [
+          "Use of logistic growth equation (3)",
+          "Calculation of population size (2)"
+        ],
+        "topic": "Population Growth",
+        "is_numerical": true
+      },
+      {
+        "q": "A species of animal has a population growth rate of 2% per year, and a carrying capacity of 5000 individuals. If the initial population is 1000, calculate the time it takes for the population to reach 4000 individuals using the logistic growth equation. (5)",
+        "marks": 5,
+        "answer": "To calculate the time it takes for the population to reach 4000 individuals, we can use the logistic growth equation: P(t) = (K) / (1 + ((K - P0) / P0) * e^(-r*t)), where P0 is the initial population, K is the carrying capacity, r is the growth rate, and t is the time in years. We can rearrange the equation to solve for t: t = ln((K - P) / (P0 - K)) / (-r), where P is the population size we want to reach. Plugging in the values, we get: t = ln((5000 - 4000) / (1000 - 5000)) / (-0.02) = 35.9. Therefore, it takes approximately 36 years for the population to reach 4000 individuals.",
+        "marking_scheme": [
+          "Use of logistic growth equation (3)",
+          "Calculation of time (2)"
+        ],
+        "topic": "Population Growth",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

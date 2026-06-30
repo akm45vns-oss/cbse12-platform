@@ -1,0 +1,81 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Electrochemistry",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:02:32.073Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Mass Percentage",
+        "formula": "% w/w = (Mass of Solute / Total Mass of Solution) × 100",
+        "variables": "Mass of Solute, Total Mass of Solution",
+        "units": "%",
+        "notes": ""
+      },
+      {
+        "name": "2. Molarity (M)",
+        "formula": "M = (moles of solute / litres of solution)",
+        "variables": "moles of solute, litres of solution",
+        "units": "M"
+      },
+      {
+        "name": "3. Molality (m)",
+        "formula": "m = (moles of solute / kilograms of solvent)",
+        "variables": "moles of solute, kilograms of solvent",
+        "units": "m"
+      },
+      {
+        "name": "4. E° cell for a cell in contact with pure electrolytes",
+        "formula": "E° cell = E°(oxidation) - E°(reduction)",
+        "variables": "E°(oxidation), E°(reduction)",
+        "units": "V",
+        "notes": ""
+      },
+      {
+        "name": "5. Nernst Equation",
+        "formula": "E = E° - (RT/nF) × ln(Q)",
+        "variables": "E, E°, R, T, n, F, Q",
+        "units": "V",
+        "notes": "[at 298 K]"
+      },
+      {
+        "name": "6. Standard Cell Potential",
+        "formula": "E° cell = (G° / nF)",
+        "variables": "G°, n, F",
+        "units": "V",
+        "notes": ""
+      },
+      {
+        "name": "7. Faraday's First Law of Electrolysis",
+        "formula": "W = Q × E",
+        "variables": "W, Q, E",
+        "units": "J",
+        "notes": ""
+      },
+      {
+        "name": "8. Faraday's Second Law of Electrolysis",
+        "formula": "m = (Q × M)/F",
+        "variables": "m, Q, M, F",
+        "units": "g",
+        "notes": ""
+      },
+      {
+        "name": "9. Gibbs Free Energy Change",
+        "formula": "ΔG = -nFE",
+        "variables": "ΔG, n, F, E",
+        "units": "J",
+        "notes": ""
+      },
+      {
+        "name": "10. Cell Potential of a Concentration Cell",
+        "formula": "E = (RT/nF) × ln(Q)",
+        "variables": "E, R, T, n, F, Q",
+        "units": "V",
+        "notes": "[at 298 K]"
+      }
+    ]
+  }
+}

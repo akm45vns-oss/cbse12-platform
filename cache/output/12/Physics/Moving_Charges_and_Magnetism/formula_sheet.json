@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:59:59.806Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Electric Field due to a Point Charge",
+        "formula": "E = k × (q / r^2)",
+        "variables": "E - Electric field, k - Coulomb's constant, q - Charge, r - Distance from the charge",
+        "units": "NC^-1 or N/C",
+        "notes": "This formula applies when the charge is stationary."
+      },
+      {
+        "name": "2. Electric Potential due to a Point Charge",
+        "formula": "V = k × (q / r)",
+        "variables": "V - Electric potential, k - Coulomb's constant, q - Charge, r - Distance from the charge",
+        "units": "J/C or V",
+        "notes": "This formula applies when the charge is stationary."
+      },
+      {
+        "name": "3. Force on a Charge in an Electric Field",
+        "formula": "F = qE",
+        "variables": "F - Force, q - Charge, E - Electric field",
+        "units": "N",
+        "notes": "This formula applies when the charge is stationary or moving."
+      },
+      {
+        "name": "4. Magnetic Field due to a Straight Wire",
+        "formula": "B = μ0 × (I / 2πr)",
+        "variables": "B - Magnetic field, μ0 - Permeability of free space, I - Current, r - Distance from the wire",
+        "units": "Tesla (T)",
+        "notes": "This formula applies when the wire is long compared to the distance from the wire."
+      },
+      {
+        "name": "5. Magnetic Field due to a Circular Loop",
+        "formula": "B = μ0 × (I / 2r)",
+        "variables": "B - Magnetic field, μ0 - Permeability of free space, I - Current, r - Radius of the loop",
+        "units": "Tesla (T)",
+        "notes": "This formula applies when the loop is small compared to the distance from the loop."
+      },
+      {
+        "name": "6. Lorentz Force",
+        "formula": "F = q(E + v × B)",
+        "variables": "F - Force, q - Charge, E - Electric field, v - Velocity of the charge, B - Magnetic field",
+        "units": "N",
+        "notes": "This formula applies when the charge is moving in an electric and magnetic field."
+      },
+      {
+        "name": "7. Biot-Savart Law",
+        "formula": "dB = (μ0 / 4π) × (I × dl × sinθ) / r^2",
+        "variables": "dB - Incremental magnetic field, μ0 - Permeability of free space, I - Current, dl - Incremental length of the wire, r - Distance from the wire, θ - Angle between the wire and the position vector",
+        "units": "Tesla (T)",
+        "notes": "This formula applies when the wire is short compared to the distance from the wire."
+      }
+    ]
+  }
+}

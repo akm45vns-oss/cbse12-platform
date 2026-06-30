@@ -1,0 +1,209 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:29:24.819Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If A = {1, 2, 3} and B = {3, 4, 5}, then number of possible relations from A to B is?",
+        "opts": [
+          "(A) 23",
+          "(B) 26",
+          "(C) 29",
+          "(D) 32"
+        ],
+        "ans": "B",
+        "explanation": "Each element of set A can be related to each element of set B. So the total number of possible relations is 2^(5) = 32. But 9 of these relations will be empty. So the number of non-empty relations is 32 - 9 = 23. However, the number of possible relations is indeed 32, but with 9 of them being empty, which means that 23 of them are non-empty.",
+        "difficulty": "easy",
+        "topic": "Introduction to Relations"
+      },
+      {
+        "q": "A function f : R → R is defined as f(x) = 2x. Which of the following is not true about f?",
+        "opts": [
+          "(A) One-to-one",
+          "(B) Onto",
+          "(C) f(x) = 0 has no solution",
+          "(D) f(x) = 2 has a solution"
+        ],
+        "ans": "B",
+        "explanation": "The function f(x) = 2x is a one-to-one function because every element in the domain maps to a unique element in the range. However, the function is not onto because not every element in the range is mapped to by an element in the domain. The function f(x) = 0 has no solution because there is no real number x such that 2x = 0. The function f(x) = 2 has a solution because x = 1 is a solution.",
+        "difficulty": "medium",
+        "topic": "Functions"
+      },
+      {
+        "q": "Let f : R → R be a function defined as f(x) = x^2. Then which of the following is true?",
+        "opts": [
+          "(A) f(x) is one-to-one",
+          "(B) f(x) is onto",
+          "(C) f(x) is a bijection",
+          "(D) f(x) is neither one-to-one nor onto"
+        ],
+        "ans": "D",
+        "explanation": "The function f(x) = x^2 is not one-to-one because different elements in the domain can map to the same element in the range. For example, f(1) = f(-1) = 1. The function is also not onto because not every element in the range is mapped to by an element in the domain. For example, there is no real number x such that x^2 = -1. Therefore, the function is neither one-to-one nor onto.",
+        "difficulty": "easy",
+        "topic": "Functions"
+      },
+      {
+        "q": "If f : R → R is a function defined as f(x) = |x - 1|, then which of the following is true?",
+        "opts": [
+          "(A) f(x) is one-to-one",
+          "(B) f(x) is onto",
+          "(C) f(x) is a bijection",
+          "(D) f(x) is neither one-to-one nor onto"
+        ],
+        "ans": "D",
+        "explanation": "The function f(x) = |x - 1| is not one-to-one because different elements in the domain can map to the same element in the range. For example, f(1) = f(2) = 1. The function is also not onto because not every element in the range is mapped to by an element in the domain. For example, there is no real number x such that |x - 1| = -1. Therefore, the function is neither one-to-one nor onto.",
+        "difficulty": "medium",
+        "topic": "Functions"
+      },
+      {
+        "q": "Let f : R → R be a function defined as f(x) = 1/x. Then which of the following is true?",
+        "opts": [
+          "(A) f(x) is one-to-one",
+          "(B) f(x) is onto",
+          "(C) f(x) is a bijection",
+          "(D) f(x) is neither one-to-one nor onto"
+        ],
+        "ans": "D",
+        "explanation": "The function f(x) = 1/x is not one-to-one because different elements in the domain can map to the same element in the range. For example, f(1) = f(-1) = 1. The function is also not onto because not every element in the range is mapped to by an element in the domain. For example, there is no real number x such that 1/x = 0. Therefore, the function is neither one-to-one nor onto.",
+        "difficulty": "hard",
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "Let f : R → R be a function defined as f(x) = 2x + 1. Then which of the following is true?",
+        "opts": [
+          "(A) f(x) is one-to-one",
+          "(B) f(x) is onto",
+          "(C) f(x) is a bijection",
+          "(D) f(x) is neither one-to-one nor onto"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = 2x + 1 is one-to-one because every element in the domain maps to a unique element in the range. For example, f(1) = 3 and f(2) = 5.",
+        "difficulty": "easy",
+        "topic": "Functions"
+      },
+      {
+        "q": "Let f : R → R be a function defined as f(x) = x^3 - 2x^2 - 5x + 3. Then which of the following is true?",
+        "opts": [
+          "(A) f(x) is one-to-one",
+          "(B) f(x) is onto",
+          "(C) f(x) is a bijection",
+          "(D) f(x) is neither one-to-one nor onto"
+        ],
+        "ans": "D",
+        "explanation": "The function f(x) = x^3 - 2x^2 - 5x + 3 is not one-to-one because different elements in the domain can map to the same element in the range. For example, f(1) = f(-1) = f(3) = f(-3) = 1. The function is also not onto because not every element in the range is mapped to by an element in the domain. Therefore, the function is neither one-to-one nor onto.",
+        "difficulty": "hard",
+        "topic": "Functions"
+      },
+      {
+        "q": "If f : R → R is a function defined as f(x) = x^2 + 1, then which of the following is true?",
+        "opts": [
+          "(A) f(x) is one-to-one",
+          "(B) f(x) is onto",
+          "(C) f(x) is a bijection",
+          "(D) f(x) is neither one-to-one nor onto"
+        ],
+        "ans": "D",
+        "explanation": "The function f(x) = x^2 + 1 is not one-to-one because different elements in the domain can map to the same element in the range. For example, f(1) = f(-1) = 2. The function is also not onto because not every element in the range is mapped to by an element in the domain. For example, there is no real number x such that x^2 + 1 = -1. Therefore, the function is neither one-to-one nor onto.",
+        "difficulty": "medium",
+        "topic": "Functions"
+      },
+      {
+        "q": "Let f : R → R be a function defined as f(x) = |x - 2|. Then which of the following is true?",
+        "opts": [
+          "(A) f(x) is one-to-one",
+          "(B) f(x) is onto",
+          "(C) f(x) is a bijection",
+          "(D) f(x) is neither one-to-one nor onto"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = |x - 2| is one-to-one because every element in the domain maps to a unique element in the range.",
+        "difficulty": "easy",
+        "topic": "Functions"
+      },
+      {
+        "q": "If f : R → R is a function defined as f(x) = 1/x^2, then which of the following is true?",
+        "opts": [
+          "(A) f(x) is one-to-one",
+          "(B) f(x) is onto",
+          "(C) f(x) is a bijection",
+          "(D) f(x) is neither one-to-one nor onto"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = 1/x^2 is one-to-one because every element in the domain maps to a unique element in the range.",
+        "difficulty": "hard",
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "Let f : R → R be a function defined as f(x) = x + 2. Then which of the following is true?",
+        "opts": [
+          "(A) f(x) is one-to-one",
+          "(B) f(x) is onto",
+          "(C) f(x) is a bijection",
+          "(D) f(x) is neither one-to-one nor onto"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = x + 2 is one-to-one because every element in the domain maps to a unique element in the range.",
+        "difficulty": "easy",
+        "topic": "Functions"
+      },
+      {
+        "q": "If f : R → R is a function defined as f(x) = |x|, then which of the following is true?",
+        "opts": [
+          "(A) f(x) is one-to-one",
+          "(B) f(x) is onto",
+          "(C) f(x) is a bijection",
+          "(D) f(x) is neither one-to-one nor onto"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = |x| is one-to-one because every element in the domain maps to a unique element in the range.",
+        "difficulty": "medium",
+        "topic": "Functions"
+      },
+      {
+        "q": "Let f : R → R be a function defined as f(x) = x^2 - 4x + 3. Then which of the following is true?",
+        "opts": [
+          "(A) f(x) is one-to-one",
+          "(B) f(x) is onto",
+          "(C) f(x) is a bijection",
+          "(D) f(x) is neither one-to-one nor onto"
+        ],
+        "ans": "D",
+        "explanation": "The function f(x) = x^2 - 4x + 3 is not one-to-one because different elements in the domain can map to the same element in the range. For example, f(1) = f(3) = 0. The function is also not onto because not every element in the range is mapped to by an element in the domain. Therefore, the function is neither one-to-one nor onto.",
+        "difficulty": "hard",
+        "topic": "Functions"
+      },
+      {
+        "q": "If f : R → R is a function defined as f(x) = x^2 + 2x - 1, then which of the following is true?",
+        "opts": [
+          "(A) f(x) is one-to-one",
+          "(B) f(x) is onto",
+          "(C) f(x) is a bijection",
+          "(D) f(x) is neither one-to-one nor onto"
+        ],
+        "ans": "D",
+        "explanation": "The function f(x) = x^2 + 2x - 1 is not one-to-one because different elements in the domain can map to the same element in the range. For example, f(1) = f(-1) = 0. The function is also not onto because not every element in the range is mapped to by an element in the domain. Therefore, the function is neither one-to-one nor onto.",
+        "difficulty": "medium",
+        "topic": "Functions"
+      },
+      {
+        "q": "Let f : R → R be a function defined as f(x) = x^3 + 1. Then which of the following is true?",
+        "opts": [
+          "(A) f(x) is one-to-one",
+          "(B) f(x) is onto",
+          "(C) f(x) is a bijection",
+          "(D) f(x) is neither one-to-one nor onto"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = x^3 + 1 is one-to-one because every element in the domain maps to a unique element in the range.",
+        "difficulty": "hard",
+        "topic": "Functions"
+      }
+    ],
+    "total": 15
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:49:30.980Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the formation of a p-n junction diode. Describe briefly how does it work as a rectifier.",
+        "marks": 5,
+        "answer": "A p-n junction diode is formed by combining p-type and n-type semiconductor materials. The p-type material has an excess of holes, while the n-type material has an excess of electrons. When these two materials are combined, the electrons from the n-type material diffuse into the p-type material, creating a depletion region. This depletion region acts as a barrier to the flow of electrons. As a rectifier, the p-n junction diode works by allowing current to flow in one direction and blocking it in the other direction. When the p-type material is connected to the positive terminal of a battery and the n-type material is connected to the negative terminal, the diode is forward-biased and current flows through it. However, when the connections are reversed, the diode is reverse-biased and current is blocked.",
+        "marking_scheme": [
+          "Formation of p-n junction diode (1 mark)",
+          "Working as a rectifier (2 marks)",
+          "Explanation of forward and reverse bias (2 marks)"
+        ],
+        "topic": "p-n Junction Diode",
+        "is_numerical": false
+      },
+      {
+        "q": "A semiconductor has a resistance of 100 ohms at a temperature of 20°C. When the temperature is increased to 80°C, the resistance decreases to 20 ohms. Calculate the temperature coefficient of resistance at 20°C.",
+        "marks": 5,
+        "answer": "Calculation:\nLet's use the formula: α = (R2 - R1) / (R1 * (T2 - T1))\nwhere α is the temperature coefficient of resistance, R1 and R2 are the resistances at temperatures T1 and T2 respectively.\nα = (20 - 100) / (100 * (80 - 20))\nα = -80 / 6000\nα = -0.0133 /°C\nThe negative sign indicates that the resistance decreases with increasing temperature.",
+        "marking_scheme": [
+          "Understanding the concept of temperature coefficient of resistance (1 mark)",
+          "Applying the correct formula (1 mark)",
+          "Correct calculation (3 marks)"
+        ],
+        "topic": "Semiconductor Materials",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the working of a transistor as an amplifier. Describe the three configurations of a transistor amplifier.",
+        "marks": 5,
+        "answer": "A transistor works as an amplifier by controlling the flow of current between two terminals, called the collector and emitter, based on the signal applied to the third terminal, called the base. The transistor has three configurations: common emitter, common collector, and common base. In the common emitter configuration, the emitter is grounded and the input signal is applied to the base. The output signal is taken from the collector. In the common collector configuration, the collector is grounded and the input signal is applied to the base. The output signal is taken from the emitter. In the common base configuration, the base is grounded and the input signal is applied to the emitter. The output signal is taken from the collector.",
+        "marking_scheme": [
+          "Working of transistor as an amplifier (2 marks)",
+          "Description of common emitter configuration (1 mark)",
+          "Description of common collector and common base configurations (2 marks)"
+        ],
+        "topic": "Transistor",
+        "is_numerical": false
+      },
+      {
+        "q": "In a half-wave rectifier circuit, the input voltage is 50 V rms and the load resistance is 1000 ohms. Calculate the dc output voltage and the dc output power.",
+        "marks": 5,
+        "answer": "Calculation:\nFirst, we need to find the peak input voltage: Vm = Vrms * √2 = 50 * √2 = 70.71 V\nThe dc output voltage is given by: Vdc = Vm / π = 70.71 / π = 22.5 V\nThe dc output current is given by: Idc = Vdc / R = 22.5 / 1000 = 0.0225 A\nThe dc output power is given by: Pdc = Idc^2 * R = (0.0225)^2 * 1000 = 0.506 W",
+        "marking_scheme": [
+          "Calculation of peak input voltage (1 mark)",
+          "Calculation of dc output voltage (1 mark)",
+          "Calculation of dc output current and power (3 marks)"
+        ],
+        "topic": "Rectifier Circuits",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of a logic gate and describe the working of a NOT gate, an AND gate, and an OR gate.",
+        "marks": 5,
+        "answer": "A logic gate is a digital circuit that performs a specific logical operation on one or more input signals. The NOT gate, also known as an inverter, produces an output that is the opposite of the input. The AND gate produces an output only if all the inputs are high. The OR gate produces an output if any of the inputs are high. These gates are the basic building blocks of digital circuits and are used to perform complex logical operations.",
+        "marking_scheme": [
+          "Concept of a logic gate (1 mark)",
+          "Working of NOT gate (1 mark)",
+          "Working of AND gate (1 mark)",
+          "Working of OR gate (2 marks)"
+        ],
+        "topic": "Digital Circuits",
+        "is_numerical": false
+      },
+      {
+        "q": "A Zener diode has a breakdown voltage of 10 V and a current of 10 mA flows through it when it is connected to a 20 V supply with a series resistance of 1000 ohms. Calculate the current flowing through the series resistance.",
+        "marks": 5,
+        "answer": "Calculation:\nFirst, we need to find the voltage drop across the series resistance: V = 20 - 10 = 10 V\nThe current flowing through the series resistance is given by: I = V / R = 10 / 1000 = 0.01 A = 10 mA\nHowever, we are given that the current flowing through the Zener diode is 10 mA. Therefore, the total current flowing through the series resistance is the sum of the current flowing through the Zener diode and the current flowing through the load. Since the load is not specified, we assume that the load current is negligible. Hence, the current flowing through the series resistance is 10 mA.",
+        "marking_scheme": [
+          "Understanding the concept of Zener diode (1 mark)",
+          "Calculation of voltage drop across series resistance (1 mark)",
+          "Calculation of current flowing through series resistance (3 marks)"
+        ],
+        "topic": "Zener Diode",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

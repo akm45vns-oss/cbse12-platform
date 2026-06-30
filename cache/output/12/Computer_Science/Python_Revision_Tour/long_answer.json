@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Python Revision Tour",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:59:36.992Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of variables in Python and provide an example of a variable declaration.",
+        "marks": 5,
+        "answer": "In Python, a variable is a name given to a value. It is used to store and manipulate data. Variables are declared using the assignment operator (=) followed by the variable name and the assignment value. For example: x = 5. This declares a variable x and assigns it the value 5.",
+        "marking_scheme": [
+          "Explain the concept of variables in Python (1 mark)",
+          "Provide an example of a variable declaration (1 mark)",
+          "Describe the purpose of variables in Python (3 marks)"
+        ],
+        "topic": "Variables and Data Types"
+      },
+      {
+        "q": "Write a Python program to check if a given number is a prime number or not.",
+        "marks": 5,
+        "answer": "def is_prime(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\nnum = int(input('Enter a number: '))\nif is_prime(num):\n    print(num, 'is a prime number')\nelse:\n    print(num, 'is not a prime number')",
+        "marking_scheme": [
+          "Write a function to check if a number is prime or not (2 marks)",
+          "Use a loop to iterate up to the square root of the number (1 mark)",
+          "Provide input and output for the program (2 marks)"
+        ],
+        "topic": "Control Structures",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of lists in Python and provide an example of how to create and manipulate a list.",
+        "marks": 5,
+        "answer": "In Python, a list is a collection of items that can be of any data type, including strings, integers, floats, and other lists. Lists are declared using square brackets [ ] and elements are separated by commas. For example: my_list = [1, 2, 3, 'hello', 4.5]. Lists can be manipulated using various methods such as append(), insert(), remove(), sort(), and reverse().",
+        "marking_scheme": [
+          "Explain the concept of lists in Python (1 mark)",
+          "Provide an example of how to create a list (1 mark)",
+          "Describe how to manipulate a list (3 marks)"
+        ],
+        "topic": "Lists"
+      },
+      {
+        "q": "Write a Python program to find the maximum and minimum values in a list of numbers.",
+        "marks": 5,
+        "answer": "numbers = [12, 45, 7, 23, 56, 89, 34]\nmax_value = max(numbers)\nmin_value = min(numbers)\nprint('Maximum value:', max_value)\nprint('Minimum value:', min_value)",
+        "marking_scheme": [
+          "Use the built-in max() and min() functions to find the maximum and minimum values (2 marks)",
+          "Provide the list of numbers (1 mark)",
+          "Print the maximum and minimum values (2 marks)"
+        ],
+        "topic": "Lists",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of conditional statements in Python and provide an example of a conditional statement using the if-else statement.",
+        "marks": 5,
+        "answer": "In Python, conditional statements are used to execute different blocks of code based on a condition. The if-else statement is used to check if a condition is true or false. If the condition is true, the code inside the if block is executed, otherwise, the code inside the else block is executed. For example: x = 5\nif x > 10:\n    print('x is greater than 10')\nelse:\n    print('x is less than or equal to 10')",
+        "marking_scheme": [
+          "Explain the concept of conditional statements in Python (1 mark)",
+          "Provide an example of a conditional statement using the if-else statement (2 marks)",
+          "Describe the purpose of conditional statements (2 marks)"
+        ],
+        "topic": "Control Structures"
+      },
+      {
+        "q": "Write a Python program to calculate the sum of all numbers in a list using recursion.",
+        "marks": 5,
+        "answer": "def sum_numbers(numbers):\n    if len(numbers) == 1:\n        return numbers[0]\n    else:\n        return numbers[0] + sum_numbers(numbers[1:])\nnumbers = [1, 2, 3, 4, 5]\nprint('Sum of numbers:', sum_numbers(numbers))",
+        "marking_scheme": [
+          "Use recursion to calculate the sum of numbers (3 marks)",
+          "Provide the list of numbers (1 mark)",
+          "Print the sum of numbers (1 mark)"
+        ],
+        "topic": "Recursion",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

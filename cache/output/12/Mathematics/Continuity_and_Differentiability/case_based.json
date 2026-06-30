@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Continuity and Differentiability",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:28:16.927Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The height of a ball thrown upwards from the ground at a certain speed is given by the equation h(t) = v0t - 16t^2, where h(t) is the height at time t and v0 is the initial velocity. The ball is still in the air when its height is 32 meters. Find the time at which the ball was at this height, and also check if the ball is still accelerating at this time.",
+        "questions": [
+          {
+            "q": "What is the time at which the ball was at a height of 32 meters?",
+            "opts": [
+              "(A) t = 1",
+              "(B) t = 2",
+              "(C) t = 4",
+              "(D) t = 3"
+            ],
+            "ans": "C",
+            "explanation": "To find the time at which the ball was at a height of 32 meters, we need to solve the equation h(t) = 32. Substituting h(t) = v0t - 16t^2 and solving for t, we get t = 4."
+          },
+          {
+            "q": "Is the ball accelerating at the time found in the previous question?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) It depends on the initial velocity",
+              "(D) We cannot determine"
+            ],
+            "ans": "B",
+            "explanation": "The ball's acceleration is given by the derivative of h(t) with respect to time, which is a(t) = v0 - 32t. At t = 4, the acceleration is a(4) = v0 - 128, which is a constant and not dependent on the initial velocity. Therefore, the ball is no longer accelerating at this time."
+          },
+          {
+            "q": "What is the initial velocity of the ball?",
+            "opts": [
+              "(A) 32 m/s",
+              "(B) 64 m/s",
+              "(C) 80 m/s",
+              "(D) 96 m/s"
+            ],
+            "ans": "D",
+            "explanation": "We know that when the ball is still in the air, its height is 32 meters. Substituting h(t) = 32 into the equation h(t) = v0t - 16t^2 and solving for v0, we get v0 = 96 m/s."
+          },
+          {
+            "q": "What is the equation for the height of the ball after 5 seconds?",
+            "opts": [
+              "(A) h(5) = 96(5) - 16(5)^2",
+              "(B) h(5) = 96(5) + 16(5)^2",
+              "(C) h(5) = 96(5) - 16(5)",
+              "(D) h(5) = 96(5) + 16(5)"
+            ],
+            "ans": "A",
+            "explanation": "To find the equation for the height of the ball after 5 seconds, we substitute t = 5 into the equation h(t) = v0t - 16t^2. This gives us h(5) = 96(5) - 16(5)^2."
+          },
+          {
+            "q": "Is the ball still in the air after 10 seconds?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) It depends on the initial velocity",
+              "(D) We cannot determine"
+            ],
+            "ans": "B",
+            "explanation": "The ball's height is given by the equation h(t) = v0t - 16t^2. After 10 seconds, the height is h(10) = v0(10) - 16(10)^2. Since the square of 10 is 100, the height at 10 seconds will be negative for all possible initial velocities. Therefore, the ball is no longer in the air after 10 seconds."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A company wants to model the demand for a new product using the equation d(t) = 200 - 2t^2, where d(t) is the demand at time t. The company wants to know at what time the demand will reach 100 units and also check if the demand is still increasing at this time.",
+        "questions": [
+          {
+            "q": "What is the time at which the demand will reach 100 units?",
+            "opts": [
+              "(A) t = 1",
+              "(B) t = 2",
+              "(C) t = 4",
+              "(D) t = 5"
+            ],
+            "ans": "B",
+            "explanation": "To find the time at which the demand will reach 100 units, we need to solve the equation d(t) = 100. Substituting d(t) = 200 - 2t^2 and solving for t, we get t = 2."
+          },
+          {
+            "q": "Is the demand still increasing at the time found in the previous question?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) It depends on the time",
+              "(D) We cannot determine"
+            ],
+            "ans": "B",
+            "explanation": "The demand's derivative with respect to time is a(t) = -4t. At t = 2, the derivative is a(2) = -8, which is negative. Therefore, the demand is no longer increasing at this time."
+          },
+          {
+            "q": "What is the initial demand for the product?",
+            "opts": [
+              "(A) 100 units",
+              "(B) 200 units",
+              "(C) 400 units",
+              "(D) 600 units"
+            ],
+            "ans": "B",
+            "explanation": "We know that when the demand reaches 100 units, the time is t = 2. Substituting t = 2 into the equation d(t) = 200 - 2t^2 and solving for d, we get d(2) = 100. Therefore, the initial demand for the product is 200 units."
+          },
+          {
+            "q": "What is the equation for the demand of the product after 5 seconds?",
+            "opts": [
+              "(A) d(5) = 200 - 2(5)^2",
+              "(B) d(5) = 200 + 2(5)^2",
+              "(C) d(5) = 200 - 2(5)",
+              "(D) d(5) = 200 + 2(5)"
+            ],
+            "ans": "A",
+            "explanation": "To find the equation for the demand of the product after 5 seconds, we substitute t = 5 into the equation d(t) = 200 - 2t^2. This gives us d(5) = 200 - 2(5)^2."
+          },
+          {
+            "q": "Is the demand still decreasing after 10 seconds?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) It depends on the time",
+              "(D) We cannot determine"
+            ],
+            "ans": "A",
+            "explanation": "The demand's derivative with respect to time is a(t) = -4t. After 10 seconds, the derivative is a(10) = -40, which is negative. Therefore, the demand is still decreasing after 10 seconds."
+          }
+        ]
+      }
+    ]
+  }
+}

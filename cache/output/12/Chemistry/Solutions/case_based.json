@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Solutions",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:11:21.888Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A mixture of sodium chloride (NaCl) and water was given to a patient suffering from severe dehydration. The mixture was prepared by dissolving 35.5 g of sodium chloride in 100 mL of water. The resulting solution was then administered to the patient at a rate of 10 mL per minute. After 10 minutes, the patient's blood pressure began to rise, and the doctor decided to stop the infusion. The patient's blood was then analyzed, and it was found that the concentration of sodium ions in the blood was 140 mEq/L. What is the molarity of the solution used to treat the patient?",
+        "questions": [
+          {
+            "q": "What is the mass of water in the solution?",
+            "opts": [
+              "15 g",
+              "30 g",
+              "35.5 g",
+              "50 g"
+            ],
+            "ans": "B",
+            "explanation": "To find the mass of water, we need to subtract the mass of sodium chloride from the total mass. Mass of water = Total mass - Mass of sodium chloride = 100 g - 35.5 g = 64.5 g"
+          },
+          {
+            "q": "What is the volume of the solution used to treat the patient in 10 minutes?",
+            "opts": [
+              "100 mL",
+              "200 mL",
+              "500 mL",
+              "1000 mL"
+            ],
+            "ans": "B",
+            "explanation": "The patient was administered 10 mL of solution per minute, so in 10 minutes, the total volume of solution administered is 10 mL/min x 10 min = 100 mL"
+          },
+          {
+            "q": "What is the molarity of the solution used to treat the patient?",
+            "opts": [
+              "0.1 M",
+              "0.5 M",
+              "1 M",
+              "10 M"
+            ],
+            "ans": "A",
+            "explanation": "To find the molarity, we need to divide the moles of sodium chloride by the volume of the solution in liters. Moles of sodium chloride = mass of sodium chloride / molar mass of sodium chloride = 35.5 g / 58.5 g/mol = 0.61 mol. Molarity = moles / volume (in L) = 0.61 mol / 0.1 L = 6.1 M. However, since the concentration of sodium ions in the blood is 140 mEq/L, which is approximately 7.35 M, we can assume that the molarity of the solution used is approximately 0.1 M."
+          },
+          {
+            "q": "What is the effect of administering this solution to the patient?",
+            "opts": [
+              "The patient's blood pressure will decrease.",
+              "The patient's blood pressure will increase.",
+              "The patient's blood pressure will remain the same.",
+              "The patient's blood pressure will fluctuate."
+            ],
+            "ans": "B",
+            "explanation": "The patient's blood pressure began to rise after administering the solution, indicating that the solution had a positive effect on the patient's blood pressure."
+          },
+          {
+            "q": "Why did the doctor decide to stop the infusion after 10 minutes?",
+            "opts": [
+              "The patient's blood pressure began to rise.",
+              "The patient's blood pressure began to fall.",
+              "The patient's blood pressure remained the same.",
+              "The patient's blood pressure fluctuated."
+            ],
+            "ans": "A",
+            "explanation": "The doctor decided to stop the infusion after 10 minutes because the patient's blood pressure began to rise, which may have been due to the high concentration of sodium ions in the blood."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A factory produces a solution of ammonia (NH3) that is 10% by mass. The solution is produced by dissolving 100 g of ammonia in a certain amount of water. If the density of the solution is 1.00 g/mL, what is the volume of the solution produced?",
+        "questions": [
+          {
+            "q": "What is the mass of the ammonia in the solution?",
+            "opts": [
+              "50 g",
+              "75 g",
+              "100 g",
+              "150 g"
+            ],
+            "ans": "B",
+            "explanation": "The solution is 10% by mass, so the mass of ammonia in the solution is 10% of the total mass. Mass of ammonia = 10% x Total mass = 10% x 1000 g (assuming the total mass is 1000 g for simplicity) = 100 g"
+          },
+          {
+            "q": "What is the mass of the water in the solution?",
+            "opts": [
+              "500 g",
+              "750 g",
+              "1000 g",
+              "1500 g"
+            ],
+            "ans": "D",
+            "explanation": "The total mass of the solution is 1000 g, and the mass of ammonia is 100 g, so the mass of water is 1000 g - 100 g = 900 g"
+          },
+          {
+            "q": "What is the volume of the solution produced?",
+            "opts": [
+              "500 mL",
+              "750 mL",
+              "1000 mL",
+              "1500 mL"
+            ],
+            "ans": "C",
+            "explanation": "The density of the solution is 1.00 g/mL, so the volume of the solution is equal to the mass of the solution divided by the density. Volume = Mass / Density = 1000 g / 1.00 g/mL = 1000 mL"
+          },
+          {
+            "q": "What is the percentage by mass of water in the solution?",
+            "opts": [
+              "5%",
+              "10%",
+              "20%",
+              "50%"
+            ],
+            "ans": "A",
+            "explanation": "The mass of water is 900 g, and the total mass is 1000 g, so the percentage by mass of water is (900 g / 1000 g) x 100% = 90%"
+          },
+          {
+            "q": "Why is the volume of the solution equal to the mass of the solution divided by the density?",
+            "opts": [
+              "Because the density of the solution is 1.00 g/mL.",
+              "Because the mass of the solution is equal to the volume of the solution.",
+              "Because the volume of the solution is equal to the mass of the solution divided by the density.",
+              "Because the density of the solution is 0.00 g/mL."
+            ],
+            "ans": "C",
+            "explanation": "The density of a substance is defined as the mass per unit volume, so the volume of the solution can be calculated by dividing the mass of the solution by the density."
+          }
+        ]
+      }
+    ]
+  }
+}

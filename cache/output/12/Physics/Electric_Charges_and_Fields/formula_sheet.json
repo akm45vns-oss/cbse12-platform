@@ -1,0 +1,69 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electric Charges and Fields",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:59:01.702Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Coulomb's Law",
+        "formula": "F = (1 / 4πε₀) * (q₁q₂ / r²)",
+        "variables": "F: Electric force, q₁, q₂: Electric charges, r: Distance between charges, ε₀: Electric constant",
+        "units": "Newtons (N)",
+        "notes": "When two point charges are stationary and not accelerating"
+      },
+      {
+        "name": "Electric Field Intensity due to a Point Charge",
+        "formula": "E = k * (q / r²)",
+        "variables": "E: Electric field intensity, k: Coulomb's constant, q: Electric charge, r: Distance from the charge",
+        "units": "Newtons per Coulomb (N/C)",
+        "notes": "When the charge is stationary and not accelerating"
+      },
+      {
+        "name": "Electric Field due to a Dipole",
+        "formula": "E = (2k * p / r³) * (1 - cos(θ))",
+        "variables": "E: Electric field intensity, k: Coulomb's constant, p: Dipole moment, r: Distance from the dipole, θ: Angle between r and p",
+        "units": "Newtons per Coulomb (N/C)",
+        "notes": "When the dipole is stationary and not accelerating"
+      },
+      {
+        "name": "Potential due to a Point Charge",
+        "formula": "V = k * (q / r)",
+        "variables": "V: Electric potential, k: Coulomb's constant, q: Electric charge, r: Distance from the charge",
+        "units": "Volts (V)",
+        "notes": "When the charge is stationary and not accelerating"
+      },
+      {
+        "name": "Potential Difference",
+        "formula": "ΔV = V₂ - V₁",
+        "variables": "ΔV: Potential difference, V₁: Electric potential at point 1, V₂: Electric potential at point 2",
+        "units": "Volts (V)",
+        "notes": "When the charges are stationary and not accelerating"
+      },
+      {
+        "name": "Electric Potential due to a Dipole",
+        "formula": "V = (k * p / r²) * cos(θ)",
+        "variables": "V: Electric potential, k: Coulomb's constant, p: Dipole moment, r: Distance from the dipole, θ: Angle between r and p",
+        "units": "Volts (V)",
+        "notes": "When the dipole is stationary and not accelerating"
+      },
+      {
+        "name": "Electric Potential Energy of a System of Charges",
+        "formula": "U = qV",
+        "variables": "U: Electric potential energy, q: Electric charge, V: Electric potential",
+        "units": "Joules (J)",
+        "notes": "When the charges are stationary and not accelerating"
+      },
+      {
+        "name": "Electric Field due to a Uniformly Charged Sphere",
+        "formula": "E = k * (q / r²) * (1 - (r₀ / r))",
+        "variables": "E: Electric field intensity, k: Coulomb's constant, q: Electric charge, r: Distance from the sphere, r₀: Radius of the sphere",
+        "units": "Newtons per Coulomb (N/C)",
+        "notes": "When the sphere is stationary and not accelerating"
+      }
+    ]
+  }
+}

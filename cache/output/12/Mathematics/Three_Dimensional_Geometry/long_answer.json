@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:59:34.483Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the direction cosines and direction ratios of a line? Explain their significance in three-dimensional geometry.",
+        "marks": 5,
+        "answer": "Direction cosines of a line are the cosines of the angles that the line makes with the coordinate axes. The direction ratios of a line are the ratios of the coefficients of x, y, and z in its symmetric form. They are significant as they help in finding the equation of a line in three-dimensional space and determining its orientation with respect to the coordinate axes.",
+        "marking_scheme": [
+          "Definition and explanation of direction cosines (1 mark)",
+          "Definition and explanation of direction ratios (1 mark)",
+          "Significance in three-dimensional geometry (3 marks)"
+        ],
+        "topic": "Direction Cosines and Direction Ratios",
+        "is_numerical": false
+      },
+      {
+        "q": "What are the different forms of equations of a plane? Explain each form with an example.",
+        "marks": 5,
+        "answer": "The different forms of equations of a plane are: (i) General form: ax + by + cz + d = 0, (ii) Normal form: x cos α + y cos β + z cos γ = p, (iii) Intercept form: x/a + y/b + z/c = 1. Each form has its own significance and is used in different contexts.",
+        "marking_scheme": [
+          "Explanation of general form (1 mark)",
+          "Explanation of normal form (1 mark)",
+          "Explanation of intercept form with example (3 marks)"
+        ],
+        "topic": "Equation of a Plane",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of the shortest distance between a point and a plane. Derive the formula for the shortest distance.",
+        "marks": 5,
+        "answer": "The shortest distance between a point and a plane is the perpendicular distance from the point to the plane. The formula for the shortest distance is given by: D = |ax1 + by1 + cz1 + d| / √(a^2 + b^2 + c^2), where (x1, y1, z1) is the point and ax + by + cz + d = 0 is the equation of the plane.",
+        "marking_scheme": [
+          "Explanation of concept (1 mark)",
+          "Derivation of formula (2 marks)",
+          "Final formula with explanation (2 marks)"
+        ],
+        "topic": "Shortest Distance",
+        "is_numerical": false
+      },
+      {
+        "q": "Find the equation of the plane passing through the points (1, 2, 3), (2, 3, 4), and (3, 4, 5).",
+        "marks": 5,
+        "answer": "Calculation: \nLet the equation of the plane be ax + by + cz + d = 0. Since the plane passes through the given points, we have: \n1a + 2b + 3c + d = 0, \n2a + 3b + 4c + d = 0, \n3a + 4b + 5c + d = 0. \nSolving these equations, we get a = -1, b = 2, c = -1, and d = 0. Therefore, the equation of the plane is -x + 2y - z = 0.",
+        "marking_scheme": [
+          "Setting up equations using given points (1 mark)",
+          "Solving equations to find coefficients (2 marks)",
+          "Writing final equation of plane (2 marks)"
+        ],
+        "topic": "Equation of a Plane",
+        "is_numerical": true
+      },
+      {
+        "q": "Find the distance between the point (1, 2, 3) and the plane 2x + 3y - z + 1 = 0.",
+        "marks": 5,
+        "answer": "Calculation: \nThe distance between a point (x1, y1, z1) and a plane ax + by + cz + d = 0 is given by the formula: D = |ax1 + by1 + cz1 + d| / √(a^2 + b^2 + c^2). In this case, a = 2, b = 3, c = -1, d = 1, x1 = 1, y1 = 2, and z1 = 3. Substituting these values into the formula, we get D = |2*1 + 3*2 - 1*3 + 1| / √(2^2 + 3^2 + (-1)^2) = |2 + 6 - 3 + 1| / √(4 + 9 + 1) = 6 / √14.",
+        "marking_scheme": [
+          "Identification of formula for distance (1 mark)",
+          "Substitution of given values into formula (2 marks)",
+          "Simplification to find final distance (2 marks)"
+        ],
+        "topic": "Shortest Distance",
+        "is_numerical": true
+      },
+      {
+        "q": "Find the angle between the planes x + y + z = 1 and 2x - y + z = 3.",
+        "marks": 5,
+        "answer": "Calculation: \nThe angle between two planes a1x + b1y + c1z + d1 = 0 and a2x + b2y + c2z + d2 = 0 is given by the formula: cos θ = |a1a2 + b1b2 + c1c2| / (√(a1^2 + b1^2 + c1^2) * √(a2^2 + b2^2 + c2^2)). In this case, a1 = 1, b1 = 1, c1 = 1, a2 = 2, b2 = -1, and c2 = 1. Substituting these values into the formula, we get cos θ = |1*2 + 1*(-1) + 1*1| / (√(1^2 + 1^2 + 1^2) * √(2^2 + (-1)^2 + 1^2)) = |2 - 1 + 1| / (√3 * √6) = 2 / (√3 * √6) = 2 / (√18) = √2 / √3.",
+        "marking_scheme": [
+          "Identification of formula for angle between planes (1 mark)",
+          "Substitution of given values into formula (2 marks)",
+          "Simplification to find final angle (2 marks)"
+        ],
+        "topic": "Angle between Planes",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

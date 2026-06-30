@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Matrices",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:58:23.052Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If A = [[1, 2], [3, 4]] and B = [[5, 6], [7, 8]], then find (A + B) and (A - B).",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "A + B = [[6, 8], [10, 12]], A - B = [[-4, -4], [-4, -4]]",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Show that the given matrix is a scalar matrix: A = [[6, 0], [0, 6]].",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "Since all the main diagonal elements are equal and all non-diagonal elements are zero, the given matrix A is a scalar matrix.",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If A = [[2, 3], [0, 1]] and B = [[4, 6], [0, -1]], then find the product AB.",
+        "type": "Short Answer",
+        "marks": 5,
+        "answer": "AB = [[8, -18], [0, -1]]",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Find (adj A) if A = [[1, 2], [3, 4]].",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "adj A = [[4, -2], [-3, 1]]",
+        "year_pattern": "2015-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Find the rank of the matrix: A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]].",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "Rank of A = 1",
+        "year_pattern": "2014-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If A = [[2, 0], [1, 3]], then find (A^(-1)).",
+        "type": "Short Answer",
+        "marks": 5,
+        "answer": "A^(-1) = [[3/2, 0], [1/6, 1/3]]",
+        "year_pattern": "2013-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Show that the given matrix is a skew-symmetric matrix: A = [[0, 2], [-2, 0]].",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "Since the transpose of A is equal to negative of A, the given matrix A is a skew-symmetric matrix.",
+        "year_pattern": "2012-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Find the product (AB) if A = [[1, 2], [3, 4]] and B = [[5, 6], [7, 8]].",
+        "type": "Fill in the Blank",
+        "marks": 5,
+        "answer": "AB = [[19, 22], [43, 50]]",
+        "year_pattern": "2011-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If A = [[2, 3], [0, 1]] and B = [[4, 6], [0, -1]], then show that A and B are singular matrices.",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "Since det A = 0 and det B = 0, the matrices A and B are singular matrices.",
+        "year_pattern": "2010-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Find the product (A^(-1) A) if A = [[2, 3], [0, 1]].",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "True",
+        "year_pattern": "2009-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

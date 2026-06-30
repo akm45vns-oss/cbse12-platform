@@ -1,0 +1,183 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:29:36.574Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "The equation of the plane passing through the point (1, -1, 2) is?",
+        "opts": [
+          "(A) x - y + 2z = 0",
+          "(B) x + y - 2z = 0",
+          "(C) x + y + 2z = 0",
+          "(D) x - y - 2z = 0"
+        ],
+        "ans": "A",
+        "explanation": "The equation of a plane passing through a given point (x1, y1, z1) is given by a(x - x1) + b(y - y1) + c(z - z1) = 0. Here, the point (1, -1, 2) lies on the plane, so the equation is x - y + 2z = 0.",
+        "difficulty": "medium",
+        "topic": "Equation of a Plane"
+      },
+      {
+        "q": "The distance of the point (2, 3, 4) from the plane 2x + y - 2z = 0 is?",
+        "opts": [
+          "(A) 3/2",
+          "(B) 6/5",
+          "(C) 9/2",
+          "(D) 3"
+        ],
+        "ans": "B",
+        "explanation": "The distance of a point (x1, y1, z1) from the plane ax + by + cz + d = 0 is given by |ax1 + by1 + cz1 + d| / sqrt(a^2 + b^2 + c^2). Here, the point (2, 3, 4) lies in the plane, so the distance is |2*2 + 3*1 - 2*4 + 0| / sqrt(2^2 + 1^2 + (-2)^2) = 6/5.",
+        "difficulty": "medium",
+        "topic": "Distance of a Point from a Plane"
+      },
+      {
+        "q": "The angle between the planes 2x + y - 2z = 0 and x - 2y - 4z = 0 is?",
+        "opts": [
+          "(A) 30°",
+          "(B) 60°",
+          "(C) 90°",
+          "(D) 45°"
+        ],
+        "ans": "D",
+        "explanation": "The angle between the planes a1x + b1y + c1z + d1 = 0 and a2x + b2y + c2z + d2 = 0 is given by cos(θ) = |a1a2 + b1b2 + c1c2| / sqrt(a1^2 + b1^2 + c1^2) * sqrt(a2^2 + b2^2 + c2^2). Here, the planes are perpendicular, so cos(θ) = 0, meaning θ = 90°.",
+        "difficulty": "hard",
+        "topic": "Angle between Two Planes"
+      },
+      {
+        "q": "The equation of the line passing through the point (1, -1, 2) and parallel to the vector 2i - j + k is?",
+        "opts": [
+          "(A) x = 2t - 1, y = -t + 1, z = t + 2",
+          "(B) x = 2t + 1, y = t - 1, z = t + 2",
+          "(C) x = 2t - 1, y = t - 1, z = t + 2",
+          "(D) x = 2t + 1, y = -t + 1, z = t + 2"
+        ],
+        "ans": "A",
+        "explanation": "The equation of a line passing through a point (x1, y1, z1) and parallel to a vector a i + b j + c k is given by x = x1 + at, y = y1 + bt, z = z1 + ct.",
+        "difficulty": "medium",
+        "topic": "Equation of a Line"
+      },
+      {
+        "q": "The coordinates of the foot of the perpendicular from the point (1, -1, 2) to the plane 2x + y - 2z = 0 are?",
+        "opts": [
+          "(A) (4/3, -5/3, 11/3)",
+          "(B) (1, 1, 2)",
+          "(C) (2/3, -1/3, 4/3)",
+          "(D) (3/2, -1/2, 3/2)"
+        ],
+        "ans": "A",
+        "explanation": "The foot of the perpendicular from the point (x1, y1, z1) to the plane ax + by + cz + d = 0 is given by (x1 - d/a, y1 - d/b, z1 - d/c). Here, the point (1, -1, 2) lies in the plane, so the coordinates are (4/3, -5/3, 11/3).",
+        "difficulty": "hard",
+        "topic": "Foot of the Perpendicular"
+      },
+      {
+        "q": "The equation of the line passing through the points (1, 2, 3) and (4, 5, 6) is?",
+        "opts": [
+          "(A) x = 2t + 1, y = 2t + 2, z = 2t + 3",
+          "(B) x = 2t - 1, y = 2t - 2, z = 2t - 3",
+          "(C) x = 3t - 2, y = 3t - 1, z = 3t",
+          "(D) x = 2t + 1, y = 3t + 2, z = 4t + 3"
+        ],
+        "ans": "C",
+        "explanation": "The equation of a line passing through two points (x1, y1, z1) and (x2, y2, z2) is given by x = (x2 - x1)t + x1, y = (y2 - y1)t + y1, z = (z2 - z1)t + z1.",
+        "difficulty": "medium",
+        "topic": "Equation of a Line"
+      },
+      {
+        "q": "The distance of the point (1, 2, 3) from the line x = 2t + 1, y = 3t - 1, z = 4t + 1 is?",
+        "opts": [
+          "(A) 1/2",
+          "(B) 2/3",
+          "(C) 3/2",
+          "(D) 4/3"
+        ],
+        "ans": "B",
+        "explanation": "The distance of a point (x1, y1, z1) from a line x = at + x1, y = bt + y1, z = ct + z1 is given by |(x1 - x1)*a + (y1 - y1)*b + (z1 - z1)*c| / sqrt(a^2 + b^2 + c^2). Here, the point (1, 2, 3) lies on the line, so the distance is 2/3.",
+        "difficulty": "hard",
+        "topic": "Distance of a Point from a Line"
+      },
+      {
+        "q": "The angle between the line x = 2t - 1, y = 3t + 1, z = 4t - 2 and the plane 2x - y + z = 0 is?",
+        "opts": [
+          "(A) 30°",
+          "(B) 60°",
+          "(C) 90°",
+          "(D) 45°"
+        ],
+        "ans": "C",
+        "explanation": "The angle between a line x = at + x1, y = bt + y1, z = ct + z1 and a plane ax + by + cz + d = 0 is given by cos(θ) = |a*a1 + b*b1 + c*c1| / sqrt(a^2 + b^2 + c^2) * sqrt(a1^2 + b1^2 + c1^2). Here, the line is perpendicular to the plane, so cos(θ) = 0, meaning θ = 90°.",
+        "difficulty": "hard",
+        "topic": "Angle between a Line and a Plane"
+      },
+      {
+        "q": "The equation of the plane passing through the points (1, 2, 3) and (4, 5, 6) is?",
+        "opts": [
+          "(A) x - y + z = 0",
+          "(B) x + y - z = 0",
+          "(C) x - y - z = 0",
+          "(D) x + y + z = 0"
+        ],
+        "ans": "A",
+        "explanation": "The equation of a plane passing through two points (x1, y1, z1) and (x2, y2, z2) is given by a(x - x1) + b(y - y1) + c(z - z1) = 0. Here, the points (1, 2, 3) and (4, 5, 6) lie on the plane, so the equation is x - y + z = 0.",
+        "difficulty": "medium",
+        "topic": "Equation of a Plane"
+      },
+      {
+        "q": "The coordinates of the foot of the perpendicular from the point (1, 2, 3) to the line x = 2t - 1, y = 3t + 1, z = 4t - 2 are?",
+        "opts": [
+          "(A) (1/2, 1, 1/2)",
+          "(B) (1, 2, 3)",
+          "(C) (2, 3, 4)",
+          "(D) (3, 4, 5)"
+        ],
+        "ans": "A",
+        "explanation": "The foot of the perpendicular from the point (x1, y1, z1) to the line x = at + x1, y = bt + y1, z = ct + z1 is given by (x1 - x1/a, y1 - y1/b, z1 - z1/c). Here, the point (1, 2, 3) lies on the line, so the coordinates are (1/2, 1, 1/2).",
+        "difficulty": "hard",
+        "topic": "Foot of the Perpendicular"
+      },
+      {
+        "q": "The equation of the line passing through the point (1, 2, 3) and parallel to the vector i + 2j - 3k is?",
+        "opts": [
+          "(A) x = t + 1, y = 2t + 2, z = 3t + 3",
+          "(B) x = t - 1, y = 2t - 2, z = 3t - 3",
+          "(C) x = t + 1, y = 2t - 2, z = 3t + 3",
+          "(D) x = t - 1, y = 2t + 2, z = 3t - 3"
+        ],
+        "ans": "A",
+        "explanation": "The equation of a line passing through a point (x1, y1, z1) and parallel to a vector a i + b j + c k is given by x = x1 + at, y = y1 + bt, z = z1 + ct.",
+        "difficulty": "medium",
+        "topic": "Equation of a Line"
+      },
+      {
+        "q": "The distance of the point (1, 2, 3) from the plane x + y + z = 0 is?",
+        "opts": [
+          "(A) 1/2",
+          "(B) 2/3",
+          "(C) 3/2",
+          "(D) 4/3"
+        ],
+        "ans": "B",
+        "explanation": "The distance of a point (x1, y1, z1) from the plane ax + by + cz + d = 0 is given by |ax1 + by1 + cz1 + d| / sqrt(a^2 + b^2 + c^2). Here, the point (1, 2, 3) lies in the plane, so the distance is 2/3.",
+        "difficulty": "hard",
+        "topic": "Distance of a Point from a Plane"
+      },
+      {
+        "q": "The equation of the plane passing through the point (1, 2, 3) and parallel to the vector 2i - j + k is?",
+        "opts": [
+          "(A) x - y + z = 0",
+          "(B) x + y - z = 0",
+          "(C) x - y - z = 0",
+          "(D) x + y + z = 0"
+        ],
+        "ans": "A",
+        "explanation": "The equation of a plane passing through a point (x1, y1, z1) and parallel to a vector a i + b j + c k is given by a(x - x1) + b(y - y1) + c(z - z1) = 0.",
+        "difficulty": "medium",
+        "topic": "Equation of a Plane"
+      }
+    ],
+    "total": 13
+  }
+}

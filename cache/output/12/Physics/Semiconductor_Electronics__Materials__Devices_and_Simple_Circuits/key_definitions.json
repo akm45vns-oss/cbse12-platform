@@ -1,0 +1,108 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:02:13.707Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Semiconductor",
+        "definition": "A material that has electrical conductivity between that of a conductor and an insulator. Semiconductors have a moderate bandgap and can be doped to exhibit either n-type or p-type conductivity.",
+        "example": "Silicon and germanium are common examples of semiconductors."
+      },
+      {
+        "term": "Conductor",
+        "definition": "A material that allows the free flow of electric current. Conductors have a very small or zero bandgap, making it easy for electrons to move freely.",
+        "example": "Metals like copper and aluminum are good conductors."
+      },
+      {
+        "term": "Insulator",
+        "definition": "A material that resists the flow of electric current. Insulators have a large bandgap, making it difficult for electrons to move.",
+        "example": "Materials like wood and glass are good insulators."
+      },
+      {
+        "term": "Doping",
+        "definition": "The process of introducing impurities into a semiconductor to alter its electrical properties. Doping can create either n-type or p-type semiconductors.",
+        "example": "Doping silicon with phosphorus creates an n-type semiconductor."
+      },
+      {
+        "term": "N-type Semiconductor",
+        "definition": "A semiconductor that has been doped with a group V element, resulting in an excess of free electrons. N-type semiconductors are good conductors of electricity.",
+        "example": "Germanium doped with phosphorus is an n-type semiconductor."
+      },
+      {
+        "term": "P-type Semiconductor",
+        "definition": "A semiconductor that has been doped with a group III element, resulting in a deficiency of free electrons. P-type semiconductors are good conductors of electricity.",
+        "example": "Silicon doped with boron is a p-type semiconductor."
+      },
+      {
+        "term": "PN Junction",
+        "definition": "A junction formed by joining a p-type semiconductor with an n-type semiconductor. The PN junction is a key component of semiconductor devices.",
+        "example": "The PN junction is used in diodes and transistors."
+      },
+      {
+        "term": "Depletion Region",
+        "definition": "The region near the PN junction where the concentration of charge carriers is depleted. The depletion region acts as a barrier to the flow of current.",
+        "example": "The depletion region is wider in reverse-biased diodes."
+      },
+      {
+        "term": "Forward Bias",
+        "definition": "A condition where the p-side of a PN junction is connected to a positive potential and the n-side is connected to a negative potential. Forward bias reduces the depletion region and increases current flow.",
+        "example": "Forward bias is used in diodes to increase current flow."
+      },
+      {
+        "term": "Reverse Bias",
+        "definition": "A condition where the p-side of a PN junction is connected to a negative potential and the n-side is connected to a positive potential. Reverse bias increases the depletion region and reduces current flow.",
+        "example": "Reverse bias is used in diodes to prevent current flow."
+      },
+      {
+        "term": "Diode",
+        "definition": "A semiconductor device that allows current to flow in one direction but blocks it in the other. Diodes are used in a variety of applications, including rectification and switching.",
+        "example": "Diodes are used in power supplies to convert AC to DC."
+      },
+      {
+        "term": "Transistor",
+        "definition": "A semiconductor device that can amplify or switch electronic signals. Transistors are used in a variety of applications, including amplifiers and switches.",
+        "example": "Transistors are used in audio amplifiers to increase the power of the signal."
+      },
+      {
+        "term": "Base",
+        "definition": "The region in a transistor that controls the flow of current. The base is connected to the input signal and is typically a lightly doped region.",
+        "example": "The base is the input region of a transistor."
+      },
+      {
+        "term": "Collector",
+        "definition": "The region in a transistor that collects the current. The collector is typically a heavily doped region and is connected to the power supply.",
+        "example": "The collector is the output region of a transistor."
+      },
+      {
+        "term": "Emitter",
+        "definition": "The region in a transistor that emits the current. The emitter is typically a heavily doped region and is connected to the power supply.",
+        "example": "The emitter is the input region of a transistor."
+      },
+      {
+        "term": "BJT (Bipolar Junction Transistor)",
+        "definition": "A type of transistor that uses both electrons and holes as charge carriers. BJTs are commonly used in amplifiers and switches.",
+        "example": "BJTs are used in audio amplifiers to increase the power of the signal."
+      },
+      {
+        "term": "FET (Field-Effect Transistor)",
+        "definition": "A type of transistor that uses only electrons as charge carriers. FETs are commonly used in amplifiers and switches.",
+        "example": "FETs are used in audio amplifiers to increase the power of the signal."
+      },
+      {
+        "term": "Input Impedance",
+        "definition": "The ratio of the input voltage to the input current in a circuit. Input impedance is an important parameter in amplifier design.",
+        "example": "Input impedance is measured using a multimeter."
+      },
+      {
+        "term": "Output Impedance",
+        "definition": "The ratio of the output voltage to the output current in a circuit. Output impedance is an important parameter in amplifier design.",
+        "example": "Output impedance is measured using a multimeter."
+      }
+    ]
+  }
+}

@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-27T05:53:56.227Z",
-  "elapsed_seconds": 8,
-  "rate_per_second": 356.25,
+  "updated_at": "2026-06-30T16:45:30.773Z",
+  "elapsed_seconds": 2352,
+  "rate_per_second": 1.94,
   "queue": {
-    "completed": 2850,
-    "pending": 0,
-    "inFlight": 0,
+    "completed": 4571,
+    "pending": 992,
+    "inFlight": 5,
     "failed": 0,
-    "retrying": 0,
+    "retrying": 992,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
@@ -18,160 +18,160 @@
   "workers": [
     {
       "workerId": "Worker-Physics",
-      "processed": 1,
-      "skipped": 1,
-      "failed": 0,
-      "running": false
+      "processed": 43,
+      "skipped": 0,
+      "failed": 41,
+      "running": true
     },
     {
       "workerId": "Worker-Chemistry",
-      "processed": 1,
-      "skipped": 1,
-      "failed": 0,
-      "running": false
+      "processed": 53,
+      "skipped": 0,
+      "failed": 43,
+      "running": true
     },
     {
       "workerId": "Worker-Maths",
-      "processed": 2,
+      "processed": 46,
       "skipped": 0,
-      "failed": 0,
-      "running": false
+      "failed": 46,
+      "running": true
     },
     {
       "workerId": "Worker-Biology",
-      "processed": 1,
+      "processed": 48,
       "skipped": 0,
-      "failed": 0,
-      "running": false
+      "failed": 42,
+      "running": true
     },
     {
       "workerId": "Worker-Other",
-      "processed": 1,
+      "processed": 45,
       "skipped": 0,
-      "failed": 0,
-      "running": false
+      "failed": 56,
+      "running": true
     }
   ],
   "recent_events": [
     {
       "workerId": "Worker-Physics",
-      "status": "finished",
-      "message": "Worker finished — 1 done, 1 skipped, 0 failed",
-      "timestamp": "2026-06-27T05:53:56.226Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "info",
-      "message": "Queue empty — worker done",
-      "timestamp": "2026-06-27T05:53:56.226Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "finished",
-      "message": "Worker finished — 1 done, 0 skipped, 0 failed",
-      "timestamp": "2026-06-27T05:53:56.196Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "info",
-      "message": "Queue empty — worker done",
-      "timestamp": "2026-06-27T05:53:56.196Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "finished",
-      "message": "Worker finished — 1 done, 0 skipped, 0 failed",
-      "timestamp": "2026-06-27T05:53:55.975Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "info",
-      "message": "Queue empty — worker done",
-      "timestamp": "2026-06-27T05:53:55.975Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "finished",
-      "message": "Worker finished — 1 done, 1 skipped, 0 failed",
-      "timestamp": "2026-06-27T05:53:55.677Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "info",
-      "message": "Queue empty — worker done",
-      "timestamp": "2026-06-27T05:53:55.677Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "finished",
-      "message": "Worker finished — 2 done, 0 skipped, 0 failed",
-      "timestamp": "2026-06-27T05:53:55.149Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "info",
-      "message": "Queue empty — worker done",
-      "timestamp": "2026-06-27T05:53:55.149Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "done",
-      "message": "✅ History/Nomadic Empires/important_concepts",
-      "timestamp": "2026-06-27T05:53:55.149Z"
+      "status": "generating",
+      "message": "Generating mcqs for Accounting for Share Capital (Accountancy)",
+      "timestamp": "2026-06-30T16:45:22.446Z"
     },
     {
       "workerId": "Worker-Physics",
       "status": "done",
-      "message": "✅ History/An Empire Across Three Continents/important_concepts",
-      "timestamp": "2026-06-27T05:53:52.207Z"
+      "message": "✅ Accountancy/Accounting for Partnership: Basic Concepts/short_answer",
+      "timestamp": "2026-06-30T16:45:22.243Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating case_based for Dissolution of Partnership Firm (Accountancy)",
+      "timestamp": "2026-06-30T16:45:19.863Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating short_answer for Reconstitution of Partnership: Retirement & Death (Accountancy)",
+      "timestamp": "2026-06-30T16:45:19.688Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "done",
+      "message": "✅ Economics/Balance of Payments and Foreign Exchange/short_answer",
+      "timestamp": "2026-06-30T16:45:19.663Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "done",
+      "message": "✅ Economics/Balance of Payments and Foreign Exchange/mcqs",
+      "timestamp": "2026-06-30T16:45:19.438Z"
     },
     {
       "workerId": "Worker-Biology",
-      "status": "done",
-      "message": "✅ Economics/Indian Economy 1950–1990/important_concepts",
-      "timestamp": "2026-06-27T05:53:52.190Z"
+      "status": "generating",
+      "message": "Generating assertion_reason for Reconstitution of Partnership: Retirement & Death (Accountancy)",
+      "timestamp": "2026-06-30T16:45:19.331Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T16:45:18.984Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "generating",
+      "message": "Generating short_answer for Reconstitution of Partnership: Admission (Accountancy)",
+      "timestamp": "2026-06-30T16:44:51.546Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "done",
-      "message": "✅ History/From the Beginning of Time/important_concepts",
-      "timestamp": "2026-06-27T05:53:51.950Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating important_concepts for Nomadic Empires (History)",
-      "timestamp": "2026-06-27T05:53:51.845Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "done",
-      "message": "✅ History/The Central Islamic Lands/important_concepts",
-      "timestamp": "2026-06-27T05:53:51.656Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "done",
-      "message": "✅ Mathematics/Introduction to Three Dimensional Geometry/important_concepts",
-      "timestamp": "2026-06-27T05:53:51.654Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "generating",
-      "message": "Generating important_concepts for The Central Islamic Lands (History)",
-      "timestamp": "2026-06-27T05:53:48.848Z"
+      "message": "✅ Economics/Balance of Payments and Foreign Exchange/case_based",
+      "timestamp": "2026-06-30T16:44:51.292Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "generating",
-      "message": "Generating important_concepts for Indian Economy 1950–1990 (Economics)",
-      "timestamp": "2026-06-27T05:53:48.841Z"
+      "message": "Generating case_based for Reconstitution of Partnership: Admission (Accountancy)",
+      "timestamp": "2026-06-30T16:44:49.999Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "done",
+      "message": "✅ Economics/Determination of Income and Employment/assertion_reason",
+      "timestamp": "2026-06-30T16:44:49.785Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating short_answer for Accounting for Partnership: Basic Concepts (Accountancy)",
+      "timestamp": "2026-06-30T16:44:49.697Z"
     },
     {
       "workerId": "Worker-Maths",
       "status": "generating",
-      "message": "Generating important_concepts for Introduction to Three Dimensional Geometry (Mathematics)",
-      "timestamp": "2026-06-27T05:53:48.836Z"
+      "message": "Generating mcqs for Balance of Payments and Foreign Exchange (Economics)",
+      "timestamp": "2026-06-30T16:44:49.423Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "error",
+      "message": "Validation failed for 12::Accountancy::Reconstitution of Partnership: Admission::mcqs: Duplicate question/item within response: \"A new partner is admitted into a partnership with a capital ...\"",
+      "timestamp": "2026-06-30T16:44:49.364Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T16:44:49.142Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating assertion_reason for Balance of Payments and Foreign Exchange (Economics)",
+      "timestamp": "2026-06-30T16:44:37.653Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "done",
+      "message": "✅ Accountancy/Accounting for Not-for-Profit Organisations/short_answer",
+      "timestamp": "2026-06-30T16:44:37.337Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating mcqs for Reconstitution of Partnership: Admission (Accountancy)",
+      "timestamp": "2026-06-30T16:44:34.550Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T16:44:34.315Z"
     }
   ]
 }

@@ -1,0 +1,174 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:09:18.241Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "State Lenz's law.",
+        "marks": 1,
+        "answer": "Lenz's law states that the direction of the induced e.m.f. is such that it opposes the change in the magnetic flux through the coil.",
+        "key_points": [
+          "Opposes the change in magnetic flux",
+          "Direction of induced e.m.f."
+        ],
+        "topic": "Lenz's Law"
+      },
+      {
+        "q": "Give the S.I. unit of e.m.f.",
+        "marks": 1,
+        "answer": "The S.I. unit of e.m.f. is volt.",
+        "key_points": [
+          "S.I. unit",
+          "volt"
+        ],
+        "topic": "Electromotive Force"
+      },
+      {
+        "q": "What is the phenomenon of electromagnetic induction?",
+        "marks": 1,
+        "answer": "Electromagnetic induction is the phenomenon in which a changing magnetic field induces an e.m.f. in a conductor.",
+        "key_points": [
+          "Changing magnetic field",
+          "Induces e.m.f."
+        ],
+        "topic": "Electromagnetic Induction"
+      },
+      {
+        "q": "Define induced e.m.f.",
+        "marks": 1,
+        "answer": "Induced e.m.f. is the e.m.f. generated in a conductor due to the change in magnetic flux through it.",
+        "key_points": [
+          "Generated in a conductor",
+          "Change in magnetic flux"
+        ],
+        "topic": "Electromotive Force"
+      },
+      {
+        "q": "State the principle of electromagnetic induction.",
+        "marks": 1,
+        "answer": "The principle of electromagnetic induction states that an e.m.f. is induced in a conductor if the magnetic flux linked with it changes.",
+        "key_points": [
+          "Change in magnetic flux",
+          "Induces e.m.f."
+        ],
+        "topic": "Electromagnetic Induction"
+      },
+      {
+        "q": "What is the direction of induced current in a conductor placed in a magnetic field?",
+        "marks": 2,
+        "answer": "The direction of induced current in a conductor placed in a magnetic field is given by Fleming's right-hand rule.",
+        "key_points": [
+          "Fleming's right-hand rule",
+          "Direction of induced current"
+        ],
+        "topic": "Direction of Induced Current"
+      },
+      {
+        "q": "A coil of 100 turns is placed in a magnetic field. If the flux changes from 10 to 20 webers in 2 seconds, calculate the induced e.m.f.",
+        "marks": 2,
+        "answer": "The induced e.m.f. is given by the formula e = -N(dΦ/dt) = -100(20 - 10)/2 = -1000 V.",
+        "key_points": [
+          "Formula for induced e.m.f.",
+          "Change in magnetic flux"
+        ],
+        "topic": "Induced E.M.F."
+      },
+      {
+        "q": "Draw a labelled diagram to show the situation when a coil of wire is placed in a magnetic field and a current is passed through it.",
+        "marks": 2,
+        "answer": "A diagram showing the coil of wire placed in a magnetic field with current flowing through it would show the magnetic field lines emerging from the north pole and entering the south pole, and the current flowing through the coil.",
+        "key_points": [
+          "Magnetic field lines",
+          "Current flowing through the coil"
+        ],
+        "topic": "Magnetic Field"
+      },
+      {
+        "q": "A 50-turn coil of wire is placed in a magnetic field and the flux changes from 5 to 10 webers in 3 seconds. Calculate the induced e.m.f. and the direction of the induced current.",
+        "marks": 3,
+        "answer": "The induced e.m.f. is given by the formula e = -N(dΦ/dt) = -50(10 - 5)/3 = -500/3 V. The direction of the induced current is given by Fleming's right-hand rule.",
+        "key_points": [
+          "Formula for induced e.m.f.",
+          "Direction of induced current"
+        ],
+        "topic": "Induced E.M.F. and Direction"
+      },
+      {
+        "q": "State and explain the principle of a generator.",
+        "marks": 3,
+        "answer": "The principle of a generator is based on the phenomenon of electromagnetic induction, where a changing magnetic field induces an e.m.f. in a conductor. The generator consists of a rotor and a stator, with the rotor carrying a conductor and the stator carrying a magnetic field.",
+        "key_points": [
+          "Principle of generator",
+          "Rotor and stator"
+        ],
+        "topic": "Generator"
+      },
+      {
+        "q": "Explain the working of a motor.",
+        "marks": 3,
+        "answer": "A motor works on the principle of electromagnetic induction, where an e.m.f. is induced in a conductor due to a changing magnetic field. The motor consists of a rotor and a stator, with the rotor carrying a conductor and the stator carrying a magnetic field. When a current flows through the conductor, it interacts with the magnetic field and produces a torque, causing the rotor to rotate.",
+        "key_points": [
+          "Principle of motor",
+          "Rotor and stator"
+        ],
+        "topic": "Motor"
+      },
+      {
+        "q": "State and explain the principle of a transformer.",
+        "marks": 3,
+        "answer": "The principle of a transformer is based on the phenomenon of electromagnetic induction, where an e.m.f. is induced in a conductor due to a changing magnetic field. The transformer consists of a primary coil and a secondary coil, with the primary coil carrying a current and the secondary coil carrying a magnetic field. The transformer is used to step up or step down the voltage of an alternating current.",
+        "key_points": [
+          "Principle of transformer",
+          "Primary and secondary coils"
+        ],
+        "topic": "Transformer"
+      },
+      {
+        "q": "Explain the working of a transformer with the help of a labelled diagram.",
+        "marks": 3,
+        "answer": "A diagram showing the working of a transformer would show the primary coil carrying a current and the secondary coil carrying a magnetic field. The current flowing through the primary coil interacts with the magnetic field and produces a changing magnetic field, which induces an e.m.f. in the secondary coil. The e.m.f. induced in the secondary coil is proportional to the number of turns in the primary coil.",
+        "key_points": [
+          "Working of transformer",
+          "Primary and secondary coils"
+        ],
+        "topic": "Transformer"
+      },
+      {
+        "q": "A coil of 100 turns is connected to a 50 V battery and the current flowing through it is 5 A. The coil is then connected to a transformer with a turns ratio of 1:10. Calculate the induced e.m.f. in the secondary coil.",
+        "marks": 3,
+        "answer": "The induced e.m.f. in the secondary coil is given by the formula e2 = e1 x (N2/N1) = 50 x 10 = 500 V.",
+        "key_points": [
+          "Formula for induced e.m.f.",
+          "Turns ratio"
+        ],
+        "topic": "Transformer"
+      },
+      {
+        "q": "State the main advantages of a transformer.",
+        "marks": 3,
+        "answer": "The main advantages of a transformer are that it can step up or step down the voltage of an alternating current, it is efficient, and it can be used to transmit power over long distances.",
+        "key_points": [
+          "Advantages of transformer",
+          "Stepping up or stepping down voltage"
+        ],
+        "topic": "Transformer"
+      },
+      {
+        "q": "Explain the applications of electromagnetic induction.",
+        "marks": 3,
+        "answer": "The applications of electromagnetic induction include generators, motors, transformers, and alternators. These devices are used in a wide range of applications, including power generation, transmission, and distribution.",
+        "key_points": [
+          "Applications of electromagnetic induction",
+          "Generators, motors, transformers"
+        ],
+        "topic": "Applications"
+      }
+    ],
+    "total": 16
+  }
+}

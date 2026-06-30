@@ -1,0 +1,89 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Biotechnology and its Applications",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:53:58.751Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of DNA fingerprinting and its applications in forensic science. How does it help in solving crimes and identifying offenders?",
+        "marks": 5,
+        "answer": "DNA fingerprinting is a technique used to identify individuals based on the unique patterns of their DNA. It involves the analysis of specific regions of the DNA called variable number tandem repeats (VNTRs). The process of DNA fingerprinting involves the extraction of DNA from cells, amplification of the DNA using PCR, and then separation of the DNA fragments using gel electrophoresis. The resulting pattern of bands is unique to each individual and can be used to identify them. DNA fingerprinting has several applications in forensic science, including solving crimes, identifying offenders, and determining paternity. It can also be used to identify human remains and to solve cases of kidnapping and murder.",
+        "marking_scheme": [
+          "Definition and explanation of DNA fingerprinting (1 mark)",
+          "Description of the process of DNA fingerprinting (1 mark)",
+          "Applications of DNA fingerprinting in forensic science (2 marks)",
+          "Examples of the use of DNA fingerprinting in solving crimes (1 mark)"
+        ],
+        "topic": "DNA Fingerprinting",
+        "is_numerical": false
+      },
+      {
+        "q": "A patient is suffering from a disease caused by a genetic disorder. The doctor prescribes a gene therapy to cure the disease. Explain the steps involved in gene therapy and how it can be used to cure genetic disorders.",
+        "marks": 5,
+        "answer": "Gene therapy is a medical treatment that uses genes to prevent or treat diseases. The steps involved in gene therapy include identifying the faulty gene, cloning the normal gene, delivering the normal gene to the patient's cells using a vector, and expression of the normal gene. The normal gene can be delivered to the patient's cells using viral vectors, such as retroviruses or adenoviruses, or non-viral vectors, such as liposomes or naked DNA. Once the normal gene is delivered to the patient's cells, it can be expressed and can produce the normal protein, which can help to cure the disease. Gene therapy can be used to cure genetic disorders by replacing the faulty gene with a normal gene, or by repairing the faulty gene.",
+        "marking_scheme": [
+          "Explanation of the steps involved in gene therapy (2 marks)",
+          "Description of the methods of delivering the normal gene to the patient's cells (1 mark)",
+          "Explanation of how gene therapy can be used to cure genetic disorders (1 mark)",
+          "Examples of genetic disorders that can be cured using gene therapy (1 mark)"
+        ],
+        "topic": "Gene Therapy",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the difference between traditional breeding and genetic engineering? Explain the advantages of genetic engineering over traditional breeding.",
+        "marks": 5,
+        "answer": "Traditional breeding involves the selection and breeding of organisms with desirable traits to produce offspring with those traits. Genetic engineering, on the other hand, involves the direct manipulation of an organism's genes to introduce desirable traits. The advantages of genetic engineering over traditional breeding include the ability to introduce specific genes from one species into another, the ability to produce organisms with desirable traits more quickly, and the ability to produce organisms with traits that cannot be produced through traditional breeding. Genetic engineering also allows for the introduction of genes from one species into another, which can be used to produce organisms with desirable traits such as resistance to pests or diseases.",
+        "marking_scheme": [
+          "Explanation of traditional breeding (1 mark)",
+          "Explanation of genetic engineering (1 mark)",
+          "Comparison of traditional breeding and genetic engineering (1 mark)",
+          "Advantages of genetic engineering over traditional breeding (2 marks)"
+        ],
+        "topic": "Genetic Engineering",
+        "is_numerical": false
+      },
+      {
+        "q": "A DNA fragment of 2500 base pairs is digested with a restriction enzyme that cuts the DNA at a recognition site of 6 base pairs. If the recognition site occurs once every 500 base pairs, how many fragments will be produced?",
+        "marks": 5,
+        "answer": "To determine the number of fragments produced, we need to calculate the number of recognition sites in the DNA fragment. Since the recognition site occurs once every 500 base pairs, we can calculate the number of recognition sites as follows: Total number of base pairs / number of base pairs per recognition site = 2500 / 500 = 5. Since the restriction enzyme cuts the DNA at each recognition site, the number of fragments produced will be one more than the number of recognition sites. Therefore, the number of fragments produced will be 5 + 1 = 6.",
+        "marking_scheme": [
+          "Calculation of the number of recognition sites (2 marks)",
+          "Calculation of the number of fragments produced (2 marks)",
+          "Explanation of the reasoning behind the calculation (1 mark)"
+        ],
+        "topic": "Restriction Enzymes",
+        "is_numerical": true
+      },
+      {
+        "q": "A plasmid of 5000 base pairs contains a gene of interest that is 1000 base pairs long. If the plasmid is digested with a restriction enzyme that cuts the plasmid at a recognition site of 6 base pairs, and the resulting fragments are separated using gel electrophoresis, what will be the size of the fragment containing the gene of interest?",
+        "marks": 5,
+        "answer": "Calculation: To determine the size of the fragment containing the gene of interest, we need to calculate the number of recognition sites in the plasmid and the position of the gene of interest. Since the recognition site occurs once every 500 base pairs, we can calculate the number of recognition sites as follows: Total number of base pairs / number of base pairs per recognition site = 5000 / 500 = 10. Since the gene of interest is 1000 base pairs long, it will occupy 2 recognition sites (1000 / 500 = 2). Therefore, the size of the fragment containing the gene of interest will be 1000 base pairs + 2 x 6 base pairs (for the recognition sites) = 1012 base pairs.",
+        "marking_scheme": [
+          "Calculation of the number of recognition sites (2 marks)",
+          "Calculation of the size of the fragment containing the gene of interest (2 marks)",
+          "Explanation of the reasoning behind the calculation (1 mark)"
+        ],
+        "topic": "Gel Electrophoresis",
+        "is_numerical": true
+      },
+      {
+        "q": "A bacterial culture contains 10^6 cells per ml. If the culture is diluted 1:100 and then 1:10, what will be the final concentration of cells per ml?",
+        "marks": 5,
+        "answer": "Calculation: To determine the final concentration of cells per ml, we need to calculate the dilution factor. The first dilution is 1:100, which means that 1 ml of the culture is diluted to 100 ml. The concentration of cells per ml after the first dilution will be 10^6 / 100 = 10^4 cells per ml. The second dilution is 1:10, which means that 1 ml of the diluted culture is diluted to 10 ml. The concentration of cells per ml after the second dilution will be 10^4 / 10 = 10^3 cells per ml. Therefore, the final concentration of cells per ml will be 10^3 cells per ml.",
+        "marking_scheme": [
+          "Calculation of the concentration of cells per ml after the first dilution (2 marks)",
+          "Calculation of the concentration of cells per ml after the second dilution (2 marks)",
+          "Explanation of the reasoning behind the calculation (1 mark)"
+        ],
+        "topic": "Microbial Cultures",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

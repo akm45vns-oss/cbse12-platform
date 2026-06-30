@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Molecular Basis of Inheritance",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:51:18.313Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the structure of a gene and explain the function of introns and exons in the genome. Also, explain the process of RNA splicing.",
+        "marks": 5,
+        "answer": "A gene is a unit of heredity that is passed from one generation to the next. It is a segment of DNA that codes for a specific protein. The structure of a gene includes exons (coding regions) and introns (non-coding regions). Exons are the parts of the gene that are actually translated into protein, while introns are non-coding regions that are removed during the process of RNA splicing. RNA splicing is the process by which introns are removed and exons are joined together to form a mature RNA molecule.",
+        "marking_scheme": [
+          "Description of gene structure (1 mark)",
+          "Function of exons and introns (1.5 marks)",
+          "Process of RNA splicing (2.5 marks)"
+        ],
+        "topic": "Gene Structure and Function",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of gene expression and the factors that influence it. Also, describe the role of transcription factors in regulating gene expression.",
+        "marks": 5,
+        "answer": "Gene expression is the process by which the information in a gene's DNA is converted into a functional product, such as a protein. The factors that influence gene expression include transcription factors, which are proteins that bind to specific DNA sequences and either stimulate or inhibit the transcription of a gene. Transcription factors play a crucial role in regulating gene expression by controlling the rate of transcription.",
+        "marking_scheme": [
+          "Concept of gene expression (1 mark)",
+          "Factors influencing gene expression (1.5 marks)",
+          "Role of transcription factors (2.5 marks)"
+        ],
+        "topic": "Gene Expression",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the process of meiosis and the differences between meiosis and mitosis. Also, explain the importance of meiosis in the production of gametes.",
+        "marks": 5,
+        "answer": "Meiosis is a specialized type of cell division that occurs in reproductive cells. It involves two successive cell divisions, meiosis I and meiosis II, resulting in the production of four haploid daughter cells. The main differences between meiosis and mitosis are the number of cell divisions, the number of chromosomes in each daughter cell, and the type of cell produced. Meiosis is important in the production of gametes because it allows for genetic diversity and increases the chances of survival and adaptation in offspring.",
+        "marking_scheme": [
+          "Process of meiosis (1.5 marks)",
+          "Differences between meiosis and mitosis (1.5 marks)",
+          "Importance of meiosis (2 marks)"
+        ],
+        "topic": "Meiosis",
+        "is_numerical": false
+      },
+      {
+        "q": "A DNA molecule has the following sequence: ATCGATCG. Calculate the number of restriction enzyme sites for the enzyme EcoRI.",
+        "marks": 5,
+        "answer": "Calculation: The enzyme EcoRI recognizes the sequence GAATTC. To find the number of restriction enzyme sites, we need to count the number of times this sequence appears in the DNA molecule. The sequence GAATTC appears only once in the DNA molecule ATCGATCG. Therefore, the number of restriction enzyme sites for the enzyme EcoRI is 1.",
+        "marking_scheme": [
+          "Understanding of restriction enzyme sites (1 mark)",
+          "Calculation of restriction enzyme sites (4 marks)"
+        ],
+        "topic": "Restriction Enzymes",
+        "is_numerical": true
+      },
+      {
+        "q": "A gene has the following sequence: ATGCGTACG. Calculate the number of possible RNA molecules that can be formed if this gene is transcribed.",
+        "marks": 5,
+        "answer": "Calculation: To calculate the number of possible RNA molecules, we need to consider the possible base pairing between the DNA nucleotides and the RNA nucleotides. The DNA sequence ATGCGTACG can be transcribed into the following possible RNA molecules: ATGCGUAUG, ATGCGUAUU, ATGCGUAUC, ATGCGUAUG, ATGCGUAUU, ATGCGUAUC. Therefore, the number of possible RNA molecules that can be formed is 6.",
+        "marking_scheme": [
+          "Understanding of transcription (1 mark)",
+          "Calculation of possible RNA molecules (4 marks)"
+        ],
+        "topic": "Transcription",
+        "is_numerical": true
+      },
+      {
+        "q": "A DNA molecule has the following sequence: ATCGATCG. Calculate the number of possible proteins that can be formed if this gene is translated.",
+        "marks": 5,
+        "answer": "Calculation: To calculate the number of possible proteins, we need to consider the possible amino acid sequences that can be formed based on the DNA sequence. The DNA sequence ATCGATCG codes for the following amino acid sequence: MVLVLV. Therefore, the number of possible proteins that can be formed is 1.",
+        "marking_scheme": [
+          "Understanding of translation (1 mark)",
+          "Calculation of possible proteins (4 marks)"
+        ],
+        "topic": "Translation",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

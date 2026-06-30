@@ -1,0 +1,102 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:59:34.866Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "The direction cosines of a line are proportional to 1, -2, -2. Find the direction cosines of the line.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "Let the direction cosines of the line be l, m, n. We have, l : m : n = 1 : -2 : -2. Dividing each term by √(1² + (-2)² + (-2)²) = √9 = 3, we get l = 1/3, m = -2/3, n = -2/3.",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If the line passing through the points (1, 2, 3) and (2, 3, 4) is parallel to the line passing through the points (3, 4, 5) and (4, 5, 6), then fill in the blank: The direction ratios of the line passing through the points (1, 2, 3) and (2, 3, 4) are _______.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "1, 1, 1",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Show that the line joining the points (1, 2, 3) and (2, 3, 4) is parallel to the line joining the points (3, 4, 5) and (4, 5, 6). (True/False)",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "True",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Find the equation of the plane passing through the points (1, 1, 1), (1, -1, 1) and (-1, 1, -1).",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Let the equation of the plane be a(x - 1) + b(y - 1) + c(z - 1) = 0. Since it passes through (1, -1, 1) and (-1, 1, -1), we have: a(1 - 1) + b(-1 - 1) + c(1 - 1) = 0 => -2b = 0 => b = 0, and a(-1 - 1) + b(1 - 1) + c(-1 - 1) = 0 => -2a - 2c = 0 => a + c = 0. Thus, the equation of the plane becomes a(x - 1) + c(z - 1) = 0. Putting (1, 1, 1) in this equation, we get a(1 - 1) + c(1 - 1) = 0 => 0 = 0. Hence, a and c are arbitrary. So, the equation of the plane can be written as x - 1 + z - 1 = 0 => x + z - 2 = 0.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "The length of the perpendicular from the point (2, 1, 1) to the line x/2 = y/(-3) = z/4 is _______. (MCQ)",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "3",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Find the equation of the line passing through the point (1, 2, 3) and having direction ratios proportional to 2, 3, 4.",
+        "type": "Long Answer",
+        "marks": 3,
+        "answer": "The equation of the line passing through (1, 2, 3) and having direction ratios proportional to 2, 3, 4 is (x - 1)/2 = (y - 2)/3 = (z - 3)/4.",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "A line passes through the points (1, -1, 2) and (3, 4, -2). Find the equation of the line in vector form. (Short Answer)",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "Let the position vectors of the given points be A = i - j + 2k and B = 3i + 4j - 2k. The direction vector of the line, d = B - A = 2i + 5j - 4k. Hence, the equation of the line in vector form is r = i - j + 2k + λ(2i + 5j - 4k).",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "The shortest distance between the lines x/1 = y/2 = z/3 and x/3 = y/4 = z/5 is _______. (Fill in the Blank)",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "1",
+        "year_pattern": "2017-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Find the equation of the plane passing through the point (1, 1, 1) and perpendicular to the line joining the points (1, 2, 3) and (2, 3, 4).",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "The direction ratios of the line joining the points (1, 2, 3) and (2, 3, 4) are 2 - 1 = 1, 3 - 2 = 1, 4 - 3 = 1. The equation of the plane passing through (1, 1, 1) and having direction ratios 1, 1, 1 is 1(x - 1) + 1(y - 1) + 1(z - 1) = 0 => x + y + z - 3 = 0.",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If the lines x = 1 + λ, y = 2 - λ, z = 3 + 2λ and x = -1 + μ, y = -2 + μ, z = 1 - μ are perpendicular, then λ + μ = _______. (MCQ)",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "0",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "The equation of the plane through the points (1, 1, 1), (1, 2, 1) and (1, 1, 2) is _______. (Fill in the Blank)",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "x = 1",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 11
+  }
+}

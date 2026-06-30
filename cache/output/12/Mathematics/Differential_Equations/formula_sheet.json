@@ -1,0 +1,69 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Differential Equations",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:17:28.134Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Separating Variables Formula",
+        "formula": "dx/dt = f(x)/g(y)",
+        "variables": "dx: differential of x, dt: differential of time, f(x): function of x, g(y): function of y",
+        "units": "None",
+        "notes": "Used to separate variables in a differential equation."
+      },
+      {
+        "name": "Linear Differential Equation Formula",
+        "formula": "dy/dx + Py = Q",
+        "variables": "P: coefficient, Q: function of x or constant",
+        "units": "None",
+        "notes": "General form of a linear differential equation."
+      },
+      {
+        "name": "Bernoulli's Equation Formula",
+        "formula": "dy/dx + P(x)y = Q(x)y^n",
+        "variables": "P(x): coefficient, Q(x): function of x, n: exponent",
+        "units": "None",
+        "notes": "Used to solve Bernoulli's equation."
+      },
+      {
+        "name": "Euler's Method Formula",
+        "formula": "x_{n+1} = x_n + hf(x_n)",
+        "variables": "x_n: current value, h: step size, f(x_n): function value at x_n",
+        "units": "None",
+        "notes": "Used for numerical solution of differential equations."
+      },
+      {
+        "name": "Modified Euler's Method Formula",
+        "formula": "x_{n+1} = x_n + (h/2)(f(x_n) + f(x_n + h))",
+        "variables": "x_n: current value, h: step size, f(x_n): function value at x_n",
+        "units": "None",
+        "notes": "Used for more accurate numerical solution of differential equations."
+      },
+      {
+        "name": "Lagrange's Linear Equation Formula",
+        "formula": "y = e^(∫Pdx) × (∫Qe^(-∫Pdx)dx + c)",
+        "variables": "P: coefficient, Q: function of x, c: constant",
+        "units": "None",
+        "notes": "Used to solve linear differential equations."
+      },
+      {
+        "name": "Milne's Predictor Formula",
+        "formula": "y_{n+1}^p = y_{n-3} + (4h/3)(2f_{n+1} - f_n + 2f_{n-1})",
+        "variables": "y_n: current value, h: step size, f_n: function value at x_n",
+        "units": "None",
+        "notes": "Used for numerical solution of differential equations."
+      },
+      {
+        "name": "Milne's Corrector Formula",
+        "formula": "y_{n+1} = y_{n-3} + (h/3)(f_{n+1} + 4f_n + f_{n-1})",
+        "variables": "y_n: current value, h: step size, f_n: function value at x_n",
+        "units": "None",
+        "notes": "Used to correct the predicted value."
+      }
+    ]
+  }
+}

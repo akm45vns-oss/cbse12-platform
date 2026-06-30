@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:30:41.883Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Rohan is developing a banking application where he needs to perform various operations like deposit, withdrawal, and check balance. He wants to implement these operations in a way that they can be reused across multiple places in the application without duplicating the code. Rohan decides to use functions to achieve this goal. He creates a function called `bankOperation` that takes the operation type and user's account details as input and performs the respective operation. This function can be called from multiple places in the application, making the code more organized and maintainable.",
+        "questions": [
+          {
+            "q": "What is the main motivation behind Rohan's decision to use functions?",
+            "opts": [
+              "(A) To reduce the code size",
+              "(B) To make the code more organized and maintainable",
+              "(C) To increase the execution speed",
+              "(D) To reduce the memory usage"
+            ],
+            "ans": "B",
+            "explanation": "Rohan wants to make the code more organized and maintainable by reusing the code across multiple places."
+          },
+          {
+            "q": "What is the input parameter of the `bankOperation` function?",
+            "opts": [
+              "(A) Only operation type",
+              "(B) Only user's account details",
+              "(C) Both operation type and user's account details",
+              "(D) Neither operation type nor user's account details"
+            ],
+            "ans": "C",
+            "explanation": "The function takes both operation type and user's account details as input."
+          },
+          {
+            "q": "What is the benefit of using functions in Rohan's banking application?",
+            "opts": [
+              "(A) It reduces the code size but increases the complexity",
+              "(B) It makes the code more organized and maintainable",
+              "(C) It increases the execution speed but reduces the memory usage",
+              "(D) It reduces the memory usage but increases the code size"
+            ],
+            "ans": "B",
+            "explanation": "Functions make the code more organized and maintainable by reusing the code across multiple places."
+          },
+          {
+            "q": "What is the name of the function created by Rohan?",
+            "opts": [
+              "(A) `bankingApp`",
+              "(B) `bankOperation`",
+              "(C) `accountDetails`",
+              "(D) `operationType`"
+            ],
+            "ans": "B",
+            "explanation": "The function is named `bankOperation`."
+          },
+          {
+            "q": "Why is the `bankOperation` function reusable?",
+            "opts": [
+              "(A) Because it is called only once in the application",
+              "(B) Because it is called from multiple places in the application",
+              "(C) Because it has no input parameters",
+              "(D) Because it has no output parameters"
+            ],
+            "ans": "B",
+            "explanation": "The function is reusable because it can be called from multiple places in the application."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "Akash is working on a project where he needs to calculate the area and perimeter of different shapes like rectangle, square, and circle. He wants to implement these calculations in a way that they can be reused across multiple shapes without duplicating the code. Akash decides to use functions to achieve this goal. He creates a function called `calculateGeometry` that takes the shape type and its dimensions as input and calculates the respective geometry. This function can be called from multiple shapes, making the code more organized and maintainable.",
+        "questions": [
+          {
+            "q": "What is the main benefit of using functions in Akash's project?",
+            "opts": [
+              "(A) It reduces the code size but increases the complexity",
+              "(B) It makes the code more organized and maintainable",
+              "(C) It increases the execution speed but reduces the memory usage",
+              "(D) It reduces the memory usage but increases the code size"
+            ],
+            "ans": "B",
+            "explanation": "Functions make the code more organized and maintainable by reusing the code across multiple shapes."
+          },
+          {
+            "q": "What is the input parameter of the `calculateGeometry` function?",
+            "opts": [
+              "(A) Only shape type",
+              "(B) Only shape dimensions",
+              "(C) Both shape type and shape dimensions",
+              "(D) Neither shape type nor shape dimensions"
+            ],
+            "ans": "C",
+            "explanation": "The function takes both shape type and shape dimensions as input."
+          },
+          {
+            "q": "What is the name of the function created by Akash?",
+            "opts": [
+              "(A) `geometryCalculation`",
+              "(B) `calculateGeometry`",
+              "(C) `shapeDimensions`",
+              "(D) `shapeType`"
+            ],
+            "ans": "B",
+            "explanation": "The function is named `calculateGeometry`."
+          },
+          {
+            "q": "Why is the `calculateGeometry` function reusable?",
+            "opts": [
+              "(A) Because it is called only once in the project",
+              "(B) Because it is called from multiple shapes in the project",
+              "(C) Because it has no input parameters",
+              "(D) Because it has no output parameters"
+            ],
+            "ans": "B",
+            "explanation": "The function is reusable because it can be called from multiple shapes in the project."
+          },
+          {
+            "q": "What is the goal of using functions in Akash's project?",
+            "opts": [
+              "(A) To reduce the code size",
+              "(B) To make the code more organized and maintainable",
+              "(C) To increase the execution speed",
+              "(D) To reduce the memory usage"
+            ],
+            "ans": "B",
+            "explanation": "Akash wants to make the code more organized and maintainable by reusing the code across multiple shapes."
+          }
+        ]
+      }
+    ]
+  }
+}

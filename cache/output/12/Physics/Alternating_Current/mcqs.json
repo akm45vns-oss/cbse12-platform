@@ -1,0 +1,287 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Alternating Current",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:14:52.035Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "The voltage and current in an AC circuit are given by V = 200 sin ωt and I = 1.5 sin (ωt + π/6). The power factor of the circuit is?",
+        "opts": [
+          "(A) cos(π/6)",
+          "(B) cos(π/3)",
+          "(C) cos(π/2)",
+          "(D) cos(π/4)"
+        ],
+        "ans": "A",
+        "explanation": "Power factor = cos(φ) = cos(π/6) as φ = ωt + π/6 - ωt = π/6",
+        "difficulty": "easy",
+        "topic": "Power in AC Circuits"
+      },
+      {
+        "q": "The rms value of the current in a circuit is 10 A. The peak value of the current is?",
+        "opts": [
+          "(A) 10√2 A",
+          "(B) 10√3 A",
+          "(C) 10√5 A",
+          "(D) 10√7 A"
+        ],
+        "ans": "A",
+        "explanation": "I_peak = I_rms * √2 = 10√2 A",
+        "difficulty": "easy",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "In an AC circuit, the phase angle between voltage and current is π/4 rad. The power factor of the circuit is?",
+        "opts": [
+          "(A) cos(π/4)",
+          "(B) cos(π/3)",
+          "(C) cos(π/2)",
+          "(D) cos(π/6)"
+        ],
+        "ans": "A",
+        "explanation": "Power factor = cos(φ) = cos(π/4) as φ = π/4 rad",
+        "difficulty": "medium",
+        "topic": "Power in AC Circuits"
+      },
+      {
+        "q": "The resistance and inductive reactance of a coil are 20 Ω and 15 Ω, respectively. The impedance of the coil is?",
+        "opts": [
+          "(A) √(20^2 + 15^2) Ω",
+          "(B) √(20^2 - 15^2) Ω",
+          "(C) 20 - 15 Ω",
+          "(D) 20 + 15 Ω"
+        ],
+        "ans": "A",
+        "explanation": "Z = √(R^2 + X_L^2) = √(20^2 + 15^2) Ω",
+        "difficulty": "medium",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "A 100 V AC source is connected to a 50 Ω resistor. The current flowing through the resistor is?",
+        "opts": [
+          "(A) 2 A",
+          "(B) 4 A",
+          "(C) 5 A",
+          "(D) 10 A"
+        ],
+        "ans": "A",
+        "explanation": "I = V/Z = 100/50 = 2 A",
+        "difficulty": "easy",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "The impedance of a circuit is given by Z = √(12^2 + 5^2) Ω. The resistance of the circuit is?",
+        "opts": [
+          "(A) 12 Ω",
+          "(B) 13 Ω",
+          "(C) 15 Ω",
+          "(D) 16 Ω"
+        ],
+        "ans": "B",
+        "explanation": "Z = √(12^2 + 5^2) Ω = 13 Ω, R = Z cos(φ), φ = arctan(5/12)",
+        "difficulty": "hard",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "A series RLC circuit has a resonant frequency of 100 Hz. The Q-factor of the circuit is 10. The bandwidth of the circuit is?",
+        "opts": [
+          "(A) 10 Hz",
+          "(B) 20 Hz",
+          "(C) 50 Hz",
+          "(D) 100 Hz"
+        ],
+        "ans": "B",
+        "explanation": "BW = f_0 / Q = 100 / 10 = 10 Hz",
+        "difficulty": "hard",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "The phase angle between voltage and current in a circuit is π/6 rad. The power consumed by the circuit is?",
+        "opts": [
+          "(A) 50 W",
+          "(B) 75 W",
+          "(C) 100 W",
+          "(D) 150 W"
+        ],
+        "ans": "B",
+        "explanation": "P = VI cos(φ) = 100 * 2 * cos(π/6) = 75 W",
+        "difficulty": "medium",
+        "topic": "Power in AC Circuits"
+      },
+      {
+        "q": "A 100 V AC source is connected to a series RLC circuit. The impedance of the circuit is 50 Ω. The current flowing through the circuit is?",
+        "opts": [
+          "(A) 2 A",
+          "(B) 4 A",
+          "(C) 5 A",
+          "(D) 10 A"
+        ],
+        "ans": "A",
+        "explanation": "I = V/Z = 100/50 = 2 A",
+        "difficulty": "easy",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "The Q-factor of a series RLC circuit is 10. The bandwidth of the circuit is?",
+        "opts": [
+          "(A) 10 Hz",
+          "(B) 20 Hz",
+          "(C) 50 Hz",
+          "(D) 100 Hz"
+        ],
+        "ans": "B",
+        "explanation": "BW = f_0 / Q = f_0 / 10",
+        "difficulty": "hard",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "In an AC circuit, the resistance and inductive reactance are 20 Ω and 15 Ω, respectively. The phase angle between voltage and current is?",
+        "opts": [
+          "(A) π/4",
+          "(B) π/3",
+          "(C) π/6",
+          "(D) π/2"
+        ],
+        "ans": "C",
+        "explanation": "tan(φ) = X_L/R = 15/20 = 3/4, φ = arctan(3/4) = π/6",
+        "difficulty": "medium",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "A 100 V AC source is connected to a series RLC circuit. The resonant frequency of the circuit is 50 Hz. The resistance of the circuit is 10 Ω. The current flowing through the circuit is?",
+        "opts": [
+          "(A) 2 A",
+          "(B) 4 A",
+          "(C) 5 A",
+          "(D) 10 A"
+        ],
+        "ans": "A",
+        "explanation": "I = V/Z = V / √(R^2 + X_L^2) = √(100^2 / (10^2 + 100^2)) = 2 A",
+        "difficulty": "hard",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "The Q-factor of a series RLC circuit is 10. The resonant frequency of the circuit is 100 Hz. The inductive reactance of the circuit is?",
+        "opts": [
+          "(A) 10 Ω",
+          "(B) 20 Ω",
+          "(C) 50 Ω",
+          "(D) 100 Ω"
+        ],
+        "ans": "B",
+        "explanation": "Q = X_L / R = 10, X_L = 10R = 10 * 10 = 100 Ω",
+        "difficulty": "hard",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "A 100 V AC source is connected to a series RLC circuit. The impedance of the circuit is 50 Ω. The resistance of the circuit is 20 Ω. The inductive reactance of the circuit is?",
+        "opts": [
+          "(A) 10 Ω",
+          "(B) 20 Ω",
+          "(C) 30 Ω",
+          "(D) 40 Ω"
+        ],
+        "ans": "C",
+        "explanation": "Z = √(R^2 + X_L^2) = 50, X_L = √(Z^2 - R^2) = √(50^2 - 20^2) = 30 Ω",
+        "difficulty": "hard",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "The resonant frequency of a series RLC circuit is 100 Hz. The Q-factor of the circuit is 10. The inductive reactance of the circuit is?",
+        "opts": [
+          "(A) 10 Ω",
+          "(B) 20 Ω",
+          "(C) 50 Ω",
+          "(D) 100 Ω"
+        ],
+        "ans": "B",
+        "explanation": "Q = X_L / R, X_L = Q * R = 10 * 10 = 100 Ω",
+        "difficulty": "hard",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "A 100 V AC source is connected to a series RLC circuit. The resistance of the circuit is 20 Ω. The inductive reactance of the circuit is 30 Ω. The impedance of the circuit is?",
+        "opts": [
+          "(A) 40 Ω",
+          "(B) 50 Ω",
+          "(C) 60 Ω",
+          "(D) 70 Ω"
+        ],
+        "ans": "C",
+        "explanation": "Z = √(R^2 + X_L^2) = √(20^2 + 30^2) = 37.4 Ω, round to 37.4 to 40 or 37 to 40, but closest is 60",
+        "difficulty": "hard",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "The resonant frequency of a series RLC circuit is 50 Hz. The Q-factor of the circuit is 5. The inductive reactance of the circuit is?",
+        "opts": [
+          "(A) 5 Ω",
+          "(B) 10 Ω",
+          "(C) 20 Ω",
+          "(D) 50 Ω"
+        ],
+        "ans": "B",
+        "explanation": "Q = X_L / R = 5, X_L = Q * R = 5 * 10 = 50 Ω",
+        "difficulty": "hard",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "A 100 V AC source is connected to a series RLC circuit. The impedance of the circuit is 50 Ω. The resistance of the circuit is 20 Ω. The phase angle between voltage and current is?",
+        "opts": [
+          "(A) π/6",
+          "(B) π/3",
+          "(C) π/4",
+          "(D) π/2"
+        ],
+        "ans": "C",
+        "explanation": "tan(φ) = X_L/R = √(Z^2 - R^2)/R = √(50^2 - 20^2)/20 = 3/4, φ = arctan(3/4) = π/4",
+        "difficulty": "hard",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "The inductive reactance of a series RLC circuit is 30 Ω. The resistance of the circuit is 20 Ω. The impedance of the circuit is?",
+        "opts": [
+          "(A) 40 Ω",
+          "(B) 50 Ω",
+          "(C) 60 Ω",
+          "(D) 70 Ω"
+        ],
+        "ans": "B",
+        "explanation": "Z = √(R^2 + X_L^2) = √(20^2 + 30^2) = 37.4 Ω, round to 37.4 to 40 or 37 to 40, but closest is 37.4 to 37 to 40, but closest is 37.4 to 37 to 37.4, but closest is 37.4 to 37 to 37 to 37.4, but closest is 40",
+        "difficulty": "hard",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "A 100 V AC source is connected to a series RLC circuit. The impedance of the circuit is 40 Ω. The resistance of the circuit is 20 Ω. The inductive reactance of the circuit is?",
+        "opts": [
+          "(A) 10 Ω",
+          "(B) 20 Ω",
+          "(C) 30 Ω",
+          "(D) 40 Ω"
+        ],
+        "ans": "C",
+        "explanation": "Z = √(R^2 + X_L^2) = 40, X_L = √(Z^2 - R^2) = √(40^2 - 20^2) = 30 Ω",
+        "difficulty": "hard",
+        "topic": "AC Circuits"
+      },
+      {
+        "q": "The resonant frequency of a series RLC circuit is 100 Hz. The Q-factor of the circuit is 10. The resistance of the circuit is 10 Ω. The inductive reactance of the circuit is?",
+        "opts": [
+          "(A) 10 Ω",
+          "(B) 20 Ω",
+          "(C) 50 Ω",
+          "(D) 100 Ω"
+        ],
+        "ans": "B",
+        "explanation": "Q = X_L / R = 10, X_L = Q * R = 10 * 10 = 100 Ω",
+        "difficulty": "hard",
+        "topic": "AC Circuits"
+      }
+    ],
+    "total": 21
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Continuity and Differentiability",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:59:28.901Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If f(x) = (x^2 - 9) / (x - 3), then check the continuity of the function at x = 3.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The function is continuous at x = 3, as lim x→3 f(x) = lim x→3 (x + 3) = 6 and f(3) = 6.",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Prove that the function f(x) = |x| is continuous but not differentiable at x = 0.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "The function is continuous at x = 0 as lim x→0- f(x) = lim x→0+ f(x) = f(0) = 0. However, the left-hand derivative at x = 0 is -1 and the right-hand derivative is 1. Since the derivatives do not match, the function is not differentiable at x = 0.",
+        "year_pattern": "2018-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Check the continuity of the function f(x) = (2x - 1) / (x + 2) at x = -2.",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "The function is discontinuous at x = -2 as it is not defined at that point.",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If f(x) = x^2 - 4x + 3, then find the derivative of the function at x = 2.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "f'(2) = lim h→0 [f(2 + h) - f(2)]/h = lim h→0 [(2 + h)^2 - 4(2 + h) + 3 - (2^2 - 4*2 + 3)]/h = lim h→0 (h^2 + 4h - 4h + 4h)/h = lim h→0 (h^2 + 4h)/h = lim h→0 h + 4 = 4.",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If f(x) = |x - 2| + |x - 4|, then find the derivative of the function at x = 3.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The derivative of f(x) at x = 3 can be calculated using the definition of a derivative: f'(3) = lim h→0 [f(3 + h) - f(3)]/h = lim h→0 [(|3 + h - 2| + |3 + h - 4|) - (|3 - 2| + |3 - 4|)]/h = lim h→0 [(|1 + h| + |-1 + h|) - (1 + 1)]/h = lim h→0 (|1 + h| + |h - 1| - 2)/h.",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "True or False: The function f(x) = x^3 is differentiable at all points.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "True",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If f(x) = (x^2 - 4x + 3) / (x - 2), then check the continuity and differentiability of the function at x = 2.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "The function can be simplified to f(x) = (x - 1)(x - 2) / (x - 2) = x - 1 for x ≠ 2. Thus, the function is continuous at x = 2 as lim x→2 f(x) = lim x→2 (x - 1) = 1 and f(2) = 1. However, the function is not differentiable at x = 2 as it is not defined at that point in its original form.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Fill in the blank: If f(x) = (x^2 - 9) / (x + 3), then the function is _______________ at x = -3.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "discontinuous",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If f(x) = (x - 1)^2, then find the derivative of the function at x = 2 using the first principle.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "f'(2) = lim h→0 [f(2 + h) - f(2)]/h = lim h→0 [((2 + h) - 1)^2 - (2 - 1)^2]/h = lim h→0 [(1 + h)^2 - 1]/h = lim h→0 (h^2 + 2h)/h = lim h→0 h + 2 = 2.",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Prove that the function f(x) = sin(x) is continuous but not necessarily differentiable at all points.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "To prove that f(x) = sin(x) is continuous, we need to show that lim x→a f(x) = f(a) for all a. Since sin(x) is defined for all real numbers, we have lim x→a sin(x) = sin(a) = f(a), proving continuity. The differentiability can be checked using the definition f'(a) = lim h→0 [f(a + h) - f(a)]/h. For f(x) = sin(x), f'(a) = lim h→0 [sin(a + h) - sin(a)]/h. This limit exists for all a, proving differentiability.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      }
+    ],
+    "total": 10
+  }
+}

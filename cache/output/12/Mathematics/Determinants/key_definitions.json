@@ -1,0 +1,103 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Determinants",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:16:17.061Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Determinant",
+        "definition": "A value that can be calculated from a square matrix and which can be used to determine the solvability and nature of the solutions of a system of linear equations.",
+        "example": "For a 2x2 matrix, the determinant is calculated as ad - bc."
+      },
+      {
+        "term": "Square Matrix",
+        "definition": "A matrix with the same number of rows and columns.",
+        "example": "Example of a 3x3 square matrix: [[a, b, c], [d, e, f], [g, h, i]]."
+      },
+      {
+        "term": "Minor",
+        "definition": "The determinant of the matrix obtained by removing the row and column of the element for which the minor is being calculated.",
+        "example": "Minor of element a is calculated as the determinant of the 2x2 matrix [[e, f], [h, i]]."
+      },
+      {
+        "term": "Cofactor",
+        "definition": "The minor of an element multiplied by -1 raised to the power of the sum of its row and column indices.",
+        "example": "Cofactor of element a is calculated as (-1)^(1+1) * minor of a."
+      },
+      {
+        "term": "Determinant of a 2x2 Matrix",
+        "definition": "The product of the elements on the main diagonal minus the product of the elements on the other diagonal.",
+        "example": "Determinant of a 2x2 matrix [[a, b], [c, d]] is ad - bc."
+      },
+      {
+        "term": "Determinant of a 3x3 Matrix",
+        "definition": "The sum of the products of each element in a row (or column) with its cofactor.",
+        "example": "Determinant of a 3x3 matrix [[a, b, c], [d, e, f], [g, h, i]] is a(ei - fh) - b(di - fg) + c(dh - eg)."
+      },
+      {
+        "term": "Determinant of a Matrix",
+        "definition": "A general method of calculating the determinant for matrices of any size.",
+        "example": "The determinant of a matrix can be calculated using the Laplace expansion method."
+      },
+      {
+        "term": "Laplace Expansion",
+        "definition": "A method of calculating the determinant of a matrix by expanding along a row or column.",
+        "example": "The Laplace expansion method involves multiplying each element in a row or column by its cofactor and summing the results."
+      },
+      {
+        "term": "Inverse of a Matrix",
+        "definition": "A matrix that, when multiplied by the original matrix, gives the identity matrix.",
+        "example": "The inverse of a matrix A is denoted as A^(-1) and satisfies the equation AA^(-1) = I."
+      },
+      {
+        "term": "Rank of a Matrix",
+        "definition": "The maximum number of linearly independent rows or columns in a matrix.",
+        "example": "The rank of a matrix can be found by calculating its determinant or by performing row operations."
+      },
+      {
+        "term": "Linearly Independent Vectors",
+        "definition": "Vectors that cannot be expressed as a linear combination of each other.",
+        "example": "The vectors [1, 0] and [0, 1] are linearly independent."
+      },
+      {
+        "term": "Linearly Dependent Vectors",
+        "definition": "Vectors that can be expressed as a linear combination of each other.",
+        "example": "The vectors [1, 0] and [2, 0] are linearly dependent."
+      },
+      {
+        "term": "Cramer's Rule",
+        "definition": "A method of solving a system of linear equations using determinants.",
+        "example": "Cramer's Rule involves replacing each column of the coefficient matrix with the constant matrix and calculating the determinants."
+      },
+      {
+        "term": "System of Linear Equations",
+        "definition": "A set of linear equations involving multiple variables.",
+        "example": "The system of linear equations x + y = 2 and x - y = 0 has multiple solutions."
+      },
+      {
+        "term": "Homogeneous System of Linear Equations",
+        "definition": "A system of linear equations where all the constant terms are zero.",
+        "example": "The homogeneous system of linear equations x + y = 0 and x - y = 0 has only the trivial solution."
+      },
+      {
+        "term": "Trivial Solution",
+        "definition": "A solution to a system of linear equations where all the variables are equal to zero.",
+        "example": "The trivial solution to the system of linear equations x + y = 0 and x - y = 0 is x = 0 and y = 0."
+      },
+      {
+        "term": "Non-Trivial Solution",
+        "definition": "A solution to a system of linear equations where not all the variables are equal to zero.",
+        "example": "The system of linear equations x + y = 2 and x - y = 0 has a non-trivial solution."
+      },
+      {
+        "term": "Adjugate Matrix",
+        "definition": "The matrix obtained by transposing the cofactor matrix.",
+        "example": "The adjugate matrix of a 3x3 matrix [[a, b, c], [d, e, f], [g, h, i]] is the transpose of the cofactor matrix."
+      }
+    ]
+  }
+}

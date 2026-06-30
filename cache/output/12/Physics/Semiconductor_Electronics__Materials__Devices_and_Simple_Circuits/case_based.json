@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:10:28.619Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A solar power plant uses photodiodes to convert sunlight into electricity. The photodiodes are made from a p-type semiconductor material. When sunlight hits the photodiodes, electrons are excited and flow through the circuit, generating electricity. However, the efficiency of the solar power plant depends on the quality of the photodiodes. If the photodiodes have defects, they can reduce the efficiency of the plant. To overcome this issue, the plant uses a process called gettering to remove impurities from the semiconductor material. Gettering involves heating the semiconductor material to a high temperature to remove impurities.",
+        "questions": [
+          {
+            "q": "What type of semiconductor material is used to make photodiodes in a solar power plant?",
+            "opts": [
+              "(A) n-type",
+              "(B) p-type",
+              "(C) Intrinsic",
+              "(D) Extrinsci"
+            ],
+            "ans": "B",
+            "explanation": "Photodiodes are made from p-type semiconductor material."
+          },
+          {
+            "q": "What is the purpose of gettering in a solar power plant?",
+            "opts": [
+              "(A) To reduce the efficiency of the plant",
+              "(B) To remove impurities from the semiconductor material",
+              "(C) To increase the cost of the plant",
+              "(D) To decrease the lifespan of the plant"
+            ],
+            "ans": "B",
+            "explanation": "Gettering involves removing impurities from the semiconductor material to improve its quality."
+          },
+          {
+            "q": "What happens to electrons when sunlight hits the photodiodes in a solar power plant?",
+            "opts": [
+              "(A) They are removed",
+              "(B) They are excited and flow through the circuit",
+              "(C) They are trapped",
+              "(D) They are destroyed"
+            ],
+            "ans": "B",
+            "explanation": "Electrons are excited and flow through the circuit when sunlight hits the photodiodes, generating electricity."
+          },
+          {
+            "q": "What is the effect of defects in photodiodes on the efficiency of a solar power plant?",
+            "opts": [
+              "(A) It increases the efficiency",
+              "(B) It has no effect",
+              "(C) It reduces the efficiency",
+              "(D) It remains the same"
+            ],
+            "ans": "C",
+            "explanation": "Defects in photodiodes can reduce the efficiency of the solar power plant."
+          },
+          {
+            "q": "What process is used to remove impurities from the semiconductor material in a solar power plant?",
+            "opts": [
+              "(A) Doping",
+              "(B) Gettering",
+              "(C) Diffusion",
+              "(D) Ion implantation"
+            ],
+            "ans": "B",
+            "explanation": "Gettering is the process used to remove impurities from the semiconductor material."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A computer chip uses a combination of p-type and n-type semiconductor materials to create a diode. The diode is used to control the flow of current in the chip. However, the diode can be damaged if it is exposed to high temperatures. To prevent this, the chip is packaged in a heat sink to keep it cool. The heat sink is made from a material with high thermal conductivity, which helps to dissipate heat quickly.",
+        "questions": [
+          {
+            "q": "What is the purpose of using a combination of p-type and n-type semiconductor materials in a computer chip?",
+            "opts": [
+              "(A) To increase the cost of the chip",
+              "(B) To reduce the efficiency of the chip",
+              "(C) To create a diode",
+              "(D) To decrease the lifespan of the chip"
+            ],
+            "ans": "C",
+            "explanation": "A combination of p-type and n-type semiconductor materials is used to create a diode in a computer chip."
+          },
+          {
+            "q": "What is the effect of high temperatures on a diode in a computer chip?",
+            "opts": [
+              "(A) It increases the efficiency of the chip",
+              "(B) It has no effect",
+              "(C) It damages the diode",
+              "(D) It improves the lifespan of the chip"
+            ],
+            "ans": "C",
+            "explanation": "High temperatures can damage a diode in a computer chip."
+          },
+          {
+            "q": "What is the purpose of packaging a computer chip in a heat sink?",
+            "opts": [
+              "(A) To increase the cost of the chip",
+              "(B) To reduce the efficiency of the chip",
+              "(C) To keep the chip cool",
+              "(D) To decrease the lifespan of the chip"
+            ],
+            "ans": "C",
+            "explanation": "Packaging a computer chip in a heat sink helps to keep it cool and prevent damage from high temperatures."
+          },
+          {
+            "q": "What material is used to make a heat sink in a computer chip?",
+            "opts": [
+              "(A) p-type semiconductor material",
+              "(B) n-type semiconductor material",
+              "(C) Material with high thermal conductivity",
+              "(D) Material with low thermal conductivity"
+            ],
+            "ans": "C",
+            "explanation": "A heat sink is made from a material with high thermal conductivity to dissipate heat quickly."
+          },
+          {
+            "q": "What is the effect of using a heat sink on a computer chip?",
+            "opts": [
+              "(A) It increases the cost of the chip",
+              "(B) It reduces the efficiency of the chip",
+              "(C) It improves the lifespan of the chip",
+              "(D) It decreases the lifespan of the chip"
+            ],
+            "ans": "C",
+            "explanation": "Using a heat sink can improve the lifespan of a computer chip by keeping it cool."
+          }
+        ]
+      }
+    ]
+  }
+}

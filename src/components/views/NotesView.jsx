@@ -1,18 +1,23 @@
 import { LoadingScreen } from "../common";
-import { useEffect, memo } from "react";
+import { useEffect, memo, useState } from "react";
 import { startSession, endSession } from "../../utils/sessionTracking";
 
 export const NotesView = memo(function NotesView({
   subject, chapter, notes, loading, loadMsg, loadEmoji, onStartQuiz, curriculumData, onRegenerateNotes, selectedClass
 }) {
+  const [activeTab, setActiveTab] = useState("detailed");
+
   useEffect(() => {
     startSession(subject, chapter, "notes");
     return () => { endSession(true); };
   }, [subject, chapter]);
 
   // Enhanced markdown renderer matching new design (callout boxes, formula boxes, etc.)
-  const renderNotes = (raw) => {
+  const renderMarkdown = (raw) => {
     if (!raw) return null;
+    // Extract markdown from object if passed
+    if (typeof raw === 'object' && raw.markdown) raw = raw.markdown;
+    
     const elements = [];
     const lines = raw.split('\n');
     let i = 0;
@@ -117,71 +122,159 @@ export const NotesView = memo(function NotesView({
     return elements;
   };
 
+  const renderDefinitions = (definitionsData) => {
+    if (!definitionsData || !definitionsData.definitions) return <p>No definitions available.</p>;
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+        {definitionsData.definitions.map((def, idx) => (
+          <div key={idx} style={{ background: "white", padding: 16, borderRadius: 12, border: "1px solid #e2e8f0", boxShadow: "0 2px 4px rgba(0,0,0,0.02)" }}>
+            <h3 style={{ margin: "0 0 8px 0", color: "#0f172a", fontSize: 16 }}>{def.term}</h3>
+            <p style={{ margin: "0 0 8px 0", color: "#475569", fontSize: 14, lineHeight: 1.6 }}>{def.definition}</p>
+            {def.example && (
+              <div style={{ background: "#f8fafc", padding: "8px 12px", borderRadius: 8, fontSize: 13, color: "#64748b", borderLeft: "3px solid #cbd5e1" }}>
+                <strong>Example:</strong> {def.example}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  const renderFormulas = (formulaData) => {
+    if (!formulaData || !formulaData.formulas) return <p>No formulas available.</p>;
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+        {formulaData.formulas.map((f, idx) => (
+          <div key={idx} style={{ background: "#f0fdf4", padding: 16, borderRadius: 12, border: "1px solid #bbf7d0" }}>
+            <h3 style={{ margin: "0 0 8px 0", color: "#16a34a", fontSize: 16 }}>{f.name}</h3>
+            <div style={{ background: "white", padding: "12px 16px", borderRadius: 8, fontFamily: "monospace", fontSize: 15, color: "#15803d", marginBottom: 8, border: "1px dashed #86efac", textAlign: "center" }}>
+              {f.formula}
+            </div>
+            <p style={{ margin: "0 0 4px 0", color: "#475569", fontSize: 13 }}><strong>Variables:</strong> {f.variables}</p>
+            {f.units && <p style={{ margin: "0 0 4px 0", color: "#475569", fontSize: 13 }}><strong>Units:</strong> {f.units}</p>}
+            {f.notes && <p style={{ margin: "0", color: "#64748b", fontSize: 13, fontStyle: "italic" }}>{f.notes}</p>}
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  if (loading) {
+    return (
+      <div style={{ maxWidth: 780, margin: "0 auto" }}>
+        <LoadingScreen message={loadMsg} emoji={loadEmoji} />
+      </div>
+    );
+  }
+
+  const isModular = notes && typeof notes === 'object' && notes.isModular;
+  
+  const tabs = [
+    { id: "detailed", label: "Study Guide", icon: "📚", content: isModular ? notes.detailed_notes : null },
+    { id: "short", label: "Quick Notes", icon: "⚡", content: isModular ? notes.short_notes : null },
+    { id: "definitions", label: "Definitions", icon: "📖", content: isModular ? notes.key_definitions : null },
+    { id: "formulas", label: "Formulas", icon: "🧮", content: isModular ? notes.formula_sheet : null },
+    { id: "ncert", label: "NCERT Summary", icon: "📝", content: isModular ? notes.ncert_summary : null },
+  ].filter(t => t.content);
+
   return (
     <div style={{ maxWidth: 780, margin: "0 auto" }}>
-      {loading ? (
-        <LoadingScreen message={loadMsg} emoji={loadEmoji} />
-      ) : (
+      {/* Action bar */}
+      <div style={{
+        display: "flex", justifyContent: "space-between", alignItems: "center",
+        marginBottom: 16, gap: 10,
+      }}>
+        <button
+          onClick={() => window.print()}
+          style={{
+            background: "white", border: "1.5px solid rgba(0,0,0,0.08)",
+            borderRadius: 10, padding: "8px 16px", color: "#64748b",
+            fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6,
+            cursor: "pointer",
+          }}
+          onMouseEnter={e => { e.currentTarget.style.borderColor = "#4f46e5"; e.currentTarget.style.color = "#4f46e5"; }}
+          onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(0,0,0,0.08)"; e.currentTarget.style.color = "#64748b"; }}
+        >
+          📥 PDF
+        </button>
+        <button
+          onClick={onStartQuiz}
+          style={{
+            background: "linear-gradient(135deg, #4f46e5, #818cf8)",
+            border: "none", borderRadius: 10, padding: "10px 20px", color: "white",
+            fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6,
+            boxShadow: "0 4px 12px rgba(79,70,229,0.3)", cursor: "pointer",
+          }}
+          onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; }}
+          onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; }}
+        >
+          Take Quiz →
+        </button>
+      </div>
+
+      {isModular ? (
         <div>
-          {/* Action bar */}
-          <div style={{
-            display: "flex", justifyContent: "space-between", alignItems: "center",
-            marginBottom: 16, gap: 10,
+          {/* Tab Navigation */}
+          <div style={{ 
+            display: "flex", overflowX: "auto", gap: 8, paddingBottom: 12, marginBottom: 16,
+            scrollbarWidth: "none", msOverflowStyle: "none"
           }}>
-            <button
-              onClick={() => window.print()}
-              style={{
-                background: "white", border: "1.5px solid rgba(0,0,0,0.08)",
-                borderRadius: 10, padding: "8px 16px", color: "#64748b",
-                fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6,
-                cursor: "pointer",
-              }}
-              onMouseEnter={e => { e.currentTarget.style.borderColor = "#4f46e5"; e.currentTarget.style.color = "#4f46e5"; }}
-              onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(0,0,0,0.08)"; e.currentTarget.style.color = "#64748b"; }}
-            >
-              📥 PDF
-            </button>
-            <button
-              onClick={onStartQuiz}
-              style={{
-                background: "linear-gradient(135deg, #4f46e5, #818cf8)",
-                border: "none", borderRadius: 10, padding: "10px 20px", color: "white",
-                fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6,
-                boxShadow: "0 4px 12px rgba(79,70,229,0.3)", cursor: "pointer",
-              }}
-              onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; }}
-              onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; }}
-            >
-              Take Quiz →
-            </button>
+            {tabs.map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                style={{
+                  padding: "10px 16px", borderRadius: 12, border: "none",
+                  background: activeTab === tab.id ? "#4f46e5" : "white",
+                  color: activeTab === tab.id ? "white" : "#64748b",
+                  fontWeight: 700, fontSize: 14, cursor: "pointer", whiteSpace: "nowrap",
+                  boxShadow: activeTab === tab.id ? "0 4px 12px rgba(79,70,229,0.2)" : "0 1px 3px rgba(0,0,0,0.05)",
+                  transition: "all 0.2s"
+                }}
+              >
+                {tab.icon} {tab.label}
+              </button>
+            ))}
           </div>
 
-          {/* Notes Content */}
-          <div id="printable-content" className="prose-notes-block">
+          {/* Tab Content */}
+          <div id="printable-content" className="prose-notes-block" style={{ minHeight: "60vh" }}>
             <div className="notes-content-pad prose-notes">
-              {renderNotes(notes)}
+              {activeTab === "detailed" && renderMarkdown(notes.detailed_notes)}
+              {activeTab === "short" && renderMarkdown(notes.short_notes)}
+              {activeTab === "ncert" && renderMarkdown(notes.ncert_summary)}
+              {activeTab === "definitions" && renderDefinitions(notes.key_definitions)}
+              {activeTab === "formulas" && renderFormulas(notes.formula_sheet)}
             </div>
           </div>
-
-          {/* Bottom CTA */}
-          <div style={{ display: "flex", justifyContent: "center", marginTop: 24, paddingBottom: 16 }}>
-            <button
-              onClick={onStartQuiz}
-              style={{
-                background: "linear-gradient(135deg, #4f46e5, #818cf8)",
-                border: "none", borderRadius: 14, padding: "14px 36px", color: "white",
-                fontSize: 15, fontWeight: 800,
-                boxShadow: "0 6px 20px rgba(79,70,229,0.3)", cursor: "pointer",
-                transition: "all 0.2s",
-              }}
-              onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 12px 32px rgba(79,70,229,0.4)"; }}
-              onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 6px 20px rgba(79,70,229,0.3)"; }}
-            >
-              🧠 Start Quiz →
-            </button>
+        </div>
+      ) : (
+        /* Legacy Old Notes Renderer */
+        <div id="printable-content" className="prose-notes-block">
+          <div className="notes-content-pad prose-notes">
+            {renderMarkdown(notes)}
           </div>
         </div>
       )}
+
+      {/* Bottom CTA */}
+      <div style={{ display: "flex", justifyContent: "center", marginTop: 24, paddingBottom: 16 }}>
+        <button
+          onClick={onStartQuiz}
+          style={{
+            background: "linear-gradient(135deg, #4f46e5, #818cf8)",
+            border: "none", borderRadius: 14, padding: "14px 36px", color: "white",
+            fontSize: 15, fontWeight: 800,
+            boxShadow: "0 6px 20px rgba(79,70,229,0.3)", cursor: "pointer",
+            transition: "all 0.2s",
+          }}
+          onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 12px 32px rgba(79,70,229,0.4)"; }}
+          onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 6px 20px rgba(79,70,229,0.3)"; }}
+        >
+          🧠 Start Quiz →
+        </button>
+      </div>
     </div>
   );
 });

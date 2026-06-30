@@ -1,0 +1,53 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Integrals",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:16:56.794Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "Basic Properties of Definite Integrals",
+        "description": "The basic properties of definite integrals are: ∫[a, b] f(x) dx = -∫[b, a] f(x) dx, ∫[a, a] f(x) dx = 0, and ∫[a, b] [f(x) + g(x)] dx = ∫[a, b] f(x) dx + ∫[a, b] g(x) dx."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Mean Value Theorem for Integrals",
+        "description": "The Mean Value Theorem for Integrals states that if f(x) is a continuous function on the closed interval [a, b], then there exists a point c in [a, b] such that ∫[a, b] f(x) dx = f(c)(b - a)."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Definite Integral of Standard Functions",
+        "description": "The definite integral of standard functions like ∫[a, b] x^n dx, ∫[a, b] cos(x) dx, ∫[a, b] sin(x) dx, and ∫[a, b] e^x dx can be evaluated using the power rule, trigonometric integrals, and exponential integrals."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "Integration of Rational Functions",
+        "description": "To integrate rational functions, use the partial fraction decomposition method. Split the rational function into simpler fractions and integrate each fraction separately. Use the formula: ∫[a, b] (ax + b) / (cx^2 + dx + e) dx = (A/x) + (B/2√d) log|2x√(d) + (c)x^2 + (e)| + C."
+      },
+      {
+        "category": "Common Mistake",
+        "title": "Incorrect Application of Integration Rules",
+        "description": "When integrating functions, remember to check the limits of integration and the constants of integration. Also, be careful when applying the rules of integration, such as the power rule, trigonometric integrals, and exponential integrals."
+      },
+      {
+        "category": "Units to remember",
+        "title": "Units of Integration",
+        "description": "When integrating functions, remember that the unit of integration is the same as the unit of the function being integrated. For example, if the function is in meters per second, the unit of integration will be meters."
+      },
+      {
+        "category": "Most Important Fact",
+        "title": "Integration by Substitution",
+        "description": "Integration by substitution is a method of integration where a function is substituted with another function to simplify the integration process. The formula for integration by substitution is: ∫[a, b] f(g(x)) g'(x) dx = ∫[g(a), g(b)] f(u) du."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Integration by Parts",
+        "description": "Integration by parts is a method of integration where the product of two functions is integrated. The formula for integration by parts is: ∫[a, b] u dv = uv - ∫[a, b] v du."
+      }
+    ]
+  }
+}

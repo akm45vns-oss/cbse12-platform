@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Differential Equations",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:29:24.298Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "A differential equation is an equation involving an unknown function and its derivatives.",
+        "reason": "It involves the unknown function and its derivatives.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because a differential equation by definition involves an unknown function and its derivatives."
+      },
+      {
+        "assertion": "The solution of a differential equation is called its general solution.",
+        "reason": "A general solution contains an arbitrary constant.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because a general solution of a differential equation does contain an arbitrary constant."
+      },
+      {
+        "assertion": "The order of a differential equation is the highest order of the derivative of the unknown function.",
+        "reason": "It determines the degree of complexity of the differential equation.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the order of a differential equation indeed determines its degree of complexity."
+      },
+      {
+        "assertion": "The solution of a homogeneous differential equation is called its general solution.",
+        "reason": "A general solution contains an arbitrary constant.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "This option is correct because a homogeneous differential equation has a particular solution, not just a general solution."
+      },
+      {
+        "assertion": "A linear differential equation is an equation of the form dy/dx + Py = Q, where P and Q are functions of x.",
+        "reason": "It can be written in the form y' + Py = Q.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because a linear differential equation can indeed be written in the form y' + Py = Q."
+      },
+      {
+        "assertion": "The integrating factor of a linear differential equation is a function that when multiplied with the equation makes it exact.",
+        "reason": "It is given by e^(∫P dx).",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the integrating factor is indeed a function that makes the linear differential equation exact, and it is given by e^(∫P dx)."
+      },
+      {
+        "assertion": "A Bernoulli differential equation is a differential equation of the form dy/dx + P(x)y = Q(x)y^n.",
+        "reason": "It can be reduced to a linear equation by substituting y = u/v.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because a Bernoulli differential equation can indeed be reduced to a linear equation by substituting y = u/v."
+      },
+      {
+        "assertion": "An exact differential equation is a differential equation of the form M(x,y)dx + N(x,y)dy = 0.",
+        "reason": "It can be written as ∂M/∂y = ∂N/∂x.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because an exact differential equation can indeed be written as ∂M/∂y = ∂N/∂x."
+      },
+      {
+        "assertion": "The Clairaut's equation is a differential equation of the form y = px + f(p).",
+        "reason": "It is a second-order differential equation.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because Clairaut's equation is actually a first-order differential equation, not a second-order differential equation."
+      },
+      {
+        "assertion": "A Lagrange's linear equation is a differential equation of the form y'' + Py' + Qy = R.",
+        "reason": "It can be solved by using an integrating factor.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because Lagrange's linear equation is not a standard linear differential equation, and it's not solved using an integrating factor."
+      }
+    ],
+    "total": 10
+  }
+}

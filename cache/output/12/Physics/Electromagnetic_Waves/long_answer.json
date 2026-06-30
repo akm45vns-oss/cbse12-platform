@@ -1,0 +1,87 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electromagnetic Waves",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T15:48:18.960Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What are electromagnetic waves? Explain their characteristics and types. How do they differ from mechanical waves?",
+        "marks": 5,
+        "answer": "Electromagnetic waves are waves that are created as a result of vibrations between an electric field and a magnetic field. They are characterized by their frequency, wavelength, speed, and intensity. The types of electromagnetic waves include radio waves, microwaves, infrared radiation, visible light, ultraviolet radiation, X-rays, and gamma rays. Electromagnetic waves differ from mechanical waves in that they do not require a medium to propagate, can travel through a vacuum, and have a wide range of frequencies and wavelengths.",
+        "marking_scheme": [
+          "Definition of electromagnetic waves (1 mark)",
+          "Characteristics of electromagnetic waves (1 mark)",
+          "Types of electromagnetic waves (1 mark)",
+          "Comparison with mechanical waves (2 marks)"
+        ],
+        "topic": "Introduction to Electromagnetic Waves",
+        "is_numerical": false
+      },
+      {
+        "q": "A radio wave of frequency 10 MHz is propagating through a medium. If the speed of the wave is 3 x 10^8 m/s, calculate the wavelength of the wave.",
+        "marks": 5,
+        "answer": "Calculation:\nSpeed of the wave (v) = 3 x 10^8 m/s\nFrequency of the wave (f) = 10 MHz = 10 x 10^6 Hz\nWavelength of the wave (λ) = v / f = (3 x 10^8) / (10 x 10^6) = 30 m",
+        "marking_scheme": [
+          "Formula application (2 marks)",
+          "Calculation (2 marks)",
+          "Final answer (1 mark)"
+        ],
+        "topic": "Speed and Wavelength of Electromagnetic Waves",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the production and propagation of electromagnetic waves. How do they transmit energy from one point to another?",
+        "marks": 5,
+        "answer": "Electromagnetic waves are produced by the vibration of charged particles, such as electrons. The vibration creates an electric field that oscillates at the same frequency as the vibration. This oscillating electric field induces a magnetic field, which in turn induces an electric field, and so on. The resulting wave is an electromagnetic wave that propagates through a medium or through a vacuum. The wave transmits energy from one point to another through the oscillating electric and magnetic fields.",
+        "marking_scheme": [
+          "Production of electromagnetic waves (2 marks)",
+          "Propagation of electromagnetic waves (2 marks)",
+          "Energy transmission (1 mark)"
+        ],
+        "topic": "Production and Propagation of Electromagnetic Waves",
+        "is_numerical": false
+      },
+      {
+        "q": "The wavelength of a X-ray is 1 nm. Calculate the frequency of the X-ray.",
+        "marks": 5,
+        "answer": "Calculation:\nWavelength of the X-ray (λ) = 1 nm = 1 x 10^-9 m\nSpeed of the X-ray (v) = 3 x 10^8 m/s\nFrequency of the X-ray (f) = v / λ = (3 x 10^8) / (1 x 10^-9) = 3 x 10^17 Hz",
+        "marking_scheme": [
+          "Formula application (2 marks)",
+          "Calculation (2 marks)",
+          "Final answer (1 mark)"
+        ],
+        "topic": "Speed and Wavelength of Electromagnetic Waves",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the electromagnetic spectrum? Explain the different types of electromagnetic radiation and their applications.",
+        "marks": 5,
+        "answer": "The electromagnetic spectrum is the range of all possible frequencies of electromagnetic radiation. The different types of electromagnetic radiation include radio waves, microwaves, infrared radiation, visible light, ultraviolet radiation, X-rays, and gamma rays. Each type of radiation has its own unique applications, such as radio waves for communication, microwaves for heating, infrared radiation for thermal imaging, visible light for vision, ultraviolet radiation for disinfection, X-rays for medical imaging, and gamma rays for cancer treatment.",
+        "marking_scheme": [
+          "Definition of electromagnetic spectrum (1 mark)",
+          "Types of electromagnetic radiation (2 marks)",
+          "Applications of electromagnetic radiation (2 marks)"
+        ],
+        "topic": "Electromagnetic Spectrum",
+        "is_numerical": false
+      },
+      {
+        "q": "A beam of light has a wavelength of 500 nm and a speed of 3 x 10^8 m/s. Calculate the frequency of the beam.",
+        "marks": 5,
+        "answer": "Calculation:\nWavelength of the beam (λ) = 500 nm = 500 x 10^-9 m\nSpeed of the beam (v) = 3 x 10^8 m/s\nFrequency of the beam (f) = v / λ = (3 x 10^8) / (500 x 10^-9) = 6 x 10^14 Hz",
+        "marking_scheme": [
+          "Formula application (2 marks)",
+          "Calculation (2 marks)",
+          "Final answer (1 mark)"
+        ],
+        "topic": "Speed and Wavelength of Electromagnetic Waves",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

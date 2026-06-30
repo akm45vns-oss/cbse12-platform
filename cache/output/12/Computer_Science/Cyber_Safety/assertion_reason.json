@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Cyber Safety",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:34:05.897Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Cyberbullying can cause serious emotional distress to the victim.",
+        "reason": "Reason (R): It involves harassment, intimidation, or threats through digital communication.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Cyberbullying can cause emotional distress if it involves harassment or intimidation through digital communication."
+      },
+      {
+        "assertion": "Assertion (A): Firewalls are essential for preventing unauthorized access to a computer network.",
+        "reason": "Reason (R): They monitor and control incoming and outgoing network traffic based on predetermined security rules.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Firewalls act as a barrier between a secure internal network and an untrusted external network, controlling network traffic based on security rules."
+      },
+      {
+        "assertion": "Assertion (A): A strong password should be at least 12 characters long and contain a mix of uppercase and lowercase letters, numbers, and special characters.",
+        "reason": "Reason (R): This makes it harder for hackers to guess or crack the password using brute-force attacks.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A strong password should be at least 12 characters long and contain a mix of uppercase and lowercase letters, numbers, and special characters to prevent brute-force attacks."
+      },
+      {
+        "assertion": "Assertion (A): Phishing attacks involve sending emails that appear to be from a legitimate source, but actually contain malware or viruses.",
+        "reason": "Reason (R): This type of attack aims to trick users into revealing sensitive information such as passwords or credit card numbers.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Phishing attacks involve sending emails that appear to be from a legitimate source, but actually contain malware or viruses, aiming to trick users into revealing sensitive information."
+      },
+      {
+        "assertion": "Assertion (A): Encryption is the process of converting plaintext data into unreadable ciphertext to protect it from unauthorized access.",
+        "reason": "Reason (R): This ensures that only authorized individuals with the decryption key can access the encrypted data.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Encryption is the process of converting plaintext data into unreadable ciphertext to protect it from unauthorized access, ensuring that only authorized individuals with the decryption key can access the encrypted data."
+      },
+      {
+        "assertion": "Assertion (A): A vulnerability is a weakness in a computer system or network that can be exploited by an attacker to gain unauthorized access.",
+        "reason": "Reason (R): It can be caused by a software bug, misconfiguration, or outdated software.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A vulnerability is a weakness in a computer system or network that can be exploited by an attacker to gain unauthorized access, and it can be caused by a software bug, misconfiguration, or outdated software."
+      },
+      {
+        "assertion": "Assertion (A): Two-factor authentication (2FA) adds an extra layer of security by requiring users to provide a second form of verification in addition to a password.",
+        "reason": "Reason (R): This makes it more difficult for attackers to gain access to the system even if they obtain the password.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Two-factor authentication (2FA) adds an extra layer of security by requiring users to provide a second form of verification in addition to a password, making it more difficult for attackers to gain access to the system."
+      },
+      {
+        "assertion": "Assertion (A): A malware is a type of software that is designed to harm or exploit a computer system or network.",
+        "reason": "Reason (R): It can take many forms, including viruses, worms, trojans, and ransomware.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A malware is a type of software that is designed to harm or exploit a computer system or network, and it can take many forms, including viruses, worms, trojans, and ransomware."
+      },
+      {
+        "assertion": "Assertion (A): A proxy server acts as an intermediary between a user's device and the internet, hiding the user's IP address and location.",
+        "reason": "Reason (R): This can help protect the user's identity and location from being tracked by cyber attackers.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A proxy server acts as an intermediary between a user's device and the internet, hiding the user's IP address and location, which can help protect the user's identity and location from being tracked by cyber attackers."
+      },
+      {
+        "assertion": "Assertion (A): A VPN (Virtual Private Network) encrypts internet traffic between a user's device and a VPN server, protecting the user's data from being intercepted by hackers.",
+        "reason": "Reason (R): This creates a secure and encrypted tunnel between the user's device and the VPN server, making it difficult for hackers to intercept or eavesdrop on the user's data.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A VPN (Virtual Private Network) encrypts internet traffic between a user's device and a VPN server, protecting the user's data from being intercepted by hackers, by creating a secure and encrypted tunnel between the user's device and the VPN server."
+      }
+    ],
+    "total": 10
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Linked List (Theory)",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:32:00.997Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A university library has a massive collection of books, and the library wants to implement a system to store and manage the books efficiently. The library decides to use a linked list to store the details of each book, including the title, author, publication year, and availability status. The library has a list of 500 books, and the librarian needs to add new books, remove existing books, and search for books by title or author. The librarian uses a singly linked list to implement this system. However, the library soon realizes that the singly linked list is not efficient enough for its needs. It wants to switch to a doubly linked list to improve the performance of the system. What data structure change would the librarian make to improve the performance of the system?",
+        "questions": [
+          {
+            "q": "What data structure change would the librarian make to improve the performance of the system?",
+            "opts": [
+              "(A) Use an array to store book details",
+              "(B) Switch to a doubly linked list",
+              "(C) Use a stack to store book details",
+              "(D) Use a queue to store book details"
+            ],
+            "ans": "B",
+            "explanation": "The librarian would switch to a doubly linked list to improve the performance of the system because doubly linked lists have advantages such as efficient insertion and deletion of nodes at any position."
+          },
+          {
+            "q": "What is the main advantage of using a doubly linked list?",
+            "opts": [
+              "(A) Efficient insertion and deletion of nodes at any position",
+              "(B) Efficient search of nodes",
+              "(C) Efficient sorting of nodes",
+              "(D) Efficient insertion and deletion of nodes at the beginning and end"
+            ],
+            "ans": "A",
+            "explanation": "The main advantage of using a doubly linked list is efficient insertion and deletion of nodes at any position."
+          },
+          {
+            "q": "Why did the library initially use a singly linked list?",
+            "opts": [
+              "(A) For efficient insertion and deletion of nodes at any position",
+              "(B) For efficient search of nodes",
+              "(C) For efficient sorting of nodes",
+              "(D) Because it was easy to implement"
+            ],
+            "ans": "D",
+            "explanation": "The library initially used a singly linked list because it was easy to implement."
+          },
+          {
+            "q": "What is the disadvantage of using a singly linked list?",
+            "opts": [
+              "(A) Efficient insertion and deletion of nodes at any position",
+              "(B) Inefficient insertion and deletion of nodes at the beginning and end",
+              "(C) Inefficient search of nodes",
+              "(D) Inefficient sorting of nodes"
+            ],
+            "ans": "B",
+            "explanation": "The main disadvantage of using a singly linked list is inefficient insertion and deletion of nodes at the beginning and end."
+          },
+          {
+            "q": "What would be the benefit of using a doubly linked list in this scenario?",
+            "opts": [
+              "(A) Improved search time",
+              "(B) Improved insertion and deletion time",
+              "(C) Improved sorting time",
+              "(D) Improved storage capacity"
+            ],
+            "ans": "B",
+            "explanation": "The benefit of using a doubly linked list in this scenario would be improved insertion and deletion time."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A company is developing a system to manage a list of employees, including their names, employee IDs, department, and salary. The company wants to implement a data structure to store the employee details efficiently. After analyzing the requirements, the company decides to use a linked list to store the employee details. However, the company soon realizes that it wants to implement additional features such as sorting the employees by salary or department. What data structure change would the company make to support these additional features?",
+        "questions": [
+          {
+            "q": "What data structure change would the company make to support sorting the employees by salary or department?",
+            "opts": [
+              "(A) Use an array to store employee details",
+              "(B) Switch to a doubly linked list with a binary search tree index",
+              "(C) Use a stack to store employee details",
+              "(D) Use a queue to store employee details"
+            ],
+            "ans": "B",
+            "explanation": "The company would switch to a doubly linked list with a binary search tree index to support sorting the employees by salary or department."
+          },
+          {
+            "q": "What is the main advantage of using a binary search tree index?",
+            "opts": [
+              "(A) Efficient insertion and deletion of nodes",
+              "(B) Efficient search of nodes",
+              "(C) Efficient sorting of nodes",
+              "(D) Efficient insertion and deletion of nodes at any position"
+            ],
+            "ans": "B",
+            "explanation": "The main advantage of using a binary search tree index is efficient search of nodes."
+          },
+          {
+            "q": "Why did the company initially use a linked list?",
+            "opts": [
+              "(A) For efficient insertion and deletion of nodes at any position",
+              "(B) For efficient search of nodes",
+              "(C) For efficient sorting of nodes",
+              "(D) Because it was easy to implement"
+            ],
+            "ans": "A",
+            "explanation": "The company initially used a linked list because it was efficient for insertion and deletion of nodes at any position."
+          },
+          {
+            "q": "What is the disadvantage of using a linked list for sorting?",
+            "opts": [
+              "(A) Inefficient insertion and deletion of nodes at the beginning and end",
+              "(B) Inefficient search of nodes",
+              "(C) Inefficient sorting of nodes",
+              "(D) Inefficient insertion and deletion of nodes at any position"
+            ],
+            "ans": "C",
+            "explanation": "The main disadvantage of using a linked list for sorting is inefficient sorting of nodes."
+          },
+          {
+            "q": "What would be the benefit of using a binary search tree index in this scenario?",
+            "opts": [
+              "(A) Improved insertion time",
+              "(B) Improved search time",
+              "(C) Improved sorting time",
+              "(D) Improved storage capacity"
+            ],
+            "ans": "B",
+            "explanation": "The benefit of using a binary search tree index in this scenario would be improved search time."
+          }
+        ]
+      }
+    ]
+  }
+}

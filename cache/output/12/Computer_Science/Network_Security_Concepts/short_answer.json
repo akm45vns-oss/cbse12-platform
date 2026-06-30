@@ -1,0 +1,179 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Network Security Concepts",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:33:55.184Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define Network Security.",
+        "marks": 1,
+        "answer": "Network security is the practice of protecting computer networks from unauthorized access, use, disclosure, disruption, modification, or destruction. It involves implementing policies and procedures to prevent, detect, and respond to security threats.",
+        "key_points": [
+          "Protection from unauthorized access",
+          "Prevention of security threats"
+        ],
+        "topic": "Network Security Concepts"
+      },
+      {
+        "q": "What is the purpose of a Firewall in Network Security?",
+        "marks": 1,
+        "answer": "A Firewall acts as a barrier between a trusted network and an untrusted network, blocking unauthorized access and preventing malicious traffic from entering or leaving the network.",
+        "key_points": [
+          "Blocking unauthorized access",
+          "Preventing malicious traffic"
+        ],
+        "topic": "Firewalls"
+      },
+      {
+        "q": "What is the difference between Authentication and Authorization in Network Security?",
+        "marks": 1,
+        "answer": "Authentication is the process of verifying the identity of a user or device, while Authorization is the process of granting or denying access to resources based on the user's identity and permissions.",
+        "key_points": [
+          "Verification of identity",
+          "Granting or denying access"
+        ],
+        "topic": "Authentication and Authorization"
+      },
+      {
+        "q": "What is Encryption and how is it used in Network Security?",
+        "marks": 1,
+        "answer": "Encryption is the process of converting plaintext data into unreadable ciphertext to protect it from unauthorized access. It is used in Network Security to protect data in transit and at rest.",
+        "key_points": [
+          "Conversion of plaintext to ciphertext",
+          "Protection of data in transit and at rest"
+        ],
+        "topic": "Cryptographic Techniques"
+      },
+      {
+        "q": "State the types of Cryptographic Keys.",
+        "marks": 1,
+        "answer": "The two types of cryptographic keys are Symmetric Keys and Asymmetric Keys. Symmetric Keys use the same key for encryption and decryption, while Asymmetric Keys use a pair of keys - a public key for encryption and a private key for decryption.",
+        "key_points": [
+          "Symmetric Keys",
+          "Asymmetric Keys"
+        ],
+        "topic": "Cryptographic Techniques"
+      },
+      {
+        "q": "Explain the concept of Hashing in Network Security.",
+        "marks": 2,
+        "answer": "Hashing is a one-way process that converts data into a fixed-size string of characters, known as a hash value or message digest. It is used in Network Security to verify the integrity and authenticity of data, and to prevent tampering or replay attacks.",
+        "key_points": [
+          "One-way process",
+          "Verification of integrity and authenticity"
+        ],
+        "topic": "Cryptographic Techniques"
+      },
+      {
+        "q": "Describe the process of Digital Signatures in Network Security.",
+        "marks": 2,
+        "answer": "Digital Signatures are a type of asymmetric encryption that uses a private key to create a unique digital fingerprint of a message. The recipient can then verify the signature using the sender's public key to ensure the authenticity and integrity of the message.",
+        "key_points": [
+          "Asymmetric encryption",
+          "Verification of authenticity and integrity"
+        ],
+        "topic": "Cryptographic Techniques"
+      },
+      {
+        "q": "Explain the differences between Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS).",
+        "marks": 2,
+        "answer": "IDS systems detect and report security threats, while IPS systems detect and prevent security threats by blocking malicious traffic. IPS systems are more proactive and can prevent attacks in real-time.",
+        "key_points": [
+          "Detection and reporting",
+          "Detection and prevention"
+        ],
+        "topic": "Intrusion Detection and Prevention Systems"
+      },
+      {
+        "q": "Describe the concept of Secure Sockets Layer (SSL) and Transport Layer Security (TLS).",
+        "marks": 2,
+        "answer": "SSL and TLS are cryptographic protocols that provide secure communication between a client and a server over the internet. They use encryption and digital certificates to establish a secure connection and authenticate the identity of the server.",
+        "key_points": [
+          "Encryption and digital certificates",
+          "Secure connection and authentication"
+        ],
+        "topic": "Secure Communication Protocols"
+      },
+      {
+        "q": "Explain the concept of Virtual Private Networks (VPNs) and their importance in Network Security.",
+        "marks": 2,
+        "answer": "VPNs are a technology that creates a secure and encrypted connection between a client and a server over the internet. They are used to provide secure remote access to a private network, protect sensitive data, and prevent eavesdropping and tampering.",
+        "key_points": [
+          "Secure and encrypted connection",
+          "Protection of sensitive data"
+        ],
+        "topic": "Virtual Private Networks"
+      },
+      {
+        "q": "Describe the importance of Regular Security Audits and Vulnerability Assessments in Network Security.",
+        "marks": 2,
+        "answer": "Regular security audits and vulnerability assessments help identify security weaknesses and vulnerabilities in a network, allowing organizations to take proactive measures to prevent attacks and mitigate risks.",
+        "key_points": [
+          "Identification of security weaknesses",
+          "Proactive measures to prevent attacks"
+        ],
+        "topic": "Security Audits and Vulnerability Assessments"
+      },
+      {
+        "q": "Explain the concept of Secure Coding Practices and their importance in Network Security.",
+        "marks": 3,
+        "answer": "Secure coding practices involve writing code that is secure by design, secure by default, and secure in deployment. This includes using secure protocols, validating user input, and implementing secure authentication and authorization mechanisms.",
+        "key_points": [
+          "Secure by design",
+          "Secure by default",
+          "Secure in deployment"
+        ],
+        "topic": "Secure Coding Practices"
+      },
+      {
+        "q": "Describe the process of Incident Response Planning in Network Security.",
+        "marks": 3,
+        "answer": "Incident Response Planning involves creating a plan that outlines the procedures for responding to a security incident, including identifying the incident, containing the damage, eradicating the threat, recovering from the incident, and post-incident activities.",
+        "key_points": [
+          "Identification of incident",
+          "Containment and eradication",
+          "Recovery and post-incident activities"
+        ],
+        "topic": "Incident Response Planning"
+      },
+      {
+        "q": "Explain the concept of Business Continuity Planning (BCP) in Network Security.",
+        "marks": 3,
+        "answer": "BCP involves creating a plan that outlines the procedures for maintaining business operations in the event of a disaster or security incident, including identifying critical business functions, developing a recovery strategy, and implementing a disaster recovery plan.",
+        "key_points": [
+          "Identification of critical business functions",
+          "Development of recovery strategy",
+          "Implementation of disaster recovery plan"
+        ],
+        "topic": "Business Continuity Planning"
+      },
+      {
+        "q": "Describe the process of Network Security Monitoring (NSM) and its importance in Network Security.",
+        "marks": 3,
+        "answer": "NSM involves monitoring network traffic in real-time to detect and respond to security threats, including identifying potential threats, analyzing network activity, and implementing security measures to prevent attacks.",
+        "key_points": [
+          "Real-time monitoring",
+          "Detection and response to threats",
+          "Implementation of security measures"
+        ],
+        "topic": "Network Security Monitoring"
+      },
+      {
+        "q": "Explain the concept of Penetration Testing in Network Security.",
+        "marks": 3,
+        "answer": "Penetration Testing involves simulating a cyber attack on a network to test its defenses and identify vulnerabilities, including identifying potential entry points, exploiting vulnerabilities, and evaluating the effectiveness of security measures.",
+        "key_points": [
+          "Simulation of cyber attack",
+          "Identification of vulnerabilities",
+          "Evaluation of security measures"
+        ],
+        "topic": "Penetration Testing"
+      }
+    ],
+    "total": 16
+  }
+}

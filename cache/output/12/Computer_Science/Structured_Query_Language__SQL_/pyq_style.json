@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:01:03.890Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the purpose of the COMMIT command in SQL?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The COMMIT command is used to save all the changes made by the current transaction.",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Which of the following SQL commands is used to add a new column to an existing table? (A) ALTER TABLE (B) CREATE TABLE (C) DROP TABLE (D) TRUNCATE TABLE",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "(A) ALTER TABLE",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Explain the difference between the PRIMARY KEY and FOREIGN KEY constraints in SQL.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "PRIMARY KEY uniquely identifies each record in a table, whereas FOREIGN KEY is a field in a table that is the PRIMARY KEY in another table.",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Fill in the blank: The _______ clause is used to specify the conditions for which rows to include in the result set.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "WHERE",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "State True or False: The ROLLBACK command can be used to undo the changes made by the previous COMMIT command.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "False",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "What is the function of the INDEX in SQL?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "An INDEX in SQL is used to speed up the retrieval of data by providing a quick way to locate data.",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Which SQL command is used to remove all the rows from a table without deleting the table itself? (A) DROP TABLE (B) TRUNCATE TABLE (C) DELETE (D) UPDATE",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "(B) TRUNCATE TABLE",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Explain the concept of normalization in SQL and its importance.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "Normalization is the process of organizing data in a database to minimize data redundancy and dependency. It is important because it helps to eliminate data anomalies and improve data integrity.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "State the difference between the INNER JOIN and LEFT JOIN clauses in SQL.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The INNER JOIN clause returns only the rows that have a match in both tables, whereas the LEFT JOIN clause returns all the rows from the left table and the matching rows from the right table.",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Fill in the blank: The _______ statement is used to modify existing data in a table.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "UPDATE",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

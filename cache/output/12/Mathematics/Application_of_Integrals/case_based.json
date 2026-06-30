@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Application of Integrals",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:28:37.804Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The volume of a solid formed by revolving a region about an axis is a fundamental concept in calculus. Consider a tank with a hemispherical bottom of radius 3m and a cylindrical body of height 4m and radius 3m. If the tank is filled with water, we want to find the volume of water displaced by the tank when it is completely submerged in a swimming pool. The tank is revolved about its vertical axis, and we need to find the volume of the resulting solid.",
+        "questions": [
+          {
+            "q": "What type of solid is formed when the tank is revolved about its vertical axis?",
+            "opts": [
+              "Hemispherical shell",
+              "Cylindrical shell",
+              "Hemispherical solid",
+              "Cylindrical solid"
+            ],
+            "ans": "C",
+            "explanation": "The tank is revolved about its vertical axis, resulting in a hemispherical solid."
+          },
+          {
+            "q": "What is the radius of the hemispherical bottom of the tank?",
+            "opts": [
+              "2m",
+              "3m",
+              "4m",
+              "5m"
+            ],
+            "ans": "B",
+            "explanation": "The radius of the hemispherical bottom of the tank is given as 3m."
+          },
+          {
+            "q": "What is the height of the cylindrical body of the tank?",
+            "opts": [
+              "2m",
+              "3m",
+              "4m",
+              "5m"
+            ],
+            "ans": "C",
+            "explanation": "The height of the cylindrical body of the tank is given as 4m."
+          },
+          {
+            "q": "What type of integral is used to find the volume of the solid formed by revolving the tank?",
+            "opts": [
+              "Definite integral",
+              "Indefinite integral",
+              "Double integral",
+              "Triple integral"
+            ],
+            "ans": "A",
+            "explanation": "A definite integral is used to find the volume of the solid formed by revolving the tank."
+          },
+          {
+            "q": "What is the formula to find the volume of the solid formed by revolving the tank?",
+            "opts": [
+              "πr^2h",
+              "2πr^2h",
+              "πr^2h/3",
+              "2πr^2h/3"
+            ],
+            "ans": "B",
+            "explanation": "The formula to find the volume of the solid formed by revolving the tank is 2πr^2h."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A rectangular tank with a square base of side 2m is filled with water to a height of 1.5m. If the tank is revolved about its length, we need to find the volume of the resulting solid.",
+        "questions": [
+          {
+            "q": "What type of solid is formed when the tank is revolved about its length?",
+            "opts": [
+              "Cylindrical shell",
+              "Hemispherical shell",
+              "Rectangular solid",
+              "Cylindrical solid"
+            ],
+            "ans": "D",
+            "explanation": "The tank is revolved about its length, resulting in a cylindrical solid."
+          },
+          {
+            "q": "What is the side of the square base of the tank?",
+            "opts": [
+              "1m",
+              "2m",
+              "3m",
+              "4m"
+            ],
+            "ans": "B",
+            "explanation": "The side of the square base of the tank is given as 2m."
+          },
+          {
+            "q": "What is the height of the water in the tank?",
+            "opts": [
+              "1m",
+              "1.5m",
+              "2m",
+              "2.5m"
+            ],
+            "ans": "B",
+            "explanation": "The height of the water in the tank is given as 1.5m."
+          },
+          {
+            "q": "What type of integral is used to find the volume of the solid formed by revolving the tank?",
+            "opts": [
+              "Definite integral",
+              "Indefinite integral",
+              "Double integral",
+              "Triple integral"
+            ],
+            "ans": "A",
+            "explanation": "A definite integral is used to find the volume of the solid formed by revolving the tank."
+          },
+          {
+            "q": "What is the formula to find the volume of the solid formed by revolving the tank?",
+            "opts": [
+              "πr^2h",
+              "2πr^2h",
+              "πr^2h/3",
+              "2πr^2h/3"
+            ],
+            "ans": "B",
+            "explanation": "The formula to find the volume of the solid formed by revolving the tank is 2πr^2h."
+          }
+        ]
+      }
+    ]
+  }
+}

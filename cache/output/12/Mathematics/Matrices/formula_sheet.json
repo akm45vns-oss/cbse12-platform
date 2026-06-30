@@ -1,0 +1,69 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Matrices",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:16:08.345Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Diagonal Product of a Matrix",
+        "formula": "A = ad - bc (for a 2x2 matrix)",
+        "variables": "a, b, c, d (elements of a 2x2 matrix)",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Determinant of a 3x3 Matrix",
+        "formula": "A = a(ei - fh) - b(di - fg) + c(dh - eg)",
+        "variables": "a, b, c, d, e, f, g, h, i (elements of a 3x3 matrix)",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Inverse of a 2x2 Matrix",
+        "formula": "A^{-1} = \\frac{1}{ad - bc} \\begin{bmatrix} d & -b \\ -c & a \\end{bmatrix}",
+        "variables": "a, b, c, d (elements of a 2x2 matrix)",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Inverse of a 3x3 Matrix",
+        "formula": "A^{-1} = \\frac{1}{A} adj A",
+        "variables": "A (determinant of a 3x3 matrix), adj A (adjoint of a 3x3 matrix)",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Cramer's Rule for 2x2 Matrix",
+        "formula": "x = \\frac{Δx}{Δ}, y = \\frac{Δy}{Δ}",
+        "variables": "Δ (determinant of the matrix), Δx, Δy (determinants of matrices obtained by replacing column 1 with column of constants)",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Cramer's Rule for 3x3 Matrix",
+        "formula": "x = \\frac{Δx}{Δ}, y = \\frac{Δy}{Δ}, z = \\frac{Δz}{Δ}",
+        "variables": "Δ (determinant of the matrix), Δx, Δy, Δz (determinants of matrices obtained by replacing column 1 with column of constants)",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Rank of a Matrix",
+        "formula": "Rank of A = n (where n is the number of non-zero rows or columns in the echelon form of A)",
+        "variables": "A (matrix), n (number of non-zero rows or columns)",
+        "units": "",
+        "notes": ""
+      },
+      {
+        "name": "Equivalence of Matrices",
+        "formula": "A = E B (where E is an elementary matrix)",
+        "variables": "A, B (matrices), E (elementary matrix)",
+        "units": "",
+        "notes": ""
+      }
+    ]
+  }
+}

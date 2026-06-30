@@ -1,0 +1,261 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Continuity and Differentiability",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:27:31.003Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If f(x) = |x|, then f(x) is continuous at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Not continuous"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = |x| is continuous at x = 0 because the left-hand limit, right-hand limit, and the function value at x = 0 are all equal to 0.",
+        "difficulty": "easy",
+        "topic": "Continuity"
+      },
+      {
+        "q": "If f(x) = 1/x^2, then f(x) is continuous at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 0"
+        ],
+        "ans": "B",
+        "explanation": "The function f(x) = 1/x^2 is not continuous at x = 0 because the left-hand limit and right-hand limit do not exist.",
+        "difficulty": "easy",
+        "topic": "Continuity"
+      },
+      {
+        "q": "If f(x) = x^2 sin(1/x), then f(x) is continuous at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 0"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = x^2 sin(1/x) is continuous at x = 0 because the left-hand limit, right-hand limit, and the function value at x = 0 are all equal to 0.",
+        "difficulty": "easy",
+        "topic": "Continuity"
+      },
+      {
+        "q": "If f(x) = |x^2 - 4|, then f(x) is continuous at x = 2?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 2"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = |x^2 - 4| is continuous at x = 2 because the left-hand limit, right-hand limit, and the function value at x = 2 are all equal to 0.",
+        "difficulty": "easy",
+        "topic": "Continuity"
+      },
+      {
+        "q": "If f(x) = x^2, then f(x) is continuous at x = c?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if c ≠ 0"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = x^2 is continuous at x = c because the left-hand limit, right-hand limit, and the function value at x = c are all equal to c^2.",
+        "difficulty": "easy",
+        "topic": "Continuity"
+      },
+      {
+        "q": "If f(x) = sin(x) / x, then f(x) is continuous at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 0"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = sin(x) / x is continuous at x = 0 because the left-hand limit, right-hand limit, and the function value at x = 0 are all equal to 1.",
+        "difficulty": "medium",
+        "topic": "Continuity"
+      },
+      {
+        "q": "If f(x) = |x^2 - 4| / (x^2 + 1), then f(x) is continuous at x = 2?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 2"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = |x^2 - 4| / (x^2 + 1) is continuous at x = 2 because the left-hand limit, right-hand limit, and the function value at x = 2 are all equal to 0.",
+        "difficulty": "medium",
+        "topic": "Continuity"
+      },
+      {
+        "q": "If f(x) = 1 / (x^2 - 4), then f(x) is continuous at x = 2?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 2"
+        ],
+        "ans": "B",
+        "explanation": "The function f(x) = 1 / (x^2 - 4) is not continuous at x = 2 because the left-hand limit and right-hand limit do not exist.",
+        "difficulty": "medium",
+        "topic": "Continuity"
+      },
+      {
+        "q": "If f(x) = e^x, then f(x) is differentiable at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 0"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = e^x is differentiable at x = 0 because the derivative exists.",
+        "difficulty": "medium",
+        "topic": "Differentiability"
+      },
+      {
+        "q": "If f(x) = |x|, then f(x) is differentiable at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 0"
+        ],
+        "ans": "B",
+        "explanation": "The function f(x) = |x| is not differentiable at x = 0 because the derivative does not exist.",
+        "difficulty": "medium",
+        "topic": "Differentiability"
+      },
+      {
+        "q": "If f(x) = 1 / x, then f(x) is differentiable at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 0"
+        ],
+        "ans": "B",
+        "explanation": "The function f(x) = 1 / x is not differentiable at x = 0 because the derivative does not exist.",
+        "difficulty": "medium",
+        "topic": "Differentiability"
+      },
+      {
+        "q": "If f(x) = x^2 sin(1/x), then f(x) is differentiable at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 0"
+        ],
+        "ans": "B",
+        "explanation": "The function f(x) = x^2 sin(1/x) is not differentiable at x = 0 because the derivative does not exist.",
+        "difficulty": "medium",
+        "topic": "Differentiability"
+      },
+      {
+        "q": "If f(x) = e^(1/x), then f(x) is differentiable at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 0"
+        ],
+        "ans": "B",
+        "explanation": "The function f(x) = e^(1/x) is not differentiable at x = 0 because the derivative does not exist.",
+        "difficulty": "hard",
+        "topic": "Differentiability"
+      },
+      {
+        "q": "If f(x) = x^2 / (x - 1), then f(x) is differentiable at x = 1?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 1"
+        ],
+        "ans": "B",
+        "explanation": "The function f(x) = x^2 / (x - 1) is not differentiable at x = 1 because the derivative does not exist.",
+        "difficulty": "hard",
+        "topic": "Differentiability"
+      },
+      {
+        "q": "If f(x) = 1 / (x^2 + 1), then f(x) is differentiable at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 0"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = 1 / (x^2 + 1) is differentiable at x = 0 because the derivative exists.",
+        "difficulty": "hard",
+        "topic": "Differentiability"
+      },
+      {
+        "q": "If f(x) = sin(x) / (x^2 + 1), then f(x) is differentiable at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 0"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = sin(x) / (x^2 + 1) is differentiable at x = 0 because the derivative exists.",
+        "difficulty": "hard",
+        "topic": "Differentiability"
+      },
+      {
+        "q": "If f(x) = e^x sin(x), then f(x) is differentiable at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 0"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = e^x sin(x) is differentiable at x = 0 because the derivative exists.",
+        "difficulty": "hard",
+        "topic": "Differentiability"
+      },
+      {
+        "q": "If f(x) = x^2 sin(x) / (x^2 + 1), then f(x) is differentiable at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 0"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = x^2 sin(x) / (x^2 + 1) is differentiable at x = 0 because the derivative exists.",
+        "difficulty": "hard",
+        "topic": "Differentiability"
+      },
+      {
+        "q": "If f(x) = sin(x) / (x^2 + 1)^2, then f(x) is differentiable at x = 0?",
+        "opts": [
+          "(A) Yes",
+          "(B) No",
+          "(C) Not defined",
+          "(D) Continous if x ≠ 0"
+        ],
+        "ans": "A",
+        "explanation": "The function f(x) = sin(x) / (x^2 + 1)^2 is differentiable at x = 0 because the derivative exists.",
+        "difficulty": "hard",
+        "topic": "Differentiability"
+      }
+    ],
+    "total": 19
+  }
+}

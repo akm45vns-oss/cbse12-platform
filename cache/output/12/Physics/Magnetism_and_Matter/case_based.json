@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Magnetism and Matter",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:14:55.396Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A magnetic resonance imaging (MRI) machine uses a strong magnetic field to generate detailed images of the body's internal structures. The magnetic field is produced by a large coil of wire carrying a high current. The coil is designed to produce a uniform magnetic field within the machine. To ensure accurate imaging, the MRI machine must be shielded from external magnetic fields. The Earth's magnetic field, in particular, can interfere with the machine's operation. As a result, the MRI machine is typically installed in a specially designed room with magnetic shielding.",
+        "questions": [
+          {
+            "q": "What is the primary purpose of the magnetic field in an MRI machine?",
+            "opts": [
+              "(A) To generate heat",
+              "(B) To produce X-rays",
+              "(C) To generate detailed images of the body's internal structures",
+              "(D) To treat cancer"
+            ],
+            "ans": "C",
+            "explanation": "The primary purpose of the magnetic field in an MRI machine is to generate detailed images of the body's internal structures."
+          },
+          {
+            "q": "Why is the MRI machine shielded from external magnetic fields?",
+            "opts": [
+              "(A) To increase the strength of the magnetic field",
+              "(B) To reduce the cost of the machine",
+              "(C) To ensure accurate imaging",
+              "(D) To reduce the size of the machine"
+            ],
+            "ans": "C",
+            "explanation": "The MRI machine is shielded from external magnetic fields to ensure accurate imaging. External magnetic fields can interfere with the machine's operation and affect the quality of the images produced."
+          },
+          {
+            "q": "What is the effect of the Earth's magnetic field on the MRI machine?",
+            "opts": [
+              "(A) It increases the strength of the magnetic field",
+              "(B) It has no effect on the machine",
+              "(C) It interferes with the machine's operation",
+              "(D) It reduces the cost of the machine"
+            ],
+            "ans": "C",
+            "explanation": "The Earth's magnetic field can interfere with the operation of the MRI machine, which is why the machine is typically installed in a specially designed room with magnetic shielding."
+          },
+          {
+            "q": "What is the purpose of the coil of wire in the MRI machine?",
+            "opts": [
+              "(A) To produce X-rays",
+              "(B) To generate heat",
+              "(C) To produce a uniform magnetic field",
+              "(D) To treat cancer"
+            ],
+            "ans": "C",
+            "explanation": "The coil of wire in the MRI machine is designed to produce a uniform magnetic field within the machine."
+          },
+          {
+            "q": "Why is the MRI machine installed in a specially designed room?",
+            "opts": [
+              "(A) To reduce the cost of the machine",
+              "(B) To increase the strength of the magnetic field",
+              "(C) To provide a comfortable environment for patients",
+              "(D) To provide magnetic shielding"
+            ],
+            "ans": "D",
+            "explanation": "The MRI machine is installed in a specially designed room to provide magnetic shielding and prevent external magnetic fields from interfering with the machine's operation."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A compass is a navigation tool that uses a magnetic needle to indicate direction. The magnetic needle is balanced on a pivot and is free to rotate in the horizontal plane. When the compass is placed near a magnet, the magnetic needle is deflected from its normal position, which is towards the Earth's magnetic north pole. The deflection of the needle can be used to determine the strength and direction of the magnetic field. The compass can also be used to determine the presence of other magnetic materials, such as iron or nickel.",
+        "questions": [
+          {
+            "q": "What is the purpose of the magnetic needle in a compass?",
+            "opts": [
+              "(A) To indicate the time",
+              "(B) To indicate direction",
+              "(C) To measure temperature",
+              "(D) To measure pressure"
+            ],
+            "ans": "B",
+            "explanation": "The magnetic needle in a compass is used to indicate direction, specifically the direction of the Earth's magnetic north pole."
+          },
+          {
+            "q": "What happens to the magnetic needle when the compass is placed near a magnet?",
+            "opts": [
+              "(A) It remains in its normal position",
+              "(B) It is deflected from its normal position",
+              "(C) It becomes demagnetized",
+              "(D) It becomes magnetized"
+            ],
+            "ans": "B",
+            "explanation": "When the compass is placed near a magnet, the magnetic needle is deflected from its normal position due to the interaction between the magnetic field of the magnet and the magnetic needle."
+          },
+          {
+            "q": "What can be determined using the deflection of the magnetic needle?",
+            "opts": [
+              "(A) The strength and direction of the gravitational field",
+              "(B) The strength and direction of the magnetic field",
+              "(C) The temperature of the surroundings",
+              "(D) The pressure of the surroundings"
+            ],
+            "ans": "B",
+            "explanation": "The deflection of the magnetic needle can be used to determine the strength and direction of the magnetic field."
+          },
+          {
+            "q": "What is the normal position of the magnetic needle in a compass?",
+            "opts": [
+              "(A) Towards the Earth's magnetic south pole",
+              "(B) Towards the Earth's magnetic north pole",
+              "(C) Towards the equator",
+              "(D) Towards the poles"
+            ],
+            "ans": "B",
+            "explanation": "The normal position of the magnetic needle in a compass is towards the Earth's magnetic north pole."
+          },
+          {
+            "q": "What can be detected using a compass?",
+            "opts": [
+              "(A) The presence of electric fields",
+              "(B) The presence of magnetic materials",
+              "(C) The presence of gravitational fields",
+              "(D) The presence of radiation"
+            ],
+            "ans": "B",
+            "explanation": "A compass can be used to detect the presence of magnetic materials, such as iron or nickel, due to the interaction between the magnetic field of the compass and the magnetic material."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Linked List (Theory)",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:32:03.582Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a Linked List?",
+        "marks": 1,
+        "answer": "A Linked List is a linear data structure where each element is a separate object, known as a node. Each node contains two items: the data and a reference (or link) to the next node in the sequence.",
+        "key_points": [
+          "Definition",
+          "Components of a node"
+        ],
+        "topic": "Introduction"
+      },
+      {
+        "q": "What is the advantage of using Linked Lists over Arrays?",
+        "marks": 1,
+        "answer": "The advantage of using Linked Lists over Arrays is that Linked Lists can grow or shrink dynamically, with no need for a fixed size, whereas Arrays have a fixed size.",
+        "key_points": [
+          "Advantages of Linked Lists",
+          "Comparison with Arrays"
+        ],
+        "topic": "Advantages and Disadvantages"
+      },
+      {
+        "q": "What is a Singly Linked List?",
+        "marks": 1,
+        "answer": "A Singly Linked List is a type of Linked List where each node contains a reference to the next node in the sequence, but not to the previous node.",
+        "key_points": [
+          "Types of Linked Lists",
+          "Singly Linked List"
+        ],
+        "topic": "Types of Linked Lists"
+      },
+      {
+        "q": "What is the time complexity of inserting a new node at the beginning of a Linked List?",
+        "marks": 1,
+        "answer": "The time complexity of inserting a new node at the beginning of a Linked List is O(1), as only the head node needs to be updated.",
+        "key_points": [
+          "Insertion operations",
+          "Time complexity"
+        ],
+        "topic": "Insertion and Deletion Operations"
+      },
+      {
+        "q": "What is the time complexity of deleting a node from a Linked List?",
+        "marks": 1,
+        "answer": "The time complexity of deleting a node from a Linked List is O(n), as we need to traverse the entire list to find the node to be deleted.",
+        "key_points": [
+          "Deletion operations",
+          "Time complexity"
+        ],
+        "topic": "Insertion and Deletion Operations"
+      },
+      {
+        "q": "What is a Doubly Linked List?",
+        "marks": 1,
+        "answer": "A Doubly Linked List is a type of Linked List where each node contains references to both the next node and the previous node in the sequence.",
+        "key_points": [
+          "Types of Linked Lists",
+          "Doubly Linked List"
+        ],
+        "topic": "Types of Linked Lists"
+      },
+      {
+        "q": "Describe the steps involved in traversing a Linked List.",
+        "marks": 2,
+        "answer": "The steps involved in traversing a Linked List are: 1) Initialize a pointer to the head node, 2) Traverse the list by moving the pointer to the next node in the sequence, 3) Repeat step 2 until the end of the list is reached.",
+        "key_points": [
+          "Traversing a Linked List",
+          "Steps involved"
+        ],
+        "topic": "Traversal"
+      },
+      {
+        "q": "What is the difference between a Linked List and an Array?",
+        "marks": 2,
+        "answer": "The main difference between a Linked List and an Array is that a Linked List can grow or shrink dynamically, with no need for a fixed size, whereas an Array has a fixed size. Additionally, a Linked List can be more efficient for inserting and deleting nodes than an Array.",
+        "key_points": [
+          "Comparison with Arrays",
+          "Advantages of Linked Lists"
+        ],
+        "topic": "Advantages and Disadvantages"
+      },
+      {
+        "q": "Describe the advantages and disadvantages of using a Linked List.",
+        "marks": 2,
+        "answer": "The advantages of using a Linked List are: 1) Dynamic memory allocation, 2) Efficient insertion and deletion of nodes. The disadvantages are: 1) More complex implementation, 2) More memory usage.",
+        "key_points": [
+          "Advantages and Disadvantages",
+          "Linked List characteristics"
+        ],
+        "topic": "Advantages and Disadvantages"
+      },
+      {
+        "q": "Explain how to implement a Linked List in C.",
+        "marks": 3,
+        "answer": "To implement a Linked List in C, we need to create a struct to represent a node, with fields for the data and a pointer to the next node. We also need to create functions for inserting and deleting nodes, as well as traversing the list.",
+        "key_points": [
+          "Implementation in C",
+          "Struct representation",
+          "Functions for insertion, deletion, and traversal"
+        ],
+        "topic": "Implementation"
+      },
+      {
+        "q": "What is the time complexity of searching for a node in a Linked List?",
+        "marks": 3,
+        "answer": "The time complexity of searching for a node in a Linked List is O(n), as we need to traverse the entire list to find the node. However, if we use a hash table to store the nodes, the time complexity can be reduced to O(1).",
+        "key_points": [
+          "Search operation",
+          "Time complexity",
+          "Hash table optimization"
+        ],
+        "topic": "Search Operations"
+      },
+      {
+        "q": "Describe the steps involved in deleting a node from a Linked List.",
+        "marks": 3,
+        "answer": "The steps involved in deleting a node from a Linked List are: 1) Find the node to be deleted, 2) Update the previous node's reference to skip the node to be deleted, 3) Update the next node's reference to skip the node to be deleted, 4) Free the memory allocated to the node to be deleted.",
+        "key_points": [
+          "Deletion operation",
+          "Steps involved",
+          "Memory management"
+        ],
+        "topic": "Insertion and Deletion Operations"
+      },
+      {
+        "q": "Explain how to optimize the search operation in a Linked List.",
+        "marks": 3,
+        "answer": "To optimize the search operation in a Linked List, we can use a hash table to store the nodes, with the key being the node's value and the value being a pointer to the node. This allows us to search for a node in O(1) time.",
+        "key_points": [
+          "Search operation",
+          "Hash table optimization",
+          "Time complexity"
+        ],
+        "topic": "Search Operations"
+      },
+      {
+        "q": "Describe the advantages and disadvantages of using a Doubly Linked List.",
+        "marks": 3,
+        "answer": "The advantages of using a Doubly Linked List are: 1) Efficient traversal in both forward and backward directions, 2) Efficient insertion and deletion of nodes at arbitrary positions. The disadvantages are: 1) More complex implementation, 2) More memory usage.",
+        "key_points": [
+          "Advantages and Disadvantages",
+          "Doubly Linked List characteristics"
+        ],
+        "topic": "Types of Linked Lists"
+      },
+      {
+        "q": "Explain how to implement a Doubly Linked List in C.",
+        "marks": 3,
+        "answer": "To implement a Doubly Linked List in C, we need to create a struct to represent a node, with fields for the data, a pointer to the next node, and a pointer to the previous node. We also need to create functions for inserting and deleting nodes, as well as traversing the list in both forward and backward directions.",
+        "key_points": [
+          "Implementation in C",
+          "Struct representation",
+          "Functions for insertion, deletion, and traversal"
+        ],
+        "topic": "Implementation"
+      }
+    ],
+    "total": 15
+  }
+}

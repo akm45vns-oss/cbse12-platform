@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Wave Optics",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:09:24.904Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A beam of light from a laser is incident on a glass slab of thickness 2 cm. The refractive index of glass is 1.5. A screen is placed behind the slab to detect the interference pattern formed by the light waves. After some time, the screen shows an interference pattern with a bright fringe at a distance of 1.2 cm from the central fringe. What can be concluded from this observation?",
+        "questions": [
+          {
+            "q": "What type of interference is observed in this experiment?",
+            "opts": [
+              "(A) Young's double-slit interference",
+              "(B) Interference in thin films",
+              "(C) Interference by division of amplitude",
+              "(D) Interference by division of wavefront"
+            ],
+            "ans": "B",
+            "explanation": "The experiment is performed using a glass slab, which is a thin film. The interference observed is due to the reflection of light from the top and bottom surfaces of the glass slab."
+          },
+          {
+            "q": "What is the wavelength of the light used in the experiment?",
+            "opts": [
+              "(A) 500 nm",
+              "(B) 600 nm",
+              "(C) 700 nm",
+              "(D) 800 nm"
+            ],
+            "ans": "B",
+            "explanation": "The wavelength of light can be calculated using the formula: dsinθ = mλ, where d is the thickness of the glass slab, θ is the angle of the bright fringe, m is the order of the fringe, and λ is the wavelength of light."
+          },
+          {
+            "q": "What is the significance of the bright fringe appearing at a distance of 1.2 cm from the central fringe?",
+            "opts": [
+              "(A) It indicates the presence of a defect in the glass slab",
+              "(B) It shows the formation of a dark fringe",
+              "(C) It indicates the wavelength of light",
+              "(D) It shows the formation of a bright fringe due to interference"
+            ],
+            "ans": "D",
+            "explanation": "The appearance of a bright fringe at a distance of 1.2 cm from the central fringe indicates the formation of a bright fringe due to interference between the light waves reflected from the top and bottom surfaces of the glass slab."
+          },
+          {
+            "q": "What can be calculated using the data given in the problem?",
+            "opts": [
+              "(A) Wavelength of light",
+              "(B) Refractive index of glass",
+              "(C) Thickness of glass slab",
+              "(D) All of the above"
+            ],
+            "ans": "A",
+            "explanation": "The wavelength of light can be calculated using the formula: dsinθ = mλ, where d is the thickness of the glass slab, θ is the angle of the bright fringe, m is the order of the fringe, and λ is the wavelength of light."
+          },
+          {
+            "q": "What is the condition for constructive interference in thin films?",
+            "opts": [
+              "(A) Path difference = (2m + 1)λ/2",
+              "(B) Path difference = 2mλ",
+              "(C) Path difference = (2m - 1)λ/2",
+              "(D) Path difference = mλ"
+            ],
+            "ans": "A",
+            "explanation": "The condition for constructive interference in thin films is that the path difference between the light waves reflected from the top and bottom surfaces of the film should be equal to (2m + 1)λ/2, where m is an integer and λ is the wavelength of light."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A monochromatic light beam is incident on a diffraction grating with 6000 lines per meter. The diffraction grating is placed in front of a screen to detect the diffraction pattern. The angle of the first-order maximum is found to be 30°. What can be concluded from this observation?",
+        "questions": [
+          {
+            "q": "What type of diffraction is observed in this experiment?",
+            "opts": [
+              "(A) Single-slit diffraction",
+              "(B) Diffraction by a circular aperture",
+              "(C) Diffraction by a rectangular aperture",
+              "(D) Diffraction by a diffraction grating"
+            ],
+            "ans": "D",
+            "explanation": "The experiment is performed using a diffraction grating, which consists of a large number of parallel slits. The diffraction observed is due to the diffraction by a diffraction grating."
+          },
+          {
+            "q": "What is the equation for the diffraction grating?",
+            "opts": [
+              "(A) dsinθ = mλ",
+              "(B) dsinθ = (m + 1)λ",
+              "(C) dsinθ = (m - 1)λ",
+              "(D) dsinθ = 2mλ"
+            ],
+            "ans": "A",
+            "explanation": "The equation for the diffraction grating is given by dsinθ = mλ, where d is the distance between the slits, θ is the angle of the maximum, m is an integer, and λ is the wavelength of light."
+          },
+          {
+            "q": "What can be calculated using the data given in the problem?",
+            "opts": [
+              "(A) Wavelength of light",
+              "(B) Distance between the slits",
+              "(C) Order of the maximum",
+              "(D) All of the above"
+            ],
+            "ans": "A",
+            "explanation": "The wavelength of light can be calculated using the equation dsinθ = mλ, where d is the distance between the slits, θ is the angle of the maximum, m is an integer, and λ is the wavelength of light."
+          },
+          {
+            "q": "What is the significance of the angle of the first-order maximum being 30°?",
+            "opts": [
+              "(A) It indicates the presence of a defect in the diffraction grating",
+              "(B) It shows the formation of a dark fringe",
+              "(C) It indicates the wavelength of light",
+              "(D) It shows the formation of a bright fringe due to diffraction"
+            ],
+            "ans": "C",
+            "explanation": "The angle of the first-order maximum being 30° indicates the wavelength of light, which can be calculated using the equation dsinθ = mλ, where d is the distance between the slits, θ is the angle of the maximum, m is an integer, and λ is the wavelength of light."
+          },
+          {
+            "q": "What is the condition for the first-order maximum in a diffraction grating?",
+            "opts": [
+              "(A) dsinθ = mλ",
+              "(B) dsinθ = (m + 1)λ",
+              "(C) dsinθ = (m - 1)λ",
+              "(D) dsinθ = 2mλ"
+            ],
+            "ans": "A",
+            "explanation": "The condition for the first-order maximum in a diffraction grating is that the path difference between the light waves diffracted by the slits should be equal to mλ, where m is an integer and λ is the wavelength of light."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Solutions",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:02:30.028Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Molarity (M)",
+        "formula": "M = (Number of Moles of Solute / Volume of Solution (in litres))",
+        "variables": "Number of Moles of Solute, Volume of Solution (in litres)",
+        "units": "mol/dm³ or mol/L",
+        "notes": "[for gaseous and liquid solutions]"
+      },
+      {
+        "name": "2. Molality (m)",
+        "formula": "m = (Number of Moles of Solute / Mass of Solvent (in kg))",
+        "variables": "Number of Moles of Solute, Mass of Solvent (in kg)",
+        "units": "mol/kg",
+        "notes": "[for solutions in which the volume of the solvent changes appreciably with temperature]"
+      },
+      {
+        "name": "3. Mass Percentage",
+        "formula": "% w/w = (Mass of Solute / Total Mass of Solution) × 100",
+        "variables": "Mass of Solute, Total Mass of Solution",
+        "units": "%",
+        "notes": "[for all types of solutions]"
+      },
+      {
+        "name": "4. Volume Percentage",
+        "formula": "% v/v = (Volume of Solute / Total Volume of Solution) × 100",
+        "variables": "Volume of Solute, Total Volume of Solution",
+        "units": "%",
+        "notes": "[for solutions in which the solute and solvent are both liquids]"
+      },
+      {
+        "name": "5. Mole Fraction (X)",
+        "formula": "X = (Number of Moles of Solute / Total Number of Moles)",
+        "variables": "Number of Moles of Solute, Total Number of Moles",
+        "units": "unitless",
+        "notes": "[for ideal solutions]"
+      },
+      {
+        "name": "6. Raoult's Law",
+        "formula": "P = P° × X",
+        "variables": "P (partial pressure), P° (vapor pressure of pure solvent), X (mole fraction of solvent)",
+        "units": "Pa or atm",
+        "notes": "[for ideal solutions, where X <<< 1]"
+      },
+      {
+        "name": "7. Henry's Law",
+        "formula": "P = k × C",
+        "variables": "P (partial pressure), k (Henry's Law constant), C (concentration of gas in solution)",
+        "units": "Pa or atm, mol/m³",
+        "notes": "[for dilute solutions]"
+      }
+    ]
+  }
+}

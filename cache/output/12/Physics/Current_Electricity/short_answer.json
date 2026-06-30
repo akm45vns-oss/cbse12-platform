@@ -1,0 +1,165 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Current Electricity",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:08:08.126Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define resistance of a conductor.",
+        "marks": 1,
+        "answer": "The opposition offered by a conductor to the flow of current is called its resistance. It is measured in ohms.",
+        "key_points": [
+          "Opposition offered by a conductor",
+          "Measuring unit is ohms"
+        ],
+        "topic": "Resistance"
+      },
+      {
+        "q": "State Ohm's law.",
+        "marks": 1,
+        "answer": "The current flowing through a conductor is directly proportional to the potential difference across its ends and inversely proportional to its resistance. Mathematically, V ∝ I and V = IR.",
+        "key_points": [
+          "V ∝ I",
+          "V = IR"
+        ],
+        "topic": "Ohm's Law"
+      },
+      {
+        "q": "What is meant by the term 'current density'?",
+        "marks": 1,
+        "answer": "The current flowing per unit area of the conductor is called the current density.",
+        "key_points": [
+          "Current per unit area",
+          "Unit is amperes per square meter"
+        ],
+        "topic": "Current Density"
+      },
+      {
+        "q": "State Kirchhoff's first law.",
+        "marks": 1,
+        "answer": "The algebraic sum of currents entering a junction is equal to the algebraic sum of currents leaving the junction.",
+        "key_points": [
+          "Algebraic sum of currents",
+          "Entering and leaving a junction"
+        ],
+        "topic": "Kirchhoff's Laws"
+      },
+      {
+        "q": "What is the difference between a conductor and an insulator?",
+        "marks": 1,
+        "answer": "A conductor allows the flow of electric current, whereas an insulator does not.",
+        "key_points": [
+          "Conductor: allows current flow",
+          "Insulator: does not allow current flow"
+        ],
+        "topic": "Conductors and Insulators"
+      },
+      {
+        "q": "Derive the expression for the potential gradient.",
+        "marks": 2,
+        "answer": "Potential gradient = Potential difference / Length of conductor = V / l.",
+        "key_points": [
+          "Potential difference",
+          "Length of conductor"
+        ],
+        "topic": "Potential Gradient"
+      },
+      {
+        "q": "Explain the concept of equivalent resistance of a combination of resistors connected in series.",
+        "marks": 2,
+        "answer": "The equivalent resistance of resistors connected in series is the sum of individual resistances. R_eq = R1 + R2 + ... + Rn.",
+        "key_points": [
+          "Sum of individual resistances",
+          "R_eq = R1 + R2 + ... + Rn"
+        ],
+        "topic": "Series Combination of Resistors"
+      },
+      {
+        "q": "A wire of resistance 5 ohms is stretched to twice its original length. What happens to its resistance?",
+        "marks": 2,
+        "answer": "The resistance of the wire increases to 10 ohms.",
+        "key_points": [
+          "Original resistance: 5 ohms",
+          "New resistance: 10 ohms"
+        ],
+        "topic": "Effect of Stretching a Wire"
+      },
+      {
+        "q": "Derive the expression for the current passing through a conductor when connected in parallel.",
+        "marks": 2,
+        "answer": "For resistors connected in parallel, 1/R_eq = 1/R1 + 1/R2 + ... + 1/Rn.",
+        "key_points": [
+          "1/R_eq = 1/R1 + 1/R2 + ... + 1/Rn",
+          "Current in each branch"
+        ],
+        "topic": "Parallel Combination of Resistors"
+      },
+      {
+        "q": "A battery of e.m.f. 12 V is connected across a wire of resistance 4 ohms. What is the current in the wire?",
+        "marks": 2,
+        "answer": "Using Ohm's law, V = IR, we get I = V/R = 12/4 = 3 A.",
+        "key_points": [
+          "V = IR",
+          "I = V/R",
+          "Current in the wire: 3 A"
+        ],
+        "topic": "Ohm's Law in Practice"
+      },
+      {
+        "q": "What is the potential difference across each of the resistors in the circuit shown? Given R1 = 2 ohms, R2 = 4 ohms, and the current flowing through each resistor is 0.5 A.",
+        "marks": 3,
+        "answer": "Using Ohm's law, V = IR, we get V1 = I1R1 = 0.5 * 2 = 1 V and V2 = I2R2 = 0.5 * 4 = 2 V.",
+        "key_points": [
+          "Ohm's law: V = IR",
+          "Potential difference across each resistor"
+        ],
+        "topic": "Potential Difference Across Resistors"
+      },
+      {
+        "q": "Find the equivalent resistance of the following circuit.",
+        "marks": 3,
+        "answer": "The equivalent resistance is given by R_eq = (R1 * R2) / (R1 + R2). Substituting the values, we get R_eq = (2 * 4) / (2 + 4) = 8/6 = 4/3 ohms.",
+        "key_points": [
+          "Equivalent resistance in parallel circuits",
+          "R_eq = (R1 * R2) / (R1 + R2)"
+        ],
+        "topic": "Equivalent Resistance in Parallel Circuits"
+      },
+      {
+        "q": "A battery of e.m.f. 10 V and internal resistance 2 ohms is connected across a wire of resistance 6 ohms. What is the current in the circuit?",
+        "marks": 3,
+        "answer": "The net resistance in the circuit is (6 + 2) ohms = 8 ohms. Using Ohm's law, V = IR, we get I = V/R = 10/8 = 1.25 A.",
+        "key_points": [
+          "Net resistance in the circuit",
+          "Ohm's law: V = IR"
+        ],
+        "topic": "Net Resistance in the Circuit"
+      },
+      {
+        "q": "A current of 0.5 A flows through a resistor of 4 ohms. What is the power dissipated in the resistor?",
+        "marks": 3,
+        "answer": "Using the formula P = I^2R, we get P = (0.5)^2 * 4 = 1 W.",
+        "key_points": [
+          "Power dissipated in a resistor",
+          "P = I^2R"
+        ],
+        "topic": "Power Dissipated in a Resistor"
+      },
+      {
+        "q": "A wire of resistance 5 ohms and length 2 meters is stretched to four times its original length. What is the new resistance of the wire?",
+        "marks": 3,
+        "answer": "The new length of the wire is 8 meters. Since the cross-sectional area remains the same, the new resistance is given by R_new = (ρ * l_new) / A = (ρ * 8) / A = 4 * (ρ * 2) / A = 4 * R, where ρ is the resistivity of the wire and A is its cross-sectional area.",
+        "key_points": [
+          "New length of the wire",
+          "New resistance"
+        ],
+        "topic": "Effect of Stretching a Wire"
+      }
+    ],
+    "total": 15
+  }
+}

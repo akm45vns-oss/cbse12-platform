@@ -1,0 +1,93 @@
+{
+  "class": "12",
+  "subject": "Physical Education",
+  "chapter": "Measurement and Evaluation in Sports",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T16:08:42.706Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the importance of measurement and evaluation in sports? Explain the role of feedback in the learning process.",
+        "marks": 5,
+        "answer": "Measurement and evaluation in sports are crucial for assessing the performance of athletes and identifying areas for improvement. Feedback plays a vital role in the learning process as it helps athletes to understand their strengths and weaknesses, set realistic goals, and develop strategies for improvement. Effective feedback can be provided through various means, including verbal and non-verbal cues, video analysis, and statistical data.",
+        "marking_scheme": [
+          "Importance of measurement and evaluation in sports (1 mark)",
+          "Role of feedback in the learning process (2 marks)",
+          "Examples of effective feedback (1 mark)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Introduction to Measurement and Evaluation",
+        "is_numerical": false
+      },
+      {
+        "q": "A cricket player scores 320 runs in 5 matches with a standard deviation of 20. Calculate the coefficient of variation and interpret the result.",
+        "marks": 5,
+        "answer": "Calculation: \nCo-efficient of Variation (CV) = (σ / x̄) * 100 \nWhere, σ = standard deviation = 20, x̄ = mean = 320 / 5 = 64 \nCV = (20 / 64) * 100 = 31.25 \nThe result indicates that the cricket player's performance is moderately consistent, with a coefficient of variation of 31.25.",
+        "marking_scheme": [
+          "Calculation of mean (1 mark)",
+          "Calculation of coefficient of variation (2 marks)",
+          "Interpretation of the result (1 mark)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Statistical Methods in Sports",
+        "is_numerical": true
+      },
+      {
+        "q": "What are the different types of tests used in sports to evaluate the physical fitness of athletes? Explain the characteristics of each type.",
+        "marks": 5,
+        "answer": "The different types of tests used in sports to evaluate physical fitness include anthropometric tests, physiological tests, and performance tests. Anthropometric tests measure body size and composition, physiological tests assess the functioning of the body's systems, and performance tests evaluate athletic ability. Each type of test has its own characteristics, such as the use of specialized equipment, the level of physical exertion required, and the type of data collected.",
+        "marking_scheme": [
+          "Types of tests (1 mark)",
+          "Characteristics of anthropometric tests (1 mark)",
+          "Characteristics of physiological tests (1 mark)",
+          "Characteristics of performance tests (1 mark)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Types of Tests in Sports",
+        "is_numerical": false
+      },
+      {
+        "q": "A basketball player makes 80 successful free throws out of 120 attempts. Calculate the percentage of successful free throws and the probability of making a free throw.",
+        "marks": 5,
+        "answer": "Calculation: \nPercentage of successful free throws = (Number of successful throws / Total attempts) * 100 \n= (80 / 120) * 100 \n= 66.67% \nProbability of making a free throw = Number of successful throws / Total attempts \n= 80 / 120 \n= 0.67 \nThe result indicates that the basketball player has a success rate of 66.67% and a probability of 0.67 of making a free throw.",
+        "marking_scheme": [
+          "Calculation of percentage (2 marks)",
+          "Calculation of probability (2 marks)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Statistical Methods in Sports",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the purpose of norm-referenced and criterion-referenced tests in sports? Explain the advantages and disadvantages of each type of test.",
+        "marks": 5,
+        "answer": "Norm-referenced tests are used to compare an athlete's performance to that of a larger group, while criterion-referenced tests evaluate an athlete's performance against a specific standard or criterion. The advantages of norm-referenced tests include the ability to compare athletes and identify areas for improvement, while the disadvantages include the potential for bias and limited applicability. The advantages of criterion-referenced tests include the ability to evaluate specific skills and provide targeted feedback, while the disadvantages include the potential for limited generalizability and the need for clear criteria.",
+        "marking_scheme": [
+          "Purpose of norm-referenced tests (1 mark)",
+          "Purpose of criterion-referenced tests (1 mark)",
+          "Advantages and disadvantages of norm-referenced tests (1 mark)",
+          "Advantages and disadvantages of criterion-referenced tests (1 mark)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Types of Tests in Sports",
+        "is_numerical": false
+      },
+      {
+        "q": "A gym has 500 members, and the average attendance per day is 200. If the standard deviation of attendance is 30, calculate the z-score for an attendance of 250 and interpret the result.",
+        "marks": 5,
+        "answer": "Calculation: \nz-score = (X - μ) / σ \nWhere, X = attendance = 250, μ = mean = 200, σ = standard deviation = 30 \nz-score = (250 - 200) / 30 \n= 50 / 30 \n= 1.67 \nThe result indicates that the attendance of 250 is 1.67 standard deviations above the mean, which is a relatively high attendance.",
+        "marking_scheme": [
+          "Calculation of z-score (2 marks)",
+          "Interpretation of the result (1 mark)",
+          "Conclusion (1 mark)",
+          "Understanding of standard deviation (1 mark)"
+        ],
+        "topic": "Statistical Methods in Sports",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

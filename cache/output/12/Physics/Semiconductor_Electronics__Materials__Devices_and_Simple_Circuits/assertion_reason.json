@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:10:28.954Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): A p-type semiconductor is formed when a small amount of pentavalent impurity is added to an intrinsic semiconductor.",
+        "reason": "Reason (R): The acceptor impurity atoms accept free electrons from the semiconductor and create holes.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "When a small amount of pentavalent impurity is added to an intrinsic semiconductor, it forms a p-type semiconductor. This is because the acceptor impurity atoms accept free electrons from the semiconductor and create holes."
+      },
+      {
+        "assertion": "Assertion (A): The resistance of a semiconductor decreases as the temperature increases.",
+        "reason": "Reason (R): As the temperature increases, the number of free electrons in the semiconductor increases, resulting in a decrease in resistance.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "The resistance of a semiconductor actually increases as the temperature increases. This is because the number of free electrons in the semiconductor decreases as the temperature increases, resulting in an increase in resistance."
+      },
+      {
+        "assertion": "Assertion (A): A transistor can be used as an amplifier.",
+        "reason": "Reason (R): The transistor has a high input resistance and a low output resistance, making it suitable for amplification.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Transistors can be used as amplifiers because they have a high input resistance and a low output resistance, making them suitable for amplification."
+      },
+      {
+        "assertion": "Assertion (A): The diode is a two-terminal device.",
+        "reason": "Reason (R): The diode has two electrodes, an anode and a cathode.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The diode is indeed a two-terminal device, with two electrodes, an anode and a cathode."
+      },
+      {
+        "assertion": "Assertion (A): The transistor is a four-layer device.",
+        "reason": "Reason (R): The transistor has a base, collector, and emitter.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The transistor is actually a three-layer device, not a four-layer device. It has a base, collector, and emitter."
+      },
+      {
+        "assertion": "Assertion (A): The diode is a unidirectional device.",
+        "reason": "Reason (R): The diode allows current to flow in one direction only.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The diode is indeed a unidirectional device, allowing current to flow in one direction only."
+      },
+      {
+        "assertion": "Assertion (A): The transistor is a current-controlled device.",
+        "reason": "Reason (R): The transistor has a high input resistance and a low output resistance.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The transistor is actually a voltage-controlled device, not a current-controlled device. It has a high input resistance and a low output resistance, but it is controlled by voltage, not current."
+      },
+      {
+        "assertion": "Assertion (A): The diode can be used as a rectifier.",
+        "reason": "Reason (R): The diode allows current to flow in one direction only, making it suitable for rectification.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The diode can indeed be used as a rectifier because it allows current to flow in one direction only, making it suitable for rectification."
+      },
+      {
+        "assertion": "Assertion (A): The transistor can be used as a switch.",
+        "reason": "Reason (R): The transistor has a high input resistance and a low output resistance, making it suitable for switching applications.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The transistor can indeed be used as a switch because it has a high input resistance and a low output resistance, making it suitable for switching applications."
+      },
+      {
+        "assertion": "Assertion (A): The diode is a low-power device.",
+        "reason": "Reason (R): The diode has a high resistance and a low current capacity.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The diode is actually a high-power device, not a low-power device. It has a low resistance and a high current capacity."
+      }
+    ],
+    "total": 10
+  }
+}

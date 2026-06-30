@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:32:55.136Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): SQL is a standard language for accessing and managing relational databases.",
+        "reason": "Reason (R): It is used to perform various operations like creating, modifying, and deleting data in a database.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "SQL is indeed a standard language for accessing and managing relational databases, and it performs operations like creating, modifying, and deleting data in a database."
+      },
+      {
+        "assertion": "Assertion (A): The SELECT statement is used to retrieve data from a database.",
+        "reason": "Reason (R): It allows us to specify the columns we want to retrieve and the conditions for which rows we want to retrieve.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The SELECT statement is indeed used to retrieve data from a database, and it allows us to specify the columns we want to retrieve and the conditions for which rows we want to retrieve."
+      },
+      {
+        "assertion": "Assertion (A): The INSERT statement is used to add new data to a database.",
+        "reason": "Reason (R): It allows us to insert new rows into a table with specified values.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The INSERT statement is indeed used to add new data to a database, and it allows us to insert new rows into a table with specified values."
+      },
+      {
+        "assertion": "Assertion (A): The DROP statement is used to delete data from a database.",
+        "reason": "Reason (R): It allows us to delete entire tables or specific rows from a table.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The DROP statement is indeed used to delete data from a database, and it allows us to delete entire tables or specific rows from a table."
+      },
+      {
+        "assertion": "Assertion (A): The UPDATE statement is used to modify existing data in a database.",
+        "reason": "Reason (R): It allows us to update specific rows in a table with new values.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The UPDATE statement is indeed used to modify existing data in a database, and it allows us to update specific rows in a table with new values."
+      },
+      {
+        "assertion": "Assertion (A): SQL supports subqueries, which are queries nested inside other queries.",
+        "reason": "Reason (R): Subqueries are used to retrieve data that depends on the data retrieved by another query.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "SQL indeed supports subqueries, which are queries nested inside other queries, and they are used to retrieve data that depends on the data retrieved by another query."
+      },
+      {
+        "assertion": "Assertion (A): The GROUP BY clause is used to group data in a table by one or more columns.",
+        "reason": "Reason (R): It is used in conjunction with aggregate functions to perform calculations on grouped data.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The GROUP BY clause is indeed used to group data in a table by one or more columns, and it is used in conjunction with aggregate functions to perform calculations on grouped data."
+      },
+      {
+        "assertion": "Assertion (A): The HAVING clause is used to filter grouped data.",
+        "reason": "Reason (R): It is used to apply conditions to the grouped data that is already aggregated.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The HAVING clause is indeed used to filter grouped data, and it is used to apply conditions to the grouped data that is already aggregated."
+      },
+      {
+        "assertion": "Assertion (A): SQL supports JOIN operations to combine data from multiple tables.",
+        "reason": "Reason (R): It allows us to combine rows from two or more tables based on a common column.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "SQL indeed supports JOIN operations to combine data from multiple tables, and it allows us to combine rows from two or more tables based on a common column."
+      },
+      {
+        "assertion": "Assertion (A): The CREATE TABLE statement is used to create a new table in a database.",
+        "reason": "Reason (R): It allows us to specify the structure of the table, including the column names and data types.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The CREATE TABLE statement is indeed used to create a new table in a database, and it allows us to specify the structure of the table, including the column names and data types."
+      }
+    ],
+    "total": 10
+  }
+}

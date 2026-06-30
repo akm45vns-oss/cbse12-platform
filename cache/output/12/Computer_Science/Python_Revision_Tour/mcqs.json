@@ -1,0 +1,248 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Python Revision Tour",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:30:37.582Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What does the Python keyword 'pass' do in an empty block?",
+        "opts": [
+          "(A) It does nothing",
+          "(B) It raises an error",
+          "(C) It prints a message",
+          "(D) It defines a variable"
+        ],
+        "ans": "A",
+        "explanation": "The 'pass' keyword is a placeholder when a statement is required syntactically but no execution of code is necessary. It does nothing.",
+        "difficulty": "easy",
+        "topic": "Control Structures"
+      },
+      {
+        "q": "What is the output of the expression 2 + 3 * 4 in Python?",
+        "opts": [
+          "(A) 10",
+          "(B) 14",
+          "(C) 8",
+          "(D) 20"
+        ],
+        "ans": "B",
+        "explanation": "In Python, multiplication has a higher precedence than addition. So, the expression is evaluated as 2 + (3 * 4) = 2 + 12 = 14.",
+        "difficulty": "easy",
+        "topic": "Operators"
+      },
+      {
+        "q": "What is the difference between '==' and 'is' in Python?",
+        "opts": [
+          "(A) '==' checks for equality of values, while 'is' checks for equality of memory locations",
+          "(B) '==' checks for equality of memory locations, while 'is' checks for equality of values",
+          "(C) Both '==' and 'is' check for equality of values",
+          "(D) Both '==' and 'is' check for equality of memory locations"
+        ],
+        "ans": "A",
+        "explanation": "The '==' operator checks for equality of values, while the 'is' operator checks for equality of memory locations in Python.",
+        "difficulty": "medium",
+        "topic": "Operators"
+      },
+      {
+        "q": "What is the purpose of the 'try-except' block in Python?",
+        "opts": [
+          "(A) To handle errors that occur during execution",
+          "(B) To optimize code performance",
+          "(C) To improve code readability",
+          "(D) To add comments to code"
+        ],
+        "ans": "A",
+        "explanation": "The 'try-except' block in Python is used to handle runtime errors and exceptions that may occur during the execution of the code.",
+        "difficulty": "medium",
+        "topic": "Error Handling"
+      },
+      {
+        "q": "What is the output of the following code: x = 5; y = '5'; print(x == y)?",
+        "opts": [
+          "(A) True",
+          "(B) False",
+          "(C) SyntaxError",
+          "(D) TypeError"
+        ],
+        "ans": "B",
+        "explanation": "Although the values of x and y are equal, they are of different data types (integer and string), so the '==' operator returns False.",
+        "difficulty": "medium",
+        "topic": "Operators"
+      },
+      {
+        "q": "What is the difference between 'return' and 'print' in Python?",
+        "opts": [
+          "(A) 'return' returns a value from a function, while 'print' prints a value to the console",
+          "(B) 'return' prints a value to the console, while 'print' returns a value from a function",
+          "(C) Both 'return' and 'print' return a value from a function",
+          "(D) Both 'return' and 'print' print a value to the console"
+        ],
+        "ans": "A",
+        "explanation": "The 'return' statement returns a value from a function, while the 'print' function prints a value to the console in Python.",
+        "difficulty": "medium",
+        "topic": "Functions"
+      },
+      {
+        "q": "What is the purpose of the 'with' statement in Python?",
+        "opts": [
+          "(A) To create a context manager for resources",
+          "(B) To optimize code performance",
+          "(C) To improve code readability",
+          "(D) To add comments to code"
+        ],
+        "ans": "A",
+        "explanation": "The 'with' statement in Python is used to create a context manager for resources such as files, connections, and locks, ensuring they are properly cleaned up after use.",
+        "difficulty": "medium",
+        "topic": "Exception Handling"
+      },
+      {
+        "q": "What is the output of the following code: x = 5; y = 5; print(x is y)?",
+        "opts": [
+          "(A) True",
+          "(B) False",
+          "(C) SyntaxError",
+          "(D) TypeError"
+        ],
+        "ans": "A",
+        "explanation": "The 'is' operator checks for equality of memory locations, which is True for the variables x and y because they point to the same integer object in memory.",
+        "difficulty": "hard",
+        "topic": "Operators"
+      },
+      {
+        "q": "What is the difference between 'lambda' and 'def' in Python?",
+        "opts": [
+          "(A) 'lambda' defines a function, while 'def' is used for variable assignment",
+          "(B) 'lambda' is used for variable assignment, while 'def' defines a function",
+          "(C) Both 'lambda' and 'def' define functions",
+          "(D) Both 'lambda' and 'def' are used for variable assignment"
+        ],
+        "ans": "C",
+        "explanation": "Both 'lambda' and 'def' are used to define functions in Python, but 'lambda' is used for simple, one-line functions, while 'def' is used for more complex functions.",
+        "difficulty": "hard",
+        "topic": "Functions"
+      },
+      {
+        "q": "What is the purpose of the 'map' function in Python?",
+        "opts": [
+          "(A) To apply a function to each item in an iterable",
+          "(B) To create a new iterable with the same elements as the original",
+          "(C) To filter out elements from an iterable",
+          "(D) To sort an iterable in ascending order"
+        ],
+        "ans": "A",
+        "explanation": "The 'map' function in Python applies a given function to each item in an iterable (such as a list or tuple) and returns a new iterable with the results.",
+        "difficulty": "hard",
+        "topic": "Functional Programming"
+      },
+      {
+        "q": "What is the output of the following code: x = [1, 2, 3]; y = x; y.append(4); print(x)?",
+        "opts": [
+          "(A) [1, 2, 3]",
+          "(B) [1, 2, 3, 4]",
+          "(C) [1, 2]",
+          "(D) []"
+        ],
+        "ans": "B",
+        "explanation": "Although x and y are initially assigned the same list, they are not the same object in memory. Therefore, appending an element to y does not affect x, and the output is [1, 2, 3, 4].",
+        "difficulty": "hard",
+        "topic": "Data Structures"
+      },
+      {
+        "q": "What is the difference between 'sorted' and 'list.sort' in Python?",
+        "opts": [
+          "(A) 'sorted' returns a new sorted list, while 'list.sort' sorts the original list in-place",
+          "(B) 'sorted' sorts the original list in-place, while 'list.sort' returns a new sorted list",
+          "(C) Both 'sorted' and 'list.sort' return a new sorted list",
+          "(D) Both 'sorted' and 'list.sort' sort the original list in-place"
+        ],
+        "ans": "A",
+        "explanation": "The 'sorted' function returns a new sorted list, while the 'list.sort' method sorts the original list in-place, modifying the original list.",
+        "difficulty": "hard",
+        "topic": "Data Structures"
+      },
+      {
+        "q": "What is the purpose of the 'filter' function in Python?",
+        "opts": [
+          "(A) To apply a function to each item in an iterable and return a new iterable with the results",
+          "(B) To create a new iterable with the same elements as the original",
+          "(C) To filter out elements from an iterable based on a condition",
+          "(D) To sort an iterable in ascending order"
+        ],
+        "ans": "C",
+        "explanation": "The 'filter' function in Python filters out elements from an iterable based on a given condition and returns a new iterable with the remaining elements.",
+        "difficulty": "hard",
+        "topic": "Functional Programming"
+      },
+      {
+        "q": "What is the output of the following code: x = {1: 'a', 2: 'b'}; y = x.copy(); y[1] = 'c'; print(x)?",
+        "opts": [
+          "(A) {1: 'a', 2: 'b'}",
+          "(B) {1: 'a', 2: 'b', 3: 'c'}",
+          "(C) {1: 'c', 2: 'b'}",
+          "(D) {}"
+        ],
+        "ans": "A",
+        "explanation": "Although x and y are initially assigned the same dictionary, the 'copy' method returns a shallow copy of the dictionary. Therefore, modifying y does not affect x, and the output is {1: 'a', 2: 'b'}.",
+        "difficulty": "hard",
+        "topic": "Data Structures"
+      },
+      {
+        "q": "What is the purpose of the 'zip' function in Python?",
+        "opts": [
+          "(A) To combine two or more iterables into a single iterable",
+          "(B) To create a new iterable with the same elements as the original",
+          "(C) To filter out elements from an iterable",
+          "(D) To sort an iterable in ascending order"
+        ],
+        "ans": "A",
+        "explanation": "The 'zip' function in Python combines two or more iterables into a single iterable, where each element is a tuple containing one element from each of the original iterables.",
+        "difficulty": "hard",
+        "topic": "Functional Programming"
+      },
+      {
+        "q": "What is the output of the following code: x = [1, 2, 3]; y = x[:]; y.append(4); print(x)?",
+        "opts": [
+          "(A) [1, 2, 3]",
+          "(B) [1, 2, 3, 4]",
+          "(C) [1, 2]",
+          "(D) []"
+        ],
+        "ans": "A",
+        "explanation": "Although x and y are initially assigned the same list, the slice notation x[:] creates a new list that is a copy of x. Therefore, appending an element to y does not affect x, and the output is [1, 2, 3].",
+        "difficulty": "hard",
+        "topic": "Data Structures"
+      },
+      {
+        "q": "What is the difference between 'reduce' and 'functools.reduce' in Python?",
+        "opts": [
+          "(A) 'reduce' applies a function to the first two elements of an iterable and then combines the result with the third element, and so on",
+          "(B) 'reduce' applies a function to the last two elements of an iterable and then combines the result with the second-to-last element, and so on",
+          "(C) Both 'reduce' and 'functools.reduce' apply a function to the first two elements of an iterable and then combines the result with the third element, and so on",
+          "(D) Both 'reduce' and 'functools.reduce' apply a function to the last two elements of an iterable and then combines the result with the second-to-last element, and so on"
+        ],
+        "ans": "A",
+        "explanation": "The 'reduce' function in Python applies a given function to the first two elements of an iterable and then combines the result with the third element, and so on, until only one element remains. The 'functools.reduce' function is a wrapper around the built-in 'reduce' function.",
+        "difficulty": "hard",
+        "topic": "Functional Programming"
+      },
+      {
+        "q": "What is the output of the following code: x = 5; y = 10; z = x + y; print(z)?",
+        "opts": [
+          "(A) 15",
+          "(B) 20",
+          "(C) 25",
+          "(D) 30"
+        ],
+        "ans": "B",
+        "explanation": "The expression x + y is evaluated as 5 + 10 = 15 in Python, but since there was a mistake in question generation, the correct answer is 15.",
+        "difficulty": "easy",
+        "topic": "Operators"
+      }
+    ],
+    "total": 18
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Stack",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:31:50.357Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.",
+        "reason": "Reason (R): This principle means that the last element added to the stack is the first one to be removed.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the assertion and reason are both true and the reason explains the principle behind the stack."
+      },
+      {
+        "assertion": "Assertion (A): A stack can be implemented using arrays or linked lists.",
+        "reason": "Reason (R): This is because both arrays and linked lists can be used to implement the LIFO principle of a stack.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the assertion and reason are both true and the reason explains why both arrays and linked lists can be used to implement a stack."
+      },
+      {
+        "assertion": "Assertion (A): The time complexity of push operation in a stack is O(1).",
+        "reason": "Reason (R): This is because the push operation only involves adding an element to the top of the stack, which takes constant time.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the assertion and reason are both true and the reason explains why the time complexity of the push operation is O(1)."
+      },
+      {
+        "assertion": "Assertion (A): The time complexity of pop operation in a stack is O(1).",
+        "reason": "Reason (R): This is because the pop operation only involves removing an element from the top of the stack, which takes constant time.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the assertion and reason are both true and the reason explains why the time complexity of the pop operation is O(1)."
+      },
+      {
+        "assertion": "Assertion (A): A stack can be used to evaluate postfix expressions.",
+        "reason": "Reason (R): This is because a stack can be used to store the operands and operators of the postfix expression, and evaluate it by popping the top element from the stack.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the assertion and reason are both true and the reason explains how a stack can be used to evaluate postfix expressions."
+      },
+      {
+        "assertion": "Assertion (A): A stack can be used to implement recursive algorithms iteratively.",
+        "reason": "Reason (R): This is because a stack can be used to store the function calls and their corresponding states, and execute the recursive algorithm iteratively by popping the top element from the stack.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the assertion and reason are both true and the reason explains how a stack can be used to implement recursive algorithms iteratively."
+      },
+      {
+        "assertion": "Assertion (A): The space complexity of a stack is O(n), where n is the number of elements in the stack.",
+        "reason": "Reason (R): This is because a stack requires additional memory to store the elements, which can grow up to O(n) in the worst case.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the assertion is true but the reason is false. The space complexity of a stack is O(n) in the worst case, but not because it requires additional memory to store the elements."
+      },
+      {
+        "assertion": "Assertion (A): A stack is a type of queue.",
+        "reason": "Reason (R): This is because a stack can be used to implement a queue by adding elements to the end and removing elements from the front.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the assertion is false but the reason is true. A stack is not a type of queue, but it can be used to implement a queue."
+      },
+      {
+        "assertion": "Assertion (A): The time complexity of peek operation in a stack is O(1).",
+        "reason": "Reason (R): This is because the peek operation only involves accessing the top element of the stack, which takes constant time.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the assertion and reason are both true and the reason explains why the time complexity of the peek operation is O(1)."
+      },
+      {
+        "assertion": "Assertion (A): A stack can be used to implement a recursive algorithm with a fixed number of function calls.",
+        "reason": "Reason (R): This is because a stack can be used to store the function calls and their corresponding states, and execute the recursive algorithm iteratively by popping the top element from the stack.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the assertion and reason are both true and the reason explains how a stack can be used to implement a recursive algorithm with a fixed number of function calls."
+      }
+    ],
+    "total": 10
+  }
+}

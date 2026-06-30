@@ -1,0 +1,150 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Probability",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:30:36.087Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A random experiment has two possible outcomes, namely A and B. What is the probability of A?",
+        "marks": 1,
+        "answer": "The probability of A is 1/2 as the outcomes are equally likely.",
+        "key_points": [
+          "Equal likelihood"
+        ],
+        "topic": "Basic Concepts"
+      },
+      {
+        "q": "A coin is tossed. What is the probability of getting a head?",
+        "marks": 1,
+        "answer": "The probability of getting a head is 1/2 as the outcomes are equally likely.",
+        "key_points": [
+          "Equal likelihood"
+        ],
+        "topic": "Basic Concepts"
+      },
+      {
+        "q": "A die is rolled. What is the probability of getting a number greater than 4?",
+        "marks": 2,
+        "answer": "The probability of getting a number greater than 4 is 1/2 as there are 3 favorable outcomes out of 6 possible outcomes.",
+        "key_points": [
+          "Equal likelihood",
+          "Favorable outcomes"
+        ],
+        "topic": "Random Experiments and Events"
+      },
+      {
+        "q": "A box contains 5 red marbles, 8 white marbles, and 4 black marbles. What is the probability of drawing a red marble at random?",
+        "marks": 2,
+        "answer": "The probability of drawing a red marble is 5/17 as there are 5 favorable outcomes out of 17 possible outcomes.",
+        "key_points": [
+          "Favorable outcomes",
+          "Total outcomes"
+        ],
+        "topic": "Random Experiments and Events"
+      },
+      {
+        "q": "A bag contains 3 blue balls and 2 red balls. A ball is drawn at random. What is the probability that it is blue?",
+        "marks": 2,
+        "answer": "The probability that the ball is blue is 3/5 as there are 3 favorable outcomes out of 5 possible outcomes.",
+        "key_points": [
+          "Favorable outcomes",
+          "Total outcomes"
+        ],
+        "topic": "Random Experiments and Events"
+      },
+      {
+        "q": "A random experiment has three possible outcomes, namely E1, E2, and E3. What is the probability that at least one of these events occurs?",
+        "marks": 2,
+        "answer": "The probability that at least one of these events occurs is 1 as the events are exhaustive.",
+        "key_points": [
+          "Exhaustive events"
+        ],
+        "topic": "Probability of Events"
+      },
+      {
+        "q": "A coin is tossed twice. What is the probability that at least one head occurs?",
+        "marks": 2,
+        "answer": "The probability that at least one head occurs is 3/4 as there are 3 favorable outcomes out of 4 possible outcomes.",
+        "key_points": [
+          "Favorable outcomes",
+          "Total outcomes"
+        ],
+        "topic": "Probability of Events"
+      },
+      {
+        "q": "A die is rolled three times. What is the probability that at least one 6 occurs?",
+        "marks": 3,
+        "answer": "The probability that at least one 6 occurs is 1- (probability of no 6 occurring) = 1- (5/6)^3 = 91/216.",
+        "key_points": [
+          "Complement rule",
+          "Probability of no event"
+        ],
+        "topic": "Probability of Events"
+      },
+      {
+        "q": "A random experiment has two possible outcomes, namely A and B. What is the probability that exactly one of these events occurs?",
+        "marks": 3,
+        "answer": "The probability that exactly one of these events occurs is P(A) + P(B) - 2P(A ∩ B) = 1/2 + 1/2 - 2(1/2)(1/2) = 1/2.",
+        "key_points": [
+          "Inclusion-exclusion principle",
+          "Independent events"
+        ],
+        "topic": "Probability of Events"
+      },
+      {
+        "q": "A bag contains 3 blue balls and 2 red balls. A ball is drawn at random. What is the probability that it is not blue?",
+        "marks": 3,
+        "answer": "The probability that it is not blue is 2/5 as there are 2 favorable outcomes out of 5 possible outcomes.",
+        "key_points": [
+          "Complement rule",
+          "Favorable outcomes"
+        ],
+        "topic": "Probability of Events"
+      },
+      {
+        "q": "A die is rolled. What is the probability that the number shown is even?",
+        "marks": 3,
+        "answer": "The probability that the number shown is even is 3/6 = 1/2 as there are 3 favorable outcomes out of 6 possible outcomes.",
+        "key_points": [
+          "Favorable outcomes",
+          "Total outcomes"
+        ],
+        "topic": "Random Experiments and Events"
+      },
+      {
+        "q": "A coin is tossed three times. What is the probability that the number of heads is odd?",
+        "marks": 3,
+        "answer": "The probability that the number of heads is odd is 3/8 as there are 3 favorable outcomes out of 8 possible outcomes.",
+        "key_points": [
+          "Favorable outcomes",
+          "Total outcomes"
+        ],
+        "topic": "Random Experiments and Events"
+      },
+      {
+        "q": "A random experiment has three possible outcomes, namely E1, E2, and E3. What is the probability that exactly two of these events occur?",
+        "marks": 3,
+        "answer": "The probability that exactly two of these events occur is P(E1 ∩ E2) + P(E2 ∩ E3) + P(E3 ∩ E1) = 3P(E1)P(E2) + 3P(E2)P(E3) + 3P(E3)P(E1) = 3(1/2)(1/2) = 3/4 as the events are pairwise independent.",
+        "key_points": [
+          "Inclusion-exclusion principle",
+          "Independent events"
+        ],
+        "topic": "Probability of Events"
+      },
+      {
+        "q": "A bag contains 3 blue balls and 2 red balls. A ball is drawn at random. What is the probability that it is either blue or red?",
+        "marks": 1,
+        "answer": "The probability that it is either blue or red is 1 as the events are exhaustive.",
+        "key_points": [
+          "Exhaustive events"
+        ],
+        "topic": "Probability of Events"
+      }
+    ],
+    "total": 14
+  }
+}

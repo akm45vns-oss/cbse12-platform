@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Linear Programming",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:30:31.471Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A milk processing company produces two types of milk, A and B. The production of milk A requires 2 hours on the packaging machine and 1 hour on the filling machine. The production of milk B requires 1 hour on the packaging machine and 2 hours on the filling machine. The company has 12 hours of packaging machine time and 16 hours of filling machine time available per day. The profit of milk A is ₹60 per liter and the profit of milk B is ₹40 per liter. Milk A can be produced at a rate of 2 liters per hour on the packaging machine and 1 liter per hour on the filling machine, and milk B can be produced at a rate of 1 liter per hour on the packaging machine and 2 liters per hour on the filling machine. Formulate and solve the linear programming problem to maximize the profit.",
+        "questions": [
+          {
+            "q": "How many liters of milk A should be produced to maximize the profit?",
+            "opts": [
+              "(A) 0",
+              "(B) 8",
+              "(C) 16",
+              "(D) 24"
+            ],
+            "ans": "B",
+            "explanation": "To maximize the profit, the company should produce 8 liters of milk A, as it has the highest profit per liter and the available time on the packaging machine is 12 hours, which can produce 24 liters of milk A. However, the available time on the filling machine is 16 hours, which can produce 16 liters of milk A. Therefore, the company should produce 8 liters of milk A to maximize the profit."
+          },
+          {
+            "q": "How many liters of milk B should be produced to maximize the profit?",
+            "opts": [
+              "(A) 0",
+              "(B) 8",
+              "(C) 16",
+              "(D) 24"
+            ],
+            "ans": "C",
+            "explanation": "To maximize the profit, the company should produce 16 liters of milk B, as it has the highest profit per liter and the available time on the filling machine is 16 hours, which can produce 32 liters of milk B. However, the available time on the packaging machine is 12 hours, which can produce 12 liters of milk B. Therefore, the company should produce 16 liters of milk B to maximize the profit."
+          },
+          {
+            "q": "What is the maximum profit that can be achieved?",
+            "opts": [
+              "(A) ₹800",
+              "(B) ₹1600",
+              "(C) ₹3200",
+              "(D) ₹4800"
+            ],
+            "ans": "C",
+            "explanation": "The maximum profit that can be achieved is ₹3200, which is obtained by producing 8 liters of milk A and 16 liters of milk B."
+          },
+          {
+            "q": "What is the constraint on the packaging machine?",
+            "opts": [
+              "(A) 12 hours",
+              "(B) 16 hours",
+              "(C) 24 hours",
+              "(D) 32 hours"
+            ],
+            "ans": "A",
+            "explanation": "The constraint on the packaging machine is 12 hours, as the company has 12 hours of packaging machine time available per day."
+          },
+          {
+            "q": "What is the constraint on the filling machine?",
+            "opts": [
+              "(A) 12 hours",
+              "(B) 16 hours",
+              "(C) 24 hours",
+              "(D) 32 hours"
+            ],
+            "ans": "B",
+            "explanation": "The constraint on the filling machine is 16 hours, as the company has 16 hours of filling machine time available per day."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A company produces two types of metal products, X and Y. The production of product X requires 2 hours on the cutting machine and 3 hours on the drilling machine. The production of product Y requires 3 hours on the cutting machine and 2 hours on the drilling machine. The company has 18 hours of cutting machine time and 20 hours of drilling machine time available per day. The profit of product X is ₹120 per unit and the profit of product Y is ₹80 per unit. Product X can be produced at a rate of 1 unit per hour on the cutting machine and 1 unit per hour on the drilling machine, and product Y can be produced at a rate of 1 unit per hour on the cutting machine and 1 unit per hour on the drilling machine. Formulate and solve the linear programming problem to maximize the profit.",
+        "questions": [
+          {
+            "q": "How many units of product X should be produced to maximize the profit?",
+            "opts": [
+              "(A) 0",
+              "(B) 6",
+              "(C) 9",
+              "(D) 12"
+            ],
+            "ans": "B",
+            "explanation": "To maximize the profit, the company should produce 6 units of product X, as it has the highest profit per unit and the available time on the cutting machine is 18 hours, which can produce 18 units of product X. However, the available time on the drilling machine is 20 hours, which can produce 20 units of product X. Therefore, the company should produce 6 units of product X to maximize the profit."
+          },
+          {
+            "q": "How many units of product Y should be produced to maximize the profit?",
+            "opts": [
+              "(A) 0",
+              "(B) 6",
+              "(C) 10",
+              "(D) 12"
+            ],
+            "ans": "C",
+            "explanation": "To maximize the profit, the company should produce 10 units of product Y, as it has the highest profit per unit and the available time on the drilling machine is 20 hours, which can produce 20 units of product Y. However, the available time on the cutting machine is 18 hours, which can produce 18 units of product Y. Therefore, the company should produce 10 units of product Y to maximize the profit."
+          },
+          {
+            "q": "What is the maximum profit that can be achieved?",
+            "opts": [
+              "(A) ₹2400",
+              "(B) ₹4000",
+              "(C) ₹6000",
+              "(D) ₹8000"
+            ],
+            "ans": "C",
+            "explanation": "The maximum profit that can be achieved is ₹6000, which is obtained by producing 6 units of product X and 10 units of product Y."
+          },
+          {
+            "q": "What is the constraint on the cutting machine?",
+            "opts": [
+              "(A) 18 hours",
+              "(B) 20 hours",
+              "(C) 24 hours",
+              "(D) 30 hours"
+            ],
+            "ans": "A",
+            "explanation": "The constraint on the cutting machine is 18 hours, as the company has 18 hours of cutting machine time available per day."
+          },
+          {
+            "q": "What is the constraint on the drilling machine?",
+            "opts": [
+              "(A) 18 hours",
+              "(B) 20 hours",
+              "(C) 24 hours",
+              "(D) 30 hours"
+            ],
+            "ans": "B",
+            "explanation": "The constraint on the drilling machine is 20 hours, as the company has 20 hours of drilling machine time available per day."
+          }
+        ]
+      }
+    ]
+  }
+}

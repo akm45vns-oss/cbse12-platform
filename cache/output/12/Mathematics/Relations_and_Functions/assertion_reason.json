@@ -1,0 +1,122 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:27:13.029Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "The function f: R → R defined by f(x) = 3x is one-one.",
+        "reason": "Since f(x1) = f(x2) implies 3x1 = 3x2, which further implies x1 = x2.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The function f is one-one as it satisfies the condition f(x1) = f(x2) implies x1 = x2"
+      },
+      {
+        "assertion": "The function f: R → R defined by f(x) = 3x is onto.",
+        "reason": "Since for every y ∈ R, there exists x = y/3 in R such that f(x) = f(y/3) = 3(y/3) = y.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The function f is onto as for every y ∈ R, there exists x = y/3 in R such that f(x) = y"
+      },
+      {
+        "assertion": "The function f: R → R defined by f(x) = x2 is one-one.",
+        "reason": "This statement is false because f(x) = f(-x) but x ≠ -x.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The function f is not one-one as f(x) = f(-x) but x ≠ -x"
+      },
+      {
+        "assertion": "The function f: R → R defined by f(x) = x2 is onto.",
+        "reason": "Since for every y ∈ R, there exists x = ±√y in R such that f(x) = f(±√y) = (√y)2 = y.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The function f is onto as for every y ∈ R, there exists x = ±√y in R such that f(x) = y"
+      },
+      {
+        "assertion": "If a function f: A → B is one-one, then it is onto.",
+        "reason": "This statement is false because a function can be one-one but not onto, e.g., f: R → R defined by f(x) = x2.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "This statement is false as a function can be one-one but not onto"
+      },
+      {
+        "assertion": "If a function f: A → B is onto, then it is one-one.",
+        "reason": "This statement is false because a function can be onto but not one-one, e.g., f: R → R defined by f(x) = x.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "This statement is false as a function can be onto but not one-one"
+      },
+      {
+        "assertion": "A relation R on A is symmetric if (a, b) ∈ R implies (b, a) ∈ R.",
+        "reason": "This statement is true because if (a, b) ∈ R, then by definition of symmetry, (b, a) ∈ R.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This statement is true as it defines the property of a symmetric relation"
+      },
+      {
+        "assertion": "A relation R on A is transitive if (a, b) ∈ R and (b, c) ∈ R implies (a, c) ∈ R.",
+        "reason": "This statement is true because if (a, b) ∈ R and (b, c) ∈ R, then by definition of transitivity, (a, c) ∈ R.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This statement is true as it defines the property of a transitive relation"
+      },
+      {
+        "assertion": "A relation R on A is reflexive if (a, a) ∈ R for all a ∈ A.",
+        "reason": "This statement is true because by definition of reflexivity, (a, a) ∈ R for all a ∈ A.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This statement is true as it defines the property of a reflexive relation"
+      }
+    ],
+    "total": 9
+  }
+}

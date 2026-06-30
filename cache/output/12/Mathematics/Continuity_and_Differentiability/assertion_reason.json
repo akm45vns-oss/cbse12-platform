@@ -1,0 +1,122 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Continuity and Differentiability",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T12:28:16.630Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): If f(x) and g(x) are two continuous functions, then their sum f(x) + g(x) is also continuous.",
+        "reason": "Reason (R): Since f(x) and g(x) are continuous, they satisfy the conditions of continuity.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the continuity of f(x) and g(x) directly implies the continuity of f(x) + g(x)."
+      },
+      {
+        "assertion": "Assertion (A): If f(x) is a differentiable function, then it is continuous.",
+        "reason": "Reason (R): Differentiability implies continuity because the derivative exists at every point.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because differentiability is a stronger condition than continuity, and differentiability implies continuity."
+      },
+      {
+        "assertion": "Assertion (A): The function f(x) = |x| is continuous at x = 0.",
+        "reason": "Reason (R): The function f(x) = |x| is not differentiable at x = 0.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "This option is correct because the function f(x) = |x| is continuous at x = 0, but it is not differentiable at x = 0."
+      },
+      {
+        "assertion": "Assertion (A): If f(x) is a polynomial function, then it is differentiable.",
+        "reason": "Reason (R): A polynomial function satisfies the conditions for differentiability everywhere.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because polynomial functions satisfy the conditions for differentiability everywhere."
+      },
+      {
+        "assertion": "Assertion (A): The function f(x) = 1/x is continuous at x = 0.",
+        "reason": "Reason (R): The function f(x) = 1/x is not defined at x = 0.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the function f(x) = 1/x is not continuous or differentiable at x = 0 due to being undefined."
+      },
+      {
+        "assertion": "Assertion (A): If f(x) and g(x) are two differentiable functions, then their product f(x)g(x) is also differentiable.",
+        "reason": "Reason (R): Since f(x) and g(x) are differentiable, they satisfy the conditions of differentiability.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the differentiability of f(x) and g(x) directly implies the differentiability of f(x)g(x)."
+      },
+      {
+        "assertion": "Assertion (A): The function f(x) = sin(x) is differentiable everywhere.",
+        "reason": "Reason (R): The derivative of f(x) = sin(x) exists everywhere.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the function f(x) = sin(x) is differentiable everywhere, and its derivative exists everywhere."
+      },
+      {
+        "assertion": "Assertion (A): If f(x) is a continuous function, then it is differentiable.",
+        "reason": "Reason (R): Differentiability implies continuity because the derivative exists at every point.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because continuity does not imply differentiability; there are many continuous functions that are not differentiable."
+      },
+      {
+        "assertion": "Assertion (A): The function f(x) = x^2 sin(1/x) is continuous at x = 0.",
+        "reason": "Reason (R): The function f(x) = x^2 sin(1/x) is differentiable at x = 0.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "This option is correct because the function f(x) = x^2 sin(1/x) is continuous at x = 0, but it is not differentiable at x = 0."
+      }
+    ],
+    "total": 9
+  }
+}

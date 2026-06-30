@@ -1,0 +1,82 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Environmental Issues",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T15:54:39.638Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What are greenhouse gases and how do they contribute to global warming? Discuss their effects on the environment. (5 marks)",
+        "marks": 5,
+        "answer": "Greenhouse gases are gases that trap heat in the Earth's atmosphere, contributing to global warming. They include carbon dioxide, methane, and water vapor. These gases absorb and re-emit infrared radiation, causing the Earth's temperature to rise. The effects of global warming include melting of polar ice caps, rising sea levels, and altered ecosystems.",
+        "marking_scheme": [
+          "Mention of greenhouse gases (1 mark)",
+          "Explanation of their contribution to global warming (2 marks)",
+          "Discussion of their effects on the environment (2 marks)"
+        ],
+        "topic": "Global Warming and Climate Change",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the ozone layer and why is it important? What are the causes and effects of ozone layer depletion? (5 marks)",
+        "marks": 5,
+        "answer": "The ozone layer is a layer of gases in the Earth's atmosphere that protects life from the sun's ultraviolet radiation. It is formed by the interaction of oxygen molecules and is important for maintaining life on Earth. The causes of ozone layer depletion include the release of chlorofluorocarbons (CFCs) and other pollutants. The effects include increased incidence of skin cancer and cataracts, and damage to crops and aquatic life.",
+        "marking_scheme": [
+          "Mention of the ozone layer and its importance (1 mark)",
+          "Causes of ozone layer depletion (1 mark)",
+          "Effects of ozone layer depletion (3 marks)"
+        ],
+        "topic": "Ozone Layer Depletion",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of sustainable development and its importance in environmental conservation. (5 marks)",
+        "marks": 5,
+        "answer": "Sustainable development is a concept that aims to meet the needs of the present without compromising the ability of future generations to meet their own needs. It involves the use of natural resources in a way that is environmentally friendly, socially responsible, and economically viable. Sustainable development is important in environmental conservation because it helps to reduce pollution, conserve biodiversity, and promote eco-friendly practices.",
+        "marking_scheme": [
+          "Explanation of sustainable development (2 marks)",
+          "Importance of sustainable development (3 marks)"
+        ],
+        "topic": "Sustainable Development",
+        "is_numerical": false
+      },
+      {
+        "q": "A factory emits 5000 kg of carbon dioxide per day. If the global warming potential of carbon dioxide is 1, calculate the total greenhouse effect caused by the factory in a year. (5 marks)",
+        "marks": 5,
+        "answer": "Calculation: Total greenhouse effect in a year = 5000 kg/day × 365 days/year = 1,825,000 kg/year. Since the global warming potential of carbon dioxide is 1, the total greenhouse effect is also 1,825,000 kg/year.",
+        "marking_scheme": [
+          "Calculation of total greenhouse effect (4 marks)",
+          "Mention of global warming potential (1 mark)"
+        ],
+        "topic": "Greenhouse Effect",
+        "is_numerical": true
+      },
+      {
+        "q": "A city with a population of 10,000 people generates 200 kg of municipal solid waste per day. If the waste composition is 20% organic and 80% inorganic, calculate the amount of methane produced per day. (5 marks)",
+        "marks": 5,
+        "answer": "Calculation: Total waste generated per day = 200 kg/day. Organic waste = 20% of 200 kg = 40 kg/day. Methane produced per day = 40 kg/day × 0.5 (molar mass of methane) = 20 kg/day.",
+        "marking_scheme": [
+          "Calculation of organic waste (2 marks)",
+          "Calculation of methane produced (3 marks)"
+        ],
+        "topic": "Municipal Solid Waste Management",
+        "is_numerical": true
+      },
+      {
+        "q": "A farm uses 5000 liters of water per day for irrigation. If the water is used at a rate of 2.5 liters per minute, calculate the total time taken for irrigation. (5 marks)",
+        "marks": 5,
+        "answer": "Calculation: Total time taken for irrigation = Total water used / Rate of water use = 5000 liters / 2.5 liters/minute = 2000 minutes. Since there are 60 minutes in an hour, the total time taken is 2000 minutes / 60 = 33.33 hours.",
+        "marking_scheme": [
+          "Calculation of total time taken (4 marks)",
+          "Conversion of minutes to hours (1 mark)"
+        ],
+        "topic": "Water Conservation",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Continuity and Differentiability",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T13:16:19.253Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Differentiability Theorem",
+        "formula": "If f(x) is a polynomial or a rational function such that all the rational functions have no common factors in their denominators, then f(x) is differentiable.",
+        "notes": "A sufficient condition for differentiability."
+      },
+      {
+        "name": "Cauchy's Generalized Mean Value Theorem",
+        "formula": "If f(x) and g(x) are continuous on [a, b] and differentiable on (a, b), then there exists a point c in (a, b) such that (f(b) - f(a)) / (g(b) - g(a)) = (f'(c)) / (g'(c)).",
+        "notes": "[for all f and g that satisfy the conditions]"
+      },
+      {
+        "name": "Lagrange's Mean Value Theorem",
+        "formula": "If f(x) is continuous on [a, b] and differentiable on (a, b), then there exists a point c in (a, b) such that f'(c) = (f(b) - f(a)) / (b - a).",
+        "notes": "[for all f that satisfy the conditions]"
+      },
+      {
+        "name": "Differentiability of Composite Functions",
+        "formula": "If f(x) is differentiable at x = a and g(x) is differentiable at f(a), then (g ∘ f)(x) is differentiable at x = a.",
+        "notes": "[for all composite functions]"
+      },
+      {
+        "name": "Differentiability of Inverse Functions",
+        "formula": "If f(x) is a one-to-one function and is differentiable at x = a, then the inverse function f^(-1)(x) is differentiable at f(a).",
+        "notes": "[for all one-to-one functions]"
+      },
+      {
+        "name": "Chain Rule",
+        "formula": "If f(x) and g(x) are differentiable at x = a, then the derivative of the composite function (g ∘ f)(x) at x = a is given by (g ∘ f)'(a) = g'(f(a)) * f'(a).",
+        "notes": "[for all composite functions]"
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "class": "12",
+  "subject": "Economics",
+  "chapter": "Determination of Income and Employment",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:02:15.923Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of full employment and its significance in the determination of income and employment. How is it achieved?",
+        "marks": 5,
+        "answer": "Full employment is a situation in which all available labor resources are utilized to produce goods and services. It is significant because it maximizes the utilization of resources, increases the standard of living, and ensures that the economy reaches its potential output. Full employment can be achieved through demand management policies, supply-side policies, and structural adjustments.",
+        "marking_scheme": [
+          "Definition of full employment (1 mark)",
+          "Significance of full employment (1 mark)",
+          "Methods of achieving full employment (3 marks)"
+        ],
+        "topic": "Concept of Full Employment",
+        "is_numerical": false
+      },
+      {
+        "q": "Distinguish between the concepts of underemployment and involuntary unemployment.",
+        "marks": 5,
+        "answer": "Underemployment occurs when workers are employed, but not to their full capacity, often due to lack of suitable work or skills. Involuntary unemployment, on the other hand, occurs when workers are unable to find employment despite a willingness to work. This can be due to various factors such as lack of job opportunities, low wages, or economic downturns.",
+        "marking_scheme": [
+          "Definition of underemployment (1 mark)",
+          "Definition of involuntary unemployment (1 mark)",
+          "Differences between the two concepts (3 marks)"
+        ],
+        "topic": "Types of Unemployment",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the level of employment and income in the economy using the Aggregate Demand-Aggregate Supply (AD-AS) model.",
+        "marks": 5,
+        "answer": "Given AD = Rs. 1,000 and AS = Rs. 800, the level of employment can be calculated as follows:\nCalculation:\n\nEmployment (N) = (AD x 1) / (MRP x 1)\nN = (1,000 x 1) / (800 x 1)\nN = 1,250\n\nThe level of income can be calculated as follows:\nCalculation:\n\nIncome (Y) = AD\nY = Rs. 1,000",
+        "marking_scheme": [
+          "Understanding the AD-AS model (1 mark)",
+          "Calculation of employment (2 marks)",
+          "Calculation of income (2 marks)"
+        ],
+        "topic": "AD-AS Model",
+        "is_numerical": true
+      },
+      {
+        "q": "A firm produces 100 units of a commodity with a labor input of 10 units. If the wage rate is Rs. 10 per unit, calculate the marginal revenue product (MRP) of labor.",
+        "marks": 5,
+        "answer": "Given Labor Input (L) = 10 units, Wage Rate (W) = Rs. 10 per unit, and Output (Q) = 100 units,\nMRP of labor = W x (ΔQ / ΔL)\n= Rs. 10 x (100 / 10)\n= Rs. 100",
+        "marking_scheme": [
+          "Understanding the concept of MRP (1 mark)",
+          "Calculation of MRP (4 marks)"
+        ],
+        "topic": "Marginal Revenue Product",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of income and employment multiplier. Calculate the value of the multiplier for an economy with a marginal propensity to consume (MPC) of 0.6.",
+        "marks": 5,
+        "answer": "The income and employment multiplier is a measure of the change in income and employment resulting from a change in autonomous spending. It is calculated as follows:\nCalculation:\n\nMultiplier (k) = 1 / (1 - MPC)\nk = 1 / (1 - 0.6)\nk = 1 / 0.4\nk = 2.5",
+        "marking_scheme": [
+          "Understanding the concept of the multiplier (1 mark)",
+          "Calculation of the multiplier (4 marks)"
+        ],
+        "topic": "Income and Employment Multiplier",
+        "is_numerical": true
+      },
+      {
+        "q": "A government increases its expenditure by Rs. 100. If the MPC is 0.6, calculate the initial change in income and the subsequent change in income using the multiplier.",
+        "marks": 5,
+        "answer": "Given MPC = 0.6 and Initial Change in Government Expenditure = Rs. 100, the initial change in income can be calculated as follows:\nCalculation:\n\nInitial Change in Income = MPC x Initial Change in Government Expenditure\n= 0.6 x Rs. 100\n= Rs. 60\n\nSubsequent Change in Income = k x Initial Change in Income\n= 2.5 x Rs. 60\n= Rs. 150",
+        "marking_scheme": [
+          "Understanding the concept of the multiplier (1 mark)",
+          "Calculation of the initial change in income (2 marks)",
+          "Calculation of the subsequent change in income (2 marks)"
+        ],
+        "topic": "Multiplier Effect",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}
