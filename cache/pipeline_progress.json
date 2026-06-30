@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-30T18:23:35.124Z",
-  "elapsed_seconds": 8236,
+  "updated_at": "2026-06-30T18:24:15.153Z",
+  "elapsed_seconds": 8276,
   "rate_per_second": 0.59,
   "queue": {
     "completed": 4865,
@@ -20,7 +20,7 @@
       "workerId": "Worker-Physics",
       "processed": 105,
       "skipped": 0,
-      "failed": 113,
+      "failed": 114,
       "running": true
     },
     {
@@ -34,7 +34,7 @@
       "workerId": "Worker-Maths",
       "processed": 94,
       "skipped": 0,
-      "failed": 117,
+      "failed": 118,
       "running": true
     },
     {
@@ -48,11 +48,47 @@
       "workerId": "Worker-Other",
       "processed": 108,
       "skipped": 0,
-      "failed": 121,
+      "failed": 122,
       "running": true
     }
   ],
   "recent_events": [
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating pyq_style for General Principles and Processes of Isolation of Elements (Chemistry)",
+      "timestamp": "2026-06-30T18:24:02.827Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating pyq_style for Electrochemistry (Chemistry)",
+      "timestamp": "2026-06-30T18:24:02.781Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T18:24:02.501Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T18:24:02.441Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "generating",
+      "message": "Generating long_answer for Electrochemistry (Chemistry)",
+      "timestamp": "2026-06-30T18:23:56.538Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "error",
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-06-30T18:23:56.130Z"
+    },
     {
       "workerId": "Worker-Physics",
       "status": "generating",
@@ -136,42 +172,6 @@
       "status": "error",
       "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
       "timestamp": "2026-06-30T18:22:04.103Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "generating",
-      "message": "Generating pyq_style for Wave Optics (Physics)",
-      "timestamp": "2026-06-30T18:21:56.027Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "error",
-      "message": "Validation failed for 12::Physics::Moving Charges and Magnetism::long_answer: Too few items in questions: 0 (minimum 2)",
-      "timestamp": "2026-06-30T18:21:55.781Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating pyq_style for Ray Optics and Optical Instruments (Physics)",
-      "timestamp": "2026-06-30T18:21:52.803Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "generating",
-      "message": "Generating pyq_style for Electromagnetic Waves (Physics)",
-      "timestamp": "2026-06-30T18:21:52.752Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating long_answer for Alternating Current (Physics)",
-      "timestamp": "2026-06-30T18:21:52.486Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:21:52.447Z"
     }
   ]
 }
