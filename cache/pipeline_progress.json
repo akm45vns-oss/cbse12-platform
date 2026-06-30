@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-30T18:19:14.938Z",
-  "elapsed_seconds": 7976,
-  "rate_per_second": 0.61,
+  "updated_at": "2026-06-30T18:20:35.017Z",
+  "elapsed_seconds": 8056,
+  "rate_per_second": 0.6,
   "queue": {
-    "completed": 4855,
-    "pending": 708,
+    "completed": 4862,
+    "pending": 701,
     "inFlight": 5,
     "failed": 0,
-    "retrying": 708,
+    "retrying": 701,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
@@ -18,160 +18,160 @@
   "workers": [
     {
       "workerId": "Worker-Physics",
-      "processed": 103,
+      "processed": 105,
       "skipped": 0,
       "failed": 109,
       "running": true
     },
     {
       "workerId": "Worker-Chemistry",
-      "processed": 111,
+      "processed": 113,
       "skipped": 0,
-      "failed": 111,
+      "failed": 113,
       "running": true
     },
     {
       "workerId": "Worker-Maths",
-      "processed": 92,
+      "processed": 93,
       "skipped": 0,
-      "failed": 111,
+      "failed": 112,
       "running": true
     },
     {
       "workerId": "Worker-Biology",
-      "processed": 107,
+      "processed": 108,
       "skipped": 0,
-      "failed": 111,
+      "failed": 113,
       "running": true
     },
     {
       "workerId": "Worker-Other",
-      "processed": 106,
+      "processed": 107,
       "skipped": 0,
-      "failed": 117,
+      "failed": 119,
       "running": true
     }
   ],
   "recent_events": [
     {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating difficulty_tags for Sports Nutrition (Physical Education)",
-      "timestamp": "2026-06-30T18:18:58.286Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "done",
-      "message": "✅ Physical Education/Children and Women in Sports/key_definitions",
-      "timestamp": "2026-06-30T18:18:58.078Z"
-    },
-    {
       "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating formula_sheet for Sports Nutrition (Physical Education)",
-      "timestamp": "2026-06-30T18:18:57.910Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "done",
-      "message": "✅ Physical Education/Management of Sporting Events/formula_sheet",
-      "timestamp": "2026-06-30T18:18:57.708Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating ncert_summary for Physical Education and Sports for CWSN (Physical Education)",
-      "timestamp": "2026-06-30T18:18:57.390Z"
+      "message": "Generating ncert_summary for Doping — Drugs in Sports (Physical Education)",
+      "timestamp": "2026-06-30T18:20:23.925Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "generating",
-      "message": "Generating difficulty_tags for Physical Education and Sports for CWSN (Physical Education)",
-      "timestamp": "2026-06-30T18:18:57.355Z"
+      "message": "Generating formula_sheet for Training in Sports (Physical Education)",
+      "timestamp": "2026-06-30T18:20:23.893Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T18:20:23.671Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:18:57.101Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "done",
-      "message": "✅ Physical Education/Management of Sporting Events/difficulty_tags",
-      "timestamp": "2026-06-30T18:18:57.069Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating key_definitions for Children and Women in Sports (Physical Education)",
-      "timestamp": "2026-06-30T18:18:38.155Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "done",
-      "message": "✅ Physical Education/Management of Sporting Events/ncert_summary",
-      "timestamp": "2026-06-30T18:18:37.956Z"
+      "timestamp": "2026-06-30T18:20:23.645Z"
     },
     {
       "workerId": "Worker-Maths",
       "status": "generating",
-      "message": "Generating formula_sheet for Children and Women in Sports (Physical Education)",
-      "timestamp": "2026-06-30T18:18:37.725Z"
+      "message": "Generating ncert_summary for Training in Sports (Physical Education)",
+      "timestamp": "2026-06-30T18:20:05.112Z"
     },
     {
       "workerId": "Worker-Maths",
       "status": "done",
-      "message": "✅ Physical Education/Management of Sporting Events/key_definitions",
-      "timestamp": "2026-06-30T18:18:37.517Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating difficulty_tags for Management of Sporting Events (Physical Education)",
-      "timestamp": "2026-06-30T18:18:37.082Z"
+      "message": "✅ Physical Education/Test and Measurement in Sports/important_concepts",
+      "timestamp": "2026-06-30T18:20:04.920Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "generating",
-      "message": "Generating important_concepts for Management of Sporting Events (Physical Education)",
-      "timestamp": "2026-06-30T18:18:37.047Z"
+      "message": "Generating formula_sheet for Psychology and Sports (Physical Education)",
+      "timestamp": "2026-06-30T18:20:04.138Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating short_notes for Psychology and Sports (Physical Education)",
+      "timestamp": "2026-06-30T18:20:03.947Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "done",
+      "message": "✅ Physical Education/Measurement and Evaluation in Sports/short_notes",
+      "timestamp": "2026-06-30T18:20:03.936Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "done",
+      "message": "✅ Physical Education/Test and Measurement in Sports/difficulty_tags",
+      "timestamp": "2026-06-30T18:20:03.758Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating key_definitions for Biomechanics and Sports (Physical Education)",
+      "timestamp": "2026-06-30T18:20:03.604Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating important_concepts for Biomechanics and Sports (Physical Education)",
+      "timestamp": "2026-06-30T18:20:03.546Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T18:20:03.352Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "done",
+      "message": "✅ Physical Education/Measurement and Evaluation in Sports/difficulty_tags",
+      "timestamp": "2026-06-30T18:20:03.346Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating important_concepts for Test and Measurement in Sports (Physical Education)",
+      "timestamp": "2026-06-30T18:19:42.306Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating difficulty_tags for Test and Measurement in Sports (Physical Education)",
+      "timestamp": "2026-06-30T18:19:42.245Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T18:19:42.105Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:18:36.885Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "done",
-      "message": "✅ Physical Education/Management of Sporting Events/short_notes",
-      "timestamp": "2026-06-30T18:18:36.854Z"
+      "timestamp": "2026-06-30T18:19:42.049Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating formula_sheet for Management of Sporting Events (Physical Education)",
-      "timestamp": "2026-06-30T18:18:36.477Z"
+      "message": "Generating ncert_summary for Test and Measurement in Sports (Physical Education)",
+      "timestamp": "2026-06-30T18:19:40.804Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "done",
-      "message": "✅ Political Science/Recent Developments in Indian Politics/key_definitions",
-      "timestamp": "2026-06-30T18:18:36.212Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating key_definitions for Management of Sporting Events (Physical Education)",
-      "timestamp": "2026-06-30T18:18:34.156Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "error",
-      "message": "Validation failed for 12::Political Science::India's External Relations::formula_sheet: Too few items in formulas: 0 (minimum 1)",
-      "timestamp": "2026-06-30T18:18:33.960Z"
+      "message": "✅ Physical Education/Measurement and Evaluation in Sports/ncert_summary",
+      "timestamp": "2026-06-30T18:19:40.607Z"
     }
   ]
 }

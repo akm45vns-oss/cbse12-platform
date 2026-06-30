@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Physical Education",
+  "chapter": "Sports Nutrition",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T18:19:36.527Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Energy Balance Equation",
+        "formula": "Energy Intake = Energy Expenditure",
+        "variables": "Energy Intake (food and drinks consumed), Energy Expenditure (physical activity, thermogenesis)",
+        "units": "Kcal",
+        "notes": "Important for maintaining a healthy weight and preventing energy imbalances"
+      },
+      {
+        "name": "Basal Metabolic Rate (BMR) Formula",
+        "formula": "BMR = (10 × Weight in kg) + (6.25 × Height in cm) - (5 × Age in years) + 5",
+        "variables": "Weight in kg, Height in cm, Age in years",
+        "units": "Kcal/day",
+        "notes": "Used to estimate energy expenditure at rest"
+      },
+      {
+        "name": "Dehydration Formula",
+        "formula": "Percent Dehydration = (Body Weight Loss / Initial Body Weight) × 100",
+        "variables": "Body Weight Loss, Initial Body Weight",
+        "units": "%",
+        "notes": "Used to assess the degree of dehydration"
+      },
+      {
+        "name": "Hypohydration Formula",
+        "formula": "Percent Hypohydration = (Body Weight Loss / Initial Body Weight) × 100",
+        "variables": "Body Weight Loss, Initial Body Weight",
+        "units": "%",
+        "notes": "Used to assess the degree of hypohydration"
+      },
+      {
+        "name": "Energy Expenditure Formula",
+        "formula": "Energy Expenditure = BMR + Thermic Effect of Food + Physical Activity Level",
+        "variables": "BMR, Thermic Effect of Food, Physical Activity Level",
+        "units": "Kcal",
+        "notes": "Used to estimate daily energy expenditure"
+      },
+      {
+        "name": "Carbohydrate Loading Formula",
+        "formula": "Carbohydrate Loading = (Total Daily Energy Expenditure / 4) + (Carbohydrate-Rich Foods)",
+        "variables": "Total Daily Energy Expenditure, Carbohydrate-Rich Foods",
+        "units": "g",
+        "notes": "Used to maximize muscle glycogen stores before intense exercise"
+      },
+      {
+        "name": "Protein Needs Formula",
+        "formula": "Protein Needs = (Body Weight in kg × Activity Level) + (1-2 g/kg body weight)",
+        "variables": "Body Weight in kg, Activity Level",
+        "units": "g",
+        "notes": "Used to determine protein requirements for optimal performance"
+      }
+    ]
+  }
+}
