@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Accountancy",
+  "chapter": "Analysis of Financial Statements",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T16:46:07.711Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The financial statements of XYZ Ltd. for the year ended March 31, 2023, show that the company has a total revenue of ₹ 10,00,000 and expenses amounting to ₹ 7,50,000. The company's net cash flow from operating activities is ₹ 3,00,000. The financial statements also indicate that the company has a current ratio of 2:3 and a quick ratio of 1:2. The company's return on equity (ROE) is 20% and return on assets (ROA) is 15%. Using these ratios and financials, evaluate whether XYZ Ltd. is a profitable and financially stable company.",
+        "questions": [
+          {
+            "q": "What is the net profit of XYZ Ltd.?",
+            "opts": [
+              "(A) ₹ 2,50,000",
+              "(B) ₹ 2,00,000",
+              "(C) ₹ 3,00,000",
+              "(D) ₹ 1,50,000"
+            ],
+            "ans": "A",
+            "explanation": "Net profit = Total Revenue - Total Expenses = ₹ 10,00,000 - ₹ 7,50,000 = ₹ 2,50,000"
+          },
+          {
+            "q": "What is the current ratio of XYZ Ltd.?",
+            "opts": [
+              "(A) 2:3",
+              "(B) 3:2",
+              "(C) 1:2",
+              "(D) 1:3"
+            ],
+            "ans": "A",
+            "explanation": "Current Ratio = Current Assets / Current Liabilities = 2:3"
+          },
+          {
+            "q": "What is the quick ratio of XYZ Ltd.?",
+            "opts": [
+              "(A) 2:3",
+              "(B) 1:2",
+              "(C) 3:2",
+              "(D) 4:5"
+            ],
+            "ans": "B",
+            "explanation": "Quick Ratio = (Current Assets - Inventory) / Current Liabilities = 1:2"
+          },
+          {
+            "q": "What is the return on equity (ROE) of XYZ Ltd.?",
+            "opts": [
+              "(A) 10%",
+              "(B) 15%",
+              "(C) 20%",
+              "(D) 25%"
+            ],
+            "ans": "C",
+            "explanation": "ROE = Net Profit / Shareholders' Equity = 20%"
+          },
+          {
+            "q": "What is the return on assets (ROA) of XYZ Ltd.?",
+            "opts": [
+              "(A) 10%",
+              "(B) 15%",
+              "(C) 20%",
+              "(D) 25%"
+            ],
+            "ans": "B",
+            "explanation": "ROA = Net Profit / Total Assets = 15%"
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "ABC Ltd. is a manufacturing company that produces electronic components. The company's financial statements for the year ended March 31, 2023, show that the total revenue is ₹ 15,00,000 and the total expenses amount to ₹ 12,00,000. The company's current ratio is 4:5 and the quick ratio is 2:3. Using these financials and ratios, evaluate whether ABC Ltd. is a financially stable company.",
+        "questions": [
+          {
+            "q": "What is the net profit of ABC Ltd.?",
+            "opts": [
+              "(A) ₹ 3,00,000",
+              "(B) ₹ 2,00,000",
+              "(C) ₹ 1,50,000",
+              "(D) ₹ 3,50,000"
+            ],
+            "ans": "A",
+            "explanation": "Net profit = Total Revenue - Total Expenses = ₹ 15,00,000 - ₹ 12,00,000 = ₹ 3,00,000"
+          },
+          {
+            "q": "What is the current ratio of ABC Ltd.?",
+            "opts": [
+              "(A) 4:5",
+              "(B) 3:2",
+              "(C) 2:3",
+              "(D) 1:3"
+            ],
+            "ans": "A",
+            "explanation": "Current Ratio = Current Assets / Current Liabilities = 4:5"
+          },
+          {
+            "q": "What is the quick ratio of ABC Ltd.?",
+            "opts": [
+              "(A) 2:3",
+              "(B) 4:3",
+              "(C) 1:2",
+              "(D) 3:4"
+            ],
+            "ans": "A",
+            "explanation": "Quick Ratio = (Current Assets - Inventory) / Current Liabilities = 2:3"
+          },
+          {
+            "q": "What is the net cash flow from operating activities of ABC Ltd.?",
+            "opts": [
+              "(A) ₹ 1,50,000",
+              "(B) ₹ 2,50,000",
+              "(C) ₹ 3,00,000",
+              "(D) ₹ 1,00,000"
+            ],
+            "ans": "C",
+            "explanation": "Net cash flow from operating activities is not provided in the passage."
+          },
+          {
+            "q": "Is ABC Ltd. financially stable based on the given ratios and financials?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) May be",
+              "(D) Cannot be determined"
+            ],
+            "ans": "A",
+            "explanation": "Yes, based on the given ratios and financials, ABC Ltd. appears to be a financially stable company."
+          }
+        ]
+      }
+    ]
+  }
+}

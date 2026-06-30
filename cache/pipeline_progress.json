@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-30T16:45:30.773Z",
-  "elapsed_seconds": 2352,
-  "rate_per_second": 1.94,
+  "updated_at": "2026-06-30T16:54:31.153Z",
+  "elapsed_seconds": 2892,
+  "rate_per_second": 1.59,
   "queue": {
-    "completed": 4571,
-    "pending": 992,
+    "completed": 4595,
+    "pending": 968,
     "inFlight": 5,
     "failed": 0,
-    "retrying": 992,
+    "retrying": 968,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
@@ -18,37 +18,37 @@
   "workers": [
     {
       "workerId": "Worker-Physics",
-      "processed": 43,
+      "processed": 49,
       "skipped": 0,
-      "failed": 41,
+      "failed": 51,
       "running": true
     },
     {
       "workerId": "Worker-Chemistry",
-      "processed": 53,
+      "processed": 59,
       "skipped": 0,
-      "failed": 43,
+      "failed": 50,
       "running": true
     },
     {
       "workerId": "Worker-Maths",
-      "processed": 46,
+      "processed": 47,
       "skipped": 0,
-      "failed": 46,
+      "failed": 55,
       "running": true
     },
     {
       "workerId": "Worker-Biology",
-      "processed": 48,
+      "processed": 53,
       "skipped": 0,
-      "failed": 42,
+      "failed": 53,
       "running": true
     },
     {
       "workerId": "Worker-Other",
-      "processed": 45,
+      "processed": 51,
       "skipped": 0,
-      "failed": 56,
+      "failed": 61,
       "running": true
     }
   ],
@@ -56,122 +56,122 @@
     {
       "workerId": "Worker-Physics",
       "status": "generating",
-      "message": "Generating mcqs for Accounting for Share Capital (Accountancy)",
-      "timestamp": "2026-06-30T16:45:22.446Z"
+      "message": "Generating assertion_reason for International Organisations (Political Science)",
+      "timestamp": "2026-06-30T16:54:29.924Z"
     },
     {
       "workerId": "Worker-Physics",
       "status": "done",
-      "message": "✅ Accountancy/Accounting for Partnership: Basic Concepts/short_answer",
-      "timestamp": "2026-06-30T16:45:22.243Z"
+      "message": "✅ Political Science/US Hegemony in World Politics/assertion_reason",
+      "timestamp": "2026-06-30T16:54:29.663Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating case_based for International Organisations (Political Science)",
+      "timestamp": "2026-06-30T16:54:26.902Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T16:54:26.665Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating case_based for Dissolution of Partnership Firm (Accountancy)",
-      "timestamp": "2026-06-30T16:45:19.863Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating short_answer for Reconstitution of Partnership: Retirement & Death (Accountancy)",
-      "timestamp": "2026-06-30T16:45:19.688Z"
+      "message": "Generating short_answer for Alternative Centres of Power (Political Science)",
+      "timestamp": "2026-06-30T16:54:25.674Z"
     },
     {
       "workerId": "Worker-Chemistry",
-      "status": "done",
-      "message": "✅ Economics/Balance of Payments and Foreign Exchange/short_answer",
-      "timestamp": "2026-06-30T16:45:19.663Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "done",
-      "message": "✅ Economics/Balance of Payments and Foreign Exchange/mcqs",
-      "timestamp": "2026-06-30T16:45:19.438Z"
+      "status": "error",
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-06-30T16:54:25.365Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "generating",
-      "message": "Generating assertion_reason for Reconstitution of Partnership: Retirement & Death (Accountancy)",
-      "timestamp": "2026-06-30T16:45:19.331Z"
+      "message": "Generating case_based for Contemporary South Asia (Political Science)",
+      "timestamp": "2026-06-30T16:53:52.067Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T16:45:18.984Z"
+      "message": "Validation failed for 12::Political Science::US Hegemony in World Politics::mcqs: Duplicate question/item within response: \"The US has been criticized for its?...\"; Duplicate question/item within response: \"The US has been criticized for its?...\"",
+      "timestamp": "2026-06-30T16:53:51.833Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "generating",
-      "message": "Generating short_answer for Reconstitution of Partnership: Admission (Accountancy)",
-      "timestamp": "2026-06-30T16:44:51.546Z"
+      "message": "Generating assertion_reason for Contemporary South Asia (Political Science)",
+      "timestamp": "2026-06-30T16:53:48.417Z"
     },
     {
       "workerId": "Worker-Other",
-      "status": "done",
-      "message": "✅ Economics/Balance of Payments and Foreign Exchange/case_based",
-      "timestamp": "2026-06-30T16:44:51.292Z"
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T16:53:48.087Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "generating",
+      "message": "Generating mcqs for Alternative Centres of Power (Political Science)",
+      "timestamp": "2026-06-30T16:52:57.396Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "generating",
-      "message": "Generating case_based for Reconstitution of Partnership: Admission (Accountancy)",
-      "timestamp": "2026-06-30T16:44:49.999Z"
+      "message": "Generating mcqs for US Hegemony in World Politics (Political Science)",
+      "timestamp": "2026-06-30T16:52:57.361Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T16:52:57.137Z"
     },
     {
       "workerId": "Worker-Biology",
-      "status": "done",
-      "message": "✅ Economics/Determination of Income and Employment/assertion_reason",
-      "timestamp": "2026-06-30T16:44:49.785Z"
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T16:52:57.075Z"
     },
     {
       "workerId": "Worker-Physics",
       "status": "generating",
-      "message": "Generating short_answer for Accounting for Partnership: Basic Concepts (Accountancy)",
-      "timestamp": "2026-06-30T16:44:49.697Z"
+      "message": "Generating assertion_reason for US Hegemony in World Politics (Political Science)",
+      "timestamp": "2026-06-30T16:52:45.117Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "done",
+      "message": "✅ History/Mahatma Gandhi and the Nationalist Movement/mcqs",
+      "timestamp": "2026-06-30T16:52:44.929Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating mcqs for The End of Bipolarity (Political Science)",
+      "timestamp": "2026-06-30T16:52:43.696Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "done",
+      "message": "✅ History/Mahatma Gandhi and the Nationalist Movement/assertion_reason",
+      "timestamp": "2026-06-30T16:52:43.433Z"
     },
     {
       "workerId": "Worker-Maths",
       "status": "generating",
-      "message": "Generating mcqs for Balance of Payments and Foreign Exchange (Economics)",
-      "timestamp": "2026-06-30T16:44:49.423Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Validation failed for 12::Accountancy::Reconstitution of Partnership: Admission::mcqs: Duplicate question/item within response: \"A new partner is admitted into a partnership with a capital ...\"",
-      "timestamp": "2026-06-30T16:44:49.364Z"
+      "message": "Generating short_answer for The Cold War Era (Political Science)",
+      "timestamp": "2026-06-30T16:52:43.064Z"
     },
     {
       "workerId": "Worker-Maths",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T16:44:49.142Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating assertion_reason for Balance of Payments and Foreign Exchange (Economics)",
-      "timestamp": "2026-06-30T16:44:37.653Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "done",
-      "message": "✅ Accountancy/Accounting for Not-for-Profit Organisations/short_answer",
-      "timestamp": "2026-06-30T16:44:37.337Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating mcqs for Reconstitution of Partnership: Admission (Accountancy)",
-      "timestamp": "2026-06-30T16:44:34.550Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T16:44:34.315Z"
+      "timestamp": "2026-06-30T16:52:42.803Z"
     }
   ]
 }

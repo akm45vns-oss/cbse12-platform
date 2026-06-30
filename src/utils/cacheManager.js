@@ -2,7 +2,7 @@
  * Cache Manager - Optimized localStorage caching with TTL
  */
 
-const VERSION = 'v3'; // Increment to invalidate all caches
+const VERSION = 'v4'; // Increment to invalidate all caches
 const CACHE_KEYS = {
   NOTES: 'akmedu_notes',
   QUIZ: 'akmedu_quiz',
