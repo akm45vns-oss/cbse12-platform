@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Current Electricity",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T17:02:51.792Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Ohm's Law",
+        "formula": "V = IR",
+        "variables": "V = Voltage, I = Current, R = Resistance",
+        "units": "V = V, A = A, Ω = Ω",
+        "notes": "Used to calculate voltage, current, or resistance given the other two."
+      },
+      {
+        "name": "Resistivity",
+        "formula": "ρ = R × A / L",
+        "variables": "ρ = Resistivity, R = Resistance, A = Cross-sectional area, L = Length",
+        "units": "Ωm = Ωm",
+        "notes": "Used to calculate resistivity given resistance, area, and length."
+      },
+      {
+        "name": "Resistivity of a wire",
+        "formula": "R = ρ(L/A)",
+        "variables": "R = Resistance, ρ = Resistivity, L = Length, A = Cross-sectional area",
+        "units": "Ω = Ω",
+        "notes": "Used to calculate resistance given resistivity, length, and area."
+      },
+      {
+        "name": "Power in an electric circuit",
+        "formula": "P = VI",
+        "variables": "P = Power, V = Voltage, I = Current",
+        "units": "W = W",
+        "notes": "Used to calculate power given voltage and current."
+      },
+      {
+        "name": "Power in an electric circuit (alternative)",
+        "formula": "P = I^2R",
+        "variables": "P = Power, I = Current, R = Resistance",
+        "units": "W = W",
+        "notes": "Used to calculate power given current and resistance."
+      },
+      {
+        "name": "Current in a parallel circuit",
+        "formula": "I = I1 + I2 + ... + In",
+        "variables": "I = Total current, I1, I2, ..., In = Individual currents",
+        "units": "A = A",
+        "notes": "Used to calculate total current given individual currents in a parallel circuit."
+      },
+      {
+        "name": "Potential difference in a parallel circuit",
+        "formula": "V = V1 = V2 = ... = Vn",
+        "variables": "V = Potential difference, V1, V2, ..., Vn = Individual voltages",
+        "units": "V = V",
+        "notes": "Used to calculate individual voltages given the potential difference in a parallel circuit."
+      }
+    ]
+  }
+}

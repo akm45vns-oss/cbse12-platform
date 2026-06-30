@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "MySQL Functions and Grouping",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T17:24:52.570Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "GROUP BY Clause",
+        "formula": "Used to group the result-set by one or more columns",
+        "variables": "Columns to group by",
+        "units": "",
+        "notes": "Use to group rows that have the same values in a particular column(s)"
+      },
+      {
+        "name": "HAVING Clause",
+        "formula": "Used to filter grouped result-set",
+        "variables": "Conditions to filter the grouped result-set",
+        "units": "",
+        "notes": "Use to filter grouped rows that meet a certain condition"
+      },
+      {
+        "name": "Aggregate Functions",
+        "formula": "Used to perform calculations on a set of values",
+        "variables": "Functions such as SUM, AVG, MAX, MIN, COUNT",
+        "units": "",
+        "notes": "Use to perform calculations such as sum, average, maximum, minimum, and count"
+      },
+      {
+        "name": "GROUPING SETS",
+        "formula": "Used to specify multiple groups",
+        "variables": "Multiple columns to group by",
+        "units": "",
+        "notes": "Use to specify multiple groups for the result-set"
+      },
+      {
+        "name": "ROLLUP",
+        "formula": "Used to generate aggregate values for all levels of grouping",
+        "variables": "Columns to group by",
+        "units": "",
+        "notes": "Use to generate aggregate values for all levels of grouping"
+      },
+      {
+        "name": "CUBE",
+        "formula": "Used to generate aggregate values for all possible combinations of grouping",
+        "variables": "Columns to group by",
+        "units": "",
+        "notes": "Use to generate aggregate values for all possible combinations of grouping"
+      },
+      {
+        "name": "GROUP BY with ORDER BY",
+        "formula": "Used to sort the result-set after grouping",
+        "variables": "Columns to sort by",
+        "units": "",
+        "notes": "Use to sort the result-set after grouping"
+      }
+    ]
+  }
+}

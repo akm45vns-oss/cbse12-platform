@@ -1,0 +1,88 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Stack",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T17:20:35.773Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Stack",
+        "definition": "A stack is a linear data structure that follows the Last In First Out (LIFO) principle. It means the last element added to the stack will be the first one to be removed. The stack can be visualized as a vertical pile of plates.",
+        "example": "E.g., when we use the undo feature in a text editor, it uses a stack to keep track of the previous states of the document."
+      },
+      {
+        "term": "Last In First Out (LIFO)",
+        "definition": "A principle where the last element added to the stack is the first one to be removed. It means the most recently added element will be the first one to be removed.",
+        "example": "E.g., when we use the undo feature in a text editor, it follows the LIFO principle to keep track of the previous states of the document."
+      },
+      {
+        "term": "Top Element",
+        "definition": "The top element is the most recently added element to the stack. It is the first element to be removed when we use the pop operation.",
+        "example": "E.g., in a stack of plates, the top plate is the most recently added plate."
+      },
+      {
+        "term": "Bottom Element",
+        "definition": "The bottom element is the least recently added element to the stack. It is the last element to be removed when we use the pop operation.",
+        "example": "E.g., in a stack of plates, the bottom plate is the least recently added plate."
+      },
+      {
+        "term": "Push",
+        "definition": "An operation that adds an element to the top of the stack.",
+        "example": "E.g., when we use the push operation in a stack, it adds a new element to the top of the stack."
+      },
+      {
+        "term": "Pop",
+        "definition": "An operation that removes the top element from the stack.",
+        "example": "E.g., when we use the pop operation in a stack, it removes the top element from the stack."
+      },
+      {
+        "term": "Empty Stack",
+        "definition": "A stack that contains no elements. It is also known as an empty stack.",
+        "example": "E.g., when we create a new stack, it is initially an empty stack."
+      },
+      {
+        "term": "Full Stack",
+        "definition": "A stack that contains all elements it can hold. It is also known as a full stack.",
+        "example": "E.g., when we add all elements to a stack, it becomes a full stack."
+      },
+      {
+        "term": "Stack Operations",
+        "definition": "The basic operations that can be performed on a stack, including push and pop.",
+        "example": "E.g., when we use the stack operations in a text editor, it allows us to undo and redo actions."
+      },
+      {
+        "term": "Stack ADT",
+        "definition": "A stack abstract data type that provides a set of operations to manipulate the stack.",
+        "example": "E.g., when we use the stack ADT in a text editor, it provides a set of operations to undo and redo actions."
+      },
+      {
+        "term": "Stack Implementation",
+        "definition": "A way to implement a stack using an array or linked list.",
+        "example": "E.g., when we implement a stack using an array, it is known as an array-based stack."
+      },
+      {
+        "term": "Array-Based Stack",
+        "definition": "A stack implementation that uses an array to store the elements.",
+        "example": "E.g., when we use an array-based stack, it is a simple and efficient way to implement a stack."
+      },
+      {
+        "term": "Linked List-Based Stack",
+        "definition": "A stack implementation that uses a linked list to store the elements.",
+        "example": "E.g., when we use a linked list-based stack, it is a dynamic way to implement a stack."
+      },
+      {
+        "term": "Stack Operations Time Complexity",
+        "definition": "The time complexity of the stack operations, including push and pop.",
+        "example": "E.g., when we use an array-based stack, the push and pop operations have a time complexity of O(1)."
+      },
+      {
+        "term": "Stack Operations Space Complexity",
+        "definition": "The space complexity of the stack operations, including push and pop.",
+        "example": "E.g., when we use an array-based stack, the push and pop operations have a space complexity of O(1)."
+      }
+    ]
+  }
+}

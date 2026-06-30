@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Accountancy",
+  "chapter": "Accounting for Share Capital",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T17:46:42.809Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Calculation of Called-Up Share Capital",
+        "formula": "Called-Up Share Capital = Number of Shares Issued × Rate of Call per Share",
+        "variables": "Number of Shares Issued, Rate of Call per Share",
+        "units": "-",
+        "notes": "To find the amount of share capital called up from shareholders"
+      },
+      {
+        "name": "2. Calculation of Paid-Up Share Capital",
+        "formula": "Paid-Up Share Capital = Number of Shares Issued × Amount Paid per Share",
+        "variables": "Number of Shares Issued, Amount Paid per Share",
+        "units": "-",
+        "notes": "To find the amount of share capital actually received from shareholders"
+      },
+      {
+        "name": "3. Calculation of Reserve Share Capital (or Uncalled Share Capital)",
+        "formula": "Reserve Share Capital = Authorized Share Capital - Called-Up Share Capital",
+        "variables": "Authorized Share Capital, Called-Up Share Capital",
+        "units": "-",
+        "notes": "To find the remaining share capital that can be called up in the future"
+      },
+      {
+        "name": "4. Calculation of Calls-in-Arrear",
+        "formula": "Calls-in-Arrear = Number of Shares not Fully Paid × Amount of Each Call not Paid",
+        "variables": "Number of Shares not Fully Paid, Amount of Each Call not Paid",
+        "units": "-",
+        "notes": "To find the amount of share capital not received due to default by shareholders"
+      },
+      {
+        "name": "5. Calculation of Calls-in-Advance",
+        "formula": "Calls-in-Advance = Number of Shares × Amount of Each Call Paid in Advance",
+        "variables": "Number of Shares, Amount of Each Call Paid in Advance",
+        "units": "-",
+        "notes": "To find the excess amount of share capital received from shareholders"
+      },
+      {
+        "name": "6. Calculation of Share Application Money",
+        "formula": "Share Application Money = Number of Shares Applied for × Application Money per Share",
+        "variables": "Number of Shares Applied for, Application Money per Share",
+        "units": "-",
+        "notes": "To find the initial amount received from applicants for share allotment"
+      },
+      {
+        "name": "7. Calculation of Share Allotment Money",
+        "formula": "Share Allotment Money = Number of Shares Allotted × Allotment Money per Share",
+        "variables": "Number of Shares Allotted, Allotment Money per Share",
+        "units": "-",
+        "notes": "To find the amount received from shareholders upon allotment of shares"
+      },
+      {
+        "name": "8. Calculation of Share Capital on Forfeiture of Shares",
+        "formula": "Share Capital on Forfeiture = Called-Up Share Capital - Forfeited Amount",
+        "variables": "Called-Up Share Capital, Forfeited Amount",
+        "units": "-",
+        "notes": "To adjust share capital when shares are forfeited due to non-payment"
+      },
+      {
+        "name": "9. Calculation of Reissue Price of Forfeited Shares",
+        "formula": "Reissue Price = Face Value - Forfeited Amount + Discount (if any) or Premium (if any) per Share",
+        "variables": "Face Value, Forfeited Amount, Discount or Premium per Share",
+        "units": "-",
+        "notes": "To determine the price at which forfeited shares can be reissued"
+      },
+      {
+        "name": "10. Calculation of Discount on Issue of Shares",
+        "formula": "Discount on Issue = Nominal Value of Share - Issue Price per Share",
+        "variables": "Nominal Value of Share, Issue Price per Share",
+        "units": "-",
+        "notes": "To calculate the discount allowed on the issue of shares"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T17:19:26.948Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Function Definition",
+        "definition": "A block of code that takes arguments, performs operations, and returns values",
+        "notes": "Used to group a set of statements together, making code more modular and reusable"
+      },
+      {
+        "name": "Function Call",
+        "definition": "The process of invoking a function, passing arguments, and receiving the return value",
+        "notes": "Can be used to reuse a block of code multiple times in a program"
+      },
+      {
+        "name": "Pass by Value",
+        "definition": "A method of passing arguments to a function where a copy of the original value is passed",
+        "notes": "Changes made to the argument within the function do not affect the original value"
+      },
+      {
+        "name": "Pass by Reference",
+        "definition": "A method of passing arguments to a function where the original variable is passed",
+        "notes": "Changes made to the argument within the function affect the original value"
+      },
+      {
+        "name": "Return Statement",
+        "definition": "A statement that terminates the execution of a function and returns a value",
+        "notes": "Used to provide the result of a function to the caller"
+      },
+      {
+        "name": "Function Overloading",
+        "definition": "A feature that allows multiple functions with the same name but different parameters",
+        "notes": "Used to provide different implementations for the same function based on the input parameters"
+      },
+      {
+        "name": "Function Overriding",
+        "definition": "A feature that allows a subclass to provide a different implementation of a function already defined in its superclass",
+        "notes": "Used to provide a more specific implementation of a function in a subclass"
+      }
+    ]
+  }
+}

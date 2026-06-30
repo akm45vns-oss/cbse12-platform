@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Economics",
+  "chapter": "National Income and Related Aggregates",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T17:38:03.915Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Nominal GDP",
+        "formula": "GDP = Σp₀q₀",
+        "variables": "GDP: Gross Domestic Product, p₀: Price of the year 0, q₀: Quantity of the year 0",
+        "units": "Rupees (₹)",
+        "notes": "Nominal GDP is calculated at the current prices of the year."
+      },
+      {
+        "name": "Real GDP",
+        "formula": "Real GDP = GDP₀ × (P₁ / P₀)",
+        "variables": "GDP: Gross Domestic Product, P₁: Price of the year 1, P₀: Price of the year 0",
+        "units": "Rupees (₹)",
+        "notes": "Real GDP is calculated at the prices of the base year (usually year 0)."
+      },
+      {
+        "name": "GDP Deflator",
+        "formula": "GDP Deflator = (Nominal GDP / Real GDP) × 100",
+        "variables": "Nominal GDP: Gross Domestic Product at current prices, Real GDP: Gross Domestic Product at constant prices",
+        "units": "%",
+        "notes": "GDP Deflator measures the price changes over a period of time."
+      },
+      {
+        "name": "National Income at Factor Cost",
+        "formula": "NIFC = (Wages and Salaries) + (Rent) + (Interest) + (Profit)",
+        "variables": "NIFC: National Income at Factor Cost, Wages and Salaries: Compensation paid to factors of production",
+        "units": "Rupees (₹)",
+        "notes": "National Income at Factor Cost includes all factor incomes."
+      },
+      {
+        "name": "National Income at Market Price",
+        "formula": "NIMP = NIFC + (Indirect Taxes) - (Subsidies)",
+        "variables": "NIMP: National Income at Market Price, NIFC: National Income at Factor Cost",
+        "units": "Rupees (₹)",
+        "notes": "National Income at Market Price includes taxes and subsidies."
+      },
+      {
+        "name": "Saving (S)",
+        "formula": "S = Y - C",
+        "variables": "S: Saving, Y: National Income, C: Consumption",
+        "units": "Rupees (₹)",
+        "notes": "Saving is the difference between National Income and Consumption."
+      },
+      {
+        "name": "Investment (I)",
+        "formula": "I = Y - C - S",
+        "variables": "I: Investment, Y: National Income, C: Consumption, S: Saving",
+        "units": "Rupees (₹)",
+        "notes": "Investment is the difference between National Income, Consumption, and Saving."
+      }
+    ]
+  }
+}

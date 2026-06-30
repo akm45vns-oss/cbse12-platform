@@ -1,0 +1,93 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Linear Programming",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T17:18:25.573Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Linear Programming",
+        "definition": "Linear Programming is a method to achieve the best outcome (such as maximum profit or lowest cost) in a given mathematical model for some list of requirements represented as linear relationships.",
+        "example": ""
+      },
+      {
+        "term": "Decision Variables",
+        "definition": "Decision Variables are the values that we need to find out, which are associated with the objective function and constraints.",
+        "example": "For example, in a production problem, the number of units produced is a decision variable."
+      },
+      {
+        "term": "Objective Function",
+        "definition": "The Objective Function is a mathematical function that needs to be maximized or minimized, depending on the problem.",
+        "example": "For example, in a production problem, the objective function might be the profit or cost."
+      },
+      {
+        "term": "Constraints",
+        "definition": "Constraints are the limitations or restrictions imposed on the decision variables, and they are usually expressed as equalities or inequalities.",
+        "example": "For example, in a production problem, a constraint might be the availability of raw materials."
+      },
+      {
+        "term": "Feasible Region",
+        "definition": "The Feasible Region is the set of all possible solutions, which satisfy all the constraints.",
+        "example": "For example, in a production problem, the feasible region might be the set of all possible production levels that satisfy the constraints."
+      },
+      {
+        "term": "Corner Point",
+        "definition": "A Corner Point is a point in the feasible region where the constraint lines intersect.",
+        "example": "For example, in a production problem, the corner points might be the points where the production level intersects with the raw material constraint."
+      },
+      {
+        "term": "Optimal Solution",
+        "definition": "The Optimal Solution is the solution that maximizes or minimizes the objective function within the feasible region.",
+        "example": "For example, in a production problem, the optimal solution might be the production level that maximizes profit."
+      },
+      {
+        "term": "Basic Feasible Solution",
+        "definition": "A Basic Feasible Solution is a solution that is both feasible and basic.",
+        "example": "For example, in a production problem, a basic feasible solution might be a production level that satisfies all the constraints and uses a minimal number of decision variables."
+      },
+      {
+        "term": "Basic Variables",
+        "definition": "Basic Variables are the decision variables that are basic in a basic feasible solution.",
+        "example": "For example, in a production problem, the basic variables might be the production levels of different products."
+      },
+      {
+        "term": "Non-Basic Variables",
+        "definition": "Non-Basic Variables are the decision variables that are not basic in a basic feasible solution.",
+        "example": "For example, in a production problem, the non-basic variables might be the slack variables."
+      },
+      {
+        "term": "Slack Variable",
+        "definition": "A Slack Variable is a variable that represents the amount by which a constraint is not met.",
+        "example": "For example, in a production problem, a slack variable might represent the excess raw materials available."
+      },
+      {
+        "term": "Artificial Variable",
+        "definition": "An Artificial Variable is a variable that is introduced to make a basic feasible solution feasible.",
+        "example": "For example, in a production problem, an artificial variable might be introduced to make a production level feasible."
+      },
+      {
+        "term": "Transportation Problem",
+        "definition": "A Transportation Problem is a type of linear programming problem where the goal is to minimize the total transportation cost.",
+        "example": "For example, in a production problem, the transportation problem might involve finding the optimal transportation routes."
+      },
+      {
+        "term": "Assignment Problem",
+        "definition": "An Assignment Problem is a type of linear programming problem where the goal is to assign tasks to workers in an optimal way.",
+        "example": "For example, in a production problem, the assignment problem might involve assigning tasks to workers in an optimal way."
+      },
+      {
+        "term": "Simplex Method",
+        "definition": "The Simplex Method is a popular algorithm used to solve linear programming problems.",
+        "example": "For example, in a production problem, the simplex method might be used to find the optimal production levels."
+      },
+      {
+        "term": "Tableau",
+        "definition": "A Tableau is a table that represents the current state of the problem during the simplex method.",
+        "example": "For example, in a production problem, the tableau might represent the current production levels and costs."
+      }
+    ]
+  }
+}

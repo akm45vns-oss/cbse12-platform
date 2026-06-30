@@ -1,0 +1,93 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Exception Handling",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T17:19:33.829Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Exception",
+        "definition": "An exception is an event that occurs during the execution of a program, which disrupts the normal flow of the program. It is an error or an unexpected event that occurs when a program attempts to perform an operation that is not allowed or is not supported.",
+        "example": "For example, attempting to divide a number by zero results in an ArithmeticException."
+      },
+      {
+        "term": "Exception Handling",
+        "definition": "Exception handling is a mechanism used to handle runtime errors and exceptions. It is a way to handle unexpected events that occur during the execution of a program.",
+        "example": "It helps prevent the program from crashing and provides a way to recover from errors."
+      },
+      {
+        "term": "Try block",
+        "definition": "A try block is a section of code within which an exception may occur. It is the block of code where the exception is likely to occur.",
+        "example": "try { int x = 5/0; }"
+      },
+      {
+        "term": "Catch block",
+        "definition": "A catch block is a section of code that handles an exception that occurs in the try block. It is where the exception is handled and the program continues to execute.",
+        "example": "catch (ArithmeticException e) { System.out.println('Error: ' + e.getMessage()); }"
+      },
+      {
+        "term": "Finally block",
+        "definition": "A finally block is a section of code that is executed regardless of whether an exception occurs or not. It is used to perform cleanup operations such as closing resources.",
+        "example": "finally { System.out.println('Program terminated.'); }"
+      },
+      {
+        "term": "Try-catch-finally block",
+        "definition": "A try-catch-finally block is a combination of a try block, a catch block, and a finally block. It is used to handle exceptions and perform cleanup operations.",
+        "example": "try { int x = 5/0; } catch (ArithmeticException e) { System.out.println('Error: ' + e.getMessage()); } finally { System.out.println('Program terminated.'); }"
+      },
+      {
+        "term": "Throw keyword",
+        "definition": "The throw keyword is used to explicitly throw an exception. It is used to indicate that an exception occurred.",
+        "example": "throw new ArithmeticException('Error: division by zero');"
+      },
+      {
+        "term": "Throws keyword",
+        "definition": "The throws keyword is used to declare that a method may throw an exception. It is used to indicate that a method may throw an exception.",
+        "example": "public void divide(int a, int b) throws ArithmeticException { int x = a/b; }"
+      },
+      {
+        "term": "Checked exception",
+        "definition": "A checked exception is an exception that must be either caught or declared in the throws clause of a method. It is a type of exception that is checked at compile-time.",
+        "example": "IOException, SQLException, etc."
+      },
+      {
+        "term": "Unchecked exception",
+        "definition": "An unchecked exception is an exception that does not need to be caught or declared in the throws clause of a method. It is a type of exception that is not checked at compile-time.",
+        "example": "RuntimeException, Error, etc."
+      },
+      {
+        "term": "Runtime exception",
+        "definition": "A runtime exception is a type of unchecked exception that occurs at runtime. It is an exception that is not checked at compile-time.",
+        "example": "NullPointerException, ArrayIndexOutOfBoundsException, etc."
+      },
+      {
+        "term": "Error",
+        "definition": "An error is a type of unchecked exception that indicates a serious problem that a reasonable application should not try to recover from. It is an exception that is not checked at compile-time.",
+        "example": "OutOfMemoryError, StackOverflowError, etc."
+      },
+      {
+        "term": "Exception class",
+        "definition": "An exception class is a class that extends the Exception class. It is a custom exception class that can be used to create custom exceptions.",
+        "example": "public class CustomException extends Exception { }"
+      },
+      {
+        "term": "Exception hierarchy",
+        "definition": "An exception hierarchy is a tree-like structure that shows the relationship between different exception classes. It is a way to categorize exceptions and handle them accordingly.",
+        "example": "Exception > RuntimeException > ArithmeticException > ..."
+      },
+      {
+        "term": "Multi-catch block",
+        "definition": "A multi-catch block is a catch block that can catch multiple types of exceptions. It is a way to handle multiple exceptions in a single catch block.",
+        "example": "catch (ArithmeticException | NullPointerException e) { System.out.println('Error: ' + e.getMessage()); }"
+      },
+      {
+        "term": "Try-with-resources statement",
+        "definition": "A try-with-resources statement is a way to automatically close resources such as files and connections. It is a way to ensure that resources are closed even if an exception occurs.",
+        "example": "try (File file = new File('example.txt')) { }"
+      }
+    ]
+  }
+}

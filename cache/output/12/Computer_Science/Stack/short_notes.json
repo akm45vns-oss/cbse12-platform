@@ -1,0 +1,12 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Stack",
+  "content_type": "short_notes",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T17:20:31.754Z",
+  "version": "1.0",
+  "data": {
+    "markdown": "# 3. SHORT NOTES (QUICK REVISION) - Stack\n\n- **Stack:** Last In First Out (LIFO) data structure where elements are added and removed from the top.\n- **Stack Operations:**\n  - Push: Add an element to the top of the stack.\n  - Pop: Remove an element from the top of the stack.\n  - Peek: View the element at the top of the stack.\n- **Stack ADT (Abstract Data Type):**\n  - Create stack: Initialize an empty stack.\n  - Push(x): Add element x to the top of the stack.\n  - Pop(): Remove and return the top element from the stack.\n  - Peek(): Return the top element from the stack without removal.\n  - IsEmpty(): Check if the stack is empty.\n  - IsFull(): Check if the stack is full.\n- **Stack Implementation:**\n  - Array-based stack: Uses an array to store elements.\n  - Linked list-based stack: Uses a linked list to store elements.\n- **Stack Properties:**\n  - Follows LIFO principle.\n  - Supports push, pop, peek, isEmpty, and isFull operations.\n- **Real-life Applications:**\n  - Evaluating postfix expressions.\n  - Converting infix to postfix and prefix expressions.\n  - Implementing recursive algorithms using iteration.\n- **Types of Stacks:**\n  - Basic stack.\n  - Min stack.\n  - Max stack.\n- **Min Stack:**\n  - Maintains the minimum element at the top of the stack.\n  - Supports push, pop, and getMin operations.\n- **Max Stack:**\n  - Maintains the maximum element at the top of the stack.\n  - Supports push, pop, and getMax operations.\n- **Balanced Binary Search Tree (BST) Stack:**\n  - Uses a stack to store nodes during insertion and deletion.\n- **Stack Algorithms:**\n  - Evaluating postfix expressions using a stack.\n  - Converting infix to postfix expressions using a stack.\n- **Stack Representation:**\n  - Array-based representation.\n  - Linked list-based representation.\n- **Time Complexity:**\n  - Push operation: O(1).\n  - Pop operation: O(1).\n  - Peek operation: O(1).\n- **Space Complexity:**\n  - Array-based stack: O(n).\n  - Linked list-based stack: O(n).\n- **Advantages:**\n  - Efficient implementation of recursive algorithms.\n  - Evaluating postfix expressions.\n- **Disadvantages:**\n  - Not suitable for applications requiring random access.\n- **Common Operations:**\n  - Push.\n  - Pop.\n  - Peek.\n  - isEmpty.\n  - isFull."
+  }
+}

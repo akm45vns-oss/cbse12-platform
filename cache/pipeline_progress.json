@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-30T16:57:11.264Z",
-  "elapsed_seconds": 3052,
-  "rate_per_second": 1.51,
+  "updated_at": "2026-06-30T18:19:14.938Z",
+  "elapsed_seconds": 7976,
+  "rate_per_second": 0.61,
   "queue": {
-    "completed": 4600,
-    "pending": 963,
+    "completed": 4855,
+    "pending": 708,
     "inFlight": 5,
     "failed": 0,
-    "retrying": 963,
+    "retrying": 708,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
@@ -18,160 +18,160 @@
   "workers": [
     {
       "workerId": "Worker-Physics",
-      "processed": 50,
+      "processed": 103,
       "skipped": 0,
-      "failed": 53,
+      "failed": 109,
       "running": true
     },
     {
       "workerId": "Worker-Chemistry",
-      "processed": 59,
+      "processed": 111,
       "skipped": 0,
-      "failed": 52,
+      "failed": 111,
       "running": true
     },
     {
       "workerId": "Worker-Maths",
-      "processed": 48,
+      "processed": 92,
       "skipped": 0,
-      "failed": 57,
+      "failed": 111,
       "running": true
     },
     {
       "workerId": "Worker-Biology",
-      "processed": 54,
+      "processed": 107,
       "skipped": 0,
-      "failed": 55,
+      "failed": 111,
       "running": true
     },
     {
       "workerId": "Worker-Other",
-      "processed": 53,
+      "processed": 106,
       "skipped": 0,
-      "failed": 61,
+      "failed": 117,
       "running": true
     }
   ],
   "recent_events": [
     {
-      "workerId": "Worker-Biology",
+      "workerId": "Worker-Physics",
       "status": "generating",
-      "message": "Generating mcqs for Challenges to the Congress System (Political Science)",
-      "timestamp": "2026-06-30T16:57:07.490Z"
+      "message": "Generating difficulty_tags for Sports Nutrition (Physical Education)",
+      "timestamp": "2026-06-30T18:18:58.286Z"
     },
     {
-      "workerId": "Worker-Other",
-      "status": "generating",
-      "message": "Generating case_based for Challenges to the Congress System (Political Science)",
-      "timestamp": "2026-06-30T16:57:07.243Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Validation failed for 12::Political Science::Era of One-Party Dominance::short_answer: Too few items in questions: 0 (minimum 3)",
-      "timestamp": "2026-06-30T16:57:07.239Z"
-    },
-    {
-      "workerId": "Worker-Other",
+      "workerId": "Worker-Physics",
       "status": "done",
-      "message": "✅ Political Science/Globalisation/assertion_reason",
-      "timestamp": "2026-06-30T16:57:06.999Z"
+      "message": "✅ Physical Education/Children and Women in Sports/key_definitions",
+      "timestamp": "2026-06-30T18:18:58.078Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating case_based for India's External Relations (Political Science)",
-      "timestamp": "2026-06-30T16:57:06.773Z"
+      "message": "Generating formula_sheet for Sports Nutrition (Physical Education)",
+      "timestamp": "2026-06-30T18:18:57.910Z"
     },
     {
       "workerId": "Worker-Chemistry",
+      "status": "done",
+      "message": "✅ Physical Education/Management of Sporting Events/formula_sheet",
+      "timestamp": "2026-06-30T18:18:57.708Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating ncert_summary for Physical Education and Sports for CWSN (Physical Education)",
+      "timestamp": "2026-06-30T18:18:57.390Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "generating",
+      "message": "Generating difficulty_tags for Physical Education and Sports for CWSN (Physical Education)",
+      "timestamp": "2026-06-30T18:18:57.355Z"
+    },
+    {
+      "workerId": "Worker-Other",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T16:57:06.431Z"
+      "timestamp": "2026-06-30T18:18:57.101Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "done",
+      "message": "✅ Physical Education/Management of Sporting Events/difficulty_tags",
+      "timestamp": "2026-06-30T18:18:57.069Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating key_definitions for Children and Women in Sports (Physical Education)",
+      "timestamp": "2026-06-30T18:18:38.155Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "done",
+      "message": "✅ Physical Education/Management of Sporting Events/ncert_summary",
+      "timestamp": "2026-06-30T18:18:37.956Z"
     },
     {
       "workerId": "Worker-Maths",
       "status": "generating",
-      "message": "Generating mcqs for Politics of Planned Development (Political Science)",
-      "timestamp": "2026-06-30T16:56:37.785Z"
+      "message": "Generating formula_sheet for Children and Women in Sports (Physical Education)",
+      "timestamp": "2026-06-30T18:18:37.725Z"
     },
     {
       "workerId": "Worker-Maths",
       "status": "done",
-      "message": "✅ Political Science/Environment and Natural Resources/assertion_reason",
-      "timestamp": "2026-06-30T16:56:37.546Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating assertion_reason for Era of One-Party Dominance (Political Science)",
-      "timestamp": "2026-06-30T16:56:37.479Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "done",
-      "message": "✅ Political Science/Challenges of Nation Building/mcqs",
-      "timestamp": "2026-06-30T16:56:37.211Z"
+      "message": "✅ Physical Education/Management of Sporting Events/key_definitions",
+      "timestamp": "2026-06-30T18:18:37.517Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "generating",
-      "message": "Generating short_answer for Era of One-Party Dominance (Political Science)",
-      "timestamp": "2026-06-30T16:56:37.097Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T16:56:36.446Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating case_based for Era of One-Party Dominance (Political Science)",
-      "timestamp": "2026-06-30T16:55:30.674Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "done",
-      "message": "✅ Political Science/International Organisations/case_based",
-      "timestamp": "2026-06-30T16:55:30.412Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating mcqs for Challenges of Nation Building (Political Science)",
-      "timestamp": "2026-06-30T16:55:28.009Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T16:55:27.711Z"
+      "message": "Generating difficulty_tags for Management of Sporting Events (Physical Education)",
+      "timestamp": "2026-06-30T18:18:37.082Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "generating",
-      "message": "Generating assertion_reason for Globalisation (Political Science)",
-      "timestamp": "2026-06-30T16:55:11.432Z"
+      "message": "Generating important_concepts for Management of Sporting Events (Physical Education)",
+      "timestamp": "2026-06-30T18:18:37.047Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T18:18:36.885Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "done",
-      "message": "✅ Political Science/Contemporary South Asia/assertion_reason",
-      "timestamp": "2026-06-30T16:55:11.112Z"
+      "message": "✅ Physical Education/Management of Sporting Events/short_notes",
+      "timestamp": "2026-06-30T18:18:36.854Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating case_based for Globalisation (Political Science)",
-      "timestamp": "2026-06-30T16:55:07.749Z"
+      "message": "Generating formula_sheet for Management of Sporting Events (Physical Education)",
+      "timestamp": "2026-06-30T18:18:36.477Z"
     },
     {
       "workerId": "Worker-Chemistry",
+      "status": "done",
+      "message": "✅ Political Science/Recent Developments in Indian Politics/key_definitions",
+      "timestamp": "2026-06-30T18:18:36.212Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating key_definitions for Management of Sporting Events (Physical Education)",
+      "timestamp": "2026-06-30T18:18:34.156Z"
+    },
+    {
+      "workerId": "Worker-Maths",
       "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T16:55:07.399Z"
+      "message": "Validation failed for 12::Political Science::India's External Relations::formula_sheet: Too few items in formulas: 0 (minimum 1)",
+      "timestamp": "2026-06-30T18:18:33.960Z"
     }
   ]
 }

@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Exception Handling",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T17:19:30.884Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Try Block",
+        "formula": "try { // code }",
+        "variables": "Code to be executed",
+        "units": "None",
+        "notes": "Used to enclose code that might throw an exception"
+      },
+      {
+        "name": "Catch Block",
+        "formula": "catch (Exception e) { // code }",
+        "variables": "Exception type, code to handle exception",
+        "units": "None",
+        "notes": "Used to handle exceptions thrown by the try block"
+      },
+      {
+        "name": "Throw Keyword",
+        "formula": "throw new Exception('message')",
+        "variables": "Exception message",
+        "units": "None",
+        "notes": "Used to explicitly throw an exception"
+      },
+      {
+        "name": "Finally Block",
+        "formula": "finally { // code }",
+        "variables": "Code to be executed",
+        "units": "None",
+        "notes": "Used to enclose code that must be executed regardless of exceptions"
+      },
+      {
+        "name": "Exception Hierarchy",
+        "formula": "Throwable > Exception > RuntimeException",
+        "variables": "Exception classes",
+        "units": "None",
+        "notes": "Shows the hierarchy of exception classes in Java"
+      },
+      {
+        "name": "Custom Exception",
+        "formula": "class CustomException extends Exception { // code }",
+        "variables": "Custom exception class",
+        "units": "None",
+        "notes": "Used to create custom exception classes"
+      },
+      {
+        "name": "Throws Keyword",
+        "formula": "void method() throws Exception { // code }",
+        "variables": "Method declaration, exception type",
+        "units": "None",
+        "notes": "Used to declare that a method may throw an exception"
+      },
+      {
+        "name": "Multiple Catch Blocks",
+        "formula": "try { // code } catch (Exception1 e) { // code } catch (Exception2 e) { // code }",
+        "variables": "Exception types, code to handle exceptions",
+        "units": "None",
+        "notes": "Used to handle multiple types of exceptions"
+      },
+      {
+        "name": "Nested Try-Catch Blocks",
+        "formula": "try { try { // code } catch (Exception e) { // code } } catch (Exception e) { // code }",
+        "variables": "Code to be executed, exception types, code to handle exceptions",
+        "units": "None",
+        "notes": "Used to handle exceptions within a try-catch block"
+      },
+      {
+        "name": "Error Handling",
+        "formula": "None",
+        "variables": "None",
+        "units": "None",
+        "notes": "Error handling is the process of catching and handling errors that occur during the execution of a program"
+      }
+    ]
+  }
+}

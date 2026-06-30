@@ -1,0 +1,58 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T17:23:52.410Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "SQL Syntax",
+        "description": "SQL syntax is case-insensitive, but it is recommended to use standard capitalization for better readability and maintainability."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "SQL Commands",
+        "description": "SQL commands are used to perform various operations on a database, including creating, modifying, and querying data. Common SQL commands include SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, and DROP."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "SQL WHERE Clause",
+        "description": "The WHERE clause is used to filter data based on conditions. It is used with SELECT, UPDATE, and DELETE statements to apply conditions to the data being retrieved or modified."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "SQL Query Structure",
+        "description": "SQL query structure can be remembered using the mnemonic 'SELECT FROM WHERE': SELECT - what to retrieve FROM - where to retrieve FROM WHERE - conditions to apply"
+      },
+      {
+        "category": "Common Mistake",
+        "title": "SQL Injection",
+        "description": "SQL injection occurs when user input is not properly sanitized and is used directly in a SQL query, allowing an attacker to execute malicious SQL code. To prevent SQL injection, use parameterized queries or prepared statements."
+      },
+      {
+        "category": "Units to remember",
+        "title": "SQL Data Types",
+        "description": "Common SQL data types include INTEGER, VARCHAR, CHAR, DATE, TIME, and TIMESTAMP. Understanding the differences between these data types is crucial for designing and implementing efficient database systems."
+      },
+      {
+        "category": "Most Important Fact",
+        "title": "SQL Indexing",
+        "description": "SQL indexing is used to improve the performance of queries by allowing the database to quickly locate specific data. Common indexing techniques include B-tree indexing and hash indexing."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "SQL Constraints",
+        "description": "SQL constraints are used to enforce data integrity by restricting the values that can be inserted or modified in a database. Common constraints include PRIMARY KEY, FOREIGN KEY, UNIQUE, and CHECK constraints."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "SQL JOINs",
+        "description": "SQL JOINs are used to combine data from multiple tables based on a common column. Common JOIN types include INNER JOIN, LEFT JOIN, and RIGHT JOIN."
+      }
+    ]
+  }
+}

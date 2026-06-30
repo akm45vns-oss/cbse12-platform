@@ -1,0 +1,93 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "MySQL Functions and Grouping",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T17:23:56.377Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "MySQL Function",
+        "definition": "A MySQL function is a stored program that can take arguments and return a value. It can be used to perform complex operations, such as calculations or data manipulation, and can be reused in multiple queries.",
+        "example": "Example of a MySQL function: `CREATE FUNCTION add_numbers(a INT, b INT) RETURNS INT BEGIN RETURN a + b; END;`"
+      },
+      {
+        "term": "Aggregate Function",
+        "definition": "An aggregate function is a function that performs a calculation on multiple rows and returns a single value. Examples of aggregate functions include SUM, COUNT, MAX, and MIN.",
+        "example": "Example of an aggregate function: `SELECT SUM(salary) FROM employees;`"
+      },
+      {
+        "term": "Grouping",
+        "definition": "Grouping is the process of dividing a result set into groups based on one or more columns. Each group is treated as a single unit, and aggregate functions can be applied to each group separately.",
+        "example": "Example of grouping: `SELECT department, AVG(salary) FROM employees GROUP BY department;`"
+      },
+      {
+        "term": "GROUP BY Clause",
+        "definition": "The GROUP BY clause is used to specify the columns to group by. It must be used in conjunction with an aggregate function.",
+        "example": "Example of GROUP BY clause: `SELECT department, AVG(salary) FROM employees GROUP BY department;`"
+      },
+      {
+        "term": "HAVING Clause",
+        "definition": "The HAVING clause is used to specify a condition for the groups, similar to the WHERE clause for individual rows.",
+        "example": "Example of HAVING clause: `SELECT department, AVG(salary) FROM employees GROUP BY department HAVING AVG(salary) > 5000;`"
+      },
+      {
+        "term": "Window Function",
+        "definition": "A window function is a function that performs a calculation over a set of rows, such as a group or a set of rows that are related to the current row.",
+        "example": "Example of a window function: `SELECT employee_id, salary, ROW_NUMBER() OVER (ORDER BY salary DESC) AS row_num FROM employees;`"
+      },
+      {
+        "term": "Row Number Function",
+        "definition": "The ROW_NUMBER function assigns a unique number to each row within a result set, ordered by a specific column or set of columns.",
+        "example": "Example of ROW_NUMBER function: `SELECT employee_id, salary, ROW_NUMBER() OVER (ORDER BY salary DESC) AS row_num FROM employees;`"
+      },
+      {
+        "term": "Rank Function",
+        "definition": "The RANK function assigns a rank to each row within a result set, based on the values in a specific column or set of columns.",
+        "example": "Example of RANK function: `SELECT employee_id, salary, RANK() OVER (ORDER BY salary DESC) AS rank FROM employees;`"
+      },
+      {
+        "term": "DENSE_RANK Function",
+        "definition": "The DENSE_RANK function assigns a rank to each row within a result set, based on the values in a specific column or set of columns, without gaps in the ranking.",
+        "example": "Example of DENSE_RANK function: `SELECT employee_id, salary, DENSE_RANK() OVER (ORDER BY salary DESC) AS rank FROM employees;`"
+      },
+      {
+        "term": "PERCENT_RANK Function",
+        "definition": "The PERCENT_RANK function assigns a percentage rank to each row within a result set, based on the values in a specific column or set of columns.",
+        "example": "Example of PERCENT_RANK function: `SELECT employee_id, salary, PERCENT_RANK() OVER (ORDER BY salary DESC) AS percent_rank FROM employees;`"
+      },
+      {
+        "term": "CUME_DIST Function",
+        "definition": "The CUME_DIST function assigns a cumulative distribution to each row within a result set, based on the values in a specific column or set of columns.",
+        "example": "Example of CUME_DIST function: `SELECT employee_id, salary, CUME_DIST() OVER (ORDER BY salary DESC) AS cume_dist FROM employees;`"
+      },
+      {
+        "term": "LAG Function",
+        "definition": "The LAG function returns the value of a specified expression evaluated at a previous row within a result set, ordered by a specific column or set of columns.",
+        "example": "Example of LAG function: `SELECT employee_id, salary, LAG(salary, 1) OVER (ORDER BY salary DESC) AS prev_salary FROM employees;`"
+      },
+      {
+        "term": "LEAD Function",
+        "definition": "The LEAD function returns the value of a specified expression evaluated at a next row within a result set, ordered by a specific column or set of columns.",
+        "example": "Example of LEAD function: `SELECT employee_id, salary, LEAD(salary, 1) OVER (ORDER BY salary DESC) AS next_salary FROM employees;`"
+      },
+      {
+        "term": "NTILE Function",
+        "definition": "The NTILE function divides a result set into a specified number of groups, based on the values in a specific column or set of columns.",
+        "example": "Example of NTILE function: `SELECT employee_id, salary, NTILE(4) OVER (ORDER BY salary DESC) AS quartile FROM employees;`"
+      },
+      {
+        "term": "LATERAL View",
+        "definition": "A lateral view is a view that references a table or subquery that is derived from another table or subquery.",
+        "example": "Example of lateral view: `SELECT * FROM employees AS e, LATERAL (SELECT * FROM departments WHERE department_id = e.department_id) AS d;`"
+      },
+      {
+        "term": "Table Function",
+        "definition": "A table function is a function that returns a table as output.",
+        "example": "Example of table function: `CREATE TABLE employees AS SELECT * FROM table_function();`"
+      }
+    ]
+  }
+}

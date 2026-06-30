@@ -1,0 +1,53 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Linked List (Theory)",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T17:22:16.582Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "Linked List Representation",
+        "description": "A linked list is represented as a sequence of nodes, where each node contains a data element and a reference (or link) to the next node in the sequence."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Types of Linked Lists",
+        "description": "There are two main types of linked lists: Singly Linked List and Doubly Linked List."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Insertion and Deletion in Linked List",
+        "description": "Insertion and deletion in a linked list can be done at the beginning or end of the list by updating the head or tail pointers and the corresponding links between nodes."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "Linked List Operations",
+        "description": "To remember the operations in a linked list: INSERTION - I (Insert), N (Node), S (Sequence), E (Element), R (Reference), T (Tail), I (Insertion); DELETION - D (Delete), E (Element), L (Link), E (End), T (Tail), I (Insertion), O (Overlap); TRAVERSAL - T (Traverse), R (Reference), A (Along), V (Value), E (Element), R (Reference), S (Sequence), A (Along)."
+      },
+      {
+        "category": "Common Mistake",
+        "title": "Confusing Linked List with Array",
+        "description": "Students often confuse linked lists with arrays, but remember that in a linked list, each node contains a reference to the next node, whereas in an array, elements are stored in contiguous memory locations."
+      },
+      {
+        "category": "Units to remember",
+        "title": "Linked List Operations Time Complexity",
+        "description": "The time complexity of linked list operations such as insertion, deletion, and traversal is O(n) in the worst case, where n is the number of nodes in the list."
+      },
+      {
+        "category": "Most Important Fact",
+        "title": "Linked List Applications",
+        "description": "Linked lists are used in applications such as memory management, database indexing, and file systems."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Linked List Merits and Demerits",
+        "description": "Linked lists have the merit of efficient insertion and deletion, but they have the demerit of slow traversal and search times compared to arrays."
+      }
+    ]
+  }
+}

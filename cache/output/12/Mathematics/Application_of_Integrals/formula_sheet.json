@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Application of Integrals",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T17:17:23.506Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Area between a curve and x-axis",
+        "formula": "A = ∫[a, b] f(x) dx",
+        "variables": "A = area, f(x) = function, a and b = limits of integration",
+        "units": "None",
+        "notes": "For finding area under curves"
+      },
+      {
+        "name": "Area between a curve and y-axis",
+        "formula": "A = ∫[a, b] x f(y) dy",
+        "variables": "A = area, f(y) = function, a and b = limits of integration",
+        "units": "None",
+        "notes": "For finding area to the left of curves"
+      },
+      {
+        "name": "Volume of solid of revolution (disk method)",
+        "formula": "V = π ∫[a, b] [f(x)]^2 dx",
+        "variables": "V = volume, f(x) = function, a and b = limits of integration",
+        "units": "m^3",
+        "notes": "For revolving about x-axis"
+      },
+      {
+        "name": "Volume of solid of revolution (shell method)",
+        "formula": "V = 2π ∫[a, b] x f(x) dx",
+        "variables": "V = volume, f(x) = function, a and b = limits of integration",
+        "units": "m^3",
+        "notes": "For revolving about y-axis"
+      },
+      {
+        "name": "Surface area of solid of revolution",
+        "formula": "S = 2π ∫[a, b] f(x) √(1 + [f'(x)]^2) dx",
+        "variables": "S = surface area, f(x) = function, f'(x) = derivative, a and b = limits of integration",
+        "units": "m^2",
+        "notes": "For finding surface area of solids of revolution"
+      },
+      {
+        "name": "Area of region bounded by two curves",
+        "formula": "A = ∫[a, b] [f(x) - g(x)] dx",
+        "variables": "A = area, f(x) and g(x) = functions, a and b = limits of integration",
+        "units": "None",
+        "notes": "For finding area between two curves"
+      },
+      {
+        "name": "Volume of solid with known cross-section",
+        "formula": "V = ∫[a, b] A(x) dx",
+        "variables": "V = volume, A(x) = cross-sectional area, a and b = limits of integration",
+        "units": "m^3",
+        "notes": "For finding volume of solids with known cross-sections"
+      },
+      {
+        "name": "Length of a curve",
+        "formula": "L = ∫[a, b] √(1 + [f'(x)]^2) dx",
+        "variables": "L = length, f(x) = function, f'(x) = derivative, a and b = limits of integration",
+        "units": "m",
+        "notes": "For finding length of curves"
+      },
+      {
+        "name": "Curvature of a curve",
+        "formula": "K = |f''(x)| / (1 + [f'(x)]^2)^(3/2)",
+        "variables": "K = curvature, f(x) = function, f'(x) and f''(x) = derivatives",
+        "units": "m^(-1)",
+        "notes": "For finding curvature of curves"
+      },
+      {
+        "name": "Volume of solid with washer method",
+        "formula": "V = π ∫[a, b] ([f(x)]^2 - [g(x)]^2) dx",
+        "variables": "V = volume, f(x) and g(x) = functions, a and b = limits of integration",
+        "units": "m^3",
+        "notes": "For finding volume of solids using washer method"
+      }
+    ]
+  }
+}

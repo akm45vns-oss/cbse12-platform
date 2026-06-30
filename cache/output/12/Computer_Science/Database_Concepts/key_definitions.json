@@ -1,0 +1,118 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Database Concepts",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-30T17:22:50.807Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Database",
+        "definition": "A collection of related data that is stored in a way that allows access, management, and processing of that data.",
+        "example": ""
+      },
+      {
+        "term": "Database Management System (DBMS)",
+        "definition": "A software system that allows for definition, creation, maintenance, and manipulation of databases.",
+        "example": ""
+      },
+      {
+        "term": "DBMS Architecture",
+        "definition": "The design and organization of a DBMS, consisting of three main levels: hardware, operating system, and DBMS.",
+        "example": ""
+      },
+      {
+        "term": "Schema",
+        "definition": "A blueprint or a detailed description of the overall structure of a database, including tables, fields, and relationships.",
+        "example": ""
+      },
+      {
+        "term": "Schema Diagram",
+        "definition": "A visual representation of the database schema, showing the relationships between tables and fields.",
+        "example": ""
+      },
+      {
+        "term": "Table",
+        "definition": "A collection of related data stored in rows and columns, similar to an Excel spreadsheet.",
+        "example": ""
+      },
+      {
+        "term": "Row",
+        "definition": "A single entry in a table, consisting of values for each column.",
+        "example": ""
+      },
+      {
+        "term": "Column",
+        "definition": "A field or attribute of a table, representing a specific piece of data.",
+        "example": ""
+      },
+      {
+        "term": "Field",
+        "definition": "A single value within a row, representing a specific attribute of the data.",
+        "example": ""
+      },
+      {
+        "term": "Primary Key",
+        "definition": "A unique identifier for each row in a table, used to distinguish between rows.",
+        "example": "Example: Student ID in a student database."
+      },
+      {
+        "term": "Foreign Key",
+        "definition": "A field in a table that references the primary key of another table, establishing a relationship between tables.",
+        "example": "Example: Order ID in an order database referencing the customer ID in a customer database."
+      },
+      {
+        "term": "Relationship",
+        "definition": "A connection between two or more tables, established through common fields or keys.",
+        "example": ""
+      },
+      {
+        "term": "One-to-One (1:1) Relationship",
+        "definition": "A relationship where each row in one table corresponds to exactly one row in another table.",
+        "example": "Example: A customer and their account information."
+      },
+      {
+        "term": "One-to-Many (1:M) Relationship",
+        "definition": "A relationship where each row in one table corresponds to multiple rows in another table.",
+        "example": "Example: A teacher and their students."
+      },
+      {
+        "term": "Many-to-Many (M:M) Relationship",
+        "definition": "A relationship where multiple rows in one table correspond to multiple rows in another table.",
+        "example": "Example: A course and its students."
+      },
+      {
+        "term": "Normalisation",
+        "definition": "The process of organizing data in a database to minimize data redundancy and dependency.",
+        "example": ""
+      },
+      {
+        "term": "Denormalization",
+        "definition": "The process of intentionally duplicating data in a database to improve query performance or simplify data retrieval.",
+        "example": ""
+      },
+      {
+        "term": "Database Normal Forms",
+        "definition": "A set of rules for organizing data in a database to ensure data integrity and minimize data redundancy.",
+        "example": ""
+      },
+      {
+        "term": "First Normal Form (1NF)",
+        "definition": "A normal form that requires each table cell to contain a single value.",
+        "example": ""
+      },
+      {
+        "term": "Second Normal Form (2NF)",
+        "definition": "A normal form that requires each non-key attribute to depend on the entire primary key.",
+        "example": ""
+      },
+      {
+        "term": "Third Normal Form (3NF)",
+        "definition": "A normal form that requires each non-key attribute to depend on the primary key only and not on any other non-key attribute.",
+        "example": ""
+      }
+    ]
+  }
+}

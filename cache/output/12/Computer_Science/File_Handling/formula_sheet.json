@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "File Handling",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-06-30T17:19:25.421Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Modes of File Opening",
+        "formula": "None",
+        "variables": "None",
+        "units": "None",
+        "notes": "Modes: 'r' (read), 'w' (write), 'a' (append), 'r+' (read and write), 'w+' (read and write), 'a+' (read and append), 'rb' (read binary), 'wb' (write binary), etc."
+      },
+      {
+        "name": "2. File Pointer Position",
+        "formula": "None",
+        "variables": "None",
+        "units": "None",
+        "notes": "File pointer is at the beginning of the file after opening in 'r' or 'w' mode, and at the end of the file in 'a' mode."
+      },
+      {
+        "name": "3. Reading from a File",
+        "formula": "data = file.read()",
+        "variables": "data (string), file (file object)",
+        "units": "None",
+        "notes": "Reads the entire contents of the file into the variable 'data'."
+      },
+      {
+        "name": "4. Writing to a File",
+        "formula": "file.write(data)",
+        "variables": "data (string), file (file object)",
+        "units": "None",
+        "notes": "Writes the string 'data' to the file."
+      },
+      {
+        "name": "5. Closing a File",
+        "formula": "file.close()",
+        "variables": "file (file object)",
+        "units": "None",
+        "notes": "Closes the file to free system resources."
+      },
+      {
+        "name": "6. Checking End of File (EOF)",
+        "formula": "if file.read() == '':",
+        "variables": "file (file object)",
+        "units": "None",
+        "notes": "Checks if the end of the file has been reached."
+      },
+      {
+        "name": "7. File Existence Check",
+        "formula": "import os; if os.path.exists('filename'):",
+        "variables": "filename (string)",
+        "units": "None",
+        "notes": "Checks if a file with the given 'filename' exists."
+      },
+      {
+        "name": "8. Deleting a File",
+        "formula": "import os; os.remove('filename')",
+        "variables": "filename (string)",
+        "units": "None",
+        "notes": "Deletes the file with the given 'filename'."
+      },
+      {
+        "name": "9. Renaming a File",
+        "formula": "import os; os.rename('old_filename', 'new_filename')",
+        "variables": "old_filename (string), new_filename (string)",
+        "units": "None",
+        "notes": "Renames the file from 'old_filename' to 'new_filename'."
+      },
+      {
+        "name": "10. Creating a New Directory",
+        "formula": "import os; os.mkdir('directory_name')",
+        "variables": "directory_name (string)",
+        "units": "None",
+        "notes": "Creates a new directory with the given 'directory_name'."
+      }
+    ]
+  }
+}
