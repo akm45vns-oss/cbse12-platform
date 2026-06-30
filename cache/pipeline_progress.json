@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-30T16:54:31.153Z",
-  "elapsed_seconds": 2892,
-  "rate_per_second": 1.59,
+  "updated_at": "2026-06-30T16:57:11.264Z",
+  "elapsed_seconds": 3052,
+  "rate_per_second": 1.51,
   "queue": {
-    "completed": 4595,
-    "pending": 968,
+    "completed": 4600,
+    "pending": 963,
     "inFlight": 5,
     "failed": 0,
-    "retrying": 968,
+    "retrying": 963,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
@@ -18,35 +18,35 @@
   "workers": [
     {
       "workerId": "Worker-Physics",
-      "processed": 49,
+      "processed": 50,
       "skipped": 0,
-      "failed": 51,
+      "failed": 53,
       "running": true
     },
     {
       "workerId": "Worker-Chemistry",
       "processed": 59,
       "skipped": 0,
-      "failed": 50,
+      "failed": 52,
       "running": true
     },
     {
       "workerId": "Worker-Maths",
-      "processed": 47,
+      "processed": 48,
+      "skipped": 0,
+      "failed": 57,
+      "running": true
+    },
+    {
+      "workerId": "Worker-Biology",
+      "processed": 54,
       "skipped": 0,
       "failed": 55,
       "running": true
     },
     {
-      "workerId": "Worker-Biology",
-      "processed": 53,
-      "skipped": 0,
-      "failed": 53,
-      "running": true
-    },
-    {
       "workerId": "Worker-Other",
-      "processed": 51,
+      "processed": 53,
       "skipped": 0,
       "failed": 61,
       "running": true
@@ -54,124 +54,124 @@
   ],
   "recent_events": [
     {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating assertion_reason for International Organisations (Political Science)",
-      "timestamp": "2026-06-30T16:54:29.924Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "done",
-      "message": "✅ Political Science/US Hegemony in World Politics/assertion_reason",
-      "timestamp": "2026-06-30T16:54:29.663Z"
-    },
-    {
       "workerId": "Worker-Biology",
       "status": "generating",
-      "message": "Generating case_based for International Organisations (Political Science)",
-      "timestamp": "2026-06-30T16:54:26.902Z"
+      "message": "Generating mcqs for Challenges to the Congress System (Political Science)",
+      "timestamp": "2026-06-30T16:57:07.490Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "generating",
+      "message": "Generating case_based for Challenges to the Congress System (Political Science)",
+      "timestamp": "2026-06-30T16:57:07.243Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T16:54:26.665Z"
+      "message": "Validation failed for 12::Political Science::Era of One-Party Dominance::short_answer: Too few items in questions: 0 (minimum 3)",
+      "timestamp": "2026-06-30T16:57:07.239Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "done",
+      "message": "✅ Political Science/Globalisation/assertion_reason",
+      "timestamp": "2026-06-30T16:57:06.999Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating short_answer for Alternative Centres of Power (Political Science)",
-      "timestamp": "2026-06-30T16:54:25.674Z"
+      "message": "Generating case_based for India's External Relations (Political Science)",
+      "timestamp": "2026-06-30T16:57:06.773Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "error",
-      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
-      "timestamp": "2026-06-30T16:54:25.365Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating case_based for Contemporary South Asia (Political Science)",
-      "timestamp": "2026-06-30T16:53:52.067Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Validation failed for 12::Political Science::US Hegemony in World Politics::mcqs: Duplicate question/item within response: \"The US has been criticized for its?...\"; Duplicate question/item within response: \"The US has been criticized for its?...\"",
-      "timestamp": "2026-06-30T16:53:51.833Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "generating",
-      "message": "Generating assertion_reason for Contemporary South Asia (Political Science)",
-      "timestamp": "2026-06-30T16:53:48.417Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T16:53:48.087Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "generating",
-      "message": "Generating mcqs for Alternative Centres of Power (Political Science)",
-      "timestamp": "2026-06-30T16:52:57.396Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating mcqs for US Hegemony in World Politics (Political Science)",
-      "timestamp": "2026-06-30T16:52:57.361Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T16:52:57.137Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T16:52:57.075Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating assertion_reason for US Hegemony in World Politics (Political Science)",
-      "timestamp": "2026-06-30T16:52:45.117Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "done",
-      "message": "✅ History/Mahatma Gandhi and the Nationalist Movement/mcqs",
-      "timestamp": "2026-06-30T16:52:44.929Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating mcqs for The End of Bipolarity (Political Science)",
-      "timestamp": "2026-06-30T16:52:43.696Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "done",
-      "message": "✅ History/Mahatma Gandhi and the Nationalist Movement/assertion_reason",
-      "timestamp": "2026-06-30T16:52:43.433Z"
+      "timestamp": "2026-06-30T16:57:06.431Z"
     },
     {
       "workerId": "Worker-Maths",
       "status": "generating",
-      "message": "Generating short_answer for The Cold War Era (Political Science)",
-      "timestamp": "2026-06-30T16:52:43.064Z"
+      "message": "Generating mcqs for Politics of Planned Development (Political Science)",
+      "timestamp": "2026-06-30T16:56:37.785Z"
     },
     {
       "workerId": "Worker-Maths",
+      "status": "done",
+      "message": "✅ Political Science/Environment and Natural Resources/assertion_reason",
+      "timestamp": "2026-06-30T16:56:37.546Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating assertion_reason for Era of One-Party Dominance (Political Science)",
+      "timestamp": "2026-06-30T16:56:37.479Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "done",
+      "message": "✅ Political Science/Challenges of Nation Building/mcqs",
+      "timestamp": "2026-06-30T16:56:37.211Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating short_answer for Era of One-Party Dominance (Political Science)",
+      "timestamp": "2026-06-30T16:56:37.097Z"
+    },
+    {
+      "workerId": "Worker-Biology",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T16:52:42.803Z"
+      "timestamp": "2026-06-30T16:56:36.446Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating case_based for Era of One-Party Dominance (Political Science)",
+      "timestamp": "2026-06-30T16:55:30.674Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "done",
+      "message": "✅ Political Science/International Organisations/case_based",
+      "timestamp": "2026-06-30T16:55:30.412Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating mcqs for Challenges of Nation Building (Political Science)",
+      "timestamp": "2026-06-30T16:55:28.009Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T16:55:27.711Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "generating",
+      "message": "Generating assertion_reason for Globalisation (Political Science)",
+      "timestamp": "2026-06-30T16:55:11.432Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "done",
+      "message": "✅ Political Science/Contemporary South Asia/assertion_reason",
+      "timestamp": "2026-06-30T16:55:11.112Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating case_based for Globalisation (Political Science)",
+      "timestamp": "2026-06-30T16:55:07.749Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-06-30T16:55:07.399Z"
     }
   ]
 }

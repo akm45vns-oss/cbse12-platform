@@ -178,6 +178,9 @@ export const NotesView = memo(function NotesView({
     { id: "ncert", label: "NCERT Summary", icon: "📝", content: isModular ? notes.ncert_summary : null },
   ].filter(t => t.content);
 
+  // If the currently selected tab isn't available (e.g. detailed_notes is missing), fallback to the first available tab
+  const currentTabId = tabs.find(t => t.id === activeTab) ? activeTab : (tabs.length > 0 ? tabs[0].id : "detailed");
+
   return (
     <div style={{ maxWidth: 780, margin: "0 auto" }}>
       {/* Action bar */}
@@ -226,10 +229,10 @@ export const NotesView = memo(function NotesView({
                 onClick={() => setActiveTab(tab.id)}
                 style={{
                   padding: "10px 16px", borderRadius: 12, border: "none",
-                  background: activeTab === tab.id ? "#4f46e5" : "white",
-                  color: activeTab === tab.id ? "white" : "#64748b",
+                  background: currentTabId === tab.id ? "#4f46e5" : "white",
+                  color: currentTabId === tab.id ? "white" : "#64748b",
                   fontWeight: 700, fontSize: 14, cursor: "pointer", whiteSpace: "nowrap",
-                  boxShadow: activeTab === tab.id ? "0 4px 12px rgba(79,70,229,0.2)" : "0 1px 3px rgba(0,0,0,0.05)",
+                  boxShadow: currentTabId === tab.id ? "0 4px 12px rgba(79,70,229,0.2)" : "0 1px 3px rgba(0,0,0,0.05)",
                   transition: "all 0.2s"
                 }}
               >
@@ -241,11 +244,11 @@ export const NotesView = memo(function NotesView({
           {/* Tab Content */}
           <div id="printable-content" className="prose-notes-block" style={{ minHeight: "60vh" }}>
             <div className="notes-content-pad prose-notes">
-              {activeTab === "detailed" && renderMarkdown(notes.detailed_notes)}
-              {activeTab === "short" && renderMarkdown(notes.short_notes)}
-              {activeTab === "ncert" && renderMarkdown(notes.ncert_summary)}
-              {activeTab === "definitions" && renderDefinitions(notes.key_definitions)}
-              {activeTab === "formulas" && renderFormulas(notes.formula_sheet)}
+              {currentTabId === "detailed" && renderMarkdown(notes.detailed_notes)}
+              {currentTabId === "short" && renderMarkdown(notes.short_notes)}
+              {currentTabId === "ncert" && renderMarkdown(notes.ncert_summary)}
+              {currentTabId === "definitions" && renderDefinitions(notes.key_definitions)}
+              {currentTabId === "formulas" && renderFormulas(notes.formula_sheet)}
             </div>
           </div>
         </div>
