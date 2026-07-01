@@ -360,6 +360,107 @@ function renderNcertSummary(data, subject, selectedClass) {
   return renderMarkdown(JSON.stringify(data), subject, selectedClass);
 }
 
+// ─── Assertion Reason renderer ────────────────────────────────────────────────
+function renderAssertionReason(data) {
+  if (!data?.questions?.length) return <p style={{ color: "#94a3b8" }}>No assertion-reason questions available.</p>;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+      {data.questions.map((q, idx) => (
+        <div key={idx} style={{ background: "white", borderRadius: 14, border: "1px solid #e2e8f0", overflow: "hidden", boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}>
+          <div style={{ background: "linear-gradient(90deg,#0891b2,#06b6d4)", padding: "8px 16px" }}>
+            <span style={{ color: "white", fontWeight: 800, fontSize: 12 }}>Assertion-Reason #{idx + 1}</span>
+          </div>
+          <div style={{ padding: "14px 16px", display: "flex", flexDirection: "column", gap: 10 }}>
+            <div style={{ background: "#ede9fe", borderRadius: 10, padding: "10px 14px" }}>
+              <span style={{ fontWeight: 700, color: "#4f46e5", fontSize: 12, display: "block", marginBottom: 4 }}>Assertion (A)</span>
+              <span style={{ fontSize: 14, color: "#1e1b4b" }}>{q.assertion?.replace(/^Assertion \(A\):\s*/i, "")}</span>
+            </div>
+            <div style={{ background: "#e0f2fe", borderRadius: 10, padding: "10px 14px" }}>
+              <span style={{ fontWeight: 700, color: "#0369a1", fontSize: 12, display: "block", marginBottom: 4 }}>Reason (R)</span>
+              <span style={{ fontSize: 14, color: "#0c4a6e" }}>{q.reason?.replace(/^Reason \(R\):\s*/i, "")}</span>
+            </div>
+            {q.opts && (
+              <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                {q.opts.map((opt, oi) => {
+                  const isCorrect = q.answer && opt.toLowerCase().startsWith(q.answer.toLowerCase().charAt(0));
+                  return (
+                    <div key={oi} style={{ padding: "6px 12px", borderRadius: 8, background: isCorrect ? "#f0fdf4" : "#f8fafc", border: `1px solid ${isCorrect ? "#bbf7d0" : "#f1f5f9"}`, display: "flex", gap: 8, alignItems: "center" }}>
+                      {isCorrect && <span style={{ color: "#16a34a", fontWeight: 800 }}>✓</span>}
+                      <span style={{ fontSize: 13, color: isCorrect ? "#15803d" : "#374151", fontWeight: isCorrect ? 600 : 400 }}>{opt}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+            {q.explanation && <div style={{ background: "#fffbeb", border: "1px solid #fde68a", borderRadius: 8, padding: "8px 12px", fontSize: 13, color: "#92400e" }}><strong>Explanation:</strong> {q.explanation}</div>}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// ─── Case Based renderer ──────────────────────────────────────────────────────
+function renderCaseBased(data) {
+  if (!data?.cases?.length) return <p style={{ color: "#94a3b8" }}>No case-based questions available.</p>;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+      {data.cases.map((c, idx) => (
+        <div key={idx} style={{ background: "white", borderRadius: 14, border: "1px solid #e2e8f0", overflow: "hidden", boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}>
+          <div style={{ background: "linear-gradient(90deg,#d97706,#f59e0b)", padding: "10px 16px" }}>
+            <span style={{ color: "white", fontWeight: 800, fontSize: 13 }}>📄 Case Study #{idx + 1}</span>
+          </div>
+          <div style={{ padding: "14px 16px" }}>
+            <div style={{ background: "#fffbeb", border: "1px solid #fde68a", borderRadius: 10, padding: "12px 14px", fontSize: 14, color: "#374151", lineHeight: 1.7, marginBottom: 14 }}>{c.passage}</div>
+            {c.questions && c.questions.map((q, qi) => (
+              <div key={qi} style={{ marginBottom: 12 }}>
+                <div style={{ fontWeight: 600, fontSize: 14, color: "#1e1b4b", marginBottom: 6 }}>Q{qi + 1}. {q.q}</div>
+                {q.opts && q.opts.map((opt, oi) => {
+                  const isCorrect = q.answer && opt.startsWith(q.answer.charAt(0));
+                  return (
+                    <div key={oi} style={{ display: "flex", gap: 8, marginBottom: 4, padding: "5px 10px", borderRadius: 7, background: isCorrect ? "#f0fdf4" : "#f8fafc", border: `1px solid ${isCorrect ? "#bbf7d0" : "#f1f5f9"}` }}>
+                      {isCorrect && <span style={{ color: "#16a34a", fontWeight: 800 }}>✓</span>}
+                      <span style={{ fontSize: 13, color: isCorrect ? "#15803d" : "#374151", fontWeight: isCorrect ? 600 : 400 }}>{opt}</span>
+                    </div>
+                  );
+                })}
+                {q.explanation && <div style={{ marginTop: 6, background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 8, padding: "6px 10px", fontSize: 12, color: "#166534" }}><strong>Explanation:</strong> {q.explanation}</div>}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// ─── PYQ Style renderer ───────────────────────────────────────────────────────
+function renderPYQ(data) {
+  if (!data?.questions?.length) return <p style={{ color: "#94a3b8" }}>No PYQ-style questions available.</p>;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+      {data.questions.map((q, idx) => (
+        <div key={idx} style={{ background: "white", borderRadius: 14, border: "1px solid #e2e8f0", overflow: "hidden", boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}>
+          <div style={{ background: "linear-gradient(90deg,#dc2626,#f87171)", padding: "8px 16px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <span style={{ color: "white", fontWeight: 800, fontSize: 12 }}>📜 PYQ Style</span>
+            {q.type && <span style={{ background: "rgba(255,255,255,0.2)", color: "white", fontSize: 10, padding: "2px 8px", borderRadius: 99, fontWeight: 700 }}>{q.type}</span>}
+          </div>
+          <div style={{ padding: "12px 16px" }}>
+            <p style={{ fontWeight: 600, fontSize: 14, color: "#1e1b4b", margin: "0 0 10px", lineHeight: 1.6 }}>{q.q}{q.marks && <span style={{ fontSize: 12, color: "#dc2626", fontWeight: 700, marginLeft: 8 }}>({q.marks} marks)</span>}</p>
+            {q.answer && (
+              <div style={{ background: "#fff1f2", border: "1px solid #fecdd3", borderRadius: 10, padding: "10px 14px", fontSize: 14, color: "#374151", lineHeight: 1.7 }}>
+                <span style={{ fontWeight: 700, color: "#dc2626", fontSize: 11, textTransform: "uppercase", letterSpacing: "0.06em", display: "block", marginBottom: 4 }}>✏️ Model Answer</span>
+                {q.answer}
+              </div>
+            )}
+            {q.hint && <div style={{ marginTop: 8, background: "#fffbeb", border: "1px solid #fde68a", borderRadius: 8, padding: "6px 12px", fontSize: 13, color: "#92400e" }}><strong>Hint:</strong> {q.hint}</div>}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 // ─── Main Component ───────────────────────────────────────────────────────────
 export const ChapterView = memo(function ChapterView({
   chapter, subject, selectedClass, curriculumData, notesRead, quizBest, availableSets = [], onStartQuiz, theme
