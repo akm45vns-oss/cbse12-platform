@@ -690,8 +690,8 @@ export const ChapterView = memo(function ChapterView({
             </div>
           </div>
 
-          {/* ─── Tab Bar Navigation ─── */}
-          <div className="hide-scrollbar" style={{ overflowX: "auto", display: "flex", flexWrap: "nowrap", gap: 8, marginBottom: 18, padding: "4px 4px 10px 4px", WebkitOverflowScrolling: "touch" }}>
+          {/* ─── Tab Bar Navigation (2x2 Grid Button Box) ─── */}
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 20 }}>
             {tabs.map(t => {
               const active = activeTab === t.id;
               return (
@@ -699,14 +699,24 @@ export const ChapterView = memo(function ChapterView({
                   key={t.id}
                   onClick={() => setActiveTab(t.id)}
                   style={{
-                    padding: "10px 18px", borderRadius: 99, border: "none", fontSize: 13, fontWeight: 800, cursor: "pointer",
-                    background: active ? "#4f46e5" : "white", color: active ? "white" : "#64748b",
-                    boxShadow: active ? "0 4px 12px rgba(79,70,229,0.2)" : "0 1px 3px rgba(0,0,0,0.05)",
-                    transition: "all 0.2s", whiteSpace: "nowrap", flexShrink: 0,
-                    display: "inline-flex", alignItems: "center", gap: 6
+                    padding: "14px 16px",
+                    borderRadius: 16,
+                    fontSize: 13.5,
+                    fontWeight: 800,
+                    cursor: "pointer",
+                    background: active ? "linear-gradient(135deg, #4f46e5, #818cf8)" : "white",
+                    color: active ? "white" : "#475569",
+                    boxShadow: active ? "0 4px 14px rgba(79,70,229,0.25)" : "0 2px 6px rgba(0,0,0,0.03)",
+                    border: active ? "1.5px solid #4f46e5" : "1.5px solid #e2e8f0",
+                    transition: "all 0.2s",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 8,
                   }}
                 >
-                  {t.icon} {t.label}
+                  <span style={{ fontSize: 16 }}>{t.icon}</span>
+                  <span>{t.label}</span>
                 </button>
               );
             })}
