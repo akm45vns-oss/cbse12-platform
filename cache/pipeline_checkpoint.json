@@ -1,6 +1,6 @@
 {
-  "savedAt": "2026-07-01T18:12:13.699Z",
-  "completedCount": 2714,
+  "savedAt": "2026-07-01T19:54:58.396Z",
+  "completedCount": 2716,
   "queues": {
     "1": [],
     "2": [],
@@ -14,62 +14,20 @@
       "subject": "Physics",
       "chapter": "Current Electricity",
       "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Validation failed: Content too short: 660 words (minimum 800)"
-    },
+      "attempt": 3,
+      "lastError": "Validation failed: Content too short: 723 words (minimum 800)"
+    }
+  ],
+  "failedTasks": [
     {
-      "id": "12::English::Should Wizard Hit Mommy::detailed_notes",
+      "id": "12::English::Deep Water::detailed_notes",
       "classLevel": "12",
       "subject": "English",
-      "chapter": "Should Wizard Hit Mommy",
+      "chapter": "Deep Water",
       "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Validation failed: Content too short: 661 words (minimum 800)"
-    },
-    {
-      "id": "12::Political Science::US Hegemony in World Politics::detailed_notes",
-      "classLevel": "12",
-      "subject": "Political Science",
-      "chapter": "US Hegemony in World Politics",
-      "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Groq HTTP 429"
-    },
-    {
-      "id": "12::Physical Education::Yoga as Preventive Measure for Lifestyle Diseases::detailed_notes",
-      "classLevel": "12",
-      "subject": "Physical Education",
-      "chapter": "Yoga as Preventive Measure for Lifestyle Diseases",
-      "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Groq HTTP 429"
-    },
-    {
-      "id": "12::Computer Science::Queue::detailed_notes",
-      "classLevel": "12",
-      "subject": "Computer Science",
-      "chapter": "Queue",
-      "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Groq HTTP 429"
-    },
-    {
-      "id": "12::Business Studies::Entrepreneurship Development::detailed_notes",
-      "classLevel": "12",
-      "subject": "Business Studies",
-      "chapter": "Entrepreneurship Development",
-      "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Groq HTTP 429"
-    },
-    {
-      "id": "12::Physical Education::Children and Women in Sports::detailed_notes",
-      "classLevel": "12",
-      "subject": "Physical Education",
-      "chapter": "Children and Women in Sports",
-      "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Key pool timeout — no key became available within 2 minutes"
+      "attempt": 4,
+      "lastError": "Groq HTTP 429",
+      "finalError": "Groq HTTP 429"
     },
     {
       "id": "12::English::The Enemy::detailed_notes",
@@ -77,26 +35,19 @@
       "subject": "English",
       "chapter": "The Enemy",
       "contentType": "detailed_notes",
-      "attempt": 3,
-      "lastError": "Groq HTTP 429"
+      "attempt": 4,
+      "lastError": "Validation failed: Content too short: 549 words (minimum 800)",
+      "finalError": "Validation failed: Content too short: 549 words (minimum 800)"
     },
     {
-      "id": "12::Physical Education::Physical Education and Sports for CWSN::detailed_notes",
+      "id": "12::Physical Education::Yoga as Preventive Measure for Lifestyle Diseases::detailed_notes",
       "classLevel": "12",
       "subject": "Physical Education",
-      "chapter": "Physical Education and Sports for CWSN",
+      "chapter": "Yoga as Preventive Measure for Lifestyle Diseases",
       "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Groq HTTP 429"
-    },
-    {
-      "id": "12::English::Deep Water::detailed_notes",
-      "classLevel": "12",
-      "subject": "English",
-      "chapter": "Deep Water",
-      "contentType": "detailed_notes",
-      "attempt": 3,
-      "lastError": "Groq HTTP 429"
+      "attempt": 4,
+      "lastError": "Groq HTTP 429",
+      "finalError": "Groq HTTP 429"
     },
     {
       "id": "12::Biology::Ecosystem::detailed_notes",
@@ -104,18 +55,19 @@
       "subject": "Biology",
       "chapter": "Ecosystem",
       "contentType": "detailed_notes",
-      "attempt": 3,
-      "lastError": "Groq HTTP 429"
+      "attempt": 4,
+      "lastError": "Validation failed: Content too short: 713 words (minimum 800)",
+      "finalError": "Validation failed: Content too short: 713 words (minimum 800)"
     },
     {
-      "id": "12::English::Keeping Quiet::detailed_notes",
+      "id": "12::Business Studies::Entrepreneurship Development::detailed_notes",
       "classLevel": "12",
-      "subject": "English",
-      "chapter": "Keeping Quiet",
+      "subject": "Business Studies",
+      "chapter": "Entrepreneurship Development",
       "contentType": "detailed_notes",
-      "attempt": 3,
-      "lastError": "Groq HTTP 429"
+      "attempt": 4,
+      "lastError": "Groq HTTP 429",
+      "finalError": "Groq HTTP 429"
     }
-  ],
-  "failedTasks": []
+  ]
 }
