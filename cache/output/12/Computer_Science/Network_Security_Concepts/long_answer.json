@@ -1,0 +1,92 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Network Security Concepts",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:57:52.063Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of network security and its importance in today's digital world. Discuss the various types of security threats and measures to prevent them.",
+        "marks": 5,
+        "answer": "Network security refers to the measures taken to protect a computer network from unauthorized access, use, disclosure, disruption, modification, or destruction. It is crucial in today's digital world as it protects sensitive information and prevents financial loss. The various types of security threats include malware, phishing, denial-of-service (DoS) attacks, and man-in-the-middle (MitM) attacks. To prevent these threats, measures such as firewalls, intrusion detection systems, encryption, and secure protocols like HTTPS and SSH can be implemented.",
+        "marking_scheme": [
+          "Definition of network security (1 mark)",
+          "Importance of network security (1 mark)",
+          "Types of security threats (1 mark)",
+          "Measures to prevent security threats (2 marks)"
+        ],
+        "topic": "Introduction to Network Security",
+        "is_numerical": false
+      },
+      {
+        "q": "What is a firewall and how does it work? Explain the different types of firewalls and their applications.",
+        "marks": 5,
+        "answer": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It works by examining the source and destination IP addresses, ports, and protocols of incoming and outgoing packets and blocking or allowing them according to the configured rules. The different types of firewalls include packet filtering firewalls, stateful firewalls, and application-layer firewalls. Packet filtering firewalls examine the source and destination IP addresses and ports of packets, while stateful firewalls examine the context of network traffic. Application-layer firewalls examine the application-layer data and can filter traffic based on specific applications.",
+        "marking_scheme": [
+          "Definition of a firewall (1 mark)",
+          "Working of a firewall (1 mark)",
+          "Types of firewalls (1 mark)",
+          "Applications of firewalls (2 marks)"
+        ],
+        "topic": "Firewalls",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of encryption and decryption. Discuss the different types of encryption algorithms and their applications.",
+        "marks": 5,
+        "answer": "Encryption refers to the process of converting plaintext data into unreadable ciphertext data to protect it from unauthorized access. Decryption is the reverse process of converting ciphertext data back into plaintext data. The different types of encryption algorithms include symmetric-key algorithms, asymmetric-key algorithms, and hash functions. Symmetric-key algorithms use the same key for encryption and decryption, while asymmetric-key algorithms use a pair of keys, one for encryption and another for decryption. Hash functions are one-way encryption algorithms that produce a fixed-size string of characters.",
+        "marking_scheme": [
+          "Definition of encryption and decryption (1 mark)",
+          "Types of encryption algorithms (1 mark)",
+          "Applications of encryption algorithms (2 marks)",
+          "Advantages and disadvantages of encryption algorithms (1 mark)"
+        ],
+        "topic": "Encryption and Decryption",
+        "is_numerical": false
+      },
+      {
+        "q": "A company has 100 employees and each employee has a unique username and password to access the company's network. If the password is 8 characters long and each character can be a lowercase letter, an uppercase letter, or a digit, calculate the total number of possible passwords.",
+        "marks": 5,
+        "answer": "Calculation:\nSince each character can be a lowercase letter, an uppercase letter, or a digit, there are 26 + 26 + 10 = 62 possible characters for each position.\nSince the password is 8 characters long, the total number of possible passwords is 62^8 = 218,340,105,584,896.",
+        "marking_scheme": [
+          "Understanding of the problem (1 mark)",
+          "Calculation of the total number of possible characters (1 mark)",
+          "Calculation of the total number of possible passwords (2 marks)",
+          "Correct answer (1 mark)"
+        ],
+        "topic": "Password Security",
+        "is_numerical": true
+      },
+      {
+        "q": "A network has 500 devices and each device has a unique IP address. If the network uses a 24-bit subnet mask, calculate the number of available IP addresses.",
+        "marks": 5,
+        "answer": "Calculation:\nSince the network uses a 24-bit subnet mask, the number of available IP addresses is 2^32 - 2^24 - 2 = 254.\nHowever, since the network has 500 devices, the number of available IP addresses is not sufficient. To calculate the required number of IP addresses, we need to use a larger subnet mask or use a different IP addressing scheme.",
+        "marking_scheme": [
+          "Understanding of the problem (1 mark)",
+          "Calculation of the number of available IP addresses (2 marks)",
+          "Identification of the issue with the available IP addresses (1 mark)",
+          "Suggestion of a solution (1 mark)"
+        ],
+        "topic": "IP Addressing",
+        "is_numerical": true
+      },
+      {
+        "q": "A company has a network with 1000 devices and the network is attacked by a malware that infects 20% of the devices. If the company has a backup system that can restore 80% of the infected devices, calculate the total number of devices that will be restored.",
+        "marks": 5,
+        "answer": "Calculation:\nNumber of infected devices = 20% of 1000 = 0.2 x 1000 = 200.\nNumber of devices that can be restored = 80% of 200 = 0.8 x 200 = 160.",
+        "marking_scheme": [
+          "Understanding of the problem (1 mark)",
+          "Calculation of the number of infected devices (1 mark)",
+          "Calculation of the number of devices that can be restored (2 marks)",
+          "Correct answer (1 mark)"
+        ],
+        "topic": "Network Security Threats",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

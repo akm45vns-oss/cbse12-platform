@@ -1,0 +1,199 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Database Concepts",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T03:25:25.977Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a database?",
+        "marks": 1,
+        "answer": "A database is a collection of organized data that is stored in a way that allows for efficient retrieval and manipulation.",
+        "key_points": [
+          "Data is stored in a structured format",
+          "Efficient retrieval and manipulation"
+        ],
+        "topic": "Introduction to Database"
+      },
+      {
+        "q": "What is a database management system (DBMS)?",
+        "marks": 1,
+        "answer": "A DBMS is a software system that allows users to define, create, and manage databases.",
+        "key_points": [
+          "Software system",
+          "Define, create, and manage databases"
+        ],
+        "topic": "Introduction to Database"
+      },
+      {
+        "q": "What are the basic characteristics of a database?",
+        "marks": 1,
+        "answer": "The basic characteristics of a database are data, structure, and meaning.",
+        "key_points": [
+          "Data",
+          "Structure",
+          "Meaning"
+        ],
+        "topic": "Database Concepts"
+      },
+      {
+        "q": "What are the three primary functions of a DBMS?",
+        "marks": 1,
+        "answer": "The three primary functions of a DBMS are data storage, data manipulation, and data control.",
+        "key_points": [
+          "Data storage",
+          "Data manipulation",
+          "Data control"
+        ],
+        "topic": "Database Management System"
+      },
+      {
+        "q": "What is a database schema?",
+        "marks": 1,
+        "answer": "A database schema is a logical representation of the database structure.",
+        "key_points": [
+          "Logical representation",
+          "Database structure"
+        ],
+        "topic": "Database Design"
+      },
+      {
+        "q": "What is normalization in database design?",
+        "marks": 1,
+        "answer": "Normalization is the process of organizing data in a database to minimize data redundancy and dependency.",
+        "key_points": [
+          "Minimize data redundancy",
+          "Dependency"
+        ],
+        "topic": "Database Design"
+      },
+      {
+        "q": "What are the types of database normalization?",
+        "marks": 1,
+        "answer": "The types of database normalization are 1NF, 2NF, 3NF, BCNF, and 4NF.",
+        "key_points": [
+          "1NF",
+          "2NF",
+          "3NF",
+          "BCNF",
+          "4NF"
+        ],
+        "topic": "Database Design"
+      },
+      {
+        "q": "What is a foreign key?",
+        "marks": 1,
+        "answer": "A foreign key is a field in a table that refers to the primary key of another table.",
+        "key_points": [
+          "Field in a table",
+          "Primary key of another table"
+        ],
+        "topic": "Database Design"
+      },
+      {
+        "q": "What is a transaction in a database?",
+        "marks": 2,
+        "answer": "A transaction is a sequence of operations performed on a database that must be executed as a single, all-or-nothing unit of work.",
+        "key_points": [
+          "Sequence of operations",
+          "All-or-nothing unit of work"
+        ],
+        "topic": "Database Transaction"
+      },
+      {
+        "q": "What are the ACID properties of a database transaction?",
+        "marks": 2,
+        "answer": "The ACID properties of a database transaction are Atomicity, Consistency, Isolation, and Durability.",
+        "key_points": [
+          "Atomicity",
+          "Consistency",
+          "Isolation",
+          "Durability"
+        ],
+        "topic": "Database Transaction"
+      },
+      {
+        "q": "What is indexing in a database?",
+        "marks": 2,
+        "answer": "Indexing is a technique of creating an index on a column or set of columns to improve query performance by enabling the database to quickly locate specific data.",
+        "key_points": [
+          "Technique of creating an index",
+          "Query performance"
+        ],
+        "topic": "Database Optimization"
+      },
+      {
+        "q": "What are the types of indexing in a database?",
+        "marks": 2,
+        "answer": "The types of indexing in a database are B-tree index, Hash index, and Full-text index.",
+        "key_points": [
+          "B-tree index",
+          "Hash index",
+          "Full-text index"
+        ],
+        "topic": "Database Optimization"
+      },
+      {
+        "q": "What is concurrency control in a database?",
+        "marks": 3,
+        "answer": "Concurrency control is a mechanism that prevents multiple transactions from accessing and modifying the same data simultaneously, ensuring data consistency and integrity.",
+        "key_points": [
+          "Mechanism to prevent multiple transactions",
+          "Data consistency and integrity"
+        ],
+        "topic": "Database Concurrency Control"
+      },
+      {
+        "q": "What are the techniques of concurrency control in a database?",
+        "marks": 3,
+        "answer": "The techniques of concurrency control in a database are Locking, Timestamping, and Optimistic Concurrency Control.",
+        "key_points": [
+          "Locking",
+          "Timestamping",
+          "Optimistic Concurrency Control"
+        ],
+        "topic": "Database Concurrency Control"
+      },
+      {
+        "q": "What is database security?",
+        "marks": 3,
+        "answer": "Database security refers to the measures taken to protect a database from unauthorized access, use, disclosure, disruption, modification, or destruction.",
+        "key_points": [
+          "Unauthorized access",
+          "Unauthorized use",
+          "Unauthorized disclosure"
+        ],
+        "topic": "Database Security"
+      },
+      {
+        "q": "What are the types of database security threats?",
+        "marks": 3,
+        "answer": "The types of database security threats are Unauthorized Access, Data Tampering, Data Breach, and Denial of Service (DoS) attack.",
+        "key_points": [
+          "Unauthorized Access",
+          "Data Tampering",
+          "Data Breach",
+          "Denial of Service (DoS) attack"
+        ],
+        "topic": "Database Security"
+      },
+      {
+        "q": "What are the best practices for database security?",
+        "marks": 3,
+        "answer": "The best practices for database security are Password management, Access control, Data encryption, Regular backups, and Security auditing.",
+        "key_points": [
+          "Password management",
+          "Access control",
+          "Data encryption",
+          "Regular backups",
+          "Security auditing"
+        ],
+        "topic": "Database Security"
+      }
+    ],
+    "total": 17
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Probability",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:57:40.959Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the concept of probability? Explain the different approaches to define probability.",
+        "marks": 5,
+        "answer": "Probability is a measure of the likelihood of an event occurring. The classical approach to probability is based on the idea of equally likely outcomes, where the probability of an event is defined as the ratio of the number of favorable outcomes to the total number of possible outcomes. The statistical approach to probability is based on the idea of relative frequency, where the probability of an event is defined as the proportion of times the event occurs in a large number of trials. The axiomatic approach to probability is based on a set of axioms, which provide a rigorous mathematical framework for defining probability.",
+        "marking_scheme": [
+          "Definition of probability (1 mark)",
+          "Explanation of classical approach (1 mark)",
+          "Explanation of statistical approach (1 mark)",
+          "Explanation of axiomatic approach (1 mark)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Introduction to Probability",
+        "is_numerical": false
+      },
+      {
+        "q": "A card is drawn from a well-shuffled deck of 52 cards. Find the probability that the card drawn is a king or a spade.",
+        "marks": 5,
+        "answer": "Calculation: Let K be the event that the card drawn is a king and S be the event that the card drawn is a spade. Then, P(K) = 4/52 and P(S) = 13/52. Since there is one card that is both a king and a spade, we have P(K ∩ S) = 1/52. Using the formula for the probability of the union of two events, we get P(K ∪ S) = P(K) + P(S) - P(K ∩ S) = 4/52 + 13/52 - 1/52 = 16/52 = 4/13.",
+        "marking_scheme": [
+          "Definition of events K and S (1 mark)",
+          "Calculation of P(K) and P(S) (1 mark)",
+          "Calculation of P(K ∩ S) (1 mark)",
+          "Application of formula for P(K ∪ S) (1 mark)",
+          "Final answer (1 mark)"
+        ],
+        "topic": "Probability of Events",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of independent events. Give an example to illustrate this concept.",
+        "marks": 5,
+        "answer": "Two events A and B are said to be independent if the occurrence or non-occurrence of one event does not affect the probability of the occurrence of the other event. In other words, P(A ∩ B) = P(A) × P(B). For example, consider two coins tossed simultaneously. Let A be the event that the first coin shows a head and B be the event that the second coin shows a head. Then, P(A) = 1/2 and P(B) = 1/2. Since the outcome of one coin does not affect the outcome of the other coin, we have P(A ∩ B) = P(A) × P(B) = 1/2 × 1/2 = 1/4.",
+        "marking_scheme": [
+          "Definition of independent events (1 mark)",
+          "Explanation of the concept (1 mark)",
+          "Example to illustrate the concept (1 mark)",
+          "Calculation of probabilities (1 mark)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Independent Events",
+        "is_numerical": false
+      },
+      {
+        "q": "A bag contains 5 white balls and 3 black balls. Two balls are drawn at random without replacement. Find the probability that the first ball is white and the second ball is black.",
+        "marks": 5,
+        "answer": "Calculation: Let A be the event that the first ball is white and B be the event that the second ball is black. Then, P(A) = 5/8. Since the ball is not replaced, we have P(B|A) = 3/7. Using the formula for the probability of the intersection of two events, we get P(A ∩ B) = P(A) × P(B|A) = 5/8 × 3/7 = 15/56.",
+        "marking_scheme": [
+          "Definition of events A and B (1 mark)",
+          "Calculation of P(A) (1 mark)",
+          "Calculation of P(B|A) (1 mark)",
+          "Application of formula for P(A ∩ B) (1 mark)",
+          "Final answer (1 mark)"
+        ],
+        "topic": "Probability of Events",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of conditional probability. Give an example to illustrate this concept.",
+        "marks": 5,
+        "answer": "The conditional probability of an event B given that an event A has occurred is denoted by P(B|A) and is defined as P(B|A) = P(A ∩ B) / P(A). For example, consider a deck of 52 cards. Let A be the event that a card drawn is a spade and B be the event that the card drawn is a king. Then, P(A) = 13/52 and P(A ∩ B) = 1/52. Therefore, P(B|A) = P(A ∩ B) / P(A) = (1/52) / (13/52) = 1/13.",
+        "marking_scheme": [
+          "Definition of conditional probability (1 mark)",
+          "Explanation of the concept (1 mark)",
+          "Example to illustrate the concept (1 mark)",
+          "Calculation of probabilities (1 mark)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Conditional Probability",
+        "is_numerical": false
+      },
+      {
+        "q": "A die is rolled twice. Find the probability that the sum of the numbers on the two dice is 7.",
+        "marks": 5,
+        "answer": "Calculation: Let A be the event that the sum of the numbers on the two dice is 7. Then, A = {(1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1)}. Since there are 36 possible outcomes when a die is rolled twice, we have P(A) = 6/36 = 1/6.",
+        "marking_scheme": [
+          "Definition of event A (1 mark)",
+          "List of favorable outcomes (1 mark)",
+          "Calculation of total number of outcomes (1 mark)",
+          "Calculation of probability (1 mark)",
+          "Final answer (1 mark)"
+        ],
+        "topic": "Probability of Events",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

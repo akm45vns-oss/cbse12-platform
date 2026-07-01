@@ -1,0 +1,274 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Linked List (Theory)",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T03:24:22.087Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A linked list is a data structure where each element is called a node?",
+        "opts": [
+          "(A) Yes",
+          "(B) No, it's a stack",
+          "(C) No, it's a queue",
+          "(D) No, it's an array"
+        ],
+        "ans": "A",
+        "explanation": "A linked list is a dynamic data structure where each element (node) points to the next element. This is a fundamental property of linked lists.",
+        "difficulty": "easy",
+        "topic": "Introduction to Linked Lists"
+      },
+      {
+        "q": "What is the time complexity of inserting a new node at the beginning of a linked list?",
+        "opts": [
+          "(A) O(1)",
+          "(B) O(n)",
+          "(C) O(log n)",
+          "(D) O(n^2)"
+        ],
+        "ans": "B",
+        "explanation": "To insert a new node at the beginning of a linked list, we need to update the head pointer and traverse the list to update the next pointers of all nodes, resulting in a time complexity of O(n).",
+        "difficulty": "medium",
+        "topic": "Insertion in Linked Lists"
+      },
+      {
+        "q": "What is the purpose of a dummy node in a linked list?",
+        "opts": [
+          "(A) To reduce memory usage",
+          "(B) To simplify traversal",
+          "(C) To handle edge cases",
+          "(D) To improve insertion efficiency"
+        ],
+        "ans": "C",
+        "explanation": "A dummy node is used to handle edge cases, such as inserting a new node at the beginning of an empty linked list or traversing the list to find the last node.",
+        "difficulty": "easy",
+        "topic": "Use of Dummy Node in Linked Lists"
+      },
+      {
+        "q": "What is the time complexity of deleting a node from the middle of a linked list?",
+        "opts": [
+          "(A) O(1)",
+          "(B) O(log n)",
+          "(C) O(n)",
+          "(D) O(n^2)"
+        ],
+        "ans": "C",
+        "explanation": "To delete a node from the middle of a linked list, we need to traverse the list to find the node before the one to be deleted and update the next pointer, resulting in a time complexity of O(n).",
+        "difficulty": "medium",
+        "topic": "Deletion in Linked Lists"
+      },
+      {
+        "q": "What is the difference between a singly linked list and a doubly linked list?",
+        "opts": [
+          "(A) A singly linked list has a next pointer, while a doubly linked list has a next and previous pointer",
+          "(B) A doubly linked list has only one node, while a singly linked list has multiple nodes",
+          "(C) A doubly linked list is faster than a singly linked list",
+          "(D) A singly linked list uses more memory than a doubly linked list"
+        ],
+        "ans": "A",
+        "explanation": "A singly linked list has a next pointer, while a doubly linked list has both a next and previous pointer, allowing for bidirectional traversal.",
+        "difficulty": "medium",
+        "topic": "Types of Linked Lists"
+      },
+      {
+        "q": "What is the purpose of a sentinel node in a linked list?",
+        "opts": [
+          "(A) To handle edge cases",
+          "(B) To simplify traversal",
+          "(C) To reduce memory usage",
+          "(D) To improve insertion efficiency"
+        ],
+        "ans": "A",
+        "explanation": "A sentinel node is used to handle edge cases, such as inserting a new node at the beginning of an empty linked list or traversing the list to find the last node.",
+        "difficulty": "easy",
+        "topic": "Use of Sentinel Node in Linked Lists"
+      },
+      {
+        "q": "What is the time complexity of searching for a node in a linked list?",
+        "opts": [
+          "(A) O(1)",
+          "(B) O(log n)",
+          "(C) O(n)",
+          "(D) O(n^2)"
+        ],
+        "ans": "C",
+        "explanation": "To search for a node in a linked list, we need to traverse the list, resulting in a time complexity of O(n).",
+        "difficulty": "medium",
+        "topic": "Searching in Linked Lists"
+      },
+      {
+        "q": "Can a linked list be implemented using an array?",
+        "opts": [
+          "(A) Yes",
+          "(B) No, linked lists must be implemented using a linked structure",
+          "(C) Yes, but with limited functionality",
+          "(D) Yes, but with reduced performance"
+        ],
+        "ans": "A",
+        "explanation": "While a linked list can be implemented using an array, it is not the most efficient or typical implementation, as it would require additional data structures to maintain the linked nature.",
+        "difficulty": "hard",
+        "topic": "Implementation of Linked Lists"
+      },
+      {
+        "q": "What is the purpose of a linked list iterator?",
+        "opts": [
+          "(A) To traverse the linked list",
+          "(B) To insert new nodes",
+          "(C) To delete nodes",
+          "(D) To improve memory management"
+        ],
+        "ans": "A",
+        "explanation": "A linked list iterator is used to traverse the linked list, providing a way to access each node without exposing the underlying implementation details.",
+        "difficulty": "easy",
+        "topic": "Iterators in Linked Lists"
+      },
+      {
+        "q": "What is the time complexity of concatenating two linked lists?",
+        "opts": [
+          "(A) O(1)",
+          "(B) O(log n)",
+          "(C) O(n)",
+          "(D) O(n^2)"
+        ],
+        "ans": "C",
+        "explanation": "To concatenate two linked lists, we need to create a new linked list and traverse the original lists to copy the nodes, resulting in a time complexity of O(n).",
+        "difficulty": "medium",
+        "topic": "Concatenation of Linked Lists"
+      },
+      {
+        "q": "Can a linked list be used as a stack?",
+        "opts": [
+          "(A) Yes",
+          "(B) No, linked lists are not suitable for stacks",
+          "(C) Yes, but with limited functionality",
+          "(D) Yes, but with reduced performance"
+        ],
+        "ans": "A",
+        "explanation": "A linked list can be used as a stack by implementing the push and pop operations, but it may not be the most efficient or typical implementation for a stack.",
+        "difficulty": "hard",
+        "topic": "Linked Lists as Stacks"
+      },
+      {
+        "q": "What is the purpose of a linked list destructor?",
+        "opts": [
+          "(A) To free memory allocated by the linked list",
+          "(B) To traverse the linked list",
+          "(C) To insert new nodes",
+          "(D) To delete nodes"
+        ],
+        "ans": "A",
+        "explanation": "A linked list destructor is used to free the memory allocated by the linked list, preventing memory leaks and ensuring proper cleanup.",
+        "difficulty": "easy",
+        "topic": "Destruction of Linked Lists"
+      },
+      {
+        "q": "What is the time complexity of reversing a linked list?",
+        "opts": [
+          "(A) O(1)",
+          "(B) O(log n)",
+          "(C) O(n)",
+          "(D) O(n^2)"
+        ],
+        "ans": "C",
+        "explanation": "To reverse a linked list, we need to traverse the list and update the next pointers of each node, resulting in a time complexity of O(n).",
+        "difficulty": "medium",
+        "topic": "Reversal of Linked Lists"
+      },
+      {
+        "q": "Can a linked list be used as a queue?",
+        "opts": [
+          "(A) Yes",
+          "(B) No, linked lists are not suitable for queues",
+          "(C) Yes, but with limited functionality",
+          "(D) Yes, but with reduced performance"
+        ],
+        "ans": "A",
+        "explanation": "A linked list can be used as a queue by implementing the enqueue and dequeue operations, but it may not be the most efficient or typical implementation for a queue.",
+        "difficulty": "hard",
+        "topic": "Linked Lists as Queues"
+      },
+      {
+        "q": "What is the purpose of a linked list copy constructor?",
+        "opts": [
+          "(A) To create a deep copy of the linked list",
+          "(B) To traverse the linked list",
+          "(C) To insert new nodes",
+          "(D) To delete nodes"
+        ],
+        "ans": "A",
+        "explanation": "A linked list copy constructor is used to create a deep copy of the linked list, ensuring that the original list is not modified and that the new list is a separate entity.",
+        "difficulty": "easy",
+        "topic": "Copying of Linked Lists"
+      },
+      {
+        "q": "What is the time complexity of merging two sorted linked lists?",
+        "opts": [
+          "(A) O(1)",
+          "(B) O(log n)",
+          "(C) O(n)",
+          "(D) O(n^2)"
+        ],
+        "ans": "C",
+        "explanation": "To merge two sorted linked lists, we need to traverse the lists and compare the nodes to determine the next node in the merged list, resulting in a time complexity of O(n).",
+        "difficulty": "medium",
+        "topic": "Merging of Linked Lists"
+      },
+      {
+        "q": "Can a linked list be used in a database?",
+        "opts": [
+          "(A) Yes",
+          "(B) No, linked lists are not suitable for databases",
+          "(C) Yes, but with limited functionality",
+          "(D) Yes, but with reduced performance"
+        ],
+        "ans": "A",
+        "explanation": "A linked list can be used in a database to store and retrieve data, but it may not be the most efficient or typical implementation for a database.",
+        "difficulty": "hard",
+        "topic": "Linked Lists in Databases"
+      },
+      {
+        "q": "What is the purpose of a linked list comparator?",
+        "opts": [
+          "(A) To compare the nodes of the linked list",
+          "(B) To traverse the linked list",
+          "(C) To insert new nodes",
+          "(D) To delete nodes"
+        ],
+        "ans": "A",
+        "explanation": "A linked list comparator is used to compare the nodes of the linked list, allowing for sorting and other operations that require node comparison.",
+        "difficulty": "easy",
+        "topic": "Comparators in Linked Lists"
+      },
+      {
+        "q": "What is the time complexity of sorting a linked list?",
+        "opts": [
+          "(A) O(1)",
+          "(B) O(log n)",
+          "(C) O(n)",
+          "(D) O(n^2)"
+        ],
+        "ans": "C",
+        "explanation": "To sort a linked list, we need to traverse the list and compare the nodes to determine their order, resulting in a time complexity of O(n).",
+        "difficulty": "medium",
+        "topic": "Sorting of Linked Lists"
+      },
+      {
+        "q": "Can a linked list be used in a web browser?",
+        "opts": [
+          "(A) Yes",
+          "(B) No, linked lists are not suitable for web browsers",
+          "(C) Yes, but with limited functionality",
+          "(D) Yes, but with reduced performance"
+        ],
+        "ans": "A",
+        "explanation": "A linked list can be used in a web browser to store and retrieve data, but it may not be the most efficient or typical implementation for a web browser.",
+        "difficulty": "hard",
+        "topic": "Linked Lists in Web Browsers"
+      }
+    ],
+    "total": 20
+  }
+}

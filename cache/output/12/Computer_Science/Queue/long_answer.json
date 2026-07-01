@@ -1,0 +1,84 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Queue",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T02:57:43.148Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the basic operations that can be performed on a queue. How are these operations implemented in programming? Describe the time complexity of each operation.",
+        "marks": 5,
+        "answer": "Queues are linear data structures that follow the FIFO (First-In-First-Out) principle. Basic operations that can be performed on a queue include enqueue, dequeue, peek, and isEmpty. These operations are implemented in programming using arrays or linked lists. Enqueue operation adds an element to the end of the queue, with a time complexity of O(1). Dequeue operation removes an element from the front of the queue, with a time complexity of O(n) in the worst case. Peek operation retrieves the element at the front of the queue without removing it, with a time complexity of O(1). isEmpty operation checks if the queue is empty, with a time complexity of O(1).",
+        "marking_scheme": [
+          "Explain the FIFO principle and basic queue operations (2 marks)",
+          "Implementations of queue operations in programming (1 mark)",
+          "Time complexity of each operation (2 marks)"
+        ],
+        "topic": "Queue Operations",
+        "is_numerical": false
+      },
+      {
+        "q": "Design a queue implementation using an array. Write the code in Python and explain the time complexity of each operation.",
+        "marks": 5,
+        "answer": "Queue implementation using an array in Python:\n\npython\nclass Queue:\n    def __init__(self, max_size):\n        self.max_size = max_size\n        self.queue = [None] * max_size\n        self.size = 0\n\n    def enqueue(self, item):\n        if self.size < self.max_size:\n            self.queue[self.size] = item\n            self.size += 1\n        else:\n            print('Queue is full')\n\n    def dequeue(self):\n        if self.size > 0:\n            item = self.queue[0]\n            self.queue[0] = None\n            for i in range(1, self.size):\n                self.queue[i-1] = self.queue[i]\n            self.size -= 1\n            return item\n        else:\n            print('Queue is empty')\n\n    def peek(self):\n        if self.size > 0:\n            return self.queue[0]\n        else:\n            print('Queue is empty')\n\n    def is_empty(self):\n        return self.size == 0\n\nq = Queue(5)\nq.enqueue(1)\nq.enqueue(2)\nq.enqueue(3)\nprint(q.peek())  # Output: 1\nq.dequeue()\nprint(q.peek())  # Output: 2\nprint(q.is_empty())  # Output: False\n\nTime complexity of each operation:\n- Enqueue: O(1)\n- Dequeue: O(n) in the worst case\n- Peek: O(1)\n- is_empty: O(1)",
+        "marking_scheme": [
+          "Queue implementation using array (3 marks)",
+          "Time complexity of each operation (2 marks)"
+        ],
+        "topic": "Queue Implementation",
+        "is_numerical": true
+      },
+      {
+        "q": "What is a linked list? Explain the advantages and disadvantages of using a linked list over an array. When to use a linked list?",
+        "marks": 5,
+        "answer": "A linked list is a linear data structure where each element is a separate object, known as a node. Each node contains two items: the data and a reference (or link) to the next node in the sequence. Advantages of linked lists include efficient insertion and deletion of elements, as only the affected nodes need to be updated. Linked lists are also useful when the size of the data structure is not fixed. Disadvantages include slower search and access times, as each node must be traversed. Linked lists are more memory-intensive than arrays, as each node requires additional memory for the link. Linked lists are useful when the data structure needs to be frequently modified, or when memory efficiency is not a concern.",
+        "marking_scheme": [
+          "Definition of linked list and its structure (2 marks)",
+          "Advantages and disadvantages of linked lists (2 marks)",
+          "Use cases for linked lists (1 mark)"
+        ],
+        "topic": "Linked Lists",
+        "is_numerical": false
+      },
+      {
+        "q": "Design a linked list implementation in Python. Write the code and explain the time complexity of each operation.",
+        "marks": 5,
+        "answer": "Linked list implementation in Python:\n\npython\nclass Node:\n    def __init__(self, data=None):\n        self.data = data\n        self.next = None\n\nclass LinkedList:\n    def __init__(self):\n        self.head = None\n\n    def insert(self, data):\n        if not self.head:\n            self.head = Node(data)\n        else:\n            current = self.head\n            while current.next:\n                current = current.next\n            current.next = Node(data)\n\n    def delete(self, data):\n        if self.head is None:\n            return\n        if self.head.data == data:\n            self.head = self.head.next\n            return\n        current = self.head\n        while current.next:\n            if current.next.data == data:\n                current.next = current.next.next\n                return\n            current = current.next\n\n    def search(self, data):\n        current = self.head\n        while current:\n            if current.data == data:\n                return True\n            current = current.next\n        return False\n\n    def display(self):\n        elements = []\n        current_node = self.head\n        while current_node:\n            elements.append(current_node.data)\n            current_node = current_node.next\n        return elements\n\nll = LinkedList()\nll.insert('A')\nll.insert('B')\nll.insert('C')\nprint(ll.display())  # Output: ['A', 'B', 'C']\nll.delete('B')\nprint(ll.display())  # Output: ['A', 'C']\nprint(ll.search('A'))  # Output: True",
+        "marking_scheme": [
+          "Linked list implementation in Python (3 marks)",
+          "Time complexity of each operation (2 marks)"
+        ],
+        "topic": "Linked List Implementation",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the difference between a stack and a queue. Describe a scenario where a stack would be more suitable than a queue and vice versa.",
+        "marks": 5,
+        "answer": "A stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle, where the last element added is the first one to be removed. A queue, on the other hand, follows the FIFO principle, where the first element added is the first one to be removed. A stack would be more suitable than a queue when the order of operations is important, such as in parsing expressions or evaluating postfix notation. A queue would be more suitable than a stack when the order of operations is not important, such as in job scheduling or print queues.",
+        "marking_scheme": [
+          "Definition of stack and queue (2 marks)",
+          "Difference between stack and queue (2 marks)",
+          "Use cases for stack and queue (1 mark)"
+        ],
+        "topic": "Stack vs Queue",
+        "is_numerical": false
+      },
+      {
+        "q": "A queue has 5 elements: A, B, C, D, and E. Element D is removed from the queue. What is the new order of elements in the queue?",
+        "marks": 5,
+        "answer": "Calculation:\n1. The queue initially contains the elements: A, B, C, D, E\n2. Element D is removed from the queue\n3. The new order of elements in the queue is: A, B, C, E\n",
+        "marking_scheme": [
+          "Initial queue elements (1 mark)",
+          "Removal of element D (2 marks)",
+          "New order of elements (2 marks)"
+        ],
+        "topic": "Queue Operations",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

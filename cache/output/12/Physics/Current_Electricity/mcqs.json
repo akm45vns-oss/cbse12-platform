@@ -1,0 +1,300 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Current Electricity",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T03:07:01.743Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the direction of the current in a conductor when an electric field is applied?",
+        "opts": [
+          "(A) Opposite to the electric field",
+          "(B) Parallel to the electric field",
+          "(C) Perpendicular to the electric field",
+          "(D) In the same direction as the electric field"
+        ],
+        "ans": "D",
+        "explanation": "The direction of the current in a conductor is in the same direction as the electric field because the electric field exerts a force on the free electrons in the conductor, causing them to drift in the direction of the field.",
+        "difficulty": "easy",
+        "topic": "Electric Current"
+      },
+      {
+        "q": "What is the unit of resistivity?",
+        "opts": [
+          "(A) Ohm-meter",
+          "(B) Ohm per meter",
+          "(C) Ohm per cubic meter",
+          "(D) Ohm per square meter"
+        ],
+        "ans": "B",
+        "explanation": "The unit of resistivity is Ohm per meter because it is defined as the ratio of the electric field strength to the current density.",
+        "difficulty": "easy",
+        "topic": "Resistance and Resistivity"
+      },
+      {
+        "q": "A wire of resistance 10 Ohm is drawn to a length double its original length. What is the new resistance?",
+        "opts": [
+          "(A) 20 Ohm",
+          "(B) 40 Ohm",
+          "(C) 5 Ohm",
+          "(D) 2.5 Ohm"
+        ],
+        "ans": "B",
+        "explanation": "When the length of the wire is doubled, the resistance increases by a factor of 4 because resistance is directly proportional to the length of the wire.",
+        "difficulty": "medium",
+        "topic": "Resistance and Resistivity"
+      },
+      {
+        "q": "What is the purpose of a potentiometer in a circuit?",
+        "opts": [
+          "(A) To measure current",
+          "(B) To measure voltage",
+          "(C) To measure resistance",
+          "(D) To measure power"
+        ],
+        "ans": "B",
+        "explanation": "A potentiometer is used to measure the voltage across a component in a circuit.",
+        "difficulty": "easy",
+        "topic": "Potentiometer"
+      },
+      {
+        "q": "A battery of emf 2V and internal resistance 1 Ohm is connected to a resistor of 2 Ohm. What is the current in the circuit?",
+        "opts": [
+          "(A) 1 A",
+          "(B) 2 A",
+          "(C) 0.5 A",
+          "(D) 0.25 A"
+        ],
+        "ans": "C",
+        "explanation": "The current in the circuit can be calculated using Ohm's law and the concept of internal resistance.",
+        "difficulty": "medium",
+        "topic": "Emf and Internal Resistance"
+      },
+      {
+        "q": "What is the condition for a potentiometer to measure the emf of a cell accurately?",
+        "opts": [
+          "(A) The current in the potentiometer circuit should be zero",
+          "(B) The current in the potentiometer circuit should be maximum",
+          "(C) The current in the potentiometer circuit should be minimum",
+          "(D) The current in the potentiometer circuit should be finite"
+        ],
+        "ans": "A",
+        "explanation": "For a potentiometer to measure the emf of a cell accurately, the current in the potentiometer circuit should be zero.",
+        "difficulty": "medium",
+        "topic": "Potentiometer"
+      },
+      {
+        "q": "What is the difference between emf and terminal voltage?",
+        "opts": [
+          "(A) Emf is the terminal voltage when the circuit is open",
+          "(B) Emf is the terminal voltage when the circuit is closed",
+          "(C) Emf is the terminal voltage when the current is maximum",
+          "(D) Emf is the terminal voltage when the current is zero"
+        ],
+        "ans": "A",
+        "explanation": "The emf of a cell is the terminal voltage when the circuit is open, i.e., when no current is flowing.",
+        "difficulty": "medium",
+        "topic": "Emf and Internal Resistance"
+      },
+      {
+        "q": "A circuit has a resistance of 10 Ohm and a voltage of 20V. What is the power dissipated in the circuit?",
+        "opts": [
+          "(A) 20 W",
+          "(B) 40 W",
+          "(C) 10 W",
+          "(D) 4 W"
+        ],
+        "ans": "B",
+        "explanation": "The power dissipated in the circuit can be calculated using the formula P = V^2/R.",
+        "difficulty": "easy",
+        "topic": "Electric Power"
+      },
+      {
+        "q": "What is the unit of electric power?",
+        "opts": [
+          "(A) Watt",
+          "(B) Ohm",
+          "(C) Volt",
+          "(D) Ampere"
+        ],
+        "ans": "A",
+        "explanation": "The unit of electric power is Watt, which is defined as the rate of doing work.",
+        "difficulty": "easy",
+        "topic": "Electric Power"
+      },
+      {
+        "q": "A wire has a resistance of 5 Ohm at 20°C and 10 Ohm at 50°C. What is the temperature coefficient of resistance of the wire?",
+        "opts": [
+          "(A) 0.01/°C",
+          "(B) 0.05/°C",
+          "(C) 0.1/°C",
+          "(D) 0.2/°C"
+        ],
+        "ans": "B",
+        "explanation": "The temperature coefficient of resistance can be calculated using the formula α = (R2 - R1)/(R1 * (T2 - T1)).",
+        "difficulty": "medium",
+        "topic": "Resistance and Resistivity"
+      },
+      {
+        "q": "What is the purpose of a rheostat in a circuit?",
+        "opts": [
+          "(A) To measure current",
+          "(B) To measure voltage",
+          "(C) To measure resistance",
+          "(D) To vary the resistance"
+        ],
+        "ans": "D",
+        "explanation": "A rheostat is used to vary the resistance in a circuit.",
+        "difficulty": "easy",
+        "topic": "Resistance and Resistivity"
+      },
+      {
+        "q": "A battery of emf 3V and internal resistance 2 Ohm is connected to a 6 Ohm resistor. What is the current in the circuit?",
+        "opts": [
+          "(A) 0.25 A",
+          "(B) 0.5 A",
+          "(C) 0.75 A",
+          "(D) 1 A"
+        ],
+        "ans": "B",
+        "explanation": "The current in the circuit can be calculated using Ohm's law and the concept of internal resistance.",
+        "difficulty": "medium",
+        "topic": "Emf and Internal Resistance"
+      },
+      {
+        "q": "What is the condition for the maximum power to be dissipated in a circuit?",
+        "opts": [
+          "(A) The load resistance should be equal to the internal resistance",
+          "(B) The load resistance should be greater than the internal resistance",
+          "(C) The load resistance should be less than the internal resistance",
+          "(D) The load resistance should be zero"
+        ],
+        "ans": "A",
+        "explanation": "For the maximum power to be dissipated in a circuit, the load resistance should be equal to the internal resistance.",
+        "difficulty": "medium",
+        "topic": "Electric Power"
+      },
+      {
+        "q": "A circuit has two resistors of 4 Ohm and 6 Ohm connected in parallel. What is the equivalent resistance of the circuit?",
+        "opts": [
+          "(A) 2.4 Ohm",
+          "(B) 3.2 Ohm",
+          "(C) 4.8 Ohm",
+          "(D) 6.4 Ohm"
+        ],
+        "ans": "B",
+        "explanation": "The equivalent resistance of the circuit can be calculated using the formula 1/R = 1/R1 + 1/R2.",
+        "difficulty": "medium",
+        "topic": "Combination of Resistors"
+      },
+      {
+        "q": "What is the difference between series and parallel circuits?",
+        "opts": [
+          "(A) In series circuits, the current is the same in all components, while in parallel circuits, the voltage is the same across all components",
+          "(B) In series circuits, the voltage is the same across all components, while in parallel circuits, the current is the same in all components",
+          "(C) In series circuits, the resistance is the same in all components, while in parallel circuits, the resistance is different in all components",
+          "(D) In series circuits, the power is the same in all components, while in parallel circuits, the power is different in all components"
+        ],
+        "ans": "A",
+        "explanation": "In series circuits, the current is the same in all components, while in parallel circuits, the voltage is the same across all components.",
+        "difficulty": "easy",
+        "topic": "Combination of Resistors"
+      },
+      {
+        "q": "A circuit has three resistors of 2 Ohm, 3 Ohm, and 4 Ohm connected in series. What is the equivalent resistance of the circuit?",
+        "opts": [
+          "(A) 5 Ohm",
+          "(B) 6 Ohm",
+          "(C) 9 Ohm",
+          "(D) 12 Ohm"
+        ],
+        "ans": "C",
+        "explanation": "The equivalent resistance of the circuit can be calculated using the formula R = R1 + R2 + R3.",
+        "difficulty": "easy",
+        "topic": "Combination of Resistors"
+      },
+      {
+        "q": "What is the concept of internal resistance of a cell?",
+        "opts": [
+          "(A) It is the resistance of the cell when it is not connected to any circuit",
+          "(B) It is the resistance of the cell when it is connected to a circuit",
+          "(C) It is the resistance of the circuit when the cell is not connected",
+          "(D) It is the resistance of the cell when the current is maximum"
+        ],
+        "ans": "B",
+        "explanation": "The internal resistance of a cell is the resistance of the cell when it is connected to a circuit.",
+        "difficulty": "medium",
+        "topic": "Emf and Internal Resistance"
+      },
+      {
+        "q": "A battery of emf 4V and internal resistance 1 Ohm is connected to a resistor of 2 Ohm. What is the terminal voltage of the battery?",
+        "opts": [
+          "(A) 2V",
+          "(B) 3V",
+          "(C) 3.2V",
+          "(D) 4V"
+        ],
+        "ans": "B",
+        "explanation": "The terminal voltage of the battery can be calculated using the formula V = E - Ir.",
+        "difficulty": "medium",
+        "topic": "Emf and Internal Resistance"
+      },
+      {
+        "q": "What is the concept of meter bridge?",
+        "opts": [
+          "(A) It is a device used to measure the resistance of a wire",
+          "(B) It is a device used to measure the voltage across a component",
+          "(C) It is a device used to measure the current in a circuit",
+          "(D) It is a device used to measure the power dissipated in a circuit"
+        ],
+        "ans": "A",
+        "explanation": "A meter bridge is a device used to measure the resistance of a wire.",
+        "difficulty": "easy",
+        "topic": "Meter Bridge"
+      },
+      {
+        "q": "A wire has a resistance of 10 Ohm at 0°C and 15 Ohm at 100°C. What is the temperature coefficient of resistance of the wire at 0°C?",
+        "opts": [
+          "(A) 0.001/°C",
+          "(B) 0.005/°C",
+          "(C) 0.01/°C",
+          "(D) 0.05/°C"
+        ],
+        "ans": "C",
+        "explanation": "The temperature coefficient of resistance can be calculated using the formula α = (R2 - R1)/(R1 * (T2 - T1)).",
+        "difficulty": "hard",
+        "topic": "Resistance and Resistivity"
+      },
+      {
+        "q": "A circuit has two resistors of 3 Ohm and 6 Ohm connected in parallel. What is the equivalent resistance of the circuit?",
+        "opts": [
+          "(A) 1.5 Ohm",
+          "(B) 2 Ohm",
+          "(C) 3 Ohm",
+          "(D) 4.5 Ohm"
+        ],
+        "ans": "B",
+        "explanation": "The equivalent resistance of the circuit can be calculated using the formula 1/R = 1/R1 + 1/R2.",
+        "difficulty": "medium",
+        "topic": "Combination of Resistors"
+      },
+      {
+        "q": "What is the condition for the maximum current to flow in a circuit?",
+        "opts": [
+          "(A) The load resistance should be equal to the internal resistance",
+          "(B) The load resistance should be greater than the internal resistance",
+          "(C) The load resistance should be less than the internal resistance",
+          "(D) The load resistance should be zero"
+        ],
+        "ans": "D",
+        "explanation": "For the maximum current to flow in a circuit, the load resistance should be zero.",
+        "difficulty": "hard",
+        "topic": "Electric Power"
+      }
+    ],
+    "total": 22
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Differential Equations",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:56:46.836Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the concept of a differential equation? Explain the order and degree of a differential equation with suitable examples.",
+        "marks": 5,
+        "answer": "A differential equation is an equation that involves an unknown function and its derivatives. The order of a differential equation is the order of the highest derivative of the function. For example, in the equation dy/dx = 3x, the order is 1 because the highest derivative is the first derivative. The degree of a differential equation is the power to which the highest derivative is raised. For instance, in the equation (dy/dx)^2 + 3y = 0, the degree is 2 because the first derivative is squared.",
+        "marking_scheme": [
+          "Definition of differential equation worth 1 mark",
+          "Explanation of order with example worth 2 marks",
+          "Explanation of degree with example worth 2 marks"
+        ],
+        "topic": "Introduction to Differential Equations",
+        "is_numerical": false
+      },
+      {
+        "q": "Solve the differential equation dy/dx = (x+y)/(x-y) using the method of separation of variables.",
+        "marks": 5,
+        "answer": "Calculation: \nLet's start by separating the variables: (y-x)/(x+y) dx = dy \nIntegrating both sides, we get: ∫(y-x)/(x+y) dx = ∫dy \nUsing substitution or partial fractions, we can integrate the left side to get: ∫(1 - 2x/(x+y)) dx = ∫dy \nThis simplifies to: x - 2∫(x/(x+y)) dx = y + C \nUsing integration by parts or substitution for the integral on the left, we find: x - 2∫(1 - y/(x+y)) dx = y + C \nSimplifying further yields: x - 2x + 2y + 2∫(y/(x+y)) dy = y + C \nThis reduces to: -x + 2y + 2∫(y/(x+y)) dy = y + C \nPerforming the integration gives: -x + 2y + 2∫(1 - x/(x+y)) dy = y + C \nWhich simplifies to: -x + 2y + 2y - 2∫(x/(x+y)) dx = y + C \nThis leads to: -x + 4y - 2(x - y - ∫(y/(x+y)) dy) = y + C \nFurther simplification gives: -x + 4y - 2x + 2y + 2∫(y/(x+y)) dy = y + C \nSolving for y yields: -3x + 6y = y + C \nThus, the solution is: -3x + 5y = C",
+        "marking_scheme": [
+          "Separation of variables worth 1 mark",
+          "Integration step worth 2 marks",
+          "Final solution worth 2 marks"
+        ],
+        "topic": "Separation of Variables",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of linear differential equations and give an example of a first-order linear differential equation. Solve it using an integrating factor.",
+        "marks": 5,
+        "answer": "A linear differential equation is of the form dy/dx + Py = Q, where P and Q are functions of x. An example is dy/dx + 2y = 3. To solve it, we use an integrating factor I = e^∫Pdx. Calculation: For the given equation, P = 2, so I = e^∫2dx = e^(2x). Multiplying both sides of the equation by I gives: e^(2x)dy/dx + 2e^(2x)y = 3e^(2x). This can be written as d(e^(2x)y)/dx = 3e^(2x). Integrating both sides gives: e^(2x)y = (3/2)e^(2x) + C. Solving for y yields: y = (3/2) + Ce^(-2x).",
+        "marking_scheme": [
+          "Definition of linear differential equation worth 1 mark",
+          "Explanation of integrating factor worth 1 mark",
+          "Application to example and solution worth 3 marks"
+        ],
+        "topic": "Linear Differential Equations",
+        "is_numerical": false
+      },
+      {
+        "q": "Solve the differential equation (dy/dx) = (2x - y)/(x + y) using the method of separation of variables.",
+        "marks": 5,
+        "answer": "Calculation: \nFirst, separate the variables: (y + x)dy = (2x - y)dx \nRearrange to get: (y/(2x - y))dy = dx/(x + y) \nNow, integrate both sides: ∫(y/(2x - y))dy = ∫dx/(x + y) \nLet's solve the integrals separately. For the left side, let u = 2x - y, du/dx = 2 - dy/dx, which implies dy = (2 - du/dx)dx. However, we directly integrate it considering the separation: ∫(y/(2x - y))dy = ∫(1 - (2x)/(2x - y))dy \nThis simplifies to: ∫dy - ∫(2x/(2x - y))dy = ∫dx/(x + y) \nSolving these integrals requires careful substitution or recognition of standard forms. The equation simplifies to a form where direct integration may not straightforwardly apply without recognizing it as a specific case that could simplify through substitution or recognizing patterns related to the structure of the equation.",
+        "marking_scheme": [
+          "Separation of variables worth 1 mark",
+          "Integration step worth 2 marks",
+          "Attempt to solve or recognize pattern worth 2 marks"
+        ],
+        "topic": "Separation of Variables",
+        "is_numerical": true
+      },
+      {
+        "q": "Find the general solution of the differential equation dy/dx = (y - x)/(y + x).",
+        "marks": 5,
+        "answer": "Calculation: \nTo solve the differential equation dy/dx = (y - x)/(y + x), let's first try to separate the variables or find a suitable method. The equation can be rearranged as: (y + x)dy = (y - x)dx \nThis simplifies to: ydy + xdy = ydx - xdx \nRearranging gives: ydy - ydx = -xdx - xdy \nOr, y(dy - dx) = -x(dx + dy) \nThis doesn't immediately separate into a straightforward integration without recognizing a potential substitution or method to simplify. However, observing the structure suggests a potential approach could involve considering the equation in terms of differential forms or recognizing a pattern that fits a specific method of solution, such as a substitution that simplifies the equation into a separable form or recognizing it fits a particular standard form.",
+        "marking_scheme": [
+          "Attempt to separate variables worth 1 mark",
+          "Recognition of equation form worth 1 mark",
+          "Method application or substitution worth 3 marks"
+        ],
+        "topic": "Separation of Variables",
+        "is_numerical": true
+      },
+      {
+        "q": "Solve the differential equation dy/dx = (x^2 + y^2)/(2xy) using the method of separation of variables.",
+        "marks": 5,
+        "answer": "Calculation: \nFirst, separate the variables: 2xydy = (x^2 + y^2)dx \nDivide through by x^2y^2 to get: (2/y)dy = (1/x)dx + (y/x^2)dx \nHowever, to proceed correctly, we should directly separate the variables without the division step as initially indicated: 2xydy = (x^2 + y^2)dx \nThen, divide by xy to correctly separate: 2dy/y = (x/y + y/x)dx \nNow, integrate both sides: 2∫dy/y = ∫(x/y)dx + ∫(y/x)dx \nLet's solve the integrals. For ∫(x/y)dx and ∫(y/x)dx, consider u-substitutions or recognize standard forms. For instance, let u = y, du = dy for the first integral on the right, but recognize the structure doesn't directly fit simple u-substitution without additional steps or recognition of the differential equation's form.",
+        "marking_scheme": [
+          "Correct separation of variables worth 1 mark",
+          "Integration attempt worth 2 marks",
+          "Solution recognition or method application worth 2 marks"
+        ],
+        "topic": "Separation of Variables",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Exception Handling",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T03:24:20.933Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Java uses try, catch, and finally blocks for exception handling.",
+        "reason": "Reason (R): These blocks are part of the try-catch-finally block structure which helps in handling exceptions.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Java's try, catch, and finally blocks are indeed used for exception handling, and the reason provided is a correct explanation."
+      },
+      {
+        "assertion": "Assertion (A): Checked exceptions are the ones that are checked at compile time.",
+        "reason": "Reason (R): Checked exceptions are a type of exception that must be either caught or declared in the method or class.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Checked exceptions are indeed checked at compile time, and the reason provided explains why this is the case."
+      },
+      {
+        "assertion": "Assertion (A): The finally block is used to release system resources.",
+        "reason": "Reason (R): It is used to execute some code even if an exception is thrown.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The finally block is indeed used to release system resources, and the reason provided explains why this is the case."
+      },
+      {
+        "assertion": "Assertion (A): Uncaught exceptions terminate the program.",
+        "reason": "Reason (R): If an exception is not caught, the program will terminate.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Uncaught exceptions do terminate the program, and the reason provided explains why this is the case."
+      },
+      {
+        "assertion": "Assertion (A): Java's try-catch-finally block structure is used for exception handling.",
+        "reason": "Reason (R): This structure helps in handling exceptions in a more organized way.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Java's try-catch-finally block structure is indeed used for exception handling, and the reason provided explains why this is the case."
+      },
+      {
+        "assertion": "Assertion (A): Checked exceptions are a type of runtime exception.",
+        "reason": "Reason (R): This is false, checked exceptions are a separate category of exceptions.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "Checked exceptions are not a type of runtime exception, they are a separate category of exceptions."
+      },
+      {
+        "assertion": "Assertion (A): The try block is used to execute code that may throw an exception.",
+        "reason": "Reason (R): This is true, the try block is used to execute code that may throw an exception.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The try block is indeed used to execute code that may throw an exception, and the reason provided is a correct explanation."
+      },
+      {
+        "assertion": "Assertion (A): The finally block is optional in Java.",
+        "reason": "Reason (R): This is false, the finally block is a required part of the try-catch-finally block structure.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The finally block is not optional in Java, it is a required part of the try-catch-finally block structure."
+      },
+      {
+        "assertion": "Assertion (A): Uncaught exceptions are caught by the JVM.",
+        "reason": "Reason (R): This is true, the JVM catches uncaught exceptions.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Uncaught exceptions are indeed caught by the JVM, and the reason provided is a correct explanation."
+      },
+      {
+        "assertion": "Assertion (A): The catch block is used to handle checked exceptions.",
+        "reason": "Reason (R): This is false, the catch block is used to handle both checked and unchecked exceptions.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The catch block is not used to handle only checked exceptions, it is used to handle both checked and unchecked exceptions."
+      }
+    ],
+    "total": 10
+  }
+}

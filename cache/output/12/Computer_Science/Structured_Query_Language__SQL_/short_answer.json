@@ -1,0 +1,174 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T03:25:26.133Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is SQL? Describe its types.",
+        "marks": 1,
+        "answer": "SQL is a programming language used to manage relational databases. It has two types: DDL (Data Definition Language) and DML (Data Manipulation Language).",
+        "key_points": [
+          "SQL is a programming language",
+          "Types of SQL: DDL and DML"
+        ],
+        "topic": "Introduction to SQL"
+      },
+      {
+        "q": "What is a query in SQL? Explain its syntax.",
+        "marks": 1,
+        "answer": "A query in SQL is a command used to request data from a database. Its syntax is: SELECT column(s) FROM table_name;",
+        "key_points": [
+          "Query in SQL",
+          "Syntax of query"
+        ],
+        "topic": "SQL Queries"
+      },
+      {
+        "q": "What is a table in SQL? What are its components?",
+        "marks": 1,
+        "answer": "A table in SQL is a collection of related data stored in rows and columns. Its components are: columns, rows, and primary key.",
+        "key_points": [
+          "Table in SQL",
+          "Components of table"
+        ],
+        "topic": "SQL Tables"
+      },
+      {
+        "q": "What is a primary key in SQL? Explain its importance.",
+        "marks": 1,
+        "answer": "A primary key in SQL is a unique identifier for each row in a table. It is essential for maintaining data integrity and preventing duplicate records.",
+        "key_points": [
+          "Primary key in SQL",
+          "Importance of primary key"
+        ],
+        "topic": "SQL Database Design"
+      },
+      {
+        "q": "What is a foreign key in SQL? Explain its purpose.",
+        "marks": 1,
+        "answer": "A foreign key in SQL is a field in a table that references the primary key in another table. It establishes relationships between tables and maintains data consistency.",
+        "key_points": [
+          "Foreign key in SQL",
+          "Purpose of foreign key"
+        ],
+        "topic": "SQL Database Design"
+      },
+      {
+        "q": "Explain the difference between INNER JOIN and LEFT JOIN in SQL.",
+        "marks": 2,
+        "answer": "INNER JOIN returns records that have matching values in both tables, while LEFT JOIN returns all records from the left table and matching records from the right table. If there are no matches, LEFT JOIN returns NULL values.",
+        "key_points": [
+          "INNER JOIN",
+          "LEFT JOIN"
+        ],
+        "topic": "SQL Joins"
+      },
+      {
+        "q": "What is a subquery in SQL? Explain its types and uses.",
+        "marks": 2,
+        "answer": "A subquery in SQL is a query nested inside another query. There are two types: single-row subquery and multi-row subquery. It is used to retrieve data based on conditions and to perform complex queries.",
+        "key_points": [
+          "Subquery in SQL",
+          "Types and uses of subquery"
+        ],
+        "topic": "SQL Subqueries"
+      },
+      {
+        "q": "Explain how to use the GROUP BY clause in SQL to perform aggregate operations.",
+        "marks": 2,
+        "answer": "The GROUP BY clause in SQL is used to group rows based on one or more columns and perform aggregate operations such as SUM, AVG, MAX, MIN, and COUNT. It is used to analyze and summarize large datasets.",
+        "key_points": [
+          "GROUP BY clause",
+          "Aggregate operations"
+        ],
+        "topic": "SQL Aggregate Functions"
+      },
+      {
+        "q": "Explain how to use the HAVING clause in SQL to filter grouped data.",
+        "marks": 2,
+        "answer": "The HAVING clause in SQL is used to filter grouped data based on conditions. It is used in conjunction with the GROUP BY clause to retrieve specific data.",
+        "key_points": [
+          "HAVING clause",
+          "Filtering grouped data"
+        ],
+        "topic": "SQL Aggregate Functions"
+      },
+      {
+        "q": "What is a view in SQL? Explain its advantages and disadvantages.",
+        "marks": 2,
+        "answer": "A view in SQL is a virtual table based on the result of a query. Its advantages are: improved data security, simplified data access, and reduced data redundancy. Its disadvantages are: performance issues and complexity.",
+        "key_points": [
+          "View in SQL",
+          "Advantages and disadvantages of view"
+        ],
+        "topic": "SQL Views"
+      },
+      {
+        "q": "Explain how to create a stored procedure in SQL and its benefits.",
+        "marks": 3,
+        "answer": "A stored procedure in SQL is a precompiled SQL statement that can be executed repeatedly. It is created using the CREATE PROCEDURE statement and has benefits such as improved performance, data security, and modularity.",
+        "key_points": [
+          "Stored procedure in SQL",
+          "Benefits of stored procedure"
+        ],
+        "topic": "SQL Stored Procedures"
+      },
+      {
+        "q": "Explain how to use transactions in SQL to manage database consistency.",
+        "marks": 3,
+        "answer": "Transactions in SQL are used to manage database consistency by grouping multiple operations into a single unit of work. They can be committed or rolled back based on the result of the operations.",
+        "key_points": [
+          "Transactions in SQL",
+          "Managing database consistency"
+        ],
+        "topic": "SQL Transactions"
+      },
+      {
+        "q": "Explain how to use indexes in SQL to improve query performance.",
+        "marks": 3,
+        "answer": "Indexes in SQL are used to improve query performance by reducing the time it takes to retrieve data. They are created on one or more columns of a table and can be used by the database engine to locate data quickly.",
+        "key_points": [
+          "Indexes in SQL",
+          "Improving query performance"
+        ],
+        "topic": "SQL Indexing"
+      },
+      {
+        "q": "Explain how to use triggers in SQL to enforce data integrity.",
+        "marks": 3,
+        "answer": "Triggers in SQL are used to enforce data integrity by automatically executing a set of actions in response to a specific event. They can be used to prevent data inconsistencies and ensure data accuracy.",
+        "key_points": [
+          "Triggers in SQL",
+          "Enforcing data integrity"
+        ],
+        "topic": "SQL Triggers"
+      },
+      {
+        "q": "Explain how to use cursors in SQL to process individual rows of data.",
+        "marks": 3,
+        "answer": "Cursors in SQL are used to process individual rows of data by allowing the database engine to iterate over a result set and perform operations on each row.",
+        "key_points": [
+          "Cursors in SQL",
+          "Processing individual rows"
+        ],
+        "topic": "SQL Cursors"
+      },
+      {
+        "q": "Explain how to use the UNION operator in SQL to combine multiple queries.",
+        "marks": 3,
+        "answer": "The UNION operator in SQL is used to combine the result sets of two or more queries into a single result set. It removes duplicate rows and returns a single result set.",
+        "key_points": [
+          "UNION operator",
+          "Combining multiple queries"
+        ],
+        "topic": "SQL Operators"
+      }
+    ],
+    "total": 16
+  }
+}

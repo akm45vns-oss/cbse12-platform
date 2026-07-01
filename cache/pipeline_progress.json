@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-30T18:24:15.153Z",
-  "elapsed_seconds": 8276,
-  "rate_per_second": 0.59,
+  "updated_at": "2026-07-01T03:32:17.562Z",
+  "elapsed_seconds": 480,
+  "rate_per_second": 10.45,
   "queue": {
-    "completed": 4865,
-    "pending": 698,
+    "completed": 5016,
+    "pending": 364,
     "inFlight": 5,
-    "failed": 0,
-    "retrying": 698,
+    "failed": 175,
+    "retrying": 364,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
@@ -18,160 +18,160 @@
   "workers": [
     {
       "workerId": "Worker-Physics",
-      "processed": 105,
+      "processed": 3,
       "skipped": 0,
-      "failed": 114,
+      "failed": 12,
       "running": true
     },
     {
       "workerId": "Worker-Chemistry",
-      "processed": 114,
+      "processed": 6,
       "skipped": 0,
-      "failed": 116,
+      "failed": 7,
       "running": true
     },
     {
       "workerId": "Worker-Maths",
-      "processed": 94,
+      "processed": 4,
       "skipped": 0,
-      "failed": 118,
+      "failed": 6,
       "running": true
     },
     {
       "workerId": "Worker-Biology",
-      "processed": 108,
+      "processed": 6,
       "skipped": 0,
-      "failed": 115,
+      "failed": 8,
       "running": true
     },
     {
       "workerId": "Worker-Other",
-      "processed": 108,
+      "processed": 5,
       "skipped": 0,
-      "failed": 122,
+      "failed": 8,
       "running": true
     }
   ],
   "recent_events": [
     {
-      "workerId": "Worker-Physics",
+      "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating pyq_style for General Principles and Processes of Isolation of Elements (Chemistry)",
-      "timestamp": "2026-06-30T18:24:02.827Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating pyq_style for Electrochemistry (Chemistry)",
-      "timestamp": "2026-06-30T18:24:02.781Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:24:02.501Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:24:02.441Z"
+      "message": "Generating mcqs for Colonial Cities (History)",
+      "timestamp": "2026-07-01T03:32:00.683Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "generating",
-      "message": "Generating long_answer for Electrochemistry (Chemistry)",
-      "timestamp": "2026-06-30T18:23:56.538Z"
+      "message": "Generating assertion_reason for Peasants, Zamindars and the State (History)",
+      "timestamp": "2026-07-01T03:32:00.453Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "done",
+      "message": "✅ History/Kinship, Caste and Class/mcqs",
+      "timestamp": "2026-07-01T03:32:00.450Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating short_answer for Colonialism and the Countryside (History)",
+      "timestamp": "2026-07-01T03:32:00.363Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating assertion_reason for Kings and Chronicles: The Mughal Courts (History)",
+      "timestamp": "2026-07-01T03:32:00.357Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating short_answer for An Imperial Capital: Vijayanagara (History)",
+      "timestamp": "2026-07-01T03:32:00.168Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-01T03:32:00.129Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-01T03:32:00.119Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating mcqs for Rebels and the Raj: 1857 Revolt (History)",
+      "timestamp": "2026-07-01T03:32:00.075Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating mcqs for An Imperial Capital: Vijayanagara (History)",
+      "timestamp": "2026-07-01T03:32:00.063Z"
     },
     {
       "workerId": "Worker-Other",
-      "status": "error",
-      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
-      "timestamp": "2026-06-30T18:23:56.130Z"
+      "status": "done",
+      "message": "✅ History/Kinship, Caste and Class/short_answer",
+      "timestamp": "2026-07-01T03:31:59.916Z"
     },
     {
       "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating long_answer for Chemical Kinetics (Chemistry)",
-      "timestamp": "2026-06-30T18:23:21.452Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Validation failed for 12::Physics::Ray Optics and Optical Instruments::pyq_style: Too few items in questions: 0 (minimum 3)",
-      "timestamp": "2026-06-30T18:23:21.210Z"
+      "status": "done",
+      "message": "✅ History/Kings, Farmers and Towns/assertion_reason",
+      "timestamp": "2026-07-01T03:31:59.845Z"
     },
     {
       "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating long_answer for The Solid State (Chemistry)",
-      "timestamp": "2026-06-30T18:23:19.251Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:23:18.971Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating pyq_style for Semiconductor Electronics: Materials, Devices and Simple Circuits (Physics)",
-      "timestamp": "2026-06-30T18:23:00.366Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "error",
-      "message": "Validation failed for 12::Physics::Alternating Current::long_answer: Duplicate question/item within response: \"A 100 Ω resistor, a 50 mH inductor, and a 25 μF capacitor ar...\"",
-      "timestamp": "2026-06-30T18:23:00.101Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "generating",
-      "message": "Generating pyq_style for The Solid State (Chemistry)",
-      "timestamp": "2026-06-30T18:22:57.617Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:22:57.284Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating long_answer for Atoms (Physics)",
-      "timestamp": "2026-06-30T18:22:51.784Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "generating",
-      "message": "Generating long_answer for Nuclei (Physics)",
-      "timestamp": "2026-06-30T18:22:51.633Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:22:50.505Z"
+      "status": "done",
+      "message": "✅ History/Bricks, Beads and Bones: The Harappan Civilisation/mcqs",
+      "timestamp": "2026-07-01T03:31:59.837Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-06-30T18:22:50.501Z"
+      "timestamp": "2026-07-01T03:31:59.826Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "generating",
-      "message": "Generating long_answer for Dual Nature of Radiation and Matter (Physics)",
-      "timestamp": "2026-06-30T18:22:04.491Z"
+      "message": "Generating mcqs for Kings, Farmers and Towns (History)",
+      "timestamp": "2026-07-01T03:31:59.768Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "error",
-      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
-      "timestamp": "2026-06-30T18:22:04.103Z"
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-01T03:31:59.072Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating mcqs for Kinship, Caste and Class (History)",
+      "timestamp": "2026-07-01T03:31:54.899Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating case_based for Bhakti–Sufi Traditions (History)",
+      "timestamp": "2026-07-01T03:31:54.716Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-01T03:31:54.201Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-01T03:31:54.197Z"
     }
   ]
 }

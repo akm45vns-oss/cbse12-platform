@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Business Studies",
+  "chapter": "Organising",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:58:54.888Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the meaning and importance of organising in management? Explain the factors that influence the organisational structure.",
+        "marks": 5,
+        "answer": "Organising is the process of defining and assigning roles, responsibilities, and relationships to achieve organisational objectives. It involves identifying the tasks to be performed, grouping them into manageable units, and allocating resources. The importance of organising lies in its ability to create a framework for achieving goals, facilitating communication, and enhancing productivity. Factors that influence organisational structure include the company's size, technology, environment, and strategy. A well-designed organisational structure helps to clarify roles and responsibilities, improve decision-making, and enhance overall performance.",
+        "marking_scheme": [
+          "Definition and importance of organising (1 mark)",
+          "Factors influencing organisational structure (2 marks)",
+          "Explanation of the impact of organisational structure on organisational performance (2 marks)"
+        ],
+        "topic": "Introduction to Organising",
+        "is_numerical": false
+      },
+      {
+        "q": "A company has 500 employees and wants to determine the optimal span of control for its managers. If the company has 10 departments, what would be the ideal number of managers required?",
+        "marks": 5,
+        "answer": "Calculation: \nLet's assume the optimal span of control is between 5-10 employees per manager. \nTo determine the ideal number of managers, we can divide the total number of employees (500) by the average span of control (7.5). \nIdeal number of managers = Total employees / Average span of control \nIdeal number of managers = 500 / 7.5 \nIdeal number of managers = 66.67 \nSince we cannot have a fraction of a manager, we can round up to the nearest whole number. \nIdeal number of managers = 67 \nHowever, the company has 10 departments, so we need to consider the number of managers required per department. \nAssuming each department requires at least one manager, the total number of managers required would be 10 (one for each department) plus additional managers to cover the remaining employees.",
+        "marking_scheme": [
+          "Calculation of ideal number of managers (2 marks)",
+          "Consideration of departmental requirements (1 mark)",
+          "Explanation of the optimal span of control (2 marks)"
+        ],
+        "topic": "Span of Control",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of delegation and its importance in an organisation. Discuss the essential elements of effective delegation.",
+        "marks": 5,
+        "answer": "Delegation is the process of assigning tasks and responsibilities to subordinates, while retaining accountability for the outcome. It is essential in an organisation as it helps to develop the skills and abilities of employees, enhances productivity, and improves decision-making. The essential elements of effective delegation include clear communication, defined objectives, and established deadlines. It also involves providing the necessary authority, resources, and support to complete the task. Effective delegation requires a clear understanding of the task, the subordinate's capabilities, and the organisation's goals.",
+        "marking_scheme": [
+          "Definition and importance of delegation (1 mark)",
+          "Essential elements of effective delegation (2 marks)",
+          "Explanation of the benefits of delegation (2 marks)"
+        ],
+        "topic": "Delegation",
+        "is_numerical": false
+      },
+      {
+        "q": "A company has a hierarchical structure with 5 levels of management. If each manager has a span of control of 6 employees, how many employees are required at each level to maintain this span of control?",
+        "marks": 5,
+        "answer": "Calculation: \nLet's start from the top level (Level 1) and work our way down. \nLevel 1: 1 manager (the CEO) \nLevel 2: 6 managers (since each manager has a span of control of 6) \nLevel 3: 6 x 6 = 36 managers \nLevel 4: 6 x 36 = 216 managers \nLevel 5: 6 x 216 = 1296 managers \nTo maintain a span of control of 6 employees, each level would require the calculated number of employees.",
+        "marking_scheme": [
+          "Calculation of employees at each level (3 marks)",
+          "Explanation of the hierarchical structure (1 mark)",
+          "Discussion of the importance of span of control (1 mark)"
+        ],
+        "topic": "Span of Control",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the difference between centralisation and decentralisation? Explain the advantages and disadvantages of each.",
+        "marks": 5,
+        "answer": "Centralisation refers to the concentration of decision-making authority at the top level of the organisation, while decentralisation involves the dispersion of decision-making authority throughout the organisation. Centralisation provides better control, faster decision-making, and reduced costs, but it can also lead to a lack of innovation and limited employee participation. Decentralisation, on the other hand, promotes employee empowerment, faster response to changes, and increased innovation, but it can also result in conflicting decisions and higher costs. The choice between centralisation and decentralisation depends on the organisation's size, culture, and goals.",
+        "marking_scheme": [
+          "Definition of centralisation and decentralisation (1 mark)",
+          "Advantages and disadvantages of centralisation (2 marks)",
+          "Advantages and disadvantages of decentralisation (2 marks)"
+        ],
+        "topic": "Centralisation and Decentralisation",
+        "is_numerical": false
+      },
+      {
+        "q": "A company has 2000 employees and wants to determine the ideal number of levels in its organisational hierarchy. If each level has a span of control of 5 employees, what would be the ideal number of levels?",
+        "marks": 5,
+        "answer": "Calculation: \nLet's use the formula: Ideal number of levels = Log (Total employees) / Log (Span of control) \nIdeal number of levels = Log (2000) / Log (5) \nIdeal number of levels = 3.30 / 0.70 \nIdeal number of levels = 4.71 \nSince we cannot have a fraction of a level, we can round up to the nearest whole number. \nIdeal number of levels = 5 \nTherefore, the company should have 5 levels in its organisational hierarchy.",
+        "marking_scheme": [
+          "Calculation of ideal number of levels (3 marks)",
+          "Explanation of the formula used (1 mark)",
+          "Discussion of the importance of span of control (1 mark)"
+        ],
+        "topic": "Organisational Hierarchy",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

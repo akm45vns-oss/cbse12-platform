@@ -1,0 +1,88 @@
+{
+  "class": "12",
+  "subject": "Accountancy",
+  "chapter": "Accounting for Partnership: Basic Concepts",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:58:06.481Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of partnership and its basic features. What are the advantages and limitations of a partnership firm?",
+        "marks": 5,
+        "answer": "A partnership is an association of two or more persons who agree to share the profits of a business carried on by all or any of them acting for all. The basic features of a partnership include a voluntary association, agreement, lawful business, sharing of profits, mutual agency, and unlimited liability. The advantages of a partnership firm include easy formation, better decision-making, sharing of risks, and flexibility in operations. However, the limitations of a partnership firm include unlimited liability, limited capital, lack of continuity, and potential for conflicts among partners.",
+        "marking_scheme": [
+          "Definition of partnership (1 mark)",
+          "Basic features of partnership (1 mark)",
+          "Advantages of partnership (1.5 marks)",
+          "Limitations of partnership (1.5 marks)"
+        ],
+        "topic": "Introduction to Partnership",
+        "is_numerical": false
+      },
+      {
+        "q": "A and B are partners in a firm, sharing profits in the ratio 3:2. They admit C as a new partner, who brings in a capital of Rs. 1,00,000. The total capital of the firm after C's admission is Rs. 3,00,000. Calculate the capital contributed by A and B.",
+        "marks": 5,
+        "answer": "Calculation:\nLet the capital contributed by A be Rs. x and by B be Rs. y.\nWe know that the ratio of A's capital to B's capital is 3:2.\nSo, x/y = 3/2\nx = (3/2)y\nThe total capital after C's admission is Rs. 3,00,000, which includes C's capital of Rs. 1,00,000.\nSo, x + y + 1,00,000 = 3,00,000\nSubstituting x = (3/2)y, we get:\n(3/2)y + y + 1,00,000 = 3,00,000\n(5/2)y = 2,00,000\ny = 80,000\nx = (3/2) * 80,000 = 1,20,000\nTherefore, A's capital is Rs. 1,20,000 and B's capital is Rs. 80,000.",
+        "marking_scheme": [
+          "Calculation of A's and B's capital (4 marks)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Admission of a New Partner",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the concept of goodwill in a partnership firm? How is it calculated and accounted for when a new partner is admitted?",
+        "marks": 5,
+        "answer": "Goodwill in a partnership firm represents the excess value of the business over its net tangible assets. It is calculated using methods such as the average profit method, super profit method, or capitalization method. When a new partner is admitted, goodwill is accounted for by either adjusting the partner's capital contribution or by transferring the goodwill to the partner's capital account. The existing partners may also decide to retain the goodwill and not account for it.",
+        "marking_scheme": [
+          "Definition and concept of goodwill (1 mark)",
+          "Methods of calculating goodwill (1.5 marks)",
+          "Accounting for goodwill on admission of a new partner (2 marks)",
+          "Alternative treatments of goodwill (0.5 marks)"
+        ],
+        "topic": "Goodwill in Partnership",
+        "is_numerical": false
+      },
+      {
+        "q": "A, B, and C are partners in a firm, sharing profits in the ratio 5:3:2. They decide to dissolve the partnership on 31st March 2022. On the date of dissolution, the balance sheet of the firm shows the following assets and liabilities: Cash Rs. 20,000, Debtors Rs. 50,000, Stock Rs. 30,000, Creditors Rs. 10,000, and Loan from B Rs. 15,000. Calculate the amount of cash to be paid to each partner on dissolution, assuming that the partners have agreed to pay all the liabilities and distribute the remaining assets in the profit-sharing ratio.",
+        "marks": 5,
+        "answer": "Calculation:\nFirst, we need to calculate the total assets and liabilities:\nTotal assets = Cash + Debtors + Stock = 20,000 + 50,000 + 30,000 = 1,00,000\nTotal liabilities = Creditors + Loan from B = 10,000 + 15,000 = 25,000\nNet assets = Total assets - Total liabilities = 1,00,000 - 25,000 = 75,000\nNow, we distribute the net assets among the partners in their profit-sharing ratio:\nA's share = (5/10) * 75,000 = 37,500\nB's share = (3/10) * 75,000 = 22,500\nC's share = (2/10) * 75,000 = 15,000\nSince the partners have agreed to pay all the liabilities, they will first pay the creditors and the loan from B out of the cash available. The remaining cash will then be distributed among the partners in their profit-sharing ratio.\nCash available = 20,000\nLiabilities to be paid = Creditors + Loan from B = 10,000 + 15,000 = 25,000\nSince the cash available is less than the liabilities, the partners will have to bring in additional cash to pay the liabilities.\nA will have to bring in cash = 37,500 - (5/10) * 20,000 = 37,500 - 10,000 = 27,500\nB will have to bring in cash = 22,500 - (3/10) * 20,000 = 22,500 - 6,000 = 16,500\nC will have to bring in cash = 15,000 - (2/10) * 20,000 = 15,000 - 4,000 = 11,000",
+        "marking_scheme": [
+          "Calculation of net assets (2 marks)",
+          "Distribution of net assets among partners (2 marks)",
+          "Payment of liabilities and distribution of cash (1 mark)"
+        ],
+        "topic": "Dissolution of Partnership",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of revaluation of assets and liabilities on the admission of a new partner. How does it affect the existing partners' capital accounts and the new partner's capital contribution?",
+        "marks": 5,
+        "answer": "The revaluation of assets and liabilities on the admission of a new partner involves adjusting the values of the assets and liabilities to their current market values. This is done to ensure that the new partner joins the firm on a fair basis and that the existing partners' capital accounts are adjusted accordingly. The revaluation affects the existing partners' capital accounts by either increasing or decreasing their capital balances, depending on whether the assets are revalued upwards or downwards. The new partner's capital contribution is also affected, as they will be required to contribute their share of the revalued assets and liabilities.",
+        "marking_scheme": [
+          "Concept of revaluation of assets and liabilities (1 mark)",
+          "Effect on existing partners' capital accounts (1.5 marks)",
+          "Effect on new partner's capital contribution (1.5 marks)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Admission of a New Partner",
+        "is_numerical": false
+      },
+      {
+        "q": "X, Y, and Z are partners in a firm, sharing profits in the ratio 2:2:1. They decide to dissolve the partnership on 31st March 2022. On the date of dissolution, the balance sheet of the firm shows the following assets and liabilities: Cash Rs. 15,000, Debtors Rs. 40,000, Stock Rs. 60,000, Creditors Rs. 20,000, and Loan from X Rs. 10,000. Calculate the amount of cash to be paid to each partner on dissolution, assuming that the partners have agreed to pay all the liabilities and distribute the remaining assets in the profit-sharing ratio.",
+        "marks": 5,
+        "answer": "Calculation:\nFirst, we need to calculate the total assets and liabilities:\nTotal assets = Cash + Debtors + Stock = 15,000 + 40,000 + 60,000 = 1,15,000\nTotal liabilities = Creditors + Loan from X = 20,000 + 10,000 = 30,000\nNet assets = Total assets - Total liabilities = 1,15,000 - 30,000 = 85,000\nNow, we distribute the net assets among the partners in their profit-sharing ratio:\nX's share = (2/5) * 85,000 = 34,000\nY's share = (2/5) * 85,000 = 34,000\nZ's share = (1/5) * 85,000 = 17,000\nSince the partners have agreed to pay all the liabilities, they will first pay the creditors and the loan from X out of the cash available. The remaining cash will then be distributed among the partners in their profit-sharing ratio.\nCash available = 15,000\nLiabilities to be paid = Creditors + Loan from X = 20,000 + 10,000 = 30,000\nSince the cash available is less than the liabilities, the partners will have to bring in additional cash to pay the liabilities.\nX will have to bring in cash = 34,000 - (2/5) * 15,000 = 34,000 - 6,000 = 28,000\nY will have to bring in cash = 34,000 - (2/5) * 15,000 = 34,000 - 6,000 = 28,000\nZ will have to bring in cash = 17,000 - (1/5) * 15,000 = 17,000 - 3,000 = 14,000",
+        "marking_scheme": [
+          "Calculation of net assets (2 marks)",
+          "Distribution of net assets among partners (2 marks)",
+          "Payment of liabilities and distribution of cash (1 mark)"
+        ],
+        "topic": "Dissolution of Partnership",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

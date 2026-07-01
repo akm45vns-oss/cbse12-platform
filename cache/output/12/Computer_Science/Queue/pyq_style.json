@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Queue",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T02:57:38.782Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A queue is an example of a linear data structure. What is the basic operation that can be performed on a queue?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The basic operation that can be performed on a queue is enqueue and dequeue.",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Consider a queue Q = {3, 6, 7} with operations as follows: Enqueue(5), Enqueue(9). What will be the new queue?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "{3, 6, 7, 5, 9}",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "A queue Q has the following operations: Enqueue(A), Dequeue(), Enqueue(B), Dequeue(). What will be the final queue if initially Q = {1, 2, 3}?",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Initially Q = {1, 2, 3}. After Dequeue(), Q = {2, 3}. After Enqueue(B), Q = {2, 3, B}. After Dequeue(), Q = {3, B}.",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "What is the advantage of using a queue data structure?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The advantage of using a queue data structure is that it follows the First-In-First-Out (FIFO) principle.",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Consider a queue Q = {10, 20, 30} with operations as follows: Enqueue(15), Enqueue(40). What will be the new queue?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "{10, 20, 30, 15, 40}",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "What is the time complexity of the enqueue operation in a queue?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "O(1)",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "A queue Q has the following operations: Enqueue(X), Dequeue(), Enqueue(Y), Dequeue(). What will be the final queue if initially Q = {5, 6, 7}?",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Initially Q = {5, 6, 7}. After Dequeue(), Q = {6, 7}. After Enqueue(Y), Q = {6, 7, Y}. After Dequeue(), Q = {7, Y}.",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Consider a queue Q = {25, 50, 75} with operations as follows: Dequeue(), Enqueue(60), Dequeue(). What will be the new queue?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "{25, 60, 75}",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "What is the time complexity of the dequeue operation in a queue?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "O(1)",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "A queue Q has the following operations: Enqueue(A), Enqueue(B), Dequeue(), Dequeue(). What will be the final queue if initially Q = {10, 20}?",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Initially Q = {10, 20}. After Enqueue(A), Q = {10, 20, A}. After Enqueue(B), Q = {10, 20, A, B}. After Dequeue(), Q = {20, A, B}. After Dequeue(), Q = {A, B}.",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      }
+    ],
+    "total": 10
+  }
+}

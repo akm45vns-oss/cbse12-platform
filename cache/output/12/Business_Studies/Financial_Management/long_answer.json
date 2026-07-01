@@ -1,0 +1,90 @@
+{
+  "class": "12",
+  "subject": "Business Studies",
+  "chapter": "Financial Management",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:58:59.033Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the importance of financial management in a business organization. Discuss the role of a financial manager.",
+        "marks": 5,
+        "answer": "Financial management is a vital aspect of business management as it deals with the planning, organizing, and controlling of financial resources. The importance of financial management lies in its ability to ensure that the business has sufficient funds to meet its needs and achieve its objectives. A financial manager plays a crucial role in this process by overseeing the financial operations of the organization, including financial planning, budgeting, forecasting, and fundraising. The financial manager is responsible for ensuring that the organization's financial resources are used efficiently and effectively to maximize shareholder value.",
+        "marking_scheme": [
+          "Importance of financial management worth 2 marks",
+          "Role of a financial manager worth 3 marks"
+        ],
+        "topic": "Introduction to Financial Management",
+        "is_numerical": false
+      },
+      {
+        "q": "A company has a current ratio of 2.5 and a quick ratio of 1.2. If the current liabilities are Rs. 1,50,000, calculate the amount of current assets and inventory.",
+        "marks": 5,
+        "answer": "To calculate the amount of current assets and inventory, we need to use the given ratios. The current ratio is 2.5, which means that the current assets are 2.5 times the current liabilities. The quick ratio is 1.2, which means that the liquid assets (current assets - inventory) are 1.2 times the current liabilities. Calculation: Current Assets = Current Liabilities * Current Ratio = Rs. 1,50,000 * 2.5 = Rs. 3,75,000 Liquid Assets = Current Liabilities * Quick Ratio = Rs. 1,50,000 * 1.2 = Rs. 1,80,000 Inventory = Current Assets - Liquid Assets = Rs. 3,75,000 - Rs. 1,80,000 = Rs. 1,95,000",
+        "marking_scheme": [
+          "Calculation of current assets worth 2 marks",
+          "Calculation of inventory worth 2 marks",
+          "Presentation and accuracy worth 1 mark"
+        ],
+        "topic": "Ratio Analysis",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the difference between a private placement and a public issue? Explain the advantages and disadvantages of each.",
+        "marks": 5,
+        "answer": "A private placement is the issuance of securities to a select group of investors, typically institutional investors, whereas a public issue is the issuance of securities to the general public. The main difference between the two is the scope of the offering and the regulatory requirements. Private placements are less regulated and less expensive than public issues, but they also offer less liquidity and are typically only available to larger investors. Public issues, on the other hand, offer greater liquidity and are available to a wider range of investors, but they are more heavily regulated and more expensive. The advantages of private placements include lower costs, greater flexibility, and less regulatory burden, while the disadvantages include limited liquidity and limited access to smaller investors. The advantages of public issues include greater liquidity, greater access to a wider range of investors, and increased transparency, while the disadvantages include higher costs, greater regulatory burden, and greater risk.",
+        "marking_scheme": [
+          "Difference between private placement and public issue worth 1 mark",
+          "Advantages of private placement worth 1.5 marks",
+          "Disadvantages of private placement worth 1 mark",
+          "Advantages of public issue worth 1 mark",
+          "Disadvantages of public issue worth 0.5 marks"
+        ],
+        "topic": "Sources of Finance",
+        "is_numerical": false
+      },
+      {
+        "q": "A company has an EBIT of Rs. 5,00,000 and a debt of Rs. 10,00,000 at an interest rate of 10%. If the tax rate is 30%, calculate the earnings per share (EPS) if the company has 1,00,000 equity shares outstanding.",
+        "marks": 5,
+        "answer": "To calculate the EPS, we need to first calculate the net income. The interest expense is Rs. 1,00,000 (10% of Rs. 10,00,000), and the tax expense is Rs. 1,05,000 (30% of Rs. 3,50,000, which is EBIT - interest expense). Calculation: Interest Expense = Debt * Interest Rate = Rs. 10,00,000 * 10% = Rs. 1,00,000 Taxable Income = EBIT - Interest Expense = Rs. 5,00,000 - Rs. 1,00,000 = Rs. 4,00,000 Tax Expense = Taxable Income * Tax Rate = Rs. 4,00,000 * 30% = Rs. 1,20,000 Net Income = EBIT - Interest Expense - Tax Expense = Rs. 5,00,000 - Rs. 1,00,000 - Rs. 1,20,000 = Rs. 2,80,000 EPS = Net Income / Number of Equity Shares = Rs. 2,80,000 / 1,00,000 = Rs. 2.80",
+        "marking_scheme": [
+          "Calculation of interest expense worth 1 mark",
+          "Calculation of tax expense worth 1 mark",
+          "Calculation of net income worth 1 mark",
+          "Calculation of EPS worth 1 mark",
+          "Presentation and accuracy worth 1 mark"
+        ],
+        "topic": "Financial Statement Analysis",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the concept of time value of money? Explain its importance in financial decision-making.",
+        "marks": 5,
+        "answer": "The time value of money is the concept that a rupee today is worth more than a rupee in the future due to its potential to earn interest or returns. This concept is important in financial decision-making because it helps to evaluate the present value of future cash flows, determine the cost of capital, and make informed investment decisions. The time value of money is based on the idea that money received today can be invested to earn a return, whereas money received in the future cannot be invested until it is received. As a result, a rupee received today is more valuable than a rupee received in the future. The importance of the time value of money lies in its ability to help financial managers make decisions that maximize shareholder value by evaluating the present value of future cash flows and selecting investments that offer the highest returns.",
+        "marking_scheme": [
+          "Definition of time value of money worth 1 mark",
+          "Importance of time value of money worth 2 marks",
+          "Application of time value of money worth 1 mark",
+          "Examples or illustrations worth 1 mark"
+        ],
+        "topic": "Time Value of Money",
+        "is_numerical": false
+      },
+      {
+        "q": "A company has a dividend yield of 4% and a market value of Rs. 50 per share. If the face value of the share is Rs. 10, calculate the annual dividend per share.",
+        "marks": 5,
+        "answer": "To calculate the annual dividend per share, we need to use the dividend yield formula. The dividend yield is the ratio of the annual dividend per share to the market value per share. Calculation: Annual Dividend per Share = Dividend Yield * Market Value per Share = 4% * Rs. 50 = Rs. 2. Alternatively, we can also calculate the annual dividend per share using the face value and the dividend payout ratio. However, since the dividend payout ratio is not given, we will use the dividend yield formula. The face value of the share is not required to calculate the annual dividend per share in this case.",
+        "marking_scheme": [
+          "Calculation of annual dividend per share worth 3 marks",
+          "Understanding of dividend yield concept worth 1 mark",
+          "Presentation and accuracy worth 1 mark"
+        ],
+        "topic": "Dividend Decision",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

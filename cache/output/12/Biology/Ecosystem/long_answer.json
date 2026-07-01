@@ -1,0 +1,92 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Ecosystem",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:55:24.435Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What are the different components of an ecosystem? Explain the role of producers, consumers, and decomposers in an ecosystem.",
+        "marks": 5,
+        "answer": "The different components of an ecosystem are biotic and abiotic factors. Biotic factors include living organisms such as producers, consumers, and decomposers. Producers are organisms that produce their own food through photosynthesis, such as plants and algae. Consumers are organisms that feed on other organisms for energy, such as herbivores, carnivores, and omnivores. Decomposers are organisms that break down dead organic matter into simpler substances, such as bacteria and fungi. The role of producers is to produce energy for the ecosystem through photosynthesis. The role of consumers is to feed on other organisms and transfer energy from one trophic level to another. The role of decomposers is to break down dead organic matter and recycle nutrients back into the ecosystem.",
+        "marking_scheme": [
+          "Definition of ecosystem components (1 mark)",
+          "Explanation of role of producers (1 mark)",
+          "Explanation of role of consumers (1 mark)",
+          "Explanation of role of decomposers (1 mark)",
+          "Overall understanding of ecosystem components and their roles (1 mark)"
+        ],
+        "topic": "Ecosystem Components",
+        "is_numerical": false
+      },
+      {
+        "q": "A forest ecosystem has a net primary productivity of 2000 kg/ha/yr. If the energy transfer efficiency from one trophic level to the next is 10%, calculate the energy available at the secondary consumer level.",
+        "marks": 5,
+        "answer": "Calculation:\n1. Energy available at the primary consumer level = 10% of net primary productivity = 0.1 x 2000 kg/ha/yr = 200 kg/ha/yr\n2. Energy available at the secondary consumer level = 10% of energy available at the primary consumer level = 0.1 x 200 kg/ha/yr = 20 kg/ha/yr",
+        "marking_scheme": [
+          "Calculation of energy available at primary consumer level (2 marks)",
+          "Calculation of energy available at secondary consumer level (2 marks)",
+          "Overall understanding of energy transfer efficiency (1 mark)"
+        ],
+        "topic": "Energy Flow",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of nutrient cycling in an ecosystem. Describe the different types of nutrient cycles and their importance in maintaining ecosystem health.",
+        "marks": 5,
+        "answer": "Nutrient cycling refers to the movement of nutrients through an ecosystem, from the environment to living organisms and back to the environment. The different types of nutrient cycles include the carbon cycle, nitrogen cycle, phosphorus cycle, and water cycle. These cycles are important in maintaining ecosystem health because they provide essential nutrients for plant growth, support the food chain, and regulate the Earth's climate. Nutrient cycles also help to maintain soil fertility, support biodiversity, and regulate the amount of greenhouse gases in the atmosphere.",
+        "marking_scheme": [
+          "Definition of nutrient cycling (1 mark)",
+          "Description of different types of nutrient cycles (2 marks)",
+          "Explanation of importance of nutrient cycles (1 mark)",
+          "Overall understanding of nutrient cycling (1 mark)"
+        ],
+        "topic": "Nutrient Cycling",
+        "is_numerical": false
+      },
+      {
+        "q": "A lake ecosystem has a total phosphorus content of 1000 kg. If 20% of the phosphorus is available for primary production, and the energy transfer efficiency from primary producers to primary consumers is 15%, calculate the energy available for primary consumers.",
+        "marks": 5,
+        "answer": "Calculation:\n1. Phosphorus available for primary production = 20% of total phosphorus = 0.2 x 1000 kg = 200 kg\n2. Energy available for primary producers = assume 1 kg of phosphorus supports 1000 kg of primary production (this value may vary)\n3. Energy available for primary consumers = 15% of energy available for primary producers = 0.15 x 200,000 kg = 30,000 kg",
+        "marking_scheme": [
+          "Calculation of phosphorus available for primary production (1 mark)",
+          "Calculation of energy available for primary producers (1 mark)",
+          "Calculation of energy available for primary consumers (2 marks)",
+          "Overall understanding of energy transfer efficiency (1 mark)"
+        ],
+        "topic": "Energy Flow",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the difference between a food chain and a food web? Explain the concept of trophic levels and their importance in understanding ecosystem dynamics.",
+        "marks": 5,
+        "answer": "A food chain is a linear sequence of organisms that feed on each other, whereas a food web is a complex network of food chains that are interconnected. Trophic levels refer to the position of an organism in a food chain or food web, with primary producers at the base and top predators at the apex. Trophic levels are important in understanding ecosystem dynamics because they help to explain the flow of energy and nutrients through an ecosystem, and how changes at one trophic level can affect other trophic levels.",
+        "marking_scheme": [
+          "Definition of food chain and food web (1 mark)",
+          "Explanation of trophic levels (1 mark)",
+          "Importance of trophic levels in understanding ecosystem dynamics (2 marks)",
+          "Overall understanding of food chains and food webs (1 mark)"
+        ],
+        "topic": "Ecosystem Dynamics",
+        "is_numerical": false
+      },
+      {
+        "q": "An ecosystem has a gross primary productivity of 5000 kg/ha/yr and a respiration rate of 2000 kg/ha/yr. Calculate the net primary productivity of the ecosystem.",
+        "marks": 5,
+        "answer": "Calculation:\nNet primary productivity (NPP) = Gross primary productivity (GPP) - Respiration (R)\nNPP = 5000 kg/ha/yr - 2000 kg/ha/yr = 3000 kg/ha/yr",
+        "marking_scheme": [
+          "Understanding of gross primary productivity and respiration (1 mark)",
+          "Calculation of net primary productivity (2 marks)",
+          "Overall understanding of primary productivity (1 mark)",
+          "Correct units and formatting (1 mark)"
+        ],
+        "topic": "Primary Productivity",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

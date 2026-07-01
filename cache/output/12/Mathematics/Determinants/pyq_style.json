@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Determinants",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:56:40.813Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If A is a square matrix of order 3 and |A| = 5, then find the value of |3A|.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "|3A| = 27|A| = 27 * 5 = 135",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Prove that Δ = \\| 1  a  a^2 \\| = \\| 1  b  b^2 \\| = \\| 1  c  c^2 \\| if a + b + c = 0.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Apply row operations and properties of determinants to prove the given statement.",
+        "year_pattern": "2020-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Fill in the blank: The value of the determinant of a diagonal matrix is the _______________ of its diagonal elements.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "product",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If the area of the triangle with vertices (1, 2), (3, -4), and (-1, 2) is 15 square units, then find the value of k so that the area of the triangle formed by the vertices (1, 2k), (3, -4), and (-1, 2) is 60 square units.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Use the formula for the area of a triangle in terms of the determinant and solve for k.",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "True or False: If A and B are two square matrices of the same order, then |AB| = |A||B|.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "True",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Find the value of x if \\| 2  x  6 \\| = 0.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "Expand the determinant along the first row and solve for x.",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If A is a square matrix of order 3 and |A| = 2, then find the value of |adj A|.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "|adj A| = |A|^(n-1) = |A|^2 = 2^2 = 4",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Prove that \\| a  b  c \\| = \\| a  b  c \\|.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Apply properties of determinants, such as the expansion along rows or columns.",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If A = \\| 2  1 \\|, B = \\| 3  2 \\|, then find the value of |A| + |B|.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "|A| = 2, |B| = 3, |A| + |B| = 5",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Choose the correct answer: If A is a square matrix of order n, then the value of |kA| is",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "k^n|A|",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

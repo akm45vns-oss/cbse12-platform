@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Vector Algebra",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T03:22:06.814Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a vector? Provide an example.",
+        "marks": 1,
+        "answer": "A vector is a quantity with both magnitude and direction. For example, displacement of 6 km from north to south is a vector.",
+        "key_points": [
+          "Magnitude",
+          "Direction"
+        ],
+        "topic": "Introduction to Vectors"
+      },
+      {
+        "q": "What is the difference between a scalar and a vector?",
+        "marks": 1,
+        "answer": "A scalar is a quantity with magnitude only, whereas a vector is a quantity with both magnitude and direction.",
+        "key_points": [
+          "Scalar",
+          "Vector"
+        ],
+        "topic": "Introduction to Vectors"
+      },
+      {
+        "q": "What is the unit vector?",
+        "marks": 1,
+        "answer": "A unit vector is a vector with a magnitude of 1.",
+        "key_points": [
+          "Unit Vector"
+        ],
+        "topic": "Introduction to Vectors"
+      },
+      {
+        "q": "What is the zero vector?",
+        "marks": 1,
+        "answer": "A zero vector is a vector with a magnitude of 0.",
+        "key_points": [
+          "Zero Vector"
+        ],
+        "topic": "Introduction to Vectors"
+      },
+      {
+        "q": "What is the position vector?",
+        "marks": 1,
+        "answer": "The position vector of a point is a vector from the origin to that point.",
+        "key_points": [
+          "Position Vector"
+        ],
+        "topic": "Introduction to Vectors"
+      },
+      {
+        "q": "What is the magnitude of the vector 2i + 3j?",
+        "marks": 2,
+        "answer": "The magnitude of the vector 2i + 3j is √(2² + 3²) = √13.",
+        "key_points": [
+          "Magnitude",
+          "Vector Addition"
+        ],
+        "topic": "Operations on Vectors"
+      },
+      {
+        "q": "Find the resultant vector of the vectors 2i + 3j and i - 2j.",
+        "marks": 2,
+        "answer": "The resultant vector is (2 + 1)i + (3 - 2)j = 3i + j.",
+        "key_points": [
+          "Vector Addition"
+        ],
+        "topic": "Operations on Vectors"
+      },
+      {
+        "q": "If A = i + j and B = 2i - 3j, find 2A - 3B.",
+        "marks": 2,
+        "answer": "2A - 3B = 2(i + j) - 3(2i - 3j) = 2i + 2j - 6i + 9j = -4i + 11j.",
+        "key_points": [
+          "Vector Addition",
+          "Scalar Multiplication"
+        ],
+        "topic": "Operations on Vectors"
+      },
+      {
+        "q": "Find the vector equation of the line joining the points (1, -1, 0) and (0, 1, 2).",
+        "marks": 3,
+        "answer": "Let P(1, -1, 0) and Q(0, 1, 2). Then the position vector of P is i - j and the position vector of Q is -j + 2k. The required equation is <i - j, -j + 2k> = λ<i - j, -j + 2k>.",
+        "key_points": [
+          "Vector Equation of a Line"
+        ],
+        "topic": "Vector Equation of a Line"
+      },
+      {
+        "q": "Find the vector equation of the plane passing through the points (1, 2, -1), (2, -1, 2), and (-1, 3, 1).",
+        "marks": 3,
+        "answer": "Let A(1, 2, -1), B(2, -1, 2), and C(-1, 3, 1). Then the position vectors of A, B, and C are i + 2j - k, 2i - j + 2k, and -i + 3j + k respectively. The required equation is (i + 2j - k).(2i - j + 2k) × (-i + 3j + k) = 0.",
+        "key_points": [
+          "Vector Equation of a Plane"
+        ],
+        "topic": "Vector Equation of a Plane"
+      },
+      {
+        "q": "Find the angle between the vectors 2i + 3j and i - 2j.",
+        "marks": 3,
+        "answer": "The angle between the vectors 2i + 3j and i - 2j is cos⁻¹((2 × 1 + 3 × (-2))/(√2² + 3² × √1² + (-2)²)) = cos⁻¹(-11/5√13).",
+        "key_points": [
+          "Angle Between Two Vectors"
+        ],
+        "topic": "Angle Between Two Vectors"
+      },
+      {
+        "q": "Find the projection of the vector 2i + 3j on the vector i - 2j.",
+        "marks": 3,
+        "answer": "The projection of the vector 2i + 3j on the vector i - 2j is ((2 × 1 + 3 × (-2))/(√2² + 3²)) × (i - 2j) = (-11/5)(i - 2j).",
+        "key_points": [
+          "Projection of a Vector"
+        ],
+        "topic": "Projection of a Vector"
+      },
+      {
+        "q": "Find the distance between the points (1, 2, -1) and (2, -1, 2).",
+        "marks": 3,
+        "answer": "The distance between the points (1, 2, -1) and (2, -1, 2) is √((2 - 1)² + (-1 - 2)² + (2 - (-1))²) = √(1 + 9 + 9) = √19.",
+        "key_points": [
+          "Distance Between Two Points"
+        ],
+        "topic": "Distance Between Two Points"
+      }
+    ],
+    "total": 13
+  }
+}

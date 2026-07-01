@@ -1,0 +1,77 @@
+{
+  "class": "12",
+  "subject": "Accountancy",
+  "chapter": "Issue and Redemption of Debentures",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T02:58:48.284Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the various methods of issuing debentures. Also, provide examples for each method.",
+        "marks": 5,
+        "answer": "Issuing debentures can be done through several methods: Public Issue, Right Issue, Private Placement, and Debenture Stock. Public Issue involves inviting applications from the general public, Right Issue involves issuing debentures to existing shareholders, Private Placement involves issuing debentures to a select few, and Debenture Stock involves issuing debentures in the form of stock. For example, a company can issue debentures publicly by advertising in newspapers, or it can issue debentures to its existing shareholders through a right issue.",
+        "marking_scheme": [
+          "Definition of each method worth 1 mark each (4 marks)",
+          "Example for each method worth 1 mark (1 mark)"
+        ],
+        "topic": "Methods of Issuing Debentures",
+        "is_numerical": false
+      },
+      {
+        "q": "What are the advantages and disadvantages of issuing debentures? Discuss in detail.",
+        "marks": 5,
+        "answer": "Advantages of issuing debentures include: Permanent Capital, No Dividend Payment, No Voting Rights, and Tax Benefits. Disadvantages of issuing debentures include: Fixed Charges, Risk of Default, and Loss of Control.",
+        "marking_scheme": [
+          "Advantages worth 2 marks (2 marks)",
+          "Disadvantages worth 3 marks (3 marks)"
+        ],
+        "topic": "Advantages and Disadvantages of Issuing Debentures",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the process of redemption of debentures? Explain the various methods of redemption.",
+        "marks": 5,
+        "answer": "The process of redemption of debentures involves the repayment of the face value of the debentures to the debenture holders. The various methods of redemption include: Redemption at Face Value, Redemption at Premium, Redemption at Par, and Redemption through Conversion.",
+        "marking_scheme": [
+          "Process of redemption worth 2 marks (2 marks)",
+          "Methods of redemption worth 3 marks (3 marks)"
+        ],
+        "topic": "Redemption of Debentures",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the amount of debenture dividend payable on Rs. 10,000, 9% debentures of a company, if the company has redeemed Rs. 50,000 of debentures through conversion of a part of debenture stock.",
+        "marks": 5,
+        "answer": "Calculation:\nDebenture Dividend = (Face Value x Rate of Interest) / 100\n= (Rs. 10,000 x 9) / 100\n= Rs. 900\nDebenture Dividend Payable = Debenture Dividend - Redemption Value\n= Rs. 900 - Rs. 0 (since redemption is through conversion)\n= Rs. 900",
+        "marking_scheme": [
+          "Calculation worth 5 marks (5 marks)"
+        ],
+        "topic": "Redemption of Debentures through Conversion",
+        "is_numerical": true
+      },
+      {
+        "q": "A company issues 5,000, 10% debentures of Rs. 100 each at a premium of 10%. Calculate the amount of debenture dividend payable on these debentures.",
+        "marks": 5,
+        "answer": "Calculation:\nDebenture Dividend = (Face Value x Rate of Interest) / 100\n= (Rs. 100 x 10) / 100\n= Rs. 10\nAmount of Debenture Dividend Payable = Debenture Dividend x Number of Debentures\n= Rs. 10 x 5,000\n= Rs. 50,000",
+        "marking_scheme": [
+          "Calculation worth 5 marks (5 marks)"
+        ],
+        "topic": "Debenture Dividend",
+        "is_numerical": true
+      },
+      {
+        "q": "A company redeems 8% debentures of Rs. 100 each through a sinking fund. If the sinking fund amount is Rs. 20,000, calculate the number of debentures redeemed.",
+        "marks": 5,
+        "answer": "Calculation:\nNumber of Debentures Redeemed = Sinking Fund Amount / (Face Value x Rate of Interest)\n= Rs. 20,000 / (Rs. 100 x 8 / 100)\n= Rs. 20,000 / Rs. 8\n= 2,500",
+        "marking_scheme": [
+          "Calculation worth 5 marks (5 marks)"
+        ],
+        "topic": "Redemption through Sinking Fund",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

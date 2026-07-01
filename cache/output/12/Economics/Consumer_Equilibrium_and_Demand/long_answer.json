@@ -1,0 +1,95 @@
+{
+  "class": "12",
+  "subject": "Economics",
+  "chapter": "Consumer Equilibrium and Demand",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:57:56.569Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of consumer equilibrium with the help of indifference curve analysis. Also, discuss the conditions of consumer equilibrium.",
+        "marks": 5,
+        "answer": "Consumer equilibrium refers to a situation where a consumer maximizes his satisfaction by allocating his income among various goods and services. According to indifference curve analysis, a consumer attains equilibrium when he reaches the highest indifference curve given his budget constraint. The conditions of consumer equilibrium are: (i) the marginal rate of substitution (MRS) of one good for another must be equal to the price ratio of the two goods, and (ii) the consumer's budget constraint must be satisfied.",
+        "marking_scheme": [
+          "Definition of consumer equilibrium (1 mark)",
+          "Explanation of indifference curve analysis (1 mark)",
+          "Conditions of consumer equilibrium (2 marks)",
+          "Example or diagram (1 mark)"
+        ],
+        "topic": "Consumer Equilibrium",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the law of diminishing marginal utility? Explain it with the help of a numerical example.",
+        "marks": 5,
+        "answer": "The law of diminishing marginal utility states that as a consumer consumes more units of a good, the marginal utility derived from each additional unit decreases. For example, suppose a consumer is eating ice cream. The first scoop gives him 10 units of utility, the second scoop gives him 8 units of utility, and the third scoop gives him 6 units of utility. As the consumer eats more scoops, the marginal utility decreases.",
+        "marking_scheme": [
+          "Definition of law of diminishing marginal utility (1 mark)",
+          "Explanation with numerical example (2 marks)",
+          "Implication of the law (1 mark)",
+          "Diagram or graph (1 mark)"
+        ],
+        "topic": "Demand",
+        "is_numerical": false
+      },
+      {
+        "q": "A consumer has a budget of Rs. 100 to spend on two goods, X and Y. The prices of X and Y are Rs. 10 and Rs. 5 respectively. The utility derived from consuming X and Y is given by the following table: \n| X | Y | Total Utility |\n| --- | --- | --- |\n| 0 | 0 | 0 |\n| 1 | 0 | 10 |\n| 0 | 1 | 8 |\n| 1 | 1 | 18 |\n| 2 | 0 | 19 |\n| 0 | 2 | 16 |\n| 2 | 1 | 27 |\n| 1 | 2 | 25 |\nFind the consumer's equilibrium using the indifference curve-budget line approach.",
+        "marks": 5,
+        "answer": "Calculation: \nTo find the consumer's equilibrium, we need to find the combination of X and Y that maximizes the total utility given the budget constraint.\nFrom the table, we can see that the combination (2, 1) gives the highest total utility of 27.\nAt this combination, the budget constraint is satisfied: 2X + Y = 2(10) + 5(1) = 25 < 100.\nTherefore, the consumer's equilibrium is at (2, 1).",
+        "marking_scheme": [
+          "Understanding of the problem (1 mark)",
+          "Calculation of total utility (1 mark)",
+          "Identification of the optimal combination (1 mark)",
+          "Budget constraint satisfaction (1 mark)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Consumer Equilibrium",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of demand and the factors that affect it.",
+        "marks": 5,
+        "answer": "Demand refers to the quantity of a good or service that a consumer is willing and able to buy at a given price level. The factors that affect demand are: (i) price of the good, (ii) consumer's income, (iii) prices of related goods, (iv) tastes and preferences, (v) population, and (vi) expectations about future prices.",
+        "marking_scheme": [
+          "Definition of demand (1 mark)",
+          "Explanation of factors affecting demand (2 marks)",
+          "Example or diagram (1 mark)",
+          "Importance of demand (1 mark)"
+        ],
+        "topic": "Demand",
+        "is_numerical": false
+      },
+      {
+        "q": "A consumer has a budget of Rs. 50 to spend on a good. The price of the good is Rs. 5. The consumer's utility function is given by U(x) = 10x - x^2, where x is the quantity of the good consumed. Find the quantity of the good that the consumer will buy.",
+        "marks": 5,
+        "answer": "Calculation: \nTo find the quantity of the good that the consumer will buy, we need to maximize the utility function subject to the budget constraint.\nFirst, we need to find the marginal utility (MU) of the good: MU = dU/dx = 10 - 2x.\nThen, we set the marginal utility equal to the price of the good: 10 - 2x = 5.\nSolving for x, we get x = 2.5.\nTherefore, the consumer will buy 2.5 units of the good.",
+        "marking_scheme": [
+          "Understanding of the problem (1 mark)",
+          "Calculation of marginal utility (1 mark)",
+          "Setting up the equation (1 mark)",
+          "Solving for x (1 mark)",
+          "Conclusion (1 mark)"
+        ],
+        "topic": "Consumer Equilibrium",
+        "is_numerical": true
+      },
+      {
+        "q": "A firm sells a product at Rs. 20 per unit. The demand function for the product is given by Q = 100 - 2P, where Q is the quantity demanded and P is the price. Find the quantity demanded when the price is Rs. 20.",
+        "marks": 5,
+        "answer": "Calculation: \nTo find the quantity demanded, we need to substitute the given price into the demand function.\nQ = 100 - 2P\nQ = 100 - 2(20)\nQ = 100 - 40\nQ = 60\nTherefore, the quantity demanded is 60 units.",
+        "marking_scheme": [
+          "Understanding of the problem (1 mark)",
+          "Substitution of price into demand function (1 mark)",
+          "Calculation of quantity demanded (1 mark)",
+          "Conclusion (1 mark)",
+          "Demand function understanding (1 mark)"
+        ],
+        "topic": "Demand",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Exception Handling",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T02:57:39.112Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is exception handling in Java? Explain the need for it, its benefits, and the types of exceptions.",
+        "marks": 5,
+        "answer": "Exception handling in Java is a mechanism to handle runtime errors or exceptions that occur during the execution of a program. The need for exception handling is to prevent the program from crashing or terminating abruptly due to an error, and to provide a way to handle and recover from the error. The benefits of exception handling include improved program reliability, maintainability, and scalability. There are two types of exceptions in Java: checked exceptions and unchecked exceptions. Checked exceptions are compile-time checked, and the programmer must handle them using try-catch blocks. Unchecked exceptions are runtime exceptions and do not need to be handled explicitly.",
+        "marking_scheme": [
+          "Explain the need for exception handling (1 mark)",
+          "Mention the benefits of exception handling (1 mark)",
+          "Name and describe the two types of exceptions in Java (3 marks)"
+        ],
+        "topic": "Introduction to Exception Handling",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the difference between finally and finalize in Java? Provide an example to demonstrate the use of finally block.",
+        "marks": 5,
+        "answer": "The finally block in Java is used to execute a block of code after a try-catch block. It is used to release system resources, close connections, and perform other cleanup operations. The finalize method in Java is a special method that is called by the garbage collector to release system resources. The main difference between finally and finalize is that finally is used for manual resource management, while finalize is used for automatic resource management. Here's an example of using the finally block to close a file: \n\n try { \n // code to open and read a file \n } catch (Exception e) { \n // code to handle the exception \n } finally { \n // code to close the file \n }",
+        "marking_scheme": [
+          "Explain the purpose of finally block (2 marks)",
+          "Mention the difference between finally and finalize (2 marks)",
+          "Provide an example of using finally block (1 mark)"
+        ],
+        "topic": "Finally and Finalize Blocks",
+        "is_numerical": false
+      },
+      {
+        "q": "A user-defined exception class 'NegativeBalanceException' is created. Write the code to handle this exception using a try-catch block. Assume that the balance is -500.",
+        "marks": 5,
+        "answer": "Calculation: \n\n try { \n // code to simulate a negative balance \n balance = -500; \n if (balance < 0) { \n throw new NegativeBalanceException(); \n } \n } catch (NegativeBalanceException e) { \n // code to handle the exception \n System.out.println(\"Negative balance detected.\"); \n }",
+        "marking_scheme": [
+          "Catch the NegativeBalanceException and handle it (3 marks)",
+          "Use a try-catch block to handle the exception (1 mark)",
+          "Simulate a negative balance (1 mark)"
+        ],
+        "topic": "User-Defined Exceptions",
+        "is_numerical": true
+      },
+      {
+        "q": "Write the code to demonstrate the use of throw and throws keywords. Assume that a method 'withdraw' takes an amount and throws an exception if the balance is insufficient.",
+        "marks": 5,
+        "answer": "Calculation: \n\n public class BankAccount { \n public void withdraw(double amount) throws InsufficientBalanceException { \n if (balance < amount) { \n throw new InsufficientBalanceException(); \n } \n // code to withdraw the amount \n } \n }",
+        "marking_scheme": [
+          "Use the throw keyword to throw an exception (2 marks)",
+          "Use the throws keyword to declare the exception (2 marks)",
+          "Demonstrate the use of throw and throws keywords (1 mark)"
+        ],
+        "topic": "Throw and Throws Keywords",
+        "is_numerical": true
+      },
+      {
+        "q": "A method 'calculateInterest' throws an ArithmeticException if the interest rate is negative. Write the code to handle this exception using a try-catch-finally block.",
+        "marks": 5,
+        "answer": "Calculation: \n\n try { \n // code to calculate interest \n } catch (ArithmeticException e) { \n // code to handle the exception \n System.out.println(\"Invalid interest rate.\"); \n } finally { \n // code to release system resources \n }",
+        "marking_scheme": [
+          "Catch the ArithmeticException and handle it (3 marks)",
+          "Use a try-catch-finally block to handle the exception (1 mark)",
+          "Release system resources in the finally block (1 mark)"
+        ],
+        "topic": "Try-Catch-Finally Block",
+        "is_numerical": true
+      },
+      {
+        "q": "A user-defined exception class 'InvalidAccountNumberException' is created. Write the code to handle this exception using a try-catch block. Assume that the account number is '12345'.",
+        "marks": 5,
+        "answer": "Calculation: \n\n try { \n // code to simulate an invalid account number \n accountNumber = \"12345\"; \n if (!isValidAccountNumber(accountNumber)) { \n throw new InvalidAccountNumberException(); \n } \n } catch (InvalidAccountNumberException e) { \n // code to handle the exception \n System.out.println(\"Invalid account number.\"); \n }",
+        "marking_scheme": [
+          "Catch the InvalidAccountNumberException and handle it (3 marks)",
+          "Use a try-catch block to handle the exception (1 mark)",
+          "Simulate an invalid account number (1 mark)"
+        ],
+        "topic": "User-Defined Exceptions",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

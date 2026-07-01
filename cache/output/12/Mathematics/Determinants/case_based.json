@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Determinants",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T03:19:59.661Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A 3D graphics artist is working on a project to create a 3D model of a cityscape. The artist uses a combination of geometric shapes to create the buildings, roads, and other features of the city. To ensure that the 3D model looks realistic, the artist needs to calculate the volume of the shapes used to create the buildings. The artist has calculated the determinants of the matrices representing the dimensions of the building shapes. However, the artist is unsure whether the building shapes have positive or negative volumes. Can you help the artist determine the volumes of the building shapes based on their determinants?",
+        "questions": [
+          {
+            "q": "What is the determinant of a 2x2 matrix with elements [a, b; c, d]?",
+            "opts": [
+              "(A) ad - bc",
+              "(B) ad + bc",
+              "(C) a + b",
+              "(D) c - d"
+            ],
+            "ans": "A",
+            "explanation": "The determinant of a 2x2 matrix [a, b; c, d] is given by the formula ad - bc."
+          },
+          {
+            "q": "What is the condition for the volume of a 3D shape to be positive?",
+            "opts": [
+              "(A) The determinant of the matrix representing the shape is zero",
+              "(B) The determinant of the matrix representing the shape is positive",
+              "(C) The determinant of the matrix representing the shape is negative",
+              "(D) The determinant of the matrix representing the shape is any real number"
+            ],
+            "ans": "B",
+            "explanation": "The volume of a 3D shape is positive if the determinant of the matrix representing the shape is positive."
+          },
+          {
+            "q": "What is the determinant of a 3x3 matrix with elements [1, 0, 0; 0, 1, 0; 0, 0, 1]?",
+            "opts": [
+              "(A) 1",
+              "(B) 0",
+              "(C) -1",
+              "(D) 2"
+            ],
+            "ans": "A",
+            "explanation": "The determinant of a 3x3 matrix [1, 0, 0; 0, 1, 0; 0, 0, 1] is 1."
+          },
+          {
+            "q": "What is the relation between the determinant of a matrix and its volume?",
+            "opts": [
+              "(A) The determinant of a matrix is equal to the volume of the parallelepiped determined by the columns of the matrix",
+              "(B) The determinant of a matrix is equal to the negative of the volume of the parallelepiped determined by the columns of the matrix",
+              "(C) The determinant of a matrix is equal to the absolute value of the volume of the parallelepiped determined by the columns of the matrix",
+              "(D) The determinant of a matrix is not related to the volume of the parallelepiped determined by the columns of the matrix"
+            ],
+            "ans": "A",
+            "explanation": "The determinant of a matrix is equal to the volume of the parallelepiped determined by the columns of the matrix."
+          },
+          {
+            "q": "What is the determinant of a matrix with a zero row?",
+            "opts": [
+              "(A) The determinant is equal to the product of the other elements of the matrix",
+              "(B) The determinant is equal to the sum of the other elements of the matrix",
+              "(C) The determinant is zero",
+              "(D) The determinant is undefined"
+            ],
+            "ans": "C",
+            "explanation": "The determinant of a matrix with a zero row is zero."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A mechanical engineer is designing a robotic arm that needs to perform a series of precise movements. The robotic arm has three links connected by joints, and each link has a specific length. The engineer wants to calculate the volume of the space occupied by the robotic arm during its movement. To do this, the engineer needs to calculate the determinant of the matrix representing the dimensions of the links. However, the engineer is unsure about the correct formula to use for calculating the determinant of a 3x3 matrix. Can you help the engineer determine the right formula and calculate the determinant of the matrix?",
+        "questions": [
+          {
+            "q": "What is the formula for calculating the determinant of a 3x3 matrix?",
+            "opts": [
+              "(A) a(ei - fh) - b(di - fg) + c(dh - eg)",
+              "(B) a(ei - fh) + b(di - fg) - c(dh - eg)",
+              "(C) a(ei - fh) - b(di - fg) - c(dh - eg)",
+              "(D) a(ei - fh) + b(di - fg) + c(dh - eg)"
+            ],
+            "ans": "A",
+            "explanation": "The formula for calculating the determinant of a 3x3 matrix is a(ei - fh) - b(di - fg) + c(dh - eg)."
+          },
+          {
+            "q": "What is the significance of the determinant of a matrix in the context of the robotic arm's movement?",
+            "opts": [
+              "(A) It determines the speed of the robotic arm",
+              "(B) It determines the volume of the space occupied by the robotic arm",
+              "(C) It determines the precision of the robotic arm's movements",
+              "(D) It determines the weight of the robotic arm"
+            ],
+            "ans": "B",
+            "explanation": "The determinant of a matrix determines the volume of the space occupied by the robotic arm during its movement."
+          },
+          {
+            "q": "What is the effect of multiplying a matrix by a scalar on its determinant?",
+            "opts": [
+              "(A) The determinant is multiplied by the scalar",
+              "(B) The determinant is divided by the scalar",
+              "(C) The determinant is unchanged",
+              "(D) The determinant is undefined"
+            ],
+            "ans": "A",
+            "explanation": "When a matrix is multiplied by a scalar, its determinant is also multiplied by the same scalar."
+          },
+          {
+            "q": "What is the relation between the determinant of a matrix and its inverse?",
+            "opts": [
+              "(A) The determinant of the inverse matrix is equal to the reciprocal of the determinant of the original matrix",
+              "(B) The determinant of the inverse matrix is equal to the determinant of the original matrix",
+              "(C) The determinant of the inverse matrix is equal to the negative of the determinant of the original matrix",
+              "(D) The determinant of the inverse matrix is undefined"
+            ],
+            "ans": "A",
+            "explanation": "The determinant of the inverse matrix is equal to the reciprocal of the determinant of the original matrix."
+          },
+          {
+            "q": "What is the determinant of a 2x2 matrix with elements [a, b; c, b]?",
+            "opts": [
+              "(A) ab - bc",
+              "(B) ab + bc",
+              "(C) a - b",
+              "(D) c - b"
+            ],
+            "ans": "B",
+            "explanation": "The determinant of a 2x2 matrix [a, b; c, b] is ab + bc."
+          }
+        ]
+      }
+    ]
+  }
+}

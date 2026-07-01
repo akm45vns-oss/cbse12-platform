@@ -1,0 +1,92 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:56:39.888Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define the inverse trigonometric functions and explain their importance in mathematics and real-life applications.",
+        "marks": 5,
+        "answer": "Inverse trigonometric functions are the inverse functions of the trigonometric functions. They are used to find the angle whose trigonometric function is known. The inverse trigonometric functions are important in mathematics and real-life applications, such as finding the height of a building, the distance of a ship from the shore, and the angle of elevation of the sun. They are also used in physics, engineering, and computer science to solve problems involving triangles and waves.",
+        "marking_scheme": [
+          "Definition of inverse trigonometric functions (1 mark)",
+          "Explanation of their importance in mathematics (1 mark)",
+          "Explanation of their importance in real-life applications (1 mark)",
+          "Examples of real-life applications (2 marks)"
+        ],
+        "topic": "Introduction to Inverse Trigonometric Functions",
+        "is_numerical": false
+      },
+      {
+        "q": "Find the value of sin^-1 (1/2).",
+        "marks": 5,
+        "answer": "Calculation:\nLet sin^-1 (1/2) = y\nThen, sin y = 1/2\nWe know that sin (π/6) = 1/2\nTherefore, y = π/6\nHence, sin^-1 (1/2) = π/6",
+        "marking_scheme": [
+          "Recall of the definition of inverse sine function (1 mark)",
+          "Use of trigonometric values of special angles (1 mark)",
+          "Calculation of the value of sin^-1 (1/2) (2 marks)",
+          "Correct answer (1 mark)"
+        ],
+        "topic": "Inverse Trigonometric Functions of Sine",
+        "is_numerical": true
+      },
+      {
+        "q": "Prove that tan^-1 (x) + tan^-1 (1/x) = π/2, for x > 0.",
+        "marks": 5,
+        "answer": "Let tan^-1 (x) = α and tan^-1 (1/x) = β\nThen, tan α = x and tan β = 1/x\nWe know that tan (π/2 - β) = cot β = x\nTherefore, α = π/2 - β\nHence, tan^-1 (x) + tan^-1 (1/x) = α + β = π/2",
+        "marking_scheme": [
+          "Recall of the definition of inverse tangent function (1 mark)",
+          "Use of trigonometric identities (1 mark)",
+          "Proof of the given equation (2 marks)",
+          "Correct conclusion (1 mark)"
+        ],
+        "topic": "Inverse Trigonometric Functions of Tangent",
+        "is_numerical": false
+      },
+      {
+        "q": "Find the value of cos^-1 (3/5).",
+        "marks": 5,
+        "answer": "Calculation:\nLet cos^-1 (3/5) = y\nThen, cos y = 3/5\nWe can use the Pythagorean identity to find sin y: sin^2 y + cos^2 y = 1\nsin^2 y = 1 - cos^2 y = 1 - (3/5)^2 = 1 - 9/25 = 16/25\nsin y = ±√(16/25) = ±4/5\nSince y is in the range [0, π], sin y is positive. Therefore, sin y = 4/5\nWe can use the values of cos y and sin y to find the value of y.",
+        "marking_scheme": [
+          "Recall of the definition of inverse cosine function (1 mark)",
+          "Use of Pythagorean identity (1 mark)",
+          "Calculation of the value of cos^-1 (3/5) (2 marks)",
+          "Correct answer (1 mark)"
+        ],
+        "topic": "Inverse Trigonometric Functions of Cosine",
+        "is_numerical": true
+      },
+      {
+        "q": "Find the value of tan^-1 (1) + tan^-1 (2) + tan^-1 (3).",
+        "marks": 5,
+        "answer": "Calculation:\ntan^-1 (1) = π/4\ntan^-1 (2) = tan^-1 (2)\ntan^-1 (3) = tan^-1 (3)\nUsing the addition formula for tangent: tan (A + B) = (tan A + tan B) / (1 - tan A tan B)\ntan (tan^-1 (1) + tan^-1 (2)) = (1 + 2) / (1 - 1*2) = -3\nTherefore, tan^-1 (1) + tan^-1 (2) = tan^-1 (-3)\nUsing the addition formula again: tan (tan^-1 (-3) + tan^-1 (3)) = (-3 + 3) / (1 - (-3)*3) = 0\nTherefore, tan^-1 (1) + tan^-1 (2) + tan^-1 (3) = tan^-1 (0) = 0",
+        "marking_scheme": [
+          "Recall of the definition of inverse tangent function (1 mark)",
+          "Use of addition formula for tangent (2 marks)",
+          "Calculation of the value of tan^-1 (1) + tan^-1 (2) + tan^-1 (3) (1 mark)",
+          "Correct answer (1 mark)"
+        ],
+        "topic": "Inverse Trigonometric Functions of Tangent",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the properties and range of the inverse trigonometric functions, specifically sin^-1 x, cos^-1 x, and tan^-1 x.",
+        "marks": 5,
+        "answer": "The inverse trigonometric functions sin^-1 x, cos^-1 x, and tan^-1 x have specific properties and ranges. The range of sin^-1 x is [-π/2, π/2], the range of cos^-1 x is [0, π], and the range of tan^-1 x is (-π/2, π/2). These functions are used to find the angle whose trigonometric function is known. They are also used in various mathematical and real-life applications, such as finding the height of a building, the distance of a ship from the shore, and the angle of elevation of the sun.",
+        "marking_scheme": [
+          "Explanation of the properties of sin^-1 x, cos^-1 x, and tan^-1 x (2 marks)",
+          "Explanation of the range of sin^-1 x, cos^-1 x, and tan^-1 x (1 mark)",
+          "Examples of mathematical and real-life applications (1 mark)",
+          "Correct conclusion (1 mark)"
+        ],
+        "topic": "Properties and Range of Inverse Trigonometric Functions",
+        "is_numerical": false
+      }
+    ],
+    "total": 6
+  }
+}

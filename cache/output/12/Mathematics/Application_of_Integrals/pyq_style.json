@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Application of Integrals",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:56:43.420Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Find the area of the region bounded by the curve y = x^2, x-axis and the lines x = 1 and x = 2.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Required area = ∫[1,2] x^2 dx = [(1/3)x^3][1,2] = (1/3)(8-1) = 7/3",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "The area of the region bounded by the curve y = √x, x-axis and the lines x = 0 and x = 1 is _______.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "2/3",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Find the area of the region bounded by the curve x^2 = 4y, y-axis and the line y = 4.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Required area = ∫[0,4] √(4y) dy = ∫[0,4] 2√y dy = [2*(2/3)y^(3/2)][0,4] = (4/3)(8) = 32/3",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "The curve y = x^3 - 6x^2 + 9x + 1 intersects the x-axis at the points having abscissas _______.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "1, 3",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "State True or False: The area of the region bounded by y = x^2, x = 0, x = 2 and x-axis is 8/3.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "False",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Find the area of the region bounded by the parabola y^2 = 4ax and the line y = mx.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Required area = ∫[0,2a] √(4ax) dx = ∫[0,2a] 2√(ax) dx = [2*(2/3)√a * x^(3/2)][0,2a] = (4/3)a√a * (2a)^(3/2) = (8/3)a^2",
+        "year_pattern": "2020-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "The area of the region bounded by the curve y = x^2 - 4x + 3, x-axis, and the lines x = 0 and x = 2 is _______.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "-2",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Find the area of the region bounded by the curve y = x^2 - 4x + 3, x-axis, and the lines x = 1 and x = 3.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Required area = ∫[1,3] (x^2 - 4x + 3) dx = [(1/3)x^3 - 2x^2 + 3x][1,3] = ((1/3)*27 - 2*9 + 3*3) - ((1/3)*1 - 2*1 + 3*1) = (8 - 8) = 0",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "The area of the region bounded by the curve y = 2x and the line y = x^2 + 3x is _______.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "-9/2",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Find the area of the region bounded by the curve y = sin x and the lines x = 0, x = π/2 and x-axis.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Required area = ∫[0,π/2] sin x dx = [-cos x][0,π/2] = -cos(π/2) + cos(0) = 0 + 1 = 1",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      }
+    ],
+    "total": 10
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Linear Programming",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T02:57:39.363Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A company manufactures two products A and B. The profit on the product A is ₹ 10 per unit and that on product B is ₹ 5 per unit. The maximum time available for production of both the products is 120 hours. The manufacturing of product A requires 2 hours, while that of product B requires 3 hours. Formulate the given problem as an LPP and find the maximum profit.",
+        "type": "Long Answer",
+        "marks": 8,
+        "answer": "Maximize Z = 10x + 5y, subject to 2x + 3y ≤ 120, x ≥ 0, y ≥ 0",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "The objective function for the following LPP is to be minimised.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "Maximize/Minimize",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "The constraints in a linear programming problem are x + y ≤ 8, x ≥ 0, y ≥ 0. The feasible solution set formed by these constraints has a shape of a",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Triangle",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "A firm makes two products, A and B with the profit of ₹ 10 per unit and ₹ 5 per unit respectively. The maximum time available for the production of both the products is 120 hours. The manufacturing of product A requires 2 hours, while that of product B requires 3 hours. If the firm produces product A for 60 hours, then find the number of hours for which the firm will be idle.",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "60 hours",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "The given problem can be represented by the following LPP.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "x + y ≤ 8, x ≥ 0, y ≥ 0",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "A company produces two products: a machine part and a car. The production time per unit of machine parts is 2 hours whereas it is 3 hours for a car. The company has 120 hours available each week. If machine parts are sold for ₹ 10 each and cars for ₹ 50 each, then form the problem as a linear programming problem and find the objective function.",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "Maximize Z = 10x + 50y, subject to 2x + 3y ≤ 120, x ≥ 0, y ≥ 0",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If there are n variables in a linear programming problem, then the number of corner points in the feasible region is equal to",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "2n",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Consider the following LPP.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "Maximize/Minimize",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "The shadow price of the constraint 2x + 3y ≤ 120 is 1.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "False",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If the feasible solution set of the following LPP is an unbounded set, then the solution to the given LPP does not exist.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "True",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

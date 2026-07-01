@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T02:56:37.521Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If f(x) = 2x^2 + 3x - 5, then find the value of f(-1).",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "-9",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If R is a relation defined on the set A = {1, 2, 3, 4, 5} by R = {(1, 2), (2, 3), (3, 4), (4, 5)} then find the domain and range of R.",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "Domain: {1, 2, 3, 4} | Range: {2, 3, 4, 5}",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Let f: R → R be a function defined by f(x) = 2x - 1. Find the range of the function.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "R",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If f(x) = 2x^2 - 3x + 1, then check whether f is a one-one function or not.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "It is not a one-one function.",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If f(x) = 2x^2 + 3x - 5, then find the value of f(1 + √2).",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "9 + 4√2",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Let f: R → R be a function defined by f(x) = 2x - 1. If f(f(x)) = x - 2, then find f(x).",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "f(x) = -2x + 3",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If f(x) = x^3 - 2x^2 - x, then find the value of f(-1).",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "-2",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If f(x) = x^2 + 2x - 3, then find the value of f(-2).",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "9",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Let f: R → R be a function defined by f(x) = 2x^2 + 3x - 5. Check whether f is a one-one function or not.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "false",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Let f: R → R be a function defined by f(x) = 2x^2 + 3x - 5. If f(x) = f(1 - x), then find the value of x.",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "3/2",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      }
+    ],
+    "total": 10
+  }
+}

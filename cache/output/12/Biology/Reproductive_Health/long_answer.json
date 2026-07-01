@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Reproductive Health",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:55:17.204Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What are the different methods of contraception and how do they work? Describe the advantages and disadvantages of each method.",
+        "marks": 5,
+        "answer": "The different methods of contraception include barrier methods (condoms, diaphragm, cervical cap), hormonal methods (pills, patches, injections), intrauterine devices (IUDs), and sterilization. Each method works by either preventing sperm from meeting the egg, preventing implantation of the fertilized egg, or preventing ovulation. The advantages and disadvantages of each method vary, with some methods being more effective than others and some having potential side effects.",
+        "marking_scheme": [
+          "Description of different methods of contraception (1 mark)",
+          "Explanation of how each method works (1 mark)",
+          "Discussion of advantages and disadvantages of each method (3 marks)"
+        ],
+        "topic": "Contraception",
+        "is_numerical": false
+      },
+      {
+        "q": "A couple is using a contraceptive method that has a failure rate of 5%. If 100 couples use this method for one year, how many unintended pregnancies can be expected?",
+        "marks": 5,
+        "answer": "Calculation: Failure rate = 5% = 0.05. Number of couples = 100. Expected number of unintended pregnancies = Failure rate x Number of couples = 0.05 x 100 = 5.",
+        "marking_scheme": [
+          "Understanding of failure rate (1 mark)",
+          "Application of failure rate to calculate expected number of unintended pregnancies (2 marks)",
+          "Correct calculation (2 marks)"
+        ],
+        "topic": "Contraception",
+        "is_numerical": true
+      },
+      {
+        "q": "Describe the role of infertility and assisted reproductive technologies in reproductive health. What are the different types of assisted reproductive technologies available?",
+        "marks": 5,
+        "answer": "Infertility refers to the inability to conceive after one year of unprotected intercourse. Assisted reproductive technologies (ART) are medical treatments used to help infertile couples conceive. The different types of ART include in vitro fertilization (IVF), intracytoplasmic sperm injection (ICSI), gamete intrafallopian transfer (GIFT), and zygote intrafallopian transfer (ZIFT). Each type of ART has its own advantages and disadvantages, and the choice of treatment depends on the individual couple's needs and medical history.",
+        "marking_scheme": [
+          "Definition of infertility (1 mark)",
+          "Explanation of assisted reproductive technologies (1 mark)",
+          "Description of different types of ART (3 marks)"
+        ],
+        "topic": "Infertility and ART",
+        "is_numerical": false
+      },
+      {
+        "q": "A woman is taking a contraceptive pill that contains 30 mcg of ethinyl estradiol and 0.3 mg of norgestrel. If she takes the pill for 20 days, how much of each hormone will she have taken in total?",
+        "marks": 5,
+        "answer": "Calculation: Total ethinyl estradiol taken = 30 mcg/day x 20 days = 600 mcg. Total norgestrel taken = 0.3 mg/day x 20 days = 6 mg.",
+        "marking_scheme": [
+          "Understanding of contraceptive pill composition (1 mark)",
+          "Calculation of total hormone intake (2 marks)",
+          "Correct units and calculation (2 marks)"
+        ],
+        "topic": "Contraception",
+        "is_numerical": true
+      },
+      {
+        "q": "What are the different types of sexually transmitted infections (STIs) and how can they be prevented? Describe the symptoms and treatment options for each type of STI.",
+        "marks": 5,
+        "answer": "The different types of STIs include bacterial (gonorrhea, chlamydia, syphilis), viral (HIV, herpes, HPV), and parasitic (trichomoniasis) infections. Each type of STI has its own symptoms and treatment options, and prevention methods include practicing safe sex, using condoms, and getting vaccinated against certain viruses. Early diagnosis and treatment are crucial to prevent long-term complications and transmission to others.",
+        "marking_scheme": [
+          "Description of different types of STIs (1 mark)",
+          "Explanation of symptoms and treatment options (2 marks)",
+          "Discussion of prevention methods (2 marks)"
+        ],
+        "topic": "STIs",
+        "is_numerical": false
+      },
+      {
+        "q": "If the probability of conception per menstrual cycle is 20%, what is the probability that a couple will conceive within 3 months of trying?",
+        "marks": 5,
+        "answer": "Calculation: Probability of conception per cycle = 20% = 0.2. Probability of not conceiving per cycle = 1 - 0.2 = 0.8. Probability of not conceiving in 3 months = (0.8)^3 = 0.512. Probability of conceiving within 3 months = 1 - 0.512 = 0.488.",
+        "marking_scheme": [
+          "Understanding of probability of conception (1 mark)",
+          "Calculation of probability of not conceiving (1 mark)",
+          "Calculation of probability of conceiving within 3 months (3 marks)"
+        ],
+        "topic": "Reproductive Health",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T03:18:48.450Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "The range of the principal value branch of the function arccos is",
+        "reason": "The range of the principal value branch of the function arccos is restricted to the interval [0, π].",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The range of the principal value branch of the function arccos is indeed [0, π]."
+      },
+      {
+        "assertion": "The range of the principal value branch of the function arcsin is",
+        "reason": "The range of the principal value branch of the function arcsin is restricted to the interval",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The range of the principal value branch of the function arcsin is indeed [-π/2, π/2]."
+      },
+      {
+        "assertion": "The function arctan is a one-one function",
+        "reason": "The function arctan is a one-one function as tan is a one-one function.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The function arctan is indeed a one-one function as tan is a one-one function."
+      },
+      {
+        "assertion": "The function arcsin is a one-one function",
+        "reason": "The function arcsin is a one-one function as sin is a one-one function in the interval [-π/2, π/2].",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The function arcsin is indeed a one-one function as sin is a one-one function in the interval [-π/2, π/2]."
+      },
+      {
+        "assertion": "The function arccos is a one-one function",
+        "reason": "The function arccos is a one-one function as cos is a one-one function in the interval [0, π].",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The function arccos is indeed a one-one function as cos is a one-one function in the interval [0, π]."
+      },
+      {
+        "assertion": "The principal value branch of the function arccos is a continuous function",
+        "reason": "The principal value branch of the function arccos is a continuous function as cos is a continuous function.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The principal value branch of the function arccos is indeed a continuous function as cos is a continuous function."
+      },
+      {
+        "assertion": "The principal value branch of the function arcsin is a continuous function",
+        "reason": "The principal value branch of the function arcsin is a discontinuous function.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The principal value branch of the function arcsin is a discontinuous function."
+      },
+      {
+        "assertion": "The function arctan is an odd function",
+        "reason": "The function arctan is an odd function as tan is an odd function.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The function arctan is indeed an odd function as tan is an odd function."
+      },
+      {
+        "assertion": "The function arcsin is an even function",
+        "reason": "The function arcsin is an even function as sin is an even function in the interval [-π/2, π/2].",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The function arcsin is indeed an even function as sin is an even function in the interval [-π/2, π/2]."
+      },
+      {
+        "assertion": "The range of the principal value branch of the function arccot is",
+        "reason": "The range of the principal value branch of the function arccot is restricted to the interval",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The range of the principal value branch of the function arccot is indeed (0, π)."
+      }
+    ],
+    "total": 10
+  }
+}

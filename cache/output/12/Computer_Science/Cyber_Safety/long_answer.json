@@ -1,0 +1,98 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Cyber Safety",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T02:57:50.547Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of cyberbullying and its effects on individuals.",
+        "marks": 5,
+        "answer": "Cyberbullying refers to the use of technology, such as social media, text messages, or emails, to harass, intimidate, or threaten others. It can have severe effects on individuals, including anxiety, depression, and even suicidal thoughts. Cyberbullying can also lead to social isolation, decreased self-esteem, and difficulties in forming relationships. It is essential to report incidents of cyberbullying to the authorities and seek help from trusted adults or professionals.",
+        "marking_scheme": [
+          "Understanding of cyberbullying concept (1 mark)",
+          "Effects of cyberbullying on individuals (2 marks)",
+          "Importance of reporting incidents (2 marks)"
+        ],
+        "topic": "Cyber Harassment and Bullying",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the role of social media in cyber safety, and how can users protect themselves from online threats?",
+        "marks": 5,
+        "answer": "Social media plays a significant role in cyber safety, as it can be used to spread misinformation, harassment, and other online threats. To protect themselves, users can follow best practices such as using strong passwords, enabling two-factor authentication, being cautious of suspicious links or messages, and reporting incidents of online harassment or abuse. Additionally, users can use social media settings to control who can see their information, block or report suspicious accounts, and use privacy settings to limit their online presence.",
+        "marking_scheme": [
+          "Role of social media in cyber safety (1 mark)",
+          "Best practices for online safety (2 marks)",
+          "Importance of reporting incidents (2 marks)"
+        ],
+        "topic": "Social Media and Cyber Safety",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of phishing and describe ways to identify and avoid phishing attacks.",
+        "marks": 5,
+        "answer": "Phishing refers to the act of tricking individuals into revealing sensitive information, such as passwords or financial information, by posing as a legitimate entity, typically through email or text messages. To identify and avoid phishing attacks, users can look for red flags such as suspicious sender email addresses, urgent or threatening language, and requests for sensitive information. Users can also verify the authenticity of emails or messages by contacting the organization directly and checking for spelling or grammatical errors.",
+        "marking_scheme": [
+          "Understanding of phishing concept (1 mark)",
+          "Ways to identify phishing attacks (2 marks)",
+          "Methods to avoid phishing attacks (2 marks)"
+        ],
+        "topic": "Phishing and Online Threats",
+        "is_numerical": false
+      },
+      {
+        "q": "A user receives an email with the subject 'Verify Your Account' from 'google-account@support.com'. The email asks the user to click on a link to verify their account. What should the user do?",
+        "marks": 5,
+        "answer": "The user should not click on the link and instead report the email to Google as a phishing attempt. Verification emails from Google should come from 'google.com' not 'google-account@support.com'.",
+        "marking_scheme": [
+          "Correct identification of phishing attempt (2 marks)",
+          "Reporting of phishing attempt (2 marks)",
+          "Understanding of Google account verification process (1 mark)"
+        ],
+        "topic": "Phishing and Online Threats",
+        "is_numerical": false
+      },
+      {
+        "q": "Solve for x in the equation: 2^x + 3^x = 2000.",
+        "marks": 5,
+        "answer": "To solve for x, we need to use the properties of exponents. Let's start by isolating one of the terms. Let's isolate 2^x. We can then use logarithms to solve for x. Taking the logarithm base 10 of both sides, we get: log(2^x + 3^x) = log(2000). Using the power rule of logarithms, we can rewrite this as: x*log(2) + x*log(3) = log(2000). Now, let's solve for x: x = (log(2000) - log(3))/log(2) ≈ 7.93.",
+        "marking_scheme": [
+          "Isolation of 2^x (1 mark)",
+          "Use of logarithms (1 mark)",
+          "Solving for x (3 marks)"
+        ],
+        "topic": "Phishing and Online Threats",
+        "is_numerical": true
+      },
+      {
+        "q": "A user has a password 'abc123' for their online banking account. What is the strength of this password?",
+        "marks": 5,
+        "answer": "The password 'abc123' has a strength of 2 out of 10. This is because it is a short password (only 6 characters) and it is a combination of easily guessable characters (abc and 123). A stronger password would be a combination of uppercase and lowercase letters, numbers, and special characters, and would be at least 12 characters long.",
+        "marking_scheme": [
+          "Assessment of password length (1 mark)",
+          "Assessment of password complexity (2 marks)",
+          "Recommendation for stronger password (2 marks)"
+        ],
+        "topic": "Password Management and Security",
+        "is_numerical": false
+      },
+      {
+        "q": "A company has a budget of $1000 for a cybersecurity training program. If the program costs $500 per employee, and there are 5 employees, how many employees can the company afford to train?",
+        "marks": 5,
+        "answer": "To solve this problem, we can divide the total budget by the cost per employee: 1000/500 = 2. So, the company can afford to train 2 employees.",
+        "marking_scheme": [
+          "Calculation of total budget (1 mark)",
+          "Calculation of cost per employee (1 mark)",
+          "Calculation of number of employees that can be trained (3 marks)"
+        ],
+        "topic": "Cybersecurity Training and Awareness",
+        "is_numerical": true
+      }
+    ],
+    "total": 7
+  }
+}

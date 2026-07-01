@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Linked List (Theory)",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T03:25:27.253Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): A linked list is a linear data structure where each element is a separate object.",
+        "reason": "Reason (R): Each element in a linked list is called a node, which contains a value and a reference to the next node.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A linked list is indeed a linear data structure, and each element is a separate object, known as a node. The reason statement correctly explains the composition of a node in a linked list."
+      },
+      {
+        "assertion": "Assertion (A): In a singly linked list, each node has two fields: data and next.",
+        "reason": "Reason (R): The data field stores the value of the node, while the next field stores the address of the next node in the list.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "In a singly linked list, each node indeed has two fields: data and next. The reason statement accurately describes the purpose of each field."
+      },
+      {
+        "assertion": "Assertion (A): A doubly linked list allows for efficient insertion and deletion of nodes at any position.",
+        "reason": "Reason (R): Each node in a doubly linked list has three fields: data, next, and previous.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A doubly linked list does allow for efficient insertion and deletion of nodes at any position, thanks to the presence of three fields in each node: data, next, and previous."
+      },
+      {
+        "assertion": "Assertion (A): A circularly linked list is a type of linked list where the last node points to the first node.",
+        "reason": "Reason (R): The last node's next field stores the address of the first node in the list.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "A circularly linked list is indeed a type of linked list where the last node points to the first node, and the reason statement accurately describes how this is achieved."
+      },
+      {
+        "assertion": "Assertion (A): Linked lists are more memory-efficient than arrays for storing large amounts of data.",
+        "reason": "Reason (R): Linked lists require more memory than arrays because each node has a reference to the next node.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The assertion is false because linked lists are not always more memory-efficient than arrays. The reason statement is true, as linked lists do require more memory than arrays due to the additional reference field in each node."
+      },
+      {
+        "assertion": "Assertion (A): Insertion at the beginning of a linked list is an O(1) operation.",
+        "reason": "Reason (R): The new node is added to the beginning of the list by updating the head pointer.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Insertion at the beginning of a linked list is indeed an O(1) operation, and the reason statement accurately describes how this is achieved by updating the head pointer."
+      },
+      {
+        "assertion": "Assertion (A): Deletion of a node from a linked list requires updating the next field of the previous node.",
+        "reason": "Reason (R): The next field of the previous node is updated to point to the node after the deleted node.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Deletion of a node from a linked list does require updating the next field of the previous node, and the reason statement accurately describes how this is achieved."
+      },
+      {
+        "assertion": "Assertion (A): A linked list can be traversed in both forward and backward directions.",
+        "reason": "Reason (R): A singly linked list can only be traversed in the forward direction.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "The assertion is true, as a doubly linked list can be traversed in both forward and backward directions. However, the reason statement is false, as it only applies to singly linked lists."
+      },
+      {
+        "assertion": "Assertion (A): Linked lists are suitable for implementing stacks and queues.",
+        "reason": "Reason (R): Linked lists are not suitable for implementing stacks and queues because they are complex data structures.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "Linked lists are indeed suitable for implementing stacks and queues, as they can be used to efficiently add and remove elements. The reason statement is false, as linked lists are not inherently complex data structures."
+      },
+      {
+        "assertion": "Assertion (A): A linked list can store a fixed number of elements.",
+        "reason": "Reason (R): A linked list is a dynamic data structure that can grow or shrink as elements are added or removed.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The assertion is false, as a linked list can store a variable number of elements. The reason statement is true, as linked lists are dynamic data structures that can grow or shrink as elements are added or removed."
+      }
+    ],
+    "total": 10
+  }
+}

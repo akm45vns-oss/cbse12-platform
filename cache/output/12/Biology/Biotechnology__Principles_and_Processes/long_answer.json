@@ -1,0 +1,80 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Biotechnology: Principles and Processes",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T02:55:20.714Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the process of DNA fingerprinting. Explain its importance in forensic science.",
+        "marks": 5,
+        "answer": "DNA fingerprinting is a technique that involves the analysis of an individual's unique DNA pattern. It is used to identify individuals and solve crimes. The process involves the following steps: extraction of DNA from a sample, amplification of the DNA using PCR, cutting the amplified DNA into fragments using restriction enzymes, separating the fragments by size using gel electrophoresis, and analyzing the fragments to identify the individual. The importance of DNA fingerprinting lies in its ability to identify individuals with certainty, even in cases where traditional methods fail.",
+        "marking_scheme": [
+          "Explain the process of DNA fingerprinting (2 marks)",
+          "Describe the importance of DNA fingerprinting in forensic science (3 marks)"
+        ],
+        "topic": "DNA Fingerprinting",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the principles of gene cloning and the steps involved in it.",
+        "marks": 5,
+        "answer": "Gene cloning is the process of creating multiple copies of a particular gene or DNA sequence. The principles of gene cloning involve the use of restriction enzymes to cut the DNA at specific sites, the use of a vector to carry the cloned gene, and the use of a host organism to replicate the cloned gene. The steps involved in gene cloning are: isolation of the gene to be cloned, preparation of the vector, restriction of the vector and the gene, ligation of the vector and the gene, transformation of the host organism, and selection of the transformed organisms.",
+        "marking_scheme": [
+          "Explain the principles of gene cloning (2 marks)",
+          "Describe the steps involved in gene cloning (3 marks)"
+        ],
+        "topic": "Gene Cloning",
+        "is_numerical": false
+      },
+      {
+        "q": "What is gene expression? Explain the different levels of gene expression control.",
+        "marks": 5,
+        "answer": "Gene expression refers to the process by which the information encoded in a gene is converted into a functional product, such as a protein. The different levels of gene expression control include transcriptional control, post-transcriptional control, post-translational control, and epigenetic control. Transcriptional control involves the regulation of gene expression at the level of transcription, while post-transcriptional control involves the regulation of gene expression after transcription but before translation. Post-translational control involves the regulation of gene expression after translation, while epigenetic control involves the regulation of gene expression through changes in chromatin structure.",
+        "marking_scheme": [
+          "Explain what is gene expression (2 marks)",
+          "Describe the different levels of gene expression control (3 marks)"
+        ],
+        "topic": "Gene Expression",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the number of clones obtained from a transformation experiment where 5 microliters of competent cells were used, and the transformation efficiency was 1000 cells per microgram of DNA.",
+        "marks": 5,
+        "answer": "Calculation:\n\nGiven: Transformation efficiency = 1000 cells/μg DNA, Volume of competent cells = 5 μl, Amount of DNA used = 1 μg\n\nNumber of clones = Transformation efficiency x Amount of DNA x Volume of competent cells\n\n= 1000 cells/μg x 1 μg x 5 μl\n\n= 5000 cells\n\nTherefore, the number of clones obtained from the transformation experiment is 5000.",
+        "marking_scheme": [
+          "State the given values and the calculation (1 mark)",
+          "Calculate the number of clones (4 marks)"
+        ],
+        "topic": "Transformation",
+        "is_numerical": true
+      },
+      {
+        "q": "A DNA sequencing experiment yields the following sequence: 5' ATGCGATCG 3'. If the primer used in the sequencing reaction was 5' ATG 3', what is the length of the sequenced product?",
+        "marks": 5,
+        "answer": "Calculation:\n\nGiven: Sequenced product sequence = 5' ATGCGATCG 3', Primer sequence = 5' ATG 3'\n\nLength of sequenced product = Length of sequenced product sequence - Length of primer sequence\n\n= 10 bp - 3 bp\n\n= 7 bp\n\nTherefore, the length of the sequenced product is 7 bp.",
+        "marking_scheme": [
+          "State the given values and the calculation (1 mark)",
+          "Calculate the length of the sequenced product (4 marks)"
+        ],
+        "topic": "DNA Sequencing",
+        "is_numerical": true
+      },
+      {
+        "q": "A PCR reaction mixture contains 100 μl of 10X PCR buffer, 1 μl of DNA polymerase, and 2 μl of dNTPs. If the reaction mixture is to be scaled up by a factor of 5, what is the volume of each component required?",
+        "marks": 5,
+        "answer": "Calculation:\n\nGiven: Initial volume of 10X PCR buffer = 100 μl, Initial volume of DNA polymerase = 1 μl, Initial volume of dNTPs = 2 μl, Scaling factor = 5\n\nFinal volume = Initial volume x Scaling factor\n\n= 100 μl x 5\n\n= 500 μl\n\nVolume of 10X PCR buffer required = 500 μl\n\nVolume of DNA polymerase required = 1 μl x 5\n\n= 5 μl\n\nVolume of dNTPs required = 2 μl x 5\n\n= 10 μl\n\nTherefore, the volume of each component required is 500 μl for 10X PCR buffer, 5 μl for DNA polymerase, and 10 μl for dNTPs.",
+        "marking_scheme": [
+          "State the given values and the calculation (1 mark)",
+          "Calculate the volume of each component required (4 marks)"
+        ],
+        "topic": "PCR",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

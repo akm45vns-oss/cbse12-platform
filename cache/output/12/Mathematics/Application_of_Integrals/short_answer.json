@@ -1,0 +1,167 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Application of Integrals",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T03:21:01.922Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define mean position of a particle.",
+        "marks": 1,
+        "answer": "The mean position of a particle is given by the average value of the position of the particle over a given time interval.",
+        "key_points": [
+          "Mean position is the average value of position"
+        ],
+        "topic": "Mean Position"
+      },
+      {
+        "q": "State the formula for mean value theorem.",
+        "marks": 1,
+        "answer": "The formula for mean value theorem is ∫[a,b] f(x)dx = f(c)(b-a), where c is the mean value.",
+        "key_points": [
+          "Formula for mean value theorem"
+        ],
+        "topic": "Mean Value Theorem"
+      },
+      {
+        "q": "What is meant by the average value of a function?",
+        "marks": 1,
+        "answer": "The average value of a function f(x) over the interval [a, b] is the value of the function at some point c in the interval, such that ∫[a,b] f(x)dx = f(c)(b-a).",
+        "key_points": [
+          "Average value of a function"
+        ],
+        "topic": "Mean Value Theorem"
+      },
+      {
+        "q": "Define the work done by a variable force.",
+        "marks": 1,
+        "answer": "The work done by a variable force is given by the integral of the force with respect to displacement.",
+        "key_points": [
+          "Work done by a variable force"
+        ],
+        "topic": "Work Done"
+      },
+      {
+        "q": "State the relation between work done and potential energy.",
+        "marks": 1,
+        "answer": "The work done on an object is equal to the change in its potential energy.",
+        "key_points": [
+          "Relation between work done and potential energy"
+        ],
+        "topic": "Work Done"
+      },
+      {
+        "q": "What is meant by the centre of mass of a system of particles?",
+        "marks": 1,
+        "answer": "The centre of mass of a system of particles is the point where the entire mass of the system can be considered to be concentrated.",
+        "key_points": [
+          "Centre of mass of a system of particles"
+        ],
+        "topic": "Centre of Mass"
+      },
+      {
+        "q": "State the importance of centre of mass in physics.",
+        "marks": 1,
+        "answer": "The centre of mass is important in physics as it helps in understanding the motion of a system of particles.",
+        "key_points": [
+          "Importance of centre of mass in physics"
+        ],
+        "topic": "Centre of Mass"
+      },
+      {
+        "q": "Define the moment of a force about a point.",
+        "marks": 1,
+        "answer": "The moment of a force about a point is the product of the force and the perpendicular distance from the point to the line of action of the force.",
+        "key_points": [
+          "Moment of a force about a point"
+        ],
+        "topic": "Moment of a Force"
+      },
+      {
+        "q": "State the relation between torque and moment.",
+        "marks": 1,
+        "answer": "Torque is equal to the moment of a force about a point.",
+        "key_points": [
+          "Relation between torque and moment"
+        ],
+        "topic": "Moment of a Force"
+      },
+      {
+        "q": "What are the applications of application of integrals in physics?",
+        "marks": 2,
+        "answer": "The applications of application of integrals in physics include calculating work done, potential energy, centre of mass, moment of a force, and torque.",
+        "key_points": [
+          "Applications of application of integrals in physics"
+        ],
+        "topic": "Applications of Integrals"
+      },
+      {
+        "q": "Derive the formula for work done by a variable force.",
+        "marks": 2,
+        "answer": "The work done by a variable force is given by the integral of the force with respect to displacement, i.e. W = ∫[a,b] F(x)dx.",
+        "key_points": [
+          "Formula for work done by a variable force"
+        ],
+        "topic": "Work Done"
+      },
+      {
+        "q": "Explain the concept of centre of mass with an example.",
+        "marks": 2,
+        "answer": "The centre of mass of a system of particles is the point where the entire mass of the system can be considered to be concentrated. For example, consider a dumbbell with two particles of equal mass attached to a string. The centre of mass lies on the string, equidistant from the two particles.",
+        "key_points": [
+          "Concept of centre of mass with an example"
+        ],
+        "topic": "Centre of Mass"
+      },
+      {
+        "q": "Derive the formula for moment of a force about a point.",
+        "marks": 2,
+        "answer": "The moment of a force about a point is the product of the force and the perpendicular distance from the point to the line of action of the force, i.e. M = F × d.",
+        "key_points": [
+          "Formula for moment of a force about a point"
+        ],
+        "topic": "Moment of a Force"
+      },
+      {
+        "q": "Explain the relation between work done and potential energy with an example.",
+        "marks": 3,
+        "answer": "The work done on an object is equal to the change in its potential energy. For example, consider a ball being lifted from the ground to a certain height. The work done on the ball is equal to the increase in its potential energy.",
+        "key_points": [
+          "Relation between work done and potential energy with an example"
+        ],
+        "topic": "Work Done"
+      },
+      {
+        "q": "Derive the formula for torque and explain its importance in physics.",
+        "marks": 3,
+        "answer": "Torque is equal to the moment of a force about a point, i.e. τ = F × d. Torque is important in physics as it helps in understanding rotational motion.",
+        "key_points": [
+          "Formula for torque and importance in physics"
+        ],
+        "topic": "Moment of a Force"
+      },
+      {
+        "q": "Explain the concept of centre of mass with a numerical example.",
+        "marks": 3,
+        "answer": "Consider a system of two particles of masses 2 kg and 3 kg, located at (1, 2) and (4, 5) respectively. The centre of mass is given by (x, y) = ((2 × 1 + 3 × 4)/(2 + 3), (2 × 2 + 3 × 5)/(2 + 3)) = (17/5, 17/5).",
+        "key_points": [
+          "Concept of centre of mass with a numerical example"
+        ],
+        "topic": "Centre of Mass"
+      },
+      {
+        "q": "Derive the formula for work done by a variable force and explain its importance in physics.",
+        "marks": 3,
+        "answer": "The work done by a variable force is given by the integral of the force with respect to displacement, i.e. W = ∫[a,b] F(x)dx. Work done is important in physics as it helps in understanding the motion of objects.",
+        "key_points": [
+          "Formula for work done by a variable force and importance in physics"
+        ],
+        "topic": "Work Done"
+      }
+    ],
+    "total": 17
+  }
+}

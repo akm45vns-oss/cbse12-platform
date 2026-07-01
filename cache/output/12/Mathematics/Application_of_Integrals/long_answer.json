@@ -1,0 +1,91 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Application of Integrals",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:56:43.043Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the area of the region bounded by the curve y = x^2, the x-axis, and the lines x = 1 and x = 2? Also, find the area of the region bounded by the curve x = y^2, the y-axis, and the lines y = 1 and y = 2.",
+        "marks": 5,
+        "answer": "To find the area of the region bounded by the curve y = x^2, the x-axis, and the lines x = 1 and x = 2, we use the definite integral. The area is given by the integral of y with respect to x, between the limits x = 1 and x = 2. Similarly, to find the area of the region bounded by the curve x = y^2, the y-axis, and the lines y = 1 and y = 2, we use the definite integral. The area is given by the integral of x with respect to y, between the limits y = 1 and y = 2.",
+        "marking_scheme": [
+          "Identifying the curves and boundaries (1 mark)",
+          "Setting up the correct integrals for area (1 mark)",
+          "Evaluating the integrals (2 marks)",
+          "Conclusion with calculated areas (1 mark)"
+        ],
+        "topic": "Area between curves",
+        "is_numerical": false
+      },
+      {
+        "q": "Find the area of the region bounded by the curves y = sqrt(x) and y = x.",
+        "marks": 5,
+        "answer": "To find the area of the region bounded by the curves y = sqrt(x) and y = x, we first need to find the points of intersection of the two curves. We set sqrt(x) = x and solve for x. This gives us x = 0 and x = 1. The area is then given by the integral of the difference between the two functions, between the limits x = 0 and x = 1.",
+        "marking_scheme": [
+          "Finding the points of intersection (1 mark)",
+          "Setting up the correct integral for area (1 mark)",
+          "Evaluating the integral (2 marks)",
+          "Conclusion with calculated area (1 mark)"
+        ],
+        "topic": "Area between curves",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain how to find the area of the region bounded by a curve and the x-axis using definite integrals, with a suitable example.",
+        "marks": 5,
+        "answer": "To find the area of the region bounded by a curve and the x-axis, we use the definite integral. The area is given by the integral of the function with respect to x, between the limits where the curve intersects the x-axis. For example, consider the curve y = x^2. To find the area between the curve and the x-axis from x = 0 to x = 2, we evaluate the integral of x^2 with respect to x, between the limits 0 and 2.",
+        "marking_scheme": [
+          "Explanation of the method (2 marks)",
+          "Example with correct setup and evaluation of integral (2 marks)",
+          "Conclusion with calculated area (1 mark)"
+        ],
+        "topic": "Area under curves",
+        "is_numerical": false
+      },
+      {
+        "q": "The area between the curve y = x^2 + 1 and the x-axis from x = 0 to x = 3 is",
+        "marks": 5,
+        "answer": "Calculation: \nArea = ∫[0,3] (x^2 + 1) dx \n= [x^3/3 + x] from 0 to 3 \n= [(3^3)/3 + 3] - [(0^3)/3 + 0] \n= 9 + 3 \n= 12",
+        "marking_scheme": [
+          "Setting up the correct integral (1 mark)",
+          "Evaluating the integral correctly (2 marks)",
+          "Calculating the final area (1 mark)",
+          "Conclusion with the correct answer (1 mark)"
+        ],
+        "topic": "Area under curves",
+        "is_numerical": true
+      },
+      {
+        "q": "Find the area of the region bounded by the curve y = 2x, the x-axis, and the lines x = 0 and x = 4.",
+        "marks": 5,
+        "answer": "Calculation: \nArea = ∫[0,4] 2x dx \n= [x^2] from 0 to 4 \n= [(4^2) - (0^2)] \n= 16",
+        "marking_scheme": [
+          "Setting up the correct integral (1 mark)",
+          "Evaluating the integral correctly (2 marks)",
+          "Calculating the final area (1 mark)",
+          "Conclusion with the correct answer (1 mark)"
+        ],
+        "topic": "Area under curves",
+        "is_numerical": true
+      },
+      {
+        "q": "The area between the curve y = x^3 - 2x^2 + x + 1 and the x-axis from x = 0 to x = 2 is",
+        "marks": 5,
+        "answer": "Calculation: \nArea = ∫[0,2] (x^3 - 2x^2 + x + 1) dx \n= [(x^4)/4 - (2x^3)/3 + (x^2)/2 + x] from 0 to 2 \n= [(2^4)/4 - (2*2^3)/3 + (2^2)/2 + 2] - [(0^4)/4 - (2*0^3)/3 + (0^2)/2 + 0] \n= [4 - 16/3 + 2 + 2] \n= [8 - 16/3] \n= (24 - 16)/3 \n= 8/3",
+        "marking_scheme": [
+          "Setting up the correct integral (1 mark)",
+          "Evaluating the integral correctly (2 marks)",
+          "Calculating the final area (1 mark)",
+          "Conclusion with the correct answer (1 mark)"
+        ],
+        "topic": "Area under curves",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

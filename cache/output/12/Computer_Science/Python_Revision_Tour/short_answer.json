@@ -1,0 +1,178 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Python Revision Tour",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T03:24:21.517Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the syntax for using the built-in function 'len()' in Python?",
+        "marks": 1,
+        "answer": "The syntax for using the built-in function 'len()' in Python is len(object).",
+        "key_points": [
+          "Syntax of len() function",
+          "Built-in functions in Python"
+        ],
+        "topic": "Introduction to Python"
+      },
+      {
+        "q": "What is a 'list' in Python and how is it declared?",
+        "marks": 1,
+        "answer": "A 'list' in Python is an ordered collection of items that can be of any data type, including strings, integers, floats, and other lists. It is declared using square brackets [ ] and elements are separated by commas.",
+        "key_points": [
+          "List in Python",
+          "Declaring lists"
+        ],
+        "topic": "Lists"
+      },
+      {
+        "q": "What is the difference between '==', 'is', and '!=' operators in Python?",
+        "marks": 1,
+        "answer": "The '==' operator checks for equality in value, the 'is' operator checks for identity (i.e., whether both variables point to the same object in memory), and the '!=' operator checks for inequality in value.",
+        "key_points": [
+          "Equality operators",
+          "Identity operators",
+          "Comparison operators"
+        ],
+        "topic": "Operators"
+      },
+      {
+        "q": "What is a 'function' in Python and what is its purpose?",
+        "marks": 1,
+        "answer": "A 'function' in Python is a block of code that can be executed multiple times from different parts of the program. Its purpose is to perform a specific task or set of tasks and return a value.",
+        "key_points": [
+          "Functions in Python",
+          "Purpose of functions"
+        ],
+        "topic": "Functions"
+      },
+      {
+        "q": "What is a 'class' in Python and how is it declared?",
+        "marks": 1,
+        "answer": "A 'class' in Python is a template for creating objects. It is declared using the 'class' keyword followed by the class name and a colon (:).",
+        "key_points": [
+          "Classes in Python",
+          "Declaring classes"
+        ],
+        "topic": "Classes and Objects"
+      },
+      {
+        "q": "Explain the concept of 'inheritance' in object-oriented programming with an example.",
+        "marks": 2,
+        "answer": "Inheritance is a mechanism by which a new class can inherit the properties and behavior of an existing class. The existing class is called the parent or superclass, and the new class is called the child or subclass. For example, a class 'Vehicle' can have a subclass 'Car' that inherits its properties and behavior.",
+        "key_points": [
+          "Inheritance in OOP",
+          "Parent and child classes"
+        ],
+        "topic": "Inheritance"
+      },
+      {
+        "q": "What is the difference between 'static' and 'instance' variables in Python?",
+        "marks": 2,
+        "answer": "Static variables are shared by all instances of a class, while instance variables are unique to each instance. Static variables are declared using the 'static' keyword, while instance variables are declared without any keyword.",
+        "key_points": [
+          "Static variables",
+          "Instance variables"
+        ],
+        "topic": "Static and Instance Variables"
+      },
+      {
+        "q": "Explain the concept of 'polymorphism' in object-oriented programming with an example.",
+        "marks": 2,
+        "answer": "Polymorphism is the ability of an object to take on multiple forms. For example, a class 'Shape' can have methods to calculate the area of different shapes, such as squares, circles, and triangles, without knowing the specific shape at compile time.",
+        "key_points": [
+          "Polymorphism in OOP",
+          "Method overriding"
+        ],
+        "topic": "Polymorphism"
+      },
+      {
+        "q": "What is the purpose of the 'try-except' block in exception handling in Python?",
+        "marks": 2,
+        "answer": "The 'try-except' block is used to catch and handle exceptions that occur during the execution of a block of code. The 'try' block contains the code that might raise an exception, and the 'except' block contains the code that handles the exception.",
+        "key_points": [
+          "Try-except block",
+          "Exception handling"
+        ],
+        "topic": "Exception Handling"
+      },
+      {
+        "q": "Explain how to read and write CSV files in Python using the 'csv' module.",
+        "marks": 2,
+        "answer": "To read a CSV file, you can use the 'reader()' function from the 'csv' module, and to write a CSV file, you can use the 'writer()' function. For example, reader = csv.reader(open('file.csv', 'r')) and writer = csv.writer(open('file.csv', 'w'))",
+        "key_points": [
+          "Reading CSV files",
+          "Writing CSV files",
+          "csv module"
+        ],
+        "topic": "File Input/Output"
+      },
+      {
+        "q": "What is the difference between a 'list' and a 'tuple' in Python?",
+        "marks": 3,
+        "answer": "A list is a mutable collection of items that can be of any data type, while a tuple is an immutable collection of items. Lists are declared using square brackets [ ] and can be modified after creation, while tuples are declared using parentheses ( ) and cannot be modified after creation.",
+        "key_points": [
+          "Lists",
+          "Tuples",
+          "Mutable vs immutable"
+        ],
+        "topic": "Lists, Tuples"
+      },
+      {
+        "q": "Explain how to use the 'datetime' module to work with dates and times in Python.",
+        "marks": 3,
+        "answer": "You can use the 'datetime' module to work with dates and times by creating 'date' and 'time' objects. For example, from datetime import datetime, date, time and d = datetime.now() and t = time(12, 30, 0).",
+        "key_points": [
+          "Datetime module",
+          "Date and time objects"
+        ],
+        "topic": "Date and Time"
+      },
+      {
+        "q": "What is the purpose of the 'enumerate' function in Python, and how is it used?",
+        "marks": 3,
+        "answer": "The 'enumerate' function is used to iterate over a sequence (such as a list or tuple) and return both the index and the value of each item. For example, for i, name in enumerate(['John', 'Mary', 'David']):",
+        "key_points": [
+          "Enumerate function",
+          "Iterating over sequences"
+        ],
+        "topic": "Sequences"
+      },
+      {
+        "q": "Explain how to use the 'random' module to generate random numbers in Python.",
+        "marks": 3,
+        "answer": "You can use the 'random' module to generate random numbers by using functions such as 'randint()', 'randrange()', and 'uniform()'. For example, import random and print(random.randint(1, 10)).",
+        "key_points": [
+          "Random module",
+          "Generating random numbers"
+        ],
+        "topic": "Random and Enumerate"
+      },
+      {
+        "q": "What is the difference between a 'dictionary' and a 'set' in Python?",
+        "marks": 3,
+        "answer": "A dictionary is an unordered collection of key-value pairs, while a set is an unordered collection of unique elements. Dictionaries are declared using curly brackets { } and are used for storing data with a key-value relationship, while sets are declared using the 'set' keyword and are used for storing unique elements.",
+        "key_points": [
+          "Dictionaries",
+          "Sets",
+          "Key-value pairs"
+        ],
+        "topic": "Dictionaries and Sets"
+      },
+      {
+        "q": "Explain how to use the 'matplotlib' library to create plots and charts in Python.",
+        "marks": 3,
+        "answer": "You can use the 'matplotlib' library to create plots and charts by importing the library and using functions such as 'plot()', 'show()', and 'savefig()'. For example, import matplotlib.pyplot as plt and plt.plot([1, 2, 3]).",
+        "key_points": [
+          "Matplotlib library",
+          "Creating plots and charts"
+        ],
+        "topic": "Graphical User Interface"
+      }
+    ],
+    "total": 16
+  }
+}

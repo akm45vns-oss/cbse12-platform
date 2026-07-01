@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Probability",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:57:41.634Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A card is drawn from a well-shuffled deck of 52 cards. What is the probability that it is a king?",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "1/13",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If P(A) = 0.4 and P(B) = 0.3, what is the probability that neither A nor B occurs? (Assume A and B are mutually exclusive events)",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "1 - (0.4 + 0.3) = 0.3",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Which of the following is a requirement for two events to be mutually exclusive?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "They cannot occur at the same time",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "A bag contains 5 white balls and 7 black balls. If 2 balls are drawn at random without replacement, what is the probability that both are white?",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Let A be the event of drawing a white ball in the first draw. P(A) = 5/12. Let B be the event of drawing a white ball in the second draw given that the first ball drawn is white. P(B|A) = 4/11. Using the multiplication rule for conditional probability, P(A ∩ B) = P(A) * P(B|A) = (5/12) * (4/11) = 20/132 = 5/33",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Given that P(A ∪ B) = 0.7, P(A) = 0.4, and P(B) = 0.3, are events A and B mutually exclusive? Justify your answer.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Since P(A ∪ B) = P(A) + P(B) - P(A ∩ B), we have 0.7 = 0.4 + 0.3 - P(A ∩ B). This gives P(A ∩ B) = 0.4 + 0.3 - 0.7 = 0. Thus, P(A ∩ B) = 0, which means A and B are mutually exclusive.",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Fill in the blank: The probability of an impossible event is _______.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "0",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "State True or False: If P(A) = 0.6 and P(B) = 0.5, then P(A ∩ B) must be greater than 0.5.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "False",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If P(A) = 0.3, P(B) = 0.4, and P(A ∪ B) = 0.5, find the probability that exactly one of them occurs.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "P(A ∪ B) = P(A) + P(B) - P(A ∩ B). Given P(A ∪ B) = 0.5, P(A) = 0.3, and P(B) = 0.4, we can find P(A ∩ B) = P(A) + P(B) - P(A ∪ B) = 0.3 + 0.4 - 0.5 = 0.2. The probability that exactly one of A or B occurs is P(A) + P(B) - 2*P(A ∩ B) = 0.3 + 0.4 - 2*0.2 = 0.3",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "A fair coin is tossed. What is the probability of getting a head?",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "1/2",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Two dice are rolled. What is the probability that the sum of the numbers on the two dice is 7?",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "There are 6 outcomes where the sum is 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). Total outcomes = 36. So, probability = 6/36 = 1/6",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      }
+    ],
+    "total": 10
+  }
+}

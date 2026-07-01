@@ -1,0 +1,88 @@
+{
+  "class": "12",
+  "subject": "Economics",
+  "chapter": "Money and Banking",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:58:00.096Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of money supply. What are its components? How is it measured in India?",
+        "marks": 5,
+        "answer": "Money supply refers to the total amount of money circulating in the economy. The components of money supply include currency with the public, demand deposits with banks, and time deposits with banks. In India, money supply is measured by the Reserve Bank of India (RBI) using four different measures: M1, M2, M3, and M4. M1 includes currency with the public and demand deposits with banks. M2 includes M1 plus time deposits with banks. M3 includes M2 plus deposits with post offices. M4 includes M3 plus total deposits with post offices.",
+        "marking_scheme": [
+          "Definition of money supply (1 mark)",
+          "Components of money supply (1 mark)",
+          "Measurement of money supply in India (2 marks)",
+          "Examples of M1, M2, M3, and M4 (1 mark)"
+        ],
+        "topic": "Money Supply",
+        "is_numerical": false
+      },
+      {
+        "q": "A commercial bank has a cash reserve of Rs. 1,00,000 and demand deposits of Rs. 10,00,000. If the required reserve ratio is 10%, calculate the excess reserves and the amount the bank can lend.",
+        "marks": 5,
+        "answer": "Calculation:\nRequired reserves = Demand deposits x Required reserve ratio\n= 10,00,000 x 0.10\n= 1,00,000\nExcess reserves = Actual reserves - Required reserves\n= 1,00,000 - 1,00,000\n= 0\nSince the excess reserves are zero, the bank cannot lend any amount.",
+        "marking_scheme": [
+          "Calculation of required reserves (1.5 marks)",
+          "Calculation of excess reserves (1.5 marks)",
+          "Determination of the amount the bank can lend (2 marks)"
+        ],
+        "topic": "Bank Credit",
+        "is_numerical": true
+      },
+      {
+        "q": "What is the difference between commercial banks and central banks? Explain the functions of each.",
+        "marks": 5,
+        "answer": "Commercial banks are financial institutions that provide banking services to the general public, while central banks are the primary monetary authorities that regulate the money supply and oversee the banking system. The main functions of commercial banks include accepting deposits, making loans, and providing other banking services. The main functions of central banks include regulating the money supply, setting interest rates, and acting as a lender of last resort.",
+        "marking_scheme": [
+          "Difference between commercial banks and central banks (1 mark)",
+          "Functions of commercial banks (1.5 marks)",
+          "Functions of central banks (2.5 marks)"
+        ],
+        "topic": "Central Bank and Commercial Bank",
+        "is_numerical": false
+      },
+      {
+        "q": "If the currency deposit ratio is 0.2 and the reserve deposit ratio is 0.1, calculate the money multiplier.",
+        "marks": 5,
+        "answer": "Calculation:\nMoney multiplier = 1 / (Currency deposit ratio + Reserve deposit ratio)\n= 1 / (0.2 + 0.1)\n= 1 / 0.3\n= 3.33",
+        "marking_scheme": [
+          "Understanding of the money multiplier formula (1 mark)",
+          "Calculation of the money multiplier (2 marks)",
+          "Interpretation of the result (2 marks)"
+        ],
+        "topic": "Money Multiplier",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of the repo rate and its impact on the money supply. How does it affect the lending and borrowing rates of commercial banks?",
+        "marks": 5,
+        "answer": "The repo rate is the interest rate at which the central bank lends money to commercial banks. An increase in the repo rate reduces the money supply, while a decrease in the repo rate increases the money supply. When the repo rate increases, commercial banks borrow less from the central bank, reducing their lending capacity and increasing their lending rates. Conversely, when the repo rate decreases, commercial banks borrow more from the central bank, increasing their lending capacity and reducing their lending rates.",
+        "marking_scheme": [
+          "Definition of the repo rate (1 mark)",
+          "Impact of the repo rate on the money supply (1.5 marks)",
+          "Effect of the repo rate on commercial banks' lending and borrowing rates (2.5 marks)"
+        ],
+        "topic": "Repo Rate",
+        "is_numerical": false
+      },
+      {
+        "q": "A bank has a deposit of Rs. 1,00,000 and a required reserve ratio of 15%. If it makes a loan of Rs. 80,000, calculate the excess reserves after the loan is made and the amount of new deposits that can be created.",
+        "marks": 5,
+        "answer": "Calculation:\nInitial reserves = Deposit x Required reserve ratio\n= 1,00,000 x 0.15\n= 15,000\nInitial excess reserves = Initial reserves - Required reserves\n= 15,000 - 15,000\n= 0\nAfter the loan is made, the required reserves increase by the amount of the loan multiplied by the required reserve ratio.\nNew required reserves = Initial required reserves + (Loan amount x Required reserve ratio)\n= 15,000 + (80,000 x 0.15)\n= 15,000 + 12,000\n= 27,000\nNew excess reserves = Initial reserves - New required reserves\n= 15,000 - 27,000\n= -12,000\nSince the new excess reserves are negative, the bank cannot create new deposits.",
+        "marking_scheme": [
+          "Calculation of initial reserves (1 mark)",
+          "Calculation of new required reserves (1.5 marks)",
+          "Determination of excess reserves after the loan is made (1.5 marks)",
+          "Calculation of the amount of new deposits that can be created (1 mark)"
+        ],
+        "topic": "Bank Credit",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

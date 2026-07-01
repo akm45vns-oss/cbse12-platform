@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Queue",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T03:24:23.705Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The ticket counter at a railway station is an example of a queue. Passengers arrive at the counter to purchase tickets. However, there is usually only one ticket counter, and multiple passengers want to buy tickets at the same time. To manage this situation, the queue concept is used. Passengers form a queue in front of the counter, and each passenger is served one by one. This ensures that each passenger gets their turn to buy tickets without any chaos or confusion. The railway staff uses this system to manage the crowd efficiently and provide good customer service.",
+        "questions": [
+          {
+            "q": "What is an example of a real-world application of a queue?",
+            "opts": [
+              "A) Bank ATM machine",
+              "B) Ticket counter at a railway station",
+              "C) Supermarket checkout counter",
+              "D) Post office counter"
+            ],
+            "ans": "B",
+            "explanation": "The ticket counter at a railway station is a classic example of a queue."
+          },
+          {
+            "q": "Why is the queue system used at the ticket counter?",
+            "opts": [
+              "A) To avoid chaos and confusion",
+              "B) To serve passengers in a random order",
+              "C) To provide good customer service",
+              "D) To increase ticket sales"
+            ],
+            "ans": "A",
+            "explanation": "The queue system is used to manage the crowd efficiently and provide good customer service."
+          },
+          {
+            "q": "What is ensured by using the queue system at the ticket counter?",
+            "opts": [
+              "A) Each passenger gets served immediately",
+              "B) Each passenger gets their turn to buy tickets",
+              "C) Passengers can buy tickets without waiting",
+              "D) Only one passenger can buy a ticket at a time"
+            ],
+            "ans": "B",
+            "explanation": "The queue system ensures that each passenger gets their turn to buy tickets without any chaos or confusion."
+          },
+          {
+            "q": "Who uses the queue system at the ticket counter?",
+            "opts": [
+              "A) Passengers",
+              "B) Railway staff",
+              "C) Both passengers and railway staff",
+              "D) Only railway staff"
+            ],
+            "ans": "B",
+            "explanation": "The railway staff uses the queue system to manage the crowd efficiently and provide good customer service."
+          },
+          {
+            "q": "What is the primary benefit of using the queue system at the ticket counter?",
+            "opts": [
+              "A) To increase ticket sales",
+              "B) To provide good customer service",
+              "C) To avoid chaos and confusion",
+              "D) To reduce the number of passengers"
+            ],
+            "ans": "C",
+            "explanation": "The primary benefit of using the queue system at the ticket counter is to avoid chaos and confusion."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A popular restaurant in a city has a long queue of customers waiting to be seated. The restaurant staff uses a queue data structure to manage the waiting list. New customers arrive and join the queue, while existing customers are removed from the queue when they are seated. The restaurant staff can efficiently manage the queue and ensure that customers are served in the order they arrived.",
+        "questions": [
+          {
+            "q": "What is the data structure used by the restaurant staff to manage the waiting list?",
+            "opts": [
+              "A) Stack",
+              "B) Queue",
+              "C) Tree",
+              "D) Graph"
+            ],
+            "ans": "B",
+            "explanation": "The restaurant staff uses a queue data structure to manage the waiting list."
+          },
+          {
+            "q": "What happens when new customers arrive and join the queue?",
+            "opts": [
+              "A) The queue is deleted",
+              "B) The queue is not affected",
+              "C) The queue is updated",
+              "D) The queue is sorted"
+            ],
+            "ans": "C",
+            "explanation": "The queue is updated when new customers arrive and join the queue."
+          },
+          {
+            "q": "What happens when customers are seated and removed from the queue?",
+            "opts": [
+              "A) The queue is not affected",
+              "B) The queue is updated",
+              "C) The queue is deleted",
+              "D) The queue is sorted"
+            ],
+            "ans": "B",
+            "explanation": "The queue is updated when customers are seated and removed from the queue."
+          },
+          {
+            "q": "What is the primary benefit of using a queue data structure to manage the waiting list?",
+            "opts": [
+              "A) To increase the number of customers",
+              "B) To reduce the waiting time",
+              "C) To efficiently manage the queue",
+              "D) To sort the customers"
+            ],
+            "ans": "C",
+            "explanation": "The primary benefit of using a queue data structure to manage the waiting list is to efficiently manage the queue."
+          },
+          {
+            "q": "What is ensured by using a queue data structure to manage the waiting list?",
+            "opts": [
+              "A) Customers are served in a random order",
+              "B) Customers are served in the order they arrived",
+              "C) Customers are not served",
+              "D) Customers are served immediately"
+            ],
+            "ans": "B",
+            "explanation": "Customers are served in the order they arrived when using a queue data structure to manage the waiting list."
+          }
+        ]
+      }
+    ]
+  }
+}

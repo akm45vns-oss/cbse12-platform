@@ -1,0 +1,87 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:57:49.503Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the basic structure of SQL commands. Discuss the importance of SQL in database management.",
+        "marks": 5,
+        "answer": "SQL (Structured Query Language) is a standard programming language designed for managing and manipulating data in relational database management systems. The basic structure of SQL commands includes SELECT, FROM, WHERE, GROUP BY, HAVING, and ORDER BY clauses. SQL is important in database management as it provides a standard way to access and manipulate data, ensures data consistency and integrity, and supports data analysis and reporting.",
+        "marking_scheme": [
+          "Definition and explanation of SQL (1 mark)",
+          "Basic structure of SQL commands (1 mark)",
+          "Importance of SQL in database management (3 marks)"
+        ],
+        "topic": "Introduction to SQL",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the purpose of the INSERT, UPDATE, and DELETE commands in SQL? Provide examples to illustrate their usage.",
+        "marks": 5,
+        "answer": "The INSERT command is used to add new records to a database table. The UPDATE command is used to modify existing records in a database table. The DELETE command is used to delete records from a database table. Examples: INSERT INTO customers (name, email) VALUES ('John Doe', 'john@example.com'); UPDATE customers SET name = 'Jane Doe' WHERE email = 'john@example.com'; DELETE FROM customers WHERE email = 'john@example.com';",
+        "marking_scheme": [
+          "Purpose of INSERT command (1 mark)",
+          "Purpose of UPDATE command (1 mark)",
+          "Purpose of DELETE command (1 mark)",
+          "Examples to illustrate usage (2 marks)"
+        ],
+        "topic": "SQL Commands",
+        "is_numerical": false
+      },
+      {
+        "q": "Discuss the differences between the INNER JOIN, LEFT JOIN, and RIGHT JOIN clauses in SQL. Provide examples to illustrate their usage.",
+        "marks": 5,
+        "answer": "The INNER JOIN clause returns records that have matching values in both tables. The LEFT JOIN clause returns all records from the left table and the matching records from the right table. The RIGHT JOIN clause returns all records from the right table and the matching records from the left table. Examples: SELECT * FROM customers INNER JOIN orders ON customers.customer_id = orders.customer_id; SELECT * FROM customers LEFT JOIN orders ON customers.customer_id = orders.customer_id; SELECT * FROM customers RIGHT JOIN orders ON customers.customer_id = orders.customer_id;",
+        "marking_scheme": [
+          "Difference between INNER JOIN and LEFT JOIN (1.5 marks)",
+          "Difference between INNER JOIN and RIGHT JOIN (1.5 marks)",
+          "Examples to illustrate usage (2 marks)"
+        ],
+        "topic": "SQL Joins",
+        "is_numerical": false
+      },
+      {
+        "q": "A library has 500 books with an average price of Rs. 250. If the price of each book is increased by 15%, what is the new total price of all the books?",
+        "marks": 5,
+        "answer": "Calculation:\nInitial total price = 500 * 250 = 125000\nPrice increase per book = 250 * 0.15 = 37.5\nNew price per book = 250 + 37.5 = 287.5\nNew total price = 500 * 287.5 = 143750",
+        "marking_scheme": [
+          "Calculation of initial total price (1 mark)",
+          "Calculation of price increase per book (1 mark)",
+          "Calculation of new total price (3 marks)"
+        ],
+        "topic": "Numerical Problems",
+        "is_numerical": true
+      },
+      {
+        "q": "A bookstore has 3000 books in stock. If 1200 books are sold at a 10% discount, and the rest are sold at a 5% discount, what is the total revenue generated?",
+        "marks": 5,
+        "answer": "Calculation:\nRevenue from 1200 books = 1200 * 250 * 0.9 = 270000\nRevenue from remaining books = 1800 * 250 * 0.95 = 427500\nTotal revenue = 270000 + 427500 = 697500",
+        "marking_scheme": [
+          "Calculation of revenue from 1200 books (2 marks)",
+          "Calculation of revenue from remaining books (2 marks)",
+          "Calculation of total revenue (1 mark)"
+        ],
+        "topic": "Numerical Problems",
+        "is_numerical": true
+      },
+      {
+        "q": "A publisher has 2000 copies of a book in stock. If the cost price of each book is Rs. 150, and the selling price is Rs. 200, what is the total profit made by selling all the books?",
+        "marks": 5,
+        "answer": "Calculation:\nTotal cost price = 2000 * 150 = 300000\nTotal selling price = 2000 * 200 = 400000\nTotal profit = Total selling price - Total cost price = 400000 - 300000 = 100000",
+        "marking_scheme": [
+          "Calculation of total cost price (1 mark)",
+          "Calculation of total selling price (1 mark)",
+          "Calculation of total profit (3 marks)"
+        ],
+        "topic": "Numerical Problems",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

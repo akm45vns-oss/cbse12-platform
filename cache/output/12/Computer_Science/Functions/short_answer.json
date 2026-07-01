@@ -1,0 +1,174 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T03:24:20.872Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a function in programming?",
+        "marks": 1,
+        "answer": "A function is a block of code that takes some input, performs a specific task, and returns an output.",
+        "key_points": [
+          "Input and output parameters",
+          "Function call and execution"
+        ],
+        "topic": "Introduction to Functions"
+      },
+      {
+        "q": "What is the purpose of passing arguments to a function?",
+        "marks": 1,
+        "answer": "Arguments are passed to a function to provide input for the function to perform its task.",
+        "key_points": [
+          "Function signature",
+          "Function definition"
+        ],
+        "topic": "Function Arguments"
+      },
+      {
+        "q": "How does the return statement affect the execution of a function?",
+        "marks": 1,
+        "answer": "The return statement ends the execution of a function and transfers control back to the caller.",
+        "key_points": [
+          "Function return type",
+          "Function return value"
+        ],
+        "topic": "Function Return Values"
+      },
+      {
+        "q": "Explain the concept of scope in functions.",
+        "marks": 1,
+        "answer": "Scope refers to the region of the program where a variable is defined and accessible.",
+        "key_points": [
+          "Local scope",
+          "Global scope"
+        ],
+        "topic": "Function Scope"
+      },
+      {
+        "q": "What is the difference between default and optional arguments in functions?",
+        "marks": 1,
+        "answer": "Default arguments are values assigned to parameters if no argument is passed, while optional arguments are parameters that can be omitted when calling the function.",
+        "key_points": [
+          "Function signature",
+          "Function definition"
+        ],
+        "topic": "Function Arguments"
+      },
+      {
+        "q": "How do functions help in code reusability?",
+        "marks": 2,
+        "answer": "Functions help in code reusability by allowing us to write a block of code once and use it multiple times by calling the function with different inputs.",
+        "key_points": [
+          "Modularity",
+          "Code organization"
+        ],
+        "topic": "Benefits of Functions"
+      },
+      {
+        "q": "What is function overloading, and how is it implemented?",
+        "marks": 2,
+        "answer": "Function overloading is a feature that allows multiple functions with the same name to be defined with different parameter lists. It is implemented using function signatures.",
+        "key_points": [
+          "Function signature",
+          "Function definition"
+        ],
+        "topic": "Function Overloading"
+      },
+      {
+        "q": "Explain the concept of recursion in functions.",
+        "marks": 2,
+        "answer": "Recursion is a programming technique where a function calls itself to solve a problem. It involves a base case and recursive case to ensure termination.",
+        "key_points": [
+          "Base case",
+          "Recursive case"
+        ],
+        "topic": "Recursion in Functions"
+      },
+      {
+        "q": "What is the difference between built-in and user-defined functions?",
+        "marks": 2,
+        "answer": "Built-in functions are provided by the programming language itself, while user-defined functions are created by the programmer.",
+        "key_points": [
+          "Function syntax",
+          "Function semantics"
+        ],
+        "topic": "Built-in and User-Defined Functions"
+      },
+      {
+        "q": "How do functions help in debugging and testing?",
+        "marks": 2,
+        "answer": "Functions help in debugging and testing by allowing us to isolate and test individual components of the code, making it easier to identify and fix errors.",
+        "key_points": [
+          "Modularity",
+          "Code organization"
+        ],
+        "topic": "Benefits of Functions"
+      },
+      {
+        "q": "Explain the concept of function pointers.",
+        "marks": 3,
+        "answer": "Function pointers are variables that store the memory address of a function. They allow us to pass functions as arguments to other functions or return functions from functions.",
+        "key_points": [
+          "Function signature",
+          "Function definition"
+        ],
+        "topic": "Function Pointers"
+      },
+      {
+        "q": "How do functions interact with the call stack?",
+        "marks": 3,
+        "answer": "Functions interact with the call stack by pushing and popping frames onto the stack. Each frame represents a function call and stores its local variables and return address.",
+        "key_points": [
+          "Call stack",
+          "Function call and return"
+        ],
+        "topic": "Function Call Stack"
+      },
+      {
+        "q": "Explain the concept of lambda functions.",
+        "marks": 3,
+        "answer": "Lambda functions are small, anonymous functions that can be defined inline within a larger expression. They are useful for creating small, one-time-use functions.",
+        "key_points": [
+          "Function syntax",
+          "Function semantics"
+        ],
+        "topic": "Lambda Functions"
+      },
+      {
+        "q": "How do functions help in code optimization?",
+        "marks": 3,
+        "answer": "Functions help in code optimization by allowing us to reuse code, reduce overhead, and improve performance. They also help in reducing code duplication and improving readability.",
+        "key_points": [
+          "Modularity",
+          "Code organization"
+        ],
+        "topic": "Benefits of Functions"
+      },
+      {
+        "q": "Explain the concept of function templates.",
+        "marks": 3,
+        "answer": "Function templates are functions that can work with different data types. They are used to create generic functions that can be used with different types, reducing code duplication and improving flexibility.",
+        "key_points": [
+          "Function syntax",
+          "Function semantics"
+        ],
+        "topic": "Function Templates"
+      },
+      {
+        "q": "How do functions interact with the operating system?",
+        "marks": 3,
+        "answer": "Functions interact with the operating system by making system calls, which are requests to the operating system to perform a specific task. This allows functions to use system resources and perform I/O operations.",
+        "key_points": [
+          "System call",
+          "Function call and return"
+        ],
+        "topic": "Function Interface"
+      }
+    ],
+    "total": 16
+  }
+}

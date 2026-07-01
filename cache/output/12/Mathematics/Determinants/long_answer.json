@@ -1,0 +1,91 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Determinants",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T02:56:41.073Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Prove that the determinant of a matrix is equal to the determinant of its transpose.",
+        "marks": 5,
+        "answer": "To prove that the determinant of a matrix A is equal to the determinant of its transpose, we can start by considering a 2x2 matrix. Let A = \\[\\{a, b}, \\{c, d}\\}\\]. The determinant of A is given by |A| = ad - bc. The transpose of A, denoted by A^T, is given by A^T = \\[\\{a, c}, \\{b, d}\\}\\]. The determinant of A^T is given by |A^T| = ad - cb. Since ad - bc = ad - cb, we have |A| = |A^T|. This result can be extended to larger square matrices using a similar argument.",
+        "marking_scheme": [
+          "Definition of determinant and transpose (1 mark)",
+          "Proof for 2x2 matrix (1 mark)",
+          "Extension to larger matrices (1 mark)",
+          "Correctness of proof (2 marks)"
+        ],
+        "topic": "Properties of Determinants",
+        "is_numerical": false
+      },
+      {
+        "q": "If A = \\[\\{1, 2, 3}, \\{4, 5, 6}, \\{7, 8, 9}\\}\\], find the value of |A|.",
+        "marks": 5,
+        "answer": "Calculation: \n|A| = 1(5*9 - 6*8) - 2(4*9 - 6*7) + 3(4*8 - 5*7) \n= 1(45 - 48) - 2(36 - 42) + 3(32 - 35) \n= 1(-3) - 2(-6) + 3(-3) \n= -3 + 12 - 9 \n= 0",
+        "marking_scheme": [
+          "Expansion of determinant (2 marks)",
+          "Correct calculation (2 marks)",
+          "Final answer (1 mark)"
+        ],
+        "topic": "Evaluation of Determinants",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of minor and cofactor of an element in a determinant. Give examples to illustrate your answer.",
+        "marks": 5,
+        "answer": "The minor of an element a_ij in a determinant is the determinant obtained by removing the i-th row and j-th column from the original determinant. The cofactor of an element a_ij is given by A_ij = (-1)^(i+j) * M_ij, where M_ij is the minor of the element. For example, consider the determinant |A| = \\|\\{1, 2}, \\{3, 4}\\|\\. The minor of the element 1 is M_11 = |4| = 4, and the cofactor is A_11 = (-1)^(1+1) * M_11 = 1 * 4 = 4.",
+        "marking_scheme": [
+          "Definition of minor (1 mark)",
+          "Definition of cofactor (1 mark)",
+          "Example to illustrate (2 marks)",
+          "Correctness of explanation (1 mark)"
+        ],
+        "topic": "Minor and Cofactor",
+        "is_numerical": false
+      },
+      {
+        "q": "Find the value of x for which the determinant of the matrix A = \\[\\{x, 2}, \\{3, 4}\\}\\] is zero.",
+        "marks": 5,
+        "answer": "Calculation: \n|A| = x*4 - 2*3 \n= 4x - 6 \nFor |A| to be zero, 4x - 6 = 0 \n=> 4x = 6 \n=> x = 6/4 \n=> x = 3/2",
+        "marking_scheme": [
+          "Expansion of determinant (1 mark)",
+          "Equation to find x (1 mark)",
+          "Correct calculation (2 marks)",
+          "Final answer (1 mark)"
+        ],
+        "topic": "Application of Determinants",
+        "is_numerical": true
+      },
+      {
+        "q": "Prove that if two rows or columns of a determinant are identical, then the value of the determinant is zero.",
+        "marks": 5,
+        "answer": "Let's consider a 3x3 determinant with two identical rows. Let A = \\[\\{a, b, c}, \\{a, b, c}, \\{d, e, f}\\}\\]. Expanding the determinant along the first row, we get |A| = a*A_11 + b*A_12 + c*A_13. Since the first two rows are identical, A_11 = A_21, A_12 = A_22, and A_13 = A_23. Therefore, |A| = a*A_11 + b*A_12 + c*A_13 = a*A_21 + b*A_22 + c*A_23 = 0, since the sum of the products of the elements of a row with their respective cofactors is zero.",
+        "marking_scheme": [
+          "Definition of determinant with identical rows (1 mark)",
+          "Expansion of determinant (1 mark)",
+          "Proof that determinant is zero (2 marks)",
+          "Correctness of proof (1 mark)"
+        ],
+        "topic": "Properties of Determinants",
+        "is_numerical": false
+      },
+      {
+        "q": "If A = \\[\\{1, 0, 0}, \\{0, 2, 0}, \\{0, 0, 3}\\}\\] and B = \\[\\{4, 0, 0}, \\{0, 5, 0}, \\{0, 0, 6}\\}\\], find the value of |AB|.",
+        "marks": 5,
+        "answer": "Calculation: \nSince A and B are diagonal matrices, AB is also a diagonal matrix. \nAB = \\[\\{1*4, 0, 0}, \\{0, 2*5, 0}, \\{0, 0, 3*6}\\}\\] \n= \\[\\{4, 0, 0}, \\{0, 10, 0}, \\{0, 0, 18}\\}\\] \n|AB| = 4*10*18 \n= 720",
+        "marking_scheme": [
+          "Multiplication of matrices (2 marks)",
+          "Expansion of determinant (1 mark)",
+          "Correct calculation (1 mark)",
+          "Final answer (1 mark)"
+        ],
+        "topic": "Multiplication of Matrices and Determinants",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}
