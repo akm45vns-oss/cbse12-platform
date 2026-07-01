@@ -612,24 +612,12 @@ export const ChapterView = memo(function ChapterView({
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                 
                 <button
-                  onClick={() => openReader("Chapter Objectives", () => renderLearningObjectives(n.learning_objectives))}
-                  style={{ width: "100%", border: "none", background: "white", borderRadius: 16, padding: 16, display: "flex", gap: 12, alignItems: "center", textAlign: "left", boxShadow: "0 2px 8px rgba(0,0,0,0.03)" }}
-                >
-                  <div style={{ width: 40, height: 40, background: "#ecfdf5", color: "#10b981", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>🎯</div>
-                  <div style={{ flex: 1 }}>
-                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 1: Learning Objectives</div>
-                    <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>Why study this chapter & CBSE board expectations.</div>
-                  </div>
-                  <span style={{ color: "#94a3b8" }}>→</span>
-                </button>
-
-                <button
                   onClick={() => openReader("Detailed Study Guide", () => renderMarkdown(n.detailed_notes, subject, selectedClass))}
                   style={{ width: "100%", border: "none", background: "white", borderRadius: 16, padding: 16, display: "flex", gap: 12, alignItems: "center", textAlign: "left", boxShadow: "0 2px 8px rgba(0,0,0,0.03)" }}
                 >
                   <div style={{ width: 40, height: 40, background: "#f5f3ff", color: "#7c3aed", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>📚</div>
                   <div style={{ flex: 1 }}>
-                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 2: Detailed Study Guide</div>
+                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 1: Detailed Study Guide</div>
                     <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>The core notes, derivations, and comprehensive topics.</div>
                   </div>
                   {notesRead && <span style={{ color: "#16a34a", fontSize: 14, fontWeight: 800 }}>✓</span>}
@@ -642,7 +630,7 @@ export const ChapterView = memo(function ChapterView({
                 >
                   <div style={{ width: 40, height: 40, background: "#fffbeb", color: "#f59e0b", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>💡</div>
                   <div style={{ flex: 1 }}>
-                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 3: Important Concepts</div>
+                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 2: Important Concepts</div>
                     <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>Gauss's law, superposition principles, high-weightage rules.</div>
                   </div>
                   <span style={{ color: "#94a3b8" }}>→</span>
@@ -654,7 +642,7 @@ export const ChapterView = memo(function ChapterView({
                 >
                   <div style={{ width: 40, height: 40, background: "#eff6ff", color: "#3b82f6", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>🧮</div>
                   <div style={{ flex: 1 }}>
-                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 4: Formulas & Derivations</div>
+                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 3: Formulas & Derivations</div>
                     <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>Quick equations sheet, variables dictionary, and SI units.</div>
                   </div>
                   <span style={{ color: "#94a3b8" }}>→</span>
@@ -666,7 +654,7 @@ export const ChapterView = memo(function ChapterView({
                 >
                   <div style={{ width: 40, height: 40, background: "#fdf2f8", color: "#ec4899", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>📖</div>
                   <div style={{ flex: 1 }}>
-                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 5: Glossary & Definitions</div>
+                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 4: Glossary & Definitions</div>
                     <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>Must-remember definitions and examples for boards.</div>
                   </div>
                   <span style={{ color: "#94a3b8" }}>→</span>
