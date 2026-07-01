@@ -234,6 +234,113 @@ function SubjectivePractice({ data, title, type }) {
   );
 }
 
+// ─── Learning Objectives renderer ─────────────────────────────────────────────
+function renderLearningObjectives(data) {
+  if (!data) return <p style={{ color: "#94a3b8" }}>No objectives available.</p>;
+  const bloom = data.bloom_levels || {};
+  const levels = [
+    { key: "remember", label: "Remember", icon: "🧠", color: "#4f46e5", bg: "#ede9fe" },
+    { key: "understand", label: "Understand", icon: "💡", color: "#0891b2", bg: "#e0f2fe" },
+    { key: "apply", label: "Apply", icon: "🔧", color: "#16a34a", bg: "#dcfce7" },
+    { key: "analyze", label: "Analyze", icon: "🔍", color: "#d97706", bg: "#fef3c7" },
+  ].filter(l => bloom[l.key]?.length);
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+      {levels.map((lvl, idx) => (
+        <div key={idx} style={{ background: "white", borderRadius: 14, border: "1px solid #e2e8f0", overflow: "hidden" }}>
+          <div style={{ background: lvl.bg, padding: "8px 16px", borderBottom: `2px solid ${lvl.color}22` }}>
+            <span style={{ fontWeight: 800, color: lvl.color, fontSize: 13 }}>{lvl.icon} Bloom's: {lvl.label}</span>
+          </div>
+          <div style={{ padding: "10px 16px" }}>
+            {bloom[lvl.key].map((obj, oi) => (
+              <div key={oi} style={{ display: "flex", gap: 8, marginBottom: 6 }}>
+                <span style={{ color: lvl.color, fontWeight: 800, flexShrink: 0 }}>→</span>
+                <span style={{ fontSize: 13, color: "#374151", lineHeight: 1.6 }}>{obj}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+      {data.board_exam_objectives?.length > 0 && (
+        <div style={{ background: "#fef3c7", borderRadius: 14, border: "1.5px solid #fde68a", padding: "12px 16px" }}>
+          <div style={{ fontWeight: 800, color: "#92400e", fontSize: 12, textTransform: "uppercase", letterSpacing: "0.07em", marginBottom: 8 }}>🏆 Board Exam Focus</div>
+          {data.board_exam_objectives.map((obj, oi) => (
+            <div key={oi} style={{ display: "flex", gap: 8, marginBottom: 5 }}>
+              <span style={{ color: "#d97706", fontWeight: 800 }}>✦</span>
+              <span style={{ fontSize: 13, color: "#374151" }}>{obj}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Important Concepts renderer ──────────────────────────────────────────────
+function renderImportantConcepts(data) {
+  if (!data?.concepts?.length) return <p style={{ color: "#94a3b8" }}>No important concepts available.</p>;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+      {data.concepts.map((c, idx) => {
+        const style = CONCEPT_COLORS[c.category] || { bg: "#f8fafc", border: "#e2e8f0", color: "#374151", icon: "📌" };
+        return (
+          <div key={idx} style={{ background: style.bg, borderRadius: 12, border: `1.5px solid ${style.border}`, padding: "12px 16px" }}>
+            <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 6 }}>
+              <span style={{ fontSize: 16 }}>{style.icon}</span>
+              <span style={{ fontSize: 10, fontWeight: 800, color: style.color, textTransform: "uppercase", letterSpacing: "0.07em" }}>{c.category}</span>
+            </div>
+            <div style={{ fontWeight: 700, fontSize: 14, color: "#0f172a", marginBottom: 4 }}>{c.title}</div>
+            <div style={{ fontSize: 13, color: "#374151", lineHeight: 1.7 }}>{c.description}</div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ─── Glossary Definitions renderer ────────────────────────────────────────────
+function renderDefinitions(data) {
+  if (!data?.definitions?.length) return <p style={{ color: "#94a3b8" }}>No definitions available.</p>;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+      {data.definitions.map((def, idx) => (
+        <div key={idx} style={{ background: "white", borderRadius: 14, border: "1px solid #e2e8f0", overflow: "hidden", boxShadow: "0 2px 6px rgba(0,0,0,0.03)" }}>
+          <div style={{ background: "linear-gradient(90deg,#4f46e5,#818cf8)", padding: "8px 16px" }}>
+            <span style={{ color: "white", fontWeight: 700, fontSize: 14 }}>📖 {def.term}</span>
+          </div>
+          <div style={{ padding: "10px 16px" }}>
+            <p style={{ margin: "0 0 8px", color: "#374151", fontSize: 14, lineHeight: 1.7 }}>{def.definition}</p>
+            {def.example && <div style={{ background: "#f8fafc", padding: "7px 12px", borderRadius: 8, fontSize: 13, color: "#64748b", borderLeft: "3px solid #818cf8" }}><strong>Example:</strong> {def.example}</div>}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// ─── Formula Sheet renderer ───────────────────────────────────────────────────
+function renderFormulas(data) {
+  if (!data?.formulas?.length) return <p style={{ color: "#94a3b8" }}>No formulas available.</p>;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+      {data.formulas.map((f, idx) => (
+        <div key={idx} style={{ background: "#f0fdf4", borderRadius: 14, border: "1.5px solid #bbf7d0", overflow: "hidden" }}>
+          <div style={{ padding: "9px 16px", borderBottom: "1px solid #bbf7d0", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <span style={{ fontWeight: 800, color: "#15803d", fontSize: 14 }}>⚗️ {f.name}</span>
+            <span style={{ fontSize: 10, background: "#dcfce7", color: "#16a34a", padding: "3px 8px", borderRadius: 99, fontWeight: 700 }}>Formula</span>
+          </div>
+          <div style={{ padding: "12px 16px" }}>
+            <div style={{ background: "white", padding: "11px 16px", borderRadius: 10, fontFamily: "monospace", fontSize: 15, color: "#15803d", marginBottom: 10, border: "1px dashed #86efac", textAlign: "center", fontWeight: 700 }}>{f.formula}</div>
+            {f.variables && <p style={{ margin: "0 0 4px", color: "#475569", fontSize: 13 }}><strong>Variables: </strong>{f.variables}</p>}
+            {f.units && <p style={{ margin: "0 0 4px", color: "#475569", fontSize: 13 }}><strong>Units: </strong>{f.units}</p>}
+            {f.notes && <p style={{ margin: 0, color: "#64748b", fontSize: 13, fontStyle: "italic" }}>{f.notes}</p>}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 // ─── Main Component ───────────────────────────────────────────────────────────
 export const ChapterView = memo(function ChapterView({
   chapter, subject, selectedClass, curriculumData, notesRead, quizBest, availableSets = [], onStartQuiz, theme
@@ -505,7 +612,7 @@ export const ChapterView = memo(function ChapterView({
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                 
                 <button
-                  onClick={() => openReader("Chapter Objectives", () => renderMarkdown(JSON.stringify(n.learning_objectives || {}), subject, selectedClass))}
+                  onClick={() => openReader("Chapter Objectives", () => renderLearningObjectives(n.learning_objectives))}
                   style={{ width: "100%", border: "none", background: "white", borderRadius: 16, padding: 16, display: "flex", gap: 12, alignItems: "center", textAlign: "left", boxShadow: "0 2px 8px rgba(0,0,0,0.03)" }}
                 >
                   <div style={{ width: 40, height: 40, background: "#ecfdf5", color: "#10b981", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>🎯</div>
@@ -530,7 +637,7 @@ export const ChapterView = memo(function ChapterView({
                 </button>
 
                 <button
-                  onClick={() => openReader("Important Board Concepts", () => renderMarkdown(JSON.stringify(n.important_concepts || {}), subject, selectedClass))}
+                  onClick={() => openReader("Important Board Concepts", () => renderImportantConcepts(n.important_concepts))}
                   style={{ width: "100%", border: "none", background: "white", borderRadius: 16, padding: 16, display: "flex", gap: 12, alignItems: "center", textAlign: "left", boxShadow: "0 2px 8px rgba(0,0,0,0.03)" }}
                 >
                   <div style={{ width: 40, height: 40, background: "#fffbeb", color: "#f59e0b", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>💡</div>
@@ -542,7 +649,7 @@ export const ChapterView = memo(function ChapterView({
                 </button>
 
                 <button
-                  onClick={() => openReader("Formula Sheet & Units", () => renderMarkdown(JSON.stringify(n.formula_sheet || {}), subject, selectedClass))}
+                  onClick={() => openReader("Formula Sheet & Units", () => renderFormulas(n.formula_sheet))}
                   style={{ width: "100%", border: "none", background: "white", borderRadius: 16, padding: 16, display: "flex", gap: 12, alignItems: "center", textAlign: "left", boxShadow: "0 2px 8px rgba(0,0,0,0.03)" }}
                 >
                   <div style={{ width: 40, height: 40, background: "#eff6ff", color: "#3b82f6", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>🧮</div>
@@ -554,7 +661,7 @@ export const ChapterView = memo(function ChapterView({
                 </button>
 
                 <button
-                  onClick={() => openReader("Key Glossary Definitions", () => renderMarkdown(JSON.stringify(n.key_definitions || {}), subject, selectedClass))}
+                  onClick={() => openReader("Key Glossary Definitions", () => renderDefinitions(n.key_definitions))}
                   style={{ width: "100%", border: "none", background: "white", borderRadius: 16, padding: 16, display: "flex", gap: 12, alignItems: "center", textAlign: "left", boxShadow: "0 2px 8px rgba(0,0,0,0.03)" }}
                 >
                   <div style={{ width: 40, height: 40, background: "#fdf2f8", color: "#ec4899", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>📖</div>
