@@ -341,6 +341,25 @@ function renderFormulas(data) {
   );
 }
 
+// ─── NCERT Summary renderer ───────────────────────────────────────────────────
+function renderNcertSummary(data, subject, selectedClass) {
+  if (!data) return <p style={{ color: "#94a3b8" }}>No NCERT summary available.</p>;
+  if (data.markdown || typeof data === "string") return renderMarkdown(data, subject, selectedClass);
+  if (data.points?.length) {
+    return (
+      <ul style={{ margin: 0, paddingLeft: 0, listStyleType: "none", display: "flex", flexDirection: "column", gap: 10 }}>
+        {data.points.map((pt, idx) => (
+          <li key={idx} style={{ background: "white", borderRadius: 12, padding: "10px 16px", border: "1px solid #e2e8f0", display: "flex", gap: 10 }}>
+            <span style={{ background: "#4f46e5", color: "white", borderRadius: "50%", width: 22, height: 22, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 800 }}>{idx + 1}</span>
+            <span style={{ fontSize: 14, color: "#374151", lineHeight: 1.7 }} dangerouslySetInnerHTML={{ __html: inlineParse(pt) }} />
+          </li>
+        ))}
+      </ul>
+    );
+  }
+  return renderMarkdown(JSON.stringify(data), subject, selectedClass);
+}
+
 // ─── Main Component ───────────────────────────────────────────────────────────
 export const ChapterView = memo(function ChapterView({
   chapter, subject, selectedClass, curriculumData, notesRead, quizBest, availableSets = [], onStartQuiz, theme
@@ -596,35 +615,30 @@ export const ChapterView = memo(function ChapterView({
           {activeTab === "learn" && (
             <div style={{ display: "flex", flexDirection: "column", gap: 12, animation: "fadeIn 0.2s" }}>
               
-              {/* Introduction card */}
-              {n.ncert_summary && (
-                <div style={{ background: "#eff6ff", borderRadius: 16, border: "1px solid #bfdbfe", padding: 16 }}>
-                  <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 6 }}>
-                    <span style={{ fontSize: 16 }}>📝</span>
-                    <span style={{ fontSize: 11, fontWeight: 800, color: "#1d4ed8", letterSpacing: "0.06em", textTransform: "uppercase" }}>NCERT Introduction Summary</span>
-                  </div>
-                  <p style={{ fontSize: 13.5, color: "#1e40af", lineHeight: 1.6, margin: 0 }}>
-                    {(() => {
-                      const raw = typeof n.ncert_summary === "string" ? n.ncert_summary : n.ncert_summary.markdown || "";
-                      if (!raw) return "Get a fast foundation with this condensed NCERT overview.";
-                      const lines = raw.split("\n").map(l => l.trim());
-                      const preview = lines.find(l => l && !l.startsWith("#") && !l.startsWith("-") && !l.startsWith("*") && !l.startsWith("---") && !l.startsWith("|"));
-                      return preview || "Get a fast foundation with this condensed NCERT overview.";
-                    })()}
-                  </p>
-                </div>
-              )}
-
               {/* Study Timeline checklist */}
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                 
+                {n.ncert_summary && (
+                  <button
+                    onClick={() => openReader("NCERT Summary", () => renderNcertSummary(n.ncert_summary, subject, selectedClass))}
+                    style={{ width: "100%", border: "none", background: "white", borderRadius: 16, padding: 16, display: "flex", gap: 12, alignItems: "center", textAlign: "left", boxShadow: "0 2px 8px rgba(0,0,0,0.03)" }}
+                  >
+                    <div style={{ width: 40, height: 40, background: "#eff6ff", color: "#2563eb", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>📝</div>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 1: NCERT Summary</div>
+                      <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>Quick textbook foundation summary.</div>
+                    </div>
+                    <span style={{ color: "#94a3b8" }}>→</span>
+                  </button>
+                )}
+
                 <button
                   onClick={() => openReader("Detailed Study Guide", () => renderMarkdown(n.detailed_notes, subject, selectedClass))}
                   style={{ width: "100%", border: "none", background: "white", borderRadius: 16, padding: 16, display: "flex", gap: 12, alignItems: "center", textAlign: "left", boxShadow: "0 2px 8px rgba(0,0,0,0.03)" }}
                 >
                   <div style={{ width: 40, height: 40, background: "#f5f3ff", color: "#7c3aed", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>📚</div>
                   <div style={{ flex: 1 }}>
-                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 1: Detailed Study Guide</div>
+                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 2: Detailed Study Guide</div>
                     <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>The core notes, derivations, and comprehensive topics.</div>
                   </div>
                   {notesRead && <span style={{ color: "#16a34a", fontSize: 14, fontWeight: 800 }}>✓</span>}
@@ -637,7 +651,7 @@ export const ChapterView = memo(function ChapterView({
                 >
                   <div style={{ width: 40, height: 40, background: "#fffbeb", color: "#f59e0b", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>💡</div>
                   <div style={{ flex: 1 }}>
-                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 2: Important Concepts</div>
+                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 3: Important Concepts</div>
                     <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>Gauss's law, superposition principles, high-weightage rules.</div>
                   </div>
                   <span style={{ color: "#94a3b8" }}>→</span>
@@ -649,7 +663,7 @@ export const ChapterView = memo(function ChapterView({
                 >
                   <div style={{ width: 40, height: 40, background: "#eff6ff", color: "#3b82f6", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>🧮</div>
                   <div style={{ flex: 1 }}>
-                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 3: Formulas & Derivations</div>
+                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 4: Formulas & Derivations</div>
                     <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>Quick equations sheet, variables dictionary, and SI units.</div>
                   </div>
                   <span style={{ color: "#94a3b8" }}>→</span>
@@ -661,7 +675,7 @@ export const ChapterView = memo(function ChapterView({
                 >
                   <div style={{ width: 40, height: 40, background: "#fdf2f8", color: "#ec4899", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>📖</div>
                   <div style={{ flex: 1 }}>
-                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 4: Glossary & Definitions</div>
+                    <div style={{ fontSize: 14, fontWeight: 800, color: "#0f172a" }}>Step 5: Glossary & Definitions</div>
                     <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>Must-remember definitions and examples for boards.</div>
                   </div>
                   <span style={{ color: "#94a3b8" }}>→</span>
