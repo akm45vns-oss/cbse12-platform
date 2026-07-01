@@ -43,12 +43,10 @@ High school students, specifically CBSE Class 11 and Class 12 board exam aspiran
 
 ---
 
-# Current Development State
-
-- **Current Milestone**: Multi-Class compatibility (Class 11 + Class 12) Content Generation Phase.
+- **Current Milestone**: Multi-Class compatibility (Class 11 + Class 12) Content Generation Phase & Chapter Page Redesign.
 - **Completion Percentage**: 99.4% (Class 12 — 2,714 of 2,730 files done. 16 files remaining).
-- **Current Sprint**: Final edge-case content generation for Class 12.
-- **Last Completed Task**: Pipeline manually stopped at 2,714 completed. Successfully generated `long_answer` for Physics/Moving Charges and Magnetism.
+- **Current Sprint**: Final edge-case content generation for Class 12 & UX Polish.
+- **Last Completed Task**: Redesigned `ChapterView.jsx` to organize 15 raw content files into 4 student-centric views: Learn, Practice, Quick Revision, and Study Planner.
 - **Current Task**: PAUSED. 16 stubborn Class 12 files remain (all `detailed_notes` type, hitting 800-word validation floor or Groq rate limits).
 - **Next Task**: Resume `node scripts/auto_generate.js` when Groq API rate limits reset to push the final 16 files.
 - **Blocked Tasks**: None.
@@ -214,6 +212,12 @@ Four primary tables manage user state, progress, and static content:
 ---
 
 # Recent Changes
+
+### 2026-07-02
+- **Files**: `src/components/views/ChapterView.jsx` [MODIFY]
+- **Reason**: Redesign the Chapter Hub page to follow real student study workflows instead of exposing raw database content types.
+- **Summary**: Grouped 15 raw generated JSON file formats into 4 distinct, highly-interactive sections: 📖 **Learn** (Learning Objectives, Detailed Study Guide, NCERT Summary, Core Concepts, formulas, definitions) with an inline modal-based Lightbox reader, 📝 **Practice** (interactive MCQs/Case Studies linked to quiz systems, subjective Q&As using a tap-to-reveal model answer selector), ⚡ **Quick Revision** (short notes, quick formula sheets, memory tricks, common mistakes cards), and 📅 **Study Planner** (time-budget progress bar allocations, suggested session timelines, prep strategy tips).
+- **Impact**: Maximizes study efficiency, touch-target ergonomics on mobile viewports, and overall platform engagement.
 
 ### 2026-07-01
 - **Files**: `scripts/check_all_files.js` [NEW], `scripts/heal_database.js` [NEW]
