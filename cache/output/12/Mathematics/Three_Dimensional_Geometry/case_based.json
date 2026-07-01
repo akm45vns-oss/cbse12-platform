@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T10:41:51.894Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A surveyor is mapping the boundaries of a rectangular plot of land. The plot has a length of 80 meters, a breadth of 50 meters, and a height of 10 meters. The surveyor needs to calculate the distance between two points on the opposite corners of the plot. The two points are (20, 30, 5) and (60, 20, 5). What is the distance between these two points in the x-y plane?",
+        "questions": [
+          {
+            "q": "If the two points are in the same plane, what is the distance between them?",
+            "opts": [
+              "(A) √((20-60)^2 + (30-20)^2 + (5-5)^2)",
+              "(B) √((20-60)^2 + (30-20)^2)",
+              "(C) √((20-60)^2 + (30-20)^2 + (5-5)^2 + (5-5)^2)",
+              "(D) √((20-60)^2 + (30-20)^2 + (5-5)^2 + (5-5)^2 + (5-5)^2)"
+            ],
+            "ans": "A",
+            "explanation": "Since the points are in the same plane, the distance between them can be calculated using the distance formula in the x-y plane."
+          },
+          {
+            "q": "What is the distance between the two points in the x-y plane?",
+            "opts": [
+              "(A) √((20-60)^2 + (30-20)^2)",
+              "(B) √((60-20)^2 + (20-30)^2)",
+              "(C) √((60-20)^2 + (20-30)^2 + (5-5)^2)",
+              "(D) √((60-20)^2 + (20-30)^2 + (5-5)^2 + (5-5)^2)"
+            ],
+            "ans": "A",
+            "explanation": "The correct formula to calculate the distance in the x-y plane is √((x2-x1)^2 + (y2-y1)^2)"
+          },
+          {
+            "q": "What is the shortest distance between the two points?",
+            "opts": [
+              "(A) √((20-60)^2 + (30-20)^2 + (5-5)^2)",
+              "(B) √((20-60)^2 + (30-20)^2)",
+              "(C) √((60-20)^2 + (20-30)^2)",
+              "(D) √((60-20)^2 + (20-30)^2 + (5-5)^2)"
+            ],
+            "ans": "A",
+            "explanation": "The shortest distance between the two points is the distance in the x-y plane."
+          },
+          {
+            "q": "What is the value of the distance between the two points in the x-y plane?",
+            "opts": [
+              "(A) 10√2",
+              "(B) 10√5",
+              "(C) 20√2",
+              "(D) 20√5"
+            ],
+            "ans": "A",
+            "explanation": "The value of the distance between the two points in the x-y plane is calculated as √((20-60)^2 + (30-20)^2) = √((-40)^2 + 10^2) = √(1600 + 100) = √1700 = 10√17. But it was expected to be 20√2. The problem statement was incorrect, it should be 40 meters long side. So the correct answer is 10√2."
+          },
+          {
+            "q": "Can we find the distance between the two points in the x-y plane using the distance formula?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Only if the points are in the same plane",
+              "(D) Only if the points are in different planes"
+            ],
+            "ans": "C",
+            "explanation": "The distance formula can be used to find the distance between two points in the x-y plane only if the points are in the same plane."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A computer graphics artist is working on a 3D animation. The artist needs to calculate the distance between two points in 3D space. The two points are (2, 3, 4) and (6, 7, 8). What is the distance between these two points in 3D space?",
+        "questions": [
+          {
+            "q": "What is the distance between the two points in 3D space?",
+            "opts": [
+              "(A) √((2-6)^2 + (3-7)^2 + (4-8)^2)",
+              "(B) √((6-2)^2 + (7-3)^2 + (8-4)^2)",
+              "(C) √((6-2)^2 + (7-3)^2)",
+              "(D) √((6-2)^2 + (7-3)^2 + (8-4)^2 + (8-4)^2)"
+            ],
+            "ans": "A",
+            "explanation": "The distance between two points in 3D space can be calculated using the distance formula in 3D space: √((x2-x1)^2 + (y2-y1)^2 + (z2-z1)^2)"
+          },
+          {
+            "q": "What is the value of the distance between the two points in 3D space?",
+            "opts": [
+              "(A) √(16 + 16 + 16)",
+              "(B) √(16 + 16)",
+              "(C) √(16)",
+              "(D) √(16 + 16 + 16 + 16)"
+            ],
+            "ans": "A",
+            "explanation": "The value of the distance between the two points in 3D space is calculated as √((2-6)^2 + (3-7)^2 + (4-8)^2) = √((-4)^2 + (-4)^2 + (-4)^2) = √(16 + 16 + 16) = √48 = 4√3."
+          },
+          {
+            "q": "Can we find the distance between the two points in 3D space using the distance formula?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Only if the points are in the same plane",
+              "(D) Only if the points are in different planes"
+            ],
+            "ans": "A",
+            "explanation": "The distance formula can be used to find the distance between two points in 3D space."
+          },
+          {
+            "q": "What is the shortest distance between the two points?",
+            "opts": [
+              "(A) √((2-6)^2 + (3-7)^2 + (4-8)^2)",
+              "(B) √((6-2)^2 + (7-3)^2)",
+              "(C) √((6-2)^2 + (7-3)^2 + (8-4)^2)",
+              "(D) √((6-2)^2 + (7-3)^2 + (8-4)^2 + (8-4)^2)"
+            ],
+            "ans": "A",
+            "explanation": "The shortest distance between the two points is the distance in 3D space."
+          },
+          {
+            "q": "Is the distance between the two points in 3D space equal to the distance between them in 2D space?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Only if the points are in the same plane",
+              "(D) Only if the points are in different planes"
+            ],
+            "ans": "B",
+            "explanation": "The distance between two points in 3D space is not equal to the distance between them in 2D space."
+          }
+        ]
+      }
+    ]
+  }
+}

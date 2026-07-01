@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Accountancy",
+  "chapter": "Cash Flow Statement",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T08:05:48.015Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Net Cash from Operating Activities",
+        "formula": "Net Cash from Operating Activities = Net Profit + Depreciation + Provision for Doubtful Debts + Decrease in Current Assets - Increase in Current Assets - Decrease in Current Liabilities + Increase in Current Liabilities",
+        "variables": "Net Profit, Depreciation, Provision for Doubtful Debts, Current Assets, Current Liabilities",
+        "units": "Rupees",
+        "notes": "To calculate the net cash generated from operating activities"
+      },
+      {
+        "name": "2. Net Cash from Investing Activities",
+        "formula": "Net Cash from Investing Activities = Purchase of Fixed Assets - Sale of Fixed Assets - Investment in Shares/Debentures + Redemption of Shares/Debentures",
+        "variables": "Purchase of Fixed Assets, Sale of Fixed Assets, Investment in Shares/Debentures, Redemption of Shares/Debentures",
+        "units": "Rupees",
+        "notes": "To calculate the net cash used in investing activities"
+      },
+      {
+        "name": "3. Net Cash from Financing Activities",
+        "formula": "Net Cash from Financing Activities = Issue of Shares/Debentures - Redemption of Shares/Debentures + Borrowings - Repayment of Borrowings + Interest Paid",
+        "variables": "Issue of Shares/Debentures, Redemption of Shares/Debentures, Borrowings, Repayment of Borrowings, Interest Paid",
+        "units": "Rupees",
+        "notes": "To calculate the net cash generated from financing activities"
+      },
+      {
+        "name": "4. Increase in Current Assets",
+        "formula": "Increase in Current Assets = Opening Current Assets - Closing Current Assets",
+        "variables": "Opening Current Assets, Closing Current Assets",
+        "units": "Rupees",
+        "notes": "To calculate the increase in current assets"
+      },
+      {
+        "name": "5. Decrease in Current Assets",
+        "formula": "Decrease in Current Assets = Closing Current Assets - Opening Current Assets",
+        "variables": "Opening Current Assets, Closing Current Assets",
+        "units": "Rupees",
+        "notes": "To calculate the decrease in current assets"
+      },
+      {
+        "name": "6. Increase in Current Liabilities",
+        "formula": "Increase in Current Liabilities = Closing Current Liabilities - Opening Current Liabilities",
+        "variables": "Opening Current Liabilities, Closing Current Liabilities",
+        "units": "Rupees",
+        "notes": "To calculate the increase in current liabilities"
+      },
+      {
+        "name": "7. Decrease in Current Liabilities",
+        "formula": "Decrease in Current Liabilities = Opening Current Liabilities - Closing Current Liabilities",
+        "variables": "Opening Current Liabilities, Closing Current Liabilities",
+        "units": "Rupees",
+        "notes": "To calculate the decrease in current liabilities"
+      },
+      {
+        "name": "8. Net Change in Cash and Cash Equivalents",
+        "formula": "Net Change in Cash and Cash Equivalents = Net Cash from Operating Activities + Net Cash from Investing Activities + Net Cash from Financing Activities",
+        "variables": "Net Cash from Operating Activities, Net Cash from Investing Activities, Net Cash from Financing Activities",
+        "units": "Rupees",
+        "notes": "To calculate the net change in cash and cash equivalents"
+      },
+      {
+        "name": "9. Opening Cash and Cash Equivalents",
+        "formula": "Opening Cash and Cash Equivalents = Previous Year's Closing Cash and Cash Equivalents",
+        "variables": "Previous Year's Closing Cash and Cash Equivalents",
+        "units": "Rupees",
+        "notes": "To determine the opening cash and cash equivalents"
+      },
+      {
+        "name": "10. Closing Cash and Cash Equivalents",
+        "formula": "Closing Cash and Cash Equivalents = Opening Cash and Cash Equivalents + Net Change in Cash and Cash Equivalents",
+        "variables": "Opening Cash and Cash Equivalents, Net Change in Cash and Cash Equivalents",
+        "units": "Rupees",
+        "notes": "To calculate the closing cash and cash equivalents"
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Wave Optics",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T11:46:10.622Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A beam of light consisting of two wavelengths 6500 Å and 5200 Å is used to obtain a spectrum. Which of the following is the correct order of spectrum?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Red, Orange, Yellow, Green, Blue, Indigo, Violet",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Derive the expression for the focal length of a refracting surface using the principle of refraction.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Let 'u' and 'v' be the object and image distances from the refracting surface. The angle of incidence and the angle of refraction are θ1 and θ2 respectively. Using the principle of refraction, we can write: (μsinθ1) = (sinθ2) ... (i) Differentiating eq. (i) w.r.t. θ2, we get: μcosθ1(cosθ1/dθ1) = cosθ2/dθ2 Differentiating eq. (i) w.r.t. u, we get: μcosθ1(1/dθ1) = -v(μcosθ2(1/dθ2)) Using the relation: 1/u + 1/v = (μ-1)/R, we get: 1/v = (μ-1)/R - 1/u",
+        "year_pattern": "2018-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "A beam of light consisting of two wavelengths 6500 Å and 5200 Å is used to obtain a spectrum. What is the radius of curvature of the convex surface of the lens used to focus the spectrum on a screen, if the distance between the lens and the screen is 120 cm?",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "Using the lens formula: 1/f = 1/do + 1/di, we can write: 1/f = 1/do + 1/di = 1/120 + 1/di, where di is the image distance. The image distance is given by: di = R/μ, where R is the radius of curvature of the lens and μ is the refractive index of the lens material. Substituting the values, we get: 1/f = 1/120 + 1/(R/μ) = 1/120 + μ/R ... (i) Using the relation: μ = 1 + (1/VR), where V is the velocity of light in the lens material and R is the radius of curvature, we can write: μ = 1 + (1/VR) = 1 + (1/R)(1/VR) = 1 + (1/R)(3*10^8/3*10^8) = 1 + 1/R = 2/R ... (ii) Substituting the value of μ from eq. (ii) into eq. (i), we get: 1/f = 1/120 + 1/(2R) = 1/120 + 1/(2*120*2) = 1/120 + 1/480 = 1/(120*4) = 1/(480) = 1/f = 1/240",
+        "year_pattern": "2018-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "What is meant by the term 'dispersion' in the context of wave optics?",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "Dispersion is the phenomenon in which different colours of light have different speeds in a medium.",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "A beam of light consisting of two wavelengths 6500 Å and 5200 Å is used to obtain a spectrum. What is the angular separation between the two spectral lines?",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "Using the relation: dsinθ = (μ-1)/R, we can write: dsinθ = (μ-1)/R = (μ-1)λ/R = (1-1/VR)λ/R = (1-1/R)(3*10^8/3*10^8)λ/R = (1-1/R)λ/R = (1-1/120)λ/120 = 0.9925λ/120 = 0.9925*6500/120 = 52.375 Å",
+        "year_pattern": "2018-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "A beam of light consisting of two wavelengths 6500 Å and 5200 Å is used to obtain a spectrum. What is the wavelength of the spectral line corresponding to the angle 30°?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "5500 Å",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Derive an expression for the angular dispersion produced by a prism and a lens combination.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Let 'i' be the angle of incidence and 'e' be the angle of emergence of the prism. The angle of deviation 'δ' is given by: δ = (i-e) The angular dispersion 'dθ' produced by the prism is given by: dθ = (i-e) = δ Let 'L' be the length of the lens and 'R' be the radius of curvature of the lens. The image distance 'di' for the lens is given by: di = L/R The angle of incidence 'i' for the lens is given by: i = tan^-1(di/L) = tan^-1(L/R/L) = tan^-1(1/R) The angle of emergence 'e' for the lens is given by: e = tan^-1(di/L) = tan^-1(L/R/L) = tan^-1(1/R) The angle of deviation 'δ' for the lens is given by: δ = i-e = tan^-1(1/R) - tan^-1(1/R) = 2tan^-1(1/R) The angular dispersion 'dθ' produced by the lens is given by: dθ = 2tan^-1(1/R) The total angular dispersion 'dθ_total' produced by the prism and the lens combination is given by: dθ_total = dθ + dθ = (i-e) + 2tan^-1(1/R) = δ + 2tan^-1(1/R)",
+        "year_pattern": "2018-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "What is the difference between a converging lens and a diverging lens?",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "A converging lens converges light rays to a point, while a diverging lens diverges light rays.",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is meant by the term 'refractive index' of a medium?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "The ratio of the speed of light in vacuum to the speed of light in the medium.",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "A beam of light is incident on a prism. What is the condition for maximum deviation?",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "The angle of incidence 'i' should be equal to the angle of emergence 'e'.",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

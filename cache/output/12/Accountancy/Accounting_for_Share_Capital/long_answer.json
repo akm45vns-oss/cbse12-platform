@@ -1,0 +1,84 @@
+{
+  "class": "12",
+  "subject": "Accountancy",
+  "chapter": "Accounting for Share Capital",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T10:19:17.965Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the different types of shares that can be issued by a company and their characteristics. Explain the advantages and disadvantages of each type.",
+        "marks": 5,
+        "answer": "There are two main types of shares: Equity Shares and Preference Shares.",
+        "marking_scheme": [
+          "Explain the characteristics of Equity Shares (1 mark)",
+          "Explain the characteristics of Preference Shares (1 mark)",
+          "Explain the advantages and disadvantages of Equity Shares (1 mark)",
+          "Explain the advantages and disadvantages of Preference Shares (2 marks)"
+        ],
+        "topic": "Types of Shares",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the process of issuing shares and the steps involved in it. What are the different methods of issuing shares?",
+        "marks": 5,
+        "answer": "The process of issuing shares involves the following steps: Determination of Issue Price, Preparation of Prospectus, Filing of Documents, and Allotment of Shares.",
+        "marking_scheme": [
+          "Explain the steps involved in issuing shares (2 marks)",
+          "Explain the different methods of issuing shares (3 marks)"
+        ],
+        "topic": "Issue of Shares",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the difference between equity share capital and preference share capital? Explain the accounting treatment for each type of share capital.",
+        "marks": 5,
+        "answer": "Equity share capital is the share capital that is issued to the shareholders and preference share capital is the share capital that has a fixed return.",
+        "marking_scheme": [
+          "Explain the difference between equity share capital and preference share capital (2 marks)",
+          "Explain the accounting treatment for equity share capital (2 marks)",
+          "Explain the accounting treatment for preference share capital (1 mark)"
+        ],
+        "topic": "Accounting Treatment of Share Capital",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the amount of share capital to be transferred to the general reserve when ₹ 1,00,000 is transferred from the profit and loss account to the general reserve.",
+        "marks": 5,
+        "answer": "Calculation: \nShare Capital to be transferred = ₹ 1,00,000\nTotal Share Capital = ₹ 1,00,000\nProportion of General Reserve = ₹ 1,00,000 / ₹ 1,00,000 = 1",
+        "marking_scheme": [
+          "Calculate the proportion of general reserve (2 marks)",
+          "Calculate the amount of share capital to be transferred (3 marks)"
+        ],
+        "topic": "Transfer to General Reserve",
+        "is_numerical": true
+      },
+      {
+        "q": "A company issues 10,000 shares of ₹ 10 each at a premium of ₹ 2 per share. Calculate the total amount of share capital and the amount of share premium received.",
+        "marks": 5,
+        "answer": "Calculation: \nTotal Amount of Share Capital = Number of Shares × Face Value of Each Share\n= 10,000 × ₹ 10\n= ₹ 1,00,000\nAmount of Share Premium = Number of Shares × Premium per Share\n= 10,000 × ₹ 2\n= ₹ 20,000",
+        "marking_scheme": [
+          "Calculate the total amount of share capital (3 marks)",
+          "Calculate the amount of share premium received (2 marks)"
+        ],
+        "topic": "Issue of Shares",
+        "is_numerical": true
+      },
+      {
+        "q": "A company issues 5,000 shares of ₹ 100 each at a discount of ₹ 10 per share. Calculate the amount of share premium to be transferred to the capital redemption reserve.",
+        "marks": 5,
+        "answer": "Calculation: \nNumber of Shares Issued = 5,000\nFace Value of Each Share = ₹ 100\nDiscount per Share = ₹ 10\nTotal Amount of Share Capital = Number of Shares × Face Value of Each Share\n= 5,000 × ₹ 100\n= ₹ 5,00,000\nTotal Discount = Number of Shares × Discount per Share\n= 5,000 × ₹ 10\n= ₹ 50,000\nAmount of Share Premium to be Transferred = Total Discount\n= ₹ 50,000",
+        "marking_scheme": [
+          "Calculate the total amount of share capital (3 marks)",
+          "Calculate the total discount (2 marks)",
+          "Calculate the amount of share premium to be transferred (2 marks)"
+        ],
+        "topic": "Transfer to Capital Redemption Reserve",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

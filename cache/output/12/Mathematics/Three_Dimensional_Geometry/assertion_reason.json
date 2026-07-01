@@ -1,0 +1,122 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T14:58:03.274Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The direction ratios of the line joining the points (1, 2, 3) and (4, 5, 6) are proportional to the difference of their corresponding coordinates.",
+        "reason": "Reason (R): Since the coordinates of the two points are given, we can find the direction ratios by subtracting corresponding coordinates.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the direction ratios of the line joining two points are indeed proportional to the difference of their corresponding coordinates, and the reason given is the correct explanation for this."
+      },
+      {
+        "assertion": "Assertion (A): The equation of a plane passing through the point (1, -1, 2) and parallel to the plane 2x - 3y + 5z = 0 is 2x - 3y + 5z - 11 = 0.",
+        "reason": "Reason (R): Since the given plane is parallel to the required plane, they will have the same normal vector.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the equation of a plane parallel to the given plane will have the same normal vector, and the provided equation of the plane is correct."
+      },
+      {
+        "assertion": "Assertion (A): Any point on the line joining the points (1, -1, 2) and (2, 3, -1) is of the form (λ + 1, - λ + 1, 2λ + 2), where λ is a parameter.",
+        "reason": "Reason (R): Since the coordinates of the two points are given, we can use the section formula to find the coordinates of any point on the line joining them.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the section formula is used to find the coordinates of any point on the line joining two given points, and the given format of the coordinates is correct."
+      },
+      {
+        "assertion": "Assertion (A): The equation of the line passing through the point (1, 2, 3) and having direction ratios proportional to 2, -3, 1 can be written as (x - 1)/2 = (y - 2)/(-3) = (z - 3)/1.",
+        "reason": "Reason (R): Since the direction ratios are proportional to 2, -3, 1, we can use the ratio form to write the equation of the line.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the ratio form is used to write the equation of a line when the direction ratios are proportional, and the given equation is correct."
+      },
+      {
+        "assertion": "Assertion (A): The plane 3x - 2y + 2z = 6 can be written in the intercept form as x/2 - y/3 + z/3 = 1.",
+        "reason": "Reason (R): Since the equation of the plane is given in the general form, we can use the formula to convert it into the intercept form.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the given equation of the plane is not in the correct format to be converted into the intercept form using the formula."
+      },
+      {
+        "assertion": "Assertion (A): The distance of the point (1, 2, 3) from the plane 2x - 3y + 5z = 0 is √(14)/√(34).",
+        "reason": "Reason (R): Since the point and the plane are given, we can use the formula to find the distance between them.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "This option is correct because the given answer is not the correct distance, but the reason given is correct."
+      },
+      {
+        "assertion": "Assertion (A): The equation of the plane passing through the point (1, 2, 3) and having a normal vector <2, -3, 1> is 2x - 3y + z - 6 = 0.",
+        "reason": "Reason (R): Since the point and the normal vector are given, we can use the formula to write the equation of the plane.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the equation of the plane is correct and the reason given is the correct explanation for this."
+      },
+      {
+        "assertion": "Assertion (A): The equation of the line passing through the point (1, 2, 3) and having direction ratios 2, -3, 1 can be written as (x - 1)/2 = (y - 2)/(-3) = (z - 3)/1.",
+        "reason": "Reason (R): Since the direction ratios are given, we can use the ratio form to write the equation of the line.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "This option is correct because the ratio form is used to write the equation of a line when the direction ratios are given, and the given equation is correct."
+      },
+      {
+        "assertion": "Assertion (A): The equation of the line passing through the point (1, 2, 3) and parallel to the line 2x - 3y + z = 0 can be written as 2x - 3y + z - 5 = 0.",
+        "reason": "Reason (R): Since the given line is parallel to the required line, they will have the same direction ratios.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "This option is correct because the given equation of the line is not correct, but the reason given is correct."
+      }
+    ],
+    "total": 9
+  }
+}

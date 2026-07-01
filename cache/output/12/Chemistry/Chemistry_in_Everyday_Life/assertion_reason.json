@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Chemistry in Everyday Life",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T08:43:14.318Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): Soaps are effective for cleaning purposes because they can form micelles around oil droplets.",
+        "reason": "Reason (R): Soaps are sodium and potassium salts of higher fatty acids, which have both hydrophobic and hydrophilic parts.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Soaps can form micelles due to their amphipathic nature, which is correctly explained by the reason."
+      },
+      {
+        "assertion": "Assertion (A): Synthetic detergents are more effective than soaps in hard water.",
+        "reason": "Reason (R): Synthetic detergents do not form insoluble salts with calcium and magnesium ions in hard water.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Synthetic detergents are more effective in hard water because they do not precipitate out as insoluble salts with calcium and magnesium ions."
+      },
+      {
+        "assertion": "Assertion (A): Antiseptics are applied to living tissues to prevent infection.",
+        "reason": "Reason (R): Antiseptics are chemicals that kill or prevent the growth of microorganisms on living tissues.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Antiseptics are applied to living tissues to prevent infection, which is correctly explained by the reason."
+      },
+      {
+        "assertion": "Assertion (A): Disinfectants are used to kill microorganisms on non-living surfaces.",
+        "reason": "Reason (R): Disinfectants are less harmful to living tissues than antiseptics.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "Disinfectants are indeed used to kill microorganisms on non-living surfaces, but the reason provided does not correctly explain this assertion."
+      },
+      {
+        "assertion": "Assertion (A): Analgesics reduce pain without affecting the cause of pain.",
+        "reason": "Reason (R): Analgesics are a type of antimicrobial agent.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "Analgesics do reduce pain without affecting the cause, but the reason provided is incorrect as analgesics are not antimicrobial agents."
+      },
+      {
+        "assertion": "Assertion (A): Antihistamines are used to prevent allergic reactions.",
+        "reason": "Reason (R): Antihistamines block the release of histamine from mast cells.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "Antihistamines are indeed used to prevent allergic reactions, but they work by blocking histamine receptors, not preventing its release."
+      },
+      {
+        "assertion": "Assertion (A): Antibiotics are effective against bacterial infections.",
+        "reason": "Reason (R): Antibiotics are a type of antiviral agent.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "Antibiotics are effective against bacterial infections, but the reason provided is incorrect as antibiotics target bacteria, not viruses."
+      },
+      {
+        "assertion": "Assertion (A): Antacids are used to neutralize excess stomach acid.",
+        "reason": "Reason (R): Antacids are weak bases that neutralize excess acid by forming water and a salt.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "Antacids work by neutralizing excess stomach acid, which is correctly explained by the reason provided."
+      },
+      {
+        "assertion": "Assertion (A): Tranquilizers are used to reduce anxiety and stress.",
+        "reason": "Reason (R): Tranquilizers are a type of analgesic.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "C",
+        "explanation": "Tranquilizers are used to reduce anxiety and stress, but the reason provided is incorrect as tranquilizers are not analgesics."
+      },
+      {
+        "assertion": "Assertion (A): Artificial sweeteners are not metabolized by the body.",
+        "reason": "Reason (R): Artificial sweeteners are used as a replacement for sugar in foods for people with diabetes.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "Artificial sweeteners are indeed not metabolized by the body, and they are used as a sugar replacement, but the reason provided does not explain why they are not metabolized."
+      }
+    ],
+    "total": 10
+  }
+}

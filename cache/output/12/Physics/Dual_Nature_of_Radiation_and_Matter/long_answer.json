@@ -1,0 +1,73 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:21:18.977Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Discuss the properties of wave-particle duality of electron. Explain how this property is demonstrated in the experiment of electron diffraction.",
+        "marks": 5,
+        "answer": "The wave-particle duality of an electron is a fundamental property that it exhibits both wave-like and particle-like behavior. This property is demonstrated in the experiment of electron diffraction. In this experiment, a beam of electrons is passed through a crystal, and the resulting diffraction pattern is observed on a screen. The diffraction pattern shows that the electrons are behaving like waves, with a wavelength that is related to their momentum. This is in contrast to particles, which do not exhibit diffraction. The wave-particle duality of electrons is a key concept in understanding the behavior of matter at the atomic and subatomic level.",
+        "marking_scheme": [
+          "Explain the concept of wave-particle duality (1 mark)",
+          "Describe the setup of the electron diffraction experiment (1 mark)",
+          "Explain the diffraction pattern observed in the experiment (1 mark)",
+          "Relate the diffraction pattern to the wave-like behavior of electrons (2 marks)"
+        ],
+        "topic": "Wave-Particle Duality",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of de Broglie wavelength. Derive an expression for the de Broglie wavelength of a particle in terms of its momentum.",
+        "marks": 5,
+        "answer": "The de Broglie wavelength is the wavelength associated with a particle, such as an electron or a proton. The concept of de Broglie wavelength was first proposed by Louis de Broglie in 1924. The de Broglie wavelength is related to the momentum of the particle by the equation λ = h / p, where λ is the de Broglie wavelength, h is Planck's constant, and p is the momentum of the particle.",
+        "marking_scheme": [
+          "Define the concept of de Broglie wavelength (1 mark)",
+          "Explain the significance of de Broglie wavelength (1 mark)",
+          "Derive the expression for de Broglie wavelength in terms of momentum (3 marks)"
+        ],
+        "topic": "de Broglie Wavelength",
+        "is_numerical": false
+      },
+      {
+        "q": "A metal wire of length 20 cm and mass 50 g is suspended from a fixed support. When a current of 2 A flows through it, the wire is deflected by 10° from its original position. Calculate the magnetic field strength at the center of the wire.",
+        "marks": 5,
+        "answer": "Calculation:\nGiven: L = 20 cm = 0.2 m, m = 50 g = 0.05 kg, I = 2 A, θ = 10°\nWe know that the magnetic field strength at the center of a current-carrying wire is given by B = (μ₀I) / (2πr).\nBut we need to calculate r first. We know that the torque on the wire is given by τ = F x r, where F is the force on the wire due to the magnetic field. Since the wire is deflected by 10°, the torque is given by τ = m x g x L x sin(10°).\nThe force on the wire is given by F = B x I x L. Equating the two expressions for torque, we get B = (m x g x sin(10°)) / (I x L).\nSubstituting the values, we get B = (0.05 x 9.8 x sin(10°)) / (2 x 0.2) = 0.124 T.",
+        "marking_scheme": [
+          "Calculate the torque on the wire (1 mark)",
+          "Calculate the force on the wire (1 mark)",
+          "Calculate the magnetic field strength at the center of the wire (3 marks)"
+        ],
+        "topic": "Magnetic Field and Magnetic Moment",
+        "is_numerical": true
+      },
+      {
+        "q": "A beam of electrons is passed through a double slit and the resulting diffraction pattern is observed on a screen. If the wavelength of the electrons is 0.5 Å and the distance between the slits is 1 mm, calculate the distance between the central maximum and the first minimum.",
+        "marks": 5,
+        "answer": "Calculation:\nGiven: λ = 0.5 Å = 0.5 x 10⁻¹⁰ m, d = 1 mm = 1 x 10⁻³ m\nWe know that the distance between the central maximum and the first minimum is given by x = (2λd) / a, where a is the distance between the slits.\nBut we need to calculate a first. We know that the diffraction pattern is given by the equation dsin(θ) = nλ, where θ is the angle of diffraction and n is an integer.\nThe first minimum occurs at θ = 30°. Substituting this value, we get d x sin(30°) = λ x 1.\nSubstituting the values, we get a = 4 x 10⁻³ m.\nNow, we can calculate the distance between the central maximum and the first minimum using the equation x = (2λd) / a.\nSubstituting the values, we get x = (2 x 0.5 x 10⁻¹⁰ x 1 x 10⁻³) / (4 x 10⁻³) = 0.25 x 10⁻³ m = 0.25 mm.",
+        "marking_scheme": [
+          "Calculate the distance between the slits (1 mark)",
+          "Calculate the distance between the central maximum and the first minimum (4 marks)"
+        ],
+        "topic": "Wave-Particle Duality",
+        "is_numerical": true
+      },
+      {
+        "q": "A proton of mass 1.67 x 10⁻²⁷ kg and charge 1.6 x 10⁻¹⁹ C is accelerated from rest through a potential difference of 100 V. Calculate the speed of the proton after acceleration.",
+        "marks": 5,
+        "answer": "Calculation:\nGiven: m = 1.67 x 10⁻²⁷ kg, q = 1.6 x 10⁻¹⁹ C, V = 100 V\nWe know that the kinetic energy gained by the proton is given by K = qV.\nThe kinetic energy is also given by K = (1/2)mv².\nEquating the two expressions, we get (1/2)mv² = qV.\nSubstituting the values, we get (1/2) x 1.67 x 10⁻²⁷ x v² = 1.6 x 10⁻¹⁹ x 100.\nSolving for v, we get v = √((2 x 1.6 x 10⁻¹⁹ x 100) / (1.67 x 10⁻²⁷)) = 1.18 x 10⁷ m/s.",
+        "marking_scheme": [
+          "Calculate the kinetic energy gained by the proton (1 mark)",
+          "Calculate the speed of the proton after acceleration (4 marks)"
+        ],
+        "topic": "Motion of Charged Particles",
+        "is_numerical": true
+      }
+    ],
+    "total": 5
+  }
+}

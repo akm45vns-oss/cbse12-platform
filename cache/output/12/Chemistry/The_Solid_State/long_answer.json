@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "The Solid State",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:30:29.969Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the difference between amorphous and crystalline solids. Give two examples each.",
+        "marks": 5,
+        "answer": "Amorphous solids have no long-range order in the arrangement of their constituent particles. They do not have a fixed melting point and have a characteristic glassy appearance. Examples include rubber and plastics. Crystalline solids, on the other hand, have a long-range order in the arrangement of their constituent particles. They have a fixed melting point and a characteristic shining appearance. Examples include sugar and salt.",
+        "marking_scheme": [
+          "Explain the difference between amorphous and crystalline solids (1)",
+          "Give two examples each (2)",
+          "Describe the characteristics of each type of solid (2)"
+        ],
+        "topic": "Classification of Solids",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of unit cell and its importance in the study of solids.",
+        "marks": 5,
+        "answer": "A unit cell is the smallest three-dimensional arrangement of particles in a crystal lattice that repeats in all directions to form the crystal. It is the building block of the crystal structure. The importance of the unit cell lies in the fact that it allows us to understand the arrangement of particles in a crystal and predict its physical and chemical properties.",
+        "marking_scheme": [
+          "Define unit cell (1)",
+          "Explain the importance of unit cell (2)",
+          "Describe how unit cell helps in understanding crystal structure (2)"
+        ],
+        "topic": "Unit Cell",
+        "is_numerical": false
+      },
+      {
+        "q": "A metal crystallizes in a face-centered cubic (FCC) lattice with a cell edge length of 400 pm. Calculate the number of atoms per unit cell.",
+        "marks": 5,
+        "answer": "Calculation: The number of atoms per unit cell is given by the formula: number of atoms = (8 x n) / (4 x n), where n is the number of atoms in the corner of the unit cell. Since the lattice is FCC, there are 8 corners and 6 faces in the unit cell. As each corner atom is shared by 8 cells and each face atom is shared by 2 cells, the number of corner atoms per unit cell is 8 x 1/8 = 1 and the number of face atoms per unit cell is 6 x 1/2 = 3. So, the total number of atoms per unit cell = 1 + 3 = 4.",
+        "marking_scheme": [
+          "Identify the type of lattice (1)",
+          "Calculate the number of atoms per unit cell using the formula (2)",
+          "Explain the reasoning behind the calculation (2)"
+        ],
+        "topic": "Number of Atoms per Unit Cell",
+        "is_numerical": true
+      },
+      {
+        "q": "A crystal lattice has a lattice parameter 'a' of 500 pm. If the crystal has a body-centered cubic (BCC) structure, calculate the distance between two adjacent atoms in the same plane.",
+        "marks": 5,
+        "answer": "Calculation: The distance between two adjacent atoms in the same plane is given by the formula: distance = a / √3, where a is the lattice parameter. Substituting the value of a, we get distance = 500 / √3 = 289.8 pm.",
+        "marking_scheme": [
+          "Identify the type of lattice (1)",
+          "Calculate the distance between two adjacent atoms using the formula (2)",
+          "Explain the reasoning behind the calculation (2)"
+        ],
+        "topic": "Distance between Atoms",
+        "is_numerical": true
+      },
+      {
+        "q": "Describe the relationship between lattice energy and the nature of the solid.",
+        "marks": 5,
+        "answer": "Lattice energy is the energy released when a crystal is formed from its constituent atoms. It is a measure of the strength of the bonds between the atoms in the crystal. A higher lattice energy indicates a stronger bond and a more stable crystal. Crystalline solids have a higher lattice energy than amorphous solids. Lattice energy is also related to the type of solid: ionic solids have a higher lattice energy than covalent solids.",
+        "marking_scheme": [
+          "Define lattice energy (1)",
+          "Explain the relationship between lattice energy and the nature of the solid (3)",
+          "Give examples to illustrate the relationship (1)"
+        ],
+        "topic": "Lattice Energy",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the density of a metal with a face-centered cubic (FCC) lattice, if the lattice parameter is 400 pm and the atomic mass of the metal is 100 g/mol.",
+        "marks": 5,
+        "answer": "Calculation: The density of the metal is given by the formula: density = (Z x M) / (N_A x a^3), where Z is the number of atoms per unit cell, M is the atomic mass of the metal, N_A is Avogadro's number, and a is the lattice parameter. Substituting the values, we get density = (4 x 100) / (6.022 x 10^23 x (400 x 10^-10)^3) = 8.97 g/cm^3.",
+        "marking_scheme": [
+          "Identify the type of lattice (1)",
+          "Calculate the density using the formula (3)",
+          "Explain the reasoning behind the calculation (1)"
+        ],
+        "topic": "Density of Solids",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Integrals",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T11:42:20.972Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define the indefinite integral.",
+        "marks": 1,
+        "answer": "The indefinite integral of a function f(x) is denoted by ∫f(x)dx and is defined as the family of all antiderivatives of f(x).",
+        "key_points": [
+          "Indefinite integral",
+          "Antiderivative"
+        ],
+        "topic": "Introduction"
+      },
+      {
+        "q": "State the fundamental theorem of calculus.",
+        "marks": 1,
+        "answer": "The fundamental theorem of calculus states that differentiation and integration are inverse processes.",
+        "key_points": [
+          "Fundamental theorem of calculus",
+          "Inverse processes"
+        ],
+        "topic": "Introduction"
+      },
+      {
+        "q": "What is the standard form of a function whose indefinite integral is known?",
+        "marks": 1,
+        "answer": "The standard form of a function whose indefinite integral is known is ∫f(ax + b)dx.",
+        "key_points": [
+          "Standard form",
+          "Indefinite integral"
+        ],
+        "topic": "Integration by Substitution"
+      },
+      {
+        "q": "Define the definite integral of a function f(x) over the interval [a, b].",
+        "marks": 1,
+        "answer": "The definite integral of a function f(x) over the interval [a, b] is denoted by ∫[a, b]f(x)dx and is defined as the limit of the sum of the areas of the rectangles formed by dividing the area under the curve into n equal parts.",
+        "key_points": [
+          "Definite integral",
+          "Area under the curve"
+        ],
+        "topic": "Definite Integral"
+      },
+      {
+        "q": "State the properties of definite integrals.",
+        "marks": 2,
+        "answer": "The properties of definite integrals are: ∫[a, b]f(x)dx = -∫[b, a]f(x)dx, ∫[a, c]f(x)dx + ∫[c, b]f(x)dx = ∫[a, b]f(x)dx, and ∫[a, a]f(x)dx = 0.",
+        "key_points": [
+          "Properties of definite integrals",
+          "Additive property",
+          "Multiplicative property"
+        ],
+        "topic": "Definite Integral"
+      },
+      {
+        "q": "Find the value of ∫[0, π/2]sin^2x dx.",
+        "marks": 2,
+        "answer": "Using the trigonometric identity sin^2x = (1 - cos2x)/2, we get ∫[0, π/2]sin^2x dx = ∫[0, π/2] (1 - cos2x)/2 dx = [x - (sin2x)/2] from 0 to π/2 = π/4.",
+        "key_points": [
+          "Trigonometric identity",
+          "Integration",
+          "Definite integral"
+        ],
+        "topic": "Definite Integral"
+      },
+      {
+        "q": "Find the value of ∫[0, π/2]xsin^3xdx.",
+        "marks": 3,
+        "answer": "Using integration by parts, we get ∫[0, π/2]xsin^3xdx = x(-cos^3x)/3] from 0 to π/2 - ∫[0, π/2](-cos^3x)dx = (π/2)(1/3) - ∫[0, π/2](-cos^3x)dx.",
+        "key_points": [
+          "Integration by parts",
+          "Trigonometric identity",
+          "Definite integral"
+        ],
+        "topic": "Definite Integral"
+      },
+      {
+        "q": "Find the value of ∫[0, 1]x^3dx.",
+        "marks": 3,
+        "answer": "Using the power rule of integration, we get ∫[0, 1]x^3dx = [x^4/4] from 0 to 1 = 1/4.",
+        "key_points": [
+          "Power rule of integration",
+          "Definite integral"
+        ],
+        "topic": "Definite Integral"
+      },
+      {
+        "q": "Find the length of the curve y = √(1 + x^2) from x = 0 to x = 1.",
+        "marks": 3,
+        "answer": "Using the formula for the length of a curve, we get the length = ∫[0, 1]√(1 + (dy/dx)^2)dx = ∫[0, 1]√(1 + (x^2)/(1 + x^2))dx = ∫[0, 1]dx = 1.",
+        "key_points": [
+          "Length of a curve",
+          "Integration",
+          "Definite integral"
+        ],
+        "topic": "Definite Integral"
+      },
+      {
+        "q": "Find the value of ∫[0, π]sin^2x cos^2xdx.",
+        "marks": 3,
+        "answer": "Using the trigonometric identity sin^2x cos^2x = (1/4)sin^2(2x), we get ∫[0, π]sin^2x cos^2xdx = ∫[0, π] (1/4)sin^2(2x)dx = ∫[0, π] (1/4)(1 - cos4x)/2 dx = (π/16).",
+        "key_points": [
+          "Trigonometric identity",
+          "Integration",
+          "Definite integral"
+        ],
+        "topic": "Definite Integral"
+      },
+      {
+        "q": "Find the area bounded by the curve y = √(1 - x^2) and the x-axis from x = -1 to x = 1.",
+        "marks": 3,
+        "answer": "Using the formula for the area under a curve, we get the area = ∫[0, 1]√(1 - x^2)dx = π/4.",
+        "key_points": [
+          "Area under a curve",
+          "Integration",
+          "Definite integral"
+        ],
+        "topic": "Definite Integral"
+      },
+      {
+        "q": "Find the value of ∫[0, π/2]log sin x dx.",
+        "marks": 3,
+        "answer": "Using integration by parts, we get ∫[0, π/2]log sin x dx = [x log sin x - x cot x] from 0 to π/2 = 0.",
+        "key_points": [
+          "Integration by parts",
+          "Trigonometric identity",
+          "Definite integral"
+        ],
+        "topic": "Definite Integral"
+      },
+      {
+        "q": "Find the value of ∫[0, π/2]sin^4x cos^2xdx.",
+        "marks": 3,
+        "answer": "Using the trigonometric identity sin^4x cos^2x = (1/8)sin^6x, we get ∫[0, π/2]sin^4x cos^2xdx = ∫[0, π/2] (1/8)sin^6x dx = (7π/160).",
+        "key_points": [
+          "Trigonometric identity",
+          "Integration",
+          "Definite integral"
+        ],
+        "topic": "Definite Integral"
+      }
+    ],
+    "total": 13
+  }
+}

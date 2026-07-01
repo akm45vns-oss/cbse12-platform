@@ -1,0 +1,156 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Queue",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:58:52.221Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a queue?",
+        "marks": 1,
+        "answer": "A queue is a First-In-First-Out (FIFO) data structure that allows elements to be added at the end and removed from the front.",
+        "key_points": [
+          "FIFO property",
+          "Addition and removal"
+        ],
+        "topic": "Introduction"
+      },
+      {
+        "q": "State the operations that can be performed on a queue.",
+        "marks": 1,
+        "answer": "The operations that can be performed on a queue are enqueue, dequeue, insert, delete, and display.",
+        "key_points": [
+          "Operations on queue"
+        ],
+        "topic": "Operations"
+      },
+      {
+        "q": "What is the time complexity of enqueue and dequeue operations in a queue?",
+        "marks": 1,
+        "answer": "The time complexity of enqueue is O(1) and the time complexity of dequeue is O(n) in a linked list implementation.",
+        "key_points": [
+          "Time complexity",
+          "Linked list implementation"
+        ],
+        "topic": "Time Complexity"
+      },
+      {
+        "q": "What is the advantage of using a queue over a stack?",
+        "marks": 1,
+        "answer": "The advantage of using a queue over a stack is that it follows the FIFO property, ensuring that elements are processed in the order they are added.",
+        "key_points": [
+          "Advantage of queue",
+          "FIFO property"
+        ],
+        "topic": "Advantages"
+      },
+      {
+        "q": "State the difference between a queue and a stack.",
+        "marks": 1,
+        "answer": "The difference between a queue and a stack is that a queue follows the FIFO property, while a stack follows the LIFO property.",
+        "key_points": [
+          "Difference between queue and stack",
+          "FIFO and LIFO properties"
+        ],
+        "topic": "Differences"
+      },
+      {
+        "q": "What is the use of a queue in real-life scenarios?",
+        "marks": 2,
+        "answer": "A queue is used in various real-life scenarios such as printing documents, job scheduling, and bank transactions. It helps in managing and processing tasks in a systematic and efficient manner.",
+        "key_points": [
+          "Real-life scenarios",
+          "Systematic and efficient processing"
+        ],
+        "topic": "Real-Life Applications"
+      },
+      {
+        "q": "Explain the use of a queue in a printer queue system.",
+        "marks": 2,
+        "answer": "In a printer queue system, a queue is used to manage and process print jobs. When a print job is submitted, it is added to the queue. The printer then processes the jobs in the order they were added, ensuring that the first job is printed first.",
+        "key_points": [
+          "Printer queue system",
+          "Job scheduling"
+        ],
+        "topic": "Real-Life Applications"
+      },
+      {
+        "q": "Explain the use of a queue in a bank transaction system.",
+        "marks": 2,
+        "answer": "In a bank transaction system, a queue is used to manage and process transactions. When a transaction is initiated, it is added to the queue. The system then processes the transactions in the order they were added, ensuring that the first transaction is processed first.",
+        "key_points": [
+          "Bank transaction system",
+          "Transaction processing"
+        ],
+        "topic": "Real-Life Applications"
+      },
+      {
+        "q": "What is the time complexity of the following operations on a queue: (i) enqueue, (ii) dequeue, (iii) display?",
+        "marks": 3,
+        "answer": "The time complexity of the operations on a queue are: (i) enqueue - O(1), (ii) dequeue - O(n) in a linked list implementation, and (iii) display - O(n) in a linked list implementation.",
+        "key_points": [
+          "Time complexity",
+          "Linked list implementation"
+        ],
+        "topic": "Time Complexity"
+      },
+      {
+        "q": "Explain the implementation of a queue using an array.",
+        "marks": 3,
+        "answer": "A queue can be implemented using an array by maintaining two indices, front and rear. The front index points to the front element, and the rear index points to the last element. When an element is added, the rear index is incremented, and when an element is removed, the front index is incremented.",
+        "key_points": [
+          "Array implementation",
+          "Front and rear indices"
+        ],
+        "topic": "Implementation"
+      },
+      {
+        "q": "Explain the implementation of a queue using a linked list.",
+        "marks": 3,
+        "answer": "A queue can be implemented using a linked list by maintaining a pointer to the front element and the last element. When an element is added, a new node is created and added to the rear, and when an element is removed, the front element is removed.",
+        "key_points": [
+          "Linked list implementation",
+          "Front and rear pointers"
+        ],
+        "topic": "Implementation"
+      },
+      {
+        "q": "Explain the advantages and disadvantages of using a queue.",
+        "marks": 3,
+        "answer": "The advantages of using a queue are: efficient use of memory, easy implementation, and suitable for real-time systems. The disadvantages of using a queue are: slow performance for large datasets, and limited functionality.",
+        "key_points": [
+          "Advantages and disadvantages",
+          "Efficient use of memory",
+          "Slow performance"
+        ],
+        "topic": "Advantages and Disadvantages"
+      },
+      {
+        "q": "How is a queue implemented in a programming language like Java?",
+        "marks": 3,
+        "answer": "A queue is implemented in Java using the Queue interface and the LinkedList class. The LinkedList class provides the necessary methods for adding and removing elements from the queue.",
+        "key_points": [
+          "Java implementation",
+          "Queue interface",
+          "LinkedList class"
+        ],
+        "topic": "Implementation in Programming Languages"
+      },
+      {
+        "q": "What are the common applications of a queue in computer science?",
+        "marks": 3,
+        "answer": "The common applications of a queue in computer science are: job scheduling, print queues, bank transactions, and network protocols. A queue is used to manage and process tasks in a systematic and efficient manner.",
+        "key_points": [
+          "Common applications",
+          "Job scheduling",
+          "Print queues"
+        ],
+        "topic": "Applications in Computer Science"
+      }
+    ],
+    "total": 14
+  }
+}

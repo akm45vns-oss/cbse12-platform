@@ -1,0 +1,85 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Current Electricity",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T13:15:53.047Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain Ohm's Law and its limitations. What is the significance of the proportionality constant R in Ohm's Law?",
+        "marks": 5,
+        "answer": "Ohm's Law states that the current flowing through a conductor is directly proportional to the potential difference applied across it, provided the temperature remains constant. Mathematically, it can be expressed as I = V/R, where I is the current, V is the potential difference, and R is the resistance. The proportionality constant R is the resistance of the conductor. The limitations of Ohm's Law are that it does not apply to non-linear conductors, such as semiconductors, and does not take into account the temperature dependence of resistance.",
+        "marking_scheme": [
+          "Explain Ohm's Law (2 marks)",
+          "State the limitations of Ohm's Law (2 marks)",
+          "Define the proportionality constant R (1 mark)"
+        ],
+        "topic": "Ohm's Law and Resistance",
+        "is_numerical": false
+      },
+      {
+        "q": "Derive the expression for electric power consumed in a circuit using Ohm's Law.",
+        "marks": 5,
+        "answer": "Using Ohm's Law, we can write I = V/R. The electric power consumed in a circuit is given by P = VI. Substituting the value of I from Ohm's Law, we get P = (V/R)V = V^2/R. This is the expression for electric power consumed in a circuit.",
+        "marking_scheme": [
+          "Derive the expression for electric power (3 marks)",
+          "Explain the units of electric power (1 mark)",
+          "Define the variables used in the derivation (1 mark)"
+        ],
+        "topic": "Electric Power",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the heating effect of electric current. What factors affect the heating effect of an electric current?",
+        "marks": 5,
+        "answer": "The heating effect of electric current is a consequence of Joule's law, which states that the heat produced in a conductor is directly proportional to the square of the current flowing through it and the resistance of the conductor. The factors that affect the heating effect of an electric current are the resistance of the conductor, the current flowing through it, and the time for which the current flows.",
+        "marking_scheme": [
+          "Explain the heating effect of electric current (3 marks)",
+          "List the factors that affect the heating effect (2 marks)"
+        ],
+        "topic": "Heating Effect of Electric Current",
+        "is_numerical": false
+      },
+      {
+        "q": "A resistor of resistance 20 Ω has a current of 0.5 A flowing through it. What is the potential difference across it?",
+        "marks": 5,
+        "answer": "Using Ohm's Law, we can write V = IR. Substituting the given values, we get V = (0.5 A)(20 Ω) = 10 V.",
+        "marking_scheme": [
+          "Calculate the potential difference (3 marks)",
+          "State the units of potential difference (1 mark)",
+          "Define the variables used in the calculation (1 mark)"
+        ],
+        "topic": "Ohm's Law and Resistance",
+        "is_numerical": true
+      },
+      {
+        "q": "A wire of resistance 15 Ω has a potential difference of 6 V applied across it. What is the current flowing through it?",
+        "marks": 5,
+        "answer": "Using Ohm's Law, we can write I = V/R. Substituting the given values, we get I = (6 V)/(15 Ω) = 0.4 A.",
+        "marking_scheme": [
+          "Calculate the current (3 marks)",
+          "State the units of current (1 mark)",
+          "Define the variables used in the calculation (1 mark)"
+        ],
+        "topic": "Ohm's Law and Resistance",
+        "is_numerical": true
+      },
+      {
+        "q": "A heater of resistance 25 Ω is connected to a 220 V supply. What is the power consumed by the heater?",
+        "marks": 5,
+        "answer": "Using the expression for electric power, we can write P = V^2/R. Substituting the given values, we get P = (220 V)^2/(25 Ω) = 1936 W.",
+        "marking_scheme": [
+          "Calculate the power consumed (3 marks)",
+          "State the units of power (1 mark)",
+          "Define the variables used in the calculation (1 mark)"
+        ],
+        "topic": "Electric Power",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

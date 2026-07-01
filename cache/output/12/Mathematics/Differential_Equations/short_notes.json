@@ -1,0 +1,12 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Differential Equations",
+  "content_type": "short_notes",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T10:06:28.335Z",
+  "version": "1.0",
+  "data": {
+    "markdown": "# 3. SHORT NOTES (QUICK REVISION) - Differential Equations\n\n### Introduction\n- **Differential Equation:** Equation involving a function and its derivatives.\n- **Solution of a Differential Equation:** A function that satisfies the equation.\n- **Order of a Differential Equation:** Highest order derivative involved.\n- **Degree of a Differential Equation:** Power of the highest order derivative.\n\n### Types of Differential Equations\n- **Ordinary Differential Equation (ODE):** Involves derivative with respect to one variable.\n- **Partial Differential Equation (PDE):** Involves partial derivatives with respect to two or more variables.\n- **Homogeneous Differential Equation:** f(x,y) = 0 where f(x,y) is a homogeneous function.\n- **Linear Differential Equation:** y' + P(x)y = Q(x) or y'' + P(x)y' + Q(x)y = R(x).\n\n### General and Particular Solutions\n- **General Solution:** A solution containing arbitrary constants.\n- **Particular Solution:** A solution for specific values of arbitrary constants.\n\n### Methods of Solving Differential Equations\n- **Separation of Variables:** Separate variables to integrate both sides.\n- **Integration Factor:** Used for linear equations to simplify the equation.\n- **Homogeneous Equations:** Use substitution method to reduce the equation to separable form.\n\n### Bernoulli's Equation\n- **Bernoulli's Equation:** y' + P(x)y = Q(x)y^n\n- **Substitution Method:** Use u = y^(1-n) to reduce the equation to a linear equation.\n\n### Euler's Method\n- **Euler's Method:** Numerical method to approximate the solution of a differential equation.\n\n### Applications of Differential Equations\n- **Population Growth:** Model population growth using differential equations.\n- **Electric Circuits:** Use differential equations to analyze electric circuits.\n- **Mechanics:** Use differential equations to describe motion of objects.\n\n### Important Theorems\n- **Lagrange's Linear Differential Equation Theorem:** States that if L(y) is a linear differential equation, then it has a unique solution.\n- **Picard's Iteration Method:** A numerical method to approximate the solution of a differential equation.\n\n### Important Formulas\n- **Slope of a Tangent:** (dy/dx) = (y2 - y1) / (x2 - x1)\n- **Area Under a Curve:** ∫f(x)dx from a to b"
+  }
+}

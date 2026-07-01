@@ -1,0 +1,98 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Vector Algebra",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T10:06:28.490Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Scalar Quantity",
+        "definition": "A physical quantity that has only magnitude but no direction.",
+        "example": "Mass and temperature are examples of scalar quantities."
+      },
+      {
+        "term": "Vector Quantity",
+        "definition": "A physical quantity that has both magnitude and direction.",
+        "example": "Force and displacement are examples of vector quantities."
+      },
+      {
+        "term": "Magnitude of a Vector",
+        "definition": "The length or size of a vector.",
+        "example": "The magnitude of displacement is 10 units."
+      },
+      {
+        "term": "Direction of a Vector",
+        "definition": "The direction in which a vector is acting.",
+        "example": "The direction of force is towards the right."
+      },
+      {
+        "term": "Unit Vector",
+        "definition": "A vector with a magnitude of 1 and any direction.",
+        "example": "The unit vector along the x-axis is denoted by i."
+      },
+      {
+        "term": "Position Vector",
+        "definition": "A vector that points from the origin to a point in a coordinate system.",
+        "example": "The position vector of a point (a, b) is a vector of magnitude √(a^2 + b^2) with direction along the line joining the origin and the point."
+      },
+      {
+        "term": "Zero Vector",
+        "definition": "A vector with zero magnitude and any direction.",
+        "example": "The zero vector is denoted by 0."
+      },
+      {
+        "term": "Equal Vectors",
+        "definition": "Two vectors that have the same magnitude and direction.",
+        "example": "Two vectors with the same magnitude and direction are equal."
+      },
+      {
+        "term": "Negative Vector",
+        "definition": "A vector whose magnitude is the same but direction is opposite to the given vector.",
+        "example": "The negative of a vector is denoted by a dotted circle."
+      },
+      {
+        "term": "Scalar Multiplication",
+        "definition": "The product of a scalar and a vector, which results in a new vector with the same direction as the original vector and a magnitude that is the product of the scalar and the original vector's magnitude.",
+        "example": "The scalar product of 2 and a vector a is 2a."
+      },
+      {
+        "term": "Vector Addition",
+        "definition": "The process of combining two or more vectors to obtain a new vector.",
+        "example": "The sum of two vectors a and b is a + b."
+      },
+      {
+        "term": "Triangle Law of Vector Addition",
+        "definition": "A method of adding two vectors by forming a triangle with the two vectors and taking the third side as the resultant vector.",
+        "example": "The sum of two vectors a and b is equal to the third side of the triangle formed by the two vectors."
+      },
+      {
+        "term": "Parallelogram Law of Vector Addition",
+        "definition": "A method of adding two vectors by forming a parallelogram with the two vectors and taking the diagonal as the resultant vector.",
+        "example": "The sum of two vectors a and b is equal to the diagonal of the parallelogram formed by the two vectors."
+      },
+      {
+        "term": "Midpoint of a Line Segment",
+        "definition": "The point that divides a line segment into two equal parts.",
+        "example": "The midpoint of a line segment AB is given by (x1 + x2)/2, (y1 + y2)/2."
+      },
+      {
+        "term": "Dot Product",
+        "definition": "The product of the magnitudes of two vectors and the cosine of the angle between them.",
+        "example": "The dot product of two vectors a and b is given by a · b = |a| |b| cos(θ)."
+      },
+      {
+        "term": "Cross Product",
+        "definition": "The product of the magnitudes of two vectors and the sine of the angle between them, with the direction perpendicular to both vectors.",
+        "example": "The cross product of two vectors a and b is given by a × b = |a| |b| sin(θ) k."
+      },
+      {
+        "term": "Scalar Triple Product",
+        "definition": "The product of three scalars, which is equal to the volume of the parallelepiped formed by the three vectors.",
+        "example": "The scalar triple product of three vectors a, b, and c is given by a · (b × c)."
+      }
+    ]
+  }
+}

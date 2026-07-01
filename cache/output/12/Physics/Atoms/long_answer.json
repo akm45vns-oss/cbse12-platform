@@ -1,0 +1,84 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Atoms",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T11:46:53.970Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of atomic mass unit (amu) and its relation to the mass of a proton. Also, derive the relation between amu and kg.",
+        "marks": 5,
+        "answer": "The atomic mass unit (amu) is a unit of mass used to express the mass of atoms and molecules. It is defined as one-twelfth the mass of a carbon-12 atom. The mass of a proton is approximately 1.67262 × 10^-27 kg. The relation between amu and kg is derived as follows: 1 amu = mass of 1/12th of a carbon-12 atom = mass of 1 proton. Therefore, 1 amu = 1.67262 × 10^-27 kg.",
+        "marking_scheme": [
+          "Definition of amu and its relation to the mass of a proton (1 mark)",
+          "Derivation of the relation between amu and kg (1 mark)",
+          "Calculation of the mass of 1 amu in kg (3 marks)"
+        ],
+        "topic": "Atomic Mass Unit",
+        "is_numerical": false
+      },
+      {
+        "q": "A uranium-238 nucleus has a mass of 238 u. Calculate its mass in kg.",
+        "marks": 5,
+        "answer": "Calculation: \n1 amu = 1.67262 × 10^-27 kg (given)\nMass of uranium-238 nucleus = 238 amu\nMass of uranium-238 nucleus in kg = 238 amu × 1.67262 × 10^-27 kg/amu\n= 3.973 × 10^-25 kg",
+        "marking_scheme": [
+          "Conversion of mass from u to kg (1 mark)",
+          "Calculation of mass in kg (4 marks)"
+        ],
+        "topic": "Atomic Mass Unit",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of isotopes and isobars. Give two examples of isotopes and two examples of isobars.",
+        "marks": 5,
+        "answer": "Isotopes are atoms of the same element that have the same number of protons but different numbers of neutrons. Isobars are atoms of different elements that have the same mass number but different numbers of protons and neutrons. Two examples of isotopes are carbon-12 and carbon-14. Two examples of isobars are oxygen-16 and magnesium-24.",
+        "marking_scheme": [
+          "Definition of isotopes and isobars (1 mark)",
+          "Examples of isotopes (1 mark)",
+          "Examples of isobars (1 mark)",
+          "Differences between isotopes and isobars (2 marks)"
+        ],
+        "topic": "Isotopes and Isobars",
+        "is_numerical": false
+      },
+      {
+        "q": "The mass of a nitrogen-14 nucleus is 14.00307 u. Calculate its mass in kg.",
+        "marks": 5,
+        "answer": "Calculation: \n1 amu = 1.67262 × 10^-27 kg (given)\nMass of nitrogen-14 nucleus = 14.00307 u\nMass of nitrogen-14 nucleus in kg = 14.00307 u × 1.67262 × 10^-27 kg/amu\n= 2.343 × 10^-26 kg",
+        "marking_scheme": [
+          "Conversion of mass from u to kg (1 mark)",
+          "Calculation of mass in kg (4 marks)"
+        ],
+        "topic": "Atomic Mass Unit",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of atomic number and mass number. Give two examples of elements with the same atomic number but different mass numbers.",
+        "marks": 5,
+        "answer": "The atomic number is the number of protons in an atom's nucleus, and it defines the element. The mass number is the sum of the number of protons and neutrons in an atom's nucleus. Two examples of elements with the same atomic number but different mass numbers are nitrogen-14 and nitrogen-15.",
+        "marking_scheme": [
+          "Definition of atomic number and mass number (1 mark)",
+          "Examples of elements with the same atomic number but different mass numbers (1 mark)",
+          "Differences between atomic number and mass number (3 marks)"
+        ],
+        "topic": "Atomic Number and Mass Number",
+        "is_numerical": false
+      },
+      {
+        "q": "The mass of a carbon-12 nucleus is 12 u. Calculate its mass in kg.",
+        "marks": 5,
+        "answer": "Calculation: \n1 amu = 1.67262 × 10^-27 kg (given)\nMass of carbon-12 nucleus = 12 u\nMass of carbon-12 nucleus in kg = 12 u × 1.67262 × 10^-27 kg/amu\n= 2.006 × 10^-26 kg",
+        "marking_scheme": [
+          "Conversion of mass from u to kg (1 mark)",
+          "Calculation of mass in kg (4 marks)"
+        ],
+        "topic": "Atomic Mass Unit",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

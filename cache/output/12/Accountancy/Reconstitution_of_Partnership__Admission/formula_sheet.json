@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Accountancy",
+  "chapter": "Reconstitution of Partnership: Admission",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:20:38.829Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Gain/Loss on Revaluation",
+        "formula": "Gain/Loss on Revaluation = (Revalued Value of Assets - Original Value of Assets)",
+        "variables": "Revalued Value of Assets, Original Value of Assets",
+        "units": "",
+        "notes": "To be calculated for Revaluation Method when a partner is admitted"
+      },
+      {
+        "name": "Gain/Loss on Revaluation (Partner's Share)",
+        "formula": "Gain/Loss on Revaluation (Partner's Share) = Gain/Loss on Revaluation × Partner's Original Share",
+        "variables": "Gain/Loss on Revaluation, Partner's Original Share",
+        "units": "",
+        "notes": "To be calculated for Revaluation Method when a partner is admitted"
+      },
+      {
+        "name": "Gain/Loss on Revaluation (New Partner's Share)",
+        "formula": "Gain/Loss on Revaluation (New Partner's Share) = Gain/Loss on Revaluation × New Partner's Share",
+        "variables": "Gain/Loss on Revaluation, New Partner's Share",
+        "units": "",
+        "notes": "To be calculated for Revaluation Method when a partner is admitted"
+      },
+      {
+        "name": "Adjustment towards New Partner's Capital",
+        "formula": "Adjustment towards New Partner's Capital = Gain/Loss on Revaluation (New Partner's Share) + Partner's Share of Goodwill",
+        "variables": "Gain/Loss on Revaluation (New Partner's Share), Partner's Share of Goodwill",
+        "units": "",
+        "notes": "To be calculated when a partner is admitted"
+      },
+      {
+        "name": "Partner's Share of Goodwill",
+        "formula": "Partner's Share of Goodwill = (Original Partner's Capital × Original Partner's Share) / Total Capital",
+        "variables": "Original Partner's Capital, Original Partner's Share, Total Capital",
+        "units": "",
+        "notes": "To be calculated when a partner is admitted"
+      },
+      {
+        "name": "New Partner's Share of Goodwill",
+        "formula": "New Partner's Share of Goodwill = (Original Partner's Capital × Original Partner's Share) / Total Capital",
+        "variables": "Original Partner's Capital, Original Partner's Share, Total Capital",
+        "units": "",
+        "notes": "To be calculated when a partner is admitted"
+      },
+      {
+        "name": "Adjustment towards Cash or Other Assets",
+        "formula": "Adjustment towards Cash or Other Assets = Cash or Other Assets × Adjustment Rate",
+        "variables": "Cash or Other Assets, Adjustment Rate",
+        "units": "",
+        "notes": "To be calculated when a partner is admitted"
+      }
+    ]
+  }
+}

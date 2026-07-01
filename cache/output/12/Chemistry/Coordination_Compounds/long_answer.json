@@ -1,0 +1,84 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:23:26.587Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the difference between coordination sphere and coordination entity.",
+        "marks": 5,
+        "answer": "A coordination sphere is the polyatomic ion or atom, including the central metal atom, surrounded by the ligands. On the other hand, a coordination entity is the central metal atom or ion surrounded by the ligands. The coordination sphere may be a complex ion or a neutral molecule, whereas the coordination entity is always the central metal atom or ion.",
+        "marking_scheme": [
+          "Explain the difference between coordination sphere and coordination entity (3 marks)",
+          "Provide an example of coordination sphere and coordination entity (2 marks)"
+        ],
+        "topic": "Coordination Compounds",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the types of isomerism exhibited by coordination compounds.",
+        "marks": 5,
+        "answer": "Coordination compounds exhibit two main types of isomerism: structural isomerism and ionization isomerism. Structural isomerism occurs when the same coordination compound can have different structures. Ionization isomerism occurs when two coordination compounds have the same structure but differ in the ion that is released when they dissolve in water.",
+        "marking_scheme": [
+          "Describe structural isomerism (2 marks)",
+          "Describe ionization isomerism (2 marks)",
+          "Provide an example of each type of isomerism (1 mark)"
+        ],
+        "topic": "Coordination Compounds",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the IUPAC nomenclature rules for coordination compounds.",
+        "marks": 5,
+        "answer": "The IUPAC nomenclature rules for coordination compounds are as follows: The name of the central metal atom is written first, followed by the oxidation state of the metal in parentheses. The ligands are then listed in alphabetical order, along with their oxidation states. If there are multiple ligands with the same name, they are differentiated by Greek prefixes.",
+        "marking_scheme": [
+          "Explain the naming of the central metal atom (2 marks)",
+          "Explain the naming of the ligands (2 marks)",
+          "Provide an example of IUPAC nomenclature (1 mark)"
+        ],
+        "topic": "Coordination Compounds",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the number of d electrons in the complex ion [Pt(NH3)4Cl2]2+.",
+        "marks": 5,
+        "answer": "Calculation:\nPt is in the +2 oxidation state, so it has 8 d electrons (from the periodic table).\nIn the complex ion [Pt(NH3)4Cl2]2+, the Pt ion is surrounded by 4 NH3 ligands and 2 Cl- ligands.\nThe NH3 ligands are neutral and do not affect the oxidation state of Pt.\nThe Cl- ligands are -1 and each contributes 1 electron to the Pt ion, so the total number of d electrons is 8 + 2 = 10.",
+        "marking_scheme": [
+          "Determine the oxidation state of Pt (1 mark)",
+          "Calculate the number of d electrons (2 marks)",
+          "Explain the contribution of NH3 and Cl- ligands (2 marks)"
+        ],
+        "topic": "Coordination Compounds",
+        "is_numerical": true
+      },
+      {
+        "q": "Determine the oxidation state of the metal in the complex ion [Co(CN)6]4-.",
+        "marks": 5,
+        "answer": "Calculation:\nLet the oxidation state of Co be x.\nCN- is -1, so each CN- ligand contributes -1 to the complex ion.\nSince there are 6 CN- ligands, the total contribution is -6.\nThe complex ion has a -4 charge, so the total charge of the ligands must be -4.\nSetting up the equation: x - 6 = -4\nSolving for x: x = 2\nThe oxidation state of Co is +2.",
+        "marking_scheme": [
+          "Determine the charge of the complex ion (1 mark)",
+          "Calculate the total charge of the ligands (2 marks)",
+          "Solve for the oxidation state of Co (2 marks)"
+        ],
+        "topic": "Coordination Compounds",
+        "is_numerical": true
+      },
+      {
+        "q": "Calculate the molar mass of the complex ion [Cr(NH3)3Cl3]Cl.",
+        "marks": 5,
+        "answer": "Calculation:\nThe complex ion [Cr(NH3)3Cl3]Cl has the following components:\nCr: 52 g/mol\nNH3: 17 g/mol (3 x 17 = 51 g/mol)\nCl: 35.5 g/mol (3 x 35.5 = 106.5 g/mol)\nThe molar mass of the complex ion is the sum of the molar masses of its components:\n52 + 51 + 106.5 = 209.5 g/mol\nThe complex ion also has a Cl- ion attached, which has a molar mass of 35.5 g/mol.\nThe total molar mass is 209.5 + 35.5 = 245 g/mol.",
+        "marking_scheme": [
+          "Calculate the molar mass of the complex ion (3 marks)",
+          "Add the molar mass of the Cl- ion (2 marks)"
+        ],
+        "topic": "Coordination Compounds",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

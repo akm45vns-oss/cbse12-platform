@@ -1,0 +1,164 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T10:41:31.046Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define a plane in three dimensions.",
+        "marks": 1,
+        "answer": "A plane is a flat surface in three dimensions, extended infinitely in all directions. It can be defined by three non-collinear points or by a position vector and two direction ratios.",
+        "key_points": [
+          "Definition of a plane",
+          "Representation of a plane"
+        ],
+        "topic": "Introduction to Plane"
+      },
+      {
+        "q": "What is the equation of a plane in normal form?",
+        "marks": 1,
+        "answer": "The equation of a plane in normal form is given by lx + my + nz = d, where (l, m, n) are the direction ratios of the normal to the plane and d is the distance of the plane from the origin.",
+        "key_points": [
+          "Normal form of a plane",
+          "Equation of a plane"
+        ],
+        "topic": "Equation of a Plane"
+      },
+      {
+        "q": "State the condition for two planes to be parallel.",
+        "marks": 1,
+        "answer": "Two planes are parallel if their normals are parallel or if the direction ratios of their normals are proportional.",
+        "key_points": [
+          "Condition for parallel planes",
+          "Normal to a plane"
+        ],
+        "topic": "Parallel and Perpendicular Planes"
+      },
+      {
+        "q": "What is the distance of a point from a plane?",
+        "marks": 1,
+        "answer": "The distance of a point (x1, y1, z1) from a plane lx + my + nz = d is given by |lx1 + my1 + nz1 - d| / √(l^2 + m^2 + n^2).",
+        "key_points": [
+          "Distance of a point from a plane",
+          "Equation of a plane"
+        ],
+        "topic": "Distance of a Point from a Plane"
+      },
+      {
+        "q": "Define the intercepts of a line with the coordinate axes.",
+        "marks": 1,
+        "answer": "The intercepts of a line with the coordinate axes are the points where the line intersects the x-axis and y-axis, respectively.",
+        "key_points": [
+          "Intercepts of a line",
+          "Coordinate axes"
+        ],
+        "topic": "Straight Lines"
+      },
+      {
+        "q": "What is the angle between two planes?",
+        "marks": 2,
+        "answer": "The angle between two planes is the acute angle between their normals. It can be found using the formula cos θ = |(l1l2 + m1m2 + n1n2)| / √(l1^2 + m1^2 + n1^2) * √(l2^2 + m2^2 + n2^2), where (l1, m1, n1) and (l2, m2, n2) are the direction ratios of the normals to the planes.",
+        "key_points": [
+          "Angle between two planes",
+          "Normal to a plane"
+        ],
+        "topic": "Angle between Two Planes"
+      },
+      {
+        "q": "Find the equation of the plane passing through the points (1, -1, 2), (3, 0, -1), and (2, 3, -2).",
+        "marks": 2,
+        "answer": "The equation of the plane passing through the points (1, -1, 2), (3, 0, -1), and (2, 3, -2) is given by",
+        "key_points": [
+          "Equation of a plane",
+          "Normal to a plane"
+        ],
+        "topic": "Equation of a Plane"
+      },
+      {
+        "q": "Find the distance of the point (4, 3, -1) from the plane lx + my + nz = 0.",
+        "marks": 2,
+        "answer": "The distance of the point (4, 3, -1) from the plane lx + my + nz = 0 is given by |l(4) + m(3) + n(-1)| / √(l^2 + m^2 + n^2).",
+        "key_points": [
+          "Distance of a point from a plane",
+          "Equation of a plane"
+        ],
+        "topic": "Distance of a Point from a Plane"
+      },
+      {
+        "q": "Find the line passing through the point (1, -1, 2) and parallel to the line x = 2t, y = -t, z = 3t.",
+        "marks": 3,
+        "answer": "The line passing through the point (1, -1, 2) and parallel to the line x = 2t, y = -t, z = 3t is given by",
+        "key_points": [
+          "Equation of a line",
+          "Direction ratios of a line"
+        ],
+        "topic": "Equation of a Line"
+      },
+      {
+        "q": "Find the equation of the plane passing through the point (1, 2, -1) and perpendicular to the line x = 3t, y = 2t, z = -t.",
+        "marks": 3,
+        "answer": "The equation of the plane passing through the point (1, 2, -1) and perpendicular to the line x = 3t, y = 2t, z = -t is given by",
+        "key_points": [
+          "Equation of a plane",
+          "Normal to a plane"
+        ],
+        "topic": "Equation of a Plane"
+      },
+      {
+        "q": "Find the distance of the plane lx + my + nz = 0 from the point (1, -1, 2).",
+        "marks": 3,
+        "answer": "The distance of the plane lx + my + nz = 0 from the point (1, -1, 2) is given by |l(1) + m(-1) + n(2)| / √(l^2 + m^2 + n^2).",
+        "key_points": [
+          "Distance of a point from a plane",
+          "Equation of a plane"
+        ],
+        "topic": "Distance of a Point from a Plane"
+      },
+      {
+        "q": "Find the angle between the planes 2x - y + 4z = 0 and x + 2y - 2z = 0.",
+        "marks": 3,
+        "answer": "The angle between the planes 2x - y + 4z = 0 and x + 2y - 2z = 0 is given by cos θ = |(2(1) - 1(2) + 4(-2))| / √(2^2 + (-1)^2 + 4^2) * √(1^2 + 2^2 + (-2)^2).",
+        "key_points": [
+          "Angle between two planes",
+          "Normal to a plane"
+        ],
+        "topic": "Angle between Two Planes"
+      },
+      {
+        "q": "Find the equation of the line passing through the point (1, -1, 2) and parallel to the vector 2i + 3j - k.",
+        "marks": 3,
+        "answer": "The equation of the line passing through the point (1, -1, 2) and parallel to the vector 2i + 3j - k is given by",
+        "key_points": [
+          "Equation of a line",
+          "Direction ratios of a line"
+        ],
+        "topic": "Equation of a Line"
+      },
+      {
+        "q": "Find the equation of the plane passing through the points (1, 2, -1), (3, 0, -1), and (2, 3, -2).",
+        "marks": 3,
+        "answer": "The equation of the plane passing through the points (1, 2, -1), (3, 0, -1), and (2, 3, -2) is given by",
+        "key_points": [
+          "Equation of a plane",
+          "Normal to a plane"
+        ],
+        "topic": "Equation of a Plane"
+      },
+      {
+        "q": "Find the distance of the point (4, 3, -1) from the plane 2x - y + 4z = 0.",
+        "marks": 3,
+        "answer": "The distance of the point (4, 3, -1) from the plane 2x - y + 4z = 0 is given by |2(4) - 3(-1) + 4(-1)| / √(2^2 + (-1)^2 + 4^2).",
+        "key_points": [
+          "Distance of a point from a plane",
+          "Equation of a plane"
+        ],
+        "topic": "Distance of a Point from a Plane"
+      }
+    ],
+    "total": 15
+  }
+}

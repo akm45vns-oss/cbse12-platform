@@ -1,0 +1,95 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Human Health and Disease",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:23:32.016Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What are the different types of hypersensitivity reactions and explain their mechanisms?",
+        "marks": 5,
+        "answer": "There are four types of hypersensitivity reactions. Type I is an IgE-mediated allergic reaction. Type II is an antibody-dependent cytotoxic hypersensitivity reaction. Type III is an immune complex-mediated hypersensitivity reaction. Type IV is a T-cell mediated hypersensitivity reaction. Each type has distinct mechanisms involving different components of the immune system.",
+        "marking_scheme": [
+          "Explain the main characteristics of Type I hypersensitivity reaction (1 mark)",
+          "Describe the role of IgE in Type I hypersensitivity reaction (1 mark)",
+          "Explain the mechanism of Type II hypersensitivity reaction (1 mark)",
+          "Describe the role of immune complexes in Type III hypersensitivity reaction (1 mark)",
+          "Explain the role of T-cells in Type IV hypersensitivity reaction (1 mark)"
+        ],
+        "topic": "Hypersensitivity Reactions",
+        "is_numerical": false
+      },
+      {
+        "q": "Compare and contrast the characteristics of acute and chronic diseases. How do they differ in terms of their pathogenesis, symptoms, and treatment?",
+        "marks": 5,
+        "answer": "Acute diseases are characterized by rapid onset, severe symptoms, and short duration. They are often caused by infectious agents and have a distinct pathogenesis. Chronic diseases, on the other hand, are characterized by slow progression, mild symptoms, and long duration. They are often caused by environmental and lifestyle factors and have a complex pathogenesis.",
+        "marking_scheme": [
+          "Explain the main characteristics of acute diseases (1 mark)",
+          "Describe the pathogenesis of acute diseases (1 mark)",
+          "Explain the main characteristics of chronic diseases (1 mark)",
+          "Describe the pathogenesis of chronic diseases (1 mark)",
+          "Compare and contrast the treatment of acute and chronic diseases (1 mark)"
+        ],
+        "topic": "Acute and Chronic Diseases",
+        "is_numerical": false
+      },
+      {
+        "q": "Distinguish between the terms 'infectious disease' and 'inflammatory disease'. Provide examples of each type.",
+        "marks": 5,
+        "answer": "Infectious diseases are caused by infectious agents such as bacteria, viruses, and fungi. Inflammatory diseases, on the other hand, are caused by an abnormal immune response to an injury or infection. Examples of infectious diseases include tuberculosis and malaria. Examples of inflammatory diseases include rheumatoid arthritis and atherosclerosis.",
+        "marking_scheme": [
+          "Explain the difference between infectious and inflammatory diseases (1 mark)",
+          "Provide examples of infectious diseases (1 mark)",
+          "Provide examples of inflammatory diseases (1 mark)",
+          "Describe the role of the immune system in infectious diseases (1 mark)",
+          "Describe the role of the immune system in inflammatory diseases (1 mark)"
+        ],
+        "topic": "Infectious and Inflammatory Diseases",
+        "is_numerical": false
+      },
+      {
+        "q": "A patient has been diagnosed with tuberculosis. Calculate the number of bacteria in 1 mL of sputum if the concentration of bacteria is 10^8 CFU/mL.",
+        "marks": 5,
+        "answer": "Calculation: Number of bacteria in 1 mL of sputum = concentration of bacteria x volume of sputum\n= 10^8 CFU/mL x 1 mL\n= 10^8 CFU",
+        "marking_scheme": [
+          "State the formula for calculating the number of bacteria (1 mark)",
+          "Apply the formula to calculate the number of bacteria (2 marks)",
+          "Explain the significance of the result (1 mark)",
+          "Describe the implications of the result for treatment (1 mark)"
+        ],
+        "topic": "Microbial Diseases",
+        "is_numerical": true
+      },
+      {
+        "q": "A person has a viral load of 10^6 copies/mL. If the viral RNA is 70% infectious, calculate the number of infectious particles.",
+        "marks": 5,
+        "answer": "Calculation: Number of infectious particles = viral load x percentage of infectious RNA\n= 10^6 copies/mL x 0.70\n= 7 x 10^5 infectious particles",
+        "marking_scheme": [
+          "State the formula for calculating the number of infectious particles (1 mark)",
+          "Apply the formula to calculate the number of infectious particles (2 marks)",
+          "Explain the significance of the result (1 mark)",
+          "Describe the implications of the result for treatment (1 mark)"
+        ],
+        "topic": "Microbial Diseases",
+        "is_numerical": true
+      },
+      {
+        "q": "A patient has a blood glucose level of 250 mg/dL. If the normal range is 70-110 mg/dL, calculate the percentage increase in blood glucose level.",
+        "marks": 5,
+        "answer": "Calculation: Percentage increase = ((blood glucose level - normal range) / normal range) x 100\n= ((250 mg/dL - 110 mg/dL) / 110 mg/dL) x 100\n= (140 mg/dL / 110 mg/dL) x 100\n= 127.27%",
+        "marking_scheme": [
+          "State the formula for calculating the percentage increase (1 mark)",
+          "Apply the formula to calculate the percentage increase (2 marks)",
+          "Explain the significance of the result (1 mark)",
+          "Describe the implications of the result for treatment (1 mark)"
+        ],
+        "topic": "Endocrine Disorders",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

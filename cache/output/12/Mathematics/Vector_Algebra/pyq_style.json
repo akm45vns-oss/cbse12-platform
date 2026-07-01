@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Vector Algebra",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:26:46.118Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Find the position vector of the point which divides the line joining the points P (2, 3, -4) and Q (-5, 4, 5) in the ratio 2:3 internally.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "\\frac{5\\hat{i}-7\\hat{j}+18\\hat{k}}{10}",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If \\vec{a} = 2\\hat{i} + 3\\hat{j} - \\hat{k}, \\vec{b} = - \\hat{i} + 4\\hat{j} + 5\\hat{k} and \\vec{c} = \\hat{i} + 2\\hat{j} + 3\\hat{k}, find the value of [\\vec{a} \\vec{b} \\vec{c}].",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "0",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Find the unit vector in the direction of the vector \\vec{a} = 2\\hat{i} + 6\\hat{j} + 3\\hat{k}.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "\\frac{\\hat{i}+2\\hat{j}+\\frac{3}{2}\\hat{k}}{\\sqrt{4+36+9}} = \\frac{\\hat{i}+2\\hat{j}+\\frac{3}{2}\\hat{k}}{7}",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Find the projection of the vector \\vec{a} = 2\\hat{i} + 3\\hat{j} - 4\\hat{k} on the vector \\vec{b} = 3\\hat{i} + 4\\hat{j} + 6\\hat{k}.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "\\frac{3(2)+4(3)+6(-4)}{3^2+4^2+6^2} \\hat{i} + \\frac{4(2)+4(3)+6(-4)}{3^2+4^2+6^2} \\hat{j} + \\frac{6(2)+6(3)+6(-4)}{3^2+4^2+6^2} \\hat{k}",
+        "year_pattern": "2019-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If \\vec{a} and \\vec{b} are two vectors such that \\vec{a} + \\vec{b} = \\hat{i} + 2\\hat{j} + 3\\hat{k} and \\vec{a} - \\vec{b} = 4\\hat{i} - 2\\hat{j} + \\hat{k}, find \\vec{a} and \\vec{b}.",
+        "type": "Long Answer",
+        "marks": 8,
+        "answer": "\\vec{a} = 4\\hat{i} + \\hat{j} + \\frac{5}{2}\\hat{k} and \\vec{b} = -2\\hat{i} + \\hat{j} + \\frac{1}{2}\\hat{k}",
+        "year_pattern": "2020-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "If \\vec{a} = \\hat{i} + 2\\hat{j} + 4\\hat{k} and \\vec{b} = 2\\hat{i} - \\hat{j} + \\hat{k}, find the value of [\\vec{a} \\vec{b}].",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "5",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Find the vector equation of the line passing through the point A (-1, 1, 2) and parallel to the vector \\vec{b} = 2\\hat{i} + 3\\hat{j} + 4\\hat{k}.",
+        "type": "Short Answer",
+        "marks": 4,
+        "answer": "\\vec{r} = (-\\hat{i} + \\hat{j} + 2\\hat{k}) + t(2\\hat{i} + 3\\hat{j} + 4\\hat{k})",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "If \\vec{a} = 2\\hat{i} + 3\\hat{j} + 4\\hat{k} and \\vec{b} = 3\\hat{i} + 2\\hat{j} - \\hat{k}, find the value of [\\vec{a} \\vec{b}].",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "12",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Find the position vector of the mid-point of the line joining the points A (2, 3, 4) and B (-5, 4, -3).",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "\\frac{-1}{2}\\hat{i} + \\frac{7}{2}\\hat{j} + \\frac{5}{2}\\hat{k}",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If \\vec{a} = 2\\hat{i} - \\hat{j} + 2\\hat{k} and \\vec{b} = 3\\hat{i} + 4\\hat{j} - 5\\hat{k}, find the value of [\\vec{a} \\vec{b}].",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "14",
+        "year_pattern": "2020-style",
+        "difficulty": "easy"
+      }
+    ],
+    "total": 10
+  }
+}

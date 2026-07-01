@@ -1,0 +1,96 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:31:22.278Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the general methods for the preparation of alcohols. Include at least two methods and provide suitable examples. Also, mention the importance of alcohols in everyday life.",
+        "marks": 5,
+        "answer": "Alcohols are prepared through various methods, including the hydration of alkynes, alkenes, and alkanes. For instance, the hydration of alkenes is a common method, where alkenes react with water in the presence of an acid catalyst to form alcohols. For example, the hydration of ethene yields ethanol.\n\nAlcohols are essential in everyday life, serving as solvents, disinfectants, and fuels. They are also used as raw materials in the synthesis of various compounds, such as detergents, plastics, and pharmaceuticals.",
+        "marking_scheme": [
+          "Mention at least two methods of alcohol preparation (1 mark)",
+          "Provide suitable examples for each method (1 mark)",
+          "Mention importance of alcohols in everyday life (1 mark)",
+          "Provide relevant details about each example (1 mark)",
+          "Mention the role of alcohols in the synthesis of various compounds (1 mark)"
+        ],
+        "topic": "Preparation of Alcohols",
+        "is_numerical": false
+      },
+      {
+        "q": "Draw the structures of the following alcohols and classify them as primary, secondary, or tertiary.",
+        "marks": 5,
+        "answer": "The given alcohols are classified as follows:\n\n1. CH₃CH₂CH₂CH₂OH (1-hexanol) - primary alcohol\n2. CH₃CH(OH)CH₃ (2-propanol) - secondary alcohol\n3. CH₃C(CH₃)₂OH (2-methyl-2-propanol) - tertiary alcohol",
+        "marking_scheme": [
+          "Draw the structure of each alcohol (2 marks)",
+          "Classify each alcohol as primary, secondary, or tertiary (1 mark)",
+          "Provide a clear and accurate classification of each alcohol (1 mark)",
+          "Mention the general characteristics of primary, secondary, and tertiary alcohols (1 mark)"
+        ],
+        "topic": "Classification of Alcohols",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the reaction of alcohols with sodium. Mention the products formed and the conditions required for the reaction.",
+        "marks": 5,
+        "answer": "Alcohols react with sodium to form sodium alkoxides and hydrogen gas. The reaction is a vigorous and exothermic process, requiring dry and purified sodium and anhydrous alcohol. For example, the reaction of ethanol with sodium yields sodium ethoxide and hydrogen gas.\n\n2Na + 2C₂H₅OH → 2C₂H₅ONa + H₂",
+        "marking_scheme": [
+          "Mention the products formed in the reaction (1 mark)",
+          "Describe the conditions required for the reaction (1 mark)",
+          "Provide a clear and accurate equation for the reaction (1 mark)",
+          "Mention the characteristics of the reaction (1 mark)",
+          "Explain the importance of the reaction (1 mark)"
+        ],
+        "topic": "Reaction of Alcohols with Sodium",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the number of moles of ethanol (C₂H₅OH) required to produce 2.5 L of hydrogen gas at STP.",
+        "marks": 5,
+        "answer": "Calculation:\n\n2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂\n1 mole C₂H₅OH produces 1 mole H₂\n\nGiven: Volume of H₂ = 2.5 L\nAt STP, 1 mole of gas occupies 22.4 L\n\nMoles of H₂ = Volume of H₂ / 22.4 L/mol\n= 2.5 L / 22.4 L/mol\n= 0.1118 mol\n\nSince 1 mole C₂H₅OH produces 1 mole H₂, the number of moles of C₂H₅OH required is also 0.1118 mol",
+        "marking_scheme": [
+          "Derive the balanced chemical equation (1 mark)",
+          "Identify the mole ratio between C₂H₅OH and H₂ (1 mark)",
+          "Calculate the number of moles of H₂ produced (2 marks)",
+          "Determine the number of moles of C₂H₅OH required (1 mark)"
+        ],
+        "topic": "Reaction of Alcohols with Sodium",
+        "is_numerical": true
+      },
+      {
+        "q": "Calculate the mass of 2-methyl-2-propanol (CH₃C(CH₃)₂OH) required to produce 3.2 g of water.",
+        "marks": 5,
+        "answer": "Calculation:\n\nCH₃C(CH₃)₂OH + H₂O → CH₃C(CH₃)₂OH₂⁺ + OH⁻\n\nHowever, the actual reaction is:\n\nCH₃C(CH₃)₂OH + H₂O → CH₃C(CH₃)₂OH₂⁺ + OH⁻\n\nBut considering the actual reaction as:\n\n2CH₃C(CH₃)₂OH + H₂O → (CH₃C(CH₃)₂OH)₂O + H₂O\n\n2 moles CH₃C(CH₃)₂OH produce 1 mole H₂O\n\nMolar mass of CH₃C(CH₃)₂OH = 74.12 g/mol\n\nGiven: Mass of H₂O = 3.2 g\nMolar mass of H₂O = 18.02 g/mol\n\nMoles of H₂O = Mass of H₂O / Molar mass of H₂O\n= 3.2 g / 18.02 g/mol\n= 0.1775 mol\n\nSince 2 moles CH₃C(CH₃)₂OH produce 1 mole H₂O, the number of moles of CH₃C(CH₃)₂OH required is 0.355 mol\n\nMass of CH₃C(CH₃)₂OH = Moles of CH₃C(CH₃)₂OH x Molar mass of CH₃C(CH₃)₂OH\n= 0.355 mol x 74.12 g/mol\n= 26.28 g",
+        "marking_scheme": [
+          "Derive the balanced chemical equation (1 mark)",
+          "Identify the mole ratio between CH₃C(CH₃)₂OH and H₂O (1 mark)",
+          "Calculate the number of moles of H₂O produced (2 marks)",
+          "Determine the number of moles of CH₃C(CH₃)₂OH required (1 mark)",
+          "Calculate the mass of CH₃C(CH₃)₂OH required (1 mark)"
+        ],
+        "topic": "Reaction of Alcohols with Water",
+        "is_numerical": true
+      },
+      {
+        "q": "Calculate the molarity of a 2 M solution of phenol (C₆H₅OH) if 10 mL of the solution requires 22.5 mL of 0.5 M NaOH for titration.",
+        "marks": 5,
+        "answer": "Calculation:\n\nThe reaction between phenol and NaOH is:\n\nC₆H₅OH + NaOH → C₆H₅ONa + H₂O\n\nThe reaction is a 1:1 ratio between phenol and NaOH.\n\nGiven: Volume of NaOH required = 22.5 mL\nMolarity of NaOH = 0.5 M\n\nNumber of moles of NaOH = Molarity of NaOH x Volume of NaOH (in L)\n= 0.5 M x 0.0225 L\n= 0.01125 mol\n\nSince the reaction is a 1:1 ratio, the number of moles of phenol required is also 0.01125 mol\n\nMolarity of phenol = Number of moles of phenol / Volume of phenol (in L)\n= 0.01125 mol / 0.01 L\n= 1.125 M",
+        "marking_scheme": [
+          "Derive the balanced chemical equation (1 mark)",
+          "Identify the mole ratio between phenol and NaOH (1 mark)",
+          "Calculate the number of moles of NaOH required (2 marks)",
+          "Determine the number of moles of phenol required (1 mark)",
+          "Calculate the molarity of the phenol solution (1 mark)"
+        ],
+        "topic": "Acidic and Basic Nature of Phenol",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

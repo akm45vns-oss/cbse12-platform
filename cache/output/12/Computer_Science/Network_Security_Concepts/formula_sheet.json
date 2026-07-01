@@ -1,0 +1,69 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Network Security Concepts",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T10:07:35.837Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "CIA Triad",
+        "formula": "Confidentiality, Integrity, and Availability",
+        "variables": "Three key aspects of network security",
+        "units": "",
+        "notes": "The CIA triad is a widely accepted model that describes the fundamental principles of network security, ensuring that data is kept confidential, its integrity is maintained, and it remains available when needed."
+      },
+      {
+        "name": "Masquerade Attack",
+        "formula": "An attacker posing as a trusted entity to gain unauthorized access",
+        "variables": "Attacker, trusted entity, unauthorized access",
+        "units": "",
+        "notes": "A masquerade attack involves an attacker disguising themselves as a trusted entity to deceive users and gain unauthorized access to a network or system."
+      },
+      {
+        "name": "Man-in-the-Middle (MitM) Attack",
+        "formula": "An attacker intercepting communication between two parties",
+        "variables": "Attacker, two parties, communication",
+        "units": "",
+        "notes": "A Man-in-the-Middle (MitM) attack occurs when an attacker intercepts communication between two parties, often to steal sensitive information or inject malware."
+      },
+      {
+        "name": "Secure Sockets Layer (SSL)/Transport Layer Security (TLS)",
+        "formula": "A protocol for secure communication over the internet",
+        "variables": "SSL/TLS, secure communication",
+        "units": "",
+        "notes": "SSL/TLS is a cryptographic protocol that provides secure communication over the internet by encrypting data in transit and authenticating the identity of the communicating parties."
+      },
+      {
+        "name": "Secure Shell (SSH)",
+        "formula": "A protocol for secure remote access to a network or system",
+        "variables": "SSH, secure remote access",
+        "units": "",
+        "notes": "SSH is a protocol that provides secure remote access to a network or system by encrypting data in transit and authenticating the identity of the user."
+      },
+      {
+        "name": "Firewall Rule",
+        "formula": "Allow or block network traffic based on rules",
+        "variables": "Firewall, allow/block, rules",
+        "units": "",
+        "notes": "A firewall rule specifies whether to allow or block network traffic based on criteria such as source IP address, destination IP address, and port numbers."
+      },
+      {
+        "name": "Access Control List (ACL)",
+        "formula": "A list of rules governing access to a network or system",
+        "variables": "ACL, access control, rules",
+        "units": "",
+        "notes": "An ACL is a list of rules that govern access to a network or system, specifying which users or groups are allowed to access certain resources or perform specific actions."
+      },
+      {
+        "name": "Least Privilege Principle",
+        "formula": "Granting users the minimum privileges necessary to perform their tasks",
+        "variables": "Least privilege, users, privileges",
+        "units": "",
+        "notes": "The least privilege principle states that users should be granted only the minimum privileges necessary to perform their tasks, reducing the risk of unauthorized access or malicious activity."
+      }
+    ]
+  }
+}

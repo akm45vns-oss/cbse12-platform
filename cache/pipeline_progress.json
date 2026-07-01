@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-01T03:32:17.562Z",
-  "elapsed_seconds": 480,
-  "rate_per_second": 10.45,
+  "updated_at": "2026-07-01T18:17:20.636Z",
+  "elapsed_seconds": 440,
+  "rate_per_second": 6.17,
   "queue": {
-    "completed": 5016,
-    "pending": 364,
+    "completed": 2714,
+    "pending": 10,
     "inFlight": 5,
-    "failed": 175,
-    "retrying": 364,
+    "failed": 1,
+    "retrying": 10,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
@@ -18,160 +18,160 @@
   "workers": [
     {
       "workerId": "Worker-Physics",
-      "processed": 3,
-      "skipped": 0,
-      "failed": 12,
-      "running": true
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "processed": 6,
-      "skipped": 0,
-      "failed": 7,
-      "running": true
-    },
-    {
-      "workerId": "Worker-Maths",
-      "processed": 4,
+      "processed": 0,
       "skipped": 0,
       "failed": 6,
       "running": true
     },
     {
-      "workerId": "Worker-Biology",
-      "processed": 6,
+      "workerId": "Worker-Chemistry",
+      "processed": 1,
+      "skipped": 0,
+      "failed": 5,
+      "running": true
+    },
+    {
+      "workerId": "Worker-Maths",
+      "processed": 0,
       "skipped": 0,
       "failed": 8,
       "running": true
     },
     {
-      "workerId": "Worker-Other",
-      "processed": 5,
+      "workerId": "Worker-Biology",
+      "processed": 0,
       "skipped": 0,
-      "failed": 8,
+      "failed": 7,
+      "running": true
+    },
+    {
+      "workerId": "Worker-Other",
+      "processed": 0,
+      "skipped": 0,
+      "failed": 7,
       "running": true
     }
   ],
   "recent_events": [
     {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating detailed_notes for Memories of Childhood (English)",
+      "timestamp": "2026-07-01T18:16:31.858Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating detailed_notes for Determinants (Mathematics)",
+      "timestamp": "2026-07-01T18:16:31.820Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-01T18:16:31.506Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-01T18:16:31.501Z"
+    },
+    {
       "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating mcqs for Colonial Cities (History)",
-      "timestamp": "2026-07-01T03:32:00.683Z"
+      "message": "Generating detailed_notes for Keeping Quiet (English)",
+      "timestamp": "2026-07-01T18:16:14.806Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "error",
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-07-01T18:16:14.572Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "generating",
-      "message": "Generating assertion_reason for Peasants, Zamindars and the State (History)",
-      "timestamp": "2026-07-01T03:32:00.453Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "done",
-      "message": "✅ History/Kinship, Caste and Class/mcqs",
-      "timestamp": "2026-07-01T03:32:00.450Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating short_answer for Colonialism and the Countryside (History)",
-      "timestamp": "2026-07-01T03:32:00.363Z"
+      "message": "Generating detailed_notes for Ecosystem (Biology)",
+      "timestamp": "2026-07-01T18:16:13.027Z"
     },
     {
       "workerId": "Worker-Physics",
       "status": "generating",
-      "message": "Generating assertion_reason for Kings and Chronicles: The Mughal Courts (History)",
-      "timestamp": "2026-07-01T03:32:00.357Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating short_answer for An Imperial Capital: Vijayanagara (History)",
-      "timestamp": "2026-07-01T03:32:00.168Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-01T03:32:00.129Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-01T03:32:00.119Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating mcqs for Rebels and the Raj: 1857 Revolt (History)",
-      "timestamp": "2026-07-01T03:32:00.075Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating mcqs for An Imperial Capital: Vijayanagara (History)",
-      "timestamp": "2026-07-01T03:32:00.063Z"
+      "message": "Generating detailed_notes for Deep Water (English)",
+      "timestamp": "2026-07-01T18:16:13.024Z"
     },
     {
       "workerId": "Worker-Other",
-      "status": "done",
-      "message": "✅ History/Kinship, Caste and Class/short_answer",
-      "timestamp": "2026-07-01T03:31:59.916Z"
+      "status": "error",
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-07-01T18:16:12.390Z"
     },
     {
       "workerId": "Worker-Physics",
-      "status": "done",
-      "message": "✅ History/Kings, Farmers and Towns/assertion_reason",
-      "timestamp": "2026-07-01T03:31:59.845Z"
+      "status": "error",
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-07-01T18:16:12.388Z"
     },
     {
       "workerId": "Worker-Maths",
-      "status": "done",
-      "message": "✅ History/Bricks, Beads and Bones: The Harappan Civilisation/mcqs",
-      "timestamp": "2026-07-01T03:31:59.837Z"
+      "status": "generating",
+      "message": "Generating detailed_notes for Physical Education and Sports for CWSN (Physical Education)",
+      "timestamp": "2026-07-01T18:15:26.745Z"
     },
     {
-      "workerId": "Worker-Biology",
+      "workerId": "Worker-Maths",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-01T03:31:59.826Z"
+      "timestamp": "2026-07-01T18:15:26.422Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating detailed_notes for The Enemy (English)",
+      "timestamp": "2026-07-01T18:15:18.194Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "generating",
-      "message": "Generating mcqs for Kings, Farmers and Towns (History)",
-      "timestamp": "2026-07-01T03:31:59.768Z"
+      "message": "Generating detailed_notes for Children and Women in Sports (Physical Education)",
+      "timestamp": "2026-07-01T18:15:18.026Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "error",
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-07-01T18:15:17.858Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-01T03:31:59.072Z"
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-07-01T18:15:17.688Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating mcqs for Kinship, Caste and Class (History)",
-      "timestamp": "2026-07-01T03:31:54.899Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating case_based for Bhakti–Sufi Traditions (History)",
-      "timestamp": "2026-07-01T03:31:54.716Z"
+      "message": "Generating detailed_notes for Entrepreneurship Development (Business Studies)",
+      "timestamp": "2026-07-01T18:14:14.404Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-01T03:31:54.201Z"
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-07-01T18:14:14.148Z"
     },
     {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-01T03:31:54.197Z"
+      "workerId": "Worker-Other",
+      "status": "generating",
+      "message": "Generating detailed_notes for Yoga as Preventive Measure for Lifestyle Diseases (Physical Education)",
+      "timestamp": "2026-07-01T18:14:12.295Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating detailed_notes for Queue (Computer Science)",
+      "timestamp": "2026-07-01T18:14:12.295Z"
     }
   ]
 }

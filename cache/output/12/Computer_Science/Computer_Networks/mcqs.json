@@ -1,0 +1,274 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Computer Networks",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T12:02:07.447Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the primary function of a router in a network?",
+        "opts": [
+          "(A) To connect multiple networks",
+          "(B) To provide internet access",
+          "(C) To manage network devices",
+          "(D) To store data"
+        ],
+        "ans": "A",
+        "explanation": "A router connects multiple networks by forwarding data packets between them. It does not provide internet access, manage network devices, or store data.",
+        "difficulty": "easy",
+        "topic": "Network Devices"
+      },
+      {
+        "q": "What is the difference between a hub and a switch?",
+        "opts": [
+          "(A) A hub is faster than a switch",
+          "(B) A hub is more expensive than a switch",
+          "(C) A hub broadcasts data to all devices, while a switch forwards data to specific devices",
+          "(D) A hub is used for wired connections, while a switch is used for wireless connections"
+        ],
+        "ans": "C",
+        "explanation": "A hub broadcasts data to all connected devices, while a switch forwards data to the specific device it's intended for. This makes a switch more efficient and secure.",
+        "difficulty": "easy",
+        "topic": "Network Devices"
+      },
+      {
+        "q": "What is the purpose of ARP (Address Resolution Protocol) in a network?",
+        "opts": [
+          "(A) To convert IP addresses to MAC addresses",
+          "(B) To convert MAC addresses to IP addresses",
+          "(C) To resolve domain names to IP addresses",
+          "(D) To resolve IP addresses to domain names"
+        ],
+        "ans": "A",
+        "explanation": "ARP is used to convert IP addresses to MAC addresses, which is necessary for data transmission between devices on a network.",
+        "difficulty": "easy",
+        "topic": "Network Protocols"
+      },
+      {
+        "q": "What is the difference between TCP and UDP?",
+        "opts": [
+          "(A) TCP is connection-oriented, while UDP is connectionless",
+          "(B) TCP is connectionless, while UDP is connection-oriented",
+          "(C) TCP is faster than UDP",
+          "(D) TCP is more reliable than UDP"
+        ],
+        "ans": "A",
+        "explanation": "TCP is a connection-oriented protocol, meaning it establishes a connection before data transmission, while UDP is a connectionless protocol, meaning it does not establish a connection before data transmission.",
+        "difficulty": "medium",
+        "topic": "Transport Layer"
+      },
+      {
+        "q": "What is the purpose of the SYN flag in TCP?",
+        "opts": [
+          "(A) To request a connection",
+          "(B) To acknowledge a connection",
+          "(C) To terminate a connection",
+          "(D) To retransmit data"
+        ],
+        "ans": "A",
+        "explanation": "The SYN flag is used to request a connection in the three-way handshake process of TCP.",
+        "difficulty": "medium",
+        "topic": "Transport Layer"
+      },
+      {
+        "q": "What is the difference between a LAN and a WAN?",
+        "opts": [
+          "(A) A LAN is a network that spans a single building, while a WAN is a network that spans multiple buildings",
+          "(B) A LAN is a network that spans multiple buildings, while a WAN is a network that spans a single building",
+          "(C) A LAN is a network that connects a small number of devices, while a WAN is a network that connects a large number of devices",
+          "(D) A LAN is a network that connects a large number of devices, while a WAN is a network that connects a small number of devices"
+        ],
+        "ans": "A",
+        "explanation": "A LAN is a network that spans a single building or a small geographic area, while a WAN is a network that spans multiple buildings or a large geographic area.",
+        "difficulty": "medium",
+        "topic": "Network Topology"
+      },
+      {
+        "q": "What is the purpose of a subnet mask in IP addressing?",
+        "opts": [
+          "(A) To identify the network ID",
+          "(B) To identify the host ID",
+          "(C) To determine the subnet size",
+          "(D) To determine the broadcast address"
+        ],
+        "ans": "A",
+        "explanation": "A subnet mask is used to identify the network ID in IP addressing.",
+        "difficulty": "medium",
+        "topic": "IP Addressing"
+      },
+      {
+        "q": "What is the difference between a Class A, Class B, and Class C IP address?",
+        "opts": [
+          "(A) Class A has a maximum of 256 hosts, Class B has a maximum of 65,536 hosts, and Class C has a maximum of 16,777,216 hosts",
+          "(B) Class A has a maximum of 65,536 hosts, Class B has a maximum of 256 hosts, and Class C has a maximum of 16,777,216 hosts",
+          "(C) Class A has a maximum of 16,777,216 hosts, Class B has a maximum of 256 hosts, and Class C has a maximum of 65,536 hosts",
+          "(D) Class A has a maximum of 256 hosts, Class B has a maximum of 65,536 hosts, and Class C has a maximum of 16,777,216 hosts"
+        ],
+        "ans": "A",
+        "explanation": "Class A has a maximum of 256 hosts, Class B has a maximum of 65,536 hosts, and Class C has a maximum of 16,777,216 hosts.",
+        "difficulty": "hard",
+        "topic": "IP Addressing"
+      },
+      {
+        "q": "What is the purpose of a DNS (Domain Name System) server?",
+        "opts": [
+          "(A) To resolve IP addresses to domain names",
+          "(B) To resolve domain names to IP addresses",
+          "(C) To manage network devices",
+          "(D) To store data"
+        ],
+        "ans": "B",
+        "explanation": "A DNS server is used to resolve domain names to IP addresses, making it easier to access websites and other online resources.",
+        "difficulty": "hard",
+        "topic": "Network Protocols"
+      },
+      {
+        "q": "What is the difference between a hub and a repeater?",
+        "opts": [
+          "(A) A hub is used for wireless connections, while a repeater is used for wired connections",
+          "(B) A hub is used for wired connections, while a repeater is used for wireless connections",
+          "(C) A hub broadcasts data to all connected devices, while a repeater forwards data to specific devices",
+          "(D) A hub is used to amplify signal strength, while a repeater is used to extend network range"
+        ],
+        "ans": "D",
+        "explanation": "A hub is used to broadcast data to all connected devices, while a repeater is used to amplify signal strength and extend network range.",
+        "difficulty": "hard",
+        "topic": "Network Devices"
+      },
+      {
+        "q": "What is the purpose of a proxy server?",
+        "opts": [
+          "(A) To cache frequently accessed web pages",
+          "(B) To filter incoming and outgoing network traffic",
+          "(C) To provide internet access to multiple devices",
+          "(D) To manage network devices"
+        ],
+        "ans": "B",
+        "explanation": "A proxy server is used to filter incoming and outgoing network traffic, helping to protect the network from malware and unauthorized access.",
+        "difficulty": "hard",
+        "topic": "Network Security"
+      },
+      {
+        "q": "What is the difference between a firewall and an access control list (ACL)?",
+        "opts": [
+          "(A) A firewall is used to filter incoming traffic, while an ACL is used to filter outgoing traffic",
+          "(B) A firewall is used to filter outgoing traffic, while an ACL is used to filter incoming traffic",
+          "(C) A firewall is used to block malicious traffic, while an ACL is used to allow authorized traffic",
+          "(D) A firewall is used to allow authorized traffic, while an ACL is used to block malicious traffic"
+        ],
+        "ans": "B",
+        "explanation": "A firewall is used to filter outgoing traffic, while an ACL is used to filter incoming traffic.",
+        "difficulty": "hard",
+        "topic": "Network Security"
+      },
+      {
+        "q": "What is the purpose of a DMZ (Demilitarized Zone)?",
+        "opts": [
+          "(A) To provide external access to internal network resources",
+          "(B) To block external access to internal network resources",
+          "(C) To cache frequently accessed web pages",
+          "(D) To manage network devices"
+        ],
+        "ans": "A",
+        "explanation": "A DMZ is used to provide external access to internal network resources, while still maintaining security and segregation.",
+        "difficulty": "hard",
+        "topic": "Network Security"
+      },
+      {
+        "q": "What is the difference between a VPN (Virtual Private Network) and a VAN (Value-Added Network)?",
+        "opts": [
+          "(A) A VPN provides secure remote access to a network, while a VAN provides secure remote access to a cloud service",
+          "(B) A VPN provides secure remote access to a cloud service, while a VAN provides secure remote access to a network",
+          "(C) A VPN is used to connect multiple sites, while a VAN is used to connect multiple devices",
+          "(D) A VPN is used to connect multiple devices, while a VAN is used to connect multiple sites"
+        ],
+        "ans": "A",
+        "explanation": "A VPN provides secure remote access to a network, while a VAN is not a commonly used term and seems unrelated to the question. VPN is used for secure remote access, and VAN seems a distractor.",
+        "difficulty": "hard",
+        "topic": "Network Security"
+      },
+      {
+        "q": "What is the purpose of a network switch in a network?",
+        "opts": [
+          "(A) To provide internet access",
+          "(B) To connect multiple networks",
+          "(C) To manage network devices",
+          "(D) To forward data packets between networks"
+        ],
+        "ans": "D",
+        "explanation": "A network switch is used to forward data packets between networks.",
+        "difficulty": "hard",
+        "topic": "Network Devices"
+      },
+      {
+        "q": "What is the difference between a network interface card (NIC) and a network interface controller (NICX)?",
+        "opts": [
+          "(A) A NIC is used for wired connections, while a NICX is used for wireless connections",
+          "(B) A NIC is used for wireless connections, while a NICX is used for wired connections",
+          "(C) A NIC is a hardware component, while a NICX is a software component",
+          "(D) A NIC is a software component, while a NICX is a hardware component"
+        ],
+        "ans": "A",
+        "explanation": "A NIC is used for wired connections, while a NICX is not a commonly used term and seems unrelated to the question. NIC is a hardware component and used for wired connections, and NICX seems a distractor.",
+        "difficulty": "hard",
+        "topic": "Network Devices"
+      },
+      {
+        "q": "What is the purpose of a network bridge in a network?",
+        "opts": [
+          "(A) To connect multiple networks",
+          "(B) To provide internet access",
+          "(C) To manage network devices",
+          "(D) To forward data packets between networks"
+        ],
+        "ans": "A",
+        "explanation": "A network bridge is used to connect multiple networks.",
+        "difficulty": "hard",
+        "topic": "Network Devices"
+      },
+      {
+        "q": "What is the difference between a network hub and a network concentrator?",
+        "opts": [
+          "(A) A hub is used to connect multiple devices, while a concentrator is used to connect multiple networks",
+          "(B) A hub is used to connect multiple networks, while a concentrator is used to connect multiple devices",
+          "(C) A hub is used to amplify signal strength, while a concentrator is used to extend network range",
+          "(D) A hub is used to extend network range, while a concentrator is used to amplify signal strength"
+        ],
+        "ans": "A",
+        "explanation": "A hub is used to connect multiple devices, while a concentrator is used to connect multiple networks.",
+        "difficulty": "hard",
+        "topic": "Network Devices"
+      },
+      {
+        "q": "What is the purpose of a network repeater in a network?",
+        "opts": [
+          "(A) To connect multiple networks",
+          "(B) To provide internet access",
+          "(C) To manage network devices",
+          "(D) To amplify signal strength and extend network range"
+        ],
+        "ans": "D",
+        "explanation": "A network repeater is used to amplify signal strength and extend network range.",
+        "difficulty": "hard",
+        "topic": "Network Devices"
+      },
+      {
+        "q": "What is the difference between a network cable and a network adapter?",
+        "opts": [
+          "(A) A cable is used to connect devices, while an adapter is used to connect networks",
+          "(B) A cable is used to connect networks, while an adapter is used to connect devices",
+          "(C) A cable is a hardware component, while an adapter is a software component",
+          "(D) A cable is a software component, while an adapter is a hardware component"
+        ],
+        "ans": "A",
+        "explanation": "A network cable is used to connect devices, while a network adapter is not a commonly used term and seems unrelated to the question. Network cable is a hardware component and used for connecting devices, and network adapter seems a distractor.",
+        "difficulty": "hard",
+        "topic": "Network Devices"
+      }
+    ],
+    "total": 20
+  }
+}

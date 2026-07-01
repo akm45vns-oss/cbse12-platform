@@ -1,0 +1,87 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Matrices",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T15:50:41.064Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If A = [[2, 4], [6, 8]] and B = [[1, 3], [4, 5]], show that A and B are not equal matrices.",
+        "marks": 5,
+        "answer": "A and B are not equal matrices as their corresponding elements are not equal. To show this, we can compare their corresponding elements. A = [[2, 4], [6, 8]] and B = [[1, 3], [4, 5]]. Here, a11 = 2 != b11 = 1, a12 = 4 != b12 = 3, a21 = 6 != b21 = 4, a22 = 8 != b22 = 5.",
+        "marking_scheme": [
+          "Comparison of corresponding elements is worth 5 marks"
+        ],
+        "topic": "Equality of Matrices",
+        "is_numerical": false
+      },
+      {
+        "q": "If A = [[1, 0], [0, 1]] and B = [[2, 0], [0, 2]], find (A + B) and (A - B).",
+        "marks": 5,
+        "answer": "To find (A + B), we add the corresponding elements of A and B. (A + B) = [[1 + 2, 0 + 0], [0 + 0, 1 + 2]] = [[3, 0], [0, 3]]. To find (A - B), we subtract the corresponding elements of B from A. (A - B) = [[1 - 2, 0 - 0], [0 - 0, 1 - 2]] = [[-1, 0], [0, -1]].",
+        "marking_scheme": [
+          "Finding (A + B) is worth 2 marks",
+          "Finding (A - B) is worth 3 marks"
+        ],
+        "topic": "Addition and Subtraction of Matrices",
+        "is_numerical": false
+      },
+      {
+        "q": "If A = [[2, 4], [6, 8]] and B = [[1, 3], [4, 5]], find 3A - 2B.",
+        "marks": 5,
+        "answer": "To find 3A, we multiply each element of A by 3. 3A = [[2 * 3, 4 * 3], [6 * 3, 8 * 3]] = [[6, 12], [18, 24]]. To find 2B, we multiply each element of B by 2. 2B = [[1 * 2, 3 * 2], [4 * 2, 5 * 2]] = [[2, 6], [8, 10]]. To find 3A - 2B, we subtract the corresponding elements of 2B from 3A. 3A - 2B = [[6 - 2, 12 - 6], [18 - 8, 24 - 10]] = [[4, 6], [10, 14]].",
+        "marking_scheme": [
+          "Finding 3A is worth 2 marks",
+          "Finding 2B is worth 1 mark",
+          "Finding 3A - 2B is worth 2 marks"
+        ],
+        "topic": "Multiplication of a Matrix by a Scalar",
+        "is_numerical": true
+      },
+      {
+        "q": "If A = [[2, 4], [6, 8]], find 5A.",
+        "marks": 5,
+        "answer": {
+          "Calculation": "To find 5A, we multiply each element of A by 5.\n5A = [[2 * 5, 4 * 5], [6 * 5, 8 * 5]]\n= [[10, 20], [30, 40]]",
+          "Answer": "10 20 30 40"
+        },
+        "marking_scheme": [
+          "Finding 5A is worth 5 marks"
+        ],
+        "topic": "Multiplication of a Matrix by a Scalar",
+        "is_numerical": true
+      },
+      {
+        "q": "If A = [[1, 2, -3], [4, -5, 2]], find A^T.",
+        "marks": 5,
+        "answer": {
+          "Calculation": "To find A^T, we interchange the rows and columns of A.\nA^T = [[1, 4], [2, -5], [-3, 2]]",
+          "Answer": "[[1, 4], [2, -5], [-3, 2]]"
+        },
+        "marking_scheme": [
+          "Finding A^T is worth 5 marks"
+        ],
+        "topic": "Transpose of a Matrix",
+        "is_numerical": false
+      },
+      {
+        "q": "If A = [[2, 4], [6, 8]] and B = [[1, 3], [4, 5]], find A^T B.",
+        "marks": 5,
+        "answer": {
+          "Calculation": "To find A^T B, we first find A^T.\nA^T = [[2, 6], [4, 8]]\nTo find A^T B, we multiply the corresponding elements of A^T and B and sum them.\nA^T B = [[2*1 + 6*4, 2*3 + 6*5], [4*1 + 8*4, 4*3 + 8*5]]\n= [[2 + 24, 6 + 30], [4 + 32, 12 + 40]]\n= [[26, 36], [36, 52]]",
+          "Answer": "[[26, 36], [36, 52]]"
+        },
+        "marking_scheme": [
+          "Finding A^T is worth 2 marks",
+          "Finding A^T B is worth 3 marks"
+        ],
+        "topic": "Multiplication of Matrices",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

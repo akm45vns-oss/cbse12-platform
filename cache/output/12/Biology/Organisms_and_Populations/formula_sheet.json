@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Organisms and Populations",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T10:05:25.792Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Species-Area Relationship",
+        "formula": "S = AZ^b",
+        "variables": "S = number of species, A = area, Z = constant, b = regression coefficient",
+        "units": "No specific units",
+        "notes": "Used to describe the relationship between the area of a habitat and the number of species found within it"
+      },
+      {
+        "name": "2. Shannon-Wiener Diversity Index",
+        "formula": "H = -∑(pi * ln pi)",
+        "variables": "H = diversity index, pi = proportion of each species",
+        "units": "No specific units",
+        "notes": "Used to calculate the diversity of a community based on the proportion of each species"
+      },
+      {
+        "name": "3. Simpson Diversity Index",
+        "formula": "D = 1 - ∑(ni * (ni - 1) / N * (N - 1))",
+        "variables": "D = diversity index, ni = number of individuals of each species, N = total number of individuals",
+        "units": "No specific units",
+        "notes": "Used to calculate the diversity of a community based on the number of individuals of each species"
+      },
+      {
+        "name": "4. Population Growth Rate",
+        "formula": "r = (dN / dt) / N",
+        "variables": "r = intrinsic growth rate, dN = change in population size, dt = change in time, N = population size",
+        "units": "Per unit time (e.g., per year)",
+        "notes": "Used to describe the rate of change of a population over time"
+      },
+      {
+        "name": "5. Logistic Growth Equation",
+        "formula": "dN / dt = rN * (1 - N / K)",
+        "variables": "dN = change in population size, dt = change in time, r = intrinsic growth rate, N = population size, K = carrying capacity",
+        "units": "Per unit time (e.g., per year)",
+        "notes": "Used to describe the growth of a population in an environment with limited resources"
+      },
+      {
+        "name": "6. Carrying Capacity",
+        "formula": "K = (food + water + shelter) / (population size)",
+        "variables": "K = carrying capacity, food = available food, water = available water, shelter = available shelter",
+        "units": "No specific units",
+        "notes": "Used to describe the maximum population size that an environment can sustain indefinitely"
+      },
+      {
+        "name": "7. Natality",
+        "formula": "Natality = (number of births / population size) * 100",
+        "variables": "Natality = birth rate, number of births = number of new individuals added to the population, population size = total number of individuals",
+        "units": "Per 100 individuals per unit time (e.g., per year)",
+        "notes": "Used to describe the rate at which new individuals are added to a population"
+      },
+      {
+        "name": "8. Mortality",
+        "formula": "Mortality = (number of deaths / population size) * 100",
+        "variables": "Mortality = death rate, number of deaths = number of individuals that die, population size = total number of individuals",
+        "units": "Per 100 individuals per unit time (e.g., per year)",
+        "notes": "Used to describe the rate at which individuals die in a population"
+      },
+      {
+        "name": "9. Immigration",
+        "formula": "Immigration = (number of immigrants / population size) * 100",
+        "variables": "Immigration = rate of new individuals entering the population, number of immigrants = number of new individuals entering the population, population size = total number of individuals",
+        "units": "Per 100 individuals per unit time (e.g., per year)",
+        "notes": "Used to describe the rate at which new individuals enter a population"
+      },
+      {
+        "name": "10. Emigration",
+        "formula": "Emigration = (number of emigrants / population size) * 100",
+        "variables": "Emigration = rate of individuals leaving the population, number of emigrants = number of individuals leaving the population, population size = total number of individuals",
+        "units": "Per 100 individuals per unit time (e.g., per year)",
+        "notes": "Used to describe the rate at which individuals leave a population"
+      }
+    ]
+  }
+}

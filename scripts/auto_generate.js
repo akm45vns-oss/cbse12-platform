@@ -15,6 +15,11 @@ function runScheduler(classFilter) {
       console.log(`\nScheduler for Class ${classFilter} exited with code ${code}`);
       if (code === 0) {
         resolve(true); // Completed cleanly
+      } else if (code === 2) {
+        console.log(`Scheduler finished but had failed tasks. Restarting to force retry...`);
+        setTimeout(() => {
+          resolve(false); 
+        }, 5000);
       } else {
         // Did not complete cleanly (e.g. fatal rate limit or crash). Retry after delay.
         console.log(`Scheduler exited abnormally or threw a fatal limit error. Waiting 10 seconds before resuming...`);

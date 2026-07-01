@@ -1,0 +1,48 @@
+{
+  "class": "12",
+  "subject": "Accountancy",
+  "chapter": "Reconstitution of Partnership: Retirement & Death",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:02:30.620Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Adjustment on Retiring Partner's Share",
+        "formula": "Adjustment = (Retiring Partner's Share / Total Share) × New Profit",
+        "variables": "Retiring Partner's Share: Amount the retiring partner is entitled to receive, Total Share: Total profit-sharing ratio, New Profit: New profit after the retirement",
+        "units": "Rupees",
+        "notes": "Used to calculate the retiring partner's share in the profit after the retirement"
+      },
+      {
+        "name": "Calculation of Goodwill on Retiring Partner's Share",
+        "formula": "Goodwill = (2/3) × (New Profit × Average Profit × Number of Years)",
+        "variables": "New Profit: New profit after the retirement, Average Profit: Average profit of the firm, Number of Years: Number of years for which the average profit is calculated",
+        "units": "Rupees",
+        "notes": "Used to calculate the goodwill of the firm on the retiring partner's share"
+      },
+      {
+        "name": "Adjustment on Intestate Death of a Partner",
+        "formula": "Adjustment = (Deceased Partner's Share / Total Share) × New Profit",
+        "variables": "Deceased Partner's Share: Amount the deceased partner was entitled to receive, Total Share: Total profit-sharing ratio, New Profit: New profit after the death of the partner",
+        "units": "Rupees",
+        "notes": "Used to calculate the deceased partner's share in the profit after the death"
+      },
+      {
+        "name": "Calculation of Goodwill on Deceased Partner's Share",
+        "formula": "Goodwill = (2/3) × (New Profit × Average Profit × Number of Years)",
+        "variables": "New Profit: New profit after the death of the partner, Average Profit: Average profit of the firm, Number of Years: Number of years for which the average profit is calculated",
+        "units": "Rupees",
+        "notes": "Used to calculate the goodwill of the firm on the deceased partner's share"
+      },
+      {
+        "name": "Adjustment for Interest on Partners' Capital",
+        "formula": "Interest = (Capital × Rate of Interest × Time Period)",
+        "variables": "Capital: Capital contributed by the partner, Rate of Interest: Interest rate, Time Period: Time period for which the interest is calculated",
+        "units": "Rupees",
+        "notes": "Used to calculate the interest on partners' capital"
+      }
+    ]
+  }
+}

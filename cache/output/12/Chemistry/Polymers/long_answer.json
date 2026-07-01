@@ -1,0 +1,97 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Polymers",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:31:38.478Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the types of polymerization reactions and provide examples of each. (5 marks)",
+        "marks": 5,
+        "answer": "There are two main types of polymerization reactions: addition and condensation polymerization. Addition polymerization involves the opening of a double bond in a monomer molecule to create a new bond with another monomer molecule, resulting in a long chain of identical molecules. Condensation polymerization involves the reaction of two different monomers to form a new bond and release a small molecule such as water, resulting in a long chain of different molecules. Examples of addition polymerization include the polymerization of ethene to form polyethene and the polymerization of propene to form polypropene. Examples of condensation polymerization include the polymerization of ethylene glycol and terephthalic acid to form polyethylene terephthalate (PET).",
+        "marking_scheme": [
+          "Mention of addition and condensation polymerization (1 mark)",
+          "Examples of each type of polymerization (2 marks)",
+          "Description of the polymerization reaction (1 mark)",
+          "Explanation of the resulting polymer (1 mark)"
+        ],
+        "topic": "Types of Polymerization Reactions",
+        "is_numerical": false
+      },
+      {
+        "q": "Compare the properties of polyethene and polypropene. (5 marks)",
+        "marks": 5,
+        "answer": "Polyethene and polypropene are both addition polymers, but they have different properties due to their molecular structure. Polyethene is a more flexible and less dense polymer than polypropene, making it more suitable for packaging and plastic bags. Polypropene is a more rigid and dense polymer than polyethene, making it more suitable for container manufacturing and textiles. Polyethene also has a lower melting point than polypropene, making it more suitable for applications where heat resistance is not a concern.",
+        "marking_scheme": [
+          "Mention of the molecular structure of polyethene and polypropene (1 mark)",
+          "Comparison of the flexibility and density of the two polymers (1 mark)",
+          "Comparison of the melting point of the two polymers (1 mark)",
+          "Examples of applications for each polymer (1 mark)",
+          "Explanation of the differences in properties (1 mark)"
+        ],
+        "topic": "Properties of Polyethene and Polypropene",
+        "is_numerical": false
+      },
+      {
+        "q": "Determine the structure of polyvinyl chloride (PVC). (5 marks)",
+        "marks": 5,
+        "answer": "PVC is a polymer formed by the polymerization of vinyl chloride monomers. The structure of PVC is a long chain of repeating units of the following formula: [-CH2-CHCl-].",
+        "marking_scheme": [
+          "Mention of the monomer of PVC (1 mark)",
+          "Formation of the polymer (1 mark)",
+          "Structure of the repeating unit (1 mark)",
+          "Description of the polymer chain (1 mark)",
+          "Explanation of the properties of PVC (1 mark)"
+        ],
+        "topic": "Structure of PVC",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the number of moles of ethene (C2H4) required to produce 100 g of polyethene. (Assume the molar mass of ethene is 28 g/mol and the molar mass of polyethene is 14 g/mol).",
+        "marks": 5,
+        "answer": "Calculation:\n1. Calculate the number of moles of polyethene required: \nmoles = mass / molar mass = 100 g / 14 g/mol = 7.14 mol\n2. Calculate the number of moles of ethene required: \nmoles = moles of polyethene / 2 (since 2 moles of ethene are required to produce 1 mole of polyethene) = 7.14 mol / 2 = 3.57 mol",
+        "marking_scheme": [
+          "Mention of the molar mass of ethene and polyethene (1 mark)",
+          "Calculation of the number of moles of polyethene (1 mark)",
+          "Calculation of the number of moles of ethene (1 mark)",
+          "Explanation of the reaction ratio (1 mark)",
+          "Answer in units of moles (1 mark)"
+        ],
+        "topic": "Mole Calculations for Polymerization",
+        "is_numerical": true
+      },
+      {
+        "q": "A sample of nylon 6,6 weighs 50 g. If the molar mass of nylon 6,6 is 226 g/mol, calculate the number of moles of the polymer in the sample.",
+        "marks": 5,
+        "answer": "Calculation:\nmoles = mass / molar mass = 50 g / 226 g/mol = 0.22 mol",
+        "marking_scheme": [
+          "Mention of the molar mass of nylon 6,6 (1 mark)",
+          "Calculation of the number of moles (1 mark)",
+          "Answer in units of moles (1 mark)",
+          "Explanation of the units (1 mark)",
+          "Answer must be numerical (1 mark)"
+        ],
+        "topic": "Mole Calculations for Polymers",
+        "is_numerical": true
+      },
+      {
+        "q": "A 5% solution of polyvinyl alcohol (PVA) in water weighs 200 g. If the molar mass of PVA is 22,000 g/mol, calculate the number of moles of PVA in the solution.",
+        "marks": 5,
+        "answer": "Calculation:\n1. Calculate the mass of PVA: \nmass of PVA = 5% of 200 g = 0.05 x 200 g = 10 g\n2. Calculate the number of moles of PVA: \nmoles = mass / molar mass = 10 g / 22,000 g/mol = 0.00045 mol",
+        "marking_scheme": [
+          "Mention of the molar mass of PVA (1 mark)",
+          "Calculation of the mass of PVA (1 mark)",
+          "Calculation of the number of moles (1 mark)",
+          "Answer in units of moles (1 mark)",
+          "Explanation of the units (1 mark)"
+        ],
+        "topic": "Mole Calculations for Polymers",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

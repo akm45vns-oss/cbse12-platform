@@ -1,0 +1,98 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Matrices",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T09:11:58.043Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Matrix",
+        "definition": "A matrix is a rectangular array of numbers, arranged in rows and columns, enclosed by square brackets [] or round brackets (). The numbers in the matrix are called elements or entries.",
+        "example": "A = [1 2; 3 4] is a 2x2 matrix."
+      },
+      {
+        "term": "Order of a Matrix",
+        "definition": "The order of a matrix is the number of rows and columns it has, denoted as mxn, where m is the number of rows and n is the number of columns.",
+        "example": "The order of matrix A = [1 2; 3 4] is 2x2."
+      },
+      {
+        "term": "Row Matrix",
+        "definition": "A row matrix is a matrix with only one row, i.e., its order is 1xn.",
+        "example": "A = [1 2 3] is a row matrix."
+      },
+      {
+        "term": "Column Matrix",
+        "definition": "A column matrix is a matrix with only one column, i.e., its order is mx1.",
+        "example": "A = [1; 2; 3] is a column matrix."
+      },
+      {
+        "term": "Square Matrix",
+        "definition": "A square matrix is a matrix with the same number of rows and columns, i.e., its order is mxm.",
+        "example": "A = [1 2; 3 4] is a square matrix."
+      },
+      {
+        "term": "Diagonal Matrix",
+        "definition": "A diagonal matrix is a square matrix with all non-zero elements on the main diagonal and zeros elsewhere.",
+        "example": "A = [1 0; 0 4] is a diagonal matrix."
+      },
+      {
+        "term": "Identity Matrix",
+        "definition": "An identity matrix is a square matrix with ones on the main diagonal and zeros elsewhere, denoted as I.",
+        "example": "I = [1 0; 0 1] is an identity matrix."
+      },
+      {
+        "term": "Zero Matrix",
+        "definition": "A zero matrix is a matrix with all elements equal to zero, denoted as O.",
+        "example": "O = [0 0; 0 0] is a zero matrix."
+      },
+      {
+        "term": "Equality of Matrices",
+        "definition": "Two matrices are said to be equal if they have the same order and their corresponding elements are equal.",
+        "example": "A = [1 2; 3 4] and B = [1 2; 3 4] are equal matrices."
+      },
+      {
+        "term": "Addition of Matrices",
+        "definition": "The sum of two matrices A and B is a matrix obtained by adding the corresponding elements of A and B.",
+        "example": "A = [1 2; 3 4] and B = [5 6; 7 8], then A + B = [6 8; 10 12]."
+      },
+      {
+        "term": "Subtraction of Matrices",
+        "definition": "The difference of two matrices A and B is a matrix obtained by subtracting the corresponding elements of B from A.",
+        "example": "A = [1 2; 3 4] and B = [5 6; 7 8], then A - B = [-4 -4; -4 -4]."
+      },
+      {
+        "term": "Multiplication of a Matrix by a Scalar",
+        "definition": "The product of a matrix A and a scalar k is a matrix obtained by multiplying each element of A by k.",
+        "example": "A = [1 2; 3 4] and k = 2, then 2A = [2 4; 6 8]."
+      },
+      {
+        "term": "Multiplication of Matrices",
+        "definition": "The product of two matrices A and B is a matrix obtained by multiplying the rows of A by the columns of B.",
+        "example": "A = [1 2; 3 4] and B = [5 6; 7 8], then AB = [19 22; 43 50]."
+      },
+      {
+        "term": "Transpose of a Matrix",
+        "definition": "The transpose of a matrix A is a matrix obtained by interchanging the rows and columns of A, denoted as A' or AT.",
+        "example": "A = [1 2; 3 4], then A' = [1 3; 2 4]."
+      },
+      {
+        "term": "Symmetric Matrix",
+        "definition": "A symmetric matrix is a square matrix that is equal to its transpose, i.e., A = A'.",
+        "example": "A = [1 2; 2 1] is a symmetric matrix."
+      },
+      {
+        "term": "Skew-Symmetric Matrix",
+        "definition": "A skew-symmetric matrix is a square matrix that is equal to the negative of its transpose, i.e., A = -A'.",
+        "example": "A = [0 2; -2 0] is a skew-symmetric matrix."
+      },
+      {
+        "term": "Inverse of a Matrix",
+        "definition": "The inverse of a square matrix A is a matrix B such that AB = BA = I, denoted as A^-1.",
+        "example": "A = [1 2; 3 4], then A^-1 = [-2 1; 3/2 -1/2]."
+      }
+    ]
+  }
+}

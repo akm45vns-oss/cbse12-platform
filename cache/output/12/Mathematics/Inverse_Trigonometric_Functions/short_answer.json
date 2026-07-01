@@ -1,0 +1,158 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:49:42.877Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What does the range of the inverse sine function denote?",
+        "marks": 1,
+        "answer": "The range of the inverse sine function denotes the set of all possible values of x for which -π/2 ≤ x ≤ π/2.",
+        "key_points": [
+          "Range of inverse sine function"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "What is the domain of the inverse cosine function?",
+        "marks": 1,
+        "answer": "The domain of the inverse cosine function is the set of all real numbers. However, the principal value branch of the inverse cosine function is restricted to the interval [0, π].",
+        "key_points": [
+          "Domain of inverse cosine function"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "What is the principal value branch of the inverse tangent function?",
+        "marks": 1,
+        "answer": "The principal value branch of the inverse tangent function is the branch that maps the interval (-π/2, π/2) onto the interval (-π/2, π/2).",
+        "key_points": [
+          "Principal value branch of inverse tangent"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "What is the range of the inverse cotangent function?",
+        "marks": 1,
+        "answer": "The range of the inverse cotangent function is the set of all real numbers. However, the principal value branch of the inverse cotangent function is restricted to the interval (0, π).",
+        "key_points": [
+          "Range of inverse cotangent function"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "What is the domain of the inverse cosecant function?",
+        "marks": 1,
+        "answer": "The domain of the inverse cosecant function is the set of all real numbers except 0.",
+        "key_points": [
+          "Domain of inverse cosecant function"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "State the formula for the principal value of the inverse tangent function.",
+        "marks": 2,
+        "answer": "The formula for the principal value of the inverse tangent function is y = tan^(-1)x = (1/(i√(1+x^2))) * ln((1+ix)/(1-ix)).",
+        "key_points": [
+          "Principal value of inverse tangent"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "Express cos^(-1)(3/5) in terms of log.",
+        "marks": 2,
+        "answer": "cos^(-1)(3/5) = cos^(-1)((x/y)) = cos^(-1)((x/y)) = cos^(-1)((5/√(25-9))) = cos^(-1)((5/4)).",
+        "key_points": [
+          "Inverse cosine function"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "Find the principal value of sin^(-1)((√3/2)).",
+        "marks": 2,
+        "answer": "The principal value of sin^(-1)((√3/2)) is π/3.",
+        "key_points": [
+          "Principal value of inverse sine"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "Express sin^(-1)(x) in terms of cos.",
+        "marks": 2,
+        "answer": "sin^(-1)(x) = cos^(-1)((√(1-x^2)).",
+        "key_points": [
+          "Inverse sine function"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "State the formula for the principal value of the inverse cosecant function.",
+        "marks": 2,
+        "answer": "The formula for the principal value of the inverse cosecant function is y = cosec^(-1)x = tan^(-1)(1/x).",
+        "key_points": [
+          "Principal value of inverse cosecant"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "Find the principal value of cos^(-1)((-7/25)) and express it in terms of log.",
+        "marks": 3,
+        "answer": "Let cos^(-1)((-7/25)) = y, then cos(y) = (-7/25). Therefore, sin(y) = √(1-((7/25)^2)) = 24/25. Hence, y = sin^(-1)(24/25) = sin^(-1)((√3/2)) = π/3.",
+        "key_points": [
+          "Principal value of inverse cosine"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "Express sin^(-1)(-3/5) in terms of cos.",
+        "marks": 3,
+        "answer": "Let sin^(-1)(-3/5) = x, then cos(x) = (√(1-(3/5)^2)) = 4/5. Therefore, x = cos^(-1)(4/5).",
+        "key_points": [
+          "Inverse sine function"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "Prove that sin^(-1)(x) + cos^(-1)(x) = π/2 for x ∈ [-1, 1].",
+        "marks": 3,
+        "answer": "Let y = sin^(-1)(x) and z = cos^(-1)(x), then sin(y) = x and cos(z) = x. Therefore, sin(y) = cos(z) and y + z = π/2.",
+        "key_points": [
+          "Inverse sine and inverse cosine functions"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "Find the principal value of cot^(-1)(√3).",
+        "marks": 3,
+        "answer": "Let cot^(-1)(√3) = y, then cot(y) = √3. Therefore, tan(y) = 1/√3 and y = tan^(-1)(1/√3).",
+        "key_points": [
+          "Principal value of inverse cotangent"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "Express cos^(-1)(x) in terms of sin.",
+        "marks": 3,
+        "answer": "cos^(-1)(x) = sin^(-1)((√(1-x^2)).",
+        "key_points": [
+          "Inverse cosine function"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      },
+      {
+        "q": "Prove that tan^(-1)x + cot^(-1)x = π/2 for x ∈ R.",
+        "marks": 3,
+        "answer": "Let y = tan^(-1)x and z = cot^(-1)x, then tan(y) = x and cot(z) = x. Therefore, tan(y) = cot(z) and y + z = π/2.",
+        "key_points": [
+          "Inverse tangent and inverse cotangent functions"
+        ],
+        "topic": "Inverse Trigonometric Functions"
+      }
+    ],
+    "total": 16
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "short_notes",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T10:51:16.712Z",
+  "version": "1.0",
+  "data": {
+    "markdown": "# 3. SHORT NOTES (QUICK REVISION) - Structured Query Language (SQL)\n\n- **SQL:** Standard language for accessing and managing data in relational database management systems (RDBMS).\n- **Relational Database Management System (RDBMS):** Stores data in tables with well-defined relationships.\n- **Table:** Collection of related data in rows and columns.\n- **Columns:** Vertical lists of data in a table.\n- **Rows:** Horizontal lists of data in a table.\n- **Database:** Collection of interrelated tables.\n- **Schema:** Description of database structure including tables, relationships, and constraints.\n- **DBMS:** Manage and control access to data in a database.\n- **SQL Commands:**\n  - CREATE: Create database, table, index, or view.\n  - ALTER: Modify existing database, table, index, or view.\n  - DROP: Delete database, table, index, or view.\n  - TRUNCATE: Delete all rows from a table.\n  - SELECT: Retrieve specific data from database.\n  - INSERT: Add new data to a table.\n  - UPDATE: Modify existing data in a table.\n  - DELETE: Delete selected data from a table.\n- **SQL Syntax:** SQL commands must end with a semicolon (;).\n- **SQL Functions:**\n  - Aggregate Functions: SUM, COUNT, AVG, MAX, MIN.\n  - String Functions: UPPER, LOWER, CONCAT.\n  - Date Functions: CURRENT_DATE, CURRENT_TIME.\n- **SQL Join:** Combine rows from two or more tables based on a related column.\n- **SQL Subquery:** Use the result of one query as input for another query.\n- **SQL Index:** Speeds up data retrieval by creating an index on a column.\n- **SQL Views:** Virtual table based on the result of a query.\n- **SQL Constraints:** Rules that restrict data from being inserted, updated, or deleted.\n- **Primary Key:** Unique identifier for each row in a table.\n- **Foreign Key:** Links two tables by referencing primary key.\n- **SQL Data Types:** INT, VARCHAR, DATE, TIME, TIMESTAMP, BOOLEAN.\n- **SQL Operators:**\n  - Arithmetic operators: +, -, \\*, /, %\n  - Comparison operators: =, >, <, >=, <=, <>, !=, LIKE, IN\n  - Logical operators: AND, OR, NOT"
+  }
+}

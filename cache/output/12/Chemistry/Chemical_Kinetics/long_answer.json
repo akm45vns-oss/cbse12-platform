@@ -1,0 +1,69 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T10:13:10.640Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of half-life and its relation to the rate constant of a first-order reaction. Also, derive the expression for half-life in terms of rate constant.",
+        "marks": 5,
+        "answer": "Half-life (t1/2) is the time required for the concentration of a reactant to decrease to half of its initial value. In a first-order reaction, rate constant (k) is related to half-life as follows:\n\nk = 0.693/t1/2\n\nThe expression for half-life in terms of rate constant can be derived from the integrated rate equation for first-order reaction: ln[A]/[A]0 = -kt\n\nRearranging the equation, we get:\nt1/2 = 0.693/k",
+        "marking_scheme": [
+          "Understanding of half-life and its relation with rate constant (2 marks)",
+          "Derivation of the expression for half-life in terms of rate constant (3 marks)"
+        ],
+        "topic": "Half-life and First-order Reaction",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the factors that affect the rate of a chemical reaction. Explain how temperature, concentration, and surface area affect the rate of reaction.",
+        "marks": 5,
+        "answer": "The rate of a chemical reaction is affected by several factors, including temperature, concentration, and surface area. Temperature: Increasing the temperature of a reaction increases the rate of reaction. This is because higher temperatures provide more energy for the reactant molecules to collide and react. Concentration: Increasing the concentration of reactants increases the rate of reaction. This is because higher concentrations provide more reactant molecules for collisions to occur. Surface area: Increasing the surface area of reactants increases the rate of reaction. This is because more surface area provides more sites for reactant molecules to collide and react.",
+        "marking_scheme": [
+          "Understanding of factors affecting the rate of reaction (2 marks)",
+          "Explanation of temperature, concentration, and surface area effects (3 marks)"
+        ],
+        "topic": "Factors Affecting the Rate of Reaction",
+        "is_numerical": false
+      },
+      {
+        "q": "The decomposition of N2O5 is a first-order reaction. If the initial concentration of N2O5 is 0.1 M and the rate constant is 5.5 × 10^−3 s^−1, calculate the half-life of the reaction.",
+        "marks": 5,
+        "answer": "Calculation:\n\nGiven: Initial concentration of N2O5 = 0.1 M\nRate constant (k) = 5.5 × 10^−3 s^−1\n\nAs the reaction is first-order, the expression for half-life is:\nt1/2 = 0.693/k\n\nSubstituting the value of k,\nt1/2 = 0.693/(5.5 × 10^−3 s^−1)\nt1/2 = 126 s",
+        "marking_scheme": [
+          "Understanding of first-order reaction (1 mark)",
+          "Calculation of half-life (4 marks)"
+        ],
+        "topic": "Half-life and First-order Reaction",
+        "is_numerical": true
+      },
+      {
+        "q": "The reaction between hydrogen peroxide and potassium iodide is a second-order reaction. If the initial concentration of hydrogen peroxide is 0.05 M and the rate constant is 1.5 × 10^−2 L mol^−1 s^−1, calculate the time required for the concentration of hydrogen peroxide to decrease to 0.01 M.",
+        "marks": 5,
+        "answer": "Calculation:\n\nGiven: Initial concentration of hydrogen peroxide = 0.05 M\nConcentration after time 't' = 0.01 M\nRate constant (k) = 1.5 × 10^−2 L mol^−1 s^−1\n\nAs the reaction is second-order, the rate equation is:\nRate = k[A]^2\n\nSubstituting the values, we get:\n1.5 × 10^−2 L mol^−1 s^−1 = k(0.05)^2\nSolving for k, we get:\nk = 1.5 × 10^−2 L mol^−1 s^−1 / (0.05)^2\nNow, we can use the integrated rate equation for second-order reaction to find the time 't':\n1/[A] = 1/[A]0 + kt\nSubstituting the values, we get:\n1/0.01 = 1/0.05 + (1.5 × 10^−2 L mol^−1 s^−1)t\nSolving for 't', we get:\nt = 67.8 s",
+        "marking_scheme": [
+          "Understanding of second-order reaction (1 mark)",
+          "Calculation of time required (4 marks)"
+        ],
+        "topic": "Rate Equation and Reaction Order",
+        "is_numerical": true
+      },
+      {
+        "q": "The rate constant of a reaction is 2.5 × 10^−3 s^−1 at 25°C. If the temperature is increased to 37°C, calculate the new rate constant.",
+        "marks": 5,
+        "answer": "Calculation:\n\nGiven: Initial rate constant (k1) = 2.5 × 10^−3 s^−1\nInitial temperature (T1) = 25°C = 298 K\nFinal temperature (T2) = 37°C = 310 K\n\nThe Arrhenius equation is given by:\nln(k2/k1) = E_a/R(1/T2 - 1/T1)\nwhere E_a is the activation energy and R is the gas constant\n\nSubstituting the values, we get:\nln(k2/2.5 × 10^−3 s^−1) = E_a/R(1/310 K - 1/298 K)\nSolving for k2, we get:\nk2 = 7.3 × 10^−3 s^−1",
+        "marking_scheme": [
+          "Understanding of Arrhenius equation (1 mark)",
+          "Calculation of new rate constant (4 marks)"
+        ],
+        "topic": "Temperature Dependence of Rate Constants",
+        "is_numerical": true
+      }
+    ],
+    "total": 5
+  }
+}

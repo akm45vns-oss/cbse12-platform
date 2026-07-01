@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Application of Derivatives",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:56:39.947Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A company is planning to manufacture a new product. The demand for the product is expected to be 1000 units in the first year and will increase by 10% every year. The total cost of production for the company is given by the function C(x) = 2x^2 + 100x + 5000, where x is the number of units produced. Using the application of derivatives, find the minimum cost at which the company should produce the product to maximize its profit. Assume that the selling price of each unit is $120.",
+        "questions": [
+          {
+            "q": "What is the rate of increase in demand for the product every year?",
+            "opts": [
+              "5%",
+              "10%",
+              "15%",
+              "20%"
+            ],
+            "ans": "B",
+            "explanation": "The rate of increase in demand for the product every year is given in the passage as 10%."
+          },
+          {
+            "q": "Which function represents the total cost of production for the company?",
+            "opts": [
+              "C(x) = x^2 + 50x + 5000",
+              "C(x) = 2x^2 + 100x + 5000",
+              "C(x) = x^2 + 100x + 5000",
+              "C(x) = 2x^2 + 50x + 5000"
+            ],
+            "ans": "B",
+            "explanation": "The function C(x) = 2x^2 + 100x + 5000 represents the total cost of production for the company."
+          },
+          {
+            "q": "What is the selling price of each unit of the product?",
+            "opts": [
+              "$100",
+              "$120",
+              "$150",
+              "$200"
+            ],
+            "ans": "B",
+            "explanation": "The selling price of each unit of the product is $120, as given in the passage."
+          },
+          {
+            "q": "At what rate should the company produce the product to maximize its profit?",
+            "opts": [
+              "Minimum rate",
+              "Maximum rate",
+              "Optimal rate",
+              "No rate"
+            ],
+            "ans": "C",
+            "explanation": "To maximize profit, the company should produce the product at the optimal rate, which can be found by using the application of derivatives."
+          },
+          {
+            "q": "What is the minimum cost at which the company should produce the product to maximize its profit?",
+            "opts": [
+              "Not given",
+              "C(500) = 25000",
+              "C(1000) = 30000",
+              "C(2000) = 40000"
+            ],
+            "ans": "C",
+            "explanation": "The minimum cost at which the company should produce the product to maximize its profit can be found by using the application of derivatives and substituting the optimal rate into the cost function."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A car manufacturer is designing a new model of car. The company wants to minimize the time taken to travel from one point to another. The distance between the two points is 100 km, and the speed of the car can be varied between 0 km/h and 120 km/h. The time taken to travel the distance is given by the function T(x) = 100/x, where x is the speed of the car in km/h. Using the application of derivatives, find the speed at which the car should travel to minimize the time taken to travel the distance.",
+        "questions": [
+          {
+            "q": "What is the distance between the two points?",
+            "opts": [
+              "50 km",
+              "75 km",
+              "100 km",
+              "150 km"
+            ],
+            "ans": "C",
+            "explanation": "The distance between the two points is given in the passage as 100 km."
+          },
+          {
+            "q": "What is the minimum and maximum speed at which the car can travel?",
+            "opts": [
+              "0 - 100 km/h",
+              "0 - 120 km/h",
+              "50 - 150 km/h",
+              "75 - 180 km/h"
+            ],
+            "ans": "B",
+            "explanation": "The minimum and maximum speed at which the car can travel is given in the passage as 0 km/h and 120 km/h, respectively."
+          },
+          {
+            "q": "What is the function that represents the time taken to travel the distance?",
+            "opts": [
+              "T(x) = x/100",
+              "T(x) = 100/x",
+              "T(x) = 100x",
+              "T(x) = x^2/100"
+            ],
+            "ans": "B",
+            "explanation": "The function T(x) = 100/x represents the time taken to travel the distance, as given in the passage."
+          },
+          {
+            "q": "At what speed should the car travel to minimize the time taken to travel the distance?",
+            "opts": [
+              "Minimum speed",
+              "Maximum speed",
+              "Optimal speed",
+              "No speed"
+            ],
+            "ans": "C",
+            "explanation": "To minimize the time taken to travel the distance, the car should travel at the optimal speed, which can be found by using the application of derivatives."
+          },
+          {
+            "q": "What is the optimal speed at which the car should travel to minimize the time taken to travel the distance?",
+            "opts": [
+              "Not given",
+              "50 km/h",
+              "100 km/h",
+              "120 km/h"
+            ],
+            "ans": "B",
+            "explanation": "The optimal speed at which the car should travel to minimize the time taken to travel the distance can be found by using the application of derivatives and substituting the optimal speed into the time function."
+          }
+        ]
+      }
+    ]
+  }
+}

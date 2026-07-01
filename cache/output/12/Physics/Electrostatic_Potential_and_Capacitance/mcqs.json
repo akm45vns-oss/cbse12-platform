@@ -1,0 +1,274 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electrostatic Potential and Capacitance",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T11:38:10.835Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "A point charge q is placed at the origin. The electric potential at a distance r from the charge is?",
+        "opts": [
+          "(A) kq/r",
+          "(B) -kq/r",
+          "(C) kqr",
+          "(D) -kqr"
+        ],
+        "ans": "A",
+        "explanation": "The electric potential due to a point charge is given by V = kq/r.",
+        "difficulty": "easy",
+        "topic": "Electric Potential"
+      },
+      {
+        "q": "Two charges +q and -q are separated by a distance d. The electric potential at the mid-point is?",
+        "opts": [
+          "(A) kq/d",
+          "(B) -kq/d",
+          "(C) 0",
+          "(D) kq"
+        ],
+        "ans": "C",
+        "explanation": "At the mid-point, the potential due to +q and -q is equal and opposite, resulting in zero net potential.",
+        "difficulty": "easy",
+        "topic": "Electric Potential"
+      },
+      {
+        "q": "A capacitor of capacitance C is charged to a potential V. The energy stored in the capacitor is?",
+        "opts": [
+          "(A) CV^2/2",
+          "(B) CV^2",
+          "(C) V/C",
+          "(D) C/V"
+        ],
+        "ans": "A",
+        "explanation": "The energy stored in a capacitor is given by U = CV^2/2.",
+        "difficulty": "easy",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "An air-filled parallel plate capacitor has a capacitance of 10 μF. If the distance between the plates is doubled, the new capacitance is?",
+        "opts": [
+          "(A) 5 μF",
+          "(B) 10 μF",
+          "(C) 20 μF",
+          "(D) 40 μF"
+        ],
+        "ans": "B",
+        "explanation": "The capacitance of a parallel plate capacitor is given by C = ε₀A/d. Doubling the distance d will result in the same capacitance.",
+        "difficulty": "medium",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A dielectric of dielectric constant k is inserted between the plates of a parallel plate capacitor. The new capacitance is?",
+        "opts": [
+          "(A) C/k",
+          "(B) Ck",
+          "(C) C",
+          "(D) kC"
+        ],
+        "ans": "B",
+        "explanation": "The capacitance of a parallel plate capacitor is given by C = ε₀A/d. The presence of a dielectric increases the capacitance by a factor of k.",
+        "difficulty": "medium",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A capacitor of capacitance C is connected to a battery of emf V. If the capacitor is fully charged, the potential difference across its plates is?",
+        "opts": [
+          "(A) V",
+          "(B) CV",
+          "(C) V/C",
+          "(D) 0"
+        ],
+        "ans": "A",
+        "explanation": "When a capacitor is fully charged, the potential difference across its plates is equal to the emf of the battery.",
+        "difficulty": "medium",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "Two capacitors of capacitance C₁ and C₂ are connected in series. The equivalent capacitance is?",
+        "opts": [
+          "(A) C₁ + C₂",
+          "(B) C₁C₂/(C₁ + C₂)",
+          "(C) C₁C₂",
+          "(D) C₁ - C₂"
+        ],
+        "ans": "B",
+        "explanation": "When two capacitors are connected in series, the equivalent capacitance is given by 1/C_eq = 1/C₁ + 1/C₂.",
+        "difficulty": "medium",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A capacitor of capacitance C is connected to a battery of emf V through a resistor R. The time constant of the circuit is?",
+        "opts": [
+          "(A) C/R",
+          "(B) VR/C",
+          "(C) RC",
+          "(D) R/C"
+        ],
+        "ans": "C",
+        "explanation": "The time constant of an RC circuit is given by τ = RC.",
+        "difficulty": "medium",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A parallel plate capacitor has a capacitance of 50 μF. If the area of each plate is increased by a factor of 4 and the distance between the plates is decreased by a factor of 2, the new capacitance is?",
+        "opts": [
+          "(A) 100 μF",
+          "(B) 200 μF",
+          "(C) 400 μF",
+          "(D) 800 μF"
+        ],
+        "ans": "C",
+        "explanation": "The capacitance of a parallel plate capacitor is given by C = ε₀A/d. Increasing the area by a factor of 4 and decreasing the distance by a factor of 2 will result in a new capacitance of 4 × 2 = 8 times the original capacitance.",
+        "difficulty": "hard",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A capacitor of capacitance C is connected to a battery of emf V. If the capacitor is disconnected from the battery and a dielectric of dielectric constant k is inserted between its plates, the new capacitance is?",
+        "opts": [
+          "(A) C/k",
+          "(B) Ck",
+          "(C) CV/k",
+          "(D) C + CV"
+        ],
+        "ans": "B",
+        "explanation": "The capacitance of a capacitor is increased by a factor of k when a dielectric is inserted between its plates.",
+        "difficulty": "hard",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A parallel plate capacitor has a capacitance of 20 μF. If a metal plate is placed parallel to the capacitor plates, the new capacitance is?",
+        "opts": [
+          "(A) 10 μF",
+          "(B) 20 μF",
+          "(C) 40 μF",
+          "(D) 80 μF"
+        ],
+        "ans": "D",
+        "explanation": "The presence of a metal plate parallel to the capacitor plates will increase the capacitance by a factor of 4.",
+        "difficulty": "hard",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A capacitor of capacitance C is connected to a battery of emf V through a resistor R. If the time constant of the circuit is τ, the time taken for the capacitor to charge to 90% of its maximum value is?",
+        "opts": [
+          "(A) τ",
+          "(B) 2τ",
+          "(C) 3τ",
+          "(D) 4τ"
+        ],
+        "ans": "B",
+        "explanation": "The time taken for the capacitor to charge to 90% of its maximum value is 2 times the time constant of the circuit.",
+        "difficulty": "hard",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A parallel plate capacitor has a capacitance of 15 μF. If the distance between the plates is increased by a factor of 3, the new capacitance is?",
+        "opts": [
+          "(A) 5 μF",
+          "(B) 15 μF",
+          "(C) 30 μF",
+          "(D) 45 μF"
+        ],
+        "ans": "B",
+        "explanation": "The capacitance of a parallel plate capacitor is given by C = ε₀A/d. Increasing the distance by a factor of 3 will result in a new capacitance of 1/3 times the original capacitance.",
+        "difficulty": "hard",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A capacitor of capacitance C is connected to a battery of emf V. If the capacitor is fully charged, the energy stored in the capacitor is?",
+        "opts": [
+          "(A) CV^2/2",
+          "(B) CV^2",
+          "(C) V/C",
+          "(D) C/V"
+        ],
+        "ans": "A",
+        "explanation": "The energy stored in a capacitor is given by U = CV^2/2.",
+        "difficulty": "medium",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A parallel plate capacitor has a capacitance of 25 μF. If the area of each plate is increased by a factor of 2 and the distance between the plates is decreased by a factor of 5, the new capacitance is?",
+        "opts": [
+          "(A) 50 μF",
+          "(B) 100 μF",
+          "(C) 200 μF",
+          "(D) 250 μF"
+        ],
+        "ans": "B",
+        "explanation": "The capacitance of a parallel plate capacitor is given by C = ε₀A/d. Increasing the area by a factor of 2 and decreasing the distance by a factor of 5 will result in a new capacitance of 2 × 5 = 10 times the original capacitance.",
+        "difficulty": "hard",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A capacitor of capacitance C is connected to a battery of emf V through a resistor R. The current through the resistor is?",
+        "opts": [
+          "(A) I = V/R",
+          "(B) I = V/(R + C)",
+          "(C) I = VCR",
+          "(D) I = V/C"
+        ],
+        "ans": "A",
+        "explanation": "The current through the resistor is given by I = V/R.",
+        "difficulty": "medium",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A parallel plate capacitor has a capacitance of 35 μF. If the dielectric constant of the material between the plates is increased by a factor of 3, the new capacitance is?",
+        "opts": [
+          "(A) 10 μF",
+          "(B) 35 μF",
+          "(C) 60 μF",
+          "(D) 105 μF"
+        ],
+        "ans": "D",
+        "explanation": "The capacitance of a parallel plate capacitor is given by C = ε₀A/d. Increasing the dielectric constant by a factor of 3 will result in a new capacitance of 3 times the original capacitance.",
+        "difficulty": "hard",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A capacitor of capacitance C is connected to a battery of emf V. If the capacitor is disconnected from the battery, the energy stored in the capacitor is?",
+        "opts": [
+          "(A) CV^2/2",
+          "(B) CV^2",
+          "(C) V/C",
+          "(D) C/V"
+        ],
+        "ans": "A",
+        "explanation": "The energy stored in a capacitor is given by U = CV^2/2.",
+        "difficulty": "medium",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A parallel plate capacitor has a capacitance of 40 μF. If the area of each plate is increased by a factor of 5 and the distance between the plates is decreased by a factor of 2, the new capacitance is?",
+        "opts": [
+          "(A) 50 μF",
+          "(B) 100 μF",
+          "(C) 200 μF",
+          "(D) 400 μF"
+        ],
+        "ans": "D",
+        "explanation": "The capacitance of a parallel plate capacitor is given by C = ε₀A/d. Increasing the area by a factor of 5 and decreasing the distance by a factor of 2 will result in a new capacitance of 5 × 2 = 10 times the original capacitance.",
+        "difficulty": "hard",
+        "topic": "Capacitor"
+      },
+      {
+        "q": "A capacitor of capacitance C is connected to a battery of emf V through a resistor R. If the time constant of the circuit is τ, the time taken for the capacitor to charge to 99% of its maximum value is?",
+        "opts": [
+          "(A) τ",
+          "(B) 2τ",
+          "(C) 3τ",
+          "(D) 4τ"
+        ],
+        "ans": "C",
+        "explanation": "The time taken for the capacitor to charge to 99% of its maximum value is 3 times the time constant of the circuit.",
+        "difficulty": "hard",
+        "topic": "Capacitor"
+      }
+    ],
+    "total": 20
+  }
+}

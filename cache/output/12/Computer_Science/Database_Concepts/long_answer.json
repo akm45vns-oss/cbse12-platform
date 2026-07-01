@@ -1,0 +1,81 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Database Concepts",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:33:39.642Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the difference between a primary key and a unique key in a relation schema.",
+        "marks": 5,
+        "answer": "A primary key is a column or a set of columns in a relation schema that uniquely identifies each row. It cannot be null and must be unique. On the other hand, a unique key is a column or a set of columns in a relation schema that uniquely identifies each row, but it can be null. The primary key is used to identify the rows, while the unique key is used to ensure that each value is unique.",
+        "marking_scheme": [
+          "Understanding the concept of primary key and unique key (2 marks)",
+          "Difference between primary key and unique key (3 marks)"
+        ],
+        "topic": "Relational Database Management System",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of normalization and its importance in database design.",
+        "marks": 5,
+        "answer": "Normalization is the process of organizing the data in a database to minimize data redundancy and dependency. It involves dividing the data into multiple tables and linking them using relationships. Normalization is important in database design as it helps to eliminate data redundancy, improve data integrity, and reduce data anomalies.",
+        "marking_scheme": [
+          "Understanding the concept of normalization (2 marks)",
+          "Importance of normalization in database design (3 marks)"
+        ],
+        "topic": "Relational Database Management System",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the different types of relationships between entities in a relation schema.",
+        "marks": 5,
+        "answer": "There are three types of relationships between entities in a relation schema: one-to-one, one-to-many, and many-to-many. A one-to-one relationship exists when one row in one table is related to only one row in another table. A one-to-many relationship exists when one row in one table is related to multiple rows in another table. A many-to-many relationship exists when multiple rows in one table are related to multiple rows in another table.",
+        "marking_scheme": [
+          "Understanding one-to-one relationship (1 mark)",
+          "Understanding one-to-many relationship (1 mark)",
+          "Understanding many-to-many relationship (3 marks)"
+        ],
+        "topic": "Relational Database Management System",
+        "is_numerical": false
+      },
+      {
+        "q": "A company has 10 employees, and each employee has a unique employee ID. The average salary of the employees is Rs. 50000. If the company wants to create a table with the employee ID and salary, how many bytes will be required to store the salary column?",
+        "marks": 5,
+        "answer": "Calculation:\n 1 byte = 8 bits\n 1 byte can store 2^8 = 256 values\n Since the average salary is Rs. 50000, we need to store 5 digits (50000)\n 5 digits can be stored in 5/2 = 2.5 bytes\n Since we can't store a fraction of a byte, we need to round up to the nearest whole number\n Therefore, 3 bytes will be required to store the salary column.",
+        "marking_scheme": [
+          "Understanding the concept of byte storage (1 mark)",
+          "Calculating the number of bytes required (4 marks)"
+        ],
+        "topic": "Database Modeling",
+        "is_numerical": true
+      },
+      {
+        "q": "A relation R has 100 rows and 5 columns. If the average length of each column is 10 characters, how many bytes will be required to store the entire relation?",
+        "marks": 5,
+        "answer": "Calculation:\n 1 byte = 8 bits\n 1 byte can store 2^8 = 256 values\n Since the average length of each column is 10 characters, we need to store 10 characters\n 10 characters can be stored in 10/8 = 1.25 bytes\n Since we can't store a fraction of a byte, we need to round up to the nearest whole number\n Therefore, 2 bytes will be required to store 1 character\n Since there are 5 columns, the total bytes required to store the relation is 2 * 5 = 10 bytes\n The relation has 100 rows, so the total bytes required to store the entire relation is 10 * 100 = 1000 bytes",
+        "marking_scheme": [
+          "Understanding the concept of byte storage (1 mark)",
+          "Calculating the number of bytes required (4 marks)"
+        ],
+        "topic": "Data Storage",
+        "is_numerical": true
+      },
+      {
+        "q": "A relation R has 50 rows and 3 columns. If the average length of each column is 20 bytes, how many kilobytes will be required to store the entire relation?",
+        "marks": 5,
+        "answer": "Calculation:\n The total bytes required to store the relation is 50 * 3 * 20 = 3000 bytes\n Since 1 kilobyte = 1024 bytes, we need to convert 3000 bytes to kilobytes\n 3000 bytes / 1024 = 2.929 kilometers (approximately)\n Rounding up to the nearest whole number, the total kilobytes required to store the relation is 3 kilobytes",
+        "marking_scheme": [
+          "Understanding the concept of kilobyte storage (1 mark)",
+          "Calculating the number of kilobytes required (4 marks)"
+        ],
+        "topic": "Data Storage",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

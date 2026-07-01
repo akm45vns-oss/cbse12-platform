@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T18:12:13.358Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the phenomenon of electromagnetic induction. State Faraday's law of electromagnetic induction and explain its significance in our daily life.",
+        "marks": 5,
+        "answer": "Electromagnetic induction is a process where a changing magnetic field induces an electric field in a conductor. Faraday's law of electromagnetic induction states that the induced electromotive force (EMF) in a closed loop is equal to the negative rate of change of magnetic flux through the loop. This is mathematically expressed as ε = -dΦ/dt. The significance of this law lies in its application in various electrical devices such as generators, motors, and transformers.",
+        "marking_scheme": [
+          "Understanding of electromagnetic induction (1 mark)",
+          "Statement of Faraday's law (1 mark)",
+          "Significance of Faraday's law in daily life (3 marks)"
+        ],
+        "topic": "Electromagnetic Induction",
+        "is_numerical": false
+      },
+      {
+        "q": "A coil of 100 turns is placed in a magnetic field with a constant area and a strength of 2 T. The magnetic flux linked with the coil is 0.5 Wb. Find the induced EMF in the coil when the magnetic flux is reduced to 0.2 Wb in 0.1 s.",
+        "marks": 5,
+        "answer": "Calculation:\nε = -N(dΦ/dt)\n= -100(0.2 - 0.5)/0.1\n= 300 V",
+        "marking_scheme": [
+          "Understanding of the formula ε = -N(dΦ/dt) (1 mark)",
+          "Calculation of induced EMF (3 marks)",
+          "Significance of the result (1 mark)"
+        ],
+        "topic": "Electromagnetic Induction",
+        "is_numerical": true
+      },
+      {
+        "q": "A bar magnet is placed near a coil of wire. The magnetic field of the bar magnet induces a current in the coil. Describe the direction of the induced current and the force experienced by the coil when the north pole of the bar magnet is brought closer to the coil.",
+        "marks": 5,
+        "answer": "When the north pole of the bar magnet is brought closer to the coil, the magnetic flux linked with the coil increases. This increase in magnetic flux induces an electric field in the coil. According to Lenz's law, the direction of the induced current is such that it opposes the change in magnetic flux. As the north pole of the bar magnet is brought closer to the coil, the induced current flows in a direction such that it produces a magnetic field that repels the north pole. The force experienced by the coil is repulsive.",
+        "marking_scheme": [
+          "Understanding of Lenz's law (1 mark)",
+          "Direction of induced current (2 marks)",
+          "Force experienced by the coil (2 marks)"
+        ],
+        "topic": "Electromagnetic Induction",
+        "is_numerical": false
+      },
+      {
+        "q": "A rectangular loop of wire of dimensions 20 cm × 10 cm is placed in a uniform magnetic field of strength 1.5 T. Find the magnetic flux linked with the loop when the area vector of the loop is parallel to the magnetic field.",
+        "marks": 5,
+        "answer": "Calculation:\nΦ = BA cosθ\n= 1.5 × (0.2 × 0.1) cos 0°\n= 0.03 Wb",
+        "marking_scheme": [
+          "Understanding of the formula Φ = BA cosθ (1 mark)",
+          "Calculation of magnetic flux (3 marks)",
+          "Significance of the result (1 mark)"
+        ],
+        "topic": "Magnetic Flux",
+        "is_numerical": true
+      },
+      {
+        "q": "A current of 2 A flows through a straight wire of length 2 m. Find the magnetic field at a distance of 1 m from the wire.",
+        "marks": 5,
+        "answer": "Calculation:\nB = μ₀I/2πr\n= (4π × 10⁻⁷ × 2)/2π(1)\n= 4 × 10⁻⁶ T",
+        "marking_scheme": [
+          "Understanding of the formula B = μ₀I/2πr (1 mark)",
+          "Calculation of magnetic field (3 marks)",
+          "Significance of the result (1 mark)"
+        ],
+        "topic": "Magnetic Field Due to a Current-Carrying Conductor",
+        "is_numerical": true
+      },
+      {
+        "q": "Describe the characteristics of a magnetic field produced by a current-carrying conductor. State the direction of the magnetic field around a straight wire and a circular loop.",
+        "marks": 5,
+        "answer": "The magnetic field produced by a current-carrying conductor is a vector field that surrounds the conductor. The direction of the magnetic field around a straight wire is given by the right-hand rule, where the thumb points in the direction of the current and the fingers curl in the direction of the magnetic field. The direction of the magnetic field around a circular loop is also given by the right-hand rule, with the magnetic field lines emerging from the loop at the top and entering at the bottom.",
+        "marking_scheme": [
+          "Understanding of magnetic field (1 mark)",
+          "Direction of magnetic field around a straight wire (2 marks)",
+          "Direction of magnetic field around a circular loop (2 marks)"
+        ],
+        "topic": "Magnetic Field Due to a Current-Carrying Conductor",
+        "is_numerical": false
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Matrices",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T12:30:35.803Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If A = [[2, 0], [0, 3]], then adj A is?",
+        "opts": [
+          "(A) [[4, 0], [0, 6]]",
+          "(B) [[3, 0], [0, 2]]",
+          "(C) [[2, 0], [0, 3]]",
+          "(D) [[6, 0], [0, 4]]"
+        ],
+        "ans": "A",
+        "explanation": "To find adj A, we need to find the cofactor matrix of A and then transpose it.",
+        "difficulty": "easy",
+        "topic": "Inverse of a Matrix"
+      },
+      {
+        "q": "If A is a square matrix, then (A^T)^-1 =",
+        "opts": [
+          "(A) (A^-1)^T",
+          "(B) (A^T)^-1",
+          "(C) A",
+          "(D) A^T"
+        ],
+        "ans": "A",
+        "explanation": "Using the property of transpose and inverse of a matrix.",
+        "difficulty": "easy",
+        "topic": "Properties of Transpose of a Matrix"
+      },
+      {
+        "q": "If A = [[2, 1], [0, 2]], then A^2 =",
+        "opts": [
+          "(A) [[4, 2], [0, 4]]",
+          "(B) [[4, 4], [0, 4]]",
+          "(C) [[4, 2], [0, 4]]",
+          "(D) [[4, 0], [0, 4]]"
+        ],
+        "ans": "C",
+        "explanation": "To find A^2, we need to multiply the matrix A with itself.",
+        "difficulty": "easy",
+        "topic": "Matrix Multiplication"
+      },
+      {
+        "q": "If A = [[1, 0], [0, 1]], then A^3 =",
+        "opts": [
+          "(A) [[1, 0], [0, 1]]",
+          "(B) [[1, 0], [0, 1]]",
+          "(C) [[1, 0], [0, 1]]",
+          "(D) [[3, 0], [0, 3]]"
+        ],
+        "ans": "A",
+        "explanation": "To find A^3, we can use the property of idempotent matrix.",
+        "difficulty": "easy",
+        "topic": "Properties of Idempotent Matrix"
+      },
+      {
+        "q": "If A is a 3x3 matrix, then the number of elements in A is",
+        "opts": [
+          "(A) 3",
+          "(B) 6",
+          "(C) 9",
+          "(D) 12"
+        ],
+        "ans": "C",
+        "explanation": "A 3x3 matrix has 3 rows and 3 columns, so the total number of elements is 3 x 3 = 9",
+        "difficulty": "easy",
+        "topic": "Introduction to Matrices"
+      },
+      {
+        "q": "If A = [[2, 1], [4, 3]], then the determinant of A is",
+        "opts": [
+          "(A) 5",
+          "(B) 6",
+          "(C) 7",
+          "(D) 8"
+        ],
+        "ans": "B",
+        "explanation": "To find the determinant of A, we can use the formula det(A) = a(ei - fh) - b(di - fg)",
+        "difficulty": "medium",
+        "topic": "Determinant of a Matrix"
+      },
+      {
+        "q": "If A and B are two 2x2 matrices, then the product AB is defined only if",
+        "opts": [
+          "(A) A and B are both square matrices",
+          "(B) A and B are both rectangular matrices",
+          "(C) A is a square matrix and B is a rectangular matrix",
+          "(D) A is a rectangular matrix and B is a square matrix"
+        ],
+        "ans": "A",
+        "explanation": "For matrix multiplication to be defined, the number of columns in the first matrix must be equal to the number of rows in the second matrix.",
+        "difficulty": "medium",
+        "topic": "Matrix Multiplication"
+      },
+      {
+        "q": "If A = [[2, 1], [4, 3]] and B = [[1, 2], [3, 4]], then the product AB is",
+        "opts": [
+          "(A) [[5, 8], [14, 19]]",
+          "(B) [[5, 7], [14, 17]]",
+          "(C) [[5, 6], [14, 15]]",
+          "(D) [[5, 8], [14, 21]]"
+        ],
+        "ans": "A",
+        "explanation": "To find the product AB, we need to multiply the matrix A with the matrix B.",
+        "difficulty": "medium",
+        "topic": "Matrix Multiplication"
+      },
+      {
+        "q": "If A is a 2x2 matrix, then the inverse of A is",
+        "opts": [
+          "(A) [[a, b], [c, d]]",
+          "(B) [[a, -b], [-c, d]]",
+          "(C) [[a, 0], [0, d]]",
+          "(D) [[d, 0], [0, a]]"
+        ],
+        "ans": "B",
+        "explanation": "The inverse of a 2x2 matrix A can be found using the formula A^-1 = (1/det(A)) * [[d, -b], [-c, a]]",
+        "difficulty": "medium",
+        "topic": "Inverse of a Matrix"
+      },
+      {
+        "q": "If A = [[2, 1], [4, 3]] and B = [[1, 2], [3, 4]], then the determinant of AB is",
+        "opts": [
+          "(A) 10",
+          "(B) 12",
+          "(C) 14",
+          "(D) 16"
+        ],
+        "ans": "C",
+        "explanation": "To find the determinant of AB, we can use the property det(AB) = det(A) * det(B)",
+        "difficulty": "medium",
+        "topic": "Determinant of a Matrix"
+      },
+      {
+        "q": "If A is a square matrix, then the transpose of A is",
+        "opts": [
+          "(A) (A^T)^T",
+          "(B) A^T",
+          "(C) A",
+          "(D) A^-1"
+        ],
+        "ans": "A",
+        "explanation": "The transpose of a square matrix A is obtained by interchanging its rows with columns.",
+        "difficulty": "medium",
+        "topic": "Properties of Transpose of a Matrix"
+      },
+      {
+        "q": "If A = [[2, 1], [4, 3]] and B = [[1, 2], [3, 4]], then the product BA is",
+        "opts": [
+          "(A) [[5, 8], [14, 19]]",
+          "(B) [[5, 7], [14, 17]]",
+          "(C) [[5, 6], [14, 15]]",
+          "(D) [[5, 8], [14, 21]]"
+        ],
+        "ans": "C",
+        "explanation": "To find the product BA, we need to multiply the matrix B with the matrix A.",
+        "difficulty": "hard",
+        "topic": "Matrix Multiplication"
+      },
+      {
+        "q": "If A is a 3x3 matrix, then the rank of A is",
+        "opts": [
+          "(A) 1",
+          "(B) 2",
+          "(C) 3",
+          "(D) 4"
+        ],
+        "ans": "C",
+        "explanation": "The rank of a matrix is the maximum number of linearly independent rows or columns in the matrix.",
+        "difficulty": "hard",
+        "topic": "Properties of Matrices"
+      },
+      {
+        "q": "If A = [[2, 1], [4, 3]] and B = [[1, 2], [3, 4]], then the determinant of (AB)^-1 is",
+        "opts": [
+          "(A) 1/10",
+          "(B) 1/12",
+          "(C) 1/14",
+          "(D) 1/16"
+        ],
+        "ans": "C",
+        "explanation": "To find the determinant of (AB)^-1, we can use the property det(AB^-1) = 1/det(AB)",
+        "difficulty": "hard",
+        "topic": "Determinant of a Matrix"
+      },
+      {
+        "q": "If A is a square matrix, then the inverse of A is unique",
+        "opts": [
+          "(A) true",
+          "(B) false"
+        ],
+        "ans": "A",
+        "explanation": "The inverse of a square matrix is unique and is denoted by A^-1",
+        "difficulty": "hard",
+        "topic": "Inverse of a Matrix"
+      },
+      {
+        "q": "If A = [[2, 1], [4, 3]] and B = [[1, 2], [3, 4]], then the rank of (AB)^-1 is",
+        "opts": [
+          "(A) 1",
+          "(B) 2",
+          "(C) 3",
+          "(D) 4"
+        ],
+        "ans": "C",
+        "explanation": "To find the rank of (AB)^-1, we can use the property rank(AB^-1) = rank(A^-1)",
+        "difficulty": "hard",
+        "topic": "Properties of Matrices"
+      },
+      {
+        "q": "If A is a square matrix, then the transpose of A^-1 is",
+        "opts": [
+          "(A) (A^-1)^T",
+          "(B) (A^T)^-1",
+          "(C) A",
+          "(D) A^-1"
+        ],
+        "ans": "B",
+        "explanation": "Using the property of transpose and inverse of a matrix.",
+        "difficulty": "hard",
+        "topic": "Properties of Transpose of a Matrix"
+      },
+      {
+        "q": "If A = [[2, 1], [4, 3]] and B = [[1, 2], [3, 4]], then the determinant of (BA)^-1 is",
+        "opts": [
+          "(A) 1/10",
+          "(B) 1/12",
+          "(C) 1/14",
+          "(D) 1/16"
+        ],
+        "ans": "B",
+        "explanation": "To find the determinant of (BA)^-1, we can use the property det(BA^-1) = 1/det(BA)",
+        "difficulty": "hard",
+        "topic": "Determinant of a Matrix"
+      },
+      {
+        "q": "If A is a square matrix, then the inverse of A is denoted by",
+        "opts": [
+          "(A) A^T",
+          "(B) A^-1",
+          "(C) A",
+          "(D) A^T"
+        ],
+        "ans": "B",
+        "explanation": "The inverse of a square matrix A is denoted by A^-1",
+        "difficulty": "hard",
+        "topic": "Inverse of a Matrix"
+      }
+    ],
+    "total": 19
+  }
+}

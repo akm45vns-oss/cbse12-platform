@@ -218,14 +218,20 @@ async function main() {
   }
 
   // Final checkpoint clear if everything succeeded
-  if (taskQueue.isEmpty) {
+  if (taskQueue.isEmpty && taskQueue.failedTasks.length === 0) {
     taskQueue.clearCheckpoint();
     console.log("\n🎉 Pipeline complete! All content generated successfully.");
+    process.exit(0);
+  } else if (taskQueue.isEmpty && taskQueue.failedTasks.length > 0) {
+    console.log(`\n⚠️ Pipeline finished but ${taskQueue.failedTasks.length} tasks permanently failed.`);
+    console.log(`   Clearing checkpoint so a fresh run can scoop them up.`);
+    taskQueue.clearCheckpoint();
+    process.exit(2);
   } else {
     console.log(`\n⚠️  Pipeline finished with ${taskQueue.pending} tasks remaining. Run again to continue.`);
+    process.exit(1);
   }
 
-  process.exit(0);
 }
 
 main().catch(err => {

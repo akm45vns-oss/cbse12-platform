@@ -1,0 +1,103 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Network Security Concepts",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T12:05:24.895Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Network Security",
+        "definition": "Network security refers to the practice of protecting a computer network from unauthorized access, use, disclosure, disruption, modification, or destruction. This includes protection against malware, viruses, and other online threats.",
+        "example": ""
+      },
+      {
+        "term": "Firewall",
+        "definition": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between a trusted network and an untrusted network, such as the internet.",
+        "example": "Example of a firewall is a router or a dedicated firewall appliance"
+      },
+      {
+        "term": "Intrusion Detection System (IDS)",
+        "definition": "An intrusion detection system (IDS) is a network security system that monitors network traffic for signs of unauthorized access or malicious activity. It detects and alerts on potential security threats.",
+        "example": "IDS can be software-based or hardware-based, and can be deployed as a network or host-based system"
+      },
+      {
+        "term": "Intrusion Prevention System (IPS)",
+        "definition": "An intrusion prevention system (IPS) is a network security system that not only detects potential security threats but also takes action to prevent them. It blocks malicious traffic and prevents attacks from occurring.",
+        "example": "IPS can be software-based or hardware-based, and can be deployed as a network or host-based system"
+      },
+      {
+        "term": "Encryption",
+        "definition": "Encryption is the process of converting plaintext data into unreadable ciphertext to protect it from unauthorized access. It is a fundamental concept in network security.",
+        "example": "Example of encryption is SSL/TLS protocol used for secure web browsing"
+      },
+      {
+        "term": "Decryption",
+        "definition": "Decryption is the process of converting ciphertext data back into its original plaintext form. It is the reverse process of encryption.",
+        "example": "Example of decryption is the process of retrieving data from an encrypted file"
+      },
+      {
+        "term": "Hashing",
+        "definition": "Hashing is a one-way process that converts data into a fixed-length string of characters, known as a hash value. It is used to verify data integrity and authenticity.",
+        "example": "Example of hashing is the use of MD5 or SHA-256 for password storage"
+      },
+      {
+        "term": "Digital Signature",
+        "definition": "A digital signature is a type of electronic signature that uses cryptography to authenticate the sender and ensure the integrity of a message or document.",
+        "example": "Example of digital signature is the use of PGP for secure email communication"
+      },
+      {
+        "term": "Certificate Authority (CA)",
+        "definition": "A certificate authority (CA) is a trusted third-party organization that issues digital certificates to verify the identity of individuals, organizations, or devices.",
+        "example": "Example of a CA is VeriSign or GlobalSign"
+      },
+      {
+        "term": "Public Key Infrastructure (PKI)",
+        "definition": "A public key infrastructure (PKI) is a system that enables secure communication over the internet by using public-key cryptography. It consists of a certificate authority, registration authorities, and repositories.",
+        "example": "Example of a PKI is the use of SSL/TLS protocol for secure web browsing"
+      },
+      {
+        "term": "Symmetric Key Cryptography",
+        "definition": "Symmetric key cryptography uses the same secret key for both encryption and decryption. It is fast and efficient but requires secure key exchange.",
+        "example": "Example of symmetric key cryptography is AES"
+      },
+      {
+        "term": "Asymmetric Key Cryptography",
+        "definition": "Asymmetric key cryptography uses a pair of keys, one public and one private, for encryption and decryption. It is secure but slower than symmetric key cryptography.",
+        "example": "Example of asymmetric key cryptography is RSA"
+      },
+      {
+        "term": "Secure Sockets Layer (SSL)",
+        "definition": "Secure Sockets Layer (SSL) is a cryptographic protocol that provides secure communication over the internet. It is used for secure web browsing and other online transactions.",
+        "example": "Example of SSL is the use of HTTPS protocol"
+      },
+      {
+        "term": "Transport Layer Security (TLS)",
+        "definition": "Transport Layer Security (TLS) is a cryptographic protocol that provides secure communication over the internet. It is an improved version of SSL and is used for secure web browsing and other online transactions.",
+        "example": "Example of TLS is the use of HTTPS protocol"
+      },
+      {
+        "term": "Denial of Service (DoS)",
+        "definition": "Denial of Service (DoS) is a type of cyber attack that involves overwhelming a network or system with traffic to make it unavailable to users.",
+        "example": "Example of DoS is a Distributed Denial of Service (DDoS) attack"
+      },
+      {
+        "term": "Malware",
+        "definition": "Malware is software that is designed to harm or exploit a computer system. It can include viruses, worms, trojans, and other types of malicious software.",
+        "example": "Example of malware is a computer virus that deletes files on a system"
+      },
+      {
+        "term": "Virus",
+        "definition": "A virus is a type of malware that replicates itself by attaching to other programs or files on a computer system.",
+        "example": "Example of a virus is the I Love You virus"
+      },
+      {
+        "term": "Worm",
+        "definition": "A worm is a type of malware that can spread from system to system without the need for human interaction.",
+        "example": "Example of a worm is the Code Red worm"
+      }
+    ]
+  }
+}

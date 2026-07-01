@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Matrices",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T15:56:08.881Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A company produces two products, A and B, using two machines, X and Y. The production of one unit of A requires 2 hours on machine X and 3 hours on machine Y, while the production of one unit of B requires 4 hours on machine X and 2 hours on machine Y. The company has 120 hours of machine X and 90 hours of machine Y available per week. The profit from one unit of A is Rs. 500 and from one unit of B is Rs. 600. The company wants to determine the optimal production levels of A and B to maximize profit.",
+        "questions": [
+          {
+            "q": "Represent the given information in matrix form to find the optimal production levels.",
+            "opts": [
+              "(A) [2 4; 3 2]",
+              "(B) [2 3; 4 2]",
+              "(C) [2 4; 3 2] and [500 600]",
+              "(D) [2 3; 4 2] and [500 600]"
+            ],
+            "ans": "C",
+            "explanation": "The matrix representation of the given information is [2 4; 3 2] for the production hours and [500 600] for the profit."
+          },
+          {
+            "q": "If the company produces 10 units of A and 15 units of B, what is the total profit?",
+            "opts": [
+              "(A) Rs. 10500",
+              "(B) Rs. 12000",
+              "(C) Rs. 13500",
+              "(D) Rs. 15000"
+            ],
+            "ans": "C",
+            "explanation": "Total profit = (10 * 500) + (15 * 600) = 5000 + 9000 = 14000, but we need to check if this combination is possible with the given constraints."
+          },
+          {
+            "q": "What is the maximum number of units of A that can be produced?",
+            "opts": [
+              "(A) 20",
+              "(B) 30",
+              "(C) 40",
+              "(D) 50"
+            ],
+            "ans": "B",
+            "explanation": "To find the maximum number of units of A, we divide the total hours of machine X by the hours required for A, which is 120 / 2 = 60, but we also need to consider the hours of machine Y, which is 90 / 3 = 30."
+          },
+          {
+            "q": "Determine the equation for the total hours used on machine X.",
+            "opts": [
+              "(A) 2x + 4y = 120",
+              "(B) 2x + 3y = 120",
+              "(C) x + 2y = 120",
+              "(D) x + 4y = 120"
+            ],
+            "ans": "A",
+            "explanation": "The total hours used on machine X is the sum of the hours used to produce A and B, which is 2x + 4y = 120."
+          },
+          {
+            "q": "What is the total hours used on machine Y if 20 units of A and 10 units of B are produced?",
+            "opts": [
+              "(A) 80",
+              "(B) 90",
+              "(C) 100",
+              "(D) 110"
+            ],
+            "ans": "B",
+            "explanation": "Total hours used on machine Y = (20 * 3) + (10 * 2) = 60 + 20 = 80, which is less than the available hours, so it is possible."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A student is given two matrices A and B, where A = [1 2; 3 4] and B = [5 6; 7 8]. The student needs to find the product of A and B and then determine the value of the element in the first row and second column of the resulting matrix.",
+        "questions": [
+          {
+            "q": "Find the product of matrices A and B.",
+            "opts": [
+              "(A) [19 22; 43 50]",
+              "(B) [19 24; 43 50]",
+              "(C) [19 22; 43 50] and [500 600]",
+              "(D) [19 24; 43 50] and [500 600]"
+            ],
+            "ans": "A",
+            "explanation": "The product of A and B is [1*5 + 2*7, 1*6 + 2*8; 3*5 + 4*7, 3*6 + 4*8] = [19, 22; 43, 50]."
+          },
+          {
+            "q": "What is the value of the element in the first row and second column of the resulting matrix?",
+            "opts": [
+              "(A) 19",
+              "(B) 22",
+              "(C) 43",
+              "(D) 50"
+            ],
+            "ans": "B",
+            "explanation": "The element in the first row and second column is 22."
+          },
+          {
+            "q": "If matrix A is a 2x3 matrix and matrix B is a 3x2 matrix, can we find the product of A and B?",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) Maybe",
+              "(D) Depends on A and B"
+            ],
+            "ans": "A",
+            "explanation": "Since the number of columns in A is equal to the number of rows in B, we can find the product of A and B."
+          },
+          {
+            "q": "Determine the dimension of the resulting matrix if A is a 2x3 matrix and B is a 3x2 matrix.",
+            "opts": [
+              "(A) 2x2",
+              "(B) 2x3",
+              "(C) 3x2",
+              "(D) 3x3"
+            ],
+            "ans": "A",
+            "explanation": "The dimension of the resulting matrix will be 2x2, since A has 2 rows and B has 2 columns."
+          },
+          {
+            "q": "What is the condition for two matrices to be multiplied?",
+            "opts": [
+              "(A) The number of rows in the first matrix is equal to the number of columns in the second matrix",
+              "(B) The number of columns in the first matrix is equal to the number of rows in the second matrix",
+              "(C) The number of rows in both matrices is equal",
+              "(D) The number of columns in both matrices is equal"
+            ],
+            "ans": "B",
+            "explanation": "For two matrices to be multiplied, the number of columns in the first matrix must be equal to the number of rows in the second matrix."
+          }
+        ]
+      }
+    ]
+  }
+}

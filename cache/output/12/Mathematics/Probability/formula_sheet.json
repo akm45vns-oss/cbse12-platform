@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Probability",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T07:50:39.377Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Probability of an Event",
+        "formula": "P(E) = (Number of outcomes favourable to E) / (Total number of outcomes)",
+        "variables": "P(E) = Probability of event E",
+        "units": "-",
+        "notes": "For equally likely outcomes"
+      },
+      {
+        "name": "2. Probability of 'not E'",
+        "formula": "P(E') = 1 - P(E)",
+        "variables": "P(E') = Probability of event 'not E', P(E) = Probability of event E",
+        "units": "-",
+        "notes": "Complementary event"
+      },
+      {
+        "name": "3. Addition Theorem for 2 Events",
+        "formula": "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
+        "variables": "P(A ∪ B) = Probability of A or B, P(A) = Probability of A, P(B) = Probability of B, P(A ∩ B) = Probability of A and B",
+        "units": "-",
+        "notes": "For any two events A and B"
+      },
+      {
+        "name": "4. Multiplication Theorem for 2 Independent Events",
+        "formula": "P(A ∩ B) = P(A) * P(B)",
+        "variables": "P(A ∩ B) = Probability of A and B, P(A) = Probability of A, P(B) = Probability of B",
+        "units": "-",
+        "notes": "For independent events A and B"
+      },
+      {
+        "name": "5. Conditional Probability",
+        "formula": "P(A|B) = P(A ∩ B) / P(B)",
+        "variables": "P(A|B) = Probability of A given B, P(A ∩ B) = Probability of A and B, P(B) = Probability of B",
+        "units": "-",
+        "notes": "For events A and B where P(B) ≠ 0"
+      },
+      {
+        "name": "6. Bayes' Theorem",
+        "formula": "P(A|B) = P(B|A) * P(A) / P(B)",
+        "variables": "P(A|B) = Probability of A given B, P(B|A) = Probability of B given A, P(A) = Probability of A, P(B) = Probability of B",
+        "units": "-",
+        "notes": "For events A and B where P(B) ≠ 0"
+      },
+      {
+        "name": "7. Probability of 'at least'",
+        "formula": "P(at least n) = 1 - P(x < n)",
+        "variables": "P(at least n) = Probability of at least n, P(x < n) = Probability of less than n",
+        "units": "-",
+        "notes": "For discrete random variables"
+      },
+      {
+        "name": "8. Mean of a Probability Distribution",
+        "formula": "Mean (μ) = ∑xP(x)",
+        "variables": "μ = Mean, x = Value of random variable, P(x) = Probability of x",
+        "units": "-",
+        "notes": "For discrete random variables"
+      },
+      {
+        "name": "9. Variance of a Probability Distribution",
+        "formula": "Variance (σ²) = ∑(x - μ)²P(x) = ∑x²P(x) - μ²",
+        "variables": "σ² = Variance, x = Value of random variable, μ = Mean, P(x) = Probability of x",
+        "units": "-",
+        "notes": "For discrete random variables"
+      },
+      {
+        "name": "10. Standard Deviation of a Probability Distribution",
+        "formula": "Standard Deviation (σ) = √Variance",
+        "variables": "σ = Standard Deviation",
+        "units": "-",
+        "notes": "Measure of dispersion"
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "MySQL Functions and Grouping",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:52:58.200Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A university wants to analyze the performance of its students in an online examination. The examination consists of three subjects: mathematics, science, and English. The scores of all the students are stored in a MySQL database table named 'examination_results'. The university wants to calculate the average score of all students in each subject, the total number of students who scored above 70 in each subject, and the average score of students who scored above 70 in each subject. The examination_results table has the following columns: id, student_name, mathematics_score, science_score, english_score.",
+        "questions": [
+          {
+            "q": "What type of SQL function can be used to calculate the average score of students in each subject?",
+            "opts": [
+              "GROUP BY clause",
+              "HAVING clause",
+              "SUM() function",
+              "AVG() function"
+            ],
+            "ans": "D",
+            "explanation": "The AVG() function is used to calculate the average value of a numeric column."
+          },
+          {
+            "q": "Which MySQL function can be used to count the total number of students who scored above 70 in each subject?",
+            "opts": [
+              "COUNT() function",
+              "SUM() function",
+              "AVG() function",
+              "MAX() function"
+            ],
+            "ans": "A",
+            "explanation": "The COUNT() function is used to count the number of rows in a table that match a specified condition."
+          },
+          {
+            "q": "How can we use the GROUP BY clause to group the results by subject and calculate the average score of students in each subject?",
+            "opts": [
+              "GROUP BY subject",
+              "GROUP BY subject, student_name",
+              "GROUP BY mathematics_score, science_score, english_score",
+              "GROUP BY id"
+            ],
+            "ans": "B",
+            "explanation": "The GROUP BY clause is used to group the results of a query by one or more columns."
+          },
+          {
+            "q": "What is the purpose of the HAVING clause in this scenario?",
+            "opts": [
+              "To filter the results based on the average score",
+              "To group the results by subject",
+              "To count the total number of students who scored above 70 in each subject",
+              "To calculate the average score of students who scored above 70 in each subject"
+            ],
+            "ans": "A",
+            "explanation": "The HAVING clause is used to filter the results of a query based on a condition."
+          },
+          {
+            "q": "Which MySQL function can be used to calculate the average score of students who scored above 70 in each subject?",
+            "opts": [
+              "AVG() function",
+              "SUM() function",
+              "COUNT() function",
+              "MAX() function"
+            ],
+            "ans": "A",
+            "explanation": "The AVG() function is used to calculate the average value of a numeric column."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A company wants to analyze the sales data of its products across different regions. The sales data is stored in a MySQL database table named 'sales_data'. The sales_data table has the following columns: product_id, region, sales_amount. The company wants to calculate the total sales amount for each product in each region, the total sales amount for each region, and the top-selling product in each region.",
+        "questions": [
+          {
+            "q": "How can we use the GROUP BY clause to group the results by product and region and calculate the total sales amount for each product in each region?",
+            "opts": [
+              "GROUP BY product_id, region",
+              "GROUP BY region, product_id",
+              "GROUP BY sales_amount, product_id",
+              "GROUP BY product_id"
+            ],
+            "ans": "A",
+            "explanation": "The GROUP BY clause is used to group the results of a query by one or more columns."
+          },
+          {
+            "q": "What type of MySQL function can be used to calculate the total sales amount for each region?",
+            "opts": [
+              "SUM() function",
+              "AVG() function",
+              "COUNT() function",
+              "MAX() function"
+            ],
+            "ans": "A",
+            "explanation": "The SUM() function is used to calculate the total value of a numeric column."
+          },
+          {
+            "q": "How can we use the HAVING clause to filter the results and get the top-selling product in each region?",
+            "opts": [
+              "HAVING sales_amount > (SELECT MAX(sales_amount) FROM sales_data)",
+              "HAVING sales_amount < (SELECT MAX(sales_amount) FROM sales_data)",
+              "HAVING sales_amount > (SELECT AVG(sales_amount) FROM sales_data)",
+              "HAVING sales_amount < (SELECT AVG(sales_amount) FROM sales_data)"
+            ],
+            "ans": "A",
+            "explanation": "The HAVING clause is used to filter the results of a query based on a condition."
+          },
+          {
+            "q": "Which MySQL function can be used to get the top-selling product in each region?",
+            "opts": [
+              "MAX() function",
+              "MIN() function",
+              "SUM() function",
+              "AVG() function"
+            ],
+            "ans": "D",
+            "explanation": "The AVG() function is used to calculate the average value of a numeric column."
+          },
+          {
+            "q": "How can we use the GROUP BY clause to group the results by region and calculate the total sales amount for each region?",
+            "opts": [
+              "GROUP BY product_id, region",
+              "GROUP BY region",
+              "GROUP BY sales_amount, region",
+              "GROUP BY product_id"
+            ],
+            "ans": "B",
+            "explanation": "The GROUP BY clause is used to group the results of a query by one or more columns."
+          }
+        ]
+      }
+    ]
+  }
+}

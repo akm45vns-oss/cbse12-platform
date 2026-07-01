@@ -1,0 +1,76 @@
+{
+  "class": "12",
+  "subject": "Economics",
+  "chapter": "Determination of Income and Employment",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T07:58:26.795Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Aggregate Demand (AD)",
+        "formula": "AD = C + I + G + (X - M)",
+        "variables": "C: Consumption, I: Investment, G: Government Spending, X: Exports, M: Imports",
+        "units": "-",
+        "notes": "Used to calculate the total demand for goods and services in an economy"
+      },
+      {
+        "name": "National Income (NI)",
+        "formula": "NI = C + I + G + (X - M) - Depreciation",
+        "variables": "C: Consumption, I: Investment, G: Government Spending, X: Exports, M: Imports, Depreciation: Wear and Tear of Capital",
+        "units": "-",
+        "notes": "Used to calculate the total income earned by the factors of production in an economy"
+      },
+      {
+        "name": "Gross Domestic Product (GDP)",
+        "formula": "GDP = C + I + G + (X - M)",
+        "variables": "C: Consumption, I: Investment, G: Government Spending, X: Exports, M: Imports",
+        "units": "-",
+        "notes": "Used to calculate the total value of goods and services produced within a country"
+      },
+      {
+        "name": "Marginal Propensity to Consume (MPC)",
+        "formula": "MPC = ΔC / ΔY",
+        "variables": "ΔC: Change in Consumption, ΔY: Change in Income",
+        "units": "-",
+        "notes": "Used to calculate the proportion of additional income that is spent on consumption"
+      },
+      {
+        "name": "Marginal Propensity to Save (MPS)",
+        "formula": "MPS = ΔS / ΔY",
+        "variables": "ΔS: Change in Saving, ΔY: Change in Income",
+        "units": "-",
+        "notes": "Used to calculate the proportion of additional income that is saved"
+      },
+      {
+        "name": "Multiplier (K)",
+        "formula": "K = 1 / (1 - MPC)",
+        "variables": "MPC: Marginal Propensity to Consume",
+        "units": "-",
+        "notes": "Used to calculate the effect of an increase in investment on the overall level of income"
+      },
+      {
+        "name": "Investment Multiplier with Government Spending",
+        "formula": "K = 1 / (1 - MPC) * ΔG",
+        "variables": "MPC: Marginal Propensity to Consume, ΔG: Change in Government Spending",
+        "units": "-",
+        "notes": "Used to calculate the effect of an increase in government spending on the overall level of income"
+      },
+      {
+        "name": "Tax Multiplier",
+        "formula": "K = -MPC / (1 - MPC) * ΔT",
+        "variables": "MPC: Marginal Propensity to Consume, ΔT: Change in Tax",
+        "units": "-",
+        "notes": "Used to calculate the effect of a change in tax on the overall level of income"
+      },
+      {
+        "name": "Equilibrium Level of Income",
+        "formula": "Y = (A + I) / (1 - MPC) or Y = C + I",
+        "variables": "Y: Equilibrium Level of Income, A: Autonomous Consumption, I: Investment, MPC: Marginal Propensity to Consume, C: Consumption",
+        "units": "-",
+        "notes": "Used to calculate the equilibrium level of income in an economy"
+      }
+    ]
+  }
+}

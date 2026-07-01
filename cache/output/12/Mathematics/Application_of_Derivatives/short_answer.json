@@ -1,0 +1,165 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Application of Derivatives",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T11:14:03.915Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define critical point for a function.",
+        "marks": 1,
+        "answer": "The critical point for a function is the point where the derivative of the function is equal to zero or undefined, which may be a local maxima, minima, or point of inflection.",
+        "key_points": [
+          "Critical point",
+          "Derivative"
+        ],
+        "topic": "Critical Points and Local Maxima/Minima"
+      },
+      {
+        "q": "State Rolle's theorem.",
+        "marks": 1,
+        "answer": "Rolle's theorem states that if a function f(x) is continuous on the closed interval [a, b], differentiable on the open interval (a, b), and f(a) = f(b), then there exists a point c in (a, b) such that f'(c) = 0.",
+        "key_points": [
+          "Rolle's theorem",
+          "Differentiability"
+        ],
+        "topic": "Rolle's Theorem and Lagrange's Mean Value Theorem"
+      },
+      {
+        "q": "Define increasing/decreasing function.",
+        "marks": 1,
+        "answer": "A function f(x) is said to be increasing on an interval if f(x1) < f(x2) for all x1, x2 in the interval, and decreasing if f(x1) > f(x2) for all x1, x2 in the interval.",
+        "key_points": [
+          "Increasing/decreasing function",
+          "Interval"
+        ],
+        "topic": "Increasing/Decreasing Functions"
+      },
+      {
+        "q": "State the necessary condition for a function to have a local maxima/minima.",
+        "marks": 1,
+        "answer": "The necessary condition for a function to have a local maxima/minima is that the derivative of the function at that point should be zero or undefined.",
+        "key_points": [
+          "Local maxima/minima",
+          "Derivative"
+        ],
+        "topic": "Critical Points and Local Maxima/Minima"
+      },
+      {
+        "q": "Define absolute maximum/minimum.",
+        "marks": 1,
+        "answer": "The absolute maximum of a function f(x) on a closed interval [a, b] is the largest value of f(x) on [a, b], and the absolute minimum is the smallest value of f(x) on [a, b].",
+        "key_points": [
+          "Absolute maximum/minimum",
+          "Closed interval"
+        ],
+        "topic": "Increasing/Decreasing Functions"
+      },
+      {
+        "q": "State the sufficient condition for a function to have a local maxima/minima.",
+        "marks": 2,
+        "answer": "The sufficient condition for a function to have a local maxima/minima is that the second derivative of the function at that point is negative/positive.",
+        "key_points": [
+          "Local maxima/minima",
+          "Second derivative"
+        ],
+        "topic": "Local Maxima/Minima"
+      },
+      {
+        "q": "Determine the critical points of the function f(x) = x^3 - 6x^2 + 9x + 2.",
+        "marks": 2,
+        "answer": "The critical points of the function f(x) = x^3 - 6x^2 + 9x + 2 are x = 1, x = 2, and x = 3.",
+        "key_points": [
+          "Critical points",
+          "Derivative"
+        ],
+        "topic": "Critical Points and Local Maxima/Minima"
+      },
+      {
+        "q": "Explain the concept of increasing/decreasing function on a closed interval.",
+        "marks": 2,
+        "answer": "A function f(x) is said to be increasing on a closed interval [a, b] if f(x1) < f(x2) for all x1 < x2 in [a, b], and decreasing if f(x1) > f(x2) for all x1 < x2 in [a, b].",
+        "key_points": [
+          "Increasing/decreasing function",
+          "Closed interval"
+        ],
+        "topic": "Increasing/Decreasing Functions"
+      },
+      {
+        "q": "State the necessary and sufficient conditions for a function to have a local maxima/minima.",
+        "marks": 3,
+        "answer": "The necessary and sufficient conditions for a function to have a local maxima/minima are: (a) the derivative of the function at that point should be zero or undefined, and (b) the second derivative of the function at that point should be negative/positive.",
+        "key_points": [
+          "Local maxima/minima",
+          "Derivative",
+          "Second derivative"
+        ],
+        "topic": "Local Maxima/Minima"
+      },
+      {
+        "q": "Determine the absolute maximum and minimum of the function f(x) = x^3 - 6x^2 + 9x + 2 on the closed interval [0, 2].",
+        "marks": 3,
+        "answer": "The absolute maximum of the function f(x) = x^3 - 6x^2 + 9x + 2 on the closed interval [0, 2] is 6, and the absolute minimum is 2.",
+        "key_points": [
+          "Absolute maximum/minimum",
+          "Closed interval"
+        ],
+        "topic": "Increasing/Decreasing Functions"
+      },
+      {
+        "q": "Explain the concept of Rolle's theorem and illustrate it with an example.",
+        "marks": 3,
+        "answer": "Rolle's theorem states that if a function f(x) is continuous on the closed interval [a, b], differentiable on the open interval (a, b), and f(a) = f(b), then there exists a point c in (a, b) such that f'(c) = 0. For example, consider the function f(x) = x^2 - 1 on the interval [0, 2]. Since f(0) = f(2) = -1, f(x) satisfies the conditions of Rolle's theorem, and hence there exists a point c in (0, 2) such that f'(c) = 0.",
+        "key_points": [
+          "Rolle's theorem",
+          "Differentiability"
+        ],
+        "topic": "Rolle's Theorem and Lagrange's Mean Value Theorem"
+      },
+      {
+        "q": "Find the equation of the tangent line to the curve y = x^2 + 1 at the point (1, 2).",
+        "marks": 3,
+        "answer": "The equation of the tangent line to the curve y = x^2 + 1 at the point (1, 2) is y - 2 = 2(x - 1).",
+        "key_points": [
+          "Tangent line",
+          "Point of tangency"
+        ],
+        "topic": "Tangents and Normals"
+      },
+      {
+        "q": "Explain the concept of increasing/decreasing function on an open interval.",
+        "marks": 3,
+        "answer": "A function f(x) is said to be increasing on an open interval (a, b) if f(x1) < f(x2) for all x1 < x2 in (a, b), and decreasing if f(x1) > f(x2) for all x1 < x2 in (a, b).",
+        "key_points": [
+          "Increasing/decreasing function",
+          "Open interval"
+        ],
+        "topic": "Increasing/Decreasing Functions"
+      },
+      {
+        "q": "Determine the critical points of the function f(x) = x^4 - 4x^3 + 6x^2 - 4x + 1.",
+        "marks": 3,
+        "answer": "The critical points of the function f(x) = x^4 - 4x^3 + 6x^2 - 4x + 1 are x = 1.",
+        "key_points": [
+          "Critical points",
+          "Derivative"
+        ],
+        "topic": "Critical Points and Local Maxima/Minima"
+      },
+      {
+        "q": "Find the equation of the normal line to the curve y = x^2 + 1 at the point (1, 2).",
+        "marks": 3,
+        "answer": "The equation of the normal line to the curve y = x^2 + 1 at the point (1, 2) is y - 2 = -1/2(x - 1).",
+        "key_points": [
+          "Normal line",
+          "Point of normalcy"
+        ],
+        "topic": "Tangents and Normals"
+      }
+    ],
+    "total": 15
+  }
+}

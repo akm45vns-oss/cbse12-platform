@@ -1,0 +1,20 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Linked List (Theory)",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:13:55.725Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Content",
+        "formula": "Here's the complete formula sheet for CBSE Class 12 Computer Science — Linked List (Theory) in JSON format.\n\n```json\n[\n  {\n    \"name\": \"Insertion Operation\",\n    \"formula\": \"Insert node after a given position: prev -> new_node -> next\",\n    \"variables\": \"prev (previous node), new_node (new node to be inserted), next (next node)\",\n    \"units\": \"\",\n    \"notes\": \"To insert a node after a given position in a linked list.\"\n  },\n  {\n    \"name\": \"Deletion Operation\",\n    \"formula\": \"Delete a given node: prev -> next\",\n    \"variables\": \"prev (previous node), next (next node)\",\n    \"units\": \"\",\n    \"notes\": \"To delete a node from a linked list.\"\n  },\n  {\n    \"name\": \"Traversal of Linked List\",\n    \"formula\": \"Start at the head of the list and traverse each node until the end is reached.\",\n    \"variables\": \"head (first node in the list)\",\n    \"units\": \"\",\n    \"notes\": \"To visit each node in a linked list.\"\n  },\n  {\n    \"name\": \"Time Complexity for Linked List Operations\",\n    \"formula\": \"Insertion: O(n), Deletion: O(n), Traversal: O(n)\",\n    \"variables\": \"n (number of nodes in the list)\",\n    \"units\": \"\",\n    \"notes\": \"To determine the time complexity of linked list operations.\"\n  },\n  {\n    \"name\": \"Linked List Data Structure\",\n    \"formula\": \"A linked list is a linear collection of data elements whose order is not given by their physical placement in memory.\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"To define a linked list data structure.\"\n  },\n  {\n    \"name\": \"Circular vs. Linear Linked List\",\n    \"formula\": \"Circular Linked List: NULL points to the first node, Linear Linked List: NULL points to the last node.\",\n    \"variables\": \"NULL (null pointer), first node\",\n    \"units\": \"\",\n    \"notes\": \"To distinguish between circular and linear linked lists.\"\n  },\n  {\n    \"name\": \"Advantages of Linked List\",\n    \"formula\": \"Flexible memory management, Efficient insertion and deletion, No extra memory required for storing pointers.\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"To list the advantages of using a linked list.\"\n  },\n  {\n    \"name\": \"Disadvantages of Linked List\",\n    \"formula\": \"Random access is not allowed, Extra memory required for storing pointers, Time-consuming traversal.\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"To list the disadvantages of using a linked list.\"\n  },\n  {\n    \"name\": \"Types of Linked List\",\n    \"formula\": \"Singly Linked List, Doubly Linked List, Circular Linked List.\",\n    \"variables\": \"\",\n    \"units\": \"\",\n    \"notes\": \"To classify linked lists into different types.\"\n  }\n]\n```\n\nNote: There are no mathematical formulas as such in the Linked List chapter, but the above JSON array includes key statements/laws, operations, and data structures related to the chapter.",
+        "variables": "",
+        "units": "",
+        "notes": ""
+      }
+    ]
+  }
+}

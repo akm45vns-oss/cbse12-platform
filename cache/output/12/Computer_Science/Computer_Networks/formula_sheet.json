@@ -1,0 +1,62 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Computer Networks",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T07:52:47.273Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Data Link Layer Frame Format",
+        "formula": "Preamble + Header + Data + FCS (Frame Check Sequence)",
+        "variables": "Preamble: Synchronization bytes, Header: Source and destination MAC addresses, Data: Data being transmitted, FCS: Error detection",
+        "units": "",
+        "notes": "Used to understand the structure of data link layer frames"
+      },
+      {
+        "name": "OSI Reference Model",
+        "formula": "Physical Layer + Data Link Layer + Network Layer + Transport Layer + Session Layer + Presentation Layer + Application Layer",
+        "variables": "Layers of the OSI model",
+        "units": "",
+        "notes": "A conceptual framework used to understand how data is transmitted over a network"
+      },
+      {
+        "name": "TCP/IP Model",
+        "formula": "Network Access Layer + Internet Layer + Transport Layer + Session Layer + Presentation Layer + Application Layer",
+        "variables": "Layers of the TCP/IP model",
+        "units": "",
+        "notes": "Simpler version of OSI model, widely used today"
+      },
+      {
+        "name": "Slotted Aloha Protocol Throughput",
+        "formula": "Throughput = (1 / (2 * (1 / (slot duration)) + 1 / (packet duration)))",
+        "variables": "Throughput: Network throughput, Slot duration: Time taken to transmit a slot, Packet duration: Time taken to transmit a packet",
+        "units": "bps",
+        "notes": "Used to calculate the throughput of a slotted Aloha network"
+      },
+      {
+        "name": "Polling Protocol Throughput",
+        "formula": "Throughput = (1 / Number of Devices) * (1 / (Transmission Time per Device))",
+        "variables": "Throughput: Network throughput, Number of Devices: Number of devices in the network, Transmission Time per Device: Time taken for a device to transmit",
+        "units": "bps",
+        "notes": "Used to calculate the throughput of a polling network"
+      },
+      {
+        "name": "Carrier Sense Multiple Access with Collision Detection (CSMA/CD) Throughput",
+        "formula": "Throughput = (1 / (1 / (bit rate) + (collision time / packet size)))",
+        "variables": "Throughput: Network throughput, Bit rate: Data transmission rate, Collision time: Time taken to detect and resolve a collision, Packet size: Size of the data packet",
+        "units": "bps",
+        "notes": "Used to calculate the throughput of a CSMA/CD network"
+      },
+      {
+        "name": "Network Topology",
+        "formula": "Bus Topology: Linear, Star Topology: Central node, Mesh Topology: Fully connected, Ring Topology: Circular",
+        "variables": "Network Topology: Types of network topologies",
+        "units": "",
+        "notes": "Used to understand the different types of network topologies"
+      }
+    ]
+  }
+}

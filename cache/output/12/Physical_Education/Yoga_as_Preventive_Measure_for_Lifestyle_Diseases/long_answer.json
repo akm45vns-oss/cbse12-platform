@@ -1,0 +1,85 @@
+{
+  "class": "12",
+  "subject": "Physical Education",
+  "chapter": "Yoga as Preventive Measure for Lifestyle Diseases",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:28:54.546Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain how yoga can be used as a preventive measure for lifestyle diseases. Highlight its benefits and importance in modern times.",
+        "marks": 5,
+        "answer": "Yoga can be used as a preventive measure for lifestyle diseases by promoting physical, mental, and emotional well-being. Its benefits include reducing stress levels, improving flexibility and balance, and enhancing cardiovascular health. Regular practice of yoga can also improve immune function, boost energy levels, and promote better sleep. In modern times, yoga has become increasingly important as a means of preventing lifestyle diseases such as obesity, diabetes, and heart disease.",
+        "marking_scheme": [
+          "Explain the benefits of yoga (1 mark)",
+          "Highlight the importance of yoga in modern times (1 mark)",
+          "Provide examples of lifestyle diseases that can be prevented through yoga (1 mark)",
+          "Discuss the impact of yoga on physical, mental, and emotional well-being (2 marks)"
+        ],
+        "topic": "Importance of Yoga in Preventing Lifestyle Diseases",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the role of yoga in managing stress and anxiety. How can it be incorporated into daily life?",
+        "marks": 5,
+        "answer": "Yoga plays a significant role in managing stress and anxiety by promoting relaxation, reducing muscle tension, and improving mood. It can be incorporated into daily life through regular practice, such as starting with short sessions (10-15 minutes) and gradually increasing the duration. Yoga can also be practiced at home, in the office, or during breaks throughout the day.",
+        "marking_scheme": [
+          "Explain the role of yoga in managing stress and anxiety (2 marks)",
+          "Discuss how yoga can be incorporated into daily life (2 marks)",
+          "Provide examples of yoga practices that can be done at home or in the office (1 mark)"
+        ],
+        "topic": "Yoga in Managing Stress and Anxiety",
+        "is_numerical": false
+      },
+      {
+        "q": "How can yoga help in improving flexibility and balance? Provide examples of yoga poses that can be practiced to achieve this goal.",
+        "marks": 5,
+        "answer": "Yoga can help improve flexibility and balance by stretching and strengthening the muscles, tendons, and ligaments. Examples of yoga poses that can be practiced to achieve this goal include the downward-facing dog, warrior pose, and tree pose. These poses help to increase flexibility and balance by stretching the hamstrings, quadriceps, and hip flexors.",
+        "marking_scheme": [
+          "Explain how yoga improves flexibility and balance (2 marks)",
+          "Provide examples of yoga poses that can be practiced to achieve this goal (2 marks)",
+          "Discuss the benefits of improving flexibility and balance through yoga (1 mark)"
+        ],
+        "topic": "Yoga in Improving Flexibility and Balance",
+        "is_numerical": false
+      },
+      {
+        "q": "A person doing yoga regularly has a body mass index (BMI) of 25. If the person does yoga for 30 minutes, 3 times a week, for 6 weeks, what is the change in BMI?",
+        "marks": 5,
+        "answer": "Calculation:\nBMI = weight (in kg) / height (in meters)^2\nAssuming the person's weight and height remain constant,\nChange in BMI = 0\nHowever, since the person is doing yoga, we can assume a weight loss of approximately 0.5 kg per week.\nNew BMI = (weight - 6*0.5) / height^2\nNew BMI = 23.5\nChange in BMI = New BMI - Initial BMI = 23.5 - 25 = -1.5\nTherefore, the change in BMI is -1.5.",
+        "marking_scheme": [
+          "Calculate the initial BMI (1 mark)",
+          "Assume a weight loss and calculate the new BMI (2 marks)",
+          "Calculate the change in BMI (2 marks)"
+        ],
+        "topic": "Effect of Yoga on Body Mass Index",
+        "is_numerical": true
+      },
+      {
+        "q": "A yoga instructor wants to create a routine that includes 15 minutes of meditation, 20 minutes of asana practice, and 10 minutes of pranayama. If the instructor teaches 5 classes per day, how many minutes of yoga does the instructor teach in total?",
+        "marks": 5,
+        "answer": "Calculation:\nTotal time per class = 15 + 20 + 10 = 45 minutes\nTotal time per day = 5 classes * 45 minutes/class = 225 minutes\nTherefore, the instructor teaches a total of 225 minutes of yoga per day.",
+        "marking_scheme": [
+          "Calculate the total time per class (1 mark)",
+          "Calculate the total time per day (3 marks)"
+        ],
+        "topic": "Time Management in Yoga Classes",
+        "is_numerical": true
+      },
+      {
+        "q": "A person has a resting heart rate of 72 beats per minute. After practicing yoga for 30 minutes, the person's heart rate decreases to 64 beats per minute. What is the percentage decrease in heart rate?",
+        "marks": 5,
+        "answer": "Calculation:\nInitial heart rate = 72 beats per minute\nFinal heart rate = 64 beats per minute\nPercentage decrease = ((Initial heart rate - Final heart rate) / Initial heart rate) * 100\nPercentage decrease = ((72 - 64) / 72) * 100 = 11.11%\nTherefore, the percentage decrease in heart rate is 11.11%.",
+        "marking_scheme": [
+          "Calculate the initial and final heart rates (1 mark)",
+          "Calculate the percentage decrease in heart rate (3 marks)"
+        ],
+        "topic": "Effect of Yoga on Heart Rate",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

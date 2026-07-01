@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "File Handling",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:58:45.479Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Rahul, a software developer, is working on a project that involves storing and retrieving employee data. He needs to create a file to store employee details, including employee ID, name, and department. Rahul wants to ensure that the file is created in a way that allows him to easily add, delete, or modify employee records. He also wants to prevent data loss in case the system crashes. Rahul decides to use a file handling approach that involves creating a file, writing data to it, and then reading the data from the file. However, he is unsure about the best way to implement this approach. He knows that he needs to handle file operations such as file opening, closing, and error handling. Rahul wants to create a file that can store multiple records, each with its own set of attributes.",
+        "questions": [
+          {
+            "q": "What is Rahul trying to achieve in this scenario?",
+            "opts": [
+              "(A) Creating a secure database",
+              "(B) Storing and retrieving employee data",
+              "(C) Implementing a file system",
+              "(D) Developing a web application"
+            ],
+            "ans": "B",
+            "explanation": "Rahul is trying to store and retrieve employee data, which involves creating a file to store the data and then reading it from the file."
+          },
+          {
+            "q": "What is Rahul's primary concern while creating the file?",
+            "opts": [
+              "(A) Data security",
+              "(B) File system integrity",
+              "(C) Ease of adding, deleting, or modifying records",
+              "(D) Data loss in case of system crash"
+            ],
+            "ans": "D",
+            "explanation": "Rahul's primary concern is to prevent data loss in case the system crashes."
+          },
+          {
+            "q": "What approach is Rahul likely to use to create the file?",
+            "opts": [
+              "(A) Database management system",
+              "(B) File handling approach",
+              "(C) Object-Oriented Programming",
+              "(D) Functional Programming"
+            ],
+            "ans": "B",
+            "explanation": "Rahul is likely to use a file handling approach to create the file, which involves creating a file, writing data to it, and then reading the data from the file."
+          },
+          {
+            "q": "What is Rahul trying to create?",
+            "opts": [
+              "(A) A database",
+              "(B) A file to store multiple records",
+              "(C) A web application",
+              "(D) A file system"
+            ],
+            "ans": "B",
+            "explanation": "Rahul is trying to create a file that can store multiple records, each with its own set of attributes."
+          },
+          {
+            "q": "What file operations does Rahul need to handle?",
+            "opts": [
+              "(A) File opening and closing",
+              "(B) File reading and writing",
+              "(C) Error handling",
+              "(D) All of the above"
+            ],
+            "ans": "D",
+            "explanation": "Rahul needs to handle all of the above file operations, including file opening and closing, file reading and writing, and error handling."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A software company, XYZ Inc., wants to create a system that can store and manage employee records. The company has a large number of employees, and the records need to be updated frequently. The system should be able to handle multiple users accessing the records simultaneously. The company's IT department has decided to use a file handling approach to create the system. However, they are unsure about the best way to implement the approach. They know that they need to handle file operations such as file opening, closing, and error handling. The company's IT department wants to create a file that can store multiple records, each with its own set of attributes.",
+        "questions": [
+          {
+            "q": "What is the primary requirement of the system that XYZ Inc. wants to create?",
+            "opts": [
+              "(A) To store and manage customer records",
+              "(B) To store and manage employee records",
+              "(C) To create a file system",
+              "(D) To develop a web application"
+            ],
+            "ans": "B",
+            "explanation": "The primary requirement of the system is to store and manage employee records."
+          },
+          {
+            "q": "What approach is XYZ Inc.'s IT department likely to use to create the system?",
+            "opts": [
+              "(A) Database management system",
+              "(B) File handling approach",
+              "(C) Object-Oriented Programming",
+              "(D) Functional Programming"
+            ],
+            "ans": "B",
+            "explanation": "The IT department is likely to use a file handling approach to create the system."
+          },
+          {
+            "q": "What is the IT department trying to achieve in this scenario?",
+            "opts": [
+              "(A) Creating a secure database",
+              "(B) Storing and retrieving employee records",
+              "(C) Implementing a file system",
+              "(D) Developing a web application"
+            ],
+            "ans": "B",
+            "explanation": "The IT department is trying to store and retrieve employee records."
+          },
+          {
+            "q": "What is the IT department's primary concern while creating the system?",
+            "opts": [
+              "(A) Data security",
+              "(B) File system integrity",
+              "(C) Ease of updating records",
+              "(D) Handling multiple users accessing records simultaneously"
+            ],
+            "ans": "D",
+            "explanation": "The IT department's primary concern is handling multiple users accessing records simultaneously."
+          },
+          {
+            "q": "What type of file is the IT department trying to create?",
+            "opts": [
+              "(A) A database",
+              "(B) A file to store multiple records",
+              "(C) A web application",
+              "(D) A file system"
+            ],
+            "ans": "B",
+            "explanation": "The IT department is trying to create a file that can store multiple records, each with its own set of attributes."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "File Handling",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T11:47:52.980Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the difference between text mode and binary mode in file handling. How are they used in Python?",
+        "marks": 5,
+        "answer": "Text mode is used to handle text files. It is used for storing and retrieving text data. Binary mode is used to handle binary files. It is used for storing and retrieving non-text data. In Python, we use the 'w' and 'r' modes for text files and the 'wb' and 'rb' modes for binary files.",
+        "marking_scheme": [
+          "Explain the difference between text mode and binary mode (2 marks)",
+          "Explain how they are used in Python (3 marks)"
+        ],
+        "topic": "File Modes",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the difference between a file pointer and a file descriptor? Explain with an example.",
+        "marks": 5,
+        "answer": "A file pointer and a file descriptor are both used to access a file. However, a file pointer is a memory address where the file contents are stored, while a file descriptor is an integer that represents the file. For example, if we open a file using the 'r' mode, the file pointer will be set to the beginning of the file, and the file descriptor will be an integer representing the file.",
+        "marking_scheme": [
+          "Explain the difference between a file pointer and a file descriptor (2 marks)",
+          "Explain with an example (3 marks)"
+        ],
+        "topic": "File Pointers and Descriptors",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the process of reading a file using the 'with' statement in Python.",
+        "marks": 5,
+        "answer": "The 'with' statement is used to open a file and automatically close it when we are done. Here's the process of reading a file using the 'with' statement: 1) Open the file using the 'with' statement. 2) Read the file contents using the 'read()' method. 3) Close the file automatically when we exit the 'with' block.",
+        "marking_scheme": [
+          "Describe the process of reading a file using the 'with' statement (2 marks)",
+          "Explain the benefits of using the 'with' statement (3 marks)"
+        ],
+        "topic": "Reading Files",
+        "is_numerical": false
+      },
+      {
+        "q": "Write a Python program to read a file named 'example.txt' and print its contents.",
+        "marks": 5,
+        "answer": "Calculation:\n1. Open the file using the 'with' statement:\nwith open('example.txt', 'r') as file:\n2. Read the file contents using the 'read()' method:\ncontents = file.read()\n3. Print the file contents:\nprint(contents)\n",
+        "marking_scheme": [
+          "Open the file using the 'with' statement (1 mark)",
+          "Read the file contents using the 'read()' method (1 mark)",
+          "Print the file contents (3 marks)"
+        ],
+        "topic": "Reading Files",
+        "is_numerical": true
+      },
+      {
+        "q": "Write a Python program to read a binary file named 'image.jpg' and print its size.",
+        "marks": 5,
+        "answer": "Calculation:\n1. Open the binary file using the 'with' statement:\nwith open('image.jpg', 'rb') as file:\n2. Read the file contents using the 'read()' method:\ncontents = file.read()\n3. Get the size of the file contents:\nsize = len(contents)\n4. Print the file size:\nprint(size)\n",
+        "marking_scheme": [
+          "Open the binary file using the 'with' statement (1 mark)",
+          "Read the file contents using the 'read()' method (1 mark)",
+          "Get and print the file size (3 marks)"
+        ],
+        "topic": "Reading Binary Files",
+        "is_numerical": true
+      },
+      {
+        "q": "Write a Python program to write a string to a file named 'output.txt' and append it to the existing contents.",
+        "marks": 5,
+        "answer": "Calculation:\n1. Open the file in append mode using the 'with' statement:\nwith open('output.txt', 'a') as file:\n2. Write the string to the file using the 'write()' method:\nfile.write('Hello, World!')\n",
+        "marking_scheme": [
+          "Open the file in append mode using the 'with' statement (1 mark)",
+          "Write the string to the file using the 'write()' method (4 marks)"
+        ],
+        "topic": "Writing to Files",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

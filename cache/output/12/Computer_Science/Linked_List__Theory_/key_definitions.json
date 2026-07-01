@@ -1,0 +1,93 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Linked List (Theory)",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T07:52:43.107Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Linked List",
+        "definition": "A data structure consisting of a collection of nodes, each of which contains a value and a reference (i.e., a link) to the next node in the sequence. It is a linear collection of data elements whose order is not given by their physical placement in memory.",
+        "example": "Example: A playlist of songs where each song is a node, and the next song is linked to the previous one."
+      },
+      {
+        "term": "Node",
+        "definition": "The basic building block of a linked list, representing a single element of the list with its value and reference to the next node.",
+        "example": "Example: A node can contain a student's name, roll number, and a reference to the next student in the list."
+      },
+      {
+        "term": "Head",
+        "definition": "The first node in the linked list, which serves as the starting point for traversing the list.",
+        "example": "Example: In a linked list of students, the head node contains the first student's data."
+      },
+      {
+        "term": "Tail",
+        "definition": "The last node in the linked list, which serves as the ending point for traversing the list.",
+        "example": "Example: In a linked list of students, the tail node contains the last student's data."
+      },
+      {
+        "term": "Next",
+        "definition": "A pointer or reference that points to the next node in the linked list.",
+        "example": "Example: In a linked list of students, the next pointer of one node points to the next student's node."
+      },
+      {
+        "term": "Previous",
+        "definition": "A pointer or reference that points to the previous node in the linked list.",
+        "example": "Example: In a linked list of students, the previous pointer of one node points to the previous student's node."
+      },
+      {
+        "term": "Traversal",
+        "definition": "The process of visiting each node in the linked list, usually from the head node to the tail node.",
+        "example": "Example: Traversing a linked list of students to display their names and roll numbers."
+      },
+      {
+        "term": "Insertion",
+        "definition": "The process of adding a new node to the linked list, either at the beginning (head), end (tail), or at a specific position.",
+        "example": "Example: Inserting a new student at the beginning of the linked list."
+      },
+      {
+        "term": "Deletion",
+        "definition": "The process of removing a node from the linked list, either at the beginning (head), end (tail), or at a specific position.",
+        "example": "Example: Deleting a student from the linked list."
+      },
+      {
+        "term": "Search",
+        "definition": "The process of finding a specific node in the linked list based on a given value or key.",
+        "example": "Example: Searching for a student's name in the linked list."
+      },
+      {
+        "term": "Circular Linked List",
+        "definition": "A linked list where the last node's next pointer points back to the head node, forming a circular structure.",
+        "example": "Example: A playlist where the last song's next reference points back to the first song."
+      },
+      {
+        "term": "Doubly Linked List",
+        "definition": "A linked list where each node has both a next pointer and a previous pointer, allowing bidirectional traversal.",
+        "example": "Example: A list of students with both a next and previous pointer to navigate the list."
+      },
+      {
+        "term": "Sentinel Node",
+        "definition": "A special node added to the beginning of a linked list to simplify certain operations, especially when the list is empty.",
+        "example": "Example: Using a sentinel node to handle the case when a linked list is empty."
+      },
+      {
+        "term": "Linked List Operations",
+        "definition": "Basic operations performed on a linked list, including insertion, deletion, traversal, search, and more.",
+        "example": "Example: Implementing linked list operations for a student database."
+      },
+      {
+        "term": "Linked List Representation",
+        "definition": "The way a linked list is represented in memory, including the use of nodes, pointers, and data structures.",
+        "example": "Example: Representing a linked list using an array-based data structure."
+      },
+      {
+        "term": "Linked List Applications",
+        "definition": "Real-world scenarios where linked lists are used, such as database indexing, file systems, and more.",
+        "example": "Example: Using linked lists in a database to efficiently store and retrieve large amounts of data."
+      }
+    ]
+  }
+}

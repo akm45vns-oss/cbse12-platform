@@ -1,0 +1,97 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "E-waste Management",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:26:47.869Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the importance of proper disposal and recycling of electronic waste. Discuss the environmental and health impacts of e-waste if not disposed of properly.",
+        "marks": 5,
+        "answer": "E-waste disposal and recycling are crucial for mitigating environmental and health risks. Improper disposal can lead to pollutants entering the soil, water, and air, affecting ecosystems and human health. Recycling e-waste reduces the demand for primary materials, conserves natural resources, and minimizes greenhouse gas emissions.",
+        "marking_scheme": [
+          "Importance of proper e-waste disposal (1 mark)",
+          "Environmental impacts of improper e-waste disposal (1 mark)",
+          "Health impacts of improper e-waste disposal (1 mark)",
+          "Benefits of e-waste recycling (1 mark)",
+          "Additional information or examples (1 mark)"
+        ],
+        "topic": "Importance and Impacts of E-waste",
+        "is_numerical": false
+      },
+      {
+        "q": "What are the different types of e-waste? Describe the common materials found in each type.",
+        "marks": 5,
+        "answer": "E-waste is categorized into several types, including: household appliances, computers and peripherals, consumer electronics, and telecommunication devices. Household appliances contain materials like copper, steel, and aluminum, while computers and peripherals contain copper, plastics, and rare earth metals.",
+        "marking_scheme": [
+          "Types of e-waste (1 mark)",
+          "Materials found in household appliances (1 mark)",
+          "Materials found in computers and peripherals (1 mark)",
+          "Materials found in consumer electronics (1 mark)",
+          "Additional information or examples (1 mark)"
+        ],
+        "topic": "Types of E-waste",
+        "is_numerical": false
+      },
+      {
+        "q": "Discuss the role of governments and organizations in e-waste management. What initiatives have been taken by these entities to promote sustainable e-waste practices?",
+        "marks": 5,
+        "answer": "Governments and organizations play a crucial role in e-waste management through policies, regulations, and awareness campaigns. Initiatives include e-waste collection facilities, recycling programs, and Extended Producer Responsibility (EPR) schemes.",
+        "marking_scheme": [
+          "Role of governments in e-waste management (1 mark)",
+          "Role of organizations in e-waste management (1 mark)",
+          "Initiatives taken by governments (1 mark)",
+          "Initiatives taken by organizations (1 mark)",
+          "Additional information or examples (1 mark)"
+        ],
+        "topic": "E-waste Management Initiatives",
+        "is_numerical": false
+      },
+      {
+        "q": "A consumer electronics manufacturer generates 100 kg of e-waste per day. If the e-waste is recycled, the recycling process has a 90% efficiency rate, meaning 90 kg of the e-waste is recycled, and 10 kg is sent to landfills.",
+        "marks": 5,
+        "answer": "Calculation:\n 1. Total e-waste generated per day: 100 kg\n 2. E-waste recycled: 90% of 100 kg = 0.9 x 100 = 90 kg\n 3. E-waste sent to landfills: 10 kg\n Therefore, the manufacturer recycles 90 kg of e-waste and sends 10 kg to landfills.",
+        "marking_scheme": [
+          "Total e-waste generated (1 mark)",
+          "E-waste recycled (1 mark)",
+          "E-waste sent to landfills (1 mark)",
+          "Efficiency rate of recycling (1 mark)",
+          "Additional information or calculations (1 mark)"
+        ],
+        "topic": "E-waste Generation and Recycling",
+        "is_numerical": true
+      },
+      {
+        "q": "A company collects 500 kg of e-waste per month from households. If the e-waste is processed at a rate of 80 kg per day, how many days will it take to process the collected e-waste?",
+        "marks": 5,
+        "answer": "Calculation:\n 1. Total e-waste collected per month: 500 kg\n 2. E-waste processed per day: 80 kg\n 3. Number of days to process e-waste: 500 kg / 80 kg/day = 6.25 days\n Therefore, it will take the company 6.25 days to process the collected e-waste.",
+        "marking_scheme": [
+          "Total e-waste collected (1 mark)",
+          "E-waste processed per day (1 mark)",
+          "Number of days to process e-waste (2 marks)",
+          "Additional information or calculations (1 mark)"
+        ],
+        "topic": "E-waste Collection and Processing",
+        "is_numerical": true
+      },
+      {
+        "q": "A recycling facility receives 200 kg of e-waste containing 30% copper, 20% aluminum, and 50% plastics. If the facility can process 80 kg of e-waste per day, how many days will it take to process the received e-waste?",
+        "marks": 5,
+        "answer": "Calculation:\n 1. Total e-waste received: 200 kg\n 2. Copper content: 30% of 200 kg = 0.3 x 200 = 60 kg\n 3. Aluminum content: 20% of 200 kg = 0.2 x 200 = 40 kg\n 4. Plastics content: 50% of 200 kg = 0.5 x 200 = 100 kg\n 5. Total valuable materials: 60 kg + 40 kg + 100 kg = 200 kg\n 6. Number of days to process e-waste: 200 kg / 80 kg/day = 2.5 days\n Therefore, it will take the facility 2.5 days to process the received e-waste.",
+        "marking_scheme": [
+          "Total e-waste received (1 mark)",
+          "Copper content (1 mark)",
+          "Aluminum content (1 mark)",
+          "Plastics content (1 mark)",
+          "Number of days to process e-waste (2 marks)"
+        ],
+        "topic": "E-waste Composition and Processing",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Differential Equations",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T11:14:05.431Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Find the order of the differential equation?",
+        "opts": [
+          "(A) 1",
+          "(B) 2 or more",
+          "(C) 1",
+          "(D) 0"
+        ],
+        "ans": "B",
+        "explanation": "A differential equation is said to be of order n if the highest order derivative in the equation is of order n. Examples of first-order, second-order, third-order, and fourth-order differential equations are given in the chapter.",
+        "difficulty": "easy",
+        "topic": "Introduction to Differential Equations"
+      },
+      {
+        "q": "Which of the following is a linear differential equation?",
+        "opts": [
+          "(A) y'' + 2y = e^(-x)",
+          "(B) y'' + 2y'' + y = e^(-x)",
+          "(C) y'' + 2y' + y = e^(-x)",
+          "(D) y'' + 2y' y = e^(-x)"
+        ],
+        "ans": "B",
+        "explanation": "A differential equation of the form a_ny^(n) + a_(n-1)y^(n-1) + ... + a_1y' + a_0y = f(x) is said to be linear differential equation.",
+        "difficulty": "easy",
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "What is the general solution of y'' + y = 0?",
+        "opts": [
+          "(A) y = c_1 cos(x) + c_2 sin(x)",
+          "(B) y = c_1 e^(x) + c_2 e^(-x)",
+          "(C) y = c_1 e^(x) + c_2 e^(-x) + c_3 sin(x)",
+          "(D) y = c_1 e^(x) + c_2 e^(-x) + c_3 cos(x)"
+        ],
+        "ans": "A",
+        "explanation": "The general solution of the homogeneous linear differential equation y'' + y = 0 is y = c_1 cos(x) + c_2 sin(x).",
+        "difficulty": "easy",
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "The solution of the differential equation y' = 2x is?",
+        "opts": [
+          "(A) y = log(x^2) + c",
+          "(B) y = x^2 + c",
+          "(B) y = x^2 + c",
+          "(D) y = x^4 + c"
+        ],
+        "ans": "B",
+        "explanation": "To solve the differential equation y' = 2x, we integrate both sides with respect to x, and we get y = x^2 + c.",
+        "difficulty": "easy",
+        "topic": "First Order Linear Differential Equations"
+      },
+      {
+        "q": "Find the solution of the differential equation y'' + y = 0, y(0) = 1, y'(0) = 0?",
+        "opts": [
+          "(A) y = cos(x) + sin(x)",
+          "(B) y = cos(x) - sin(x)",
+          "(C) y = cos(x) + sin(x)",
+          "(D) y = cos(x) - sin(x)"
+        ],
+        "ans": "B",
+        "explanation": "To solve the differential equation y'' + y = 0 with given initial conditions, we first find the general solution y = c_1 cos(x) + c_2 sin(x). Then, we use the initial conditions to find the values of c_1 and c_2.",
+        "difficulty": "medium",
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "What is the form of a homogeneous linear differential equation?",
+        "opts": [
+          "(A) a_ny^(n) + a_(n-1)y^(n-1) + ... + a_1y' + a_0y = f(x)",
+          "(B) a_ny^(n) + a_(n-1)y^(n-1) + ... + a_1y' + a_0y = 0",
+          "(C) a_ny^(n) + a_(n-1)y^(n-1) + ... + a_1y' + a_0y = 0 + f(x)",
+          "(D) a_ny^(n) + a_(n-1)y^(n-1) + ... + a_1y' + a_0y = f(x) + g(x)"
+        ],
+        "ans": "B",
+        "explanation": "A homogeneous linear differential equation is of the form a_ny^(n) + a_(n-1)y^(n-1) + ... + a_1y' + a_0y = 0.",
+        "difficulty": "medium",
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "Find the solution of the differential equation y'' - 2y' + y = 0?",
+        "opts": [
+          "(A) y = e^(x) + ce^(-x)",
+          "(B) y = e^(x) - ce^(-x)",
+          "(C) y = e^(x) + ce^(-x) + c_2e^(2x)",
+          "(D) y = e^(x) - ce^(-x) + c_2e^(2x)"
+        ],
+        "ans": "C",
+        "explanation": "To solve the differential equation y'' - 2y' + y = 0, we assume a solution of the form y = e^(mx) and find the characteristic equation. Then, we solve the characteristic equation to find the values of m.",
+        "difficulty": "medium",
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "What is the order of the differential equation y''' + 2y'' + y' + 2y = sin(x) + e^(-x) + x?",
+        "opts": [
+          "(A) 1",
+          "(B) 2",
+          "(C) 3",
+          "(D) 4"
+        ],
+        "ans": "C",
+        "explanation": "The order of a differential equation is the highest order derivative in the equation. In this case, the highest order derivative is the third derivative, so the order is 3.",
+        "difficulty": "medium",
+        "topic": "Introduction to Differential Equations"
+      },
+      {
+        "q": "Find the solution of the differential equation y'' + 4y = e^(-x) sin(2x) using Laplace transform?",
+        "opts": [
+          "(A) y = e^(-x) sin(2x) - e^(-2x) sin(2x)",
+          "(B) y = e^(-x) sin(2x) + e^(-2x) cos(2x)",
+          "(C) y = e^(-x) cos(2x) - e^(-2x) sin(2x)",
+          "(D) y = e^(-x) cos(2x) + e^(-2x) cos(2x)"
+        ],
+        "ans": "A",
+        "explanation": "To solve the differential equation y'' + 4y = e^(-x) sin(2x) using Laplace transform, we first apply the Laplace transform to both sides of the equation. Then, we solve for Y(s) and find the inverse Laplace transform.",
+        "difficulty": "hard",
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "What is the general solution of the differential equation y'' + 2y' + y = e^(-x) cos(x) + e^(-x) sin(x)?",
+        "opts": [
+          "(A) y = (e^(-x) cos(x) + e^(-x) sin(x)) + c_1 e^(-x) + c_2 e^(-2x)",
+          "(B) y = (e^(-x) cos(x) + e^(-x) sin(x)) + c_1 e^(-x) sin(x) + c_2 e^(-2x) cos(x)",
+          "(C) y = (e^(-x) cos(x) + e^(-x) sin(x)) + c_1 e^(-x) + c_2 e^(-2x)",
+          "(D) y = (e^(-x) cos(x) + e^(-x) sin(x)) + c_1 e^(-x) cos(x) + c_2 e^(-2x) sin(x)"
+        ],
+        "ans": "A",
+        "explanation": "To find the general solution of the differential equation, we first find the complementary solution, which is the solution of the homogeneous equation. Then, we find the particular solution using the method of undetermined coefficients.",
+        "difficulty": "hard",
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "Find the solution of the differential equation y'' + 2y' + y = e^(-x) using the method of undetermined coefficients?",
+        "opts": [
+          "(A) y = e^(-x) + c_1 e^(-x) + c_2 e^(-2x)",
+          "(B) y = e^(-x) + c_1 e^(-x) sin(x) + c_2 e^(-2x) cos(x)",
+          "(C) y = e^(-x) + c_1 e^(-x) + c_2 e^(-2x)",
+          "(D) y = e^(-x) + c_1 e^(-x) cos(x) + c_2 e^(-2x) sin(x)"
+        ],
+        "ans": "A",
+        "explanation": "To find the particular solution using the method of undetermined coefficients, we first assume a solution of the form y = Ae^(-x). Then, we substitute this solution into the differential equation and solve for A.",
+        "difficulty": "hard",
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "What is the characteristic equation of the differential equation y'' + 3y' + 2y = 0?",
+        "opts": [
+          "(A) m^2 + 3m + 2 = 0",
+          "(B) m^2 + 3m - 2 = 0",
+          "(C) m^2 - 3m + 2 = 0",
+          "(D) m^2 + 3m - 2 = 0"
+        ],
+        "ans": "A",
+        "explanation": "The characteristic equation of a homogeneous linear differential equation is obtained by substituting a solution of the form y = e^(mx) into the differential equation and solving for m.",
+        "difficulty": "hard",
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "Find the solution of the differential equation y'' + 4y = 0 using the method of undetermined coefficients?",
+        "opts": [
+          "(A) y = c_1 cos(2x) + c_2 sin(2x)",
+          "(B) y = c_1 e^(2x) + c_2 e^(-2x)",
+          "(C) y = c_1 e^(2x) + c_2 e^(-2x) + c_3 sin(2x)",
+          "(D) y = c_1 e^(2x) + c_2 e^(-2x) + c_3 cos(2x)"
+        ],
+        "ans": "A",
+        "explanation": "To find the particular solution using the method of undetermined coefficients, we first assume a solution of the form y = A cos(2x) + B sin(2x). Then, we substitute this solution into the differential equation and solve for A and B.",
+        "difficulty": "hard",
+        "topic": "Linear Differential Equations"
+      },
+      {
+        "q": "What is the general solution of the differential equation y'' + 2y' + y = e^(-x) cos(x)?",
+        "opts": [
+          "(A) y = (e^(-x) cos(x)) + c_1 e^(-x) + c_2 e^(-2x)",
+          "(B) y = (e^(-x) cos(x)) + c_1 e^(-x) sin(x) + c_2 e^(-2x) cos(x)",
+          "(C) y = (e^(-x) cos(x)) + c_1 e^(-x) + c_2 e^(-2x)",
+          "(D) y = (e^(-x) cos(x)) + c_1 e^(-x) cos(x) + c_2 e^(-2x) sin(x)"
+        ],
+        "ans": "A",
+        "explanation": "To find the general solution, we first find the complementary solution, which is the solution of the homogeneous equation. Then, we find the particular solution using the method of undetermined coefficients.",
+        "difficulty": "hard",
+        "topic": "Linear Differential Equations"
+      }
+    ],
+    "total": 14
+  }
+}

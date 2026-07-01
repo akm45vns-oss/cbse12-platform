@@ -1,0 +1,53 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "MySQL Functions and Grouping",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T10:07:36.480Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "MySQL GROUP BY Clause",
+        "description": "The GROUP BY clause is used in conjunction with the aggregate functions to group the result-set by one or more columns."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "MySQL Aggregate Functions",
+        "description": "MySQL provides various aggregate functions like SUM, COUNT, MAX, MIN, AVG to perform calculations on a set of values."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "GROUP BY vs HAVING",
+        "description": "GROUP BY is used to group the result-set by one or more columns, whereas HAVING is used to filter groups based on conditions."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "ACID",
+        "description": "A mnemonic to remember the properties of MySQL database: Atomicity, Consistency, Isolation, Durability."
+      },
+      {
+        "category": "Common Mistake",
+        "title": "Incorrect Use of GROUP BY",
+        "description": "Students often use GROUP BY without specifying the columns to group by, leading to incorrect results or errors."
+      },
+      {
+        "category": "Most Important Fact",
+        "title": "MySQL User-Defined Functions",
+        "description": "MySQL allows users to create their own functions using the CREATE FUNCTION statement, which can be used to simplify complex queries."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "GROUP BY Syntax",
+        "description": "The basic syntax of the GROUP BY clause is: GROUP BY column1, column2, ..., columnN;"
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Aggregate Function Characteristics",
+        "description": "Students should recall the characteristics of aggregate functions, such as ignoring NULL values, and how to handle NULL values in queries."
+      }
+    ]
+  }
+}

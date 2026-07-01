@@ -1,0 +1,79 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Nuclei",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T11:46:10.616Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of radioactive decay and its types. What are the characteristics of alpha, beta, and gamma radiation?",
+        "marks": 5,
+        "answer": "Radioactive decay is a process in which unstable nuclei lose energy by emitting radiation. The three main types of radioactive decay are alpha, beta, and gamma decay. Alpha decay is a type of decay in which an alpha particle is emitted from the nucleus, resulting in a loss of two protons and two neutrons. Beta decay is a type of decay in which a neutron is converted into a proton and an electron, or a proton is converted into a neutron and a positron. Gamma decay is a type of decay in which the nucleus emits gamma rays, which are high-energy electromagnetic waves. The characteristics of alpha, beta, and gamma radiation are as follows: Alpha radiation is high-energy helium nuclei that are emitted from the nucleus, have a short range, and can be stopped by a sheet of paper. Beta radiation is high-energy electrons that are emitted from the nucleus, have a longer range than alpha radiation, and can be stopped by a thin layer of metal. Gamma radiation is high-energy electromagnetic waves that are emitted from the nucleus, have a longer range than beta radiation, and can be stopped by a thick layer of lead.",
+        "marking_scheme": [
+          "Explain the concept of radioactive decay: 2 marks",
+          "Describe the characteristics of alpha, beta, and gamma radiation: 3 marks"
+        ],
+        "topic": "Radioactive Decay",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the difference between half-life and mean lifetime of a radioactive substance? Explain with an example.",
+        "marks": 5,
+        "answer": "The half-life of a radioactive substance is the time it takes for half of the initial amount of the substance to decay. The mean lifetime of a radioactive substance is the average time a nucleus exists before decaying. The difference between half-life and mean lifetime is that half-life is a fixed time period, whereas mean lifetime is a statistical average. For example, if a substance has a half-life of 10 years, it means that after 10 years, half of the initial amount of the substance will have decayed. However, the mean lifetime of the substance may be different, depending on the probability of decay.",
+        "marking_scheme": [
+          "Define half-life and mean lifetime: 1 mark",
+          "Explain the difference between half-life and mean lifetime: 2 marks",
+          "Provide an example: 2 marks"
+        ],
+        "topic": "Radioactive Decay",
+        "is_numerical": false
+      },
+      {
+        "q": "A sample of radioactive material has an initial activity of 100 Bq. After 5 hours, the activity decreases to 50 Bq. Calculate the half-life of the material.",
+        "marks": 5,
+        "answer": "Calculation:\nActivity (A) = 100 Bq\nTime (t) = 5 hours\nActivity after 5 hours (A') = 50 Bq\nSince the activity decreases by half, the half-life (t1/2) can be calculated using the formula:\nA' = A * (1/2)\nt1/2 = t\nSo, the half-life of the material is 5 hours.",
+        "marking_scheme": [
+          "Calculate the half-life: 5 marks"
+        ],
+        "topic": "Radioactive Decay",
+        "is_numerical": true
+      },
+      {
+        "q": "A sample of radioactive material has a half-life of 10 years. If the initial activity is 1000 Bq, calculate the activity after 20 years.",
+        "marks": 5,
+        "answer": "Calculation:\nInitial activity (A) = 1000 Bq\nHalf-life (t1/2) = 10 years\nTime (t) = 20 years\nSince the time is 2 half-lives, we can calculate the activity after 20 years as follows:\nA' = A * (1/2)^2\nA' = 1000 Bq * (1/2)^2\nA' = 250 Bq",
+        "marking_scheme": [
+          "Calculate the activity after 20 years: 5 marks"
+        ],
+        "topic": "Radioactive Decay",
+        "is_numerical": true
+      },
+      {
+        "q": "A sample of radioactive material has a mean lifetime of 1000 seconds. If the initial activity is 1000 Bq, calculate the activity after 2000 seconds.",
+        "marks": 5,
+        "answer": "Calculation:\nInitial activity (A) = 1000 Bq\nMean lifetime (τ) = 1000 seconds\nTime (t) = 2000 seconds\nSince the time is 2 mean lifetimes, we can calculate the activity after 2000 seconds as follows:\nA' = A * e^(-t/τ)\nA' = 1000 Bq * e^(-2000/1000)\nA' = 1000 Bq * e^(-2)\nA' ≈ 235 Bq",
+        "marking_scheme": [
+          "Calculate the activity after 2000 seconds: 5 marks"
+        ],
+        "topic": "Radioactive Decay",
+        "is_numerical": true
+      },
+      {
+        "q": "Explain the concept of binding energy per nucleon. What is the significance of the curve of binding energy per nucleon?",
+        "marks": 5,
+        "answer": "The binding energy per nucleon is the average energy required to remove a nucleon from the nucleus. The curve of binding energy per nucleon is a graph that shows the binding energy per nucleon for different nuclei. The curve starts at a low value for light nuclei and increases until it reaches a maximum value at iron (Fe) and then decreases. The significance of the curve is that it shows the stability of nuclei. The nuclei with the highest binding energy per nucleon are the most stable, while the nuclei with the lowest binding energy per nucleon are the least stable.",
+        "marking_scheme": [
+          "Explain the concept of binding energy per nucleon: 2 marks",
+          "Describe the curve of binding energy per nucleon: 2 marks",
+          "Significance of the curve: 1 mark"
+        ],
+        "topic": "Binding Energy",
+        "is_numerical": false
+      }
+    ],
+    "total": 6
+  }
+}

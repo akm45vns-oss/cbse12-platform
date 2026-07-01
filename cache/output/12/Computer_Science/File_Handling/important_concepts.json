@@ -1,0 +1,53 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "File Handling",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T12:05:22.955Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "File Modes",
+        "description": "There are two types of file modes: binary and text mode. Binary mode is used to read and write binary files, while text mode is used to read and write text files."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "File Operations",
+        "description": "The following are the basic file operations: open(), close(), read(), write(), seek(), and tell()."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "File Object",
+        "description": "The file object is used to perform file operations. It is created using the open() function and must be closed after use to avoid memory leaks."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "File Modes Mnemonic",
+        "description": "To remember the binary and text modes, use the mnemonic: Binary - BYTES, Text - TEXT. B and T stand for the first letter of each mode, and BYTES and TEXT are easy to remember."
+      },
+      {
+        "category": "Common Mistake",
+        "title": "File Not Found Error",
+        "description": "Students often forget to check if a file exists before trying to open it. To avoid this, use the exists() function to check if a file exists before attempting to open it."
+      },
+      {
+        "category": "Units to remember",
+        "title": "File Permissions",
+        "description": "File permissions are a set of rights that determine what actions can be performed on a file. The three basic permissions are read (r), write (w), and execute (x)."
+      },
+      {
+        "category": "Most Important Fact",
+        "title": "File Buffering",
+        "description": "File buffering is a technique used to improve file performance by buffering data in memory before writing it to the file. It can be disabled using the buffering parameter in the open() function."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Exception Handling",
+        "description": "Exception handling is crucial when working with files. Use try-except blocks to catch and handle exceptions that may occur during file operations, such as file not found or permission errors."
+      }
+    ]
+  }
+}

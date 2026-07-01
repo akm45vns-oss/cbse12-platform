@@ -1,0 +1,134 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Application of Integrals",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:50:53.375Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "The area under the curve y = √(1 + x^2) from 0 to 1 is π/4.",
+        "reason": "It can be calculated using the definite integral of √(1 + x^2) from 0 to 1.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The area under the curve y = √(1 + x^2) from 0 to 1 is indeed π/4 and it can be calculated using the definite integral of √(1 + x^2) from 0 to 1."
+      },
+      {
+        "assertion": "The area under the curve y = |x| from -1 to 1 is 2.",
+        "reason": "It can be calculated using the definite integral of |x| from -1 to 1.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The area under the curve y = |x| from -1 to 1 is indeed 2 and it can be calculated using the definite integral of |x| from -1 to 1."
+      },
+      {
+        "assertion": "The area enclosed by the parabola y = x^2 and the line y = 1 is 5/6.",
+        "reason": "It can be calculated using the definite integral of (1 - x^2) from -1 to 1.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The area enclosed by the parabola y = x^2 and the line y = 1 is indeed 5/6 and it can be calculated using the definite integral of (1 - x^2) from -1 to 1."
+      },
+      {
+        "assertion": "The volume of the solid formed by revolving the area under the curve y = √x from 0 to 4 about the x-axis is 64/3.",
+        "reason": "It can be calculated using the method of disks.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The volume of the solid formed by revolving the area under the curve y = √x from 0 to 4 about the x-axis is indeed 64/3 and it can be calculated using the method of disks."
+      },
+      {
+        "assertion": "The area under the curve y = e^x from 0 to 1 is less than 2.",
+        "reason": "It can be calculated using the definite integral of e^x from 0 to 1.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The area under the curve y = e^x from 0 to 1 is indeed less than 2, but it can be calculated using the definite integral of e^x from 0 to 1. However, this does not make the statement correct in the given options."
+      },
+      {
+        "assertion": "The area enclosed by the parabola y = x^3 from -1 to 1 is 0.",
+        "reason": "It can be calculated using the definite integral of x^3 from -1 to 1.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The area enclosed by the parabola y = x^3 from -1 to 1 is indeed 0 and it can be calculated using the definite integral of x^3 from -1 to 1."
+      },
+      {
+        "assertion": "The area under the curve y = 1/x from 1 to 2 is greater than 0.",
+        "reason": "It can be calculated using the definite integral of 1/x from 1 to 2.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The area under the curve y = 1/x from 1 to 2 is indeed greater than 0 and it can be calculated using the definite integral of 1/x from 1 to 2."
+      },
+      {
+        "assertion": "The area under the curve y = |x-1| from 0 to 2 is 1.",
+        "reason": "It can be calculated using the definite integral of |x-1| from 0 to 2.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The area under the curve y = |x-1| from 0 to 2 is indeed 1 and it can be calculated using the definite integral of |x-1| from 0 to 2."
+      },
+      {
+        "assertion": "The volume of the solid formed by revolving the area under the curve y = √x from 0 to 1 about the x-axis is π/6.",
+        "reason": "It can be calculated using the method of disks.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The volume of the solid formed by revolving the area under the curve y = √x from 0 to 1 about the x-axis is indeed not π/6, and it can be calculated using the method of disks."
+      },
+      {
+        "assertion": "The area under the curve y = sin(x) from 0 to π is 2.",
+        "reason": "It can be calculated using the definite integral of sin(x) from 0 to π.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "D",
+        "explanation": "The area under the curve y = sin(x) from 0 to π is indeed not 2, but it can be calculated using the definite integral of sin(x) from 0 to π. However, this does not make the statement correct in the given options."
+      }
+    ],
+    "total": 10
+  }
+}

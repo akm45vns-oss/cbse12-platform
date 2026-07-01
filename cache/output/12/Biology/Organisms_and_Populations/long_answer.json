@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Organisms and Populations",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:32:22.260Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of population and describe the distribution of organisms in a population with suitable examples.",
+        "marks": 5,
+        "answer": "Population refers to a group of individuals of the same species living in a particular area. Distribution of organisms in a population can be uniform, random, or clumped. Uniform distribution is seen in organisms like algae in a lake, random distribution is seen in organisms like bacteria in a petri dish, and clumped distribution is seen in organisms like trees in a forest. This distribution can be influenced by various factors like availability of resources, predation, and competition.",
+        "marking_scheme": [
+          "Explain the concept of population (1 mark)",
+          "Describe the distribution of organisms in a population with suitable examples (3 marks)",
+          "Mention the factors influencing population distribution (1 mark)"
+        ],
+        "topic": "Population",
+        "is_numerical": false
+      },
+      {
+        "q": "Discuss the importance of population growth rate and its regulation in an ecosystem.",
+        "marks": 5,
+        "answer": "Population growth rate is a measure of the rate at which the population of an organism increases or decreases. It is an important factor in an ecosystem as it affects the availability of resources and the population size. Regulation of population growth rate is essential to maintain a balance in the ecosystem and prevent overpopulation. This regulation can be achieved through various mechanisms like predation, competition, and environmental factors.",
+        "marking_scheme": [
+          "Explain the importance of population growth rate (1 mark)",
+          "Discuss the regulation of population growth rate in an ecosystem (3 marks)",
+          "Mention the mechanisms of population regulation (1 mark)"
+        ],
+        "topic": "Population Growth Rate",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of carrying capacity and its significance in population ecology.",
+        "marks": 5,
+        "answer": "Carrying capacity refers to the maximum number of individuals of a species that can be supported by a given area or environment. It is a critical concept in population ecology as it helps in understanding the relationship between population size and environmental resources. Carrying capacity is influenced by factors like food availability, water supply, and predation pressure. Understanding carrying capacity is essential for conservation and management of populations.",
+        "marking_scheme": [
+          "Explain the concept of carrying capacity (1 mark)",
+          "Discuss the significance of carrying capacity in population ecology (3 marks)",
+          "Mention the factors influencing carrying capacity (1 mark)"
+        ],
+        "topic": "Carrying Capacity",
+        "is_numerical": false
+      },
+      {
+        "q": "A population of rabbits has an initial population size of 100 and a birth rate of 0.05 per individual per year. If there are no deaths, calculate the population size after 5 years.",
+        "marks": 5,
+        "answer": "Calculation:\nPopulation size after 1 year = 100 + (100 x 0.05) = 105\nPopulation size after 2 years = 105 + (105 x 0.05) = 110.25\nPopulation size after 3 years = 110.25 + (110.25 x 0.05) = 115.76\nPopulation size after 4 years = 115.76 + (115.76 x 0.05) = 121.39\nPopulation size after 5 years = 121.39 + (121.39 x 0.05) = 127.19\n",
+        "marking_scheme": [
+          "Calculate the population size after 1 year (1 mark)",
+          "Calculate the population size after subsequent years using the birth rate (2 marks)",
+          "Mention the initial population size and birth rate (2 marks)"
+        ],
+        "topic": "Population Growth",
+        "is_numerical": true
+      },
+      {
+        "q": "A population of birds has a carrying capacity of 1000 individuals. If the current population size is 500, and the growth rate is 0.02 per individual per year, calculate the population size after 10 years.",
+        "marks": 5,
+        "answer": "Calculation:\nLet's assume the population size at the end of the year is P.\nSince the growth rate is 0.02 per individual per year, the population size will increase by 0.02P.\nBut, since the population size cannot exceed the carrying capacity, the population size will be limited by the carrying capacity (1000).\nSo, we can write the equation: P = 500 + 0.02P + (0.02P)^2 / 2 + (0.02P)^3 / 3 + ... (up to 10 terms).\nUsing a calculator or software, we can find that P ≈ 634.41.\nPopulation size after 10 years = 634.41 - (634.41 - 500) = 499.41 (approx.),\nSince we can't have a fraction of an individual, we round it to 499 individuals.",
+        "marking_scheme": [
+          "Assume the population size at the end of the year (1 mark)",
+          "Write the equation for population growth (2 marks)",
+          "Solve the equation using a calculator or software (2 marks)"
+        ],
+        "topic": "Population Growth",
+        "is_numerical": true
+      },
+      {
+        "q": "A population of insects has a birth rate of 0.03 per individual per year. If the current population size is 800, calculate the population size after 2 years, assuming no deaths.",
+        "marks": 5,
+        "answer": "Calculation:\nPopulation size after 1 year = 800 + (800 x 0.03) = 824\nPopulation size after 2 years = 824 + (824 x 0.03) = 849.12\n",
+        "marking_scheme": [
+          "Calculate the population size after 1 year (1 mark)",
+          "Calculate the population size after the second year using the birth rate (3 marks)",
+          "Mention the current population size and birth rate (1 mark)"
+        ],
+        "topic": "Population Growth",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

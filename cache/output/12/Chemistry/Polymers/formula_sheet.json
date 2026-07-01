@@ -1,0 +1,48 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Polymers",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T07:48:24.107Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Molecular Weight of Polymer",
+        "formula": "M = n × Mw",
+        "variables": "M: Molecular weight of the polymer, n: Number of monomer units, Mw: Molecular weight of the monomer",
+        "units": "g/mol",
+        "notes": ""
+      },
+      {
+        "name": "Degree of Polymerization",
+        "formula": "n = N/A",
+        "variables": "n: Degree of polymerization, N: Number of polymer molecules, A: Number of monomer units",
+        "units": "Number",
+        "notes": ""
+      },
+      {
+        "name": "Number Average Molecular Weight",
+        "formula": "Mn = ∑(wiMi) / ∑wi",
+        "variables": "Mn: Number average molecular weight, wi: Weight fraction of each polymer, Mi: Molecular weight of each polymer",
+        "units": "g/mol",
+        "notes": ""
+      },
+      {
+        "name": "Weight Average Molecular Weight",
+        "formula": "Mw = ∑(wiMi^2) / ∑(wiMi)",
+        "variables": "Mw: Weight average molecular weight, wi: Weight fraction of each polymer, Mi: Molecular weight of each polymer",
+        "units": "g/mol",
+        "notes": ""
+      },
+      {
+        "name": "Polydispersity Index",
+        "formula": "PDI = Mw / Mn",
+        "variables": "PDI: Polydispersity index, Mw: Weight average molecular weight, Mn: Number average molecular weight",
+        "units": "Number",
+        "notes": ""
+      }
+    ]
+  }
+}

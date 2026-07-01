@@ -1,0 +1,238 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Determinants",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:49:47.510Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If A and B are square matrices of the same order, then (AB) ' = ",
+        "opts": [
+          "(A) BA'",
+          "(B) AB'",
+          "(C) A' B",
+          "(D) B' A"
+        ],
+        "ans": "B",
+        "explanation": "Since A and B are square matrices of the same order, the product AB is defined. The transpose of a product of matrices is the product of the transposes in reverse order, i.e., (AB)' = B'A'.",
+        "difficulty": "easy",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "If the determinant of a 2x2 matrix [a, b; c, d] is 6, then the determinant of its inverse is ",
+        "opts": [
+          "(A) 1/6",
+          "(B) 1/12",
+          "(C) 1/2",
+          "(D) 6"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of the inverse of a matrix A is the reciprocal of the determinant of matrix A. So, if the determinant of matrix A is 6, then the determinant of its inverse is 1/6.",
+        "difficulty": "easy",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "The determinant of a matrix A = |a, b; c, d| is 12. Find the determinant of the matrix A^2.",
+        "opts": [
+          "(A) 144",
+          "(B) 12",
+          "(C) 24",
+          "(D) 6"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of the product of two matrices A and B is equal to the product of the determinants of A and B, i.e., |A^2| = |A| * |A| = 12 * 12 = 144.",
+        "difficulty": "easy",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "The determinant of a 3x3 matrix A is 5. Find the determinant of the matrix A^(-1).",
+        "opts": [
+          "(A) 1/5",
+          "(B) 1/25",
+          "(C) 5",
+          "(D) 25"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of the inverse of a matrix A is the reciprocal of the determinant of matrix A. So, if the determinant of matrix A is 5, then the determinant of its inverse is 1/5.",
+        "difficulty": "easy",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "If A is a square matrix of order n x n, then |kA| = ",
+        "opts": [
+          "(A) k^n |A|",
+          "(B) k |A|",
+          "(B) k^n + 1 |A|",
+          "(D) k^n - 1 |A|"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of a matrix A multiplied by a scalar k is equal to k^n times the determinant of matrix A, i.e., |kA| = k^n |A|. ",
+        "difficulty": "easy",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "The determinant of the matrix A = |a, b; c, d| is 18. Find the determinant of the matrix 2A.",
+        "opts": [
+          "(A) 36",
+          "(B) 72",
+          "(C) 144",
+          "(D) 216"
+        ],
+        "ans": "B",
+        "explanation": "The determinant of the matrix 2A is equal to 2^2 times the determinant of matrix A, i.e., |2A| = 4 * 18 = 72.",
+        "difficulty": "easy",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "If A is a square matrix of order n x n, then |A| = |A'|.",
+        "opts": [
+          "(A) True",
+          "(B) False"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of a matrix A is equal to the determinant of its transpose A'.",
+        "difficulty": "medium",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "The determinant of the matrix A = |a, 0; 0, b| is 8. Find the determinant of the matrix B = |b, 0; 0, a|.",
+        "opts": [
+          "(A) 8",
+          "(B) 16",
+          "(C) 32",
+          "(D) 64"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of matrix B is equal to the determinant of matrix A, i.e., |B| = |A| = 8.",
+        "difficulty": "medium",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "If the determinant of a 2x2 matrix [a, b; c, d] is -6, then the determinant of the matrix [d, -b; -c, a] is ",
+        "opts": [
+          "(A) -6",
+          "(B) 6",
+          "(C) -18",
+          "(D) 18"
+        ],
+        "ans": "B",
+        "explanation": "The determinant of the matrix [d, -b; -c, a] is equal to the determinant of the matrix [a, b; c, d] multiplied by (-1)^2, i.e., |d, -b; -c, a| = |a, b; c, d| = -6.",
+        "difficulty": "medium",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "The determinant of the matrix A = |1, 2; 3, 4| is 2. Find the determinant of the matrix B = |4, 1; 2, 3|.",
+        "opts": [
+          "(A) 2",
+          "(B) 6",
+          "(C) 12",
+          "(D) 18"
+        ],
+        "ans": "B",
+        "explanation": "The determinant of the matrix B is equal to the determinant of the matrix A multiplied by (-1)^3, i.e., |B| = (-1)^3 * |A| = -2.",
+        "difficulty": "medium",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "If A is a square matrix of order n x n, then |A| = 0 implies A is singular.",
+        "opts": [
+          "(A) True",
+          "(B) False"
+        ],
+        "ans": "A",
+        "explanation": "A square matrix A is said to be singular if its determinant is zero. If |A| = 0, then the matrix A is singular.",
+        "difficulty": "medium",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "The determinant of the matrix A = |a, 0; 0, b| is 8. Find the determinant of the matrix B = |0, 0; 0, 0|.",
+        "opts": [
+          "(A) 0",
+          "(B) 8",
+          "(C) 16",
+          "(D) 32"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of the matrix B is equal to 0, i.e., |B| = 0.",
+        "difficulty": "medium",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "If A is a square matrix of order n x n, then |kA| = k^n |A|.",
+        "opts": [
+          "(A) True",
+          "(B) False"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of a matrix A multiplied by a scalar k is equal to k^n times the determinant of matrix A, i.e., |kA| = k^n |A|. ",
+        "difficulty": "medium",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "The determinant of the matrix A = |1, 2; 3, 4| is 2. Find the determinant of the matrix B = |1, 4; 3, 2|.",
+        "opts": [
+          "(A) 2",
+          "(B) -2",
+          "(C) -6",
+          "(D) 6"
+        ],
+        "ans": "C",
+        "explanation": "The determinant of the matrix B is equal to the determinant of the matrix A multiplied by (-1)^3, i.e., |B| = (-1)^3 * |A| = -2.",
+        "difficulty": "medium",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "The determinant of the matrix A = |a, b; c, d| is 12. Find the determinant of the matrix B = |d, -b; -c, a|.",
+        "opts": [
+          "(A) 12",
+          "(B) 18",
+          "(C) 24",
+          "(D) 36"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of the matrix B is equal to the determinant of the matrix A, i.e., |B| = |A| = 12.",
+        "difficulty": "hard",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "If A is a square matrix of order n x n, then |A| = |A^(-1)|.",
+        "opts": [
+          "(A) True",
+          "(B) False"
+        ],
+        "ans": "B",
+        "explanation": "The determinant of the inverse of a matrix A is the reciprocal of the determinant of matrix A, i.e., |A^(-1)| = 1/|A|. ",
+        "difficulty": "hard",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "The determinant of the matrix A = |1, 2, 3; 4, 5, 6; 7, 8, 9| is -720. Find the determinant of the matrix B = |6, 3, 2; 7, 4, 1; 8, 5, 9|.",
+        "opts": [
+          "(A) 720",
+          "(B) 1440",
+          "(C) 2160",
+          "(D) 2880"
+        ],
+        "ans": "C",
+        "explanation": "The determinant of the matrix B is equal to the determinant of the matrix A multiplied by (-1)^6, i.e., |B| = (-1)^6 * |A| = -(-720) = 720.",
+        "difficulty": "hard",
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "If A is a square matrix of order n x n, then |A| = |A^T|.",
+        "opts": [
+          "(A) True",
+          "(B) False"
+        ],
+        "ans": "A",
+        "explanation": "The determinant of a matrix A is equal to the determinant of its transpose A'.",
+        "difficulty": "hard",
+        "topic": "Properties of Determinants"
+      }
+    ],
+    "total": 18
+  }
+}

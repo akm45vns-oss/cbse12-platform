@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Computer Networks",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:33:50.609Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of packet switching with an example. Also, differentiate between connection-oriented and connectionless protocols.",
+        "marks": 5,
+        "answer": "Packet switching is a method of transmitting data in small packets over a network. Each packet is assigned a header containing the source and destination addresses. The packets may travel different routes to reach the destination. For example, consider a file being sent from source A to destination B through two routers R1 and R2. The file is divided into packets and sent through different routes. Packet 1 goes from A to R1 to B, while packet 2 goes from A to R2 to B. Connection-oriented protocols, such as TCP, establish a dedicated connection between the sender and receiver before data transfer. Connectionless protocols, such as UDP, do not establish a connection and data is sent independently.",
+        "marking_scheme": [
+          "Explanation of packet switching (1 mark)",
+          "Example of packet switching (1 mark)",
+          "Differentiation between connection-oriented and connectionless protocols (3 marks)"
+        ],
+        "topic": "Packet Switching and Protocol",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the difference between LAN, MAN, and WAN? Give an example of each.",
+        "marks": 5,
+        "answer": "LAN (Local Area Network) connects devices within a small geographical area, such as a home or office. MAN (Metropolitan Area Network) connects devices within a larger geographical area, such as a city. WAN (Wide Area Network) connects devices over a large geographical area, such as between cities or countries. For example, consider a home network (LAN), a university network (MAN), and a national network connecting different cities (WAN).",
+        "marking_scheme": [
+          "Definition of LAN (1 mark)",
+          "Definition of MAN (1 mark)",
+          "Definition of WAN (1 mark)",
+          "Example of each (2 marks)"
+        ],
+        "topic": "Types of Networks",
+        "is_numerical": false
+      },
+      {
+        "q": "Suppose you are using a web browser to access a website. Explain the process of HTTP request and response, including the sequence of events and the packets involved.",
+        "marks": 5,
+        "answer": "The process of HTTP request and response involves the following sequence of events: 1) The user enters a URL in the browser, which sends an HTTP request packet to the server. 2) The server processes the request and sends an HTTP response packet back to the browser. 3) The browser receives the response packet and displays the web page. The packets involved are: 1) HTTP request packet (sent from browser to server) 2) HTTP response packet (sent from server to browser)",
+        "marking_scheme": [
+          "Sequence of events (2 marks)",
+          "Packets involved (2 marks)",
+          "Explanation of HTTP request and response (1 mark)"
+        ],
+        "topic": "HTTP",
+        "is_numerical": false
+      },
+      {
+        "q": "A file of size 1024 KB is sent over a network with a bandwidth of 1 MB/s. How long will it take to send the file?",
+        "marks": 5,
+        "answer": "To calculate the time taken to send the file, we need to convert the file size from KB to B and the bandwidth from MB/s to B/s. File size in B = 1024 KB * 1024 B/KB = 1,048,576 B Bandwidth in B/s = 1 MB/s * 1024 B/KB * 1024 KB/MB = 1,048,576 B/s Now, we can calculate the time taken: Time = File size / Bandwidth = 1,048,576 B / 1,048,576 B/s = 1 s",
+        "marking_scheme": [
+          "Conversion of file size and bandwidth (2 marks)",
+          "Calculation of time taken (3 marks)"
+        ],
+        "topic": "Bandwidth",
+        "is_numerical": true
+      },
+      {
+        "q": "A network has a total bandwidth of 100 Mbps. If 5 devices are connected to the network, each with a transmission rate of 20 Mbps, how much bandwidth is left for other devices?",
+        "marks": 5,
+        "answer": "Calculation: Total bandwidth = 100 Mbps Total bandwidth used by 5 devices = 5 * 20 Mbps = 100 Mbps Bandwidth left for other devices = Total bandwidth - Total bandwidth used = 100 Mbps - 100 Mbps = 0 Mbps",
+        "marking_scheme": [
+          "Calculation of total bandwidth used (2 marks)",
+          "Calculation of bandwidth left (3 marks)"
+        ],
+        "topic": "Bandwidth",
+        "is_numerical": true
+      },
+      {
+        "q": "A router has 4 incoming interfaces and 4 outgoing interfaces. If a packet arrives at one of the incoming interfaces, what is the maximum number of paths it can take to reach its destination?",
+        "marks": 5,
+        "answer": "Calculation: Maximum number of paths = Number of outgoing interfaces = 4",
+        "marking_scheme": [
+          "Calculation of maximum number of paths (5 marks)"
+        ],
+        "topic": "Router Configuration",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

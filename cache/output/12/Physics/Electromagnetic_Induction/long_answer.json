@@ -1,0 +1,85 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:21:18.183Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the principle of electromagnetic induction and explain how it is used to produce an electric current. Also, list down the factors affecting the magnitude of the induced emf.",
+        "marks": 5,
+        "answer": "Electromagnetic induction is the process by which a changing magnetic field induces an electric field. This process is used to produce an electric current. The factors affecting the magnitude of the induced emf are: (i) rate of change of magnetic flux, (ii) area enclosed by the conductor, and (iii) number of turns of the coil.",
+        "marking_scheme": [
+          "Describe the principle of electromagnetic induction (2 marks)",
+          "Explain how it is used to produce an electric current (1 mark)",
+          "List down the factors affecting the magnitude of the induced emf (2 marks)"
+        ],
+        "topic": "Principle of Electromagnetic Induction",
+        "is_numerical": false
+      },
+      {
+        "q": "A coil of wire is connected to a galvanometer. A bar magnet is moved towards the coil in a direction perpendicular to the coil. Describe the change in the deflection in the galvanometer when the magnet is (i) stationary, (ii) moving towards the coil, and (iii) moving away from the coil.",
+        "marks": 5,
+        "answer": "When the magnet is stationary, there is no change in the deflection in the galvanometer. When the magnet is moving towards the coil, the deflection in the galvanometer increases. When the magnet is moving away from the coil, the deflection in the galvanometer decreases.",
+        "marking_scheme": [
+          "Describe the change in deflection in the galvanometer when the magnet is stationary (1 mark)",
+          "Describe the change in deflection in the galvanometer when the magnet is moving towards the coil (2 marks)",
+          "Describe the change in deflection in the galvanometer when the magnet is moving away from the coil (2 marks)"
+        ],
+        "topic": "Electromagnetic Induction",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain Lenz's law and state its significance in electromagnetic induction.",
+        "marks": 5,
+        "answer": "Lenz's law states that the direction of the induced current is such that it opposes the change in the magnetic flux. This law is significant in electromagnetic induction as it helps in understanding the direction of the induced current and the behavior of the induced magnetic field.",
+        "marking_scheme": [
+          "Explain Lenz's law (3 marks)",
+          "State its significance in electromagnetic induction (2 marks)"
+        ],
+        "topic": "Lenz's Law",
+        "is_numerical": false
+      },
+      {
+        "q": "A coil of 100 turns is placed perpendicular to a uniform magnetic field of 0.5 T. The area of the coil is 0.01 m^2. If the magnetic field is reduced to 0.2 T in 0.05 s, calculate the induced emf in the coil.",
+        "marks": 5,
+        "answer": "Calculation:\nInduced emf (ε) = -N(dΦ/dt)\nwhere N = 100 turns, dΦ = BA, and dt = 0.05 s.\nB1 = 0.5 T, B2 = 0.2 T, A = 0.01 m^2\nε = -100(0.5 - 0.2)0.01/0.05\nε = 20 V",
+        "marking_scheme": [
+          "Calculate the initial and final magnetic flux (2 marks)",
+          "Calculate the rate of change of magnetic flux (2 marks)",
+          "Calculate the induced emf (1 mark)"
+        ],
+        "topic": "Faraday's Law of Induction",
+        "is_numerical": true
+      },
+      {
+        "q": "A generator has a coil of 200 turns with an area of 0.02 m^2. The magnetic field is reduced from 0.8 T to 0.4 T in 0.1 s. Calculate the induced emf in the coil.",
+        "marks": 5,
+        "answer": "Calculation:\nInduced emf (ε) = -N(dΦ/dt)\nwhere N = 200 turns, dΦ = BA, and dt = 0.1 s.\nB1 = 0.8 T, B2 = 0.4 T, A = 0.02 m^2\nε = -200(0.8 - 0.4)0.02/0.1\nε = 80 V",
+        "marking_scheme": [
+          "Calculate the initial and final magnetic flux (2 marks)",
+          "Calculate the rate of change of magnetic flux (2 marks)",
+          "Calculate the induced emf (1 mark)"
+        ],
+        "topic": "Faraday's Law of Induction",
+        "is_numerical": true
+      },
+      {
+        "q": "A coil of 150 turns is connected to a galvanometer. The coil is placed perpendicular to a uniform magnetic field of 0.3 T. If the magnetic field is increased to 0.6 T in 0.1 s, calculate the current in the coil.",
+        "marks": 5,
+        "answer": "Calculation:\nInduced emf (ε) = -N(dΦ/dt)\nwhere N = 150 turns, dΦ = BA, and dt = 0.1 s.\nB1 = 0.3 T, B2 = 0.6 T, A = ? (not given, assume unit area)\nε = -150(0.6 - 0.3)0.1/0.1\nε = 45 V\nUsing Ohm's law, I = ε/R = 45/1 (assuming unit resistance) = 45 A",
+        "marking_scheme": [
+          "Calculate the initial and final magnetic flux (2 marks)",
+          "Calculate the rate of change of magnetic flux (2 marks)",
+          "Calculate the induced emf and current (1 mark)"
+        ],
+        "topic": "Electromagnetic Induction",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

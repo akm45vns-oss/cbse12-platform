@@ -1,0 +1,20 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T12:19:45.117Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Content",
+        "formula": "Since the chapter is about Structured Query Language (SQL), there are no mathematical formulas in the classical sense. However, I've included some key concepts and syntax in the format you requested:\n\n```json\n[\n  {\n    \"name\": \"SELECT Statement Syntax\",\n    \"syntax\": \"SELECT column1, column2 FROM table_name;\",\n    \"notes\": \"Used to retrieve data from a database table.\",\n    \"units\": \"\"\n  },\n  {\n    \"name\": \"INSERT INTO Statement Syntax\",\n    \"syntax\": \"INSERT INTO table_name (column1, column2) VALUES (value1, value2);\",\n    \"notes\": \"Used to add new data to a database table.\",\n    \"units\": \"\"\n  },\n  {\n    \"name\": \"UPDATE Statement Syntax\",\n    \"syntax\": \"UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;\",\n    \"notes\": \"Used to modify existing data in a database table.\",\n    \"units\": \"\"\n  },\n  {\n    \"name\": \"DELETE Statement Syntax\",\n    \"syntax\": \"DELETE FROM table_name WHERE condition;\",\n    \"notes\": \"Used to delete data from a database table.\",\n    \"units\": \"\"\n  },\n  {\n    \"name\": \"JOIN Syntax\",\n    \"syntax\": \"SELECT column1, column2 FROM table1 INNER/LEFT/RIGHT JOIN table2 ON table1.column_name = table2.column_name;\",\n    \"notes\": \"Used to combine data from two or more tables.\",\n    \"units\": \"\"\n  },\n  {\n    \"name\": \"WHERE Clause Syntax\",\n    \"syntax\": \"SELECT column1, column2 FROM table_name WHERE condition;\",\n    \"notes\": \"Used to filter data based on conditions.\",\n    \"units\": \"\"\n  },\n  {\n    \"name\": \"Subquery Syntax\",\n    \"syntax\": \"(SELECT column1, column2 FROM table_name WHERE condition) AS subquery;\",\n    \"notes\": \"Used to nest a query within another query.\",\n    \"units\": \"\"\n  },\n  {\n    \"name\": \"GROUP BY Clause Syntax\",\n    \"syntax\": \"SELECT column1, column2 FROM table_name GROUP BY column_name HAVING condition;\",\n    \"notes\": \"Used to group data and perform aggregations.\",\n    \"units\": \"\"\n  }\n]\n```\n\nPlease note that these are syntax and not mathematical formulas. The \"units\" field is left blank as there are no units to specify in SQL syntax.",
+        "variables": "",
+        "units": "",
+        "notes": ""
+      }
+    ]
+  }
+}

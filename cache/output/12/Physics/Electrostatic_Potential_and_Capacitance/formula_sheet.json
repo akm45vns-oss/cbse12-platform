@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Electrostatic Potential and Capacitance",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T07:47:18.334Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Electric Potential",
+        "formula": "V = k * q / r",
+        "variables": "V: electric potential, k: Coulomb's constant, q: charge, r: distance from charge",
+        "units": "V: Volts, k: N*m^2/C^2, q: Coulombs, r: meters",
+        "notes": "To find electric potential due to a point charge"
+      },
+      {
+        "name": "Electric Potential Due to Multiple Charges",
+        "formula": "V = k * (q1 / r1 + q2 / r2 + ... + qn / rn)",
+        "variables": "V: electric potential, k: Coulomb's constant, qi: individual charges, ri: distance from each charge",
+        "units": "V: Volts, k: N*m^2/C^2, qi: Coulombs, ri: meters",
+        "notes": "To find electric potential at a point due to multiple point charges"
+      },
+      {
+        "name": "Capacitance of a Capacitor",
+        "formula": "C = Q / V",
+        "variables": "C: capacitance, Q: charge, V: electric potential difference",
+        "units": "C: Farads, Q: Coulombs, V: Volts",
+        "notes": "To find capacitance of a capacitor"
+      },
+      {
+        "name": "Capacitance of a Parallel Plate Capacitor",
+        "formula": "C = ε0 * A / d",
+        "variables": "C: capacitance, ε0: permittivity of free space, A: area of plates, d: distance between plates",
+        "units": "C: Farads, ε0: F/m, A: m^2, d: meters",
+        "notes": "To find capacitance of a parallel plate capacitor"
+      },
+      {
+        "name": "Energy Stored in a Capacitor",
+        "formula": "U = (1/2) * C * V^2",
+        "variables": "U: energy, C: capacitance, V: electric potential difference",
+        "units": "U: Joules, C: Farads, V: Volts",
+        "notes": "To find energy stored in a capacitor"
+      },
+      {
+        "name": "Equivalent Capacitance of Capacitors in Series",
+        "formula": "1/C = 1/C1 + 1/C2 + ... + 1/Cn",
+        "variables": "C: equivalent capacitance, Ci: individual capacitances",
+        "units": "C: Farads",
+        "notes": "To find equivalent capacitance of capacitors in series"
+      },
+      {
+        "name": "Equivalent Capacitance of Capacitors in Parallel",
+        "formula": "C = C1 + C2 + ... + Cn",
+        "variables": "C: equivalent capacitance, Ci: individual capacitances",
+        "units": "C: Farads",
+        "notes": "To find equivalent capacitance of capacitors in parallel"
+      },
+      {
+        "name": "Potential Difference Across a Capacitor",
+        "formula": "V = Q / C",
+        "variables": "V: electric potential difference, Q: charge, C: capacitance",
+        "units": "V: Volts, Q: Coulombs, C: Farads",
+        "notes": "To find potential difference across a capacitor"
+      },
+      {
+        "name": "Electric Field Due to a Point Charge",
+        "formula": "E = k * q / r^2",
+        "variables": "E: electric field, k: Coulomb's constant, q: charge, r: distance from charge",
+        "units": "E: N/C, k: N*m^2/C^2, q: Coulombs, r: meters",
+        "notes": "To find electric field due to a point charge"
+      },
+      {
+        "name": "Electric Field Due to a Uniformly Charged Sphere",
+        "formula": "E = k * Q / r^2 (for r >= R), E = k * Q * r / R^3 (for r < R)",
+        "variables": "E: electric field, k: Coulomb's constant, Q: charge, r: distance from center, R: radius of sphere",
+        "units": "E: N/C, k: N*m^2/C^2, Q: Coulombs, r: meters, R: meters",
+        "notes": "To find electric field due to a uniformly charged sphere"
+      }
+    ]
+  }
+}

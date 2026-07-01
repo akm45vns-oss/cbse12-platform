@@ -1,0 +1,153 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Matrices",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T12:30:48.122Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is a matrix?",
+        "marks": 1,
+        "answer": "A matrix is a rectangular arrangement of numbers (real or complex) in the form of rows and columns.",
+        "key_points": [
+          "Matrix elements are enclosed in square brackets"
+        ],
+        "topic": "Introduction to Matrices"
+      },
+      {
+        "q": "What is the order of a matrix?",
+        "marks": 1,
+        "answer": "The order of a matrix is defined as the number of rows and columns in the matrix.",
+        "key_points": [
+          "Order = number of rows × number of columns"
+        ],
+        "topic": "Introduction to Matrices"
+      },
+      {
+        "q": "What is a square matrix?",
+        "marks": 1,
+        "answer": "A square matrix is a matrix in which the number of rows is equal to the number of columns.",
+        "key_points": [
+          "Diagonal elements are equal in a square matrix"
+        ],
+        "topic": "Types of Matrices"
+      },
+      {
+        "q": "What is the transpose of a matrix?",
+        "marks": 1,
+        "answer": "The transpose of a matrix is obtained by interchanging its rows into columns or columns into rows.",
+        "key_points": [
+          "Transpose of A = A^T"
+        ],
+        "topic": "Transpose of a Matrix"
+      },
+      {
+        "q": "What is the adjoint of a matrix?",
+        "marks": 1,
+        "answer": "The adjoint of a matrix is the matrix obtained by taking the transpose of the cofactor matrix.",
+        "key_points": [
+          "adj(A) = transpose of cofactor matrix of A"
+        ],
+        "topic": "Adjoint of a Matrix"
+      },
+      {
+        "q": "State the property of the adjoint of a matrix.",
+        "marks": 2,
+        "answer": "The product of a matrix and its adjoint is equal to the determinant of the matrix multiplied by the identity matrix.",
+        "key_points": [
+          "A × adj(A) = |A| × I",
+          "where I is the identity matrix"
+        ],
+        "topic": "Adjoint of a Matrix"
+      },
+      {
+        "q": "State the property of the inverse of a matrix.",
+        "marks": 2,
+        "answer": "The inverse of a matrix is obtained by dividing the adjoint of the matrix by the determinant of the matrix.",
+        "key_points": [
+          "A^(-1) = adj(A)/|A|",
+          "where |A| is the determinant of A"
+        ],
+        "topic": "Inverse of a Matrix"
+      },
+      {
+        "q": "Find the transpose of the matrix A = [[1, 2], [3, 4]].",
+        "marks": 3,
+        "answer": "[[1, 3], [2, 4]]",
+        "key_points": [
+          "Transpose of matrix A = A^T"
+        ],
+        "topic": "Transpose of a Matrix"
+      },
+      {
+        "q": "Find the adjoint of the matrix A = [[1, 2], [3, 4]].",
+        "marks": 3,
+        "answer": "[[4, -2], [-3, 1]]",
+        "key_points": [
+          "adj(A) = transpose of cofactor matrix of A"
+        ],
+        "topic": "Adjoint of a Matrix"
+      },
+      {
+        "q": "Find the inverse of the matrix A = [[1, 2], [3, 4]].",
+        "marks": 3,
+        "answer": "Not defined",
+        "key_points": [
+          "A is a non-square matrix, so inverse is not defined"
+        ],
+        "topic": "Inverse of a Matrix"
+      },
+      {
+        "q": "State the property of the determinant of a matrix.",
+        "marks": 2,
+        "answer": "The determinant of a matrix is a scalar value that can be used to determine the solvability of a system of linear equations.",
+        "key_points": [
+          "Determinant = |A|",
+          "where A is the matrix"
+        ],
+        "topic": "Determinant of a Matrix"
+      },
+      {
+        "q": "Find the determinant of the matrix A = [[1, 2], [3, 4]].",
+        "marks": 3,
+        "answer": "-2",
+        "key_points": [
+          "Determinant of matrix A = |A|"
+        ],
+        "topic": "Determinant of a Matrix"
+      },
+      {
+        "q": "Find the solution of the system of linear equations 2x + 3y = 7 and x - 2y = -3 using matrices.",
+        "marks": 3,
+        "answer": "x = 1, y = 1",
+        "key_points": [
+          "Use matrix inversion method to solve the system of linear equations"
+        ],
+        "topic": "Solution of a System of Linear Equations"
+      },
+      {
+        "q": "State the property of the rank of a matrix.",
+        "marks": 2,
+        "answer": "The rank of a matrix is the maximum number of linearly independent rows or columns in the matrix.",
+        "key_points": [
+          "Rank of A = r",
+          "where r is the maximum number of linearly independent rows or columns"
+        ],
+        "topic": "Rank of a Matrix"
+      },
+      {
+        "q": "Find the rank of the matrix A = [[1, 2], [3, 4]].",
+        "marks": 3,
+        "answer": "2",
+        "key_points": [
+          "Rank of matrix A = r"
+        ],
+        "topic": "Rank of a Matrix"
+      }
+    ],
+    "total": 15
+  }
+}

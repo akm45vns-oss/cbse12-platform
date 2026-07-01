@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:33:31.088Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of function in programming with an example.",
+        "marks": 5,
+        "answer": "A function in programming is a block of code that performs a specific task and can be called multiple times from different parts of the program. It takes one or more inputs, also known as arguments or parameters, processes them, and returns an output. For example, consider a function called 'area_of_circle' that calculates the area of a circle given its radius. The function can be defined as follows: area_of_circle(radius) = π * radius^2. This function can be called multiple times with different values of radius to calculate the area of different circles.",
+        "marking_scheme": [
+          "Definition of function worth 1 mark",
+          "Example explanation worth 2 marks",
+          "Function syntax worth 2 marks"
+        ],
+        "topic": "Introduction to Functions",
+        "is_numerical": false
+      },
+      {
+        "q": "Distinguish between a function and a method in programming.",
+        "marks": 5,
+        "answer": "A function is a block of code that performs a specific task and can be called multiple times from different parts of the program, whereas a method is a function that belongs to a class and is used to perform operations on the data members of the class. A function does not have any access to the data members of the class, whereas a method has access to the data members of the class. For example, a function to calculate the area of a circle can be defined outside a class, whereas a method to calculate the area of a circle can be defined within a class.",
+        "marking_scheme": [
+          "Definition of function worth 1 mark",
+          "Definition of method worth 1 mark",
+          "Comparison between function and method worth 3 marks"
+        ],
+        "topic": "Functions vs Methods",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of default arguments in functions.",
+        "marks": 5,
+        "answer": "Default arguments in functions are values assigned to parameters when no value is provided for them. If a value is not provided for a parameter, the default value assigned to it is used. This is useful when a function is called without providing all the required arguments. For example, a function to print the name and age of a person can be defined with default values for name and age. If the function is called without providing name and age, the default values will be used.",
+        "marking_scheme": [
+          "Definition of default arguments worth 1 mark",
+          "Example explanation worth 2 marks",
+          "Usefulness of default arguments worth 2 marks"
+        ],
+        "topic": "Default Arguments",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the value of f(x) = 3x^2 - 2x + 1 when x = 4.",
+        "marks": 5,
+        "answer": "To calculate the value of f(x) when x = 4, we need to substitute x = 4 in the function and perform the arithmetic operations. Calculation: f(4) = 3(4)^2 - 2(4) + 1 = 3(16) - 8 + 1 = 48 - 8 + 1 = 41.",
+        "marking_scheme": [
+          "Substitution of x in the function worth 1 mark",
+          "Arithmetic operations worth 2 marks",
+          "Calculation of final value worth 2 marks"
+        ],
+        "topic": "Function Evaluation",
+        "is_numerical": true
+      },
+      {
+        "q": "Calculate the value of g(y) = 2y^2 + 5y - 3 when y = -2.",
+        "marks": 5,
+        "answer": "To calculate the value of g(y) when y = -2, we need to substitute y = -2 in the function and perform the arithmetic operations. Calculation: g(-2) = 2(-2)^2 + 5(-2) - 3 = 2(4) - 10 - 3 = 8 - 10 - 3 = -5.",
+        "marking_scheme": [
+          "Substitution of y in the function worth 1 mark",
+          "Arithmetic operations worth 2 marks",
+          "Calculation of final value worth 2 marks"
+        ],
+        "topic": "Function Evaluation",
+        "is_numerical": true
+      },
+      {
+        "q": "Calculate the value of h(z) = z^3 - 4z^2 + 5 when z = 2.",
+        "marks": 5,
+        "answer": "To calculate the value of h(z) when z = 2, we need to substitute z = 2 in the function and perform the arithmetic operations. Calculation: h(2) = (2)^3 - 4(2)^2 + 5 = 8 - 16 + 5 = -3.",
+        "marking_scheme": [
+          "Substitution of z in the function worth 1 mark",
+          "Arithmetic operations worth 2 marks",
+          "Calculation of final value worth 2 marks"
+        ],
+        "topic": "Function Evaluation",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

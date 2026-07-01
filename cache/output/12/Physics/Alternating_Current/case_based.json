@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Alternating Current",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:50:50.978Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "In a small town, a local radio broadcasting station is using a transformer to step up the low voltage from the grid to a higher voltage to transmit radio signals over a longer distance. The transformer is designed to handle alternating current (AC) and has a primary coil with 100 turns and a secondary coil with 250 turns. The radio station wants to calculate the ratio of the primary to secondary voltages to ensure that the signal is strong enough to be received by the listeners. If the primary voltage is 220 V, what is the ratio of the secondary to primary voltages?",
+        "questions": [
+          {
+            "q": "What is the purpose of the transformer in this scenario?",
+            "opts": [
+              "To step up the voltage for transmission",
+              "To step down the voltage for safety",
+              "To change the frequency of the signal",
+              "To convert AC to DC"
+            ],
+            "ans": "A",
+            "explanation": "The transformer is used to step up the voltage for transmission over a longer distance."
+          },
+          {
+            "q": "How many turns of the primary coil are there?",
+            "opts": [
+              "100",
+              "250",
+              "500",
+              "1000"
+            ],
+            "ans": "A",
+            "explanation": "The passage states that the primary coil has 100 turns."
+          },
+          {
+            "q": "What is the ratio of the primary to secondary voltages?",
+            "opts": [
+              "1:250",
+              "1:100",
+              "250:100",
+              "100:250"
+            ],
+            "ans": "B",
+            "explanation": "The ratio of the primary to secondary voltages is the inverse of the ratio of the number of turns."
+          },
+          {
+            "q": "What type of current is being handled by the transformer?",
+            "opts": [
+              "Direct Current (DC)",
+              "Alternating Current (AC)",
+              "Pulsating Current",
+              "None of the above"
+            ],
+            "ans": "B",
+            "explanation": "The passage states that the transformer is designed to handle alternating current (AC)."
+          },
+          {
+            "q": "What is the primary voltage?",
+            "opts": [
+              "200 V",
+              "220 V",
+              "250 V",
+              "100 V"
+            ],
+            "ans": "B",
+            "explanation": "The passage states that the primary voltage is 220 V."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A household appliance such as a refrigerator uses an alternating current (AC) source to operate. The refrigerator has a motor that requires a voltage of 240 V to operate efficiently. However, the household AC supply is 220 V. To power the refrigerator, a step-up transformer is used to increase the voltage from 220 V to 240 V. If the transformer has a primary coil with 50 turns and a secondary coil with 120 turns, what is the ratio of the primary to secondary voltages?",
+        "questions": [
+          {
+            "q": "What is the purpose of the step-up transformer in this scenario?",
+            "opts": [
+              "To step up the voltage for transmission",
+              "To step down the voltage for safety",
+              "To change the frequency of the signal",
+              "To convert AC to DC"
+            ],
+            "ans": "A",
+            "explanation": "The transformer is used to step up the voltage to 240 V for the motor to operate efficiently."
+          },
+          {
+            "q": "How many turns of the primary coil are there?",
+            "opts": [
+              "50",
+              "120",
+              "200",
+              "300"
+            ],
+            "ans": "A",
+            "explanation": "The passage states that the primary coil has 50 turns."
+          },
+          {
+            "q": "What is the ratio of the primary to secondary voltages?",
+            "opts": [
+              "1:120",
+              "1:50",
+              "120:50",
+              "50:120"
+            ],
+            "ans": "C",
+            "explanation": "The ratio of the primary to secondary voltages is the inverse of the ratio of the number of turns."
+          },
+          {
+            "q": "What type of current is being handled by the transformer?",
+            "opts": [
+              "Direct Current (DC)",
+              "Alternating Current (AC)",
+              "Pulsating Current",
+              "None of the above"
+            ],
+            "ans": "B",
+            "explanation": "The passage states that the appliance operates using an alternating current (AC) source."
+          },
+          {
+            "q": "What is the voltage required by the motor to operate efficiently?",
+            "opts": [
+              "220 V",
+              "240 V",
+              "250 V",
+              "200 V"
+            ],
+            "ans": "B",
+            "explanation": "The passage states that the motor requires a voltage of 240 V to operate efficiently."
+          }
+        ]
+      }
+    ]
+  }
+}

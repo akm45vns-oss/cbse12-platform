@@ -1,0 +1,98 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Queue",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T07:51:39.887Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Queue",
+        "definition": "A First-In-First-Out (FIFO) data structure where elements are added at the end and removed from the front.",
+        "example": "Example: A line of people waiting for a movie ticket can be represented as a queue."
+      },
+      {
+        "term": "Enqueue",
+        "definition": "The process of adding an element to the end of the queue.",
+        "example": "Example: Adding a person to the end of the line."
+      },
+      {
+        "term": "Dequeue",
+        "definition": "The process of removing an element from the front of the queue.",
+        "example": "Example: Removing a person from the front of the line."
+      },
+      {
+        "term": "Front",
+        "definition": "The front of the queue is the position where the oldest element is stored.",
+        "example": "Example: The front of a queue is where the first person in the line is waiting."
+      },
+      {
+        "term": "Rear",
+        "definition": "The rear of the queue is the position where the newest element is stored.",
+        "example": "Example: The rear of a queue is where a new person joins the line."
+      },
+      {
+        "term": "Queue Operations",
+        "definition": "The basic operations that can be performed on a queue are enqueue, dequeue, isEmpty, isFull, peek, and size.",
+        "example": "Example: These operations are essential for managing a queue."
+      },
+      {
+        "term": "Queue Data Structure",
+        "definition": "A data structure that follows the FIFO principle, where elements are added and removed based on their insertion order.",
+        "example": "Example: A queue can be used to manage a print queue or a job scheduler."
+      },
+      {
+        "term": "First-In-First-Out (FIFO)",
+        "definition": "A principle that states the first element added to the queue will be the first one to be removed.",
+        "example": "Example: A printer's print queue follows the FIFO principle."
+      },
+      {
+        "term": "Last-In-First-Out (LIFO)",
+        "definition": "A principle that states the last element added to the queue will be the first one to be removed.",
+        "example": "Example: A stack follows the LIFO principle."
+      },
+      {
+        "term": "Empty Queue",
+        "definition": "A queue that has no elements.",
+        "example": "Example: A queue with no people waiting in line is an empty queue."
+      },
+      {
+        "term": "Full Queue",
+        "definition": "A queue that has reached its maximum capacity.",
+        "example": "Example: A full queue is when there is no more space to add new elements."
+      },
+      {
+        "term": "Queue Size",
+        "definition": "The number of elements currently stored in the queue.",
+        "example": "Example: The size of a queue can be used to determine if it is full or empty."
+      },
+      {
+        "term": "Peek",
+        "definition": "A non-destructive operation that allows you to access the element at the front of the queue without removing it.",
+        "example": "Example: A peek operation can be used to check the next person in line without removing them."
+      },
+      {
+        "term": "Circular Queue",
+        "definition": "A type of queue where the front and rear indices wrap around when they reach the end of the array.",
+        "example": "Example: A circular queue can be used to efficiently manage a queue with a fixed size."
+      },
+      {
+        "term": "Linked Queue",
+        "definition": "A type of queue where each element is a separate object and is linked to the next element in the queue.",
+        "example": "Example: A linked queue can be used to efficiently manage a large queue."
+      },
+      {
+        "term": "Array Queue",
+        "definition": "A type of queue where elements are stored in an array and the front and rear indices are used to manage the queue.",
+        "example": "Example: An array queue can be used to efficiently manage a queue with a fixed size."
+      },
+      {
+        "term": "Queue Implementation",
+        "definition": "The process of designing and implementing a queue data structure using an array, linked list, or other data structures.",
+        "example": "Example: A queue implementation can be used to manage a print queue or a job scheduler."
+      }
+    ]
+  }
+}

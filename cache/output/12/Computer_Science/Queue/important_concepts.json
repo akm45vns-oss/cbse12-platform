@@ -1,0 +1,53 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Queue",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T07:51:41.234Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "Types of Queues",
+        "description": "There are two types of queues: 1. Linear Queue 2. Circular Queue."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Queue Operations",
+        "description": "The basic operations performed on a queue are: Enqueue (add an element), Dequeue (remove an element), Peek (view the front element), and isEmpty (check if the queue is empty)."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Queue Implementation",
+        "description": "A queue can be implemented using arrays or linked lists. The choice of implementation depends on the specific requirements of the application."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "Enqueue and Dequeue",
+        "description": "To remember the order of Enqueue and Dequeue operations: 'E' is the first letter of 'Enter' and 'D' is the first letter of 'Delete'."
+      },
+      {
+        "category": "Common Mistake",
+        "title": "Queue vs Stack",
+        "description": "Students often confuse queues and stacks. A key difference is that a queue follows the FIFO (First-In-First-Out) principle, whereas a stack follows the LIFO (Last-In-First-Out) principle."
+      },
+      {
+        "category": "Units to remember",
+        "title": "Queue Time Complexity",
+        "description": "The time complexity for Enqueue operation is O(1) and for Dequeue operation is also O(1) for array implementation. However, for linked list implementation, the time complexity for both Enqueue and Dequeue operations is O(1)."
+      },
+      {
+        "category": "Most Important Fact",
+        "title": "Queue Applications",
+        "description": "Queues have numerous real-world applications, including job scheduling, print queues, and network protocols."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Queue Data Structure",
+        "description": "A queue is a linear data structure that follows the FIFO principle, where elements are added to the rear and removed from the front."
+      }
+    ]
+  }
+}

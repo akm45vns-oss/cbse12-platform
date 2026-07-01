@@ -1,0 +1,53 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Computer Networks",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T07:52:48.627Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "TCP and UDP",
+        "description": "TCP (Transmission Control Protocol) is a connection-oriented protocol, ensuring reliable data transfer, whereas UDP (User Datagram Protocol) is a connectionless protocol, prioritizing speed over reliability."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "OSI Model Layers",
+        "description": "The OSI model consists of 7 layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Network Topologies",
+        "description": "Common network topologies include Bus, Star, Ring, and Mesh. Bus topology is linear, Star topology has a central hub, Ring topology is circular, and Mesh topology has multiple connections between nodes."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "OSI Model Layers Mnemonic",
+        "description": "Painstakingly Dozens Never Stir Parents After Sunset (Physical, Data Link, Network, Transport, Session, Presentation, Application) helps remember the 7 layers of the OSI model."
+      },
+      {
+        "category": "Common Mistake",
+        "title": "TCP vs UDP",
+        "description": "Students often confuse TCP and UDP, thinking they are interchangeable. However, TCP is used for applications requiring guaranteed delivery, such as email and file transfer, while UDP is used for real-time applications like video streaming."
+      },
+      {
+        "category": "Units to remember",
+        "title": "IP Address Classes",
+        "description": "The IP address classes are A, B, C, D, and E, with Class A having 8-16 bits, Class B having 16-24 bits, and Class C having 24-32 bits. Class D is for multicast addresses, and Class E is reserved."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Network Devices",
+        "description": "Common network devices include Hubs, Switches, Routers, Modems, and Gateways. Hubs are basic repeaters, Switches are intelligent devices, Routers connect networks, Modems connect to the internet, and Gateways act as translators."
+      },
+      {
+        "category": "Most Important Fact",
+        "title": "HTTP vs FTP",
+        "description": "HTTP (Hypertext Transfer Protocol) is used for web browsing, while FTP (File Transfer Protocol) is used for file transfer. HTTP uses TCP, whereas FTP uses both TCP and UDP."
+      }
+    ]
+  }
+}

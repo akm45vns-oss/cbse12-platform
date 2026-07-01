@@ -1,0 +1,95 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Alternating Current",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:29:25.342Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the differences between AC and DC. Give an example of how AC is used in a common household appliance.",
+        "marks": 5,
+        "answer": "Alternating Current (AC) and Direct Current (DC) differ in the direction of the flow of electrons. AC changes direction periodically, whereas DC flows in one direction only. AC is used in household appliances such as refrigerators and air conditioners due to its ability to transmit power over long distances with less loss of energy.",
+        "marking_scheme": [
+          "Explain the difference between AC and DC (2 marks)",
+          "Give an example of a household appliance using AC (1 mark)",
+          "State the advantage of using AC (1 mark)",
+          "State the type of current used in other appliances like mobile phone chargers (1 mark)"
+        ],
+        "topic": "Introduction to AC",
+        "is_numerical": false
+      },
+      {
+        "q": "A 200 V, 50 Hz AC supply is used in a household. Calculate the value of the impedance (Z) of the circuit, if the resistance (R) is 10 Ω and the reactance (X_L) is 15 Ω.",
+        "marks": 5,
+        "answer": "To find impedance (Z), we use the formula Z = √(R^2 + X_L^2). Given R = 10 Ω and X_L = 15 Ω, Z = √(10^2 + 15^2) = √(100 + 225) = √325 = 18.03 Ω.",
+        "marking_scheme": [
+          "State the formula for finding impedance (1 mark)",
+          "Substitute the given values in the formula (1 mark)",
+          "Perform the calculations to find the value of Z (2 marks)",
+          "Round off the value of Z to two decimal places (1 mark)"
+        ],
+        "topic": "AC Circuit",
+        "is_numerical": true
+      },
+      {
+        "q": "An AC circuit consists of a resistor (R) and an inductor (L) connected in series. The voltage applied across the circuit is 220 V and the frequency of the AC supply is 50 Hz. If the resistance (R) is 20 Ω and the inductance (L) is 0.05 H, calculate the current (I) flowing through the circuit.",
+        "marks": 5,
+        "answer": "First, we find the reactance (X_L) using the formula X_L = 2πfL, where f = 50 Hz and L = 0.05 H. X_L = 2π(50)(0.05) = 15.71 Ω. Then, we find the impedance (Z) using the formula Z = √(R^2 + X_L^2) = √(20^2 + 15.71^2) = √(400 + 247.36) = √647.36 = 25.44 Ω. Finally, we find the current (I) using Ohm's law: I = V/Z = 220/25.44 = 8.65 A.",
+        "marking_scheme": [
+          "State the formula for finding reactance (1 mark)",
+          "Substitute the given values in the formula to find X_L (1 mark)",
+          "State the formula for finding impedance (1 mark)",
+          "Substitute the values of R and X_L in the formula to find Z (1 mark)",
+          "Use Ohm's law to find the current I (1 mark)"
+        ],
+        "topic": "AC Circuit",
+        "is_numerical": true
+      },
+      {
+        "q": "A coil of inductance 0.1 H and resistance 5 Ω is connected to a 220 V, 50 Hz AC supply. Calculate the current (I) flowing through the coil.",
+        "marks": 5,
+        "answer": "First, we find the reactance (X_L) using the formula X_L = 2πfL, where f = 50 Hz and L = 0.1 H. X_L = 2π(50)(0.1) = 31.42 Ω. Then, we find the impedance (Z) using the formula Z = √(R^2 + X_L^2) = √(5^2 + 31.42^2) = √(25 + 984.32) = √1009.32 = 31.85 Ω. Finally, we find the current (I) using Ohm's law: I = V/Z = 220/31.85 = 6.9 A.",
+        "marking_scheme": [
+          "State the formula for finding reactance (1 mark)",
+          "Substitute the given values in the formula to find X_L (1 mark)",
+          "State the formula for finding impedance (1 mark)",
+          "Substitute the values of R and X_L in the formula to find Z (1 mark)",
+          "Use Ohm's law to find the current I (1 mark)"
+        ],
+        "topic": "AC Circuit",
+        "is_numerical": true
+      },
+      {
+        "q": "An AC circuit consists of a capacitor (C) and a resistor (R) connected in series. The voltage applied across the circuit is 120 V and the frequency of the AC supply is 60 Hz. If the capacitance (C) is 50 μF and the resistance (R) is 15 Ω, calculate the current (I) flowing through the circuit.",
+        "marks": 5,
+        "answer": "First, we find the reactance (X_C) using the formula X_C = 1/(2πfC), where f = 60 Hz and C = 50 μF. X_C = 1/(2π(60)(50 × 10^(-6))) = 106.1 Ω. Then, we find the impedance (Z) using the formula Z = √(R^2 + X_C^2) = √(15^2 + 106.1^2) = √(225 + 11273.21) = √11698.21 = 108.35 Ω. Finally, we find the current (I) using Ohm's law: I = V/Z = 120/108.35 = 1.11 A.",
+        "marking_scheme": [
+          "State the formula for finding reactance (1 mark)",
+          "Substitute the given values in the formula to find X_C (1 mark)",
+          "State the formula for finding impedance (1 mark)",
+          "Substitute the values of R and X_C in the formula to find Z (1 mark)",
+          "Use Ohm's law to find the current I (1 mark)"
+        ],
+        "topic": "AC Circuit",
+        "is_numerical": true
+      },
+      {
+        "q": "A 220 V, 50 Hz AC supply is connected across a circuit having a resistance (R) of 15 Ω and an inductance (L) of 0.02 H. Draw the phasor diagram and calculate the power factor of the circuit.",
+        "marks": 5,
+        "answer": "To find the power factor, we first need to find the impedance (Z) using the formula Z = √(R^2 + X_L^2) = √(15^2 + (2π(50)(0.02))^2) = √(225 + 981.93) = √1206.93 = 34.8 Ω. The power factor (cosφ) is given by cosφ = R/Z = 15/34.8 = 0.43.",
+        "marking_scheme": [
+          "State the formula for finding impedance (1 mark)",
+          "Substitute the given values in the formula to find Z (1 mark)",
+          "Draw the phasor diagram (1 mark)",
+          "Calculate the power factor (cosφ) (2 marks)"
+        ],
+        "topic": "AC Circuit",
+        "is_numerical": false
+      }
+    ],
+    "total": 6
+  }
+}

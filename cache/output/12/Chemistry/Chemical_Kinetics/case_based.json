@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T11:10:44.485Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The rate of decay of a radioactive substance is an important aspect of chemical kinetics. In a nuclear power plant, the rate of decay of radon-222 is a concern because it can react with air to form radioactive compounds. The half-life of radon-222 is 3.8 days. If the initial concentration of radon-222 is 100 Bq/g, what is its concentration after 7.6 days? The rate constant for the decay of radon-222 can be assumed to be constant. Use the formula for radioactive decay: ln[N(t)/N0] = -kt, where N(t) is the concentration at time t, N0 is the initial concentration, and k is the rate constant.",
+        "questions": [
+          {
+            "q": "What is the formula for radioactive decay?",
+            "opts": [
+              "(A) ln[N(t)/N0] = kt",
+              "(B) ln[N(t)/N0] = -kt",
+              "(C) ln[N(t)/N0] = k/t",
+              "(D) ln[N(t)/N0] = t/k"
+            ],
+            "ans": "B",
+            "explanation": "The correct formula for radioactive decay is ln[N(t)/N0] = -kt."
+          },
+          {
+            "q": "What is the half-life of radon-222?",
+            "opts": [
+              "(A) 1.9 days",
+              "(B) 3.8 days",
+              "(C) 7.6 days",
+              "(D) 15.2 days"
+            ],
+            "ans": "B",
+            "explanation": "The half-life of radon-222 is given as 3.8 days."
+          },
+          {
+            "q": "What is the value of k in the formula for radioactive decay?",
+            "opts": [
+              "(A) k = 0.693/t1/2",
+              "(B) k = 1/t1/2",
+              "(C) k = t1/2/0.693",
+              "(D) k = 0.693/t"
+            ],
+            "ans": "A",
+            "explanation": "The correct formula for the rate constant k is k = 0.693/t1/2."
+          },
+          {
+            "q": "What is the concentration of radon-222 after 7.6 days?",
+            "opts": [
+              "(A) 100 Bq/g",
+              "(B) 50 Bq/g",
+              "(C) 25 Bq/g",
+              "(D) 12.5 Bq/g"
+            ],
+            "ans": "D",
+            "explanation": "Using the given formula for radioactive decay, we can calculate the concentration of radon-222 after 7.6 days."
+          },
+          {
+            "q": "What is the rate constant for the decay of radon-222?",
+            "opts": [
+              "(A) k = 0",
+              "(B) k = 0.693/3.8",
+              "(C) k = 0.693/7.6",
+              "(D) k = 0.693/15.2"
+            ],
+            "ans": "B",
+            "explanation": "The rate constant for the decay of radon-222 can be calculated using the given half-life."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "The rate of a chemical reaction is often expressed in terms of the rate constant. In a study on the decomposition of hydrogen peroxide (H2O2), it was found that the rate constant (k) for the reaction is 0.05 s^-1. Using the formula for the rate of a reaction: rate = k[A]^n, where [A] is the concentration of the reactant and n is the order of the reaction, calculate the rate of the reaction when the concentration of hydrogen peroxide is 0.5 M.",
+        "questions": [
+          {
+            "q": "What is the formula for the rate of a reaction?",
+            "opts": [
+              "(A) rate = k[A]^n",
+              "(B) rate = k[A] - n",
+              "(C) rate = k - [A]^n",
+              "(D) rate = [A] - k^n"
+            ],
+            "ans": "A",
+            "explanation": "The correct formula for the rate of a reaction is rate = k[A]^n."
+          },
+          {
+            "q": "What is the value of the rate constant (k) for the reaction?",
+            "opts": [
+              "(A) k = 0.01 s^-1",
+              "(B) k = 0.05 s^-1",
+              "(C) k = 0.1 s^-1",
+              "(D) k = 0.2 s^-1"
+            ],
+            "ans": "B",
+            "explanation": "The rate constant (k) for the reaction is given as 0.05 s^-1."
+          },
+          {
+            "q": "What is the order of the reaction?",
+            "opts": [
+              "(A) 0",
+              "(B) 1",
+              "(C) 2",
+              "(D) not given"
+            ],
+            "ans": "B",
+            "explanation": "The order of the reaction is not specified in the passage, but it is often given as 1."
+          },
+          {
+            "q": "What is the concentration of hydrogen peroxide?",
+            "opts": [
+              "(A) 0.1 M",
+              "(B) 0.5 M",
+              "(C) 1 M",
+              "(D) 2 M"
+            ],
+            "ans": "B",
+            "explanation": "The concentration of hydrogen peroxide is given as 0.5 M."
+          },
+          {
+            "q": "What is the rate of the reaction?",
+            "opts": [
+              "(A) 0.025 s^-1",
+              "(B) 0.05 s^-1",
+              "(C) 0.1 s^-1",
+              "(D) 0.2 s^-1"
+            ],
+            "ans": "B",
+            "explanation": "Using the given formula for the rate of a reaction, we can calculate the rate of the reaction."
+          }
+        ]
+      }
+    ]
+  }
+}

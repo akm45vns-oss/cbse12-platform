@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Determinants",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T07:50:34.763Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Determinant of a 2x2 Matrix",
+        "formula": "|a  b| = ad - bc",
+        "variables": "a, b, c, d",
+        "units": "",
+        "notes": "Used to find the determinant of a 2x2 matrix"
+      },
+      {
+        "name": "2. Determinant of a 3x3 Matrix",
+        "formula": "a(ei - fh) - b(di - fg) + c(dh - eg)",
+        "variables": "a, b, c, d, e, f, g, h, i",
+        "units": "",
+        "notes": "Used to find the determinant of a 3x3 matrix"
+      },
+      {
+        "name": "3. Expansion of Determinant along a Row or Column",
+        "formula": "det(A) = a11C11 + a12C12 + ... + a1nC1n (for expansion along a row)",
+        "variables": "a11, a12, ..., a1n, C11, C12, ..., C1n",
+        "units": "",
+        "notes": "Used to expand the determinant of a matrix along a row or column"
+      },
+      {
+        "name": "4. Properties of Determinants",
+        "formula": "det(A) = det(A^T) = det(kA) = k^n det(A)",
+        "variables": "n, A, A^T, k",
+        "units": "",
+        "notes": "Used to find the determinant of a matrix under certain operations (transposition, scalar multiplication)"
+      },
+      {
+        "name": "5. Cofactor of an Element",
+        "formula": "Cij = (-1)^(i+j)Mij",
+        "variables": "Cij, Mij, i, j",
+        "units": "",
+        "notes": "Used to find the cofactor of an element in a matrix"
+      },
+      {
+        "name": "6. Adjoint of a Matrix",
+        "formula": "adj(A) = (Cij)^T",
+        "variables": "Cij, A, adj(A)",
+        "units": "",
+        "notes": "Used to find the adjoint of a matrix"
+      },
+      {
+        "name": "7. Inverse of a Matrix using Determinant and Adjoint",
+        "formula": "A^-1 = (1/det(A))adj(A)",
+        "variables": "A, A^-1, det(A), adj(A)",
+        "units": "",
+        "notes": "Used to find the inverse of a matrix"
+      },
+      {
+        "name": "8. Determinant of a product of Matrices",
+        "formula": "det(AB) = det(A)det(B)",
+        "variables": "A, B, det(A), det(B)",
+        "units": "",
+        "notes": "Used to find the determinant of a product of two matrices"
+      },
+      {
+        "name": "9. Determinant of a Matrix with Zero Rows or Columns",
+        "formula": "det(A) = 0 if A has a zero row or column",
+        "variables": "A, det(A)",
+        "units": "",
+        "notes": "Used to find the determinant of a matrix with a zero row or column"
+      },
+      {
+        "name": "10. Determinant of a Matrix with Identical Rows or Columns",
+        "formula": "det(A) = 0 if A has identical rows or columns",
+        "variables": "A, det(A)",
+        "units": "",
+        "notes": "Used to find the determinant of a matrix with identical rows or columns"
+      }
+    ]
+  }
+}

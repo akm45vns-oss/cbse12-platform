@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Physical Education",
+  "chapter": "Psychology and Sports",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T11:46:55.139Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Calculation of Maximum Heart Rate (MHR)",
+        "formula": "MHR = 220 - age",
+        "variables": "age in years",
+        "units": "beats per minute (bpm)",
+        "notes": "to determine the maximum heart rate for an individual"
+      },
+      {
+        "name": "2. Calculation of Target Heart Rate (THR) Zone",
+        "formula": "THR = (MHR - RHR) × intensity + RHR",
+        "variables": "MHR: maximum heart rate, RHR: resting heart rate, intensity: as a decimal",
+        "units": "beats per minute (bpm)",
+        "notes": "to determine the target heart rate zone for exercise"
+      },
+      {
+        "name": "3. Body Mass Index (BMI) Calculation",
+        "formula": "BMI = weight / height^2",
+        "variables": "weight in kg, height in meters",
+        "units": "kg/m^2",
+        "notes": "to determine the body mass index of an individual"
+      },
+      {
+        "name": "4. Calculation of Basal Metabolic Rate (BMR) for Men",
+        "formula": "BMR = 66 + (6.2 × weight) + (12.7 × height) - (6.8 × age)",
+        "variables": "weight in lbs, height in inches, age in years",
+        "units": "calories per day",
+        "notes": "to estimate the basal metabolic rate for men"
+      },
+      {
+        "name": "5. Calculation of Basal Metabolic Rate (BMR) for Women",
+        "formula": "BMR = 655 + (4.35 × weight) + (4.7 × height) - (4.7 × age)",
+        "variables": "weight in lbs, height in inches, age in years",
+        "units": "calories per day",
+        "notes": "to estimate the basal metabolic rate for women"
+      },
+      {
+        "name": "6. Daily Caloric Needs Calculation",
+        "formula": "Daily Caloric Needs = BMR × activity factor",
+        "variables": "BMR: basal metabolic rate, activity factor: varies based on activity level",
+        "units": "calories per day",
+        "notes": "to determine the daily caloric needs of an individual"
+      },
+      {
+        "name": "7. Calculation of Training Intensity",
+        "formula": "Training Intensity = (work / rest) × 100",
+        "variables": "work: duration of work, rest: duration of rest",
+        "units": "%",
+        "notes": "to determine the intensity of a training session"
+      },
+      {
+        "name": "8. Calculation of VO2 Max",
+        "formula": "VO2 Max = 15 × (distance in meters / time in minutes)",
+        "variables": "distance in meters, time in minutes",
+        "units": "ml/kg/min",
+        "notes": "to estimate the aerobic capacity of an individual"
+      },
+      {
+        "name": "9. Calculation of Flexibility Ratio",
+        "formula": "Flexibility Ratio = (reach in cm / height in cm) × 100",
+        "variables": "reach in cm, height in cm",
+        "units": "%",
+        "notes": "to determine the flexibility of an individual"
+      },
+      {
+        "name": "10. Calculation of Power Output",
+        "formula": "Power Output = (force × distance) / time",
+        "variables": "force in Newtons, distance in meters, time in seconds",
+        "units": "Watts",
+        "notes": "to determine the power output of an individual during exercise"
+      }
+    ]
+  }
+}

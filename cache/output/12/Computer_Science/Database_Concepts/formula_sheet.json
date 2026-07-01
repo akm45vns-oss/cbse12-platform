@@ -1,0 +1,48 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Database Concepts",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T10:07:11.701Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "First Normal Form (1NF)",
+        "formula": "",
+        "variables": "A table is in 1NF if each cell contains a single value.",
+        "units": "",
+        "notes": "A table should not have repeating groups of columns."
+      },
+      {
+        "name": "Second Normal Form (2NF)",
+        "formula": "",
+        "variables": "A table is in 2NF if it is in 1NF and all non-key columns depend on the entire primary key.",
+        "units": "",
+        "notes": "If a table has a composite primary key, it should be in 2NF."
+      },
+      {
+        "name": "Third Normal Form (3NF)",
+        "formula": "",
+        "variables": "A table is in 3NF if it is in 2NF and there are no transitive dependencies.",
+        "units": "",
+        "notes": "If a table has a transitive dependency, it should be moved to a new table."
+      },
+      {
+        "name": "Boyce-Codd Normal Form (BCNF)",
+        "formula": "",
+        "variables": "A table is in BCNF if it is in 3NF and there are no transitive dependencies.",
+        "units": "",
+        "notes": "BCNF is a stronger form of 3NF."
+      },
+      {
+        "name": "Entity Relationship (ER) Model",
+        "formula": "",
+        "variables": "The ER model is a visual representation of entities and their relationships.",
+        "units": "",
+        "notes": "The ER model is used to design databases."
+      }
+    ]
+  }
+}

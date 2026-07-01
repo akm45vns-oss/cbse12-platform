@@ -1,0 +1,53 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Exception Handling",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T07:51:41.297Z",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "category": "Most Important Fact",
+        "title": "Try-Catch Block",
+        "description": "A try-catch block in Java is used to handle exceptions. It has two parts - the try block and the catch block. The try block contains the code that might throw an exception, and the catch block contains the code that will be executed when an exception is thrown."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Exception Handling Mechanism",
+        "description": "The exception handling mechanism in Java consists of three components - try, catch, and finally. The try block is used to execute the code that might throw an exception, the catch block is used to handle the exception, and the finally block is used to execute the code that needs to be executed regardless of whether an exception is thrown or not."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Types of Exceptions",
+        "description": "There are two types of exceptions in Java - checked exceptions and unchecked exceptions. Checked exceptions are those that are checked at compile-time, and unchecked exceptions are those that are not checked at compile-time."
+      },
+      {
+        "category": "Memory Trick",
+        "title": "Try-Catch-Finally Mnemonic",
+        "description": "Use the mnemonic 'Tiger Chases Frank' to remember the order of try, catch, and finally blocks. T - Tiger (Try), C - Chases (Catch), F - Frank (Finally)"
+      },
+      {
+        "category": "Common Mistake",
+        "title": "Not Using try-catch Block",
+        "description": "One common mistake students make is not using a try-catch block when exception handling. This can lead to a program crashing unexpectedly and losing valuable data. Always use a try-catch block when exception handling to prevent this."
+      },
+      {
+        "category": "Most Important Fact",
+        "title": "Exception Handling in Multithreading",
+        "description": "In multithreading, exception handling is more complex because exceptions can be thrown by multiple threads. To handle this, Java provides the Thread class's interrupt method and the ThreadDeath exception."
+      },
+      {
+        "category": "NCERT Line",
+        "title": "Synchronized Blocks",
+        "description": "Synchronized blocks are used to synchronize access to shared resources in multithreading. They ensure that only one thread can execute the code inside the synchronized block at a time."
+      },
+      {
+        "category": "Board Favourite",
+        "title": "Throw and Throws Keywords",
+        "description": "The throw keyword is used to throw an exception, while the throws keyword is used to declare that a method might throw an exception. For example, a method might throw an exception using the throw keyword and declare that it might throw an exception using the throws keyword."
+      }
+    ]
+  }
+}

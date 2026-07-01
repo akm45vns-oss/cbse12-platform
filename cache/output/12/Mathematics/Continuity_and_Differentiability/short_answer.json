@@ -1,0 +1,170 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Continuity and Differentiability",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T08:50:50.501Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the necessary condition for a function to be differentiable at a point?",
+        "marks": 1,
+        "answer": "The function must be continuous at that point.",
+        "key_points": [
+          "Differentiability",
+          "Continuity"
+        ],
+        "topic": "Introduction to Continuity and Differentiability"
+      },
+      {
+        "q": "Define continuity of a function at a point.",
+        "marks": 1,
+        "answer": "A function f(x) is said to be continuous at a point x = a if the following conditions are satisfied: (i) f(a) is defined, (ii) limit of f(x) as x approaches a exists, and (iii) limit of f(x) as x approaches a is equal to f(a).",
+        "key_points": [
+          "Continuity",
+          "Limit"
+        ],
+        "topic": "Continuity"
+      },
+      {
+        "q": "What is the geometric interpretation of the derivative of a function?",
+        "marks": 1,
+        "answer": "The derivative of a function at a point represents the rate of change of the function with respect to the variable at that point, and it is also equal to the slope of the tangent to the curve at that point.",
+        "key_points": [
+          "Derivative",
+          "Geometric Interpretation"
+        ],
+        "topic": "Differentiability"
+      },
+      {
+        "q": "State the relation between continuity and differentiability.",
+        "marks": 1,
+        "answer": "Differentiability implies continuity, but the converse is not necessarily true. A function can be continuous at a point without being differentiable at that point.",
+        "key_points": [
+          "Continuity",
+          "Differentiability"
+        ],
+        "topic": "Introduction to Continuity and Differentiability"
+      },
+      {
+        "q": "Define the derivative of a function f(x) at a point x = a.",
+        "marks": 1,
+        "answer": "The derivative of a function f(x) at a point x = a is defined as the limit of [f(a + h) - f(a)]/h as h approaches zero, and it is denoted by f'(a) or df/dx.",
+        "key_points": [
+          "Derivative",
+          "Limit"
+        ],
+        "topic": "Differentiability"
+      },
+      {
+        "q": "Prove that the function f(x) = |x| is continuous at x = 0 but not differentiable at x = 0.",
+        "marks": 2,
+        "answer": "The function f(x) = |x| is continuous at x = 0 because the left-hand limit, right-hand limit, and function value at x = 0 are all equal to 0. However, the function is not differentiable at x = 0 because the left-hand derivative and right-hand derivative at x = 0 are not equal.",
+        "key_points": [
+          "Continuity",
+          "Differentiability",
+          "Absolute Value Function"
+        ],
+        "topic": "Continuity and Differentiability of Absolute Value Function"
+      },
+      {
+        "q": "Show that the function f(x) = x^2 is differentiable at x = 1.",
+        "marks": 2,
+        "answer": "To show that the function f(x) = x^2 is differentiable at x = 1, we need to show that the limit of [f(1 + h) - f(1)]/h as h approaches zero exists. This limit is equal to the limit of [(1 + h)^2 - 1]/h as h approaches zero, which is equal to the limit of (2h + h^2)/h as h approaches zero, and this limit is equal to 2.",
+        "key_points": [
+          "Differentiability",
+          "Polynomial Function"
+        ],
+        "topic": "Differentiability of Polynomial Functions"
+      },
+      {
+        "q": "Find the derivative of the function f(x) = 3x^2 + 2x - 5.",
+        "marks": 2,
+        "answer": "Using the power rule of differentiation, we have f'(x) = d(3x^2)/dx + d(2x)/dx - d(5)/dx = 6x + 2.",
+        "key_points": [
+          "Derivative",
+          "Polynomial Function"
+        ],
+        "topic": "Differentiability of Polynomial Functions"
+      },
+      {
+        "q": "Prove that the function f(x) = e^x is continuous and differentiable for all real values of x.",
+        "marks": 2,
+        "answer": "The function f(x) = e^x is continuous for all real values of x because the exponential function is defined for all real numbers and the limit of e^x as x approaches a is equal to e^a. The function is also differentiable for all real values of x because the derivative of e^x is e^x, which exists for all real values of x.",
+        "key_points": [
+          "Continuity",
+          "Differentiability",
+          "Exponential Function"
+        ],
+        "topic": "Continuity and Differentiability of Exponential Function"
+      },
+      {
+        "q": "Show that the function f(x) = log|x| is continuous at x = 1 but not differentiable at x = 1.",
+        "marks": 2,
+        "answer": "The function f(x) = log|x| is continuous at x = 1 because the left-hand limit, right-hand limit, and function value at x = 1 are all equal to 0. However, the function is not differentiable at x = 1 because the left-hand derivative and right-hand derivative at x = 1 are not equal.",
+        "key_points": [
+          "Continuity",
+          "Differentiability",
+          "Logarithmic Function"
+        ],
+        "topic": "Continuity and Differentiability of Logarithmic Function"
+      },
+      {
+        "q": "Prove that the function f(x) = |x - 1| is continuous on the interval [0, 2] but not differentiable at x = 1.",
+        "marks": 3,
+        "answer": "The function f(x) = |x - 1| is continuous on the interval [0, 2] because it is continuous at every point in the interval. However, the function is not differentiable at x = 1 because the left-hand derivative and right-hand derivative at x = 1 are not equal. The left-hand derivative is -1, and the right-hand derivative is 1.",
+        "key_points": [
+          "Continuity",
+          "Differentiability",
+          "Absolute Value Function"
+        ],
+        "topic": "Continuity and Differentiability of Absolute Value Function"
+      },
+      {
+        "q": "Find the derivative of the function f(x) = (x^2 + 1)/(x + 1) and state the domain of the function.",
+        "marks": 3,
+        "answer": "Using the quotient rule of differentiation, we have f'(x) = [(x + 1)(2x) - (x^2 + 1)(1)]/(x + 1)^2 = (x^2 + 2x - 1)/(x + 1)^2. The domain of the function is all real numbers except x = -1.",
+        "key_points": [
+          "Derivative",
+          "Rational Function"
+        ],
+        "topic": "Differentiability of Rational Functions"
+      },
+      {
+        "q": "Prove that the function f(x) = sin|x| is continuous for all real values of x but not differentiable at x = 0.",
+        "marks": 3,
+        "answer": "The function f(x) = sin|x| is continuous for all real values of x because the sine function is defined for all real numbers and the limit of sin|x| as x approaches a is equal to sin|a|. However, the function is not differentiable at x = 0 because the left-hand derivative and right-hand derivative at x = 0 are not equal.",
+        "key_points": [
+          "Continuity",
+          "Differentiability",
+          "Trigonometric Function"
+        ],
+        "topic": "Continuity and Differentiability of Trigonometric Functions"
+      },
+      {
+        "q": "Show that the function f(x) = x^3 - 6x^2 + 11x - 6 is differentiable for all real values of x.",
+        "marks": 3,
+        "answer": "The function f(x) = x^3 - 6x^2 + 11x - 6 is a polynomial function, and polynomial functions are differentiable for all real values of x. Using the power rule of differentiation, we have f'(x) = 3x^2 - 12x + 11.",
+        "key_points": [
+          "Differentiability",
+          "Polynomial Function"
+        ],
+        "topic": "Differentiability of Polynomial Functions"
+      },
+      {
+        "q": "Find the derivative of the function f(x) = e^x sin(x) and state the domain of the function.",
+        "marks": 3,
+        "answer": "Using the product rule of differentiation, we have f'(x) = e^x sin(x) + e^x cos(x). The domain of the function is all real numbers.",
+        "key_points": [
+          "Derivative",
+          "Exponential Function",
+          "Trigonometric Function"
+        ],
+        "topic": "Differentiability of Exponential and Trigonometric Functions"
+      }
+    ],
+    "total": 15
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Vector Algebra",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T09:57:41.502Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "In a physics lab, students are tasked with determining the resultant displacement vector of a moving object. The object has been displaced 5 meters in the x-direction and 3 meters in the y-direction. Another force acting on the object results in a displacement of 2 meters in the x-direction and 1 meter in the y-direction. Determine the resultant displacement vector of the object. Assume the unit of displacement is in meters.",
+        "questions": [
+          {
+            "q": "What are the two displacement vectors in this scenario?",
+            "opts": [
+              "(A) 5i + 3j and 2i + j",
+              "(B) 5i + j and 2i + 3j",
+              "(C) 3i + 5j and 1i + 2j",
+              "(D) 5i + 3j and 1i + 2j"
+            ],
+            "ans": "A",
+            "explanation": "The two displacement vectors are 5i + 3j and 2i + j."
+          },
+          {
+            "q": "How do you find the resultant displacement vector?",
+            "opts": [
+              "(A) By adding the corresponding components of the two vectors",
+              "(B) By multiplying the magnitudes of the two vectors",
+              "(C) By subtracting the corresponding components of the two vectors",
+              "(D) By dividing the magnitudes of the two vectors"
+            ],
+            "ans": "A",
+            "explanation": "The resultant displacement vector is found by adding the corresponding components of the two vectors."
+          },
+          {
+            "q": "What is the resultant displacement vector of the object?",
+            "opts": [
+              "(A) (7i + 4j)",
+              "(B) (7i - 4j)",
+              "(C) (-7i + 4j)",
+              "(D) (-7i - 4j)"
+            ],
+            "ans": "A",
+            "explanation": "The resultant displacement vector is (7i + 4j)"
+          },
+          {
+            "q": "What is the magnitude of the resultant displacement vector?",
+            "opts": [
+              "(A) √(7^2 + 4^2)",
+              "(B) √(7^2 - 4^2)",
+              "(C) √(7^2 + 4^2)",
+              "(D) √(7^2 - 4^2)"
+            ],
+            "ans": "A",
+            "explanation": "The magnitude of the resultant displacement vector is √(7^2 + 4^2)"
+          },
+          {
+            "q": "What is the direction of the resultant displacement vector?",
+            "opts": [
+              "(A) Tan^-1(4/7)",
+              "(B) Tan^-1(7/4)",
+              "(C) Tan^-1(4/7) + 90°",
+              "(D) Tan^-1(7/4) - 90°"
+            ],
+            "ans": "A",
+            "explanation": "The direction of the resultant displacement vector is Tan^-1(4/7)"
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A force of 10 N acts on an object in the x-direction. Another force of 20 N acts on the same object in the y-direction. Determine the resultant force vector acting on the object.",
+        "questions": [
+          {
+            "q": "What are the two force vectors in this scenario?",
+            "opts": [
+              "(A) 10i + 20j and 10i - 20j",
+              "(B) 10i + 20j and 10i + 20j",
+              "(C) 10i - 20j and 10i + 20j",
+              "(D) 10i + 20j and 10i - 20j"
+            ],
+            "ans": "D",
+            "explanation": "The two force vectors are 10i + 20j and 10i - 20j."
+          },
+          {
+            "q": "How do you find the resultant force vector?",
+            "opts": [
+              "(A) By adding the corresponding components of the two vectors",
+              "(B) By multiplying the magnitudes of the two vectors",
+              "(C) By subtracting the corresponding components of the two vectors",
+              "(D) By dividing the magnitudes of the two vectors"
+            ],
+            "ans": "A",
+            "explanation": "The resultant force vector is found by adding the corresponding components of the two vectors."
+          },
+          {
+            "q": "What is the resultant force vector acting on the object?",
+            "opts": [
+              "(A) (20i + 20j)",
+              "(B) (20i - 20j)",
+              "(C) (10i + 20j)",
+              "(D) (10i - 20j)"
+            ],
+            "ans": "A",
+            "explanation": "The resultant force vector acting on the object is (20i + 20j)"
+          },
+          {
+            "q": "What is the magnitude of the resultant force vector?",
+            "opts": [
+              "(A) √(20^2 + 20^2)",
+              "(B) √(20^2 - 20^2)",
+              "(C) √(20^2 + 20^2)",
+              "(D) √(20^2 - 20^2)"
+            ],
+            "ans": "A",
+            "explanation": "The magnitude of the resultant force vector is √(20^2 + 20^2)"
+          },
+          {
+            "q": "What is the direction of the resultant force vector?",
+            "opts": [
+              "(A) Tan^-1(20/20)",
+              "(B) Tan^-1(20/20)",
+              "(C) Tan^-1(20/20) + 90°",
+              "(D) Tan^-1(20/20) - 90°"
+            ],
+            "ans": "A",
+            "explanation": "The direction of the resultant force vector is Tan^-1(20/20)"
+          }
+        ]
+      }
+    ]
+  }
+}

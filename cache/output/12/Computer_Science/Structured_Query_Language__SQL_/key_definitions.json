@@ -1,0 +1,108 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T07:52:46.520Z",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "SQL",
+        "definition": "Structured Query Language is a standard language for accessing and managing data in relational database management systems. It allows users to perform various operations like creating, modifying, and querying databases. SQL is used to manage relational databases, which store data in the form of tables.",
+        "example": "Example of an SQL query: SELECT * FROM customers WHERE country='USA';"
+      },
+      {
+        "term": "Relational Database",
+        "definition": "A relational database is a type of database that stores data in the form of tables, with each table having rows and columns. Each row represents a record, and each column represents a field or attribute.",
+        "example": "Example of a relational database: A database that stores information about customers, products, and orders."
+      },
+      {
+        "term": "Table",
+        "definition": "A table is a collection of related data stored in rows and columns. Each row represents a record, and each column represents a field or attribute.",
+        "example": "Example of a table: A table that stores information about customers, with columns for name, address, and phone number."
+      },
+      {
+        "term": "Row",
+        "definition": "A row is a single record in a table, consisting of one entry for each column.",
+        "example": "Example of a row: A row in a table that stores information about a customer, with values for name, address, and phone number."
+      },
+      {
+        "term": "Column",
+        "definition": "A column is a vertical collection of cells in a table, representing a single field or attribute.",
+        "example": "Example of a column: A column in a table that stores information about a customer's name, with values for each row."
+      },
+      {
+        "term": "Field",
+        "definition": "A field is a single piece of data in a table, representing an attribute or characteristic of a record.",
+        "example": "Example of a field: A field in a table that stores a customer's name, with a value of 'John Doe'."
+      },
+      {
+        "term": "Record",
+        "definition": "A record is a single entry in a table, consisting of one entry for each column.",
+        "example": "Example of a record: A record in a table that stores information about a customer, with values for name, address, and phone number."
+      },
+      {
+        "term": "Query",
+        "definition": "A query is a request for data from a database, used to retrieve specific information from one or more tables.",
+        "example": "Example of a query: SELECT * FROM customers WHERE country='USA';"
+      },
+      {
+        "term": "SELECT Statement",
+        "definition": "A SELECT statement is used to retrieve data from one or more tables, and is the most common type of query in SQL.",
+        "example": "Example of a SELECT statement: SELECT name, address FROM customers;"
+      },
+      {
+        "term": "FROM Clause",
+        "definition": "The FROM clause specifies the tables to be used in a query, and is used to identify the source of the data.",
+        "example": "Example of a FROM clause: SELECT * FROM customers;"
+      },
+      {
+        "term": "WHERE Clause",
+        "definition": "The WHERE clause is used to filter the data in a query, and is used to specify conditions for which rows to include.",
+        "example": "Example of a WHERE clause: SELECT * FROM customers WHERE country='USA';"
+      },
+      {
+        "term": "AND Operator",
+        "definition": "The AND operator is used to combine multiple conditions in a WHERE clause, and is used to specify that both conditions must be true.",
+        "example": "Example of an AND operator: SELECT * FROM customers WHERE country='USA' AND age>18;"
+      },
+      {
+        "term": "OR Operator",
+        "definition": "The OR operator is used to combine multiple conditions in a WHERE clause, and is used to specify that at least one of the conditions must be true.",
+        "example": "Example of an OR operator: SELECT * FROM customers WHERE country='USA' OR age>18;"
+      },
+      {
+        "term": "INSERT Statement",
+        "definition": "An INSERT statement is used to add new data to a table, and is used to insert one or more rows into a table.",
+        "example": "Example of an INSERT statement: INSERT INTO customers (name, address, phone) VALUES ('John Doe', '123 Main St', '1234567890');"
+      },
+      {
+        "term": "UPDATE Statement",
+        "definition": "An UPDATE statement is used to modify existing data in a table, and is used to update one or more rows in a table.",
+        "example": "Example of an UPDATE statement: UPDATE customers SET name='Jane Doe' WHERE id=1;"
+      },
+      {
+        "term": "DELETE Statement",
+        "definition": "A DELETE statement is used to remove data from a table, and is used to delete one or more rows from a table.",
+        "example": "Example of a DELETE statement: DELETE FROM customers WHERE id=1;"
+      },
+      {
+        "term": "Index",
+        "definition": "An index is a data structure used to improve the performance of queries, and is used to speed up the retrieval of data from a table.",
+        "example": "Example of an index: A primary key index on a table, used to quickly locate rows based on the primary key value."
+      },
+      {
+        "term": "Primary Key",
+        "definition": "A primary key is a unique identifier for each row in a table, and is used to uniquely identify each row.",
+        "example": "Example of a primary key: A primary key column named 'id' in a table, used to uniquely identify each row."
+      },
+      {
+        "term": "Foreign Key",
+        "definition": "A foreign key is a column or set of columns in a table that references the primary key of another table, and is used to establish relationships between tables.",
+        "example": "Example of a foreign key: A foreign key column named 'customer_id' in a table, used to reference the primary key of a customer table."
+      }
+    ]
+  }
+}

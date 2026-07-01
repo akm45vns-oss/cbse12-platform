@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T12:20:50.268Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Solve the equation sin^(-1)(sin 2π/3) =?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "-π/3",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If y = sin^(-1) x, then find dy/dx.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "1/√(1-x^2)",
+        "year_pattern": "2017-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Which of the following is equivalent to tan^(-1)(1) + cos^(-1)(1/2)?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "π/3",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Prove that tan^(-1)(1/7) + tan^(-1)(1/8) = π/4.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Using the addition formula, we get tan^(-1)(1/7) + tan^(-1)(1/8) = tan^(-1)((1/7 + 1/8)/(1 - 1/7*1/8)) = tan^(-1)(15/55) = tan^(-1)(3/11) ≠ π/4, hence it cannot be proved.",
+        "year_pattern": "2020-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Find the value of x if sin^(-1)(2x + 3) = π/6 and x ∈ [-1, 1].",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "-1/2",
+        "year_pattern": "2016-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "State True or False: The range of the function f(x) = sin^(-1) x is [-π/2, π/2].",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "True",
+        "year_pattern": "2015-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "If tan^(-1) x + tan^(-1) y = π/4, then find the value of xy.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "1",
+        "year_pattern": "2014-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Find the value of cos^(-1)(cos 5π/6) =?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "11π/6",
+        "year_pattern": "2013-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Prove that cos^(-1)(17/17) + sin^(-1)(3/5) = π/2.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "We have cos^(-1)(1) + sin^(-1)(3/5). Now cos^(-1)(1) = 0 and sin^(-1)(3/5) = sin^(-1)(3/5). Let sin^(-1)(3/5) = θ, then sin θ = 3/5. So, cos θ = 4/5. Hence, cos^(-1)(1) + sin^(-1)(3/5) = 0 + sin^(-1)(3/5) = sin^(-1)(3/5). Now, sin^(-1)(3/5) + cos^(-1)(4/5) = π/2, therefore sin^(-1)(3/5) = π/2 - cos^(-1)(4/5). So, cos^(-1)(1) + sin^(-1)(3/5) = 0 + π/2 - cos^(-1)(4/5) = π/2 - cos^(-1)(4/5) + cos^(-1)(1) = π/2 - (cos^(-1)(4/5) - cos^(-1)(1)) = π/2 - cos^(-1)(4/5 - 1*4/5) = π/2 - cos^(-1)(0) = π/2 - π/2 = 0. Hence, cos^(-1)(1) + sin^(-1)(3/5) = π/2 is incorrect.",
+        "year_pattern": "2012-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "If y = tan^(-1) x, then find the value of dy/dx.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "1/(1+x^2)",
+        "year_pattern": "2011-style",
+        "difficulty": "medium"
+      }
+    ],
+    "total": 10
+  }
+}

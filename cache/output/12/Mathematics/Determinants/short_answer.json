@@ -1,0 +1,159 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Determinants",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T12:17:37.890Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Define a determinant of order 3.",
+        "marks": 1,
+        "answer": "The determinant of a 3x3 matrix is defined as the sum of the products of the elements of any row (or column) with their cofactors.",
+        "key_points": [
+          "Cofactors of an element are obtained by removing the row and column of that element"
+        ],
+        "topic": "Determinants"
+      },
+      {
+        "q": "What is the value of the determinant of a singular matrix?",
+        "marks": 1,
+        "answer": "The determinant of a singular matrix is zero.",
+        "key_points": [
+          "A singular matrix does not have an inverse"
+        ],
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "State the property of the determinant for the adjoint of a matrix.",
+        "marks": 1,
+        "answer": "The determinant of the adjoint of a matrix is equal to the determinant of the matrix raised to the power of n-1, where n is the order of the matrix.",
+        "key_points": [
+          "The property is a generalization for any order of matrix"
+        ],
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "Find the value of x if the determinant of the matrix is 0.",
+        "matrix": "[[1, 2], [3, x]]",
+        "marks": 2,
+        "answer": "The value of x is 6.",
+        "key_points": [
+          "To solve, we equate the determinant to zero and find the value of x"
+        ],
+        "topic": "Solving Determinants"
+      },
+      {
+        "q": "Prove that the determinant of the product of two matrices is equal to the product of their determinants.",
+        "marks": 3,
+        "answer": "Let A and B be two matrices, then det(AB) = det(A) * det(B). This can be proved by expanding the determinant along any row or column and then using the properties of determinants.",
+        "key_points": [
+          "The proof involves expanding the determinant and simplifying it using the properties of determinants"
+        ],
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "If A is a square matrix of order 3, show that the value of A^2 is equal to the value of A if A is an idempotent matrix.",
+        "marks": 3,
+        "answer": "To show A^2 = A, we need to prove that A^2 - A = 0, which implies that the determinant of A^2 - A is zero. We can calculate the determinant of A and A^2 and equate them to show that A is idempotent.",
+        "key_points": [
+          "The proof involves calculating the determinant of A and A^2 and equating them"
+        ],
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "Find the determinant of the matrix [[4, 3], [5, 7]].",
+        "marks": 1,
+        "answer": "The determinant of the matrix is 1.",
+        "key_points": [
+          "To find the determinant, we expand along the first row"
+        ],
+        "topic": "Determinants"
+      },
+      {
+        "q": "Prove that the determinant of the adjoint of a matrix A is equal to the determinant of A raised to the power of n-1, where n is the order of the matrix.",
+        "marks": 3,
+        "answer": "Let A be a matrix of order n, then det(adj(A)) = det(A)^(n-1). This can be proved by expanding the determinant along any row or column and then using the properties of determinants.",
+        "key_points": [
+          "The proof involves expanding the determinant and simplifying it using the properties of determinants"
+        ],
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "Find the value of x if the determinant of the matrix [[2, x], [4, 3]] is 0.",
+        "marks": 2,
+        "answer": "The value of x is -6.",
+        "key_points": [
+          "To solve, we equate the determinant to zero and find the value of x"
+        ],
+        "topic": "Solving Determinants"
+      },
+      {
+        "q": "If A is a skew-symmetric matrix of order 3, show that the value of A^T A is equal to -A^2.",
+        "marks": 3,
+        "answer": "To show A^T A = -A^2, we need to prove that A^T A + A^2 = 0, which implies that the determinant of A^T A + A^2 is zero. We can calculate the determinant of A and A^T A and equate them to show that A is skew-symmetric.",
+        "key_points": [
+          "The proof involves calculating the determinant of A and A^T A and equating them"
+        ],
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "Find the determinant of the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]].",
+        "marks": 1,
+        "answer": "The determinant of the matrix is 0.",
+        "key_points": [
+          "To find the determinant, we expand along the first row"
+        ],
+        "topic": "Determinants"
+      },
+      {
+        "q": "Prove that the determinant of the sum of two matrices A and B is equal to the sum of their determinants.",
+        "marks": 3,
+        "answer": "Let A and B be two matrices, then det(A + B) = det(A) + det(B). This can be proved by expanding the determinant along any row or column and then using the properties of determinants.",
+        "key_points": [
+          "The proof involves expanding the determinant and simplifying it using the properties of determinants"
+        ],
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "Find the value of x if the determinant of the matrix [[1, 2], [x, 4]] is 0.",
+        "marks": 2,
+        "answer": "The value of x is 2.",
+        "key_points": [
+          "To solve, we equate the determinant to zero and find the value of x"
+        ],
+        "topic": "Solving Determinants"
+      },
+      {
+        "q": "If A is a nilpotent matrix of order 3, show that the value of A^3 is equal to the zero matrix.",
+        "marks": 3,
+        "answer": "To show A^3 = 0, we need to prove that A^3 = 0, which implies that the determinant of A^3 is zero. We can calculate the determinant of A and A^3 and equate them to show that A is nilpotent.",
+        "key_points": [
+          "The proof involves calculating the determinant of A and A^3 and equating them"
+        ],
+        "topic": "Properties of Determinants"
+      },
+      {
+        "q": "Find the determinant of the matrix [[2, 3], [4, 5]].",
+        "marks": 1,
+        "answer": "The determinant of the matrix is 1.",
+        "key_points": [
+          "To find the determinant, we expand along the first row"
+        ],
+        "topic": "Determinants"
+      },
+      {
+        "q": "Prove that the determinant of the product of two matrices A and B is equal to the product of their determinants.",
+        "marks": 3,
+        "answer": "Let A and B be two matrices, then det(AB) = det(A) * det(B). This can be proved by expanding the determinant along any row or column and then using the properties of determinants.",
+        "key_points": [
+          "The proof involves expanding the determinant and simplifying it using the properties of determinants"
+        ],
+        "topic": "Properties of Determinants"
+      }
+    ],
+    "total": 16
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Physics",
+  "chapter": "Atoms",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-01T07:48:16.528Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Radius of nth Orbit",
+        "formula": "r_n = n^2 * h^2 / (π * m * Z * e^2)",
+        "variables": "n = principal quantum number, h = Planck's constant, m = mass of electron, Z = atomic number, e = charge of electron",
+        "units": "m",
+        "notes": "For hydrogen-like atoms"
+      },
+      {
+        "name": "Energy of Electron in nth Orbit",
+        "formula": "E_n = -13.6 * Z^2 / n^2 eV",
+        "variables": "n = principal quantum number, Z = atomic number",
+        "units": "eV",
+        "notes": "For hydrogen-like atoms"
+      },
+      {
+        "name": "Ionization Energy",
+        "formula": "E_i = 13.6 * Z^2 / n^2 eV",
+        "variables": "n = principal quantum number, Z = atomic number",
+        "units": "eV",
+        "notes": "For hydrogen-like atoms"
+      },
+      {
+        "name": "Wavelength of Radiation Emitted",
+        "formula": "1/λ = Z^2 * R * (1/n_f^2 - 1/n_i^2)",
+        "variables": "λ = wavelength, Z = atomic number, R = Rydberg constant, n_f = final energy level, n_i = initial energy level",
+        "units": "m^-1",
+        "notes": "For hydrogen-like atoms"
+      },
+      {
+        "name": "Rydberg Constant",
+        "formula": "R = me^4 / (8 * ε_0^2 * h^3 * c)",
+        "variables": "m = mass of electron, e = charge of electron, ε_0 = permittivity of free space, h = Planck's constant, c = speed of light",
+        "units": "m^-1",
+        "notes": "For hydrogen-like atoms"
+      },
+      {
+        "name": "de Broglie Wavelength",
+        "formula": "λ = h / p",
+        "variables": "λ = wavelength, h = Planck's constant, p = momentum",
+        "units": "m",
+        "notes": "For particles with mass"
+      },
+      {
+        "name": "Heisenberg Uncertainty Principle",
+        "formula": "Δx * Δp >= h/4π",
+        "variables": "Δx = uncertainty in position, Δp = uncertainty in momentum, h = Planck's constant",
+        "units": "m * kg * m/s",
+        "notes": "For particles with mass"
+      },
+      {
+        "name": "Wave Number",
+        "formula": "k = 2π / λ",
+        "variables": "k = wave number, λ = wavelength",
+        "units": "m^-1",
+        "notes": "For waves"
+      },
+      {
+        "name": "Frequency of Revolution",
+        "formula": "f = Z * e^2 / (2 * ε_0 * h * n^3)",
+        "variables": "f = frequency, Z = atomic number, e = charge of electron, ε_0 = permittivity of free space, h = Planck's constant, n = principal quantum number",
+        "units": "Hz",
+        "notes": "For hydrogen-like atoms"
+      },
+      {
+        "name": "Bohr's Radius",
+        "formula": "r_0 = ε_0 * h^2 / (π * m * e^2)",
+        "variables": "r_0 = Bohr's radius, ε_0 = permittivity of free space, h = Planck's constant, m = mass of electron, e = charge of electron",
+        "units": "m",
+        "notes": "For hydrogen atom"
+      }
+    ]
+  }
+}

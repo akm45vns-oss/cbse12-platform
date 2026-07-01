@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Chemistry",
+  "chapter": "Electrochemistry",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:22:25.196Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the construction and working of a galvanic cell. What is the function of the salt bridge in this cell?",
+        "marks": 5,
+        "answer": "A galvanic cell consists of two half-cells, each containing an electrode and an electrolyte. The construction of a galvanic cell involves placing the two half-cells in an electrolyte solution, usually a salt bridge. The salt bridge helps to maintain electrical neutrality by allowing ions to flow between the two half-cells. This movement of ions helps to balance the charge and maintain the potential difference between the two half-cells.",
+        "marking_scheme": [
+          "Describing the construction of a galvanic cell (1 mark)",
+          "Mentioning the function of the salt bridge (1 mark)",
+          "Explaining how the salt bridge maintains electrical neutrality (3 marks)"
+        ],
+        "topic": "Construction of Galvanic Cells",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the terms electromotive force (EMF) and potential difference. How do they differ?",
+        "marks": 5,
+        "answer": "Electromotive force (EMF) is the energy per unit charge that drives an electric current through a conductor. It is a measure of the potential difference between two points in a circuit. EMF is a vector quantity and is measured in volts. Potential difference, on the other hand, is the difference in electric potential between two points in a circuit. It is a measure of the work done per unit charge in moving a charge from one point to another.",
+        "marking_scheme": [
+          "Defining EMF (1 mark)",
+          "Defining potential difference (1 mark)",
+          "Explaining the difference between EMF and potential difference (3 marks)"
+        ],
+        "topic": "Electromotive Force and Potential Difference",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the process of electrolysis. What are the factors that affect the efficiency of electrolysis?",
+        "marks": 5,
+        "answer": "Electrolysis is the process of using an electric current to drive a chemical reaction. It involves the passage of an electric current through an electrolyte solution, which causes the ions in the solution to move towards the electrodes. The efficiency of electrolysis depends on several factors, including the concentration of the electrolyte, the voltage applied, the surface area of the electrodes, and the temperature of the solution.",
+        "marking_scheme": [
+          "Describing the process of electrolysis (2 marks)",
+          "Listing the factors that affect the efficiency of electrolysis (2 marks)",
+          "Explaining the importance of each factor (1 mark)"
+        ],
+        "topic": "Electrolysis",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the emf of a cell when a current of 2.5 A flows through it for 2.5 hours.",
+        "marks": 5,
+        "answer": "Calculation: \nE = W/zF \nW = It \nW = (2.5 A)(2.5 h)(3600 s/h)\nW = 22.5 kJ \nE = (22,500 C)/(96,485 C/mol)\nE = 0.233 V",
+        "marking_scheme": [
+          "Calculating the work done (W) (1 mark)",
+          "Calculating the emf (E) (3 marks)",
+          "Rounding off the answer (1 mark)"
+        ],
+        "topic": "Electromotive Force",
+        "is_numerical": true
+      },
+      {
+        "q": "A cell is connected to a 10 Ω resistor and a potential difference of 6 V is maintained across it. If the cell has an internal resistance of 5 Ω, calculate the current flowing through the circuit.",
+        "marks": 5,
+        "answer": "Calculation: \nR_total = R_external + R_internal \nR_total = 10 Ω + 5 Ω \nR_total = 15 Ω \nI = V/R_total \nI = 6 V/15 Ω \nI = 0.4 A",
+        "marking_scheme": [
+          "Calculating the total resistance (R_total) (1 mark)",
+          "Calculating the current (I) (3 marks)",
+          "Rounding off the answer (1 mark)"
+        ],
+        "topic": "Internal Resistance",
+        "is_numerical": true
+      },
+      {
+        "q": "A solution of CuSO4 is being electrolyzed using a current of 2 A for 5 hours. If the molar mass of Cu is 63.5 g/mol, calculate the mass of Cu deposited at the cathode.",
+        "marks": 5,
+        "answer": "Calculation: \nQ = It \nQ = (2 A)(5 h)(3600 s/h)\nQ = 36,000 C \nn = Q/F \nn = (36,000 C)/(96,485 C/mol)\nn = 0.373 mol \nm = molar mass x n \nm = (63.5 g/mol)(0.373 mol)\nm = 23.6 g",
+        "marking_scheme": [
+          "Calculating the total charge (Q) (2 marks)",
+          "Calculating the number of moles (n) (2 marks)",
+          "Calculating the mass (m) (1 mark)"
+        ],
+        "topic": "Electrolysis of Water",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

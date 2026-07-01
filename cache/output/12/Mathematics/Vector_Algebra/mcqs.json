@@ -1,0 +1,261 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Vector Algebra",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T12:17:38.844Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "If a = 2i + 3j + k and b = i - 2j - 3k, then the value of |a + b|?",
+        "opts": [
+          "(A) |a + b| = √10",
+          "(B) |a + b| = √34",
+          "(C) |a + b| = √50",
+          "(D) |a + b| = √58"
+        ],
+        "ans": "B",
+        "explanation": "To find the magnitude of (a + b), first, we need to find a + b. Then we apply the formula for magnitude.",
+        "difficulty": "medium",
+        "topic": "Addition of Vectors"
+      },
+      {
+        "q": "What is the value of λ, if 2i + 3j + k is parallel to i + λj + k?",
+        "opts": [
+          "(A) λ = -2/3",
+          "(B) λ = 2/3",
+          "(C) λ = 3/2",
+          "(D) λ = 1"
+        ],
+        "ans": "B",
+        "explanation": "For two vectors to be parallel, they must be scalar multiples of each other.",
+        "difficulty": "easy",
+        "topic": "Properties of Vectors"
+      },
+      {
+        "q": "If a = i + j, b = 2i + 3j + k, c = 3i - 2j - k, then what is the value of [a b c]?",
+        "opts": [
+          "(A) 8",
+          "(B) -8",
+          "(C) 16",
+          "(D) -16"
+        ],
+        "ans": "A",
+        "explanation": "To find the scalar triple product, we expand [a b c] = a . (b x c).",
+        "difficulty": "hard",
+        "topic": "Scalar Triple Product"
+      },
+      {
+        "q": "If a = i + j, b = i + j + k, then what is the value of |a x b|?",
+        "opts": [
+          "(A) √2",
+          "(B) √3",
+          "(C) √5",
+          "(D) √6"
+        ],
+        "ans": "C",
+        "explanation": "First, find the cross product a x b, and then apply the formula for magnitude.",
+        "difficulty": "medium",
+        "topic": "Cross Product"
+      },
+      {
+        "q": "If a = 2i + 3j + k and b = i - 2j - 3k, then what is the value of |a x b|?",
+        "opts": [
+          "(A) √2",
+          "(B) √3",
+          "(C) √50",
+          "(D) √58"
+        ],
+        "ans": "C",
+        "explanation": "To find the magnitude of the cross product, first, we need to find the cross product itself.",
+        "difficulty": "hard",
+        "topic": "Cross Product"
+      },
+      {
+        "q": "If a, b and c are three non-zero vectors such that a x b + b x c + c x a = 0, then which of the following is correct?",
+        "opts": [
+          "(A) a, b, c are parallel",
+          "(B) a, b, c are coplanar",
+          "(B) a, b, c are perpendicular",
+          "(D) None of the above"
+        ],
+        "ans": "B",
+        "explanation": "If the sum of cross products is zero, then the vectors are coplanar.",
+        "difficulty": "medium",
+        "topic": "Properties of Vectors"
+      },
+      {
+        "q": "If a = i + j, b = 2i - j, then what is the value of |a + λb|?",
+        "opts": [
+          "(A) |a + λb| = √(1 + λ^2)",
+          "(B) |a + λb| = √(1 + 4λ^2)",
+          "(C) |a + λb| = √(1 + 5λ^2)",
+          "(D) |a + λb| = √(1 + 9λ^2)"
+        ],
+        "ans": "A",
+        "explanation": "To find the magnitude of (a + λb), first, we need to find a + λb.",
+        "difficulty": "medium",
+        "topic": "Addition of Vectors"
+      },
+      {
+        "q": "If a, b and c are three non-zero vectors such that a . (b x c) = b . (c x a) = c . (a x b) = 0, then what is the value of [a b c]?",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) -1",
+          "(D) 2"
+        ],
+        "ans": "A",
+        "explanation": "If the scalar triple product is zero, then the vectors are coplanar.",
+        "difficulty": "hard",
+        "topic": "Scalar Triple Product"
+      },
+      {
+        "q": "If a = i + j, b = i + j + k, then what is the value of |a x (a + b)|?",
+        "opts": [
+          "(A) √2",
+          "(B) √3",
+          "(C) √5",
+          "(D) √6"
+        ],
+        "ans": "C",
+        "explanation": "To find the magnitude of (a x (a + b)), first, we need to find a x (a + b).",
+        "difficulty": "medium",
+        "topic": "Cross Product"
+      },
+      {
+        "q": "If a, b and c are three non-zero vectors such that a . b = 0 and a . c = 0, then which of the following is correct?",
+        "opts": [
+          "(A) a, b, c are parallel",
+          "(B) a, b, c are perpendicular",
+          "(B) a, b, c are coplanar",
+          "(D) None of the above"
+        ],
+        "ans": "B",
+        "explanation": "If the dot product of two vectors is zero, then the vectors are perpendicular.",
+        "difficulty": "medium",
+        "topic": "Properties of Vectors"
+      },
+      {
+        "q": "What is the value of λ, if 2i + 3j + k is perpendicular to i + λj + k?",
+        "opts": [
+          "(A) λ = 3/2",
+          "(B) λ = 2/3",
+          "(C) λ = -1",
+          "(D) λ = 1"
+        ],
+        "ans": "C",
+        "explanation": "For two vectors to be perpendicular, their dot product must be zero.",
+        "difficulty": "easy",
+        "topic": "Properties of Vectors"
+      },
+      {
+        "q": "If a = 2i + 3j + k and b = i - 2j - 3k, then what is the value of |a . b|?",
+        "opts": [
+          "(A) √10",
+          "(B) √34",
+          "(C) √50",
+          "(D) √58"
+        ],
+        "ans": "B",
+        "explanation": "To find the magnitude of the dot product, first, we need to find the dot product itself.",
+        "difficulty": "hard",
+        "topic": "Dot Product"
+      },
+      {
+        "q": "If a, b and c are three non-zero vectors such that a . b = 0, b . c = 0 and c . a = 0, then which of the following is correct?",
+        "opts": [
+          "(A) a, b, c are parallel",
+          "(B) a, b, c are perpendicular",
+          "(B) a, b, c are coplanar",
+          "(D) None of the above"
+        ],
+        "ans": "B",
+        "explanation": "If the dot product of two vectors is zero, then the vectors are perpendicular.",
+        "difficulty": "medium",
+        "topic": "Properties of Vectors"
+      },
+      {
+        "q": "What is the value of λ, if i + j is a unit vector and λ(i + j) is perpendicular to i + j?",
+        "opts": [
+          "(A) λ = 0",
+          "(B) λ = 1",
+          "(C) λ = -1",
+          "(D) λ = √2"
+        ],
+        "ans": "C",
+        "explanation": "For two vectors to be perpendicular, their dot product must be zero.",
+        "difficulty": "easy",
+        "topic": "Properties of Vectors"
+      },
+      {
+        "q": "If a = i + j, b = 2i - j, then what is the value of a . (b x a)?",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) -1",
+          "(D) 2"
+        ],
+        "ans": "A",
+        "explanation": "To find the scalar triple product, we expand a . (b x a) = 0.",
+        "difficulty": "hard",
+        "topic": "Scalar Triple Product"
+      },
+      {
+        "q": "If a, b and c are three non-zero vectors such that a . (b x c) = b . (c x a) = c . (a x b) = 1, then what is the value of [a b c]?",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) -1",
+          "(D) 2"
+        ],
+        "ans": "B",
+        "explanation": "If the scalar triple product is 1, then the vectors are not coplanar.",
+        "difficulty": "hard",
+        "topic": "Scalar Triple Product"
+      },
+      {
+        "q": "What is the value of λ, if 2i + 3j + k is a scalar multiple of i + λj + k?",
+        "opts": [
+          "(A) λ = 3/2",
+          "(B) λ = 2/3",
+          "(C) λ = 1",
+          "(D) λ = -1"
+        ],
+        "ans": "C",
+        "explanation": "For two vectors to be parallel, they must be scalar multiples of each other.",
+        "difficulty": "easy",
+        "topic": "Properties of Vectors"
+      },
+      {
+        "q": "If a = i + j, b = 2i - j, then what is the value of |a + b|?",
+        "opts": [
+          "(A) √5",
+          "(B) √10",
+          "(C) √15",
+          "(D) √20"
+        ],
+        "ans": "C",
+        "explanation": "To find the magnitude of (a + b), first, we need to find a + b.",
+        "difficulty": "medium",
+        "topic": "Addition of Vectors"
+      },
+      {
+        "q": "If a = i + j, b = i + j + k, then what is the value of |a x (b x a)|?",
+        "opts": [
+          "(A) √2",
+          "(B) √3",
+          "(C) √5",
+          "(D) √6"
+        ],
+        "ans": "C",
+        "explanation": "To find the magnitude of (a x (b x a)), first, we need to find a x (b x a).",
+        "difficulty": "hard",
+        "topic": "Cross Product"
+      }
+    ],
+    "total": 19
+  }
+}

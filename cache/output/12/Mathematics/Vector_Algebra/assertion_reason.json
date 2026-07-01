@@ -1,0 +1,122 @@
+{
+  "class": "12",
+  "subject": "Mathematics",
+  "chapter": "Vector Algebra",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T11:14:02.317Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "assertion": "Assertion (A): The zero vector has a magnitude of 0.",
+        "reason": "Reason (R): The magnitude of a vector is defined as the square root of the dot product of the vector with itself.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The zero vector has a magnitude of 0 as it is the result of the dot product of any vector with itself, which equals 0."
+      },
+      {
+        "assertion": "Assertion (A): The magnitude of a vector is always non-negative.",
+        "reason": "Reason (R): The magnitude of a vector is defined as the square root of the dot product of the vector with itself.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The magnitude of a vector is always non-negative as the square root of any non-negative number is non-negative."
+      },
+      {
+        "assertion": "Assertion (A): The position vector of a point is unique.",
+        "reason": "Reason (R): The position vector of a point is the vector from the origin to the point.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The position vector of a point is unique as it is defined as the vector from the origin to the point, which is unique for every point in space."
+      },
+      {
+        "assertion": "Assertion (A): The vector joining the points A(a, b, c) and B(x, y, z) is given by <x-a, y-b, z-c>.",
+        "reason": "Reason (R): The vector joining two points A and B is given by the difference of the position vectors of B and A.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The vector joining two points A and B is indeed given by the difference of the position vectors of B and A, which is <x-a, y-b, z-c>."
+      },
+      {
+        "assertion": "Assertion (A): The position vector of a point P(x, y, z) is given by <x, y, z>.",
+        "reason": "Reason (R): The position vector of a point P is the vector from the origin to the point P.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The position vector of a point P(x, y, z) is indeed given by <x, y, z> as it is the vector from the origin to the point P."
+      },
+      {
+        "assertion": "Assertion (A): The vector <a, b, c> is equal to the vector <a, b, c>, which is parallel to vector <a, b, c>.",
+        "reason": "Reason (R): Two vectors are equal if and only if they have the same magnitude and direction.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The statement is correct as two vectors are indeed equal if and only if they have the same magnitude and direction."
+      },
+      {
+        "assertion": "Assertion (A): The vector <a, b, c> is not equal to the vector <c, b, a>.",
+        "reason": "Reason (R): Two vectors are equal if and only if they have the same magnitude and direction.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The statement is correct as vectors <a, b, c> and <c, b, a> have different directions and are therefore not equal."
+      },
+      {
+        "assertion": "Assertion (A): The vector <a, b, c> is parallel to the vector <c, b, a>.",
+        "reason": "Reason (R): Two vectors are parallel if and only if they are scalar multiples of each other.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "B",
+        "explanation": "The statement is true as vectors <a, b, c> and <c, b, a> are parallel but the reason given is not the correct explanation as they are not scalar multiples of each other."
+      },
+      {
+        "assertion": "Assertion (A): The vector <a, b, c> is not a unit vector.",
+        "reason": "Reason (R): A unit vector is a vector with magnitude 1.",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "ans": "A",
+        "explanation": "The statement is correct as the vector <a, b, c> is not necessarily a unit vector, unless its magnitude is 1."
+      }
+    ],
+    "total": 9
+  }
+}

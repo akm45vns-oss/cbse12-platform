@@ -1,0 +1,135 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Network Security Concepts",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T10:42:56.906Z",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Rohit, the system administrator of XYZ Corporation, has been tasked with securing the company's network. He has been monitoring the network traffic and has noticed that several employees have been using weak passwords and accessing the network using the default administrator account. Rohit needs to implement a secure authentication mechanism to prevent unauthorized access to the network. He decides to implement a two-factor authentication system that requires both a username and password and a One-Time Password (OTP) sent to the employee's mobile phone. Rohit also needs to ensure that all network traffic is encrypted using Secure Sockets Layer (SSL)/Transport Layer Security (TLS) protocol to prevent eavesdropping and man-in-the-middle attacks.",
+        "questions": [
+          {
+            "q": "What type of authentication mechanism did Rohit decide to implement?",
+            "opts": [
+              "(A) Single-factor authentication",
+              "(B) Two-factor authentication",
+              "(C) Multi-factor authentication",
+              "(D) Biometric authentication"
+            ],
+            "ans": "B",
+            "explanation": "Two-factor authentication requires both a username and password and a One-Time Password (OTP) sent to the employee's mobile phone."
+          },
+          {
+            "q": "Why did Rohit decide to use a Two-factor authentication system?",
+            "opts": [
+              "(A) To prevent eavesdropping and man-in-the-middle attacks",
+              "(B) To provide an additional layer of security",
+              "(C) To reduce the load on the network",
+              "(D) To increase the speed of login"
+            ],
+            "ans": "B",
+            "explanation": "Two-factor authentication provides an additional layer of security by requiring both a username and password and a One-Time Password (OTP) sent to the employee's mobile phone."
+          },
+          {
+            "q": "What protocol does Rohit use to encrypt all network traffic?",
+            "opts": [
+              "(A) Secure Sockets Layer (SSL) protocol",
+              "(B) Transport Layer Security (TLS) protocol",
+              "(C) Both SSL and TLS protocols",
+              "(D) None of the above"
+            ],
+            "ans": "C",
+            "explanation": "Rohit uses both Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols to encrypt all network traffic."
+          },
+          {
+            "q": "Why is it necessary to encrypt network traffic?",
+            "opts": [
+              "(A) To increase the speed of login",
+              "(B) To prevent eavesdropping and man-in-the-middle attacks",
+              "(C) To reduce the load on the network",
+              "(D) To increase the security of the network"
+            ],
+            "ans": "B",
+            "explanation": "Encrypting network traffic prevents eavesdropping and man-in-the-middle attacks by making the data unreadable to unauthorized parties."
+          },
+          {
+            "q": "What is the purpose of using a One-Time Password (OTP) in a Two-factor authentication system?",
+            "opts": [
+              "(A) To provide an additional layer of security",
+              "(B) To prevent eavesdropping and man-in-the-middle attacks",
+              "(C) To reduce the load on the network",
+              "(D) To make the system more user-friendly"
+            ],
+            "ans": "A",
+            "explanation": "The One-Time Password (OTP) provides an additional layer of security by requiring a unique code sent to the employee's mobile phone in addition to the username and password."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "Akshay, the IT security manager of a leading e-commerce company, has been tasked with developing a secure payment gateway. He decides to use the Payment Card Industry Data Security Standard (PCI DSS) to secure the payment information. Akshay ensures that all payment information is encrypted using the Secure Sockets Layer (SSL)/Transport Layer Security (TLS) protocol and stored in a secure database. He also implements a secure tokenization system that replaces sensitive payment information with a unique token, making it difficult for hackers to steal the information.",
+        "questions": [
+          {
+            "q": "What standard does Akshay use to secure the payment information?",
+            "opts": [
+              "(A) Payment Card Industry Data Security Standard (PCI DSS)",
+              "(B) Payment Card Industry Data Encryption Standard (PCI DES)",
+              "(C) Payment Card Industry Data Security Standard (PCI DDS)",
+              "(D) None of the above"
+            ],
+            "ans": "A",
+            "explanation": "Akshay uses the Payment Card Industry Data Security Standard (PCI DSS) to secure the payment information."
+          },
+          {
+            "q": "Why does Akshay use the Secure Sockets Layer (SSL)/Transport Layer Security (TLS) protocol to encrypt payment information?",
+            "opts": [
+              "(A) To increase the speed of payment processing",
+              "(B) To reduce the load on the payment gateway",
+              "(C) To prevent unauthorized access to payment information",
+              "(D) To make the system more user-friendly"
+            ],
+            "ans": "C",
+            "explanation": "Akshay uses the Secure Sockets Layer (SSL)/Transport Layer Security (TLS) protocol to encrypt payment information to prevent unauthorized access to the sensitive data."
+          },
+          {
+            "q": "What is the purpose of tokenization in the payment gateway?",
+            "opts": [
+              "(A) To replace sensitive payment information with a unique token",
+              "(B) To increase the speed of payment processing",
+              "(C) To reduce the load on the payment gateway",
+              "(D) To make the system more user-friendly"
+            ],
+            "ans": "A",
+            "explanation": "Tokenization replaces sensitive payment information with a unique token, making it difficult for hackers to steal the information."
+          },
+          {
+            "q": "Why is it necessary to encrypt payment information?",
+            "opts": [
+              "(A) To increase the speed of payment processing",
+              "(B) To prevent unauthorized access to payment information",
+              "(C) To reduce the load on the payment gateway",
+              "(D) To make the system more user-friendly"
+            ],
+            "ans": "B",
+            "explanation": "Encrypting payment information prevents unauthorized access to the sensitive data by making it unreadable to unauthorized parties."
+          },
+          {
+            "q": "What is the benefit of using a secure tokenization system?",
+            "opts": [
+              "(A) It increases the speed of payment processing",
+              "(B) It reduces the load on the payment gateway",
+              "(C) It makes the system more user-friendly",
+              "(D) It makes it difficult for hackers to steal sensitive payment information"
+            ],
+            "ans": "D",
+            "explanation": "A secure tokenization system replaces sensitive payment information with a unique token, making it difficult for hackers to steal the information."
+          }
+        ]
+      }
+    ]
+  }
+}

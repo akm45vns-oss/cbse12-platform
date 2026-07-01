@@ -1,0 +1,94 @@
+{
+  "class": "12",
+  "subject": "Computer Science",
+  "chapter": "Database Concepts",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:26:47.238Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "What is the primary function of an index in a database?",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "An index is used to speed up the search of data by providing a quick access to the data.",
+        "year_pattern": "2019-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Identify the correct Normal Form for a relation with a composite primary key.",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "BCNF",
+        "year_pattern": "2018-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Explain the concept of Data Normalization with an example.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "Data Normalization is the process of organizing the data in a database to minimize data redundancy and dependency.",
+        "year_pattern": "2020-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "Fill in the blank: A database management system is a software system that enables you to define, create and manage _______________________ in a database.",
+        "type": "Fill in the Blank",
+        "marks": 2,
+        "answer": "relations",
+        "year_pattern": "2017-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "What is the difference between a primary key and a candidate key?",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "A primary key is a candidate key that is used to uniquely identify each record in a table, whereas a candidate key is a column or set of columns that can uniquely identify each record.",
+        "year_pattern": "2015-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Which of the following is an advantage of using a database?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Improved data security",
+        "year_pattern": "2016-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Explain the concept of Entity-Relationship model with an example.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "The Entity-Relationship model is a high-level conceptual model that describes the structure of a database using entities, attributes, and relationships.",
+        "year_pattern": "2019-style",
+        "difficulty": "hard"
+      },
+      {
+        "q": "True or False: A database is a collection of related data that is stored in one or more files.",
+        "type": "True/False",
+        "marks": 1,
+        "answer": "True",
+        "year_pattern": "2018-style",
+        "difficulty": "easy"
+      },
+      {
+        "q": "Identify the correct type of database that is suitable for a small to medium-sized business.",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Relational database",
+        "year_pattern": "2020-style",
+        "difficulty": "medium"
+      },
+      {
+        "q": "Explain the concept of Data Dependency with an example.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "Data Dependency is a relationship between two or more attributes in a database, where the value of one attribute determines the value of another attribute.",
+        "year_pattern": "2017-style",
+        "difficulty": "hard"
+      }
+    ],
+    "total": 10
+  }
+}

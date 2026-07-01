@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Biology",
+  "chapter": "Human Reproduction",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-01T08:23:32.394Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the process of spermatogenesis in males. Explain the role of Sertoli cells in this process.",
+        "marks": 5,
+        "answer": "Spermatogenesis is the process of formation of sperms in males. It takes place in the seminiferous tubules of the testes. The process involves four stages: spermatogonia, primary spermatocytes, secondary spermatocytes, and spermatids. Sertoli cells play a crucial role in spermatogenesis by nourishing and supporting the developing sperms. They secrete androgen-binding protein, which binds to testosterone, making it available to the developing sperms. They also phagocytose the residual bodies formed after spermiogenesis.",
+        "marking_scheme": [
+          "Explain the four stages of spermatogenesis (1 mark)",
+          "Describe the role of Sertoli cells (2 marks)",
+          "Explain the importance of Sertoli cells in spermatogenesis (2 marks)"
+        ],
+        "topic": "Spermatogenesis",
+        "is_numerical": false
+      },
+      {
+        "q": "Compare and contrast the menstrual cycle with the oestrous cycle.",
+        "marks": 5,
+        "answer": "The menstrual cycle and oestrous cycle are both reproductive cycles in females. However, they differ in their duration and the presence of menstruation. The menstrual cycle occurs in humans and some other primates, while the oestrous cycle occurs in other mammals. The menstrual cycle is characterized by a 28-day cycle with menstruation occurring at the end of each cycle. The oestrous cycle, on the other hand, has a shorter duration and does not involve menstruation.",
+        "marking_scheme": [
+          "Explain the characteristics of the menstrual cycle (2 marks)",
+          "Describe the characteristics of the oestrous cycle (2 marks)",
+          "Compare and contrast the two cycles (1 mark)"
+        ],
+        "topic": "Menstrual Cycle and Oestrous Cycle",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the process of ovulation? Describe the role of the pituitary gland in this process.",
+        "marks": 5,
+        "answer": "Ovulation is the process by which the mature ovum is released from the ovary. It occurs in the middle of the menstrual cycle, around day 14. The process is controlled by the pituitary gland, which secretes follicle-stimulating hormone (FSH) and luteinizing hormone (LH). FSH stimulates the growth of follicles in the ovary, while LH triggers the rupture of the follicle and the release of the ovum.",
+        "marking_scheme": [
+          "Explain the process of ovulation (2 marks)",
+          "Describe the role of FSH in ovulation (1 mark)",
+          "Describe the role of LH in ovulation (2 marks)"
+        ],
+        "topic": "Ovulation",
+        "is_numerical": false
+      },
+      {
+        "q": "A woman has a menstrual cycle of 35 days. If she ovulates on day 15, calculate the likely duration of the luteal phase.",
+        "marks": 5,
+        "answer": "Calculation: \nDuration of menstrual cycle = 35 days \nDuration of follicular phase = 10 days (assuming ovulation occurs on day 15) \nDuration of luteal phase = Duration of menstrual cycle - Duration of follicular phase \nDuration of luteal phase = 35 days - 10 days = 25 days.",
+        "marking_scheme": [
+          "Calculate the duration of the luteal phase (2 marks)",
+          "Explain the significance of the luteal phase (1 mark)",
+          "Explain the factors affecting the duration of the luteal phase (2 marks)"
+        ],
+        "topic": "Menstrual Cycle",
+        "is_numerical": true
+      },
+      {
+        "q": "A man has a sperm count of 50 million per milliliter. If he ejaculates 5 milliliters of semen during intercourse, calculate the total number of sperm released.",
+        "marks": 5,
+        "answer": "Calculation: \nTotal number of sperm released = Sperm count per milliliter x Volume of semen ejaculated \nTotal number of sperm released = 50 million/mL x 5 mL \nTotal number of sperm released = 250 million.",
+        "marking_scheme": [
+          "Calculate the total number of sperm released (2 marks)",
+          "Explain the importance of sperm count in fertility (1 mark)",
+          "Explain the factors affecting sperm count (2 marks)"
+        ],
+        "topic": "Spermatogenesis",
+        "is_numerical": true
+      },
+      {
+        "q": "A woman has a basal body temperature of 37°C. If the normal basal body temperature range is 36.5°C to 37.5°C, calculate the percentage increase in her basal body temperature.",
+        "marks": 5,
+        "answer": "Calculation: \nNormal basal body temperature range = 36.5°C to 37.5°C \nPercentage increase = ((Basal body temperature - Lower limit of normal range) / (Upper limit of normal range - Lower limit of normal range)) x 100 \nPercentage increase = ((37°C - 36.5°C) / (37.5°C - 36.5°C)) x 100 \nPercentage increase = (0.5°C / 1°C) x 100 \nPercentage increase = 50%.",
+        "marking_scheme": [
+          "Calculate the percentage increase in basal body temperature (2 marks)",
+          "Explain the significance of basal body temperature (1 mark)",
+          "Explain the factors affecting basal body temperature (2 marks)"
+        ],
+        "topic": "Menstrual Cycle",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}
