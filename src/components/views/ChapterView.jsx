@@ -420,8 +420,8 @@ export const ChapterView = memo(function ChapterView({
 
   // Board Exam Weightage Estimation
   const boardWeightage = subject === "Physics" || subject === "Chemistry" || subject === "Biology" || subject === "Mathematics"
-    ? "8-10% of Board Exam"
-    : "5-7% of Board Exam";
+    ? "8-10%"
+    : "5-7%";
 
   // Tab Definitions
   const tabs = [
@@ -571,7 +571,7 @@ export const ChapterView = memo(function ChapterView({
           </div>
 
           {/* ─── Tab Bar Navigation ─── */}
-          <div className="hide-scrollbar" style={{ overflowX: "auto", display: "flex", gap: 6, marginBottom: 18, paddingBottom: 6 }}>
+          <div className="hide-scrollbar" style={{ overflowX: "auto", display: "flex", flexWrap: "nowrap", gap: 8, marginBottom: 18, padding: "4px 4px 10px 4px", WebkitOverflowScrolling: "touch" }}>
             {tabs.map(t => {
               const active = activeTab === t.id;
               return (
@@ -582,7 +582,8 @@ export const ChapterView = memo(function ChapterView({
                     padding: "10px 18px", borderRadius: 99, border: "none", fontSize: 13, fontWeight: 800, cursor: "pointer",
                     background: active ? "#4f46e5" : "white", color: active ? "white" : "#64748b",
                     boxShadow: active ? "0 4px 12px rgba(79,70,229,0.2)" : "0 1px 3px rgba(0,0,0,0.05)",
-                    transition: "all 0.2s", whiteSpace: "nowrap"
+                    transition: "all 0.2s", whiteSpace: "nowrap", flexShrink: 0,
+                    display: "inline-flex", alignItems: "center", gap: 6
                   }}
                 >
                   {t.icon} {t.label}
@@ -603,7 +604,13 @@ export const ChapterView = memo(function ChapterView({
                     <span style={{ fontSize: 11, fontWeight: 800, color: "#1d4ed8", letterSpacing: "0.06em", textTransform: "uppercase" }}>NCERT Introduction Summary</span>
                   </div>
                   <p style={{ fontSize: 13.5, color: "#1e40af", lineHeight: 1.6, margin: 0 }}>
-                    {typeof n.ncert_summary === "string" ? n.ncert_summary.split("\n")[0] : n.ncert_summary.markdown?.split("\n")[0] || "Get a fast foundation with this condensed NCERT overview."}
+                    {(() => {
+                      const raw = typeof n.ncert_summary === "string" ? n.ncert_summary : n.ncert_summary.markdown || "";
+                      if (!raw) return "Get a fast foundation with this condensed NCERT overview.";
+                      const lines = raw.split("\n").map(l => l.trim());
+                      const preview = lines.find(l => l && !l.startsWith("#") && !l.startsWith("-") && !l.startsWith("*") && !l.startsWith("---") && !l.startsWith("|"));
+                      return preview || "Get a fast foundation with this condensed NCERT overview.";
+                    })()}
                   </p>
                 </div>
               )}
