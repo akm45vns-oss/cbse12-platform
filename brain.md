@@ -215,9 +215,9 @@ Four primary tables manage user state, progress, and static content:
 
 ### 2026-07-02
 - **Files**: `src/components/views/ChapterView.jsx` [MODIFY]
-- **Reason**: Redesign the Chapter Hub page to follow real student study workflows instead of exposing raw database content types.
-- **Summary**: Grouped 15 raw generated JSON file formats into 4 distinct, highly-interactive sections: 📖 **Learn** (Learning Objectives, Detailed Study Guide, NCERT Summary, Core Concepts, formulas, definitions) with an inline modal-based Lightbox reader, 📝 **Practice** (interactive MCQs/Case Studies linked to quiz systems, subjective Q&As using a tap-to-reveal model answer selector), ⚡ **Quick Revision** (short notes, quick formula sheets, memory tricks, common mistakes cards), and 📅 **Study Planner** (time-budget progress bar allocations, suggested session timelines, prep strategy tips).
-- **Impact**: Maximizes study efficiency, touch-target ergonomics on mobile viewports, and overall platform engagement.
+- **Reason**: Redesign the Chapter Hub page to follow real student study workflows instead of exposing raw database content types and fix formatting.
+- **Summary**: Grouped 15 raw generated JSON file formats into 4 distinct, highly-interactive sections: 📖 **Learn** (Learning Objectives, Detailed Study Guide, NCERT Summary, Core Concepts, formulas, definitions) with an inline modal-based Lightbox reader, 📝 **Practice** (interactive MCQs/Case Studies linked to quiz systems, subjective Q&As using a tap-to-reveal model answer selector), ⚡ **Quick Revision** (short notes, quick formula sheets, memory tricks, common mistakes cards), and 📅 **Study Planner** (time-budget progress bar allocations, suggested session timelines, prep strategy tips). Fixed a bug where objectives, concepts, formulas, and definitions rendered as raw JSON strings by adding customized sub-renderers.
+- **Impact**: Maximizes study efficiency, touch-target ergonomics on mobile viewports, and ensures all 15 JSON types render natively with rich styles instead of raw JSON.
 
 ### 2026-07-01
 - **Files**: `scripts/check_all_files.js` [NEW], `scripts/heal_database.js` [NEW]
