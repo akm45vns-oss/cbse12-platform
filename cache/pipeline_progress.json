@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-01T18:17:20.636Z",
-  "elapsed_seconds": 440,
-  "rate_per_second": 6.17,
+  "updated_at": "2026-07-01T19:57:20.508Z",
+  "elapsed_seconds": 70,
+  "rate_per_second": 38.83,
   "queue": {
-    "completed": 2714,
-    "pending": 10,
+    "completed": 2718,
+    "pending": 7,
     "inFlight": 5,
-    "failed": 1,
-    "retrying": 10,
+    "failed": 0,
+    "retrying": 7,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
@@ -20,12 +20,12 @@
       "workerId": "Worker-Physics",
       "processed": 0,
       "skipped": 0,
-      "failed": 6,
+      "failed": 3,
       "running": true
     },
     {
       "workerId": "Worker-Chemistry",
-      "processed": 1,
+      "processed": 0,
       "skipped": 0,
       "failed": 5,
       "running": true
@@ -34,144 +34,144 @@
       "workerId": "Worker-Maths",
       "processed": 0,
       "skipped": 0,
-      "failed": 8,
+      "failed": 4,
       "running": true
     },
     {
       "workerId": "Worker-Biology",
-      "processed": 0,
+      "processed": 1,
       "skipped": 0,
-      "failed": 7,
+      "failed": 3,
       "running": true
     },
     {
       "workerId": "Worker-Other",
       "processed": 0,
       "skipped": 0,
-      "failed": 7,
+      "failed": 3,
       "running": true
     }
   ],
   "recent_events": [
     {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating detailed_notes for Memories of Childhood (English)",
-      "timestamp": "2026-07-01T18:16:31.858Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating detailed_notes for Determinants (Mathematics)",
-      "timestamp": "2026-07-01T18:16:31.820Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-01T18:16:31.506Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-01T18:16:31.501Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "generating",
-      "message": "Generating detailed_notes for Keeping Quiet (English)",
-      "timestamp": "2026-07-01T18:16:14.806Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "error",
-      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
-      "timestamp": "2026-07-01T18:16:14.572Z"
-    },
-    {
-      "workerId": "Worker-Other",
+      "workerId": "Worker-Physics",
       "status": "generating",
       "message": "Generating detailed_notes for Ecosystem (Biology)",
-      "timestamp": "2026-07-01T18:16:13.027Z"
+      "timestamp": "2026-07-01T19:57:20.353Z"
     },
     {
-      "workerId": "Worker-Physics",
+      "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating detailed_notes for Deep Water (English)",
-      "timestamp": "2026-07-01T18:16:13.024Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "error",
-      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
-      "timestamp": "2026-07-01T18:16:12.390Z"
+      "message": "Generating detailed_notes for Memories of Childhood (English)",
+      "timestamp": "2026-07-01T19:57:20.344Z"
     },
     {
       "workerId": "Worker-Physics",
       "status": "error",
-      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
-      "timestamp": "2026-07-01T18:16:12.388Z"
+      "message": "Validation failed for 12::Physical Education::Physical Education and Sports for CWSN::detailed_notes: Content too short: 784 words (minimum 800)",
+      "timestamp": "2026-07-01T19:57:20.150Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "error",
+      "message": "Validation failed for 12::English::Should Wizard Hit Mommy::detailed_notes: Content too short: 591 words (minimum 800)",
+      "timestamp": "2026-07-01T19:57:20.148Z"
     },
     {
       "workerId": "Worker-Maths",
       "status": "generating",
-      "message": "Generating detailed_notes for Physical Education and Sports for CWSN (Physical Education)",
-      "timestamp": "2026-07-01T18:15:26.745Z"
+      "message": "Generating detailed_notes for Linear Programming (Mathematics)",
+      "timestamp": "2026-07-01T19:57:19.987Z"
     },
     {
       "workerId": "Worker-Maths",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-01T18:15:26.422Z"
+      "timestamp": "2026-07-01T19:57:19.789Z"
     },
     {
       "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating detailed_notes for The Enemy (English)",
-      "timestamp": "2026-07-01T18:15:18.194Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating detailed_notes for Children and Women in Sports (Physical Education)",
-      "timestamp": "2026-07-01T18:15:18.026Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "error",
-      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
-      "timestamp": "2026-07-01T18:15:17.858Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
-      "timestamp": "2026-07-01T18:15:17.688Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
       "status": "generating",
       "message": "Generating detailed_notes for Entrepreneurship Development (Business Studies)",
-      "timestamp": "2026-07-01T18:14:14.404Z"
+      "timestamp": "2026-07-01T19:57:19.728Z"
     },
     {
-      "workerId": "Worker-Chemistry",
+      "workerId": "Worker-Maths",
       "status": "error",
-      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
-      "timestamp": "2026-07-01T18:14:14.148Z"
+      "message": "Validation failed for 12::English::Deep Water::detailed_notes: Content too short: 742 words (minimum 800)",
+      "timestamp": "2026-07-01T19:57:19.508Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating detailed_notes for Directing (Business Studies)",
+      "timestamp": "2026-07-01T19:57:18.610Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "generating",
-      "message": "Generating detailed_notes for Yoga as Preventive Measure for Lifestyle Diseases (Physical Education)",
-      "timestamp": "2026-07-01T18:14:12.295Z"
+      "message": "Generating detailed_notes for Current Electricity (Physics)",
+      "timestamp": "2026-07-01T19:57:18.438Z"
     },
     {
-      "workerId": "Worker-Physics",
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-01T19:57:18.367Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "error",
+      "message": "Validation failed for 12::Physical Education::Yoga as Preventive Measure for Lifestyle Diseases::detailed_notes: Content too short: 651 words (minimum 800)",
+      "timestamp": "2026-07-01T19:57:18.217Z"
+    },
+    {
+      "workerId": "Worker-Biology",
       "status": "generating",
-      "message": "Generating detailed_notes for Queue (Computer Science)",
-      "timestamp": "2026-07-01T18:14:12.295Z"
+      "message": "Generating detailed_notes for The Enemy (English)",
+      "timestamp": "2026-07-01T19:57:17.068Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating detailed_notes for Should Wizard Hit Mommy (English)",
+      "timestamp": "2026-07-01T19:57:16.655Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-01T19:57:16.452Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-01T19:57:16.096Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating detailed_notes for Keeping Quiet (English)",
+      "timestamp": "2026-07-01T19:56:15.490Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating detailed_notes for Deep Water (English)",
+      "timestamp": "2026-07-01T19:56:15.377Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "done",
+      "message": "✅ Mathematics/Determinants/detailed_notes",
+      "timestamp": "2026-07-01T19:56:15.221Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "error",
+      "message": "Validation failed for 12::English::Memories of Childhood::detailed_notes: Content too short: 690 words (minimum 800)",
+      "timestamp": "2026-07-01T19:56:15.179Z"
     }
   ]
 }

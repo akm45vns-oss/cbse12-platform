@@ -1,6 +1,6 @@
 {
-  "savedAt": "2026-07-01T19:54:58.396Z",
-  "completedCount": 2716,
+  "savedAt": "2026-07-01T19:56:15.219Z",
+  "completedCount": 2718,
   "queues": {
     "1": [],
     "2": [],
@@ -9,25 +9,22 @@
   },
   "retryQueue": [
     {
-      "id": "12::Physics::Current Electricity::detailed_notes",
-      "classLevel": "12",
-      "subject": "Physics",
-      "chapter": "Current Electricity",
-      "contentType": "detailed_notes",
-      "attempt": 3,
-      "lastError": "Validation failed: Content too short: 723 words (minimum 800)"
-    }
-  ],
-  "failedTasks": [
-    {
-      "id": "12::English::Deep Water::detailed_notes",
+      "id": "12::English::Keeping Quiet::detailed_notes",
       "classLevel": "12",
       "subject": "English",
-      "chapter": "Deep Water",
+      "chapter": "Keeping Quiet",
       "contentType": "detailed_notes",
-      "attempt": 4,
-      "lastError": "Groq HTTP 429",
-      "finalError": "Groq HTTP 429"
+      "attempt": 2,
+      "lastError": "Groq HTTP 429"
+    },
+    {
+      "id": "12::English::Should Wizard Hit Mommy::detailed_notes",
+      "classLevel": "12",
+      "subject": "English",
+      "chapter": "Should Wizard Hit Mommy",
+      "contentType": "detailed_notes",
+      "attempt": 2,
+      "lastError": "Groq HTTP 429"
     },
     {
       "id": "12::English::The Enemy::detailed_notes",
@@ -35,29 +32,26 @@
       "subject": "English",
       "chapter": "The Enemy",
       "contentType": "detailed_notes",
-      "attempt": 4,
-      "lastError": "Validation failed: Content too short: 549 words (minimum 800)",
-      "finalError": "Validation failed: Content too short: 549 words (minimum 800)"
+      "attempt": 2,
+      "lastError": "Validation failed: Content too short: 631 words (minimum 800)"
     },
     {
-      "id": "12::Physical Education::Yoga as Preventive Measure for Lifestyle Diseases::detailed_notes",
+      "id": "12::Physics::Current Electricity::detailed_notes",
       "classLevel": "12",
-      "subject": "Physical Education",
-      "chapter": "Yoga as Preventive Measure for Lifestyle Diseases",
+      "subject": "Physics",
+      "chapter": "Current Electricity",
       "contentType": "detailed_notes",
-      "attempt": 4,
-      "lastError": "Groq HTTP 429",
-      "finalError": "Groq HTTP 429"
+      "attempt": 2,
+      "lastError": "Validation failed: Content too short: 707 words (minimum 800)"
     },
     {
-      "id": "12::Biology::Ecosystem::detailed_notes",
+      "id": "12::Business Studies::Directing::detailed_notes",
       "classLevel": "12",
-      "subject": "Biology",
-      "chapter": "Ecosystem",
+      "subject": "Business Studies",
+      "chapter": "Directing",
       "contentType": "detailed_notes",
-      "attempt": 4,
-      "lastError": "Validation failed: Content too short: 713 words (minimum 800)",
-      "finalError": "Validation failed: Content too short: 713 words (minimum 800)"
+      "attempt": 2,
+      "lastError": "Groq HTTP 429"
     },
     {
       "id": "12::Business Studies::Entrepreneurship Development::detailed_notes",
@@ -65,9 +59,27 @@
       "subject": "Business Studies",
       "chapter": "Entrepreneurship Development",
       "contentType": "detailed_notes",
-      "attempt": 4,
-      "lastError": "Groq HTTP 429",
-      "finalError": "Groq HTTP 429"
+      "attempt": 2,
+      "lastError": "Groq HTTP 429"
+    },
+    {
+      "id": "12::Mathematics::Linear Programming::detailed_notes",
+      "classLevel": "12",
+      "subject": "Mathematics",
+      "chapter": "Linear Programming",
+      "contentType": "detailed_notes",
+      "attempt": 2,
+      "lastError": "Validation failed: Content too short: 663 words (minimum 800)"
+    },
+    {
+      "id": "12::English::Memories of Childhood::detailed_notes",
+      "classLevel": "12",
+      "subject": "English",
+      "chapter": "Memories of Childhood",
+      "contentType": "detailed_notes",
+      "attempt": 2,
+      "lastError": "Validation failed: Content too short: 690 words (minimum 800)"
     }
-  ]
+  ],
+  "failedTasks": []
 }
