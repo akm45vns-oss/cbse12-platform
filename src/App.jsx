@@ -7,6 +7,7 @@ import { SearchBar } from "./components/common/SearchBar";
 import { recordDailyActivity } from "./utils/loginStreak";
 import { recordQuizSubmission } from "./utils/weakTopics";
 import { getCachedNotes, cacheNotes } from "./utils/cacheManager";
+import { getRecentChapters } from "./utils/recentChapters";
 import { usePerformanceMetrics } from "./utils/performanceMonitoring";
 import { validateQuestion } from "./utils/quizUtils";
 // Eager load critical views, lazy load others
@@ -1055,9 +1056,26 @@ Format Guidelines:
             id: "practice-hub", Icon: PracticeIcon, label: "Practice",
             isActive: nav.view === "practice-hub" || nav.view === "practice" || nav.view === "quiz",
             onClick: () => {
-              // Go to current chapter practice if inside a chapter, else go dashboard
-              if (nav.chapter) nav.navigate("practice");
-              else nav.goToDashboard();
+              if (nav.chapter) {
+                nav.navigate("practice");
+              } else {
+                const recent = getRecentChapters(1)[0];
+                if (recent) {
+                  nav.navigate("practice", { subject: recent.subject, chapter: recent.chapter });
+                } else {
+                  const firstSubj = Object.keys(activeCurriculum)[0];
+                  if (firstSubj) {
+                    const firstChap = activeCurriculum[firstSubj].units?.[0]?.chapters?.[0];
+                    if (firstChap) {
+                      nav.navigate("practice", { subject: firstSubj, chapter: firstChap });
+                    } else {
+                      nav.goToDashboard();
+                    }
+                  } else {
+                    nav.goToDashboard();
+                  }
+                }
+              }
             },
           },
           {
