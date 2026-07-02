@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Geography",
+  "chapter": "Water Resources",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T07:25:45.978Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of groundwater and its importance in meeting the water requirements of a region.",
+        "marks": 5,
+        "answer": "Groundwater is a vital component of the water cycle and plays a crucial role in meeting the water requirements of a region. It is the water stored beneath the Earth's surface in the soil pore spaces and in the fractures of rock formations. The importance of groundwater can be attributed to its ability to provide a reliable source of water during times of drought or water scarcity. Groundwater is also a vital source of water for irrigation, industry, and drinking purposes. It helps to maintain the water table and prevents soil erosion. Furthermore, groundwater is a crucial component of the ecosystem, supporting plant growth and maintaining the quality of surface water.",
+        "marking_scheme": [
+          "Describe the concept of groundwater (1 mark)",
+          "Explain the importance of groundwater (2 marks)",
+          "Provide examples of the uses of groundwater (1 mark)",
+          "Discuss its role in the ecosystem (1 mark)"
+        ],
+        "topic": "Groundwater and its Importance",
+        "is_numerical": false
+      },
+      {
+        "q": "Determine the annual replenishment rate of a water resource using the following data: Average annual rainfall = 1200 mm, Evaporation = 500 mm, Infiltration = 400 mm, Runoff = 300 mm.",
+        "marks": 5,
+        "answer": "Calculation:\n Annual Replenishment Rate = (Average Annual Rainfall - Evaporation - Runoff) + Infiltration\n = (1200 - 500 - 300) + 400\n = 700 mm\n Therefore, the annual replenishment rate of the water resource is 700 mm.",
+        "marking_scheme": [
+          "Calculate the annual replenishment rate using the given formula (3 marks)",
+          "Explain the significance of the calculated replenishment rate (2 marks)"
+        ],
+        "topic": "Water Balance and Replenishment",
+        "is_numerical": true
+      },
+      {
+        "q": "Describe the process of water harvesting and its importance in managing water resources.",
+        "marks": 5,
+        "answer": "Water harvesting is a technique used to collect and store rainwater or surface water for various uses. The process involves constructing a structure, such as a dam or a tank, to collect and store water. The collected water is then used for irrigation, drinking purposes, or other domestic uses. Water harvesting is important in managing water resources as it helps to reduce the pressure on groundwater, prevents soil erosion, and maintains the water table. It also helps to recharge groundwater, providing a reliable source of water during times of drought or water scarcity.",
+        "marking_scheme": [
+          "Describe the process of water harvesting (2 marks)",
+          "Explain the importance of water harvesting (2 marks)",
+          "Provide examples of water harvesting techniques (1 mark)"
+        ],
+        "topic": "Water Harvesting and Management",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the amount of water available for irrigation using the following data: Crop water requirement = 1500 m³/ha, Irrigation efficiency = 0.6, Available water supply = 10,000 m³.",
+        "marks": 5,
+        "answer": "Calculation:\n Water available for irrigation = Available water supply x Irrigation efficiency\n = 10,000 x 0.6\n = 6,000 m³\n Water required for irrigation = Crop water requirement x Area\n = 1500 x Area\n Since we are not given the area, we cannot calculate the exact amount of water required for irrigation. However, we can calculate the maximum amount of water available for irrigation, which is 6,000 m³.",
+        "marking_scheme": [
+          "Calculate the water available for irrigation (3 marks)",
+          "Explain the concept of irrigation efficiency (1 mark)",
+          "Discuss the importance of calculating water availability for irrigation (1 mark)"
+        ],
+        "topic": "Irrigation and Water Availability",
+        "is_numerical": true
+      },
+      {
+        "q": "Describe the role of water conservation in managing water resources and its impact on the environment.",
+        "marks": 5,
+        "answer": "Water conservation plays a crucial role in managing water resources by reducing water waste and promoting efficient use of water. It helps to reduce the pressure on groundwater, prevents soil erosion, and maintains the water table. Water conservation also helps to recharge groundwater, providing a reliable source of water during times of drought or water scarcity. Furthermore, water conservation has a positive impact on the environment by reducing the amount of pollutants in water bodies, preventing water-borne diseases, and maintaining the quality of surface water.",
+        "marking_scheme": [
+          "Describe the role of water conservation (2 marks)",
+          "Explain the impact of water conservation on the environment (2 marks)",
+          "Provide examples of water conservation techniques (1 mark)"
+        ],
+        "topic": "Water Conservation and Management",
+        "is_numerical": false
+      },
+      {
+        "q": "Determine the water requirement of a crop using the following data: Crop water requirement coefficient (Kc) = 0.4, Reference crop evapotranspiration (ETo) = 8 mm/day, Irrigation efficiency (Ei) = 0.6.",
+        "marks": 5,
+        "answer": "Calculation:\n Crop water requirement = Kc x ETo\n = 0.4 x 8\n = 3.2 mm/day\n Water required for irrigation = Crop water requirement / Irrigation efficiency\n = 3.2 / 0.6\n = 5.33 mm/day\n Therefore, the water requirement of the crop is 5.33 mm/day.",
+        "marking_scheme": [
+          "Calculate the crop water requirement (3 marks)",
+          "Explain the concept of crop water requirement coefficient (1 mark)",
+          "Discuss the importance of irrigation efficiency (1 mark)"
+        ],
+        "topic": "Crop Water Requirement and Irrigation",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

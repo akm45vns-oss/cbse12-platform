@@ -1,0 +1,89 @@
+{
+  "class": "11",
+  "subject": "Geography",
+  "chapter": "Climate",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T09:10:45.323Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the differences between tropical and temperate climates in terms of temperature, precipitation, and vegetation. (5 marks)",
+        "marks": 5,
+        "answer": "Tropical climates are characterized by high temperatures and high levels of precipitation throughout the year. Temperate climates, on the other hand, have moderate temperatures and varying levels of precipitation. Tropical climates support dense vegetation, while temperate climates have a mix of deciduous and evergreen vegetation. Marking scheme: (1) Temperature difference between tropical and temperate climates (1 mark); (2) Precipitation patterns in tropical and temperate climates (1 mark); (3) Type of vegetation in tropical and temperate climates (1 mark); (4) Seasonal variations in tropical and temperate climates (1 mark); (5) Overall differences between tropical and temperate climates (1 mark).",
+        "marking_scheme": [
+          "Temperature difference between tropical and temperate climates (1 mark)",
+          "Precipitation patterns in tropical and temperate climates (1 mark)",
+          "Type of vegetation in tropical and temperate climates (1 mark)",
+          "Seasonal variations in tropical and temperate climates (1 mark)",
+          "Overall differences between tropical and temperate climates (1 mark)"
+        ],
+        "topic": "Types of Climates",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of albedo and its impact on climate. (5 marks)",
+        "marks": 5,
+        "answer": "Albedo is the measure of the amount of solar radiation that is reflected by a surface. It plays a crucial role in regulating Earth's climate. A higher albedo means more solar radiation is reflected, resulting in a cooler climate. Marking scheme: (1) Definition of albedo (1 mark); (2) Impact of albedo on climate (2 marks); (3) Examples of high and low albedo surfaces (1 mark); (4) Importance of albedo in climate regulation (1 mark).",
+        "marking_scheme": [
+          "Definition of albedo (1 mark)",
+          "Impact of albedo on climate (2 marks)",
+          "Examples of high and low albedo surfaces (1 mark)",
+          "Importance of albedo in climate regulation (1 mark)"
+        ],
+        "topic": "Factors Affecting Climate",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the characteristics of a humid subtropical climate and provide an example of a region with this type of climate. (5 marks)",
+        "marks": 5,
+        "answer": "A humid subtropical climate is characterized by hot summers and mild winters, with significant precipitation throughout the year. The region of eastern North America is an example of a humid subtropical climate. Marking scheme: (1) Characteristics of a humid subtropical climate (2 marks); (2) Example of a region with a humid subtropical climate (2 marks); (3) Seasonal variations in a humid subtropical climate (1 mark).",
+        "marking_scheme": [
+          "Characteristics of a humid subtropical climate (2 marks)",
+          "Example of a region with a humid subtropical climate (2 marks)",
+          "Seasonal variations in a humid subtropical climate (1 mark)"
+        ],
+        "topic": "Types of Climates",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the average temperature of a region if the maximum temperature is 25°C and the minimum temperature is 15°C. (5 marks)",
+        "marks": 5,
+        "answer": "To calculate the average temperature, we use the formula: Average temperature = (Maximum temperature + Minimum temperature) / 2. Calculation: (25 + 15) / 2 = 40 / 2 = 20°C.",
+        "marking_scheme": [
+          "Use of formula to calculate average temperature (2 marks)",
+          "Correct calculation of average temperature (2 marks)",
+          "Accuracy of answer (1 mark)"
+        ],
+        "topic": "Climate Measurement",
+        "is_numerical": true
+      },
+      {
+        "q": "A region receives an average annual rainfall of 800 mm. If the region has a dry season, calculate the amount of rainfall received during the wet season. (5 marks)",
+        "marks": 5,
+        "answer": "To calculate the amount of rainfall received during the wet season, we need to assume that the dry season receives negligible rainfall. Let's assume the wet season accounts for 8 months out of 12 months. Calculation: (800 mm / 12) * 8 = 533.33 mm.",
+        "marking_scheme": [
+          "Assumption of negligible rainfall during the dry season (1 mark)",
+          "Calculation of rainfall during the wet season (2 marks)",
+          "Accuracy of answer (2 marks)"
+        ],
+        "topic": "Climate Measurement",
+        "is_numerical": true
+      },
+      {
+        "q": "A region has a relative humidity of 60% at 25°C. Calculate the saturation vapor pressure at this temperature. (5 marks)",
+        "marks": 5,
+        "answer": "To calculate the saturation vapor pressure, we need to use the formula: Saturation vapor pressure = (Relative humidity / 100) * (6.11 * e^(0.21 * (Temperature - 273.15))). Calculation: (60 / 100) * (6.11 * e^(0.21 * (25 - 273.15))) = 0.6 * (6.11 * e^(-24.215)) = 0.6 * 0.003 = 0.0018 kPa.",
+        "marking_scheme": [
+          "Use of formula to calculate saturation vapor pressure (2 marks)",
+          "Correct calculation of saturation vapor pressure (2 marks)",
+          "Accuracy of answer (1 mark)"
+        ],
+        "topic": "Climate Measurement",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

@@ -211,12 +211,13 @@ export const LearnView = memo(function LearnView({
         </div>
       </div>
 
-      {/* ── Grid Tab Bar ── */}
+      {/* ── Grid Tab Bar (3-col grid, no flex-wrap ragging) ── */}
       <div
-        ref={tabBarRef}
         style={{
-          display: "flex", flexWrap: "wrap", gap: 8, paddingBottom: 4,
-          marginBottom: 20,
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: 8,
+          marginBottom: 16,
         }}
       >
         {LEARN_TABS.map(tab => {
@@ -227,18 +228,18 @@ export const LearnView = memo(function LearnView({
               onClick={() => setActiveTab(tab.id)}
               className={isActive ? "learn-tab-active" : ""}
               style={{
-                flex: "1 1 auto",
-                padding: "8px 12px", borderRadius: 12,
-                border: isActive ? "2px solid #4f46e5" : "1.5px solid rgba(0,0,0,0.08)",
-                background: isActive ? "linear-gradient(135deg,#4f46e5,#818cf8)" : "white",
-                color: isActive ? "white" : "#64748b",
-                fontSize: 12, fontWeight: 800,
-                boxShadow: isActive ? "0 4px 14px rgba(79,70,229,0.25)" : "0 1px 4px rgba(0,0,0,0.04)",
-                transition: "all 0.2s", display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+                padding: "9px 6px", borderRadius: 12,
+                border: isActive ? `2px solid var(--primary)` : `1.5px solid var(--border-card)`,
+                background: isActive ? "linear-gradient(135deg,#4f46e5,#818cf8)" : "var(--bg-card)",
+                color: isActive ? "white" : "var(--text-label)",
+                fontSize: 11, fontWeight: 800,
+                boxShadow: isActive ? "0 4px 14px rgba(79,70,229,0.25)" : "var(--shadow-sm)",
+                transition: "all 0.2s",
+                display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 3,
               }}
             >
-              <span style={{ fontSize: 14 }}>{tab.icon}</span>
-              {tab.label}
+              <span style={{ fontSize: 16 }}>{tab.icon}</span>
+              <span>{tab.label}</span>
             </button>
           );
         })}
@@ -264,18 +265,18 @@ export const LearnView = memo(function LearnView({
 
       {/* ── Bottom CTA Bar ── */}
       <div style={{
-        marginTop: 32, background: "white", borderRadius: 20,
-        border: "1px solid rgba(79,70,229,0.08)", padding: "16px 20px",
-        boxShadow: "0 4px 20px rgba(79,70,229,0.06)",
-        display: "flex", gap: 12, alignItems: "center",
+        marginTop: 28, background: "var(--bg-card)", borderRadius: 20,
+        border: "1px solid var(--border-card)", padding: "14px 16px",
+        boxShadow: "var(--shadow-card)",
+        display: "flex", gap: 10, alignItems: "center",
       }}>
         {!notesRead && onMarkRead && (
           <button
             onClick={onMarkRead}
             style={{
-              flex: 1, background: "white", border: "1.5px solid #4f46e5",
-              borderRadius: 14, padding: "12px 16px", color: "#4f46e5",
-              fontSize: 14, fontWeight: 800, transition: "all 0.2s",
+              flex: 1, background: "var(--bg-card)", border: "1.5px solid var(--primary)",
+              borderRadius: 14, padding: "12px 14px", color: "var(--primary)",
+              fontSize: 13, fontWeight: 800, transition: "all 0.2s",
             }}
           >
             ✓ Mark as Read
@@ -286,12 +287,12 @@ export const LearnView = memo(function LearnView({
             onClick={onGoToPractice}
             style={{
               flex: 2, background: "linear-gradient(135deg,#4f46e5,#818cf8)",
-              border: "none", borderRadius: 14, padding: "12px 16px",
-              color: "white", fontSize: 14, fontWeight: 800,
+              border: "none", borderRadius: 14, padding: "12px 14px",
+              color: "white", fontSize: 13, fontWeight: 800,
               boxShadow: "0 4px 14px rgba(79,70,229,0.3)", transition: "all 0.2s",
             }}
           >
-            Next: Practice Questions →
+            Next: Practice →
           </button>
         )}
       </div>

@@ -1,0 +1,20 @@
+{
+  "class": "12",
+  "subject": "Geography",
+  "chapter": "Tertiary and Quaternary Activities",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T09:25:11.203Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Content",
+        "formula": "```json\n[\n  {\n    \"name\": \"1. Index of Dissimilarity\",\n    \"formula\": \"ID = 100 ∑ | fi - fj | / 2 ∑ fi\",\n    \"variables\": \"fi: percentage of workers in occupation i, fj: percentage of workers in occupation j\",\n    \"units\": \"Percentage\",\n    \"notes\": \"Used to measure the extent of dissimilarity between two occupations\"\n  },\n  {\n    \"name\": \"2. Index of Dissimilarity (Simplified)\",\n    \"formula\": \"ID = 200 ∑ | fi - fj |\",\n    \"variables\": \"fi: percentage of workers in occupation i, fj: percentage of workers in occupation j\",\n    \"units\": \"Percentage\",\n    \"notes\": \"Used to measure the extent of dissimilarity between two occupations\"\n  },\n  {\n    \"name\": \"3. Index of Dissimilarity (Special Case)\",\n    \"formula\": \"ID = 100 ∑ | fi - fj |\",\n    \"variables\": \"fi: percentage of workers in occupation i, fj: percentage of workers in occupation j\",\n    \"units\": \"Percentage\",\n    \"notes\": \"Used for special cases when total number of workers is even\"\n  },\n  {\n    \"name\": \"4. Value Added per Employee (VAPE)\",\n    \"formula\": \"VAPE = Total Value Added / Total Number of Employees\",\n    \"variables\": \"Total Value Added: total value added by the industry, Total Number of Employees: total number of employees in the industry\",\n    \"units\": \"Currency units\",\n    \"notes\": \"Used to measure the productivity of an industry\"\n  },\n  {\n    \"name\": \"5. Value Added per Person Engaged (VAPE)\",\n    \"formula\": \"VAPE = Total Value Added / Total Number of Persons Engaged\",\n    \"variables\": \"Total Value Added: total value added by the industry, Total Number of Persons Engaged: total number of persons engaged in the industry\",\n    \"units\": \"Currency units\",\n    \"notes\": \"Used to measure the productivity of an industry\"\n  },\n  {\n    \"name\": \"6. Gross Value Added (GVA)\",\n    \"formula\": \"GVA = Total Output - Intermediate Consumption\",\n    \"variables\": \"Total Output: total output of the industry, Intermediate Consumption: intermediate consumption by the industry\",\n    \"units\": \"Currency units\",\n    \"notes\": \"Used to measure the value added by an industry\"\n  }\n]\n```\n\nNote: As Tertiary and Quaternary Activities chapter in CBSE Class 12 Geography does not involve complex mathematical formulas, these formulas are based on industry productivity measures and dissimilarity indices.",
+        "variables": "",
+        "units": "",
+        "notes": ""
+      }
+    ]
+  }
+}

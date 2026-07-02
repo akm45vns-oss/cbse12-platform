@@ -1,0 +1,88 @@
+{
+  "class": "11",
+  "subject": "Geography",
+  "chapter": "Water in the Atmosphere",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T09:44:51.042Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of dew and its importance in the water cycle. (5 marks)",
+        "marks": 5,
+        "answer": "Dew is the process of water vapor condensing into tiny droplets on the surface of objects, typically at night. This process is essential in the water cycle as it contributes to the formation of fog and contributes to the replenishment of water sources. Dew is also crucial for plant growth and development.",
+        "marking_scheme": [
+          "Explanation of dew (1 mark)",
+          "Importance in the water cycle (1 mark)",
+          "Importance for plant growth and development (1 mark)",
+          "Additional relevant points (2 marks)"
+        ],
+        "topic": "Formation and Importance of Dew",
+        "is_numerical": false
+      },
+      {
+        "q": "What are the main factors that affect the formation of dew? Explain with examples. (5 marks)",
+        "marks": 5,
+        "answer": "The main factors that affect the formation of dew are temperature, humidity, and wind speed. If the air is cool and humid, dew is more likely to form. For example, on a warm summer day, the ground temperature may cool down rapidly at night, causing dew to form on the surface.",
+        "marking_scheme": [
+          "Temperature as a factor (1 mark)",
+          "Humidity as a factor (1 mark)",
+          "Wind speed as a factor (1 mark)",
+          "Additional relevant points (2 marks)"
+        ],
+        "topic": "Factors Affecting Dew Formation",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of precipitation and its different types, including rain, snow, sleet, and hail. (5 marks)",
+        "marks": 5,
+        "answer": "Precipitation is the process by which water vapor in the atmosphere condenses and falls to the ground. There are several types of precipitation, including rain, snow, sleet, and hail. Rain occurs when water droplets in the atmosphere become too heavy to remain suspended in the air and fall to the ground. Snow occurs when the air is cold enough for the water droplets to freeze into ice crystals. Sleet forms when snowflakes fall through a layer of warm air, causing them to melt into raindrops, which then freeze into ice pellets before reaching the ground. Hail forms when updrafts in thunderstorms carry water droplets up into the freezing level of the atmosphere, where they freeze into small balls of ice.",
+        "marking_scheme": [
+          "Definition of precipitation (1 mark)",
+          "Types of precipitation (2 marks)",
+          "Formation process of each type (2 marks)"
+        ],
+        "topic": "Precipitation and Its Types",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the amount of precipitation in a certain area if the relative humidity is 80% and the air temperature is 20°C. (5 marks)",
+        "marks": 5,
+        "answer": "Calculation: To calculate the amount of precipitation, we need to calculate the saturation vapor pressure at 20°C and then use the relative humidity to find the actual vapor pressure. The formula for saturation vapor pressure is e = 6.11 * exp((17.27 * T) / (T + 237.3)), where e is the saturation vapor pressure and T is the temperature in °C. Substituting the values, we get e = 6.11 * exp((17.27 * 20) / (20 + 237.3)) = 23.38 kPa. Since the relative humidity is 80%, the actual vapor pressure is 80% of 23.38 kPa, which is 18.71 kPa. The amount of precipitation can be calculated using the formula P = (Vp * ΔT) / (L * Δz), where P is the precipitation, Vp is the vapor pressure, ΔT is the temperature difference, L is the latent heat of vaporization, and Δz is the height difference. However, since the height difference is not given, we will assume it to be 1 meter. Therefore, P = (18.71 * 1) / (2.5 * 10^6 * 1) = 7.48 * 10^-6 m^3/s. To convert this to millimeters per hour, we multiply by 3600 (the number of seconds in an hour) and 1000 (to convert cubic meters to milliliters). Therefore, the amount of precipitation is 7.48 * 10^-6 * 3600 * 1000 = 2.69 mm/h.",
+        "marking_scheme": [
+          "Calculation of saturation vapor pressure (1 mark)",
+          "Calculation of actual vapor pressure (1 mark)",
+          "Calculation of precipitation (3 marks)"
+        ],
+        "topic": "Precipitation Calculation",
+        "is_numerical": true
+      },
+      {
+        "q": "Calculate the amount of evaporation from a lake with a surface area of 100 km^2 and a water depth of 10 m if the temperature is 25°C. (5 marks)",
+        "marks": 5,
+        "answer": "Calculation: To calculate the amount of evaporation, we need to calculate the saturation vapor pressure at 25°C and then use the formula for evaporation. The formula for saturation vapor pressure is e = 6.11 * exp((17.27 * T) / (T + 237.3)), where e is the saturation vapor pressure and T is the temperature in °C. Substituting the values, we get e = 6.11 * exp((17.27 * 25) / (25 + 237.3)) = 42.55 kPa. The amount of evaporation can be calculated using the formula E = (ρ * L * ΔT) / (Δz * ρ_air), where E is the evaporation, ρ is the density of water, L is the latent heat of vaporization, ΔT is the temperature difference, Δz is the height difference, and ρ_air is the density of air. We will assume that the density of water is 1000 kg/m^3, the latent heat of vaporization is 2.5 * 10^6 J/kg, the temperature difference is 25°C, the height difference is 1 meter, and the density of air is 1.2 kg/m^3. Therefore, E = (1000 * 2.5 * 10^6 * 25) / (1 * 1.2) = 520.83 * 10^6 kg/m^2/s. To convert this to millimeters per hour, we multiply by 3600 (the number of seconds in an hour) and 1000 (to convert kilograms to milligrams). Therefore, the amount of evaporation is 520.83 * 10^6 * 3600 * 1000 = 187.5 mm/h.",
+        "marking_scheme": [
+          "Calculation of saturation vapor pressure (1 mark)",
+          "Calculation of evaporation (3 marks)",
+          "Units and conversions (1 mark)"
+        ],
+        "topic": "Evaporation Calculation",
+        "is_numerical": true
+      },
+      {
+        "q": "Calculate the amount of runoff from a catchment area with a rainfall intensity of 20 mm/h and a retention capacity of 10 mm. (5 marks)",
+        "marks": 5,
+        "answer": "Calculation: To calculate the amount of runoff, we need to subtract the retention capacity from the rainfall intensity. Therefore, runoff = rainfall intensity - retention capacity = 20 mm/h - 10 mm/h = 10 mm/h.",
+        "marking_scheme": [
+          "Calculation of runoff (3 marks)",
+          "Units and conversions (1 mark)",
+          "Additional relevant points (1 mark)"
+        ],
+        "topic": "Runoff Calculation",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

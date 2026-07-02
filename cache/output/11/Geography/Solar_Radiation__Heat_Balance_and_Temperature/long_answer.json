@@ -1,0 +1,86 @@
+{
+  "class": "11",
+  "subject": "Geography",
+  "chapter": "Solar Radiation, Heat Balance and Temperature",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T09:44:46.841Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the process of solar radiation and its significance in the Earth's energy balance. (5 marks)",
+        "marks": 5,
+        "answer": "The process of solar radiation involves the transfer of energy from the Sun to the Earth in the form of electromagnetic waves. This energy is essential for the Earth's energy balance, as it drives the climate system and supports life. The significance of solar radiation lies in its ability to regulate the Earth's temperature, influencing the formation of weather patterns and climate.",
+        "marking_scheme": [
+          "Understanding of solar radiation process (2 marks)",
+          "Significance of solar radiation in Earth's energy balance (3 marks)"
+        ],
+        "topic": "Solar Radiation",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the factors that affect the amount of solar radiation received by the Earth. (5 marks)",
+        "marks": 5,
+        "answer": "The factors that affect the amount of solar radiation received by the Earth include the intensity of solar radiation, atmospheric gases, cloud cover, altitude, and the angle of incidence. These factors influence the amount of solar radiation absorbed, reflected, and transmitted by the Earth's atmosphere and surface.",
+        "marking_scheme": [
+          "Understanding of factors affecting solar radiation (3 marks)",
+          "Explanation of how factors affect solar radiation (2 marks)"
+        ],
+        "topic": "Factors Affecting Solar Radiation",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of heat balance and its importance in the Earth's climate system. (5 marks)",
+        "marks": 5,
+        "answer": "Heat balance refers to the equilibrium between the amount of solar energy received by the Earth and the amount of energy lost to space. The importance of heat balance lies in its role in regulating the Earth's temperature, influencing climate patterns, and supporting life. A balance between incoming and outgoing energy is crucial for maintaining a stable climate.",
+        "marking_scheme": [
+          "Understanding of heat balance concept (2 marks)",
+          "Importance of heat balance in climate system (3 marks)"
+        ],
+        "topic": "Heat Balance",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the amount of solar radiation received by the Earth at the equator on a clear day. (Numerical problem) (5 marks)",
+        "marks": 5,
+        "answer": "The amount of solar radiation received by the Earth at the equator on a clear day is 1000 W/m². Calculation: The solar constant, S = 1366 W/m². The angle of incidence at the equator is 0°. Using the formula: Solar radiation = S × cos(θ) Where θ is the angle of incidence. At the equator, θ = 0°, so cos(θ) = 1. Therefore, solar radiation = 1366 W/m² × 1 = 1366 W/m².",
+        "marking_scheme": [
+          "Application of solar constant value (1 mark)",
+          "Calculation of solar radiation (2 marks)",
+          "Understanding of angle of incidence (1 mark)",
+          "Use of correct formula (1 mark)"
+        ],
+        "topic": "Solar Radiation Calculation",
+        "is_numerical": true
+      },
+      {
+        "q": "A region receives an average of 750 W/m² of solar radiation. If the atmospheric gases absorb 20% of the energy, calculate the amount of energy that reaches the Earth's surface. (Numerical problem) (5 marks)",
+        "marks": 5,
+        "answer": "The amount of energy that reaches the Earth's surface is 80% of the incoming solar radiation. Calculation: Energy absorbed by atmospheric gases = 20% of 750 W/m² = 0.2 × 750 W/m² = 150 W/m². Energy that reaches the Earth's surface = 750 W/m² - 150 W/m² = 600 W/m².",
+        "marking_scheme": [
+          "Understanding of energy absorption by atmospheric gases (1 mark)",
+          "Calculation of energy absorbed (1 mark)",
+          "Calculation of energy reaching the Earth's surface (2 marks)",
+          "Use of correct percentage value (1 mark)"
+        ],
+        "topic": "Energy Absorption and Reflection",
+        "is_numerical": true
+      },
+      {
+        "q": "The Earth's surface temperature is 15°C. If the solar radiation received is 500 W/m², calculate the amount of energy lost to space in the form of heat. (Numerical problem) (5 marks)",
+        "marks": 5,
+        "answer": "The amount of energy lost to space in the form of heat can be calculated using the Stefan-Boltzmann law: Heat loss = ε × σ × T^4 Where ε is the emissivity, σ is the Stefan-Boltzmann constant, and T is the temperature in Kelvin. Assuming ε = 1, σ = 5.67 × 10^(-8) W/m²K^4, and T = 15°C + 273 = 288 K. Heat loss = 1 × 5.67 × 10^(-8) W/m²K^4 × (288 K)^4 = 390 W/m².",
+        "marking_scheme": [
+          "Understanding of Stefan-Boltzmann law (1 mark)",
+          "Application of Stefan-Boltzmann constant (1 mark)",
+          "Calculation of heat loss (2 marks)",
+          "Use of correct units (1 mark)"
+        ],
+        "topic": "Heat Loss to Space",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

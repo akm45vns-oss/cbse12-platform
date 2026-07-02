@@ -1,0 +1,86 @@
+{
+  "class": "12",
+  "subject": "Geography",
+  "chapter": "Human Development",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T07:22:12.962Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of Human Development Index (HDI) and its components. Also, discuss its limitations.",
+        "marks": 5,
+        "answer": "Human Development Index (HDI) is a composite statistic of life expectancy, education, and per capita income indicators, which are used to rank countries into four tiers of human development. It was first introduced by the United Nations in 1990. The HDI is based on three dimensions: (1) A long and healthy life (life expectancy at birth), (2) knowledge (expected years of schooling and mean years of schooling), and (3) a decent standard of living (GNI per capita in PPP terms).\n\nThe limitations of HDI are: it does not take into account the distribution of income and health, it does not consider the quality of education, it does not account for the environmental degradation, and it only ranks countries in terms of their human development, not in terms of their economic growth.",
+        "marking_scheme": [
+          "Understanding the concept of HDI: 1.5 marks",
+          "Components of HDI: 1.5 marks",
+          "Limitations of HDI: 2 marks"
+        ],
+        "topic": "Human Development Index",
+        "is_numerical": false
+      },
+      {
+        "q": "Discuss the importance of Millennium Development Goals (MDGs) and their relevance in the context of human development.",
+        "marks": 5,
+        "answer": "The Millennium Development Goals (MDGs) were a set of eight international development goals for the year 2015 that had been established following the Millennium Summit of the United Nations in 2000. These goals were: (1) Eradicate extreme poverty and hunger, (2) Achieve universal primary education, (3) Promote gender equality and empower women, (4) Reduce child mortality, (5) Improve maternal health, (6) Combat HIV/AIDS, malaria, and other diseases, (7) Ensure environmental sustainability, and (8) Develop a global partnership for development.\n\nThese goals were important as they provided a framework for countries to work towards achieving human development and reducing poverty. They were relevant in the context of human development as they addressed issues such as poverty, education, health, and environmental sustainability.",
+        "marking_scheme": [
+          "Importance of MDGs: 1.5 marks",
+          "Relevance of MDGs in human development: 1.5 marks",
+          "MDG goals and targets: 2 marks"
+        ],
+        "topic": "Millennium Development Goals",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of sustainable human development and its relationship with human development.",
+        "marks": 5,
+        "answer": "Sustainable human development is a concept that aims to achieve human development in a way that is environmentally sustainable and socially equitable. It involves balancing economic growth with social and environmental development, and ensuring that development is inclusive and equitable for all. Sustainable human development is closely related to human development as it recognizes that human development is not just about economic growth, but also about social and environmental well-being.",
+        "marking_scheme": [
+          "Understanding sustainable human development: 1.5 marks",
+          "Relationship between sustainable human development and human development: 1.5 marks",
+          "Importance of sustainable human development: 2 marks"
+        ],
+        "topic": "Sustainable Human Development",
+        "is_numerical": false
+      },
+      {
+        "q": "A country has a population of 1.2 million, life expectancy of 75 years, expected years of schooling of 15, and mean years of schooling of 10. Calculate its HDI value.",
+        "marks": 5,
+        "answer": "To calculate the HDI value, we need to first calculate the dimensions of HDI:\n\nDimension 1: Life expectancy at birth = 75\nDimension 2: Expected years of schooling = 15\nDimension 3: Mean years of schooling = 10\n\nThen, we need to calculate the index values for each dimension:\n\nIndex value for life expectancy = 0.5 * (25.4 – (0.001 * (75 – 20))) + 0.2 * (0.105) + 0.3 * (0.105)\nIndex value for expected years of schooling = 0.2 * (15 – 0) + 0.8 * (15 – 5)\nIndex value for mean years of schooling = 0.2 * (10 – 0) + 0.8 * (10 – 5)\n\nFinally, we need to calculate the HDI value:\n\nHDI = (Index value for life expectancy + Index value for expected years of schooling + Index value for mean years of schooling) / 3\n\nCalculation:\nIndex value for life expectancy = 0.5 * (25.4 – (0.001 * (75 – 20))) + 0.2 * (0.105) + 0.3 * (0.105) = 0.5 * (25.4 – 0.055) + 0.021 + 0.0315 = 0.5 * 25.345 + 0.021 + 0.0315 = 12.6725 + 0.021 + 0.0315 = 12.7245\nIndex value for expected years of schooling = 0.2 * (15 – 0) + 0.8 * (15 – 5) = 0.2 * 15 + 0.8 * 10 = 3 + 8 = 11\nIndex value for mean years of schooling = 0.2 * (10 – 0) + 0.8 * (10 – 5) = 0.2 * 10 + 0.8 * 5 = 2 + 4 = 6\nHDI = (12.7245 + 11 + 6) / 3 = 29.7245 / 3 = 9.90815\n\nHDI value = 0.88",
+        "marking_scheme": [
+          "Understanding HDI calculation: 1.5 marks",
+          "Calculation of index values: 2 marks",
+          "Final calculation of HDI value: 1.5 marks"
+        ],
+        "topic": "Human Development Index",
+        "is_numerical": true
+      },
+      {
+        "q": "Calculate the HDI value for a country with the following data: life expectancy at birth 72, expected years of schooling 12, and mean years of schooling 9.",
+        "marks": 5,
+        "answer": "To calculate the HDI value, we need to first calculate the dimensions of HDI:\n\nDimension 1: Life expectancy at birth = 72\nDimension 2: Expected years of schooling = 12\nDimension 3: Mean years of schooling = 9\n\nThen, we need to calculate the index values for each dimension:\n\nIndex value for life expectancy = 0.5 * (25.4 – (0.001 * (72 – 20))) + 0.2 * (0.105) + 0.3 * (0.105)\nIndex value for expected years of schooling = 0.2 * (12 – 0) + 0.8 * (12 – 5)\nIndex value for mean years of schooling = 0.2 * (9 – 0) + 0.8 * (9 – 5)\n\nFinally, we need to calculate the HDI value:\n\nHDI = (Index value for life expectancy + Index value for expected years of schooling + Index value for mean years of schooling) / 3\n\nCalculation:\nIndex value for life expectancy = 0.5 * (25.4 – (0.001 * (72 – 20))) + 0.2 * (0.105) + 0.3 * (0.105) = 0.5 * (25.4 – 0.052) + 0.021 + 0.0315 = 0.5 * 25.348 + 0.021 + 0.0315 = 12.674 + 0.021 + 0.0315 = 12.7265\nIndex value for expected years of schooling = 0.2 * (12 – 0) + 0.8 * (12 – 5) = 0.2 * 12 + 0.8 * 7 = 2.4 + 5.6 = 8\nIndex value for mean years of schooling = 0.2 * (9 – 0) + 0.8 * (9 – 5) = 0.2 * 9 + 0.8 * 4 = 1.8 + 3.2 = 5\nHDI = (12.7265 + 8 + 5) / 3 = 25.7265 / 3 = 8.5755\n\nHDI value = 0.845",
+        "marking_scheme": [
+          "Understanding HDI calculation: 1.5 marks",
+          "Calculation of index values: 2 marks",
+          "Final calculation of HDI value: 1.5 marks"
+        ],
+        "topic": "Human Development Index",
+        "is_numerical": true
+      },
+      {
+        "q": "Calculate the HDI value for a country with the following data: life expectancy at birth 80, expected years of schooling 18, and mean years of schooling 15.",
+        "marks": 5,
+        "answer": "To calculate the HDI value, we need to first calculate the dimensions of HDI:\n\nDimension 1: Life expectancy at birth = 80\nDimension 2: Expected years of schooling = 18\nDimension 3: Mean years of schooling = 15\n\nThen, we need to calculate the index values for each dimension:\n\nIndex value for life expectancy = 0.5 * (25.4 – (0.001 * (80 – 20))) + 0.2 * (0.105) + 0.3 * (0.105)\nIndex value for expected years of schooling = 0.2 * (18 – 0) + 0.8 * (18 – 5)\nIndex value for mean years of schooling = 0.2 * (15 – 0) + 0.8 * (15 – 5)\n\nFinally, we need to calculate the HDI value:\n\nHDI = (Index value for life expectancy + Index value for expected years of schooling + Index value for mean years of schooling) / 3\n\nCalculation:\nIndex value for life expectancy = 0.5 * (25.4 – (0.001 * (80 – 20))) + 0.2 * (0.105) + 0.3 * (0.105) = 0.5 * (25.4 – 0.06) + 0.021 + 0.0315 = 0.5 * 25.34 + 0.021 + 0.0315 = 12.67 + 0.021 + 0.0315 = 12.7025\nIndex value for expected years of schooling = 0.2 * (18 – 0) + 0.8 * (18 – 5) = 0.2 * 18 + 0.8 * 13 = 3.6 + 10.4 = 14\nIndex value for mean years of schooling = 0.2 * (15 – 0) + 0.8 * (15 – 5) = 0.2 * 15 + 0.8 * 10 = 3 + 8 = 11\nHDI = (12.7025 + 14 + 11) / 3 = 37.7025 / 3 = 12.5675\n\nHDI value = 0.935",
+        "marking_scheme": [
+          "Understanding HDI calculation: 1.5 marks",
+          "Calculation of index values: 2 marks",
+          "Final calculation of HDI value: 1.5 marks"
+        ],
+        "topic": "Human Development Index",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

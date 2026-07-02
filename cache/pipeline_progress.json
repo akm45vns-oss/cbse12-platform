@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-02T03:46:10.175Z",
-  "elapsed_seconds": 6,
-  "rate_per_second": 455,
+  "updated_at": "2026-07-02T09:48:34.017Z",
+  "elapsed_seconds": 2272,
+  "rate_per_second": 2.64,
   "queue": {
-    "completed": 2730,
-    "pending": 0,
-    "inFlight": 0,
-    "failed": 0,
-    "retrying": 0,
+    "completed": 5997,
+    "pending": 142,
+    "inFlight": 5,
+    "failed": 2,
+    "retrying": 142,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
@@ -18,142 +18,160 @@
   "workers": [
     {
       "workerId": "Worker-Physics",
-      "processed": 1,
+      "processed": 25,
       "skipped": 0,
-      "failed": 0,
-      "running": false
+      "failed": 33,
+      "running": true
     },
     {
       "workerId": "Worker-Chemistry",
-      "processed": 0,
+      "processed": 27,
       "skipped": 0,
-      "failed": 0,
-      "running": false
+      "failed": 32,
+      "running": true
     },
     {
       "workerId": "Worker-Maths",
-      "processed": 0,
+      "processed": 20,
       "skipped": 0,
-      "failed": 0,
-      "running": false
+      "failed": 28,
+      "running": true
     },
     {
       "workerId": "Worker-Biology",
-      "processed": 0,
+      "processed": 29,
       "skipped": 0,
-      "failed": 0,
-      "running": false
+      "failed": 30,
+      "running": true
     },
     {
       "workerId": "Worker-Other",
-      "processed": 0,
+      "processed": 20,
       "skipped": 0,
-      "failed": 0,
-      "running": false
+      "failed": 29,
+      "running": true
     }
   ],
   "recent_events": [
     {
-      "workerId": "Worker-Other",
-      "status": "finished",
-      "message": "Worker finished — 0 done, 0 skipped, 0 failed",
-      "timestamp": "2026-07-02T03:46:10.175Z"
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating detailed_notes for Water Resources (Geography)",
+      "timestamp": "2026-07-02T09:47:48.084Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "error",
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-07-02T09:47:47.550Z"
     },
     {
       "workerId": "Worker-Other",
-      "status": "info",
-      "message": "Queue empty — worker done",
-      "timestamp": "2026-07-02T03:46:10.175Z"
+      "status": "generating",
+      "message": "Generating detailed_notes for Human Settlements (Geography)",
+      "timestamp": "2026-07-02T09:46:52.239Z"
     },
     {
       "workerId": "Worker-Biology",
-      "status": "finished",
-      "message": "Worker finished — 0 done, 0 skipped, 0 failed",
-      "timestamp": "2026-07-02T03:46:10.175Z"
+      "status": "generating",
+      "message": "Generating detailed_notes for Human Development (Geography)",
+      "timestamp": "2026-07-02T09:46:52.084Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T09:46:51.959Z"
     },
     {
       "workerId": "Worker-Biology",
-      "status": "info",
-      "message": "Queue empty — worker done",
-      "timestamp": "2026-07-02T03:46:10.175Z"
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T09:46:51.863Z"
     },
     {
-      "workerId": "Worker-Maths",
-      "status": "finished",
-      "message": "Worker finished — 0 done, 0 skipped, 0 failed",
-      "timestamp": "2026-07-02T03:46:10.175Z"
+      "workerId": "Worker-Other",
+      "status": "generating",
+      "message": "Generating detailed_notes for Population: Distribution, Density, Growth and Composition (Geography)",
+      "timestamp": "2026-07-02T09:46:48.733Z"
     },
     {
-      "workerId": "Worker-Maths",
-      "status": "info",
-      "message": "Queue empty — worker done",
-      "timestamp": "2026-07-02T03:46:10.175Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "finished",
-      "message": "Worker finished — 0 done, 0 skipped, 0 failed",
-      "timestamp": "2026-07-02T03:46:10.175Z"
+      "workerId": "Worker-Other",
+      "status": "error",
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-07-02T09:46:48.494Z"
     },
     {
       "workerId": "Worker-Chemistry",
-      "status": "info",
-      "message": "Queue empty — worker done",
-      "timestamp": "2026-07-02T03:46:10.175Z"
+      "status": "generating",
+      "message": "Generating detailed_notes for Transport and Communication (Geography)",
+      "timestamp": "2026-07-02T09:46:45.491Z"
     },
     {
-      "workerId": "Worker-Physics",
-      "status": "finished",
-      "message": "Worker finished — 1 done, 0 skipped, 0 failed",
-      "timestamp": "2026-07-02T03:46:08.503Z"
+      "workerId": "Worker-Chemistry",
+      "status": "error",
+      "message": "Validation failed for 11::Geography::Natural Hazards and Disasters::long_answer: Too few items in questions: 0 (minimum 2)",
+      "timestamp": "2026-07-02T09:46:45.264Z"
     },
     {
-      "workerId": "Worker-Physics",
-      "status": "info",
-      "message": "Queue empty — worker done",
-      "timestamp": "2026-07-02T03:46:08.503Z"
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating detailed_notes for Primary Activities (Geography)",
+      "timestamp": "2026-07-02T09:46:44.392Z"
     },
     {
-      "workerId": "Worker-Physics",
+      "workerId": "Worker-Maths",
+      "status": "error",
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-07-02T09:46:44.156Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating detailed_notes for The World Population Distribution, Density and Growth (Geography)",
+      "timestamp": "2026-07-02T09:46:43.357Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T09:46:43.050Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating long_answer for Natural Hazards and Disasters (Geography)",
+      "timestamp": "2026-07-02T09:45:49.924Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
       "status": "done",
-      "message": "✅ Physics/Current Electricity/detailed_notes",
-      "timestamp": "2026-07-02T03:46:08.503Z"
+      "message": "✅ Geography/Water (Oceans)/long_answer",
+      "timestamp": "2026-07-02T09:45:49.619Z"
     },
     {
       "workerId": "Worker-Physics",
       "status": "generating",
-      "message": "Generating detailed_notes for Current Electricity (Physics)",
-      "timestamp": "2026-07-02T03:46:04.395Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "info",
-      "message": "Worker started",
-      "timestamp": "2026-07-02T03:46:04.162Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "info",
-      "message": "Worker started",
-      "timestamp": "2026-07-02T03:46:04.162Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "info",
-      "message": "Worker started",
-      "timestamp": "2026-07-02T03:46:04.162Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "info",
-      "message": "Worker started",
-      "timestamp": "2026-07-02T03:46:04.161Z"
+      "message": "Generating long_answer for Structure and Physiography (Geography)",
+      "timestamp": "2026-07-02T09:45:47.258Z"
     },
     {
       "workerId": "Worker-Physics",
-      "status": "info",
-      "message": "Worker started",
-      "timestamp": "2026-07-02T03:46:04.160Z"
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T09:45:46.702Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating long_answer for Biodiversity and Conservation (Geography)",
+      "timestamp": "2026-07-02T09:44:51.521Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "done",
+      "message": "✅ Geography/Water in the Atmosphere/long_answer",
+      "timestamp": "2026-07-02T09:44:51.300Z"
     }
   ]
 }

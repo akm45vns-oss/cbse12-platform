@@ -1,0 +1,85 @@
+{
+  "class": "12",
+  "subject": "Geography",
+  "chapter": "Transport and Communication in India",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T07:02:20.268Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "GDP per capita",
+        "formula": "GDP per capita = Total GDP / Total Population",
+        "variables": {
+          "GDP": "Gross Domestic Product",
+          "Total GDP": "Total Gross Domestic Product of the country",
+          "Total Population": "Total population of the country"
+        },
+        "units": "USD",
+        "notes": ""
+      },
+      {
+        "name": "Human Development Index (HDI)",
+        "formula": "HDI = (Life Expectancy Index + Education Index + Income Index) / 3",
+        "variables": {
+          "Life Expectancy Index": "Average life expectancy at birth",
+          "Education Index": "Average years of schooling and expected years of schooling",
+          "Income Index": "Gross National Income (GNI) per capita"
+        },
+        "units": "N/A",
+        "notes": ""
+      },
+      {
+        "name": "Gross Domestic Product (GDP) Growth Rate",
+        "formula": "GDP Growth Rate = (Current Year's GDP - Previous Year's GDP) / Previous Year's GDP",
+        "variables": {
+          "Current Year's GDP": "Gross Domestic Product of the current year",
+          "Previous Year's GDP": "Gross Domestic Product of the previous year"
+        },
+        "units": "Percent",
+        "notes": ""
+      },
+      {
+        "name": "Road Density",
+        "formula": "Road Density = Total Road Length / Total Land Area",
+        "variables": {
+          "Total Road Length": "Total length of roads in the country",
+          "Total Land Area": "Total land area of the country"
+        },
+        "units": "km/1000 km²",
+        "notes": ""
+      },
+      {
+        "name": "Railway Density",
+        "formula": "Railway Density = Total Railway Route Length / Total Land Area",
+        "variables": {
+          "Total Railway Route Length": "Total length of railway routes in the country",
+          "Total Land Area": "Total land area of the country"
+        },
+        "units": "km/1000 km²",
+        "notes": ""
+      },
+      {
+        "name": "Tele-density",
+        "formula": "Tele-density = Total Telephones / Total Population",
+        "variables": {
+          "Total Telephones": "Total number of telephones in the country",
+          "Total Population": "Total population of the country"
+        },
+        "units": "per 100 people",
+        "notes": ""
+      },
+      {
+        "name": "Internet Penetration Rate",
+        "formula": "Internet Penetration Rate = Total Internet Users / Total Population",
+        "variables": {
+          "Total Internet Users": "Total number of internet users in the country",
+          "Total Population": "Total population of the country"
+        },
+        "units": "percent",
+        "notes": ""
+      }
+    ]
+  }
+}

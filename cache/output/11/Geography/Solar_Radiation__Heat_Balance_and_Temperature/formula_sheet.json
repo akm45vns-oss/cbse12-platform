@@ -1,0 +1,55 @@
+{
+  "class": "11",
+  "subject": "Geography",
+  "chapter": "Solar Radiation, Heat Balance and Temperature",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T07:10:20.701Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Solar Constant (I)",
+        "formula": "I = 1.98 cal/cm²/min",
+        "variables": "Solar Constant",
+        "units": "cal/cm²/min",
+        "notes": ""
+      },
+      {
+        "name": "Latent Heat of Evaporation",
+        "formula": "L = 539 cal/g",
+        "variables": "Latent Heat of Evaporation",
+        "units": "cal/g",
+        "notes": ""
+      },
+      {
+        "name": "Latent Heat of Fusion",
+        "formula": "L = 80 cal/g",
+        "variables": "Latent Heat of Fusion",
+        "units": "cal/g",
+        "notes": ""
+      },
+      {
+        "name": "Specific Heat Capacity",
+        "formula": "C = Q / (m × ΔT)",
+        "variables": "Specific Heat Capacity, Heat Energy (Q), Mass (m), Temperature Difference (ΔT)",
+        "units": "cal/g°C",
+        "notes": ""
+      },
+      {
+        "name": "Heat Balance Equation",
+        "formula": "R = I - E - H",
+        "variables": "Net Radiant Flux (R), Solar Radiation (I), Evaporative Heat Loss (E), Convective Heat Loss (H)",
+        "units": "cal/cm²/min",
+        "notes": ""
+      },
+      {
+        "name": "Temperature Inversion",
+        "formula": "Temperature Decreases with Altitude",
+        "variables": "Altitude",
+        "units": "",
+        "notes": "When air temperature increases with height, it is called temperature inversion."
+      }
+    ]
+  }
+}

@@ -1,9 +1,8 @@
-import { memo, useState, useEffect } from "react";
+import { memo, useState, useEffect, useCallback, useMemo } from "react";
 import { CURRICULUM } from "../../constants/curriculum";
 import { addBookmark, removeBookmark, isBookmarked } from "../../utils/bookmarks";
 import { recordChapterAccess } from "../../utils/recentChapters";
 
-// Status check icon
 const CheckIcon = ({ filled, color = "#10b981" }) => (
   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="7" cy="7" r="6.5" stroke={filled ? color : "#cbd5e1"} fill={filled ? color : "none"} strokeWidth="1.5"/>
@@ -11,168 +10,219 @@ const CheckIcon = ({ filled, color = "#10b981" }) => (
   </svg>
 );
 
-const LockIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-    <path d="M7 11V7a5 5 0 0110 0v4"/>
+const ChevronIcon = ({ open }) => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"
+    style={{ transition: "transform 0.25s cubic-bezier(0.4,0,0.2,1)", transform: open ? "rotate(180deg)" : "rotate(0deg)", color: "var(--text-tertiary)" }}>
+    <path d="M6 9l6 6 6-6"/>
   </svg>
 );
 
+// ── Single Unit Accordion ──────────────────────────────────
+function UnitGroup({ unit, unitIndex, subject, curriculum, progress, stats, isDefaultOpen, onChapterClick, onNotesClick, onQuizClick }) {
+  const [open, setOpen] = useState(isDefaultOpen);
+  const D = curriculum[subject];
+  const subjectStats = stats.bySubject[subject];
+  const allChapterCount = D?.units.flatMap(u => u.chapters).length || 1;
+  // Count done chapters in this unit
+  const donePairs = unit.chapters.filter(ch => {
+    const nk = `${subject}||${ch}||notes`; const qk = `${subject}||${ch}||quiz`;
+    return progress[nk]?.read && progress[qk]?.best !== undefined;
+  });
+  const unitPct = Math.round((donePairs.length / unit.chapters.length) * 100);
+
+  // Sequential chapter number base (chapters before this unit)
+  const prevCount = D?.units.slice(0, unitIndex).reduce((a, u) => a + u.chapters.length, 0) || 0;
+
+  return (
+    <div className="unit-group" style={{ marginBottom: 10 }}>
+      {/* Header */}
+      <button className="unit-group-header" onClick={() => setOpen(o => !o)}>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ fontSize: 12, fontWeight: 900, color: "var(--text-primary)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+            {unit.name}
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 5 }}>
+            <div style={{ flex: 1, maxWidth: 80, height: 4, background: "var(--border)", borderRadius: 99, overflow: "hidden" }}>
+              <div style={{ height: "100%", width: `${unitPct}%`, background: D?.accent || "#4f46e5", borderRadius: 99, transition: "width 0.4s" }} />
+            </div>
+            <span style={{ fontSize: 10, fontWeight: 700, color: unitPct === 100 ? "#10b981" : "var(--text-tertiary)" }}>
+              {donePairs.length}/{unit.chapters.length}
+            </span>
+          </div>
+        </div>
+        <ChevronIcon open={open} />
+      </button>
+
+      {/* Body */}
+      {open && (
+        <div>
+          {unit.chapters.map((ch, ci) => {
+            const nk = `${subject}||${ch}||notes`;
+            const qk = `${subject}||${ch}||quiz`;
+            const nRead = progress[nk]?.read;
+            const qBest = progress[qk]?.best;
+            const chNum = prevCount + ci + 1;
+            const fullyDone = nRead && qBest !== undefined;
+            return (
+              <button
+                key={ci}
+                className="chapter-row-item"
+                onClick={() => onChapterClick(ch)}
+              >
+                {/* Number circle */}
+                <div style={{
+                  width: 30, height: 30, borderRadius: "50%", flexShrink: 0,
+                  background: fullyDone ? "#10b981" : nRead ? "#ede9fe" : "var(--border)",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  fontSize: 11, fontWeight: 800,
+                  color: fullyDone ? "white" : nRead ? "#4f46e5" : "var(--text-tertiary)",
+                }}>
+                  {fullyDone ? "✓" : chNum}
+                </div>
+
+                {/* Text */}
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: "var(--text-primary)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                    {ch}
+                  </div>
+                  {/* Quick action pills */}
+                  <div style={{ display: "flex", gap: 6, marginTop: 4 }}>
+                    <button
+                      onClick={e => { e.stopPropagation(); onNotesClick(e, ch); }}
+                      style={{
+                        display: "flex", alignItems: "center", gap: 3,
+                        background: nRead ? "#ecfdf5" : "transparent",
+                        border: `1px solid ${nRead ? "#10b981" : "var(--border)"}`,
+                        borderRadius: 99, padding: "2px 8px",
+                        fontSize: 10, fontWeight: 700,
+                        color: nRead ? "#059669" : "var(--text-tertiary)",
+                        cursor: "pointer",
+                      }}>
+                      <CheckIcon filled={!!nRead} color="#10b981" />
+                      Notes
+                    </button>
+                    <button
+                      onClick={e => { e.stopPropagation(); onQuizClick(e, ch); }}
+                      style={{
+                        display: "flex", alignItems: "center", gap: 3,
+                        background: qBest !== undefined ? "#eff6ff" : "transparent",
+                        border: `1px solid ${qBest !== undefined ? "#3b82f6" : "var(--border)"}`,
+                        borderRadius: 99, padding: "2px 8px",
+                        fontSize: 10, fontWeight: 700,
+                        color: qBest !== undefined ? "#2563eb" : "var(--text-tertiary)",
+                        cursor: "pointer",
+                      }}>
+                      <CheckIcon filled={qBest !== undefined} color="#3b82f6" />
+                      {qBest !== undefined ? `${qBest}/30` : "Quiz"}
+                    </button>
+                  </div>
+                </div>
+
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-tertiary)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                  <path d="M9 18l6-6-6-6"/>
+                </svg>
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── Main Component ─────────────────────────────────────────
 export const SubjectView = memo(function SubjectView({
   subject, stats, progress, onSelectChapter, onGeneratePaper, curriculum, username, selectedClass
 }) {
   const S = curriculum[subject];
-  const [bookmarks, setBookmarks] = useState({});
+  const D = CURRICULUM[subject] || S;
   const subjectStats = stats.bySubject[subject];
   const totalChaps = subjectStats?.t || 0;
   const completedNotes = subjectStats?.n || 0;
   const completedQuiz = subjectStats?.q || 0;
   const doneChapters = Math.min(completedNotes, completedQuiz);
   const completedPct = totalChaps > 0 ? Math.round(((completedNotes + completedQuiz) / (totalChaps * 2)) * 100) : 0;
-  const D = CURRICULUM[subject];
 
-  useEffect(() => {
-    const nb = {};
-    S.units.forEach(unit => unit.chapters.forEach(ch => { nb[ch] = isBookmarked(subject, ch); }));
-    setBookmarks(nb);
-  }, [subject]);
+  // Find index of the first in-progress unit (has ≥1 note read but not fully done)
+  const defaultOpenUnit = useMemo(() => {
+    let found = 0;
+    for (let i = 0; i < S.units.length; i++) {
+      const unit = S.units[i];
+      const anyStarted = unit.chapters.some(ch => progress[`${subject}||${ch}||notes`]?.read);
+      const allDone = unit.chapters.every(ch => progress[`${subject}||${ch}||notes`]?.read && progress[`${subject}||${ch}||quiz`]?.best !== undefined);
+      if (anyStarted && !allDone) { found = i; break; }
+      // If no progress yet, open first unit
+    }
+    return found;
+  }, [S, subject, progress]);
 
-  const handleSelectChapter = (chapter) => {
+  const handleSelectChapter = useCallback((chapter) => {
     recordChapterAccess(username, subject, chapter);
     onSelectChapter(chapter);
-  };
-  const handleNotesClick = (e, chapter) => {
+  }, [username, subject, onSelectChapter]);
+
+  const handleNotesClick = useCallback((e, chapter) => {
     e.stopPropagation();
     recordChapterAccess(username, subject, chapter);
     onSelectChapter(chapter, "notes");
-  };
-  const handleQuizClick = (e, chapter) => {
+  }, [username, subject, onSelectChapter]);
+
+  const handleQuizClick = useCallback((e, chapter) => {
     e.stopPropagation();
     recordChapterAccess(username, subject, chapter);
     onSelectChapter(chapter, "quiz");
-  };
-  const handleBookmark = (e, chapter) => {
-    e.stopPropagation();
-    if (bookmarks[chapter]) { removeBookmark(subject, chapter); setBookmarks(p => ({ ...p, [chapter]: false })); }
-    else { addBookmark(subject, chapter); setBookmarks(p => ({ ...p, [chapter]: true })); }
-  };
-
-  // Flatten all chapters for sequential numbering
-  const allChapters = S.units.flatMap(u => u.chapters);
+  }, [username, subject, onSelectChapter]);
 
   return (
-    <div style={{ animation: "fadeInUp 0.4s cubic-bezier(0.4,0,0.2,1)" }}>
+    <div style={{ animation: "fadeInUp 0.35s cubic-bezier(0.4,0,0.2,1)" }}>
 
       {/* ── Mastery Progress Card ── */}
       <div className="mastery-card">
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12 }}>
           <div>
-            <div style={{ fontSize: 20, fontWeight: 800, color: "#0f172a", marginBottom: 2 }}>Mastery Progress</div>
-            <div style={{ fontSize: 13, color: "#94a3b8", fontWeight: 500 }}>Class {selectedClass || "12"} · {S.units.length > 3 ? "Science" : "Commerce"} Stream</div>
+            <div style={{ fontSize: 17, fontWeight: 900, color: "var(--text-primary)", marginBottom: 2 }}>{subject}</div>
+            <div style={{ fontSize: 11, color: "var(--text-tertiary)", fontWeight: 600 }}>Class {selectedClass || "12"} · CBSE</div>
           </div>
-          <div style={{
-            width: 44, height: 44, borderRadius: 12,
-            background: "#ede9fe", color: "#4f46e5",
-            display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22,
-          }}>
-            📚
+          <div style={{ width: 40, height: 40, borderRadius: 12, background: "var(--primary-light)", color: "var(--primary)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20 }}>
+            {D?.emoji || "📚"}
           </div>
         </div>
-
-        {/* Progress Bar */}
-        <div className="progress-track" style={{ height: 8, marginBottom: 10 }}>
-          <div className="progress-fill" style={{ width: `${completedPct}%` }} />
+        <div className="progress-track" style={{ height: 7, marginBottom: 8 }}>
+          <div className="progress-fill" style={{ width: `${completedPct}%`, background: D?.accent || "#4f46e5" }} />
         </div>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <span style={{ fontSize: 13, fontWeight: 700, color: "#4f46e5" }}>{completedPct}% Completed</span>
-          <span style={{ fontSize: 13, fontWeight: 600, color: "#94a3b8" }}>{doneChapters} / {totalChaps} Chapters</span>
+          <span style={{ fontSize: 12, fontWeight: 800, color: D?.accent || "#4f46e5" }}>{completedPct}% Completed</span>
+          <span style={{ fontSize: 12, fontWeight: 600, color: "var(--text-tertiary)" }}>{doneChapters} / {totalChaps} chapters</span>
         </div>
       </div>
 
-      {/* ── Curriculum ── */}
+      {/* ── Header ── */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
-        <h2 style={{ fontSize: 18, fontWeight: 800, color: "#0f172a", margin: 0 }}>Curriculum</h2>
-        <button
-          onClick={onGeneratePaper}
-          style={{ background: "none", border: "none", color: "#4f46e5", fontSize: 13, fontWeight: 700, cursor: "pointer", padding: 0 }}
-        >
+        <div style={{ fontSize: 11, fontWeight: 800, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.07em" }}>
+          Curriculum · {S.units.length} units
+        </div>
+        <button onClick={onGeneratePaper}
+          style={{ background: "none", border: "none", color: "var(--primary)", fontSize: 12, fontWeight: 800, cursor: "pointer", padding: 0 }}>
           Sample Paper →
         </button>
       </div>
 
-      <div className="subj-ch-grid" style={{ gap: 10 }}>
-        {allChapters.map((ch, ci) => {
-          const nk = `${subject}||${ch}||notes`;
-          const qk = `${subject}||${ch}||quiz`;
-          const nRead = progress[nk]?.read;
-          const qData = progress[qk];
-          const best = qData?.best;
-          const isActive = ci === doneChapters; // current chapter
-
-          return (
-            <button
-              key={ci}
-              className={`curriculum-row${isActive ? " active-chapter" : ""}`}
-              onClick={() => handleSelectChapter(ch)}
-              style={{
-                cursor: "pointer",
-                border: "none",
-              }}
-            >
-              {/* Icon */}
-              <div
-                className="chapter-icon-box"
-                style={{
-                  background: nRead && best !== undefined ? "#ede9fe" : "#f8f8ff",
-                  color: nRead && best !== undefined ? "#4f46e5" : "#94a3b8",
-                }}
-              >
-                <span style={{ fontSize: 18 }}>{D.emoji}</span>
-              </div>
-
-              {/* Text content */}
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{
-                  fontSize: 15, fontWeight: 700, color: "#0f172a",
-                  marginBottom: 4, textAlign: "left",
-                  overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
-                }}>
-                  {ch}
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                  <button
-                    onClick={(e) => handleNotesClick(e, ch)}
-                    style={{
-                      background: "none", border: "none", padding: 0, cursor: "pointer",
-                      display: "flex", alignItems: "center", gap: 4,
-                    }}
-                  >
-                    <CheckIcon filled={!!nRead} color="#10b981" />
-                    <span style={{ fontSize: 12, fontWeight: 600, color: nRead ? "#10b981" : "#94a3b8" }}>Read</span>
-                  </button>
-                  <button
-                    onClick={(e) => handleQuizClick(e, ch)}
-                    style={{
-                      background: "none", border: "none", padding: 0, cursor: "pointer",
-                      display: "flex", alignItems: "center", gap: 4,
-                    }}
-                  >
-                    <CheckIcon filled={best !== undefined} color="#10b981" />
-                    <span style={{ fontSize: 12, fontWeight: 600, color: best !== undefined ? "#10b981" : "#94a3b8" }}>Practice</span>
-                  </button>
-                </div>
-              </div>
-
-              {/* Right: arrow */}
-              <div style={{ flexShrink: 0, display: "flex", alignItems: "center" }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M9 18l6-6-6-6"/>
-                </svg>
-              </div>
-            </button>
-          );
-        })}
-      </div>
+      {/* ── Collapsible Unit Groups ── */}
+      {S.units.map((unit, ui) => (
+        <UnitGroup
+          key={ui}
+          unit={unit}
+          unitIndex={ui}
+          subject={subject}
+          curriculum={curriculum}
+          progress={progress}
+          stats={stats}
+          isDefaultOpen={ui === defaultOpenUnit}
+          onChapterClick={handleSelectChapter}
+          onNotesClick={handleNotesClick}
+          onQuizClick={handleQuizClick}
+        />
+      ))}
 
     </div>
   );

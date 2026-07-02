@@ -1,0 +1,90 @@
+{
+  "class": "11",
+  "subject": "Geography",
+  "chapter": "Natural Vegetation",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-02T09:10:47.720Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the factors that influence the distribution of natural vegetation in India. How do these factors vary across different regions of the country?",
+        "marks": 5,
+        "answer": "The distribution of natural vegetation in India is influenced by several factors, including climate, soil, topography, and altitude. Climate is the most significant factor, with temperature, rainfall, and humidity playing a crucial role in determining the type of vegetation that can thrive in a particular region. The Himalayan region, for example, has a varied climate, with the northern parts being cold and dry, and the southern parts being warm and humid, resulting in a range of vegetation types, from coniferous forests to tropical deciduous forests. In contrast, the Deccan Plateau has a dry climate, resulting in the growth of dry deciduous forests and scrublands.",
+        "marking_scheme": [
+          "Explanation of climate factor (1 mark)",
+          "Explanation of soil factor (1 mark)",
+          "Explanation of topography factor (1 mark)",
+          "Explanation of altitude factor (1 mark)",
+          "Regional variation of factors (1 mark)"
+        ],
+        "topic": "Factors influencing natural vegetation",
+        "is_numerical": false
+      },
+      {
+        "q": "What are the characteristics of tropical deciduous forests? How do they differ from tropical evergreen forests?",
+        "marks": 5,
+        "answer": "Tropical deciduous forests are characterized by trees that shed their leaves during the dry season, with a dense canopy and a variety of tree species. They are found in areas with high temperatures and seasonal rainfall, such as the eastern and western coasts of India. In contrast, tropical evergreen forests are characterized by trees that remain green throughout the year, with a dense canopy and a high level of biodiversity. They are found in areas with high temperatures and high rainfall, such as the Western Ghats and the northeastern states of India.",
+        "marking_scheme": [
+          "Characteristics of tropical deciduous forests (2 marks)",
+          "Characteristics of tropical evergreen forests (2 marks)",
+          "Comparison between the two types of forests (1 mark)"
+        ],
+        "topic": "Types of natural vegetation",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the significance of natural vegetation in maintaining the ecological balance. How can human activities impact the natural vegetation and what measures can be taken to conserve it?",
+        "marks": 5,
+        "answer": "Natural vegetation plays a crucial role in maintaining the ecological balance by providing habitat for a variety of plants and animals, regulating the water cycle, and preventing soil erosion. Human activities such as deforestation, overgrazing, and pollution can impact the natural vegetation, leading to loss of biodiversity and disruption of ecosystem services. To conserve natural vegetation, measures such as sustainable forest management, afforestation, and protection of wildlife habitats can be taken.",
+        "marking_scheme": [
+          "Significance of natural vegetation (2 marks)",
+          "Human impact on natural vegetation (1 mark)",
+          "Conservation measures (2 marks)"
+        ],
+        "topic": "Importance of natural vegetation",
+        "is_numerical": false
+      },
+      {
+        "q": "A forest area has a density of 0.5 trees per square meter. If the forest covers an area of 200 hectares, calculate the total number of trees in the forest.",
+        "marks": 5,
+        "answer": "Calculation:\n1 hectare = 10000 square meters\n200 hectares = 200 x 10000 = 2000000 square meters\nTotal number of trees = density x area = 0.5 x 2000000 = 1000000 trees",
+        "marking_scheme": [
+          "Conversion of area from hectares to square meters (1 mark)",
+          "Calculation of total number of trees (2 marks)",
+          "Unit and accuracy of answer (2 marks)"
+        ],
+        "topic": "Quantitative aspects of natural vegetation",
+        "is_numerical": true
+      },
+      {
+        "q": "The annual rainfall in a region is 1500 mm. If the region has a tropical deciduous forest with a leaf area index of 4, calculate the total amount of rainfall intercepted by the forest canopy in a year.",
+        "marks": 5,
+        "answer": "Calculation:\nTotal amount of rainfall intercepted = leaf area index x annual rainfall = 4 x 1500 = 6000 mm\nHowever, since the leaf area index is a measure of the area of leaves per unit area of ground, we need to consider the percentage of rainfall intercepted by the canopy, which is typically around 10-20%. Let's assume an interception percentage of 15%.\nTotal amount of rainfall intercepted = 0.15 x 1500 = 225 mm",
+        "marking_scheme": [
+          "Understanding of leaf area index (1 mark)",
+          "Calculation of total amount of rainfall intercepted (2 marks)",
+          "Consideration of interception percentage (2 marks)"
+        ],
+        "topic": "Water cycle in natural vegetation",
+        "is_numerical": true
+      },
+      {
+        "q": "A study area has a forest cover of 3000 square kilometers, with a mean annual rainfall of 1200 mm. If the rainfall increases by 20% due to climate change, calculate the potential increase in forest cover, assuming a direct relationship between rainfall and forest cover.",
+        "marks": 5,
+        "answer": "Calculation:\nIncrease in rainfall = 20% of 1200 mm = 0.2 x 1200 = 240 mm\nNew rainfall = 1200 + 240 = 1440 mm\nAssuming a direct relationship between rainfall and forest cover, the percentage increase in forest cover will be the same as the percentage increase in rainfall.\nPercentage increase in forest cover = (240/1200) x 100 = 20%\nPotential increase in forest cover = 20% of 3000 square kilometers = 0.2 x 3000 = 600 square kilometers",
+        "marking_scheme": [
+          "Calculation of increase in rainfall (1 mark)",
+          "Calculation of new rainfall (1 mark)",
+          "Assumption of direct relationship between rainfall and forest cover (1 mark)",
+          "Calculation of percentage increase in forest cover (1 mark)",
+          "Calculation of potential increase in forest cover (1 mark)"
+        ],
+        "topic": "Impact of climate change on natural vegetation",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

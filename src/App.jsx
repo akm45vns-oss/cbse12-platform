@@ -66,11 +66,11 @@ const LoadingFallback = () => (
 );
 
 // SVG Icons for bottom nav
-const HomeIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z" strokeLinecap="round" strokeLinejoin="round"/><path d="M9 21V12h6v9" strokeLinecap="round" strokeLinejoin="round"/></svg>);
-const StatsIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 3v18h18" strokeLinecap="round" strokeLinejoin="round"/><path d="M7 16l4-5 4 3 4-6" strokeLinecap="round" strokeLinejoin="round"/></svg>);
-const ProgressIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" strokeLinecap="round"/><path d="M12 7v5l3 3" strokeLinecap="round" strokeLinejoin="round"/></svg>);
-const RankIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="12" width="4" height="9" rx="1" strokeLinecap="round"/><rect x="10" y="7" width="4" height="14" rx="1" strokeLinecap="round"/><rect x="17" y="3" width="4" height="18" rx="1" strokeLinecap="round"/></svg>);
-const ProfileIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" strokeLinecap="round"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" strokeLinecap="round" strokeLinejoin="round"/></svg>);
+const HomeIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z" strokeLinecap="round" strokeLinejoin="round"/><path d="M9 21V12h6v9" strokeLinecap="round" strokeLinejoin="round"/></svg>);
+const PracticeIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" strokeLinecap="round" strokeLinejoin="round"/><rect x="9" y="3" width="6" height="4" rx="1" strokeLinecap="round"/><path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round"/></svg>);
+const ExploreIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 3v18h18" strokeLinecap="round" strokeLinejoin="round"/><path d="M7 16l4-5 4 3 4-6" strokeLinecap="round" strokeLinejoin="round"/></svg>);
+const RankIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="12" width="4" height="9" rx="1" strokeLinecap="round"/><rect x="10" y="7" width="4" height="14" rx="1" strokeLinecap="round"/><rect x="17" y="3" width="4" height="18" rx="1" strokeLinecap="round"/></svg>);
+const ProfileIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="4" strokeLinecap="round"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" strokeLinecap="round" strokeLinejoin="round"/></svg>);
 
 
 
@@ -112,6 +112,20 @@ export default function App() {
     setAnswers({});
     setSubmitted(false);
   }, [nav]);
+
+  // Offline banner
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
+  useEffect(() => {
+    const goOnline  = () => setIsOnline(true);
+    const goOffline = () => setIsOnline(false);
+    window.addEventListener("online",  goOnline);
+    window.addEventListener("offline", goOffline);
+    return () => { window.removeEventListener("online", goOnline); window.removeEventListener("offline", goOffline); };
+  }, []);
+
+  // Swipe-back gesture (left-edge swipe → goBack)
+  const swipeTouchStartRef = useRef(null);
+  const [swipeEdgeVisible, setSwipeEdgeVisible] = useState(false);
 
   // Exit confirmation state — shown when user presses back at root (dashboard)
   const [exitConfirm, setExitConfirm] = useState(false);
@@ -561,17 +575,48 @@ Format Guidelines:
   })();
   const streakCount = streak.current || 0;
 
+  // Swipe gesture handlers
+  const handleTouchStart = useCallback((e) => {
+    const t = e.touches[0];
+    swipeTouchStartRef.current = { x: t.clientX, y: t.clientY };
+    if (t.clientX < 40 && nav.canGoBack) setSwipeEdgeVisible(true);
+  }, [nav.canGoBack]);
+
+  const handleTouchEnd = useCallback((e) => {
+    setSwipeEdgeVisible(false);
+    if (!swipeTouchStartRef.current) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - swipeTouchStartRef.current.x;
+    const dy = Math.abs(t.clientY - swipeTouchStartRef.current.y);
+    const startedFromEdge = swipeTouchStartRef.current.x < 40;
+    swipeTouchStartRef.current = null;
+    if (startedFromEdge && dx > 80 && dy < 60 && nav.canGoBack) {
+      nav.goBack();
+    }
+  }, [nav]);
+
   return (
     <div
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
       style={{
         minHeight: "100dvh",
         width: "100%",
-        background: "linear-gradient(160deg, #f0f0ff 0%, #e8e8ff 100%)",
+        background: "var(--bg-app)",
         display: "flex",
         flexDirection: "column",
         fontFamily: "'Outfit', 'Inter', system-ui, sans-serif",
       }}
     >
+      {/* Swipe-back edge indicator */}
+      <div className={`swipe-edge-indicator${swipeEdgeVisible ? " visible" : ""}`} />
+
+      {/* Offline Banner */}
+      {!isOnline && (
+        <div className="offline-banner">
+          <span>📵</span> You're offline — showing cached content
+        </div>
+      )}
       {/* ===== EXIT CONFIRM OVERLAY ===== */}
       {exitConfirm && (
         <div
@@ -717,7 +762,7 @@ Format Guidelines:
 
       <div className="main-content">
         {nav.view === "dashboard" && (
-          <DashboardView
+        <DashboardView
             currentUser={auth.currentUser}
             displayName={progress.data?.["SYSTEM||PROFILE||name"]?.value || auth.currentUser}
             stats={progress.getStats(activeCurriculum)}
@@ -725,6 +770,7 @@ Format Guidelines:
             totalChapters={activeTotalChapters}
             selectedClass={selectedClass}
             curriculum={activeCurriculum}
+            progressData={progress.data}
             theme={theme}
             onSelectSubject={(subject) => {
               nav.navigateToSubject(subject);
@@ -998,35 +1044,47 @@ Format Guidelines:
         currentUser={auth.currentUser}
       />
 
-      {/* ===== NEW BOTTOM NAVIGATION ===== */}
+      {/* ===== BOTTOM NAVIGATION — Home · Practice · Explore · Rank · Profile ===== */}
       <nav className="mobile-bottom-nav" aria-label="Main navigation">
         {[
-          { id: "dashboard", Icon: HomeIcon, label: "Home" },
-          { id: "stats", Icon: StatsIcon, label: "Stats" },
-          { id: "progress", Icon: ProgressIcon, label: "Progress" },
-          { id: "leaderboard", Icon: RankIcon, label: "Rank" },
-          { id: "profile", Icon: ProfileIcon, label: "Profile" },
-        ].map(({ id, Icon, label }) => {
-          const isActive = nav.view === id || (id === "dashboard" && ["subject", "chapter", "notes", "quiz", "paper", "papers-list", "learn", "practice", "revision"].includes(nav.view));
-          return (
-            <button
-              key={id}
-              onClick={() => nav.navigate(id)}
-              className={`bottom-nav-item${isActive ? " active" : ""}`}
-              aria-label={label}
-            >
-              <Icon />
-              <span className="bottom-nav-label">{label}</span>
-            </button>
-          );
-        })}
-        {/* Pipeline button — shown as desktop-only shortcut */}
-        <button
-          onClick={() => nav.navigate("pipeline")}
-          className={`bottom-nav-item${nav.view === "pipeline" ? " active" : ""}`}
-          aria-label="Pipeline"
-          style={{ display: "none" }}
-        >
+          {
+            id: "dashboard", Icon: HomeIcon, label: "Home",
+            isActive: nav.view === "dashboard" || ["subject", "chapter", "notes", "quiz", "paper", "papers-list", "learn", "practice", "revision"].includes(nav.view),
+          },
+          {
+            id: "practice-hub", Icon: PracticeIcon, label: "Practice",
+            isActive: nav.view === "practice-hub" || nav.view === "practice" || nav.view === "quiz",
+            onClick: () => {
+              // Go to current chapter practice if inside a chapter, else go dashboard
+              if (nav.chapter) nav.navigate("practice");
+              else nav.goToDashboard();
+            },
+          },
+          {
+            id: "stats", Icon: ExploreIcon, label: "Explore",
+            isActive: nav.view === "stats" || nav.view === "progress",
+          },
+          {
+            id: "leaderboard", Icon: RankIcon, label: "Rank",
+            isActive: nav.view === "leaderboard",
+          },
+          {
+            id: "profile", Icon: ProfileIcon, label: "Profile",
+            isActive: nav.view === "profile",
+          },
+        ].map(({ id, Icon, label, isActive, onClick }) => (
+          <button
+            key={id}
+            onClick={onClick || (() => nav.navigate(id))}
+            className={`bottom-nav-item${isActive ? " active" : ""}`}
+            aria-label={label}
+          >
+            <Icon />
+            <span className="bottom-nav-label">{label}</span>
+          </button>
+        ))}
+        {/* Pipeline — desktop only */}
+        <button onClick={() => nav.navigate("pipeline")} className={`bottom-nav-item${nav.view === "pipeline" ? " active" : ""}`} aria-label="Pipeline" style={{ display: "none" }}>
           <span style={{ fontSize: 20 }}>🔬</span>
           <span className="bottom-nav-label">Pipeline</span>
         </button>

@@ -1,0 +1,83 @@
+{
+  "class": "11",
+  "subject": "Geography",
+  "chapter": "Soils",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-02T09:37:06.808Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "1. Soil Texture",
+        "formula": "None",
+        "variables": "Soil composition",
+        "units": "None",
+        "notes": "Describes the proportion of sand, silt, and clay in the soil"
+      },
+      {
+        "name": "2. Soil pH Calculation",
+        "formula": "pH = -log[H+]",
+        "variables": "[H+] = hydrogen ion concentration in moles per liter",
+        "units": "None",
+        "notes": "Measures the acidity or alkalinity of the soil"
+      },
+      {
+        "name": "3. Cation Exchange Capacity (CEC)",
+        "formula": "CEC = (Amount of cations exchanged / Weight of soil) × 100",
+        "variables": "Amount of cations exchanged, Weight of soil",
+        "units": "cmol/kg",
+        "notes": "Measures the soil's ability to hold onto cations"
+      },
+      {
+        "name": "4. Porosity",
+        "formula": "Porosity = (Volume of pores / Total volume of soil) × 100",
+        "variables": "Volume of pores, Total volume of soil",
+        "units": "%",
+        "notes": "Describes the amount of empty space in the soil"
+      },
+      {
+        "name": "5. Permeability",
+        "formula": "Permeability = (Volume of water flowing through / Cross-sectional area × Time)",
+        "variables": "Volume of water flowing through, Cross-sectional area, Time",
+        "units": "cm/s",
+        "notes": "Measures the ease with which water can flow through the soil"
+      },
+      {
+        "name": "6. Soil Erosion Calculation",
+        "formula": "A = R × K × LS × C × P",
+        "variables": "A = soil erosion, R = rainfall erosivity, K = soil erodibility, LS = topography, C = crop/vegetation, P = conservation practices",
+        "units": "tons/ha",
+        "notes": "Estimates the amount of soil erosion"
+      },
+      {
+        "name": "7. Soil Organic Matter Calculation",
+        "formula": "SOM = (Weight of organic matter / Weight of soil) × 100",
+        "variables": "Weight of organic matter, Weight of soil",
+        "units": "%",
+        "notes": "Measures the amount of organic matter in the soil"
+      },
+      {
+        "name": "8. Water-Holding Capacity",
+        "formula": "WHC = (Weight of water retained / Weight of soil) × 100",
+        "variables": "Weight of water retained, Weight of soil",
+        "units": "%",
+        "notes": "Describes the amount of water the soil can hold"
+      },
+      {
+        "name": "9. Bulk Density",
+        "formula": "BD = Mass of dry soil / Volume of soil",
+        "variables": "Mass of dry soil, Volume of soil",
+        "units": "g/cm³",
+        "notes": "Measures the density of the soil"
+      },
+      {
+        "name": "10. Hydraulic Conductivity",
+        "formula": "K = (Volume of water flowing through / Cross-sectional area × Time × Hydraulic gradient)",
+        "variables": "Volume of water flowing through, Cross-sectional area, Time, Hydraulic gradient",
+        "units": "cm/s",
+        "notes": "Measures the ease with which water can flow through the soil"
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Geography",
+  "chapter": "Water Resources",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-02T09:27:14.498Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Runoff Coefficient",
+        "formula": "C = (Runoff / Rainfall) × 100",
+        "variables": "C = Runoff Coefficient, Runoff = Total runoff, Rainfall = Total rainfall",
+        "units": "%",
+        "notes": "To calculate the percentage of rainfall that becomes runoff"
+      },
+      {
+        "name": "Infiltration Capacity",
+        "formula": "Ic = (Infiltrated water / Time)",
+        "variables": "Ic = Infiltration capacity, Infiltrated water = Amount of water infiltrated, Time = Time taken for infiltration",
+        "units": "mm/h",
+        "notes": "To calculate the rate at which water infiltrates the soil"
+      },
+      {
+        "name": "Water Table Fluctuation",
+        "formula": "Fluctuation = (Pre-monsoon water table - Post-monsoon water table)",
+        "variables": "Fluctuation = Change in water table, Pre-monsoon water table = Water table before monsoon, Post-monsoon water table = Water table after monsoon",
+        "units": "m",
+        "notes": "To calculate the change in water table due to seasonal variations"
+      },
+      {
+        "name": "Specific Yield",
+        "formula": "Sy = (Volume of water / Total volume of aquifer)",
+        "variables": "Sy = Specific yield, Volume of water = Volume of water stored, Total volume of aquifer = Total volume of the aquifer",
+        "units": "%",
+        "notes": "To calculate the amount of water that can be extracted from an aquifer"
+      },
+      {
+        "name": "Crop Water Requirement",
+        "formula": "CWR = (ETc × Area)",
+        "variables": "CWR = Crop water requirement, ETc = Crop evapotranspiration, Area = Area of the crop",
+        "units": "m³",
+        "notes": "To calculate the total amount of water required by a crop"
+      },
+      {
+        "name": "Water Balance Equation",
+        "formula": "P = ET + R + I + ΔS",
+        "variables": "P = Precipitation, ET = Evapotranspiration, R = Runoff, I = Infiltration, ΔS = Change in storage",
+        "units": "mm",
+        "notes": "To calculate the balance between precipitation and other components of the hydrologic cycle"
+      },
+      {
+        "name": "Reservoir Capacity",
+        "formula": "RC = (Area × Depth)",
+        "variables": "RC = Reservoir capacity, Area = Surface area of the reservoir, Depth = Average depth of the reservoir",
+        "units": "m³",
+        "notes": "To calculate the total storage capacity of a reservoir"
+      },
+      {
+        "name": "Irrigation Efficiency",
+        "formula": "IE = (Beneficial water use / Total water applied) × 100",
+        "variables": "IE = Irrigation efficiency, Beneficial water use = Amount of water used by the crop, Total water applied = Total amount of water applied",
+        "units": "%",
+        "notes": "To calculate the percentage of water that is used beneficially by the crop"
+      },
+      {
+        "name": "Groundwater Recharge",
+        "formula": "GWR = (Rainfall - Runoff - Evapotranspiration)",
+        "variables": "GWR = Groundwater recharge, Rainfall = Total rainfall, Runoff = Total runoff, Evapotranspiration = Total evapotranspiration",
+        "units": "mm",
+        "notes": "To calculate the amount of water that recharges the groundwater"
+      },
+      {
+        "name": "Stream Discharge",
+        "formula": "Q = (A × V)",
+        "variables": "Q = Stream discharge, A = Cross-sectional area of the stream, V = Velocity of the stream",
+        "units": "m³/s",
+        "notes": "To calculate the volume of water flowing through a stream"
+      }
+    ]
+  }
+}

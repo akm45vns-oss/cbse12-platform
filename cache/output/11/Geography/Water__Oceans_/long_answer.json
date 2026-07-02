@@ -1,0 +1,86 @@
+{
+  "class": "11",
+  "subject": "Geography",
+  "chapter": "Water (Oceans)",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T09:45:49.362Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the different ocean basins and their distribution around the world. What are their boundaries and what are the major features of each?",
+        "marks": 5,
+        "answer": "The five ocean basins are the Pacific, Atlantic, Indian, Arctic, and Southern Oceans. The Pacific Ocean is the largest and deepest ocean, covering an area of approximately 155.6 million square kilometers. It is bounded by the Americas to the east, Asia to the west, and Australia to the south.\nThe Atlantic Ocean is the second-largest ocean, covering an area of approximately 85.1 million square kilometers. It is bounded by the Americas to the west and Europe and Africa to the east.\nThe Indian Ocean is the third-largest ocean, covering an area of approximately 73.5 million square kilometers. It is bounded by Africa to the west, Asia to the north, and Australia to the east.\nThe Arctic Ocean is the smallest and shallowest ocean, covering an area of approximately 14.0 million square kilometers. It is bounded by the North Pole to the north and the coast of the Arctic Circle to the south.\nThe Southern Ocean surrounds Antarctica and extends north to the coast of South America, Africa, and Australia.\nThe major features of each ocean basin include mountains, trenches, ridges, and oceanic crust.",
+        "marking_scheme": [
+          "Mention all five ocean basins and their approximate areas (1 mark)",
+          "Describe the boundaries of each ocean basin (2 marks)",
+          "Mention the major features of each ocean basin (2 marks)"
+        ],
+        "topic": "Ocean Basins",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the characteristics of the ocean floor, including its topography and composition. What are the major features of the mid-ocean ridge?",
+        "marks": 5,
+        "answer": "The ocean floor is characterized by its vast expanse of deep-sea trenches, mountain ranges, and oceanic crust. The topography of the ocean floor is divided into three main regions: the abyssal plain, the mid-ocean ridge, and the oceanic trench. The abyssal plain is a vast, flat area of the ocean floor, often with depths ranging from 3,000 to 6,000 meters.\nThe mid-ocean ridge is a vast underwater mountain range that runs through the center of the ocean basin. It is formed by plate tectonics and is characterized by a central rift valley, where new oceanic crust is being created through the process of seafloor spreading. The major features of the mid-ocean ridge include volcanic islands, hydrothermal vents, and a central rift valley.\nThe oceanic crust is composed of basaltic rocks, which are formed from volcanic activity. The oceanic crust is thickest at the mid-ocean ridge and thinnest at the oceanic trench.",
+        "marking_scheme": [
+          "Describe the topography of the ocean floor (2 marks)",
+          "Mention the composition of the ocean floor (2 marks)",
+          "Describe the major features of the mid-ocean ridge (1 mark)"
+        ],
+        "topic": "Ocean Floor",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of ocean currents and their importance in the Earth's climate system. What are the major types of ocean currents?",
+        "marks": 5,
+        "answer": "Ocean currents are the movement of water in the ocean, driven by wind, thermohaline circulation, and tides. They play a crucial role in the Earth's climate system, as they help to distribute heat and nutrients around the globe. The major types of ocean currents include surface currents, deep-water currents, and thermohaline circulation.\nSurface currents are driven by wind and are found in the upper layer of the ocean. They are responsible for the transport of heat and nutrients from the equator towards the poles.\nDeep-water currents are driven by thermohaline circulation and are found in the lower layer of the ocean. They are responsible for the transport of heat and nutrients from the poles towards the equator.\nThermohaline circulation is driven by changes in temperature and salinity and is responsible for the transport of heat and nutrients from the equator towards the poles.",
+        "marking_scheme": [
+          "Explain the concept of ocean currents (2 marks)",
+          "Mention the importance of ocean currents in the Earth's climate system (2 marks)",
+          "Describe the major types of ocean currents (1 mark)"
+        ],
+        "topic": "Ocean Currents",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the volume of water in the Pacific Ocean, given its area is approximately 155.6 million square kilometers and its average depth is 3,970 meters.",
+        "marks": 5,
+        "answer": "Calculation:\nVolume of water = Area x Average depth\n= 155,600,000 km² x 3,970 m\n= 617,208,000,000,000 m³\nTherefore, the volume of water in the Pacific Ocean is approximately 6.17 x 10^14 m³.",
+        "marking_scheme": [
+          "Correctly apply the formula for volume (2 marks)",
+          "Use the given values to calculate the volume (2 marks)",
+          "Express the answer in scientific notation (1 mark)"
+        ],
+        "topic": "Volume of Oceans",
+        "is_numerical": true
+      },
+      {
+        "q": "A ship is traveling from the equator to the North Pole at a speed of 20 km/h. If the distance between the equator and the North Pole is approximately 2,500 km, how long will it take for the ship to reach the North Pole?",
+        "marks": 5,
+        "answer": "Calculation:\nTime = Distance / Speed\n= 2,500 km / 20 km/h\n= 125 hours\nTherefore, it will take the ship approximately 125 hours to reach the North Pole.",
+        "marking_scheme": [
+          "Correctly apply the formula for time (2 marks)",
+          "Use the given values to calculate the time (2 marks)",
+          "Express the answer in hours (1 mark)"
+        ],
+        "topic": "Ocean Currents and Navigation",
+        "is_numerical": true
+      },
+      {
+        "q": "A researcher measures the average salinity of the Indian Ocean to be 35 parts per thousand (ppt). If the researcher collects a 5-liter sample of seawater, how many grams of salt will be present in the sample?",
+        "marks": 5,
+        "answer": "Calculation:\nSalinity = Mass of salt / Mass of water x 1000\nRearrange to solve for mass of salt: Mass of salt = Salinity x Mass of water / 1000\n= 35 ppt x 5 L x 1,000 kg/m³ / 1000\n= 0.175 kg (or 175 grams) of salt\nTherefore, 175 grams of salt will be present in the 5-liter sample.",
+        "marking_scheme": [
+          "Correctly apply the formula for salinity (2 marks)",
+          "Use the given values to calculate the mass of salt (2 marks)",
+          "Express the answer in grams (1 mark)"
+        ],
+        "topic": "Salinity of Oceans",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

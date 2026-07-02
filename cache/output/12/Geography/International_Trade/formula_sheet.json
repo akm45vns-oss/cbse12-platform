@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Geography",
+  "chapter": "International Trade",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-02T06:56:04.896Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Balance of Trade",
+        "formula": "BOT = Exports - Imports",
+        "variables": "BOT: Balance of Trade, Exports: Total exports, Imports: Total imports",
+        "units": "Currency (e.g., USD)",
+        "notes": "To calculate the difference between a country's exports and imports"
+      },
+      {
+        "name": "Balance of Payments",
+        "formula": "BOP = BOT + Unilateral Transfers + Capital Account",
+        "variables": "BOP: Balance of Payments, BOT: Balance of Trade, Unilateral Transfers: Gifts, donations, etc., Capital Account: Investment flows",
+        "units": "Currency (e.g., USD)",
+        "notes": "To calculate the overall balance of international transactions"
+      },
+      {
+        "name": "Terms of Trade",
+        "formula": "TOT = (Price of Exports / Price of Imports) × 100",
+        "variables": "TOT: Terms of Trade, Price of Exports: Average price of exports, Price of Imports: Average price of imports",
+        "units": "Index (percentage)",
+        "notes": "To measure the relative prices of a country's exports and imports"
+      },
+      {
+        "name": "Tariff",
+        "formula": "Tariff = (Tax / Value of Imports) × 100",
+        "variables": "Tariff: Tax on imports, Tax: Amount of tax, Value of Imports: Total value of imports",
+        "units": "Percentage",
+        "notes": "To calculate the tax imposed on imported goods"
+      },
+      {
+        "name": "Quota",
+        "formula": "Quota = Permitted Quantity / Total Demand",
+        "variables": "Quota: Restricted quantity, Permitted Quantity: Allowed imports, Total Demand: Total demand for the product",
+        "units": "Percentage or ratio",
+        "notes": "To limit the quantity of a particular good that can be imported"
+      },
+      {
+        "name": "Exchange Rate",
+        "formula": "ER = Foreign Currency / Domestic Currency",
+        "variables": "ER: Exchange Rate, Foreign Currency: Units of foreign currency, Domestic Currency: Units of domestic currency",
+        "units": "Currency (e.g., USD/INR)",
+        "notes": "To determine the value of one currency in terms of another"
+      },
+      {
+        "name": "Foreign Exchange Reserves",
+        "formula": "FER = Total Reserves / Total Imports",
+        "variables": "FER: Foreign Exchange Reserves, Total Reserves: Total foreign exchange holdings, Total Imports: Total value of imports",
+        "units": "Months of imports",
+        "notes": "To calculate the ability of a country to pay for imports"
+      },
+      {
+        "name": "Trade Intensity Index",
+        "formula": "TII = (Country's Trade with Partner / Country's Total Trade) × 100",
+        "variables": "TII: Trade Intensity Index, Country's Trade with Partner: Bilateral trade, Country's Total Trade: Total trade with all countries",
+        "units": "Percentage",
+        "notes": "To measure the intensity of trade between two countries"
+      },
+      {
+        "name": " Revealed Comparative Advantage",
+        "formula": "RCA = (Country's Exports of Product / Country's Total Exports) / (World Exports of Product / World Total Exports)",
+        "variables": "RCA: Revealed Comparative Advantage, Country's Exports of Product: Exports of a specific product, Country's Total Exports: Total exports, World Exports of Product: Global exports of the product, World Total Exports: Global total exports",
+        "units": "Index (ratio)",
+        "notes": "To determine a country's comparative advantage in a particular product"
+      },
+      {
+        "name": "Gini Coefficient",
+        "formula": "G = (Area between Lorenz Curve and Line of Equality) / (Area between Lorenz Curve and Line of Equality + Area under Line of Equality)",
+        "variables": "G: Gini Coefficient, Area between Lorenz Curve and Line of Equality: Shaded area, Area under Line of Equality: Total area",
+        "units": "Index (0-1)",
+        "notes": "To measure income inequality in international trade"
+      }
+    ]
+  }
+}
