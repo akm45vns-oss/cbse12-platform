@@ -17,17 +17,7 @@ const CONCEPT_COLORS = {
   "Common Mistake": { bg: "#fee2e2", border: "#fca5a5", color: "#dc2626", icon: "⚠️" },
 };
 
-function SectionBlock({ title, icon, children, accent = "#4f46e5" }) {
-  return (
-    <div style={{ marginBottom: 28 }}>
-      <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 14 }}>
-        <div style={{ width: 32, height: 32, borderRadius: 10, background: `${accent}15`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16 }}>{icon}</div>
-        <span style={{ fontSize: 14, fontWeight: 900, color: "#0f172a" }}>{title}</span>
-      </div>
-      {children}
-    </div>
-  );
-}
+// removed SectionBlock as it is replaced by tabs
 
 function SkeletonBlock() {
   return (
@@ -39,11 +29,20 @@ function SkeletonBlock() {
   );
 }
 
+const REVISION_TABS = [
+  { id: "cheat_sheet", label: "Cheat Sheet", icon: "⚡", description: "1-Page summary for quick glance" },
+  { id: "formulas",    label: "Formulas",    icon: "⚗️", description: "Important formulas and units" },
+  { id: "concepts",    label: "Concepts",    icon: "💡", description: "Key concepts to remember" },
+  { id: "definitions", label: "Definitions", icon: "📖", description: "Must-know definitions" },
+  { id: "mistakes",    label: "Mistakes",    icon: "⚠️", description: "Common board exam mistakes" },
+];
+
 export const RevisionView = memo(function RevisionView({
   chapter, subject, selectedClass, theme, onGoToPractice,
 }) {
   const [notesData, setNotesData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [activeTab, setActiveTab] = useState("cheat_sheet");
 
   useEffect(() => {
     let active = true;
@@ -84,87 +83,124 @@ export const RevisionView = memo(function RevisionView({
         </div>
       </div>
 
-      {loading ? <SkeletonBlock /> : (
-        <>
-          {/* Quick Notes */}
-          {n.short_notes && (
-            <SectionBlock title="1-Page Cheat Sheet" icon="⚡" accent="#d97706">
-              <div style={{ background: "white", borderRadius: 16, border: "1.5px solid #fde68a", padding: "18px 18px", boxShadow: "0 2px 10px rgba(217,119,6,0.06)" }}>
-                <div style={{ fontSize: 13, color: "#374151", lineHeight: 1.85 }} dangerouslySetInnerHTML={{ __html: typeof n.short_notes === "string" ? inlineParse(n.short_notes) : inlineParse(n.short_notes?.markdown || JSON.stringify(n.short_notes)) }} />
-              </div>
-            </SectionBlock>
-          )}
+      {/* ── Grid Tab Bar ── */}
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 8, paddingBottom: 4, marginBottom: 20 }}>
+        {REVISION_TABS.map(tab => {
+          const isActive = activeTab === tab.id;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              style={{
+                flex: "1 1 auto",
+                padding: "8px 12px", borderRadius: 12,
+                border: isActive ? "2px solid #d97706" : "1.5px solid rgba(0,0,0,0.08)",
+                background: isActive ? "linear-gradient(135deg,#d97706,#f59e0b)" : "white",
+                color: isActive ? "white" : "#64748b",
+                fontSize: 12, fontWeight: 800,
+                boxShadow: isActive ? "0 4px 14px rgba(217,119,6,0.25)" : "0 1px 4px rgba(0,0,0,0.04)",
+                transition: "all 0.2s", display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+              }}
+            >
+              <span style={{ fontSize: 14 }}>{tab.icon}</span>
+              {tab.label}
+            </button>
+          );
+        })}
+      </div>
 
-          {/* Formulas */}
-          {n.formula_sheet?.formulas?.length > 0 && (
-            <SectionBlock title="Formula Quick-Reference" icon="⚗️" accent="#059669">
-              <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                {n.formula_sheet.formulas.map((f, i) => (
-                  <div key={i} style={{ background: "#f0fdf4", borderRadius: 12, border: "1.5px solid #bbf7d0", padding: "10px 14px", display: "flex", gap: 12, alignItems: "center" }}>
-                    <div style={{ background: "white", borderRadius: 8, padding: "6px 12px", fontFamily: "monospace", fontSize: 14, color: "#15803d", fontWeight: 800, flexShrink: 0 }}>{f.formula}</div>
-                    <div>
-                      <div style={{ fontWeight: 700, fontSize: 13, color: "#0f172a" }}>{f.name}</div>
-                      {f.units && <div style={{ fontSize: 11, color: "#64748b" }}>{f.units}</div>}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </SectionBlock>
-          )}
+      {/* ── Section Header ── */}
+      {(() => {
+        const tab = REVISION_TABS.find(t => t.id === activeTab);
+        return tab ? (
+          <div style={{ marginBottom: 12 }}>
+            <div style={{ fontSize: 10, fontWeight: 800, color: "#d97706", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+              {tab.icon} {tab.label}
+            </div>
+            <div style={{ fontSize: 11, color: "#94a3b8", marginTop: 2 }}>{tab.description}</div>
+          </div>
+        ) : null;
+      })()}
 
-          {/* Important Concepts */}
-          {n.important_concepts?.concepts?.length > 0 && (
-            <SectionBlock title="Key Concepts to Remember" icon="💡" accent="#7c3aed">
-              <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-                {n.important_concepts.concepts.map((c, i) => {
-                  const style = CONCEPT_COLORS[c.category] || { bg: "#f8fafc", border: "#e2e8f0", color: "#374151", icon: "📌" };
-                  return (
-                    <div key={i} style={{ background: style.bg, borderRadius: 12, border: `1.5px solid ${style.border}`, padding: "12px 14px" }}>
-                      <div style={{ display: "flex", gap: 6, alignItems: "center", marginBottom: 4 }}>
-                        <span>{style.icon}</span>
-                        <span style={{ fontSize: 10, fontWeight: 800, color: style.color, textTransform: "uppercase", letterSpacing: "0.07em" }}>{c.category}</span>
-                      </div>
-                      <div style={{ fontWeight: 700, fontSize: 13.5, color: "#0f172a", marginBottom: 3 }}>{c.title}</div>
-                      <div style={{ fontSize: 13, color: "#374151", lineHeight: 1.6 }} dangerouslySetInnerHTML={{ __html: inlineParse(c.description) }} />
-                    </div>
-                  );
-                })}
-              </div>
-            </SectionBlock>
-          )}
+      {/* ── Tab Content ── */}
+      <div style={{ animation: "fadeIn 0.2s" }}>
+        {loading ? <SkeletonBlock /> : (
+          <>
+            {activeTab === "cheat_sheet" && (
+              n.short_notes ? (
+                <div style={{ background: "white", borderRadius: 16, border: "1.5px solid #fde68a", padding: "18px 18px", boxShadow: "0 2px 10px rgba(217,119,6,0.06)" }}>
+                  <div style={{ fontSize: 13, color: "#374151", lineHeight: 1.85 }} dangerouslySetInnerHTML={{ __html: typeof n.short_notes === "string" ? inlineParse(n.short_notes) : inlineParse(n.short_notes?.markdown || JSON.stringify(n.short_notes)) }} />
+                </div>
+              ) : <p style={{ color: "#94a3b8" }}>No cheat sheet available.</p>
+            )}
 
-          {/* Key Definitions */}
-          {n.key_definitions?.definitions?.length > 0 && (
-            <SectionBlock title="Must-Know Definitions" icon="📖" accent="#0891b2">
-              <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-                {n.key_definitions.definitions.map((def, i) => (
-                  <div key={i} style={{ background: "white", borderRadius: 12, border: "1px solid #e2e8f0", padding: "12px 14px" }}>
-                    <div style={{ fontWeight: 800, fontSize: 13, color: "#4f46e5", marginBottom: 4 }}>📖 {def.term}</div>
-                    <div style={{ fontSize: 13, color: "#374151", lineHeight: 1.6 }}>{def.definition}</div>
-                    {def.example && <div style={{ marginTop: 6, fontSize: 12, color: "#64748b", borderLeft: "2px solid #818cf8", paddingLeft: 10 }}>eg. {def.example}</div>}
-                  </div>
-                ))}
-              </div>
-            </SectionBlock>
-          )}
-
-          {/* Common Mistakes */}
-          {diffTags.common_errors?.length > 0 && (
-            <SectionBlock title="Common Board Exam Mistakes" icon="⚠️" accent="#dc2626">
-              <div style={{ background: "#fef2f2", borderRadius: 14, border: "1.5px solid #fecdd3", padding: "14px 16px" }}>
+            {activeTab === "formulas" && (
+              n.formula_sheet?.formulas?.length > 0 ? (
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                  {diffTags.common_errors.map((err, i) => (
-                    <div key={i} style={{ fontSize: 13, color: "#991b1b", display: "flex", gap: 8 }}>
-                      <span style={{ fontWeight: 900, flexShrink: 0 }}>✗</span>
-                      <span>{err}</span>
+                  {n.formula_sheet.formulas.map((f, i) => (
+                    <div key={i} style={{ background: "#f0fdf4", borderRadius: 12, border: "1.5px solid #bbf7d0", padding: "10px 14px", display: "flex", gap: 12, alignItems: "center" }}>
+                      <div style={{ background: "white", borderRadius: 8, padding: "6px 12px", fontFamily: "monospace", fontSize: 14, color: "#15803d", fontWeight: 800, flexShrink: 0 }}>{f.formula}</div>
+                      <div>
+                        <div style={{ fontWeight: 700, fontSize: 13, color: "#0f172a" }}>{f.name}</div>
+                        {f.units && <div style={{ fontSize: 11, color: "#64748b" }}>{f.units}</div>}
+                      </div>
                     </div>
                   ))}
                 </div>
-              </div>
-            </SectionBlock>
-          )}
-        </>
-      )}
+              ) : <p style={{ color: "#94a3b8" }}>No formulas available.</p>
+            )}
+
+            {activeTab === "concepts" && (
+              n.important_concepts?.concepts?.length > 0 ? (
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {n.important_concepts.concepts.map((c, i) => {
+                    const style = CONCEPT_COLORS[c.category] || { bg: "#f8fafc", border: "#e2e8f0", color: "#374151", icon: "📌" };
+                    return (
+                      <div key={i} style={{ background: style.bg, borderRadius: 12, border: `1.5px solid ${style.border}`, padding: "12px 14px" }}>
+                        <div style={{ display: "flex", gap: 6, alignItems: "center", marginBottom: 4 }}>
+                          <span>{style.icon}</span>
+                          <span style={{ fontSize: 10, fontWeight: 800, color: style.color, textTransform: "uppercase", letterSpacing: "0.07em" }}>{c.category}</span>
+                        </div>
+                        <div style={{ fontWeight: 700, fontSize: 13.5, color: "#0f172a", marginBottom: 3 }}>{c.title}</div>
+                        <div style={{ fontSize: 13, color: "#374151", lineHeight: 1.6 }} dangerouslySetInnerHTML={{ __html: inlineParse(c.description) }} />
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : <p style={{ color: "#94a3b8" }}>No important concepts available.</p>
+            )}
+
+            {activeTab === "definitions" && (
+              n.key_definitions?.definitions?.length > 0 ? (
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {n.key_definitions.definitions.map((def, i) => (
+                    <div key={i} style={{ background: "white", borderRadius: 12, border: "1px solid #e2e8f0", padding: "12px 14px" }}>
+                      <div style={{ fontWeight: 800, fontSize: 13, color: "#4f46e5", marginBottom: 4 }}>📖 {def.term}</div>
+                      <div style={{ fontSize: 13, color: "#374151", lineHeight: 1.6 }}>{def.definition}</div>
+                      {def.example && <div style={{ marginTop: 6, fontSize: 12, color: "#64748b", borderLeft: "2px solid #818cf8", paddingLeft: 10 }}>eg. {def.example}</div>}
+                    </div>
+                  ))}
+                </div>
+              ) : <p style={{ color: "#94a3b8" }}>No definitions available.</p>
+            )}
+
+            {activeTab === "mistakes" && (
+              diffTags.common_errors?.length > 0 ? (
+                <div style={{ background: "#fef2f2", borderRadius: 14, border: "1.5px solid #fecdd3", padding: "14px 16px" }}>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                    {diffTags.common_errors.map((err, i) => (
+                      <div key={i} style={{ fontSize: 13, color: "#991b1b", display: "flex", gap: 8 }}>
+                        <span style={{ fontWeight: 900, flexShrink: 0 }}>✗</span>
+                        <span>{err}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ) : <p style={{ color: "#94a3b8" }}>No common mistakes recorded.</p>
+            )}
+          </>
+        )}
+      </div>
 
       {/* Bottom CTA */}
       {onGoToPractice && (
