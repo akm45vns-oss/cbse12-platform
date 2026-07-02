@@ -526,6 +526,45 @@ export const CURRICULUM_11 = {
     ]
   },
 
+  Geography: {
+    emoji: "🌍", code: "GEO",
+    gradient: "linear-gradient(135deg, #064e3b 0%, #059669 50%, #34d399 100%)",
+    accent: "#059669", light: "#ecfdf5", text: "#064e3b", border: "#a7f3d0",
+    units: [
+      {
+        name: "Part A — Fundamentals of Physical Geography",
+        chapters: [
+          "Geography as a Discipline",
+          "The Origin and Evolution of the Earth",
+          "Interior of the Earth",
+          "Distribution of Oceans and Continents",
+          "Geomorphic Processes",
+          "Landforms and their Evolution",
+          "Composition and Structure of Atmosphere",
+          "Solar Radiation, Heat Balance and Temperature",
+          "Atmospheric Circulation and Weather Systems",
+          "Water in the Atmosphere",
+          "World Climate and Climate Change",
+          "Water (Oceans)",
+          "Movements of Ocean Water",
+          "Biodiversity and Conservation",
+        ]
+      },
+      {
+        name: "Part B — India: Physical Environment",
+        chapters: [
+          "India — Location",
+          "Structure and Physiography",
+          "Drainage System",
+          "Climate",
+          "Natural Vegetation",
+          "Soils",
+          "Natural Hazards and Disasters",
+        ]
+      },
+    ]
+  },
+
   "Physical Education": {
     emoji: "🏃", code: "PE",
     gradient: "linear-gradient(135deg, #14532d 0%, #22c55e 50%, #86efac 100%)",

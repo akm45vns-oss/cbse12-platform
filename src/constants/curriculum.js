@@ -128,6 +128,15 @@ export const CURRICULUM = {
       { name: "Part B — Politics in India Since Independence", chapters: ["Challenges of Nation Building", "Era of One-Party Dominance", "Politics of Planned Development", "India's External Relations", "Challenges to the Congress System", "Crisis of the Constitutional Order", "Rise of Popular Movements", "Regional Aspirations", "Recent Developments in Indian Politics"] },
     ]
   },
+  Geography: {
+    emoji: "🌍", code: "GEO",
+    gradient: "linear-gradient(135deg, #064e3b 0%, #059669 50%, #34d399 100%)",
+    accent: "#059669", light: "#ecfdf5", text: "#064e3b", border: "#a7f3d0",
+    units: [
+      { name: "Part A — Fundamentals of Human Geography", chapters: ["Human Geography Nature and Scope", "The World Population Distribution, Density and Growth", "Human Development", "Primary Activities", "Secondary Activities", "Tertiary and Quaternary Activities", "Transport and Communication", "International Trade"] },
+      { name: "Part B — India: People and Economy", chapters: ["Population: Distribution, Density, Growth and Composition", "Human Settlements", "Land Resources and Agriculture", "Water Resources", "Mineral and Energy Resources", "Planning and Sustainable Development in Indian Context", "Transport and Communication in India", "International Trade of India", "Geographical Perspective on Selected Issues and Problems"] },
+    ]
+  },
   "Physical Education": {
     emoji: "🏃", code: "PE",
     gradient: "linear-gradient(135deg, #14532d 0%, #22c55e 50%, #86efac 100%)",
