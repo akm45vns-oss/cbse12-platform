@@ -11,7 +11,45 @@ const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // ===== SUPABASE OPERATIONS =====
-// loginUser has been migrated to the backend API via apiClient (Phase 2 Enterprise Architecture)
+
+/**
+ * Login with username OR email + password.
+ * Verifies bcrypt hash stored in users table.
+ * Returns { user } on success, throws Error on failure.
+ */
+export async function loginUser(usernameOrEmail, password) {
+  const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(usernameOrEmail);
+
+  // Fetch user by email or username
+  const query = supabase
+    .from("users")
+    .select("username, email, name, password_hash, email_verified, joined_at")
+    .limit(1);
+
+  const { data, error } = await (isEmail
+    ? query.eq("email", usernameOrEmail)
+    : query.eq("username", usernameOrEmail));
+
+  if (error || !data || data.length === 0) {
+    throw new Error("Invalid username/email or password");
+  }
+
+  const user = data[0];
+
+  // Verify password against stored bcrypt hash
+  const isMatch = await verifyPassword(password, user.password_hash);
+  if (!isMatch) {
+    throw new Error("Invalid username/email or password");
+  }
+
+  // Update last_login timestamp
+  await supabase
+    .from("users")
+    .update({ last_login: new Date().toISOString() })
+    .eq("username", user.username);
+
+  return { user: { username: user.username, email: user.email, name: user.name } };
+}
 
 export async function registerUser(username, passwordPlain, email, name, emailVerified = false) {
   // Check if username exists

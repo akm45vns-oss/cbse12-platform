@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { validateUsername, validatePassword } from "../utils/auth";
-import { registerUser, sendOTP, verifyOTP, sendPasswordResetOTP, verifyPasswordResetOTP, resetPassword } from "../utils/supabase";
-import { apiClient } from "../utils/apiClient";
+import { registerUser, loginUser, sendOTP, verifyOTP, sendPasswordResetOTP, verifyPasswordResetOTP, resetPassword } from "../utils/supabase";
 import { validatePasswordStrength } from "../utils/passwordValidation";
 import {
   recordLoginAttempt,
@@ -76,25 +75,17 @@ export function useAuth() {
     if (passwordErr) return setError(passwordErr);
 
     try {
-      // Call Backend API via apiClient
-      const response = await apiClient.post('/auth/login', { 
-        usernameOrEmail: u, 
-        password: credentials.password 
-      });
-
-      const { user, token } = response.data;
+      // Login directly via Supabase (no Express server required)
+      const { user } = await loginUser(u, credentials.password);
 
       // Clear attempts on successful login
       resetLoginAttempts(u);
-      
-      // Save Token securely (localStorage for now, can move to HttpOnly cookies later)
-      localStorage.setItem('akmedu_token', token);
-      
-      // Set current user (saving username for backward compatibility)
+
+      // Set current user
       setCurrentUser(user.username);
       setCredentials({ username: "", email: "", name: "", password: "", confirmPassword: "" });
       setShowPass(false);
-      
+
       // Sync gamification data from localStorage to database
       syncGamificationDataToDB(user.username)
         .then(() => console.log('[AUTH] Gamification data synced to database'))
