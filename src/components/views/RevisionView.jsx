@@ -6,7 +6,78 @@ function inlineParse(text) {
   if (!text) return "";
   return text
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-    .replace(/\*(.+?)\*/g, "<em>$1</em>");
+    .replace(/\*(.+?)\*/g, "<em>$1</em>")
+    .replace(/`(.+?)`/g, "<code style=\"background:rgba(79,70,229,0.06);padding:2px 6px;border-radius:5px;font-size:0.88em;font-family:monospace;color:#4f46e5\">$1</code>")
+    .replace(/\\\((.+?)\\\)/g, "<span style=\"font-family:monospace;background:#f0fdf4;padding:1px 6px;border-radius:4px;color:#15803d;font-size:0.9em\">$1</span>");
+}
+
+function parseTable(lines, startIdx) {
+  const rows = [];
+  let i = startIdx;
+  while (i < lines.length && lines[i].trim().startsWith("|")) {
+    const row = lines[i].trim().split("|").map(c => c.trim()).filter((_, idx, arr) => idx > 0 && idx < arr.length - 1);
+    rows.push(row);
+    i++;
+    if (i < lines.length && /^\|[\s\-:|]+\|/.test(lines[i])) i++;
+  }
+  return { rows, nextIdx: i };
+}
+
+function renderMarkdown(raw, subject, selectedClass) {
+  if (!raw) return null;
+  if (typeof raw === "object" && raw.markdown) raw = raw.markdown;
+  if (typeof raw !== "string") return null;
+  const elements = [];
+  const lines = raw.split("\n");
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+    const trimmed = line.trim();
+    if (line.startsWith("# ")) {
+      elements.push(<div key={i} style={{ marginBottom: 16 }}><h1 style={{ margin: "0 0 10px", fontSize: "1.2rem", fontWeight: 800, color: "#0f172a", lineHeight: 1.3 }}>{line.slice(2)}</h1><div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}><span style={{ background: "#ede9fe", color: "#4f46e5", fontSize: 10, fontWeight: 700, padding: "2px 8px", borderRadius: 999 }}>Class {selectedClass || "12"}</span><span style={{ background: "#dbeafe", color: "#2563eb", fontSize: 10, fontWeight: 700, padding: "2px 8px", borderRadius: 999 }}>{subject}</span></div></div>);
+      i++; continue;
+    }
+    if (line.startsWith("## ")) { elements.push(<h2 key={i} style={{ fontSize: "1.1rem", fontWeight: 800, color: "#1e1b4b", margin: "26px 0 10px", paddingBottom: 6, borderBottom: "2px solid #ede9fe" }}>{line.slice(3)}</h2>); i++; continue; }
+    if (line.startsWith("### ")) { elements.push(<h3 key={i} style={{ fontSize: "0.97rem", fontWeight: 700, color: "#4f46e5", margin: "16px 0 6px" }}>{line.slice(4)}</h3>); i++; continue; }
+    if (trimmed === "---" || trimmed === "***") { elements.push(<hr key={i} style={{ border: "none", borderTop: "1.5px solid #f1f5f9", margin: "18px 0" }} />); i++; continue; }
+    if (trimmed.startsWith("|") && trimmed.endsWith("|")) {
+      const { rows, nextIdx } = parseTable(lines, i);
+      if (rows.length > 0) {
+        const [header, ...body] = rows;
+        elements.push(<div key={i} style={{ overflowX: "auto", margin: "14px 0", borderRadius: 12, boxShadow: "0 1px 4px rgba(0,0,0,0.06)" }}><table style={{ borderCollapse: "collapse", width: "100%", minWidth: 340, fontSize: 13 }}><thead><tr style={{ background: "linear-gradient(90deg,#4f46e5,#818cf8)", color: "white" }}>{header.map((cell, ci) => <th key={ci} style={{ padding: "9px 14px", textAlign: "left", fontWeight: 700, fontSize: 12, letterSpacing: "0.04em" }} dangerouslySetInnerHTML={{ __html: inlineParse(cell) }} />)}</tr></thead><tbody>{body.map((row, ri) => (<tr key={ri} style={{ background: ri % 2 === 0 ? "white" : "#f8f9ff" }}>{row.map((cell, ci) => <td key={ci} style={{ padding: "8px 14px", borderBottom: "1px solid #f1f5f9", color: "#374151" }} dangerouslySetInnerHTML={{ __html: inlineParse(cell) }} />)}</tr>))}</tbody></table></div>);
+        i = nextIdx; continue;
+      }
+    }
+    if (line.startsWith("> ")) { elements.push(<div key={i} style={{ borderLeft: "3px solid #06b6d4", background: "#ecfeff", borderRadius: "0 12px 12px 0", padding: "11px 16px", margin: "12px 0" }}><span style={{ fontSize: 10, fontWeight: 800, color: "#0891b2", letterSpacing: "0.09em", textTransform: "uppercase" }}>💡 Concept: </span><span style={{ fontStyle: "italic", fontSize: 14, fontWeight: 500, color: "#164e63" }} dangerouslySetInnerHTML={{ __html: inlineParse(line.slice(2)) }} /></div>); i++; continue; }
+    if (trimmed.startsWith("- ") || trimmed.startsWith("* ")) {
+      const items = [];
+      while (i < lines.length && (lines[i].trimStart().startsWith("- ") || lines[i].trimStart().startsWith("* "))) {
+        const indent = lines[i].length - lines[i].trimStart().length;
+        items.push({ text: lines[i].trimStart().slice(2), indent });
+        i++;
+      }
+      elements.push(<ul key={`ul-${i}`} style={{ margin: "6px 0 10px", paddingLeft: 4, listStyleType: "none" }}>{items.map((it, idx) => (<li key={idx} style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 5, paddingLeft: it.indent > 0 ? 16 : 0 }}><span style={{ color: "#4f46e5", fontWeight: 900, fontSize: 16, lineHeight: 1.4, flexShrink: 0 }}>•</span><span style={{ fontSize: 14, color: "#374151", lineHeight: 1.7 }} dangerouslySetInnerHTML={{ __html: inlineParse(it.text) }} /></li>))}</ul>);
+      continue;
+    }
+    if (/^\d+\.\s/.test(trimmed)) {
+      const items = [];
+      let num = 1;
+      while (i < lines.length && /^\d+\.\s/.test(lines[i].trim())) {
+        items.push({ num, text: lines[i].trim().replace(/^\d+\.\s/, "") });
+        num++; i++;
+      }
+      elements.push(<ol key={`ol-${i}`} style={{ margin: "6px 0 10px", paddingLeft: 4, listStyleType: "none" }}>{items.map((it, idx) => (<li key={idx} style={{ display: "flex", gap: 10, marginBottom: 6, alignItems: "flex-start" }}><span style={{ background: "#4f46e5", color: "white", borderRadius: "50%", width: 22, height: 22, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 800, marginTop: 2 }}>{it.num}</span><span style={{ fontSize: 14, color: "#374151", lineHeight: 1.7 }} dangerouslySetInnerHTML={{ __html: inlineParse(it.text) }} /></li>))}</ol>);
+      continue;
+    }
+    if (trimmed === "") { elements.push(<div key={i} style={{ height: 6 }} />); i++; continue; }
+    if (trimmed.startsWith("💡") || /^(note:|study tip:|tip:|remember:|important:)/i.test(trimmed)) {
+      elements.push(<div key={i} style={{ background: "#fffbeb", border: "1.5px solid #fde68a", borderRadius: 12, padding: "11px 16px", margin: "10px 0", display: "flex", gap: 10, alignItems: "flex-start" }}><span style={{ fontSize: 18, flexShrink: 0 }}>💡</span><span style={{ fontSize: 14, color: "#92400e", fontWeight: 500, lineHeight: 1.6 }} dangerouslySetInnerHTML={{ __html: inlineParse(trimmed.replace(/^💡\s*/, "").replace(/^(Note:|Study Tip:|Tip:|Remember:|Important:)\s*/i, "")) }} /></div>);
+      i++; continue;
+    }
+    elements.push(<p key={i} style={{ fontSize: 14, color: "#374151", lineHeight: 1.8, margin: "0 0 10px" }} dangerouslySetInnerHTML={{ __html: inlineParse(trimmed) }} />);
+    i++;
+  }
+  return elements;
 }
 
 const CONCEPT_COLORS = {
@@ -84,7 +155,7 @@ export const RevisionView = memo(function RevisionView({
       </div>
 
       {/* ── Grid Tab Bar ── */}
-      <div style={{ display: "flex", flexWrap: "wrap", gap: 8, paddingBottom: 4, marginBottom: 20 }}>
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 8, paddingBottom: 4, marginBottom: 20 }}>
         {REVISION_TABS.map(tab => {
           const isActive = activeTab === tab.id;
           return (
@@ -129,7 +200,7 @@ export const RevisionView = memo(function RevisionView({
             {activeTab === "cheat_sheet" && (
               n.short_notes ? (
                 <div style={{ background: "white", borderRadius: 16, border: "1.5px solid #fde68a", padding: "18px 18px", boxShadow: "0 2px 10px rgba(217,119,6,0.06)" }}>
-                  <div style={{ fontSize: 13, color: "#374151", lineHeight: 1.85 }} dangerouslySetInnerHTML={{ __html: typeof n.short_notes === "string" ? inlineParse(n.short_notes) : inlineParse(n.short_notes?.markdown || JSON.stringify(n.short_notes)) }} />
+                  {renderMarkdown(typeof n.short_notes === "string" ? n.short_notes : (n.short_notes?.markdown || JSON.stringify(n.short_notes)), subject, selectedClass)}
                 </div>
               ) : <p style={{ color: "#94a3b8" }}>No cheat sheet available.</p>
             )}
@@ -138,8 +209,8 @@ export const RevisionView = memo(function RevisionView({
               n.formula_sheet?.formulas?.length > 0 ? (
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                   {n.formula_sheet.formulas.map((f, i) => (
-                    <div key={i} style={{ background: "#f0fdf4", borderRadius: 12, border: "1.5px solid #bbf7d0", padding: "10px 14px", display: "flex", gap: 12, alignItems: "center" }}>
-                      <div style={{ background: "white", borderRadius: 8, padding: "6px 12px", fontFamily: "monospace", fontSize: 14, color: "#15803d", fontWeight: 800, flexShrink: 0 }}>{f.formula}</div>
+                    <div key={i} style={{ background: "#f0fdf4", borderRadius: 12, border: "1.5px solid #bbf7d0", padding: "10px 14px", display: "flex", flexDirection: "column", gap: 8, alignItems: "flex-start" }}>
+                      <div style={{ background: "white", borderRadius: 8, padding: "8px 12px", fontFamily: "monospace", fontSize: 14, color: "#15803d", fontWeight: 800, width: "100%", wordBreak: "break-word" }}>{f.formula}</div>
                       <div>
                         <div style={{ fontWeight: 700, fontSize: 13, color: "#0f172a" }}>{f.name}</div>
                         {f.units && <div style={{ fontSize: 11, color: "#64748b" }}>{f.units}</div>}
