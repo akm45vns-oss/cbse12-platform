@@ -63,30 +63,6 @@ export const globalStyles = `
     --bottom-nav-h: 60px;
   }
 
-  /* ===== DARK MODE TOKENS ===== */
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg-app: #0f0e1a;
-      --bg-card: #1a1828;
-      --bg-card-hover: #211f30;
-      --primary-light: rgba(79, 70, 229, 0.18);
-      --primary-muted: rgba(79, 70, 229, 0.12);
-      --text-primary: #f1f5f9;
-      --text-secondary: #cbd5e1;
-      --text-tertiary: #64748b;
-      --text-label: #94a3b8;
-      --border: rgba(255, 255, 255, 0.07);
-      --border-card: rgba(255, 255, 255, 0.08);
-      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-      --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
-      --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-      --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.3);
-      --green-light: rgba(16, 185, 129, 0.12);
-      --orange-light: rgba(249, 115, 22, 0.12);
-      --red-light: rgba(239, 68, 68, 0.12);
-      --blue-light: rgba(59, 130, 246, 0.12);
-    }
-  }
 
   /* ===== GLOBAL RESET & BASE ===== */
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -232,13 +208,6 @@ export const globalStyles = `
     flex-shrink: 0;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
   }
-  @media (prefers-color-scheme: dark) {
-    .top-header {
-      background: rgba(26, 24, 40, 0.95);
-      border-bottom-color: rgba(255,255,255,0.07);
-      box-shadow: 0 1px 12px rgba(0,0,0,0.3);
-    }
-  }
   .top-header-inner {
     max-width: 800px;
     margin: 0 auto;
@@ -327,12 +296,6 @@ export const globalStyles = `
     box-shadow: 0 -4px 20px rgba(0,0,0,0.06);
     height: calc(var(--bottom-nav-h) + env(safe-area-inset-bottom));
   }
-  @media (prefers-color-scheme: dark) {
-    .mobile-bottom-nav {
-      background: rgba(26, 24, 40, 0.97);
-      border-top-color: rgba(255,255,255,0.07);
-    }
-  }
   .nav-desktop-links { display: flex; }
   @media (max-width: 768px) {
     .nav-desktop-links { display: none !important; }
@@ -406,9 +369,6 @@ export const globalStyles = `
     border-radius: var(--r-full);
     overflow: hidden;
   }
-  @media (prefers-color-scheme: dark) {
-    .progress-track { background: rgba(255,255,255,0.1); }
-  }
   .progress-fill {
     height: 100%;
     border-radius: var(--r-full);
@@ -455,9 +415,6 @@ export const globalStyles = `
     border: 1px solid var(--border-card);
     box-shadow: var(--shadow-card);
     margin-bottom: 16px;
-  }
-  @media (prefers-color-scheme: dark) {
-    .dash-hero { background: var(--bg-card); border-color: var(--border-card); }
   }
   .subject-chips-scroll {
     display: flex;
@@ -710,12 +667,6 @@ export const globalStyles = `
     background: linear-gradient(90deg, var(--border) 25%, rgba(255,255,255,0.15) 50%, var(--border) 75%);
     background-size: 200% 100%;
     animation: shimmer 1.5s infinite;
-  }
-  @media (prefers-color-scheme: dark) {
-    .skeleton {
-      background: linear-gradient(90deg, rgba(255,255,255,0.06) 25%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.06) 75%);
-      background-size: 200% 100%;
-    }
   }
 
   /* ===== OFFLINE BANNER ===== */

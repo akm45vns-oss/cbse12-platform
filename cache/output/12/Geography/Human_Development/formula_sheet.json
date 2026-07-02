@@ -1,0 +1,48 @@
+{
+  "class": "12",
+  "subject": "Geography",
+  "chapter": "Human Development",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T11:31:49.638Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Human Development Index (HDI)",
+        "formula": "HDI = (Life Expectancy at Birth + Average Years of Schooling + Gross National Income per capita / 3)",
+        "variables": "Life Expectancy at Birth, Average Years of Schooling, Gross National Income per capita",
+        "units": "Years, Years, Currency (e.g., USD)",
+        "notes": "Used to measure the quality of human development"
+      },
+      {
+        "name": "Gross National Income (GNI) per capita",
+        "formula": "GNI per capita = GNI / Total Population",
+        "variables": "Gross National Income, Total Population",
+        "units": "Currency (e.g., USD), Persons",
+        "notes": "Used as one of the components of HDI"
+      },
+      {
+        "name": "Human Poverty Index (HPI)",
+        "formula": "HPI = (Percentage of population without access to healthcare + Percentage of population below the poverty line + Mortality rate for children under 5 years / 3)",
+        "variables": "Percentage of population without access to healthcare, Percentage of population below the poverty line, Mortality rate for children under 5 years",
+        "units": "%, % , 1/1000",
+        "notes": "Used to measure the poverty and deprivation in a country"
+      },
+      {
+        "name": "Demographic Transition Model",
+        "formula": "No mathematical formula, but a graphical representation",
+        "variables": "Birth rate, Death rate, Population growth rate",
+        "units": "Rate per 1000 people, Rate per 1000 people, Rate per 1000 people",
+        "notes": "A model that describes the changes in population growth rate as countries develop"
+      },
+      {
+        "name": "Dependency Ratio",
+        "formula": "Dependency Ratio = (Dependent population / Working-age population) x 100",
+        "variables": "Dependent population, Working-age population",
+        "units": "Persons, Persons",
+        "notes": "Used to measure the proportion of population that is dependent on the working-age population"
+      }
+    ]
+  }
+}

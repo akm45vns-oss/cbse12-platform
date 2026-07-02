@@ -27,16 +27,6 @@ body {
   position: relative;
 }
 
-/* ===== DARK MODE BODY ===== */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #0f0e1a;
-    color: #f1f5f9;
-  }
-  #root {
-    background: #0f0e1a;
-  }
-}
 
 #root {
   width: 100%;
