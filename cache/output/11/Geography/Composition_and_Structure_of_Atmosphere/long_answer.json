@@ -1,0 +1,85 @@
+{
+  "class": "11",
+  "subject": "Geography",
+  "chapter": "Composition and Structure of Atmosphere",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T11:39:23.107Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the composition of the atmosphere in terms of gases. Explain how the relative abundance of these gases affects the Earth's climate. (5 marks)",
+        "marks": 5,
+        "answer": "The atmosphere is primarily composed of nitrogen (78%), oxygen (21%), and argon (1%). The relative abundance of these gases affects the Earth's climate by influencing the greenhouse effect. Nitrogen and argon do not contribute to the greenhouse effect, while oxygen is not a significant contributor. However, water vapor and carbon dioxide, although present in smaller amounts, play a crucial role in regulating the Earth's temperature. The greenhouse effect is essential for maintaining a habitable climate. Marking Scheme: (i) Composition of the atmosphere (1 mark) (ii) Role of gases in the greenhouse effect (2 marks) (iii) Impact on climate (2 marks)",
+        "marking_scheme": [
+          "Point 1 worth 1 mark",
+          "Point 2 worth 2 marks",
+          "Point 3 worth 2 marks"
+        ],
+        "topic": "Composition of the Atmosphere",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the structure of the atmosphere, including the troposphere, stratosphere, mesosphere, thermosphere, and exosphere. (5 marks)",
+        "marks": 5,
+        "answer": "The atmosphere is divided into five distinct layers: (i) Troposphere (up to 12 km): The densest and lowest layer, where weather occurs. (ii) Stratosphere (12 km - 50 km): Characterized by a stable temperature gradient and the presence of the ozone layer. (iii) Mesosphere (50 km - 85 km): The temperature decreases with altitude in this layer. (iv) Thermosphere (85 km - 600 km): The temperature increases with altitude, and it is where the aurora borealis and aurora australis occur. (v) Exosphere (600 km - 10,000 km): The outermost layer, where the atmosphere interacts with the solar wind and interstellar space. Marking Scheme: (i) Description of each layer (3 marks) (ii) Characteristics of each layer (2 marks)",
+        "marking_scheme": [
+          "Point 1 worth 3 marks",
+          "Point 2 worth 2 marks"
+        ],
+        "topic": "Structure of the Atmosphere",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the ozone layer and its role in protecting the Earth from harmful ultraviolet radiation. (5 marks)",
+        "marks": 5,
+        "answer": "The ozone layer is a region in the stratosphere (15-35 km) where ozone (O3) is concentrated. It protects the Earth from 95-99% of the sun's ultraviolet (UV) radiation, which can cause damage to living organisms and the environment. The depletion of the ozone layer due to human activities, such as the release of chlorofluorocarbons (CFCs), has led to concerns about its stability. Marking Scheme: (i) Description of the ozone layer (2 marks) (ii) Role of the ozone layer in protecting the Earth (2 marks) (iii) Threats to the ozone layer (1 mark)",
+        "marking_scheme": [
+          "Point 1 worth 2 marks",
+          "Point 2 worth 2 marks",
+          "Point 3 worth 1 mark"
+        ],
+        "topic": "Ozone Layer",
+        "is_numerical": false
+      },
+      {
+        "q": "A layer of air 1 km thick is heated from the bottom, and its temperature increase is 10°C. Calculate the lapse rate of the atmosphere. (5 marks)",
+        "marks": 5,
+        "answer": "To calculate the lapse rate, we use the formula: Lapse rate = Temperature decrease / Altitude increase Lapse rate = -10°C / 1 km = -10°C/km",
+        "marking_scheme": [
+          "Point 1 worth 2 marks (correct calculation)",
+          "Point 2 worth 2 marks (correct units and sign)",
+          "Point 3 worth 1 mark (correct formula application)"
+        ],
+        "topic": "Temperature Gradient",
+        "is_numerical": true
+      },
+      {
+        "q": "The atmospheric pressure at the surface is 1013 mbar. If the air density is 1.2 kg/m³, calculate the height of the atmospheric column above a given location. (5 marks)",
+        "marks": 5,
+        "answer": "We use the formula: Atmospheric Pressure = ρgh where ρ is air density, g is acceleration due to gravity, and h is height of the atmospheric column. Given: ρ = 1.2 kg/m³, P = 1013 mbar = 101,325 Pa (converting mbar to Pa) g = 9.8 m/s² Rearranging the formula to find h: h = P / (ρg) h = 101,325 Pa / (1.2 kg/m³ * 9.8 m/s²) h ≈ 8,685 m",
+        "marking_scheme": [
+          "Point 1 worth 2 marks (correct calculation of h)",
+          "Point 2 worth 2 marks (correct units and values)",
+          "Point 3 worth 1 mark (correct formula application)"
+        ],
+        "topic": "Atmospheric Pressure",
+        "is_numerical": true
+      },
+      {
+        "q": "The temperature at the top of the troposphere is -50°C. If the lapse rate is -10°C/km, calculate the height of the troposphere. (5 marks)",
+        "marks": 5,
+        "answer": "To calculate the height of the troposphere, we use the formula: Temperature = Temperature at the top of the troposphere + (Lapse rate * Height) -50°C = -10°C/km * h Rearranging the formula to find h: -50°C = -10°C/km * h h = -50°C / -10°C/km h = 5 km",
+        "marking_scheme": [
+          "Point 1 worth 2 marks (correct calculation of h)",
+          "Point 2 worth 2 marks (correct units and values)",
+          "Point 3 worth 1 mark (correct formula application)"
+        ],
+        "topic": "Temperature Gradient",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

@@ -85,37 +85,7 @@ function UnitGroup({ unit, unitIndex, subject, curriculum, progress, stats, isDe
                   <div style={{ fontSize: 13, fontWeight: 700, color: "var(--text-primary)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
                     {ch}
                   </div>
-                  {/* Quick action pills */}
-                  <div style={{ display: "flex", gap: 6, marginTop: 4 }}>
-                    <button
-                      onClick={e => { e.stopPropagation(); onNotesClick(e, ch); }}
-                      style={{
-                        display: "flex", alignItems: "center", gap: 3,
-                        background: nRead ? "#ecfdf5" : "transparent",
-                        border: `1px solid ${nRead ? "#10b981" : "var(--border)"}`,
-                        borderRadius: 99, padding: "2px 8px",
-                        fontSize: 10, fontWeight: 700,
-                        color: nRead ? "#059669" : "var(--text-tertiary)",
-                        cursor: "pointer",
-                      }}>
-                      <CheckIcon filled={!!nRead} color="#10b981" />
-                      Notes
-                    </button>
-                    <button
-                      onClick={e => { e.stopPropagation(); onQuizClick(e, ch); }}
-                      style={{
-                        display: "flex", alignItems: "center", gap: 3,
-                        background: qBest !== undefined ? "#eff6ff" : "transparent",
-                        border: `1px solid ${qBest !== undefined ? "#3b82f6" : "var(--border)"}`,
-                        borderRadius: 99, padding: "2px 8px",
-                        fontSize: 10, fontWeight: 700,
-                        color: qBest !== undefined ? "#2563eb" : "var(--text-tertiary)",
-                        cursor: "pointer",
-                      }}>
-                      <CheckIcon filled={qBest !== undefined} color="#3b82f6" />
-                      {qBest !== undefined ? `${qBest}/30` : "Quiz"}
-                    </button>
-                  </div>
+
                 </div>
 
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-tertiary)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>

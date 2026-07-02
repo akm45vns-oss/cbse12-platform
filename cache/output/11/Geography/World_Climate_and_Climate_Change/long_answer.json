@@ -1,0 +1,86 @@
+{
+  "class": "11",
+  "subject": "Geography",
+  "chapter": "World Climate and Climate Change",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-02T11:40:29.323Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the factors that influence the climate of a place. How do these factors interact with each other to produce a variety of climates?",
+        "marks": 5,
+        "answer": "The climate of a place is influenced by several factors, including latitude, altitude, distance from the sea, ocean currents, and prevailing winds. These factors interact with each other to produce a variety of climates. Latitude affects the amount of solar radiation a place receives, with places near the equator receiving more radiation than those near the poles. Altitude also affects climate, with higher places generally being cooler than lower places. Distance from the sea and ocean currents can also impact climate, with coastal areas tend to have milder climates than inland areas. Prevailing winds can also bring heat or cold from other regions, affecting the climate of a place.",
+        "marking_scheme": [
+          "Explanation of the factors that influence climate (2 marks)",
+          "Description of how these factors interact (2 marks)",
+          "Examples of different climates (1 mark)"
+        ],
+        "topic": "Factors influencing climate",
+        "is_numerical": false
+      },
+      {
+        "q": "What are the main characteristics of the tropical savanna climate? Give examples of regions that experience this type of climate.",
+        "marks": 5,
+        "answer": "The tropical savanna climate is characterized by high temperatures and high levels of humidity throughout the year. There are two main seasons: a wet season and a dry season. The wet season is hot and humid, with most of the annual rainfall occurring during this time. The dry season is warm and dry, with little to no rainfall. Examples of regions that experience this type of climate include parts of Africa, such as Senegal and Nigeria, and parts of Australia, such as the Northern Territory.",
+        "marking_scheme": [
+          "Description of the main characteristics of the tropical savanna climate (2 marks)",
+          "Examples of regions that experience this type of climate (2 marks)",
+          "Explanation of the seasons (1 mark)"
+        ],
+        "topic": "Tropical savanna climate",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the impact of global warming on global climate patterns. What are the potential consequences of climate change?",
+        "marks": 5,
+        "answer": "Global warming is causing an increase in global temperatures, leading to changes in climate patterns. This can result in more extreme weather events, such as heatwaves, droughts, and heavy rainfall. Rising temperatures are also causing melting of polar ice caps and glaciers, leading to sea-level rise. The potential consequences of climate change include more frequent natural disasters, water scarcity, and loss of biodiversity. Climate change can also have significant impacts on human health, agriculture, and the economy.",
+        "marking_scheme": [
+          "Description of the impact of global warming on climate patterns (2 marks)",
+          "Explanation of the potential consequences of climate change (2 marks)",
+          "Examples of the impacts of climate change (1 mark)"
+        ],
+        "topic": "Climate change",
+        "is_numerical": false
+      },
+      {
+        "q": "A city has a mean January temperature of 10°C and a mean July temperature of 25°C. Calculate the annual range of temperature.",
+        "marks": 5,
+        "answer": "Calculation: \nAnnual range of temperature = Mean July temperature - Mean January temperature \n= 25°C - 10°C \n= 15°C",
+        "marking_scheme": [
+          "Correct calculation of the annual range of temperature (3 marks)",
+          "Use of correct formula (1 mark)",
+          "Clear presentation of the answer (1 mark)"
+        ],
+        "topic": "Temperature",
+        "is_numerical": true
+      },
+      {
+        "q": "The average annual rainfall in a region is 1000 mm. If the rainfall in a particular year is 1200 mm, calculate the percentage increase in rainfall.",
+        "marks": 5,
+        "answer": "Calculation: \nPercentage increase in rainfall = ((Rainfall in particular year - Average annual rainfall) / Average annual rainfall) * 100 \n= ((1200 mm - 1000 mm) / 1000 mm) * 100 \n= (200 mm / 1000 mm) * 100 \n= 20%",
+        "marking_scheme": [
+          "Correct calculation of the percentage increase in rainfall (3 marks)",
+          "Use of correct formula (1 mark)",
+          "Clear presentation of the answer (1 mark)"
+        ],
+        "topic": "Rainfall",
+        "is_numerical": true
+      },
+      {
+        "q": "A weather station records a temperature of 22°C at 8 am and 30°C at 12 pm. Calculate the rate of change of temperature per hour.",
+        "marks": 5,
+        "answer": "Calculation: \nRate of change of temperature per hour = (Temperature at 12 pm - Temperature at 8 am) / Number of hours \n= (30°C - 22°C) / 4 hours \n= 8°C / 4 hours \n= 2°C per hour",
+        "marking_scheme": [
+          "Correct calculation of the rate of change of temperature per hour (3 marks)",
+          "Use of correct formula (1 mark)",
+          "Clear presentation of the answer (1 mark)"
+        ],
+        "topic": "Temperature",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

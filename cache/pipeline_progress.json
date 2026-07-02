@@ -1,177 +1,177 @@
 {
-  "updated_at": "2026-07-02T11:36:21.244Z",
-  "elapsed_seconds": 540,
-  "rate_per_second": 11.23,
+  "updated_at": "2026-07-02T11:41:01.470Z",
+  "elapsed_seconds": 821,
+  "rate_per_second": 7.4,
   "queue": {
-    "completed": 6066,
-    "pending": 79,
+    "completed": 6073,
+    "pending": 72,
     "inFlight": 5,
     "failed": 0,
-    "retrying": 52,
+    "retrying": 69,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
       "revision": 0,
-      "longAnswers": 27
+      "longAnswers": 3
     }
   },
   "workers": [
     {
       "workerId": "Worker-Physics",
-      "processed": 5,
+      "processed": 7,
       "skipped": 0,
-      "failed": 11,
+      "failed": 16,
       "running": true
     },
     {
       "workerId": "Worker-Chemistry",
-      "processed": 4,
-      "skipped": 0,
-      "failed": 9,
-      "running": true
-    },
-    {
-      "workerId": "Worker-Maths",
-      "processed": 7,
+      "processed": 5,
       "skipped": 0,
       "failed": 14,
       "running": true
     },
     {
-      "workerId": "Worker-Biology",
-      "processed": 9,
+      "workerId": "Worker-Maths",
+      "processed": 8,
       "skipped": 0,
-      "failed": 8,
+      "failed": 17,
+      "running": true
+    },
+    {
+      "workerId": "Worker-Biology",
+      "processed": 10,
+      "skipped": 0,
+      "failed": 10,
       "running": true
     },
     {
       "workerId": "Worker-Other",
-      "processed": 6,
+      "processed": 8,
       "skipped": 0,
-      "failed": 10,
+      "failed": 12,
       "running": true
     }
   ],
   "recent_events": [
     {
-      "workerId": "Worker-Biology",
+      "workerId": "Worker-Physics",
       "status": "generating",
-      "message": "Generating long_answer for Population: Distribution, Density, Growth and Composition (Geography)",
-      "timestamp": "2026-07-02T11:36:12.588Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "done",
-      "message": "✅ Geography/Human Development/pyq_style",
-      "timestamp": "2026-07-02T11:36:12.336Z"
+      "message": "Generating pyq_style for Structure and Physiography (Geography)",
+      "timestamp": "2026-07-02T11:40:32.288Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating pyq_style for International Trade (Geography)",
-      "timestamp": "2026-07-02T11:36:10.503Z"
+      "message": "Generating long_answer for Structure and Physiography (Geography)",
+      "timestamp": "2026-07-02T11:40:32.237Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T11:40:32.053Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:36:10.270Z"
+      "timestamp": "2026-07-02T11:40:31.996Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating pyq_style for Biodiversity and Conservation (Geography)",
+      "timestamp": "2026-07-02T11:40:30.120Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "done",
+      "message": "✅ Geography/World Climate and Climate Change/long_answer",
+      "timestamp": "2026-07-02T11:40:29.774Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating long_answer for Biodiversity and Conservation (Geography)",
+      "timestamp": "2026-07-02T11:40:26.558Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T11:40:25.707Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating long_answer for Movements of Ocean Water (Geography)",
+      "timestamp": "2026-07-02T11:39:28.545Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "done",
+      "message": "✅ Geography/Atmospheric Circulation and Weather Systems/long_answer",
+      "timestamp": "2026-07-02T11:39:28.311Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "generating",
-      "message": "Generating pyq_style for Human Development (Geography)",
-      "timestamp": "2026-07-02T11:36:08.683Z"
+      "message": "Generating pyq_style for Water (Oceans) (Geography)",
+      "timestamp": "2026-07-02T11:39:27.684Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "done",
-      "message": "✅ Geography/Drainage System/important_concepts",
-      "timestamp": "2026-07-02T11:36:08.446Z"
+      "message": "✅ Geography/Water in the Atmosphere/pyq_style",
+      "timestamp": "2026-07-02T11:39:27.458Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating long_answer for World Climate and Climate Change (Geography)",
+      "timestamp": "2026-07-02T11:39:27.056Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T11:39:26.833Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating pyq_style for Water in the Atmosphere (Geography)",
+      "timestamp": "2026-07-02T11:39:25.287Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Validation failed for 11::Geography::Geography as a Discipline::long_answer: Too few items in questions: 0 (minimum 2)",
+      "timestamp": "2026-07-02T11:39:25.071Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "generating",
-      "message": "Generating important_concepts for Natural Hazards and Disasters (Geography)",
-      "timestamp": "2026-07-02T11:36:08.270Z"
+      "message": "Generating pyq_style for Atmospheric Circulation and Weather Systems (Geography)",
+      "timestamp": "2026-07-02T11:39:23.698Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "done",
-      "message": "✅ Geography/Water (Oceans)/difficulty_tags",
-      "timestamp": "2026-07-02T11:36:08.031Z"
+      "message": "✅ Geography/Composition and Structure of Atmosphere/long_answer",
+      "timestamp": "2026-07-02T11:39:23.428Z"
     },
     {
-      "workerId": "Worker-Maths",
+      "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating key_definitions for Soils (Geography)",
-      "timestamp": "2026-07-02T11:36:07.649Z"
+      "message": "Generating long_answer for Atmospheric Circulation and Weather Systems (Geography)",
+      "timestamp": "2026-07-02T11:39:22.996Z"
     },
     {
-      "workerId": "Worker-Maths",
+      "workerId": "Worker-Chemistry",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:36:07.408Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating key_definitions for Natural Vegetation (Geography)",
-      "timestamp": "2026-07-02T11:36:06.730Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "done",
-      "message": "✅ Geography/World Climate and Climate Change/difficulty_tags",
-      "timestamp": "2026-07-02T11:36:06.487Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating important_concepts for Drainage System (Geography)",
-      "timestamp": "2026-07-02T11:36:05.182Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:36:04.921Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "generating",
-      "message": "Generating difficulty_tags for Water (Oceans) (Geography)",
-      "timestamp": "2026-07-02T11:36:03.924Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating key_definitions for India — Location (Geography)",
-      "timestamp": "2026-07-02T11:36:03.924Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:36:02.908Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:36:02.903Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating difficulty_tags for World Climate and Climate Change (Geography)",
-      "timestamp": "2026-07-02T11:35:07.264Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "done",
-      "message": "✅ Geography/Geomorphic Processes/important_concepts",
-      "timestamp": "2026-07-02T11:35:07.026Z"
+      "timestamp": "2026-07-02T11:39:22.766Z"
     }
   ]
 }

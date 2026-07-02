@@ -1,0 +1,81 @@
+{
+  "class": "12",
+  "subject": "Geography",
+  "chapter": "Mineral and Energy Resources",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T11:37:17.360Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the concept of Non-Renewable Energy Resources. Mention their characteristics and provide examples.",
+        "marks": 5,
+        "answer": "Non-Renewable Energy Resources are limited and cannot be replenished in a short period of time. They include coal, oil, and natural gas. Characteristics of Non-Renewable Energy Resources include finite supply, high energy density, and long time required for formation. Examples include petroleum, natural gas, and coal.",
+        "marking_scheme": [
+          "Mention characteristics of Non-Renewable Energy Resources (1 mark)",
+          "Provide examples of Non-Renewable Energy Resources (1 mark)",
+          "Explain the concept of Non-Renewable Energy Resources (3 marks)"
+        ],
+        "topic": "Energy Resources",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the process of coal mining and its different types.",
+        "marks": 5,
+        "answer": "Coal mining is the process of extracting coal from the earth. It involves several steps including exploration, planning, and excavation. There are two main types of coal mining: surface mining and underground mining. Surface mining involves removing soil and rocks to expose coal seams, while underground mining involves digging tunnels to extract coal.",
+        "marking_scheme": [
+          "Describe the process of coal mining (2 marks)",
+          "Explain the different types of coal mining (3 marks)"
+        ],
+        "topic": "Coal and Petroleum",
+        "is_numerical": false
+      },
+      {
+        "q": "What are the advantages and disadvantages of renewable energy sources?",
+        "marks": 5,
+        "answer": "The advantages of renewable energy sources include reduced greenhouse gas emissions, sustainable energy supply, and low operating costs. The disadvantages include intermittent energy supply, high upfront costs, and land requirements. Examples of renewable energy sources include solar, wind, and hydro power.",
+        "marking_scheme": [
+          "Mention the advantages of renewable energy sources (2 marks)",
+          "Explain the disadvantages of renewable energy sources (3 marks)"
+        ],
+        "topic": "Renewable Energy Resources",
+        "is_numerical": false
+      },
+      {
+        "q": "Calculate the amount of energy released when 1000 kg of coal is burnt, given that it releases 33.7 kJ/kg.",
+        "marks": 5,
+        "answer": "Calculation:\n1. Given: mass of coal = 1000 kg, energy released per kg = 33.7 kJ/kg\n2. Calculate the total energy released: energy = mass x energy released per kg\n= 1000 kg x 33.7 kJ/kg\n= 33700 kJ\n= 33.7 MJ",
+        "marking_scheme": [
+          "Calculate the total energy released (4 marks)",
+          "Mention the given values (1 mark)"
+        ],
+        "topic": "Coal and Petroleum",
+        "is_numerical": true
+      },
+      {
+        "q": "A power plant uses 5000 kg of coal per day to generate electricity. If the energy released per kg of coal is 33.7 kJ/kg, calculate the total energy generated per day.",
+        "marks": 5,
+        "answer": "Calculation:\n1. Given: mass of coal per day = 5000 kg, energy released per kg = 33.7 kJ/kg\n2. Calculate the total energy generated per day: energy = mass x energy released per kg\n= 5000 kg x 33.7 kJ/kg\n= 168500 kJ\n= 168.5 MJ",
+        "marking_scheme": [
+          "Calculate the total energy generated per day (4 marks)",
+          "Mention the given values (1 mark)"
+        ],
+        "topic": "Coal and Petroleum",
+        "is_numerical": true
+      },
+      {
+        "q": "A natural gas well produces 2000 m3 of gas per day. If the calorific value of natural gas is 38.6 MJ/m3, calculate the total energy produced per day.",
+        "marks": 5,
+        "answer": "Calculation:\n1. Given: volume of gas per day = 2000 m3, calorific value = 38.6 MJ/m3\n2. Calculate the total energy produced per day: energy = volume x calorific value\n= 2000 m3 x 38.6 MJ/m3\n= 77320 MJ",
+        "marking_scheme": [
+          "Calculate the total energy produced per day (4 marks)",
+          "Mention the given values (1 mark)"
+        ],
+        "topic": "Natural Gas",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}
