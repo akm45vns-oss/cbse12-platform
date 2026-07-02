@@ -1,0 +1,134 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Correlation",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:35:03.787+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because it measures the strength and direction of linear relationship between two variables.",
+        "assertion": "Assertion (A): The value of correlation coefficient lies between -1 and +1.",
+        "explanation": "The correlation coefficient is a statistical measure that determines the strength and direction of the linear relationship between two variables. Its value indeed lies between -1 and +1."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because it is a dimensionless quantity.",
+        "assertion": "Assertion (A): The value of correlation coefficient is independent of the units of measurement of the variables.",
+        "explanation": "The correlation coefficient is a dimensionless quantity, making it independent of the units of measurement of the variables."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because the correlation coefficient is +1.",
+        "assertion": "Assertion (A): A perfect positive correlation between two variables means that as one variable increases, the other variable also increases.",
+        "explanation": "A perfect positive correlation between two variables means that as one variable increases, the other variable also increases. This is indicated by a correlation coefficient of +1."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because outliers can distort the linear relationship between the variables.",
+        "assertion": "Assertion (A): The value of correlation coefficient is affected by the outliers in the data.",
+        "explanation": "The value of correlation coefficient is indeed affected by the outliers in the data, as they can distort the linear relationship between the variables."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because it does not account for non-linear relationships.",
+        "assertion": "Assertion (A): The correlation coefficient measures only the strength of the linear relationship between two variables.",
+        "explanation": "The correlation coefficient measures only the strength of the linear relationship between two variables and does not account for non-linear relationships."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because it measures the strength and direction of the linear relationship between the variables.",
+        "assertion": "Assertion (A): The correlation coefficient can be used to predict the value of one variable based on the value of the other variable.",
+        "explanation": "The correlation coefficient can be used to measure the strength and direction of the linear relationship between two variables, but it should not be used to predict the value of one variable based on the value of the other variable."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because a correlation coefficient of -1 indicates a perfect positive correlation.",
+        "assertion": "Assertion (A): A correlation coefficient of +1 indicates a perfect negative correlation between two variables.",
+        "explanation": "A correlation coefficient of +1 indicates a perfect positive correlation between two variables, not a perfect negative correlation."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because it measures the strength and direction of the linear relationship between the variables.",
+        "assertion": "Assertion (A): The correlation coefficient is a measure of the association between two variables.",
+        "explanation": "The correlation coefficient is indeed a measure of the association between two variables, as it measures the strength and direction of the linear relationship between them."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because it is a dimensionless quantity.",
+        "assertion": "Assertion (A): The correlation coefficient is affected by the scaling of the variables.",
+        "explanation": "The correlation coefficient is a dimensionless quantity, making it unaffected by the scaling of the variables."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because it measures the strength and direction of the linear relationship between the variables.",
+        "assertion": "Assertion (A): The correlation coefficient can be used to test the hypothesis that there is no linear relationship between two variables.",
+        "explanation": "The correlation coefficient can indeed be used to test the hypothesis that there is no linear relationship between two variables, as it measures the strength and direction of the linear relationship between them."
+      }
+    ]
+  }
+}

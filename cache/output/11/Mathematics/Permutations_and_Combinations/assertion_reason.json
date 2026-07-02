@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:28:10.85+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 9,
+    "questions": [
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): It is calculated as n! / (n-r)!",
+        "assertion": "Assertion (A): The number of permutations of 'n' objects taken 'r' at a time is denoted by P(n, r).",
+        "explanation": "The correct formula to calculate the number of permutations of 'n' objects taken 'r' at a time is n! / (n-r)!."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): It is calculated as n! / (r! * (n-r)!).",
+        "assertion": "Assertion (A): The number of combinations of 'n' objects taken 'r' at a time is denoted by C(n, r).",
+        "explanation": "The correct formula to calculate the number of combinations of 'n' objects taken 'r' at a time is n! / (r! * (n-r)!)."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): It is calculated using the formula nPr = n! / (n - r)!.",
+        "assertion": "Assertion (A): The formula for combination is nCr = n! / r! * (n - r)!",
+        "explanation": "The formula for permutation is nPr = n! / (n - r)!. The formula for combination is nCr = n! / r! * (n - r)!. These two formulas are different."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): It is because each of the 'n' objects is unique.",
+        "assertion": "Assertion (A): The number of permutations of 'n' distinct objects is n!. ",
+        "explanation": "The correct explanation of why the number of permutations of 'n' distinct objects is n! is that each of the 'n' objects is unique."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): It is calculated as n! / (n-r)!",
+        "assertion": "Assertion (A): The formula for permutation of 'n' objects taken 'r' at a time is nPr = n! / r!",
+        "explanation": "The correct formula to calculate the number of permutations of 'n' objects taken 'r' at a time is n! / (n-r)!."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): It is because nPr = n! / (n-r)! which equals n! / 0!.",
+        "assertion": "Assertion (A): The value of nPr is maximum when r = n.",
+        "explanation": "The value of nPr is maximum when r = n-1, not n. This is because when r = n-1, nPr = n! / (n-(n-1))! = n! / 1! = n!. So option A is false."
+      },
+      {
+        "ans": "C",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): It is because they both are calculated using factorials.",
+        "assertion": "Assertion (A): The number of permutations of 'n' objects taken 'r' at a time is equal to the number of combinations of 'n' objects taken 'r' at a time.",
+        "explanation": "The number of permutations of 'n' objects taken 'r' at a time is not equal to the number of combinations of 'n' objects taken 'r' at a time. This is because the formula to calculate permutations and combinations are different."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): It is because nPr = n! / (n-r)! and when r = n, nPr = n! / (n-n)! = n! / 0!",
+        "assertion": "Assertion (A): The number of permutations of 'n' distinct objects taken 'r' at a time is equal to the number of permutations of 'n' distinct objects taken 'n' at a time.",
+        "explanation": "The correct explanation of why the number of permutations of 'n' distinct objects taken 'r' at a time is equal to the number of permutations of 'n' distinct objects taken 'n' at a time is that when r = n, nPr = n! / (n-n)! = n! / 0! = n!. However, 0! = 1, so nPr = n!. Therefore, option A is true."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): It is because the formula for permutation is nPr = n! / (n-r)! which is always greater than or equal to the formula for combination nCr = n! / r! * (n - r)!.",
+        "assertion": "Assertion (A): The number of permutations of 'n' distinct objects taken 'r' at a time is always greater than or equal to the number of combinations of 'n' distinct objects taken 'r' at a time.",
+        "explanation": "The correct explanation of why the number of permutations of 'n' distinct objects taken 'r' at a time is always greater than or equal to the number of combinations of 'n' distinct objects taken 'r' at a time is that the formula for permutation is nPr = n! / (n-r)! which is always greater than or equal to the formula for combination nCr = n! / r! * (n - r)!. However, this is not always true. There are cases where the number of permutations of 'n' distinct objects taken 'r' at a time is equal to the number of combinations of 'n' distinct objects taken 'r' at a time, such as when r = n."
+      }
+    ]
+  }
+}

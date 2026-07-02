@@ -1,0 +1,124 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "File Handling",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:25:26.783+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "q": "What is a file in the context of computer science?",
+        "marks": 2,
+        "topic": "Introduction to Files",
+        "answer": "A file is a collection of data stored in a computer system. It can be a text file, image file, audio file, or any other type of data. Files are used to store and manage data in a structured manner.",
+        "key_points": [
+          "Data storage",
+          "File types",
+          "Structured data"
+        ]
+      },
+      {
+        "q": "What is the purpose of the `fs` module in Java?",
+        "marks": 2,
+        "topic": "Java File Handling",
+        "answer": "The `fs` (File System) module in Java provides functions to interact with the file system, such as creating, reading, writing, and deleting files. It is used for file handling operations.",
+        "key_points": [
+          "File interaction",
+          "File operations",
+          "Java fs module"
+        ]
+      },
+      {
+        "q": "What is the difference between `read()` and `readLine()` methods in Java?",
+        "marks": 2,
+        "topic": "Java File Handling",
+        "answer": "The `read()` method reads the entire file into a string, whereas the `readLine()` method reads the file line by line. The `readLine()` method is more efficient for large files.",
+        "key_points": [
+          "File reading",
+          "read() vs readLine()",
+          "Efficiency"
+        ]
+      },
+      {
+        "q": "What is the purpose of the `File` class in Java?",
+        "marks": 2,
+        "topic": "Java File Handling",
+        "answer": "The `File` class represents a file or directory in the file system. It provides methods to perform file operations, such as creating, deleting, and renaming files.",
+        "key_points": [
+          "File representation",
+          "File operations",
+          "Java File class"
+        ]
+      },
+      {
+        "q": "What is a binary file, and how is it different from a text file?",
+        "marks": 2,
+        "topic": "File Types",
+        "answer": "A binary file stores data in its raw binary format, whereas a text file stores data in human-readable format. Binary files are used to store images, audio, and video files.",
+        "key_points": [
+          "Binary files",
+          "Text files",
+          "Data format"
+        ]
+      },
+      {
+        "q": "What is the purpose of the `BufferedReader` class in Java?",
+        "marks": 2,
+        "topic": "Java File Handling",
+        "answer": "The `BufferedReader` class provides methods to read text from a file or other input stream. It is used to improve the efficiency of file reading operations.",
+        "key_points": [
+          "File reading",
+          "BufferedReader",
+          "Efficiency"
+        ]
+      },
+      {
+        "q": "How do you check if a file exists in Java?",
+        "marks": 2,
+        "topic": "Java File Handling",
+        "answer": "You can use the `exists()` method of the `File` class to check if a file exists. If the file exists, the method returns `true`; otherwise, it returns `false`.",
+        "key_points": [
+          "File existence",
+          "exists() method",
+          "Java File class"
+        ]
+      },
+      {
+        "q": "What is the purpose of the `FileInputStream` class in Java?",
+        "marks": 2,
+        "topic": "Java File Handling",
+        "answer": "The `FileInputStream` class represents a stream that provides a way to read from a file. It is used for binary file reading operations.",
+        "key_points": [
+          "File reading",
+          "FileInputStream",
+          "Binary files"
+        ]
+      },
+      {
+        "q": "How do you delete a file in Java?",
+        "marks": 2,
+        "topic": "Java File Handling",
+        "answer": "You can use the `delete()` method of the `File` class to delete a file. If the file exists, the method deletes it; otherwise, it does nothing.",
+        "key_points": [
+          "File deletion",
+          "delete() method",
+          "Java File class"
+        ]
+      },
+      {
+        "q": "What is the purpose of the `FileWriter` class in Java?",
+        "marks": 2,
+        "topic": "Java File Handling",
+        "answer": "The `FileWriter` class provides methods to write text to a file. It is used for creating and writing to text files.",
+        "key_points": [
+          "File writing",
+          "FileWriter",
+          "Text files"
+        ]
+      }
+    ]
+  }
+}

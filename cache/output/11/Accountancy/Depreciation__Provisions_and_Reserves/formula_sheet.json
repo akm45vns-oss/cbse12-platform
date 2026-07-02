@@ -1,0 +1,69 @@
+{
+  "class": "11",
+  "subject": "Accountancy",
+  "chapter": "Depreciation, Provisions and Reserves",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:38:48.438+00:00",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Depreciation Formula",
+        "notes": "This formula is used to calculate depreciation per annum.",
+        "units": "Currency units (e.g. INR)",
+        "formula": "W = (C + A) / N",
+        "variables": "W = Depreciation per annum, C = Cost of asset, A = Annuity for the life of asset, N = Number of years"
+      },
+      {
+        "name": "Reducing Balance Method",
+        "notes": "This method is used to calculate depreciation where asset value decreases by a fixed percentage every year.",
+        "units": "Currency units (e.g. INR)",
+        "formula": "W = C * r / (1 - (1 + r)^(-n))",
+        "variables": "W = Depreciation per annum, C = Cost of asset, r = Rate of depreciation, n = Number of years"
+      },
+      {
+        "name": "Straight Line Method",
+        "notes": "This method is used to calculate depreciation where asset value decreases by an equal amount every year.",
+        "units": "Currency units (e.g. INR)",
+        "formula": "W = C / n",
+        "variables": "W = Depreciation per annum, C = Cost of asset, n = Number of years"
+      },
+      {
+        "name": "Provisions Formula",
+        "notes": "This formula is used to calculate provisions for estimated and accumulated losses.",
+        "units": "Currency units (e.g. INR)",
+        "formula": "Provisions = (Estimated Loss / 5) + (Accumulated Loss / 5)",
+        "variables": "Estimated Loss = Estimated amount of loss, Accumulated Loss = Accumulated amount of loss"
+      },
+      {
+        "name": "Reserves Formula",
+        "notes": "This formula is used to calculate reserves by subtracting dividend from net profit.",
+        "units": "Currency units (e.g. INR)",
+        "formula": "Reserves = Profit - Dividend",
+        "variables": "Profit = Net profit of the company, Dividend = Dividend declared by the company"
+      },
+      {
+        "name": "Statement of Accounting Treatment for Depreciation",
+        "notes": "This statement emphasizes that depreciation is an expense, not a liability, and is deducted from profit to arrive at net profit.",
+        "units": "",
+        "formula": "Depreciation is an expense, not a liability.",
+        "variables": ""
+      },
+      {
+        "name": "Statement of Accounting Treatment for Provisions",
+        "notes": "This statement emphasizes that provisions are recorded as both liabilities and expenses in the same period.",
+        "units": "",
+        "formula": "Provisions are recorded as liabilities and expenses in the same period.",
+        "variables": ""
+      },
+      {
+        "name": "Statement of Accounting Treatment for Reserves",
+        "notes": "This statement emphasizes that reserves are recorded as equity, not liabilities or expenses.",
+        "units": "",
+        "formula": "Reserves are recorded as equity.",
+        "variables": ""
+      }
+    ]
+  }
+}

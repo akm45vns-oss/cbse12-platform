@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:32:45.402+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "In a typical web development project, the functionality of the application is divided among multiple modules. Each module performs a specific task such as user authentication, data storage, and payment processing. The payment processing module requires a function to calculate the total cost of items in a shopping cart. This function takes the cost of each item and the quantity of items as input and returns the total cost. For example, if the cost of an item is $10 and the quantity is 3, the total cost should be $30. If a new item is added to the cart with a cost of $5 and a quantity of 2, the total cost should be updated to $40. The function should also handle cases where the quantity of an item is zero or negative.",
+        "questions": [
+          {
+            "q": "What is the primary function of a module in a web development project?",
+            "ans": "B",
+            "opts": [
+              "(A) To handle user input",
+              "(B) To perform a specific task",
+              "(C) To store data",
+              "(D) To display output"
+            ],
+            "explanation": "A module in a web development project performs a specific task such as user authentication, data storage, and payment processing."
+          },
+          {
+            "q": "What are the inputs for the function that calculates the total cost of items in a shopping cart?",
+            "ans": "A",
+            "opts": [
+              "(A) Cost of each item and quantity of items",
+              "(B) Total cost and quantity of items",
+              "(C) Cost of each item and total cost",
+              "(D) Quantity of items and total cost"
+            ],
+            "explanation": "The function takes the cost of each item and the quantity of items as input to calculate the total cost."
+          },
+          {
+            "q": "What should be the output of the function if the cost of an item is $10 and the quantity is 3?",
+            "ans": "B",
+            "opts": [
+              "(A) $20",
+              "(B) $30",
+              "(C) $40",
+              "(D) $50"
+            ],
+            "explanation": "The total cost should be $10 * 3 = $30."
+          },
+          {
+            "q": "How should the function handle cases where the quantity of an item is zero or negative?",
+            "ans": "C",
+            "opts": [
+              "(A) It should return an error message",
+              "(B) It should return the total cost as zero",
+              "(C) It should update the total cost accordingly",
+              "(D) It should ignore the item"
+            ],
+            "explanation": "The function should handle cases where the quantity of an item is zero or negative by updating the total cost accordingly."
+          },
+          {
+            "q": "What is the primary advantage of dividing the functionality of an application among multiple modules?",
+            "ans": "D",
+            "opts": [
+              "(A) Easier maintenance",
+              "(B) Faster development",
+              "(C) Improved security",
+              "(D) All of the above"
+            ],
+            "explanation": "Dividing the functionality of an application among multiple modules has several advantages, including easier maintenance, faster development, and improved security."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "In a game development project, the game engine requires a function to update the score of a player. The function takes the current score and the points earned as input and returns the updated score. For example, if the current score is 100 and the points earned are 50, the updated score should be 150. If the player loses points, the function should subtract the points from the current score. The function should also handle cases where the points earned are negative.",
+        "questions": [
+          {
+            "q": "What are the inputs for the function that updates the score of a player?",
+            "ans": "A",
+            "opts": [
+              "(A) Current score and points earned",
+              "(B) Updated score and points lost",
+              "(C) Current score and points lost",
+              "(D) Updated score and points earned"
+            ],
+            "explanation": "The function takes the current score and the points earned as input to update the score."
+          },
+          {
+            "q": "What should be the output of the function if the current score is 100 and the points earned are 50?",
+            "ans": "C",
+            "opts": [
+              "(A) 50",
+              "(B) 100",
+              "(C) 150",
+              "(D) 200"
+            ],
+            "explanation": "The updated score should be 100 + 50 = 150."
+          },
+          {
+            "q": "How should the function handle cases where the points earned are negative?",
+            "ans": "C",
+            "opts": [
+              "(A) It should return an error message",
+              "(B) It should return the current score",
+              "(C) It should subtract the points from the current score",
+              "(D) It should ignore the points"
+            ],
+            "explanation": "The function should handle cases where the points earned are negative by subtracting the points from the current score."
+          },
+          {
+            "q": "What is the primary purpose of the function that updates the score of a player?",
+            "ans": "B",
+            "opts": [
+              "(A) To display the score",
+              "(B) To update the score",
+              "(C) To calculate the points earned",
+              "(D) To determine the winner"
+            ],
+            "explanation": "The primary purpose of the function is to update the score of a player based on the points earned."
+          },
+          {
+            "q": "What is the primary advantage of using a function to update the score of a player?",
+            "ans": "D",
+            "opts": [
+              "(A) Easier maintenance",
+              "(B) Faster development",
+              "(C) Improved accuracy",
+              "(D) All of the above"
+            ],
+            "explanation": "Using a function to update the score of a player has several advantages, including easier maintenance, faster development, and improved accuracy."
+          }
+        ]
+      }
+    ]
+  }
+}

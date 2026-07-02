@@ -1,0 +1,115 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Correlation",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:35:06.327+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "q": "Define correlation and explain its importance in economics?",
+        "marks": 3,
+        "topic": "Introduction to Correlation",
+        "answer": "Correlation is a statistical measure used to assess the extent to which two or more variables move together. It is a crucial concept in economics as it helps in understanding the relationship between variables and making predictions. The importance of correlation lies in its ability to identify the direction and strength of the relationship between variables.",
+        "key_points": [
+          "Definition of correlation",
+          "Importance of correlation in economics"
+        ]
+      },
+      {
+        "q": "Distinguish between positive and negative correlation, providing examples from real life?",
+        "marks": 2,
+        "topic": "Types of Correlation",
+        "answer": "Positive correlation exists when two variables tend to move in the same direction, whereas negative correlation exists when they move in opposite directions. For instance, a positive correlation exists between income and expenditure, as an increase in income leads to an increase in expenditure. On the other hand, a negative correlation exists between price and demand, as an increase in price leads to a decrease in demand.",
+        "key_points": [
+          "Positive correlation",
+          "Negative correlation",
+          "Examples from real life"
+        ]
+      },
+      {
+        "q": "Explain the concept of correlation coefficient, including its range and interpretation?",
+        "marks": 3,
+        "topic": "Measuring Correlation",
+        "answer": "The correlation coefficient is a numerical value between -1 and 1 that measures the strength and direction of the relationship between two variables. A value close to 1 indicates a strong positive correlation, while a value close to -1 indicates a strong negative correlation. A value close to 0 indicates no correlation. The correlation coefficient helps in interpreting the relationship between variables.",
+        "key_points": [
+          "Definition of correlation coefficient",
+          "Range and interpretation of correlation coefficient"
+        ]
+      },
+      {
+        "q": "Distinguish between correlation and causation, providing examples from real life?",
+        "marks": 2,
+        "topic": "Correlation vs. Causation",
+        "answer": "Correlation refers to the relationship between two variables, whereas causation refers to a cause-and-effect relationship between them. For instance, a correlation exists between ice cream sales and sunburns, but there is no causation as ice cream sales do not cause sunburns. However, a correlation exists between smoking and lung cancer, and there is causation as smoking causes lung cancer.",
+        "key_points": [
+          "Difference between correlation and causation",
+          "Examples from real life"
+        ]
+      },
+      {
+        "q": "Explain the concept of null hypothesis in the context of correlation analysis?",
+        "marks": 2,
+        "topic": "Hypothesis Testing in Correlation",
+        "answer": "The null hypothesis in correlation analysis states that there is no significant correlation between two variables. It is a statement of no effect or no difference. The null hypothesis is tested against an alternative hypothesis, which states that there is a significant correlation between the variables.",
+        "key_points": [
+          "Definition of null hypothesis",
+          "Context of correlation analysis"
+        ]
+      },
+      {
+        "q": "Describe the process of calculating the correlation coefficient using a scatter plot?",
+        "marks": 3,
+        "topic": "Calculating Correlation Coefficient",
+        "answer": "To calculate the correlation coefficient using a scatter plot, we need to measure the distance between the points and the line of best fit. The correlation coefficient is then calculated using the formula r = Σ[(xi - x̄)(yi - ȳ)] / (n - 1) × Σ(xi - x̄)² × Σ(yi - ȳ)², where xi and yi are the individual data points, x̄ and ȳ are the means of the variables, and n is the number of observations.",
+        "key_points": [
+          "Process of calculating correlation coefficient",
+          "Scatter plot"
+        ]
+      },
+      {
+        "q": "Explain the concept of partial correlation and its application in economics?",
+        "marks": 3,
+        "topic": "Partial Correlation",
+        "answer": "Partial correlation measures the relationship between two variables while controlling for one or more other variables. It is used to identify the direct relationship between two variables while accounting for the effect of other variables. Partial correlation is commonly used in economics to analyze the relationship between variables in a multivariate model.",
+        "key_points": [
+          "Definition of partial correlation",
+          "Application in economics"
+        ]
+      },
+      {
+        "q": "Distinguish between simple and multiple correlation, providing examples from real life?",
+        "marks": 2,
+        "topic": "Simple and Multiple Correlation",
+        "answer": "Simple correlation measures the relationship between two variables, whereas multiple correlation measures the relationship between one variable and two or more variables. For instance, simple correlation exists between income and expenditure, while multiple correlation exists between income, education, and expenditure.",
+        "key_points": [
+          "Difference between simple and multiple correlation",
+          "Examples from real life"
+        ]
+      },
+      {
+        "q": "Explain the concept of correlation matrix and its interpretation?",
+        "marks": 3,
+        "topic": "Correlation Matrix",
+        "answer": "A correlation matrix is a table that displays the correlation coefficients between variables. It helps in visualizing the relationships between variables and identifying patterns. The correlation matrix can be used to identify variables that are highly correlated with each other, which can be useful in data analysis and modeling.",
+        "key_points": [
+          "Definition of correlation matrix",
+          "Interpretation of correlation matrix"
+        ]
+      },
+      {
+        "q": "Discuss the limitations of correlation analysis in economics, including its assumptions?",
+        "marks": 3,
+        "topic": "Limitations of Correlation Analysis",
+        "answer": "Correlation analysis has several limitations in economics, including the assumption of linear relationship, normal distribution of data, and independence of observations. Additionally, correlation analysis does not establish causation and can be affected by outliers and multicollinearity. These limitations should be considered when using correlation analysis in economic research.",
+        "key_points": [
+          "Limitations of correlation analysis",
+          "Assumptions of correlation analysis"
+        ]
+      }
+    ]
+  }
+}

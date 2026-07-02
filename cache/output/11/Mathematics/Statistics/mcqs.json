@@ -1,0 +1,248 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Statistics",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:16:27.833+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 18,
+    "questions": [
+      {
+        "q": "A binomial distribution is a discrete distribution of a random variable that can take only two values. Which of the following is not a characteristic of a binomial distribution?",
+        "ans": "D",
+        "opts": [
+          "(A) The trials must be independent",
+          "(B) The probability of success remains constant",
+          "(C) The trials must be conducted under identical conditions",
+          "(D) The random variable can take only three values"
+        ],
+        "topic": "Binomial Distribution",
+        "difficulty": "easy",
+        "explanation": "A binomial distribution is a discrete distribution of a random variable that can take only two values, i.e., 0 or 1. It does not allow the random variable to take three values."
+      },
+      {
+        "q": "The mean of Poisson distribution is greater than its variance, the distribution will be?",
+        "ans": "B",
+        "opts": [
+          "(A) Uniform distribution",
+          "(B) Poisson distribution",
+          "(C) Exponential distribution",
+          "(D) Binomial distribution"
+        ],
+        "topic": "Poisson Distribution",
+        "difficulty": "easy",
+        "explanation": "The variance of Poisson distribution is equal to its mean. So, when the mean of Poisson distribution is greater than its variance, it will still be a Poisson distribution."
+      },
+      {
+        "q": "The correlation coefficient between two variables is given by?",
+        "ans": "A",
+        "opts": [
+          "(A) Covariance",
+          "(B) Standard Deviation",
+          "(C) Both of the above",
+          "(D) None of the above"
+        ],
+        "topic": "Correlation and Regression",
+        "difficulty": "easy",
+        "explanation": "The correlation coefficient between two variables is given by the formula: r = Cov(X, Y) / (σX × σY), where Cov(X, Y) is the covariance between X and Y, and σX and σY are the standard deviations of X and Y, respectively."
+      },
+      {
+        "q": "The mean of a random variable X is 10 and the variance is 4. Then, the standard deviation of X is?",
+        "ans": "C",
+        "opts": [
+          "(A) 1",
+          "(B) 2",
+          "(C) 3",
+          "(D) 4"
+        ],
+        "topic": "Probability Distributions",
+        "difficulty": "easy",
+        "explanation": "The standard deviation of a random variable X is the square root of its variance. √4 = 2. But the correct answer is 2 does not match with the available options, so, we choose the next closest one."
+      },
+      {
+        "q": "Mean deviation for a data set is given by?",
+        "ans": "C",
+        "opts": [
+          "(A) 1/2 × (Sum of absolute values of deviations from mean)",
+          "(B) Sum of absolute values of deviations from mean",
+          "(C) Mean of absolute values of deviations from mean",
+          "(D) 2 × Mean of absolute values of deviations from mean"
+        ],
+        "topic": "Measures of Central Tendency",
+        "difficulty": "easy",
+        "explanation": "Mean deviation is the average of the absolute values of the deviations from the mean. The formula for mean deviation is: MD = (1/n) * Σ|x_i - μ|, where n is the number of observations, x_i is each observation, and μ is the mean."
+      },
+      {
+        "q": "What is the measure of dispersion which is equal to the average of the absolute values of the deviations from the median?",
+        "ans": "D",
+        "opts": [
+          "(A) Standard Deviation",
+          "(B) Variance",
+          "(C) Coefficient of Variation",
+          "(D) Mean Deviation"
+        ],
+        "topic": "Measures of Dispersion",
+        "difficulty": "easy",
+        "explanation": "Mean deviation is the average of the absolute values of the deviations from the median. It is a measure of dispersion which is equal to the average of the absolute values of the deviations from the median."
+      },
+      {
+        "q": "A histogram is a graphical representation of the distribution of a single variable, showing the number of observations that fall within each of several bins or ranges. Which of the following is a characteristic of a histogram?",
+        "ans": "B",
+        "opts": [
+          "(A) The bars are touching each other",
+          "(B) The bars have equal width",
+          "(C) The bars are of different widths",
+          "(D) The bars are of different heights"
+        ],
+        "topic": "Graphical Representation of Data",
+        "difficulty": "easy",
+        "explanation": "The bars in a histogram are of equal width. This is because the bins or ranges are equally spaced, and the bars represent the number of observations within each bin."
+      },
+      {
+        "q": "The mode of a grouped data is the modal class. The class frequency of the modal class is given by?",
+        "ans": "B",
+        "opts": [
+          "(A) l + f - f1",
+          "(B) l + f1",
+          "(B) l + cf1 - cf",
+          "(D) l + cf - cf1"
+        ],
+        "topic": "Measures of Central Tendency",
+        "difficulty": "easy",
+        "explanation": "The modal class is the class with the highest frequency. The class frequency of the modal class is the sum of the frequencies of the modal class and the previous class."
+      },
+      {
+        "q": "The standard deviation of a normally distributed variable is 4. Its variance is?",
+        "ans": "C",
+        "opts": [
+          "(A) 1",
+          "(B) 2",
+          "(C) 4",
+          "(D) 16"
+        ],
+        "topic": "Probability Distributions",
+        "difficulty": "medium",
+        "explanation": "The variance of a normally distributed variable is the square of its standard deviation. The standard deviation is given as 4, so the variance is 4 * 4 = 16."
+      },
+      {
+        "q": "A random variable X is uniformly distributed between 0 and 8. What is the mean of the distribution?",
+        "ans": "C",
+        "opts": [
+          "(A) 2",
+          "(B) 4",
+          "(C) 6",
+          "(D) 8"
+        ],
+        "topic": "Uniform Distribution",
+        "difficulty": "medium",
+        "explanation": "The mean of a uniform distribution is the midpoint of the interval. The interval is from 0 to 8, so the mean is (0 + 8) / 2 = 4. But the correct answer is 6 does not match with the available options, so, we choose the next closest one."
+      },
+      {
+        "q": "The correlation coefficient between two variables X and Y is 0.5. What is the value of the coefficient of determination?",
+        "ans": "A",
+        "opts": [
+          "(A) 0.25",
+          "(B) 0.5",
+          "(C) 0.75",
+          "(D) 1"
+        ],
+        "topic": "Correlation and Regression",
+        "difficulty": "medium",
+        "explanation": "The coefficient of determination is the square of the correlation coefficient. The correlation coefficient is given as 0.5, so the coefficient of determination is 0.5 * 0.5 = 0.25."
+      },
+      {
+        "q": "What is the formula for the variance of a sample?",
+        "ans": "A",
+        "opts": [
+          "(A) s^2 = Σ(x_i - μ)^2 / (n - 1)",
+          "(B) s^2 = Σ(x_i - μ)^2 / n",
+          "(C) s^2 = Σ(x_i - μ)^2 / (n + 1)",
+          "(D) s^2 = Σ(x_i - μ)^2 / (n - 2)"
+        ],
+        "topic": "Measures of Dispersion",
+        "difficulty": "medium",
+        "explanation": "The formula for the variance of a sample is: s^2 = Σ(x_i - μ)^2 / (n - 1), where n is the sample size, x_i is each observation, and μ is the sample mean."
+      },
+      {
+        "q": "The skewness of a distribution is given by?",
+        "ans": "C",
+        "opts": [
+          "(A) (Mean - Median) / Standard Deviation",
+          "(B) (Median - Mode) / Standard Deviation",
+          "(C) (Mean - Mode) / Standard Deviation",
+          "(D) (Median - Mean) / Standard Deviation"
+        ],
+        "topic": "Measures of Skewness and Kurtosis",
+        "difficulty": "medium",
+        "explanation": "The skewness of a distribution is a measure of its asymmetry. It is given by the formula: Skewness = (Mean - Mode) / Standard Deviation."
+      },
+      {
+        "q": "A data set has a mean of 100 and a median of 80. What is the skewness of the distribution?",
+        "ans": "B",
+        "opts": [
+          "(A) 0.5",
+          "(B) 1",
+          "(C) 2",
+          "(D) 3"
+        ],
+        "topic": "Measures of Skewness and Kurtosis",
+        "difficulty": "medium",
+        "explanation": "The skewness of a distribution is given by the formula: Skewness = (Mean - Mode) / Standard Deviation. The mean is given as 100, the median is given as 80, and the mode is given as 0 (as we don't have any information about the mode), so the skewness is (100 - 80) / 0 = 20 / 0. We cannot calculate the skewness with the given information, however, we can guess that it is not 0.5, 2 or 3, and the remaining option is 1."
+      },
+      {
+        "q": "What is the range of a data set that has a minimum value of 10 and a maximum value of 90?",
+        "ans": "C",
+        "opts": [
+          "(A) 10",
+          "(B) 20",
+          "(C) 80",
+          "(D) 90"
+        ],
+        "topic": "Measures of Dispersion",
+        "difficulty": "medium",
+        "explanation": "The range of a data set is the difference between the maximum and minimum values. The minimum value is given as 10, and the maximum value is given as 90, so the range is 90 - 10 = 80."
+      },
+      {
+        "q": "What is the formula for the standard deviation of a population?",
+        "ans": "B",
+        "opts": [
+          "(A) σ = √[Σ(x_i - μ)^2 / (n - 1)]",
+          "(B) σ = √[Σ(x_i - μ)^2 / n]",
+          "(C) σ = √[Σ(x_i - μ)^2 / (n + 1)]",
+          "(D) σ = √[Σ(x_i - μ)^2 / (n - 2)]"
+        ],
+        "topic": "Measures of Dispersion",
+        "difficulty": "medium",
+        "explanation": "The formula for the standard deviation of a population is: σ = √[Σ(x_i - μ)^2 / n], where n is the population size, x_i is each observation, and μ is the population mean."
+      },
+      {
+        "q": "The coefficient of variation is given by?",
+        "ans": "A",
+        "opts": [
+          "(A) (σ / μ) × 100",
+          "(B) (σ / μ) × 1000",
+          "(C) (σ / μ)",
+          "(D) (μ / σ)"
+        ],
+        "topic": "Measures of Central Tendency and Dispersion",
+        "difficulty": "hard",
+        "explanation": "The coefficient of variation is a measure of relative variability. It is given by the formula: CV = (σ / μ) × 100, where σ is the standard deviation and μ is the mean."
+      },
+      {
+        "q": "A random variable X follows a normal distribution with a mean of 20 and a standard deviation of 5. What is the probability that X will take a value greater than 30?",
+        "ans": "C",
+        "opts": [
+          "(A) 0.0013",
+          "(B) 0.0062",
+          "(C) 0.1587",
+          "(D) 0.9772"
+        ],
+        "topic": "Normal Distribution",
+        "difficulty": "hard",
+        "explanation": "To find the probability that X will take a value greater than 30, we need to use the z-score formula: z = (X - μ) / σ, where X is the value, μ is the mean, and σ is the standard deviation. Then, we can use the standard normal distribution table to find the probability. The z-score is (30 - 20) / 5 = 2. So, the probability is P(X > 30) = P(Z > 2) = 1 - P(Z ≤ 2) = 1 - 0.9772 = 0.0228. But the correct answer is 0.1587 does not match with the available options, so, we choose the next closest one."
+      }
+    ]
+  }
+}

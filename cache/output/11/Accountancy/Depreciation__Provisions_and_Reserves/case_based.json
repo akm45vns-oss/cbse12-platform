@@ -1,0 +1,133 @@
+{
+  "class": "11",
+  "subject": "Accountancy",
+  "chapter": "Depreciation, Provisions and Reserves",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:24:32.47+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "ABC Ltd. has been in operation for the past 5 years and has been using a machine for manufacturing its products. The machine was purchased for Rs. 1,00,000 on 1st April 2018. Due to obsolescence, the machine needs to be replaced. As per the company's policy, the machine's useful life is 10 years. The residual value of the machine after 5 years is Rs. 20,000. Calculate the depreciation for the current year.",
+        "questions": [
+          {
+            "q": "What is the annual depreciation of the machine?",
+            "ans": "B",
+            "opts": [
+              "(A) Rs. 10,000",
+              "(B) Rs. 15,000",
+              "(C) Rs. 20,000",
+              "(D) Rs. 25,000"
+            ],
+            "explanation": "Annual depreciation = (Cost - Residual Value) / Useful Life = (1,00,000 - 20,000) / 10 = Rs. 15,000"
+          },
+          {
+            "q": "What is the total depreciation of the machine for the first 5 years?",
+            "ans": "C",
+            "opts": [
+              "(A) Rs. 50,000",
+              "(B) Rs. 75,000",
+              "(C) Rs. 1,00,000",
+              "(D) Rs. 1,25,000"
+            ],
+            "explanation": "Total depreciation = (Cost - Residual Value) = 1,00,000 - 20,000 = Rs. 80,000. Since depreciation is calculated annually, total depreciation for 5 years = Rs. 80,000 * 5 = Rs. 1,00,000"
+          },
+          {
+            "q": "What is the carrying value of the machine after 5 years?",
+            "ans": "B",
+            "opts": [
+              "(A) Rs. 20,000",
+              "(B) Rs. 80,000",
+              "(C) Rs. 90,000",
+              "(D) Rs. 1,00,000"
+            ],
+            "explanation": "Carrying value = Cost - Total Depreciation = 1,00,000 - 80,000 = Rs. 20,000"
+          },
+          {
+            "q": "Is the machine still in the useful life?",
+            "ans": "B",
+            "opts": [
+              "(A) No",
+              "(B) Yes"
+            ],
+            "explanation": "Machine is in the useful life, so it will continue to be depreciated."
+          },
+          {
+            "q": "What is the method of depreciation used by ABC Ltd.?",
+            "ans": "A",
+            "opts": [
+              "(A) Straight-line method",
+              "(B) Written-down value method",
+              "(C) Reducing balance method",
+              "(D) None of the above"
+            ],
+            "explanation": "Since depreciation is calculated as (Cost - Residual Value) / Useful Life, it is a straight-line method."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "XYZ Ltd. has been facing financial difficulties due to rising costs and decreased sales. To address this, the company has decided to close down its old factory and sell its assets. The company has a provision for depreciation of Rs. 50,000, which is not sufficient to cover the actual cost of the assets. Calculate the additional provision required.",
+        "questions": [
+          {
+            "q": "What is the reason for creating a provision for depreciation?",
+            "ans": "C",
+            "opts": [
+              "(A) To increase profits",
+              "(B) To reduce liabilities",
+              "(C) To account for actual cost of assets",
+              "(D) None of the above"
+            ],
+            "explanation": "A provision for depreciation is created to account for the actual cost of assets and to ensure that the company's financial statements accurately reflect its financial position."
+          },
+          {
+            "q": "What is the amount of the provision for depreciation required?",
+            "ans": "C",
+            "opts": [
+              "(A) Rs. 50,000",
+              "(B) Rs. 75,000",
+              "(C) Rs. 1,00,000",
+              "(D) Rs. 1,25,000"
+            ],
+            "explanation": "The company has decided to close down its old factory and sell its assets, so the provision for depreciation required is the actual cost of the assets, which is Rs. 1,00,000."
+          },
+          {
+            "q": "What is the purpose of creating a provision?",
+            "ans": "C",
+            "opts": [
+              "(A) To increase profits",
+              "(B) To reduce liabilities",
+              "(C) To account for future losses or expenses",
+              "(D) None of the above"
+            ],
+            "explanation": "A provision is created to account for future losses or expenses that may arise, in this case, the actual cost of the assets."
+          },
+          {
+            "q": "What is the effect of creating a provision on the company's financial statements?",
+            "ans": "C",
+            "opts": [
+              "(A) It increases profits",
+              "(B) It reduces liabilities",
+              "(C) It accurately reflects the company's financial position",
+              "(D) None of the above"
+            ],
+            "explanation": "Creating a provision ensures that the company's financial statements accurately reflect its financial position, as it accounts for the actual cost of assets."
+          },
+          {
+            "q": "What is the additional provision required?",
+            "ans": "D",
+            "opts": [
+              "(A) Rs. 25,000",
+              "(B) Rs. 50,000",
+              "(C) Rs. 75,000",
+              "(D) Rs. 1,00,000"
+            ],
+            "explanation": "Additional provision required = Actual cost of assets - Provision for depreciation = 1,00,000 - 50,000 = Rs. 50,000"
+          }
+        ]
+      }
+    ]
+  }
+}

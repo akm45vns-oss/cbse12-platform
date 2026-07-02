@@ -1,0 +1,74 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Probability",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T07:28:32.744+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "A random experiment consists of rolling a fair six-sided die. Suppose we are interested in the probability of getting a number greater than 4. Describe the sample space and the event of interest. Also, calculate the probability of the event using the formula P(E) = (Number of favorable outcomes)/(Total number of possible outcomes).",
+        "marks": 5,
+        "topic": "Random Experiments and Sample Spaces",
+        "answer": "The sample space S for rolling a fair six-sided die consists of the following outcomes: {1, 2, 3, 4, 5, 6}. The event of interest E is to get a number greater than 4. Therefore, the favorable outcomes are {5, 6}. There are 2 favorable outcomes and the total number of possible outcomes is 6. Hence, P(E) = 2/6 = 1/3.",
+        "marking_scheme": [
+          "Describe the sample space S for the given experiment (1 mark)",
+          "Identify the event of interest E and list the favorable outcomes (1 mark)",
+          "Calculate the probability of the event E using the formula P(E) = (Number of favorable outcomes)/(Total number of possible outcomes) (2 marks)",
+          "Justify the answer with a brief explanation (1 mark)"
+        ]
+      },
+      {
+        "q": "A coin is tossed three times. Find the probability of getting exactly two heads.",
+        "marks": 5,
+        "topic": "Random Experiments and Sample Spaces",
+        "answer": "The sample space S for tossing a coin three times consists of the following outcomes: {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}. The event of interest E is to get exactly two heads. Therefore, the favorable outcomes are {HHT, HTH, THH}. There are 3 favorable outcomes and the total number of possible outcomes is 8. Hence, P(E) = 3/8.",
+        "marking_scheme": [
+          "List the sample space S for the given experiment (1 mark)",
+          "Identify the event of interest E and list the favorable outcomes (1 mark)",
+          "Calculate the probability of the event E using the formula P(E) = (Number of favorable outcomes)/(Total number of possible outcomes) (2 marks)",
+          "Justify the answer with a brief explanation (1 mark)"
+        ]
+      },
+      {
+        "q": "A box contains 5 red balls and 7 green balls. One ball is drawn at random. If the ball drawn is red, it is not replaced. If the ball drawn is green, it is replaced. Find the probability that the ball drawn is red in the second draw.",
+        "marks": 5,
+        "topic": "Conditional Probability",
+        "answer": "The probability of drawing a red ball in the first draw is 5/12. If the ball drawn is red, it is not replaced, so the probability of drawing a red ball in the second draw is 4/11. Therefore, the probability that the ball drawn is red in the second draw is P(R2) = (4/11) × (5/12) = 20/132 = 5/33.",
+        "marking_scheme": [
+          "Calculate the probability of drawing a red ball in the first draw (1 mark)",
+          "Explain the condition for the second draw (1 mark)",
+          "Calculate the probability of drawing a red ball in the second draw (2 marks)",
+          "Justify the answer with a brief explanation (1 mark)"
+        ]
+      },
+      {
+        "q": "Two events A and B are such that P(A) = 0.4, P(B) = 0.3, and P(A ∩ B) = 0.1. Find the probability of the union of the two events.",
+        "marks": 5,
+        "topic": "Probability of Union and Intersection of Events",
+        "answer": "The probability of the union of two events A and B can be calculated using the formula P(A ∪ B) = P(A) + P(B) - P(A ∩ B). Substituting the given values, P(A ∪ B) = 0.4 + 0.3 - 0.1 = 0.6.",
+        "marking_scheme": [
+          "Given P(A) and P(B), calculate P(A ∪ B) using the formula (1 mark)",
+          "Justify the answer with a brief explanation (1 mark)",
+          "Explain the concept of the union of two events (2 marks)",
+          "State the formula for the union of two events (1 mark)"
+        ]
+      },
+      {
+        "q": "Two cards are drawn at random from a pack of 52 well-shuffled cards. Find the probability that the first card is a king and the second card is a queen.",
+        "marks": 5,
+        "topic": "Conditional Probability",
+        "answer": "The probability of drawing a king as the first card is 4/52. If the first card is a king, there are 51 cards left in the pack and 4 of them are queens. Therefore, the probability of drawing a queen as the second card is 4/51. Hence, the probability that the first card is a king and the second card is a queen is P(K1 ∩ Q2) = (4/52) × (4/51) = 16/2652 = 4/663.",
+        "marking_scheme": [
+          "Calculate the probability of drawing a king as the first card (1 mark)",
+          "Explain the condition for the second draw (1 mark)",
+          "Calculate the probability of drawing a queen as the second card (2 marks)",
+          "Justify the answer with a brief explanation (1 mark)"
+        ]
+      }
+    ]
+  }
+}

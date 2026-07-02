@@ -1,0 +1,124 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:26:21.739+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Rohit is the database administrator of a popular e-commerce website. He has been tasked with designing a database for the company's new product database. The product database will store information about various products, including their names, descriptions, prices, and quantities in stock. Rohit has decided to use a relational database management system and has chosen to use SQL as the query language. He needs to create a table to store the product information. The table should have columns for product ID, product name, product description, price, and quantity in stock. Rohit wants to ensure that the product ID is unique for each product and that the quantity in stock is always a non-negative integer.",
+        "questions": [
+          {
+            "q": "What is the primary key constraint for the product ID column?",
+            "ans": "A",
+            "opts": [
+              "(A) PRIMARY KEY",
+              "(B) UNIQUE",
+              "(C) NOT NULL",
+              "(D) CHECK"
+            ],
+            "explanation": "The primary key constraint is used to ensure that the product ID is unique for each product."
+          },
+          {
+            "q": "What data type should be used for the quantity in stock column?",
+            "ans": "A",
+            "opts": [
+              "(A) INT",
+              "(B) FLOAT",
+              "(C) CHAR",
+              "(D) VARCHAR"
+            ],
+            "explanation": "The quantity in stock should be a non-negative integer, which can be stored using the INT data type."
+          },
+          {
+            "q": "What SQL statement would Rohit use to create the product table?",
+            "ans": "A",
+            "opts": [
+              "(A) CREATE TABLE product (product_id INT PRIMARY KEY, product_name VARCHAR(255), product_description TEXT, price DECIMAL(10, 2), quantity INT NOT NULL);",
+              "(B) CREATE TABLE product (product_id INT UNIQUE, product_name VARCHAR(255), product_description TEXT, price DECIMAL(10, 2), quantity INT NOT NULL);",
+              "(C) CREATE TABLE product (product_id INT NOT NULL, product_name VARCHAR(255), product_description TEXT, price DECIMAL(10, 2), quantity INT);",
+              "(D) CREATE TABLE product (product_id INT PRIMARY KEY, product_name VARCHAR(255), product_description TEXT, price DECIMAL(10, 2));"
+            ],
+            "explanation": "The correct SQL statement to create the product table is the one that specifies the product ID as the primary key and the quantity in stock as a non-negative integer."
+          },
+          {
+            "q": "What is the purpose of the NOT NULL constraint for the quantity in stock column?",
+            "ans": "B",
+            "opts": [
+              "(A) To ensure that the quantity in stock is always a non-negative integer.",
+              "(B) To prevent the quantity in stock from being null.",
+              "(C) To ensure that the quantity in stock is always a positive integer.",
+              "(D) To ensure that the quantity in stock is always a negative integer."
+            ],
+            "explanation": "The NOT NULL constraint is used to prevent the quantity in stock from being null, ensuring that a value is always entered for this column."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "Rahul is a data analyst for a marketing firm. He needs to analyze sales data for the past quarter. The sales data is stored in a database with a table called sales. The sales table has columns for sales ID, product ID, sales date, quantity sold, and revenue. Rahul wants to retrieve the total revenue for each product sold in the past quarter.",
+        "questions": [
+          {
+            "q": "What SQL statement would Rahul use to retrieve the total revenue for each product sold in the past quarter?",
+            "ans": "A",
+            "opts": [
+              "(A) SELECT product_id, SUM(revenue) FROM sales WHERE sales_date >= '2022-01-01' AND sales_date <= '2022-03-31' GROUP BY product_id;",
+              "(B) SELECT product_id, SUM(revenue) FROM sales WHERE sales_date >= '2022-01-01' GROUP BY product_id;",
+              "(C) SELECT product_id, SUM(revenue) FROM sales WHERE sales_date >= '2022-01-01' GROUP BY sales_date;",
+              "(D) SELECT product_id, SUM(revenue) FROM sales WHERE sales_date >= '2022-01-01';"
+            ],
+            "explanation": "The correct SQL statement to retrieve the total revenue for each product sold in the past quarter is the one that filters the sales data for the past quarter and groups the results by product ID."
+          },
+          {
+            "q": "What is the purpose of the GROUP BY clause in the SQL statement?",
+            "ans": "A",
+            "opts": [
+              "(A) To group the sales data by product ID.",
+              "(B) To filter the sales data for the past quarter.",
+              "(C) To sort the sales data in ascending order.",
+              "(D) To retrieve the total revenue for each product sold."
+            ],
+            "explanation": "The GROUP BY clause is used to group the sales data by product ID, allowing Rahul to retrieve the total revenue for each product sold."
+          },
+          {
+            "q": "What is the purpose of the SUM function in the SQL statement?",
+            "ans": "B",
+            "opts": [
+              "(A) To calculate the average revenue for each product sold.",
+              "(B) To calculate the total revenue for each product sold.",
+              "(C) To calculate the minimum revenue for each product sold.",
+              "(D) To calculate the maximum revenue for each product sold."
+            ],
+            "explanation": "The SUM function is used to calculate the total revenue for each product sold, allowing Rahul to retrieve the desired data."
+          },
+          {
+            "q": "What is the purpose of the WHERE clause in the SQL statement?",
+            "ans": "B",
+            "opts": [
+              "(A) To group the sales data by product ID.",
+              "(B) To filter the sales data for the past quarter.",
+              "(C) To sort the sales data in ascending order.",
+              "(D) To retrieve the total revenue for each product sold."
+            ],
+            "explanation": "The WHERE clause is used to filter the sales data for the past quarter, ensuring that only relevant data is retrieved."
+          },
+          {
+            "q": "What data type should be used for the sales date column?",
+            "ans": "B",
+            "opts": [
+              "(A) INT",
+              "(B) DATE",
+              "(C) TIME",
+              "(D) TIMESTAMP"
+            ],
+            "explanation": "The sales date column should be of type DATE to accurately store and retrieve dates."
+          }
+        ]
+      }
+    ]
+  }
+}

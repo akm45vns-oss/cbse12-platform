@@ -1,0 +1,68 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Mathematical Reasoning",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:09:33.927+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "a. State and explain the rules of inference for 'Modus Ponens' and 'Modus Tollens'.<br>b. Also, give an example to illustrate the validity of each rule.",
+        "marks": 5,
+        "topic": "Mathematical Reasoning - Rules of Inference",
+        "answer": "Modus Ponens: It is a rule of inference that states if we have two statements p and 'if p then q', then we can conclude that q is true. The rule can be expressed as: <br>p, if p then q ∴ q. <br><br>Modus Tollens: It is another rule of inference that states if we have two statements 'if p then q' and not q, then we can conclude that not p is true. The rule can be expressed as: <br>if p then q, not q ∴ not p. <br><br>Example for Modus Ponens: Let p be the statement 'It is raining' and q be 'The road is slippery'. Now, we know that if it's raining, the road is slippery. So, if we have the statements 'It is raining' and 'if it's raining then the road is slippery', we can conclude that the road is slippery. <br><br>Example for Modus Tollens: Let p be the statement 'It is raining' and q be 'The road is slippery'. Now, we know that if it's raining, the road is slippery. So, if we have the statements 'if it's raining then the road is slippery' and 'The road is not slippery', we can conclude that it is not raining.",
+        "marking_scheme": [
+          "Explain the rule of Modus Ponens (1 mark)",
+          "Explain the rule of Modus Tollens (1 mark)",
+          "Provide examples to illustrate the validity of each rule (3 marks)"
+        ]
+      },
+      {
+        "q": "a. Explain the concept of Converse and Contrapositive of a statement.<br>b. Also, give an example to illustrate the relationship between the original statement and its converse and contrapositive.",
+        "marks": 5,
+        "topic": "Mathematical Reasoning - Converse and Contrapositive",
+        "answer": "Converse of a statement: The converse of a statement 'if p then q' is the statement 'if q then p'. <br>Contrapositive of a statement: The contrapositive of a statement 'if p then q' is the statement 'if not q then not p'. <br><br>Relationship between the original statement and its converse and contrapositive: The converse of a statement is not logically equivalent to the original statement, whereas the contrapositive is logically equivalent to the original statement. <br><br>Example: Let p be the statement 'It is raining' and q be 'The road is slippery'. Now, the original statement is 'If it's raining, then the road is slippery'. The converse of this statement is 'If the road is slippery, then it's raining'. The contrapositive of this statement is 'If the road is not slippery, then it's not raining'.",
+        "marking_scheme": [
+          "Explain the concept of converse and contrapositive (2 marks)",
+          "Provide examples to illustrate the relationship between the original statement and its converse and contrapositive (3 marks)"
+        ]
+      },
+      {
+        "q": "a. State and explain the rules of inference for 'Hypothetical Syllogism' and 'Disjunctive Syllogism'.<br>b. Also, give an example to illustrate the validity of each rule.",
+        "marks": 5,
+        "topic": "Mathematical Reasoning - Rules of Inference",
+        "answer": "Hypothetical Syllogism: It is a rule of inference that states if we have two statements 'if p then q' and 'if q then r', then we can conclude that 'if p then r'. The rule can be expressed as: <br>if p then q, if q then r ∴ if p then r. <br><br>Disjunctive Syllogism: It is another rule of inference that states if we have two statements 'p or q' and not p, then we can conclude that q is true. The rule can be expressed as: <br>p or q, not p ∴ q. <br><br>Example for Hypothetical Syllogism: Let p be the statement 'It is raining', q be 'The road is slippery', and r be 'The road is not safe'. Now, we know that if it's raining, the road is slippery, and if the road is slippery, it is not safe. So, if we have the statements 'if it's raining then the road is slippery' and 'if the road is slippery then the road is not safe', we can conclude that 'if it's raining then the road is not safe'. <br><br>Example for Disjunctive Syllogism: Let p be the statement 'It is raining' and q be 'The road is slippery'. Now, we know that it is either raining or the road is slippery. So, if we have the statements 'it is either raining or the road is slippery' and 'it is not raining', we can conclude that the road is slippery.",
+        "marking_scheme": [
+          "Explain the rule of Hypothetical Syllogism (1 mark)",
+          "Explain the rule of Disjunctive Syllogism (1 mark)",
+          "Provide examples to illustrate the validity of each rule (3 marks)"
+        ]
+      },
+      {
+        "q": "a. Explain the concept of Validity of an argument.<br>b. Also, state and explain the rules for constructing a valid argument.<br>c. Illustrate with examples.",
+        "marks": 5,
+        "topic": "Mathematical Reasoning - Validity of an Argument",
+        "answer": "Validity of an argument: An argument is said to be valid if its conclusion follows necessarily from its premises. <br><br>Rules for constructing a valid argument: <br>Rule 1: If the conclusion of an argument is true, then at least one of its premises must be true. <br>Rule 2: If the conclusion of an argument is false, then at least one of its premises must be false. <br>Rule 3: If the premises of an argument are true, then the conclusion must be true. <br>Rule 4: If the premises of an argument are false, then the conclusion must be false. <br><br>Example 1: The argument 'All humans are mortal, Socrates is human ∴ Socrates is mortal' is valid because the conclusion follows necessarily from the premises. <br><br>Example 2: The argument 'All humans are mortal, Socrates is immortal ∴ Socrates is mortal' is invalid because the conclusion does not follow necessarily from the premises.",
+        "marking_scheme": [
+          "Explain the concept of validity of an argument (2 marks)",
+          "State and explain the rules for constructing a valid argument (2 marks)",
+          "Illustrate with examples (1 mark)"
+        ]
+      },
+      {
+        "q": "a. State and explain the rules of inference for 'Addition' and 'Subtraction'.<br>b. Also, give an example to illustrate the validity of each rule.",
+        "marks": 5,
+        "topic": "Mathematical Reasoning - Rules of Inference",
+        "answer": "Addition: It is a rule of inference that states if we have a statement p, then we can conclude that p or q for any statement q. The rule can be expressed as: <br>p ∴ p or q. <br><br>Subtraction: It is another rule of inference that states if we have a statement p or q, and we also have not p, then we can conclude that q is true. The rule can be expressed as: <br>p or q, not p ∴ q. <br><br>Example for Addition: Let p be the statement 'It is raining'. Now, we know that if it's raining, then it is either raining or the sun is shining. So, if we have the statement 'It is raining', we can conclude that 'It is either raining or the sun is shining'. <br><br>Example for Subtraction: Let p be the statement 'It is raining' and q be 'The road is slippery'. Now, we know that it is either raining or the road is slippery. So, if we have the statements 'it is either raining or the road is slippery' and 'it is not raining', we can conclude that the road is slippery.",
+        "marking_scheme": [
+          "Explain the rule of Addition (1 mark)",
+          "Explain the rule of Subtraction (1 mark)",
+          "Provide examples to illustrate the validity of each rule (3 marks)"
+        ]
+      }
+    ]
+  }
+}

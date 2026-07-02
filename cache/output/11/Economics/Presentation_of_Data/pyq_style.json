@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Presentation of Data",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:50:54.269+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "q": "The following data represents the number of houses in a village for the years 2015, 2016, 2017 and 2018. Year-wise data is as follows: 2015: 1000, 2016: 1100, 2017: 1050, 2018: 1200. What is the average rate of change of houses from 2015 to 2018?",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Average rate of change = (Change in number of houses)/(Change in years) = (1200 - 1000)/(2018 - 2015) = 200/3",
+        "difficulty": "easy",
+        "year_pattern": "2019-style"
+      },
+      {
+        "q": "The following table shows the data on production of wheat (in thousand tonnes) for some years. Year-wise data is as follows: 2013: 150, 2014: 160, 2015: 170, 2016: 180, 2017: 190. If the average rate of change in production of wheat from 2013 to 2016 is 10, then find the average rate of change from 2015 to 2017.",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "20",
+        "difficulty": "medium",
+        "year_pattern": "2018-style"
+      },
+      {
+        "q": "Find the mode of the following data: 10, 6, 8, 10, 8, 4, 9, 8, 9, 9.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The mode of the given data is 9.",
+        "difficulty": "easy",
+        "year_pattern": "2020-style"
+      },
+      {
+        "q": "The following table shows the data on the number of students who appeared in an exam in different years. Year-wise data is as follows: Year 2015: 100, Year 2016: 110, Year 2017: 120, Year 2018: 130. If the median of the given data is 115, then find the mode.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "130",
+        "difficulty": "hard",
+        "year_pattern": "2017-style"
+      },
+      {
+        "q": "Find the median of the following data: 6, 4, 8, 12, 10, 8, 12, 9, 9, 9.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The median of the given data is 9.",
+        "difficulty": "easy",
+        "year_pattern": "2016-style"
+      },
+      {
+        "q": "The following table shows the data on the number of people living in a city. Year-wise data is as follows: Year 2015: 1000, Year 2016: 1100, Year 2017: 1050, Year 2018: 1200. If the average rate of change in number of people living in the city from 2015 to 2018 is 25, then find the range of the given data.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Range = Maximum value - Minimum value = 1200 - 1000 = 200.",
+        "difficulty": "medium",
+        "year_pattern": "2021-style"
+      },
+      {
+        "q": "Find the mean of the following data: 6, 8, 10, 12, 14, 16.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The mean of the given data is 10.",
+        "difficulty": "easy",
+        "year_pattern": "2015-style"
+      },
+      {
+        "q": "The following table shows the data on the production of wheat (in thousand tonnes) for some years. Year-wise data is as follows: 2015: 150, 2016: 160, 2017: 170, 2018: 180, 2019: 190. If the median of the given data is 165, then find the mode.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "170",
+        "difficulty": "hard",
+        "year_pattern": "2014-style"
+      },
+      {
+        "q": "Find the mode of the following data: 4, 6, 8, 10, 8, 6, 4.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The mode of the given data is 6.",
+        "difficulty": "easy",
+        "year_pattern": "2013-style"
+      },
+      {
+        "q": "The following table shows the data on the number of students who appeared in an exam in different years. Year-wise data is as follows: Year 2015: 100, Year 2016: 110, Year 2017: 120, Year 2018: 130. If the average rate of change in number of students who appeared in the exam from 2015 to 2018 is 15, then find the range of the given data.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Range = Maximum value - Minimum value = 130 - 100 = 30.",
+        "difficulty": "medium",
+        "year_pattern": "2012-style"
+      }
+    ]
+  }
+}

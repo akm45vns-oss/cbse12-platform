@@ -1,0 +1,20 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Emerging Trends",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:13:57.533+00:00",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Content",
+        "notes": "",
+        "units": "",
+        "formula": "Since I couldn't find information on the specific formulas used in CBSE Class 11 Computer Science - Emerging Trends, I'll provide a generic formula sheet that might be useful for the topic. Please note that this is not a comprehensive list and might not cover all the required formulas.\n\n```json\n[\n  {\n    \"name\": \"Algorithm Efficiency\",\n    \"formula\": \"Big O notation: O(n), O(n log n), O(1), O(log n), O(n^2)\",\n    \"variables\": \"n - size of input, log n - logarithm of n, 1 - constant factor\",\n    \"units\": \"\",\n    \"notes\": \"Used to measure the time and space complexity of algorithms.\"\n  },\n  {\n    \"name\": \"Time Complexity\",\n    \"formula\": \"T(n) = a*n^b + c (for n >= n0)\",\n    \"variables\": \"T(n) - time complexity, a - leading coefficient, n - size of input, b - exponent, c - constant term, n0 - lower bound\",\n    \"units\": \"seconds, milliseconds, etc.\",\n    \"notes\": \"Used to analyze the running time of algorithms.\"\n  },\n  {\n    \"name\": \"Space Complexity\",\n    \"formula\": \"S(n) = a*n^b + c (for n >= n0)\",\n    \"variables\": \"S(n) - space complexity, a - leading coefficient, n - size of input, b - exponent, c - constant term, n0 - lower bound\",\n    \"units\": \"bytes, kilobytes, etc.\",\n    \"notes\": \"Used to analyze the memory usage of algorithms.\"\n  },\n  {\n    \"name\": \"Average Time Complexity\",\n    \"formula\": \"T(n) = (a*n^b + c) / n\",\n    \"variables\": \"T(n) - average time complexity, a - leading coefficient, n - size of input, b - exponent, c - constant term\",\n    \"units\": \"seconds, milliseconds, etc.\",\n    \"notes\": \"Used to analyze the average running time of algorithms.\"\n  },\n  {\n    \"name\": \"Big Omega Notation\",\n    \"formula\": \"Ω(n)\",\n    \"variables\": \"n - size of input\",\n    \"units\": \"\",\n    \"notes\": \"Used to represent the lower bound of time or space complexity.\"\n  },\n  {\n    \"name\": \"Big Theta Notation\",\n    \"formula\": \"Θ(n)\",\n    \"variables\": \"n - size of input\",\n    \"units\": \"\",\n    \"notes\": \"Used to represent the tight bound of time or space complexity.\"\n  },\n  {\n    \"name\": \"Master Theorem\",\n    \"formula\": \"T(n) = a*T(n/b) + f(n)\",\n    \"variables\": \"T(n) - time complexity, a - leading coefficient, n - size of input, b - exponent, f(n) - auxiliary function\",\n    \"units\": \"seconds, milliseconds, etc.\",\n    \"notes\": \"Used to solve recurrence relations.\"\n  },\n  {\n    \"name\": \"Recurrence Relations\",\n    \"formula\": \"T(n) = a*T(n/b) + f(n)\",\n    \"variables\": \"T(n) - time complexity, a - leading coefficient, n - size of input, b - exponent, f(n) - auxiliary function\",\n    \"units\": \"seconds, milliseconds, etc.\",\n    \"notes\": \"Used to analyze the running time of recursive algorithms.\"\n  },\n  {\n    \"name\": \"Sorting Algorithms\",\n    \"formula\": \"Time complexity: O(n log n), O(n^2), etc.\",\n    \"variables\": \"n - size of input, log n - logarithm of n\",\n    \"units\": \"seconds, milliseconds, etc.\",\n    \"notes\": \"Used to compare the efficiency of different sorting algorithms.\"\n  },\n  {\n    \"name\": \"Searching Algorithms\",\n    \"formula\": \"Time complexity: O(n), O(log n), etc.\",\n    \"variables\": \"n - size of input, log n - logarithm of n\",\n    \"units\": \"seconds, milliseconds, etc.\",\n    \"notes\": \"Used to compare the efficiency of different searching algorithms.\"\n  }\n]\n```\n\nPlease note that this is not an exhaustive list and might not cover all the required formulas. You should consult your textbook or instructor for a comprehensive list of formulas and their explanations.",
+        "variables": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Sets",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:13:02.66+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "q": "Define a set and explain its types.",
+        "marks": 2,
+        "topic": "Introduction to Sets",
+        "answer": "A set is a well-defined collection of distinct objects, known as elements or members, that can be anything (numbers, letters, people, etc.). Sets can be classified into three types: finite sets (having a fixed number of elements), infinite sets (having an infinite number of elements), and empty sets (containing no elements).",
+        "key_points": [
+          "Finite set",
+          "Infinite set",
+          "Empty set"
+        ]
+      },
+      {
+        "q": "What is the difference between a set and a collection in mathematics?",
+        "marks": 2,
+        "topic": "Basic Concepts of Sets",
+        "answer": "A collection is any group of objects, while a set is a collection of distinct objects. The order of elements in a collection is significant, whereas in a set, the order is irrelevant. A set is defined using curly brackets {}, whereas a collection may be represented differently.",
+        "key_points": [
+          "Collection",
+          "Order of elements",
+          "Set representation"
+        ]
+      },
+      {
+        "q": "Explain the concept of subset and superset.",
+        "marks": 2,
+        "topic": "Subset and Superset",
+        "answer": "A set A is said to be a subset of a set B if every element of A is also an element of B. This is denoted as A ⊆ B. A set B is said to be a superset of a set A if every element of A is also an element of B. This is denoted as B ⊇ A.",
+        "key_points": [
+          "Subset",
+          "Superset",
+          "Subset notation"
+        ]
+      },
+      {
+        "q": "What is the difference between an equal set and a congruent set?",
+        "marks": 2,
+        "topic": "Equal and Congruent Sets",
+        "answer": "Two sets are said to be equal if they have exactly the same elements, but not necessarily in the same order. Two sets are said to be congruent if they have exactly the same elements and the same order. Equal sets are denoted as A = B, while congruent sets are denoted as A ≡ B.",
+        "key_points": [
+          "Equal set",
+          "Congruent set",
+          "Set equality"
+        ]
+      },
+      {
+        "q": "Explain the concept of power set.",
+        "marks": 2,
+        "topic": "Power Set",
+        "answer": "The power set of a set A is the set of all possible subsets of A, including the empty set and A itself. It is denoted as P(A) or 2^A. If A has n elements, then P(A) has 2^n elements.",
+        "key_points": [
+          "Power set",
+          "Subset",
+          "Cardinality"
+        ]
+      },
+      {
+        "q": "What is the difference between a union and an intersection of two sets?",
+        "marks": 2,
+        "topic": "Union and Intersection of Sets",
+        "answer": "The union of two sets A and B is the set of all elements that are in A or in B or in both. It is denoted as A ∪ B. The intersection of two sets A and B is the set of all elements that are common to both A and B. It is denoted as A ∩ B.",
+        "key_points": [
+          "Union",
+          "Intersection",
+          "Set operations"
+        ]
+      },
+      {
+        "q": "Explain the concept of difference and symmetric difference of two sets.",
+        "marks": 2,
+        "topic": "Difference and Symmetric Difference of Sets",
+        "answer": "The difference of two sets A and B is the set of all elements that are in A but not in B. It is denoted as A - B. The symmetric difference of two sets A and B is the set of all elements that are in A or in B but not in both. It is denoted as A △ B.",
+        "key_points": [
+          "Difference",
+          "Symmetric difference",
+          "Set operations"
+        ]
+      },
+      {
+        "q": "What is the distributive law for union and intersection of sets?",
+        "marks": 2,
+        "topic": "Properties of Sets",
+        "answer": "The distributive law states that for any sets A, B, and C, A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C) and A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C).",
+        "key_points": [
+          "Distributive law",
+          "Union",
+          "Intersection"
+        ]
+      },
+      {
+        "q": "Explain the concept of Cartesian product of two sets.",
+        "marks": 2,
+        "topic": "Cartesian Product of Sets",
+        "answer": "The Cartesian product of two sets A and B is the set of all ordered pairs (a, b) where a ∈ A and b ∈ B. It is denoted as A × B. If A has m elements and B has n elements, then A × B has m × n elements.",
+        "key_points": [
+          "Cartesian product",
+          "Ordered pairs",
+          "Set of ordered pairs"
+        ]
+      },
+      {
+        "q": "What is the relation between the cardinality of a set and its power set?",
+        "marks": 2,
+        "topic": "Cardinality of Power Set",
+        "answer": "If a set A has n elements, then the cardinality of its power set P(A) is 2^n. This is because each element of P(A) is a subset of A, and there are 2^n possible subsets of A.",
+        "key_points": [
+          "Cardinality",
+          "Power set",
+          "Set of subsets"
+        ]
+      }
+    ]
+  }
+}

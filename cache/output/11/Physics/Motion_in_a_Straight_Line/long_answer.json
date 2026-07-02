@@ -1,0 +1,69 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Motion in a Straight Line",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:23:49.205+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "A particle is moving along a straight line with its position-time graph shown below. Find the velocity of the particle at t = 2 s.",
+        "marks": 5,
+        "topic": "Position-Time Graph",
+        "answer": "From the position-time graph, we can see that the particle is moving in the positive direction. The velocity is given by the slope of the position-time graph. At t = 2 s, the slope of the graph is 4 m/s. Therefore, the velocity of the particle at t = 2 s is 4 m/s in the positive direction.",
+        "marking_scheme": [
+          "Identify the direction of the particle's motion (1 mark)",
+          "Calculate the slope of the position-time graph at t = 2 s (2 marks)",
+          "State the velocity of the particle at t = 2 s (2 marks)"
+        ]
+      },
+      {
+        "q": "A particle is moving along a straight line with its velocity-time graph shown below. Find the displacement of the particle between t = 0 s and t = 5 s.",
+        "marks": 5,
+        "topic": "Velocity-Time Graph",
+        "answer": "From the velocity-time graph, we can see that the particle is moving in the positive direction for the first 2 seconds, then it comes to rest and remains at rest for the next 3 seconds. Therefore, the displacement of the particle between t = 0 s and t = 5 s is the area under the velocity-time graph, which is 4 m.",
+        "marking_scheme": [
+          "Identify the direction of the particle's motion (1 mark)",
+          "Calculate the area under the velocity-time graph (2 marks)",
+          "State the displacement of the particle (2 marks)"
+        ]
+      },
+      {
+        "q": "A particle is moving along a straight line with its position as a function of time given by x(t) = 2t^2 - 5t + 3. Find the instantaneous velocity of the particle at t = 3 s.",
+        "marks": 5,
+        "topic": "Instantaneous Velocity",
+        "answer": "To find the instantaneous velocity of the particle, we need to find the derivative of the position function with respect to time. The derivative of x(t) = 2t^2 - 5t + 3 is v(t) = 4t - 5. Therefore, the instantaneous velocity of the particle at t = 3 s is v(3) = 4(3) - 5 = 7 m/s.",
+        "marking_scheme": [
+          "Write the position function (1 mark)",
+          "Find the derivative of the position function (2 marks)",
+          "Calculate the instantaneous velocity at t = 3 s (2 marks)"
+        ]
+      },
+      {
+        "q": "A particle is moving along a straight line with its velocity as a function of time given by v(t) = 2t - 3. Find the acceleration of the particle at t = 4 s.",
+        "marks": 5,
+        "topic": "Acceleration",
+        "answer": "To find the acceleration of the particle, we need to find the derivative of the velocity function with respect to time. The derivative of v(t) = 2t - 3 is a(t) = 2. Therefore, the acceleration of the particle at t = 4 s is a(4) = 2 m/s^2.",
+        "marking_scheme": [
+          "Write the velocity function (1 mark)",
+          "Find the derivative of the velocity function (2 marks)",
+          "Calculate the acceleration at t = 4 s (2 marks)"
+        ]
+      },
+      {
+        "q": "A particle is moving along a straight line with its initial velocity as 5 m/s and acceleration as 2 m/s^2. Find the velocity of the particle after 6 seconds.",
+        "marks": 5,
+        "topic": "Motion with Constant Acceleration",
+        "answer": "We know that v = u + at, where v is the final velocity, u is the initial velocity, a is the acceleration, and t is the time. Given that u = 5 m/s, a = 2 m/s^2, and t = 6 s, we can substitute these values into the equation to get v = 5 + 2(6) = 17 m/s.",
+        "marking_scheme": [
+          "Write the equation v = u + at (1 mark)",
+          "Substitute the given values into the equation (2 marks)",
+          "Calculate the final velocity (2 marks)"
+        ]
+      }
+    ]
+  }
+}

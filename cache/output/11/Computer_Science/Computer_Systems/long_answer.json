@@ -1,0 +1,69 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Computer Systems",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-26T08:09:25.201+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "Explain the concept of CPU Scheduling. (a) Describe the types of CPU scheduling algorithms. (b) Discuss the factors affecting CPU scheduling.",
+        "marks": 5,
+        "topic": "CPU Scheduling",
+        "answer": "CPU Scheduling is a process of allocating the CPU to processes for execution. There are two types of CPU scheduling algorithms: (a) Preemptive Scheduling: The operating system can interrupt a running process and allocate the CPU to another process based on priority. (b) Non-Preemptive Scheduling: The operating system cannot interrupt a running process, and the CPU is allocated to a process until it completes execution. Factors affecting CPU scheduling include: (a) Process Priority: Higher priority processes are executed first. (b) Process Arrival Time: Processes that arrive at the CPU first are executed first. (c) Process Burst Time: Processes with shorter burst times are executed first. (d) Process Blocking: Processes that are blocked due to I/O operations are executed last.",
+        "marking_scheme": [
+          "Types of CPU scheduling algorithms (1 mark)",
+          "Factors affecting CPU scheduling (1 mark)",
+          "Explanation of CPU Scheduling (3 marks)"
+        ]
+      },
+      {
+        "q": "Describe the working of a Cache Memory. (a) Explain the concept of Cache Hierarchy. (b) Discuss the advantages of Cache Memory.",
+        "marks": 5,
+        "topic": "Cache Memory",
+        "answer": "Cache Memory is a small, fast memory located between the CPU and Main Memory. It stores frequently accessed data and instructions. The Cache Hierarchy consists of: (a) L1 Cache: Smallest and fastest cache, located on the CPU chip. (b) L2 Cache: Larger and slower cache, located on the CPU chip. (c) L3 Cache: Shared cache among multiple CPU cores. (d) Main Memory: Large, slower memory that stores data and instructions not in cache. Advantages of Cache Memory include: (a) Faster Access Time: Cache Memory provides faster access time compared to Main Memory. (b) Reduced Memory Access Time: Cache Memory reduces memory access time by storing frequently accessed data. (c) Increased System Performance: Cache Memory improves system performance by reducing memory access time.",
+        "marking_scheme": [
+          "Cache Hierarchy (1 mark)",
+          "Advantages of Cache Memory (2 marks)",
+          "Explanation of Cache Memory (2 marks)"
+        ]
+      },
+      {
+        "q": "Explain the concept of Virtual Memory. (a) Describe the working of Page Replacement Algorithms. (b) Discuss the advantages of Virtual Memory.",
+        "marks": 5,
+        "topic": "Virtual Memory",
+        "answer": "Virtual Memory is a memory management technique that uses a combination of Main Memory and Secondary Storage to provide a larger address space to a program. The working of Page Replacement Algorithms includes: (a) Page Fault Handling: When a page fault occurs, the operating system checks if the page is in Main Memory or Secondary Storage. (b) Page Replacement: If the page is not in Main Memory, the operating system replaces the page with the least recently used page. Advantages of Virtual Memory include: (a) Larger Address Space: Virtual Memory provides a larger address space to a program, allowing it to access more memory than physically available. (b) Improved Memory Utilization: Virtual Memory improves memory utilization by allowing programs to use memory more efficiently.",
+        "marking_scheme": [
+          "Working of Page Replacement Algorithms (2 marks)",
+          "Advantages of Virtual Memory (2 marks)",
+          "Explanation of Virtual Memory (1 mark)"
+        ]
+      },
+      {
+        "q": "Describe the types of Input/Output (I/O) devices. (a) Explain the working of Input Devices. (b) Discuss the advantages of Output Devices.",
+        "marks": 5,
+        "topic": "I/O Devices",
+        "answer": "There are two types of I/O devices: (a) Input Devices: Devices that transfer data from external sources to the computer, such as keyboards, mice, and scanners. (b) Output Devices: Devices that transfer data from the computer to external sources, such as monitors, printers, and speakers. Working of Input Devices includes: (a) Keyboard Input: The keyboard converts keystrokes into electrical signals that are sent to the CPU. (b) Mouse Input: The mouse converts mouse movements into electrical signals that are sent to the CPU. Advantages of Output Devices include: (a) Faster Data Transfer: Output Devices provide faster data transfer rates compared to Input Devices. (b) Increased Productivity: Output Devices improve productivity by allowing users to view data in a more readable format.",
+        "marking_scheme": [
+          "Types of I/O Devices (1 mark)",
+          "Working of Input Devices (2 marks)",
+          "Advantages of Output Devices (2 marks)"
+        ]
+      },
+      {
+        "q": "Explain the concept of Bus Architecture. (a) Describe the types of Bus Architectures. (b) Discuss the advantages of Bus Architecture.",
+        "marks": 5,
+        "topic": "Bus Architecture",
+        "answer": "Bus Architecture is a type of computer architecture that uses a common set of lines for communication between components, such as the CPU, memory, and I/O devices. There are two types of Bus Architectures: (a) Von Neumann Architecture: A single bus that connects all components, allowing data and instructions to be transferred between components. (b) Harvard Architecture: Separate buses for data and instructions, allowing for faster data transfer rates. Advantages of Bus Architecture include: (a) Simplified Communication: Bus Architecture simplifies communication between components by using a common set of lines. (b) Increased Flexibility: Bus Architecture allows for increased flexibility by allowing components to be added or removed easily.",
+        "marking_scheme": [
+          "Types of Bus Architectures (1 mark)",
+          "Advantages of Bus Architecture (2 marks)",
+          "Explanation of Bus Architecture (2 marks)"
+        ]
+      }
+    ]
+  }
+}

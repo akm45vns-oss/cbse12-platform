@@ -1,0 +1,86 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:18:09.483+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 9,
+    "questions": [
+      {
+        "q": "A body cools down from 90°C to 80°C in 5 minutes. If the law of cooling be expressed as dT/dt = -k(T - T0), then the value of the constant k is",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "The value of k can be calculated using the formula: ln(Ti/Tf) = k(tf - ti). Given Ti = 90°C, Tf = 80°C, and tf - ti = 5 minutes. So, k = ln(90/80)/5 = 0.0127 min^-1.",
+        "difficulty": "medium",
+        "year_pattern": "2016-style"
+      },
+      {
+        "q": "An electric heater of resistance 100 Ω is used to heat water in a vessel at a constant rate. If the heater is connected to a 200 V supply, the rate at which heat energy is being supplied to the water is",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The power of the heater is given by P = V^2/R = (200)^2/100 = 400 W. This is the rate at which heat energy is being supplied to the water.",
+        "difficulty": "easy",
+        "year_pattern": "2014-style"
+      },
+      {
+        "q": "The temperature of a body is raised from 20°C to 80°C in 10 minutes. If the cooling law is expressed as dT/dt = -k(T - T0), then the value of k is",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "The value of k can be calculated using the formula: ln(Ti/Tf) = k(tf - ti). Given Ti = 80°C, Tf = 20°C, and tf - ti = 10 minutes. So, k = -ln(80/20)/10 = 0.0335 min^-1.",
+        "difficulty": "medium",
+        "year_pattern": "2018-style"
+      },
+      {
+        "q": "An electric kettle has a heating element of resistance 20 Ω. If it is connected to a 220 V supply, the energy consumed by the kettle in 2 minutes is",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "The power of the kettle is given by P = V^2/R = (220)^2/20 = 242 W. The energy consumed in 2 minutes is E = Pt = 242 x 120 = 29040 J.",
+        "difficulty": "medium",
+        "year_pattern": "2015-style"
+      },
+      {
+        "q": "The temperature of a body at time t is given by the equation T = T0 + Ce^(-kt). The temperature of the body is 37°C at t = 0 and 25°C at t = 10 minutes. Find the value of k.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "Substitute the given values into the equation: 25 = T0 + Ce^(-10k). We also know that T0 + C = 37. So, 25 = 37 + Ce^(-10k). Simplifying this, we get e^(-10k) = 0.32. Taking log on both sides, we get -10k = log(0.32) and k = -0.00043 min^-1.",
+        "difficulty": "hard",
+        "year_pattern": "2017-style"
+      },
+      {
+        "q": "A body at a temperature of 100°C is left in a room whose temperature is 20°C. If the law of cooling be expressed as dT/dt = -k(T - T0), find the time taken for the body to cool down to 50°C.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "Using the formula: ln((Ti - T0)/(Tf - T0)) = k(tf - ti), we get ln((100-20)/(50-20)) = k(10). So, k = 0.0127 min^-1. Using the formula: T = T0 + (Ti - T0)e^(-kt), we get T = 20 + (100-20)e^(-0.0127x) and T = 50 when x = 10. Hence, the time taken is 10 min.",
+        "difficulty": "medium",
+        "year_pattern": "2013-style"
+      },
+      {
+        "q": "An electric toaster has a heating element of resistance 50 Ω. If it is connected to a 250 V supply, the energy consumed by the toaster in 1 minute is",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The power of the toaster is given by P = V^2/R = (250)^2/50 = 125 W. The energy consumed in 1 minute is E = Pt = 125 x 60 = 7500 J.",
+        "difficulty": "easy",
+        "year_pattern": "2012-style"
+      },
+      {
+        "q": "A body cools from 80°C to 60°C in 5 minutes. If the law of cooling be expressed as dT/dt = -k(T - T0), then the value of the constant k is",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "The value of k can be calculated using the formula: ln(Ti/Tf) = k(tf - ti). Given Ti = 80°C, Tf = 60°C, and tf - ti = 5 minutes. So, k = -ln(80/60)/5 = 0.0285 min^-1.",
+        "difficulty": "medium",
+        "year_pattern": "2019-style"
+      },
+      {
+        "q": "An electric kettle has a heating element of resistance 30 Ω. If it is connected to a 240 V supply, the energy consumed by the kettle in 1.5 minutes is",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "The power of the kettle is given by P = V^2/R = (240)^2/30 = 192 W. The energy consumed in 1.5 minutes is E = Pt = 192 x 90 = 17280 J.",
+        "difficulty": "medium",
+        "year_pattern": "2011-style"
+      }
+    ]
+  }
+}

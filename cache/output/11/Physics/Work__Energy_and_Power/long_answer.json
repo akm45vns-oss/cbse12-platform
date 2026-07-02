@@ -1,0 +1,74 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Work, Energy and Power",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:18:06.809+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "A 50 kg block is pushed up a frictionless inclined plane with an acceleration of 2 m/s². The angle of the incline is 30°. Calculate the force applied by the person pushing the block. Also, determine the work done by the person in pushing the block up the inclined plane.",
+        "marks": 5,
+        "topic": "Work Done",
+        "answer": "First, let's break down the force applied by the person into its components. We know that F = ma, where m is the mass of the block and a is the acceleration. Substituting the values, we get F = (50 kg) × (2 m/s²) = 100 N. Since the force is applied at an angle of 30°, we need to find the component of the force parallel to the incline. The component of the force parallel to the incline is F cos(30°) = 100 N × (cos(30°)) = 86.6 N. The work done by the person is given by W = F cos(θ) × s, where s is the distance traveled by the block. Since the block is pushed up a frictionless inclined plane, the work done is equal to the change in potential energy. The change in potential energy is given by ΔU = mgh, where h is the height gained by the block. Since the angle of the incline is 30°, the height gained is s sin(30°). Therefore, W = mgh = (50 kg) × (10 m/s²) × (s sin(30°)) = (50 kg) × (10 m/s²) × (0.5 s) = 250 J.",
+        "marking_scheme": [
+          "Calculate the force applied by the person pushing the block (1 mark)",
+          "Determine the work done by the person in pushing the block up the inclined plane (1 mark)",
+          "Show that the work done is equal to the change in potential energy (1 mark)",
+          "Express the change in potential energy in terms of the height gained by the block (1 mark)",
+          "Calculate the numerical value of the work done (1 mark)"
+        ]
+      },
+      {
+        "q": "Two springs with spring constants k₁ and k₂ are connected in series. The mass attached to the springs is m. Find the equivalent spring constant kₑ. If the springs are now connected in parallel, find the equivalent spring constant kₑ.",
+        "marks": 5,
+        "topic": "Simple Harmonic Motion",
+        "answer": "When the springs are connected in series, the equivalent spring constant is given by 1/kₑ = 1/k₁ + 1/k₂. This is because the springs are stretched by the same distance x. The force exerted by the springs is therefore F = (k₁ + k₂)x. The equivalent spring constant is kₑ = k₁k₂/(k₁ + k₂). When the springs are connected in parallel, the equivalent spring constant is given by kₑ = k₁ + k₂. This is because the force exerted by each spring is the same, and the displacement of each spring is proportional to its spring constant.",
+        "marking_scheme": [
+          "Derive the expression for the equivalent spring constant when the springs are connected in series (2 marks)",
+          "Derive the expression for the equivalent spring constant when the springs are connected in parallel (2 marks)",
+          "Explain the physical significance of the equivalent spring constant (1 mark)"
+        ]
+      },
+      {
+        "q": "A particle of mass m is moving in a circular path with a uniform speed v. The radius of the circle is r. Find the work done by the gravitational force on the particle in one complete revolution.",
+        "marks": 5,
+        "topic": "Work Done",
+        "answer": "The gravitational force on the particle is given by F = -mg. The work done by the gravitational force in one complete revolution is therefore W = ∫F dr, where the integral is taken over one complete revolution. Since the force is constant, we can take it outside the integral: W = F ∫dr. The integral of dr over one complete revolution is equal to the circumference of the circle, which is 2πr. Therefore, W = -mg × 2πr. Since the particle is moving in a circular path, its kinetic energy remains constant. Therefore, the work done by the gravitational force is equal to the negative of the change in kinetic energy. Since the kinetic energy remains constant, the change in kinetic energy is zero, and therefore the work done by the gravitational force is also zero.",
+        "marking_scheme": [
+          "Derive the expression for the work done by the gravitational force (2 marks)",
+          "Explain why the work done by the gravitational force is zero (2 marks)",
+          "Explain the significance of the gravitational force in this context (1 mark)"
+        ]
+      },
+      {
+        "q": "A bullet of mass 50 g is fired from a gun with an initial velocity of 100 m/s. Find the kinetic energy of the bullet.",
+        "marks": 5,
+        "topic": "Kinetic Energy",
+        "answer": "The kinetic energy of the bullet is given by K = (1/2)mv², where m is the mass of the bullet and v is its initial velocity. Substituting the values, we get K = (1/2) × (0.05 kg) × (100 m/s)² = 25 J.",
+        "marking_scheme": [
+          "Derive the expression for the kinetic energy of the bullet (1 mark)",
+          "Substitute the values of mass and initial velocity into the expression (1 mark)",
+          "Calculate the numerical value of the kinetic energy (2 marks)",
+          "Explain the physical significance of the kinetic energy (1 mark)"
+        ]
+      },
+      {
+        "q": "A block of mass 20 kg is attached to a horizontal spring with a spring constant of 100 N/m. The block is displaced by a distance of 2 m from its equilibrium position and then released. Find the kinetic energy of the block when it passes through its equilibrium position.",
+        "marks": 5,
+        "topic": "Conservation of Energy",
+        "answer": "The potential energy of the block at the displaced position is given by U = (1/2)kx², where k is the spring constant and x is the displacement. Substituting the values, we get U = (1/2) × (100 N/m) × (2 m)² = 200 J. As the block passes through its equilibrium position, it gains kinetic energy equal to the potential energy at the displaced position. Therefore, the kinetic energy of the block is 200 J.",
+        "marking_scheme": [
+          "Derive the expression for the potential energy of the block (1 mark)",
+          "Substitute the values of spring constant and displacement into the expression (1 mark)",
+          "Calculate the numerical value of the potential energy (1 mark)",
+          "Explain why the block gains kinetic energy equal to the potential energy (1 mark)",
+          "Calculate the numerical value of the kinetic energy (1 mark)"
+        ]
+      }
+    ]
+  }
+}

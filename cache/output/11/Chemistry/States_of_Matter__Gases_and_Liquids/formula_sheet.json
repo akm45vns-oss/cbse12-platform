@@ -1,0 +1,90 @@
+{
+  "class": "11",
+  "subject": "Chemistry",
+  "chapter": "States of Matter: Gases and Liquids",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:57:47.203+00:00",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Ideal Gas Equation",
+        "notes": "Used to calculate the volume of an ideal gas at a given temperature and pressure.",
+        "units": "P - Pa, V - m^3, n - mol, R - J/mol*K, T - K",
+        "formula": "PV = nRT",
+        "variables": "P - Pressure, V - Volume, n - Number of moles, R - Gas constant, T - Temperature in Kelvin"
+      },
+      {
+        "name": "Combined Gas Law",
+        "notes": "Derived from the ideal gas equation by eliminating n.",
+        "units": "P - Pa, V - m^3, T - K, n - mol, R - J/mol*K",
+        "formula": "PV/T = nR",
+        "variables": "P - Pressure, V - Volume, T - Temperature, n - Number of moles, R - Gas constant"
+      },
+      {
+        "name": "Avogadro's Law",
+        "notes": "States that equal volumes of gases at the same temperature and pressure contain an equal number of moles.",
+        "units": "V - m^3, T - K",
+        "formula": "V1/T1 = V2/T2",
+        "variables": "V1 - Initial volume, V2 - Final volume, T1 - Initial temperature, T2 - Final temperature"
+      },
+      {
+        "name": "Boyle's Law",
+        "notes": "States that the volume of a gas is inversely proportional to the pressure at a constant temperature.",
+        "units": "P - Pa, V - m^3",
+        "formula": "P1V1 = P2V2",
+        "variables": "P1 - Initial pressure, P2 - Final pressure, V1 - Initial volume, V2 - Final volume"
+      },
+      {
+        "name": "Charles' Law",
+        "notes": "States that the volume of a gas is directly proportional to the temperature at a constant pressure.",
+        "units": "V - m^3, T - K",
+        "formula": "V1/T1 = V2/T2",
+        "variables": "V1 - Initial volume, V2 - Final volume, T1 - Initial temperature, T2 - Final temperature"
+      },
+      {
+        "name": "Gay-Lussac's Law",
+        "notes": "States that the pressure of a gas is directly proportional to the temperature at a constant volume.",
+        "units": "P - Pa, T - K",
+        "formula": "P1/T1 = P2/T2",
+        "variables": "P1 - Initial pressure, P2 - Final pressure, T1 - Initial temperature, T2 - Final temperature"
+      },
+      {
+        "name": "Pascal's Law",
+        "notes": "States that pressure is equal to the force applied per unit area.",
+        "units": "P - Pa, F - N, A - m^2",
+        "formula": "P = F/A",
+        "variables": "P - Pressure, F - Force, A - Area"
+      },
+      {
+        "name": "Ideal Gas Constant",
+        "notes": "A constant used in the ideal gas equation.",
+        "units": "J/mol*K",
+        "formula": "R = 8.3145 J/mol*K",
+        "variables": "R - Gas constant"
+      },
+      {
+        "name": "Molar Volume",
+        "notes": "The volume occupied by one mole of an ideal gas at STP.",
+        "units": "L/mol",
+        "formula": "V_m = 22.4 L/mol",
+        "variables": "V_m - Molar volume"
+      },
+      {
+        "name": "Critical Temperature",
+        "notes": "A temperature above which a substance cannot be liquefied, no matter how much pressure is applied.",
+        "units": "T - K",
+        "formula": "T_c = 0.73 * T_b",
+        "variables": "T_c - Critical temperature, T_b - Boiling point"
+      },
+      {
+        "name": "Critical Pressure",
+        "notes": "The pressure at which a substance's liquid and vapor phases become indistinguishable.",
+        "units": "P - Pa",
+        "formula": "P_c = 0.47 * P_b",
+        "variables": "P_c - Critical pressure, P_b - Boiling point pressure"
+      }
+    ]
+  }
+}

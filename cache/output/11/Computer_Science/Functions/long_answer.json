@@ -1,0 +1,71 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T10:57:34.94+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "Explain the concept of a function in programming with suitable examples. How does it differ from a subroutine?",
+        "marks": 5,
+        "topic": "Functions",
+        "answer": "In programming, a function is a block of code that can be called multiple times from different parts of the program. It is a self-contained piece of code that performs a specific task. Functions are useful for modularity, reusability, and readability of code. For example, a function to calculate the area of a circle can be written once and called multiple times from different parts of the program.\n\nA subroutine, on the other hand, is a small block of code that performs a specific task and is typically used within a larger program. Subroutines are not necessarily reusable and are usually called only once. The key difference between a function and a subroutine is that a function returns a value, whereas a subroutine does not.\n\nFunctions are useful for breaking down large programs into smaller, manageable pieces, making it easier to understand, modify, and maintain the code. They also help to reduce code duplication and improve code readability.",
+        "marking_scheme": [
+          "Explain the concept of a function (1 mark)",
+          "Provide an example of a function (1 mark)",
+          "Distinguish between a function and a subroutine (2 marks)",
+          "Highlight the benefits of using functions in programming (1 mark)"
+        ]
+      },
+      {
+        "q": "What is the difference between a function declaration and a function definition? Provide an example of each.",
+        "marks": 5,
+        "topic": "Function Declaration and Definition",
+        "answer": "A function declaration, also known as a function prototype, is a statement that declares the name, return type, and parameter list of a function. It does not provide the implementation of the function. A function definition, on the other hand, is the actual implementation of the function, including the code that performs the task.\n\nFor example:\n\nFunction Declaration: \nint add(int a, int b);\n\nFunction Definition:\nint add(int a, int b) {\n  return a + b;\n}\n\nIn this example, the function declaration declares the function name, return type, and parameter list, but does not provide the implementation. The function definition provides the actual implementation of the function, including the code that performs the task.\n\nFunctions can be declared before they are defined, which is known as forward declaration. This allows the function to be used before its implementation is provided.",
+        "marking_scheme": [
+          "Explain the difference between a function declaration and a function definition (2 marks)",
+          "Provide an example of a function declaration (1 mark)",
+          "Provide an example of a function definition (1 mark)",
+          "Highlight the benefits of using function declarations (1 mark)"
+        ]
+      },
+      {
+        "q": "What is the purpose of a function call in programming? Explain with suitable examples.",
+        "marks": 5,
+        "topic": "Function Call",
+        "answer": "A function call is the process of executing a function by passing arguments to it and receiving the return value. The purpose of a function call is to invoke a function and execute its code. This allows the function to perform a specific task and return a value to the calling code.\n\nFor example:\n\nvoid printHello() {\n  System.out.println(\"Hello\");\n}\n\nprintHello();\n\nIn this example, the printHello() function is called, which prints the string \"Hello\" to the console. The function call is the process of executing the function by passing no arguments and receiving no return value.\n\nFunction calls are used to create modular code, make the program more readable, and reduce code duplication.",
+        "marking_scheme": [
+          "Explain the purpose of a function call (2 marks)",
+          "Provide an example of a function call (2 marks)",
+          "Highlight the benefits of using function calls (1 mark)"
+        ]
+      },
+      {
+        "q": "How do functions handle input and output? Explain with suitable examples.",
+        "marks": 5,
+        "topic": "Function Input and Output",
+        "answer": "Functions can handle input and output in several ways:\n\n1. Parameters: Functions can accept parameters, which are values passed to the function when it is called. These parameters can be used within the function to perform calculations or other tasks.\n\n2. Return Values: Functions can return values to the calling code. This allows the function to provide output to the program.\n\n3. Output Statements: Functions can use output statements, such as System.out.println() in Java, to print output to the console or other output devices.\n\n4. Input/Output Operations: Functions can perform input/output operations, such as reading from a file or writing to a file.\n\nFor example:\n\nvoid add(int a, int b) {\n  System.out.println(\"The sum is \" + (a + b));\n}\n\nadd(5, 10);",
+        "marking_scheme": [
+          "Explain how functions handle input (2 marks)",
+          "Explain how functions handle output (2 marks)",
+          "Provide an example of a function handling input and output (1 mark)"
+        ]
+      },
+      {
+        "q": "What is an overloaded function? Provide an example and explain its benefits.",
+        "marks": 5,
+        "topic": "Function Overloading",
+        "answer": "An overloaded function is a function that has the same name as another function, but with a different number or type of parameters. This is known as function overloading. When a function is overloaded, the compiler determines which function to call based on the number and type of arguments passed to it.\n\nFor example:\n\nint add(int a, int b) {\n  return a + b;\n}\n\ndouble add(double a, double b) {\n  return a + b;\n}\n\nIn this example, the add() function is overloaded to take two int parameters and two double parameters. The compiler determines which function to call based on the type of arguments passed to it.\n\nThe benefits of function overloading include:\n\n1. Improved code readability: Overloaded functions can make the code more readable by providing multiple ways to perform a task.\n2. Reduced code duplication: Overloaded functions can reduce code duplication by providing a single implementation for multiple tasks.\n3. Improved maintainability: Overloaded functions can make the code more maintainable by providing a single point of change for multiple tasks.",
+        "marking_scheme": [
+          "Explain the concept of an overloaded function (2 marks)",
+          "Provide an example of an overloaded function (2 marks)",
+          "Highlight the benefits of using overloaded functions (1 mark)"
+        ]
+      }
+    ]
+  }
+}

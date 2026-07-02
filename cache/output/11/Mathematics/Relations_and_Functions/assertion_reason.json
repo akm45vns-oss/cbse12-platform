@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:13:05.504+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 9,
+    "questions": [
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): A function has unique output for every input, which satisfies the definition of a relation.",
+        "assertion": "Assertion (A): If f is a function from set A to set B, then f is a relation from A to B.",
+        "explanation": "A function is indeed a relation with unique output for every input."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Relations are sets of ordered pairs, and the empty set is a set.",
+        "assertion": "Assertion (A): The empty set is a relation.",
+        "explanation": "The empty set does indeed contain no ordered pairs, but it still satisfies the definition of a set."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): f(f(x)) = f(x^2) = (x^2)^2 = x^4, not x.",
+        "assertion": "Assertion (A): If f: R → R is a function such that f(x) = x^2, then f(f(x)) = x.",
+        "explanation": "The assertion is false because f(f(x)) does not equal x."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is the definition of a reflexive relation.",
+        "assertion": "Assertion (A): A binary relation R on a set A is called reflexive if (a, a) ∈ R for all a in A.",
+        "explanation": "The assertion is true and the reason is indeed the definition of a reflexive relation."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): We can define a function from A to B by mapping every element of A to any fixed element in B.",
+        "assertion": "Assertion (A): If A and B are two non-empty sets, then there exists a function from A to B.",
+        "explanation": "The assertion is true because we can define a function from A to B by mapping every element of A to any fixed element in B."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Functions are equal if their output values are equal for all input values.",
+        "assertion": "Assertion (A): Two functions f: A → B and g: B → C are equal if f(x) = g(x) for all x in A.",
+        "explanation": "The assertion is true and the reason is indeed the definition of two functions being equal."
+      },
+      {
+        "ans": "C",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): We cannot conclude that f is a one-one function without knowing the range of f.",
+        "assertion": "Assertion (A): If f: R → R is a function, then f is a one-one function.",
+        "explanation": "The assertion is false because we cannot conclude that f is a one-one function without knowing the range of f."
+      },
+      {
+        "ans": "C",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): We cannot conclude that f is an onto function without knowing the range of f.",
+        "assertion": "Assertion (A): If f: R → R is a function, then f is an onto function.",
+        "explanation": "The assertion is false because we cannot conclude that f is an onto function without knowing the range of f."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): No, it is not a one-one function because f(-x) = f(x) for all x in R.",
+        "assertion": "Assertion (A): If f: R → R is a function such that f(x) = 2x, then f is a one-one function.",
+        "explanation": "The assertion is false because f is not a one-one function."
+      }
+    ]
+  }
+}

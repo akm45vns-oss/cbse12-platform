@@ -1,0 +1,248 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Sequences and Series",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:15:03.018+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 18,
+    "questions": [
+      {
+        "q": "If the sum of the first n terms of an arithmetic progression is 5n - 3n^2 + 2n + 1, then the first term is?",
+        "ans": "B",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) 2",
+          "(D) 3"
+        ],
+        "topic": "Arithmetic Progressions",
+        "difficulty": "easy",
+        "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d], where 'a' is the first term and 'd' is the common difference. By comparing the given sum, we can find the value of 'a'."
+      },
+      {
+        "q": "Which of the following sequence is a geometric progression?",
+        "ans": "B",
+        "opts": [
+          "(A) 2, 4, 6, 8, 10",
+          "(B) 1, 2, 4, 8, 16",
+          "(C) 1, 2, 3, 4, 5",
+          "(D) 1, 1/2, 1/4, 1/8, 1/16"
+        ],
+        "topic": "Geometric Progressions",
+        "difficulty": "easy",
+        "explanation": "A sequence is a geometric progression if each term is obtained by multiplying the previous term by a fixed constant. In option (B), each term is obtained by multiplying the previous term by 2."
+      },
+      {
+        "q": "The sum of an infinite geometric progression is 5 and the first term is 1/2. Find the common ratio?",
+        "ans": "A",
+        "opts": [
+          "(A) 1/2",
+          "(B) 1/3",
+          "(C) 2/3",
+          "(D) 3/4"
+        ],
+        "topic": "Geometric Progressions",
+        "difficulty": "easy",
+        "explanation": "The sum of an infinite geometric progression is given by S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio. By substituting the given values, we can find the value of 'r'."
+      },
+      {
+        "q": "In an arithmetic progression, the sum of the first 10 terms is 255 and the sum of the first 20 terms is 1035. Find the first term?",
+        "ans": "B",
+        "opts": [
+          "(A) 10",
+          "(B) 15",
+          "(C) 20",
+          "(D) 25"
+        ],
+        "topic": "Arithmetic Progressions",
+        "difficulty": "medium",
+        "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d]. By using this formula, we can find the value of 'a' by solving the equations for n = 10 and n = 20."
+      },
+      {
+        "q": "Find the sum of the infinite geometric progression 1 + 1/4 + 1/16 + ...",
+        "ans": "C",
+        "opts": [
+          "(A) 1",
+          "(B) 2",
+          "(C) 4/3",
+          "(D) 7/4"
+        ],
+        "topic": "Geometric Progressions",
+        "difficulty": "medium",
+        "explanation": "The sum of an infinite geometric progression is given by S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio. In this case, 'a' is 1 and 'r' is 1/4."
+      },
+      {
+        "q": "If the sum of the first n terms of a geometric progression is 4n^2 + 2n + 1, then the common ratio is?",
+        "ans": "B",
+        "opts": [
+          "(A) 1/3",
+          "(B) 1/2",
+          "(C) 2/3",
+          "(D) 3/4"
+        ],
+        "topic": "Geometric Progressions",
+        "difficulty": "medium",
+        "explanation": "We know the sum of the first n terms of a geometric progression is Sn = a * (1 - r^n) / (1 - r), where 'a' is the first term and 'r' is the common ratio. By comparing the given sum, we can find the value of 'r'."
+      },
+      {
+        "q": "Find the value of 'x' if the sum of the first n terms of an arithmetic progression is 5n - 3n^2 + 2n + 1 and the sum of the first (n+1) terms is 6n - 4n^2 + 3n + 1.",
+        "ans": "B",
+        "opts": [
+          "(A) 1",
+          "(B) 2",
+          "(C) 3",
+          "(D) 4"
+        ],
+        "topic": "Arithmetic Progressions",
+        "difficulty": "hard",
+        "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d]. By substituting the given values, we can solve for 'x'."
+      },
+      {
+        "q": "Find the sum of the infinite geometric progression 1/3 + 1/9 + 1/27 + ...",
+        "ans": "B",
+        "opts": [
+          "(A) 1/2",
+          "(B) 2/3",
+          "(C) 3/4",
+          "(D) 4/5"
+        ],
+        "topic": "Geometric Progressions",
+        "difficulty": "hard",
+        "explanation": "The sum of an infinite geometric progression is given by S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio. In this case, 'a' is 1/3 and 'r' is 1/3."
+      },
+      {
+        "q": "Find the sum of the first n terms of the arithmetic progression 3, 7, 11, ...",
+        "ans": "A",
+        "opts": [
+          "(A) n/2 * [6 + (n-1)4]",
+          "(B) n/2 * [6 + (n-1)2]",
+          "(C) n/2 * [12 + (n-1)4]",
+          "(D) n/2 * [12 + (n-1)2]"
+        ],
+        "topic": "Arithmetic Progressions",
+        "difficulty": "hard",
+        "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d]. By substituting the given values, we can find the sum of the first n terms."
+      },
+      {
+        "q": "Find the common ratio of the geometric progression 1/2, 1/4, 1/8, ...",
+        "ans": "B",
+        "opts": [
+          "(A) 1/2",
+          "(B) 2/3",
+          "(C) 3/4",
+          "(D) 4/5"
+        ],
+        "topic": "Geometric Progressions",
+        "difficulty": "hard",
+        "explanation": "A sequence is a geometric progression if each term is obtained by multiplying the previous term by a fixed constant. In this case, each term is obtained by multiplying the previous term by 1/2."
+      },
+      {
+        "q": "If the sum of the first n terms of an arithmetic progression is 5n + 3n^2 - 2n - 1, then the common difference is?",
+        "ans": "B",
+        "opts": [
+          "(A) 1/3",
+          "(B) 1/2",
+          "(C) 2/3",
+          "(D) 3/4"
+        ],
+        "topic": "Arithmetic Progressions",
+        "difficulty": "hard",
+        "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d], where 'a' is the first term and 'd' is the common difference. By comparing the given sum, we can find the value of 'd'."
+      },
+      {
+        "q": "Find the sum of the first 10 terms of the geometric progression 2, 6, 18, ...",
+        "ans": "A",
+        "opts": [
+          "(A) 145",
+          "(B) 154",
+          "(C) 163",
+          "(D) 172"
+        ],
+        "topic": "Geometric Progressions",
+        "difficulty": "medium",
+        "explanation": "We know the sum of the first n terms of a geometric progression is Sn = a * (1 - r^n) / (1 - r), where 'a' is the first term and 'r' is the common ratio. By substituting the given values, we can find the sum of the first 10 terms."
+      },
+      {
+        "q": "If the sum of the first n terms of a geometric progression is 2n^2 + 3n + 1, then the first term is?",
+        "ans": "C",
+        "opts": [
+          "(A) 1/2",
+          "(B) 1",
+          "(C) 2",
+          "(D) 4"
+        ],
+        "topic": "Geometric Progressions",
+        "difficulty": "medium",
+        "explanation": "We know the sum of the first n terms of a geometric progression is Sn = a * (1 - r^n) / (1 - r), where 'a' is the first term and 'r' is the common ratio. By comparing the given sum, we can find the value of 'a'."
+      },
+      {
+        "q": "Find the sum of the infinite geometric progression 1/2, 1/6, 1/18, ...",
+        "ans": "B",
+        "opts": [
+          "(A) 1/2",
+          "(B) 2/3",
+          "(C) 3/4",
+          "(D) 4/5"
+        ],
+        "topic": "Geometric Progressions",
+        "difficulty": "hard",
+        "explanation": "The sum of an infinite geometric progression is given by S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio. In this case, 'a' is 1/2 and 'r' is 1/3."
+      },
+      {
+        "q": "If the sum of the first n terms of an arithmetic progression is 3n + 2n^2 - 1, then the first term is?",
+        "ans": "B",
+        "opts": [
+          "(A) 1",
+          "(B) 2",
+          "(C) 3",
+          "(D) 4"
+        ],
+        "topic": "Arithmetic Progressions",
+        "difficulty": "hard",
+        "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d], where 'a' is the first term and 'd' is the common difference. By comparing the given sum, we can find the value of 'a'."
+      },
+      {
+        "q": "Find the sum of the first n terms of the geometric progression 1, 1/2, 1/4, ...",
+        "ans": "A",
+        "opts": [
+          "(A) n/2",
+          "(B) n/4",
+          "(C) n/8",
+          "(D) n/16"
+        ],
+        "topic": "Geometric Progressions",
+        "difficulty": "medium",
+        "explanation": "We know the sum of the first n terms of a geometric progression is Sn = a * (1 - r^n) / (1 - r), where 'a' is the first term and 'r' is the common ratio. By substituting the given values, we can find the sum of the first n terms."
+      },
+      {
+        "q": "If the sum of the first n terms of a geometric progression is 2n^2 + n + 1, then the common ratio is?",
+        "ans": "B",
+        "opts": [
+          "(A) 1/3",
+          "(B) 1/2",
+          "(C) 2/3",
+          "(D) 3/4"
+        ],
+        "topic": "Geometric Progressions",
+        "difficulty": "hard",
+        "explanation": "We know the sum of the first n terms of a geometric progression is Sn = a * (1 - r^n) / (1 - r), where 'a' is the first term and 'r' is the common ratio. By comparing the given sum, we can find the value of 'r'."
+      },
+      {
+        "q": "Find the sum of the first 20 terms of the arithmetic progression 2, 7, 12, ...",
+        "ans": "A",
+        "opts": [
+          "(A) 190",
+          "(B) 200",
+          "(C) 210",
+          "(D) 220"
+        ],
+        "topic": "Arithmetic Progressions",
+        "difficulty": "medium",
+        "explanation": "We know the sum of the first n terms of an arithmetic progression is Sn = n/2 * [2a + (n-1)d]. By substituting the given values, we can find the sum of the first 20 terms."
+      }
+    ]
+  }
+}

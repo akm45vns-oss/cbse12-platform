@@ -1,0 +1,68 @@
+{
+  "class": "11",
+  "subject": "Chemistry",
+  "chapter": "Organic Chemistry: Some Basic Principles and Techniques",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T04:09:04.697+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "a) Write the IUPAC name of the following compound: CH₃CH₂CH₂COCH₃. <br> b) Draw the structural formula of the compound.",
+        "marks": 5,
+        "topic": "IUPAC Nomenclature",
+        "answer": "a) The IUPAC name of the compound is Propan-2-on.<br> b) The structural formula of the compound is CH₃CH₂CH₂COCH₃.<br><br> The given compound is a ketone, and the longest carbon chain containing the carbonyl group is 4 carbon atoms. Hence, the parent compound name is Propan. As the carbonyl group is at the second carbon atom, the suffix is '-2-on'.",
+        "marking_scheme": [
+          "Correct IUPAC name of the compound (2 marks)",
+          "Correct structural formula of the compound (3 marks)"
+        ]
+      },
+      {
+        "q": "Explain the difference between primary, secondary and tertiary alkyl halides on the basis of their chemical reactions. Give one example each for the given types of alkyl halides.",
+        "marks": 5,
+        "topic": "Alkyl Halides",
+        "answer": "Primary alkyl halides undergo SN1 and SN2 reactions. Secondary alkyl halides also give both SN1 and SN2 reactions. However, the rate of SN1 reaction is faster than the rate of SN2 reaction. Tertiary alkyl halides undergo only SN1 reaction.<br><br> Example of primary alkyl halide: CH₃CH₂CH₂Br<br> Example of secondary alkyl halide: CH₃CH(Br)CH₃<br> Example of tertiary alkyl halide: (CH₃)₃CBr",
+        "marking_scheme": [
+          "Correct explanation of primary alkyl halides (1.5 marks)",
+          "Correct explanation of secondary alkyl halides (1.5 marks)",
+          "Correct explanation of tertiary alkyl halides (1 mark)"
+        ]
+      },
+      {
+        "q": "a) What do you mean by stereoisomerism in organic compounds? <br> b) Explain the structural features of optical isomers and geometric isomers.",
+        "marks": 5,
+        "topic": "Stereochemistry",
+        "answer": "a) Stereoisomerism in organic compounds means the existence of molecules that have the same molecular formula and bond sequence but differ in the three-dimensional arrangement of their atoms in space.<br><br> b) Optical isomers are structural isomers that are mirror images of each other but are not superimposable on one another. Geometric isomers are structural isomers that differ in the arrangement of atoms or groups of atoms in space, but the bond sequence remains the same.",
+        "marking_scheme": [
+          "Correct definition of stereoisomerism (2 marks)",
+          "Correct explanation of optical isomers (1.5 marks)",
+          "Correct explanation of geometric isomers (1.5 marks)"
+        ]
+      },
+      {
+        "q": "Explain the principles of Electrophilic Addition Reaction. How do you distinguish between Markovnikov's addition and Anti-Markovnikov's addition?",
+        "marks": 5,
+        "topic": "Electrophilic Addition Reaction",
+        "answer": "In an Electrophilic Addition Reaction, the electrophile is added to the double bond of an alkene, resulting in the formation of a new bond. The reaction occurs in two steps: the formation of a carbocation intermediate and the attack of a nucleophile on the carbocation. Markovnikov's addition is the addition of the electrophile to the carbon atom with the most hydrogen atoms, while Anti-Markovnikov's addition is the addition of the electrophile to the carbon atom with the most hydrogen atoms in the opposite direction.<br><br> In Markovnikov's addition, the hydrogen atom is attached to the more substituted carbon atom, while in Anti-Markovnikov's addition, the hydrogen atom is attached to the less substituted carbon atom.",
+        "marking_scheme": [
+          "Correct explanation of Electrophilic Addition Reaction (2 marks)",
+          "Correct explanation of Markovnikov's addition (1.5 marks)",
+          "Correct explanation of Anti-Markovnikov's addition (1.5 marks)"
+        ]
+      },
+      {
+        "q": "a) What do you mean by reduction of a carbonyl compound? <br> b) Explain the reduction of aldehydes and ketones with sodium borohydride (NaBH₄) and lithium aluminum hydride (LiAlH₄).",
+        "marks": 5,
+        "topic": "Reduction of Carbonyl Compounds",
+        "answer": "a) The reduction of a carbonyl compound involves the addition of hydrogen to the carbonyl group, resulting in the formation of an alcohol.<br><br> b) Aldehydes and ketones can be reduced with sodium borohydride (NaBH₄) and lithium aluminum hydride (LiAlH₄) to form primary and secondary alcohols, respectively. NaBH₄ reduces aldehydes and ketones to primary and secondary alcohols, respectively, with retention of configuration. LiAlH₄ reduces aldehydes and ketones to primary and secondary alcohols, respectively, with inversion of configuration.",
+        "marking_scheme": [
+          "Correct definition of reduction of a carbonyl compound (2 marks)",
+          "Correct explanation of reduction of aldehydes and ketones with NaBH₄ (1.5 marks)",
+          "Correct explanation of reduction of aldehydes and ketones with LiAlH₄ (1.5 marks)"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Units and Measurements",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-26T08:04:52.189+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "A physical quantity is defined as the product of a fundamental quantity and a dimensionless quantity. Explain with an example. Also, give one fundamental quantity and one dimensionless quantity that can be used to define the physical quantity 'speed'.",
+        "marks": 5,
+        "topic": "Physical Quantities and Their Measurement",
+        "answer": "A physical quantity is defined as the product of a fundamental quantity and a dimensionless quantity. For instance, 'work done' is a physical quantity that can be defined as the product of force and displacement. In this case, 'force' is a fundamental quantity and 'displacement' is a dimensionless quantity. However, 'displacement' is not dimensionless. It is actually a fundamental quantity with unit of length. Therefore, a correct example would be 'work done' defined as the product of 'force' and 'cosine of angle between force and displacement'. Speed is a physical quantity that can be defined as the product of a fundamental quantity 'distance' and a dimensionless quantity 'cosine of angle between displacement and velocity' or simply 'cosine of angle between displacement and velocity' as distance and displacement are one and the same. Alternatively, 'speed' can be defined as the product of a fundamental quantity 'displacement' and a dimensionless quantity 'time taken'.",
+        "marking_scheme": [
+          "Explain the concept of a physical quantity as the product of a fundamental quantity and a dimensionless quantity (1 mark)",
+          "Provide one example of a physical quantity defined as the product of a fundamental quantity and a dimensionless quantity (1 mark)",
+          "Give one fundamental quantity and one dimensionless quantity that can be used to define the physical quantity 'speed' (2 marks)",
+          "Correctness of answer (1 mark)"
+        ]
+      },
+      {
+        "q": "Derive the relation between the density of a substance and its specific gravity. Also, derive the relation between the density of a substance and its relative density.",
+        "marks": 5,
+        "topic": "Densities",
+        "answer": "To derive the relation between the density of a substance and its specific gravity, we consider the following: Specific gravity is the ratio of the density of a substance to the density of water at a particular temperature and pressure. Therefore, specific gravity = density of substance/density of water. Similarly, to derive the relation between the density of a substance and its relative density, we consider the following: Relative density is the ratio of the density of a substance to the density of water at a particular temperature and pressure. Therefore, relative density = density of substance/density of water. Hence, specific gravity = relative density = density of substance/density of water.",
+        "marking_scheme": [
+          "Derive the relation between the density of a substance and its specific gravity (2 marks)",
+          "Derive the relation between the density of a substance and its relative density (2 marks)",
+          "Correctness of answer (1 mark)"
+        ]
+      },
+      {
+        "q": "A student measures the length of a room to be 8.0 m. If the error in measurement is ±0.2 m, what is the absolute error in measurement and percentage error in measurement?",
+        "marks": 5,
+        "topic": "Errors in Measurement",
+        "answer": "To find the absolute error in measurement, we consider the following: The absolute error in measurement is the difference between the maximum and minimum limits of error. In this case, the maximum and minimum limits of error are 8.0 + 0.2 = 8.2 m and 8.0 - 0.2 = 7.8 m respectively. Therefore, absolute error in measurement = 8.2 - 7.8 = 0.4 m. To find the percentage error in measurement, we consider the following: The percentage error in measurement is the ratio of the absolute error in measurement to the measured value, multiplied by 100. In this case, percentage error in measurement = (0.4/8.0) x 100 = 5%. Therefore, the absolute error in measurement is 0.4 m and the percentage error in measurement is 5%.",
+        "marking_scheme": [
+          "Calculate the absolute error in measurement (2 marks)",
+          "Calculate the percentage error in measurement (2 marks)",
+          "Correctness of answer (1 mark)"
+        ]
+      },
+      {
+        "q": "Explain the concept of significant figures with an example. Also, explain the rules for counting significant figures in a measured quantity.",
+        "marks": 5,
+        "topic": "Significant Figures",
+        "answer": "Significant figures are the digits in a measured quantity that are known to be reliable. The concept of significant figures is used to express the accuracy of a measured quantity. For instance, consider the measurement of the length of a room as 8.0 m. In this case, the digits 8 and 0 are the significant figures because they are known to be reliable. The digit 0 after the decimal point is not a significant figure because it is assumed to be a placeholder. The rules for counting significant figures in a measured quantity are as follows: Non-zero digits are always significant figures. Zeros between two non-zero digits are significant figures. Zeros at the end of a number are significant figures if the number contains a decimal point. Zeros at the end of a number without a decimal point are not significant figures. Digits after the decimal point are significant figures. Trailing zeros in a number without a decimal point are not significant figures.",
+        "marking_scheme": [
+          "Explain the concept of significant figures with an example (2 marks)",
+          "Explain the rules for counting significant figures in a measured quantity (2 marks)",
+          "Correctness of answer (1 mark)"
+        ]
+      },
+      {
+        "q": "A student measures the mass of an object to be 7.35 g. If the error in measurement is ±0.03 g, what is the absolute error in measurement and percentage error in measurement?",
+        "marks": 5,
+        "topic": "Errors in Measurement",
+        "answer": "To find the absolute error in measurement, we consider the following: The absolute error in measurement is the difference between the maximum and minimum limits of error. In this case, the maximum and minimum limits of error are 7.35 + 0.03 = 7.38 g and 7.35 - 0.03 = 7.32 g respectively. Therefore, absolute error in measurement = 7.38 - 7.32 = 0.06 g. To find the percentage error in measurement, we consider the following: The percentage error in measurement is the ratio of the absolute error in measurement to the measured value, multiplied by 100. In this case, percentage error in measurement = (0.06/7.35) x 100 = 0.816%. Therefore, the absolute error in measurement is 0.06 g and the percentage error in measurement is 0.816%.",
+        "marking_scheme": [
+          "Calculate the absolute error in measurement (2 marks)",
+          "Calculate the percentage error in measurement (2 marks)",
+          "Correctness of answer (1 mark)"
+        ]
+      }
+    ]
+  }
+}

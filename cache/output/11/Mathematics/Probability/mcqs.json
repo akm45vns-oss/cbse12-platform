@@ -1,0 +1,274 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Probability",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:16:29.557+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 20,
+    "questions": [
+      {
+        "q": "What is the sum of all probabilities of all possible outcomes in a random experiment?",
+        "ans": "A",
+        "opts": [
+          "(A) 1",
+          "(B) 0",
+          "(C) 2",
+          "(D) -1"
+        ],
+        "topic": "Introduction to Probability",
+        "difficulty": "easy",
+        "explanation": "Since probabilities range between 0 and 1, the sum of all probabilities must be 1."
+      },
+      {
+        "q": "A die is rolled. What is the probability of getting an even number?",
+        "ans": "B",
+        "opts": [
+          "(A) 1/4",
+          "(B) 1/2",
+          "(C) 3/4",
+          "(D) 1/3"
+        ],
+        "topic": "Experimental Probability",
+        "difficulty": "easy",
+        "explanation": "There are 3 even numbers (2, 4, 6) out of 6 possible outcomes."
+      },
+      {
+        "q": "What is the probability of getting two heads in two tosses of a fair coin?",
+        "ans": "B",
+        "opts": [
+          "(A) 1/4",
+          "(B) 1/2",
+          "(C) 3/4",
+          "(D) 2/3"
+        ],
+        "topic": "Theoretical Probability",
+        "difficulty": "easy",
+        "explanation": "The probability of getting a head in one toss is 1/2. The probability of getting two heads is (1/2) * (1/2) = 1/4."
+      },
+      {
+        "q": "A coin is tossed twice. What is the probability that the first toss is a head and the second toss is a tail?",
+        "ans": "A",
+        "opts": [
+          "(A) 1/4",
+          "(B) 1/2",
+          "(C) 3/4",
+          "(D) 2/3"
+        ],
+        "topic": "Conditional Probability",
+        "difficulty": "easy",
+        "explanation": "The probability of getting a head in the first toss is 1/2, and the probability of getting a tail in the second toss is 1/2."
+      },
+      {
+        "q": "A box contains 5 red balls and 3 blue balls. What is the probability of drawing a red ball?",
+        "ans": "B",
+        "opts": [
+          "(A) 1/2",
+          "(B) 2/3",
+          "(C) 3/4",
+          "(D) 4/5"
+        ],
+        "topic": "Random Variables",
+        "difficulty": "medium",
+        "explanation": "There are 5 red balls out of a total of 8 balls."
+      },
+      {
+        "q": "A fair six-sided die is rolled. What is the probability that the number rolled is greater than 4?",
+        "ans": "C",
+        "opts": [
+          "(A) 1/3",
+          "(B) 1/2",
+          "(C) 2/3",
+          "(D) 5/6"
+        ],
+        "topic": "Probability Distribution",
+        "difficulty": "medium",
+        "explanation": "There are 2 numbers greater than 4 (5, 6) out of 6 possible outcomes."
+      },
+      {
+        "q": "A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card is a king?",
+        "ans": "B",
+        "opts": [
+          "(A) 1/4",
+          "(B) 1/13",
+          "(C) 3/13",
+          "(D) 12/52"
+        ],
+        "topic": "Random Variables",
+        "difficulty": "medium",
+        "explanation": "There are 4 kings out of a total of 52 cards."
+      },
+      {
+        "q": "A box contains 2 red balls and 3 blue balls. What is the probability of drawing a blue ball?",
+        "ans": "B",
+        "opts": [
+          "(A) 1/2",
+          "(B) 2/5",
+          "(C) 3/5",
+          "(D) 4/5"
+        ],
+        "topic": "Random Variables",
+        "difficulty": "medium",
+        "explanation": "There are 3 blue balls out of a total of 5 balls."
+      },
+      {
+        "q": "A coin is tossed three times. What is the probability of getting exactly two heads?",
+        "ans": "B",
+        "opts": [
+          "(A) 1/4",
+          "(B) 1/2",
+          "(C) 3/4",
+          "(D) 2/3"
+        ],
+        "topic": "Binomial Distribution",
+        "difficulty": "medium",
+        "explanation": "There are 3 ways to get exactly two heads (HTT, THT, TTH). The probability of each is (1/2) * (1/2) * (1/2) = 1/8. So, the total probability is 3/8."
+      },
+      {
+        "q": "A random variable X has a probability distribution given by P(X = 0) = 1/4, P(X = 1) = 1/2, P(X = 2) = 1/4. What is the mean of X?",
+        "ans": "B",
+        "opts": [
+          "(A) 0",
+          "(B) 1/2",
+          "(C) 1",
+          "(D) 2"
+        ],
+        "topic": "Mean and Variance of a Random Variable",
+        "difficulty": "medium",
+        "explanation": "The mean is calculated as (0 * 1/4) + (1 * 1/2) + (2 * 1/4) = 1/2."
+      },
+      {
+        "q": "A random variable X has a probability distribution given by P(X = 0) = 1/2, P(X = 1) = 1/4, P(X = 2) = 1/4. What is the variance of X?",
+        "ans": "B",
+        "opts": [
+          "(A) 0",
+          "(B) 1/2",
+          "(C) 1",
+          "(D) 2"
+        ],
+        "topic": "Mean and Variance of a Random Variable",
+        "difficulty": "medium",
+        "explanation": "The variance is calculated as (0 - 1/2)^2 * (1/2) + (1 - 1/2)^2 * (1/4) + (2 - 1/2)^2 * (1/4) = 1/2."
+      },
+      {
+        "q": "A random variable X has a probability distribution given by P(X = 0) = 1/3, P(X = 1) = 1/3, P(X = 2) = 1/3. What is the standard deviation of X?",
+        "ans": "B",
+        "opts": [
+          "(A) 0",
+          "(B) 1/2",
+          "(C) 1",
+          "(D) 2"
+        ],
+        "topic": "Mean and Variance of a Random Variable",
+        "difficulty": "medium",
+        "explanation": "The standard deviation is the square root of the variance. The variance is calculated as (0 - 1/3)^2 * (1/3) + (1 - 1/3)^2 * (1/3) + (2 - 1/3)^2 * (1/3) = 2/9. So, the standard deviation is sqrt(2/9) = 1/3."
+      },
+      {
+        "q": "A random variable X has a probability distribution given by P(X = 0) = 1/4, P(X = 1) = 1/2, P(X = 2) = 1/4. What is the probability that X is greater than 1?",
+        "ans": "B",
+        "opts": [
+          "(A) 1/4",
+          "(B) 1/2",
+          "(C) 3/4",
+          "(D) 1"
+        ],
+        "topic": "Conditional Probability",
+        "difficulty": "medium",
+        "explanation": "The probability that X is greater than 1 is the sum of the probabilities of X = 2 and X = 0."
+      },
+      {
+        "q": "A random variable X has a probability distribution given by P(X = 0) = 1/3, P(X = 1) = 1/3, P(X = 2) = 1/3. What is the probability that X is less than or equal to 1?",
+        "ans": "B",
+        "opts": [
+          "(A) 1/3",
+          "(B) 2/3",
+          "(C) 1/2",
+          "(D) 1"
+        ],
+        "topic": "Conditional Probability",
+        "difficulty": "medium",
+        "explanation": "The probability that X is less than or equal to 1 is the sum of the probabilities of X = 0 and X = 1."
+      },
+      {
+        "q": "A fair six-sided die is rolled. What is the probability that the number rolled is not divisible by 3?",
+        "ans": "C",
+        "opts": [
+          "(A) 1/3",
+          "(B) 1/2",
+          "(C) 2/3",
+          "(D) 5/6"
+        ],
+        "topic": "Random Variables",
+        "difficulty": "hard",
+        "explanation": "The numbers not divisible by 3 are 1, 2, 4, 5."
+      },
+      {
+        "q": "A random variable X has a probability distribution given by P(X = 0) = 1/2, P(X = 1) = 1/4, P(X = 2) = 1/4. What is the probability that X is greater than or equal to 1?",
+        "ans": "C",
+        "opts": [
+          "(A) 1/2",
+          "(B) 1/4",
+          "(C) 3/4",
+          "(D) 1"
+        ],
+        "topic": "Conditional Probability",
+        "difficulty": "hard",
+        "explanation": "The probability that X is greater than or equal to 1 is the sum of the probabilities of X = 1 and X = 2."
+      },
+      {
+        "q": "A random variable X has a probability distribution given by P(X = 0) = 1/4, P(X = 1) = 1/2, P(X = 2) = 1/4. What is the probability that X is less than or equal to 0?",
+        "ans": "A",
+        "opts": [
+          "(A) 1/4",
+          "(B) 1/2",
+          "(C) 3/4",
+          "(D) 1"
+        ],
+        "topic": "Conditional Probability",
+        "difficulty": "hard",
+        "explanation": "The probability that X is less than or equal to 0 is the probability of X = 0."
+      },
+      {
+        "q": "A fair coin is tossed four times. What is the probability of getting exactly two heads and two tails?",
+        "ans": "C",
+        "opts": [
+          "(A) 3/8",
+          "(B) 5/16",
+          "(C) 1/2",
+          "(D) 3/4"
+        ],
+        "topic": "Binomial Distribution",
+        "difficulty": "hard",
+        "explanation": "There are 6 ways to get exactly two heads and two tails (HHHT, HTTH, HTHH, THHH, TTHH, HTHT). The probability of each is (1/2)^4 = 1/16. So, the total probability is 6/16 = 3/8."
+      },
+      {
+        "q": "A random variable X has a probability distribution given by P(X = 0) = 1/2, P(X = 1) = 1/4, P(X = 2) = 1/4. What is the mean of X?",
+        "ans": "B",
+        "opts": [
+          "(A) 0",
+          "(B) 1/2",
+          "(C) 1",
+          "(D) 2"
+        ],
+        "topic": "Mean and Variance of a Random Variable",
+        "difficulty": "hard",
+        "explanation": "The mean is calculated as (0 * 1/2) + (1 * 1/4) + (2 * 1/4) = 1/2."
+      },
+      {
+        "q": "A random variable X has a probability distribution given by P(X = 0) = 1/4, P(X = 1) = 1/2, P(X = 2) = 1/4. What is the variance of X?",
+        "ans": "B",
+        "opts": [
+          "(A) 0",
+          "(B) 1/2",
+          "(C) 1",
+          "(D) 2"
+        ],
+        "topic": "Mean and Variance of a Random Variable",
+        "difficulty": "hard",
+        "explanation": "The variance is calculated as (0 - 1/2)^2 * (1/2) + (1 - 1/2)^2 * (1/4) + (2 - 1/2)^2 * (1/4) = 1/2."
+      }
+    ]
+  }
+}

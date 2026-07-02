@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Presentation of Data",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:33:59.172+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 9,
+    "questions": [
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Mean is sensitive to extreme values, which can distort the average in skewed distributions.",
+        "assertion": "Assertion (A): Median is better than mean for skewed distribution.",
+        "explanation": "In skewed distributions, extreme values can greatly affect the mean, making median a better measure of central tendency."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Mean is sensitive to extreme values.",
+        "assertion": "Assertion (A): Mean is the best measure of central tendency.",
+        "explanation": "Mean is not the best measure of central tendency because it is sensitive to extreme values, which can distort the average."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Mode is the value that appears most frequently in a data set.",
+        "assertion": "Assertion (A): Mode is the best measure of central tendency.",
+        "explanation": "Mode is indeed the best measure of central tendency when the data is discrete and there are multiple peaks, but it's not always the case."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Range is the difference between the highest and lowest values in a data set.",
+        "assertion": "Assertion (A): Range is a measure of dispersion.",
+        "explanation": "Range indeed measures the spread of the data and is the difference between the highest and lowest values."
+      },
+      {
+        "ans": "C",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Range measures the difference between the highest and lowest values, while variance measures the average of the squared differences from the mean.",
+        "assertion": "Assertion (A): Variance is always greater than or equal to the range.",
+        "explanation": "Variance is not always greater than or equal to the range; in fact, variance can be much smaller than the range."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Standard deviation is the square root of the variance.",
+        "assertion": "Assertion (A): Standard deviation measures the spread of the data.",
+        "explanation": "Standard deviation indeed measures the spread of the data and is the square root of the variance."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Coefficient of variation is the ratio of the standard deviation to the mean.",
+        "assertion": "Assertion (A): Coefficient of variation is a measure of relative dispersion.",
+        "explanation": "Coefficient of variation indeed measures relative dispersion and is the ratio of the standard deviation to the mean."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Quartiles divide the data into four equal parts.",
+        "assertion": "Assertion (A): Quartiles are measures of central tendency.",
+        "explanation": "Quartiles are actually measures of dispersion, not central tendency, as they divide the data into four equal parts."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Deciles divide the data into ten equal parts.",
+        "assertion": "Assertion (A): Deciles are measures of central tendency.",
+        "explanation": "Deciles are actually measures of dispersion, not central tendency, as they divide the data into ten equal parts."
+      }
+    ]
+  }
+}

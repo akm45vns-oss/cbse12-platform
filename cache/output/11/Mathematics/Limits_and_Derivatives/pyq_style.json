@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Limits and Derivatives",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:09:32.103+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "q": "If f(x) = |x|, then find the left-hand limit and right-hand limit of f(x) as x approaches 0.",
+        "type": "Long Answer",
+        "marks": 3,
+        "answer": "Left-hand limit: 0, Right-hand limit: 0",
+        "difficulty": "easy",
+        "year_pattern": "2016-style"
+      },
+      {
+        "q": "Find the derivative of f(x) = x^2 sin x using the product rule.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "f'(x) = 2x sin x + x^2 cos x",
+        "difficulty": "medium",
+        "year_pattern": "2018-style"
+      },
+      {
+        "q": "If lim x→a [f(x) + g(x)] = 4 and lim x→a f(x) = -2, then find the value of lim x→a g(x).",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "6",
+        "difficulty": "easy",
+        "year_pattern": "2015-style"
+      },
+      {
+        "q": "Examine the continuity of f(x) = x^2 sin (1/x) at x = 0.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "Function is continuous at x = 0.",
+        "difficulty": "hard",
+        "year_pattern": "2019-style"
+      },
+      {
+        "q": "Find the derivative of f(x) = (2x - 5)(3x + 1) using the product rule.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "f'(x) = (2x - 5)(3) + (3x + 1)(2)",
+        "difficulty": "medium",
+        "year_pattern": "2017-style"
+      },
+      {
+        "q": "If lim x→2 (x^2 - 4) / (x - 2) = 4, then find the value of the derivative of f(x) = x^2 - 4 at x = 2.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "8",
+        "difficulty": "easy",
+        "year_pattern": "2014-style"
+      },
+      {
+        "q": "Find the derivative of f(x) = e^(2x) using the chain rule.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "f'(x) = 2e^(2x)",
+        "difficulty": "medium",
+        "year_pattern": "2020-style"
+      },
+      {
+        "q": "Examine the differentiability of f(x) = |x| at x = 0.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "Function is not differentiable at x = 0.",
+        "difficulty": "hard",
+        "year_pattern": "2016-style"
+      },
+      {
+        "q": "If f(x) = x^3 - 6x^2 + 9x + 2, then find the derivative of f(x) at x = 1.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "f'(1) = 0",
+        "difficulty": "medium",
+        "year_pattern": "2018-style"
+      },
+      {
+        "q": "Find the derivative of f(x) = tan x using the chain rule.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "f'(x) = sec^2 x",
+        "difficulty": "medium",
+        "year_pattern": "2019-style"
+      }
+    ]
+  }
+}

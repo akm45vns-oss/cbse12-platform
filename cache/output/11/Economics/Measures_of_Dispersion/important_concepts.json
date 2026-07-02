@@ -1,0 +1,121 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Measures of Dispersion",
+  "content_type": "important_concepts",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T14:14:11.356+00:00",
+  "version": "1.0",
+  "data": {
+    "concepts": [
+      {
+        "concept": "Range",
+        "importance": "Important for understanding the spread of data and its limitations.",
+        "explanation": "The difference between the highest and lowest values in a dataset. It is a simple measure of dispersion, but it is sensitive to outliers.",
+        "related_topics": [
+          "Mean Deviation",
+          "Variance"
+        ]
+      },
+      {
+        "concept": "Mean Deviation",
+        "importance": "Important for understanding the spread of data and its limitations.",
+        "explanation": "The average of the absolute differences between each data point and the mean. It is a measure of the spread of data, but it is sensitive to outliers.",
+        "related_topics": [
+          "Range",
+          "Variance"
+        ]
+      },
+      {
+        "concept": "Variance",
+        "importance": "Important for understanding the spread of data and its use in statistical analysis.",
+        "explanation": "The average of the squared differences between each data point and the mean. It is a measure of the spread of data and is often used as a basis for other measures of dispersion.",
+        "related_topics": [
+          "Standard Deviation",
+          "Coefficient of Variation"
+        ]
+      },
+      {
+        "concept": "Standard Deviation",
+        "importance": "Important for understanding the spread of data and its use in statistical analysis.",
+        "explanation": "The square root of the variance. It is a measure of the spread of data and is often used to express the variability of a dataset.",
+        "related_topics": [
+          "Variance",
+          "Coefficient of Variation"
+        ]
+      },
+      {
+        "concept": "Coefficient of Variation",
+        "importance": "Important for comparing the variability of different datasets.",
+        "explanation": "The ratio of the standard deviation to the mean, expressed as a percentage. It is a measure of relative variability.",
+        "related_topics": [
+          "Standard Deviation",
+          "Variance"
+        ]
+      },
+      {
+        "concept": "Quartile Deviation",
+        "importance": "Important for understanding the spread of data in skewed distributions.",
+        "explanation": "Half of the difference between the third quartile and the first quartile. It is a measure of the spread of data and is often used in situations where the data is skewed.",
+        "related_topics": [
+          "Interquartile Range",
+          "Median"
+        ]
+      },
+      {
+        "concept": "Interquartile Range",
+        "importance": "Important for understanding the spread of data in skewed distributions.",
+        "explanation": "The difference between the third quartile and the first quartile. It is a measure of the spread of data and is often used in situations where the data is skewed.",
+        "related_topics": [
+          "Quartile Deviation",
+          "Median"
+        ]
+      },
+      {
+        "concept": "Geometric Mean Deviation",
+        "importance": "Important for understanding the spread of data in financial and economic analysis.",
+        "explanation": "The average of the absolute differences between each data point and the geometric mean. It is a measure of the spread of data and is often used in financial and economic analysis.",
+        "related_topics": [
+          "Geometric Mean",
+          "Variance"
+        ]
+      },
+      {
+        "concept": "Median Absolute Deviation",
+        "importance": "Important for understanding the spread of data in skewed distributions.",
+        "explanation": "The average of the absolute differences between each data point and the median. It is a measure of the spread of data and is often used in situations where the data is skewed.",
+        "related_topics": [
+          "Median",
+          "Interquartile Range"
+        ]
+      },
+      {
+        "concept": "Index of Dispersion",
+        "importance": "Important for understanding the spread of data in skewed distributions.",
+        "explanation": "The ratio of the variance to the mean. It is a measure of the spread of data and is often used in situations where the data is skewed.",
+        "related_topics": [
+          "Variance",
+          "Mean"
+        ]
+      },
+      {
+        "concept": "Standard Error of the Mean",
+        "importance": "Important for understanding the reliability of sample statistics.",
+        "explanation": "The standard deviation of the sampling distribution of the mean. It is a measure of the spread of the sampling distribution.",
+        "related_topics": [
+          "Standard Deviation",
+          "Sampling Distribution"
+        ]
+      },
+      {
+        "concept": "Range Rule of Thumb",
+        "importance": "Important for understanding the sampling process and the reliability of sample statistics.",
+        "explanation": "A rule of thumb for determining the number of observations required to estimate a population parameter with a certain degree of accuracy.",
+        "related_topics": [
+          "Sampling Distribution",
+          "Standard Error of the Mean"
+        ]
+      }
+    ]
+  }
+}

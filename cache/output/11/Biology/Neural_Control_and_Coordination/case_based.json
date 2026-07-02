@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Biology",
+  "chapter": "Neural Control and Coordination",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:12:50.485+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The human brain, a complex organ, is made up of billions of neurons that communicate with each other through electrical and chemical signals. The nervous system, consisting of the central nervous system (CNS) and the peripheral nervous system (PNS), plays a crucial role in controlling and coordinating various bodily functions. The CNS, comprising the brain and spinal cord, processes information and sends signals to the PNS, which then transmits these signals to the muscles and glands. For instance, when you stretch your hand to pick up a pen, the sensory receptors in your skin detect the stimulus and send signals to the CNS, which then sends signals to the motor neurons in your arm, causing the muscles to contract and move the pen towards your hand.",
+        "questions": [
+          {
+            "q": "What is the primary function of the central nervous system (CNS)?",
+            "ans": "B",
+            "opts": [
+              "(A) To transmit signals to muscles and glands",
+              "(B) To process information and send signals to the peripheral nervous system (PNS)",
+              "(C) To detect sensory stimuli",
+              "(D) To control involuntary functions"
+            ],
+            "explanation": "The CNS processes information and sends signals to the PNS, which then transmits these signals to the muscles and glands."
+          },
+          {
+            "q": "Which part of the nervous system is responsible for transmitting signals from the CNS to the muscles and glands?",
+            "ans": "A",
+            "opts": [
+              "(A) Peripheral nervous system (PNS)",
+              "(B) Central nervous system (CNS)",
+              "(C) Somatic nervous system",
+              "(D) Autonomic nervous system"
+            ],
+            "explanation": "The PNS transmits signals from the CNS to the muscles and glands."
+          },
+          {
+            "q": "What happens when sensory receptors in the skin detect a stimulus?",
+            "ans": "C",
+            "opts": [
+              "(A) The CNS sends signals to the PNS to transmit to the muscles and glands",
+              "(B) The PNS sends signals to the CNS to process information",
+              "(C) The sensory receptors send signals to the CNS",
+              "(D) The muscles and glands contract"
+            ],
+            "explanation": "When sensory receptors in the skin detect a stimulus, they send signals to the CNS."
+          },
+          {
+            "q": "Which part of the nervous system is responsible for controlling voluntary movements?",
+            "ans": "A",
+            "opts": [
+              "(A) Somatic nervous system",
+              "(B) Autonomic nervous system",
+              "(C) Central nervous system (CNS)",
+              "(D) Peripheral nervous system (PNS)"
+            ],
+            "explanation": "The somatic nervous system is responsible for controlling voluntary movements."
+          },
+          {
+            "q": "What is the role of the spinal cord in the nervous system?",
+            "ans": "D",
+            "opts": [
+              "(A) To process information and send signals to the PNS",
+              "(B) To detect sensory stimuli",
+              "(C) To control involuntary functions",
+              "(D) To transmit signals between the CNS and the PNS"
+            ],
+            "explanation": "The spinal cord transmits signals between the CNS and the PNS."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "In the field of robotics, neural control and coordination play a crucial role in developing intelligent robots that can interact with their environment. By mimicking the human nervous system, researchers have developed robots that can learn and adapt to new situations. For instance, a robot designed to navigate through a maze can use its sensors to detect obstacles and adjust its path accordingly. This ability to learn and adapt is made possible by the use of artificial neural networks, which are modeled after the human brain's neural networks.",
+        "questions": [
+          {
+            "q": "What is the primary goal of developing robots that can interact with their environment?",
+            "ans": "B",
+            "opts": [
+              "(A) To mimic the human nervous system",
+              "(B) To develop robots that can learn and adapt to new situations",
+              "(C) To improve robotic accuracy",
+              "(D) To reduce robotic complexity"
+            ],
+            "explanation": "The primary goal is to develop robots that can learn and adapt to new situations."
+          },
+          {
+            "q": "What is the role of artificial neural networks in robotics?",
+            "ans": "C",
+            "opts": [
+              "(A) To detect obstacles",
+              "(B) To transmit signals between the CNS and the PNS",
+              "(C) To model the human brain's neural networks",
+              "(D) To control involuntary functions"
+            ],
+            "explanation": "Artificial neural networks are modeled after the human brain's neural networks."
+          },
+          {
+            "q": "How do robots use their sensors to navigate through a maze?",
+            "ans": "A",
+            "opts": [
+              "(A) By detecting obstacles and adjusting their path",
+              "(B) By processing information and sending signals to the PNS",
+              "(C) By controlling voluntary movements",
+              "(D) By transmitting signals between the CNS and the PNS"
+            ],
+            "explanation": "Robots use their sensors to detect obstacles and adjust their path accordingly."
+          },
+          {
+            "q": "What is the benefit of using artificial neural networks in robotics?",
+            "ans": "C",
+            "opts": [
+              "(A) Improved robotic accuracy",
+              "(B) Reduced robotic complexity",
+              "(C) Ability to learn and adapt to new situations",
+              "(D) Increased robotic speed"
+            ],
+            "explanation": "Artificial neural networks enable robots to learn and adapt to new situations."
+          },
+          {
+            "q": "Why is it essential to mimic the human nervous system in robotics?",
+            "ans": "D",
+            "opts": [
+              "(A) To improve robotic accuracy",
+              "(B) To develop robots that can learn and adapt to new situations",
+              "(C) To reduce robotic complexity",
+              "(D) To enable robots to interact with their environment"
+            ],
+            "explanation": "Mimicking the human nervous system enables robots to interact with their environment."
+          }
+        ]
+      }
+    ]
+  }
+}

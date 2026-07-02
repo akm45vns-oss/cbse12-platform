@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Statistics",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:16:28.163+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 9,
+    "questions": [
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Since mode is the middle-most value in a data set, it is always less than or equal to the mean.",
+        "assertion": "Assertion (A): The mean of a data set is always greater than or equal to the mode.",
+        "explanation": "The mean is always greater than or equal to the mode. The reason is that the mean is the average of all values in the data set, which makes it always greater than or equal to the mode."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): The median is the middle value in a data set when it is arranged in ascending or descending order.",
+        "assertion": "Assertion (A): The median of a data set is always greater than the mode.",
+        "explanation": "This statement is generally true, as the median is a measure of central tendency that lies between the smallest and largest values in the data set."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): It is possible for a data set to have more than one mode.",
+        "assertion": "Assertion (A): The mode of a data set is always unique.",
+        "explanation": "The statement is false as a data set can have more than one mode, also known as bimodal or multimodal data."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): The interquartile range measures the difference between the 75th percentile and the 25th percentile.",
+        "assertion": "Assertion (A): The range of a data set is always greater than or equal to the interquartile range.",
+        "explanation": "The range is indeed greater than or equal to the interquartile range, as the range measures the difference between the largest and smallest values in the data set."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): A correlation coefficient is a statistical measure that calculates the strength and direction of the linear relationship between two variables.",
+        "assertion": "Assertion (A): A correlation coefficient value of 0 indicates no correlation between two variables.",
+        "explanation": "A correlation coefficient value of 0 indeed indicates no correlation between two variables, as it represents the absence of a linear relationship."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): The variance is the average of the squared differences from the mean, which makes it always less than or equal to the standard deviation.",
+        "assertion": "Assertion (A): The standard deviation of a data set is always greater than or equal to the variance.",
+        "explanation": "The standard deviation is indeed greater than or equal to the variance, as the variance measures the average of the squared differences from the mean."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): The coefficient of variation is a measure of relative variability in a data set.",
+        "assertion": "Assertion (A): The coefficient of variation is a measure of skewness in a data set.",
+        "explanation": "The coefficient of variation is not a measure of skewness but rather a measure of relative variability in a data set."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): The mean deviation about the median is always less than or equal to the mean deviation about the mean.",
+        "assertion": "Assertion (A): The mean deviation about the median is always greater than or equal to the mean deviation about the mean.",
+        "explanation": "The statement is false as the mean deviation about the median is indeed less than or equal to the mean deviation about the mean."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Pearson's coefficient of skewness is a measure of skewness in a data set.",
+        "assertion": "Assertion (A): The measure of skewness is given by the Pearson's coefficient of skewness.",
+        "explanation": "Pearson's coefficient of skewness is a measure of skewness in a data set, hence it is used to determine the skewness of the data."
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Chemistry",
+  "chapter": "Environmental Chemistry",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:07:21.148+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The city of Delhi is facing a severe air pollution crisis. The major contributors to this problem are the high vehicular population, industrial activities, and the burning of crop residues. The air quality index (AQI) often exceeds the safe limit, posing a significant threat to public health. To combat this issue, the government has implemented various measures such as promoting the use of electric vehicles, increasing the use of renewable energy sources, and enforcing strict pollution norms for industries.",
+        "questions": [
+          {
+            "q": "What are the major contributors to air pollution in Delhi?",
+            "ans": "B",
+            "opts": [
+              "(A) Industrial activities and burning of crop residues",
+              "(B) Vehicular population and industrial activities",
+              "(C) Burning of crop residues and vehicular population",
+              "(D) Industrial activities and vehicular population"
+            ],
+            "explanation": "The passage states that the high vehicular population and industrial activities are the major contributors to air pollution in Delhi."
+          },
+          {
+            "q": "What is the effect of high AQI on public health?",
+            "ans": "B",
+            "opts": [
+              "(A) No significant impact",
+              "(B) A significant threat",
+              "(C) Only a minor nuisance",
+              "(D) No impact at all"
+            ],
+            "explanation": "The passage states that the high AQI often exceeds the safe limit, posing a significant threat to public health."
+          },
+          {
+            "q": "What measure has the government implemented to combat air pollution?",
+            "ans": "D",
+            "opts": [
+              "(A) Promoting the use of electric vehicles",
+              "(B) Increasing the use of fossil fuels",
+              "(C) Enforcing strict pollution norms for industries",
+              "(D) All of the above"
+            ],
+            "explanation": "The passage states that the government has implemented various measures such as promoting the use of electric vehicles, increasing the use of renewable energy sources, and enforcing strict pollution norms for industries."
+          },
+          {
+            "q": "Why is the burning of crop residues a contributor to air pollution?",
+            "ans": "A",
+            "opts": [
+              "(A) It releases harmful gases into the atmosphere",
+              "(B) It reduces the population of harmful insects",
+              "(C) It increases the production of crops",
+              "(D) It has no impact on air pollution"
+            ],
+            "explanation": "The passage states that the burning of crop residues is a contributor to air pollution, which implies that it releases harmful gases into the atmosphere."
+          },
+          {
+            "q": "What is the AQI?",
+            "ans": "A",
+            "opts": [
+              "(A) A measure of air quality",
+              "(B) A measure of water quality",
+              "(C) A measure of soil quality",
+              "(D) A measure of temperature"
+            ],
+            "explanation": "The passage states that the air quality index (AQI) often exceeds the safe limit, posing a significant threat to public health."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "The contamination of water sources is a major environmental issue in many parts of the world. The main causes of water pollution are the discharge of industrial effluents, sewage, and agricultural runoff. These pollutants can lead to the formation of harmful substances such as heavy metals and pesticides, which can have severe health effects on humans and wildlife.",
+        "questions": [
+          {
+            "q": "What are the main causes of water pollution?",
+            "ans": "D",
+            "opts": [
+              "(A) Industrial effluents and agricultural runoff",
+              "(B) Sewage and industrial effluents",
+              "(C) Agricultural runoff and sewage",
+              "(D) All of the above"
+            ],
+            "explanation": "The passage states that the main causes of water pollution are the discharge of industrial effluents, sewage, and agricultural runoff."
+          },
+          {
+            "q": "What substances can form as a result of water pollution?",
+            "ans": "A",
+            "opts": [
+              "(A) Heavy metals and pesticides",
+              "(B) Oxygen and hydrogen",
+              "(C) Carbon dioxide and water",
+              "(D) None of the above"
+            ],
+            "explanation": "The passage states that the pollutants in water can lead to the formation of harmful substances such as heavy metals and pesticides."
+          },
+          {
+            "q": "What are the health effects of water pollution on humans and wildlife?",
+            "ans": "C",
+            "opts": [
+              "(A) No significant impact",
+              "(B) A minor nuisance",
+              "(C) Severe health effects",
+              "(D) No impact at all"
+            ],
+            "explanation": "The passage states that the pollutants in water can have severe health effects on humans and wildlife."
+          },
+          {
+            "q": "Why is the discharge of industrial effluents a cause of water pollution?",
+            "ans": "C",
+            "opts": [
+              "(A) It increases the oxygen levels in water",
+              "(B) It reduces the population of harmful insects",
+              "(C) It releases harmful substances into the water",
+              "(D) It has no impact on water quality"
+            ],
+            "explanation": "The passage states that the discharge of industrial effluents is a cause of water pollution, which implies that it releases harmful substances into the water."
+          },
+          {
+            "q": "What is the effect of agricultural runoff on water pollution?",
+            "ans": "B",
+            "opts": [
+              "(A) It reduces the levels of pollutants in water",
+              "(B) It increases the levels of pollutants in water",
+              "(C) It has no impact on water pollution",
+              "(D) It reduces the levels of oxygen in water"
+            ],
+            "explanation": "The passage states that agricultural runoff is a cause of water pollution, which implies that it increases the levels of pollutants in water."
+          }
+        ]
+      }
+    ]
+  }
+}

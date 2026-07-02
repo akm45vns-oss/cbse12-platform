@@ -1,0 +1,102 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Infrastructure",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T06:21:47.543+00:00",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Formula for Calculating Length of a Circular Road",
+        "notes": "Use this formula to calculate the length of a circular road when the radius is known.",
+        "units": "Meters (m)",
+        "formula": "L = 2 * π * r",
+        "variables": {
+          "L": "Length of the circular road",
+          "r": "Radius of the circular road",
+          "π": "Mathematical constant Pi (approximately 3.14)"
+        }
+      },
+      {
+        "name": "Formula for Calculating Area of a Circular Road",
+        "notes": "Use this formula to calculate the area of a circular road when the radius is known.",
+        "units": "Square meters (m^2)",
+        "formula": "A = π * r^2",
+        "variables": {
+          "A": "Area of the circular road",
+          "r": "Radius of the circular road",
+          "π": "Mathematical constant Pi (approximately 3.14)"
+        }
+      },
+      {
+        "name": "Formula for Calculating Perimeter of a Rectangle",
+        "notes": "Use this formula to calculate the perimeter of a rectangle when the length and breadth are known.",
+        "units": "Meters (m)",
+        "formula": "P = 2 * (L + B)",
+        "variables": {
+          "B": "Breadth of the rectangle",
+          "L": "Length of the rectangle",
+          "P": "Perimeter of the rectangle"
+        }
+      },
+      {
+        "name": "Formula for Calculating Area of a Rectangle",
+        "notes": "Use this formula to calculate the area of a rectangle when the length and breadth are known.",
+        "units": "Square meters (m^2)",
+        "formula": "A = L * B",
+        "variables": {
+          "A": "Area of the rectangle",
+          "B": "Breadth of the rectangle",
+          "L": "Length of the rectangle"
+        }
+      },
+      {
+        "name": "Gross Domestic Product (GDP) Formula",
+        "notes": "Use this formula to calculate the Gross Domestic Product when the consumer expenditure, investment expenditure, government expenditure, and net export are known.",
+        "units": "Rupees (₹)",
+        "formula": "GDP = C + I + G + X",
+        "variables": {
+          "C": "Consumer Expenditure (Household Expenditure)",
+          "G": "Government Expenditure",
+          "I": "Investment Expenditure",
+          "X": "Export (Net)",
+          "GDP": "Gross Domestic Product"
+        }
+      },
+      {
+        "name": "Net Domestic Product (NDP) Formula",
+        "notes": "Use this formula to calculate the Net Domestic Product when the Gross Domestic Product and total depreciation are known.",
+        "units": "Rupees (₹)",
+        "formula": "NDP = GDP - Depreciation",
+        "variables": {
+          "GDP": "Gross Domestic Product",
+          "NDP": "Net Domestic Product",
+          "Depreciation": "Total Depreciation"
+        }
+      },
+      {
+        "name": "National Income Formula",
+        "notes": "Use this formula to calculate the National Income when the Gross Domestic Product at Factor Cost is known.",
+        "units": "Rupees (₹)",
+        "formula": "NI = GDP (at Factor Cost)",
+        "variables": {
+          "NI": "National Income",
+          "GDP (at Factor Cost)": "Gross Domestic Product at Factor Cost"
+        }
+      },
+      {
+        "name": "Infrastructure Index Formula",
+        "notes": "Use this formula to calculate the Infrastructure Index when the weightage and value of each sector are known.",
+        "units": "Index value",
+        "formula": "II = Σ (Wi * xi) / Σ Wi",
+        "variables": {
+          "II": "Infrastructure Index",
+          "Wi": "Weightage assigned to each sector",
+          "xi": "Value of each sector"
+        }
+      }
+    ]
+  }
+}

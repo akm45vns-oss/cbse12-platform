@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Trigonometric Functions",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T15:34:20.961+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "q": "If sin x = 3/5, then find the value of cos x.",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "4/5",
+        "difficulty": "easy",
+        "year_pattern": "2018-style"
+      },
+      {
+        "q": "Prove that 2sin^(2) x + sin x = 0 has no solution for 0° ≤ x ≤ 360°.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Let 2sin^(2) x + sin x = 0, we get 2sin^(2) x = -sin x, which is sin x(2sin x + 1) = 0.",
+        "difficulty": "medium",
+        "year_pattern": "2019-style"
+      },
+      {
+        "q": "If tan x = 1/2 and tan x lies in the second quadrant, find the value of sin x.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "-1/√5",
+        "difficulty": "easy",
+        "year_pattern": "2017-style"
+      },
+      {
+        "q": "If sin 2x = 3sin x cos x, show that tan x = 3.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "We have sin 2x = 3sin x cos x, which is 2sin x cos x = 3sin x cos x. This implies cos x = 3/2.",
+        "difficulty": "easy",
+        "year_pattern": "2016-style"
+      },
+      {
+        "q": "If cos x = 7/25, find the value of tan x.",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "√(239)/15",
+        "difficulty": "easy",
+        "year_pattern": "2015-style"
+      },
+      {
+        "q": "Prove that (sin x + cos x)^(2) + (sin x - cos x)^(2) = 2 + 2sin^(2) x.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "LHS = (sin x + cos x)^(2) + (sin x - cos x)^(2) = (sin^(2) x + 2sin x cos x + cos^(2) x) + (sin^(2) x - 2sin x cos x + cos^(2) x) = 2sin^(2) x + 2cos^(2) x = 2 + 2sin^(2) x.",
+        "difficulty": "easy",
+        "year_pattern": "2014-style"
+      },
+      {
+        "q": "If tan x = 3/4, find the value of sin x.",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "3/5",
+        "difficulty": "easy",
+        "year_pattern": "2013-style"
+      },
+      {
+        "q": "Prove that 2cos^(2) x - sin x - 1 = 0 has no solution for 0° ≤ x ≤ 360°.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Let 2cos^(2) x - sin x - 1 = 0, we get 2cos^(2) x = sin x + 1, which is 2(1 - sin^(2) x) = sin x + 1.",
+        "difficulty": "medium",
+        "year_pattern": "2012-style"
+      },
+      {
+        "q": "If cos x = 12/13, find the value of tan x.",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "-4/5",
+        "difficulty": "easy",
+        "year_pattern": "2011-style"
+      },
+      {
+        "q": "Prove that (sin x + cos x)^(2) + (sin x - cos x)^(2) = 2 + 2cos^(2) x.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "LHS = (sin x + cos x)^(2) + (sin x - cos x)^(2) = (sin^(2) x + 2sin x cos x + cos^(2) x) + (sin^(2) x - 2sin x cos x + cos^(2) x) = 2sin^(2) x + 2cos^(2) x = 2 + 2cos^(2) x.",
+        "difficulty": "easy",
+        "year_pattern": "2010-style"
+      }
+    ]
+  }
+}

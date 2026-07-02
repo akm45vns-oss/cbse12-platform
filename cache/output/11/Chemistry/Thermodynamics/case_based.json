@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Chemistry",
+  "chapter": "Thermodynamics",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:05:08.997+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A refrigerator is a well-known example of a heat engine that works under constant volume. It operates by transferring heat from the cold interior to the hot exterior. The heat transfer occurs through a series of phase transitions in the refrigerant, causing the temperature to rise and fall as it moves from one stage to another. This process is repeated continuously, allowing the refrigerator to maintain a low temperature inside the compartment. Consider the following scenario: If the temperature inside the refrigerator is 5°C, and the ambient temperature is 30°C, what is the direction of heat flow?",
+        "questions": [
+          {
+            "q": "What is the direction of heat flow in the refrigerator?",
+            "ans": "A",
+            "opts": [
+              "From the cold interior to the hot exterior",
+              "From the hot exterior to the cold interior",
+              "No heat flow occurs",
+              "Heat flow is in both directions"
+            ],
+            "explanation": "Heat flows from a region of higher temperature to a region of lower temperature."
+          },
+          {
+            "q": "Which type of process occurs in the refrigerator?",
+            "ans": "C",
+            "opts": [
+              "Isothermal process",
+              "Isobaric process",
+              "Adiabatic process",
+              "Constant volume process"
+            ],
+            "explanation": "The heat transfer occurs through a series of phase transitions, which is an adiabatic process."
+          },
+          {
+            "q": "What is the function of the refrigerant in the refrigerator?",
+            "ans": "C",
+            "opts": [
+              "To absorb heat from the cold interior",
+              "To release heat to the hot exterior",
+              "To facilitate the phase transitions",
+              "To maintain a constant temperature"
+            ],
+            "explanation": "The refrigerant undergoes phase transitions, which facilitates the heat transfer from the cold interior to the hot exterior."
+          },
+          {
+            "q": "What is the significance of the temperature inside the refrigerator being lower than the ambient temperature?",
+            "ans": "C",
+            "opts": [
+              "It allows for efficient heat transfer",
+              "It maintains a constant volume",
+              "It enables the refrigerator to operate",
+              "It prevents heat flow"
+            ],
+            "explanation": "The temperature difference between the inside and outside of the refrigerator allows it to operate and maintain a low temperature inside the compartment."
+          },
+          {
+            "q": "Which law governs the heat transfer in the refrigerator?",
+            "ans": "B",
+            "opts": [
+              "First Law of Thermodynamics",
+              "Second Law of Thermodynamics",
+              "Third Law of Thermodynamics",
+              "Zeroth Law of Thermodynamics"
+            ],
+            "explanation": "The Second Law of Thermodynamics governs the direction of heat flow, which is from the region of higher temperature to the region of lower temperature."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A car engine is a heat engine that converts the chemical energy of the fuel into mechanical work. It operates by igniting a mixture of air and fuel in the combustion chamber, releasing a large amount of heat energy. This heat energy is then transferred to the surroundings through the exhaust gases. Consider the following scenario: If the car engine operates at a temperature of 2500 K and the surroundings are at a temperature of 300 K, what is the direction of heat flow?",
+        "questions": [
+          {
+            "q": "What type of energy conversion occurs in the car engine?",
+            "ans": "C",
+            "opts": [
+              "Mechanical to thermal energy",
+              "Thermal to mechanical energy",
+              "Chemical to mechanical energy",
+              "Mechanical to electrical energy"
+            ],
+            "explanation": "The car engine converts the chemical energy of the fuel into mechanical work."
+          },
+          {
+            "q": "What is the function of the exhaust gases in the car engine?",
+            "ans": "B",
+            "opts": [
+              "To absorb heat from the surroundings",
+              "To release heat to the surroundings",
+              "To facilitate the combustion process",
+              "To maintain a constant temperature"
+            ],
+            "explanation": "The exhaust gases transfer the heat energy released during combustion to the surroundings."
+          },
+          {
+            "q": "Which law governs the heat transfer in the car engine?",
+            "ans": "B",
+            "opts": [
+              "First Law of Thermodynamics",
+              "Second Law of Thermodynamics",
+              "Third Law of Thermodynamics",
+              "Zeroth Law of Thermodynamics"
+            ],
+            "explanation": "The Second Law of Thermodynamics governs the direction of heat flow, which is from the region of higher temperature to the region of lower temperature."
+          },
+          {
+            "q": "What is the significance of the car engine operating at a higher temperature than the surroundings?",
+            "ans": "C",
+            "opts": [
+              "It allows for efficient heat transfer",
+              "It maintains a constant volume",
+              "It enables the car engine to operate",
+              "It prevents heat flow"
+            ],
+            "explanation": "The temperature difference between the car engine and the surroundings allows it to operate and convert chemical energy into mechanical work."
+          },
+          {
+            "q": "What is the direction of heat flow in the car engine?",
+            "ans": "B",
+            "opts": [
+              "From the surroundings to the car engine",
+              "From the car engine to the surroundings",
+              "No heat flow occurs",
+              "Heat flow is in both directions"
+            ],
+            "explanation": "Heat flows from a region of higher temperature to a region of lower temperature, which in this case is from the car engine to the surroundings."
+          }
+        ]
+      }
+    ]
+  }
+}

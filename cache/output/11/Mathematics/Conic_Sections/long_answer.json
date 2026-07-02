@@ -1,0 +1,79 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Conic Sections",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T12:23:29.219+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "A cone is formed by revolving the right-angled triangle ABC, whose vertices are A(0, 0), B(0, 4) and C(3, 0), about the x-axis. Find the equation of the cone.",
+        "marks": 5,
+        "topic": "Equation of a Cone",
+        "answer": "The equation of the cone is given by x^2 + y^2/16 = 1. This is because the radius of the cone is the distance between the point (3,0) and the x-axis, which is 3. The equation of the cone is of the form x^2 + y^2/r^2 = 1, where r is the radius of the cone. Substituting the values, we get x^2 + y^2/16 = 1.",
+        "marking_scheme": [
+          "Equation of the cone is of the correct form (1 mark)",
+          "Radius of the cone is correctly calculated (1 mark)",
+          "Substitution of values is correct (1 mark)",
+          "Simplification of the equation is correct (1 mark)",
+          "Final equation is correct (1 mark)"
+        ]
+      },
+      {
+        "q": "A parabola has its vertex at the origin and equation 16y^2 = 32x. Find the coordinates of the focus.",
+        "marks": 5,
+        "topic": "Focus of a Parabola",
+        "answer": "The given equation of the parabola is 16y^2 = 32x. We can rewrite this equation as y^2 = 2x. Comparing this with the standard equation of a parabola, y^2 = 4ax, we get 4a = 2. Therefore, a = 1/2. The focus of the parabola is at (a, 0), which is (1/2, 0).",
+        "marking_scheme": [
+          "Equation of the parabola is compared with the standard equation (1 mark)",
+          "Value of 'a' is correctly calculated (1 mark)",
+          "Focus of the parabola is correctly identified (1 mark)",
+          "Coordinates of the focus are correctly written (1 mark)",
+          "Final answer is correct (1 mark)"
+        ]
+      },
+      {
+        "q": "Find the equation of the ellipse having its major axis along the x-axis, foci at (± 4, 0) and minor axis of length 6.",
+        "marks": 5,
+        "topic": "Equation of an Ellipse",
+        "answer": "Since the major axis is along the x-axis, the equation of the ellipse will be of the form x^2/a^2 + y^2/b^2 = 1. The foci of the ellipse are at (±4, 0), which means c = 4. The length of the minor axis is 6, which means 2b = 6. Therefore, b = 3. We can use the relation c^2 = a^2 - b^2 to find the value of a. Substituting the values, we get 16 = a^2 - 9. Therefore, a^2 = 25 and a = 5. The equation of the ellipse is x^2/25 + y^2/9 = 1.",
+        "marking_scheme": [
+          "Equation of the ellipse is of the correct form (1 mark)",
+          "Foci of the ellipse are correctly identified (1 mark)",
+          "Length of the minor axis is correctly used (1 mark)",
+          "Value of 'a' is correctly calculated (1 mark)",
+          "Final equation is correct (1 mark)"
+        ]
+      },
+      {
+        "q": "Find the equation of the hyperbola whose foci are at (± 3√7, 0) and the length of its transverse axis is 10.",
+        "marks": 5,
+        "topic": "Equation of a Hyperbola",
+        "answer": "Since the foci of the hyperbola are at (±3√7, 0), we know that c = 3√7. The length of the transverse axis is 10, which means 2a = 10. Therefore, a = 5. We can use the relation c^2 = a^2 + b^2 to find the value of b. Substituting the values, we get 63 = 25 + b^2. Therefore, b^2 = 38 and b = √38. The equation of the hyperbola is x^2/25 - y^2/38 = 1.",
+        "marking_scheme": [
+          "Equation of the hyperbola is of the correct form (1 mark)",
+          "Foci of the hyperbola are correctly identified (1 mark)",
+          "Length of the transverse axis is correctly used (1 mark)",
+          "Value of 'b' is correctly calculated (1 mark)",
+          "Final equation is correct (1 mark)"
+        ]
+      },
+      {
+        "q": "A parabola has its axis along the x-axis and its focus at (0, 2). Find the equation of the parabola.",
+        "marks": 5,
+        "topic": "Equation of a Parabola",
+        "answer": "Since the axis of the parabola is along the x-axis, the equation of the parabola will be of the form y^2 = 4ax. The focus of the parabola is at (0, 2), which means a = 2. The equation of the parabola is y^2 = 4(2)x, which simplifies to y^2 = 8x.",
+        "marking_scheme": [
+          "Equation of the parabola is of the correct form (1 mark)",
+          "Axis of the parabola is correctly identified (1 mark)",
+          "Focus of the parabola is correctly identified (1 mark)",
+          "Value of 'a' is correctly calculated (1 mark)",
+          "Final equation is correct (1 mark)"
+        ]
+      }
+    ]
+  }
+}

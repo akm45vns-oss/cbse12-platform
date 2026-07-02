@@ -1,0 +1,98 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Recursion",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:37:18.241+00:00",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Recursion",
+        "example": "The factorial function is a classic example of recursion: n! = n * (n-1) * (n-2) * ... * 1.",
+        "definition": "Recursion is a process in which a function calls itself repeatedly until it reaches a base case that doesn't call the function again. It's a method of solving problems by breaking them down into smaller instances of the same problem."
+      },
+      {
+        "term": "Base Case",
+        "example": "In the factorial function, 1 is the base case because 1! = 1, and it doesn't call the function again.",
+        "definition": "A base case is a condition that stops the recursion. It's a value or situation that doesn't call the function again, allowing the recursion to terminate."
+      },
+      {
+        "term": "Recursive Function",
+        "example": "The Fibonacci function is a recursive function: fib(n) = fib(n-1) + fib(n-2).",
+        "definition": "A recursive function is a function that calls itself in its definition. It uses the recursive process to solve a problem by breaking it down into smaller instances of the same problem."
+      },
+      {
+        "term": "Recursive Call",
+        "example": "In the factorial function, the recursive call is n * fac(n-1), where fac(n-1) is another call to the same function.",
+        "definition": "A recursive call is when a function calls itself. It's the core of the recursive process, where the function breaks down the problem into smaller instances."
+      },
+      {
+        "term": "Recursion Depth",
+        "example": "In a recursive function, the recursion depth is the number of times the function calls itself before reaching the base case.",
+        "definition": "Recursion depth is the number of recursive calls made by a function. It's the maximum depth of the recursive call stack."
+      },
+      {
+        "term": "Recursion Stack",
+        "example": "In a recursive function, the recursion stack is used to store the current state of the function, including its arguments and local variables.",
+        "definition": "The recursion stack is a data structure that keeps track of the recursive calls. It stores the current state of the function and its arguments."
+      },
+      {
+        "term": "Tail Recursion",
+        "example": "In a recursive function, if the recursive call is the last operation, it's a tail recursive function.",
+        "definition": "Tail recursion is a type of recursion where the recursive call is the last operation performed by the function. It's more efficient than regular recursion because it doesn't create a new stack frame."
+      },
+      {
+        "term": "Memoization",
+        "example": "In a recursive function, memoization can be used to store the results of expensive function calls, such as factorial calculations.",
+        "definition": "Memoization is a technique used to optimize recursive functions by storing the results of expensive function calls and reusing them when the same inputs occur again."
+      },
+      {
+        "term": "Dynamic Programming",
+        "example": "In a recursive function, dynamic programming can be used to solve problems by breaking them down into smaller subproblems and storing the solutions to subproblems.",
+        "definition": "Dynamic programming is a method of solving problems by breaking them down into smaller subproblems, solving each subproblem only once, and storing the solutions to subproblems to avoid redundant computation."
+      },
+      {
+        "term": "Overlapping Subproblems",
+        "example": "In a recursive function, overlapping subproblems can occur when the function solves the same subproblem multiple times, such as in the Fibonacci sequence.",
+        "definition": "Overlapping subproblems occur when a recursive function solves the same subproblem multiple times. It's a common problem in recursive algorithms."
+      },
+      {
+        "term": "Subproblem",
+        "example": "In a recursive function, each subproblem is a smaller instance of the original problem, such as in the factorial function.",
+        "definition": "A subproblem is a smaller instance of the original problem. It's a problem that is solved by a recursive function."
+      },
+      {
+        "term": "Recursive Algorithm",
+        "example": "In a recursive function, the algorithm is the sequence of steps taken to solve the problem, such as in the factorial function.",
+        "definition": "A recursive algorithm is a type of algorithm that uses recursion to solve a problem. It's a method of solving problems by breaking them down into smaller instances."
+      },
+      {
+        "term": "Recursive Data Structure",
+        "example": "In a recursive function, the data structure can be a recursive data structure, such as a linked list or a tree.",
+        "definition": "A recursive data structure is a data structure that contains instances of itself. It's a common data structure in computer science."
+      },
+      {
+        "term": "Recursion Tree",
+        "example": "In a recursive function, the recursion tree can be used to visualize the recursive calls, such as in the factorial function.",
+        "definition": "A recursion tree is a graphical representation of the recursive calls made by a function. It's a tree-like data structure that shows the recursive calls."
+      },
+      {
+        "term": "Recursive Function Call Stack",
+        "example": "In a recursive function, the recursive function call stack is used to store the current state of the function, including its arguments and local variables.",
+        "definition": "The recursive function call stack is a data structure that keeps track of the recursive calls made by a function. It stores the current state of the function and its arguments."
+      },
+      {
+        "term": "Stack Overflow",
+        "example": "In a recursive function, a stack overflow can occur when the recursion depth exceeds the maximum allowed depth, such as in a function with infinite recursion.",
+        "definition": "A stack overflow occurs when the recursion depth exceeds the maximum allowed depth. It's a common problem in recursive algorithms."
+      },
+      {
+        "term": "Infinite Recursion",
+        "example": "In a recursive function, infinite recursion can occur when the function calls itself indefinitely without a base case, such as in a function with no base case.",
+        "definition": "Infinite recursion occurs when a function calls itself indefinitely without a base case. It's a common problem in recursive algorithms."
+      }
+    ]
+  }
+}

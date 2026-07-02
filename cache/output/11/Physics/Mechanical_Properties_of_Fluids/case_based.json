@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Mechanical Properties of Fluids",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:12:18.199+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A boat is moving with a constant velocity on a river. The river has a uniform depth and is flowing at a speed of 2 m/s. If the boat is moving at 5 m/s, what is the pressure difference between the upstream and downstream points, 5 meters away from the boat?",
+        "questions": [
+          {
+            "q": "What type of pressure is experienced by the boat in the river?",
+            "ans": "B",
+            "opts": [
+              "(A) Hydrostatic pressure",
+              "(B) Hydrodynamic pressure",
+              "(C) Atmospheric pressure",
+              "(D) Absolute pressure"
+            ],
+            "explanation": "Hydrodynamic pressure is the pressure exerted by a moving fluid on an object. In this case, the boat is experiencing hydrodynamic pressure due to the flow of the river."
+          },
+          {
+            "q": "What is the cause of the pressure difference between the upstream and downstream points?",
+            "ans": "B",
+            "opts": [
+              "(A) Difference in water levels",
+              "(B) Difference in water speeds",
+              "(C) Difference in water depths",
+              "(D) Difference in river widths"
+            ],
+            "explanation": "The pressure difference between the upstream and downstream points is caused by the difference in water speeds. The water speed is higher downstream due to the motion of the boat, resulting in a lower pressure."
+          },
+          {
+            "q": "What is the relation between the pressure difference and the velocity of the boat?",
+            "ans": "B",
+            "opts": [
+              "(A) Δp ∝ v^2",
+              "(B) Δp ∝ v",
+              "(C) Δp ∝ 1/v",
+              "(D) Δp ∝ 1/v^2"
+            ],
+            "explanation": "The pressure difference is directly proportional to the velocity of the boat. As the velocity of the boat increases, the pressure difference between the upstream and downstream points also increases."
+          },
+          {
+            "q": "Which type of force is responsible for the deflection of the boat from its path?",
+            "ans": "B",
+            "opts": [
+              "(A) Frictional force",
+              "(B) Hydrodynamic force",
+              "(C) Hydrostatic force",
+              "(D) Normal force"
+            ],
+            "explanation": "The hydrodynamic force is responsible for the deflection of the boat from its path. The flow of the river exerts a force on the boat, causing it to deviate from its straight path."
+          },
+          {
+            "q": "What is the relation between the pressure difference and the depth of the river?",
+            "ans": "A",
+            "opts": [
+              "(A) Δp ∝ h",
+              "(B) Δp ∝ 1/h",
+              "(C) Δp ∝ √h",
+              "(D) Δp ∝ 1/√h"
+            ],
+            "explanation": "The pressure difference is directly proportional to the depth of the river. As the depth of the river increases, the pressure difference between the upstream and downstream points also increases."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A U-tube manometer is used to measure the pressure difference between two points in a fluid. The manometer has a uniform cross-sectional area and is filled with a liquid of density 1000 kg/m^3. If the pressure difference between the two points is 10 kPa, what is the height difference between the two points?",
+        "questions": [
+          {
+            "q": "What is the principle behind the U-tube manometer?",
+            "ans": "A",
+            "opts": [
+              "(A) Hydrostatic pressure principle",
+              "(B) Hydrodynamic pressure principle",
+              "(C) Pascal's principle",
+              "(D) Archimedes' principle"
+            ],
+            "explanation": "The U-tube manometer works on the principle of hydrostatic pressure. The pressure difference between the two points is measured by the height difference of the liquid column in the manometer."
+          },
+          {
+            "q": "What type of pressure is measured by the U-tube manometer?",
+            "ans": "D",
+            "opts": [
+              "(A) Absolute pressure",
+              "(B) Gauge pressure",
+              "(C) Atmospheric pressure",
+              "(D) Hydrostatic pressure"
+            ],
+            "explanation": "The U-tube manometer measures hydrostatic pressure, which is the pressure exerted by a static fluid at equilibrium."
+          },
+          {
+            "q": "What is the relation between the pressure difference and the height difference in the manometer?",
+            "ans": "A",
+            "opts": [
+              "(A) Δp = ρgh",
+              "(B) Δp = ρg/h",
+              "(C) Δp = 1/ρgh",
+              "(D) Δp = √(ρgh)"
+            ],
+            "explanation": "The pressure difference is directly proportional to the height difference in the manometer. The relation is given by Δp = ρgh, where ρ is the density of the liquid, g is the acceleration due to gravity, and h is the height difference."
+          },
+          {
+            "q": "What is the advantage of using a U-tube manometer?",
+            "ans": "C",
+            "opts": [
+              "(A) It is easy to set up",
+              "(B) It is easy to read",
+              "(C) It is accurate",
+              "(D) It is inexpensive"
+            ],
+            "explanation": "The U-tube manometer is accurate because it measures the pressure difference directly. The height difference of the liquid column in the manometer is a direct indication of the pressure difference."
+          },
+          {
+            "q": "What is the limitation of the U-tube manometer?",
+            "ans": "C",
+            "opts": [
+              "(A) It can only measure low pressures",
+              "(B) It can only measure high pressures",
+              "(C) It can only measure gauge pressures",
+              "(D) It can only measure absolute pressures"
+            ],
+            "explanation": "The U-tube manometer can only measure gauge pressures. It cannot measure absolute pressures because it does not account for atmospheric pressure."
+          }
+        ]
+      }
+    ]
+  }
+}

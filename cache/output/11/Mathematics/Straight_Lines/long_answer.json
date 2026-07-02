@@ -1,0 +1,71 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Straight Lines",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:09:29.815+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "The equation of a line is given by 3x + 2y - 12 = 0. Find the slope of the line and its perpendicular line. Also, find the equation of the perpendicular line passing through the point (1, 2).",
+        "marks": 5,
+        "topic": "Equations of Lines",
+        "answer": "The equation of the line can be written in the form y = mx + c, where m is the slope of the line. Rearranging the given equation, we get 2y = -3x + 12, and then y = (-3/2)x + 6. So, the slope of the line is -3/2. The slope of the perpendicular line is the negative reciprocal of -3/2, which is 2/3. The equation of the perpendicular line passing through the point (1, 2) can be written as y - 2 = (2/3)(x - 1). Simplifying this, we get y = (2/3)x + 4/3.",
+        "marking_scheme": [
+          "Slope of the line (1 mark)",
+          "Equation of the perpendicular line (1 mark)",
+          "Slope of the perpendicular line (1 mark)",
+          "Correct equation of perpendicular line (2 marks)"
+        ]
+      },
+      {
+        "q": "Find the coordinates of the point P such that the line through the points (1, 2) and P is perpendicular to the line through the points (2, 3) and (4, 5).",
+        "marks": 5,
+        "topic": "Perpendicular Lines",
+        "answer": "The slope of the line through the points (2, 3) and (4, 5) is given by (y2 - y1)/(x2 - x1) = (5 - 3)/(4 - 2) = 1. The slope of the line through the points (1, 2) and P is the negative reciprocal of 1, which is -1. Since the line through the points (1, 2) and P is perpendicular to the line through the points (2, 3) and (4, 5), the slope of the line through the points (1, 2) and P is also -1. Let the coordinates of P be (x, y). Then, the slope of the line through the points (1, 2) and P is given by (y - 2)/(x - 1) = -1. Solving this equation, we get y = -(x - 1) + 2 = -x + 3. So, the coordinates of P are (x, -x + 3).",
+        "marking_scheme": [
+          "Slope of the line through (2, 3) and (4, 5) (1 mark)",
+          "Slope of the perpendicular line (1 mark)",
+          "Equation of the line through (1, 2) and P (2 marks)"
+        ]
+      },
+      {
+        "q": "Find the equation of the line passing through the point (2, 3) and having a slope of 2. Also, find the equation of the line passing through the point (4, 5) and which is perpendicular to the line with the equation 2x + 3y - 5 = 0.",
+        "marks": 5,
+        "topic": "Equations of Lines",
+        "answer": "The equation of the line passing through the point (2, 3) and having a slope of 2 is given by y - 3 = 2(x - 2). Simplifying this, we get y = 2x + 1. The equation of the line passing through the point (4, 5) and which is perpendicular to the line with the equation 2x + 3y - 5 = 0 can be written as y - 5 = -(2/3)(x - 4). Simplifying this, we get y = -(2/3)x + 14/3.",
+        "marking_scheme": [
+          "Equation of the line through (2, 3) and having a slope of 2 (2 marks)",
+          "Slope of the line perpendicular to 2x + 3y - 5 = 0 (1 mark)",
+          "Equation of the line perpendicular to 2x + 3y - 5 = 0 (2 marks)"
+        ]
+      },
+      {
+        "q": "Find the point on the line 3x + 2y - 12 = 0 which is at a distance of 4 units from the point (1, 2).",
+        "marks": 5,
+        "topic": "Distance of a Point from a Line",
+        "answer": "The equation of the line can be written in the form y = mx + c, where m is the slope of the line. Rearranging the given equation, we get 2y = -3x + 12, and then y = (-3/2)x + 6. So, the slope of the line is -3/2. The distance between the point (x, y) and (1, 2) is given by √((x - 1)^2 + (y - 2)^2). We are given that this distance is 4 units. So, we get √((x - 1)^2 + (y - 2)^2) = 4. Squaring both sides, we get (x - 1)^2 + (y - 2)^2 = 16. Substituting y = (-3/2)x + 6 in this equation, we get (x - 1)^2 + ((-3/2)x + 4)^2 = 16. Solving this equation, we get x = 0. Substituting this value of x in y = (-3/2)x + 6, we get y = 6.",
+        "marking_scheme": [
+          "Equation of the line (1 mark)",
+          "Distance between (x, y) and (1, 2) (1 mark)",
+          "Solving the equation (2 marks)",
+          "Finding the point (1 mark)"
+        ]
+      },
+      {
+        "q": "Find the equation of the line which passes through the point (2, 3) and is parallel to the line 5x - 2y + 3 = 0.",
+        "marks": 5,
+        "topic": "Parallel Lines",
+        "answer": "The equation of the line 5x - 2y + 3 = 0 can be written in the form y = mx + c, where m is the slope of the line. Rearranging the given equation, we get 2y = 5x + 3, and then y = (5/2)x + 3/2. So, the slope of the line is 5/2. The line passing through the point (2, 3) and having a slope of 5/2 is given by y - 3 = (5/2)(x - 2). Simplifying this, we get y = (5/2)x + 1.",
+        "marking_scheme": [
+          "Slope of the line 5x - 2y + 3 = 0 (1 mark)",
+          "Equation of the line through (2, 3) and having a slope of 5/2 (2 marks)",
+          "Correct equation of the line (2 marks)"
+        ]
+      }
+    ]
+  }
+}

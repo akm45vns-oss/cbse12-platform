@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Sets",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-26T08:01:12.318+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "q": "If A = {1, 2, 3} and B = {3, 4, 5}, then find A ∩ B.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "{3}",
+        "difficulty": "easy",
+        "year_pattern": "2018-style"
+      },
+      {
+        "q": "If A = {x ∈ N: x ≤ 5} and B = {x ∈ N: x ≥ 4}, then find A ∪ B.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "{1, 2, 3, 4, 5}",
+        "difficulty": "easy",
+        "year_pattern": "2019-style"
+      },
+      {
+        "q": "If A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7, 8}, then show that A ⊂ B.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "A ⊂ B is not true, but A ⊆ B is true.",
+        "difficulty": "medium",
+        "year_pattern": "2017-style"
+      },
+      {
+        "q": "Let A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7, 8}. Show that (A ∪ B) - (A ∩ B) = A - B.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "To show: (A ∪ B) - (A ∩ B) = A - B",
+        "difficulty": "hard",
+        "year_pattern": "2020-style"
+      },
+      {
+        "q": "If A = {x ∈ N: x ≤ 5} and B = {x ∈ N: x ≥ 4}, then find (A - B) ∪ (B - A).",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "{}",
+        "difficulty": "medium",
+        "year_pattern": "2019-style"
+      },
+      {
+        "q": "Let A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7, 8}. Find (A × B) - (B × A).",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "{}",
+        "difficulty": "hard",
+        "year_pattern": "2020-style"
+      },
+      {
+        "q": "If A = {1, 2, 3} and B = {3, 4, 5}, then find (A - B) ∩ (B - A).",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "{}",
+        "difficulty": "medium",
+        "year_pattern": "2018-style"
+      },
+      {
+        "q": "Let A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7, 8}. Show that (A ∩ B) - (A - B) = {}.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "To show: (A ∩ B) - (A - B) = {}",
+        "difficulty": "hard",
+        "year_pattern": "2020-style"
+      },
+      {
+        "q": "If A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7, 8}, then find (A ∪ B) - B.",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "{1, 2, 3}",
+        "difficulty": "easy",
+        "year_pattern": "2019-style"
+      },
+      {
+        "q": "Let A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7, 8}. Show that (A - B) ∪ (B - A) = (A ∪ B) - (A ∩ B).",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "To show: (A - B) ∪ (B - A) = (A ∪ B) - (A ∩ B)",
+        "difficulty": "hard",
+        "year_pattern": "2020-style"
+      }
+    ]
+  }
+}

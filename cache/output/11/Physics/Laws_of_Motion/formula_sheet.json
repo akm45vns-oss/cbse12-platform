@@ -1,0 +1,110 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Laws of Motion",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:23:29.068+00:00",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "First Law of Motion (Law of Inertia)",
+        "notes": "When an object is in a state of rest or uniform motion, it will remain in that state unless an external force affects it.",
+        "formula": "An object at rest will remain at rest, and an object in motion will continue to move with a constant velocity, unless acted upon by an external force."
+      },
+      {
+        "name": "Second Law of Motion",
+        "notes": "When an external force is applied to an object, the resulting acceleration is directly proportional to the force and inversely proportional to the object's mass.",
+        "units": "F in Newtons (N), m in kilograms (kg), a in meters per second squared (m/s^2)",
+        "formula": "F = ma",
+        "variables": {
+          "F": "Net force acting on an object",
+          "a": "Acceleration of the object",
+          "m": "Mass of the object"
+        }
+      },
+      {
+        "name": "Third Law of Motion (Law of Action and Reaction)",
+        "notes": "When two objects interact, they apply forces to one another that are equal in magnitude and opposite in direction.",
+        "formula": "For every action, there is an equal and opposite reaction."
+      },
+      {
+        "name": "Force and Acceleration Relation",
+        "notes": "This is a rearrangement of the second law of motion, showing that acceleration is directly proportional to the net force applied and inversely proportional to the object's mass.",
+        "units": "a in meters per second squared (m/s^2), F in Newtons (N), m in kilograms (kg)",
+        "formula": "a = F / m",
+        "variables": {
+          "F": "Net force acting on the object",
+          "a": "Acceleration of the object",
+          "m": "Mass of the object"
+        }
+      },
+      {
+        "name": "Work and Force Relation",
+        "notes": "This formula calculates the work done on an object by a force, taking into account the force's magnitude, direction, and the object's displacement.",
+        "units": "W in Joules (J), F in Newtons (N), d in meters (m), θ in radians",
+        "formula": "W = F * d * cos(θ)",
+        "variables": {
+          "F": "Net force acting on the object",
+          "W": "Work done on an object",
+          "d": "Distance moved by the object in the direction of the force",
+          "θ": "Angle between the force and the direction of motion"
+        }
+      },
+      {
+        "name": "Work and Energy Relation",
+        "notes": "This formula states that the work done on an object is equal to the change in its kinetic energy, assuming no other forms of energy are involved.",
+        "units": "W in Joules (J), ΔE in Joules (J)",
+        "formula": "W = ΔE",
+        "variables": {
+          "W": "Work done on an object",
+          "ΔE": "Change in the object's kinetic energy"
+        }
+      },
+      {
+        "name": "Impulse and Momentum Relation",
+        "notes": "This formula relates the impulse applied to an object to the resulting change in its momentum.",
+        "units": "J in Newton-seconds (N*s), Δp in kg*m/s",
+        "formula": "J = Δp",
+        "variables": {
+          "J": "Impulse applied to an object",
+          "Δp": "Change in the object's momentum"
+        }
+      },
+      {
+        "name": "Impulse and Force Relation",
+        "notes": "This formula calculates the impulse applied to an object by a force, taking into account the force's magnitude and the duration of its application.",
+        "units": "J in Newton-seconds (N*s), F in Newtons (N), Δt in seconds (s)",
+        "formula": "J = F * Δt",
+        "variables": {
+          "F": "Net force acting on the object",
+          "J": "Impulse applied to an object",
+          "Δt": "Time over which the force is applied"
+        }
+      },
+      {
+        "name": "Impulse and Momentum Relation (alternative form)",
+        "notes": "This formula relates the impulse applied to an object to the resulting change in its momentum, using the force and time over which it is applied.",
+        "units": "F in Newtons (N), Δt in seconds (s), Δp in kg*m/s",
+        "formula": "F * Δt = Δp",
+        "variables": {
+          "F": "Net force acting on the object",
+          "Δp": "Change in the object's momentum",
+          "Δt": "Time over which the force is applied"
+        }
+      },
+      {
+        "name": "Momentum and Velocity Relation",
+        "notes": "This formula shows that the momentum of an object is directly proportional to its mass and velocity.",
+        "units": "p in kg*m/s, m in kilograms (kg), v in meters per second (m/s)",
+        "formula": "p = m * v",
+        "variables": {
+          "m": "Mass of the object",
+          "p": "Momentum of the object",
+          "v": "Velocity of the object"
+        }
+      }
+    ]
+  }
+}

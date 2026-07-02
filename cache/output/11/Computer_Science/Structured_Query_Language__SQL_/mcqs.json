@@ -1,0 +1,274 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:26:23.377+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 20,
+    "questions": [
+      {
+        "q": "What is the purpose of the SELECT statement in SQL?",
+        "ans": "C",
+        "opts": [
+          "(A) To delete data from a database",
+          "(B) To insert new data into a database",
+          "(C) To retrieve data from a database",
+          "(D) To create a new table in a database"
+        ],
+        "topic": "Basic SQL",
+        "difficulty": "easy",
+        "explanation": "The SELECT statement is used to retrieve data from one or more tables in a database."
+      },
+      {
+        "q": "What is the difference between INNER JOIN and LEFT JOIN in SQL?",
+        "ans": "B",
+        "opts": [
+          "(A) INNER JOIN returns all rows from the left table, while LEFT JOIN returns all rows from the right table",
+          "(B) INNER JOIN returns all rows from both tables where there is a match, while LEFT JOIN returns all rows from the left table and the matched rows from the right table",
+          "(C) INNER JOIN returns all rows from the right table, while LEFT JOIN returns all rows from the left table",
+          "(D) INNER JOIN returns all rows from the left table, while LEFT JOIN returns all rows from the right table"
+        ],
+        "topic": "Joins",
+        "difficulty": "medium",
+        "explanation": "INNER JOIN returns all rows from both tables where there is a match, while LEFT JOIN returns all rows from the left table and the matched rows from the right table."
+      },
+      {
+        "q": "How do you update a column in a table using SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) UPDATE table_name SET column_name = new_value",
+          "(B) INSERT INTO table_name (column_name) VALUES (new_value)",
+          "(C) ALTER TABLE table_name CHANGE column_name new_value",
+          "(D) DROP TABLE table_name"
+        ],
+        "topic": "Data Modification",
+        "difficulty": "easy",
+        "explanation": "The UPDATE statement is used to update a column in a table."
+      },
+      {
+        "q": "What is the purpose of the GROUP BY clause in SQL?",
+        "ans": "C",
+        "opts": [
+          "(A) To sort the data in a table",
+          "(B) To filter the data in a table",
+          "(C) To group the data in a table by one or more columns",
+          "(D) To aggregate the data in a table"
+        ],
+        "topic": "Aggregate Functions",
+        "difficulty": "medium",
+        "explanation": "The GROUP BY clause is used to group the data in a table by one or more columns."
+      },
+      {
+        "q": "How do you delete a row from a table using SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) DELETE FROM table_name WHERE condition",
+          "(B) DROP TABLE table_name",
+          "(C) TRUNCATE TABLE table_name",
+          "(D) ALTER TABLE table_name DROP column_name"
+        ],
+        "topic": "Data Modification",
+        "difficulty": "easy",
+        "explanation": "The DELETE statement is used to delete a row from a table."
+      },
+      {
+        "q": "What is the difference between a primary key and a foreign key in SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) A primary key is a unique identifier for each row in a table, while a foreign key is a column in a table that references the primary key of another table",
+          "(B) A primary key is a column in a table that references the primary key of another table, while a foreign key is a unique identifier for each row in a table",
+          "(C) A primary key is a column in a table that contains a unique value for each row, while a foreign key is a column in a table that references the primary key of another table",
+          "(D) A primary key is a column in a table that references the primary key of another table, while a foreign key is a column in a table that contains a unique value for each row"
+        ],
+        "topic": "Database Design",
+        "difficulty": "hard",
+        "explanation": "A primary key is a unique identifier for each row in a table, while a foreign key is a column in a table that references the primary key of another table."
+      },
+      {
+        "q": "How do you insert data into a table using SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) INSERT INTO table_name (column1, column2) VALUES (value1, value2)",
+          "(B) UPDATE table_name SET column1 = value1, column2 = value2",
+          "(C) SELECT * FROM table_name",
+          "(D) DELETE FROM table_name"
+        ],
+        "topic": "Data Insertion",
+        "difficulty": "easy",
+        "explanation": "The INSERT INTO statement is used to insert data into a table."
+      },
+      {
+        "q": "What is the purpose of the ORDER BY clause in SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) To sort the data in a table",
+          "(B) To filter the data in a table",
+          "(C) To group the data in a table by one or more columns",
+          "(D) To aggregate the data in a table"
+        ],
+        "topic": "Data Retrieval",
+        "difficulty": "medium",
+        "explanation": "The ORDER BY clause is used to sort the data in a table."
+      },
+      {
+        "q": "How do you create a new table in a database using SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) CREATE TABLE table_name (column1 data_type, column2 data_type)",
+          "(B) DROP TABLE table_name",
+          "(C) ALTER TABLE table_name ADD column_name data_type",
+          "(D) TRUNCATE TABLE table_name"
+        ],
+        "topic": "Database Design",
+        "difficulty": "easy",
+        "explanation": "The CREATE TABLE statement is used to create a new table in a database."
+      },
+      {
+        "q": "What is the purpose of the UNION operator in SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) To combine the results of two or more SELECT statements into a single result set",
+          "(B) To combine the results of two or more INSERT INTO statements into a single result set",
+          "(C) To combine the results of two or more UPDATE statements into a single result set",
+          "(D) To combine the results of two or more DELETE statements into a single result set"
+        ],
+        "topic": "Data Retrieval",
+        "difficulty": "hard",
+        "explanation": "The UNION operator is used to combine the results of two or more SELECT statements into a single result set."
+      },
+      {
+        "q": "How do you update multiple columns in a table using SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) UPDATE table_name SET column1 = new_value, column2 = new_value2",
+          "(B) UPDATE table_name SET column1 = new_value",
+          "(C) ALTER TABLE table_name CHANGE column1 new_value",
+          "(D) DROP TABLE table_name"
+        ],
+        "topic": "Data Modification",
+        "difficulty": "easy",
+        "explanation": "The UPDATE statement is used to update multiple columns in a table."
+      },
+      {
+        "q": "What is the purpose of the INDEX clause in SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) To speed up queries by creating an index on a column",
+          "(B) To slow down queries by creating an index on a column",
+          "(C) To create a primary key on a column",
+          "(D) To create a foreign key on a column"
+        ],
+        "topic": "Database Design",
+        "difficulty": "medium",
+        "explanation": "The INDEX clause is used to speed up queries by creating an index on a column."
+      },
+      {
+        "q": "How do you truncate a table in a database using SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) TRUNCATE TABLE table_name",
+          "(B) DROP TABLE table_name",
+          "(C) ALTER TABLE table_name DROP column_name",
+          "(D) UPDATE table_name SET column_name = NULL"
+        ],
+        "topic": "Data Modification",
+        "difficulty": "easy",
+        "explanation": "The TRUNCATE TABLE statement is used to truncate a table in a database."
+      },
+      {
+        "q": "What is the purpose of the SUBQUERY in SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) To filter the data in a table based on a condition",
+          "(B) To sort the data in a table based on a condition",
+          "(C) To group the data in a table based on a condition",
+          "(D) To aggregate the data in a table based on a condition"
+        ],
+        "topic": "Data Retrieval",
+        "difficulty": "medium",
+        "explanation": "The SUBQUERY is used to filter the data in a table based on a condition."
+      },
+      {
+        "q": "How do you delete multiple rows from a table using SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) DELETE FROM table_name WHERE condition",
+          "(B) DELETE FROM table_name",
+          "(C) TRUNCATE TABLE table_name",
+          "(D) ALTER TABLE table_name DROP column_name"
+        ],
+        "topic": "Data Modification",
+        "difficulty": "easy",
+        "explanation": "The DELETE statement is used to delete multiple rows from a table."
+      },
+      {
+        "q": "What is the purpose of the VIEW in SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) To create a virtual table based on the result of a SELECT statement",
+          "(B) To create a physical table in a database",
+          "(C) To create a trigger on a table",
+          "(D) To create a stored procedure"
+        ],
+        "topic": "Database Design",
+        "difficulty": "hard",
+        "explanation": "The VIEW is used to create a virtual table based on the result of a SELECT statement."
+      },
+      {
+        "q": "How do you create a stored procedure in a database using SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) CREATE PROCEDURE procedure_name AS BEGIN statements END",
+          "(B) CREATE FUNCTION procedure_name() RETURNS table",
+          "(C) ALTER TABLE table_name ADD procedure_name",
+          "(D) TRUNCATE TABLE table_name"
+        ],
+        "topic": "Database Design",
+        "difficulty": "medium",
+        "explanation": "The CREATE PROCEDURE statement is used to create a stored procedure in a database."
+      },
+      {
+        "q": "What is the purpose of the TRIGGER in SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) To execute a set of statements in response to a specific event",
+          "(B) To create a stored procedure in a database",
+          "(C) To create a view in a database",
+          "(D) To create an index on a column"
+        ],
+        "topic": "Database Design",
+        "difficulty": "hard",
+        "explanation": "The TRIGGER is used to execute a set of statements in response to a specific event."
+      },
+      {
+        "q": "How do you create an index on a column in a table using SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) CREATE INDEX index_name ON table_name (column_name)",
+          "(B) ALTER TABLE table_name ADD INDEX (column_name)",
+          "(C) CREATE TABLE table_name INDEX (column_name)",
+          "(D) TRUNCATE TABLE table_name"
+        ],
+        "topic": "Database Design",
+        "difficulty": "medium",
+        "explanation": "The CREATE INDEX statement is used to create an index on a column in a table."
+      },
+      {
+        "q": "What is the purpose of the DROP TABLE statement in SQL?",
+        "ans": "A",
+        "opts": [
+          "(A) To delete a table from a database",
+          "(B) To truncate a table in a database",
+          "(C) To alter a table in a database",
+          "(D) To create a new table in a database"
+        ],
+        "topic": "Database Design",
+        "difficulty": "easy",
+        "explanation": "The DROP TABLE statement is used to delete a table from a database."
+      }
+    ]
+  }
+}

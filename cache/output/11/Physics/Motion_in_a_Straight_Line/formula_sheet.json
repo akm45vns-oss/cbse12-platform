@@ -1,0 +1,104 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Motion in a Straight Line",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:23:28.925+00:00",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Equation of Motion",
+        "notes": "Use this formula to find displacement when acceleration is constant.",
+        "units": "m",
+        "formula": "s = s0 + vt + (1/2)at^2",
+        "variables": "s: displacement, s0: initial displacement, v: final velocity, t: time, a: acceleration"
+      },
+      {
+        "name": "Equation of Motion (in terms of initial velocity)",
+        "notes": "Use this formula when initial velocity is given.",
+        "units": "m",
+        "formula": "s = s0 + v0t + (1/2)at^2",
+        "variables": "s: displacement, s0: initial displacement, v0: initial velocity, t: time, a: acceleration"
+      },
+      {
+        "name": "Equation of Motion (in terms of final velocity)",
+        "notes": "Use this formula when final velocity is to be found.",
+        "units": "m/s",
+        "formula": "v = v0 + at",
+        "variables": "v: final velocity, v0: initial velocity, a: acceleration, t: time"
+      },
+      {
+        "name": "Equation of Motion (in terms of initial velocity and time)",
+        "notes": "Use this formula when initial velocity and time are given.",
+        "units": "m",
+        "formula": "s = s0 + v0t",
+        "variables": "s: displacement, s0: initial displacement, v0: initial velocity, t: time"
+      },
+      {
+        "name": "Equation of Motion (in terms of acceleration and time)",
+        "notes": "Use this formula when acceleration and time are given.",
+        "units": "m",
+        "formula": "s = (1/2)(a + v0)t",
+        "variables": "s: displacement, a: acceleration, v0: initial velocity, t: time"
+      },
+      {
+        "name": "Equation of Motion (in terms of acceleration and displacement)",
+        "notes": "Use this formula when acceleration and displacement are given.",
+        "units": "m^2/s^2",
+        "formula": "v^2 = v0^2 + 2as",
+        "variables": "v: final velocity, v0: initial velocity, a: acceleration, s: displacement"
+      },
+      {
+        "name": "Velocity-Displacement Equation",
+        "notes": "Use this formula to find final velocity when initial velocity, acceleration, and displacement are given.",
+        "units": "m^2/s^2",
+        "formula": "v^2 = u^2 + 2as",
+        "variables": "v: final velocity, u: initial velocity, a: acceleration, s: displacement"
+      },
+      {
+        "name": "Equation of Motion (in terms of displacement and time)",
+        "notes": "Use this formula when displacement and time are given.",
+        "units": "m/s",
+        "formula": "v = (s - s0)/t",
+        "variables": "v: final velocity, s: displacement, s0: initial displacement, t: time"
+      },
+      {
+        "name": "Velocity-Time Equation",
+        "notes": "Use this formula to find acceleration when change in velocity and time are given.",
+        "units": "m/s^2",
+        "formula": "a = Δv / Δt",
+        "variables": "a: acceleration, Δv: change in velocity, Δt: change in time"
+      },
+      {
+        "name": "First Equation of Motion",
+        "notes": "Use this formula to find final velocity when initial velocity, acceleration, and displacement are given.",
+        "units": "m^2/s^2",
+        "formula": "v^2 = u^2 + 2as",
+        "variables": "v: final velocity, u: initial velocity, a: acceleration, s: displacement"
+      },
+      {
+        "name": "Second Equation of Motion",
+        "notes": "Use this formula to find displacement when initial velocity and acceleration are given.",
+        "units": "m",
+        "formula": "s = ut + (1/2)at^2",
+        "variables": "s: displacement, u: initial velocity, t: time, a: acceleration"
+      },
+      {
+        "name": "Third Equation of Motion",
+        "notes": "Use this formula to find final velocity when initial velocity, acceleration, and displacement are given.",
+        "units": "m^2/s^2",
+        "formula": "v^2 = u^2 + 2as",
+        "variables": "v: final velocity, u: initial velocity, a: acceleration, s: displacement"
+      },
+      {
+        "name": "Equation of Motion under Gravity",
+        "notes": "Use this formula to find displacement under gravity when initial velocity and time are given.",
+        "units": "m",
+        "formula": "s = ut + (1/2)gt^2",
+        "variables": "s: displacement, u: initial velocity, g: acceleration due to gravity, t: time"
+      }
+    ]
+  }
+}

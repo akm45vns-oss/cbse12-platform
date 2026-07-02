@@ -1,0 +1,248 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Thermodynamics",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:13:14.112+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 18,
+    "questions": [
+      {
+        "q": "A thermodynamic system is in equilibrium when the temperature is uniform throughout the system.?",
+        "ans": "A",
+        "opts": [
+          "(A) True",
+          "(B) False",
+          "(C) Only if the system is in thermal equilibrium",
+          "(D) Only if the system is in mechanical equilibrium"
+        ],
+        "topic": "Equilibrium",
+        "difficulty": "easy",
+        "explanation": "A system is in equilibrium when its temperature is uniform throughout. This is a condition of thermal equilibrium."
+      },
+      {
+        "q": "The specific heat capacity of a substance is the heat required to raise its temperature by 1°C.?",
+        "ans": "A",
+        "opts": [
+          "(A) True",
+          "(B) False",
+          "(C) Specific heat capacity is the heat required to raise the temperature of 1 kg of the substance by 1°C",
+          "(D) Specific heat capacity is the heat required to raise the temperature of 1 g of the substance by 1°C"
+        ],
+        "topic": "Specific Heat Capacity",
+        "difficulty": "easy",
+        "explanation": "Specific heat capacity is the heat required to raise the temperature of a unit mass of a substance by 1°C."
+      },
+      {
+        "q": "A Carnot engine is 100% efficient.?",
+        "ans": "B",
+        "opts": [
+          "(A) True",
+          "(B) False",
+          "(C) It is the most efficient engine but not 100%",
+          "(D) It is the least efficient engine"
+        ],
+        "topic": "Carnot Engine",
+        "difficulty": "easy",
+        "explanation": "A Carnot engine is the most efficient engine but it is not 100% efficient."
+      },
+      {
+        "q": "The temperature of the hot reservoir is greater than the temperature of the cold reservoir in a heat engine.?",
+        "ans": "A",
+        "opts": [
+          "(A) True",
+          "(B) False",
+          "(C) The temperature of the cold reservoir is greater than the temperature of the hot reservoir",
+          "(D) The temperature of the hot reservoir is equal to the temperature of the cold reservoir"
+        ],
+        "topic": "Heat Engines",
+        "difficulty": "easy",
+        "explanation": "The temperature of the hot reservoir is greater than the temperature of the cold reservoir in a heat engine."
+      },
+      {
+        "q": "In an isothermal process, the temperature of the system remains constant.?",
+        "ans": "A",
+        "opts": [
+          "(A) True",
+          "(B) False",
+          "(C) The temperature of the system increases in an isothermal process",
+          "(D) The temperature of the system decreases in an isothermal process"
+        ],
+        "topic": "Processes",
+        "difficulty": "easy",
+        "explanation": "In an isothermal process, the temperature of the system remains constant."
+      },
+      {
+        "q": "Which of the following is an example of an adiabatic process?",
+        "ans": "A",
+        "opts": [
+          "(A) Free expansion of a gas",
+          "(B) Isobaric process",
+          "(C) Isothermal process",
+          "(D) Free expansion of a gas is an example of an adiabatic process"
+        ],
+        "topic": "Processes",
+        "difficulty": "easy",
+        "explanation": "Free expansion of a gas is an example of an adiabatic process."
+      },
+      {
+        "q": "The efficiency of a Carnot engine is given by?",
+        "ans": "A",
+        "opts": [
+          "(A) η = 1 - (Tc / Th)",
+          "(B) η = (Tc / Th)",
+          "(C) η = (Th - Tc) / Th",
+          "(D) η = (Th - Tc) / Tc"
+        ],
+        "topic": "Carnot Engine",
+        "difficulty": "medium",
+        "explanation": "The efficiency of a Carnot engine is given by η = 1 - (Tc / Th)."
+      },
+      {
+        "q": "A refrigerator is a heat engine running in reverse.?",
+        "ans": "B",
+        "opts": [
+          "(A) True",
+          "(B) False",
+          "(C) A refrigerator is a heat pump running in reverse",
+          "(D) A refrigerator is a heat engine running in reverse and a heat pump running in reverse"
+        ],
+        "topic": "Refrigerators",
+        "difficulty": "medium",
+        "explanation": "A refrigerator is a heat pump running in reverse, not a heat engine."
+      },
+      {
+        "q": "The coefficient of performance (COP) of a refrigerator is given by?",
+        "ans": "C",
+        "opts": [
+          "(A) COP = Qc / W",
+          "(B) COP = Qh / W",
+          "(C) COP = Qc / W = Tc / (Th - Tc)",
+          "(D) COP = Qh / W = Tc / (Th - Tc)"
+        ],
+        "topic": "Refrigerators",
+        "difficulty": "medium",
+        "explanation": "The coefficient of performance (COP) of a refrigerator is given by COP = Qc / W = Tc / (Th - Tc)."
+      },
+      {
+        "q": "A heat engine can be used to convert heat energy into?",
+        "ans": "D",
+        "opts": [
+          "(A) Mechanical energy",
+          "(B) Electrical energy",
+          "(C) Thermal energy",
+          "(D) All of the above"
+        ],
+        "topic": "Heat Engines",
+        "difficulty": "medium",
+        "explanation": "A heat engine can be used to convert heat energy into mechanical energy, electrical energy, and thermal energy."
+      },
+      {
+        "q": "The entropy change (ΔS) of a system is given by?",
+        "ans": "B",
+        "opts": [
+          "(A) ΔS = Q / T",
+          "(B) ΔS = Q / T + W / T",
+          "(C) ΔS = Q / T - W / T",
+          "(D) ΔS = W / T"
+        ],
+        "topic": "Entropy",
+        "difficulty": "medium",
+        "explanation": "The entropy change (ΔS) of a system is given by ΔS = Q / T + W / T."
+      },
+      {
+        "q": "A reversible adiabatic process is an example of?",
+        "ans": "D",
+        "opts": [
+          "(A) Isochoric process",
+          "(B) Isobaric process",
+          "(C) Isothermal process",
+          "(D) Reversible adiabatic process"
+        ],
+        "topic": "Processes",
+        "difficulty": "medium",
+        "explanation": "A reversible adiabatic process is an example of a reversible adiabatic process."
+      },
+      {
+        "q": "The efficiency of a heat engine is given by?",
+        "ans": "D",
+        "opts": [
+          "(A) η = (W / Qh)",
+          "(B) η = (Qh - W) / Qh",
+          "(C) η = (Qh - Qc) / Qh",
+          "(D) η = (W / Qh) = (Th - Tc) / Th"
+        ],
+        "topic": "Heat Engines",
+        "difficulty": "medium",
+        "explanation": "The efficiency of a heat engine is given by η = (W / Qh) = (Th - Tc) / Th."
+      },
+      {
+        "q": "A refrigerator operating on a Carnot cycle has a coefficient of performance (COP) of?",
+        "ans": "B",
+        "opts": [
+          "(A) COP = 1",
+          "(B) COP = (Tc / Th)",
+          "(C) COP = (Th / Tc)",
+          "(D) COP = (Th - Tc) / Th"
+        ],
+        "topic": "Refrigerators",
+        "difficulty": "hard",
+        "explanation": "A refrigerator operating on a Carnot cycle has a coefficient of performance (COP) of COP = (Tc / Th)."
+      },
+      {
+        "q": "A heat pump operating on a Carnot cycle has a coefficient of performance (COP) of?",
+        "ans": "A",
+        "opts": [
+          "(A) COP = (Th / Tc)",
+          "(B) COP = (Tc / Th)",
+          "(C) COP = 1",
+          "(D) COP = (Th - Tc) / Th"
+        ],
+        "topic": "Heat Pumps",
+        "difficulty": "hard",
+        "explanation": "A heat pump operating on a Carnot cycle has a coefficient of performance (COP) of COP = (Th / Tc)."
+      },
+      {
+        "q": "A reversible engine operating between two heat reservoirs of temperatures Th and Tc has an efficiency of?",
+        "ans": "C",
+        "opts": [
+          "(A) η = (W / Qh)",
+          "(B) η = (Qh - W) / Qh",
+          "(C) η = (Th - Tc) / Th",
+          "(D) η = (Th - Tc) / (Th - Tc)"
+        ],
+        "topic": "Heat Engines",
+        "difficulty": "hard",
+        "explanation": "A reversible engine operating between two heat reservoirs of temperatures Th and Tc has an efficiency of η = (Th - Tc) / Th."
+      },
+      {
+        "q": "A system undergoes a reversible adiabatic expansion from an initial state A to a final state B. The change in entropy (ΔS) of the system is?",
+        "ans": "B",
+        "opts": [
+          "(A) ΔS = Q / T",
+          "(B) ΔS = 0",
+          "(C) ΔS = - Q / T",
+          "(D) ΔS = W / T"
+        ],
+        "topic": "Entropy",
+        "difficulty": "hard",
+        "explanation": "Since the process is reversible and adiabatic, the change in entropy (ΔS) of the system is ΔS = 0."
+      },
+      {
+        "q": "A refrigerator operating on a Carnot cycle has a coefficient of performance (COP) of 4. The temperature of the cold reservoir (Tc) is 250 K. The temperature of the hot reservoir (Th) is?",
+        "ans": "B",
+        "opts": [
+          "(A) 1000 K",
+          "(B) 1250 K",
+          "(C) 1500 K",
+          "(D) 2000 K"
+        ],
+        "topic": "Refrigerators",
+        "difficulty": "hard",
+        "explanation": "We know that COP = (Tc / Th). Therefore, Th = (Tc * COP) = (250 K * 4) = 1000 K."
+      }
+    ]
+  }
+}

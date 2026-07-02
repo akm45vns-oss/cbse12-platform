@@ -1,0 +1,114 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Statistics",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:16:29.525+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "q": "Define probability. Mention its range.",
+        "marks": 2,
+        "topic": "Probability",
+        "answer": "Probability of an event is the measure of the chance or possibility or likelihood of occurrence of that event. It is denoted by the letter 'P'. The range of probability is 0 ≤ P(A) ≤ 1.",
+        "key_points": [
+          "Probability",
+          "Range of probability"
+        ]
+      },
+      {
+        "q": "Distinguish between discrete and continuous random variables.",
+        "marks": 2,
+        "topic": "Random Variables",
+        "answer": "A discrete random variable is a variable that can take only distinct or separate values, whereas a continuous random variable can take any value within a given interval. Examples of discrete random variables are the number of heads in a coin toss, while an example of a continuous random variable is the height of a person.",
+        "key_points": [
+          "Discrete random variable",
+          "Continuous random variable"
+        ]
+      },
+      {
+        "q": "What is a binomial distribution? State its conditions.",
+        "marks": 2,
+        "topic": "Binomial Distribution",
+        "answer": "Binomial distribution is a discrete probability distribution that models the number of successes in a fixed number of independent trials, where each trial has two possible outcomes (success or failure). The conditions for binomial distribution are: a fixed number of trials (n), each trial is independent, each trial has only two possible outcomes (success or failure), and the probability of success remains the same for each trial.",
+        "key_points": [
+          "Binomial distribution",
+          "Conditions for binomial distribution"
+        ]
+      },
+      {
+        "q": "Mention the properties of a binomial distribution.",
+        "marks": 2,
+        "topic": "Binomial Distribution",
+        "answer": "The properties of a binomial distribution are: the sum of probabilities of all possible values of the random variable is 1, the probability of each value is non-negative, and the mean and variance of a binomial distribution are np and npq, respectively, where n is the number of trials and p is the probability of success.",
+        "key_points": [
+          "Properties of binomial distribution",
+          "Mean and variance"
+        ]
+      },
+      {
+        "q": "What is a normal distribution? State its properties.",
+        "marks": 2,
+        "topic": "Normal Distribution",
+        "answer": "A normal distribution is a continuous probability distribution that is symmetric about its mean, showing that data near the mean are more frequent in occurrence than data far from the mean. The properties of a normal distribution are: it has a single peak and is symmetric, the mean, median, and mode are equal, and the total area under the curve is 1.",
+        "key_points": [
+          "Normal distribution",
+          "Properties of normal distribution"
+        ]
+      },
+      {
+        "q": "Distinguish between a population and a sample.",
+        "marks": 2,
+        "topic": "Sampling",
+        "answer": "A population is the entire set of individuals or data points of interest, whereas a sample is a subset of individuals or data points selected from the population. The sample is used to make inferences about the population.",
+        "key_points": [
+          "Population",
+          "Sample"
+        ]
+      },
+      {
+        "q": "What is a sampling distribution? State its significance.",
+        "marks": 2,
+        "topic": "Sampling Distribution",
+        "answer": "A sampling distribution is the probability distribution of a statistic that is obtained from repeated samples of the same size from the same population. The significance of a sampling distribution is that it helps in understanding the variability of a statistic and making inferences about the population.",
+        "key_points": [
+          "Sampling distribution",
+          "Significance of sampling distribution"
+        ]
+      },
+      {
+        "q": "Mention the characteristics of a random sample.",
+        "marks": 2,
+        "topic": "Random Sampling",
+        "answer": "The characteristics of a random sample are: each member of the population has an equal chance of being selected, every member of the population is selected independently, and the sample is representative of the population.",
+        "key_points": [
+          "Random sample",
+          "Characteristics of random sample"
+        ]
+      },
+      {
+        "q": "What is a hypothesis test? State its purpose.",
+        "marks": 2,
+        "topic": "Hypothesis Testing",
+        "answer": "A hypothesis test is a statistical procedure used to make inferences about a population based on a sample of data. The purpose of a hypothesis test is to determine whether there is sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis.",
+        "key_points": [
+          "Hypothesis test",
+          "Purpose of hypothesis test"
+        ]
+      },
+      {
+        "q": "Mention the types of errors in hypothesis testing.",
+        "marks": 2,
+        "topic": "Hypothesis Testing",
+        "answer": "The types of errors in hypothesis testing are Type I error (rejecting the null hypothesis when it is true) and Type II error (failing to reject the null hypothesis when it is false).",
+        "key_points": [
+          "Types of errors",
+          "Type I and Type II errors"
+        ]
+      }
+    ]
+  }
+}

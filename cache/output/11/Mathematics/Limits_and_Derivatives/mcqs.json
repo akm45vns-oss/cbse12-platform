@@ -1,0 +1,222 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Limits and Derivatives",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:29:22.481+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 16,
+    "questions": [
+      {
+        "q": "If f(x) = |x|, what is the value of f(0)?",
+        "ans": "A",
+        "opts": [
+          "(A) 0",
+          "(B) -1",
+          "(C) 1",
+          "(D) undefined"
+        ],
+        "topic": "Introduction to Limits",
+        "difficulty": "easy",
+        "explanation": "Since |x| is defined as the absolute value of x, f(0) = |0| = 0."
+      },
+      {
+        "q": "The limit of (x^2 - 4)/(x + 2) as x approaches -2 is?",
+        "ans": "A",
+        "opts": [
+          "(A) 0",
+          "(B) 2",
+          "(C) undefined",
+          "(D) -6"
+        ],
+        "topic": "Basic Concepts of Limits",
+        "difficulty": "medium",
+        "explanation": "We can simplify the expression by factoring the numerator: (x^2 - 4)/(x + 2) = ((x + 2)(x - 2))/(x + 2). Canceling out the common factor (x + 2), we get (x - 2). Now, as x approaches -2, (x - 2) approaches (-2 - 2) = -4. However, looking at the original expression, we see that it is undefined at x = -2. Therefore, we need to use the fact that the limit of (x^2 - 4)/(x + 2) as x approaches -2 is equal to the limit of (x - 2) as x approaches -2. Since (x - 2) is continuous at x = -2, we can directly substitute x = -2 into the expression (x - 2) to get -4."
+      },
+      {
+        "q": "What is the limit of (1 + 1/x) as x approaches infinity?",
+        "ans": "A",
+        "opts": [
+          "(A) 1",
+          "(B) 2",
+          "(C) 3",
+          "(D) undefined"
+        ],
+        "topic": "Limits of Functions",
+        "difficulty": "easy",
+        "explanation": "As x approaches infinity, 1/x approaches 0. So, (1 + 1/x) approaches (1 + 0) = 1."
+      },
+      {
+        "q": "If f(x) = e^(-x), what is the limit as x approaches infinity?",
+        "ans": "A",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) e",
+          "(D) undefined"
+        ],
+        "topic": "Limits of Exponential and Logarithmic Functions",
+        "difficulty": "easy",
+        "explanation": "As x approaches infinity, e^(-x) approaches 0, since the exponential function e^(-x) is a decreasing function."
+      },
+      {
+        "q": "What is the limit of sin(x)/x as x approaches 0?",
+        "ans": "A",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) -1",
+          "(D) undefined"
+        ],
+        "topic": "Limits of Trigonometric Functions",
+        "difficulty": "hard",
+        "explanation": "We can use the fact that the limit of sin(x)/x as x approaches 0 is equal to 1. However, in this case, we will use a different approach. We can rewrite the expression as (sin(x)/x)(x/1) = (sin(x)/x)(x/1). Now, as x approaches 0, (sin(x)/x) approaches 1. Also, as x approaches 0, (x/1) approaches 0. By the product rule of limits, the limit of the product is the product of the limits. Therefore, the limit of (sin(x)/x)(x/1) as x approaches 0 is equal to (1)(0) = 0."
+      },
+      {
+        "q": "What is the limit of (x^3 - 27)/(x - 3) as x approaches 3?",
+        "ans": "B",
+        "opts": [
+          "(A) 0",
+          "(B) 18",
+          "(C) undefined",
+          "(D) 9"
+        ],
+        "topic": "Basic Concepts of Limits",
+        "difficulty": "medium",
+        "explanation": "We can factor the numerator as (x - 3)(x^2 + 3x + 9). Now, we can cancel out the common factor (x - 3) to get (x^2 + 3x + 9). As x approaches 3, (x^2 + 3x + 9) approaches (3^2 + 3(3) + 9) = 27. Since (x - 3) approaches 0, the expression (x^3 - 27)/(x - 3) approaches 27/0, which is undefined. However, we can rewrite the expression as (x^3 - 27)/(x - 3) = (x^2 + 3x + 9). Now, as x approaches 3, (x^2 + 3x + 9) approaches 27."
+      },
+      {
+        "q": "If f(x) = x^2 sin(1/x), what is the limit as x approaches 0?",
+        "ans": "A",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) undefined",
+          "(D) -1"
+        ],
+        "topic": "Limits of Trigonometric Functions",
+        "difficulty": "hard",
+        "explanation": "The function f(x) = x^2 sin(1/x) is a product of two functions: x^2 and sin(1/x). As x approaches 0, x^2 approaches 0. Also, as x approaches 0, sin(1/x) oscillates between -1 and 1. By the product rule of limits, the limit of the product is the product of the limits. Therefore, the limit of x^2 sin(1/x) as x approaches 0 is equal to (0)(0) = 0."
+      },
+      {
+        "q": "What is the limit of log|x| as x approaches 0?",
+        "ans": "B",
+        "opts": [
+          "(A) 0",
+          "(B) -1",
+          "(C) 1",
+          "(D) undefined"
+        ],
+        "topic": "Limits of Logarithmic Functions",
+        "difficulty": "medium",
+        "explanation": "The function log|x| is defined only for x > 0. As x approaches 0 from the right, log|x| approaches -∞. Since the limit does not exist, the limit is undefined."
+      },
+      {
+        "q": "If f(x) = e^(sin(x)), what is the limit as x approaches π/2?",
+        "ans": "C",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) e",
+          "(D) undefined"
+        ],
+        "topic": "Limits of Exponential and Logarithmic Functions",
+        "difficulty": "medium",
+        "explanation": "As x approaches π/2, sin(x) approaches 1. So, e^(sin(x)) approaches e^1 = e."
+      },
+      {
+        "q": "What is the limit of (1 - cos(x))/x^2 as x approaches 0?",
+        "ans": "B",
+        "opts": [
+          "(A) 0",
+          "(B) 1/2",
+          "(C) 1",
+          "(D) undefined"
+        ],
+        "topic": "Limits of Trigonometric Functions",
+        "difficulty": "hard",
+        "explanation": "We can use the fact that the limit of (1 - cos(x))/x^2 as x approaches 0 is equal to 1/2. However, in this case, we will use a different approach. We can rewrite the expression as (1 - cos(x))/x^2 = (1 - cos(x))/x * x/x^2 = (sin(x/2)/x/2) * (x/2)^2 = (sin(x/2)/x/2) * (x/2)^2. Now, as x approaches 0, (sin(x/2)/x/2) approaches 1/2. Also, as x approaches 0, (x/2)^2 approaches 0. By the product rule of limits, the limit of the product is the product of the limits. Therefore, the limit of (1 - cos(x))/x^2 as x approaches 0 is equal to (1/2)(0) = 0."
+      },
+      {
+        "q": "If f(x) = (x^2 - 4)/(x + 2), what is the limit as x approaches -2?",
+        "ans": "C",
+        "opts": [
+          "(A) 0",
+          "(B) 2",
+          "(C) undefined",
+          "(D) -6"
+        ],
+        "topic": "Limits of Rational Functions",
+        "difficulty": "medium",
+        "explanation": "The function f(x) = (x^2 - 4)/(x + 2) is undefined at x = -2, since the denominator is zero. Therefore, the limit as x approaches -2 is undefined."
+      },
+      {
+        "q": "What is the limit of e^(-x^2) as x approaches infinity?",
+        "ans": "A",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) e",
+          "(D) undefined"
+        ],
+        "topic": "Limits of Exponential and Logarithmic Functions",
+        "difficulty": "easy",
+        "explanation": "As x approaches infinity, e^(-x^2) approaches e^(-∞) = 0, since the exponential function e^(-x) is a decreasing function."
+      },
+      {
+        "q": "If f(x) = (x^3 - 27)/(x - 3), what is the limit as x approaches 3?",
+        "ans": "B",
+        "opts": [
+          "(A) 0",
+          "(B) 18",
+          "(C) undefined",
+          "(D) 9"
+        ],
+        "topic": "Limits of Rational Functions",
+        "difficulty": "medium",
+        "explanation": "We can factor the numerator as (x - 3)(x^2 + 3x + 9). Now, we can cancel out the common factor (x - 3) to get (x^2 + 3x + 9). As x approaches 3, (x^2 + 3x + 9) approaches (3^2 + 3(3) + 9) = 27. Since (x - 3) approaches 0, the expression (x^3 - 27)/(x - 3) approaches 27/0, which is undefined. However, we can rewrite the expression as (x^3 - 27)/(x - 3) = (x^2 + 3x + 9). Now, as x approaches 3, (x^2 + 3x + 9) approaches 27."
+      },
+      {
+        "q": "What is the limit of log|x| as x approaches infinity?",
+        "ans": "A",
+        "opts": [
+          "(A) 0",
+          "(B) -1",
+          "(C) 1",
+          "(D) undefined"
+        ],
+        "topic": "Limits of Logarithmic Functions",
+        "difficulty": "hard",
+        "explanation": "As x approaches infinity, log|x| approaches ∞. However, the limit is not defined as ∞, since ∞ is not a number. We can say that the limit is undefined or that it approaches ∞."
+      },
+      {
+        "q": "If f(x) = sin(x)/x, what is the limit as x approaches 0?",
+        "ans": "A",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) -1",
+          "(D) undefined"
+        ],
+        "topic": "Limits of Trigonometric Functions",
+        "difficulty": "hard",
+        "explanation": "We can use the fact that the limit of sin(x)/x as x approaches 0 is equal to 1. However, in this case, we will use a different approach. We can rewrite the expression as (sin(x)/x)(x/1) = (sin(x)/x)(x/1). Now, as x approaches 0, (sin(x)/x) approaches 1. Also, as x approaches 0, (x/1) approaches 0. By the product rule of limits, the limit of the product is the product of the limits. Therefore, the limit of (sin(x)/x)(x/1) as x approaches 0 is equal to (1)(0) = 0."
+      },
+      {
+        "q": "What is the limit of (1 + 1/x) as x approaches 0?",
+        "ans": "D",
+        "opts": [
+          "(A) 1",
+          "(B) 2",
+          "(C) 3",
+          "(D) undefined"
+        ],
+        "topic": "Limits of Rational Functions",
+        "difficulty": "hard",
+        "explanation": "As x approaches 0, 1/x approaches ∞. Therefore, (1 + 1/x) approaches 1 + ∞, which is undefined."
+      }
+    ]
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Getting Started with Python",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:22:01.858+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 19,
+    "questions": [
+      {
+        "q": "What is the primary purpose of using Python?",
+        "ans": "C",
+        "opts": [
+          "(A) Web Development",
+          "(B) System Administration",
+          "(C) General-purpose programming",
+          "(D) Scientific Computing"
+        ],
+        "topic": "Introduction to Python",
+        "difficulty": "easy",
+        "explanation": "Python is a versatile language used for various purposes, but its primary use is as a general-purpose programming language."
+      },
+      {
+        "q": "Which of the following is a built-in data type in Python?",
+        "ans": "D",
+        "opts": [
+          "(A) List",
+          "(B) Integer",
+          "(C) Function",
+          "(D) All of the above"
+        ],
+        "topic": "Python Data Types",
+        "difficulty": "easy",
+        "explanation": "Python has several built-in data types, including lists, integers, and functions."
+      },
+      {
+        "q": "What is the correct syntax to print 'Hello, World!' in Python?",
+        "ans": "C",
+        "opts": [
+          "(A) print(Hello, World!)",
+          "(B) println('Hello, World!');",
+          "(C) print('Hello, World!')",
+          "(D) echo 'Hello, World!';"
+        ],
+        "topic": "Python Basics",
+        "difficulty": "easy",
+        "explanation": "In Python, the correct way to print output is using the print() function."
+      },
+      {
+        "q": "Which operator is used for comparison in Python?",
+        "ans": "D",
+        "opts": [
+          "(A) ==",
+          "(B) =",
+          "(C) !=",
+          "(D) All of the above"
+        ],
+        "topic": "Python Operators",
+        "difficulty": "easy",
+        "explanation": "Python uses various operators for comparison, including ==, !=, and others."
+      },
+      {
+        "q": "What is the purpose of the __name__ variable in Python?",
+        "ans": "C",
+        "opts": [
+          "(A) To store user input",
+          "(B) To access module attributes",
+          "(C) To check if a module is being run directly",
+          "(D) To set environment variables"
+        ],
+        "topic": "Python Modules",
+        "difficulty": "easy",
+        "explanation": "The __name__ variable in Python is used to check if a module is being run directly or being imported."
+      },
+      {
+        "q": "How do you create a list in Python?",
+        "ans": "A",
+        "opts": [
+          "(A) list = [1, 2, 3]",
+          "(B) list(1, 2, 3)",
+          "(C) list = new List(1, 2, 3)",
+          "(D) list = [1, 2, 3, ...]"
+        ],
+        "topic": "Python Data Structures",
+        "difficulty": "easy",
+        "explanation": "To create a list in Python, you use square brackets [] and elements are separated by commas."
+      },
+      {
+        "q": "What is the difference between int() and float() in Python?",
+        "ans": "B",
+        "opts": [
+          "(A) int() returns a float, while float() returns an integer",
+          "(B) int() returns an integer, while float() returns a float",
+          "(C) int() returns a string, while float() returns a list",
+          "(D) int() returns a list, while float() returns a dictionary"
+        ],
+        "topic": "Python Functions",
+        "difficulty": "medium",
+        "explanation": "int() function returns an integer, while float() function returns a floating-point number."
+      },
+      {
+        "q": "How do you handle errors in Python using try-except blocks?",
+        "ans": "C",
+        "opts": [
+          "(A) try: code, except Exception as e: print(e)",
+          "(B) try: code, except: print('Error occurred')",
+          "(C) try: code, except Exception as e: print('Error occurred')",
+          "(D) try: code, except Exception: print(e)"
+        ],
+        "topic": "Error Handling",
+        "difficulty": "medium",
+        "explanation": "To handle errors in Python, you use try-except blocks, where the except block catches the specific exception that occurred."
+      },
+      {
+        "q": "What is the purpose of the with statement in Python?",
+        "ans": "C",
+        "opts": [
+          "(A) To open a file",
+          "(B) To close a file",
+          "(C) To create a context manager",
+          "(D) To read a file"
+        ],
+        "topic": "Context Managers",
+        "difficulty": "medium",
+        "explanation": "The with statement in Python is used to create a context manager, which automatically takes care of resources like file handles."
+      },
+      {
+        "q": "How do you create a dictionary in Python?",
+        "ans": "C",
+        "opts": [
+          "(A) dict = {key: value}",
+          "(B) dict = new Dictionary(key, value)",
+          "(C) dict = {key: value, key2: value2}",
+          "(D) dict = key: value"
+        ],
+        "topic": "Python Data Structures",
+        "difficulty": "medium",
+        "explanation": "To create a dictionary in Python, you use curly brackets {} and key-value pairs are separated by commas."
+      },
+      {
+        "q": "What is the difference between list and tuple in Python?",
+        "ans": "B",
+        "opts": [
+          "(A) list is immutable, while tuple is mutable",
+          "(B) list is mutable, while tuple is immutable",
+          "(C) list is a dictionary, while tuple is a list",
+          "(D) list is a set, while tuple is a dictionary"
+        ],
+        "topic": "Python Data Structures",
+        "difficulty": "medium",
+        "explanation": "list is mutable, while tuple is immutable."
+      },
+      {
+        "q": "How do you sort a list in Python?",
+        "ans": "A",
+        "opts": [
+          "(A) sorted_list = sorted(list)",
+          "(B) sorted_list = list.sort()",
+          "(C) sorted_list = list.sort(reverse=True)",
+          "(D) sorted_list = list.reverse()"
+        ],
+        "topic": "Python Data Structures",
+        "difficulty": "medium",
+        "explanation": "To sort a list in Python, you use the sorted() function."
+      },
+      {
+        "q": "What is the purpose of the lambda function in Python?",
+        "ans": "B",
+        "opts": [
+          "(A) To define a named function",
+          "(B) To define an anonymous function",
+          "(C) To import a module",
+          "(D) To open a file"
+        ],
+        "topic": "Python Functions",
+        "difficulty": "medium",
+        "explanation": "The lambda function in Python is used to define an anonymous function, which can be used immediately."
+      },
+      {
+        "q": "How do you create a set in Python?",
+        "ans": "A",
+        "opts": [
+          "(A) set = {element1, element2}",
+          "(B) set = new Set(element1, element2)",
+          "(C) set = set(element1, element2)",
+          "(D) set = [element1, element2]"
+        ],
+        "topic": "Python Data Structures",
+        "difficulty": "medium",
+        "explanation": "To create a set in Python, you use curly brackets {} and elements are separated by commas."
+      },
+      {
+        "q": "What is the difference between a stack and a queue in Python?",
+        "ans": "B",
+        "opts": [
+          "(A) Stack is a FIFO data structure, while queue is a LIFO data structure",
+          "(B) Stack is a LIFO data structure, while queue is a FIFO data structure",
+          "(C) Stack is a dictionary, while queue is a list",
+          "(D) Stack is a set, while queue is a dictionary"
+        ],
+        "topic": "Data Structures",
+        "difficulty": "hard",
+        "explanation": "Stack is a LIFO data structure, while queue is a FIFO data structure."
+      },
+      {
+        "q": "How do you implement a queue in Python?",
+        "ans": "C",
+        "opts": [
+          "(A) queue = []",
+          "(B) queue = new Queue()",
+          "(C) queue = collections.deque()",
+          "(D) queue = list()"
+        ],
+        "topic": "Data Structures",
+        "difficulty": "hard",
+        "explanation": "To implement a queue in Python, you use the collections.deque() function."
+      },
+      {
+        "q": "What is the purpose of the defaultdict in Python?",
+        "ans": "A",
+        "opts": [
+          "(A) To create a dictionary with default values",
+          "(B) To create a list with default values",
+          "(C) To create a set with default values",
+          "(D) To create a stack with default values"
+        ],
+        "topic": "Python Data Structures",
+        "difficulty": "hard",
+        "explanation": "The defaultdict in Python is used to create a dictionary with default values, which are used when a key is not present."
+      },
+      {
+        "q": "How do you use the itertools module in Python?",
+        "ans": "C",
+        "opts": [
+          "(A) to iterate over a sequence",
+          "(B) to filter a sequence",
+          "(C) to combine sequences",
+          "(D) to create a new sequence"
+        ],
+        "topic": "Python Modules",
+        "difficulty": "hard",
+        "explanation": "The itertools module in Python is used to combine sequences, such as zip() and chain()."
+      },
+      {
+        "q": "What is the difference between map() and filter() in Python?",
+        "ans": "A",
+        "opts": [
+          "(A) map() applies a function to each item, while filter() applies a condition",
+          "(B) map() applies a condition, while filter() applies a function",
+          "(C) map() returns a list, while filter() returns a dictionary",
+          "(D) map() returns a dictionary, while filter() returns a list"
+        ],
+        "topic": "Python Functions",
+        "difficulty": "hard",
+        "explanation": "map() applies a function to each item, while filter() applies a condition."
+      }
+    ]
+  }
+}

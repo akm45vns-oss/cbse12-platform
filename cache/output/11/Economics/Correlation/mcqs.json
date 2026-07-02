@@ -1,0 +1,235 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Correlation",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:22:12.437+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 17,
+    "questions": [
+      {
+        "q": "If the correlation coefficient is 1, what does it imply?",
+        "ans": "A",
+        "opts": [
+          "(A) Perfect positive correlation",
+          "(B) Perfect negative correlation",
+          "(C) No correlation",
+          "(D) Perfectly unrelated"
+        ],
+        "topic": "Correlation Coefficient",
+        "difficulty": "easy",
+        "explanation": "A correlation coefficient of 1 indicates a perfect positive linear relationship between two variables."
+      },
+      {
+        "q": "What is the range of the correlation coefficient?",
+        "ans": "C",
+        "opts": [
+          "(A) 0 to 1",
+          "(B) -1 to 0",
+          "(C) -1 to 1",
+          "(D) 0 to 2"
+        ],
+        "topic": "Correlation Coefficient",
+        "difficulty": "easy",
+        "explanation": "The correlation coefficient ranges from -1 (perfect negative correlation) to 1 (perfect positive correlation), including 0 (no correlation)."
+      },
+      {
+        "q": "If the correlation coefficient is -0.5, what does it indicate?",
+        "ans": "C",
+        "opts": [
+          "(A) Perfect positive correlation",
+          "(B) Perfect negative correlation",
+          "(C) Moderate negative correlation",
+          "(D) No correlation"
+        ],
+        "topic": "Interpretation of Correlation Coefficient",
+        "difficulty": "easy",
+        "explanation": "A correlation coefficient of -0.5 indicates a moderate negative linear relationship between two variables."
+      },
+      {
+        "q": "What is the difference between positive and negative correlation?",
+        "ans": "A",
+        "opts": [
+          "(A) Positive correlation always lies between 0 and 1, while negative correlation lies between -1 and 0.",
+          "(B) Positive correlation always lies between -1 and 0, while negative correlation lies between 0 and 1.",
+          "(C) Positive correlation is a strong relationship, while negative correlation is a weak relationship.",
+          "(D) Positive correlation is a weak relationship, while negative correlation is a strong relationship."
+        ],
+        "topic": "Types of Correlation",
+        "difficulty": "easy",
+        "explanation": "Positive correlation always lies between 0 and 1, while negative correlation lies between -1 and 0. This indicates the strength and direction of the linear relationship between two variables."
+      },
+      {
+        "q": "If there is no linear relationship between two variables, what is the value of the correlation coefficient?",
+        "ans": "A",
+        "opts": [
+          "(A) 0",
+          "(B) 1",
+          "(C) -1",
+          "(D) 0.5"
+        ],
+        "topic": "Interpretation of Correlation Coefficient",
+        "difficulty": "easy",
+        "explanation": "If there is no linear relationship between two variables, the correlation coefficient is 0, indicating no correlation."
+      },
+      {
+        "q": "What is the formula for calculating the correlation coefficient?",
+        "ans": "B",
+        "opts": [
+          "(A) r = (x - ±x) / (x + ±x)",
+          "(B) r = ∇x∇y / (∇x∇2 + ∇2∇3)",
+          "(C) r = ∇2∇x - ∇y∇x",
+          "(D) r = (∇x∇y) / (∇y∇2 + ∇x∇3)"
+        ],
+        "topic": "Correlation Coefficient Formula",
+        "difficulty": "medium",
+        "explanation": "The formula for calculating the correlation coefficient is r = ∇x∇y / (∇x∇2 + ∇y∇3), where ∇x and ∇y are the deviations from the mean for the x and y variables, respectively."
+      },
+      {
+        "q": "What is the difference between correlation and causation?",
+        "ans": "C",
+        "opts": [
+          "(A) Correlation is a necessary and sufficient condition for causation.",
+          "(B) Correlation is not a necessary condition for causation, but it is a sufficient condition.",
+          "(C) Correlation is a necessary condition for causation, but it is not a sufficient condition.",
+          "(D) Correlation and causation are the same thing."
+        ],
+        "topic": "Correlation and Causation",
+        "difficulty": "medium",
+        "explanation": "Correlation is a necessary condition for causation, but it is not a sufficient condition. This means that correlation can indicate a potential cause-and-effect relationship, but it does not guarantee causation."
+      },
+      {
+        "q": "If two variables are perfectly positively correlated, what does it indicate?",
+        "ans": "A",
+        "opts": [
+          "(A) One variable increases as the other variable increases.",
+          "(B) One variable decreases as the other variable increases.",
+          "(C) There is no relationship between the two variables.",
+          "(D) One variable has no effect on the other variable."
+        ],
+        "topic": "Types of Correlation",
+        "difficulty": "medium",
+        "explanation": "If two variables are perfectly positively correlated, it indicates that one variable increases as the other variable increases."
+      },
+      {
+        "q": "What is the concept of spurious correlation?",
+        "ans": "A",
+        "opts": [
+          "(A) A correlation that is caused by a third variable.",
+          "(B) A correlation that is not caused by a third variable.",
+          "(C) A correlation that is random and has no underlying pattern.",
+          "(D) A correlation that is not random and has an underlying pattern."
+        ],
+        "topic": "Types of Correlation",
+        "difficulty": "medium",
+        "explanation": "Spurious correlation refers to a correlation that is caused by a third variable, rather than a direct relationship between the two variables."
+      },
+      {
+        "q": "What is the difference between a correlation matrix and a covariance matrix?",
+        "ans": "A",
+        "opts": [
+          "(A) A correlation matrix shows the correlation between variables, while a covariance matrix shows the covariance between variables.",
+          "(B) A correlation matrix shows the covariance between variables, while a covariance matrix shows the correlation between variables.",
+          "(C) A correlation matrix shows the mean of the variables, while a covariance matrix shows the standard deviation of the variables.",
+          "(D) A correlation matrix shows the standard deviation of the variables, while a covariance matrix shows the mean of the variables."
+        ],
+        "topic": "Correlation Matrix and Covariance Matrix",
+        "difficulty": "medium",
+        "explanation": "A correlation matrix shows the correlation between variables, while a covariance matrix shows the covariance between variables."
+      },
+      {
+        "q": "What is the concept of non-linear correlation?",
+        "ans": "A",
+        "opts": [
+          "(A) A correlation that is not linear.",
+          "(B) A correlation that is linear but with a non-constant slope.",
+          "(C) A correlation that is non-linear but has a constant slope.",
+          "(D) A correlation that is both linear and non-linear."
+        ],
+        "topic": "Types of Correlation",
+        "difficulty": "medium",
+        "explanation": "Non-linear correlation refers to a correlation that is not linear, meaning that the relationship between the variables is not a straight line."
+      },
+      {
+        "q": "What is the formula for calculating the covariance matrix?",
+        "ans": "B",
+        "opts": [
+          "(A) S = ∑(xy - ±x±y) / (n - 1)",
+          "(B) S = ∑(x - ±x)(y - ±y) / (n - 1)",
+          "(C) S = ∑(x - ±x)^2 / (n - 1)",
+          "(D) S = ∑(y - ±y)^2 / (n - 1)"
+        ],
+        "topic": "Covariance Matrix",
+        "difficulty": "hard",
+        "explanation": "The formula for calculating the covariance matrix is S = ∑(x - ±x)(y - ±y) / (n - 1), where x and y are the variables, ±x and ±y are the means of the variables, and n is the sample size."
+      },
+      {
+        "q": "What is the concept of partial correlation?",
+        "ans": "A",
+        "opts": [
+          "(A) A correlation between two variables while controlling for a third variable.",
+          "(B) A correlation between two variables while not controlling for a third variable.",
+          "(C) A correlation between two variables and a third variable.",
+          "(D) A correlation between two variables, but not including a third variable."
+        ],
+        "topic": "Types of Correlation",
+        "difficulty": "hard",
+        "explanation": "Partial correlation refers to a correlation between two variables while controlling for a third variable."
+      },
+      {
+        "q": "What is the formula for calculating the partial correlation coefficient?",
+        "ans": "A",
+        "opts": [
+          "(A) r_{xy} = r_{xy} - r_{xz}r_{yz} / (1 - r_{xz}^2)(1 - r_{yz}^2)",
+          "(B) r_{xy} = r_{xy} + r_{xz}r_{yz} / (1 - r_{xz}^2)(1 - r_{yz}^2)",
+          "(C) r_{xy} = r_{xy} - r_{xz}r_{yz} / (1 + r_{xz}^2)(1 + r_{yz}^2)",
+          "(D) r_{xy} = r_{xy} + r_{xz}r_{yz} / (1 + r_{xz}^2)(1 + r_{yz}^2)"
+        ],
+        "topic": "Partial Correlation Coefficient",
+        "difficulty": "hard",
+        "explanation": "The formula for calculating the partial correlation coefficient is r_{xy} = r_{xy} - r_{xz}r_{yz} / (1 - r_{xz}^2)(1 - r_{yz}^2), where r_{xy}, r_{xz}, and r_{yz} are the correlation coefficients between the variables."
+      },
+      {
+        "q": "What is the concept of canonical correlation?",
+        "ans": "A",
+        "opts": [
+          "(A) A correlation between two sets of variables.",
+          "(B) A correlation between two variables while controlling for a third variable.",
+          "(C) A correlation between two variables and a third variable.",
+          "(D) A correlation between two variables, but not including a third variable."
+        ],
+        "topic": "Types of Correlation",
+        "difficulty": "hard",
+        "explanation": "Canonical correlation refers to a correlation between two sets of variables."
+      },
+      {
+        "q": "What is the formula for calculating the canonical correlation coefficient?",
+        "ans": "A",
+        "opts": [
+          "(A) r = ∑(x_i - ±x)(y_i - ±y) / (∑(x_i - ±x)^2∑(y_i - ±y)^2)",
+          "(B) r = ∑(x_i - ±x)(y_i - ±y) / (∑(x_i - ±x)^2∑(y_i - ±y)^2 + 1)",
+          "(C) r = ∑(x_i - ±x)(y_i - ±y) / (∑(x_i - ±x)^2∑(y_i - ±y)^2 - 1)",
+          "(D) r = ∑(x_i - ±x)(y_i - ±y) / (∑(x_i - ±x)^2∑(y_i - ±y)^2 + 2)"
+        ],
+        "topic": "Canonical Correlation Coefficient",
+        "difficulty": "hard",
+        "explanation": "The formula for calculating the canonical correlation coefficient is r = ∑(x_i - ±x)(y_i - ±y) / (∑(x_i - ±x)^2∑(y_i - ±y)^2), where x_i and y_i are the variables, ±x and ±y are the means of the variables."
+      },
+      {
+        "q": "What is the concept of redundancy analysis?",
+        "ans": "A",
+        "opts": [
+          "(A) A statistical technique used to analyze the relationship between two sets of variables.",
+          "(B) A statistical technique used to analyze the relationship between two variables while controlling for a third variable.",
+          "(C) A statistical technique used to analyze the relationship between two variables and a third variable.",
+          "(D) A statistical technique used to analyze the relationship between two variables, but not including a third variable."
+        ],
+        "topic": "Types of Correlation",
+        "difficulty": "hard",
+        "explanation": "Redundancy analysis refers to a statistical technique used to analyze the relationship between two sets of variables."
+      }
+    ]
+  }
+}

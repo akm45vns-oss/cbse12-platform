@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Sets",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:27:13.197+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 9,
+    "questions": [
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): The empty set is a subset of every set as it doesn't contain any element.",
+        "assertion": "Assertion (A): The empty set is a subset of every set.",
+        "explanation": "The empty set is a subset of every set because it doesn't contain any element, making it a proper subset."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): The union of two disjoint sets is disjoint because they don't have any common elements.",
+        "assertion": "Assertion (A): The union of two disjoint sets is disjoint.",
+        "explanation": "Disjoint sets are those that don't have any common elements, making their union disjoint."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): The intersection of two sets is a subset of both sets because it contains only the common elements.",
+        "assertion": "Assertion (A): The intersection of two sets is a subset of both sets.",
+        "explanation": "The intersection of two sets contains only the common elements, making it a subset of both sets."
+      },
+      {
+        "ans": "C",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): The difference of two sets is only a subset of the first set.",
+        "assertion": "Assertion (A): The difference of two sets is a subset of both sets.",
+        "explanation": "The difference of two sets is a subset of the first set, not both sets."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): If A is a subset of B, then A ∪ B = A ∪ (A ∪ C) where C is the set of elements in B but not in A.",
+        "assertion": "Assertion (A): If A is a subset of B, then A ∪ B = B.",
+        "explanation": "If A is a subset of B, then A ∪ B = B because A is already contained in B, making the union of A and B equal to B."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): If A is a subset of B, then A ∩ B = A ∩ (A ∪ C) where C is the set of elements in B but not in A.",
+        "assertion": "Assertion (A): If A is a subset of B, then A ∩ B = A.",
+        "explanation": "If A is a subset of B, then A ∩ B = A because A is already contained in B, making the intersection of A and B equal to A."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): The Cartesian product of two sets A and B is commutative because A × B = B × A.",
+        "assertion": "Assertion (A): The Cartesian product of two sets A and B is commutative.",
+        "explanation": "The Cartesian product of two sets A and B is indeed commutative because A × B = B × A."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): The power set of a set A contains all subsets of A, which are also sets.",
+        "assertion": "Assertion (A): The power set of a set A is a set.",
+        "explanation": "The power set of a set A is a set that contains all subsets of A, which are also sets."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): The power set of a set A is countable because the number of subsets of A is equal to 2^n, where n is the number of elements in A.",
+        "assertion": "Assertion (A): The power set of a set A is countable if A is finite.",
+        "explanation": "The power set of a finite set A is indeed countable because the number of subsets of A is equal to 2^n, where n is the number of elements in A."
+      }
+    ]
+  }
+}

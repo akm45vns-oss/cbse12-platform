@@ -1,0 +1,261 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Introduction to Problem Solving",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T11:01:06.606+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 19,
+    "questions": [
+      {
+        "q": "What is the primary goal of problem-solving in computer science?",
+        "ans": "C",
+        "opts": [
+          "(A) To write efficient algorithms",
+          "(B) To design user interfaces",
+          "(C) To develop software systems",
+          "(D) To analyze data"
+        ],
+        "topic": "Introduction to Problem Solving",
+        "difficulty": "easy",
+        "explanation": "Problem-solving in computer science involves designing and developing software systems that meet specific requirements. While efficient algorithms and user interfaces are important aspects, they are not the primary goal."
+      },
+      {
+        "q": "Which of the following is an example of a well-structured algorithm?",
+        "ans": "B",
+        "opts": [
+          "(A) A loop with a conditional statement inside",
+          "(B) A recursive function with a base case",
+          "(C) A nested loop with multiple conditions",
+          "(D) A linear search algorithm"
+        ],
+        "topic": "Algorithm Design",
+        "difficulty": "easy",
+        "explanation": "A well-structured algorithm typically has a clear and concise implementation, with a clear purpose and exit conditions. Recursive functions with a base case are a good example of this."
+      },
+      {
+        "q": "What is the main advantage of using a top-down approach to problem-solving?",
+        "ans": "C",
+        "opts": [
+          "(A) It allows for more flexibility in design",
+          "(B) It enables faster development and testing",
+          "(C) It provides a clear and modular structure",
+          "(D) It reduces the risk of errors"
+        ],
+        "topic": "Problem-Solving Paradigms",
+        "difficulty": "easy",
+        "explanation": "A top-down approach involves breaking down the problem into smaller, more manageable sub-problems. This provides a clear and modular structure, making it easier to understand and maintain the solution."
+      },
+      {
+        "q": "Which data structure is best suited for storing a large collection of unique elements?",
+        "ans": "C",
+        "opts": [
+          "(A) Array",
+          "(B) Linked List",
+          "(C) Hash Table",
+          "(D) Stack"
+        ],
+        "topic": "Data Structures",
+        "difficulty": "easy",
+        "explanation": "Hash Tables are designed to store and retrieve data efficiently, with an average time complexity of O(1). They are particularly useful for storing large collections of unique elements."
+      },
+      {
+        "q": "What is the purpose of the 'if-else' statement in programming?",
+        "ans": "C",
+        "opts": [
+          "(A) To repeat a block of code",
+          "(B) To skip a block of code",
+          "(C) To make a decision based on a condition",
+          "(D) To assign a value to a variable"
+        ],
+        "topic": "Control Structures",
+        "difficulty": "easy",
+        "explanation": "The 'if-else' statement is used to make decisions based on conditions. It allows the program to execute different blocks of code depending on the outcome of the condition."
+      },
+      {
+        "q": "Which of the following is an example of a recursive function?",
+        "ans": "B",
+        "opts": [
+          "(A) A loop that calculates the factorial of a number",
+          "(B) A function that calls itself to calculate the factorial of a number",
+          "(C) A function that uses a loop to calculate the sum of an array",
+          "(D) A function that uses a recursive approach to sort an array"
+        ],
+        "topic": "Algorithm Design",
+        "difficulty": "easy",
+        "explanation": "A recursive function calls itself to solve a problem. In this case, a function that calculates the factorial of a number by calling itself is an example of a recursive function."
+      },
+      {
+        "q": "What is the main advantage of using a modular design in problem-solving?",
+        "ans": "C",
+        "opts": [
+          "(A) It allows for more flexibility in design",
+          "(B) It enables faster development and testing",
+          "(C) It provides a clear and reusable code",
+          "(D) It reduces the risk of errors"
+        ],
+        "topic": "Problem-Solving Paradigms",
+        "difficulty": "easy",
+        "explanation": "A modular design involves breaking down the problem into smaller, independent modules. This provides a clear and reusable code, making it easier to maintain and modify the solution."
+      },
+      {
+        "q": "Which of the following is an example of a time complexity of O(n^2)?",
+        "ans": "C",
+        "opts": [
+          "(A) A linear search algorithm",
+          "(B) A binary search algorithm",
+          "(C) A bubble sort algorithm",
+          "(D) A merge sort algorithm"
+        ],
+        "topic": "Algorithm Analysis",
+        "difficulty": "medium",
+        "explanation": "A time complexity of O(n^2) indicates that the algorithm's running time grows quadratically with the size of the input. Bubble sort is an example of an algorithm with this time complexity."
+      },
+      {
+        "q": "What is the purpose of the 'break' statement in programming?",
+        "ans": "C",
+        "opts": [
+          "(A) To repeat a block of code",
+          "(B) To skip a block of code",
+          "(C) To exit a loop or switch statement",
+          "(D) To assign a value to a variable"
+        ],
+        "topic": "Control Structures",
+        "difficulty": "medium",
+        "explanation": "The 'break' statement is used to exit a loop or switch statement prematurely. It allows the program to terminate the loop or switch to another case."
+      },
+      {
+        "q": "Which of the following is an example of a greedy algorithm?",
+        "ans": "C",
+        "opts": [
+          "(A) A dynamic programming algorithm",
+          "(B) A recursive algorithm",
+          "(C) An algorithm that always chooses the locally optimal solution",
+          "(D) A heuristic algorithm"
+        ],
+        "topic": "Algorithm Design",
+        "difficulty": "medium",
+        "explanation": "A greedy algorithm always chooses the locally optimal solution, with the hope that it will lead to a global optimum. Examples include Huffman coding and activity selection problem."
+      },
+      {
+        "q": "What is the difference between a loop and a recursive function?",
+        "ans": "A",
+        "opts": [
+          "(A) A loop is used for repeating a block of code, while a recursive function is used for solving a problem",
+          "(B) A loop is used for solving a problem, while a recursive function is used for repeating a block of code",
+          "(C) A loop is used for solving a problem, while a recursive function is used for solving a different problem",
+          "(D) A loop is used for repeating a block of code, while a recursive function is used for repeating a block of code"
+        ],
+        "topic": "Algorithm Design",
+        "difficulty": "medium",
+        "explanation": "A loop is used for repeating a block of code, while a recursive function is used for solving a problem. Recursive functions call themselves to solve a problem, whereas loops use a counter or index to repeat the code."
+      },
+      {
+        "q": "Which of the following is an example of a Big O notation?",
+        "ans": "B",
+        "opts": [
+          "(A) A time complexity of O(1)",
+          "(B) A time complexity of O(n)",
+          "(C) A time complexity of O(n^2)",
+          "(D) A space complexity of O(n)"
+        ],
+        "topic": "Algorithm Analysis",
+        "difficulty": "medium",
+        "explanation": "Big O notation is used to describe the time or space complexity of an algorithm. A time complexity of O(n) indicates that the algorithm's running time grows linearly with the size of the input."
+      },
+      {
+        "q": "What is the purpose of the 'continue' statement in programming?",
+        "ans": "B",
+        "opts": [
+          "(A) To repeat a block of code",
+          "(B) To skip a block of code",
+          "(C) To exit a loop or switch statement",
+          "(D) To assign a value to a variable"
+        ],
+        "topic": "Control Structures",
+        "difficulty": "medium",
+        "explanation": "The 'continue' statement is used to skip the rest of the code within the loop and move on to the next iteration. It allows the program to skip certain code and continue with the loop."
+      },
+      {
+        "q": "Which of the following is an example of a divide-and-conquer algorithm?",
+        "ans": "C",
+        "opts": [
+          "(A) A greedy algorithm",
+          "(B) A dynamic programming algorithm",
+          "(C) An algorithm that breaks down the problem into smaller sub-problems",
+          "(D) A recursive algorithm"
+        ],
+        "topic": "Algorithm Design",
+        "difficulty": "medium",
+        "explanation": "A divide-and-conquer algorithm breaks down the problem into smaller sub-problems, solves each sub-problem, and combines the solutions to solve the original problem. Examples include merge sort and quick sort."
+      },
+      {
+        "q": "What is the main advantage of using a data-driven approach to problem-solving?",
+        "ans": "C",
+        "opts": [
+          "(A) It allows for more flexibility in design",
+          "(B) It enables faster development and testing",
+          "(C) It provides a clear and modular structure",
+          "(D) It reduces the risk of errors"
+        ],
+        "topic": "Problem-Solving Paradigms",
+        "difficulty": "medium",
+        "explanation": "A data-driven approach involves using data to drive the design and development of the solution. This provides a clear and modular structure, making it easier to maintain and modify the solution."
+      },
+      {
+        "q": "Which of the following is an example of a time complexity of O(log n)?",
+        "ans": "B",
+        "opts": [
+          "(A) A linear search algorithm",
+          "(B) A binary search algorithm",
+          "(C) A bubble sort algorithm",
+          "(D) A merge sort algorithm"
+        ],
+        "topic": "Algorithm Analysis",
+        "difficulty": "medium",
+        "explanation": "A time complexity of O(log n) indicates that the algorithm's running time grows logarithmically with the size of the input. Binary search is an example of an algorithm with this time complexity."
+      },
+      {
+        "q": "What is the purpose of the 'return' statement in programming?",
+        "ans": "C",
+        "opts": [
+          "(A) To repeat a block of code",
+          "(B) To skip a block of code",
+          "(C) To exit a function or method",
+          "(D) To assign a value to a variable"
+        ],
+        "topic": "Control Structures",
+        "difficulty": "hard",
+        "explanation": "The 'return' statement is used to exit a function or method and return a value to the calling code. It allows the program to terminate the function and return the result."
+      },
+      {
+        "q": "Which of the following is an example of a NP-complete problem?",
+        "ans": "D",
+        "opts": [
+          "(A) A problem that can be solved in polynomial time",
+          "(B) A problem that is known to be NP-hard",
+          "(C) A problem that is known to be NP-easy",
+          "(D) A problem that is known to be NP-complete"
+        ],
+        "topic": "Computational Complexity",
+        "difficulty": "hard",
+        "explanation": "NP-complete problems are a class of problems that are known to be NP-hard and are also NP-complete. Examples include the traveling salesman problem and the knapsack problem."
+      },
+      {
+        "q": "What is the relationship between the time and space complexities of an algorithm?",
+        "ans": "A",
+        "opts": [
+          "(A) Time complexity is always greater than or equal to space complexity",
+          "(B) Time complexity is always less than or equal to space complexity",
+          "(C) Time complexity and space complexity are unrelated",
+          "(D) Time complexity and space complexity are related, but not directly proportional"
+        ],
+        "topic": "Algorithm Analysis",
+        "difficulty": "hard",
+        "explanation": "Time complexity is a measure of how long an algorithm takes to run, while space complexity is a measure of how much memory an algorithm uses. In general, time complexity is greater than or equal to space complexity, as faster algorithms often require more memory."
+      }
+    ]
+  }
+}

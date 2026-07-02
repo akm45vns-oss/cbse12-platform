@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Statistics",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T04:21:03.08+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "q": "Find the mean deviation about the median for the following data: 128, 130, 132, 134, 136, 138, 140.",
+        "type": "Long Answer",
+        "marks": 3,
+        "answer": "Step 1: Arrange the data in ascending order: 128, 130, 132, 134, 136, 138, 140. \nStep 2: Calculate the median of the given data: Median = 134 \nStep 3: Find the absolute deviations from the median: |128-134|, |130-134|, |132-134|, |134-134|, |136-134|, |138-134|, |140-134| \nStep 4: Find the mean of the absolute deviations: (28+4+4+0+4+8+12)/7 = 60/7 = 8.57",
+        "difficulty": "medium",
+        "year_pattern": "2018-style"
+      },
+      {
+        "q": "The mean of five numbers is 15. If one of the numbers is 5, find the mean of the other four numbers.",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "Let the other four numbers be x1, x2, x3, x4. We are given that (x1+x2+x3+x4+5)/5=15, which implies that x1+x2+x3+x4=70. Therefore, the mean of the other four numbers is (x1+x2+x3+x4)/4=70/4=17.5.",
+        "difficulty": "easy",
+        "year_pattern": "2019-style"
+      },
+      {
+        "q": "Which one of the following is a measure of dispersion of a data?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Range",
+        "difficulty": "easy",
+        "year_pattern": "2020-style"
+      },
+      {
+        "q": "Find the mode of the following frequency distribution: <br> |Class Interval|Frequency| <br> |0-10|10| <br> |10-20|20| <br> |20-30|40| <br> |30-40|30|",
+        "type": "Long Answer",
+        "marks": 3,
+        "answer": "Step 1: We are given a frequency distribution of class intervals. To find the mode, we need to identify the modal class. The modal class is the class interval with the highest frequency. In this case, the class interval 20-30 has the highest frequency of 40. \nStep 2: To find the mode, we need to calculate the class marks and the corresponding frequencies. \nStep 3: The class mark of the modal class is (20+30)/2 = 25. Since the class interval is of equal width, we can use the formula: Mode = L + ((f_m - f_0)/(2f_m - f_1 - f_0)) * w, where L is the lower limit of the modal class, f_m is the frequency of the modal class, f_0 is the frequency of the class preceding the modal class, and w is the class width. \nStep 4: Substituting the values, we get: Mode = 20 + ((40-20)/(2*40-30-20)) * 10 = 20 + (20/20) * 10 = 20 + 10 = 30.",
+        "difficulty": "hard",
+        "year_pattern": "2020-style"
+      },
+      {
+        "q": "Find the mean deviation about the mean for the following data: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20.",
+        "type": "Long Answer",
+        "marks": 3,
+        "answer": "Step 1: Calculate the mean of the given data: Mean = (2+4+6+8+10+12+14+16+18+20)/10 = 110/10 = 11 \nStep 2: Find the absolute deviations from the mean: |2-11|, |4-11|, |6-11|, |8-11|, |10-11|, |12-11|, |14-11|, |16-11|, |18-11|, |20-11| \nStep 3: Find the mean of the absolute deviations: (9+7+5+3+1+1+3+5+7+9)/10 = 44/10 = 4.4",
+        "difficulty": "easy",
+        "year_pattern": "2018-style"
+      },
+      {
+        "q": "If the median of a set of 9 observations is 15, then find the sum of the observations.",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "Since the number of observations is odd (9), the median is the middle value. Let the observations be x1, x2, x3, x4, x5, x6, x7, x8, x9. We are given that x5 = 15. The sum of the observations is x1+x2+x3+x4+x5+x6+x7+x8+x9. Since the median is 15, we can write: x5 = x1+x2+x3+x4+x5+x6+x7+x8+x9/9. Multiplying both sides by 9, we get: 9x5 = x1+x2+x3+x4+x5+x6+x7+x8+x9. Therefore, the sum of the observations is 9x5 = 9*15 = 135.",
+        "difficulty": "easy",
+        "year_pattern": "2019-style"
+      },
+      {
+        "q": "Which one of the following is not a measure of dispersion?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Range",
+        "difficulty": "easy",
+        "year_pattern": "2020-style"
+      },
+      {
+        "q": "Find the coefficient of variation of the following data: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20.",
+        "type": "Long Answer",
+        "marks": 3,
+        "answer": "Step 1: Calculate the mean of the given data: Mean = (2+4+6+8+10+12+14+16+18+20)/10 = 110/10 = 11 \nStep 2: Calculate the standard deviation of the given data: Standard deviation = sqrt(((2-11)^2+(4-11)^2+(6-11)^2+(8-11)^2+(10-11)^2+(12-11)^2+(14-11)^2+(16-11)^2+(18-11)^2+(20-11)^2)/10) = sqrt((81+49+25+9+1+1+9+25+49+81)/10) = sqrt(330/10) = sqrt(33) \nStep 3: Calculate the coefficient of variation: Coefficient of variation = (Standard deviation/Mean)*100 = (sqrt(33)/11)*100 = (5.7445626465388/11)*100 = 52.16",
+        "difficulty": "hard",
+        "year_pattern": "2018-style"
+      },
+      {
+        "q": "The mean of a set of 10 numbers is 15. If one of the numbers is 18, find the sum of the other nine numbers.",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "Let the other nine numbers be x1, x2, x3, x4, x5, x6, x7, x8, x9. We are given that (x1+x2+x3+x4+x5+x6+x7+x8+x9+18)/10=15, which implies that x1+x2+x3+x4+x5+x6+x7+x8+x9+18=150. Therefore, the sum of the other nine numbers is x1+x2+x3+x4+x5+x6+x7+x8+x9 = 150-18 = 132.",
+        "difficulty": "easy",
+        "year_pattern": "2019-style"
+      },
+      {
+        "q": "Which one of the following is a type of frequency distribution?",
+        "type": "MCQ",
+        "marks": 1,
+        "answer": "Univariate",
+        "difficulty": "easy",
+        "year_pattern": "2020-style"
+      }
+    ]
+  }
+}

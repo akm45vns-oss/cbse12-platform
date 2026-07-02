@@ -1,0 +1,74 @@
+{
+  "class": "11",
+  "subject": "Accountancy",
+  "chapter": "Accounts from Incomplete Records",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T14:16:24.46+00:00",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Calculation of Gross Profit from Incomplete Records",
+        "notes": "Use this formula when gross profit percentage is known",
+        "units": "Rupees (₹)",
+        "formula": "Gross Profit = Cost of Goods Sold + Gross Profit Percentage of Cost of Goods Sold",
+        "variables": {
+          "Gross Profit": "Profit earned on sale of goods",
+          "Cost of Goods Sold": "Total cost of goods sold",
+          "Gross Profit Percentage": "Percentage of gross profit on cost of goods sold"
+        }
+      },
+      {
+        "name": "Calculation of Gross Profit Percentage from Incomplete Records",
+        "notes": "Use this formula when gross profit is known",
+        "units": "Percentage (%)",
+        "formula": "Gross Profit Percentage = (Gross Profit / Cost of Goods Sold) × 100",
+        "variables": {
+          "Gross Profit": "Profit earned on sale of goods",
+          "Cost of Goods Sold": "Total cost of goods sold",
+          "Gross Profit Percentage": "Percentage of gross profit on cost of goods sold"
+        }
+      },
+      {
+        "name": "Calculation of Cost of Goods Sold from Incomplete Records",
+        "notes": "Use this formula to calculate cost of goods sold when opening and closing stock values are known",
+        "units": "Rupees (₹)",
+        "formula": "Cost of Goods Sold = (Opening Stock + Purchase + Direct Expenses) - Closing Stock",
+        "variables": {
+          "Purchase": "Total purchase made",
+          "Closing Stock": "Closing stock of current year",
+          "Opening Stock": "Closing stock of previous year",
+          "Direct Expenses": "Direct expenses incurred",
+          "Cost of Goods Sold": "Total cost of goods sold"
+        }
+      },
+      {
+        "name": "Calculation of Net Profit from Incomplete Records",
+        "notes": "Use this formula when gross profit, indirect expenses, and gross profit from other businesses are known",
+        "units": "Rupees (₹)",
+        "formula": "Net Profit = Gross Profit - Indirect Expenses + Gross Profit from Other Businesses",
+        "variables": {
+          "Net Profit": "Profit earned by business after deducting expenses",
+          "Gross Profit": "Profit earned on sale of goods",
+          "Indirect Expenses": "Indirect expenses incurred",
+          "Gross Profit from Other Businesses": "Profit earned from other businesses"
+        }
+      },
+      {
+        "name": "Statement of Affairs",
+        "notes": "Use this statement to determine the financial position of a business",
+        "units": "None",
+        "formula": "Statement of Affairs is a statement showing the financial position of a business at a given date.",
+        "variables": "None"
+      },
+      {
+        "name": "Reconstitution of Accounts from Incomplete Records",
+        "notes": "Use this method to prepare accounts when records are incomplete",
+        "units": "None",
+        "formula": "Reconstitution of accounts involves the preparation of accounts from incomplete records using various methods.",
+        "variables": "None"
+      }
+    ]
+  }
+}

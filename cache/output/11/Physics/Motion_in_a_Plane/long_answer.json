@@ -1,0 +1,69 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Motion in a Plane",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T04:07:48.05+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "A particle is moving in a plane with its position given by the equation r = 2i + 3j + 4k - t^2 i + 2t j - 3t k. Find the velocity and acceleration vectors of the particle at t = 1s.",
+        "marks": 5,
+        "topic": "Motion in a Plane",
+        "answer": "To find the velocity and acceleration vectors, we need to differentiate the position vector with respect to time. The position vector is given by r = (2 - t^2) i + (3 + 2t) j + (4 - 3t) k. Differentiating this vector with respect to time, we get the velocity vector v = -2ti + 2j - 3k. At t = 1s, the velocity vector is v = -2 i + 2j - 3k. The acceleration vector is the derivative of the velocity vector, which is a = -2i. To find the acceleration at t = 1s, we substitute the value of t in the acceleration equation, which gives us the acceleration vector a = -2i.",
+        "marking_scheme": [
+          "Correctly differentiating the position vector with respect to time to find the velocity vector (2 marks)",
+          "Substituting the value of t in the velocity and acceleration equations (2 marks)",
+          "Writing the correct velocity and acceleration vectors at t = 1s (1 mark)"
+        ]
+      },
+      {
+        "q": "A body is moving in a plane with its coordinates given by x = 2t^2 and y = t^3, where t is the time in seconds. Find the velocity and acceleration vectors of the body at t = 2s.",
+        "marks": 5,
+        "topic": "Motion in a Plane",
+        "answer": "To find the velocity and acceleration vectors, we need to differentiate the position vector with respect to time. The position vector is given by r = 2t^2 i + t^3 j. Differentiating this vector with respect to time, we get the velocity vector v = 4ti + 3t^2 j. At t = 2s, the velocity vector is v = 8i + 12j. The acceleration vector is the derivative of the velocity vector, which is a = 4i + 6t j. Substituting the value of t in the acceleration equation, we get the acceleration vector at t = 2s as a = 8i + 12j.",
+        "marking_scheme": [
+          "Correctly differentiating the position vector with respect to time to find the velocity vector (2 marks)",
+          "Substituting the value of t in the velocity and acceleration equations (2 marks)",
+          "Writing the correct velocity and acceleration vectors at t = 2s (1 mark)"
+        ]
+      },
+      {
+        "q": "A particle is moving in a plane with its position given by the equation r = 2i + 3j + 4k - (cos(t) i + sin(t) j + 2t k). Find the velocity and acceleration vectors of the particle at t = π/4 s.",
+        "marks": 5,
+        "topic": "Motion in a Plane",
+        "answer": "To find the velocity and acceleration vectors, we need to differentiate the position vector with respect to time. The position vector is given by r = (2 - cos(t)) i + (3 + sin(t)) j + (4 - 2t) k. Differentiating this vector with respect to time, we get the velocity vector v = sin(t) i + cos(t) j - 2k. At t = π/4 s, the velocity vector is v = √2 i + 1/√2 j - 2k. The acceleration vector is the derivative of the velocity vector, which is a = cos(t) i - sin(t) j. Substituting the value of t in the acceleration equation, we get the acceleration vector at t = π/4 s as a = 1/√2 i - √2 j.",
+        "marking_scheme": [
+          "Correctly differentiating the position vector with respect to time to find the velocity vector (2 marks)",
+          "Substituting the value of t in the velocity and acceleration equations (2 marks)",
+          "Writing the correct velocity and acceleration vectors at t = π/4 s (1 mark)"
+        ]
+      },
+      {
+        "q": "A body is moving in a plane with its coordinates given by x = 4t^3 and y = 2t^2, where t is the time in seconds. Find the velocity and acceleration vectors of the body at t = 1s.",
+        "marks": 5,
+        "topic": "Motion in a Plane",
+        "answer": "To find the velocity and acceleration vectors, we need to differentiate the position vector with respect to time. The position vector is given by r = 4t^3 i + 2t^2 j. Differentiating this vector with respect to time, we get the velocity vector v = 12ti + 4t j. At t = 1s, the velocity vector is v = 12i + 4j. The acceleration vector is the derivative of the velocity vector, which is a = 12i + 4 j. To find the acceleration at t = 1s, we substitute the value of t in the acceleration equation, which gives us the acceleration vector a = 12i + 4j.",
+        "marking_scheme": [
+          "Correctly differentiating the position vector with respect to time to find the velocity vector (2 marks)",
+          "Substituting the value of t in the velocity and acceleration equations (2 marks)",
+          "Writing the correct velocity and acceleration vectors at t = 1s (1 mark)"
+        ]
+      },
+      {
+        "q": "A particle is moving in a plane with its position given by the equation r = i + 2j + 3k - (e^t i + 2e^t j + 3t^2 k). Find the velocity and acceleration vectors of the particle at t = 0 s.",
+        "marks": 5,
+        "topic": "Motion in a Plane",
+        "answer": "To find the velocity and acceleration vectors, we need to differentiate the position vector with respect to time. The position vector is given by r = (1 - e^t) i + (2 - 2e^t) j + (3 - 3t^2) k. Differentiating this vector with respect to time, we get the velocity vector v = -e^t i - 2e^t j + (-6t) k. At t = 0 s, the velocity vector is v = -i - 2j. The acceleration vector is the derivative of the velocity vector, which is a = -e^t i - 2e^t j - 6k. Substituting the value of t in the acceleration equation, we get the acceleration vector at t = 0 s as a = -i - 2j - 6k.",
+        "marking_scheme": [
+          "Correctly differentiating the position vector with respect to time to find the velocity vector (2 marks)",
+          "Substituting the value of t in the velocity and acceleration equations (2 marks)",
+          "Writing the correct velocity and acceleration vectors at t = 0 s (1 mark)"
+        ]
+      }
+    ]
+  }
+}

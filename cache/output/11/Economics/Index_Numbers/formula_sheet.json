@@ -1,0 +1,20 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Index Numbers",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:19:38.98+00:00",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Content",
+        "notes": "",
+        "units": "",
+        "formula": "```json\n[\n  {\n    \"name\": \"Laspeyres Index Formula\",\n    \"formula\": \"LP = Σ(p_t \\* q_0)/Σ(p_0 \\* q_0)\",\n    \"variables\": {\n      \"LP\": \"Laspeyres Index\",\n      \"p_t\": \"Price of item in current period\",\n      \"p_0\": \"Price of item in base period\",\n      \"q_0\": \"Quantity of item in base period\"\n    },\n    \"units\": \"None\",\n    \"notes\": \"Used when weights are based on base period quantities\"\n  },\n  {\n    \"name\": \"Paasche Index Formula\",\n    \"formula\": \"PP = Σ(p_t \\* q_t)/Σ(p_t \\* q_t)\",\n    \"variables\": {\n      \"PP\": \"Paasche Index\",\n      \"p_t\": \"Price of item in current period\",\n      \"q_t\": \"Quantity of item in current period\"\n    },\n    \"units\": \"None\",\n    \"notes\": \"Used when weights are based on current period quantities\"\n  },\n  {\n    \"name\": \"Fisher Index Formula\",\n    \"formula\": \"IF = [(LP + PP)/2]\",\n    \"variables\": {\n      \"IF\": \"Fisher Index\",\n      \"LP\": \"Laspeyres Index\",\n      \"PP\": \"Paasche Index\"\n    },\n    \"units\": \"None\",\n    \"notes\": \"Used as a compromise between Laspeyres and Paasche Indexes\"\n  },\n  {\n    \"name\": \"Chained Price Index Formula\",\n    \"formula\": \"[(LP_t-1/PP_t-1) + 1] \\* 100\",\n    \"variables\": {\n      \"LP_t-1\": \"Laspeyres Index for previous period\",\n      \"PP_t-1\": \"Paasche Index for previous period\"\n    },\n    \"units\": \"%\",\n    \"notes\": \"Used to calculate price index for consecutive periods\"\n  },\n  {\n    \"name\": \"Law of Index Numbers\",\n    \"formula\": \"LP = PP = IF when p_t = p_0 and q_t = q_0\",\n    \"variables\": {\n      \"LP\": \"Laspeyres Index\",\n      \"PP\": \"Paasche Index\",\n      \"IF\": \"Fisher Index\",\n      \"p_t\": \"Price of item in current period\",\n      \"p_0\": \"Price of item in base period\",\n      \"q_t\": \"Quantity of item in current period\",\n      \"q_0\": \"Quantity of item in base period\"\n    },\n    \"units\": \"None\",\n    \"notes\": \"States that Laspeyres, Paasche, and Fisher Indexes are equal when prices and quantities are the same in both periods\"\n  },\n  {\n    \"name\": \"Weighted Average Formula\",\n    \"formula\": \"(Σ(x_i \\* w_i))/Σ(w_i)\",\n    \"variables\": {\n      \"x_i\": \"Value of item i\",\n      \"w_i\": \"Weight of item i\"\n    },\n    \"units\": \"None\",\n    \"notes\": \"Used to calculate weighted average of values\"\n  },\n  {\n    \"name\": \"Weight Formula\",\n    \"formula\": \"w_i = (q_i / Σq_i)\",\n    \"variables\": {\n      \"w_i\": \"Weight of item i\",\n      \"q_i\": \"Quantity of item i\"\n    },\n    \"units\": \"None\",\n    \"notes\": \"Used to calculate weight of item i\"\n  }\n]\n```",
+        "variables": ""
+      }
+    ]
+  }
+}

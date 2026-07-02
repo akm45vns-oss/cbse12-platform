@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Getting Started with Python",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:25:13.879+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "You are a data analyst working for a popular e-commerce company. The company has a large database of customer information, including their purchase history. Your task is to analyze this data to determine the most popular products among customers. You have been asked to write a Python script to read the customer data from a CSV file and find the top 5 products with the highest sales. The CSV file contains the product name, price, and quantity sold for each product. You want to use a loop to iterate over the rows of the CSV file and calculate the total sales for each product. How would you write this script?",
+        "questions": [
+          {
+            "q": "What type of file is used to store customer data in this scenario?",
+            "ans": "A",
+            "opts": [
+              "CSV",
+              "JSON",
+              "Excel",
+              "Word Document"
+            ],
+            "explanation": "CSV stands for Comma Separated Values, a file type used to store tabular data."
+          },
+          {
+            "q": "What is the task of the data analyst in this scenario?",
+            "ans": "B",
+            "opts": [
+              "To find the average price of products",
+              "To determine the most popular products among customers",
+              "To calculate the total sales for each product",
+              "To analyze customer purchase history"
+            ],
+            "explanation": "The data analyst is tasked with determining the most popular products among customers."
+          },
+          {
+            "q": "What type of loop is used to iterate over the rows of the CSV file?",
+            "ans": "A",
+            "opts": [
+              "For loop",
+              "While loop",
+              "Nested loop",
+              "No loop is needed"
+            ],
+            "explanation": "A for loop is typically used to iterate over rows of a CSV file."
+          },
+          {
+            "q": "What is the purpose of reading customer data from a CSV file?",
+            "ans": "B",
+            "opts": [
+              "To find the total sales for each product",
+              "To determine the most popular products among customers",
+              "To calculate the average price of products",
+              "To analyze customer purchase history"
+            ],
+            "explanation": "The purpose of reading customer data from a CSV file is to determine the most popular products among customers."
+          },
+          {
+            "q": "What is the output of the script?",
+            "ans": "A",
+            "opts": [
+              "The top 5 products with the highest sales",
+              "The total sales for each product",
+              "The average price of products",
+              "The customer purchase history"
+            ],
+            "explanation": "The output of the script is the top 5 products with the highest sales."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "You are a programmer tasked with creating a simple calculator program in Python. The program should take in a mathematical expression from the user and evaluate it. For example, if the user inputs '2+3', the program should output '5'. You want to use a while loop to repeatedly ask the user for input until they choose to quit. How would you write this script?",
+        "questions": [
+          {
+            "q": "What type of loop is used to repeatedly ask the user for input?",
+            "ans": "B",
+            "opts": [
+              "For loop",
+              "While loop",
+              "Nested loop",
+              "No loop is needed"
+            ],
+            "explanation": "A while loop is typically used to repeatedly execute a block of code until a certain condition is met."
+          },
+          {
+            "q": "What is the purpose of taking in a mathematical expression from the user?",
+            "ans": "A",
+            "opts": [
+              "To evaluate a predefined mathematical expression",
+              "To take in a user's name",
+              "To ask the user for input",
+              "To calculate the average of a list of numbers"
+            ],
+            "explanation": "The purpose of taking in a mathematical expression from the user is to evaluate it."
+          },
+          {
+            "q": "What is the output of the program for the input '2+3'?",
+            "ans": "C",
+            "opts": [
+              "2",
+              "3",
+              "5",
+              "Error"
+            ],
+            "explanation": "The output of the program for the input '2+3' is '5'."
+          },
+          {
+            "q": "What type of program is this?",
+            "ans": "A",
+            "opts": [
+              "A simple calculator program",
+              "A game program",
+              "A chatbot program",
+              "A data analysis program"
+            ],
+            "explanation": "This program is a simple calculator program."
+          },
+          {
+            "q": "Why is a while loop used in this program?",
+            "ans": "B",
+            "opts": [
+              "To execute a block of code once",
+              "To repeatedly ask the user for input until they choose to quit",
+              "To evaluate a mathematical expression",
+              "To calculate the average of a list of numbers"
+            ],
+            "explanation": "A while loop is used to repeatedly ask the user for input until they choose to quit."
+          }
+        ]
+      }
+    ]
+  }
+}

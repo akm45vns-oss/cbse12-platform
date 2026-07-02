@@ -1,0 +1,98 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "File Handling",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:15:04.12+00:00",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "File",
+        "example": "",
+        "definition": "A collection of related data stored in a computer system, which can be accessed and manipulated using a file handling system."
+      },
+      {
+        "term": "File Handling",
+        "example": "",
+        "definition": "A set of operations that allow a programmer to create, read, write, and manage files in a computer system."
+      },
+      {
+        "term": "Stream",
+        "example": "",
+        "definition": "A sequence of bytes that can be read or written from a file, which can be treated as a separate entity."
+      },
+      {
+        "term": "File Pointer",
+        "example": "",
+        "definition": "A pointer that keeps track of the current position in a file, allowing for random access."
+      },
+      {
+        "term": "File Mode",
+        "example": "",
+        "definition": "A mode that determines how a file can be accessed, such as read-only or read-write."
+      },
+      {
+        "term": "Random Access",
+        "example": "",
+        "definition": "The ability to access any location in a file directly, rather than having to read the file from start to finish."
+      },
+      {
+        "term": "Sequential Access",
+        "example": "",
+        "definition": "The ability to access a file in the order in which it was written, one byte at a time."
+      },
+      {
+        "term": "Buffer",
+        "example": "",
+        "definition": "A small area of memory that holds data temporarily while it is being transferred between devices."
+      },
+      {
+        "term": "Block",
+        "example": "",
+        "definition": "A fixed-size group of bytes that are transferred together as a unit."
+      },
+      {
+        "term": "Inode",
+        "example": "",
+        "definition": "A data structure that contains metadata about a file, such as its location on disk and permissions."
+      },
+      {
+        "term": "File System",
+        "example": "",
+        "definition": "A software component that manages the storage and retrieval of files on a computer system."
+      },
+      {
+        "term": "Directory",
+        "example": "",
+        "definition": "A hierarchical organization of files and subdirectories that allows for easy navigation and access."
+      },
+      {
+        "term": "Pathname",
+        "example": "",
+        "definition": "A sequence of directories and files that specifies the location of a file within a file system."
+      },
+      {
+        "term": "File Descriptor",
+        "example": "",
+        "definition": "A small, non-negative integer that represents an open file and is used to identify it in the operating system."
+      },
+      {
+        "term": "File Handle",
+        "example": "",
+        "definition": "A data structure that contains information about an open file, such as its location on disk and mode."
+      },
+      {
+        "term": "Read Operation",
+        "example": "",
+        "definition": "An operation that retrieves data from a file and stores it in memory."
+      },
+      {
+        "term": "Write Operation",
+        "example": "",
+        "definition": "An operation that writes data from memory to a file."
+      }
+    ]
+  }
+}

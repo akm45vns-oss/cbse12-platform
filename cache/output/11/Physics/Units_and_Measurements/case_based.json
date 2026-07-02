@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Units and Measurements",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:10:03.584+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A surveyor needs to measure the length of a road to be constructed. The road is 5000 meters long. However, the surveyor wants to express this length in kilometers to make it more manageable. What is the length of the road in kilometers?",
+        "questions": [
+          {
+            "q": "What is the length of the road in kilometers?",
+            "ans": "A",
+            "opts": [
+              "(A) 5 km",
+              "(B) 5.5 km",
+              "(C) 5.00 km",
+              "(D) 5.000 km"
+            ],
+            "explanation": "To convert meters to kilometers, we divide by 1000. So, 5000 m ÷ 1000 = 5 km."
+          },
+          {
+            "q": "What is the relationship between meters and kilometers?",
+            "ans": "D",
+            "opts": [
+              "(A) 1 m = 1 km",
+              "(B) 1 m = 1000 km",
+              "(C) 1 m = 0.001 km",
+              "(D) 1 km = 1000 m"
+            ],
+            "explanation": "1 meter is equal to 0.001 kilometers, or 1 kilometer is equal to 1000 meters."
+          },
+          {
+            "q": "What is the length of the road in centimeters?",
+            "ans": "A",
+            "opts": [
+              "(A) 500000 cm",
+              "(B) 50000 cm",
+              "(C) 50 cm",
+              "(D) 500 cm"
+            ],
+            "explanation": "To convert meters to centimeters, we multiply by 100. So, 5000 m × 100 = 500000 cm."
+          },
+          {
+            "q": "What is the relationship between meters and centimeters?",
+            "ans": "C",
+            "opts": [
+              "(A) 1 m = 1 cm",
+              "(B) 1 m = 100 cm",
+              "(C) 1 m = 1000 cm",
+              "(D) 1 cm = 1000 m"
+            ],
+            "explanation": "1 meter is equal to 100 centimeters."
+          },
+          {
+            "q": "What is the unit of length used to measure the length of the road?",
+            "ans": "A",
+            "opts": [
+              "(A) Meter",
+              "(B) Kilometer",
+              "(C) Centimeter",
+              "(D) All of the above"
+            ],
+            "explanation": "The length of the road is given in meters."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A scientist measures the mass of a sample in grams. If the mass of the sample is 250 grams, what is the mass in kilograms?",
+        "questions": [
+          {
+            "q": "What is the mass of the sample in kilograms?",
+            "ans": "A",
+            "opts": [
+              "(A) 0.25 kg",
+              "(B) 2.5 kg",
+              "(C) 25 kg",
+              "(D) 250 kg"
+            ],
+            "explanation": "To convert grams to kilograms, we divide by 1000. So, 250 g ÷ 1000 = 0.25 kg."
+          },
+          {
+            "q": "What is the relationship between grams and kilograms?",
+            "ans": "D",
+            "opts": [
+              "(A) 1 g = 1 kg",
+              "(B) 1 g = 1000 kg",
+              "(C) 1 g = 0.001 kg",
+              "(D) 1 kg = 1000 g"
+            ],
+            "explanation": "1 kilogram is equal to 1000 grams."
+          },
+          {
+            "q": "What is the mass of the sample in milligrams?",
+            "ans": "D",
+            "opts": [
+              "(A) 250000 mg",
+              "(B) 25000 mg",
+              "(C) 2500 mg",
+              "(D) 250 mg"
+            ],
+            "explanation": "To convert grams to milligrams, we multiply by 1000. So, 250 g × 1000 = 250000 mg."
+          },
+          {
+            "q": "What is the relationship between grams and milligrams?",
+            "ans": "C",
+            "opts": [
+              "(A) 1 g = 1 mg",
+              "(B) 1 g = 1000 mg",
+              "(C) 1 g = 1000000 mg",
+              "(D) 1 mg = 1000 g"
+            ],
+            "explanation": "1 gram is equal to 1000000 milligrams."
+          },
+          {
+            "q": "What is the unit of mass used to measure the sample?",
+            "ans": "A",
+            "opts": [
+              "(A) Gram",
+              "(B) Kilogram",
+              "(C) Milligram",
+              "(D) All of the above"
+            ],
+            "explanation": "The mass of the sample is given in grams."
+          }
+        ]
+      }
+    ]
+  }
+}

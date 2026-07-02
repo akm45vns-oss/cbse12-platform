@@ -1,0 +1,74 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Index Numbers",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:50:58.756+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "Explain the concept of index numbers. What are the different types of index numbers? Discuss their characteristics and uses.",
+        "marks": 5,
+        "topic": "Introduction to Index Numbers",
+        "answer": "Index numbers are statistical tools used to measure the change in the general price level or the volume of production over a period of time. There are two main types of index numbers: price index number and quantity (or volume) index number. Price index numbers measure the change in the price level, while quantity index numbers measure the change in the volume of production. Characteristics of price index numbers include the base year, time period, and the items included in the index. Uses of index numbers include comparing the price levels of two different years, and calculating the rate of inflation. For example, the Consumer Price Index (CPI) measures the average change in prices of a basket of goods and services consumed by households.",
+        "marking_scheme": [
+          "Define index numbers and explain their uses (1 mark)",
+          "Discuss the different types of index numbers and their characteristics (2 marks)",
+          "Explain the uses of index numbers in economics (2 marks)"
+        ]
+      },
+      {
+        "q": "Define the Laspeyres' index and Paasche's index. How do they differ from each other? Explain their formulae and uses.",
+        "marks": 5,
+        "topic": "Laspeyres' and Paasche's Index",
+        "answer": "The Laspeyres' index is a price index that measures the change in the price level of a basket of goods and services consumed by households over a period of time. It is defined as the ratio of the total cost of the basket of goods and services at current prices to the total cost of the same basket of goods and services at base year prices. The Paasche's index is also a price index that measures the change in the price level of a basket of goods and services. It is defined as the ratio of the total cost of the basket of goods and services at current prices to the total cost of the same basket of goods and services at current prices after adjusting for changes in the quantity consumed. The Laspeyres' index and Paasche's index differ in the way they adjust for changes in the quantity consumed. The Laspeyres' index assumes that the quantity consumed remains the same, while the Paasche's index adjusts for changes in the quantity consumed. The formulae for these indices are: Laspeyres' index = (ΣP0Q1) / (ΣP0Q0) and Paasche's index = (ΣP1Q1) / (ΣP1Q0), where P0 and P1 are the prices at the base year and current year respectively, and Q0 and Q1 are the quantities consumed at the base year and current year respectively.",
+        "marking_scheme": [
+          "Define the Laspeyres' index and Paasche's index (1 mark)",
+          "Explain the difference between the Laspeyres' index and Paasche's index (1 mark)",
+          "Derive the formulae for the Laspeyres' index and Paasche's index (2 marks)",
+          "Explain the uses of the Laspeyres' index and Paasche's index (1 mark)"
+        ]
+      },
+      {
+        "q": "What are the advantages and disadvantages of the Laspeyres' index? How does it differ from the weighted arithmetic mean price index?",
+        "marks": 5,
+        "topic": "Advantages and Disadvantages of Laspeyres' Index",
+        "answer": "The Laspeyres' index has several advantages, including its simplicity and ease of computation. It is also a widely used index in economic analysis. However, it has several disadvantages, including its assumption of constant quantity consumed, which may not be realistic in many cases. Additionally, the Laspeyres' index may not accurately reflect changes in the price level if there are significant changes in the quantity consumed. The weighted arithmetic mean price index, on the other hand, takes into account the weights of different items in the basket of goods and services and is considered to be a more accurate measure of the price level. The weighted arithmetic mean price index is calculated as the weighted average of the price relatives of different items in the basket of goods and services.",
+        "marking_scheme": [
+          "List the advantages of the Laspeyres' index (1 mark)",
+          "List the disadvantages of the Laspeyres' index (1 mark)",
+          "Compare the Laspeyres' index with the weighted arithmetic mean price index (2 marks)",
+          "Explain the weighted arithmetic mean price index (1 mark)"
+        ]
+      },
+      {
+        "q": "Explain the concept of weighted price index. How is it calculated? What are its uses and limitations?",
+        "marks": 5,
+        "topic": "Weighted Price Index",
+        "answer": "The weighted price index is a type of price index that takes into account the weights of different items in the basket of goods and services. It is calculated as the weighted average of the price relatives of different items in the basket of goods and services. The weights are usually based on the proportion of the item in the total expenditure of the household. The weighted price index has several uses, including measuring the change in the price level of a basket of goods and services over time, and comparing the price levels of two different years. However, it has several limitations, including the assumption of constant weights, which may not be realistic in many cases. Additionally, the weighted price index may not accurately reflect changes in the price level if there are significant changes in the weights.",
+        "marking_scheme": [
+          "Define the weighted price index (1 mark)",
+          "Explain how the weighted price index is calculated (1 mark)",
+          "List the uses of the weighted price index (1 mark)",
+          "List the limitations of the weighted price index (1 mark)",
+          "Explain the assumptions of the weighted price index (1 mark)"
+        ]
+      },
+      {
+        "q": "What are the differences between the Fisher's Ideal Index and the Geometric Mean Price Index? Explain their formulae and uses.",
+        "marks": 5,
+        "topic": "Fisher's Ideal Index and Geometric Mean Price Index",
+        "answer": "The Fisher's Ideal Index and the Geometric Mean Price Index are two types of price indices that are used to measure the change in the price level of a basket of goods and services. The Fisher's Ideal Index is a weighted geometric mean of the Laspeyres' index and the Paasche's index, and is considered to be a more accurate measure of the price level than the Laspeyres' index and the Paasche's index. The Geometric Mean Price Index is a weighted geometric mean of the price relatives of different items in the basket of goods and services. The formulae for these indices are: Fisher's Ideal Index = √(Laspeyres' index × Paasche's index) and Geometric Mean Price Index = (ΣP0Q1 / ΣP0Q0)^(1/n), where P0 and P1 are the prices at the base year and current year respectively, and Q0 and Q1 are the quantities consumed at the base year and current year respectively, and n is the number of items in the basket of goods and services.",
+        "marking_scheme": [
+          "Define the Fisher's Ideal Index and the Geometric Mean Price Index (1 mark)",
+          "Explain the differences between the Fisher's Ideal Index and the Geometric Mean Price Index (1 mark)",
+          "Derive the formulae for the Fisher's Ideal Index and the Geometric Mean Price Index (2 marks)",
+          "Explain the uses of the Fisher's Ideal Index and the Geometric Mean Price Index (1 mark)"
+        ]
+      }
+    ]
+  }
+}

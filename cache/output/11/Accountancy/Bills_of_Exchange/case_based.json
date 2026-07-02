@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Accountancy",
+  "chapter": "Bills of Exchange",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:40:41.335+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "Rahul Enterprises, a retail store, ordered goods worth Rs. 50,000 from a supplier, XYZ Corporation, for which they were given a bill of exchange for payment within three months. The bill of exchange was accepted by the bank, and Rahul Enterprises deposited it in their account. Now, they need to determine the maturity date of the bill to ensure timely payment to XYZ Corporation. According to the Indian Contract Act, a bill of exchange becomes due for payment on the third working day after the date of the bill. If the bill is accepted on 15th March, and the bank provides a due date of 22nd April, what is the maturity date of the bill?",
+        "questions": [
+          {
+            "q": "What is the main purpose of a bill of exchange?",
+            "ans": "C",
+            "opts": [
+              "To obtain a loan from a bank",
+              "To delay payment to the supplier",
+              "To provide a written order for payment",
+              "To record a sale transaction"
+            ],
+            "explanation": "A bill of exchange is a written order for payment, where one party (drawer) asks another (drawee) to pay a certain amount of money to a third party (payee)."
+          },
+          {
+            "q": "Who is responsible for determining the maturity date of a bill of exchange?",
+            "ans": "C",
+            "opts": [
+              "Drawer",
+              "Drawee",
+              "Bank",
+              "Payee"
+            ],
+            "explanation": "The bank is responsible for determining the maturity date of a bill of exchange, which is typically the third working day after the date of the bill."
+          },
+          {
+            "q": "What is the due date of the bill of exchange, if it is accepted on 15th March and the bank provides a due date of 22nd April?",
+            "ans": "B",
+            "opts": [
+              "22nd April",
+              "23rd April",
+              "24th April",
+              "25th April"
+            ],
+            "explanation": "The due date is the third working day after the date of the bill, which in this case is 22nd March + 30 days = 21st April. As 21st April is a Sunday, the next working day is 22nd April."
+          },
+          {
+            "q": "What is the maturity date of the bill of exchange?",
+            "ans": "C",
+            "opts": [
+              "22nd April",
+              "23rd April",
+              "24th April",
+              "25th April"
+            ],
+            "explanation": "As the bank provides the due date of 22nd April, and the bill becomes due for payment on the third working day after the date of the bill, the maturity date is 22nd April."
+          },
+          {
+            "q": "Why is it essential to determine the maturity date of a bill of exchange?",
+            "ans": "A",
+            "opts": [
+              "To avoid late payment charges",
+              "To obtain a loan from a bank",
+              "To delay payment to the supplier",
+              "To record a sale transaction"
+            ],
+            "explanation": "Determining the maturity date of a bill of exchange is essential to avoid late payment charges and ensure timely payment to the supplier."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "Sangam Industries, a manufacturing company, purchased goods worth Rs. 75,000 from a supplier, ABC Ltd., and received a bill of exchange for payment within six months. The bill of exchange was accepted by the bank, and Sangam Industries deposited it in their account. Now, they need to calculate the amount of interest earned on the bill of exchange, considering a 6% interest rate per annum. If the date of acceptance is 10th January, and the maturity date is 10th July, what is the amount of interest earned on the bill of exchange?",
+        "questions": [
+          {
+            "q": "What is the primary advantage of using a bill of exchange?",
+            "ans": "B",
+            "opts": [
+              "It allows for delayed payment to the supplier",
+              "It provides a written order for payment",
+              "It enables interest-free borrowing",
+              "It facilitates long-term payment plans"
+            ],
+            "explanation": "The primary advantage of using a bill of exchange is that it provides a written order for payment, which ensures that the supplier receives payment on time."
+          },
+          {
+            "q": "What is the maturity date of the bill of exchange?",
+            "ans": "A",
+            "opts": [
+              "10th July",
+              "11th July",
+              "12th July",
+              "13th July"
+            ],
+            "explanation": "The maturity date is the date of payment, which is specified in the bill of exchange and is 10th July."
+          },
+          {
+            "q": "What is the amount of interest earned on the bill of exchange, considering a 6% interest rate per annum?",
+            "ans": "D",
+            "opts": [
+              "Rs. 900",
+              "Rs. 1,000",
+              "Rs. 1,050",
+              "Rs. 1,100"
+            ],
+            "explanation": "To calculate the interest, we use the formula: Interest = Principal x Rate x Time. Here, Principal = Rs. 75,000, Rate = 6% per annum, and Time = 6 months (half a year). Interest = Rs. 75,000 x 6% x 0.5 = Rs. 2,250. As the interest is calculated for half a year, we need to divide it by 2. Interest = Rs. 2,250 / 2 = Rs. 1,125."
+          },
+          {
+            "q": "Why is it essential to deposit a bill of exchange in a bank account?",
+            "ans": "C",
+            "opts": [
+              "To delay payment to the supplier",
+              "To record a sale transaction",
+              "To earn interest on the bill",
+              "To facilitate safekeeping"
+            ],
+            "explanation": "Depositing a bill of exchange in a bank account enables the drawer to earn interest on the bill, which can be a significant advantage."
+          },
+          {
+            "q": "What is the date of acceptance of the bill of exchange?",
+            "ans": "A",
+            "opts": [
+              "10th January",
+              "11th January",
+              "12th January",
+              "13th January"
+            ],
+            "explanation": "The date of acceptance is the date when the drawee (in this case, the bank) accepts the bill of exchange, which is 10th January."
+          }
+        ]
+      }
+    ]
+  }
+}

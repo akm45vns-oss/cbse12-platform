@@ -1,0 +1,20 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Sequences and Series",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:34:18.918+00:00",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Content",
+        "notes": "",
+        "units": "",
+        "formula": "```json\n[\n  {\n    \"name\": \"nth Term of an Arithmetic Sequence\",\n    \"formula\": \"a_n = a_1 + (n - 1)d\",\n    \"variables\": {\n      \"a_n\": \"nth term of the sequence\",\n      \"a_1\": \"first term of the sequence\",\n      \"n\": \"term number\",\n      \"d\": \"common difference\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find any term in an arithmetic sequence.\"\n  },\n  {\n    \"name\": \"Sum of an Arithmetic Series\",\n    \"formula\": \"S_n = n/2 (a_1 + a_n)\",\n    \"variables\": {\n      \"S_n\": \"sum of the first n terms\",\n      \"n\": \"number of terms\",\n      \"a_1\": \"first term\",\n      \"a_n\": \"nth term\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find the sum of the first n terms of an arithmetic series.\"\n  },\n  {\n    \"name\": \"Geometric Sequence\",\n    \"formula\": \"a_n = a_1 * r^(n-1)\",\n    \"variables\": {\n      \"a_n\": \"nth term of the sequence\",\n      \"a_1\": \"first term of the sequence\",\n      \"r\": \"common ratio\",\n      \"n\": \"term number\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find any term in a geometric sequence.\"\n  },\n  {\n    \"name\": \"Sum of a Geometric Series\",\n    \"formula\": \"S_n = a_1 * (1 - r^n)/(1 - r)\",\n    \"variables\": {\n      \"S_n\": \"sum of the first n terms\",\n      \"a_1\": \"first term\",\n      \"r\": \"common ratio\",\n      \"n\": \"number of terms\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find the sum of the first n terms of a geometric series.\"\n  },\n  {\n    \"name\": \"Arithmetic Mean\",\n    \"formula\": \"A = (a_1 + a_n)/2\",\n    \"variables\": {\n      \"A\": \"arithmetic mean\",\n      \"a_1\": \"first term\",\n      \"a_n\": \"nth term\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find the arithmetic mean of two numbers.\"\n  },\n  {\n    \"name\": \"Geometric Mean\",\n    \"formula\": \"G = (a_1 * a_n)^(1/2)\",\n    \"variables\": {\n      \"G\": \"geometric mean\",\n      \"a_1\": \"first term\",\n      \"a_n\": \"nth term\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find the geometric mean of two numbers.\"\n  },\n  {\n    \"name\": \"Harmonic Mean\",\n    \"formula\": \"H = 2a_1a_n / (a_1 + a_n)\",\n    \"variables\": {\n      \"H\": \"harmonic mean\",\n      \"a_1\": \"first term\",\n      \"a_n\": \"nth term\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find the harmonic mean of two numbers.\"\n  },\n  {\n    \"name\": \"nth Term of a Geometric Sequence\",\n    \"formula\": \"a_n = a_1 * r^(n-1)\",\n    \"variables\": {\n      \"a_n\": \"nth term of the sequence\",\n      \"a_1\": \"first term of the sequence\",\n      \"r\": \"common ratio\",\n      \"n\": \"term number\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find any term in a geometric sequence.\"\n  },\n  {\n    \"name\": \"Sum of an Infinite Geometric Series\",\n    \"formula\": \"S = a_1 / (1 - r)\",\n    \"variables\": {\n      \"S\": \"sum of the series\",\n      \"a_1\": \"first term\",\n      \"r\": \"common ratio\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to find the sum of an infinite geometric series.\"\n  },\n  {\n    \"name\": \"Convergence of a Series\",\n    \"formula\": \"a series converges if |r| < 1\",\n    \"variables\": {\n      \"r\": \"common ratio\"\n    },\n    \"units\": \"\",\n    \"notes\": \"This formula is used to check if a geometric series converges or diverges.\"\n  }\n]\n```\n\nNote: The formulas included in this sheet are specifically for the CBSE Class 11 Mathematics chapter on Sequences and Series.",
+        "variables": ""
+      }
+    ]
+  }
+}

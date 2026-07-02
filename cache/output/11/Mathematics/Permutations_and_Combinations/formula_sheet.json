@@ -1,0 +1,76 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:33:58.691+00:00",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Factorial",
+        "notes": "The factorial of a number is the product of all positive integers less than or equal to that number.",
+        "units": "",
+        "formula": "n! = n × (n - 1) × (n - 2) × ... × 2 × 1",
+        "variables": "n: a positive integer"
+      },
+      {
+        "name": "Permutation Formula",
+        "notes": "The permutation formula gives the number of ways to choose r items from a set of n items, where order matters.",
+        "units": "",
+        "formula": "P(n, r) = n! / (n - r)!",
+        "variables": "n: number of items, r: number of items being chosen at a time"
+      },
+      {
+        "name": "Combination Formula",
+        "notes": "The combination formula gives the number of ways to choose r items from a set of n items, where order does not matter.",
+        "units": "",
+        "formula": "C(n, r) = n! / (r! × (n - r)!)",
+        "variables": "n: number of items, r: number of items being chosen at a time"
+      },
+      {
+        "name": "Inclusion-Exclusion Principle",
+        "notes": "The inclusion-exclusion principle helps in counting the number of elements in the union of two sets by considering the number of elements in each set and their intersection.",
+        "units": "",
+        "formula": "n(A ∪ B) = n(A) + n(B) - n(A ∩ B)",
+        "variables": "A and B: sets, n(A): number of elements in set A, n(B): number of elements in set B, n(A ∩ B): number of elements in the intersection of A and B"
+      },
+      {
+        "name": "De Morgan's Law",
+        "notes": "De Morgan's law provides a way to express the complement of the union or intersection of two sets in terms of the complements of the individual sets.",
+        "units": "",
+        "formula": "(A ∪ B)' = A' ∩ B', (A ∩ B)' = A' ∪ B'",
+        "variables": "A and B: sets, A' and B': complements of sets A and B"
+      },
+      {
+        "name": "Complement Law",
+        "notes": "The complement law states that the union of a set and its complement is the universal set, and the intersection of a set and its complement is the empty set.",
+        "units": "",
+        "formula": "A ∪ A' = S, A ∩ A' = ∅",
+        "variables": "A: set, A': complement of set A, S: universal set, ∅: empty set"
+      },
+      {
+        "name": "Idempotent Law",
+        "notes": "The idempotent law states that the intersection and union of a set with itself is the set itself.",
+        "units": "",
+        "formula": "A ∩ A = A, A ∪ A = A",
+        "variables": "A: set"
+      },
+      {
+        "name": "Commutative Law",
+        "notes": "The commutative law states that the order of the sets does not change the result of the intersection or union.",
+        "units": "",
+        "formula": "A ∩ B = B ∩ A, A ∪ B = B ∪ A",
+        "variables": "A and B: sets"
+      },
+      {
+        "name": "Associative Law",
+        "notes": "The associative law states that the order in which we perform the intersection or union of sets does not change the result.",
+        "units": "",
+        "formula": "(A ∩ B) ∩ C = A ∩ (B ∩ C), (A ∪ B) ∪ C = A ∪ (B ∪ C)",
+        "variables": "A, B, and C: sets"
+      }
+    ]
+  }
+}

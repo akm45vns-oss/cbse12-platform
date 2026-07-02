@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Recursion",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:25:30.359+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones, usually starting with 0 and 1. This sequence is seen in various aspects of nature, such as the branching of trees, the arrangement of leaves on a stem, and the flowering of artichokes. An algorithm to generate the Fibonacci sequence using recursion would involve a function that calls itself to calculate each subsequent number. For instance, to find the 10th Fibonacci number, the function would recursively call itself to find the 9th and 8th numbers, and then sum them up. This approach is efficient for finding smaller numbers in the sequence but becomes inefficient for larger numbers due to repeated calculations.",
+        "questions": [
+          {
+            "q": "What is the Fibonacci sequence?",
+            "ans": "A",
+            "opts": [
+              "A sequence of numbers where each number is the sum of the two preceding ones",
+              "A sequence of numbers where each number is the product of the two preceding ones",
+              "A sequence of numbers where each number is the difference of the two preceding ones",
+              "A sequence of numbers where each number is the ratio of the two preceding ones"
+            ],
+            "explanation": "The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones."
+          },
+          {
+            "q": "Why does the recursive approach become inefficient for larger numbers in the Fibonacci sequence?",
+            "ans": "B",
+            "opts": [
+              "Because the function calls itself multiple times",
+              "Because the function does not store intermediate results",
+              "Because the function uses a lot of memory",
+              "Because the function is not optimized for large inputs"
+            ],
+            "explanation": "The recursive approach becomes inefficient for larger numbers because the function does not store intermediate results, leading to repeated calculations."
+          },
+          {
+            "q": "What is the basic idea behind the recursive algorithm to generate the Fibonacci sequence?",
+            "ans": "B",
+            "opts": [
+              "To find the nth number by directly calculating it",
+              "To find the nth number by recursively calling the function to find the (n-1)th and (n-2)th numbers",
+              "To find the nth number by using a loop",
+              "To find the nth number by using a iterative approach"
+            ],
+            "explanation": "The basic idea behind the recursive algorithm is to find the nth number by recursively calling the function to find the (n-1)th and (n-2)th numbers."
+          },
+          {
+            "q": "In which aspects of nature is the Fibonacci sequence seen?",
+            "ans": "C",
+            "opts": [
+              "Only in the branching of trees",
+              "Only in the arrangement of leaves on a stem",
+              "In the branching of trees, the arrangement of leaves on a stem, and the flowering of artichokes",
+              "In none of the above"
+            ],
+            "explanation": "The Fibonacci sequence is seen in the branching of trees, the arrangement of leaves on a stem, and the flowering of artichokes."
+          },
+          {
+            "q": "Why is recursion used in the Fibonacci sequence?",
+            "ans": "B",
+            "opts": [
+              "Because it is the only way to generate the sequence",
+              "Because it is an efficient approach for finding smaller numbers in the sequence",
+              "Because it is a simple approach to understand the sequence",
+              "Because it is not used at all"
+            ],
+            "explanation": "Recursion is used in the Fibonacci sequence because it is an efficient approach for finding smaller numbers in the sequence."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "Consider a scenario where you want to find the factorial of a given number. The factorial of a number is the product of all positive integers less than or equal to that number. For instance, the factorial of 5 is 5*4*3*2*1. A recursive function can be designed to find the factorial of a number by calling itself to calculate the factorial of a smaller number. This approach can be efficient for finding factorials of smaller numbers but becomes inefficient for larger numbers due to repeated calculations.",
+        "questions": [
+          {
+            "q": "What is the factorial of a number?",
+            "ans": "B",
+            "opts": [
+              "The sum of all positive integers less than or equal to that number",
+              "The product of all positive integers less than or equal to that number",
+              "The difference of all positive integers less than or equal to that number",
+              "The ratio of all positive integers less than or equal to that number"
+            ],
+            "explanation": "The factorial of a number is the product of all positive integers less than or equal to that number."
+          },
+          {
+            "q": "Why does the recursive approach become inefficient for larger numbers in finding the factorial?",
+            "ans": "B",
+            "opts": [
+              "Because the function calls itself multiple times",
+              "Because the function does not store intermediate results",
+              "Because the function uses a lot of memory",
+              "Because the function is not optimized for large inputs"
+            ],
+            "explanation": "The recursive approach becomes inefficient for larger numbers because the function does not store intermediate results, leading to repeated calculations."
+          },
+          {
+            "q": "What is the basic idea behind the recursive algorithm to find the factorial of a number?",
+            "ans": "B",
+            "opts": [
+              "To find the factorial of n by directly calculating it",
+              "To find the factorial of n by recursively calling the function to find the factorial of (n-1)",
+              "To find the factorial of n by using a loop",
+              "To find the factorial of n by using an iterative approach"
+            ],
+            "explanation": "The basic idea behind the recursive algorithm is to find the factorial of n by recursively calling the function to find the factorial of (n-1)."
+          },
+          {
+            "q": "What is the product of the factorial of 5?",
+            "ans": "C",
+            "opts": [
+              "5",
+              "10",
+              "15",
+              "20"
+            ],
+            "explanation": "The product of the factorial of 5 is 5*4*3*2*1, which equals 120."
+          },
+          {
+            "q": "Why is recursion used in finding the factorial?",
+            "ans": "B",
+            "opts": [
+              "Because it is the only way to find the factorial",
+              "Because it is an efficient approach for finding factorials of smaller numbers",
+              "Because it is a simple approach to understand the factorial",
+              "Because it is not used at all"
+            ],
+            "explanation": "Recursion is used in finding the factorial because it is an efficient approach for finding factorials of smaller numbers."
+          }
+        ]
+      }
+    ]
+  }
+}

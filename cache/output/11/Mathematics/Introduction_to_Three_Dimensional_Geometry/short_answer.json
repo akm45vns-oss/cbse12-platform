@@ -1,0 +1,118 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Introduction to Three Dimensional Geometry",
+  "content_type": "short_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:29:19.388+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "q": "What is a point in 3D geometry? Explain its coordinates.",
+        "marks": 2,
+        "topic": "Points in 3D Geometry",
+        "answer": "A point in 3D geometry is represented as P(x, y, z) where x, y, and z are its coordinates. These coordinates are the perpendicular distance of the point from the x-axis, y-axis, and z-axis respectively.",
+        "key_points": [
+          "Coordinates of a point",
+          "Perpendicular distance"
+        ]
+      },
+      {
+        "q": "What is a distance formula in 3D geometry? When is it used?",
+        "marks": 2,
+        "topic": "Distance in 3D Geometry",
+        "answer": "The distance formula in 3D geometry is √((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2). It is used to find the distance between two points in 3D space.",
+        "key_points": [
+          "Distance formula",
+          "Distance between two points"
+        ]
+      },
+      {
+        "q": "What is a line in 3D geometry? Explain its general equation.",
+        "marks": 2,
+        "topic": "Lines in 3D Geometry",
+        "answer": "A line in 3D geometry is a set of points that extend infinitely in two directions. The general equation of a line in 3D geometry is given by a(x - x1) + b(y - y1) + c(z - z1) = 0, where (x1, y1, z1) is a point on the line and a, b, and c are direction ratios.",
+        "key_points": [
+          "Equation of a line",
+          "Direction ratios"
+        ]
+      },
+      {
+        "q": "What is a plane in 3D geometry? Explain its general equation.",
+        "marks": 2,
+        "topic": "Planes in 3D Geometry",
+        "answer": "A plane in 3D geometry is a flat surface that extends infinitely in all directions. The general equation of a plane in 3D geometry is given by ax + by + cz + d = 0, where a, b, c, and d are constants.",
+        "key_points": [
+          "Equation of a plane",
+          "Flat surface"
+        ]
+      },
+      {
+        "q": "What is a point of intersection between two lines in 3D geometry?",
+        "marks": 2,
+        "topic": "Lines in 3D Geometry",
+        "answer": "A point of intersection between two lines in 3D geometry is the point where the two lines meet or cross each other. It can be found by equating the parametric equations of the two lines and solving for the parameter.",
+        "key_points": [
+          "Point of intersection",
+          "Parametric equations"
+        ]
+      },
+      {
+        "q": "What is a line of intersection between two planes in 3D geometry?",
+        "marks": 2,
+        "topic": "Planes in 3D Geometry",
+        "answer": "A line of intersection between two planes in 3D geometry is the line where the two planes meet or cross each other. It can be found by solving the system of equations of the two planes.",
+        "key_points": [
+          "Line of intersection",
+          "System of equations"
+        ]
+      },
+      {
+        "q": "What is a point of intersection between a line and a plane in 3D geometry?",
+        "marks": 2,
+        "topic": "Lines and Planes in 3D Geometry",
+        "answer": "A point of intersection between a line and a plane in 3D geometry is the point where the line meets or crosses the plane. It can be found by substituting the parametric equations of the line into the equation of the plane and solving for the parameter.",
+        "key_points": [
+          "Point of intersection",
+          "Parametric equations",
+          "Substitution method"
+        ]
+      },
+      {
+        "q": "What is a skew line in 3D geometry? Explain its properties.",
+        "marks": 2,
+        "topic": "Lines in 3D Geometry",
+        "answer": "A skew line in 3D geometry is a line that does not intersect with another line even if extended infinitely. It can be visualized as two lines that are parallel in 3D space and do not intersect.",
+        "key_points": [
+          "Skew line",
+          "Non-intersecting lines",
+          "Parallel lines"
+        ]
+      },
+      {
+        "q": "What is a sphere in 3D geometry? Explain its general equation.",
+        "marks": 2,
+        "topic": "Surfaces in 3D Geometry",
+        "answer": "A sphere in 3D geometry is a set of points that are equidistant from a fixed point called the center. The general equation of a sphere in 3D geometry is given by (x - h)^2 + (y - k)^2 + (z - l)^2 = r^2, where (h, k, l) is the center and r is the radius.",
+        "key_points": [
+          "Equation of a sphere",
+          "Center",
+          "Radius"
+        ]
+      },
+      {
+        "q": "What is a cylinder in 3D geometry? Explain its general equation.",
+        "marks": 2,
+        "topic": "Surfaces in 3D Geometry",
+        "answer": "A cylinder in 3D geometry is a set of points that are equidistant from a fixed line called the axis. The general equation of a cylinder in 3D geometry is given by (x - h)^2 + (y - k)^2 = r^2, where (h, k) is a point on the axis and r is the radius.",
+        "key_points": [
+          "Equation of a cylinder",
+          "Axis",
+          "Radius"
+        ]
+      }
+    ]
+  }
+}

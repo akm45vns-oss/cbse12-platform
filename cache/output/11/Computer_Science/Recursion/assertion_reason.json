@@ -1,0 +1,134 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Recursion",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:25:30.992+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): It is necessary to implement recursive functions.",
+        "assertion": "A recursive function call is a function call within the same function.",
+        "explanation": "A recursive function call is indeed a function call within the same function and it is necessary to implement recursive functions."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Factorial function can be defined as n! = n * (n-1)!.",
+        "assertion": "Factorial of a number is a recursive function.",
+        "explanation": "Factorial of a number is indeed a recursive function and it can be defined as n! = n * (n-1)!. This definition is correct."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Recursive functions require repeated function calls which consume time.",
+        "assertion": "Recursion is a time-consuming process.",
+        "explanation": "Recursion is indeed a time-consuming process because recursive functions require repeated function calls which consume time. This is why this answer is correct."
+      },
+      {
+        "ans": "D",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Recursive functions can be easily implemented using recursive calls.",
+        "assertion": "Recursion is a simple process.",
+        "explanation": "Recursion is not a simple process. While recursive functions can be implemented using recursive calls, the complexity of the process can be high. Therefore, option (A) is false and this option is correct."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Recursive functions require repeated function calls which consume memory.",
+        "assertion": "Recursion is a memory-consuming process.",
+        "explanation": "Recursion is indeed a memory-consuming process because recursive functions require repeated function calls which consume memory. This is why this answer is correct."
+      },
+      {
+        "ans": "B",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Factorial function can be defined using a loop in many programming languages.",
+        "assertion": "Factorial function can be defined using a loop.",
+        "explanation": "Factorial function can indeed be defined using a loop in many programming languages. However, the reason provided does not explain why a loop is used. Therefore, option (A) is false and this option is correct."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Recursion is a method of solving problems by breaking them down into smaller sub-problems.",
+        "assertion": "Recursion is a programming paradigm.",
+        "explanation": "Recursion is indeed a programming paradigm because it is a method of solving problems by breaking them down into smaller sub-problems. This is why this answer is correct."
+      },
+      {
+        "ans": "C",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Recursive functions can be used to solve problems that have a recursive structure.",
+        "assertion": "Recursive functions are used to solve all types of problems.",
+        "explanation": "Recursive functions are not used to solve all types of problems. They are used to solve problems that have a recursive structure. Therefore, option (A) is false and this option is correct."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Recursion is a method of solving problems by breaking them down into smaller sub-problems.",
+        "assertion": "Recursion is a technique used in programming.",
+        "explanation": "Recursion is indeed a technique used in programming because it is a method of solving problems by breaking them down into smaller sub-problems. This is why this answer is correct."
+      },
+      {
+        "ans": "C",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): Recursion is a method of solving problems by breaking them down into smaller sub-problems.",
+        "assertion": "Recursion is a simple and efficient method of solving problems.",
+        "explanation": "Recursion is not a simple and efficient method of solving problems. While recursion can be used to solve problems by breaking them down into smaller sub-problems, it can also be less efficient than other methods due to the repeated function calls. Therefore, option (A) is false and this option is correct."
+      }
+    ]
+  }
+}

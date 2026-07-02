@@ -1,0 +1,130 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Kinetic Theory",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:56:33.619+00:00",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Average Kinetic Energy per Molecule",
+        "notes": "This formula relates the average kinetic energy of molecules to the temperature of a substance.",
+        "units": {
+          "T": "K",
+          "k": "J/K/mol",
+          "KE": "J/mol"
+        },
+        "formula": "KE = (3/2)kT",
+        "variables": {
+          "T": "Temperature in Kelvin",
+          "k": "Boltzmann Constant",
+          "KE": "Average Kinetic Energy per Molecule"
+        }
+      },
+      {
+        "name": "Root Mean Square Speed",
+        "notes": "This formula relates the root mean square speed of gas molecules to the temperature and molar mass of the gas.",
+        "units": {
+          "M": "kg/mol",
+          "R": "J/mol K",
+          "T": "K",
+          "vrms": "m/s"
+        },
+        "formula": "vrms = √(3RT/M)",
+        "variables": {
+          "M": "Molar Mass",
+          "R": "Gas Constant",
+          "T": "Temperature in Kelvin",
+          "vrms": "Root Mean Square Speed"
+        }
+      },
+      {
+        "name": "Most Probable Speed",
+        "notes": "This formula relates the most probable speed of gas molecules to the temperature and molar mass of the gas.",
+        "units": {
+          "M": "kg/mol",
+          "R": "J/mol K",
+          "T": "K",
+          "vp": "m/s"
+        },
+        "formula": "vp = √(2RT/πM)",
+        "variables": {
+          "M": "Molar Mass",
+          "R": "Gas Constant",
+          "T": "Temperature in Kelvin",
+          "vp": "Most Probable Speed"
+        }
+      },
+      {
+        "name": "Mean Free Path",
+        "notes": "This formula relates the mean free path of gas molecules to the number density and collision cross-section of the gas.",
+        "units": {
+          "d": "m",
+          "n": "mol/m³",
+          "λ": "m",
+          "σ": "m²"
+        },
+        "formula": "λ = nσd",
+        "variables": {
+          "d": "Diameter of the Gas Molecule",
+          "n": "Number Density",
+          "λ": "Mean Free Path",
+          "σ": "Collision Cross-Section"
+        }
+      },
+      {
+        "name": "Graham's Law of Effusion",
+        "notes": "This formula relates the rates of effusion of two gases to their molar masses.",
+        "units": {
+          "M1": "kg/mol",
+          "M2": "kg/mol",
+          "r1": "mol/m² s",
+          "r2": "mol/m² s"
+        },
+        "formula": "r1/r2 = √(M2/M1)",
+        "variables": {
+          "M1": "Molar Mass of Gas 1",
+          "M2": "Molar Mass of Gas 2",
+          "r1": "Rate of Effusion of Gas 1",
+          "r2": "Rate of Effusion of Gas 2"
+        }
+      },
+      {
+        "name": "Avogadro's Hypothesis",
+        "notes": "This formula relates the number of molecules in a substance to its volume and Avogadro's number.",
+        "units": {
+          "N": "1/mol",
+          "V": "m³",
+          "n": "mol"
+        },
+        "formula": "n = N/V",
+        "variables": {
+          "N": "Number of Particles (Avogadro's Number)",
+          "V": "Volume",
+          "n": "Number of Molecules"
+        }
+      },
+      {
+        "name": "Ideal Gas Law",
+        "notes": "This formula relates the pressure, volume, and temperature of an ideal gas.",
+        "units": {
+          "P": "Pa",
+          "R": "J/mol K",
+          "T": "K",
+          "V": "m³",
+          "n": "mol"
+        },
+        "formula": "PV = nRT",
+        "variables": {
+          "P": "Pressure",
+          "R": "Gas Constant",
+          "T": "Temperature in Kelvin",
+          "V": "Volume",
+          "n": "Number of Molecules"
+        }
+      }
+    ]
+  }
+}

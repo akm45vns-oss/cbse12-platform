@@ -1,0 +1,65 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Sequences and Series",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T16:22:18.161+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "A sequence is defined as: a_1 = 2, a_n = a_(n-1) + 3 for n > 1. Find the first 5 terms of the sequence and check if it is an A.P. If it is, find the common difference and the nth term.",
+        "marks": 5,
+        "topic": "Arithmetic Progression",
+        "answer": "Given sequence is a_1 = 2, a_n = a_(n-1) + 3 for n > 1. \nFirst 5 terms of the sequence are: \na_1 = 2, a_2 = 5, a_3 = 8, a_4 = 11, a_5 = 14. \nThis sequence is an A.P. because the difference between consecutive terms is constant, i.e., d = a_2 - a_1 = 5 - 2 = 3. \nSo, the common difference is 3. \nThe nth term of an A.P. is given by: a_n = a_1 + (n - 1)d. \nSubstituting a_1 = 2 and d = 3, we get: a_n = 2 + (n - 1)(3) = 2 + 3n - 3 = 3n - 1.",
+        "marking_scheme": [
+          "1 mark for listing the first 5 terms of the sequence",
+          "1 mark for identifying the sequence as an A.P.",
+          "2 marks for finding the common difference and the nth term"
+        ]
+      },
+      {
+        "q": "Show that the sequence defined by a_n = 1/(3n - 2) is a G.P. Find the common ratio and the nth term of the sequence.",
+        "marks": 5,
+        "topic": "Geometric Progression",
+        "answer": "To show that the sequence a_n = 1/(3n - 2) is a G.P., we need to find the ratio of consecutive terms. \nLet's find a_(n+1)/a_n. \na_(n+1) = 1/(3(n+1) - 2) = 1/(3n + 1) \na_n = 1/(3n - 2) \na_(n+1)/a_n = (1/(3n + 1))/(1/(3n - 2)) = (3n - 2)/(3n + 1) \nThis ratio is constant for all values of n, so the sequence is a G.P. \nThe common ratio of the G.P. is: r = a_(n+1)/a_n = (3n - 2)/(3n + 1). \nThe nth term of a G.P. is given by: a_n = a_1 * r^(n-1). \nSubstituting a_1 = 1/(3*1 - 2) = 1/1 = 1, we get: a_n = 1 * ((3n - 2)/(3n + 1))^(n-1).",
+        "marking_scheme": [
+          "1 mark for showing that the sequence is a G.P.",
+          "2 marks for finding the common ratio and the nth term"
+        ]
+      },
+      {
+        "q": "Find the sum of the infinite G.P.: 1, 1/2, 1/4, 1/8, ...",
+        "marks": 5,
+        "topic": "Infinite Geometric Progression",
+        "answer": "The given G.P. has first term a = 1 and common ratio r = 1/2. \nThe sum of an infinite G.P. is given by: S = a/(1 - r). \nSubstituting a = 1 and r = 1/2, we get: S = 1/(1 - 1/2) = 1/(1/2) = 2.",
+        "marking_scheme": [
+          "1 mark for identifying the first term and the common ratio",
+          "2 marks for applying the formula and getting the correct answer"
+        ]
+      },
+      {
+        "q": "Find the sum of the first 5 terms of the A.P.: 2, 5, 8, 11, ...",
+        "marks": 5,
+        "topic": "Arithmetic Progression",
+        "answer": "The given A.P. has first term a = 2 and common difference d = 5 - 2 = 3. \nThe sum of the first n terms of an A.P. is given by: Sn = n/2 * (2a + (n-1)d). \nSubstituting a = 2, d = 3 and n = 5, we get: S5 = 5/2 * (2*2 + (5-1)*3) = 5/2 * (4 + 12) = 5/2 * 16 = 40.",
+        "marking_scheme": [
+          "1 mark for identifying the first term and the common difference",
+          "2 marks for applying the formula and getting the correct answer"
+        ]
+      },
+      {
+        "q": "Show that the sequence: 1, 8, 27, ... is a G.P. Find the common ratio and the nth term of the sequence.",
+        "marks": 5,
+        "topic": "Geometric Progression",
+        "answer": "To show that the sequence 1, 8, 27, ... is a G.P., we need to find the ratio of consecutive terms. \nLet's find a_(n+1)/a_n. \na_(n+1) = (n+1)^3 \na_n = n^3 \na_(n+1)/a_n = ((n+1)^3)/(n^3) = ((n+1)/n)^3 \nThis ratio is constant for all values of n, so the sequence is a G.P. \nThe common ratio of the G.P. is: r = a_(n+1)/a_n = ((n+1)/n)^3. \nThe nth term of a G.P. is given by: a_n = a_1 * r^(n-1). \nSubstituting a_1 = 1, we get: a_n = 1 * ((n+1)/n)^^(3*(n-1)).",
+        "marking_scheme": [
+          "1 mark for showing that the sequence is a G.P.",
+          "2 marks for finding the common ratio and the nth term"
+        ]
+      }
+    ]
+  }
+}

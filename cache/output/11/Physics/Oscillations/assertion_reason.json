@@ -1,0 +1,122 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Oscillations",
+  "content_type": "assertion_reason",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:13:24.143+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 9,
+    "questions": [
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because acceleration is given by the equation a = -ω^2x, where ω is the angular frequency and x is the displacement from the mean position.",
+        "assertion": "Assertion (A): In a simple harmonic motion, acceleration is proportional to the displacement from the mean position.",
+        "explanation": "In a simple harmonic motion, acceleration is indeed proportional to the displacement from the mean position, and the equation a = -ω^2x explains this relationship."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because the period of oscillation of a simple pendulum is given by the equation T = 2π√(l/g), where l is the length of the pendulum and g is the acceleration due to gravity.",
+        "assertion": "Assertion (A): The period of oscillation of a simple pendulum is independent of its mass.",
+        "explanation": "The period of oscillation of a simple pendulum is indeed independent of its mass, and the equation T = 2π√(l/g) explains this relationship."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because the damping force opposes the motion and causes energy to be lost from the system.",
+        "assertion": "Assertion (A): In a damped oscillation, the amplitude of oscillation decreases with time.",
+        "explanation": "In a damped oscillation, the amplitude of oscillation indeed decreases with time, and the damping force opposing the motion is the correct explanation for this phenomenon."
+      },
+      {
+        "ans": "B",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because there are no external forces doing work on the system.",
+        "assertion": "Assertion (A): The energy of a simple harmonic oscillator is conserved.",
+        "explanation": "Although the energy of a simple harmonic oscillator is conserved, the reason is not because there are no external forces doing work on the system, but because the force is conservative in nature. However, option B is the only option available for this question."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because the simple harmonic oscillator is a linear system and can be represented by a second-order differential equation.",
+        "assertion": "Assertion (A): The equation of motion for a simple harmonic oscillator is given by x(t) = A sin(ωt + φ).",
+        "explanation": "The equation of motion for a simple harmonic oscillator is indeed given by x(t) = A sin(ωt + φ), and the reason is that the simple harmonic oscillator is a linear system and can be represented by a second-order differential equation."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because the time period of oscillation of a mass-spring system is given by the equation T = 2π√(m/k), where m is the mass and k is the spring constant.",
+        "assertion": "Assertion (A): The time period of oscillation of a mass-spring system is given by T = 2π√(m/k).",
+        "explanation": "The time period of oscillation of a mass-spring system is indeed given by T = 2π√(m/k), and the reason is that this equation represents the time period of oscillation of a mass-spring system."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because the damping force opposes the motion and causes energy to be lost from the system.",
+        "assertion": "Assertion (A): The amplitude of oscillation of a damped oscillator decreases exponentially with time.",
+        "explanation": "The amplitude of oscillation of a damped oscillator indeed decreases exponentially with time, and the damping force opposing the motion is the correct explanation for this phenomenon."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because the acceleration of a simple harmonic motion is given by the equation a = -ω^2x, where ω is the angular frequency and x is the displacement from the mean position.",
+        "assertion": "Assertion (A): In a simple harmonic motion, the acceleration is always directed towards the mean position.",
+        "explanation": "In a simple harmonic motion, the acceleration is indeed always directed towards the mean position, and the equation a = -ω^2x explains this relationship."
+      },
+      {
+        "ans": "A",
+        "opts": [
+          "(A) Both A and R are true and R is the correct explanation of A",
+          "(B) Both A and R are true but R is not the correct explanation of A",
+          "(C) A is true but R is false",
+          "(D) A is false but R is true"
+        ],
+        "reason": "Reason (R): This is because the phase angle of a simple harmonic motion is determined by the initial conditions and not by the amplitude.",
+        "assertion": "Assertion (A): The phase angle of a simple harmonic motion is independent of the amplitude.",
+        "explanation": "The phase angle of a simple harmonic motion is indeed independent of the amplitude, and the reason is that the phase angle is determined by the initial conditions."
+      }
+    ]
+  }
+}

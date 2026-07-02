@@ -1,0 +1,69 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Relations and Functions",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-26T08:01:12.314+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "Let A = {1, 2, 3} and B = {4, 5, 6}. Find the Cartesian product A × B.",
+        "marks": 5,
+        "topic": "Cartesian Product",
+        "answer": "The Cartesian product A × B is the set of all ordered pairs (a, b), where a ∈ A and b ∈ B. Therefore, A × B = {(1, 4), (1, 5), (1, 6), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6)}.",
+        "marking_scheme": [
+          "List all the ordered pairs as in the answer (2 marks)",
+          "Mention that each ordered pair is of the form (a, b) where a ∈ A and b ∈ B (2 marks)",
+          "Mention the set A and set B (1 mark)"
+        ]
+      },
+      {
+        "q": "If f: R → R is a function defined as f(x) = 2x^2 - 3x + 1, then show that it is one-one.",
+        "marks": 5,
+        "topic": "One-One Functions",
+        "answer": "To show that the function f is one-one, we need to show that for any two elements x1 and x2 in the domain of f, if f(x1) = f(x2), then x1 = x2. Let f(x1) = f(x2). Then 2x1^2 - 3x1 + 1 = 2x2^2 - 3x2 + 1. Simplifying this equation, we get 2x1^2 - 3x1 = 2x2^2 - 3x2. Rearranging the terms, we get 2x1^2 - 2x2^2 = 3x2 - 3x1. Factoring the left-hand side, we get 2(x1^2 - x2^2) = 3(x2 - x1). Dividing both sides by (x1 - x2), we get 2(x1 + x2) = 3, which is a contradiction. Hence, x1 = x2, and the function f is one-one.",
+        "marking_scheme": [
+          "Show that for any two elements x1 and x2 in the domain of f, if f(x1) = f(x2), then x1 = x2 (3 marks)",
+          "Mention the function f and its domain (1 mark)",
+          "Prove that there is no contradiction (1 mark)"
+        ]
+      },
+      {
+        "q": "Let f: R → R be a function defined as f(x) = x^2. Show that it is not one-one.",
+        "marks": 5,
+        "topic": "One-One Functions",
+        "answer": "To show that the function f is not one-one, we need to find two elements x1 and x2 in the domain of f such that f(x1) = f(x2) but x1 ≠ x2. Let x1 = -1 and x2 = 1. Then f(x1) = f(x2) since (-1)^2 = 1^2, but x1 ≠ x2. Hence, the function f is not one-one.",
+        "marking_scheme": [
+          "Find two elements x1 and x2 in the domain of f such that f(x1) = f(x2) but x1 ≠ x2 (3 marks)",
+          "Mention the function f and its domain (1 mark)",
+          "Prove that x1 ≠ x2 (1 mark)"
+        ]
+      },
+      {
+        "q": "If f: R → R is a function defined as f(x) = |x|, then show that it is not one-one.",
+        "marks": 5,
+        "topic": "One-One Functions",
+        "answer": "To show that the function f is not one-one, we need to find two elements x1 and x2 in the domain of f such that f(x1) = f(x2) but x1 ≠ x2. Let x1 = 2 and x2 = -2. Then f(x1) = f(x2) since |2| = |-2|, but x1 ≠ x2. Hence, the function f is not one-one.",
+        "marking_scheme": [
+          "Find two elements x1 and x2 in the domain of f such that f(x1) = f(x2) but x1 ≠ x2 (3 marks)",
+          "Mention the function f and its domain (1 mark)",
+          "Prove that x1 ≠ x2 (1 mark)"
+        ]
+      },
+      {
+        "q": "Let f: R → R be a function defined as f(x) = x^3. Show that it is one-one.",
+        "marks": 5,
+        "topic": "One-One Functions",
+        "answer": "To show that the function f is one-one, we need to show that for any two elements x1 and x2 in the domain of f, if f(x1) = f(x2), then x1 = x2. Let f(x1) = f(x2). Then x1^3 = x2^3. Taking the cube root on both sides, we get x1 = x2. Hence, the function f is one-one.",
+        "marking_scheme": [
+          "Show that for any two elements x1 and x2 in the domain of f, if f(x1) = f(x2), then x1 = x2 (3 marks)",
+          "Mention the function f and its domain (1 mark)",
+          "Prove that there is no other solution (1 mark)"
+        ]
+      }
+    ]
+  }
+}

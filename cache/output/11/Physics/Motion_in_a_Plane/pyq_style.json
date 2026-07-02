@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Motion in a Plane",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:23:54.424+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "q": "A particle is moving in a plane with its position coordinates given by x = 5t^2 m and y = 2t m, where t is in seconds.",
+        "type": "Long Answer",
+        "marks": 4,
+        "answer": "The velocity of the particle is given by v = dx/dt i + dy/dt j. Find its velocity as a function of time.",
+        "difficulty": "medium",
+        "year_pattern": "2019-style"
+      },
+      {
+        "q": "A body moves in a plane with its initial velocity u = 10 m/s at an angle of 60° with the x-axis. If the body experiences a uniform acceleration of 2 m/s² along the positive y-direction, find its velocity after 5 seconds.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Use the equations of motion in a plane to find the velocity components.",
+        "difficulty": "hard",
+        "year_pattern": "2018-style"
+      },
+      {
+        "q": "A particle of mass 2 kg moves in a plane with its position vector given by r = 3 i - 2 j m. Find its displacement and velocity vectors.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The displacement vector is given by the position vector itself, and the velocity vector is given by the derivative of the position vector with respect to time.",
+        "difficulty": "easy",
+        "year_pattern": "2017-style"
+      },
+      {
+        "q": "A projectile is fired at an angle of 45° to the horizontal with an initial velocity of 20 m/s. If air resistance is neglected, find the maximum height reached by the projectile.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "Use the equations of motion in a plane to find the maximum height reached.",
+        "difficulty": "medium",
+        "year_pattern": "2016-style"
+      },
+      {
+        "q": "A body moves in a plane with its position vector given by r = t i + 2t^2 j m. Find its acceleration vector.",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "The acceleration vector is given by the second derivative of the position vector with respect to time.",
+        "difficulty": "easy",
+        "year_pattern": "2015-style"
+      },
+      {
+        "q": "A particle moves in a plane with its initial velocity u = 5 m/s at an angle of 30° with the x-axis. If it experiences a uniform acceleration of 1 m/s² along the positive x-direction, find its velocity after 6 seconds.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "Use the equations of motion in a plane to find the velocity components.",
+        "difficulty": "hard",
+        "year_pattern": "2014-style"
+      },
+      {
+        "q": "A body moves in a plane with its velocity given by v = (10 cos 3t) i + (10 sin 3t) j m/s. What is the magnitude of its velocity after 2 seconds?",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "The magnitude of the velocity is given by the square root of the sum of the squares of the velocity components.",
+        "difficulty": "easy",
+        "year_pattern": "2013-style"
+      },
+      {
+        "q": "A particle of mass 1 kg moves in a plane with its position vector given by r = 2 sin ωt i + 2 cos ωt j m. Find its kinetic energy.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "Use the equations of motion in a plane to find the velocity components and then find the kinetic energy.",
+        "difficulty": "medium",
+        "year_pattern": "2012-style"
+      },
+      {
+        "q": "A body moves in a plane with its position vector given by r = (3t - 2) i + (2t^2 + 1) j m. Find its acceleration vector.",
+        "type": "Short Answer",
+        "marks": 1,
+        "answer": "The acceleration vector is given by the second derivative of the position vector with respect to time.",
+        "difficulty": "easy",
+        "year_pattern": "2011-style"
+      },
+      {
+        "q": "A projectile is fired at an angle of 60° to the horizontal with an initial velocity of 15 m/s. If air resistance is neglected, find the time of flight.",
+        "type": "Long Answer",
+        "marks": 5,
+        "answer": "Use the equations of motion in a plane to find the time of flight.",
+        "difficulty": "medium",
+        "year_pattern": "2010-style"
+      }
+    ]
+  }
+}

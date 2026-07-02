@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Thermodynamics",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:04:01.606+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A car is driven from Delhi to Chandigarh, a distance of 250 km, in 4 hours. The average speed of the car is 62.5 km/h. While driving, the car's engine temperature increases from 80°C to 100°C. The engine has a mass of 50 kg and specific heat capacity of 1000 J/(kg°C). Assuming the engine absorbs heat from the surroundings, calculate the amount of heat energy absorbed by the engine during the journey.",
+        "questions": [
+          {
+            "q": "What is the average speed of the car?",
+            "ans": "B",
+            "opts": [
+              "(A) 50 km/h",
+              "(B) 62.5 km/h",
+              "(C) 75 km/h",
+              "(D) 100 km/h"
+            ],
+            "explanation": "The average speed is calculated using the formula: Average Speed = Total Distance / Total Time. In this case, the average speed is 250 km / 4 hours = 62.5 km/h."
+          },
+          {
+            "q": "What is the change in temperature of the engine?",
+            "ans": "B",
+            "opts": [
+              "(A) 10°C",
+              "(B) 20°C",
+              "(C) 30°C",
+              "(D) 20°C"
+            ],
+            "explanation": "The change in temperature is calculated by subtracting the initial temperature from the final temperature: ΔT = T_final - T_initial = 100°C - 80°C = 20°C."
+          },
+          {
+            "q": "What is the specific heat capacity of the engine?",
+            "ans": "B",
+            "opts": [
+              "(A) 500 J/(kg°C)",
+              "(B) 1000 J/(kg°C)",
+              "(C) 1500 J/(kg°C)",
+              "(D) 2000 J/(kg°C)"
+            ],
+            "explanation": "The specific heat capacity of the engine is given in the passage as 1000 J/(kg°C)."
+          },
+          {
+            "q": "What is the mass of the engine?",
+            "ans": "B",
+            "opts": [
+              "(A) 20 kg",
+              "(B) 50 kg",
+              "(C) 100 kg",
+              "(D) 150 kg"
+            ],
+            "explanation": "The mass of the engine is given in the passage as 50 kg."
+          },
+          {
+            "q": "What is the formula to calculate the amount of heat energy absorbed by the engine?",
+            "ans": "A",
+            "opts": [
+              "(A) Q = mcΔT",
+              "(B) Q = mΔT/c",
+              "(C) Q = mc^2",
+              "(D) Q = c^2/m"
+            ],
+            "explanation": "The formula to calculate the amount of heat energy absorbed by the engine is Q = mcΔT, where Q is the heat energy, m is the mass, c is the specific heat capacity, and ΔT is the change in temperature."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A 2 kg block of ice at 0°C is placed in a calorimeter containing 1 kg of water at 80°C. The specific heat capacity of water is 4200 J/(kg°C) and the latent heat of fusion of ice is 334 kJ/kg. Calculate the final temperature of the mixture and the amount of ice melted.",
+        "questions": [
+          {
+            "q": "What is the specific heat capacity of water?",
+            "ans": "D",
+            "opts": [
+              "(A) 1000 J/(kg°C)",
+              "(B) 2000 J/(kg°C)",
+              "(C) 3000 J/(kg°C)",
+              "(D) 4200 J/(kg°C)"
+            ],
+            "explanation": "The specific heat capacity of water is given in the passage as 4200 J/(kg°C)."
+          },
+          {
+            "q": "What is the latent heat of fusion of ice?",
+            "ans": "D",
+            "opts": [
+              "(A) 100 kJ/kg",
+              "(B) 200 kJ/kg",
+              "(C) 300 kJ/kg",
+              "(D) 334 kJ/kg"
+            ],
+            "explanation": "The latent heat of fusion of ice is given in the passage as 334 kJ/kg."
+          },
+          {
+            "q": "What is the mass of the block of ice?",
+            "ans": "B",
+            "opts": [
+              "(A) 1 kg",
+              "(B) 2 kg",
+              "(C) 3 kg",
+              "(D) 4 kg"
+            ],
+            "explanation": "The mass of the block of ice is given in the passage as 2 kg."
+          },
+          {
+            "q": "What is the initial temperature of the block of ice?",
+            "ans": "A",
+            "opts": [
+              "(A) 0°C",
+              "(B) 10°C",
+              "(C) 20°C",
+              "(D) 30°C"
+            ],
+            "explanation": "The initial temperature of the block of ice is given in the passage as 0°C."
+          },
+          {
+            "q": "What is the formula to calculate the amount of ice melted?",
+            "ans": "A",
+            "opts": [
+              "(A) m = Q / L",
+              "(B) m = L / Q",
+              "(C) m = Q - L",
+              "(D) m = L - Q"
+            ],
+            "explanation": "The formula to calculate the amount of ice melted is m = Q / L, where m is the amount of ice melted, Q is the heat energy, and L is the latent heat of fusion."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Linear Inequalities",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:09:25.659+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 5,
+    "questions": [
+      {
+        "q": "Solve the following linear inequality: 2x + 5 > 11. Also, represent the solution on the number line.",
+        "marks": 5,
+        "topic": "Solving Linear Inequalities",
+        "answer": "To solve the given linear inequality, we need to isolate the variable 'x' on one side of the inequality sign. First, we subtract 5 from both sides of the inequality to get: 2x > 11 - 5. This simplifies to 2x > 6. Next, we divide both sides by 2 to get: x > 3. Therefore, the solution to the inequality is x > 3. To represent this solution on the number line, we draw a closed circle at 3 and shade the region to the right of 3.",
+        "marking_scheme": [
+          "Isolate the variable 'x' on one side of the inequality sign (1 mark)",
+          "Correctly simplify the inequality and represent the solution on the number line (4 marks)"
+        ]
+      },
+      {
+        "q": "Solve the following system of linear inequalities: x - 2y < 7 and 3x + 2y > -6.",
+        "marks": 5,
+        "topic": "Solving System of Linear Inequalities",
+        "answer": "To solve the given system of linear inequalities, we can use the graphical method. First, we draw the lines corresponding to the two inequalities on the same graph. The line for the first inequality is x - 2y < 7, which can be rewritten as y > (1/2)x - 7/2. The line for the second inequality is 3x + 2y > -6, which can be rewritten as y > (-3/2)x + 3. We can see that these two lines intersect at the point (2, 3). The solution to the system is the region that satisfies both inequalities. By testing points in the regions, we find that the solution is the region below the line y = (1/2)x - 7/2 and above the line y = (-3/2)x + 3.",
+        "marking_scheme": [
+          "Correctly draw the lines corresponding to the two inequalities (1 mark)",
+          "Identify the correct region that satisfies both inequalities (3 marks)",
+          "Correctly describe the solution to the system (1 mark)"
+        ]
+      },
+      {
+        "q": "A five-member committee is to be formed from a group of 8 men and 4 women. The committee should have at least 2 men and at least 1 woman. Write down the inequalities representing the given conditions and solve them to find the number of possible committees.",
+        "marks": 5,
+        "topic": "Linear Inequalities in Applied Problems",
+        "answer": "Let's denote the number of men in the committee as 'x' and the number of women in the committee as 'y'. The given conditions can be represented by the following inequalities: x ≥ 2 and y ≥ 1. Additionally, we have the constraint that the total number of committee members is 5, which gives us the equation x + y = 5. We can rewrite the first two inequalities as x ≥ 2 and y ≥ 1. Since x + y = 5, we can substitute y = 5 - x into the second inequality to get: 5 - x ≥ 1, which simplifies to x ≤ 4. Therefore, the solution to the inequalities is 2 ≤ x ≤ 4 and 1 ≤ y ≤ 5 - x. By considering all possible values of x, we find that there are 12 possible committees.",
+        "marking_scheme": [
+          "Correctly represent the given conditions using inequalities (2 marks)",
+          "Correctly solve the inequalities to find the number of possible committees (3 marks)"
+        ]
+      },
+      {
+        "q": "A company manufactures two products, A and B. The profit on manufacturing one unit of product A is ₹120 and the profit on manufacturing one unit of product B is ₹80. Due to a shortage of raw materials, the company can produce at most 200 units of product A and 300 units of product B. Formulate the inequalities representing the given conditions and solve them to find the maximum profit.",
+        "marks": 5,
+        "topic": "Linear Inequalities in Applied Problems",
+        "answer": "Let's denote the number of units of product A manufactured as 'x' and the number of units of product B manufactured as 'y'. The given conditions can be represented by the following inequalities: x ≤ 200 and y ≤ 300. We also know that the profit on manufacturing one unit of product A is ₹120 and the profit on manufacturing one unit of product B is ₹80, so the total profit is given by the function P(x, y) = 120x + 80y. To maximize the profit, we need to find the values of x and y that maximize the function P(x, y) subject to the given constraints. By testing the vertices of the feasible region, we find that the maximum profit occurs when x = 200 and y = 240.",
+        "marking_scheme": [
+          "Correctly represent the given conditions using inequalities (2 marks)",
+          "Correctly solve the inequalities to find the maximum profit (3 marks)"
+        ]
+      },
+      {
+        "q": "A car travels from city A to city B at an average speed of 40 km/h and returns from city B to city A at an average speed of 60 km/h. Using the concept of linear inequalities, find the time taken by the car to cover the distance between the two cities.",
+        "marks": 5,
+        "topic": "Linear Inequalities in Applied Problems",
+        "answer": "Let's denote the distance between the two cities as 'd' (in kilometers). The time taken by the car to travel from city A to city B is given by the inequality t1 ≥ d/40, where t1 is the time taken in hours. The time taken by the car to return from city B to city A is given by the inequality t2 ≥ d/60, where t2 is the time taken in hours. Since the total time taken is the sum of the time taken for each journey, we can write the inequality t1 + t2 ≥ d/40 + d/60. We can simplify this inequality to get: t1 + t2 ≥ (5d + 4d) / 120, which further simplifies to t1 + t2 ≥ 9d/120. Since the distance 'd' is fixed, the minimum value of t1 + t2 occurs when d is maximum. By substituting d = 120 km (the maximum distance), we get: t1 + t2 ≥ 9. Therefore, the time taken by the car to cover the distance between the two cities is at least 9 hours.",
+        "marking_scheme": [
+          "Correctly represent the time taken for each journey using inequalities (2 marks)",
+          "Correctly solve the inequality to find the minimum total time taken (3 marks)"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Computer Systems",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:24:06.882+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "In a typical office setup, multiple employees use a single computer system to perform various tasks. The system consists of a central processing unit (CPU), memory (RAM), and a storage device (hard disk). The CPU executes instructions, memory stores data temporarily, and the storage device stores the operating system, applications, and data permanently. One day, the system crashes due to a power surge, causing all the unsaved work to be lost. The system administrator needs to troubleshoot the issue and recover the lost data. Identify the correct component that needs to be checked first to resolve the issue.",
+        "questions": [
+          {
+            "q": "What is the primary function of the CPU in a computer system?",
+            "ans": "B",
+            "opts": [
+              "(A) To store data permanently",
+              "(B) To execute instructions",
+              "(C) To store data temporarily",
+              "(D) To store the operating system"
+            ],
+            "explanation": "The CPU executes instructions and performs calculations."
+          },
+          {
+            "q": "Which component of the computer system stores data temporarily?",
+            "ans": "B",
+            "opts": [
+              "(A) CPU",
+              "(B) Memory (RAM)",
+              "(C) Storage device (hard disk)",
+              "(D) Power supply"
+            ],
+            "explanation": "Memory (RAM) stores data temporarily while the CPU executes instructions."
+          },
+          {
+            "q": "What is the role of the storage device in a computer system?",
+            "ans": "D",
+            "opts": [
+              "(A) To store data temporarily",
+              "(B) To store the operating system and applications",
+              "(C) To execute instructions",
+              "(D) To store data permanently"
+            ],
+            "explanation": "The storage device stores the operating system, applications, and data permanently."
+          },
+          {
+            "q": "Why might the system administrator need to recover lost data?",
+            "ans": "A",
+            "opts": [
+              "(A) Because the system crashed due to a power surge",
+              "(B) Because the user forgot to save their work",
+              "(C) Because the system ran out of memory",
+              "(D) Because the user logged out of the system"
+            ],
+            "explanation": "The system crashed due to a power surge, causing all the unsaved work to be lost."
+          },
+          {
+            "q": "Which component needs to be checked first to resolve the issue?",
+            "ans": "A",
+            "opts": [
+              "(A) Power supply",
+              "(B) Memory (RAM)",
+              "(C) Storage device (hard disk)",
+              "(D) CPU"
+            ],
+            "explanation": "The power supply is the most likely cause of the system crash, so it should be checked first."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "In a hospital, a patient's medical records are stored on a computer system. The system consists of a server, a database management system, and a user interface. One day, the system crashes, and the medical records of 100 patients are lost. The IT manager needs to recover the lost data and ensure that the system is secure. Identify the correct component that needs to be checked first to resolve the issue.",
+        "questions": [
+          {
+            "q": "What is the primary function of the server in a computer system?",
+            "ans": "D",
+            "opts": [
+              "(A) To store data permanently",
+              "(B) To execute instructions",
+              "(C) To store data temporarily",
+              "(D) To manage data"
+            ],
+            "explanation": "The server manages data and provides access to the database management system."
+          },
+          {
+            "q": "Which component of the computer system stores medical records?",
+            "ans": "B",
+            "opts": [
+              "(A) Server",
+              "(B) Database management system",
+              "(C) User interface",
+              "(D) Storage device"
+            ],
+            "explanation": "The database management system stores medical records and provides access to the data."
+          },
+          {
+            "q": "What is the role of the user interface in a computer system?",
+            "ans": "D",
+            "opts": [
+              "(A) To store data permanently",
+              "(B) To execute instructions",
+              "(C) To store data temporarily",
+              "(D) To provide access to the system"
+            ],
+            "explanation": "The user interface provides access to the system and allows users to interact with the data."
+          },
+          {
+            "q": "Why might the IT manager need to recover lost data?",
+            "ans": "A",
+            "opts": [
+              "(A) Because the system crashed due to a power surge",
+              "(B) Because the user forgot to save their work",
+              "(C) Because the system ran out of memory",
+              "(D) Because the patient's medical records were deleted"
+            ],
+            "explanation": "The system crashed, causing the medical records of 100 patients to be lost."
+          },
+          {
+            "q": "Which component needs to be checked first to resolve the issue?",
+            "ans": "D",
+            "opts": [
+              "(A) Database management system",
+              "(B) User interface",
+              "(C) Server",
+              "(D) Power supply"
+            ],
+            "explanation": "The power supply is the most likely cause of the system crash, so it should be checked first."
+          }
+        ]
+      }
+    ]
+  }
+}

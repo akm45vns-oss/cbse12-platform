@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Work, Energy and Power",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:12:05.701+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A car of mass 1500 kg is moving with a speed of 20 m/s. The driver applies the brakes and the car is stopped in a distance of 15 m. If the force of friction is 500 N, calculate the initial kinetic energy of the car. Assume that all the kinetic energy is dissipated as heat due to friction.",
+        "questions": [
+          {
+            "q": "The initial potential energy of the car is",
+            "ans": "A",
+            "opts": [
+              "(A) 0 J",
+              "(B) 1500 J",
+              "(C) 3000 J",
+              "(D) 45000 J"
+            ],
+            "explanation": "Since the car is moving with an initial speed, its potential energy is zero."
+          },
+          {
+            "q": "The force of friction is applied over a distance of",
+            "ans": "C",
+            "opts": [
+              "(A) 5 m",
+              "(B) 10 m",
+              "(C) 15 m",
+              "(D) 20 m"
+            ],
+            "explanation": "The force of friction is applied over the distance through which the car is stopped."
+          },
+          {
+            "q": "The work done by the force of friction is",
+            "ans": "A",
+            "opts": [
+              "(A) -7500 J",
+              "(B) -5000 J",
+              "(C) -3000 J",
+              "(D) 0 J"
+            ],
+            "explanation": "Work done by a force is given by the product of force and displacement in the direction of the force. The force of friction is opposite to the direction of motion of the car."
+          },
+          {
+            "q": "The initial kinetic energy of the car is",
+            "ans": "A",
+            "opts": [
+              "(A) 15000 J",
+              "(B) 12000 J",
+              "(C) 30000 J",
+              "(D) 60000 J"
+            ],
+            "explanation": "The work done by the force of friction is equal to the initial kinetic energy of the car."
+          },
+          {
+            "q": "The power of the car is",
+            "ans": "B",
+            "opts": [
+              "(A) 300 W",
+              "(B) 600 W",
+              "(C) 1200 W",
+              "(D) 2400 W"
+            ],
+            "explanation": "Power is given by the product of force and velocity. The force of friction is 500 N and the velocity of the car is 20 m/s."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A 50 kg block is moving with a speed of 10 m/s on a rough horizontal surface. If the coefficient of kinetic friction between the block and the surface is 0.2, calculate the force of friction acting on the block.",
+        "questions": [
+          {
+            "q": "The force of friction acting on the block is",
+            "ans": "B",
+            "opts": [
+              "(A) 25 N",
+              "(B) 50 N",
+              "(C) 100 N",
+              "(D) 150 N"
+            ],
+            "explanation": "The force of friction is given by the product of the coefficient of kinetic friction and the normal force. The normal force is equal to the weight of the block."
+          },
+          {
+            "q": "The acceleration of the block is",
+            "ans": "A",
+            "opts": [
+              "(A) 0.2 m/s^2",
+              "(B) 0.5 m/s^2",
+              "(C) 1 m/s^2",
+              "(D) 2 m/s^2"
+            ],
+            "explanation": "The force of friction is opposing the motion of the block, so it will cause a deceleration."
+          },
+          {
+            "q": "The work done by the force of friction is",
+            "ans": "B",
+            "opts": [
+              "(A) -50 J",
+              "(B) -100 J",
+              "(C) -200 J",
+              "(D) 0 J"
+            ],
+            "explanation": "Work done by a force is given by the product of force and displacement in the direction of the force."
+          },
+          {
+            "q": "The power of the block is",
+            "ans": "B",
+            "opts": [
+              "(A) 20 W",
+              "(B) 50 W",
+              "(C) 100 W",
+              "(D) 200 W"
+            ],
+            "explanation": "Power is given by the product of force and velocity."
+          },
+          {
+            "q": "The kinetic energy of the block is",
+            "ans": "B",
+            "opts": [
+              "(A) 250 J",
+              "(B) 500 J",
+              "(C) 1000 J",
+              "(D) 2000 J"
+            ],
+            "explanation": "Kinetic energy is given by the product of mass, velocity and velocity. The mass of the block is 50 kg and the velocity is 10 m/s."
+          }
+        ]
+      }
+    ]
+  }
+}

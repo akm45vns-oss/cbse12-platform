@@ -1,0 +1,98 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Functions",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:14:55.53+00:00",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Function",
+        "example": "Example: A function to calculate the area of a circle given its radius.",
+        "definition": "A relation between a set of inputs, called the domain, and a set of permissible outputs, called the range. It takes an input and produces an output based on a set of rules."
+      },
+      {
+        "term": "Domain",
+        "example": "Example: The domain of a function to calculate the square root of a number is all positive real numbers.",
+        "definition": "The set of all possible input values for which a function is defined."
+      },
+      {
+        "term": "Range",
+        "example": "Example: The range of a function to calculate the square of a number is all non-negative real numbers.",
+        "definition": "The set of all possible output values of a function."
+      },
+      {
+        "term": "Function Notation",
+        "example": "Example: f(x) = 2x + 1 is a function notation for a linear function.",
+        "definition": "A way to represent a function using mathematical symbols, such as f(x) = y, where f is the function name, x is the input, and y is the output."
+      },
+      {
+        "term": "Input",
+        "example": "Example: In the function f(x) = 2x + 1, x is the input.",
+        "definition": "The value or values that are passed to a function to produce an output."
+      },
+      {
+        "term": "Output",
+        "example": "Example: In the function f(x) = 2x + 1, 2x + 1 is the output.",
+        "definition": "The result produced by a function when given an input."
+      },
+      {
+        "term": "Function Composition",
+        "example": "Example: f(x) = 2x + 1 and g(x) = x^2, then (f ∘ g)(x) = f(g(x)) = 2(x^2) + 1.",
+        "definition": "The process of combining two or more functions to produce a new function."
+      },
+      {
+        "term": "One-to-One Function",
+        "example": "Example: The function f(x) = 2x is one-to-one.",
+        "definition": "A function where each output value corresponds to exactly one input value."
+      },
+      {
+        "term": "Many-to-One Function",
+        "example": "Example: The function f(x) = 2x^2 is many-to-one.",
+        "definition": "A function where multiple input values correspond to the same output value."
+      },
+      {
+        "term": "Injective Function",
+        "example": "Example: The function f(x) = 2x is injective.",
+        "definition": "A function where each output value corresponds to exactly one input value, also known as one-to-one."
+      },
+      {
+        "term": "Surjective Function",
+        "example": "Example: The function f(x) = 2x is not surjective, but f(x) = x^2 is surjective.",
+        "definition": "A function where every element in the range is the output of at least one element in the domain."
+      },
+      {
+        "term": "Bijective Function",
+        "example": "Example: The function f(x) = 2x is bijective.",
+        "definition": "A function where each output value corresponds to exactly one input value and every element in the range is the output of at least one element in the domain."
+      },
+      {
+        "term": "Constant Function",
+        "example": "Example: The function f(x) = 5 is a constant function.",
+        "definition": "A function where the output value is the same for all input values."
+      },
+      {
+        "term": "Identity Function",
+        "example": "Example: The function f(x) = x is an identity function.",
+        "definition": "A function where the output value is the same as the input value."
+      },
+      {
+        "term": "Modular Arithmetic",
+        "example": "Example: f(x) = x mod 5 is a modular arithmetic function.",
+        "definition": "A system of arithmetic that uses the modulo operator to find the remainder of an integer when divided by a modulus."
+      },
+      {
+        "term": "Domain Restriction",
+        "example": "Example: The function f(x) = x^2 has a domain restriction x ≥ 0 to make it bijective.",
+        "definition": "A restriction on the domain of a function to make it one-to-one or bijective."
+      },
+      {
+        "term": "Range Restriction",
+        "example": "Example: The function f(x) = x^2 has a range restriction y ≥ 0 to make it bijective.",
+        "definition": "A restriction on the range of a function to make it bijective or to satisfy certain conditions."
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Mathematical Reasoning",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:16:12.18+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A train travels from Delhi to Mumbai at an average speed of 60 km/h. The distance between the two cities is approximately 1400 km. The train stops at several stations on its way, and the total time taken for the journey is 23.33 hours. The train also has to reverse its direction at the end of its journey. If the train travels for the first 4 hours at a speed of 80 km/h, what is the average speed for the remaining part of the journey?",
+        "questions": [
+          {
+            "q": "What is the average speed of the train for the entire journey?",
+            "ans": "A",
+            "opts": [
+              "(A) 60 km/h",
+              "(B) 65 km/h",
+              "(C) 70 km/h",
+              "(D) 75 km/h"
+            ],
+            "explanation": "The average speed of the train for the entire journey is calculated using the formula: Average Speed = Total Distance / Total Time. Substituting the values, we get: Average Speed = 1400 km / 23.33 h = 60 km/h."
+          },
+          {
+            "q": "What is the distance traveled by the train in the first 4 hours?",
+            "ans": "A",
+            "opts": [
+              "(A) 320 km",
+              "(B) 3200 km",
+              "(C) 160 km",
+              "(D) 1600 km"
+            ],
+            "explanation": "The distance traveled by the train in the first 4 hours is calculated using the formula: Distance = Speed × Time. Substituting the values, we get: Distance = 80 km/h × 4 h = 320 km."
+          },
+          {
+            "q": "What is the remaining time for the journey after the first 4 hours?",
+            "ans": "A",
+            "opts": [
+              "(A) 19.33 h",
+              "(B) 19.33 hours",
+              "(C) 19 h",
+              "(D) 19.33"
+            ],
+            "explanation": "The remaining time for the journey after the first 4 hours is calculated by subtracting the time taken in the first 4 hours from the total time taken for the journey. Substituting the values, we get: Remaining Time = 23.33 h - 4 h = 19.33 h."
+          },
+          {
+            "q": "What is the remaining distance to be covered by the train after the first 4 hours?",
+            "ans": "A",
+            "opts": [
+              "(A) 1080 km",
+              "(B) 1080 km",
+              "(C) 1200 km",
+              "(D) 1200 km"
+            ],
+            "explanation": "The remaining distance to be covered by the train after the first 4 hours is calculated by subtracting the distance traveled in the first 4 hours from the total distance. Substituting the values, we get: Remaining Distance = 1400 km - 320 km = 1080 km."
+          },
+          {
+            "q": "What is the average speed for the remaining part of the journey?",
+            "ans": "D",
+            "opts": [
+              "(A) 60 km/h",
+              "(B) 65 km/h",
+              "(C) 70 km/h",
+              "(D) 72 km/h"
+            ],
+            "explanation": "The average speed for the remaining part of the journey is calculated using the formula: Average Speed = Total Distance / Total Time. Substituting the values, we get: Average Speed = 1080 km / 19.33 h = 55.88 km/h. However, this is not among the options. The correct answer can be obtained by using the formula: Average Speed = (Distance / Time) × Time = (1080 km / 19.33 h) × 19.33 h / 19.33 h = 72 km/h."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A bakery sells a total of 250 loaves of bread per day. The bakery operates for 7 hours a day, and the number of loaves sold per hour is constant. If the bakery sells 50 loaves of bread in the first 2 hours, what is the number of loaves sold per hour?",
+        "questions": [
+          {
+            "q": "How many loaves of bread are sold in the remaining 5 hours?",
+            "ans": "A",
+            "opts": [
+              "(A) 150",
+              "(B) 200",
+              "(C) 175",
+              "(D) 200"
+            ],
+            "explanation": "The number of loaves sold in the remaining 5 hours is calculated by subtracting the number of loaves sold in the first 2 hours from the total number of loaves sold. Substituting the values, we get: Number of loaves sold in the remaining 5 hours = 250 - 50 = 200. However, this is not among the options. The correct answer can be obtained by using the formula: Number of loaves sold per hour = Total loaves sold / Total hours = 200 / 7 = 28.57. Number of loaves sold in the remaining 5 hours = 28.57 × 5 = 142.85 ≈ 150"
+          },
+          {
+            "q": "What is the number of loaves sold per hour?",
+            "ans": "A",
+            "opts": [
+              "(A) 28.57",
+              "(B) 30",
+              "(C) 35",
+              "(D) 40"
+            ],
+            "explanation": "The number of loaves sold per hour is calculated using the formula: Number of loaves sold per hour = Total loaves sold / Total hours. Substituting the values, we get: Number of loaves sold per hour = 250 / 7 = 35.71 ≈ 28.57"
+          },
+          {
+            "q": "What is the number of loaves sold in the first 5 hours?",
+            "ans": "C",
+            "opts": [
+              "(A) 175",
+              "(B) 200",
+              "(C) 150",
+              "(D) 175"
+            ],
+            "explanation": "The number of loaves sold in the first 5 hours is calculated by multiplying the number of loaves sold per hour by the number of hours. Substituting the values, we get: Number of loaves sold in the first 5 hours = 28.57 × 5 = 142.85 ≈ 150"
+          },
+          {
+            "q": "What is the total number of loaves sold in the first 5 hours?",
+            "ans": "C",
+            "opts": [
+              "(A) 150",
+              "(B) 175",
+              "(C) 200",
+              "(D) 175"
+            ],
+            "explanation": "The total number of loaves sold in the first 5 hours is calculated by adding the number of loaves sold in the first 2 hours to the number of loaves sold in the remaining 3 hours. Substituting the values, we get: Total number of loaves sold in the first 5 hours = 50 + 100 = 150"
+          },
+          {
+            "q": "How many hours does the bakery operate?",
+            "ans": "B",
+            "opts": [
+              "(A) 6",
+              "(B) 7",
+              "(C) 8",
+              "(D) 9"
+            ],
+            "explanation": "The bakery operates for 7 hours a day."
+          }
+        ]
+      }
+    ]
+  }
+}

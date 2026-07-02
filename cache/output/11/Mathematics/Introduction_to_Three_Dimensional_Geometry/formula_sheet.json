@@ -1,0 +1,62 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Introduction to Three Dimensional Geometry",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:06:54.57+00:00",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Distance Formula",
+        "notes": "Used to find the distance between two points in a 2D plane",
+        "units": "length",
+        "formula": "d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}",
+        "variables": "d: distance between two points (x1, y1) and (x2, y2)"
+      },
+      {
+        "name": "Section Formula",
+        "notes": "Used to find the coordinates of a point that divides a line segment in a given ratio",
+        "units": "length",
+        "formula": "(x, y) = \\left(\\frac{mx_2 + nx_1}{m+n}, \\frac{my_2 + ny_1}{m+n}\\right)",
+        "variables": "x, y: coordinates of the point, m, n: ratios of the division, x1, y1: coordinates of the first point, x2, y2: coordinates of the second point"
+      },
+      {
+        "name": "Coordinates of a Point which divides a Line Segment in a Given Ratio",
+        "notes": "Used to find the coordinates of a point which divides a line segment joining the points (x1, y1) and (x2, y2) in the ratio m1 : m2",
+        "units": "length",
+        "formula": "(x, y) = \\left(\\frac{m_1x_2 + m_2x_1}{m_1+m_2}, \\frac{m_1y_2 + m_2y_1}{m_1+m_2}\\right)",
+        "variables": "x, y: coordinates of the point, m1, m2: ratios of the division, x1, y1: coordinates of the first point, x2, y2: coordinates of the second point"
+      },
+      {
+        "name": "Equation of a Plane in Normal Form",
+        "notes": "Used to represent a plane in normal form",
+        "units": "length",
+        "formula": "ax + by + cz + d = 0",
+        "variables": "a, b, c: direction ratios of the normal, d: distance of the plane from the origin"
+      },
+      {
+        "name": "Equation of a Plane in Symmetrical Form",
+        "notes": "Used to represent a plane in symmetrical form",
+        "units": "length",
+        "formula": "\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1",
+        "variables": "a, b, c: intercepts of the plane on the x, y, z axis"
+      },
+      {
+        "name": "Equation of a Plane Passes through a Point and Parallel to Another Plane",
+        "notes": "Used to find the equation of a plane passing through a point and parallel to another plane",
+        "units": "length",
+        "formula": "a(x - x_1) + b(y - y_1) + c(z - z_1) = 0",
+        "variables": "a, b, c: direction ratios of the normal, x1, y1, z1: coordinates of the point through which the plane passes"
+      },
+      {
+        "name": "Angle between Two Planes",
+        "notes": "Used to find the angle between two planes",
+        "units": "radian",
+        "formula": "\\cos\\theta = \\frac{a_1a_2 + b_1b_2 + c_1c_2}{\\sqrt{a_1^2 + b_1^2 + c_1^2} \\sqrt{a_2^2 + b_2^2 + c_2^2}}",
+        "variables": "\\theta: angle between the planes, a1, b1, c1: direction ratios of the first plane, a2, b2, c2: direction ratios of the second plane"
+      }
+    ]
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "Gravitation",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:22:45.025+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 19,
+    "questions": [
+      {
+        "q": "The value of acceleration due to gravity (g) at a height h above the surface of the earth is?",
+        "ans": "A",
+        "opts": [
+          "(A) g + gh/c^2",
+          "(B) g - gh/c^2",
+          "(C) g - gh",
+          "(D) g + gh"
+        ],
+        "topic": "Acceleration Due to Gravity",
+        "difficulty": "easy",
+        "explanation": "According to the problem statement, the value of acceleration due to gravity (g) at a height h above the surface of the earth is g + gh/c^2, where h/c^2 is the decrease in potential energy."
+      },
+      {
+        "q": "What is the gravitational force between the earth and a body of mass m placed at its surface?",
+        "ans": "C",
+        "opts": [
+          "(A) mg",
+          "(B) m/R^2",
+          "(C) (GMm)/R^2",
+          "(D) (GMm)/R"
+        ],
+        "topic": "Gravitational Force",
+        "difficulty": "easy",
+        "explanation": "According to Newton's law of universal gravitation, the gravitational force between two masses m1 and m2 is given by F = (G*m1*m2)/r^2. Here, G is the gravitational constant, m is the mass of the body, and R is the radius of the earth."
+      },
+      {
+        "q": "Why do objects weigh less on the moon?",
+        "ans": "C",
+        "opts": [
+          "(A) The moon has a larger radius than the earth.",
+          "(B) The moon has a smaller mass than the earth.",
+          "(C) The acceleration due to gravity on the moon is smaller than on the earth.",
+          "(D) The moon has a larger surface area than the earth."
+        ],
+        "topic": "Gravitational Force",
+        "difficulty": "easy",
+        "explanation": "The acceleration due to gravity on the moon is smaller than on the earth because the moon has a smaller mass and radius than the earth."
+      },
+      {
+        "q": "What is the time period of a simple pendulum in terms of g?",
+        "ans": "A",
+        "opts": [
+          "(A) T = 2π√(l/g)",
+          "(B) T = 2π√(g/l)",
+          "(C) T = 2π√(g/l^2)",
+          "(D) T = 2π√(l^2/g)"
+        ],
+        "topic": "Pendulum",
+        "difficulty": "easy",
+        "explanation": "The time period of a simple pendulum is given by T = 2π√(l/g), where l is the length of the pendulum and g is the acceleration due to gravity."
+      },
+      {
+        "q": "What is the centripetal force acting on a satellite in a circular orbit around the earth?",
+        "ans": "A",
+        "opts": [
+          "(A) gravitational force",
+          "(B) electromagnetic force",
+          "(C) centripetal force",
+          "(D) normal force"
+        ],
+        "topic": "Orbital Mechanics",
+        "difficulty": "easy",
+        "explanation": "The centripetal force acting on a satellite in a circular orbit around the earth is the gravitational force of the earth."
+      },
+      {
+        "q": "What is the escape velocity from the surface of the earth?",
+        "ans": "B",
+        "opts": [
+          "(A) √(2gh)",
+          "(B) √(2GM/R)",
+          "(C) √(GM/R)",
+          "(D) √(2GM/R^2)"
+        ],
+        "topic": "Escape Velocity",
+        "difficulty": "medium",
+        "explanation": "The escape velocity from the surface of the earth is given by √(2GM/R), where G is the gravitational constant, M is the mass of the earth, and R is the radius of the earth."
+      },
+      {
+        "q": "What is the difference between a satellite in a geostationary orbit and a satellite in a geosynchronous orbit?",
+        "ans": "B",
+        "opts": [
+          "(A) The geostationary satellite is in a lower orbit than the geosynchronous satellite.",
+          "(B) The geostationary satellite is in a higher orbit than the geosynchronous satellite.",
+          "(C) The geostationary satellite is in an equatorial orbit, while the geosynchronous satellite is in a polar orbit.",
+          "(D) The geostationary satellite is in an equatorial orbit, while the geosynchronous satellite is in a polar orbit.",
+          "(E) The geostationary satellite is in a lower orbit than the geosynchronous satellite.",
+          "(F) The geostationary satellite is in a higher orbit than the geosynchronous satellite."
+        ],
+        "topic": "Orbital Mechanics",
+        "difficulty": "medium",
+        "explanation": "A geostationary satellite is in a higher orbit than a geosynchronous satellite, and it completes one revolution around the earth in 24 hours."
+      },
+      {
+        "q": "What is the orbital radius of a geostationary satellite?",
+        "ans": "C",
+        "opts": [
+          "(A) 4R",
+          "(B) 6R",
+          "(C) 4.23R",
+          "(D) 6.64R"
+        ],
+        "topic": "Orbital Mechanics",
+        "difficulty": "medium",
+        "explanation": "The orbital radius of a geostationary satellite is approximately 4.23 times the radius of the earth."
+      },
+      {
+        "q": "A body of mass m is placed on the surface of the moon. What is the weight of the body?",
+        "ans": "C",
+        "opts": [
+          "(A) W = mg",
+          "(B) W = mg/4",
+          "(C) W = mg/2",
+          "(D) W = mg/6"
+        ],
+        "topic": "Gravitational Force",
+        "difficulty": "medium",
+        "explanation": "The weight of the body on the moon is given by W = mg/2, where m is the mass of the body and g is the acceleration due to gravity on the moon."
+      },
+      {
+        "q": "What is the orbital velocity of a satellite in a circular orbit around the earth?",
+        "ans": "B",
+        "opts": [
+          "(A) √(GM/R)",
+          "(B) √(2GM/R)",
+          "(C) √(GM/R^2)",
+          "(D) √(2GM/R^2)"
+        ],
+        "topic": "Orbital Mechanics",
+        "difficulty": "medium",
+        "explanation": "The orbital velocity of a satellite in a circular orbit around the earth is given by √(2GM/R), where G is the gravitational constant, M is the mass of the earth, and R is the radius of the orbit."
+      },
+      {
+        "q": "What is the relation between the orbital period and the radius of a circular orbit?",
+        "ans": "A",
+        "opts": [
+          "(A) T^2 ∝ R^2",
+          "(B) T^2 ∝ R",
+          "(C) T ∝ R",
+          "(D) T ∝ R^2"
+        ],
+        "topic": "Orbital Mechanics",
+        "difficulty": "medium",
+        "explanation": "The orbital period T is related to the radius R of a circular orbit by the equation T^2 ∝ R^2."
+      },
+      {
+        "q": "What is the force of gravity between the earth and a body of mass m at a height h above the surface of the earth?",
+        "ans": "B",
+        "opts": [
+          "(A) F = (GMm)/(R^2)",
+          "(B) F = (GMm)/(R+h)^2",
+          "(C) F = (GMm)/(R+h)",
+          "(D) F = (GMm)/(R-h)"
+        ],
+        "topic": "Gravitational Force",
+        "difficulty": "hard",
+        "explanation": "The force of gravity between the earth and a body of mass m at a height h above the surface of the earth is given by F = (GMm)/(R+h)^2, where G is the gravitational constant, M is the mass of the earth, and R is the radius of the earth."
+      },
+      {
+        "q": "What is the total energy of a satellite in a circular orbit around the earth?",
+        "ans": "B",
+        "opts": [
+          "(A) E = 0",
+          "(B) E = -GM/R",
+          "(C) E = -GM/R^2",
+          "(D) E = GM/R"
+        ],
+        "topic": "Orbital Mechanics",
+        "difficulty": "hard",
+        "explanation": "The total energy of a satellite in a circular orbit around the earth is given by E = -GM/R, where G is the gravitational constant, M is the mass of the earth, and R is the radius of the orbit."
+      },
+      {
+        "q": "What is the relation between the orbital velocity and the radius of a circular orbit?",
+        "ans": "A",
+        "opts": [
+          "(A) v ∝ √(GM/R)",
+          "(B) v ∝ √(GM/R^2)",
+          "(C) v ∝ √(GM/R^3)",
+          "(D) v ∝ √(GM/R^4)"
+        ],
+        "topic": "Orbital Mechanics",
+        "difficulty": "hard",
+        "explanation": "The orbital velocity v is related to the radius R of a circular orbit by the equation v ∝ √(GM/R), where G is the gravitational constant, M is the mass of the earth, and R is the radius of the orbit."
+      },
+      {
+        "q": "What is the orbital period of a satellite in a hyperbolic orbit around the earth?",
+        "ans": "B",
+        "opts": [
+          "(A) T = 2π√(R/a)",
+          "(B) T = 2π√(R/a^2)",
+          "(C) T = 2π√(R/a^3)",
+          "(D) T = 2π√(R/a^4)"
+        ],
+        "topic": "Orbital Mechanics",
+        "difficulty": "hard",
+        "explanation": "The orbital period T of a satellite in a hyperbolic orbit around the earth is given by T = 2π√(R/a^2), where R is the radius of the orbit and a is the semi-major axis of the hyperbola."
+      },
+      {
+        "q": "What is the gravitational potential energy of a body of mass m at a distance r from the center of the earth?",
+        "ans": "C",
+        "opts": [
+          "(A) U = -GMm/r",
+          "(B) U = GMm/r^2",
+          "(C) U = -GMm/r^2",
+          "(D) U = GMm/r^3"
+        ],
+        "topic": "Gravitational Potential Energy",
+        "difficulty": "hard",
+        "explanation": "The gravitational potential energy U of a body of mass m at a distance r from the center of the earth is given by U = -GMm/r^2, where G is the gravitational constant, M is the mass of the earth, and r is the distance from the center of the earth."
+      },
+      {
+        "q": "What is the relation between the orbital velocity and the mass of a satellite in a circular orbit around the earth?",
+        "ans": "B",
+        "opts": [
+          "(A) v ∝ √(M)",
+          "(B) v ∝ √(M/R)",
+          "(C) v ∝ √(M/R^2)",
+          "(D) v ∝ √(M/R^3)"
+        ],
+        "topic": "Orbital Mechanics",
+        "difficulty": "hard",
+        "explanation": "The orbital velocity v is related to the mass M of a satellite in a circular orbit around the earth by the equation v ∝ √(M/R), where R is the radius of the orbit."
+      },
+      {
+        "q": "What is the orbital period of a satellite in an elliptical orbit around the earth?",
+        "ans": "A",
+        "opts": [
+          "(A) T = 2π√(R/a)",
+          "(B) T = 2π√(R/a^2)",
+          "(C) T = 2π√(R/a^3)",
+          "(D) T = 2π√(R/a^4)"
+        ],
+        "topic": "Orbital Mechanics",
+        "difficulty": "hard",
+        "explanation": "The orbital period T of a satellite in an elliptical orbit around the earth is given by T = 2π√(R/a), where R is the radius of the orbit and a is the semi-major axis of the ellipse."
+      },
+      {
+        "q": "What is the gravitational force between the earth and a body of mass m at a distance r from the center of the earth?",
+        "ans": "A",
+        "opts": [
+          "(A) F = (GMm)/r^2",
+          "(B) F = (GMm)/r",
+          "(C) F = GMm/r^2",
+          "(D) F = GMm/r"
+        ],
+        "topic": "Gravitational Force",
+        "difficulty": "hard",
+        "explanation": "The gravitational force F between the earth and a body of mass m at a distance r from the center of the earth is given by F = (GMm)/r^2, where G is the gravitational constant, M is the mass of the earth, and r is the distance from the center of the earth."
+      }
+    ]
+  }
+}

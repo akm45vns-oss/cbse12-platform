@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Economics",
+  "chapter": "Introduction to Statistics",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:33:54.579+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "The Indian government has launched a program to improve healthcare services in rural areas. A survey was conducted to assess the quality of healthcare services in 20 villages. The survey collected data on the number of doctors available in each village. The mean number of doctors in the villages surveyed was 5. The standard deviation of the number of doctors was 2.5. What can be inferred from the standard deviation of the number of doctors?",
+        "questions": [
+          {
+            "q": "What is the measure of central tendency that is most likely to be affected by extreme values in the data?",
+            "ans": "A",
+            "opts": [
+              "Mean",
+              "Median",
+              "Mode",
+              "Standard Deviation"
+            ],
+            "explanation": "The mean is the most likely to be affected by extreme values in the data."
+          },
+          {
+            "q": "What is the range of the number of doctors in the villages surveyed?",
+            "ans": "D",
+            "opts": [
+              "0-10",
+              "0-5",
+              "5-10",
+              "0-7.5"
+            ],
+            "explanation": "The range is the difference between the largest and smallest values in the data. Since the standard deviation is 2.5, the range is likely to be between 0 and 2*2.5 = 5, but since the mean is 5, the range will be 5-10."
+          },
+          {
+            "q": "What percentage of the data points are likely to fall within one standard deviation of the mean?",
+            "ans": "A",
+            "opts": [
+              "68%",
+              "50%",
+              "95%",
+              "32%"
+            ],
+            "explanation": "According to the 68-95-99.7 rule, about 68% of the data points are likely to fall within one standard deviation of the mean."
+          },
+          {
+            "q": "What is the interquartile range (IQR) of the number of doctors in the villages surveyed?",
+            "ans": "C",
+            "opts": [
+              "0-5",
+              "2.5-7.5",
+              "0-10",
+              "5-7.5"
+            ],
+            "explanation": "The IQR is the difference between the third quartile (Q3) and the first quartile (Q1). Since the mean is 5, we can assume that Q1 is 2.5 and Q3 is 7.5, so the IQR is 7.5 - 2.5 = 5."
+          },
+          {
+            "q": "What does the standard deviation of the number of doctors indicate about the spread of the data?",
+            "ans": "C",
+            "opts": [
+              "The data is highly concentrated around the mean.",
+              "The data is moderately spread out around the mean.",
+              "The data is highly spread out around the mean.",
+              "The data is perfectly spread out around the mean."
+            ],
+            "explanation": "A large standard deviation indicates that the data is highly spread out around the mean."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A consumer survey was conducted to assess the average price of a particular brand of soap in different cities. The survey collected data on the price of the soap in 15 cities. The mean price of the soap was Rs. 50. The standard deviation of the price was Rs. 10. What can be inferred from the mean price of the soap?",
+        "questions": [
+          {
+            "q": "What does the mean price of the soap indicate about the average price of the soap in the cities surveyed?",
+            "ans": "A",
+            "opts": [
+              "The average price is highly concentrated around the mean.",
+              "The average price is moderately spread out around the mean.",
+              "The average price is highly spread out around the mean.",
+              "The average price is perfectly concentrated around the mean."
+            ],
+            "explanation": "A small standard deviation indicates that the data is highly concentrated around the mean."
+          },
+          {
+            "q": "What is the median price of the soap in the cities surveyed?",
+            "ans": "C",
+            "opts": [
+              "Rs. 40",
+              "Rs. 45",
+              "Rs. 50",
+              "Rs. 55"
+            ],
+            "explanation": "Since the mean is 50, the median is likely to be 50."
+          },
+          {
+            "q": "What is the mode of the price of the soap in the cities surveyed?",
+            "ans": "C",
+            "opts": [
+              "Rs. 40",
+              "Rs. 45",
+              "Rs. 50",
+              "Rs. 55"
+            ],
+            "explanation": "Since the mean is 50, the mode is likely to be 50."
+          },
+          {
+            "q": "What does the standard deviation of the price of the soap indicate about the spread of the data?",
+            "ans": "B",
+            "opts": [
+              "The data is highly concentrated around the mean.",
+              "The data is moderately spread out around the mean.",
+              "The data is highly spread out around the mean.",
+              "The data is perfectly spread out around the mean."
+            ],
+            "explanation": "A small standard deviation indicates that the data is moderately spread out around the mean."
+          },
+          {
+            "q": "What percentage of the data points are likely to fall within one standard deviation of the mean?",
+            "ans": "A",
+            "opts": [
+              "68%",
+              "50%",
+              "95%",
+              "32%"
+            ],
+            "explanation": "According to the 68-95-99.7 rule, about 68% of the data points are likely to fall within one standard deviation of the mean."
+          }
+        ]
+      }
+    ]
+  }
+}

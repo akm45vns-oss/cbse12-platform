@@ -1,0 +1,135 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Limits and Derivatives",
+  "content_type": "case_based",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:29:19.498+00:00",
+  "version": "1.0",
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "passage": "A particle of mass 2 kg is moving along the x-axis with an initial velocity of 4 m/s. We can model its position as a function of time using the equation s(t) = 2t^2 + 5t - 3, where s(t) is the position in meters and t is the time in seconds. To determine the rate at which the particle is moving, we need to find its velocity function v(t). Using the chain rule, we can differentiate the position function to get the velocity function.",
+        "questions": [
+          {
+            "q": "What is the derivative of the position function s(t) = 2t^2 + 5t - 3?",
+            "ans": "A",
+            "opts": [
+              "(A) v(t) = 4t + 5",
+              "(B) v(t) = 4t^2 + 5",
+              "(C) v(t) = 4",
+              "(D) v(t) = 5"
+            ],
+            "explanation": "Using the power rule for differentiation, we get v(t) = d(2t^2 + 5t - 3)/dt = 4t + 5."
+          },
+          {
+            "q": "At what time t will the particle have a velocity of 17 m/s?",
+            "ans": "B",
+            "opts": [
+              "(A) t = 2 s",
+              "(B) t = 3 s",
+              "(C) t = 4 s",
+              "(D) t = 5 s"
+            ],
+            "explanation": "To find the time at which the particle has a velocity of 17 m/s, we need to solve the equation v(t) = 17. Substituting v(t) = 4t + 5, we get 4t + 5 = 17, which simplifies to 4t = 12 and t = 3 s."
+          },
+          {
+            "q": "What is the limit of the velocity function v(t) as t approaches infinity?",
+            "ans": "B",
+            "opts": [
+              "(A) 0",
+              "(B) infinity",
+              "(C) 5",
+              "(D) -5"
+            ],
+            "explanation": "As t approaches infinity, the term 4t in the velocity function v(t) = 4t + 5 dominates, and the limit of v(t) as t approaches infinity is infinity."
+          },
+          {
+            "q": "Does the function f(x) = x^2 have a derivative?",
+            "ans": "B",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) It depends on the value of x",
+              "(D) It is not defined"
+            ],
+            "explanation": "The function f(x) = x^2 is not differentiable at x = 0, as the left-hand and right-hand limits of the difference quotient do not exist at this point."
+          },
+          {
+            "q": "What is the derivative of the function f(x) = e^x?",
+            "ans": "A",
+            "opts": [
+              "(A) f'(x) = e^x",
+              "(B) f'(x) = ln(e^x)",
+              "(C) f'(x) = 1",
+              "(D) f'(x) = 0"
+            ],
+            "explanation": "Using the chain rule, we can differentiate the function f(x) = e^x to get f'(x) = e^x."
+          }
+        ]
+      },
+      {
+        "case_id": 2,
+        "passage": "A company is producing a new product, and the cost function is given by C(x) = 2x^2 + 5x - 3, where x is the number of units produced. To determine the marginal cost function, we need to find the derivative of the cost function.",
+        "questions": [
+          {
+            "q": "What is the marginal cost function?",
+            "ans": "A",
+            "opts": [
+              "(A) C'(x) = 4x + 5",
+              "(B) C'(x) = 2x + 5",
+              "(C) C'(x) = 2x^2 + 5",
+              "(D) C'(x) = 4"
+            ],
+            "explanation": "Using the power rule for differentiation, we get C'(x) = d(2x^2 + 5x - 3)/dx = 4x + 5."
+          },
+          {
+            "q": "At what level of production will the marginal cost be 15?",
+            "ans": "B",
+            "opts": [
+              "(A) x = 2 units",
+              "(B) x = 3 units",
+              "(C) x = 4 units",
+              "(D) x = 5 units"
+            ],
+            "explanation": "To find the level of production at which the marginal cost is 15, we need to solve the equation C'(x) = 15. Substituting C'(x) = 4x + 5, we get 4x + 5 = 15, which simplifies to 4x = 10 and x = 3 units."
+          },
+          {
+            "q": "What is the limit of the marginal cost function C'(x) as x approaches infinity?",
+            "ans": "B",
+            "opts": [
+              "(A) 0",
+              "(B) infinity",
+              "(C) 5",
+              "(D) -5"
+            ],
+            "explanation": "As x approaches infinity, the term 4x in the marginal cost function C'(x) = 4x + 5 dominates, and the limit of C'(x) as x approaches infinity is infinity."
+          },
+          {
+            "q": "Does the function f(x) = x^3 have a derivative?",
+            "ans": "A",
+            "opts": [
+              "(A) Yes",
+              "(B) No",
+              "(C) It depends on the value of x",
+              "(D) It is not defined"
+            ],
+            "explanation": "The function f(x) = x^3 is differentiable at all points, as the left-hand and right-hand limits of the difference quotient exist at all points."
+          },
+          {
+            "q": "What is the derivative of the function f(x) = 1/x?",
+            "ans": "A",
+            "opts": [
+              "(A) f'(x) = -1/x^2",
+              "(B) f'(x) = 1/x^2",
+              "(C) f'(x) = 0",
+              "(D) f'(x) = infinity"
+            ],
+            "explanation": "Using the power rule and the quotient rule, we can differentiate the function f(x) = 1/x to get f'(x) = -1/x^2."
+          }
+        ]
+      }
+    ]
+  }
+}

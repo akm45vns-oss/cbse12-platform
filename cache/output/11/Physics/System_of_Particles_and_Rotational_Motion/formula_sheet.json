@@ -1,0 +1,107 @@
+{
+  "class": "11",
+  "subject": "Physics",
+  "chapter": "System of Particles and Rotational Motion",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T15:21:20.8+00:00",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Newton's Third Law of Motion",
+        "notes": "Describes the relationship between two interacting objects.",
+        "formula": "For every action, there is an equal and opposite reaction."
+      },
+      {
+        "name": "Center of Mass Formula",
+        "notes": "Calculates the x-coordinate of the center of mass of a system of particles.",
+        "units": "m",
+        "formula": "x = (m1x1 + m2x2 + m3x3 + ... + mnxn) / (m1 + m2 + m3 + ... + mn)",
+        "variables": "x: x-coordinate of the center of mass, m: mass of the particles, x: x-coordinate of the particles"
+      },
+      {
+        "name": "Center of Mass Formula (y-coordinate)",
+        "notes": "Calculates the y-coordinate of the center of mass of a system of particles.",
+        "units": "m",
+        "formula": "y = (m1y1 + m2y2 + m3y3 + ... + mnyn) / (m1 + m2 + m3 + ... + mn)",
+        "variables": "y: y-coordinate of the center of mass, m: mass of the particles, y: y-coordinate of the particles"
+      },
+      {
+        "name": "Moment of Inertia of a Point Mass",
+        "notes": "Calculates the moment of inertia of a point mass.",
+        "units": "kg m^2",
+        "formula": "I = mr^2",
+        "variables": "I: moment of inertia, m: mass of the point mass, r: distance of the point mass from the axis of rotation"
+      },
+      {
+        "name": "Moment of Inertia of a Rod",
+        "notes": "Calculates the moment of inertia of a rod.",
+        "units": "kg m^2",
+        "formula": "I = (1/12)mL^2",
+        "variables": "I: moment of inertia, m: mass of the rod, L: length of the rod"
+      },
+      {
+        "name": "Angular Momentum of a Particle",
+        "notes": "Calculates the angular momentum of a particle.",
+        "units": "kg m^2/s",
+        "formula": "L = r x (mv)",
+        "variables": "L: angular momentum, r: position vector of the particle, m: mass of the particle, v: velocity of the particle"
+      },
+      {
+        "name": "Torque Formula",
+        "notes": "Calculates the torque applied to an object.",
+        "units": "N m",
+        "formula": "τ = r x F",
+        "variables": "τ: torque, r: position vector of the point of application of the force, F: force applied"
+      },
+      {
+        "name": "Rotational Kinetic Energy",
+        "notes": "Calculates the rotational kinetic energy of an object.",
+        "units": "J",
+        "formula": "K = (1/2)Iω^2",
+        "variables": "K: rotational kinetic energy, I: moment of inertia, ω: angular velocity"
+      },
+      {
+        "name": "Work Done in Rotational Motion",
+        "notes": "Calculates the work done in rotating an object.",
+        "units": "J",
+        "formula": "W = τθ",
+        "variables": "W: work done, τ: torque, θ: angle of rotation"
+      },
+      {
+        "name": "Rotational Kinetic Energy (from linear kinetic energy)",
+        "notes": "Expresses rotational kinetic energy in terms of linear kinetic energy.",
+        "units": "J",
+        "formula": "K = (1/2)Mv^2",
+        "variables": "K: rotational kinetic energy, M: mass of the object, v: linear velocity of the object"
+      },
+      {
+        "name": "Angular Momentum of a System of Particles",
+        "notes": "Calculates the total angular momentum of a system of particles.",
+        "units": "kg m^2/s",
+        "formula": "L = Σ(r x (mv))",
+        "variables": "L: angular momentum, r: position vector of the particles, m: mass of the particles, v: velocity of the particles"
+      },
+      {
+        "name": "Conservation of Angular Momentum",
+        "notes": "States that the total angular momentum of a closed system remains constant over time.",
+        "formula": "L1 = L2"
+      },
+      {
+        "name": "Torque and Angular Acceleration",
+        "notes": "Describes the relationship between torque and angular acceleration.",
+        "units": "N m",
+        "formula": "τ = Iα",
+        "variables": "τ: torque, I: moment of inertia, α: angular acceleration"
+      },
+      {
+        "name": "Rotational Motion of a Rigid Body",
+        "notes": "Describes the rotational motion of a rigid body.",
+        "units": "rad/s^2",
+        "formula": "α = τ / I",
+        "variables": "α: angular acceleration, τ: torque, I: moment of inertia"
+      }
+    ]
+  }
+}

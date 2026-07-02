@@ -1,0 +1,261 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Introduction to Databases",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T17:32:47.394+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 19,
+    "questions": [
+      {
+        "q": "What is a database?",
+        "ans": "A",
+        "opts": [
+          "(A) A collection of data",
+          "(B) A program that retrieves data",
+          "(C) A hardware device for storing data",
+          "(D) A network for communicating data"
+        ],
+        "topic": "Introduction to Databases",
+        "difficulty": "easy",
+        "explanation": "A database is a collection of data that is organized and managed in a way that allows for efficient retrieval and manipulation."
+      },
+      {
+        "q": "What is the primary function of a database management system?",
+        "ans": "C",
+        "opts": [
+          "(A) To store data in a file",
+          "(B) To create tables and relationships",
+          "(C) To manage data storage, security, and retrieval",
+          "(D) To analyze data for business intelligence"
+        ],
+        "topic": "DBMS",
+        "difficulty": "easy",
+        "explanation": "A database management system (DBMS) is responsible for managing the creation, maintenance, and use of databases."
+      },
+      {
+        "q": "What is a data model?",
+        "ans": "B",
+        "opts": [
+          "(A) A physical representation of data storage",
+          "(B) A conceptual representation of data relationships",
+          "(C) A logical representation of data storage",
+          "(D) A user interface for interacting with data"
+        ],
+        "topic": "Data Modeling",
+        "difficulty": "easy",
+        "explanation": "A data model is a conceptual representation of data relationships and structures, providing a framework for designing databases."
+      },
+      {
+        "q": "What is the difference between a primary key and a foreign key?",
+        "ans": "A",
+        "opts": [
+          "(A) A primary key is a field that uniquely identifies each record, while a foreign key is a field that references the primary key of another table",
+          "(B) A primary key is a field that references the primary key of another table, while a foreign key is a field that uniquely identifies each record",
+          "(C) A primary key and foreign key are used interchangeably",
+          "(D) There is no difference between a primary key and a foreign key"
+        ],
+        "topic": "ER Modeling",
+        "difficulty": "medium",
+        "explanation": "A primary key uniquely identifies each record in a table, while a foreign key references the primary key of another table to establish relationships."
+      },
+      {
+        "q": "What is normalization?",
+        "ans": "B",
+        "opts": [
+          "(A) The process of removing redundant data from a database",
+          "(B) The process of creating multiple tables to reduce data redundancy",
+          "(C) The process of creating a single table to store all data",
+          "(D) The process of denormalizing a database"
+        ],
+        "topic": "Database Design",
+        "difficulty": "medium",
+        "explanation": "Normalization is the process of organizing data in a database to minimize data redundancy and dependency, improving data integrity and scalability."
+      },
+      {
+        "q": "What is denormalization?",
+        "ans": "D",
+        "opts": [
+          "(A) The process of removing redundant data from a database",
+          "(B) The process of creating multiple tables to reduce data redundancy",
+          "(C) The process of creating a single table to store all data",
+          "(D) The process of duplicating data to improve query performance"
+        ],
+        "topic": "Database Design",
+        "difficulty": "medium",
+        "explanation": "Denormalization is the process of duplicating data in a database to improve query performance, but it can lead to data inconsistencies and maintenance challenges."
+      },
+      {
+        "q": "What is a view?",
+        "ans": "C",
+        "opts": [
+          "(A) A stored query that returns a subset of data",
+          "(B) A materialized copy of data from one or more tables",
+          "(C) A virtual table based on the result of a query",
+          "(D) A physical table that stores data"
+        ],
+        "topic": "Database Views",
+        "difficulty": "medium",
+        "explanation": "A view is a virtual table that is based on the result of a query, providing a flexible way to present data to users and applications."
+      },
+      {
+        "q": "What is a stored procedure?",
+        "ans": "C",
+        "opts": [
+          "(A) A program that performs a specific task",
+          "(B) A set of instructions that automate a task",
+          "(C) A reusable block of code that performs a task",
+          "(D) A stored query that returns a subset of data"
+        ],
+        "topic": "Database Programming",
+        "difficulty": "medium",
+        "explanation": "A stored procedure is a reusable block of code that performs a specific task, improving database performance and security by reducing the need for ad-hoc queries."
+      },
+      {
+        "q": "What is a trigger?",
+        "ans": "D",
+        "opts": [
+          "(A) A program that performs a specific task",
+          "(B) A set of instructions that automate a task",
+          "(C) A reusable block of code that performs a task",
+          "(D) A rule that defines an action to take when data is inserted, updated, or deleted"
+        ],
+        "topic": "Database Triggers",
+        "difficulty": "medium",
+        "explanation": "A trigger is a rule that defines an action to take when data is inserted, updated, or deleted, improving database integrity and security."
+      },
+      {
+        "q": "What is a transaction?",
+        "ans": "A",
+        "opts": [
+          "(A) A unit of work that consists of one or more queries",
+          "(B) A set of instructions that automate a task",
+          "(C) A reusable block of code that performs a task",
+          "(D) A rule that defines an action to take when data is inserted, updated, or deleted"
+        ],
+        "topic": "Database Transactions",
+        "difficulty": "hard",
+        "explanation": "A transaction is a unit of work that consists of one or more queries, improving database consistency and reliability by ensuring that all queries succeed or fail together."
+      },
+      {
+        "q": "What is concurrency control?",
+        "ans": "C",
+        "opts": [
+          "(A) A mechanism that ensures only one transaction executes at a time",
+          "(B) A mechanism that allows multiple transactions to execute simultaneously",
+          "(C) A mechanism that detects and resolves conflicts between transactions",
+          "(D) A mechanism that optimizes query performance"
+        ],
+        "topic": "Database Concurrency Control",
+        "difficulty": "hard",
+        "explanation": "Concurrency control is a mechanism that detects and resolves conflicts between transactions, ensuring data consistency and integrity in a multi-user database environment."
+      },
+      {
+        "q": "What is locking?",
+        "ans": "C",
+        "opts": [
+          "(A) A mechanism that detects and resolves conflicts between transactions",
+          "(B) A mechanism that ensures only one transaction executes at a time",
+          "(C) A mechanism that temporarily restricts access to a resource",
+          "(D) A mechanism that optimizes query performance"
+        ],
+        "topic": "Database Locking",
+        "difficulty": "hard",
+        "explanation": "Locking is a mechanism that temporarily restricts access to a resource, preventing other transactions from modifying it until the lock is released."
+      },
+      {
+        "q": "What is deadlock detection?",
+        "ans": "D",
+        "opts": [
+          "(A) A mechanism that detects and resolves conflicts between transactions",
+          "(B) A mechanism that ensures only one transaction executes at a time",
+          "(C) A mechanism that temporarily restricts access to a resource",
+          "(D) A mechanism that detects and resolves deadlocks between transactions"
+        ],
+        "topic": "Database Concurrency Control",
+        "difficulty": "hard",
+        "explanation": "Deadlock detection is a mechanism that detects and resolves deadlocks between transactions, ensuring data consistency and integrity in a multi-user database environment."
+      },
+      {
+        "q": "What is a deadlock?",
+        "ans": "B",
+        "opts": [
+          "(A) A situation where two transactions are executing simultaneously",
+          "(B) A situation where two transactions are waiting for each other to release a resource",
+          "(C) A situation where a transaction is blocked by another transaction",
+          "(D) A situation where a transaction is executing successfully"
+        ],
+        "topic": "Database Concurrency Control",
+        "difficulty": "hard",
+        "explanation": "A deadlock is a situation where two transactions are waiting for each other to release a resource, preventing either transaction from proceeding."
+      },
+      {
+        "q": "What is a database schema?",
+        "ans": "D",
+        "opts": [
+          "(A) A physical representation of data storage",
+          "(B) A conceptual representation of data relationships",
+          "(C) A logical representation of data storage",
+          "(D) A definition of the database structure"
+        ],
+        "topic": "Database Design",
+        "difficulty": "medium",
+        "explanation": "A database schema is a definition of the database structure, including the relationships between tables and the data types of each column."
+      },
+      {
+        "q": "What is data warehousing?",
+        "ans": "C",
+        "opts": [
+          "(A) The process of storing data in a database",
+          "(B) The process of analyzing data for business intelligence",
+          "(C) The process of creating a data warehouse",
+          "(D) The process of storing data in a data mart"
+        ],
+        "topic": "Data Warehousing",
+        "difficulty": "hard",
+        "explanation": "Data warehousing is the process of creating a data warehouse, a centralized repository of data that is designed to support business intelligence and analytics."
+      },
+      {
+        "q": "What is a data mart?",
+        "ans": "B",
+        "opts": [
+          "(A) A centralized repository of data",
+          "(B) A subset of data from a data warehouse",
+          "(C) A type of database that stores data",
+          "(D) A tool for analyzing data"
+        ],
+        "topic": "Data Warehousing",
+        "difficulty": "hard",
+        "explanation": "A data mart is a subset of data from a data warehouse, designed to support a specific business function or department."
+      },
+      {
+        "q": "What is business intelligence?",
+        "ans": "D",
+        "opts": [
+          "(A) The process of analyzing data for business insights",
+          "(B) The process of creating a data warehouse",
+          "(C) The process of storing data in a database",
+          "(D) The process of using data to make business decisions"
+        ],
+        "topic": "Business Intelligence",
+        "difficulty": "hard",
+        "explanation": "Business intelligence is the process of using data to make business decisions, often supported by analytics, reporting, and data visualization tools."
+      },
+      {
+        "q": "What is data mining?",
+        "ans": "D",
+        "opts": [
+          "(A) The process of analyzing data for business insights",
+          "(B) The process of creating a data warehouse",
+          "(C) The process of storing data in a database",
+          "(D) The process of discovering patterns and relationships in data"
+        ],
+        "topic": "Data Mining",
+        "difficulty": "hard",
+        "explanation": "Data mining is the process of discovering patterns and relationships in data, often using advanced analytics and machine learning techniques."
+      }
+    ]
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "File Handling",
+  "content_type": "mcqs",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T16:25:32.605+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 20,
+    "questions": [
+      {
+        "q": "What is the purpose of a header in a file?",
+        "ans": "B",
+        "opts": [
+          "(A) To store data",
+          "(B) To store metadata",
+          "(C) To store footer information",
+          "(D) To store footer and metadata"
+        ],
+        "topic": "File Structure",
+        "difficulty": "easy",
+        "explanation": "Headers are used to store metadata such as file name, date, and time."
+      },
+      {
+        "q": "Which of the following file access mode allows reading and writing?",
+        "ans": "C",
+        "opts": [
+          "(A) Read mode",
+          "(B) Write mode",
+          "(C) Read and Write mode",
+          "(D) Execute mode"
+        ],
+        "topic": "File Access Modes",
+        "difficulty": "easy",
+        "explanation": "Read and Write mode is used to open a file for both reading and writing, which can be either appending or truncating the file."
+      },
+      {
+        "q": "What is the difference between fseek() and rewind() functions?",
+        "ans": "C",
+        "opts": [
+          "(A) fseek() is used for binary files only",
+          "(B) rewind() is used for text files only",
+          "(C) fseek() is used to move the file pointer, rewind() is used to set the file pointer to the beginning",
+          "(D) fseek() is used to read the file, rewind() is used to write the file"
+        ],
+        "topic": "File Pointer Management",
+        "difficulty": "medium",
+        "explanation": "fseek() function is used to move the file pointer to a specific location in a file, while rewind() function is used to set the file pointer to the beginning of a file."
+      },
+      {
+        "q": "Which of the following file formats is a binary file?",
+        "ans": "D",
+        "opts": [
+          "(A) Text file",
+          "(B) Image file",
+          "(C) Audio file",
+          "(D) Executable file"
+        ],
+        "topic": "File Types",
+        "difficulty": "medium",
+        "explanation": "Executable files contain binary data, which can be either machine code or compiled code."
+      },
+      {
+        "q": "What is the purpose of a footer in a file?",
+        "ans": "C",
+        "opts": [
+          "(A) To store data",
+          "(B) To store metadata",
+          "(C) To store footer information",
+          "(D) To store footer and metadata"
+        ],
+        "topic": "File Structure",
+        "difficulty": "easy",
+        "explanation": "Footers are used to store information about the file, such as the file size, number of records, etc."
+      },
+      {
+        "q": "Which of the following file access modes allows updating an existing file?",
+        "ans": "B",
+        "opts": [
+          "(A) Read mode",
+          "(B) Write mode",
+          "(C) Read and Write mode",
+          "(D) Append mode"
+        ],
+        "topic": "File Access Modes",
+        "difficulty": "easy",
+        "explanation": "Write mode is used to update an existing file by truncating it."
+      },
+      {
+        "q": "What is the difference between ftell() and ftell64() functions?",
+        "ans": "A",
+        "opts": [
+          "(A) ftell() is used for 32-bit systems, ftell64() is used for 64-bit systems",
+          "(B) ftell() is used for text files, ftell64() is used for binary files",
+          "(C) ftell() is used to get the current file position, ftell64() is used to get the file size",
+          "(D) ftell() is used to read the file, ftell64() is used to write the file"
+        ],
+        "topic": "File Pointer Management",
+        "difficulty": "hard",
+        "explanation": "ftell() function is used to get the current file position on 32-bit systems, while ftell64() function is used to get the current file position on 64-bit systems."
+      },
+      {
+        "q": "Which of the following functions is used to get the file size?",
+        "ans": "D",
+        "opts": [
+          "(A) fseek()",
+          "(B) ftell()",
+          "(C) ftruncate()",
+          "(D) stat()"
+        ],
+        "topic": "File Management",
+        "difficulty": "medium",
+        "explanation": "stat() function is used to get information about a file, including its size."
+      },
+      {
+        "q": "What is the purpose of a directory?",
+        "ans": "C",
+        "opts": [
+          "(A) To store data",
+          "(B) To store metadata",
+          "(C) To store files and subdirectories",
+          "(D) To store only subdirectories"
+        ],
+        "topic": "File System",
+        "difficulty": "easy",
+        "explanation": "Directories are used to store files and subdirectories, providing an organizational structure for files on a file system."
+      },
+      {
+        "q": "Which of the following file access modes allows appending to a file?",
+        "ans": "D",
+        "opts": [
+          "(A) Read mode",
+          "(B) Write mode",
+          "(C) Read and Write mode",
+          "(D) Append mode"
+        ],
+        "topic": "File Access Modes",
+        "difficulty": "easy",
+        "explanation": "Append mode is used to open a file for appending, adding data to the end of the file without overwriting existing data."
+      },
+      {
+        "q": "What is the difference between fclose() and close() functions?",
+        "ans": "C",
+        "opts": [
+          "(A) fclose() is used for text files, close() is used for binary files",
+          "(B) fclose() is used to close a file, close() is used to flush a file buffer",
+          "(C) fclose() is used to close a file and release resources, close() is used to close a file and flush a file buffer",
+          "(D) fclose() is used to read a file, close() is used to write a file"
+        ],
+        "topic": "File Pointer Management",
+        "difficulty": "medium",
+        "explanation": "fclose() function is used to close a file and release resources, while close() function is used to close a file and flush a file buffer."
+      },
+      {
+        "q": "Which of the following file formats is a text file?",
+        "ans": "D",
+        "opts": [
+          "(A) Binary file",
+          "(B) Image file",
+          "(C) Audio file",
+          "(D) Source code file"
+        ],
+        "topic": "File Types",
+        "difficulty": "medium",
+        "explanation": "Source code files contain text data, which can be either human-readable or compiled code."
+      },
+      {
+        "q": "What is the purpose of the rewind() function?",
+        "ans": "B",
+        "opts": [
+          "(A) To move the file pointer to the end of a file",
+          "(B) To set the file pointer to the beginning of a file",
+          "(C) To move the file pointer to a specific location in a file",
+          "(D) To read the file"
+        ],
+        "topic": "File Pointer Management",
+        "difficulty": "easy",
+        "explanation": "rewind() function is used to set the file pointer to the beginning of a file, allowing for re-reading of the file from the start."
+      },
+      {
+        "q": "Which of the following file access modes allows creating a new file?",
+        "ans": "B",
+        "opts": [
+          "(A) Read mode",
+          "(B) Write mode",
+          "(C) Read and Write mode",
+          "(D) Append mode"
+        ],
+        "topic": "File Access Modes",
+        "difficulty": "easy",
+        "explanation": "Write mode is used to create a new file by truncating it, while Append mode is used to open an existing file for appending."
+      },
+      {
+        "q": "What is the difference between fgetc() and fgets() functions?",
+        "ans": "A",
+        "opts": [
+          "(A) fgetc() is used to read a character from a file, fgets() is used to read a line from a file",
+          "(B) fgetc() is used to read a line from a file, fgets() is used to read a character from a file",
+          "(C) fgetc() is used to read a character from a file, fgets() is used to read a file",
+          "(D) fgetc() is used to read a file, fgets() is used to read a line from a file"
+        ],
+        "topic": "File Input/Output",
+        "difficulty": "medium",
+        "explanation": "fgetc() function is used to read a single character from a file, while fgets() function is used to read a line from a file."
+      },
+      {
+        "q": "Which of the following functions is used to get the file status?",
+        "ans": "A",
+        "opts": [
+          "(A) stat()",
+          "(B) fstat()",
+          "(C) lstat()",
+          "(D) fstat64()"
+        ],
+        "topic": "File Management",
+        "difficulty": "medium",
+        "explanation": "stat() function is used to get information about a file, including its status."
+      },
+      {
+        "q": "What is the purpose of a directory entry?",
+        "ans": "C",
+        "opts": [
+          "(A) To store data",
+          "(B) To store metadata",
+          "(C) To store a file or subdirectory",
+          "(D) To store a directory name"
+        ],
+        "topic": "File System",
+        "difficulty": "easy",
+        "explanation": "Directory entries are used to store files and subdirectories in a directory, providing a way to organize and access files on a file system."
+      },
+      {
+        "q": "Which of the following file access modes allows overwriting existing data?",
+        "ans": "B",
+        "opts": [
+          "(A) Read mode",
+          "(B) Write mode",
+          "(C) Read and Write mode",
+          "(D) Append mode"
+        ],
+        "topic": "File Access Modes",
+        "difficulty": "easy",
+        "explanation": "Write mode is used to overwrite existing data in a file, while Append mode is used to add new data to the end of the file."
+      },
+      {
+        "q": "What is the difference between ftell() and ftello() functions?",
+        "ans": "B",
+        "opts": [
+          "(A) ftell() is used for 32-bit systems, ftello() is used for 64-bit systems",
+          "(B) ftell() is used for text files, ftello() is used for binary files",
+          "(C) ftell() is used to get the current file position, ftello() is used to get the file size",
+          "(D) ftell() is used to read the file, ftello() is used to write the file"
+        ],
+        "topic": "File Pointer Management",
+        "difficulty": "hard",
+        "explanation": "ftell() function is used to get the current file position for text files, while ftello() function is used to get the current file position for binary files."
+      },
+      {
+        "q": "Which of the following file formats is a binary executable?",
+        "ans": "D",
+        "opts": [
+          "(A) Text file",
+          "(B) Image file",
+          "(C) Audio file",
+          "(D) Executable file"
+        ],
+        "topic": "File Types",
+        "difficulty": "medium",
+        "explanation": "Executable files contain binary machine code that can be executed by the computer."
+      }
+    ]
+  }
+}

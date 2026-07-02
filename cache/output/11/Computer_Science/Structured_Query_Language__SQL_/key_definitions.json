@@ -1,0 +1,123 @@
+{
+  "class": "11",
+  "subject": "Computer Science",
+  "chapter": "Structured Query Language (SQL)",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T03:37:19.952+00:00",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "SQL",
+        "example": null,
+        "definition": "Structured Query Language is a standard language for accessing and manipulating data in relational database management systems (RDBMS). It allows users to perform various operations like creating, modifying, and querying databases."
+      },
+      {
+        "term": "Relational Database",
+        "example": null,
+        "definition": "A relational database is a type of database that stores data in a structured format using tables, where each table has rows and columns, and data is linked using relationships between tables."
+      },
+      {
+        "term": "Schema",
+        "example": "For example, a schema for a student database might include tables for students, courses, and grades.",
+        "definition": "A schema is the overall structure of a database, including the relationships between tables, the data types of each column, and the constraints imposed on the data."
+      },
+      {
+        "term": "Table",
+        "example": "For example, a table for students might have columns for student ID, name, and age.",
+        "definition": "A table is a collection of related data stored in rows and columns, where each row represents a single record and each column represents a field or attribute of that record."
+      },
+      {
+        "term": "Row",
+        "example": "For example, a row for a student might have values for student ID, name, and age.",
+        "definition": "A row is a single record in a table, consisting of a set of values for each column."
+      },
+      {
+        "term": "Column",
+        "example": "For example, a column for student ID might contain a unique identifier for each student.",
+        "definition": "A column is a field or attribute of a table, representing a single piece of data for each row."
+      },
+      {
+        "term": "Primary Key",
+        "example": "For example, a primary key for a student table might be a student ID.",
+        "definition": "A primary key is a unique identifier for each row in a table, used to distinguish it from other rows."
+      },
+      {
+        "term": "Foreign Key",
+        "example": "For example, a foreign key in a grades table might reference the student ID in the students table.",
+        "definition": "A foreign key is a column or set of columns in a table that references the primary key of another table, establishing a relationship between the two tables."
+      },
+      {
+        "term": "JOIN",
+        "example": "For example, a JOIN might be used to combine rows from a students table and a grades table based on student ID.",
+        "definition": "A JOIN is a clause used in SQL to combine rows from two or more tables based on a common column or set of columns."
+      },
+      {
+        "term": "SELECT",
+        "example": "For example, a SELECT statement might be used to retrieve the names and grades of all students in a particular course.",
+        "definition": "A SELECT statement is a SQL command used to retrieve data from a database, specifying the columns to be returned and the conditions under which the data should be selected."
+      },
+      {
+        "term": "FROM",
+        "example": "For example, a FROM clause might be used to specify the students and grades tables in a query.",
+        "definition": "A FROM clause is a part of a SQL statement that specifies the tables to be used in a query, typically used with the SELECT statement."
+      },
+      {
+        "term": "WHERE",
+        "example": "For example, a WHERE clause might be used to select only students with a grade above 80.",
+        "definition": "A WHERE clause is a part of a SQL statement that specifies the conditions under which data should be selected, typically used with the SELECT statement."
+      },
+      {
+        "term": "ORDER BY",
+        "example": "For example, an ORDER BY clause might be used to sort the results of a query by student name in ascending order.",
+        "definition": "An ORDER BY clause is a part of a SQL statement that sorts the results of a query in ascending or descending order, based on one or more columns."
+      },
+      {
+        "term": "GROUP BY",
+        "example": "For example, a GROUP BY clause might be used to group the results of a query by student course.",
+        "definition": "A GROUP BY clause is a part of a SQL statement that groups the results of a query by one or more columns, allowing for aggregation operations like SUM and COUNT."
+      },
+      {
+        "term": "HAVING",
+        "example": "For example, a HAVING clause might be used to select only courses with an average grade above 80.",
+        "definition": "A HAVING clause is a part of a SQL statement that specifies conditions for aggregated data, typically used with the GROUP BY clause."
+      },
+      {
+        "term": "INSERT",
+        "example": "For example, an INSERT statement might be used to add a new student to the students table.",
+        "definition": "An INSERT statement is a SQL command used to add new data to a database, specifying the table and values to be inserted."
+      },
+      {
+        "term": "UPDATE",
+        "example": "For example, an UPDATE statement might be used to update the grade of a student in the grades table.",
+        "definition": "An UPDATE statement is a SQL command used to modify existing data in a database, specifying the table and values to be updated."
+      },
+      {
+        "term": "DELETE",
+        "example": "For example, a DELETE statement might be used to remove a student from the students table.",
+        "definition": "A DELETE statement is a SQL command used to remove data from a database, specifying the table and conditions for deletion."
+      },
+      {
+        "term": "Index",
+        "example": "For example, an index might be created on a column in a table to improve query performance when searching for data in that column.",
+        "definition": "An index is a data structure used in databases to improve query performance, allowing for faster access to data by creating a quick reference or pointer to the data."
+      },
+      {
+        "term": "View",
+        "example": "For example, a view might be created to simplify access to a complex query that retrieves data from multiple tables.",
+        "definition": "A view is a virtual table in a database, derived from the result of a query, allowing for simplified access to complex data."
+      },
+      {
+        "term": "Trigger",
+        "example": "For example, a trigger might be created to update a field in a table whenever a new record is inserted.",
+        "definition": "A trigger is a set of actions that occur automatically in response to certain events in a database, such as insert, update, or delete operations."
+      },
+      {
+        "term": "Constraint",
+        "example": "For example, a constraint might be created to enforce a unique identifier for each record in a table.",
+        "definition": "A constraint is a rule or restriction imposed on data in a database, ensuring data integrity and consistency."
+      }
+    ]
+  }
+}

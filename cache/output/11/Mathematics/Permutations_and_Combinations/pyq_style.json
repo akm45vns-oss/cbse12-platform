@@ -1,0 +1,94 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "content_type": "pyq_style",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-25T04:17:46.258+00:00",
+  "version": "1.0",
+  "data": {
+    "total": 10,
+    "questions": [
+      {
+        "q": "Out of 5 men and 3 women, a team of 4 is to be chosen. In how many ways can this be done?",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "5C4 × 3C0 + 5C3 × 3C1",
+        "difficulty": "medium",
+        "year_pattern": "2018-style"
+      },
+      {
+        "q": "In a class, there are 15 boys and 8 girls. The teacher wants to choose a boy and a girl to represent the class in a function. Find the number of ways in which this can be done?",
+        "type": "Short Answer",
+        "marks": 3,
+        "answer": "15 × 8",
+        "difficulty": "easy",
+        "year_pattern": "2019-style"
+      },
+      {
+        "q": "How many ways are there to arrange the letters in the word 'MATHEMATICS'?",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "The word 'MATHEMATICS' has 11 letters. It has 2 A's, 2 M's, 2 T's, 2 H's, 1 E, 1 I, 1 C, and 1 S. Therefore, the number of ways to arrange these letters is 11! / (2! × 2! × 2! × 2!) = 4989600.",
+        "difficulty": "hard",
+        "year_pattern": "2020-style"
+      },
+      {
+        "q": "A box contains 6 red balls, 4 green balls, and 3 blue balls. All the balls are different. In how many ways can 3 balls be chosen from the box?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "6C3 × 4C0 × 3C0 + 6C2 × 4C1 × 3C0 + 6C1 × 4C2 × 3C0",
+        "difficulty": "medium",
+        "year_pattern": "2017-style"
+      },
+      {
+        "q": "Find the number of ways to arrange 5 different books on a shelf.",
+        "type": "Short Answer",
+        "marks": 2,
+        "answer": "5!",
+        "difficulty": "easy",
+        "year_pattern": "2016-style"
+      },
+      {
+        "q": "If 6 men can do a piece of work in 10 days, in how many days can 4 men do the same work?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "20",
+        "difficulty": "medium",
+        "year_pattern": "2015-style"
+      },
+      {
+        "q": "Out of 5 boys and 4 girls, a committee of 3 is to be formed. In how many ways can this be done?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "5C3 × 4C0 + 5C2 × 4C1",
+        "difficulty": "medium",
+        "year_pattern": "2018-style"
+      },
+      {
+        "q": "Find the number of ways to arrange the letters in the word 'BOOKKEEPER'.",
+        "type": "Long Answer",
+        "marks": 6,
+        "answer": "The word 'BOOKKEEPER' has 10 letters. It has 2 O's, 2 K's, 2 E's, 2 P's, 2 B's, and 1 R. Therefore, the number of ways to arrange these letters is 10! / (2! × 2! × 2! × 2! × 2!).",
+        "difficulty": "hard",
+        "year_pattern": "2020-style"
+      },
+      {
+        "q": "A bag contains 5 marbles of different colours. In how many ways can 2 marbles be chosen from the bag?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "5C2",
+        "difficulty": "easy",
+        "year_pattern": "2017-style"
+      },
+      {
+        "q": "If 5 men can do a piece of work in 12 days, in how many days can 3 men do the same work?",
+        "type": "Fill in the Blank",
+        "marks": 1,
+        "answer": "24",
+        "difficulty": "medium",
+        "year_pattern": "2015-style"
+      }
+    ]
+  }
+}

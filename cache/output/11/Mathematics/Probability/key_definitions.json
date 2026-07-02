@@ -1,0 +1,103 @@
+{
+  "class": "11",
+  "subject": "Mathematics",
+  "chapter": "Probability",
+  "content_type": "key_definitions",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-06-24T18:07:58.206+00:00",
+  "version": "1.0",
+  "data": {
+    "definitions": [
+      {
+        "term": "Experiment",
+        "example": "Tossing a coin, rolling a die, etc.",
+        "definition": "A situation or action that can produce a set of outcomes. An experiment is a study that is performed with a defined set of procedures. It may involve chance or randomness, which leads to uncertainty."
+      },
+      {
+        "term": "Outcome",
+        "example": "When a coin is tossed, the outcomes are Head or Tail.",
+        "definition": "A result of an experiment. It is a possible outcome of an experiment, which may be in the form of a number, letter, or any other form."
+      },
+      {
+        "term": "Sample Space",
+        "example": "For a coin toss, the sample space is {H, T}.",
+        "definition": "The set of all possible outcomes of an experiment. It is the collection of all possible results of the experiment."
+      },
+      {
+        "term": "Event",
+        "example": "When a coin is tossed, the event of getting a Head is {H}.",
+        "definition": "A set of one or more outcomes of an experiment. It is a subset of the sample space."
+      },
+      {
+        "term": "Sample Space S",
+        "example": "For a coin toss, the sample space S is {H, T}.",
+        "definition": "The set of all possible outcomes of an experiment. It is represented by the symbol S."
+      },
+      {
+        "term": "Event A",
+        "example": "When a coin is tossed, the event A of getting a Head is {H}.",
+        "definition": "A set of one or more outcomes of an experiment. It is a subset of the sample space S."
+      },
+      {
+        "term": "Probability of an Event A",
+        "example": "Probability of getting a Head when a coin is tossed is 1/2 or 0.5.",
+        "definition": "The measure of the likelihood of occurrence of an event. It is denoted by P(A). The probability of an event lies between 0 and 1, where 0 indicates impossibility and 1 indicates certainty."
+      },
+      {
+        "term": "Probability of an Event A denoted by P(A)",
+        "example": "Probability of getting a Head when a coin is tossed is P(A) = 1/2.",
+        "definition": "The probability of an event A, denoted by P(A), is calculated as the number of favorable outcomes divided by the total number of outcomes in the sample space."
+      },
+      {
+        "term": "Impossible Event",
+        "example": "Probability of getting two Heads when a coin is tossed twice is 0.",
+        "definition": "An event that cannot occur. The probability of an impossible event is 0."
+      },
+      {
+        "term": "Sure Event",
+        "example": "Probability of getting at least one Head when a coin is tossed twice is 1.",
+        "definition": "An event that is certain to occur. The probability of a sure event is 1."
+      },
+      {
+        "term": "Mutually Exclusive Events",
+        "example": "When a coin is tossed, the events of getting a Head and getting a Tail are mutually exclusive.",
+        "definition": "Events that cannot occur simultaneously. The probability of the union of mutually exclusive events is the sum of their individual probabilities."
+      },
+      {
+        "term": "Complementary Events",
+        "example": "When a coin is tossed, the events of getting a Head and getting a Tail are complementary events.",
+        "definition": "Events that are sure to occur when one of the events does not occur. The sum of the probability of an event and the probability of its complement is 1."
+      },
+      {
+        "term": "Independent Events",
+        "example": "When a coin is tossed twice, the events of getting a Head on the first toss and getting a Head on the second toss are independent events.",
+        "definition": "Events that do not affect each other. The probability of the union of independent events is the product of their individual probabilities."
+      },
+      {
+        "term": "Random Experiment",
+        "example": "Tossing a coin, rolling a die, etc.",
+        "definition": "An experiment that involves chance or randomness. The outcome of a random experiment is uncertain and cannot be predicted."
+      },
+      {
+        "term": "Bernoulli Trials",
+        "example": "Tossing a coin multiple times, rolling a die multiple times, etc.",
+        "definition": "A sequence of independent trials where each trial has only two possible outcomes: success or failure."
+      },
+      {
+        "term": "Binomial Distribution",
+        "example": "The probability distribution of the number of Heads obtained when a coin is tossed 10 times.",
+        "definition": "A discrete probability distribution that models the number of successes in a fixed number of Bernoulli trials."
+      },
+      {
+        "term": "Mean of a Discrete Random Variable",
+        "example": "The mean of a binomial distribution with parameters n and p is np.",
+        "definition": "The expected value of a discrete random variable. It is calculated as the sum of the product of each outcome and its probability."
+      },
+      {
+        "term": "Variance of a Discrete Random Variable",
+        "example": "The variance of a binomial distribution with parameters n and p is np(1-p).",
+        "definition": "A measure of the spread of a discrete random variable. It is calculated as the sum of the product of each difference from the mean and its probability."
+      }
+    ]
+  }
+}
