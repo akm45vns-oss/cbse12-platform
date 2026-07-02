@@ -36,19 +36,19 @@ function HubCard({ icon, title, subtitle, badge, badgeColor, accent, gradientFro
       style={{
         border: "none",
         background: locked ? "#f8fafc" : "white",
-        borderRadius: 20,
-        padding: 20,
+        borderRadius: 16,
+        padding: 14,
         textAlign: "left",
         display: "flex",
         flexDirection: "column",
         gap: 0,
-        boxShadow: locked ? "none" : "0 4px 20px rgba(0,0,0,0.06)",
+        boxShadow: locked ? "none" : "0 2px 12px rgba(0,0,0,0.06)",
         cursor: locked ? "default" : "pointer",
         transition: "all 0.2s",
         position: "relative",
         overflow: "hidden",
         border: locked ? "1.5px dashed #e2e8f0" : `1px solid rgba(0,0,0,0.04)`,
-        minHeight: 130,
+        minHeight: 110,
         opacity: locked ? 0.75 : 1,
       }}
     >
@@ -63,32 +63,32 @@ function HubCard({ icon, title, subtitle, badge, badgeColor, accent, gradientFro
 
       {/* Icon */}
       <div style={{
-        width: 46, height: 46, borderRadius: 14,
+        width: 36, height: 36, borderRadius: 10,
         background: locked ? "#e2e8f0" : `${accent}18`,
         display: "flex", alignItems: "center", justifyContent: "center",
-        fontSize: 22, marginBottom: 10, marginTop: 4,
+        fontSize: 18, marginBottom: 8, marginTop: 2,
       }}>
         {icon}
       </div>
 
       {/* Title */}
-      <div style={{ fontSize: 15, fontWeight: 900, color: locked ? "#94a3b8" : "#0f172a", marginBottom: 4, lineHeight: 1.2 }}>
+      <div style={{ fontSize: 13.5, fontWeight: 900, color: locked ? "#94a3b8" : "#0f172a", marginBottom: 3, lineHeight: 1.2 }}>
         {title}
       </div>
 
       {/* Subtitle */}
-      <div style={{ fontSize: 11.5, color: locked ? "#cbd5e1" : "#64748b", lineHeight: 1.5, flex: 1 }}>
+      <div style={{ fontSize: 10.5, color: locked ? "#cbd5e1" : "#64748b", lineHeight: 1.4, flex: 1 }}>
         {locked ? "Coming Soon" : subtitle}
       </div>
 
       {/* Badge */}
       {badge && !locked && (
         <div style={{
-          marginTop: 8,
-          fontSize: 11, fontWeight: 800,
+          marginTop: 6,
+          fontSize: 10, fontWeight: 800,
           color: badgeColor || "#16a34a",
           background: `${badgeColor || "#16a34a"}18`,
-          padding: "3px 10px", borderRadius: 99,
+          padding: "2px 8px", borderRadius: 99,
           alignSelf: "flex-start",
         }}>
           {badge}
@@ -96,7 +96,7 @@ function HubCard({ icon, title, subtitle, badge, badgeColor, accent, gradientFro
       )}
 
       {locked && (
-        <div style={{ marginTop: 8, fontSize: 11, fontWeight: 800, color: "#94a3b8", background: "#f1f5f9", padding: "3px 10px", borderRadius: 99, alignSelf: "flex-start" }}>
+        <div style={{ marginTop: 6, fontSize: 10, fontWeight: 800, color: "#94a3b8", background: "#f1f5f9", padding: "2px 8px", borderRadius: 99, alignSelf: "flex-start" }}>
           🔒 Coming Soon
         </div>
       )}
@@ -169,11 +169,11 @@ export const ChapterView = memo(function ChapterView({
       {/* ── Hero Card ── */}
       <div style={{
         background: "white",
-        borderRadius: 24,
+        borderRadius: 20,
         border: "1px solid rgba(79,70,229,0.07)",
-        padding: "22px 20px",
-        boxShadow: "0 6px 30px rgba(79,70,229,0.08)",
-        marginBottom: 20,
+        padding: "16px",
+        boxShadow: "0 4px 20px rgba(79,70,229,0.06)",
+        marginBottom: 16,
         position: "relative",
         overflow: "hidden",
         animation: "fadeIn 0.3s",
@@ -187,12 +187,12 @@ export const ChapterView = memo(function ChapterView({
               <span style={{ fontSize: 11, background: "#ede9fe", color: "#4f46e5", fontWeight: 800, padding: "3px 10px", borderRadius: 99, textTransform: "uppercase", letterSpacing: "0.04em" }}>
                 {subject}
               </span>
-              <span style={{ fontSize: 11, background: `${difficultyColor}18`, color: difficultyColor, fontWeight: 800, padding: "3px 10px", borderRadius: 99 }}>
+              <span style={{ fontSize: 10, background: `${difficultyColor}18`, color: difficultyColor, fontWeight: 800, padding: "2px 8px", borderRadius: 99 }}>
                 {diffTags.overall_difficulty || "Medium"}
               </span>
             </div>
-            <h1 style={{ fontSize: 22, fontWeight: 900, color: "#0f172a", margin: 0, lineHeight: 1.2 }}>{chapter}</h1>
-            <div style={{ fontSize: 12, color: "#94a3b8", fontWeight: 600, marginTop: 4 }}>Class {selectedClass} · CBSE</div>
+            <h1 style={{ fontSize: 18, fontWeight: 900, color: "#0f172a", margin: 0, lineHeight: 1.25 }}>{chapter}</h1>
+            <div style={{ fontSize: 11, color: "#94a3b8", fontWeight: 600, marginTop: 4 }}>Class {selectedClass} · CBSE</div>
           </div>
           {streakCount > 0 && (
             <div style={{ background: "#fff7ed", padding: "6px 12px", borderRadius: 12, border: "1px solid #ffedd5", display: "flex", alignItems: "center", gap: 4, flexShrink: 0 }}>
@@ -210,9 +210,9 @@ export const ChapterView = memo(function ChapterView({
             { icon: "🏆", value: getBoardWeightage(subject), label: "Weightage" },
           ].map((stat, i) => (
             <div key={i} style={{ textAlign: "center", borderRight: i < 2 ? "1px solid #f1f5f9" : "none" }}>
-              <span style={{ display: "block", fontSize: 18, marginBottom: 2 }}>{stat.icon}</span>
-              <span style={{ display: "block", fontSize: 12, fontWeight: 900, color: "#0f172a" }}>{stat.value}</span>
-              <span style={{ fontSize: 10, color: "#94a3b8", fontWeight: 600 }}>{stat.label}</span>
+              <span style={{ display: "block", fontSize: 16, marginBottom: 2 }}>{stat.icon}</span>
+              <span style={{ display: "block", fontSize: 11, fontWeight: 900, color: "#0f172a" }}>{stat.value}</span>
+              <span style={{ fontSize: 9, color: "#94a3b8", fontWeight: 600 }}>{stat.label}</span>
             </div>
           ))}
         </div>
@@ -236,11 +236,11 @@ export const ChapterView = memo(function ChapterView({
       </div>
 
       {/* ── Hub Grid ── */}
-      <div style={{ fontSize: 11, fontWeight: 800, color: "#64748b", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 12 }}>
+      <div style={{ fontSize: 11, fontWeight: 800, color: "#64748b", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 10 }}>
         What would you like to do?
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 8, animation: "fadeIn 0.35s" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 8, animation: "fadeIn 0.35s" }}>
         <HubCard
           icon="📖"
           title="Learn"

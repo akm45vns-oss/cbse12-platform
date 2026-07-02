@@ -71,15 +71,15 @@ export const RevisionView = memo(function RevisionView({
       {/* Banner */}
       <div style={{
         background: "linear-gradient(135deg, #d97706 0%, #f59e0b 100%)",
-        borderRadius: 20, padding: "20px 20px 16px", marginBottom: 24,
-        color: "white", boxShadow: "0 8px 32px rgba(217,119,6,0.25)", position: "relative", overflow: "hidden",
+        borderRadius: 20, padding: "16px", marginBottom: 20,
+        color: "white", boxShadow: "0 4px 20px rgba(217,119,6,0.25)", position: "relative", overflow: "hidden",
       }}>
         <div style={{ position: "absolute", right: -20, top: -20, width: 120, height: 120, borderRadius: "50%", background: "rgba(255,255,255,0.07)" }} />
-        <div style={{ fontSize: 11, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.1em", opacity: 0.8, marginBottom: 6 }}>
+        <div style={{ fontSize: 10, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.1em", opacity: 0.8, marginBottom: 4 }}>
           ⚡ Quick Revision · {subject}
         </div>
-        <h1 style={{ fontSize: 22, fontWeight: 900, margin: "0 0 12px", lineHeight: 1.2 }}>{chapter}</h1>
-        <div style={{ background: "rgba(255,255,255,0.2)", borderRadius: 99, padding: "4px 12px", fontSize: 12, fontWeight: 700, display: "inline-block" }}>
+        <h1 style={{ fontSize: 18, fontWeight: 900, margin: "0 0 10px", lineHeight: 1.25 }}>{chapter}</h1>
+        <div style={{ background: "rgba(255,255,255,0.2)", borderRadius: 99, padding: "2px 8px", fontSize: 10, fontWeight: 700, display: "inline-block" }}>
           Last-minute revision mode
         </div>
       </div>

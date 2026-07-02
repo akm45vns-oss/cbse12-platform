@@ -35,7 +35,7 @@ function renderMarkdown(raw, subject, selectedClass) {
     const line = lines[i];
     const trimmed = line.trim();
     if (line.startsWith("# ")) {
-      elements.push(<div key={i} style={{ marginBottom: 20 }}><h1 style={{ margin: "0 0 10px", fontSize: "1.45rem", fontWeight: 800, color: "#0f172a", lineHeight: 1.3 }}>{line.slice(2)}</h1><div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}><span style={{ background: "#ede9fe", color: "#4f46e5", fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999 }}>Class {selectedClass || "12"}</span><span style={{ background: "#dbeafe", color: "#2563eb", fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999 }}>{subject}</span></div></div>);
+      elements.push(<div key={i} style={{ marginBottom: 16 }}><h1 style={{ margin: "0 0 10px", fontSize: "1.2rem", fontWeight: 800, color: "#0f172a", lineHeight: 1.3 }}>{line.slice(2)}</h1><div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}><span style={{ background: "#ede9fe", color: "#4f46e5", fontSize: 10, fontWeight: 700, padding: "2px 8px", borderRadius: 999 }}>Class {selectedClass || "12"}</span><span style={{ background: "#dbeafe", color: "#2563eb", fontSize: 10, fontWeight: 700, padding: "2px 8px", borderRadius: 999 }}>{subject}</span></div></div>);
       i++; continue;
     }
     if (line.startsWith("## ")) { elements.push(<h2 key={i} style={{ fontSize: "1.1rem", fontWeight: 800, color: "#1e1b4b", margin: "26px 0 10px", paddingBottom: 6, borderBottom: "2px solid #ede9fe" }}>{line.slice(3)}</h2>); i++; continue; }
@@ -184,42 +184,39 @@ export const LearnView = memo(function LearnView({
     <div style={{ maxWidth: 800, margin: "0 auto", fontFamily: "'Outfit','Inter',sans-serif" }}>
       <style>{`
         @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
-        .learn-tab-scroll::-webkit-scrollbar { display: none; }
-        .learn-tab-scroll { -ms-overflow-style: none; scrollbar-width: none; }
       `}</style>
 
       {/* ── Chapter Info Banner ── */}
       <div style={{
         background: "linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)",
-        borderRadius: 20, padding: "20px 20px 16px", marginBottom: 20,
+        borderRadius: 20, padding: "16px", marginBottom: 16,
         color: "white", position: "relative", overflow: "hidden",
-        boxShadow: "0 8px 32px rgba(79,70,229,0.25)",
+        boxShadow: "0 4px 20px rgba(79,70,229,0.25)",
       }}>
         <div style={{ position: "absolute", right: -20, top: -20, width: 120, height: 120, borderRadius: "50%", background: "rgba(255,255,255,0.07)" }} />
         <div style={{ position: "absolute", right: 40, bottom: -30, width: 80, height: 80, borderRadius: "50%", background: "rgba(255,255,255,0.05)" }} />
-        <div style={{ fontSize: 11, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.1em", opacity: 0.8, marginBottom: 6 }}>
+        <div style={{ fontSize: 10, fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.1em", opacity: 0.8, marginBottom: 4 }}>
           📖 Learn · Class {selectedClass} · {subject}
         </div>
-        <h1 style={{ fontSize: 22, fontWeight: 900, margin: "0 0 12px", lineHeight: 1.2 }}>{chapter}</h1>
+        <h1 style={{ fontSize: 18, fontWeight: 900, margin: "0 0 10px", lineHeight: 1.25 }}>{chapter}</h1>
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
           {notesRead && (
-            <span style={{ background: "rgba(255,255,255,0.2)", borderRadius: 99, padding: "4px 12px", fontSize: 12, fontWeight: 700 }}>
+            <span style={{ background: "rgba(255,255,255,0.2)", borderRadius: 99, padding: "2px 8px", fontSize: 10, fontWeight: 700 }}>
               ✓ Notes Read
             </span>
           )}
-          <span style={{ background: "rgba(255,255,255,0.15)", borderRadius: 99, padding: "4px 12px", fontSize: 12, fontWeight: 700 }}>
+          <span style={{ background: "rgba(255,255,255,0.15)", borderRadius: 99, padding: "2px 8px", fontSize: 10, fontWeight: 700 }}>
             {LEARN_TABS.length} Sections
           </span>
         </div>
       </div>
 
-      {/* ── Horizontal Scroll Tab Bar ── */}
+      {/* ── Grid Tab Bar ── */}
       <div
         ref={tabBarRef}
-        className="learn-tab-scroll"
         style={{
-          display: "flex", gap: 8, overflowX: "auto", paddingBottom: 4,
-          marginBottom: 20, scrollSnapType: "x mandatory",
+          display: "flex", flexWrap: "wrap", gap: 8, paddingBottom: 4,
+          marginBottom: 20,
         }}
       >
         {LEARN_TABS.map(tab => {
@@ -230,17 +227,17 @@ export const LearnView = memo(function LearnView({
               onClick={() => setActiveTab(tab.id)}
               className={isActive ? "learn-tab-active" : ""}
               style={{
-                flexShrink: 0, scrollSnapAlign: "start",
-                padding: "10px 18px", borderRadius: 99,
+                flex: "1 1 auto",
+                padding: "8px 12px", borderRadius: 12,
                 border: isActive ? "2px solid #4f46e5" : "1.5px solid rgba(0,0,0,0.08)",
                 background: isActive ? "linear-gradient(135deg,#4f46e5,#818cf8)" : "white",
                 color: isActive ? "white" : "#64748b",
-                fontSize: 13, fontWeight: 800,
+                fontSize: 12, fontWeight: 800,
                 boxShadow: isActive ? "0 4px 14px rgba(79,70,229,0.25)" : "0 1px 4px rgba(0,0,0,0.04)",
-                transition: "all 0.2s", display: "flex", alignItems: "center", gap: 6,
+                transition: "all 0.2s", display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
               }}
             >
-              <span style={{ fontSize: 15 }}>{tab.icon}</span>
+              <span style={{ fontSize: 14 }}>{tab.icon}</span>
               {tab.label}
             </button>
           );
@@ -251,11 +248,11 @@ export const LearnView = memo(function LearnView({
       {(() => {
         const tab = LEARN_TABS.find(t => t.id === activeTab);
         return tab ? (
-          <div style={{ marginBottom: 16 }}>
-            <div style={{ fontSize: 11, fontWeight: 800, color: "#4f46e5", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+          <div style={{ marginBottom: 12 }}>
+            <div style={{ fontSize: 10, fontWeight: 800, color: "#4f46e5", textTransform: "uppercase", letterSpacing: "0.08em" }}>
               {tab.icon} {tab.label}
             </div>
-            <div style={{ fontSize: 12, color: "#94a3b8", marginTop: 2 }}>{tab.description}</div>
+            <div style={{ fontSize: 11, color: "#94a3b8", marginTop: 2 }}>{tab.description}</div>
           </div>
         ) : null;
       })()}
