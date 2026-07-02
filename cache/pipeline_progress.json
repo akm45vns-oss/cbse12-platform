@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-01T19:57:20.508Z",
-  "elapsed_seconds": 70,
-  "rate_per_second": 38.83,
+  "updated_at": "2026-07-02T03:45:42.426Z",
+  "elapsed_seconds": 10,
+  "rate_per_second": 272.7,
   "queue": {
-    "completed": 2718,
-    "pending": 7,
-    "inFlight": 5,
-    "failed": 0,
-    "retrying": 7,
+    "completed": 2727,
+    "pending": 0,
+    "inFlight": 0,
+    "failed": 3,
+    "retrying": 0,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
@@ -21,157 +21,157 @@
       "processed": 0,
       "skipped": 0,
       "failed": 3,
-      "running": true
+      "running": false
     },
     {
       "workerId": "Worker-Chemistry",
       "processed": 0,
       "skipped": 0,
-      "failed": 5,
-      "running": true
+      "failed": 3,
+      "running": false
     },
     {
       "workerId": "Worker-Maths",
-      "processed": 0,
+      "processed": 1,
       "skipped": 0,
-      "failed": 4,
-      "running": true
+      "failed": 1,
+      "running": false
     },
     {
       "workerId": "Worker-Biology",
-      "processed": 1,
+      "processed": 0,
       "skipped": 0,
       "failed": 3,
-      "running": true
+      "running": false
     },
     {
       "workerId": "Worker-Other",
       "processed": 0,
       "skipped": 0,
-      "failed": 3,
-      "running": true
+      "failed": 0,
+      "running": false
     }
   ],
   "recent_events": [
     {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating detailed_notes for Ecosystem (Biology)",
-      "timestamp": "2026-07-01T19:57:20.353Z"
+      "workerId": "Worker-Other",
+      "status": "finished",
+      "message": "Worker finished — 0 done, 0 skipped, 0 failed",
+      "timestamp": "2026-07-02T03:45:42.426Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "info",
+      "message": "Queue empty — worker done",
+      "timestamp": "2026-07-02T03:45:42.426Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "finished",
+      "message": "Worker finished — 0 done, 0 skipped, 3 failed",
+      "timestamp": "2026-07-02T03:45:42.160Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "info",
+      "message": "Queue empty — worker done",
+      "timestamp": "2026-07-02T03:45:42.160Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "finished",
+      "message": "Worker finished — 1 done, 0 skipped, 1 failed",
+      "timestamp": "2026-07-02T03:45:41.815Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "info",
+      "message": "Queue empty — worker done",
+      "timestamp": "2026-07-02T03:45:41.815Z"
     },
     {
       "workerId": "Worker-Chemistry",
-      "status": "generating",
-      "message": "Generating detailed_notes for Memories of Childhood (English)",
-      "timestamp": "2026-07-01T19:57:20.344Z"
+      "status": "finished",
+      "message": "Worker finished — 0 done, 0 skipped, 3 failed",
+      "timestamp": "2026-07-02T03:45:41.345Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "info",
+      "message": "Queue empty — worker done",
+      "timestamp": "2026-07-02T03:45:41.345Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "finished",
+      "message": "Worker finished — 0 done, 0 skipped, 3 failed",
+      "timestamp": "2026-07-02T03:45:40.718Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "info",
+      "message": "Queue empty — worker done",
+      "timestamp": "2026-07-02T03:45:40.718Z"
     },
     {
       "workerId": "Worker-Physics",
       "status": "error",
-      "message": "Validation failed for 12::Physical Education::Physical Education and Sports for CWSN::detailed_notes: Content too short: 784 words (minimum 800)",
-      "timestamp": "2026-07-01T19:57:20.150Z"
+      "message": "Validation failed for 12::Physics::Current Electricity::detailed_notes: Content too short: 758 words (minimum 800)",
+      "timestamp": "2026-07-02T03:45:40.718Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "error",
-      "message": "Validation failed for 12::English::Should Wizard Hit Mommy::detailed_notes: Content too short: 591 words (minimum 800)",
-      "timestamp": "2026-07-01T19:57:20.148Z"
+      "message": "Validation failed for 12::Mathematics::Linear Programming::detailed_notes: Content too short: 751 words (minimum 800)",
+      "timestamp": "2026-07-02T03:45:39.341Z"
     },
     {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating detailed_notes for Linear Programming (Mathematics)",
-      "timestamp": "2026-07-01T19:57:19.987Z"
-    },
-    {
-      "workerId": "Worker-Maths",
+      "workerId": "Worker-Biology",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-01T19:57:19.789Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating detailed_notes for Entrepreneurship Development (Business Studies)",
-      "timestamp": "2026-07-01T19:57:19.728Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "error",
-      "message": "Validation failed for 12::English::Deep Water::detailed_notes: Content too short: 742 words (minimum 800)",
-      "timestamp": "2026-07-01T19:57:19.508Z"
+      "timestamp": "2026-07-02T03:45:38.142Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "generating",
-      "message": "Generating detailed_notes for Directing (Business Studies)",
-      "timestamp": "2026-07-01T19:57:18.610Z"
+      "message": "Generating detailed_notes for Physical Education and Sports for CWSN (Physical Education)",
+      "timestamp": "2026-07-02T03:45:38.087Z"
     },
     {
-      "workerId": "Worker-Other",
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Validation failed for 12::Physical Education::Physical Education and Sports for CWSN::detailed_notes: Content too short: 755 words (minimum 800)",
+      "timestamp": "2026-07-02T03:45:37.875Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "done",
+      "message": "✅ Physical Education/Yoga as Preventive Measure for Lifestyle Diseases/detailed_notes",
+      "timestamp": "2026-07-02T03:45:37.801Z"
+    },
+    {
+      "workerId": "Worker-Physics",
       "status": "generating",
       "message": "Generating detailed_notes for Current Electricity (Physics)",
-      "timestamp": "2026-07-01T19:57:18.438Z"
+      "timestamp": "2026-07-02T03:45:37.102Z"
     },
     {
-      "workerId": "Worker-Biology",
+      "workerId": "Worker-Physics",
       "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-01T19:57:18.367Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "error",
-      "message": "Validation failed for 12::Physical Education::Yoga as Preventive Measure for Lifestyle Diseases::detailed_notes: Content too short: 651 words (minimum 800)",
-      "timestamp": "2026-07-01T19:57:18.217Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating detailed_notes for The Enemy (English)",
-      "timestamp": "2026-07-01T19:57:17.068Z"
+      "message": "Validation failed for 12::Physics::Current Electricity::detailed_notes: Content too short: 652 words (minimum 800)",
+      "timestamp": "2026-07-02T03:45:36.903Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating detailed_notes for Should Wizard Hit Mommy (English)",
-      "timestamp": "2026-07-01T19:57:16.655Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-01T19:57:16.452Z"
+      "message": "Generating detailed_notes for Linear Programming (Mathematics)",
+      "timestamp": "2026-07-02T03:45:36.048Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-01T19:57:16.096Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating detailed_notes for Keeping Quiet (English)",
-      "timestamp": "2026-07-01T19:56:15.490Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating detailed_notes for Deep Water (English)",
-      "timestamp": "2026-07-01T19:56:15.377Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "done",
-      "message": "✅ Mathematics/Determinants/detailed_notes",
-      "timestamp": "2026-07-01T19:56:15.221Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "error",
-      "message": "Validation failed for 12::English::Memories of Childhood::detailed_notes: Content too short: 690 words (minimum 800)",
-      "timestamp": "2026-07-01T19:56:15.179Z"
+      "timestamp": "2026-07-02T03:45:35.854Z"
     }
   ]
 }
