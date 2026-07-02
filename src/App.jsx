@@ -21,7 +21,10 @@ const ProgressView = lazy(() => import("./components/views/ProgressView").then(m
 const StatsView = lazy(() => import("./components/views/StatsView").then(m => ({ default: m.StatsView })));
 const ProfileView = lazy(() => import("./components/views/ProfileView").then(m => ({ default: m.ProfileView })));
 const PipelineDashboardView = lazy(() => import("./components/views/PipelineDashboardView").then(m => ({ default: m.PipelineDashboardView })));
-import { FloatingForumButton } from "./components/common";
+const LearnView = lazy(() => import("./components/views/LearnView").then(m => ({ default: m.LearnView })));
+const PracticeView = lazy(() => import("./components/views/PracticeView").then(m => ({ default: m.PracticeView })));
+const RevisionView = lazy(() => import("./components/views/RevisionView").then(m => ({ default: m.RevisionView })));
+import { FloatingForumButton, Breadcrumb } from "./components/common";
 import { globalStyles } from "./styles/shared";
 
 // ── Class Switcher Pill ──────────────────────────────────────────
@@ -532,7 +535,25 @@ Format Guidelines:
     if (nav.view === "leaderboard") return "Rank";
     if (nav.view === "profile") return "Profile";
     if (nav.view === "pipeline") return "Pipeline";
+    if (nav.view === "learn") return "Learn";
+    if (nav.view === "practice") return "Practice";
+    if (nav.view === "revision") return "Quick Revision";
     return "AkmEdu45";
+  };
+
+  const getBreadcrumbItems = () => {
+    const items = [{ label: "Home", onClick: () => nav.goToDashboard() }];
+    if (nav.subject) items.push({ label: nav.subject, onClick: () => nav.navigateToSubject(nav.subject) });
+    if (nav.chapter) items.push({ label: nav.chapter, onClick: () => nav.navigateToChapter(nav.chapter) });
+    
+    // For deep views, we show the current view at the end, but don't need an onClick for it
+    if (nav.view === "learn") items.push({ label: "Learn" });
+    if (nav.view === "practice" || nav.view === "quiz") items.push({ label: "Practice" });
+    if (nav.view === "revision") items.push({ label: "Revision" });
+    if (nav.view === "notes") items.push({ label: "Notes" });
+    if (nav.view === "paper" || nav.view === "papers-list") items.push({ label: "Sample Papers" });
+    
+    return items;
   };
 
   const streak = (() => {
@@ -623,9 +644,16 @@ Format Guidelines:
                 ←
               </button>
             ) : null}
-            <span className="top-header-title">
-              {getPageTitle()}
-            </span>
+            <div style={{ display: "flex", flexDirection: "column", minWidth: 0 }}>
+              <span className="top-header-title" style={{ fontSize: nav.subject ? 14 : "var(--fs-lg)" }}>
+                {getPageTitle()}
+              </span>
+              {nav.subject && (
+                <div style={{ marginTop: 2 }}>
+                  <Breadcrumb items={getBreadcrumbItems()} />
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Centre: Class Switcher — only show on dashboard and root-level views */}
@@ -761,11 +789,39 @@ Format Guidelines:
               quizBest={progress.data[`${nav.subject}||${nav.chapter}||quiz`]?.best}
               availableSets={availableSets}
               theme={theme}
-              onStartNotes={() => {
-                nav.navigate("notes");
-                genNotes(nav.subject, nav.chapter);
+              onStartLearn={() => nav.navigate("learn")}
+              onStartPractice={() => nav.navigate("practice")}
+              onStartRevision={() => nav.navigate("revision")}
+            />
+          </Suspense>
+        )}
+
+        {nav.view === "learn" && nav.chapter && (
+          <Suspense fallback={<LoadingFallback />}>
+            <LearnView
+              chapter={nav.chapter}
+              subject={nav.subject}
+              selectedClass={selectedClass}
+              notesRead={progress.data[`${nav.subject}||${nav.chapter}||notes`]?.read}
+              theme={theme}
+              onMarkRead={() => {
+                progress.save(`${nav.subject}||${nav.chapter}||notes`, { read: true, date: Date.now() });
               }}
-              onStartQuiz={() => {
+              onGoToPractice={() => nav.navigate("practice")}
+            />
+          </Suspense>
+        )}
+
+        {nav.view === "practice" && nav.chapter && (
+          <Suspense fallback={<LoadingFallback />}>
+            <PracticeView
+              chapter={nav.chapter}
+              subject={nav.subject}
+              selectedClass={selectedClass}
+              quizBest={progress.data[`${nav.subject}||${nav.chapter}||quiz`]?.best}
+              availableSets={availableSets}
+              theme={theme}
+              onStartMCQ={() => {
                 setSelectedQuizSet(null);
                 setQuiz([]);
                 setAnswers({});
@@ -774,6 +830,19 @@ Format Guidelines:
                 nav.navigate("quiz");
                 startQuiz(nav.subject, nav.chapter);
               }}
+              onGoToRevision={() => nav.navigate("revision")}
+            />
+          </Suspense>
+        )}
+
+        {nav.view === "revision" && nav.chapter && (
+          <Suspense fallback={<LoadingFallback />}>
+            <RevisionView
+              chapter={nav.chapter}
+              subject={nav.subject}
+              selectedClass={selectedClass}
+              theme={theme}
+              onGoToPractice={() => nav.navigate("practice")}
             />
           </Suspense>
         )}
@@ -938,7 +1007,7 @@ Format Guidelines:
           { id: "leaderboard", Icon: RankIcon, label: "Rank" },
           { id: "profile", Icon: ProfileIcon, label: "Profile" },
         ].map(({ id, Icon, label }) => {
-          const isActive = nav.view === id || (id === "dashboard" && ["subject", "chapter", "notes", "quiz", "paper", "papers-list"].includes(nav.view));
+          const isActive = nav.view === id || (id === "dashboard" && ["subject", "chapter", "notes", "quiz", "paper", "papers-list", "learn", "practice", "revision"].includes(nav.view));
           return (
             <button
               key={id}

@@ -16,6 +16,9 @@ const ALLOWED_VIEWS = new Set([
   "stats",
   "leaderboard",
   "pipeline",
+  "learn",
+  "practice",
+  "revision",
 ]);
 
 // Views that are considered "root-level" — back from these triggers exit confirm
@@ -48,7 +51,7 @@ function buildPath(view, subject, chapter) {
     return `/subject/${encodeURIComponent(subject)}`;
   if ((view === "chapter") && subject && chapter)
     return `/subject/${encodeURIComponent(subject)}/chapter/${encodeURIComponent(chapter)}`;
-  if (["notes", "quiz"].includes(view) && subject && chapter)
+  if (["notes", "quiz", "learn", "practice", "revision"].includes(view) && subject && chapter)
     return `/subject/${encodeURIComponent(subject)}/chapter/${encodeURIComponent(chapter)}/${view}`;
   // Flat views: progress, stats, profile, leaderboard, pipeline, paper
   return `/${view}`;
