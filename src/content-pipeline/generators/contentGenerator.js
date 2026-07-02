@@ -119,6 +119,8 @@ export async function generateDetailedNotes(classLevel, subject, chapter) {
 Subject: ${subject} | Chapter: ${chapter} | Class: ${classLevel} CBSE
 
 Write detailed, original study notes in markdown format mimicking standard high-quality revision materials.
+To ensure full coverage of the CBSE syllabus, write in great detail, expanding on each section comprehensively. The notes must be very thorough, detailed, and contain at least 900 to 1000 words.
+
 Use the following structure strictly:
 
 # ${chapter} - DETAILED NOTES
