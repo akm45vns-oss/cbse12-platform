@@ -1,0 +1,86 @@
+{
+  "class": "11",
+  "subject": "Geography",
+  "chapter": "Drainage System",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T11:42:41.659Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Explain the formation of a drainage basin. Discuss the factors that affect the formation of a drainage basin.",
+        "marks": 5,
+        "answer": "A drainage basin is an area of land that drains all the streams and water bodies into a single outlet. It is formed when a surface of land is sloping and water flows downhill in a particular direction. The formation of a drainage basin depends on the slope of the land, the type of rocks and soil, and the climate. The slope of the land determines the direction of the water flow, while the type of rocks and soil affects the rate of water flow and the formation of streams.",
+        "marking_scheme": [
+          "Explain the formation of a drainage basin (2 marks)",
+          "Discuss the factors that affect the formation of a drainage basin (3 marks)"
+        ],
+        "topic": "Formation of Drainage Basin",
+        "is_numerical": false
+      },
+      {
+        "q": "Describe the types of drainage patterns and explain their formation.",
+        "marks": 5,
+        "answer": "There are three main types of drainage patterns: dendritic, trellis, and rectangular. Dendritic drainage patterns are formed when streams flow in all directions from a central point. Trellis drainage patterns are formed when streams flow in a rectangular pattern, often due to the presence of a fault line. Rectangular drainage patterns are formed when streams flow in a straight line, often due to the presence of a hard rock surface.",
+        "marking_scheme": [
+          "Describe the types of drainage patterns (2 marks)",
+          "Explain the formation of drainage patterns (3 marks)"
+        ],
+        "topic": "Types of Drainage Patterns",
+        "is_numerical": false
+      },
+      {
+        "q": "What is a delta? Explain the formation of a delta and its characteristics.",
+        "marks": 5,
+        "answer": "A delta is a landform that forms when a river deposits sediment at its mouth, creating a network of distributaries and land. The formation of a delta depends on the speed of the river, the amount of sediment carried, and the sea level. A delta is characterized by a network of distributaries, mudflats, and sandbars. It provides a habitat for a variety of plants and animals and is an important source of fertile soil.",
+        "marking_scheme": [
+          "Explain the formation of a delta (2 marks)",
+          "Describe the characteristics of a delta (3 marks)"
+        ],
+        "topic": "Delta Formation and Characteristics",
+        "is_numerical": false
+      },
+      {
+        "q": "A river flowing through a plain has a mean velocity of 1 m/s and a mean depth of 5 m. Calculate the discharge of the river.",
+        "marks": 5,
+        "answer": "Calculation:\nArea of the river = mean depth × mean width\nAssuming the river is a rectangular prism, the mean width is not given. However, for the purpose of this calculation, let's assume the mean width is 10 m.\nArea of the river = 5 m × 10 m = 50 m²\nDischarge of the river = mean velocity × area of the river\nDischarge of the river = 1 m/s × 50 m² = 50 m³/s",
+        "marking_scheme": [
+          "Calculate the area of the river (1 mark)",
+          "Calculate the discharge of the river (2 marks)",
+          "Assume a value for the mean width (1 mark)",
+          "Justify the assumption (1 mark)"
+        ],
+        "topic": "Discharge of River",
+        "is_numerical": true
+      },
+      {
+        "q": "A stream has a catchment area of 10 km² and an average annual rainfall of 400 mm. Calculate the total volume of water that flows through the stream.",
+        "marks": 5,
+        "answer": "Calculation:\nArea of the catchment = 10 km² = 10,000,000 m²\nAverage annual rainfall = 400 mm = 0.4 m\nTotal volume of water = area of the catchment × average annual rainfall\nTotal volume of water = 10,000,000 m² × 0.4 m = 4,000,000 m³",
+        "marking_scheme": [
+          "Calculate the area of the catchment (1 mark)",
+          "Calculate the total volume of water (2 marks)",
+          "Assume a value for the average annual rainfall (1 mark)",
+          "Justify the assumption (1 mark)"
+        ],
+        "topic": "Catchment and Volume of Water",
+        "is_numerical": true
+      },
+      {
+        "q": "A river has a mean velocity of 2 m/s and a mean depth of 10 m. If the river is 100 m wide, calculate the discharge of the river.",
+        "marks": 5,
+        "answer": "Calculation:\nArea of the river = mean depth × mean width\nArea of the river = 10 m × 100 m = 1000 m²\nDischarge of the river = mean velocity × area of the river\nDischarge of the river = 2 m/s × 1000 m² = 2000 m³/s",
+        "marking_scheme": [
+          "Calculate the area of the river (1 mark)",
+          "Calculate the discharge of the river (2 marks)",
+          "Assume a value for the mean width (1 mark)",
+          "Justify the assumption (1 mark)"
+        ],
+        "topic": "Discharge of River",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

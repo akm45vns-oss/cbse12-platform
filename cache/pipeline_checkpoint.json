@@ -1,116 +1,13 @@
 {
-  "savedAt": "2026-07-02T11:40:29.772Z",
-  "completedCount": 6073,
+  "savedAt": "2026-07-02T11:42:44.436Z",
+  "completedCount": 6075,
   "queues": {
     "1": [],
     "2": [],
     "3": [],
-    "4": [
-      {
-        "id": "11::Geography::Biodiversity and Conservation::pyq_style",
-        "classLevel": "11",
-        "subject": "Geography",
-        "chapter": "Biodiversity and Conservation",
-        "contentType": "pyq_style",
-        "attempt": 1
-      },
-      {
-        "id": "11::Geography::Structure and Physiography::long_answer",
-        "classLevel": "11",
-        "subject": "Geography",
-        "chapter": "Structure and Physiography",
-        "contentType": "long_answer",
-        "attempt": 1
-      },
-      {
-        "id": "11::Geography::Structure and Physiography::pyq_style",
-        "classLevel": "11",
-        "subject": "Geography",
-        "chapter": "Structure and Physiography",
-        "contentType": "pyq_style",
-        "attempt": 1
-      },
-      {
-        "id": "11::Geography::Drainage System::long_answer",
-        "classLevel": "11",
-        "subject": "Geography",
-        "chapter": "Drainage System",
-        "contentType": "long_answer",
-        "attempt": 1
-      },
-      {
-        "id": "11::Geography::Drainage System::pyq_style",
-        "classLevel": "11",
-        "subject": "Geography",
-        "chapter": "Drainage System",
-        "contentType": "pyq_style",
-        "attempt": 1
-      },
-      {
-        "id": "11::Geography::Natural Hazards and Disasters::long_answer",
-        "classLevel": "11",
-        "subject": "Geography",
-        "chapter": "Natural Hazards and Disasters",
-        "contentType": "long_answer",
-        "attempt": 1
-      }
-    ]
+    "4": []
   },
   "retryQueue": [
-    {
-      "id": "12::Geography::The World Population Distribution, Density and Growth::detailed_notes",
-      "classLevel": "12",
-      "subject": "Geography",
-      "chapter": "The World Population Distribution, Density and Growth",
-      "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Groq HTTP 429"
-    },
-    {
-      "id": "12::Geography::Population: Distribution, Density, Growth and Composition::detailed_notes",
-      "classLevel": "12",
-      "subject": "Geography",
-      "chapter": "Population: Distribution, Density, Growth and Composition",
-      "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Groq HTTP 429"
-    },
-    {
-      "id": "12::Geography::Primary Activities::detailed_notes",
-      "classLevel": "12",
-      "subject": "Geography",
-      "chapter": "Primary Activities",
-      "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Validation failed: Content too short: 797 words (minimum 800)"
-    },
-    {
-      "id": "12::Geography::Land Resources and Agriculture::detailed_notes",
-      "classLevel": "12",
-      "subject": "Geography",
-      "chapter": "Land Resources and Agriculture",
-      "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Groq HTTP 429"
-    },
-    {
-      "id": "12::Geography::Water Resources::detailed_notes",
-      "classLevel": "12",
-      "subject": "Geography",
-      "chapter": "Water Resources",
-      "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Groq HTTP 429"
-    },
-    {
-      "id": "12::Geography::International Trade::detailed_notes",
-      "classLevel": "12",
-      "subject": "Geography",
-      "chapter": "International Trade",
-      "contentType": "detailed_notes",
-      "attempt": 2,
-      "lastError": "Validation failed: Content too short: 783 words (minimum 800)"
-    },
     {
       "id": "12::Geography::International Trade of India::detailed_notes",
       "classLevel": "12",
@@ -659,6 +556,96 @@
       "contentType": "long_answer",
       "attempt": 2,
       "lastError": "Groq HTTP 429"
+    },
+    {
+      "id": "11::Geography::Biodiversity and Conservation::long_answer",
+      "classLevel": "11",
+      "subject": "Geography",
+      "chapter": "Biodiversity and Conservation",
+      "contentType": "long_answer",
+      "attempt": 2,
+      "lastError": "Groq HTTP 429"
+    },
+    {
+      "id": "11::Geography::Biodiversity and Conservation::pyq_style",
+      "classLevel": "11",
+      "subject": "Geography",
+      "chapter": "Biodiversity and Conservation",
+      "contentType": "pyq_style",
+      "attempt": 2,
+      "lastError": "Groq HTTP 429"
+    },
+    {
+      "id": "11::Geography::Composition and Structure of Atmosphere::pyq_style",
+      "classLevel": "11",
+      "subject": "Geography",
+      "chapter": "Composition and Structure of Atmosphere",
+      "contentType": "pyq_style",
+      "attempt": 2,
+      "lastError": "Key pool timeout — no key became available within 2 minutes"
+    },
+    {
+      "id": "11::Geography::Atmospheric Circulation and Weather Systems::pyq_style",
+      "classLevel": "11",
+      "subject": "Geography",
+      "chapter": "Atmospheric Circulation and Weather Systems",
+      "contentType": "pyq_style",
+      "attempt": 2,
+      "lastError": "Key pool timeout — no key became available within 2 minutes"
+    },
+    {
+      "id": "11::Geography::Water (Oceans)::pyq_style",
+      "classLevel": "11",
+      "subject": "Geography",
+      "chapter": "Water (Oceans)",
+      "contentType": "pyq_style",
+      "attempt": 2,
+      "lastError": "Key pool timeout — no key became available within 2 minutes"
+    },
+    {
+      "id": "11::Geography::Structure and Physiography::long_answer",
+      "classLevel": "11",
+      "subject": "Geography",
+      "chapter": "Structure and Physiography",
+      "contentType": "long_answer",
+      "attempt": 2,
+      "lastError": "Groq HTTP 429"
+    },
+    {
+      "id": "11::Geography::Structure and Physiography::pyq_style",
+      "classLevel": "11",
+      "subject": "Geography",
+      "chapter": "Structure and Physiography",
+      "contentType": "pyq_style",
+      "attempt": 2,
+      "lastError": "Groq HTTP 429"
+    },
+    {
+      "id": "12::Geography::The World Population Distribution, Density and Growth::detailed_notes",
+      "classLevel": "12",
+      "subject": "Geography",
+      "chapter": "The World Population Distribution, Density and Growth",
+      "contentType": "detailed_notes",
+      "attempt": 3,
+      "lastError": "Groq HTTP 429"
+    },
+    {
+      "id": "12::Geography::Land Resources and Agriculture::detailed_notes",
+      "classLevel": "12",
+      "subject": "Geography",
+      "chapter": "Land Resources and Agriculture",
+      "contentType": "detailed_notes",
+      "attempt": 3,
+      "lastError": "Groq HTTP 429"
+    },
+    {
+      "id": "12::Geography::Population: Distribution, Density, Growth and Composition::detailed_notes",
+      "classLevel": "12",
+      "subject": "Geography",
+      "chapter": "Population: Distribution, Density, Growth and Composition",
+      "contentType": "detailed_notes",
+      "attempt": 3,
+      "lastError": "Validation failed: Content too short: 579 words (minimum 800)"
     }
   ],
   "failedTasks": []

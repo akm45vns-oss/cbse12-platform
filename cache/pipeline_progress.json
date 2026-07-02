@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-07-02T11:41:01.470Z",
-  "elapsed_seconds": 821,
-  "rate_per_second": 7.4,
+  "updated_at": "2026-07-02T11:43:41.580Z",
+  "elapsed_seconds": 981,
+  "rate_per_second": 6.19,
   "queue": {
-    "completed": 6073,
-    "pending": 72,
+    "completed": 6075,
+    "pending": 70,
     "inFlight": 5,
     "failed": 0,
-    "retrying": 69,
+    "retrying": 70,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
       "revision": 0,
-      "longAnswers": 3
+      "longAnswers": 0
     }
   },
   "workers": [
@@ -20,158 +20,158 @@
       "workerId": "Worker-Physics",
       "processed": 7,
       "skipped": 0,
-      "failed": 16,
+      "failed": 19,
       "running": true
     },
     {
       "workerId": "Worker-Chemistry",
       "processed": 5,
       "skipped": 0,
-      "failed": 14,
+      "failed": 16,
       "running": true
     },
     {
       "workerId": "Worker-Maths",
-      "processed": 8,
+      "processed": 9,
       "skipped": 0,
-      "failed": 17,
+      "failed": 19,
       "running": true
     },
     {
       "workerId": "Worker-Biology",
       "processed": 10,
       "skipped": 0,
-      "failed": 10,
+      "failed": 12,
       "running": true
     },
     {
       "workerId": "Worker-Other",
-      "processed": 8,
+      "processed": 9,
       "skipped": 0,
-      "failed": 12,
+      "failed": 14,
       "running": true
     }
   ],
   "recent_events": [
     {
       "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating pyq_style for Structure and Physiography (Geography)",
-      "timestamp": "2026-07-02T11:40:32.288Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "generating",
-      "message": "Generating long_answer for Structure and Physiography (Geography)",
-      "timestamp": "2026-07-02T11:40:32.237Z"
-    },
-    {
-      "workerId": "Worker-Physics",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:40:32.053Z"
+      "timestamp": "2026-07-02T11:43:41.154Z"
     },
     {
-      "workerId": "Worker-Chemistry",
+      "workerId": "Worker-Other",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:40:31.996Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating pyq_style for Biodiversity and Conservation (Geography)",
-      "timestamp": "2026-07-02T11:40:30.120Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "done",
-      "message": "✅ Geography/World Climate and Climate Change/long_answer",
-      "timestamp": "2026-07-02T11:40:29.774Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "generating",
-      "message": "Generating long_answer for Biodiversity and Conservation (Geography)",
-      "timestamp": "2026-07-02T11:40:26.558Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:40:25.707Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "generating",
-      "message": "Generating long_answer for Movements of Ocean Water (Geography)",
-      "timestamp": "2026-07-02T11:39:28.545Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "done",
-      "message": "✅ Geography/Atmospheric Circulation and Weather Systems/long_answer",
-      "timestamp": "2026-07-02T11:39:28.311Z"
+      "timestamp": "2026-07-02T11:43:41.069Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "generating",
-      "message": "Generating pyq_style for Water (Oceans) (Geography)",
-      "timestamp": "2026-07-02T11:39:27.684Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "done",
-      "message": "✅ Geography/Water in the Atmosphere/pyq_style",
-      "timestamp": "2026-07-02T11:39:27.458Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating long_answer for World Climate and Climate Change (Geography)",
-      "timestamp": "2026-07-02T11:39:27.056Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:39:26.833Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating pyq_style for Water in the Atmosphere (Geography)",
-      "timestamp": "2026-07-02T11:39:25.287Z"
+      "message": "Generating detailed_notes for Human Settlements (Geography)",
+      "timestamp": "2026-07-02T11:43:29.027Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "error",
-      "message": "Validation failed for 11::Geography::Geography as a Discipline::long_answer: Too few items in questions: 0 (minimum 2)",
-      "timestamp": "2026-07-02T11:39:25.071Z"
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-07-02T11:43:28.426Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "generating",
-      "message": "Generating pyq_style for Atmospheric Circulation and Weather Systems (Geography)",
-      "timestamp": "2026-07-02T11:39:23.698Z"
+      "message": "Generating detailed_notes for International Trade of India (Geography)",
+      "timestamp": "2026-07-02T11:42:44.667Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "done",
-      "message": "✅ Geography/Composition and Structure of Atmosphere/long_answer",
-      "timestamp": "2026-07-02T11:39:23.428Z"
+      "message": "✅ Geography/Drainage System/pyq_style",
+      "timestamp": "2026-07-02T11:42:44.438Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating detailed_notes for International Trade (Geography)",
+      "timestamp": "2026-07-02T11:42:44.133Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "error",
+      "message": "Validation failed for 12::Geography::Population: Distribution, Density, Growth and Composition::detailed_notes: Content too short: 579 words (minimum 800)",
+      "timestamp": "2026-07-02T11:42:43.900Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating detailed_notes for Water Resources (Geography)",
+      "timestamp": "2026-07-02T11:42:43.852Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T11:42:43.610Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating detailed_notes for Land Resources and Agriculture (Geography)",
+      "timestamp": "2026-07-02T11:42:42.291Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "done",
+      "message": "✅ Geography/Drainage System/long_answer",
+      "timestamp": "2026-07-02T11:42:41.983Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating long_answer for Atmospheric Circulation and Weather Systems (Geography)",
-      "timestamp": "2026-07-02T11:39:22.996Z"
+      "message": "Generating detailed_notes for Primary Activities (Geography)",
+      "timestamp": "2026-07-02T11:42:40.326Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:39:22.766Z"
+      "timestamp": "2026-07-02T11:42:39.525Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating detailed_notes for Population: Distribution, Density, Growth and Composition (Geography)",
+      "timestamp": "2026-07-02T11:41:31.229Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating detailed_notes for The World Population Distribution, Density and Growth (Geography)",
+      "timestamp": "2026-07-02T11:41:31.166Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T11:41:30.933Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T11:41:30.926Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating long_answer for Natural Hazards and Disasters (Geography)",
+      "timestamp": "2026-07-02T11:41:28.177Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
+      "timestamp": "2026-07-02T11:41:27.911Z"
     }
   ]
 }
