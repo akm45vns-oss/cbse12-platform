@@ -113,7 +113,7 @@ const LeaderboardView = memo(function LeaderboardView({ selectedClass, curriculu
           onChange={(e) => setSelectedSubject(e.target.value)}
           className="subject-select"
         >
-          {Object.keys(CURRICULUM).map((subject) => (
+          {Object.keys(curriculumData).map((subject) => (
             <option key={subject} value={subject}>
               {subject}
             </option>

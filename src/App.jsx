@@ -885,8 +885,8 @@ Format Guidelines:
         {nav.view === "progress" && (
           <Suspense fallback={<LoadingFallback />}>
             <ProgressView
-              overallPct={progress.getOverallPercentage()}
-              stats={progress.getStats()}
+              overallPct={progress.getOverallPercentage(activeCurriculum, activeTotalChapters)}
+              stats={progress.getStats(activeCurriculum)}
               totalChapters={activeTotalChapters}
               curriculum={activeCurriculum}
               progressData={progress.data}

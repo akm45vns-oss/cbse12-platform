@@ -140,7 +140,8 @@ export function isInCurriculum(subject, chapter, curriculum) {
 }
 
 export function getOverallStats(activeCurriculum) {
-  const history = getSessionHistory();
+  const allHistory = getSessionHistory();
+  const history = allHistory.filter(s => isInCurriculum(s.subject, s.chapter, activeCurriculum));
   
   const totalTime = history.reduce((sum, s) => sum + s.duration, 0);
   const totalSessions = history.length;

@@ -156,7 +156,7 @@ export async function getLeaderboardData(classLevel, subject, chapter = null, li
 export async function getUserRank(classLevel, username, subject, chapter = null) {
   try {
     // Get full leaderboard (which is cached), then find user in it
-    const leaderboard = await getLeaderboardData(subject, chapter, 1000); // Get more to find user
+    const leaderboard = await getLeaderboardData(classLevel, subject, chapter, 1000); // Get more to find user
     
     const userEntry = leaderboard.find(entry => entry.username === username);
     

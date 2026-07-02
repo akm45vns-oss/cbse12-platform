@@ -213,11 +213,27 @@ export function getPersonalizedInsights(progressData, weakTopics, performance, a
     const bestSubject = subjects[0]?.[0] || "N/A";
     const worstSubject = subjects[subjects.length - 1]?.[0] || "N/A";
 
-    // Calculate overall completion
-    const totalChapters = Object.keys(progressData).length;
-    const completedChapters = Object.keys(progressData).filter(
-      (k) => progressData[k]?.read || false
-    ).length;
+    // Calculate overall completion based on active curriculum
+    let totalChapters = 0;
+    let completedChapters = 0;
+    if (activeCurriculum) {
+      Object.entries(activeCurriculum).forEach(([s, d]) => {
+        d.units.forEach(u => {
+          u.chapters.forEach(ch => {
+            totalChapters++;
+            if (progressData[`${s}||${ch}||notes`]?.read) {
+              completedChapters++;
+            }
+          });
+        });
+      });
+    } else {
+      totalChapters = Object.keys(progressData).length;
+      completedChapters = Object.keys(progressData).filter(
+        (k) => progressData[k]?.read || false
+      ).length;
+    }
+
     const overallCompletion = totalChapters
       ? ((completedChapters / totalChapters) * 100).toFixed(0)
       : 0;
@@ -301,7 +317,7 @@ export function getQuizPerformanceMetrics(activeCurriculum) {
 /**
  * Get study session duration distribution
  */
-export function getSessionMetrics() {
+export function getSessionMetrics(activeCurriculum) {
   try {
     let sessions = JSON.parse(
       localStorage.getItem("akmedu_sessions_history") || "[]"
