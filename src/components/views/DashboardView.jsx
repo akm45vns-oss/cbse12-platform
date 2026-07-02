@@ -190,30 +190,9 @@ export const DashboardView = memo(function DashboardView({
         </div>
       )}
 
-      {/* ── Your Subjects — horizontal chip scroll ── */}
-      <div style={{ marginBottom: 16 }}>
-        <div style={{ fontSize: 11, fontWeight: 800, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.07em", marginBottom: 10 }}>Your Subjects</div>
-        <div className="subject-chips-scroll">
-          {allSubjectKeys.map(s => {
-            const d = CURR[s];
-            const pct = getSubjectPct(s);
-            const colors = SUBJECT_COLORS[s] || { bg: "#ede9fe", color: "#4f46e5", accent: "#4f46e5" };
-            return (
-              <button key={s} className="subject-chip" onClick={() => onSelectSubject(s)}
-                style={{ borderColor: pct > 0 ? `${colors.accent}40` : undefined }}>
-                <span style={{ fontSize: 16 }}>{d.emoji}</span>
-                <span style={{ color: "var(--text-primary)" }}>{s}</span>
-                {pct > 0 && (
-                  <span style={{ background: colors.bg, color: colors.color, borderRadius: 99, padding: "1px 7px", fontSize: 10, fontWeight: 800 }}>{pct}%</span>
-                )}
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
       {/* ── Subject Mini Grid (compact 2-col) ── */}
       <div style={{ marginBottom: 16 }}>
+        <div style={{ fontSize: 11, fontWeight: 800, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.07em", marginBottom: 10 }}>Your Subjects</div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
           {allSubjectKeys.map(s => {
             const d = CURR[s];

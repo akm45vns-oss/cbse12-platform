@@ -1,177 +1,177 @@
 {
-  "updated_at": "2026-07-02T11:34:11.101Z",
-  "elapsed_seconds": 410,
-  "rate_per_second": 14.77,
+  "updated_at": "2026-07-02T11:36:21.244Z",
+  "elapsed_seconds": 540,
+  "rate_per_second": 11.23,
   "queue": {
-    "completed": 6056,
-    "pending": 89,
+    "completed": 6066,
+    "pending": 79,
     "inFlight": 5,
     "failed": 0,
-    "retrying": 44,
+    "retrying": 52,
     "byPriority": {
       "notes": 0,
       "mcqs": 0,
-      "revision": 15,
-      "longAnswers": 30
+      "revision": 0,
+      "longAnswers": 27
     }
   },
   "workers": [
     {
       "workerId": "Worker-Physics",
-      "processed": 4,
+      "processed": 5,
       "skipped": 0,
       "failed": 11,
       "running": true
     },
     {
       "workerId": "Worker-Chemistry",
-      "processed": 3,
+      "processed": 4,
       "skipped": 0,
-      "failed": 6,
+      "failed": 9,
       "running": true
     },
     {
       "workerId": "Worker-Maths",
-      "processed": 4,
+      "processed": 7,
       "skipped": 0,
-      "failed": 13,
+      "failed": 14,
       "running": true
     },
     {
       "workerId": "Worker-Biology",
-      "processed": 6,
+      "processed": 9,
       "skipped": 0,
-      "failed": 5,
+      "failed": 8,
       "running": true
     },
     {
       "workerId": "Worker-Other",
-      "processed": 4,
+      "processed": 6,
       "skipped": 0,
-      "failed": 9,
+      "failed": 10,
       "running": true
     }
   ],
   "recent_events": [
     {
-      "workerId": "Worker-Other",
-      "status": "generating",
-      "message": "Generating ncert_summary for Geography as a Discipline (Geography)",
-      "timestamp": "2026-07-02T11:33:59.554Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating important_concepts for Geography as a Discipline (Geography)",
-      "timestamp": "2026-07-02T11:33:59.553Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:33:59.348Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:33:59.344Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating ncert_summary for Geographical Perspective on Selected Issues and Problems (Geography)",
-      "timestamp": "2026-07-02T11:33:57.773Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "done",
-      "message": "✅ Geography/Water Resources/short_notes",
-      "timestamp": "2026-07-02T11:33:57.575Z"
-    },
-    {
       "workerId": "Worker-Biology",
       "status": "generating",
-      "message": "Generating difficulty_tags for International Trade of India (Geography)",
-      "timestamp": "2026-07-02T11:33:56.933Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating key_definitions for Planning and Sustainable Development in Indian Context (Geography)",
-      "timestamp": "2026-07-02T11:33:56.899Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "generating",
-      "message": "Generating short_notes for Transport and Communication in India (Geography)",
-      "timestamp": "2026-07-02T11:33:56.838Z"
+      "message": "Generating long_answer for Population: Distribution, Density, Growth and Composition (Geography)",
+      "timestamp": "2026-07-02T11:36:12.588Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "done",
-      "message": "✅ Geography/Population: Distribution, Density, Growth and Composition/short_notes",
-      "timestamp": "2026-07-02T11:33:56.703Z"
+      "message": "✅ Geography/Human Development/pyq_style",
+      "timestamp": "2026-07-02T11:36:12.336Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "generating",
-      "message": "Generating important_concepts for Planning and Sustainable Development in Indian Context (Geography)",
-      "timestamp": "2026-07-02T11:33:56.554Z"
+      "message": "Generating pyq_style for International Trade (Geography)",
+      "timestamp": "2026-07-02T11:36:10.503Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T11:36:10.270Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating pyq_style for Human Development (Geography)",
+      "timestamp": "2026-07-02T11:36:08.683Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "done",
+      "message": "✅ Geography/Drainage System/important_concepts",
+      "timestamp": "2026-07-02T11:36:08.446Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "generating",
+      "message": "Generating important_concepts for Natural Hazards and Disasters (Geography)",
+      "timestamp": "2026-07-02T11:36:08.270Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "done",
-      "message": "✅ Geography/Human Settlements/short_notes",
-      "timestamp": "2026-07-02T11:33:56.524Z"
+      "message": "✅ Geography/Water (Oceans)/difficulty_tags",
+      "timestamp": "2026-07-02T11:36:08.031Z"
     },
     {
-      "workerId": "Worker-Chemistry",
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating key_definitions for Soils (Geography)",
+      "timestamp": "2026-07-02T11:36:07.649Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T11:36:07.408Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating key_definitions for Natural Vegetation (Geography)",
+      "timestamp": "2026-07-02T11:36:06.730Z"
+    },
+    {
+      "workerId": "Worker-Maths",
       "status": "done",
-      "message": "✅ Geography/Transport and Communication/key_definitions",
-      "timestamp": "2026-07-02T11:33:56.258Z"
+      "message": "✅ Geography/World Climate and Climate Change/difficulty_tags",
+      "timestamp": "2026-07-02T11:36:06.487Z"
     },
     {
-      "workerId": "Worker-Maths",
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating important_concepts for Drainage System (Geography)",
+      "timestamp": "2026-07-02T11:36:05.182Z"
+    },
+    {
+      "workerId": "Worker-Biology",
       "status": "error",
       "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:33:56.195Z"
+      "timestamp": "2026-07-02T11:36:04.921Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "generating",
+      "message": "Generating difficulty_tags for Water (Oceans) (Geography)",
+      "timestamp": "2026-07-02T11:36:03.924Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating key_definitions for India — Location (Geography)",
+      "timestamp": "2026-07-02T11:36:03.924Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T11:36:02.908Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T11:36:02.903Z"
     },
     {
       "workerId": "Worker-Maths",
       "status": "generating",
-      "message": "Generating short_notes for Mineral and Energy Resources (Geography)",
-      "timestamp": "2026-07-02T11:33:54.893Z"
+      "message": "Generating difficulty_tags for World Climate and Climate Change (Geography)",
+      "timestamp": "2026-07-02T11:35:07.264Z"
     },
     {
       "workerId": "Worker-Maths",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:33:54.185Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating important_concepts for Water Resources (Geography)",
-      "timestamp": "2026-07-02T11:32:53.695Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating short_notes for Water Resources (Geography)",
-      "timestamp": "2026-07-02T11:32:53.661Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:32:53.463Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T11:32:53.445Z"
+      "status": "done",
+      "message": "✅ Geography/Geomorphic Processes/important_concepts",
+      "timestamp": "2026-07-02T11:35:07.026Z"
     }
   ]
 }
