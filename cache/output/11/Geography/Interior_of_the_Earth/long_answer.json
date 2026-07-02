@@ -1,0 +1,83 @@
+{
+  "class": "11",
+  "subject": "Geography",
+  "chapter": "Interior of the Earth",
+  "content_type": "long_answer",
+  "generated_by": "groq/llama-3.1-8b-instant",
+  "generated_at": "2026-07-02T10:13:22.265Z",
+  "version": "1.0",
+  "data": {
+    "questions": [
+      {
+        "q": "Describe the structure of the Earth's interior, including the crust, mantle, outer core, and inner core. Explain the differences between each layer in terms of composition and temperature.",
+        "marks": 5,
+        "answer": "The Earth's interior is divided into four main layers: the crust, mantle, outer core, and inner core. The crust is the outermost layer, ranging in thickness from 5-70 km. It is composed of rocks and minerals and is the source of most earthquakes. The mantle is the thickest layer, extending from the crust to a depth of 2,900 km. It is composed of hot, viscous rock and is divided into the upper mantle and lower mantle. The outer core is a liquid layer of iron and nickel, extending from the mantle to the inner core. The inner core is a solid, iron-nickel alloy at the center of the Earth. The temperature increases with depth, with the inner core being the hottest layer. The differences between each layer in terms of composition and temperature are due to the varying conditions and processes that have shaped the Earth over time.",
+        "marking_scheme": [
+          "Point 1: Describe the structure of the Earth's interior (1 mark)",
+          "Point 2: Explain the differences between each layer in terms of composition (2 marks)",
+          "Point 3: Explain the differences between each layer in terms of temperature (2 marks)"
+        ],
+        "topic": "Structure of the Earth's Interior",
+        "is_numerical": false
+      },
+      {
+        "q": "What is the process of plate tectonics, and how does it relate to the Earth's interior?",
+        "marks": 5,
+        "answer": "Plate tectonics is the theory that the Earth's lithosphere is broken into several large plates that move relative to each other. These plates are in constant motion, sliding over the more fluid asthenosphere below. The movement of the plates is driven by convection currents in the mantle. As the plates move, they interact at their boundaries, resulting in processes such as continental drift, sea-floor spreading, and mountain building. The movement of the plates is also responsible for earthquakes and volcanic activity.",
+        "marking_scheme": [
+          "Point 1: Describe the process of plate tectonics (2 marks)",
+          "Point 2: Explain the relationship between plate tectonics and the Earth's interior (2 marks)",
+          "Point 3: Provide examples of processes resulting from plate tectonics (1 mark)"
+        ],
+        "topic": "Plate Tectonics",
+        "is_numerical": false
+      },
+      {
+        "q": "Explain the concept of seismology and its importance in understanding the Earth's interior.",
+        "marks": 5,
+        "answer": "Seismology is the study of earthquakes and seismic waves. Seismic waves are vibrations that travel through the Earth's interior after an earthquake occurs. By analyzing the speed, direction, and characteristics of seismic waves, seismologists can infer the structure and composition of the Earth's interior. This information is crucial in understanding the Earth's internal processes and the movement of tectonic plates.",
+        "marking_scheme": [
+          "Point 1: Explain the concept of seismology (2 marks)",
+          "Point 2: Describe the importance of seismology in understanding the Earth's interior (2 marks)",
+          "Point 3: Provide examples of how seismology is used (1 mark)"
+        ],
+        "topic": "Seismology",
+        "is_numerical": false
+      },
+      {
+        "q": "A seismic wave travels through the Earth's interior with a speed of 8 km/s. If it travels for 10 seconds, how far does it travel?",
+        "marks": 5,
+        "answer": "Distance = Speed x Time = 8 km/s x 10 s = 80 km",
+        "marking_scheme": [
+          "Calculation: Distance = Speed x Time (4 marks)",
+          "Unit conversion and final answer (1 mark)"
+        ],
+        "topic": "Seismic Waves",
+        "is_numerical": true
+      },
+      {
+        "q": "The thickness of the Earth's crust is 30 km. If the Earth's radius is 6,371 km, what is the percentage of the Earth's radius that the crust represents?",
+        "marks": 5,
+        "answer": "Calculation:\n(30 km / 6,371 km) x 100% ≈ 0.47%\nTherefore, the crust represents approximately 0.47% of the Earth's radius.",
+        "marking_scheme": [
+          "Calculation: (30 km / 6,371 km) x 100% (3 marks)",
+          "Final answer and percentage representation (2 marks)"
+        ],
+        "topic": "Thickness of the Earth's Crust",
+        "is_numerical": true
+      },
+      {
+        "q": "The temperature at the Earth's core is 5,000°C. If the temperature at the Earth's surface is 15°C, what is the average increase in temperature per km of depth?",
+        "marks": 5,
+        "answer": "Calculation:\nTemperature difference = 5,000°C - 15°C = 4,985°C\nDepth difference = 6,371 km - 0 km (surface) = 6,371 km\nAverage increase in temperature per km of depth = Temperature difference / Depth difference ≈ 4,985°C / 6,371 km ≈ 0.783°C/km\nTherefore, the average increase in temperature per km of depth is approximately 0.783°C/km.",
+        "marking_scheme": [
+          "Calculation: Temperature difference / Depth difference (4 marks)",
+          "Final answer and unit (1 mark)"
+        ],
+        "topic": "Temperature Increase with Depth",
+        "is_numerical": true
+      }
+    ],
+    "total": 6
+  }
+}

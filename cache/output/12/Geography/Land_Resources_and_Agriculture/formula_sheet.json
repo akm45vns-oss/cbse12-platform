@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Geography",
+  "chapter": "Land Resources and Agriculture",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-02T10:03:22.765Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Arable Land Percentage",
+        "formula": "Arable Land (%) = (Arable Land Area / Total Land Area) × 100",
+        "variables": "Arable Land Area = area suitable for crops, Total Land Area = total area of the region",
+        "units": "%",
+        "notes": "To find the percentage of arable land in a region"
+      },
+      {
+        "name": "Crop Intensity",
+        "formula": "Crop Intensity = (Gross Cropped Area / Net Sown Area) × 100",
+        "variables": "Gross Cropped Area = area under all crops, Net Sown Area = area sown with crops",
+        "units": "%",
+        "notes": "To measure the intensity of crop cultivation"
+      },
+      {
+        "name": "Cropping Intensity Ratio",
+        "formula": "Cropping Intensity Ratio = Gross Cropped Area / Net Sown Area",
+        "variables": "Gross Cropped Area = area under all crops, Net Sown Area = area sown with crops",
+        "units": "Ratio",
+        "notes": "To compare the intensity of crop cultivation across regions"
+      },
+      {
+        "name": "Land Man Ratio",
+        "formula": "Land Man Ratio = Agricultural Land / Agricultural Labour",
+        "variables": "Agricultural Land = land used for agriculture, Agricultural Labour = number of people working in agriculture",
+        "units": "ha/person",
+        "notes": "To assess the availability of agricultural land per worker"
+      },
+      {
+        "name": "Yield Per Hectare",
+        "formula": "Yield Per Hectare = Total Production / Net Sown Area",
+        "variables": "Total Production = total crop output, Net Sown Area = area sown with crops",
+        "units": "kg/ha or quintal/ha",
+        "notes": "To measure the productivity of a region"
+      },
+      {
+        "name": "Net Sown Area Percentage",
+        "formula": "Net Sown Area (%) = (Net Sown Area / Total Land Area) × 100",
+        "variables": "Net Sown Area = area sown with crops, Total Land Area = total area of the region",
+        "units": "%",
+        "notes": "To find the percentage of net sown area in a region"
+      },
+      {
+        "name": "Area Under Irrigation",
+        "formula": "Area Under Irrigation (%) = (Irrigated Area / Net Sown Area) × 100",
+        "variables": "Irrigated Area = area irrigated, Net Sown Area = area sown with crops",
+        "units": "%",
+        "notes": "To assess the extent of irrigation in a region"
+      },
+      {
+        "name": "Agricultural Density",
+        "formula": "Agricultural Density = Agricultural Labour / Agricultural Land",
+        "variables": "Agricultural Labour = number of people working in agriculture, Agricultural Land = land used for agriculture",
+        "units": "person/ha",
+        "notes": "To measure the pressure of agricultural labour on agricultural land"
+      },
+      {
+        "name": "Farm Size",
+        "formula": "Farm Size = Total Land Area / Number of Farms",
+        "variables": "Total Land Area = total area of all farms, Number of Farms = total number of farms",
+        "units": "ha/farm",
+        "notes": "To determine the average size of farms in a region"
+      },
+      {
+        "name": "Land Use Pattern",
+        "formula": "Land Use Pattern (%) = (Area Under Specific Land Use / Total Land Area) × 100",
+        "variables": "Area Under Specific Land Use = area under a specific type of land use, Total Land Area = total area of the region",
+        "units": "%",
+        "notes": "To analyze the distribution of different land uses in a region"
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "class": "12",
+  "subject": "Geography",
+  "chapter": "The World Population Distribution, Density and Growth",
+  "content_type": "formula_sheet",
+  "generated_by": "groq/llama-3.3-70b-versatile",
+  "generated_at": "2026-07-02T10:00:16.499Z",
+  "version": "1.0",
+  "data": {
+    "formulas": [
+      {
+        "name": "Population Density",
+        "formula": "Population Density = Total Population / Total Area",
+        "variables": "Total Population, Total Area",
+        "units": "People per square kilometer",
+        "notes": "To calculate the population density of a region"
+      },
+      {
+        "name": "Population Growth Rate",
+        "formula": "Population Growth Rate = (Birth Rate - Death Rate) / 10",
+        "variables": "Birth Rate, Death Rate",
+        "units": "Per 1000 people",
+        "notes": "To calculate the rate at which the population is increasing"
+      },
+      {
+        "name": "Birth Rate",
+        "formula": "Birth Rate = (Number of Live Births / Total Population) * 1000",
+        "variables": "Number of Live Births, Total Population",
+        "units": "Per 1000 people",
+        "notes": "To calculate the number of births per 1000 people"
+      },
+      {
+        "name": "Death Rate",
+        "formula": "Death Rate = (Number of Deaths / Total Population) * 1000",
+        "variables": "Number of Deaths, Total Population",
+        "units": "Per 1000 people",
+        "notes": "To calculate the number of deaths per 1000 people"
+      },
+      {
+        "name": "Sex Ratio",
+        "formula": "Sex Ratio = (Number of Females / Number of Males) * 1000",
+        "variables": "Number of Females, Number of Males",
+        "units": "Females per 1000 males",
+        "notes": "To calculate the number of females per 1000 males"
+      },
+      {
+        "name": "Dependency Ratio",
+        "formula": "Dependency Ratio = (Population under 15 + Population over 64) / Total Population * 100",
+        "variables": "Population under 15, Population over 64, Total Population",
+        "units": "Percentage",
+        "notes": "To calculate the proportion of dependent population"
+      },
+      {
+        "name": "Population Doubling Time",
+        "formula": "Population Doubling Time = 70 / Population Growth Rate",
+        "variables": "Population Growth Rate",
+        "units": "Years",
+        "notes": "To calculate the time it takes for the population to double"
+      },
+      {
+        "name": "Crude Density",
+        "formula": "Crude Density = Total Population / Total Area",
+        "variables": "Total Population, Total Area",
+        "units": "People per square kilometer",
+        "notes": "To calculate the population density without considering the land use patterns"
+      },
+      {
+        "name": "Physiological Density",
+        "formula": "Physiological Density = Total Population / Agricultural Area",
+        "variables": "Total Population, Agricultural Area",
+        "units": "People per square kilometer",
+        "notes": "To calculate the population density based on agricultural land"
+      },
+      {
+        "name": "Agricultural Density",
+        "formula": "Agricultural Density = Agricultural Population / Agricultural Area",
+        "variables": "Agricultural Population, Agricultural Area",
+        "units": "People per square kilometer",
+        "notes": "To calculate the density of agricultural population"
+      }
+    ]
+  }
+}

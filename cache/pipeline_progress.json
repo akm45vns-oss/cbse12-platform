@@ -1,177 +1,177 @@
 {
-  "updated_at": "2026-07-02T09:48:34.017Z",
-  "elapsed_seconds": 2272,
-  "rate_per_second": 2.64,
+  "updated_at": "2026-07-02T11:30:30.940Z",
+  "elapsed_seconds": 190,
+  "rate_per_second": 31.81,
   "queue": {
-    "completed": 5997,
-    "pending": 142,
+    "completed": 6044,
+    "pending": 101,
     "inFlight": 5,
-    "failed": 2,
-    "retrying": 142,
+    "failed": 0,
+    "retrying": 25,
     "byPriority": {
       "notes": 0,
-      "mcqs": 0,
-      "revision": 0,
-      "longAnswers": 0
+      "mcqs": 12,
+      "revision": 34,
+      "longAnswers": 30
     }
   },
   "workers": [
     {
       "workerId": "Worker-Physics",
-      "processed": 25,
+      "processed": 2,
       "skipped": 0,
-      "failed": 33,
+      "failed": 5,
       "running": true
     },
     {
       "workerId": "Worker-Chemistry",
-      "processed": 27,
+      "processed": 2,
       "skipped": 0,
-      "failed": 32,
+      "failed": 3,
       "running": true
     },
     {
       "workerId": "Worker-Maths",
-      "processed": 20,
+      "processed": 1,
       "skipped": 0,
-      "failed": 28,
+      "failed": 8,
       "running": true
     },
     {
       "workerId": "Worker-Biology",
-      "processed": 29,
+      "processed": 3,
       "skipped": 0,
-      "failed": 30,
+      "failed": 3,
       "running": true
     },
     {
       "workerId": "Worker-Other",
-      "processed": 20,
+      "processed": 1,
       "skipped": 0,
-      "failed": 29,
+      "failed": 6,
       "running": true
     }
   ],
   "recent_events": [
     {
-      "workerId": "Worker-Physics",
+      "workerId": "Worker-Other",
       "status": "generating",
-      "message": "Generating detailed_notes for Water Resources (Geography)",
-      "timestamp": "2026-07-02T09:47:48.084Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
-      "timestamp": "2026-07-02T09:47:47.550Z"
+      "message": "Generating case_based for Landforms and their Evolution (Geography)",
+      "timestamp": "2026-07-02T11:29:40.237Z"
     },
     {
       "workerId": "Worker-Other",
-      "status": "generating",
-      "message": "Generating detailed_notes for Human Settlements (Geography)",
-      "timestamp": "2026-07-02T09:46:52.239Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating detailed_notes for Human Development (Geography)",
-      "timestamp": "2026-07-02T09:46:52.084Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T09:46:51.959Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T09:46:51.863Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "generating",
-      "message": "Generating detailed_notes for Population: Distribution, Density, Growth and Composition (Geography)",
-      "timestamp": "2026-07-02T09:46:48.733Z"
-    },
-    {
-      "workerId": "Worker-Other",
-      "status": "error",
-      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
-      "timestamp": "2026-07-02T09:46:48.494Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "generating",
-      "message": "Generating detailed_notes for Transport and Communication (Geography)",
-      "timestamp": "2026-07-02T09:46:45.491Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "error",
-      "message": "Validation failed for 11::Geography::Natural Hazards and Disasters::long_answer: Too few items in questions: 0 (minimum 2)",
-      "timestamp": "2026-07-02T09:46:45.264Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "generating",
-      "message": "Generating detailed_notes for Primary Activities (Geography)",
-      "timestamp": "2026-07-02T09:46:44.392Z"
-    },
-    {
-      "workerId": "Worker-Maths",
-      "status": "error",
-      "message": "Generation failed: Key pool timeout — no key became available within 2 minutes",
-      "timestamp": "2026-07-02T09:46:44.156Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating detailed_notes for The World Population Distribution, Density and Growth (Geography)",
-      "timestamp": "2026-07-02T09:46:43.357Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T09:46:43.050Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "generating",
-      "message": "Generating long_answer for Natural Hazards and Disasters (Geography)",
-      "timestamp": "2026-07-02T09:45:49.924Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
       "status": "done",
-      "message": "✅ Geography/Water (Oceans)/long_answer",
-      "timestamp": "2026-07-02T09:45:49.619Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "generating",
-      "message": "Generating long_answer for Structure and Physiography (Geography)",
-      "timestamp": "2026-07-02T09:45:47.258Z"
-    },
-    {
-      "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T09:45:46.702Z"
+      "message": "✅ Geography/Land Resources and Agriculture/short_answer",
+      "timestamp": "2026-07-02T11:29:40.041Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "generating",
-      "message": "Generating long_answer for Biodiversity and Conservation (Geography)",
-      "timestamp": "2026-07-02T09:44:51.521Z"
+      "message": "Generating mcqs for Geomorphic Processes (Geography)",
+      "timestamp": "2026-07-02T11:29:38.787Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "done",
-      "message": "✅ Geography/Water in the Atmosphere/long_answer",
-      "timestamp": "2026-07-02T09:44:51.300Z"
+      "message": "✅ Geography/Mineral and Energy Resources/assertion_reason",
+      "timestamp": "2026-07-02T11:29:38.586Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating short_answer for Distribution of Oceans and Continents (Geography)",
+      "timestamp": "2026-07-02T11:29:38.143Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T11:29:37.933Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating assertion_reason for The Origin and Evolution of the Earth (Geography)",
+      "timestamp": "2026-07-02T11:29:37.702Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "generating",
+      "message": "Generating mcqs for Geography as a Discipline (Geography)",
+      "timestamp": "2026-07-02T11:29:37.567Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T11:29:37.498Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "done",
+      "message": "✅ Geography/International Trade/mcqs",
+      "timestamp": "2026-07-02T11:29:37.376Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating mcqs for Geographical Perspective on Selected Issues and Problems (Geography)",
+      "timestamp": "2026-07-02T11:29:37.275Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "done",
+      "message": "✅ Geography/Human Settlements/assertion_reason",
+      "timestamp": "2026-07-02T11:29:37.066Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "generating",
+      "message": "Generating mcqs for Planning and Sustainable Development in Indian Context (Geography)",
+      "timestamp": "2026-07-02T11:29:36.512Z"
+    },
+    {
+      "workerId": "Worker-Physics",
+      "status": "error",
+      "message": "Validation failed for 11::Geography::Soils::detailed_notes: Content too short: 743 words (minimum 800)",
+      "timestamp": "2026-07-02T11:29:36.309Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "generating",
+      "message": "Generating assertion_reason for Mineral and Energy Resources (Geography)",
+      "timestamp": "2026-07-02T11:29:35.356Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "done",
+      "message": "✅ Geography/Climate/detailed_notes",
+      "timestamp": "2026-07-02T11:29:35.152Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "generating",
+      "message": "Generating short_answer for Land Resources and Agriculture (Geography)",
+      "timestamp": "2026-07-02T11:29:34.571Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "error",
+      "message": "Generation failed: Groq HTTP 429",
+      "timestamp": "2026-07-02T11:29:34.323Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "generating",
+      "message": "Generating assertion_reason for Human Settlements (Geography)",
+      "timestamp": "2026-07-02T11:29:32.730Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "generating",
+      "message": "Generating detailed_notes for Natural Hazards and Disasters (Geography)",
+      "timestamp": "2026-07-02T11:29:32.673Z"
     }
   ]
 }
