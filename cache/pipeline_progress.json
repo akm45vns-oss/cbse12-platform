@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-07-02T03:45:42.426Z",
-  "elapsed_seconds": 10,
-  "rate_per_second": 272.7,
+  "updated_at": "2026-07-02T03:46:10.175Z",
+  "elapsed_seconds": 6,
+  "rate_per_second": 455,
   "queue": {
-    "completed": 2727,
+    "completed": 2730,
     "pending": 0,
     "inFlight": 0,
-    "failed": 3,
+    "failed": 0,
     "retrying": 0,
     "byPriority": {
       "notes": 0,
@@ -18,30 +18,30 @@
   "workers": [
     {
       "workerId": "Worker-Physics",
-      "processed": 0,
+      "processed": 1,
       "skipped": 0,
-      "failed": 3,
+      "failed": 0,
       "running": false
     },
     {
       "workerId": "Worker-Chemistry",
       "processed": 0,
       "skipped": 0,
-      "failed": 3,
+      "failed": 0,
       "running": false
     },
     {
       "workerId": "Worker-Maths",
-      "processed": 1,
+      "processed": 0,
       "skipped": 0,
-      "failed": 1,
+      "failed": 0,
       "running": false
     },
     {
       "workerId": "Worker-Biology",
       "processed": 0,
       "skipped": 0,
-      "failed": 3,
+      "failed": 0,
       "running": false
     },
     {
@@ -57,121 +57,103 @@
       "workerId": "Worker-Other",
       "status": "finished",
       "message": "Worker finished — 0 done, 0 skipped, 0 failed",
-      "timestamp": "2026-07-02T03:45:42.426Z"
+      "timestamp": "2026-07-02T03:46:10.175Z"
     },
     {
       "workerId": "Worker-Other",
       "status": "info",
       "message": "Queue empty — worker done",
-      "timestamp": "2026-07-02T03:45:42.426Z"
+      "timestamp": "2026-07-02T03:46:10.175Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "finished",
-      "message": "Worker finished — 0 done, 0 skipped, 3 failed",
-      "timestamp": "2026-07-02T03:45:42.160Z"
+      "message": "Worker finished — 0 done, 0 skipped, 0 failed",
+      "timestamp": "2026-07-02T03:46:10.175Z"
     },
     {
       "workerId": "Worker-Biology",
       "status": "info",
       "message": "Queue empty — worker done",
-      "timestamp": "2026-07-02T03:45:42.160Z"
+      "timestamp": "2026-07-02T03:46:10.175Z"
     },
     {
       "workerId": "Worker-Maths",
       "status": "finished",
-      "message": "Worker finished — 1 done, 0 skipped, 1 failed",
-      "timestamp": "2026-07-02T03:45:41.815Z"
+      "message": "Worker finished — 0 done, 0 skipped, 0 failed",
+      "timestamp": "2026-07-02T03:46:10.175Z"
     },
     {
       "workerId": "Worker-Maths",
       "status": "info",
       "message": "Queue empty — worker done",
-      "timestamp": "2026-07-02T03:45:41.815Z"
+      "timestamp": "2026-07-02T03:46:10.175Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "finished",
-      "message": "Worker finished — 0 done, 0 skipped, 3 failed",
-      "timestamp": "2026-07-02T03:45:41.345Z"
+      "message": "Worker finished — 0 done, 0 skipped, 0 failed",
+      "timestamp": "2026-07-02T03:46:10.175Z"
     },
     {
       "workerId": "Worker-Chemistry",
       "status": "info",
       "message": "Queue empty — worker done",
-      "timestamp": "2026-07-02T03:45:41.345Z"
+      "timestamp": "2026-07-02T03:46:10.175Z"
     },
     {
       "workerId": "Worker-Physics",
       "status": "finished",
-      "message": "Worker finished — 0 done, 0 skipped, 3 failed",
-      "timestamp": "2026-07-02T03:45:40.718Z"
+      "message": "Worker finished — 1 done, 0 skipped, 0 failed",
+      "timestamp": "2026-07-02T03:46:08.503Z"
     },
     {
       "workerId": "Worker-Physics",
       "status": "info",
       "message": "Queue empty — worker done",
-      "timestamp": "2026-07-02T03:45:40.718Z"
+      "timestamp": "2026-07-02T03:46:08.503Z"
     },
     {
       "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Validation failed for 12::Physics::Current Electricity::detailed_notes: Content too short: 758 words (minimum 800)",
-      "timestamp": "2026-07-02T03:45:40.718Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "error",
-      "message": "Validation failed for 12::Mathematics::Linear Programming::detailed_notes: Content too short: 751 words (minimum 800)",
-      "timestamp": "2026-07-02T03:45:39.341Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T03:45:38.142Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "generating",
-      "message": "Generating detailed_notes for Physical Education and Sports for CWSN (Physical Education)",
-      "timestamp": "2026-07-02T03:45:38.087Z"
-    },
-    {
-      "workerId": "Worker-Biology",
-      "status": "error",
-      "message": "Validation failed for 12::Physical Education::Physical Education and Sports for CWSN::detailed_notes: Content too short: 755 words (minimum 800)",
-      "timestamp": "2026-07-02T03:45:37.875Z"
-    },
-    {
-      "workerId": "Worker-Maths",
       "status": "done",
-      "message": "✅ Physical Education/Yoga as Preventive Measure for Lifestyle Diseases/detailed_notes",
-      "timestamp": "2026-07-02T03:45:37.801Z"
+      "message": "✅ Physics/Current Electricity/detailed_notes",
+      "timestamp": "2026-07-02T03:46:08.503Z"
     },
     {
       "workerId": "Worker-Physics",
       "status": "generating",
       "message": "Generating detailed_notes for Current Electricity (Physics)",
-      "timestamp": "2026-07-02T03:45:37.102Z"
+      "timestamp": "2026-07-02T03:46:04.395Z"
+    },
+    {
+      "workerId": "Worker-Other",
+      "status": "info",
+      "message": "Worker started",
+      "timestamp": "2026-07-02T03:46:04.162Z"
+    },
+    {
+      "workerId": "Worker-Biology",
+      "status": "info",
+      "message": "Worker started",
+      "timestamp": "2026-07-02T03:46:04.162Z"
+    },
+    {
+      "workerId": "Worker-Maths",
+      "status": "info",
+      "message": "Worker started",
+      "timestamp": "2026-07-02T03:46:04.162Z"
+    },
+    {
+      "workerId": "Worker-Chemistry",
+      "status": "info",
+      "message": "Worker started",
+      "timestamp": "2026-07-02T03:46:04.161Z"
     },
     {
       "workerId": "Worker-Physics",
-      "status": "error",
-      "message": "Validation failed for 12::Physics::Current Electricity::detailed_notes: Content too short: 652 words (minimum 800)",
-      "timestamp": "2026-07-02T03:45:36.903Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "generating",
-      "message": "Generating detailed_notes for Linear Programming (Mathematics)",
-      "timestamp": "2026-07-02T03:45:36.048Z"
-    },
-    {
-      "workerId": "Worker-Chemistry",
-      "status": "error",
-      "message": "Generation failed: Groq HTTP 429",
-      "timestamp": "2026-07-02T03:45:35.854Z"
+      "status": "info",
+      "message": "Worker started",
+      "timestamp": "2026-07-02T03:46:04.160Z"
     }
   ]
 }
