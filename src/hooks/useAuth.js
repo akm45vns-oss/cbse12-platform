@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { validateUsername, validatePassword } from "../utils/auth";
-import { registerUser, loginUser, sendOTP, verifyOTP, sendPasswordResetOTP, verifyPasswordResetOTP, resetPassword } from "../utils/supabase";
+import { registerUser, loginUser, sendOTP, verifyOTP, sendPasswordResetOTP, verifyPasswordResetOTP, resetPassword, supabase } from "../utils/supabase";
 import { validatePasswordStrength } from "../utils/passwordValidation";
 import {
   recordLoginAttempt,
@@ -30,6 +30,96 @@ export function useAuth() {
   const [showResetPassword, setShowResetPassword] = useState(false);
   const [otpState, setOtpState] = useState({ show: false, email: "", otp: "", loading: false, pendingRegistration: null });
   const [resetPasswordData, setResetPasswordData] = useState({ email: "", otp: "", newPassword: "", confirmPassword: "", loading: false, step: "email" });
+
+
+  useEffect(() => {
+    async function checkSession() {
+      try {
+        const { data: { session }, error: sessionErr } = await supabase.auth.getSession();
+        if (sessionErr) throw sessionErr;
+
+        if (session && session.user) {
+          const sUser = session.user;
+          const email = sUser.email;
+          let username = sUser.user_metadata?.user_name || sUser.user_metadata?.full_name?.toLowerCase().replace(/[^a-z0-9]/g, "") || email.split("@")[0].replace(/[^a-z0-9]/g, "");
+          const name = sUser.user_metadata?.full_name || username;
+
+          // Check if user exists in custom users table
+          const { data: existingUser, error: checkError } = await supabase
+            .from("users")
+            .select("username")
+            .eq("email", email)
+            .maybeSingle();
+
+          if (checkError) {
+            console.error("[useAuth] Check user error:", checkError.message);
+            return;
+          }
+
+          if (!existingUser) {
+            // Find a unique username
+            let finalUsername = username;
+            let count = 0;
+            while (true) {
+              const { data: checkUname } = await supabase
+                .from("users")
+                .select("username")
+                .eq("username", finalUsername)
+                .maybeSingle();
+              if (!checkUname) break;
+              count++;
+              finalUsername = `${username}${count}`;
+            }
+
+            const randomPassword = Math.random().toString(36).substring(2, 15);
+            const regError = await registerUser(finalUsername, randomPassword, email, name, true);
+            if (regError) {
+              console.error("[useAuth] Auto-registration failed:", regError);
+              return;
+            }
+            username = finalUsername;
+          } else {
+            username = existingUser.username;
+          }
+
+          setCurrentUser(username);
+        }
+      } catch (err) {
+        console.warn("[useAuth] Social login session check failed:", err.message);
+      }
+    }
+    checkSession();
+  }, []);
+
+  const doGoogleLogin = async () => {
+    setError("");
+    try {
+      const { error: err } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: window.location.origin
+        }
+      });
+      if (err) throw err;
+    } catch (err) {
+      setError(`❌ Google Login failed: ${err.message || err}`);
+    }
+  };
+
+  const doAppleLogin = async () => {
+    setError("");
+    try {
+      const { error: err } = await supabase.auth.signInWithOAuth({
+        provider: "apple",
+        options: {
+          redirectTo: window.location.origin
+        }
+      });
+      if (err) throw err;
+    } catch (err) {
+      setError(`❌ Apple Login failed: ${err.message || err}`);
+    }
+  };
 
   // Helper function to set current user and persist to localStorage
   const setCurrentUser = (user) => {
@@ -207,6 +297,7 @@ export function useAuth() {
     setLockoutTimeRemaining(0);
     setShowPass(false);
     setOtpState({ show: false, email: "", otp: "", loading: false, pendingRegistration: null });
+    supabase.auth.signOut().catch(err => console.warn("[useAuth] Supabase signOut failed:", err.message));
   };
 
   const doForgotPasswordRequest = async () => {
@@ -311,6 +402,8 @@ export function useAuth() {
     doRegister,
     doVerifyOTP,
     doLogout,
+    doGoogleLogin,
+    doAppleLogin,
     doForgotPasswordRequest,
     doForgotPasswordVerifyOTP,
     doForgotPasswordReset,

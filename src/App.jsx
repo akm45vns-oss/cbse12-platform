@@ -527,6 +527,8 @@ Format Guidelines:
         doLogin={auth.doLogin}
         doRegister={auth.doRegister}
         doVerifyOTP={auth.doVerifyOTP}
+        doGoogleLogin={auth.doGoogleLogin}
+        doAppleLogin={auth.doAppleLogin}
         doForgotPasswordRequest={auth.doForgotPasswordRequest}
         doForgotPasswordVerifyOTP={auth.doForgotPasswordVerifyOTP}
         doForgotPasswordReset={auth.doForgotPasswordReset}
