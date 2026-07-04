@@ -499,6 +499,26 @@ Format Guidelines:
     });
   }, [quiz, answers, selectedQuizSet, auth.currentUser, nav.subject, nav.chapter, progress, selectedClass]);
 
+  // Swipe gesture handlers
+  const handleTouchStart = useCallback((e) => {
+    const t = e.touches[0];
+    swipeTouchStartRef.current = { x: t.clientX, y: t.clientY };
+    if (t.clientX < 40 && nav.canGoBack) setSwipeEdgeVisible(true);
+  }, [nav.canGoBack]);
+
+  const handleTouchEnd = useCallback((e) => {
+    setSwipeEdgeVisible(false);
+    if (!swipeTouchStartRef.current) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - swipeTouchStartRef.current.x;
+    const dy = Math.abs(t.clientY - swipeTouchStartRef.current.y);
+    const startedFromEdge = swipeTouchStartRef.current.x < 40;
+    swipeTouchStartRef.current = null;
+    if (startedFromEdge && dx > 80 && dy < 60 && nav.canGoBack) {
+      nav.goBack();
+    }
+  }, [nav]);
+
   // Not authenticated
   if (nav.view === "auth") {
     return (
@@ -577,26 +597,6 @@ Format Guidelines:
     try { return JSON.parse(localStorage.getItem('loginStreak') || '{}')} catch { return {}; }
   })();
   const streakCount = streak.current || 0;
-
-  // Swipe gesture handlers
-  const handleTouchStart = useCallback((e) => {
-    const t = e.touches[0];
-    swipeTouchStartRef.current = { x: t.clientX, y: t.clientY };
-    if (t.clientX < 40 && nav.canGoBack) setSwipeEdgeVisible(true);
-  }, [nav.canGoBack]);
-
-  const handleTouchEnd = useCallback((e) => {
-    setSwipeEdgeVisible(false);
-    if (!swipeTouchStartRef.current) return;
-    const t = e.changedTouches[0];
-    const dx = t.clientX - swipeTouchStartRef.current.x;
-    const dy = Math.abs(t.clientY - swipeTouchStartRef.current.y);
-    const startedFromEdge = swipeTouchStartRef.current.x < 40;
-    swipeTouchStartRef.current = null;
-    if (startedFromEdge && dx > 80 && dy < 60 && nav.canGoBack) {
-      nav.goBack();
-    }
-  }, [nav]);
 
   return (
     <div
