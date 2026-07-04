@@ -106,21 +106,6 @@ export function useAuth() {
     }
   };
 
-  const doAppleLogin = async () => {
-    setError("");
-    try {
-      const { error: err } = await supabase.auth.signInWithOAuth({
-        provider: "apple",
-        options: {
-          redirectTo: window.location.origin
-        }
-      });
-      if (err) throw err;
-    } catch (err) {
-      setError(`❌ Apple Login failed: ${err.message || err}`);
-    }
-  };
-
   // Helper function to set current user and persist to localStorage
   const setCurrentUser = (user) => {
     try {
@@ -403,7 +388,6 @@ export function useAuth() {
     doVerifyOTP,
     doLogout,
     doGoogleLogin,
-    doAppleLogin,
     doForgotPasswordRequest,
     doForgotPasswordVerifyOTP,
     doForgotPasswordReset,
