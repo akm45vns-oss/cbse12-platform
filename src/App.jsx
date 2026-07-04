@@ -110,6 +110,14 @@ const ProfileIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" 
 
 
 
+// Check immediately on module execution if we are in an OAuth redirect callback
+// before any hooks or third-party client initializers run.
+const IS_OAUTH_REDIRECT = typeof window !== "undefined" && (
+  window.location.hash.includes("access_token") || 
+  window.location.hash.includes("error") || 
+  window.location.search.includes("access_token")
+);
+
 // ===== MAIN APP =====
 export default function App() {
   // Import custom hooks for state management
@@ -239,10 +247,7 @@ export default function App() {
     // Ensure there's always at least one history entry above the "exit" entry
     // so the first back press hits our handler instead of exiting directly.
     if (window.history.state === null || !window.history.state?.__akmedu) {
-      const isAuthRedirect = window.location.hash.includes("access_token") || 
-                             window.location.hash.includes("error") ||
-                             window.location.search.includes("access_token");
-      if (!isAuthRedirect) {
+      if (!IS_OAUTH_REDIRECT) {
         window.history.replaceState({ __akmedu: true, view: nav.view }, "", window.location.pathname);
         window.history.pushState({ __akmedu_sentinel: true }, "", window.location.pathname);
       }
@@ -266,10 +271,7 @@ export default function App() {
         nav.goToDashboard();
       }
     } else {
-      const isAuthRedirect = window.location.hash.includes("access_token") || 
-                             window.location.hash.includes("error") ||
-                             window.location.search.includes("access_token");
-      if (!isAuthRedirect) {
+      if (!IS_OAUTH_REDIRECT) {
         nav.navigate("auth");
       }
     }
@@ -561,12 +563,7 @@ Format Guidelines:
     }
   }, [nav]);
 
-  // Show full-screen loader during Google/OAuth redirect callbacks
-  const isAuthRedirect = window.location.hash.includes("access_token") || 
-                         window.location.hash.includes("error") ||
-                         window.location.search.includes("access_token");
-
-  if (auth.checkingSession && isAuthRedirect) {
+  if (auth.checkingSession && IS_OAUTH_REDIRECT) {
     return <AuthLoadingScreen message="Signing you in with Google..." />;
   }
 
