@@ -66,6 +66,38 @@ const LoadingFallback = () => (
   </div>
 );
 
+// Full screen auth loader
+const AuthLoadingScreen = ({ message = "Signing you in..." }) => (
+  <div style={{
+    minHeight: "100vh", width: "100%", 
+    background: "linear-gradient(135deg, #f3f6ff 0%, #eaefff 100%)", 
+    display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", 
+    padding: "24px", fontFamily: "'Outfit', sans-serif"
+  }}>
+    <div style={{
+      maxWidth: 400, width: "100%", background: "white", 
+      borderRadius: 16, padding: "48px 32px", 
+      boxShadow: "0 10px 40px rgba(0,0,0,0.04)",
+      textAlign: "center"
+    }}>
+      <div style={{ 
+        width: 56, height: 56, borderRadius: "50%",
+        border: "4px solid #f3f4f6", borderTop: "4px solid #0f172a", 
+        animation: "spin 1s linear infinite", margin: "0 auto 24px"
+      }} />
+      <h1 style={{ fontSize: 22, fontWeight: 800, color: "#0f172a", margin: "0 0 8px" }}>
+        Authenticating
+      </h1>
+      <p style={{ color: "#64748b", fontSize: 14, margin: "0 0 24px", fontWeight: 500 }}>
+        {message}
+      </p>
+      <div style={{ fontSize: 11, letterSpacing: "0.1em", fontWeight: 700, color: "#94a3b8" }}>
+        AKMEDU45 • SMART STUDY PLATFORM
+      </div>
+    </div>
+  </div>
+);
+
 // SVG Icons for bottom nav
 const HomeIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z" strokeLinecap="round" strokeLinejoin="round"/><path d="M9 21V12h6v9" strokeLinecap="round" strokeLinejoin="round"/></svg>);
 const PracticeIcon = () => (<svg className="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" strokeLinecap="round" strokeLinejoin="round"/><rect x="9" y="3" width="6" height="4" rx="1" strokeLinecap="round"/><path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round"/></svg>);
@@ -528,6 +560,15 @@ Format Guidelines:
       nav.goBack();
     }
   }, [nav]);
+
+  // Show full-screen loader during Google/OAuth redirect callbacks
+  const isAuthRedirect = window.location.hash.includes("access_token") || 
+                         window.location.hash.includes("error") ||
+                         window.location.search.includes("access_token");
+
+  if (auth.checkingSession && isAuthRedirect) {
+    return <AuthLoadingScreen message="Signing you in with Google..." />;
+  }
 
   // Not authenticated
   if (nav.view === "auth") {

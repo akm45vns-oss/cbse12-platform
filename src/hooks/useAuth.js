@@ -30,6 +30,7 @@ export function useAuth() {
   const [showResetPassword, setShowResetPassword] = useState(false);
   const [otpState, setOtpState] = useState({ show: false, email: "", otp: "", loading: false, pendingRegistration: null });
   const [resetPasswordData, setResetPasswordData] = useState({ email: "", otp: "", newPassword: "", confirmPassword: "", loading: false, step: "email" });
+  const [checkingSession, setCheckingSession] = useState(true);
 
 
   useEffect(() => {
@@ -86,6 +87,8 @@ export function useAuth() {
         }
       } catch (err) {
         console.warn("[useAuth] Social login session check failed:", err.message);
+      } finally {
+        setCheckingSession(false);
       }
     }
     checkSession();
@@ -377,6 +380,7 @@ export function useAuth() {
     showResetPassword,
     otpState,
     resetPasswordData,
+    checkingSession,
     setAuthTab,
     setCredentials,
     setShowPass,
