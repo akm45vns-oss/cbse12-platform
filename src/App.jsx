@@ -207,8 +207,13 @@ export default function App() {
     // Ensure there's always at least one history entry above the "exit" entry
     // so the first back press hits our handler instead of exiting directly.
     if (window.history.state === null || !window.history.state?.__akmedu) {
-      window.history.replaceState({ __akmedu: true, view: nav.view }, "", window.location.pathname);
-      window.history.pushState({ __akmedu_sentinel: true }, "", window.location.pathname);
+      const isAuthRedirect = window.location.hash.includes("access_token") || 
+                             window.location.hash.includes("error") ||
+                             window.location.search.includes("access_token");
+      if (!isAuthRedirect) {
+        window.history.replaceState({ __akmedu: true, view: nav.view }, "", window.location.pathname);
+        window.history.pushState({ __akmedu_sentinel: true }, "", window.location.pathname);
+      }
     }
 
     return () => {
@@ -229,7 +234,12 @@ export default function App() {
         nav.goToDashboard();
       }
     } else {
-      nav.navigate("auth");
+      const isAuthRedirect = window.location.hash.includes("access_token") || 
+                             window.location.hash.includes("error") ||
+                             window.location.search.includes("access_token");
+      if (!isAuthRedirect) {
+        nav.navigate("auth");
+      }
     }
   }, [auth.currentUser]);
 
