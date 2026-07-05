@@ -212,6 +212,12 @@ Four primary tables manage user state, progress, and static content:
 
 # Recent Changes
 
+### 2026-07-05
+- **Files**: `src/content-pipeline/exports/dbSeeder.js` [MODIFY], `scripts/check_seeding_status.js` [NEW]
+- **Reason**: Seeding all Class 11 generated chapter notes and quiz sets to active database tables.
+- **Summary**: Updated `dbSeeder.js` to accept dynamic `CLASS_LEVEL` arguments and modified notes upsert logic to use a select-then-upsert query to bypass PostgreSQL unique index constraint limits. Ran seeder for Class 11 to populate 100% of Class 11 chapters (220 chapters) for notes and quiz sets in the `chapter_notes` and `quiz_sets` tables.
+- **Impact**: All Class 11 notes and quiz sets are now fully populated and accessible on the frontend dashboard without affecting Class 12 notes (which remained completely untouched).
+
 ### 2026-07-04
 - **Files**: `src/components/views/AuthView.jsx` [MODIFY], `src/hooks/useAuth.js` [MODIFY], `src/App.jsx` [MODIFY]
 - **Reason**: Integrate Google social login (OAuth) and hotfix session redirect/hook count bugs.
