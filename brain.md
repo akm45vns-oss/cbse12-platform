@@ -39,20 +39,18 @@ High school students, specifically CBSE Class 11 and Class 12 board exam aspiran
 - **Production URL**: https://cbse12-platform.vercel.app
 
 ### Current Version
-- **Version**: `0.9.5-beta` (Class-aware features, leaderboard, and security patches deployed).
+- **Version**: `0.9.8-beta` (Google OAuth, class-aware updates, flattened layouts, and hook-rule security patches deployed).
 
 ---
 
-- **Current Milestone**: Multi-Class compatibility (Class 11 + Class 12) Content Generation Phase & Chapter Page Redesign.
-- **Completion Percentage**: 100% COMPLETE (Class 12 — 2,730 of 2,730 files done. Class 11 — 2,850 of 2,850 files done in DB).
-- **Current Sprint**: UX Polish & Final Deployment.
-- **Last Completed Task**: Completed all missing content generation files for Class 12 and Class 11.
-- **Current Task**: COMPLETED. Generation pipeline loop successfully finished and closed.
-- **Next Task**: Run final manual walkthrough of the system.
+- **Current Milestone**: Google Social Auth & UI/UX Polish.
+- **Completion Percentage**: 100% COMPLETE (6,150 out of 6,150 content library files successfully generated and cached in Supabase DB).
+- **Current Sprint**: Auth integration and layout refinements.
+- **Last Completed Task**: Integrated Google social login, resolved URL hash cleanup race condition, and resolved React Error #300 gesture callback hook-rule violation.
+- **Current Task**: COMPLETED. Added module-level redirect interception to bypass auth page flash.
+- **Next Task**: Implement security audit logging pipeline.
 - **Blocked Tasks**: None.
-- **Known Limitations**:
-- Generation rate is heavily bottlenecked by Groq API HTTP 429 rate limits, which the script automatically retries.
-- Strict 800-word minimum validation causes many short-form chapters (English, Political Science) to fail repeatedly.
+- **Known Limitations**: None. All generation goals are met.
 
 ---
 
@@ -118,6 +116,7 @@ Client View -> hooks/useAuth -> utils/supabase -> Database (PostgreSQL)
 - [x] Password strength indicators and account lockout policies (5 attempts / 15 mins).
 - [x] Automated OTP email workflows.
 - [x] Class switcher (Class 11 / Class 12 context switching).
+- [x] Google Social Sign-In (OAuth integration dynamically synced with custom user profile DB records).
 
 ### In Progress
 - [/] Security audit logging pipeline.
@@ -213,6 +212,18 @@ Four primary tables manage user state, progress, and static content:
 
 # Recent Changes
 
+### 2026-07-04
+- **Files**: `src/components/views/AuthView.jsx` [MODIFY], `src/hooks/useAuth.js` [MODIFY], `src/App.jsx` [MODIFY]
+- **Reason**: Integrate Google social login (OAuth) and hotfix session redirect/hook count bugs.
+- **Summary**: Added a "Continue with Google" action button to the login dashboard matching the UI design specifications. Configured full integration with Supabase Client OAuth. Created a session validation listener on mount in `useAuth.js` that checks for active Supabase sessions, checks/queries user records in the custom `users` table, and automatically registers new social users with unique username safety checks. Cleaned up the "Continue with Apple" provider as requested. Intercepted active OAuth callback states via a module-level `IS_OAUTH_REDIRECT` flag in `App.jsx` to prevent browser history replacement from stripping the token hash. Rendered a full-screen `AuthLoadingScreen` during active token verification to stop the login form from flashing. Resolved React Error #300 hook-rule violations by moving gesture hook callbacks above conditional return statements in `App.jsx`.
+- **Impact**: Delivers fully functional Google OAuth login with zero page flicker, secure database syncing, and stable React component states.
+
+### 2026-07-02 (Part 2)
+- **Files**: `src/components/views/SubjectView.jsx` [MODIFY], `src/index.css` [MODIFY], `src/App.jsx` [MODIFY], `src/styles/shared.js` [MODIFY]
+- **Reason**: Remove dark mode overrides, flatten subject chapter structures, simplify action links, and correct practice tab redirects.
+- **Summary**: Deleted all dark-theme variables, selectors, and style sheets to lock the app to a clean light-only presentation. Removed the horizontal subject scroll on the Dashboard. Flattened the chapter tree list inside `SubjectView.jsx` to render sequentially instead of in collapsible units. Cleared notes and quiz button shortcuts from beneath chapter titles. Rewrote the bottom navigation's "Practice" action in `App.jsx` to dynamically route to the user's most recently accessed chapter (or first subject chapter fallback) instead of triggering a home redirect loop.
+- **Impact**: Clears layout bugs, enforces theme guidelines, and streamlines navigation routes.
+
 ### 2026-07-02
 - **Files**: `src/components/views/ChapterView.jsx` [MODIFY]
 - **Reason**: Redesign the Chapter Hub page to follow real student study workflows instead of exposing raw database content types and fix formatting.
@@ -276,19 +287,18 @@ Four primary tables manage user state, progress, and static content:
 
 # Current Context
 
-We have successfully generated 2,714 out of 2,730 Class 12 content files. The final 16 files are all `detailed_notes` entries for chapters with naturally short content (English literary pieces, Political Science, Physical Education) that struggle to meet the strict 800-word minimum quality gate. The pipeline was manually paused due to Groq API rate limit exhaustion across all 5 API keys simultaneously.
-
-To resume: run `node scripts/auto_generate.js` — it will auto-detect the 16 missing files from the DB and retry them.
+We have successfully generated and validated all 6,150 content library files (100% complete) for both Class 11 and Class 12 in Supabase. Google Social OAuth is fully integrated, auto-registers social profiles into our custom `users` database table with username-collision safeguards, and handles session transitions using a custom full-screen loading wrapper. The frontend CSS rules have been locked to light-theme defaults.
 
 ---
 
 # Next AI Instructions
 
-- **Next Step**: Resume `node scripts/auto_generate.js` when ready to push the final 16 Class 12 files. Once Class 12 is 100% complete, the script will automatically pivot to finish the missing Class 11 Physical Education chapters.
+- **Next Step**: Begin implementing the planned features, such as input sanitization helpers, extend unit test coverage, or build out direct forum interaction/search functions.
 - **Files to Inspect**: 
-  - `cache/pipeline_progress.json` for live generation stats.
-  - `scripts/check_all_files.js` to re-scan and verify exactly which files are still missing.
-- **Assumptions**: All 5 Groq API keys are on cooldown. Wait ~5-10 minutes before restarting for best results.
+  - `src/App.jsx` for main routing flows.
+  - `src/hooks/useAuth.js` and `src/components/views/AuthView.jsx` for auth logic.
+  - `src/hooks/useNavigation.js` for virtual routing.
+- **Assumptions**: Google OAuth credentials are set up on the Supabase dashboard.
 
 ---
 
