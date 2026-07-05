@@ -213,6 +213,12 @@ Four primary tables manage user state, progress, and static content:
 # Recent Changes
 
 ### 2026-07-05
+- **Files**: `src/utils/cbseFormatLoader.js` [NEW], `src/App.jsx` [MODIFY], `src/components/views/PapersListView.jsx` [MODIFY]
+- **Reason**: Remove hardcoded blueprints and marks, dynamically loading CBSE formats and weights from the `/format` JSON directory.
+- **Summary**: Implemented `cbseFormatLoader` utilizing Vite's `import.meta.glob` to eager load, group, and deeply validate all official question paper format and chapter weightage JSON configurations inside the `/format/` folder. Replaced the static helper with dynamic prompts constructing sections, general instructions, and chapter weightages dynamically from the loaded configs. Updated `PapersListView` to display dynamic marks per paper from loaded config.
+- **Impact**: The mock paper generator is now 100% dynamic, automatically discovering new subjects or updating configuration values by simply adding/updating JSON files in `/format/`.
+
+### 2026-07-05 (Part 1)
 - **Files**: `src/App.jsx` [MODIFY]
 - **Reason**: Align generated sample papers with official, subject-specific CBSE blueprints and marks distributions.
 - **Summary**: Implemented `getCBSEBlueprint` mapping exact CBSE board exam parameters (maximum marks, total sections, general instructions, internal choice policies, case-based questions, and question counts) for all 12+ subjects. Integrated blueprint values dynamically in the paper generation prompt to guarantee authentic board exam structuring.
