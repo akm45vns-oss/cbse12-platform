@@ -213,6 +213,12 @@ Four primary tables manage user state, progress, and static content:
 # Recent Changes
 
 ### 2026-07-05
+- **Files**: `src/content-pipeline/exports/dbSeeder.js` [MODIFY], `scripts/check_seeding_status.js` [NEW], `api/generate-paper.js` [NEW], `src/utils/api.js` [MODIFY]
+- **Reason**: Fix CORS policy block on client-side Groq API requests and seed Class 11 contents.
+- **Summary**: Set up a serverless API proxy (`api/generate-paper.js`) hosted natively on Vercel to route Groq AI requests securely on the server-side, hiding API keys and bypassing browser CORS blocks. Integrated checking in `callClaude` to request `/api/generate-paper` in production and fallback to direct client-side fetch in local development. Seeded Class 11 content to database tables.
+- **Impact**: Resolves sample paper generation errors on production domains. Class 11/12 sample papers will now build successfully.
+
+### 2026-07-05 (Part 1)
 - **Files**: `src/content-pipeline/exports/dbSeeder.js` [MODIFY], `scripts/check_seeding_status.js` [NEW]
 - **Reason**: Seeding all Class 11 generated chapter notes and quiz sets to active database tables.
 - **Summary**: Updated `dbSeeder.js` to accept dynamic `CLASS_LEVEL` arguments and modified notes upsert logic to use a select-then-upsert query to bypass PostgreSQL unique index constraint limits. Ran seeder for Class 11 to populate 100% of Class 11 chapters (220 chapters) for notes and quiz sets in the `chapter_notes` and `quiz_sets` tables.
