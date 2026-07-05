@@ -8,7 +8,7 @@ const supabase = createClient(
   process.env.VITE_SUPABASE_ANON_KEY
 );
 
-const CLASS_LEVEL = "11";
+const CLASS_LEVEL = process.argv[2] || "11";
 
 function cleanOptionText(opt) {
   if (!opt) return "";
@@ -98,17 +98,39 @@ async function main() {
     // 1. Seed detailed notes
     if (detailed_notes && detailed_notes.markdown) {
       console.log(`📝 Seeding notes for: ${subject} — ${chapter}`);
-      const { error: notesErr } = await supabase
+      // Check if note already exists for this class_level, subject, chapter
+      const { data: existingNote, error: fetchErr } = await supabase
         .from("chapter_notes")
-        .upsert({
-          class_level: CLASS_LEVEL,
-          subject,
-          chapter,
-          notes: detailed_notes.markdown,
-          created_at: new Date().toISOString(),
-        }, {
-          onConflict: "subject,chapter"
-        });
+        .select("id")
+        .eq("class_level", CLASS_LEVEL)
+        .eq("subject", subject)
+        .eq("chapter", chapter)
+        .maybeSingle();
+
+      let notesErr = null;
+      if (existingNote) {
+        // Update existing note
+        const { error: updateErr } = await supabase
+          .from("chapter_notes")
+          .update({
+            notes: detailed_notes.markdown,
+            created_at: new Date().toISOString(),
+          })
+          .eq("id", existingNote.id);
+        notesErr = updateErr;
+      } else {
+        // Insert new note
+        const { error: insertErr } = await supabase
+          .from("chapter_notes")
+          .insert({
+            class_level: CLASS_LEVEL,
+            subject,
+            chapter,
+            notes: detailed_notes.markdown,
+            created_at: new Date().toISOString(),
+          });
+        notesErr = insertErr;
+      }
 
       if (notesErr) {
         console.error(`  ❌ Failed to seed notes:`, notesErr.message);
@@ -188,6 +210,7 @@ async function main() {
       await supabase
         .from("quiz_sets")
         .delete()
+        .eq("class_level", CLASS_LEVEL)
         .eq("subject", subject)
         .eq("chapter", chapter)
         .eq("set_number", 1);
