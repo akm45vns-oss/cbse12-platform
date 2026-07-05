@@ -28,10 +28,18 @@ export default async function handler(req, res) {
     process.env.VITE_GROQ_KEY_3,
     process.env.VITE_GROQ_KEY_4,
     process.env.VITE_GROQ_KEY_5,
+    process.env.GROQ_API_KEY,
+    process.env.GROQ_KEY,
+    process.env.VITE_GROQ_KEY,
   ].filter(Boolean);
 
   if (GROQ_KEYS.length === 0) {
-    return res.status(500).json({ error: "No Groq API keys configured on server" });
+    const availableEnvKeys = Object.keys(process.env).filter(
+      k => k.includes("GROQ") || k.includes("KEY") || k.includes("SUPABASE")
+    );
+    return res.status(500).json({ 
+      error: `No Groq API keys configured on server. Available keys: [${availableEnvKeys.join(", ")}]` 
+    });
   }
 
   let lastError;
