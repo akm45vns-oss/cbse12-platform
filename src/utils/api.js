@@ -11,6 +11,31 @@ const GROQ_KEYS = [
 let _groqKeyIndex = 0;
 
 export async function callClaude(prompt, maxTokens = 2000) {
+  // Check if we are running locally (development environment)
+  const isDev = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+
+  if (!isDev) {
+    try {
+      const res = await fetch("/api/generate-paper", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ prompt, maxTokens })
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        if (data.text) return data.text;
+      } else {
+        const err = await res.json().catch(() => ({}));
+        console.warn("[callClaude] Vercel Serverless proxy returned error:", err.error || res.statusText);
+      }
+    } catch (err) {
+      console.warn("[callClaude] Production Serverless proxy failed, falling back to direct Groq client fetch:", err.message);
+    }
+  }
+
   if (GROQ_KEYS.length === 0) {
     throw new Error("GROQ API KEYS MISSING — Add VITE_GROQ_KEY_1…VITE_GROQ_KEY_5 to .env");
   }
