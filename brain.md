@@ -213,6 +213,12 @@ Four primary tables manage user state, progress, and static content:
 # Recent Changes
 
 ### 2026-07-05
+- **Files**: `src/App.jsx` [MODIFY]
+- **Reason**: Align generated sample papers with official, subject-specific CBSE blueprints and marks distributions.
+- **Summary**: Implemented `getCBSEBlueprint` mapping exact CBSE board exam parameters (maximum marks, total sections, general instructions, internal choice policies, case-based questions, and question counts) for all 12+ subjects. Integrated blueprint values dynamically in the paper generation prompt to guarantee authentic board exam structuring.
+- **Impact**: AI-generated mock papers now exactly reflect actual CBSE board exams for all subjects, improving students' exam practice fidelity.
+
+### 2026-07-05 (Part 2)
 - **Files**: `src/content-pipeline/exports/dbSeeder.js` [MODIFY], `scripts/check_seeding_status.js` [NEW], `api/generate-paper.js` [NEW], `src/utils/api.js` [MODIFY]
 - **Reason**: Fix CORS policy block on client-side Groq API requests and seed Class 11 contents.
 - **Summary**: Set up a serverless API proxy (`api/generate-paper.js`) hosted natively on Vercel to route Groq AI requests securely on the server-side, hiding API keys and bypassing browser CORS blocks. Integrated checking in `callClaude` to request `/api/generate-paper` in production and fallback to direct client-side fetch in local development. Seeded Class 11 content to database tables.
