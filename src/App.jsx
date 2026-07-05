@@ -25,6 +25,7 @@ const PipelineDashboardView = lazy(() => import("./components/views/PipelineDash
 const LearnView = lazy(() => import("./components/views/LearnView").then(m => ({ default: m.LearnView })));
 const PracticeView = lazy(() => import("./components/views/PracticeView").then(m => ({ default: m.PracticeView })));
 const RevisionView = lazy(() => import("./components/views/RevisionView").then(m => ({ default: m.RevisionView })));
+import { cbseFormatLoader } from "./utils/cbseFormatLoader";
 import { FloatingForumButton, Breadcrumb } from "./components/common";
 import { globalStyles } from "./styles/shared";
 
@@ -118,262 +119,7 @@ const IS_OAUTH_REDIRECT = typeof window !== "undefined" && (
   window.location.search.includes("access_token")
 );
 
-// ===== CBSE SUBJECT-SPECIFIC BLUEPRINTS =====
-const getCBSEBlueprint = (subj, classLevel) => {
-  const normalized = subj.toLowerCase();
-  
-  if (normalized.includes("physics")) {
-    return {
-      marks: 70,
-      instructions: `1. This question paper has 5 Sections A, B, C, D and E.
-2. All sections are compulsory.
-3. Section A contains 16 multiple choice questions of 1 mark each (includes 12 standard MCQs and 4 Assertion-Reasoning questions).
-4. Section B contains 5 Very Short Answer (VSA) questions of 2 marks each.
-5. Section C contains 7 Short Answer (SA) questions of 3 marks each.
-6. Section D contains 2 Case-Based questions of 4 marks each.
-7. Section E contains 3 Long Answer (LA) questions of 5 marks each.
-8. There is no overall choice. However, internal choices are provided in some questions.`,
-      structure: `- **SECTION A**: 16 MCQs (Numbered 1 to 16, 1 mark each). Label questions 13 to 16 as "Assertion-Reasoning" questions where two statements (Assertion A and Reason R) are given.
-- **SECTION B**: 5 Questions (Numbered 17 to 21, 2 marks each).
-- **SECTION C**: 7 Questions (Numbered 22 to 28, 3 marks each).
-- **SECTION D**: 2 Case-Based/Source-Based Questions (Numbered 29 and 30, 4 marks each, based on a technical/contextual passage).
-- **SECTION E**: 3 Questions (Numbered 31 to 33, 5 marks each).`
-    };
-  }
-  
-  if (normalized.includes("chemistry")) {
-    return {
-      marks: 70,
-      instructions: `1. This question paper has 5 Sections A, B, C, D and E.
-2. All sections are compulsory.
-3. Section A contains 16 MCQs of 1 mark each (includes 12 standard MCQs and 4 Assertion-Reasoning questions).
-4. Section B contains 5 Very Short Answer (VSA) questions of 2 marks each.
-5. Section C contains 7 Short Answer (SA) questions of 3 marks each.
-6. Section D contains 2 Case-Based questions of 4 marks each.
-7. Section E contains 3 Long Answer (LA) questions of 5 marks each.`,
-      structure: `- **SECTION A**: 16 MCQs (Numbered 1 to 16, 1 mark each). Label questions 13 to 16 as "Assertion-Reasoning" questions.
-- **SECTION B**: 5 Questions (Numbered 17 to 21, 2 marks each).
-- **SECTION C**: 7 Questions (Numbered 22 to 28, 3 marks each).
-- **SECTION D**: 2 Case-Based/Source-Based Questions (Numbered 29 and 30, 4 marks each).
-- **SECTION E**: 3 Questions (Numbered 31 to 33, 5 marks each).`
-    };
-  }
 
-  if (normalized.includes("math")) {
-    return {
-      marks: 80,
-      instructions: `1. This question paper contains 5 Sections A, B, C, D and E. Each section is compulsory.
-2. Section A contains 20 MCQs of 1 mark each (includes 18 standard MCQs and 2 Assertion-Reason questions).
-3. Section B contains 5 Very Short Answer (VSA) questions of 2 marks each.
-4. Section C contains 6 Short Answer (SA) questions of 3 marks each.
-5. Section D contains 4 Long Answer (LA) questions of 5 marks each.
-6. Section E contains 3 Source-Based/Case-Based/Passage-Based integrated units of assessment questions of 4 marks each.`,
-      structure: `- **SECTION A**: 20 MCQs (Numbered 1 to 20, 1 mark each). Label questions 19 and 20 as "Assertion-Reasoning" questions.
-- **SECTION B**: 5 Questions (Numbered 21 to 25, 2 marks each).
-- **SECTION C**: 6 Questions (Numbered 26 to 31, 3 marks each).
-- **SECTION D**: 4 Questions (Numbered 32 to 35, 5 marks each).
-- **SECTION E**: 3 Case-Based Integrated Assessment Questions (Numbered 36 to 38, 4 marks each).`
-    };
-  }
-
-  if (normalized.includes("biology")) {
-    return {
-      marks: 70,
-      instructions: `1. This question paper contains 5 Sections A, B, C, D and E. All sections are compulsory.
-2. Section A contains 16 MCQs of 1 mark each (includes 12 standard MCQs and 4 Assertion-Reason questions).
-3. Section B contains 5 Very Short Answer (VSA) questions of 2 marks each.
-4. Section C contains 7 Short Answer (SA) questions of 3 marks each.
-5. Section D contains 2 Case-Based questions of 4 marks each.
-6. Section E contains 3 Long Answer (LA) questions of 5 marks each.`,
-      structure: `- **SECTION A**: 16 MCQs (Numbered 1 to 16, 1 mark each). Label questions 13 to 16 as Assertion-Reasoning.
-- **SECTION B**: 5 Questions (Numbered 17 to 21, 2 marks each).
-- **SECTION C**: 7 Questions (Numbered 22 to 28, 3 marks each).
-- **SECTION D**: 2 Case-Based Questions (Numbered 29 and 30, 4 marks each).
-- **SECTION E**: 3 Questions (Numbered 31 to 33, 5 marks each).`
-    };
-  }
-
-  if (normalized.includes("english")) {
-    return {
-      marks: 80,
-      instructions: `1. This question paper has three Sections: A, B and C.
-2. Section A: READING SKILLS (20 marks) - All questions are compulsory.
-3. Section B: CREATIVE WRITING SKILLS (20 marks) - Internal choices are provided.
-4. Section C: LITERATURE TEXTBOOK AND SUPPLEMENTARY READING TEXTS (40 marks) - Compulsory section with choices in individual questions.`,
-      structure: `- **SECTION A: READING SKILLS** (20 Marks)
-  - Question 1: Unseen Passage (10 MCQs/Short Questions, 1 mark each = 10 Marks)
-  - Question 2: Case-Based Unseen Passage (10 MCQs/Short Questions, 1 mark each = 10 Marks)
-- **SECTION B: CREATIVE WRITING SKILLS** (20 Marks)
-  - Question 3: Notice Writing (4 Marks, attempt 1 out of 2)
-  - Question 4: Formal/Informal Invitation/Reply (4 Marks, attempt 1 out of 2)
-  - Question 5: Letters (Job Application / Letter to Editor, 5 Marks, attempt 1 out of 2)
-  - Question 6: Article / Report Writing (5 Marks, attempt 1 out of 2)
-- **SECTION C: LITERATURE TEXTBOOK AND SUPPLEMENTARY READING TEXTS** (40 Marks)
-  - Question 7: Poetry Reference to Context from Flamingo (6 MCQs/Short Questions, 6 Marks)
-  - Question 8: Prose Reference to Context from Vistas (4 MCQs/Short Questions, 4 Marks)
-  - Question 9: Prose Reference to Context from Flamingo (6 MCQs/Short Questions, 6 Marks)
-  - Question 10: Short Answer Questions from Flamingo (Attempt 5 out of 6, 2 marks each = 10 Marks)
-  - Question 11: Short Answer Questions from Vistas (Attempt 2 out of 3, 2 marks each = 4 Marks)
-  - Question 12: Long Answer Question from Flamingo (1 out of 2, 5 Marks)
-  - Question 13: Long Answer Question from Vistas (1 out of 2, 5 Marks)`
-    };
-  }
-
-  if (normalized.includes("computer")) {
-    return {
-      marks: 70,
-      instructions: `1. This question paper contains 5 Sections A, B, C, D and E. Each section is compulsory.
-2. Section A contains 18 MCQs of 1 mark each.
-3. Section B contains 7 Very Short Answer (VSA) questions of 2 marks each.
-4. Section C contains 5 Short Answer (SA) questions of 3 marks each.
-5. Section D contains 3 Long Answer (LA) questions of 5 marks each.
-6. Section E contains 2 Case-Based questions of 4 marks each.`,
-      structure: `- **SECTION A**: 18 MCQs (Numbered 1 to 18, 1 mark each).
-- **SECTION B**: 7 Questions (Numbered 19 to 25, 2 marks each).
-- **SECTION C**: 5 Questions (Numbered 26 to 30, 3 marks each).
-- **SECTION D**: 3 Questions (Numbered 31 to 33, 5 marks each).
-- **SECTION E**: 2 Case-Based Questions (Numbered 34 and 35, 4 marks each, based on SQL/Database/Networking concept).`
-    };
-  }
-
-  if (normalized.includes("accountancy")) {
-    return {
-      marks: 80,
-      instructions: `1. This question paper contains 34 questions. All questions are compulsory.
-2. This question paper is divided into two Parts: Part A and Part B.
-3. Part A is compulsory for all students.
-4. Part A contains Part-Partnership Firms and Companies (Questions 1 to 26).
-5. Part B contains Analysis of Financial Statements (Questions 27 to 34).`,
-      structure: `- **PART A: Accounting for Partnership Firms and Companies** (60 Marks)
-  - Questions 1 to 16: 16 MCQs of 1 mark each.
-  - Questions 17 to 20: 4 Short Answer Questions of 3 marks each.
-  - Questions 21 to 22: 2 Short Answer Questions of 4 marks each.
-  - Questions 23 to 26: 4 Long Answer Questions of 6 marks each.
-- **PART B: Analysis of Financial Statements** (20 Marks)
-  - Questions 27 to 30: 4 MCQs of 1 mark each.
-  - Question 31: 1 Short Answer Question of 3 marks.
-  - Question 32: 1 Short Answer Question of 3 marks.
-  - Question 33: 1 Long Answer Question of 4 marks.
-  - Question 34: 1 Long Answer Question of 6 marks.`
-    };
-  }
-
-  if (normalized.includes("business")) {
-    return {
-      marks: 80,
-      instructions: `1. This question paper contains 34 questions. All questions are compulsory.
-2. Questions 1 to 20 are MCQs carrying 1 mark each.
-3. Questions 21 to 24 are Short Answer Questions carrying 3 marks each.
-4. Questions 25 to 30 are Short Answer Questions carrying 4 marks each.
-5. Questions 31 to 34 are Long Answer Questions carrying 6 marks each.`,
-      structure: `- **SECTION A**: 20 MCQs (Numbered 1 to 20, 1 mark each).
-- **SECTION B**: 4 Questions (Numbered 21 to 24, 3 marks each).
-- **SECTION C**: 6 Questions (Numbered 25 to 30, 4 marks each).
-- **SECTION D**: 4 Questions (Numbered 31 to 34, 6 marks each).`
-    };
-  }
-
-  if (normalized.includes("economics")) {
-    return {
-      marks: 80,
-      instructions: `1. This question paper contains two parts: Part A (Introductory Macroeconomics) and Part B (Indian Economic Development).
-2. All questions in both sections are compulsory.
-3. MCQs carry 1 mark each. Short Answer Questions-I carry 3 marks each. Short Answer Questions-II carry 4 marks each. Long Answer Questions carry 6 marks each.`,
-      structure: `- **PART A: Introductory Macroeconomics** (40 Marks)
-  - Questions 1 to 10: 10 MCQs of 1 mark each.
-  - Questions 11 to 12: 2 Short Answer Questions (SA-I) of 3 marks each.
-  - Questions 13 to 14: 2 Short Answer Questions (SA-II) of 4 marks each.
-  - Questions 15 to 17: 3 Long Answer Questions (LA) of 6 marks each.
-- **PART B: Indian Economic Development** (40 Marks)
-  - Questions 18 to 27: 10 MCQs of 1 mark each.
-  - Questions 28 to 29: 2 Short Answer Questions (SA-I) of 3 marks each.
-  - Questions 30 to 31: 2 Short Answer Questions (SA-II) of 4 marks each.
-  - Questions 32 to 34: 3 Long Answer Questions (LA) of 6 marks each.`
-    };
-  }
-
-  if (normalized.includes("history")) {
-    return {
-      marks: 80,
-      instructions: `1. This question paper contains 5 Sections A, B, C, D and E.
-2. Section A contains 21 MCQs of 1 mark each.
-3. Section B contains 6 Short Answer questions of 3 marks each.
-4. Section C contains 3 Long Answer questions of 8 marks each.
-5. Section D contains 3 Source-Based/Passage-Based questions of 4 marks each.
-6. Section E contains 1 Map-Based question of 5 marks.`,
-      structure: `- **SECTION A**: 21 MCQs (Numbered 1 to 21, 1 mark each).
-- **SECTION B**: 6 Questions (Numbered 22 to 27, 3 marks each).
-- **SECTION C**: 3 Questions (Numbered 28 to 30, 8 marks each).
-- **SECTION D**: 3 Source-Based Questions (Numbered 31 to 33, 4 marks each).
-- **SECTION E**: 1 Map-Based Question (Question 34, 5 marks total, consisting of 2 identification and 3 location parts).`
-    };
-  }
-
-  if (normalized.includes("political")) {
-    return {
-      marks: 80,
-      instructions: `1. All questions are compulsory.
-2. Section A contains 12 MCQs of 1 mark each.
-3. Section B contains 6 Short Answer questions of 2 marks each.
-4. Section C contains 5 Short Answer questions of 4 marks each.
-5. Section D contains 3 Passage/Map/Cartoon-Based questions of 4 marks each.
-6. Section E contains 4 Long Answer questions of 6 marks each.`,
-      structure: `- **SECTION A**: 12 MCQs (Numbered 1 to 12, 1 mark each).
-- **SECTION B**: 6 Questions (Numbered 13 to 18, 2 marks each).
-- **SECTION C**: 5 Questions (Numbered 19 to 23, 4 marks each).
-- **SECTION D**: 3 Questions (Numbered 24 to 26, 4 marks each, representing cartoon-based, map-based, and passage-based analysis).
-- **SECTION E**: 4 Questions (Numbered 27 to 30, 6 marks each).`
-    };
-  }
-
-  if (normalized.includes("geography")) {
-    return {
-      marks: 70,
-      instructions: `1. This question paper has 5 Sections A, B, C, D and E.
-2. Section A contains 17 MCQs of 1 mark each.
-3. Section B contains 4 Very Short Answer questions of 2 marks each.
-4. Section C contains 5 Short Answer questions of 3 marks each.
-5. Section D contains 2 Source-Based questions of 4 marks each.
-6. Section E contains 2 Map-Based questions (5 marks each - World and India).`,
-      structure: `- **SECTION A**: 17 MCQs (Numbered 1 to 17, 1 mark each).
-- **SECTION B**: 4 Questions (Numbered 18 to 21, 2 marks each).
-- **SECTION C**: 5 Questions (Numbered 22 to 26, 3 marks each).
-- **SECTION D**: 2 Source-Based Questions (Numbered 27 and 28, 4 marks each).
-- **SECTION E**: 2 Map-Based Questions (Numbered 29 and 30, 5 marks each - World Map and India Map respectively).`
-    };
-  }
-
-  if (normalized.includes("physical") || normalized.includes("pe")) {
-    return {
-      marks: 70,
-      instructions: `1. The question paper consists of 5 sections and 37 questions.
-2. Section A contains 18 MCQs carrying 1 mark each.
-3. Section B contains 5 Very Short Answer Questions carrying 2 marks each.
-4. Section C contains 5 Short Answer Questions carrying 3 marks each.
-5. Section D contains 3 Case-Based questions carrying 4 marks each.
-6. Section E contains 3 Long Answer Questions carrying 5 marks each.`,
-      structure: `- **SECTION A**: 18 MCQs (Numbered 1 to 18, 1 mark each).
-- **SECTION B**: 5 Questions (Numbered 19 to 23, 2 marks each).
-- **SECTION C**: 5 Questions (Numbered 24 to 28, 3 marks each).
-- **SECTION D**: 3 Case-Study Based Questions (Numbered 29 to 31, 4 marks each).
-- **SECTION E**: 3 Questions (Numbered 32 to 34, 5 marks each).`
-    };
-  }
-
-  // General Fallback
-  return {
-    marks: 80,
-    instructions: `1. All questions are compulsory.
-2. Section A contains MCQs of 1 mark each.
-3. Section B contains Very Short Answer questions of 2 marks each.
-4. Section C contains Short Answer questions of 3 marks each.
-5. Section D contains Long Answer questions of 5 marks each.`,
-    structure: `- **SECTION A**: MCQs (1 mark each).
-- **SECTION B**: Very Short Answer questions (2 marks each).
-- **SECTION C**: Short Answer questions (3 marks each).
-- **SECTION D**: Long Answer questions (5 marks each).`
-  };
-};
 
 // ===== MAIN APP =====
 export default function App() {
@@ -741,26 +487,28 @@ IMPORTANT: Write ORIGINAL content. Use your own explanations, examples, and stru
 
     try {
       if (controller.signal.aborted) return;
-      const subjCurriculum = activeCurriculum[subj];
-      const syllabusInfo = subjCurriculum
-        ? subjCurriculum.units.map(unit => `- ${unit.name}: ${unit.chapters.join(", ")}`).join("\n")
-        : "";
 
-      const blueprint = getCBSEBlueprint(subj, selectedClass);
+      // 1. Load the CBSE metadata dynamically
+      const metadata = cbseFormatLoader.getSubjectMetadata(subj);
 
-      const prompt = `Generate a realistic, full-length, and professionally formatted Class ${selectedClass} CBSE Board Examination Sample Paper for ${subj} (Set ${setNum}) of exactly ${blueprint.marks} Marks.
+      // 2. Build the CBSE blueprint texts dynamically
+      const instructionsText = cbseFormatLoader.buildInstructionsText(metadata);
+      const sectionsText = cbseFormatLoader.buildSectionsText(metadata);
+      const syllabusWeightageText = cbseFormatLoader.buildSyllabusWeightageText(metadata);
+
+      const prompt = `Generate a realistic, full-length, and professionally formatted Class ${selectedClass} CBSE Board Examination Sample Paper for ${subj} (Set ${setNum}) of exactly ${metadata.theoryMarks} Marks.
       
-Here is the official CBSE Class ${selectedClass} syllabus for ${subj} that you MUST follow:
-${syllabusInfo}
+Here is the official CBSE Class ${selectedClass} chapter list and expected marks weightages that you MUST strictly use to cover the complete syllabus:
+${syllabusWeightageText}
 
-The question paper MUST strictly adhere to the following official CBSE blueprint structure:
-${blueprint.structure}
+The question paper MUST strictly adhere to the following official CBSE sections and marks distribution:
+${sectionsText}
 
 General Instructions to print at the top of the paper:
-${blueprint.instructions}
+${instructionsText}
 
 Format Guidelines:
-1. Include the Header containing "CBSE CLASS ${selectedClass} SAMPLE PAPER (SET ${setNum})", "SUBJECT: ${subj.toUpperCase()}", "TIME ALLOWED: 3 HOURS", "MAXIMUM MARKS: ${blueprint.marks}".
+1. Include the Header containing "CBSE CLASS ${selectedClass} SAMPLE PAPER (SET ${setNum})", "SUBJECT: ${subj.toUpperCase()} (Code: ${metadata.subjectCode})", "TIME ALLOWED: ${metadata.duration}", "MAXIMUM MARKS: ${metadata.theoryMarks}".
 2. Output the "GENERAL INSTRUCTIONS" clearly.
 3. Include Section Headers (e.g., **SECTION A**, **SECTION B**, etc.).
 4. For multiple-choice questions (MCQs), you MUST list each option on its own individual line. Never place options inline or on the same line as the question. For example:
@@ -778,11 +526,12 @@ Format Guidelines:
       setPaper(text);
     } catch (e) {
       if (e.name !== 'AbortError') {
-        setPaper("❌ Error generating sample paper. Please try again.");
+        console.error("[genPaper] Error during sample paper generation:", e);
+        setPaper(`❌ Error generating sample paper: ${e.message || e}`);
       }
     }
     setLoading(false);
-  }, [selectedClass, activeCurriculum]);
+  }, [selectedClass]);
 
   const submitQuiz = useCallback(async () => {
     let sc = 0;
@@ -905,6 +654,17 @@ Format Guidelines:
     
     return items;
   };
+
+  // Get dynamic theory marks for the active subject
+  const activeSubjectMarks = (() => {
+    if (!nav.subject) return 80;
+    try {
+      const meta = cbseFormatLoader.getSubjectMetadata(nav.subject);
+      return meta.theoryMarks;
+    } catch {
+      return 80; // Default fallback if not found
+    }
+  })();
 
   const streak = (() => {
     try { return JSON.parse(localStorage.getItem('loginStreak') || '{}')} catch { return {}; }
@@ -1290,6 +1050,7 @@ Format Guidelines:
                 loading={loading}
                 loadMsg={loadMsg}
                 loadEmoji={loadEmoji}
+                maxMarks={activeSubjectMarks}
                 onSelectPaper={(setNum) => {
                   setSelectedPaperSet(setNum);
                   genPaper(nav.subject, setNum);

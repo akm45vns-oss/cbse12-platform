@@ -1,22 +1,20 @@
 import { Badge, LoadingScreen } from "../common";
 import { useState, useEffect, memo } from "react";
-export const PapersListView = memo(function PapersListView({ subject, curriculumData, loading, loadMsg, loadEmoji, onSelectPaper }) {
+export const PapersListView = memo(function PapersListView({ subject, curriculumData, loading, loadMsg, loadEmoji, maxMarks = 80, onSelectPaper }) {
   const S = curriculumData;
   const [papers, setPapers] = useState([]);
   const [papersLoading, setPapersLoading] = useState(true);
 
   useEffect(() => {
-    const isPracticalSubject = ["Physics", "Chemistry", "Biology", "Computer Science", "Physical Education"].includes(subject);
-    const marks = isPracticalSubject ? 70 : 80;
     setPapers([
-      { set_number: 1, total_marks: marks },
-      { set_number: 2, total_marks: marks },
-      { set_number: 3, total_marks: marks },
-      { set_number: 4, total_marks: marks },
-      { set_number: 5, total_marks: marks }
+      { set_number: 1, total_marks: maxMarks },
+      { set_number: 2, total_marks: maxMarks },
+      { set_number: 3, total_marks: maxMarks },
+      { set_number: 4, total_marks: maxMarks },
+      { set_number: 5, total_marks: maxMarks }
     ]);
     setPapersLoading(false);
-  }, [subject]);
+  }, [subject, maxMarks]);
 
   if (papersLoading || loading) {
     return <LoadingScreen message={loadMsg || `Loading sample papers...`} emoji={loadEmoji || "📄"} />;

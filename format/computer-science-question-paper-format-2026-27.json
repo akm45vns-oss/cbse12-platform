@@ -1,0 +1,71 @@
+{
+  "subject": "Computer Science",
+  "subjectCode": "083",
+  "session": "2026-27",
+  "board": "CBSE",
+  "marks": {
+    "theory": 70,
+    "practical": 30,
+    "total": 100
+  },
+  "exam": {
+    "duration": "3 Hours",
+    "readingTime": "15 Minutes",
+    "maximumMarks": 70
+  },
+  "competencyWeightage": {
+    "remembering_understanding": 35,
+    "application": 35,
+    "analysis_evaluation_creation": 30
+  },
+  "internalChoice": {
+    "available": true,
+    "percentage": "33%"
+  },
+  "questionPaper": {
+    "sections": [
+      {
+        "section": "A",
+        "questionType": "MCQ + Assertion Reason",
+        "marksPerQuestion": 1,
+        "questions": 18,
+        "totalMarks": 18
+      },
+      {
+        "section": "B",
+        "questionType": "Short Answer I",
+        "marksPerQuestion": 2,
+        "questions": 7,
+        "totalMarks": 14
+      },
+      {
+        "section": "C",
+        "questionType": "Short Answer II",
+        "marksPerQuestion": 3,
+        "questions": 7,
+        "totalMarks": 21
+      },
+      {
+        "section": "D",
+        "questionType": "Long Answer",
+        "marksPerQuestion": 5,
+        "questions": 3,
+        "totalMarks": 15
+      },
+      {
+        "section": "E",
+        "questionType": "Case Study",
+        "marksPerQuestion": 4,
+        "questions": 2,
+        "totalMarks": 8
+      }
+    ]
+  },
+  "practical": {
+    "totalMarks": 30,
+    "pythonProgramming": 12,
+    "sql": 6,
+    "project": 8,
+    "viva": 4
+  }
+}
