@@ -177,6 +177,7 @@ function loadCheckpoint() {
   return {
     started_at: new Date().toISOString(),
     completed_chapters: [],
+    in_progress: null,
     stats: {
       total_checked: 0,
       passed_p1: 0,
@@ -595,7 +596,7 @@ function removeDuplicates(questions) {
  * Full audit pipeline for a single chapter.
  * Returns a ChapterReport object.
  */
-async function processChapter(task, isDryRun) {
+async function processChapter(task, isDryRun, cp, startTimeMs, RUNTIME_LIMIT_MS) {
   const { classLevel, subject, chapter } = task;
   const label = `[Class ${classLevel}] ${subject} — ${chapter}`;
 
@@ -653,8 +654,29 @@ async function processChapter(task, isDryRun) {
   console.log(`  📋 Total questions to audit: ${report.total}`);
 
   const auditedQuestions = [];
+  let startIndex = 0;
 
-  for (let qi = 0; qi < deduped.length; qi++) {
+  if (cp && cp.in_progress && cp.in_progress.chapterKey === chapterKey(task)) {
+    startIndex = cp.in_progress.last_index + 1;
+    auditedQuestions.push(...cp.in_progress.auditedQuestions);
+    Object.assign(report, cp.in_progress.report);
+    console.log(`  🔄 Resuming chapter from question ${startIndex + 1}...`);
+    cp.in_progress = null;
+  }
+
+  for (let qi = startIndex; qi < deduped.length; qi++) {
+    if (startTimeMs && RUNTIME_LIMIT_MS && (Date.now() - startTimeMs > RUNTIME_LIMIT_MS)) {
+      console.log(`\n⏳ 3.5 hour execution limit reached mid-chapter! Saving progress...`);
+      cp.in_progress = {
+        chapterKey: chapterKey(task),
+        last_index: qi - 1,
+        auditedQuestions,
+        report
+      };
+      saveCheckpoint(cp);
+      console.log(`✅ Mid-chapter progress saved. Exiting gracefully to yield to the cloud runner...`);
+      process.exit(0);
+    }
     // Normalise field names — actual DB schema uses:
     //   question, options, correct_answer, explanation, difficulty, topic
     // Legacy/pipeline schema uses: q, opts, ans, exp
@@ -932,11 +954,6 @@ async function main() {
   const startTimeMs = Date.now();
 
   for (const task of chapters) {
-    if (Date.now() - startTimeMs > RUNTIME_LIMIT_MS) {
-      console.log(`\n⏳ 3.5 hour execution limit reached! Exiting gracefully to yield to the next scheduled cloud runner...`);
-      break;
-    }
-
     const key = chapterKey(task);
 
     // Skip completed chapters
@@ -956,7 +973,7 @@ async function main() {
     console.log(`\n▶  [Class ${task.classLevel}] ${task.subject} — ${task.chapter}`);
     console.log(`   Unit: ${task.unit}`);
 
-    const report = await processChapter(task, DRY_RUN);
+    const report = await processChapter(task, DRY_RUN, cp, startTimeMs, RUNTIME_LIMIT_MS);
     allReports.push(report);
 
     // Update aggregate stats
