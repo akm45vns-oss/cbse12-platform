@@ -974,13 +974,11 @@ async function main() {
     console.log(`   📊 Total: ${report.total} | ❌ P1 fails: ${report.failed_p1} | ❌ P2 fails: ${report.failed_p2} | 🔄 Regen: ${report.regenerated} | 📝 Exp fixes: ${report.explanation_fixed} | 🔁 Dupes removed: ${report.duplicates_removed}`);
 
     // Mark chapter as complete and save checkpoint
-    if (!DRY_RUN) {
-      completedSet.add(key);
-      cp.completed_chapters = Array.from(completedSet);
-      cp.stats = stats;
-      cp.last_updated = new Date().toISOString();
-      saveCheckpoint(cp);
-    }
+    completedSet.add(key);
+    cp.completed_chapters = Array.from(completedSet);
+    cp.stats = stats;
+    cp.last_updated = new Date().toISOString();
+    saveCheckpoint(cp);
   }
 
   // ── Final summary ──

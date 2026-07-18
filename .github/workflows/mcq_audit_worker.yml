@@ -28,7 +28,7 @@ jobs:
         run: npm ci
 
       - name: Run Audit Script
-        run: node scripts/audit_mcqs.js --class 12
+        run: node scripts/audit_mcqs.js --class 12 --dry-run
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
