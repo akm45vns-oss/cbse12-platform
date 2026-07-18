@@ -1,0 +1,48 @@
+name: Background MCQ Audit Worker
+
+on:
+  schedule:
+    # Run every 4 hours automatically
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+    # Allow manual triggers from the GitHub UI
+
+jobs:
+  audit-worker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360 # 6 hours max limit
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          # Needs full history or token to allow committing back the checkpoint
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Audit Script
+        run: node scripts/audit_mcqs.js --class 12
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          VITE_GROQ_KEY_1: ${{ secrets.VITE_GROQ_KEY_1 }}
+          VITE_GROQ_KEY_2: ${{ secrets.VITE_GROQ_KEY_2 }}
+          VITE_GROQ_KEY_3: ${{ secrets.VITE_GROQ_KEY_3 }}
+          VITE_GROQ_KEY_4: ${{ secrets.VITE_GROQ_KEY_4 }}
+          VITE_GROQ_KEY_5: ${{ secrets.VITE_GROQ_KEY_5 }}
+
+      - name: Commit Checkpoint Progress
+        if: always()
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add cache/mcq_audit_checkpoint.json
+          git commit -m "chore: Auto-update MCQ audit checkpoint" || echo "No changes to commit"
+          git push
