@@ -20,7 +20,7 @@
   "last_updated": "2026-07-15T02:40:33.863Z",
   "in_progress": {
     "chapterKey": "12||Physics||Magnetism and Matter",
-    "last_index": 28,
+    "last_index": 51,
     "auditedQuestions": [
       {
         "question": "A bar magnet is suspended in a uniform magnetic field. What will be its equilibrium position?",
@@ -427,6 +427,328 @@
         "difficulty": "Medium",
         "topic": "Magnetic Properties of Materials",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the unit of magnetic field strength?",
+        "options": [
+          "Tesla",
+          "Weber",
+          "Ampere",
+          "Newton"
+        ],
+        "correct_answer": 0,
+        "explanation": "The unit of magnetic field strength is the Tesla, which is defined as one weber per square meter.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the process by which a magnet loses its magnetism?",
+        "options": [
+          "Demagnetization",
+          "Remagnetization",
+          "Magnetization",
+          "Electromagnetic induction"
+        ],
+        "correct_answer": 0,
+        "explanation": "Demagnetization is the process by which a magnet loses its magnetism, either due to heat, mechanical stress, or external magnetic fields.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A solenoid is a type of coil that produces a magnetic field when an electric current flows through it. What is the direction of the magnetic field inside the solenoid?",
+        "options": [
+          "From north to south",
+          "From south to north",
+          "Radially outward",
+          "Radially inward"
+        ],
+        "correct_answer": 1,
+        "explanation": "According to the NCERT textbook, when an electric current flows through a solenoid, it produces a magnetic field similar to that of a bar magnet. The direction of the magnetic field inside the solenoid is from the south pole to the north pole, as per the right-hand rule. This is because when we curl our fingers in the direction of the current flow, our thumb points towards the north pole, indicating the direction of the magnetic field. The other options are incorrect as the magnetic field does not flow from north to south, or in any other direction, inside the solenoid.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the material that is weakly repelled by a magnetic field?",
+        "options": [
+          "Ferromagnetic",
+          "Paramagnetic",
+          "Diamagnetic",
+          "Superparamagnetic"
+        ],
+        "correct_answer": 2,
+        "explanation": "Diamagnetic materials are weakly repelled by a magnetic field, as they have a small, negative magnetic susceptibility.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A bar magnet has a magnetic moment of 2 A-m^2. What is the magnetic field strength at a point on its axis at a distance of 5 cm from the center of the magnet?",
+        "options": [
+          "0.4 T",
+          "0.8 T",
+          "1.2 T",
+          "1.6 T"
+        ],
+        "correct_answer": 2,
+        "explanation": "The magnetic field strength at a point on the axis of a bar magnet is given by the formula B = (μ₀ \\* 2M) / (4π \\* r³), where μ₀ is the permeability of free space, M is the magnetic moment, and r is the distance from the center of the magnet. Using the given values of M = 2 A-m² and r = 5 cm = 0.05 m, and the value of μ₀ = 4π × 10⁻⁷ T-m/A, we can calculate the magnetic field strength to be approximately 1.2 T. The other options are incorrect because they do not match the calculated value based on the formula, which is derived from the Biot-Savart law and is a fundamental concept in magnetism as per the NCERT textbook. This calculation assumes ideal conditions and neglects any external factors that may affect the magnetic field.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the primary reason for the existence of domains in ferromagnetic materials, allowing them to exhibit spontaneous magnetization?",
+        "options": [
+          "Thermal energy aligns the dipoles",
+          "Exchange coupling between atoms leads to alignment",
+          "Electric fields induce dipole alignment",
+          "Magnetic monopoles within the material cause alignment"
+        ],
+        "correct_answer": 1,
+        "explanation": "The correct answer is based on the concept that in ferromagnetic materials, the primary reason for the existence of domains and spontaneous magnetization is the exchange coupling between atoms. This coupling leads to the alignment of magnetic dipoles, resulting in domains. Thermal energy does not align dipoles but rather disrupts their alignment. Electric fields do not directly induce dipole alignment in the context of ferromagnetism. Magnetic monopoles, as described in the context of ferromagnetism, do not cause alignment; rather, the concept of monopoles is often used to describe the poles of a magnet, which are a result of aligned dipoles.",
+        "difficulty": "Medium",
+        "topic": "Magnetic Properties of Materials",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A ferromagnetic material is heated from 0°C to 100°C. What happens to its magnetic susceptibility?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains the same",
+          "Depends on the type of material"
+        ],
+        "correct_answer": 1,
+        "explanation": "Magnetic susceptibility is a measure of how easily a material can be magnetized. As a ferromagnetic material is heated, its magnetic susceptibility decreases, indicating that it becomes less easily magnetized.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the nature of the magnetic field inside a bar magnet?",
+        "options": [
+          "The magnetic field is zero inside a bar magnet",
+          "The magnetic field is constant and uniform inside a bar magnet",
+          "The magnetic field is parallel to the axis of the magnet and has the same magnitude throughout",
+          "The magnetic field lines go from the south pole to the north pole inside the magnet"
+        ],
+        "correct_answer": 2,
+        "explanation": "The correct answer is that the magnetic field is parallel to the axis of the magnet and has the same magnitude throughout. This is because the magnetic field lines emerge from the north pole and enter the south pole outside the magnet, but inside the magnet, they are parallel to the axis and have the same magnitude throughout. Option A is incorrect because the magnetic field is not zero inside a bar magnet. Option B is incorrect because while the magnetic field is constant in direction, it is not necessarily uniform in magnitude throughout the entire magnet. Option D is incorrect because the magnetic field lines go from the north pole to the south pole outside the magnet, but inside, they are directed from the south pole to the north pole.",
+        "difficulty": "Medium",
+        "topic": "Bar Magnets",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A diamagnetic material is placed in a magnetic field. What is the direction of the force experienced by the material?",
+        "options": [
+          "Towards the magnetic field",
+          "Away from the magnetic field",
+          "Perpendicular to the magnetic field",
+          "Depends on the orientation of the material"
+        ],
+        "correct_answer": 1,
+        "explanation": "Diamagnetic materials are weakly repelled by magnetic fields. The force experienced by a diamagnetic material is directed away from the magnetic field.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A magnet is placed inside a coil of wire. What is the direction of the induced current when the magnet is moved away from the coil?",
+        "options": [
+          "Clockwise",
+          "Counter-clockwise",
+          "No current flows",
+          "Depends on the orientation of the magnet"
+        ],
+        "correct_answer": 1,
+        "explanation": "When the magnet is moved away from the coil, the magnetic flux linked with the coil decreases, inducing an emf in the coil. According to Lenz's law, the induced current flows in a direction such that it opposes the decrease in magnetic flux, which is achieved by the induced current generating a magnetic field in the same direction as the original field. As per the right-hand rule, this induced current flows in a counter-clockwise direction when viewed from the side of the coil facing the magnet. The other options are incorrect because the induced current must flow in a direction that generates a magnetic field opposing the change in flux, which in this case is a counter-clockwise direction.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A bar magnet is suspended in a uniform magnetic field. Which of the following statements is correct?",
+        "options": [
+          "The bar magnet will be in unstable equilibrium.",
+          "The bar magnet will be in stable equilibrium.",
+          "The bar magnet will be in neutral equilibrium.",
+          "The bar magnet will not be in equilibrium."
+        ],
+        "correct_answer": 1,
+        "explanation": "When a bar magnet is suspended in a uniform magnetic field, it will be in stable equilibrium because the magnetic field will provide a restoring torque to any displacement of the magnet.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the primary reason for the Earth's magnetic field being non-uniform?",
+        "options": [
+          "Variation in the Earth's radius",
+          "Presence of magnetic materials in the Earth's core",
+          "Differences in the Earth's temperature at different locations",
+          "Interaction with the solar wind"
+        ],
+        "correct_answer": 1,
+        "explanation": "The Earth's magnetic field is generated by the movement of molten iron in the Earth's outer core. The presence of magnetic materials in the Earth's core is the primary reason for the Earth's magnetic field being non-uniform. The other options are incorrect because variation in the Earth's radius does not significantly affect the magnetic field, differences in temperature do not directly impact the magnetic field, and interaction with the solar wind is an external factor that does not cause non-uniformity in the Earth's magnetic field.",
+        "difficulty": "Medium",
+        "topic": "Earth's Magnetism",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the orientation of a diamagnetic substance in an external magnetic field?",
+        "options": [
+          "It is oriented parallel to the field",
+          "It is oriented antiparallel to the field",
+          "It is oriented at an angle of 45 degrees to the field",
+          "It is not affected by the field"
+        ],
+        "correct_answer": 1,
+        "explanation": "Diamagnetic substances are weakly repelled by a magnetic field. When placed in an external magnetic field, they orient themselves in a way that the induced magnetic moment is in the opposite direction to the applied field, which means they are oriented antiparallel to the field. This is because the induced magnetic moment in a diamagnetic substance is always opposite to the applied field, resulting in a repulsive force. The other options are incorrect because diamagnetic substances do not orient themselves parallel to the field, at an angle of 45 degrees, or remain unaffected by the field.",
+        "difficulty": "Medium",
+        "topic": "Magnetic properties of materials",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A solenoid is connected to a battery. Which of the following will happen?",
+        "options": [
+          "The solenoid will produce a magnetic field.",
+          "The solenoid will not produce a magnetic field.",
+          "The solenoid will produce a magnetic field in the opposite direction.",
+          "The solenoid will produce a magnetic field in the same direction as the current."
+        ],
+        "correct_answer": 0,
+        "explanation": "When a solenoid is connected to a battery, it will produce a magnetic field in the direction of the current flowing through it, according to the right-hand rule.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A magnet is placed near a ferromagnetic material. Which of the following will happen?",
+        "options": [
+          "The ferromagnetic material will not be affected.",
+          "The ferromagnetic material will be magnetized.",
+          "The ferromagnetic material will demagnetize.",
+          "The ferromagnetic material will be repelled by the magnet."
+        ],
+        "correct_answer": 1,
+        "explanation": "When a magnet is placed near a ferromagnetic material, it will magnetize the material because the magnetic field of the magnet will induce magnetization in the material.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A current-carrying wire is placed in a magnetic field. Which of the following will happen?",
+        "options": [
+          "The wire will experience a force.",
+          "The wire will not experience a force.",
+          "The wire will experience a torque.",
+          "The wire will experience a pressure."
+        ],
+        "correct_answer": 0,
+        "explanation": "When a current-carrying wire is placed in a magnetic field, it will experience a force due to the interaction between the magnetic field and the current flowing through the wire, according to Fleming's left-hand rule.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A magnet is placed near a diamagnetic material. Which of the following will happen?",
+        "options": [
+          "The diamagnetic material will be magnetized.",
+          "The diamagnetic material will demagnetize.",
+          "The diamagnetic material will be repelled by the magnet.",
+          "The diamagnetic material will be attracted to the magnet."
+        ],
+        "correct_answer": 2,
+        "explanation": "When a magnet is placed near a diamagnetic material, it will repel the material because the magnetic field of the magnet will induce a magnetic moment in the material that is opposite to the direction of the magnetic field.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the primary reason for the difference in the magnetic properties of diamagnetic, paramagnetic, and ferromagnetic materials?",
+        "options": [
+          "Difference in the atomic number of the elements",
+          "Difference in the number of unpaired electrons in the atoms",
+          "Difference in the crystal structure of the materials",
+          "Difference in the temperature of the materials"
+        ],
+        "correct_answer": 1,
+        "explanation": "The primary reason for the difference in the magnetic properties of diamagnetic, paramagnetic, and ferromagnetic materials is the difference in the number of unpaired electrons in the atoms. Diamagnetic materials have no unpaired electrons, paramagnetic materials have some unpaired electrons, and ferromagnetic materials have a large number of unpaired electrons, which are aligned in the same direction, resulting in strong magnetic properties. The other options are incorrect because the atomic number, crystal structure, and temperature of the materials are not the primary reasons for the difference in their magnetic properties.",
+        "difficulty": "Medium",
+        "topic": "Magnetic properties of materials",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A bar magnet is cut into two equal halves along its length. What is the magnetic moment of each half compared to the original magnetic moment of the bar magnet?",
+        "options": [
+          "It becomes four times",
+          "It becomes two times",
+          "It becomes half",
+          "It becomes one-fourth"
+        ],
+        "correct_answer": 2,
+        "explanation": "When a bar magnet is cut into two equal halves along its length, each half becomes a smaller magnet with its own north and south poles. The magnetic moment of each half is proportional to its length and pole strength. Since the length is halved, the magnetic moment of each half becomes half of the original magnetic moment of the bar magnet. This is because the magnetic moment is directly proportional to the length of the magnet.",
+        "difficulty": "Medium",
+        "topic": "Bar Magnets and Magnetic Moment",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A compass needle placed in a uniform magnetic field will always point towards the",
+        "options": [
+          "North Pole",
+          "South Pole",
+          "East",
+          "West"
+        ],
+        "correct_answer": 0,
+        "explanation": "A compass needle placed in a uniform magnetic field will always point towards the North Pole because the north pole of the compass needle is a magnetic north pole, which is attracted to the magnetic south pole, and since the magnetic field is uniform, the compass needle aligns itself in the direction of the magnetic field. According to the NCERT textbook, the north pole of one magnet is attracted to the south pole of another magnet, and since the earth's magnetic field has a north pole near the geographic south pole, a compass needle points towards the geographic north. The other options are incorrect because the compass needle does not point towards the south pole in a uniform magnetic field, nor does it point towards the center or any other direction. The correct alignment is due to the magnetic properties of the compass needle and the earth's magnetic field, as explained in the NCERT textbook.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the orientation of a diamagnetic substance in an external magnetic field?",
+        "options": [
+          "It is aligned parallel to the magnetic field",
+          "It is aligned antiparallel to the magnetic field",
+          "It is oriented at an angle of 45 degrees to the magnetic field",
+          "It remains unaffected by the magnetic field"
+        ],
+        "correct_answer": 1,
+        "explanation": "Diamagnetic substances are weakly repelled by a magnetic field. When placed in an external magnetic field, they tend to align themselves in a direction antiparallel to the magnetic field, meaning their magnetic moments are oriented opposite to the direction of the external field. This is because the induced magnetic moment in a diamagnetic material is opposite to the direction of the applied magnetic field, resulting in a repulsive force. Options A, C, and D are incorrect as diamagnetic materials do not align parallel to the field, are not oriented at an angle of 45 degrees, and are indeed affected by the magnetic field.",
+        "difficulty": "Medium",
+        "topic": "Magnetic Properties of Materials",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A diamagnetic substance is",
+        "options": [
+          "Weakly repelled by a magnetic field",
+          "Strongly attracted to a magnetic field",
+          "Weakly attracted to a magnetic field",
+          "Strongly repelled by a magnetic field"
+        ],
+        "correct_answer": 0,
+        "explanation": "A diamagnetic substance is weakly repelled by a magnetic field due to the induced magnetic moment.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "The magnetic moment of a current-carrying loop is given by",
+        "options": [
+          "μ = I × A",
+          "μ = I / A",
+          "μ = I × l",
+          "μ = I / l"
+        ],
+        "correct_answer": 0,
+        "explanation": "The magnetic moment of a current-carrying loop is given by the product of the current and the area of the loop.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -434,11 +756,11 @@
       "subject": "Physics",
       "chapter": "Magnetism and Matter",
       "total": 167,
-      "passed": 28,
+      "passed": 47,
       "failed_p1": 0,
-      "failed_p2": 1,
-      "explanation_fixed": 0,
-      "regenerated": 1,
+      "failed_p2": 3,
+      "explanation_fixed": 2,
+      "regenerated": 2,
       "duplicates_removed": 43,
       "error": null,
       "questions_detail": [
@@ -701,6 +1023,221 @@
           "question_preview": "What is the shape of the hysteresis loop for a ferromagnetic material?",
           "original_ans": "D",
           "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 30,
+          "question_preview": "What is the unit of magnetic field strength?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 31,
+          "question_preview": "What is the term for the process by which a magnet loses its magnetism?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 32,
+          "question_preview": "A solenoid is a type of coil that produces a magnetic field when an electric cur",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 33,
+          "question_preview": "What is the term for the material that is weakly repelled by a magnetic field?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 34,
+          "question_preview": "A bar magnet has a magnetic moment of 2 A-m^2. What is the magnetic field streng",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 35,
+          "question_preview": "What is the primary reason for the existence of domains in ferromagnetic materia",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 36,
+          "question_preview": "A ferromagnetic material is heated from 0°C to 100°C. What happens to its magnet",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 37,
+          "question_preview": "What is the nature of the magnetic field inside a bar magnet?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is C (index 2). Confidence: high. Reasoning: According to NCERT, the magnetic field lines emerge from the north pole and enter the south pole outside the magnet, but inside the magnet, the field lines go from the south pole to the north pole, as stated in the chapter 'Magnetism and Matter'. This is a fundamental property of bar magnets as per NCERT Class 12 Physics."
+          ]
+        },
+        {
+          "index": 38,
+          "question_preview": "A diamagnetic material is placed in a magnetic field. What is the direction of t",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 39,
+          "question_preview": "A magnet is placed inside a coil of wire. What is the direction of the induced c",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 40,
+          "question_preview": "A bar magnet is suspended in a uniform magnetic field. Which of the following st",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 41,
+          "question_preview": "What is the primary reason for the Earth's magnetic field being non-uniform?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation mentions that the Earth's magnetic field is generated by the movement of molten iron in the Earth's outer core, but it incorrectly states that the presence of magnetic materials in the Earth's core is the primary reason for the Earth's magnetic field being non-uniform. According to NCERT Class 12 Physics, the Earth's magnetic field is non-uniform due to the uneven distribution of molten iron in the outer core and the effects of the surrounding materials, but the primary reason is not explicitly stated as the presence of magnetic materials."
+          ]
+        },
+        {
+          "index": 42,
+          "question_preview": "What is the orientation of a diamagnetic substance in an external magnetic field",
+          "original_ans": "C",
+          "final_ans": "B",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is C (index 2). Confidence: high. Reasoning: When a magnet is broken into two pieces, each piece becomes a new magnet with its own north and south poles, and the strength of each piece is reduced, specifically becoming half the strength of the original magnet, as each piece now has its own poles and the magnetic moment is proportional to the size of the magnet."
+          ]
+        },
+        {
+          "index": 43,
+          "question_preview": "A solenoid is connected to a battery. Which of the following will happen?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 44,
+          "question_preview": "A magnet is placed near a ferromagnetic material. Which of the following will ha",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 45,
+          "question_preview": "A current-carrying wire is placed in a magnetic field. Which of the following wi",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 46,
+          "question_preview": "A magnet is placed near a diamagnetic material. Which of the following will happ",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 47,
+          "question_preview": "What is the primary reason for the difference in the magnetic properties of diam",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 48,
+          "question_preview": "A bar magnet is cut into two equal halves along its length. What is the magnetic",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 49,
+          "question_preview": "A compass needle placed in a uniform magnetic field will always point towards th",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation incorrectly states that the compass needle points towards the North Pole in a uniform magnetic field. According to NCERT Class 12 Physics, a compass needle aligns itself in the direction of the magnetic field, which means it points from the south pole of the compass to the north pole of the compass, and since opposite poles attract, the compass needle will point towards the south pole of the external magnetic field, not the north pole. The explanation also introduces incorrect information about the compass needle's behavior in a uniform magnetic field."
+          ]
+        },
+        {
+          "index": 50,
+          "question_preview": "What is the orientation of a diamagnetic substance in an external magnetic field",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 51,
+          "question_preview": "A diamagnetic substance is",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 52,
+          "question_preview": "The magnetic moment of a current-carrying loop is given by",
+          "original_ans": "A",
+          "final_ans": "A",
           "regenerated": false,
           "exp_fixed": false,
           "issues": []
