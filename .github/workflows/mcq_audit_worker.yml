@@ -9,6 +9,8 @@ on:
 
 jobs:
   audit-worker:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 360 # 6 hours max limit
 
