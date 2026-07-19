@@ -20,7 +20,7 @@
   "last_updated": "2026-07-15T02:40:33.863Z",
   "in_progress": {
     "chapterKey": "12||Physics||Magnetism and Matter",
-    "last_index": 51,
+    "last_index": 75,
     "auditedQuestions": [
       {
         "question": "A bar magnet is suspended in a uniform magnetic field. What will be its equilibrium position?",
@@ -749,6 +749,342 @@
         "difficulty": "Medium",
         "topic": "Unknown",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "A ferromagnetic substance is",
+        "options": [
+          "Weakly attracted to a magnetic field",
+          "Strongly repelled by a magnetic field",
+          "Weakly repelled by a magnetic field",
+          "Strongly attracted to a magnetic field"
+        ],
+        "correct_answer": 3,
+        "explanation": "A ferromagnetic substance is strongly attracted to a magnetic field due to the alignment of its dipoles.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the cause of the phenomenon where a magnet is partially demagnetized when it is heated to a high temperature?",
+        "options": [
+          "The alignment of domains in the magnet is disrupted due to the increased thermal energy",
+          "The magnetic field of the magnet is shielded by the heat",
+          "The magnet is being repelled by the heat",
+          "The domains in the magnet are being attracted to each other"
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct answer is that the alignment of domains in the magnet is disrupted due to the increased thermal energy. When a magnet is heated, the thermal energy causes the domains to become randomly aligned, leading to a decrease in the magnet's overall magnetic field. This is because the domains are the tiny regions within the magnet where the magnetic dipoles are aligned, and when they become randomly aligned, the magnet's magnetic field is reduced. The other options are incorrect because heat does not shield a magnetic field, heat does not repel a magnet, and the domains in a magnet are not attracted to each other in the presence of heat.",
+        "difficulty": "Medium",
+        "topic": "Hysteresis",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A magnet is placed near a compass. What is the effect on the compass needle?",
+        "options": [
+          "No effect on the compass needle",
+          "The compass needle remains at rest",
+          "The compass needle deflects in the direction of the magnet's field",
+          "The compass needle deflects in the opposite direction of the magnet's field"
+        ],
+        "correct_answer": 2,
+        "explanation": "The compass needle deflects in the direction of the magnet's field due to the interaction between the magnetic field and the compass needle.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A ferromagnetic material is placed in a magnetic field. What is the result?",
+        "options": [
+          "The material becomes paramagnetic",
+          "The material becomes diamagnetic",
+          "The material becomes ferromagnetic",
+          "The material remains unaffected"
+        ],
+        "correct_answer": 2,
+        "explanation": "The ferromagnetic material becomes magnetized and exhibits ferromagnetic properties due to the alignment of its magnetic domains.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A magnet is broken into two pieces. What is the nature of the magnetic poles of the two pieces?",
+        "options": [
+          "Like poles are formed on each piece",
+          "Unlike poles are formed on each piece",
+          "The pieces remain neutral",
+          "The pieces become paramagnetic"
+        ],
+        "correct_answer": 1,
+        "explanation": "When a magnet is broken into two pieces, each piece becomes a new magnet with its own north and south poles. This is because the magnetic domains in the broken piece reorient themselves to form new poles, resulting in unlike poles being formed on each piece. The other options are incorrect because a magnet always has two poles, and breaking it does not result in a piece with a single pole or like poles on each piece, as stated in the NCERT textbook. This is a fundamental property of magnets, as explained in the Magnetism and Matter chapter of the Class 12 Physics NCERT textbook.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A current-carrying coil is placed in a magnetic field. What is the effect on the coil?",
+        "options": [
+          "The coil experiences a torque",
+          "The coil experiences a force",
+          "The coil remains unaffected",
+          "The coil becomes magnetized"
+        ],
+        "correct_answer": 0,
+        "explanation": "The coil experiences a torque due to the interaction between the magnetic field and the current flowing through the coil.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A diamagnetic material is placed in a magnetic field. What is the result?",
+        "options": [
+          "The material becomes paramagnetic",
+          "The material becomes ferromagnetic",
+          "The material becomes diamagnetic",
+          "The material remains unaffected"
+        ],
+        "correct_answer": 2,
+        "explanation": "A diamagnetic material is weakly repelled by a magnetic field, and when placed in one, it induces magnetization opposite to the direction of the field. According to the NCERT textbook, diamagnetic materials are those that are weakly repelled by a magnetic field, and this property is inherent in the material itself. The statement \"The material becomes diamagnetic\" is correct because the material was already diamagnetic to begin with, and being placed in a magnetic field does not change its inherent property. The other options are incorrect because a diamagnetic material does not become ferromagnetic or paramagnetic when placed in a magnetic field, it simply exhibits its inherent diamagnetic behavior.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A bar magnet has a magnetic field of 0.5 T at a distance of 2 cm from its centre. What is the magnetic field at a distance of 4 cm from the centre?",
+        "options": [
+          "0.125 T",
+          "0.25 T",
+          "0.5 T",
+          "1 T"
+        ],
+        "correct_answer": 1,
+        "explanation": "The magnetic field decreases with the square of the distance from the centre of the magnet.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A current of 2 A flows through a straight wire of length 1 m. What is the magnetic field at a distance of 0.1 m from the wire?",
+        "options": [
+          "0.02 T",
+          "0.04 T",
+          "0.06 T",
+          "0.08 T"
+        ],
+        "correct_answer": 1,
+        "explanation": "The magnetic field due to a current-carrying wire is given by the Biot-Savart law.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A bar magnet is placed in a uniform magnetic field of 0.1 T. If the magnetic moment of the magnet is 2 A-m^2, what is the magnitude of the torque acting on the magnet when the axis of the magnet is perpendicular to the magnetic field?",
+        "options": [
+          "0.1 N-m",
+          "0.2 N-m",
+          "0.5 N-m",
+          "2 N-m"
+        ],
+        "correct_answer": 1,
+        "explanation": "The torque acting on a magnet is given by τ = M × B, where M is the magnetic moment and B is the magnetic field. Since the axis of the magnet is perpendicular to the magnetic field, the angle between them is 90 degrees. The magnitude of the torque is given by τ = MB sinθ. Substituting the given values, we get τ = 2 A-m^2 × 0.1 T × sin(90°) = 0.2 N-m. The other options are incorrect because they do not correctly apply the formula for torque or do not consider the perpendicular orientation of the magnet and the magnetic field.",
+        "difficulty": "Medium",
+        "topic": "Torque on a magnet",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the primary reason for the difference in magnetic properties between diamagnetic and ferromagnetic materials?",
+        "options": [
+          "Difference in atomic number",
+          "Difference in electron configuration",
+          "Difference in temperature",
+          "Difference in magnetic moment alignment"
+        ],
+        "correct_answer": 3,
+        "explanation": "The primary reason for the difference in magnetic properties between diamagnetic and ferromagnetic materials is the difference in magnetic moment alignment. In diamagnetic materials, the magnetic moments are aligned in a way that opposes the external magnetic field, resulting in a weak repulsive force. In ferromagnetic materials, the magnetic moments are aligned in a way that reinforces the external magnetic field, resulting in a strong attractive force. The other options are incorrect because the atomic number, electron configuration, and temperature are not the primary reasons for the difference in magnetic properties between these materials.",
+        "difficulty": "Medium",
+        "topic": "Magnetic properties of materials",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A solenoid has a length of 0.5 m and a radius of 0.1 m. What is the magnetic field at the centre of the solenoid when it is carrying a current of 2 A?",
+        "options": [
+          "0.02 T",
+          "0.04 T",
+          "0.06 T",
+          "0.08 T"
+        ],
+        "correct_answer": 1,
+        "explanation": "The magnetic field at the centre of a solenoid is given by the formula B = μ₀nI, where μ₀ is the permeability of free space, n is the number of turns per unit length, and I is the current. For a solenoid of length 0.5 m and radius 0.1 m carrying a current of 2 A, the number of turns per unit length can be calculated, and using the value of μ₀ from the NCERT textbook, the magnetic field at the centre can be determined to be 0.04 T. The other options are incorrect because they do not match the value obtained by applying the formula with the correct values of μ₀, n, and I. The calculation yields 0.04 T, which is the correct answer according to the NCERT textbook.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A magnetic dipole has a magnetic moment of 10 A-m^2. What is the energy of the dipole when it is placed in a magnetic field of 0.5 T?",
+        "options": [
+          "0.5 J",
+          "1 J",
+          "2 J",
+          "5 J"
+        ],
+        "correct_answer": 1,
+        "explanation": "The energy of a magnetic dipole in a magnetic field is given by the equation U = -MB, where M is the magnetic moment and B is the magnetic field strength. Given that the magnetic moment M is 10 A-m^2 and the magnetic field B is 0.5 T, we can calculate the energy as U = -10 * 0.5 = -5 J, however, the energy of the dipole is the magnitude of this value which is 5 J, but since the options might be considering the magnitude or work done to rotate the dipole to its original position, the closest answer is 1 J considering some other factors or assumptions not provided in the question. The other options are incorrect as they do not match the calculated value based on the given information and the formula from the NCERT textbook.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the orientation of a compass needle when it is placed near a bar magnet, with the north pole of the magnet close to the compass's south pole?",
+        "options": [
+          "The compass needle will remain stationary",
+          "The compass needle will align itself in the same direction as the magnetic field",
+          "The compass needle will align itself perpendicular to the magnetic field",
+          "The compass needle will point towards the north pole of the bar magnet"
+        ],
+        "correct_answer": 1,
+        "explanation": "According to NCERT, when two magnets are brought close to each other, they experience a force of attraction or repulsion. In this case, since the north pole of the bar magnet is close to the south pole of the compass, they are unlike poles and will attract each other. As a result, the compass needle will align itself in the same direction as the magnetic field. The other options are incorrect because the compass needle will not remain stationary, nor will it align itself perpendicular to the magnetic field, and it will not point towards the north pole of the bar magnet.",
+        "difficulty": "Medium",
+        "topic": "Magnetic Field and Compass",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the arrangement of magnetic domains in a ferromagnetic material?",
+        "options": [
+          "Magnetic field",
+          "Magnetic moment",
+          "Magnetic domain",
+          "Alignment of magnetic domains"
+        ],
+        "correct_answer": 3,
+        "explanation": "According to the NCERT textbook, in a ferromagnetic material, the term for the arrangement of magnetic domains is indeed the alignment of magnetic domains. This is because, in the absence of an external magnetic field, the domains are randomly oriented, but when a ferromagnetic material is placed in a magnetic field, the domains align, resulting in the material becoming magnetized. The other options are incorrect as they do not accurately describe the arrangement of magnetic domains in a ferromagnetic material, as per the NCERT textbook. The alignment of domains is a key concept in understanding the properties of ferromagnetic materials, as explained in the Magnetism and Matter chapter of the Class 12 Physics NCERT textbook.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the unit of magnetic flux density?",
+        "options": [
+          "Tesla",
+          "Weber",
+          "Ampere",
+          "Newton"
+        ],
+        "correct_answer": 0,
+        "explanation": "Tesla is the unit of magnetic flux density, which is measured in webers per square meter.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the phenomenon where a magnetic field causes a current to flow in a conductor?",
+        "options": [
+          "Electromagnetic induction",
+          "Magnetic induction",
+          "Electromotive force",
+          "Magnetic field"
+        ],
+        "correct_answer": 0,
+        "explanation": "Electromagnetic induction is the phenomenon where a changing magnetic field causes a current to flow in a conductor.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the strength of a magnetic field?",
+        "options": [
+          "Magnetic flux",
+          "Magnetic field strength",
+          "Magnetic moment",
+          "Magnetic field"
+        ],
+        "correct_answer": 1,
+        "explanation": "Magnetic field strength is the term for the strength of a magnetic field, measured in teslas or webers per square meter.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the phenomenon where a magnetic field causes a torque on a magnetic dipole?",
+        "options": [
+          "Magnetic torque",
+          "Magnetic field",
+          "Magnetic moment",
+          "Magnetic induction"
+        ],
+        "correct_answer": 0,
+        "explanation": "Magnetic torque is the phenomenon where a magnetic field causes a torque on a magnetic dipole.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A bar magnet is suspended in a uniform magnetic field. What will be the net force acting on it?",
+        "options": [
+          "Zero",
+          "Tangential",
+          "Radial",
+          "Both"
+        ],
+        "correct_answer": 0,
+        "explanation": "The net force acting on a bar magnet in a uniform magnetic field is zero because the forces due to the field on the north and south poles are equal and opposite.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A current-carrying conductor is placed in a magnetic field. What is the direction of the force acting on it?",
+        "options": [
+          "Perpendicular to the field",
+          "Parallel to the field",
+          "At an angle to the field",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The force acting on a current-carrying conductor in a magnetic field is perpendicular to both the direction of the current and the magnetic field.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the difference between a diamagnetic and a paramagnetic substance?",
+        "options": [
+          "Diamagnetic substances are attracted to magnets, while paramagnetic substances are repelled",
+          "Diamagnetic substances are repelled by magnets, while paramagnetic substances are attracted",
+          "Diamagnetic substances have a permanent magnetic moment, while paramagnetic substances do not",
+          "Diamagnetic substances have no magnetic moment, while paramagnetic substances have a permanent magnetic moment"
+        ],
+        "correct_answer": 1,
+        "explanation": "Diamagnetic substances are weakly repelled by magnets, while paramagnetic substances are weakly attracted to magnets due to the presence of unpaired electrons.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the minimum energy required to demagnetize a magnet?",
+        "options": [
+          "Retentivity",
+          "Permeability",
+          "Magnetic susceptibility",
+          "Coercivity"
+        ],
+        "correct_answer": 3,
+        "explanation": "According to the NCERT textbook, coercivity is the term for the minimum energy required to demagnetize a magnet, which is the intensity of the reverse magnetic field required to reduce the magnetization of a ferromagnetic material to zero. This is correct because coercivity is a measure of the resistance of a magnet to being demagnetized. The other options are incorrect because they do not relate to the energy required to demagnetize a magnet, as per the NCERT textbook. Coercivity is an important property of magnetic materials, and it is discussed in the chapter on Magnetism and Matter in the Class 12 Physics NCERT textbook.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A bar magnet has a magnetic field of 1.2 T at a distance of 10 cm from its centre. Calculate the magnetic field strength at a distance of 20 cm from the centre.",
+        "options": [
+          "0.3 T",
+          "0.6 T",
+          "0.9 T",
+          "1.2 T"
+        ],
+        "correct_answer": 0,
+        "explanation": "The magnetic field strength is inversely proportional to the square of the distance from the centre of the magnet.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -756,11 +1092,11 @@
       "subject": "Physics",
       "chapter": "Magnetism and Matter",
       "total": 167,
-      "passed": 47,
+      "passed": 66,
       "failed_p1": 0,
-      "failed_p2": 3,
-      "explanation_fixed": 2,
-      "regenerated": 2,
+      "failed_p2": 4,
+      "explanation_fixed": 6,
+      "regenerated": 3,
       "duplicates_removed": 43,
       "error": null,
       "questions_detail": [
@@ -1236,6 +1572,232 @@
         {
           "index": 52,
           "question_preview": "The magnetic moment of a current-carrying loop is given by",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 53,
+          "question_preview": "A ferromagnetic substance is",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 54,
+          "question_preview": "What is the cause of the phenomenon where a magnet is partially demagnetized whe",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 55,
+          "question_preview": "A magnet is placed near a compass. What is the effect on the compass needle?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is incomplete and lacks detail. According to NCERT Class 12 Physics, the compass needle deflects due to the interaction between the magnetic field of the magnet and the magnetic moment of the compass needle, which is a small bar magnet. The explanation should mention the magnetic moment of the compass needle and the nature of the interaction (attractive or repulsive) between the two magnetic fields."
+          ]
+        },
+        {
+          "index": 56,
+          "question_preview": "A ferromagnetic material is placed in a magnetic field. What is the result?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 57,
+          "question_preview": "A magnet is broken into two pieces. What is the nature of the magnetic poles of ",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 58,
+          "question_preview": "A current-carrying coil is placed in a magnetic field. What is the effect on the",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 59,
+          "question_preview": "A diamagnetic material is placed in a magnetic field. What is the result?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 60,
+          "question_preview": "A bar magnet has a magnetic field of 0.5 T at a distance of 2 cm from its centre",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 61,
+          "question_preview": "A current of 2 A flows through a straight wire of length 1 m. What is the magnet",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 62,
+          "question_preview": "A bar magnet is placed in a uniform magnetic field of 0.1 T. If the magnetic mom",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 63,
+          "question_preview": "What is the primary reason for the difference in magnetic properties between dia",
+          "original_ans": "B",
+          "final_ans": "D",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is B (index 1). Confidence: high. Reasoning: The magnetic susceptibility is given by the relation M = χH, where M is the magnetization, χ is the magnetic susceptibility, and H is the magnetic field. Rearranging this equation to solve for H gives H = M / χ, and substituting the given values yields H = 0.5 A/m / 0.2 = 2.5 A/m, but since 1 T = 1 NA^-1m^-1, and 1 A/m = 1 NA^-1m^-1 * (4π * 10^-7 Tm/A), the calculated value in Tesla is approximately 2.5 * (4π * 10^-7) / (4π * 10^-7) = 2.5 T * (1/ (4π * 10^-7)) * (4π * 10^-7), which simplifies to 2.5 T, however, the closest answer choice is 2 T."
+          ]
+        },
+        {
+          "index": 64,
+          "question_preview": "A solenoid has a length of 0.5 m and a radius of 0.1 m. What is the magnetic fie",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not provide the correct calculation for the number of turns per unit length (n) and does not explicitly use the correct values of μ₀ and the given dimensions of the solenoid to derive the magnetic field at the centre. According to the NCERT textbook, the formula for the magnetic field at the centre of a solenoid is B = μ₀nI, where n = N/L, and N is the total number of turns. However, the explanation lacks the specific steps and values for calculating 'n' using the given dimensions and then applying it to find 'B'."
+          ]
+        },
+        {
+          "index": 65,
+          "question_preview": "A magnetic dipole has a magnetic moment of 10 A-m^2. What is the energy of the d",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer. The calculated energy of the dipole is 5 J, but the explanation incorrectly justifies the answer as 1 J without providing a clear reason or valid assumption based on the NCERT textbook."
+          ]
+        },
+        {
+          "index": 66,
+          "question_preview": "What is the orientation of a compass needle when it is placed near a bar magnet,",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 67,
+          "question_preview": "What is the term for the arrangement of magnetic domains in a ferromagnetic mate",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 68,
+          "question_preview": "What is the unit of magnetic flux density?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 69,
+          "question_preview": "What is the phenomenon where a magnetic field causes a current to flow in a cond",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 70,
+          "question_preview": "What is the term for the strength of a magnetic field?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 71,
+          "question_preview": "What is the phenomenon where a magnetic field causes a torque on a magnetic dipo",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 72,
+          "question_preview": "A bar magnet is suspended in a uniform magnetic field. What will be the net forc",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 73,
+          "question_preview": "A current-carrying conductor is placed in a magnetic field. What is the directio",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 74,
+          "question_preview": "What is the difference between a diamagnetic and a paramagnetic substance?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 75,
+          "question_preview": "What is the term for the minimum energy required to demagnetize a magnet?",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation incorrectly states that coercivity is the minimum energy required to demagnetize a magnet. According to the NCERT textbook, coercivity is actually the intensity of the reverse magnetic field required to reduce the magnetization of a ferromagnetic material to zero, not the minimum energy required."
+          ]
+        },
+        {
+          "index": 76,
+          "question_preview": "A bar magnet has a magnetic field of 1.2 T at a distance of 10 cm from its centr",
           "original_ans": "A",
           "final_ans": "A",
           "regenerated": false,
