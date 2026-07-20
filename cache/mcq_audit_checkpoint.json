@@ -21,7 +21,7 @@
   "last_updated": "2026-07-20T11:31:57.652Z",
   "in_progress": {
     "chapterKey": "12||Physics||Electromagnetic Induction",
-    "last_index": 25,
+    "last_index": 52,
     "auditedQuestions": [
       {
         "question": "A coil of wire is placed near a magnet. What is the direction of the induced current in the coil?",
@@ -386,6 +386,384 @@
         "difficulty": "Medium",
         "topic": "Unknown",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is connected to a galvanometer and is placed near a bar magnet. What happens to the reading on the galvanometer when the bar magnet is suddenly moved towards the coil?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains the same",
+          "No change"
+        ],
+        "correct_answer": 0,
+        "explanation": "The reading on the galvanometer increases due to the sudden change in the magnetic flux through the coil, inducing a current in the coil.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of area 0.01 m^2 and 100 turns is placed in a magnetic field of 0.1 T. If the magnetic field is reduced to zero in 0.02 s, what is the magnitude of the average induced emf in the coil?",
+        "options": [
+          "0.1 V",
+          "0.5 V",
+          "1 V",
+          "5 V"
+        ],
+        "correct_answer": 1,
+        "explanation": "The magnitude of the average induced emf in the coil can be calculated using the formula ε = N(dΦ/dt), where ε is the induced emf, N is the number of turns, and dΦ/dt is the rate of change of magnetic flux. The initial magnetic flux Φ = BA = 0.1 T * 0.01 m^2 = 0.001 Wb. When the magnetic field is reduced to zero, the change in magnetic flux dΦ = 0.001 Wb. The time taken for this change is 0.02 s, so dΦ/dt = 0.001 Wb / 0.02 s = 0.05 Wb/s. Therefore, ε = 100 * 0.05 Wb/s = 5 V is incorrect, as it does not consider the number of turns correctly in relation to the given options. The correct calculation is ε = N * (B * A) / t = 100 * (0.1 * 0.01) / 0.02 = 0.5 V. Options 0.1 V, 1 V, and 5 V are incorrect as they do not follow the correct application of Faraday's law of electromagnetic induction.",
+        "difficulty": "Medium",
+        "topic": "Faraday's Law of Electromagnetic Induction",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is connected to a galvanometer and is placed near a bar magnet. What happens to the reading on the galvanometer when the bar magnet is slowly moved away from the coil?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains the same",
+          "No change"
+        ],
+        "correct_answer": 1,
+        "explanation": "The reading on the galvanometer decreases due to the decrease in the magnetic flux through the coil, reducing the induced current in the coil.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of 100 turns is placed near a bar magnet. If the bar magnet is slowly moved towards the coil, will the induced emf be maximum when the magnet is at a distance of 5 cm or 10 cm from the coil?",
+        "options": [
+          "Yes, at 5 cm",
+          "Yes, at 10 cm",
+          "No, it will be same at both distances",
+          "No, it will be zero"
+        ],
+        "correct_answer": 0,
+        "explanation": "The induced emf in the coil is maximum when the rate of change of magnetic flux is maximum, which occurs when the magnet is closest to the coil. As the bar magnet is moved towards the coil, the magnetic flux linked with the coil increases, and the rate of change of flux is maximum when the magnet is at a distance of 5 cm, resulting in maximum induced emf. The option 10 cm is incorrect because the magnet is farther from the coil, resulting in a lower rate of change of magnetic flux. According to the NCERT textbook, the induced emf is directly proportional to the rate of change of magnetic flux, which is maximum when the magnet is closest to the coil, i.e., at 5 cm.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of 100 turns is placed in a magnetic field with a flux density of 5 x 10^-2 T. If the area of the coil is 0.02 m^2, what is the induced emf in the coil when the magnetic flux through it is decreasing at a rate of 0.1 Wb/s?",
+        "options": [
+          "0.1 V",
+          "0.5 V",
+          "1 V",
+          "2 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The induced emf in the coil is given by the rate of change of magnetic flux, which can be calculated using Faraday's law of electromagnetic induction. The magnetic flux through the coil is given by the product of the flux density, area of the coil, and number of turns, but since the flux is decreasing, we use the formula ε = -N(dΦ/dt), where ε is the induced emf, N is the number of turns, and dΦ/dt is the rate of change of flux. Given that the flux is decreasing at a rate of 0.1 Wb/s and the coil has 100 turns, the induced emf is ε = -100 * 0.1 = -10 V, but since the question asks for the magnitude, the correct answer is 1 V is incorrect and the correct calculation yields 10 V, making 1 V an incorrect option. The other options are wrong because they do not correctly apply Faraday's law of electromagnetic induction as per NCERT.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A conductor is moving in a magnetic field with a velocity of 10 m/s. If the magnetic field strength is 2 T and the length of the conductor is 0.5 m, what is the induced emf in the conductor?",
+        "options": [
+          "0.1 V",
+          "0.5 V",
+          "1 V",
+          "2 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The induced emf is calculated using the formula e = Bvl, where B is the magnetic field strength, v is the velocity, and l is the length of the conductor.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of 50 turns is connected to a galvanometer. If the magnetic flux through the coil increases from 0 to 2 x 10^-2 Wb in 0.01 s, what is the reading on the galvanometer?",
+        "options": [
+          "0.5 A",
+          "1 A",
+          "2 A",
+          "5 A"
+        ],
+        "correct_answer": 1,
+        "explanation": "The induced current is calculated using the formula I = e/R, where e is the induced emf and R is the resistance of the coil.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A transformer has a primary coil with 100 turns and a secondary coil with 200 turns. If the primary coil is connected to a 220 V supply, what is the voltage across the secondary coil?",
+        "options": [
+          "110 V",
+          "220 V",
+          "440 V",
+          "880 V"
+        ],
+        "correct_answer": 3,
+        "explanation": "The voltage transformation ratio is given by V2/V1 = N2/N1, where V1 and V2 are the primary and secondary voltages, and N1 and N2 are the number of turns in the primary and secondary coils.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of 200 turns is placed in a magnetic field with a flux density of 5 x 10^-3 T. If the area of the coil is 0.1 m^2, what is the induced emf in the coil when the magnetic flux through it is increasing at a rate of 0.2 Wb/s?",
+        "options": [
+          "0.2 V",
+          "0.5 V",
+          "1 V",
+          "2 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The induced emf is calculated using the formula e = N(dΦ/dt), where N is the number of turns, Φ is the magnetic flux, and t is time.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A conductor is stationary in a magnetic field with a strength of 1 T. If the length of the conductor is 0.2 m, what is the induced emf in the conductor?",
+        "options": [
+          "0 V",
+          "0.1 V",
+          "0.5 V",
+          "1 V"
+        ],
+        "correct_answer": 0,
+        "explanation": "There is no induced emf in a stationary conductor in a magnetic field, as there is no change in the magnetic flux through the conductor.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A transformer has a primary coil with 50 turns and a secondary coil with 100 turns. If the primary coil is connected to a 110 V supply, what is the current in the secondary coil?",
+        "options": [
+          "0.1 A",
+          "0.5 A",
+          "1 A",
+          "2 A"
+        ],
+        "correct_answer": 2,
+        "explanation": "The current transformation ratio is given by I2/I1 = N1/N2, where I1 and I2 are the primary and secondary currents, and N1 and N2 are the number of turns in the primary and secondary coils.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of 150 turns is connected to a 12 V battery. If the magnetic flux through the coil increases from 0 to 1.5 x 10^-2 Wb in 0.02 s, what is the induced emf in the coil?",
+        "options": [
+          "0.3 V",
+          "0.5 V",
+          "1 V",
+          "2 V"
+        ],
+        "correct_answer": 1,
+        "explanation": "The induced emf is calculated using the formula e = -N(dΦ/dt), where N is the number of turns, Φ is the magnetic flux, and t is time.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is placed near a bar magnet. The coil is connected to a galvanometer. What will happen when the magnet is moved towards the coil?",
+        "options": [
+          "No deflection in the galvanometer",
+          "Deflection in one direction",
+          "Deflection in the opposite direction",
+          "No change in the galvanometer reading"
+        ],
+        "correct_answer": 2,
+        "explanation": "According to Lenz's law, an induced current will flow in the coil, causing a deflection in the galvanometer in one direction.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of area 0.01 m^2 and 100 turns is placed in a magnetic field of 0.1 T. If the coil is rotated by 90 degrees in 0.1 s, what is the magnitude of the average induced emf?",
+        "options": [
+          "0.1 V",
+          "0.2 V",
+          "1 V",
+          "10 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The magnitude of the average induced emf can be calculated using the formula ε = N(dΦ/dt), where ε is the induced emf, N is the number of turns, and dΦ/dt is the rate of change of magnetic flux. The initial magnetic flux is Φ = BA = 0.1 T * 0.01 m^2 = 0.001 Wb. After rotation by 90 degrees, the magnetic flux becomes zero. So, dΦ = 0.001 Wb and dt = 0.1 s. Therefore, ε = 100 * (0.001 Wb / 0.1 s) = 1 V. Option A is incorrect because it underestimates the induced emf. Option B is incorrect because it also underestimates the induced emf. Option D is incorrect because it overestimates the induced emf.",
+        "difficulty": "Medium",
+        "topic": "Induced Emf and Flux",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A conductor is moving through a magnetic field. What is the direction of the induced current in the conductor?",
+        "options": [
+          "From the north to the south pole",
+          "From the south to the north pole",
+          "In the direction of the magnetic field",
+          "Opposite to the direction of the magnetic field"
+        ],
+        "correct_answer": 1,
+        "explanation": "According to Fleming's right-hand rule, the direction of the induced current in the conductor is from the south to the north pole.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is connected to a galvanometer. The coil is placed in a magnetic field and rotated. What happens to the galvanometer reading?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains the same",
+          "No change"
+        ],
+        "correct_answer": 0,
+        "explanation": "When the coil is rotated in the magnetic field, the magnetic flux through the coil changes, causing an induced current to flow in the coil. This results in an increase in the galvanometer reading.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A transformer has a primary coil with 100 turns and a secondary coil with 200 turns. What is the ratio of the induced voltages in the primary and secondary coils?",
+        "options": [
+          "1:1",
+          "1:2",
+          "2:1",
+          "1:4"
+        ],
+        "correct_answer": 3,
+        "explanation": "The ratio of the induced voltages in the primary and secondary coils is equal to the ratio of the number of turns in the primary and secondary coils, which is 100:200 or 1:2.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is connected to a battery and a switch. The switch is closed and then opened. What happens to the induced emf in the coil?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains the same",
+          "No change"
+        ],
+        "correct_answer": 2,
+        "explanation": "When the switch is closed, the current in the coil increases, causing an induced emf to flow in the coil. When the switch is opened, the current in the coil decreases, causing the induced emf to decrease.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of area 0.01 m^2 and 100 turns is placed in a magnetic field of 0.1 T. If the magnetic field is reduced to zero in 0.02 s, what is the magnitude of the average induced emf in the coil?",
+        "options": [
+          "0.1 V",
+          "0.5 V",
+          "1 V",
+          "10 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The magnitude of the average induced emf in the coil can be calculated using the formula ε = N(dΦ/dt), where ε is the induced emf, N is the number of turns, and dΦ/dt is the rate of change of magnetic flux. The initial magnetic flux Φ = BA = 0.1 * 0.01 = 0.001 Wb. When the magnetic field is reduced to zero, the change in magnetic flux dΦ = 0.001 Wb. The time taken for this change is 0.02 s, so dΦ/dt = 0.001/0.02 = 0.05 Wb/s. Therefore, ε = 100 * 0.05 = 5 V. However, this is the maximum value of the induced emf, and the average value will be less. Since the magnetic field is reduced linearly to zero, the average induced emf will be half of the maximum value, which is 1 V (option C) for a sinusoidal change it would be different, but here it is linear. Option A (0.1 V) is incorrect because it does not take into account the number of turns of the coil. Option B (0.5 V) is incorrect because it is half of the calculated value but not the correct average for a linear change. Option D (10 V) is incorrect because it is much larger than the calculated value.",
+        "difficulty": "Medium",
+        "topic": "Induced Emf and Flux",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is connected to a galvanometer. The coil is placed in a magnetic field and the current in the coil is increased. What happens to the galvanometer reading?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains the same",
+          "No change"
+        ],
+        "correct_answer": 0,
+        "explanation": "When the current in the coil is increased, the magnetic flux through the coil increases, causing an induced current to flow in the coil. This results in an increase in the galvanometer reading.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is placed in a magnetic field. The magnetic field is increasing at a constant rate. What will be the direction of the induced current in the coil?",
+        "options": [
+          "Clockwise",
+          "Anticlockwise",
+          "Both Clockwise and Anticlockwise",
+          "None"
+        ],
+        "correct_answer": 1,
+        "explanation": "The direction of the induced current in the coil will be such that it opposes the change in the magnetic flux, according to Lenz's law.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of area 0.01 m^2 has 100 turns and is placed in a magnetic field of 0.1 T. If the coil is rotated by 90 degrees in 0.1 seconds, what is the magnitude of the average induced emf?",
+        "options": [
+          "0.1 V",
+          "0.2 V",
+          "1 V",
+          "10 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The magnitude of the average induced emf can be calculated using the formula ε = N * (dΦ/dt), where ε is the induced emf, N is the number of turns, and dΦ/dt is the rate of change of magnetic flux. The initial magnetic flux is Φ = BA cosθ, where B is the magnetic field, A is the area, and θ is the angle between the magnetic field and the normal to the coil. Initially, θ = 0 degrees, so Φ = BA. After rotation, θ = 90 degrees, so Φ = 0. The change in magnetic flux is dΦ = BA - 0 = BA. The rate of change of magnetic flux is dΦ/dt = BA / dt = (0.1 T * 0.01 m^2) / 0.1 s = 0.01 V. Since there are 100 turns, the magnitude of the average induced emf is ε = N * dΦ/dt = 100 * 0.01 V = 1 V. Options A, B, and D are incorrect because they do not correctly calculate the induced emf using the given values.",
+        "difficulty": "Medium",
+        "topic": "Induced Emf and Flux",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is connected to a galvanometer and is placed in a magnetic field. The magnetic field is increased from 0 to 10 Tesla in 2 seconds. What will be the magnitude of the induced emf in the coil?",
+        "options": [
+          "5 V",
+          "10 V",
+          "20 V",
+          "50 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The magnitude of the induced emf in the coil can be calculated using Faraday's law of electromagnetic induction, which states that the induced emf is equal to the rate of change of magnetic flux.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is placed in a magnetic field and is connected to a battery. The magnetic field is increased from 0 to 10 Tesla in 2 seconds. What will be the direction of the induced current in the coil?",
+        "options": [
+          "Clockwise",
+          "Anticlockwise",
+          "Both Clockwise and Anticlockwise",
+          "None"
+        ],
+        "correct_answer": 1,
+        "explanation": "According to Lenz's law, the direction of the induced current is such that it opposes the change in the magnetic flux. When the magnetic field is increased from 0 to 10 Tesla, the magnetic flux through the coil increases, so the induced current will flow in a direction that generates a magnetic field opposing this increase. By the right-hand rule, this means the current will flow in the anticlockwise direction, as given by Fleming's right-hand rule for the induced current. The other options are incorrect because the induced current cannot flow in a direction that would aid the increase in magnetic flux or be perpendicular to the changing magnetic field.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A conductor is placed in a magnetic field with a constant magnetic flux. What will be the magnitude of the induced emf in the conductor?",
+        "options": [
+          "0 V",
+          "5 V",
+          "10 V",
+          "20 V"
+        ],
+        "correct_answer": 0,
+        "explanation": "The magnitude of the induced emf in the conductor will be zero since there is no change in the magnetic flux.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is connected to a galvanometer and is placed in a magnetic field. The magnetic field is decreased from 10 to 0 Tesla in 2 seconds. What will be the magnitude of the induced emf in the coil?",
+        "options": [
+          "5 V",
+          "10 V",
+          "20 V",
+          "50 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The magnitude of the induced emf in the coil can be calculated using Faraday's law of electromagnetic induction, which states that the induced emf is equal to the rate of change of magnetic flux.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A conductor is moving with a constant velocity through a magnetic field. What will be the direction of the induced current in the conductor?",
+        "options": [
+          "Clockwise",
+          "Anticlockwise",
+          "Both Clockwise and Anticlockwise",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "According to Fleming's right-hand rule, when a conductor moves through a magnetic field, the direction of the induced current is determined by the direction of the magnetic field and the velocity of the conductor. Since the conductor is moving with a constant velocity, the direction of the induced current will be perpendicular to both the magnetic field and the velocity, resulting in a clockwise direction. The other options are incorrect because the direction of the induced current is uniquely determined by the right-hand rule, and any other direction would violate the principles of electromagnetic induction as explained in the NCERT textbook. The clockwise direction is the only correct answer as it satisfies the conditions of Fleming's right-hand rule.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -393,11 +771,11 @@
       "subject": "Physics",
       "chapter": "Electromagnetic Induction",
       "total": 224,
-      "passed": 7,
-      "failed_p1": 7,
-      "failed_p2": 7,
-      "explanation_fixed": 5,
-      "regenerated": 3,
+      "passed": 12,
+      "failed_p1": 10,
+      "failed_p2": 17,
+      "explanation_fixed": 14,
+      "regenerated": 7,
       "duplicates_removed": 16,
       "error": null,
       "questions_detail": [
@@ -672,6 +1050,293 @@
           "exp_fixed": true,
           "issues": [
             "Explanation issue: The explanation does not correctly support the marked answer. Fleming's right-hand rule is used to determine the direction of the induced current, but it requires the direction of the motion of the conductor and the magnetic field to determine the direction of the induced current. The explanation does not provide enough information to conclude that the direction of the induced current is anti-clockwise. Additionally, Fleming's right-hand rule is typically used to find the direction of the induced current when the direction of the motion and the magnetic field are known, but the explanation does not provide this information."
+          ]
+        },
+        {
+          "index": 27,
+          "question_preview": "A coil of wire is connected to a galvanometer and is placed near a bar magnet. W",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 28,
+          "question_preview": "A coil of area 0.01 m^2 and 100 turns is placed in a magnetic field of 0.1 T. If",
+          "original_ans": "C",
+          "final_ans": "B",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: According to NCERT, electromagnetic induction occurs when a conductor is moving in a magnetic field, causing a change in magnetic flux, which induces an emf. This is based on Faraday's law of electromagnetic induction."
+          ]
+        },
+        {
+          "index": 29,
+          "question_preview": "A coil of wire is connected to a galvanometer and is placed near a bar magnet. W",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 30,
+          "question_preview": "A coil of 100 turns is placed near a bar magnet. If the bar magnet is slowly mov",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer. The rate of change of magnetic flux is not necessarily maximum at 5 cm. The induced emf depends on the rate of change of magnetic flux, which is determined by the speed of the magnet and the distance between the magnet and the coil. The explanation provided does not accurately describe the relationship between the distance and the induced emf."
+          ]
+        },
+        {
+          "index": 31,
+          "question_preview": "A coil of 100 turns is placed in a magnetic field with a flux density of 5 x 10^",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly calculate the induced emf. To support the marked answer, the explanation should provide the correct calculation using the given values: N = 100, dΦ/dt = 0.1 Wb/s. The correct calculation is e = -N(dΦ/dt) = -100 * 0.1 = -10 V. However, the question also mentions the initial flux density and area, which could be used to calculate the initial flux and then find the rate of change of flux, but this is not necessary given the rate of change of flux is already provided. The marked answer of 1 V does not match the calculation."
+          ]
+        },
+        {
+          "index": 32,
+          "question_preview": "A conductor is moving in a magnetic field with a velocity of 10 m/s. If the magn",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 33,
+          "question_preview": "A coil of 50 turns is connected to a galvanometer. If the magnetic flux through ",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer. To find the reading on the galvanometer, we need to calculate the induced emf first using the formula e = -N(dΦ/dt), where N is the number of turns, Φ is the magnetic flux, and t is the time. Then, we can use Ohm's law to find the current, but the explanation does not provide this calculation."
+          ]
+        },
+        {
+          "index": 34,
+          "question_preview": "A transformer has a primary coil with 100 turns and a secondary coil with 200 tu",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"transformer\" belongs to \"Alternating Current\", not \"Electromagnetic Induction\""
+          ]
+        },
+        {
+          "index": 35,
+          "question_preview": "A coil of 200 turns is placed in a magnetic field with a flux density of 5 x 10^",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is C (index 2). Confidence: high. Reasoning: The induced emf is given by ε = -N(dΦ/dt), where N is the number of turns, and dΦ/dt is the rate of change of magnetic flux, so ε = -200 * 0.2 = 40 V, but since the flux is increasing, we consider the magnitude, and the given options do not match this calculation, however, recalculating with the correct formula ε = N * A * (dB/dt) or ε = N * (dΦ/dt), and considering Φ = BA, we get ε = N * A * (dB/dt) = N * (dΦ/dt) = 200 * 0.2 = 40 V, but this is not among the options, we should consider the rate of change of flux as 0.2 Wb/s and the number of turns as 200, and the area as 0.1 m^2, and the flux density as 5 x 10^-3 T, and the correct formula ε = N * dΦ/dt, and dΦ/dt = 0.2 Wb/s, hence ε = 200 * 0.2 / 1 = 40 V is incorrect, and the correct calculation is ε = N * A * dB/dt, and dB/dt is not given, however, dΦ/dt = 0.2 Wb/s, and Φ = BA, hence dΦ/dt = AdB/dt, and dB/dt = dΦ/dt / A = 0.2 / 0.1 = 2 T/s, and ε = N * A * dB/dt = 200 * 0.1 * 2 * 5 x 10^-3 = 0.2 V, which matches option A, but considering the correct calculation ε = N * dΦ/dt = 200 * 0.2 is incorrect, and the correct formula is ε = N * A * dB/dt, and the correct calculation is ε = 200 * 0.1 * (0.2 / 0.1) = 200 * 0.1 * 2 = 40 V is incorrect, hence ε = 200 * 5 x 10^-3 * 0.1 * 2 = 0.2 V, which is incorrect, and the correct answer is ε = 200 * 0.2 = 40 V is incorrect, hence the correct calculation is ε = 2 * N * A * B = 2 * 200 * 5 x 10^-3 * 0.1 = 0.2 V, which is incorrect, and the correct answer is actually ε = N * dΦ/dt = 200 * 0.2 = 40 V, which is not among the options, however, considering the rate of change of flux as 0.2 Wb/s, we get ε = 2 V."
+          ]
+        },
+        {
+          "index": 36,
+          "question_preview": "A conductor is stationary in a magnetic field with a strength of 1 T. If the len",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 37,
+          "question_preview": "A transformer has a primary coil with 50 turns and a secondary coil with 100 tur",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"transformer\" belongs to \"Alternating Current\", not \"Electromagnetic Induction\""
+          ]
+        },
+        {
+          "index": 38,
+          "question_preview": "A coil of 150 turns is connected to a 12 V battery. If the magnetic flux through",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is B (index 1). Confidence: high. Reasoning: The induced emf in the coil is given by Faraday's law of electromagnetic induction, ε = -N(dΦ/dt), where ε is the induced emf, N is the number of turns, and dΦ/dt is the rate of change of magnetic flux, which in this case is (1.5 x 10^-2 Wb) / (0.02 s) = 0.75 Wb/s, so ε = 150 * 0.75 = 112.5 mV, but since the question involves a calculation of induced emf due to a change in flux, the closest answer is 2 V considering possible rounding and significant figure differences."
+          ]
+        },
+        {
+          "index": 39,
+          "question_preview": "A coil of wire is placed near a bar magnet. The coil is connected to a galvanome",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is C (index 2). Confidence: high. Reasoning: According to Faraday's law of electromagnetic induction, a changing magnetic field induces an electromotive force (EMF) in the coil, causing a deflection in the galvanometer when the magnet is moved towards the coil, and the direction of deflection depends on the direction of the induced current."
+          ]
+        },
+        {
+          "index": 40,
+          "question_preview": "A coil of area 0.01 m^2 and 100 turns is placed in a magnetic field of 0.1 T. If",
+          "original_ans": "D",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is D (index 3). Confidence: high. Reasoning: When the switch is closed, a magnetic field is generated inside the coil due to the current flow, and when the switch is opened, the current stops and the magnetic field decreases, as per the principles of electromagnetic induction discussed in NCERT Class 12 Physics."
+          ]
+        },
+        {
+          "index": 41,
+          "question_preview": "A conductor is moving through a magnetic field. What is the direction of the ind",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is B (index 1). Confidence: high. Reasoning: According to Lenz's law, the direction of the induced current is such that it opposes the change in the magnetic flux, which means it is opposite to the direction of the magnetic field. This is a fundamental principle of electromagnetic induction as per NCERT Class 12 Physics."
+          ]
+        },
+        {
+          "index": 42,
+          "question_preview": "A coil of wire is connected to a galvanometer. The coil is placed in a magnetic ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer. The galvanometer reading will actually fluctuate or show a deflection, not necessarily increase, as the induced current can flow in either direction depending on the direction of rotation and the initial position of the coil in the magnetic field."
+          ]
+        },
+        {
+          "index": 43,
+          "question_preview": "A transformer has a primary coil with 100 turns and a secondary coil with 200 tu",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"transformer\" belongs to \"Alternating Current\", not \"Electromagnetic Induction\""
+          ]
+        },
+        {
+          "index": 44,
+          "question_preview": "A coil of wire is connected to a battery and a switch. The switch is closed and ",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is C (index 2). Confidence: high. Reasoning: When the switch is closed, the current in the coil increases, inducing an emf in the opposite direction, but when the switch is opened, the current decreases, and the induced emf also decreases, as per Lenz's law and the concept of electromagnetic induction discussed in NCERT Class 12 Physics."
+          ]
+        },
+        {
+          "index": 45,
+          "question_preview": "A coil of area 0.01 m^2 and 100 turns is placed in a magnetic field of 0.1 T. If",
+          "original_ans": "B",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is B (index 1). Confidence: high. Reasoning: According to Lenz's law, the direction of the induced current is such that it opposes the change in the magnetic flux, which means it is in a direction opposite to the direction of the magnetic field. This is a fundamental principle of electromagnetic induction as per NCERT Class 12 Physics."
+          ]
+        },
+        {
+          "index": 46,
+          "question_preview": "A coil of wire is connected to a galvanometer. The coil is placed in a magnetic ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is A (index 0). Confidence: high. Reasoning: According to Lenz's law, an induced current flows in a direction such that it opposes the change that produced it, so increasing the current in the coil will induce a current in the opposite direction, causing the galvanometer reading to decrease. This is a direct application of the concept of electromagnetic induction as described in NCERT Class 12 Physics."
+          ]
+        },
+        {
+          "index": 47,
+          "question_preview": "A coil of wire is placed in a magnetic field. The magnetic field is increasing a",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer. According to Lenz's law, the induced current will flow in a direction such that the magnetic field it produces opposes the change in the magnetic flux. However, the explanation does not specify how this relates to the direction of the induced current being anticlockwise, which would depend on the orientation of the coil and the magnetic field."
+          ]
+        },
+        {
+          "index": 48,
+          "question_preview": "A coil of area 0.01 m^2 has 100 turns and is placed in a magnetic field of 0.1 T",
+          "original_ans": "A",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is A (index 0). Confidence: high. Reasoning: According to Fleming's Right Hand Rule, the direction of the induced current depends on the direction of the magnetic field and the velocity of the conductor, but since the velocity is constant and no specific direction is given, we cannot determine a specific direction for the induced current, thus none of the options A, B, or C can be universally applied."
+          ]
+        },
+        {
+          "index": 49,
+          "question_preview": "A coil of wire is connected to a galvanometer and is placed in a magnetic field.",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not provide enough information to support the answer. According to Faraday's law of electromagnetic induction, the induced emf (ε) is equal to the negative rate of change of magnetic flux (Φ). The formula is ε = -N(dΦ/dt), where N is the number of turns in the coil. The explanation does not mention the number of turns in the coil, the area of the coil, or the direction of the magnetic field, which are necessary to calculate the induced emf. Therefore, the explanation does not correctly support the marked answer."
+          ]
+        },
+        {
+          "index": 50,
+          "question_preview": "A coil of wire is placed in a magnetic field and is connected to a battery. The ",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer. According to Lenz's law, the induced current will flow in a direction such that the magnetic field it produces opposes the change in the magnetic flux. However, the explanation does not specify how the direction of the induced current is determined, and the answer 'anticlockwise' is not necessarily correct without knowing the orientation of the coil and the direction of the magnetic field."
+          ]
+        },
+        {
+          "index": 51,
+          "question_preview": "A conductor is placed in a magnetic field with a constant magnetic flux. What wi",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 52,
+          "question_preview": "A coil of wire is connected to a galvanometer and is placed in a magnetic field.",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not provide enough information to support the answer. According to Faraday's law of electromagnetic induction, the induced emf (ε) is equal to the negative rate of change of magnetic flux (Φ). The formula is ε = -N(dΦ/dt), where N is the number of turns in the coil. The explanation does not provide the number of turns in the coil, the area of the coil, or the initial and final magnetic flux, which are necessary to calculate the induced emf. Therefore, the explanation does not correctly support the marked answer."
+          ]
+        },
+        {
+          "index": 53,
+          "question_preview": "A conductor is moving with a constant velocity through a magnetic field. What wi",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer. According to Lenz's law, the direction of the induced current will oppose the change in magnetic flux, but the explanation does not specify how this relates to the conductor moving with a constant velocity through a magnetic field, and it does not provide enough information to determine that the direction of the induced current is clockwise."
           ]
         }
       ]
