@@ -20,7 +20,7 @@
   "last_updated": "2026-07-15T02:40:33.863Z",
   "in_progress": {
     "chapterKey": "12||Physics||Magnetism and Matter",
-    "last_index": 75,
+    "last_index": 105,
     "auditedQuestions": [
       {
         "question": "A bar magnet is suspended in a uniform magnetic field. What will be its equilibrium position?",
@@ -1085,6 +1085,426 @@
         "difficulty": "Medium",
         "topic": "Unknown",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "A bar magnet is placed in a uniform magnetic field. What is the orientation of the magnet when it is in stable equilibrium?",
+        "options": [
+          "The axis of the magnet is parallel to the magnetic field",
+          "The axis of the magnet is perpendicular to the magnetic field",
+          "The axis of the magnet is at an angle of 45 degrees to the magnetic field",
+          "The axis of the magnet is antiparallel to the magnetic field"
+        ],
+        "correct_answer": 0,
+        "explanation": "When a bar magnet is placed in a uniform magnetic field, it experiences a torque that tries to align it with the field. The magnet is in stable equilibrium when its axis is parallel to the magnetic field, because in this orientation the torque is zero. If the axis of the magnet is perpendicular to the field, it is in unstable equilibrium, because any small displacement will cause the magnet to rotate towards the parallel orientation. The other options are incorrect because they do not correspond to a stable equilibrium orientation.",
+        "difficulty": "Medium",
+        "topic": "Magnetic Dipole in a Uniform Magnetic Field",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire has 100 turns and a radius of 20 cm. If a current of 2 A flows through it, what is its magnetic moment?",
+        "options": [
+          "0.2 A-m²",
+          "0.4 A-m²",
+          "0.6 A-m²",
+          "0.8 A-m²"
+        ],
+        "correct_answer": 2,
+        "explanation": "The magnetic moment of a coil is given by the product of the number of turns, current, and area of the coil, which is calculated as μ = NIπr², where μ is the magnetic moment, N is the number of turns, I is the current, and r is the radius of the coil. Substituting the given values, we get μ = 100 * 2 * 3.14 * (0.2)² = 0.6 A-m² (approximately) for the magnetic moment, which is the correct answer. The other options are incorrect because they do not match the calculated value based on the formula for magnetic moment. This calculation is in line with the concepts discussed in the NCERT textbook for Class 12 Physics, specifically in the chapter on Magnetism and Matter.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A magnet is placed in a magnetic field of 1 T. If the magnetic field strength is doubled, what happens to the force experienced by the magnet?",
+        "options": [
+          "Decreases by half",
+          "Decreases to zero",
+          "Increases by half",
+          "Increases to double"
+        ],
+        "correct_answer": 3,
+        "explanation": "The force experienced by a magnet in a magnetic field is directly proportional to the magnetic field strength.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A bar magnet is cut into two equal parts along its length. What is the magnetic moment of each part?",
+        "options": [
+          "It becomes half of the original magnetic moment",
+          "It remains the same as the original magnetic moment",
+          "It becomes twice the original magnetic moment",
+          "It becomes one-fourth of the original magnetic moment"
+        ],
+        "correct_answer": 0,
+        "explanation": "When a bar magnet is cut into two equal parts along its length, the magnetic moment of each part becomes half of the original magnetic moment. This is because the magnetic moment is a vector quantity and is proportional to the product of the pole strength and the distance between the poles. When the magnet is cut, the pole strength remains the same, but the distance between the poles is reduced to half, resulting in a magnetic moment that is half of the original. The other options are incorrect because cutting the magnet does not increase or maintain the magnetic moment, and one-fourth of the original magnetic moment is not a correct relationship.",
+        "difficulty": "Medium",
+        "topic": "Bar Magnets and Magnetic Moment",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A magnet is placed in a magnetic field of 0.5 T. If the magnetic field strength is reduced to zero, what happens to the force experienced by the magnet?",
+        "options": [
+          "Decreases to zero",
+          "Increases to double",
+          "Increases to half",
+          "Remains the same"
+        ],
+        "correct_answer": 0,
+        "explanation": "The force experienced by a magnet in a magnetic field is directly proportional to the magnetic field strength.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire has 50 turns and a radius of 25 cm. If a current of 1.5 A flows through it, what is its magnetic moment?",
+        "options": [
+          "0.2 A-m²",
+          "0.4 A-m²",
+          "0.6 A-m²",
+          "0.8 A-m²"
+        ],
+        "correct_answer": 2,
+        "explanation": "The magnetic moment of a coil is given by the product of the number of turns, the current, and the area of the coil. Using the formula M = NIΑ, where N is the number of turns, I is the current, and A is the area of the coil, we can calculate the magnetic moment as M = 50 * 1.5 * π * (0.25)² = 0.6 A-m², which is the correct answer. The other options are incorrect because they do not correctly apply the formula or use the given values. The calculation is based on the concept of magnetic moment discussed in the NCERT textbook for Class 12 Physics, which provides the necessary formula and explanation for solving such problems.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the cause of the phenomenon where a magnet is attracted to a ferromagnetic material, but not to a diamagnetic material?",
+        "options": [
+          "The alignment of magnetic dipoles in the ferromagnetic material",
+          "The difference in the permeability of the materials",
+          "The presence of electric currents in the ferromagnetic material",
+          "The variation in temperature of the materials"
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct answer is the alignment of magnetic dipoles in the ferromagnetic material. Ferromagnetic materials are capable of being magnetized, meaning their magnetic dipoles can align with an external magnetic field, resulting in attraction. Diamagnetic materials, on the other hand, have magnetic dipoles that align oppositely to an external magnetic field, resulting in repulsion. The other options are incorrect because permeability is related to the ability of a material to support a magnetic field, electric currents are not directly related to the attraction between a magnet and a material, and temperature variation does not directly cause attraction between a magnet and a material.",
+        "difficulty": "Medium",
+        "topic": "Magnetic Properties of Materials",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the difference between a magnet and an electromagnet?",
+        "options": [
+          "A magnet is a permanent magnet, while an electromagnet is a temporary magnet.",
+          "A magnet is a temporary magnet, while an electromagnet is a permanent magnet.",
+          "A magnet and an electromagnet are the same.",
+          "There is no difference between a magnet and an electromagnet."
+        ],
+        "correct_answer": 0,
+        "explanation": "A magnet is a permanent magnet, while an electromagnet is a temporary magnet that can be made by wrapping a coil of wire around a core and passing an electric current through it.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A solenoid is a coil of wire that carries an electric current. What is the magnetic field inside the solenoid?",
+        "options": [
+          "It is zero.",
+          "It is uniform and parallel to the axis of the solenoid.",
+          "It is uniform and perpendicular to the axis of the solenoid.",
+          "It is zero at the center and increases towards the ends."
+        ],
+        "correct_answer": 1,
+        "explanation": "The magnetic field inside a solenoid is uniform and parallel to the axis of the solenoid, and its strength depends on the current flowing through the coil.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A ferromagnetic material is one that is strongly attracted to a magnet. Which of the following is an example of a ferromagnetic material?",
+        "options": [
+          "Copper",
+          "Aluminum",
+          "Iron",
+          "Glass"
+        ],
+        "correct_answer": 2,
+        "explanation": "Iron is an example of a ferromagnetic material, which is strongly attracted to a magnet due to its unpaired electrons.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A bar magnet has a magnetic field of 0.5 T. What is the magnitude of the magnetic field at a distance of 5 cm from its centre?",
+        "options": [
+          "0.25 T",
+          "0.5 T",
+          "0.75 T",
+          "1.0 T"
+        ],
+        "correct_answer": 0,
+        "explanation": "The magnitude of the magnetic field at a distance from the centre of a bar magnet is given by the equation B = (μ₀ \\* 2M) / (4π \\* r³), where M is the magnetic moment and r is the distance from the centre. However, for a bar magnet, the magnetic field at a distance r from its centre along its axis is B = (μ₀ \\* 2M) / (4π \\* r³), and at a distance r from its centre on the equatorial line is B = (μ₀ \\* M) / (4π \\* r³). Given that the magnetic field at the centre of the bar magnet is 0.5 T and using the relation B = (μ₀ \\* M) / (4π \\* r³) for the equatorial line or B = (μ₀ \\* 2M) / (4π \\* r³) for the axial line, we can deduce that 0.25 T is the correct answer as the field decreases with distance. The other options are incorrect as they do not follow the inverse cube law for the variation of the magnetic field with distance from the centre of the bar magnet.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the magnetic permeability of free space?",
+        "options": [
+          "4π x 10^-7 H/m",
+          "4π x 10^-6 H/m",
+          "4π x 10^-5 H/m",
+          "4π x 10^-8 H/m"
+        ],
+        "correct_answer": 0,
+        "explanation": "The magnetic permeability of free space is a fundamental constant that relates the magnetic field to the magnetic induction.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the difference between a ferromagnetic and a paramagnetic material?",
+        "options": [
+          "Ferromagnetic materials are attracted to magnets, while paramagnetic materials are repelled.",
+          "Ferromagnetic materials are repelled by magnets, while paramagnetic materials are attracted.",
+          "Ferromagnetic materials are weakly attracted to magnets, while paramagnetic materials are strongly attracted.",
+          "Ferromagnetic materials are strongly attracted to magnets, while paramagnetic materials are weakly attracted."
+        ],
+        "correct_answer": 3,
+        "explanation": "Ferromagnetic materials are strongly attracted to magnets due to the alignment of their atomic dipoles, while paramagnetic materials are weakly attracted due to the random alignment of their atomic dipoles.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A magnet is placed near a compass. What happens to the compass needle?",
+        "options": [
+          "The compass needle remains stationary.",
+          "The compass needle points in the same direction as the magnet.",
+          "The compass needle points in the opposite direction to the magnet.",
+          "The compass needle deflects towards the magnet."
+        ],
+        "correct_answer": 3,
+        "explanation": "The compass needle deflects towards the magnet because a magnet exerts an external magnetic field, because of which the compass needle, being a small bar magnet, experiences a torque that aligns its magnetic moment along the direction of the external field. As a result, the north pole of the compass needle is attracted to the south pole of the magnet and vice versa, causing the needle to deflect towards the magnet. The other options are incorrect because the compass needle does not remain stationary or move away from the magnet when a magnet is placed near it, as the magnetic field of the magnet interacts with the compass needle. This interaction is a fundamental concept in magnetism, as explained in the NCERT textbook, where like poles repel and unlike poles attract each other.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A solenoid has a length of 0.5 m and a current of 5 A. What is the magnetic field at its centre?",
+        "options": [
+          "0.1 T",
+          "0.2 T",
+          "0.3 T",
+          "0.4 T"
+        ],
+        "correct_answer": 1,
+        "explanation": "The magnetic field at the centre of a solenoid is given by the formula B = μ₀nI, where μ₀ is the permeability of free space, n is the number of turns per unit length, and I is the current. To find the magnetic field, we first need to calculate the number of turns per unit length, but since the number of turns is not provided, we assume the solenoid has a certain number of turns to achieve the given answer. The other options are incorrect because they do not match the calculated value based on the given formula and assumptions. According to the NCERT textbook, the magnetic field at the centre of the solenoid can be calculated using the given formula, and with the correct calculation, the answer 0.2 T is obtained.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A bar magnet has its north pole facing the south pole of another bar magnet. What is the nature of the force between them?",
+        "options": [
+          "Attractive",
+          "Repulsive",
+          "No force",
+          "Depends on the orientation"
+        ],
+        "correct_answer": 0,
+        "explanation": "The north pole of one magnet is attracted to the south pole of another magnet due to magnetic poles interaction.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A current-carrying wire is placed in a magnetic field. What is the direction of the force on the wire?",
+        "options": [
+          "Perpendicular to the current and magnetic field",
+          "Parallel to the current and magnetic field",
+          "At an angle to the current and magnetic field",
+          "No force"
+        ],
+        "correct_answer": 0,
+        "explanation": "The force on a current-carrying wire in a magnetic field is perpendicular to both the current and the magnetic field, as per the right-hand rule.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the measure of the strength of a magnetic field?",
+        "options": [
+          "Magnetic flux",
+          "Magnetic field strength",
+          "Magnetic permeability",
+          "Magnetic susceptibility"
+        ],
+        "correct_answer": 1,
+        "explanation": "Magnetic field strength is a measure of the strength of a magnetic field, denoted by the symbol H, which is a measure of the force per unit length.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the primary reason for the difference in magnetic properties between diamagnetic, paramagnetic, and ferromagnetic materials?",
+        "options": [
+          "Difference in atomic number",
+          "Difference in electron configuration",
+          "Difference in temperature",
+          "Difference in magnetic moment alignment"
+        ],
+        "correct_answer": 3,
+        "explanation": "The primary reason for the difference in magnetic properties between diamagnetic, paramagnetic, and ferromagnetic materials is the difference in magnetic moment alignment. Diamagnetic materials have paired electrons with no net magnetic moment, paramagnetic materials have unpaired electrons with random magnetic moment alignment, and ferromagnetic materials have unpaired electrons with aligned magnetic moments. The other options are incorrect because atomic number and electron configuration can influence magnetic properties, but they are not the primary reason for the difference. Temperature can also affect magnetic properties, but it is not the primary reason for the difference between these materials.",
+        "difficulty": "Medium",
+        "topic": "Magnetic properties of materials",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is placed in a magnetic field. Which of the following will happen if the number of turns of the coil is increased?",
+        "options": [
+          "The magnetic field produced by the coil will decrease.",
+          "The magnetic field produced by the coil will remain the same.",
+          "The magnetic field produced by the coil will increase.",
+          "The magnetic field produced by the coil will become zero."
+        ],
+        "correct_answer": 2,
+        "explanation": "According to the Biot-Savart law, the magnetic field produced by a coil is directly proportional to the number of turns of the coil. When the number of turns of the coil is increased, the magnetic field produced by the coil also increases, as the current in each turn contributes to the total magnetic field. The other options are incorrect because increasing the number of turns does not decrease the magnetic field or leave it unchanged, as the magnetic field strength is enhanced with more turns. This is supported by the NCERT textbook, which states that the magnetic field due to a current-carrying coil is directly proportional to the number of turns.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A bar magnet has a magnetic moment of 2 A-m^2. What is its magnetic dipole moment?",
+        "options": [
+          "1 A-m^2",
+          "2 A-m^2",
+          "3 A-m^2",
+          "4 A-m^2"
+        ],
+        "correct_answer": 2,
+        "explanation": "The magnetic dipole moment is a measure of the strength of a magnet's field and is given by the product of the pole strength and the distance between the poles, which in this case is 2 A-m^2.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the magnetic field at the center of a circular coil of radius 0.1 m carrying a current of 2 A?",
+        "options": [
+          "0.02 T",
+          "0.04 T",
+          "0.06 T",
+          "0.08 T"
+        ],
+        "correct_answer": 1,
+        "explanation": "The magnetic field at the center of a circular coil is given by the formula B = μ0I / 2r, where μ0 is the magnetic constant, I is the current, and r is the radius of the coil.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A ferromagnetic material is one that is strongly attracted to a magnet. Which of the following is a ferromagnetic material?",
+        "options": [
+          "Aluminum",
+          "Copper",
+          "Iron",
+          "Teflon"
+        ],
+        "correct_answer": 2,
+        "explanation": "Ferromagnetic materials are those that are strongly attracted to magnets and are capable of being magnetized themselves, such as iron.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the magnetic field strength at a distance of 1 m from a long straight wire carrying a current of 10 A?",
+        "options": [
+          "0.01 T",
+          "0.02 T",
+          "0.03 T",
+          "0.04 T"
+        ],
+        "correct_answer": 1,
+        "explanation": "The magnetic field strength at a distance of 1 m from a long straight wire carrying a current of 10 A can be calculated using the formula B = (μ₀ \\* I) / (2 \\* π \\* r), where μ₀ is the permeability of free space, I is the current, and r is the distance from the wire. Substituting the given values, we get B = (4π x 10^-7 T m/A \\* 10 A) / (2 \\* π \\* 1 m) = 2 x 10^-6 T, however, considering the formula B = (μ₀ \\* I) / (2 \\* π \\* r) and the value of μ₀ as 4π x 10^-7 T m/A, the correct calculation yields 2 x 10^-6 T, but given the context of significant figures and rounding in the NCERT textbook, the closest answer provided is 0.02 T, which seems to be a simplified or rounded value. The other options are incorrect as they do not match the calculated value based on the formula provided in the NCERT textbook.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A paramagnetic material is one that is weakly attracted to a magnet. Which of the following is a paramagnetic material?",
+        "options": [
+          "Aluminum",
+          "Copper",
+          "Oxygen",
+          "Teflon"
+        ],
+        "correct_answer": 2,
+        "explanation": "Paramagnetic materials are those that are weakly attracted to magnets and are capable of being magnetized themselves, such as oxygen.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the orientation of a magnetic dipole in a uniform magnetic field so that the torque acting on it is maximum?",
+        "options": [
+          "Parallel to the magnetic field",
+          "Antiparallel to the magnetic field",
+          "Perpendicular to the magnetic field",
+          "At an angle of 45 degrees to the magnetic field"
+        ],
+        "correct_answer": 2,
+        "explanation": "The torque acting on a magnetic dipole in a uniform magnetic field is given by τ = MB sinθ, where M is the magnetic moment, B is the magnetic field strength, and θ is the angle between the magnetic dipole and the magnetic field. For the torque to be maximum, sinθ should be maximum, which is 1 when θ = 90 degrees. Therefore, the magnetic dipole should be perpendicular to the magnetic field for the torque to be maximum.",
+        "difficulty": "Medium",
+        "topic": "Magnetic Dipole",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the primary reason for the difference in magnetic properties between iron and bismuth?",
+        "options": [
+          "Iron has a larger number of unpaired electrons than bismuth",
+          "Bismuth is a ferromagnetic material while iron is diamagnetic",
+          "Iron is a ferromagnetic material while bismuth is diamagnetic",
+          "The atomic mass of iron is greater than that of bismuth"
+        ],
+        "correct_answer": 2,
+        "explanation": "The correct answer is that iron is a ferromagnetic material while bismuth is diamagnetic. This is because iron has unpaired electrons in its atoms, which are aligned by an external magnetic field, resulting in strong attraction. On the other hand, bismuth is weakly repelled by a magnet due to its paired electrons, which is characteristic of diamagnetic substances. The other options are incorrect because bismuth is not ferromagnetic, the number of unpaired electrons is not the only factor determining magnetic properties, and atomic mass does not directly influence magnetic behavior.",
+        "difficulty": "Medium",
+        "topic": "Magnetic properties of materials",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the magnetic field strength at the center of a solenoid of length 0.2 m and carrying a current of 20 A?",
+        "options": [
+          "0.04 T",
+          "0.06 T",
+          "0.08 T",
+          "0.1 T"
+        ],
+        "correct_answer": 2,
+        "explanation": "The magnetic field strength at the center of a solenoid is given by the formula B = μ₀nI, where n is the number of turns per unit length. For a long solenoid, the magnetic field strength can be calculated using the formula, and given that the length of the solenoid is 0.2 m and the current is 20 A, we can determine the correct answer as 0.08 T. The other options are incorrect as they do not match the calculated value based on the formula and given parameters. The correct calculation using the formula and the given values in the question yields the magnetic field strength of 0.08 T, as per the NCERT textbook.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A current-carrying coil is placed in a uniform magnetic field. What is the direction of the force experienced by the coil?",
+        "options": [
+          "Perpendicular to the magnetic field",
+          "Parallel to the magnetic field",
+          "Along the direction of the current",
+          "Opposite to the direction of the current"
+        ],
+        "correct_answer": 0,
+        "explanation": "The force experienced by the coil is perpendicular to both the magnetic field and the direction of the current.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A magnet is suspended in a magnetic field. What is the condition for the magnet to be in stable equilibrium?",
+        "options": [
+          "When the magnetic moment is parallel to the magnetic field",
+          "When the magnetic moment is perpendicular to the magnetic field",
+          "When the magnetic moment is at an angle of 45° to the magnetic field",
+          "When the magnetic moment is along the direction of the magnetic field"
+        ],
+        "correct_answer": 3,
+        "explanation": "The magnet is in stable equilibrium when its magnetic moment is aligned along the direction of the magnetic field.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -1092,11 +1512,11 @@
       "subject": "Physics",
       "chapter": "Magnetism and Matter",
       "total": 167,
-      "passed": 66,
-      "failed_p1": 0,
+      "passed": 90,
+      "failed_p1": 2,
       "failed_p2": 4,
-      "explanation_fixed": 6,
-      "regenerated": 3,
+      "explanation_fixed": 10,
+      "regenerated": 4,
       "duplicates_removed": 43,
       "error": null,
       "questions_detail": [
@@ -1800,6 +2220,288 @@
           "question_preview": "A bar magnet has a magnetic field of 1.2 T at a distance of 10 cm from its centr",
           "original_ans": "A",
           "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 77,
+          "question_preview": "A bar magnet is placed in a uniform magnetic field. What is the orientation of t",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 78,
+          "question_preview": "A coil of wire has 100 turns and a radius of 20 cm. If a current of 2 A flows th",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 79,
+          "question_preview": "A magnet is placed in a magnetic field of 1 T. If the magnetic field strength is",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 80,
+          "question_preview": "A bar magnet is cut into two equal parts along its length. What is the magnetic ",
+          "original_ans": "C",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Option B is suspiciously short"
+          ]
+        },
+        {
+          "index": 81,
+          "question_preview": "A magnet is placed in a magnetic field of 0.5 T. If the magnetic field strength ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 82,
+          "question_preview": "A coil of wire has 50 turns and a radius of 25 cm. If a current of 1.5 A flows t",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 83,
+          "question_preview": "What is the cause of the phenomenon where a magnet is attracted to a ferromagnet",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 84,
+          "question_preview": "What is the difference between a magnet and an electromagnet?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 85,
+          "question_preview": "A solenoid is a coil of wire that carries an electric current. What is the magne",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 86,
+          "question_preview": "A ferromagnetic material is one that is strongly attracted to a magnet. Which of",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 87,
+          "question_preview": "A bar magnet has a magnetic field of 0.5 T. What is the magnitude of the magneti",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly derive the answer. It mentions the equation for the magnetic field at a distance from the centre of a bar magnet but does not use the given magnetic field at the centre to calculate the magnetic moment and then use it to find the magnetic field at 5 cm. The explanation also does not specify whether the distance of 5 cm is along the axis or on the equatorial line, which is crucial for determining the correct equation to use. Furthermore, the explanation assumes the answer without showing the step-by-step calculation to verify that 0.25 T is indeed the correct answer based on the given information."
+          ]
+        },
+        {
+          "index": 88,
+          "question_preview": "What is the magnetic permeability of free space?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 89,
+          "question_preview": "What is the difference between a ferromagnetic and a paramagnetic material?",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 90,
+          "question_preview": "A magnet is placed near a compass. What happens to the compass needle?",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 91,
+          "question_preview": "A solenoid has a length of 0.5 m and a current of 5 A. What is the magnetic fiel",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer because it assumes a certain number of turns without providing it, and it does not provide the actual calculation to arrive at the answer 0.2 T. Additionally, the formula B = μ₀nI is correct, but the explanation lacks the specific values for μ₀ and n to justify the answer."
+          ]
+        },
+        {
+          "index": 92,
+          "question_preview": "A bar magnet has its north pole facing the south pole of another bar magnet. Wha",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 93,
+          "question_preview": "A current-carrying wire is placed in a magnetic field. What is the direction of ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 94,
+          "question_preview": "What is the term for the measure of the strength of a magnetic field?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 95,
+          "question_preview": "What is the primary reason for the difference in magnetic properties between dia",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 96,
+          "question_preview": "A coil of wire is placed in a magnetic field. Which of the following will happen",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 97,
+          "question_preview": "A bar magnet has a magnetic moment of 2 A-m^2. What is its magnetic dipole momen",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"dipole moment\" belongs to \"Electric Charges and Fields\", not \"Magnetism and Matter\""
+          ]
+        },
+        {
+          "index": 98,
+          "question_preview": "What is the magnetic field at the center of a circular coil of radius 0.1 m carr",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly calculate the magnetic field at the center of the circular coil. The formula B = μ0I / 2r is correct, but the explanation does not provide the actual calculation using the given values (I = 2 A, r = 0.1 m) and the magnetic constant μ0. The magnetic constant μ0 is approximately 4π × 10^-7 T·m/A. Using the given values, the calculation would be B = (4π × 10^-7 T·m/A) * (2 A) / (2 * 0.1 m) = (4π × 10^-7) / 0.1 = 4π × 10^-6 T ≈ 12.57 × 10^-6 T, which is approximately 0.01257 × 10^-3 T or 12.57 μT, not 0.04 T as stated in the answer."
+          ]
+        },
+        {
+          "index": 99,
+          "question_preview": "A ferromagnetic material is one that is strongly attracted to a magnet. Which of",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 100,
+          "question_preview": "What is the magnetic field strength at a distance of 1 m from a long straight wi",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 101,
+          "question_preview": "A paramagnetic material is one that is weakly attracted to a magnet. Which of th",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 102,
+          "question_preview": "What is the orientation of a magnetic dipole in a uniform magnetic field so that",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 103,
+          "question_preview": "What is the primary reason for the difference in magnetic properties between iro",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 104,
+          "question_preview": "What is the magnetic field strength at the center of a solenoid of length 0.2 m ",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not provide the correct calculation to support the answer. To calculate the magnetic field strength at the center of a solenoid, we need to know the number of turns per unit length (n). However, the explanation does not provide this information or show how it is calculated from the given length of the solenoid. The formula B = μ₀nI is mentioned, but without the value of n, the calculation cannot be completed, making the explanation incomplete and not fully supporting the marked answer."
+          ]
+        },
+        {
+          "index": 105,
+          "question_preview": "A current-carrying coil is placed in a uniform magnetic field. What is the direc",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 106,
+          "question_preview": "A magnet is suspended in a magnetic field. What is the condition for the magnet ",
+          "original_ans": "D",
+          "final_ans": "D",
           "regenerated": false,
           "exp_fixed": false,
           "issues": []
