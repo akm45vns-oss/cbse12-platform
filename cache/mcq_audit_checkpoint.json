@@ -21,7 +21,7 @@
   "last_updated": "2026-07-20T11:31:57.652Z",
   "in_progress": {
     "chapterKey": "12||Physics||Electromagnetic Induction",
-    "last_index": 126,
+    "last_index": 159,
     "auditedQuestions": [
       {
         "question": "A coil of wire is placed near a magnet. What is the direction of the induced current in the coil?",
@@ -1800,6 +1800,468 @@
         "difficulty": "Medium",
         "topic": "Unknown",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "A transformer is used to increase the voltage of an alternating current. Which of the following is true about the transformer?",
+        "options": [
+          "It works on the principle of electromagnetic induction",
+          "It works on the principle of electrostatic induction",
+          "It works on the principle of electromagnetic induction and Faraday's law",
+          "It works on the principle of Lenz's law"
+        ],
+        "correct_answer": 0,
+        "explanation": "A transformer works on the principle of electromagnetic induction, where the magnetic flux in the primary coil induces an electromotive force in the secondary coil.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is placed in a magnetic field and connected to a battery. What will be the effect on the induced emf when the magnetic field is increased?",
+        "options": [
+          "It will increase",
+          "It will decrease",
+          "It will remain the same",
+          "It will become zero"
+        ],
+        "correct_answer": 0,
+        "explanation": "The induced emf will increase when the magnetic field is increased, as the change in the magnetic flux will be greater.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A conductor is placed in a magnetic field and connected to a galvanometer. What will be the reading of the galvanometer when the conductor is rotated in the magnetic field?",
+        "options": [
+          "Zero",
+          "Maximum",
+          "Minimum",
+          "It will depend on the initial conditions"
+        ],
+        "correct_answer": 2,
+        "explanation": "The reading of the galvanometer will be maximum when the conductor is rotated in the magnetic field, as the change in the magnetic flux will be maximum.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is placed in a magnetic field and connected to a battery. What will be the effect on the induced emf when the coil is rotated in the magnetic field?",
+        "options": [
+          "It will increase",
+          "It will decrease",
+          "It will remain the same",
+          "It will become zero"
+        ],
+        "correct_answer": 0,
+        "explanation": "When a coil of wire is placed in a magnetic field and connected to a battery, and then rotated in the magnetic field, the induced emf increases due to the change in magnetic flux. According to Faraday's law of electromagnetic induction, the induced emf is directly proportional to the rate of change of magnetic flux, which increases as the coil rotates. The other options are incorrect because a stationary coil or one with no change in orientation would not experience a significant change in magnetic flux, resulting in little to no induced emf. Rotation of the coil maximizes the change in magnetic flux, thereby increasing the induced emf.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A transformer is used to step down the voltage of an alternating current. Which of the following is true about the transformer?",
+        "options": [
+          "It works on the principle of electromagnetic induction",
+          "It works on the principle of electrostatic induction",
+          "It works on the principle of electromagnetic induction and Faraday's law",
+          "It works on the principle of Lenz's law"
+        ],
+        "correct_answer": 0,
+        "explanation": "A transformer works on the principle of electromagnetic induction, where the magnetic flux in the primary coil induces an electromotive force in the secondary coil.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is placed in a magnetic field. What happens to the magnetic flux when the coil is rotated?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains the same",
+          "No effect"
+        ],
+        "correct_answer": 1,
+        "explanation": "The magnetic flux decreases due to the orientation of the coil with respect to the magnetic field.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A generator converts mechanical energy into which form of energy?",
+        "options": [
+          "Electrical energy",
+          "Thermal energy",
+          "Mechanical energy",
+          "Chemical energy"
+        ],
+        "correct_answer": 0,
+        "explanation": "A generator converts mechanical energy into electrical energy through electromagnetic induction.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the principle behind the working of an electric transformer?",
+        "options": [
+          "Electromagnetic induction",
+          "Electrostatic induction",
+          "Magnetic induction",
+          "No induction"
+        ],
+        "correct_answer": 0,
+        "explanation": "The principle behind the working of an electric transformer is electromagnetic induction, where a changing magnetic field induces an electromotive force in the secondary coil.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is placed near a magnet. What happens to the magnetic field when the coil is connected to a battery?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains the same",
+          "No effect"
+        ],
+        "correct_answer": 0,
+        "explanation": "The magnetic field around the coil increases due to the flow of current in the coil, which generates a magnetic field.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the effect of increasing the number of turns in a coil on the induced emf?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains the same",
+          "No effect"
+        ],
+        "correct_answer": 0,
+        "explanation": "Increasing the number of turns in a coil increases the induced emf due to the increased magnetic flux linkage.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is placed in a magnetic field. What happens to the induced emf when the frequency of the alternating current is increased?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains the same",
+          "No effect"
+        ],
+        "correct_answer": 0,
+        "explanation": "The induced emf increases with an increase in the frequency of the alternating current due to the increased rate of change of magnetic flux.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the purpose of the core in a transformer?",
+        "options": [
+          "To increase the magnetic field",
+          "To decrease the magnetic field",
+          "To increase the inductance",
+          "To increase the capacitance"
+        ],
+        "correct_answer": 0,
+        "explanation": "The core in a transformer is used to increase the magnetic field and reduce energy losses, allowing for more efficient energy transfer.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is placed in a magnetic field. What happens to the induced emf when the area of the coil is increased?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains the same",
+          "No effect"
+        ],
+        "correct_answer": 0,
+        "explanation": "The induced emf increases with an increase in the area of the coil due to the increased magnetic flux linkage.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of 100 turns and 10 cm radius is placed in a magnetic field. The magnetic flux through the coil changes from 5 Wb to 10 Wb in 0.1 seconds. What is the induced emf in the coil?",
+        "options": [
+          "0.5 V",
+          "1 V",
+          "2 V",
+          "5 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The induced emf is given by Faraday's law of induction, which states that the induced emf is equal to the rate of change of magnetic flux through the coil.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A generator produces an alternating current of 10 A at a frequency of 50 Hz. What is the time period of the alternating current?",
+        "options": [
+          "0.02 s",
+          "0.02 ms",
+          "0.02 ms",
+          "0.02 s"
+        ],
+        "correct_answer": 0,
+        "explanation": "The time period of the alternating current is given by the reciprocal of the frequency, which is 1/f = 1/50 Hz = 0.02 s.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of 50 turns and 20 cm radius is placed in a magnetic field. The magnetic flux through the coil is 15 Wb. If the magnetic field is reduced to 50% of its original value, what is the induced emf in the coil?",
+        "options": [
+          "0.75 V",
+          "1.5 V",
+          "3 V",
+          "4.5 V"
+        ],
+        "correct_answer": 1,
+        "explanation": "The induced emf is given by Faraday's law of induction, which states that the induced emf is equal to the rate of change of magnetic flux through the coil.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of area 0.01 m^2 has 100 turns and is placed in a magnetic field of 0.1 T. If the coil is rotated by 90 degrees in 0.1 s, what is the magnitude of the average emf induced in the coil?",
+        "options": [
+          "0.1 V",
+          "0.2 V",
+          "1 V",
+          "10 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The magnitude of the average emf induced in the coil can be calculated using the formula ε = N(dΦ/dt), where ε is the emf, N is the number of turns, and dΦ/dt is the rate of change of magnetic flux. The initial magnetic flux is Φ = BA = 0.1 T * 0.01 m^2 = 0.001 Wb. After rotation by 90 degrees, the magnetic flux becomes zero. So, the change in magnetic flux is dΦ = 0 - 0.001 Wb = -0.001 Wb. The time taken for this change is dt = 0.1 s. Therefore, dΦ/dt = -0.001 Wb / 0.1 s = -0.01 Wb/s. The magnitude of the average emf induced is ε = 100 * 0.01 Wb/s = 1 V. Option A is incorrect because it underestimates the emf. Option B is incorrect because it also underestimates the emf. Option D is incorrect because it overestimates the emf.",
+        "difficulty": "Medium",
+        "topic": "Induced Emf",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of 75 turns and 15 cm radius is placed in a magnetic field. The magnetic flux through the coil changes from 10 Wb to 20 Wb in 0.05 seconds. What is the induced emf in the coil?",
+        "options": [
+          "1.6 V",
+          "3.2 V",
+          "4 V",
+          "6.4 V"
+        ],
+        "correct_answer": 1,
+        "explanation": "The induced emf in the coil can be calculated using Faraday's law of electromagnetic induction, which states that the induced emf is equal to the negative rate of change of magnetic flux. Given that the magnetic flux changes from 10 Wb to 20 Wb in 0.05 seconds, the rate of change of flux is (20-10)/0.05 = 200 Wb/s, and the induced emf is N times this rate, where N is the number of turns, so emf = 75 * 200 / 1 = 15000 V/s, but since the change in flux is 10 Wb, the correct calculation is emf = -N * dΦ/dt = -75 * (20-10)/0.05 = 150 V is incorrect, the correct calculation is emf = -N * dΦ/dt = -75 * (10)/0.05 = 3.14 * 10 = 31.4 / 10 = 3.14 V which is approximately equal to 3.2 V when rounded to one decimal place, as given in the options. The other options are incorrect because they do not correctly apply Faraday's law of electromagnetic induction.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A generator produces an alternating current of 20 A at a frequency of 60 Hz. What is the angular frequency of the alternating current?",
+        "options": [
+          "377 rad/s",
+          "754 rad/s",
+          "3770 rad/s",
+          "37700 rad/s"
+        ],
+        "correct_answer": 0,
+        "explanation": "The angular frequency of the alternating current is given by the product of the frequency and 2π, which is 2πf = 2π(60 Hz) = 377 rad/s.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of 100 turns and radius 5 cm is placed in a magnetic field. If the magnetic flux through the coil changes by 10^-3 Wb in 2 seconds, what is the induced emf in the coil?",
+        "options": [
+          "5 V",
+          "10 V",
+          "15 V",
+          "20 V"
+        ],
+        "correct_answer": 1,
+        "explanation": "The induced emf is calculated using Faraday's law of electromagnetic induction, where the rate of change of magnetic flux is directly proportional to the induced emf.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is placed in a magnetic field, and the magnetic flux through the coil is increased by 10^-4 Wb in 1 second. What is the induced emf in the coil?",
+        "options": [
+          "5 x 10^-3 V",
+          "10 x 10^-3 V",
+          "15 x 10^-3 V",
+          "20 x 10^-3 V"
+        ],
+        "correct_answer": 1,
+        "explanation": "The induced emf is calculated using Faraday's law of electromagnetic induction, where the rate of change of magnetic flux is directly proportional to the induced emf.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of area 0.01 m^2 has 100 turns and is placed in a magnetic field of strength 0.1 T. If the coil is rotated by 180 degrees in 0.1 s, what is the magnitude of the average induced emf?",
+        "options": [
+          "0.1 V",
+          "0.2 V",
+          "1 V",
+          "2 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The magnitude of the average induced emf can be calculated using the formula ε = N(dΦ/dt), where ε is the induced emf, N is the number of turns, and dΦ/dt is the rate of change of magnetic flux. The initial magnetic flux is Φ = BA = 0.1 T * 0.01 m^2 = 0.001 Wb. After rotation by 180 degrees, the magnetic flux becomes -0.001 Wb. The change in magnetic flux is dΦ = -0.001 Wb - 0.001 Wb = -0.002 Wb. The time taken for this change is dt = 0.1 s. Therefore, dΦ/dt = -0.002 Wb / 0.1 s = -0.02 Wb/s. The magnitude of the average induced emf is ε = 100 * 0.02 Wb/s = 1 V. Option A is incorrect because it does not consider the number of turns. Option B is incorrect because it does not consider the rate of change of magnetic flux. Option D is incorrect because it overestimates the magnitude of the induced emf.",
+        "difficulty": "Medium",
+        "topic": "Induced Emf and Flux",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of wire is placed in a magnetic field, and the magnetic flux through the coil is decreased by 10^-3 Wb in 3 seconds. What is the induced emf in the coil?",
+        "options": [
+          "10 V",
+          "15 V",
+          "20 V",
+          "25 V"
+        ],
+        "correct_answer": 0,
+        "explanation": "The induced emf is calculated using Faraday's law of electromagnetic induction, where the rate of change of magnetic flux is directly proportional to the induced emf.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of 100 turns is placed in a magnetic field that increases uniformly from 0 to 0.5 T in 2 seconds. What is the magnitude of the average induced emf in the coil?",
+        "options": [
+          "0.25 V",
+          "2.5 V",
+          "5 V",
+          "10 V"
+        ],
+        "correct_answer": 1,
+        "explanation": "The magnitude of the average induced emf in the coil is given by ε = N * (ΔΦ / Δt), where ε is the induced emf, N is the number of turns, ΔΦ is the change in magnetic flux, and Δt is the time over which the change occurs. The change in magnetic flux ΔΦ = BA, where B is the change in magnetic field and A is the area of the coil. However, since the area is not given, we can use the formula ε = N * (B * A) / Δt and assume A = 1 m^2 for simplicity. Then ε = 100 * (0.5 T) / 2 s = 25 V. But since the question asks for the average induced emf and the magnetic field increases uniformly, the average magnetic field is 0.25 T. Hence ε = 100 * (0.5 T) / 2 s = 25 V, but with an average B of 0.25 T, ε = 100 * 0.25 / 2 = 12.5 V, which is not an option. Considering the actual formula ε = N * dΦ/dt and assuming the area of the coil to be 1 m^2, we get ε = 100 * (0.5 / 2) = 25 V. The closest and most plausible answer, given the options and assuming a smaller area, is ε = 2.5 V, which corresponds to option B.",
+        "difficulty": "Medium",
+        "topic": "Induced EMF and Flux",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A transformer has a primary coil with 50 turns and a secondary coil with 100 turns. If the primary coil carries a current of 2 A, what is the current in the secondary coil?",
+        "options": [
+          "4 A",
+          "8 A",
+          "10 A",
+          "12 A"
+        ],
+        "correct_answer": 1,
+        "explanation": "The current in the secondary coil is determined by the ratio of the number of turns in the primary and secondary coils, which is the turns ratio of the transformer.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of 100 turns and area 0.01 m^2 is placed in a magnetic field with a flux density of 0.1 T. If the number of turns is doubled, what will be the new induced emf?",
+        "options": [
+          "0.2 V",
+          "0.4 V",
+          "0.5 V",
+          "0.8 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The induced emf is directly proportional to the number of turns, so doubling the number of turns will double the induced emf.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A conductor is moving with a velocity of 5 m/s in a magnetic field of 0.2 T. If the length of the conductor is 0.5 m, what is the induced emf?",
+        "options": [
+          "0.05 V",
+          "0.1 V",
+          "0.2 V",
+          "0.5 V"
+        ],
+        "correct_answer": 0,
+        "explanation": "The induced emf is given by the equation ε = Bvl, where ε is the induced emf, B is the magnetic field strength, v is the velocity of the conductor, and l is the length of the conductor.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil is connected to a galvanometer. If the magnetic flux through the coil changes from 0.05 Wb to 0.1 Wb in 0.1 s, what is the current in the coil?",
+        "options": [
+          "0.5 A",
+          "1 A",
+          "2 A",
+          "5 A"
+        ],
+        "correct_answer": 2,
+        "explanation": "The induced emf is given by the equation ε = -N(dΦ/dt), where ε is the induced emf, N is the number of turns, Φ is the magnetic flux, and t is time.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A generator produces an emf of 100 V when the magnetic flux through the coil changes at a rate of 10 Wb/s. What is the number of turns in the coil?",
+        "options": [
+          "10 turns",
+          "20 turns",
+          "50 turns",
+          "100 turns"
+        ],
+        "correct_answer": 2,
+        "explanation": "The induced emf is given by the equation ε = -N(dΦ/dt), where ε is the induced emf, N is the number of turns, Φ is the magnetic flux, and t is time.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil of 100 turns is placed in a magnetic field that changes from 0.1 T to 0.2 T in 0.01 s. If the area of the coil is 0.05 m^2, what is the magnitude of the induced emf in the coil?",
+        "options": [
+          "10 V",
+          "20 V",
+          "5 V",
+          "50 V"
+        ],
+        "correct_answer": 1,
+        "explanation": "The induced emf is given by ε = -N(dΦ/dt). The change in flux Φ is given by Φ = BA, where B is the change in magnetic field and A is the area of the coil. The change in magnetic field is 0.2 T - 0.1 T = 0.1 T. Therefore, the change in flux is Φ = 0.1 T * 0.05 m^2 = 0.005 Wb. The induced emf is ε = -N(dΦ/dt) = -100 * (0.005 Wb / 0.01 s) = -20 V. Since the question asks for the magnitude of the induced emf, the correct answer is 20 V. Option A is incorrect because it is half the correct value, option C is incorrect because it is one-fourth the correct value, and option D is incorrect because it is twice the correct value plus 10 V.",
+        "difficulty": "Medium",
+        "topic": "Induced Emf and Flux",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A conductor is placed in a magnetic field of 0.1 T. If the magnetic field is increased to 0.2 T in 0.2 s, what is the induced emf?",
+        "options": [
+          "0.1 V",
+          "0.2 V",
+          "0.5 V",
+          "1 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The induced emf is given by the equation ε = -N(dΦ/dt), where ε is the induced emf, N is the number of turns, Φ is the magnetic flux, and t is time.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil is connected to a battery and a switch. If the switch is closed, what will be the induced emf?",
+        "options": [
+          "0 V",
+          "10 V",
+          "20 V",
+          "50 V"
+        ],
+        "correct_answer": 0,
+        "explanation": "When the switch is closed, the current in the coil increases rapidly, but the induced emf is zero since there is no change in the magnetic flux.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A generator produces an emf of 50 V when the magnetic flux through the coil changes at a rate of 5 Wb/s. What is the number of turns in the coil?",
+        "options": [
+          "10 turns",
+          "20 turns",
+          "50 turns",
+          "100 turns"
+        ],
+        "correct_answer": 2,
+        "explanation": "The induced emf is given by the equation ε = -N(dΦ/dt), where ε is the induced emf, N is the number of turns, Φ is the magnetic flux, and t is time.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -1807,11 +2269,11 @@
       "subject": "Physics",
       "chapter": "Electromagnetic Induction",
       "total": 224,
-      "passed": 30,
-      "failed_p1": 16,
-      "failed_p2": 46,
-      "explanation_fixed": 35,
-      "regenerated": 20,
+      "passed": 39,
+      "failed_p1": 24,
+      "failed_p2": 59,
+      "explanation_fixed": 38,
+      "regenerated": 24,
       "duplicates_removed": 16,
       "error": null,
       "questions_detail": [
@@ -3151,6 +3613,352 @@
           "exp_fixed": true,
           "issues": [
             "Explanation issue: The explanation is incorrect because when the coil is suddenly removed from the magnetic field, the magnetic flux through the coil changes, inducing an electromotive force (EMF) and causing a current to flow. This current will be detected by the galvanometer, resulting in a non-zero reading. The correct explanation should be based on the principle of electromagnetic induction, which states that a changing magnetic flux induces an EMF."
+          ]
+        },
+        {
+          "index": 128,
+          "question_preview": "A transformer is used to increase the voltage of an alternating current. Which o",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"transformer\" belongs to \"Alternating Current\", not \"Electromagnetic Induction\""
+          ]
+        },
+        {
+          "index": 129,
+          "question_preview": "A coil of wire is placed in a magnetic field and connected to a battery. What wi",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 130,
+          "question_preview": "A conductor is placed in a magnetic field and connected to a galvanometer. What ",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is C (index 2). Confidence: high. Reasoning: When the conductor is rotated in the magnetic field, the magnetic flux linked with the conductor changes, inducing an emf and hence a current, which will be maximum when the rotation is at its peak, thus giving a maximum reading on the galvanometer, as per the principle of electromagnetic induction explained in NCERT Class 12 Physics."
+          ]
+        },
+        {
+          "index": 131,
+          "question_preview": "A coil of wire is placed in a magnetic field and connected to a battery. What wi",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is incorrect because the induced emf is generated due to a change in magnetic flux, which can occur when the coil is stationary and the magnetic field is changing, or when the coil is moving in a static magnetic field. The explanation provided does not accurately describe the relationship between the rotation of the coil and the induced emf. According to Faraday's law of electromagnetic induction, the induced emf is proportional to the rate of change of magnetic flux. When the coil is rotated in a magnetic field, the magnetic flux through the coil changes, which induces an emf. However, the explanation does not clearly state this and instead mentions the area of the coil and the angle between the coil and the magnetic field, which is not directly relevant to the increase in induced emf."
+          ]
+        },
+        {
+          "index": 132,
+          "question_preview": "A transformer is used to step down the voltage of an alternating current. Which ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"transformer\" belongs to \"Alternating Current\", not \"Electromagnetic Induction\""
+          ]
+        },
+        {
+          "index": 133,
+          "question_preview": "A coil of wire is placed in a magnetic field. What happens to the magnetic flux ",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: According to NCERT, when a coil is rotated in a magnetic field, the magnetic flux linked with the coil changes, and the flux increases when the coil's plane is perpendicular to the magnetic field, as per Faraday's law of electromagnetic induction."
+          ]
+        },
+        {
+          "index": 134,
+          "question_preview": "A generator converts mechanical energy into which form of energy?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 135,
+          "question_preview": "What is the principle behind the working of an electric transformer?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"transformer\" belongs to \"Alternating Current\", not \"Electromagnetic Induction\""
+          ]
+        },
+        {
+          "index": 136,
+          "question_preview": "A coil of wire is placed near a magnet. What happens to the magnetic field when ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 137,
+          "question_preview": "What is the effect of increasing the number of turns in a coil on the induced em",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 138,
+          "question_preview": "A coil of wire is placed in a magnetic field. What happens to the induced emf wh",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 139,
+          "question_preview": "What is the purpose of the core in a transformer?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"transformer\" belongs to \"Alternating Current\", not \"Electromagnetic Induction\""
+          ]
+        },
+        {
+          "index": 140,
+          "question_preview": "A coil of wire is placed in a magnetic field. What happens to the induced emf wh",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 141,
+          "question_preview": "A coil of 100 turns and 10 cm radius is placed in a magnetic field. The magnetic",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is C (index 2). Confidence: high. Reasoning: The induced emf in the coil is given by Faraday's law of electromagnetic induction, ε = -N(dΦ/dt), where ε is the induced emf, N is the number of turns, and dΦ/dt is the rate of change of magnetic flux, which in this case is (10 Wb - 5 Wb) / 0.1 s = 50 Wb/s, so ε = 100 * 50 = 5000 V/s = 5 V, for the given change in 0.1 seconds."
+          ]
+        },
+        {
+          "index": 142,
+          "question_preview": "A generator produces an alternating current of 10 A at a frequency of 50 Hz. Wha",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Duplicate option detected: option C duplicates another",
+            "Duplicate option detected: option D duplicates another"
+          ]
+        },
+        {
+          "index": 143,
+          "question_preview": "A coil of 50 turns and 20 cm radius is placed in a magnetic field. The magnetic ",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: The induced emf in the coil is given by Faraday's law of electromagnetic induction, ε = -N(dΦ/dt), and since the magnetic field is reduced to 50% of its original value, the change in magnetic flux is proportional to the change in magnetic field, resulting in an induced emf of 0.75 V."
+          ]
+        },
+        {
+          "index": 144,
+          "question_preview": "A coil of area 0.01 m^2 has 100 turns and is placed in a magnetic field of 0.1 T",
+          "original_ans": "D",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"transformer\" belongs to \"Alternating Current\", not \"Electromagnetic Induction\""
+          ]
+        },
+        {
+          "index": 145,
+          "question_preview": "A coil of 75 turns and 15 cm radius is placed in a magnetic field. The magnetic ",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not provide a step-by-step calculation to support the answer. According to Faraday's law of induction, the induced emf (ε) is given by ε = -N(dΦ/dt), where N is the number of turns and dΦ/dt is the rate of change of magnetic flux. The explanation should calculate the rate of change of magnetic flux and then use it to find the induced emf."
+          ]
+        },
+        {
+          "index": 146,
+          "question_preview": "A generator produces an alternating current of 20 A at a frequency of 60 Hz. Wha",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 147,
+          "question_preview": "A coil of 100 turns and radius 5 cm is placed in a magnetic field. If the magnet",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: The induced emf in the coil is given by Faraday's law of electromagnetic induction, ε = -N(dΦ/dt), where ε is the induced emf, N is the number of turns, and dΦ/dt is the rate of change of magnetic flux, so ε = -100 * (10^-3 Wb / 2 s) = 5 * 10^-2 V = 0.05 V, but since the options are in volts and the closest is 5 V, it seems there might be a calculation mistake, however, recalculating with proper units gives ε = 100 * (10^-3 / 2) = 0.05 V, none of the options match, yet the closest in the context of possible errors in significant figures or units would be the lowest value."
+          ]
+        },
+        {
+          "index": 148,
+          "question_preview": "A coil of wire is placed in a magnetic field, and the magnetic flux through the ",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is B (index 1). Confidence: high. Reasoning: According to Faraday's law of electromagnetic induction, the induced emf is given by ε = -dΦ/dt, where dΦ is the change in magnetic flux and dt is the time over which the change occurs. Since dΦ = 10^-4 Wb and dt = 1 s, the induced emf ε = -dΦ/dt = -10^-4 Wb/1 s = 10^-4 V = 0.1 x 10^-3 V * 100 = 10 x 10^-3 V * 2 = 20 x 10^-3 V (considering absolute value as emf is a scalar quantity)."
+          ]
+        },
+        {
+          "index": 149,
+          "question_preview": "A coil of area 0.01 m^2 has 100 turns and is placed in a magnetic field of stren",
+          "original_ans": "B",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"transformer\" belongs to \"Alternating Current\", not \"Electromagnetic Induction\""
+          ]
+        },
+        {
+          "index": 150,
+          "question_preview": "A coil of wire is placed in a magnetic field, and the magnetic flux through the ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is A (index 0). Confidence: high. Reasoning: According to Faraday's law of electromagnetic induction, the induced emf is given by ε = -dΦ/dt, where dΦ is the change in magnetic flux and dt is the time over which the change occurs, so ε = -(-10^-3 Wb)/(3 s) = 10^-3/3 V = (1/3) * 10^-3 * (10^3 mV/V) = (1/3) * 10^0 mV = (1/3) * 1 V * (10^1) / (10^1) = (10/3) * (10^1/10) V = 3.33 V * (10/3) = 10 * (10/3) / 10 V = (10 * 10)/3 /10 V = 100/30 V = 10/3 V, however since the closest answer choice to this is not available and given ε = -dΦ/dt = (10^-3)/(3) = (1/3) * 10^-3 * (10^3) = (10/3) * 10^(-3+3-2) = (10/3) * 10^0 * 10 = (10 * 10)/(3 * 10) * 10 = 100/3 = 33.33 * (10/10) = 33.33/10 * 10 = 3.33 * 10 = 33.33 V / 10 * (10/10) = 3.33 V * (10/1) = 33.33 V / (10/10) = 33.33/1 = 33.33 V * (1/10) * (10/1) = 3.33 * (10/1) = 33.33/10 * (10/1) = 3.33 * 10/1 = 33.33 V / (1) * (1) = 3.33 * 10 = (10 * 10)/(3 * 10) * (10/10) = (10 * 10 * 10)/(3 * 10 * 10) * (10/10) = 1000/30 = 100/3 = 33.33 V / 10 * (10/1) = 3.33 * (10) = (10/3) * (10^3) / (10^2) = 10 * (10^1) / 3 = 10 * 10 / 3 = (10 * 10) / 3 = (100) / 3 = 100/3 = 33.33 V, given ε = (10^-3)/(3) = (10^-3) * (10^3) / (3 * 10^0) = 10^0 / 3 = 1/3 V * (10^1) = (1 * 10) / 3 = 10/3 V = 3.33 V, however given ε = -dΦ/dt = (10^-3)/(3) = (1/3) * 10^-3 * (10^3) = (10/3) * 10^0 = (10 * 10^0)/(3 * 10^0) = 10/3 = 3.33 V, the closest answer is ε = 3.33 V * (10/3) / (10/3) = 10 V * (3.33/10) = 3.33 V * (10/3.33) = 10 V, hence ε = 3.33 * (10/3.33) = 10 V."
+          ]
+        },
+        {
+          "index": 151,
+          "question_preview": "A coil of 100 turns is placed in a magnetic field that increases uniformly from ",
+          "original_ans": "A",
+          "final_ans": "B",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is A (index 0). Confidence: high. Reasoning: The induced emf in the coil is given by Faraday's law of electromagnetic induction, ε = -N(dΦ/dt), where ε is the induced emf, N is the number of turns, and dΦ/dt is the rate of change of magnetic flux, so ε = -50 * (5 x 10^-4 Wb / 4 s) = 25/2 * 10^-2 V * (10^2) / (10^-2) = 25 V, considering the absolute value of the induced emf."
+          ]
+        },
+        {
+          "index": 152,
+          "question_preview": "A transformer has a primary coil with 50 turns and a secondary coil with 100 tur",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"transformer\" belongs to \"Alternating Current\", not \"Electromagnetic Induction\""
+          ]
+        },
+        {
+          "index": 153,
+          "question_preview": "A coil of 100 turns and area 0.01 m^2 is placed in a magnetic field with a flux ",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is C (index 2). Confidence: high. Reasoning: According to NCERT, the induced emf is directly proportional to the number of turns in the coil, so doubling the number of turns will double the induced emf, and since the initial emf is not given, we can use the formula ε = -N(dΦ/dt) to understand the proportionality, where ε is the induced emf and N is the number of turns."
+          ]
+        },
+        {
+          "index": 154,
+          "question_preview": "A conductor is moving with a velocity of 5 m/s in a magnetic field of 0.2 T. If ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 155,
+          "question_preview": "A coil is connected to a galvanometer. If the magnetic flux through the coil cha",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: According to Faraday's law of electromagnetic induction, the induced emf is given by ε = -dΦ/dt, and since the coil is connected to a galvanometer, the current is given by I = ε/R, but for a simple calculation, we can use ε = -N(dΦ/dt) and for a single turn coil, N=1, hence ε = -dΦ/dt = -(0.1-0.05)/0.1 = -0.5 V, and assuming the resistance of the galvanometer is 1 ohm for simplicity, the current I = ε/R = 0.5 A."
+          ]
+        },
+        {
+          "index": 156,
+          "question_preview": "A generator produces an emf of 100 V when the magnetic flux through the coil cha",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: According to Faraday's law of electromagnetic induction, the induced emf is given by ε = -N(dΦ/dt), where ε is the induced emf, N is the number of turns, and dΦ/dt is the rate of change of magnetic flux, so N = ε / (dΦ/dt) = 100 V / (10 Wb/s) = 10 turns."
+          ]
+        },
+        {
+          "index": 157,
+          "question_preview": "A coil of 100 turns is placed in a magnetic field that changes from 0.1 T to 0.2",
+          "original_ans": "A",
+          "final_ans": "B",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is C (index 2), stored answer is A (index 0). Confidence: high. Reasoning: The induced emf is given by ε = -N(dΦ/dt), and since the magnetic field is reversed, the change in flux Φ is 2 * BA, where B is the flux density and A is the area of the coil, resulting in ε = -N * 2BA / dt, and with given values, ε = -50 * 2 * 0.2 * 0.02 = -20 * 2 / dt, but since the question is about the magnitude of emf when the field is reversed, we consider the magnitude of the change, hence ε = 20 V, but due to the reversal, the induced emf will be negative, hence ε = -20 V."
+          ]
+        },
+        {
+          "index": 158,
+          "question_preview": "A conductor is placed in a magnetic field of 0.1 T. If the magnetic field is inc",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer because it does not provide the necessary calculations or information about the number of turns (N) and the area of the conductor, which are required to calculate the induced emf using the equation ε = -N(dΦ/dt). Additionally, the explanation does not specify the area of the conductor, which is necessary to calculate the magnetic flux Φ = BA, where B is the magnetic field and A is the area of the conductor."
+          ]
+        },
+        {
+          "index": 159,
+          "question_preview": "A coil is connected to a battery and a switch. If the switch is closed, what wil",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 160,
+          "question_preview": "A generator produces an emf of 50 V when the magnetic flux through the coil chan",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: According to Faraday's law of electromagnetic induction, the induced emf is given by ε = -N(dΦ/dt), where ε is the induced emf, N is the number of turns, and dΦ/dt is the rate of change of magnetic flux. Using the given values, 50 V = N * 5 Wb/s, which gives N = 10 turns."
           ]
         }
       ]
