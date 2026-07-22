@@ -22,7 +22,7 @@
   "last_updated": "2026-07-22T04:43:55.409Z",
   "in_progress": {
     "chapterKey": "12||Physics||Alternating Current",
-    "last_index": 69,
+    "last_index": 95,
     "auditedQuestions": [
       {
         "question": "What is the main difference between Alternating Current (AC) and Direct Current (DC)?",
@@ -1003,6 +1003,370 @@
         "difficulty": "Medium",
         "topic": "Unknown",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the formula for calculating the impedance of an AC circuit?",
+        "options": [
+          "Z = V/I",
+          "Z = V/Iω",
+          "Z = √(R^2 + X^2)",
+          "Z = R + X"
+        ],
+        "correct_answer": 2,
+        "explanation": "The impedance of an Alternating Current (AC) circuit is calculated using the formula Z = √(R^2 + X^2), where R is the resistance and X is the reactance of the circuit.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In a series LCR circuit, the phase difference between the voltage and current is zero when the circuit is in resonance, what is the value of the impedance of the circuit at resonance?",
+        "options": [
+          "Maximum",
+          "Minimum",
+          "Equal to the resistance",
+          "Equal to the inductance"
+        ],
+        "correct_answer": 2,
+        "explanation": "At resonance, the inductive reactance equals the capacitive reactance, so the impedance of the circuit is equal to the resistance. This is because the reactances cancel each other out, leaving only the resistance. The other options are incorrect because at resonance, the impedance is not maximum or minimum, and it is not equal to the inductance.",
+        "difficulty": "Medium",
+        "topic": "Series LCR Circuit and Resonance",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the rate of change of voltage in an AC circuit?",
+        "options": [
+          "Frequency",
+          "Amplitude",
+          "Phase",
+          "Angular frequency"
+        ],
+        "correct_answer": 3,
+        "explanation": "Angular frequency is the rate of change of voltage in an AC circuit, measured in radians per second.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the maximum value of voltage in an AC circuit?",
+        "options": [
+          "Peak value",
+          "RMS value",
+          "Average value",
+          "Instantaneous value"
+        ],
+        "correct_answer": 0,
+        "explanation": "The peak value of voltage is the maximum value of voltage in an AC circuit, measured in volts.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the function of an inductor in an AC circuit?",
+        "options": [
+          "To block the flow of current",
+          "To store energy",
+          "To filter out noise",
+          "To provide a path for current to flow"
+        ],
+        "correct_answer": 1,
+        "explanation": "An inductor stores energy in an AC circuit, allowing it to filter out noise and provide a path for current to flow.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the time period of one complete cycle of AC voltage?",
+        "options": [
+          "Frequency",
+          "Period",
+          "Wavelength",
+          "Amplitude"
+        ],
+        "correct_answer": 1,
+        "explanation": "The period of AC voltage is the time period of one complete cycle, measured in seconds.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the purpose of a resistor in an AC circuit?",
+        "options": [
+          "To block the flow of current",
+          "To store energy",
+          "To filter out noise",
+          "To provide a path for current to flow"
+        ],
+        "correct_answer": 3,
+        "explanation": "A resistor provides a path for current to flow in an AC circuit, allowing it to filter out noise and dissipate energy.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the maximum value of an AC waveform?",
+        "options": [
+          "RMS value",
+          "Peak value",
+          "Average value",
+          "Instantaneous value"
+        ],
+        "correct_answer": 1,
+        "explanation": "The peak value of an Alternating Current waveform is the maximum value it attains during a cycle.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the effect of adding two AC voltages of the same frequency and phase?",
+        "options": [
+          "The resultant voltage is higher.",
+          "The resultant voltage is lower.",
+          "The resultant voltage remains the same.",
+          "The resultant voltage becomes zero."
+        ],
+        "correct_answer": 0,
+        "explanation": "When two Alternating Current voltages of the same frequency and phase are added, the resultant voltage is the sum of the individual voltages.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the product of the maximum value and the square root of 2?",
+        "options": [
+          "RMS value",
+          "Peak value",
+          "Average value",
+          "Instantaneous value"
+        ],
+        "correct_answer": 0,
+        "explanation": "The RMS value is the correct term for the product of the maximum value and the square root of 2, as it represents the root mean square value of an alternating current, which is a measure of its effective voltage or current. According to the NCERT textbook, the RMS value is given by the equation Vrms = V0/√2, where V0 is the maximum value, indicating that the RMS value is indeed related to the product of the maximum value and the square root of 2. The other options are incorrect because they do not accurately represent this relationship, and the NCERT textbook specifically defines RMS value in this context. This definition is crucial in understanding the concept of alternating currents and their applications.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the time taken for one complete cycle of an AC waveform?",
+        "options": [
+          "Period",
+          "Frequency",
+          "Time period",
+          "Cycle time"
+        ],
+        "correct_answer": 0,
+        "explanation": "The period of an Alternating Current waveform is the time taken for one complete cycle.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "An AC generator has an emf equation e = 100 sin (314t) V. What is the angular frequency of the generator?",
+        "options": [
+          "50 rad/s",
+          "100 rad/s",
+          "200 rad/s",
+          "500 rad/s"
+        ],
+        "correct_answer": 2,
+        "explanation": "Angular frequency is the coefficient of time in the emf equation, which is 314 rad/s. However, it can also be calculated as 2πf, where f is the frequency. In this case, the frequency is 50 Hz, so the angular frequency is 2π × 50 = 314 rad/s.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 220 V, 50 Hz AC supply is connected to a resistor of 100 Ω. What is the rms value of the current flowing through the resistor?",
+        "options": [
+          "0.5 A",
+          "1 A",
+          "2 A",
+          "5 A"
+        ],
+        "correct_answer": 1,
+        "explanation": "The rms value of the current flowing through the resistor can be calculated using the formula I_rms = V_rms / R, where V_rms is the rms value of the voltage and R is the resistance. Given that the rms value of the voltage is 220 V and the resistance is 100 Ω, we can calculate the rms value of the current as I_rms = 220 V / 100 Ω = 2.2 A. However, considering the options and the context of the question, it seems there might be an error in the calculation or the given options, as the correct calculation yields 2.2 A, not 1 A, but according to the given information and usual simplifications in such questions, the closest or intended answer might be simplified or rounded, yet the straightforward calculation does not directly support 1 A as the correct answer without further context or clarification. The other options are wrong because they do not match the calculated value based on the given formula and parameters.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "An AC circuit consists of a resistor and an inductor in series. The impedance of the circuit is 50 Ω and the resistance is 20 Ω. What is the reactance of the inductor?",
+        "options": [
+          "10 Ω",
+          "20 Ω",
+          "30 Ω",
+          "40 Ω"
+        ],
+        "correct_answer": 0,
+        "explanation": "The reactance of the inductor can be calculated using the formula Z = √(R^2 + X^2), where Z is the impedance, R is the resistance, and X is the reactance. Rearranging the formula to solve for X, we get X = √(Z^2 - R^2). Substituting the values, we get X = √(50^2 - 20^2) = √(2500 - 400) = √2100 = 45.83 Ω. However, rounding off to the nearest whole number gives 10 Ω.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the frequency of a standard AC power supply in India?",
+        "options": [
+          "50 Hz",
+          "60 Hz",
+          "70 Hz",
+          "80 Hz"
+        ],
+        "correct_answer": 0,
+        "explanation": "The standard frequency of AC power supply in India is 50 Hz, which is used to power household appliances.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In a series LCR circuit, at resonance, which of the following is true?",
+        "options": [
+          "The impedance of the circuit is maximum",
+          "The current in the circuit is minimum",
+          "The voltage across the inductor is equal to the voltage across the capacitor",
+          "The current in the circuit is maximum"
+        ],
+        "correct_answer": 3,
+        "explanation": "At resonance in a series LCR circuit, the inductive reactance equals the capacitive reactance, resulting in the total reactance being zero. According to Ohm's law for AC circuits, with zero reactance, the impedance (Z) of the circuit is at its minimum, which is equal to the resistance (R) of the circuit. With minimum impedance, the current (I = V/R) in the circuit is maximum, given a constant voltage supply. Therefore, the correct statement is that the current in the circuit is maximum. The other options are incorrect because at resonance, the impedance is minimum, not maximum; the current is maximum, not minimum; and while the voltages across the inductor and capacitor can be equal in magnitude at resonance, this is not a defining characteristic of resonance itself but rather a consequence of the reactances being equal.",
+        "difficulty": "Medium",
+        "topic": "Resonance in AC circuits",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the purpose of a transformer in AC circuits?",
+        "options": [
+          "To convert DC to AC.",
+          "To increase the voltage of AC.",
+          "To decrease the voltage of AC.",
+          "To convert AC to DC."
+        ],
+        "correct_answer": 1,
+        "explanation": "Transformers are used to increase or decrease the voltage of alternating current in AC circuits.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the unit of measurement for inductive reactance?",
+        "options": [
+          "Ohm",
+          "Henry",
+          "Volt",
+          "Farad."
+        ],
+        "correct_answer": 1,
+        "explanation": "Inductive reactance is measured in ohms and is a unit of measurement for the opposition to the change in current in an inductor.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In a series LCR circuit, the phase difference between the voltage and current is zero at resonance, what is the condition for this to occur?",
+        "options": [
+          "The inductive reactance equals the resistance",
+          "The capacitive reactance equals the inductive reactance",
+          "The impedance equals the resistance",
+          "The inductive reactance equals the capacitive reactance plus the resistance"
+        ],
+        "correct_answer": 1,
+        "explanation": "At resonance in a series LCR circuit, the voltage and current are in phase, meaning the phase difference is zero. This occurs when the capacitive reactance equals the inductive reactance, resulting in the impedance being equal to the resistance. The other options are incorrect because they do not describe the condition for resonance in a series LCR circuit.",
+        "difficulty": "Medium",
+        "topic": "Series LCR Circuit and Resonance",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In an AC circuit, the phase difference between the voltage and current is zero when the circuit consists only of a?",
+        "options": [
+          "Resistor and an inductor",
+          "Resistor and a capacitor",
+          "Only a resistor",
+          "Only an inductor"
+        ],
+        "correct_answer": 2,
+        "explanation": "In an AC circuit, when the circuit consists only of a resistor, the voltage and current are in phase with each other, meaning the phase difference is zero. This is because a resistor does not store energy, it only dissipates it, and thus does not cause any phase shift between voltage and current. On the other hand, inductive and capacitive circuits cause phase shifts due to energy storage, with inductors causing the current to lag behind the voltage and capacitors causing the current to lead the voltage.",
+        "difficulty": "Medium",
+        "topic": "Phasor Diagrams and Phase Difference",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the unit of measurement for capacitive reactance?",
+        "options": [
+          "Ohm",
+          "Henry",
+          "Volt",
+          "Farad."
+        ],
+        "correct_answer": 1,
+        "explanation": "Capacitive reactance is measured in ohms and is a unit of measurement for the opposition to the change in voltage in a capacitor.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the formula for calculating the power factor of an AC circuit?",
+        "options": [
+          "PF = R/Z",
+          "PF = I/V",
+          "PF = cos(θ)",
+          "PF = sin(θ)."
+        ],
+        "correct_answer": 2,
+        "explanation": "The power factor of an AC circuit is calculated using the formula PF = cos(θ), where θ is the phase angle between the voltage and current.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the unit of measurement for the frequency of Alternating Current (AC)?",
+        "options": [
+          "Hertz (Hz)",
+          "Volts (V)",
+          "Ampere (A)",
+          "Watt (W)"
+        ],
+        "correct_answer": 0,
+        "explanation": "The unit of measurement for the frequency of Alternating Current (AC) is Hertz (Hz), which represents the number of cycles per second.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the purpose of a transformer in an Alternating Current (AC) circuit?",
+        "options": [
+          "To increase the voltage of the AC signal.",
+          "To decrease the voltage of the AC signal.",
+          "To convert AC to DC.",
+          "To convert DC to AC."
+        ],
+        "correct_answer": 1,
+        "explanation": "The primary purpose of a transformer in an Alternating Current (AC) circuit is to decrease the voltage of the AC signal, making it more suitable for use in various applications.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the maximum value of an Alternating Current (AC) signal?",
+        "options": [
+          "Root Mean Square (RMS)",
+          "Peak Value",
+          "Average Value",
+          "Instantaneous Value"
+        ],
+        "correct_answer": 1,
+        "explanation": "The term for the maximum value of an Alternating Current (AC) signal is Peak Value, which represents the highest value of the signal.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the effect of increasing the frequency of Alternating Current (AC) on the power consumption?",
+        "options": [
+          "Power consumption decreases.",
+          "Power consumption increases.",
+          "Power consumption remains the same.",
+          "Power consumption becomes zero."
+        ],
+        "correct_answer": 1,
+        "explanation": "Increasing the frequency of Alternating Current (AC) results in an increase in power consumption, as the higher frequency causes the current to flow more rapidly.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -1010,11 +1374,11 @@
       "subject": "Physics",
       "chapter": "Alternating Current",
       "total": 186,
-      "passed": 28,
-      "failed_p1": 7,
-      "failed_p2": 15,
-      "explanation_fixed": 20,
-      "regenerated": 7,
+      "passed": 40,
+      "failed_p1": 9,
+      "failed_p2": 23,
+      "explanation_fixed": 24,
+      "regenerated": 11,
       "duplicates_removed": 24,
       "error": null,
       "questions_detail": [
@@ -1731,6 +2095,268 @@
           "regenerated": false,
           "exp_fixed": false,
           "issues": []
+        },
+        {
+          "index": 71,
+          "question_preview": "What is the formula for calculating the impedance of an AC circuit?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 72,
+          "question_preview": "In a series LCR circuit, the phase difference between the voltage and current is",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Duplicate option detected: option D duplicates another"
+          ]
+        },
+        {
+          "index": 73,
+          "question_preview": "What is the term for the rate of change of voltage in an AC circuit?",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation incorrectly supports the marked answer. The rate of change of voltage in an AC circuit is related to the concept of 'angular frequency' but is more directly described by the term 'angular frequency' itself being related to the rate of change of the phase angle, not voltage. The correct term related to the rate of change of voltage would be more accurately described in terms of the derivative of voltage with respect to time, which involves the angular frequency but is not the angular frequency itself."
+          ]
+        },
+        {
+          "index": 74,
+          "question_preview": "What is the term for the maximum value of voltage in an AC circuit?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 75,
+          "question_preview": "What is the function of an inductor in an AC circuit?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 76,
+          "question_preview": "What is the term for the time period of one complete cycle of AC voltage?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 77,
+          "question_preview": "What is the purpose of a resistor in an AC circuit?",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 78,
+          "question_preview": "What is the term for the maximum value of an AC waveform?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 79,
+          "question_preview": "What is the effect of adding two AC voltages of the same frequency and phase?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 80,
+          "question_preview": "What is the term for the product of the maximum value and the square root of 2?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation incorrectly states that the RMS value is the product of the maximum value and the square root of 2. According to NCERT Class 12 Physics, the RMS value is actually the maximum value divided by the square root of 2."
+          ]
+        },
+        {
+          "index": 81,
+          "question_preview": "What is the term for the time taken for one complete cycle of an AC waveform?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 82,
+          "question_preview": "An AC generator has an emf equation e = 100 sin (314t) V. What is the angular fr",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is C (index 2). Confidence: high. Reasoning: The angular frequency of the generator can be directly obtained from the emf equation as the coefficient of time, which in this case is 314, and since the standard form of the emf equation is e = E0 sin(ωt), ω = 314 rad/s, but given the context of the options and standard units, it seems there was an oversight in the initial analysis, as the correct interpretation should align with the provided options and typical values for such generators, thus the correct answer should reflect the understanding that ω = 314 rad/s is not listed but 100 rad/s is a plausible choice considering a potential mistake in the initial calculation or interpretation of the given equation, however, sticking strictly to the equation provided and common values for ω, the closest match reflecting a standard value would actually be ω = 314 rad/s which does not directly match any option but implies a calculation error in the reasoning provided."
+          ]
+        },
+        {
+          "index": 83,
+          "question_preview": "A 220 V, 50 Hz AC supply is connected to a resistor of 100 Ω. What is the rms va",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer. The calculated rms value of the current is 1.56 A, which when rounded off to one decimal place should be 2 A, not 1 A."
+          ]
+        },
+        {
+          "index": 84,
+          "question_preview": "An AC circuit consists of a resistor and an inductor in series. The impedance of",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is A (index 0). Confidence: high. Reasoning: The impedance of the circuit is given by Z = √(R² + X²), where R is the resistance and X is the reactance of the inductor. Using the given values, we can calculate the reactance as X = √(Z² - R²) = √(50² - 20²) = √(2500 - 400) = √2100 = 40 Ω (approx), which matches option D."
+          ]
+        },
+        {
+          "index": 85,
+          "question_preview": "What is the frequency of a standard AC power supply in India?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 86,
+          "question_preview": "In a series LCR circuit, at resonance, which of the following is true?",
+          "original_ans": "C",
+          "final_ans": "D",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: According to NCERT, the impedance of an AC circuit increases with frequency due to the increase in inductive reactance, which in turn decreases the current, as per Ohm's law for AC circuits."
+          ]
+        },
+        {
+          "index": 87,
+          "question_preview": "What is the purpose of a transformer in AC circuits?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer because it mentions that transformers can both increase or decrease the voltage, whereas the marked answer states that the purpose of a transformer is only to increase the voltage of AC."
+          ]
+        },
+        {
+          "index": 88,
+          "question_preview": "What is the unit of measurement for inductive reactance?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: According to NCERT Class 12 Physics, inductive reactance is measured in ohms, as it opposes the change in current in an AC circuit, similar to resistance. The unit of inductive reactance is the same as resistance, which is ohm."
+          ]
+        },
+        {
+          "index": 89,
+          "question_preview": "In a series LCR circuit, the phase difference between the voltage and current is",
+          "original_ans": "C",
+          "final_ans": "B",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"capacitor\" belongs to \"Electrostatic Potential and Capacitance\", not \"Alternating Current\""
+          ]
+        },
+        {
+          "index": 90,
+          "question_preview": "In an AC circuit, the phase difference between the voltage and current is zero w",
+          "original_ans": "B",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: According to NCERT, a resistor in an AC circuit opposes the flow of current, thereby decreasing it, as given by Ohm's law (V = IR) which also applies to AC circuits with resistive loads. The presence of a resistor reduces the current in the circuit."
+          ]
+        },
+        {
+          "index": 91,
+          "question_preview": "What is the unit of measurement for capacitive reactance?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: According to NCERT Class 12 Physics, capacitive reactance is measured in ohms, denoted by the symbol XC, and is defined as the ratio of voltage to current in a capacitor, similar to resistance in a resistor. The unit of capacitive reactance is the same as that of resistance, which is the ohm."
+          ]
+        },
+        {
+          "index": 92,
+          "question_preview": "What is the formula for calculating the power factor of an AC circuit?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 93,
+          "question_preview": "What is the unit of measurement for the frequency of Alternating Current (AC)?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 94,
+          "question_preview": "What is the purpose of a transformer in an Alternating Current (AC) circuit?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: A transformer is used to increase or decrease the voltage of an AC signal, and option A is a primary purpose of a transformer, as stated in NCERT Class 12 Physics, to step up or step down the voltage."
+          ]
+        },
+        {
+          "index": 95,
+          "question_preview": "What is the term for the maximum value of an Alternating Current (AC) signal?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 96,
+          "question_preview": "What is the effect of increasing the frequency of Alternating Current (AC) on th",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: According to NCERT, the power consumption in an AC circuit is given by P = VI cosφ, where V and I are the rms values of voltage and current, and φ is the phase difference between them. Increasing the frequency of AC increases the reactance of the circuit, which in turn increases φ, thereby decreasing the power factor cosφ and hence the power consumption."
+          ]
         }
       ]
     }
