@@ -22,7 +22,7 @@
   "last_updated": "2026-07-22T04:43:55.409Z",
   "in_progress": {
     "chapterKey": "12||Physics||Alternating Current",
-    "last_index": 14,
+    "last_index": 39,
     "auditedQuestions": [
       {
         "question": "What is the main difference between Alternating Current (AC) and Direct Current (DC)?",
@@ -233,6 +233,356 @@
         "difficulty": "Medium",
         "topic": "Unknown",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "A circuit has a resistance of 15 ohms and an inductive reactance of 25 ohms. What is the phase angle between the voltage and current?",
+        "options": [
+          "30 degrees",
+          "45 degrees",
+          "60 degrees",
+          "90 degrees"
+        ],
+        "correct_answer": 1,
+        "explanation": "The phase angle between the voltage and current in a circuit is calculated using the formula tan(θ) = X/L, where X is the reactance and L is the inductance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "An AC generator has an emf equation e = 10 sin (314t + π/4) V. What is the maximum value of the emf?",
+        "options": [
+          "5 V",
+          "10 V",
+          "15 V",
+          "20 V"
+        ],
+        "correct_answer": 1,
+        "explanation": "The maximum value of the emf is the coefficient of the sine function in the emf equation.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 50 Hz AC voltage source has a maximum voltage of 200 V. What is the rms voltage?",
+        "options": [
+          "100 V",
+          "141.4 V",
+          "200 V",
+          "282.8 V"
+        ],
+        "correct_answer": 1,
+        "explanation": "The rms voltage is the maximum voltage divided by the square root of 2.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A coil has a resistance of 20 Ω and an inductive reactance of 30 Ω. What is the impedance of the coil?",
+        "options": [
+          "10 Ω",
+          "20 Ω",
+          "30 Ω",
+          "40 Ω"
+        ],
+        "correct_answer": 3,
+        "explanation": "The impedance of the coil is the square root of the sum of the squares of the resistance and inductive reactance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 230 V AC voltage source is connected to a 100 Ω resistor. What is the current drawn from the source?",
+        "options": [
+          "0.5 A",
+          "1 A",
+          "1.5 A",
+          "2 A"
+        ],
+        "correct_answer": 2,
+        "explanation": "The current drawn from the source is the maximum voltage divided by the resistance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "An AC circuit has a capacitance of 100 μF and an inductive reactance of 50 Ω. What is the resonant frequency of the circuit?",
+        "options": [
+          "50 Hz",
+          "100 Hz",
+          "150 Hz",
+          "200 Hz"
+        ],
+        "correct_answer": 0,
+        "explanation": "The resonant frequency of the circuit is the square root of the product of the capacitance and inductive reactance divided by 2π.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 50 Hz AC voltage source has a maximum voltage of 200 V. What is the angular frequency of the source?",
+        "options": [
+          "100 rad/s",
+          "200 rad/s",
+          "500 rad/s",
+          "1000 rad/s"
+        ],
+        "correct_answer": 1,
+        "explanation": "The angular frequency of the source is 2π times the frequency.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In a series LCR circuit, the voltage across the resistor is 20 V, the voltage across the inductor is 30 V, and the voltage across the capacitor is 30 V. What is the phase difference between the voltage and current in the circuit?",
+        "options": [
+          "0 degrees",
+          "30 degrees",
+          "60 degrees",
+          "90 degrees"
+        ],
+        "correct_answer": 3,
+        "explanation": "In a series LCR circuit, the voltage across the resistor is in phase with the current, the voltage across the inductor leads the current by 90 degrees, and the voltage across the capacitor lags the current by 90 degrees. Since the voltage across the resistor, inductor, and capacitor are given, we can conclude that the circuit is not purely resistive, inductive, or capacitive. The phase difference between the voltage and current in the circuit can be determined by the fact that the voltage across the inductor and capacitor are equal, which means the circuit is at resonance. However, since the voltage across the resistor is not zero, the circuit is not at pure resonance. The correct answer is 90 degrees because the voltage across the inductor and capacitor are equal, indicating that the circuit is close to resonance, and the voltage across the resistor is not zero, indicating that the circuit is not at pure resonance, but the phase difference is still close to 90 degrees.",
+        "difficulty": "Medium",
+        "topic": "Series LCR Circuit",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "An AC circuit has a resistance of 50 Ω and an impedance of 60 Ω. What is the reactance of the circuit?",
+        "options": [
+          "10 Ω",
+          "20 Ω",
+          "30 Ω",
+          "40 Ω"
+        ],
+        "correct_answer": 2,
+        "explanation": "The reactance of the circuit is the square root of the difference of the squares of the impedance and resistance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "The peak value of an alternating current is 10 A. What is the value of the rms value of the current?",
+        "options": [
+          "5 A",
+          "7.07 A",
+          "10 A",
+          "14.14 A"
+        ],
+        "correct_answer": 1,
+        "explanation": "The rms value of an alternating current is related to its peak value by the equation Irms = I0/√2, where I0 is the peak value. Given that the peak value of the alternating current is 10 A, we can calculate the rms value as Irms = 10/√2 = 7.07 A. The other options are incorrect because they do not follow this relationship, which is a fundamental concept in alternating current as explained in the Class 12 Physics NCERT textbook. This relationship holds true because the rms value represents the equivalent dc current that would deliver the same average power to a resistive load.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 50 Hz, 200 V AC supply is connected to a resistive load. What is the value of the resistance of the load?",
+        "options": [
+          "10 ohms",
+          "20 ohms",
+          "40 ohms",
+          "80 ohms"
+        ],
+        "correct_answer": 2,
+        "explanation": "The resistance of the load can be calculated using the formula R = V^2 / I^2, where V is the rms voltage and I is the rms current.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "An alternating current has a frequency of 50 Hz and a peak value of 20 A. What is the value of the rms value of the current?",
+        "options": [
+          "10 A",
+          "14.14 A",
+          "20 A",
+          "28.28 A"
+        ],
+        "correct_answer": 1,
+        "explanation": "The rms value of an alternating current is given by the formula I_rms = I_0 / √2, where I_0 is the peak value of the current. Substituting the given values, we get I_rms = 20 A / √2 = 20 / 1.414 = 14.14 A, which is the correct answer. The other options are incorrect because they do not follow this formula, which is a standard result in the study of alternating currents as per the NCERT textbook. This formula is derived from the definition of rms value and is widely used to calculate the rms value of ac quantities.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 230 V AC supply is connected to a pure inductive load. What is the value of the inductive reactance of the load?",
+        "options": [
+          "10 ohms",
+          "20 ohms",
+          "40 ohms",
+          "80 ohms"
+        ],
+        "correct_answer": 3,
+        "explanation": "The inductive reactance of the load can be calculated using the formula X = V / I, where V is the rms voltage and I is the rms current.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "An alternating current has a frequency of 60 Hz and a rms value of 10 A. What is the value of the peak value of the current?",
+        "options": [
+          "7.07 A",
+          "10 A",
+          "14.14 A",
+          "20 A"
+        ],
+        "correct_answer": 1,
+        "explanation": "The peak value of an alternating current is the square root of two times the rms value.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 50 Hz, 200 V AC supply is connected to a pure capacitive load. What is the value of the capacitive reactance of the load?",
+        "options": [
+          "10 ohms",
+          "20 ohms",
+          "40 ohms",
+          "80 ohms"
+        ],
+        "correct_answer": 1,
+        "explanation": "The capacitive reactance of the load can be calculated using the formula X = V / I, where V is the rms voltage and I is the rms current.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the rate of change of the current in an AC circuit?",
+        "options": [
+          "Impedance",
+          "Reactance",
+          "Inductance",
+          "Capacitance."
+        ],
+        "correct_answer": 1,
+        "explanation": "The term for the rate of change of the current in an AC circuit is reactance, which is the opposition to the change in current due to inductance and capacitance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the unit of measurement for the frequency of an AC circuit?",
+        "options": [
+          "Hertz (Hz)",
+          "Volts (V)",
+          "Ampere (A)",
+          "Ohm (Ω)"
+        ],
+        "correct_answer": 0,
+        "explanation": "The unit of measurement for the frequency of an AC circuit is Hertz (Hz), which represents the number of cycles or oscillations per second.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the opposition to the flow of current in an AC circuit?",
+        "options": [
+          "Resistance",
+          "Impedance",
+          "Reactance",
+          "Inductance."
+        ],
+        "correct_answer": 1,
+        "explanation": "The term for the opposition to the flow of current in an AC circuit is impedance, which is the total opposition to the flow of current due to resistance, reactance, and other factors.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In an AC circuit, the rms value of current is 2 A and the peak value of current is 2.83 A. What is the type of AC circuit?",
+        "options": [
+          "Resistive circuit",
+          "Inductive circuit",
+          "Capacitive circuit",
+          "Resonant circuit"
+        ],
+        "correct_answer": 0,
+        "explanation": "The rms value of current is related to the peak value of current by the equation Irms = I0 / sqrt(2), where I0 is the peak value of current. Given Irms = 2 A and I0 = 2.83 A, we can see that 2.83 / sqrt(2) = 2, which matches the equation. This indicates that the circuit is resistive, as the current and voltage are in phase in a resistive circuit. In inductive and capacitive circuits, the current and voltage are out of phase, and in a resonant circuit, the current and voltage are in phase, but the impedance is minimum.",
+        "difficulty": "Medium",
+        "topic": "AC circuits",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the opposition to the change in current in an AC circuit?",
+        "options": [
+          "Resistance",
+          "Impedance",
+          "Reactance",
+          "Inductance."
+        ],
+        "correct_answer": 2,
+        "explanation": "The term for the opposition to the change in current in an AC circuit is reactance, which is the opposition to the change in current due to inductance and capacitance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the unit of measurement for the voltage of an AC circuit?",
+        "options": [
+          "Volts (V)",
+          "Ampere (A)",
+          "Ohm (Ω)",
+          "Hertz (Hz)"
+        ],
+        "correct_answer": 0,
+        "explanation": "The unit of measurement for the voltage of an AC circuit is Volts (V), which represents the potential difference between two points in the circuit.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the ratio of the voltage and current in an AC circuit?",
+        "options": [
+          "Impedance",
+          "Reactance",
+          "Resistance",
+          "Admittance."
+        ],
+        "correct_answer": 0,
+        "explanation": "The term for the ratio of the voltage and current in an AC circuit is impedance, which is the total opposition to the flow of current due to resistance, reactance, and other factors.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the frequency of the AC in an Indian power grid?",
+        "options": [
+          "50 Hz",
+          "60 Hz",
+          "70 Hz",
+          "80 Hz"
+        ],
+        "correct_answer": 0,
+        "explanation": "The frequency of the Alternating Current (AC) in an Indian power grid is 50 Hz, which is a standard frequency used in many countries for power transmission.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the effect of increasing the frequency of AC on the power transmitted?",
+        "options": [
+          "The power transmitted increases.",
+          "The power transmitted decreases.",
+          "The power transmitted remains the same.",
+          "The power transmitted becomes zero."
+        ],
+        "correct_answer": 1,
+        "explanation": "Increasing the frequency of Alternating Current (AC) results in a decrease in the power transmitted, as the power transmitted is directly proportional to the frequency.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the direction of the current in an AC circuit?",
+        "options": [
+          "Instantaneous current",
+          "Average current",
+          "RMS current",
+          "Alternating current"
+        ],
+        "correct_answer": 3,
+        "explanation": "Alternating Current (AC) refers to the direction of the current in an AC circuit, which changes periodically with time.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -240,11 +590,11 @@
       "subject": "Physics",
       "chapter": "Alternating Current",
       "total": 186,
-      "passed": 4,
-      "failed_p1": 1,
-      "failed_p2": 5,
-      "explanation_fixed": 5,
-      "regenerated": 0,
+      "passed": 13,
+      "failed_p1": 3,
+      "failed_p2": 10,
+      "explanation_fixed": 14,
+      "regenerated": 2,
       "duplicates_removed": 24,
       "error": null,
       "questions_detail": [
@@ -403,6 +753,263 @@
           "exp_fixed": true,
           "issues": [
             "Explanation issue: The explanation is factually accurate, but it does not correctly support the marked answer. The correct calculation using the formula ω = 2πf, where f = 100 Hz, should yield ω = 2π * 100 = 200π rad/s ≈ 628.32 rad/s, not 200 rad/s."
+          ]
+        },
+        {
+          "index": 16,
+          "question_preview": "A circuit has a resistance of 15 ohms and an inductive reactance of 25 ohms. Wha",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 17,
+          "question_preview": "An AC generator has an emf equation e = 10 sin (314t + π/4) V. What is the maxim",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 18,
+          "question_preview": "A 50 Hz AC voltage source has a maximum voltage of 200 V. What is the rms voltag",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 19,
+          "question_preview": "A coil has a resistance of 20 Ω and an inductive reactance of 30 Ω. What is the ",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is incomplete and does not provide the correct formula. The correct formula for impedance (Z) is given by Z = √(R² + Xₗ²), where R is the resistance and Xₗ is the inductive reactance. The explanation should have provided the calculation: Z = √(20² + 30²) = √(400 + 900) = √1300 ≈ 36.06 Ω, but it does not match the given answer of 40 Ω, indicating a possible error in the given answer or the explanation."
+          ]
+        },
+        {
+          "index": 20,
+          "question_preview": "A 230 V AC voltage source is connected to a 100 Ω resistor. What is the current ",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is C (index 2). Confidence: high. Reasoning: Using Ohm's law for AC circuits, I = V/R, where V is the rms voltage and R is the resistance, we get I = 230 V / 100 Ω = 2.3 A, but since the options are given in whole numbers or 0.5, the closest answer is 2 A, which can be considered as the peak value being √2 times the rms value, hence the rms current would be 2/√2 = 1.41 A, but the closest option for the peak current is 2 A."
+          ]
+        },
+        {
+          "index": 21,
+          "question_preview": "An AC circuit has a capacitance of 100 μF and an inductive reactance of 50 Ω. Wh",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"capacitance\" belongs to \"Electrostatic Potential and Capacitance\", not \"Alternating Current\""
+          ]
+        },
+        {
+          "index": 22,
+          "question_preview": "A 50 Hz AC voltage source has a maximum voltage of 200 V. What is the angular fr",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is factually inaccurate. The correct formula for angular frequency is ω = 2πf, where f is the frequency. Given f = 50 Hz, the correct calculation should be ω = 2π * 50 = 100π rad/s ≈ 314.16 rad/s, not 200 rad/s."
+          ]
+        },
+        {
+          "index": 23,
+          "question_preview": "In a series LCR circuit, the voltage across the resistor is 20 V, the voltage ac",
+          "original_ans": "B",
+          "final_ans": "D",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is B (index 1). Confidence: high. Reasoning: The impedance of the coil is given by the formula Z = √(R^2 + Xc^2), where R is the resistance and Xc is the capacitive reactance, so Z = √(20^2 + 30^2) = √(400 + 900) = √1300 = 36.06 Ω, but since the options don't have this value, the closest answer is not available, however, using the same formula we can determine that the impedance is greater than both the resistance and the reactance, thus the correct answer must be the highest value among the options."
+          ]
+        },
+        {
+          "index": 24,
+          "question_preview": "An AC circuit has a resistance of 50 Ω and an impedance of 60 Ω. What is the rea",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is factually inaccurate. The correct formula to find reactance (X) is X = √(Z^2 - R^2), where Z is impedance and R is resistance. Applying this formula: X = √(60^2 - 50^2) = √(3600 - 2500) = √1100, which is approximately 33.16 Ω, not 30 Ω as stated in the correct answer. However, the explanation's method is correct but the provided numbers do not match the given correct answer."
+          ]
+        },
+        {
+          "index": 25,
+          "question_preview": "The peak value of an alternating current is 10 A. What is the value of the rms v",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation provided does not correctly support the marked answer. It mentions the definition of rms value but does not provide the formula or calculation to arrive at the answer. The correct formula to find the rms value of an alternating current is Irms = I0 / √2, where I0 is the peak value. Using this formula, Irms = 10 / √2 = 7.07 A. The explanation should have included this calculation to correctly support the marked answer."
+          ]
+        },
+        {
+          "index": 26,
+          "question_preview": "A 50 Hz, 200 V AC supply is connected to a resistive load. What is the value of ",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is factually inaccurate. The correct formula to calculate resistance is R = V / I, not R = V^2 / I^2. Additionally, the explanation does not provide enough information to calculate the resistance, as the current is not given. The correct answer, 40 ohms, cannot be derived from the given information using the correct formula."
+          ]
+        },
+        {
+          "index": 27,
+          "question_preview": "An alternating current has a frequency of 50 Hz and a peak value of 20 A. What i",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer. It provides a general definition of rms value but does not provide the formula or calculation to arrive at the answer. The correct formula to calculate rms value is I_rms = I_0 / sqrt(2), where I_0 is the peak value. Using this formula, I_rms = 20 / sqrt(2) = 14.14 A."
+          ]
+        },
+        {
+          "index": 28,
+          "question_preview": "A 230 V AC supply is connected to a pure inductive load. What is the value of th",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is incomplete and does not correctly support the marked answer. To calculate the inductive reactance, we need to know the rms current, which is not provided. Additionally, the formula X = V / I is not sufficient to calculate the inductive reactance without knowing the phase difference between voltage and current, which is 90 degrees for a pure inductive load. The correct formula for inductive reactance is X = 2 * π * f * L, where f is the frequency and L is the inductance, or X = V / I for a pure inductive load, given that the current is known."
+          ]
+        },
+        {
+          "index": 29,
+          "question_preview": "An alternating current has a frequency of 60 Hz and a rms value of 10 A. What is",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is C (index 2), stored answer is B (index 1). Confidence: high. Reasoning: The peak value of an alternating current is related to its rms value by the equation I0 = Irms * sqrt(2), and using this equation with the given rms value of 10 A, we find the peak value to be 10 * sqrt(2) = 14.14 A, which matches option C."
+          ]
+        },
+        {
+          "index": 30,
+          "question_preview": "A 50 Hz, 200 V AC supply is connected to a pure capacitive load. What is the val",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is C (index 2), stored answer is B (index 1). Confidence: high. Reasoning: For a pure capacitive load, the capacitive reactance is given by Xc = 1 / (2 * π * f * C), but since the voltage and frequency are given, we can use the relation V = Xc * I, and for a capacitor, the current leads the voltage by 90 degrees, however, to find Xc directly, we can use the relation Xc = V / I = V / (V / Z) = Z, where Z = V / I, and for a capacitor, I = V / Xc, hence Xc = V / (V * 2 * π * f * C) = 1 / (2 * π * f * C), and since we do not have the value of C, we can use the relation Xc = 1 / (2 * π * f * C) = 1 / (2 * 3.14 * 50 * C), and given that the standard value of C for such problems is usually around 25 * 10^(-6) F for 50 Hz and 200 V, we can calculate Xc, however, a more straightforward approach is to recall that Xc = 1 / (2 * π * f * C) and for a 50 Hz supply, a common value of C is around 25 * 10^(-6) F which gives Xc around 40 ohms for 200 V AC."
+          ]
+        },
+        {
+          "index": 31,
+          "question_preview": "What is the term for the rate of change of the current in an AC circuit?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is C (index 2), stored answer is B (index 1). Confidence: high. Reasoning: According to NCERT, inductance is the property of a coil that opposes the rate of change of current, and the term for the rate of change of the current in an AC circuit is related to inductance. Inductance is directly related to the rate of change of current."
+          ]
+        },
+        {
+          "index": 32,
+          "question_preview": "What is the unit of measurement for the frequency of an AC circuit?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 33,
+          "question_preview": "What is the term for the opposition to the flow of current in an AC circuit?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 34,
+          "question_preview": "In an AC circuit, the rms value of current is 2 A and the peak value of current ",
+          "original_ans": "C",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"capacitor\" belongs to \"Electrostatic Potential and Capacitance\", not \"Alternating Current\""
+          ]
+        },
+        {
+          "index": 35,
+          "question_preview": "What is the term for the opposition to the change in current in an AC circuit?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 36,
+          "question_preview": "What is the unit of measurement for the voltage of an AC circuit?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 37,
+          "question_preview": "What is the term for the ratio of the voltage and current in an AC circuit?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 38,
+          "question_preview": "What is the frequency of the AC in an Indian power grid?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 39,
+          "question_preview": "What is the effect of increasing the frequency of AC on the power transmitted?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation states that power transmitted is directly proportional to the frequency, which is incorrect. According to NCERT Class 12 Physics, the power transmitted in an AC circuit is given by P = VI cos(φ), where V is the voltage, I is the current, and φ is the phase angle between voltage and current. The power transmitted does not directly depend on the frequency. However, increasing the frequency can lead to an increase in the inductive reactance (XL = 2πfL) of the circuit, potentially decreasing the current and thus the power transmitted if the circuit is inductive. The correct explanation should involve the relationship between frequency, inductive reactance, and power transmission, not a direct proportionality between frequency and power transmitted."
+          ]
+        },
+        {
+          "index": 40,
+          "question_preview": "What is the term for the direction of the current in an AC circuit?",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is partially correct but does not accurately support the marked answer. The term for the direction of the current in an AC circuit is not 'Alternating current' itself, but rather the explanation correctly states that the direction of the current changes periodically with time. A more accurate answer could be 'the direction of current reverses periodically' or a similar phrase, and the explanation should support this concept more clearly."
           ]
         }
       ]
