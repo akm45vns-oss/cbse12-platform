@@ -22,7 +22,7 @@
   "last_updated": "2026-07-22T04:43:55.409Z",
   "in_progress": {
     "chapterKey": "12||Physics||Alternating Current",
-    "last_index": 39,
+    "last_index": 69,
     "auditedQuestions": [
       {
         "question": "What is the main difference between Alternating Current (AC) and Direct Current (DC)?",
@@ -583,6 +583,426 @@
         "difficulty": "Medium",
         "topic": "Unknown",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the root mean square value of the AC?",
+        "options": [
+          "Instantaneous value",
+          "Average value",
+          "RMS value",
+          "Peak value"
+        ],
+        "correct_answer": 2,
+        "explanation": "The RMS value of Alternating Current (AC) is the root mean square value, which is a measure of the effective value of the AC.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the effect of increasing the resistance in an AC circuit on the current?",
+        "options": [
+          "The current increases.",
+          "The current decreases.",
+          "The current remains the same.",
+          "The current becomes zero."
+        ],
+        "correct_answer": 1,
+        "explanation": "Increasing the resistance in an Alternating Current (AC) circuit results in a decrease in the current, as the current is inversely proportional to the resistance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "An AC generator has 4 poles. What is the type of AC produced?",
+        "options": [
+          "Alternating Current",
+          "Direct Current",
+          "Polyphase AC",
+          "Single-phase AC"
+        ],
+        "correct_answer": 3,
+        "explanation": "An AC generator with 4 poles produces polyphase AC due to the presence of multiple poles.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the frequency of the AC produced by a 50 Hz AC generator?",
+        "options": [
+          "25 Hz",
+          "50 Hz",
+          "75 Hz",
+          "100 Hz"
+        ],
+        "correct_answer": 1,
+        "explanation": "The frequency of the AC produced by a 50 Hz AC generator is 50 Hz, as it is the number of cycles per second.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In a series LCR circuit, the current and voltage are in phase when the value of which of the following is zero?",
+        "options": [
+          "Resistance",
+          "Inductive Reactance",
+          "Capacitive Reactance",
+          "Impedance"
+        ],
+        "correct_answer": 1,
+        "explanation": "In a series LCR circuit, the current and voltage are in phase when the net reactance is zero. This happens when the inductive reactance equals the capacitive reactance, resulting in resonance. At resonance, the circuit behaves like a purely resistive circuit, and the current and voltage are in phase. The inductive reactance (XL) is given by XL = ωL, and the capacitive reactance (XC) is given by XC = 1/ωC. When XL = XC, the net reactance is zero, and the current and voltage are in phase. The other options are incorrect because resistance does not affect the phase relationship between current and voltage, capacitive reactance being zero would not result in the current and voltage being in phase, and impedance being zero is not possible in a series LCR circuit.",
+        "difficulty": "Medium",
+        "topic": "Series LCR Circuit",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the RMS value of an AC voltage of 10 V peak value?",
+        "options": [
+          "5 V",
+          "7.07 V",
+          "10 V",
+          "14.14 V"
+        ],
+        "correct_answer": 1,
+        "explanation": "The RMS value of an AC voltage of 10 V peak value is 7.07 V, as it is the square root of the mean of the squared values.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the power factor of an AC circuit with a leading power factor?",
+        "options": [
+          "Leading",
+          "Lagging",
+          "Unity",
+          "Zero"
+        ],
+        "correct_answer": 0,
+        "explanation": "The power factor of an AC circuit is defined as the ratio of the real power to the apparent power, and it is said to be leading if the current leads the voltage. According to the NCERT textbook, a leading power factor occurs in an AC circuit that is predominantly capacitive, meaning the current reaches its peak before the voltage. This is in contrast to a lagging power factor, which occurs in inductive circuits, making options related to lagging or other values incorrect. The correct answer \"Leading\" is therefore the appropriate choice for an AC circuit with a leading power factor, as stated in the NCERT textbook for Class 12 Physics.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the effect of increasing the frequency of an AC source on the current drawn by a circuit?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains the same",
+          "No effect"
+        ],
+        "correct_answer": 1,
+        "explanation": "Increasing the frequency of an AC source decreases the current drawn by a circuit, as the reactance of the circuit increases with frequency.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the difference between a single-phase AC and a polyphase AC?",
+        "options": [
+          "Single-phase AC has more than one phase",
+          "Polyphase AC has only one phase",
+          "Single-phase AC has only one phase",
+          "Polyphase AC has more than one phase"
+        ],
+        "correct_answer": 3,
+        "explanation": "The main difference between a single-phase AC and a polyphase AC is that a single-phase AC has only one phase, whereas a polyphase AC has more than one phase.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the rate of change of current in an AC circuit?",
+        "options": [
+          "Frequency",
+          "Amplitude",
+          "Impedance",
+          "Reactance"
+        ],
+        "correct_answer": 0,
+        "explanation": "The term for the rate of change of current in an Alternating Current (AC) circuit is frequency.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the unit of measurement for inductance in an AC circuit?",
+        "options": [
+          "Henry (H)",
+          "Ohm (Ω)",
+          "Farad (F)",
+          "Tesla (T)"
+        ],
+        "correct_answer": 0,
+        "explanation": "The unit of measurement for inductance in an Alternating Current (AC) circuit is Henry (H).",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In a series LCR circuit, the impedance is minimum when the circuit is in resonance, what is the condition for this resonance?",
+        "options": [
+          "The inductive reactance equals the resistance",
+          "The capacitive reactance equals the resistance",
+          "The inductive reactance equals the capacitive reactance",
+          "The resistance equals the sum of inductive and capacitive reactance"
+        ],
+        "correct_answer": 2,
+        "explanation": "At resonance in a series LCR circuit, the impedance is minimum because the inductive reactance equals the capacitive reactance, resulting in the cancellation of these reactances and leaving only the resistance. This is based on the principle that at resonance, the circuit behaves as if it only contains the resistance, as the reactances cancel each other out. The other options are incorrect because they do not describe the condition for resonance in a series LCR circuit.",
+        "difficulty": "Medium",
+        "topic": "Series LCR Circuit and Resonance",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the opposition to the flow of current in an AC circuit due to resistance?",
+        "options": [
+          "Reactance",
+          "Impedance",
+          "Resistance",
+          "Capacitance"
+        ],
+        "correct_answer": 2,
+        "explanation": "The term for the opposition to the flow of current in an Alternating Current (AC) circuit due to resistance is impedance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the unit of measurement for power in an AC circuit?",
+        "options": [
+          "Watt (W)",
+          "Volt (V)",
+          "Ampere (A)",
+          "Joule (J)"
+        ],
+        "correct_answer": 0,
+        "explanation": "The unit of measurement for power in an Alternating Current (AC) circuit is Watt (W).",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 200 V, 50 Hz AC source is connected to a resistor of 10 ohms. What is the maximum value of the current flowing through the resistor?",
+        "options": [
+          "10 A",
+          "20 A",
+          "50 A",
+          "100 A"
+        ],
+        "correct_answer": 1,
+        "explanation": "Using Ohm's law, the maximum value of the current is calculated as the ratio of maximum voltage to resistance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 230 V, 50 Hz AC supply is given to a circuit containing a 50 ohm resistor and a 20 ohm inductive reactance. What is the impedance of the circuit?",
+        "options": [
+          "40 ohms",
+          "50 ohms",
+          "60 ohms",
+          "70 ohms"
+        ],
+        "correct_answer": 0,
+        "explanation": "The impedance is calculated using the formula Z = sqrt(R^2 + X^2), where R is resistance and X is reactance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 220 V, 50 Hz AC source is connected to a circuit containing a 20 ohm resistor and a 30 ohm capacitive reactance. What is the phase angle of the circuit?",
+        "options": [
+          "30 degrees",
+          "60 degrees",
+          "90 degrees",
+          "-30 degrees"
+        ],
+        "correct_answer": 2,
+        "explanation": "The phase angle is calculated using the formula tan(θ) = X/C, where X is reactance and C is capacitance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In a series LCR circuit, the voltage across the inductor is 20 V, the voltage across the capacitor is 30 V, and the voltage across the resistor is 10 V. What is the phase difference between the voltage across the resistor and the source voltage?",
+        "options": [
+          "0 degrees",
+          "π/2 radians",
+          "π/4 radians",
+          "π/3 radians"
+        ],
+        "correct_answer": 1,
+        "explanation": "In a series LCR circuit, the voltage across the inductor (V_L) and the voltage across the capacitor (V_C) are out of phase with each other by π radians. The voltage across the resistor (V_R) is in phase with the source voltage (V) when the circuit is at resonance. However, when V_L is not equal to V_C, the circuit is not at resonance, and the phase difference between V_R and V can be found using the equation tanφ = (V_L - V_C) / V_R = (20 - 30) / 10 = -10 / 10 = -1, which gives φ = -π/4 radians or  -45 degrees, but since the voltage across the inductor is greater than the voltage across the capacitor, the current lags behind the voltage, hence the phase difference between the voltage across the resistor and the source voltage is π/2 radians.",
+        "difficulty": "Medium",
+        "topic": "Series LCR circuit",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the main difference between AC and DC?",
+        "options": [
+          "AC has less power transmission efficiency",
+          "DC has less power transmission efficiency",
+          "AC has higher power transmission efficiency",
+          "DC has higher power transmission efficiency"
+        ],
+        "correct_answer": 2,
+        "explanation": "Alternating current has higher power transmission efficiency due to the ability to step up and step down voltages using transformers.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the conversion of AC to DC?",
+        "options": [
+          "Rectification",
+          "Amplification",
+          "Filtering",
+          "Transformation"
+        ],
+        "correct_answer": 0,
+        "explanation": "Rectification is the process of converting alternating current to direct current, which is essential in many electronic devices.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the purpose of a phase angle in an AC circuit?",
+        "options": [
+          "It represents the difference in time between two AC waves",
+          "It represents the difference in voltage between two AC waves",
+          "It represents the difference in current between two AC waves",
+          "It represents the difference in power between two AC waves"
+        ],
+        "correct_answer": 0,
+        "explanation": "The phase angle in an AC circuit represents the difference in time between two AC waves, which affects the power factor and efficiency of the circuit.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the opposition to the flow of AC due to the inductance of the circuit?",
+        "options": [
+          "Inductive reactance",
+          "Capacitive reactance",
+          "Resistance",
+          "Impedance"
+        ],
+        "correct_answer": 0,
+        "explanation": "Inductive reactance is the opposition to the flow of AC due to the inductance of the circuit, which depends on the inductance and the frequency of the AC.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the function of a transformer in an AC circuit?",
+        "options": [
+          "It converts AC to DC",
+          "It increases the voltage of AC",
+          "It decreases the current of AC",
+          "It increases the current of AC"
+        ],
+        "correct_answer": 1,
+        "explanation": "A transformer in an AC circuit increases or decreases the voltage of AC, without changing the frequency, using the principle of electromagnetic induction.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the ratio of the maximum voltage to the average voltage in an AC circuit?",
+        "options": [
+          "Root mean square (RMS) value",
+          "Maximum value",
+          "Average value",
+          "Form factor"
+        ],
+        "correct_answer": 3,
+        "explanation": "The form factor is the ratio of the maximum voltage to the average voltage in an AC circuit, which is an important parameter in the analysis of AC circuits.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In a series LCR circuit, the phase difference between the voltage and current is zero when?",
+        "options": [
+          "The inductive reactance is equal to the resistance",
+          "The capacitive reactance is equal to the resistance",
+          "The inductive reactance is equal to the capacitive reactance",
+          "The impedance is equal to the resistance"
+        ],
+        "correct_answer": 2,
+        "explanation": "In a series LCR circuit, the phase difference between the voltage and current is zero when the circuit is in resonance. At resonance, the inductive reactance is equal to the capacitive reactance, resulting in a zero phase difference between the voltage and current. The other options are incorrect because when the inductive reactance is equal to the resistance or the capacitive reactance is equal to the resistance, the circuit is not in resonance, and there is a phase difference between the voltage and current. Similarly, when the impedance is equal to the resistance, it does not necessarily mean that the circuit is in resonance.",
+        "difficulty": "Medium",
+        "topic": "Resonance in Series LCR Circuit",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the effect of increasing the frequency of an AC source on the current in a circuit?",
+        "options": [
+          "The current increases",
+          "The current decreases",
+          "The current remains the same",
+          "The current becomes zero"
+        ],
+        "correct_answer": 2,
+        "explanation": "Increasing the frequency of an Alternating Current (AC) source has no effect on the current in a circuit, as the current is determined by the impedance of the circuit and the voltage of the source.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the opposition to the flow of an AC current due to the capacitance of a circuit?",
+        "options": [
+          "Capacitive reactance",
+          "Inductive reactance",
+          "Resistance",
+          "Impedance"
+        ],
+        "correct_answer": 0,
+        "explanation": "Capacitive reactance is the opposition to the flow of an Alternating Current (AC) current due to the capacitance of a circuit, causing the current to lead the voltage.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the unit of measurement for inductive reactance in an AC circuit?",
+        "options": [
+          "Ohms",
+          "Volts",
+          "Amperes",
+          "Watts"
+        ],
+        "correct_answer": 0,
+        "explanation": "Inductive reactance is measured in Ohms, which is the unit of measurement for opposition to the flow of an Alternating Current (AC) current in a circuit.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In a series LCR circuit, the phase difference between the voltage and current is zero when the circuit is in resonance, what is the condition for this resonance?",
+        "options": [
+          "The inductive reactance is equal to the resistance",
+          "The capacitive reactance is equal to the inductive reactance",
+          "The impedance of the circuit is maximum",
+          "The current in the circuit is minimum"
+        ],
+        "correct_answer": 1,
+        "explanation": "At resonance in a series LCR circuit, the capacitive reactance equals the inductive reactance, which results in the phase difference between voltage and current being zero. This is because the reactances cancel each other out, leaving only the resistance. The other options are incorrect because when the inductive reactance equals the resistance, it does not necessarily mean the circuit is in resonance; when the impedance is maximum, it is related to the circuit being in resonance but is not the condition for resonance itself; and when the current is minimum, it could be due to several factors, not specifically the condition for resonance.",
+        "difficulty": "Medium",
+        "topic": "Series LCR Circuit and Resonance",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the opposition to the flow of an AC current due to the inductance of a circuit?",
+        "options": [
+          "Capacitive reactance",
+          "Inductive reactance",
+          "Resistance",
+          "Impedance"
+        ],
+        "correct_answer": 1,
+        "explanation": "Inductive reactance is the opposition to the flow of an Alternating Current (AC) current due to the inductance of a circuit, causing the current to lag behind the voltage.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -590,11 +1010,11 @@
       "subject": "Physics",
       "chapter": "Alternating Current",
       "total": 186,
-      "passed": 13,
-      "failed_p1": 3,
-      "failed_p2": 10,
-      "explanation_fixed": 14,
-      "regenerated": 2,
+      "passed": 28,
+      "failed_p1": 7,
+      "failed_p2": 15,
+      "explanation_fixed": 20,
+      "regenerated": 7,
       "duplicates_removed": 24,
       "error": null,
       "questions_detail": [
@@ -1011,6 +1431,306 @@
           "issues": [
             "Explanation issue: The explanation is partially correct but does not accurately support the marked answer. The term for the direction of the current in an AC circuit is not 'Alternating current' itself, but rather the explanation correctly states that the direction of the current changes periodically with time. A more accurate answer could be 'the direction of current reverses periodically' or a similar phrase, and the explanation should support this concept more clearly."
           ]
+        },
+        {
+          "index": 41,
+          "question_preview": "What is the term for the root mean square value of the AC?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 42,
+          "question_preview": "What is the effect of increasing the resistance in an AC circuit on the current?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 43,
+          "question_preview": "An AC generator has 4 poles. What is the type of AC produced?",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation incorrectly states that an AC generator with 4 poles produces polyphase AC, which contradicts the correct answer that it produces single-phase AC. According to NCERT Class 12 Physics, the number of poles in an AC generator does not directly determine the type of AC produced as single-phase or polyphase. The correct distinction depends on the number of coils or phases, not poles."
+          ]
+        },
+        {
+          "index": 44,
+          "question_preview": "What is the frequency of the AC produced by a 50 Hz AC generator?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 45,
+          "question_preview": "In a series LCR circuit, the current and voltage are in phase when the value of ",
+          "original_ans": "C",
+          "final_ans": "B",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: According to NCERT, when two AC voltages are in phase, they have a phase difference of 0°, meaning they reach their maximum and minimum values at the same time, and since the question specifies they are of the same frequency, this condition is met."
+          ]
+        },
+        {
+          "index": 46,
+          "question_preview": "What is the RMS value of an AC voltage of 10 V peak value?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is incomplete and does not provide the correct formula for calculating the RMS value. According to NCERT Class 12 Physics, the RMS value of an AC voltage is calculated using the formula Vrms = Vpeak / √2, where Vpeak is the peak value of the voltage. The correct explanation should mention this formula to support the answer."
+          ]
+        },
+        {
+          "index": 47,
+          "question_preview": "What is the power factor of an AC circuit with a leading power factor?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not provide a numerical value or a clear definition of power factor. According to NCERT Class 12 Physics, the power factor is defined as the ratio of the real power to the apparent power, and its value lies between 0 and 1. A leading power factor means the current leads the voltage, which typically occurs in a capacitive circuit, but the explanation does not provide this context or a clear definition."
+          ]
+        },
+        {
+          "index": 48,
+          "question_preview": "What is the effect of increasing the frequency of an AC source on the current dr",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 49,
+          "question_preview": "What is the difference between a single-phase AC and a polyphase AC?",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 50,
+          "question_preview": "What is the term for the rate of change of current in an AC circuit?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation incorrectly supports the marked answer. The rate of change of current in an AC circuit is actually related to the concept of 'current change over time', which is more accurately described by the term 'angular frequency' (ω) or simply the derivative of current with respect to time (di/dt). Frequency, on the other hand, refers to the number of oscillations or cycles per second, measured in Hertz (Hz)."
+          ]
+        },
+        {
+          "index": 51,
+          "question_preview": "What is the unit of measurement for inductance in an AC circuit?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 52,
+          "question_preview": "In a series LCR circuit, the impedance is minimum when the circuit is in resonan",
+          "original_ans": "B",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"capacitance\" belongs to \"Electrostatic Potential and Capacitance\", not \"Alternating Current\""
+          ]
+        },
+        {
+          "index": 53,
+          "question_preview": "What is the term for the opposition to the flow of current in an AC circuit due ",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation contradicts the marked answer. The correct term for opposition to the flow of current in an AC circuit due to resistance is indeed 'resistance' when considering only the resistive component, but in the context of AC circuits, the term 'impedance' is more comprehensive as it includes resistance, inductive reactance, and capacitive reactance. However, the marked answer is 'resistance', and the explanation should support this by explaining that in the context of resistance alone, it is the opposition to the flow of current, rather than introducing 'impedance' as the term for the opposition due to resistance."
+          ]
+        },
+        {
+          "index": 54,
+          "question_preview": "What is the unit of measurement for power in an AC circuit?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 55,
+          "question_preview": "A 200 V, 50 Hz AC source is connected to a resistor of 10 ohms. What is the maxi",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 56,
+          "question_preview": "A 230 V, 50 Hz AC supply is given to a circuit containing a 50 ohm resistor and ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is C (index 2), stored answer is A (index 0). Confidence: high. Reasoning: The impedance of the circuit can be calculated using the formula Z = sqrt(R^2 + X_L^2), where R is the resistance and X_L is the inductive reactance, resulting in Z = sqrt(50^2 + 20^2) = sqrt(2500 + 400) = sqrt(2900) = 53.85 ohms, which is closest to option C) 60 ohms among the given options."
+          ]
+        },
+        {
+          "index": 57,
+          "question_preview": "A 220 V, 50 Hz AC source is connected to a circuit containing a 20 ohm resistor ",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is C (index 2). Confidence: high. Reasoning: The phase angle of the circuit can be found using the formula tan(φ) = Xc / R, where Xc is the capacitive reactance and R is the resistance, and since tan(φ) = 30 / 20 = 1.5, φ = arctan(1.5) which is approximately 56.31 degrees, but closest to option B) 60 degrees among the given options."
+          ]
+        },
+        {
+          "index": 58,
+          "question_preview": "In a series LCR circuit, the voltage across the inductor is 20 V, the voltage ac",
+          "original_ans": "A",
+          "final_ans": "B",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is A (index 0). Confidence: high. Reasoning: The power factor of the circuit is given by cosφ = R / Z, where R is the resistance and Z is the impedance, which can be calculated using the formula Z = √(R^2 + X_L^2), and then the power factor can be calculated as cosφ = 30 / √(30^2 + 40^2) = 30 / 50 = 0.6."
+          ]
+        },
+        {
+          "index": 59,
+          "question_preview": "What is the main difference between AC and DC?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 60,
+          "question_preview": "What is the term for the conversion of AC to DC?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 61,
+          "question_preview": "What is the purpose of a phase angle in an AC circuit?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 62,
+          "question_preview": "What is the term for the opposition to the flow of AC due to the inductance of t",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 63,
+          "question_preview": "What is the function of a transformer in an AC circuit?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation contradicts the answer as it states that a transformer can both increase or decrease the voltage of AC, whereas the answer claims it only increases the voltage."
+          ]
+        },
+        {
+          "index": 64,
+          "question_preview": "What is the term for the ratio of the maximum voltage to the average voltage in ",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 65,
+          "question_preview": "In a series LCR circuit, the phase difference between the voltage and current is",
+          "original_ans": "B",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"capacitance\" belongs to \"Electrostatic Potential and Capacitance\", not \"Alternating Current\""
+          ]
+        },
+        {
+          "index": 66,
+          "question_preview": "What is the effect of increasing the frequency of an AC source on the current in",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is C (index 2). Confidence: high. Reasoning: According to NCERT, the impedance of an AC circuit increases with an increase in frequency, which in turn decreases the current in the circuit, as per Ohm's law for AC circuits (I = V/Z), where Z is the impedance."
+          ]
+        },
+        {
+          "index": 67,
+          "question_preview": "What is the term for the opposition to the flow of an AC current due to the capa",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"capacitance\" belongs to \"Electrostatic Potential and Capacitance\", not \"Alternating Current\""
+          ]
+        },
+        {
+          "index": 68,
+          "question_preview": "What is the unit of measurement for inductive reactance in an AC circuit?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 69,
+          "question_preview": "In a series LCR circuit, the phase difference between the voltage and current is",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"capacitor\" belongs to \"Electrostatic Potential and Capacitance\", not \"Alternating Current\""
+          ]
+        },
+        {
+          "index": 70,
+          "question_preview": "What is the term for the opposition to the flow of an AC current due to the indu",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
         }
       ]
     }
