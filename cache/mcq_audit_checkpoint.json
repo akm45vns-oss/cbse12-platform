@@ -22,7 +22,7 @@
   "last_updated": "2026-07-22T04:43:55.409Z",
   "in_progress": {
     "chapterKey": "12||Physics||Alternating Current",
-    "last_index": 95,
+    "last_index": 127,
     "auditedQuestions": [
       {
         "question": "What is the main difference between Alternating Current (AC) and Direct Current (DC)?",
@@ -1367,6 +1367,454 @@
         "difficulty": "Medium",
         "topic": "Unknown",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the average value of the power consumed by an Alternating Current (AC) circuit over a cycle?",
+        "options": [
+          "Root Mean Square (RMS) Power",
+          "Average Power",
+          "Instantaneous Power",
+          "Peak Power"
+        ],
+        "correct_answer": 1,
+        "explanation": "The term for the average value of the power consumed by an Alternating Current (AC) circuit over a cycle is Average Power, which represents the total power consumed by the circuit.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In an AC circuit, the rms value of current is 2 A and the peak value of current is 2.83 A. What is the type of AC circuit?",
+        "options": [
+          "Resistive circuit",
+          "Inductive circuit",
+          "Capacitive circuit",
+          "Resonant circuit"
+        ],
+        "correct_answer": 0,
+        "explanation": "The rms value of current is related to the peak value by the equation Irms = I0 / sqrt(2), where I0 is the peak value. Given Irms = 2 A and I0 = 2.83 A, we can see that 2.83 / sqrt(2) = 2, which matches the equation. This indicates that the circuit is resistive, as the current and voltage are in phase in a resistive circuit. In inductive and capacitive circuits, the current and voltage are out of phase, and in a resonant circuit, the impedance is minimum, but the given values do not indicate any phase difference or minimum impedance.",
+        "difficulty": "Medium",
+        "topic": "AC circuit analysis",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the ratio of the output voltage to the input voltage in a transformer?",
+        "options": [
+          "Efficiency",
+          "Power Factor",
+          "Turns Ratio",
+          "Impedance Ratio"
+        ],
+        "correct_answer": 2,
+        "explanation": "The term for the ratio of the output voltage to the input voltage in a transformer is Turns Ratio, which represents the relationship between the number of turns in the primary and secondary coils.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In a series LCR circuit, the phase difference between the current and the voltage is zero when?",
+        "options": [
+          "The inductive reactance is equal to the capacitive reactance and the resistance is zero",
+          "The inductive reactance is equal to the capacitive reactance",
+          "The resistance is equal to the inductive reactance",
+          "The capacitive reactance is equal to the resistance"
+        ],
+        "correct_answer": 1,
+        "explanation": "In a series LCR circuit, the phase difference between the current and the voltage is zero when the inductive reactance is equal to the capacitive reactance. This is because the inductive and capacitive reactances cancel each other out, resulting in the circuit behaving like a purely resistive circuit. At this point, the current and voltage are in phase, meaning there is no phase difference between them. The other options are incorrect because if the resistance is zero, the circuit would be purely reactive and there would still be a phase difference, and if the resistance is equal to the inductive reactance or the capacitive reactance, it would not necessarily result in a zero phase difference.",
+        "difficulty": "Medium",
+        "topic": "Series LCR Circuit",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In a series LCR circuit, the impedance is minimum when the circuit is in resonance, what is the condition for this resonance?",
+        "options": [
+          "When XL = XC and R is minimum",
+          "When XL = XC",
+          "When XL = XC and XL > R",
+          "When R = 0"
+        ],
+        "correct_answer": 1,
+        "explanation": "At resonance in a series LCR circuit, the inductive reactance (XL) equals the capacitive reactance (XC), which results in the impedance being at its minimum value, equal to the resistance (R) of the circuit. This condition is met when XL = XC, regardless of the value of R. The other options either add unnecessary conditions or misstate the condition for resonance.",
+        "difficulty": "Medium",
+        "topic": "Series LCR Circuit and Resonance",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the effect of increasing the capacitance of a capacitor in an AC circuit?",
+        "options": [
+          "The current decreases and the voltage increases.",
+          "The current increases and the voltage decreases.",
+          "The current and voltage remain unchanged.",
+          "The current and voltage oscillate at a higher frequency."
+        ],
+        "correct_answer": 1,
+        "explanation": "Increasing the capacitance of a capacitor in an Alternating Current (AC) circuit results in the current increasing and the voltage decreasing, as the capacitive reactance decreases.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In an AC circuit, the current and voltage are out of phase by 90°. What is this phenomenon called?",
+        "options": [
+          "Resonance",
+          "Inductive reactance",
+          "Capacitive reactance",
+          "Phase difference"
+        ],
+        "correct_answer": 3,
+        "explanation": "In an AC circuit, when the current and voltage are out of phase by 90°, it is due to the phase difference between the two quantities. According to the NCERT textbook, phase difference is the phenomenon where the voltage and current waves do not reach their peak values at the same time, resulting in a phase shift between them. The other options are incorrect because they do not specifically describe this phenomenon, whereas phase difference accurately represents the given condition. This concept is crucial in understanding AC circuits, particularly in inductive and capacitive circuits where phase differences are significant.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 200 V AC supply has a frequency of 50 Hz. What is the angular frequency of the supply?",
+        "options": [
+          "314 rad/s",
+          "628 rad/s",
+          "1000 rad/s",
+          "3142 rad/s"
+        ],
+        "correct_answer": 1,
+        "explanation": "The angular frequency of an AC supply can be calculated using the formula ω = 2πf, where f is the frequency of the supply. In this case, ω = 2π × 50 = 314 rad/s.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In an AC circuit, the impedance is 10 Ω and the resistance is 5 Ω. What is the reactance of the circuit?",
+        "options": [
+          "5 Ω",
+          "10 Ω",
+          "15 Ω",
+          "20 Ω"
+        ],
+        "correct_answer": 2,
+        "explanation": "The reactance of an AC circuit can be calculated using the formula Z^2 = R^2 + X^2, where Z is the impedance, R is the resistance, and X is the reactance. Rearranging the formula to solve for X, we get X = sqrt(Z^2 - R^2) = sqrt(10^2 - 5^2) = sqrt(75) = 8.66 Ω, which is approximately 8.66 Ω.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the primary difference between AC and DC?",
+        "options": [
+          "AC has higher voltage than DC.",
+          "AC has lower voltage than DC.",
+          "AC has a constant voltage.",
+          "AC has varying voltage over time."
+        ],
+        "correct_answer": 3,
+        "explanation": "Alternating current has varying voltage over time, whereas direct current has a constant voltage.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the function of a transformer in AC circuits?",
+        "options": [
+          "To convert AC to DC.",
+          "To increase the voltage of AC.",
+          "To decrease the voltage of AC.",
+          "To convert DC to AC."
+        ],
+        "correct_answer": 1,
+        "explanation": "The function of a transformer in AC circuits is to increase or decrease the voltage of AC, but the correct answer given is \"To increase the voltage of AC\" which is partially correct as transformers can step up the voltage. According to NCERT, transformers work on the principle of mutual induction and can be used to either step up or step down the voltage, depending on the number of turns in the primary and secondary coils. The other options are not provided, but any option stating that transformers only decrease voltage or have a different function would be incorrect. The correct understanding of a transformer's function, as per NCERT, is that it can change the voltage level, making it a crucial component in AC circuits.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the effect of increasing the frequency of AC on its power transmission?",
+        "options": [
+          "Power transmission increases.",
+          "Power transmission decreases.",
+          "Power transmission remains the same.",
+          "Power transmission becomes more efficient."
+        ],
+        "correct_answer": 2,
+        "explanation": "Increasing the frequency of alternating current results in decreased power transmission due to increased energy loss.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In an AC circuit, the current and voltage are in phase with each other when the circuit contains only a?",
+        "options": [
+          "Resistor and an inductor",
+          "Resistor and a transformer",
+          "Only a resistor",
+          "Only an inductor"
+        ],
+        "correct_answer": 2,
+        "explanation": "In an AC circuit, the current and voltage are in phase with each other when the circuit contains only a resistor. This is because the resistor does not store energy, and the current and voltage are related by Ohm's law, V = IR. When there is only a resistor in the circuit, the current and voltage waveforms are identical and in phase with each other. The presence of an inductor or a transformer would introduce a phase shift between the current and voltage.",
+        "difficulty": "Medium",
+        "topic": "Phasor Diagrams and AC Circuits",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the effect of a phase difference between two AC sources on their voltage and current?",
+        "options": [
+          "Voltage and current are in phase.",
+          "Voltage and current are out of phase.",
+          "Voltage is in phase, current is out of phase.",
+          "Voltage is out of phase, current is in phase."
+        ],
+        "correct_answer": 1,
+        "explanation": "When two AC sources have a phase difference, it means that the voltage and current waves are not in sync with each other, resulting in a phase shift between the voltage and current. According to NCERT, in an AC circuit, the voltage and current can be out of phase due to the presence of reactance, which causes the current to lag or lead the voltage. This is because the phase difference affects the impedance of the circuit, leading to a shift in the phase angle between voltage and current. The other options are incorrect as they do not accurately describe the effect of phase difference on voltage and current in an AC circuit, as explained in the NCERT textbook.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the purpose of a resistor in AC circuits?",
+        "options": [
+          "To store energy in AC circuits.",
+          "To block AC and allow DC.",
+          "To dissipate energy in AC circuits.",
+          "To filter out unwanted frequencies."
+        ],
+        "correct_answer": 2,
+        "explanation": "A resistor is used to dissipate energy in alternating current circuits, resulting in heat loss and reduced power transmission.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the effect of a series RC circuit on the phase angle of AC?",
+        "options": [
+          "Phase angle increases.",
+          "Phase angle decreases.",
+          "Phase angle remains the same.",
+          "Phase angle becomes zero."
+        ],
+        "correct_answer": 2,
+        "explanation": "In a series RC circuit, the phase angle decreases due to the capacitive reactance, resulting in a lagging current.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In an AC circuit, the current and voltage are given by i = I0 sin(ωt) and v = V0 sin(ωt + φ) respectively. What is the phase difference between the current and voltage when the circuit is purely resistive?",
+        "options": [
+          "π/2 rad",
+          "π/4 rad",
+          "0 rad",
+          "π rad"
+        ],
+        "correct_answer": 2,
+        "explanation": "In a purely resistive circuit, the current and voltage are in phase with each other, meaning the phase difference between them is 0 rad. This is because the resistance does not cause any phase shift between the current and voltage. The other options are incorrect because a phase difference of π/2 rad or π rad would imply a purely inductive or capacitive circuit respectively, while a phase difference of π/4 rad would imply a circuit with both inductive and capacitive components.",
+        "difficulty": "Medium",
+        "topic": "AC circuits with resistive, inductive and capacitive components",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the formula to calculate the impedance of an AC circuit?",
+        "options": [
+          "Z = R + Xc",
+          "Z = R + Xl",
+          "Z = √(R^2 + Xc^2)",
+          "Z = √(R^2 + Xl^2)"
+        ],
+        "correct_answer": 3,
+        "explanation": "The formula to calculate the impedance of an AC circuit is Z = √(R^2 + Xl^2), where R is resistance and Xl is inductive reactance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the opposition to the change in voltage in an AC circuit?",
+        "options": [
+          "Capacitive reactance",
+          "Inductive reactance",
+          "Resistance",
+          "Impedance"
+        ],
+        "correct_answer": 0,
+        "explanation": "The term for the opposition to the change in voltage in an AC circuit is resistance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the formula to calculate the inductive reactance of an AC circuit?",
+        "options": [
+          "Xl = 2πfL",
+          "Xl = 2πf/R",
+          "Xl = R/2πf",
+          "Xl = L/2πf"
+        ],
+        "correct_answer": 0,
+        "explanation": "The formula to calculate the inductive reactance of an AC circuit is Xl = 2πfL, where f is frequency and L is inductance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the term for the ability of a circuit to store energy in an AC circuit?",
+        "options": [
+          "Capacitance",
+          "Inductance",
+          "Resistance",
+          "Impedance"
+        ],
+        "correct_answer": 1,
+        "explanation": "The term for the ability of a circuit to store energy in an AC circuit is inductance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In a series LCR circuit, the impedance is minimum when the circuit is in resonance, what is the condition for this resonance?",
+        "options": [
+          "Capacitive reactance equals inductive reactance",
+          "Resistive reactance equals inductive reactance",
+          "Capacitive reactance equals resistive reactance",
+          "Inductive reactance equals zero"
+        ],
+        "correct_answer": 0,
+        "explanation": "At resonance in a series LCR circuit, the impedance is minimum because the net reactance is zero. This occurs when the capacitive reactance equals the inductive reactance, resulting in the cancellation of the two reactances. This is the condition for resonance in a series LCR circuit, where the circuit behaves as a pure resistor.",
+        "difficulty": "Medium",
+        "topic": "Series LCR Circuit and Resonance",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "In a series LCR circuit, the impedance is minimum when the circuit is in resonance. At resonance, which of the following statements is true?",
+        "options": [
+          "The current and the voltage are in phase, and the current is minimum",
+          "The current and the voltage are out of phase, and the current is maximum",
+          "The current and the voltage are in phase, and the current is maximum",
+          "The current and the voltage are out of phase, and the current is minimum"
+        ],
+        "correct_answer": 2,
+        "explanation": "At resonance in a series LCR circuit, the inductive reactance equals the capacitive reactance, resulting in the impedance being at its minimum value, which is just the resistance of the circuit. Since the impedance is minimum, the current is maximum. Additionally, when the circuit is in resonance, the current and the voltage are in phase because the net reactance is zero, meaning there is no phase shift between the voltage and the current.",
+        "difficulty": "Medium",
+        "topic": "Resonance in AC circuits",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 50 Hz AC generator has a coil with 100 turns. What is its inductance?",
+        "options": [
+          "0.2 H",
+          "0.5 H",
+          "1 H",
+          "2 H"
+        ],
+        "correct_answer": 0,
+        "explanation": "The inductance of a coil is directly proportional to the square of the number of turns and inversely proportional to the frequency.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 200 V AC supply is connected to a 100 ohm resistor. What is the power consumed?",
+        "options": [
+          "400 W",
+          "500 W",
+          "600 W",
+          "800 W"
+        ],
+        "correct_answer": 0,
+        "explanation": "The power consumed in an AC circuit is given by the formula P = Vrms^2 / R, where Vrms is the root mean square voltage and R is the resistance. Given that the AC supply voltage is 200 V, which is the root mean square value, and the resistance is 100 ohm, we can calculate the power consumed as P = (200)^2 / 100 = 400 W. The other options are incorrect because they do not correctly apply the formula for power consumption in an AC circuit, which is clearly stated in the NCERT textbook for Class 12 Physics. This straightforward application of the formula yields the correct answer of 400 W.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 50 Hz AC voltage is given by the equation v = 200 sin(314t). What is its peak voltage?",
+        "options": [
+          "100 V",
+          "150 V",
+          "200 V",
+          "250 V"
+        ],
+        "correct_answer": 2,
+        "explanation": "The peak voltage of an AC voltage is the maximum value of the voltage over a cycle.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 100 V AC supply is connected to a 50 ohm resistor in series with a 20 mH inductor. What is the impedance?",
+        "options": [
+          "50 ohm",
+          "60 ohm",
+          "70 ohm",
+          "80 ohm"
+        ],
+        "correct_answer": 2,
+        "explanation": "The impedance of an AC circuit is the vector sum of the resistance and reactance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 200 V AC supply is connected to a 100 ohm resistor in parallel with a 100 ohm resistor. What is the current drawn?",
+        "options": [
+          "0.5 A",
+          "0.7 A",
+          "1 A",
+          "1.2 A"
+        ],
+        "correct_answer": 0,
+        "explanation": "In a parallel circuit, the total current is the sum of the currents through each branch.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 50 Hz AC voltage is given by the equation v = 200 sin(314t). What is its frequency?",
+        "options": [
+          "25 Hz",
+          "50 Hz",
+          "75 Hz",
+          "100 Hz"
+        ],
+        "correct_answer": 1,
+        "explanation": "The frequency of an AC voltage is the number of cycles per second.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A 100 V AC supply is connected to a 50 ohm resistor in series with a 20 mH inductor. What is the power factor?",
+        "options": [
+          "0.5",
+          "0.7",
+          "0.8",
+          "0.9"
+        ],
+        "correct_answer": 0,
+        "explanation": "The power factor of an AC circuit is the ratio of the real power to the apparent power.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the primary difference between AC and DC voltage?",
+        "options": [
+          "AC voltage is a continuous flow of current.",
+          "AC voltage is a pulsating flow of current.",
+          "AC voltage is a unidirectional flow of current.",
+          "AC voltage is a bidirectional flow of current."
+        ],
+        "correct_answer": 3,
+        "explanation": "AC voltage is a bidirectional flow of current, whereas DC voltage is a unidirectional flow of current.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the effect of increasing the frequency of AC voltage on the current flowing through a circuit?",
+        "options": [
+          "The current decreases.",
+          "The current remains the same.",
+          "The current increases.",
+          "The current becomes zero."
+        ],
+        "correct_answer": 2,
+        "explanation": "The current remains the same, as the frequency of AC voltage does not affect the current flowing through a circuit, but rather the voltage.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -1374,11 +1822,11 @@
       "subject": "Physics",
       "chapter": "Alternating Current",
       "total": 186,
-      "passed": 40,
-      "failed_p1": 9,
-      "failed_p2": 23,
-      "explanation_fixed": 24,
-      "regenerated": 11,
+      "passed": 47,
+      "failed_p1": 14,
+      "failed_p2": 36,
+      "explanation_fixed": 31,
+      "regenerated": 18,
       "duplicates_removed": 24,
       "error": null,
       "questions_detail": [
@@ -2356,6 +2804,344 @@
           "exp_fixed": false,
           "issues": [
             "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: According to NCERT, the power consumption in an AC circuit is given by P = VI cosφ, where V and I are the rms values of voltage and current, and φ is the phase difference between them. Increasing the frequency of AC increases the reactance of the circuit, which in turn increases φ, thereby decreasing the power factor cosφ and hence the power consumption."
+          ]
+        },
+        {
+          "index": 97,
+          "question_preview": "What is the term for the average value of the power consumed by an Alternating C",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 98,
+          "question_preview": "In an AC circuit, the rms value of current is 2 A and the peak value of current ",
+          "original_ans": "C",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"capacitor\" belongs to \"Electrostatic Potential and Capacitance\", not \"Alternating Current\""
+          ]
+        },
+        {
+          "index": 99,
+          "question_preview": "What is the term for the ratio of the output voltage to the input voltage in a t",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 100,
+          "question_preview": "In a series LCR circuit, the phase difference between the current and the voltag",
+          "original_ans": "A",
+          "final_ans": "B",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is C (index 2), stored answer is A (index 0). Confidence: high. Reasoning: According to NCERT, the current and voltage in an AC circuit are determined by the impedance, which is a function of resistance, inductive reactance, and capacitive reactance, but increasing the frequency does not directly increase or decrease the current and voltage, it affects the inductive and capacitive reactance."
+          ]
+        },
+        {
+          "index": 101,
+          "question_preview": "In a series LCR circuit, the impedance is minimum when the circuit is in resonan",
+          "original_ans": "C",
+          "final_ans": "B",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"capacitor\" belongs to \"Electrostatic Potential and Capacitance\", not \"Alternating Current\""
+          ]
+        },
+        {
+          "index": 102,
+          "question_preview": "What is the effect of increasing the capacitance of a capacitor in an AC circuit",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"capacitance\" belongs to \"Electrostatic Potential and Capacitance\", not \"Alternating Current\""
+          ]
+        },
+        {
+          "index": 103,
+          "question_preview": "In an AC circuit, the current and voltage are out of phase by 90°. What is this ",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation incorrectly supports the marked answer. The correct explanation for the phenomenon where the current and voltage are out of phase by 90° is indeed related to the phase difference, but the explanation provided introduces a wrong fact by stating it is known as capacitive reactance. Capacitive reactance is a factor that contributes to the phase difference in circuits with capacitors, but the phase difference itself is the phenomenon being described, not the reactance."
+          ]
+        },
+        {
+          "index": 104,
+          "question_preview": "A 200 V AC supply has a frequency of 50 Hz. What is the angular frequency of the",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: The angular frequency is given by ω = 2πf, where f is the frequency, so ω = 2π * 50 Hz = 314 rad/s, which matches option A."
+          ]
+        },
+        {
+          "index": 105,
+          "question_preview": "In an AC circuit, the impedance is 10 Ω and the resistance is 5 Ω. What is the r",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: According to NCERT, impedance (Z) is related to resistance (R) and reactance (X) by the equation Z = √(R² + X²), so X = √(Z² - R²) = √(10² - 5²) = √(100 - 25) = √75 = 5√3 ≈ 8.66, but closest to option A, considering the given options and the fact that reactance is typically denoted as X = √(Z² - R²)."
+          ]
+        },
+        {
+          "index": 106,
+          "question_preview": "What is the primary difference between AC and DC?",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 107,
+          "question_preview": "What is the function of a transformer in AC circuits?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer because it states that a transformer can both increase or decrease the voltage, whereas the answer claims it only increases the voltage."
+          ]
+        },
+        {
+          "index": 108,
+          "question_preview": "What is the effect of increasing the frequency of AC on its power transmission?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is C (index 2). Confidence: high. Reasoning: According to NCERT, increasing the frequency of AC reduces energy losses during transmission, making power transmission more efficient, as stated in the context of reducing I^2R losses."
+          ]
+        },
+        {
+          "index": 109,
+          "question_preview": "In an AC circuit, the current and voltage are in phase with each other when the ",
+          "original_ans": "D",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"capacitor\" belongs to \"Electrostatic Potential and Capacitance\", not \"Alternating Current\""
+          ]
+        },
+        {
+          "index": 110,
+          "question_preview": "What is the effect of a phase difference between two AC sources on their voltage",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation contradicts the answer. According to NCERT Class 12 Physics, when two AC sources have a phase difference, their voltage and current are out of phase, not in phase as stated in the explanation."
+          ]
+        },
+        {
+          "index": 111,
+          "question_preview": "What is the purpose of a resistor in AC circuits?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 112,
+          "question_preview": "What is the effect of a series RC circuit on the phase angle of AC?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is C (index 2). Confidence: high. Reasoning: In a series RC circuit, the current lags behind the voltage due to the capacitive reactance, resulting in a decrease in the phase angle, as explained in the NCERT Class 12 Physics textbook for Alternating Current chapter."
+          ]
+        },
+        {
+          "index": 113,
+          "question_preview": "In an AC circuit, the current and voltage are given by i = I0 sin(ωt) and v = V0",
+          "original_ans": "D",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is D (index 3). Confidence: high. Reasoning: The power factor in AC circuits is defined as the ratio of average power to the apparent power, which essentially measures the power transmitted in AC circuits, as per NCERT Class 12 Physics."
+          ]
+        },
+        {
+          "index": 114,
+          "question_preview": "What is the formula to calculate the impedance of an AC circuit?",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is C (index 2), stored answer is D (index 3). Confidence: high. Reasoning: The impedance of an AC circuit is given by the formula Z = √(R^2 + X^2), where X is the reactance, and in the case of a circuit with capacitance, X = Xc, so the correct formula is Z = √(R^2 + Xc^2). This is as per the NCERT Class 12 Physics textbook, which provides the relationship between impedance, resistance, and reactance in an AC circuit."
+          ]
+        },
+        {
+          "index": 115,
+          "question_preview": "What is the term for the opposition to the change in voltage in an AC circuit?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is A (index 0). Confidence: high. Reasoning: According to NCERT, inductive reactance is the opposition to the change in voltage in an AC circuit, which occurs due to the presence of an inductor. This is because the inductor opposes changes in current, resulting in a reactance that is directly related to the rate of change of voltage."
+          ]
+        },
+        {
+          "index": 116,
+          "question_preview": "What is the formula to calculate the inductive reactance of an AC circuit?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 117,
+          "question_preview": "What is the term for the ability of a circuit to store energy in an AC circuit?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: According to NCERT, capacitance is the ability of a circuit to store energy in an electric field, which is relevant in AC circuits. Capacitors store energy when charged and release it when discharged, making capacitance the correct term."
+          ]
+        },
+        {
+          "index": 118,
+          "question_preview": "In a series LCR circuit, the impedance is minimum when the circuit is in resonan",
+          "original_ans": "B",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"ohm's law\" belongs to \"Current Electricity\", not \"Alternating Current\""
+          ]
+        },
+        {
+          "index": 119,
+          "question_preview": "In a series LCR circuit, the impedance is minimum when the circuit is in resonan",
+          "original_ans": "B",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: The root mean square (RMS) voltage of an AC source is related to its peak voltage by the equation V_rms = V_0 / √2, where V_0 is the peak voltage, so for V_0 = 20 V, V_rms = 20 / √2 = 20 / 1.414 ≈ 14.14 V, which is closest to option A) 10 V among the given options, but more precisely it's 14.14 V, however, given the closest option, it would be A) 10 V in a multiple choice scenario without the exact value."
+          ]
+        },
+        {
+          "index": 120,
+          "question_preview": "A 50 Hz AC generator has a coil with 100 turns. What is its inductance?",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation provided does not correctly support the marked answer. It states a general principle about inductance but does not provide a specific formula or calculation to derive the inductance of 0.2 H for the given coil with 100 turns at 50 Hz. Additionally, the relationship between inductance, number of turns, and frequency is not accurately described in the context of the question."
+          ]
+        },
+        {
+          "index": 121,
+          "question_preview": "A 200 V AC supply is connected to a 100 ohm resistor. What is the power consumed",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is incomplete and does not correctly support the marked answer. To find the power consumed, we need to calculate the RMS current first, which is given by V/R, where V is the RMS voltage and R is the resistance. The correct calculation is P = V^2/R = (200)^2/100 = 400 W. The explanation should include this step to be accurate."
+          ]
+        },
+        {
+          "index": 122,
+          "question_preview": "A 50 Hz AC voltage is given by the equation v = 200 sin(314t). What is its peak ",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 123,
+          "question_preview": "A 100 V AC supply is connected to a 50 ohm resistor in series with a 20 mH induc",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is C (index 2). Confidence: high. Reasoning: The impedance of the circuit is given by Z = sqrt(R^2 + X_L^2), where X_L = 2πfL, and since the frequency is not given, we assume it to be the standard 50 Hz, then X_L = 2π * 50 * 20 * 10^-3 = 6.28 ohm, so Z = sqrt(50^2 + 6.28^2) = sqrt(2500 + 39.4) = sqrt(2539.4) = 50.4 ohm, which is closest to option B) 60 ohm considering possible calculation approximations and standard frequency."
+          ]
+        },
+        {
+          "index": 124,
+          "question_preview": "A 200 V AC supply is connected to a 100 ohm resistor in parallel with a 100 ohm ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer. To find the total current drawn, we need to calculate the current through each resistor and sum them. Since the resistors are in parallel and have the same resistance, the voltage across each resistor is the same (200 V). The current through each resistor is V/R = 200/100 = 2 A. The total current drawn is the sum of the currents through each resistor, which is 2 + 2 = 4 A, not 0.5 A."
+          ]
+        },
+        {
+          "index": 125,
+          "question_preview": "A 50 Hz AC voltage is given by the equation v = 200 sin(314t). What is its frequ",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer. It provides a general definition of frequency but does not relate it to the given equation v = 200 sin(314t). To correctly support the answer, the explanation should mention that the coefficient of t in the equation (314) is equal to 2πf, where f is the frequency. Since 314 = 2π * 50, the frequency is indeed 50 Hz."
+          ]
+        },
+        {
+          "index": 126,
+          "question_preview": "A 100 V AC supply is connected to a 50 ohm resistor in series with a 20 mH induc",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is C (index 2), stored answer is A (index 0). Confidence: high. Reasoning: The power factor is given by cosφ, where φ is the phase angle between voltage and current, and for an AC circuit with a resistor and inductor, φ = tan^(-1)(X_L/R), where X_L = ωL and ω = 2πf, but since the frequency is not given, we can use the fact that the power factor is also given by R/Z, where Z = √(R^2 + X_L^2), and for the given values, we can calculate the power factor as cosφ = R/Z = 50/√(50^2 + (2πf*20*10^(-3))^2), but without the frequency, we look for the option that matches the condition for a relatively low inductive reactance compared to resistance, which would result in a power factor close to 0.8."
+          ]
+        },
+        {
+          "index": 127,
+          "question_preview": "What is the primary difference between AC and DC voltage?",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 128,
+          "question_preview": "What is the effect of increasing the frequency of AC voltage on the current flow",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: According to NCERT, the impedance of an AC circuit increases with an increase in frequency, which in turn decreases the current flowing through the circuit, as per Ohm's law for AC circuits (I = V/Z), where Z is the impedance."
           ]
         }
       ]
