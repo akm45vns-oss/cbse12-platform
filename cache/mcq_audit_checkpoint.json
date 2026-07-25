@@ -24,7 +24,7 @@
   "last_updated": "2026-07-24T09:10:49.400Z",
   "in_progress": {
     "chapterKey": "12||Physics||Ray Optics and Optical Instruments",
-    "last_index": 140,
+    "last_index": 170,
     "auditedQuestions": [
       {
         "question": "A beam of light passes from air into a glass slab. What is the nature of the light beam as it enters the glass slab?",
@@ -1999,6 +1999,426 @@
         "difficulty": "Medium",
         "topic": "Unknown",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "A compound microscope is used to observe a small object. What is the function of the objective lens in the microscope?",
+        "options": [
+          "To form a real image",
+          "To form a virtual image",
+          "To magnify the object",
+          "To reduce the size of the object"
+        ],
+        "correct_answer": 2,
+        "explanation": "The objective lens in a compound microscope is used to magnify the object.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "An object is placed at a distance of 20 cm from a convex lens of focal length 15 cm. What is the nature of the image formed?",
+        "options": [
+          "Real and inverted",
+          "Virtual and erect",
+          "Real and erect",
+          "Virtual and inverted"
+        ],
+        "correct_answer": 0,
+        "explanation": "The object is placed beyond the focal length of the convex lens, so the image formed will be real and inverted.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A convex lens of focal length 25 cm forms an image of a distant object at a distance of 30 cm from the lens. What is the nature of the lens?",
+        "options": [
+          "Convex",
+          "Concave",
+          "Plane",
+          "Diverging"
+        ],
+        "correct_answer": 1,
+        "explanation": "The image is formed at a distance of 30 cm, which is beyond the focal length of the lens, so the lens must be concave.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A ray of light passes through the center of a convex lens. What is the nature of the ray after passing through the lens?",
+        "options": [
+          "Refracted",
+          "Unchanged",
+          "Diverged",
+          "Converged"
+        ],
+        "correct_answer": 1,
+        "explanation": "Since the ray passes through the center of the lens, it will not be refracted or diverged, and will remain unchanged.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A convex lens of focal length 20 cm forms an image of an object at a distance of 15 cm from the lens. What is the magnification of the lens?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correct_answer": 2,
+        "explanation": "Using the lens formula, we can find the magnification of the lens, which will be 2, as the object distance is 15 cm and the image distance is 30 cm.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A beam of light passes from air into a glass slab of refractive index 1.5 at an angle of incidence of 60°. What is the angle of refraction?",
+        "options": [
+          "30°",
+          "45°",
+          "60°",
+          "75°"
+        ],
+        "correct_answer": 0,
+        "explanation": "According to Snell's law, the ratio of the sines of the angles of incidence and refraction is equal to the ratio of the refractive indices of the two media. In this case, the angle of incidence is 60° and the refractive index of air is approximately 1, while the refractive index of glass is 1.5. Using Snell's law, we can calculate the angle of refraction to be 30°, which is the correct answer. The other options are incorrect because they do not satisfy Snell's law for the given values of refractive indices and angle of incidence.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A convex lens of focal length 30 cm forms an image of an object at a distance of 40 cm from the lens. What is the nature of the image formed?",
+        "options": [
+          "Real and inverted",
+          "Virtual and erect",
+          "Real and erect",
+          "Virtual and inverted"
+        ],
+        "correct_answer": 3,
+        "explanation": "The object is placed beyond the focal length of the convex lens, so the image formed will be real and erect.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A beam of light is incident on a glass slab at an angle of 45°. The refractive index of glass is 1.5. What is the angle of refraction?",
+        "options": [
+          "30°",
+          "45°",
+          "60°",
+          "90°"
+        ],
+        "correct_answer": 0,
+        "explanation": "According to Snell's law, the ratio of the sines of the angles of incidence and refraction is equal to the ratio of the velocities in the two media, which is also equal to the inverse ratio of the refractive indices. Using this law, we can calculate the angle of refraction as sin(45°)/sin(r) = 1/1.5, which gives us sin(r) = 1.5 * sin(45°) and solving for r, we get r = 30°. The other options are incorrect because they do not satisfy Snell's law for the given angle of incidence and refractive index. This calculation is based on the principles of refraction discussed in the NCERT textbook for Class 12 Physics.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A ray of light passes through a prism and is deviated by 30°. The angle of the prism is 60°. What is the refractive index of the prism?",
+        "options": [
+          "1.2",
+          "1.5",
+          "1.8",
+          "2.0"
+        ],
+        "correct_answer": 1,
+        "explanation": "The refractive index of the prism is calculated using the formula for deviation, where the angle of deviation is 30° and the angle of the prism is 60°.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A telescope has an objective lens of focal length 80 cm and an eyepiece lens of focal length 2 cm. What is the angular magnification of the telescope?",
+        "options": [
+          "10",
+          "20",
+          "40",
+          "80"
+        ],
+        "correct_answer": 3,
+        "explanation": "The angular magnification of a telescope is calculated using the formula, where the focal length of the objective lens is 80 cm and the focal length of the eyepiece lens is 2 cm.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A beam of light passes through a glass slab at an angle of 60°. The refractive index of glass is 1.2. What is the angle of emergence?",
+        "options": [
+          "30°",
+          "45°",
+          "60°",
+          "75°"
+        ],
+        "correct_answer": 0,
+        "explanation": "The angle of emergence is calculated using Snell's law, where the angle of incidence is 60° and the refractive index of glass is 1.2.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A concave mirror has a focal length of -15 cm. What is the nature of the image formed by this mirror when an object is placed at 30 cm from the mirror?",
+        "options": [
+          "Real and inverted",
+          "Virtual and erect",
+          "Real and erect",
+          "Virtual and inverted"
+        ],
+        "correct_answer": 2,
+        "explanation": "The image formed by a concave mirror is real and erect when the object is placed beyond the focal length.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the primary reason for the formation of a rainbow in the sky after a rain shower?",
+        "options": [
+          "Refraction of light through water droplets at a specific angle",
+          "Reflection of light off the surface of water droplets",
+          "Dispersion of light by the water molecules in the air",
+          "Total internal reflection of light within the water droplets"
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct answer is A because the formation of a rainbow is primarily due to the refraction of light through water droplets at a specific angle, which also involves dispersion and internal reflection. Option B is incorrect because reflection off the surface of water droplets does not produce the colors of the rainbow. Option C is incorrect because dispersion alone does not account for the formation of the rainbow; it is the combination of refraction, dispersion, and internal reflection. Option D is incorrect because total internal reflection is a part of the process but not the primary reason for the formation of the rainbow.",
+        "difficulty": "Medium",
+        "topic": "Dispersion and Spectra",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A telescope is used to observe a distant object. What is the function of the eyepiece in this case?",
+        "options": [
+          "To magnify the image",
+          "To reduce the image",
+          "To form a real image",
+          "To form a virtual image"
+        ],
+        "correct_answer": 1,
+        "explanation": "The eyepiece in a telescope reduces the size of the image formed by the objective lens.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A lens of power +5 D is used to form an image of an object placed at 20 cm from the lens. What is the nature of the image formed?",
+        "options": [
+          "Real and inverted",
+          "Virtual and erect",
+          "Real and erect",
+          "Virtual and inverted"
+        ],
+        "correct_answer": 0,
+        "explanation": "The image formed by a convex lens is real and inverted when the object is placed beyond the focal length.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A concave mirror has a focal length of -20 cm. What is the magnification of the image formed by this mirror when an object is placed at 30 cm from the mirror?",
+        "options": [
+          "1/3",
+          "1/2",
+          "2/3",
+          "3/2"
+        ],
+        "correct_answer": 3,
+        "explanation": "The magnification of the image formed by a concave mirror is given by the ratio of the image distance to the object distance.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A myopic person has a far point of 1 meter. What is the power of the lens required to correct this defect?",
+        "options": [
+          "-1 diopter",
+          "-0.5 diopter",
+          "1 diopter",
+          "0.5 diopter"
+        ],
+        "correct_answer": 1,
+        "explanation": "For a myopic person, the far point is closer than infinity. The lens required to correct this defect is a diverging lens, which has a negative power. The power of the lens can be calculated using the formula P = 1/f, where f is the focal length. Since the far point is 1 meter, the focal length of the lens required is -1 meter. Therefore, the power of the lens is -1/1 = -1 diopter. Option B is correct because it is the only option that provides a negative power, which is required for a diverging lens to correct myopia.",
+        "difficulty": "Medium",
+        "topic": "Optical Instruments",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A beam of light passes from air into a glass slab. The angle of incidence is 30°. What is the angle of refraction?",
+        "options": [
+          "20°",
+          "25°",
+          "30°",
+          "35°"
+        ],
+        "correct_answer": 2,
+        "explanation": "The angle of refraction can be calculated using Snell's law, which states that the ratio of the sines of the angles of incidence and refraction is equal to the ratio of the velocities of the two media.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A convex lens of focal length 20 cm is used to form an image of an object placed 30 cm in front of it. What is the nature and position of the image?",
+        "options": [
+          "Real, 60 cm behind the lens",
+          "Virtual, 60 cm in front of the lens",
+          "Real, 60 cm in front of the lens",
+          "Virtual, 60 cm behind the lens"
+        ],
+        "correct_answer": 0,
+        "explanation": "The image is real, inverted, and 60 cm behind the lens due to the convex lens's converging nature.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the type of mirror used in a plane mirror?",
+        "options": [
+          "Concave mirror",
+          "Convex mirror",
+          "Plane mirror",
+          "Spherical mirror"
+        ],
+        "correct_answer": 2,
+        "explanation": "A plane mirror is a type of mirror with a flat surface, used for producing virtual images.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the type of lens used in a camera?",
+        "options": [
+          "Convex lens",
+          "Concave lens",
+          "Biconvex lens",
+          "Biconcave lens"
+        ],
+        "correct_answer": 3,
+        "explanation": "A biconcave lens is not typically used in a camera, but a convex lens or a combination of lenses is used to focus the image.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A ray of light passes from air into a glass slab at an angle of 60°. What is the angle of refraction?",
+        "options": [
+          "30°",
+          "45°",
+          "60°",
+          "75°"
+        ],
+        "correct_answer": 2,
+        "explanation": "The angle of refraction is less than the angle of incidence due to the glass slab's refracting nature.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A beam of light is incident on a glass slab at an angle of incidence of 45°. The refractive index of the glass is 1.5. What is the angle of refraction?",
+        "options": [
+          "30°",
+          "35°",
+          "40°",
+          "45°"
+        ],
+        "correct_answer": 0,
+        "explanation": "The angle of refraction can be calculated using Snell's law, which states that the ratio of the sines of the angles of incidence and refraction is equal to the ratio of the velocities of the two media.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A ray of light passes through a prism of angle A and is deviated by an angle of D. What is the angle of emergence?",
+        "options": [
+          "A - D",
+          "A + D",
+          "A + D/2",
+          "A - D/2"
+        ],
+        "correct_answer": 1,
+        "explanation": "The angle of emergence can be calculated using the prism formula, which states that the angle of emergence is equal to the angle of incidence plus the angle of deviation.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A telescope is used to observe a distant object. The objective lens has a focal length of 100 cm and the eyepiece has a focal length of 5 cm. What is the magnifying power of the telescope?",
+        "options": [
+          "10",
+          "20",
+          "5",
+          "15"
+        ],
+        "correct_answer": 1,
+        "explanation": "The magnifying power of a telescope can be calculated using the formula M = f_o / f_e, where f_o is the focal length of the objective lens and f_e is the focal length of the eyepiece.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A beam of light is incident on a glass prism at an angle of incidence of 30°. The refractive index of the glass is 1.5. What is the angle of deviation?",
+        "options": [
+          "10°",
+          "20°",
+          "30°",
+          "40°"
+        ],
+        "correct_answer": 1,
+        "explanation": "The angle of deviation can be calculated using the prism formula, which states that the angle of deviation is equal to the angle of incidence minus the angle of refraction.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A convex lens of focal length 10 cm is placed in contact with a concave lens of focal length 20 cm. What is the effective focal length of the combination?",
+        "options": [
+          "10 cm",
+          "20 cm",
+          "30 cm",
+          "-10 cm"
+        ],
+        "correct_answer": 3,
+        "explanation": "The effective focal length of the combination of lenses is given by 1/F = 1/f1 + 1/f2, where f1 and f2 are the focal lengths of the individual lenses. For a convex lens, f1 = 10 cm, and for a concave lens, f2 = -20 cm. Substituting these values, we get 1/F = 1/10 - 1/20 = (2-1)/20 = 1/20. Therefore, F = 20 cm. However, since the resulting lens combination has a focal length that is negative (due to the dominance of the concave lens), the correct answer is -10 cm, which corresponds to the combination acting as a diverging lens system.",
+        "difficulty": "Medium",
+        "topic": "Optical Instruments",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A compound microscope is used to observe a small object. The objective lens has a focal length of 4 cm and the eyepiece has a focal length of 2.5 cm. What is the magnifying power of the microscope?",
+        "options": [
+          "10",
+          "20",
+          "5",
+          "15"
+        ],
+        "correct_answer": 0,
+        "explanation": "The magnifying power of a compound microscope can be calculated using the formula M = L / f_o, where L is the least distance of distinct vision and f_o is the focal length of the objective lens.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A beam of light is incident on a glass slab at an angle of incidence of 60°. The refractive index of the glass is 1.8. What is the angle of refraction?",
+        "options": [
+          "30°",
+          "35°",
+          "40°",
+          "45°"
+        ],
+        "correct_answer": 0,
+        "explanation": "The angle of refraction can be calculated using Snell's law, which states that the ratio of the sines of the angles of incidence and refraction is equal to the ratio of the velocities of the two media.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A beam of light passes from air into a glass slab. What is the nature of the path of light inside the glass slab?",
+        "options": [
+          "Refraction",
+          "Reflection",
+          "Total Internal Reflection",
+          "Diffraction"
+        ],
+        "correct_answer": 0,
+        "explanation": "According to the NCERT textbook, when a beam of light passes from a rarer medium, such as air, into a denser medium, like glass, it undergoes refraction, which is the bending of light due to a change in its speed. This is because the refractive index of glass is greater than that of air, causing the light to bend towards the normal. The other options are incorrect because reflection occurs when light hits a surface and bounces back, and total internal reflection occurs when light hits a surface at a certain angle and is completely reflected back into the same medium. Refraction is the correct answer as it accurately describes the bending of light as it passes from air into the glass slab.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -2006,11 +2426,11 @@
       "subject": "Physics",
       "chapter": "Ray Optics and Optical Instruments",
       "total": 194,
-      "passed": 41,
-      "failed_p1": 7,
-      "failed_p2": 58,
-      "explanation_fixed": 35,
-      "regenerated": 26,
+      "passed": 46,
+      "failed_p1": 10,
+      "failed_p2": 74,
+      "explanation_fixed": 41,
+      "regenerated": 29,
       "duplicates_removed": 16,
       "error": null,
       "questions_detail": [
@@ -3490,6 +3910,329 @@
           "exp_fixed": true,
           "issues": [
             "Explanation issue: The explanation does not correctly support the marked answer. According to Snell's law, n1 sinθ1 = n2 sinθ2, where n1 = 1.5 (glass) and n2 = 1 (air). To find the angle of refraction, we need the angle of incidence, which is not provided. Assuming θ1 = 30° (since sin(30°) = 0.5), we can calculate the angle of refraction: 1.5 * sin(30°) = 1 * sin(θ2), which gives sin(θ2) = 0.75 and θ2 ≈ 48.59°, not 60°."
+          ]
+        },
+        {
+          "index": 142,
+          "question_preview": "A compound microscope is used to observe a small object. What is the function of",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: The objective lens in a compound microscope forms a real, inverted, and magnified image of the object, which is then further magnified by the eyepiece to produce the final virtual image, as stated in NCERT Class 12 Physics, Chapter 9, Ray Optics and Optical Instruments."
+          ]
+        },
+        {
+          "index": 143,
+          "question_preview": "An object is placed at a distance of 20 cm from a convex lens of focal length 15",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 144,
+          "question_preview": "A convex lens of focal length 25 cm forms an image of a distant object at a dist",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: The lens is stated to be convex and forms a real image of a distant object, which is consistent with the properties of a convex lens as described in NCERT Class 12 Physics, confirming its convex nature."
+          ]
+        },
+        {
+          "index": 145,
+          "question_preview": "A ray of light passes through the center of a convex lens. What is the nature of",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 146,
+          "question_preview": "A convex lens of focal length 20 cm forms an image of an object at a distance of",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Option A is suspiciously short",
+            "Option B is suspiciously short",
+            "Option C is suspiciously short",
+            "Option D is suspiciously short"
+          ]
+        },
+        {
+          "index": 147,
+          "question_preview": "A beam of light passes from air into a glass slab of refractive index 1.5 at an ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly apply Snell's law. According to Snell's law, n1 sin(θ1) = n2 sin(θ2), where n1 is the refractive index of air (approximately 1), θ1 is the angle of incidence (60°), n2 is the refractive index of glass (1.5), and θ2 is the angle of refraction. Substituting the given values, we get 1 * sin(60°) = 1.5 * sin(θ2). Solving for θ2, we find sin(θ2) = sin(60°) / 1.5, which does not directly result in 30° without calculation. The correct calculation yields θ2 = arcsin(sin(60°) / 1.5), which indeed results in approximately 35.3°, not 30° as stated in the explanation."
+          ]
+        },
+        {
+          "index": 148,
+          "question_preview": "A convex lens of focal length 30 cm forms an image of an object at a distance of",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is D (index 3). Confidence: high. Reasoning: According to the NCERT Class 12 Physics, a convex lens forms a real and inverted image when the object is placed beyond the focal length, and since the image distance is greater than the focal length, the image is real and inverted."
+          ]
+        },
+        {
+          "index": 149,
+          "question_preview": "A beam of light is incident on a glass slab at an angle of 45°. The refractive i",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not provide a complete calculation using Snell's law to support the answer. According to Snell's law, n1 sin(θ1) = n2 sin(θ2), where n1 = 1 (air), θ1 = 45°, n2 = 1.5 (glass), and θ2 is the angle of refraction. The correct calculation is sin(45°) / sin(θ2) = 1.5, which leads to sin(θ2) = sin(45°) / 1.5. Solving for θ2 gives the angle of refraction, which should be approximately 28.13°, not 30° as stated in the correct answer."
+          ]
+        },
+        {
+          "index": 150,
+          "question_preview": "A ray of light passes through a prism and is deviated by 30°. The angle of the p",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not provide enough detail to support the answer. According to NCERT Class 12 Physics, the refractive index of the prism can be calculated using the formula for deviation, which is given by μ = (sin((A + δm)/2)) / sin(A/2), where μ is the refractive index, A is the angle of the prism, and δm is the angle of minimum deviation. In this case, the angle of deviation is given as 30°, but it should be noted that this is the angle of minimum deviation (δm) for the prism. Using the formula, we can calculate the refractive index: μ = sin((60° + 30°)/2) / sin(60°/2) = sin(45°) / sin(30°) = 1 / (1/√2) * (1/2) = √2 / 1 = 1.414... is not the correct calculation here, the correct calculation should directly use the given values in the appropriate formula, and the explanation should provide the correct formula and calculation to support the answer."
+          ]
+        },
+        {
+          "index": 151,
+          "question_preview": "A telescope has an objective lens of focal length 80 cm and an eyepiece lens of ",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is C (index 2), stored answer is D (index 3). Confidence: high. Reasoning: The angular magnification of a telescope is given by the ratio of the focal length of the objective lens to the focal length of the eyepiece lens, so m = 80 / 2 = 40, as per NCERT Class 12 Physics."
+          ]
+        },
+        {
+          "index": 152,
+          "question_preview": "A beam of light passes through a glass slab at an angle of 60°. The refractive i",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is C (index 2), stored answer is A (index 0). Confidence: high. Reasoning: When light passes through a glass slab, the angle of incidence is equal to the angle of emergence due to the principle of reversibility of light, as stated in NCERT Class 12 Physics, and the given angle of incidence is 60°."
+          ]
+        },
+        {
+          "index": 153,
+          "question_preview": "A concave mirror has a focal length of -15 cm. What is the nature of the image f",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: According to NCERT, a concave mirror forms a real and inverted image when the object is placed beyond the focal length, and since the object is placed at 30 cm which is beyond the focal length of -15 cm, the image formed will be real and inverted."
+          ]
+        },
+        {
+          "index": 154,
+          "question_preview": "What is the primary reason for the formation of a rainbow in the sky after a rai",
+          "original_ans": "D",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is D (index 3). Confidence: high. Reasoning: According to NCERT, when a ray of light passes through a prism and emerges parallel to the incident ray, the angle of deviation is equal to the angle of incidence, which is also known as the condition for minimum deviation. This is a fundamental principle in the study of prisms and dispersion in NCERT Class 12 Physics."
+          ]
+        },
+        {
+          "index": 155,
+          "question_preview": "A telescope is used to observe a distant object. What is the function of the eye",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: The eyepiece in a telescope magnifies the image formed by the objective lens, according to NCERT Class 12 Physics, and this magnification is essential for observing distant objects clearly. This is a fundamental principle of optical instruments as described in the chapter on Ray Optics and Optical Instruments."
+          ]
+        },
+        {
+          "index": 156,
+          "question_preview": "A lens of power +5 D is used to form an image of an object placed at 20 cm from ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the marked answer because it does not consider the specific power of the lens (+5 D) and the object's distance (20 cm) from the lens. According to the lens formula, the image distance should be calculated to determine the nature of the image. The given explanation is incomplete and does not provide enough information to conclude that the image is real and inverted."
+          ]
+        },
+        {
+          "index": 157,
+          "question_preview": "A concave mirror has a focal length of -20 cm. What is the magnification of the ",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is D (index 3). Confidence: high. Reasoning: Using the mirror formula 1/f = 1/v + 1/u, where f = -20 cm and u = -30 cm, we can calculate the image distance v and then find the magnification m = -v/u, which yields m = 1/2. This is based on the NCERT Class 12 Physics formula for mirror magnification."
+          ]
+        },
+        {
+          "index": 158,
+          "question_preview": "A myopic person has a far point of 1 meter. What is the power of the lens requir",
+          "original_ans": "A",
+          "final_ans": "B",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is A (index 0). Confidence: medium. Reasoning: Using the prism formula, the angle of deviation (δ) can be calculated using the formula δ = i + e - A, where i is the angle of incidence, e is the angle of emergence, and A is the angle of the prism, but since the exact angles of incidence and emergence are not provided, we can use the fact that for a prism with a given angle and refractive index, the angle of deviation is minimum when the ray passes through the prism symmetrically, and for a 60° prism with a refractive index of 1.5, the minimum angle of deviation is close to 45° for a specific angle of incidence."
+          ]
+        },
+        {
+          "index": 159,
+          "question_preview": "A beam of light passes from air into a glass slab. The angle of incidence is 30°",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: According to Snell's law, when light passes from a rarer medium (air) to a denser medium (glass), the angle of refraction is less than the angle of incidence, and using the refractive index of glass as approximately 1.5, we can calculate the angle of refraction to be around 20°."
+          ]
+        },
+        {
+          "index": 160,
+          "question_preview": "A convex lens of focal length 20 cm is used to form an image of an object placed",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 161,
+          "question_preview": "What is the type of mirror used in a plane mirror?",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 162,
+          "question_preview": "What is the type of lens used in a camera?",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is D (index 3). Confidence: high. Reasoning: A camera uses a convex lens as it converges light rays, allowing it to focus on objects and form a real image, which is a fundamental principle of ray optics as explained in NCERT Class 12 Physics."
+          ]
+        },
+        {
+          "index": 163,
+          "question_preview": "A ray of light passes from air into a glass slab at an angle of 60°. What is the",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: According to Snell's law, the refractive index of glass is greater than that of air, so the angle of refraction will be less than the angle of incidence, and using the refractive index of glass as approximately 1.5, we can calculate the angle of refraction to be around 35.3°, closest to option A) 30°."
+          ]
+        },
+        {
+          "index": 164,
+          "question_preview": "A beam of light is incident on a glass slab at an angle of incidence of 45°. The",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 165,
+          "question_preview": "A ray of light passes through a prism of angle A and is deviated by an angle of ",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: The angle of emergence is related to the angle of deviation and the angle of the prism, and according to NCERT, the angle of emergence can be determined using the relation involving the angle of the prism and the angle of deviation, which in this context aligns with option A, considering the principles of refraction through a prism."
+          ]
+        },
+        {
+          "index": 166,
+          "question_preview": "A telescope is used to observe a distant object. The objective lens has a focal ",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Option C is suspiciously short"
+          ]
+        },
+        {
+          "index": 167,
+          "question_preview": "A beam of light is incident on a glass prism at an angle of incidence of 30°. Th",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is incomplete and does not accurately support the marked answer. The prism formula is not correctly applied, and the angle of refraction is not calculated. According to the NCERT Class 12 Physics, the angle of deviation can be calculated using the prism formula, but it requires the angle of refraction, which is not provided in the explanation. The correct calculation involves using Snell's law to find the angle of refraction and then applying the prism formula."
+          ]
+        },
+        {
+          "index": 168,
+          "question_preview": "A convex lens of focal length 10 cm is placed in contact with a concave lens of ",
+          "original_ans": "C",
+          "final_ans": "D",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: Using the mirror formula 1/f = 1/v + 1/u, where f = -15 cm and u = -20 cm, we can calculate the image distance v and determine the nature of the image, which will be real and inverted since the object is placed beyond the focal length of a concave mirror."
+          ]
+        },
+        {
+          "index": 169,
+          "question_preview": "A compound microscope is used to observe a small object. The objective lens has ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Option C is suspiciously short"
+          ]
+        },
+        {
+          "index": 170,
+          "question_preview": "A beam of light is incident on a glass slab at an angle of incidence of 60°. The",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is A (index 0). Confidence: high. Reasoning: Using Snell's law, n1 sin(θ1) = n2 sin(θ2), where n1 = 1 (air), θ1 = 60°, and n2 = 1.8 (glass), we can calculate the angle of refraction θ2, which yields sin(θ2) = sin(60°)/1.8, resulting in θ2 ≈ 35°."
+          ]
+        },
+        {
+          "index": 171,
+          "question_preview": "A beam of light passes from air into a glass slab. What is the nature of the pat",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not fully support the marked answer. It mentions refraction, which is correct, but it does not clearly describe the nature of the path of light inside the glass slab. According to NCERT Class 12 Physics, when light passes from a rarer medium (air) to a denser medium (glass), it bends towards the normal, resulting in a straight line path inside the glass slab due to the uniform density of the glass. The explanation should have mentioned that the path of light inside the glass slab is a straight line due to refraction."
           ]
         }
       ]
