@@ -1,9 +1,9 @@
 name: Background MCQ Audit Worker
 
 on:
-  schedule:
-    # Run every 4 hours automatically
-    - cron: '0 */4 * * *'
+  # schedule:
+  #   # Run every 4 hours automatically
+  #   - cron: '0 */4 * * *'
   workflow_dispatch:
     # Allow manual triggers from the GitHub UI
 
