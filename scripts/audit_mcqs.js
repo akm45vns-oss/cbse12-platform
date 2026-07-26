@@ -70,7 +70,7 @@ const REGENERATE_MODEL = "llama-3.3-70b-versatile";
 
 const KRUTRIM_API_KEY = process.env.KRUTRIM_API_KEY || process.env.VITE_KRUTRIM_API_KEY;
 const KRUTRIM_API_URL = "https://cloud.krutrim.com/v1/chat/completions";
-const KRUTRIM_MODEL   = process.env.KRUTRIM_MODEL || "Llama-3.3-70B-Instruct";
+const KRUTRIM_MODEL   = process.env.KRUTRIM_MODEL || "gpt-oss-120b";
 
 async function callGroq(prompt, model = VALIDATE_MODEL, maxRetries = 15) {
   // ── Option: Krutrim Cloud API (Paid / Fast / UPI Supported) ──
