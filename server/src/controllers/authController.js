@@ -1,4 +1,5 @@
 import { AuthService } from '../services/authService.js';
+import { AuditService } from '../services/auditService.js';
 import { z } from 'zod';
 
 export const loginSchema = z.object({
@@ -9,10 +10,11 @@ export const loginSchema = z.object({
 });
 
 export const login = async (req, res, next) => {
+  const { usernameOrEmail, password } = req.body;
   try {
-    const { usernameOrEmail, password } = req.body;
-    
     const { user, token } = await AuthService.login(usernameOrEmail, password);
+
+    AuditService.logSecurityEvent('LOGIN_SUCCESS', req, { username: user.username });
 
     res.status(200).json({
       status: 'success',
@@ -22,6 +24,12 @@ export const login = async (req, res, next) => {
       }
     });
   } catch (error) {
+    if (error.statusCode === 401) {
+      AuditService.logSecurityEvent('LOGIN_FAILED', req, { 
+        usernameOrEmail, 
+        reason: error.message 
+      });
+    }
     next(error);
   }
 };

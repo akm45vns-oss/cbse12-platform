@@ -2,6 +2,7 @@ import rateLimit from 'express-rate-limit';
 import { RedisStore } from 'rate-limit-redis';
 import { redis } from '../config/redis.js';
 import { AppError } from './errorHandler.js';
+import { AuditService } from '../services/auditService.js';
 
 export const globalLimiter = rateLimit({
   store: new RedisStore({
@@ -12,6 +13,7 @@ export const globalLimiter = rateLimit({
   standardHeaders: true,
   legacyHeaders: false,
   handler: (req, res, next) => {
+    AuditService.logSecurityEvent('RATE_LIMIT_EXCEEDED_GLOBAL', req);
     next(new AppError('Too many requests from this IP, please try again after 15 minutes', 429));
   }
 });
@@ -26,6 +28,7 @@ export const authLimiter = rateLimit({
   standardHeaders: true,
   legacyHeaders: false,
   handler: (req, res, next) => {
+    AuditService.logSecurityEvent('RATE_LIMIT_EXCEEDED_AUTH', req);
     next(new AppError('Too many login attempts from this IP, please try again after 15 minutes', 429));
   }
 });

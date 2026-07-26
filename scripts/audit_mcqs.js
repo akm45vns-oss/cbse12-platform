@@ -68,7 +68,52 @@ const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
 const VALIDATE_MODEL   = "llama-3.3-70b-versatile";
 const REGENERATE_MODEL = "llama-3.3-70b-versatile";
 
+async function callGemini(prompt, maxRetries = 5) {
+  const geminiKey = process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
+  if (!geminiKey) return null;
+
+  for (let attempt = 0; attempt < maxRetries; attempt++) {
+    try {
+      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiKey}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: {
+            temperature: 0.2,
+            maxOutputTokens: 1500
+          }
+        })
+      });
+
+      if (!res.ok) {
+        if (res.status === 429) {
+          await sleep(1500 * (attempt + 1));
+          continue;
+        }
+        const body = await res.json().catch(() => ({}));
+        throw new Error(`Gemini ${res.status}: ${body?.error?.message || res.statusText}`);
+      }
+
+      const data = await res.json();
+      const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
+      if (text) return text;
+    } catch (err) {
+      if (attempt === maxRetries - 1) throw err;
+      await sleep(1500 * (attempt + 1));
+    }
+  }
+  return null;
+}
+
 async function callGroq(prompt, model = VALIDATE_MODEL, maxRetries = 15) {
+  // First try Gemini if API key is provided (faster & higher rate limit)
+  try {
+    const geminiRes = await callGemini(prompt);
+    if (geminiRes) return geminiRes;
+  } catch (err) {
+    console.warn(`[Gemini Fallback] ${err.message}. Falling back to Groq...`);
+  }
   for (let attempt = 0; attempt < maxRetries; attempt++) {
     let keyState;
     try {

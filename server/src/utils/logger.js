@@ -19,6 +19,18 @@ export const logger = winston.createLogger({
   ]
 });
 
+// Dedicated logger for security audit pipeline
+export const securityLogger = winston.createLogger({
+  level: 'info',
+  format: winston.format.combine(
+    winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+    winston.format.json()
+  ),
+  transports: [
+    new winston.transports.File({ filename: 'logs/security-audit.log' })
+  ]
+});
+
 // If we're not in production, also log to the console with colors
 if (env.NODE_ENV !== 'production') {
   logger.add(new winston.transports.Console({
