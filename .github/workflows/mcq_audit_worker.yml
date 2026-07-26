@@ -34,12 +34,12 @@ jobs:
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
-          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
           VITE_GROQ_KEY_1: ${{ secrets.VITE_GROQ_KEY_1 }}
           VITE_GROQ_KEY_2: ${{ secrets.VITE_GROQ_KEY_2 }}
           VITE_GROQ_KEY_3: ${{ secrets.VITE_GROQ_KEY_3 }}
           VITE_GROQ_KEY_4: ${{ secrets.VITE_GROQ_KEY_4 }}
           VITE_GROQ_KEY_5: ${{ secrets.VITE_GROQ_KEY_5 }}
+          KRUTRIM_API_KEY: ${{ secrets.KRUTRIM_API_KEY }}
 
       - name: Commit Checkpoint Progress
         if: always()
