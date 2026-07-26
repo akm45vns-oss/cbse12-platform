@@ -161,6 +161,31 @@ async function buildChapterList(classesToAudit) {
       }
     }
   }
+  // --- ADD CUSTOM SORTING HERE ---
+  // Priority requested: Class 12 Physics > Biology > Chemistry > English > History > Others > Class 11
+  const subjectPriority = {
+    "Physics": 1,
+    "Biology": 2,
+    "Chemistry": 3,
+    "English": 4,
+    "History": 5
+  };
+
+  tasks.sort((a, b) => {
+    // 1. Sort by class (12 before 11)
+    if (a.classLevel !== b.classLevel) {
+      return a.classLevel === "12" ? -1 : 1;
+    }
+
+    // 2. Sort by subject priority
+    const priorityA = subjectPriority[a.subject] || 99;
+    const priorityB = subjectPriority[b.subject] || 99;
+    if (priorityA !== priorityB) {
+      return priorityA - priorityB;
+    }
+
+    return 0; // maintain original order within the same subject
+  });
 
   return tasks;
 }
