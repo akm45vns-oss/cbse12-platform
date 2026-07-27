@@ -66,7 +66,7 @@ import { waitForAvailableKey, acquireKey, releaseSuccess, releaseFailure } from 
 
 const KRUTRIM_API_KEY = process.env.KRUTRIM_API_KEY || process.env.VITE_KRUTRIM_API_KEY;
 const KRUTRIM_API_URL = "https://cloud.olakrutrim.com/v1/chat/completions";
-const KRUTRIM_MODEL   = process.env.KRUTRIM_MODEL || "gpt-oss-120b";
+const KRUTRIM_MODEL   = process.env.KRUTRIM_MODEL || "Qwen3.5-9B";
 const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
 const VALIDATE_MODEL   = "llama-3.3-70b-versatile";
 const REGENERATE_MODEL = KRUTRIM_API_KEY ? KRUTRIM_MODEL : "llama-3.3-70b-versatile";
