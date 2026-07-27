@@ -109,7 +109,20 @@ async function callGroq(prompt, model = VALIDATE_MODEL, maxRetries = 3) {
     }
   }
 
-  // ── Fallback: Groq Key Pool (Free Tier) ──
+async function callAi(prompt, model = VALIDATE_MODEL, maxRetries = 5) {
+  try {
+    const text = await callGroq(prompt, model, maxRetries);
+    consecutiveApiErrors = 0;
+    return text;
+  } catch (err) {
+    consecutiveApiErrors++;
+    process.stdout.write(`[API GLITCH ${consecutiveApiErrors}/3] `);
+    if (consecutiveApiErrors >= 3) {
+      throw new Error(`API_BROKEN: 3 consecutive API failures (${err.message})`);
+    }
+    throw err;
+  }
+}
   for (let attempt = 0; attempt < maxRetries; attempt++) {
     let keyState;
     try {
@@ -428,14 +441,9 @@ STRICT INSTRUCTIONS:
 
   let responseText;
   try {
-    responseText = await callGroq(prompt, VALIDATE_MODEL);
-    consecutiveApiErrors = 0;
+    responseText = await callAi(prompt, VALIDATE_MODEL);
   } catch (err) {
-    consecutiveApiErrors++;
-    process.stdout.write(`[API GLITCH ${consecutiveApiErrors}/3] `);
-    if (consecutiveApiErrors >= 3) {
-      throw new Error(`API_BROKEN: 3 consecutive API failures (${err.message})`);
-    }
+    if (err.message.startsWith("API_BROKEN")) throw err;
     return {
       pass: true,
       aiAnswer: null,
@@ -580,10 +588,11 @@ Where "ans" is the 0-based index (0=A, 1=B, 2=C, 3=D) of the correct option.`;
 
   let responseText;
   try {
-    responseText = await callGroq(prompt, REGENERATE_MODEL, 4);
+    responseText = await callAi(prompt, REGENERATE_MODEL);
   } catch (err) {
+    if (err.message.startsWith("API_BROKEN")) throw err;
     console.warn(`    ⚠️  Regeneration API call failed: ${err.message}. Keeping original.`);
-    return null; // Keep original if regeneration fails
+    return null;
   }
 
   try {
@@ -636,10 +645,12 @@ Write a clear, accurate explanation (2-4 sentences) that:
 Return ONLY the explanation text. No JSON. No labels.`;
 
   try {
-    const text = await callGroq(prompt, VALIDATE_MODEL, 3);
+    const text = await callAi(prompt, VALIDATE_MODEL);
     return text.trim();
   } catch (err) {
-    throw new Error(`API_BROKEN: ${err.message}`);
+    if (err.message.startsWith("API_BROKEN")) throw err;
+    console.warn(`    ⚠️  Explanation fix API call failed: ${err.message}. Keeping original.`);
+    return mcq.exp;
   }
 }
 
