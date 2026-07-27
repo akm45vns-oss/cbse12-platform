@@ -107,22 +107,10 @@ async function callGroq(prompt, model = VALIDATE_MODEL, maxRetries = 3) {
         await sleep(2000 * (attempt + 1));
       }
     }
+    // If Krutrim fails all 5 retries, fall through to Groq
   }
 
-async function callAi(prompt, model = VALIDATE_MODEL, maxRetries = 5) {
-  try {
-    const text = await callGroq(prompt, model, maxRetries);
-    consecutiveApiErrors = 0;
-    return text;
-  } catch (err) {
-    consecutiveApiErrors++;
-    process.stdout.write(`[API GLITCH ${consecutiveApiErrors}/3] `);
-    if (consecutiveApiErrors >= 3) {
-      throw new Error(`API_BROKEN: 3 consecutive API failures (${err.message})`);
-    }
-    throw err;
-  }
-}
+  // ── Fallback: Groq Key Pool (Free Tier) ──
   for (let attempt = 0; attempt < maxRetries; attempt++) {
     let keyState;
     try {
@@ -180,6 +168,24 @@ async function callAi(prompt, model = VALIDATE_MODEL, maxRetries = 5) {
     }
   }
   throw new Error("All Groq/Krutrim retries exhausted");
+}
+
+// ─── callAi: resilient wrapper with consecutive-error tracking ───────────────
+async function callAi(prompt, model = VALIDATE_MODEL) {
+  try {
+    const text = await callGroq(prompt, model);
+    consecutiveApiErrors = 0; // success — reset counter
+    return text;
+  } catch (err) {
+    consecutiveApiErrors++;
+    process.stdout.write(`[API GLITCH ${consecutiveApiErrors}/10] `);
+    if (consecutiveApiErrors >= 10) {
+      throw new Error(`API_BROKEN: 10 consecutive API failures (${err.message})`);
+    }
+    // Add a cool-down so the API has time to recover
+    await sleep(5000 * Math.min(consecutiveApiErrors, 3));
+    throw err;
+  }
 }
 
 // ─── Paths ──────────────────────────────────────────────────────────────────
