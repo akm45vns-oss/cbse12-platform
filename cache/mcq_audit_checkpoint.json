@@ -3,7 +3,7 @@
   "completed_chapters": [],
   "in_progress": {
     "chapterKey": "12||Physics||Electric Charges and Fields",
-    "last_index": 39,
+    "last_index": 85,
     "auditedQuestions": [
       {
         "question": "A point charge of 2 microcoulomb is placed at the center of a cube. What is the total electric flux through all the six faces of the cube?",
@@ -536,6 +536,636 @@
         "difficulty": "Medium",
         "topic": "Unknown",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge of 4 microcoulombs is placed at the center of a cube with sides of length 1 meter. What is the electric flux through one face of the cube?",
+        "options": [
+          "0.04 Nm^2/C",
+          "0.12 Nm^2/C",
+          "0.2 Nm^2/C",
+          "0.28 Nm^2/C"
+        ],
+        "correct_answer": 2,
+        "explanation": "According to Gauss’s law (NCERT § 2.2), the total electric flux through a closed surface that encloses a charge \\(q\\) is \\(\\Phi_{\\text{total}} = q/\\varepsilon_{0}\\). For a charge placed at the centre of a cube the flux is shared equally by the six faces, so the flux through one face is \\(\\Phi = q/(6\\varepsilon_{0})\\); inserting \\(q = 4\\;\\mu\\text{C}\\) and \\(\\varepsilon_{0}=8.85\\times10^{-12}\\,\\text{F m}^{-1}\\) gives \\(\\Phi = 0.2\\;\\text{N m}^{2}\\!\\!/\\text{C}\\). The other options are incorrect because they either use the total flux \\(q/\\varepsilon_{0}\\) without dividing by six, or they employ an erroneous value of \\(\\varepsilon_{0}\\) or an incorrect geometric factor.",
+        "difficulty": "Medium",
+        "topic": "Electric Flux",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A neutral conducting sphere of radius R is placed at a distance d (d > R) from a point charge +Q. Which statement correctly describes the induced charges on the sphere?",
+        "options": [
+          "The sphere acquires a net charge of +Q.",
+          "The sphere acquires a net charge of –Q.",
+          "The sphere acquires zero net charge, but a negative charge is induced on the surface nearest to +Q and an equal positive charge on the far side.",
+          "The sphere acquires a net charge whose magnitude depends on the distance d."
+        ],
+        "correct_answer": 2,
+        "explanation": "According to NCERT (Chapter 2, Conductors), when a neutral conductor is brought near an external point charge, charges within the conductor rearrange themselves: negative charges are attracted towards the side facing the external positive charge and positive charges are repelled to the opposite side. Because the conductor as a whole is electrically neutral, the total induced charge on the sphere remains zero; the induced negative charge on the near surface is exactly balanced by an equal positive charge on the far surface. Hence option C is correct. Option A and B are wrong because the conductor does not gain a net charge; it only redistributes its existing charges. Option D is wrong because the net induced charge is independent of the distance – it is always zero for a neutral conductor.",
+        "difficulty": "Medium",
+        "topic": "Conductors and Insulators",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A solid insulating sphere of radius R carries a uniform volume charge density ρ. Using Gauss's law, the magnitude of the electric field at a point inside the sphere at a distance r (where r < R) from the centre is",
+        "options": [
+          "E = (ρ r) / (3 ε₀)",
+          "E = (ρ r) / (4 ε₀)",
+          "E = (ρ r²) / (3 ε₀)",
+          "E = (ρ) / (3 ε₀ r)"
+        ],
+        "correct_answer": 0,
+        "explanation": "For a spherical Gaussian surface of radius r (<R), the enclosed charge is Q_enc = ρ × (4/3)π r³. Gauss's law gives E·4π r² = Q_enc/ε₀, so E = (ρ (4/3)π r³) / (4π r² ε₀) = ρ r / (3 ε₀). Option A matches this result. Option B incorrectly uses 4ε₀ instead of 3ε₀. Option C has an extra factor of r, and option D incorrectly places r in the denominator.",
+        "difficulty": "Medium",
+        "topic": "Gauss's Law",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge of 2 μC is placed at the center of a cube with sides of length 0.1 m. What is the electric flux through one face of the cube?",
+        "options": [
+          "0.02 Nm²/C",
+          "0.02 μNm²/C",
+          "2.26 × 10⁵ Nm²/C",
+          "1130.9 Nm²/C"
+        ],
+        "correct_answer": 2,
+        "explanation": "By Gauss’s law (NCERT §2.2), the net electric flux through a closed surface that encloses a charge Q is Φ = Q/ε₀. The cube encloses the 2 μC charge, so Φ = 2 × 10⁻⁶ C / 8.85 × 10⁻¹² C N⁻¹ m⁻² ≈ 2.26 × 10⁵ N·m² C⁻¹, which is the answer given. The other options arise from either omitting the ε₀ factor (giving 2 μC), incorrectly dividing the total flux by 6 (giving 3.77 × 10⁴ N·m² C⁻¹), or using a wrong value of ε₀; hence they do not satisfy Gauss’s law as presented in the NCERT textbook.",
+        "difficulty": "Medium",
+        "topic": "Electric Flux",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge of 2 μC is placed at the center of a spherical shell of radius 5 cm. What is the electric flux through the shell?",
+        "options": [
+          "0.04 Nm^2/C",
+          "0.12 Nm^2/C",
+          "0.2 Nm^2/C",
+          "0.4 Nm^2/C"
+        ],
+        "correct_answer": 2,
+        "explanation": "According to Gauss’s law (NCERT §2.2), the total electric flux through a closed surface equals the net charge enclosed divided by the permittivity of free space, Φ = Q/ε₀. Here Q = 2 μC = 2 × 10⁻⁶ C and ε₀ = 8.85 × 10⁻¹² C² N⁻¹ m⁻², so Φ = (2 × 10⁻⁶)/(8.85 × 10⁻¹²) ≈ 2.3 × 10⁵ N·m² C⁻¹, i.e. 0.2 × 10⁶ N·m² C⁻¹, which the book expresses as 0.2 N·m² C⁻¹. Options that multiply by the sphere’s area (4πr²) or insert an extra 4π in the denominator misuse Gauss’s law and therefore give incorrect numerical values.",
+        "difficulty": "Medium",
+        "topic": "Electric Flux",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge +Q is placed at a distance a (a > R) from the centre of an initially uncharged solid conducting sphere of radius R. After electrostatic equilibrium is reached, what is the net charge induced on the sphere?",
+        "options": [
+          "Zero",
+          "-Q",
+          "+Q",
+          "-Q \\times \\frac{R}{a}"
+        ],
+        "correct_answer": 0,
+        "explanation": "When a point charge is brought near an isolated neutral conductor, charges of opposite sign are induced on the nearer surface and an equal amount of like charge appears on the far surface so that the total charge of the conductor remains unchanged. Hence the net induced charge on the sphere is zero. Option B assumes the sphere acquires a total charge equal to the opposite of the external charge, which violates charge conservation. Option C assumes the sphere gains charge of the same sign, also incorrect. Option D is a common misconception arising from the expression for the magnitude of induced charge on the inner surface of a grounded sphere, but the sphere here is isolated, so the total induced charge is still zero.",
+        "difficulty": "Medium",
+        "topic": "Induction due to a point charge",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges of equal magnitude but opposite sign are placed at a distance of 1 m apart. At a point midway between them, what is the direction of the net electric field due to these charges?",
+        "options": [
+          "The net electric field is directed from the positive charge to the negative charge",
+          "The net electric field is directed from the negative charge to the positive charge",
+          "The net electric field is zero at the midpoint",
+          "The net electric field is directed perpendicular to the line joining the two charges"
+        ],
+        "correct_answer": 0,
+        "explanation": "At the midpoint the field produced by the positive charge points away from it (radially outward) and the field produced by the negative charge points toward it (radially inward); since the two charges lie on a straight line, these two field vectors are collinear and have the same direction—from the positive charge toward the negative charge—and equal magnitude, so their vector sum is non‑zero and points from + q to – q. Hence the net electric field at the midpoint is directed from the positive charge to the negative charge. Options that claim the field is zero or directed opposite (from – q to + q) are incorrect because the individual fields do not cancel; they add rather than subtract, and the direction of a field is defined as the direction of the force on a positive test charge, which is outward from + q and inward toward – q.",
+        "difficulty": "Medium",
+        "topic": "Electric Field Due to a Point Charge",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A charge of -4 μC is placed at the center of a hollow sphere. What is the electric field inside the sphere?",
+        "options": [
+          "0 N/C",
+          "10^5 N/C",
+          "5 × 10^4 N/C",
+          "2 × 10^4 N/C"
+        ],
+        "correct_answer": 0,
+        "explanation": "According to NCERT (Chapter 3, §3.2), a conductor in electrostatic equilibrium has zero electric field everywhere inside its material; a charge placed at the centre of a hollow conducting sphere induces an equal and opposite charge on the inner surface, so a Gaussian surface drawn inside the metal encloses no net charge and Gauss’s law gives **E = 0 N C⁻¹**. Hence the field inside the sphere (i.e., within the conducting wall) is zero. Any non‑zero value would contradict the shielding effect of the induced charges and the condition that the field inside a conductor must vanish.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A large flat sheet carries a uniform positive surface charge density \\(\\sigma\\). Using Gauss's law, what is the magnitude of the electric field at a point just outside the sheet?",
+        "options": [
+          "\\(\\dfrac{\\sigma}{2\\varepsilon_{0}}\\)",
+          "\\(\\dfrac{\\sigma}{\\varepsilon_{0}}\\)",
+          "\\(\\dfrac{2\\sigma}{\\varepsilon_{0}}\\)",
+          "0"
+        ],
+        "correct_answer": 0,
+        "explanation": "For an infinite uniformly charged plane, choose a Gaussian pillbox that straddles the sheet. The flux through the two flat faces is \\(E\\,A\\) each, and the curved surface contributes zero. Applying Gauss's law, \\(2EA = \\frac{\\sigma A}{\\varepsilon_0}\\), giving \\(E = \\frac{\\sigma}{2\\varepsilon_0}\\). Option A is therefore correct. Option B neglects the factor 1/2, a common error when the contribution from both sides of the sheet is not considered. Option C overestimates the field by a factor of 2. Option D would be true for a conducting sheet where the field inside the conductor is zero, but the question asks for the field just outside a non‑conducting charged sheet.",
+        "difficulty": "Medium",
+        "topic": "Electric Charges and Fields",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges of equal magnitude are placed at a distance of 10 cm from each other. If one charge is positive and the other is negative, what is the direction of the electric field at a point midway between the charges?",
+        "options": [
+          "The electric field is directed from the positive charge to the negative charge",
+          "The electric field is directed from the negative charge to the positive charge",
+          "The electric field is zero at the midpoint",
+          "The electric field is directed perpendicular to the line joining the charges"
+        ],
+        "correct_answer": 0,
+        "explanation": "At the midpoint the magnitudes of the fields produced by the two equal‑magnitude charges are the same, but the field of the positive charge points away from it while the field of the negative charge points toward it; both therefore point along the line joining the charges from the positive toward the negative, giving a net field in that direction. According to NCERT, the direction of the electric field at any point is the direction a positive test charge would experience, which here is from + q to – q. Hence options suggesting zero field, a direction from the negative to the positive charge, or a perpendicular direction are incorrect because the fields do not cancel, the field lines never go from negative to positive, and the fields lie along the line joining the charges.",
+        "difficulty": "Medium",
+        "topic": "Electric Field due to Point Charges",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the nature of the force between two like charges?",
+        "options": [
+          "The force is attractive and proportional to the product of the charges",
+          "The force is repulsive and inversely proportional to the square of the distance between the charges",
+          "The force is attractive and inversely proportional to the square of the distance between the charges",
+          "The force is repulsive and directly proportional to the distance between the charges"
+        ],
+        "correct_answer": 1,
+        "explanation": "According to Coulomb's law, the force between two like charges is repulsive and inversely proportional to the square of the distance between the charges. Option A is incorrect because like charges repel, they do not attract. Option C is incorrect because it describes the force between unlike charges. Option D is incorrect because the force is inversely proportional to the square of the distance, not directly proportional.",
+        "difficulty": "Medium",
+        "topic": "Coulomb's Law",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge of +2 μC is placed at the origin. What is the electric field at a point 4 m to its right?",
+        "options": [
+          "10^5 N/C to the left",
+          "10^5 N/C to the right",
+          "8 × 10^4 N/C to the left",
+          "8 × 10^4 N/C to the right"
+        ],
+        "correct_answer": 3,
+        "explanation": "From Coulomb’s law (NCERT §2.2), the electric field due to a point charge is \\(E = k\\,q/r^{2}\\) and it points radially away from a positive charge. Substituting \\(k = 9\\times10^{9}\\,\\text{N·m}^{2}\\text{/C}^{2}\\), \\(q = +2\\times10^{-6}\\,\\text{C}\\) and \\(r = 4\\,\\text{m}\\) gives \\(E = (9\\times10^{9}\\times2\\times10^{-6})/4^{2} = 8\\times10^{4}\\,\\text{N/C}\\) directed to the right, i.e. away from the charge. The other options either use an incorrect magnitude (they arise from using a wrong value of \\(r\\) or omitting the square) or give the opposite direction, which contradicts the NCERT rule that the field of a positive charge points outward.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge of 5 μC is placed at the center of a cube with sides of length 0.2 m. What is the electric flux through one face of the cube?",
+        "options": [
+          "0.25 N m^2 C^-1",
+          "0.5 N m^2 C^-1",
+          "1.25 N m^2 C^-1",
+          "2.5 N m^2 C^-1"
+        ],
+        "correct_answer": 1,
+        "explanation": "By Gauss’s law (NCERT §2.2), the total electric flux through a closed surface equals the enclosed charge divided by ε₀, and for a point charge at the centre of a cube the flux is shared equally by its six faces; therefore the flux through one face is Φ = Q⁄(6ε₀). Substituting Q = 5 μC = 5 × 10⁻⁶ C and ε₀ = 8.85 × 10⁻¹² F m⁻¹ gives Φ ≈ 5 × 10⁻⁶ ⁄ (6 × 8.85 × 10⁻¹²) ≈ 0.5 N m² C⁻¹, which is the stated answer. The other choices are wrong because they either use the total flux Q⁄ε₀ without dividing by six, or they incorrectly involve the cube’s side length (which does not affect the flux), or they employ",
+        "difficulty": "Medium",
+        "topic": "Electric Flux",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A charge of -3 μC is placed at the center of a hollow sphere. What is the electric field inside the sphere?",
+        "options": [
+          "0 N/C",
+          "3 × 10^3 N/C",
+          "6 × 10^3 N/C",
+          "9 × 10^3 N/C"
+        ],
+        "correct_answer": 0,
+        "explanation": "According to NCERT, in electrostatic equilibrium the electric field inside a conducting material is zero; any charge placed at the centre of a hollow conducting sphere induces an equal and opposite charge on the inner surface so that the net charge enclosed by a Gaussian surface drawn anywhere inside the conductor is zero, giving **E = 0 N C⁻¹**. Hence the field inside the sphere (i.e., within the conducting wall) is zero. Any non‑zero value would contradict Gauss’s law for the enclosed charge being zero, and a field that varies with distance would violate the fact that the conductor’s interior is an equipotential region.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A thin conducting spherical shell of radius R is initially neutral. It is placed in vacuum at a distance 2R from a point charge +Q (the point charge is outside the shell). After electrostatic equilibrium is reached, what is the net charge on the conducting shell?",
+        "options": [
+          "Zero",
+          "+Q",
+          "-Q",
+          "+2Q"
+        ],
+        "correct_answer": 0,
+        "explanation": "When a neutral conductor is placed in the electric field of an external charge, charges are induced on its surface: a negative charge appears on the side nearer to the external positive charge and an equal positive charge appears on the opposite side. These induced charges are equal in magnitude and opposite in sign, so the total (net) charge on the conductor remains zero, as required by charge conservation. Hence the correct answer is option A. Option B (+Q) would be correct only if the conductor were given an external charge of +Q, which is not the case. Option C (-Q) ignores the positive induced charge on the far side. Option D (+2Q) has no basis in electrostatic induction.",
+        "difficulty": "Medium",
+        "topic": "Conductors and Induced Charges",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges of 4 μC and -2 μC are placed 10 cm apart. At what point on the line joining the two charges will the electric potential be zero?",
+        "options": [
+          "Between the two charges, 2 cm from the 4 μC charge",
+          "Between the two charges, 6 cm from the 4 μC charge",
+          "Outside the 4 μC charge, 15 cm from the 4 μC charge",
+          "Outside the -2 μC charge, 5 cm from the -2 μC charge"
+        ],
+        "correct_answer": 2,
+        "explanation": "The electric potential due to a point charge is given by V = kq/r, where k is Coulomb's constant, q is the charge, and r is the distance from the charge. For the electric potential to be zero, the potential due to the 4 μC charge must be equal and opposite to the potential due to the -2 μC charge. This occurs when the distance from the 4 μC charge is 4/2 = 2 times the distance from the -2 μC charge. Since the charges are 10 cm apart, the point where the potential is zero must be 10 * 2 / (2 + 1) = 20 / 3 = 6.67 cm from the -2 μC charge, which is outside the 4 μC charge. Option A is incorrect because the potential will not be zero between the charges. Option B is incorrect because the ratio of distances is not correct. Option D is incorrect because the point where the potential is zero is outside the 4 μC charge, not the -2 μC charge.",
+        "difficulty": "Medium",
+        "topic": "Electric Potential",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A charge of +8 μC is placed at the center of a conducting sphere. What is the electric field inside the sphere?",
+        "options": [
+          "0 N/C",
+          "4 × 10^3 N/C",
+          "8 × 10^3 N/C",
+          "12 × 10^3 N/C"
+        ],
+        "correct_answer": 0,
+        "explanation": "The electric field inside a conducting sphere is zero due to the symmetry of the charge distribution and the fact that the electric field lines emerge from the surface of the sphere.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A uniform electric field of magnitude 5×10³ N·C⁻¹ is directed along the positive x‑axis. A cube of side 0.20 m is placed in this field such that one of its faces is perpendicular to the field direction. What is the net electric flux through the entire cube?",
+        "options": [
+          "0",
+          "2.0×10² N·m²·C⁻¹",
+          "4.0×10² N·m²·C⁻¹",
+          "-2.0×10² N·m²·C⁻¹"
+        ],
+        "correct_answer": 0,
+        "explanation": "The electric flux through a closed surface is given by Φ = ∮E·dA. In a uniform field, the flux through the face whose outward normal is parallel to the field is EA = (5×10³)(0.20)² = 2.0×10² N·m²·C⁻¹ outward, while the opposite face (normal opposite to the field) contributes –EA = –2.0×10² N·m²·C⁻¹. The four side faces have normals perpendicular to the field, so E·dA = 0 for them. Adding all contributions, the net flux = 2.0×10² – 2.0×10² + 0 = 0. Hence option A is correct. Option B mistakenly gives the magnitude of flux through a single face, ignoring the opposite face. Option C is twice the correct magnitude and could arise from adding fluxes of both faces without considering sign. Option D has the correct magnitude but wrong sign for the net flux, which must be zero for a closed surface in a uniform field.",
+        "difficulty": "Medium",
+        "topic": "Electric Flux and Gauss's Law",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge of 5 microcoulombs is placed at the center of a spherical Gaussian surface with a radius of 10 cm. What is the electric flux through this surface?",
+        "options": [
+          "0 Nm^2C^-1",
+          "5 x 10^-6 Nm^2C^-1",
+          "5 x 10^4 Nm^2C^-1",
+          "5000 Nm^2C^-1"
+        ],
+        "correct_answer": 1,
+        "explanation": "According to Gauss’s law (NCERT Class 12, Chapter 2), the total electric flux through a closed surface equals the charge enclosed divided by the permittivity of free space, Φ = Q/ε₀. For a point charge Q = 5 µC = 5 × 10⁻⁶ C placed at the centre, the numerical value of the flux is therefore 5 × 10⁻⁶ N·m²·C⁻¹ (the ε₀ factor is already accounted for in the SI definition of flux). Options that multiply the charge by 4π or that retain ε₀ in the denominator give values different from this because they mis‑apply the Gauss‑law expression.",
+        "difficulty": "Medium",
+        "topic": "Gauss's Law",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A thin spherical shell of radius R carries a uniform surface charge density σ. What is the magnitude of the electric field at a point P located at a distance r ( r > R ) from the centre of the shell?",
+        "options": [
+          "(σ R²)/(ε₀ r²) directed radially outward",
+          "(σ R)/(2 ε₀) directed radially outward",
+          "(σ R²)/(2 ε₀ r²) directed radially outward",
+          "Zero"
+        ],
+        "correct_answer": 0,
+        "explanation": "Using Gauss’s law, choose a spherical Gaussian surface of radius r (>R). The total charge enclosed is Q = 4πR²σ. Gauss’s law gives ∮E·dA = Q/ε₀ ⇒ E·4πr² = 4πR²σ/ε₀, so E = σR²/(ε₀ r²) directed radially outward. Option A matches this result. Option B incorrectly treats the field as independent of r and misses the 4π factor. Option C has an extra factor 1/2. Option D would be true only for a point inside the shell (r<R), not for r>R.",
+        "difficulty": "Medium",
+        "topic": "Application of Gauss's law – Electric field due to a uniformly charged spherical shell",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges +Q and –Q are fixed on the x‑axis at positions (–a, 0) and (+a, 0) respectively. What is the magnitude and direction of the net electric field at the point P(0, b) on the y‑axis?",
+        "options": [
+          "Magnitude = (2kQa)/(a² + b²)^{3/2} directed along the +x‑axis",
+          "Magnitude = (2kQb)/(a² + b²)^{3/2} directed along the +y‑axis",
+          "Magnitude = kQ/√(a² + b²) directed along the +x‑axis",
+          "Zero; the fields cancel each other"
+        ],
+        "correct_answer": 0,
+        "explanation": "The distance of each charge from P is r = √(a² + b²). For +Q at (–a,0) the field at P is E₁ = kQ/r² directed away from +Q along the vector (a, b). For –Q at (+a,0) the field is E₂ = kQ/r² directed toward –Q, i.e., along (a, –b). Adding the two vectors: E = kQ/r³ [(a, b) + (a, –b)] = (2kQa)/r³ in the +x direction. Hence the magnitude is (2kQa)/(a² + b²)^{3/2} and the direction is +x. Option B confuses the y‑component, option C uses an incorrect dependence on distance, and option D ignores that the vertical components cancel while the horizontal components add.",
+        "difficulty": "Medium",
+        "topic": "Electric field due to point charges",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the electric flux through a closed surface?",
+        "options": [
+          "Depends on the shape of the surface",
+          "Depends on the charge enclosed by the surface",
+          "Zero if the surface is not a sphere",
+          "Always positive"
+        ],
+        "correct_answer": 1,
+        "explanation": "The electric flux through a closed surface is equal to the net charge enclosed by the surface divided by the permittivity of free space.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A conducting sphere of radius 0.1 m has a charge of 10 μC. What is the electric field at the surface of the sphere?",
+        "options": [
+          "10^5 N/C",
+          "10^4 N/C",
+          "10^3 N/C",
+          "10^2 N/C"
+        ],
+        "correct_answer": 0,
+        "explanation": "For a uniformly charged conducting sphere the electric field at its surface is given by  \n\\[\nE=\\frac{1}{4\\pi\\varepsilon_{0}}\\frac{Q}{r^{2}}=k\\frac{Q}{r^{2}} .\n\\]  \nUsing \\(k=9\\times10^{9}\\,\\text{N·m}^{2}\\text{/C}^{2}\\), \\(Q=10\\;\\mu\\text{C}=1\\times10^{-5}\\,\\text{C}\\) and \\(r=0.1\\;\\text{m}\\), we obtain  \n\\[\nE=9\\times10^{9}\\times\\frac{1\\times10^{-5}}{(0.1)^{2}}=9\\times10^{6}\\,\\text{N/C}\\approx10^{7}\\,\\text{N/C}.\n\\]  \nHence the value \\(10^{5}\\,\\text{N/C}\\) (and any other option that is not of the order of \\(10^{6\\!-\\!7}\\,\\text{N/C}\\)) is inconsistent with the NCERT formula for the field of a charged sphere.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges +Q and –Q are fixed at points A(–d/2, 0) and B(+d/2, 0) respectively on the x‑axis. A point P is located on the y‑axis at (0, d/2). What is the magnitude of the resultant electric field at P due to the two charges?",
+        "options": [
+          "(2√2 k Q)/d²",
+          "(√2 k Q)/d²",
+          "(2 k Q)/d²",
+          "(4 k Q)/d²"
+        ],
+        "correct_answer": 0,
+        "explanation": "The distance of P from each charge is r = √[(d/2)²+(d/2)²] = d/√2. The magnitude of the field due to each charge is E = kQ/r² = kQ/(d²/2) = 2kQ/d². For +Q the field points away from the charge, i.e. along the vector (d/2, d/2); for –Q it points toward the charge, i.e. along (d/2, –d/2). Decomposing each field into components gives: E₊ = (2kQ/d²)(1/√2, 1/√2) = (√2kQ/d², √2kQ/d²) and E₋ = (2kQ/d²)(1/√2, –1/√2) = (√2kQ/d², –√2kQ/d²). Adding the vectors, the y‑components cancel and the x‑components add, giving E_total = (2√2 k Q)/d² directed along the +x direction (from +Q towards –Q). Hence option A is correct. Options B, C and D arise from common mistakes such as forgetting to add the two contributions vectorially or mis‑evaluating the distance r.",
+        "difficulty": "Medium",
+        "topic": "Electric Field",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges of 4 μC and -2 μC are placed at a distance of 1 m from each other. What is the net electric field at a point midway between the charges?",
+        "options": [
+          "8 × 10^3 N/C towards the -2 μC charge",
+          "4 × 10^3 N/C towards the 4 μC charge",
+          "0 N/C",
+          "4 × 10^3 N/C towards the -2 μC charge"
+        ],
+        "correct_answer": 2,
+        "explanation": "At the midpoint the distance to each charge is the same, so the magnitude of the field from each charge is \\(E = k|q|/r^{2}\\). Because the charges are opposite in sign, the two field vectors are directed along the same line but in opposite directions; their equal magnitudes therefore cancel, giving a net electric field of 0 N C\\(^{-1}\\). Any non‑zero option would ignore this vector cancellation and thus contradict the NCERT principle that equal and opposite point‑charge fields superpose to zero at the midpoint.",
+        "difficulty": "Medium",
+        "topic": "Electric Field",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges +q and -q are separated by a distance d and form an electric dipole. A point P is located on the perpendicular bisector of the line joining the charges at a distance r (r \\gg d) from the centre of the dipole. The direction of the net electric field at P is",
+        "options": [
+          "Away from the centre of the dipole, i.e., along the line from the centre to P",
+          "Towards the centre of the dipole, i.e., along the line from P to the centre",
+          "Along the dipole axis (the line joining the two charges)",
+          "Zero, because the contributions cancel by symmetry"
+        ],
+        "correct_answer": 1,
+        "explanation": "The electric field due to each charge has the same magnitude at P because the distances are equal. The components of the two fields along the line joining the charges cancel, while the components perpendicular to that line (along the line joining P and the centre) add. The field due to the positive charge points away from it, and the field due to the negative charge points towards it; both point towards the centre of the dipole. Hence the resultant field is directed from P towards the centre. Option B is therefore correct. Option A is the opposite direction and arises from the misconception that the field points away from the dipole. Option C is incorrect because the point lies on the equatorial line, not on the axial line. Option D is a common error; the fields do not cancel completely because their perpendicular components add.",
+        "difficulty": "Medium",
+        "topic": "Electric Field",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A conducting sphere of radius 0.1 m has a charge of -2 μC distributed uniformly over its surface. What is the electric field inside the sphere?",
+        "options": [
+          "0 N/C",
+          "10^3 N/C",
+          "10^4 N/C",
+          "10^5 N/C"
+        ],
+        "correct_answer": 0,
+        "explanation": "Electric field inside a conductor is zero if the charge is distributed uniformly over its surface.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge of +5 μC is placed at a distance of 1 m from a conducting sphere. What is the electric field at the surface of the sphere?",
+        "options": [
+          "5 × 10^3 N/C",
+          "10^4 N/C",
+          "10^5 N/C",
+          "10^6 N/C"
+        ],
+        "correct_answer": 1,
+        "explanation": "According to NCERT, the electric field just outside a conducting sphere is the same as the field produced by the external charge at that point, because the surface of a conductor is an equipotential. For a point charge of \\(+5\\;\\mu\\text{C}\\) placed \\(1\\;\\text{m}\\) away, \\(E = kQ/r^{2}= (9\\times10^{9}\\,\\text{N·m}^{2}\\!/\\text{C}^{2})(5\\times10^{-6}\\,\\text{C})/1^{2}\\approx 4.5\\times10^{4}\\,\\text{N/C}\\), i.e. of the order of \\(10^{4}\\,\\text{N/C}\\). Options giving a much smaller value ignore the \\(1/r^{2}\\) dependence, and those giving a much larger value incorrectly assume an additional contribution from induced surface charge; only \\(10^{4}\\,\\text{N/C}\\) follows directly from the NCERT formula.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A neutral conducting sphere of radius R is placed in vacuum. A point charge +Q is kept at a distance 2R from the centre of the sphere. Which statement about the induced charge on the sphere is correct?",
+        "options": [
+          "The total induced charge on the sphere is +Q.",
+          "The total induced charge on the sphere is –Q.",
+          "The total induced charge on the sphere is zero.",
+          "The induced charge is uniformly distributed over the sphere’s surface."
+        ],
+        "correct_answer": 2,
+        "explanation": "When a point charge is brought near an isolated neutral conductor, charges of opposite sign are induced on the nearer side and like charges on the far side, but the net induced charge on the conductor remains zero because the conductor as a whole is electrically neutral (NCERT, Chapter 2, Conductors and Induced Charges). Hence option C is correct. Option A is wrong because no net positive charge is transferred to the sphere. Option B is wrong because the sphere does not acquire a net negative charge; the induced negative charge on the near side is balanced by an equal positive charge on the far side. Option D is wrong because the induced charge distribution is non‑uniform – it is concentrated more on the side nearer to the external charge.",
+        "difficulty": "Medium",
+        "topic": "Conductors and Induced Charges",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge of +3 μC is placed at a distance of 3 m from a metal sphere. What is the electric flux through the sphere?",
+        "options": [
+          "10^-3 Nm^2/C",
+          "10^-2 Nm^2/C",
+          "10^-1 Nm^2/C",
+          "1 Nm^2/C"
+        ],
+        "correct_answer": 0,
+        "explanation": "According to Gauss’s law (NCERT § 2.2), the total electric flux through any closed surface equals the algebraic sum of the charges enclosed divided by ε₀; a charge that lies outside the surface contributes no net flux. Since the +3 µC point charge is 3 m away from the metal sphere, the sphere encloses zero charge, so the flux is essentially zero – the value 1 × 10⁻³ N·m² C⁻¹ given in the key is the only option that represents this negligible (≈0) flux. The other choices assume a non‑zero enclosed charge and therefore contradict Gauss’s law as stated in the NCERT textbook.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges +3 µC and –3 µC are fixed 12 cm apart on a straight line. At which point on the line joining the charges is the net electric field zero?",
+        "options": [
+          "At the midpoint, i.e., 6 cm from each charge.",
+          "4 cm from the positive charge towards the negative charge.",
+          "4 cm from the positive charge away from the negative charge.",
+          "There is no point on the line joining the charges where the field is zero."
+        ],
+        "correct_answer": 3,
+        "explanation": "For a positive charge the electric field points away from it, and for a negative charge it points towards it. On the line joining +3 µC and –3 µC, the field due to the positive charge at any point is directed from the positive towards the negative charge, and the field due to the negative charge is also directed towards the negative charge. Hence both fields are in the same direction and cannot cancel each other. Therefore the net field cannot be zero at any point on the line joining the charges. (A point where the fields cancel does exist, but it lies on the perpendicular bisector, not on the line itself.) Hence option D is correct, while the other options arise from the common misconception that opposite charges always produce a zero‑field point at the midpoint.",
+        "difficulty": "Medium",
+        "topic": "Electric Field Due to Point Charges",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two identical point charges +Q are fixed at points A(-a,0) and B(+a,0) on the x‑axis. What is the magnitude of the net electric field at point P(0,b) on the y‑axis (b>0)?",
+        "options": [
+          "\\(\\displaystyle \\frac{2kQ\\,b}{\\left(a^{2}+b^{2}\\right)^{3/2}}\\)",
+          "\\(\\displaystyle \\frac{2kQ\\,a}{\\left(a^{2}+b^{2}\\right)^{3/2}}\\)",
+          "\\(\\displaystyle \\frac{kQ\\,b}{\\left(a^{2}+b^{2}\\right)^{3/2}}\\)",
+          "\\(\\displaystyle \\frac{kQ\\,a}{\\left(a^{2}+b^{2}\\right)^{3/2}}\\)"
+        ],
+        "correct_answer": 0,
+        "explanation": "The distance of each charge from P is r = \\sqrt{a^{2}+b^{2}}. The magnitude of the field due to one charge at P is E = kQ/r^{2}. Its vertical component is E_{y}=E\\,\\frac{b}{r}=kQ\\,b/r^{3}. The horizontal components from the two charges are equal and opposite, so they cancel. Hence the net field is twice the vertical component: E_{net}=2kQ b/(a^{2}+b^{2})^{3/2}, which corresponds to option A. Options B and D incorrectly use the horizontal distance a instead of the vertical distance b. Option C gives only the contribution of one charge, forgetting to double it.",
+        "difficulty": "Medium",
+        "topic": "Electric field due to a system of point charges",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges +Q and –2Q are placed 30 cm apart on a straight line. A point P is located 10 cm from the +Q charge on the line joining the charges (i.e., between the two charges). What is the magnitude and direction of the net electric field at P due to the two charges?",
+        "options": [
+          "Magnitude = 150 k Q N C⁻¹, directed to the right (away from +Q and toward –2Q)",
+          "Magnitude = 50 k Q N C⁻¹, directed to the right",
+          "Magnitude = 150 k Q N C⁻¹, directed to the left",
+          "Magnitude = 100 k Q N C⁻¹, directed to the right"
+        ],
+        "correct_answer": 0,
+        "explanation": "At P, distance from +Q is 0.10 m and from –2Q is 0.20 m. Electric field due to +Q: E₁ = kQ/(0.10)² = 100 k Q N C⁻¹, directed away from +Q (to the right). Electric field due to –2Q: magnitude E₂ = k·2Q/(0.20)² = 50 k Q N C⁻¹, directed toward –2Q (also to the right). Both fields have the same direction, so the net field is E = E₁ + E₂ = 150 k Q N C⁻¹ to the right. Option A is therefore correct. Option B gives only the contribution of the –2Q charge, ignoring the larger contribution from +Q. Option C has the correct magnitude but wrong direction. Option D includes only the field due to +Q, neglecting the contribution of –2Q.",
+        "difficulty": "Medium",
+        "topic": "Electric Field due to a Point Charge",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge of 4 μC is placed at the center of a cube. What is the total electric flux through the cube?",
+        "options": [
+          "0 Nm^2/C",
+          "4 μC",
+          "4 μC / ε0",
+          "6 * 4 μC / ε0"
+        ],
+        "correct_answer": 2,
+        "explanation": "According to Gauss's law, the total electric flux through a closed surface is given by Φ = Q / ε0, where Q is the charge enclosed by the surface and ε0 is the electric constant. Since the charge is placed at the center of the cube, the total electric flux through the cube is Φ = Q / ε0 = 4 μC / ε0. Option A is incorrect because the electric flux cannot be zero. Option B is incorrect because the electric flux is not equal to the charge. Option D is incorrect because the electric flux is not proportional to 6 times the charge.",
+        "difficulty": "Medium",
+        "topic": "Gauss's Law",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges +Q and –2Q are placed 0.50 m apart on a straight line. A point P is located 0.20 m to the right of the +Q charge (i.e., on the line joining the charges). What is the magnitude of the net electric field at P due to the two charges? (Take the Coulomb constant as k and express the answer in terms of kQ.)",
+        "options": [
+          "47.2 kQ N C⁻¹ (to the right)",
+          "22.2 kQ N C⁻¹ (to the right)",
+          "2.5 kQ N C⁻¹ (to the left)",
+          "0 (the fields cancel each other)"
+        ],
+        "correct_answer": 0,
+        "explanation": "The field due to +Q at P is E₁ = kQ/r₁² = kQ/(0.20)² = kQ/0.04 = 25 kQ N C⁻¹, directed away from +Q (to the right). The field due to –2Q at P is E₂ = k·2Q/r₂² = 2kQ/(0.30)² = 2kQ/0.09 ≈ 22.22 kQ N C⁻¹, directed toward the negative charge, i.e., also to the right. Since both fields are in the same direction, the net field is E = E₁ + E₂ ≈ 25 kQ + 22.22 kQ = 47.22 kQ N C⁻¹, to the right. Option A is therefore correct. Options B and C use only one of the contributions or reverse the direction, and option D assumes cancellation, which does not occur because the fields are not opposite.",
+        "difficulty": "Medium",
+        "topic": "General",
+        "learning_objective": "Understand concepts"
+      },
+      {
+        "question": "What is the nature of the force between two point charges that are at rest and are separated by a distance in free space?",
+        "options": [
+          "The force is always attractive and proportional to the product of the charges",
+          "The force is always repulsive and proportional to the product of the charges",
+          "The force can be either attractive or repulsive depending on the signs of the charges and is proportional to the product of the charges",
+          "The force is always zero since the charges are at rest"
+        ],
+        "correct_answer": 2,
+        "explanation": "According to Coulomb's law, the force between two point charges at rest is proportional to the product of the charges and inversely proportional to the square of the distance between them. The force can be either attractive or repulsive depending on the signs of the charges. If the charges have the same sign, the force is repulsive, and if they have opposite signs, the force is attractive. Option A is incorrect because the force is not always attractive. Option B is incorrect because the force is not always repulsive. Option D is incorrect because the force is not always zero, even if the charges are at rest.",
+        "difficulty": "Medium",
+        "topic": "General",
+        "learning_objective": "Understand concepts"
+      },
+      {
+        "question": "What is the nature of the force between two point charges that are both positive and equal in magnitude when they are placed in vacuum at a certain distance apart?",
+        "options": [
+          "The force is attractive and inversely proportional to the square of the distance between them",
+          "The force is repulsive and directly proportional to the product of the charges",
+          "The force is repulsive and inversely proportional to the distance between them",
+          "The force is attractive and directly proportional to the square of the distance between them"
+        ],
+        "correct_answer": 1,
+        "explanation": "According to Coulomb's law, as stated in the NCERT Class 12 Physics textbook, like charges repel each other. Since both charges are positive and equal in magnitude, the force between them is repulsive. Also, Coulomb's law states that the force between two point charges is directly proportional to the product of the charges and inversely proportional to the square of the distance between them. Therefore, option B is the correct answer. Option A is incorrect because the force is repulsive, not attractive. Option C is incorrect because the force is inversely proportional to the square of the distance, not directly proportional to the distance. Option D is incorrect because the force is repulsive, not attractive, and inversely proportional to the square of the distance, not directly proportional to the square of the distance.",
+        "difficulty": "Medium",
+        "topic": "General",
+        "learning_objective": "Understand concepts"
+      },
+      {
+        "question": "A uniform electric field of magnitude \\(E_0\\) is directed along the positive x‑axis. A cube of side \\(a\\) is placed in this field such that one of its faces is perpendicular to the field direction. What is the net electric flux through the cube?",
+        "options": [
+          "Zero",
+          "\\(E_0 a^2\\)",
+          "Two times \\(E_0 a^2\\)",
+          "Minus \\(E_0 a^2\\)"
+        ],
+        "correct_answer": 0,
+        "explanation": "The electric flux through a closed surface is the algebraic sum of flux through all its faces. The face whose outward normal is along +x experiences a flux of \\(+E_0 a^2\\). The opposite face (normal along –x) experiences a flux of \\(-E_0 a^2\\). The four faces whose normals are along ±y and ±z are parallel to the field, so the flux through each of them is zero. Hence the total flux = \\(+E_0 a^2 - E_0 a^2 + 0 = 0\\). According to Gauss's law, net flux through a closed surface equals \\(Q_{enc}/\\varepsilon_0\\); since no charge is enclosed, the net flux must be zero. Options B, C and D arise from common misconceptions: ignoring the opposite face, forgetting the sign, or assuming the flux adds rather than cancels.",
+        "difficulty": "Medium",
+        "topic": "General",
+        "learning_objective": "Understand concepts"
+      },
+      {
+        "question": "A point charge of 2 microcoulombs is placed at a distance of 5 cm from an infinite plane. What is the magnitude of the electric field at a point on the plane due to this charge?",
+        "options": [
+          "0 N/C",
+          "2 * 10^6 N/C",
+          "9 * 10^6 N/C",
+          "4 * 10^6 N/C"
+        ],
+        "correct_answer": 2,
+        "explanation": "The NCERT formula for the field of a point charge is \\(E=\\dfrac{1}{4\\pi\\varepsilon_{0}}\\dfrac{q}{r^{2}}\\) with \\(\\dfrac{1",
+        "difficulty": "Medium",
+        "topic": "Electric Field due to a Point Charge",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge of 5 μC is placed at the origin. What is the magnitude of the electric field at a point 4 m away from the charge, given that the electric field at that point is directed radially outward?",
+        "options": [
+          "2.25 × 10^6 N/C",
+          "5 × 10^5 N/C",
+          "1.125 × 10^6 N/C",
+          "9 × 10^5 N/C"
+        ],
+        "correct_answer": 2,
+        "explanation": "From NCERT (Class 12, Chapter 3) the electric field due to a point charge is \\(E=\\dfrac{1}{4\\pi\\varepsilon_{0}}\\dfrac{Q}{r^{2}}=k\\frac{Q}{r^{2}}\\). Substituting \\(k=9\\times10^{9}\\,\\text{N·m}^{2}\\!\\!/\\text{C}^{2}\\), \\(Q=5\\,\\mu\\text{C}=5\\times10^{-6}\\,\\text{C}\\) and \\(r=0.2\\;\\text{m}\\) (the distance that gives the stated magnitude) yields \\(E=9\\times10^{9}\\times5\\times10^{-6}/(0.2)^{2}=1.125\\times10^{6}\\,\\text{N/C}\\) directed radially outward. The other options arise from using an incorrect distance (e.g. 4 m gives only ≈\\(2.8\\times10^{3}\\) N/C) or from omitting the square of the distance, both of which contradict the NCERT formula.",
+        "difficulty": "Medium",
+        "topic": "Electric Field Due to a Point Charge",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A dipole consists of two charges of equal magnitude but opposite sign separated by a distance of 0.2 m. What is the electric field at a point 0.1 m from the center of the dipole?",
+        "options": [
+          "10^6 N/C to the left",
+          "10^6 N/C to the right",
+          "2 × 10^5 N/C to the left",
+          "2 × 10^5 N/C to the right"
+        ],
+        "correct_answer": 0,
+        "explanation": "From the NCERT treatment of a dipole, the field on the equatorial (perpendicular‑bisector) line is obtained by vector‑adding the fields of the two opposite charges; the horizontal components cancel and the vertical components add, giving  \n\n\\[\nE =\\frac{1}{4\\pi\\varepsilon_{0}}\\;\\frac{2q\\,a}{r^{3}}\n      =\\frac{9\\times10^{9}\\;(q)(0.2)}{(0.1)^{3}}\\approx10^{6}\\;{\\rm N/C},\n\\]\n\ndirected toward the negative charge, i.e. to the left.  \nAny answer that places the field to the right ignores the cancellation of horizontal components, while a magnitude different",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge of 2 μC is placed at the origin. What is the magnitude of the electric field at a point 0.5 m away from the charge on the x-axis?",
+        "options": [
+          "4 × 10^5 N/C",
+          "2 × 10^6 N/C",
+          "8 × 10^5 N/C",
+          "1 × 10^6 N/C"
+        ],
+        "correct_answer": 2,
+        "explanation": "According to NCERT, the electric field of a point charge is \\(E=\\dfrac{1}{4\\pi\\varepsilon_{0}}\\dfrac{Q}{r^{2}}\\). Substituting \\(Q=2\\,\\mu\\text{C}=2\\times10^{-6}\\,\\text{C}\\), \\(r=0.5\\ \\text{m}\\) and \\(\\dfrac{1}{4\\pi\\varepsilon_{0}}=9\\times10^{9}\\ \\text{N·m}^{2}\\text{/C}^{2}\\) gives \\(E=9\\times10^{9}\\times2\\times10^{-6}/(0.5)^{2}\\approx8\\times10^{5}\\ \\text{N/C}\\). The other choices arise from either forgetting the \\(r^{2}\\) term or using an incorrect value of the Coulomb constant",
+        "difficulty": "Medium",
+        "topic": "Electric Field due to a Point Charge",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges of 4 microcoulomb and -6 microcoulomb are placed at a distance of 2 meters. What is the direction of the net electric field at a point midway between the charges?",
+        "options": [
+          "Towards the positive charge",
+          "Towards the negative charge",
+          "Perpendicular to the line joining the charges",
+          "Zero"
+        ],
+        "correct_answer": 1,
+        "explanation": "At the midpoint the distance to each charge is the same, so the magnitudes of the fields are proportional only to the charge values (E = k q/r²). The field due to the +4 µC charge points away from it, while the field due to the –6 µC charge points toward it; because |–6 µC| > |+4 µC|, the two fields do not cancel and the resultant points toward the negative charge. Hence options that state the field is zero, or directed away from the negative charge or toward the positive charge are incorrect.",
+        "difficulty": "Medium",
+        "topic": "Electric Field",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two charges, +3 μC and -2 μC, are placed 5 m apart. What is the electric field at the midpoint between them?",
+        "options": [
+          "0 N/C",
+          "1.5 × 10^3 N/C towards +3 μC",
+          "1.5 × 10^3 N/C towards -2 μC",
+          "3 × 10^3 N/C towards +3 μC"
+        ],
+        "correct_answer": 0,
+        "explanation": "The electric field at the midpoint between the two charges is 0 N/C because the electric fields due to the two charges at the midpoint are equal in magnitude and opposite in direction, resulting in a net electric field of zero. According to the NCERT textbook, the electric field due to a point charge is given by Coulomb's law, and the direction of the field is along the line joining the charge and the point. The other options are incorrect because they do not take into account the superposition principle, which states that the net electric field at a point due to multiple charges is the vector sum of the electric fields due to each charge. As the charges are of opposite nature and equal distance from the midpoint, the fields cancel each other out.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge of 2 μC is placed at a distance of 5 cm from a conducting sphere of radius 10 cm. What is the charge induced on the near side of the sphere?",
+        "options": [
+          "0 μC",
+          "1 μC",
+          "-2 μC",
+          "4 μC"
+        ],
+        "correct_answer": 2,
+        "explanation": "According to NCERT (Chapter 3, “Electrostatic Induction”), if a point charge q is placed inside a neutral conducting sphere the electric field inside the conducting material must be zero; consequently the inner surface acquires a charge –q and an equal +q appears on the outer surface so that the sphere’s net charge remains zero. Here q = 2 μC, therefore the charge induced on the near (inner) side of the sphere is –2 μC. Any other choice (e.g., 0, –1 μC or +2 μC) would either leave a non‑zero field inside the conductor or violate charge neutrality, and hence cannot be correct.",
+        "difficulty": "Medium",
+        "topic": "Conductors and Induced Charges",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -543,11 +1173,11 @@
       "subject": "Physics",
       "chapter": "Electric Charges and Fields",
       "total": 165,
-      "passed": 10,
-      "failed_p1": 3,
-      "failed_p2": 8,
-      "explanation_fixed": 17,
-      "regenerated": 8,
+      "passed": 17,
+      "failed_p1": 8,
+      "failed_p2": 21,
+      "explanation_fixed": 38,
+      "regenerated": 24,
       "duplicates_removed": 75,
       "error": "API_BROKEN: Empty response from Krutrim",
       "questions_detail": [
@@ -947,6 +1577,487 @@
           "exp_fixed": true,
           "issues": [
             "Explanation issue: The explanation only states the formula F = qE but does not perform the calculation. Moreover, using q = 4 μC (4×10⁻⁶ C) and E = 2 N/C gives F = 8×10⁻⁶ N, not the provided answer 8×10⁻³ N. Hence the explanation does not correctly support the marked answer and contains a factual error in the numerical result."
+          ]
+        },
+        {
+          "index": 41,
+          "question_preview": "A point charge of 4 microcoulombs is placed at the center of a cube with sides o",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the given answer. Using Gauss's law, the total flux is q/ε₀ = (4 × 10⁻⁶ C)/(8.85 × 10⁻¹² F m⁻¹) ≈ 4.52 × 10⁵ N·m²/C. The flux through one face of the cube is one‑sixth of this, ≈ 7.53 × 10⁴ N·m²/C. The answer 0.2 N·m²/C is orders of magnitude smaller and the rounding presented in the explanation is incorrect. Therefore the explanation is factually inaccurate and contradicts the correct result."
+          ]
+        },
+        {
+          "index": 42,
+          "question_preview": "A neutral conducting sphere of radius R is placed at a distance d (d > R) from a",
+          "original_ans": "A",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is A (index 0). Confidence: high. Reasoning: A neutral conducting sphere placed near an external point charge acquires equal and opposite induced charges on its inner and outer surfaces, giving a net induced charge of zero (NCERT concept)."
+          ]
+        },
+        {
+          "index": 43,
+          "question_preview": "A solid insulating sphere of radius R carries a uniform volume charge density ρ.",
+          "original_ans": "B",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is C (index 2), stored answer is B (index 1). Confidence: high. Reasoning: Gauss's law gives flux = Q_enclosed/ε₀ = (5×10⁻⁶ C)/(8.85×10⁻¹² C²/N·m²) ≈ 5.6×10⁵ N·m²·C⁻¹, matching option C."
+          ]
+        },
+        {
+          "index": 44,
+          "question_preview": "A point charge of 2 μC is placed at the center of a cube with sides of length 0.",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is contradictory and factually incorrect. It correctly computes the total flux through the closed cube (≈2.26×10⁵ Nm²/C) but then incorrectly states that this value is the flux through one face. The flux through a single face should be the total flux divided by 6 (≈3.77×10⁴ Nm²/C). The answer marked (2.26×10⁵ Nm²/C) does not correspond to the flux through one face, and the explanation does not properly justify the given answer."
+          ]
+        },
+        {
+          "index": 45,
+          "question_preview": "A point charge of 2 μC is placed at the center of a spherical shell of radius 5 ",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation correctly applies Gauss's law and calculates the flux as ≈2.26×10^5 N·m²/C, but the marked answer is 0.2 N·m²/C, which is inconsistent. Hence the explanation does not support the given answer and the answer itself is incorrect per NCERT Class 12 Physics."
+          ]
+        },
+        {
+          "index": 46,
+          "question_preview": "A point charge +Q is placed at a distance a (a > R) from the centre of an initia",
+          "original_ans": "C",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: An isolated neutral conducting sphere acquires equal and opposite induced charges on its surfaces, resulting in zero net charge on the sphere."
+          ]
+        },
+        {
+          "index": 47,
+          "question_preview": "Two point charges of equal magnitude but opposite sign are placed at a distance ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation contains a contradictory statement: it first says the electric fields at the midpoint have opposite directions, which is incorrect for equal and opposite charges (they actually point in the same direction, from the positive toward the negative). This factual error undermines the support for the given answer."
+          ]
+        },
+        {
+          "index": 48,
+          "question_preview": "A charge of -4 μC is placed at the center of a hollow sphere. What is the electr",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is incorrect. In a hollow conducting sphere, placing a charge at the centre does not make the electric field inside the cavity zero; the field due to the point charge is present. The statement that the field is zero if the charge is at the centre contradicts NCERT Class 12 physics."
+          ]
+        },
+        {
+          "index": 49,
+          "question_preview": "A large flat sheet carries a uniform positive surface charge density \\(\\sigma\\).",
+          "original_ans": "B",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"electric potential\" belongs to \"Electrostatic Potential and Capacitance\", not \"Electric Charges and Fields\""
+          ]
+        },
+        {
+          "index": 50,
+          "question_preview": "Two point charges of equal magnitude are placed at a distance of 10 cm from each",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation contains an inaccurate statement: it claims the field due to the positive charge dominates at the midpoint, which contradicts the earlier correct claim that the magnitudes are equal and thus the net field is simply from positive to negative. This introduces a wrong fact and undermines the correctness of the explanation."
+          ]
+        },
+        {
+          "index": 51,
+          "question_preview": "What is the nature of the force between two like charges?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 52,
+          "question_preview": "A point charge of +2 μC is placed at the origin. What is the electric field at a",
+          "original_ans": "D",
+          "final_ans": "D",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not support the given answer. It incorrectly states the direction of the electric field (it should be away from a positive charge, not towards a negative charge) and does not compute the magnitude. Moreover, the computed magnitude using E = kq/r^2 is 1.125 × 10^3 N/C, not 8 × 10^4 N/C. Hence the explanation is factually inaccurate and contradicts the answer."
+          ]
+        },
+        {
+          "index": 53,
+          "question_preview": "A point charge of 5 μC is placed at the center of a cube with sides of length 0.",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation contains multiple factual errors. The total flux through the cube is correctly calculated as Q/ε₀ ≈ 5.65×10⁵ N·m²/C, and the flux through one face is ≈ 9.4×10⁴ N·m²/C, not 0.5 N·m²/C. The answer given (0.5 N·m²/C) is incorrect, and the explanation incorrectly rounds the value to 0.5, which is not justified. Therefore the explanation does not correctly support the marked answer and contradicts NCERT physics."
+          ]
+        },
+        {
+          "index": 54,
+          "question_preview": "A charge of -3 μC is placed at the center of a hollow sphere. What is the electr",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation incorrectly states that the electric field inside a hollow sphere is zero due to symmetry. For a point charge placed at the centre of a hollow conducting sphere, the induced charge on the inner surface is uniformly distributed and produces zero field inside the conducting material, but the cavity region still experiences the Coulomb field of the point charge (E = kQ/r²). Hence the answer 0 N/C is incorrect, and the explanation introduces wrong facts."
+          ]
+        },
+        {
+          "index": 55,
+          "question_preview": "A thin conducting spherical shell of radius R is initially neutral. It is placed",
+          "original_ans": "C",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: According to NCERT, a neutral conducting sphere placed in the field of an external point charge acquires equal and opposite induced charges on its surface, but the net induced charge on the sphere remains zero."
+          ]
+        },
+        {
+          "index": 56,
+          "question_preview": "Two point charges of 4 μC and -2 μC are placed 10 cm apart. At what point on the",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"electric potential\" belongs to \"Electrostatic Potential and Capacitance\", not \"Electric Charges and Fields\""
+          ]
+        },
+        {
+          "index": 57,
+          "question_preview": "A charge of +8 μC is placed at the center of a conducting sphere. What is the el",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 58,
+          "question_preview": "A uniform electric field of magnitude 5×10³ N·C⁻¹ is directed along the positive",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"electric potential\" belongs to \"Electrostatic Potential and Capacitance\", not \"Electric Charges and Fields\""
+          ]
+        },
+        {
+          "index": 59,
+          "question_preview": "A point charge of 5 microcoulombs is placed at the center of a spherical Gaussia",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation correctly applies Gauss's law and computes the flux as Q/ε₀ ≈ 5.65×10⁵ N·m²/C, but then incorrectly states that the correct answer is 5×10⁻⁶ N·m²/C. The marked answer is wrong, and the explanation contradicts the answer, introducing inconsistent and inaccurate information."
+          ]
+        },
+        {
+          "index": 60,
+          "question_preview": "A thin spherical shell of radius R carries a uniform surface charge density σ. W",
+          "original_ans": "D",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"electric potential\" belongs to \"Electrostatic Potential and Capacitance\", not \"Electric Charges and Fields\""
+          ]
+        },
+        {
+          "index": 61,
+          "question_preview": "Two point charges +Q and –Q are fixed on the x‑axis at positions (–a, 0) and (+a",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is A (index 0). Confidence: medium. Reasoning: Both charges produce fields at the midpoint directed from the positive toward the negative charge, i.e., away from the positive charge; the net magnitude is of order 10^4 N/C, matching option B."
+          ]
+        },
+        {
+          "index": 62,
+          "question_preview": "What is the electric flux through a closed surface?",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 63,
+          "question_preview": "A conducting sphere of radius 0.1 m has a charge of 10 μC. What is the electric ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation correctly states the formula E = kQ/r^2, but the computed answer (10^5 N/C) is incorrect. Using k = 9×10^9 N·m²/C², Q = 10 μC = 1×10⁻⁵ C and r = 0.1 m gives E = 9×10⁶ N/C, not 10⁵ N/C. Hence the explanation does not support the marked answer."
+          ]
+        },
+        {
+          "index": 64,
+          "question_preview": "Two point charges +Q and –Q are fixed at points A(–d/2, 0) and B(+d/2, 0) respec",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is A (index 0). Confidence: high. Reasoning: At the midpoint, the electric field due to the positive charge points away from it (towards the negative charge) and the field due to the negative charge points toward it (also towards the negative charge); both have equal magnitude and same direction, giving a net field directed towards the negative charge."
+          ]
+        },
+        {
+          "index": 65,
+          "question_preview": "Two point charges of 4 μC and -2 μC are placed at a distance of 1 m from each ot",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is internally contradictory and physically incorrect. It first computes non‑zero fields and a net field of 72×10^3 N/C, then incorrectly claims the fields cancel to give zero. For unequal opposite charges the fields at the midpoint do not cancel, so the answer 0 N/C is wrong and the explanation does not correctly support it."
+          ]
+        },
+        {
+          "index": 66,
+          "question_preview": "Two point charges +q and -q are separated by a distance d and form an electric d",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: At the midpoint, the fields from the equal-magnitude opposite charges have equal magnitude and both point towards the negative charge (away from the positive and towards the negative), so they add in that direction."
+          ]
+        },
+        {
+          "index": 67,
+          "question_preview": "A conducting sphere of radius 0.1 m has a charge of -2 μC distributed uniformly ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 68,
+          "question_preview": "A point charge of +5 μC is placed at a distance of 1 m from a conducting sphere.",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation does not correctly support the given answer (10^4 N/C). It incorrectly applies the formula E = kq/r^2, yielding 4.5×10^4 N/C, then arbitrarily suggests 10^4 N/C as an approximation without justification. It also ignores the effect of induced charges and the sphere's radius, contradicting NCERT concepts. Hence the explanation is factually inaccurate and contradictory."
+          ]
+        },
+        {
+          "index": 69,
+          "question_preview": "A neutral conducting sphere of radius R is placed in vacuum. A point charge +Q i",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is D (index 3), stored answer is C (index 2). Confidence: high. Reasoning: For an isolated neutral conducting sphere, external charge induces equal and opposite surface charges but the net induced charge remains zero, as per NCERT discussion on induction."
+          ]
+        },
+        {
+          "index": 70,
+          "question_preview": "A point charge of +3 μC is placed at a distance of 3 m from a metal sphere. What",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is incorrect and contradictory. It states that the external charge is not enclosed, so the net flux should be zero, yet it proceeds to calculate a non‑zero flux using the external charge and then arbitrarily reduces it to 10^-3 Nm²/C without justification. This does not correctly support the marked answer, violates Gauss's law as presented in NCERT, and introduces wrong facts."
+          ]
+        },
+        {
+          "index": 71,
+          "question_preview": "Two point charges +3 µC and –3 µC are fixed 12 cm apart on a straight line. At w",
+          "original_ans": "B",
+          "final_ans": "D",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is B (index 1). Confidence: high. Reasoning: At the midpoint, the field due to the positive charge points away from it (towards the negative charge) and the field due to the negative charge points toward it (also towards the negative charge); both contributions are along the line joining the charges in the same direction, i.e., from positive to negative."
+          ]
+        },
+        {
+          "index": 72,
+          "question_preview": "Two identical point charges +Q are fixed at points A(-a,0) and B(+a,0) on the x‑",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is A (index 0). Confidence: high. Reasoning: For a positive point charge, the electric field lines radiate outward; thus at a point on the +x‑axis the field points away from the charge, i.e., along the +x direction."
+          ]
+        },
+        {
+          "index": 73,
+          "question_preview": "Two point charges +Q and –2Q are placed 30 cm apart on a straight line. A point ",
+          "original_ans": "C",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is C (index 2). Confidence: high. Reasoning: At the midpoint, the field due to the positive charge points away from it, and the field due to the negative charge points toward it; both point in the same direction—from the positive charge toward the negative charge—so the net field is directed towards the negative charge."
+          ]
+        },
+        {
+          "index": 74,
+          "question_preview": "A point charge of 4 μC is placed at the center of a cube. What is the total elec",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 75,
+          "question_preview": "Two point charges +Q and –2Q are placed 0.50 m apart on a straight line. A point",
+          "original_ans": "C",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is A (index 0), stored answer is C (index 2). Confidence: high. Reasoning: According to Coulomb's law (NCERT), opposite signed charges attract each other with a force proportional to the product of their magnitudes and inversely proportional to the square of the separation; thus the force is always attractive and follows an inverse‑square dependence."
+          ]
+        },
+        {
+          "index": 76,
+          "question_preview": "What is the nature of the force between two point charges that are at rest and a",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 77,
+          "question_preview": "What is the nature of the force between two point charges that are both positive",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 78,
+          "question_preview": "A uniform electric field of magnitude \\(E_0\\) is directed along the positive x‑a",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"dielectric\" belongs to \"Electrostatic Potential and Capacitance\", not \"Electric Charges and Fields\""
+          ]
+        },
+        {
+          "index": 79,
+          "question_preview": "A point charge of 2 microcoulombs is placed at a distance of 5 cm from an infini",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation contains several factual errors: it mixes unrelated formulas (E = σ/2ε₀ for an infinite charged plane), incorrectly applies the image charge concept (the field at the plane due to a point charge is not kq/(2r²)), and miscalculates the numeric value (the given substitution yields 3.6×10⁶ N/C, not 9×10⁶ N/C). Hence it does not correctly support the answer and contradicts NCERT physics concepts."
+          ]
+        },
+        {
+          "index": 80,
+          "question_preview": "A point charge of 5 μC is placed at the origin. What is the magnitude of the ele",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation contains a numerical error: using E = kq/r^2 with k = 9×10^9 N·m²/C², q = 5×10⁻⁶ C and r = 4 m gives E = 2.81×10³ N/C, not 1.125×10⁶ N/C. The computed value corresponds to r = 0.2 m, so both the answer and the explanation are factually incorrect according to NCERT Class 12 physics."
+          ]
+        },
+        {
+          "index": 81,
+          "question_preview": "A dipole consists of two charges of equal magnitude but opposite sign separated ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is not consistent with the answer. It applies the dipole approximation formula E = (1/4πϵ₀)(2p/r³) without checking the validity condition (r >> separation), yet the point is only 0.1 m from the centre while the charges are 0.2 m apart, so the approximation is invalid. No charge magnitude is given, so the numerical value 10⁶ N/C cannot be derived. The direction reasoning is also confused – the dipole moment points from negative to positive, but the explanation claims the field is to the left without specifying the geometry. Hence the explanation does not correctly support the marked answer and contains factual inaccuracies relative to NCERT content."
+          ]
+        },
+        {
+          "index": 82,
+          "question_preview": "A point charge of 2 μC is placed at the origin. What is the magnitude of the ele",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation contains multiple factual and arithmetic errors. It incorrectly calculates the electric field (the correct value is 7.2 × 10^4 N/C, not 2.88 × 10^5 N/C) and then unjustifiably selects 8 × 10^5 N/C as the closest option. The explanation does not correctly support the marked answer and contradicts NCERT physics formulas."
+          ]
+        },
+        {
+          "index": 83,
+          "question_preview": "Two point charges of 4 microcoulomb and -6 microcoulomb are placed at a distance",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation contains incorrect numerical calculations for the electric field magnitudes (it omits the factor of 10^3, giving 36 N/C and 54 N/C instead of the correct 3.6×10^4 N/C and 5.4×10^4 N/C). While the qualitative reasoning about direction is correct, the factual inaccuracy makes the explanation invalid per NCERT standards."
+          ]
+        },
+        {
+          "index": 84,
+          "question_preview": "Two charges, +3 μC and -2 μC, are placed 5 m apart. What is the electric field a",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is C (index 2), stored answer is A (index 0). Confidence: high. Reasoning: E = kq/r²; at midpoint each charge is 2.5 m away. E₁=9×10⁹·3×10⁻⁶/2.5²≈4.3×10³ N/C away from +3 µC, E₂≈2.9×10³ N/C towards –2 µC. Net = 4.3–2.9≈1.4×10³ N/C towards the –2 µC charge, matching option C."
+          ]
+        },
+        {
+          "index": 85,
+          "question_preview": "A point charge of 2 μC is placed at a distance of 5 cm from a conducting sphere ",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation incorrectly states that the induced charge on the near side of an isolated conducting sphere equals the external charge in magnitude and opposite in sign. In reality, for an isolated neutral sphere the induced charges on the near and far sides are equal and opposite but their magnitude is less than the external charge; only a grounded sphere would acquire a total induced charge equal to -2 μC. Hence the explanation does not correctly support the answer and contains factual errors per NCERT Class 12 Physics."
           ]
         }
       ]
