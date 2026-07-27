@@ -32,7 +32,7 @@ const RAW_KEYS = [
 ].filter(Boolean);
 
 if (RAW_KEYS.length === 0) {
-  throw new Error("No Groq keys found. Add VITE_GROQ_KEY_1…VITE_GROQ_KEY_5 to .env");
+  console.warn("⚠️ No Groq keys found in environment. Groq fallback will be disabled.");
 }
 
 // Key state objects
@@ -85,6 +85,9 @@ export function getAvailableKey() {
  */
 export function waitForAvailableKey() {
   return new Promise((resolve, reject) => {
+    if (keyStates.length === 0) {
+      return reject(new Error("Key pool is empty — no Groq keys configured"));
+    }
     const deadline = Date.now() + WAIT_TIMEOUT_MS;
 
     const poll = () => {
