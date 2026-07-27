@@ -3,7 +3,7 @@
   "completed_chapters": [],
   "in_progress": {
     "chapterKey": "12||Physics||Electric Charges and Fields",
-    "last_index": 86,
+    "last_index": 90,
     "auditedQuestions": [
       {
         "question": "A point charge of 2 microcoulomb is placed at the center of a cube. What is the total electric flux through all the six faces of the cube?",
@@ -1166,6 +1166,48 @@
         "difficulty": "Medium",
         "topic": "Conductors and Induced Charges",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "Which of the following is a property of conductors",
+        "options": [
+          "They allow charges to accumulate on their surface",
+          "They do not allow charges to accumulate on their surface",
+          "They are insulators",
+          "They are semiconductors"
+        ],
+        "correct_answer": 0,
+        "explanation": "According to the NCERT textbook, conductors are materials that allow electrons to flow freely within them, and when a conductor is placed in an electric field, the free electrons move to the surface, resulting in the accumulation of charges on the surface. This property is a direct consequence of the mobility of free electrons in conductors, as explained in the chapter on Electric Charges and Fields. The other options are incorrect because conductors do not allow charges to accumulate within their interior, but rather the charges reside on the surface, and this distinction is crucial in understanding the behavior of conductors in electric fields. The NCERT textbook emphasizes that in electrostatic equilibrium, the electric field inside a conductor is zero, which further supports the fact that charges accumulate on the surface of conductors.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the force between two like charges",
+        "options": [
+          "Attractive",
+          "Repulsive",
+          "Zero",
+          "Dependent on the medium"
+        ],
+        "correct_answer": 1,
+        "explanation": "Like charges repel each other, while unlike charges attract each other, according to Coulomb's law of electrostatics",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the electric field due to a point charge at a distance r",
+        "options": [
+          "Directly proportional to r",
+          "Inversely proportional to r",
+          "Inversely proportional to r squared",
+          "Directly proportional to r squared"
+        ],
+        "correct_answer": 2,
+        "explanation": "The electric field due to a point charge is inversely proportional to the square of the distance from the charge, as per Coulomb's law",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -1173,7 +1215,7 @@
       "subject": "Physics",
       "chapter": "Electric Charges and Fields",
       "total": 165,
-      "passed": 17,
+      "passed": 20,
       "failed_p1": 8,
       "failed_p2": 21,
       "explanation_fixed": 38,
@@ -2059,6 +2101,33 @@
           "issues": [
             "Explanation issue: The explanation incorrectly states that the induced charge on the near side of an isolated conducting sphere equals the external charge in magnitude and opposite in sign. In reality, for an isolated neutral sphere the induced charges on the near and far sides are equal and opposite but their magnitude is less than the external charge; only a grounded sphere would acquire a total induced charge equal to -2 μC. Hence the explanation does not correctly support the answer and contains factual errors per NCERT Class 12 Physics."
           ]
+        },
+        {
+          "index": 88,
+          "question_preview": "Which of the following is a property of conductors",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 89,
+          "question_preview": "What is the force between two like charges",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 90,
+          "question_preview": "What is the electric field due to a point charge at a distance r",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
         }
       ]
     }
