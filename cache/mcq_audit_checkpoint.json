@@ -3,7 +3,7 @@
   "completed_chapters": [],
   "in_progress": {
     "chapterKey": "12||Physics||Electric Charges and Fields",
-    "last_index": 90,
+    "last_index": 92,
     "auditedQuestions": [
       {
         "question": "A point charge of 2 microcoulomb is placed at the center of a cube. What is the total electric flux through all the six faces of the cube?",
@@ -1208,6 +1208,20 @@
         "difficulty": "Medium",
         "topic": "Unknown",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "Which of the following is an example of a polarized material",
+        "options": [
+          "Conductor",
+          "Insulator",
+          "Electret",
+          "Semiconductor"
+        ],
+        "correct_answer": 2,
+        "explanation": "An electret is a material that has a permanent electric dipole moment, making it a polarized material, similar to a magnet",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -1215,7 +1229,7 @@
       "subject": "Physics",
       "chapter": "Electric Charges and Fields",
       "total": 165,
-      "passed": 20,
+      "passed": 21,
       "failed_p1": 8,
       "failed_p2": 21,
       "explanation_fixed": 38,
@@ -2123,6 +2137,15 @@
         {
           "index": 90,
           "question_preview": "What is the electric field due to a point charge at a distance r",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 92,
+          "question_preview": "Which of the following is an example of a polarized material",
           "original_ans": "C",
           "final_ans": "C",
           "regenerated": false,
