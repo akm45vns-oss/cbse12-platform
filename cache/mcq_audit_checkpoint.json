@@ -3,7 +3,7 @@
   "completed_chapters": [],
   "in_progress": {
     "chapterKey": "12||Physics||Electric Charges and Fields",
-    "last_index": 93,
+    "last_index": 87,
     "auditedQuestions": [
       {
         "question": "A point charge of 2 microcoulomb is placed at the center of a cube. What is the total electric flux through all the six faces of the cube?",
@@ -1168,57 +1168,15 @@
         "learning_objective": "Unknown"
       },
       {
-        "question": "Which of the following is a property of conductors",
+        "question": "What is the SI unit of electric charge",
         "options": [
-          "They allow charges to accumulate on their surface",
-          "They do not allow charges to accumulate on their surface",
-          "They are insulators",
-          "They are semiconductors"
+          "Coulomb",
+          "Ampere",
+          "Volt",
+          "Ohm"
         ],
         "correct_answer": 0,
-        "explanation": "According to the NCERT textbook, conductors are materials that allow electrons to flow freely within them, and when a conductor is placed in an electric field, the free electrons move to the surface, resulting in the accumulation of charges on the surface. This property is a direct consequence of the mobility of free electrons in conductors, as explained in the chapter on Electric Charges and Fields. The other options are incorrect because conductors do not allow charges to accumulate within their interior, but rather the charges reside on the surface, and this distinction is crucial in understanding the behavior of conductors in electric fields. The NCERT textbook emphasizes that in electrostatic equilibrium, the electric field inside a conductor is zero, which further supports the fact that charges accumulate on the surface of conductors.",
-        "difficulty": "Medium",
-        "topic": "Unknown",
-        "learning_objective": "Unknown"
-      },
-      {
-        "question": "What is the force between two like charges",
-        "options": [
-          "Attractive",
-          "Repulsive",
-          "Zero",
-          "Dependent on the medium"
-        ],
-        "correct_answer": 1,
-        "explanation": "Like charges repel each other, while unlike charges attract each other, according to Coulomb's law of electrostatics",
-        "difficulty": "Medium",
-        "topic": "Unknown",
-        "learning_objective": "Unknown"
-      },
-      {
-        "question": "What is the electric field due to a point charge at a distance r",
-        "options": [
-          "Directly proportional to r",
-          "Inversely proportional to r",
-          "Inversely proportional to r squared",
-          "Directly proportional to r squared"
-        ],
-        "correct_answer": 2,
-        "explanation": "The electric field due to a point charge is inversely proportional to the square of the distance from the charge, as per Coulomb's law",
-        "difficulty": "Medium",
-        "topic": "Unknown",
-        "learning_objective": "Unknown"
-      },
-      {
-        "question": "Which of the following is an example of a polarized material",
-        "options": [
-          "Conductor",
-          "Insulator",
-          "Electret",
-          "Semiconductor"
-        ],
-        "correct_answer": 2,
-        "explanation": "An electret is a material that has a permanent electric dipole moment, making it a polarized material, similar to a magnet",
+        "explanation": "The SI unit of electric charge is Coulomb, as stated in the NCERT textbook, because it is defined as the quantity of charge that flows through a circuit in one second when a current of one ampere is flowing. This definition is based on the fundamental principles of electricity, making Coulomb the correct and standardized unit of measurement. The other options are incorrect as they do not align with the definition provided in the NCERT textbook, which specifically identifies Coulomb as the unit of electric charge. The NCERT textbook does not provide alternative units for electric charge, reaffirming Coulomb as the sole correct answer.",
         "difficulty": "Medium",
         "topic": "Unknown",
         "learning_objective": "Unknown"
@@ -1229,7 +1187,7 @@
       "subject": "Physics",
       "chapter": "Electric Charges and Fields",
       "total": 165,
-      "passed": 21,
+      "passed": 18,
       "failed_p1": 8,
       "failed_p2": 21,
       "explanation_fixed": 38,
@@ -2117,37 +2075,10 @@
           ]
         },
         {
-          "index": 88,
-          "question_preview": "Which of the following is a property of conductors",
+          "index": 87,
+          "question_preview": "What is the SI unit of electric charge",
           "original_ans": "A",
           "final_ans": "A",
-          "regenerated": false,
-          "exp_fixed": false,
-          "issues": []
-        },
-        {
-          "index": 89,
-          "question_preview": "What is the force between two like charges",
-          "original_ans": "B",
-          "final_ans": "B",
-          "regenerated": false,
-          "exp_fixed": false,
-          "issues": []
-        },
-        {
-          "index": 90,
-          "question_preview": "What is the electric field due to a point charge at a distance r",
-          "original_ans": "C",
-          "final_ans": "C",
-          "regenerated": false,
-          "exp_fixed": false,
-          "issues": []
-        },
-        {
-          "index": 92,
-          "question_preview": "Which of the following is an example of a polarized material",
-          "original_ans": "C",
-          "final_ans": "C",
           "regenerated": false,
           "exp_fixed": false,
           "issues": []
