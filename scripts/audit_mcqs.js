@@ -170,23 +170,27 @@ async function callGroq(prompt, model = VALIDATE_MODEL, maxRetries = 3) {
   throw new Error("All Groq/Krutrim retries exhausted");
 }
 
-// ─── callAi: resilient wrapper with consecutive-error tracking ───────────────
+// ─── callAi: resilient wrapper ────────────────────────────────────────
+// Returns null on transient glitch (question will be marked UNCHECKED and retried).
+// Throws API_BROKEN only on real auth/quota failures.
 async function callAi(prompt, model = VALIDATE_MODEL) {
   try {
     const text = await callGroq(prompt, model);
-    consecutiveApiErrors = 0; // success — reset counter
+    consecutiveApiErrors = 0;
     return text;
   } catch (err) {
+    const msg = err.message || "";
+    const isFatal = msg.includes("401") || msg.includes("403") || msg.includes("insufficient_quota");
+    if (isFatal) throw new Error(`API_BROKEN: ${msg}`);
+    
     consecutiveApiErrors++;
-    process.stdout.write(`[API GLITCH ${consecutiveApiErrors}/10] `);
-    if (consecutiveApiErrors >= 10) {
-      throw new Error(`API_BROKEN: 10 consecutive API failures (${err.message})`);
-    }
-    // Add a cool-down so the API has time to recover
-    await sleep(5000 * Math.min(consecutiveApiErrors, 3));
-    throw err;
+    const waitMs = Math.min(3000 * consecutiveApiErrors, 15000);
+    process.stdout.write(`[glitch#${consecutiveApiErrors}] `);
+    await sleep(waitMs);
+    return null;
   }
 }
+
 
 // ─── Paths ──────────────────────────────────────────────────────────────────
 const CACHE_DIR       = path.join(ROOT, "cache");
@@ -226,10 +230,10 @@ async function buildChapterList(classesToAudit) {
   // Priority requested: Class 12 Physics > Biology > Chemistry > English > History > Others > Class 11
   const subjectPriority = {
     "Physics": 1,
-    "Biology": 2,
-    "Chemistry": 3,
-    "English": 4,
-    "History": 5
+    "Chemistry": 2,
+    "Biology": 3,
+    "History": 4,
+    "English": 5,
   };
 
   tasks.sort((a, b) => {
@@ -445,19 +449,8 @@ STRICT INSTRUCTIONS:
   "reasoning": "Brief 1-2 sentence NCERT-based justification"
 }`;
 
-  let responseText;
-  try {
-    responseText = await callAi(prompt, VALIDATE_MODEL);
-  } catch (err) {
-    if (err.message.startsWith("API_BROKEN")) throw err;
-    return {
-      pass: true,
-      aiAnswer: null,
-      confidence: "unknown",
-      aiExplanation: `Transient API glitch: ${err.message}`,
-      issues: [],
-    };
-  }
+  const responseText = await callAi(prompt, VALIDATE_MODEL);
+  if (!responseText) return null; // signal: API was unavailable, retry later
 
   // Parse AI response
   let parsed;
@@ -503,11 +496,6 @@ STRICT INSTRUCTIONS:
   };
 }
 
-// ─── Explanation Validator ───────────────────────────────────────────────────
-/**
- * Checks that the explanation supports the stored answer and doesn't contradict NCERT.
- * Only runs if Pass 1 and Pass 2 both passed.
- */
 async function validateExplanation(mcq, meta) {
   const { q, opts, ans, exp } = mcq;
   const { classLevel, subject, chapter } = meta;
@@ -532,12 +520,8 @@ Return ONLY valid JSON:
   "issue": "Describe the problem if invalid, else empty string"
 }`;
 
-  let responseText;
-  try {
-    responseText = await callGroq(prompt, VALIDATE_MODEL);
-  } catch (err) {
-    throw new Error(`API_BROKEN: ${err.message}`);
-  }
+  const responseText = await callAi(prompt, VALIDATE_MODEL);
+  if (!responseText) return null; // API unavailable, retry question
 
   try {
     const cleaned = responseText.replace(/```json\n?|```\n?/g, "").trim();
@@ -650,15 +634,11 @@ Write a clear, accurate explanation (2-4 sentences) that:
 
 Return ONLY the explanation text. No JSON. No labels.`;
 
-  try {
-    const text = await callAi(prompt, VALIDATE_MODEL);
-    return text.trim();
-  } catch (err) {
-    if (err.message.startsWith("API_BROKEN")) throw err;
-    console.warn(`    ⚠️  Explanation fix API call failed: ${err.message}. Keeping original.`);
-    return mcq.exp;
-  }
+  const text = await callAi(prompt, VALIDATE_MODEL);
+  if (!text) return null; // signal: API unavailable
+  return text.trim();
 }
+
 
 // ─── Duplicate detector ──────────────────────────────────────────────────────
 function removeDuplicates(questions) {
@@ -747,8 +727,8 @@ async function processChapter(task, isDryRun, cp, startTimeMs, RUNTIME_LIMIT_MS)
 
   if (cp && cp.in_progress && cp.in_progress.chapterKey === chapterKey(task)) {
     startIndex = cp.in_progress.last_index + 1;
-    auditedQuestions.push(...cp.in_progress.auditedQuestions);
-    Object.assign(report, cp.in_progress.report);
+    auditedQuestions.push(...(cp.in_progress.auditedQuestions || []));
+    Object.assign(report, cp.in_progress.report || {});
     report.error = null;
     console.log(`  🔄 Resuming chapter from question ${startIndex + 1}...`);
     cp.in_progress = null;
@@ -793,75 +773,118 @@ async function processChapter(task, isDryRun, cp, startTimeMs, RUNTIME_LIMIT_MS)
     let wasRegenerated = false;
     let wasExpFixed = false;
     const allIssues = [];
+    let validated = false;
+    let retryAttempts = 0;
 
-    try {
-      // ── PASS 1: Structural validation ──
-      const p1Result = pass1Validate(currentMcq, meta);
-      if (!p1Result.pass) {
-        process.stdout.write(`[P1 FAIL] `);
-        report.failed_p1++;
-        allIssues.push(...p1Result.issues);
-
-        if (!isDryRun) {
-          process.stdout.write(`[REGEN] `);
-          const replacement = await regenerateMCQ(currentMcq, meta, p1Result.issues);
-          if (replacement) {
-            currentMcq = replacement;
-            wasRegenerated = true;
-            report.regenerated++;
-          }
-        }
-      } else {
-        // ── PASS 2: Independent AI validation ──
-        const p2Result = await pass2Validate(currentMcq, meta);
-        if (!p2Result.pass) {
-          process.stdout.write(`[P2 FAIL:${["A","B","C","D"][p2Result.aiAnswer] || "?"}≠${["A","B","C","D"][currentMcq.ans]}] `);
-          report.failed_p2++;
-          allIssues.push(...p2Result.issues);
+    while (!validated) {
+      retryAttempts++;
+      try {
+        // ── PASS 1: Structural validation ──
+        const p1Result = pass1Validate(currentMcq, meta);
+        if (!p1Result.pass) {
+          process.stdout.write(`[P1 FAIL] `);
+          report.failed_p1++;
+          allIssues.push(...p1Result.issues);
 
           if (!isDryRun) {
             process.stdout.write(`[REGEN] `);
-            const replacement = await regenerateMCQ(currentMcq, meta, p2Result.issues);
+            const replacement = await regenerateMCQ(currentMcq, meta, p1Result.issues);
             if (replacement) {
               currentMcq = replacement;
               wasRegenerated = true;
               report.regenerated++;
-            }
-          }
-        } else {
-          // ── Explanation validation (only if both passes pass) ──
-          const expResult = await validateExplanation(currentMcq, meta);
-          if (!expResult.valid) {
-            process.stdout.write(`[EXP FIX] `);
-            allIssues.push(`Explanation issue: ${expResult.issue}`);
-            report.explanation_fixed++;
-
-            if (!isDryRun) {
-              const fixedExp = await regenerateExplanation(currentMcq, meta);
-              currentMcq = { ...currentMcq, exp: fixedExp };
-              wasExpFixed = true;
+              validated = true;
+            } else {
+              process.stdout.write(`[RETRY REGEN] `);
+              await sleep(3000 * Math.min(retryAttempts, 5));
+              continue;
             }
           } else {
-            process.stdout.write(`[✅] `);
-            report.passed++;
+            validated = true;
+          }
+        } else {
+          // ── PASS 2: Independent AI validation ──
+          const p2Result = await pass2Validate(currentMcq, meta);
+          if (p2Result === null) {
+            // API returned null — transient glitch. Retry this question!
+            process.stdout.write(`[RETRY P2] `);
+            await sleep(3000 * Math.min(retryAttempts, 5));
+            continue;
+          }
+
+          if (!p2Result.pass) {
+            process.stdout.write(`[P2 FAIL:${["A","B","C","D"][p2Result.aiAnswer] || "?"}≠${["A","B","C","D"][currentMcq.ans]}] `);
+            report.failed_p2++;
+            allIssues.push(...p2Result.issues);
+
+            if (!isDryRun) {
+              process.stdout.write(`[REGEN] `);
+              const replacement = await regenerateMCQ(currentMcq, meta, p2Result.issues);
+              if (replacement) {
+                currentMcq = replacement;
+                wasRegenerated = true;
+                report.regenerated++;
+                validated = true;
+              } else {
+                process.stdout.write(`[RETRY REGEN] `);
+                await sleep(3000 * Math.min(retryAttempts, 5));
+                continue;
+              }
+            } else {
+              validated = true;
+            }
+          } else {
+            // ── Explanation validation (only if both passes pass) ──
+            const expResult = await validateExplanation(currentMcq, meta);
+            if (expResult === null) {
+              process.stdout.write(`[RETRY EXP] `);
+              await sleep(3000 * Math.min(retryAttempts, 5));
+              continue;
+            }
+
+            if (!expResult.valid) {
+              process.stdout.write(`[EXP FIX] `);
+              allIssues.push(`Explanation issue: ${expResult.issue}`);
+              report.explanation_fixed++;
+
+              if (!isDryRun) {
+                const fixedExp = await regenerateExplanation(currentMcq, meta);
+                if (fixedExp) {
+                  currentMcq = { ...currentMcq, exp: fixedExp };
+                  wasExpFixed = true;
+                  validated = true;
+                } else {
+                  process.stdout.write(`[RETRY EXP FIX] `);
+                  await sleep(3000 * Math.min(retryAttempts, 5));
+                  continue;
+                }
+              } else {
+                validated = true;
+              }
+            } else {
+              process.stdout.write(`[✅] `);
+              report.passed++;
+              validated = true;
+            }
           }
         }
+      } catch (err) {
+        if (err.message && err.message.startsWith("API_BROKEN")) {
+          console.error(`\n🚨 FATAL API ERROR: ${err.message}`);
+          report.error = err.message;
+          cp.in_progress = {
+            chapterKey: chapterKey(task),
+            last_index: Math.max(0, qi - 1),
+            auditedQuestions,
+            report
+          };
+          saveCheckpoint(cp);
+          console.log(`✅ Progress saved. Exiting gracefully due to API failure.`);
+          process.exit(1);
+        }
+        console.warn(`\n  ⚠️ Question ${qi + 1} glitch: ${err.message}. Retrying...`);
+        await sleep(3000);
       }
-    } catch (err) {
-      if (err.message.startsWith("API_BROKEN")) {
-        console.error(`\n🚨 FATAL API ERROR: ${err.message}`);
-        report.error = err.message;
-        cp.in_progress = {
-          chapterKey: chapterKey(task),
-          last_index: qi, // save at this index so it can retry
-          auditedQuestions,
-          report
-        };
-        saveCheckpoint(cp);
-        console.log(`✅ Progress saved. Exiting gracefully due to API failure.`);
-        process.exit(1);
-      }
-      throw err; // rethrow other unknown errors
     }
 
     report.questions_detail.push({
@@ -871,7 +894,6 @@ async function processChapter(task, isDryRun, cp, startTimeMs, RUNTIME_LIMIT_MS)
       final_ans: ["A","B","C","D"][currentMcq.ans] || String(currentMcq.ans),
       regenerated: wasRegenerated,
       exp_fixed: wasExpFixed,
-      issues: allIssues,
     });
 
     // Convert normalised MCQ back to DB schema before storing
