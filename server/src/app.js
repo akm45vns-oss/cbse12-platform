@@ -4,6 +4,7 @@ import helmet from 'helmet';
 import { env } from './config/env.js';
 import { errorHandler } from './middlewares/errorHandler.js';
 import authRoutes from './routes/authRoutes.js';
+import auditRoutes from './routes/auditRoutes.js';
 import { globalLimiter } from './middlewares/rateLimiter.js';
 
 const app = express();
@@ -29,6 +30,7 @@ app.get('/health', (req, res) => {
 
 // API Routes
 app.use('/api/v1/auth', authRoutes);
+app.use('/api/v1/audit', auditRoutes);
 
 // Global Error Handler Middleware
 app.use(errorHandler);

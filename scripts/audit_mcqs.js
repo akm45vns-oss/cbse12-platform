@@ -69,10 +69,9 @@ const VALIDATE_MODEL   = "llama-3.3-70b-versatile";
 const REGENERATE_MODEL = "llama-3.3-70b-versatile";
 
 const KRUTRIM_API_KEY = process.env.KRUTRIM_API_KEY || process.env.VITE_KRUTRIM_API_KEY;
-const KRUTRIM_API_URL = "https://cloud.krutrim.com/v1/chat/completions";
+const KRUTRIM_API_URL = "https://cloud.olakrutrim.com/v1/chat/completions";
 const KRUTRIM_MODEL   = process.env.KRUTRIM_MODEL || "gpt-oss-120b";
-
-async function callGroq(prompt, model = VALIDATE_MODEL, maxRetries = 15) {
+async function callGroq(prompt, model = VALIDATE_MODEL, maxRetries = 3) {
   // ── Option: Krutrim Cloud API (Paid / Fast / UPI Supported) ──
   if (KRUTRIM_API_KEY) {
     for (let attempt = 0; attempt < maxRetries; attempt++) {
@@ -89,6 +88,7 @@ async function callGroq(prompt, model = VALIDATE_MODEL, maxRetries = 15) {
             temperature: 0.2,
             messages: [{ role: "user", content: prompt }],
           }),
+          signal: AbortSignal.timeout(45000)
         });
 
         if (!res.ok) {
@@ -131,6 +131,7 @@ async function callGroq(prompt, model = VALIDATE_MODEL, maxRetries = 15) {
           temperature: 0.2,
           messages: [{ role: "user", content: prompt }],
         }),
+        signal: AbortSignal.timeout(15000)
       });
 
       if (res.status === 429 || res.status === 401) {
@@ -427,14 +428,7 @@ STRICT INSTRUCTIONS:
   try {
     responseText = await callGroq(prompt, VALIDATE_MODEL);
   } catch (err) {
-    // If AI call fails, give benefit of doubt — don't fail the question
-    return {
-      pass: true,
-      aiAnswer: null,
-      confidence: "unknown",
-      aiExplanation: `AI unavailable: ${err.message}`,
-      issues: [],
-    };
+    throw new Error(`API_BROKEN: ${err.message}`);
   }
 
   // Parse AI response
@@ -513,8 +507,8 @@ Return ONLY valid JSON:
   let responseText;
   try {
     responseText = await callGroq(prompt, VALIDATE_MODEL);
-  } catch {
-    return { valid: true, issue: "" }; // benefit of doubt on API failure
+  } catch (err) {
+    throw new Error(`API_BROKEN: ${err.message}`);
   }
 
   try {
@@ -630,8 +624,8 @@ Return ONLY the explanation text. No JSON. No labels.`;
   try {
     const text = await callGroq(prompt, VALIDATE_MODEL, 3);
     return text.trim();
-  } catch {
-    return mcq.exp; // keep original if it fails
+  } catch (err) {
+    throw new Error(`API_BROKEN: ${err.message}`);
   }
 }
 
@@ -768,33 +762,17 @@ async function processChapter(task, isDryRun, cp, startTimeMs, RUNTIME_LIMIT_MS)
     let wasExpFixed = false;
     const allIssues = [];
 
-    // ── PASS 1: Structural validation ──
-    const p1Result = pass1Validate(currentMcq, meta);
-    if (!p1Result.pass) {
-      process.stdout.write(`[P1 FAIL] `);
-      report.failed_p1++;
-      allIssues.push(...p1Result.issues);
-
-      if (!isDryRun) {
-        process.stdout.write(`[REGEN] `);
-        const replacement = await regenerateMCQ(currentMcq, meta, p1Result.issues);
-        if (replacement) {
-          currentMcq = replacement;
-          wasRegenerated = true;
-          report.regenerated++;
-        }
-      }
-    } else {
-      // ── PASS 2: Independent AI validation ──
-      const p2Result = await pass2Validate(currentMcq, meta);
-      if (!p2Result.pass) {
-        process.stdout.write(`[P2 FAIL:${["A","B","C","D"][p2Result.aiAnswer] || "?"}≠${["A","B","C","D"][currentMcq.ans]}] `);
-        report.failed_p2++;
-        allIssues.push(...p2Result.issues);
+    try {
+      // ── PASS 1: Structural validation ──
+      const p1Result = pass1Validate(currentMcq, meta);
+      if (!p1Result.pass) {
+        process.stdout.write(`[P1 FAIL] `);
+        report.failed_p1++;
+        allIssues.push(...p1Result.issues);
 
         if (!isDryRun) {
           process.stdout.write(`[REGEN] `);
-          const replacement = await regenerateMCQ(currentMcq, meta, p2Result.issues);
+          const replacement = await regenerateMCQ(currentMcq, meta, p1Result.issues);
           if (replacement) {
             currentMcq = replacement;
             wasRegenerated = true;
@@ -802,23 +780,56 @@ async function processChapter(task, isDryRun, cp, startTimeMs, RUNTIME_LIMIT_MS)
           }
         }
       } else {
-        // ── Explanation validation (only if both passes pass) ──
-        const expResult = await validateExplanation(currentMcq, meta);
-        if (!expResult.valid) {
-          process.stdout.write(`[EXP FIX] `);
-          allIssues.push(`Explanation issue: ${expResult.issue}`);
-          report.explanation_fixed++;
+        // ── PASS 2: Independent AI validation ──
+        const p2Result = await pass2Validate(currentMcq, meta);
+        if (!p2Result.pass) {
+          process.stdout.write(`[P2 FAIL:${["A","B","C","D"][p2Result.aiAnswer] || "?"}≠${["A","B","C","D"][currentMcq.ans]}] `);
+          report.failed_p2++;
+          allIssues.push(...p2Result.issues);
 
           if (!isDryRun) {
-            const fixedExp = await regenerateExplanation(currentMcq, meta);
-            currentMcq = { ...currentMcq, exp: fixedExp };
-            wasExpFixed = true;
+            process.stdout.write(`[REGEN] `);
+            const replacement = await regenerateMCQ(currentMcq, meta, p2Result.issues);
+            if (replacement) {
+              currentMcq = replacement;
+              wasRegenerated = true;
+              report.regenerated++;
+            }
           }
         } else {
-          process.stdout.write(`[✅] `);
-          report.passed++;
+          // ── Explanation validation (only if both passes pass) ──
+          const expResult = await validateExplanation(currentMcq, meta);
+          if (!expResult.valid) {
+            process.stdout.write(`[EXP FIX] `);
+            allIssues.push(`Explanation issue: ${expResult.issue}`);
+            report.explanation_fixed++;
+
+            if (!isDryRun) {
+              const fixedExp = await regenerateExplanation(currentMcq, meta);
+              currentMcq = { ...currentMcq, exp: fixedExp };
+              wasExpFixed = true;
+            }
+          } else {
+            process.stdout.write(`[✅] `);
+            report.passed++;
+          }
         }
       }
+    } catch (err) {
+      if (err.message.startsWith("API_BROKEN")) {
+        console.error(`\n🚨 FATAL API ERROR: ${err.message}`);
+        report.error = err.message;
+        cp.in_progress = {
+          chapterKey: chapterKey(task),
+          last_index: qi, // save at this index so it can retry
+          auditedQuestions,
+          report
+        };
+        saveCheckpoint(cp);
+        console.log(`✅ Progress saved. Exiting gracefully due to API failure.`);
+        process.exit(1);
+      }
+      throw err; // rethrow other unknown errors
     }
 
     report.questions_detail.push({
@@ -841,6 +852,16 @@ async function processChapter(task, isDryRun, cp, startTimeMs, RUNTIME_LIMIT_MS)
       topic:             currentMcq.topic             || raw.topic             || "",
       learning_objective:currentMcq.learning_objective|| raw.learning_objective|| "",
     });
+
+    // ── LIVE DASHBOARD FEED ──
+    // Save checkpoint after every question so the dashboard updates in real-time
+    cp.in_progress = {
+      chapterKey: chapterKey(task),
+      last_index: qi,
+      auditedQuestions,
+      report
+    };
+    saveCheckpoint(cp);
   }
 
   process.stdout.write("\n");

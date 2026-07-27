@@ -19,6 +19,7 @@ const ALLOWED_VIEWS = new Set([
   "learn",
   "practice",
   "revision",
+  "audit-dashboard"
 ]);
 
 // Views that are considered "root-level" — back from these triggers exit confirm

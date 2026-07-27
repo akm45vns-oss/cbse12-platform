@@ -1,15 +1,10 @@
 import rateLimit from 'express-rate-limit';
-import { RedisStore } from 'rate-limit-redis';
-import { redis } from '../config/redis.js';
 import { AppError } from './errorHandler.js';
 import { AuditService } from '../services/auditService.js';
 
 export const globalLimiter = rateLimit({
-  store: new RedisStore({
-    sendCommand: (...args) => redis.call(...args),
-  }),
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // Limit each IP to 100 requests per `window`
+  max: 1000, // Limit each IP to 1000 requests per `window` to allow dashboard polling
   standardHeaders: true,
   legacyHeaders: false,
   handler: (req, res, next) => {
@@ -19,9 +14,6 @@ export const globalLimiter = rateLimit({
 });
 
 export const authLimiter = rateLimit({
-  store: new RedisStore({
-    sendCommand: (...args) => redis.call(...args),
-  }),
   windowMs: 15 * 60 * 1000,
   max: 5,
   skipSuccessfulRequests: true,

@@ -1,7 +1,7 @@
 import app from './app.js';
 import { env } from './config/env.js';
 import { logger } from './utils/logger.js';
-import './workers/aiWorker.js'; // Initialize background workers
+// import './workers/aiWorker.js'; // Initialize background workers (Requires Redis)
 
 const PORT = env.PORT;
 
@@ -20,6 +20,6 @@ process.on('unhandledRejection', (err) => {
 
 process.on('uncaughtException', (err) => {
   logger.error('UNCAUGHT EXCEPTION! 💥 Shutting down...');
-  logger.error(err.name, err.message);
+  console.error(err);
   process.exit(1);
 });

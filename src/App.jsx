@@ -22,6 +22,7 @@ const ProgressView = lazy(() => import("./components/views/ProgressView").then(m
 const StatsView = lazy(() => import("./components/views/StatsView").then(m => ({ default: m.StatsView })));
 const ProfileView = lazy(() => import("./components/views/ProfileView").then(m => ({ default: m.ProfileView })));
 const PipelineDashboardView = lazy(() => import("./components/views/PipelineDashboardView").then(m => ({ default: m.PipelineDashboardView })));
+const McqAuditDashboardView = lazy(() => import("./components/views/McqAuditDashboardView").then(m => ({ default: m.McqAuditDashboardView })));
 const LearnView = lazy(() => import("./components/views/LearnView").then(m => ({ default: m.LearnView })));
 const PracticeView = lazy(() => import("./components/views/PracticeView").then(m => ({ default: m.PracticeView })));
 const RevisionView = lazy(() => import("./components/views/RevisionView").then(m => ({ default: m.RevisionView })));
@@ -1095,6 +1096,12 @@ Format Guidelines:
               progress={progress}
               theme={theme}
             />
+          </Suspense>
+        )}
+
+        {nav.view === "audit-dashboard" && (
+          <Suspense fallback={<LoadingFallback />}>
+            <McqAuditDashboardView />
           </Suspense>
         )}
 

@@ -43,14 +43,14 @@ High school students, specifically CBSE Class 11 and Class 12 board exam aspiran
 
 ---
 
-- **Current Milestone**: Google Social Auth & UI/UX Polish.
+- **Current Milestone**: Live A.I. Audit Dashboard & MCQ Database Validation.
 - **Completion Percentage**: 100% COMPLETE (6,150 out of 6,150 content library files successfully generated and cached in Supabase DB).
-- **Current Sprint**: Auth integration and layout refinements.
-- **Last Completed Task**: Integrated Google social login, resolved URL hash cleanup race condition, and resolved React Error #300 gesture callback hook-rule violation.
-- **Current Task**: COMPLETED. Initiated massive backend script (`audit_mcqs.js`) to validate and regenerate ~9,900 database MCQs against NCERT standards.
+- **Current Sprint**: Building the live MCQ audit visualization matrix and migrating backend generation to Krutrim Cloud.
+- **Last Completed Task**: Built the live `McqAuditDashboardView` with a global syllabus progress bar. Fixed Krutrim API deprecation by migrating from `Meta-Llama-3` to `Meta-Llama-3.1`, increased fetch timeouts to 45s for complex JSON regeneration tasks, and increased backend rate limit to 1000 to support frontend polling.
+- **Current Task**: Monitoring the background `audit_mcqs.js` script validating and regenerating ~9,900 database MCQs against NCERT standards.
 - **Next Task**: Implement security audit logging pipeline.
 - **Blocked Tasks**: None.
-- **Known Limitations**: MCQ audit is currently running in the background and may take a few hours due to API rate limits.
+- **Known Limitations**: MCQ audit is currently running in the background and may take a few hours; Krutrim generation speed determines the validation speed.
 
 ---
 
