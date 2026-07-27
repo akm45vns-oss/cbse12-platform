@@ -3,7 +3,7 @@
   "completed_chapters": [],
   "in_progress": {
     "chapterKey": "12||Physics||Electric Charges and Fields",
-    "last_index": 87,
+    "last_index": 89,
     "auditedQuestions": [
       {
         "question": "A point charge of 2 microcoulomb is placed at the center of a cube. What is the total electric flux through all the six faces of the cube?",
@@ -1180,6 +1180,34 @@
         "difficulty": "Medium",
         "topic": "Unknown",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the force between two like charges",
+        "options": [
+          "Attractive",
+          "Repulsive",
+          "Zero",
+          "Dependent on the medium"
+        ],
+        "correct_answer": 1,
+        "explanation": "Like charges repel each other, while unlike charges attract each other, according to Coulomb's law of electrostatics",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "What is the electric field due to a point charge at a distance r",
+        "options": [
+          "Directly proportional to r",
+          "Inversely proportional to r",
+          "Inversely proportional to r squared",
+          "Directly proportional to r squared"
+        ],
+        "correct_answer": 2,
+        "explanation": "The electric field due to a point charge is inversely proportional to the square of the distance from the charge, as per Coulomb's law",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -1187,13 +1215,13 @@
       "subject": "Physics",
       "chapter": "Electric Charges and Fields",
       "total": 165,
-      "passed": 18,
+      "passed": 20,
       "failed_p1": 8,
       "failed_p2": 21,
       "explanation_fixed": 38,
       "regenerated": 24,
       "duplicates_removed": 75,
-      "error": "API_BROKEN: Empty response from Krutrim",
+      "error": null,
       "questions_detail": [
         {
           "index": 1,
@@ -2082,6 +2110,22 @@
           "regenerated": false,
           "exp_fixed": false,
           "issues": []
+        },
+        {
+          "index": 89,
+          "question_preview": "What is the force between two like charges",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false
+        },
+        {
+          "index": 90,
+          "question_preview": "What is the electric field due to a point charge at a distance r",
+          "original_ans": "C",
+          "final_ans": "C",
+          "regenerated": false,
+          "exp_fixed": false
         }
       ]
     }
