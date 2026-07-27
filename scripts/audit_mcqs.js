@@ -732,6 +732,7 @@ async function processChapter(task, isDryRun, cp, startTimeMs, RUNTIME_LIMIT_MS)
     startIndex = cp.in_progress.last_index + 1;
     auditedQuestions.push(...cp.in_progress.auditedQuestions);
     Object.assign(report, cp.in_progress.report);
+    report.error = null;
     console.log(`  🔄 Resuming chapter from question ${startIndex + 1}...`);
     cp.in_progress = null;
   }
