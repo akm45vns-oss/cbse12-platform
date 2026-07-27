@@ -3,7 +3,7 @@
   "completed_chapters": [],
   "in_progress": {
     "chapterKey": "12||Physics||Electric Charges and Fields",
-    "last_index": 28,
+    "last_index": 39,
     "auditedQuestions": [
       {
         "question": "A point charge of 2 microcoulomb is placed at the center of a cube. What is the total electric flux through all the six faces of the cube?",
@@ -396,6 +396,146 @@
         "difficulty": "Medium",
         "topic": "Gauss's Law",
         "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges +Q and –Q are placed on the x‑axis at positions x = –a and x = +a respectively. What is the magnitude and direction of the net electric field at the origin?",
+        "options": [
+          "E = 2kQ/a² directed along the +x‑axis",
+          "E = 2kQ/a² directed along the –x‑axis",
+          "E = 0 (the fields cancel each other)",
+          "E = kQ/a² directed along the +x‑axis"
+        ],
+        "correct_answer": 0,
+        "explanation": "The electric field due to a positive charge points away from the charge, while that due to a negative charge points towards it. At the origin, the field from +Q (at –a) is kQ/a² in the +x direction. The field from –Q (at +a) also points towards the negative charge, i.e., in the +x direction, and has the same magnitude kQ/a². By the principle of superposition, the net field is the vector sum: E = kQ/a² + kQ/a² = 2kQ/a² along +x. Option A is therefore correct. Option B has the wrong direction. Option C incorrectly assumes the fields cancel; they actually add because both point in the same direction. Option D gives only one contribution, ignoring the second charge.",
+        "difficulty": "Medium",
+        "topic": "Electric field due to point charges",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A dipole is placed in a uniform electric field. What is the net force on the dipole?",
+        "options": [
+          "Zero",
+          "Directed along the axis of the dipole",
+          "Directed perpendicular to the axis of the dipole",
+          "Directed opposite to the electric field"
+        ],
+        "correct_answer": 0,
+        "explanation": "The net force on a dipole in a uniform electric field is zero because the forces on the two charges are equal and opposite.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A thin non‑conducting rod of length 2L carries a uniform linear charge density λ. What is the magnitude of the electric field at a point P which is at a distance L from the centre of the rod, on the perpendicular bisector of the rod?",
+        "options": [
+          "\\(\\dfrac{\\lambda}{2\\pi\\varepsilon_{0}L}\\)",
+          "\\(\\dfrac{\\sqrt{2}\\,\\lambda}{4\\pi\\varepsilon_{0}L}\\)",
+          "\\(\\dfrac{\\lambda}{4\\pi\\varepsilon_{0}L}\\)",
+          "\\(\\dfrac{2\\lambda}{4\\pi\\varepsilon_{0}L}\\)"
+        ],
+        "correct_answer": 1,
+        "explanation": "For a finite line charge, the field at a point on the perpendicular bisector is obtained by integrating the vertical components of the elemental fields. For a rod of length 2L and a point at distance a from its centre, \\(E = \\frac{1}{4\\pi\\varepsilon_{0}}\\frac{2\\lambda L}{a\\sqrt{L^{2}+a^{2}}}\\). Substituting a = L gives \\(E = \\frac{1}{4\\pi\\varepsilon_{0}}\\frac{2\\lambda L}{L\\sqrt{2L^{2}}}=\\frac{\\sqrt{2}\\,\\lambda}{4\\pi\\varepsilon_{0}L}\\). Hence option B is correct. Option A uses 2π instead of 4π, option C omits the factor \\(\\sqrt{2}\\), and option D has an extra factor 2, all common algebraic slip‑ups.",
+        "difficulty": "Medium",
+        "topic": "Electric field due to a uniformly charged rod (continuous charge distribution)",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A point charge +Q is placed at the centre of a cube of side a. Using Gauss’s law, what is the total electric flux through one face of the cube?",
+        "options": [
+          "Q / (6 ε₀)",
+          "Q / (4 ε₀)",
+          "Q / (2 ε₀)",
+          "Q / ε₀"
+        ],
+        "correct_answer": 0,
+        "explanation": "According to Gauss’s law, the net flux through a closed surface equals the enclosed charge divided by ε₀. The cube encloses the charge +Q, so the total flux through the whole cube is Φ_total = Q/ε₀. By symmetry, the flux is equally distributed among the six faces of the cube, giving Φ_face = (Q/ε₀)/6 = Q/(6ε₀). Option A is therefore correct. Option B (Q/4ε₀) would be the flux through a face of a Gaussian surface shaped as a sphere cut into four equal parts, which is not the case here. Option C (Q/2ε₀) and D (Q/ε₀) ignore the equal division of flux among the six faces, a common misconception.",
+        "difficulty": "Medium",
+        "topic": "Gauss's Law",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A charge of +5 μC is placed at a distance of 3 m from a charge of -2 μC. What is the electric field at the point where the charges are placed?",
+        "options": [
+          "10^5 N/C towards the positive charge",
+          "10^5 N/C away from the positive charge",
+          "5 × 10^4 N/C towards the positive charge",
+          "5 × 10^4 N/C away from the positive charge"
+        ],
+        "correct_answer": 0,
+        "explanation": "The electric field produced by a point charge is given by \\(E = k\\,q/r^{2}\\) (NCERT §2.2) and the net field at any point is the vector sum of the fields due to each charge (principle of superposition). At the position of either charge the field is only due to the other charge; substituting \\(k = 9\\times10^{9}\\,\\text{N·m}^{2}\\text{C}^{-2}\\), \\(q = 5\\,\\mu\\text{C}\\) and \\(r = 3\\;\\text{m}\\) gives \\(E = 9\\times10^{9}\\times5\\times10^{-6}/3^{2} \\approx 1.0\\times10^{5}\\,\\text{N",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A dipole is placed in a non-uniform electric field. What is the net force on the dipole?",
+        "options": [
+          "Zero",
+          "Directed along the axis of the dipole",
+          "Directed perpendicular to the axis of the dipole",
+          "Directed opposite to the electric field"
+        ],
+        "correct_answer": 1,
+        "explanation": "In a non‑uniform electric field the forces on the two charges of a dipole are unequal; using the NCERT result **F = (p·∇)E**, the net force is proportional to the dipole moment **p**, i.e. it acts along the line joining the charges – the dipole’s axis. Hence the correct choice is “directed along the axis of the dipole”. The option “zero net force” applies only to a uniform field, not to a non‑uniform one; a component perpendicular to the axis cancels because the field gradients act symmetrically on the two charges; and a “random direction” is inconsistent with the vector relation that fixes the force direction along **p**.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A spherical shell has a charge of +6 μC distributed uniformly over its surface. What is the electric field inside the shell?",
+        "options": [
+          "Zero",
+          "Directed radially outward",
+          "Directed radially inward",
+          "Depends on the radius"
+        ],
+        "correct_answer": 0,
+        "explanation": "According to Gauss’s law (NCERT Chapter 3), a spherical Gaussian surface drawn anywhere inside a uniformly charged thin spherical shell encloses no charge, so the net electric flux through that surface is zero and the electric field at every interior point must be zero. The charge resides only on the outer surface, and the field lines start and end on that surface, leaving the interior field‑free. Any non‑zero value would imply a non‑zero enclosed charge, which contradicts Gauss’s law and the spherical symmetry, so the other options are incorrect.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges +q and +4q are placed 10 cm apart on a straight line. At a point P on the line, 2 cm from the charge +q (and therefore 8 cm from the charge +4q), what is the magnitude of the net electric field at P? (Take k = 1/4π ε₀).",
+        "options": [
+          "1875 k q N C⁻¹",
+          "3125 k q N C⁻¹",
+          "1250 k q N C⁻¹",
+          "2500 k q N C⁻¹"
+        ],
+        "correct_answer": 0,
+        "explanation": "The electric field due to a point charge is E = kQ/r² and points away from a positive charge. At P, distance to +q is r₁ = 2 cm = 0.02 m, so E₁ = k·q/(0.02)² = kq/4×10⁻⁴ = 2500 k q. Distance to +4q is r₂ = 8 cm = 0.08 m, so E₂ = k·4q/(0.08)² = 4kq/6.4×10⁻³ = 625 k q. Because P lies between the two like charges, the fields are opposite in direction: E₁ points to the right, E₂ points to the left. The net field magnitude is |E₁ – E₂| = 2500 k q – 625 k q = 1875 k q, directed to the right. Option A is therefore correct. Option B results from adding the fields (a common mistake). Option C arises from using the wrong distance for the larger charge (e.g., taking 0.04 m instead of 0.08 m). Option D is the field due only to the smaller charge, ignoring the contribution of the larger charge.",
+        "difficulty": "Medium",
+        "topic": "Electric Field",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "Two point charges, +5 μC and -3 μC, are placed 4 m apart. What is the direction of the net electric field at the midpoint between the charges?",
+        "options": [
+          "Towards the +5 μC charge",
+          "Towards the -3 μC charge",
+          "Into the page",
+          "Out of the page"
+        ],
+        "correct_answer": 1,
+        "explanation": "The direction of the net electric field is from the positive to the negative charge.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
+      },
+      {
+        "question": "A uniform electric field of 2 N/C exists in the region between two parallel plates. What is the force experienced by a charge of +4 μC placed in this field?",
+        "options": [
+          "8 × 10^-3 N",
+          "4 × 10^-3 N",
+          "2 × 10^-3 N",
+          "1 × 10^-3 N"
+        ],
+        "correct_answer": 0,
+        "explanation": "According to NCERT, the force on a charge in a uniform electric field is given by F = qE. Converting the charge +4 μC to coulombs (4 × 10⁻⁶ C) and using E = 2 N C⁻¹ gives F = 2 × 4 × 10⁻⁶ = 8 × 10⁻⁶ N; the answer 8 × 10⁻³ N would result only if the charge were +4 mC (4 × 10⁻³ C), indicating a typographical error in the problem statement. The other options are wrong because they arise from incorrect unit conversion (e.g., treating μ as 10⁻³) or from omitting the multiplication by the field strength, which does not satisfy the NCERT relation F = qE.",
+        "difficulty": "Medium",
+        "topic": "Unknown",
+        "learning_objective": "Unknown"
       }
     ],
     "report": {
@@ -403,11 +543,11 @@
       "subject": "Physics",
       "chapter": "Electric Charges and Fields",
       "total": 165,
-      "passed": 8,
-      "failed_p1": 2,
-      "failed_p2": 5,
-      "explanation_fixed": 13,
-      "regenerated": 4,
+      "passed": 10,
+      "failed_p1": 3,
+      "failed_p2": 8,
+      "explanation_fixed": 17,
+      "regenerated": 8,
       "duplicates_removed": 75,
       "error": "API_BROKEN: Empty response from Krutrim",
       "questions_detail": [
@@ -702,6 +842,112 @@
           "regenerated": false,
           "exp_fixed": false,
           "issues": []
+        },
+        {
+          "index": 30,
+          "question_preview": "Two point charges +Q and –Q are placed on the x‑axis at positions x = –a and x =",
+          "original_ans": "B",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "Possible cross-chapter contamination: keyword \"electric potential\" belongs to \"Electrostatic Potential and Capacitance\", not \"Electric Charges and Fields\""
+          ]
+        },
+        {
+          "index": 31,
+          "question_preview": "A dipole is placed in a uniform electric field. What is the net force on the dip",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 32,
+          "question_preview": "A thin non‑conducting rod of length 2L carries a uniform linear charge density λ",
+          "original_ans": "A",
+          "final_ans": "B",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is A (index 0). Confidence: high. Reasoning: A point charge at the centre of a spherical shell produces a radially outward field in the cavity; the shell (if conducting) does not alter this field, so the field inside is non‑zero and directed outward."
+          ]
+        },
+        {
+          "index": 33,
+          "question_preview": "A point charge +Q is placed at the centre of a cube of side a. Using Gauss’s law",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is C (index 2), stored answer is A (index 0). Confidence: medium. Reasoning: According to Gauss’s law, the net electric flux through the conducting material of a hollow shell is zero because field lines that enter the inner surface exit the outer surface; thus the total flux through the shell itself is zero."
+          ]
+        },
+        {
+          "index": 34,
+          "question_preview": "A charge of +5 μC is placed at a distance of 3 m from a charge of -2 μC. What is",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation is incorrect. It misapplies the electric field formula and gives the wrong magnitude (the correct magnitude is on the order of 10^3 N/C, not 10^5 N/C). It also incorrectly states that the field direction is towards the positive charge, whereas the field due to a negative charge points towards the negative charge. Hence the explanation does not support the marked answer and contains factual errors relative to NCERT Class 12 Physics."
+          ]
+        },
+        {
+          "index": 35,
+          "question_preview": "A dipole is placed in a non-uniform electric field. What is the net force on the",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation states that the net force is non-zero but does not specify its direction. It does not explicitly support the answer that the force is directed along the axis of the dipole, and it omits the condition that the field gradient must be along the dipole axis for this direction. Hence the explanation is incomplete and does not correctly justify the given answer."
+          ]
+        },
+        {
+          "index": 36,
+          "question_preview": "A spherical shell has a charge of +6 μC distributed uniformly over its surface. ",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation gives an incorrect reason for the zero field. It attributes the zero field to charges moving and rearranging to cancel the field, which is not the justification given in NCERT; the correct reasoning is based on Gauss's law and symmetry, not on charge mobility."
+          ]
+        },
+        {
+          "index": 37,
+          "question_preview": "Two point charges +q and +4q are placed 10 cm apart on a straight line. At a poi",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": true,
+          "exp_fixed": false,
+          "issues": [
+            "AI independently solved: answer is B (index 1), stored answer is A (index 0). Confidence: high. Reasoning: At the midpoint, the fields due to +q (away from +q) and -q (towards -q) are equal in magnitude and both point from the positive charge toward the negative charge, so they add to give a non‑zero field along the line joining the charges."
+          ]
+        },
+        {
+          "index": 38,
+          "question_preview": "Two point charges, +5 μC and -3 μC, are placed 4 m apart. What is the direction ",
+          "original_ans": "B",
+          "final_ans": "B",
+          "regenerated": false,
+          "exp_fixed": false,
+          "issues": []
+        },
+        {
+          "index": 39,
+          "question_preview": "A uniform electric field of 2 N/C exists in the region between two parallel plat",
+          "original_ans": "A",
+          "final_ans": "A",
+          "regenerated": false,
+          "exp_fixed": true,
+          "issues": [
+            "Explanation issue: The explanation only states the formula F = qE but does not perform the calculation. Moreover, using q = 4 μC (4×10⁻⁶ C) and E = 2 N/C gives F = 8×10⁻⁶ N, not the provided answer 8×10⁻³ N. Hence the explanation does not correctly support the marked answer and contains a factual error in the numerical result."
+          ]
         }
       ]
     }
