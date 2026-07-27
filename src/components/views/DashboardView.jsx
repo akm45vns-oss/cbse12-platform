@@ -30,7 +30,7 @@ function getGreeting() {
 
 export const DashboardView = memo(function DashboardView({
   stats, overallPct, currentUser, displayName, onSelectSubject, onSelectChapter,
-  selectedClass = "12", curriculum, progressData = {},
+  selectedClass = "12", curriculum, progressData = {}, onOpenAuditDashboard,
 }) {
   const CURR = curriculum || {};
   const recentChapters = getRecentChapters(currentUser, 1);
@@ -89,21 +89,47 @@ export const DashboardView = memo(function DashboardView({
               : `Class ${selectedClass} CBSE · ${allSubjectKeys.length} subjects`}
           </div>
         </div>
-        {overallPct > 0 && (
-          <div style={{
-            width: 52, height: 52, flexShrink: 0,
-            position: "relative", display: "flex", alignItems: "center", justifyContent: "center",
-          }}>
-            <svg width="52" height="52" style={{ position: "absolute", transform: "rotate(-90deg)" }}>
-              <circle cx="26" cy="26" r="22" fill="none" stroke="rgba(79,70,229,0.1)" strokeWidth="4" />
-              <circle cx="26" cy="26" r="22" fill="none" stroke="#4f46e5" strokeWidth="4"
-                strokeDasharray={`${2 * Math.PI * 22}`}
-                strokeDashoffset={`${2 * Math.PI * 22 * (1 - overallPct / 100)}`}
-                strokeLinecap="round" />
-            </svg>
-            <span style={{ fontSize: 10, fontWeight: 900, color: "#4f46e5", zIndex: 1 }}>{overallPct}%</span>
-          </div>
-        )}
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          {onOpenAuditDashboard && (
+            <button
+              onClick={onOpenAuditDashboard}
+              style={{
+                background: "linear-gradient(135deg, #1e293b, #0f172a)",
+                color: "#10b981",
+                border: "1px solid rgba(16, 185, 129, 0.4)",
+                padding: "8px 14px",
+                borderRadius: 12,
+                fontSize: 13,
+                fontWeight: 700,
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                gap: 6,
+                boxShadow: "0 4px 14px rgba(0,0,0,0.15)",
+                transition: "all 0.2s ease"
+              }}
+              title="Open Live MCQ Audit Dashboard"
+            >
+              <span style={{ fontSize: 16 }}>📊</span>
+              <span>Audit Matrix</span>
+            </button>
+          )}
+          {overallPct > 0 && (
+            <div style={{
+              width: 52, height: 52, flexShrink: 0,
+              position: "relative", display: "flex", alignItems: "center", justifyContent: "center",
+            }}>
+              <svg width="52" height="52" style={{ position: "absolute", transform: "rotate(-90deg)" }}>
+                <circle cx="26" cy="26" r="22" fill="none" stroke="rgba(79,70,229,0.1)" strokeWidth="4" />
+                <circle cx="26" cy="26" r="22" fill="none" stroke="#4f46e5" strokeWidth="4"
+                  strokeDasharray={`${2 * Math.PI * 22}`}
+                  strokeDashoffset={`${2 * Math.PI * 22 * (1 - overallPct / 100)}`}
+                  strokeLinecap="round" />
+              </svg>
+              <span style={{ fontSize: 10, fontWeight: 900, color: "#4f46e5", zIndex: 1 }}>{overallPct}%</span>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* ── Search Bar ── */}

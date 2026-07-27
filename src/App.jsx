@@ -807,6 +807,7 @@ Format Guidelines:
               { id: "stats", label: "Stats" },
               { id: "progress", label: "Progress" },
               { id: "leaderboard", label: "Rank" },
+              { id: "audit-dashboard", label: "📊 Audit Matrix" },
             ].map(item => (
               <button
                 key={item.id}
@@ -855,6 +856,7 @@ Format Guidelines:
             onSelectChapter={(chapter) => {
               nav.navigateToChapter(chapter);
             }}
+            onOpenAuditDashboard={() => nav.navigate("audit-dashboard")}
           />
         )}
 
