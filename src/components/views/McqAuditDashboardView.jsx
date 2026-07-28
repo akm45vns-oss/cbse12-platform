@@ -2,17 +2,28 @@ import React, { useState, useEffect } from 'react';
 import { CURRICULUM, totalChapters } from '../../constants/curriculum';
 import { CURRICULUM_11, totalChapters11 } from '../../constants/curriculum11';
 
-// We fetch live checkpoint data from our backend
+// We fetch live checkpoint data from our backend, with a fallback to GitHub
 const fetchLiveProgress = async () => {
   try {
     // Dynamically use localhost in dev, or relative path in production
     const isDev = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
     const baseUrl = isDev ? "http://localhost:5001" : "";
+    
+    // First try the backend webhook endpoint
     const res = await fetch(`${baseUrl}/api/v1/audit/progress`);
-    if (!res.ok) throw new Error("Failed to fetch");
-    return await res.json();
+    if (res.ok) {
+      return await res.json();
+    }
+    throw new Error("Backend API unavailable");
   } catch (err) {
-    console.error("Audit dashboard fetch error:", err);
+    console.log("Backend not available, falling back to GitHub raw content...");
+    try {
+      // Fallback to the latest committed checkpoint on GitHub (updates every 3.5 hours)
+      const ghRes = await fetch("https://raw.githubusercontent.com/akm45vns-oss/cbse12-platform/main/cache/mcq_audit_checkpoint.json?t=" + Date.now());
+      if (ghRes.ok) return await ghRes.json();
+    } catch (e) {
+      console.error("Audit dashboard fetch error:", e);
+    }
     return null;
   }
 };
