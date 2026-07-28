@@ -777,6 +777,18 @@ async function processChapter(task, isDryRun, cp, startTimeMs, RUNTIME_LIMIT_MS)
     let retryAttempts = 0;
 
     while (!validated) {
+      if (startTimeMs && RUNTIME_LIMIT_MS && (Date.now() - startTimeMs > RUNTIME_LIMIT_MS)) {
+        console.log(`\n⏳ 3.5 hour execution limit reached mid-question! Saving progress...`);
+        cp.in_progress = {
+          chapterKey: chapterKey(task),
+          last_index: Math.max(0, qi - 1),
+          auditedQuestions,
+          report
+        };
+        saveCheckpoint(cp);
+        console.log(`✅ Mid-question progress saved. Exiting gracefully to yield to the cloud runner...`);
+        process.exit(0);
+      }
       retryAttempts++;
       try {
         // ── PASS 1: Structural validation ──
