@@ -940,9 +940,10 @@ async function processChapter(task, isDryRun, cp, startTimeMs, RUNTIME_LIMIT_MS)
       report
     };
     saveCheckpoint(cp);
+    
+    // Print a newline after the question finishes to instantly flush the log buffer in GitHub Actions
+    console.log();
   }
-
-  process.stdout.write("\n");
 
   // ── Write corrected questions back to DB ──
   if (!isDryRun && (report.regenerated > 0 || report.duplicates_removed > 0 || report.explanation_fixed > 0)) {
