@@ -2,19 +2,19 @@ import React, { useState, useEffect } from 'react';
 import { CURRICULUM, totalChapters } from '../../constants/curriculum';
 import { CURRICULUM_11, totalChapters11 } from '../../constants/curriculum11';
 
-import checkpointFallback from '../../../cache/mcq_audit_checkpoint.json';
-
-// We fetch live checkpoint data from our backend with fallback to static checkpoint file
+// We fetch live checkpoint data from our backend
 const fetchLiveProgress = async () => {
   try {
-    const res = await fetch('http://localhost:5001/api/v1/audit/progress').catch(() => null);
-    if (res && res.ok) return await res.json();
-    const res2 = await fetch('/cache/mcq_audit_checkpoint.json').catch(() => null);
-    if (res2 && res2.ok) return await res2.json();
+    // Dynamically use localhost in dev, or relative path in production
+    const isDev = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+    const baseUrl = isDev ? "http://localhost:5001" : "";
+    const res = await fetch(`${baseUrl}/api/v1/audit/progress`);
+    if (!res.ok) throw new Error("Failed to fetch");
+    return await res.json();
   } catch (err) {
-    console.warn("Audit dashboard fetch error, using local fallback:", err);
+    console.error("Audit dashboard fetch error:", err);
+    return null;
   }
-  return checkpointFallback;
 };
 
 export const McqAuditDashboardView = () => {

@@ -284,6 +284,18 @@ function loadCheckpoint() {
 
 function saveCheckpoint(cp) {
   fs.writeFileSync(CHECKPOINT_FILE, JSON.stringify(cp, null, 2), "utf-8");
+  
+  // Fire-and-forget webhook to update the live dashboard on akmedu45.xyz
+  const webhookUrl = process.env.AUDIT_WEBHOOK_URL || "https://akmedu45.xyz/api/v1/audit/progress";
+  const token = process.env.AUDIT_WEBHOOK_SECRET || 'akm45-audit-live-token';
+  
+  fetch(webhookUrl, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ token, progressData: cp })
+  }).catch(err => {
+    // Silently ignore webhook errors to prevent crashing the main audit loop
+  });
 }
 
 // ─── Chapter key for checkpoint ──────────────────────────────────────────────
