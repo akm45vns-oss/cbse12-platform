@@ -41,7 +41,7 @@ jobs:
         run: npm test
         env:
           REDIS_URL: redis://localhost:6379
-          JWT_SECRET: test_secret_key_123
+          JWT_SECRET: test_secret_key_123456789012345678
 
   test-frontend:
     runs-on: ubuntu-latest
